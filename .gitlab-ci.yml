@@ -1,0 +1,29 @@
+image: registry.zammad.com/docker/zammad-ruby:stable
+
+'push to github':
+  before_script:
+    - test -d $HOME/.ssh || mkdir $HOME/.ssh
+    - ssh-keyscan github.com >> $HOME/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - echo "$PUSH_TO_GITHUB_SSH_PRIVATE_KEY" | ssh-add -
+    - ssh-add -l
+  script:
+    - git fetch --unshallow
+    - .gitlab/push_to_github.sh git@github.com:zammad/zammad-org.git
+  only:
+    - develop
+    - stable
+
+'build and deploy':
+  script:
+    - pnpm add -D vitepress
+    - pnpm build
+    - test -d $HOME/.ssh || mkdir $HOME/.ssh
+    - ssh-keyscan -p $DEPLOYPORT $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY_COMMUNITY")
+    - ls -al
+    - apt update && apt install -y --no-install-recommends rsync
+    - rsync -avz --delete -e "ssh -p $DEPLOYPORT" ./.vitepress/dist/ $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/home/next.zammad.org/pub/
+  only:
+    - develop
