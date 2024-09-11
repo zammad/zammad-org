@@ -14,6 +14,19 @@ export default
         md.use(tabsMarkdownPlugin)
       },
     },
+    locales: {
+      root: {
+        label: 'English',
+        lang: 'en'
+      },
+      de: {
+        label: 'Deutsch',
+        lang: 'de', // optional, will be added  as `lang` attribute on `html` tag
+        // link: '/fr/guide' // default /fr/ -- shows on navbar translations menu, can be external
+
+        // other locale specific properties...
+      },
+    },
     // vite: {
     //   plugins: [
     //     AutoSidebar({

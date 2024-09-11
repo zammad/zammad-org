@@ -5,9 +5,10 @@
     "vitepress-plugin-tabs": "^0.5.0"
   },
   "scripts": {
-    "dev": "vitepress dev .",
-    "build": "vitepress build .",
-    "preview": "vitepress preview ."
+    "dev": "vitepress dev doc/",
+    "i18n": "po4a --verbose .po4a.conf",
+    "build": "vitepress build doc/",
+    "preview": "vitepress preview doc/"
   },
   "dependencies": {
     "vite-plugin-vitepress-auto-sidebar": "^1.7.0"

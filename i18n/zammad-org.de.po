@@ -1,0 +1,83 @@
+# German translations for PACKAGE package
+# German translation for PACKAGE
+# Copyright (C) 2024 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-09-11 14:29+0200\n"
+"PO-Revision-Date: 2024-09-11 14:29+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Plain text
+#: index.md:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: index.md:4
+msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
+msgstr ""
+
+#. type: Plain text
+#: index.md:22
+#, no-wrap
+msgid ""
+"hero:\n"
+"  name: \"Zammad \"\n"
+"  text: \"Documentation for Users and Administrators\"\n"
+"  tagline: My helpdesk and ticketing system\n"
+"  image:\n"
+"    src: ./logo.png\n"
+"    alt: Zammad logo\n"
+"  actions:\n"
+"    - theme: brand\n"
+"      text: Getting started\n"
+"      link: /\n"
+"    - theme: alt\n"
+"      text: Documentation\n"
+"      link: /\n"
+"    - theme: alt\n"
+"      text: Contribute\n"
+"      link: /\n"
+msgstr ""
+"hero:\n"
+"  name: \"Zammad \"\n"
+"  text: \"Dokumentation für Nutzer und Administratoren\"\n"
+"  tagline: My helpdesk and ticketing system\n"
+"  image:\n"
+"    src: ./logo.png\n"
+"    alt: Zammad logo\n"
+"  actions:\n"
+"    - theme: brand\n"
+"      text: Getting started\n"
+"      link: /\n"
+"    - theme: alt\n"
+"      text: Documentation\n"
+"      link: /\n"
+"    - theme: alt\n"
+"      text: Contribute\n"
+"      link: /\n"
+
+#. type: Plain text
+#: index.md:30
+#, no-wrap
+msgid ""
+"features:\n"
+"  - title: Feature A\n"
+"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+"  - title: Feature B\n"
+"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+"  - title: Feature C\n"
+"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+"---\n"
+msgstr ""
