@@ -8,7 +8,6 @@ export default
     title: "Zammad Documentation",
     description: "Documentation for Zammad Users and Administrators",
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
-    logo: '/logo.png',
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
