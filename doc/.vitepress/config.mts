@@ -104,7 +104,7 @@ export default
             },
     footer: {
       message: 'Zammad Hub',
-      copyright: 'Copyright © 2012-present [Zammad Foundation](https://zammad-foundation.org/)'
+      copyright: 'Copyright © 2012-present Zammad Foundation'
     },
 
     search: {
