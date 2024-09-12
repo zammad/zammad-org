@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Zammad Hub"
   text: "For Users and Administrators"
-  tagline: Support and ticketing system
+  tagline: Your powerful yet easy-to-use ticketing system.
   image:
     src: ./logo.png
     alt: Zammad logo
@@ -21,14 +21,14 @@ hero:
       link: /
 
 features:
-  - title: Release notes
-    details: Interested in new features? Find them on our sister site zammad.com!
+  - title: Release Notes
+    details: Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.
     link: https://zammad.com/en/releases/
-  - title: Feature Overview
+  - title: Features Overview
     details: Zammad comes with a lot of cool features! Check them out here!
     link: https://zammad.com/en/product/features
   - title: About us
-    details: Interested who we are and why we create Zammad?
+    details: Get to know the team and our passion behind creating Zammad.
     link: https://zammad.com/en/company
 ---
 
