@@ -27,7 +27,7 @@ features:
   - title: Features Overview
     details: Zammad comes with a lot of cool features! Check them out here!
     link: https://zammad.com/en/product/features
-  - title: About us
+  - title: About Us
     details: Get to know the team and our passion behind creating Zammad.
     link: https://zammad.com/en/company
 ---
