@@ -5,7 +5,7 @@ import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 // https://vitepress.dev/reference/site-config
 export default
   defineConfig({
-    title: "Zammad Documentation",
+    title: "Zammad Hub",
     description: "Documentation for Zammad Users and Administrators",
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
     markdown: {
@@ -36,7 +36,6 @@ export default
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'RTD Documentation', link: 'https://zammad.org/documentation' },
       { text: 'Zammad.com', link: 'https://www.zammad.com' },
       { text: 'Community forum', link: 'https://community.zammad.org/'}
     ],
@@ -104,8 +103,8 @@ export default
               }
             },
     footer: {
-      message: 'Zammad Documentation',
-      copyright: 'Copyright © 2012-present Zammad Foundation'
+      message: 'Zammad Hub',
+      copyright: 'Copyright © 2012-present [Zammad Foundation](https://zammad-foundation.org/)'
     },
 
     search: {
