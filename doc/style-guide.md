@@ -21,8 +21,8 @@ with Linux system administration basics.
 ## Style
 
 American English is the original source language for the documentation.
-Translations are made via Weblate; see [here](contribute#translation)
-how to contribute to translations.
+Translations are made via Weblate, see contribution section for more
+information.
 
 * Use short and clear sentences, prioritizing information over complexity
 * Capitalize all words except minor ones in the page title and sections
