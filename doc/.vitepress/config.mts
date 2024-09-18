@@ -6,6 +6,9 @@ import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 export default
   defineConfig({
     title: "Zammad Hub",
+    rewrites: {
+      'en/:rest*': ':rest*'
+    },
     description: "Documentation for Zammad Users and Administrators",
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
     markdown: {

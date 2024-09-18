@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-18 13:36+0200\n"
+"POT-Creation-Date: 2024-09-18 13:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: doc/index.md:1
+#: doc/en/index.md:1
 #, no-wrap
 msgid "---\n"
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:4
+#: doc/en/index.md:4
 msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:22
+#: doc/en/index.md:22
 #, no-wrap
 msgid ""
 "hero:\n"
@@ -51,7 +51,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:33
+#: doc/en/index.md:33
 #, no-wrap
 msgid ""
 "features:\n"
@@ -70,18 +70,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:35
+#: doc/en/index.md:35
 #, no-wrap
 msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:2
+#: doc/en/style-guide.md:2
 msgid "# Style and Content Guide"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:6
+#: doc/en/style-guide.md:6
 msgid ""
 "This guide provides an overview of the content that should be included in "
 "the Zammad documentation, as well as formatting guidelines to ensure clarity "
@@ -89,45 +89,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:9
+#: doc/en/style-guide.md:9
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
 "contribute, have a look on our contribution page to get started."
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:11
+#: doc/en/style-guide.md:11
 msgid "## Audience Assumptions and Content"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:14
+#: doc/en/style-guide.md:14
 msgid ""
 "The documentation is written assuming our **users** have a basic "
 "understanding of web browser usage and common software design concepts."
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:17
+#: doc/en/style-guide.md:17
 msgid ""
 "The **Zammad administrator** additionally should have a basic understanding "
 "of the workflows and communication process in its company."
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:20
+#: doc/en/style-guide.md:20
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
 "with Linux system administration basics."
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:22
+#: doc/en/style-guide.md:22
 msgid "## Style"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:26
+#: doc/en/style-guide.md:26
 msgid ""
 "American English is the original source language for the documentation.  "
 "Translations are made via Weblate, see contribution section for more "
@@ -135,13 +135,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: doc/style-guide.md:41
+#: doc/en/style-guide.md:41
 #, markdown-text
 msgid "Use short and clear sentences, prioritizing information over complexity"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:41
+#: doc/en/style-guide.md:41
 #, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
@@ -162,12 +162,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:44
+#: doc/en/style-guide.md:44
 msgid "## Formatting"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:50
+#: doc/en/style-guide.md:50
 #, no-wrap
 msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 "
@@ -182,12 +182,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:53
+#: doc/en/style-guide.md:53
 msgid "## Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:57
+#: doc/en/style-guide.md:57
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
 "levels should contain at least two sections. If only one section exists, "
@@ -195,31 +195,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:59
+#: doc/en/style-guide.md:59
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:61
+#: doc/en/style-guide.md:61
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:63
+#: doc/en/style-guide.md:63
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:65
+#: doc/en/style-guide.md:65
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:67
+#: doc/en/style-guide.md:67
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: doc/style-guide.md:69
+#: doc/en/style-guide.md:69
 msgid "`## Section 2`"
 msgstr ""
