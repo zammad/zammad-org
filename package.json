@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "vitepress dev doc/",
-    "i18n": "po4a --verbose .po4a.conf",
+    "i18n": "po4a --verbose .po4a.conf && echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po",
     "build": "vitepress build doc/",
     "preview": "vitepress preview doc/"
   },

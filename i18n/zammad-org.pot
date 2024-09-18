@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-11 14:29+0200\n"
+"POT-Creation-Date: 2024-09-18 12:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: index.md:1
+#: doc/index.md:1
 #, no-wrap
 msgid "---\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:4
+#: doc/index.md:4
 msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
 msgstr ""
 
 #. type: Plain text
-#: index.md:22
+#: doc/index.md:22
 #, no-wrap
 msgid ""
 "hero:\n"
-"  name: \"Zammad \"\n"
-"  text: \"Documentation for Users and Administrators\"\n"
-"  tagline: My helpdesk and ticketing system\n"
+"  name: \"Zammad Hub\"\n"
+"  text: \"For Users and Administrators\"\n"
+"  tagline: Your powerful yet easy-to-use ticketing system.\n"
 "  image:\n"
 "    src: ./logo.png\n"
 "    alt: Zammad logo\n"
@@ -51,15 +51,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:30
+#: doc/index.md:34
 #, no-wrap
 msgid ""
 "features:\n"
-"  - title: Feature A\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
-"  - title: Feature B\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
-"  - title: Feature C\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+"  - title: Release Notes\n"
+"    details: Discover the latest enhancements, fixes and new features to "
+"keep your ticketing system running at its best.\n"
+"    link: https://zammad.com/en/releases/\n"
+"  - title: Features Overview\n"
+"    details: Zammad comes with a lot of cool features! Check them out "
+"here!\n"
+"    link: https://zammad.com/en/product/features\n"
+"  - title: About Us\n"
+"    details: Get to know the team and our passion behind creating Zammad.\n"
+"    link: https://zammad.com/en/company\n"
 "---\n"
+msgstr ""
+
+#. type: Plain text
+#: doc/index.md:36
+#, no-wrap
+msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""
