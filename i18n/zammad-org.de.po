@@ -7,35 +7,55 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-11 14:29+0200\n"
-"PO-Revision-Date: 2024-09-11 14:29+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-09-18 12:30+0200\n"
+"PO-Revision-Date: 2024-09-18 11:28+0000\n"
+"Last-Translator: Martin Gruner <mg@zammad.com>\n"
+"Language-Team: German <https://translations.zammad.org/projects/"
+"documentations/zammad-org/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7\n"
 
 #. type: Plain text
-#: index.md:1
+#: doc/index.md:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
-#: index.md:4
+#: doc/index.md:4
 msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
-msgstr ""
+msgstr "# https://vitepress.dev/reference/default-theme-home-page layout: home"
 
 #. type: Plain text
-#: index.md:22
-#, no-wrap
+#: doc/index.md:22
+#, fuzzy, no-wrap
+#| msgid ""
+#| "hero:\n"
+#| "  name: \"Zammad \"\n"
+#| "  text: \"Documentation for Users and Administrators\"\n"
+#| "  tagline: My helpdesk and ticketing system\n"
+#| "  image:\n"
+#| "    src: ./logo.png\n"
+#| "    alt: Zammad logo\n"
+#| "  actions:\n"
+#| "    - theme: brand\n"
+#| "      text: Getting started\n"
+#| "      link: /\n"
+#| "    - theme: alt\n"
+#| "      text: Documentation\n"
+#| "      link: /\n"
+#| "    - theme: alt\n"
+#| "      text: Contribute\n"
+#| "      link: /\n"
 msgid ""
 "hero:\n"
-"  name: \"Zammad \"\n"
-"  text: \"Documentation for Users and Administrators\"\n"
-"  tagline: My helpdesk and ticketing system\n"
+"  name: \"Zammad Hub\"\n"
+"  text: \"For Users and Administrators\"\n"
+"  tagline: Your powerful yet easy-to-use ticketing system.\n"
 "  image:\n"
 "    src: ./logo.png\n"
 "    alt: Zammad logo\n"
@@ -69,15 +89,44 @@ msgstr ""
 "      link: /\n"
 
 #. type: Plain text
-#: index.md:30
+#: doc/index.md:34
 #, no-wrap
 msgid ""
 "features:\n"
-"  - title: Feature A\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
-"  - title: Feature B\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
-"  - title: Feature C\n"
-"    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+"  - title: Release Notes\n"
+"    details: Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.\n"
+"    link: https://zammad.com/en/releases/\n"
+"  - title: Features Overview\n"
+"    details: Zammad comes with a lot of cool features! Check them out here!\n"
+"    link: https://zammad.com/en/product/features\n"
+"  - title: About Us\n"
+"    details: Get to know the team and our passion behind creating Zammad.\n"
+"    link: https://zammad.com/en/company\n"
 "---\n"
 msgstr ""
+
+#. type: Plain text
+#: doc/index.md:36
+#, no-wrap
+msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
+msgstr ""
+
+#, no-wrap
+#~ msgid ""
+#~ "features:\n"
+#~ "  - title: Feature A\n"
+#~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+#~ "  - title: Feature B\n"
+#~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+#~ "  - title: Feature C\n"
+#~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+#~ "---\n"
+#~ msgstr ""
+#~ "features:\n"
+#~ "  - title: Feature A\n"
+#~ "    details: Beschreibung Feature A\n"
+#~ "  - title: Feature B\n"
+#~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+#~ "  - title: Feature C\n"
+#~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
+#~ "---\n"
