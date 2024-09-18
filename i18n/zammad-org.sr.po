@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-18 12:30+0200\n"
+"POT-Creation-Date: 2024-09-18 14:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,18 +16,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: doc/index.md:1
+#: doc/en/index.md:1
 #, no-wrap
 msgid "---\n"
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:4
-msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
+#: doc/en/index.md:3
+msgid "# https://vitepress.dev/reference/default-theme-home-page"
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:22
+#: doc/en/index.md:5
+msgid "layout: home"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/index.md:23
 #, no-wrap
 msgid ""
 "hero:\n"
@@ -50,7 +55,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:34
+#: doc/en/index.md:34
 #, no-wrap
 msgid ""
 "features:\n"
@@ -67,7 +72,149 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/index.md:36
+#: doc/en/index.md:36
 #, no-wrap
 msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:2
+msgid "# Style and Content Guide"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:6
+msgid ""
+"This guide provides an overview of the content that should be included in "
+"the Zammad documentation, as well as formatting guidelines to ensure clarity "
+"and readability."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:9
+msgid ""
+"If you have questions, feel free to ask in our community. If you want to "
+"contribute, have a look on our contribution page to get started."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:11
+msgid "## Audience Assumptions and Content"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:14
+msgid ""
+"The documentation is written assuming our **users** have a basic "
+"understanding of web browser usage and common software design concepts."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:17
+msgid ""
+"The **Zammad administrator** additionally should have a basic understanding "
+"of the workflows and communication process in its company."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:20
+msgid ""
+"For self-hosted instances, **system administrators** should also be familiar "
+"with Linux system administration basics."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:22
+msgid "## Style"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:26
+msgid ""
+"American English is the original source language for the documentation.  "
+"Translations are made via Weblate, see contribution section for more "
+"information."
+msgstr ""
+
+#. type: Bullet: '* '
+#: doc/en/style-guide.md:41
+msgid "Use short and clear sentences, prioritizing information over complexity"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:41
+#, no-wrap
+msgid ""
+"* Capitalize all words except minor ones in the page title and sections\n"
+"(see [title case](https://en.wikipedia.org/wiki/Title_case))\n"
+"* Line length of 80 characters in the source file should not be exceeded if\n"
+"possible\n"
+"* Proper breadcrumb separation for paths and locations with `>`\n"
+"* Use code highlighting to emphasize programming snippets\n"
+"* Include screenshots when necessary\n"
+"* Provide step-by-step instructions with clear explanations\n"
+"* Use examples or scenarios to illustrate concepts\n"
+"* Include relevant images or diagrams when necessary\n"
+"* Abbreviations should be explained the first time they are used or included\n"
+"in the glossary and linked to\n"
+"* If in doubt, align it to the existing documentation\n"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:44
+msgid "## Formatting"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:50
+#, no-wrap
+msgid ""
+"| Type in Zammad | Highlighting                  | Markdown syntax                 |\n"
+"|----------------|-------------------------------|---------------------------------|\n"
+"| Buttons        | ``Sign in``                   | \\`\\`Sign in\\`\\`                 |\n"
+"| Fields         | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+"| Location/path  | *Settings > Channels > Email* | \\*Settings > Channels > Email\\* |\n"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:53
+msgid "## Heading Structure"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:57
+msgid ""
+"Every documentation file should include a title on top level (#). Lower "
+"levels should contain at least two sections. If only one section exists, "
+"consider merging it with the higher-level content."
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:59
+msgid "Example:"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:61
+msgid "`# Title of page`"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:63
+msgid "`## Section 1`"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:65
+msgid "`### Section 1.1`"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:67
+msgid "`### Section 1.2`"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/style-guide.md:69
+msgid "`## Section 2`"
 msgstr ""
