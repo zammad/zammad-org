@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-18 13:58+0200\n"
+"POT-Creation-Date: 2024-09-18 14:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,12 +23,17 @@ msgid "---\n"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/index.md:4
-msgid "# https://vitepress.dev/reference/default-theme-home-page layout: home"
+#: doc/en/index.md:3
+msgid "# https://vitepress.dev/reference/default-theme-home-page"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/index.md:22
+#: doc/en/index.md:5
+msgid "layout: home"
+msgstr ""
+
+#. type: Plain text
+#: doc/en/index.md:23
 #, no-wrap
 msgid ""
 "hero:\n"
@@ -51,7 +56,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/index.md:33
+#: doc/en/index.md:34
 #, no-wrap
 msgid ""
 "features:\n"
@@ -70,7 +75,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/index.md:35
+#: doc/en/index.md:36
 #, no-wrap
 msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""

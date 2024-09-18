@@ -1,5 +1,7 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page layout: home
+# https://vitepress.dev/reference/default-theme-home-page
+
+layout: home
 
 hero:
   name: "Zammad Hub"
