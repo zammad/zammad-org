@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 11:00+0200\n"
+"POT-Creation-Date: 2024-09-19 11:06+0200\n"
 "PO-Revision-Date: 2024-09-19 08:35+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -18,6 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.7\n"
+
+#. type: Hash Value: themeConfig docFooter next
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Previous page"
+msgstr ""
+
+#. type: Hash Value: themeConfig docFooter prev
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Next page"
+msgstr ""
 
 #. type: Hash Value: themeConfig footer copyright
 #: doc/.vitepress/en.yaml:1
@@ -60,6 +72,12 @@ msgstr "https://community.zammad.org/"
 #, no-wrap
 msgid "Community forum"
 msgstr "Форум онлајн заједнице"
+
+#. type: Hash Value: themeConfig outline label
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "On this page"
+msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: doc/.vitepress/en.yaml:1
