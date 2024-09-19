@@ -7,7 +7,7 @@ themeConfig:
     copyright: 'Copyright © 2012-jetzt Zammad Foundation'
     message: 'Zammad Hub'
   lastUpdated:
-    text: 'Updated at'
+    text: 'Aktualisiert am'
   nav:
     - 
       link: https://www.zammad.com/de

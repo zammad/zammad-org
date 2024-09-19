@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 11:00+0200\n"
+"POT-Creation-Date: 2024-09-19 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. type: Hash Value: themeConfig docFooter next
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Previous page"
+msgstr ""
+
+#. type: Hash Value: themeConfig docFooter prev
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Next page"
+msgstr ""
 
 #. type: Hash Value: themeConfig footer copyright
 #: doc/.vitepress/en.yaml:1
@@ -56,6 +68,12 @@ msgstr ""
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Community forum"
+msgstr ""
+
+#. type: Hash Value: themeConfig outline label
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "On this page"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
