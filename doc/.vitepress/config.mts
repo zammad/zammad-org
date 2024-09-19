@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 import en from './en.yaml.json'
@@ -20,9 +20,9 @@ export default
       },
     },
     locales: {
-      root: {label: 'English', ...defineConfig(en) },
-      de: { label: 'Deutsch', ...defineConfig(de) },
-      sr: { label: 'српски', ...defineConfig(sr) },
+      root: {label: 'English', ...defineConfig(en as UserConfig) },
+      de: { label: 'Deutsch', ...defineConfig(de as UserConfig) },
+      sr: { label: 'српски', ...defineConfig(sr as UserConfig) },
     },
     // didn't get it to work, for options see https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar
     // vite: {
