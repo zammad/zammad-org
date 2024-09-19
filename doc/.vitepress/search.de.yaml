@@ -1,18 +1,18 @@
 ---
 translations:
   button:
-    buttonAriaLabel: Search
-    buttonText: Search
+    buttonAriaLabel: Suche
+    buttonText: Suche
   modal:
-    backButtonTitle: 'Close search'
-    displayDetails: 'Display detailed list'
+    backButtonTitle: 'Suche beenden'
+    displayDetails: 'Detaillierte Liste anzeigen'
     footer:
-      closeKeyAriaLabel: escape
-      closeText: 'to close'
-      navigateDownKeyAriaLabel: 'down arrow'
-      navigateText: 'to navigate'
-      navigateUpKeyAriaLabel: 'up arrow'
-      selectKeyAriaLabel: enter
-      selectText: 'to select'
-    noResultsText: 'No results for'
-    resetButtonTitle: 'Reset search'
+      closeKeyAriaLabel: Escape
+      closeText: 'zum Schließen'
+      navigateDownKeyAriaLabel: Abwärtspfeil
+      navigateText: 'zum Navigieren'
+      navigateUpKeyAriaLabel: Aufwärtspfeil
+      selectKeyAriaLabel: Enter
+      selectText: 'zum Auswählen'
+    noResultsText: 'Keine Ergebnisse für'
+    resetButtonTitle: 'Suche zurücksetzen'
