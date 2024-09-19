@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-18 14:29+0200\n"
+"POT-Creation-Date: 2024-09-19 07:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,77 +16,149 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
+#. type: Yaml Front Matter Hash Value: features details
 #: doc/en/index.md:1
 #, no-wrap
-msgid "---\n"
-msgstr ""
-
-#. type: Plain text
-#: doc/en/index.md:3
-msgid "# https://vitepress.dev/reference/default-theme-home-page"
-msgstr ""
-
-#. type: Plain text
-#: doc/en/index.md:5
-msgid "layout: home"
-msgstr ""
-
-#. type: Plain text
-#: doc/en/index.md:23
-#, no-wrap
 msgid ""
-"hero:\n"
-"  name: \"Zammad Hub\"\n"
-"  text: \"For Users and Administrators\"\n"
-"  tagline: Your powerful yet easy-to-use ticketing system.\n"
-"  image:\n"
-"    src: ../logo.png\n"
-"    alt: Zammad logo\n"
-"  actions:\n"
-"    - theme: brand\n"
-"      text: Getting started\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Documentation\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Contribute\n"
-"      link: /\n"
+"Discover the latest enhancements, fixes and new features to keep your "
+"ticketing system running at its best."
 msgstr ""
 
-#. type: Plain text
-#: doc/en/index.md:34
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
 #, no-wrap
-msgid ""
-"features:\n"
-"  - title: Release Notes\n"
-"    details: Discover the latest enhancements, fixes and new features to "
-"keep your ticketing system running at its best.\n"
-"    link: https://zammad.com/en/releases/\n"
-"  - title: Features Overview\n"
-"    details: Zammad comes with a lot of cool features! Check them out "
-"here!\n"
-"    link: https://zammad.com/en/product/features\n"
-"  - title: About Us\n"
-"    details: Get to know the team and our passion behind creating Zammad.\n"
-"    link: https://zammad.com/en/company\n"
-"---\n"
+msgid "https://zammad.com/en/releases/"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Release Notes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad comes with a lot of cool features! Check them out here!"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/product/features"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Features Overview"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Get to know the team and our passion behind creating Zammad."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/company"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "About Us"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Getting started"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions theme
+#: doc/en/index.md:1
+#, no-wrap
+msgid "brand"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Documentation"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions theme
+#: doc/en/index.md:1
+#, no-wrap
+msgid "alt"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Contribute"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero image alt
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad logo"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero image src
+#: doc/en/index.md:1
+#, no-wrap
+msgid "../logo.png"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero name
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad Hub"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero tagline
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Your powerful yet easy-to-use ticketing system."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "For Users and Administrators"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: layout
+#: doc/en/index.md:1
+#, no-wrap
+msgid "home"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/index.md:36
-#, no-wrap
+#, markdown-text, no-wrap
 msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:2
-msgid "# Style and Content Guide"
+#. type: Title #
+#: doc/en/style-guide.md:1
+#, markdown-text, no-wrap
+msgid "Style and Content Guide"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:6
+#, markdown-text
 msgid ""
 "This guide provides an overview of the content that should be included in "
 "the Zammad documentation, as well as formatting guidelines to ensure clarity "
@@ -95,18 +167,21 @@ msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:9
+#, markdown-text
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
 "contribute, have a look on our contribution page to get started."
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:11
-msgid "## Audience Assumptions and Content"
+#. type: Title ##
+#: doc/en/style-guide.md:10
+#, markdown-text, no-wrap
+msgid "Audience Assumptions and Content"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:14
+#, markdown-text
 msgid ""
 "The documentation is written assuming our **users** have a basic "
 "understanding of web browser usage and common software design concepts."
@@ -114,6 +189,7 @@ msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:17
+#, markdown-text
 msgid ""
 "The **Zammad administrator** additionally should have a basic understanding "
 "of the workflows and communication process in its company."
@@ -121,18 +197,21 @@ msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:20
+#, markdown-text
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
 "with Linux system administration basics."
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:22
-msgid "## Style"
+#. type: Title ##
+#: doc/en/style-guide.md:21
+#, markdown-text, no-wrap
+msgid "Style"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:26
+#, markdown-text
 msgid ""
 "American English is the original source language for the documentation.  "
 "Translations are made via Weblate, see contribution section for more "
@@ -147,7 +226,7 @@ msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:41
-#, no-wrap
+#, markdown-text, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
 "(see [title case](https://en.wikipedia.org/wiki/Title_case))\n"
@@ -166,14 +245,15 @@ msgid ""
 "* If in doubt, align it to the existing documentation\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:44
-msgid "## Formatting"
+#. type: Title ##
+#: doc/en/style-guide.md:43
+#, markdown-text, no-wrap
+msgid "Formatting"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:50
-#, no-wrap
+#, markdown-text, no-wrap
 msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 "
 "|\n"
@@ -186,13 +266,15 @@ msgid ""
 "Email\\* |\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:53
-msgid "## Heading Structure"
+#. type: Title ##
+#: doc/en/style-guide.md:52
+#, markdown-text, no-wrap
+msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:57
+#, markdown-text
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
 "levels should contain at least two sections. If only one section exists, "
@@ -201,30 +283,36 @@ msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:59
+#, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:61
+#, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:63
+#, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:65
+#, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:67
+#, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
 #: doc/en/style-guide.md:69
+#, markdown-text
 msgid "`## Section 2`"
 msgstr ""
