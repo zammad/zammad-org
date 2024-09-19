@@ -1,9 +1,14 @@
 import { defineConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
-import en from './en.yaml.json'
-import de from './de.yaml.json'
-import sr from './sr.yaml.json'
+import configEN from './config.en.yaml.json'
+import configDE from './config.de.yaml.json'
+import configSR from './config.sr.yaml.json'
+import searchEN from './search.en.yaml.json'
+import searchDE from './search.de.yaml.json'
+import searchSR from './search.sr.yaml.json'
+
+
 
 // https://vitepress.dev/reference/site-config
 export default
@@ -20,9 +25,9 @@ export default
       },
     },
     locales: {
-      root: {label: 'English', ...defineConfig(en as UserConfig) },
-      de: { label: 'Deutsch', ...defineConfig(de as UserConfig) },
-      sr: { label: 'српски', ...defineConfig(sr as UserConfig) },
+      root: {label: 'English', ...defineConfig(configEN as UserConfig) },
+      de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
+      sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
     },
     // didn't get it to work, for options see https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar
     // vite: {
@@ -42,9 +47,9 @@ export default
         provider: 'local',
         options: {
           locales: {
-            root: en.themeConfig.search,
-            de:   de.themeConfig.search,
-            sr:   sr.themeConfig.search,
+            root: searchEN,
+            de:   searchDE,
+            sr:   searchSR,
           }
         }
       },
