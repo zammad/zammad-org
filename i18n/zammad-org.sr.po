@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 09:38+0200\n"
+"POT-Creation-Date: 2024-09-19 11:00+0200\n"
 "PO-Revision-Date: 2024-09-19 08:35+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -30,6 +30,12 @@ msgstr "Copyright © 2012-садашњост Zammad фондација"
 #, no-wrap
 msgid "Zammad Hub"
 msgstr "Zammad чвориште"
+
+#. type: Hash Value: themeConfig lastUpdated text
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Updated at"
+msgstr ""
 
 #. type: Hash Value: themeConfig nav link
 #: doc/.vitepress/en.yaml:1
@@ -265,12 +271,6 @@ msgstr "Ваш моћан али једноставан тикет систем.
 msgid "For Users and Administrators"
 msgstr "За кориснике и администраторе"
 
-#. type: Plain text
-#: doc/en/index.md:35
-#, no-wrap
-msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
-msgstr " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
-
 #. type: Title #
 #: doc/en/style-guide.md:1
 #, no-wrap
@@ -372,13 +372,11 @@ msgid ""
 "* If in doubt, align it to the existing documentation\n"
 msgstr ""
 "* Све речи у наслову и одељцима (осим мањих) започните великим словом\n"
-"(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case))"
-"\n"
+"(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case))\n"
 "* Уколико је могуће, немојте прекорачивати дужину линије од 80 карактера\n"
 "у изворној датотеци\n"
 "* Одвајате правилно путање и локације са `>`\n"
-"* Користите истицање кода да бисте нагласили исечке текста који садрже "
-"инструкције\n"
+"* Користите истицање кода да бисте нагласили исечке текста који садрже инструкције\n"
 "* Убаците снимке екрана када је потребно\n"
 "* Дајте упутства корак-по-корак са јасним објашњењима\n"
 "* Користите примере или сценарије да илуструјете концепте\n"
@@ -403,16 +401,11 @@ msgid ""
 "| Fields         | **Name**                      | \\*\\*Name\\*\\*                    |\n"
 "| Location/path  | *Settings > Channels > Email* | \\*Settings > Channels > Email\\* |\n"
 msgstr ""
-"| Тип у Zammad-у  | Истицање                      | Markdown "
-"синтакса               |\n"
-"|-----------------|-------------------------------|--------------------------"
-"-------|\n"
-"| Дугмићи         | ``Пријава``                   | \\`\\`Пријава\\`\\`"
-"                 |\n"
-"| Поља            | **Назив**                     | \\*\\*Назив\\*\\*"
-"                   |\n"
-"| Путања/локације | *Подешавања > Канали > Имејл* | \\*Подешавања > Канали > "
-"Имејл\\* |\n"
+"| Тип у Zammad-у  | Истицање                      | Markdown синтакса               |\n"
+"|-----------------|-------------------------------|---------------------------------|\n"
+"| Дугмићи         | ``Пријава``                   | \\`\\`Пријава\\`\\`                 |\n"
+"| Поља            | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
+"| Путања/локације | *Подешавања > Канали > Имејл* | \\*Подешавања > Канали > Имејл\\* |\n"
 
 #. type: Title ##
 #: doc/en/style-guide.md:52
@@ -460,6 +453,10 @@ msgstr "`### Одељак 1.2`"
 #: doc/en/style-guide.md:69
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
+
+#, no-wrap
+#~ msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
+#~ msgstr " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 
 #, no-wrap
 #~ msgid "get-started/start"

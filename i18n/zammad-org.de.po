@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 09:38+0200\n"
-"PO-Revision-Date: 2024-09-19 08:35+0000\n"
+"POT-Creation-Date: 2024-09-19 11:00+0200\n"
+"PO-Revision-Date: 2024-09-19 09:05+0000\n"
 "Last-Translator: Martin Gruner <mg@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -30,6 +30,12 @@ msgstr "Copyright © 2012-jetzt Zammad Foundation"
 #, no-wrap
 msgid "Zammad Hub"
 msgstr "Zammad Hub"
+
+#. type: Hash Value: themeConfig lastUpdated text
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Updated at"
+msgstr "Aktualisiert am"
 
 #. type: Hash Value: themeConfig nav link
 #: doc/.vitepress/en.yaml:1
@@ -265,12 +271,6 @@ msgstr "Ihr mächtiges und trotzdem einfach nutzbares Ticket-System."
 msgid "For Users and Administrators"
 msgstr "Für Nutzer und Administratoren"
 
-#. type: Plain text
-#: doc/en/index.md:35
-#, no-wrap
-msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
-msgstr " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
-
 #. type: Title #
 #: doc/en/style-guide.md:1
 #, no-wrap
@@ -450,6 +450,10 @@ msgstr "`### Abschnitt 1.2`"
 #: doc/en/style-guide.md:69
 msgid "`## Section 2`"
 msgstr "`## Abschnitt 2`"
+
+#, no-wrap
+#~ msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
+#~ msgstr " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 
 #, fuzzy, no-wrap
 #~ msgid "get-started/start"
