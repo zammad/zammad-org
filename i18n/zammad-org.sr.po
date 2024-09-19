@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 11:06+0200\n"
-"PO-Revision-Date: 2024-09-19 08:35+0000\n"
+"POT-Creation-Date: 2024-09-19 11:13+0100\n"
+"PO-Revision-Date: 2024-09-19 10:15+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -271,6 +271,12 @@ msgstr "/"
 msgid "Getting started"
 msgstr "Први кораци"
 
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/contribute/style-guide"
+msgstr "/sr/contribute/style-guide"
+
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: doc/en/index.md:1
 #, no-wrap
@@ -290,13 +296,13 @@ msgid "For Users and Administrators"
 msgstr "За кориснике и администраторе"
 
 #. type: Title #
-#: doc/en/style-guide.md:1
+#: doc/en/contribute/style-guide.md:1
 #, no-wrap
 msgid "Style and Content Guide"
 msgstr "Водич кроз стил и садржај"
 
 #. type: Plain text
-#: doc/en/style-guide.md:6
+#: doc/en/contribute/style-guide.md:6
 msgid ""
 "This guide provides an overview of the content that should be included in "
 "the Zammad documentation, as well as formatting guidelines to ensure clarity "
@@ -306,7 +312,7 @@ msgstr ""
 "за форматирање текста ради јасноће и читљивости."
 
 #. type: Plain text
-#: doc/en/style-guide.md:9
+#: doc/en/contribute/style-guide.md:9
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
 "contribute, have a look on our contribution page to get started."
@@ -315,13 +321,13 @@ msgstr ""
 "Ако желите да допринесете, консултујте нашу документацију за прве кораке."
 
 #. type: Title ##
-#: doc/en/style-guide.md:10
+#: doc/en/contribute/style-guide.md:10
 #, no-wrap
 msgid "Audience Assumptions and Content"
 msgstr "Претпоставке о публици и садржај"
 
 #. type: Plain text
-#: doc/en/style-guide.md:14
+#: doc/en/contribute/style-guide.md:14
 msgid ""
 "The documentation is written assuming our **users** have a basic "
 "understanding of web browser usage and common software design concepts."
@@ -331,7 +337,7 @@ msgstr ""
 "дизајна."
 
 #. type: Plain text
-#: doc/en/style-guide.md:17
+#: doc/en/contribute/style-guide.md:17
 msgid ""
 "The **Zammad administrator** additionally should have a basic understanding "
 "of the workflows and communication process in its company."
@@ -340,7 +346,7 @@ msgstr ""
 "токова и процеса комуникације у својој фирми."
 
 #. type: Plain text
-#: doc/en/style-guide.md:20
+#: doc/en/contribute/style-guide.md:20
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
 "with Linux system administration basics."
@@ -349,13 +355,13 @@ msgstr ""
 "буду упознати са основама администрације Linux система."
 
 #. type: Title ##
-#: doc/en/style-guide.md:21
+#: doc/en/contribute/style-guide.md:21
 #, no-wrap
 msgid "Style"
 msgstr "Стил"
 
 #. type: Plain text
-#: doc/en/style-guide.md:26
+#: doc/en/contribute/style-guide.md:26
 msgid ""
 "American English is the original source language for the documentation.  "
 "Translations are made via Weblate, see contribution section for more "
@@ -365,14 +371,14 @@ msgstr ""
 "Weblate апликације, погледајте одељак о преводима за више информација."
 
 #. type: Bullet: '* '
-#: doc/en/style-guide.md:41
+#: doc/en/contribute/style-guide.md:41
 msgid "Use short and clear sentences, prioritizing information over complexity"
 msgstr ""
 "Користите кратке и јасне реченице, дајући предност информацијама у односу на "
 "сложеност"
 
 #. type: Plain text
-#: doc/en/style-guide.md:41
+#: doc/en/contribute/style-guide.md:41
 #, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
@@ -404,13 +410,13 @@ msgstr ""
 "* Ако сте у недоумици, ускладите се са постојећом документацијом\n"
 
 #. type: Title ##
-#: doc/en/style-guide.md:43
+#: doc/en/contribute/style-guide.md:43
 #, no-wrap
 msgid "Formatting"
 msgstr "Форматирање текста"
 
 #. type: Plain text
-#: doc/en/style-guide.md:50
+#: doc/en/contribute/style-guide.md:50
 #, no-wrap
 msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 |\n"
@@ -426,13 +432,13 @@ msgstr ""
 "| Путања/локације | *Подешавања > Канали > Имејл* | \\*Подешавања > Канали > Имејл\\* |\n"
 
 #. type: Title ##
-#: doc/en/style-guide.md:52
+#: doc/en/contribute/style-guide.md:52
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: doc/en/style-guide.md:57
+#: doc/en/contribute/style-guide.md:57
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
 "levels should contain at least two sections. If only one section exists, "
@@ -443,32 +449,32 @@ msgstr ""
 "размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: doc/en/style-guide.md:59
+#: doc/en/contribute/style-guide.md:59
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: doc/en/style-guide.md:61
+#: doc/en/contribute/style-guide.md:61
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: doc/en/style-guide.md:63
+#: doc/en/contribute/style-guide.md:63
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: doc/en/style-guide.md:65
+#: doc/en/contribute/style-guide.md:65
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: doc/en/style-guide.md:67
+#: doc/en/contribute/style-guide.md:67
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: doc/en/style-guide.md:69
+#: doc/en/contribute/style-guide.md:69
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
@@ -487,10 +493,6 @@ msgstr "`## Одељак 2`"
 #, no-wrap
 #~ msgid "/documentation/user-docs/index"
 #~ msgstr "/documentation/user-docs/index"
-
-#, no-wrap
-#~ msgid "contribute/style-and-content-guide"
-#~ msgstr "contribute/style-and-content-guide"
 
 #, no-wrap
 #~ msgid "contribute/contribute"
