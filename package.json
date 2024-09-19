@@ -7,10 +7,11 @@
   },
   "scripts": {
     "dev": "vitepress dev doc/",
-    "i18n": "po4a --verbose .po4a.conf && pnpm run build-language-config-json-files && echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po",
+    "i18n": ".gitlab/update_po4a_conf.sh && po4a --verbose .po4a.conf && pnpm run build-language-config-json-files && pnpm run reset-po-changes",
     "build": "vitepress build doc/",
     "preview": "vitepress preview doc/",
-    "build-language-config-json-files": "(cd doc/.vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)"
+    "build-language-config-json-files": "(cd doc/.vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)",
+    "reset-po-changes": "echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po"
   },
   "dependencies": {
     "vite-plugin-vitepress-auto-sidebar": "^1.7.0"
