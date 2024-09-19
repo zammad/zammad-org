@@ -34,5 +34,3 @@ hero:
   text: 'Für Nutzer und Administratoren'
 layout: home
 ---
-
- <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->

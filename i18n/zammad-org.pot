@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 09:38+0200\n"
+"POT-Creation-Date: 2024-09-19 10:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,12 +262,6 @@ msgstr ""
 #: doc/en/index.md:1
 #, no-wrap
 msgid "For Users and Administrators"
-msgstr ""
-
-#. type: Plain text
-#: doc/en/index.md:35
-#, markdown-text, no-wrap
-msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""
 
 #. type: Title #

@@ -31,5 +31,3 @@ features:
     details: Get to know the team and our passion behind creating Zammad.
     link: https://zammad.com/en/company
 ---
-
- <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->
