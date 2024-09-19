@@ -39,7 +39,14 @@ export default
         }
       },
       search: {
-        provider: 'local'
+        provider: 'local',
+        options: {
+          locales: {
+            root: en.themeConfig.search,
+            de:   de.themeConfig.search,
+            sr:   sr.themeConfig.search,
+          }
+        }
       },
     }
   }

@@ -10,7 +10,7 @@ themeConfig:
     text: 'Aktualisiert am'
   nav:
     - 
-      link: https://www.zammad.com/de
+      link: https://www.zammad.com
       text: Zammad.com
     - 
       link: https://community.zammad.org/
