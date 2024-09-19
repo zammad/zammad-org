@@ -1,69 +1,70 @@
-# Style and Content Guide
+# Водич кроз стил и садржај
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation, as well as formatting guidelines to ensure clarity
-and readability.
+Овај водич вам пружа преглед садржаја Zammad документације, као и упутства
+за форматирање текста ради јасноће и читљивости.
 
-If you have questions, feel free to ask in our community. If you want to
-contribute, have a look on our contribution page to get started.
+Уколико имате додатних питања, слободно се обратите нашој онлајн
+заједници. Ако желите да допринесете, консултујте нашу документацију за прве
+кораке.
 
-## Audience Assumptions and Content
+## Претпоставке о публици и садржај
 
-The documentation is written assuming our **users** have a basic
-understanding of web browser usage and common software design concepts.
+Документација је написана у стилу који подразумева да наши **корисници**
+поседују основно знање о употреби претраживача и концептима софтверског
+дизајна.
 
-The **Zammad administrator** additionally should have a basic understanding
-of the workflows and communication process in its company.
+**Zammad администратор** треба додатно да поседује основно разумевање радних
+токова и процеса комуникације у својој фирми.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.
+За инстанце које сами хостују, **администратори система** такође треба да
+буду упознати са основама администрације Linux система.
 
-## Style
+## Стил
 
-American English is the original source language for the documentation.
-Translations are made via Weblate, see contribution section for more
-information.
+Амерички енглески је изворни језик документације. Преводи се врше преко
+Weblate апликације, погледајте одељак о преводима за више информација.
 
-* Use short and clear sentences, prioritizing information over complexity
-* Capitalize all words except minor ones in the page title and sections
-(see [title case](https://en.wikipedia.org/wiki/Title_case))
-* Line length of 80 characters in the source file should not be exceeded if
-possible
-* Proper breadcrumb separation for paths and locations with `>`
-* Use code highlighting to emphasize programming snippets
-* Include screenshots when necessary
-* Provide step-by-step instructions with clear explanations
-* Use examples or scenarios to illustrate concepts
-* Include relevant images or diagrams when necessary
-* Abbreviations should be explained the first time they are used or included
-in the glossary and linked to
-* If in doubt, align it to the existing documentation
-
-
-## Formatting
-
-| Type in Zammad | Highlighting                  | Markdown syntax                 |
-|----------------|-------------------------------|---------------------------------|
-| Buttons        | ``Sign in``                   | \`\`Sign in\`\`                 |
-| Fields         | **Name**                      | \*\*Name\*\*                    |
-| Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
+* Користите кратке и јасне реченице, дајући предност информацијама у односу
+  на сложеност
+* Све речи у наслову и одељцима (осим мањих) започните великим словом
+(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case))
+* Уколико је могуће, немојте прекорачивати дужину линије од 80 карактера
+у изворној датотеци
+* Одвајате правилно путање и локације са `>`
+* Користите истицање кода да бисте нагласили исечке текста који садрже инструкције
+* Убаците снимке екрана када је потребно
+* Дајте упутства корак-по-корак са јасним објашњењима
+* Користите примере или сценарије да илуструјете концепте
+* Укључите релевантне слике или дијаграме када је потребно
+* Скраћенице треба објаснити први пут када се користе или укључују
+у речнику и повезати их
+* Ако сте у недоумици, ускладите се са постојећом документацијом
 
 
-## Heading Structure
+## Форматирање текста
 
-Every documentation file should include a title on top level (#). Lower
-levels should contain at least two sections. If only one section exists,
-consider merging it with the higher-level content.
+| Тип у Zammad-у  | Истицање                      | Markdown синтакса               |
+|-----------------|-------------------------------|---------------------------------|
+| Дугмићи         | ``Пријава``                   | \`\`Пријава\`\`                 |
+| Поља            | **Назив**                     | \*\*Назив\*\*                   |
+| Путања/локације | *Подешавања > Канали > Имејл* | \*Подешавања > Канали > Имејл\* |
 
-Example:
 
-`# Title of page`
+## Структура наслова
 
-`## Section 1`
+Свака страна документације треба да поседује наслов највишег нивоа (#). Нижи
+нивои треба да садрже најмање два одељка. Уколико постоји само један одељак,
+размотрите да га припојите садржају вишег нивоа.
 
-`### Section 1.1`
+Пример:
 
-`### Section 1.2`
+`# Наслов стране`
 
-`## Section 2`
+`## Одељак 1`
+
+`### Одељак 1.1`
+
+`### Одељак 1.2`
+
+`## Одељак 2`
 

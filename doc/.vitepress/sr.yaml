@@ -1,15 +1,15 @@
 ---
 themeConfig:
   footer:
-    copyright: 'Copyright © 2012-present Zammad Foundation'
-    message: 'Zammad Hub'
+    copyright: 'Copyright © 2012-садашњост Zammad фондација'
+    message: 'Zammad чвориште'
   nav:
     - 
       link: https://www.zammad.com
       text: Zammad.com
     - 
       link: https://community.zammad.org/
-      text: 'Community forum'
+      text: 'Форум онлајн заједнице'
   sidebar:
     - 
       items:
@@ -17,12 +17,12 @@ themeConfig:
           items:
             - 
               link: get-started/start
-              text: Start
+              text: Почетак
             - 
               link: get-started/deployment
-              text: 'Deyploy Zammad'
-          text: 'Get Zammad'
-      text: 'Get started with Zammad'
+              text: 'Покрените Zammad'
+          text: 'Преузмите Zammad'
+      text: 'Први кораци са Zammad-ом'
     - 
       items:
         - 
@@ -30,52 +30,52 @@ themeConfig:
           items:
             - 
               link: /documentation/user-docs/index
-              text: Login
+              text: Пријава
             - 
               link: /documentation/user-docs/index
-              text: 'Ticket handling'
-          text: 'Use Zammad'
+              text: 'Обрада тикета'
+          text: 'Коришћење Zammad-а'
         - 
           collapsed: true
           items:
             - 
               link: /documentation/user-docs/index
-              text: 'General settings'
+              text: 'Општа подешавања'
             - 
               link: /documentation/user-docs/index
-              text: 'User management'
-          text: 'Administrate Zammad'
-      text: Documentation
+              text: 'Управљање корисницима'
+          text: 'Zammad администрација'
+      text: Документација
     - 
       items:
         - 
           link: contribute/style-and-content-guide
-          text: 'Style and content guide'
+          text: 'Водич кроз стил и садржај'
         - 
           link: contribute/contribute
-          text: Contribution
-      text: Contribute
+          text: Допринос
+      text: Допринесите
     - 
       items:
         - 
           link: reference/glossary
-          text: Glossary
+          text: Речник
         - 
           link: reference/api-reference
-          text: 'API reference'
+          text: 'API референца'
         - 
           link: reference/rails-commands
-          text: 'Rails commands'
-      text: Reference
+          text: 'Rails команде'
+      text: Референца
     - 
       items:
         - 
           link: /documentation/admin-docs/index
-          text: 'Admin documentation'
+          text: 'Администраторска документација'
         - 
           link: /cheat-sheet
-          text: 'Formatting cheat sheet'
-      text: 'Playground (example content)'
+          text: 'Пушкице за форматирање текста'
+      text: 'Игралиште (пример садржаја)'
   socialLinks:
     - 
       icon: github

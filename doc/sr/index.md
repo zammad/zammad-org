@@ -1,37 +1,37 @@
 ---
 features:
   - 
-    details: 'Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.'
+    details: 'Откријте најновија побољшања, поправке и нове функције да бисте извукли максимум из вашег система тикета.'
     link: https://zammad.com/en/releases/
-    title: 'Release Notes'
+    title: 'Белешке о издањима'
   - 
-    details: 'Zammad comes with a lot of cool features! Check them out here!'
+    details: 'Zammad има пуно кул функција! Сазнајте више овде!'
     link: https://zammad.com/en/product/features
-    title: 'Features Overview'
+    title: 'Преглед функција'
   - 
-    details: 'Get to know the team and our passion behind creating Zammad.'
+    details: 'Упознајте тим и нашу страст иза стварања Zammad-а.'
     link: https://zammad.com/en/company
-    title: 'About Us'
+    title: 'О нама'
 hero:
   actions:
     - 
       link: /
-      text: 'Getting started'
+      text: 'Први кораци'
       theme: brand
     - 
       link: /
-      text: Documentation
+      text: Документација
       theme: alt
     - 
       link: /
-      text: Contribute
+      text: Допринесите
       theme: alt
   image:
-    alt: 'Zammad logo'
+    alt: 'Zammad логотип'
     src: ../logo.png
-  name: 'Zammad Hub'
-  tagline: 'Your powerful yet easy-to-use ticketing system.'
-  text: 'For Users and Administrators'
+  name: 'Zammad чвориште'
+  tagline: 'Ваш моћан али једноставан тикет систем.'
+  text: 'За кориснике и администраторе'
 layout: home
 ---
 

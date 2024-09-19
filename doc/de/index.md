@@ -1,15 +1,15 @@
 ---
 features:
   - 
-    details: 'Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.'
+    details: 'Entdecken Sie die neuesten Verbesserungen, Fehlerbehebungen und neuen Funktionen, damit Ihr Ticket-System optimal läuft.'
     link: https://zammad.com/de/releases/
     title: Release-Notes
   - 
-    details: 'Zammad comes with a lot of cool features! Check them out here!'
+    details: 'Zammad hat eine Menge cooler Funktionen! Schauen Sie sie hier an!'
     link: https://zammad.com/de/product/features
     title: Feature-Überblick
   - 
-    details: 'Get to know the team and our passion behind creating Zammad.'
+    details: 'Lernen Sie das Team und unsere Leidenschaft für Zammad kennen.'
     link: https://zammad.com/de/company
     title: 'Über Uns'
 hero:
@@ -24,7 +24,7 @@ hero:
       theme: alt
     - 
       link: /
-      text: Contribute
+      text: Beitragen
       theme: alt
   image:
     alt: Zammad-Logo

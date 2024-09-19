@@ -1,15 +1,15 @@
 ---
 themeConfig:
   footer:
-    copyright: 'Copyright © 2012-present Zammad Foundation'
+    copyright: 'Copyright © 2012-jetzt Zammad Foundation'
     message: 'Zammad Hub'
   nav:
     - 
-      link: https://www.zammad.com
+      link: https://www.zammad.com/de
       text: Zammad.com
     - 
       link: https://community.zammad.org/
-      text: 'Community forum'
+      text: Community-Forum
   sidebar:
     - 
       items:
@@ -20,9 +20,9 @@ themeConfig:
               text: Start
             - 
               link: get-started/deployment
-              text: 'Deyploy Zammad'
-          text: 'Get Zammad'
-      text: 'Get started with Zammad'
+              text: 'Zammad in Betrieb nehmen'
+          text: 'Zammad holen'
+      text: 'Mit Zammad loslegen'
     - 
       items:
         - 
@@ -30,52 +30,52 @@ themeConfig:
           items:
             - 
               link: /documentation/user-docs/index
-              text: Login
+              text: Anmelden
             - 
               link: /documentation/user-docs/index
-              text: 'Ticket handling'
-          text: 'Use Zammad'
+              text: Ticket-Bearbeitung
+          text: 'Zammad verwenden'
         - 
           collapsed: true
           items:
             - 
               link: /documentation/user-docs/index
-              text: 'General settings'
+              text: 'Allgemeine Einstellungen'
             - 
               link: /documentation/user-docs/index
-              text: 'User management'
-          text: 'Administrate Zammad'
+              text: Benutzerverwaltung
+          text: 'Zammad administrieren'
       text: Dokumentation
     - 
       items:
         - 
           link: contribute/style-and-content-guide
-          text: 'Style and content guide'
+          text: 'Leitfaden für Stil und Inhalt'
         - 
           link: contribute/contribute
-          text: Contribution
-      text: Contribute
+          text: Beitrag
+      text: Beitragen
     - 
       items:
         - 
           link: reference/glossary
-          text: Glossary
+          text: Glossar
         - 
           link: reference/api-reference
-          text: 'API reference'
+          text: API-Referenz
         - 
           link: reference/rails-commands
-          text: 'Rails commands'
-      text: Reference
+          text: Rails-Befehle
+      text: Referenz
     - 
       items:
         - 
           link: /documentation/admin-docs/index
-          text: 'Admin documentation'
+          text: Administrations-Dokumentation
         - 
           link: /cheat-sheet
-          text: 'Formatting cheat sheet'
-      text: 'Playground (example content)'
+          text: 'Spickzettel für die Formatierung'
+      text: 'Spielplatz (Beispielinhalt)'
   socialLinks:
     - 
       icon: github

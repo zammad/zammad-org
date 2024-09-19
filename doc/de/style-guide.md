@@ -1,43 +1,44 @@
-# Style and Content Guide
+# Leitfaden für Stil und Inhalt
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation, as well as formatting guidelines to ensure clarity
-and readability.
+Dieser Leitfaden bietet eine Übersicht über den Inhalt, der in der
+Zammad-Dokumentation enthalten sein sollte, sowie Formatierungsrichtlinien,
+um Klarheit und Lesbarkeit zu gewährleisten.
 
-If you have questions, feel free to ask in our community. If you want to
-contribute, have a look on our contribution page to get started.
+Wenn Sie Fragen haben, können Sie diese gerne in unserer Community
+stellen. Wenn Sie zu Zammad oder der Dokumentation beitragen wollen, schauen
+Sie sich unsere Beitragen-Seite an, um loszulegen.
 
-## Audience Assumptions and Content
+## Annahmen zur Leserschaft und Inhalt
 
-The documentation is written assuming our **users** have a basic
-understanding of web browser usage and common software design concepts.
+Die Dokumentation geht davon aus, dass die **Benutzer** ein grundlegendes
+Verständnis für die Verwendung von Webbrowsern und der Bedienung von
+gängiger Software haben.
 
-The **Zammad administrator** additionally should have a basic understanding
-of the workflows and communication process in its company.
+Der **Zammad-Administrator** sollte zudem ein Grundverständnis für die
+Arbeitsabläufe und Kommunikationsprozesse in der Firma haben.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.
+Für selbst gehostete Instanzen sollten **Systemadministratoren** auch mit
+den Grundlagen der Linux-Systemadministration vertraut sein.
 
 ## Stil
 
-American English is the original source language for the documentation.
-Translations are made via Weblate, see contribution section for more
-information.
+Amerikanisches Englisch ist die original Sprache für die Dokumentation.  Die
+Übersetzung erfolgt über Weblate, siehe Abschnitt "Beitragen" für weitere
+Informationen.
 
-* Use short and clear sentences, prioritizing information over complexity
-* Capitalize all words except minor ones in the page title and sections
-(see [title case](https://en.wikipedia.org/wiki/Title_case))
-* Line length of 80 characters in the source file should not be exceeded if
-possible
-* Proper breadcrumb separation for paths and locations with `>`
-* Use code highlighting to emphasize programming snippets
-* Include screenshots when necessary
-* Provide step-by-step instructions with clear explanations
-* Use examples or scenarios to illustrate concepts
-* Include relevant images or diagrams when necessary
-* Abbreviations should be explained the first time they are used or included
-in the glossary and linked to
-* If in doubt, align it to the existing documentation
+* Verwenden Sie kurze und klare Sätze und stellen Sie Informationen über
+  Komplexität
+* Großschreibung aller Wörter mit Ausnahme von Füllwörtern im Seitentitel und in den Abschnitten
+(siehe [title case (eng.)](https://en.wikipedia.org/wiki/Title_case))
+* Die Zeilenlänge von 80 Zeichen in der Quelldatei sollte nach Möglichkeit nicht überschritten werden
+* Pfade und Orte mit `>` als Hierarchietrenner
+* Code-Definition zur Hervorhebung von Snippets
+* Einfügen von Screenshots, wenn nötig
+* Schritt-für-Schritt-Anleitungen mit klaren Erklärungen
+* Verwendung von Beispielen oder Szenarien zur Veranschaulichung von Konzepten
+* Wenn sinnvoll, relevante Bilder oder Diagramme einbauen.
+* Abkürzungen sollten bei der ersten Verwendung erklärt oder in das Glossar aufgenommen werden.
+* Im Zweifelsfall an der vorhandenen Dokumentation orientieren.
 
 
 ## Formatierung
@@ -49,21 +50,22 @@ in the glossary and linked to
 | Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
 
 
-## Heading Structure
+## Struktur der Überschrift
 
-Every documentation file should include a title on top level (#). Lower
-levels should contain at least two sections. If only one section exists,
-consider merging it with the higher-level content.
+Jede Dokumentationsdatei sollte einen Titel auf der obersten Ebene (#)
+enthalten. Die unteren Ebenen sollten mindestens zwei Abschnitte
+enthalten. Wenn nur ein Abschnitt vorhanden ist, sollte er mit dem
+übergeordneten Inhalt zusammengelegt werden.
 
 Beispiel:
 
-`# Title of page`
+`# Titel der Seite`
 
-`## Section 1`
+`## Abschnitt 1`
 
-`### Section 1.1`
+`### Abschnitt 1.1`
 
-`### Section 1.2`
+`### Abschnitt 1.2`
 
-`## Section 2`
+`## Abschnitt 2`
 
