@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 11:13+0100\n"
-"PO-Revision-Date: 2024-09-19 10:15+0000\n"
-"Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
+"POT-Creation-Date: 2024-09-19 12:20+0200\n"
+"PO-Revision-Date: 2024-09-19 10:24+0000\n"
+"Last-Translator: Martin Gruner <mg@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
 "Language: de\n"
@@ -20,190 +20,250 @@ msgstr ""
 "X-Generator: Weblate 5.7\n"
 
 #. type: Hash Value: themeConfig docFooter next
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Previous page"
 msgstr "Nächste Seite"
 
 #. type: Hash Value: themeConfig docFooter prev
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Next page"
 msgstr "Vorige Seite"
 
 #. type: Hash Value: themeConfig footer copyright
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Copyright © 2012-present Zammad Foundation"
 msgstr "Copyright © 2012-jetzt Zammad Foundation"
 
 #. type: Yaml Front Matter Hash Value: hero name
-#: doc/.vitepress/en.yaml:1 doc/en/index.md:1
+#: doc/.vitepress/config.en.yaml:1 doc/en/index.md:1
 #, no-wrap
 msgid "Zammad Hub"
 msgstr "Zammad Hub"
 
 #. type: Hash Value: themeConfig lastUpdated text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Updated at"
 msgstr "Aktualisiert am"
 
-#. type: Hash Value: themeConfig nav link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "https://www.zammad.com"
-msgstr "https://www.zammad.com/de"
-
 #. type: Hash Value: themeConfig nav text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Zammad.com"
 msgstr "Zammad.com"
 
-#. type: Hash Value: themeConfig nav link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "https://community.zammad.org/"
-msgstr "https://community.zammad.org/"
-
 #. type: Hash Value: themeConfig nav text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Community forum"
 msgstr "Community-Forum"
 
 #. type: Hash Value: themeConfig outline label
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "On this page"
 msgstr "Auf dieser Seite"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Start"
 msgstr "Start"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Deyploy Zammad"
 msgstr "Zammad in Betrieb nehmen"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Get Zammad"
 msgstr "Zammad holen"
 
 #. type: Hash Value: themeConfig sidebar text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Get started with Zammad"
 msgstr "Mit Zammad loslegen"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Login"
 msgstr "Anmelden"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Ticket handling"
 msgstr "Ticket-Bearbeitung"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Use Zammad"
 msgstr "Zammad verwenden"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "General settings"
 msgstr "Allgemeine Einstellungen"
 
 #. type: Hash Value: themeConfig sidebar items items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "User management"
 msgstr "Benutzerverwaltung"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Administrate Zammad"
 msgstr "Zammad administrieren"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
-#: doc/.vitepress/en.yaml:1 doc/en/index.md:1
+#: doc/.vitepress/config.en.yaml:1 doc/en/index.md:1
 #, no-wrap
 msgid "Documentation"
 msgstr "Dokumentation"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Style and content guide"
 msgstr "Leitfaden für Stil und Inhalt"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Contribution"
 msgstr "Beitrag"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
-#: doc/.vitepress/en.yaml:1 doc/en/index.md:1
+#: doc/.vitepress/config.en.yaml:1 doc/en/index.md:1
 #, no-wrap
 msgid "Contribute"
 msgstr "Beitragen"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Glossary"
 msgstr "Glossar"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "API reference"
 msgstr "API-Referenz"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Rails commands"
 msgstr "Rails-Befehle"
 
 #. type: Hash Value: themeConfig sidebar text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Reference"
 msgstr "Referenz"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Admin documentation"
 msgstr "Administrations-Dokumentation"
 
 #. type: Hash Value: themeConfig sidebar items text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Formatting cheat sheet"
 msgstr "Spickzettel für die Formatierung"
 
 #. type: Hash Value: themeConfig sidebar text
-#: doc/.vitepress/en.yaml:1
+#: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Playground (example content)"
 msgstr "Spielplatz (Beispielinhalt)"
+
+#. type: Hash Value: translations button buttonText
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "Search"
+msgstr "Suche"
+
+#. type: Hash Value: translations modal backButtonTitle
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "Close search"
+msgstr "Suche beenden"
+
+#. type: Hash Value: translations modal displayDetails
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "Display detailed list"
+msgstr "Detaillierte Liste anzeigen"
+
+#. type: Hash Value: translations modal footer closeKeyAriaLabel
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "escape"
+msgstr "Escape"
+
+#. type: Hash Value: translations modal footer closeText
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "to close"
+msgstr "zum Schließen"
+
+#. type: Hash Value: translations modal footer navigateDownKeyAriaLabel
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "down arrow"
+msgstr "Abwärtspfeil"
+
+#. type: Hash Value: translations modal footer navigateText
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "to navigate"
+msgstr "zum Navigieren"
+
+#. type: Hash Value: translations modal footer navigateUpKeyAriaLabel
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "up arrow"
+msgstr "Aufwärtspfeil"
+
+#. type: Hash Value: translations modal footer selectKeyAriaLabel
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "enter"
+msgstr "Enter"
+
+#. type: Hash Value: translations modal footer selectText
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "to select"
+msgstr "zum Auswählen"
+
+#. type: Hash Value: translations modal noResultsText
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "No results for"
+msgstr "Keine Ergebnisse für"
+
+#. type: Hash Value: translations modal resetButtonTitle
+#: doc/.vitepress/search.en.yaml:1
+#, no-wrap
+msgid "Reset search"
+msgstr "Suche zurücksetzen"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: doc/en/index.md:1
@@ -474,6 +534,14 @@ msgstr "`### Abschnitt 1.2`"
 #: doc/en/contribute/style-guide.md:69
 msgid "`## Section 2`"
 msgstr "`## Abschnitt 2`"
+
+#, no-wrap
+#~ msgid "https://www.zammad.com"
+#~ msgstr "https://www.zammad.com/de"
+
+#, no-wrap
+#~ msgid "https://community.zammad.org/"
+#~ msgstr "https://community.zammad.org/"
 
 #, no-wrap
 #~ msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
