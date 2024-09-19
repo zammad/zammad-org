@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-18 14:29+0200\n"
-"PO-Revision-Date: 2024-09-18 12:30+0000\n"
+"POT-Creation-Date: 2024-09-19 07:41+0200\n"
+"PO-Revision-Date: 2024-09-19 05:55+0000\n"
 "Last-Translator: Martin Gruner <mg@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -19,78 +19,131 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.7\n"
 
-#. type: Plain text
+#. type: Yaml Front Matter Hash Value: features details
 #: doc/en/index.md:1
 #, no-wrap
-msgid "---\n"
-msgstr "---\n"
-
-#. type: Plain text
-#: doc/en/index.md:3
-msgid "# https://vitepress.dev/reference/default-theme-home-page"
-msgstr "# https://vitepress.dev/reference/default-theme-home-page"
-
-#. type: Plain text
-#: doc/en/index.md:5
-msgid "layout: home"
-msgstr "layout: home"
-
-#. type: Plain text
-#: doc/en/index.md:23
-#, no-wrap
-msgid ""
-"hero:\n"
-"  name: \"Zammad Hub\"\n"
-"  text: \"For Users and Administrators\"\n"
-"  tagline: Your powerful yet easy-to-use ticketing system.\n"
-"  image:\n"
-"    src: ../logo.png\n"
-"    alt: Zammad logo\n"
-"  actions:\n"
-"    - theme: brand\n"
-"      text: Getting started\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Documentation\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Contribute\n"
-"      link: /\n"
+msgid "Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best."
 msgstr ""
-"hero:\n"
-"  name: \"Zammad Hub\"\n"
-"  text: \"Für Nutzer und Administratoren\"\n"
-"  tagline: Ihr mächtiges und dennoch einfach nutzbares Ticketing-System.\n"
-"  image:\n"
-"    src: ../logo.png\n"
-"    alt: Zammad logo\n"
-"  actions:\n"
-"    - theme: brand\n"
-"      text: Getting started\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Documentation\n"
-"      link: /\n"
-"    - theme: alt\n"
-"      text: Contribute\n"
-"      link: /\n"
 
-#. type: Plain text
-#: doc/en/index.md:34
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
 #, no-wrap
-msgid ""
-"features:\n"
-"  - title: Release Notes\n"
-"    details: Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.\n"
-"    link: https://zammad.com/en/releases/\n"
-"  - title: Features Overview\n"
-"    details: Zammad comes with a lot of cool features! Check them out here!\n"
-"    link: https://zammad.com/en/product/features\n"
-"  - title: About Us\n"
-"    details: Get to know the team and our passion behind creating Zammad.\n"
-"    link: https://zammad.com/en/company\n"
-"---\n"
+msgid "https://zammad.com/en/releases/"
+msgstr "https://zammad.com/de/releases/"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Release Notes"
+msgstr "Release-Notes"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad comes with a lot of cool features! Check them out here!"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/product/features"
+msgstr "https://zammad.com/de/product/features"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Features Overview"
+msgstr "Feature-Überblick"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Get to know the team and our passion behind creating Zammad."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/company"
+msgstr "https://zammad.com/de/company"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "About Us"
+msgstr "Über Uns"
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/"
+msgstr "/"
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Getting started"
+msgstr "Loslegen"
+
+#. type: Yaml Front Matter Hash Value: hero actions theme
+#: doc/en/index.md:1
+#, no-wrap
+msgid "brand"
+msgstr "brand"
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#. type: Yaml Front Matter Hash Value: hero actions theme
+#: doc/en/index.md:1
+#, no-wrap
+msgid "alt"
+msgstr "alt"
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Contribute"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero image alt
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad logo"
+msgstr "Zammad-Logo"
+
+#. type: Yaml Front Matter Hash Value: hero image src
+#: doc/en/index.md:1
+#, no-wrap
+msgid "../logo.png"
+msgstr "../logo.png"
+
+#. type: Yaml Front Matter Hash Value: hero name
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad Hub"
+msgstr "Zammad Hub"
+
+#. type: Yaml Front Matter Hash Value: hero tagline
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Your powerful yet easy-to-use ticketing system."
+msgstr "Ihr mächtiges und trotzdem einfach nutzbares Ticket-System."
+
+#. type: Yaml Front Matter Hash Value: hero text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "For Users and Administrators"
+msgstr "Für Nutzer und Administratoren"
+
+#. type: Yaml Front Matter Hash Value: layout
+#: doc/en/index.md:1
+#, no-wrap
+msgid "home"
+msgstr "home"
 
 #. type: Plain text
 #: doc/en/index.md:36
@@ -98,9 +151,10 @@ msgstr ""
 msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:2
-msgid "# Style and Content Guide"
+#. type: Title #
+#: doc/en/style-guide.md:1
+#, no-wrap
+msgid "Style and Content Guide"
 msgstr ""
 
 #. type: Plain text
@@ -118,9 +172,10 @@ msgid ""
 "contribute, have a look on our contribution page to get started."
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:11
-msgid "## Audience Assumptions and Content"
+#. type: Title ##
+#: doc/en/style-guide.md:10
+#, no-wrap
+msgid "Audience Assumptions and Content"
 msgstr ""
 
 #. type: Plain text
@@ -144,10 +199,11 @@ msgid ""
 "with Linux system administration basics."
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:22
-msgid "## Style"
-msgstr ""
+#. type: Title ##
+#: doc/en/style-guide.md:21
+#, no-wrap
+msgid "Style"
+msgstr "Stil"
 
 #. type: Plain text
 #: doc/en/style-guide.md:26
@@ -181,10 +237,11 @@ msgid ""
 "* If in doubt, align it to the existing documentation\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:44
-msgid "## Formatting"
-msgstr ""
+#. type: Title ##
+#: doc/en/style-guide.md:43
+#, no-wrap
+msgid "Formatting"
+msgstr "Formatierung"
 
 #. type: Plain text
 #: doc/en/style-guide.md:50
@@ -197,9 +254,10 @@ msgid ""
 "| Location/path  | *Settings > Channels > Email* | \\*Settings > Channels > Email\\* |\n"
 msgstr ""
 
-#. type: Plain text
-#: doc/en/style-guide.md:53
-msgid "## Heading Structure"
+#. type: Title ##
+#: doc/en/style-guide.md:52
+#, no-wrap
+msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
@@ -213,7 +271,7 @@ msgstr ""
 #. type: Plain text
 #: doc/en/style-guide.md:59
 msgid "Example:"
-msgstr ""
+msgstr "Beispiel:"
 
 #. type: Plain text
 #: doc/en/style-guide.md:61
@@ -239,6 +297,54 @@ msgstr ""
 #: doc/en/style-guide.md:69
 msgid "`## Section 2`"
 msgstr ""
+
+#, no-wrap
+#~ msgid "---\n"
+#~ msgstr "---\n"
+
+#~ msgid "# https://vitepress.dev/reference/default-theme-home-page"
+#~ msgstr "# https://vitepress.dev/reference/default-theme-home-page"
+
+#~ msgid "layout: home"
+#~ msgstr "layout: home"
+
+#, no-wrap
+#~ msgid ""
+#~ "hero:\n"
+#~ "  name: \"Zammad Hub\"\n"
+#~ "  text: \"For Users and Administrators\"\n"
+#~ "  tagline: Your powerful yet easy-to-use ticketing system.\n"
+#~ "  image:\n"
+#~ "    src: ../logo.png\n"
+#~ "    alt: Zammad logo\n"
+#~ "  actions:\n"
+#~ "    - theme: brand\n"
+#~ "      text: Getting started\n"
+#~ "      link: /\n"
+#~ "    - theme: alt\n"
+#~ "      text: Documentation\n"
+#~ "      link: /\n"
+#~ "    - theme: alt\n"
+#~ "      text: Contribute\n"
+#~ "      link: /\n"
+#~ msgstr ""
+#~ "hero:\n"
+#~ "  name: \"Zammad Hub\"\n"
+#~ "  text: \"Für Nutzer und Administratoren\"\n"
+#~ "  tagline: Ihr mächtiges und dennoch einfach nutzbares Ticketing-System.\n"
+#~ "  image:\n"
+#~ "    src: ../logo.png\n"
+#~ "    alt: Zammad logo\n"
+#~ "  actions:\n"
+#~ "    - theme: brand\n"
+#~ "      text: Getting started\n"
+#~ "      link: /\n"
+#~ "    - theme: alt\n"
+#~ "      text: Documentation\n"
+#~ "      link: /\n"
+#~ "    - theme: alt\n"
+#~ "      text: Contribute\n"
+#~ "      link: /\n"
 
 #, no-wrap
 #~ msgid ""
