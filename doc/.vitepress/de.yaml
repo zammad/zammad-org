@@ -1,8 +1,8 @@
 ---
 themeConfig:
   docFooter:
-    next: 'Previous page'
-    prev: 'Next page'
+    next: 'Nächste Seite'
+    prev: 'Vorige Seite'
   footer:
     copyright: 'Copyright © 2012-jetzt Zammad Foundation'
     message: 'Zammad Hub'
@@ -16,7 +16,7 @@ themeConfig:
       link: https://community.zammad.org/
       text: Community-Forum
   outline:
-    label: 'On this page'
+    label: 'Auf dieser Seite'
   sidebar:
     - 
       items:
