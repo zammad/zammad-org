@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 08:42+0200\n"
+"POT-Creation-Date: 2024-09-19 09:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,22 +52,10 @@ msgstr ""
 msgid "Community forum"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "get-started/start"
-msgstr ""
-
 #. type: Hash Value: themeConfig sidebar items items text
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Start"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "get-started/deployment"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -86,12 +74,6 @@ msgstr ""
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Get started with Zammad"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "/documentation/user-docs/index"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -136,22 +118,10 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "contribute/style-and-content-guide"
-msgstr ""
-
 #. type: Hash Value: themeConfig sidebar items text
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Style and content guide"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "contribute/contribute"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -166,34 +136,16 @@ msgstr ""
 msgid "Contribute"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "reference/glossary"
-msgstr ""
-
 #. type: Hash Value: themeConfig sidebar items text
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Glossary"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "reference/api-reference"
-msgstr ""
-
 #. type: Hash Value: themeConfig sidebar items text
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "API reference"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "reference/rails-commands"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -208,22 +160,10 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "/documentation/admin-docs/index"
-msgstr ""
-
 #. type: Hash Value: themeConfig sidebar items text
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Admin documentation"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "/cheat-sheet"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -236,18 +176,6 @@ msgstr ""
 #: doc/.vitepress/en.yaml:1
 #, no-wrap
 msgid "Playground (example content)"
-msgstr ""
-
-#. type: Hash Value: themeConfig socialLinks icon
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "github"
-msgstr ""
-
-#. type: Hash Value: themeConfig socialLinks link
-#: doc/.vitepress/en.yaml:1
-#, no-wrap
-msgid "https://github.com/zammad"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details
@@ -318,28 +246,10 @@ msgstr ""
 msgid "Getting started"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: hero actions theme
-#: doc/en/index.md:1
-#, no-wrap
-msgid "brand"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions theme
-#: doc/en/index.md:1
-#, no-wrap
-msgid "alt"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: doc/en/index.md:1
 #, no-wrap
 msgid "Zammad logo"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero image src
-#: doc/en/index.md:1
-#, no-wrap
-msgid "../logo.png"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero tagline
@@ -352,12 +262,6 @@ msgstr ""
 #: doc/en/index.md:1
 #, no-wrap
 msgid "For Users and Administrators"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: layout
-#: doc/en/index.md:1
-#, no-wrap
-msgid "home"
 msgstr ""
 
 #. type: Plain text
