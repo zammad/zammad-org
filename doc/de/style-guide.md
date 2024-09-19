@@ -18,7 +18,7 @@ of the workflows and communication process in its company.
 For self-hosted instances, **system administrators** should also be familiar
 with Linux system administration basics.
 
-## Style
+## Stil
 
 American English is the original source language for the documentation.
 Translations are made via Weblate, see contribution section for more
@@ -40,7 +40,7 @@ in the glossary and linked to
 * If in doubt, align it to the existing documentation
 
 
-## Formatting
+## Formatierung
 
 | Type in Zammad | Highlighting                  | Markdown syntax                 |
 |----------------|-------------------------------|---------------------------------|
@@ -55,7 +55,7 @@ Every documentation file should include a title on top level (#). Lower
 levels should contain at least two sections. If only one section exists,
 consider merging it with the higher-level content.
 
-Example:
+Beispiel:
 
 `# Title of page`
 

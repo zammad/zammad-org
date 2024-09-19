@@ -2,36 +2,36 @@
 features:
   - 
     details: 'Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.'
-    link: https://zammad.com/en/releases/
-    title: 'Release Notes'
+    link: https://zammad.com/de/releases/
+    title: Release-Notes
   - 
     details: 'Zammad comes with a lot of cool features! Check them out here!'
-    link: https://zammad.com/en/product/features
-    title: 'Features Overview'
+    link: https://zammad.com/de/product/features
+    title: Feature-Überblick
   - 
     details: 'Get to know the team and our passion behind creating Zammad.'
-    link: https://zammad.com/en/company
-    title: 'About Us'
+    link: https://zammad.com/de/company
+    title: 'Über Uns'
 hero:
   actions:
     - 
       link: /
-      text: 'Getting started'
+      text: Loslegen
       theme: brand
     - 
       link: /
-      text: Documentation
+      text: Dokumentation
       theme: alt
     - 
       link: /
       text: Contribute
       theme: alt
   image:
-    alt: 'Zammad logo'
+    alt: Zammad-Logo
     src: ../logo.png
   name: 'Zammad Hub'
-  tagline: 'Your powerful yet easy-to-use ticketing system.'
-  text: 'For Users and Administrators'
+  tagline: 'Ihr mächtiges und trotzdem einfach nutzbares Ticket-System.'
+  text: 'Für Nutzer und Administratoren'
 layout: home
 ---
 
