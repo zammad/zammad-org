@@ -1,13 +1,13 @@
 ---
 themeConfig:
   docFooter:
-    next: 'Previous page'
-    prev: 'Next page'
+    next: 'Претходна страна'
+    prev: 'Следећа страна'
   footer:
     copyright: 'Copyright © 2012-садашњост Zammad фондација'
     message: 'Zammad чвориште'
   lastUpdated:
-    text: 'Updated at'
+    text: 'Освежено у'
   nav:
     - 
       link: https://www.zammad.com
@@ -16,7 +16,7 @@ themeConfig:
       link: https://community.zammad.org/
       text: 'Форум онлајн заједнице'
   outline:
-    label: 'On this page'
+    label: 'На овој страни'
   sidebar:
     - 
       items:
@@ -56,7 +56,7 @@ themeConfig:
     - 
       items:
         - 
-          link: contribute/style-and-content-guide
+          link: contribute/style-guide
           text: 'Водич кроз стил и садржај'
         - 
           link: contribute/contribute

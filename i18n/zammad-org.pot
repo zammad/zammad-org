@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 11:06+0200\n"
+"POT-Creation-Date: 2024-09-19 11:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,6 +270,12 @@ msgstr ""
 msgid "Getting started"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/contribute/style-guide"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: doc/en/index.md:1
 #, no-wrap
@@ -289,13 +295,13 @@ msgid "For Users and Administrators"
 msgstr ""
 
 #. type: Title #
-#: doc/en/style-guide.md:1
+#: doc/en/contribute/style-guide.md:1
 #, markdown-text, no-wrap
 msgid "Style and Content Guide"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:6
+#: doc/en/contribute/style-guide.md:6
 #, markdown-text
 msgid ""
 "This guide provides an overview of the content that should be included in "
@@ -304,7 +310,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:9
+#: doc/en/contribute/style-guide.md:9
 #, markdown-text
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
@@ -312,13 +318,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: doc/en/style-guide.md:10
+#: doc/en/contribute/style-guide.md:10
 #, markdown-text, no-wrap
 msgid "Audience Assumptions and Content"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:14
+#: doc/en/contribute/style-guide.md:14
 #, markdown-text
 msgid ""
 "The documentation is written assuming our **users** have a basic "
@@ -326,7 +332,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:17
+#: doc/en/contribute/style-guide.md:17
 #, markdown-text
 msgid ""
 "The **Zammad administrator** additionally should have a basic understanding "
@@ -334,7 +340,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:20
+#: doc/en/contribute/style-guide.md:20
 #, markdown-text
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
@@ -342,13 +348,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: doc/en/style-guide.md:21
+#: doc/en/contribute/style-guide.md:21
 #, markdown-text, no-wrap
 msgid "Style"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:26
+#: doc/en/contribute/style-guide.md:26
 #, markdown-text
 msgid ""
 "American English is the original source language for the documentation.  "
@@ -357,13 +363,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: doc/en/style-guide.md:41
+#: doc/en/contribute/style-guide.md:41
 #, markdown-text
 msgid "Use short and clear sentences, prioritizing information over complexity"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:41
+#: doc/en/contribute/style-guide.md:41
 #, markdown-text, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
@@ -384,13 +390,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: doc/en/style-guide.md:43
+#: doc/en/contribute/style-guide.md:43
 #, markdown-text, no-wrap
 msgid "Formatting"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:50
+#: doc/en/contribute/style-guide.md:50
 #, markdown-text, no-wrap
 msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 "
@@ -405,13 +411,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: doc/en/style-guide.md:52
+#: doc/en/contribute/style-guide.md:52
 #, markdown-text, no-wrap
 msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:57
+#: doc/en/contribute/style-guide.md:57
 #, markdown-text
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
@@ -420,37 +426,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:59
+#: doc/en/contribute/style-guide.md:59
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:61
+#: doc/en/contribute/style-guide.md:61
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:63
+#: doc/en/contribute/style-guide.md:63
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:65
+#: doc/en/contribute/style-guide.md:65
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:67
+#: doc/en/contribute/style-guide.md:67
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: doc/en/style-guide.md:69
+#: doc/en/contribute/style-guide.md:69
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""

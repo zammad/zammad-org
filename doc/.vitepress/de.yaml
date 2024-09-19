@@ -56,7 +56,7 @@ themeConfig:
     - 
       items:
         - 
-          link: contribute/style-and-content-guide
+          link: contribute/style-guide
           text: 'Leitfaden für Stil und Inhalt'
         - 
           link: contribute/contribute

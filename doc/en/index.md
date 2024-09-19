@@ -15,7 +15,7 @@ hero:
       link: /
     - theme: alt
       text: Documentation
-      link: /
+      link: /contribute/style-guide
     - theme: alt
       text: Contribute
       link: /
