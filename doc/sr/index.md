@@ -19,7 +19,7 @@ hero:
       text: 'Први кораци'
       theme: brand
     - 
-      link: /contribute/style-guide
+      link: /sr/contribute/style-guide
       text: Документација
       theme: alt
     - 

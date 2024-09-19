@@ -19,7 +19,7 @@ hero:
       text: Loslegen
       theme: brand
     - 
-      link: /contribute/style-guide
+      link: /de/contribute/style-guide
       text: Dokumentation
       theme: alt
     - 
