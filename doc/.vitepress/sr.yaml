@@ -1,8 +1,13 @@
 ---
 themeConfig:
+  docFooter:
+    next: 'Previous page'
+    prev: 'Next page'
   footer:
     copyright: 'Copyright © 2012-садашњост Zammad фондација'
     message: 'Zammad чвориште'
+  lastUpdated:
+    text: 'Updated at'
   nav:
     - 
       link: https://www.zammad.com
@@ -10,6 +15,8 @@ themeConfig:
     - 
       link: https://community.zammad.org/
       text: 'Форум онлајн заједнице'
+  outline:
+    label: 'On this page'
   sidebar:
     - 
       items:

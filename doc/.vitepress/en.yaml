@@ -50,9 +50,16 @@ themeConfig:
           link: /documentation/admin-docs/index
         - text: Formatting cheat sheet
           link: /cheat-sheet
+  outline:
+    label: 'On this page'
   footer:
     message: 'Zammad Hub'
     copyright: 'Copyright © 2012-present Zammad Foundation'
   socialLinks:
     - icon: 'github'
       link: 'https://github.com/zammad'
+  lastUpdated:
+    text: 'Updated at'
+  docFooter:
+    prev: 'Next page'
+    next: 'Previous page'

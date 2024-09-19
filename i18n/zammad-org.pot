@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 10:44+0200\n"
+"POT-Creation-Date: 2024-09-19 11:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,12 @@ msgstr ""
 #: doc/.vitepress/en.yaml:1 doc/en/index.md:1
 #, no-wrap
 msgid "Zammad Hub"
+msgstr ""
+
+#. type: Hash Value: themeConfig lastUpdated text
+#: doc/.vitepress/en.yaml:1
+#, no-wrap
+msgid "Updated at"
 msgstr ""
 
 #. type: Hash Value: themeConfig nav link
