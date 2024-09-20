@@ -9,7 +9,7 @@ Their documentation can be found
 
 ## Getting started
 
-- Clone this repo.
+- Clone this repository.
 - Install dependencies via `pnpm install`.
 - Get the dev system running via `pnpm dev` and access it
   at `http://localhost:5173`.
