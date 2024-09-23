@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-09-19 12:20+0200\n"
-"PO-Revision-Date: 2024-09-19 10:15+0000\n"
+"PO-Revision-Date: 2024-09-20 12:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -149,7 +149,7 @@ msgstr "Допринос"
 #: doc/.vitepress/config.en.yaml:1 doc/en/index.md:1
 #, no-wrap
 msgid "Contribute"
-msgstr "Допринесите"
+msgstr "Учествујте"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: doc/.vitepress/config.en.yaml:1
@@ -197,73 +197,73 @@ msgstr "Игралиште (пример садржаја)"
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Search"
-msgstr ""
+msgstr "Претрага"
 
 #. type: Hash Value: translations modal backButtonTitle
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Close search"
-msgstr ""
+msgstr "Затвори претрагу"
 
 #. type: Hash Value: translations modal displayDetails
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Display detailed list"
-msgstr ""
+msgstr "Прикажи детаљну листу"
 
 #. type: Hash Value: translations modal footer closeKeyAriaLabel
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "escape"
-msgstr ""
+msgstr "escape"
 
 #. type: Hash Value: translations modal footer closeText
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "to close"
-msgstr ""
+msgstr "за затварање"
 
 #. type: Hash Value: translations modal footer navigateDownKeyAriaLabel
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "down arrow"
-msgstr ""
+msgstr "стрелица на доле"
 
 #. type: Hash Value: translations modal footer navigateText
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "to navigate"
-msgstr ""
+msgstr "за навигацију"
 
 #. type: Hash Value: translations modal footer navigateUpKeyAriaLabel
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "up arrow"
-msgstr ""
+msgstr "стрелица на горе"
 
 #. type: Hash Value: translations modal footer selectKeyAriaLabel
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "enter"
-msgstr ""
+msgstr "ентер"
 
 #. type: Hash Value: translations modal footer selectText
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "to select"
-msgstr ""
+msgstr "за одабир"
 
 #. type: Hash Value: translations modal noResultsText
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "No results for"
-msgstr ""
+msgstr "Без резултата за"
 
 #. type: Hash Value: translations modal resetButtonTitle
 #: doc/.vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
+msgstr "Поништи претрагу"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: doc/en/index.md:1
@@ -378,7 +378,7 @@ msgid ""
 "contribute, have a look on our contribution page to get started."
 msgstr ""
 "Уколико имате додатних питања, слободно се обратите нашој онлајн заједници. "
-"Ако желите да допринесете, консултујте нашу документацију за прве кораке."
+"Ако желите да учествујете, консултујте нашу документацију за прве кораке."
 
 #. type: Title ##
 #: doc/en/contribute/style-guide.md:10
