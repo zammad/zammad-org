@@ -24,7 +24,7 @@ hero:
       theme: alt
     - 
       link: /
-      text: Допринесите
+      text: Учествујте
       theme: alt
   image:
     alt: 'Zammad логотип'

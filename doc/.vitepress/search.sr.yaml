@@ -1,18 +1,18 @@
 ---
 translations:
   button:
-    buttonAriaLabel: Search
-    buttonText: Search
+    buttonAriaLabel: Претрага
+    buttonText: Претрага
   modal:
-    backButtonTitle: 'Close search'
-    displayDetails: 'Display detailed list'
+    backButtonTitle: 'Затвори претрагу'
+    displayDetails: 'Прикажи детаљну листу'
     footer:
       closeKeyAriaLabel: escape
-      closeText: 'to close'
-      navigateDownKeyAriaLabel: 'down arrow'
-      navigateText: 'to navigate'
-      navigateUpKeyAriaLabel: 'up arrow'
-      selectKeyAriaLabel: enter
-      selectText: 'to select'
-    noResultsText: 'No results for'
-    resetButtonTitle: 'Reset search'
+      closeText: 'за затварање'
+      navigateDownKeyAriaLabel: 'стрелица на доле'
+      navigateText: 'за навигацију'
+      navigateUpKeyAriaLabel: 'стрелица на горе'
+      selectKeyAriaLabel: ентер
+      selectText: 'за одабир'
+    noResultsText: 'Без резултата за'
+    resetButtonTitle: 'Поништи претрагу'

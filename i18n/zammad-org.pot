@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-19 12:20+0200\n"
+"POT-Creation-Date: 2024-09-25 08:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,98 +262,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: features details
-#: doc/en/index.md:1
-#, no-wrap
-msgid ""
-"Discover the latest enhancements, fixes and new features to keep your "
-"ticketing system running at its best."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features link
-#: doc/en/index.md:1
-#, no-wrap
-msgid "https://zammad.com/en/releases/"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features title
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Release Notes"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features details
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Zammad comes with a lot of cool features! Check them out here!"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features link
-#: doc/en/index.md:1
-#, no-wrap
-msgid "https://zammad.com/en/product/features"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features title
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Features Overview"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features details
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Get to know the team and our passion behind creating Zammad."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features link
-#: doc/en/index.md:1
-#, no-wrap
-msgid "https://zammad.com/en/company"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features title
-#: doc/en/index.md:1
-#, no-wrap
-msgid "About Us"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: doc/en/index.md:1
-#, no-wrap
-msgid "/"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions text
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Getting started"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: doc/en/index.md:1
-#, no-wrap
-msgid "/contribute/style-guide"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero image alt
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Zammad logo"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero tagline
-#: doc/en/index.md:1
-#, no-wrap
-msgid "Your powerful yet easy-to-use ticketing system."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero text
-#: doc/en/index.md:1
-#, no-wrap
-msgid "For Users and Administrators"
-msgstr ""
-
 #. type: Title #
 #: doc/en/contribute/style-guide.md:1
 #, markdown-text, no-wrap
@@ -519,4 +427,96 @@ msgstr ""
 #: doc/en/contribute/style-guide.md:69
 #, markdown-text
 msgid "`## Section 2`"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid ""
+"Discover the latest enhancements, fixes and new features to keep your "
+"ticketing system running at its best."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/releases/"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Release Notes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad comes with a lot of cool features! Check them out here!"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/product/features"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Features Overview"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Get to know the team and our passion behind creating Zammad."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "https://zammad.com/en/company"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: doc/en/index.md:1
+#, no-wrap
+msgid "About Us"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Getting started"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: doc/en/index.md:1
+#, no-wrap
+msgid "/contribute/style-guide"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero image alt
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Zammad logo"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero tagline
+#: doc/en/index.md:1
+#, no-wrap
+msgid "Your powerful yet easy-to-use ticketing system."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero text
+#: doc/en/index.md:1
+#, no-wrap
+msgid "For Users and Administrators"
 msgstr ""

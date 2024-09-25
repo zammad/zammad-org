@@ -43,11 +43,11 @@ Informationen.
 
 ## Formatierung
 
-| Type in Zammad | Highlighting                  | Markdown syntax                 |
-|----------------|-------------------------------|---------------------------------|
-| Buttons        | ``Sign in``                   | \`\`Sign in\`\`                 |
-| Fields         | **Name**                      | \*\*Name\*\*                    |
-| Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
+| Typ            | Hervorhebung                      | Markdown Syntax                     |
+|----------------|-----------------------------------|-------------------------------------|
+| Buttons        | ``Sign in``                       | \`\`Sign in\`\`                     |
+| Felder         | **Name**                          | \*\*Name\*\*                        |
+| Orte/Pfade     | *Einstellungen > Kanäle > Email*  | \*Einstellungen > Kanäle > Email\*  |
 
 
 ## Struktur der Überschrift
