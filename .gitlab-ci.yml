@@ -1,12 +1,23 @@
 ---
 image: registry.zammad.com/docker/zammad-ruby:stable
 
+workflow:
+  rules:
+    # Avoid duplicate branch and MR pipelines for push events to branches with an open MR.
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"
+      when: never
+    # Don't create branch pipelines for pushes to private branches (as there will also be a MR for them).
+    - if: $CI_COMMIT_BRANCH =~ /^(private|cherry-pick-|renovate|dependabot)/ && $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - when: always
+
 stages:
+  - pre
   - lint
-  - test
+  - deploy
 
 'push to github':
-  stage: lint
+  stage: pre
   before_script:
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
     - ssh-keyscan github.com >> $HOME/.ssh/known_hosts
@@ -20,10 +31,34 @@ stages:
     - develop
     - stable
 
+# This job will create commits in pipelines pushed from Weblate.
+# It re-generates the catalog, and any additional files such as view templates and chat assets.
+'push translations update commit':
+  stage: pre
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE =~ /Translations update from translations[.]zammad[.]org/
+      when: always
+    - when: never
+  script:
+    - apt update && apt install -y --no-install-recommends po4a
+    - pnpm install
+    - pnpm i18n
+    - git status
+    - git config user.email "noreply@weblate.org"
+    - git config user.name "Weblate"
+    # TODO drop usage of dedicated access token when CI_JOB_TOKEN support for commit pushing was added to weblate
+    #   https://docs.gitlab.com/ee/ci/jobs/ci_job_token.html#git-push-to-your-project-repository
+    - git remote add gitlab_origin https://oauth2:${WEBLATE_ACCESS_TOKEN}@${CI_SERVER_FQDN}/${CI_PROJECT_PATH}.git
+    - git add .
+    - git status --porcelain | grep "^[MA]" || exit 0 # check if files were added/changed
+    - 'git commit -m "Maintenance: Update translated files and catalog"'
+    - git show --stat
+    - git push gitlab_origin HEAD:$CI_COMMIT_REF_NAME
+
 super linter:
   stage: lint
   image:
-    name: github/super-linter:v5
+    name: github/super-linter:slim-v5
     entrypoint: [""]
   variables:
     FILTER_REGEX_EXCLUDE: doc/.vitepress|pnpm-lock.yaml
@@ -49,9 +84,9 @@ super linter:
 
 
 'build and deploy':
-  stage: test
+  stage: deploy
   script:
-    - pnpm add -D vitepress
+    - pnpm install
     - pnpm build
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
     - ssh-keyscan -p $DEPLOYPORT $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
