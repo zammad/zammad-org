@@ -28,7 +28,7 @@ hero:
       theme: alt
   image:
     alt: Zammad-Logo
-    src: ../logo.png
+    src: ../logo.svg
   name: 'Zammad Hub'
   tagline: 'Ihr mächtiges und trotzdem einfach nutzbares Ticket-System.'
   text: 'Für Nutzer und Administratoren'

@@ -7,7 +7,7 @@ hero:
   text: "For Users and Administrators"
   tagline: Your powerful yet easy-to-use ticketing system.
   image:
-    src: ../logo.png
+    src: ../logo.svg
     alt: Zammad logo
   actions:
     - theme: brand
