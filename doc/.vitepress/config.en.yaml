@@ -5,6 +5,12 @@ themeConfig:
       link: 'https://www.zammad.com'
     - text: 'Community forum'
       link: 'https://community.zammad.org/'
+    - text: Next release
+      items:
+        - text: Current release
+          link: https://zammad.org
+          target: _self
+          noIcon: true
   sidebar:
     - text: Get started with Zammad
       items:

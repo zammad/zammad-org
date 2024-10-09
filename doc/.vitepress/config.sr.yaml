@@ -15,6 +15,14 @@ themeConfig:
     - 
       link: https://community.zammad.org/
       text: 'Форум онлајн заједнице'
+    - 
+      items:
+        - 
+          link: https://zammad.org
+          noIcon: true
+          target: _self
+          text: 'Current release'
+      text: 'Next release'
   outline:
     label: 'На овој страни'
   sidebar:

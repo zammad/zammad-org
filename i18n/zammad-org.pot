@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-09-26 04:57+0000\n"
+"POT-Creation-Date: 2024-10-09 13:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,18 @@ msgstr ""
 #: doc/.vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Community forum"
+msgstr ""
+
+#. type: Hash Value: themeConfig nav items text
+#: doc/.vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Current release"
+msgstr ""
+
+#. type: Hash Value: themeConfig nav text
+#: doc/.vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Next release"
 msgstr ""
 
 #. type: Hash Value: themeConfig outline label
