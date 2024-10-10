@@ -6,11 +6,11 @@
     "yaml": "^2.5.1"
   },
   "scripts": {
-    "dev": "vitepress dev doc/",
+    "dev": "vitepress dev",
     "i18n": ".gitlab/update_po4a_conf.sh && po4a --verbose .po4a.conf && pnpm run build-language-config-json-files && pnpm run reset-po-changes",
-    "build": "vitepress build doc/",
-    "preview": "vitepress preview doc/",
-    "build-language-config-json-files": "(cd doc/.vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "build-language-config-json-files": "(cd .vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)",
     "reset-po-changes": "echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po"
   },
   "dependencies": {

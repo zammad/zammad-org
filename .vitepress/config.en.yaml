@@ -6,7 +6,13 @@ themeConfig:
     - text: 'Community forum'
       link: 'https://community.zammad.org/'
     - text: Next release
+      activeMatch: .*
       items:
+        - text: Next release
+          link: /
+          target: _self
+          noIcon: true
+          activeMatch: .*
         - text: Current release
           link: https://zammad.org
           target: _self

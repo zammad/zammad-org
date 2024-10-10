@@ -28,7 +28,7 @@ hero:
       theme: alt
   image:
     alt: 'Zammad логотип'
-    src: ../logo.svg
+    src: ./logo.svg
   name: 'Zammad чвориште'
   tagline: 'Ваш моћан али једноставан тикет систем.'
   text: 'За кориснике и администраторе'

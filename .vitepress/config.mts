@@ -8,24 +8,26 @@ import searchEN from './search.en.yaml.json'
 import searchDE from './search.de.yaml.json'
 import searchSR from './search.sr.yaml.json'
 
-
-
 // https://vitepress.dev/reference/site-config
 export default
   defineConfig({
-    title: "Zammad Hub",
-    rewrites: {
-      'en/:rest*': ':rest*'
-    },
-    description: "Documentation for Zammad Users and Administrators",
+    title: 'Zammad Hub',
+    outDir: 'dist',
+    cacheDir: 'cache',
+    srcDir: 'src',
+    srcExclude: ['README.md'],
+    description: 'Documentation for Zammad Users and Administrators',
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
+    rewrites: {
+      'en/:rest*': ':rest*',
+    },
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
       },
     },
     locales: {
-      root: {label: 'English', ...defineConfig(configEN as UserConfig) },
+      root: { label: 'English', ...defineConfig(configEN as UserConfig) },
       de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
       sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
     },
@@ -37,6 +39,10 @@ export default
     //   ]
     // },
     themeConfig: {
+      logo: {
+        light: 'logo-flat-light.svg',
+        dark: 'logo-flat-dark.svg',
+      },
       lastUpdated: {
         formatOptions: {
           dateStyle: 'short',

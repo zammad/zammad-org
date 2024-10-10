@@ -61,7 +61,7 @@ super linter:
     name: github/super-linter:slim-v5
     entrypoint: [""]
   variables:
-    FILTER_REGEX_EXCLUDE: doc/.vitepress|pnpm-lock.yaml
+    FILTER_REGEX_EXCLUDE: .vitepress|pnpm-lock.yaml
   script:
     - |
       if [[ "${CI_DEBUG_TRACE,,}" == "true" || "${CI_COMPONENT_TRACE,,}" == "true" ]]; then
@@ -94,6 +94,6 @@ super linter:
     - ssh-add <(echo "$SSH_PRIVATE_KEY_COMMUNITY")
     - ls -al
     - apt update && apt install -y --no-install-recommends rsync
-    - rsync -avz --delete -e "ssh -p $DEPLOYPORT" ./doc/.vitepress/dist/ $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/home/next.zammad.org/pub/
+    - rsync -avz --delete -e "ssh -p $DEPLOYPORT" dist/ $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/home/next.zammad.org/pub/
   only:
     - develop
