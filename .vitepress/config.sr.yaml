@@ -4,7 +4,14 @@ themeConfig:
     next: 'Претходна страна'
     prev: 'Следећа страна'
   footer:
-    copyright: 'Copyright © 2012-садашњост Zammad фондација'
+    copyright: 'Copyright © 2012-present <a href="https://zammad-foundation.org">Zammad Foundation</a>'
+    items:
+      - 
+        link: /imprint
+        text: Imprint
+      - 
+        link: /gdpr
+        text: 'Privacy policy'
     message: 'Zammad чвориште'
   lastUpdated:
     text: 'Освежено у'

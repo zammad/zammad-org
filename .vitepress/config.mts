@@ -1,6 +1,7 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
-// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'
 import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
@@ -31,13 +32,22 @@ export default
       de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
       sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
     },
-    // didn't get it to work, for options see https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar
-    // vite: {
-    //   plugins: [
-    //     AutoSidebar({
-    //     })
-    //   ]
-    // },
+    vite: {
+      resolve: {
+        alias: [
+          {
+            find: /^.*\/VPFooter\.vue$/,
+            replacement: fileURLToPath(
+              new URL('./theme/VPFooter.vue', import.meta.url)
+            )
+          },
+        ],
+      },
+      // didn't get it to work, for options see https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar
+      // plugins: [
+      //   AutoSidebar({}),
+      // ],
+    },
     themeConfig: {
       logo: {
         light: 'logo-flat-light.svg',

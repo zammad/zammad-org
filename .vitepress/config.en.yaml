@@ -65,8 +65,13 @@ themeConfig:
   outline:
     label: 'On this page'
   footer:
+    items:
+      - text: Imprint
+        link: /imprint
+      - text: Privacy policy
+        link: /gdpr
     message: 'Zammad Hub'
-    copyright: 'Copyright © 2012-present Zammad Foundation'
+    copyright: Copyright © 2012-present <a href="https://zammad-foundation.org">Zammad Foundation</a>
   socialLinks:
     - icon: 'github'
       link: 'https://github.com/zammad'
