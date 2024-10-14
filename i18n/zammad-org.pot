@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-14 14:14+0200\n"
+"POT-Creation-Date: 2024-10-14 14:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -574,8 +574,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "This privacy policy describes how your personal information is collected, "
-"used, and shared when you visit or make a purchase from "
-"https://www.zammad.org (the \"site\")."
+"used, and shared when you visit https://www.zammad.org (the \"site\")."
 msgstr ""
 
 #. type: Title ##
@@ -855,7 +854,7 @@ msgid "Disclaimer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/imprint.md:35
+#: src/en/imprint.md:37
 #, markdown-text
 msgid ""
 "Despite careful control of the contents, we do not assume any liability for "

@@ -9,7 +9,7 @@ layout: home
 
 ## Zammad GmbH Privacy Policy
 
-This privacy policy describes how your personal information is collected, used, and shared when you visit or make a purchase from https://www.zammad.org (the "site").
+This privacy policy describes how your personal information is collected, used, and shared when you visit https://www.zammad.org (the "site").
 
 ## Personal information we collect
 
