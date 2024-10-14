@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-12 15:45+0100\n"
+"POT-Creation-Date: 2024-10-14 14:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -795,100 +795,72 @@ msgstr ""
 msgid "Marienstraße 18, Berlin, BE, 10117, Germany"
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/imprint.md:8
 #, markdown-text, no-wrap
-msgid "Squint your eyes and discover something."
+msgid "Zammad.org"
+msgstr ""
+
+#. type: Plain text
+#: src/en/imprint.md:11
+#, markdown-text
+msgid "Zammad.org is a service provided by:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/imprint.md:16
+#, markdown-text
+msgid "Zammad GmbH \\ Marienstraße 18 \\ 10117 Berlin \\ Germany"
+msgstr ""
+
+#. type: Plain text
+#: src/en/imprint.md:20
+#, markdown-text
+msgid ""
+"Phone: +49 (0) 30 55 57 160-00 \\ Fax: +49 (0) 30 55 57 160-99 \\ Email: "
+"enjoy@zammad.com"
+msgstr ""
+
+#. type: Plain text
+#: src/en/imprint.md:25
+#, markdown-text
+msgid ""
+"Managing Director: Martin Edenhofer \\ Commercial Register Charlottenburg, "
+"No. HRB 163946 B \\ Head Office: Berlin (Mitte) \\ Sales Tax Identification "
+"No.: DE298516802"
 msgstr ""
 
 #. type: Title ##
-#: src/en/imprint.md:10
+#: src/en/imprint.md:26
 #, markdown-text, no-wrap
-msgid "zammad.org is a service provided by"
+msgid "Source Code"
 msgstr ""
 
 #. type: Plain text
-#: src/en/imprint.md:12
-#, markdown-text, no-wrap
-msgid "Zammad GmbH  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:14 src/en/imprint.md:32
+#: src/en/imprint.md:29
 #, markdown-text
-msgid "Berlin, Germany"
-msgstr ""
-
-#. type: Title ###
-#: src/en/imprint.md:15 src/en/imprint.md:33
-#, markdown-text, no-wrap
-msgid "Post Address"
+msgid "Source code owner (including zammad.org) is:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/imprint.md:17 src/en/imprint.md:35
-#, markdown-text, no-wrap
-msgid "Marienstraße 18  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:18 src/en/imprint.md:36
-#, markdown-text, no-wrap
-msgid "10117 Berlin  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:20 src/en/imprint.md:38
+#: src/en/imprint.md:32
 #, markdown-text
-msgid "Germany"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:21
-#, markdown-text, no-wrap
-msgid "Trade Register: Charlottenburg, Nr. HRB 163946 B  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:23
-#, markdown-text
-msgid "Place of office: Berlin (Mitte)"
+msgid "Zammad Foundation \\ Berlin, Germany"
 msgstr ""
 
 #. type: Title ##
-#: src/en/imprint.md:24
+#: src/en/imprint.md:33
 #, markdown-text, no-wrap
-msgid "Represented by"
+msgid "Disclaimer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/imprint.md:27
+#: src/en/imprint.md:35
 #, markdown-text
-msgid "Martin Edenhofer"
-msgstr ""
-
-#. type: Title ##
-#: src/en/imprint.md:28
-#, markdown-text, no-wrap
-msgid "Source Code Owner of Zammad is"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:30
-#, markdown-text, no-wrap
-msgid "Zammad Foundation  \n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/imprint.md:39
-#, markdown-text, no-wrap
-msgid "Legal Note"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:41
-#, markdown-text
-msgid "No developers were harmed during the production of Zammad."
+msgid ""
+"Despite careful control of the contents, we do not assume any liability for "
+"the contents of external links. The operators of the linked pages are solely "
+"responsible for the content of their pages."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details

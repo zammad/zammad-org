@@ -4,37 +4,27 @@ layout: home
 
 # Imprint
 
-### Squint your eyes and discover something.
+## Zammad.org
 
-## zammad.org is a service provided by
+Zammad.org is a service provided by:
 
-Zammad GmbH  
-Berlin, Germany
+Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Germany
 
-### Post Address
+Phone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
+enjoy@zammad.com
 
-Marienstraße 18  
-10117 Berlin  
-Germany
+Managing Director: Martin Edenhofer \ Commercial Register Charlottenburg,
+No. HRB 163946 B \ Head Office: Berlin (Mitte) \ Sales Tax Identification
+No.: DE298516802
 
-Trade Register: Charlottenburg, Nr. HRB 163946 B  
-Place of office: Berlin (Mitte)
+## Source Code
 
-## Represented by
+Source code owner (including zammad.org) is:
 
-Martin Edenhofer
+Zammad Foundation \ Berlin, Germany
 
-## Source Code Owner of Zammad is
+## Disclaimer
 
-Zammad Foundation  
-Berlin, Germany
-
-### Post Address
-
-Marienstraße 18  
-10117 Berlin  
-Germany
-
-## Legal Note
-
-No developers were harmed during the production of Zammad.
+Despite careful control of the contents, we do not assume any liability for
+the contents of external links. The operators of the linked pages are solely
+responsible for the content of their pages.
