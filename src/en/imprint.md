@@ -32,4 +32,6 @@ Berlin, Germany
 
 ## Disclaimer
 
-Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.
+Despite careful control of the contents, we do not assume any liability
+for the contents of external links. The operators of the linked pages are
+solely responsible for the content of their pages.
