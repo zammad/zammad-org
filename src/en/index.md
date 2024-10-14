@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Zammad Hub"
   text: "For Users and Administrators"
-  tagline: Your powerful yet easy-to-use ticketing system.
+  tagline: Setup, manage and use Zammad.
   image:
     src: ./logo.svg
     alt: Zammad logo

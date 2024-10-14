@@ -30,7 +30,7 @@ hero:
     alt: 'Zammad логотип'
     src: ./logo.svg
   name: 'Zammad чвориште'
-  tagline: 'Ваш моћан али једноставан тикет систем.'
+  tagline: 'Setup, manage and use Zammad.'
   text: 'За кориснике и администраторе'
 layout: home
 ---
