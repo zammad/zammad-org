@@ -1,7 +1,8 @@
 # Zammad Hub
 
-This replaces the existing zammad.org. It is planned to have a single landing
-page from where you can jump to different sections as well as to sister sites.
+This repo will replace the current zammad.org with the with a single landing
+page from where users can jump to different sections as well as to related
+sites.
 
 It contains the new documentation system which is based on Vitepress.
 Their documentation can be found
@@ -19,9 +20,8 @@ Their documentation can be found
 
 ## Additional info
 
-- Used [tab plugin](https://vitepress-plugins.sapphi.red/tabs/) and added the
-  configuration to `config.mts` and `theme/index.ts`.
-- Added plugin
-  [autosidebar](https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar)
-  to `config.mts` to have an automatically populated page structure in the
-  sidebar. Currently not working.
+- Before pushing your changes, make sure to update the translation catalog by
+executing ``pnpm i18n``.
+- Make sure to change only the english source files. All other languages are
+automatically built based on the translation from
+[Weblate](https://translations.zammad.org).
