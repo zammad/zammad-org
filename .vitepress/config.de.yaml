@@ -30,13 +30,13 @@ themeConfig:
           link: /
           noIcon: true
           target: _self
-          text: 'Next release'
+          text: 'Nächste Version'
         - 
           link: https://zammad.org
           noIcon: true
           target: _self
-          text: 'Current release'
-      text: 'Next release'
+          text: 'Aktuelle Version'
+      text: 'Nächste Version'
   outline:
     label: 'Auf dieser Seite'
   sidebar:

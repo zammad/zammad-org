@@ -30,13 +30,13 @@ themeConfig:
           link: /
           noIcon: true
           target: _self
-          text: 'Next release'
+          text: 'Следеће издање'
         - 
           link: https://zammad.org
           noIcon: true
           target: _self
-          text: 'Current release'
-      text: 'Next release'
+          text: 'Актуелно издање'
+      text: 'Следеће издање'
   outline:
     label: 'На овој страни'
   sidebar:
