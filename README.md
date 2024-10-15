@@ -22,6 +22,6 @@ Their documentation can be found
 
 - Before pushing your changes, make sure to update the translation catalog by
 executing ``pnpm i18n``.
-- Make sure to change only the english source files. All other languages are
+- Make sure to change the english source files only. All other languages are
 automatically built based on the translation from
 [Weblate](https://translations.zammad.org).
