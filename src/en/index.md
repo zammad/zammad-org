@@ -12,13 +12,13 @@ hero:
   actions:
     - theme: brand
       text: Getting started
-      link: /
+      link: /get-zammad/get-started
     - theme: alt
       text: Documentation
-      link: /contribute/style-guide
+      link: doc-start
     - theme: alt
       text: Contribute
-      link: /
+      link: /contribute/contribute
 
 features:
   - title: Release Notes

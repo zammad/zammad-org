@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-21 11:24+0200\n"
+"POT-Creation-Date: 2024-10-21 13:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,8 +96,8 @@ msgstr ""
 msgid "Community forum"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
+#. type: Hash Value: themeConfig nav items link
+#: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "/"
 msgstr ""
@@ -126,76 +126,100 @@ msgstr ""
 msgid "On this page"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items link
+#. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "get-started/start"
+msgid "get-zammad/get-started"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Start"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "get-started/deployment"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Deyploy Zammad"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/get-zammad/get-started.md:1
+#, markdown-text, no-wrap
 msgid "Get Zammad"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "get-zammad/installation"
+msgstr ""
+
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/get-zammad/installation.md:1
+#, markdown-text, no-wrap
+msgid "Install Zammad"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar text
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Get started with Zammad"
+msgid "Get Started"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/documentation/user-docs/index"
+msgid "/use/general/index"
+msgstr ""
+
+#. type: Title ##
+#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:6
+#, markdown-text, no-wrap
+msgid "General"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "/use/how-to/index"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Login"
+msgid "How to"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items text
+#. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Ticket handling"
+msgid "/use/faq/index"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:1
+#, markdown-text, no-wrap
+msgid "FAQ"
+msgstr ""
+
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:1
+#, markdown-text, no-wrap
 msgid "Use Zammad"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items text
+#. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "General settings"
+msgid "/administrate/setup"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "User management"
+msgid "Setup a new system"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "/administrate/manage-channels"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items items text
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Manage channels"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -213,6 +237,19 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
+msgid "contribute/contribute"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:1
+#: src/en/index.md:1
+#, markdown-text, no-wrap
+msgid "Contribute"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
 msgid "contribute/style-guide"
 msgstr ""
 
@@ -220,24 +257,6 @@ msgstr ""
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Style and content guide"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "contribute/contribute"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Contribution"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions text
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "Contribute"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items link
@@ -280,36 +299,6 @@ msgstr ""
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Reference"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/documentation/admin-docs/index"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Admin documentation"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/cheat-sheet"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Formatting cheat sheet"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Playground (example content)"
 msgstr ""
 
 #. type: Hash Value: themeConfig socialLinks link
@@ -388,6 +377,12 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Title #
+#: src/en/administrate/index.md:1
+#, markdown-text, no-wrap
+msgid "Administration"
 msgstr ""
 
 #. type: Title #
@@ -555,6 +550,24 @@ msgstr ""
 #: src/en/contribute/style-guide.md:69
 #, markdown-text
 msgid "`## Section 2`"
+msgstr ""
+
+#. type: Title #
+#: src/en/doc-start.md:1
+#, markdown-text, no-wrap
+msgid "Welcome to the Zammad Documentation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/doc-start.md:4
+#, markdown-text
+msgid "[User Documentation](/use/general/index)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/doc-start.md:5
+#, markdown-text
+msgid "[Admin Documentation](/administrate/index)"
 msgstr ""
 
 #. type: Title ###
@@ -911,6 +924,12 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, no-wrap
+msgid "/get-zammad/get-started"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
@@ -920,7 +939,13 @@ msgstr ""
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: src/en/index.md:1
 #, no-wrap
-msgid "/contribute/style-guide"
+msgid "doc-start"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, no-wrap
+msgid "/contribute/contribute"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero image alt
@@ -939,4 +964,62 @@ msgstr ""
 #: src/en/index.md:1
 #, no-wrap
 msgid "For Users and Administrators"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:5
+#, markdown-text
+msgid ""
+"Welcome to the user documentation of Zammad. Here you can learn how to use "
+"Zammad to collaborate with your colleagues even better!"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:11
+#, markdown-text
+msgid ""
+"In general, Zammad should be pretty self explanatory. However, there are "
+"features that are not obvious at first glance. These features are described "
+"in this documentation as well as some general explanations and tips."
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:16
+#, markdown-text
+msgid ""
+"This documentation is divided in different sections. Currently you are "
+"reading the *General* section. This section includes explanations of the "
+"documentation itself as well as a description of features. There are also "
+"FAQs and a how-to section. See left sidebar or below to navigate to your "
+"desired information."
+msgstr ""
+
+#. type: Title ##
+#: src/en/use/general/index.md:17
+#, markdown-text, no-wrap
+msgid "Content of User Documentation Section"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:20
+#, markdown-text
+msgid "TODO: - Links / TOC to different sections of user documentation"
+msgstr ""
+
+#. type: Title #
+#: src/en/use/how-to/index.md:1
+#, markdown-text, no-wrap
+msgid "How-To"
 msgstr ""

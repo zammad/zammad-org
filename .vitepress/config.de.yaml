@@ -43,46 +43,46 @@ themeConfig:
     - 
       items:
         - 
-          items:
-            - 
-              link: get-started/start
-              text: Start
-            - 
-              link: get-started/deployment
-              text: 'Zammad in Betrieb nehmen'
+          link: get-zammad/get-started
           text: 'Zammad holen'
-      text: 'Mit Zammad loslegen'
+        - 
+          link: get-zammad/installation
+          text: 'Install Zammad'
+      text: 'Get Started'
     - 
       items:
         - 
-          collapsed: true
+          collapsed: false
           items:
             - 
-              link: /documentation/user-docs/index
-              text: Anmelden
+              link: /use/general/index
+              text: General
             - 
-              link: /documentation/user-docs/index
-              text: Ticket-Bearbeitung
+              link: /use/how-to/index
+              text: 'How to'
+            - 
+              link: /use/faq/index
+              text: FAQ
           text: 'Zammad verwenden'
         - 
           collapsed: true
           items:
             - 
-              link: /documentation/user-docs/index
-              text: 'Allgemeine Einstellungen'
+              link: /administrate/setup
+              text: 'Setup a new system'
             - 
-              link: /documentation/user-docs/index
-              text: Benutzerverwaltung
+              link: /administrate/manage-channels
+              text: 'Manage channels'
           text: 'Zammad administrieren'
       text: Dokumentation
     - 
       items:
         - 
+          link: contribute/contribute
+          text: Beitragen
+        - 
           link: contribute/style-guide
           text: 'Leitfaden für Stil und Inhalt'
-        - 
-          link: contribute/contribute
-          text: Beitrag
       text: Beitragen
     - 
       items:
@@ -96,15 +96,6 @@ themeConfig:
           link: reference/rails-commands
           text: Rails-Befehle
       text: Referenz
-    - 
-      items:
-        - 
-          link: /documentation/admin-docs/index
-          text: Administrations-Dokumentation
-        - 
-          link: /cheat-sheet
-          text: 'Spickzettel für die Formatierung'
-      text: 'Spielplatz (Beispielinhalt)'
   socialLinks:
     - 
       icon: github

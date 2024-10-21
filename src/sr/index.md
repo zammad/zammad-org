@@ -15,15 +15,15 @@ features:
 hero:
   actions:
     - 
-      link: /
+      link: /get-zammad/get-started
       text: 'Први кораци'
       theme: brand
     - 
-      link: /sr/contribute/style-guide
+      link: doc-start
       text: Документација
       theme: alt
     - 
-      link: /
+      link: /contribute/contribute
       text: Учествујте
       theme: alt
   image:
