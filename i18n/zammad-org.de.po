@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-12 15:45+0100\n"
-"PO-Revision-Date: 2024-10-11 06:16+0000\n"
+"POT-Creation-Date: 2024-10-21 13:46+0200\n"
+"PO-Revision-Date: 2024-10-16 06:16+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -33,34 +33,33 @@ msgstr "Vorige Seite"
 
 #. type: Hash Value: themeConfig footer copyright
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "Copyright © 2012-present Zammad Foundation"
+#, no-wrap
 msgid "Copyright © 2012-present <a href=\"https://zammad-foundation.org\">Zammad Foundation</a>"
-msgstr "Copyright © 2012-jetzt Zammad Foundation"
+msgstr "Copyright © 2012-jetzt <a href=\"https://zammad-foundation.org\"> Zammad Foundation</a>"
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "/imprint"
-msgstr ""
+msgstr "/imprint"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/imprint.md:6
 #, no-wrap
 msgid "Imprint"
-msgstr ""
+msgstr "Impressum"
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "/gdpr"
-msgstr ""
+msgstr "/gdpr"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/gdpr.md:6
 #, no-wrap
 msgid "Privacy policy"
-msgstr ""
+msgstr "Datenschutzbestimmungen"
 
 #. type: Yaml Front Matter Hash Value: hero name
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
@@ -98,8 +97,8 @@ msgstr "https://community.zammad.org/"
 msgid "Community forum"
 msgstr "Community-Forum"
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
+#. type: Hash Value: themeConfig nav items link
+#: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "/"
 msgstr "/"
@@ -112,10 +111,9 @@ msgstr "Nächste Version"
 
 #. type: Hash Value: themeConfig nav items link
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "https://www.zammad.com"
+#, no-wrap
 msgid "https://zammad.org"
-msgstr "https://www.zammad.com/de"
+msgstr "https://zammad.org"
 
 #. type: Hash Value: themeConfig nav items text
 #: .vitepress/config.en.yaml:1
@@ -129,77 +127,105 @@ msgstr "Aktuelle Version"
 msgid "On this page"
 msgstr "Auf dieser Seite"
 
-#. type: Hash Value: themeConfig sidebar items items link
+#. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, fuzzy, no-wrap
-msgid "get-started/start"
+#| msgid "get-started/start"
+msgid "get-zammad/get-started"
 msgstr "get-started/start"
 
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Start"
-msgstr "Start"
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-msgid "get-started/deployment"
-msgstr "get-started/deployment"
-
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Deyploy Zammad"
-msgstr "Zammad in Betrieb nehmen"
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/get-zammad/get-started.md:1
 #, no-wrap
 msgid "Get Zammad"
 msgstr "Zammad holen"
 
-#. type: Hash Value: themeConfig sidebar text
+#. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Get started with Zammad"
-msgstr "Mit Zammad loslegen"
+msgid "get-zammad/installation"
+msgstr ""
+
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/get-zammad/installation.md:1
+#, fuzzy, no-wrap
+#| msgid "Get Zammad"
+msgid "Install Zammad"
+msgstr "Zammad holen"
+
+#. type: Hash Value: themeConfig sidebar text
+#: .vitepress/config.en.yaml:1
+#, fuzzy, no-wrap
+#| msgid "Getting started"
+msgid "Get Started"
+msgstr "Loslegen"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/documentation/user-docs/index"
+msgid "/use/general/index"
+msgstr ""
+
+#. type: Title ##
+#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:6
+#, fuzzy, no-wrap
+#| msgid "General settings"
+msgid "General"
+msgstr "Allgemeine Einstellungen"
+
+#. type: Hash Value: themeConfig sidebar items items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "/use/how-to/index"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Login"
-msgstr "Anmelden"
+msgid "How to"
+msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items items text
+#. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Ticket handling"
-msgstr "Ticket-Bearbeitung"
+msgid "/use/faq/index"
+msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:1
+#, no-wrap
+msgid "FAQ"
+msgstr ""
+
+#. type: Title #
+#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:1
 #, no-wrap
 msgid "Use Zammad"
 msgstr "Zammad verwenden"
 
-#. type: Hash Value: themeConfig sidebar items items text
+#. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "General settings"
-msgstr "Allgemeine Einstellungen"
+msgid "/administrate/setup"
+msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "User management"
-msgstr "Benutzerverwaltung"
+msgid "Setup a new system"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "/administrate/manage-channels"
+msgstr ""
+
+#. type: Hash Value: themeConfig sidebar items items text
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Manage channels"
+msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -215,10 +241,22 @@ msgstr "Dokumentation"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "/contribute/style-guide"
+#, no-wrap
+msgid "contribute/contribute"
+msgstr "contribute/contribute"
+
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:1
+#: src/en/index.md:1
+#, no-wrap
+msgid "Contribute"
+msgstr "Beitragen"
+
+#. type: Hash Value: themeConfig sidebar items link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
 msgid "contribute/style-guide"
-msgstr "/de/contribute/style-guide"
+msgstr "contribute/style-guide"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -228,28 +266,9 @@ msgstr "Leitfaden für Stil und Inhalt"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "/contribute/style-guide"
-msgid "contribute/contribute"
-msgstr "/de/contribute/style-guide"
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Contribution"
-msgstr "Beitrag"
-
-#. type: Yaml Front Matter Hash Value: hero actions text
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "Contribute"
-msgstr "Beitragen"
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "reference/glossary"
-msgstr ""
+msgstr "reference/glossary"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -261,7 +280,7 @@ msgstr "Glossar"
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "reference/api-reference"
-msgstr ""
+msgstr "reference/api-reference"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -271,10 +290,9 @@ msgstr "API-Referenz"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "Rails commands"
+#, no-wrap
 msgid "reference/rails-commands"
-msgstr "Rails-Befehle"
+msgstr "reference/rails-commands"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -288,42 +306,11 @@ msgstr "Rails-Befehle"
 msgid "Reference"
 msgstr "Referenz"
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/documentation/admin-docs/index"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Admin documentation"
-msgstr "Administrations-Dokumentation"
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/cheat-sheet"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Formatting cheat sheet"
-msgstr "Spickzettel für die Formatierung"
-
-#. type: Hash Value: themeConfig sidebar text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Playground (example content)"
-msgstr "Spielplatz (Beispielinhalt)"
-
 #. type: Hash Value: themeConfig socialLinks link
 #: .vitepress/config.en.yaml:1
-#, fuzzy, no-wrap
-#| msgid "https://www.zammad.com"
+#, no-wrap
 msgid "https://github.com/zammad"
-msgstr "https://www.zammad.com/de"
+msgstr "https://github.com/zammad"
 
 #. type: Hash Value: translations button buttonText
 #: .vitepress/search.en.yaml:1
@@ -396,6 +383,13 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Title #
+#: src/en/administrate/index.md:1
+#, fuzzy, no-wrap
+#| msgid "Administrate Zammad"
+msgid "Administration"
+msgstr "Zammad administrieren"
 
 #. type: Title #
 #: src/en/contribute/style-guide.md:1
@@ -582,34 +576,60 @@ msgstr "`### Abschnitt 1.2`"
 msgid "`## Section 2`"
 msgstr "`## Abschnitt 2`"
 
+#. type: Title #
+#: src/en/doc-start.md:1
+#, no-wrap
+msgid "Welcome to the Zammad Documentation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/doc-start.md:4
+#, fuzzy
+#| msgid "/documentation/user-docs/index"
+msgid "[User Documentation](/use/general/index)"
+msgstr "/documentation/user-docs/index"
+
+#. type: Plain text
+#: src/en/doc-start.md:5
+#, fuzzy
+#| msgid "/documentation/admin-docs/index"
+msgid "[Admin Documentation](/administrate/index)"
+msgstr "/documentation/admin-docs/index"
+
 #. type: Title ###
 #: src/en/gdpr.md:8
 #, no-wrap
 msgid "General Data Protection Regulation"
-msgstr ""
+msgstr "Allgemeine Datenschutzbestimmungen"
 
 #. type: Title ##
 #: src/en/gdpr.md:10
 #, no-wrap
 msgid "Zammad GmbH Privacy Policy"
-msgstr ""
+msgstr "Zammad GmbH Datenschutzerklärung"
 
 #. type: Plain text
-#: src/en/gdpr.md:13
+#: src/en/gdpr.md:14
+#, fuzzy
+#| msgid ""
+#| "This privacy policy describes how your personal information is collected, "
+#| "used, and shared when you visit https://www.zammad.org (the \"site\")."
 msgid ""
 "This privacy policy describes how your personal information is collected, "
-"used, and shared when you visit or make a purchase from https://www.zammad."
-"org (the \"site\")."
+"used and shared when you visit https://www.zammad.org (the \"site\")."
 msgstr ""
+"Diese Datenschutzerklärung beschreibt, wie Ihre persönlichen Daten "
+"gesammelt, verwendet und weitergegeben werden, wenn Sie https://www.zammad."
+"org (die \"Website\") besuchen."
 
 #. type: Title ##
-#: src/en/gdpr.md:14
+#: src/en/gdpr.md:15
 #, no-wrap
 msgid "Personal information we collect"
-msgstr ""
+msgstr "Persönliche Informationen, die wir sammeln"
 
 #. type: Plain text
-#: src/en/gdpr.md:17
+#: src/en/gdpr.md:24
 msgid ""
 "When you visit the site, we automatically collect certain information about "
 "your device, including information about your web browser, IP address, time "
@@ -619,48 +639,61 @@ msgid ""
 "the site, and information about how you interact with the site. We refer to "
 "this automatically collected information as \"device information.\""
 msgstr ""
+"Wenn Sie die Website besuchen, erfassen wir automatisch bestimmte "
+"Informationen über Ihr Gerät, einschließlich Informationen über Ihren "
+"Webbrowser, Ihre IP-Adresse, Ihre Zeitzone und einige der Cookies, die auf "
+"Ihrem Gerät installiert sind. Wenn Sie auf der Website surfen, erfassen wir "
+"außerdem Informationen über die einzelnen von Ihnen angezeigten Webseiten, "
+"welche Websites oder Suchbegriffe Sie auf die Website verwiesen haben, und "
+"Informationen darüber, wie Sie mit der Website interagieren. Wir bezeichnen "
+"diese automatisch erfassten Informationen als \"Geräteinformationen\"."
 
 #. type: Title ##
-#: src/en/gdpr.md:18
+#: src/en/gdpr.md:25
 #, no-wrap
 msgid "We collect device information using the following technologies:"
-msgstr ""
+msgstr "Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:"
 
-#. type: Bullet: '* '
-#: src/en/gdpr.md:23
+#. type: Plain text
+#: src/en/gdpr.md:35
+#, no-wrap
 msgid ""
-"\"Cookies\" are data files that are placed on your device or computer and "
-"often include an anonymous unique identifier. For more information about "
-"cookies and how to disable cookies visit https://www.allaboutcookies.org."
-msgstr ""
-
-#. type: Bullet: '* '
-#: src/en/gdpr.md:23
-msgid ""
-"\"Log files\" track actions occurring on the site, and collect data "
-"including your IP address, browser type, internet service provider, "
-"referring/exit pages, and date/time stamps."
-msgstr ""
-
-#. type: Bullet: '* '
-#: src/en/gdpr.md:23
-msgid ""
-"\"Web beacons\", \"tags\", and \"pixels\" are electronic files used to "
-"record information about how you browse the site."
+"* \"Cookies\" are data files that are placed on your device or computer and often\n"
+"include an anonymous unique identifier. For more information about cookies and\n"
+"how to disable cookies visit https://www.allaboutcookies.org.\n"
+"* \"Log files\" track actions occurring on the site, and collect data including\n"
+"your IP address, browser type, internet service provider, referring/exit pages,\n"
+"and date/time stamps.\n"
+"* \"Web beacons\", \"tags\", and \"pixels\" are electronic files used to record\n"
+"information about how you browse the site.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/gdpr.md:24
+#: src/en/gdpr.md:36
 #, no-wrap
 msgid "Use of Matomo"
-msgstr ""
+msgstr "Verwendung von Matomo"
 
 #. type: Plain text
-#: src/en/gdpr.md:27
+#: src/en/gdpr.md:49
+#, fuzzy
+#| msgid ""
+#| "This website uses Matomo (formerly Piwik), an open source software for "
+#| "statistical analysis of visitor access. Matomo uses cookies, which are "
+#| "text files placed on your computer, to help us analyze how users use the "
+#| "site. The information generated by the cookie about your use of the "
+#| "website is stored on a server in Germany. The IP address is made "
+#| "anonymous immediately after processing and before it is stored. You have "
+#| "the option of preventing the installation of cookies by changing the "
+#| "setting of your browser software. We would like to point out that with "
+#| "the appropriate settings not all functions of this website may be "
+#| "available to you anymore. You can decide whether a unique web analysis "
+#| "cookie may be stored in your browser to enable the operator of the "
+#| "website to collect and analyze various statistical data."
 msgid ""
 "This website uses Matomo (formerly Piwik), an open source software for "
 "statistical analysis of visitor access. Matomo uses cookies, which are text "
-"files placed on your computer, to help us analyze how users use the site. "
+"files placed on your computer, to help us analyze how users use the site.  "
 "The information generated by the cookie about your use of the website is "
 "stored on a server in Germany. The IP address is made anonymous immediately "
 "after processing and before it is stored. You have the option of preventing "
@@ -671,22 +704,38 @@ msgid ""
 "enable the operator of the website to collect and analyze various "
 "statistical data."
 msgstr ""
+"Diese Website benutzt Matomo (ehemals Piwik), eine Open-Source-Software für "
+"die statistische Auswertung von Besucherzugriffen. Matomo verwendet sog. "
+"\"Cookies\", Textdateien, die auf Ihrem Computer gespeichert werden und die "
+"eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den "
+"Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden auf "
+"einem Server in Deutschland gespeichert. Die IP-Adresse wird sofort nach der "
+"Verarbeitung und vor deren Speicherung anonymisiert. Sie haben die "
+"Möglichkeit, die Installation der Cookies zu verhindern, indem Sie die "
+"Einstellungen Ihrer Browser-Software ändern. Wir möchten Sie darauf "
+"hinweisen, dass Ihnen bei entsprechender Einstellung möglicherweise nicht "
+"mehr alle Funktionen dieser Website zur Verfügung stehen. Sie können "
+"entscheiden, ob ein einmaliger Webanalyse-Cookie in Ihrem Browser "
+"gespeichert werden darf, der es dem Betreiber der Website ermöglicht, "
+"verschiedene statistische Daten zu erheben und auszuwerten."
 
 #. type: Plain text
-#: src/en/gdpr.md:29
+#: src/en/gdpr.md:52
 msgid ""
 "When we talk about \"personal information\" in this privacy policy, we are "
 "talking both about device information and order information."
 msgstr ""
+"Wenn wir in dieser Datenschutzrichtlinie von \"persönlichen Informationen\" "
+"sprechen, meinen wir sowohl Geräte- als auch Bestellinformationen."
 
 #. type: Title ##
-#: src/en/gdpr.md:30
+#: src/en/gdpr.md:53
 #, no-wrap
 msgid "How we use your personal information"
-msgstr ""
+msgstr "Wie wir Ihre persönlichen Daten verwenden"
 
 #. type: Plain text
-#: src/en/gdpr.md:33
+#: src/en/gdpr.md:60
 msgid ""
 "We use the device information that we collect to help us screen for "
 "potential risk and fraud (in particular, your IP address), and more "
@@ -694,56 +743,73 @@ msgid ""
 "analytics about how our customers browse and interact with the site, and to "
 "assess the success of our marketing and advertising campaigns)."
 msgstr ""
+"Wir verwenden die gesammelten Geräteinformationen, um potenzielle Risiken "
+"und Betrugsfälle zu erkennen (insbesondere Ihre IP-Adresse) und ganz "
+"allgemein, um unsere Website zu verbessern und zu optimieren (z.B. durch die "
+"Erstellung von Analysen darüber, wie unsere Kunden auf der Website surfen "
+"und mit ihr interagieren, und um den Erfolg unserer Marketing- und "
+"Werbekampagnen zu bewerten)."
 
 #. type: Title ##
-#: src/en/gdpr.md:34
+#: src/en/gdpr.md:61
 #, no-wrap
 msgid "Sharing your personal information"
-msgstr ""
+msgstr "Weitergabe Ihrer persönlichen Informationen"
 
 #. type: Plain text
-#: src/en/gdpr.md:37
+#: src/en/gdpr.md:64
 msgid "We don't share your personal information with third parties."
-msgstr ""
+msgstr "Wir geben Ihre persönlichen Daten nicht an Dritte weiter."
 
 #. type: Plain text
-#: src/en/gdpr.md:39
+#: src/en/gdpr.md:68
 msgid ""
 "We may share your personal information to comply with applicable laws and "
 "regulations, to respond to a subpoena, search warrant or other lawful "
 "request for information we receive, or to otherwise protect our rights."
 msgstr ""
+"Wir können Ihre persönlichen Daten weitergeben, um geltende Gesetze und "
+"Vorschriften einzuhalten, um auf eine Vorladung, einen Durchsuchungsbefehl "
+"oder eine andere rechtmäßige Anfrage nach Informationen zu reagieren, die "
+"wir erhalten, oder um unsere Rechte anderweitig zu schützen."
 
 #. type: Title ##
-#: src/en/gdpr.md:40
+#: src/en/gdpr.md:69
 #, no-wrap
 msgid "Do not track"
-msgstr ""
+msgstr "Do not track"
 
 #. type: Plain text
-#: src/en/gdpr.md:43
+#: src/en/gdpr.md:73
 msgid ""
 "Please note that we do alter/reduce our site's data collection if we see a "
 "\"Do Not Track\" signal from your browser."
 msgstr ""
+"Bitte beachten Sie, dass wir die Datenerfassung auf unserer Website ändern/"
+"reduzieren, wenn wir ein \"Do Not Track\"-Signal von Ihrem Browser erhalten."
 
 #. type: Title ##
-#: src/en/gdpr.md:44
+#: src/en/gdpr.md:74
 #, no-wrap
 msgid "Your rights"
-msgstr ""
+msgstr "Ihre Rechte"
 
 #. type: Plain text
-#: src/en/gdpr.md:47
+#: src/en/gdpr.md:80
 msgid ""
 "If you are a European resident you have the right to access personal "
 "information we hold about you and to ask that your personal information be "
 "corrected, updated, or deleted. If you would like to exercise this right, "
 "please contact us through the contact information below."
 msgstr ""
+"Wenn Sie in Europa ansässig sind, haben Sie das Recht, auf die von uns über "
+"Sie gespeicherten personenbezogenen Daten zuzugreifen und die Berichtigung, "
+"Aktualisierung oder Löschung Ihrer personenbezogenen Daten zu verlangen. "
+"Wenn Sie von diesem Recht Gebrauch machen möchten, kontaktieren Sie uns "
+"bitte über die nachstehenden Kontaktinformationen."
 
 #. type: Plain text
-#: src/en/gdpr.md:49
+#: src/en/gdpr.md:86
 msgid ""
 "Additionally, if you are a European resident we are processing your "
 "information in order to fulfil contracts we might have with you (for example "
@@ -752,15 +818,21 @@ msgid ""
 "your information will be transferred outside of Europe, including to Canada "
 "and the United States."
 msgstr ""
+"Wenn Sie in Europa ansässig sind, verarbeiten wir Ihre Daten außerdem zur "
+"Erfüllung von Verträgen, die wir mit Ihnen geschlossen haben (z.B. wenn Sie "
+"eine Bestellung über die Website aufgeben), oder zur Verfolgung unserer oben "
+"aufgeführten legitimen Geschäftsinteressen. Bitte beachten Sie auch, dass "
+"Ihre Daten außerhalb Europas, einschließlich Kanada und den Vereinigten "
+"Staaten, übermittelt werden."
 
 #. type: Title ##
-#: src/en/gdpr.md:50
+#: src/en/gdpr.md:87
 #, no-wrap
 msgid "Data retention"
-msgstr ""
+msgstr "Speicherung von Daten"
 
 #. type: Plain text
-#: src/en/gdpr.md:53
+#: src/en/gdpr.md:95
 msgid ""
 "We adhere to the principles of data avoidance and data economy. We therefore "
 "only store your personal data for as long as is necessary to achieve the "
@@ -769,132 +841,123 @@ msgid ""
 "periods, the corresponding data will be blocked or deleted as a matter of "
 "routine and in accordance with statutory regulations."
 msgstr ""
+"Wir halten uns an die Grundsätze der Datenvermeidung und Datensparsamkeit. "
+"Wir speichern Ihre personenbezogenen Daten daher nur so lange, wie es zur "
+"Erreichung der hier genannten Zwecke erforderlich ist bzw. wie es die "
+"verschiedenen gesetzlich vorgesehenen Speicherfristen vorsehen. Nach "
+"Erreichen des jeweiligen Zwecks oder Ablauf dieser Fristen werden die "
+"entsprechenden Daten routinemäßig und entsprechend den gesetzlichen "
+"Vorschriften gesperrt oder gelöscht."
 
 #. type: Title ##
-#: src/en/gdpr.md:54
+#: src/en/gdpr.md:96
 #, no-wrap
 msgid "Changes"
-msgstr ""
+msgstr "Änderungen"
 
 #. type: Plain text
-#: src/en/gdpr.md:57
+#: src/en/gdpr.md:101
 msgid ""
 "We may update this privacy policy from time to time in order to reflect, for "
 "example, changes to our practices or for other operational, legal or "
 "regulatory reasons."
 msgstr ""
+"Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu "
+"aktualisieren, um z.B. Anpassungen an betriebliche, rechtliche oder "
+"regulatorische Gründe zu berücksichtigen."
 
 #. type: Title ##
-#: src/en/gdpr.md:58
+#: src/en/gdpr.md:102
 #, no-wrap
 msgid "Contact us"
-msgstr ""
+msgstr "Kontakt"
 
 #. type: Plain text
-#: src/en/gdpr.md:61
+#: src/en/gdpr.md:107
 msgid ""
 "For more information about our privacy practices, if you have questions, or "
 "if you would like to make a complaint, please contact us by e-mail at "
 "info@zammad.org or by mail using the details provided below:"
 msgstr ""
+"Wenn Sie weitere Informationen über unsere Datenschutzpraktiken wünschen, "
+"Fragen haben oder eine Beschwerde einreichen möchten, wenden Sie sich bitte "
+"per E-Mail an info@zammad.org oder per Post an die unten angegebenen "
+"Kontaktdaten:"
 
 #. type: Plain text
-#: src/en/gdpr.md:62
+#: src/en/gdpr.md:108
 msgid "Marienstraße 18, Berlin, BE, 10117, Germany"
-msgstr ""
+msgstr "Marienstraße 18, Berlin, BE, 10117, Deutschland"
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/imprint.md:8
 #, no-wrap
-msgid "Squint your eyes and discover something."
+msgid "Zammad.org"
+msgstr "Zammad.org"
+
+#. type: Plain text
+#: src/en/imprint.md:11
+msgid "Zammad.org is a service provided by:"
+msgstr "Zammad.org ist ein Dienst von:"
+
+#. type: Plain text
+#: src/en/imprint.md:16
+msgid "Zammad GmbH \\ Marienstraße 18 \\ 10117 Berlin \\ Germany"
+msgstr "Zammad GmbH \\ Marienstraße 18 \\ 10117 Berlin \\ Deutschland"
+
+#. type: Plain text
+#: src/en/imprint.md:20
+msgid ""
+"Phone: +49 (0) 30 55 57 160-00 \\ Fax: +49 (0) 30 55 57 160-99 \\ Email: "
+"enjoy@zammad.com"
 msgstr ""
+"Telefon: +49 (0) 30 55 57 160-00 \\ Fax: +49 (0) 30 55 57 160-99 \\ Email: "
+"enjoy@zammad.com"
+
+#. type: Plain text
+#: src/en/imprint.md:25
+msgid ""
+"Managing Director: Martin Edenhofer \\ Commercial Register Charlottenburg, "
+"No. HRB 163946 B \\ Head Office: Berlin (Mitte) \\ Sales Tax Identification "
+"No.: DE298516802"
+msgstr ""
+"Geschäftsführer: Martin Edenhofer \\ Handelsregister Charlottenburg, Nr. HRB "
+"163946 B \\ Sitz: Berlin (Mitte) \\ Umsatzsteuer-Identifikations-Nr.: "
+"DE298516802"
 
 #. type: Title ##
-#: src/en/imprint.md:10
+#: src/en/imprint.md:26
 #, no-wrap
-msgid "zammad.org is a service provided by"
-msgstr ""
+msgid "Source Code"
+msgstr "Quellcode"
 
 #. type: Plain text
-#: src/en/imprint.md:12
-#, fuzzy, no-wrap
-#| msgid "Zammad Hub"
-msgid "Zammad GmbH  \n"
-msgstr "Zammad Hub"
+#: src/en/imprint.md:29
+msgid "Source code owner (including zammad.org) is:"
+msgstr ""
+"Eigentümerin des Quellcodes von Zammad (einschließlich zammad.org) ist:"
 
 #. type: Plain text
-#: src/en/imprint.md:14 src/en/imprint.md:32
-msgid "Berlin, Germany"
-msgstr ""
-
-#. type: Title ###
-#: src/en/imprint.md:15 src/en/imprint.md:33
-#, no-wrap
-msgid "Post Address"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:17 src/en/imprint.md:35
-#, no-wrap
-msgid "Marienstraße 18  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:18 src/en/imprint.md:36
-#, no-wrap
-msgid "10117 Berlin  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:20 src/en/imprint.md:38
-msgid "Germany"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:21
-#, no-wrap
-msgid "Trade Register: Charlottenburg, Nr. HRB 163946 B  \n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:23
-msgid "Place of office: Berlin (Mitte)"
-msgstr ""
+#: src/en/imprint.md:32
+msgid "Zammad Foundation \\ Berlin, Germany"
+msgstr "Zammad Stiftung \\ Berlin, Deutschland"
 
 #. type: Title ##
-#: src/en/imprint.md:24
+#: src/en/imprint.md:33
 #, no-wrap
-msgid "Represented by"
-msgstr ""
+msgid "Disclaimer"
+msgstr "Haftungshinweis"
 
 #. type: Plain text
-#: src/en/imprint.md:27
-msgid "Martin Edenhofer"
+#: src/en/imprint.md:37
+msgid ""
+"Despite careful control of the contents, we do not assume any liability for "
+"the contents of external links. The operators of the linked pages are solely "
+"responsible for the content of their pages."
 msgstr ""
-
-#. type: Title ##
-#: src/en/imprint.md:28
-#, no-wrap
-msgid "Source Code Owner of Zammad is"
-msgstr ""
-
-#. type: Plain text
-#: src/en/imprint.md:30
-#, no-wrap
-msgid "Zammad Foundation  \n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/imprint.md:39
-#, fuzzy, no-wrap
-#| msgid "Release Notes"
-msgid "Legal Note"
-msgstr "Release-Notes"
-
-#. type: Plain text
-#: src/en/imprint.md:41
-msgid "No developers were harmed during the production of Zammad."
-msgstr ""
+"Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für "
+"die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind "
+"ausschließlich deren Betreiber verantwortlich."
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/index.md:1
@@ -950,6 +1013,13 @@ msgstr "https://zammad.com/de/company"
 msgid "About Us"
 msgstr "Über Uns"
 
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, fuzzy, no-wrap
+#| msgid "get-started/start"
+msgid "/get-zammad/get-started"
+msgstr "get-started/start"
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
@@ -959,8 +1029,15 @@ msgstr "Loslegen"
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: src/en/index.md:1
 #, no-wrap
-msgid "/contribute/style-guide"
-msgstr "/de/contribute/style-guide"
+msgid "doc-start"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, fuzzy, no-wrap
+#| msgid "contribute/contribute"
+msgid "/contribute/contribute"
+msgstr "contribute/contribute"
 
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: src/en/index.md:1
@@ -971,14 +1048,198 @@ msgstr "Zammad-Logo"
 #. type: Yaml Front Matter Hash Value: hero tagline
 #: src/en/index.md:1
 #, no-wrap
-msgid "Your powerful yet easy-to-use ticketing system."
-msgstr "Ihr mächtiges und trotzdem einfach nutzbares Ticket-System."
+msgid "Setup, manage and use Zammad."
+msgstr "Zammad einrichten, verwalten und nutzen."
 
 #. type: Yaml Front Matter Hash Value: hero text
 #: src/en/index.md:1
 #, no-wrap
 msgid "For Users and Administrators"
 msgstr "Für Nutzer und Administratoren"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:5
+msgid ""
+"Welcome to the user documentation of Zammad. Here you can learn how to use "
+"Zammad to collaborate with your colleagues even better!"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:11
+msgid ""
+"In general, Zammad should be pretty self explanatory. However, there are "
+"features that are not obvious at first glance. These features are described "
+"in this documentation as well as some general explanations and tips."
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:16
+msgid ""
+"This documentation is divided in different sections. Currently you are "
+"reading the *General* section. This section includes explanations of the "
+"documentation itself as well as a description of features. There are also "
+"FAQs and a how-to section. See left sidebar or below to navigate to your "
+"desired information."
+msgstr ""
+
+#. type: Title ##
+#: src/en/use/general/index.md:17
+#, no-wrap
+msgid "Content of User Documentation Section"
+msgstr ""
+
+#. type: Plain text
+#: src/en/use/general/index.md:20
+msgid "TODO: - Links / TOC to different sections of user documentation"
+msgstr ""
+
+#. type: Title #
+#: src/en/use/how-to/index.md:1
+#, no-wrap
+msgid "How-To"
+msgstr ""
+
+#, no-wrap
+#~ msgid "Start"
+#~ msgstr "Start"
+
+#, no-wrap
+#~ msgid "get-started/deployment"
+#~ msgstr "get-started/deployment"
+
+#, no-wrap
+#~ msgid "Deyploy Zammad"
+#~ msgstr "Zammad in Betrieb nehmen"
+
+#, no-wrap
+#~ msgid "Get started with Zammad"
+#~ msgstr "Mit Zammad loslegen"
+
+#, no-wrap
+#~ msgid "Login"
+#~ msgstr "Anmelden"
+
+#, no-wrap
+#~ msgid "Ticket handling"
+#~ msgstr "Ticket-Bearbeitung"
+
+#, no-wrap
+#~ msgid "User management"
+#~ msgstr "Benutzerverwaltung"
+
+#, no-wrap
+#~ msgid "Contribution"
+#~ msgstr "Beitrag"
+
+#, no-wrap
+#~ msgid "Admin documentation"
+#~ msgstr "Administrations-Dokumentation"
+
+#, no-wrap
+#~ msgid "/cheat-sheet"
+#~ msgstr "/cheat-sheet"
+
+#, no-wrap
+#~ msgid "Formatting cheat sheet"
+#~ msgstr "Spickzettel für die Formatierung"
+
+#, no-wrap
+#~ msgid "Playground (example content)"
+#~ msgstr "Spielplatz (Beispielinhalt)"
+
+#~ msgid ""
+#~ "\"Cookies\" are data files that are placed on your device or computer and "
+#~ "often include an anonymous unique identifier. For more information about "
+#~ "cookies and how to disable cookies visit https://www.allaboutcookies.org."
+#~ msgstr ""
+#~ "\"Cookies\" sind Dateien, die auf Ihrem Gerät oder Computer abgelegt "
+#~ "werden und oft eine anonyme eindeutige Kennung enthalten. Weitere "
+#~ "Informationen zu Cookies und zur Deaktivierung von Cookies finden Sie "
+#~ "unter https://www.allaboutcookies.org."
+
+#~ msgid ""
+#~ "\"Log files\" track actions occurring on the site, and collect data "
+#~ "including your IP address, browser type, internet service provider, "
+#~ "referring/exit pages, and date/time stamps."
+#~ msgstr ""
+#~ "\"Logdateien\" verfolgen die Aktionen auf der Website und erfassen Daten "
+#~ "wie Ihre IP-Adresse, den Browsertyp, den Internetdienstanbieter, die "
+#~ "verweisenden/verlassenen Seiten sowie Datums- und Zeitstempel."
+
+#~ msgid ""
+#~ "\"Web beacons\", \"tags\", and \"pixels\" are electronic files used to "
+#~ "record information about how you browse the site."
+#~ msgstr ""
+#~ "\"Web Beacons\", \"Tags\" und \"Pixel\" sind elektronische Dateien, die "
+#~ "verwendet werden, um Informationen darüber aufzuzeichnen, wie Sie die "
+#~ "Website besuchen."
+
+#, no-wrap
+#~ msgid "/contribute/style-guide"
+#~ msgstr "/de/contribute/style-guide"
+
+#, no-wrap
+#~ msgid "Squint your eyes and discover something."
+#~ msgstr "Blinzeln Sie mit den Augen und entdecken Sie etwas."
+
+#, no-wrap
+#~ msgid "Zammad GmbH  \n"
+#~ msgstr "Zammad GmbH  \n"
+
+#~ msgid "Berlin, Germany"
+#~ msgstr "Berlin, Deutschland"
+
+#, no-wrap
+#~ msgid "Post Address"
+#~ msgstr "Postanschrift"
+
+#, no-wrap
+#~ msgid "Marienstraße 18  \n"
+#~ msgstr "Marienstraße 18  \n"
+
+#, no-wrap
+#~ msgid "10117 Berlin  \n"
+#~ msgstr "10117 Berlin  \n"
+
+#~ msgid "Germany"
+#~ msgstr "Deutschland"
+
+#, no-wrap
+#~ msgid "Trade Register: Charlottenburg, Nr. HRB 163946 B  \n"
+#~ msgstr "Handelsregister: Charlottenburg, Nr. HRB 163946 B  \n"
+
+#~ msgid "Place of office: Berlin (Mitte)"
+#~ msgstr "Sitz des Büros: Berlin (Mitte)"
+
+#, no-wrap
+#~ msgid "Represented by"
+#~ msgstr "Vertreten durch"
+
+#~ msgid "Martin Edenhofer"
+#~ msgstr "Martin Edenhofer"
+
+#, no-wrap
+#~ msgid "Legal Note"
+#~ msgstr "Rechtlicher Hinweis"
+
+#~ msgid "No developers were harmed during the production of Zammad."
+#~ msgstr "Bei der Produktion von Zammad kamen keine Entwickler zu Schaden."
+
+#, no-wrap
+#~ msgid "Your powerful yet easy-to-use ticketing system."
+#~ msgstr "Ihr mächtiges und trotzdem einfach nutzbares Ticket-System."
 
 #, no-wrap
 #~ msgid " <!-- RSC 20240912: Renamed to JD's suggestion (Hub)-->\n"

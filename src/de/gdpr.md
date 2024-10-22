@@ -2,26 +2,27 @@
 layout: home
 ---
 
-# Privacy policy
+# Datenschutzbestimmungen
 
-### General Data Protection Regulation
+### Allgemeine Datenschutzbestimmungen
 
-## Zammad GmbH Privacy Policy
+## Zammad GmbH Datenschutzerklärung
 
 This privacy policy describes how your personal information is collected,
 used and shared when you visit https://www.zammad.org (the "site").
 
-## Personal information we collect
+## Persönliche Informationen, die wir sammeln
 
-When you visit the site, we automatically collect certain information about
-your device, including information about your web browser, IP address, time
-zone, and some of the cookies that are installed on your
-device. Additionally, as you browse the site, we collect information about
-the individual web pages you view, what websites or search terms referred
-you to the site, and information about how you interact with the site. We
-refer to this automatically collected information as "device information."
+Wenn Sie die Website besuchen, erfassen wir automatisch bestimmte
+Informationen über Ihr Gerät, einschließlich Informationen über Ihren
+Webbrowser, Ihre IP-Adresse, Ihre Zeitzone und einige der Cookies, die auf
+Ihrem Gerät installiert sind. Wenn Sie auf der Website surfen, erfassen wir
+außerdem Informationen über die einzelnen von Ihnen angezeigten Webseiten,
+welche Websites oder Suchbegriffe Sie auf die Website verwiesen haben, und
+Informationen darüber, wie Sie mit der Website interagieren. Wir bezeichnen
+diese automatisch erfassten Informationen als "Geräteinformationen".
 
-## We collect device information using the following technologies:
+## Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:
 
 * "Cookies" are data files that are placed on your device or computer and often
 include an anonymous unique identifier. For more information about cookies and
@@ -32,7 +33,7 @@ and date/time stamps.
 * "Web beacons", "tags", and "pixels" are electronic files used to record
 information about how you browse the site.
 
-## Use of Matomo
+## Verwendung von Matomo
 
 This website uses Matomo (formerly Piwik), an open source software for
 statistical analysis of visitor access. Matomo uses cookies, which are text
@@ -47,63 +48,69 @@ decide whether a unique web analysis cookie may be stored in your browser to
 enable the operator of the website to collect and analyze various
 statistical data.
 
-When we talk about "personal information" in this privacy policy, we are
-talking both about device information and order information.
+Wenn wir in dieser Datenschutzrichtlinie von "persönlichen Informationen"
+sprechen, meinen wir sowohl Geräte- als auch Bestellinformationen.
 
-## How we use your personal information
+## Wie wir Ihre persönlichen Daten verwenden
 
-We use the device information that we collect to help us screen for
-potential risk and fraud (in particular, your IP address), and more
-generally to improve and optimize our site (for example, by generating
-analytics about how our customers browse and interact with the site, and to
-assess the success of our marketing and advertising campaigns).
+Wir verwenden die gesammelten Geräteinformationen, um potenzielle Risiken
+und Betrugsfälle zu erkennen (insbesondere Ihre IP-Adresse) und ganz
+allgemein, um unsere Website zu verbessern und zu optimieren (z.B. durch die
+Erstellung von Analysen darüber, wie unsere Kunden auf der Website surfen
+und mit ihr interagieren, und um den Erfolg unserer Marketing- und
+Werbekampagnen zu bewerten).
 
-## Sharing your personal information
+## Weitergabe Ihrer persönlichen Informationen
 
-We don't share your personal information with third parties.
+Wir geben Ihre persönlichen Daten nicht an Dritte weiter.
 
-We may share your personal information to comply with applicable laws and
-regulations, to respond to a subpoena, search warrant or other lawful
-request for information we receive, or to otherwise protect our rights.
+Wir können Ihre persönlichen Daten weitergeben, um geltende Gesetze und
+Vorschriften einzuhalten, um auf eine Vorladung, einen Durchsuchungsbefehl
+oder eine andere rechtmäßige Anfrage nach Informationen zu reagieren, die
+wir erhalten, oder um unsere Rechte anderweitig zu schützen.
 
 ## Do not track
 
-Please note that we do alter/reduce our site's data collection if we see a
-"Do Not Track" signal from your browser.
+Bitte beachten Sie, dass wir die Datenerfassung auf unserer Website
+ändern/reduzieren, wenn wir ein "Do Not Track"-Signal von Ihrem Browser
+erhalten.
 
-## Your rights
+## Ihre Rechte
 
-If you are a European resident you have the right to access personal
-information we hold about you and to ask that your personal information be
-corrected, updated, or deleted. If you would like to exercise this right,
-please contact us through the contact information below.
+Wenn Sie in Europa ansässig sind, haben Sie das Recht, auf die von uns über
+Sie gespeicherten personenbezogenen Daten zuzugreifen und die Berichtigung,
+Aktualisierung oder Löschung Ihrer personenbezogenen Daten zu
+verlangen. Wenn Sie von diesem Recht Gebrauch machen möchten, kontaktieren
+Sie uns bitte über die nachstehenden Kontaktinformationen.
 
-Additionally, if you are a European resident we are processing your
-information in order to fulfil contracts we might have with you (for example
-if you make an order through the site), or otherwise to pursue our
-legitimate business interests listed above. Additionally, please note that
-your information will be transferred outside of Europe, including to Canada
-and the United States.
+Wenn Sie in Europa ansässig sind, verarbeiten wir Ihre Daten außerdem zur
+Erfüllung von Verträgen, die wir mit Ihnen geschlossen haben (z.B. wenn Sie
+eine Bestellung über die Website aufgeben), oder zur Verfolgung unserer oben
+aufgeführten legitimen Geschäftsinteressen. Bitte beachten Sie auch, dass
+Ihre Daten außerhalb Europas, einschließlich Kanada und den Vereinigten
+Staaten, übermittelt werden.
 
-## Data retention
+## Speicherung von Daten
 
-We adhere to the principles of data avoidance and data economy. We therefore
-only store your personal data for as long as is necessary to achieve the
-purposes stated here or as provided for in the various storage periods
-provided for by law. After the respective purpose or expiry of these
-periods, the corresponding data will be blocked or deleted as a matter of
-routine and in accordance with statutory regulations.
+Wir halten uns an die Grundsätze der Datenvermeidung und
+Datensparsamkeit. Wir speichern Ihre personenbezogenen Daten daher nur so
+lange, wie es zur Erreichung der hier genannten Zwecke erforderlich ist
+bzw. wie es die verschiedenen gesetzlich vorgesehenen Speicherfristen
+vorsehen. Nach Erreichen des jeweiligen Zwecks oder Ablauf dieser Fristen
+werden die entsprechenden Daten routinemäßig und entsprechend den
+gesetzlichen Vorschriften gesperrt oder gelöscht.
 
-## Changes
+## Änderungen
 
-We may update this privacy policy from time to time in order to reflect, for
-example, changes to our practices or for other operational, legal or
-regulatory reasons.
+Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu
+aktualisieren, um z.B. Anpassungen an betriebliche, rechtliche oder
+regulatorische Gründe zu berücksichtigen.
 
-## Contact us
+## Kontakt
 
-For more information about our privacy practices, if you have questions, or
-if you would like to make a complaint, please contact us by e-mail at
-info@zammad.org or by mail using the details provided below:
+Wenn Sie weitere Informationen über unsere Datenschutzpraktiken wünschen,
+Fragen haben oder eine Beschwerde einreichen möchten, wenden Sie sich bitte
+per E-Mail an info@zammad.org oder per Post an die unten angegebenen
+Kontaktdaten:
 
-Marienstraße 18, Berlin, BE, 10117, Germany
+Marienstraße 18, Berlin, BE, 10117, Deutschland

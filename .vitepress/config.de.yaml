@@ -4,14 +4,14 @@ themeConfig:
     next: 'Nächste Seite'
     prev: 'Vorige Seite'
   footer:
-    copyright: 'Copyright © 2012-present <a href="https://zammad-foundation.org">Zammad Foundation</a>'
+    copyright: 'Copyright © 2012-jetzt <a href="https://zammad-foundation.org"> Zammad Foundation</a>'
     items:
       - 
         link: /imprint
-        text: Imprint
+        text: Impressum
       - 
         link: /gdpr
-        text: 'Privacy policy'
+        text: Datenschutzbestimmungen
     message: 'Zammad Hub'
   lastUpdated:
     text: 'Aktualisiert am'

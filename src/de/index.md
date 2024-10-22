@@ -30,7 +30,7 @@ hero:
     alt: Zammad-Logo
     src: ./logo.svg
   name: 'Zammad Hub'
-  tagline: 'Setup, manage and use Zammad.'
+  tagline: 'Zammad einrichten, verwalten und nutzen.'
   text: 'Für Nutzer und Administratoren'
 layout: home
 ---
