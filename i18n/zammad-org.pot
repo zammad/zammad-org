@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-22 06:16+0000\n"
+"POT-Creation-Date: 2024-10-23 13:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,8 @@ msgid "/use/general/index"
 msgstr ""
 
 #. type: Title ##
-#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:6
+#: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:3
+#: src/en/use/general/index.md:6
 #, markdown-text, no-wrap
 msgid "General"
 msgstr ""
@@ -379,18 +380,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Title #
 #: src/en/administrate/index.md:1
 #, markdown-text, no-wrap
@@ -571,13 +560,33 @@ msgid "Welcome to the Zammad Documentation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:4
+#: src/en/doc-start.md:7
+#, markdown-text
+msgid ""
+"This documentation serves as your comprehensive guide to getting the most "
+"out of your ticketing and helpdesk software. Here, you'll find in-depth "
+"tutorials, user manuals and guides on how to effectively manage customer "
+"support requests, track issues, and collaborate with your team."
+msgstr ""
+
+#. type: Plain text
+#: src/en/doc-start.md:12
+#, markdown-text
+msgid ""
+"Whether you're a new user or an experienced admin, our documentation is "
+"designed to provide you with the knowledge and tools you need to succeed.  "
+"Browse through our resources, and discover how Zammad can help you deliver "
+"exceptional customer service and streamline your support operations."
+msgstr ""
+
+#. type: Plain text
+#: src/en/doc-start.md:14
 #, markdown-text
 msgid "[User Documentation](/use/general/index)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:5
+#: src/en/doc-start.md:15
 #, markdown-text
 msgid "[Admin Documentation](/administrate/index)"
 msgstr ""
@@ -976,6 +985,49 @@ msgstr ""
 #: src/en/index.md:1
 #, no-wrap
 msgid "For Users and Administrators"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
+#. type: Fenced div block (details How to find tickets?)
+#: src/en/use/faq/index.md:5
+#, no-wrap
+msgid "You can either search them via search field or via overviews.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#: src/en/use/faq/index.md:9 src/en/use/faq/index.md:13
+#: src/en/use/faq/index.md:17 src/en/use/faq/index.md:21
+#: src/en/use/faq/index.md:25 src/en/use/faq/index.md:29
+#: src/en/use/faq/index.md:35 src/en/use/faq/index.md:39
+#: src/en/use/faq/index.md:43 src/en/use/faq/index.md:47
+#: src/en/use/faq/index.md:53 src/en/use/faq/index.md:57
+#: src/en/use/faq/index.md:61 src/en/use/faq/index.md:65
+#: src/en/use/faq/index.md:69
+#, no-wrap
+msgid "\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/use/faq/index.md:33
+#, markdown-text, no-wrap
+msgid "User Profile"
+msgstr ""
+
+#. type: Title ##
+#: src/en/use/faq/index.md:51
+#, markdown-text, no-wrap
+msgid "Work on Tickets"
 msgstr ""
 
 #. type: Plain text
