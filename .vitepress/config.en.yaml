@@ -25,6 +25,7 @@ themeConfig:
         - text: Install Zammad
           link: get-zammad/installation
     - text: Documentation
+      link: doc-start
       items:
         - text: Use Zammad
           collapsed: false

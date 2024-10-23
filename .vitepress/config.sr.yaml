@@ -74,6 +74,7 @@ themeConfig:
               link: /administrate/manage-channels
               text: 'Manage channels'
           text: 'Zammad администрација'
+      link: doc-start
       text: Документација
     - 
       items:

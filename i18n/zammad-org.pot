@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-23 13:32+0200\n"
+"POT-Creation-Date: 2024-10-23 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,6 +227,12 @@ msgstr ""
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Administrate Zammad"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
+#, no-wrap
+msgid "doc-start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -955,12 +961,6 @@ msgstr ""
 #: src/en/index.md:1
 #, no-wrap
 msgid "Getting started"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "doc-start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions link

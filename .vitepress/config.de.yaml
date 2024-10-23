@@ -74,6 +74,7 @@ themeConfig:
               link: /administrate/manage-channels
               text: 'Manage channels'
           text: 'Zammad administrieren'
+      link: doc-start
       text: Dokumentation
     - 
       items:
