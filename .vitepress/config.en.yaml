@@ -33,7 +33,7 @@ themeConfig:
               link: /use/general/index
             - text: How to
               link: /use/how-to/index
-            - text: FAQ
+            - text: FAQs
               link: /use/faq/index
         - text: Administrate Zammad
           collapsed: true

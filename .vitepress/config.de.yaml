@@ -62,7 +62,7 @@ themeConfig:
               text: 'How to'
             - 
               link: /use/faq/index
-              text: FAQ
+              text: FAQs
           text: 'Zammad verwenden'
         - 
           collapsed: true
