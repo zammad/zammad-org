@@ -15,22 +15,22 @@ features:
 hero:
   actions:
     - 
-      link: /get-zammad/get-started
+      link: /sr/get-zammad/get-started
       text: 'Први кораци'
       theme: brand
     - 
-      link: doc-start
+      link: /sr/doc-start
       text: Документација
       theme: alt
     - 
-      link: /contribute/contribute
+      link: /sr/contribute/contribute
       text: Учествујте
       theme: alt
   image:
     alt: 'Zammad логотип'
     src: ./logo.svg
   name: 'Zammad чвориште'
-  tagline: 'Setup, manage and use Zammad.'
+  tagline: 'Подесите, управљајте и користите Zammad.'
   text: 'За кориснике и администраторе'
 layout: home
 ---

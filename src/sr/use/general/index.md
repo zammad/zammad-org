@@ -1,20 +1,20 @@
 # Коришћење Zammad-а
 
-Welcome to the user documentation of Zammad. Here you can learn how to use
-Zammad to collaborate with your colleagues even better!
+Добродошли на корисничку документацију Zammad-а. Овде можете научити како да
+користите Zammad да сарађујете са вашим колегама на вишем нивоу!
 
-## General
+## Уопштено
 
-In general, Zammad should be pretty self explanatory. However, there are
-features that are not obvious at first glance. These features are described
-in this documentation as well as some general explanations and tips.
+Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције
+које нису очигледне на први поглед. Ове функције су описане у овој
+документацији као и нека општа објашњења и савети.
 
-This documentation is divided in different sections. Currently you are
-reading the *General* section. This section includes explanations of the
-documentation itself as well as a description of features. There are also
-FAQs and a how-to section. See left sidebar or below to navigate to your
-desired information.
+Ова документације је подељена различите одељке. Тренутно читате одељак
+*Уопштено*. Овај одељак укључује објашњења о документацији као и опис
+функција. Такође постоје често постављана питања (FAQ) и одељак „Како
+да”. Погледајте бочну траку са леве стране или кликните испод за навигацију
+на жељене информације.
 
-## Content of User Documentation Section
+## Садржај одељка корисничке документације
 
 TODO: - Links / TOC to different sections of user documentation

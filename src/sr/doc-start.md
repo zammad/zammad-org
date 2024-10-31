@@ -1,15 +1,15 @@
-# Welcome to the Zammad Documentation
+# Добродошли на Zammad документацију
 
-This documentation serves as your comprehensive guide to getting the most
-out of your ticketing and helpdesk software. Here, you'll find in-depth
-tutorials, user manuals and guides on how to effectively manage customer
-support requests, track issues, and collaborate with your team.
+Ова документација служи као ваш сврсисходан водич за извлачење максимума из
+вашег тикетинг система. Овде можете пронаћи детаљна упутства, корисничке
+уџбенике и водиче како да ефикасно обрађујете захтеве корисничке подршке,
+пратите проблеме и сарађујете у оквиру вашег тима.
 
-Whether you're a new user or an experienced admin, our documentation is
-designed to provide you with the knowledge and tools you need to succeed.
-Browse through our resources, and discover how Zammad can help you deliver
-exceptional customer service and streamline your support operations.
+Било да сте нови корисник или искусни администратор, наша документација је
+дизајнирана да вам пружи знање и алате који ће вам омогућити
+успех. Прегледајт наше ресурсе и отркијте како Zammad може да вам помогне да
+пружите изузетну корисничку подршку и рационализујете вашу операцију.
 
-[User Documentation](/use/general/index)
+[Корисничка документација(/sr/use/general/index)
 
-[Admin Documentation](/administrate/index)
+[Администраторска документација](/sr/administrate/index)

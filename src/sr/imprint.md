@@ -2,29 +2,29 @@
 layout: home
 ---
 
-# Imprint
+# Импресум
 
 ## Zammad.org
 
-Zammad.org is a service provided by:
+Zammad.org је услуга коју пружа:
 
 Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Germany
 
-Phone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
-enjoy@zammad.com
+Телефон: +49 (0) 30 55 57 160-00 \ Факс: +49 (0) 30 55 57 160-99 \ Имејл
+адреса: enjoy@zammad.com
 
-Managing Director: Martin Edenhofer \ Commercial Register Charlottenburg,
-No. HRB 163946 B \ Head Office: Berlin (Mitte) \ Sales Tax Identification
-No.: DE298516802
+Директор: Martin Edenhofer \ Привредни регистар Charlottenburg, бр. HRB
+163946 B \ Главна канцеларија: Berlin (Mitte) \ Порески идентификациони
+бр. DE298516802
 
-## Source Code
+## Изворни кoд
 
-Source code owner (including zammad.org) is:
+Власник изворног кода (укључујући zammad.org) је:
 
-Zammad Foundation \ Berlin, Germany
+Zammad фондација \ Берлин, Немачка
 
-## Disclaimer
+## Одрицање од одговорности
 
-Despite careful control of the contents, we do not assume any liability for
-the contents of external links. The operators of the linked pages are solely
-responsible for the content of their pages.
+Упркос пажљивој контроли садржаја, одричемо се сваке одговорности за садржај
+на повезаним сајтовима. Оператори повезаних страница су искључиво одговорни
+за њихов садржај.

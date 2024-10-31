@@ -4,14 +4,14 @@ themeConfig:
     next: 'Претходна страна'
     prev: 'Следећа страна'
   footer:
-    copyright: 'Copyright © 2012-present <a href="https://zammad-foundation.org">Zammad Foundation</a>'
+    copyright: 'Copyright © 2012-садашњост <a href="https://zammad-foundation.org">Zammad фондација</a>'
     items:
       - 
-        link: /imprint
-        text: Imprint
+        link: /sr/imprint
+        text: Импресум
       - 
-        link: /gdpr
-        text: 'Privacy policy'
+        link: /sr/gdpr
+        text: 'Политика приватности'
     message: 'Zammad чвориште'
   lastUpdated:
     text: 'Освежено у'
@@ -43,38 +43,38 @@ themeConfig:
     - 
       items:
         - 
-          link: get-zammad/get-started
+          link: /sr/get-zammad/get-started
           text: 'Преузмите Zammad'
         - 
-          link: get-zammad/installation
-          text: 'Install Zammad'
-      text: 'Get Started'
+          link: /sr/get-zammad/installation
+          text: 'Инсталација Zammad-а'
+      text: 'Први кораци'
     - 
       items:
         - 
           collapsed: false
           items:
             - 
-              link: /use/general/index
-              text: General
+              link: /sr/use/general/index
+              text: Уопштено
             - 
-              link: /use/how-to/index
-              text: 'How to'
+              link: /sr/use/how-to/index
+              text: 'Како да'
             - 
-              link: /use/faq/index
-              text: FAQs
+              link: /sr/use/faq/index
+              text: FAQ
           text: 'Коришћење Zammad-а'
         - 
           collapsed: true
           items:
             - 
-              link: /administrate/setup
-              text: 'Setup a new system'
+              link: /sr/administrate/setup
+              text: 'Подешавање новог система'
             - 
-              link: /administrate/manage-channels
-              text: 'Manage channels'
+              link: /sr/administrate/manage-channels
+              text: 'Управљање каналима'
           text: 'Zammad администрација'
-      link: doc-start
+      link: /sr/doc-start
       text: Документација
     - 
       items:
@@ -82,7 +82,7 @@ themeConfig:
           link: contribute/contribute
           text: Учествујте
         - 
-          link: contribute/style-guide
+          link: /sr/contribute/style-guide
           text: 'Водич кроз стил и садржај'
       text: Учествујте
     - 

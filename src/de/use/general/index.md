@@ -1,20 +1,22 @@
 # Zammad verwenden
 
-Welcome to the user documentation of Zammad. Here you can learn how to use
-Zammad to collaborate with your colleagues even better!
+Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie
+Sie Zammad nutzen können, um noch besser mit Ihren Kollegen
+zusammenzuarbeiten!
 
-## General
+## Allgemein
 
-In general, Zammad should be pretty self explanatory. However, there are
-features that are not obvious at first glance. These features are described
-in this documentation as well as some general explanations and tips.
+Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt
+es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
+Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
+allgemeine Erklärungen und Tipps.
 
-This documentation is divided in different sections. Currently you are
-reading the *General* section. This section includes explanations of the
-documentation itself as well as a description of features. There are also
-FAQs and a how-to section. See left sidebar or below to navigate to your
-desired information.
+Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit lesen
+Sie den Abschnitt *Allgemein*. Dieser Abschnitt enthält Erklärungen zur
+Dokumentation selbst sowie eine Beschreibung der Funktionen. Es gibt auch
+häufig gestellte Fragen (FAQ) und einen How-To-Bereich. Siehe linke
+Seitenleiste oder unten, um zu den entsprechenden Bereichen zu navigieren.
 
-## Content of User Documentation Section
+## Inhalt der Benutzerdokumentation
 
 TODO: - Links / TOC to different sections of user documentation

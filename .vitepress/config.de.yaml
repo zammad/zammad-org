@@ -47,8 +47,8 @@ themeConfig:
           text: 'Zammad holen'
         - 
           link: get-zammad/installation
-          text: 'Install Zammad'
-      text: 'Get Started'
+          text: 'Zammad installieren'
+      text: Loslegen
     - 
       items:
         - 
@@ -56,7 +56,7 @@ themeConfig:
           items:
             - 
               link: /use/general/index
-              text: General
+              text: Allgemein
             - 
               link: /use/how-to/index
               text: 'How to'
@@ -69,10 +69,10 @@ themeConfig:
           items:
             - 
               link: /administrate/setup
-              text: 'Setup a new system'
+              text: 'Ein neues System einrichten'
             - 
               link: /administrate/manage-channels
-              text: 'Manage channels'
+              text: 'Kanäle verwalten'
           text: 'Zammad administrieren'
       link: doc-start
       text: Dokumentation

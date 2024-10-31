@@ -1,9 +1,9 @@
-# FAQs
+# FAQ
 
-## General
+## Уопштено
 
 ::: details How to find tickets?
-You can either search them via search field or via overviews.
+Можете их претраживати преко поља за претрагу или преко прегледа.
 :::
 
 ::: details How to get notified for ticket changes?
@@ -30,7 +30,7 @@ You can either search them via search field or via overviews.
 
 :::
 
-## User Profile
+## Кориснички профил
 
 :::details How to change my profile and avatar image?
 
@@ -48,7 +48,7 @@ You can either search them via search field or via overviews.
 
 :::
 
-## Work on Tickets
+## Рад на тикетима
 
 :::details How to assign somebody to a ticket?
 

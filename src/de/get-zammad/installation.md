@@ -1,2 +1,2 @@
-# Install Zammad
+# Zammad installieren
 

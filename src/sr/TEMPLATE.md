@@ -1,8 +1,8 @@
 ---
 next:
-  link: /link/to/site
-  text: 'Name of site'
+  link: /sr/link/to/site
+  text: 'Назив сајта'
 prev:
-  link: /link/to/site
-  text: 'Name of site'
+  link: /sr/link/to/site
+  text: 'Назив сајта'
 ---

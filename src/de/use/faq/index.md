@@ -1,6 +1,6 @@
 # FAQs
 
-## General
+## Allgemein
 
 ::: details How to find tickets?
 You can either search them via search field or via overviews.
