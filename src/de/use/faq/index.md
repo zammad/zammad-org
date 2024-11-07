@@ -3,7 +3,7 @@
 ## Allgemein
 
 ::: details How to find tickets?
-You can either search them via search field or via overviews.
+Sie können sie entweder über das Suchfeld oder über Übersichten suchen.
 :::
 
 ::: details How to get notified for ticket changes?
@@ -30,7 +30,7 @@ You can either search them via search field or via overviews.
 
 :::
 
-## User Profile
+## Benutzerprofil
 
 :::details How to change my profile and avatar image?
 
@@ -48,7 +48,7 @@ You can either search them via search field or via overviews.
 
 :::
 
-## Work on Tickets
+## Mit Tickets arbeiten
 
 :::details How to assign somebody to a ticket?
 

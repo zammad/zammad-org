@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-23 13:45+0200\n"
-"PO-Revision-Date: 2024-10-29 12:30+0000\n"
+"POT-Creation-Date: 2024-10-29 12:30+0000\n"
+"PO-Revision-Date: 2024-11-07 08:46+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -35,9 +35,7 @@ msgstr "Следећа страна"
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Copyright © 2012-present <a href=\"https://zammad-foundation.org\">Zammad Foundation</a>"
-msgstr ""
-"Copyright © 2012-садашњост <a href=\"https://zammad-foundation.org\">Zammad "
-"фондација</a>"
+msgstr "Copyright © 2012-садашњост <a href=\"https://zammad-foundation.org\">Zammad фондација</a>"
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
@@ -389,6 +387,18 @@ msgstr "Без резултата за"
 msgid "Reset search"
 msgstr "Поништи претрагу"
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
+
 #. type: Title #
 #: src/en/administrate/index.md:1
 #, no-wrap
@@ -685,18 +695,13 @@ msgid ""
 "* \"Web beacons\", \"tags\", and \"pixels\" are electronic files used to record\n"
 "information about how you browse the site.\n"
 msgstr ""
-"* „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и "
-"често\n"
-"укључују анонимни јединствени идентификатор. За више информација о "
-"колачићима и\n"
+"* „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и често\n"
+"укључују анонимни јединствени идентификатор. За више информација о колачићима и\n"
 "како да их искључите, посетите https://www.allaboutcookies.org.\n"
-"* „Датотеке дневника” прате операције на сајту, и прикупљају податке "
-"укључујући\n"
-"вашу IP адресу, врсту претраживача, интернет провајдера, референциране/"
-"излазне странице,\n"
+"* „Датотеке дневника” прате операције на сајту, и прикупљају податке укључујући\n"
+"вашу IP адресу, врсту претраживача, интернет провајдера, референциране/излазне странице,\n"
 "и ознаке датума и времена.\n"
-"* „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које "
-"снимају\n"
+"* „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које снимају\n"
 "информације о томе на који начин прегледавате сајт.\n"
 
 #. type: Title ##
@@ -1056,18 +1061,6 @@ msgstr "Подесите, управљајте и користите Zammad."
 #, no-wrap
 msgid "For Users and Administrators"
 msgstr "За кориснике и администраторе"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Fenced div block (details How to find tickets?)
 #: src/en/use/faq/index.md:5
