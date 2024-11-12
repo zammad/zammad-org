@@ -19,16 +19,13 @@ export default
     srcExclude: ['README.md'],
     description: 'Documentation for Zammad Users and Administrators',
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
-    rewrites: {
-      'en/:rest*': ':rest*',
-    },
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
       },
     },
     locales: {
-      root: { label: 'English', ...defineConfig(configEN as UserConfig) },
+      root: { label: 'English', link: '/en', ...defineConfig(configEN as UserConfig) },
       de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
       sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
     },

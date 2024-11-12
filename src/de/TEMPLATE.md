@@ -1,8 +1,8 @@
 ---
 next:
-  link: /link/to/site
+  link: /en/link/to/site
   text: 'Name of site'
 prev:
-  link: /link/to/site
+  link: /en/link/to/site
   text: 'Name of site'
 ---

@@ -13,6 +13,6 @@ Ressourcen und entdecken Sie, wie Zammad Ihnen helfen kann, einen
 außergewöhnlichen Kundenservice zu bieten und Ihre Supportabläufe zu
 optimieren.
 
-[Benutzer Dokumentation](/use/general/index)
+[User Documentation](/en/use/general/index)
 
-[Admin Dokumentation](/administrate/index)
+[Admin Documentation](/en/administrate/index)

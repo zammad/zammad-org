@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-29 12:30+0000\n"
+"POT-Creation-Date: 2024-11-12 11:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/imprint"
+msgid "/en/imprint"
 msgstr ""
 
 #. type: Title #
@@ -51,7 +51,7 @@ msgstr ""
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/gdpr"
+msgid "/en/gdpr"
 msgstr ""
 
 #. type: Title #
@@ -126,10 +126,10 @@ msgstr ""
 msgid "On this page"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "get-zammad/get-started"
+msgid "/en/get-zammad/get-started"
 msgstr ""
 
 #. type: Title #
@@ -141,7 +141,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "get-zammad/installation"
+msgid "/en/get-zammad/installation"
 msgstr ""
 
 #. type: Title #
@@ -159,7 +159,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/general/index"
+msgid "/en/use/general/index"
 msgstr ""
 
 #. type: Title ##
@@ -172,7 +172,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/how-to/index"
+msgid "/en/use/how-to/index"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -184,7 +184,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/faq/index"
+msgid "/en/use/faq/index"
 msgstr ""
 
 #. type: Title #
@@ -202,7 +202,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/administrate/setup"
+msgid "/en/administrate/setup"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -214,7 +214,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/administrate/manage-channels"
+msgid "/en/administrate/manage-channels"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -232,7 +232,7 @@ msgstr ""
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "doc-start"
+msgid "/en/doc-start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -241,10 +241,10 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "contribute/contribute"
+msgid "/en/contribute/contribute"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -257,7 +257,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "contribute/style-guide"
+msgid "/en/contribute/style-guide"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -269,7 +269,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/glossary"
+msgid "/en/reference/glossary"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -281,7 +281,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/api-reference"
+msgid "/en/reference/api-reference"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -293,7 +293,7 @@ msgstr ""
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/rails-commands"
+msgid "/en/reference/rails-commands"
 msgstr ""
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -389,7 +389,7 @@ msgstr ""
 #. type: Yaml Front Matter Hash Value: prev link
 #: src/en/TEMPLATE.md:1
 #, no-wrap
-msgid "/link/to/site"
+msgid "/en/link/to/site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: prev text
@@ -600,13 +600,13 @@ msgstr ""
 #. type: Plain text
 #: src/en/doc-start.md:14
 #, markdown-text
-msgid "[User Documentation](/use/general/index)"
+msgid "[User Documentation](/en/use/general/index)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/doc-start.md:15
 #, markdown-text
-msgid "[Admin Documentation](/administrate/index)"
+msgid "[Admin Documentation](/en/administrate/index)"
 msgstr ""
 
 #. type: Title ###
@@ -963,22 +963,10 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/get-zammad/get-started"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
 msgid "Getting started"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/contribute/contribute"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero image alt

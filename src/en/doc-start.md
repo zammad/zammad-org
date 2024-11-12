@@ -10,6 +10,6 @@ designed to provide you with the knowledge and tools you need to succeed.
 Browse through our resources, and discover how Zammad can help you
 deliver exceptional customer service and streamline your support operations.
 
-[User Documentation](/use/general/index)
+[User Documentation](/en/use/general/index)
 
-[Admin Documentation](/administrate/index)
+[Admin Documentation](/en/administrate/index)

@@ -15,15 +15,15 @@ features:
 hero:
   actions:
     - 
-      link: /get-zammad/get-started
+      link: /en/get-zammad/get-started
       text: Loslegen
       theme: brand
     - 
-      link: doc-start
+      link: /en/doc-start
       text: Dokumentation
       theme: alt
     - 
-      link: /contribute/contribute
+      link: /en/contribute/contribute
       text: Beitragen
       theme: alt
   image:
