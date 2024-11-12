@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-29 12:30+0000\n"
-"PO-Revision-Date: 2024-11-01 06:00+0000\n"
-"Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
+"POT-Creation-Date: 2024-11-12 11:21+0100\n"
+"PO-Revision-Date: 2024-11-12 10:25+0000\n"
+"Last-Translator: Martin Gruner <mg@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
 "Language: de\n"
@@ -40,8 +40,8 @@ msgstr "Copyright © 2012-jetzt <a href=\"https://zammad-foundation.org\"> Zamma
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/imprint"
-msgstr "/imprint"
+msgid "/en/imprint"
+msgstr "/de/imprint"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/imprint.md:6
@@ -52,8 +52,8 @@ msgstr "Impressum"
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/gdpr"
-msgstr "/gdpr"
+msgid "/en/gdpr"
+msgstr "/de/gdpr"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/gdpr.md:6
@@ -127,11 +127,11 @@ msgstr "Aktuelle Version"
 msgid "On this page"
 msgstr "Auf dieser Seite"
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "get-zammad/get-started"
-msgstr "get-zammad/get-started"
+msgid "/en/get-zammad/get-started"
+msgstr "/de/get-zammad/get-started"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/get-zammad/get-started.md:1
@@ -142,8 +142,8 @@ msgstr "Zammad holen"
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "get-zammad/installation"
-msgstr "get-zammad/installation"
+msgid "/en/get-zammad/installation"
+msgstr "/de/get-zammad/installation"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/get-zammad/installation.md:1
@@ -160,8 +160,8 @@ msgstr "Loslegen"
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/general/index"
-msgstr "/use/general/index"
+msgid "/en/use/general/index"
+msgstr "/de/use/general/index"
 
 #. type: Title ##
 #: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:3
@@ -173,8 +173,8 @@ msgstr "Allgemein"
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/how-to/index"
-msgstr "/use/how-to/index"
+msgid "/en/use/how-to/index"
+msgstr "/de/use/how-to/index"
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
@@ -185,8 +185,8 @@ msgstr "How to"
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/use/faq/index"
-msgstr "/use/faq/index"
+msgid "/en/use/faq/index"
+msgstr "/de/use/faq/index"
 
 #. type: Title #
 #: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:1
@@ -203,8 +203,8 @@ msgstr "Zammad verwenden"
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/administrate/setup"
-msgstr "/administrate/setup"
+msgid "/en/administrate/setup"
+msgstr "/de/administrate/setup"
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
@@ -215,8 +215,8 @@ msgstr "Ein neues System einrichten"
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "/administrate/manage-channels"
-msgstr "/administrate/manage-channels"
+msgid "/en/administrate/manage-channels"
+msgstr "/de/administrate/manage-channels"
 
 #. type: Hash Value: themeConfig sidebar items items text
 #: .vitepress/config.en.yaml:1
@@ -233,8 +233,8 @@ msgstr "Zammad administrieren"
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "doc-start"
-msgstr "doc-start"
+msgid "/en/doc-start"
+msgstr "/de/doc-start"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
@@ -242,11 +242,11 @@ msgstr "doc-start"
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
-msgid "contribute/contribute"
-msgstr "contribute/contribute"
+msgid "/en/contribute/contribute"
+msgstr "/de/contribute/contribute"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:1
@@ -258,8 +258,8 @@ msgstr "Beitragen"
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "contribute/style-guide"
-msgstr "contribute/style-guide"
+msgid "/en/contribute/style-guide"
+msgstr "/de/contribute/style-guide"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -270,8 +270,8 @@ msgstr "Leitfaden für Stil und Inhalt"
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/glossary"
-msgstr "reference/glossary"
+msgid "/en/reference/glossary"
+msgstr "/de/reference/glossary"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -282,8 +282,8 @@ msgstr "Glossar"
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/api-reference"
-msgstr "reference/api-reference"
+msgid "/en/reference/api-reference"
+msgstr "/de/reference/api-reference"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -294,8 +294,8 @@ msgstr "API-Referenz"
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "reference/rails-commands"
-msgstr "reference/rails-commands"
+msgid "/en/reference/rails-commands"
+msgstr "/de/reference/rails-commands"
 
 #. type: Hash Value: themeConfig sidebar items text
 #: .vitepress/config.en.yaml:1
@@ -390,8 +390,8 @@ msgstr "Suche zurücksetzen"
 #. type: Yaml Front Matter Hash Value: prev link
 #: src/en/TEMPLATE.md:1
 #, no-wrap
-msgid "/link/to/site"
-msgstr "/link/to/site"
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
 
 #. type: Yaml Front Matter Hash Value: prev text
 #: src/en/TEMPLATE.md:1
@@ -627,13 +627,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/doc-start.md:14
-msgid "[User Documentation](/use/general/index)"
-msgstr "[Benutzer Dokumentation](/use/general/index)"
+msgid "[User Documentation](/en/use/general/index)"
+msgstr "[Benutzer-Dokumentation](/de/use/general/index)"
 
 #. type: Plain text
 #: src/en/doc-start.md:15
-msgid "[Admin Documentation](/administrate/index)"
-msgstr "[Admin Dokumentation](/administrate/index)"
+msgid "[Admin Documentation](/en/administrate/index)"
+msgstr "[Admin-Dokumentation](/de/administrate/index)"
 
 #. type: Title ###
 #: src/en/gdpr.md:8
@@ -1042,23 +1042,11 @@ msgstr "https://zammad.com/de/company"
 msgid "About Us"
 msgstr "Über Uns"
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/get-zammad/get-started"
-msgstr "/get-zammad/get-started"
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
 msgid "Getting started"
 msgstr "Loslegen"
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/contribute/contribute"
-msgstr "/contribute/contribute"
 
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: src/en/index.md:1
@@ -1164,6 +1152,18 @@ msgid "How-To"
 msgstr "How-To"
 
 #, no-wrap
+#~ msgid "get-zammad/get-started"
+#~ msgstr "get-zammad/get-started"
+
+#, no-wrap
+#~ msgid "contribute/contribute"
+#~ msgstr "contribute/contribute"
+
+#, no-wrap
+#~ msgid "contribute/style-guide"
+#~ msgstr "contribute/style-guide"
+
+#, no-wrap
 #~ msgid "FAQ"
 #~ msgstr "FAQ"
 
@@ -1241,10 +1241,6 @@ msgstr "How-To"
 #~ "\"Web Beacons\", \"Tags\" und \"Pixel\" sind elektronische Dateien, die "
 #~ "verwendet werden, um Informationen darüber aufzuzeichnen, wie Sie die "
 #~ "Website besuchen."
-
-#, no-wrap
-#~ msgid "/contribute/style-guide"
-#~ msgstr "/de/contribute/style-guide"
 
 #, no-wrap
 #~ msgid "Squint your eyes and discover something."

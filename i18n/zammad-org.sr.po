@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-10-29 12:30+0000\n"
-"PO-Revision-Date: 2024-11-07 08:46+0000\n"
+"POT-Creation-Date: 2024-11-12 11:21+0100\n"
+"PO-Revision-Date: 2024-11-08 09:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -39,8 +39,9 @@ msgstr "Copyright © 2012-садашњост <a href=\"https://zammad-foundation
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/imprint"
+#, fuzzy, no-wrap
+#| msgid "/imprint"
+msgid "/en/imprint"
 msgstr "/sr/imprint"
 
 #. type: Title #
@@ -51,8 +52,9 @@ msgstr "Импресум"
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/gdpr"
+#, fuzzy, no-wrap
+#| msgid "/gdpr"
+msgid "/en/gdpr"
 msgstr "/sr/gdpr"
 
 #. type: Title #
@@ -127,10 +129,11 @@ msgstr "Актуелно издање"
 msgid "On this page"
 msgstr "На овој страни"
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "get-zammad/get-started"
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
+#, fuzzy, no-wrap
+#| msgid "/get-zammad/get-started"
+msgid "/en/get-zammad/get-started"
 msgstr "/sr/get-zammad/get-started"
 
 #. type: Title #
@@ -141,8 +144,9 @@ msgstr "Преузмите Zammad"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "get-zammad/installation"
+#, fuzzy, no-wrap
+#| msgid "get-zammad/installation"
+msgid "/en/get-zammad/installation"
 msgstr "/sr/get-zammad/installation"
 
 #. type: Title #
@@ -159,8 +163,9 @@ msgstr "Први кораци"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/use/general/index"
+#, fuzzy, no-wrap
+#| msgid "/use/general/index"
+msgid "/en/use/general/index"
 msgstr "/sr/use/general/index"
 
 #. type: Title ##
@@ -172,8 +177,9 @@ msgstr "Уопштено"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/use/how-to/index"
+#, fuzzy, no-wrap
+#| msgid "/use/how-to/index"
+msgid "/en/use/how-to/index"
 msgstr "/sr/use/how-to/index"
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -184,8 +190,9 @@ msgstr "Како да"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/use/faq/index"
+#, fuzzy, no-wrap
+#| msgid "/use/faq/index"
+msgid "/en/use/faq/index"
 msgstr "/sr/use/faq/index"
 
 #. type: Title #
@@ -202,8 +209,9 @@ msgstr "Коришћење Zammad-а"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/administrate/setup"
+#, fuzzy, no-wrap
+#| msgid "/administrate/setup"
+msgid "/en/administrate/setup"
 msgstr "/sr/administrate/setup"
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -214,8 +222,9 @@ msgstr "Подешавање новог система"
 
 #. type: Hash Value: themeConfig sidebar items items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/administrate/manage-channels"
+#, fuzzy, no-wrap
+#| msgid "/administrate/manage-channels"
+msgid "/en/administrate/manage-channels"
 msgstr "/sr/administrate/manage-channels"
 
 #. type: Hash Value: themeConfig sidebar items items text
@@ -232,8 +241,9 @@ msgstr "Zammad администрација"
 
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "doc-start"
+#, fuzzy, no-wrap
+#| msgid "doc-start"
+msgid "/en/doc-start"
 msgstr "/sr/doc-start"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -242,11 +252,12 @@ msgstr "/sr/doc-start"
 msgid "Documentation"
 msgstr "Документација"
 
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "contribute/contribute"
-msgstr "contribute/contribute"
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: .vitepress/config.en.yaml:1 src/en/index.md:1
+#, fuzzy, no-wrap
+#| msgid "/contribute/contribute"
+msgid "/en/contribute/contribute"
+msgstr "/sr/contribute/contribute"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:1
@@ -257,8 +268,9 @@ msgstr "Учествујте"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "contribute/style-guide"
+#, fuzzy, no-wrap
+#| msgid "/contribute/style-guide"
+msgid "/en/contribute/style-guide"
 msgstr "/sr/contribute/style-guide"
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -269,8 +281,9 @@ msgstr "Водич кроз стил и садржај"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "reference/glossary"
+#, fuzzy, no-wrap
+#| msgid "reference/glossary"
+msgid "/en/reference/glossary"
 msgstr "reference/glossary"
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -281,8 +294,9 @@ msgstr "Речник"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "reference/api-reference"
+#, fuzzy, no-wrap
+#| msgid "reference/api-reference"
+msgid "/en/reference/api-reference"
 msgstr "reference/api-reference"
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -293,8 +307,9 @@ msgstr "API референца"
 
 #. type: Hash Value: themeConfig sidebar items link
 #: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "reference/rails-commands"
+#, fuzzy, no-wrap
+#| msgid "reference/rails-commands"
+msgid "/en/reference/rails-commands"
 msgstr "reference/rails-commands"
 
 #. type: Hash Value: themeConfig sidebar items text
@@ -389,8 +404,9 @@ msgstr "Поништи претрагу"
 
 #. type: Yaml Front Matter Hash Value: prev link
 #: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/link/to/site"
+#, fuzzy, no-wrap
+#| msgid "/link/to/site"
+msgid "/en/link/to/site"
 msgstr "/sr/link/to/site"
 
 #. type: Yaml Front Matter Hash Value: prev text
@@ -622,12 +638,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/doc-start.md:14
-msgid "[User Documentation](/use/general/index)"
+#, fuzzy
+#| msgid "[User Documentation](/use/general/index)"
+msgid "[User Documentation](/en/use/general/index)"
 msgstr "[Корисничка документација(/sr/use/general/index)"
 
 #. type: Plain text
 #: src/en/doc-start.md:15
-msgid "[Admin Documentation](/administrate/index)"
+#, fuzzy
+#| msgid "[Admin Documentation](/administrate/index)"
+msgid "[Admin Documentation](/en/administrate/index)"
 msgstr "[Администраторска документација](/sr/administrate/index)"
 
 #. type: Title ###
@@ -1026,23 +1046,11 @@ msgstr "https://zammad.com/en/company"
 msgid "About Us"
 msgstr "О нама"
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/get-zammad/get-started"
-msgstr "/sr/get-zammad/get-started"
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
 msgid "Getting started"
 msgstr "Први кораци"
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: src/en/index.md:1
-#, no-wrap
-msgid "/contribute/contribute"
-msgstr "/sr/contribute/contribute"
 
 #. type: Yaml Front Matter Hash Value: hero image alt
 #: src/en/index.md:1
@@ -1146,6 +1154,18 @@ msgid "How-To"
 msgstr "Како да"
 
 #, no-wrap
+#~ msgid "get-zammad/get-started"
+#~ msgstr "/sr/get-zammad/get-started"
+
+#, no-wrap
+#~ msgid "contribute/contribute"
+#~ msgstr "contribute/contribute"
+
+#, no-wrap
+#~ msgid "contribute/style-guide"
+#~ msgstr "/sr/contribute/style-guide"
+
+#, no-wrap
 #~ msgid "Start"
 #~ msgstr "Почетак"
 
@@ -1192,10 +1212,6 @@ msgstr "Како да"
 #, no-wrap
 #~ msgid "Playground (example content)"
 #~ msgstr "Игралиште (пример садржаја)"
-
-#, no-wrap
-#~ msgid "/contribute/style-guide"
-#~ msgstr "/sr/contribute/style-guide"
 
 #, fuzzy, no-wrap
 #~| msgid "Zammad Hub"
