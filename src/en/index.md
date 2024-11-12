@@ -7,7 +7,7 @@ hero:
   text: "For Users and Administrators"
   tagline: Setup, manage and use Zammad.
   image:
-    src: ./logo.svg
+    src: /assets/logo.svg
     alt: Zammad logo
   actions:
     - theme: brand

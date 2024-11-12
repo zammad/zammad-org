@@ -28,7 +28,7 @@ hero:
       theme: alt
   image:
     alt: Zammad-Logo
-    src: ./logo.svg
+    src: /assets/logo.svg
   name: 'Zammad Hub'
   tagline: 'Zammad einrichten, verwalten und nutzen.'
   text: 'Für Nutzer und Administratoren'

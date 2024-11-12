@@ -47,8 +47,8 @@ export default
     },
     themeConfig: {
       logo: {
-        light: 'logo-flat-light.svg',
-        dark: 'logo-flat-dark.svg',
+        light: '/assets/logo-flat-light.svg',
+        dark: '/assets/logo-flat-dark.svg',
       },
       lastUpdated: {
         formatOptions: {

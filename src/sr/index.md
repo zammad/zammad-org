@@ -28,7 +28,7 @@ hero:
       theme: alt
   image:
     alt: 'Zammad логотип'
-    src: ./logo.svg
+    src: /assets/logo.svg
   name: 'Zammad чвориште'
   tagline: 'Подесите, управљајте и користите Zammad.'
   text: 'За кориснике и администраторе'
