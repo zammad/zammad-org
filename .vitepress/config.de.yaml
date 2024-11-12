@@ -7,10 +7,10 @@ themeConfig:
     copyright: 'Copyright © 2012-jetzt <a href="https://zammad-foundation.org"> Zammad Foundation</a>'
     items:
       - 
-        link: /en/imprint
+        link: /de/imprint
         text: Impressum
       - 
-        link: /en/gdpr
+        link: /de/gdpr
         text: Datenschutzbestimmungen
     message: 'Zammad Hub'
   lastUpdated:
@@ -43,10 +43,10 @@ themeConfig:
     - 
       items:
         - 
-          link: /en/get-zammad/get-started
+          link: /de/get-zammad/get-started
           text: 'Zammad holen'
         - 
-          link: /en/get-zammad/installation
+          link: /de/get-zammad/installation
           text: 'Zammad installieren'
       text: Loslegen
     - 
@@ -55,46 +55,46 @@ themeConfig:
           collapsed: false
           items:
             - 
-              link: /en/use/general/index
+              link: /de/use/general/index
               text: Allgemein
             - 
-              link: /en/use/how-to/index
+              link: /de/use/how-to/index
               text: 'How to'
             - 
-              link: /en/use/faq/index
+              link: /de/use/faq/index
               text: FAQs
           text: 'Zammad verwenden'
         - 
           collapsed: true
           items:
             - 
-              link: /en/administrate/setup
+              link: /de/administrate/setup
               text: 'Ein neues System einrichten'
             - 
-              link: /en/administrate/manage-channels
+              link: /de/administrate/manage-channels
               text: 'Kanäle verwalten'
           text: 'Zammad administrieren'
-      link: /en/doc-start
+      link: /de/doc-start
       text: Dokumentation
     - 
       items:
         - 
-          link: /en/contribute/contribute
+          link: /de/contribute/contribute
           text: Beitragen
         - 
-          link: /en/contribute/style-guide
+          link: /de/contribute/style-guide
           text: 'Leitfaden für Stil und Inhalt'
       text: Beitragen
     - 
       items:
         - 
-          link: /en/reference/glossary
+          link: /de/reference/glossary
           text: Glossar
         - 
-          link: /en/reference/api-reference
+          link: /de/reference/api-reference
           text: API-Referenz
         - 
-          link: /en/reference/rails-commands
+          link: /de/reference/rails-commands
           text: Rails-Befehle
       text: Referenz
   socialLinks:
