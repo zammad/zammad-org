@@ -7,12 +7,12 @@ themeConfig:
     copyright: 'Copyright © 2012-садашњост <a href="https://zammad-foundation.org">Zammad фондација</a>'
     items:
       - 
-        link: /en/imprint
+        link: /sr/imprint
         text: Импресум
       - 
-        link: /en/gdpr
+        link: /sr/gdpr
         text: 'Политика приватности'
-    message: 'Zammad чвориште'
+    message: 'Zammad Hub'
   lastUpdated:
     text: 'Освежено у'
   nav:
@@ -43,10 +43,10 @@ themeConfig:
     - 
       items:
         - 
-          link: /en/get-zammad/get-started
+          link: /sr/get-zammad/get-started
           text: 'Преузмите Zammad'
         - 
-          link: /en/get-zammad/installation
+          link: /sr/get-zammad/installation
           text: 'Инсталација Zammad-а'
       text: 'Први кораци'
     - 
@@ -55,46 +55,46 @@ themeConfig:
           collapsed: false
           items:
             - 
-              link: /en/use/general/index
+              link: /sr/use/general/index
               text: Уопштено
             - 
-              link: /en/use/how-to/index
+              link: /sr/use/how-to/index
               text: 'Како да'
             - 
-              link: /en/use/faq/index
+              link: /sr/use/faq/index
               text: FAQ
           text: 'Коришћење Zammad-а'
         - 
           collapsed: true
           items:
             - 
-              link: /en/administrate/setup
+              link: /sr/administrate/setup
               text: 'Подешавање новог система'
             - 
-              link: /en/administrate/manage-channels
+              link: /sr/administrate/manage-channels
               text: 'Управљање каналима'
           text: 'Zammad администрација'
-      link: /en/doc-start
+      link: /sr/doc-start
       text: Документација
     - 
       items:
         - 
-          link: /en/contribute/contribute
+          link: /sr/contribute/contribute
           text: Учествујте
         - 
-          link: /en/contribute/style-guide
+          link: /sr/contribute/style-guide
           text: 'Водич кроз стил и садржај'
       text: Учествујте
     - 
       items:
         - 
-          link: /en/reference/glossary
+          link: /sr/reference/glossary
           text: Речник
         - 
-          link: /en/reference/api-reference
+          link: /sr/reference/api-reference
           text: 'API референца'
         - 
-          link: /en/reference/rails-commands
+          link: /sr/reference/rails-commands
           text: 'Rails команде'
       text: Референца
   socialLinks:

@@ -10,6 +10,6 @@
 успех. Прегледајт наше ресурсе и отркијте како Zammad може да вам помогне да
 пружите изузетну корисничку подршку и рационализујете вашу операцију.
 
-[User Documentation](/en/use/general/index)
+[Корисничка документација(/sr/use/general/index)
 
-[Admin Documentation](/en/administrate/index)
+[Администраторска документација](/sr/administrate/index)
