@@ -99,6 +99,7 @@ screenshots:
     - docker ps
   artifacts:
     name: screenshots
+    expose_as: "Generated Screenshots"
     expire_in: 1 week
     paths:
       - src/public/screenshots/cypress
@@ -110,6 +111,7 @@ build:
     - pnpm build
   artifacts:
     name: static-html
+    expose_as: "Generated Website HTML"
     expire_in: 1 week
     paths:
       - dist
