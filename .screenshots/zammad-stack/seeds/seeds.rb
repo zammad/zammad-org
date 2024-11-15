@@ -1,0 +1,1 @@
+puts 'Start seeding the Zammad system…'

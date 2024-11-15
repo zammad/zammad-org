@@ -11,7 +11,12 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "build-language-config-json-files": "(cd .vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)",
-    "reset-po-changes": "echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po"
+    "reset-po-changes": "echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po",
+    "screenshots:install": "pnpm --dir ./.screenshots install --frozen-lockfile",
+    "screenshots:dev": "pnpm --dir ./.screenshots dev --e2e",
+    "screenshots:build": "pnpm --dir ./.screenshots build",
+    "screenshots:start-stack": ".screenshots/zammad-stack/start.sh",
+    "screenshots:stop-stack": ".screenshots/zammad-stack/stop.sh"
   },
   "dependencies": {
     "vite-plugin-vitepress-auto-sidebar": "^1.7.0"

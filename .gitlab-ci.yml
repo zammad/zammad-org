@@ -14,9 +14,11 @@ workflow:
 stages:
   - pre
   - lint
+  - screenshots
+  - build
   - deploy
 
-'push to github':
+push to github:
   stage: pre
   before_script:
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
@@ -33,7 +35,7 @@ stages:
 
 # This job will create commits in pipelines pushed from Weblate.
 # It re-generates the catalog, and any additional files such as view templates and chat assets.
-'push translations update commit':
+push translations update commit:
   stage: pre
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE =~ /Translations update from translations[.]zammad[.]org/
@@ -82,12 +84,39 @@ super linter:
     expose_as: 'Super Linter Test Results'
     paths: ['super-linter.log']
 
+screenshots:
+  stage: screenshots
+  image: docker
+  before_script:
+    - .screenshots/zammad-stack/start.sh
+    - docker ps
+  script:
+    - .screenshots/zammad-stack/screenshots.sh || true # TODO drop this, first run always fails?
+    - .screenshots/zammad-stack/screenshots.sh
+    - test -d src/public/screenshots/cypress # check that screenshots were copied from the container
+  after_script:
+    - .screenshots/zammad-stack/stop.sh
+    - docker ps
+  artifacts:
+    name: screenshots
+    expire_in: 1 week
+    paths:
+      - src/public/screenshots/cypress
 
-'build and deploy':
-  stage: deploy
+build:
+  stage: build
   script:
     - pnpm install
     - pnpm build
+  artifacts:
+    name: static-html
+    expire_in: 1 week
+    paths:
+      - dist
+
+deploy to website:
+  stage: deploy
+  script:
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
     - ssh-keyscan -p $DEPLOYPORT $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
     - eval $(ssh-agent -s)
