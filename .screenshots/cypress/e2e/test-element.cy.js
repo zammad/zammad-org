@@ -1,0 +1,39 @@
+describe('testing element screenshots', () => {
+  it('ticket article sender tabs', () => {
+    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.intercept('/graphql').as('gql')
+    cy.visit('/desktop/tickets/create')
+    cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')
+    cy.get('[data-type="toggleButtons"] .formkit-block').screenshot('test-ticket-article-sender-tabs')
+    cy.closeTab('Received Call')
+  })
+
+  it('treeselect field with highlighted option', () => {
+    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.intercept('/graphql').as('gql')
+    cy.visit('/desktop/tickets/create')
+    cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')
+    cy.get('main').invoke('height', 1000).invoke('scrollTop', 1000) // increase scroll container height
+    cy.get('label').contains('Group').click()
+    cy.focused().type('{enter}{uparrow}')
+    cy.wait(300) // transition
+    cy.get('label').contains('Group').parents('.formkit-outer').clip().then((fieldClip) => {
+      cy.get('#field-tree-select-input-dropdown').clip().then((dropdownClip) => {
+        cy.mergeClips(fieldClip, dropdownClip).then((clip) => {
+          cy.screenshot('test-treeselect-field-with-highlighted-option', { clip })
+        })
+      })
+    })
+    cy.closeTab('Received Call')
+  })
+
+  it('highlight create button', () => {
+    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.intercept('/graphql').as('gql')
+    cy.visit('/desktop/tickets/create')
+    cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')
+    cy.get('button').contains('Create').parent('button').highlight()
+    cy.screenshot('highlight-create-button', { clip: { x: 260, y: 350, width: 1020, height: 450 } })
+    cy.closeTab('Received Call')
+  })
+})

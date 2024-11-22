@@ -27,3 +27,11 @@ Cypress.Screenshot.defaults({
   screenshotOnRunFailure: false,
   overwrite: true,
 })
+
+// Turn off all uncaught exception handling.
+//   https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})

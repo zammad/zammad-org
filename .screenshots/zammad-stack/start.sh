@@ -60,8 +60,8 @@ fi
 # Wait for the application to be initialized.
 docker compose wait zammad-init
 
-# Basic AutoWizard
-docker compose exec zammad-nginx cp /opt/zammad/contrib/auto_wizard_test.json /opt/zammad/auto_wizard.json
+# Custom AutoWizard
+docker compose exec zammad-nginx cp /opt/zammad/zammad-org/.screenshots/zammad-stack/seeds/auto_wizard.json /opt/zammad/auto_wizard.json
 docker compose exec zammad-nginx /docker-entrypoint.sh bundle exec rails r 'AutoWizard.run'
 # Custom Seeds
 docker compose exec zammad-nginx /docker-entrypoint.sh bundle exec rails r /opt/zammad/zammad-org/.screenshots/zammad-stack/seeds/seeds.rb

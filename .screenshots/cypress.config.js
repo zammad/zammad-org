@@ -6,6 +6,8 @@ module.exports = defineConfig({
     env: {
       ADMIN_LOGIN: 'admin@example.com',
       ADMIN_PASS: 'test',
+      AGENT1_LOGIN: 'agent1@example.com',
+      AGENT1_PASS: 'test',
     },
     defaultCommandTimeout: 20000,
     supportFolder: 'cypress/support',
