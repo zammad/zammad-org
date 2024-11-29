@@ -43,6 +43,7 @@ cat - > .env <<ENV_FILE
 VERSION=${ZAMMAD_VERSION}
 ENV_FILE
 
+docker compose pull --policy always
 docker compose  up -d
 
 # Mounts won't work since we're already in a container and not on the host, so use 'docker compose cp'.
