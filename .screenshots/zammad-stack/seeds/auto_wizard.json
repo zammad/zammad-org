@@ -1,31 +1,265 @@
 {
-  "Users": [
+  "Organizations": [
     {
-      "login": "admin@example.com",
-      "firstname": "Test Admin",
-      "lastname": "Agent",
-      "email": "admin@example.com",
-      "password": "test"
+      "name": "Fast Lane Hardware",
+      "note": "IT hardware and custom PC builds"
     },
     {
-      "login": "agent1@example.com",
-      "firstname": "Agent 1",
-      "lastname": "Test",
-      "email": "agent1@example.com",
-      "password": "test",
+      "name": "Midland Bank",
+      "note": "Financial industry; very good customer!"
+    },
+    {
+      "name": "Joe's car parts",
+      "note": "Their shipping department often needs computer spare parts as well as printers!"
+    }
+  ],
+  "Users": [
+    {
+      "login": "lauren@fastlane.inc",
+      "firstname": "Lauren",
+      "lastname": "Brooks",
+      "email": "lauren@fastlane.inc",
+      "password": "lauren4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Admin", "Agent"]
+    },
+    {
+      "login": "ethan@fastlane.inc",
+      "firstname": "Ethan",
+      "lastname": "Kwan",
+      "email": "ethan@fastlane.inc",
+      "password": "ethan4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
       "roles": ["Agent"]
+    },
+    {
+      "login": "julian@fastlane.inc",
+      "firstname": "Julian",
+      "lastname": "Reyes",
+      "email": "julian@fastlane.inc",
+      "password": "julian4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "thomas@fastlane.inc",
+      "firstname": "Thomas",
+      "lastname": "Lee",
+      "email": "thomas@fastlane.inc",
+      "password": "thomas4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "liam@fastlane.inc",
+      "firstname": "Liam",
+      "lastname": "Chen",
+      "email": "liam@fastlane.inc",
+      "password": "liam4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "alex@fastlane.inc",
+      "firstname": "Alexander",
+      "lastname": "Jensen",
+      "email": "alex@fastlane.inc",
+      "password": "alex4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "emily@fastlane.inc",
+      "firstname": "Emily",
+      "lastname": "Wilson",
+      "email": "emily@fastlane.inc",
+      "password": "emily4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "hannah@fastlane.inc",
+      "firstname": "Hannah",
+      "lastname": "Taylor",
+      "email": "hannah@fastlane.inc",
+      "password": "hannah4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Admin", "Agent"]
+    },
+    {
+      "login": "jackson@fastlane.inc",
+      "firstname": "Jackson",
+      "lastname": "Lee",
+      "email": "jackson@fastlane.inc",
+      "password": "jackson4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Admin", "Agent"]
+    },
+    {
+      "login": "emily.t@fastlane.inc",
+      "firstname": "Emily",
+      "lastname": "Tran",
+      "email": "emily.t@fastlane.inc",
+      "password": "emily4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Admin", "Agent"]
+    },
+    {
+      "login": "ava@fastlane.inc",
+      "firstname": "Ava",
+      "lastname": "Moreno",
+      "email": "ava@fastlane.inc",
+      "password": "ava4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "morgan@fastlane.inc",
+      "firstname": "Morgan",
+      "lastname": "Reed",
+      "email": "morgan@fastlane.inc",
+      "password": "morgan4711",
+      "organization": "Fast Lane Hardware",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "roles": ["Agent"]
+    },
+    {
+      "login": "john.doe@example.com",
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john.doe@example.com",
+      "roles": ["Customer"]
+    },
+    {
+      "login": "pparker@hotmail.com",
+      "firstname": "Petra",
+      "lastname": "Parker",
+      "email": "pparker@hotmail.com",
+      "roles": ["Customer"]
+    },
+    {
+      "login": "mola@babangida.xz",
+      "firstname": "Mola",
+      "lastname": "Babangida",
+      "email": "mola@babangida.xz",
+      "roles": ["Customer"]
+    },
+    {
+      "login": "evely.smith@midlandbank.biz",
+      "firstname": "Evelyn",
+      "lastname": "Smith",
+      "email": "evely.smith@midlandbank.biz",
+      "password": "evelyn4711",
+      "organization": "Midland Bank",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "vip": true,
+      "roles": ["Customer"]
+    },
+    {
+      "login": "amber.wright@joes-carparts.com",
+      "firstname": "Amber",
+      "lastname": "Wright",
+      "email": "amber.wright@joes-carparts.com",
+      "password": "amber4711",
+      "organization": "Joe's car parts",
+      "preferences": {
+        "intro": true,
+        "keyboard_shortcuts_clues": true
+      },
+      "vip": true,
+      "roles": ["Customer"]
     }
   ],
   "Groups": [
     {
-      "name": "some group1",
-      "users": ["admin@example.com", "agent1@example.com"]
+      "name": "Support",
+      "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "hannah@fastlane.inc"]
     },
     {
-      "name": "Users",
-      "users": ["admin@example.com", "agent1@example.com"],
-      "signature": "default",
-      "email_address_id": 1
+      "name": "Support::1st Level",
+      "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "julian@fastlane.inc", "thomas@fastlane.inc", "liam@fastlane.inc", "alex@fastlane.inc", "emily@fastlane.inc", "hannah@fastlane.inc"]
+    },
+    {
+      "name": "Support::2nd Level",
+      "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "julian@fastlane.inc", "thomas@fastlane.inc", "liam@fastlane.inc", "hannah@fastlane.inc"]
+    },
+    {
+      "name": "Sales",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "morgan@fastlane.inc", "ava@fastlane.inc"]
+    },
+    {
+      "name": "Logistics Department",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
+    },
+    {
+      "name": "Logistics Department::Shipping",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
+    },
+    {
+      "name": "Logistics Department::Returns Processing",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
+    },
+    {
+      "name": "IT Internal",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "jackson@fastlane.inc"]
+    },
+    {
+      "name": "IT Internal::Infrastructure",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "jackson@fastlane.inc"]
+    },
+    {
+      "name": "IT Internal::IT Support",
+      "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "emily.t@fastlane.inc"]
     }
   ],
   "Channels": [
@@ -38,7 +272,7 @@
         "inbound": {
           "adapter": "imap",
           "options": {
-            "host": "mx1.example.com",
+            "host": "mx1.fastlane.inc",
             "user": "not_existing",
             "password": "not_existing",
             "ssl": "ssl"
@@ -54,8 +288,14 @@
     {
       "id": 1,
       "channel_id": 1,
-      "name": "Zammad Helpdesk",
-      "email": "zammad@localhost"
+      "name": "Fast Lane Support",
+      "email": "support@fastlane.inc"
+    },
+    {
+      "id": 1,
+      "channel_id": 2,
+      "name": "Fast Lane B2B Sales",
+      "email": "sales@fastlane.inc"
     }
   ],
   "Settings": [
@@ -64,15 +304,39 @@
       "value": "localhost:8080"
     },
     {
-      "name": "product_name",
-      "value": "Zammad Test System"
+      "name": "organization",
+      "value": "Fast Lane Hardware Inc."
     },
     {
-      "name": "developer_mode",
+      "name": "product_name",
+      "value": "Fast Lane Support"
+    },
+    {
+      "name": "chat",
       "value": true
+    },
+    {
+      "name": "sipgate_integration",
+      "value": true
+    },
+    {
+      "name": "kb_active",
+      "value": true
+    },
+    {
+      "name": "import_mode",
+      "value": true
+    },
+    {
+      "name": "system_init_done",
+      "value": true
+    },
+    {
+      "name": "system_agent_limit",
+      "value": null
     }
   ],
   "TextModuleLocale": {
-    "Locale": "de-de"
+    "Locale": "en-us"
   }
 }

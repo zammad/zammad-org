@@ -71,4 +71,4 @@ docker compose exec zammad-nginx /docker-entrypoint.sh bundle exec rails r /opt/
 docker compose restart zammad-nginx zammad-railsserver zammad-websocket zammad-scheduler
 
 # Confirm Zammad is running.
-docker compose exec zammad-nginx curl --retry 30 --retry-delay 1 --retry-connrefused  -s localhost:8080 | grep "Zammad"
+docker compose exec zammad-nginx curl --retry 30 --retry-delay 1 --retry-connrefused  -s localhost:8080 | grep "Fast Lane"

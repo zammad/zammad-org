@@ -4,10 +4,10 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'http://localhost:8080',
     env: {
-      ADMIN_LOGIN: 'admin@example.com',
-      ADMIN_PASS: 'test',
-      AGENT1_LOGIN: 'agent1@example.com',
-      AGENT1_PASS: 'test',
+      ADMIN_LOGIN: 'lauren@fastlane.inc',
+      ADMIN_PASS: 'lauren4711',
+      AGENT1_LOGIN: 'liam@fastlane.inc',
+      AGENT1_PASS: 'liam4711',
     },
     defaultCommandTimeout: 20000,
     supportFolder: 'cypress/support',
