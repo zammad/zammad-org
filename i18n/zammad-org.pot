@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-02 10:43+0000\n"
+"POT-Creation-Date: 2024-12-02 11:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Previous page"
+msgid "Next page"
 msgstr ""
 
 #. type: Hash Value: themeConfig docFooter prev
 #: .vitepress/config.en.yaml:1
 #, no-wrap
-msgid "Next page"
+msgid "Previous page"
 msgstr ""
 
 #. type: Hash Value: themeConfig footer copyright
@@ -126,189 +126,6 @@ msgstr ""
 msgid "On this page"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "/en/get-zammad/get-started"
-msgstr ""
-
-#. type: Title #
-#: .vitepress/config.en.yaml:1 src/en/get-zammad/get-started.md:7
-#, markdown-text, no-wrap
-msgid "Get Zammad"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: next link
-#: .vitepress/config.en.yaml:1 src/en/get-zammad/get-started.md:1
-#, no-wrap
-msgid "/en/get-zammad/installation"
-msgstr ""
-
-#. type: Title #
-#: .vitepress/config.en.yaml:1 src/en/get-zammad/installation.md:1
-#, markdown-text, no-wrap
-msgid "Install Zammad"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Get Started"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/use/general/index"
-msgstr ""
-
-#. type: Title ##
-#: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:3
-#: src/en/use/general/index.md:6
-#, markdown-text, no-wrap
-msgid "General"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/use/how-to/index"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "How to"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/use/faq/index"
-msgstr ""
-
-#. type: Title #
-#: .vitepress/config.en.yaml:1 src/en/use/faq/index.md:1
-#, markdown-text, no-wrap
-msgid "FAQs"
-msgstr ""
-
-#. type: Title #
-#: .vitepress/config.en.yaml:1 src/en/use/general/index.md:1
-#, markdown-text, no-wrap
-msgid "Use Zammad"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/administrate/setup"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Setup a new system"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/administrate/manage-channels"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Manage channels"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Administrate Zammad"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "/en/doc-start"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions text
-#: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:48
-#: src/en/contribute/contribute.md:124 src/en/index.md:1
-#, markdown-text, no-wrap
-msgid "Documentation"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions link
-#: .vitepress/config.en.yaml:1 src/en/index.md:1
-#, no-wrap
-msgid "/en/contribute/contribute"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: hero actions text
-#: .vitepress/config.en.yaml:1 src/en/contribute/contribute.md:1
-#: src/en/index.md:1
-#, markdown-text, no-wrap
-msgid "Contribute"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/contribute/style-guide"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Style and content guide"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/reference/glossary"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Glossary"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/reference/api-reference"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "API reference"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items link
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "/en/reference/rails-commands"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar items text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Rails commands"
-msgstr ""
-
-#. type: Hash Value: themeConfig sidebar text
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "Reference"
-msgstr ""
-
 #. type: Hash Value: themeConfig socialLinks link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
@@ -399,14 +216,15 @@ msgstr ""
 msgid "Name of site"
 msgstr ""
 
-#. type: Title #
-#: src/en/administrate/index.md:1
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
+#: src/en/index.md:1
 #, markdown-text, no-wrap
-msgid "Administration"
+msgid "Contribute"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:7
+#: src/en/contribute/contribute.md:11
 #, markdown-text
 msgid ""
 "We are happy to see you contribute to Zammad! You can do this in several "
@@ -416,7 +234,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:12
+#: src/en/contribute/contribute.md:16
 #, markdown-text, no-wrap
 msgid ""
 "You can contribute to:\n"
@@ -426,25 +244,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:14
+#: src/en/contribute/contribute.md:18
 #, markdown-text
 msgid "Please have a look on our notes on how to contribute below."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:16
+#: src/en/contribute/contribute.md:20
 #, markdown-text
 msgid "All repos can be found on [Github](https://github.com/zammad)."
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:18
+#: src/en/contribute/contribute.md:22
 #, markdown-text, no-wrap
 msgid "Zammad Source Code"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:21
+#: src/en/contribute/contribute.md:25
 #, markdown-text
 msgid ""
 "The Zammad source code can be found on GitHub in the [Zammad "
@@ -452,7 +270,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:23
+#: src/en/contribute/contribute.md:27
 #, markdown-text
 msgid ""
 "Have a look at the [developer "
@@ -461,13 +279,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:24
+#: src/en/contribute/contribute.md:28
 #, markdown-text, no-wrap
 msgid "Supported Branches / Versions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:28
+#: src/en/contribute/contribute.md:32
 #, markdown-text
 msgid ""
 "The main [Zammad repository](https://github.com/zammad/zammad) at Github has "
@@ -475,13 +293,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:29
+#: src/en/contribute/contribute.md:33
 #, markdown-text, no-wrap
 msgid "``develop``"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:35
+#: src/en/contribute/contribute.md:39
 #, markdown-text
 msgid ""
 "This is the current (unreleased) development state of next major release "
@@ -489,13 +307,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:35
+#: src/en/contribute/contribute.md:39
 #, markdown-text
 msgid "Don't use it for production!"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:35 src/en/contribute/contribute.md:41
+#: src/en/contribute/contribute.md:39 src/en/contribute/contribute.md:45
 #, markdown-text
 msgid ""
 "Supported with bug and security fixes - see also our [Security "
@@ -503,31 +321,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:36
+#: src/en/contribute/contribute.md:40
 #, markdown-text, no-wrap
 msgid "``stable``"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:41
+#: src/en/contribute/contribute.md:45
 #, markdown-text
 msgid "This is the current stable release, e.g. Zammad 5.2."
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:41
+#: src/en/contribute/contribute.md:45
 #, markdown-text
 msgid "Use this branch for production installations."
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:42
+#: src/en/contribute/contribute.md:46
 #, markdown-text, no-wrap
 msgid "``stable-x.y``"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:47
+#: src/en/contribute/contribute.md:51
 #, markdown-text
 msgid ""
 "These are the branches of old versions of Zammad like ``stable-5.1`` for "
@@ -535,25 +353,32 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:47
+#: src/en/contribute/contribute.md:51
 #, markdown-text
 msgid "No support for bug or security issues is provided."
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: hero actions text
+#: src/en/contribute/contribute.md:52 src/en/contribute/contribute.md:128
+#: src/en/documentation/index.md:1 src/en/index.md:1
+#, markdown-text, no-wrap
+msgid "Documentation"
+msgstr ""
+
 #. type: Plain text
-#: src/en/contribute/contribute.md:51
+#: src/en/contribute/contribute.md:55
 #, markdown-text
 msgid "Do you want to contribute to the Zammad documentation?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:53
+#: src/en/contribute/contribute.md:57
 #, markdown-text
 msgid "Open a new GitHub pull request at"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:59
+#: src/en/contribute/contribute.md:63
 #, markdown-text
 msgid ""
 "https://github.com/zammad/zammad-org (the documentation you are currently "
@@ -561,55 +386,55 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:59
+#: src/en/contribute/contribute.md:63
 #, markdown-text
 msgid "https://github.com/zammad/zammad-documentation (legacy)"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:59
+#: src/en/contribute/contribute.md:63
 #, markdown-text
 msgid "https://github.com/zammad/zammad-admin-documentation (legacy)"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:59
+#: src/en/contribute/contribute.md:63
 #, markdown-text
 msgid "https://github.com/zammad/zammad-user-documentation (legacy)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:61
+#: src/en/contribute/contribute.md:65
 #, markdown-text
 msgid "with your changes."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:63
+#: src/en/contribute/contribute.md:67
 #, markdown-text
 msgid "The legacy documentation is hosted on Read the Docs. You can find it under:"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:67
+#: src/en/contribute/contribute.md:71
 #, markdown-text
 msgid "https://docs.zammad.org"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:67
+#: src/en/contribute/contribute.md:71
 #, markdown-text
 msgid "https://admin-docs.zammad.org"
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/contribute.md:67
+#: src/en/contribute/contribute.md:71
 #, markdown-text
 msgid "https://user-docs.zammad.org"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:73
+#: src/en/contribute/contribute.md:77
 #, markdown-text
 msgid ""
 "The documentation you are reading is available on next.zammad.org and "
@@ -621,13 +446,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:74
+#: src/en/contribute/contribute.md:78
 #, markdown-text, no-wrap
 msgid "ReStructuredText markup"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:78
+#: src/en/contribute/contribute.md:82
 #, markdown-text
 msgid ""
 "If you like to edit the docs, use the ReStructuredText markup language.  "
@@ -635,43 +460,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:82
+#: src/en/contribute/contribute.md:86
 #, markdown-text
 msgid "http://www.sphinx-doc.org/en/stable/rest.html"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:82
+#: src/en/contribute/contribute.md:86
 #, markdown-text
 msgid "http://docutils.sourceforge.net/docs/user/rst/quickref.html"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:82
+#: src/en/contribute/contribute.md:86
 #, markdown-text
 msgid "http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/source/demo.html"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:84
+#: src/en/contribute/contribute.md:88
 #, markdown-text
 msgid "Thanks! ❤ ❤ ❤"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:86
+#: src/en/contribute/contribute.md:90
 #, markdown-text
 msgid "Zammad Team"
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:87
+#: src/en/contribute/contribute.md:91
 #, markdown-text, no-wrap
 msgid "Translation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:93
+#: src/en/contribute/contribute.md:97
 #, markdown-text
 msgid ""
 "If you want to help us with translation and improve the multi-language "
@@ -682,7 +507,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:97
+#: src/en/contribute/contribute.md:101
 #, markdown-text
 msgid ""
 "You just have to head over to Zammad's [Weblate "
@@ -692,7 +517,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:103
+#: src/en/contribute/contribute.md:107
 #, markdown-text
 msgid ""
 "We will cover some basic steps in the following sections to get you started "
@@ -703,13 +528,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:104
+#: src/en/contribute/contribute.md:108
 #, markdown-text, no-wrap
 msgid "Basics"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:110
+#: src/en/contribute/contribute.md:114
 #, markdown-text, no-wrap
 msgid ""
 "The translation of **Zammad** and the translation of the **documentation**\n"
@@ -720,7 +545,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:112
+#: src/en/contribute/contribute.md:116
 #, markdown-text
 msgid ""
 "![Screenshot showing translation projects in Weblate and "
@@ -728,61 +553,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:114
+#: src/en/contribute/contribute.md:118
 #, markdown-text
 msgid "Structure of translation projects in Weblate:"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "User Documentation (``latest``)"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "User Documentation (``pre-release``)"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "Admin Documentation (``latest``)"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "Admin Documentation (``pre-release``)"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "Zammad"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "Zammad (``develop``, development version)"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "Zammad (``stable`` version)"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:124
+#: src/en/contribute/contribute.md:128
 #, markdown-text
 msgid "*Some more which aren't relevant here*"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/contribute.md:125
+#: src/en/contribute/contribute.md:129
 #, no-wrap
 msgid ""
 "\n"
@@ -792,7 +617,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:136
+#: src/en/contribute/contribute.md:140
 #, markdown-text
 msgid ""
 "After selecting a project (Documentation or Zammad), you will see different "
@@ -802,7 +627,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:142
+#: src/en/contribute/contribute.md:146
 #, markdown-text, no-wrap
 msgid ""
 "Here you can select one of the \"components\", which is more or less the "
@@ -814,7 +639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:145
+#: src/en/contribute/contribute.md:149
 #, markdown-text
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
@@ -822,13 +647,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:146
+#: src/en/contribute/contribute.md:150
 #, markdown-text, no-wrap
 msgid "Translating"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:151
+#: src/en/contribute/contribute.md:155
 #, markdown-text
 msgid ""
 "After selecting your language you want to translate to, a good starting "
@@ -837,7 +662,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:155
+#: src/en/contribute/contribute.md:159
 #, markdown-text
 msgid ""
 "After that, you will finally see the first untranslated string in the upper "
@@ -846,7 +671,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:157
+#: src/en/contribute/contribute.md:161
 #, markdown-text
 msgid ""
 "![Screenshot of Weblate translation user "
@@ -854,13 +679,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid "**Breadcrumbs with path** to the current project and language"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid ""
 "**Translation area** itself. You can find the source string (*\"English "
@@ -869,7 +694,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid ""
 "**Glossary**: here you can find common translations in Zammad context. The "
@@ -877,19 +702,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid "**Some useful tabs**:"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid "**Nearby strings**: shows you the context of the word or string"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid ""
 "**Automatic suggestions**: here you can find automatic suggestions from "
@@ -900,7 +725,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:174
+#: src/en/contribute/contribute.md:178
 #, markdown-text
 msgid ""
 "**Other languages**: here you can get an overview, which languages are "
@@ -909,13 +734,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:175
+#: src/en/contribute/contribute.md:179
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:179
+#: src/en/contribute/contribute.md:183
 #, markdown-text
 msgid ""
 "And finally some notes for \"special\" source strings, you might see in the "
@@ -923,13 +748,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:181
+#: src/en/contribute/contribute.md:185
 #, markdown-text
 msgid "**\\`\\`example-string\\`\\`**"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:185
+#: src/en/contribute/contribute.md:189
 #, markdown-text, no-wrap
 msgid ""
 "    This is rendered as ``example-string``. Depending on the context, it can "
@@ -940,13 +765,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:187
+#: src/en/contribute/contribute.md:191
 #, markdown-text
 msgid "**\\:doc:\\`example \\<path/to/document>\\`**"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:192
+#: src/en/contribute/contribute.md:196
 #, markdown-text, no-wrap
 msgid ""
 "    This is a link to another page. Some links doesn't have the \"example\" "
@@ -959,13 +784,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:194
+#: src/en/contribute/contribute.md:198
 #, markdown-text
 msgid "**\\`some text \\<https://example.com\\>`\\_**"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:199
+#: src/en/contribute/contribute.md:203
 #, markdown-text, no-wrap
 msgid ""
 "    This is a link which can refer to an external website. \"some text\" is "
@@ -978,13 +803,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:201
+#: src/en/contribute/contribute.md:205
 #, markdown-text
 msgid "**\\:admin-docs:\\`some text \\</manage-text-modules.html\\>\\`**"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:206
+#: src/en/contribute/contribute.md:210
 #, markdown-text, no-wrap
 msgid ""
 "    This is a link which refers to external documentation. \"some text\" is "
@@ -996,13 +821,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:208
+#: src/en/contribute/contribute.md:212
 #, markdown-text
 msgid "**\\*\\*example string\\*\\***"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:212
+#: src/en/contribute/contribute.md:216
 #, markdown-text, no-wrap
 msgid ""
 "    Markup for text (e.g. bold, italics). Alternative: \\*example "
@@ -1012,13 +837,13 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/contribute/style-guide.md:1
+#: src/en/contribute/style-guide.md:5
 #, markdown-text, no-wrap
 msgid "Style and Content Guide"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:6
+#: src/en/contribute/style-guide.md:10
 #, markdown-text
 msgid ""
 "This guide provides an overview of the content that should be included in "
@@ -1027,7 +852,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:9
+#: src/en/contribute/style-guide.md:13
 #, markdown-text
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
@@ -1035,13 +860,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:10
+#: src/en/contribute/style-guide.md:14
 #, markdown-text, no-wrap
 msgid "Audience Assumptions and Content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:14
+#: src/en/contribute/style-guide.md:18
 #, markdown-text
 msgid ""
 "The documentation is written assuming our **users** have a basic "
@@ -1049,7 +874,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:17
+#: src/en/contribute/style-guide.md:21
 #, markdown-text
 msgid ""
 "The **Zammad administrator** additionally should have a basic understanding "
@@ -1057,7 +882,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:20
+#: src/en/contribute/style-guide.md:24
 #, markdown-text
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
@@ -1065,13 +890,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:21
+#: src/en/contribute/style-guide.md:25
 #, markdown-text, no-wrap
 msgid "Style"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:26
+#: src/en/contribute/style-guide.md:30
 #, markdown-text
 msgid ""
 "American English is the original source language for the documentation.  "
@@ -1080,13 +905,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: src/en/contribute/style-guide.md:41
+#: src/en/contribute/style-guide.md:45
 #, markdown-text
 msgid "Use short and clear sentences, prioritizing information over complexity"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:41
+#: src/en/contribute/style-guide.md:45
 #, markdown-text, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
@@ -1107,13 +932,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:43
+#: src/en/contribute/style-guide.md:47
 #, markdown-text, no-wrap
 msgid "Formatting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:50
+#: src/en/contribute/style-guide.md:54
 #, markdown-text, no-wrap
 msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 "
@@ -1128,13 +953,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:52
+#: src/en/contribute/style-guide.md:56
 #, markdown-text, no-wrap
 msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:57
+#: src/en/contribute/style-guide.md:61
 #, markdown-text
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
@@ -1143,49 +968,153 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:59
+#: src/en/contribute/style-guide.md:63
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:61
+#: src/en/contribute/style-guide.md:65
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:63
+#: src/en/contribute/style-guide.md:67
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:65
+#: src/en/contribute/style-guide.md:69
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:67
+#: src/en/contribute/style-guide.md:71
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:69
+#: src/en/contribute/style-guide.md:73
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""
 
+#. type: Title ###
+#: src/en/contribute/style-guide.md:74
+#, markdown-text, no-wrap
+msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:76
+#, markdown-text, no-wrap
+msgid ""
+"This section title uses a badge of type \"warning\". There are other badges "
+"available:  \n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:78
+#, markdown-text
+msgid "https://vitepress.dev/reference/default-theme-badge#usage"
+msgstr ""
+
+#. type: Title ###
+#: src/en/contribute/style-guide.md:79
+#, markdown-text, no-wrap
+msgid "Custom boxes"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/contribute/style-guide.md:81
+#, no-wrap
+msgid "This is an info box.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/contribute/style-guide.md:85
+#, no-wrap
+msgid "This is a tip.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/contribute/style-guide.md:89
+#, no-wrap
+msgid "This is a warning.\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/contribute/style-guide.md:93
+#, no-wrap
+msgid "This is a dangerous warning.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/contribute/style-guide.md:97
+#, no-wrap
+msgid "This is a details block.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/contribute/style-guide.md:101
+#, markdown-text, no-wrap
+msgid "Definition lists"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:105
+#, markdown-text, no-wrap
+msgid ""
+"First Term <Badge type=\"info\" text=\"tag1\" />\n"
+": This is the definition of the first term.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:108
+#, markdown-text, no-wrap
+msgid ""
+"Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" "
+"text=\"tag1\" />\n"
+": This is one definition of the second term.\n"
+": This is another definition of the second term.\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/administrate-zammad/index.md:1
+#, no-wrap
+msgid "Administrate Zammad"
+msgstr ""
+
 #. type: Title #
-#: src/en/doc-start.md:1
+#: src/en/documentation/administrate-zammad/manage-channels.md:5
+#, markdown-text, no-wrap
+msgid "Manage Channels"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/administrate-zammad/setup.md:5
+#, markdown-text, no-wrap
+msgid "Setup a new system"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/introduction.md:6
 #, markdown-text, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:7
+#: src/en/documentation/introduction.md:12
 #, markdown-text
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
@@ -1195,7 +1124,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:12
+#: src/en/documentation/introduction.md:17
 #, markdown-text
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
@@ -1205,15 +1134,111 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:14
+#: src/en/documentation/introduction.md:19
 #, markdown-text
-msgid "[User Documentation](/en/use/general/index)"
+msgid "[User Documentation](/en/documentation/use/general)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/doc-start.md:15
+#: src/en/documentation/introduction.md:20
 #, markdown-text
-msgid "[Admin Documentation](/en/administrate/index)"
+msgid "[Admin Documentation](/en/documentation/administrate-zammad/setup)"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/faq.md:5
+#, markdown-text, no-wrap
+msgid "FAQs"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/faq.md:7 src/en/documentation/use/general.md:1
+#: src/en/documentation/use/general.md:11
+#, markdown-text, no-wrap
+msgid "General"
+msgstr ""
+
+#. type: Fenced div block (details How to find tickets?)
+#: src/en/documentation/use/faq.md:9
+#, no-wrap
+msgid "You can either search them via search field or via overviews.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#: src/en/documentation/use/faq.md:13 src/en/documentation/use/faq.md:17
+#: src/en/documentation/use/faq.md:21 src/en/documentation/use/faq.md:25
+#: src/en/documentation/use/faq.md:29 src/en/documentation/use/faq.md:33
+#: src/en/documentation/use/faq.md:39 src/en/documentation/use/faq.md:43
+#: src/en/documentation/use/faq.md:47 src/en/documentation/use/faq.md:51
+#: src/en/documentation/use/faq.md:57 src/en/documentation/use/faq.md:61
+#: src/en/documentation/use/faq.md:65 src/en/documentation/use/faq.md:69
+#: src/en/documentation/use/faq.md:73
+#, no-wrap
+msgid "\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/faq.md:37
+#, markdown-text, no-wrap
+msgid "User Profile"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/faq.md:55
+#, markdown-text, no-wrap
+msgid "Work on Tickets"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/general.md:6 src/en/documentation/use/index.md:1
+#, markdown-text, no-wrap
+msgid "Use Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:10
+#, markdown-text
+msgid ""
+"Welcome to the user documentation of Zammad. Here you can learn how to use "
+"Zammad to collaborate with your colleagues even better!"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:16
+#, markdown-text
+msgid ""
+"In general, Zammad should be pretty self explanatory. However, there are "
+"features that are not obvious at first glance. These features are described "
+"in this documentation as well as some general explanations and tips."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:21
+#, markdown-text
+msgid ""
+"This documentation is divided in different sections. Currently you are "
+"reading the *General* section. This section includes explanations of the "
+"documentation itself as well as a description of features. There are also "
+"FAQs and a how-to section. See left sidebar or below to navigate to your "
+"desired information."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/general.md:22
+#, markdown-text, no-wrap
+msgid "Content of User Documentation Section"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:25
+#, markdown-text
+msgid "TODO: - Links / TOC to different sections of user documentation"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/how-to.md:5
+#, markdown-text, no-wrap
+msgid "How-To"
 msgstr ""
 
 #. type: Title ###
@@ -1446,14 +1471,14 @@ msgstr ""
 msgid "Marienstraße 18, Berlin, BE, 10117, Germany"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: next text
-#: src/en/get-zammad/get-started.md:1
-#, no-wrap
-msgid "Installation"
+#. type: Title #
+#: src/en/get-started/get-zammad.md:5
+#, markdown-text, no-wrap
+msgid "Get Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:11
+#: src/en/get-started/get-zammad.md:9
 #, markdown-text
 msgid ""
 "Not using Zammad yet? You will like it! See the sections below for different "
@@ -1461,7 +1486,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:15
+#: src/en/get-started/get-zammad.md:13
 #, markdown-text
 msgid ""
 "If you have questions, feel free to [get in touch with "
@@ -1470,13 +1495,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-zammad/get-started.md:16
+#: src/en/get-started/get-zammad.md:14
 #, markdown-text, no-wrap
 msgid "Testing Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:22
+#: src/en/get-started/get-zammad.md:20
 #, markdown-text
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
@@ -1486,13 +1511,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-zammad/get-started.md:23
+#: src/en/get-started/get-zammad.md:21
 #, markdown-text, no-wrap
 msgid "Use Zammad's Hosted Service"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:28
+#: src/en/get-started/get-zammad.md:26
 #, markdown-text
 msgid ""
 "To use Zammad in production, head over to our sister site "
@@ -1501,22 +1526,22 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-zammad/get-started.md:29
+#: src/en/get-started/get-zammad.md:27
 #, markdown-text, no-wrap
 msgid "Self Hosted Installation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:34
+#: src/en/get-started/get-zammad.md:32
 #, markdown-text
 msgid ""
 "You can even host Zammad on your own. Read our [installation "
-"instructions](/en/get-zammad/installation) and see which deployment method "
+"instructions](/en/get-started/installation) and see which deployment method "
 "fits your needs."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/get-started.md:38
+#: src/en/get-started/get-zammad.md:36
 #, markdown-text
 msgid ""
 "If you are a self-hosted user and want to have support at hand, our sales "
@@ -1524,8 +1549,20 @@ msgid ""
 "message](https://zammad.com/en/company/contact)."
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/index.md:1
+#, no-wrap
+msgid "Get Started"
+msgstr ""
+
+#. type: Title #
+#: src/en/get-started/installation.md:5
+#, markdown-text, no-wrap
+msgid "Install Zammad"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-zammad/installation.md:4
+#: src/en/get-started/installation.md:8
 #, markdown-text
 msgid ""
 "![Test Screenshot (Full "
@@ -1533,7 +1570,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/installation.md:6
+#: src/en/get-started/installation.md:10
 #, markdown-text
 msgid ""
 "![Test Screenshot (Page "
@@ -1541,7 +1578,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-zammad/installation.md:7
+#: src/en/get-started/installation.md:11
 #, markdown-text
 msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"
 msgstr ""
@@ -1670,10 +1707,28 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, no-wrap
+msgid "/en/get-started/get-zammad"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
 #, no-wrap
 msgid "Getting started"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, no-wrap
+msgid "/en/documentation/introduction"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: hero actions link
+#: src/en/index.md:1
+#, no-wrap
+msgid "/en/contribute/contribute"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero image alt
@@ -1694,79 +1749,26 @@ msgstr ""
 msgid "For Users and Administrators"
 msgstr ""
 
-#. type: Fenced div block (details How to find tickets?)
-#: src/en/use/faq/index.md:5
-#, no-wrap
-msgid "You can either search them via search field or via overviews.\n"
-msgstr ""
-
-#. type: Fenced div block (details How to cite the customer's email or parts of it?)
-#: src/en/use/faq/index.md:9 src/en/use/faq/index.md:13
-#: src/en/use/faq/index.md:17 src/en/use/faq/index.md:21
-#: src/en/use/faq/index.md:25 src/en/use/faq/index.md:29
-#: src/en/use/faq/index.md:35 src/en/use/faq/index.md:39
-#: src/en/use/faq/index.md:43 src/en/use/faq/index.md:47
-#: src/en/use/faq/index.md:53 src/en/use/faq/index.md:57
-#: src/en/use/faq/index.md:61 src/en/use/faq/index.md:65
-#: src/en/use/faq/index.md:69
-#, no-wrap
-msgid "\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/use/faq/index.md:33
+#. type: Title #
+#: src/en/reference/api-reference.md:5
 #, markdown-text, no-wrap
-msgid "User Profile"
-msgstr ""
-
-#. type: Title ##
-#: src/en/use/faq/index.md:51
-#, markdown-text, no-wrap
-msgid "Work on Tickets"
-msgstr ""
-
-#. type: Plain text
-#: src/en/use/general/index.md:5
-#, markdown-text
-msgid ""
-"Welcome to the user documentation of Zammad. Here you can learn how to use "
-"Zammad to collaborate with your colleagues even better!"
-msgstr ""
-
-#. type: Plain text
-#: src/en/use/general/index.md:11
-#, markdown-text
-msgid ""
-"In general, Zammad should be pretty self explanatory. However, there are "
-"features that are not obvious at first glance. These features are described "
-"in this documentation as well as some general explanations and tips."
-msgstr ""
-
-#. type: Plain text
-#: src/en/use/general/index.md:16
-#, markdown-text
-msgid ""
-"This documentation is divided in different sections. Currently you are "
-"reading the *General* section. This section includes explanations of the "
-"documentation itself as well as a description of features. There are also "
-"FAQs and a how-to section. See left sidebar or below to navigate to your "
-"desired information."
-msgstr ""
-
-#. type: Title ##
-#: src/en/use/general/index.md:17
-#, markdown-text, no-wrap
-msgid "Content of User Documentation Section"
-msgstr ""
-
-#. type: Plain text
-#: src/en/use/general/index.md:20
-#, markdown-text
-msgid "TODO: - Links / TOC to different sections of user documentation"
+msgid "API reference"
 msgstr ""
 
 #. type: Title #
-#: src/en/use/how-to/index.md:1
+#: src/en/reference/glossary.md:5
 #, markdown-text, no-wrap
-msgid "How-To"
+msgid "Glossary"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/reference/index.md:1
+#, no-wrap
+msgid "Reference"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rails-commands.md:5
+#, markdown-text, no-wrap
+msgid "Rails commands"
 msgstr ""

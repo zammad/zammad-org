@@ -2,14 +2,20 @@
 # Empty "/" page, only for redirecting to the target language.
 ---
 <script setup>
-const lang = window.navigator.language || '';
-let targetLang = 'en';
+import { onMounted } from 'vue'
 
-['de', 'sr'].forEach((langCode) => {
-  if (lang.startsWith(langCode)) {
-    targetLang = langCode;
-  }
+onMounted(() => {
+  const lang = window.navigator.language || ''
+  const langs = ['de', 'sr']
+
+  let targetLang = 'en'
+
+  langs.forEach((langCode) => {
+    if (lang.startsWith(langCode)) {
+      targetLang = langCode
+    }
+  })
+
+  window.location.pathname = `/${targetLang}/`
 })
-
-window.location.pathname = `/${targetLang}`
 </script>

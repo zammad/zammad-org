@@ -1,8 +1,8 @@
 ---
 themeConfig:
   docFooter:
-    next: 'Претходна страна'
-    prev: 'Следећа страна'
+    next: 'Следећа страна'
+    prev: 'Претходна страна'
   footer:
     copyright: 'Copyright © 2012-садашњост <a href="https://zammad-foundation.org">Zammad фондација</a>'
     items:
@@ -39,64 +39,6 @@ themeConfig:
       text: 'Следеће издање'
   outline:
     label: 'На овој страни'
-  sidebar:
-    - 
-      items:
-        - 
-          link: /sr/get-zammad/get-started
-          text: 'Преузмите Zammad'
-        - 
-          link: /sr/get-zammad/installation
-          text: 'Инсталација Zammad-а'
-      text: 'Први кораци'
-    - 
-      items:
-        - 
-          collapsed: false
-          items:
-            - 
-              link: /sr/use/general/index
-              text: Уопштено
-            - 
-              link: /sr/use/how-to/index
-              text: 'Како да'
-            - 
-              link: /sr/use/faq/index
-              text: FAQ
-          text: 'Коришћење Zammad-а'
-        - 
-          collapsed: true
-          items:
-            - 
-              link: /sr/administrate/setup
-              text: 'Подешавање новог система'
-            - 
-              link: /sr/administrate/manage-channels
-              text: 'Управљање каналима'
-          text: 'Zammad администрација'
-      link: /sr/doc-start
-      text: Документација
-    - 
-      items:
-        - 
-          link: /sr/contribute/contribute
-          text: Учествујте
-        - 
-          link: /sr/contribute/style-guide
-          text: 'Водич кроз стил и садржај'
-      text: Учествујте
-    - 
-      items:
-        - 
-          link: /sr/reference/glossary
-          text: Речник
-        - 
-          link: /sr/reference/api-reference
-          text: 'API референца'
-        - 
-          link: /sr/reference/rails-commands
-          text: 'Rails команде'
-      text: Референца
   socialLinks:
     - 
       icon: github

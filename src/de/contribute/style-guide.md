@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # Leitfaden für Stil und Inhalt
 
 Dieser Leitfaden bietet eine Übersicht über den Inhalt, der in der
@@ -69,3 +73,38 @@ Beispiel:
 
 `## Abschnitt 2`
 
+### Section with badge <Badge type="warning" text="custom text" />
+
+This section title uses a badge of type "warning". There are other badges available:  
+https://vitepress.dev/reference/default-theme-badge#usage
+
+### Custom boxes
+
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+
+### Definition lists
+
+First Term <Badge type="info" text="tag1" />
+: This is the definition of the first term.
+
+Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: This is one definition of the second term.
+: This is another definition of the second term.

@@ -1,8 +1,8 @@
 ---
 themeConfig:
   docFooter:
-    next: 'Nächste Seite'
-    prev: 'Vorige Seite'
+    next: 'Vorige Seite'
+    prev: 'Nächste Seite'
   footer:
     copyright: 'Copyright © 2012-jetzt <a href="https://zammad-foundation.org"> Zammad Foundation</a>'
     items:
@@ -39,64 +39,6 @@ themeConfig:
       text: 'Nächste Version'
   outline:
     label: 'Auf dieser Seite'
-  sidebar:
-    - 
-      items:
-        - 
-          link: /de/get-zammad/get-started
-          text: 'Zammad holen'
-        - 
-          link: /de/get-zammad/installation
-          text: 'Zammad installieren'
-      text: Loslegen
-    - 
-      items:
-        - 
-          collapsed: false
-          items:
-            - 
-              link: /de/use/general/index
-              text: Allgemein
-            - 
-              link: /de/use/how-to/index
-              text: 'How to'
-            - 
-              link: /de/use/faq/index
-              text: FAQs
-          text: 'Zammad verwenden'
-        - 
-          collapsed: true
-          items:
-            - 
-              link: /de/administrate/setup
-              text: 'Ein neues System einrichten'
-            - 
-              link: /de/administrate/manage-channels
-              text: 'Kanäle verwalten'
-          text: 'Zammad administrieren'
-      link: /de/doc-start
-      text: Dokumentation
-    - 
-      items:
-        - 
-          link: /de/contribute/contribute
-          text: Beitragen
-        - 
-          link: /de/contribute/style-guide
-          text: 'Leitfaden für Stil und Inhalt'
-      text: Beitragen
-    - 
-      items:
-        - 
-          link: /de/reference/glossary
-          text: Glossar
-        - 
-          link: /de/reference/api-reference
-          text: API-Referenz
-        - 
-          link: /de/reference/rails-commands
-          text: Rails-Befehle
-      text: Referenz
   socialLinks:
     - 
       icon: github

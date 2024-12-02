@@ -15,11 +15,11 @@ features:
 hero:
   actions:
     - 
-      link: /de/get-zammad/get-started
+      link: /en/get-started/get-zammad
       text: Loslegen
       theme: brand
     - 
-      link: /de/doc-start
+      link: /en/documentation/introduction
       text: Dokumentation
       theme: alt
     - 

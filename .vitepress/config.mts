@@ -1,7 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
-// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'
+import { withSidebar } from 'vitepress-sidebar'
+import definitionListMarkdownPlugin from 'markdown-it-deflist'
 import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
@@ -9,9 +10,11 @@ import searchEN from './search.en.yaml.json'
 import searchDE from './search.de.yaml.json'
 import searchSR from './search.sr.yaml.json'
 
+const supportedLocales = ['en', 'de', 'sr']
+
 // https://vitepress.dev/reference/site-config
-export default
-  defineConfig({
+export default defineConfig(
+  withSidebar({
     title: 'Zammad Hub',
     outDir: 'dist',
     cacheDir: 'cache',
@@ -22,10 +25,11 @@ export default
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
+          .use(definitionListMarkdownPlugin)
       },
     },
     locales: {
-      root: { label: 'English', link: '/en', ...defineConfig(configEN as UserConfig) },
+      root: { label: 'English', link: '/en/', ...defineConfig(configEN as UserConfig) },
       de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
       sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
     },
@@ -40,10 +44,6 @@ export default
           },
         ],
       },
-      // didn't get it to work, for options see https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar
-      // plugins: [
-      //   AutoSidebar({}),
-      // ],
     },
     themeConfig: {
       logo: {
@@ -67,5 +67,22 @@ export default
         }
       },
     }
-  }
+  }, [
+    ...supportedLocales.map((locale) => ({
+        documentRootPath: `/src/${locale}`,
+        resolvePath: `/${locale}/`,
+        collapsed: true,
+        collapseDepth: 2,
+        useTitleFromFileHeading: true,
+        useTitleFromFrontmatter: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+        excludePattern: [
+          'gdpr.md',
+          'imprint.md',
+          'TEMPLATE.md',
+        ],
+      }),
+    )
+  ]),
 )
