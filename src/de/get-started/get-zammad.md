@@ -4,34 +4,35 @@ order: 1
 
 # Zammad holen
 
-Not using Zammad yet? You will like it! See the sections below for different
-options.
+Sie benutzen Zammad noch nicht? Es wird Ihnen gefallen! In den folgenden
+Abschnitten finden Sie verschiedene Optionen.
 
 If you have questions, feel free to [get in touch with
 us](https://zammad.com/en/company/contact) and to have a look at the
 [community forum](https://community.zammad.org/) were you can find useful
 information and help.
 
-## Testing Zammad
+## Zammad testen
 
-We are sure you like Zammad! The easiest way to test it is to use a [free
-trial instance](https://zammad.com/en/getting-started). You can play around
-and then you can switch to a official supported instance, either keeping
-your data or start with an empty system.
+Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu
+testen, ist die Verwendung einer [kostenlosen Testversion]
+(https://zammad.com/de/getting-started). Sie können damit herumspielen und
+dann zu einer offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten
+behalten oder mit einem leeren System beginnen können.
 
-## Use Zammad's Hosted Service
+## Nutzen Sie Zammads Hosting-Service
 
-To use Zammad in production, head over to our sister site
-[zammad.com](https://zammad.com/en/pricing) where you can find prices for
-Zammad's hosted services.
+Wenn Sie Zammad produktiv einsetzen möchten, besuchen Sie unsere andere
+Seite [zammad.com] (https://zammad.com/de/pricing), wo Sie die Preise für
+Hosing Services von Zammad finden können.
 
-## Self Hosted Installation
+## Selbst gehostete Installation
 
 You can even host Zammad on your own. Read our [installation
 instructions](/en/get-started/installation/prerequisites) and see which
 deployment method fits your needs.
 
-If you are a self-hosted user and want to have support at hand, our sales
-team is happy to get in touch with you. Just leave them [a
-message](https://zammad.com/en/company/contact).
+Wenn Sie Zammad selbst hosten und Support wünschen, nimmt unser
+Vertriebsteam gerne Kontakt mit Ihnen auf. Hinterlassen Sie einfach eine
+[Nachricht] (https://zammad.com/de/company/contact).
 
