@@ -1,15 +1,16 @@
 ---
 order: 2
-title: Package
+title: Paket
 ---
 
-# Package Installation
+# Paket Installation
 
-## Prerequisites
+## Voraussetzungen
 
-### Operating Systems
+### Betriebssysteme
 
-For package installation, the following Linux distributions are supported:
+Für die Paketinstallation werden die folgenden Linux-Distributionen
+unterstützt:
 
 | Distribution  | Version             |
 | ------------- | :-----------------  |
@@ -18,5 +19,5 @@ For package installation, the following Linux distributions are supported:
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider becoming a Zammad customer.
+Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
+Installationsmethode verwenden oder Zammad-Kunde werden.

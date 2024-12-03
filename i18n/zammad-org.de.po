@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-03 10:51+0100\n"
+"POT-Creation-Date: 2024-12-03 10:08+0000\n"
 "PO-Revision-Date: 2024-11-12 10:25+0000\n"
 "Last-Translator: Martin Gruner <mg@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -204,6 +204,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -1059,62 +1071,60 @@ msgstr "`## Abschnitt 2`"
 #: src/en/contribute/style-guide.md:74
 #, no-wrap
 msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
-msgstr ""
+msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:76
 #, no-wrap
 msgid "This section title uses a badge of type \"warning\". There are other badges available:  \n"
-msgstr ""
+msgstr "Diese Überschrift verwendet ein Badge des Typs \"Warnung\". Es sind auch andere Badges verfügbar:  \n"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:78
-#, fuzzy
-#| msgid "# https://vitepress.dev/reference/default-theme-home-page"
 msgid "https://vitepress.dev/reference/default-theme-badge#usage"
-msgstr "# https://vitepress.dev/reference/default-theme-home-page"
+msgstr "https://vitepress.dev/reference/default-theme-badge#usage"
 
 #. type: Title ###
 #: src/en/contribute/style-guide.md:79
 #, no-wrap
 msgid "Custom boxes"
-msgstr ""
+msgstr "Anpassbare Boxen"
 
 #. type: Fenced div block (info)
 #: src/en/contribute/style-guide.md:81
 #, no-wrap
 msgid "This is an info box.\n"
-msgstr ""
+msgstr "Dies ist eine Infobox.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/contribute/style-guide.md:85
 #, no-wrap
 msgid "This is a tip.\n"
-msgstr ""
+msgstr "Dies ist ein Tipp.\n"
 
 #. type: Fenced div block (warning)
 #: src/en/contribute/style-guide.md:89
 #, no-wrap
 msgid "This is a warning.\n"
-msgstr ""
+msgstr "Dies ist eine Warnung.\n"
 
 #. type: Fenced div block (danger)
 #: src/en/contribute/style-guide.md:93
 #, no-wrap
 msgid "This is a dangerous warning.\n"
-msgstr ""
+msgstr "Dies ist eine gefährliche Warnung.\n"
 
 #. type: Fenced div block (details)
 #: src/en/contribute/style-guide.md:97
 #, no-wrap
 msgid "This is a details block.\n"
-msgstr ""
+msgstr "Dies ist ein Detailblock.\n"
 
 #. type: Title ###
 #: src/en/contribute/style-guide.md:101
 #, no-wrap
 msgid "Definition lists"
-msgstr ""
+msgstr "Definitionslisten"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:105
@@ -1123,6 +1133,8 @@ msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
 ": This is the definition of the first term.\n"
 msgstr ""
+"Erster Begriff <Badge type=\"info\" text=\"tag1\" />\n"
+": Dies ist die Definition des ersten Begriffs.\n"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:108
@@ -1132,13 +1144,15 @@ msgid ""
 ": This is one definition of the second term.\n"
 ": This is another definition of the second term.\n"
 msgstr ""
+"Zweiter Begriff <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
+": Dies ist eine Definition des zweiten Begriffs.\n"
+": Dies ist eine weitere Definition des zweiten Begriffs.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "Contribution"
+#, no-wrap
 msgid "Introduction"
-msgstr "Beitrag"
+msgstr "Einführung"
 
 #. type: Title #
 #: src/en/documentation/introduction.md:6
@@ -1177,29 +1191,23 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/introduction.md:19
-#, fuzzy
-#| msgid "[User Documentation](/en/use/general/index)"
 msgid "[User Documentation](/en/documentation/use/general)"
-msgstr "[Benutzer-Dokumentation](/de/use/general/index)"
+msgstr "[Benutzer-Dokumentation](/de/documentation/use/general)"
 
 #. type: Plain text
 #: src/en/documentation/introduction.md:20
-#, fuzzy
-#| msgid "[Admin Documentation](/en/administrate/index)"
 msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
-msgstr "[Admin-Dokumentation](/de/administrate/index)"
+msgstr "[Admin Dokumentation](/de/documentation/manage-zammad/general)"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/manage-zammad/index.md:1
-#, fuzzy, no-wrap
-#| msgid "Use Zammad"
+#, no-wrap
 msgid "Manage Zammad"
-msgstr "Zammad verwenden"
+msgstr "Zammad verwalten"
 
 #. type: Title #
 #: src/en/documentation/manage-zammad/manage-channels.md:5
-#, fuzzy, no-wrap
-#| msgid "Manage channels"
+#, no-wrap
 msgid "Manage Channels"
 msgstr "Kanäle verwalten"
 
@@ -1311,7 +1319,7 @@ msgstr "TODO: - Links / TOC to different sections of user documentation"
 #: src/en/documentation/use/general.md:27
 #, no-wrap
 msgid "Screenshots"
-msgstr ""
+msgstr "Screenshots"
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:30
@@ -1642,19 +1650,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:14
-#, fuzzy
-#| msgid ""
-#| "If you have questions, feel free to [get in touch with us](https://zammad."
-#| "com/en/company/contact) and to have a look at the community forum were "
-#| "you can find useful information and help."
 msgid ""
 "If you have questions, feel free to [get in touch with us](https://zammad."
 "com/en/company/contact) and to have a look at the [community forum](https://"
 "community.zammad.org/) were you can find useful information and help."
 msgstr ""
 "Wenn Sie Fragen haben, können Sie sich gerne [an uns](https://zammad.com/en/"
-"company/contact) wenden und einen Blick in das Community-Forum werfen, wo "
-"Sie nützliche Informationen und Hilfe finden können."
+"company/contact) wenden und einen Blick in das [Community-Forum](https://"
+"community.zammad.org/) werfen, wo Sie nützliche Informationen und Hilfe "
+"finden können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:15
@@ -1701,19 +1705,14 @@ msgstr "Selbst gehostete Installation"
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:33
-#, fuzzy
-#| msgid ""
-#| "You can even host Zammad on your own. Read our [installation instructions]"
-#| "(/en/get-zammad/installation) and see which deployment method fits your "
-#| "needs."
 msgid ""
 "You can even host Zammad on your own. Read our [installation instructions](/"
 "en/get-started/installation/prerequisites) and see which deployment method "
 "fits your needs."
 msgstr ""
 "Sie können Zammad auch selbst hosten. Lesen Sie unsere "
-"[Installationsanleitung](/de/get-zammad/installation) und sehen Sie, welche "
-"Installations-Variante Ihren Bedürfnissen entspricht."
+"[Installationsanleitung](/de/get-started/installation/prerequisites) und "
+"sehen Sie, welche Variante Ihren Bedürfnissen entspricht."
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:37
@@ -1736,7 +1735,7 @@ msgstr "Loslegen"
 #: src/en/get-started/installation/docker.md:1
 #, no-wrap
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/installation/index.md:1
@@ -1748,20 +1747,19 @@ msgstr "Installation"
 #: src/en/get-started/installation/kubernetes.md:1
 #, no-wrap
 msgid "Kubernetes"
-msgstr ""
+msgstr "Kubernetes"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/installation/package.md:1
 #, no-wrap
 msgid "Package"
-msgstr ""
+msgstr "Paket"
 
 #. type: Title #
 #: src/en/get-started/installation/package.md:6
-#, fuzzy, no-wrap
-#| msgid "Installation"
+#, no-wrap
 msgid "Package Installation"
-msgstr "Installation"
+msgstr "Paket Installation"
 
 #. type: Title #
 #: src/en/get-started/installation/package.md:8
@@ -1769,19 +1767,21 @@ msgstr "Installation"
 #: src/en/get-started/installation/prerequisites.md:6
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "Voraussetzungen"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:10
 #, no-wrap
 msgid "Operating Systems"
-msgstr ""
+msgstr "Betriebssysteme"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:13
 msgid ""
 "For package installation, the following Linux distributions are supported:"
 msgstr ""
+"Für die Paketinstallation werden die folgenden Linux-Distributionen "
+"unterstützt:"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:20
@@ -1794,6 +1794,12 @@ msgid ""
 "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
 "| Ubuntu        | 20.04, 22.04, 24.04 |\n"
 msgstr ""
+"| Distribution  | Version             |\n"
+"| ------------- | :-----------------  |\n"
+"| CentOS/RHEL   | 8 & 9               |\n"
+"| Debian        | 11 & 12             |\n"
+"| OpenSUSE/SLES | Leap 15.x / 15      |\n"
+"| Ubuntu        | 20.04, 22.04, 24.04 |\n"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:22
@@ -1801,18 +1807,20 @@ msgid ""
 "If your distribution is not supported, feel free to use a different "
 "installation method or consider becoming a Zammad customer."
 msgstr ""
+"Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere "
+"Installationsmethode verwenden oder Zammad-Kunde werden."
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:9
 #, no-wrap
 msgid "<!--@include: @/en/modules/zammad-services-hint.md-->\n"
-msgstr ""
+msgstr "<!--@include: @/de/modules/zammad-services-hint.md-->\n"
 
 #. type: Title ##
 #: src/en/get-started/installation/prerequisites.md:10
 #, no-wrap
 msgid "Server Hardware"
-msgstr ""
+msgstr "Server Hardware"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:16
@@ -1822,44 +1830,52 @@ msgid ""
 "use cases. In any case, more and better hardware ensures that Zammad runs "
 "smoothly and the maintenance breaks for updates should be shorter as well."
 msgstr ""
+"Die Hardwareanforderungen variieren je nach Szenario. Das macht es schwer, "
+"spezifische CPU- und Speicherangaben zu nennen, die für alle Anwendungsfälle "
+"geeignet sind. Auf jeden Fall sorgt mehr und bessere Hardware dafür, dass "
+"Zammad reibungslos läuft und auch die Wartungspausen für Aktualisierungen "
+"kürzer sind."
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:18
 msgid ""
 "As an absolute minimum for basic usage with a PostgreSQL server, we consider:"
 msgstr ""
+"Als absolutes Minimum für die grundlegende Verwendung mit einem PostgreSQL-"
+"Server betrachten wir:"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:21
 msgid "2 CPU cores"
-msgstr ""
+msgstr "2 CPU-Kerne"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:21
 msgid "6 GB RAM (+4 GB for Elasticsearch)"
-msgstr ""
+msgstr "6 GB RAM (+4 GB für Elasticsearch)"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:23
 msgid ""
 "For an example scenario with up to 40 agents, a good starting point could be:"
 msgstr ""
+"Für ein Beispielszenario mit bis zu 40 Agenten könnte ein gute Basis sein:"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:26
 msgid "6 CPU cores"
-msgstr ""
+msgstr "6 CPU-Kerne"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:26
 msgid "6 GB RAM (+6 GB for Elasticsearch)"
-msgstr ""
+msgstr "6 GB RAM (+6 GB für Elasticsearch)"
 
 #. type: Title ##
 #: src/en/get-started/installation/prerequisites.md:27
 #, no-wrap
 msgid "Server Software"
-msgstr ""
+msgstr "Server Software"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:31
@@ -1867,27 +1883,29 @@ msgid ""
 "Depending on the installation type, there are some prerequisites. They are "
 "included in the installation instructions:"
 msgstr ""
+"Je nach Installationsart gibt es einige Voraussetzungen. Diese sind in den "
+"jeweiligen Installationsanweisungen enthalten:"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:35
 msgid "[Docker](docker)"
-msgstr ""
+msgstr "[Docker](docker)"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:35
 msgid "[Kubernetes](kubernetes)"
-msgstr ""
+msgstr "[Kubernetes](kubernetes)"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:35
 msgid "[Package](package)"
-msgstr ""
+msgstr "[Packet](package)"
 
 #. type: Title ##
 #: src/en/get-started/installation/prerequisites.md:37
 #, no-wrap
 msgid "Client Requirements"
-msgstr ""
+msgstr "Anforderungen an Clients"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:41
@@ -1895,26 +1913,28 @@ msgid ""
 "Because Zammad is a web application, only a up-to-date browser is needed. "
 "The following browsers are supported:"
 msgstr ""
+"Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser benötigt. "
+"Die folgenden Browser werden unterstützt:"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:46
 msgid "Firefox 78+"
-msgstr ""
+msgstr "Firefox 78+"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:46
 msgid "Chrome (and chromium based ) 83+"
-msgstr ""
+msgstr "Chrome (und chrome-basiert) 83+"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:46
 msgid "Opera 69+"
-msgstr ""
+msgstr "Opera 69+"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:46
 msgid "Safari 14.1+"
-msgstr ""
+msgstr "Safari 14.1+"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:49
@@ -1923,25 +1943,27 @@ msgid ""
 "firewalls may filter these connections. This may lead to decreased browser "
 "performance."
 msgstr ""
+"Die Kommunikation zwischen Client und Server erfolgt über Web-Sockets. "
+"Einige Firewalls können diese Verbindungen filtern. Dies kann zu einer "
+"reduzierten Browserleistung führen."
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/maintenance/index.md:1
 #, no-wrap
 msgid "Maintenance"
-msgstr ""
+msgstr "Wartung"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/maintenance/update.md:1
-#, fuzzy, no-wrap
-#| msgid "Updated at"
+#, no-wrap
 msgid "Update"
-msgstr "Aktualisiert am"
+msgstr "Aktualisierung"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/maintenance/webserver.md:1
 #, no-wrap
 msgid "Configure Webserver"
-msgstr ""
+msgstr "Webserver konfigurieren"
 
 #. type: Title ##
 #: src/en/imprint.md:8
@@ -2069,10 +2091,9 @@ msgstr "Über Uns"
 
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: src/en/index.md:1
-#, fuzzy, no-wrap
-#| msgid "/en/get-zammad/get-started"
+#, no-wrap
 msgid "/en/get-started/get-zammad"
-msgstr "/de/get-zammad/get-started"
+msgstr "/de/get-started/get-zammad"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/index.md:1
@@ -2084,7 +2105,7 @@ msgstr "Loslegen"
 #: src/en/index.md:1
 #, no-wrap
 msgid "/en/documentation/introduction"
-msgstr ""
+msgstr "/de/documentation/introduction"
 
 #. type: Yaml Front Matter Hash Value: hero actions link
 #: src/en/index.md:1
@@ -2114,7 +2135,7 @@ msgstr "Für Nutzer und Administratoren"
 #: src/en/modules/index.md:1
 #, no-wrap
 msgid "Modules"
-msgstr ""
+msgstr "Module"
 
 #. type: Fenced div block (tip)
 #: src/en/modules/zammad-services-hint.md:1
@@ -2125,18 +2146,22 @@ msgid ""
 "The easiest and often most cost-effective way to operate Zammad is our\n"
 "[cloud service](https://zammad.com/en/pricing). Give it a try with a free trial instance!\n"
 msgstr ""
+"Haben Sie genug von komplizierten Aufgaben rund um die Einrichtung, Konfiguration, Sicherung und Aktualisierung? Lassen Sie uns diese Dinge für Sie erledigen! 🚀\n"
+"\n"
+"Der einfachste und oft auch kostengünstigste Weg, Zammad zu betreiben, ist unser\n"
+"[Cloud-Dienst](https://zammad.com/de/pricing). Testen Sie es in einer kostenlosen Testinstanz!\n"
 
 #. type: Title #
 #: src/en/reference/api-reference.md:5
 #, no-wrap
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/config-env-variables.md:1
 #, no-wrap
 msgid "Environment Variables"
-msgstr ""
+msgstr "Umgebungsvariablen"
 
 #. type: Title #
 #: src/en/reference/glossary.md:5
@@ -2156,42 +2181,29 @@ msgstr "Referenz"
 msgid "Rails commands"
 msgstr "Rails-Befehle"
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
-
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/backup-restore.md:1
 #, no-wrap
 msgid "Backup & Restore"
-msgstr ""
+msgstr "Sichern & Wiederherstellen"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/index.md:1
 #, no-wrap
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutorials"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/migrate/index.md:1
-#, fuzzy, no-wrap
-#| msgid "Administrate Zammad"
+#, no-wrap
 msgid "Migrate to Zammad"
-msgstr "Zammad administrieren"
+msgstr "Zu Zammad migrieren"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/migrate/migrate.md:1
 #, no-wrap
 msgid "From OTRS"
-msgstr ""
+msgstr "Von OTRS"
 
 #, no-wrap
 #~ msgid "Install Zammad"
@@ -2479,3 +2491,28 @@ msgstr ""
 #, no-wrap
 #~ msgid "Admin documentation"
 #~ msgstr "Administrations-Dokumentation"
+
+#, no-wrap
+#~ msgid "/en/get-zammad/get-started"
+#~ msgstr "/de/get-zammad/get-started"
+
+#, no-wrap
+#~ msgid "Manage channels"
+#~ msgstr "Kanäle verwalten"
+
+#, no-wrap
+#~ msgid "Administrate Zammad"
+#~ msgstr "Zammad administrieren"
+
+#~ msgid "[User Documentation](/en/use/general/index)"
+#~ msgstr "[Benutzer-Dokumentation](/de/use/general/index)"
+
+#~ msgid "[Admin Documentation](/en/administrate/index)"
+#~ msgstr "[Admin-Dokumentation](/de/administrate/index)"
+
+#, no-wrap
+#~ msgid "Contribution"
+#~ msgstr "Beitrag"
+
+#~ msgid "# https://vitepress.dev/reference/default-theme-home-page"
+#~ msgstr "# https://vitepress.dev/reference/default-theme-home-page"

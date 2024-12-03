@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Introduction
+title: Einführung
 ---
 
 # Willkommen bei der Zammad-Dokumentation
@@ -18,6 +18,6 @@ Ressourcen und entdecken Sie, wie Zammad Ihnen helfen kann, einen
 außergewöhnlichen Kundenservice zu bieten und Ihre Supportabläufe zu
 optimieren.
 
-[User Documentation](/en/documentation/use/general)
+[Benutzer-Dokumentation](/de/documentation/use/general)
 
-[Admin Documentation](/en/documentation/manage-zammad/general)
+[Admin Dokumentation](/de/documentation/manage-zammad/general)

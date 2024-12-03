@@ -1,4 +1,4 @@
 ---
 order: 3
-title: 'Configure Webserver'
+title: 'Webserver konfigurieren'
 ---

@@ -1,4 +1,4 @@
 ---
 order: 5
-title: 'Environment Variables'
+title: Umgebungsvariablen
 ---

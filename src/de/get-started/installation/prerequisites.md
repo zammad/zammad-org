@@ -1,51 +1,51 @@
 ---
 order: 1
-title: Prerequisites
+title: Voraussetzungen
 ---
 
-# Prerequisites
+# Voraussetzungen
 
-<!--@include: @/en/modules/zammad-services-hint.md-->
+<!--@include: @/de/modules/zammad-services-hint.md-->
 
 ## Server Hardware
 
-The hardware requirements vary depending on the scenario. This makes it hard
-to come up with specific CPU and memory numbers which are fitting for all
-use cases. In any case, more and better hardware ensures that Zammad runs
-smoothly and the maintenance breaks for updates should be shorter as well.
+Die Hardwareanforderungen variieren je nach Szenario. Das macht es schwer,
+spezifische CPU- und Speicherangaben zu nennen, die für alle Anwendungsfälle
+geeignet sind. Auf jeden Fall sorgt mehr und bessere Hardware dafür, dass
+Zammad reibungslos läuft und auch die Wartungspausen für Aktualisierungen
+kürzer sind.
 
-As an absolute minimum for basic usage with a PostgreSQL server, we
-consider:
+Als absolutes Minimum für die grundlegende Verwendung mit einem
+PostgreSQL-Server betrachten wir:
 
-- 2 CPU cores
-- 6 GB RAM (+4 GB for Elasticsearch)
+- 2 CPU-Kerne
+- 6 GB RAM (+4 GB für Elasticsearch)
 
-For an example scenario with up to 40 agents, a good starting point could
-be:
+Für ein Beispielszenario mit bis zu 40 Agenten könnte ein gute Basis sein:
 
-- 6 CPU cores
-- 6 GB RAM (+6 GB for Elasticsearch)
+- 6 CPU-Kerne
+- 6 GB RAM (+6 GB für Elasticsearch)
 
 ## Server Software
 
-Depending on the installation type, there are some prerequisites. They are
-included in the installation instructions:
+Je nach Installationsart gibt es einige Voraussetzungen. Diese sind in den
+jeweiligen Installationsanweisungen enthalten:
 
 - [Docker](docker)
 - [Kubernetes](kubernetes)
-- [Package](package)
+- [Packet](package)
 
 
-## Client Requirements
+## Anforderungen an Clients
 
-Because Zammad is a web application, only a up-to-date browser is
-needed. The following browsers are supported:
+Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser
+benötigt. Die folgenden Browser werden unterstützt:
 
 - Firefox 78+
-- Chrome (and chromium based ) 83+
+- Chrome (und chrome-basiert) 83+
 - Opera 69+
 - Safari 14.1+
 
-The communication between client and server is based on web sockets. Some
-firewalls may filter these connections. This may lead to decreased browser
-performance.
+Die Kommunikation zwischen Client und Server erfolgt über
+Web-Sockets. Einige Firewalls können diese Verbindungen filtern. Dies kann
+zu einer reduzierten Browserleistung führen.

@@ -7,10 +7,10 @@ order: 1
 Sie benutzen Zammad noch nicht? Es wird Ihnen gefallen! In den folgenden
 Abschnitten finden Sie verschiedene Optionen.
 
-If you have questions, feel free to [get in touch with
-us](https://zammad.com/en/company/contact) and to have a look at the
-[community forum](https://community.zammad.org/) were you can find useful
-information and help.
+Wenn Sie Fragen haben, können Sie sich gerne [an
+uns](https://zammad.com/en/company/contact) wenden und einen Blick in das
+[Community-Forum](https://community.zammad.org/) werfen, wo Sie nützliche
+Informationen und Hilfe finden können.
 
 ## Zammad testen
 
@@ -28,9 +28,9 @@ Hosing Services von Zammad finden können.
 
 ## Selbst gehostete Installation
 
-You can even host Zammad on your own. Read our [installation
-instructions](/en/get-started/installation/prerequisites) and see which
-deployment method fits your needs.
+Sie können Zammad auch selbst hosten. Lesen Sie unsere
+[Installationsanleitung](/de/get-started/installation/prerequisites) und
+sehen Sie, welche Variante Ihren Bedürfnissen entspricht.
 
 Wenn Sie Zammad selbst hosten und Support wünschen, nimmt unser
 Vertriebsteam gerne Kontakt mit Ihnen auf. Hinterlassen Sie einfach eine

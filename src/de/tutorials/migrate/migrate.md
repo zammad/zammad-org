@@ -1,4 +1,4 @@
 ---
 order: 1
-title: 'From OTRS'
+title: 'Von OTRS'
 ---

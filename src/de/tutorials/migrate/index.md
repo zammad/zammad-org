@@ -1,4 +1,4 @@
 ---
 order: 1
-title: 'Migrate to Zammad'
+title: 'Zu Zammad migrieren'
 ---

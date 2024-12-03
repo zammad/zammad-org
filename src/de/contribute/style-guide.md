@@ -73,38 +73,38 @@ Beispiel:
 
 `## Abschnitt 2`
 
-### Section with badge <Badge type="warning" text="custom text" />
+### Abschnitt mit Badge <Badge type="warning" text="angepasster Text" />
 
-This section title uses a badge of type "warning". There are other badges available:  
+Diese Überschrift verwendet ein Badge des Typs "Warnung". Es sind auch andere Badges verfügbar:  
 https://vitepress.dev/reference/default-theme-badge#usage
 
-### Custom boxes
+### Anpassbare Boxen
 
 ::: info
-This is an info box.
+Dies ist eine Infobox.
 :::
 
 ::: tip
-This is a tip.
+Dies ist ein Tipp.
 :::
 
 ::: warning
-This is a warning.
+Dies ist eine Warnung.
 :::
 
 ::: danger
-This is a dangerous warning.
+Dies ist eine gefährliche Warnung.
 :::
 
 ::: details
-This is a details block.
+Dies ist ein Detailblock.
 :::
 
-### Definition lists
+### Definitionslisten
 
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+Erster Begriff <Badge type="info" text="tag1" />
+: Dies ist die Definition des ersten Begriffs.
 
-Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: This is one definition of the second term.
-: This is another definition of the second term.
+Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: Dies ist eine Definition des zweiten Begriffs.
+: Dies ist eine weitere Definition des zweiten Begriffs.
