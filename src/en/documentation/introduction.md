@@ -17,4 +17,4 @@ deliver exceptional customer service and streamline your support operations.
 
 [User Documentation](/en/documentation/use/general)
 
-[Admin Documentation](/en/documentation/administrate-zammad/setup)
+[Admin Documentation](/en/documentation/manage-zammad/general)

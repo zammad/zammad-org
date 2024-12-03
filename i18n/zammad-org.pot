@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-02 12:43+0100\n"
+"POT-Creation-Date: 2024-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1072,24 +1072,6 @@ msgid ""
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/administrate-zammad/index.md:1
-#, no-wrap
-msgid "Administrate Zammad"
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/administrate-zammad/manage-channels.md:5
-#, markdown-text, no-wrap
-msgid "Manage Channels"
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/administrate-zammad/setup.md:5
-#, markdown-text, no-wrap
-msgid "Setup a new system"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/introduction.md:1
 #, no-wrap
 msgid "Introduction"
@@ -1130,7 +1112,25 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/introduction.md:20
 #, markdown-text
-msgid "[Admin Documentation](/en/documentation/administrate-zammad/setup)"
+msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/manage-zammad/index.md:1
+#, no-wrap
+msgid "Manage Zammad"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/manage-zammad/manage-channels.md:5
+#, markdown-text, no-wrap
+msgid "Manage Channels"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/manage-zammad/setup.md:5
+#, markdown-text, no-wrap
+msgid "Setup a new system"
 msgstr ""
 
 #. type: Title #
@@ -1218,9 +1218,37 @@ msgid "Content of User Documentation Section"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:25
+#: src/en/documentation/use/general.md:26
 #, markdown-text
 msgid "TODO: - Links / TOC to different sections of user documentation"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/general.md:27
+#, markdown-text, no-wrap
+msgid "Screenshots"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:30
+#, markdown-text
+msgid ""
+"![Test Screenshot (Full "
+"Page)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:32
+#, markdown-text
+msgid ""
+"![Test Screenshot (Page "
+"Element)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:33
+#, markdown-text
+msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"
 msgstr ""
 
 #. type: Title #
@@ -1474,22 +1502,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:13
+#: src/en/get-started/get-zammad.md:14
 #, markdown-text
 msgid ""
 "If you have questions, feel free to [get in touch with "
 "us](https://zammad.com/en/company/contact) and to have a look at the "
-"community forum were you can find useful information and help."
+"[community forum](https://community.zammad.org/) were you can find useful "
+"information and help."
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:14
+#: src/en/get-started/get-zammad.md:15
 #, markdown-text, no-wrap
 msgid "Testing Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:20
+#: src/en/get-started/get-zammad.md:21
 #, markdown-text
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
@@ -1499,13 +1528,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:21
+#: src/en/get-started/get-zammad.md:22
 #, markdown-text, no-wrap
 msgid "Use Zammad's Hosted Service"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:26
+#: src/en/get-started/get-zammad.md:27
 #, markdown-text
 msgid ""
 "To use Zammad in production, head over to our sister site "
@@ -1514,22 +1543,22 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:27
+#: src/en/get-started/get-zammad.md:28
 #, markdown-text, no-wrap
 msgid "Self Hosted Installation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:32
+#: src/en/get-started/get-zammad.md:33
 #, markdown-text
 msgid ""
 "You can even host Zammad on your own. Read our [installation "
-"instructions](/en/get-started/installation) and see which deployment method "
-"fits your needs."
+"instructions](/en/get-started/installation/prerequisites) and see which "
+"deployment method fits your needs."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:36
+#: src/en/get-started/get-zammad.md:37
 #, markdown-text
 msgid ""
 "If you are a self-hosted user and want to have support at hand, our sales "
@@ -1543,32 +1572,233 @@ msgstr ""
 msgid "Get Started"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/installation/docker.md:1
+#, no-wrap
+msgid "Docker"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/installation/index.md:1
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/installation/kubernetes.md:1
+#, no-wrap
+msgid "Kubernetes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/installation/package.md:1
+#, no-wrap
+msgid "Package"
+msgstr ""
+
 #. type: Title #
-#: src/en/get-started/installation.md:5
+#: src/en/get-started/installation/package.md:6
 #, markdown-text, no-wrap
-msgid "Install Zammad"
+msgid "Package Installation"
+msgstr ""
+
+#. type: Title #
+#: src/en/get-started/installation/package.md:8
+#: src/en/get-started/installation/prerequisites.md:1
+#: src/en/get-started/installation/prerequisites.md:6
+#, markdown-text, no-wrap
+msgid "Prerequisites"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:10
+#, markdown-text, no-wrap
+msgid "Operating Systems"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation.md:8
+#: src/en/get-started/installation/package.md:13
+#, markdown-text
+msgid "For package installation, the following Linux distributions are supported:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:20
+#, markdown-text, no-wrap
+msgid ""
+"| Distribution  | Version             |\n"
+"| ------------- | :-----------------  |\n"
+"| CentOS/RHEL   | 8 & 9               |\n"
+"| Debian        | 11 & 12             |\n"
+"| OpenSUSE/SLES | Leap 15.x / 15      |\n"
+"| Ubuntu        | 20.04, 22.04, 24.04 |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:22
 #, markdown-text
 msgid ""
-"![Test Screenshot (Full "
-"Page)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)"
+"If your distribution is not supported, feel free to use a different "
+"installation method or consider becoming a Zammad customer."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation.md:10
+#: src/en/get-started/installation/prerequisites.md:9
+#, markdown-text, no-wrap
+msgid "<!--@include: @/en/modules/zammad-services-hint.md-->\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/prerequisites.md:10
+#, markdown-text, no-wrap
+msgid "Server Hardware"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:16
 #, markdown-text
 msgid ""
-"![Test Screenshot (Page "
-"Element)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)"
+"The hardware requirements vary depending on the scenario. This makes it hard "
+"to come up with specific CPU and memory numbers which are fitting for all "
+"use cases. In any case, more and better hardware ensures that Zammad runs "
+"smoothly and the maintenance breaks for updates should be shorter as well."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation.md:11
+#: src/en/get-started/installation/prerequisites.md:18
 #, markdown-text
-msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"
+msgid ""
+"As an absolute minimum for basic usage with a PostgreSQL server, we "
+"consider:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:21
+#, markdown-text
+msgid "2 CPU cores"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:21
+#, markdown-text
+msgid "6 GB RAM (+4 GB for Elasticsearch)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:23
+#, markdown-text
+msgid ""
+"For an example scenario with up to 40 agents, a good starting point could "
+"be:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:26
+#, markdown-text
+msgid "6 CPU cores"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:26
+#, markdown-text
+msgid "6 GB RAM (+6 GB for Elasticsearch)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/prerequisites.md:27
+#, markdown-text, no-wrap
+msgid "Server Software"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:31
+#, markdown-text
+msgid ""
+"Depending on the installation type, there are some prerequisites. They are "
+"included in the installation instructions:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:35
+#, markdown-text
+msgid "[Docker](docker)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:35
+#, markdown-text
+msgid "[Kubernetes](kubernetes)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:35
+#, markdown-text
+msgid "[Package](package)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/prerequisites.md:37
+#, markdown-text, no-wrap
+msgid "Client Requirements"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:41
+#, markdown-text
+msgid ""
+"Because Zammad is a web application, only a up-to-date browser is "
+"needed. The following browsers are supported:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:46
+#, markdown-text
+msgid "Firefox 78+"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:46
+#, markdown-text
+msgid "Chrome (and chromium based ) 83+"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:46
+#, markdown-text
+msgid "Opera 69+"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:46
+#, markdown-text
+msgid "Safari 14.1+"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:49
+#, markdown-text
+msgid ""
+"The communication between client and server is based on web sockets. Some "
+"firewalls may filter these connections. This may lead to decreased browser "
+"performance."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/maintenance/index.md:1
+#, no-wrap
+msgid "Maintenance"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/maintenance/update.md:1
+#, no-wrap
+msgid "Update"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/get-started/maintenance/webserver.md:1
+#, no-wrap
+msgid "Configure Webserver"
 msgstr ""
 
 #. type: Title ##
@@ -1737,10 +1967,34 @@ msgstr ""
 msgid "For Users and Administrators"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/modules/index.md:1
+#, no-wrap
+msgid "Modules"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/modules/zammad-services-hint.md:1
+#, no-wrap
+msgid ""
+"Are you tired of complex setup, configuration, backup and update tasks? Let "
+"us handle this stuff for you! 🚀\n"
+"\n"
+"The easiest and often most cost-effective way to operate Zammad is our\n"
+"[cloud service](https://zammad.com/en/pricing). Give it a try with a free "
+"trial instance!\n"
+msgstr ""
+
 #. type: Title #
 #: src/en/reference/api-reference.md:5
 #, markdown-text, no-wrap
-msgid "API reference"
+msgid "API"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/reference/config-env-variables.md:1
+#, no-wrap
+msgid "Environment Variables"
 msgstr ""
 
 #. type: Title #
@@ -1771,4 +2025,28 @@ msgstr ""
 #: src/en/TEMPLATE.md:1
 #, no-wrap
 msgid "Name of site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/tutorials/backup-restore.md:1
+#, no-wrap
+msgid "Backup & Restore"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/tutorials/index.md:1
+#, no-wrap
+msgid "Tutorials"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/tutorials/migrate/index.md:1
+#, no-wrap
+msgid "Migrate to Zammad"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/tutorials/migrate/migrate.md:1
+#, no-wrap
+msgid "From OTRS"
 msgstr ""

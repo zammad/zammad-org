@@ -1,0 +1,51 @@
+---
+order: 1
+title: Prerequisites
+---
+
+# Prerequisites
+
+<!--@include: @/en/modules/zammad-services-hint.md-->
+
+## Server Hardware
+
+The hardware requirements vary depending on the scenario. This makes it hard
+to come up with specific CPU and memory numbers which are fitting for all
+use cases. In any case, more and better hardware ensures that Zammad runs
+smoothly and the maintenance breaks for updates should be shorter as well.
+
+As an absolute minimum for basic usage with a PostgreSQL server, we
+consider:
+
+- 2 CPU cores
+- 6 GB RAM (+4 GB for Elasticsearch)
+
+For an example scenario with up to 40 agents, a good starting point could
+be:
+
+- 6 CPU cores
+- 6 GB RAM (+6 GB for Elasticsearch)
+
+## Server Software
+
+Depending on the installation type, there are some prerequisites. They are
+included in the installation instructions:
+
+- [Docker](docker)
+- [Kubernetes](kubernetes)
+- [Package](package)
+
+
+## Client Requirements
+
+Because Zammad is a web application, only a up-to-date browser is
+needed. The following browsers are supported:
+
+- Firefox 78+
+- Chrome (and chromium based ) 83+
+- Opera 69+
+- Safari 14.1+
+
+The communication between client and server is based on web sockets. Some
+firewalls may filter these connections. This may lead to decreased browser
+performance.

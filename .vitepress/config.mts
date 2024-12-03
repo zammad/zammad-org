@@ -19,7 +19,7 @@ export default defineConfig(
     outDir: 'dist',
     cacheDir: 'cache',
     srcDir: 'src',
-    srcExclude: ['README.md'],
+    srcExclude: ['README.md', 'modules/*'],
     description: 'Documentation for Zammad Users and Administrators',
     head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
     markdown: {
