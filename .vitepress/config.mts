@@ -72,7 +72,7 @@ export default defineConfig(
         documentRootPath: `/src/${locale}`,
         resolvePath: `/${locale}/`,
         collapsed: true,
-        collapseDepth: 2,
+        collapseDepth: 1,
         useTitleFromFileHeading: true,
         useTitleFromFrontmatter: true,
         useFolderTitleFromIndexFile: true,
@@ -81,6 +81,7 @@ export default defineConfig(
           'gdpr.md',
           'imprint.md',
           'TEMPLATE.md',
+          'modules/'
         ],
       }),
     )
