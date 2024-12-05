@@ -39,6 +39,9 @@ themeConfig:
       text: 'Следеће издање'
   outline:
     label: 'На овој страни'
+    level:
+      - 2
+      - 4
   socialLinks:
     - 
       icon: github

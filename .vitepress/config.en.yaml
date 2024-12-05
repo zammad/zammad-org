@@ -19,6 +19,9 @@ themeConfig:
           noIcon: true
   outline:
     label: 'On this page'
+    level:
+      - 2
+      - 4
   footer:
     items:
       - text: Imprint

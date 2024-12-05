@@ -28,25 +28,25 @@ The easiest way to get Zammad running is via a graphical docker UI. We
 recommend [Portainer](https://www.portainer.io/). For installation instructions,
 check out [Portainer's documentation](https://docs.portainer.io/).
 
-Step 1: Add Stack
-: In the Portainer GUI (e.g. ``https://yourdomain.tld:9443``), choose your
-  target environment, select **Stacks** and choose ``Add stack`` as you can see in the screenshot below.
+### Step 1: Add Stack
+In the Portainer GUI (e.g. ``https://yourdomain.tld:9443``), choose your
+target environment, select **Stacks** and choose ``Add stack`` as you can see in the screenshot below.
 
-Step 2: Build From Repository
-: Switch to **Repository** build method and provide the information below:
-  - **Name**: enter a desired name of the stack
-  - **Repository URL**: ``https://github.com/zammad/zammad-docker-compose``
-  - **Repository reference**: ``refs/heads/master``
-  - **Compose path**: ``docker-compose.yml`` (default)
+### Step 2: Build From Repository
+Switch to **Repository** build method and provide the information below:
+- **Name**: enter a desired name of the stack
+- **Repository URL**: ``https://github.com/zammad/zammad-docker-compose``
+- **Repository reference**: ``refs/heads/master``
+- **Compose path**: ``docker-compose.yml`` (default)
 
-  Optional: if you need to provide environment variables, you can enter them in
-  the **Environment variable** section or even upload a .env file. See the
-  example env template. See the
-  [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
+Optional: if you need to provide environment variables, you can enter them in
+the **Environment variable** section or even upload a .env file. See the
+example env template. See the
+[example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
 
-Step 3: Deploy the Stack
-: After the stack is ready, you can access Zammad via the configured docker host
-  and port, e.g. ``http://localhost:8080/``.
+### Step 3: Deploy the Stack
+After the stack is ready, you can access Zammad via the configured docker host
+and port, e.g. ``http://localhost:8080/``.
 
 ![Screenshot in the Stacks section and highlighted "Add stack".](/screenshots/installation/portainer-stacks.png "Text here")
 
@@ -54,39 +54,41 @@ Step 3: Deploy the Stack
 
 ## Deployment with Docker-Compose
 
-Step 1: Clone the GitHub Repo
+### Step 1: Clone the GitHub Repo
 
-: ``` bash
-  git clone https://github.com/zammad/zammad-docker-compose.git
-  ```
-  Make sure to run ``git pull`` frequently to fetch updates. Alternatively,
-  you can download the files from the
-  [releases page](https://github.com/zammad/zammad-docker-compose/releases).
+``` bash
+git clone https://github.com/zammad/zammad-docker-compose.git
+```
+Make sure to run ``git pull`` frequently to fetch updates. Alternatively,
+you can download the files from the
+[releases page](https://github.com/zammad/zammad-docker-compose/releases).
 
-Step 2: Adjust Environment as Needed
+### Step 2: Adjust Environment as Needed
 
-: In some cases our default environment is not what a docker-compose user is
-  looking for. See
-  [Docker Environment Variables](/en/reference/docker-env-vars.md) for
-  details on which settings can be configured.
+In some cases our default environment is not what a docker-compose user is
+looking for. See
+[Docker Environment Variables](/en/reference/docker-env-vars.md) for
+details on which settings can be configured.
 
-  ::: tip
-  If you want to use a ``.env`` file, you can use the provided ``.env.dist``
-  file and copy it to ``.env``. That way it will be picked up by Docker-Compose
-  automatically and not overwritten during updates.
+::: tip
+If you want to use a ``.env`` file, you can use the provided ``.env.dist``
+file and copy it to ``.env``. That way it will be picked up by Docker-Compose
+automatically and not overwritten during updates.
 
-  Zammad runs on port ``8080`` by default. If you want to use another port,
-  you can set it via the variable ``NGINX_EXPOSE_PORT``.
+Zammad runs on port ``8080`` by default. If you want to use another port,
+you can set it via the variable ``NGINX_EXPOSE_PORT``.
+:::
 
-Step 3: Start the Stack
-  : ``` bash
-    cd zammad-docker-compose
-    ```
-    ``` bash
-    docker compose up -d
-    ```
-  After the stack is ready, you can access Zammad via the configured docker host
-  and port, e.g. ``http://localhost:8080/``.
+### Step 3: Start the Stack
+``` bash
+cd zammad-docker-compose
+```
+``` bash
+docker compose up -d
+```
+
+After the stack is ready, you can access Zammad via the configured docker host
+and port, e.g. ``http://localhost:8080/``.
 
 ## Customizing the Zammad Stack
 

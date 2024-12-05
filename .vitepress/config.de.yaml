@@ -39,6 +39,9 @@ themeConfig:
       text: 'Nächste Version'
   outline:
     label: 'Auf dieser Seite'
+    level:
+      - 2
+      - 4
   socialLinks:
     - 
       icon: github

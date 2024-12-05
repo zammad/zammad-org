@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-04 16:35+0100\n"
+"POT-Creation-Date: 2024-12-05 12:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,6 +124,18 @@ msgstr ""
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "On this page"
+msgstr ""
+
+#. type: Array Element: themeConfig outline level
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "2"
+msgstr ""
+
+#. type: Array Element: themeConfig outline level
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "4"
 msgstr ""
 
 #. type: Hash Value: themeConfig socialLinks link
@@ -1605,7 +1617,6 @@ msgstr ""
 
 #. type: Title #
 #: src/en/get-started/installation/docker.md:16
-#: src/en/get-started/installation/package.md:10
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
 #, markdown-text, no-wrap
@@ -1650,49 +1661,61 @@ msgid ""
 "documentation](https://docs.portainer.io/)."
 msgstr ""
 
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:31
+#, markdown-text, no-wrap
+msgid "Step 1: Add Stack"
+msgstr ""
+
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:34
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"Step 1: Add Stack\n"
-": In the Portainer GUI (e.g. ``https://yourdomain.tld:9443``), choose your\n"
-"  target environment, select **Stacks** and choose ``Add stack`` as you can "
-"see in the screenshot below.\n"
+"In the Portainer GUI (e.g. ``https://yourdomain.tld:9443``), choose your "
+"target environment, select **Stacks** and choose ``Add stack`` as you can "
+"see in the screenshot below."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:35
+#, markdown-text, no-wrap
+msgid "Step 2: Build From Repository"
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:41
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"Step 2: Build From Repository\n"
-": Switch to **Repository** build method and provide the information below:\n"
-"  - **Name**: enter a desired name of the stack\n"
-"  - **Repository URL**: "
-"``https://github.com/zammad/zammad-docker-compose``\n"
-"  - **Repository reference**: ``refs/heads/master``\n"
-"  - **Compose path**: ``docker-compose.yml`` (default)\n"
+"Switch to **Repository** build method and provide the information below: - "
+"**Name**: enter a desired name of the stack - **Repository URL**: "
+"``https://github.com/zammad/zammad-docker-compose`` - **Repository "
+"reference**: ``refs/heads/master`` - **Compose path**: "
+"``docker-compose.yml`` (default)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:46
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"  Optional: if you need to provide environment variables, you can enter them "
-"in\n"
-"  the **Environment variable** section or even upload a .env file. See the\n"
-"  example env template. See the\n"
-"  [example env "
-"template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).\n"
+"Optional: if you need to provide environment variables, you can enter them "
+"in the **Environment variable** section or even upload a .env file. See the "
+"example env template. See the [example env "
+"template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:47
+#, markdown-text, no-wrap
+msgid "Step 3: Deploy the Stack"
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:50
-#, markdown-text, no-wrap
+#: src/en/get-started/installation/docker.md:92
+#, markdown-text
 msgid ""
-"Step 3: Deploy the Stack\n"
-": After the stack is ready, you can access Zammad via the configured docker "
-"host\n"
-"  and port, e.g. ``http://localhost:8080/``.\n"
+"After the stack is ready, you can access Zammad via the configured docker "
+"host and port, e.g. ``http://localhost:8080/``."
 msgstr ""
 
 #. type: Plain text
@@ -1717,83 +1740,112 @@ msgstr ""
 msgid "Deployment with Docker-Compose"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:58
-#, markdown-text
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:57
+#, markdown-text, no-wrap
 msgid "Step 1: Clone the GitHub Repo"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:61
-#, markdown-text, no-wrap
-msgid ""
-": ``` bash\n"
-"  git clone https://github.com/zammad/zammad-docker-compose.git\n"
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:59
+#, no-wrap
+msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
 msgstr ""
 
-#. type: Fenced code block
-#: src/en/get-started/installation/docker.md:61
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:65
+#, markdown-text
+msgid ""
+"Make sure to run ``git pull`` frequently to fetch updates. Alternatively, "
+"you can download the files from the [releases "
+"page](https://github.com/zammad/zammad-docker-compose/releases)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:66
+#, markdown-text, no-wrap
+msgid "Step 2: Adjust Environment as Needed"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:72
+#, markdown-text
+msgid ""
+"In some cases our default environment is not what a docker-compose user is "
+"looking for. See [Docker Environment "
+"Variables](/en/reference/docker-env-vars.md) for details on which settings "
+"can be configured."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/get-started/installation/docker.md:73
 #, no-wrap
 msgid ""
-"  Make sure to run ``git pull`` frequently to fetch "
-"updates. Alternatively,\n"
-"  you can download the files from the\n"
-"  [releases "
-"page](https://github.com/zammad/zammad-docker-compose/releases).\n"
-"\n"
-"Step 2: Adjust Environment as Needed\n"
-"\n"
-": In some cases our default environment is not what a docker-compose user "
-"is\n"
-"  looking for. See\n"
-"  [Docker Environment Variables](/en/reference/docker-env-vars.md) for\n"
-"  details on which settings can be configured.\n"
-"\n"
-"  ::: tip\n"
-"  If you want to use a ``.env`` file, you can use the provided "
-"``.env.dist``\n"
-"  file and copy it to ``.env``. That way it will be picked up by "
+"If you want to use a ``.env`` file, you can use the provided ``.env.dist``\n"
+"file and copy it to ``.env``. That way it will be picked up by "
 "Docker-Compose\n"
-"  automatically and not overwritten during updates.\n"
+"automatically and not overwritten during updates.\n"
 "\n"
-"  Zammad runs on port ``8080`` by default. If you want to use another "
-"port,\n"
-"  you can set it via the variable ``NGINX_EXPOSE_PORT``.\n"
-"\n"
-"Step 3: Start the Stack\n"
-"  : ``` bash\n"
-"    cd zammad-docker-compose\n"
-"    ```\n"
-"    ``` bash\n"
-"    docker compose up -d\n"
-"    ```\n"
-"  After the stack is ready, you can access Zammad via the configured docker "
-"host\n"
-"  and port, e.g. ``http://localhost:8080/``.\n"
-"\n"
-"## Customizing the Zammad Stack\n"
-"\n"
-"Sometimes it's necessary to apply local changes to the Zammad docker "
-"stack,\n"
-"e.g. to include additional services. If you plan to do so, we recommend "
-"that\n"
+"Zammad runs on port ``8080`` by default. If you want to use another port,\n"
+"you can set it via the variable ``NGINX_EXPOSE_PORT``.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:82
+#, markdown-text, no-wrap
+msgid "Step 3: Start the Stack"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:83
+#: src/en/get-started/update.md:139
+#, no-wrap
+msgid "cd zammad-docker-compose\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:86
+#, no-wrap
+msgid "docker compose up -d\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:93
+#, markdown-text, no-wrap
+msgid "Customizing the Zammad Stack"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:101
+#, markdown-text
+msgid ""
+"Sometimes it's necessary to apply local changes to the Zammad docker stack, "
+"e.g. to include additional services. If you plan to do so, we recommend that "
 "you do not change the ``docker-compose.yml`` file, but instead create a "
-"local\n"
-"``docker-compose.override.yml`` that includes all your modifications.\n"
-"Docker-Compose will [automatically load this file and merge its changes "
-"into\n"
-"your "
-"stack](https://docs.docker.com/compose/multiple-compose-files/merge/).\n"
-"\n"
-"## Run Commands in the Stack\n"
-"\n"
+"local ``docker-compose.override.yml`` that includes all your modifications.  "
+"Docker-Compose will [automatically load this file and merge its changes into "
+"your stack](https://docs.docker.com/compose/multiple-compose-files/merge/)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:102
+#, markdown-text, no-wrap
+msgid "Run Commands in the Stack"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:107
+#, markdown-text
+msgid ""
 "The docker entrypoint script sets up environment variables required by "
-"Zammad\n"
-"to function properly. That is why calling ``rails`` or ``rake`` on the "
-"console\n"
-"should be done via one of the following methods:\n"
-"\n"
-"``` bash\n"
+"Zammad to function properly. That is why calling ``rails`` or ``rake`` on "
+"the console should be done via one of the following methods:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:108
+#, no-wrap
+msgid ""
 "# Directly execute a specific command:\n"
 "$ docker compose run --rm zammad-railsserver rails r '...your rails command "
 "here...'\n"
@@ -1807,7 +1859,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/installation/docker.md:117
+#: src/en/get-started/installation/docker.md:119
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the rails server, you can, for "
@@ -1817,10 +1869,9 @@ msgid ""
 "output in your terminal.\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/installation/index.md:1
-#: src/en/get-started/installation/package.md:134
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installation"
 msgstr ""
 
@@ -1874,20 +1925,20 @@ msgstr ""
 msgid "<!--@include: @/en/modules/zammad-services-hint.md-->\n"
 msgstr ""
 
-#. type: Title ###
-#: src/en/get-started/installation/package.md:12
+#. type: Title ##
+#: src/en/get-started/installation/package.md:10
 #, markdown-text, no-wrap
-msgid "Operating Systems"
+msgid "Supported Operating Systems"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:15
+#: src/en/get-started/installation/package.md:13
 #, markdown-text
 msgid "For package installation, the following Linux distributions are supported:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:22
+#: src/en/get-started/installation/package.md:20
 #, markdown-text, no-wrap
 msgid ""
 "| Distribution  | Version             |\n"
@@ -1899,7 +1950,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:26
+#: src/en/get-started/installation/package.md:23
 #, markdown-text
 msgid ""
 "If your distribution is not supported, feel free to use a different "
@@ -1907,371 +1958,64 @@ msgid ""
 "service](https://zammad.com/en/pricing)."
 msgstr ""
 
-#. type: Title ###
+#. type: Plain text
+#: src/en/get-started/installation/package.md:26
+#, markdown-text
+msgid ""
+"To follow the installation steps below, you might need to install additional "
+"tools like curl, gnupg and others."
+msgstr ""
+
+#. type: Fenced div block (details Required Tools|tabs key:distros)
 #: src/en/get-started/installation/package.md:27
-#, markdown-text, no-wrap
-msgid "Software"
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:29
-#, markdown-text, no-wrap
-msgid "Dependencies"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:33
-#, markdown-text
-msgid ""
-"The following dependencies need to be installed on your system and will "
-"automatically be installed with the Zammad package installation."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:36
-#, markdown-text
-msgid "imlib2"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:36
-#, markdown-text
-msgid "Node.js"
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:37
-#, markdown-text, no-wrap
-msgid "Database Server"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:41
-#, markdown-text
-msgid ""
-"Zammad will store all content in a Database. You can choose between the "
-"following database servers:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:44
-#, markdown-text
-msgid "PostgreSQL 10+"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:44
-#, markdown-text
-msgid ""
-"MySQL 5.7+ / MariaDB 10.3+ <Badge type=\"danger\" text=\"deprecated with "
-"Zammad 7\"/>"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:47
-#, markdown-text
-msgid ""
-"If you are using MySQL/MariaDB, you should [migrate to "
-"PostgreSQL](/en/tutorials/migrate-database)."
-msgstr ""
-
-#. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:48
-#, no-wrap
-msgid ""
-"If you use database connection pooling software like PgBouncer, make sure "
-"to\n"
-"use a pooling mode that is fully compatible with PostgreSQL. Typically this "
-"is\n"
-"called “session connection pooling”. Transaction-based connection pooling "
-"is\n"
-"not supported and may lead to errors during database migrations.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:56
-#, markdown-text
-msgid "For **MySQL/MariaDB**, the following configuration is required:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:60
-#, markdown-text
-msgid "Use ``UTF-8`` encoding - others won't work"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:60
-#, markdown-text
-msgid ""
-"- Set ``max_allowed_packet`` to a value larger than the default of 4 MB (64 "
-"MB+ recommended)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:62
-#, markdown-text
-msgid "For MySQL, the following additional configuration is required:"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/installation/package.md:63
-#, no-wrap
-msgid ""
-"innodb_file_format = Barracuda\n"
-"innodb_file_per_table = on\n"
-"innodb_default_row_format = dynamic\n"
-"innodb_large_prefix = 1\n"
-"innodb_file_format_max = Barracuda\n"
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:71
-#, markdown-text, no-wrap
-msgid "Reverse Proxy"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:76
-#, markdown-text
-msgid ""
-"In a typical web environment today, you use a reverse proxy to deliver the "
-"static content of your application. Only the “expensive” app required HTTP "
-"requests are forwarded to the application server."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:78
-#, markdown-text
-msgid "The following reverse proxies are supported:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:81
-#, markdown-text
-msgid "Nginx 1.3+"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:81
-#, markdown-text
-msgid "Apache 2.2+"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:83
-#, markdown-text
-msgid "You can find a config guide [here](/en/tutorials/webserver-config)."
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:84
-#, markdown-text, no-wrap
-msgid "Redis"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:87
-#, markdown-text
-msgid "Redis is required for realtime communication via web socket."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:91
-#, markdown-text
-msgid ""
-"The installation and configuration is out of our scope of this "
-"documentation.  Please follow the [official "
-"guides](https://redis.io/docs/latest/operate/rs/installing-upgrading/)."
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:92
-#, markdown-text, no-wrap
-msgid ""
-"Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
-"type=\"danger\" text=\"highly recommended\"/>"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:95
-#, markdown-text
-msgid "Zammad uses Elasticsearch to:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:99
-#, markdown-text
-msgid "make the search faster"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:99
-#, markdown-text
-msgid "support advanced features like reports"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:99
-#, markdown-text
-msgid "search for content of email attachments"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:102
-#, markdown-text
-msgid ""
-"This becomes increasingly important with higher numbers of tickets in your "
-"system."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:104
-#, markdown-text
-msgid "The following versions are supported:"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:115
-#, markdown-text, no-wrap
-msgid ""
-"| Zammad        | Elasticsearch  |\n"
-"| ------------- | :------------- |\n"
-"| 5.2+          | >= 7.8, <9     |\n"
-"| 5.0-5.1       | >= 7.8, <8     |\n"
-"| 4.0-4.1       | >=6.5, <=7.12  |\n"
-"| 3.4-3.6       | >=5.5, <=7.9   |\n"
-"| 3.3           | >=2.4, <=7.6   |\n"
-"| 3.2           | >=2.4, <=7.5   |\n"
-"| 3.1           | >=2.4, <=7.4   |\n"
-"| 2.0-3.0       | >=2.4, <=5.6   |\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:119
-#, markdown-text
-msgid ""
-"The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or "
-"older to index the contents of email attachments. Starting with "
-"Elasticsearch 8, it is included by default."
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:120
-#, markdown-text, no-wrap
-msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:124
-#, markdown-text
-msgid ""
-"Instead of storing Zammads cache files within your filesystem, they can be "
-"cached in memory with Memcached."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:127
-#, markdown-text
-msgid ""
-"The installation and configuration is out of our scope of this "
-"documentation.  Please follow the [official "
-"guides](https://docs.memcached.org/)."
-msgstr ""
-
-#. type: Title ####
-#: src/en/get-started/installation/package.md:128
-#, markdown-text, no-wrap
-msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:133
-#, markdown-text
-msgid ""
-"If you want to use the PGP integration for sending and receiving signed and "
-"encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
-"the official [GnuPG website](https://www.gnupg.org/index.html)."
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/package.md:136
-#, markdown-text, no-wrap
-msgid "Install Required Tools"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:140
-#, markdown-text
-msgid ""
-"To download and handle the installation package, there are some tools "
-"needed.  Make sure that they are installed. If in doubt, just try to install "
-"them."
-msgstr ""
-
-#. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:141
 #, no-wrap
 msgid ""
 "\n"
-"=== Ubuntu\n"
+"   === Ubuntu\n"
 "\n"
-"``` bash\n"
-"sudo apt install curl apt-transport-https gnupg\n"
-"```\n"
-"=== Debian\n"
+"   ```bash\n"
+"   sudo apt install curl apt-transport-https gnupg\n"
+"   ```\n"
+"   === Debian\n"
 "\n"
-"``` bash\n"
-"sudo apt install curl apt-transport-https gnupg\n"
-"```\n"
-"=== OpenSUSE/SLES\n"
-"``` bash\n"
-"# Only SLES - Not required for OpenSUSE\n"
-"sudo SUSEConnect --product "
+"   ```bash\n"
+"   sudo apt install curl apt-transport-https gnupg\n"
+"   ```\n"
+"\n"
+"   === OpenSUSE/SLES\n"
+"\n"
+"   Only SLES - Not required for OpenSUSE:\n"
+"   ```bash\n"
+"   sudo SUSEConnect --product "
 "sle-module-desktop-applications/$(. /etc/os-release; echo "
 "$VERSION_ID)/$(uname -i)\n"
-"sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo "
+"   ```\n"
+"   ```bash\n"
+"   sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo "
 "$VERSION_ID)/$(uname -i)\n"
-"```\n"
-"===CentOS/RHEL\n"
-"``` bash\n"
-"sudo yum install wget epel-release\n"
-"```\n"
+"   ```\n"
+"\n"
+"   === CentOS/RHEL\n"
+"\n"
+"   ```bash\n"
+"   sudo yum install wget epel-release\n"
+"   ```\n"
 msgstr ""
 
-#. type: Title ###
-#: src/en/get-started/installation/package.md:165
+#. type: Title ##
+#: src/en/get-started/installation/package.md:59
 #, markdown-text, no-wrap
-msgid "Install Elasticsearch"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:169
-#, markdown-text
-msgid ""
-"The recommended method is to use [Elastic's official "
-"guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) "
-"for installing Elasticsearch."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:174
-#, markdown-text
-msgid ""
-"Alternatively, you can follow [our example "
-"setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we "
-"included in another page to keep the install instructions as lean as "
-"possible."
+msgid "Quick Start"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:175
+#: src/en/get-started/installation/package.md:61
 #, markdown-text, no-wrap
 msgid "Ensure Correct Locale"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:177
+#: src/en/get-started/installation/package.md:63
 #, no-wrap
 msgid ""
 "\n"
@@ -2286,7 +2030,11 @@ msgid ""
 "\n"
 "``` bash\n"
 "sudo apt install locales\n"
+"```\n"
+"```bash\n"
 "sudo locale-gen en_US.UTF-8\n"
+"```\n"
+"```bash\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
 "=== Debian\n"
@@ -2300,7 +2048,11 @@ msgid ""
 "\n"
 "``` bash\n"
 "sudo apt install locales\n"
+"```\n"
+"```bash\n"
 "sudo locale-gen en_US.UTF-8\n"
+"```\n"
+"```bash\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
 "=== OpenSUSE/SLES\n"
@@ -2330,13 +2082,38 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:233
+#: src/en/get-started/installation/package.md:127
 #, markdown-text, no-wrap
-msgid "Add Repository"
+msgid "Install Elasticsearch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:131
+#, markdown-text
+msgid ""
+"The recommended method is to use [Elastic's official "
+"guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) "
+"for installing Elasticsearch."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:136
+#, markdown-text
+msgid ""
+"Alternatively, you can follow [our example "
+"setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we "
+"included in another page to keep the install instructions as lean as "
+"possible."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:137
+#, markdown-text, no-wrap
+msgid "Add Zammad Repository"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:235
+#: src/en/get-started/installation/package.md:139
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make "
@@ -2345,7 +2122,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:240
+#: src/en/get-started/installation/package.md:144
 #, no-wrap
 msgid ""
 "\n"
@@ -2434,13 +2211,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:318
+#: src/en/get-started/installation/package.md:222
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:224
 #, no-wrap
 msgid ""
 "\n"
@@ -2481,71 +2258,298 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:261
 #, markdown-text, no-wrap
 msgid "Manage Services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:361
+#: src/en/get-started/installation/package.md:265
 #, markdown-text
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
-"parent ``zammad``."
+"parent ``zammad``:"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/installation/package.md:362
+#: src/en/get-started/installation/package.md:265
 #, no-wrap
-msgid ""
-"# Zammad service to start all services at once\n"
-"systemctl (status|start|stop|restart) zammad\n"
+msgid "systemctl (status|start|stop|restart) zammad\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:269
+#, markdown-text
+msgid "Only internal puma server (relevant for displaying the web app):"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:269
 #, no-wrap
-msgid ""
-"# Zammads internal puma server (relevant for displaying the web app)\n"
-"systemctl (status|start|stop|restart) zammad-web\n"
-"\n"
-"# Zammads background worker - relevant for all delayed- and background "
-"jobs\n"
-"systemctl (status|start|stop|restart) zammad-worker\n"
-"\n"
-"# Zammads websocket server for session related information\n"
-"systemctl (status|start|stop|restart) zammad-websocket\n"
+msgid "systemctl (status|start|stop|restart) zammad-web\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:273
+#, markdown-text
+msgid "Only background worker - relevant for all delayed- and background jobs:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/package.md:273
+#, no-wrap
+msgid "systemctl (status|start|stop|restart) zammad-worker\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:277
+#, markdown-text
+msgid "Only websocket server for session related information:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/package.md:277
+#, no-wrap
+msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:281
 #: src/en/tutorials/install-elasticsearch.md:156
 #, markdown-text, no-wrap
 msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:287
 #, markdown-text
-msgid "Adjust your firewall"
+msgid ""
+"Connect Zammad with Elasticsearch ([basic "
+"guide](/en/tutorials/connect-config-elasticsearch))"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:287
 #, markdown-text
-msgid "Adjust your SELinux rules"
+msgid "Adjust your firewall ([basic guide](/en/tutorials/firewall))"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:287
 #, markdown-text
-msgid "Connect Zammad with Elasticsearch"
+msgid "Adjust your SELinux rules ([basic guide](/en/tutorials/selinux))"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:287
 #, markdown-text
-msgid "Configure the Webserver"
+msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/package.md:289
+#, markdown-text, no-wrap
+msgid "Dependencies"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:295
+#, markdown-text
+msgid ""
+"Assuming a vanilla system, the following dependencies will automatically be "
+"installed during the Zammad package installation. Additionally, you can find "
+"some information about Elasticsearch below, which is not automatically "
+"installed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:301
+#, markdown-text
+msgid "imlib2"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:301
+#, markdown-text
+msgid "Node.js"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:301
+#, markdown-text
+msgid "PostgreSQL"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:301
+#, markdown-text
+msgid "Nginx"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:301
+#, markdown-text
+msgid "Redis"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:302
+#, markdown-text, no-wrap
+msgid "Database Server"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:308
+#, markdown-text
+msgid ""
+"Zammad will store all content in a Database. We supported PostgreSQL in "
+"version 10 or higher. The installation script tries to detect a "
+"MySQL/MariaDB or PostgreSQL server during the installation. In case none is "
+"found, PostgreSQL is automatically installed."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/get-started/installation/package.md:309
+#, no-wrap
+msgid ""
+"If you use database connection pooling software like PgBouncer, make sure "
+"to\n"
+"use a pooling mode that is fully compatible with PostgreSQL. Typically this "
+"is\n"
+"called “session connection pooling”. Transaction-based connection pooling "
+"is\n"
+"not supported and may lead to errors during database migrations.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:319
+#, markdown-text
+msgid ""
+"If you are still using MySQL/MariaDB, you should [migrate to "
+"PostgreSQL](/en/tutorials/migrate-database). MySQL/MariaDB are **no longer** "
+"supported starting with Zammad 7."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:320
+#, markdown-text, no-wrap
+msgid "Reverse Proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:323
+#, markdown-text
+msgid "The following reverse proxies are supported:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:326
+#, markdown-text
+msgid "Nginx 1.3+"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:326
+#, markdown-text
+msgid "Apache 2.2+"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:330
+#, markdown-text
+msgid ""
+"The installation script tries to detect a Apache or Nginx during the "
+"installation. In case none is found, Nginx is automatically installed.  You "
+"can find a basic configuration guide [here](/en/tutorials/webserver-config)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:332
+#, markdown-text, no-wrap
+msgid ""
+"Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
+"type=\"danger\" text=\"highly recommended\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:339
+#, markdown-text
+msgid ""
+"Elasticsearch is not automatically installed. Because it is crucial for a "
+"proper Zammad setup, it is included in the installation instructions "
+"above. If you want to connect Zammad to an already existing Elasticsearch "
+"instance, make sure to use a supported version and have a look at our "
+"[config example](/en/tutorials/connect-config-elasticsearch)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:341
+#, markdown-text
+msgid "Supported Elasticsearch versions are ``7.8`` - ``8.x``."
+msgstr ""
+
+#. type: Fenced div block (details Elasticsearch version history)
+#: src/en/get-started/installation/package.md:342
+#, no-wrap
+msgid ""
+"\n"
+"| Zammad        | Elasticsearch  |\n"
+"| ------------- | :------------- |\n"
+"| 5.2+          | >= 7.8, <9     |\n"
+"| 5.0-5.1       | >= 7.8, <8     |\n"
+"| 4.0-4.1       | >= 6.5, <=7.12 |\n"
+"| 3.4-3.6       | >= 5.5, <=7.9  |\n"
+"| 3.3           | >= 2.4, <=7.6  |\n"
+"| 3.2           | >= 2.4, <=7.5  |\n"
+"| 3.1           | >= 2.4, <=7.4  |\n"
+"| 2.0-3.0       | >= 2.4, <=5.6  |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:359
+#, markdown-text
+msgid ""
+"The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or "
+"older to index the contents of email attachments. Starting with "
+"Elasticsearch 8, it is included by default."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:360
+#, markdown-text, no-wrap
+msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:364
+#, markdown-text
+msgid ""
+"Instead of storing Zammads cache files within your filesystem, they can be "
+"cached in memory with Memcached."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:367
+#, markdown-text
+msgid ""
+"The installation and configuration is out of our scope of this "
+"documentation.  Please follow the [official "
+"guides](https://docs.memcached.org/)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:368
+#, markdown-text, no-wrap
+msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:372
+#, markdown-text
+msgid ""
+"If you want to use the PGP integration for sending and receiving signed and "
+"encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
+"the official [GnuPG website](https://www.gnupg.org/index.html)."
 msgstr ""
 
 #. type: Title ##
@@ -2720,233 +2724,222 @@ msgstr ""
 msgid "Update Package Installation"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/update.md:24
+#. type: Title ###
+#: src/en/get-started/update.md:21
 #, markdown-text, no-wrap
+msgid "Stop Zammad"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/update.md:22
+#, no-wrap
+msgid "systemctl stop zammad\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:26
+#, markdown-text, no-wrap
+msgid "Backup Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:29
+#, markdown-text
 msgid ""
-"Stop Zammad:\n"
-": ```bash\n"
-"  systemctl stop zammad\n"
+"Create a backup. You can use the [backup "
+"script](/en/tutorials/backup-restore) which is shipped with the Zammad "
+"package."
 msgstr ""
 
-#. type: Fenced code block
-#: src/en/get-started/update.md:24
+#. type: Title ###
+#: src/en/get-started/update.md:30
+#, markdown-text, no-wrap
+msgid "Update Zammad"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/get-started/update.md:32
+#, no-wrap
+msgid ""
+"If you update your complete system and there are updates for Zammad **and** "
+"your\n"
+"database server, this could lead to errors because your database may not "
+"be\n"
+"online again when Zammad is updated.\n"
+"\n"
+"In such a case, you might want to exclude Zammad from updating temporarily "
+"as\n"
+"you can see in the commands below.\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/get-started/update.md:41
 #, no-wrap
 msgid ""
 "\n"
-"Backup Zammad\n"
-": Create a backup. You can use the\n"
-"  [backup script](/en/tutorials/backup-restore) which is shipped with the "
-"Zammad\n"
-"  package.\n"
+"=== Ubuntu/Debian\n"
+"Update package lists:\n"
+"```bash\n"
+"apt update\n"
+"```\n"
+"Disable updates for Zammad:\n"
+"```bash\n"
+"apt-mark hold zammad\n"
+"```\n"
+"Update all packages except Zammad:\n"
+"```bash\n"
+"apt upgrade\n"
+"```\n"
+"Re-enable updates for Zammad:\n"
+"```bash\n"
+"apt-mark unhold zammad\n"
+"```\n"
+"Update Zammad:\n"
+"```bash\n"
+"apt upgrade\n"
+"```\n"
 "\n"
-"Update Zammad\n"
-": :::info\n"
-"  If you update your complete system and there are updates for Zammad "
-"**and**\n"
-"  your database server, this could lead to errors because your database "
-"may\n"
-"  not be online again when Zammad is updated.\n"
+"=== OpenSUSE/SLES\n"
 "\n"
-"  In such a case, you might want to exclude Zammad from updating "
-"temporarily\n"
-"  as you can see in the commands below.\n"
-"  :::\n"
+"Update package lists:\n"
+"```bash\n"
+"zypper refresh\n"
+"```\n"
+"Disable updates for Zammad:\n"
+"```bash\n"
+"zypper addlock zammad\n"
+"```\n"
+"Update all packages except Zammad:\n"
+"```bash\n"
+"zypper update\n"
+"```\n"
+"Re-enable updates for Zammad:\n"
+"```bash\n"
+"zypper removelock zammad\n"
+"```\n"
+"Update Zammad:\n"
+"```bash\n"
+"zypper update\n"
+"```\n"
+"=== CentOS/RHEL\n"
 "\n"
-"  :::tabs\n"
-"\n"
-"  === Ubuntu/Debian\n"
-"  Update package lists:\n"
-"  ```bash\n"
-"  apt update\n"
+"Update package lists:\n"
+"```bash\n"
+"yum check-update\n"
+"```\n"
+"Update all packages except Zammad:\n"
+"```bash\n"
+"yum upgrade --exclude zammad\n"
+"```\n"
+"Update Zammad:\n"
+"```bash\n"
+"yum upgrade\n"
+"```\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/update.md:49 src/en/get-started/update.md:72
+#. type: Title ###
+#: src/en/get-started/update.md:103
 #, markdown-text, no-wrap
-msgid "  Disable updates for Zammad:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:49
-#, no-wrap
-msgid "  apt-mark hold zammad\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:53 src/en/get-started/update.md:76
-#: src/en/get-started/update.md:94
-#, markdown-text, no-wrap
-msgid "  Update all packages except Zammad:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:53 src/en/get-started/update.md:61
-#, no-wrap
-msgid "  apt upgrade\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:57 src/en/get-started/update.md:80
-#, markdown-text, no-wrap
-msgid "  Re-enable updates for Zammad:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:57
-#, no-wrap
-msgid "  apt-mark unhold zammad\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:61 src/en/get-started/update.md:84
-#: src/en/get-started/update.md:98
-#, markdown-text, no-wrap
-msgid "  Update Zammad:\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:66
-#, markdown-text, no-wrap
-msgid "  === OpenSUSE/SLES\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:68 src/en/get-started/update.md:90
-#, markdown-text, no-wrap
-msgid "  Update package lists:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:68
-#, no-wrap
-msgid "  zypper refresh\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:72
-#, no-wrap
-msgid "  zypper addlock zammad\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:76 src/en/get-started/update.md:84
-#, no-wrap
-msgid "  zypper update\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:80
-#, no-wrap
-msgid "  zypper removelock zammad\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:88
-#, markdown-text, no-wrap
-msgid "  === CentOS/RHEL\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:90
-#, no-wrap
-msgid "  yum check-update\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:94
-#, no-wrap
-msgid "  yum upgrade --exclude zammad\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/get-started/update.md:98
-#, no-wrap
-msgid "  yum upgrade\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/update.md:105
-#, markdown-text, no-wrap
-msgid ""
-"Additional Steps:\n"
-": Updating Elasticsearch may be relevant, too. Make sure to have a "
-"supported\n"
-"  version of Elasticsearch installed (see [package "
-"installation](/en/get-started/installation/package#elasticsearch) for "
-"supported versions).\n"
+msgid "Additional Steps"
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:109
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"    If you have to update Elasticsearch, please have a look at\n"
-"    [their "
-"documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)\n"
-"    and follow the instructions.\n"
+"Updating Elasticsearch may be relevant, too. Make sure to have a supported "
+"version of Elasticsearch installed (see [package "
+"installation](/en/get-started/installation/package#elasticsearch)  for "
+"supported versions)."
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:112
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"    In case your are using plugins for Elasticsearch, make sure they are\n"
-"    updated as well (note: starting with Elasticsearch 8, the "
-"ingest-attachment is no longer a plugin, it’s now included in "
-"Elasticsearch).\n"
+"If you have to update Elasticsearch, please have a look at [their "
+"documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) "
+"and follow the instructions."
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:116
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"Start Zammad:\n"
-": ```bash\n"
-"  systemctl start zammad\n"
+"In case your are using plugins for Elasticsearch, make sure they are updated "
+"as well (note: starting with Elasticsearch 8, the ingest-attachment is no "
+"longer a plugin, it’s now included in Elasticsearch)."
 msgstr ""
 
-#. type: Fenced code block
-#: src/en/get-started/update.md:116
-#, no-wrap
-msgid ""
-"\n"
-"## Update Docker Installation\n"
-"\n"
-":::warning\n"
-"Docker-Compose stack updates may require extra steps or introduce breaking\n"
-"changes. Always check the docker compose release notes for updating\n"
-"instructions first.\n"
-":::\n"
-"\n"
-"### Updating Portainer Based Installations\n"
-"\n"
-"In your Zammad stack, click on ``Pull and redeploy``, activate\n"
-"**Re-pull image and redeploy** and click on ``Update``.\n"
-"\n"
-"![Highlighted stack update in "
-"Portainer](/screenshots/installation/portainer-stack-update.png)\n"
-"\n"
-"### Updating Portainer Based Installations\n"
-"\n"
-"```bash\n"
-"cd zammad-docker-compose\n"
+#. type: Title ###
+#: src/en/get-started/update.md:117
+#, markdown-text, no-wrap
+msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/update.md:138
+#: src/en/get-started/update.md:118
+#, no-wrap
+msgid "systemctl start zammad\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/update.md:122
+#, markdown-text, no-wrap
+msgid "Update Docker Installation"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/get-started/update.md:124
+#, no-wrap
+msgid ""
+"Docker-Compose stack updates may require extra steps or introduce breaking\n"
+"changes. Always check the docker compose release notes for updating\n"
+"instructions first.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:130
+#, markdown-text, no-wrap
+msgid "Updating Portainer Based Installations"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:134
+#, markdown-text
+msgid ""
+"In your Zammad stack, click on ``Pull and redeploy``, activate **Re-pull "
+"image and redeploy** and click on ``Update``."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:136
+#, markdown-text
+msgid ""
+"![Highlighted stack update in "
+"Portainer](/screenshots/installation/portainer-stack-update.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:137
+#, markdown-text, no-wrap
+msgid "Updating Docker Compose Based Installations"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/update.md:142
 #, no-wrap
 msgid "git pull\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/update.md:141
+#: src/en/get-started/update.md:145
 #, no-wrap
 msgid "docker-compose pull\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/update.md:144
+#: src/en/get-started/update.md:148
 #, no-wrap
 msgid "docker-compose up -d\n"
 msgstr ""
@@ -3196,128 +3189,151 @@ msgstr ""
 msgid "Connect Elasticsearch with Zammad"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:13
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:10
 #, markdown-text, no-wrap
-msgid ""
-"Set the Elasticsearch URL:\n"
-": ```bash\n"
-"  # Set the Elasticsearch server address; adapt it to your scenario.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:16
-#, markdown-text, no-wrap
-msgid ""
-"  # Elasticsearch 7:\n"
-"  zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:19
-#, markdown-text, no-wrap
-msgid ""
-"  # Elasticsearch 8:\n"
-"  zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
-msgstr ""
-
-#. type: Fenced code block
-#: src/en/tutorials/connect-config-elasticsearch.md:19
-#, no-wrap
-msgid ""
-"\n"
-"Set the Elasticsearch User and Password: <Badge type=\"warning\" text=\"only "
-"ES8\" />\n"
-": ```bash\n"
-"  # Set Elasticsearch user and password\n"
-"  zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
-"  zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:32
-#, markdown-text, no-wrap
-msgid ""
-"Add Certificate to Zammad: <Badge type=\"warning\" text=\"only ES8\" />\n"
-": Show and copy the auto-generated certificate from Elasticsearch and add it "
-"to\n"
-"  Zammad. Make sure to copy/paste the delimiters\n"
-"  (e.g. ``-----BEGIN CERTIFICATE-----``) too.\n"
+msgid "Set the Elasticsearch URL"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:32
-#, no-wrap
-msgid "  sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:37
-#, markdown-text, no-wrap
-msgid ""
-"  Go to the admin panel of Zammad and add your copied certificate under\n"
-"  *Settings > Security > SSL Certificates*.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:41
-#, markdown-text, no-wrap
-msgid ""
-"Build/Rebuild the Searchindex:\n"
-": ```bash\n"
-"  zammad run rake zammad:searchindex:rebuild\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:45
-#, markdown-text, no-wrap
-msgid ""
-"  # Optionally, you can specify a number of CPU cores which are used for\n"
-"  # rebuilding the searchindex, as in the following example with 8 cores:\n"
-"  zammad run rake zammad:searchindex:rebuild[8]\n"
-msgstr ""
-
-#. type: Fenced code block
-#: src/en/tutorials/connect-config-elasticsearch.md:45
+#: src/en/tutorials/connect-config-elasticsearch.md:12
 #, no-wrap
 msgid ""
+"# Set the Elasticsearch server address; adapt it to your scenario.\n"
 "\n"
-"## Optional Settings\n"
+"# Elasticsearch 7:\n"
+"zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
 "\n"
-"We collected some useful settings you may want to apply. For further\n"
-"information please have a look at\n"
-"[Elastic's "
-"documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).\n"
+"# Elasticsearch 8:\n"
+"zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:22
+#, markdown-text, no-wrap
+msgid ""
+"Set the Elasticsearch User and Password <Badge type=\"warning\" text=\"only "
+"ES8\" />"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:24
+#, no-wrap
+msgid ""
+"# Set Elasticsearch user and password\n"
+"zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
+"zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:30
+#, markdown-text, no-wrap
+msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\"only ES8\" />"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:35
+#, markdown-text
+msgid ""
+"Show and copy the auto-generated certificate from Elasticsearch and add it "
+"to Zammad. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN "
+"CERTIFICATE-----``) too."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:36
+#, no-wrap
+msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:42
+#, markdown-text, no-wrap
+msgid ""
+"Go to the admin panel of Zammad and add your copied certificate under\n"
+"*Settings > Security > SSL Certificates*.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:43
+#, markdown-text, no-wrap
+msgid "Build/Rebuild the Searchindex"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:45
+#, no-wrap
+msgid ""
+"zammad run rake zammad:searchindex:rebuild\n"
 "\n"
-"Index Namespacing:\n"
-": Useful when connecting multiple services or Zammad instances to a single\n"
-"  Elasticsearch server (to prevent name collisions during indexing).\n"
-"  ```bash\n"
-"  zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + "
+"# Optionally, you can specify a number of CPU cores which are used for\n"
+"# rebuilding the searchindex, as in the following example with 8 cores:\n"
+"zammad run rake zammad:searchindex:rebuild[8]\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/connect-config-elasticsearch.md:53
+#, markdown-text, no-wrap
+msgid "Optional Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:58
+#, markdown-text
+msgid ""
+"We collected some useful settings you may want to apply. For further "
+"information please have a look at [Elastic's "
+"documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:59
+#, markdown-text, no-wrap
+msgid "Index Namespacing"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:62
+#, markdown-text
+msgid ""
+"Useful when connecting multiple services or Zammad instances to a single "
+"Elasticsearch server (to prevent name collisions during indexing)."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:62
+#, no-wrap
+msgid ""
+"zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + "
 "'_zammad')\"\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:64
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:66
 #, markdown-text, no-wrap
+msgid "File-Attachment Indexing Rules"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:70
+#, markdown-text
 msgid ""
-"File-Attachment Indexing Rules\n"
-": Zammad supports searching in file attachments, which means Elasticsearch\n"
-"  has to index those, too. Limiting such indexing can help preserve system\n"
-"  resources.\n"
+"Zammad supports searching in file attachments, which means Elasticsearch has "
+"to index those, too. Limiting such indexing can help preserve system "
+"resources."
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:64
+#: src/en/tutorials/connect-config-elasticsearch.md:70
 #, no-wrap
 msgid ""
-"  # Files with these extensions will not be indexed\n"
-"  zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
-"  [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', "
-"'.box', '.mbox' ] )\"\n"
+"# Files with these extensions will not be indexed\n"
+"zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
+"[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', "
+"'.mbox' ] )\"\n"
 "\n"
-"  # Files larger than this size (in MB) will not be indexed\n"
-"  zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
+"# Files larger than this size (in MB) will not be indexed\n"
+"zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

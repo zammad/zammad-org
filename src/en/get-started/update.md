@@ -18,106 +18,110 @@ this is the current stable) would be: ``2.4`` → ``3.0`` → ``4.0`` → ``5.0`
 
 ## Update Package Installation
 
-Stop Zammad:
-: ```bash
-  systemctl stop zammad
-  ```
+### Stop Zammad
+```bash
+systemctl stop zammad
+```
 
-Backup Zammad
-: Create a backup. You can use the
-  [backup script](/en/tutorials/backup-restore) which is shipped with the Zammad
-  package.
+### Backup Zammad
+Create a backup. You can use the
+[backup script](/en/tutorials/backup-restore) which is shipped with the Zammad package.
 
-Update Zammad
-: :::info
-  If you update your complete system and there are updates for Zammad **and**
-  your database server, this could lead to errors because your database may
-  not be online again when Zammad is updated.
+### Update Zammad
 
-  In such a case, you might want to exclude Zammad from updating temporarily
-  as you can see in the commands below.
-  :::
+:::info
+If you update your complete system and there are updates for Zammad **and** your
+database server, this could lead to errors because your database may not be
+online again when Zammad is updated.
 
-  :::tabs
+In such a case, you might want to exclude Zammad from updating temporarily as
+you can see in the commands below.
+:::
 
-  === Ubuntu/Debian
-  Update package lists:
-  ```bash
-  apt update
-  ```
-  Disable updates for Zammad:
-  ```bash
-  apt-mark hold zammad
-  ```
-  Update all packages except Zammad:
-  ```bash
-  apt upgrade
-  ```
-  Re-enable updates for Zammad:
-  ```bash
-  apt-mark unhold zammad
-  ```
-  Update Zammad:
-  ```bash
-  apt upgrade
-  ```
+:::tabs
 
-  === OpenSUSE/SLES
+=== Ubuntu/Debian
+Update package lists:
+```bash
+apt update
+```
+Disable updates for Zammad:
+```bash
+apt-mark hold zammad
+```
+Update all packages except Zammad:
+```bash
+apt upgrade
+```
+Re-enable updates for Zammad:
+```bash
+apt-mark unhold zammad
+```
+Update Zammad:
+```bash
+apt upgrade
+```
 
-  Update package lists:
-  ```bash
-  zypper refresh
-  ```
-  Disable updates for Zammad:
-  ```bash
-  zypper addlock zammad
-  ```
-  Update all packages except Zammad:
-  ```bash
-  zypper update
-  ```
-  Re-enable updates for Zammad:
-  ```bash
-  zypper removelock zammad
-  ```
-  Update Zammad:
-  ```bash
-  zypper update
-  ```
-  === CentOS/RHEL
+=== OpenSUSE/SLES
 
-  Update package lists:
-  ```bash
-  yum check-update
-  ```
-  Update all packages except Zammad:
-  ```bash
-  yum upgrade --exclude zammad
-  ```
-  Update Zammad:
-  ```bash
-  yum upgrade
-  ```
+Update package lists:
+```bash
+zypper refresh
+```
+Disable updates for Zammad:
+```bash
+zypper addlock zammad
+```
+Update all packages except Zammad:
+```bash
+zypper update
+```
+Re-enable updates for Zammad:
+```bash
+zypper removelock zammad
+```
+Update Zammad:
+```bash
+zypper update
+```
+=== CentOS/RHEL
 
-Additional Steps:
-: Updating Elasticsearch may be relevant, too. Make sure to have a supported
-  version of Elasticsearch installed (see [package installation](/en/get-started/installation/package#elasticsearch) for supported versions).
+Update package lists:
+```bash
+yum check-update
+```
+Update all packages except Zammad:
+```bash
+yum upgrade --exclude zammad
+```
+Update Zammad:
+```bash
+yum upgrade
+```
+:::
 
-    If you have to update Elasticsearch, please have a look at
-    [their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
-    and follow the instructions.
+### Additional Steps
 
-    In case your are using plugins for Elasticsearch, make sure they are
-    updated as well (note: starting with Elasticsearch 8, the ingest-attachment is no longer a plugin, it’s now included in Elasticsearch).
+Updating Elasticsearch may be relevant, too. Make sure to have a supported
+version of Elasticsearch installed
+(see [package installation](/en/get-started/installation/package#elasticsearch)
+for supported versions).
 
-Start Zammad:
-: ```bash
-  systemctl start zammad
-  ```
+If you have to update Elasticsearch, please have a look at
+[their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) and follow the instructions.
+
+In case your are using plugins for Elasticsearch, make sure they are updated
+as well (note: starting with Elasticsearch 8, the ingest-attachment is no
+longer a plugin, it’s now included in Elasticsearch).
+
+### Start Zammad
+```bash
+systemctl start zammad
+```
 
 ## Update Docker Installation
 
-:::warning
+::: warning
 Docker-Compose stack updates may require extra steps or introduce breaking
 changes. Always check the docker compose release notes for updating
 instructions first.
@@ -130,7 +134,7 @@ In your Zammad stack, click on ``Pull and redeploy``, activate
 
 ![Highlighted stack update in Portainer](/screenshots/installation/portainer-stack-update.png)
 
-### Updating Portainer Based Installations
+### Updating Docker Compose Based Installations
 
 ```bash
 cd zammad-docker-compose

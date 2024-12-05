@@ -7,9 +7,7 @@ order: 2
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Prerequisites
-
-### Operating Systems
+## Supported Operating Systems
 
 For package installation, the following Linux distributions are supported:
 
@@ -21,156 +19,44 @@ For package installation, the following Linux distributions are supported:
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
 If your distribution is not supported, feel free to use a different installation
-method or consider using
-[Zammad's cloud service](https://zammad.com/en/pricing).
+method or consider using [Zammad's cloud service](https://zammad.com/en/pricing).
 
-### Software
+To follow the installation steps below, you might need to install additional
+tools like curl, gnupg and others.
 
-#### Dependencies
+::::details Required Tools
+   :::tabs key:distros
 
-The following dependencies need to be installed on your system and will
-automatically be installed with the Zammad package installation.
+   === Ubuntu
 
-- imlib2
-- Node.js
+   ```bash
+   sudo apt install curl apt-transport-https gnupg
+   ```
+   === Debian
 
-#### Database Server
+   ```bash
+   sudo apt install curl apt-transport-https gnupg
+   ```
 
-Zammad will store all content in a Database. You can choose between the
-following database servers:
+   === OpenSUSE/SLES
 
-- PostgreSQL 10+
-- MySQL 5.7+ / MariaDB 10.3+ <Badge type="danger" text="deprecated with Zammad 7"/>
+   Only SLES - Not required for OpenSUSE:
+   ```bash
+   sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+   ```
+   ```bash
+   sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+   ```
 
-If you are using MySQL/MariaDB, you should
-[migrate to PostgreSQL](/en/tutorials/migrate-database).
+   === CentOS/RHEL
 
-::: warning
-If you use database connection pooling software like PgBouncer, make sure to
-use a pooling mode that is fully compatible with PostgreSQL. Typically this is
-called “session connection pooling”. Transaction-based connection pooling is
-not supported and may lead to errors during database migrations.
-:::
+   ```bash
+   sudo yum install wget epel-release
+   ```
+   :::
+::::
 
-For **MySQL/MariaDB**, the following configuration is required:
-
-- Use ``UTF-8`` encoding - others won't work
-- Set ``max_allowed_packet`` to a value larger than the default of 4 MB
-(64 MB+ recommended).
-
-For MySQL, the following additional configuration is required:
-
-``` bash
-innodb_file_format = Barracuda
-innodb_file_per_table = on
-innodb_default_row_format = dynamic
-innodb_large_prefix = 1
-innodb_file_format_max = Barracuda
-```
-
-#### Reverse Proxy
-
-In a typical web environment today, you use a reverse proxy to deliver the
-static content of your application. Only the “expensive” app required HTTP
-requests are forwarded to the application server.
-
-The following reverse proxies are supported:
-
-- Nginx 1.3+
-- Apache 2.2+
-
-You can find a config guide [here](/en/tutorials/webserver-config).
-
-#### Redis
-
-Redis is required for realtime communication via web socket.
-
-The installation and configuration is out of our scope of this documentation.
-Please follow the
-[official guides](https://redis.io/docs/latest/operate/rs/installing-upgrading/).
-
-#### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
-
-Zammad uses Elasticsearch to:
-
-- make the search faster
-- support advanced features like reports
-- search for content of email attachments
-
-This becomes increasingly important with higher numbers of tickets in your
-system.
-
-The following versions are supported:
-
-| Zammad        | Elasticsearch  |
-| ------------- | :------------- |
-| 5.2+          | >= 7.8, <9     |
-| 5.0-5.1       | >= 7.8, <8     |
-| 4.0-4.1       | >=6.5, <=7.12  |
-| 3.4-3.6       | >=5.5, <=7.9   |
-| 3.3           | >=2.4, <=7.6   |
-| 3.2           | >=2.4, <=7.5   |
-| 3.1           | >=2.4, <=7.4   |
-| 2.0-3.0       | >=2.4, <=5.6   |
-
-The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or
-older to index the contents of email attachments. Starting with Elasticsearch 8,
-it is included by default.
-
-#### Memcached <Badge type="info" text="optional"/>
-
-Instead of storing Zammads cache files within your filesystem, they can be
-cached in memory with Memcached.
-
-The installation and configuration is out of our scope of this documentation.
-Please follow the [official guides](https://docs.memcached.org/).
-
-#### GnuPG <Badge type="info" text="optional"/>
-
-If you want to use the PGP integration for sending and receiving signed and
-encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG website](https://www.gnupg.org/index.html).
-
-## Installation
-
-### Install Required Tools
-
-To download and handle the installation package, there are some tools needed.
-Make sure that they are installed. If in doubt, just try to install them.
-
-:::tabs key:distros
-
-=== Ubuntu
-
-``` bash
-sudo apt install curl apt-transport-https gnupg
-```
-=== Debian
-
-``` bash
-sudo apt install curl apt-transport-https gnupg
-```
-=== OpenSUSE/SLES
-``` bash
-# Only SLES - Not required for OpenSUSE
-sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
-sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
-```
-===CentOS/RHEL
-``` bash
-sudo yum install wget epel-release
-```
-:::
-
-### Install Elasticsearch
-
-The recommended method is to use
-[Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) for installing Elasticsearch.
-
-Alternatively, you can follow
-[our example setup](/en/tutorials/install-elasticsearch.md) of
-Elasticsearch 7, which we included in another page to keep the install
-instructions as lean as possible.
+## Quick Start
 
 ### Ensure Correct Locale
 
@@ -187,7 +73,11 @@ issue as follows:
 
 ``` bash
 sudo apt install locales
+```
+```bash
 sudo locale-gen en_US.UTF-8
+```
+```bash
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
@@ -201,7 +91,11 @@ issue as follows:
 
 ``` bash
 sudo apt install locales
+```
+```bash
 sudo locale-gen en_US.UTF-8
+```
+```bash
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
@@ -230,7 +124,17 @@ sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
 
-### Add Repository
+### Install Elasticsearch
+
+The recommended method is to use
+[Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) for installing Elasticsearch.
+
+Alternatively, you can follow
+[our example setup](/en/tutorials/install-elasticsearch.md) of
+Elasticsearch 7, which we included in another page to keep the install
+instructions as lean as possible.
+
+### Add Zammad Repository
 
 ::: info
 Packager.io may not be accessible from IPv6-only environments, so make sure
@@ -357,26 +261,112 @@ sudo chmod -R 755 /opt/zammad/public/
 ### Manage Services of Zammad
 
 Zammad uses three services. They can be (re)started & stopped with the parent
-``zammad``.
-
+``zammad``:
 ```bash
-# Zammad service to start all services at once
 systemctl (status|start|stop|restart) zammad
 ```
+Only internal puma server (relevant for displaying the web app):
 ```bash
-# Zammads internal puma server (relevant for displaying the web app)
 systemctl (status|start|stop|restart) zammad-web
-
-# Zammads background worker - relevant for all delayed- and background jobs
+```
+Only background worker - relevant for all delayed- and background jobs:
+```bash
 systemctl (status|start|stop|restart) zammad-worker
-
-# Zammads websocket server for session related information
+```
+Only websocket server for session related information:
+```bash
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 
 ### Next Steps
 
-- Adjust your firewall
-- Adjust your SELinux rules
-- Connect Zammad with Elasticsearch
-- Configure the Webserver
+- Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-config-elasticsearch))
+- Adjust your firewall ([basic guide](/en/tutorials/firewall))
+- Adjust your SELinux rules ([basic guide](/en/tutorials/selinux))
+- Configure the Webserver ([basic guide](/en/tutorials/webserver-config))
+
+
+## Dependencies
+
+Assuming a vanilla system, the following dependencies will automatically be
+installed during the Zammad package installation. Additionally, you can find
+some information about Elasticsearch below, which is not automatically
+installed.
+
+- imlib2
+- Node.js
+- PostgreSQL
+- Nginx
+- Redis
+
+### Database Server
+
+Zammad will store all content in a Database. We supported PostgreSQL in version
+10 or higher. The installation script tries to detect a MySQL/MariaDB or
+PostgreSQL server during the installation. In case none is found, PostgreSQL is
+automatically installed.
+
+::: warning
+If you use database connection pooling software like PgBouncer, make sure to
+use a pooling mode that is fully compatible with PostgreSQL. Typically this is
+called “session connection pooling”. Transaction-based connection pooling is
+not supported and may lead to errors during database migrations.
+:::
+
+If you are still using MySQL/MariaDB, you should
+[migrate to PostgreSQL](/en/tutorials/migrate-database). MySQL/MariaDB are
+**no longer** supported starting with Zammad 7.
+
+### Reverse Proxy
+
+The following reverse proxies are supported:
+
+- Nginx 1.3+
+- Apache 2.2+
+
+The installation script tries to detect a Apache or Nginx during the
+installation. In case none is found, Nginx is automatically installed.
+You can find a basic configuration guide [here](/en/tutorials/webserver-config).
+
+
+### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
+
+Elasticsearch is not automatically installed. Because it is crucial for a proper
+Zammad setup, it is included in the installation instructions above. If you want
+to connect Zammad to an already existing Elasticsearch instance, make sure to
+use a supported version and have a look at our
+[config example](/en/tutorials/connect-config-elasticsearch).
+
+Supported Elasticsearch versions are ``7.8`` - ``8.x``.
+
+:::details Elasticsearch version history
+
+| Zammad        | Elasticsearch  |
+| ------------- | :------------- |
+| 5.2+          | >= 7.8, <9     |
+| 5.0-5.1       | >= 7.8, <8     |
+| 4.0-4.1       | >= 6.5, <=7.12 |
+| 3.4-3.6       | >= 5.5, <=7.9  |
+| 3.3           | >= 2.4, <=7.6  |
+| 3.2           | >= 2.4, <=7.5  |
+| 3.1           | >= 2.4, <=7.4  |
+| 2.0-3.0       | >= 2.4, <=5.6  |
+:::
+
+The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or
+older to index the contents of email attachments. Starting with Elasticsearch 8,
+it is included by default.
+
+### Memcached <Badge type="info" text="optional"/>
+
+Instead of storing Zammads cache files within your filesystem, they can be
+cached in memory with Memcached.
+
+The installation and configuration is out of our scope of this documentation.
+Please follow the [official guides](https://docs.memcached.org/).
+
+### GnuPG <Badge type="info" text="optional"/>
+
+If you want to use the PGP integration for sending and receiving signed and
+encrypted emails, you need to install the GnuPG-Tool. Please have a look at
+the official [GnuPG website](https://www.gnupg.org/index.html).
