@@ -29,9 +29,9 @@ export default defineConfig(
       },
     },
     locales: {
-      root: { label: 'English', link: '/en/', ...defineConfig(configEN as UserConfig) },
-      de: { label: 'Deutsch', ...defineConfig(configDE as UserConfig) },
-      sr: { label: 'српски', ...defineConfig(configSR as UserConfig) },
+      root: { label: 'English', link: '/en/', ...configEN },
+      de: { label: 'Deutsch', ...configDE },
+      sr: { label: 'српски', ...configSR },
     },
     vite: {
       resolve: {

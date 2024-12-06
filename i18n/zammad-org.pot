@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-06 08:53+0100\n"
+"POT-Creation-Date: 2024-12-06 08:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,18 +126,6 @@ msgstr ""
 msgid "On this page"
 msgstr ""
 
-#. type: Array Element: themeConfig outline level
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "2"
-msgstr ""
-
-#. type: Array Element: themeConfig outline level
-#: .vitepress/config.en.yaml:1
-#, no-wrap
-msgid "4"
-msgstr ""
-
 #. type: Hash Value: themeConfig socialLinks link
 #: .vitepress/config.en.yaml:1
 #, no-wrap
@@ -214,6 +202,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -2316,21 +2316,14 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:281
-<<<<<<< HEAD
 #: src/en/tutorials/first-steps.md:57
-=======
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #: src/en/tutorials/install-elasticsearch.md:156
 #, markdown-text, no-wrap
 msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:286
-=======
-#: src/en/get-started/installation/package.md:287
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Connect Zammad with Elasticsearch ([basic "
@@ -2338,7 +2331,6 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:286
 #, markdown-text
 msgid ""
@@ -2371,58 +2363,15 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:300
 #, markdown-text
-=======
-#: src/en/get-started/installation/package.md:287
-#, markdown-text
-msgid "Adjust your firewall ([basic guide](/en/tutorials/firewall))"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:287
-#, markdown-text
-msgid "Adjust your SELinux rules ([basic guide](/en/tutorials/selinux))"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:287
-#, markdown-text
-msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
-msgstr ""
-
-#. type: Title ##
-#: src/en/get-started/installation/package.md:289
-#, markdown-text, no-wrap
-msgid "Dependencies"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:295
-#, markdown-text
-msgid ""
-"Assuming a vanilla system, the following dependencies will automatically be "
-"installed during the Zammad package installation. Additionally, you can find "
-"some information about Elasticsearch below, which is not automatically "
-"installed."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:301
-#, markdown-text
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:300
-=======
-#: src/en/get-started/installation/package.md:301
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
-<<<<<<< HEAD
 #. type: Title ##
 #: src/en/get-started/installation/package.md:300
 #: src/en/reference/docker-env-vars.md:81
@@ -2435,46 +2384,23 @@ msgstr ""
 #: src/en/reference/docker-env-vars.md:107
 #: src/en/tutorials/webserver-config.md:109
 #, markdown-text, no-wrap
-=======
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:301
-#, markdown-text
-msgid "PostgreSQL"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:301
-#, markdown-text
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgid "Nginx"
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:300
-=======
-#: src/en/get-started/installation/package.md:301
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:301
-=======
-#: src/en/get-started/installation/package.md:302
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Database Server"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:307
-=======
-#: src/en/get-started/installation/package.md:308
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Zammad will store all content in a Database. We supported PostgreSQL in "
@@ -2484,11 +2410,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:308
-=======
-#: src/en/get-started/installation/package.md:309
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -2501,7 +2423,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:317
 #, markdown-text
 msgid ""
@@ -2511,58 +2432,30 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:318
-=======
-#: src/en/get-started/installation/package.md:319
-#, markdown-text
-msgid ""
-"If you are still using MySQL/MariaDB, you should [migrate to "
-"PostgreSQL](/en/tutorials/migrate-database). MySQL/MariaDB are **no longer** "
-"supported starting with Zammad 7."
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/package.md:320
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:321
-=======
-#: src/en/get-started/installation/package.md:323
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "The following reverse proxies are supported:"
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:324
-=======
-#: src/en/get-started/installation/package.md:326
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Nginx 1.3+"
 msgstr ""
 
 #. type: Bullet: '- '
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:324
-=======
-#: src/en/get-started/installation/package.md:326
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Apache 2.2+"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:328
-=======
-#: src/en/get-started/installation/package.md:330
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -2571,11 +2464,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:330
-=======
-#: src/en/get-started/installation/package.md:332
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -2583,11 +2472,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:337
-=======
-#: src/en/get-started/installation/package.md:339
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -2598,21 +2483,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:339
-=======
-#: src/en/get-started/installation/package.md:341
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Supported Elasticsearch versions are ``7.8`` - ``8.x``."
 msgstr ""
 
 #. type: Fenced div block (details Elasticsearch version history)
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:340
-=======
-#: src/en/get-started/installation/package.md:342
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, no-wrap
 msgid ""
 "\n"
@@ -2629,11 +2506,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:357
-=======
-#: src/en/get-started/installation/package.md:359
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or "
@@ -2642,21 +2515,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:358
-=======
-#: src/en/get-started/installation/package.md:360
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:362
-=======
-#: src/en/get-started/installation/package.md:364
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Instead of storing Zammads cache files within your filesystem, they can be "
@@ -2664,11 +2529,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:365
-=======
-#: src/en/get-started/installation/package.md:367
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The installation and configuration is out of our scope of this "
@@ -2677,21 +2538,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:366
-=======
-#: src/en/get-started/installation/package.md:368
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: src/en/get-started/installation/package.md:370
-=======
-#: src/en/get-started/installation/package.md:372
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -3605,18 +3458,6 @@ msgstr ""
 msgid "Rails commands"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/backup-restore.md:1
 #, no-wrap
@@ -3781,7 +3622,6 @@ msgid ""
 "\n"
 "# Files larger than this size (in MB) will not be indexed\n"
 "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
-<<<<<<< HEAD
 msgstr ""
 
 #. type: Title #
@@ -4196,8 +4036,6 @@ msgid ""
 "also\n"
 "book workshops with one of our\n"
 "[Zammad consultants](https://zammad.com/en/company/contact).\n"
-=======
->>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
