@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-06 16:42+0100\n"
+"POT-Creation-Date: 2024-12-06 17:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1152,7 +1152,7 @@ msgstr ""
 msgid "You can either search them via search field or via overviews.\n"
 msgstr ""
 
-#. type: Fenced div block (tabs)
+#. type: Fenced div block (details How to cite the customer's email or parts of it?)
 #: src/en/documentation/use/faq.md:13 src/en/documentation/use/faq.md:17
 #: src/en/documentation/use/faq.md:21 src/en/documentation/use/faq.md:25
 #: src/en/documentation/use/faq.md:29 src/en/documentation/use/faq.md:33
@@ -1161,7 +1161,6 @@ msgstr ""
 #: src/en/documentation/use/faq.md:57 src/en/documentation/use/faq.md:61
 #: src/en/documentation/use/faq.md:65 src/en/documentation/use/faq.md:69
 #: src/en/documentation/use/faq.md:73
-#: src/en/tutorials/migrate-to-new-host.md:76
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -2719,7 +2718,7 @@ msgid "Stop Zammad"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/update.md:22 src/en/tutorials/migrate-to-new-host.md:68
+#: src/en/get-started/update.md:22
 #, no-wrap
 msgid "systemctl stop zammad\n"
 msgstr ""
@@ -6818,207 +6817,6 @@ msgstr ""
 #: src/en/tutorials/migrate/migrate.md:1
 #, no-wrap
 msgid "From OTRS"
-msgstr ""
-
-#. type: Title #
-#: src/en/tutorials/migrate-to-new-host.md:1
-#: src/en/tutorials/migrate-to-new-host.md:8
-#, markdown-text, no-wrap
-msgid "Migrate Zammad to a New Host"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:7
-#, markdown-text, no-wrap
-msgid ""
-"<!-- Should be completely dropped because it is a mess. Because I already "
-"started, I kept it to not loose already done work  -->\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:15
-#, markdown-text
-msgid ""
-"This is just a description of basic steps to perform a migration to a new "
-"host.  Your environment may be different so you should consider this as a "
-"reference point only. If anything goes wrong, please consult the [Zammad "
-"Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) "
-"or consider [paid support "
-"options](https://zammad.com/en/services/professional-services)."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/tutorials/migrate-to-new-host.md:16
-#, no-wrap
-msgid ""
-"Migrating from Zammad SaaS? Skip to step 7. For restoration, you've received "
-"an\n"
-"attachment dump!\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:21
-#, markdown-text, no-wrap
-msgid "Step 1: Check and Save your Environmental Adjustments"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:24
-#, markdown-text
-msgid "Note them down or backup your `.env` files."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:25
-#, markdown-text, no-wrap
-msgid "Step 2: Install Zammad on the Destination Host"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:31
-#, markdown-text
-msgid ""
-"For the easiest restoration path possible, please install the same version "
-"like your origin instance. You could also consider updating the old instance "
-"before migrating. Have a look at the installation instructions and follow "
-"the steps."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:32
-#, markdown-text, no-wrap
-msgid "Step 3: Activate Maintenance Mode"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:36
-#, markdown-text, no-wrap
-msgid ""
-"Activate the maintenance mode in Zammad's admin interface under\n"
-"*System > Maintenance*. This ends all agent and customer sessions.\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:37
-#, markdown-text, no-wrap
-msgid "Step 4: Disable your Communication Channels"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:41
-#, markdown-text
-msgid ""
-"This makes sure that no data is lost during the process. Go to Zammad's "
-"admin interface and disable all active communication channels."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:42
-#, markdown-text, no-wrap
-msgid "Step 5: Stop and Disable Zammad"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: src/en/tutorials/migrate-to-new-host.md:44
-#, no-wrap
-msgid ""
-"systemctl disable zammad\n"
-"systemctl stop zammad\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:49
-#, markdown-text, no-wrap
-msgid "Step 6: Perform the Backup"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:54
-#, markdown-text
-msgid ""
-"Follow the [quick start guide](#quick-start) to create your backup.  "
-"Remember if you’ve created a full filesystem dump or only backed up your "
-"data.  This will be important for the restoration."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:57
-#, markdown-text
-msgid ""
-"If you want to go the easiest way, consider only [dumping your "
-"data](#backup-configuration)."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:58
-#, markdown-text, no-wrap
-msgid "Step 7: Transfer your Backup Files"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:62
-#, markdown-text
-msgid ""
-"Save your backup files in a directory and provide the path to the `config` "
-"file. See [backup configuration](#backup-configuration) how to adjust it."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:63
-#, markdown-text, no-wrap
-msgid "Step 8: Restore Your Backup"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:66
-#, markdown-text
-msgid "Follow the steps from the [Restore Backup](#restore-backups) section."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:68
-#, markdown-text
-msgid "Make sure to stop Zammad after the restoration has finished:"
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/migrate-to-new-host.md:72
-#, markdown-text, no-wrap
-msgid "Step 9: Run Required Maintenance Tasks After Restoring"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/migrate-to-new-host.md:75
-#, markdown-text
-msgid "Depending if you only backed up your data or a full filesystem dump:"
-msgstr ""
-
-#. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate-to-new-host.md:76
-#, no-wrap
-msgid ""
-"\n"
-"=== Data dump (recommended)\n"
-"Clear cache:\n"
-"```bash\n"
-"zammad run rails r \"Rails.cache.clear\"\n"
-"```\n"
-"\n"
-"=== Full filesystem dump\n"
-"\n"
-msgstr ""
-
-#. type: Fenced div block (tabs|warning)
-#: src/en/tutorials/migrate-to-new-host.md:76
-#, no-wrap
-msgid ""
-"This step is only needed, if one of the following points is met:\n"
-"\n"
-"- The source and destination Zammad versions are not the same\n"
-"- The Zammad installation is not a source code installation\n"
-"- The Zammad backup is not an export from our hosted setup\n"
-"\n"
-"Zammad files are distribution and version specific!\n"
 msgstr ""
 
 #. type: Title #
