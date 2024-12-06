@@ -281,8 +281,7 @@ systemctl (status|start|stop|restart) zammad-websocket
 ### Next Steps
 
 - Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-config-elasticsearch))
-- Adjust your firewall ([basic guide](/en/tutorials/firewall))
-- Adjust your SELinux rules ([basic guide](/en/tutorials/selinux))
+- Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-selinux))
 - Configure the Webserver ([basic guide](/en/tutorials/webserver-config))
 
 
@@ -313,9 +312,8 @@ called “session connection pooling”. Transaction-based connection pooling is
 not supported and may lead to errors during database migrations.
 :::
 
-If you are still using MySQL/MariaDB, you should
-[migrate to PostgreSQL](/en/tutorials/migrate-database). MySQL/MariaDB are
-**no longer** supported starting with Zammad 7.
+If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.
+MySQL/MariaDB are **no longer** supported starting with Zammad 7.
 
 ### Reverse Proxy
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-05 12:43+0100\n"
+"POT-Creation-Date: 2024-12-06 08:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -582,9 +582,9 @@ msgstr ""
 msgid "Admin Documentation (``pre-release``)"
 msgstr ""
 
-#. type: Bullet: ' * '
-#: src/en/contribute/contribute.md:128
-#, markdown-text
+#. type: Title ##
+#: src/en/contribute/contribute.md:128 src/en/reference/docker-env-vars.md:12
+#, markdown-text, no-wrap
 msgid "Zammad"
 msgstr ""
 
@@ -1921,6 +1921,7 @@ msgstr ""
 #: src/en/get-started/installation/package.md:9
 #: src/en/get-started/installation/prerequisites.md:9
 #: src/en/get-started/update.md:9 src/en/tutorials/install-elasticsearch.md:9
+#: src/en/tutorials/webserver-config.md:9
 #, markdown-text, no-wrap
 msgid "<!--@include: @/en/modules/zammad-services-hint.md-->\n"
 msgstr ""
@@ -2315,13 +2316,21 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:281
+<<<<<<< HEAD
+#: src/en/tutorials/first-steps.md:57
+=======
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #: src/en/tutorials/install-elasticsearch.md:156
 #, markdown-text, no-wrap
 msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:286
+=======
 #: src/en/get-started/installation/package.md:287
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Connect Zammad with Elasticsearch ([basic "
@@ -2329,6 +2338,40 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:286
+#, markdown-text
+msgid ""
+"Adjust your SELinux rules and firewall ([basic "
+"guide](/en/tutorials/firewall-selinux))"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:286
+#, markdown-text
+msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/package.md:288
+#, markdown-text, no-wrap
+msgid "Dependencies"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:294
+#, markdown-text
+msgid ""
+"Assuming a vanilla system, the following dependencies will automatically be "
+"installed during the Zammad package installation. Additionally, you can find "
+"some information about Elasticsearch below, which is not automatically "
+"installed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:300
+#, markdown-text
+=======
 #: src/en/get-started/installation/package.md:287
 #, markdown-text
 msgid "Adjust your firewall ([basic guide](/en/tutorials/firewall))"
@@ -2365,15 +2408,34 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:301
 #, markdown-text
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:300
+=======
 #: src/en/get-started/installation/package.md:301
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
+<<<<<<< HEAD
+#. type: Title ##
+#: src/en/get-started/installation/package.md:300
+#: src/en/reference/docker-env-vars.md:81
+#, markdown-text, no-wrap
+msgid "PostgreSQL"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:300
+#: src/en/reference/docker-env-vars.md:107
+#: src/en/tutorials/webserver-config.md:109
+#, markdown-text, no-wrap
+=======
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:301
 #, markdown-text
@@ -2383,23 +2445,36 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:301
 #, markdown-text
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgid "Nginx"
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:300
+=======
 #: src/en/get-started/installation/package.md:301
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:301
+=======
 #: src/en/get-started/installation/package.md:302
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Database Server"
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:307
+=======
 #: src/en/get-started/installation/package.md:308
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Zammad will store all content in a Database. We supported PostgreSQL in "
@@ -2409,7 +2484,11 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:308
+=======
 #: src/en/get-started/installation/package.md:309
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -2422,6 +2501,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:317
+#, markdown-text
+msgid ""
+"If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.  "
+"MySQL/MariaDB are **no longer** supported starting with Zammad 7."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/package.md:318
+=======
 #: src/en/get-started/installation/package.md:319
 #, markdown-text
 msgid ""
@@ -2432,30 +2522,47 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:320
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:321
+=======
 #: src/en/get-started/installation/package.md:323
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "The following reverse proxies are supported:"
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:324
+=======
 #: src/en/get-started/installation/package.md:326
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Nginx 1.3+"
 msgstr ""
 
 #. type: Bullet: '- '
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:324
+=======
 #: src/en/get-started/installation/package.md:326
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Apache 2.2+"
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:328
+=======
 #: src/en/get-started/installation/package.md:330
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -2464,7 +2571,11 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:330
+=======
 #: src/en/get-started/installation/package.md:332
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -2472,7 +2583,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:337
+=======
 #: src/en/get-started/installation/package.md:339
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -2483,13 +2598,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:339
+=======
 #: src/en/get-started/installation/package.md:341
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid "Supported Elasticsearch versions are ``7.8`` - ``8.x``."
 msgstr ""
 
 #. type: Fenced div block (details Elasticsearch version history)
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:340
+=======
 #: src/en/get-started/installation/package.md:342
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, no-wrap
 msgid ""
 "\n"
@@ -2506,7 +2629,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:357
+=======
 #: src/en/get-started/installation/package.md:359
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or "
@@ -2515,13 +2642,21 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:358
+=======
 #: src/en/get-started/installation/package.md:360
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:362
+=======
 #: src/en/get-started/installation/package.md:364
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "Instead of storing Zammads cache files within your filesystem, they can be "
@@ -2529,7 +2664,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:365
+=======
 #: src/en/get-started/installation/package.md:367
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "The installation and configuration is out of our scope of this "
@@ -2538,13 +2677,21 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:366
+=======
 #: src/en/get-started/installation/package.md:368
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
+<<<<<<< HEAD
+#: src/en/get-started/installation/package.md:370
+=======
 #: src/en/get-started/installation/package.md:372
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -3141,6 +3288,306 @@ msgid "Environment Variables"
 msgstr ""
 
 #. type: Title #
+#: src/en/reference/docker-env-vars.md:1 src/en/reference/docker-env-vars.md:6
+#, markdown-text, no-wrap
+msgid "Docker Environment Variables"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:11
+#, markdown-text
+msgid ""
+"Find the available docker environment variables below with default values, "
+"if applicable. You might also be interested in the [environment variables "
+"documentation](/en/reference/env-vars)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:18
+#, markdown-text, no-wrap
+msgid ""
+"VERSION (\\<current stable version of Zammad\\>)\n"
+": Allows customization of the Zammad image tag. Example: ``6.3.1-54``.\n"
+"  This default version may be increased when you update your Zammad docker\n"
+"  stack. Please see the example env template for more details on this "
+"variable.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:23
+#, markdown-text, no-wrap
+msgid ""
+"AUTOWIZARD_JSON\n"
+": This variable allows you to provide initial configuration data for your\n"
+"  instance. Autowizard JSON is out of scope of this documentation, however "
+"this\n"
+"  example file should help.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:27
+#, markdown-text, no-wrap
+msgid ""
+"ZAMMAD_WEB_CONCURRENCY\n"
+": Allows spawning ``n`` workers to allow more simultaneous connections for\n"
+"  Zammad's  web UI.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:31
+#, markdown-text, no-wrap
+msgid ""
+"ZAMMAD_SESSION_JOBS_CONCURRENT\n"
+": Allows spawning ``n`` session job workers to release pressure from "
+"Zammad's\n"
+"  background worker.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:35
+#, markdown-text, no-wrap
+msgid ""
+"ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS\n"
+": Allows spawning ``1`` independent scheduled job worker to reduce "
+"pressure\n"
+"  from Zammad's background worker.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:39
+#, markdown-text, no-wrap
+msgid ""
+"ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS\n"
+": Allows spawning n delayed job workers to reduce pressure from Zammad's\n"
+"  background worker.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:42
+#, markdown-text
+msgid ""
+"RAILS_TRUSTED_PROXIES (``['127.0.0.1', '::1']``)  : By default Zammad trusts "
+"localhost proxies only."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:45
+#, markdown-text
+msgid ""
+"MEMCACHE_SERVERS (``zammad-memcached:11211``)  : Provide your own Memcached "
+"instance to Zammad if you already have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:49
+#, markdown-text
+msgid ""
+"REDIS_URL (``redis://zammad-redis:6379``)  : Provide your own Redis instance "
+"if you already have one. Please note that this method currently does not "
+"allow authentication."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-env-vars.md:50
+#, markdown-text, no-wrap
+msgid "Elasticsearch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:55
+#, markdown-text
+msgid ""
+"ELASTICSEARCH_ENABLED (``true``)  : Setting this variable to false will "
+"allow you to run your Zammad without Elasticsearch. Please note that we "
+"strongly advise against doing so."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:58
+#, markdown-text
+msgid ""
+"ELASTICSEARCH_HOST ()``zammad-elasticsearch``)  : Provide a host name or "
+"address to your external Elasticsearch cluster."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:61
+#, markdown-text
+msgid ""
+"ELASTICSEARCH_PORT (``9200``)  : Provide a different port for Elasticsearch "
+"if needed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:64
+#, markdown-text
+msgid ""
+"ELASTICSEARCH_SCHEMA (``http``)  : By default, Elasticsearch is reachable "
+"via HTTP."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:68
+#, markdown-text, no-wrap
+msgid ""
+"ELASTICSEARCH_NAMESPACE (``zammad``)\n"
+": With this name space all Zammad related indexes will be created. Change "
+"this\n"
+"  if you're using external clusters.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:72
+#, markdown-text, no-wrap
+msgid ""
+"ELASTICSEARCH_REINDEX (``true``)\n"
+": By default the docker-compose will always re-index upon a restart. On "
+"big\n"
+"  installations, this may be troublesome.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/docker-env-vars.md:72
+#, no-wrap
+msgid ""
+"  Disabling this setting requires you to re-index your search index "
+"manually\n"
+"  whenever you upgrade to a new Zammad version!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:80
+#, markdown-text, no-wrap
+msgid ""
+"ELASTICSEARCH_SSL_VERIFY (``true``)\n"
+": Allows you to let the compose scripts ignore self signed SSL "
+"certificates\n"
+"  for your Elasticsearch installation if needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:85
+#, markdown-text
+msgid ""
+"POSTGRESQL_HOST (``zammad-postgresql``)  : Host name of your PostgreSQL "
+"server. Use your own if you already have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:88
+#, markdown-text
+msgid "POSTGRESQL_PORT (``5432``)  : Adjust the Port of your PostgreSQL server."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:91
+#, markdown-text
+msgid "POSTGRESQL_USER (``zammad``)  : The database user for Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:94
+#, markdown-text
+msgid "POSTGRESQL_PASS (``zammad``)  : The password of Zammads database user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:97
+#, markdown-text
+msgid "POSTGRESQL_DB (``zammad_production``)  : Zammads database to use."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:100
+#, markdown-text
+msgid ""
+"POSTGRESQL_OPTIONS (``?pool=50``)  : Additional postgresql parameters to be "
+"appended to the database URI."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:103
+#, markdown-text
+msgid ""
+"POSTGRESQL_DB_CREATE (``true``)  : By default Zammad creates the required "
+"database."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/docker-env-vars.md:103
+#, no-wrap
+msgid "  On dedicated database servers, this setting might be troublesome.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:113
+#, markdown-text, no-wrap
+msgid ""
+"NGINX_EXPOSE_PORT (``8080``)\n"
+": The port to be exposed for accessing the Zammad stack from "
+"outside. Change\n"
+"  this to another value if you already have an existing service listening "
+"on\n"
+"  this port.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:116
+#, markdown-text
+msgid "NGINX_PORT (``8080``)  : The internal port the nginx service will listen on."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:120
+#, markdown-text, no-wrap
+msgid ""
+"NGINX_SERVER_NAME (``_``)\n"
+": By default the Nginx container of Zammad will respond to all "
+"request. You\n"
+"  can provide your IP / FQDN if you want to.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:125
+#, markdown-text, no-wrap
+msgid ""
+"NGINX_SERVER_SCHEME (``\\$scheme``)\n"
+": If the Nginx container for Zammad is not the upstream server (means if "
+"you\n"
+"  are using another proxy in front of nginx) you might want to change "
+"this.\n"
+"  You can set the correct scheme ``http`` or ``https`` if needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:128
+#, markdown-text
+msgid ""
+"ZAMMAD_RAILSSERVER_HOST (``zammad-railsserver``)  : Host name of the rails "
+"server container."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:131
+#, markdown-text
+msgid "ZAMMAD_RAILSSERVER_PORT (``3000``)  : Port of Zammads rails server."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:134
+#, markdown-text
+msgid ""
+"ZAMMAD_WEBSOCKET_HOST (``zammad-websocket``)  : Host name of Zammads "
+"websocket server."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:136
+#, markdown-text
+msgid "ZAMMAD_WEBSOCKET_PORT (``6042``)  : Port of Zammad's websocket server."
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/glossary.md:5
 #, markdown-text, no-wrap
 msgid "Glossary"
@@ -3334,6 +3781,423 @@ msgid ""
 "\n"
 "# Files larger than this size (in MB) will not be indexed\n"
 "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
+<<<<<<< HEAD
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/firewall-selinux.md:1
+#: src/en/tutorials/firewall-selinux.md:6
+#, markdown-text, no-wrap
+msgid "Firewall & SELinux"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/firewall-selinux.md:10
+#, markdown-text
+msgid ""
+"This is just a collection of snippets which might be useful for you. Feel "
+"free to skip parts and/or adapt it to your needs."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/firewall-selinux.md:11
+#, markdown-text, no-wrap
+msgid "Firewall"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/firewall-selinux.md:13
+#, no-wrap
+msgid ""
+"The following commands only work on Ubuntu, Debian and CentOS. If you use "
+"a\n"
+"different distribution, please have a look at their documentation.\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/firewall-selinux.md:18
+#, no-wrap
+msgid "sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/firewall-selinux.md:21
+#, no-wrap
+msgid "sudo setsebool httpd_can_network_connect on -P\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/firewall-selinux.md:24
+#, no-wrap
+msgid "sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/firewall-selinux.md:27
+#, no-wrap
+msgid "sudo restorecon -Rv /opt/zammad/public/\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/firewall-selinux.md:30
+#, no-wrap
+msgid "sudo chmod -R a+r /opt/zammad/public/\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/firewall-selinux.md:34
+#, markdown-text, no-wrap
+msgid "SELinux"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/firewall-selinux.md:39
+#, markdown-text
+msgid ""
+"Ensure to open ports ``80`` and ``443`` (TCP & UDP) beside of the ports you "
+"need. Below you can find a few examples for different distributions. If you "
+"are using a different distribution, please have a look at their "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/firewall-selinux.md:42
+#, markdown-text
+msgid ""
+"Please note that the examples below only cover the distribution’s default "
+"firewall. It may not cover your case."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/firewall-selinux.md:43
+#, no-wrap
+msgid ""
+"\n"
+"===Ubuntu\n"
+"```bash\n"
+"$ sudo ufw allow 80\n"
+"```\n"
+"```bash\n"
+"$ sudo ufw allow 443\n"
+"```\n"
+"```bash\n"
+"$ sudo ufw reload\n"
+"```\n"
+"\n"
+"===Debian\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|info)
+#: src/en/tutorials/firewall-selinux.md:43
+#, no-wrap
+msgid ""
+"We’re covering ``nftables`` in this part - ``iptables`` is discouraged\n"
+"starting from Debian 10 (Buster). Our example uses the ``input`` chain, "
+"yours\n"
+"may be a different one!\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/firewall-selinux.md:43
+#, no-wrap
+msgid ""
+"\n"
+"Add the following lines to ``/etc/nftables.conf`` or your specific rule "
+"file.\n"
+"Ensure to add these lines to your input-chain.\n"
+"\n"
+"```bash\n"
+"sudo tcp dport { http, https } accept\n"
+"sudo udp dport { http, https } accept\n"
+"```\n"
+"The result can look like the following. Keep in mind that your environment\n"
+"could require different / more rules.\n"
+"\n"
+"```bash\n"
+"#!/usr/local/sbin/nft -f\n"
+"flush ruleset\n"
+"\n"
+"table inet filter {\n"
+"   chain input {\n"
+"      type filter hook input priority 0; policy drop;\n"
+"      ct state established,related accept\n"
+"      tcp dport ssh log accept\n"
+"      tcp dport { http, https } accept\n"
+"      udp dport { http, https } accept\n"
+"   }\n"
+"\n"
+"   chain forward {\n"
+"      type filter hook forward priority 0; policy accept;\n"
+"   }\n"
+"\n"
+"   chain output {\n"
+"      type filter hook output priority 0; policy accept;\n"
+"   }\n"
+"}\n"
+"```\n"
+"To load the rules, run:\n"
+"```bash\n"
+"sudo systemctl reload nftables\n"
+"```\n"
+"\n"
+"===CenOS, RHEL, OpenSUSE, SLES\n"
+"\n"
+"```bash\n"
+"sudo firewall-cmd --zone=public --add-service=http --permanent\n"
+"```\n"
+"\n"
+"```bash\n"
+"sudo firewall-cmd --zone=public --add-service=https --permanent\n"
+"```\n"
+"\n"
+"```bash\n"
+"sudo firewall-cmd --reload\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/first-steps.md:1 src/en/tutorials/first-steps.md:6
+#, markdown-text, no-wrap
+msgid "First Steps in Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:11
+#, markdown-text
+msgid ""
+"Congratulations, it seems you successfully installed Zammad. To start with "
+"your fresh installed Zammad, head over to the next section. Alternatively, "
+"you have other options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:14
+#, markdown-text
+msgid ""
+"[Migrate from another supported ticketing "
+"system](/en/tutorials/migrate/migrate)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:14
+#, markdown-text
+msgid "[Restore Zammad from an existing backup](/en/tutorials/backup-restore)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/first-steps.md:15
+#, markdown-text, no-wrap
+msgid "Getting Started Wizard"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:19
+#, markdown-text
+msgid ""
+"If you visit Zammad's web page the first time, you'll be greeted by its "
+"Getting Started Wizard. It will guide you through the first most important "
+"things."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/first-steps.md:20
+#, markdown-text, no-wrap
+msgid "Step 1: Create Your First Administrator Account"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:24
+#, markdown-text
+msgid ""
+"Fill in the required information in the dialog. Your email address and "
+"password are important. These are your credentials to log in."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:26
+#, markdown-text
+msgid "Zammad applies the following password policy by default:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:30
+#, markdown-text
+msgid "10 characters or more"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:30
+#, markdown-text
+msgid "At least 2 UPPER and 2 lower characters"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:30
+#, markdown-text
+msgid "One or more digits"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/first-steps.md:31
+#, markdown-text, no-wrap
+msgid "Step 2: Provide Company Information"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:36
+#, markdown-text
+msgid ""
+"You can upload a custom logo of your company here. The instance address is "
+"detected automatically and only requires adjustment in case it is detected "
+"wrong. If you skip it, you can adjust these things later too."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/first-steps.md:37
+#, markdown-text, no-wrap
+msgid "Step 3: Email Notification Channel"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:40
+#, markdown-text
+msgid "By default, Zammad uses sendmail. This can be changed to SMTP here."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:43
+#, markdown-text, no-wrap
+msgid ""
+"Zammad uses ``noreply@<your-fqdn>`` as sender address by default. SMTP "
+"setups\n"
+"might fail - you can skip this step with choosing sendmail and adjust it "
+"later!\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/first-steps.md:44
+#, markdown-text, no-wrap
+msgid "Step 4: Your First Email Channel <Badge type=\"info\" text=\"optional\" />"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:47
+#, markdown-text
+msgid "If you want to start right away, you can connect your email account already."
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/tutorials/first-steps.md:48
+#, no-wrap
+msgid ""
+"By default, Zammad reacts to fetched emails (e.g. deletes them and sends\n"
+"automatically generated answers) If that’s not what you want, skip this "
+"step\n"
+"for now.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:56
+#, markdown-text
+msgid ""
+"After finishing the wizard you are automatically logged in to the just "
+"created account."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/first-steps.md:62
+#, markdown-text
+msgid ""
+"The list below might help you to find the right way. However, you should "
+"adapt it to your needs. You can find additional information across this "
+"documentation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Configure your required groups"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Adjust triggers as needed"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Add postmaster filters if needed"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Configure SLAs if needed"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Add email / social media channels & signatures"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Go back to group settings to add outgoing email addresses"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Add Text Modules"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Add Organizations"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Configure roles if needed"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Consider third party logins or LDAP integration for easier logins"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Add agent accounts"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/first-steps.md:75
+#, markdown-text
+msgid "Consider backup strategies for Zammad"
+msgstr ""
+
+#. type: Fenced div block (tip Are you still lost?)
+#: src/en/tutorials/first-steps.md:76
+#, no-wrap
+msgid ""
+"\n"
+"If you need help or you'll need to get in production a lot faster, you can "
+"also\n"
+"book workshops with one of our\n"
+"[Zammad consultants](https://zammad.com/en/company/contact).\n"
+=======
+>>>>>>> fa4ca09 (Fixes #15 - Part I: restructured package installation and some tweaks)
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -3557,12 +4421,6 @@ msgid ""
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/tutorials/migrate-database.md:1
-#, no-wrap
-msgid "Migrate Database"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/migrate/index.md:1
 #, no-wrap
 msgid "Migrate to Zammad"
@@ -3574,8 +4432,490 @@ msgstr ""
 msgid "From OTRS"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
+#. type: Title #
 #: src/en/tutorials/webserver-config.md:1
-#, no-wrap
+#: src/en/tutorials/webserver-config.md:6
+#, markdown-text, no-wrap
 msgid "Webserver Configuration"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:14
+#, markdown-text
+msgid ""
+"This guide is only relevant for package installations. During the "
+"installation, Zammad tries to automatically install a configuration file to "
+"your nginx.  You can find example configuration files for your webserver in "
+"the ``contrib/`` directory of your Zammad installation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:18
+#, markdown-text
+msgid ""
+"In case this out-of-the-box approach doesn't work for you, you can find some "
+"hints for your configuration. You can use either Nginx or Apache 2 (only "
+"referred to as Apache in the following text)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/webserver-config.md:19
+#, markdown-text, no-wrap
+msgid "Get a SSL Certificate"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:25
+#, markdown-text
+msgid ""
+"You have to use a named configuration which is not configured by default. To "
+"fix this, open the ``zammad.conf`` in your webserver's config directory and "
+"replace the ``server_name localhost`` (Nginx) or ``ServerName localhost`` "
+"(Apache)  with your Zammad domain."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:27
+#, markdown-text
+msgid "The config directories are usually:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:30
+#, markdown-text
+msgid ""
+"Nginx: ``/etc/nginx/conf.d/``, ``/etc/nginx/vhosts.d/``, "
+"``/etc/nginx/sites-available/``"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:30
+#, markdown-text
+msgid ""
+"Apache: ``/etc/apache2/conf.d/``, ``/etc/httpd/vhosts.d/``, "
+"``/etc/apache2/sites-available/``"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:31
+#, markdown-text, no-wrap
+msgid "Let's Encrypt"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:37
+#, markdown-text
+msgid ""
+"There are two common tools to get certificates, to which your find a basic "
+"configuration below: [certbot](https://certbot.eff.org/instructions) and "
+"[acme.sh](https://github.com/acmesh-official/acme.sh/wiki). Have a look at "
+"their documentation for further configuration details and other examples."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/webserver-config.md:38
+#, no-wrap
+msgid ""
+"\n"
+"===certbot\n"
+"\n"
+"If not happened automatically, you have to install the nginx or apache "
+"plugin\n"
+"for certbot: ``python3-certbot-nginx`` or ``python3-certbot-apache``\n"
+"\n"
+"During the first certbot run it will request additional information once.\n"
+"Replace ``<webserver>`` in below command by either ``apache``, ``httpd`` "
+"or\n"
+"``nginx`` to match your setup.\n"
+"\n"
+"```bash\n"
+"certbot --<webserver> -d zammad.example.com\n"
+"```\n"
+"\n"
+"Certbot will now attempt to issue a certificate for you. If successful,\n"
+"certbot will ask you if you want to ``[1] not redirect`` or ``[2] "
+"redirect``\n"
+"automatically. You can choose to not redirect if you plan to use the "
+"sample\n"
+"configuration of Zammad.\n"
+"\n"
+"From now on, certbot will automatically renew your installed certificates "
+"if\n"
+"they’re valid for 30 days or less.\n"
+"\n"
+"===acme.sh\n"
+"\n"
+"Change the default certificate authority to Let's encrypt:\n"
+"\n"
+"```bash\n"
+"acme.sh --set-default-ca  --server letsencrypt\n"
+"```\n"
+"\n"
+"Issue your certificate and replace ``<webserver>`` in the following "
+"command\n"
+"with either ``apache`` or ``nginx`` or ``standalone`` for other webserver.\n"
+"\n"
+"```bash\n"
+"acme.sh --issue --<webserver> -d zammad.example.com\n"
+"```\n"
+"\n"
+"It is not recommended to use the stored certificates directly. You should\n"
+"install the certificate to a directory of your choice instead as you can "
+"see\n"
+"in the next command below. We’re using ``/etc/ssl/private/`` in this case,\n"
+"but you can use any directory you like.\n"
+"\n"
+"Replace ``<webserver>`` with ``apache2``, ``httpd`` or ``nginx``.\n"
+"\n"
+"```bash\n"
+"acme.sh --install-cert -d zammad.example.com \\\n"
+"    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
+"    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
+"    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
+"    --reloadcmd     \"systemctl force-reload <webserver>\"\n"
+"```\n"
+"\n"
+"From now on, acme.sh will automatically renew your installed certificates "
+"if\n"
+"they’re valid for 30 days or less.\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:96
+#, markdown-text, no-wrap
+msgid "Commercial CA"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:102
+#, markdown-text
+msgid ""
+"If you prefer to use certificates from a different official Certificate "
+"Authority (CA) than Let's Encrypt, you can do so as well. Just get your "
+"certificate bundle, install it according to their documentation and continue "
+"with adjusting the webserver configuration."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/webserver-config.md:103
+#, markdown-text, no-wrap
+msgid "Adjusting the Webserver Configuration"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/webserver-config.md:105
+#, no-wrap
+msgid "Make sure to never use HTTP connections - we encourage you to use HTTPS!\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:111
+#, markdown-text, no-wrap
+msgid "Step 1 - Get a Current Config File"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:115
+#, markdown-text
+msgid ""
+"Copy & overwrite the default ``zammad.conf``. Adjust your Nginx config "
+"directory according to your setup:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/webserver-config.md:116
+#, no-wrap
+msgid ""
+"cp /opt/zammad/contrib/nginx/zammad_ssl.conf "
+"/etc/nginx/sites-available/zammad.conf\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:120
+#, markdown-text, no-wrap
+msgid "Step 2 - Adjust the Config File"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:123
+#: src/en/tutorials/webserver-config.md:197
+#, markdown-text
+msgid ""
+"Adjust the just copied file with a text editor of your choice (e.g. vi or "
+"nano)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:126
+#, markdown-text
+msgid ""
+"Locate any ``server_name`` directive and adjust ``example.com`` to the "
+"domain of your Zammad instance."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:129
+#: src/en/tutorials/webserver-config.md:203
+#, markdown-text
+msgid ""
+"Now you'll need to adjust the path and file names for your ssl certificates "
+"you obtained. Adjust the following directives to match your setup:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:133
+#, markdown-text
+msgid "``ssl_certificate`` (your ssl certificate)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:133
+#, markdown-text
+msgid "``ssl_certificate_key`` (the certificates private key)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:133
+#, markdown-text
+msgid "``ssl_trusted_certificate`` (the public CA certificate)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:137
+#, markdown-text
+msgid ""
+"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
+"example below to generate this file. You can find the correct path in your "
+"webserver config. Search for ``ssl_dhparam``."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/webserver-config.md:138
+#: src/en/tutorials/webserver-config.md:212
+#, no-wrap
+msgid ""
+"openssl dhparam -out <path>/dhparam.pem 4096\n"
+"\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:142
+#, markdown-text, no-wrap
+msgid "Step 3 - Adjust HTTPS Configuration"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:148
+#: src/en/tutorials/webserver-config.md:223
+#, markdown-text
+msgid ""
+"Our default configuration aims for a broad support of end user devices. This "
+"may not fit your needs. Mozilla has a great [ssl-config "
+"generator](https://ssl-config.mozilla.org/) that should help you to meet "
+"your requirements!"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:149
+#, markdown-text, no-wrap
+msgid "Step 4 - Save & Reload"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:153
+#, markdown-text
+msgid ""
+"Reload your nginx with ``systemctl reload nginx`` to apply your "
+"configuration changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:156
+#: src/en/tutorials/webserver-config.md:266
+#, markdown-text
+msgid ""
+"After that, you should be greeted by our getting started wizard.  Go on with "
+"the [first steps in Zammad](/en/tutorials/first-steps)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:157
+#, markdown-text, no-wrap
+msgid "Apache"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:159
+#, markdown-text, no-wrap
+msgid "Step 1 - Enable Module"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:163
+#, markdown-text
+msgid ""
+"Zammad requires a module (``a2enmod``) which is not enabled by "
+"default. CentOS users have to adjust a config file because this module is "
+"not available there."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/webserver-config.md:164
+#, no-wrap
+msgid ""
+"a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+"systemctl restart apache2\n"
+msgstr ""
+
+#. type: Fenced div block (details Config for CentOS)
+#: src/en/tutorials/webserver-config.md:169
+#, no-wrap
+msgid ""
+"Add/uncomment the appropriate ``LoadModule`` statements in your Apache "
+"config\n"
+"in ``/etc/httpd/conf/httpd.conf``:\n"
+"```\n"
+"LoadModule headers_module modules/mod_headers.so\n"
+"LoadModule proxy_module modules/mod_proxy.so\n"
+"LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+"LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+"LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+"```\n"
+"Restart your webserver after saving the configuration.\n"
+"\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:183
+#, markdown-text, no-wrap
+msgid "Step 2 - Get a Current Config File"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:187
+#, markdown-text
+msgid ""
+"The package installation copied a ``zammad.conf`` file to your webserver "
+"config directory. Check if it is present and do not rename this file!"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:189
+#, markdown-text
+msgid "Adjust your Apache config directory according to your setup:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/webserver-config.md:190
+#, no-wrap
+msgid "ls /etc/apache2/sites-available\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:194
+#, markdown-text, no-wrap
+msgid "Step 3 - Adjust the Config File"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:200
+#, markdown-text
+msgid ""
+"Locate any ``ServerName`` directive and adjust ``example.com`` to the domain "
+"of your Zammad instance."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:207
+#, markdown-text
+msgid "``SSLCertificateFile`` (your ssl certificate)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:207
+#, markdown-text
+msgid "``SSLCertificateKeyFile``(the certificates private key)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:207
+#, markdown-text
+msgid "``SSLCertificateChainFile`` (the public CA certificate)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:211
+#, markdown-text
+msgid ""
+"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
+"example below to generate this file. You can find the correct path in your "
+"webserver config. Search for ``SSLOpenSSLConfCmd DHParameters``."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:217
+#, markdown-text, no-wrap
+msgid "Step 4 - Adjust HTTPS Configuration"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:224
+#, markdown-text, no-wrap
+msgid "Step 5 - Enable the Site"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:228
+#, markdown-text
+msgid ""
+"This step mostly depends on your selected folders and should only affect "
+"``sites-available`` folders."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/webserver-config.md:229
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu, Debian, OpenSUSE\n"
+"\n"
+"Make sure the following line is present in your Apache config\n"
+"(``/etc/apache2/apache2.conf``):\n"
+"```\n"
+"IncludeOptional sites-enabled/*.conf\n"
+"```\n"
+"\n"
+"Enable it:\n"
+"```bash\n"
+"a2ensite zammad\n"
+"```\n"
+"\n"
+"=== CentOS\n"
+"\n"
+"Make sure the following line is present in your Apache config\n"
+"(``/etc/httpd/conf/httpd.conf``):\n"
+"```\n"
+"IncludeOptional sites-enabled/*.conf\n"
+"```\n"
+"\n"
+"Enable it:\n"
+"```bash\n"
+"ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/webserver-config.md:259
+#, markdown-text, no-wrap
+msgid "Step 6 - Save & Reload"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:263
+#, markdown-text
+msgid ""
+"Reload your apache with ``systemctl reload apache2`` to apply your "
+"configuration changes."
 msgstr ""
