@@ -33,16 +33,16 @@ order: 1
 Централни [Zammad репозиториј](https://github.com/zammad/zammad) на GitHub-у
 има неколико огранка.
 
-#### ``develop``
+#### `develop`
 
-* Ово је тренутно (необјављено) развојно стање следећег већег издања
-  (постаће нови ``stable`` огранак).
+* This is the current (unreleased) development state of next major release
+  (this will become the new `stable` branch).
 * Не користите у продукцији!
 * Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
   нашу [безбедносну
   полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
-#### ``stable``
+#### `stable`
 
 * Ово је тренутно стабилно издање, нпр. Zammad 5.2.
 * Користите овај огранак за инсталације у продукцији.
@@ -50,9 +50,10 @@ order: 1
   нашу [безбедносну
   полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
-#### ``stable-x.y``
+#### `stable-x.y`
 
-* Ово су огранци старих Zammad издања као ``stable-5.1`` за Zammad 5.1.
+* These are the branches of old versions of Zammad like `stable-5.1` for
+  Zammad 5.1.
 * Нису подржане исправке грешака и сигурносних пропуста.
 
 ## Документација
@@ -75,12 +76,11 @@ order: 1
 * https://admin-docs.zammad.org
 * https://user-docs.zammad.org
 
-Документација коју читате је доступна под next.zammad.org и zammad.org и
-направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
-формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
-које су под ``/src/en/`` директоријумом. Сви преводи се обрађују преко
-Weblate апликације и преписаће све измене направљене под директоријумима
-специфичних језика (осим ``/src/en/``).
+The documentation you are reading is available on next.zammad.org and
+zammad.org and is built via Vitepress. The source files are written in
+Markdown.  Make sure to change the English source files only which are
+placed under `/src/en/`. The translations are made via Weblate and will
+overwrite any changes in the language specific folders (except `/src/eng/`).
 
 ### ReStructuredText код
 
@@ -125,13 +125,13 @@ Weblate апликацији. Преглед оба пројекта может�
 Структура пројекта превода у Weblate-у:
 
  * Документација
-    * Корисничка документације (``latest``)
-    * Корисничка документација (``pre-release``)
-    * Администраторска документација (``latest``)
-    * Администраторска документација (``pre-release``)
+    * User Documentation (`latest`)
+    * User Documentation (`pre-release`)
+    * Admin Documentation (`latest`)
+    * Admin Documentation (`pre-release`)
  * Zammad
-    * Zammad (``develop``, развојна верзија)
-    * Zammad (``stable`` верзија)
+    * Zammad (`develop`, development version)
+    * Zammad (`stable` version)
     * *Some more which aren't relevant here*
 
 ::: tip
@@ -194,7 +194,7 @@ documentation projects (see RestructuredText_ for details):
 
 - **\`\`example-string\`\`**
 
-    This is rendered as ``example-string``. Depending on the context, it can be
+    This is rendered as `example-string`. Depending on the context, it can be
     translated or not. In any case, use the \`` before and after the string in
     your translation.
 

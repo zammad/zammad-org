@@ -30,8 +30,8 @@ zammad run rails r "Setting.set('es_password', '<password>')"
 ### Add Certificate to Zammad <Badge type="warning" text="only ES8" />
 
 Show and copy the auto-generated certificate from Elasticsearch and add it
-to Zammad. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN
-CERTIFICATE-----``) too.
+to Zammad. Make sure to copy/paste the delimiters (e.g. `-----BEGIN
+CERTIFICATE-----`) too.
 
 ```bash
 sudo cat /etc/elasticsearch/certs/http_ca.crt

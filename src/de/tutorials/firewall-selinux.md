@@ -33,7 +33,7 @@ sudo chmod -R a+r /opt/zammad/public/
 
 ## SELinux
 
-Ensure to open ports ``80`` and ``443`` (TCP & UDP) beside of the ports you
+Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you
 need. Below you can find a few examples for different distributions. If you
 are using a different distribution, please have a look at their
 documentation.
@@ -57,12 +57,12 @@ $ sudo ufw reload
 ===Debian
 
 ::: info
-We’re covering ``nftables`` in this part - ``iptables`` is discouraged
-starting from Debian 10 (Buster). Our example uses the ``input`` chain, yours
+We’re covering `nftables` in this part - `iptables` is discouraged
+starting from Debian 10 (Buster). Our example uses the `input` chain, yours
 may be a different one!
 :::
 
-Add the following lines to ``/etc/nftables.conf`` or your specific rule file.
+Add the following lines to `/etc/nftables.conf` or your specific rule file.
 Ensure to add these lines to your input-chain.
 
 ```bash

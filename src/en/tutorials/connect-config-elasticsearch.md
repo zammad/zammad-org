@@ -31,7 +31,7 @@ zammad run rails r "Setting.set('es_password', '<password>')"
 
 Show and copy the auto-generated certificate from Elasticsearch and add it to
 Zammad. Make sure to copy/paste the delimiters
-(e.g. ``-----BEGIN CERTIFICATE-----``) too.
+(e.g. `-----BEGIN CERTIFICATE-----`) too.
 
 ```bash
 sudo cat /etc/elasticsearch/certs/http_ca.crt

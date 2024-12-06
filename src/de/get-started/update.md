@@ -12,9 +12,9 @@ notes](https://zammad.com/en/releases). You can find information about
 features and fixes as well as technical remarks and breaking changes.
 
 Be aware that you should not skip major Zammad versions while updating. That
-means, for example, your upgrade path from version ``2.4`` to ``5.1``
-(assuming this is the current stable) would be: ``2.4`` → ``3.0`` → ``4.0``
-→ ``5.0`` → ``latest stable (5.1)``
+means, for example, your upgrade path from version `2.4` to `5.1` (assuming
+this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
+`latest stable (5.1)`
 
 ## Update Package Installation
 
@@ -131,8 +131,8 @@ instructions first.
 
 ### Updating Portainer Based Installations
 
-In your Zammad stack, click on ``Pull and redeploy``, activate **Re-pull
-image and redeploy** and click on ``Update``.
+In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image
+and redeploy** and click on `Update`.
 
 ![Highlighted stack update in
 Portainer](/screenshots/installation/portainer-stack-update.png)

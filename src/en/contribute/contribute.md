@@ -30,22 +30,22 @@ Have a look at the [developer manual](https://github.com/zammad/zammad/blob/deve
 The main [Zammad repository](https://github.com/zammad/zammad) at Github has
 several branches.
 
-#### ``develop``
+#### `develop`
 
 * This is the current (unreleased) development state of next major release
-  (this will become the new ``stable`` branch).
+  (this will become the new `stable` branch).
 * Don't use it for production!
 * Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
-#### ``stable``
+#### `stable`
 
 * This is the current stable release, e.g. Zammad 5.2.
 * Use this branch for production installations.
 * Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
-#### ``stable-x.y``
+#### `stable-x.y`
 
-* These are the branches of old versions of Zammad like ``stable-5.1`` for
+* These are the branches of old versions of Zammad like `stable-5.1` for
   Zammad 5.1.
 * No support for bug or security issues is provided.
 
@@ -72,8 +72,8 @@ The legacy documentation is hosted on Read the Docs. You can find it under:
 The documentation you are reading is available on next.zammad.org and zammad.org
 and is built via Vitepress. The source files are written in Markdown.
 Make sure to change the English source files only which are placed under
-``/src/en/``. The translations are made via Weblate and will overwrite
-any changes in the language specific folders (except ``/src/eng/``).
+`/src/en/`. The translations are made via Weblate and will overwrite
+any changes in the language specific folders (except `/src/eng/`).
 
 ### ReStructuredText markup
 
@@ -117,13 +117,13 @@ projects:
 Structure of translation projects in Weblate:
 
  * Documentation
-    * User Documentation (``latest``)
-    * User Documentation (``pre-release``)
-    * Admin Documentation (``latest``)
-    * Admin Documentation (``pre-release``)
+    * User Documentation (`latest`)
+    * User Documentation (`pre-release`)
+    * Admin Documentation (`latest`)
+    * Admin Documentation (`pre-release`)
  * Zammad
-    * Zammad (``develop``, development version)
-    * Zammad (``stable`` version)
+    * Zammad (`develop`, development version)
+    * Zammad (`stable` version)
     * *Some more which aren't relevant here*
 
 ::: tip
@@ -183,7 +183,7 @@ documentation projects (see RestructuredText_ for details):
 
 - **\`\`example-string\`\`**
 
-    This is rendered as ``example-string``. Depending on the context, it can be
+    This is rendered as `example-string`. Depending on the context, it can be
     translated or not. In any case, use the \`` before and after the string in
     your translation.
 

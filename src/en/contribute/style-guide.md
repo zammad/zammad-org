@@ -48,7 +48,7 @@ in the glossary and linked to
 
 | Type in Zammad | Highlighting                  | Markdown syntax                 |
 |----------------|-------------------------------|---------------------------------|
-| Buttons        | ``Sign in``                   | \`\`Sign in\`\`                 |
+| Buttons        | `Sign in`                   | \`\`Sign in\`\`                 |
 | Fields         | **Name**                      | \*\*Name\*\*                    |
 | Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
 

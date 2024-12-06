@@ -70,7 +70,7 @@ List your current locale settings:
 ``` bash
 locale | grep "LANG="
 ```
-If above does not return ``<lang_code>.utf8``, you can correct this
+If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
 ``` bash
@@ -88,7 +88,7 @@ List your current locale settings:
 ``` bash
 locale | grep "LANG="
 ```
-If above does not return ``<lang_code>.utf8``, you can correct this
+If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
 ``` bash
@@ -106,7 +106,7 @@ List your current locale settings:
 ``` bash
 localectl status | grep LANG
 ```
-If above does not return ``<lang_code>.utf8``, you can correct this
+If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
 ``` bash
@@ -118,7 +118,7 @@ List your current locale settings:
 ``` bash
 locale | grep "LANG="
 ```
-If above does not return ``<lang_code>.utf8``, you can correct this
+If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
 ``` bash
@@ -264,7 +264,7 @@ sudo chmod -R 755 /opt/zammad/public/
 ### Manage Services of Zammad
 
 Zammad uses three services. They can be (re)started & stopped with the
-parent ``zammad``:
+parent `zammad`:
 ```bash
 systemctl (status|start|stop|restart) zammad
 ```
@@ -340,7 +340,7 @@ above. If you want to connect Zammad to an already existing Elasticsearch
 instance, make sure to use a supported version and have a look at our
 [config example](/en/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are ``7.8`` - ``8.x``.
+Supported Elasticsearch versions are `7.8` - `8.x`.
 
 :::details Elasticsearch version history
 
@@ -356,7 +356,7 @@ Supported Elasticsearch versions are ``7.8`` - ``8.x``.
 | 2.0-3.0       | >= 2.4, <=5.6  |
 :::
 
-The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or
+The Elasticsearch plugin `ingest-attachment` is required for version 7 or
 older to index the contents of email attachments. Starting with
 Elasticsearch 8, it is included by default.
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-06 08:54+0000\n"
+"POT-Creation-Date: 2024-12-06 16:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,18 +204,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -295,7 +283,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/contribute/contribute.md:33
 #, markdown-text, no-wrap
-msgid "``develop``"
+msgid "`develop`"
 msgstr ""
 
 #. type: Bullet: '* '
@@ -303,7 +291,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "This is the current (unreleased) development state of next major release "
-"(this will become the new ``stable`` branch)."
+"(this will become the new `stable` branch)."
 msgstr ""
 
 #. type: Bullet: '* '
@@ -323,7 +311,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/contribute/contribute.md:40
 #, markdown-text, no-wrap
-msgid "``stable``"
+msgid "`stable`"
 msgstr ""
 
 #. type: Bullet: '* '
@@ -341,14 +329,14 @@ msgstr ""
 #. type: Title ####
 #: src/en/contribute/contribute.md:46
 #, markdown-text, no-wrap
-msgid "``stable-x.y``"
+msgid "`stable-x.y`"
 msgstr ""
 
 #. type: Bullet: '* '
 #: src/en/contribute/contribute.md:51
 #, markdown-text
 msgid ""
-"These are the branches of old versions of Zammad like ``stable-5.1`` for "
+"These are the branches of old versions of Zammad like `stable-5.1` for "
 "Zammad 5.1."
 msgstr ""
 
@@ -440,9 +428,8 @@ msgid ""
 "The documentation you are reading is available on next.zammad.org and "
 "zammad.org and is built via Vitepress. The source files are written in "
 "Markdown.  Make sure to change the English source files only which are "
-"placed under ``/src/en/``. The translations are made via Weblate and will "
-"overwrite any changes in the language specific folders (except "
-"``/src/eng/``)."
+"placed under `/src/en/`. The translations are made via Weblate and will "
+"overwrite any changes in the language specific folders (except `/src/eng/`)."
 msgstr ""
 
 #. type: Title ###
@@ -561,29 +548,29 @@ msgstr ""
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "User Documentation (``latest``)"
+msgid "User Documentation (`latest`)"
 msgstr ""
 
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "User Documentation (``pre-release``)"
+msgid "User Documentation (`pre-release`)"
 msgstr ""
 
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "Admin Documentation (``latest``)"
+msgid "Admin Documentation (`latest`)"
 msgstr ""
 
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "Admin Documentation (``pre-release``)"
+msgid "Admin Documentation (`pre-release`)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:128 src/en/reference/docker-env-vars.md:12
+#: src/en/contribute/contribute.md:128 src/en/reference/docker-env-vars.md:11
 #, markdown-text, no-wrap
 msgid "Zammad"
 msgstr ""
@@ -591,13 +578,13 @@ msgstr ""
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "Zammad (``develop``, development version)"
+msgid "Zammad (`develop`, development version)"
 msgstr ""
 
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:128
 #, markdown-text
-msgid "Zammad (``stable`` version)"
+msgid "Zammad (`stable` version)"
 msgstr ""
 
 #. type: Bullet: '    * '
@@ -757,7 +744,7 @@ msgstr ""
 #: src/en/contribute/contribute.md:189
 #, markdown-text, no-wrap
 msgid ""
-"    This is rendered as ``example-string``. Depending on the context, it can "
+"    This is rendered as `example-string`. Depending on the context, it can "
 "be\n"
 "    translated or not. In any case, use the \\`` before and after the string "
 "in\n"
@@ -944,7 +931,7 @@ msgid ""
 "| Type in Zammad | Highlighting                  | Markdown syntax                 "
 "|\n"
 "|----------------|-------------------------------|---------------------------------|\n"
-"| Buttons        | ``Sign in``                   | \\`\\`Sign in\\`\\`                 "
+"| Buttons        | `Sign in`                   | \\`\\`Sign in\\`\\`                 "
 "|\n"
 "| Fields         | **Name**                      | \\*\\*Name\\*\\*                    "
 "|\n"
@@ -1165,7 +1152,7 @@ msgstr ""
 msgid "You can either search them via search field or via overviews.\n"
 msgstr ""
 
-#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#. type: Fenced div block (tabs)
 #: src/en/documentation/use/faq.md:13 src/en/documentation/use/faq.md:17
 #: src/en/documentation/use/faq.md:21 src/en/documentation/use/faq.md:25
 #: src/en/documentation/use/faq.md:29 src/en/documentation/use/faq.md:33
@@ -1174,6 +1161,7 @@ msgstr ""
 #: src/en/documentation/use/faq.md:57 src/en/documentation/use/faq.md:61
 #: src/en/documentation/use/faq.md:65 src/en/documentation/use/faq.md:69
 #: src/en/documentation/use/faq.md:73
+#: src/en/tutorials/migrate-to-new-host.md:76
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -1671,9 +1659,9 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:34
 #, markdown-text
 msgid ""
-"In the Portainer GUI (e.g. ``https://yourdomain.tld:9443``), choose your "
-"target environment, select **Stacks** and choose ``Add stack`` as you can "
-"see in the screenshot below."
+"In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your "
+"target environment, select **Stacks** and choose `Add stack` as you can see "
+"in the screenshot below."
 msgstr ""
 
 #. type: Title ###
@@ -1688,9 +1676,9 @@ msgstr ""
 msgid ""
 "Switch to **Repository** build method and provide the information below: - "
 "**Name**: enter a desired name of the stack - **Repository URL**: "
-"``https://github.com/zammad/zammad-docker-compose`` - **Repository "
-"reference**: ``refs/heads/master`` - **Compose path**: "
-"``docker-compose.yml`` (default)"
+"`https://github.com/zammad/zammad-docker-compose` - **Repository "
+"reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml` "
+"(default)"
 msgstr ""
 
 #. type: Plain text
@@ -1715,7 +1703,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "After the stack is ready, you can access Zammad via the configured docker "
-"host and port, e.g. ``http://localhost:8080/``."
+"host and port, e.g. `http://localhost:8080/`."
 msgstr ""
 
 #. type: Plain text
@@ -1723,7 +1711,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot in the Stacks section and highlighted \"Add "
-"stack\".](/screenshots/installation/portainer-stacks.png \"Text here\")"
+"stack\".](/screenshots/installation/portainer-stacks.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1756,8 +1744,8 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:65
 #, markdown-text
 msgid ""
-"Make sure to run ``git pull`` frequently to fetch updates. Alternatively, "
-"you can download the files from the [releases "
+"Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
+"can download the files from the [releases "
 "page](https://github.com/zammad/zammad-docker-compose/releases)."
 msgstr ""
 
@@ -1781,13 +1769,13 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:73
 #, no-wrap
 msgid ""
-"If you want to use a ``.env`` file, you can use the provided ``.env.dist``\n"
-"file and copy it to ``.env``. That way it will be picked up by "
+"If you want to use a `.env` file, you can use the provided `.env.dist`\n"
+"file and copy it to `.env`. That way it will be picked up by "
 "Docker-Compose\n"
 "automatically and not overwritten during updates.\n"
 "\n"
-"Zammad runs on port ``8080`` by default. If you want to use another port,\n"
-"you can set it via the variable ``NGINX_EXPOSE_PORT``.\n"
+"Zammad runs on port `8080` by default. If you want to use another port,\n"
+"you can set it via the variable `NGINX_EXPOSE_PORT`.\n"
 msgstr ""
 
 #. type: Title ###
@@ -1821,8 +1809,8 @@ msgstr ""
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad docker stack, "
 "e.g. to include additional services. If you plan to do so, we recommend that "
-"you do not change the ``docker-compose.yml`` file, but instead create a "
-"local ``docker-compose.override.yml`` that includes all your modifications.  "
+"you do not change the `docker-compose.yml` file, but instead create a local "
+"`docker-compose.override.yml` that includes all your modifications.  "
 "Docker-Compose will [automatically load this file and merge its changes into "
 "your stack](https://docs.docker.com/compose/multiple-compose-files/merge/)."
 msgstr ""
@@ -1838,8 +1826,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "The docker entrypoint script sets up environment variables required by "
-"Zammad to function properly. That is why calling ``rails`` or ``rake`` on "
-"the console should be done via one of the following methods:"
+"Zammad to function properly. That is why calling `rails` or `rake` on the "
+"console should be done via one of the following methods:"
 msgstr ""
 
 #. type: Fenced code block (bash)
@@ -1864,8 +1852,7 @@ msgstr ""
 msgid ""
 "If you need to retrieve information from the rails server, you can, for "
 "example,\n"
-"place ``pp`` (pretty print) in front of your rails command. This leads to "
-"an\n"
+"place `pp` (pretty print) in front of your rails command. This leads to an\n"
 "output in your terminal.\n"
 msgstr ""
 
@@ -2005,6 +1992,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:59
+#: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
 msgid "Quick Start"
 msgstr ""
@@ -2026,7 +2014,7 @@ msgid ""
 "``` bash\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
-"If above does not return ``<lang_code>.utf8``, you can correct this\n"
+"If above does not return `<lang_code>.utf8`, you can correct this\n"
 "issue as follows:\n"
 "\n"
 "``` bash\n"
@@ -2044,7 +2032,7 @@ msgid ""
 "``` bash\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
-"If above does not return ``<lang_code>.utf8``, you can correct this\n"
+"If above does not return `<lang_code>.utf8`, you can correct this\n"
 "issue as follows:\n"
 "\n"
 "``` bash\n"
@@ -2062,7 +2050,7 @@ msgid ""
 "``` bash\n"
 "localectl status | grep LANG\n"
 "```\n"
-"If above does not return ``<lang_code>.utf8``, you can correct this\n"
+"If above does not return `<lang_code>.utf8`, you can correct this\n"
 "issue as follows:\n"
 "\n"
 "``` bash\n"
@@ -2074,7 +2062,7 @@ msgid ""
 "``` bash\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
-"If above does not return ``<lang_code>.utf8``, you can correct this\n"
+"If above does not return `<lang_code>.utf8`, you can correct this\n"
 "issue as follows:\n"
 "\n"
 "``` bash\n"
@@ -2269,7 +2257,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
-"parent ``zammad``:"
+"parent `zammad`:"
 msgstr ""
 
 #. type: Fenced code block (bash)
@@ -2374,14 +2362,14 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:300
-#: src/en/reference/docker-env-vars.md:81
+#: src/en/reference/docker-env-vars.md:80
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:300
-#: src/en/reference/docker-env-vars.md:107
+#: src/en/reference/docker-env-vars.md:106
 #: src/en/tutorials/webserver-config.md:109
 #, markdown-text, no-wrap
 msgid "Nginx"
@@ -2485,7 +2473,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/get-started/installation/package.md:339
 #, markdown-text
-msgid "Supported Elasticsearch versions are ``7.8`` - ``8.x``."
+msgid "Supported Elasticsearch versions are `7.8` - `8.x`."
 msgstr ""
 
 #. type: Fenced div block (details Elasticsearch version history)
@@ -2509,7 +2497,7 @@ msgstr ""
 #: src/en/get-started/installation/package.md:357
 #, markdown-text
 msgid ""
-"The Elasticsearch plugin ``ingest-attachment`` is required for version 7 or "
+"The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
 "Elasticsearch 8, it is included by default."
 msgstr ""
@@ -2713,9 +2701,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Be aware that you should not skip major Zammad versions while updating. That "
-"means, for example, your upgrade path from version ``2.4`` to ``5.1`` "
-"(assuming this is the current stable) would be: ``2.4`` → ``3.0`` → ``4.0`` "
-"→ ``5.0`` → ``latest stable (5.1)``"
+"means, for example, your upgrade path from version `2.4` to `5.1` (assuming "
+"this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` → "
+"`latest stable (5.1)`"
 msgstr ""
 
 #. type: Title ##
@@ -2731,7 +2719,7 @@ msgid "Stop Zammad"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/get-started/update.md:22
+#: src/en/get-started/update.md:22 src/en/tutorials/migrate-to-new-host.md:68
 #, no-wrap
 msgid "systemctl stop zammad\n"
 msgstr ""
@@ -2838,7 +2826,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:103
+#: src/en/get-started/update.md:103 src/en/tutorials/backup-restore.md:206
 #, markdown-text, no-wrap
 msgid "Additional Steps"
 msgstr ""
@@ -2908,8 +2896,8 @@ msgstr ""
 #: src/en/get-started/update.md:134
 #, markdown-text
 msgid ""
-"In your Zammad stack, click on ``Pull and redeploy``, activate **Re-pull "
-"image and redeploy** and click on ``Update``."
+"In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
+"and redeploy** and click on `Update`."
 msgstr ""
 
 #. type: Plain text
@@ -3134,9 +3122,10 @@ msgstr ""
 msgid "API"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/reference/config-env-variables.md:1
-#, no-wrap
+#. type: Title #
+#: src/en/reference/config-env-variables.md:1 src/en/reference/env-vars.md:1
+#: src/en/reference/env-vars.md:6
+#, markdown-text, no-wrap
 msgid "Environment Variables"
 msgstr ""
 
@@ -3147,7 +3136,7 @@ msgid "Docker Environment Variables"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:11
+#: src/en/reference/docker-env-vars.md:10
 #, markdown-text
 msgid ""
 "Find the available docker environment variables below with default values, "
@@ -3156,21 +3145,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:18
+#: src/en/reference/docker-env-vars.md:17
 #, markdown-text, no-wrap
 msgid ""
-"VERSION (\\<current stable version of Zammad\\>)\n"
-": Allows customization of the Zammad image tag. Example: ``6.3.1-54``.\n"
+"`VERSION` <Badge type=\"info\" text=\"<current stable version of "
+"Zammad>\"/>\n"
+": Allows customization of the Zammad image tag. Example: `6.3.1-54`.\n"
 "  This default version may be increased when you update your Zammad docker\n"
 "  stack. Please see the example env template for more details on this "
 "variable.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:23
+#: src/en/reference/docker-env-vars.md:22
 #, markdown-text, no-wrap
 msgid ""
-"AUTOWIZARD_JSON\n"
+"`AUTOWIZARD_JSON`\n"
 ": This variable allows you to provide initial configuration data for your\n"
 "  instance. Autowizard JSON is out of scope of this documentation, however "
 "this\n"
@@ -3178,129 +3168,130 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:27
+#: src/en/reference/docker-env-vars.md:26
 #, markdown-text, no-wrap
 msgid ""
-"ZAMMAD_WEB_CONCURRENCY\n"
-": Allows spawning ``n`` workers to allow more simultaneous connections for\n"
+"`ZAMMAD_WEB_CONCURRENCY`\n"
+": Allows spawning `n` workers to allow more simultaneous connections for\n"
 "  Zammad's  web UI.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:31
+#: src/en/reference/docker-env-vars.md:30
 #, markdown-text, no-wrap
 msgid ""
-"ZAMMAD_SESSION_JOBS_CONCURRENT\n"
-": Allows spawning ``n`` session job workers to release pressure from "
+"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
+": Allows spawning `n` session job workers to release pressure from "
 "Zammad's\n"
 "  background worker.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:35
+#: src/en/reference/docker-env-vars.md:34
 #, markdown-text, no-wrap
 msgid ""
-"ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS\n"
-": Allows spawning ``1`` independent scheduled job worker to reduce "
-"pressure\n"
+"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+": Allows spawning `1` independent scheduled job worker to reduce pressure\n"
 "  from Zammad's background worker.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:39
+#: src/en/reference/docker-env-vars.md:38
 #, markdown-text, no-wrap
 msgid ""
-"ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS\n"
+"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": Allows spawning n delayed job workers to reduce pressure from Zammad's\n"
 "  background worker.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:42
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:41
+#, markdown-text, no-wrap
 msgid ""
-"RAILS_TRUSTED_PROXIES (``['127.0.0.1', '::1']``)  : By default Zammad trusts "
-"localhost proxies only."
+"`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"['127.0.0.1', "
+"'::1']\"/>\n"
+": By default Zammad trusts localhost proxies only.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:45
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:44
+#, markdown-text, no-wrap
 msgid ""
-"MEMCACHE_SERVERS (``zammad-memcached:11211``)  : Provide your own Memcached "
-"instance to Zammad if you already have one."
+"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
+": Provide your own Memcached instance to Zammad if you already have one.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:49
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:48
+#, markdown-text, no-wrap
 msgid ""
-"REDIS_URL (``redis://zammad-redis:6379``)  : Provide your own Redis instance "
-"if you already have one. Please note that this method currently does not "
-"allow authentication."
+"`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
+": Provide your own Redis instance if you already have one. Please note "
+"that\n"
+"this method currently does not allow authentication.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-env-vars.md:50
+#: src/en/reference/docker-env-vars.md:49
 #, markdown-text, no-wrap
 msgid "Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:55
-#, markdown-text
-msgid ""
-"ELASTICSEARCH_ENABLED (``true``)  : Setting this variable to false will "
-"allow you to run your Zammad without Elasticsearch. Please note that we "
-"strongly advise against doing so."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:58
-#, markdown-text
-msgid ""
-"ELASTICSEARCH_HOST ()``zammad-elasticsearch``)  : Provide a host name or "
-"address to your external Elasticsearch cluster."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:61
-#, markdown-text
-msgid ""
-"ELASTICSEARCH_PORT (``9200``)  : Provide a different port for Elasticsearch "
-"if needed."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:64
-#, markdown-text
-msgid ""
-"ELASTICSEARCH_SCHEMA (``http``)  : By default, Elasticsearch is reachable "
-"via HTTP."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:68
+#: src/en/reference/docker-env-vars.md:54
 #, markdown-text, no-wrap
 msgid ""
-"ELASTICSEARCH_NAMESPACE (``zammad``)\n"
+"`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
+": Setting this variable to false will allow you to run your Zammad without\n"
+"Elasticsearch. Please note that we strongly advise against doing so.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:57
+#, markdown-text, no-wrap
+msgid ""
+"`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
+": Provide a host name or address to your external Elasticsearch cluster.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:60
+#, markdown-text, no-wrap
+msgid ""
+"`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
+": Provide a different port for Elasticsearch if needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:63
+#, markdown-text, no-wrap
+msgid ""
+"`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
+": By default, Elasticsearch is reachable via HTTP.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:67
+#, markdown-text, no-wrap
+msgid ""
+"`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
 ": With this name space all Zammad related indexes will be created. Change "
 "this\n"
 "  if you're using external clusters.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:72
+#: src/en/reference/docker-env-vars.md:71
 #, markdown-text, no-wrap
 msgid ""
-"ELASTICSEARCH_REINDEX (``true``)\n"
+"`ELASTICSEARCH_REINDEX` <Badge type=\"info\" text=\"true\"/>\n"
 ": By default the docker-compose will always re-index upon a restart. On "
 "big\n"
 "  installations, this may be troublesome.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:72
+#: src/en/reference/docker-env-vars.md:71
 #, no-wrap
 msgid ""
 "  Disabling this setting requires you to re-index your search index "
@@ -3309,74 +3300,83 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:80
+#: src/en/reference/docker-env-vars.md:79
 #, markdown-text, no-wrap
 msgid ""
-"ELASTICSEARCH_SSL_VERIFY (``true``)\n"
+"`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
 ": Allows you to let the compose scripts ignore self signed SSL "
 "certificates\n"
 "  for your Elasticsearch installation if needed.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:85
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:84
+#, markdown-text, no-wrap
 msgid ""
-"POSTGRESQL_HOST (``zammad-postgresql``)  : Host name of your PostgreSQL "
-"server. Use your own if you already have one."
+"`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
+": Host name of your PostgreSQL server. Use your own if you already have "
+"one.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:88
-#, markdown-text
-msgid "POSTGRESQL_PORT (``5432``)  : Adjust the Port of your PostgreSQL server."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:91
-#, markdown-text
-msgid "POSTGRESQL_USER (``zammad``)  : The database user for Zammad."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:94
-#, markdown-text
-msgid "POSTGRESQL_PASS (``zammad``)  : The password of Zammads database user."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:97
-#, markdown-text
-msgid "POSTGRESQL_DB (``zammad_production``)  : Zammads database to use."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:100
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:87
+#, markdown-text, no-wrap
 msgid ""
-"POSTGRESQL_OPTIONS (``?pool=50``)  : Additional postgresql parameters to be "
-"appended to the database URI."
+"`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
+": Adjust the Port of your PostgreSQL server.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:103
-#, markdown-text
+#: src/en/reference/docker-env-vars.md:90
+#, markdown-text, no-wrap
 msgid ""
-"POSTGRESQL_DB_CREATE (``true``)  : By default Zammad creates the required "
-"database."
+"`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
+": The database user for Zammad.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:93
+#, markdown-text, no-wrap
+msgid ""
+"`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
+": The password of Zammads database user.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:96
+#, markdown-text, no-wrap
+msgid ""
+"`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
+": Zammads database to use.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:99
+#, markdown-text, no-wrap
+msgid ""
+"`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
+": Additional postgresql parameters to be appended to the database URI.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:102
+#, markdown-text, no-wrap
+msgid ""
+"`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
+": By default Zammad creates the required database.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:103
+#: src/en/reference/docker-env-vars.md:102
 #, no-wrap
 msgid "  On dedicated database servers, this setting might be troublesome.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:113
+#: src/en/reference/docker-env-vars.md:112
 #, markdown-text, no-wrap
 msgid ""
-"NGINX_EXPOSE_PORT (``8080``)\n"
+"`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
 ": The port to be exposed for accessing the Zammad stack from "
 "outside. Change\n"
 "  this to another value if you already have an existing service listening "
@@ -3385,59 +3385,2090 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:116
-#, markdown-text
-msgid "NGINX_PORT (``8080``)  : The internal port the nginx service will listen on."
+#: src/en/reference/docker-env-vars.md:115
+#, markdown-text, no-wrap
+msgid ""
+"`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
+": The internal port the nginx service will listen on.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:120
+#: src/en/reference/docker-env-vars.md:119
 #, markdown-text, no-wrap
 msgid ""
-"NGINX_SERVER_NAME (``_``)\n"
+"`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
 ": By default the Nginx container of Zammad will respond to all "
 "request. You\n"
 "  can provide your IP / FQDN if you want to.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:125
+#: src/en/reference/docker-env-vars.md:124
 #, markdown-text, no-wrap
 msgid ""
-"NGINX_SERVER_SCHEME (``\\$scheme``)\n"
+"`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
 ": If the Nginx container for Zammad is not the upstream server (means if "
 "you\n"
 "  are using another proxy in front of nginx) you might want to change "
 "this.\n"
-"  You can set the correct scheme ``http`` or ``https`` if needed.\n"
+"  You can set the correct scheme `http` or `https` if needed.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:128
+#: src/en/reference/docker-env-vars.md:127
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" "
+"text=\"zammad-railsserver\"/>\n"
+": Host name of the rails server container.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:130
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+": Port of Zammads rails server.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:133
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
+": Host name of Zammads websocket server.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:135
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+": Port of Zammad's websocket server.\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/es-indexed-attributes.md:1
+#: src/en/reference/es-indexed-attributes.md:6
+#, markdown-text, no-wrap
+msgid "Elasticsearch Indexed Attributes"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:12
 #, markdown-text
 msgid ""
-"ZAMMAD_RAILSSERVER_HOST (``zammad-railsserver``)  : Host name of the rails "
-"server container."
+"You can find a comprehensive list of all default object attributes indexed "
+"by Elasticsearch below. In other words, if you wish to find a ticket, "
+"article, or user via the Zammad search box, Elasticsearch can match on any "
+"(or all) of the fields below."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/es-indexed-attributes.md:13
+#, no-wrap
+msgid ""
+"\n"
+"- <Badge type=\"info\" text=\"SLA\"/>: Attributes marked as SLA are only set "
+"if\n"
+"  the ticket is affected by SLA calculation. Please note that some "
+"attributes\n"
+"  may not be set if specific conditions are not met.\n"
+"- Also note that some attributes may be reset to `null` if no longer "
+"applicable.\n"
+"- `note` attribute: Note attributes usually are empty if not specified via "
+"console or API.\n"
+"- Timestamps: All timestamps provided by Zammad are UTC by default. This "
+"also\n"
+"  applies to times provided by Elasticsearch\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:131
-#, markdown-text
-msgid "ZAMMAD_RAILSSERVER_PORT (``3000``)  : Port of Zammads rails server."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:134
+#: src/en/reference/es-indexed-attributes.md:25
 #, markdown-text
 msgid ""
-"ZAMMAD_WEBSOCKET_HOST (``zammad-websocket``)  : Host name of Zammads "
-"websocket server."
+"The attributes, example values and description below are constructed like "
+"that:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:136
+#: src/en/reference/es-indexed-attributes.md:29
+#, markdown-text, no-wrap
+msgid ""
+"`attribute`\n"
+": - `1`, `null`\n"
+"  - This is the description of the attribute, if available.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:30
+#, markdown-text, no-wrap
+msgid "Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:33
+#: src/en/reference/es-indexed-attributes.md:396
 #, markdown-text
-msgid "ZAMMAD_WEBSOCKET_PORT (``6042``)  : Port of Zammad's websocket server."
+msgid "The following index contains below mentioned information: `*_ticket`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:37
+#, markdown-text, no-wrap
+msgid ""
+"`article`\n"
+": - Array with all articles belonging to the ticket\n"
+"  - See [article section ](#article) for more details.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:41
+#, markdown-text, no-wrap
+msgid ""
+"`article_count`\n"
+": - `1`\n"
+"  - Number of articles within the ticket\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:47
+#, markdown-text, no-wrap
+msgid ""
+"`checklist`\n"
+": - Contains these attributes:\n"
+"    - name: `null`, `Checklist title`;\n"
+"    - items: `(array)`\n"
+"  - Items array contains the text of the items\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:51
+#, markdown-text, no-wrap
+msgid ""
+"`close_at`\n"
+": - `null`, `2021-03-03T14:50:20.673Z`\n"
+"  - First close time, set once\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:56
+#, markdown-text, no-wrap
+msgid ""
+"`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `239`, `-5`\n"
+"  - Depends on close_in_min and tells how many minutes the ticket was "
+"closed\n"
+"    relative to SLAs solution time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:60
+#, markdown-text, no-wrap
+msgid ""
+"`close_escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `2021-03-03T15:50:20.673Z`\n"
+"  - Time stamp when the ticket would escalate in case solution time is "
+"violated.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:64
+#, markdown-text, no-wrap
+msgid ""
+"`close_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `11`\n"
+"  - Value in minutes for how long the ticket was open based on business "
+"hours.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:75
+#, markdown-text, no-wrap
+msgid ""
+"`create_article_sender`\n"
+": - Contains these attributes:\n"
+"      - note: `null`\n"
+"      - updated_at: `2021-03-03T14:50:20.812Z`\n"
+"      - name: `Customer`\n"
+"      - created_at: `2021-03-03T14:50:20.812Z`\n"
+"      - updated_by_id: `1`\n"
+"      - id: `2`\n"
+"      - created_by_id: `1`\n"
+"  - Sender of the article (System, Agent, Customer)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:79
+#, markdown-text, no-wrap
+msgid ""
+"`create_article_sender_id`\n"
+": - `1`, `2`\n"
+"  - ID of the user that created the article.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:92
+#, markdown-text, no-wrap
+msgid ""
+"`create_article_type`\n"
+": - Contains these attributes:\n"
+"    - note: `null`\n"
+"    - updated_at: `2021-03-03T14:50:20.812Z`\n"
+"    - name: `phone`, `email`, `web`\n"
+"    - active: `true`\n"
+"    - created_at: `2021-03-03T14:50:20.812Z`\n"
+"    - updated_by_id: `1`\n"
+"    - id: `5`\n"
+"    - created_by_id: `1`\n"
+"    - communication: `true`, `false`\n"
+"    - Information of first article type and nature\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:96
+#, markdown-text, no-wrap
+msgid ""
+"`create_article_type_id`\n"
+": - `5`\n"
+"  - Type ID of first article\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:100
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-24T16:17:27.210Z`\n"
+"  - Time stamp of ticket creation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:105
+#, markdown-text, no-wrap
+msgid ""
+"`created_by`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete Payload of user that created the ticket. Have a look at the\n"
+"    [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:109
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `3`\n"
+"  - User ID that created the ticket.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:114
+#, markdown-text, no-wrap
+msgid ""
+"`customer`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete payload of the customer that created the ticket. Have a look at "
+"the\n"
+"    [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:118
+#, markdown-text, no-wrap
+msgid ""
+"`customer_id`\n"
+": - `8`\n"
+"  - Customers User ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:126
+#, markdown-text, no-wrap
+msgid ""
+"`escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `2021-03-24T16:28:38.535Z`\n"
+"  - Time stamp of the next applicable escalation. One of the following\n"
+"    attributes:\n"
+"      - `close_escalation_at`\n"
+"      - `first_response_escalation_at`\n"
+"      - `update_escalation_at`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:130
+#, markdown-text, no-wrap
+msgid ""
+"`first_response_at` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Time stamp of the first communication type reaction to the customer.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:135
+#, markdown-text, no-wrap
+msgid ""
+"`first_response_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `10`, `-6`\n"
+"  - Depends on `first_response_in_min` and tells how many minutes the "
+"tickets\n"
+"    first response took relative to the first response time of your SLA.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:140
+#, markdown-text, no-wrap
+msgid ""
+"`first_response_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `11`\n"
+"  - Value in minutes for how long the first response took based on the\n"
+"    business hours.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:145
+#, markdown-text, no-wrap
+msgid ""
+"`group`\n"
+": - \\#\\{group object\\}\n"
+"  - Complete payload of the current tickets group. Have a look at the\n"
+"    [group section](#group) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:149
+#, markdown-text, no-wrap
+msgid ""
+"`group_id`\n"
+": - `1`\n"
+"  - ID of the current group\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:153
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+"- : `1`, `111`\n"
+"  - ID of the Ticket\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:157
+#, markdown-text, no-wrap
+msgid ""
+"`last_close_at`\n"
+": - `null`, `2021-03-03T14:50:20.673Z`\n"
+"  - Last close time, set on each closing of ticket.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:161
+#, markdown-text, no-wrap
+msgid ""
+"`last_contact_agent_at`\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Time stamp of last communication type contact of any agent.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:167
+#, markdown-text, no-wrap
+msgid ""
+"`last_contact_at`\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Time stamp of last communication type contact. Depends on\n"
+"    `last_contact_agent_at`, `last_contact_customer_at` and\n"
+"    “Ticket Last Contact Behavior” setting.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:171
+#, markdown-text, no-wrap
+msgid ""
+"`last_contact_customer_at`\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Time stamp of last communication type contact of customer.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:175
+#, markdown-text, no-wrap
+msgid ""
+"`mention_user_ids`\n"
+": - `[3, 5]`\n"
+"  - Array with mentioned or subscribed users IDs.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:179
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `null`\n"
+"  - Note of ticket, only set via console or API.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:183
+#, markdown-text, no-wrap
+msgid ""
+"`number`\n"
+": - `1010138`, `202006231010138`\n"
+"  - Ticket number\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:188
+#, markdown-text, no-wrap
+msgid ""
+"`organization`\n"
+": - `null`, \\#\\{organization object\\}\n"
+"  - Complete payload of user that owns the ticket. Have a look at the\n"
+"    [organization section](#organization) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:192
+#, markdown-text, no-wrap
+msgid ""
+"`organization_id`\n"
+": - `null`, `2`\n"
+"  - ID of the customers organization\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:197
+#, markdown-text, no-wrap
+msgid ""
+"`owner`\n"
+": - `null`, \\#\\{user object\\}\n"
+"  - Complete payload of user that owns the ticket. Have a look at the\n"
+"    [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:201
+#, markdown-text, no-wrap
+msgid ""
+"`owner_id`\n"
+": - `null`, `3`\n"
+"  - User ID of the ticket owner\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:205
+#, markdown-text, no-wrap
+msgid ""
+"`pending_time`\n"
+": - `null`, `2021-03-24T17:44:06.912Z`\n"
+"  - Depends on pending states and time stamp for pending time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:210
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": - n/a, special information for internal functions\n"
+"  - May not be available in your system, contains information for internal\n"
+"    system functions.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:215
+#, markdown-text, no-wrap
+msgid ""
+"`priority`\n"
+": - \\#\\{priority object\\}\n"
+"  - Complete payload of priority of ticket. Have a look at the\n"
+"    [priority section](#ticket-priority) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:219
+#, markdown-text, no-wrap
+msgid ""
+"`priority_id`\n"
+": - `2`\n"
+"  - Priority ID of the ticket.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:224
+#, markdown-text, no-wrap
+msgid ""
+"`state`\n"
+": - \\#\\{state object\\}\n"
+"  - Complete payload of current ticket state. Have a look at the\n"
+"    [state section](#ticket-state) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:228
+#, markdown-text, no-wrap
+msgid ""
+"`state_id`\n"
+": - `1`, `4`\n"
+"  - ID of current ticket state\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:232
+#, markdown-text, no-wrap
+msgid ""
+"`tags`\n"
+": - `[\"order\", \"americano\"]`\n"
+"  - Array with all attached tags.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:236
+#, markdown-text, no-wrap
+msgid ""
+"`time_unit`\n"
+": - `null`, `15`\n"
+"  - Accounted time units for ticket (total).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:240
+#, markdown-text, no-wrap
+msgid ""
+"`title`\n"
+": - `Feedback Form`, `Need help`\n"
+"  - Title/subject of Ticket\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:244
+#, markdown-text, no-wrap
+msgid ""
+"`type`\n"
+": - `null`\n"
+"  - Ticket type (deprecated)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:249
+#, markdown-text, no-wrap
+msgid ""
+"`update_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Depends on `update_in_min` and tells how many minutes the last ticket\n"
+"    update took relatively to the update time setting.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:253
+#, markdown-text, no-wrap
+msgid ""
+"`update_escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `2021-03-24T16:28:38.303Z`\n"
+"  - Time stamp when the ticket would escalate in case update time is "
+"violated.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:258
+#, markdown-text, no-wrap
+msgid ""
+"`update_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
+": - `null`, `5`, `-10`\n"
+"  - Value in minutes for how long the last ticket update took based on the\n"
+"    business hours and update time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:262
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-24T16:28:38.303Z`\n"
+"  - Last ticket update\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:267
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete payload of the user that updated the ticket. Have a look at "
+"the\n"
+"    [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:271
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `1`, `3`\n"
+"  - User ID that updated the ticket.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:272
+#, markdown-text, no-wrap
+msgid "Ticket Priority"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:275
+#, markdown-text
+msgid ""
+"The following index contains below mentioned information: "
+"`*_ticket_priority`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:279
+#, markdown-text, no-wrap
+msgid ""
+"`active`\n"
+": - `true`, `false`\n"
+"  - Defines if the priority is active (available).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:283
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-03T14:50:20.724Z`\n"
+"  - Creation date of priority\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:287
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `1`\n"
+"  - User that created priority\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:291
+#, markdown-text, no-wrap
+msgid ""
+"`default_create`\n"
+": - `false`, `true`\n"
+"  - Defines if priority is default priority upon ticket creation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:295
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `3`\n"
+"  - ID of priority\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:299
+#, markdown-text, no-wrap
+msgid ""
+"`name`\n"
+": - `3 high`\n"
+"  - Priority name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:303
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `null`\n"
+"  - Note for priority that has been set via console or API.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:307
+#, markdown-text, no-wrap
+msgid ""
+"`ui_color`\n"
+": - `null`, `high-priority`\n"
+"  - CSS class for tickets of priority.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:311
+#, markdown-text, no-wrap
+msgid ""
+"`ui_icon`\n"
+": - `null`, `important`\n"
+"  - CSS class for ticket icons of priority.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:315
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-03T14:50:20.724Z`\n"
+"  - Date of last change\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:319
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `1`\n"
+"  - User ID of user last updating the priority\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:321
+#, markdown-text, no-wrap
+msgid "Ticket State"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:324
+#, markdown-text
+msgid "The following index contains below mentioned information: `*_ticket_state`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:328
+#, markdown-text, no-wrap
+msgid ""
+"`active`\n"
+": - `true`, `false`\n"
+"  - Defines if state is active (available)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:332
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-03T14:50:20.694Z`\n"
+"  - Creation date\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:336
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `1`\n"
+"  - User ID that created state\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:340
+#, markdown-text, no-wrap
+msgid ""
+"`default_create`\n"
+": - `false`, `true`\n"
+"  - Defines if the state is the default state upon ticket creation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:344
+#, markdown-text, no-wrap
+msgid ""
+"`default_follow_up`\n"
+": - `false`, `true`\n"
+"  - Defines if the state is the default follow up state on ticket follow "
+"ups.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:348
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `7`\n"
+"  - State ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:352
+#, markdown-text, no-wrap
+msgid ""
+"`ignore_escalation`\n"
+": - `false`, `true`\n"
+"  - Defines if SLA calculation is generally ignored for this state.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:356
+#, markdown-text, no-wrap
+msgid ""
+"`name`\n"
+": - `pending close`\n"
+"  - State name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:361
+#, markdown-text, no-wrap
+msgid ""
+"`next_state`\n"
+": - n/a, \\#\\{state object\\}\n"
+"  - Contains all follow up state information if applicable, may not be\n"
+"    available depending on the state type\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:365
+#, markdown-text, no-wrap
+msgid ""
+"`next_state_id`\n"
+": - `null`, `4`\n"
+"  - State ID of follow up state\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:369
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `null`\n"
+"  - Note that has been set via console or API.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:380
+#, markdown-text, no-wrap
+msgid ""
+"`state_type`\n"
+": - Contains these attributes:\n"
+"     - created_at: `2021-03-03T14:50:20.582Z`\n"
+"     - created_by_id: `1`\n"
+"     - id: `4`\n"
+"     - name: `pending action`\n"
+"     - note: `null`\n"
+"     - updated_at: `2021-03-03T14:50:20.582Z`\n"
+"     - updated_by_id: `1`\n"
+"  - Contains all available information of the states type\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:384
+#, markdown-text, no-wrap
+msgid ""
+"`state_type_id`\n"
+": - `4`\n"
+"  - ID of the state type\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:388
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-03T14:50:20.694Z`\n"
+"  - Last update of state\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:392
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `1`\n"
+"  - User ID that updated the state last\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:393
+#, markdown-text, no-wrap
+msgid "Article"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:399
+#, markdown-text
+msgid ""
+"Articles are part of the ticket index. To reduce complexity we decided to "
+"provide it in its own table."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:403
+#, markdown-text, no-wrap
+msgid ""
+"`body`\n"
+": - `Hi,\\n\\nplease send me:\\n1 [...] \\nThank you\\n\\nJohn Doe`\n"
+"  - Article body in plain text\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:407
+#, markdown-text, no-wrap
+msgid ""
+"`cc`\n"
+": - `null`, `alias@domain.tld`\n"
+"  - Email-Addresses set as CC (String)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:411
+#, markdown-text, no-wrap
+msgid ""
+"`content_type`\n"
+": - `text/html`\n"
+"  - Content type of article\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:415
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-22T03:47:59.290Z`\n"
+"  - Time stamp of article creation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:419
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `10`\n"
+"  - User ID that created the article\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:423
+#, markdown-text, no-wrap
+msgid ""
+"`from`\n"
+": - `John Doe <john.doe@example.com>`\n"
+"  - From field of article creator\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:427
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `16`\n"
+"  - Internal article ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:431
+#, markdown-text, no-wrap
+msgid ""
+"`in_reply_to`\n"
+": - `null`\n"
+"  - In-Reply-To Header from emails if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:435
+#, markdown-text, no-wrap
+msgid ""
+"`internal`\n"
+": - `false`, `true`\n"
+"  - Defines if article is internal\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:439
+#, markdown-text, no-wrap
+msgid ""
+"`message_id`\n"
+": - `null`\n"
+"  - Message ID of Email if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:443
+#, markdown-text, no-wrap
+msgid ""
+"`origin_by_id`\n"
+": - `null`\n"
+"  - User ID or original creator if created on behalf another user\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:447
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": - `{}`\n"
+"  - Internal preferences, may be empty, mainly for delivery states\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:451
+#, markdown-text, no-wrap
+msgid ""
+"`reply_to`\n"
+": - `null`\n"
+"  - Contains reply to header if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:455
+#, markdown-text, no-wrap
+msgid ""
+"`sender_id`\n"
+": - `2`\n"
+"  - ID of sender type (Customer, System, Agent)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:459
+#, markdown-text, no-wrap
+msgid ""
+"`subject`\n"
+": - `My amazing subject`\n"
+"  - Article subject\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:463
+#, markdown-text, no-wrap
+msgid ""
+"`ticket_id`\n"
+": - `9`\n"
+"  - Ticket ID the article belongs to\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:467
+#, markdown-text, no-wrap
+msgid ""
+"`to`\n"
+": - `support@example.com`\n"
+"  - EMail address from TO-Header\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:471
+#, markdown-text, no-wrap
+msgid ""
+"`type_id`\n"
+": - `1`\n"
+"  - ID of articles Type (phone, email, web, …)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:475
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-22T03:47:59.290Z`\n"
+"  - Last update\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:479
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `10`\n"
+"  - User that updated article\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:481
+#, markdown-text, no-wrap
+msgid "User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:486
+#, markdown-text, no-wrap
+msgid ""
+"`active`\n"
+": - `true`, `false`\n"
+"  - Defines if user is active\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:490
+#, markdown-text, no-wrap
+msgid ""
+"`address`\n"
+": - `\"\"`, `Unter den Linden 1,\\n10178 Berlin`\n"
+"  - Address string\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:494
+#, markdown-text, no-wrap
+msgid ""
+"`city`\n"
+": - `\"\"`, `Berlin`\n"
+"  - City string\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:498
+#, markdown-text, no-wrap
+msgid ""
+"`country`\n"
+": - `\"\"`, `Germany`\n"
+"  - Country string\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:502
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-22T12:47:56.460Z`\n"
+"  - Creation date of user\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:506
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `1`\n"
+"  - User ID that created the user\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:510
+#, markdown-text, no-wrap
+msgid ""
+"`department`\n"
+": - `\"\"`, `IT`\n"
+"  - Department string\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:514
+#, markdown-text, no-wrap
+msgid ""
+"`email`\n"
+": - `\"\"`, `alias@domain.tld`\n"
+"  - EMail Address of user, if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:518
+#, markdown-text, no-wrap
+msgid ""
+"`fax`\n"
+": - `\"\"`, `1234`\n"
+"  - Fax number\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:522
+#, markdown-text, no-wrap
+msgid ""
+"`firstname`\n"
+": - `null`, `John`\n"
+"  - Users first name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:526
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `8`\n"
+"  - Internal User ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:530
+#, markdown-text, no-wrap
+msgid ""
+"`last_login`\n"
+": - `null`, `2021-03-23T12:47:56.460Z`\n"
+"  - Updated upon every user login\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:534
+#, markdown-text, no-wrap
+msgid ""
+"`lastname`\n"
+": - `null`, `Doe`\n"
+"  - Users last name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:538
+#, markdown-text, no-wrap
+msgid ""
+"`login`\n"
+": - `auto-1234567`, `jdoe`\n"
+"  - Login name, always set and unique, can differ from email\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:542
+#, markdown-text, no-wrap
+msgid ""
+"`mobile`\n"
+": - `\"\"`, `1232`\n"
+"  - Mobile phone number\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:546
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `\"\"`\n"
+"  - Note being available via web, console and API\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:551
+#, markdown-text, no-wrap
+msgid ""
+"`organization`\n"
+": - \\#\\{organization object\\}\n"
+"  - Complete payload of the organization the user is member of. Have a "
+"look\n"
+"    at the [organization section](#organization) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:555
+#, markdown-text, no-wrap
+msgid ""
+"`organization_id`\n"
+": - `3`\n"
+"  - ID of organization the user is member of\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:559
+#, markdown-text, no-wrap
+msgid ""
+"`out_of_office`\n"
+": - `false`, `true`\n"
+"  - Defines if user has activated out of office function\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:563
+#, markdown-text, no-wrap
+msgid ""
+"`out_of_office_end_at`\n"
+": - `null`, `2021-03-26`\n"
+"  - Ending date out of office\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:567
+#, markdown-text, no-wrap
+msgid ""
+"`out_of_office_replacement_id`\n"
+": - `null`, `3`\n"
+"  - User ID that replaces this user during out of office period\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:571
+#, markdown-text, no-wrap
+msgid ""
+"`out_of_office_start_at`\n"
+": - `null`, `2021-03-24`\n"
+"  - Begin date out of office\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:575
+#, markdown-text, no-wrap
+msgid ""
+"`permissions`\n"
+": - (Array)\n"
+"  - Array with all permissions of the user\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:579
+#, markdown-text, no-wrap
+msgid ""
+"`phone`\n"
+": - `\"\"`, `0049 30 1234 5666`\n"
+"  - Phone number of user\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:584
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": - `{}`, \\#\\{several preference attributes\\}\n"
+"  - Depends on user and situation, may contain `notification_config`,\n"
+"    `locale` and other internal system information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:588
+#, markdown-text, no-wrap
+msgid ""
+"`role_ids`\n"
+": - (Array), `[1, 2]`\n"
+"  - Contains array with role IDs assigned to the user.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:592
+#, markdown-text, no-wrap
+msgid ""
+"`street`\n"
+": - `\"\"`\n"
+"  - Street\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:596
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-25T00:27:52.308Z`\n"
+"  - Time stamp of last update\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:600
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `3`\n"
+"  - User ID that updated this entry\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:604
+#, markdown-text, no-wrap
+msgid ""
+"`verified`\n"
+": - `false`, `true`\n"
+"  - Defines if the user has verified the account\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:608
+#, markdown-text, no-wrap
+msgid ""
+"`vip`\n"
+": - `false`, `true`\n"
+"  - Defines if user has VIP state\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:612
+#, markdown-text, no-wrap
+msgid ""
+"`web`\n"
+": - `\"\"`, `https://zammad.org`\n"
+"  - Web URL of User\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:616
+#, markdown-text, no-wrap
+msgid ""
+"`zip`\n"
+": - `\"\"`, `10123`\n"
+"  - ZIP code\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:618
+#, markdown-text, no-wrap
+msgid "Organization"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:621
+#, markdown-text
+msgid "The following index contains below mentioned information: `*_organization`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:626
+#, markdown-text, no-wrap
+msgid ""
+"`active`\n"
+": - `true`, `false`\n"
+"  - Defines if organization is active\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:630
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-22T12:47:54.807Z`\n"
+"  - Creation date\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:635
+#, markdown-text, no-wrap
+msgid ""
+"`created_by`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete Payload of the user that created the organization. Have a look "
+"at\n"
+"    the [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:639
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `1`\n"
+"  - User ID that created the organization\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:643
+#, markdown-text, no-wrap
+msgid ""
+"`domain`\n"
+": - `null`, `example.com`\n"
+"  - Organizations domain\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:647
+#, markdown-text, no-wrap
+msgid ""
+"`domain_assignment`\n"
+": - `false`, `true`\n"
+"  - Domain assignment depends on domain\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:651
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `1`\n"
+"  - Organization ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:656
+#, markdown-text, no-wrap
+msgid ""
+"`members`\n"
+": - \\#\\{array of user objects\\}\n"
+"  - Array with complete payload of the users being member of the "
+"organization.\n"
+"    Have a look at the [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:660
+#, markdown-text, no-wrap
+msgid ""
+"`name`\n"
+": - `Fast Lane Hardware Inc.`\n"
+"  - Organization name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:664
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `IT hardware and custom PC builds`\n"
+"  - Note being available via web, console and API\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:668
+#, markdown-text, no-wrap
+msgid ""
+"`shared`\n"
+": - `true`, `false`\n"
+"  - Defines if the organization is a sharing one\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:672
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-22T12:47:54.807Z`\n"
+"  - Last update time\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:677
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete Payload of the user that updated the organization. Have a look "
+"at\n"
+"    the [user section](#user) for more information.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:681
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `1`\n"
+"  - User ID that updated the organization\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:685
+#, markdown-text, no-wrap
+msgid ""
+"`vip`\n"
+": - `true`, `false`\n"
+"  - Defines if the organization has VIP status.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:686
+#, markdown-text, no-wrap
+msgid "Group"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:689
+#, markdown-text
+msgid "The following index contains below mentioned information: `*_group`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:693
+#, markdown-text, no-wrap
+msgid ""
+"`active`\n"
+": - `true`, `false`\n"
+"  - Defines if group is active (available)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:697
+#, markdown-text, no-wrap
+msgid ""
+"`assignment_timeout`\n"
+": - `null`, `30`\n"
+"  - Time in minutes an agent can be inactive until the owner ship is "
+"removed\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:701
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-24T23:55:06.980Z`\n"
+"  - Time stamp of group creation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:705
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `1`\n"
+"  - User ID that created the group\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:720
+#, markdown-text, no-wrap
+msgid ""
+"`email_address`\n"
+": - Contains these attributes:\n"
+"    - active: `true`\n"
+"    - channel_id: `3`\n"
+"    - created_at: `2021-03-24T23:54:58.187Z`\n"
+"    - created_by_id: `3`\n"
+"    - email: `alias@domain.tld`\n"
+"    - id: `1`\n"
+"    - note: `null`\n"
+"    - realname: `Zammad GmbH`\n"
+"    - updated_at: `2021-03-24T23:54:58.187Z`\n"
+"    - updated_by_id: `3`\n"
+"    - preferences: `null`\n"
+"  - Contains all available information of the groups email address\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:724
+#, markdown-text, no-wrap
+msgid ""
+"`email_address_id`\n"
+": - `3`\n"
+"  - ID of email address\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:728
+#, markdown-text, no-wrap
+msgid ""
+"`follow_up_assignment`\n"
+": - `true`, f`alse\n"
+"  - Defines if owners are still assigned after follow ups.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:732
+#, markdown-text, no-wrap
+msgid ""
+"`follow_up_possible`\n"
+": - `yes`, `no`\n"
+"  - Defines if following up on a closed ticket is possible.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:736
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `1`\n"
+"  - Group ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:740
+#, markdown-text, no-wrap
+msgid ""
+"`name`\n"
+": - `Support`, `IT`\n"
+"  - Group name\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:744
+#, markdown-text, no-wrap
+msgid ""
+"`note`\n"
+": - `null`\n"
+"  - Notes for the group available via web, console and API\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:757
+#, markdown-text, no-wrap
+msgid ""
+"`signature`\n"
+": - Contains these attributes:\n"
+"    - active: `true`\n"
+"    - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane "
+"Hardware`\n"
+"    - created_at: 2`021-03-03T14:50:19.775Z`\n"
+"    - created_by_id: `1`\n"
+"    - id: `1`\n"
+"    - name: `default`\n"
+"    - note: `null`\n"
+"    - updated_at: `2021-03-03T14:50:19.775Z`\n"
+"    - updated_by_id: `1`\n"
+"  - Contains all available information of the groups signature\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:761
+#, markdown-text, no-wrap
+msgid ""
+"`signature_id`\n"
+": - `1`\n"
+"  - Signature ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:765
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-24T23:55:06.980Z`\n"
+"  - Time stamp of last group update\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:769
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `3`\n"
+"  - User ID that updated group\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:770
+#, markdown-text, no-wrap
+msgid "CTI Log"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:773
+#, markdown-text
+msgid "The following index contains below mentioned information: `*_cti_log`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:777
+#, markdown-text, no-wrap
+msgid ""
+"`call_id`\n"
+": - `6`\n"
+"  - Unique Call ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:781
+#, markdown-text, no-wrap
+msgid ""
+"`comment`\n"
+": - `\"\"`\n"
+"  - Optional comment\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:785
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-22T11:48:01.703Z`\n"
+"  - Creation date of Call\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:789
+#, markdown-text, no-wrap
+msgid ""
+"`direction`\n"
+": - `in`, `out`\n"
+"  - Call direction\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:793
+#, markdown-text, no-wrap
+msgid ""
+"`done`\n"
+": - `true`, `false`\n"
+"  - Defines if call displays as “to do” within UI\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:797
+#, markdown-text, no-wrap
+msgid ""
+"`duration_talking_time`\n"
+": - `27`\n"
+"  - Call duration in seconds\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:801
+#, markdown-text, no-wrap
+msgid ""
+"`duration_waiting_time`\n"
+": - `77`\n"
+"  - Duration in seconds the caller was waiting for answer\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:805
+#, markdown-text, no-wrap
+msgid ""
+"`end_at`\n"
+": - `2021-03-25T08:49:40.647Z`\n"
+"  - Time stamp of call end\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:809
+#, markdown-text, no-wrap
+msgid ""
+"`from`\n"
+": - `491711234567890`\n"
+"  - Calling number\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:813
+#, markdown-text, no-wrap
+msgid ""
+"`from_comment`\n"
+": - `null`, `John`, `Doe`\n"
+"  - Display name of calling number if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:817
+#, markdown-text, no-wrap
+msgid ""
+"`from_pretty`\n"
+": - `+49 171 1234567890`\n"
+"  - Pretty version of `from`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:821
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `8`\n"
+"  - Internal ID of entry\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:825
+#, markdown-text, no-wrap
+msgid ""
+"`initialized_at`\n"
+": - `2021-03-25T08:47:56.753Z`\n"
+"  - Time stamp of call initialization, usually matches created_at\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:829
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": - (Array)\n"
+"  - Contains internal information if required\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:833
+#, markdown-text, no-wrap
+msgid ""
+"`queue`\n"
+": - `null`, `491711234567890`\n"
+"  - Queue the call was answered in\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:837
+#, markdown-text, no-wrap
+msgid ""
+"`start_at`\n"
+": - `2021-03-25T08:49:13.050Z`\n"
+"  - Time stamp the call was answered\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:841
+#, markdown-text, no-wrap
+msgid ""
+"`state`\n"
+": - `hangup`, `voicemail`\n"
+"  - Last state of call\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:845
+#, markdown-text, no-wrap
+msgid ""
+"`to`\n"
+": - `491711234567890`\n"
+"  - Dialed number\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:849
+#, markdown-text, no-wrap
+msgid ""
+"`to_comment`\n"
+": - null, John, Doe\n"
+"  - Display name of called number if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:853
+#, markdown-text, no-wrap
+msgid ""
+"`to_pretty`\n"
+": - `491711234567890`\n"
+"  - Pretty version of to\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:857
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-25T08:49:40.647Z`\n"
+"  - Last update of entry\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/es-indexed-attributes.md:859
+#, markdown-text, no-wrap
+msgid "Chat Session"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:862
+#, markdown-text
+msgid "The following index contains below mentioned information: `*_chat_session`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:880
+#, markdown-text, no-wrap
+msgid ""
+"`chat`\n"
+": - Contains these attributes:\n"
+"    - active: `true`\n"
+"    - block_country: `null`\n"
+"    - block_ip: `null`\n"
+"    - created_at: `2021-03-03T14:50:22.607Z`\n"
+"    - created_by_id: `1`\n"
+"    - id: `1`\n"
+"    - max_queue: `5`\n"
+"    - name: `default`\n"
+"    - note: `\"\"`\n"
+"    - preferences: `{}`\n"
+"    - public: `false`\n"
+"    - updated_at: `2021-03-03T14:50:22.607Z`\n"
+"    - updated_by_id: `1`\n"
+"    - whitelisted_websites: `null`\n"
+"  - Contains various preferences of the chat topic in charge\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:884
+#, markdown-text, no-wrap
+msgid ""
+"`chat_id`\n"
+": - `1`\n"
+"  - ID of Chat topic\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:888
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": - `2021-03-25T10:26:24.376Z`\n"
+"  - Time stamp of chat creation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:892
+#, markdown-text, no-wrap
+msgid ""
+"`created_by_id`\n"
+": - `null`\n"
+"  - User that created the chat, place holder, currently always null\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:896
+#, markdown-text, no-wrap
+msgid ""
+"`id`\n"
+": - `1`\n"
+"  - ID of Chat Session\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:905
+#, markdown-text, no-wrap
+msgid ""
+"`messages`\n"
+": - (Array) - Array entries contain these attributes:\n"
+"    - chat_session_id: `1`\n"
+"    - content: `Hello dear customer`\n"
+"    - created_at: `2021-03-25T10:26:35.977Z`\n"
+"    - created_by_id: `null`, `3`\n"
+"    - id: 1 updated_at: `2021-03-25T10:26:35.977Z`\n"
+"  - Array with all messages of chat\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:909
+#, markdown-text, no-wrap
+msgid ""
+"`name`\n"
+": - `null`, `John Doe`\n"
+"  - Name agent set for chat user, if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:918
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": - Contains these attributes:\n"
+"    - dns_name: `host.domain.tld`\n"
+"    - geo_ip: `{}`\n"
+"    - participants: Array, `[\"47118371175780\", \"47118371850300\"]`\n"
+"    - remote_ip: `192.168.2.19`\n"
+"    - url: `https://zammad.com/en/company/contact`\n"
+"  - Various internal Meta data of the session_id\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:922
+#, markdown-text, no-wrap
+msgid ""
+"`session_id`\n"
+": - `92f2909631f1ad5ff4d5d1e046952be8`\n"
+"  - Unique Session ID\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:926
+#, markdown-text, no-wrap
+msgid ""
+"`state`\n"
+": - `closed`\n"
+"  - Current state of chat session\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:930
+#, markdown-text, no-wrap
+msgid ""
+"`tags`\n"
+": - (Array), `[\"order\", \"refund\"]`\n"
+"  - Tags applied to Chat Session by agent, if applicable\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:934
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": - `2021-03-25T10:27:03.341Z`\n"
+"  - Last update\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:938
+#, markdown-text, no-wrap
+msgid ""
+"`updated_by_id`\n"
+": - `null`, `3`\n"
+"  - User ID that last updated session, may be null\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:942
+#, markdown-text, no-wrap
+msgid ""
+"`user`\n"
+": - \\#\\{user object\\}\n"
+"  - Complete Payload of the chat agent Please see User for more\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:945
+#, markdown-text, no-wrap
+msgid ""
+"`user_id`\n"
+": - `3`\n"
+"  - User ID of chat agent\n"
 msgstr ""
 
 #. type: Title #
@@ -3452,16 +5483,535 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/reference/rails-commands.md:1
+#, no-wrap
+msgid "Rails Commands"
+msgstr ""
+
 #. type: Title #
-#: src/en/reference/rails-commands.md:5
+#: src/en/reference/rails-commands.md:6
 #, markdown-text, no-wrap
 msgid "Rails commands"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/tutorials/backup-restore.md:1
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
 #, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
+#, markdown-text, no-wrap
 msgid "Backup & Restore"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:9
+#, markdown-text
+msgid ""
+"Zammad ships scripts in package installations for backup & restore which you "
+"can use."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/backup-restore.md:10
+#, no-wrap
+msgid ""
+"These scripts do not come with any warranty and may not work in your "
+"specific\n"
+"use case. This depends on the configuration and installation type of your\n"
+"instance.\n"
+"\n"
+"You should always regularly test and review the functionality! If the "
+"script\n"
+"functionality or scope is not working for your cases, feel free to copy "
+"these\n"
+"to a independent location and adjust the scripts as needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:21
+#, markdown-text
+msgid "There are some limitations you should know:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "These scripts won't work in container based installations."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "They only work for PostgreSQL installations."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "The backup is always a full dump (no incremental backup)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid ""
+"Partial backup and restore (e.g. only specific data like tickets,users) is "
+"not possible."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "Switching database system is not possible."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "System settings (like environment variables) are not backed up."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid "Restore to an older Zammad version is not possible."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:32
+#, markdown-text
+msgid ""
+"Do not restore backup files from custom scripts with the provided scripts by "
+"Zammad. This might cause problems."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:37
+#, markdown-text
+msgid ""
+"The scripts are located in `/opt/zammad/contrib/backup`. The following files "
+"are relevant:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:41
+#, markdown-text
+msgid "Backup configuration file: `config.dist`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:41
+#, markdown-text
+msgid "Script for backing up your data: `zammad_backup.sh`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:41
+#, markdown-text
+msgid "Script for restoring your data: `zammad_restore.sh`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:43
+#, markdown-text
+msgid ""
+"To execute a backup based on the default configuration, follow the steps "
+"below:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore.md:50
+#, markdown-text
+msgid "Copy the `config.dist` file to `config`."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore.md:50
+#, markdown-text
+msgid ""
+"Change default parameters in the config file if needed. See [Backup "
+"Configuration](#backup-config-parametersbackup-config-parameters) for "
+"details."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore.md:50
+#, markdown-text
+msgid "Stop Zammad `systemctl stop zammad`"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore.md:50
+#, markdown-text
+msgid ""
+"Execute `/opt/zammad/contrib/backup/zammad_backup.sh` (as `root` or `zammad` "
+"user)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore.md:51
+#, markdown-text, no-wrap
+msgid "Backup Configuration"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:55
+#, markdown-text
+msgid ""
+"You can find details about the configuration parameters with default values "
+"below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:60
+#, markdown-text, no-wrap
+msgid ""
+"`BACKUP_DIR` <Badge type=\"info\" text=\"/var/tmp/zammad_backup\"/>\n"
+": Location where the script writes the backup files to. The directory will "
+"be\n"
+"  created if it does not exist. Make sure you have enough space because "
+"the\n"
+"  script writes full dumps.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:65
+#, markdown-text, no-wrap
+msgid ""
+"`HOLD_DAYS` <Badge type=\"info\" text=\"10\"/>\n"
+": Define how many days the backup script should keep old backups. This "
+"value\n"
+"  contains a 60 minutes grace period (e.g. 10 days plus 1 hour) for safety\n"
+"  reasons. Old backups are removed before creating the a new backup.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:69
+#, markdown-text, no-wrap
+msgid ""
+"  Examples:\n"
+"  - `1` will keep backups of the last 25 hours\n"
+"  - `-1` will remove all available backups (except the new one)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:73
+#, markdown-text, no-wrap
+msgid ""
+"`FULL_FS_DUMP` <Badge type=\"info\" text=\"yes\"/>\n"
+": - `yes`: the backup includes also application files.\n"
+"  - `no`: the backup includes only user data.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:76
+#, markdown-text, no-wrap
+msgid ""
+"  In any case, it includes the Zammad database and the attachments, if you\n"
+"  stored them in the file system. If you are in doubt, set this to no.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:79
+#, markdown-text, no-wrap
+msgid ""
+"``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
+": Setting this option to `yes` will output useful debug messages.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/backup-restore.md:79
+#, no-wrap
+msgid ""
+"  This option potentially returns sensitive information to standard output! "
+"Do\n"
+"  not use this option in production environments or ensure to turn it off "
+"after\n"
+"  testing.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore.md:85
+#, markdown-text, no-wrap
+msgid "Restore Backups"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:87
+#, markdown-text, no-wrap
+msgid "Important Information"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:90
+#, markdown-text
+msgid ""
+"Please read the following information carefully before starting to restore "
+"your data."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid ""
+"This section is **not** about **migrating from one host to another**. You "
+"can find instructions about this topic in the [next "
+"section](#migrate-to-a-new-host)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid "This guide expects a fully installed Zammad version"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid "It also expects you to restore Zammad on the same host and Zammad version"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid ""
+"The restore process stops & restarts Zammad. Therefore you have to run the "
+"restore script with appropriate permissions (e.g. as root)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid "PostgreSQL based installations will drop and re-create the database!"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:101
+#, markdown-text
+msgid ""
+"At least twice the backed up Zammad instance size of free storage is "
+"required. If you have the dump only, factor 3 could be a good number."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/backup-restore.md:102
+#, no-wrap
+msgid ""
+"If your scenario is different as described above, please consult the\n"
+"[Zammad "
+"Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) "
+"or consider\n"
+"[paid support "
+"options](https://zammad.com/en/services/professional-services).\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:108
+#, markdown-text, no-wrap
+msgid "Copy Backup Files to a Fitting Location"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:112
+#, markdown-text
+msgid ""
+"Ensure that the user you're using for restoration is allowed to read the "
+"backup files and to write to `/opt/zammad/`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:114
+#, markdown-text
+msgid "The Zammad backup consists of two files. They are named like this:"
+msgstr ""
+
+#. type: Fenced code block
+#: src/en/tutorials/backup-restore.md:115
+#, no-wrap
+msgid ""
+"<timestamp>_zammad_db.psql.gz\n"
+"<timestamp>_zammad_files.tar.gz\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:121
+#, markdown-text
+msgid ""
+"There are also two symlinks in your backup directory pointing to the newest "
+"backup created:"
+msgstr ""
+
+#. type: Fenced code block
+#: src/en/tutorials/backup-restore.md:122
+#, no-wrap
+msgid ""
+"latest_zammad_db.psql.gz\n"
+"latest_zammad_files.tar.gz\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:129
+#, markdown-text
+msgid ""
+"Copy them to a fitting location which is accessible for the user who "
+"executes the restore script."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:130
+#, markdown-text, no-wrap
+msgid "Configure Backup Script"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:134
+#, markdown-text
+msgid ""
+"For a new installation, this is required. At least you have to provide a "
+"directory where your backups are stored. See [Backup "
+"Configuration](#backup-configuration) for more information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:135
+#, markdown-text, no-wrap
+msgid "Run the Restore"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:141
+#, markdown-text, no-wrap
+msgid ""
+"Be aware that restoring backups can overwrite your `database.yml`. You can\n"
+"check that by looking into the `[...]_zammad_files.tar.gz` file. If there\n"
+"is a `database.yml` in the directory *config > database*, ensure to save "
+"the\n"
+"original version **before restoring**.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:144
+#, markdown-text
+msgid ""
+"The restore works in two possible ways, depending on how interactive you "
+"want to go:"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/backup-restore.md:145
+#, no-wrap
+msgid ""
+"\n"
+"=== Interactive restore (recommended)\n"
+"Run the script:\n"
+"```bash\n"
+"/opt/zammad/contrib/backup/zammad_restore.sh\n"
+"```\n"
+"Provide the requested information to the script and wait for the restore\n"
+"process to finish. Depending on the size of your backup and host "
+"performance,\n"
+"this may take some time.\n"
+"\n"
+"=== Non-interactive restore\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|warning)
+#: src/en/tutorials/backup-restore.md:145
+#, no-wrap
+msgid ""
+"Only use the following option if you know what you're doing! The following\n"
+"command will overwrite existing data without further prompts!\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/backup-restore.md:145
+#, no-wrap
+msgid ""
+"When called with a timestamp argument (matching the backups filename),\n"
+"Zammad will proceed immediately to restoring the specified backup.\n"
+"```bash\n"
+"/opt/zammad/contrib/backup/zammad_restore.sh 20170507121848\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:170
+#, markdown-text
+msgid "The result should look like this:"
+msgstr ""
+
+#. type: Fenced code block
+#: src/en/tutorials/backup-restore.md:171
+#, no-wrap
+msgid ""
+"# Zammad restore started - Fri Jan 21 17:54:13 CET 2022!\n"
+"\n"
+"The restore will delete your current database!\n"
+"Be sure to have a backup available!\n"
+"\n"
+"Please ensure to have twice the storage of the uncompressed backup size!\n"
+"\n"
+"Note that the restoration USUALLY requires root permissions as services are "
+"stopped!\n"
+"\n"
+"Enter 'yes' if you want to proceed!\n"
+"Restore?: yes\n"
+"Enter file date to restore:\n"
+"20220120124714\n"
+"20220121175344\n"
+"File date: 20220121175344\n"
+"Enter db date to restore:\n"
+"20220120124714\n"
+"20220121175344\n"
+"DB date: 20220121175344\n"
+"# Stopping Zammad\n"
+"# Checking requirements\n"
+"# ... Dropping current database zammad\n"
+"Dropped database 'zammad'\n"
+"# ... Creating database zammad for owner zammad\n"
+"CREATE DATABASE\n"
+"# Restoring PostgreSQL DB\n"
+"# Restoring Files\n"
+"# Ensuring correct file permissions ...\n"
+"# Clearing Cache ...\n"
+"# Starting Zammad\n"
+"\n"
+"# Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:214
+#, markdown-text
+msgid "If you've set any environmental settings, please re-apply them now."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:214
+#, markdown-text
+msgid ""
+"If not already done, [install "
+"Elasticsearch](/en/tutorials/install-elasticsearch) now."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/backup-restore.md:214
+#, markdown-text
+msgid ""
+"[Connect Elasticsearch with Zammad and rebuild its search "
+"index](/en/tutorials/connect-config-elasticsearch). The rebuild can safely "
+"run during your work, but will cause a degraded search performance and may "
+"lead to temporarily not found data."
 msgstr ""
 
 #. type: Title #
@@ -3524,8 +6074,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Show and copy the auto-generated certificate from Elasticsearch and add it "
-"to Zammad. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN "
-"CERTIFICATE-----``) too."
+"to Zammad. Make sure to copy/paste the delimiters (e.g. `-----BEGIN "
+"CERTIFICATE-----`) too."
 msgstr ""
 
 #. type: Fenced code block (bash)
@@ -3694,7 +6244,7 @@ msgstr ""
 #: src/en/tutorials/firewall-selinux.md:39
 #, markdown-text
 msgid ""
-"Ensure to open ports ``80`` and ``443`` (TCP & UDP) beside of the ports you "
+"Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you "
 "need. Below you can find a few examples for different distributions. If you "
 "are using a different distribution, please have a look at their "
 "documentation."
@@ -3732,8 +6282,8 @@ msgstr ""
 #: src/en/tutorials/firewall-selinux.md:43
 #, no-wrap
 msgid ""
-"We’re covering ``nftables`` in this part - ``iptables`` is discouraged\n"
-"starting from Debian 10 (Buster). Our example uses the ``input`` chain, "
+"We’re covering `nftables` in this part - `iptables` is discouraged\n"
+"starting from Debian 10 (Buster). Our example uses the `input` chain, "
 "yours\n"
 "may be a different one!\n"
 msgstr ""
@@ -3743,7 +6293,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "\n"
-"Add the following lines to ``/etc/nftables.conf`` or your specific rule "
+"Add the following lines to `/etc/nftables.conf` or your specific rule "
 "file.\n"
 "Ensure to add these lines to your input-chain.\n"
 "\n"
@@ -4268,6 +6818,207 @@ msgstr ""
 #: src/en/tutorials/migrate/migrate.md:1
 #, no-wrap
 msgid "From OTRS"
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/migrate-to-new-host.md:1
+#: src/en/tutorials/migrate-to-new-host.md:8
+#, markdown-text, no-wrap
+msgid "Migrate Zammad to a New Host"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:7
+#, markdown-text, no-wrap
+msgid ""
+"<!-- Should be completely dropped because it is a mess. Because I already "
+"started, I kept it to not loose already done work  -->\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:15
+#, markdown-text
+msgid ""
+"This is just a description of basic steps to perform a migration to a new "
+"host.  Your environment may be different so you should consider this as a "
+"reference point only. If anything goes wrong, please consult the [Zammad "
+"Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) "
+"or consider [paid support "
+"options](https://zammad.com/en/services/professional-services)."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/migrate-to-new-host.md:16
+#, no-wrap
+msgid ""
+"Migrating from Zammad SaaS? Skip to step 7. For restoration, you've received "
+"an\n"
+"attachment dump!\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:21
+#, markdown-text, no-wrap
+msgid "Step 1: Check and Save your Environmental Adjustments"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:24
+#, markdown-text
+msgid "Note them down or backup your `.env` files."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:25
+#, markdown-text, no-wrap
+msgid "Step 2: Install Zammad on the Destination Host"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:31
+#, markdown-text
+msgid ""
+"For the easiest restoration path possible, please install the same version "
+"like your origin instance. You could also consider updating the old instance "
+"before migrating. Have a look at the installation instructions and follow "
+"the steps."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:32
+#, markdown-text, no-wrap
+msgid "Step 3: Activate Maintenance Mode"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:36
+#, markdown-text, no-wrap
+msgid ""
+"Activate the maintenance mode in Zammad's admin interface under\n"
+"*System > Maintenance*. This ends all agent and customer sessions.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:37
+#, markdown-text, no-wrap
+msgid "Step 4: Disable your Communication Channels"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:41
+#, markdown-text
+msgid ""
+"This makes sure that no data is lost during the process. Go to Zammad's "
+"admin interface and disable all active communication channels."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:42
+#, markdown-text, no-wrap
+msgid "Step 5: Stop and Disable Zammad"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/migrate-to-new-host.md:44
+#, no-wrap
+msgid ""
+"systemctl disable zammad\n"
+"systemctl stop zammad\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:49
+#, markdown-text, no-wrap
+msgid "Step 6: Perform the Backup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:54
+#, markdown-text
+msgid ""
+"Follow the [quick start guide](#quick-start) to create your backup.  "
+"Remember if you’ve created a full filesystem dump or only backed up your "
+"data.  This will be important for the restoration."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:57
+#, markdown-text
+msgid ""
+"If you want to go the easiest way, consider only [dumping your "
+"data](#backup-configuration)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:58
+#, markdown-text, no-wrap
+msgid "Step 7: Transfer your Backup Files"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:62
+#, markdown-text
+msgid ""
+"Save your backup files in a directory and provide the path to the `config` "
+"file. See [backup configuration](#backup-configuration) how to adjust it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:63
+#, markdown-text, no-wrap
+msgid "Step 8: Restore Your Backup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:66
+#, markdown-text
+msgid "Follow the steps from the [Restore Backup](#restore-backups) section."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:68
+#, markdown-text
+msgid "Make sure to stop Zammad after the restoration has finished:"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate-to-new-host.md:72
+#, markdown-text, no-wrap
+msgid "Step 9: Run Required Maintenance Tasks After Restoring"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate-to-new-host.md:75
+#, markdown-text
+msgid "Depending if you only backed up your data or a full filesystem dump:"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/migrate-to-new-host.md:76
+#, no-wrap
+msgid ""
+"\n"
+"=== Data dump (recommended)\n"
+"Clear cache:\n"
+"```bash\n"
+"zammad run rails r \"Rails.cache.clear\"\n"
+"```\n"
+"\n"
+"=== Full filesystem dump\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|warning)
+#: src/en/tutorials/migrate-to-new-host.md:76
+#, no-wrap
+msgid ""
+"This step is only needed, if one of the following points is met:\n"
+"\n"
+"- The source and destination Zammad versions are not the same\n"
+"- The Zammad installation is not a source code installation\n"
+"- The Zammad backup is not an export from our hosted setup\n"
+"\n"
+"Zammad files are distribution and version specific!\n"
 msgstr ""
 
 #. type: Title #
