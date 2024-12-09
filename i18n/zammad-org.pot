@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-06 17:12+0100\n"
+"POT-Creation-Date: 2024-12-09 15:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1152,7 +1152,7 @@ msgstr ""
 msgid "You can either search them via search field or via overviews.\n"
 msgstr ""
 
-#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#. type: Fenced div block (tabs)
 #: src/en/documentation/use/faq.md:13 src/en/documentation/use/faq.md:17
 #: src/en/documentation/use/faq.md:21 src/en/documentation/use/faq.md:25
 #: src/en/documentation/use/faq.md:29 src/en/documentation/use/faq.md:33
@@ -1160,7 +1160,7 @@ msgstr ""
 #: src/en/documentation/use/faq.md:47 src/en/documentation/use/faq.md:51
 #: src/en/documentation/use/faq.md:57 src/en/documentation/use/faq.md:61
 #: src/en/documentation/use/faq.md:65 src/en/documentation/use/faq.md:69
-#: src/en/documentation/use/faq.md:73
+#: src/en/documentation/use/faq.md:73 src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -1602,10 +1602,12 @@ msgid ""
 "provided for the Zammad application.\n"
 msgstr ""
 
-#. type: Title #
+#. type: Title ####
 #: src/en/get-started/installation/docker.md:16
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
+#: src/en/tutorials/migrate.md:70 src/en/tutorials/migrate.md:209
+#: src/en/tutorials/migrate.md:343 src/en/tutorials/migrate.md:500
 #, markdown-text, no-wrap
 msgid "Prerequisites"
 msgstr ""
@@ -6364,9 +6366,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:14
 #, markdown-text
-msgid ""
-"[Migrate from another supported ticketing "
-"system](/en/tutorials/migrate/migrate)"
+msgid "[Migrate from another supported ticketing system](/en/tutorials/migrate)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -6808,15 +6808,859 @@ msgid ""
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/tutorials/migrate/index.md:1
+#: src/en/tutorials/migrate.md:1
 #, no-wrap
 msgid "Migrate to Zammad"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/tutorials/migrate/migrate.md:1
+#. type: Title #
+#: src/en/tutorials/migrate.md:6
+#, markdown-text, no-wrap
+msgid "Migrate To Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:9
+#, markdown-text
+msgid "You can migrate the following data from another ticketing system to Zammad:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:14
+#, markdown-text
+msgid "Tickets and their Articles"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:14
+#, markdown-text
+msgid "Groups / Queues"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:14
+#, markdown-text
+msgid "Organizations"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:14
+#, markdown-text
+msgid "Agents and Customers (if applicable)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:19
+#, markdown-text, no-wrap
+msgid ""
+"After migrating to Zammad, you should first adjust your FQDN settings and "
+"HTTP\n"
+"type in Zammad's admin interface under *Settings > System > Base*.\n"
+"This is important because the getting started wizard is skipped by the\n"
+"migration.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:23
+#, markdown-text
+msgid ""
+"After that, you may want to continue with the [First "
+"Steps](/en/tutorials/first-steps) to configure Zammad. This has to be done "
+"after migration."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate.md:24
+#, markdown-text, no-wrap
+msgid "General Limitations"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:29
+#, markdown-text
+msgid ""
+"There are some general limitations which you can find below. There could "
+"also be limitations, depending from which system you are coming. These are "
+"covered in the specific sections."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:31
+#, markdown-text
+msgid "General limitations for all migrations:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:38
+#, markdown-text
+msgid "Migrations are only possible on new instances."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:38
+#, markdown-text
+msgid ""
+"Migrations are only possible from one source. Several migration sources on "
+"one instance are not supported."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:38
+#, markdown-text
+msgid "Zammad can't migrate object types it doesn't know, migrations will fail."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:38
+#, markdown-text
+msgid ""
+"Zammad migrates all or nothing. This means that you can't deselect specific "
+"information specific groups, tickets or users."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate.md:39
+#, markdown-text, no-wrap
+msgid "Specific Migration Guides"
+msgstr ""
+
+#. type: Fenced div block (info Missing a migration source?)
+#: src/en/tutorials/migrate.md:41
 #, no-wrap
-msgid "From OTRS"
+msgid ""
+"\n"
+"If your system it not mentioned yet, you'll have two options. You can "
+"either\n"
+"use Zammad's powerful API or drop our\n"
+"[sales team a message](https://zammad.com/en/company/contact) for a custom\n"
+"development or even migrator sponsoring.\n"
+"\n"
+"Migrations are available for hosted setups too! Contact support for "
+"further\n"
+"information!\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/migrate.md:52
+#, markdown-text, no-wrap
+msgid "Freshdesk"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/migrate.md:54 src/en/tutorials/migrate.md:331
+#: src/en/tutorials/migrate.md:484
+#, markdown-text, no-wrap
+msgid "Limitations"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:58 src/en/tutorials/migrate.md:192
+#, markdown-text
+msgid ""
+"Please note Freshdesk specific limitations below. These are additional "
+"limitations to the general ones listed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:69 src/en/tutorials/migrate.md:207
+#: src/en/tutorials/migrate.md:498
+#, markdown-text
+msgid ""
+"Differential migrations are not supported! The general suggestion is to run "
+"a test import before to learn how long the migration will take."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:69
+#, markdown-text
+msgid ""
+"Important: Please note that migration speed highly depends on your Freshdesk "
+"plan (API rate limits apply)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:69
+#, markdown-text
+msgid ""
+"Due to API limitations, Zammad will not show the total number of objects to "
+"import, but instead correct them in steps of 100."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:69
+#, markdown-text
+msgid ""
+"Your Freshdesk plan has to provide API support. This may not apply to all "
+"available plans."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:69 src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid ""
+"User passwords are not migrated and will require the user to use the "
+"password reset link on Zammad's login page."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:76
+#, markdown-text
+msgid ""
+"Zammad requires API access which is why you'll need to [create an API "
+"key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key)  "
+"for the migration. The migrator will request your Freshdesk subdomain and "
+"API key."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/migrate.md:77 src/en/tutorials/migrate.md:507
+#, no-wrap
+msgid ""
+"Ensure to retrieve the API key with a full administrator account. Less\n"
+"privileged users will end in a broken migration.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/migrate.md:82 src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:411 src/en/tutorials/migrate.md:512
+#, markdown-text, no-wrap
+msgid "Import"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:87 src/en/tutorials/migrate.md:224
+#: src/en/tutorials/migrate.md:517
+#, markdown-text
+msgid ""
+"In general, you have two options on how to migrate data. If you have a "
+"fairly big instance with a lot of data, you may want to consider using the "
+"console over the browser version."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/migrate.md:88
+#, no-wrap
+msgid ""
+"\n"
+"=== Via Browser\n"
+"\n"
+"After installing Zammad and\n"
+"[configuring your webserver](/en/tutorials/webserver-config), navigate to "
+"your\n"
+"Zammads FQDN in your browser and follow the migration wizard. You can find\n"
+"it in the log in screen by clicking the \"Or migrate from another system\"\n"
+"link at the bottom.\n"
+"\n"
+"Depending on the number of users, tickets and Freshdesk plan this may take "
+"a\n"
+"while.\n"
+"\n"
+"Seeing the message \"*Interrupted by scheduler restart. Please restart "
+"manually\n"
+"or wait till next execution time.*\"?\n"
+"\n"
+"If this message appears after providing your credentials, please be "
+"patient.\n"
+"The migration should start within 5 minutes.\n"
+"\n"
+"If you receive above message after the migration begun, please consider "
+"using\n"
+"the console approach instead and reset the installation.\n"
+"\n"
+"=== Via Console\n"
+"\n"
+"Open console:\n"
+"\n"
+"```bash\n"
+"zammad run rails c\n"
+"```\n"
+"Set variables:\n"
+"\n"
+"```bash\n"
+"subdomain = '{freshdesk subdomain}.freshdesk.com'\n"
+"```\n"
+"```bash\n"
+"token = '{freshdesk token}'\n"
+"```\n"
+"Update Zammad settings for freshdesk import:\n"
+"```bash\n"
+"Setting.set('import_freshdesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_freshdesk_endpoint_key', token)\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_backend', 'freshdesk')\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Check your configuration in a dry run:\n"
+"```bash\n"
+"Sequencer.process('Import::Freshdesk::ConnectionTest')\n"
+"```\n"
+"\n"
+"Run the migration:\n"
+"\n"
+"```bash\n"
+"job = ImportJob.create(name: 'Import::Freshdesk')\n"
+"```\n"
+"```bash\n"
+"AsyncImportJob.perform_later(job)\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tip)
+#: src/en/tutorials/migrate.md:88 src/en/tutorials/migrate.md:518
+#, no-wrap
+msgid ""
+"\n"
+"Want to see the progress of the migration?\n"
+"\n"
+"Use\n"
+"\n"
+"```bash\n"
+"pp ImportJob.find_by(name: 'Import::Freshdesk')\n"
+"```\n"
+"which gives you an output of the current state of the job.\n"
+"\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/migrate.md:167 src/en/tutorials/migrate.md:309
+#: src/en/tutorials/migrate.md:468 src/en/tutorials/migrate.md:597
+#, markdown-text, no-wrap
+msgid "After Migration"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:170 src/en/tutorials/migrate.md:312
+#: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:600
+#, markdown-text
+msgid "Run the following commands:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/migrate.md:171 src/en/tutorials/migrate.md:313
+#: src/en/tutorials/migrate.md:472 src/en/tutorials/migrate.md:601
+#, no-wrap
+msgid "Setting.set('import_mode', false)\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/migrate.md:174 src/en/tutorials/migrate.md:316
+#: src/en/tutorials/migrate.md:475 src/en/tutorials/migrate.md:604
+#, no-wrap
+msgid "Setting.set('system_init_done', true)\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/migrate.md:177 src/en/tutorials/migrate.md:319
+#: src/en/tutorials/migrate.md:478 src/en/tutorials/migrate.md:607
+#, no-wrap
+msgid "Rails.cache.clear\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:183 src/en/tutorials/migrate.md:613
+#, markdown-text
+msgid ""
+"Log in with the user whose API token you provided. Use the admins email "
+"address and API token provided during the migration to login."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:328
+#: src/en/tutorials/migrate.md:615
+#, markdown-text
+msgid ""
+"All other users will have to use the password reset function or login "
+"methods like LDAP or one click logins."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/migrate.md:187
+#, markdown-text, no-wrap
+msgid "Kayako"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid "Selfhosted installations (Kayako classic) are not supported."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid ""
+"The following ticket field customizations are being ignored (affects “Scale” "
+"plan):"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid "Custom ticket states"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid "Custom ticket priorities"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid "Custom ticket types"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid ""
+"Important: Please note that migration speed highly depends on your Kayako "
+"plan (API rate limits apply)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:207
+#, markdown-text
+msgid ""
+"Your Kayako plan has to provide API support. This may not apply to all "
+"available plans."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:213
+#, markdown-text
+msgid ""
+"Zammad requires API access which is why the migrator will request your "
+"Kayako-URL, email address and password."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/migrate.md:214
+#, no-wrap
+msgid ""
+"Ensure to provide an user account with full administrative "
+"permissions. Less\n"
+"privileged users will end in a broken migration.\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/migrate.md:225
+#, no-wrap
+msgid ""
+"\n"
+"=== Via Browser\n"
+"\n"
+"After installing Zammad and\n"
+"[configuring your webserver](/en/tutorials/webserver-config), navigate to "
+"your\n"
+"Zammads FQDN in your browser and follow the migration wizard. You can find\n"
+"it in the log in screen by clicking the \"Or migrate from another system\"\n"
+"link at the bottom.\n"
+"\n"
+"Depending on the number of users, tickets and Kayako plan this may take a "
+"while.\n"
+"\n"
+"Seeing the message \"*Interrupted by scheduler restart. Please restart "
+"manually\n"
+"or wait till next execution time.*\"?\n"
+"\n"
+"If this message appears after providing your credentials, please be "
+"patient.\n"
+"The migration should start within 5 minutes.\n"
+"\n"
+"If you receive above message after the migration begun, please consider\n"
+"using the console approach instead and reset the installation.\n"
+"\n"
+"=== Via Console\n"
+"\n"
+"Open console:\n"
+"\n"
+"```bash\n"
+"zammad run rails c\n"
+"```\n"
+"Set variables:\n"
+"\n"
+"```bash\n"
+"subdomain = '{kayako subdomain}.kayako.com'\n"
+"```\n"
+"```bash\n"
+"email = '{kayako admin email address}'\n"
+"```\n"
+"```bash\n"
+"password = '{kayako admin password}'\n"
+"```\n"
+"Update Zammad settings for Kayako import:\n"
+"```bash\n"
+"Setting.set('import_kayako_endpoint', \"https://#{subdomain}/api/v1\")\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_kayako_endpoint_username', email)\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_kayako_endpoint_password', password)\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_backend', 'kayako')\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Check your configuration in a dry run:\n"
+"```bash\n"
+"Sequencer.process('Import::Kayako::ConnectionTest')\n"
+"```\n"
+"\n"
+"Run the migration:\n"
+"\n"
+"```bash\n"
+"job = ImportJob.create(name: 'Import::Kayako')\n"
+"```\n"
+"```bash\n"
+"AsyncImportJob.perform_later(job)\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tip)
+#: src/en/tutorials/migrate.md:225
+#, no-wrap
+msgid ""
+"\n"
+"Want to see the progress of the migration?\n"
+"\n"
+"Use\n"
+"\n"
+"```bash\n"
+"pp ImportJob.find_by(name: 'Import::Kayako')\n"
+"```\n"
+"which gives you an output of the current state of the job.\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:325
+#, markdown-text
+msgid ""
+"Log in with the user whose login credentials you provided. Use the admins "
+"email address and password provided during the migration to login."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/migrate.md:329
+#, markdown-text, no-wrap
+msgid "OTRS"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:334 src/en/tutorials/migrate.md:487
+#, markdown-text
+msgid "Additional limitations to the general one:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:342
+#, markdown-text
+msgid "Supported OTRS versions are: 3.1 - 6.x"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:342
+#, markdown-text
+msgid ""
+"Password migration works for OTRS >= 3.3 only (on older instances a password "
+"reset within Zammad will be required)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:342
+#, markdown-text
+msgid ""
+"If you plan to import a differential migration after the main one, do not "
+"change any data in Zammad!"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:342
+#, markdown-text
+msgid "Only customers of tickets are imported"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:342
+#, markdown-text
+msgid "Zammad expects your OTRS timestamps to be UTC and won't adjust them"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:346
+#, markdown-text
+msgid "Install Znuny4OTRS-Repo:"
+msgstr ""
+
+#. type: Fenced div block (tabs key:otrs)
+#: src/en/tutorials/migrate.md:347
+#, no-wrap
+msgid ""
+"\n"
+"=== OTRS 6\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm\n"
+"```\n"
+"\n"
+"=== OTRS 5\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm\n"
+"```\n"
+"\n"
+"=== OTRS 4\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm\n"
+"```\n"
+"\n"
+"=== OTRS 3\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:376
+#, markdown-text
+msgid "Install OTRS migration plugin:"
+msgstr ""
+
+#. type: Fenced div block (tabs key:otrs)
+#: src/en/tutorials/migrate.md:377
+#, no-wrap
+msgid ""
+"\n"
+"=== OTRS 6\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm\n"
+"```\n"
+"\n"
+"=== OTRS 5\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm\n"
+"```\n"
+"\n"
+"=== OTRS 4\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm\n"
+"```\n"
+"\n"
+"=== OTRS 3\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/migrate.md:405
+#, no-wrap
+msgid ""
+"In some cases restarting your webserver may help to solve internal server\n"
+"errors.\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/migrate.md:413
+#, no-wrap
+msgid ""
+"\n"
+"=== Via Browser\n"
+"\n"
+"After installing Zammad and\n"
+"[configuring your webserver](/en/tutorials/webserver-config), navigate to "
+"your\n"
+"Zammads FQDN in your browser and follow the migration wizard. You can find\n"
+"it in the log in screen by clicking the \"Or migrate from another system\"\n"
+"link at the bottom.\n"
+"\n"
+"Depending on the size of your OTRS installation this may take a while. In "
+"such\n"
+"a case, consider using the command line version of this feature. This also\n"
+"applies if you experience timeouts during the migration.\n"
+"\n"
+"\n"
+"=== Via Console\n"
+"\n"
+"Open console:\n"
+"\n"
+"```bash\n"
+"zammad run rails c\n"
+"```\n"
+"Set variables (ensure to replace *xxx* with your values):\n"
+"\n"
+"```bash\n"
+"Setting.set('import_otrs_endpoint', "
+"'https://xxx/otrs/public.pl?Action=ZammadMigrator')\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_otrs_endpoint_key', 'xxx')\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Run a full migration:\n"
+"\n"
+"```bash\n"
+"Import::OTRS.start\n"
+"```\n"
+"\n"
+"Run a differential migration (only possible after finishing an earlier "
+"full\n"
+"migration):\n"
+"\n"
+"All steps from \"Set variables\" +\n"
+"\n"
+"```bash\n"
+"Setting.set('system_init_done', false)\n"
+"```\n"
+"\n"
+"```bash\n"
+"Import::OTRS.diff_worker\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/migrate.md:482
+#, markdown-text, no-wrap
+msgid "Zendesk"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:498
+#, markdown-text
+msgid ""
+"Important: Please note that migration speed highly depends on your Zendesk "
+"plan (API rate limits apply)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:498
+#, markdown-text
+msgid ""
+"Your Zendesk plan has to provide API support. This may not apply to all "
+"available plans."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:498
+#, markdown-text
+msgid ""
+"User passwords are not migrated and will require the user to use the "
+"password reset link on the login page."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:498
+#, markdown-text
+msgid ""
+"Objects with cyrillic strings can't be migrated. Make sure to rename them "
+"before starting the migration."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:506
+#, markdown-text
+msgid ""
+"Zammad requires API access which is why you’ll need to [create an API "
+"key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token)  "
+"for the migration. The migrator will request your Zendesk-URL, email address "
+"and API key."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/migrate.md:518
+#, no-wrap
+msgid ""
+"\n"
+"=== Via Browser\n"
+"\n"
+"After installing Zammad and\n"
+"[configuring your webserver](/en/tutorials/webserver-config), navigate to "
+"your\n"
+"Zammads FQDN in your browser and follow the migration wizard. You can find\n"
+"it in the log in screen by clicking the \"Or migrate from another system\"\n"
+"link at the bottom.\n"
+"\n"
+"Depending on the the number of users, tickets and Zendesk plan, this may "
+"take a\n"
+"while.\n"
+"\n"
+"=== Via Console\n"
+"\n"
+"Open console:\n"
+"\n"
+"```bash\n"
+"zammad run rails c\n"
+"```\n"
+"Set variables:\n"
+"\n"
+"```bash\n"
+"subdomain = '{zendesk url}'\n"
+"```\n"
+"```bash\n"
+"email = '{zendesk admin email address}'\n"
+"```\n"
+"```bash\n"
+"token = '{zendesk token}'\n"
+"\n"
+"```\n"
+"\n"
+"Update Zammad settings:\n"
+"```bash\n"
+"Setting.set('import_zendesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_zendesk_endpoint_username', email)\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_zendesk_endpoint_key', token)\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_backend', 'zendesk')\n"
+"```\n"
+"```bash\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"Check your configuration in a dry run:\n"
+"\n"
+"```bash\n"
+"Sequencer.process('Import::Zendesk::ConnectionTest')\n"
+"```\n"
+"\n"
+"Run the migration:\n"
+"\n"
+"```bash\n"
+"job = ImportJob.create(name: 'Import::Zendesk')\n"
+"```\n"
+"```bash\n"
+"AsyncImportJob.perform_later(job)\n"
+"```\n"
+"\n"
 msgstr ""
 
 #. type: Title #

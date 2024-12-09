@@ -9,7 +9,7 @@ Congratulations, it seems you successfully installed Zammad. To start with your
 fresh installed Zammad, head over to the next section. Alternatively, you
 have other options:
 
-- [Migrate from another supported ticketing system](/en/tutorials/migrate/migrate)
+- [Migrate from another supported ticketing system](/en/tutorials/migrate)
 - [Restore Zammad from an existing backup](/en/tutorials/backup-restore)
 
 ## Getting Started Wizard
