@@ -45,13 +45,13 @@ firewall. It may not cover your case.
 
 ===Ubuntu
 ```bash
-$ sudo ufw allow 80
+sudo ufw allow 80
 ```
 ```bash
-$ sudo ufw allow 443
+sudo ufw allow 443
 ```
 ```bash
-$ sudo ufw reload
+sudo ufw reload
 ```
 
 ===Debian
@@ -67,15 +67,14 @@ Ensure to add these lines to your input-chain.
 
 ```bash
 sudo tcp dport { http, https } accept
+```
+```bash
 sudo udp dport { http, https } accept
 ```
 The result can look like the following. Keep in mind that your environment
 could require different / more rules.
 
 ```bash
-#!/usr/local/sbin/nft -f
-flush ruleset
-
 table inet filter {
    chain input {
       type filter hook input priority 0; policy drop;

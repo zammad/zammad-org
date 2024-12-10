@@ -1,9 +1,9 @@
 ---
 order: 1
-title: Console
+title: 'Rails Commands'
 ---
 
-# Console
+# Rails Console
 
 Zammad uses Ruby on Rails so you can make use of the [rails
 console](http://guides.rubyonrails.org/command_line.html).
@@ -38,7 +38,7 @@ docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 === Package Installation
 
 ``` bash
-$ zammad run rails r '{COMMAND}'
+zammad run rails r '{COMMAND}'
 
 ```
 
@@ -60,7 +60,7 @@ docker compose run --rm zammad-railsserver rails c
 === Package Installation
 
 ``` bash
-$ zammad run rails c
+zammad run rails c
 
 ```
 

@@ -167,6 +167,8 @@ not available there.
 
 ```bash
 a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
+```
+```bash
 systemctl restart apache2
 ```
 

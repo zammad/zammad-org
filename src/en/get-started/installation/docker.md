@@ -105,15 +105,17 @@ The docker entrypoint script sets up environment variables required by Zammad
 to function properly. That is why calling `rails` or `rake` on the console
 should be done via one of the following methods:
 
+Directly execute a specific command:
 ``` bash
-# Directly execute a specific command:
-$ docker compose run --rm zammad-railsserver rails r '...your rails command here...'
-
-# Run the interactive rails console to manually enter Rails commands:
-$ docker compose run --rm zammad-railsserver rails c
-
-# Via 'docker exec':
-$ docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver rails r '...your rails command here...'
+```
+Run the interactive rails console to manually enter Rails commands:
+``` bash
+docker compose run --rm zammad-railsserver rails c
+```
+Via "docker exec":
+``` bash
+docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
 ```
 
 ::: tip

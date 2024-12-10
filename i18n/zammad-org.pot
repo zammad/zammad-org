@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-10 13:26+0100\n"
+"POT-Creation-Date: 2024-12-10 14:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1831,24 +1831,48 @@ msgid ""
 "console should be done via one of the following methods:"
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:109
+#, markdown-text
+msgid "Directly execute a specific command:"
+msgstr ""
+
 #. type: Fenced code block (bash)
-#: src/en/get-started/installation/docker.md:108
+#: src/en/get-started/installation/docker.md:109
 #, no-wrap
 msgid ""
-"# Directly execute a specific command:\n"
-"$ docker compose run --rm zammad-railsserver rails r '...your rails command "
+"docker compose run --rm zammad-railsserver rails r '...your rails command "
 "here...'\n"
-"\n"
-"# Run the interactive rails console to manually enter Rails commands:\n"
-"$ docker compose run --rm zammad-railsserver rails c\n"
-"\n"
-"# Via 'docker exec':\n"
-"$ docker exec zammad-docker-compose-zammad-railsserver-1 "
-"/docker-entrypoint.sh rails r '...your rails command here...'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:113
+#, markdown-text
+msgid "Run the interactive rails console to manually enter Rails commands:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:113
+#, no-wrap
+msgid "docker compose run --rm zammad-railsserver rails c\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:117
+#, markdown-text
+msgid "Via \"docker exec\":"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/get-started/installation/docker.md:117
+#, no-wrap
+msgid ""
+"docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh "
+"rails r '...your rails command here...'\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/installation/docker.md:119
+#: src/en/get-started/installation/docker.md:121
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the rails server, you can, for "
@@ -3123,10 +3147,16 @@ msgstr ""
 msgid "API"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/reference/console.md:1
+#, no-wrap
+msgid "Rails Commands"
+msgstr ""
+
 #. type: Title #
-#: src/en/reference/console.md:1 src/en/reference/console.md:6
+#: src/en/reference/console.md:6
 #, markdown-text, no-wrap
-msgid "Console"
+msgid "Rails Console"
 msgstr ""
 
 #. type: Plain text
@@ -3186,7 +3216,7 @@ msgid ""
 "=== Package Installation\n"
 "\n"
 "``` bash\n"
-"$ zammad run rails r '{COMMAND}'\n"
+"zammad run rails r '{COMMAND}'\n"
 "\n"
 "```\n"
 "\n"
@@ -3215,7 +3245,7 @@ msgid ""
 "=== Package Installation\n"
 "\n"
 "``` bash\n"
-"$ zammad run rails c\n"
+"zammad run rails c\n"
 "\n"
 "```\n"
 "\n"
@@ -7439,18 +7469,6 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/reference/rails-commands.md:1
-#, no-wrap
-msgid "Rails Commands"
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/rails-commands.md:6
-#, markdown-text, no-wrap
-msgid "Rails commands"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: prev link
 #: src/en/TEMPLATE.md:1
 #, no-wrap
@@ -7989,21 +8007,38 @@ msgstr ""
 msgid "Set the Elasticsearch URL"
 msgstr ""
 
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:13
+#, markdown-text
+msgid "Set the Elasticsearch server address; adapt it to your scenario."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:15
+#, markdown-text
+msgid "Elasticsearch 7 / without `https`:"
+msgstr ""
+
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:12
+#: src/en/tutorials/connect-config-elasticsearch.md:15
 #, no-wrap
-msgid ""
-"# Set the Elasticsearch server address; adapt it to your scenario.\n"
-"\n"
-"# Elasticsearch 7:\n"
-"zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
-"\n"
-"# Elasticsearch 8:\n"
-"zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
+msgid "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:19
+#, markdown-text
+msgid "Elasticsearch 8 / with `https`:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:19
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:22
+#: src/en/tutorials/connect-config-elasticsearch.md:23
 #, markdown-text, no-wrap
 msgid ""
 "Set the Elasticsearch User and Password <Badge type=\"warning\" text=\"only "
@@ -8011,22 +8046,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:24
+#: src/en/tutorials/connect-config-elasticsearch.md:25
 #, no-wrap
-msgid ""
-"# Set Elasticsearch user and password\n"
-"zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
-"zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
+msgid "zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:28
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:30
+#: src/en/tutorials/connect-config-elasticsearch.md:32
 #, markdown-text, no-wrap
 msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\"only ES8\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:35
+#: src/en/tutorials/connect-config-elasticsearch.md:37
 #, markdown-text
 msgid ""
 "Show and copy the auto-generated certificate from Elasticsearch and add it "
@@ -8035,13 +8073,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:36
+#: src/en/tutorials/connect-config-elasticsearch.md:38
 #, no-wrap
 msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:42
+#: src/en/tutorials/connect-config-elasticsearch.md:44
 #, markdown-text, no-wrap
 msgid ""
 "Go to the admin panel of Zammad and add your copied certificate under\n"
@@ -8049,30 +8087,43 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:43
+#: src/en/tutorials/connect-config-elasticsearch.md:45
 #, markdown-text, no-wrap
 msgid "Build/Rebuild the Searchindex"
 msgstr ""
 
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:48
+#, markdown-text
+msgid "Without specifying CPU cores to use:"
+msgstr ""
+
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:45
+#: src/en/tutorials/connect-config-elasticsearch.md:48
 #, no-wrap
-msgid ""
-"zammad run rake zammad:searchindex:rebuild\n"
-"\n"
-"# Optionally, you can specify a number of CPU cores which are used for\n"
-"# rebuilding the searchindex, as in the following example with 8 cores:\n"
-"zammad run rake zammad:searchindex:rebuild[8]\n"
+msgid "zammad run rake zammad:searchindex:rebuild\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:52
+#, markdown-text
+msgid "With specifying CPU core to use (example 8):"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:52
+#, no-wrap
+msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/connect-config-elasticsearch.md:53
+#: src/en/tutorials/connect-config-elasticsearch.md:56
 #, markdown-text, no-wrap
 msgid "Optional Settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:58
+#: src/en/tutorials/connect-config-elasticsearch.md:61
 #, markdown-text
 msgid ""
 "We collected some useful settings you may want to apply. For further "
@@ -8081,13 +8132,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:59
+#: src/en/tutorials/connect-config-elasticsearch.md:62
 #, markdown-text, no-wrap
 msgid "Index Namespacing"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:62
+#: src/en/tutorials/connect-config-elasticsearch.md:66
 #, markdown-text
 msgid ""
 "Useful when connecting multiple services or Zammad instances to a single "
@@ -8095,7 +8146,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:62
+#: src/en/tutorials/connect-config-elasticsearch.md:66
 #, no-wrap
 msgid ""
 "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + "
@@ -8103,13 +8154,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:66
+#: src/en/tutorials/connect-config-elasticsearch.md:70
 #, markdown-text, no-wrap
 msgid "File-Attachment Indexing Rules"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:70
+#: src/en/tutorials/connect-config-elasticsearch.md:75
 #, markdown-text
 msgid ""
 "Zammad supports searching in file attachments, which means Elasticsearch has "
@@ -8117,17 +8168,31 @@ msgid ""
 "resources."
 msgstr ""
 
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:78
+#, markdown-text
+msgid "Files with these extensions will not be indexed:"
+msgstr ""
+
 #. type: Fenced code block (bash)
-#: src/en/tutorials/connect-config-elasticsearch.md:70
+#: src/en/tutorials/connect-config-elasticsearch.md:78
 #, no-wrap
 msgid ""
-"# Files with these extensions will not be indexed\n"
 "zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
 "[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', "
 "'.mbox' ] )\"\n"
-"\n"
-"# Files larger than this size (in MB) will not be indexed\n"
-"zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:84
+#, markdown-text
+msgid "Files larger than this size (in MB) will not be indexed:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/connect-config-elasticsearch.md:84
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr ""
 
 #. type: Title #
@@ -8221,13 +8286,13 @@ msgid ""
 "\n"
 "===Ubuntu\n"
 "```bash\n"
-"$ sudo ufw allow 80\n"
+"sudo ufw allow 80\n"
 "```\n"
 "```bash\n"
-"$ sudo ufw allow 443\n"
+"sudo ufw allow 443\n"
 "```\n"
 "```bash\n"
-"$ sudo ufw reload\n"
+"sudo ufw reload\n"
 "```\n"
 "\n"
 "===Debian\n"
@@ -8255,15 +8320,14 @@ msgid ""
 "\n"
 "```bash\n"
 "sudo tcp dport { http, https } accept\n"
+"```\n"
+"```bash\n"
 "sudo udp dport { http, https } accept\n"
 "```\n"
 "The result can look like the following. Keep in mind that your environment\n"
 "could require different / more rules.\n"
 "\n"
 "```bash\n"
-"#!/usr/local/sbin/nft -f\n"
-"flush ruleset\n"
-"\n"
 "table inet filter {\n"
 "   chain input {\n"
 "      type filter hook input priority 0; policy drop;\n"
@@ -9825,7 +9889,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:123
-#: src/en/tutorials/webserver-config.md:197
+#: src/en/tutorials/webserver-config.md:199
 #, markdown-text
 msgid ""
 "Adjust the just copied file with a text editor of your choice (e.g. vi or "
@@ -9842,7 +9906,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:129
-#: src/en/tutorials/webserver-config.md:203
+#: src/en/tutorials/webserver-config.md:205
 #, markdown-text
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
@@ -9878,7 +9942,7 @@ msgstr ""
 
 #. type: Fenced code block (bash)
 #: src/en/tutorials/webserver-config.md:138
-#: src/en/tutorials/webserver-config.md:212
+#: src/en/tutorials/webserver-config.md:214
 #, no-wrap
 msgid ""
 "openssl dhparam -out <path>/dhparam.pem 4096\n"
@@ -9893,7 +9957,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:148
-#: src/en/tutorials/webserver-config.md:223
+#: src/en/tutorials/webserver-config.md:225
 #, markdown-text
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
@@ -9918,7 +9982,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:156
-#: src/en/tutorials/webserver-config.md:266
+#: src/en/tutorials/webserver-config.md:268
 #, markdown-text
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
@@ -9949,13 +10013,17 @@ msgstr ""
 #. type: Fenced code block (bash)
 #: src/en/tutorials/webserver-config.md:164
 #, no-wrap
-msgid ""
-"a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
-"systemctl restart apache2\n"
+msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/tutorials/webserver-config.md:167
+#, no-wrap
+msgid "systemctl restart apache2\n"
 msgstr ""
 
 #. type: Fenced div block (details Config for CentOS)
-#: src/en/tutorials/webserver-config.md:169
+#: src/en/tutorials/webserver-config.md:171
 #, no-wrap
 msgid ""
 "Add/uncomment the appropriate ``LoadModule`` statements in your Apache "
@@ -9973,13 +10041,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:183
+#: src/en/tutorials/webserver-config.md:185
 #, markdown-text, no-wrap
 msgid "Step 2 - Get a Current Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:187
+#: src/en/tutorials/webserver-config.md:189
 #, markdown-text
 msgid ""
 "The package installation copied a ``zammad.conf`` file to your webserver "
@@ -9987,25 +10055,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:189
+#: src/en/tutorials/webserver-config.md:191
 #, markdown-text
 msgid "Adjust your Apache config directory according to your setup:"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: src/en/tutorials/webserver-config.md:190
+#: src/en/tutorials/webserver-config.md:192
 #, no-wrap
 msgid "ls /etc/apache2/sites-available\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:194
+#: src/en/tutorials/webserver-config.md:196
 #, markdown-text, no-wrap
 msgid "Step 3 - Adjust the Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:200
+#: src/en/tutorials/webserver-config.md:202
 #, markdown-text
 msgid ""
 "Locate any ``ServerName`` directive and adjust ``example.com`` to the domain "
@@ -10013,25 +10081,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:207
+#: src/en/tutorials/webserver-config.md:209
 #, markdown-text
 msgid "``SSLCertificateFile`` (your ssl certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:207
+#: src/en/tutorials/webserver-config.md:209
 #, markdown-text
 msgid "``SSLCertificateKeyFile``(the certificates private key)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:207
+#: src/en/tutorials/webserver-config.md:209
 #, markdown-text
 msgid "``SSLCertificateChainFile`` (the public CA certificate)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:211
+#: src/en/tutorials/webserver-config.md:213
 #, markdown-text
 msgid ""
 "If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
@@ -10040,19 +10108,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:217
+#: src/en/tutorials/webserver-config.md:219
 #, markdown-text, no-wrap
 msgid "Step 4 - Adjust HTTPS Configuration"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:224
+#: src/en/tutorials/webserver-config.md:226
 #, markdown-text, no-wrap
 msgid "Step 5 - Enable the Site"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:228
+#: src/en/tutorials/webserver-config.md:230
 #, markdown-text
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
@@ -10060,7 +10128,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:229
+#: src/en/tutorials/webserver-config.md:231
 #, no-wrap
 msgid ""
 "\n"
@@ -10093,13 +10161,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:259
+#: src/en/tutorials/webserver-config.md:261
 #, markdown-text, no-wrap
 msgid "Step 6 - Save & Reload"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:263
+#: src/en/tutorials/webserver-config.md:265
 #, markdown-text
 msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "

@@ -9,21 +9,23 @@ order: 2
 
 ### Set the Elasticsearch URL
 
+Set the Elasticsearch server address; adapt it to your scenario.
+
+Elasticsearch 7 / without `https`:
 ```bash
-# Set the Elasticsearch server address; adapt it to your scenario.
-
-# Elasticsearch 7:
 zammad run rails r "Setting.set('es_url', 'http://localhost:9200')"
-
-# Elasticsearch 8:
+```
+Elasticsearch 8 / with `https`:
+```bash
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
 ### Set the Elasticsearch User and Password <Badge type="warning" text="only ES8" />
 
 ```bash
-# Set Elasticsearch user and password
 zammad run rails r "Setting.set('es_user', 'elastic')"
+```
+```bash
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
@@ -42,11 +44,12 @@ Go to the admin panel of Zammad and add your copied certificate under
 
 ### Build/Rebuild the Searchindex
 
+Without specifying CPU cores to use:
 ```bash
 zammad run rake zammad:searchindex:rebuild
-
-# Optionally, you can specify a number of CPU cores which are used for
-# rebuilding the searchindex, as in the following example with 8 cores:
+```
+With specifying CPU core to use (example 8):
+```bash
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
@@ -57,6 +60,7 @@ information please have a look at
 [Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
 
 ### Index Namespacing
+
 Useful when connecting multiple services or Zammad instances to a single
 Elasticsearch server (to prevent name collisions during indexing).
 ```bash
@@ -64,15 +68,20 @@ zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zamm
 ```
 
 ### File-Attachment Indexing Rules
+
 Zammad supports searching in file attachments, which means Elasticsearch
 has to index those, too. Limiting such indexing can help preserve system
 resources.
+
+
+Files with these extensions will not be indexed:
 ```bash
-# Files with these extensions will not be indexed
 zammad run rails r "Setting.set('es_attachment_ignore',\
 [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )"
+```
 
-# Files larger than this size (in MB) will not be indexed
+Files larger than this size (in MB) will not be indexed:
+```bash
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ```
 
