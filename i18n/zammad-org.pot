@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-09 15:47+0100\n"
+"POT-Creation-Date: 2024-12-10 13:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3124,10 +3124,1959 @@ msgid "API"
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/config-env-variables.md:1 src/en/reference/env-vars.md:1
-#: src/en/reference/env-vars.md:6
+#: src/en/reference/console.md:1 src/en/reference/console.md:6
 #, markdown-text, no-wrap
-msgid "Environment Variables"
+msgid "Console"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:10
+#, markdown-text
+msgid ""
+"Zammad uses Ruby on Rails so you can make use of the [rails "
+"console](http://guides.rubyonrails.org/command_line.html)."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/console.md:11
+#, no-wrap
+msgid ""
+"Please double check your commands before running, as some of those\n"
+"commands might cause data loss or damaged tickets! If you're unsure,\n"
+"**use a test system first**!\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:17
+#, markdown-text, no-wrap
+msgid "Starting Zammad's Rails Console"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:19
+#, markdown-text, no-wrap
+msgid "Execute a Single Command"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:21
+#, no-wrap
+msgid "Replace `{COMMAND}` with your command you want to run.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/console.md:25
+#, no-wrap
+msgid ""
+"If you enter a `p` in front of your command (e.g. like\n"
+"`rails r 'p Delayed::Job.count'`), you'll actually receive a printed\n"
+"output (without you won't!).\n"
+msgstr ""
+
+#. type: Fenced div block (tabs key:installmethod)
+#: src/en/reference/console.md:31
+#, no-wrap
+msgid ""
+"\n"
+"=== Docker Installation\n"
+"\n"
+"```bash\n"
+"docker compose run --rm zammad-railsserver rails r '{COMMAND}'\n"
+"```\n"
+"=== Package Installation\n"
+"\n"
+"``` bash\n"
+"$ zammad run rails r '{COMMAND}'\n"
+"\n"
+"```\n"
+"\n"
+"=== Source / Development Installation\n"
+"```bash\n"
+"rails r '{COMMAND}'\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:51
+#, markdown-text, no-wrap
+msgid "Run Interactive Rails Console"
+msgstr ""
+
+#. type: Fenced div block (tabs key:installmethod)
+#: src/en/reference/console.md:53
+#, no-wrap
+msgid ""
+"\n"
+"=== Docker Installation\n"
+"\n"
+"```bash\n"
+"docker compose run --rm zammad-railsserver rails c\n"
+"```\n"
+"=== Package Installation\n"
+"\n"
+"``` bash\n"
+"$ zammad run rails c\n"
+"\n"
+"```\n"
+"\n"
+"=== Source / Development Installation\n"
+"```bash\n"
+"rails c\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:73
+#, markdown-text, no-wrap
+msgid "Rails Console Safe Mode"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:79
+#, markdown-text
+msgid ""
+"Normally, starting rails console requires certain [third-party "
+"services](/en/get-started/installation/prerequisites#server-software)  to be "
+"up and running. You may receive errors and console will refuse to start in "
+"case they are not available."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:83
+#, markdown-text
+msgid ""
+"However, it's possible to start rails console in safe mode by setting a "
+"special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be "
+"ignored."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:84
+#, no-wrap
+msgid "ZAMMAD_SAFE_MODE=1 zammad run rails c\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:88
+#, markdown-text, no-wrap
+msgid "Ticket Commands"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:90
+#, markdown-text, no-wrap
+msgid "Get the RAW Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:95
+#, markdown-text
+msgid ""
+"The following command will help you to check on received EML-files Zammad "
+"fetched. This comes in handy if you delete Mails upon fetching and you need "
+"to check the EML-file itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:98
+#, markdown-text
+msgid ""
+"To get the first articles EML-file, you can use the following command.  In "
+"our example the ticket number in question is `101234`."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:99
+#, no-wrap
+msgid "Ticket.find_by(number:'101234').articles.first.as_raw.content\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:106
+#, markdown-text
+msgid ""
+"If needed, you can also get the raw content of later articles (you'll need "
+"to find the correct article though). Again, we expect `101234` to be our "
+"ticket number."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:109
+#, markdown-text
+msgid "In the first step we get all article IDs of the ticket:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:110
+#, no-wrap
+msgid "Ticket.find_by(number:'101234').article_ids\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:114
+#, markdown-text
+msgid "Output:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:114
+#, no-wrap
+msgid "[4, 3, 2]\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:118
+#, markdown-text
+msgid "From the list we get, we can then get the articles content:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:118
+#, no-wrap
+msgid "Ticket::Article.find(3).as_raw.content\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:122
+#, no-wrap
+msgid ""
+"If you just use `Ticket::Article.find(3)` you can see further\n"
+"information (like who sent the mail, when we fetched it, ...).\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:127
+#, markdown-text, no-wrap
+msgid "Update All Tickets of a Specific Customer"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/console.md:129
+#, no-wrap
+msgid ""
+"Please note that this action can be expensive resource wise, if you\n"
+"have many tickets, this might slow down Zammad.\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:134
+#, no-wrap
+msgid "Ticket.where(customer_id: 4).update_all(customer_id: 1)\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:138
+#, markdown-text, no-wrap
+msgid "Get Ticket State Types"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:141
+#, markdown-text
+msgid "This will show all state types needed for creating new ticket states:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:142
+#, no-wrap
+msgid "Ticket::StateType.pluck(:id, :name)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:147
+#, markdown-text
+msgid "Above will return both, the type ID and name - e.g.:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:147
+#, no-wrap
+msgid "`[[1, \"new\"], [2, \"open\"], ...`.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:152
+#, markdown-text, no-wrap
+msgid "User Commands"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:154
+#, markdown-text, no-wrap
+msgid "Find User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:158
+#, markdown-text
+msgid ""
+"In order to work on user information or to check for specific information, "
+"you'll need to find it first."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:160
+#, markdown-text
+msgid "User ID already known:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:160
+#, no-wrap
+msgid "User.find(4)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:164
+#, markdown-text
+msgid "Searching for the user by his email address:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:164
+#, no-wrap
+msgid "User.find_by(email: 'your@email')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:168
+#, markdown-text
+msgid "Searching for the user by his login:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:168
+#, no-wrap
+msgid "User.find_by(login: 'john.doe')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:172
+#, markdown-text, no-wrap
+msgid "Unlock a Locked User Account"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/console.md:174
+#, no-wrap
+msgid "Unlocking a locked user account is also supported by Zammad's web UI!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:182
+#, markdown-text, no-wrap
+msgid ""
+"It sometimes happens that a user locks himself out by wildly trying the\n"
+"wrong password multiple times. Depending on your maximum failing login\n"
+"count (<span class=\"title-ref\">default: 10 times</span>), Zammad might\n"
+"lock the account.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:185
+#, markdown-text
+msgid ""
+"The user can't login any more (forever) if he doesn't change the password or "
+"you reset the counter."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:186
+#, no-wrap
+msgid "u=User.find(**USERID**)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:189
+#, no-wrap
+msgid "u.login_failed=0\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:192 src/en/reference/console.md:219
+#: src/en/reference/console.md:236 src/en/reference/console.md:253
+#, no-wrap
+msgid "u.save!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:199
+#, markdown-text
+msgid ""
+"You can also double check if the account is locked by running the following "
+"command (result needs to be 1 above your limit, so 11 for the default of 10 "
+"failing logins):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:200
+#, no-wrap
+msgid "User.find(**USERID**).login_failed\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:204
+#, markdown-text, no-wrap
+msgid "Change / Update Email Address of User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:207
+#, markdown-text
+msgid "If needed, you can simply change the email address of the user."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:208
+#, no-wrap
+msgid ""
+"Please note that the login attribute is not affected by this and\n"
+"Zammad thus might show different information within the UI.\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:213 src/en/reference/console.md:230
+#, no-wrap
+msgid "u = User.find(**USERID**)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:216
+#, no-wrap
+msgid "u.email = 'user@exmaple.com'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:224 src/en/reference/console.md:241
+#, markdown-text
+msgid "You need to find the user ID of the user first for this."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:225
+#, markdown-text, no-wrap
+msgid "Change / Update Login Name of User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:229
+#, markdown-text
+msgid ""
+"Change the user name of the user (e.g. if you want to login with a shorter "
+"username instead of a mail address)"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:233
+#, no-wrap
+msgid "u.login = 'user@exmaple.com'\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:242
+#, markdown-text, no-wrap
+msgid "Set Admin Rights for User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:246
+#, markdown-text
+msgid ""
+"Don't have access to Zammad anymore? Grant yourself or another user "
+"administrative rights."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:247
+#, no-wrap
+msgid "u = User.find_by(email: 'you@example.com')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:250
+#, no-wrap
+msgid "u.roles = Role.where(name: ['Agent', 'Admin'])\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:257
+#, markdown-text, no-wrap
+msgid "Set Password for User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:261
+#, markdown-text
+msgid ""
+"You or the user did forget his password? No problem! Simply reset it by hand "
+"if needed."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:262
+#, no-wrap
+msgid ""
+"User.find_by(email: 'you@example.com').update!(password: "
+"'your_new_password')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:266
+#, markdown-text, no-wrap
+msgid "Remove Password for User"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:273
+#, markdown-text
+msgid ""
+"If you added a second authentication method (e.g. LDAP) after launch, there "
+"still may be a password in Zammad's own user management. In cases like that "
+"users will be able to login with their (local) Zammad password in addition "
+"to the credentials stored on the external authentication provider. Simply "
+"remove the password stored by Zammad."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:274
+#, no-wrap
+msgid "User.find_by(email: 'you@example.com').update!(password: nil)\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:278
+#, markdown-text, no-wrap
+msgid "Group Commands"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:280
+#, markdown-text, no-wrap
+msgid "Find a Group"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:282
+#, no-wrap
+msgid "Group.find_by(name: 'Users').follow_up_possible\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:286
+#, markdown-text, no-wrap
+msgid "Chat Commands"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:288
+#, markdown-text, no-wrap
+msgid "Remove IP Address Logs"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:292
+#, markdown-text
+msgid ""
+"Use the following command to remove all IP address records from closed chats "
+"that haven't been updated in the last seven days:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:293
+#, no-wrap
+msgid ""
+"Chat::Session.where(state: 'closed').where('updated_at < ?', "
+"7.days.ago).each do |session|\n"
+"next if session.preferences['remote_ip'].blank?\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:297
+#, no-wrap
+msgid "session.preferences.delete('geo_ip')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:300
+#, no-wrap
+msgid "session.preferences.delete('remote_ip')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:303
+#, no-wrap
+msgid ""
+"session.save!(touch: false)\n"
+"end\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:308
+#, markdown-text, no-wrap
+msgid "Working on Zammad Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:312
+#, markdown-text
+msgid ""
+"In this section, you can find some settings which you can set in the Zammad "
+"UI as well."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:313
+#, markdown-text, no-wrap
+msgid "Ticket_hook Setting"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:318
+#, markdown-text
+msgid ""
+"This will give you the ticket hook that you'll find inside the `[]` in front "
+"of the ticket number. By default this will be `Ticket#` - you shouldn't "
+"change this setting in a productive system."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:319
+#, no-wrap
+msgid "Setting.get('ticket_hook')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:323
+#, markdown-text, no-wrap
+msgid "FQDN Setting"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:326
+#, markdown-text
+msgid "Get the current FQDN setting of Zammad and, if needed, adjust it."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:327
+#, no-wrap
+msgid ""
+"This setting has no effect on SSL certificates or any web server\n"
+"configurations.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:333
+#, markdown-text
+msgid "Get current FQDN:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:333
+#, no-wrap
+msgid "Setting.get('fqdn')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:337
+#, markdown-text
+msgid "Set a new FQDN:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:337
+#, no-wrap
+msgid "Setting.set('fqdn', 'new.domain.tld')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:341
+#, markdown-text, no-wrap
+msgid "HTTP(s) Setting"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:345
+#, markdown-text
+msgid ""
+"This setting indirectly belongs to your FQDN setting and is relevant for "
+"variable based URLs (e.g. in notifications) Zammad generated."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/console.md:346
+#, no-wrap
+msgid ""
+"This setting also affects Zammad's CSRF token behavior. If you set\n"
+"this to e.g. HTTPs but you're using HTTP, logging in will\n"
+"fail!\n"
+"\n"
+"It has no effect on SSL certificates or any web server configuration.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:355
+#, markdown-text
+msgid "Get the current http type:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:355
+#, no-wrap
+msgid "Setting.get('http_type')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:359
+#, markdown-text
+msgid "Change the http type to HTTPs:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:359
+#, no-wrap
+msgid "Setting.set('http_type', 'https')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:363
+#, markdown-text, no-wrap
+msgid "Storage Provider Setting"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:369
+#, markdown-text
+msgid ""
+"The storage provider setting is set to `DB` on default installations.  "
+"However, if you receive a lot of attachments or have a fairly busy "
+"installation, using the database to store attachments is not the best "
+"approach."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:371
+#, markdown-text
+msgid "Get the current attachment storage:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:371
+#, no-wrap
+msgid "Setting.get('storage_provider')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:375
+#, markdown-text
+msgid "Change attachment storage to database"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:375
+#, no-wrap
+msgid "Setting.set('storage_provider', 'DB')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:384
+#, markdown-text
+msgid ""
+"If you have already stored files and want to move them, you can use the "
+"following example. Please be aware that this operation should only be "
+"executed in non-productive environments. In case you have to perform it in "
+"production environments, you should specify a sleep delay - otherwise your "
+"Zammad can be unresponsive."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:386
+#, markdown-text
+msgid ""
+"Move files from DB to File with a specified delay after each file in "
+"seconds:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:387
+#, no-wrap
+msgid "Store::File.move('DB', 'File', delay_in_sec)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:392
+#, markdown-text
+msgid "The following settings are available in a default installation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:395
+#, markdown-text
+msgid "`DB` (database)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:395
+#, markdown-text
+msgid "`File` (Filesystem (`/opt/zammad/storage/`))"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:396
+#, markdown-text, no-wrap
+msgid "Configuring Elasticsearch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:400
+#, markdown-text
+msgid ""
+"If your Elasticsearch installation changes, you can use the following "
+"commands to ensure that Zammad still can access Elasticsearch."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:402
+#, markdown-text
+msgid "Change elasticsearch URL:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:402
+#, no-wrap
+msgid "Setting.set('es_url', 'http://127.0.0.1:9200')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:406
+#, markdown-text
+msgid "Change elasticsearch user (e.g. for authentication):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:406
+#, no-wrap
+msgid "Setting.set('es_user', 'elasticsearch')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:410
+#, markdown-text
+msgid "Change the elasticsearch password for authentication:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:410
+#, no-wrap
+msgid "Setting.set('es_password', 'zammad')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:414
+#, markdown-text
+msgid "Change the index name:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:414
+#, no-wrap
+msgid "Setting.set('es_index', Socket.gethostname + '_zammad')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:418
+#, markdown-text
+msgid "Ignore files by file extension from being indexed:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:418
+#, no-wrap
+msgid ""
+"Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin "
+".exe .box .mbox])\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:422
+#, markdown-text
+msgid "Limit the attachment size:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:422
+#, no-wrap
+msgid "Setting.set('es_attachment_max_size_in_mb', 50)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:426
+#, markdown-text
+msgid "Turn SSL verification on or off:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:426
+#, no-wrap
+msgid "Setting.set('es_ssl_verify', 'false')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:430
+#, markdown-text, no-wrap
+msgid "Enable Proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:433
+#, markdown-text
+msgid "Set a proxy to use by Zammad:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:434
+#, no-wrap
+msgid "Setting.set('proxy', 'proxy.example.com:3128')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:437
+#, no-wrap
+msgid "Setting.set('proxy_username', 'some user')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:440
+#, no-wrap
+msgid "Setting.set('proxy_password', 'some pass')\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:444
+#, markdown-text, no-wrap
+msgid "Hidden Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:449
+#, markdown-text
+msgid ""
+"In this section you can find some settings that you won't find within the "
+"Zammad UI. Those settings might come in handy as it can change Zammad's "
+"behavior."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:450
+#, markdown-text, no-wrap
+msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:456
+#, markdown-text
+msgid ""
+"This option allows you to send all outgoing E-Mails (not notifications)  to "
+"a specific mailbox. Please note that this shouldn't be a mailbox you're "
+"importing already! This will apply to all groups and is a global setting."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:457
+#, no-wrap
+msgid "Setting.set('system_bcc', 'alias@domain.tld')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:462
+#, markdown-text
+msgid "You can easily check the current BCC-Setting by running the following:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:463
+#, no-wrap
+msgid "Setting.get('system_bcc')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:467
+#, markdown-text, no-wrap
+msgid "Activate Counter on Grouped Overviews"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:470
+#, markdown-text
+msgid "This enables a ticket number value in each heading for grouped elements."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:472
+#, markdown-text
+msgid "Enable counter for grouped overviews:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:472
+#, no-wrap
+msgid "Setting.set('ui_table_group_by_show_count', true)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:476
+#, markdown-text
+msgid "Disable counter for grouped overviews:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:476
+#, no-wrap
+msgid "Setting.set('ui_table_group_by_show_count', false)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:480
+#, markdown-text
+msgid "Get current setting (`nil` is false):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:480
+#, no-wrap
+msgid "Setting.get('ui_table_group_by_show_count')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:484
+#, markdown-text, no-wrap
+msgid "Default Ticket Type on Creation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:488
+#, markdown-text
+msgid ""
+"Zammad allows you to define the default article type upon ticket "
+"creation. By default this will be a incoming phone call."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:490
+#, markdown-text
+msgid "You can choose between"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:494
+#, markdown-text
+msgid "`phone-in` (incoming call, **default**),"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:494
+#, markdown-text
+msgid "`phone-out` (outgoing call) and"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:494
+#, markdown-text
+msgid "`email-out` (Sending an E-Mail out)."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:495
+#, no-wrap
+msgid "Setting.set('ui_ticket_create_default_type', 'email-out')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:500
+#, markdown-text
+msgid "To check what setting is set currently, simply run:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:501
+#, no-wrap
+msgid "Setting.get('ui_ticket_create_default_type')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:505
+#, markdown-text, no-wrap
+msgid "Adding a Warning to the Ticket Creation Process"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:509
+#, markdown-text
+msgid ""
+"If you want to give your agent a note or warning during ticket **creation**, "
+"you can do so with the below command."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:511
+#, markdown-text
+msgid "You can use three different warnings for:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:515
+#, markdown-text
+msgid "Incoming Calls `:\"phone-in\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:515
+#, markdown-text
+msgid "Outgoing Calls `:\"phone-out\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:515
+#, markdown-text
+msgid "Outgoing E-Mails `:\"email-out\"=>\"\"`"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:516
+#, no-wrap
+msgid ""
+"Setting.set('ui_ticket_create_notes', {\n"
+"      :\"phone-in\"=>\"You're about to note a incoming phone call.\",\n"
+"      :\"phone-out\"=>\"You're about to note an outgoing phone call.\",\n"
+"      :\"email-out\"=>\"You're going to send out an E-Mail.\"\n"
+"   })\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:524
+#, no-wrap
+msgid ""
+"You can use those three sub-settings independently, if you e.g. don't\n"
+"need a warning on incoming calls, simply leave out `:\"phone-in\"=>\"\"`\n"
+"out of the setting. The setting itself is done within an array ( `{}` ).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:531 src/en/reference/console.md:571
+#, markdown-text
+msgid "To check what's currently set, you can use:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:532
+#, no-wrap
+msgid "Setting.get('ui_ticket_create_notes')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:537
+#, markdown-text, no-wrap
+msgid "Adding a Warning to the Article Reply Process"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:541
+#, markdown-text
+msgid ""
+"If you want to give your agent a warning during the ticket article "
+"**reply**, you can do that with the command below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:544
+#, markdown-text
+msgid ""
+"You can provide different warnings for different channels and article "
+"visibility:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Internal Notes `:\"note-internal\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Public Notes `:\"note-public\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Internal Calls `:\"phone-internal\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Public Calls `:\"phone-public\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Internal Emails `:\"email-internal\"=>\"\"`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/console.md:551
+#, markdown-text
+msgid "Public Emails `:\"email-public\"=>\"\"`"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:552
+#, no-wrap
+msgid ""
+"Setting.set('ui_ticket_add_article_hint', {\n"
+"      :\"note-internal\"=>\"You are writing an |internal note|, only people "
+"of your organization will see it.\",\n"
+"      :\"note-public\"=>\"You are writing a |public note|.\",\n"
+"      :\"phone-internal\" => \"You are writing an |internal phone note|, "
+"only people of your organization will see it.\",\n"
+"      :\"phone-public\"=>\"You are writing a |public phone note|.\",\n"
+"      :\"email-internal\" => \"You are writing an |internal Email|, only "
+"people of your organization will see it.\",\n"
+"      :\"email-public\"=>\"You are writing a |public Email|.\"\n"
+"   })\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:563
+#, no-wrap
+msgid ""
+"You can use example sub-settings above independently, if you e.g.\n"
+"don't need a warning on internal calls, simply leave out\n"
+"`:\"phone-internal\"=>\"\"` out of the setting. The setting itself is in a\n"
+"form of an array ( `{}` ).\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:572
+#, no-wrap
+msgid "Setting.get('ui_ticket_add_article_hint')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:576
+#, markdown-text, no-wrap
+msgid "Show Email Address of Customer on Customer Selection (Ticket Creation)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:580
+#, markdown-text
+msgid ""
+"By default, Zammad will not display the email addresses of customers.  The "
+"below option allows you to change this behavior."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:581
+#, no-wrap
+msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:586 src/en/reference/console.md:606
+#, markdown-text
+msgid "Get the current state of this setting with:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:587
+#, no-wrap
+msgid "Setting.get('ui_user_organization_selector_with_email')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:591
+#, markdown-text, no-wrap
+msgid "Change Font Settings for Outgoing HTML Emails"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:593
+#, no-wrap
+msgid ""
+"Some clients (like Outlook) might fallback to other settings while it\n"
+"might work for other clients.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:600
+#, markdown-text
+msgid ""
+"The below setting allows you to adjust Zammad's email font setting. This "
+"setting does not require a service restart."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:601
+#, no-wrap
+msgid ""
+"Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', "
+"Helvetica, Arial, Geneva, sans-serif; font-size: 12px;\")\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:607
+#, no-wrap
+msgid "Setting.get('html_email_css_font')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:611
+#, markdown-text, no-wrap
+msgid "Highlight Customer's Open Ticket Count"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:615
+#, markdown-text
+msgid ""
+"This option enhances the selected customer's open tickets count. It "
+"highlights the count in different colors if they hit a threshold."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:616
+#, no-wrap
+msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:622
+#, markdown-text
+msgid ""
+"Above settings has specific thresholds as follows. You **cannot** adjust "
+"these thresholds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:627
+#, markdown-text, no-wrap
+msgid ""
+"| Situation / View      | no indication | warning (orange) | danger (red) "
+"|\n"
+"|-----------------------|---------------|------------------|--------------|\n"
+"| **Ticket Zoom**       | \\< 2          | 2                | \\>= 3        "
+"|\n"
+"| **New Ticket dialog** | 0             | 1                | \\>= 2        "
+"|\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:629
+#, markdown-text, no-wrap
+msgid "Activate Attachment Tab in Sidebar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:633
+#, markdown-text
+msgid ""
+"This option activates a new tab in the right sidebar in the ticket view "
+"which shows all attachments of the currently viewed ticket."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:634
+#, no-wrap
+msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:638
+#, markdown-text, no-wrap
+msgid "Time Period for Showing Customer Profile on New Calls"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:644
+#, markdown-text
+msgid ""
+"Zammad shows the customer profile dialog when a call of this customer is "
+"incoming and there is an existing ticket of this customer in this time "
+"period. The default time period is 30 days. If there is no ticket in this "
+"period, the customer dialog is not shown automatically."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:646
+#, markdown-text
+msgid "Set the time period to 90 days:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:646
+#, no-wrap
+msgid "Setting.set('cti_customer_last_activity', '90')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:650
+#, markdown-text, no-wrap
+msgid "Set Public \"Notes\" as SLA relevant"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:656
+#, markdown-text
+msgid ""
+"Normally, notes aren't SLA relevant. Use the following command to include "
+"publicly-visible notes when tracking SLA compliance (internal notes *will "
+"never* affect SLA calculations). Be aware that this setting will disable the "
+"option to delete public notes."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:657
+#, no-wrap
+msgid ""
+"By default, customers are not notified when public notes are added to a\n"
+"ticket. Set up a trigger if you wish to change this behavior.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:663
+#, markdown-text
+msgid "Enable SLA to count notes as communication:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:663
+#, no-wrap
+msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:667
+#, markdown-text
+msgid "Enable SLA to ignore notes as communication:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:667
+#, no-wrap
+msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:671
+#, markdown-text, no-wrap
+msgid "Other Useful Commands"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:673
+#, markdown-text, no-wrap
+msgid "Fetch Emails"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:677
+#, markdown-text
+msgid ""
+"The below command will do a manual fetch of mail channels. This will also "
+"show errors that might appear within that process."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:678
+#, no-wrap
+msgid "Channel.fetch\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:682
+#, markdown-text, no-wrap
+msgid "Reprocess Failed Emails"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:687
+#, markdown-text
+msgid ""
+"When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
+"malformed message), it will store the email in the database and warn in the "
+"monitoring section about it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:691
+#, markdown-text
+msgid ""
+"In case of a malformed message (e.g. an invalid email address in one of the "
+"header fields), you may need to manually edit the email before Zammad can "
+"process it. To do so, follow the steps below."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:692
+#, markdown-text, no-wrap
+msgid "Export all Failed Emails to a Local Folder"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:693
+#, no-wrap
+msgid "rake zammad:email_parser:failed_email:export_all`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:699
+#, markdown-text
+msgid ""
+"You can find the location of the exported email in the output of your "
+"console.  Every time you perform an export of failed (unprocessable) emails, "
+"it creates one folder containing all failed emails at the time of execution."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:700
+#, markdown-text, no-wrap
+msgid "Edit the Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:704
+#, markdown-text
+msgid ""
+"The email has been exported in the step above. Now you can have a look at it "
+"and try to repair it. Make sure to leave the file name untouched, as the "
+"import will otherwise fail."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:705
+#, markdown-text, no-wrap
+msgid "Import and Reprocess Locally Modified Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:708
+#, markdown-text
+msgid "After editing the email, run:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:709
+#, no-wrap
+msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:717
+#, markdown-text
+msgid ""
+"This will apply your changes from the file to the database. You can also "
+"pass the entire folder as argument, so all `.eml` files in it will we "
+"imported and reprocessed. If the reprocessing of the email was successful, "
+"the file(s) will be deleted, and the empty folder removed."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/console.md:718
+#, no-wrap
+msgid ""
+"Make sure to run these commands only from the main Zammad folder\n"
+"`/opt/zammad`. There may be problems if you try to run it from within\n"
+"the generated subfolder.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:724
+#, markdown-text, no-wrap
+msgid "Delete Unwanted Emails"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:728
+#, markdown-text
+msgid ""
+"In case of unwanted emails such as spam, you can delete them from the "
+"database after exporting them with the following command:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:728
+#, no-wrap
+msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:735
+#, markdown-text
+msgid ""
+"If you pass the export folder as argument instead, all contained emails will "
+"be removed from the database, their files deleted and finally the empty "
+"folder removed."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:736
+#, markdown-text, no-wrap
+msgid "Fill a Test System With Test Data"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/console.md:738
+#, no-wrap
+msgid ""
+"Don't run this in a productive environment! This can slow down Zammad\n"
+"and is hard to revert!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:747
+#, markdown-text
+msgid ""
+"The below command will add `50` agents, `1000` customers, `20` groups, `40` "
+"organizations, `5` new overviews and `100` tickets. You can always use `0` "
+"to not create specific items. Zammad will create random data which make no "
+"logical sense."
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:748
+#, no-wrap
+msgid ""
+"FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
+"40,overviews: 5,tickets: 100,)\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:752
+#, markdown-text, no-wrap
+msgid "Deleting Records"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/console.md:754
+#, no-wrap
+msgid ""
+"☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
+"proceed if you know what you're doing and you\n"
+"[have a backup](/en/tutorials/backup-restore)!\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:760
+#, markdown-text, no-wrap
+msgid "Removing Tickets (And Their Articles)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:763
+#, markdown-text
+msgid "Delete a ticket (specified by database ID):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:763
+#, no-wrap
+msgid "Ticket.find(4).destroy\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:767
+#, markdown-text
+msgid "Delete all tickets:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:767
+#, no-wrap
+msgid "Ticket.destroy_all\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:771
+#, markdown-text
+msgid "Keep some tickets (specified by database ID); delete the rest:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:771
+#, no-wrap
+msgid "tickets_to_keep = [1, 2, 3]\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:774
+#, no-wrap
+msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:778
+#, markdown-text, no-wrap
+msgid "Removing Users"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/console.md:780
+#, no-wrap
+msgid ""
+"Customers **may not** be deleted while they have tickets remaining in\n"
+"the system.\n"
+"\n"
+"As such, the examples below will delete not only the specified\n"
+"customers, but **all tickets associated with them**, as well. Below\n"
+"commands delete without any further warnings.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/console.md:790
+#, no-wrap
+msgid ""
+"If you're not sure what to do and need to learn more about what Zammad\n"
+"does upon removing users, please consider using Zammad's UI options in\n"
+"stead. You can find the data privacy feature in Zammad's admin interface "
+"under\n"
+"*System > Data Privacy*.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:798
+#, markdown-text
+msgid "Removing users is possible in 2 ways: A single user and in bulk."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:801
+#, markdown-text
+msgid "Remove a single user:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:802
+#, no-wrap
+msgid "User.find_by(email: '<email address>').destroy\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:806
+#, markdown-text
+msgid "Remove several users:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:807
+#, no-wrap
+msgid ""
+"User.where(\n"
+"      email: ['<email address 1>', '<email address 2>']\n"
+"   ).destroy_all\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:813
+#, markdown-text, no-wrap
+msgid "Removing Organizations"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:815
+#, no-wrap
+msgid "Removing an organization does **not** delete associated customers.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:819
+#, markdown-text, no-wrap
+msgid "Step 1: Select organizations"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:822
+#, markdown-text
+msgid "By \"active\" status:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:822
+#, no-wrap
+msgid "organizations = Organization.where(active: false)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:827
+#, markdown-text
+msgid "By name:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:827
+#, no-wrap
+msgid "organizations = Organization.where(name: 'Acme')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:832
+#, markdown-text
+msgid "By partial match on notes:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:832
+#, no-wrap
+msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:836
+#, markdown-text, no-wrap
+msgid "Step 2: Preview affected organizations"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:837
+#, no-wrap
+msgid ""
+"puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
+"}.join(\"\\n\")\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/console.md:841
+#, markdown-text, no-wrap
+msgid "Step 3: Proceed with Deletion"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:843
+#, no-wrap
+msgid ""
+"organizations.each do |org|\n"
+"    puts %{Preparing deletion of organization \"#{org.name}\"...}\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:847
+#, no-wrap
+msgid ""
+"org.members.each do |member|\n"
+"    puts \"  Removing #{member.fullname} from organization...\"\n"
+"    member.update!(organization_id: nil)\n"
+"end\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:853
+#, no-wrap
+msgid ""
+"    puts \"  Deleting #{org.name}...\"\n"
+"    org.destroy\n"
+"   end\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:859
+#, markdown-text, no-wrap
+msgid "Removing System Records"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:862
+#, markdown-text
+msgid "Remove all online notifications:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:863
+#, no-wrap
+msgid "OnlineNotification.destroy_all\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:868
+#, markdown-text
+msgid "Remove all entries from the Activity Stream (dashboard):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:869
+#, no-wrap
+msgid "ActivityStream.destroy_all\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:874
+#, markdown-text
+msgid ""
+"Remove entries for all recently viewed objects(tickets, users, "
+"organizations):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:875
+#, no-wrap
+msgid "RecentView.destroy_all\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:881
+#, markdown-text
+msgid ""
+"Remove all history information from tickets, users and organizations "
+"(dangerous!):"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:882
+#, no-wrap
+msgid "History.destroy_all\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:886
+#, markdown-text, no-wrap
+msgid "Reset Zammad Installation"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/console.md:888
+#, no-wrap
+msgid ""
+"\n"
+"Below commands are incomplete intentionally, error outputs will hint you\n"
+"through! The following operations will cause data loss and are for\n"
+"development / testing only.\n"
+"\n"
+"Don't forget to stop Zammad before trying to drop the database!\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:897
+#, no-wrap
+msgid "rake db:drop\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:900
+#, no-wrap
+msgid "rake db:create\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:903
+#, no-wrap
+msgid "rake db:migrate\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: src/en/reference/console.md:906
+#, no-wrap
+msgid "rake db:seed\n"
 msgstr ""
 
 #. type: Title #
@@ -3446,6 +5395,12 @@ msgstr ""
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
 ": Port of Zammad's websocket server.\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/env-vars.md:1 src/en/reference/env-vars.md:6
+#, markdown-text, no-wrap
+msgid "Environment Variables"
 msgstr ""
 
 #. type: Title #
