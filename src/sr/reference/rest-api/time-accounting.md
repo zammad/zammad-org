@@ -13,7 +13,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 [
@@ -60,7 +60,7 @@ id}/time_accountings/{timeaccounting id}`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -88,7 +88,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 === Request
 
-``` json
+```json
 {
    "time_unit": "60.0",
    "type_id": 4
@@ -97,7 +97,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -127,7 +127,7 @@ id}/time_accountings/{timeaccounting id}`
 
 === Request
 
-``` json
+```json
 {
    "id": 7,
    "time_unit": "15.0",
@@ -137,7 +137,7 @@ id}/time_accountings/{timeaccounting id}`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -166,7 +166,7 @@ id}/time_accountings/{timeaccounting id}`
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 OK
 ```
 :::

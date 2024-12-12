@@ -19,7 +19,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -61,7 +61,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
   "mentionable_type": "Ticket",
   "mentionable_id": 12,
@@ -70,7 +70,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 true
@@ -94,7 +94,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {

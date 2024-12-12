@@ -13,7 +13,7 @@ Required permission: `user_preferences.access_token`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -916,7 +916,7 @@ Required permission: `user_preferences.access_token`
 :::: tabs key:reqres
 
 === Request
-``` json
+```json
 {
    "name": "My amazing test",
    "permission": ["cti.agent","ticket.agent"],
@@ -926,7 +926,7 @@ Required permission: `user_preferences.access_token`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -952,7 +952,7 @@ Required permission: `user_preferences.access_token`
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

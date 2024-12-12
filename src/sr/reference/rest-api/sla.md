@@ -19,7 +19,7 @@ Required permission: `admin.sla`
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -54,7 +54,7 @@ Required permission: `admin.sla`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -91,7 +91,7 @@ Required permission: `admin.sla`
 
 === Request
 
-``` json
+```json
 {
    "name":"new sla",
    "first_response_time":"120",
@@ -110,7 +110,7 @@ Required permission: `admin.sla`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -148,7 +148,7 @@ Required permission: `admin.sla`
 
 === Request
 
-``` json
+```json
 {
    "name":"update sla",
    "first_response_time":"120",
@@ -168,7 +168,7 @@ Required permission: `admin.sla`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -210,7 +210,7 @@ Please note that removing SLA configurations cannot be undone.
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

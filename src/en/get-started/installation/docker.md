@@ -40,9 +40,9 @@ Switch to **Repository** build method and provide the information below:
 - **Compose path**: `docker-compose.yml` (default)
 
 Optional: if you need to provide environment variables, you can enter them in
-the **Environment variable** section or even upload a .env file. See the
-example env template. See the
-[example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
+the **Environment variable** section or even upload a .env file. See
+[env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
+as an example.
 
 ### Step 3: Deploy the Stack
 After the stack is ready, you can access Zammad via the configured docker host
@@ -56,7 +56,7 @@ and port, e.g. `http://localhost:8080/`.
 
 ### Step 1: Clone the GitHub Repo
 
-``` bash
+```bash
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 Make sure to run `git pull` frequently to fetch updates. Alternatively,
@@ -80,10 +80,10 @@ you can set it via the variable `NGINX_EXPOSE_PORT`.
 :::
 
 ### Step 3: Start the Stack
-``` bash
+```bash
 cd zammad-docker-compose
 ```
-``` bash
+```bash
 docker compose up -d
 ```
 
@@ -106,15 +106,15 @@ to function properly. That is why calling `rails` or `rake` on the console
 should be done via one of the following methods:
 
 Directly execute a specific command:
-``` bash
+```bash
 docker compose run --rm zammad-railsserver rails r '...your rails command here...'
 ```
 Run the interactive rails console to manually enter Rails commands:
-``` bash
+```bash
 docker compose run --rm zammad-railsserver rails c
 ```
 Via "docker exec":
-``` bash
+```bash
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
 ```
 

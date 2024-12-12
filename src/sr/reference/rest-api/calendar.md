@@ -17,7 +17,7 @@ Required permission: `admin.calendar`
 
 ::: details Show response
 
-``` json
+```json
 Status: 200 Ok
 
 [
@@ -121,7 +121,7 @@ Required permission: `admin.calendar`
 
 ::: details Show response
 
-``` json
+```json
 Status: 200 Ok
 
 {
@@ -227,7 +227,7 @@ Required permission: `admin.calendar`
 
 === Request
 
-``` json
+```json
 {
    "name":"Test calendar",
    "timezone":"Europe/Berlin",
@@ -314,7 +314,7 @@ Required permission: `admin.calendar`
 
 === Response
 
-``` json
+```json
 Status: 201 Created
 
 {
@@ -421,7 +421,7 @@ Required permission: `admin.calendar`
 
 === Request
 
-``` json
+```json
 {
    "name":"Test calendar Update",
    "timezone":"Europe/Berlin",
@@ -508,7 +508,7 @@ Required permission: `admin.calendar`
 ```
 === Response
 
-``` json
+```json
 Status: 200 Ok
 
 {
@@ -622,7 +622,7 @@ via API - this will be indicated by
 
 ::: details Show response
 
-``` json
+```json
 Status: 200 Ok
 
 {}

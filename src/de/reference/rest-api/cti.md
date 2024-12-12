@@ -132,7 +132,7 @@ from external side to you are `in`.
 
 Payload:
 
-``` json
+```json
 {
    "event": "newCall",
    "from": "493023125741",
@@ -145,7 +145,7 @@ Payload:
 
 Response:
 
-``` json
+```json
 {
    "action": "dial",
    "caller_id": "496990009111",
@@ -155,7 +155,7 @@ Response:
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -186,7 +186,7 @@ user:"Lauren Brooks"
 
 Returns:
 
-``` json
+```json
 {
    "action": "dial",
    "caller_id": "496990009111",
@@ -196,7 +196,7 @@ Returns:
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="newCall"' \
    --form 'from="493023125741"' \
@@ -220,7 +220,7 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-``` json
+```json
 {
    "event": "newCall",
    "from": "493023125741",
@@ -233,13 +233,13 @@ Payload:
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -268,13 +268,13 @@ user[]:"Ethan Kwan"
 
 Returns:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="newCall"' \
    --form 'from="493023125741"' \
@@ -302,7 +302,7 @@ This has to be supported by your PBX in order to work.
 If an incoming new call matches a to block number, Zammad will return the
 following.
 
-``` json
+```json
 {
   "action": "reject",
   "reason": "busy"
@@ -311,7 +311,7 @@ following.
 
 If no to block number matches, Zammad will return the following.
 
-``` json
+```json
 {}
 ```
 
@@ -326,7 +326,7 @@ ringing call.
 In case your instance has a matching overwriting caller ID configured,
 Zammad will return the following payload.
 
-``` json
+```json
 {
   "action": "dial",
   "callerId": "493055571642",
@@ -337,7 +337,7 @@ Zammad will return the following payload.
 If no overwrite match is found or you haven't configured anything, Zammad
 will return the following.
 
-``` json
+```json
 {}
 ```
 
@@ -392,7 +392,7 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 Payload:
 
-``` json
+```json
 {
    "event": "answer",
    "from": "493023125741",
@@ -405,13 +405,13 @@ Payload:
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -443,13 +443,13 @@ caller[]:"Emily Tran"
 
 Returns:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="answer"' \
    --form 'from="493023125741"' \
@@ -472,7 +472,7 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-``` json
+```json
 {
    "event": "answer",
    "from": "493023125741",
@@ -486,13 +486,13 @@ Payload:
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -521,13 +521,13 @@ caller="Emily Tran"
 
 Returns:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="answer"' \
    --form 'from="493023125741"' \
@@ -593,7 +593,7 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-``` json
+```json
 {
    "event": "hangup",
    "from": "493023125741",
@@ -606,13 +606,13 @@ Payload:
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -643,13 +643,13 @@ cause:"cancel"
 
 Returns:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="hangup"' \
    --form 'from="493023125741"' \
@@ -671,7 +671,7 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-``` json
+```json
 {
    "event": "hangup",
    "from": "493023125741",
@@ -685,13 +685,13 @@ Payload:
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --header 'Content-Type: application/json' \
    --data-raw '{
@@ -721,13 +721,13 @@ cause:"normalClearing"
 
 Response:
 
-``` json
+```json
 {}
 ```
 
 Sample curl command:
 
-``` sh
+```sh
 $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
    --form 'event="hangup"' \
    --form 'from="493023125741"' \

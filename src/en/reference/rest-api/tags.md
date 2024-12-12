@@ -15,7 +15,7 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -39,7 +39,7 @@ Zammad will return all tags that contain your search phrase.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 [
@@ -71,7 +71,7 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 === Request
 
-``` json
+```json
 {
     "item": "{tag name}",
     "object": "Ticket",
@@ -86,7 +86,7 @@ to do so.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 true
@@ -106,7 +106,7 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 === Request
 
-``` json
+```json
 {
     "item": "{tag name}",
     "object": "Ticket",
@@ -116,7 +116,7 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 true
@@ -134,7 +134,7 @@ Required permission: `admin.tag`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 [
@@ -169,7 +169,7 @@ Required permission: `admin.tag`
 
 === Request
 
-``` json
+```json
 {
   "name": "tag 5"
 }
@@ -177,7 +177,7 @@ Required permission: `admin.tag`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {}
@@ -197,7 +197,7 @@ Required permission: `admin.tag`
 
 === Request
 
-``` json
+```json
 {
   "name": "order"
 }
@@ -205,7 +205,7 @@ Required permission: `admin.tag`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {}
@@ -223,7 +223,7 @@ Required permission: `admin.tag`
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {}

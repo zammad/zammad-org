@@ -17,7 +17,7 @@ Technically, customers can only see their own organization if applicable.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -109,7 +109,7 @@ Required permission: `ticket.agent` **or** `admin.organization`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -186,7 +186,7 @@ Technically, any users in question can only see their own organization.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -224,7 +224,7 @@ Required permission: `admin.organization`
 
 === Request
 
-``` json
+```json
 {
    "name": "Sample Corp.",
    "shared": false,
@@ -242,7 +242,7 @@ Required permission: `admin.organization`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -280,7 +280,7 @@ Required permission: `admin.organization`
 
 === Request
 
-``` json
+```json
 {
    "name": "Sample Corp.",
    "shared": false,
@@ -297,7 +297,7 @@ Required permission: `admin.organization`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -347,7 +347,7 @@ more control instead.
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

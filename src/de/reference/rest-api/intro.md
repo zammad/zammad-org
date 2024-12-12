@@ -37,7 +37,7 @@ The username / password must be provided as HTTP header in the HTTP call.
 This authentication method can be disabled and may not be available in your
 system.
 
-``` sh
+```sh
 $ curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
@@ -53,7 +53,7 @@ user can create several access tokens in their user preferences.  This
 authentication method can be disabled and may not be available in your
 system.
 
-``` sh
+```sh
 $ curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
@@ -61,7 +61,7 @@ $ curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 The token must be provided as HTTP header in your calls.  This allows 3rd
 party applications to authenticate against Zammad.
 
-``` sh
+```sh
 $ curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
@@ -98,7 +98,7 @@ for user:
 
 === User payload
 
-``` json
+```json
 {
    "active": true,
    "login_failed": 0,
@@ -276,7 +276,7 @@ for user:
 
 === Ticket payload
 
-``` json
+```json
 {
    "id": 3,
    "group_id": 1,

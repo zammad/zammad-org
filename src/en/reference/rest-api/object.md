@@ -21,7 +21,7 @@ Required permission: `admin.object`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -431,7 +431,7 @@ Required permission: `admin.object`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -508,7 +508,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_boolean",
    "object": "Ticket",
@@ -551,7 +551,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -618,7 +618,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_date",
    "object": "Ticket",
@@ -658,7 +658,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -724,7 +724,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_datetime",
    "object": "Ticket",
@@ -766,7 +766,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -833,7 +833,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_integer",
    "object": "Ticket",
@@ -875,7 +875,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -941,7 +941,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_select",
    "object": "Ticket",
@@ -987,7 +987,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -1058,7 +1058,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_text",
    "object": "Ticket",
@@ -1115,7 +1115,7 @@ data. E.g.: email demands an email address to be provided.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -1182,7 +1182,7 @@ data. E.g.: email demands an email address to be provided.
 
 === Request
 
-``` json
+```json
 {
    "name": "sample_treeselect",
    "object": "Ticket",
@@ -1271,7 +1271,7 @@ data. E.g.: email demands an email address to be provided.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -1395,7 +1395,7 @@ The attribute `object` controls which context is being used:
 
 === Ticket
 
-``` json
+```json
 "screens": {
    "create_middle": {
       "ticket.customer": {
@@ -1424,7 +1424,7 @@ The attribute `object` controls which context is being used:
 
 === User
 
-``` json
+```json
 "screens": {
    "create": {
       "ticket.customer": {
@@ -1488,7 +1488,7 @@ The attribute `object` controls which context is being used:
 
 === Organization
 
-``` json
+```json
 "screens": {
    "view": {
       "ticket.customer": {
@@ -1526,7 +1526,7 @@ The attribute `object` controls which context is being used:
 
 === Group
 
-``` json
+```json
 "screens": {
    "create": {
       "admin.group": {
@@ -1572,7 +1572,7 @@ after executing the database migrations).
 
 === Request
 
-``` json
+```json
 {
    "id": 50,
    "name": "sample_boolean",
@@ -1598,7 +1598,7 @@ creation is not possible.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1673,7 +1673,7 @@ Required permission: `admin.object`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}
@@ -1695,7 +1695,7 @@ is the case on Hosted environments) – expect a short downtime.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

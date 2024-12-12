@@ -37,7 +37,7 @@ docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
 === Package Installation
 
-``` bash
+```bash
 zammad run rails r '{COMMAND}'
 
 ```
@@ -59,7 +59,7 @@ docker compose run --rm zammad-railsserver rails c
 ```
 === Package Installation
 
-``` bash
+```bash
 zammad run rails c
 
 ```
@@ -96,7 +96,7 @@ and you need to check the EML-file itself.
 To get the first articles EML-file, you can use the following command.
 In our example the ticket number in question is `101234`.
 
-``` ruby
+```ruby
 Ticket.find_by(number:'101234').articles.first.as_raw.content
 ```
 
@@ -107,7 +107,7 @@ be our ticket number.
 In the first step we get all article IDs of the
 ticket:
 
-``` ruby
+```ruby
 Ticket.find_by(number:'101234').article_ids
 ```
 Output:
@@ -131,7 +131,7 @@ Please note that this action can be expensive resource wise, if you
 have many tickets, this might slow down Zammad.
 :::
 
-``` ruby
+```ruby
 Ticket.where(customer_id: 4).update_all(customer_id: 1)
 ```
 
@@ -139,7 +139,7 @@ Ticket.where(customer_id: 4).update_all(customer_id: 1)
 
 This will show all state types needed for creating new ticket states:
 
-``` ruby
+```ruby
 Ticket::StateType.pluck(:id, :name)
 ```
 
@@ -157,15 +157,15 @@ In order to work on user information or to check for specific
 information, you'll need to find it first.
 
 User ID already known:
-``` ruby
+```ruby
 User.find(4)
 ```
 Searching for the user by his email address:
-``` ruby
+```ruby
 User.find_by(email: 'your@email')
 ```
 Searching for the user by his login:
-``` ruby
+```ruby
 User.find_by(login: 'john.doe')
 ```
 
@@ -183,13 +183,13 @@ lock the account.
 The user can't login any more (forever) if he doesn't change the
 password or you reset the counter.
 
-``` ruby
+```ruby
 u=User.find(**USERID**)
 ```
-``` ruby
+```ruby
 u.login_failed=0
 ```
-``` ruby
+```ruby
 u.save!
 ```
 
@@ -197,7 +197,7 @@ You can also double check if the account is locked by running the
 following command (result needs to be 1 above your limit, so
 11 for the default of 10 failing logins):
 
-``` ruby
+```ruby
 User.find(**USERID**).login_failed
 ```
 
@@ -210,13 +210,13 @@ Please note that the login attribute is not affected by this and
 Zammad thus might show different information within the UI.
 :::
 
-``` ruby
+```ruby
 u = User.find(**USERID**)
 ```
-``` ruby
+```ruby
 u.email = 'user@exmaple.com'
 ```
-``` ruby
+```ruby
 u.save!
 ```
 
@@ -227,7 +227,7 @@ You need to find the user ID of the user first for this.
 Change the user name of the user (e.g. if you want to login with a
 shorter username instead of a mail address)
 
-``` ruby
+```ruby
 u = User.find(**USERID**)
 ```
 ```ruby
@@ -244,7 +244,7 @@ You need to find the user ID of the user first for this.
 Don't have access to Zammad anymore? Grant yourself or another user
 administrative rights.
 
-``` ruby
+```ruby
 u = User.find_by(email: 'you@example.com')
 ```
 ```ruby
@@ -259,7 +259,7 @@ u.save!
 You or the user did forget his password? No problem! Simply reset it by
 hand if needed.
 
-``` ruby
+```ruby
 User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
 ```
 
@@ -271,7 +271,7 @@ like that users will be able to login with their (local) Zammad password
 in addition to the credentials stored on the external authentication
 provider. Simply remove the password stored by Zammad.
 
-``` ruby
+```ruby
 User.find_by(email: 'you@example.com').update!(password: nil)
 ```
 
@@ -316,7 +316,7 @@ This will give you the ticket hook that you'll find inside the `[]` in
 front of the ticket number. By default this will be
 `Ticket#` - you shouldn't change this setting in a productive system.
 
-``` ruby
+```ruby
 Setting.get('ticket_hook')
 ```
 
@@ -330,7 +330,7 @@ configurations.
 :::
 
 Get current FQDN:
-``` ruby
+```ruby
 Setting.get('fqdn')
 ```
 Set a new FQDN:
@@ -352,7 +352,7 @@ It has no effect on SSL certificates or any web server configuration.
 :::
 
 Get the current http type:
-``` ruby
+```ruby
 Setting.get('http_type')
 ```
 Change the http type to HTTPs:
@@ -368,7 +368,7 @@ installation, using the database to store attachments is not the best
 approach.
 
 Get the current attachment storage:
-``` ruby
+```ruby
 Setting.get('storage_provider')
 ```
 Change attachment storage to database
@@ -384,7 +384,7 @@ your Zammad can be unresponsive.
 
 Move files from DB to File with a specified delay after each file in seconds:
 
-``` ruby
+```ruby
 Store::File.move('DB', 'File', delay_in_sec)
 ```
 
@@ -399,7 +399,7 @@ If your Elasticsearch installation changes, you can use the following
 commands to ensure that Zammad still can access Elasticsearch.
 
 Change elasticsearch URL:
-``` ruby
+```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
 Change elasticsearch user (e.g. for authentication):
@@ -431,7 +431,7 @@ Setting.set('es_ssl_verify', 'false')
 
 Set a proxy to use by Zammad:
 
-``` ruby
+```ruby
 Setting.set('proxy', 'proxy.example.com:3128')
 ```
 ```ruby
@@ -454,13 +454,13 @@ to a specific mailbox. Please note that this shouldn't be a mailbox
 you're importing already! This will apply to all groups and is a global
 setting.
 
-``` ruby
+```ruby
 Setting.set('system_bcc', 'alias@domain.tld')
 ```
 
 You can easily check the current BCC-Setting by running the following:
 
-``` ruby
+```ruby
 Setting.get('system_bcc')
 ```
 
@@ -469,7 +469,7 @@ Setting.get('system_bcc')
 This enables a ticket number value in each heading for grouped elements.
 
 Enable counter for grouped overviews:
-``` ruby
+```ruby
 Setting.set('ui_table_group_by_show_count', true)
 ```
 Disable counter for grouped overviews:
@@ -492,13 +492,13 @@ You can choose between
 - `phone-out` (outgoing call) and
 - `email-out` (Sending an E-Mail out).
 
-``` ruby
+```ruby
 Setting.set('ui_ticket_create_default_type', 'email-out')
 ```
 
 To check what setting is set currently, simply run:
 
-``` ruby
+```ruby
 Setting.get('ui_ticket_create_default_type')
 ```
 
@@ -513,7 +513,7 @@ You can use three different warnings for:
 - Outgoing Calls `:"phone-out"=>""`
 - Outgoing E-Mails `:"email-out"=>""`
 
-``` ruby
+```ruby
 Setting.set('ui_ticket_create_notes', {
       :"phone-in"=>"You're about to note a incoming phone call.",
       :"phone-out"=>"You're about to note an outgoing phone call.",
@@ -529,7 +529,7 @@ out of the setting. The setting itself is done within an array ( `{}` ).
 
 To check what's currently set, you can use:
 
-``` ruby
+```ruby
 Setting.get('ui_ticket_create_notes')
 ```
 
@@ -549,7 +549,7 @@ visibility:
 - Internal Emails `:"email-internal"=>""`
 - Public Emails `:"email-public"=>""`
 
-``` ruby
+```ruby
 Setting.set('ui_ticket_add_article_hint', {
       :"note-internal"=>"You are writing an |internal note|, only people of your organization will see it.",
       :"note-public"=>"You are writing a |public note|.",
@@ -569,7 +569,7 @@ form of an array ( `{}` ).
 
 To check what's currently set, you can use:
 
-``` ruby
+```ruby
 Setting.get('ui_ticket_add_article_hint')
 ```
 
@@ -578,13 +578,13 @@ Setting.get('ui_ticket_add_article_hint')
 By default, Zammad will not display the email addresses of customers.
 The below option allows you to change this behavior.
 
-``` ruby
+```ruby
 Setting.set('ui_user_organization_selector_with_email', true)
 ```
 
 Get the current state of this setting with:
 
-``` ruby
+```ruby
 Setting.get('ui_user_organization_selector_with_email')
 ```
 
@@ -598,13 +598,13 @@ might work for other clients.
 The below setting allows you to adjust Zammad's email font setting. This
 setting does not require a service restart.
 
-``` ruby
+```ruby
 Setting.set("html_email_css_font", "font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;")
 ```
 
 Get the current state of this setting with:
 
-``` ruby
+```ruby
 Setting.get('html_email_css_font')
 ```
 
@@ -613,7 +613,7 @@ Setting.get('html_email_css_font')
 This option enhances the selected customer's open tickets count. It
 highlights the count in different colors if they hit a threshold.
 
-``` ruby
+```ruby
 Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 ```
 
@@ -631,7 +631,7 @@ these thresholds.
 This option activates a new tab in the right sidebar in the ticket view
 which shows all attachments of the currently viewed ticket.
 
-``` ruby
+```ruby
 Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')
 ```
 
@@ -643,7 +643,7 @@ period. The default time period is 30 days. If there is no ticket in
 this period, the customer dialog is not shown automatically.
 
 Set the time period to 90 days:
-``` ruby
+```ruby
 Setting.set('cti_customer_last_activity', '90')
 ```
 
@@ -675,7 +675,7 @@ Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 The below command will do a manual fetch of mail channels. This will
 also show errors that might appear within that process.
 
-``` ruby
+```ruby
 Channel.fetch
 ```
 
@@ -745,7 +745,7 @@ The below command will add `50` agents, `1000` customers, `20` groups,
 use `0` to not create specific items. Zammad will create random data
 which make no logical sense.
 
-``` ruby
+```ruby
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
 ```
 
@@ -760,7 +760,7 @@ proceed if you know what you're doing and you
 ### Removing Tickets (And Their Articles)
 
 Delete a ticket (specified by database ID):
-``` ruby
+```ruby
 Ticket.find(4).destroy
 ```
 Delete all tickets:
@@ -799,12 +799,12 @@ Removing users is possible in 2 ways: A single user and in bulk.
 
 Remove a single user:
 
-``` ruby
+```ruby
 User.find_by(email: '<email address>').destroy
 ```
 Remove several users:
 
-``` ruby
+```ruby
 User.where(
       email: ['<email address 1>', '<email address 2>']
    ).destroy_all
@@ -819,7 +819,7 @@ Removing an organization does **not** delete associated customers.
 #### Step 1: Select organizations
 
 By "active" status:
-``` ruby
+```ruby
 organizations = Organization.where(active: false)
 ```
 
@@ -834,23 +834,23 @@ organizations = Organization.where('note LIKE ?', '%foo%')
 ```
 
 #### Step 2: Preview affected organizations
-``` ruby
+```ruby
 puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 ```
 
 #### Step 3: Proceed with Deletion
 
-``` ruby
+```ruby
 organizations.each do |org|
     puts %{Preparing deletion of organization "#{org.name}"...}
 ```
-``` ruby
+```ruby
 org.members.each do |member|
     puts "  Removing #{member.fullname} from organization..."
     member.update!(organization_id: nil)
 end
 ```
-``` ruby
+```ruby
     puts "  Deleting #{org.name}..."
     org.destroy
    end
@@ -860,7 +860,7 @@ end
 
 Remove all online notifications:
 
-``` ruby
+```ruby
 OnlineNotification.destroy_all
 ```
 
@@ -894,7 +894,7 @@ development / testing only.
 Don't forget to stop Zammad before trying to drop the database!
 :::
 
-``` bash
+```bash
 rake db:drop
 ```
 ```bash

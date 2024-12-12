@@ -13,7 +13,7 @@ Required permission: `admin.role`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 [
@@ -120,7 +120,7 @@ Required permission: `admin.role`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -169,7 +169,7 @@ Required permission: `admin.role`
 
 === Request
 
-``` json
+```json
 {
    "active": true,
    "default_at_signup": false,
@@ -190,7 +190,7 @@ Required permission: `admin.role`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -237,7 +237,7 @@ Required permission: `admin.role`
 
 === Request
 
-``` json
+```json
 {
    "active": true,
    "default_at_signup": false,
@@ -257,7 +257,7 @@ Required permission: `admin.role`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {

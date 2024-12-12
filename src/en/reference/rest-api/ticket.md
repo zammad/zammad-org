@@ -19,7 +19,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -116,7 +116,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1162,7 +1162,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1237,7 +1237,7 @@ array of user ids to directly subscribe them during ticket creation.
 
 === Request
 
-``` json
+```json
 {
    "title": "Help me!",
    "group": "2nd Level",
@@ -1253,7 +1253,7 @@ array of user ids to directly subscribe them during ticket creation.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -1320,7 +1320,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 === Request
 
-``` json
+```json
 {
    "title": "No help for you",
    "group": "Sales",
@@ -1341,7 +1341,7 @@ does not affect any existing ones.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1417,7 +1417,7 @@ articles & attachments) will be lost.
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 {}
 ```

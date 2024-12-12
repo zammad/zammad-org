@@ -65,13 +65,13 @@ sudo yum install wget epel-release
 === Ubuntu
 List your current locale settings:
 
-``` bash
+```bash
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-``` bash
+```bash
 sudo apt install locales
 ```
 ```bash
@@ -83,13 +83,13 @@ echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 === Debian
 List your current locale settings:
 
-``` bash
+```bash
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-``` bash
+```bash
 sudo apt install locales
 ```
 ```bash
@@ -101,25 +101,25 @@ echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 === OpenSUSE/SLES
 List your current locale settings:
 
-``` bash
+```bash
 localectl status | grep LANG
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-``` bash
+```bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 ===CentOS/RHEL
 List your current locale settings:
 
-``` bash
+```bash
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-``` bash
+```bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -145,68 +145,68 @@ to consider this when performing the steps below.
 
 === Ubuntu
 Install repository key:
-``` bash
+```bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-``` bash
+```bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-``` bash
+```bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-``` bash
+```bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
 Install repository key:
-``` bash
+```bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-``` bash
+```bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-``` bash
+```bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
 Install repository key:
-``` bash
+```bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-``` bash
+```bash
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
 Install repository key:
-``` bash
+```bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-``` bash
+```bash
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
@@ -225,29 +225,29 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 
 === Ubuntu
 
-``` bash
+```bash
 sudo apt update
 ```
-``` bash
+```bash
 sudo apt install zammad
 ```
 === Debian
 
-``` bash
+```bash
 sudo apt update
 ```
-``` bash
+```bash
 sudo apt install zammad
 ```
 === OpenSUSE/SLES
-``` bash
+```bash
 sudo zypper ref
 ```
 ```bash
 sudo zypper install zammad
 ```
 ===CentOS/RHEL
-``` bash
+```bash
 sudo yum install zammad
 ```
 

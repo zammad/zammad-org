@@ -17,7 +17,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 === Request
 
-``` json
+```json
 {
    "link_object": "Ticket",
    "link_object_value": "5"
@@ -26,7 +26,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -695,7 +695,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 === Request
 
-``` json
+```json
 {
    "link_type": "normal",
    "link_object_target": "Ticket",
@@ -713,7 +713,7 @@ number*.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -742,7 +742,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 === Request
 
-``` json
+```json
 {
    "link_type": "normal",
    "link_object_source": "Ticket",
@@ -754,7 +754,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 { }

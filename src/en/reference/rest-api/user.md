@@ -19,7 +19,7 @@ Required permission: any
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -165,7 +165,7 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -968,7 +968,7 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -1118,7 +1118,7 @@ Technically, any listings will return user's own information only.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1198,7 +1198,7 @@ fitting user existing in your instance already.
 
 === Request
 
-``` json
+```json
 {
   "firstname": "Jane",
   "lastname": "Doe",
@@ -1214,7 +1214,7 @@ fitting user existing in your instance already.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -1339,7 +1339,7 @@ under *Manage > Roles* and check which is selected as **Default at signup**.
 
 === Request
 
-``` json
+```json
 {
    "phone": "+49 30 55 57 160 00",
    "department": "Sales",
@@ -1349,7 +1349,7 @@ under *Manage > Roles* and check which is selected as **Default at signup**.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -1476,7 +1476,7 @@ more control instead (admin interface under *System > Data privacy*).
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

@@ -21,7 +21,7 @@ Required permission: `admin.group`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -97,7 +97,7 @@ Required permission: `admin.group`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -135,7 +135,7 @@ Required permission: `admin.group`
 
 === Request
 
-``` json
+```json
 {
   "name": "Amazing Group",
   "signature_id": 1,
@@ -150,7 +150,7 @@ Required permission: `admin.group`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -186,7 +186,7 @@ Required permission: `admin.group`
 
 === Request
 
-``` json
+```json
 {
   "name": "Amazing Group",
   "signature_id": 1,
@@ -201,7 +201,7 @@ Required permission: `admin.group`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -248,7 +248,7 @@ all existing tickets to new groups.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

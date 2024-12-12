@@ -106,7 +106,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 [
@@ -181,7 +181,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -237,7 +237,7 @@ permission is mandatory for this.
 
 === Request
 
-``` json
+```json
 {
    "ticket_id": 5,
    "subject": "Call note",
@@ -252,7 +252,7 @@ permission is mandatory for this.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -296,7 +296,7 @@ permission is mandatory for this.
 
 === Request
 
-``` json
+```json
 {
    "ticket_id": 5,
    "to": "",
@@ -324,7 +324,7 @@ permission is mandatory for this.
 
 === Response
 
-``` json
+```json
 
 # HTTP-Code 201 Created
 
@@ -380,7 +380,7 @@ Inline images can be used by providing data URIs in your HTML markup.
 
 === Request
 
-``` json
+```json
 {
    "ticket_id": 5,
    "to": "",
@@ -396,7 +396,7 @@ Inline images can be used by providing data URIs in your HTML markup.
 
 === Response
 
-``` json
+```json
 # HTTP Code 201 Created
 
 {

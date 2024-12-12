@@ -14,7 +14,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -70,7 +70,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -101,7 +101,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "name": "4 disaster",
    "default_create": false,
@@ -113,7 +113,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -145,7 +145,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "ui_icon": "",
    "ui_color": "",
@@ -155,7 +155,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -199,7 +199,7 @@ tickets with the to remove priority to another priority.
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

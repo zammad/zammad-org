@@ -30,7 +30,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -65,7 +65,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -157,7 +157,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
    "ticket_id": 7,
    "template_id": 1
@@ -166,7 +166,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1005,7 +1005,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
    "name": "New checklist name",
    "sorted_item_ids": [
@@ -1018,7 +1018,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1052,7 +1052,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 ```
 :::
@@ -1067,7 +1067,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1096,7 +1096,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
    "text": "New Item via API!",
    "checklist_id": 12,
@@ -1106,7 +1106,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1136,7 +1136,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
    "text": "Changed checklist item",
    "checked": true
@@ -1145,7 +1145,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1172,7 +1172,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 ```
 :::
@@ -1188,7 +1188,7 @@ Required permission: `admin.checklists` or `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1228,7 +1228,7 @@ Required permission: `admin.checklists`
 
 === Request
 
-``` json
+```json
 {
    "name": "My checklist template",
    "active": true,
@@ -1242,7 +1242,7 @@ Required permission: `admin.checklists`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1282,7 +1282,7 @@ Required permission: `admin.checklists`
 
 === Request
 
-``` json
+```json
 {
    "name": "My changed checklist template name",
    "active": true,
@@ -1296,7 +1296,7 @@ Required permission: `admin.checklists`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1331,7 +1331,7 @@ Required permission: `admin.checklists`
 
 :::details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 ```
 :::

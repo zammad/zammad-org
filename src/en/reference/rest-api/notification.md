@@ -25,7 +25,7 @@ need to find out what ID stands for which object type.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -109,7 +109,7 @@ Required permission: `any`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -139,7 +139,7 @@ Required permission: `any`
 
 === Request
 
-``` json
+```json
 {
   "seen": true
 }
@@ -147,7 +147,7 @@ Required permission: `any`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -174,7 +174,7 @@ Required permission: `any`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}
@@ -190,7 +190,7 @@ Required permission: `any`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

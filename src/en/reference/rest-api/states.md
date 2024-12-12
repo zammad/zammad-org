@@ -20,7 +20,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 [
@@ -142,7 +142,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -183,7 +183,7 @@ As there's no endpoint for retrieving these, please use the
 
 === Request
 
-``` json
+```json
 {
    "name": "in progress",
    "state_type_id": 2,
@@ -194,7 +194,7 @@ As there's no endpoint for retrieving these, please use the
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Created
 
 {
@@ -228,7 +228,7 @@ Required permission: `admin.object`
 
 === Request
 
-``` json
+```json
 {
    "note": "State created & updated via API"
 }
@@ -236,7 +236,7 @@ Required permission: `admin.object`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {
@@ -282,7 +282,7 @@ tickets with the to remove state to another state.
 
 Response:
 
-``` json
+```json
 # HTTP-Code 200 Ok
 
 {}

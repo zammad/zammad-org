@@ -13,7 +13,7 @@ Required permission: `ticket.agent`.
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -605,7 +605,7 @@ Required permission: `ticket.agent`.
 
 === Request
 
-``` json
+```json
 {
  "form_id": "367646073",
  "new_article": {
@@ -634,7 +634,7 @@ Required permission: `ticket.agent`.
 
 === Response
 
-``` json
+```json
 # HTTP-Code 201 Create
 
 {
@@ -1218,7 +1218,7 @@ Required permission: `ticket.agent`
 
 === Request
 
-``` json
+```json
 {
  "form_id": "367646073",
  "new_article": {
@@ -1250,7 +1250,7 @@ Required permission: `ticket.agent`
 
 === Response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
@@ -1840,7 +1840,7 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-``` json
+```json
 # HTTP-Code 200 OK
 
 {
