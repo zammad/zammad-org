@@ -1,5 +1,5 @@
 ---
 title: Contribute
-order: 3
+order: 5
 collapsed: true
 ---

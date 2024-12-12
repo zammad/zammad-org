@@ -1,0 +1,112 @@
+---
+order: 2
+title: Mentions
+---
+
+# Mentions
+
+::: warning
+The mention endpoint depends on the group permissions and if the user
+you're using is an **agent**. Because of this tickets may or may not
+be available.
+:::
+
+## List
+
+Required permission: `ticket.agent` **or** `ticket.customer`
+
+`GET`-Request sent: `/api/v1/mentions`
+
+::: details Show response
+
+``` json
+# HTTP-Code 200 Ok
+
+{
+  mentions: [
+    {
+      "id":2,
+      "mentionable_type":"Ticket",
+      "mentionable_id":1,
+      "user_id":3,
+      "updated_by_id":3,
+      "created_by_id":3,
+      "created_at":"2021-03-16T08:51:08.985Z",
+      "updated_at":"2021-03-16T08:51:08.985Z"
+    },
+    {
+      "id":3,
+      "mentionable_type":"Ticket",
+      "mentionable_id":1,
+      "user_id":4,
+      "updated_by_id":4,
+      "created_by_id":4,
+      "created_at":"2021-03-16T08:51:08.986Z",
+      "updated_at":"2021-03-16T08:51:08.986Z"
+    },
+  ]
+}
+```
+:::
+
+## Create
+
+Required permission: `ticket.agent`
+
+`POST`-Request sent: `/api/v1/mentions`
+
+:::: details Show request/response
+
+::: tabs key:reqres
+
+=== Request
+
+``` json
+{
+  "mentionable_type": "Ticket",
+  "mentionable_id": 12,
+}
+```
+
+=== Response
+
+``` json
+# HTTP-Code 201 Created
+
+true
+```
+:::
+::::
+
+The mention will be created for the user of the current session.
+
+::: tip
+If you want to mention/subscribe other users, you can do so by sending
+an additional `X-On-Behalf-Of`-header in your request. You can either
+provide the user ID or the user email address as value.
+:::
+
+## Delete
+
+Required permission: `ticket.agent`
+
+`DELETE`-Request sent: `/api/v1/mentions/{id}`
+
+::: details Show response
+
+``` json
+# HTTP-Code 200 Ok
+
+{
+  "id":2,
+  "mentionable_type":"Ticket",
+  "mentionable_id":1,
+  "user_id":3,
+  "updated_by_id":3,
+  "created_by_id":3,
+  "created_at":"2021-03-16T08:51:08.985Z",
+  "updated_at":"2021-03-16T08:51:08.985Z"
+}
+```
+:::
+

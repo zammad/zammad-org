@@ -228,7 +228,7 @@ The following index contains below mentioned information: `*_ticket`
   - ID of current ticket state
 
 `tags`
-: - `["order", "americano"]`
+: - `["order", "complaint"]`
   - Array with all attached tags.
 
 `time_unit`

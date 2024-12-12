@@ -27,35 +27,35 @@ To follow the installation steps below, you might need to install additional
 tools like curl, gnupg and others.
 
 ::::details Required Tools
-   :::tabs key:distros
+:::tabs key:distros
 
-   === Ubuntu
+=== Ubuntu
 
-   ```bash
-   sudo apt install curl apt-transport-https gnupg
-   ```
-   === Debian
+```bash
+sudo apt install curl apt-transport-https gnupg
+```
+=== Debian
 
-   ```bash
-   sudo apt install curl apt-transport-https gnupg
-   ```
+```bash
+sudo apt install curl apt-transport-https gnupg
+```
 
-   === OpenSUSE/SLES
+=== OpenSUSE/SLES
 
-   Only SLES - Not required for OpenSUSE:
-   ```bash
-   sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
-   ```
-   ```bash
-   sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
-   ```
+Only SLES - Not required for OpenSUSE:
+```bash
+sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+```
+```bash
+sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+```
 
-   === CentOS/RHEL
+=== CentOS/RHEL
 
-   ```bash
-   sudo yum install wget epel-release
-   ```
-   :::
+```bash
+sudo yum install wget epel-release
+```
+:::
 ::::
 
 ## Quick Start
