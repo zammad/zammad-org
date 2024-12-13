@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-12 14:57+0000\n"
+"POT-Creation-Date: 2024-12-13 08:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,18 +204,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -23046,6 +23034,18 @@ msgid ""
 "more control instead (admin interface under *System > Data privacy*).\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, markdown-text, no-wrap
@@ -23778,7 +23778,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/tutorials/firewall-selinux.md:11
 #, markdown-text, no-wrap
-msgid "Firewall"
+msgid "SELinux"
 msgstr ""
 
 #. type: Fenced div block (info)
@@ -23823,7 +23823,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/tutorials/firewall-selinux.md:34
 #, markdown-text, no-wrap
-msgid "SELinux"
+msgid "Firewall"
 msgstr ""
 
 #. type: Plain text

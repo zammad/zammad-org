@@ -8,7 +8,7 @@ title: 'Firewall & SELinux'
 This is just a collection of snippets which might be useful for you. Feel
 free to skip parts and/or adapt it to your needs.
 
-## Firewall
+## SELinux
 
 ::: info
 The following commands only work on Ubuntu, Debian and CentOS. If you use a
@@ -31,7 +31,7 @@ sudo restorecon -Rv /opt/zammad/public/
 sudo chmod -R a+r /opt/zammad/public/
 ```
 
-## SELinux
+## Firewall
 
 Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you
 need. Below you can find a few examples for different distributions. If you
