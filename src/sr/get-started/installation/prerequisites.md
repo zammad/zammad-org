@@ -1,51 +1,50 @@
 ---
 order: 1
-title: Prerequisites
+title: Предуслови
 ---
 
-# Prerequisites
+# Предуслови
 
-<!--@include: @/en/modules/zammad-services-hint.md-->
+<!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Server Hardware
+## Серверски хардвер
 
-The hardware requirements vary depending on the scenario. This makes it hard
-to come up with specific CPU and memory numbers which are fitting for all
-use cases. In any case, more and better hardware ensures that Zammad runs
-smoothly and the maintenance breaks for updates should be shorter as well.
+Хардверски предуслови зависе од сценарија. Ово отежава специфичне предлоге
+за CPU и радну меморију који су прилагођени свим ситуацијама. У сваком
+случају, јачи и бољи хардвер ће осигурати да Zammad ради глатко и да су
+паузе у доступности током ажурирања верзија најкраће могуће.
 
-As an absolute minimum for basic usage with a PostgreSQL server, we
-consider:
+Као апсолутни минимум за основну употребу са PostgreSQL сервером,
+предлажемо:
 
-- 2 CPU cores
-- 6 GB RAM (+4 GB for Elasticsearch)
+- 2 CPU језгра
+- 6 GB RAM (+4 GB за Elasticsearch)
 
-For an example scenario with up to 40 agents, a good starting point could
-be:
+За пример сценарија са максимално 40 оператера, добра почетна тачка је:
 
-- 6 CPU cores
-- 6 GB RAM (+6 GB for Elasticsearch)
+- 6 CPU језгара
+- 6 GB RAM (+6 GB за Elasticsearch)
 
-## Server Software
+## Серверски софтвер
 
-Depending on the installation type, there are some prerequisites. They are
-included in the installation instructions:
+На основу типа инсталације, постоје неки предуслови. Укључени су у упутства
+за инсталацију:
 
 - [Docker](docker)
 - [Kubernetes](kubernetes)
-- [Package](package)
+- [Пакет](package)
 
 
-## Client Requirements
+## Предуслови клијента
 
-Because Zammad is a web application, only a up-to-date browser is
-needed. The following browsers are supported:
+Пошто је Zammad веб апликација, неопходан је само ажуриран
+претраживач. Подржани су следећи претраживачи:
 
 - Firefox 78+
-- Chrome (and chromium based ) 83+
+- Chrome (и базирани на chromium платформи) 83+
 - Opera 69+
 - Safari 14.1+
 
-The communication between client and server is based on web sockets. Some
-firewalls may filter these connections. This may lead to decreased browser
-performance.
+Комуникација између клијента и сервера је заснована на web sockets. Неки
+firewall системи филтрирају ове конекције. Ово може довести то смањених
+перформанси претраживача.

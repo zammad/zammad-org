@@ -1,6 +1,6 @@
 ---
 order: 3
-title: 'Environment Variables'
+title: 'Променљиве окружења'
 ---
 
-# Environment Variables
+# Променљиве окружења

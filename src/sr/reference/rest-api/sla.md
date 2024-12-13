@@ -136,7 +136,7 @@ Required permission: `admin.sla`
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.sla`
 

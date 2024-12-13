@@ -1,6 +1,6 @@
 ---
 order: 15
-title: 'Migrate to Zammad'
+title: 'Миграција на Zammad'
 ---
 
 # Migrate To Zammad
@@ -9,7 +9,7 @@ You can migrate the following data from another ticketing system to Zammad:
 
 - Tickets and their Articles
 - Groups / Queues
-- Organizations
+- Организације
 - Agents and Customers (if applicable)
 
 After migrating to Zammad, you should first adjust your FQDN settings and HTTP
@@ -67,7 +67,7 @@ limitations to the general ones listed.
 - User passwords are not migrated and will require the user to use the
   password reset link on Zammad's login page.
 
-#### Prerequisites
+#### Предуслови
 
 Zammad requires API access which is why you'll need to [create an API
 key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key)
@@ -206,7 +206,7 @@ limitations to the general ones listed.
   password reset link on Zammad's login page.
 
 
-#### Prerequisites
+#### Предуслови
 
 Zammad requires API access which is why the migrator will request your
 Kayako-URL, email address and password.
@@ -340,7 +340,7 @@ Additional limitations to the general one:
 - Only customers of tickets are imported
 - Zammad expects your OTRS timestamps to be UTC and won't adjust them
 
-#### Prerequisites
+#### Предуслови
 
 Install Znuny4OTRS-Repo:
 
@@ -497,7 +497,7 @@ Additional limitations to the general one:
   before starting the migration.
 
 
-#### Prerequisites
+#### Предуслови
 
 Zammad requires API access which is why you’ll need to [create an API
 key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token)

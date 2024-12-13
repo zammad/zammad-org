@@ -409,7 +409,7 @@ Status: 201 Created
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.calendar`
 

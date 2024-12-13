@@ -5,7 +5,7 @@ title: 'Webserver Configuration'
 
 # Webserver Configuration
 
-<!--@include: @/en/modules/zammad-services-hint.md-->
+<!--@include: @/sr/modules/zammad-services-hint.md-->
 
 This guide is only relevant for package installations. During the
 installation, Zammad tries to automatically install a configuration file to

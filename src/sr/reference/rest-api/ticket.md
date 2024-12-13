@@ -1307,7 +1307,7 @@ For more article attributes and options have a look into
 [articles](/en/reference/rest-api/articles).
 :::
 
-## Update
+## Освежавање
 
 Required permission: `ticket.agent` **or** `ticket.customer`
 

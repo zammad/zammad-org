@@ -1,9 +1,9 @@
 ---
 order: 2
-title: User
+title: Корисник
 ---
 
-# User
+# Корисник
 
 ::: info
 Please note that below samples were provided with `admin` and
@@ -1319,7 +1319,7 @@ fitting user existing in your instance already.
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.user` **or** `ticket.agent`
 

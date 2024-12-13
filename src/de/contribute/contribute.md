@@ -35,8 +35,8 @@ hat mehrere Branches.
 
 #### `develop`
 
-* This is the current (unreleased) development state of next major release
-  (this will become the new `stable` branch).
+* Dies ist der aktuelle (unveröffentlichte) Entwicklungsstand der nächsten
+  Hauptversion (dieser wird zum neuen `stable`-Branch).
 * Verwenden Sie das nicht für den Produktiv-Betrieb!
 * Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
   [Security Policy]
@@ -52,7 +52,7 @@ hat mehrere Branches.
 
 #### `stable-x.y`
 
-* These are the branches of old versions of Zammad like `stable-5.1` for
+* Dies sind Branches von alten Versionen von Zammad wie `stable-5.1` für
   Zammad 5.1.
 * Keine Unterstützung durch Fehler- oder Sicherheitskorrekturen.
 
@@ -79,11 +79,12 @@ unter:
 * https://admin-docs.zammad.org
 * https://user-docs.zammad.org
 
-The documentation you are reading is available on next.zammad.org and
-zammad.org and is built via Vitepress. The source files are written in
-Markdown.  Make sure to change the English source files only which are
-placed under `/src/en/`. The translations are made via Weblate and will
-overwrite any changes in the language specific folders (except `/src/eng/`).
+Die Dokumentation, die Sie gerade lesen, ist auf next.zammad.org und
+zammad.org verfügbar und wurde mit Vitepress erstellt. Die Quelldateien sind
+in Markdown geschrieben. Stellen Sie sicher, dass Sie nur die englischen
+Quelldateien ändern, die sich unter ``/src/en/`` befinden. Die Übersetzungen
+werden über Weblate erstellt und überschreiben alle Änderungen in den
+sprachspezifischen Ordnern (außer `/src/eng/`).
 
 ### ReStructuredText-Markup
 
@@ -132,13 +133,13 @@ Menü](/screenshots/weblate-overview-docs.png)
 Struktur von Übersetzungsprojekten in Weblate:
 
  * Dokumentation
-    * User Documentation (`latest`)
-    * User Documentation (`pre-release`)
-    * Admin Documentation (`latest`)
-    * Admin Documentation (`pre-release`)
+    * Benutzer Dokumentation (`latest`)
+    * Benutzer Dokumentation (`pre-release`)
+    * Admin-Dokumentation (`latest`)
+    * Admin-Dokumentation (`pre-release`)
  * Zammad
-    * Zammad (`develop`, development version)
-    * Zammad (`stable` version)
+    * Zammad (`develop`, Entwicklungsversion)
+    * Zammad (`stable` Version)
     * *Einige weitere, die hier nicht relevant sind*
 
 ::: tip
@@ -206,9 +207,9 @@ Details):
 
 - **\`\`Beispiel-String\`\`**
 
-    This is rendered as `example-string`. Depending on the context, it can be
-    translated or not. In any case, use the \`` before and after the string in
-    your translation.
+    Dies wird als `Beispiel-String` ausgegeben. Je nach Kontext kann sie
+    übersetzt werden oder nicht. Verwenden Sie in jedem Fall \`` vor und nach der Zeichenkette in
+    Ihrer Übersetzung.
 
 - **\:doc:\`Beispiel \<path/to/document>\`**
 

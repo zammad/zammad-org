@@ -24,12 +24,12 @@ title: Уопштено
 
 TODO: - Links / TOC to different sections of user documentation
 
-## Screenshots
+## Снимци екрана
 
-![Test Screenshot (Full
-Page)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)
 
-![Test Screenshot (Page
-Element)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)
+![Пример снимка екрана (елемент
+стране)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)
 
-![Test Screenshot (Static)](/screenshots/dashboard.png)
+![Пример снимка екрана (статички)](/screenshots/dashboard.png)

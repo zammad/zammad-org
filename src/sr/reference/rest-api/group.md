@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Group
+title: Група
 ---
 
-# Group
+# Група
 
 ::: info
 - Please note that `follow_up_possible` may not work as expected. The
@@ -174,7 +174,7 @@ Required permission: `admin.group`
 ::::
 
 
-## Update
+## Освежавање
 
 Required permission: `admin.group`
 

@@ -1550,7 +1550,7 @@ The attribute `object` controls which context is being used:
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.object`
 

@@ -1,9 +1,9 @@
 ---
 order: 7
-title: Organization
+title: Организација
 ---
 
-# Organization
+# Организација
 
 ## List
 
@@ -268,7 +268,7 @@ Required permission: `admin.organization`
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.organization`
 

@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Article
+title: Чланак
 ---
 
-# Article
+# Чланак
 
 ## Уопштено
 

@@ -127,7 +127,7 @@ Required permission: `any`
 ```
 :::
 
-## Update
+## Освежавање
 
 Required permission: `any`
 

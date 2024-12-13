@@ -47,11 +47,11 @@ Weblate апликације, погледајте одељак о превод�
 
 ## Форматирање текста
 
-| Type in Zammad | Highlighting                  | Markdown syntax                 |
-|----------------|-------------------------------|---------------------------------|
-| Buttons        | `Sign in`                   | \`\`Sign in\`\`                 |
-| Fields         | **Name**                      | \*\*Name\*\*                    |
-| Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
+| Тип у Zammad-у  | Истицање                      | Markdown синтакса               |
+|-----------------|-------------------------------|---------------------------------|
+| Дугмићи         | `Пријава`                     | \`Пријава\`                     |
+| Поља            | **Назив**                     | \*\*Назив\*\*                   |
+| Путања/локације | *Подешавања > Канали > Имејл* | \*Подешавања > Канали > Имејл\* |
 
 
 ## Структура наслова
@@ -72,38 +72,38 @@ Weblate апликације, погледајте одељак о превод�
 
 `## Одељак 2`
 
-### Section with badge <Badge type="warning" text="custom text" />
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-This section title uses a badge of type "warning". There are other badges available:  
+Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке:  
 https://vitepress.dev/reference/default-theme-badge#usage
 
-### Custom boxes
+### Прилагођени оквири
 
 ::: info
-This is an info box.
+Ово је информациони оквир.
 :::
 
 ::: tip
-This is a tip.
+Ово је савет.
 :::
 
 ::: warning
-This is a warning.
+Ово је упозорење.
 :::
 
 ::: danger
-This is a dangerous warning.
+Ово је упозорење на опасност.
 :::
 
 ::: details
-This is a details block.
+Ово је одељак са детаљима.
 :::
 
-### Definition lists
+### Листе дефиниција
 
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+Први термин <Badge type="info" text="tag1" />
+: Ово је дефиниција првог термина.
 
-Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: This is one definition of the second term.
-: This is another definition of the second term.
+Други термин <Badge type="info" text="tag1" /> <Badge type="tip" text="tag2" />
+: Ово је дефиниција другог термина.
+: Ово је додатна дефиниција другог термина.

@@ -2,4 +2,4 @@
 order: 2
 ---
 
-# Manage Channels
+# Управљање каналима

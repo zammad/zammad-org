@@ -6,7 +6,7 @@ title: CTI
 # Generic CTI
 
 
-## Introduction
+## Увод
 
 This page describes the generic CTI API scopes and functionalities.
 

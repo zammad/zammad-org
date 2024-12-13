@@ -270,7 +270,7 @@ The following index contains below mentioned information: `*_ticket`
 : - `1`, `3`
   - User ID that updated the ticket.
 
-## Ticket Priority
+## Приоритет тикета
 
 The following index contains below mentioned information:
 `*_ticket_priority`
@@ -320,7 +320,7 @@ The following index contains below mentioned information:
   - User ID of user last updating the priority
 
 
-## Ticket State
+## Стање тикета
 
 The following index contains below mentioned information: `*_ticket_state`
 
@@ -392,7 +392,7 @@ The following index contains below mentioned information: `*_ticket_state`
 : - `1`
   - User ID that updated the state last
 
-## Article
+## Чланак
 
 The following index contains below mentioned information: `*_ticket`
 
@@ -480,7 +480,7 @@ provide it in its own table.
   - User that updated article
 
 
-## User
+## Корисник
 
 `active`
 : - `true`, `false`
@@ -617,7 +617,7 @@ provide it in its own table.
   - ZIP code
 
 
-## Organization
+## Организација
 
 The following index contains below mentioned information: `*_organization`
 
@@ -685,7 +685,7 @@ The following index contains below mentioned information: `*_organization`
 : - `true`, `false`
   - Defines if the organization has VIP status.
 
-## Group
+## Група
 
 The following index contains below mentioned information: `*_group`
 

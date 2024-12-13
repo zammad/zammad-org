@@ -3,13 +3,13 @@ order: 4
 title: Kubernetes
 ---
 
-# Install on Kubernetes
+# Kubernetes инсталација
 
-You can find installation instructions in the [documentation of our helm
-chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
+Упутство за инсталацију можете пронаћи у [документацији нашег helm
+chart-а](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
 
 :::info
-We do not provide support in terms of Kubernetes specific problems. If you
-choose to run Zammad via Kubernetes, support is only provided for the Zammad
-application.
+Не пружамо техничку подршку у вези специфичних Kubernetes проблема. Уколико
+одлучите да покренете Zammad преко Kubernetes, подршка је обезбеђена само за Zammad
+апликацију.
 :::

@@ -1,11 +1,11 @@
 ---
 order: 3
-title: Update
+title: Освежавање
 ---
 
 # Updating Zammad
 
-<!--@include: @/en/modules/zammad-services-hint.md-->
+<!--@include: @/sr/modules/zammad-services-hint.md-->
 
 Before updating Zammad, we strongly recommend to take a look at our [release
 notes](https://zammad.com/en/releases). You can find information about
@@ -131,8 +131,8 @@ instructions first.
 
 ### Updating Portainer Based Installations
 
-In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image
-and redeploy** and click on `Update`.
+У вашем Zammad stack-у, кликните на Pull and redeploy`, укључите **Re-pull
+image and redeploy** и кликните на `Update`.
 
 ![Highlighted stack update in
 Portainer](/screenshots/installation/portainer-stack-update.png)

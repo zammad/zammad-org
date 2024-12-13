@@ -15,11 +15,11 @@ features:
 hero:
   actions:
     - 
-      link: /en/get-started/get-zammad
+      link: /sr/get-started/get-zammad
       text: 'Први кораци'
       theme: brand
     - 
-      link: /en/documentation/introduction
+      link: /sr/documentation/introduction
       text: Документација
       theme: alt
     - 

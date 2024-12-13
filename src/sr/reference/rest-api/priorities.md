@@ -133,7 +133,7 @@ Required permission: `admin.object`
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.object`
 

@@ -35,8 +35,8 @@ order: 1
 
 #### `develop`
 
-* This is the current (unreleased) development state of next major release
-  (this will become the new `stable` branch).
+* Ово је тренутно (необјављено) развојно стање следећег већег издања
+  (постаће нови `stable` огранак).
 * Не користите у продукцији!
 * Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
   нашу [безбедносну
@@ -52,8 +52,7 @@ order: 1
 
 #### `stable-x.y`
 
-* These are the branches of old versions of Zammad like `stable-5.1` for
-  Zammad 5.1.
+* Ово су огранци старих Zammad издања као `stable-5.1` за Zammad 5.1.
 * Нису подржане исправке грешака и сигурносних пропуста.
 
 ## Документација
@@ -76,11 +75,12 @@ order: 1
 * https://admin-docs.zammad.org
 * https://user-docs.zammad.org
 
-The documentation you are reading is available on next.zammad.org and
-zammad.org and is built via Vitepress. The source files are written in
-Markdown.  Make sure to change the English source files only which are
-placed under `/src/en/`. The translations are made via Weblate and will
-overwrite any changes in the language specific folders (except `/src/eng/`).
+Документација коју читате је доступна под next.zammad.org и zammad.org и
+направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
+формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
+које су под `/src/en/` директоријумом. Сви преводи се обрађују преко Weblate
+апликације и преписаће све измене направљене под директоријумима специфичних
+језика (осим `/src/en/`).
 
 ### ReStructuredText код
 
@@ -125,104 +125,101 @@ Weblate апликацији. Преглед оба пројекта может�
 Структура пројекта превода у Weblate-у:
 
  * Документација
-    * User Documentation (`latest`)
-    * User Documentation (`pre-release`)
-    * Admin Documentation (`latest`)
-    * Admin Documentation (`pre-release`)
+    * Корисничка документације (`latest`)
+    * Корисничка документација (`pre-release`)
+    * Администраторска документација (`latest`)
+    * Администраторска документација (`pre-release`)
  * Zammad
-    * Zammad (`develop`, development version)
-    * Zammad (`stable` version)
-    * *Some more which aren't relevant here*
+    * Zammad (`develop`, развојна верзија)
+    * Zammad (`stable` верзија)
+    * *Додатне верзије које овде нису релевантне*
 
 ::: tip
 
-It is no big difference which branch you choose to translate. When Weblate
-detects the same strings in different branches, they will be used for all
-branches and only have to be translated once.
+Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate
+детектује идентичне низове текста у различитим огранцима, користиће исти превод за све
+огранке и тиме се преводи само једном.
 :::
 
-After selecting a project (Documentation or Zammad), you will see different
-sub-projects and their translation status summarized for all languages.
-These overviews may show a quite low translation rate, which is due to the
-amount of active languages.
+По одабиру пројекта (Documentation или Zammad), видећете различите
+под-пројекте и њихов статус превода разложен по свим језицима.  Могуће је да
+ови прегледи прикажу ниску стопу превода, услед броја активних преводиоца за
+различите језике.
 
-Here you can select one of the "components", which is more or less the same as
-different versions. After selecting one of them, you can see the status of
-translation for the different languages, as you can see in the
-following screenshot with an example from *Documentation > User
+Овде можете одабрати једну од „компонената”, које су мање или више идентичне
+различитим верзијама. По одабиру једне, можете видети статус
+превода по различитим језицима, по узору на
+следећи снимак екрана са примером из *Documentation > User
 Documentation (latest)*:
 
-![Screenshot showing translation status of different languages for the user
-documentation ](/screenshots/weblate-translations-user-docs.png)
+![Снимак екрана који приказује статус первода по различитим језицима за
+корисничку документацију](/screenshots/weblate-translations-user-docs.png)
 
-### Translating
+### Превођење
 
-After selecting your language you want to translate to, a good starting
-point is to select "*Untranslated strings*" (or the same meaning in your
-language, depending on what you have set in your profile).
+По одабиру вашег језика на који желите да преводите, добра почетна тачка је
+одабир „*Untranslated strings*” (или слично значење у вашем језику, у
+зависности шта сте подесили у свом профилу).
 
-After that, you will finally see the first untranslated string in the upper
-field and, in theory, you can start to translate. First a brief overview of
-the user interface of Weblate:
+Након овога, коначно ћете добити први непреведен низ текста у горњем пољу, и
+можете започети са преводом. Прво, кратак преглед корисничког интерфејса
+Weblate апликације:
 
-![Screenshot of Weblate translation user
-interface](/screenshots/weblate-ui.png)
+![Снимак екрана корисничког интерфејса превода у
+Weblate-у](/screenshots/weblate-ui.png)
 
-1. **Breadcrumbs with path** to the current project and language
-2. **Translation area** itself. You can find the source string (*"English
-   (United States)"*) at the top and the field for your translation
-   (*"French"* in this example).
-3. **Glossary**: here you can find common translations in Zammad
-   context. The terms from the glossary are highlighted in the source
-   strings, as well.
-4. **Some useful tabs**:
-    * **Nearby strings**: shows you the context of the word or string
-    * **Automatic suggestions**: here you can find automatic suggestions
-      from DeepL and suggestions from similar strings, which are already
-      translated.  Use the "*Clone to translation*" button to insert it in
-      the translation field to apply changes. Use the "*Accept*" button to
-      accept the suggested translation and automatically switch to the next
-      string.
-    * **Other languages**: here you can get an overview, which languages are
-      translated and you can also see the translated strings (could be
-      useful for languages, which are similar).
+1. **Путања навигације** на тренутни пројекат и језик превода
+2. Сам **Translation** одељак. Можете видети изворни низ текста („English
+   (United States)”*) при врху и поље за унос вашег превода (*„French”* у
+   овом примеру).
+3. **Glossary**: овде можете пронаћи уобичајене у контексту
+   Zammad-а. Термини из речника ће бити наглашени у изворном тексту такође.
+4. **Неке корисне картице**:
+    * **Nearby strings**: вам приказује контекст речи или низа текста
+    * **Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге
+      од DeepL сервиса и предлоге на основу сличног текста, који је већ
+      преведен.  Користите дугме „*Clone to translation*” да убаците текст у
+      поље превода и снимите измене. Користите дугме „*Accept*” да
+      прихватите предложен предлог и одмах пређене на следећи низ текста.
+    * **Other languages**: овде можете добити преглед који језици већ садрже
+      превод и саме преводе (може бити корисно за сличне језике).
 
 ### Решавање проблема
 
-And finally some notes for "special" source strings, you might see in the
-documentation projects (see RestructuredText_ for details):
+И коначно, пар напомена за „посебне” изворне низове текста, које можете
+видети у пројектима документације (погледајте RestructuredText_ за детаље):
 
 - **\`\`example-string\`\`**
 
-    This is rendered as `example-string`. Depending on the context, it can be
-    translated or not. In any case, use the \`` before and after the string in
-    your translation.
+    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може
+    превести, или не. У сваком случају, користите \` пре и после низа текста у
+    вашем преводу.
 
-- **\:doc:\`example \<path/to/document>\`**
+- **\:doc:\`пример \<path/to/document>\`**
 
-    This is a link to another page. Some links doesn't have the "example" part
-    included, e.g. \:doc:\`path/to/document. The above "example" is the text,
-    which is shown as link. This part can be translated. The path/to/document
-    may not be translated, otherwise the link would not work anymore.
+    Ово је линк на другу страницу. Неки линкови немају укључен део „пример”,
+    нпр. \:doc:\`path/to/document\`. Пример изнад је текст који ће бити линкован.
+    Овај део можете превести. Путању `path/to/document` не треба преводити,
+    иначе ризикујете да линк не функционише.
 
-- **\`some text \<https://example.com\>`\_**
+- **\`неки текст \<https://example.com\>`\_**
 
-    This is a link which can refer to an external website. "some text" is the
-    displayed text in the documentation, the part between \< and \> is the link
-    target. The \_ at the end is important and must remain in the translated
-    text.
+    Овај линк води на екстерну страницу. „Неки текст” ће бити
+    приказан у документацији, а део између \< и \> је путања
+    везе. Ознака \_ на крају је важна и мора остати део преведеног
+    текста.
 
-- **\:admin-docs:\`some text \</manage-text-modules.html\>\`**
+- **\:admin-docs:\`неки текст \</manage-text-modules.html\>\`**
 
-    This is a link which refers to external documentation. "some text" is the
-    displayed text in the documentation, the part between \< and \> is the link
-    target. Note the absence of \_ at the end, since this link is using a
-    different construction mechanism.
+    Ово је веза која води на екстерну документацију. „Неки текст” ће бити
+    приказан у документацији, а део између \< и \> је путања
+    везе. Обратите пажњу на недостатак знака \_ на крају, пошто овај линк користи
+    другачију структуру.
 
-- **\*\*example string\*\***
+- **\*\*пример текста\*\***
 
-    Markup for text (e.g. bold, italics). Alternative: \*example string\*.
-    These strings can be translated, but the markup labeling (e.g. one or
-    more \*) should be adopted true to meaning.
+    Ознака текста (нпр. подебљано, курзив=. Алтернатива: \*пример текста\*.
+    Ови низови текста се могу преводити, али ознаке (нпр. једна или
+    више \*) би требало прилагодити правом значењу.
 
 

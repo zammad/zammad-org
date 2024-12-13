@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Introduction
+title: Увод
 ---
 
 # Добродошли на Zammad документацију
@@ -15,6 +15,6 @@ title: Introduction
 успех. Прегледајт наше ресурсе и отркијте како Zammad може да вам помогне да
 пружите изузетну корисничку подршку и рационализујете вашу операцију.
 
-[User Documentation](/en/documentation/use/general)
+[Корисничка документација(/sr/use/general)
 
-[Admin Documentation](/en/documentation/manage-zammad/general)
+[Администраторска документација](/en/documentation/manage-zammad/general)

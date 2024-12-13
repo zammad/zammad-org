@@ -7,7 +7,7 @@ title: Paket
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Supported Operating Systems
+## Unterstützte Betriebssysteme
 
 Für die Paketinstallation werden die folgenden Linux-Distributionen
 unterstützt:
@@ -19,12 +19,12 @@ unterstützt:
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider using [Zammad's cloud
-service](https://zammad.com/en/pricing).
+Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
+Installationsmethode verwenden oder [Zammads Cloud
+Service](https://zammad.com/de/pricing) in Betracht ziehen.
 
-To follow the installation steps below, you might need to install additional
-tools like curl, gnupg and others.
+Um die folgenden Installationsschritte durchzuführen, müssen Sie
+möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren.
 
 ::::details Required Tools
 :::tabs key:distros
@@ -58,9 +58,9 @@ sudo yum install wget epel-release
 :::
 ::::
 
-## Quick Start
+## Schnellstart
 
-### Ensure Correct Locale
+### Korrekte Sprache/Gebietsschema sicherstellen
 
 :::tabs key:distros
 
@@ -126,22 +126,22 @@ sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
 
-### Install Elasticsearch
+### Elasticsearch installieren
 
-The recommended method is to use [Elastic's official
-guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-for installing Elasticsearch.
+Die empfohlene Methode ist die Verwendung von [Elastics offizieller
+Installationsanleitung]
+(https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we
-included in another page to keep the install instructions as lean as
-possible.
+Alternativ können Sie [unserem
+Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 7
+folgen, das Sie auf einer anderen Seite finden, um die
+Installationsanweisungen so schlank wie möglich zu halten.
 
-### Add Zammad Repository
+### Zammad-Repository hinzufügen
 
 ::: info
-Packager.io may not be accessible from IPv6-only environments, so make sure
-to consider this when performing the steps below.
+Es kann sein, dass Packager.io von reinen IPv6-Umgebungen aus nicht zugänglich ist, daher sollten Sie
+dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::
 
 :::tabs key:distros
@@ -261,36 +261,37 @@ sudo chmod -R 755 /opt/zammad/public/
 ```
 :::
 
-### Manage Services of Zammad
+### Zammad Services verwalten
 
-Zammad uses three services. They can be (re)started & stopped with the
-parent `zammad`:
+Zammad verwendet drei Dienste. Sie können mit dem übergeordneten Dienst
+`zammad` (neu)gestartet und gestoppt werden:
 ```bash
 systemctl (status|start|stop|restart) zammad
 ```
-Only internal puma server (relevant for displaying the web app):
+Nur interner Puma-Server (relevant zum Anzeigen der Web-App):
 ```bash
 systemctl (status|start|stop|restart) zammad-web
 ```
-Only background worker - relevant for all delayed- and background jobs:
+Nur Background Worker - relevant für alle verzögerten und Hintergrund-Jobs:
 ```bash
 systemctl (status|start|stop|restart) zammad-worker
 ```
-Only websocket server for session related information:
+Nur Websocket-Server für sitzungsbezogene Informationen:
 ```bash
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 
-### Next Steps
+### Nächste Schritte
 
-- Connect Zammad with Elasticsearch ([basic
-  guide](/en/tutorials/connect-config-elasticsearch))
-- Adjust your SELinux rules and firewall ([basic
-  guide](/en/tutorials/firewall-selinux))
-- Configure the Webserver ([basic guide](/en/tutorials/webserver-config))
+- Zammad mit Elasticsearch verbinden ([Basis
+  Anleitung](/de/tutorials/connect-config-elasticsearch))
+- Passen Sie Ihre SELinux-Regeln und Ihre Firewall an ([Basis
+  Anleitung](/de/tutorials/firewall-selinux))
+- Konfigurieren Sie den Webserver ([Basis
+  Anleitung](/de/tutorials/webserver-config))
 
 
-## Dependencies
+## Abhängigkeiten
 
 Assuming a vanilla system, the following dependencies will automatically be
 installed during the Zammad package installation. Additionally, you can find

@@ -1206,7 +1206,7 @@ Required permission: `ticket.agent`.
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `ticket.agent`
 

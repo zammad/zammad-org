@@ -225,7 +225,7 @@ Required permission: `admin.role`
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.role`
 

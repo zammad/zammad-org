@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Backup & Restore'
+title: 'Резервна копија и њено враћање'
 ---
 
-# Backup & Restore
+# Резервна копија и њено враћање
 
 Zammad ships scripts in package installations for backup & restore which you
 can use.
@@ -31,7 +31,7 @@ There are some limitations you should know:
 - Do not restore backup files from custom scripts with the provided scripts
   by Zammad. This might cause problems.
 
-## Quick Start
+## Брзи почетак
 
 The scripts are located in `/opt/zammad/contrib/backup`. The following files
 are relevant:

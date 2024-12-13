@@ -216,7 +216,7 @@ As there's no endpoint for retrieving these, please use the
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.object`
 

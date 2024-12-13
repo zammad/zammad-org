@@ -993,7 +993,7 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-### Update
+### Освежавање
 
 Required permission: `ticket.agent`
 
@@ -1124,7 +1124,7 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-### Update
+### Освежавање
 
 Required permission: `ticket.agent`
 
@@ -1268,7 +1268,7 @@ Required permission: `admin.checklists`
 ::::
 
 
-### Update
+### Освежавање
 
 Required permission: `admin.checklists`
 

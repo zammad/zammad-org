@@ -1,29 +1,29 @@
 ---
 order: 2
-title: Package
+title: Пакет
 ---
 
-# Package Installation
+# Инсталација пакета
 
-<!--@include: @/en/modules/zammad-services-hint.md-->
+<!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Supported Operating Systems
+## Подржани оперативни системи
 
-For package installation, the following Linux distributions are supported:
+За инсталацију пакета, подржане су следеће дистрибуције Linux платформе:
 
-| Distribution  | Version             |
+| Дистрибуција  | Верзија             |
 | ------------- | :-----------------  |
-| CentOS/RHEL   | 8 & 9               |
-| Debian        | 11 & 12             |
+| CentOS/RHEL   | 8 и 9               |
+| Debian        | 11 и 12             |
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider using [Zammad's cloud
-service](https://zammad.com/en/pricing).
+Уколико ваша дистрибуција тренутно није подржана, пробајте други метод
+инсталације или размотрите претплату на [Zammad сервис у
+облаку](https://zammad.com/en/pricing).
 
-To follow the installation steps below, you might need to install additional
-tools like curl, gnupg and others.
+Да бисте испратили инсалационе кораке испод, може бити неопходно да
+инсталирате додатне алате као curl, gnupg и остале.
 
 ::::details Required Tools
 :::tabs key:distros
@@ -57,9 +57,9 @@ sudo yum install wget epel-release
 :::
 ::::
 
-## Quick Start
+## Брзи почетак
 
-### Ensure Correct Locale
+### Обезбедите исправан locale
 
 :::tabs key:distros
 
@@ -125,11 +125,11 @@ sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
 
-### Install Elasticsearch
+### Elasticsearch инсталација
 
-The recommended method is to use [Elastic's official
-guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-for installing Elasticsearch.
+Препоручени метод је да користите [званичан Elastic
+водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+за инсталацију Elasticsearch.
 
 Alternatively, you can follow [our example
 setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we

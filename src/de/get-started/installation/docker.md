@@ -3,87 +3,90 @@ order: 3
 title: Docker
 ---
 
-# Install with Docker
+# Installation via Docker
 
-Zammad can be deployed using Docker-Compose. You can even use graphical
-docker front ends like [Portainer](https://www.portainer.io/).
+Zammad kann mit Docker-Compose installiert werden. Sie können sogar
+grafische Docker-Frontends wie [Portainer] (https://www.portainer.io/)
+verwenden.
 
 ::: info
 
-We do not provide support in terms of Docker (-Compose) or Portainer specific problems. If you choose to run Zammad via Docker, support is only provided for the Zammad application.
+Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifische Probleme. Wenn Sie sich dafür entscheiden, Zammad per Docker zu installieren, kann Support nur für Zammad als Anwendung geleistet werden.
 :::
 
 ## Voraussetzungen
 
-- A working Docker Compose environment
-- At least 4 GB of RAM to run the containers
-- Adjust your host's settings to run Elasticsearch properly:
+- Eine funktionierende Docker Compose-Umgebung
+- Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
+- Passe die Einstellungen deines Hosts zum ordentlichen Ausführen von Elasticsearch:
     ```bash
     sysctl -w vm.max_map_count=262144
     ```
 
-## Deployment with Portainer
+## Installation mit Portainer
 
-The easiest way to get Zammad running is via a graphical docker UI. We
-recommend [Portainer](https://www.portainer.io/). For installation
-instructions, check out [Portainer's
-documentation](https://docs.portainer.io/).
+Der einfachste Weg, Zammad zum Laufen zu bringen, ist über eine grafische
+Docker-Oberfläche. Wir empfehlen
+[Portainer](https://www.portainer.io/). Installationsanweisungen finden Sie
+in der [Portainer Dokumentation](https://docs.portainer.io/).
 
-### Step 1: Add Stack
-In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and choose `Add stack` as you can see
-in the screenshot below.
+### Schritt 1: Stack hinzufügen
+Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
+Zielumgebung aus, wählen Sie **Stacks** und wählen Sie `Add stack`, wie Sie
+im Screenshot unten sehen können.
 
-### Step 2: Build From Repository
-Switch to **Repository** build method and provide the information below: -
-**Name**: enter a desired name of the stack - **Repository URL**:
+### Schritt 2: Aus dem Repository erstellen
+Wechseln Sie zur Erstellungsmethode **Repository** und geben Sie die
+folgenden Informationen an: - **Name**: Geben Sie den gewünschten Namen des
+Stacks ein - **Repository URL**:
 `https://github.com/zammad/zammad-docker-compose` - **Repository
 reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
-(default)
+(Standard)
 
 Optional: if you need to provide environment variables, you can enter them
 in the **Environment variable** section or even upload a .env file. See [env
 template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
 as an example.
 
-### Step 3: Deploy the Stack
-After the stack is ready, you can access Zammad via the configured docker
-host and port, e.g. `http://localhost:8080/`.
+### Schritt 3: Starten des Stacks
+Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host
+und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
-![Screenshot in the Stacks section and highlighted "Add
-stack".](/screenshots/installation/portainer-stacks.png)
+![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in Portainer.]
+(screenshots/installation/portainer-stacks.png)
 
-![Stack creation with provided information in Repository
-screen](/screenshots/installation/portainer-stack-creation.png)
+![Stack-Erstellung mit Informationen aus der
+Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
 
-## Deployment with Docker-Compose
+## Installation mit Docker-Compose
 
-### Step 1: Clone the GitHub Repo
+### Schritt 1: Klonen des GitHub Repo
 
 ```bash
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
-Make sure to run `git pull` frequently to fetch updates. Alternatively, you
-can download the files from the [releases
-page](https://github.com/zammad/zammad-docker-compose/releases).
+Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
+Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der
+[Release Seite](https://github.com/zammad/zammad-docker-compose/releases)
+herunterladen.
 
-### Step 2: Adjust Environment as Needed
+### Schritt 2: Umgebung nach Bedarf anpassen
 
-In some cases our default environment is not what a docker-compose user is
-looking for. See [Docker Environment
-Variables](/en/reference/docker-env-vars.md) for details on which settings
-can be configured.
+In einigen Fällen ist unsere Standardumgebung nicht das, wonach ein Benutzer
+von Docker-Compose sucht. Siehe [Docker
+Umgebungsvariablen](/de/reference/docker-env-vars.md) für Details zu den
+Einstellungen, die konfiguriert werden können.
 
 ::: tip
-If you want to use a `.env` file, you can use the provided `.env.dist`
-file and copy it to `.env`. That way it will be picked up by Docker-Compose
-automatically and not overwritten during updates.
+Wenn Sie eine `.env`-Datei verwenden wollen, können Sie die mitgelieferte `.env.dist`
+Datei verwenden und sie nach `.env` kopieren. Auf diese Weise wird sie von Docker-Compose
+automatisch übernommen und bei Aktualisierungen nicht überschrieben.
 
-Zammad runs on port `8080` by default. If you want to use another port,
-you can set it via the variable `NGINX_EXPOSE_PORT`.
+Zammad läuft standardmäßig auf Port `8080`. Wenn Sie einen anderen Port verwenden möchten,
+können Sie ihn über die Variable `NGINX_EXPOSE_PORT` einstellen.
 :::
 
-### Step 3: Start the Stack
+### Schritt 3: Starten des Stacks
 ```bash
 cd zammad-docker-compose
 ```
@@ -91,39 +94,42 @@ cd zammad-docker-compose
 docker compose up -d
 ```
 
-After the stack is ready, you can access Zammad via the configured docker
-host and port, e.g. `http://localhost:8080/`.
+Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host
+und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
-## Customizing the Zammad Stack
+## Anpassen des Zammad-Stacks
 
-Sometimes it's necessary to apply local changes to the Zammad docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications.
-Docker-Compose will [automatically load this file and merge its changes into
-your stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+Manchmal ist es notwendig, lokale Änderungen am Zammad-Docker-Stack
+vorzunehmen, z.B. um zusätzliche Dienste einzubinden. Wenn Sie dies planen,
+empfehlen wir Ihnen, die Datei `docker-compose.yml` nicht zu ändern, sondern
+eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre
+Änderungen enthält.  Docker-Compose wird [automatisch diese Datei laden und
+ihre Änderungen in Ihren Stack einfügen]
+(https://docs.docker.com/compose/multiple-compose-files/merge/).
 
-## Run Commands in the Stack
+## Befehle im Stack ausführen
 
-The docker entrypoint script sets up environment variables required by
-Zammad to function properly. That is why calling `rails` or `rake` on the
-console should be done via one of the following methods:
+Das Docker-Entrypoint-Skript richtet Umgebungsvariablen ein, die Zammad
+benötigt, um ordnungsgemäß zu funktionieren. Deshalb sollte der Aufruf von
+`rails` oder `rake` auf der Konsole über eine der folgenden Methoden
+erfolgen:
 
-Directly execute a specific command:
+Direktes Ausführen eines bestimmten Befehls:
 ```bash
-docker compose run --rm zammad-railsserver rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver rails r '...Ihr Rails Befehl...'
 ```
-Run the interactive rails console to manually enter Rails commands:
+Führen Sie die interaktive Rails-Konsole aus, um Rails-Befehle manuell
+einzugeben:
 ```bash
 docker compose run --rm zammad-railsserver rails c
 ```
-Via "docker exec":
+Über "docker exec":
 ```bash
-docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
+docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...Ihr Rails Befehl...'
 ```
 
 ::: tip
-If you need to retrieve information from the rails server, you can, for example,
-place `pp` (pretty print) in front of your rails command. This leads to an
-output in your terminal.
+Wenn Sie Informationen vom Rails-Server abrufen müssen, können Sie z.B,
+vor den Rails-Befehl `pp` (pretty print) setzen. Dies führt zu einer
+Ausgabe in Ihrem Terminal.
 :::

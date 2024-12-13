@@ -114,7 +114,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 :::
 ::::
 
-## Update
+## Освежавање
 
 Required permission: `admin.time_accounting`
 

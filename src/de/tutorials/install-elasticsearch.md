@@ -154,7 +154,7 @@ Enable it by default and start it:
   systemctl enable elasticsearch --now
   ```
 
-## Next Steps
+## Nächste Schritte
 
  Go on with
  [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).
