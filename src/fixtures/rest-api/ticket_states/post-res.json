@@ -1,0 +1,17 @@
+// HTTP-Code 201 Created
+
+{
+  "id": 8,
+  "state_type_id": 2,
+  "name": "in progress",
+  "next_state_id": null,
+  "ignore_escalation": true,
+  "default_create": false,
+  "default_follow_up": false,
+  "note": null,
+  "active": true,
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2021-11-08T15:08:21.671Z",
+  "updated_at": "2021-11-08T15:08:21.671Z"
+}

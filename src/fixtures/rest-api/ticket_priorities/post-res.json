@@ -1,0 +1,15 @@
+// HTTP-Code 201 Created
+
+{
+  "id": 4,
+  "name": "4 disaster",
+  "default_create": false,
+  "ui_icon": "important",
+  "ui_color": "high-priority",
+  "note": "Added via API for disasterious situations.",
+  "active": true,
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2021-11-08T15:31:57.704Z",
+  "updated_at": "2021-11-08T15:31:57.704Z"
+}

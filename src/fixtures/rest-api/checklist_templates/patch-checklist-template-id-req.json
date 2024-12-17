@@ -1,0 +1,9 @@
+{
+  "name": "My changed checklist template name",
+  "active": true,
+  "items": [
+    "Item 7",
+    "Item 8",
+    "Item 9"
+  ]
+}

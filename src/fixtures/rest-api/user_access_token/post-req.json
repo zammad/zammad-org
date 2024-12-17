@@ -1,0 +1,8 @@
+{
+  "name": "My amazing test",
+  "permission": [
+    "cti.agent",
+    "ticket.agent"
+  ],
+  "expires_at": "2021-12-21"
+}

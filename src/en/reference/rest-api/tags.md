@@ -15,16 +15,8 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tags/get-res.json
 
-{
-    "tags": [
-        "order",
-        "complaint"
-    ]
-}
-```
 :::
 
 ### Search
@@ -39,24 +31,8 @@ Zammad will return all tags that contain your search phrase.
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tag_search/get-res.json
 
-[
-    {
-        "id": 1,
-        "value": "order"
-    },
-    {
-        "id": 2,
-        "value": "complaint"
-    },
-    {
-        "id": 3,
-        "value": "printer problem"
-    }
-]
-```
 :::
 
 ### Add
@@ -71,13 +47,7 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 === Request
 
-```json
-{
-    "item": "{tag name}",
-    "object": "Ticket",
-    "o_id": {ticket id}
-}
-```
+<<< @/fixtures/rest-api/tags/add/post-req.json
 
 ::: info
 This will create the tag if it doesn't exist and the user has permission
@@ -86,11 +56,8 @@ to do so.
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/tags/add/post-res.json
 
-true
-```
 ::::
 :::::
 
@@ -106,21 +73,12 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 === Request
 
-```json
-{
-    "item": "{tag name}",
-    "object": "Ticket",
-    "o_id": "{ticket id}"
-}
-```
+<<< @/fixtures/rest-api/tags/remove/delete-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/tags/remove/delete-res.json
 
-true
-```
 :::
 ::::
 
@@ -134,27 +92,8 @@ Required permission: `admin.tag`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tag_list/get-res.json
 
-[
-    {
-        "id": 1,
-        "name": "order",
-        "count": 0
-    },
-    {
-        "id": 2,
-        "name": "complaint",
-        "count": 0
-    },
-    {
-        "id": 3,
-        "name": "printer problem",
-        "count": 0
-    }
-]
-```
 :::
 
 ### Admin - Create
@@ -169,19 +108,12 @@ Required permission: `admin.tag`
 
 === Request
 
-```json
-{
-  "name": "tag 5"
-}
-```
+<<< @/fixtures/rest-api/tag_list/post-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tag_list/post-res.json
 
-{}
-```
 :::
 ::::
 
@@ -197,19 +129,12 @@ Required permission: `admin.tag`
 
 === Request
 
-```json
-{
-  "name": "order"
-}
-```
+<<< @/fixtures/rest-api/tag_list/put-tag-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tag_list/put-tag-id-res.json
 
-{}
-```
 :::
 ::::
 
@@ -223,9 +148,6 @@ Required permission: `admin.tag`
 
 Response:
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json
 
-{}
-```
 :::

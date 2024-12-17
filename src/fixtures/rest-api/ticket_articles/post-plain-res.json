@@ -1,0 +1,31 @@
+// HTTP-Code 201 Created
+
+{
+  "id": 33,
+  "ticket_id": 5,
+  "type_id": 5,
+  "sender_id": 1,
+  "from": "Lauren Brooks",
+  "to": null,
+  "cc": null,
+  "subject": "Call note",
+  "reply_to": null,
+  "message_id": null,
+  "message_id_md5": null,
+  "in_reply_to": null,
+  "content_type": "text/html",
+  "references": null,
+  "body": "Called the customer and discussed their issues.<br>Turns out these were caused by invalid configurations - solved.",
+  "internal": false,
+  "preferences": {},
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "origin_by_id": null,
+  "created_at": "2021-11-08T16:13:35.962Z",
+  "updated_at": "2021-11-08T16:13:35.962Z",
+  "attachments": [],
+  "type": "phone",
+  "sender": "Agent",
+  "created_by": "lauren@fastlane.inc",
+  "updated_by": "lauren@fastlane.inc"
+}

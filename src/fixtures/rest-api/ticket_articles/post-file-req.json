@@ -1,0 +1,23 @@
+{
+  "ticket_id": 5,
+  "to": "",
+  "cc": "",
+  "subject": "some subject",
+  "body": "Please see attached file...",
+  "content_type": "text/plain",
+  "type": "note",
+  "internal": true,
+  "time_unit": "25",
+  "attachments": [
+    {
+      "filename": "portal.txt",
+      "data": "VGhlIGNha2UgaXMgYSBsaWUhCg==",
+      "mime-type": "text/plain"
+    },
+    {
+      "filename": "{filename}",
+      "data": "{file content base64 encoded}",
+      "mime-type": "{attachments mime-type}"
+    }
+  ]
+}

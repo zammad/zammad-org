@@ -1,0 +1,61 @@
+{
+  "screens": {
+    "create": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": false
+      },
+      "admin.user": {
+        "shown": true,
+        "required": false
+      }
+    },
+    "view": {
+      "ticket.customer": {
+        "shown": true
+      },
+      "ticket.agent": {
+        "shown": true
+      },
+      "admin.user": {
+        "shown": true
+      }
+    },
+    "edit": {
+      "ticket.agent": {
+        "shown": true,
+        "required": false
+      },
+      "admin.user": {
+        "shown": true,
+        "required": false
+      }
+    },
+    "signup": {
+      "ticket.customer": {
+        "shown": false,
+        "required": false
+      }
+    },
+    "invite_customer": {
+      "ticket.agent": {
+        "shown": false,
+        "required": false
+      },
+      "admin.user": {
+        "shown": false,
+        "required": false
+      }
+    },
+    "invite_agent": {
+      "admin.user": {
+        "shown": false,
+        "required": false
+      }
+    }
+  }
+}

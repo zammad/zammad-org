@@ -1,0 +1,27 @@
+{
+  "form_id": "367646073",
+  "new_article": {
+    "body": "Changed body.",
+    "cc": "",
+    "content_type": "text/html",
+    "from": "Ethan Kwan",
+    "in_reply_to": "",
+    "internal": false,
+    "preferences": {
+      "security": {
+        "encryption": {},
+        "sign": {
+          "success": true
+        },
+        "type": "S/MIME"
+      }
+    },
+    "sender_id": 1,
+    "subject": "",
+    "subtype": "",
+    "ticket_id": 61,
+    "to": "nicole.braun@zammad.org",
+    "type": "email",
+    "type_id": 1
+  }
+}

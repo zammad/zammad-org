@@ -1,0 +1,15 @@
+{
+  "id": 50,
+  "name": "sample_boolean",
+  "object": "Ticket",
+  "display": "Sample Boolean",
+  "data_type": "boolean",
+  "position": 1200,
+  "data_option": {
+    "options": {
+      "true": "yes",
+      "false": "no"
+    },
+    "default": "false"
+  }
+}

@@ -19,31 +19,8 @@ Required permission: `admin.sla`
 
 Response:
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/slas/get-res.json
 
-[
-   {
-      "id":2,
-      "calendar_id":1,
-      "name":"new sla",
-      "first_response_time":120,
-      "response_time":null,
-      "update_time":120,
-      "solution_time":120,
-      "condition":{
-         "ticket.state_id":{
-            "operator":"is",
-            "value":"2"
-         }
-      },
-      "updated_by_id":3,
-      "created_by_id":3,
-      "created_at":"2021-11-10T12:54:39.368Z",
-      "updated_at":"2021-11-10T12:54:39.368Z"
-   }
-]
-```
 :::
 
 ## Show
@@ -54,29 +31,8 @@ Required permission: `admin.sla`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/slas/get-id-res.json
 
-{
-   "id":2,
-   "calendar_id":1,
-   "name":"new sla",
-   "first_response_time":120,
-   "response_time":null,
-   "update_time":120,
-   "solution_time":120,
-   "condition":{
-      "ticket.state_id":{
-         "operator":"is",
-         "value":"2"
-      }
-   },
-   "updated_by_id":3,
-   "created_by_id":3,
-   "created_at":"2021-11-10T12:54:39.368Z",
-   "updated_at":"2021-11-10T12:54:39.368Z"
-}
-```
 :::
 
 ## Create
@@ -91,48 +47,12 @@ Required permission: `admin.sla`
 
 === Request
 
-```json
-{
-   "name":"new sla",
-   "first_response_time":"120",
-   "response_time":"",
-   "update_time":"120",
-   "solution_time":"120",
-   "condition":{
-      "ticket.state_id":{
-         "operator":"is",
-         "value":"2"
-      }
-   },
-   "calendar_id":"1",
-}
-```
+<<< @/fixtures/rest-api/slas/post-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/slas/post-res.json
 
-{
-   "id":2,
-   "calendar_id":1,
-   "name":"new sla",
-   "first_response_time":120,
-   "response_time":null,
-   "update_time":120,
-   "solution_time":120,
-   "condition":{
-      "ticket.state_id":{
-         "operator":"is",
-         "value":"2"
-      }
-   },
-   "updated_by_id":3,
-   "created_by_id":3,
-   "created_at":"2021-11-10T12:54:39.368Z",
-   "updated_at":"2021-11-10T12:54:39.368Z"
-}
-```
 :::
 ::::
 
@@ -148,49 +68,12 @@ Required permission: `admin.sla`
 
 === Request
 
-```json
-{
-   "name":"update sla",
-   "first_response_time":"120",
-   "response_time":"",
-   "update_time":"120",
-   "solution_time":"120",
-   "condition":{
-      "ticket.state_id":{
-         "operator":"is",
-         "value":"2"
-      }
-   },
-   "calendar_id":"1",
-   "id":2
-}
-```
+<<< @/fixtures/rest-api/slas/put-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/slas/put-id-res.json
 
-{
-   "id":2,
-   "calendar_id":1,
-   "name":"update sla",
-   "first_response_time":120,
-   "response_time":null,
-   "update_time":120,
-   "solution_time":120,
-   "condition":{
-      "ticket.state_id":{
-         "operator":"is",
-         "value":"2"
-      }
-   },
-   "updated_by_id":3,
-   "created_by_id":3,
-   "created_at":"2021-11-10T12:54:39.368Z",
-   "updated_at":"2021-11-10T13:02:52.053Z"
-}
-```
 :::
 ::::
 
@@ -210,9 +93,6 @@ Please note that removing SLA configurations cannot be undone.
 
 Response:
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/slas/delete-id-res.json
 
-{}
-```
 :::

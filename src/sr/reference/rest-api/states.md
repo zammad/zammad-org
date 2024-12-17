@@ -20,117 +20,8 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_states/get-res.json
 
-[
-   {
-      "id": 1,
-      "state_type_id": 1,
-      "name": "new",
-      "next_state_id": null,
-      "ignore_escalation": false,
-      "default_create": true,
-      "default_follow_up": false,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.504Z",
-      "updated_at": "2021-11-03T11:51:13.520Z"
-   },
-   {
-      "id": 2,
-      "state_type_id": 2,
-      "name": "open",
-      "next_state_id": null,
-      "ignore_escalation": false,
-      "default_create": false,
-      "default_follow_up": true,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.518Z",
-      "updated_at": "2021-11-03T11:51:13.518Z"
-   },
-   {
-      "id": 3,
-      "state_type_id": 3,
-      "name": "pending reminder",
-      "next_state_id": null,
-      "ignore_escalation": true,
-      "default_create": false,
-      "default_follow_up": false,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.528Z",
-      "updated_at": "2021-11-03T11:51:13.528Z"
-   },
-   {
-      "id": 4,
-      "state_type_id": 5,
-      "name": "closed",
-      "next_state_id": null,
-      "ignore_escalation": true,
-      "default_create": false,
-      "default_follow_up": false,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.535Z",
-      "updated_at": "2021-11-03T11:51:13.535Z"
-   },
-   {
-      "id": 5,
-      "state_type_id": 6,
-      "name": "merged",
-      "next_state_id": null,
-      "ignore_escalation": true,
-      "default_create": false,
-      "default_follow_up": false,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.540Z",
-      "updated_at": "2021-11-03T11:51:13.540Z"
-   },
-   {
-      "id": 6,
-      "state_type_id": 7,
-      "name": "removed",
-      "next_state_id": null,
-      "ignore_escalation": true,
-      "default_create": false,
-      "default_follow_up": false,
-      "note": null,
-      "active": false,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.546Z",
-      "updated_at": "2021-11-03T11:51:13.546Z"
-   },
-   {
-      "id": 7,
-      "state_type_id": 4,
-      "name": "pending close",
-      "next_state_id": 4,
-      "ignore_escalation": true,
-      "default_create": false,
-      "default_follow_up": false,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.553Z",
-      "updated_at": "2021-11-03T11:51:13.553Z"
-   }
-]
-```
 :::
 
 ## Show
@@ -142,25 +33,8 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_states/get-id-res.json
 
-{
-   "id": 4,
-   "state_type_id": 5,
-   "name": "closed",
-   "next_state_id": null,
-   "ignore_escalation": true,
-   "default_create": false,
-   "default_follow_up": false,
-   "note": null,
-   "active": true,
-   "updated_by_id": 1,
-   "created_by_id": 1,
-   "created_at": "2021-11-03T11:51:13.535Z",
-   "updated_at": "2021-11-03T11:51:13.535Z"
-}
-```
 :::
 
 ## Create
@@ -183,36 +57,12 @@ As there's no endpoint for retrieving these, please use the
 
 === Request
 
-```json
-{
-   "name": "in progress",
-   "state_type_id": 2,
-   "ignore_escalation": true,
-   "active": true
-}
-```
+<<< @/fixtures/rest-api/ticket_states/post-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/ticket_states/post-res.json
 
-{
-   "id": 8,
-   "state_type_id": 2,
-   "name": "in progress",
-   "next_state_id": null,
-   "ignore_escalation": true,
-   "default_create": false,
-   "default_follow_up": false,
-   "note": null,
-   "active": true,
-   "updated_by_id": 3,
-   "created_by_id": 3,
-   "created_at": "2021-11-08T15:08:21.671Z",
-   "updated_at": "2021-11-08T15:08:21.671Z"
-}
-```
 :::
 ::::
 
@@ -228,33 +78,11 @@ Required permission: `admin.object`
 
 === Request
 
-```json
-{
-   "note": "State created & updated via API"
-}
-```
+<<< @/fixtures/rest-api/ticket_states/put-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 Ok
-
-{
-   "id": 8,
-   "note": "State created &amp; updated via API",
-   "updated_by_id": 3,
-   "name": "in progress",
-   "state_type_id": 2,
-   "next_state_id": null,
-   "ignore_escalation": true,
-   "default_create": false,
-   "default_follow_up": false,
-   "active": true,
-   "created_by_id": 3,
-   "created_at": "2021-11-08T15:08:21.671Z",
-   "updated_at": "2021-11-08T15:13:32.370Z"
-}
-```
+<<< @/fixtures/rest-api/ticket_states/put-id-res.json
 
 :::
 ::::
@@ -282,9 +110,6 @@ tickets with the to remove state to another state.
 
 Response:
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_states/delete-id-res.json
 
-{}
-```
 :::

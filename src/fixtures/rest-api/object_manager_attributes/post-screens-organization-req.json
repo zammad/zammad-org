@@ -1,0 +1,35 @@
+{
+  "screens": {
+    "view": {
+      "ticket.customer": {
+        "shown": true
+      },
+      "ticket.agent": {
+        "shown": true
+      },
+      "admin.organization": {
+        "shown": true
+      }
+    },
+    "create": {
+      "ticket.agent": {
+        "shown": true,
+        "required": false
+      },
+      "admin.organization": {
+        "shown": true,
+        "required": false
+      }
+    },
+    "edit": {
+      "ticket.agent": {
+        "shown": true,
+        "required": false
+      },
+      "admin.organization": {
+        "shown": true,
+        "required": false
+      }
+    }
+  }
+}

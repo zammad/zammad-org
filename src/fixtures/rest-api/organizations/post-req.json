@@ -1,0 +1,13 @@
+{
+  "name": "Sample Corp.",
+  "shared": false,
+  "domain": "example.com",
+  "domain_assignment": true,
+  "active": true,
+  "vip": true,
+  "note": "Just a sample, aint that nice?",
+  "members": [
+    "olivia@example.com",
+    "david@example.com"
+  ]
+}

@@ -1,0 +1,17 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 8,
+  "note": "State created &amp; updated via API",
+  "updated_by_id": 3,
+  "name": "in progress",
+  "state_type_id": 2,
+  "next_state_id": null,
+  "ignore_escalation": true,
+  "default_create": false,
+  "default_follow_up": false,
+  "active": true,
+  "created_by_id": 3,
+  "created_at": "2021-11-08T15:08:21.671Z",
+  "updated_at": "2021-11-08T15:13:32.370Z"
+}

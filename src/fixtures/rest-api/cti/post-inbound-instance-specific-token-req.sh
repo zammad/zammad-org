@@ -1,0 +1,10 @@
+curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+     "event": "newCall",
+     "from": "493023125741",
+     "to": "492214710334",
+     "direction": "in",
+     "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
+     "user": ["Lauren Brooks", "Ethan Kwan"]
+  }'

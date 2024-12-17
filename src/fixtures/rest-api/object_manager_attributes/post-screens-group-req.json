@@ -1,0 +1,21 @@
+{
+  "screens": {
+    "create": {
+      "admin.group": {
+        "shown": true,
+        "required": false
+      }
+    },
+    "edit": {
+      "admin.group": {
+        "shown": true,
+        "required": false
+      }
+    },
+    "view": {
+      "admin.group": {
+        "shown": true
+      }
+    }
+  }
+}

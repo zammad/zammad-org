@@ -1,0 +1,21 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 30,
+  "name": "Test API II",
+  "active": true,
+  "sorted_item_ids": [
+    "22",
+    "23",
+    "24"
+  ],
+  "created_by_id": 3,
+  "updated_by_id": 3,
+  "created_at": "2024-10-15T12:46:31.927Z",
+  "updated_at": "2024-10-15T12:46:31.982Z",
+  "item_ids": [
+    22,
+    23,
+    24
+  ]
+}

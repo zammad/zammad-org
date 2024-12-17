@@ -1,0 +1,11 @@
+{
+  "title": "No help for you",
+  "group": "Sales",
+  "state": "open",
+  "priority": "3 high",
+  "article": {
+    "subject": "Update via API",
+    "body": "Here's my reason for updating this ticket...",
+    "internal": true
+  }
+}

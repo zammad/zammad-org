@@ -1,0 +1,19 @@
+// HTTP-Code 200 OK
+
+[
+  {
+    "id": 1,
+    "name": "order",
+    "count": 0
+  },
+  {
+    "id": 2,
+    "name": "complaint",
+    "count": 0
+  },
+  {
+    "id": 3,
+    "name": "printer problem",
+    "count": 0
+  }
+]

@@ -1,0 +1,59 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 18,
+  "object_lookup_id": 1,
+  "name": "email",
+  "display": "Email",
+  "data_type": "input",
+  "data_option": {
+    "type": "email",
+    "maxlength": 150,
+    "null": true,
+    "item_class": "formGroup--halfSize"
+  },
+  "data_option_new": {},
+  "editable": false,
+  "active": true,
+  "screens": {
+    "signup": {
+      "-all-": {
+        "null": false
+      }
+    },
+    "invite_agent": {
+      "-all-": {
+        "null": false
+      }
+    },
+    "invite_customer": {
+      "-all-": {
+        "null": false
+      }
+    },
+    "edit": {
+      "-all-": {
+        "null": true
+      }
+    },
+    "create": {
+      "-all-": {
+        "null": true
+      }
+    },
+    "view": {
+      "-all-": {
+        "shown": true
+      }
+    }
+  },
+  "to_create": false,
+  "to_migrate": false,
+  "to_delete": false,
+  "to_config": false,
+  "position": 400,
+  "created_by_id": 1,
+  "updated_by_id": 1,
+  "created_at": "2021-11-09T13:12:32.784Z",
+  "updated_at": "2021-11-09T13:12:32.784Z"
+}

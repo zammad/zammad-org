@@ -19,34 +19,8 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/mentions/get-res.json
 
-{
-  mentions: [
-    {
-      "id":2,
-      "mentionable_type":"Ticket",
-      "mentionable_id":1,
-      "user_id":3,
-      "updated_by_id":3,
-      "created_by_id":3,
-      "created_at":"2021-03-16T08:51:08.985Z",
-      "updated_at":"2021-03-16T08:51:08.985Z"
-    },
-    {
-      "id":3,
-      "mentionable_type":"Ticket",
-      "mentionable_id":1,
-      "user_id":4,
-      "updated_by_id":4,
-      "created_by_id":4,
-      "created_at":"2021-03-16T08:51:08.986Z",
-      "updated_at":"2021-03-16T08:51:08.986Z"
-    },
-  ]
-}
-```
 :::
 
 ## Create
@@ -61,20 +35,12 @@ Required permission: `ticket.agent`
 
 === Request
 
-```json
-{
-  "mentionable_type": "Ticket",
-  "mentionable_id": 12,
-}
-```
+<<< @/fixtures/rest-api/mentions/post-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/mentions/post-res.json
 
-true
-```
 :::
 ::::
 
@@ -94,19 +60,6 @@ Required permission: `ticket.agent`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/mentions/delete-id-res.json
 
-{
-  "id":2,
-  "mentionable_type":"Ticket",
-  "mentionable_id":1,
-  "user_id":3,
-  "updated_by_id":3,
-  "created_by_id":3,
-  "created_at":"2021-03-16T08:51:08.985Z",
-  "updated_at":"2021-03-16T08:51:08.985Z"
-}
-```
 :::
-

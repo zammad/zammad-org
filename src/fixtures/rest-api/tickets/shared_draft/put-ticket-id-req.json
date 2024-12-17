@@ -1,0 +1,24 @@
+{
+  "form_id": "367646073",
+  "new_article": {
+    "body": "This is some text.",
+    "cc": "",
+    "content_type": "text/html",
+    "from": "Lauren Brooks",
+    "in_reply_to": "",
+    "internal": true,
+    "sender_id": 1,
+    "subject": "",
+    "subtype": "",
+    "ticket_id": 61,
+    "to": "",
+    "type": "note",
+    "type_id": 10
+  },
+  "ticket_attributes": {
+    "group_id": "2",
+    "owner_id": "4",
+    "priority_id": "2",
+    "state_id": "2"
+  }
+}

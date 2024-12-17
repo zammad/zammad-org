@@ -1,0 +1,9 @@
+{
+  "event": "hangup",
+  "from": "493023125741",
+  "to": "492214710334",
+  "direction": "in",
+  "callId": "2d77882f-68df-40f0-8c62-b642589c00bc",
+  "answeringNumber": "emily@fastlane.inc",
+  "cause": "normalClearing"
+}

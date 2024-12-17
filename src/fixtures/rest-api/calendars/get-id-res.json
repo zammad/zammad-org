@@ -1,0 +1,90 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 2,
+  "name": "Test calendar",
+  "timezone": "Europe/Berlin",
+  "business_hours": {
+    "mon": {
+      "active": true,
+      "timeframes": [
+        [
+          "09:00",
+          "17:00"
+        ]
+      ]
+    },
+    "tue": {
+      "active": true,
+      "timeframes": [
+        [
+          "09:00",
+          "17:00"
+        ]
+      ]
+    },
+    "wed": {
+      "active": true,
+      "timeframes": [
+        [
+          "09:00",
+          "17:00"
+        ]
+      ]
+    },
+    "thu": {
+      "active": true,
+      "timeframes": [
+        [
+          "09:00",
+          "17:00"
+        ]
+      ]
+    },
+    "fri": {
+      "active": true,
+      "timeframes": [
+        [
+          "09:00",
+          "17:00"
+        ]
+      ]
+    },
+    "sat": {
+      "active": false,
+      "timeframes": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ]
+    },
+    "sun": {
+      "active": false,
+      "timeframes": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ]
+    }
+  },
+  "default": false,
+  "ical_url": "",
+  "public_holidays": {
+    "2021-11-10": {
+      "active": true,
+      "summary": "Feast day 1"
+    },
+    "2021-11-11": {
+      "active": true,
+      "summary": "Feast day 2"
+    }
+  },
+  "last_log": null,
+  "last_sync": "2021-11-10T13:14:20.835Z",
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2021-11-10T13:14:20.835Z",
+  "updated_at": "2021-11-10T13:14:20.835Z"
+}

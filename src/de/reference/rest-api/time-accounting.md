@@ -13,42 +13,8 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-res.json
 
-[
-   {
-      "id": 6,
-      "ticket_id": 50,
-      "ticket_article_id": 87,
-      "time_unit": "15.0",
-      "type_id": 3,
-      "created_by_id": 3,
-      "created_at": "2023-08-16T08:11:49.315Z",
-      "updated_at": "2023-08-16T08:11:49.315Z"
-   },
-   {
-      "id": 7,
-      "ticket_id": 50,
-      "ticket_article_id": 88,
-      "time_unit": "30.0",
-      "type_id": 2,
-      "created_by_id": 3,
-      "created_at": "2023-08-16T08:12:02.249Z",
-      "updated_at": "2023-08-16T08:12:02.249Z"
-   },
-   {
-      "id": 8,
-      "ticket_id": 50,
-      "ticket_article_id": 89,
-      "time_unit": "35.0",
-      "type_id": 4,
-      "created_by_id": 3,
-      "created_at": "2023-08-16T08:12:29.910Z",
-      "updated_at": "2023-08-16T08:12:29.910Z"
-   }
-]
-```
 :::
 
 ## Show
@@ -60,20 +26,8 @@ id}/time_accountings/{timeaccounting id}`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 OK
+<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-timeaccounting-id-res.json
 
-{
-   "id": 7,
-   "ticket_id": 50,
-   "ticket_article_id": 88,
-   "time_unit": "30.0",
-   "type_id": 2,
-   "created_by_id": 3,
-   "created_at": "2023-08-16T08:12:02.249Z",
-   "updated_at": "2023-08-16T08:12:02.249Z"
-}
-```
 :::
 
 ## Create
@@ -88,29 +42,12 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 === Request
 
-```json
-{
-   "time_unit": "60.0",
-   "type_id": 4
-}
-```
+<<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-res.json
 
-{
-   "id": 9,
-   "ticket_id": 50,
-   "ticket_article_id": null,
-   "time_unit": "60.0",
-   "type_id": 4,
-   "created_by_id": 3,
-   "created_at": "2023-08-16T08:30:36.138Z",
-   "updated_at": "2023-08-16T08:30:36.138Z"
-}
-```
 :::
 ::::
 
@@ -127,30 +64,11 @@ id}/time_accountings/{timeaccounting id}`
 
 === Request
 
-```json
-{
-   "id": 7,
-   "time_unit": "15.0",
-   "type_id": 4
-}
-```
+<<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 OK
-
-{
-   "ticket_id": 50,
-   "time_unit": "15.0",
-   "type_id": 4,
-   "id": 7,
-   "ticket_article_id": 88,
-   "created_by_id": 3,
-   "created_at": "2023-08-16T08:12:02.249Z",
-   "updated_at": "2023-08-16T08:24:00.788Z"
-}
-```
+<<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-res.json
 
 :::
 ::::
@@ -166,7 +84,6 @@ id}/time_accountings/{timeaccounting id}`
 
 Response:
 
-```json
-# HTTP-Code 200 OK
-```
+<<< @/fixtures/rest-api/tickets/time_accountings/delete-ticket-id-timaccounting-id-res.json
+
 :::

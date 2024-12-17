@@ -1,0 +1,62 @@
+// HTTP-Code 200 OK
+
+{
+  "name": "sample_boolean",
+  "display": "Sample Boolean",
+  "data_type": "boolean",
+  "position": 1200,
+  "data_option_new": {
+    "options": {
+      "false": "no",
+      "true": "yes"
+    },
+    "default": false,
+    "null": true,
+    "relation": ""
+  },
+  "data_option": {
+    "options": {
+      "false": "very incorrect indeed",
+      "true": "very correct indeed"
+    },
+    "default": null,
+    "null": true,
+    "relation": ""
+  },
+  "object_lookup_id": 2,
+  "to_config": true,
+  "editable": true,
+  "id": 50,
+  "updated_by_id": 3,
+  "active": true,
+  "screens": {
+    "create_middle": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      }
+    },
+    "edit": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": true
+      }
+    }
+  },
+  "to_create": false,
+  "to_migrate": false,
+  "to_delete": false,
+  "created_by_id": 3,
+  "created_at": "2021-11-12T18:18:23.208Z",
+  "updated_at": "2021-11-12T19:30:20.883Z"
+}

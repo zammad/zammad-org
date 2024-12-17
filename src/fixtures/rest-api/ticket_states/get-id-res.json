@@ -1,0 +1,17 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 4,
+  "state_type_id": 5,
+  "name": "closed",
+  "next_state_id": null,
+  "ignore_escalation": true,
+  "default_create": false,
+  "default_follow_up": false,
+  "note": null,
+  "active": true,
+  "updated_by_id": 1,
+  "created_by_id": 1,
+  "created_at": "2021-11-03T11:51:13.535Z",
+  "updated_at": "2021-11-03T11:51:13.535Z"
+}

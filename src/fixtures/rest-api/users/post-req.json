@@ -1,0 +1,11 @@
+{
+  "firstname": "Jane",
+  "lastname": "Doe",
+  "email": "jdoe@example.com",
+  "login": "jdoe",
+  "organization": "Sample Corp.",
+  "roles": [
+    "Agent",
+    "Customer"
+  ]
+}

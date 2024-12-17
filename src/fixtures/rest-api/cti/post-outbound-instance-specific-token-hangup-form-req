@@ -1,0 +1,6 @@
+event:"hangup"
+from:"493023125741"
+to:"492214710334"
+direction:"out"
+callId:"da7cf8b8-2de2-4120-93c8-7db1f55225dc"
+cause:"cancel"

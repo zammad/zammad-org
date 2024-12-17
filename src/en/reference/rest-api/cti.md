@@ -5,7 +5,6 @@ title: CTI
 
 # Generic CTI
 
-
 ## Introduction
 
 This page describes the generic CTI API scopes and functionalities.
@@ -133,41 +132,15 @@ from external side to you are `in`.
 
 Payload:
 
-```json
-{
-   "event": "newCall",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "out",
-   "callId": "f4ebd2be-7b9a-4d58-94c2-eb06a3c2ce76",
-   "user": "Lauren Brooks"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.json
 
 Response:
 
-```json
-{
-   "action": "dial",
-   "caller_id": "496990009111",
-   "number": "492214710334"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "newCall",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "out",
-      "callId": "f4ebd2be-7b9a-4d58-94c2-eb06a3c2ce76",
-      "user": "Lauren Brooks"
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.sh
 
 === Form-data
 
@@ -176,40 +149,18 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```
-event:"newCall"
-from:"493023125741"
-to:"492214710334"
-direction:"out"
-callId:"f0871278-0600-4f5c-a746-bec3acf04f41"
-user:"Lauren Brooks"
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req
 
 Returns:
 
-```json
-{
-   "action": "dial",
-   "caller_id": "496990009111",
-   "number": "492214710334"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="newCall"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="out"' \
-   --form 'callId="f0871278-0600-4f5c-a746-bec3acf04f41"' \
-   --form 'user="Lauren Brooks"'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req.sh
 
 :::
 ::::
-
 
 ### Inbound
 
@@ -221,70 +172,30 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```json
-{
-   "event": "newCall",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "in",
-   "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-   "user": ["Lauren Brooks", "Ethan Kwan"]
-}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.json
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "newCall",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "in",
-      "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-      "user": ["Lauren Brooks", "Ethan Kwan"]
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.sh
 
 === Form-data
 
 Payload:
 
-```
-event:"newCall"
-from:"493023125741"
-to:"492214710334"
-direction:"in"
-callId:"25641e3f-3317-4c48-80b3-fc573c7ffe2b"
-user[]:"Lauren Brooks"
-user[]:"Ethan Kwan"
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req
 
 Returns:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="newCall"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="in"' \
-   --form 'callId="25641e3f-3317-4c48-80b3-fc573c7ffe2b"' \
-   --form 'user[]="Lauren Brooks"' \
-   --form 'user[]="Ethan Kwan"'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req.sh
+
 :::
 ::::
 
@@ -303,18 +214,11 @@ This has to be supported by your PBX in order to work.
 If an incoming new call matches a to block number, Zammad will return
 the following.
 
-```json
-{
-  "action": "reject",
-  "reason": "busy"
-}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-blocked-res.json
 
 If no to block number matches, Zammad will return the following.
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 :::warning
 Your PBX still needs to end the call (hangup event). Other wise the
@@ -327,20 +231,12 @@ ringing call.
 In case your instance has a matching overwriting caller ID configured,
 Zammad will return the following payload.
 
-```json
-{
-  "action": "dial",
-  "callerId": "493055571642",
-  "number": "491711234567890"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json
 
 If no overwrite match is found or you haven't configured anything,
 Zammad will return the following.
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
 ## Call Answer Event
 
@@ -393,37 +289,15 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 Payload:
 
-```json
-{
-   "event": "answer",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "out",
-   "callId": "9f1840cb-8be9-4d3a-8200-3da2937085f0",
-   "caller": "Lauren Brooks"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.json
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "answer",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "out",
-      "callId": "9f1840cb-8be9-4d3a-8200-3da2937085f0",
-      "caller": "Lauren Brooks"
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.sh
 
 === Form-data
 
@@ -432,34 +306,16 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```
-event:"answer"
-from:"493023125741"
-to:"492214710334"
-direction:"out"
-callId:"371e2cd7-67ff-4fd9-892b-030c8d128fb1"
-caller[]:"Lauren Brooks"
-caller[]:"Emily Tran"
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req
 
 Returns:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="answer"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="out"' \
-   --form 'callId="371e2cd7-67ff-4fd9-892b-030c8d128fb1"' \
-   --form 'caller[]="Lauren Brooks"' \
-   --form 'caller[]="Emily Tran"'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req.sh
+
 :::
 ::::
 
@@ -473,71 +329,30 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```json
-{
-   "event": "answer",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "in",
-   "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-   "answeringNumber": "emily@fastlane.inc",
-   "caller": ["Lauren Brooks", "Emily Tran"]
-}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.json
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "answer",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "in",
-      "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-      "answeringNumber": "emily@fastlane.inc",
-      "caller": ["Lauren Brooks", "Emily Tran"]
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.sh
+
 === Form-data
 
 Payload:
 
-```
-event:"answer"
-from:"493023125741"
-to:"492214710334"
-direction:"in"
-callId:"61868f1e-2171-4313-970b-25982f0c5ce1"
-answeringNumber:"emily@fastlane.inc"
-caller="Emily Tran"
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req
 
 Returns:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="answer"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="in"' \
-   --form 'callId="61868f1e-2171-4313-970b-25982f0c5ce1"' \
-   --form 'answeringNumber="emily@fastlane.inc"' \
-   --form 'caller="Emily Tran"'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req.sh
+
 :::
 ::::
 
@@ -594,37 +409,15 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```json
-{
-   "event": "hangup",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "out",
-   "callId": "f4ebd2be-7b9a-4d58-94c2-eb06a3c2ce76",
-   "cause": "cancel"
-}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.json
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "hangup",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "out",
-      "callId": "f4ebd2be-7b9a-4d58-94c2-eb06a3c2ce76",
-      "cause": "cancel"
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.sh
 
 === Form-data
 
@@ -633,32 +426,16 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```
-event:"hangup"
-from:"493023125741"
-to:"492214710334"
-direction:"out"
-callId:"da7cf8b8-2de2-4120-93c8-7db1f55225dc"
-cause:"cancel"
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req
 
 Returns:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="hangup"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="out"' \
-   --form 'callId="da7cf8b8-2de2-4120-93c8-7db1f55225dc"' \
-   --form 'cause="cancel"'
-```
+<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh
+
 :::
 ::::
 
@@ -672,71 +449,29 @@ $ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token
 
 Payload:
 
-```json
-{
-   "event": "hangup",
-   "from": "493023125741",
-   "to": "492214710334",
-   "direction": "in",
-   "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-   "answeringNumber": "emily@fastlane.inc",
-   "cause": "normalClearing"
-}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.json
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{
-      "event": "hangup",
-      "from": "493023125741",
-      "to": "492214710334",
-      "direction": "in",
-      "callId": "307fa962-de8d-4ffc-817b-7f6993204159",
-      "answeringNumber": "emily@fastlane.inc",
-      "cause": "normalClearing"
-   }'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.sh
 
 === Form-data
 
 Payload:
 
-```
-event:"hangup"
-from:"493023125741"
-to:"492214710334"
-direction:"in"
-callId:"2d77882f-68df-40f0-8c62-b642589c00bc"
-answeringNumber:"emily@fastlane.inc",
-cause:"normalClearing"
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req
 
 Response:
 
-```json
-{}
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 Sample curl command:
 
-```sh
-$ curl --request POST 'https://{FQDN-Zammad}/api/v1/cti/{instance specific token}' \
-   --form 'event="hangup"' \
-   --form 'from="493023125741"' \
-   --form 'to="492214710334"' \
-   --form 'direction="in"' \
-   --form 'callId="2d77882f-68df-40f0-8c62-b642589c00bc"' \
-   --form 'answeringNumber="emily@fastlane.inc"' \
-   --form 'cause="normalClearing"'
-```
+<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh
+
 :::
 ::::

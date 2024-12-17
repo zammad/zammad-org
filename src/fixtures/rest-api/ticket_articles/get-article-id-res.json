@@ -1,0 +1,32 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 9,
+  "ticket_id": 5,
+  "type_id": 1,
+  "sender_id": 2,
+  "from": "David Bell <david@example.com>",
+  "to": "support@fastlane.inc",
+  "cc": null,
+  "subject": null,
+  "reply_to": null,
+  "message_id": null,
+  "message_id_md5": null,
+  "in_reply_to": null,
+  "content_type": "text/html",
+  "references": null,
+  "body": "Hi,<br>\n<br>\n<u>Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita grata recordatione renovata delectant.<br>\n<span class=\"js-signatureMarker\"></span>\n<br>\nDavid Bell",
+  "internal": false,
+  "preferences": {},
+  "updated_by_id": 10,
+  "created_by_id": 10,
+  "origin_by_id": null,
+  "created_at": "2021-08-02T11:57:18.068Z",
+  "updated_at": "2021-08-02T11:57:18.068Z",
+  "attachments": [],
+  "type": "email",
+  "sender": "Customer",
+  "created_by": "david@example.com",
+  "updated_by": "david@example.com",
+  "time_unit": null
+}

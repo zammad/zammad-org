@@ -1,0 +1,53 @@
+// HTTP-Code 201 Created
+
+{
+  "id": 53,
+  "object_lookup_id": 2,
+  "name": "sample_integer",
+  "display": "Sample Integer",
+  "data_type": "integer",
+  "data_option": {
+    "default": 1234,
+    "min": 4,
+    "max": 8,
+    "null": true,
+    "options": {},
+    "relation": ""
+  },
+  "data_option_new": {},
+  "editable": true,
+  "active": true,
+  "screens": {
+    "create_middle": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      }
+    },
+    "edit": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": true
+      }
+    }
+  },
+  "to_create": true,
+  "to_migrate": true,
+  "to_delete": false,
+  "to_config": false,
+  "position": 1550,
+  "created_by_id": 3,
+  "updated_by_id": 3,
+  "created_at": "2021-11-12T18:32:14.213Z",
+  "updated_at": "2021-11-12T18:32:14.213Z"
+}

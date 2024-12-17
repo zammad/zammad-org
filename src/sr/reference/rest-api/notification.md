@@ -25,80 +25,8 @@ need to find out what ID stands for which object type.
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/online_notifications/get-res.json
 
-[
-   {
-      "id": 4,
-      "o_id": 6,
-      "object_lookup_id": 2,
-      "type_lookup_id": 1,
-      "user_id": 3,
-      "seen": false,
-      "updated_by_id": 8,
-      "created_by_id": 8,
-      "created_at": "2021-11-09T13:15:42.628Z",
-      "updated_at": "2021-11-09T13:15:42.637Z",
-      "user": "lauren@fastlane.inc",
-      "object": "Ticket",
-      "type": "create",
-      "created_by": "ethan@fastlane.inc",
-      "updated_by": "ethan@fastlane.inc"
-   },
-   {
-      "id": 3,
-      "o_id": 8,
-      "object_lookup_id": 2,
-      "type_lookup_id": 2,
-      "user_id": 3,
-      "seen": false,
-      "updated_by_id": 4,
-      "created_by_id": 4,
-      "created_at": "2021-11-09T13:10:42.628Z",
-      "updated_at": "2021-11-09T13:15:42.635Z",
-      "user": "lauren@fastlane.inc",
-      "object": "Ticket",
-      "type": "update",
-      "created_by": "hannah@fastlane.inc",
-      "updated_by": "hannah@fastlane.inc"
-   },
-   {
-      "id": 2,
-      "o_id": 3,
-      "object_lookup_id": 2,
-      "type_lookup_id": 1,
-      "user_id": 3,
-      "seen": true,
-      "updated_by_id": 6,
-      "created_by_id": 6,
-      "created_at": "2021-11-09T12:45:42.625Z",
-      "updated_at": "2021-11-09T13:15:42.632Z",
-      "user": "lauren@fastlane.inc",
-      "object": "Ticket",
-      "type": "create",
-      "created_by": "anna@example.com",
-      "updated_by": "anna@example.com"
-   },
-   {
-      "id": 1,
-      "o_id": 2,
-      "object_lookup_id": 2,
-      "type_lookup_id": 1,
-      "user_id": 3,
-      "seen": true,
-      "updated_by_id": 5,
-      "created_by_id": 5,
-      "created_at": "2021-11-09T11:45:42.624Z",
-      "updated_at": "2021-11-09T13:15:42.629Z",
-      "user": "lauren@fastlane.inc",
-      "object": "Ticket",
-      "type": "create",
-      "created_by": "emily@fastlane.inc",
-      "updated_by": "emily@fastlane.inc"
-   }
-]
-```
 :::
 
 ## Show
@@ -109,22 +37,8 @@ Required permission: `any`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/online_notifications/get-id-res.json
 
-{
-   "id": 4,
-   "o_id": 6,
-   "object_lookup_id": 2,
-   "type_lookup_id": 1,
-   "user_id": 3,
-   "seen": false,
-   "updated_by_id": 8,
-   "created_by_id": 8,
-   "created_at": "2021-11-09T13:15:42.628Z",
-   "updated_at": "2021-11-09T13:15:42.637Z"
-}
-```
 :::
 
 ## Освежавање
@@ -139,30 +53,12 @@ Required permission: `any`
 
 === Request
 
-```json
-{
-  "seen": true
-}
-```
+<<< @/fixtures/rest-api/online_notifications/put-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/online_notifications/put-id-res.json
 
-{
-   "id": 4,
-   "seen": true,
-   "updated_by_id": 3,
-   "o_id": 6,
-   "object_lookup_id": 2,
-   "type_lookup_id": 1,
-   "user_id": 3,
-   "created_by_id": 8,
-   "created_at": "2021-11-09T13:15:42.628Z",
-   "updated_at": "2021-11-09T13:25:00.004Z"
-}
-```
 :::
 ::::
 
@@ -174,11 +70,7 @@ Required permission: `any`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
-
-{}
-```
+<<< @/fixtures/rest-api/online_notifications/delete-id-res.json
 
 :::
 
@@ -190,9 +82,6 @@ Required permission: `any`
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
 
-{}
-```
 :::

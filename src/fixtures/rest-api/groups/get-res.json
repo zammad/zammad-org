@@ -1,0 +1,64 @@
+// HTTP-Code 200 OK
+
+[
+  {
+    "id": 1,
+    "signature_id": 1,
+    "email_address_id": null,
+    "name": "Sales",
+    "assignment_timeout": null,
+    "follow_up_possible": "yes",
+    "follow_up_assignment": true,
+    "active": true,
+    "note": "Standard Group/Pool for Tickets.",
+    "updated_by_id": 1,
+    "created_by_id": 1,
+    "created_at": "2021-11-03T11:51:13.449Z",
+    "updated_at": "2021-11-03T11:57:16.357Z",
+    "user_ids": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 2,
+    "signature_id": null,
+    "email_address_id": null,
+    "name": "Support::2nd Level",
+    "assignment_timeout": null,
+    "follow_up_possible": "yes",
+    "follow_up_assignment": true,
+    "active": true,
+    "note": null,
+    "updated_by_id": 1,
+    "created_by_id": 1,
+    "created_at": "2021-11-03T11:57:15.802Z",
+    "updated_at": "2021-11-03T11:57:16.361Z",
+    "user_ids": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 3,
+    "signature_id": null,
+    "email_address_id": null,
+    "name": "IT Internal",
+    "assignment_timeout": null,
+    "follow_up_possible": "yes",
+    "follow_up_assignment": true,
+    "active": true,
+    "note": null,
+    "updated_by_id": 1,
+    "created_by_id": 1,
+    "created_at": "2021-11-03T11:57:15.807Z",
+    "updated_at": "2021-11-03T11:57:16.365Z",
+    "user_ids": [
+      3,
+      4,
+      5
+    ]
+  }
+]

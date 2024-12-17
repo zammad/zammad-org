@@ -1,0 +1,14 @@
+{
+  "name": "new sla",
+  "first_response_time": "120",
+  "response_time": "",
+  "update_time": "120",
+  "solution_time": "120",
+  "condition": {
+    "ticket.state_id": {
+      "operator": "is",
+      "value": "2"
+    }
+  },
+  "calendar_id": "1"
+}

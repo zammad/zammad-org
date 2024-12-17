@@ -1,0 +1,7 @@
+{
+  "name": "4 disaster",
+  "default_create": false,
+  "ui_icon": "important",
+  "ui_color": "high-priority",
+  "note": "Added via API for disasterious situations."
+}

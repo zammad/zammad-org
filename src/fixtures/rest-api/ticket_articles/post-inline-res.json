@@ -1,0 +1,43 @@
+// HTTP Code 201 Created
+
+{
+  "id": 37,
+  "ticket_id": 5,
+  "type_id": 10,
+  "sender_id": 1,
+  "from": "Lauren Brooks",
+  "to": "",
+  "cc": "",
+  "subject": "some subject",
+  "reply_to": null,
+  "message_id": null,
+  "message_id_md5": null,
+  "in_reply_to": null,
+  "content_type": "text/html",
+  "references": null,
+  "body": "Let's see the <b>phoenix</b> <img src=\"/api/v1/ticket_attachment/5/37/19?view=inline\" style=\"max-width:100%;\">",
+  "internal": false,
+  "preferences": {},
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "origin_by_id": null,
+  "created_at": "2021-11-09T12:10:49.375Z",
+  "updated_at": "2021-11-09T12:10:49.375Z",
+  "attachments": [
+    {
+      "id": 19,
+      "filename": "image1.png",
+      "size": "3735",
+      "preferences": {
+        "Content-Type": "image/png",
+        "Mime-Type": "image/png",
+        "Content-ID": "5.e384b84e-bfef-49f7-af22-8546fb99f8dc@fqdn",
+        "Content-Disposition": "inline"
+      }
+    }
+  ],
+  "type": "note",
+  "sender": "Agent",
+  "created_by": "lauren@fastlane.inc",
+  "updated_by": "lauren@fastlane.inc"
+}

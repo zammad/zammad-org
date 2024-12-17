@@ -1,0 +1,8 @@
+{
+  "event": "hangup",
+  "from": "493023125741",
+  "to": "492214710334",
+  "direction": "out",
+  "callId": "f4ebd2be-7b9a-4d58-94c2-eb06a3c2ce76",
+  "cause": "cancel"
+}

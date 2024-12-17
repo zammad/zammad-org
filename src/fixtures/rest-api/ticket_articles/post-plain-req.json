@@ -1,0 +1,10 @@
+{
+  "ticket_id": 5,
+  "subject": "Call note",
+  "body": "Called the customer and discussed their issues.<br/>Turns out these were caused by invalid configurations - solved.",
+  "content_type": "text/html",
+  "type": "phone",
+  "internal": false,
+  "sender": "Agent",
+  "time_unit": "15"
+}

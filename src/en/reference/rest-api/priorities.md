@@ -14,51 +14,8 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_priorities/get-res.json
 
-[
-   {
-      "id": 1,
-      "name": "1 low",
-      "default_create": false,
-      "ui_icon": "low-priority",
-      "ui_color": "low-priority",
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.559Z",
-      "updated_at": "2021-11-03T11:51:13.572Z"
-   },
-   {
-      "id": 2,
-      "name": "2 normal",
-      "default_create": true,
-      "ui_icon": null,
-      "ui_color": null,
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.570Z",
-      "updated_at": "2021-11-03T11:51:13.570Z"
-   },
-   {
-      "id": 3,
-      "name": "3 high",
-      "default_create": false,
-      "ui_icon": "important",
-      "ui_color": "high-priority",
-      "note": null,
-      "active": true,
-      "updated_by_id": 1,
-      "created_by_id": 1,
-      "created_at": "2021-11-03T11:51:13.579Z",
-      "updated_at": "2021-11-03T11:51:13.579Z"
-   }
-]
-```
 :::
 
 ## Show
@@ -70,23 +27,8 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ::: details Show response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_priorities/get-id-res.json
 
-{
-   "id": 3,
-   "name": "3 high",
-   "default_create": false,
-   "ui_icon": "important",
-   "ui_color": "high-priority",
-   "note": null,
-   "active": true,
-   "updated_by_id": 1,
-   "created_by_id": 1,
-   "created_at": "2021-11-03T11:51:13.579Z",
-   "updated_at": "2021-11-03T11:51:13.579Z"
-}
-```
 :::
 
 ## Create
@@ -101,35 +43,12 @@ Required permission: `admin.object`
 
 === Request
 
-```json
-{
-   "name": "4 disaster",
-   "default_create": false,
-   "ui_icon": "important",
-   "ui_color": "high-priority",
-   "note": "Added via API for disasterious situations."
-}
-```
+<<< @/fixtures/rest-api/ticket_priorities/post-req.json
 
 === Response
 
-```json
-# HTTP-Code 201 Created
+<<< @/fixtures/rest-api/ticket_priorities/post-res.json
 
-{
-   "id": 4,
-   "name": "4 disaster",
-   "default_create": false,
-   "ui_icon": "important",
-   "ui_color": "high-priority",
-   "note": "Added via API for disasterious situations.",
-   "active": true,
-   "updated_by_id": 3,
-   "created_by_id": 3,
-   "created_at": "2021-11-08T15:31:57.704Z",
-   "updated_at": "2021-11-08T15:31:57.704Z"
-}
-```
 :::
 ::::
 
@@ -145,33 +64,12 @@ Required permission: `admin.object`
 
 === Request
 
-```json
-{
-   "ui_icon": "",
-   "ui_color": "",
-   "note": "Adjusted via API - not so important"
-}
-```
+<<< @/fixtures/rest-api/ticket_priorities/put-id-req.json
 
 === Response
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_priorities/put-id-res.json
 
-{
-   "id": 3,
-   "ui_icon": "",
-   "ui_color": "",
-   "note": "Adjusted via API - not so important",
-   "updated_by_id": 3,
-   "name": "3 high",
-   "default_create": false,
-   "active": true,
-   "created_by_id": 1,
-   "created_at": "2021-11-03T11:51:13.579Z",
-   "updated_at": "2021-11-08T15:33:12.181Z"
-}
-```
 :::
 ::::
 
@@ -194,14 +92,10 @@ Consider either setting said priority to `active: false` or adjust all
 tickets with the to remove priority to another priority.
 :::
 
-
 ::: details Show response
 
 Response:
 
-```json
-# HTTP-Code 200 Ok
+<<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json
 
-{}
-```
 :::

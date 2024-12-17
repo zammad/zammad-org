@@ -1,0 +1,16 @@
+{
+  "active": true,
+  "default_at_signup": false,
+  "group_ids": {
+    "1": "full",
+    "2": "full",
+    "3": "full"
+  },
+  "id": "c-12",
+  "name": "VIP service",
+  "note": "Handling of VIP customers!",
+  "permission_ids": [
+    "57",
+    "58"
+  ]
+}

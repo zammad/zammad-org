@@ -1,0 +1,102 @@
+// HTTP-Code 201 Created
+
+{
+  "id": 56,
+  "object_lookup_id": 2,
+  "name": "sample_treeselect",
+  "display": "Sample Tree Select",
+  "data_type": "tree_select",
+  "data_option": {
+    "options": [
+      {
+        "name": "row one - maximum child depth",
+        "value": "row one - maximum child depth",
+        "children": [
+          {
+            "name": "row one child level one",
+            "value": "row one - maximum child depth::row one child level one",
+            "children": [
+              {
+                "name": "row one child level two",
+                "value": "row one - maximum child depth::row one child level one::row one child level two",
+                "children": [
+                  {
+                    "name": "row one child level three",
+                    "value": "row one - maximum child depth::row one child level one::row one child level two::row one child level three",
+                    "children": [
+                      {
+                        "name": "row one child level four",
+                        "value": "row one - maximum child depth::row one child level one::row one child level two::row one child level three::row one child level four",
+                        "children": [
+                          {
+                            "name": "row one child level fize",
+                            "value": "row one - maximum child depth::row one child level one::row one child level two::row one child level three::row one child level four::row one child level fize"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "row two - no childs",
+        "value": "row two - no childs"
+      },
+      {
+        "name": "row three - one child",
+        "value": "row three - one child",
+        "children": [
+          {
+            "name": "row three - first and only child",
+            "value": "row three - one child::row three - first and only child"
+          }
+        ]
+      }
+    ],
+    "default": "",
+    "null": true,
+    "relation": "",
+    "nulloption": true,
+    "maxlength": 255
+  },
+  "data_option_new": {},
+  "editable": true,
+  "active": true,
+  "screens": {
+    "create_middle": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": false,
+        "item_class": "column"
+      }
+    },
+    "edit": {
+      "ticket.customer": {
+        "shown": true,
+        "required": false
+      },
+      "ticket.agent": {
+        "shown": true,
+        "required": true
+      }
+    }
+  },
+  "to_create": true,
+  "to_migrate": true,
+  "to_delete": false,
+  "to_config": false,
+  "position": 1550,
+  "created_by_id": 3,
+  "updated_by_id": 3,
+  "created_at": "2021-11-12T18:48:15.485Z",
+  "updated_at": "2021-11-12T18:48:15.485Z"
+}
