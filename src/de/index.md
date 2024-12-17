@@ -1,9 +1,9 @@
 ---
 features:
   - 
-    details: 'Entdecken Sie die neuesten Verbesserungen, Fehlerbehebungen und neuen Funktionen, damit Ihr Ticket-System optimal läuft.'
-    link: https://zammad.com/de/releases/
-    title: Release-Notes
+    details: "Discover how Zammad's professional services can help you succeed."
+    link: https://zammad.com/en/services/professional-services
+    title: 'Professional Services'
   - 
     details: 'Zammad hat eine Menge cooler Funktionen! Schauen Sie sie hier an!'
     link: https://zammad.com/de/product/features

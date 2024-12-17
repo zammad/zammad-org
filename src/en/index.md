@@ -21,9 +21,9 @@ hero:
       link: /en/contribute/contribute
 
 features:
-  - title: Release Notes
-    details: Discover the latest enhancements, fixes and new features to keep your ticketing system running at its best.
-    link: https://zammad.com/en/releases/
+  - title: Professional Services
+    details: Discover how Zammad's professional services can help you succeed.
+    link: https://zammad.com/en/services/professional-services
   - title: Features Overview
     details: Zammad comes with a lot of cool features! Check them out here!
     link: https://zammad.com/en/product/features

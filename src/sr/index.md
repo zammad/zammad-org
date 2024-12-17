@@ -1,9 +1,9 @@
 ---
 features:
   - 
-    details: 'Откријте најновија побољшања, поправке и нове функције да бисте извукли максимум из вашег система тикета.'
-    link: https://zammad.com/en/releases/
-    title: 'Белешке о издањима'
+    details: "Discover how Zammad's professional services can help you succeed."
+    link: https://zammad.com/en/services/professional-services
+    title: 'Professional Services'
   - 
     details: 'Zammad има пуно кул функција! Сазнајте више овде!'
     link: https://zammad.com/en/product/features

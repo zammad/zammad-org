@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-13 08:39+0100\n"
+"POT-Creation-Date: 2024-12-17 09:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3092,21 +3092,19 @@ msgstr ""
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/index.md:1
 #, no-wrap
-msgid ""
-"Discover the latest enhancements, fixes and new features to keep your "
-"ticketing system running at its best."
+msgid "Discover how Zammad's professional services can help you succeed."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/index.md:1
 #, no-wrap
-msgid "https://zammad.com/en/releases/"
+msgid "https://zammad.com/en/services/professional-services"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/index.md:1
 #, no-wrap
-msgid "Release Notes"
+msgid "Professional Services"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details
