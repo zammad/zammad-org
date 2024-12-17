@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-17 11:34+0000\n"
+"POT-Creation-Date: 2024-12-17 14:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,18 +204,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -7537,6 +7525,1172 @@ msgstr ""
 msgid "Glossary"
 msgstr ""
 
+#. type: Plain text
+#: src/en/reference/glossary.md:9
+#, markdown-text
+msgid ""
+"Ever wondered what we mean by a specific term? We've been collecting the "
+"most relevant terms below for your insight."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/glossary.md:10
+#, no-wrap
+msgid ""
+"Due to translation alphabetical sorting may be off in non english versions\n"
+"of this page.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:16
+#, markdown-text
+msgid "Quickly jump to..."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:19
+#, markdown-text
+msgid ""
+"[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) "
+"[J](#j) [K](#k) [L](#l) [M](#m)  [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) "
+"[S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [X](#x) [Y](#y) [Z](#z)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:22
+#, markdown-text, no-wrap
+msgid "A"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:31
+#, markdown-text, no-wrap
+msgid ""
+"Admin\n"
+": An admin(istrator) is a user in Zammad who has special rights.\n"
+"  Admins can configure user accesses, time recording settings, templates,\n"
+"  and text modules and, on a higher level, integrations, reporting, etc.\n"
+"  So if you're looking to make a change within your Zammad and you find "
+"that\n"
+"  it doesn't work, find an admin in your organization and ask them - "
+"chances\n"
+"  are, they can help.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:37
+#, markdown-text, no-wrap
+msgid ""
+"Agent\n"
+": An agent is what we call a user in Zammad who processes "
+"tickets/inquiries.\n"
+"  There are usually several or many agents who use Zammad regularly and\n"
+"  sometimes even consider it their main tool. Some of them are admins,\n"
+"  meaning that they can change settings, user rights, and so on (see "
+"above).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:44
+#, markdown-text, no-wrap
+msgid ""
+"API\n"
+": An API (Application Programming Interface) is a connection that allows "
+"you\n"
+"  to create or modify business objects. Zammad has a REST\n"
+"  ([Representational State "
+"Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer))\n"
+"  API that allows our users, among other things, to connect third-party "
+"systems\n"
+"  to their instance (such as social media or messengers).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:47
+#, markdown-text, no-wrap
+msgid ""
+"  You can learn more on our\n"
+"  [API landing page](https://zammad.com/en/product/features/rest-api).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:53
+#, markdown-text, no-wrap
+msgid ""
+"Automation\n"
+": There are many processes that can be automated with Zammad.\n"
+"  This means that certain steps or actions take place automatically,\n"
+"  hence no further action is required from the agents.\n"
+"  One example would be the weekly deletion of tickets at a pre-defined "
+"time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:58
+#, markdown-text, no-wrap
+msgid ""
+"Article\n"
+": Each correspondence within a ticket is called an article. Ticket "
+"articles\n"
+"  can be internal (so only agents can see them) or public\n"
+"  (e.g. emails to your customers, which they receive, too).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:63
+#, markdown-text, no-wrap
+msgid ""
+"Autosave\n"
+": Autosave might be one of the coolest traits of Zammad:\n"
+"  It saves all your work as you go along, so if you ever log out "
+"unexpectedly\n"
+"  or your browser crashes (we've all been there…) none of your work gets "
+"lost!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:66
+#, markdown-text, no-wrap
+msgid ""
+"  You can learn more on our\n"
+"  [Autosave landing "
+"page](https://zammad.com/en/product/features/autosave).\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:67
+#, markdown-text, no-wrap
+msgid "B"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:73
+#, markdown-text, no-wrap
+msgid ""
+"Branding\n"
+": Every company has a different identity, and Zammad accommodates this in\n"
+"  various ways, e.g. by letting you design your signatures freely and add\n"
+"  your company logo to the platform.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:74
+#, markdown-text, no-wrap
+msgid "C"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:84
+#, markdown-text, no-wrap
+msgid ""
+"Custom Development (CD)\n"
+": We are constantly working on improving Zammad, and we keep adding new\n"
+"  features with every single release. However, sometimes our customers "
+"might\n"
+"  require a very specific new feature, addition, or adjustment that is "
+"either\n"
+"  very urgent or very particular to their individual use case.\n"
+"  This is when a custom development can take place: We offer the customer "
+"to\n"
+"  develop the desired feature at a price that we agree upon previously\n"
+"  (which is based on the expected hours needed for completion).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:88
+#, markdown-text, no-wrap
+msgid ""
+"Changelog\n"
+": With every new release comes a new changelog. It is basically a list of "
+"all\n"
+"  the things that have changed, from new enhancements to bug fixes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:90
+#, markdown-text, no-wrap
+msgid ""
+"  You can find them all on our "
+"[GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md)!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:100
+#, markdown-text, no-wrap
+msgid ""
+"Customer\n"
+": A customer is a person that you communicate with from within Zammad.\n"
+"  Every customer receives a profile page, which we call the\n"
+"  Customer Information Page,\n"
+"  and it shows all the tickets of this particular customer.\n"
+"  Various customers can be assigned to the same organization.\n"
+"  Each customer can access their individual\n"
+"  Customer Interface, where they see all their tickets with the current\n"
+"  status and live updates.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:104
+#, markdown-text, no-wrap
+msgid ""
+"Content Sidebar\n"
+": Right sidebar in the ticket view which includes the sidebar tabs and the\n"
+"  active sidebar (if opened).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:111
+#, markdown-text, no-wrap
+msgid ""
+"Core Workflows\n"
+": This feature allows every organization to configure their individual\n"
+"  dynamic fields and ticket masks based on their specific workflows.\n"
+"  This way, certain Groups will only (or always) see certain fields.\n"
+"  You can even set up dependencies, as in, if one field is filled in,\n"
+"  another one opens up or becomes mandatory.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:117
+#, markdown-text, no-wrap
+msgid ""
+"CTI\n"
+": CTI stands for Computer Telephony Integration and allows you to collect\n"
+"  detailed information on all your incoming and outgoing calls.\n"
+"  This includes, for example, a call log, an overview of which agent is\n"
+"  currently on a call, a caller ID search, and even a Do-Not-Disturb-Mode.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:124
+#, markdown-text, no-wrap
+msgid ""
+"Checkmk\n"
+": Checkmk is a powerful IT monitoring tool that can send real-time status\n"
+"  alerts to Zammad via email or REST API. Set these alerts up in Checkmk,\n"
+"  and Zammad will automatically create, update, and close tickets based on\n"
+"  the health of your system.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:131
+#, markdown-text, no-wrap
+msgid ""
+"Clearbit\n"
+": Clearbit is a marketing data engine designed to collect information on "
+"your\n"
+"  contacts. Thus, new queries from unknown users in Zammad can be "
+"automatically\n"
+"  enriched with information such as company, number of employees,\n"
+"  annual turnover, industry, and much more.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:138
+#, markdown-text, no-wrap
+msgid ""
+"Conflict Warning\n"
+": When two agents edit the same ticket at the same time, a lot can go wrong "
+"-\n"
+"  from duplicate replies to overwritten messages. Zammad helps you to "
+"avoid\n"
+"  this with its integrated conflict warning. So if you see another agents\n"
+"  avatar and a little pen at the bottom of your ticket, it means they are\n"
+"  currently editing it.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:139
+#, markdown-text, no-wrap
+msgid "D"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:148
+#, markdown-text, no-wrap
+msgid ""
+"Dashboard\n"
+": The dashboard is every agent's individual Welcome Page in Zammad and "
+"gives\n"
+"  you feedback on your situation by collecting information and statistics\n"
+"  about your work.\n"
+"  Here you can find all sorts of overviews, such as the open tickets,\n"
+"  the average waiting time, or the reopening rate. You can also see what "
+"your\n"
+"  colleagues are doing by checking the Activity Stream.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:153
+#, markdown-text, no-wrap
+msgid ""
+"Dialog\n"
+": A dialog is a element which pops up in the middle of the screen because of "
+"its\n"
+"  importance. An example could be the dialog which asks you to save or "
+"discard\n"
+"  your unsaved changes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:159
+#, markdown-text, no-wrap
+msgid ""
+"Documentation\n"
+": If this Glossary isn't enough already (just kidding, it won't be),\n"
+"  our Documentation is the place to head to for all information on Zammad,\n"
+"  especially when it comes to the more technical aspects,\n"
+"  such as settings or installations.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:160
+#, markdown-text, no-wrap
+msgid "E"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:168
+#, markdown-text, no-wrap
+msgid ""
+"Escalation\n"
+": An escalation is what happens after the deadline for a ticket has passed "
+"and,\n"
+"  for example, no update to the customer has been created. The ticket is "
+"marked\n"
+"  in red in your taskbar and the overviews and everyone else who is involved "
+"in\n"
+"  its process gets very sad. So don't let tickets escalate! Also, in order "
+"to\n"
+"  prevent escalations, you can use our SLAs.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:175
+#, markdown-text, no-wrap
+msgid ""
+"External Authentication\n"
+": External authentication is an easy, one-click option for your users to "
+"log\n"
+"  into Zammad. It has various benefits: not only is it faster but it also\n"
+"  means that your users will have to remember fewer passwords.\n"
+"  Zammad currently supports more than ten login providers, such as "
+"Facebook,\n"
+"  GitHub, GitLab, Google, or Microsoft / Office365.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:181
+#, markdown-text, no-wrap
+msgid ""
+"Exchange Integration\n"
+": The Exchange integration allows users to sync their contacts from their\n"
+"  Exchange address book with Zammad. This way, every time a contact is "
+"updated\n"
+"  in Exchange, the iteration will be reflected in Zammad, giving you "
+"direct\n"
+"  access to all your Exchange contacts from within your helpdesk.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:185
+#, markdown-text, no-wrap
+msgid ""
+"Elasticsearch\n"
+": Zammad offers an Elasticsearch integration (a free and open search "
+"engine)\n"
+"  that makes the search process within Zammad super fast and powerful.\n"
+msgstr ""
+
+#. type: Fenced div block (info <Badge type="info" text="Cloud Service only" />)
+#: src/en/reference/glossary.md:186
+#, no-wrap
+msgid ""
+"\n"
+"  Via a read-only user in Elasticsearch, you can also integrate your\n"
+"  favorite reporting tool (e.g. like Grafana).\n"
+"\n"
+"  While technically self hosted users can enable such a behavior\n"
+"  as well it is out of our documentation scope.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:195
+#, markdown-text, no-wrap
+msgid "F"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:201
+#, markdown-text, no-wrap
+msgid ""
+"Feature\n"
+": A feature is what we call the different functionalities of Zammad,\n"
+"  such as our integrations, productivity tools, or time-saving aspects.\n"
+"  We keep adding new features with every release.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:208
+#, markdown-text, no-wrap
+msgid ""
+"Feature Request\n"
+": Users can let us know if they are missing a particular feature in "
+"Zammad.\n"
+"  We collect all of their wishes\n"
+"  in our Community in the Feature Request category.\n"
+"  If a request comes in regularly and we feel that it would be a\n"
+"  great addition, we'll put it on our roadmap and start working on it.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:214
+#, markdown-text, no-wrap
+msgid ""
+"Feature Sponsoring\n"
+": If an organization urgently requires one of the features on the list,\n"
+"  they can fast-forward the development and put it on top of the list by\n"
+"  sponsoring it, which means that they cover the costs for the "
+"development.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:215
+#, markdown-text, no-wrap
+msgid "G"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:224
+#, markdown-text, no-wrap
+msgid ""
+"Groups\n"
+": Groups are a synonym for departments or processing groups.\n"
+"  The incoming tickets are assigned to them.\n"
+"  The corresponding group is responsible for the processing.\n"
+"  Within the group, an owner can be defined, who is then responsible for\n"
+"  this ticket. Access rights to tickets are also controlled via the "
+"groups.\n"
+"  The possible permissions are \"full access\", \"read-only\" and \"no "
+"access\".\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:228
+#, markdown-text, no-wrap
+msgid ""
+"  If you have worked with the OTRS system in the past,\n"
+"  you might remember the principle of \"queues\".\n"
+"  The groups in Zammad are the same as the queues in OTRS.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:233
+#, markdown-text, no-wrap
+msgid ""
+"Grafana\n"
+": Grafana is an open-source reporting tool.\n"
+"  Zammad users on the Plus plan can integrate it into their instance and\n"
+"  receive detailed analytics on their performance.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:236
+#, markdown-text, no-wrap
+msgid ""
+"  Hooking up Grafana to Elasticsearch is an possibility you can do on your\n"
+"  on-premise installation as well.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:241
+#, markdown-text, no-wrap
+msgid ""
+"GitHub\n"
+": GitHub is a service for the version management of software development\n"
+"  projects. It uses Git, a software that tracks changes in file sets.\n"
+"  Here at Zammad, we use it to maintain our repository.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:244
+#, markdown-text, no-wrap
+msgid ""
+"  As Zammad in an open-source project, many developers and tech-lovers from "
+"all\n"
+"  over the world contribute to it. GitHub is where we coordinate all of "
+"this.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:246
+#, markdown-text, no-wrap
+msgid "  You can find the repository [here](https://github.com/zammad/zammad).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:250
+#, markdown-text, no-wrap
+msgid ""
+"  Besides our own repo, Zammad also has an integration for GitHub.\n"
+"  It creates a data exchange that shows you all relevant information about "
+"your\n"
+"  issues directly in the helpdesk, such as status or assignees.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:255
+#, markdown-text, no-wrap
+msgid ""
+"GitLab\n"
+": GitLab is similar to GitHub.\n"
+"  Here at Zammad, we use it for our internal development.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:259
+#, markdown-text, no-wrap
+msgid ""
+"  There is also an integration that allows users to connect GitLab to "
+"Zammad\n"
+"  so that all their issues and their corresponding changes are reflected "
+"in\n"
+"  both systems.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:260
+#, markdown-text, no-wrap
+msgid "H"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:263
+#, markdown-text, no-wrap
+msgid "I"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:272
+#, markdown-text, no-wrap
+msgid ""
+"i-doit\n"
+": i-doit is a CMDB (Configuration Management Data Base).\n"
+"  It helps you to keep an eye on every piece of the physical and digital\n"
+"  infrastructure. A corresponding integration makes it possible to connect\n"
+"  it to Zammad, where it adds a new tab to Zammad's ticket sidebar so\n"
+"  you can link to existing i-doit objects for easy reference.\n"
+"  It also allows you to create Zammad tickets in i-doit.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:278
+#, markdown-text, no-wrap
+msgid ""
+"Icinga\n"
+": Icinga is a monitoring system that supervises the availability of an\n"
+"  organization's entire system infrastructure.\n"
+"  It can be integrated into Zammad so that it triggers a ticket in case\n"
+"  of a warning situation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:282
+#, markdown-text, no-wrap
+msgid ""
+"Issue-Tracking System\n"
+": Issue trackers are usually systems that track processes on a technical "
+"level.\n"
+"  Two of the best-known examples are GitHub and GitLab.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:286
+#, markdown-text, no-wrap
+msgid ""
+"  Zammad is also often referred to as an issue-tracking system.\n"
+"  However, as a helpdesk, it focuses on communication at the customer\n"
+"  level rather than the technical level.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:287
+#, markdown-text, no-wrap
+msgid "J"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:290
+#, markdown-text, no-wrap
+msgid "K"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:296
+#, markdown-text, no-wrap
+msgid ""
+"Knowledge Base\n"
+": Think of a very extensive set of FAQs - that's exactly what the\n"
+"  Zammad knowledge base is. It collects all important information:\n"
+"  definitions, processes, how-to's, organigrams, etc.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:301
+#, markdown-text, no-wrap
+msgid ""
+"  Knowledge base articles can be either internal or external, so you can\n"
+"  either show them to the world (good for information on your product or\n"
+"  service, for example) or keep them for your team\n"
+"  (e.g. for internal processes or team info).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:306
+#, markdown-text, no-wrap
+msgid ""
+"Kibana <Badge type=\"info\" text=\"on-premise only\" />\n"
+": Kibana is a browser-based, open-source reporting tool that focuses on "
+"data\n"
+"  evaluation. It was developed by Elastic, which is why it is not a "
+"surprise\n"
+"  that it uses data from Elasticsearch for its analytics.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:309
+#, markdown-text, no-wrap
+msgid ""
+"  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
+"  mapped in the reporting tool.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:310
+#, markdown-text, no-wrap
+msgid "L"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:316
+#, markdown-text, no-wrap
+msgid ""
+"LDAP\n"
+": A Lightweight Directory Access Protocol (LDAP) helps provide information\n"
+"  about your users within Zammad. Authentication of users against the LDAP\n"
+"  and LDAP role mapping to Zammad roles are also possible.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:317
+#, markdown-text, no-wrap
+msgid "M"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:324
+#, markdown-text, no-wrap
+msgid ""
+"Macro\n"
+": A macro is a series of actions. By starting the macro, the actions are "
+"also\n"
+"  triggered (like a domino effect), so users don't have to work through "
+"each\n"
+"  individual step separately.\n"
+"  It saves an enormous amount of time and ensures that no step is "
+"forgotten.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:330
+#, markdown-text, no-wrap
+msgid ""
+"  An example of this is declaring a ticket as \"spam\".\n"
+"  The manual way here would be to assign an owner, set a status, and add "
+"the\n"
+"  tag \"spam\". Using a macro, all this can be done in just one action.\n"
+"  Macros can be used in the ticket zoom or within an overview\n"
+"  (using multiple selection).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:336
+#, markdown-text, no-wrap
+msgid ""
+"Migrator / Migration Wizard\n"
+": If a company wants to switch from another helpdesk software to Zammad,\n"
+"  they often have one concern: What about their existing data?\n"
+"  That's why we have built our migration wizards that help with migrating "
+"all\n"
+"  data at the touch of a button.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:341
+#, markdown-text, no-wrap
+msgid ""
+"Monit\n"
+": Monit is an open-source monitoring tool that relies on a simple setup "
+"and\n"
+"  a strong community. You can integrate it with Zammad - this way,\n"
+"  a ticket is created every time you receive an email in Monit.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:346
+#, markdown-text, no-wrap
+msgid ""
+"Mentions\n"
+": Mentions are a Zammad feature that allows you to tag another agent in a\n"
+"  ticket. Just type ``@@`` and the name. The selected person will be "
+"notified\n"
+"  and will be watching the ticket from now on.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:347
+#, markdown-text, no-wrap
+msgid "N"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:352
+#, markdown-text, no-wrap
+msgid ""
+"Navigation\n"
+": Navigation means the left sidebar in Zammad which contains navigation "
+"tabs,\n"
+"  the search, notifications and many more items, depending on your system.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:356
+#, markdown-text, no-wrap
+msgid ""
+"Navigation Tab\n"
+": One element of the navigation. You can have multiple tabs open and "
+"quickly\n"
+"  switch between them.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:362
+#, markdown-text, no-wrap
+msgid ""
+"Nagios\n"
+": Nagios is another monitoring tool that alerts IT teams when, for "
+"example,\n"
+"  a server is no longer accessible or a hard disk is about to be "
+"exhausted.\n"
+"  Nagios can be integrated with Zammad so that a ticket is created in case "
+"of\n"
+"  an alert.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:363
+#, markdown-text, no-wrap
+msgid "O"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:369
+#, markdown-text, no-wrap
+msgid ""
+"On-Premise\n"
+": This term means that Zammad is not provided as a cloud service of the\n"
+"  company Zammad, but runs on a server which is controlled by a user or\n"
+"  customer of Zammad.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:376
+#, markdown-text, no-wrap
+msgid ""
+"Owner\n"
+": The owner of a ticket is the person responsible for it and ensures that "
+"it\n"
+"  is processed in the best possible way.\n"
+"  Of course, ownership can be transferred to another agent.\n"
+"  In this case, it is recommended to leave a handover note on the ticket "
+"so\n"
+"  that the new owner knows what is expected of them.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:382
+#, markdown-text, no-wrap
+msgid ""
+"Organization\n"
+": An organization identifies a grouping of customers that operate under "
+"the\n"
+"  same roof or within the same customer group.\n"
+"  If a customer whose organization is \"sharing\" logs in to the customer\n"
+"  interface, this user has access to all tickets of his organization.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:383
+#, markdown-text, no-wrap
+msgid "P"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:390
+#, markdown-text, no-wrap
+msgid ""
+"Parent/Child Relationship\n"
+": If one ticket results in other subtasks (or additional correspondences),\n"
+"  you can split it into several tickets. The main one will then be the "
+"parent\n"
+"  ticket and the tickets with related subtopics are children.\n"
+"  By the way: in the same way, you can also merge two tickets into one.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:396
+#, markdown-text, no-wrap
+msgid ""
+"Placetel\n"
+": Placetel is a Cloud Telephone System that allows users to make phone "
+"calls\n"
+"  via VoIP. Use your regular phone number and call someone directly on "
+"their\n"
+"  mobile or landline while still having all communication in one place\n"
+"  (aka Zammad).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:401
+#, markdown-text, no-wrap
+msgid ""
+"  Integrating a Placetel account with Zammad provides users with a call "
+"log,\n"
+"  making the history of their correspondences even more accurate.\n"
+"  Callers are identified directly by their caller ID - a key function that\n"
+"  saves agents a lot of time when assigning callers.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:406
+#, markdown-text, no-wrap
+msgid ""
+"Priority\n"
+": Every ticket gets assigned a priority.\n"
+"  By default, the priority is 2 (normal).\n"
+"  But it can be changed to either 1 (low) or 3 (high).\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:407
+#, markdown-text, no-wrap
+msgid "Q"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:410
+#, markdown-text, no-wrap
+msgid "R"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:415
+#, markdown-text, no-wrap
+msgid ""
+"Role\n"
+": Everyone who logs into Zammad has a predefined role. There are three "
+"types:\n"
+"  admin, agent, and customer.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:418
+#, markdown-text, no-wrap
+msgid ""
+"  Admins have the most rights: they can define roles, permissions,\n"
+"  and settings for the entire team and instance.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:421
+#, markdown-text, no-wrap
+msgid ""
+"  Agents can view and edit tickets, but not change any settings other than\n"
+"  those of their own profiles.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:424
+#, markdown-text, no-wrap
+msgid ""
+"  Customers can view their tickets' processing status in their\n"
+"  individual Customer Interface.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:428
+#, markdown-text, no-wrap
+msgid ""
+"Release\n"
+": Every few months, we bring a new version of Zammad into the world,\n"
+"  which is called a release. It all started with Zammad 1.0.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:434
+#, markdown-text, no-wrap
+msgid ""
+"  Every release adds new features to our software.\n"
+"  There are major and minor releases:\n"
+"  major releases (such as Zammad 1.0, 2.0, etc.) bring major changes.\n"
+"  Minor releases are installed on top of them (such as 1.1, 2.1, etc.)\n"
+"  and bring smaller updates.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:438
+#, markdown-text, no-wrap
+msgid ""
+"  In our [release notes](https://zammad.com/en/releases) you can find what "
+"is\n"
+"  included in new versions and also important Information about what you "
+"should\n"
+"  consider before updating Zammad.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:439
+#, markdown-text, no-wrap
+msgid "S"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:444
+#, markdown-text, no-wrap
+msgid ""
+"Second Level Navigation\n"
+": Refers to an additional menu next to the navigation (e.g. when opening "
+"profile\n"
+"  settings).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:449
+#, markdown-text, no-wrap
+msgid ""
+"SSO\n"
+": Single-sign-on (SSO) allows you to access all your systems and devices "
+"with\n"
+"  just one login. There are various providers that make this process easy "
+"and\n"
+"  secure. Zammad currently supports SSO via SAML and Shibboleth.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:454
+#, markdown-text, no-wrap
+msgid ""
+"S/MIME\n"
+": S/MIME is the most widely-supported method for secure email "
+"communication.\n"
+"  By activating it in Zammad, all messages sent from Zammad will be signed "
+"and\n"
+"  encrypted.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:460
+#, markdown-text, no-wrap
+msgid ""
+"Sipgate\n"
+": Sipgate is a SaaS solution for internet telephony.\n"
+"  The Zammad integration for Sipgate provides users with a detailed call\n"
+"  overview. If you have a customer that wants to get connected to a "
+"certain\n"
+"  agent, the caller log will tell you if this colleague is currently "
+"available.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:464
+#, markdown-text, no-wrap
+msgid ""
+"Side(Panel)\n"
+": This is the panel which is flying in on the right side for actions like "
+"ticket\n"
+"  linking or ticket merging.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:469
+#, markdown-text, no-wrap
+msgid ""
+"Sidebar Tab\n"
+": In the content sidebar, there are different tabs like \"Customer\",\n"
+"  \"Organization\" and \"Ticket\", depending on your system and "
+"ticket. These are\n"
+"  called sidebar tabs.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:471
+#, markdown-text, no-wrap
+msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:478
+#, markdown-text, no-wrap
+msgid ""
+"SLA\n"
+": A Service Level Agreement (SLA) is a contract between an end-user and a\n"
+"  company that defines the minimum expected service requirements including\n"
+"  quality, availability, and punctuality.\n"
+"  They are used to set expectations and hold companies accountable for "
+"keeping\n"
+"  their promises.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:482
+#, markdown-text, no-wrap
+msgid ""
+"  You can easily set up SLAs in Zammad and define parameters such as the "
+"time\n"
+"  for the first response, an update, and a solution. Once the deadline has "
+"been\n"
+"  reached, the ticket will escalate.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:486
+#, markdown-text, no-wrap
+msgid ""
+"State\n"
+": Every ticket has a state. You can change it once you've updated the "
+"ticket.\n"
+"  There are four types of states, and they are all color-coded.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:487
+#, markdown-text, no-wrap
+msgid "T"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:494
+#, markdown-text, no-wrap
+msgid ""
+"Text Module\n"
+": If you find that you send the same answers / text bits over and over "
+"again,\n"
+"  you can save yourself a bunch of work and create a text module.\n"
+"  This way, you just need to type ``::`` shortcut and the pre-defined "
+"paragraph\n"
+"  will automatically appear in your article.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:497
+#, markdown-text, no-wrap
+msgid ""
+"  For example, here at Zammad, we have a text module with the shortcut\n"
+"  ``::ilff``, which turns into ``I look forward to your feedback``.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:502
+#, markdown-text, no-wrap
+msgid ""
+"(Ticket) Template\n"
+": If you create many similar tickets or write many similar texts, you can\n"
+"  create a template for them. This is helpful for introductions to your\n"
+"  product/service or for drawing up an offer. It's a real time-saver!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:510
+#, markdown-text, no-wrap
+msgid ""
+"Tags\n"
+": Tags help you to categorize tickets. You can define them based on your "
+"use\n"
+"  case. For example, if you're a retail business, your tags could be based "
+"on\n"
+"  your product categories to help you organize tickets by the type of "
+"product\n"
+"  they refer to.\n"
+"  But they could also be based on the type of request, e.g.\n"
+"  refund, delivery issue, missing…\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:511
+#, markdown-text, no-wrap
+msgid "U"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:518
+#, markdown-text, no-wrap
+msgid ""
+"User\n"
+": A user is any user of the ticket system. Each user is assigned certain\n"
+"  permissions, which allow them to access certain areas and information.\n"
+"  Users can have various roles, with the standard options being agent, "
+"admin,\n"
+"  and customer.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:519
+#, markdown-text, no-wrap
+msgid "V"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:522
+#, markdown-text, no-wrap
+msgid "W"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:529
+#, markdown-text, no-wrap
+msgid ""
+"Webhooks\n"
+": In a nutshell, webhooks are an easy way for systems to communicate with "
+"each\n"
+"  other and allow you to send real-time data to any other application.\n"
+"  We use them to allow our users to inform a third-party system about new\n"
+"  information in Zammad.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:530
+#, markdown-text, no-wrap
+msgid "X"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:533
+#, markdown-text, no-wrap
+msgid "Y"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/glossary.md:536
+#, markdown-text, no-wrap
+msgid "Z"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:540
+#, markdown-text
+msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/index.md:1
 #, no-wrap
@@ -12044,6 +13198,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
