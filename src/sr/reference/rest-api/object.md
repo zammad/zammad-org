@@ -1,9 +1,9 @@
 ---
 order: 6
-title: Object
+title: Објекат
 ---
 
-# Object
+# Објекат
 
 ::: danger
 Adjusting objects via API can cause serious issues with your instance.

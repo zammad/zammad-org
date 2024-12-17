@@ -3,141 +3,146 @@ order: 3
 title: Aktualisierung
 ---
 
-# Updating Zammad
+# Zammad aktualisieren
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-Before updating Zammad, we strongly recommend to take a look at our [release
-notes](https://zammad.com/en/releases). You can find information about
-features and fixes as well as technical remarks and breaking changes.
+Bevor Sie Zammad aktualisieren, empfehlen wir Ihnen dringend, einen Blick in
+unsere [Release Notes](https://zammad.com/de/releases) zu werfen. Dort
+finden Sie Informationen über Funktionen und Fehlerbehebungen sowie
+Anmerkungen zu Änderungen und Breaking Changes.
 
-Be aware that you should not skip major Zammad versions while updating. That
-means, for example, your upgrade path from version `2.4` to `5.1` (assuming
-this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
-`latest stable (5.1)`
+Beachten Sie, dass Sie bei der Aktualisierung keine Hauptversionen von
+Zammad überspringen sollten. Das bedeutet zum Beispiel, dass Ihr
+Upgrade-Pfad von Version `2.4` auf `5.1` (unter der Annahme, dass dies die
+aktuelle stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` →
+`4.0` → `5.0` → `letzte stabile Version (5.1)`
 
-## Update Package Installation
+## Paketinstallation aktualisieren
 
-### Stop Zammad
+### Zammad stoppen
 ```bash
 systemctl stop zammad
 ```
 
-### Backup Zammad
-Create a backup. You can use the [backup
-script](/en/tutorials/backup-restore) which is shipped with the Zammad
-package.
+### Backup von Zammad
+Erstellen Sie ein Backup. Sie können das [Backup
+Script](/de/tutorials/backup-restore) verwenden, das mit dem Zammad-Paket
+ausgeliefert wird.
 
-### Update Zammad
+### Zammad aktualisieren
 
 :::info
-If you update your complete system and there are updates for Zammad **and** your
-database server, this could lead to errors because your database may not be
-online again when Zammad is updated.
+Wenn Sie Ihr gesamtes System aktualisieren und es gibt Updates für Zammad **und** Ihren
+Datenbankserver, kann dies zu Fehlern führen, da Ihre Datenbank möglicherweise nicht
+wieder online ist, wenn Zammad aktualisiert wird.
 
-In such a case, you might want to exclude Zammad from updating temporarily as
-you can see in the commands below.
+In einem solchen Fall sollten Sie Zammad vorübergehend von der Aktualisierung ausschließen, wie
+in den folgenden Befehlen zu sehen.
 :::
 
 :::tabs
 
 === Ubuntu/Debian
-Update package lists:
+Update Packet-Liste:
 ```bash
 apt update
 ```
-Disable updates for Zammad:
+Update für Zammad deaktivieren:
 ```bash
 apt-mark hold zammad
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```bash
 apt upgrade
 ```
-Re-enable updates for Zammad:
+Re-Aktivierung der Updates für Zammad:
 ```bash
 apt-mark unhold zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```bash
 apt upgrade
 ```
 
 === OpenSUSE/SLES
 
-Update package lists:
+Update Packet-Liste
 ```bash
 zypper refresh
 ```
-Disable updates for Zammad:
+Update für Zammad deaktivieren:
 ```bash
 zypper addlock zammad
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```bash
 zypper update
 ```
-Re-enable updates for Zammad:
+Re-Aktivierung der Updates für Zammad:
 ```bash
 zypper removelock zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```bash
 zypper update
 ```
 === CentOS/RHEL
 
-Update package lists:
+Update Packet-Liste:
 ```bash
 yum check-update
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```bash
 yum upgrade --exclude zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```bash
 yum upgrade
 ```
 :::
 
-### Additional Steps
+### Zusätzliche Schritte
 
-Updating Elasticsearch may be relevant, too. Make sure to have a supported
-version of Elasticsearch installed (see [package
-installation](/en/get-started/installation/package#elasticsearch)  for
-supported versions).
+Auch die Aktualisierung von Elasticsearch kann relevant sein. Stellen Sie
+sicher, dass Sie eine unterstützte Version von Elasticsearch installiert
+haben (siehe
+[Paket-Installation](/de/get-started/installation/package#elasticsearch) für
+unterstützte Versionen).
 
-If you have to update Elasticsearch, please have a look at [their
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
-and follow the instructions.
+Wenn Sie Elasticsearch aktualisieren müssen, werfen Sie bitte einen Blick
+auf [deren Dokumentation]
+(https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
+und folgen Sie den Anweisungen.
 
-In case your are using plugins for Elasticsearch, make sure they are updated
-as well (note: starting with Elasticsearch 8, the ingest-attachment is no
-longer a plugin, it’s now included in Elasticsearch).
+Falls Sie Plugins für Elasticsearch verwenden, stellen Sie sicher, dass
+diese ebenfalls aktualisiert werden (Hinweis: Ab Elasticsearch 8 ist das
+Ingest-Attachment-Plugin nicht mehr notwendig, sondern ist Bestandteil von
+Elasticsearch selbst).
 
-### Start Zammad
+### Zammad starten
 ```bash
 systemctl start zammad
 ```
 
-## Update Docker Installation
+## Docker-Installation aktualisieren
 
 ::: warning
-Docker-Compose stack updates may require extra steps or introduce breaking
-changes. Always check the docker compose release notes for updating
-instructions first.
+Aktualisierungen des Docker-Compose Stacks können zusätzliche Schritte erfordern
+oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die Docker-Compose
+Versionshinweise auf Hinweise für die Aktualisierungen.
 :::
 
-### Updating Portainer Based Installations
+### Portainer-basierte Installation aktualisieren
 
-In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image
-and redeploy** and click on `Update`.
+Klicken Sie in Ihrem Zammad-Stack auf `Pull and redeploy`, aktivieren Sie
+**Re-pull image and redeploy** und klicken Sie auf `Update`.
 
-![Highlighted stack update in
+![Hervorhebung der Stack-Aktualisierung in
 Portainer](/screenshots/installation/portainer-stack-update.png)
 
-### Updating Docker Compose Based Installations
+### Docker Compose-basierten Installation aktualisieren
 
 ```bash
 cd zammad-docker-compose

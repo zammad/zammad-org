@@ -18,15 +18,15 @@ This page describes the generic CTI API scopes and functionalities.
 * The CTI endpoints are relevant for PBX systems only.
 :::
 
-## Features
+## Функције
 Here's a small condensed list of the possibilities this CTI API provides.
 
-### Inbound
+### Долазнo
 
 - Caller log functions for your agents.
 - Blocking of caller IDs during signaling.
 
-### Outbound
+### Одлазнo
 
 - Caller log functions for your agents.
 - Set outbound caller IDs depending on the caller ID target.
@@ -118,7 +118,7 @@ from external side to you are `in`.
 : An optional queue name, this option is relevant for the caller log filter.
   This value is optional.
 
-### Outbound
+### Одлазнo
 
 ::::details Show examples
 
@@ -161,7 +161,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### Долазнo
 
 ::::details Show examples
 
@@ -275,7 +275,7 @@ Available `attributes` and <Badge type="info" text="sample data" />:
 
 There are two options on how to `POST` the relevant data to Zammad.
 
-### Outbound
+### Одлазнo
 
 ::::details Show examples
 
@@ -318,7 +318,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### Долазнo
 
 ::::details Show examples
 
@@ -395,7 +395,7 @@ Sample curl command:
   - `user.if`
   This value is optional.
 
-### Outbound
+### Одлазнo
 
 ::::details Show examples
 
@@ -438,7 +438,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### Долазнo
 
 ::::details Show examples
 

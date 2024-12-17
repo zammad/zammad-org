@@ -1,186 +1,188 @@
 ---
 order: 1
-title: 'Rails Commands'
+title: Rails-Befehle
 ---
 
-# Rails Console
+# Rails-Konsole
 
-Zammad uses Ruby on Rails so you can make use of the [rails
-console](http://guides.rubyonrails.org/command_line.html).
+Zammad verwendet Ruby on Rails, so dass Sie die [Rails
+Konsole](http://guides.rubyonrails.org/command_line.html) nutzen können.
 
 :::warning
-Please double check your commands before running, as some of those
-commands might cause data loss or damaged tickets! If you're unsure,
-**use a test system first**!
+Bitte überprüfen Sie Ihre Befehle vor der Ausführung, da einige dieser
+Befehle zu Datenverlusten oder beschädigten Tickets führen können! Wenn
+Sie sich unsicher sind, **testen Sie es zuerst auf einem Testsystem**!
 :::
 
-## Starting Zammad's Rails Console
+## Zammads Rails-Konsole starten
 
-### Execute a Single Command
+### Ausführen eines einzelnen Befehls
 
 :::info
-Replace `{COMMAND}` with your command you want to run.
+Ersetzen Sie `{COMMAND}` durch den Befehl, den Sie ausführen möchten.
 :::
 
 :::tip
-If you enter a `p` in front of your command (e.g. like
-`rails r 'p Delayed::Job.count'`), you'll actually receive a printed
-output (without you won't!).
+Wenn Sie ein `p` vor Ihrem Befehl voranstellen (z.B. 
+`rails r 'p Delayed::Job.count'`), erhalten Sie eine 
+Ausgabe im Terminal (ohne sehen Sie nichts!).
 :::
 
 :::tabs key:installmethod
 
-=== Docker Installation
+=== Docker-Installation
 
-```bash
+'''Bash
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
-=== Package Installation
+=== Paket-Installation
 
 ```bash
 zammad run rails r '{COMMAND}'
 
 ```
 
-=== Source / Development Installation
+=== Source / Development-Installation
 ```bash
 rails r '{COMMAND}'
 ```
 :::
 
-### Run Interactive Rails Console
+### Interaktive Rails-Konsole ausführen
 
 :::tabs key:installmethod
 
-=== Docker Installation
+=== Docker-Installation
 
 ```bash
 docker compose run --rm zammad-railsserver rails c
 ```
-=== Package Installation
+=== Paket-Installation
 
 ```bash
 zammad run rails c
 
 ```
 
-=== Source / Development Installation
+=== Source-/ Development-Installation
 ```bash
-rails c
+rails c c
 ```
 :::
 
-### Rails Console Safe Mode
+### Safe Mode der Rails-Konsole
 
-Normally, starting rails console requires certain [third-party
-services](/en/get-started/installation/prerequisites#server-software)  to be
-up and running. You may receive errors and console will refuse to start in
-case they are not available.
+Normalerweise müssen zum Starten der Rails-Konsole bestimmte
+[Drittanbieter-Dienste](/de/get-started/installation/prerequisites#server-software)
+vorhanden sein und laufen. Sie erhalten möglicherweise Fehlermeldungen und
+die Konsole startet nicht, wenn sie nicht verfügbar sind.
 
-However, it's possible to start rails console in safe mode by setting a
-special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
-ignored.
+Es ist jedoch möglich, die Rails-Konsole im sicheren Modus zu starten, indem
+man eine spezielle Umgebungsvariable setzt. Wenn `ZAMMAD_SAFE_MODE=1`
+gesetzt ist, wird die Prüfung auf Vorhandensein ignoriert.
 
 ```bash
 ZAMMAD_SAFE_MODE=1 zammad run rails c
 ```
 
-## Ticket Commands
+## Ticket-Befehle
 
-### Get the RAW Email
+### Erhalten Sie die RAW E-Mail
 
-The following command will help you to check on received EML-files Zammad
-fetched. This comes in handy if you delete Mails upon fetching and you need
-to check the EML-file itself.
+Mit dem folgenden Befehl können Sie empfangene EML-Dateien, die Zammad
+abgerufen hat, überprüfen. Dies ist nützlich, wenn Sie E-Mails beim Abholen
+löschen und die EML-Datei selbst überprüfen müssen.
 
-To get the first articles EML-file, you can use the following command.  In
-our example the ticket number in question is `101234`.
+Um die EML-Datei des ersten Artikels zu erhalten, können Sie den folgenden
+Befehl verwenden.  In unserem Beispiel handelt es sich um das Ticket mit der
+Nummer "101234".
 
 ```ruby
 Ticket.find_by(number:'101234').articles.first.as_raw.content
 ```
 
-If needed, you can also get the raw content of later articles (you'll need
-to find the correct article though). Again, we expect `101234` to be our
-ticket number.
+Bei Bedarf können Sie auch den Raw-Inhalt späterer Artikel abrufen (Sie
+müssen allerdings den richtigen Artikel finden). Auch hier ist unsere
+Ticket-Nummer "101234".
 
-In the first step we get all article IDs of the ticket:
+Im ersten Schritt erhalten wir alle Artikel IDs des Tickets:
 
 ```ruby
 Ticket.find_by(number:'101234').article_ids
 ```
-Output:
+Ausgabe:
 ```ruby
 [4, 3, 2]
 ```
-From the list we get, we can then get the articles content:
+Aus der Liste, die wir erhalten, können wir dann den Inhalt des Artikels
+abrufen:
 ```ruby
 Ticket::Article.find(3).as_raw.content
 ```
 
 :::info
-If you just use `Ticket::Article.find(3)` you can see further
-information (like who sent the mail, when we fetched it, ...).
+Wenn Sie nur `Ticket::Article.find(3)` verwenden, können Sie weitere
+Informationen sehen (z.B. wer die Mail geschickt hat, wann sie abgerufen wurde, ...).
 :::
 
-### Update All Tickets of a Specific Customer
+### Aktualisierung aller Tickets eines bestimmten Kunden
 
 :::warning
-Please note that this action can be expensive resource wise, if you
-have many tickets, this might slow down Zammad.
+Bitte beachten Sie, dass diese Aktion ressourcenintensiv sein kann. Wenn Sie
+viele Tickets haben, kann dies Zammad verlangsamen.
 :::
 
 ```ruby
 Ticket.where(customer_id: 4).update_all(customer_id: 1)
 ```
 
-### Get Ticket State Types
+### Ticket-Status-Typen abrufen
 
-This will show all state types needed for creating new ticket states:
+Hier werden alle Statustypen angezeigt, die für die Erstellung eines neuen
+Ticket-Status benötigt werden:
 
 ```ruby
 Ticket::StateType.pluck(:id, :name)
 ```
 
-Above will return both, the type ID and name - e.g.:
+Oben werden sowohl die ID des Typs als auch der Name zurückgegeben - z.B.:
 ```ruby
-`[[1, "new"], [2, "open"], ...`.
+`[[1, "neu"], [2, "offen"], ...`.
 ```
 
 
-## User Commands
+## Benutzer-Befehle
 
-### Find User
+### Benutzer finden
 
-In order to work on user information or to check for specific information,
-you'll need to find it first.
+Um Benutzerinformationen zu bearbeiten oder nach bestimmten Informationen zu
+suchen, müssen Sie den Benutzer zunächst finden.
 
-User ID already known:
+ID des Benutzers ist bereits bekannt:
 ```ruby
 User.find(4)
 ```
-Searching for the user by his email address:
+Suche nach dem Benutzer über seine E-Mail-Adresse:
 ```ruby
 User.find_by(email: 'your@email')
 ```
-Searching for the user by his login:
+Suche nach dem Benutzer anhand seines Logins:
 ```ruby
 User.find_by(login: 'john.doe')
 ```
 
-### Unlock a Locked User Account
+### Gesperrte Benutzerkonten entsperren
 
 :::tip
-Unlocking a locked user account is also supported by Zammad's web UI!
+Das Entsperren eines gesperrten Benutzerkontos wird auch von Zammads UI unterstützt!
 :::
 
-It sometimes happens that a user locks himself out by wildly trying the
-wrong password multiple times. Depending on your maximum failing login
-count (<span class="title-ref">default: 10 times</span>), Zammad might
-lock the account.
+Es kann vorkommen, dass ein Benutzer sich selbst aussperrt, indem er mehrmals das
+falsche Passwort versucht. Abhängig von der festgelegten maximalen Anzahl an fehlgeschlagenen
+Anmeldeversuchen (Standard: 10x), kann Zammad das Konto sperren.
 
-The user can't login any more (forever) if he doesn't change the password or
-you reset the counter.
+Der Benutzer kann sich nicht mehr anmelden, wenn er das Passwort nicht
+ändert oder Sie den Zähler zurücksetzen.
 
 ```ruby
 u=User.find(**USERID**)
@@ -192,21 +194,21 @@ u.login_failed=0
 u.save!
 ```
 
-You can also double check if the account is locked by running the following
-command (result needs to be 1 above your limit, so 11 for the default of 10
-failing logins):
+Sie können auch überprüfen, ob das Konto gesperrt ist, indem Sie den
+folgenden Befehl ausführen (das Ergebnis muss um 1 höher sein als Ihr Limit,
+also 11 bei der Standardeinstellung von 10 fehlgeschlagenen Anmeldungen):
 
 ```ruby
 User.find(**USERID**).login_failed
 ```
 
-### Change / Update Email Address of User
+### E-Mail Adresse des Benutzers ändern / aktualisieren
 
-If needed, you can simply change the email address of the user.
+Bei Bedarf können Sie die E-Mail-Adresse des Benutzers ändern.
 
 :::info
-Please note that the login attribute is not affected by this and
-Zammad thus might show different information within the UI.
+Bitte beachten Sie, dass das Attribut `login` hiervon nicht betroffen ist und
+Zammad daher möglicherweise andere Informationen in der Benutzeroberfläche anzeigt.
 :::
 
 ```ruby
@@ -219,12 +221,12 @@ u.email = 'user@exmaple.com'
 u.save!
 ```
 
-You need to find the user ID of the user first for this.
+Dazu müssen Sie zunächst die ID des Benutzers ermitteln.
 
-### Change / Update Login Name of User
+### Login-Name des Benutzers ändern / aktualisieren
 
-Change the user name of the user (e.g. if you want to login with a shorter
-username instead of a mail address)
+Ändern Sie den Benutzernamen des Benutzers (z.B. wenn Sie sich mit einem
+kürzeren Benutzernamen anstelle einer Mailadresse anmelden möchten)
 
 ```ruby
 u = User.find(**USERID**)
@@ -236,12 +238,12 @@ u.login = 'user@exmaple.com'
 u.save!
 ```
 
-You need to find the user ID of the user first for this.
+Dazu müssen Sie zunächst die ID des Benutzers ermitteln.
 
-### Set Admin Rights for User
+### Administratorrechte für Benutzer festlegen
 
-Don't have access to Zammad anymore? Grant yourself or another user
-administrative rights.
+Sie haben keinen Zugriff mehr auf Zammad? Gewähren Sie sich selbst oder
+einem anderen Benutzer administrative Rechte.
 
 ```ruby
 u = User.find_by(email: 'you@example.com')
@@ -253,41 +255,43 @@ u.roles = Role.where(name: ['Agent', 'Admin'])
 u.save!
 ```
 
-### Set Password for User
+### Passwort für Benutzer festlegen
 
-You or the user did forget his password? No problem! Simply reset it by hand
-if needed.
+Sie oder der Benutzer haben Ihr Passwort vergessen? Kein Problem! Setzen Sie
+es bei Bedarf einfach von Hand zurück.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
 ```
 
-### Remove Password for User
+### Passwort für Benutzer entfernen
 
-If you added a second authentication method (e.g. LDAP) after launch, there
-still may be a password in Zammad's own user management. In cases like that
-users will be able to login with their (local) Zammad password in addition
-to the credentials stored on the external authentication provider. Simply
-remove the password stored by Zammad.
+Wenn Sie nach dem Start eine zweite Authentifizierungsmethode (z.B. LDAP)
+hinzugefügt haben, kann in der Benutzerverwaltung von Zammad immer noch ein
+Passwort vorhanden sein. In solchen Fällen können sich Benutzer mit ihrem
+(lokalen) Zammad-Passwort zusätzlich zu den Zugangsdaten anmelden, die beim
+externen Authentifizierungsanbieter gespeichert sind. Entfernen Sie einfach
+das von Zammad gespeicherte Passwort.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: nil)
 ```
 
-## Group Commands
+## Gruppeen Befehle
 
-### Find a Group
+### Eine Gruppe finden
 
 ```ruby
 Group.find_by(name: 'Users').follow_up_possible
 ```
 
-## Chat Commands
+## Chat-Befehle
 
-### Remove IP Address Logs
+### Protokolle der IP-Adressen entfernen
 
-Use the following command to remove all IP address records from closed chats
-that haven't been updated in the last seven days:
+Verwenden Sie den folgenden Befehl, um alle IP-Adresseinträge aus beendeten
+Chats zu entfernen, die in den letzten sieben Tagen nicht aktualisiert
+wurden:
 
 ```ruby
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
@@ -304,132 +308,136 @@ session.save!(touch: false)
 end
 ```
 
-## Working on Zammad Settings
+## Anpassen von Zammad-Einstellungen
 
-In this section, you can find some settings which you can set in the Zammad
-UI as well.
+In diesem Abschnitt finden Sie einige Einstellungen, die Sie auch in der
+Zammad-Benutzeroberfläche vornehmen können.
 
-### Ticket_hook Setting
+### Ticket_hook Einstellung
 
-This will give you the ticket hook that you'll find inside the `[]` in front
-of the ticket number. By default this will be `Ticket#` - you shouldn't
-change this setting in a productive system.
+Damit erhalten Sie den Ticket-Hook, den Sie in dem `[]` vor der
+Ticket-Nummer finden. Standardmäßig ist dies `Ticket#` - in einem
+produktiven System sollten Sie diese Einstellung nicht ändern.
 
 ```ruby
 Setting.get('ticket_hook')
 ```
 
-### FQDN Setting
+### FQDN-Einstellung
 
-Get the current FQDN setting of Zammad and, if needed, adjust it.
+Ermitteln Sie die aktuelle FQDN-Einstellung von Zammad und passen Sie sie
+bei Bedarf an.
 
 :::info
-This setting has no effect on SSL certificates or any web server
-configurations.
+Diese Einstellung hat keine Auswirkungen auf SSL-Zertifikate oder Webserver
+Konfigurationen.
 :::
 
-Get current FQDN:
+Aktuellen FQDN abrufen:
 ```ruby
 Setting.get('fqdn')
 ```
-Set a new FQDN:
+Legen Sie einen neuen FQDN fest:
 ```ruby
 Setting.set('fqdn', 'new.domain.tld')
 ```
 
-### HTTP(s) Setting
+### HTTP(s) Einstellung
 
-This setting indirectly belongs to your FQDN setting and is relevant for
-variable based URLs (e.g. in notifications) Zammad generated.
+Diese Einstellung gehört indirekt zu Ihrer FQDN-Einstellung und ist relevant
+für variablenbasierte URLs (z.B. in Benachrichtigungen), die Zammad
+generiert.
 
 :::warning
-This setting also affects Zammad's CSRF token behavior. If you set
-this to e.g. HTTPs but you're using HTTP, logging in will
-fail!
+Diese Einstellung wirkt sich auch auf das CSRF-Token-Verhalten von Zammad aus. Wenn Sie
+z.B. auf HTTPs setzen, Sie aber HTTP verwenden, wird die Anmeldung
+fehlschlagen!
 
-It has no effect on SSL certificates or any web server configuration.
+Die Einstellung hat keinen Einfluss auf SSL-Zertifikate oder die Konfiguration des Webservers.
 :::
 
-Get the current http type:
+Abrufen des aktuellen http-Typs:
 ```ruby
 Setting.get('http_type')
 ```
-Change the http type to HTTPs:
+Ändern Sie den http-Typ in HTTPs:
 ```ruby
 Setting.set('http_type', 'https')
 ```
 
-### Storage Provider Setting
+### Storage Provider Einstellungen
 
-The storage provider setting is set to `DB` on default installations.
-However, if you receive a lot of attachments or have a fairly busy
-installation, using the database to store attachments is not the best
-approach.
+Die Einstellung des Storage Providers ist bei Standardinstallationen auf
+"DB" eingestellt.  Wenn Sie jedoch viele Anhänge erhalten oder eine stark
+ausgelastete Installation haben, ist die Verwendung der Datenbank zum
+Speichern von Anhängen nicht die empfohlene Lösung.
 
-Get the current attachment storage:
+Abrufen der aktuellen Speichermethode für Anhänge:
 ```ruby
 Setting.get('storage_provider')
 ```
-Change attachment storage to database
+Ändern der Speicherung von Anhängen in der Datenbank
 ```ruby
 Setting.set('storage_provider', 'DB')
 ```
 
-If you have already stored files and want to move them, you can use the
-following example. Please be aware that this operation should only be
-executed in non-productive environments. In case you have to perform it in
-production environments, you should specify a sleep delay - otherwise your
-Zammad can be unresponsive.
+Wenn Sie bereits Dateien gespeichert haben und diese verschieben möchten,
+können Sie das folgende Beispiel verwenden. Bitte beachten Sie, dass dieser
+Vorgang nur in nicht produktiven Umgebungen ausgeführt werden sollte. Falls
+Sie ihn in Produktionsumgebungen durchführen müssen, sollten Sie eine
+Verzögerung für die Ausführung angeben - andernfalls kann Ihr Zammad nicht
+erreichbar sein.
 
-Move files from DB to File with a specified delay after each file in
-seconds:
+Verschieben von Dateien von DB nach Dateisystem mit einer bestimmten
+Verzögerung nach jeder Datei in Sekunden:
 
 ```ruby
 Store::File.move('DB', 'File', delay_in_sec)
 ```
 
-The following settings are available in a default installation:
+Die folgenden Einstellungen sind bei einer Standardinstallation verfügbar:
 
-- `DB` (database)
-- `File` (Filesystem (`/opt/zammad/storage/`))
+- `DB` (Datenbank)
+- `File` (Dateisystem (`/opt/zammad/storage/`))
 
-### Configuring Elasticsearch
+### Elasticsearch konfigurieren
 
-If your Elasticsearch installation changes, you can use the following
-commands to ensure that Zammad still can access Elasticsearch.
+Wenn sich Ihre Elasticsearch-Installation ändert, können Sie die folgenden
+Befehle verwenden, um sicherzustellen, dass Zammad weiterhin auf
+Elasticsearch zugreifen kann.
 
-Change elasticsearch URL:
+Ändern Sie die URL von Elasticsearch:
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
-Change elasticsearch user (e.g. for authentication):
+Ändern Sie den Benutzer von Elasticsearch (z.B. für die Authentifizierung):
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
-Change the elasticsearch password for authentication:
+Ändern Sie das Elasticsearch-Passwort für die Authentifizierung:
 ```ruby
 Setting.set('es_password', 'zammad')
 ```
-Change the index name:
+Ändern Sie den Indexnamen:
 ```ruby
 Setting.set('es_index', Socket.gethostname + '_zammad')
 ```
-Ignore files by file extension from being indexed:
+Ignorieren Sie Dateien für die Indizierung nach Dateityp:
 ```ruby
 Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin .exe .box .mbox])
 ```
-Limit the attachment size:
+Begrenzen Sie die Größe der Anhänge:
 ```ruby
 Setting.set('es_attachment_max_size_in_mb', 50)
 ```
-Turn SSL verification on or off:
+Schalten Sie die SSL-Verifizierung ein oder aus:
 ```ruby
 Setting.set('es_ssl_verify', 'false')
 ```
 
-### Enable Proxy
+### Proxy aktivieren
 
-Set a proxy to use by Zammad:
+Legen Sie einen von Zammad zu verwendenden Proxy fest:
 
 ```ruby
 Setting.set('proxy', 'proxy.example.com:3128')
@@ -441,332 +449,345 @@ Setting.set('proxy_username', 'some user')
 Setting.set('proxy_password', 'some pass')
 ```
 
-## Hidden Settings
+## Versteckte Einstellungen
 
-In this section you can find some settings that you won't find within the
-Zammad UI. Those settings might come in handy as it can change Zammad's
-behavior.
+In diesem Abschnitt finden Sie einige Einstellungen, die Sie nicht in der
+Zammad-Benutzeroberfläche finden. Diese Einstellungen könnten nützlich sein,
+da sie das Verhalten von Zammad verändern können.
 
-### Send All Outgoing E-Mails to a BCC-Mailbox
+### Alle ausgehenden E-Mails an ein BCC-Postfach senden
 
-This option allows you to send all outgoing E-Mails (not notifications)  to
-a specific mailbox. Please note that this shouldn't be a mailbox you're
-importing already! This will apply to all groups and is a global setting.
+Mit dieser Option können Sie alle ausgehenden E-Mails (keine
+Benachrichtigungen) an ein bestimmtes Postfach senden. Bitte beachten Sie,
+dass es sich dabei nicht um ein Postfach handeln sollte, das Sie bereits
+importieren! Dies gilt für alle Gruppen und ist eine globale Einstellung.
 
 ```ruby
 Setting.set('system_bcc', 'alias@domain.tld')
 ```
 
-You can easily check the current BCC-Setting by running the following:
+Sie können die aktuelle BCC-Einstellung überprüfen, indem Sie folgendes
+ausführen:
 
 ```ruby
 Setting.get('system_bcc')
 ```
 
-### Activate Counter on Grouped Overviews
+### Zähler für gruppierte Übersichten aktivieren
 
-This enables a ticket number value in each heading for grouped elements.
+Dies ermöglicht einen Ticket-Zähler in jeder Kopfzeile bei gruppierten
+Elemente.
 
-Enable counter for grouped overviews:
+Aktivieren Sie den Zähler für gruppierte Übersichten:
 ```ruby
 Setting.set('ui_table_group_by_show_count', true)
 ```
-Disable counter for grouped overviews:
+Zähler für gruppierte Übersichten deaktivieren:
 ```ruby
 Setting.set('ui_table_group_by_show_count', false)
 ```
-Get current setting (`nil` is false):
+Aktuelle Einstellung abrufen (`nil` ist false):
 ```ruby
 Setting.get('ui_table_group_by_show_count')
 ```
 
-### Default Ticket Type on Creation
+### Standard-Ticket-Typ bei Erstellung
 
-Zammad allows you to define the default article type upon ticket
-creation. By default this will be a incoming phone call.
+Zammad erlaubt Ihnen, den Standard-Artikeltyp bei der Erstellung eines
+Tickets zu definieren. Standardmäßig ist dies ein eingehender Telefonanruf.
 
-You can choose between
+Sie können wählen zwischen
 
-- `phone-in` (incoming call, **default**),
-- `phone-out` (outgoing call) and
-- `email-out` (Sending an E-Mail out).
+- `phone-in` (eingehender Anruf, **Standard**),
+- `phone-out` (ausgehender Anruf) und
+- `email-out` (ausgehende E-Mail).
 
 ```ruby
 Setting.set('ui_ticket_create_default_type', 'email-out')
 ```
 
-To check what setting is set currently, simply run:
+Um die aktuelle Einstellung abzurufen, führen Sie den folgenden Befehl aus:
 
 ```ruby
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Adding a Warning to the Ticket Creation Process
+### Hinzufügen einer Warnung bei der Ticket-Erstellung
 
-If you want to give your agent a note or warning during ticket **creation**,
-you can do so with the below command.
+Wenn Sie Ihren Agenten während der Erstellung eines Tickets einen Hinweis
+oder eine Warnung anzeigen möchten, können Sie dies mit dem folgenden Befehl
+tun.
 
-You can use three different warnings for:
+Sie können drei verschiedene Warnungen dafür verwenden:
 
-- Incoming Calls `:"phone-in"=>""`
-- Outgoing Calls `:"phone-out"=>""`
-- Outgoing E-Mails `:"email-out"=>""`
+- Eingehende Anrufe `:"phone-in"=>""`
+- Ausgehende Anrufe `:"phone-out"=>""`
+- Ausgehende E-Mails `:"email-out"=>""`
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
-      :"phone-in"=>"You're about to note a incoming phone call.",
-      :"phone-out"=>"You're about to note an outgoing phone call.",
-      :"email-out"=>"You're going to send out an E-Mail."
+      : "phone-in"=>"Sie sind im Begriff, einen eingehenden Anruf zu notieren.",
+      : "phone-out"=>"Sie sind im Begriff, einen ausgehenden Anruf zu notieren.",
+      : "email-out"=>"Sie sind im Begriff, eine E-Mail zu versenden."
    })
 ```
 
 :::info
-You can use those three sub-settings independently, if you e.g. don't
-need a warning on incoming calls, simply leave out `:"phone-in"=>""`
-out of the setting. The setting itself is done within an array ( `{}` ).
+Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine
+Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: "phone-in"=>""`
+aus dem Befehl. Die Einstellung selbst wird in einem Array (`{}`) vorgenommen.
 :::
 
-To check what's currently set, you can use:
+Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
 
 ```ruby
 Setting.get('ui_ticket_create_notes')
 ```
 
 
-### Adding a Warning to the Article Reply Process
+### Hinzufügen einer Warnung für den Artikel-Antwortprozess
 
-If you want to give your agent a warning during the ticket article
-**reply**, you can do that with the command below.
+Wenn Sie Ihren Agenten während der **Antwort** auf einen Ticket-Artikel eine
+Warnung ausgeben möchten, können Sie dies mit dem unten stehenden Befehl
+tun.
 
-You can provide different warnings for different channels and article
-visibility:
+Sie können unterschiedliche Warnungen für verschiedene Kanäle Sichtbarkeiten
+von Artikeln vorsehen:
 
-- Internal Notes `:"note-internal"=>""`
-- Public Notes `:"note-public"=>""`
-- Internal Calls `:"phone-internal"=>""`
-- Public Calls `:"phone-public"=>""`
-- Internal Emails `:"email-internal"=>""`
-- Public Emails `:"email-public"=>""`
+- Interne Notizen `: "note-internal"=>""`
+- Öffentliche Notizen `:"note-public"=>""`
+- Interne Anrufe `:"phone-internal"=>""`
+- Öffentliche Anrufe `: "phone-public"=>""`
+- Interne E-Mails `: "email-intern"=>""`
+- Öffentliche E-Mails `: "email-public"=>""`
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
-      :"note-internal"=>"You are writing an |internal note|, only people of your organization will see it.",
-      :"note-public"=>"You are writing a |public note|.",
-      :"phone-internal" => "You are writing an |internal phone note|, only people of your organization will see it.",
-      :"phone-public"=>"You are writing a |public phone note|.",
-      :"email-internal" => "You are writing an |internal Email|, only people of your organization will see it.",
-      :"email-public"=>"You are writing a |public Email|."
+      : "note-internal"=>"Sie schreiben eine |interne Notiz|, die nur Personen aus Ihrer Organisation sehen können.",
+      : "note-public"=>"Sie schreiben eine |öffentliche Notiz|.",
+      : "phone-internal" => "Sie schreiben eine |interne Telefonnotiz|, die nur Personen aus Ihrer Organisation sehen können.",
+      : "phone-public"=>"Sie schreiben eine |öffentliche Telefonnotiz|.",
+      : "email-intern" => "Sie schreiben eine |interne E-Mail|, die nur Personen Ihrer Organisation sehen können.",
+      : "email-public"=>"Sie schreiben eine |öffentliche E-Mail|."
    })
 ```
 
 :::info
-You can use example sub-settings above independently, if you e.g.
-don't need a warning on internal calls, simply leave out
-`:"phone-internal"=>""` out of the setting. The setting itself is in a
-form of an array ( `{}` ).
+Sie können die obigen Beispieleinstellungen unabhängig voneinander verwenden, wenn Sie z.B.
+keine Warnung bei internen Anrufen benötigen, entfernen Sie einfach
+`: "phone-internal"=>""` in dem Befehl. Die Einstellung selbst ist in der
+Form eines Arrays ( `{}` ).
 :::
 
-To check what's currently set, you can use:
+Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
 
 ```ruby
 Setting.get('ui_ticket_add_article_hint')
 ```
 
-### Show Email Address of Customer on Customer Selection (Ticket Creation)
+### E-Mail-Adresse des Kunden bei der Kundenauswahl anzeigen (Ticket-Erstellung)
 
-By default, Zammad will not display the email addresses of customers.  The
-below option allows you to change this behavior.
+Standardmäßig zeigt Zammad die E-Mail-Adressen der Kunden nicht an.  Mit der
+folgenden Option können Sie dieses Verhalten ändern.
 
 ```ruby
 Setting.set('ui_user_organization_selector_with_email', true)
 ```
 
-Get the current state of this setting with:
+Abfrage des aktuellen Status dieser Einstellung mit:
 
 ```ruby
 Setting.get('ui_user_organization_selector_with_email')
 ```
 
-### Change Font Settings for Outgoing HTML Emails
+### Schriftarteneinstellungen für ausgehende HTML-E-Mails ändern
 
 :::info
-Some clients (like Outlook) might fallback to other settings while it
-might work for other clients.
+Einige Clients (wie Outlook) greifen möglicherweise auf andere Einstellungen zurück, 
+während es bei anderen funktioniert.
 :::
 
-The below setting allows you to adjust Zammad's email font setting. This
-setting does not require a service restart.
+Mit der folgenden Einstellung können Sie die E-Mail-Schriftart von Zammad
+anpassen. Diese Einstellung erfordert keinen Neustart des Dienstes.
 
 ```ruby
 Setting.set("html_email_css_font", "font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;")
 ```
 
-Get the current state of this setting with:
+Abfrage des aktuellen Status dieser Einstellung mit:
 
 ```ruby
 Setting.get('html_email_css_font')
 ```
 
-### Highlight Customer's Open Ticket Count
+### Anzahl der offenen Tickets des Kunden hervorheben
 
-This option enhances the selected customer's open tickets count. It
-highlights the count in different colors if they hit a threshold.
+Mit dieser Option wird die Anzahl der offenen Tickets des ausgewählten
+Kunden erhöht. Sie hebt die Anzahl in verschiedenen Farben hervor, wenn ein
+Schwellenwert erreicht wird.
 
 ```ruby
 Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 ```
 
-Above settings has specific thresholds as follows. You **cannot** adjust
-these thresholds.
+Für die obigen Einstellungen gelten die folgenden Schwellenwerte. Sie können
+diese Werte **nicht** ändern.
 
-| Situation / View      | no indication | warning (orange) | danger (red) |
+| Situation    | keine Hervorhebung | Warnung (orange) | Gefahr (rot) |
 |-----------------------|---------------|------------------|--------------|
-| **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
-| **New Ticket dialog** | 0             | 1                | \>= 2        |
+| **Ticket-Bearbeitung**       | \< 2          | 2                | \>= 3        |
+| **Ticket Neu-Erstellung** | 0             | 1                | \>= 2        |
 
 
-### Activate Attachment Tab in Sidebar
+### Tab "Anhang" in der Seitenleiste aktivieren
 
-This option activates a new tab in the right sidebar in the ticket view
-which shows all attachments of the currently viewed ticket.
+Diese Option aktiviert einen neuen Tab in der rechten Seitenleiste der
+Ticketansicht, der alle Anhänge des aktuell angezeigten Tickets anzeigt.
 
 ```ruby
 Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')
 ```
 
-### Time Period for Showing Customer Profile on New Calls
+### Zeitspanne für die Anzeige des Kundenprofils bei neuen Anrufen
 
-Zammad shows the customer profile dialog when a call of this customer is
-incoming and there is an existing ticket of this customer in this time
-period. The default time period is 30 days. If there is no ticket in this
-period, the customer dialog is not shown automatically.
+Zammad zeigt den Kundendialog an, wenn ein Anruf dieses Kunden eingeht und
+ein Ticket dieses Kunden in diesem Zeitraum existiert. Der Standardzeitraum
+ist 30 Tage. Liegt kein Ticket in diesem Zeitraum vor, wird der Kundendialog
+nicht automatisch angezeigt.
 
-Set the time period to 90 days:
+Setzen Sie den Zeitraum auf 90 Tage:
 ```ruby
 Setting.set('cti_customer_last_activity', '90')
 ```
 
-### Set Public "Notes" as SLA relevant
+### Öffentliche "Notizen" als SLA-relevant einstellen
 
-Normally, notes aren't SLA relevant. Use the following command to include
-publicly-visible notes when tracking SLA compliance (internal notes *will
-never* affect SLA calculations). Be aware that this setting will disable the
-option to delete public notes.
+Normalerweise sind Notizen nicht SLA-relevant. Verwenden Sie den folgenden
+Befehl, um öffentlich sichtbare Notizen in die Berechnung der SLA-Einhaltung
+einzubeziehen (interne Notizen haben *nie* Auswirkungen auf die
+SLA-Berechnungen). Beachten Sie, dass mit dieser Einstellung die Option zum
+Löschen öffentlicher Notizen deaktiviert wird.
 
 :::info
-By default, customers are not notified when public notes are added to a
-ticket. Set up a trigger if you wish to change this behavior.
+Standardmäßig werden Kunden nicht benachrichtigt, wenn einem Ticket öffentliche Notizen hinzugefügt werden.
+Richten Sie einen Trigger ein, wenn Sie dieses Verhalten ändern möchten.
 :::
 
-Enable SLA to count notes as communication:
+Aktivieren Sie SLA, um Notizen als Kommunikation zu zählen:
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: true)
 ```
-Enable SLA to ignore notes as communication:
+Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
 
-## Other Useful Commands
+## Andere nützliche Befehle
 
-### Fetch Emails
+### E-Mails abrufen
 
-The below command will do a manual fetch of mail channels. This will also
-show errors that might appear within that process.
+Mit dem folgenden Befehl wird ein manueller Abruf der E-Mail-Kanäle
+durchgeführt. Dabei werden auch Fehler angezeigt, die bei diesem Vorgang
+auftreten können.
 
 ```ruby
 Channel.fetch
 ```
 
-### Reprocess Failed Emails
+### Fehlgeschlagene E-Mails erneut verarbeiten
 
-When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a
-malformed message), it will store the email in the database and warn in the
-monitoring section about it.
+Wenn Zammad eine E-Mail abruft, die es nicht analysieren kann (z.B. aufgrund
+eines Parserfehlers oder einer fehlerhaften Nachricht), speichert es die
+E-Mail in der Datenbank und warnt im Überwachungsbereich darüber.
 
-In case of a malformed message (e.g. an invalid email address in one of the
-header fields), you may need to manually edit the email before Zammad can
-process it. To do so, follow the steps below.
+Im Falle einer fehlerhaften Nachricht (z.B. eine ungültige E-Mail-Adresse in
+einem der Header-Felder) müssen Sie die E-Mail möglicherweise manuell
+bearbeiten, bevor Zammad sie verarbeiten kann. Führen Sie dazu die folgenden
+Schritte aus.
 
-#### Export all Failed Emails to a Local Folder
+#### Alle fehlgeschlagenen E-Mails in einen lokalen Ordner exportieren
 ```bash
 rake zammad:email_parser:failed_email:export_all`
 ```
-You can find the location of the exported email in the output of your
-console.  Every time you perform an export of failed (unprocessable) emails,
-it creates one folder containing all failed emails at the time of execution.
+Sie können den Speicherort der exportierten E-Mails in der Ausgabe Ihrer
+Konsole finden.  Jedes Mal, wenn Sie einen Export von fehlgeschlagenen
+(nicht verarbeitbaren) E-Mails durchführen, wird ein Ordner erstellt, der
+alle fehlgeschlagenen E-Mails zum Zeitpunkt der Ausführung enthält.
 
-#### Edit the Email
-The email has been exported in the step above. Now you can have a look at it
-and try to repair it. Make sure to leave the file name untouched, as the
-import will otherwise fail.
+#### Bearbeiten Sie die E-Mail
+Die E-Mail wurde im obigen Schritt exportiert. Nun können Sie sie sich
+ansehen und versuchen, sie zu reparieren. Achten Sie darauf, dass der
+Dateiname nicht verändert wird, da der Import sonst fehlschlägt.
 
-#### Import and Reprocess Locally Modified Email
+#### Importieren und erneutes Verarbeiten lokal geänderter E-Mails
 
-After editing the email, run:
+Nachdem Sie die E-Mail bearbeitet haben, führen Sie sie folgendes aus:
 
 ```ruby
 rake zammad:email_parser:failed_email:import path/to/your/email.eml
 ```
 
-This will apply your changes from the file to the database. You can also
-pass the entire folder as argument, so all `.eml` files in it will we
-imported and reprocessed. If the reprocessing of the email was successful,
-the file(s) will be deleted, and the empty folder removed.
+Damit werden Ihre Änderungen aus der Datei in die Datenbank übernommen. Sie
+können auch den gesamten Ordner als Argument übergeben, so dass alle darin
+befindlichen `.eml`-Dateien importiert und erneut verarbeitet werden. Wenn
+die erneute Verarbeitung der E-Mail erfolgreich war, wird die Datei
+bzw. werden die Dateien gelöscht und der leere Ordner entfernt.
 
 :::tip
-Make sure to run these commands only from the main Zammad folder
-`/opt/zammad`. There may be problems if you try to run it from within
-the generated subfolder.
+Stellen Sie sicher, dass Sie diese Befehle nur vom Zammad-Hauptverzeichnis `/opt/zammad` aus ausführen.
+Es kann Probleme geben, wenn Sie versuchen, sie aus dem
+erzeugten Unterordner auszuführen.
 :::
 
-#### Delete Unwanted Emails
+#### Unerwünschte E-Mails löschen
 
-In case of unwanted emails such as spam, you can delete them from the
-database after exporting them with the following command:
+Unerwünschte E-Mails, z.B. Spam, können Sie nach dem Export mit dem
+folgenden Befehl aus der Datenbank löschen:
 ```ruby
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
 
-If you pass the export folder as argument instead, all contained emails will
-be removed from the database, their files deleted and finally the empty
-folder removed.
+Wenn Sie stattdessen den Exportordner als Argument übergeben, werden alle
+enthaltenen E-Mails aus der Datenbank entfernt, ihre Dateien gelöscht und
+schließlich der leere Ordner entfernt.
 
-### Fill a Test System With Test Data
+### Befüllen eines Testsystems mit Testdaten
 
 :::danger
-Don't run this in a productive environment! This can slow down Zammad
-and is hard to revert!
+Führen Sie dies nicht in einer produktiven Umgebung aus! Dies kann Zammad verlangsamen
+und ist schwer rückgängig zu machen!
 :::
 
-The below command will add `50` agents, `1000` customers, `20` groups, `40`
-organizations, `5` new overviews and `100` tickets. You can always use `0`
-to not create specific items. Zammad will create random data which make no
-logical sense.
+Der folgende Befehl fügt `50` Agenten, `1000` Kunden, `20` Gruppen, `40`
+Organisationen, `5` neue Übersichten und `100` Tickets hinzu. Sie können
+jederzeit `0` verwenden, um bestimmte Elemente nicht zu erstellen. Mit
+diesem Befehl erstellt Zammad zufällige Daten, die keinen logischen Sinn
+ergeben.
 
 ```ruby
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
 ```
 
-## Deleting Records
+## Löschen von Datensätzen
 
 :::danger
-☠️ The commands listed here cause **irrecoverable data loss**! Only
-proceed if you know what you're doing and you
-[have a backup](/en/tutorials/backup-restore)!
+☠️ Die hier aufgeführten Befehle führen zu **nicht wiederherstellbarem Datenverlust**! Nur
+fortfahren, wenn Sie wissen, was Sie tun und
+[ein Backup haben](/de/tutorials/backup-restore)!
 :::
 
-### Removing Tickets (And Their Articles)
+### Entfernen von Tickets (und ihren Artikeln)
 
-Delete a ticket (specified by database ID):
+Löschen eines Tickets (angegeben durch die Datenbank ID):
 ```ruby
 Ticket.find(4).destroy
 ```
-Delete all tickets:
+Alle Tickets löschen:
 ```ruby
 Ticket.destroy_all
 ```
-Keep some tickets (specified by database ID); delete the rest:
+Behalten Sie einige Tickets (angegeben durch die Datenbank ID); löschen Sie
+den Rest:
 ```ruby
 tickets_to_keep = [1, 2, 3]
 ```
@@ -774,34 +795,35 @@ tickets_to_keep = [1, 2, 3]
 Ticket.where.not(id: tickets_to_keep).destroy_all
 ```
 
-### Removing Users
+### Entfernen von Benutzern
 
 :::warning
-Customers **may not** be deleted while they have tickets remaining in
-the system.
+Kunden **dürfen nicht** gelöscht werden, solange sie noch Tickets im
+System haben.
 
-As such, the examples below will delete not only the specified
-customers, but **all tickets associated with them**, as well. Below
-commands delete without any further warnings.
+Daher werden in den folgenden Beispielen nicht nur die angegebenen
+Kunden, sondern auch **alle mit ihnen verbundenen Tickets** gelöscht. Untenstehende
+Befehle löschen ohne weitere Warnungen.
 :::
 
 
 :::tip
-If you're not sure what to do and need to learn more about what Zammad
-does upon removing users, please consider using Zammad's UI options in
-stead. You can find the data privacy feature in Zammad's admin interface under
-*System > Data Privacy*.
+Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
+beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
+verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
+*System > Datenschutz*.
 :::
 
-Removing users is possible in 2 ways: A single user and in bulk.
+Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und
+mehrere auf einmal.
 
 
-Remove a single user:
+Entfernen Sie einen einzelnen Benutzer:
 
 ```ruby
 User.find_by(email: '<email address>').destroy
 ```
-Remove several users:
+Mehrere Benutzer entfernen:
 
 ```ruby
 User.where(
@@ -809,35 +831,35 @@ User.where(
    ).destroy_all
 ```
 
-### Removing Organizations
+### Entfernen von Organisationen
 
 :::info
-Removing an organization does **not** delete associated customers.
+Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelöscht.
 :::
 
-#### Step 1: Select organizations
+#### Schritt 1: Organisationen auswählen
 
-By "active" status:
+Nach dem Status "aktiv":
 ```ruby
 organizations = Organization.where(active: false)
 ```
 
-By name:
+Nach dem Namen:
 ```ruby
 organizations = Organization.where(name: 'Acme')
 ```
 
-By partial match on notes:
+Bei teilweiser Übereinstimmung mit den Notizen:
 ```ruby
 organizations = Organization.where('note LIKE ?', '%foo%')
 ```
 
-#### Step 2: Preview affected organizations
+#### Schritt 2: Vorschau der betroffenen Organisationen
 ```ruby
 puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 ```
 
-#### Step 3: Proceed with Deletion
+#### Schritt 3: Mit der Löschung fortfahren
 
 ```ruby
 organizations.each do |org|
@@ -855,43 +877,43 @@ end
    end
 ```
 
-### Removing System Records
+### Entfernen von Systemdaten
 
-Remove all online notifications:
+Löschen aller Online-Benachrichtigungen:
 
 ```ruby
 OnlineNotification.destroy_all
 ```
 
-Remove all entries from the Activity Stream (dashboard):
+Entfernen Sie alle Einträge aus dem Aktivitätsverlauf (Dashboard):
 
 ```ruby
 ActivityStream.destroy_all
 ```
 
-Remove entries for all recently viewed objects(tickets, users,
-organizations):
+Einträge für alle kürzlich angesehenen Objekte (Tickets, Benutzer,
+Organisationen) entfernen:
 
 ```ruby
 RecentView.destroy_all
 ```
 
-Remove all history information from tickets, users and organizations
-(dangerous!):
+Entfernen Sie alle Historien-Informationen von Tickets, Benutzern und
+Organisationen (gefährlich!):
 
 ```ruby
 History.destroy_all
 ```
 
-### Reset Zammad Installation
+### Zammad Installation zurücksetzen
 
 ::: info
 
-Below commands are incomplete intentionally, error outputs will hint you
-through! The following operations will cause data loss and are for
-development / testing only.
+Die folgenden Befehle sind absichtlich unvollständig, Fehlerausgaben leiten Sie
+durch die Schritte! Die folgenden Operationen führen zu Datenverlust und sind nur für
+die Entwicklung und zum Testen.
 
-Don't forget to stop Zammad before trying to drop the database!
+Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!
 :::
 
 ```bash

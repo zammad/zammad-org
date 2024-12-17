@@ -27,7 +27,7 @@ provide access to all available endpoints listed here.
 - [Go Client](https://github.com/AlessandroSechi/zammad-go)  *(third-Party;
   API client only, no "ready to use" app)*
 
-## Authentication
+## Аутентификација
 
 Zammad supports three different authentication methods for its API.
 

@@ -43,10 +43,10 @@ Stacks ein - **Repository URL**:
 reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
 (Standard)
 
-Optional: if you need to provide environment variables, you can enter them
-in the **Environment variable** section or even upload a .env file. See [env
-template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
-as an example.
+Optional: Wenn Sie Umgebungsvariablen angeben müssen, können Sie diese in
+den Abschnitt **Environment variable** eingeben oder sogar eine .env-Datei
+hochladen. Siehe [Beispiel .env
+Vorlage](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
 
 ### Schritt 3: Starten des Stacks
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host

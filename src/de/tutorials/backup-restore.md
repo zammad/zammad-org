@@ -208,7 +208,7 @@ CREATE DATABASE
 # Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!
 ```
 
-### Additional Steps
+### Zusätzliche Schritte
 
 - If you've set any environmental settings, please re-apply them now.
 - If not already done, [install

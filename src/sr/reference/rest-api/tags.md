@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Tags
+title: Ознаке
 ---
 
-# Tags
+# Ознаке
 
 ## Ticket Scope
 

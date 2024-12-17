@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Mentions
+title: Помињања
 ---
 
-# Mentions
+# Помињања
 
 ::: warning
 The mention endpoint depends on the group permissions and if the user

@@ -42,7 +42,7 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Only SLES - Not required for OpenSUSE:
+Nur SLES - Nicht notwendig unter OpenSUSE:
 ```bash
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
@@ -65,15 +65,15 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```bash
+``` bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```bash
+``` bash
 sudo apt install locales
 ```
 ```bash
@@ -83,15 +83,15 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```bash
+``` bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```bash
+``` bash
 sudo apt install locales
 ```
 ```bash
@@ -101,27 +101,27 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```bash
+``` bash
 localectl status | grep LANG
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```bash
+``` bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 ===CentOS/RHEL
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```bash
+``` bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```bash
+``` bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -147,69 +147,69 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::tabs key:distros
 
 === Ubuntu
-Install repository key:
-```bash
+Installation des Repository Keys:
+``` bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-```bash
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-```bash
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-```bash
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
-Install repository key:
-```bash
+Installation des Repository Keys:
+``` bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-```bash
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-```bash
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
-Install repository key:
-```bash
+Installation des Repository Keys:
+``` bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-```bash
+``` bash
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
-Install repository key:
-```bash
+Installation des Repository Keys:
+``` bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-```bash
+``` bash
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
@@ -254,7 +254,7 @@ sudo zypper install zammad
 sudo yum install zammad
 ```
 
-Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
+Auf Grund eines Problems im Zusammenhang mit packager.io müssen Sie die Dateiberechtigungen für öffentliche Dateien unter CentOS korrigieren:
 
 ```bash
 sudo chmod -R 755 /opt/zammad/public/
@@ -293,10 +293,10 @@ systemctl (status|start|stop|restart) zammad-websocket
 
 ## Abhängigkeiten
 
-Assuming a vanilla system, the following dependencies will automatically be
-installed during the Zammad package installation. Additionally, you can find
-some information about Elasticsearch below, which is not automatically
-installed.
+Sofern Sie eine Standardinstallation verwenden werden die folgenden
+Abhängigkeiten während der Installation des Zammad-Pakets automatisch
+installiert. Zusätzlich finden Sie unten einige Informationen über
+Elasticsearch, das nicht automatisch installiert wird.
 
 - imlib2
 - Node.js
@@ -304,44 +304,47 @@ installed.
 - Nginx
 - Redis
 
-### Database Server
+### Datenbank Server
 
-Zammad will store all content in a Database. We supported PostgreSQL in
-version 10 or higher. The installation script tries to detect a
-MySQL/MariaDB or PostgreSQL server during the installation. In case none is
-found, PostgreSQL is automatically installed.
+Zammad speichert alle Inhalte in einer Datenbank. Wir unterstützen
+PostgreSQL in Version 10 oder höher. Das Installationsskript versucht,
+während der Installation einen MySQL/MariaDB- oder PostgreSQL-Server zu
+finden. Falls kein solcher gefunden wird, wird automatisch PostgreSQL
+installiert.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to
-use a pooling mode that is fully compatible with PostgreSQL. Typically this is
-called “session connection pooling”. Transaction-based connection pooling is
-not supported and may lead to errors during database migrations.
+Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
+einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. Typischerweise wird dies
+"session connection pooling" genannt. Transaktionsbasiertes connection pooling wird
+nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 :::
 
-If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.
-MySQL/MariaDB are **no longer** supported starting with Zammad 7.
+Wenn Sie noch MySQL/MariaDB verwenden, sollten Sie auf PostgreSQL
+umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt.
 
 ### Reverse Proxy
 
-The following reverse proxies are supported:
+Die folgenden Reverse-Proxys werden unterstützt:
 
 - Nginx 1.3+
 - Apache 2.2+
 
-The installation script tries to detect a Apache or Nginx during the
-installation. In case none is found, Nginx is automatically installed.  You
-can find a basic configuration guide [here](/en/tutorials/webserver-config).
+Das Installationsskript versucht, während der Installation einen Apache oder
+Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
+installiert.  Eine Anleitung zur Grundkonfiguration finden Sie
+[hier](/de/tutorials/webserver-config).
 
 
-### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
+### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 
-Elasticsearch is not automatically installed. Because it is crucial for a
-proper Zammad setup, it is included in the installation instructions
-above. If you want to connect Zammad to an already existing Elasticsearch
-instance, make sure to use a supported version and have a look at our
-[config example](/en/tutorials/connect-config-elasticsearch).
+Elasticsearch wird nicht automatisch installiert. Da es für eine
+ordnungsgemäße Einrichtung von Zammad entscheidend ist, ist es in den obigen
+Installationsanweisungen enthalten. Wenn Sie Zammad mit einer bereits
+existierenden Elasticsearch-Instanz verbinden wollen, stellen Sie sicher,
+dass Sie eine unterstützte Version verwenden und werfen Sie einen Blick auf
+unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `7.8` - `8.x`.
+Unterstützte Elasticsearch-Versionen sind `7.8` - `8.x`.
 
 :::details Elasticsearch version history
 
@@ -357,21 +360,22 @@ Supported Elasticsearch versions are `7.8` - `8.x`.
 | 2.0-3.0       | >= 2.4, <=5.6  |
 :::
 
-The Elasticsearch plugin `ingest-attachment` is required for version 7 or
-older to index the contents of email attachments. Starting with
-Elasticsearch 8, it is included by default.
+Das Elasticsearch-Plugin `ingest-attachment` wird für Version 7 oder älter
+benötigt, um den Inhalt von E-Mail-Anhängen zu indizieren. Ab Elasticsearch
+8 ist es standardmäßig in der Installation enthalten.
 
 ### Memcached <Badge type="info" text="optional"/>
 
-Instead of storing Zammads cache files within your filesystem, they can be
-cached in memory with Memcached.
+Anstatt Zammads Cache-Dateien in Ihrem Dateisystem zu speichern, können sie
+mit Memcached im Arbeitsspeicher zwischengespeichert werden.
 
-The installation and configuration is out of our scope of this
-documentation.  Please follow the [official
-guides](https://docs.memcached.org/).
+Die Installation und Konfiguration ist nicht Bestandteil dieser
+Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung]
+(https://docs.memcached.org/).
 
 ### GnuPG <Badge type="info" text="optional"/>
 
-If you want to use the PGP integration for sending and receiving signed and
-encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG website](https://www.gnupg.org/index.html).
+Wenn Sie die PGP-Integration zum Senden und Empfangen von signierten und
+verschlüsselten E-Mails nutzen möchten, müssen Sie das GnuPG-Tool
+installieren. Bitte werfen Sie einen Blick auf die offizielle
+[GnuPG-Website](https://www.gnupg.org/index.html).

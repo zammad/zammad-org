@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Calendar
+title: Календар
 ---
 
-# Calendar
+# Календар
 
 :::tip
 Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).

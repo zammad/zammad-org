@@ -1,9 +1,9 @@
 ---
 order: 7
-title: Organization
+title: Organisation
 ---
 
-# Organization
+# Organisation
 
 ## List
 

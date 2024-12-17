@@ -55,7 +55,7 @@ for now.
 After finishing the wizard you are automatically logged in to the just
 created account.
 
-## Next Steps
+## Следећи кораци
 
 The list below might help you to find the right way. However, you should
 adapt it to your needs. You can find additional information across this

@@ -42,10 +42,11 @@ Zammad се може покренути преко Docker Compose. Можете 
 reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
 (подразумевано)
 
-Optional: if you need to provide environment variables, you can enter them
-in the **Environment variable** section or even upload a .env file. See [env
-template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
-as an example.
+Опционо: уколико желите да подесите променљиве окружења, можете их унети у
+одељку **Environment variable** или чак да их отпремите преко .env
+датотеке. Погледајте [env
+шаблон](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
+за пример.
 
 ### Корак 3: Покретање stack-а
 Након што је stack спреман, можете приступити Zammad-у преко подешеног

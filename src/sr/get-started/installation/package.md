@@ -41,7 +41,7 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Only SLES - Not required for OpenSUSE:
+Само SLES - није обавезно за OpenSUSE:
 ```bash
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
@@ -64,13 +64,13 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```bash
 sudo apt install locales
@@ -82,13 +82,13 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```bash
 sudo apt install locales
@@ -100,25 +100,25 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```bash
 localectl status | grep LANG
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-===CentOS/RHEL
-List your current locale settings:
+=== CentOS/RHEL
+Излистајте ваша тренутна locale подешавања:
 
 ```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```bash
 sudo localectl set-locale LANG=en_US.UTF-8
@@ -131,22 +131,21 @@ sudo localectl set-locale LANG=en_US.UTF-8
 водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 за инсталацију Elasticsearch.
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we
-included in another page to keep the install instructions as lean as
-possible.
+Алтернативно, можете погледати [наш
+пример](/en/tutorials/install-elasticsearch.md) за Elasticsearch 7, који се
+налази на посебној страници да би упутство остало што прегледније.
 
-### Add Zammad Repository
+### Додајте Zammad репозиториј
 
 ::: info
-Packager.io may not be accessible from IPv6-only environments, so make sure
-to consider this when performing the steps below.
+Packager.io можда није доступан из окружења са искључиво IPv6 адресама, тако да
+имајте ово на уму приликом извршавања корака испод.
 :::
 
 :::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Инсталирајте кључ репозиторија:
 ```bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
@@ -172,7 +171,7 @@ echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/s
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
-Install repository key:
+Инсталирајте кључ репозиторија:
 ```bash
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
@@ -191,7 +190,7 @@ echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/s
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
-Install repository key:
+Инсталирајте кључ репозиторија:
 ```bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
@@ -202,7 +201,7 @@ sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
-Install repository key:
+Инсталирајте кључ репозиторија:
 ```bash
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
@@ -253,48 +252,49 @@ sudo zypper install zammad
 sudo yum install zammad
 ```
 
-Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
+Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:
 
 ```bash
 sudo chmod -R 755 /opt/zammad/public/
 ```
 :::
 
-### Manage Services of Zammad
+### Управљање Zammad сервисима
 
-Zammad uses three services. They can be (re)started & stopped with the
-parent `zammad`:
+Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за
+основним `zammad` процесом:
 ```bash
 systemctl (status|start|stop|restart) zammad
 ```
-Only internal puma server (relevant for displaying the web app):
+Само интерни puma сервис (одговоран за приказ веб апликације):
 ```bash
 systemctl (status|start|stop|restart) zammad-web
 ```
-Only background worker - relevant for all delayed- and background jobs:
+Само позадински процес - одговоран за извршавање свих одложених и задатке у
+позадини:
 ```bash
 systemctl (status|start|stop|restart) zammad-worker
 ```
-Only websocket server for session related information:
+Само websocker сервис за информације о сесији:
 ```bash
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 
-### Next Steps
+### Следећи кораци
 
-- Connect Zammad with Elasticsearch ([basic
-  guide](/en/tutorials/connect-config-elasticsearch))
-- Adjust your SELinux rules and firewall ([basic
-  guide](/en/tutorials/firewall-selinux))
-- Configure the Webserver ([basic guide](/en/tutorials/webserver-config))
+- Повежите Zammad са Elasticsearch ([основни
+  водич](/en/tutorials/connect-config-elasticsearch))
+- Подесите ваша SELinux правила и firewall ([соновни
+  водич](/en/tutorials/firewall-selinux))
+- Подесите веб сервис ([основни водич](/en/tutorials/webserver-config))
 
 
-## Dependencies
+## Предуслови
 
-Assuming a vanilla system, the following dependencies will automatically be
-installed during the Zammad package installation. Additionally, you can find
-some information about Elasticsearch below, which is not automatically
-installed.
+Под претпоставком да систем није прилагођен, следећи предуслови ће бити
+аутоматски инсталирати приликом инсталације Zammad пакета. Додатно, испод
+можете пронаћи неке информације о Elasicsearch, који неће бити аутоматски
+инсталиран.
 
 - imlib2
 - Node.js
@@ -302,26 +302,26 @@ installed.
 - Nginx
 - Redis
 
-### Database Server
+### Сервис базе података
 
-Zammad will store all content in a Database. We supported PostgreSQL in
-version 10 or higher. The installation script tries to detect a
-MySQL/MariaDB or PostgreSQL server during the installation. In case none is
-found, PostgreSQL is automatically installed.
+Zammad ће снимати сав садржај у базу података. Подржавамо PostgreSQL верзије
+10 и навише. Инсталациона скрипта ће покушати да детектује MySQL/MariaDB или
+PostgreSQL сервис приликом инсталације. У случају да не буде пронађен,
+PostgreSQL ће бити аутоматски инсталиран.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to
-use a pooling mode that is fully compatible with PostgreSQL. Typically this is
-called “session connection pooling”. Transaction-based connection pooling is
-not supported and may lead to errors during database migrations.
+Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу
+да користите начин организације који је потпуно подржан у оквиру PostgreSQL. Обично је под
+називом „session connection pooling”. Начин организација на основу трансакција није
+подржан и може довести до грешака приликом миграције базе података.
 :::
 
-If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.
-MySQL/MariaDB are **no longer** supported starting with Zammad 7.
+Уколико још увек користите MySQL/MariaDB, требало би да мигрирате на
+PosgreSQL. Подршка за MySQL/MariaDB ће бити избачена почевши са Zammad 7.
 
-### Reverse Proxy
+### Прокси приступа
 
-The following reverse proxies are supported:
+Следеће опције проксија приступа су подржане:
 
 - Nginx 1.3+
 - Apache 2.2+

@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Article
+title: Artikel
 ---
 
-# Article
+# Artikel
 
 ## Allgemein
 

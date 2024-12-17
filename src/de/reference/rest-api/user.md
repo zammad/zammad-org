@@ -1,9 +1,9 @@
 ---
 order: 2
-title: User
+title: Benutzer
 ---
 
-# User
+# Benutzer
 
 ::: info
 Please note that below samples were provided with `admin` and
