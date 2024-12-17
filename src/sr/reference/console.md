@@ -304,10 +304,25 @@ session.save!(touch: false)
 end
 ```
 
-## Working on Zammad Settings
+## Zammad Settings
 
 In this section, you can find some settings which you can set in the Zammad
 UI as well.
+
+### Auto Shutdown Setting
+
+Defines if an automatic shutdown of Zammad is performed when the the
+database has been changed (e.g. after custom attributes have been created in
+the object manager).  The underlying system (Systemd, Docker, Kubernetes)
+will then restart the processes/containers after this shutdown. The default
+setting is `true`.
+
+Setting this to ``false`` might only make sense in very rare cases and you
+have to restart the Zammad services then manually.
+
+```ruby
+Setting.set('auto_shutdown', 'true')
+```
 
 ### Ticket_hook Setting
 
