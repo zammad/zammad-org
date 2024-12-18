@@ -46,7 +46,7 @@ During the first certbot run it will request additional information once.
 Replace ``<webserver>`` in below command by either ``apache``, ``httpd`` or
 ``nginx`` to match your setup.
 
-```bash
+```sh
 certbot --<webserver> -d zammad.example.com
 ```
 
@@ -62,14 +62,14 @@ they’re valid for 30 days or less.
 
 Change the default certificate authority to Let's encrypt:
 
-```bash
+```sh
 acme.sh --set-default-ca  --server letsencrypt
 ```
 
 Issue your certificate and replace ``<webserver>`` in the following command
 with either ``apache`` or ``nginx`` or ``standalone`` for other webserver.
 
-```bash
+```sh
 acme.sh --issue --<webserver> -d zammad.example.com
 ```
 
@@ -80,7 +80,7 @@ but you can use any directory you like.
 
 Replace ``<webserver>`` with ``apache2``, ``httpd`` or ``nginx``.
 
-```bash
+```sh
 acme.sh --install-cert -d zammad.example.com \
     --cert-file      /etc/ssl/private/zammad.example.com.pem  \
     --key-file       /etc/ssl/private/zammad.example.com.key  \
@@ -113,7 +113,7 @@ Make sure to never use HTTP connections - we encourage you to use HTTPS!
 Copy & overwrite the default ``zammad.conf``. Adjust your Nginx config
 directory according to your setup:
 
-```bash
+```sh
 cp /opt/zammad/contrib/nginx/zammad_ssl.conf /etc/nginx/sites-available/zammad.conf
 ```
 
@@ -135,7 +135,7 @@ If you don't have a ``dhparam.pem`` file yet, you can easily adapt the example
 below to generate this file. You can find the correct path in your webserver
 config. Search for ``ssl_dhparam``.
 
-```bash
+```sh
 openssl dhparam -out <path>/dhparam.pem 4096
 
 ```
@@ -161,10 +161,10 @@ Go on with the [first steps in Zammad](/en/tutorials/first-steps).
 Zammad requires a module (``a2enmod``) which is not enabled by default. CentOS
 users have to adjust a config file because this module is not available there.
 
-```bash
+```sh
 a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
-```bash
+```sh
 systemctl restart apache2
 ```
 
@@ -189,7 +189,7 @@ config directory. Check if it is present and do not rename this file!
 
 Adjust your Apache config directory according to your setup:
 
-```bash
+```sh
 ls /etc/apache2/sites-available
 ```
 
@@ -211,7 +211,7 @@ If you don't have a ``dhparam.pem`` file yet, you can easily adapt the example
 below to generate this file. You can find the correct path in your webserver
 config. Search for ``SSLOpenSSLConfCmd DHParameters``.
 
-```bash
+```sh
 openssl dhparam -out <path>/dhparam.pem 4096
 
 ```
@@ -239,7 +239,7 @@ IncludeOptional sites-enabled/*.conf
 ```
 
 Enable it:
-```bash
+```sh
 a2ensite zammad
 ```
 
@@ -252,7 +252,7 @@ IncludeOptional sites-enabled/*.conf
 ```
 
 Enable it:
-```bash
+```sh
 ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 ```
 

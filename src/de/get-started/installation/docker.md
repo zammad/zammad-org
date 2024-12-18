@@ -18,8 +18,8 @@ Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifis
 
 - Eine funktionierende Docker Compose-Umgebung
 - Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Passe die Einstellungen deines Hosts zum ordentlichen Ausführen von Elasticsearch:
-    ```bash
+- Adjust your host's settings to run Elasticsearch properly:
+    ```sh
     sysctl -w vm.max_map_count=262144
     ```
 
@@ -62,7 +62,7 @@ Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
 
 ### Schritt 1: Klonen des GitHub Repo
 
-```bash
+```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
@@ -87,10 +87,10 @@ können Sie ihn über die Variable `NGINX_EXPOSE_PORT` einstellen.
 :::
 
 ### Schritt 3: Starten des Stacks
-```bash
+```sh
 cd zammad-docker-compose
 ```
-```bash
+```sh
 docker compose up -d
 ```
 
@@ -115,16 +115,16 @@ benötigt, um ordnungsgemäß zu funktionieren. Deshalb sollte der Aufruf von
 erfolgen:
 
 Direktes Ausführen eines bestimmten Befehls:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails r '...Ihr Rails Befehl...'
 ```
 Führen Sie die interaktive Rails-Konsole aus, um Rails-Befehle manuell
 einzugeben:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails c
 ```
 Über "docker exec":
-```bash
+```sh
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...Ihr Rails Befehl...'
 ```
 

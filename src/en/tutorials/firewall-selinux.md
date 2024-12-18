@@ -15,19 +15,19 @@ The following commands only work on Ubuntu, Debian and CentOS. If you use a
 different distribution, please have a look at their documentation.
 :::
 
-```bash
+```sh
 sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/
 ```
-```bash
+```sh
 sudo setsebool httpd_can_network_connect on -P
 ```
-```bash
+```sh
 sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/
 ```
-```bash
+```sh
 sudo restorecon -Rv /opt/zammad/public/
 ```
-```bash
+```sh
 sudo chmod -R a+r /opt/zammad/public/
 ```
 
@@ -43,13 +43,13 @@ firewall. It may not cover your case.
 ::::tabs
 
 ===Ubuntu
-```bash
+```sh
 sudo ufw allow 80
 ```
-```bash
+```sh
 sudo ufw allow 443
 ```
-```bash
+```sh
 sudo ufw reload
 ```
 
@@ -64,16 +64,16 @@ may be a different one!
 Add the following lines to `/etc/nftables.conf` or your specific rule file.
 Ensure to add these lines to your input-chain.
 
-```bash
+```sh
 sudo tcp dport { http, https } accept
 ```
-```bash
+```sh
 sudo udp dport { http, https } accept
 ```
 The result can look like the following. Keep in mind that your environment
 could require different / more rules.
 
-```bash
+```sh
 table inet filter {
    chain input {
       type filter hook input priority 0; policy drop;
@@ -93,21 +93,21 @@ table inet filter {
 }
 ```
 To load the rules, run:
-```bash
+```sh
 sudo systemctl reload nftables
 ```
 
 ===CenOS, RHEL, OpenSUSE, SLES
 
-```bash
+```sh
 sudo firewall-cmd --zone=public --add-service=http --permanent
 ```
 
-```bash
+```sh
 sudo firewall-cmd --zone=public --add-service=https --permanent
 ```
 
-```bash
+```sh
 sudo firewall-cmd --reload
 ```
 

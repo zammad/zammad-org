@@ -30,28 +30,28 @@ title: Пакет
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 === Debian
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 
 === OpenSUSE/SLES
 
-Само SLES - није обавезно за OpenSUSE:
-```bash
+Only SLES - Not required for OpenSUSE:
+```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
-```bash
+```sh
 sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
 
 === CentOS/RHEL
 
-```bash
+```sh
 sudo yum install wget epel-release
 ```
 :::
@@ -64,63 +64,63 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-```bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-```bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 localectl status | grep LANG
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-```bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-=== CentOS/RHEL
-Излистајте ваша тренутна locale подешавања:
+===CentOS/RHEL
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-```bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -145,76 +145,76 @@ Packager.io можда није доступан из окружења са ис
 :::tabs key:distros
 
 === Ubuntu
-Инсталирајте кључ репозиторија:
-```bash
+Install repository key:
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
-Инсталирајте кључ репозиторија:
-```bash
+Install repository key:
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
-Инсталирајте кључ репозиторија:
-```bash
+Install repository key:
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-```bash
+```sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
-Инсталирајте кључ репозиторија:
-```bash
+Install repository key:
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-```bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
 
 CentOS 9 / RHEL 9
 
-```bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
@@ -226,35 +226,35 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === Debian
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === OpenSUSE/SLES
-```bash
+```sh
 sudo zypper ref
 ```
-```bash
+```sh
 sudo zypper install zammad
 ```
 ===CentOS/RHEL
-```bash
+```sh
 sudo yum install zammad
 ```
 
-Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:
+Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
 
-```bash
+```sh
 sudo chmod -R 755 /opt/zammad/public/
 ```
 :::
@@ -263,20 +263,20 @@ sudo chmod -R 755 /opt/zammad/public/
 
 Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за
 основним `zammad` процесом:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad
 ```
 Само интерни puma сервис (одговоран за приказ веб апликације):
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-web
 ```
 Само позадински процес - одговоран за извршавање свих одложених и задатке у
 позадини:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-worker
 ```
 Само websocker сервис за информације о сесији:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 

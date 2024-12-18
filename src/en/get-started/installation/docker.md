@@ -18,7 +18,7 @@ We do not provide support in terms of Docker (-Compose) or Portainer specific pr
 - A working Docker Compose environment
 - At least 4 GB of RAM to run the containers
 - Adjust your host's settings to run Elasticsearch properly:
-    ```bash
+    ```sh
     sysctl -w vm.max_map_count=262144
     ```
 
@@ -56,7 +56,7 @@ and port, e.g. `http://localhost:8080/`.
 
 ### Step 1: Clone the GitHub Repo
 
-```bash
+```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 Make sure to run `git pull` frequently to fetch updates. Alternatively,
@@ -80,10 +80,10 @@ you can set it via the variable `NGINX_EXPOSE_PORT`.
 :::
 
 ### Step 3: Start the Stack
-```bash
+```sh
 cd zammad-docker-compose
 ```
-```bash
+```sh
 docker compose up -d
 ```
 
@@ -106,15 +106,15 @@ to function properly. That is why calling `rails` or `rake` on the console
 should be done via one of the following methods:
 
 Directly execute a specific command:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails r '...your rails command here...'
 ```
 Run the interactive rails console to manually enter Rails commands:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails c
 ```
 Via "docker exec":
-```bash
+```sh
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
 ```
 

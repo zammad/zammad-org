@@ -23,8 +23,8 @@ There are some limitations you should know:
 - These scripts won't work in container based installations.
 - They only work for PostgreSQL installations.
 - The backup is always a full dump (no incremental backup).
-- Partial backup and restore (e.g. only specific data like tickets,users) is
-  not possible.
+- Partial backup and restore (e.g. only specific data like tickets, users)
+  is not possible.
 - Switching database system is not possible.
 - System settings (like environment variables) are not backed up.
 - Restore to an older Zammad version is not possible.
@@ -151,7 +151,7 @@ want to go:
 
 === Interactive restore (recommended)
 Run the script:
-```bash
+```sh
 /opt/zammad/contrib/backup/zammad_restore.sh
 ```
 Provide the requested information to the script and wait for the restore
@@ -166,7 +166,7 @@ command will overwrite existing data without further prompts!
 :::
 When called with a timestamp argument (matching the backups filename),
 Zammad will proceed immediately to restoring the specified backup.
-```bash
+```sh
 /opt/zammad/contrib/backup/zammad_restore.sh 20170507121848
 ```
 ::::
@@ -218,4 +218,119 @@ CREATE DATABASE
   run during your work, but will cause a degraded search performance and may
   lead to temporarily not found data.
 
+## Troubleshooting Backup & Restore
 
+You can find some common problems below. If your issue is not listed, feel
+free to consult the [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
+for technical assistance.
+
+### Exit Codes
+
+Our backup & restore scripts come with exit codes to help you finding a
+solution. However, we do not guarantee a complete error handling.
+
+Beside the exit codes, there are also error messages returned to standard
+out.
+
+| Code | Description / Situation                                                                                                                                                                |
+|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `0`  | The script finished successfully (or the error is not handled).                                                                                                                        |
+| `1`  | This is a general error. Most often used for script aborts due to incorrect information provided or information missing.                                                               |
+| `2`  | There was an error with database handling. This usually either happens if your database server does not meet script requirements, login data being invalid or "broken‟ database dumps. |
+| `3`  | There were issues with file / folder permissions.                                                                                                                                      |
+
+### Common Problems
+
+#### Password Authentication Failed / Peer Authentication Failed
+
+This indicates that the password of your Zammad DB user is either different
+from your `database.yml` or the wrong database server may be contacted.
+
+If your Zammad instance is running, it can be caused by falling back to
+socket connection which is why you didn't notice.
+
+**What to do?**
+
+Ensure that the provided user credentials are correct. You can also consider
+to use the `reset_db_password` script, you can find in the backup directory.
+
+#### Ident Authentication Failed for User
+
+This indicates your database server does require `ident` authentication.
+That authentication method is not supported by our scripts.
+
+**What to do?**
+
+Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed.
+
+Usually, authentication can be allowed like this:
+
+```sh
+# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT
+host    all             all             127.0.0.1/32            md5
+host    all             all             ::1/128                 md5
+```
+
+Please consult the official [PostgreSQL
+documentation](https://www.postgresql.org/docs/) for this, as this is out of
+our documentation scope.
+
+#### WARNING: You don't Seem to Have Any Attachments in the File System!
+This indicate that your instance currently does not save attachments to file
+system.
+
+This warning will be shown once before creating an empty directory to allow
+the backup process to continue successfully.
+
+Check and adjust your
+storage settings [via console](/en/reference/console#storage-provider-setting)
+or in Zammad's admin interface under *Settings > System > Storage*.
+
+## Helper Script
+
+### Warning
+
+A script can potentially be destructive! You should **never** run scripts
+which scopes you don't understand.
+
+Be aware that you are running these scripts at your own risk.
+
+### Database Helper: (Re)set Password
+
+#### Limitations
+
+- This script is working for PostgreSQL installations only.
+- Only local database servers are supported (script changes user).
+- This script requires to be run as `root` or similar privileged user.
+- Be aware that the script will automatically stop and start Zammad!
+
+#### Scopes
+
+The scope of this script are mostly package installations and especially
+CentOS and SUSE operating systems. It might work on source code /
+development installations as well, but this highly depends on your setup and
+is out of scope.
+
+#### Functionality
+
+The script will do the following actions automatically for you, depending on
+the situation. It will ask for your confirmation before performing actions.
+
+- If `database.yml` contains an empty password line, a new password will be
+  generated and set for the database user of Zammad. It will also be saved
+  to the configuration file.
+- If `database.yml` contains a password, it will be used to set the password
+  of the Zammad database user.
+
+#### Usage
+
+Run the script with the command below and follow the instructions. No
+specific configuration is required.
+
+```sh
+/opt/zammad/contrib/backup/zammad_db_user_helper.sh
+```
+
+If errors occur, the script will try to bring Zammad back online before
+exiting.

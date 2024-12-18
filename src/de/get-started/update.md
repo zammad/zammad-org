@@ -21,7 +21,7 @@ aktuelle stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` �
 ## Paketinstallation aktualisieren
 
 ### Zammad stoppen
-```bash
+```sh
 systemctl stop zammad
 ```
 
@@ -44,61 +44,61 @@ in den folgenden Befehlen zu sehen.
 :::tabs
 
 === Ubuntu/Debian
-Update Packet-Liste:
-```bash
+Update package lists:
+```sh
 apt update
 ```
-Update für Zammad deaktivieren:
-```bash
+Disable updates for Zammad:
+```sh
 apt-mark hold zammad
 ```
-Alle Pakete außer Zammad aktualisieren:
-```bash
+Update all packages except Zammad:
+```sh
 apt upgrade
 ```
-Re-Aktivierung der Updates für Zammad:
-```bash
+Re-enable updates for Zammad:
+```sh
 apt-mark unhold zammad
 ```
-Update von Zammad:
-```bash
+Update Zammad:
+```sh
 apt upgrade
 ```
 
 === OpenSUSE/SLES
 
-Update Packet-Liste
-```bash
+Update package lists:
+```sh
 zypper refresh
 ```
-Update für Zammad deaktivieren:
-```bash
+Disable updates for Zammad:
+```sh
 zypper addlock zammad
 ```
-Alle Pakete außer Zammad aktualisieren:
-```bash
+Update all packages except Zammad:
+```sh
 zypper update
 ```
-Re-Aktivierung der Updates für Zammad:
-```bash
+Re-enable updates for Zammad:
+```sh
 zypper removelock zammad
 ```
-Update von Zammad:
-```bash
+Update Zammad:
+```sh
 zypper update
 ```
 === CentOS/RHEL
 
-Update Packet-Liste:
-```bash
+Update package lists:
+```sh
 yum check-update
 ```
-Alle Pakete außer Zammad aktualisieren:
-```bash
+Update all packages except Zammad:
+```sh
 yum upgrade --exclude zammad
 ```
-Update von Zammad:
-```bash
+Update Zammad:
+```sh
 yum upgrade
 ```
 :::
@@ -122,7 +122,7 @@ Ingest-Attachment-Plugin nicht mehr notwendig, sondern ist Bestandteil von
 Elasticsearch selbst).
 
 ### Zammad starten
-```bash
+```sh
 systemctl start zammad
 ```
 
@@ -144,15 +144,15 @@ Portainer](/screenshots/installation/portainer-stack-update.png)
 
 ### Docker Compose-basierten Installation aktualisieren
 
-```bash
+```sh
 cd zammad-docker-compose
 ```
-```bash
+```sh
 git pull
 ```
-```bash
+```sh
 docker-compose pull
 ```
-```bash
+```sh
 docker-compose up -d
 ```

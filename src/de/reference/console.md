@@ -30,20 +30,20 @@ Ausgabe im Terminal (ohne sehen Sie nichts!).
 
 :::tabs key:installmethod
 
-=== Docker-Installation
+=== Docker Installation
 
-'''Bash
+```sh
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
-=== Paket-Installation
+=== Package Installation
 
-```bash
+```sh
 zammad run rails r '{COMMAND}'
 
 ```
 
-=== Source / Development-Installation
-```bash
+=== Source / Development Installation
+```sh
 rails r '{COMMAND}'
 ```
 :::
@@ -52,21 +52,21 @@ rails r '{COMMAND}'
 
 :::tabs key:installmethod
 
-=== Docker-Installation
+=== Docker Installation
 
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails c
 ```
-=== Paket-Installation
+=== Package Installation
 
-```bash
+```sh
 zammad run rails c
 
 ```
 
-=== Source-/ Development-Installation
-```bash
-rails c c
+=== Source / Development Installation
+```sh
+rails c
 ```
 :::
 
@@ -81,7 +81,7 @@ Es ist jedoch möglich, die Rails-Konsole im sicheren Modus zu starten, indem
 man eine spezielle Umgebungsvariable setzt. Wenn `ZAMMAD_SAFE_MODE=1`
 gesetzt ist, wird die Prüfung auf Vorhandensein ignoriert.
 
-```bash
+```sh
 ZAMMAD_SAFE_MODE=1 zammad run rails c
 ```
 
@@ -234,7 +234,7 @@ u = User.find(**USERID**)
 ```ruby
 u.login = 'user@exmaple.com'
 ```
-```bash
+```sh
 u.save!
 ```
 
@@ -721,7 +721,7 @@ bearbeiten, bevor Zammad sie verarbeiten kann. Führen Sie dazu die folgenden
 Schritte aus.
 
 #### Alle fehlgeschlagenen E-Mails in einen lokalen Ordner exportieren
-```bash
+```sh
 rake zammad:email_parser:failed_email:export_all`
 ```
 Sie können den Speicherort der exportierten E-Mails in der Ausgabe Ihrer
@@ -931,15 +931,15 @@ die Entwicklung und zum Testen.
 Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!
 :::
 
-```bash
+```sh
 rake db:drop
 ```
-```bash
+```sh
 rake db:create
 ```
-```bash
+```sh
 rake db:migrate
 ```
-```bash
+```sh
 rake db:seed
 ```

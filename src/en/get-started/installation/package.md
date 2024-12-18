@@ -29,28 +29,28 @@ tools like curl, gnupg and others.
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 === Debian
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 
 === OpenSUSE/SLES
 
 Only SLES - Not required for OpenSUSE:
-```bash
+```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
-```bash
+```sh
 sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
 
 === CentOS/RHEL
 
-```bash
+```sh
 sudo yum install wget epel-release
 ```
 :::
@@ -65,61 +65,61 @@ sudo yum install wget epel-release
 === Ubuntu
 List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-```bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
 List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-```bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
 List your current locale settings:
 
-```bash
+```sh
 localectl status | grep LANG
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-```bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 ===CentOS/RHEL
 List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
 If above does not return `<lang_code>.utf8`, you can correct this
 issue as follows:
 
-```bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -145,75 +145,75 @@ to consider this when performing the steps below.
 
 === Ubuntu
 Install repository key:
-```bash
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
 Install repository key:
-```bash
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
 Install repository key:
-```bash
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-```bash
+```sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
 Install repository key:
-```bash
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-```bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
 
 CentOS 9 / RHEL 9
 
-```bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
@@ -225,35 +225,35 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === Debian
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === OpenSUSE/SLES
-```bash
+```sh
 sudo zypper ref
 ```
-```bash
+```sh
 sudo zypper install zammad
 ```
 ===CentOS/RHEL
-```bash
+```sh
 sudo yum install zammad
 ```
 
 Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
 
-```bash
+```sh
 sudo chmod -R 755 /opt/zammad/public/
 ```
 :::
@@ -262,19 +262,19 @@ sudo chmod -R 755 /opt/zammad/public/
 
 Zammad uses three services. They can be (re)started & stopped with the parent
 `zammad`:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad
 ```
 Only internal puma server (relevant for displaying the web app):
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-web
 ```
 Only background worker - relevant for all delayed- and background jobs:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-worker
 ```
 Only websocket server for session related information:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 

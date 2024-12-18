@@ -18,8 +18,8 @@ Zammad се може покренути преко Docker Compose. Можете 
 
 - Радно Docker Compose окружење
 - Најмање 4 GB RAM за контејнере
-- Подесите ваш сервер да правилно извршава Elasticsearch сервис:
-    ```bash
+- Adjust your host's settings to run Elasticsearch properly:
+    ```sh
     sysctl -w vm.max_map_count=262144
     ```
 
@@ -62,7 +62,7 @@ Docker хоста и порта, нпр. `http://localhost:8080/`.
 
 ### Корак 1: Клонирање GitHub репозиторија
 
-```bash
+```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 Обавезно често извршавајте `git pull` команду за ажурирање. Алтернативно,
@@ -86,10 +86,10 @@ Zammad се подразумевано покреће на порту број `
 :::
 
 ### Корак 3: Покретање stack-а
-```bash
+```sh
 cd zammad-docker-compose
 ```
-```bash
+```sh
 docker compose up -d
 ```
 
@@ -112,15 +112,15 @@ Docker извршна скрипта поставља променљиве ок�
 `rake` конзолних команди је неопходно одрадити на један од следећих начина:
 
 Директно извршавање одговарајуће команде:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails r '...ваша rails команда овде...'
 ```
 Извршавање интерактивне rails конзоле за ручни унос команди:
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails c
 ```
 Преко „docker exec”:
-```bash
+```sh
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...ваша rails команда овде...'
 ```
 

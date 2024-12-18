@@ -36,50 +36,50 @@ to copy/save the password which is shown while installing Elasticsearch.
 
 === Ubuntu
 
-```bash
+```sh
 apt install apt-transport-https sudo wget curl gnupg
 ```
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
   tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
-```bash
+```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
-```bash
+```sh
 apt update
 ```
-```bash
+```sh
 apt install elasticsearch
 ```
 
 === Debian
 
-```bash
+```sh
 apt install apt-transport-https sudo wget curl gnupg
 ```
-```bash
+```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
   tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
-```bash
+```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
-```bash
+```sh
 apt update
 ```
-```bash
+```sh
 apt install elasticsearch
 ```
 
 === OpenSUSE
 
-```bash
+```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
-```bash
+```sh
 echo "[elasticsearch-7.x]
 name=Elasticsearch repository for 7.x packages
 baseurl=https://artifacts.elastic.co/packages/7.x/yum
@@ -89,16 +89,16 @@ enabled=1
 autorefresh=1
 type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 ```
-```bash
+```sh
 zypper install elasticsearch
 ```
 
 === CentOS
 
-```bash
+```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
-```bash
+```sh
 echo "[elasticsearch-7.x]
 name=Elasticsearch repository for 7.x packages
 baseurl=https://artifacts.elastic.co/packages/7.x/yum
@@ -108,7 +108,7 @@ enabled=1
 autorefresh=1
 type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
 ```
-```bash
+```sh
 yum install -y elasticsearch
 ```
 === Direct Download
@@ -116,12 +116,12 @@ yum install -y elasticsearch
 :::
 
 Install the ingest-attachment plugin:
-: ```bash
+: ```sh
   /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
   ```
 
 Increase Virtual Memory Map Limit:
-: ```bash
+: ```sh
   sysctl -w vm.max_map_count=262144
   ```
 
@@ -150,7 +150,7 @@ Adjust ``/etc/elasticsearch/elasticsearch.yml``:
   ```
 
 Enable it by default and start it:
-: ```bash
+: ```sh
   systemctl enable elasticsearch --now
   ```
 

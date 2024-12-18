@@ -19,7 +19,7 @@ this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
 ## Update Package Installation
 
 ### Stop Zammad
-```bash
+```sh
 systemctl stop zammad
 ```
 
@@ -43,60 +43,60 @@ you can see in the commands below.
 
 === Ubuntu/Debian
 Update package lists:
-```bash
+```sh
 apt update
 ```
 Disable updates for Zammad:
-```bash
+```sh
 apt-mark hold zammad
 ```
 Update all packages except Zammad:
-```bash
+```sh
 apt upgrade
 ```
 Re-enable updates for Zammad:
-```bash
+```sh
 apt-mark unhold zammad
 ```
 Update Zammad:
-```bash
+```sh
 apt upgrade
 ```
 
 === OpenSUSE/SLES
 
 Update package lists:
-```bash
+```sh
 zypper refresh
 ```
 Disable updates for Zammad:
-```bash
+```sh
 zypper addlock zammad
 ```
 Update all packages except Zammad:
-```bash
+```sh
 zypper update
 ```
 Re-enable updates for Zammad:
-```bash
+```sh
 zypper removelock zammad
 ```
 Update Zammad:
-```bash
+```sh
 zypper update
 ```
 === CentOS/RHEL
 
 Update package lists:
-```bash
+```sh
 yum check-update
 ```
 Update all packages except Zammad:
-```bash
+```sh
 yum upgrade --exclude zammad
 ```
 Update Zammad:
-```bash
+```sh
 yum upgrade
 ```
 :::
@@ -117,7 +117,7 @@ as well (note: starting with Elasticsearch 8, the ingest-attachment is no
 longer a plugin, it’s now included in Elasticsearch).
 
 ### Start Zammad
-```bash
+```sh
 systemctl start zammad
 ```
 
@@ -139,15 +139,15 @@ Portainer](/screenshots/installation/portainer-stack-update.png)
 
 ### Updating Docker Compose Based Installations
 
-```bash
+```sh
 cd zammad-docker-compose
 ```
-```bash
+```sh
 git pull
 ```
-```bash
+```sh
 docker-compose pull
 ```
-```bash
+```sh
 docker-compose up -d
 ```

@@ -31,28 +31,28 @@ möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren.
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 === Debian
 
-```bash
+```sh
 sudo apt install curl apt-transport-https gnupg
 ```
 
 === OpenSUSE/SLES
 
-Nur SLES - Nicht notwendig unter OpenSUSE:
-```bash
+Only SLES - Not required for OpenSUSE:
+```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
-```bash
+```sh
 sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
 
 === CentOS/RHEL
 
-```bash
+```sh
 sudo yum install wget epel-release
 ```
 :::
@@ -65,63 +65,63 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` bash
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` bash
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` bash
+```sh
 sudo apt install locales
 ```
-```bash
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` bash
+```sh
 localectl status | grep LANG
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 ===CentOS/RHEL
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` bash
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` bash
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -147,76 +147,76 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::tabs key:distros
 
 === Ubuntu
-Installation des Repository Keys:
-``` bash
+Install repository key:
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-``` bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-``` bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-``` bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
-Installation des Repository Keys:
-``` bash
+Install repository key:
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-``` bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-``` bash
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
-Installation des Repository Keys:
-``` bash
+Install repository key:
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-``` bash
+```sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
-Installation des Repository Keys:
-``` bash
+Install repository key:
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-``` bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
 
 CentOS 9 / RHEL 9
 
-```bash
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
@@ -228,35 +228,35 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 
 === Ubuntu
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === Debian
 
-```bash
+```sh
 sudo apt update
 ```
-```bash
+```sh
 sudo apt install zammad
 ```
 === OpenSUSE/SLES
-```bash
+```sh
 sudo zypper ref
 ```
-```bash
+```sh
 sudo zypper install zammad
 ```
 ===CentOS/RHEL
-```bash
+```sh
 sudo yum install zammad
 ```
 
-Auf Grund eines Problems im Zusammenhang mit packager.io müssen Sie die Dateiberechtigungen für öffentliche Dateien unter CentOS korrigieren:
+Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
 
-```bash
+```sh
 sudo chmod -R 755 /opt/zammad/public/
 ```
 :::
@@ -265,19 +265,19 @@ sudo chmod -R 755 /opt/zammad/public/
 
 Zammad verwendet drei Dienste. Sie können mit dem übergeordneten Dienst
 `zammad` (neu)gestartet und gestoppt werden:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad
 ```
 Nur interner Puma-Server (relevant zum Anzeigen der Web-App):
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-web
 ```
 Nur Background Worker - relevant für alle verzögerten und Hintergrund-Jobs:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-worker
 ```
 Nur Websocket-Server für sitzungsbezogene Informationen:
-```bash
+```sh
 systemctl (status|start|stop|restart) zammad-websocket
 ```
 

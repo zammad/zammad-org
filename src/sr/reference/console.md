@@ -32,18 +32,18 @@ output (without you won't!).
 
 === Docker Installation
 
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
 === Package Installation
 
-```bash
+```sh
 zammad run rails r '{COMMAND}'
 
 ```
 
 === Source / Development Installation
-```bash
+```sh
 rails r '{COMMAND}'
 ```
 :::
@@ -54,18 +54,18 @@ rails r '{COMMAND}'
 
 === Docker Installation
 
-```bash
+```sh
 docker compose run --rm zammad-railsserver rails c
 ```
 === Package Installation
 
-```bash
+```sh
 zammad run rails c
 
 ```
 
 === Source / Development Installation
-```bash
+```sh
 rails c
 ```
 :::
@@ -81,7 +81,7 @@ However, it's possible to start rails console in safe mode by setting a
 special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
 ignored.
 
-```bash
+```sh
 ZAMMAD_SAFE_MODE=1 zammad run rails c
 ```
 
@@ -232,7 +232,7 @@ u = User.find(**USERID**)
 ```ruby
 u.login = 'user@exmaple.com'
 ```
-```bash
+```sh
 u.save!
 ```
 
@@ -704,7 +704,7 @@ header fields), you may need to manually edit the email before Zammad can
 process it. To do so, follow the steps below.
 
 #### Export all Failed Emails to a Local Folder
-```bash
+```sh
 rake zammad:email_parser:failed_email:export_all`
 ```
 You can find the location of the exported email in the output of your
@@ -909,15 +909,15 @@ development / testing only.
 Don't forget to stop Zammad before trying to drop the database!
 :::
 
-```bash
+```sh
 rake db:drop
 ```
-```bash
+```sh
 rake db:create
 ```
-```bash
+```sh
 rake db:migrate
 ```
-```bash
+```sh
 rake db:seed
 ```

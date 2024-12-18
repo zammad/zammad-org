@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 11
 title: 'Zu Zammad migrieren'
 ---
 
@@ -111,42 +111,42 @@ the console approach instead and reset the installation.
 
 Open console:
 
-```bash
+```sh
 zammad run rails c
 ```
 Set variables:
 
-```bash
+```sh
 subdomain = '{freshdesk subdomain}.freshdesk.com'
 ```
-```bash
+```sh
 token = '{freshdesk token}'
 ```
 Update Zammad settings for freshdesk import:
-```bash
+```sh
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
 ```
-```bash
+```sh
 Setting.set('import_freshdesk_endpoint_key', token)
 ```
-```bash
+```sh
 Setting.set('import_backend', 'freshdesk')
 ```
-```bash
+```sh
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
-```bash
+```sh
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
 Run the migration:
 
-```bash
+```sh
 job = ImportJob.create(name: 'Import::Freshdesk')
 ```
-```bash
+```sh
 AsyncImportJob.perform_later(job)
 ```
 
@@ -156,7 +156,7 @@ Want to see the progress of the migration?
 
 Use
 
-```bash
+```sh
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 which gives you an output of the current state of the job.
@@ -168,13 +168,13 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```bash
+```sh
 Setting.set('import_mode', false)
 ```
-```bash
+```sh
 Setting.set('system_init_done', true)
 ```
-```bash
+```sh
 Rails.cache.clear
 ```
 
@@ -247,48 +247,48 @@ using the console approach instead and reset the installation.
 
 Open console:
 
-```bash
+```sh
 zammad run rails c
 ```
 Set variables:
 
-```bash
+```sh
 subdomain = '{kayako subdomain}.kayako.com'
 ```
-```bash
+```sh
 email = '{kayako admin email address}'
 ```
-```bash
+```sh
 password = '{kayako admin password}'
 ```
 Update Zammad settings for Kayako import:
-```bash
+```sh
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
 ```
-```bash
+```sh
 Setting.set('import_kayako_endpoint_username', email)
 ```
-```bash
+```sh
 Setting.set('import_kayako_endpoint_password', password)
 ```
-```bash
+```sh
 Setting.set('import_backend', 'kayako')
 ```
-```bash
+```sh
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
-```bash
+```sh
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
 
 Run the migration:
 
-```bash
+```sh
 job = ImportJob.create(name: 'Import::Kayako')
 ```
-```bash
+```sh
 AsyncImportJob.perform_later(job)
 ```
 
@@ -298,7 +298,7 @@ Want to see the progress of the migration?
 
 Use
 
-```bash
+```sh
 pp ImportJob.find_by(name: 'Import::Kayako')
 ```
 which gives you an output of the current state of the job.
@@ -310,13 +310,13 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```bash
+```sh
 Setting.set('import_mode', false)
 ```
-```bash
+```sh
 Setting.set('system_init_done', true)
 ```
-```bash
+```sh
 Rails.cache.clear
 ```
 
@@ -429,24 +429,24 @@ applies if you experience timeouts during the migration.
 
 Open console:
 
-```bash
+```sh
 zammad run rails c
 ```
 Set variables (ensure to replace *xxx* with your values):
 
-```bash
+```sh
 Setting.set('import_otrs_endpoint', 'https://xxx/otrs/public.pl?Action=ZammadMigrator')
 ```
-```bash
+```sh
 Setting.set('import_otrs_endpoint_key', 'xxx')
 ```
-```bash
+```sh
 Setting.set('import_mode', true)
 ```
 
 Run a full migration:
 
-```bash
+```sh
 Import::OTRS.start
 ```
 
@@ -455,11 +455,11 @@ migration):
 
 All steps from "Set variables" +
 
-```bash
+```sh
 Setting.set('system_init_done', false)
 ```
 
-```bash
+```sh
 Import::OTRS.diff_worker
 ```
 
@@ -469,13 +469,13 @@ Import::OTRS.diff_worker
 
 Run the following commands:
 
-```bash
+```sh
 Setting.set('import_mode', false)
 ```
-```bash
+```sh
 Setting.set('system_init_done', true)
 ```
-```bash
+```sh
 Rails.cache.clear
 ```
 
@@ -532,50 +532,50 @@ while.
 
 Open console:
 
-```bash
+```sh
 zammad run rails c
 ```
 Set variables:
 
-```bash
+```sh
 subdomain = '{zendesk url}'
 ```
-```bash
+```sh
 email = '{zendesk admin email address}'
 ```
-```bash
+```sh
 token = '{zendesk token}'
 
 ```
 
 Update Zammad settings:
-```bash
+```sh
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
 ```
-```bash
+```sh
 Setting.set('import_zendesk_endpoint_username', email)
 ```
-```bash
+```sh
 Setting.set('import_zendesk_endpoint_key', token)
 ```
-```bash
+```sh
 Setting.set('import_backend', 'zendesk')
 ```
-```bash
+```sh
 Setting.set('import_mode', true)
 ```
 Check your configuration in a dry run:
 
-```bash
+```sh
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
 Run the migration:
 
-```bash
+```sh
 job = ImportJob.create(name: 'Import::Zendesk')
 ```
-```bash
+```sh
 AsyncImportJob.perform_later(job)
 ```
 
@@ -585,7 +585,7 @@ Want to see the progress of the migration?
 
 Use
 
-```bash
+```sh
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 which gives you an output of the current state of the job.
@@ -598,13 +598,13 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```bash
+```sh
 Setting.set('import_mode', false)
 ```
-```bash
+```sh
 Setting.set('system_init_done', true)
 ```
-```bash
+```sh
 Rails.cache.clear
 ```
 
