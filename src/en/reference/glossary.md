@@ -1,4 +1,5 @@
 ---
+title: Glossary
 order: 1
 ---
 

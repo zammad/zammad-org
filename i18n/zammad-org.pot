@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-18 11:53+0100\n"
+"POT-Creation-Date: 2024-12-19 10:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -725,6 +725,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:179
 #: src/en/tutorials/connect-config-elasticsearch.md:90
+#: src/en/tutorials/sso-kerberos.md:526
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
 msgstr ""
@@ -1652,12 +1653,13 @@ msgid ""
 "provided for the Zammad application.\n"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ##
 #: src/en/get-started/installation/docker.md:16
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
 #: src/en/tutorials/migrate.md:70 src/en/tutorials/migrate.md:209
 #: src/en/tutorials/migrate.md:343 src/en/tutorials/migrate.md:500
+#: src/en/tutorials/reporting-grafana.md:26
 #, markdown-text, no-wrap
 msgid "Prerequisites"
 msgstr ""
@@ -2476,6 +2478,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/installation/package.md:308
+#: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -3203,6 +3206,176 @@ msgid ""
 "The easiest and often most cost-effective way to operate Zammad is our\n"
 "[cloud service](https://zammad.com/en/pricing). Give it a try with a free "
 "trial instance!\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/config-db-server.md:1
+#: src/en/reference/config-db-server.md:6
+#, markdown-text, no-wrap
+msgid "Configure Database Server"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:11
+#, markdown-text
+msgid ""
+"This page should only enlighten the relevant parts for Zammad and is not "
+"meant to be a complete guide. It is only relevant for you if you are running "
+"an existing PostgreSQL server and want to run Zammad's database there as "
+"well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:22
+#, markdown-text
+msgid ""
+"Below you can the locations of the relevant PostgreSQL configuration files "
+"to adjust. Keep in mind that versions may differ from your setup - adapt "
+"where needed."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/config-db-server.md:23
+#, no-wrap
+msgid ""
+"\n"
+"=== Debian & Ubuntu\n"
+"\n"
+"```sh\n"
+"/etc/postgresql/{your version}/main/postgresql.conf\n"
+"```\n"
+"\n"
+"=== CentOS & OpenSUSE\n"
+"\n"
+"```\n"
+"/var/lib/pgsql/data/postgresql.conf\n"
+"```\n"
+"\n"
+"=== Others\n"
+"\n"
+"Can't find your configuration files? You can run the following command\n"
+"to get the path:\n"
+"\n"
+"``` sh\n"
+"$ sudo -u postgres psql -c 'SHOW config_file'\n"
+"```\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/config-db-server.md:47
+#, markdown-text, no-wrap
+msgid "Adjust Pool Size"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:52
+#, markdown-text
+msgid ""
+"Within `database.yml` (`config/` directory) you can define the allowed pool "
+"size. By default each Zammad process takes up to `50` connections (`pool: "
+"50`)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:56
+#, markdown-text
+msgid ""
+"This should be fairly enough for *every* use case. If you experience "
+"database connection timeouts or similar pool errors, this usually indicates "
+"to other issues that are relevant to your PostgreSQL."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/config-db-server.md:58
+#, markdown-text, no-wrap
+msgid "Adjust `max_connections` (mandatory)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:61
+#, markdown-text
+msgid ""
+"Zammad will take up to 200 connections by default, with below command you "
+"can raise this limit fairly high."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:63
+#, markdown-text
+msgid "Raise maximum allowed number of connections:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:63
+#, no-wrap
+msgid ""
+"sed -i \"/max_connections/c\\max_connections = 2000\" "
+"<postgresql-configuration-file>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:67
+#: src/en/reference/config-db-server.md:94
+#, markdown-text
+msgid "Apply changes by restarting postgresql and Zammad (in this order):"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:67
+#: src/en/reference/config-db-server.md:94
+#, no-wrap
+msgid "systemctl restart postgresql zammad\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/config-db-server.md:71
+#, markdown-text, no-wrap
+msgid "Adjust PostgreSQL for bigger instances (optional)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/config-db-server.md:73
+#, no-wrap
+msgid ""
+"Check below settings first and ensure your system is able to provide\n"
+"the requirements! Below settings are what we found to be useful,\n"
+"everything else is out of scope of this documentation!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:80
+#, markdown-text
+msgid "Some caching improvements:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:80
+#, no-wrap
+msgid ""
+"sed -i \"/shared_buffers/c\\shared_buffers = 2GB\" "
+"<postgresql-configuration-file>\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:83
+#, no-wrap
+msgid ""
+"sed -i \"/temp_buffers/c\\temp_buffers = 256MB\" "
+"<postgresql-configuration-file>\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:86
+#, no-wrap
+msgid "sed -i \"/work_mem/c\\work_mem = 10MB\" <postgresql-configuration-file>\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/config-db-server.md:89
+#, no-wrap
+msgid ""
+"sed -i \"/max_stack_depth/c\\max_stack_depth = 5MB\" "
+"<postgresql-configuration-file>\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -5516,10 +5689,347 @@ msgid ""
 ": Port of Zammad's websocket server.\n"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/env-vars.md:1 src/en/reference/env-vars.md:6
-#, markdown-text, no-wrap
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/reference/env-vars.md:1
+#, no-wrap
 msgid "Environment Variables"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/env-vars.md:6
+#, markdown-text, no-wrap
+msgid "Configuration via Environment Variables"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:11
+#, markdown-text
+msgid ""
+"Use these environment variables to configure Zammad's behavior at "
+"runtime. You may want to have a look at the [collection of rails "
+"commands](/en/reference/console) as well."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/env-vars.md:12
+#, no-wrap
+msgid ""
+"Please note that environment variables may be named differently for\n"
+"installations based on [Docker](/en/reference/docker-env-vars) and "
+"Kubernetes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:18
+#, markdown-text, no-wrap
+msgid "Default values are marked with a <Badge type=\"info\" text=\"badge\"/>.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/env-vars.md:19
+#, markdown-text, no-wrap
+msgid "General Options"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:26
+#, markdown-text, no-wrap
+msgid ""
+"`GPG_PATH` <Badge type=\"info\" text=\"unset\"/>\n"
+": Defines the path to the GPG installation. This is only needed if you\n"
+"  installed Zammad from Source, if you want to use different versions of\n"
+"  PGP on your machine or if your PGP installation differs from the\n"
+"  standard installation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:30
+#, markdown-text, no-wrap
+msgid ""
+"`RAILS_LOG_TO_STDOUT` <Badge type=\"info\" text=\"unset\"/>\n"
+": Print output directly to standard output instead of\n"
+"  `/var/log/zammad/production.log`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:34
+#, markdown-text, no-wrap
+msgid ""
+"  This setting can be overwritten during update on package installations.\n"
+"  Use `enabled` to turn this option on only until the next update. Use\n"
+"  `true` to turn it on permanently.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:39
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_SAFE_MODE` <Badge type=\"info\" text=\"unset\"/>\n"
+": Ignore availability of third-party services when running Zammad\n"
+"  commands. Possible values: `1` or `true`\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/env-vars.md:40
+#, no-wrap
+msgid ""
+"  **Be careful** when running Zammad commands on production systems in\n"
+"  safe mode.\n"
+"\n"
+"  While it may allow an escape hatch for certain commands, it has a\n"
+"  potential to break regular Zammad operations.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:52
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_HTTP_TYPE` <Badge type=\"info\" text=\"unset\"/>\n"
+": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
+"  `https`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:55
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_FQDN` <Badge type=\"info\" text=\"unset\"/>\n"
+": Defines the fully qualified domain name of the system.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/env-vars.md:56
+#, markdown-text, no-wrap
+msgid "Network Options"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/env-vars.md:58
+#, no-wrap
+msgid ""
+"Remember to update your web server config to reflect any changes you\n"
+"make here.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:65
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
+": The IP address that the web server is bound to.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:68
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+": The port that the web server is exposed on.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:72
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+": The port that the web socket server is exposed on.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/env-vars.md:73
+#, markdown-text, no-wrap
+msgid "Performance Tuning"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:78
+#, markdown-text
+msgid ""
+"Each of below settings comes with its own tradeoffs. There are no "
+"\"recommended values\" here; the optimal configuration will depend on your "
+"system's resources and typical application load."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:81
+#, markdown-text
+msgid ""
+"Below settings *may* consume all available database connections. Please "
+"consider to check your database server configuration."
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/env-vars.md:82
+#, no-wrap
+msgid ""
+"Proceed with caution and only if you know what you are doing!\n"
+"The settings below may lead to a very high load of your system and/or "
+"disable\n"
+"relevant parts of Zammad.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:90
+#, markdown-text
+msgid ""
+"To find out how many users are currently on Zammad, you can use the rails "
+"command below:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/env-vars.md:91
+#, no-wrap
+msgid "zammad run rails r \"p Sessions.list.uniq.count\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:99
+#, markdown-text, no-wrap
+msgid ""
+"`WEB_CONCURRENCY` <Badge type=\"info\" text=\"unset\"/>\n"
+": How many instances of the application server to keep open at a time.\n"
+"  Increasing this can reduce loading times when too many users are on\n"
+"  Zammad at once.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:104
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type=\"info\" text=\"unset\"/>\n"
+": How many instances of the session worker to run at a time. Increasing "
+"this\n"
+"  can speed up background jobs (like the scheduler) when too many users are "
+"on\n"
+"  Zammad at once.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:107
+#, markdown-text, no-wrap
+msgid ""
+"  Generally speaking, it should only be useful to adjust this setting if\n"
+"  you have more than 40 active users at a time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:113
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type=\"info\" "
+"text=\"unset\"/>\n"
+": Allows spawning an independent process just for processing scheduled\n"
+"  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
+"  other tasks when running tasks that take fairly long.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:115
+#, markdown-text, no-wrap
+msgid "  Maximum number of workers: `1`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:118 src/en/reference/env-vars.md:128
+#, markdown-text, no-wrap
+msgid ""
+"  You can disable the processing of scheduled jobs by setting\n"
+"  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:123
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type=\"info\" "
+"text=\"unset\"/>\n"
+": How many processes should work on delayed jobs? Increasing this *can*\n"
+"  improve issues with delayed jobs stacking up in your system. You may want "
+"to\n"
+"  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:125
+#, markdown-text, no-wrap
+msgid "  Maximum number of workers: `16`\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/env-vars.md:129
+#, markdown-text, no-wrap
+msgid "Additional Performance Adjustments"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/env-vars.md:131
+#, no-wrap
+msgid ""
+"The options listed below allow you to distribute Zammad processes over\n"
+"several application nodes. Even if that's not your goal, they may\n"
+"provide great benefits on bigger installations.\n"
+"\n"
+"Please note that distribution of processes on several nodes is out of\n"
+"the scope of this documentation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:146
+#, markdown-text, no-wrap
+msgid ""
+"`REDIS_URL` <Badge type=\"info\" text=\"unset\"/>\n"
+": Store your web socket connection information within Redis.\n"
+"  To do so, tell Zammad where to find your Redis instance:\n"
+"  `redis://your.redis.server:6379`\n"
+"  If not provided, Zammad falls back to file system\n"
+"  (`/opt/zammad/tmp/websocket_*`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:154
+#, markdown-text, no-wrap
+msgid ""
+"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"unset\"/>\n"
+": Store your application cache files within Memcached.\n"
+"  To do so, tell Zammad where to find your Memcached instance:\n"
+"  `your.memcached.server:11211`\n"
+"  If not provided, Zammad falls back to file system\n"
+"  (`/opt/zammad/tmp/cache*`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:158
+#, markdown-text, no-wrap
+msgid ""
+"  Memcached allows you to restrict the maximum size Zammad may store as\n"
+"  cache. This comes in handy in terms of performance and keeping caching\n"
+"  files small. `1 GB` should be a reasonable size.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/env-vars.md:159
+#, markdown-text, no-wrap
+msgid "Storage Options"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:163
+#, markdown-text
+msgid "`S3_URL` : Allows you to provide your S3 configuration."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:165
+#, markdown-text, no-wrap
+msgid "  Format / example:\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/env-vars.md:165
+#, no-wrap
+msgid ""
+"  "
+"https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 msgstr ""
 
 #. type: Title #
@@ -7554,13 +8064,13 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/glossary.md:5
+#: src/en/reference/glossary.md:1 src/en/reference/glossary.md:6
 #, markdown-text, no-wrap
 msgid "Glossary"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:9
+#: src/en/reference/glossary.md:10
 #, markdown-text
 msgid ""
 "Ever wondered what we mean by a specific term? We've been collecting the "
@@ -7568,7 +8078,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/glossary.md:10
+#: src/en/reference/glossary.md:11
 #, no-wrap
 msgid ""
 "Due to translation alphabetical sorting may be off in non english versions\n"
@@ -7576,13 +8086,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:16
+#: src/en/reference/glossary.md:17
 #, markdown-text
 msgid "Quickly jump to..."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:19
+#: src/en/reference/glossary.md:20
 #, markdown-text
 msgid ""
 "[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) "
@@ -7591,13 +8101,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:22
+#: src/en/reference/glossary.md:23
 #, markdown-text, no-wrap
 msgid "A"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:31
+#: src/en/reference/glossary.md:32
 #, markdown-text, no-wrap
 msgid ""
 "Admin\n"
@@ -7612,7 +8122,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:37
+#: src/en/reference/glossary.md:38
 #, markdown-text, no-wrap
 msgid ""
 "Agent\n"
@@ -7625,7 +8135,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:44
+#: src/en/reference/glossary.md:45
 #, markdown-text, no-wrap
 msgid ""
 "API\n"
@@ -7640,7 +8150,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:47
+#: src/en/reference/glossary.md:48
 #, markdown-text, no-wrap
 msgid ""
 "  You can learn more on our\n"
@@ -7648,7 +8158,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:53
+#: src/en/reference/glossary.md:54
 #, markdown-text, no-wrap
 msgid ""
 "Automation\n"
@@ -7660,7 +8170,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:58
+#: src/en/reference/glossary.md:59
 #, markdown-text, no-wrap
 msgid ""
 "Article\n"
@@ -7671,7 +8181,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:63
+#: src/en/reference/glossary.md:64
 #, markdown-text, no-wrap
 msgid ""
 "Autosave\n"
@@ -7683,7 +8193,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:66
+#: src/en/reference/glossary.md:67
 #, markdown-text, no-wrap
 msgid ""
 "  You can learn more on our\n"
@@ -7692,13 +8202,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:67
+#: src/en/reference/glossary.md:68
 #, markdown-text, no-wrap
 msgid "B"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:73
+#: src/en/reference/glossary.md:74
 #, markdown-text, no-wrap
 msgid ""
 "Branding\n"
@@ -7708,13 +8218,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:74
+#: src/en/reference/glossary.md:75
 #, markdown-text, no-wrap
 msgid "C"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:84
+#: src/en/reference/glossary.md:85
 #, markdown-text, no-wrap
 msgid ""
 "Custom Development (CD)\n"
@@ -7731,7 +8241,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:88
+#: src/en/reference/glossary.md:89
 #, markdown-text, no-wrap
 msgid ""
 "Changelog\n"
@@ -7741,7 +8251,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:90
+#: src/en/reference/glossary.md:91
 #, markdown-text, no-wrap
 msgid ""
 "  You can find them all on our "
@@ -7749,7 +8259,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:100
+#: src/en/reference/glossary.md:101
 #, markdown-text, no-wrap
 msgid ""
 "Customer\n"
@@ -7764,7 +8274,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:104
+#: src/en/reference/glossary.md:105
 #, markdown-text, no-wrap
 msgid ""
 "Content Sidebar\n"
@@ -7773,7 +8283,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:111
+#: src/en/reference/glossary.md:112
 #, markdown-text, no-wrap
 msgid ""
 "Core Workflows\n"
@@ -7785,7 +8295,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:117
+#: src/en/reference/glossary.md:118
 #, markdown-text, no-wrap
 msgid ""
 "CTI\n"
@@ -7796,7 +8306,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:124
+#: src/en/reference/glossary.md:125
 #, markdown-text, no-wrap
 msgid ""
 "Checkmk\n"
@@ -7807,7 +8317,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:131
+#: src/en/reference/glossary.md:132
 #, markdown-text, no-wrap
 msgid ""
 "Clearbit\n"
@@ -7820,7 +8330,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:138
+#: src/en/reference/glossary.md:139
 #, markdown-text, no-wrap
 msgid ""
 "Conflict Warning\n"
@@ -7834,13 +8344,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:139
+#: src/en/reference/glossary.md:140
 #, markdown-text, no-wrap
 msgid "D"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:148
+#: src/en/reference/glossary.md:149
 #, markdown-text, no-wrap
 msgid ""
 "Dashboard\n"
@@ -7855,7 +8365,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:153
+#: src/en/reference/glossary.md:154
 #, markdown-text, no-wrap
 msgid ""
 "Dialog\n"
@@ -7867,7 +8377,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:159
+#: src/en/reference/glossary.md:160
 #, markdown-text, no-wrap
 msgid ""
 "Documentation\n"
@@ -7878,13 +8388,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:160
+#: src/en/reference/glossary.md:161
 #, markdown-text, no-wrap
 msgid "E"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:168
+#: src/en/reference/glossary.md:169
 #, markdown-text, no-wrap
 msgid ""
 "Escalation\n"
@@ -7900,7 +8410,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:175
+#: src/en/reference/glossary.md:176
 #, markdown-text, no-wrap
 msgid ""
 "External Authentication\n"
@@ -7914,7 +8424,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:181
+#: src/en/reference/glossary.md:182
 #, markdown-text, no-wrap
 msgid ""
 "Exchange Integration\n"
@@ -7927,7 +8437,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:185
+#: src/en/reference/glossary.md:186
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch\n"
@@ -7937,7 +8447,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info <Badge type="info" text="Cloud Service only" />)
-#: src/en/reference/glossary.md:186
+#: src/en/reference/glossary.md:187
 #, no-wrap
 msgid ""
 "\n"
@@ -7949,13 +8459,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:195
+#: src/en/reference/glossary.md:196
 #, markdown-text, no-wrap
 msgid "F"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:201
+#: src/en/reference/glossary.md:202
 #, markdown-text, no-wrap
 msgid ""
 "Feature\n"
@@ -7965,7 +8475,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:208
+#: src/en/reference/glossary.md:209
 #, markdown-text, no-wrap
 msgid ""
 "Feature Request\n"
@@ -7978,7 +8488,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:214
+#: src/en/reference/glossary.md:215
 #, markdown-text, no-wrap
 msgid ""
 "Feature Sponsoring\n"
@@ -7989,13 +8499,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:215
+#: src/en/reference/glossary.md:216
 #, markdown-text, no-wrap
 msgid "G"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:224
+#: src/en/reference/glossary.md:225
 #, markdown-text, no-wrap
 msgid ""
 "Groups\n"
@@ -8010,7 +8520,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:228
+#: src/en/reference/glossary.md:229
 #, markdown-text, no-wrap
 msgid ""
 "  If you have worked with the OTRS system in the past,\n"
@@ -8019,7 +8529,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:233
+#: src/en/reference/glossary.md:234
 #, markdown-text, no-wrap
 msgid ""
 "Grafana\n"
@@ -8029,7 +8539,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:236
+#: src/en/reference/glossary.md:237
 #, markdown-text, no-wrap
 msgid ""
 "  Hooking up Grafana to Elasticsearch is an possibility you can do on your\n"
@@ -8037,7 +8547,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:241
+#: src/en/reference/glossary.md:242
 #, markdown-text, no-wrap
 msgid ""
 "GitHub\n"
@@ -8047,7 +8557,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:244
+#: src/en/reference/glossary.md:245
 #, markdown-text, no-wrap
 msgid ""
 "  As Zammad in an open-source project, many developers and tech-lovers from "
@@ -8057,13 +8567,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:246
+#: src/en/reference/glossary.md:247
 #, markdown-text, no-wrap
 msgid "  You can find the repository [here](https://github.com/zammad/zammad).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:250
+#: src/en/reference/glossary.md:251
 #, markdown-text, no-wrap
 msgid ""
 "  Besides our own repo, Zammad also has an integration for GitHub.\n"
@@ -8073,7 +8583,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:255
+#: src/en/reference/glossary.md:256
 #, markdown-text, no-wrap
 msgid ""
 "GitLab\n"
@@ -8082,7 +8592,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:259
+#: src/en/reference/glossary.md:260
 #, markdown-text, no-wrap
 msgid ""
 "  There is also an integration that allows users to connect GitLab to "
@@ -8093,19 +8603,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:260
+#: src/en/reference/glossary.md:261
 #, markdown-text, no-wrap
 msgid "H"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:263
+#: src/en/reference/glossary.md:264
 #, markdown-text, no-wrap
 msgid "I"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:272
+#: src/en/reference/glossary.md:273
 #, markdown-text, no-wrap
 msgid ""
 "i-doit\n"
@@ -8118,7 +8628,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:278
+#: src/en/reference/glossary.md:279
 #, markdown-text, no-wrap
 msgid ""
 "Icinga\n"
@@ -8129,7 +8639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:282
+#: src/en/reference/glossary.md:283
 #, markdown-text, no-wrap
 msgid ""
 "Issue-Tracking System\n"
@@ -8139,7 +8649,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:286
+#: src/en/reference/glossary.md:287
 #, markdown-text, no-wrap
 msgid ""
 "  Zammad is also often referred to as an issue-tracking system.\n"
@@ -8148,19 +8658,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:287
+#: src/en/reference/glossary.md:288
 #, markdown-text, no-wrap
 msgid "J"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:290
+#: src/en/reference/glossary.md:291
 #, markdown-text, no-wrap
 msgid "K"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:296
+#: src/en/reference/glossary.md:297
 #, markdown-text, no-wrap
 msgid ""
 "Knowledge Base\n"
@@ -8170,7 +8680,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:301
+#: src/en/reference/glossary.md:302
 #, markdown-text, no-wrap
 msgid ""
 "  Knowledge base articles can be either internal or external, so you can\n"
@@ -8180,7 +8690,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:306
+#: src/en/reference/glossary.md:307
 #, markdown-text, no-wrap
 msgid ""
 "Kibana <Badge type=\"info\" text=\"on-premise only\" />\n"
@@ -8192,7 +8702,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:309
+#: src/en/reference/glossary.md:310
 #, markdown-text, no-wrap
 msgid ""
 "  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
@@ -8200,13 +8710,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:310
+#: src/en/reference/glossary.md:311
 #, markdown-text, no-wrap
 msgid "L"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:316
+#: src/en/reference/glossary.md:317
 #, markdown-text, no-wrap
 msgid ""
 "LDAP\n"
@@ -8216,13 +8726,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:317
+#: src/en/reference/glossary.md:318
 #, markdown-text, no-wrap
 msgid "M"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:324
+#: src/en/reference/glossary.md:325
 #, markdown-text, no-wrap
 msgid ""
 "Macro\n"
@@ -8236,7 +8746,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:330
+#: src/en/reference/glossary.md:331
 #, markdown-text, no-wrap
 msgid ""
 "  An example of this is declaring a ticket as \"spam\".\n"
@@ -8248,7 +8758,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:336
+#: src/en/reference/glossary.md:337
 #, markdown-text, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -8260,7 +8770,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:341
+#: src/en/reference/glossary.md:342
 #, markdown-text, no-wrap
 msgid ""
 "Monit\n"
@@ -8271,7 +8781,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:346
+#: src/en/reference/glossary.md:347
 #, markdown-text, no-wrap
 msgid ""
 "Mentions\n"
@@ -8282,13 +8792,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:347
+#: src/en/reference/glossary.md:348
 #, markdown-text, no-wrap
 msgid "N"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:352
+#: src/en/reference/glossary.md:353
 #, markdown-text, no-wrap
 msgid ""
 "Navigation\n"
@@ -8298,7 +8808,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:356
+#: src/en/reference/glossary.md:357
 #, markdown-text, no-wrap
 msgid ""
 "Navigation Tab\n"
@@ -8308,7 +8818,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:362
+#: src/en/reference/glossary.md:363
 #, markdown-text, no-wrap
 msgid ""
 "Nagios\n"
@@ -8322,13 +8832,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:363
+#: src/en/reference/glossary.md:364
 #, markdown-text, no-wrap
 msgid "O"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:369
+#: src/en/reference/glossary.md:370
 #, markdown-text, no-wrap
 msgid ""
 "On-Premise\n"
@@ -8338,7 +8848,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:376
+#: src/en/reference/glossary.md:377
 #, markdown-text, no-wrap
 msgid ""
 "Owner\n"
@@ -8352,7 +8862,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:382
+#: src/en/reference/glossary.md:383
 #, markdown-text, no-wrap
 msgid ""
 "Organization\n"
@@ -8364,13 +8874,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:383
+#: src/en/reference/glossary.md:384
 #, markdown-text, no-wrap
 msgid "P"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:390
+#: src/en/reference/glossary.md:391
 #, markdown-text, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -8382,7 +8892,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:396
+#: src/en/reference/glossary.md:397
 #, markdown-text, no-wrap
 msgid ""
 "Placetel\n"
@@ -8395,7 +8905,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:401
+#: src/en/reference/glossary.md:402
 #, markdown-text, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call "
@@ -8406,7 +8916,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:406
+#: src/en/reference/glossary.md:407
 #, markdown-text, no-wrap
 msgid ""
 "Priority\n"
@@ -8416,19 +8926,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:407
+#: src/en/reference/glossary.md:408
 #, markdown-text, no-wrap
 msgid "Q"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:410
+#: src/en/reference/glossary.md:411
 #, markdown-text, no-wrap
 msgid "R"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:415
+#: src/en/reference/glossary.md:416
 #, markdown-text, no-wrap
 msgid ""
 "Role\n"
@@ -8438,7 +8948,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:418
+#: src/en/reference/glossary.md:419
 #, markdown-text, no-wrap
 msgid ""
 "  Admins have the most rights: they can define roles, permissions,\n"
@@ -8446,7 +8956,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:421
+#: src/en/reference/glossary.md:422
 #, markdown-text, no-wrap
 msgid ""
 "  Agents can view and edit tickets, but not change any settings other than\n"
@@ -8454,7 +8964,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:424
+#: src/en/reference/glossary.md:425
 #, markdown-text, no-wrap
 msgid ""
 "  Customers can view their tickets' processing status in their\n"
@@ -8462,7 +8972,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:428
+#: src/en/reference/glossary.md:429
 #, markdown-text, no-wrap
 msgid ""
 "Release\n"
@@ -8471,7 +8981,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:434
+#: src/en/reference/glossary.md:435
 #, markdown-text, no-wrap
 msgid ""
 "  Every release adds new features to our software.\n"
@@ -8482,7 +8992,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:438
+#: src/en/reference/glossary.md:439
 #, markdown-text, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases) you can find what "
@@ -8493,13 +9003,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:439
+#: src/en/reference/glossary.md:440
 #, markdown-text, no-wrap
 msgid "S"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:444
+#: src/en/reference/glossary.md:445
 #, markdown-text, no-wrap
 msgid ""
 "Second Level Navigation\n"
@@ -8509,7 +9019,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:449
+#: src/en/reference/glossary.md:450
 #, markdown-text, no-wrap
 msgid ""
 "SSO\n"
@@ -8521,7 +9031,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:454
+#: src/en/reference/glossary.md:455
 #, markdown-text, no-wrap
 msgid ""
 "S/MIME\n"
@@ -8533,7 +9043,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:460
+#: src/en/reference/glossary.md:461
 #, markdown-text, no-wrap
 msgid ""
 "Sipgate\n"
@@ -8546,7 +9056,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:464
+#: src/en/reference/glossary.md:465
 #, markdown-text, no-wrap
 msgid ""
 "Side(Panel)\n"
@@ -8556,7 +9066,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:469
+#: src/en/reference/glossary.md:470
 #, markdown-text, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -8567,13 +9077,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:471
+#: src/en/reference/glossary.md:472
 #, markdown-text, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:478
+#: src/en/reference/glossary.md:479
 #, markdown-text, no-wrap
 msgid ""
 "SLA\n"
@@ -8586,7 +9096,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:482
+#: src/en/reference/glossary.md:483
 #, markdown-text, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the "
@@ -8597,7 +9107,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:486
+#: src/en/reference/glossary.md:487
 #, markdown-text, no-wrap
 msgid ""
 "State\n"
@@ -8607,13 +9117,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:487
+#: src/en/reference/glossary.md:488
 #, markdown-text, no-wrap
 msgid "T"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:494
+#: src/en/reference/glossary.md:495
 #, markdown-text, no-wrap
 msgid ""
 "Text Module\n"
@@ -8626,7 +9136,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:497
+#: src/en/reference/glossary.md:498
 #, markdown-text, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -8634,7 +9144,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:502
+#: src/en/reference/glossary.md:503
 #, markdown-text, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -8644,7 +9154,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:510
+#: src/en/reference/glossary.md:511
 #, markdown-text, no-wrap
 msgid ""
 "Tags\n"
@@ -8660,13 +9170,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:511
+#: src/en/reference/glossary.md:512
 #, markdown-text, no-wrap
 msgid "U"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:518
+#: src/en/reference/glossary.md:519
 #, markdown-text, no-wrap
 msgid ""
 "User\n"
@@ -8678,19 +9188,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:519
+#: src/en/reference/glossary.md:520
 #, markdown-text, no-wrap
 msgid "V"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:522
+#: src/en/reference/glossary.md:523
 #, markdown-text, no-wrap
 msgid "W"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:529
+#: src/en/reference/glossary.md:530
 #, markdown-text, no-wrap
 msgid ""
 "Webhooks\n"
@@ -8702,25 +9212,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:530
+#: src/en/reference/glossary.md:531
 #, markdown-text, no-wrap
 msgid "X"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:533
+#: src/en/reference/glossary.md:534
 #, markdown-text, no-wrap
 msgid "Y"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/glossary.md:536
+#: src/en/reference/glossary.md:537
 #, markdown-text, no-wrap
 msgid "Z"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:540
+#: src/en/reference/glossary.md:541
 #, markdown-text
 msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr ""
@@ -8729,6 +9239,287 @@ msgstr ""
 #: src/en/reference/index.md:1
 #, no-wrap
 msgid "Reference"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/privacy.md:1 src/en/reference/privacy.md:6
+#, markdown-text, no-wrap
+msgid "Data Retention and External Services"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:10
+#, markdown-text
+msgid ""
+"How long does Zammad store user data? How can I manage its user data "
+"retention behavior? To which services connects Zammad?"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/privacy.md:11
+#, markdown-text, no-wrap
+msgid "Data Retention"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:14
+#, markdown-text
+msgid "The following data is stored locally on the production system:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:15
+#, markdown-text, no-wrap
+msgid "Tickets and Users"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:18
+#, markdown-text
+msgid "By default, Zammad never automatically deletes tickets or users."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:22
+#, markdown-text, no-wrap
+msgid ""
+"To enable **automatic** deletion of tickets after a given interval,\n"
+"use Zammad's scheduler. You can configure it in Zammad's admin interface "
+"under\n"
+"*Manage > Scheduler*.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:27
+#, markdown-text, no-wrap
+msgid ""
+"To **manually** delete users and all their associated tickets (e.g. in\n"
+"compliance with a \"Right to Forget\" request under the GDPR), you can use\n"
+"the data privacy functions in the admin panel under *System > Data "
+"Privacy*\n"
+"or [use the console](/en/reference/console#deleting-records).\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:28
+#, markdown-text, no-wrap
+msgid "Chat sessions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:32
+#, markdown-text
+msgid ""
+"Once a chat session has been marked **closed**, it is scheduled for "
+"automatic deletion 12 months later."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:36
+#, markdown-text
+msgid ""
+"IP address logs for chat sessions can be manually deleted by following the "
+"steps in the [chat section in the "
+"console](/en/reference/console#remove-ip-address-logs)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:37
+#, markdown-text, no-wrap
+msgid "CTI caller log"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:41
+#, markdown-text
+msgid ""
+"The caller log shows only the 60 most recent entries. Each entry in the "
+"caller log is automatically deleted after 12 months."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:42
+#, markdown-text, no-wrap
+msgid "Log files"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:45
+#, markdown-text
+msgid "Zammad writes log files to disk (typically under `/opt/zammad/log/`)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:49
+#, markdown-text
+msgid ""
+"Package installations will set up a separate system utility called "
+"`logrotate` to rename and archive (or *rotate*) log files on a nightly basis "
+"and remove old logs after 14 days."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:53
+#, markdown-text
+msgid ""
+"If installing from source, it is strongly recommended to configure "
+"`logrotate` or a similar log management utility; Zammad will not purge old "
+"logs on its own."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:54
+#, markdown-text, no-wrap
+msgid "User sessions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:58
+#, markdown-text
+msgid "Zammad maintains session information about every user currently logged in."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:63
+#, markdown-text, no-wrap
+msgid ""
+"This information is automatically purged when a user logs out, and can\n"
+"be viewed or manually deleted via the admin panel (under *System >\n"
+"Sessions*). Users may also delete their own session information via the\n"
+"user preferences menu, under *Devices*.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:66
+#, markdown-text
+msgid ""
+"Session information includes IP address (and possibly geographic location), "
+"browser, time of original login, and time of last visit."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:67
+#, markdown-text, no-wrap
+msgid "Data Privacy Tasks"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:71
+#, markdown-text
+msgid ""
+"Each entry in the data privacy task list is automatically deleted after 12 "
+"months."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/privacy.md:72
+#, markdown-text, no-wrap
+msgid "External Services"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:78
+#, markdown-text, no-wrap
+msgid ""
+"Zammad utilizes third-party web services for certain functions, meaning\n"
+"that user data may occasionally be sent or exposed to third parties.\n"
+"These functions can be individually disabled in the admin panel under\n"
+"*Settings > System > Services*.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:87
+#, markdown-text, no-wrap
+msgid ""
+"> [!NOTE]\n"
+"> By default, the third-party services that Zammad relies on are mostly\n"
+"> ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
+"> can be extended to interface with other services instead.\n"
+">\n"
+"> The source code for these third-party service integrations can be\n"
+"> found\n"
+"> [here](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:88
+#, markdown-text, no-wrap
+msgid "Images"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:92
+#, markdown-text
+msgid ""
+"No private images or personally-identifying information are stored on "
+"images.zammad.com."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:98
+#, markdown-text
+msgid ""
+"The Images service caches publicly-available images from sources like "
+"Gravatar and serves them to the Zammad application as user avatars and "
+"organization logos. These images are discovered using MD5 digests of user "
+"email addresses and organization domain names. User avatars are cached for 7 "
+"days; organization logos are cached for 30 days."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:99
+#, markdown-text, no-wrap
+msgid "GeoCalendar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:102 src/en/reference/privacy.md:111
+#, markdown-text
+msgid "No user information is stored or cached on geo.zammad.com."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:107
+#, markdown-text
+msgid ""
+"As part of its service-level agreement (SLA) functionality, Zammad requires "
+"detailed, localized calendar information (*e.g.,* to set the time zone and "
+"accommodate national holidays and daylight savings time).  The GeoCalendar "
+"service is used to retrieve this information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:108
+#, markdown-text, no-wrap
+msgid "GeoIP"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:117
+#, markdown-text
+msgid ""
+"One of Zammad's security features is to track user sessions based on the "
+"user's browser and country of origin. Suspicious login activity from a "
+"different browser or country may trigger Zammad to dispatch an alert email "
+"to the affected user. The GeoIP service is used to associate IP addresses to "
+"a geographic origin."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:118
+#, markdown-text, no-wrap
+msgid "Geolocation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:125
+#, markdown-text
+msgid ""
+"Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned "
+"it off. If you provide an address (or parts of an address) in a user object, "
+"there is a lookup of coordinates from OSM which are stored in Zammad's "
+"database. Have a look at their [privacy "
+"policy](https://osmfoundation.org/wiki/Privacy_Policy) for more information."
 msgstr ""
 
 #. type: Plain text
@@ -16330,6 +17121,1850 @@ msgid ""
 msgstr ""
 
 #. type: Title #
+#: src/en/tutorials/reporting-grafana.md:1
+#: src/en/tutorials/reporting-grafana.md:6
+#, markdown-text, no-wrap
+msgid "Reporting with Grafana"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/reporting-grafana.md:8
+#, no-wrap
+msgid ""
+"This guide is about Grafana. If you want to use another tool, check if it\n"
+"supports Elasticsearch indexes. If yes, then you are good to go!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:16
+#, markdown-text
+msgid ""
+"Grafana is a third-party analytics/visualization application you can connect "
+"to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index "
+"and visualize your Zammad data."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:21
+#, markdown-text
+msgid ""
+"This guide will provide you some steps to get started. For a deeper insight "
+"you should consider having a look at the [indexed "
+"attributes](/en/reference/es-indexed-attributes) of Elasticsearch and to "
+"read the [documentation of Grafana](https://grafana.com/docs/)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:25
+#, markdown-text
+msgid ""
+"This guide expects all requirements to be up and running. We will not cover "
+"core configurations of each tool. Please also note that we can't support you "
+"with configuration of your specific third party tool."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:29
+#, markdown-text
+msgid "You need:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:34
+#, markdown-text
+msgid ""
+"A running instance of Grafana (hosted or self-hosted) in version 10.3 or "
+"higher"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:34
+#, markdown-text
+msgid "Read access to your Elasticsearch index"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:34
+#, markdown-text
+msgid "A Zammad instance in version 4 or higher"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/reporting-grafana.md:35
+#, no-wrap
+msgid ""
+"Never expose Elasticsearch to the public if you're not sure how\n"
+"to do it. Especially **never** without authentication! Zammad\n"
+"stores **very sensitive** information within the Elasticsearch\n"
+"Index.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/reporting-grafana.md:42
+#, markdown-text, no-wrap
+msgid "Setting up Required Data Sources"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:47
+#, markdown-text, no-wrap
+msgid ""
+"**Before we start:** The data sources always follow the same scheme. We\n"
+"reduced below information to `name`, `time field name` and `index name`.\n"
+"Everything else relies on your environment and is out of our scope.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/reporting-grafana.md:48
+#, no-wrap
+msgid ""
+"Replace `zammad_production_` with your fitting prefix.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip|details How to query the index?)
+#: src/en/tutorials/reporting-grafana.md:48
+#, no-wrap
+msgid ""
+"Adjust the following command to your environment:\n"
+"\n"
+"```sh\n"
+"curl http://localhost:9200/_aliases?pretty=true\n"
+"```\n"
+"\n"
+"This will return an output like the following:\n"
+"```\n"
+"{\n"
+"  \"zammad_production_knowledge_base_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket_priority\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_stats_store\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_organization\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_cti_log\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_group\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_knowledge_base_answer_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket_state\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_chat_session\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_user\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_knowledge_base_category_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  }\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:102
+#, markdown-text, no-wrap
+msgid "ES - Chat Sessions"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:106
+#, markdown-text
+msgid "Index name: `zammad_production_chat_session`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:106
+#: src/en/tutorials/reporting-grafana.md:126
+#, markdown-text
+msgid "Time field name: `created_at`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:107
+#, markdown-text, no-wrap
+msgid "ES - CTI Log"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:111
+#, markdown-text
+msgid "Index name: `zammad_production_cti_log`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:111
+#, markdown-text
+msgid "Time field name: `start_at`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:112
+#, markdown-text, no-wrap
+msgid "ES - Ticket Articles"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:116
+#: src/en/tutorials/reporting-grafana.md:121
+#: src/en/tutorials/reporting-grafana.md:126
+#: src/en/tutorials/reporting-grafana.md:131
+#, markdown-text
+msgid "Index name: `zammad_production_ticket`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:116
+#, markdown-text
+msgid "Time field name: `article.created_at`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:117
+#, markdown-text, no-wrap
+msgid "ES - Tickets by closed_at"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:121
+#, markdown-text
+msgid "Time field name: `close_at`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:122
+#, markdown-text, no-wrap
+msgid "ES - Tickets by created_at"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:127
+#, markdown-text, no-wrap
+msgid "ES - Tickets by first_response_at"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:131
+#, markdown-text
+msgid "Time field name: `first_response_at`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:134
+#, markdown-text
+msgid ""
+"With above data sources you basically have everything you need to start "
+"building your own dashboards."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/reporting-grafana.md:135
+#, markdown-text, no-wrap
+msgid "Quick Start with Dashboard Template"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:140
+#, markdown-text
+msgid ""
+"If you want to get inspired, you can use our sample dashboards as mentioned "
+"below. These dashboards can also be found on "
+"[GitHub](https://github.com/zammad/grafana-dashboards)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:141
+#, markdown-text, no-wrap
+msgid "Importing a Dashboard"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:147
+#, markdown-text, no-wrap
+msgid ""
+"In Grafana, select *➕ > Import* (or any other place which offers you to "
+"import\n"
+"a dashboard) and either upload the json file you\n"
+"downloaded from Github or use the grafana.com ID, provided as badge\n"
+"like <Badge type=\"info\" text=\"12345\"/> attached to the next sections "
+"titles.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:151
+#, markdown-text
+msgid ""
+"During importing you can provide a dashboard name and folder. You'll also be "
+"asked to map the data sources to your environment. If you used our data "
+"source names above, you can simply search for the same name."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:152
+#, markdown-text, no-wrap
+msgid "Ticket Statistics Dashboard <Badge type=\"info\" text=\"14222\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:155
+#, markdown-text
+msgid "![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/reporting-grafana.md:156
+#: src/en/tutorials/reporting-grafana.md:188
+#: src/en/tutorials/reporting-grafana.md:212
+#, markdown-text, no-wrap
+msgid "Dashboard Graphs"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:161
+#, markdown-text
+msgid "ticket opening and closing[^1]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:161
+#, markdown-text
+msgid "created articles"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:161
+#, markdown-text
+msgid "ticket SLA (in time *and* violation) per type[^2][^3]"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/reporting-grafana.md:162
+#, markdown-text, no-wrap
+msgid "Ticket and Article Meta Information"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "ticket group distribution"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "sender ratio (e.g. Customer / Agent)[^4]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "article type ratio (e.g. email, phone)[^5]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "article content type"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "escalation ratios[^6]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "average first response, update time and close time[^7]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#: src/en/tutorials/reporting-grafana.md:203
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "top 10 of:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "organization of ticket customer[^8]"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "ticket customers[^9]"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "ticket owners[^10]"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "average accounted time on ticket"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "ticket tags[^11]"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:177
+#, markdown-text
+msgid "last 10 escalated tickets"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/reporting-grafana.md:178
+#: src/en/tutorials/reporting-grafana.md:204
+#: src/en/tutorials/reporting-grafana.md:225
+#, markdown-text, no-wrap
+msgid "Required Data Sources"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:183
+#, markdown-text
+msgid "`ES - Ticket Articles`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:183
+#, markdown-text
+msgid "`ES - Tickets by created_at`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:183
+#, markdown-text
+msgid "`ES - Tickets by closed_at`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:184
+#, markdown-text, no-wrap
+msgid "Chat-Session Statistics Dashboard <Badge type=\"info\" text=\"14224\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:187
+#, markdown-text
+msgid "![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:191
+#, markdown-text
+msgid "Chat session creations."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/reporting-grafana.md:192
+#: src/en/tutorials/reporting-grafana.md:216
+#, markdown-text, no-wrap
+msgid "Chat Session Meta Information"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "chat tags"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "chat agents"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "chat exit pages"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "city origins"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "chat topic ratio"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "average number of messages within chat-sessions"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "average chatting time"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:203
+#, markdown-text
+msgid "world map with chat origin countries"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:207
+#, markdown-text
+msgid "`ES - Chat Sessions`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/reporting-grafana.md:208
+#, markdown-text, no-wrap
+msgid "CTI-Log Statistics Dashboard <Badge type=\"info\" text=\"14223\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:211
+#, markdown-text
+msgid "![Grafana Call Dashboard](/screenshots/reporting/calls.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:215
+#, markdown-text
+msgid "Number of calls per direction (in / out)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "call ratio (in / out)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "average waiting time"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "average talking time"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "callers (in)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/reporting-grafana.md:224
+#, markdown-text
+msgid "call answerers (in)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/reporting-grafana.md:228
+#, markdown-text
+msgid "`ES - CTI Log`"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:230
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:232
+#: src/en/tutorials/reporting-grafana.md:235
+#: src/en/tutorials/reporting-grafana.md:249
+#: src/en/tutorials/reporting-grafana.md:255
+#: src/en/tutorials/reporting-grafana.md:258
+#: src/en/tutorials/reporting-grafana.md:261
+#: src/en/tutorials/reporting-grafana.md:264
+#, markdown-text, no-wrap
+msgid "    means we can only display the *last* value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:233
+#, no-wrap
+msgid "[^2]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:236
+#, no-wrap
+msgid "[^3]: Requires SLA function to be active. Negative values indicate SLA"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:238
+#: src/en/tutorials/reporting-grafana.md:252
+#, markdown-text, no-wrap
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:239
+#, no-wrap
+msgid "[^4]: Specific reference IDs are not the same on every instance and thus"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:242
+#: src/en/tutorials/reporting-grafana.md:246
+#, markdown-text, no-wrap
+msgid ""
+"    the panel may not work or show incorrect data. Check the panels\n"
+"    description on how to find our the relations on your system.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:243
+#, no-wrap
+msgid "[^5]: Specific reference IDs are not the same on every instance and thus"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:247
+#, no-wrap
+msgid "[^6]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:250
+#, no-wrap
+msgid "[^7]: Requires SLA function to be active. Negative values indicate SLA"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:253
+#, no-wrap
+msgid "[^8]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:256
+#, no-wrap
+msgid "[^9]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:259
+#, no-wrap
+msgid "[^10]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:262
+#, no-wrap
+msgid "[^11]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/tutorials/sso-kerberos.md:1
+#, no-wrap
+msgid "Single Sign-on with Kerberos"
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/sso-kerberos.md:6
+#, markdown-text, no-wrap
+msgid ""
+"Single Sign-On for Kerberos <Badge type=\"warning\" text=\"on-premise "
+"only\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:10
+#, markdown-text
+msgid ""
+"This guide will discuss how to set up single sign-on using Microsoft Active "
+"Directory."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:11
+#, markdown-text, no-wrap
+msgid "Conceptual Overview"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:16
+#, markdown-text
+msgid ""
+"Like every other web application out there, Zammad has its own logic for "
+"signing users up, storing their passwords, authenticating them, and managing "
+"their sessions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:22
+#, markdown-text
+msgid ""
+"If your IT department keeps its own user identity store (like Active "
+"Directory), Zammad's SSO support allows you to leverage that existing auth "
+"system so that anyone with an account on your local intranet will 1) "
+"automatically have an account in Zammad and 2) be able to log in with a "
+"single click."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/sso-kerberos.md:23
+#, no-wrap
+msgid ""
+"If you don't have this IT infrastructure but still want one-click\n"
+"login, you can use alternatives like Github, Google, Facebook and more.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:28
+#, markdown-text, no-wrap
+msgid "How Does it Work?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:34
+#, markdown-text
+msgid ""
+"Once enabled, single sign-on activates an endpoint at "
+"`https://your.zammad.host/auth/sso`. When the Zammad server receives a GET "
+"request at this endpoint with a valid username in **any one of the "
+"following** entities, it creates a new session for that user:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:38
+#, markdown-text
+msgid "an `X-Forwarded-User` request header"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:38
+#, markdown-text
+msgid "a `REMOTE_USER` web server environment variable"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:38
+#, markdown-text
+msgid "an `HTTP_REMOTE_USER` web server environment variable"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:40
+#, no-wrap
+msgid ""
+"**Wait. SSO allows you to sign in with only a username?**\n"
+"\n"
+"In principle, yes.\n"
+"\n"
+"**How is that okay?**\n"
+"\n"
+"In this guide, we configure our web server (Apache) to intercept all\n"
+"requests to the `/auth/sso` endpoint. Instead of forwarding them to\n"
+"Zammad, Apache initiates a three-sided login process (*Kerberos\n"
+"authentication*) between the itself, the user, and the Active\n"
+"Directory server.\n"
+"\n"
+"If Active Directory doesn't recognize the user or their password,\n"
+"Zammad never sees the request, and the session is never created.\n"
+"\n"
+"**What does this all mean?**\n"
+"\n"
+"It means there are many ways you could set up SSO—you don't need to\n"
+"follow this guide or even use Active Directory or Kerberos—but if you\n"
+"don't know what you're doing, you're going to end up with a *massive*\n"
+"security hole.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:64
+#, markdown-text, no-wrap
+msgid "Getting Started"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/sso-kerberos.md:66
+#, no-wrap
+msgid ""
+"**Too busy to handle it on your own?**\n"
+"\n"
+"We've got you covered. Our experts offer custom-tailored workshops to\n"
+"get your team up and running fast and with confidence. [Just drop us a\n"
+"line](https://zammad.com/contact)!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:75
+#, markdown-text
+msgid "You will need:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "a Microsoft Active Directory environment with"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "root access"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "support for AES 256-bit encryption"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "a Zammad host with"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "a fully-qualified domain name (FQDN)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:83
+#, markdown-text
+msgid "some familiarity with system administration (e.g. Apache configuration)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:88
+#, markdown-text, no-wrap
+msgid ""
+"For best results, set up the LDAP integration to make sure\n"
+"your Active Directory and Zammad user accounts are always in sync. You\n"
+"can find it in Zammad's admin interface under\n"
+"*Settings > Security > Third-party Applications*.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:89
+#, markdown-text, no-wrap
+msgid "Step 1: Configure Active Directory"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:95
+#, markdown-text
+msgid ""
+"In the Kerberos authentication scheme, the **authentication server** (Active "
+"Directory) needs to maintain shared secrets with the **service** "
+"(Zammad). To make this possible, we need to register a **service principal "
+"name** (SPN) for Zammad on Active Directory."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:96
+#, no-wrap
+msgid "These directions have been confirmed on Windows Server 2016.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:100
+#, markdown-text, no-wrap
+msgid "1a. Create a service account"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:104
+#, markdown-text
+msgid ""
+"You may use an existing service account if you have one. Admin privileges "
+"are not required; a normal user account will do."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:106
+#, markdown-text
+msgid ""
+"![Screenshot Active Directory service account "
+"settings](/screenshots/sso-kerberos/active-directory-service-account-settings.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:107
+#, markdown-text, no-wrap
+msgid "1b. Reset Password"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:111
+#, markdown-text
+msgid ""
+"Reset service account password after enabling the \"This account supports "
+"Kerberos AES 256 bit encryption\"."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:112
+#, markdown-text, no-wrap
+msgid "1c. Register a SPN for Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:115 src/en/tutorials/sso-kerberos.md:339
+#, markdown-text
+msgid "Replace the following placeholders in the commands below:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:344
+#: src/en/tutorials/sso-kerberos.md:412
+#, markdown-text
+msgid "`<zammad-host>`: Zammad FQDN"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:122
+#, markdown-text
+msgid "`<service-acct>`: Service account logon name"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:122
+#, markdown-text
+msgid ""
+"`<password>`: Password of the service account (Option `/pass *` did prove to "
+"not work)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:299
+#: src/en/tutorials/sso-kerberos.md:344 src/en/tutorials/sso-kerberos.md:412
+#, markdown-text
+msgid "`<domain>`: Windows domain"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:122
+#, markdown-text
+msgid "`<master-domain-controller>`: Master domain controller IP/FQD"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:124
+#, markdown-text
+msgid "The commands below will prompt for the users password:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:125
+#, no-wrap
+msgid "setspn -s HTTP/<zammad-host> <service-acct>\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:128
+#, no-wrap
+msgid ""
+"ktpass /princ HTTP/<zammad-host>@<DOMAIN> \\\n"
+"        /mapuser <service-acct> \\\n"
+"        /crypto AES256-SHA1 \\\n"
+"        /ptype KRB5_NT_PRINCIPAL \\\n"
+"        /pass <password> -SetPass +DumpSalt \\\n"
+"        /target <master-domain-controller> \\\n"
+"        /out zammad.keytab\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:138
+#, markdown-text, no-wrap
+msgid "1d. Note the secret key and version number"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:142
+#, markdown-text
+msgid "The output of the command above contains important data for Step 2e below:"
+msgstr ""
+
+#. type: Fenced code block
+#: src/en/tutorials/sso-kerberos.md:143
+#, no-wrap
+msgid ""
+"Using legacy password setting method\n"
+"Failed to set property 'servicePrincipalName' to 'HTTP/<zammad-host>' on Dn "
+"'CN=Zammad Service,DC=<domain>,DC=<tld>': 0x13.\n"
+"WARNING: Unable to set SPN mapping data.\n"
+"If <service-acct> already has an SPN mapping installed for "
+"HTTP/<zammad-host>, this is no cause for concern.\n"
+"Building salt with principalname HTTP/<zammad-host> and domain <domain> "
+"(encryption type 18)...\n"
+"Hashing password with salt \"<domain><service-acct>\".\n"
+"Key created.\n"
+"Output keytab to zammad.keytab:\n"
+"Keytab version: 0x502\n"
+"keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype "
+"0x12 (AES256-SHA1) keylength 32 "
+"(0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) // "
+"[!code focus]\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:157
+#, markdown-text
+msgid "On the last line, take note of:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:160
+#, markdown-text
+msgid "the secret key in parentheses at the end (**0x5ee827...**)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:160
+#, markdown-text
+msgid "the secret key version number preceded by `vno` (**3**)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:161
+#, markdown-text, no-wrap
+msgid "Step 2: Remove NGINX, Set up Apache + Kerberos"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:165
+#, markdown-text
+msgid ""
+"Next, the Zammad host must be configured to support Kerberos (and to accept "
+"auth credentials provided by the Active Directory server)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:169
+#, markdown-text
+msgid ""
+"In most cases, you would have to recompile NGINX from source with an extra "
+"module to enable Kerberos support. To get around this, we will use Apache, "
+"which offers Kerberos support through a plug-in module instead."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:170
+#, no-wrap
+msgid "All commands in this section must be run as root (or with `sudo`).\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:174
+#, markdown-text, no-wrap
+msgid "2a. Turn Off NGINX"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/sso-kerberos.md:176
+#, no-wrap
+msgid ""
+"This will take your Zammad instance **offline** until Apache is fully\n"
+"configured and running.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:182
+#, markdown-text
+msgid "Turn off nginx:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:182
+#, no-wrap
+msgid "systemctl stop nginx\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:186
+#, markdown-text
+msgid "Keep it off after reboot:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:186
+#, no-wrap
+msgid "$ systemctl disable nginx\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:193
+#, markdown-text
+msgid ""
+"If you wish to minimize downtime, you can save this step for last; just bear "
+"in mind that Apache will not start if the port it wants to listen on is "
+"being used by NGINX."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:196
+#, markdown-text
+msgid ""
+"If for any reason you can't complete this tutorial, simply turn off Apache "
+"and restore NGINX:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/tutorials/sso-kerberos.md:197
+#, no-wrap
+msgid ""
+"```sh\n"
+"systemctl stop apache2\n"
+"```\n"
+"```sh\n"
+"systemctl disable apache2\n"
+"```\n"
+"```sh\n"
+"systemctl enable nginx\n"
+"```\n"
+"```sh\n"
+"systemctl start nginx\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:212
+#, markdown-text, no-wrap
+msgid "2b. Pre-Configure Apache"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:217
+#, markdown-text
+msgid ""
+"This documentation expects a already working Apache configuration.  You "
+"should have a look at the [webserver configuration "
+"guide](/en/tutorials/webserver-config.md) before continuing."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:218
+#, markdown-text, no-wrap
+msgid "2c. Install Further Apache Dependencies"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:220
+#, no-wrap
+msgid ""
+"\n"
+"=== Debian & Ubuntu\n"
+"\n"
+"```sh\n"
+"apt update\n"
+"```\n"
+"```sh\n"
+"apt install krb5-user libapache2-mod-auth-gssapi\n"
+"```\n"
+"\n"
+"=== CentOS\n"
+"\n"
+"```sh\n"
+"yum install krb5-workstation mod_auth_kerb\n"
+"```\n"
+"\n"
+"=== OpenSUSE\n"
+"\n"
+"```sh\n"
+"zypper ref\n"
+"```\n"
+"```sh\n"
+"zypper install krb5-client apache2-mod_auth_kerb\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:248
+#, markdown-text, no-wrap
+msgid "2d. Enable Apache Modules"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:252
+#, markdown-text
+msgid ""
+"SSO requires modules that are not enabled by default. By default you can use "
+"`a2enmod` to do so."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:254
+#, no-wrap
+msgid ""
+"\n"
+"=== a2enmod (Debian & Ubuntu)\n"
+"\n"
+"```sh\n"
+"a2enmod auth_gssapi rewrite\n"
+"```\n"
+"```sh\n"
+"systemctl restart apache2\n"
+"```\n"
+"\n"
+"=== a2enmod (OpenSUSE)\n"
+"\n"
+"```sh\n"
+"a2enmod auth_kerb rewrite\n"
+"```\n"
+"```sh\n"
+"systemctl restart apache2\n"
+"```\n"
+"\n"
+"=== via configuration file (CentOS)\n"
+"\n"
+"add/uncomment the appropriate `LoadModule` statements in your Apache\n"
+"config:\n"
+"\n"
+"```\n"
+"# /etc/httpd/conf/httpd.conf\n"
+"\n"
+"LoadModule auth_kerb_module /usr/lib/apache2/modules/mod_auth_kerb.so\n"
+"LoadModule rewrite_module modules/mod_rewrite.so\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:288
+#, markdown-text, no-wrap
+msgid "2e. Configure Kerberos"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:292
+#, markdown-text
+msgid ""
+"Kerberos realm configuration is how you tell the Zammad server how to reach "
+"the *domain controller* (Active Directory server)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:294
+#, markdown-text
+msgid "Replace the following placeholders in the sample config below:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:299
+#, markdown-text
+msgid "`<domain-controller>`: Domain controller IP/FQDN(s)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:299
+#, markdown-text
+msgid ""
+"`<master-domain-controller>`: Master domain controller IP/FQDN (must not be "
+"read-only, but can be the same as `<domain-controller>`)"
+msgstr ""
+
+#. type: Fenced code block
+#: src/en/tutorials/sso-kerberos.md:300
+#, no-wrap
+msgid ""
+"# /etc/krb5.conf\n"
+"\n"
+"[libdefaults]\n"
+"   default_realm = <DOMAIN>\n"
+"\n"
+"   default_tkt_enctypes = aes256-cts-hmac-sha1-96\n"
+"   default_tgs_enctypes = aes256-cts-hmac-sha1-96\n"
+"   permitted_enctypes = aes256-cts-hmac-sha1-96\n"
+"\n"
+"   kdc_timesync = 1\n"
+"   ccache_type = 4\n"
+"   forwardable = false\n"
+"   proxiable = false\n"
+"   fcc-mit-ticketflags = false\n"
+"\n"
+"[realms]\n"
+"         # multiple KDCs ok (one `kdc = ...` definition per line)\n"
+"         <DOMAIN> = {\n"
+"                  kdc = <domain-controller>\n"
+"                  admin_server = <master-domain-controller>\n"
+"                  default_domain = <domain>\n"
+"\n"
+"                  # below is only for GSSAPI\n"
+"                  auth_to_local = "
+"RULE:[1:$1@$0](.*@<domain>)s/@<domain>$//\n"
+"                  auth_to_local = DEFAULT\n"
+"         }\n"
+"\n"
+"[domain_realm]\n"
+"         .<domain> = <DOMAIN>\n"
+"         <domain> = <DOMAIN>\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:333
+#, markdown-text, no-wrap
+msgid "2f. Generate Keytab"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:337
+#, markdown-text
+msgid ""
+"Apache needs a Kerberos *keytab* (key table) to manage its shared secrets "
+"with the domain controller."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:344
+#, markdown-text
+msgid "`<secret-key>`: Secret key (**omit the leading** `0x`)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:344
+#, markdown-text
+msgid "`<vno>`: Secret key version number"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:347
+#, markdown-text
+msgid ""
+"The secret key and version number were found in `sso-register-spn` (Step 1d)  "
+"above."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:349
+#, markdown-text
+msgid "Enter ktutil:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:349
+#, no-wrap
+msgid "ktutil\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:353
+#, markdown-text
+msgid "Add keytab:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:353
+#, no-wrap
+msgid ""
+"ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts\n"
+"Key for HTTP/<zammad-host>@<domain> (hex): <secret-key>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:358
+#, markdown-text
+msgid "Confirm the entry was added successfully:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:358
+#, no-wrap
+msgid ""
+"ktutil: list\n"
+"slot KVNO Principal\n"
+"---- ---- ---------------------------------------------------------------\n"
+"   1    3 HTTP/<zammad-host>@<DOMAIN>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:365
+#, markdown-text
+msgid "Write keytab to disk:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:365
+#, no-wrap
+msgid "ktutil: wkt /root/zammad.keytab\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:369
+#, markdown-text
+msgid "Leave ktutil:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:369
+#, no-wrap
+msgid "ktutil: quit\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:375
+#, markdown-text
+msgid ""
+"Then, place the keytab in the Apache config directory and set the "
+"appropriate permissions:"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:376
+#, no-wrap
+msgid ""
+"\n"
+"=== Debian, Ubuntu, OpenSUSE\n"
+"\n"
+"```sh\n"
+"mv /root/zammad.keytab /etc/apache2/\n"
+"```\n"
+"```sh\n"
+"chown root:www-data /etc/apache2/zammad.keytab\n"
+"```\n"
+"```sh\n"
+"chmod 640 /etc/apache2/zammad.keytab\n"
+"```\n"
+"\n"
+"=== CentOS\n"
+"\n"
+"```sh\n"
+"mv /root/zammad.keytab /etc/httpd/\n"
+"```\n"
+"```sh\n"
+"chown root:apache /etc/httpd/zammad.keytab\n"
+"```\n"
+"```sh\n"
+"chmod 640 /etc/httpd/zammad.keytab\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:403
+#, markdown-text, no-wrap
+msgid "2g. Configure Apache"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:407
+#, markdown-text
+msgid ""
+"Add the following directive to the end of the virtual host configuration "
+"file to create your Kerberos SSO endpoint at `/auth/sso`:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:409
+#, markdown-text
+msgid "Replace the following placeholders in the command below:"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:414
+#, no-wrap
+msgid ""
+"\n"
+"=== Debian & Ubuntu\n"
+"\n"
+"``` apache\n"
+"# /etc/apache2/sites-available/zammad.conf\n"
+"\n"
+"<LocationMatch \"/auth/sso\">\n"
+"   SSLRequireSSL\n"
+"   AuthType GSSAPI\n"
+"   AuthName \"Your Zammad\"\n"
+"   GssapiBasicAuth On\n"
+"   GssapiCredStore keytab:/etc/apache2/zammad.keytab\n"
+"   GssapiLocalName On\n"
+"   require valid-user\n"
+"\n"
+"   RewriteEngine On\n"
+"   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
+"   RewriteRule . - [E=RU:%1,NS]\n"
+"   RequestHeader set X-Forwarded-User \"%{RU}e\" env=RU\n"
+"</LocationMatch>\n"
+"```\n"
+"\n"
+"=== CentOS & OpenSUSE\n"
+"\n"
+"The configuration for CentOS and OpenSUSE below contains two\n"
+"`Krb5KeyTab` lines! Keep only the one you need.\n"
+"\n"
+"``` apache\n"
+"# /etc/apache2/sites-available/zammad.conf\n"
+"\n"
+"<LocationMatch \"/auth/sso\">\n"
+"   SSLRequireSSL\n"
+"   AuthType Kerberos\n"
+"   AuthName \"Your Zammad\"\n"
+"   KrbMethodNegotiate On\n"
+"   KrbVerifyKDC On\n"
+"   KrbMethodK5Passwd On\n"
+"   KrbAuthRealms <DOMAIN>\n"
+"   KrbLocalUserMapping on                 # strips @REALM suffix from "
+"REMOTE_USER variable\n"
+"   KrbServiceName HTTP/<zammad-host>@<DOMAIN>\n"
+"   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian, & openSUSE\n"
+"   Krb5KeyTab /etc/httpd/zammad.keytab    # CentOS\n"
+"   require valid-user\n"
+"\n"
+"   RewriteEngine On\n"
+"   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
+"   RewriteRule . - [E=RU:%1,NS]\n"
+"   RequestHeader set X-Forwarded-User \"%{RU}e\" env=RU\n"
+"</LocationMatch>\n"
+"```\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:467
+#, markdown-text, no-wrap
+msgid "2g. Restart Apache to Apply Changes"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:469
+#: src/en/tutorials/webserver-config.md:167
+#, no-wrap
+msgid "systemctl restart apache2\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:473
+#, markdown-text, no-wrap
+msgid "Step 3: Enable SSO in Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:477
+#, markdown-text, no-wrap
+msgid ""
+"Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
+"*Settings > Security > Third-Party Applications*\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:481
+#, markdown-text, no-wrap
+msgid ""
+"> [!NOTE]\n"
+"> On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
+"> to sign in.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/sso-kerberos.md:482
+#, markdown-text, no-wrap
+msgid "Step 4: Configure Client System (Windows Only)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:486
+#, markdown-text
+msgid ""
+"For the full SSO experience (i.e. for passwordless one-click sign-in), "
+"Zammad users must:"
+msgstr ""
+
+#. type: Bullet: '1.  '
+#: src/en/tutorials/sso-kerberos.md:490
+#, markdown-text
+msgid "be on the Active Directory server's local intranet; and"
+msgstr ""
+
+#. type: Bullet: '2.  '
+#: src/en/tutorials/sso-kerberos.md:490
+#, markdown-text
+msgid ""
+"modify their network settings for the Zammad host to be treated as a local "
+"intranet server."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:493
+#, markdown-text
+msgid ""
+"Without this step, users must enter their Active Directory credentials "
+"during SSO."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:494
+#, no-wrap
+msgid ""
+"\n"
+"=== IE / Edge / Chromium\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tip)
+#: src/en/tutorials/sso-kerberos.md:494
+#, no-wrap
+msgid ""
+"This setting can be centrally managed across the entire intranet using\n"
+"a **group policy object** (GPO).\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tip)
+#: src/en/tutorials/sso-kerberos.md:494
+#, no-wrap
+msgid ""
+"\n"
+"1. Add your Zammad FQDN in Internet Options under *Security > Local\n"
+"   Intranet > Sites > Advanced*.\n"
+"2. Select \"Require server verification (https:) for all sites in this\n"
+"   zone\".\n"
+"3. Under *Security level for this zone > Custom level... > Settings\n"
+"   \\> User Authentication > Logon*, select \"Automatic logon only in\n"
+"   Intranet Zone\".\n"
+"\n"
+"=== Firefox\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|info)
+#: src/en/tutorials/sso-kerberos.md:494
+#, no-wrap
+msgid ""
+"This option cannot be centrally managed because it is set in the\n"
+"browser rather than Windows Settings.\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/sso-kerberos.md:494
+#, no-wrap
+msgid ""
+"\n"
+"1.  Enter `about:config` in the address bar. Click **Accept the risk and\n"
+"    continue**.\n"
+"2.  Search for the `network.negotiate-auth.trusted-uris` option.\n"
+"3.  Double-click to edit, then add your Zammad FQDN.\n"
+"4.  Restart Firefox to apply your changes.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:533
+#, markdown-text
+msgid ""
+"Are all relevant FQDNs/hostnames reachable from your Active Directory and "
+"Zammad servers (including each other's)?"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:533
+#, markdown-text
+msgid ""
+"Are the system clocks of your Active Directory and Zammad servers "
+"synchronized within five minutes of each other? Kerberos is a time-sensitive "
+"protocol!"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:534
+#, markdown-text, no-wrap
+msgid "Errors in Apache Logs"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/tutorials/sso-kerberos.md:536
+#, no-wrap
+msgid ""
+"**Try raising your Apache log level temporarily.**\n"
+"\n"
+"Add `LogLevel debug` to your virtual host configuration, then restart\n"
+"the service to apply the changes.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:543
+#, markdown-text, no-wrap
+msgid "An unsupported mechanism was requested"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:546
+#, markdown-text
+msgid ""
+"Does your Active Directory service account have **Kerberos AES 256-bit "
+"encryption** enabled?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:550
+#, markdown-text
+msgid ""
+"If for some reason your server does not support AES 256-bit encryption, the "
+"LDAP Wiki has [more information about Kerberos encryption "
+"types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes)."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:551
+#, markdown-text, no-wrap
+msgid "Failed to verify krb5 credentials: Key version is not available"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:554
+#, markdown-text, no-wrap
+msgid ""
+"Did you use the exact **version number** (`vno`) provided by `ktpass`\n"
+"when `generating your keytab <sso-generate-keytab>`?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:556 src/en/tutorials/sso-kerberos.md:562
+#, markdown-text
+msgid "Try generating it again, just to be sure."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:557
+#, markdown-text, no-wrap
+msgid ""
+"Unspecified GSS failure. Minor code may provide more information (, No key "
+"table entry found for HTTP/FQDN@DOMAIN)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:560
+#, markdown-text, no-wrap
+msgid ""
+"Does the **service name** you provided to `setspn` exactly match the one\n"
+"you used when `generating your keytab <sso-generate-keytab>`?\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:563
+#, markdown-text, no-wrap
+msgid "No key table entry found for HTTP/FQDN@DOMAIN"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:566
+#, markdown-text
+msgid ""
+"Does your virtual host configuration's `KrbServiceName` setting exactly "
+"match the **service name** you provided to `setspn`?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:568
+#, markdown-text
+msgid "This setting is case-sensitive."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:569
+#, markdown-text, no-wrap
+msgid ""
+"Warning: received token seems to be NTLM, which isn't supported by the "
+"Kerberos module. Check your IE configuration"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:572
+#, markdown-text
+msgid ""
+"Is your Zammad host accessible at an FQDN? This error may indicate that you "
+"configured your Zammad host as a numeric IP address instead."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:573
+#, markdown-text, no-wrap
+msgid "Cannot decrypt ticket for HTTP/FQDN@DOMAIN"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:576
+#, markdown-text
+msgid ""
+"Did you make sure to change the password on your Active Directory service "
+"account *after enabling 256-bit AES encryption?*"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:579
+#, markdown-text
+msgid ""
+"And did you make sure to register the SPN (with `ktpass`) and generate your "
+"keytab (with `ktutil`) *after changing your password?*"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:585
+#, markdown-text, no-wrap
+msgid ""
+"Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.\n"
+"If no output is returned, you're good - if you see \"kinit:\n"
+"Preauthentication failed while getting initial credentials\" your\n"
+"credentials provided were wrong or you used `/pass *` during ktpass\n"
+"command.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:586
+#, markdown-text, no-wrap
+msgid ""
+"Failed when verifying KDC\" and \"failed to verify krb5 credentials: Decrypt "
+"integrity check failed"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:588
+#, markdown-text
+msgid "Ensure `KrbServiceName` is the correct ServiceName provided via setspn."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:590
+#, markdown-text
+msgid "Ensure your Active Directory supports the encryption method configured."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:593
+#, markdown-text
+msgid ""
+"If all above is correct and the rest of FAQ also is ensured, make sure your "
+"client does not cache the results. `klist purge` clears the clients cache - "
+"a reboot of your client would do too."
+msgstr ""
+
+#. type: Title #
 #: src/en/tutorials/webserver-config.md:1
 #: src/en/tutorials/webserver-config.md:6
 #, markdown-text, no-wrap
@@ -16661,12 +19296,6 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:164
 #, no-wrap
 msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:167
-#, no-wrap
-msgid "systemctl restart apache2\n"
 msgstr ""
 
 #. type: Fenced div block (details Config for CentOS)

@@ -3,6 +3,7 @@ import { defineConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { withSidebar } from 'vitepress-sidebar'
 import definitionListMarkdownPlugin from 'markdown-it-deflist'
+import footnote from 'markdown-it-footnote'
 import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
@@ -26,6 +27,7 @@ export default defineConfig(
       config(md) {
         md.use(tabsMarkdownPlugin)
           .use(definitionListMarkdownPlugin)
+          .use(footnote)
       },
     },
     locales: {
