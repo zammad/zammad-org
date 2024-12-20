@@ -5,7 +5,7 @@ title: Einführung
 
 # Einführung
 
-Zammad provides a powerful REST-API which allows all operations that are
+Zammad provides a powerful REST-API[^1] which allows all operations that are
 available via UI as well.
 
 This page gives you a first impression for things that generally count for
@@ -176,3 +176,4 @@ accordingly.
 If you want to learn more about URL encoding, [this Wikipedia
 article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
 
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
