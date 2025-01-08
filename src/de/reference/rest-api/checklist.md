@@ -1,32 +1,32 @@
 ---
 order: 2
-title: Checklist
+title: Checkliste
 ---
 
-# Checklist
+# Checkliste
 
-Zammad has different checklist endpoints:
+Zammad hat verschiedene Endpunkte für Checklisten:
 
-- [Checklists](#checklists)
-- [Checklist items](#checklist-items)
-- [Checklist templates](#checklist-templates)
-
-:::info
-*Checklist templates* include their items whereas the *standard
-checklist* has a separate item endpoint.
-:::
-
-## Checklists
+- [Checklisten](#checklisten)
+- [Checklisten-Elemente](#checklisten-elemente)
+- [Checklisten-Vorlagen](#checklisten-vorlagen)
 
 :::info
-To add checklist items, use the [checklist items endpoint](#checklist-items).
+*Checklisten-Vorlagen* enthalten ihre Elemente, während die *Standard
+Checkliste* einen eigenen Endpunkt für Elemente hat.
 :::
 
-### Show
+## Checklisten
 
-Required permission: `ticket.agent`
+:::info
+Um Elemente der Checkliste hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).
+:::
 
-`GET`-Request sent: `/api/v1/checklists/{checklist id}`
+### Anzeigen
+
+Erforderliche Berechtigung: `ticket.agent`
+
+`GET`-Anfrage gesendet: `/api/v1/checklists/{checklisten id}`
 
 ::: details Show response
 
@@ -34,11 +34,11 @@ Required permission: `ticket.agent`
 
 :::
 
-### Show By Ticket
+### Per Ticket anzeigen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklists/by_ticket/{ticket id}`
+`GET`-Anfrage gesendet: `/api/v1/checklists/by_ticket/{ticket id}`
 
 ::: details Show response
 
@@ -46,11 +46,11 @@ Required permission: `ticket.agent`
 
 :::
 
-### Create
+### Erstellen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklists`
+`POST`-Anfrage gesendet: `/api/v1/checklists`
 
 :::: details Show request/response
 
@@ -69,9 +69,9 @@ Required permission: `ticket.agent`
 
 ### Aktualisierung
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklists/{checklist id}`
+`PATCH`-Anfrage gesendet: `/api/v1/checklists/{checklisten id}`
 
 :::: details Show request/response
 
@@ -88,11 +88,11 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-### Delete
+### Löschen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklists/{checklist id}`
+`DELETE`-Anfrage gesendet: `/api/v1/checklists/{checklisten id}`
 
 ::: details Show response
 
@@ -100,13 +100,13 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Items
+## Checklisten-Elemente
 
-### Show
+### Anzeigen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`GET`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details Show response
 
@@ -114,11 +114,11 @@ Required permission: `ticket.agent`
 
 :::
 
-### Create
+### Erstellen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklist_items`
+`POST`-Anfrage gesendet: `/api/v1/checklist_items`
 
 :::: details Show request/response
 
@@ -137,9 +137,9 @@ Required permission: `ticket.agent`
 
 ### Aktualisierung
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`PATCH`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`
 
 :::: details Show request/response
 
@@ -156,11 +156,11 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-### Delete
+### Löschen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`DELETE`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details Show response
 
@@ -168,13 +168,14 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Templates
+## Checklisten-Vorlagen
 
-### Show
+### Anzeigen
 
-Required permission: `admin.checklists` or `ticket.agent`
+Erforderliche Berechtigung: `admin.checklists` oder `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`GET`-Anfrage gesendet: `/api/v1/checklist_templates/{checklist template
+id}`
 
 ::: details Show response
 
@@ -182,11 +183,11 @@ Required permission: `admin.checklists` or `ticket.agent`
 
 :::
 
-### Create
+### Erstellen
 
-Required permission: `admin.checklists`
+Erforderliche Berechtigung: `admin.checklists`
 
-`POST`-Request sent: `/api/v1/checklist_templates`
+`POST`-Anfrage gesendet: `/api/v1/checklist_templates`
 
 :::: details Show request/response
 
@@ -205,9 +206,10 @@ Required permission: `admin.checklists`
 
 ### Aktualisierung
 
-Required permission: `admin.checklists`
+Erforderliche Berechtigung: `admin.checklists`
 
-`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`PATCH`-Anfrage gesendet: `/api/v1/checklist_templates/{checklist template
+id}`
 
 :::: details Show request/response
 
@@ -224,11 +226,12 @@ Required permission: `admin.checklists`
 :::
 ::::
 
-### Delete
+### Löschen
 
-Required permission: `admin.checklists`
+Erforderliche Berechtigung: `admin.checklists`
 
-`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`DELETE`-Anfrage gesendet: `/api/v1/checklist_templates/{checklist template
+id}`
 
 :::details Show response
 

@@ -5,7 +5,7 @@ title: Priorities
 
 # Priorities
 
-## List
+## Auflisten
 
 Required permission: `admin.object` **or** `ticket.agent` **or**
 `ticket.customer`
@@ -18,7 +18,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `admin.object` **or** `ticket.agent` **or**
 `ticket.customer`
@@ -31,9 +31,9 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `POST`-Request sent: `/api/v1/ticket_priorities`
 
@@ -54,7 +54,7 @@ Required permission: `admin.object`
 
 ## Aktualisierung
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `PUT`-Request sent: `/api/v1/ticket_priorities/{id}`
 
@@ -73,9 +73,9 @@ Required permission: `admin.object`
 :::
 ::::
 
-## Delete
+## Löschen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
 

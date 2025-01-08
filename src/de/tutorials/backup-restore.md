@@ -252,8 +252,9 @@ socket connection which is why you didn't notice.
 
 **What to do?**
 
-Ensure that the provided user credentials are correct. You can also consider
-to use the `reset_db_password` script, you can find in the backup directory.
+Vergewissern Sie sich, dass die angegebenen Zugangsdaten des Benutzers
+korrekt sind. Sie können auch das Skript `reset_db_password` verwenden, das
+Sie im Backup-Verzeichnis finden.
 
 #### Ident Authentication Failed for User
 

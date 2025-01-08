@@ -5,7 +5,7 @@ title: 'Time Accounting'
 
 # Time Accounting
 
-## List
+## Auflisten
 
 Required permission: `ticket.agent` **or** `admin.time_accounting`
 
@@ -17,7 +17,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `ticket.agent` **or** `admin.time_accounting`
 
@@ -30,7 +30,7 @@ id}/time_accountings/{timeaccounting id}`
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `ticket.agent` **or** `admin.time_accounting`
 

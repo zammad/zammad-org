@@ -5,7 +5,7 @@ title: Organisation
 
 # Organisation
 
-## List
+## Auflisten
 
 Required permission: `ticket.agent` **or** `admin.organization`
 
@@ -33,7 +33,7 @@ Required permission: `ticket.agent` **or** `admin.organization`
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `ticket.agent` **or** `admin.organization`
 
@@ -49,7 +49,7 @@ Technically, any users in question can only see their own organization.
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `admin.organization`
 
@@ -92,7 +92,7 @@ Required permission: `admin.organization`
 ::::
 
 
-## Delete
+## Löschen
 
 Required permission: `admin.organization`
 

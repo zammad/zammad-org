@@ -18,7 +18,7 @@ Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifis
 
 - Eine funktionierende Docker Compose-Umgebung
 - Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Adjust your host's settings to run Elasticsearch properly:
+- Passen Sie die Einstellungen Ihres Hosts an, damit Elasticsearch ordnungsgemäß läuft:
     ```sh
     sysctl -w vm.max_map_count=262144
     ```

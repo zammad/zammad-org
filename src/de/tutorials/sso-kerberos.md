@@ -585,7 +585,8 @@ credentials provided were wrong or you used `/pass *` during ktpass
 command.
 
 #### Failed when verifying KDC" and "failed to verify krb5 credentials: Decrypt integrity check failed
-Ensure `KrbServiceName` is the correct ServiceName provided via setspn.
+Vergewissern Sie sich, dass `KrbServiceName` der richtige, über setspn
+bereitgestellte ServiceName ist.
 
 Ensure your Active Directory supports the encryption method configured.
 

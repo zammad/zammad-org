@@ -35,7 +35,7 @@ Ausgabe im Terminal (ohne sehen Sie nichts!).
 ```sh
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
-=== Package Installation
+=== Paket Installation
 
 ```sh
 zammad run rails r '{COMMAND}'
@@ -57,7 +57,7 @@ rails r '{COMMAND}'
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
-=== Package Installation
+=== Paket Installation
 
 ```sh
 zammad run rails c
@@ -308,21 +308,21 @@ session.save!(touch: false)
 end
 ```
 
-## Zammad Settings
+## Zammad Einstellungen
 
 In diesem Abschnitt finden Sie einige Einstellungen, die Sie auch in der
 Zammad-Benutzeroberfläche vornehmen können.
 
-### Auto Shutdown Setting
+### Auto Shutdown Einstellungen
 
-Defines if an automatic shutdown of Zammad is performed when the the
-database has been changed (e.g. after custom attributes have been created in
-the object manager).  The underlying system (Systemd, Docker, Kubernetes)
-will then restart the processes/containers after this shutdown. The default
-setting is `true`.
+Legt fest, ob ein automatisches Herunterfahren von Zammad durchgeführt wird,
+wenn die Datenbank geändert wurde (z.B. nachdem benutzerdefinierte Attribute
+im Objektmanager erstellt wurden).  Das zugrundeliegende System (Systemd,
+Docker, Kubernetes) wird dann die Prozesse/Container nach dem Herunterfahren
+neu starten. Die Standardeinstellung ist `true`.
 
-Setting this to ``false`` might only make sense in very rare cases and you
-have to restart the Zammad services then manually.
+Die Einstellung ``false`` macht nur in sehr seltenen Fällen Sinn und Sie
+müssen die Zammad Dienste dann manuell neu starten.
 
 ```ruby
 Setting.set('auto_shutdown', 'true')

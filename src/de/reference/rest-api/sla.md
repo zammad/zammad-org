@@ -9,7 +9,7 @@ title: SLA
 SLAs depend on [Zammad's calendars](/en/reference/rest-api/calendar).
 :::
 
-## List
+## Auflisten
 
 Required permission: `admin.sla`
 
@@ -23,7 +23,7 @@ Response:
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `admin.sla`
 
@@ -35,7 +35,7 @@ Required permission: `admin.sla`
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `admin.sla`
 
@@ -77,7 +77,7 @@ Required permission: `admin.sla`
 :::
 ::::
 
-## Delete
+## Löschen
 
 Required permission: `admin.sla`
 

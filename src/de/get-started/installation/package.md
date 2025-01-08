@@ -42,7 +42,7 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Only SLES - Not required for OpenSUSE:
+Nur SLES - Nicht notwendig unter OpenSUSE:
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
@@ -65,15 +65,15 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo apt install locales
 ```
 ```sh
@@ -83,15 +83,15 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === Debian
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo apt install locales
 ```
 ```sh
@@ -101,27 +101,27 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 === OpenSUSE/SLES
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 localectl status | grep LANG
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 ===CentOS/RHEL
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 :::
@@ -147,69 +147,69 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::tabs key:distros
 
 === Ubuntu
-Install repository key:
-```sh
+Installation des Repository Keys:
+``` sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Ubuntu 20.04
 
-```sh
+``` sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-```sh
+``` sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-```sh
+``` sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === Debian
-Install repository key:
-```sh
+Installation des Repository Keys:
+``` sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 Debian 11
 
-```sh
+``` sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-```sh
+``` sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 === OpenSUSE/SLES
-Install repository key:
-```sh
+Installation des Repository Keys:
+``` sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 OpenSUSE 15.x / SLES15
 
-```sh
+``` sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 ===CentOS/RHEL
-Install repository key:
-```sh
+Installation des Repository Keys:
+``` sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 CentOS 8 / RHEL 8
 
-```sh
+``` sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
@@ -254,7 +254,7 @@ sudo zypper install zammad
 sudo yum install zammad
 ```
 
-Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
+Auf Grund eines Problems im Zusammenhang mit packager.io müssen Sie die Dateiberechtigungen für öffentliche Dateien unter CentOS korrigieren:
 
 ```sh
 sudo chmod -R 755 /opt/zammad/public/

@@ -7,7 +7,7 @@ title: Tags
 
 ## Ticket Scope
 
-### List
+### Auflisten
 
 Required permission: `ticket.agent` **or** `admin.tag`
 
@@ -35,7 +35,7 @@ Zammad will return all tags that contain your search phrase.
 
 :::
 
-### Add
+### Hinzufügen
 
 Required permission: `ticket.agent` **or** `admin.tag`
 

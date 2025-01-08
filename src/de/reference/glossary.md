@@ -5,15 +5,16 @@ title: Glossar
 
 # Glossar
 
-Ever wondered what we mean by a specific term? We've been collecting the
-most relevant terms below for your insight.
+Haben Sie sich jemals gefragt, was wir mit bestimmten Begriffen meinen? Wir
+haben die wichtigsten Begrifflichkeiten unten für Ihr Verständnis
+zusammengetragen.
 
 ::: info
-Due to translation alphabetical sorting may be off in non english versions
-of this page.
+In der nicht englischen Version funktioniert die alphabetische Sortierung nicht
+auf dieser Seite.
 :::
 
-Quickly jump to...
+Schnell zu...
 
 [A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i)
 [J](#j) [K](#k) [L](#l) [M](#m)  [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r)
@@ -24,218 +25,216 @@ Quickly jump to...
 ## A
 
 Admin
-: An admin(istrator) is a user in Zammad who has special rights and manages your
-  Zammad. An admin can, for example, configure user permissions, time recording
-  settings, automation and text modules.
-  If you're looking for someone to adjust anything in your Zammad, your admin
-  is the right person to ask for.
+: Ein Admin(istrator) ist ein Benutzer in Zammad, der besondere Rechte hat und Ihre
+  Zammad verwaltet. Ein Admin kann z.B. Benutzerberechtigungen, Zeiterfassungs-Einstellungen,
+   Automatisierung und Textbausteine konfigurieren.
+  Wenn Sie jemanden suchen, der etwas in Ihrem Zammad anpassen kann, ist Ihr Admin
+  die richtige Person, die Sie fragen sollten.
 
 Agent
-: An agent is a user in Zammad who works on tickets and responds to customer
-  inquiries. Agents can be admins too, meaning that they can change settings,
-  user permissions and so on (see above).
+: Ein Agent ist ein Benutzer in Zammad, der Tickets bearbeitet und auf Kundenanfragen antwortet.
+  Agenten können auch Administratoren sein, was bedeutet, dass sie Einstellungen,
+  Benutzerrechte, etc. ändern können (siehe oben).
 
 API
-: An API (Application Programming Interface) is a set of rules and protocols
-  that allow different software applications to communicate with each other.
-  It allows you to connect third-party systems with your Zammad (e.g. social
-  media, messengers, monitoring tools).
+: Eine API (Application Programming Interface) ist ein Satz von Regeln und Protokollen
+  die es verschiedenen Softwareanwendungen ermöglichen, miteinander zu kommunizieren.
+  Es ermöglicht Ihnen, Systeme von Drittanbietern mit Ihrem Zammad zu verbinden (z.B. soziale
+  Medien, Messenger, Monitoring-Tools).
 
-  You can learn more on our
-  [API landing page](https://zammad.com/en/product/features/rest-api) as well
-  as in our [API reference](/en/reference/rest-api/intro).
+  Sie können mehr erfahren auf unserer
+  [API-Landingpage](https://zammad.com/de/product/features/rest-api) sowie
+  sowie in unserer [API-Referenz](/de/reference/rest-api/intro).
 
-Article
-: Each item within a ticket is called article. Ticket articles
-  can be internal (only agents can see them) or public
-  (customers can see them too; e.g. public notes or outgoing emails) and include
-  formatted text as well as attachments and inline images.
+Artikel
+: Jedes Element innerhalb eines Tickets wird als Artikel bezeichnet. Ticket-Artikel
+  können intern (nur Agenten können sie sehen) oder öffentlich sein (Kunden können sie
+  ebenfalls sehen; z.B. öffentliche Notizen oder ausgehende E-Mails) und können
+  formatierten Text sowie Anhänge und Inline-Bilder enthalten.
 
-Automation
-: There are many processes that can be automated with Zammad.
-  This means that certain actions take place automatically.
-  An automation can be time-based or action-based and should cover every
-  conceivable automation scenario.
-  An example could be the recurring deletion of customers who are no longer
-  needed or the assignment of groups based on ticket attributes.
+Automatisierung
+: Es gibt viele Prozesse, die mit Zammad automatisiert werden können.
+  Das bedeutet, dass bestimmte Aktionen automatisch ablaufen.
+  Eine Automatisierung kann zeitbasiert oder aktionsbasiert sein und kann alle
+  denkbaren Automatisierungsszenarien abdecken.
+  Ein Beispiel wäre die wiederkehrende Löschung von Kunden, die
+  nicht mehr benötigt werden oder die Zuweisung von Gruppen auf Basis von Ticket-Attributen.
 
-Autosave
-: Zammad's autosave feature makes sure that no work is lost. So if your browser
-  crashes, simply log in again and resume where you were before.
-  Learn more on our
-  [Autosave landing page](https://zammad.com/en/product/features/autosave).
+Automatisches Speichern (Autosave)
+: Die Autosave-Funktion von Zammad sorgt dafür, dass keine Arbeit verloren geht. Falls Ihr Browser
+  abstürzt, melden Sie sich einfach wieder an und machen dort weiter, wo Sie vorher waren.
+  Erfahren Sie mehr auf unserer
+  [Autosave Landing Page](https://zammad.com/de/product/features/autosave).
 
 ## B
 
 Branding
-: Every company has a different identity. This is why Zammad lets you add your
-  logo, signature, links and other things!
+: Jede Firma hat ihre eigene Identität. Deshalb können Sie bei Zammad Ihr
+  Logo, Ihre Signatur, Links und andere Dinge hinzufügen!
 
 ## C
 
 Changelog
-: With every new release comes a new changelog. It is basically a list of all
-  the things that have changed, from new enhancements to bug fixes.
+: Mit jeder neuen Version kommt ein neues Changelog. Es ist im Grunde eine Liste aller
+  Dinge, die sich geändert haben, von neuen Verbesserungen bis hin zu Fehlerkorrekturen.
 
-  You can find them all on our [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md)!
+  Sie finden sie alle auf unserem [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md)!
 
 Checkmk
-: Checkmk is a powerful IT monitoring tool that can send real-time status
-  alerts to Zammad via email or REST API. Set these alerts up in Checkmk,
-  and Zammad will automatically create, update and close tickets based on
-  the health of your system.
+: Checkmk ist ein leistungsstarkes IT-Überwachungstool, das Echtzeit-Statusmeldungen
+  per E-Mail oder REST API an Zammad senden kann. Richten Sie diese Warnungen in Checkmk ein
+  und Zammad wird automatisch Tickets erstellen, aktualisieren und schließen, basierend auf
+  dem Zustand Ihres Systems.
 
 Clearbit
-: Clearbit is a service designed to collect information on your
-  contacts. Thus, new queries from unknown users in Zammad can be automatically
-  enriched with information such as company, number of employees,
-  annual turnover, industry and much more.
+: Clearbit ist ein Dienst zum Sammeln von Informationen über Ihre
+  Kontakte. So können neue Anfragen von unbekannten Benutzern in Zammad automatisch
+  mit Informationen wie Firma, Anzahl der Mitarbeiter, Jahresumsatz, Branche
+  und vielem mehr anreichern.
 
-Conflict Warning
-: When two agents edit the same ticket at the same time, a lot can go wrong -
-  from duplicate replies to overwritten messages. Zammad helps you to avoid
-  this with its integrated conflict warning. So if you see another agent's
-  avatar and a little pen at the bottom of your ticket, it means the other agent
-  is currently editing it.
+Konfliktwarnung
+: Wenn zwei Agenten dasselbe Ticket gleichzeitig bearbeiten, kann eine Menge schief gehen -
+  von doppelten Antworten bis hin zu überschriebenen Nachrichten. Zammad hilft Ihnen
+  mit seiner integrierten Konfliktwarnung, dies zu vermeiden. Wenn Sie also einen anderen
+  Avatar eines Agenten und einen kleinen Stift am unteren Rand Ihres Tickets sehen, bedeutet das,
+  dass dieser es gerade bearbeitet.
 
-Content Sidebar
-: Right sidebar in the ticket view which includes the sidebar tabs and the
-  active sidebar (if opened).
+Inhalt-Seitenleiste
+: Rechte Seitenleiste in der Ticketansicht, die die Tabs der Seitenleiste
+  beinhaltet und die aktive Seitenleiste (falls geöffnet).
 
-Core Workflows
-: This feature allows you to configure dynamic fields and ticket masks based on
-  attribute available in Zammad. For example you can disable or hide fields,
-  make them visible based on other fields or attributes, make them mandatory and
-  much more!
+Core-Workflows
+: Mit dieser Funktion können Sie dynamische Felder und Ticket-Masken konfigurieren, die auf
+  Attributen, die in Zammad verfügbar sind, basieren. Sie können zum Beispiel Felder deaktivieren
+  oder ausblenden, Felder in Abhängigkeit von anderen Feldern einblenden, diese als Pflichtfeld definieren und
+  vieles mehr!
 
 CTI
-: CTI stands for Computer Telephony Integration and allows you to collect
-  detailed information on all your incoming and outgoing calls.
-  This includes, for example, a call log, an overview of which agent is
-  currently on a call, a caller ID search, and even a Do-Not-Disturb-Mode.
+: CTI steht für Computer-Telefonie-Integration und ermöglicht Ihnen,
+  detaillierte Informationen über alle Ihre eingehenden und ausgehenden Anrufe zu sammeln.
+  Dazu gehören z.B. ein Anrufprotokoll, eine Übersicht, welcher Agent
+  gerade im Gespräch ist, eine Anrufer-ID-Suche und sogar einen "Nicht stören"-Modus.
 
-Custom Development (CD)
-: We are constantly working on improving Zammad, and we keep adding new
-  features with every single release. However, sometimes our customers might
-  require a very specific new feature, addition, or adjustment that is either
-  very urgent or very particular to their individual use case.
-  This is when a custom development can take place: We offer the customer to
-  develop the desired feature at a price that we agree upon previously
-  (which is based on the expected hours needed for completion).
+Kundenspezifische Entwicklung (Custom Development; CD)
+: Wir arbeiten stetig daran Zammad zu verbessern und fügen mit jedem Release immer
+  weitere Funktionen hinzu. Es gibt allerdings Kunden, die sehr spezielle Funktionen
+  oder Anpassungen benötigen, die entweder sehr eilig oder sehr speziell für ihren
+  Anwendungsfall sind. Hier kann unser "Custom Development" helfen: Wir bieten
+  Kunden die Entwicklung zu einem zuvor vereinbarten Preis an (dieser basiert auf
+  den erwarteten Aufwand zur Fertigstellung).
 
-Customer
-: A customer is a person you communicate with via Zammad.
-  For each customer there is a profile page showing all the tickets and more
-  information. Customers can be assigned to one or more organizations.
-  Each customer can access their individual
-  Customer Interface, where they see all their tickets with the current
-  status and live updates.
+Kunde
+: Ein Kunde ist eine Person, mit der Sie über Zammad kommunizieren.
+  Für jeden Kunden gibt es eine Profilseite mit allen Tickets und weiteren
+  Informationen. Kunden können einer oder mehreren Organisationen zugewiesen werden.
+  Jeder Kunde kann über das Kundeninterface auf Zammad zugreifen, wo alle seine
+  Tickets mit dem aktuellen Status und Live-Aktualisierungen einsehbar sind.
 
 ## D
 
 Dashboard
-: The dashboard is the individual welcome page in Zammad and gives
-  you feedback about your work.
-  Here you can find all sorts of overviews, such as the open tickets,
-  the average waiting time, or the reopening rate. You can also see what your
-  colleagues are doing by checking the Activity Stream.
+: Das Dashboard ist die individuelle Begrüßungsseite in Zammad und gibt
+  Ihnen Feedback über Ihre Arbeit.
+  Hier finden Sie alle möglichen Übersichten, wie z.B. die offenen Tickets,
+  die durchschnittliche Wartezeit oder die Wiedereröffnungsrate. Sie können auch sehen,
+  was Ihre Kollegen tun, indem Sie den Aktivitäts-Verlauf einsehen.
 
 Dialog
-: A dialog is a element which pops up in the middle of the screen because of its
-  importance. An example could be the dialog which asks you to save or discard
-  your unsaved changes.
+: Ein Dialog ist ein Element, das auf Grund seiner Wichtigkeit in der Mitte des
+  Bildschirms auftaucht. Ein Beispiel dafür ist der Dialog, der Sie fragt, Ihre
+  ungespeicherten Änderungen zu speichern oder zu verwerfen.
 
-Documentation
-: You will probably have noticed already: you are reading a part of Zammad's
-  documentation. 😉
+Dokumentation
+: Sie haben es sicher schon gemerkt: Sie lesen gerade einen Teil der Dokumentation der
+  Zammad-Dokumentation 😉 .
 
 ## E
 
 Elasticsearch
-: Zammad offers an Elasticsearch integration (a free and open search engine)
-  that makes the search process within Zammad super fast and powerful. You
-  can even connect a reporting tool like Grafana to your Elasticsearch to
-  create powerful reports and statistics.
+: Zammad bietet eine Elasticsearch-Integration (eine freie und offene Suchmaschine)
+  die den Suchprozess in Zammad superschnell und leistungsstark macht. Sie
+  können sogar ein Berichts-Tool wie Grafana mit Elasticsearch verbinden, um
+  leistungsfähige Berichte und Statistiken zu erstellen.
 
-Escalation
-: An escalation is what happens after the deadline for a ticket has passed. You
-  can configure it with Zammad's SLAs. An escalated ticket is marked red in your
-  taskbar and the overviews.
+Eskalation
+: Eine Eskalation ist das, was passiert, nachdem die Frist für ein Ticket abgelaufen ist. Sie
+  können sie mit den SLAs von Zammad konfigurieren. Ein eskaliertes Ticket wird in Ihrer
+  Taskleiste und in den Übersichten rot markiert.
 
-Exchange Integration
-: The Exchange integration allows you to sync your contacts from your
-  Exchange address book to Zammad. Every time a contact is updated
-  in Exchange, it will be reflected in Zammad. This gives you direct
-  access to all your contacts in your Zammad.
+Exchange-Integration
+: Die Exchange-Integration ermöglicht Ihnen die Synchronisierung Ihrer Kontakte aus Ihrem
+  Exchange Adressbuch mit Zammad. Jedes Mal, wenn ein Kontakt in Exchange aktualisiert
+  wird, wird dies in Zammad reflektiert. Dies gibt Ihnen direkten Zugriff auf alle Ihre Kontakte
+  in Ihrem Zammad.
 
-External Authentication
-: External authentication is an easy, one-click option for your users to log
-  into Zammad. It has various benefits: not only is it faster but it also
-  means that your users will have to remember fewer passwords.
-  Zammad currently supports more than ten login providers, such as Facebook,
-  GitHub, GitLab, Google, or Microsoft / Office365.
+Externe Authentifizierung
+: Die externe Authentifizierung ist eine einfache Option für Ihre Benutzer, sich mit einem Klick
+  bei Zammad anzumelden. Sie hat verschiedene Vorteile: Sie ist nicht nur schneller, sondern bedeutet auch,
+  dass sich Ihre Benutzer weniger Passwörter merken müssen.
+  Zammad unterstützt derzeit mehr als zehn Login-Anbieter, wie z.B. Facebook,
+  GitHub, GitLab, Google, oder Microsoft / Office365.
 
 ## F
 
 Feature
-: A feature is a specific capability or functionality that Zammad provides to
-  you such as our integrations, productivity tools or additional channels.
-  We keep adding new features with every release.
+: Ein Feature ist eine bestimmte Fähigkeit oder Funktionalität, die Zammad Ihnen zur Verfügung
+  stellt wie z.B. unsere Integrationen, Produktivitätstools oder zusätzliche Kanäle.
+  Wir fügen mit jeder Version neue Funktionen hinzu.
 
-Feature Request
-: You can let us know if you are missing a particular feature in Zammad.
-  We collect all of your wishes in our community forum in the
-  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all).
-  If a request comes in regularly and we think that it would be a
-  great addition, we'll put it on our roadmap and start working on it.
+Feature-Anfrage
+: Lassen Sie uns wissen, wenn Sie eine bestimmte Funktion in Zammad vermissen.
+  Wir sammeln alle Ihre Wünsche in unserem Community-Forum in der
+  [Kategorie "Feature Requests" (https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all).
+  Wenn eine Anfrage regelmäßig eingeht und wir denken, dass es eine
+  großartige Ergänzung wäre, setzen wir sie auf unsere Roadmap und beginnen mit der Arbeit daran.
 
-Feature Sponsoring
-: If an organization urgently requires one of the features on the list,
-  they can fast-forward the development and put it on top of the list by
-  sponsoring it, which means that they cover the costs for the development.
+Feature-Sponsoring
+: Wenn eine Organisation ein Feature auf der Liste dringend benötigt,
+  kann sie die Entwicklung vorantreiben und die Priorität erhöhen, indem sie
+  es sponsert, d.h. die Entwicklungskosten übernimmt.
 
 ## G
 
 GitHub
-: GitHub is a service for the version management of software development
-  projects. It uses Git, a software that tracks changes in file sets.
-  Here at Zammad, we use it to maintain our repository.
+: GitHub ist ein Dienst für die Versionsverwaltung von Softwareentwicklungsprojekten.
+  Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.
+  Hier bei Zammad verwenden wir es, um unser Repository zu verwalten.
 
-  As Zammad is an open-source project, many developers and tech-lovers from all
-  over the world contribute to it. GitHub is where we coordinate all of this.
-  You can find the repository [here](https://github.com/zammad/zammad).
+  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen
+  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.
+  Sie finden das Repository [hier](https://github.com/zammad/zammad).
 
-  Besides our own repo, Zammad also has an integration for GitHub.
-  It creates a data exchange that shows you all relevant information about your
-  issues directly in a sidebar tab, such as status or assignees.
+  Neben unserem eigenen Repo hat Zammad auch eine Integration für GitHub.
+  Sie schafft einen Datenaustausch, der Ihnen alle relevanten Informationen über Ihre
+  Issues direkt in einem Tab in der Seitenleiste anzeigt, wie z.B. den Status oder zugewiesene Personen.
 
 GitLab
-: GitLab is similar to GitHub.
-  Here at Zammad, we use it for our internal development.
+: GitLab ist ähnlich wie GitHub.
+  Hier bei Zammad verwenden wir es für unsere interne Entwicklung.
 
-  There is also an integration that allows users to connect GitLab to Zammad
-  so that all their issues and their corresponding changes are reflected in
-  Zammad's sidebar tab as well.
+  Es gibt auch eine Integration, die es Benutzern ermöglicht, GitLab mit Zammad
+  zu verbinden, so dass alle ihre Issues und die entsprechenden Änderungen auch in
+  Zammads Tab in der Seitenleiste angezeigt werden.
 
 Grafana
-: Grafana is an open-source reporting tool.
-  Zammad users on the Plus plan can integrate it into their instance and
-  receive detailed analytics on their performance.
+: Grafana ist ein Open-Source-Tool für Berichte.
+  Zammad Benutzer mit dem Plus-Tarif können es in ihre Instanz integrieren und
+  detaillierte Analysen über ihre Leistung erhalten.
 
-  Hooking up Grafana to Elasticsearch is an possibility you can do on your
-  on-premise installation as well.
+  Die Anbindung von Grafana an Elasticsearch ist eine Möglichkeit, die Sie
+  auch in Ihrer Premise-Installation vornehmen können.
 
-Groups
-: Groups are a synonym for departments or processing groups.
-  Incoming tickets can be assigned to groups.
-  Within the group, an owner can be defined, who is then responsible for
-  this ticket. The access to tickets is controlled via the roles. In a role you
-  can define which permission it has based on the different groups.
-  The possible permissions are "read", "create", "change", "overview" and
-  "full" (or none of them).
+Gruppen
+: Gruppen sind ein Synonym für Abteilungen oder Bearbeitungsgruppen.
+  Eingehende Tickets können Gruppen zugewiesen werden.
+  Innerhalb der Gruppe kann ein Besitzer definiert werden, der für diese Anfrage verantwortlich ist.
+  Der Zugriff auf Tickets wird über die Rollen gesteuert. In einer Rolle kann definiert werden,
+  welche Berechtigung sie basierend auf den verschiedenen Gruppen hat.
+  Die möglichen Berechtigungen sind "Lesen", "Erstellen", "Ändern", "Übersicht" und
+  "voll" (oder keine davon).
 
-  If you have worked with the OTRS system in the past, you might remember the
-  principle of "queues". The groups in Zammad are the same as the queues in
+  Wenn Sie in der Vergangenheit mit dem OTRS-System gearbeitet haben, erinnern Sie sich vielleicht an das
+  Prinzip der "queues". Die Gruppen in Zammad sind die gleichen wie die queues in
   OTRS.
 
 ## H
@@ -244,141 +243,138 @@ Groups
 ## I
 
 Icinga
-: Icinga is a monitoring system that monitors the availability of an
-  organization's entire system infrastructure.
-  It can be integrated into Zammad so that it triggers a ticket in case
-  of a warning situation.
+: Icinga ist ein Überwachungssystem, das die Verfügbarkeit
+  der gesamten Systeminfrastruktur einer Organisation überwacht.
+  Es kann in Zammad integriert werden, so dass es ein Ticket auslöst, wenn
+  einer Warnsituation auftritt.
 
 i-doit
-: i-doit is a CMDB (Configuration Management Data Base).
-  It helps you to keep an eye on every piece of the physical and digital
-  infrastructure. A corresponding integration makes it possible to connect
-  it to Zammad, where it adds a new tab to Zammad's ticket sidebar so
-  you can link to existing i-doit objects for easy reference.
-  It also allows you to create Zammad tickets in i-doit.
+: i-doit ist eine CMDB (Configuration Management Data Base).
+  Sie hilft Ihnen, alle Teile der physischen und digitalen Infrastruktur im Auge zu behalten.
+  Eine entsprechende Integration ermöglicht die Verbindung mit Zammad, wo es einen
+  neuen Tab zur Ticket-Seitenleiste hinzufügt, so dass Sie zu bestehenden i-doit-Objekten
+  verlinken können. Sie können damit auch Zammad Tickets in i-doit erstellen.
 
-Issue-Tracking System
-: Issue trackers are usually systems that track processes on a technical level.
-  Two of the best-known examples are GitHub and GitLab.
+Issue-Tracking-System
+: Issue-Tracker sind in der Regel Systeme, die Prozesse auf technischer Ebene verfolgen.
+  Zwei der bekanntesten Beispiele sind GitHub und GitLab.
 
-  Zammad is also often referred to as an issue-tracking system.
-  However, as a helpdesk, it focuses on communication at the customer
-  level rather than the technical level.
+  Zammad wird oft auch als Issue-Tracking-System bezeichnet.
+  Als Helpdesk konzentriert es sich jedoch auf die Kommunikation auf
+  Kundenebene und nicht auf die technische Ebene.
 
 ## J
 
 
 ## K
 
-Kibana <Badge type="info" text="on-premise only" />
-: Kibana is a browser-based open-source reporting tool that focuses on data
-  evaluation. It was developed by Elastic, which is why it is not a surprise
-  that it uses data from Elasticsearch for its analytics.
+Kibana <Badge type="info" text="nur on-premise" />
+: Kibana ist ein browserbasiertes Open-Source-Reporting-Tool, das sich auf die Auswertung
+  von Daten konzentriert. Es wurde von Elastic entwickelt, weshalb es nicht verwunderlich ist,
+  dass es für seine Analysen Daten aus Elasticsearch verwendet.
 
-  Kibana can be integrated with Zammad, allowing for helpdesk data to be
-  mapped in the reporting tool.
+  Kibana kann an Zammad angebunden werden,
+  was die Nutzung der Helpdesk-Daten im Reporting-Tool erlaubt.
 
 Knowledge Base
-: Think of a very extensive set of FAQs - that's exactly what the
-  Zammad knowledge base is. It collects all important information:
-  definitions, processes, how-tos, organizational charts, etc.
+: Stellen Sie sich eine sehr umfangreiche Sammlung von FAQs vor - das ist genau das, was die
+  Zammad Knowledge Base ist. Sie sammelt alle wichtigen Informationen:
+  Definitionen, Prozesse, Anleitungen, Organigramme, usw.
 
-  Knowledge base articles can be either internal or external, so you can
-  either show them to the world (good for information on your product or
-  service, for example) or keep them for your team (e.g. for internal processes
-  or team info).
+  Knowledge Base-Artikel können entweder intern oder extern sein.
+  Sie können somit entweder die Informationen mit der Welt teilen
+  (z.B. gut für Informationen zu ihrem Produkt oder Service) oder
+  innerhalb Ihres Teams halten (für interne Prozesse oder Informationen für Teams).
 
 ## L
 
-LDAP
-: A Lightweight Directory Access Protocol (LDAP) helps provide information
-  about your users within Zammad. Authentication of users against the LDAP
-  and LDAP role mapping to Zammad roles are also possible.
+Ein LDAP-Server (Lightweight Directory Access Protocol) stellt zusätzliche Informationen
+: über Ihre Benutzer in Zammad zur Verfügung. Eine Authentifizierung gegen den LDAP und
+  die Zuordnung von LDAP-Rollen zu Zammad-Rollen ist ebenfalls möglich.
 
 ## M
 
-Macro
-: A macro is a series of actions. By starting the macro, the actions are
-  triggered and executed, so users don't have to work through each
-  individual step separately. It saves an enormous amount of time and ensures
-  that no step is forgotten.
+Makro
+: Ein Makro ist eine Reihe von Aktionen. Durch den Start des Makros werden die Aktionen
+  ausgelöst und ausgeführt, so dass der Benutzer nicht jeden Schritt
+  einzeln abarbeiten muss. Das spart enorm viel Zeit und sorgt dafür,
+  dass kein Schritt vergessen wird.
 
-  You can define your own macros and perform actions based on all available
-  attributes in the ticket.
+  Sie können Ihre eigenen Makros definieren und Aktionen basierend auf allen verfügbaren
+  Attributen im Ticket durchführen.
 
-Mentions
-: Mentions are a Zammad feature that allows you to tag another agent in a
-  ticket. Just type `@@` and the name. The selected person will be notified
-  and will be watching the ticket from now on.
+Erwähnungen
+: Erwähnungen sind eine Funktion von Zammad, mit der Sie einen anderen Agenten in einem
+  Ticket markieren können. Geben Sie einfach `@@` und den Namen ein. Die ausgewählte Person
+  wird benachrichtigt und sie wird als Beobachter des Tickets eingetragen.
 
-Migrator / Migration Wizard
-: If a company wants to switch from another helpdesk software to Zammad,
-  they often have one concern: What about their existing data?
-  That's why we have built our migration wizards that help with migrating all
-  data.
+Migrator / Assistent für die Migration
+: Wenn eine Firma von einer anderen Helpdesk-Software zu Zammad wechseln möchte,
+  stellt sich oft die Frage: Was ist mit meinen bestehenden Daten?
+  Deshalb haben wir unsere Migrationsassistenten entwickelt, die bei der Migration aller
+  Daten helfen.
 
 Monit
-: Monit is an open-source monitoring tool that relies on a simple setup and
-  a strong community. You can integrate it with Zammad - this way,
-  a ticket is created every time you receive an email in Monit.
+: Monit ist ein Open-Source-Überwachungstool, das eine einfache Einrichtung bietet und
+  eine starke Gemeinschaft dahintersteht. Sie können es in Zammad integrieren. Auf diese Weise
+  wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.
 
 ## N
 
 Navigation
-: Navigation means the left sidebar in Zammad which contains navigation tabs,
-  the search, notifications and many more items, depending on your system.
+: Unter Navigation versteht man die linke Seitenleiste in Zammad, die Tabs zur Navigation,
+  die Suche, Benachrichtigungen und viele weitere Elemente enthält, abhängig von Ihrem System.
 
 Navigation Tab
-: One element of the navigation. You can have multiple tabs open and quickly
-  switch between them.
+: Ein Element der Navigation. Sie können mehrere Tabs geöffnet haben und schnell
+  zwischen ihnen wechseln.
 
 Nagios
-: Nagios is another monitoring tool that alerts IT teams when an incident
-  happens. It can be integrated with Zammad so that a ticket is created in
-  case of an alert.
+: Nagios ist ein weiteres Überwachungstool, das IT-Teams benachrichtigt, wenn ein Vorfall
+  auftritt. Es kann in Zammad integriert werden, so dass bei einem Alarm ein Ticket 
+  erstellt wird.
 
 ## O
 
 On-Premise
-: This term means that Zammad is not provided as a cloud service of the
-  company Zammad, but runs on a server which is controlled by a user or
-  customer of Zammad. Self hosting means the same.
+: Dieser Begriff bedeutet, dass Zammad nicht als Cloud-Service der Firma Zammad bereitgestellt wird,
+  sondern auf einem Server läuft, der von einem Benutzer oder
+  Kunden von Zammad kontrolliert wird. Self-Hosting bedeutet das Gleiche.
 
-Organization
-: An organization is a grouping of customers that operate within the same
-  company or company group.
-  A customer, whose organization is "sharing", has access to all tickets of its
-  organization.
+Organisation
+: Eine Organisation ist eine Gruppierung von einzelnen Kunden, die derselben
+  Firma oder einer Gruppe von Firmen angehören.
+  Ein einzelner Kunde, dessen Organisation "teilend" ist, hat Zugriff auf alle Tickets seiner
+  Organisation.
 
-Owner
-: The owner of a ticket is the person responsible for and working on it.
-  The owner can be changed to another agent.
-  In this case, it is recommended to leave a handover note in the ticket so
-  that the new owner knows what to do.
+Besitzer
+: Der Besitzer eines Tickets ist die Person, die für das Ticket verantwortlich ist und daran arbeitet.
+  Der Besitzer kann durch einen anderen ersetzt werden.
+  In diesem Fall empfiehlt es sich, einen Übergabevermerk im Ticket zu hinterlassen, damit
+  der neue Besitzer weiß, was zu tun ist.
 
 ## P
 
-Parent/Child Relationship
-: If one ticket results in other subtasks (or additional correspondences),
-  you can split it into several tickets. The main one will then be the parent
-  ticket and the tickets with related subtopics are children.
-  By the way: in the same way, you can also merge two tickets into one.
+Eltern/Kind Beziehung
+: Wenn ein Ticket zu weiteren Teilaufgaben (oder zusätzlichen Korrespondenzen) führt,
+  können Sie es in mehrere Tickets aufteilen. Die Hauptanfrage ist dann das übergeordnete
+  Eltern-Ticket und die Tickets mit verwandten Unterthemen sind die Kinder-Tickets.
+  Übrigens: Auf die gleiche Weise können Sie auch zwei Tickets zu einem zusammenführen.
 
 Placetel
-: Placetel is a Cloud Telephone System that allows users to make phone calls
-  via VoIP. Use your regular phone number and call someone directly on their
-  mobile or landline while still having all communication in one place
-  in Zammad.
+: Placetel ist eine VoIP Cloud-Telefonanlage. Verwenden Sie Ihre normale Telefonnummer
+  und rufen Sie jemanden direkt auf dessen Handy oder Festnetz an, während die gesamte
+  Kommunikation an einem Ort in Zammad haben.
 
-  Integrating a Placetel account with Zammad provides users with a call log,
-  making the history of their correspondences even more accurate.
-  Callers are identified directly by their caller ID - a key function that
-  saves agents a lot of time when assigning callers.
+  Durch die Integration eines Placetel Kontos in Zammad erhalten Benutzer ein Anrufprotokoll,
+  wodurch die Historie ihrer Korrespondenz noch genauer wird.
+  Anrufer werden direkt über ihre Caller ID identifiziert - eine Schlüsselfunktion, die
+  den Agenten viel Zeit bei der Zuweisung von Anrufern spart.
 
-Priority
-: Every ticket gets assigned a priority. By default, the priority is 2 (normal).
-  Additionally there are the priorities 1 (low) and 3 (high). You can even
-  add more priorities to your Zammad.
+Priorität
+: Jedem Ticket wird eine Priorität zugewiesen. Standard ist die Priorität 2 (normal).
+  Zusätzlich gibt es die Prioritäten 1 (niedrig) und 3 (hoch). Sie können sogar
+  weitere Prioritäten zu Ihrem Zammad hinzufügen.
 
 ## Q
 
@@ -386,117 +382,114 @@ Priority
 ## R
 
 Release
-: Every few months, we release a new version of Zammad which is called a
-  release. Every release adds new features to our software. There are major and
-  minor releases:
-  major releases (such as Zammad 1.0, 2.0, etc.) bring major changes.
-  Minor releases (such as 1.1, 2.1, etc.) are released in the meantime and bring
-  smaller updates.
+: Alle paar Monate veröffentlichen wir eine neue Version von Zammad, die als
+  Release bezeichnet wird. Jedes Release fügt neue Funktionen zu unserer Software
+  hinzu. Es gibt Haupt- und Nebenversionen:
+  Hauptversionen (wie Zammad 1.0, 2.0, etc.) bringen größere Änderungen mit sich.
+  Nebenversionen (wie 1.1, 2.1, usw.) werden in der Zwischenzeit veröffentlicht und bringen
+  kleinere Aktualisierungen.
 
-  In our [release notes](https://zammad.com/en/releases) you can find what
-  features are included in new versions and also important information about
-  what to consider before updating Zammad.
+  In unseren [Versionshinweisen] (https://zammad.com/de/releases) können Sie nachlesen, welche
+  Funktionen in neuen Versionen enthalten sind und auch wichtige Informationen darüber,
+  was vor der Aktualisierung von Zammad zu beachten ist.
 
-Role
-: Every user has an assigned role. By default there are three roles:
-  admin, agent, and customer.
+Rolle
+: Jeder Benutzer hat eine zugewiesene Rolle. Standardmäßig gibt es drei Rollen:
+  Admin, Agent und Kunde.
 
-  *Admins* have the most rights: they can define roles, permissions,
-  and settings for the entire team and instance.
-  *Agents* can view and edit tickets, but not change any settings other than
-  those of their own profiles.
-  *Customers* can view their ticket's processing status in their
-  customer interface.
+  *Admins* haben die meisten Rechte: Sie können Rollen, Berechtigungen
+  und Einstellungen für das gesamte Team und die Instanz festlegen.
+  *Agenten* können Tickets anzeigen und bearbeiten, aber keine anderen Einstellungen ändern als
+  die ihres eigenen Profils.
+  *Kunden* können den Bearbeitungsstatus ihres Tickets in der
+  Kundenoberfläche einsehen.
 
-  You can even add new roles to your Zammad.
+  Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
 
 ## S
 
-Second Level Navigation
-: Refers to an additional menu next to the navigation (e.g. when opening profile
-  settings).
+Zweite Navigationsebene
+: Bezieht sich auf ein zusätzliches Menü neben der Navigation (z.B. beim Öffnen der
+  Profil-Einstellungen).
 
-Side(Panel)
-: This is the panel which is flying in on the right side for actions like ticket
-  linking or ticket merging.
+Seiten(Leiste)
+: Dies ist der Bereich, der von der rechten Seite aus für Aktionen wie
+  Ticket-Verknüpfung oder Zusammenführung von Tickets ins Bild schwebt.
 
-Sidebar Tab
-: In the content sidebar, there are different tabs like "Customer",
-  "Organization" and "Ticket", depending on your system and ticket. These are
-  called sidebar tabs.
+Seitenleisten-Tab
+: In der Seitenleiste gibt es verschiedene Tabs wie "Kunde",
+  "Organisation" und "Ticket", abhängig von Ihrem System und Ihrem Ticket.
+  Diese werden als Seitenleisten-Tabs bezeichnet.
 
-  An active sidebar tab is the currently opened sidebar tab.
+  Ein aktiver Seitenleisten-Tab ist der aktuell geöffnete Tab der Seitenleiste.
 
 Sipgate
-: Sipgate is a SaaS solution for internet telephony.
-  The Zammad integration for Sipgate provides users with a detailed call
-  overview. If you have a customer that wants to get connected to a certain
-  agent, the caller log will tell you if this colleague is currently available.
+: Sipgate ist eine SaaS-Lösung für Internet-Telefonie.
+  Die Zammad-Integration für Sipgate bietet den Benutzern eine detaillierte
+  Anruf-Übersicht. Wenn Sie einen Kunden haben, der mit einem bestimmten Agenten verbunden werden möchte,
+  erfahren Sie im Anruferprotokoll, ob dieser Agent gerade verfügbar ist.
 
 SLA
-: A Service Level Agreement (SLA) is a contract between an end-user and a
-  company that defines the minimum expected service requirements including
-  quality, availability, and punctuality.
-  They are used to set expectations and hold companies accountable for keeping
-  their promises.
+: Ein Service Level Agreement (SLA) ist ein Vertrag zwischen einem Nutzer und einer
+  Firma, der die erwarteten Mindestanforderungen an den Service definiert, einschließlich
+  Qualität, Verfügbarkeit und Pünktlichkeit.
+  SLAs werden verwendet, um die vereinbarten Regeln und deren Einhaltung zu
+  überwachen
 
-  You can easily set up SLAs in Zammad and define parameters such as the time
-  for the first response, an update, and a solution. Once the deadline has been
-  reached, the ticket will escalate.
+  Sie können in Zammad ganz einfach SLAs einrichten und Parameter definieren, wie z.B. die Zeit
+  für die erste Antwort, eine Aktualisierungs- und eine Lösungszeit. Sobald die Frist erreicht ist,
+  eskaliert das Ticket.
 
 S/MIME
-: S/MIME is the most widely-supported method for secure email communication.
-  By activating it in Zammad, all messages sent from Zammad will be signed and
-  encrypted.
+: S/MIME ist die am weitesten verbreitete Methode für sichere E-Mail-Kommunikation.
+  Wenn Sie es in Zammad aktivieren, werden alle von Zammad aus gesendeten Nachrichten signiert und
+  verschlüsselt.
 
 SSO
-: Single-sign-on (SSO) allows you to access all your systems and devices with
-  just one login. There are various providers that make this process easy and
-  secure. Zammad currently supports SSO via SAML and Shibboleth.
+: Single-Sign-On (SSO) ermöglicht Ihnen den Zugriff auf alle Ihre Systeme und Geräte mit
+  nur einer Anmeldung. Es gibt verschiedene Anbieter, die diesen Prozess einfach und
+  sicher machen. Zammad unterstützt derzeit SSO über SAML und Shibboleth.
 
-State
-: Every ticket has a state which reflects the current progress of resolving the
-  issue. The state of a ticket can be changed manually or automatically based
-  on automation or SLA. Each state has a state types. There are four state types
-  by default and they are color-coded. You can even add additional states to
-  your Zammad.
+Status
+: Jedes Ticket hat einen Status, der den aktuellen Fortschritt bei der Lösung des
+  Problems widerspiegelt. Der Status eines Tickets kann manuell oder automatisch auf der Grundlage von
+  Automatisierungen oder SLA gesetzt werden. Jeder Status hat einen Statustyp. Es gibt vier Statustypen
+  und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.
 
 ## T
 
 Tags
-: Tags help you to categorize tickets. You can define them based on your use
-  case. For example, if you're a retail business, your tags could be based on
-  your product categories to help you organize tickets by the type of product
-  they refer to.
-  But they could also be based on the type of request, e.g. refund, delivery
-  issue, complaint.
+: Tags helfen Ihnen, Tickets zu kategorisieren. Sie können sie auf der Grundlage Ihres Anwendungsfalls
+  definieren. Wenn Sie zum Beispiel ein Einzelhandelsunternehmen sind, könnten Ihre Tags auf Ihren
+  Produktkategorien basieren, um Ihnen zu helfen, Tickets nach der Art des Produkts zu kategorisieren.
+  Sie könnten aber auch auf der Art der Anfrage basieren, z.B. Erstattung, Liefer-Problem, Beschwerde.
 
-  Tags can be queried in conditions in an automation and also assigned
-  automatically, for example depending on keywords in the ticket title.
+  Tags können in Bedingungen in einer Automatisierung abgefragt werden und auch
+  automatisch zugewiesen werden, zum Beispiel in Abhängigkeit von Schlüsselwörtern im Titel des Tickets.
 
-Text Module
-: If you find that you send the same answers over and over again,
-  you can save yourself a lot of work and create a text module.
-  This way, you just need to type the `::` shortcut in an article and all
-  available text modules are shown from which you can select the desired one.
-  You can limit the search results by adding parts of the text module's name,
-  keywords or content after the `::`.
+Textbaustein
+: Wenn Sie feststellen, dass Sie immer wieder die gleichen Antworten senden
+  können Sie sich eine Menge Arbeit ersparen und einen Textbaustein erstellen.
+  Auf diese Weise brauchen Sie nur die Abkürzung `::` in einem Artikel einzugeben und alle
+  verfügbaren Textbausteine werden angezeigt, aus denen Sie den gewünschten auswählen können.
+  Sie können die Suchergebnisse einschränken, indem Sie Teile des Namens des Textbausteins,
+  Schlüsselwörter oder Inhalte des Textbausteins nach dem `::` hinzufügen.
 
-  For example, here at Zammad, we have a text module with the shortcut
-  `::ilff`, which turns into `I look forward to your feedback`.
+  Hier bei Zammad haben wir zum Beispiel einen Textbaustein mit dem Kürzel
+  `::ilff`, was zu `I look forward to your feedback` wird.
 
-(Ticket) Template
-: If you create many similar tickets, you can create a template for them. This
-  is helpful for introductions to your product/service or for drawing up an
-  offer.
+(Ticket) Vorlage
+: Wenn Sie viele ähnliche Tickets erstellen, können Sie eine Vorlage für diese erstellen. Eine Vorlage
+  kann hilfreich sein für Einführungen in Ihr Produkt/Ihre Dienstleistung oder für die Ausarbeitung eines
+  Angebots.
 
 ## U
 
-User
-: A user is any user of the ticket system. Each user has assigned
-  permissions, which allow them to access certain areas and information.
-  Users can have various roles, with the standard options being agent, admin,
-  and customer.
+Benutzer
+: Ein Benutzer ist ein beliebiger Benutzer des Ticketsystems. Jeder Benutzer hat zugewiesene
+  Berechtigungen, die ihm den Zugang zu bestimmten Bereichen und Informationen ermöglichen.
+  Benutzer können verschiedene Rollen haben, wobei die Standardrollen Agent, Admin
+  und Kunde sind.
 
 ## V
 
@@ -504,10 +497,10 @@ User
 ## W
 
 Webhooks
-: Webhooks are an easy way for systems to communicate with each
-  other and allow you to send real-time data to any other application.
-  We use them to allow our users to inform a third-party system about new
-  information in Zammad.
+: Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren.
+  Sie ermöglichen, Echtzeitdaten an jede andere Anwendung zu senden.
+  Dadurch haben Sie die Möglichkeit, ein Drittsystem über neue
+  Informationen in Zammad zu informieren.
 
 ## X
 
@@ -517,6 +510,6 @@ Webhooks
 
 ## Z
 
-Zammad : Zammad is the greatest helpdesk in the world. Period.
+Zammad : Zammad ist der beste Helpdesk der Welt. Punkt.
 
 

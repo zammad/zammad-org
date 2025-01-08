@@ -23,7 +23,7 @@ Required permission: any
 
 :::
 
-## List
+## Auflisten
 
 Required permission: `ticket.agent` **or** `admin.user`
 
@@ -48,7 +48,7 @@ string}&limit=10`
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `ticket.agent` **or** `admin.user` **or**
 `ticket.customer` (shared organization)
@@ -65,7 +65,7 @@ Technically, any listings will return user's own information only.
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `admin.user` **or** `ticket.agent`
 
@@ -134,7 +134,7 @@ under *Manage > Roles* and check which is selected as **Default at signup**.
 :::
 ::::
 
-## Delete
+## Löschen
 
 Required permission: `admin.user`
 

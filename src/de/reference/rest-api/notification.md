@@ -1,26 +1,26 @@
 ---
 order: 5
-title: Notification
+title: Benachrichtigung
 ---
 
-# Online Notification
+# Online-Benachrichtigung
 
 :::info
-The availability of notification highly depends on the users
-permission and chosen notification settings.
+Die Verfügbarkeit von Benachrichtigungen hängt stark von der Berechtigung
+des Benutzers und den gewählten Benachrichtigungseinstellungen ab.
 
-Please note that the best results are always achieved with *Agents*.
+Bitte beachten Sie, dass die besten Ergebnisse immer mit *Agenten* erzielt werden.
 :::
 
-## List
+## Auflisten
 
-Required permission: `any`
+Erforderliche Erlaubnis: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications?expand=true`
+`GET`-Anfrage gesendet: `/api/v1/online_notifications?expand=true`
 
 ::: tip
-Use the expand request to know the affected objects. Otherwise you'll
-need to find out what ID stands for which object type.
+Verwenden Sie den Erweiterungs-Parameter, um die betroffenen Objekte zu ermitteln. Ansonsten
+müssen Sie herausfinden, welche ID für welchen Objekttyp steht.
 :::
 
 ::: details Show response
@@ -29,11 +29,11 @@ need to find out what ID stands for which object type.
 
 :::
 
-## Show
+## Anzeigen
 
-Required permission: `any`
+Erforderliche Erlaubnis: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications/{id}`
+`GET`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
 ::: details Show response
 
@@ -43,9 +43,9 @@ Required permission: `any`
 
 ## Aktualisierung
 
-Required permission: `any`
+Erforderliche Erlaubnis: `any`
 
-`PUT`-Request sent: `/api/v1/online_notifications/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
 ::::details Show request/response
 
@@ -62,11 +62,11 @@ Required permission: `any`
 :::
 ::::
 
-## Delete
+## Löschen
 
-Required permission: `any`
+Erforderliche Erlaubnis: `any`
 
-`DELETE`-Request sent: `/api/v1/online_notifications/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
 ::: details Show response
 
@@ -74,11 +74,11 @@ Required permission: `any`
 
 :::
 
-## Mark All as Read
+## Alle als gelesen markieren
 
-Required permission: `any`
+Erforderliche Erlaubnis: `any`
 
-`POST`-Request sent: `/api/v1/online_notifications/mark_all_as_read`
+`POST`-Anfrage gesendet: `/api/v1/online_notifications/mark_all_as_read`
 
 ::: details Show response
 

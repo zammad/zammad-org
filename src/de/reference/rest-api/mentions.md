@@ -1,21 +1,21 @@
 ---
 order: 2
-title: Mentions
+title: Erwähnungen
 ---
 
-# Mentions
+# Erwähnungen
 
 ::: warning
-The mention endpoint depends on the group permissions and if the user
-you're using is an **agent**. Because of this tickets may or may not
-be available.
+Der Erwähnungsendpunkt hängt von den Gruppenberechtigungen ab und davon, ob der Benutzer
+ein **Agent** ist. Aus diesem Grund können Tickets verfügbar sein
+oder auch nicht.
 :::
 
-## List
+## Auflisten
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/mentions`
+`GET`-Anfrage gesendet: `/api/v1/mentions`
 
 ::: details Show response
 
@@ -23,11 +23,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/mentions`
+`POST`-Anfrage gesendet: `/api/v1/mentions`
 
 :::: details Show request/response
 
@@ -44,19 +44,19 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-The mention will be created for the user of the current session.
+Die Erwähnung wird für den Benutzer der aktuellen Sitzung erstellt.
 
 ::: tip
-If you want to mention/subscribe other users, you can do so by sending
-an additional `X-On-Behalf-Of`-header in your request. You can either
-provide the user ID or the user email address as value.
+Wenn Sie andere Benutzer erwähnen oder ein Ticket für sie abbonieren möchten, können Sie dies tun, indem Sie
+einen zusätzlichen `X-On-Behalf-Of`-Header in Ihrer Anfrage senden. Sie können entweder
+die ID des Benutzers oder die E-Mail-Adresse des Benutzers als Wert angeben.
 :::
 
-## Delete
+## Löschen
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/mentions/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/mentions/{id}`
 
 ::: details Show response
 

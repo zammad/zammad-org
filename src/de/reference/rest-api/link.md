@@ -1,15 +1,15 @@
 ---
 order: 2
-title: 'Linking Tickets'
+title: 'Tickets verknüpfen'
 ---
 
-# Linking Tickets
+# Tickets verknüpfen
 
-## Get
+## Abrufen
 
-Required permission: `ticket.agent` **or** `admin`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
-`GET`-Request sent: `/api/v1/links`
+`GET`-Anfrage gesendet: `/api/v1/links`
 
 :::: details Show request/response
 
@@ -26,11 +26,11 @@ Required permission: `ticket.agent` **or** `admin`
 :::
 ::::
 
-## Add
+## Hinzufügen
 
-Required permission: `ticket.agent` **or** `admin`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
-`POST`-Request sent: `/api/v1/links/add`
+`POST`-Anfrage gesendet: `/api/v1/links/add`
 
 ::::: details Show request/response
 
@@ -41,9 +41,9 @@ Required permission: `ticket.agent` **or** `admin`
 <<< @/fixtures/rest-api/links/post-req.json
 
 :::info
-The value for `link_object_target` has to be the *ticket ID*. The
-value for the `link_object_source_number` has to be the *ticket
-number*.
+Der Wert für `link_object_target` muss die *Ticket ID* sein. Der
+Wert für `link_object_source_number` muss die *Ticket
+Nummer* sein.
 :::
 
 === Response
@@ -53,11 +53,11 @@ number*.
 ::::
 :::::
 
-## Delete
+## Löschen
 
-Required permission: `ticket.agent` **or** `admin`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
-`DELETE`-Request sent: `/api/v1/links/remove`
+`DELETE`-Anfrage gesendet: `/api/v1/links/remove`
 
 :::: details Show request/response
 

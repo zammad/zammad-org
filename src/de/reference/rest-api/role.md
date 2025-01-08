@@ -5,7 +5,7 @@ title: Role
 
 # Roles
 
-## List
+## Auflisten
 
 Required permission: `admin.role`
 
@@ -18,7 +18,7 @@ Required permission: `admin.role`
 :::
 
 
-## Show
+## Anzeigen
 
 Required permission: `admin.role`
 
@@ -30,7 +30,7 @@ Required permission: `admin.role`
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `admin.role`
 

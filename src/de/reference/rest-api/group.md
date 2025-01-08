@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Group
+title: Gruppe
 ---
 
-# Group
+# Gruppe
 
 ::: info
 - Please note that `follow_up_possible` may not work as expected. The
@@ -13,7 +13,7 @@ title: Group
   name. Example: `Sales::Europe::South`
 :::
 
-## List
+## Auflisten
 
 Required permission: `admin.group`
 
@@ -25,7 +25,7 @@ Required permission: `admin.group`
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `admin.group`
 
@@ -37,7 +37,7 @@ Required permission: `admin.group`
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `admin.group`
 
@@ -79,7 +79,7 @@ Required permission: `admin.group`
 :::
 ::::
 
-## Delete
+## Löschen
 
 Required permission: `admin.group`
 

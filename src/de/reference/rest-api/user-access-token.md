@@ -5,7 +5,7 @@ title: 'User Access Token'
 
 # User Access Token
 
-## List
+## Auflisten
 
 Required permission: `user_preferences.access_token`
 
@@ -17,7 +17,7 @@ Required permission: `user_preferences.access_token`
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `user_preferences.access_token`
 
@@ -43,7 +43,7 @@ after creation and can't be retrieved after.
 ::::
 :::::
 
-## Delete
+## Löschen
 
 Required permission: `user_preferences.access_token`
 

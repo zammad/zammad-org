@@ -7,102 +7,105 @@ title: Artikel
 
 ## Allgemein
 
-Some attributes of articles might not be straight forward or come with
-fairly many options - below list hopefully helps you on this journey.
+Einige Attribute von Artikeln sind vielleicht nicht ganz einfach oder bieten
+ziemlich viele Optionen - die folgende Liste hilft Ihnen hoffentlich auf
+diesem Weg.
 
 ### `content_type`
 
-Zammad supports `text/html` for HTML formatted text or `text/plain` for
-plain text. This allows you to have better formatting options if you need
-them.
+Zammad unterstützt `text/html` für HTML-formatierten Text oder `text/plain`
+für einfachen Text. Damit haben Sie bessere Formatierungsmöglichkeiten, wenn
+Sie diese benötigen.
 
-Zammad web UI usually uses `text/html`.
+Zammad web UI verwendet normalerweise `text/html`.
 
 ### `type`
 
-Zammad supports a huge number of article types. Below list may be incomplete
-depending on your instance and possibly installed add-ons / custom changes.
+Zammad unterstützt eine große Anzahl von Artikeltypen. Die nachfolgende
+Liste kann unvollständig sein, abhängig von Ihrer Instanz und eventuell
+installierten Add-ons / kundenspezifischen Änderungen.
 
-If not stated otherwise, all article types below are **communication
-articles** and thus affecting SLA calculation in Zammad defaults.
+Wenn nicht anders angegeben, handelt es sich bei allen nachstehenden
+Artikelarten um **Kommunikations-Artikel**, die sich auf die SLA-Berechnung
+gemäß Ihren Vorgaben auswirken.
 
-The difference is that communication articles provide the option to reply
-automatically. Which actions exactly are available depends on the article
-type and e.g. recipient lists.
+Der Unterschied besteht darin, dass Kommunikations-Artikel die Möglichkeit
+bieten, automatisch zu antworten. Welche Aktionen genau zur Verfügung
+stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
 
 `email`
-: This allows you to create incoming or outgoing email articles.
-  However, this highly depends on the chosen `sender`.
+: Damit können Sie eingehende oder ausgehende E-Mail-Artikel erstellen.
+  Dies hängt jedoch stark von dem gewählten "Absender" ab.
 
-`phone` : Indicates phone notes.
+`phone` : Verweist auf Telefonnotizen.
 
 `web`
-: Usually used by customers only. This type is being used when ever your
-  customer uses the web UI to create articles.
+: Wird normalerweise nur von Kunden verwendet. Dieser Typ wird immer dann verwendet, wenn Ihr
+  Kunde die Web-Benutzeroberfläche verwendet, um Artikel zu erstellen.
 
 `note`
-: When ever a communication does not fit (e.g.: internal notes) choose
-  note. Zammad also uses this article type as default fall back.
+: Wenn eine Kommunikation nicht passt , wählen Sie
+  Notiz. Zammad verwendet diesen Artikeltyp auch als Standard-Fallback.
 
-  This is **not a communication article**.
+  Dies ist **kein Kommunikationsartikel**.
 
-`sms` : This type is being used for Zammad's SMS integration.
+`sms`: Dieser Typ wird für die SMS-Integration von Zammad verwendet.
 
 `chat`
-: This article type is technically a place holder and is only available
-  via API.
+: Dieser Artikeltyp ist technisch gesehen ein Platzhalter und steht nur
+  über API verfügbar.
 
 `fax`
-: This article type is technically a place holder and is only available
-  via API.
+: Dieser Artikeltyp ist technisch gesehen ein Platzhalter und steht nur
+  über API verfügbar.
 
 `twitter status` & `twitter direct-message`
-: These articles types are used by Zammad's twitter channel. Technically
-  you can use these to automatically respond to existing requests via
-  twitter.
+: Diese Artikelarten werden von Zammads Twitter-Kanal verwendet. Technisch gesehen
+  können Sie diese verwenden, um automatisch auf bestehende Anfragen über
+  Twitter zu antworten.
 
 `facebook feed post` & `facebook feed comment`
-: These articles types are used by Zammad's facebook channel. Technically
-  you can use these to automatically respond to existing requests via
-  facebook.
+: Diese Artikeltypen werden von Zammads Facebook-Kanal verwendet. Technisch gesehen
+  können Sie diese verwenden, um automatisch auf bestehende Anfragen über
+  Facebook zu antworten.
 
 `telegram personal-message`
-: Used by Zammad's Telegram channel. Technically you can use these to
-  automatically respond to existing requests via Telegram.
+: Wird von Zammads Telegram-Kanal verwendet. Technisch können Sie diese verwenden, um
+  automatisch auf bestehende Anfragen über Telegram zu antworten.
 
 ### `internal`
 
-This attribute allows you to set the visibility of your articles. For
-internal visible only use `true`, for visibly for your customers as well use
-`false`.
+Mit diesem Attribut können Sie die Sichtbarkeit Ihrer Artikel festlegen. Für
+die interne Sichtbarkeit verwenden Sie `true`, für die Sichtbarkeit auch für
+Ihre Kunden verwenden Sie `false`.
 
 ::: warning
-**Visibility: internal doesn't mean it's silent**
+**Sichtbarkeit: Intern bedeutet nicht, dass nichts passiert**
 
-If you set an article to `internal: true` but choose to send an email,
-please be aware that said Email is still being sent out!
+Wenn Sie einen Artikel auf `internal: true` setzen, aber eine E-Mail versenden,
+beachten Sie bitte dass diese E-Mail trotzdem verschickt wird!
 :::
 
 ### `sender`
 
-Indicates which use did create the article. You can choose from:
+Zeigt an, wer den Artikel erstellt hat. Sie können wählen zwischen:
 
 - `Agent`
 - `Customer`
 - `System`
 
 ::: warning
-Depending of above selection, some article types may not be available
-or behave different. Please be aware that `System` causes users not
-being able to read the bodies (this works similar to Zammads trigger
-displaying in tickets).
+Abhängig von der obigen Auswahl sind einige Artikelarten möglicherweise nicht verfügbar
+oder verhalten sich anders. Bitte beachten Sie, dass `System` dazu führt, dass Benutzer nicht
+in der Lage sind, die Artikel zu lesen (ähnlich wie Zammads Trigger,
+die in Tickets angezeigt werden).
 :::
 
-## List Articles by Ticket
+## Artikel nach Ticket auflisten
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/by_ticket/{ticket id}`
+`GET`-Anfrage gesendet: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
 ::: details Show response
 
@@ -110,11 +113,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## List Specific Article
+## Spezifische Artikel auflisten
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/{article id}`
+`GET`-Anfrage gesendet: `/api/v1/ticket_articles/{article id}`
 
 ::: details Show response
 
@@ -122,19 +125,19 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/ticket_articles`
+`POST`-Anfrage gesendet: `/api/v1/ticket_articles`
 
 ::: tip
-If you want to create articles on behalf of other users (e.g. for a
-phone note), use the `origin_by_id` attribute. `ticket.agent`
-permission is mandatory for this.
+Wenn Sie Artikel im Namen anderer Benutzer erstellen wollen (z.B. für eine
+Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
+`ticket.agent` ist hierfür zwingend erforderlich.
 :::
 
-### Plain Article
+### Einfacher Artikel
 
 :::: details Show request/response
 
@@ -151,7 +154,7 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Attached Files
+### Artikel mit angehängten Dateien
 
 :::: details Show request/response
 
@@ -168,9 +171,10 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Inline Images
+### Artikel mit Inline-Bildern
 
-Inline images can be used by providing data URIs in your HTML markup.
+Inline-Bilder können durch Angabe von Daten-URIs in Ihrem HTML-Markup
+verwendet werden.
 
 :::: details Show request/response
 
@@ -187,12 +191,12 @@ Inline images can be used by providing data URIs in your HTML markup.
 :::
 ::::
 
-## Receive Attachments
+## Anhänge empfangen
 
-Now that you have all those fancy attachments within your tickets, you may
-want to download specific ones.
+Jetzt, wo Sie all diese schicken Anhänge in Ihren Tickets haben, möchten Sie
+vielleicht bestimmte Anhänge herunterladen.
 
-`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article
+`GET`-Anfrage gesendet: `/api/v1/ticket_attachment/{ticket id}/{article
 id}/{attachment id}`
 
 Response: `{image file}`

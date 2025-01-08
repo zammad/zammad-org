@@ -11,7 +11,7 @@ recommended! You can do this in Zammad's UI. To do so, go to the
 admin interface to *System > Objects > Ticket*.
 :::
 
-## List
+## Auflisten
 
 Required permission: `admin.object` **or** `ticket.agent` **or**
 `ticket.customer`
@@ -24,7 +24,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Anzeigen
 
 Required permission: `admin.object` **or** `ticket.agent` **or**
 `ticket.customer`
@@ -37,9 +37,9 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `POST`-Request sent: `/api/v1/ticket_states`
 
@@ -68,7 +68,7 @@ As there's no endpoint for retrieving these, please use the
 
 ## Aktualisierung
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `PUT`-Request sent: `/api/v1/ticket_states/{id}`
 
@@ -87,9 +87,9 @@ Required permission: `admin.object`
 :::
 ::::
 
-## Delete
+## Löschen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `DELETE`-Request sent: `/api/v1/ticket_states/{id}`
 

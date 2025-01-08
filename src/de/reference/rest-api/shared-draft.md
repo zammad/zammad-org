@@ -5,7 +5,7 @@ title: 'Shared Drafts'
 
 # Shared Drafts
 
-## Show
+## Anzeigen
 
 Required permission: `ticket.agent`.
 
@@ -17,7 +17,7 @@ Required permission: `ticket.agent`.
 
 :::
 
-## Create
+## Erstellen
 
 Required permission: `ticket.agent`.
 
@@ -40,7 +40,7 @@ Required permission: `ticket.agent`.
 
 ## Aktualisierung
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
 `PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 
@@ -61,7 +61,7 @@ Required permission: `ticket.agent`
 
 ## Remove
 
-Required permission: `ticket.agent`
+Erforderliche Berechtigung: `ticket.agent`
 
 `DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 

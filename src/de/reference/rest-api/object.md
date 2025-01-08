@@ -1,23 +1,23 @@
 ---
 order: 6
-title: Object
+title: Objekt
 ---
 
-# Object
+# Objekt
 
 ::: danger
-Adjusting objects via API can cause serious issues with your instance.
-Proceed with absolute caution and ensure to adjust any of Zammad's
-default fields.
+Das Anpassen von Objekten über API kann zu ernsthaften Problemen mit Ihrer Instanz führen.
+Gehen Sie mit absoluter Vorsicht vor und stellen Sie sicher, dass Sie keine Standardfelder von Zammad
+anpassen.
 
-If you want to hide fields, consider Zammad's core workflows instead!
+Wenn Sie Felder ausblenden möchten, sollten Sie stattdessen die Core-Workflows von Zammad verwenden!
 :::
 
-## List
+## Auflisten
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes`
+`GET`-Anfrage gesendet: `/api/v1/object_manager_attributes`
 
 ::: details Show response
 
@@ -25,9 +25,9 @@ Required permission: `admin.object`
 
 :::
 
-## Show
+## Anzeigen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `GET`-Request sent: `/api/v1/object_manager_attributes/{id}`
 
@@ -37,9 +37,9 @@ Required permission: `admin.object`
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `POST`-Request sent: `/api/v1/object_manager_attributes`
 
@@ -210,7 +210,7 @@ The attribute `object` controls which context is being used:
 
 ## Aktualisierung
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 Except on the request method, payloads or updating and creating objects are
 identical. For full payload samples thus scroll up to `create_object`.
@@ -243,9 +243,9 @@ creation is not possible.
 ::::
 :::::
 
-## Delete
+## Löschen
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 `DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`
 
@@ -257,7 +257,7 @@ Required permission: `admin.object`
 
 ## Execute Database Migrations
 
-Required permission: `admin.object`
+Erforderliche Berechtigung: `admin.object`
 
 ::: warning
 After executing the database migrations a restart of Zammad is

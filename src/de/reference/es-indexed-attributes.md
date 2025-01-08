@@ -623,89 +623,89 @@ Der folgende Index enthält folgende Informationen: `*_Organisation`
 
 `active`
 : - `true`, `false`
-  - Defines if organization is active
+  - Legt fest, ob die Organisation aktiv ist
 
 `created_at`
 : - `2021-03-22T12:47:54.807Z`
-  - Creation date
+  - Erstelldatum
 
 `created_by`
 : - \#\{user object\}
-  - Complete Payload of the user that created the organization. Have a look at
-    the [user section](#user) for more information.
+  - Vollständiger Payload des Benutzers, der die Organisation erstellt hat. Werfen Sie einen Blick in
+    den Bereich [Benutzer](#benutzer) für weitere Informationen.
 
 `created_by_id`
 : - `1`
-  - User ID that created the organization
+  - ID des Benutzers, der die Organisation erstellt hat
 
 `domain`
 : - `null`, `example.com`
-  - Organizations domain
+  - Domain der Organisation
 
 `domain_assignment`
 : - `false`, `true`
-  - Domain assignment depends on domain
+  - Domainbasierte Zuordnung
 
 `id`
 : - `1`
-  - Organization ID
+  - Organisations-ID
 
 `members`
-: - \#\{array of user objects\}
-  - Array with complete payload of the users being member of the organization.
-    Have a look at the [user section](#user) for more information.
+: - \#\{Array der Benutzer-Objekte\}
+  - Array mit dem kompletten Benutzer-Payload der Benutzer, die Mitglied der Organisation sind.
+    Schauen Sie sich den Bereich [Benutzer](#benutzer) an für weitere Informationen.
 
 `name`
 : - `Fast Lane Hardware Inc.`
-  - Organization name
+  - Name der Organisation
 
 `note`
 : - `IT hardware and custom PC builds`
-  - Note being available via web, console and API
+  - Über Web, Konsole und API verfügbar
 
 `shared`
 : - `true`, `false`
-  - Defines if the organization is a sharing one
+  - Legt fest, ob es sich um eine teilende Organisation handelt
 
 `updated_at`
 : - `2021-03-22T12:47:54.807Z`
-  - Last update time
+  - Zeitpunkt der letzten Aktualisierung
 
 `updated_by`
 : - \#\{user object\}
-  - Complete Payload of the user that updated the organization. Have a look at
-    the [user section](#user) for more information.
+  - Vollständiger Payload des Benutzers, der die Organisation aktualisiert hat. Sehen Sie sich
+    den Bereich [Benutzer](#benutzer) an für weitere Informationen.
 
 `updated_by_id`
 : - `1`
-  - User ID that updated the organization
+  - ID des Benutzers, der die Organisation aktualisiert hat
 
 `vip`
 : - `true`, `false`
-  - Defines if the organization has VIP status.
+  - Legt fest, ob die Organisation VIP-Status hat.
 
-## Group
+## Gruppe
 
-The following index contains below mentioned information: `*_group`
+Der folgende Index enthält folgende Informationen: `*_group`
 
 `active`
 : - `true`, `false`
-  - Defines if group is active (available)
+  - Legt fest, ob die Gruppe aktiv/verfügbar ist
 
 `assignment_timeout`
 : - `null`, `30`
-  - Time in minutes an agent can be inactive until the owner ship is removed
+  - Zeit in Minuten, die ein Agent inaktiv sein kann, bis er als Eigentümer entfernt wird
 
 `created_at`
 : - `2021-03-24T23:55:06.980Z`
-  - Time stamp of group creation
+  - Zeitpunkt der Erstellung der Gruppe
 
 `created_by_id`
 : - `1`
-  - User ID that created the group
+  - ID des Benutzers, der die Gruppe erstellt hat
 
 `email_address`
-: - Contains these attributes:
+: - Enthält diese Attribute:
     - active: `true`
     - channel_id: `3`
     - created_at: `2021-03-24T23:54:58.187Z`
@@ -717,34 +717,34 @@ The following index contains below mentioned information: `*_group`
     - updated_at: `2021-03-24T23:54:58.187Z`
     - updated_by_id: `3`
     - preferences: `null`
-  - Contains all available information of the groups email address
+  - Enthält alle verfügbaren Informationen über die E-Mail-Adresse der Gruppe
 
 `email_address_id`
 : - `3`
-  - ID of email address
+  - ID der E-Mail Adresse
 
 `follow_up_assignment`
 : - `true`, f`alse
-  - Defines if owners are still assigned after follow ups.
+  - Legt fest, ob Besitzer bei Nachfragen zugewiesen werden.
 
 `follow_up_possible`
 : - `yes`, `no`
-  - Defines if following up on a closed ticket is possible.
+  - Legt fest, ob eine Nachfrage möglich ist, wenn ein Ticket geschlossen ist
 
 `id`
 : - `1`
-  - Group ID
+  - ID der Gruppe
 
 `name`
 : - `Support`, `IT`
-  - Group name
+  - Name der Gruppe
 
 `note`
 : - `null`
-  - Notes for the group available via web, console and API
+  - Notizen für die Gruppe, verfügbar über Web, Konsole und API
 
 `signature`
-: - Contains these attributes:
+: - Enthält diese Attribute:
     - active: `true`
     - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane Hardware`
     - created_at: 2`021-03-03T14:50:19.775Z`
@@ -754,115 +754,115 @@ The following index contains below mentioned information: `*_group`
     - note: `null`
     - updated_at: `2021-03-03T14:50:19.775Z`
     - updated_by_id: `1`
-  - Contains all available information of the groups signature
+  - Enthält alle verfügbaren Informationen über die Signatur der Gruppe
 
 `signature_id`
 : - `1`
-  - Signature ID
+  - ID der Signatur
 
 `updated_at`
 : - `2021-03-24T23:55:06.980Z`
-  - Time stamp of last group update
+  - Zeitpunkt der letzten Aktualisierung der Gruppe
 
 `updated_by_id`
 : - `3`
-  - User ID that updated group
+  - ID des Benutzers, der die Gruppe aktualisiert hat
 
-## CTI Log
+## CTI-Protokoll
 
-The following index contains below mentioned information: `*_cti_log`
+Der folgende Index enthält folgende Informationen: `*_cti_log`
 
 `call_id`
 : - `6`
-  - Unique Call ID
+  - Eindeutige Anruf ID
 
 `comment`
 : - `""`
-  - Optional comment
+  - Optionaler Kommentar
 
 `created_at`
 : - `2021-03-22T11:48:01.703Z`
-  - Creation date of Call
+  - Erstelldatum des Anrufs
 
 `direction`
 : - `in`, `out`
-  - Call direction
+  - Anruf Richtung
 
 `done`
 : - `true`, `false`
-  - Defines if call displays as “to do” within UI
+  - Legt fest, ob der Aufruf in der Benutzeroberfläche als "to do" angezeigt wird
 
 `duration_talking_time`
 : - `27`
-  - Call duration in seconds
+  - Anrufdauer in Sekunden
 
 `duration_waiting_time`
 : - `77`
-  - Duration in seconds the caller was waiting for answer
+  - Dauer in Sekunden, die der Anrufer auf die Antwort gewartet hat
 
 `end_at`
 : - `2021-03-25T08:49:40.647Z`
-  - Time stamp of call end
+  - Zeitpunkt des Anruf-Endes
 
 `from`
 : - `491711234567890`
-  - Calling number
+  - Anrufende Nummer
 
 `from_comment`
 : - `null`, `John`, `Doe`
-  - Display name of calling number if applicable
+  - Name zur anrufenden Nummer anzeigen, falls möglich
 
 `from_pretty`
 : - `+49 171 1234567890`
-  - Pretty version of `from`
+  - "Hübsche" Version von `from`
 
 `id`
 : - `8`
-  - Internal ID of entry
+  - Interne ID des Eintrags
 
 `initialized_at`
 : - `2021-03-25T08:47:56.753Z`
-  - Time stamp of call initialization, usually matches created_at
+  - Zeitstempel der Aufrufinitialisierung, entspricht normalerweise `created_at`
 
 `preferences`
 : - (Array)
-  - Contains internal information if required
+  - Enthält interne Informationen, falls erforderlich
 
 `queue`
 : - `null`, `491711234567890`
-  - Queue the call was answered in
+  - Warteschlange, in der der Anruf angenommen wurde
 
 `start_at`
 : - `2021-03-25T08:49:13.050Z`
-  - Time stamp the call was answered
+  - Zeitpunkt, zu dem der Anruf angenommen wurde
 
 `state`
 : - `hangup`, `voicemail`
-  - Last state of call
+  - Letzter Status des Anrufs
 
 `to`
 : - `491711234567890`
-  - Dialed number
+  - Gewählte Nummer
 
 `to_comment`
 : - null, John, Doe
-  - Display name of called number if applicable
+  -  Name zur angerufenen Nummer anzeigen, falls vorhanden
 
 `to_pretty`
 : - `491711234567890`
-  - Pretty version of to
+  - "Hübsche" Version von `to`
 
 `updated_at`
 : - `2021-03-25T08:49:40.647Z`
-  - Last update of entry
+  - Letzte Aktualisierung des Eintrags
 
 
-## Chat Session
+## Chat-Sitzung
 
-The following index contains below mentioned information: `*_chat_session`
+Der folgende Index enthält folgende Informationen: `*_chat_session`
 
 `chat`
-: - Contains these attributes:
+: - Enthält diese Attribute:
     - active: `true`
     - block_country: `null`
     - block_ip: `null`
@@ -877,70 +877,70 @@ The following index contains below mentioned information: `*_chat_session`
     - updated_at: `2021-03-03T14:50:22.607Z`
     - updated_by_id: `1`
     - whitelisted_websites: `null`
-  - Contains various preferences of the chat topic in charge
+  - Enthält diverse Einstellungen des zuständigen Chat-Themas
 
 `chat_id`
 : - `1`
-  - ID of Chat topic
+  - ID des Chat-Themas
 
 `created_at`
 : - `2021-03-25T10:26:24.376Z`
-  - Time stamp of chat creation
+  - Zeitpunkt der Chaterstellung
 
 `created_by_id`
 : - `null`
-  - User that created the chat, place holder, currently always null
+  - Benutzer, der den Chat erstellt hat, Platzhalter, derzeit immer null
 
 `id`
 : - `1`
-  - ID of Chat Session
+  - ID der Chat-Sitzung
 
 `messages`
-: - (Array) - Array entries contain these attributes:
+: - (Array) - Array-Einträge enthalten diese Attribute:
     - chat_session_id: `1`
     - content: `Hello dear customer`
     - created_at: `2021-03-25T10:26:35.977Z`
     - created_by_id: `null`, `3`
     - id: 1 updated_at: `2021-03-25T10:26:35.977Z`
-  - Array with all messages of chat
+  - Array mit allen Nachrichten des Chats
 
 `name`
 : - `null`, `John Doe`
-  - Name agent set for chat user, if applicable
+  - Name, den Agent für den Benutzer des Chats vergeben hat, falls vorhanden
 
 `preferences`
-: - Contains these attributes:
+: - Enthält dies Attribute:
     - dns_name: `host.domain.tld`
     - geo_ip: `{}`
     - participants: Array, `["47118371175780", "47118371850300"]`
     - remote_ip: `192.168.2.19`
     - url: `https://zammad.com/en/company/contact`
-  - Various internal Meta data of the session_id
+  - Verschiedene interne Metadaten der `session_id`
 
 `session_id`
 : - `92f2909631f1ad5ff4d5d1e046952be8`
-  - Unique Session ID
+  - Eindeutige Session-ID
 
 `state`
 : - `closed`
-  - Current state of chat session
+  - Aktueller Status der Chatsitzung
 
 `tags`
 : - (Array), `["order", "refund"]`
-  - Tags applied to Chat Session by agent, if applicable
+  - Tags, die der Agent auf die Chat-Sitzung anwendet, falls vorhanden
 
 `updated_at`
 : - `2021-03-25T10:27:03.341Z`
-  - Last update
+  - Letzte Aktualisierung
 
 `updated_by_id`
 : - `null`, `3`
-  - User ID that last updated session, may be null
+  - ID des Benutzers, der die Sitzung zuletzt aktualisiert hat, kann `null` sein
 
 `user`
 : - \#\{user object\}
-  - Complete Payload of the chat agent Please see User for more
+  - Vollständiger Payload des Chat-Agenten. Siehe Benutzer für weitere Informationen
 
 `user_id`
 : - `3`
-  - User ID of chat agent
+  - Benutzer-ID des Chat-Agenten

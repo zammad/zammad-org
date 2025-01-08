@@ -13,11 +13,11 @@ title: 'Connect and Configure Elasticsearch'
 
 Set the Elasticsearch server address; adapt it to your scenario.
 
-Elasticsearch 7 / without `https`:
+Elasticsearch 7 / ohne `https`:
 ```sh
 zammad run rails r "Setting.set('es_url', 'http://localhost:9200')"
 ```
-Elasticsearch 8 / with `https`:
+Elasticsearch 8 / mit `https`:
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```

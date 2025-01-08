@@ -8,99 +8,103 @@ title: Einführung
 Zammad provides a powerful REST-API[^1] which allows all operations that are
 available via UI as well.
 
-This page gives you a first impression for things that generally count for
-all endpoints and how to adapt.
+Auf dieser Seite erhalten Sie einen ersten Eindruck von den Dingen, die
+generell für alle Endpunkte gelten und wie Sie sie anpassen können.
 
-## API clients
+## API-Clients
 
-There are API clients available. Please note that these clients may not
-provide access to all available endpoints listed here.
+Es sind einige API Clients verfügbar. Bitte beachten Sie, dass diese Clients
+möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 
 - [Ruby Client](https://github.com/zammad/zammad-api-client-ruby)
-  *(official)*
+  *(offiziell)*
 - [PHP Client](https://github.com/zammad/zammad-api-client-php)
-  *(official)*
+  *(offiziell)*
 - [Python Client](https://pypi.org/project/zammad-py/) *(Third-Party)*
-- [.NET Client](https://github.com/Asesjix/Zammad-Client)  *(third-Party)*
+- [.NET Client](https://github.com/Asesjix/Zammad-Client) *(Third-Party)*
 - [Android API-Client](https://github.com/KirkBushman/zammad-android)
-  *(third-Party)*
-- [Go Client](https://github.com/AlessandroSechi/zammad-go)  *(third-Party;
-  API client only, no "ready to use" app)*
+  *(Third-Party)*
+- [Go Client](https://github.com/AlessandroSechi/zammad-go) *(Third-Party;
+  nur API-Client, keine "gebrauchsfertige" Anwendung)*
 
-## Authentication
+## Authentifizierung
 
-Zammad supports three different authentication methods for its API.
+Zammad unterstützt drei verschiedene Authentifizierungsmethoden für seine
+API.
 
-### HTTP Basic Authentication (username/password)
+### HTTP-Basisauthentifizierung (Benutzername/Kennwort)
 
-The username / password must be provided as HTTP header in the HTTP call.
-This authentication method can be disabled and may not be available in your
-system.
+Der Benutzername / das Passwort muss als HTTP Header im HTTP-Aufruf
+angegeben werden.  Diese Authentifizierungsmethode kann deaktiviert werden
+und ist möglicherweise in Ihrem System nicht verfügbar.
 
 ```sh
 $ curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
 :::warning
-We strongly suggest against using basic authentication. Use access
-tokens when ever possible!
+Wir raten dringend von der Verwendung der Basisauthentifizierung ab. Verwenden Sie
+Zugangs-Token, wann immer möglich!
 :::
 
-### HTTP Token Authentication (access token)
+### HTTP-Token-Authentifizierung (Zugangs-Token)
 
-The access token must be provided as HTTP header in the HTTP call.  Each
-user can create several access tokens in their user preferences.  This
-authentication method can be disabled and may not be available in your
-system.
+Das Zugangs-Token muss als HTTP Header im HTTP-Aufruf angegeben werden.
+Jeder Benutzer kann in seinen Benutzereinstellungen mehrere Zugangs-Token
+erstellen.  Diese Authentifizierungsmethode kann deaktiviert werden und ist
+möglicherweise in Ihrem System nicht verfügbar.
 
 ```sh
 $ curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
-### OAuth2 (token access)
-The token must be provided as HTTP header in your calls.  This allows 3rd
-party applications to authenticate against Zammad.
+### OAuth2 (Token-Zugang)
+Das Token muss als HTTP Header in Ihren Aufrufen angegeben werden.  Dies
+ermöglicht es Anwendungen von Drittanbietern, sich gegenüber Zammad zu
+authentifizieren.
 
 ```sh
 $ curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoints and Example Data
+## Endpunkte und Beispieldaten
 
-For simplicity we'll not provide specific commands on the next pages, but
-instead tell the possible call method (e.g. `GET`) and the endpoint to use
-(e.g. `/api/v1/users`). In case Zammad expects information within these
-endpoint urls, we'll put them into curly braces like so:
-`/api/v1/users/{user id}`
+Der Einfachheit halber werden wir auf den nächsten Seiten keine spezifischen
+Befehle angeben, sondern stattdessen die mögliche Aufrufmethode (z.B. `GET`)
+und den zu verwendenden Endpunkt (z.B. `/api/v1/users`). Für den Fall, dass
+Zammad Informationen innerhalb dieser Endpunkt-URLs erwartet, setzen wir sie
+in geschweifte Klammern wie folgt: `/api/v1/users/{user id}`
 
-The response format will be a complete JSON response from a default Zammad
-instance. Please keep in mind that you may see more fields or general
-information in case you added objects or other information.
+Das Antwortformat ist eine vollständige JSON-Antwort von einer
+Standardinstanz von Zammad. Bitte denken Sie daran, dass Sie möglicherweise
+weitere Felder oder allgemeine Informationen sehen, falls Sie Objekte oder
+andere Informationen hinzugefügt haben.
 
-## Content Type
+## Inhalts-Typ
 
-Zammad returns JSON payloads whenever you retrieve data. If you're going to
-provide data, no matter of the general request type, don't forget to provide
-the content type `application/json` as well.
+Zammad gibt JSON-Payloads zurück, wenn Sie Daten abrufen. Wenn Sie Daten
+bereitstellen, unabhängig vom allgemeinen Anfragetyp, vergessen Sie nicht,
+auch den Inhaltstyp `application/json` anzugeben.
 
-## Response Payloads (Expand)
+## Antwort-Payloads (erweitern)
 
-Zammad always returns information including hints to all relations. If you
-need more information than that (because IDs may not be enough) you can also
-extend your endpoint calls with `?expand=true`.
+Zammad gibt immer Informationen einschließlich Hinweisen zu allen
+Beziehungen zurück. Wenn Sie mehr Informationen benötigen (weil IDs
+möglicherweise nicht ausreichen), können Sie Ihre Endpunktaufrufe auch mit
+`?expand=true` erweitern.
 
-This switch will provide even more information - at least named relations on
-top of the ID ones. Below you can find two examples, one for ticket and one
-for user:
+Dieser Schalter liefert noch mehr Informationen - zumindest benannte
+Beziehungen zusätzlich zu den ID-Beziehungen. Nachfolgend finden Sie zwei
+Beispiele, eines für ein Ticket und eines für einen Benutzer:
 
 :::: details
 :::tabs
 
-=== User payload
+=== Benutzer Payload
 
 <<< @/fixtures/rest-api/users/get-id-res.json
 
-=== Ticket payload
+=== Ticket Payload
 
 <<< @/fixtures/rest-api/tickets/get-id-res.json
 
@@ -108,72 +112,75 @@ for user:
 ::::
 
 :::tip
-Please note that Core Workflows may restrict access to attributes or
-values.
+Bitte beachten Sie, dass Core Workflows den Zugriff auf Attribute oder
+Werte beschränken können.
 :::
 
 ## Pagination
 
-As Zammad limits the number of returned objects for performance reasons, you
-may have to use pagination at some points.
+Da Zammad die Anzahl der zurückgegebenen Objekte aus Leistungsgründen
+begrenzt, müssen Sie an einigen Stellen eine Paginierung verwenden.
 
 :::info
-**Number of returned objects:** Zammad has hard limits for the
-maximum returned objects. You can't raise these limits.
+**Anzahl der zurückgegebenen Objekte:** Zammad hat eine harte Grenzen für die
+maximal zurückgegebenen Objekte. Sie können diese Grenzen nicht überschreiten.
 
-**Number of total to return objects:** Zammad does not provide a
-total count of objects available for your query. This forces you to
-cycle through the pages until Zammad no longer returns further
-objects.
+**Gesamtzahl der zurückzugebenden Objekte:** Zammad bietet keine
+Gesamtanzahl der für Ihre Abfrage verfügbaren Objekte. Dies zwingt Sie dazu,
+durch die Seiten zu blättern, bis Zammad keine weiteren Objekte mehr zurückgibt.
 :::
 
-In order to use pagination you'll need two get options: `per_page` and
-`page`. Combine them to receive 5 results from the first result page:
-`?page=1&per_page=5` - increase page count to get more results.
+Um die Paginierung zu verwenden, benötigen Sie zwei get-Optionen: `per_page`
+und `page`. Kombinieren Sie sie, um 5 Ergebnisse von der ersten
+Ergebnisseite zu erhalten: `?page=1&per_page=5`. Erhöhen Sie die Seitenzahl,
+um mehr Ergebnisse zu erhalten.
 
-## Sorting Search Results
+## Sortierung der Suchergebnisse
 
-Zammad allows you to sort your search results by field if needed.
+Zammad ermöglicht es Ihnen, Ihre Suchergebnisse bei Bedarf nach Feldern zu
+sortieren.
 
 ### `sort_by`
-Append `?sort_by={row name}` to your query to sort by a specific row that
-appears in the search result.
+Fügen Sie `?sort_by={Zeilenname}` an Ihre Abfrage an, um nach einer
+bestimmten Zeile zu sortieren, die im Suchergebnis erscheint.
 
 ### `order_by`
-Append `?order_by={direction}` to your query to switch in between ascending
-and descending order.
+Fügen Sie `?order_by={Richtung}` an Ihre Abfrage an, um zwischen
+aufsteigender und absteigender Reihenfolge zu wechseln.
 
-Directions are: `asc` and `desc`.
+Die Richtungen sind: `asc` und `desc`.
 
 :::tip
-Usually you'll want to combine both parameters in your searches -
-e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`
+In der Regel werden Sie beide Parameter in Ihrer Suche kombinieren wollen,
+z.B.: ?query={Suchstring}&sort_by={Zeilenname}&order_by={Richtung}`
 :::
 
-## Actions On Behalf of Other Users
+## Handlungen im Namen anderer Benutzer
 
-**Requirement:** the user used for running the query on behalf requires
-`admin.user` permission.
+**Voraussetzung:** Der Benutzer, der die Abfrage ausführt, benötigt
+die Berechtigung `admin.user`.
 
-Running API queries on behalf of other users allows you to e.g. create
-tickets by a different user.
+Wenn Sie API-Abfragen im Namen anderer Benutzer ausführen, können Sie
+z.B. Tickets von einem anderen Benutzer erstellen lassen.
 
-To do so, add a new HTTP header named `From` to your request. The value of
-this header can be one of the following:
+Fügen Sie dazu einen neuen HTTP Header mit dem Namen `From` zu Ihrer Anfrage
+hinzu. Der Wert dieses Headers kann einer der folgenden sein:
 
-- user ID
-- user login
-- user email
+- Benutzer ID
+- Benutzer-Login
+- Benutzer E-Mail
 
-`From` is available for all endpoints.
+Die Option `from` ist für alle Endpunkte verfügbar.
 
-## Encoding
+## Kodierung
 
-The API expects UTF-8 encoding. Keep in mind that especially when using URLs
-with get options (e.g. `?query=this`) you may need to encode your URL
-accordingly.
+Die API erwartet eine UTF-8-Kodierung. Beachten Sie, dass Sie insbesondere
+bei der Verwendung von URLs mit Get-Optionen (z. B. `?query=this`) Ihre URL
+entsprechend kodieren müssen.
 
-If you want to learn more about URL encoding, [this Wikipedia
-article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
+Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
+Wikipedia-Artikel] (https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
+sein
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
+**P**rogramming **I**nterface)

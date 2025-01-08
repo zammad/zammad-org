@@ -3,164 +3,164 @@ order: 3
 title: Umgebungsvariablen
 ---
 
-# Configuration via Environment Variables
+# Konfiguration über Umgebungsvariablen
 
-Use these environment variables to configure Zammad's behavior at
-runtime. You may want to have a look at the [collection of rails
-commands](/en/reference/console) as well.
+Verwenden Sie diese Umgebungsvariablen, um das Verhalten von Zammad zur
+Laufzeit zu konfigurieren. Sie sollten auch einen Blick auf die [Sammlung
+von Rails-Befehlen](/de/reference/console) werfen.
 
 ::: warning
-Please note that environment variables may be named differently for
-installations based on [Docker](/en/reference/docker-env-vars) and Kubernetes.
+Bitte beachten Sie, dass die Umgebungsvariablen für
+Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kubernetes unterschiedlich benannt sein können.
 :::
 
-Default values are marked with a <Badge type="info" text="badge"/>.
+Standardwerte sind mit einem <Badge type="info" text="badge"/> gekennzeichnet.
 
-## General Options
+## Allgemeine Optionen
 
-`GPG_PATH` <Badge type="info" text="unset"/>
-: Defines the path to the GPG installation. This is only needed if you
-  installed Zammad from Source, if you want to use different versions of
-  PGP on your machine or if your PGP installation differs from the
-  standard installation.
+`GPG_PATH` <Badge type="info" text="nicht gesetzt"/>
+: Legt den Pfad zur GPG-Installation fest. Dies wird nur benötigt, wenn Sie
+  Zammad aus dem Quellcode installiert haben, wenn Sie verschiedene Versionen von
+  PGP auf Ihrem Rechner verwenden wollen oder wenn Ihre PGP-Installation von der
+  Standard-Installation abweicht.
 
-`RAILS_LOG_TO_STDOUT` <Badge type="info" text="unset"/>
-: Print output directly to standard output instead of
+`RAILS_LOG_TO_STDOUT` <Badge type="info" text="nicht gesetzt"/>
+: Ausgabe direkt auf Standard Output anstatt in
   `/var/log/zammad/production.log`.
 
-  This setting can be overwritten during update on package installations.
-  Use `enabled` to turn this option on only until the next update. Use
-  `true` to turn it on permanently.
+  Diese Einstellung kann bei der Aktualisierung von Paketinstallationen überschrieben werden.
+  Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie
+  `true`, um sie dauerhaft einzuschalten.
 
 
-`ZAMMAD_SAFE_MODE` <Badge type="info" text="unset"/>
-: Ignore availability of third-party services when running Zammad
-  commands. Possible values: `1` or `true`
+ZAMMAD_SAFE_MODE` <Badge type="info" text="nicht gesetzt"/>
+: Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von
+  Zammad- Befehlen. Mögliche Werte: `1` oder `true`
 
   ::: warning
-  **Be careful** when running Zammad commands on production systems in
-  safe mode.
+  **Vorsicht** bei der Ausführung von Zammad-Befehlen auf Produktivsystemen im
+  abgesicherten Modus.
 
-  While it may allow an escape hatch for certain commands, it has a
-  potential to break regular Zammad operations.
+  Dies kann zwar einen Ausweg für bestimmte Fälle bieten, hat aber
+  das Potenzial, reguläre Zammad-Vorgänge zu unterbrechen.
   :::
 
 
-`ZAMMAD_HTTP_TYPE` <Badge type="info" text="unset"/>
-: Defines the HTTP protocol of your instance. Possible values: `http` or
+`ZAMMAD_HTTP_TYPE` <Badge type="info" text="nicht gesetzt"/>
+: Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder
   `https`
 
-`ZAMMAD_FQDN` <Badge type="info" text="unset"/>
-: Defines the fully qualified domain name of the system.
+`ZAMMAD_FQDN` <Badge type="info" text="nicht gesetzt"/>
+: Legt den FQDN/Domainnamen des Systems fest.
 
-## Network Options
+## Netzwerk-Optionen
 
 ::: tip
-Remember to update your web server config to reflect any changes you
-make here.
+Denken Sie daran, Ihre Webserverkonfiguration zu aktualisieren, damit alle Änderungen, die Sie
+hier vorgenommen haben, wirksam werden.
 :::
 
 `ZAMMAD_BIND_IP` <Badge type="info" text="127.0.0.1"/>
-: The IP address that the web server is bound to.
+: Die IP-Adresse, an die der Webserver gebunden ist.
 
 `ZAMMAD_RAILS_PORT` <Badge type="info" text="3000"/>
-: The port that the web server is exposed on.
+: Der Port, auf dem der Webserver erreichbar ist.
 
 
-`ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
-: The port that the web socket server is exposed on.
+ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
+: Der Port, auf dem der Web-Socket-Server betrieben wird.
 
-## Performance Tuning
+## Leistungsoptimierung
 
-Each of below settings comes with its own tradeoffs. There are no
-"recommended values" here; the optimal configuration will depend on your
-system's resources and typical application load.
+Jede der unten aufgeführten Einstellungen bringt ihre eigenen Kompromisse
+mit sich. Es gibt hier keine "empfohlenen Werte"; die optimale Konfiguration
+hängt von den Ressourcen Ihres Systems und der typischen Anwendungslast ab.
 
-Below settings *may* consume all available database connections. Please
-consider to check your database server configuration.
+Die folgenden Einstellungen *können* alle verfügbaren Datenbankverbindungen
+verbrauchen. Bitte prüfen Sie die Konfiguration Ihres Datenbankservers.
 
 ::: danger
-Proceed with caution and only if you know what you are doing!
-The settings below may lead to a very high load of your system and/or disable
-relevant parts of Zammad.
+Seien Sie vorsichtig und verwenden Sie die Einstellungen nur, wenn Sie wissen, was Sie tun!
+Die folgenden Einstellungen können zu einer sehr hohen Systemauslastung führen und/oder
+relevante Teile von Zammad deaktivieren.
 :::
 
-To find out how many users are currently on Zammad, you can use the rails
-command below:
+Um herauszufinden, wie viele Benutzer derzeit auf Zammad sind, können Sie
+den folgenden Rails-Befehl verwenden:
 
 ```sh
 zammad run rails r "p Sessions.list.uniq.count"
 ```
 
-`WEB_CONCURRENCY` <Badge type="info" text="unset"/>
-: How many instances of the application server to keep open at a time.
-  Increasing this can reduce loading times when too many users are on
-  Zammad at once.
+`WEB_CONCURRENCY` <Badge type="info" text="nicht gesetzt"/>
+: Wie viele Instanzen des Anwendungsservers gleichzeitig offen sein sollen.
+  Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf
+  Zammad sind.
 
-`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type="info" text="unset"/>
-: How many instances of the session worker to run at a time. Increasing this
-  can speed up background jobs (like the scheduler) when too many users are on
-  Zammad at once.
+`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type="info" text="nicht gesetzt"/>
+: Legt fest wie viele Instanzen des Sesstion Workers gleichzeitig ausgeführt werden sollen. 
+  Eine Erhöhung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen,
+  wenn zu viele Benutzer gleichzeitig in Zammad arbeiten.
 
-  Generally speaking, it should only be useful to adjust this setting if
-  you have more than 40 active users at a time.
+  Im Allgemeinen ist es nur dann sinnvoll, diese Einstellung zu ändern, wenn
+  Sie mehr als 40 aktive Benutzer gleichzeitig haben.
 
 
-`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type="info" text="unset"/>
-: Allows spawning an independent process just for processing scheduled
-  jobs like LDAP syncs. This can free up Zammad's background worker for
-  other tasks when running tasks that take fairly long.
+`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type="info" text="nicht gesetzt"/>
+: Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter
+  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad für andere
+  Aufgaben freigeben, falls solche Aufgaben ausgeführt werden, die ziemlich lange dauern.
 
-  Maximum number of workers: `1`
+  Maximale Anzahl von Workern: `1`
 
-  You can disable the processing of scheduled jobs by setting
-  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).
+  Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie
+  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
-`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="unset"/>
-: How many processes should work on delayed jobs? Increasing this *can*
-  improve issues with delayed jobs stacking up in your system. You may want to
-  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
+`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="nicht gesetzt"/>
+: Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl *kann*
+  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.
+  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.
 
-  Maximum number of workers: `16`
+  Maximale Anzahl von Workern: `16`
 
-  You can disable the processing of scheduled jobs by setting
-  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).
+  Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie
+  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
-## Additional Performance Adjustments
+## Zusätzliche Performance-Anpassungen
 
 ::: info
-The options listed below allow you to distribute Zammad processes over
-several application nodes. Even if that's not your goal, they may
-provide great benefits on bigger installations.
+Mit den unten aufgeführten Optionen können Sie die Zammad-Prozesse über
+mehrere Anwendungsknoten zu verteilen. Auch wenn das nicht Ihr Ziel ist,
+können sie bei größeren Installationen von großem Nutzen sein.
 
-Please note that distribution of processes on several nodes is out of
-the scope of this documentation.
+Bitte beachten Sie, dass die Verteilung von Prozessen auf mehrere Knoten nicht
+Inhalt dieser Dokumentation ist.
 :::
 
-`REDIS_URL` <Badge type="info" text="unset"/>
-: Store your web socket connection information within Redis.
-  To do so, tell Zammad where to find your Redis instance:
-  `redis://your.redis.server:6379`
-  If not provided, Zammad falls back to file system
-  (`/opt/zammad/tmp/websocket_*`).
+`REDIS_URL` <Badge type="info" text="nicht gesetzt"/>
+: Speichern Sie Ihre Web-Socket-Verbindungsinformationen in Redis.
+  Dazu teilen Sie Zammad mit, wo Ihre Redis-Instanz zu finden ist:
+  `redis://Ihr.redis.server:6379`
+  Falls nicht angegeben, greift Zammad auf das Dateisystem zurück
+  (`/opt/zammad/tmp/websocket_*`) zurück.
 
 
-`MEMCACHE_SERVERS` <Badge type="info" text="unset"/>
-: Store your application cache files within Memcached.
-  To do so, tell Zammad where to find your Memcached instance:
-  `your.memcached.server:11211`
-  If not provided, Zammad falls back to file system
-  (`/opt/zammad/tmp/cache*`).
+`MEMCACHE_SERVERS` <Badge type="info" text="nicht gesetzt"/>
+: Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.
+  Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:
+  `Ihr.memcached.server:11211`
+  Wenn nicht angegeben, greift Zammad auf das Dateisystem zurück
+  (`/opt/zammad/tmp/cache*`) zurück.
 
-  Memcached allows you to restrict the maximum size Zammad may store as
-  cache. This comes in handy in terms of performance and keeping caching
-  files small. `1 GB` should be a reasonable size.
+  Mit Memcached können Sie die maximale Größe festlegen, die Zammad als
+  Cache speichern kann. Dies ist sehr nützlich für die Leistung und um die
+  Cache-Dateien klein zu halten. `1 GB` sollte eine angemessene Größe sein.
 
-## Storage Options
+## Speicheroptionen
 
-`S3_URL` : Allows you to provide your S3 configuration.
+`S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben.
 
-  Format / example:
+  Format / Beispiel:
   ```sh
   https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true
   ```

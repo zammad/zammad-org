@@ -44,60 +44,60 @@ in den folgenden Befehlen zu sehen.
 :::tabs
 
 === Ubuntu/Debian
-Update package lists:
+Update Packet-Liste:
 ```sh
 apt update
 ```
-Disable updates for Zammad:
+Update für Zammad deaktivieren:
 ```sh
 apt-mark hold zammad
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```sh
 apt upgrade
 ```
-Re-enable updates for Zammad:
+Re-Aktivierung der Updates für Zammad:
 ```sh
 apt-mark unhold zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```sh
 apt upgrade
 ```
 
 === OpenSUSE/SLES
 
-Update package lists:
+Update Packet-Liste
 ```sh
 zypper refresh
 ```
-Disable updates for Zammad:
+Update für Zammad deaktivieren:
 ```sh
 zypper addlock zammad
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```sh
 zypper update
 ```
-Re-enable updates for Zammad:
+Re-Aktivierung der Updates für Zammad:
 ```sh
 zypper removelock zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```sh
 zypper update
 ```
 === CentOS/RHEL
 
-Update package lists:
+Update Packet-Liste:
 ```sh
 yum check-update
 ```
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 ```sh
 yum upgrade --exclude zammad
 ```
-Update Zammad:
+Update von Zammad:
 ```sh
 yum upgrade
 ```

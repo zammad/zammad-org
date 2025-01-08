@@ -11,9 +11,9 @@ using is an **agent**. Because of this tickets may or may not be
 available.
 :::
 
-## List
+## Auflisten
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/tickets`
 
@@ -25,7 +25,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ## Suche
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/tickets/search?query={search string}&limit=10`
 
@@ -40,9 +40,9 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 *the total amount*.
 :::
 
-## Show
+## Anzeigen
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/tickets/{ticket id}`
 
@@ -52,9 +52,9 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `POST`-Request sent: `/api/v1/tickets`
 
@@ -98,7 +98,7 @@ For more article attributes and options have a look into
 
 ## Aktualisierung
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `PUT`-Request sent: `/api/v1/tickets/{ticket id}`
 
@@ -129,7 +129,7 @@ Attachment payloads are identical to the `POST` method, just use `PUT`
 instead.
 :::
 
-## Delete
+## Löschen
 
 Required permission: `admin`
 

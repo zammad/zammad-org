@@ -99,7 +99,7 @@ This will return an output like the following:
 :::
 ::::
 
-### ES - Chat Sessions
+### ES - Chat-Sitzungen
 
 - Index name: `zammad_production_chat_session`
 - Time field name: `created_at`
@@ -109,22 +109,22 @@ This will return an output like the following:
 - Index name: `zammad_production_cti_log`
 - Time field name: `start_at`
 
-### ES - Ticket Articles
+### ES - Ticket Artikel
 
 - Index name: `zammad_production_ticket`
 - Time field name: `article.created_at`
 
-### ES - Tickets by closed_at
+### ES - Tickets closed_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `close_at`
 
-### ES - Tickets by created_at
+### ES - Tickets created_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `created_at`
 
-### ES - Tickets by first_response_at
+### ES - Tickets first_response_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `first_response_at`

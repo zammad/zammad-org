@@ -1,19 +1,19 @@
 ---
 order: 2
-title: Calendar
+title: Kalender
 ---
 
-# Calendar
+# Kalender
 
 :::tip
-Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).
+Kalender gehören zu [Zammads SLA-Berechnung](/de/reference/rest-api/sla).
 :::
 
-## List
+## Auflisten
 
-Required permission: `admin.calendar`
+Erforderliche Berechtigung: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars`
+`GET`-Anfrage gesendet: `/api/v1/calendars`
 
 ::: details Show response
 
@@ -21,11 +21,11 @@ Required permission: `admin.calendar`
 
 :::
 
-## Show
+## Anzeigen
 
-Required permission: `admin.calendar`
+Erforderliche Berechtigung: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars/{id}`
+`GET`-Anfrage gesendet: `/api/v1/calendars/{id}`
 
 ::: details Show response
 
@@ -33,11 +33,11 @@ Required permission: `admin.calendar`
 
 :::
 
-## Create
+## Erstellen
 
-Required permission: `admin.calendar`
+Erforderliche Berechtigung: `admin.calendar`
 
-`POST`-Request sent: `/api/v1/calendars`
+`POST`-Anfrage gesendet: `/api/v1/calendars`
 
 :::: details Show request/response
 
@@ -56,9 +56,9 @@ Required permission: `admin.calendar`
 
 ## Aktualisierung
 
-Required permission: `admin.calendar`
+Erforderliche Berechtigung: `admin.calendar`
 
-`PUT`-Request sent: `/api/v1/calendars/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/calendars/{id}`
 
 :::: details Show request/response
 
@@ -75,21 +75,21 @@ Required permission: `admin.calendar`
 :::
 ::::
 
-## Delete
+## Löschen
 
-Required permission: `admin.calendar`
+Erforderliche Berechtigung: `admin.calendar`
 
-`DELETE`-Request sent: `/api/v1/calendars/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/calendars/{id}`
 
 ::: danger
 
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing Calendar configurations cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Kalenderkonfigurationen nicht rückgängig gemacht werden kann.
 
-Removing calendars with references in SLA configurations is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+Das Entfernen von Kalendern mit Referenzen in SLA-Konfigurationen ist nicht möglich
+über die API - dies wird angezeigt durch
+`"error": "Can't delete, object has references."`. Dies ist *kein* Fehler.
 :::
 
 ::: details Show response
