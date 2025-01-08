@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-12-20 12:51+0100\n"
+"POT-Creation-Date: 2025-01-07 16:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -725,7 +725,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:179
 #: src/en/tutorials/connect-config-elasticsearch.md:90
-#: src/en/tutorials/sso-kerberos.md:526
+#: src/en/tutorials/sso-kerberos.md:527
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
 msgstr ""
@@ -9400,28 +9400,27 @@ msgid ""
 "*Settings > System > Services*.\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/privacy.md:87
-#, markdown-text, no-wrap
+#. type: Fenced div block (info)
+#: src/en/reference/privacy.md:79
+#, no-wrap
 msgid ""
-"> [!NOTE]\n"
-"> By default, the third-party services that Zammad relies on are mostly\n"
-"> ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
-"> can be extended to interface with other services instead.\n"
-">\n"
-"> The source code for these third-party service integrations can be\n"
-"> found\n"
-"> [here](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
+"By default, the third-party services that Zammad relies on are mostly\n"
+"ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
+"can be extended to interface with other services instead.\n"
+"\n"
+"The source code for these third-party service integrations can be\n"
+"found\n"
+"[here](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:88
+#: src/en/reference/privacy.md:89
 #, markdown-text, no-wrap
 msgid "Images"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:92
+#: src/en/reference/privacy.md:93
 #, markdown-text
 msgid ""
 "No private images or personally-identifying information are stored on "
@@ -9429,7 +9428,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:98
+#: src/en/reference/privacy.md:99
 #, markdown-text
 msgid ""
 "The Images service caches publicly-available images from sources like "
@@ -9440,19 +9439,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:99
+#: src/en/reference/privacy.md:100
 #, markdown-text, no-wrap
 msgid "GeoCalendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:102 src/en/reference/privacy.md:111
+#: src/en/reference/privacy.md:103 src/en/reference/privacy.md:112
 #, markdown-text
 msgid "No user information is stored or cached on geo.zammad.com."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:107
+#: src/en/reference/privacy.md:108
 #, markdown-text
 msgid ""
 "As part of its service-level agreement (SLA) functionality, Zammad requires "
@@ -9462,13 +9461,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:108
+#: src/en/reference/privacy.md:109
 #, markdown-text, no-wrap
 msgid "GeoIP"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:117
+#: src/en/reference/privacy.md:118
 #, markdown-text
 msgid ""
 "One of Zammad's security features is to track user sessions based on the "
@@ -9479,13 +9478,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:118
+#: src/en/reference/privacy.md:119
 #, markdown-text, no-wrap
 msgid "Geolocation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:125
+#: src/en/reference/privacy.md:126
 #, markdown-text
 msgid ""
 "Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned "
@@ -9906,7 +9905,7 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:203
 #, no-wrap
 msgid ""
-"If you're not sure which articles an article contains, please\n"
+"If you're not sure which articles a ticket contains, please\n"
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
 
@@ -18655,23 +18654,22 @@ msgid ""
 "*Settings > Security > Third-Party Applications*\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:481
-#, markdown-text, no-wrap
+#. type: Fenced div block (tip)
+#: src/en/tutorials/sso-kerberos.md:478
+#, no-wrap
 msgid ""
-"> [!NOTE]\n"
-"> On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
-"> to sign in.\n"
+"On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
+"to sign in.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:482
+#: src/en/tutorials/sso-kerberos.md:483
 #, markdown-text, no-wrap
 msgid "Step 4: Configure Client System (Windows Only)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:486
+#: src/en/tutorials/sso-kerberos.md:487
 #, markdown-text
 msgid ""
 "For the full SSO experience (i.e. for passwordless one-click sign-in), "
@@ -18679,13 +18677,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1.  '
-#: src/en/tutorials/sso-kerberos.md:490
+#: src/en/tutorials/sso-kerberos.md:491
 #, markdown-text
 msgid "be on the Active Directory server's local intranet; and"
 msgstr ""
 
 #. type: Bullet: '2.  '
-#: src/en/tutorials/sso-kerberos.md:490
+#: src/en/tutorials/sso-kerberos.md:491
 #, markdown-text
 msgid ""
 "modify their network settings for the Zammad host to be treated as a local "
@@ -18693,7 +18691,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:493
+#: src/en/tutorials/sso-kerberos.md:494
 #, markdown-text
 msgid ""
 "Without this step, users must enter their Active Directory credentials "
@@ -18701,7 +18699,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 #, no-wrap
 msgid ""
 "\n"
@@ -18710,7 +18708,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 #, no-wrap
 msgid ""
 "This setting can be centrally managed across the entire intranet using\n"
@@ -18718,7 +18716,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 #, no-wrap
 msgid ""
 "\n"
@@ -18735,7 +18733,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|info)
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 #, no-wrap
 msgid ""
 "This option cannot be centrally managed because it is set in the\n"
@@ -18743,7 +18741,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 #, no-wrap
 msgid ""
 "\n"
@@ -18756,7 +18754,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:533
+#: src/en/tutorials/sso-kerberos.md:534
 #, markdown-text
 msgid ""
 "Are all relevant FQDNs/hostnames reachable from your Active Directory and "
@@ -18764,7 +18762,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:533
+#: src/en/tutorials/sso-kerberos.md:534
 #, markdown-text
 msgid ""
 "Are the system clocks of your Active Directory and Zammad servers "
@@ -18773,13 +18771,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:534
+#: src/en/tutorials/sso-kerberos.md:535
 #, markdown-text, no-wrap
 msgid "Errors in Apache Logs"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:536
+#: src/en/tutorials/sso-kerberos.md:537
 #, no-wrap
 msgid ""
 "**Try raising your Apache log level temporarily.**\n"
@@ -18789,13 +18787,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:543
+#: src/en/tutorials/sso-kerberos.md:544
 #, markdown-text, no-wrap
 msgid "An unsupported mechanism was requested"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:546
+#: src/en/tutorials/sso-kerberos.md:547
 #, markdown-text
 msgid ""
 "Does your Active Directory service account have **Kerberos AES 256-bit "
@@ -18803,7 +18801,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:550
+#: src/en/tutorials/sso-kerberos.md:551
 #, markdown-text
 msgid ""
 "If for some reason your server does not support AES 256-bit encryption, the "
@@ -18812,13 +18810,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:551
+#: src/en/tutorials/sso-kerberos.md:552
 #, markdown-text, no-wrap
 msgid "Failed to verify krb5 credentials: Key version is not available"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:554
+#: src/en/tutorials/sso-kerberos.md:555
 #, markdown-text, no-wrap
 msgid ""
 "Did you use the exact **version number** (`vno`) provided by `ktpass`\n"
@@ -18826,13 +18824,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:556 src/en/tutorials/sso-kerberos.md:562
+#: src/en/tutorials/sso-kerberos.md:557 src/en/tutorials/sso-kerberos.md:563
 #, markdown-text
 msgid "Try generating it again, just to be sure."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:557
+#: src/en/tutorials/sso-kerberos.md:558
 #, markdown-text, no-wrap
 msgid ""
 "Unspecified GSS failure. Minor code may provide more information (, No key "
@@ -18840,7 +18838,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:560
+#: src/en/tutorials/sso-kerberos.md:561
 #, markdown-text, no-wrap
 msgid ""
 "Does the **service name** you provided to `setspn` exactly match the one\n"
@@ -18848,13 +18846,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:563
+#: src/en/tutorials/sso-kerberos.md:564
 #, markdown-text, no-wrap
 msgid "No key table entry found for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:566
+#: src/en/tutorials/sso-kerberos.md:567
 #, markdown-text
 msgid ""
 "Does your virtual host configuration's `KrbServiceName` setting exactly "
@@ -18862,13 +18860,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:568
+#: src/en/tutorials/sso-kerberos.md:569
 #, markdown-text
 msgid "This setting is case-sensitive."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:569
+#: src/en/tutorials/sso-kerberos.md:570
 #, markdown-text, no-wrap
 msgid ""
 "Warning: received token seems to be NTLM, which isn't supported by the "
@@ -18876,7 +18874,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:572
+#: src/en/tutorials/sso-kerberos.md:573
 #, markdown-text
 msgid ""
 "Is your Zammad host accessible at an FQDN? This error may indicate that you "
@@ -18884,13 +18882,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:573
+#: src/en/tutorials/sso-kerberos.md:574
 #, markdown-text, no-wrap
 msgid "Cannot decrypt ticket for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:576
+#: src/en/tutorials/sso-kerberos.md:577
 #, markdown-text
 msgid ""
 "Did you make sure to change the password on your Active Directory service "
@@ -18898,7 +18896,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:579
+#: src/en/tutorials/sso-kerberos.md:580
 #, markdown-text
 msgid ""
 "And did you make sure to register the SPN (with `ktpass`) and generate your "
@@ -18906,7 +18904,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:585
+#: src/en/tutorials/sso-kerberos.md:586
 #, markdown-text, no-wrap
 msgid ""
 "Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.\n"
@@ -18917,7 +18915,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:586
+#: src/en/tutorials/sso-kerberos.md:587
 #, markdown-text, no-wrap
 msgid ""
 "Failed when verifying KDC\" and \"failed to verify krb5 credentials: Decrypt "
@@ -18925,19 +18923,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:588
+#: src/en/tutorials/sso-kerberos.md:589
 #, markdown-text
 msgid "Ensure `KrbServiceName` is the correct ServiceName provided via setspn."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:590
+#: src/en/tutorials/sso-kerberos.md:591
 #, markdown-text
 msgid "Ensure your Active Directory supports the encryption method configured."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:593
+#: src/en/tutorials/sso-kerberos.md:594
 #, markdown-text
 msgid ""
 "If all above is correct and the rest of FAQ also is ensured, make sure your "

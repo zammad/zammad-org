@@ -198,6 +198,6 @@ id}/{attachment id}`
 Response: `{image file}`
 
 ::: tip
-If you're not sure which articles an article contains, please
+If you're not sure which articles a ticket contains, please
 [list](#list-articles-by-ticket) affected articles first.
 :::
