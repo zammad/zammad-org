@@ -5,173 +5,180 @@ title: 'Sichern & Wiederherstellen'
 
 # Sichern & Wiederherstellen
 
-Zammad ships scripts in package installations for backup & restore which you
-can use.
+Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
+Paketinstallationen mit, die Sie verwenden können.
 
 :::warning
-These scripts do not come with any warranty and may not work in your specific
-use case. This depends on the configuration and installation type of your
-instance.
+Diese Skripte sind ohne jegliche Garantie und funktionieren möglicherweise nicht in Ihrem speziellen
+Anwendungsfall. Dies hängt von der Konfiguration und dem Installationstyp Ihrer
+Instanz ab.
 
-You should always regularly test and review the functionality! If the script
-functionality or scope is not working for your cases, feel free to copy these
-to a independent location and adjust the scripts as needed.
+Sie sollten die Funktionalität immer regelmäßig testen und überprüfen! Falls eine
+Funktionalität oder der Umfang in Ihrem Fall nicht funktioniert, können Sie diese Skripte
+an einen unabhängigen Ort kopieren und nach Bedarf anpassen.
 :::
 
-There are some limitations you should know:
+Es gibt einige Einschränkungen, die Sie kennen sollten:
 
-- These scripts won't work in container based installations.
-- They only work for PostgreSQL installations.
-- The backup is always a full dump (no incremental backup).
-- Partial backup and restore (e.g. only specific data like tickets, users)
-  is not possible.
-- Switching database system is not possible.
-- System settings (like environment variables) are not backed up.
-- Restore to an older Zammad version is not possible.
-- Do not restore backup files from custom scripts with the provided scripts
-  by Zammad. This might cause problems.
+- Diese Skripte funktionieren nicht in Container-basierten Installationen.
+- Sie funktionieren nur für PostgreSQL-Installationen.
+- Bei der Sicherung handelt es sich immer um einen vollständigen Dump (keine
+  inkrementelle Sicherung).
+- Eine partielle Sicherung und Wiederherstellung (z.B. nur bestimmter Daten
+  wie Tickets, Benutzer) ist nicht möglich.
+- Ein Wechsel des Datenbanksystems ist nicht möglich.
+- Systemeinstellungen (wie Umgebungsvariablen) werden nicht gesichert.
+- Eine Wiederherstellung in einer älteren Zammad-Version ist nicht möglich.
+- Stellen Sie Sicherungsdateien aus benutzerdefinierten Skripten nicht mit
+  den Standard-Skripten von Zammad wieder her. Dies könnte Probleme
+  verursachen.
 
 ## Schnellstart
 
-The scripts are located in `/opt/zammad/contrib/backup`. The following files
-are relevant:
+Die Skripte befinden sich in `/opt/zammad/contrib/backup`. Die folgenden
+Dateien sind relevant:
 
-- Backup configuration file: `config.dist`
-- Script for backing up your data: `zammad_backup.sh`
-- Script for restoring your data: `zammad_restore.sh`
+- Konfigurationsdatei für Sicherungen: `config.dist`
+- Skript zum Sichern Ihrer Daten: `zammad_backup.sh`
+- Skript zum Wiederherstellen Ihrer Daten: `zammad_restore.sh`
 
-To execute a backup based on the default configuration, follow the steps
-below:
+Gehen Sie wie folgt vor, um eine Sicherung auf Basis einer
+Standardkonfiguration durchzuführen:
 
-1. Copy the `config.dist` file to `config`.
-1. Change default parameters in the config file if needed. See [Backup
-   Configuration](#backup-config-parametersbackup-config-parameters) for
-   details.
-1. Stop Zammad `systemctl stop zammad`
-1. Execute `/opt/zammad/contrib/backup/zammad_backup.sh` (as `root` or
-   `zammad` user)
+1. Kopieren Sie die Datei `config.dist` nach `config`.
+1. Ändern Sie bei Bedarf die Standardparameter in der
+   Konfigurationsdatei. Siehe [Backup-Konfiguration](#backup-konfiguration)
+   für Details.
+1. Zammad stoppen `systemctl stop zammad`
+1. Ausführen von `/opt/zammad/contrib/backup/zammad_backup.sh` (als `root`
+   oder `zammad` Benutzer)
 
-## Backup Configuration
+## Backup-Konfiguration
 
-You can find details about the configuration parameters with default values
-below.
+Einzelheiten zu den Konfigurationsparametern mit Standardwerten finden Sie
+weiter unten.
 
 `BACKUP_DIR` <Badge type="info" text="/var/tmp/zammad_backup"/>
-: Location where the script writes the backup files to. The directory will be
-  created if it does not exist. Make sure you have enough space because the
-  script writes full dumps.
+: Verzeichnis, in das das Skript die Sicherungsdateien schreibt. Das Verzeichnis wird
+  erstellt, wenn es nicht existiert. Stellen Sie sicher, dass Sie genügend Speicherplatz haben, da das
+  Skript vollständige Dumps schreibt.
 
 `HOLD_DAYS` <Badge type="info" text="10"/>
-: Define how many days the backup script should keep old backups. This value
-  contains a 60 minutes grace period (e.g. 10 days plus 1 hour) for safety
-  reasons. Old backups are removed before creating the a new backup.
+: Legen Sie fest, wie viele Tage das Backup-Skript alte Backups aufbewahren soll. Dieser Wert
+  enthält aus Sicherheitsgründen eine 60-minütige Karenzzeit (z.B. 10 Tage plus 1 Stunde).
+  Alte Backups werden vor der Erstellung eines neuen Backups entfernt.
 
-  Examples:
-  - `1` will keep backups of the last 25 hours
-  - `-1` will remove all available backups (except the new one)
+  Beispiele:
+   - `1` behält Backups der letzten 25 Stunden
+   - `-1` entfernt alle vorhandenen Sicherungen (außer der neuen)
 
 `FULL_FS_DUMP` <Badge type="info" text="yes"/>
-: - `yes`: the backup includes also application files.
-  - `no`: the backup includes only user data.
+: - `yes`: die Sicherung umfasst auch Anwendungsdateien.
+  - `no`: das Backup enthält nur Benutzerdaten.
 
-  In any case, it includes the Zammad database and the attachments, if you
-  stored them in the file system. If you are in doubt, set this to no.
+  In jedem Fall umfasst sie die Datenbank von Zammad und die Anhänge, wenn Sie
+  diese im Dateisystem gespeichert haben. Wenn Sie unsicher sind, setzen Sie dies auf nein.
 
 ``DEBUG`` <Badge type="info" text="no"/>
-: Setting this option to `yes` will output useful debug messages.
+: Wenn Sie diese Option auf ``yess`` setzen, werden nützliche Debug-Meldungen ausgegeben.
   :::warning
-  This option potentially returns sensitive information to standard output! Do
-  not use this option in production environments or ensure to turn it off after
-  testing.
+  Diese Option gibt potenziell sensible Informationen über die Standardausgabe aus! Verwenden Sie
+  diese Option nicht in Produktivumgebungen oder schalten Sie sie nach dem
+  testen wieder ab.
   :::
 
-## Restore Backups
+## Sicherungen wiederherstellen
 
-### Important Information
+### Wichtige Informationen
 
-Please read the following information carefully before starting to restore
-your data.
+Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit
+der Wiederherstellung Ihrer Daten beginnen.
 
-- This section is **not** about **migrating from one host to another**. You
-  can find instructions about this topic in the [next
-  section](#migrate-to-a-new-host).
-- This guide expects a fully installed Zammad version
-- It also expects you to restore Zammad on the same host and Zammad version
-- The restore process stops & restarts Zammad. Therefore you have to run the
-  restore script with appropriate permissions (e.g. as root).
-- PostgreSQL based installations will drop and re-create the database!
-- At least twice the backed up Zammad instance size of free storage is
-  required. If you have the dump only, factor 3 could be a good number.
+- In diesem Abschnitt geht es **nicht** um die **Migration von einem Host zu
+  einem anderen**. Sie finden Anweisungen zu diesem Thema im [nächsten
+  Abschnitt](#migration-zu-neuem-host).
+- Diese Anleitung setzt eine vollständig installierte Zammad-Version voraus
+- Außerdem wird erwartet, dass Sie Zammad auf demselben Host und derselben
+  Zammad-Version wiederherstellen
+- Der Wiederherstellungsprozess stoppt Zammad an und startet es neu. Daher
+  müssen Sie das Wiederherstellungsskript mit den entsprechenden Rechten
+  (z.B. als root) ausführen.
+- PostgreSQL-basierte Installationen löschen und erstellen die Datenbank
+  neu!
+- Es ist mindestens die doppelte Größe der Sicherung als freier
+  Speicherplatz erforderlich. Wenn Sie nur den Dump haben, könnte der Faktor
+  3 eine gute Zahl sein.
 
 :::tip
-If your scenario is different as described above, please consult the
-[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) or consider
-[paid support options](https://zammad.com/en/services/professional-services).
+Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) oder erwägen Sie
+[bezahlte Support-Optionen](https://zammad.com/de/services/professional-services).
 :::
 
-### Copy Backup Files to a Fitting Location
+### Kopieren von Sicherungsdateien an einen passenden Ort
 
-Ensure that the user you're using for restoration is allowed to read the
-backup files and to write to `/opt/zammad/`.
+Stellen Sie sicher, dass der Benutzer, den Sie für die Wiederherstellung
+verwenden, berechtigt ist, die Sicherungsdateien zu lesen und in
+`/opt/zammad/` zu schreiben.
 
-The Zammad backup consists of two files. They are named like this:
+Die Zammad-Sicherung besteht aus zwei Dateien. Sie sind wie folgt benannt:
 
 ```
 <timestamp>_zammad_db.psql.gz
 <timestamp>_zammad_files.tar.gz
 ```
-There are also two symlinks in your backup directory pointing to the newest
-backup created:
+Es gibt auch zwei Symlinks in Ihrem Backup-Verzeichnis, die auf das zuletzt
+erstellte Backup verweisen:
 
 ```
 latest_zammad_db.psql.gz
 latest_zammad_files.tar.gz
 ```
 
-Copy them to a fitting location which is accessible for the user who
-executes the restore script.
+Kopieren Sie diese an einen passenden Ort, der für den Benutzer, der das
+Wiederherstellungsskript ausführt, zugänglich ist.
 
-### Configure Backup Script
+### Backup-Skript konfigurieren
 
-For a new installation, this is required. At least you have to provide a
-directory where your backups are stored. See [Backup
-Configuration](#backup-configuration) for more information.
+Bei einer Neuinstallation ist dies erforderlich. Sie müssen mindestens ein
+Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe
+[Backup-Konfiguration](#backup-konfiguration) für weitere Informationen.
 
-### Run the Restore
+### Die Wiederherstellung ausführen
 
-Be aware that restoring backups can overwrite your `database.yml`. You can
-check that by looking into the `[...]_zammad_files.tar.gz` file. If there
-is a `database.yml` in the directory *config > database*, ensure to save the
-original version **before restoring**.
+Beachten Sie, dass das Wiederherstellen von Sicherungskopien Ihre `database.yml` überschreiben kann. Sie können
+dies überprüfen, indem Sie in die Datei `[...]_zammad_files.tar.gz` schauen. Wenn es
+die Datei `database.yml` im Verzeichnis *config > database* gibt, stellen Sie sicher, dass Sie die
+Originalversion **vor dem Wiederherstellen** sichern.
 
-The restore works in two possible ways, depending on how interactive you
-want to go:
+Die Wiederherstellung kann auf zwei Arten erfolgen, je nachdem, wie
+interaktiv Sie vorgehen möchten:
 
 ::::tabs
 
-=== Interactive restore (recommended)
-Run the script:
+=== Interaktive Wiederherstellung (empfohlen)
+Führen Sie das Skript aus:
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh
 ```
-Provide the requested information to the script and wait for the restore
-process to finish. Depending on the size of your backup and host performance,
-this may take some time.
+Geben Sie dem Skript die angeforderten Informationen und warten Sie, bis die Wiederherstellung
+beendet ist. Abhängig von der Größe des Backups und der Leistung des Rechners
+kann dies einige Zeit dauern.
 
-=== Non-interactive restore
+=== Nicht-interaktive Wiederherstellung
 
 :::warning
-Only use the following option if you know what you're doing! The following
-command will overwrite existing data without further prompts!
+Verwenden Sie die folgende Option nur, wenn Sie wissen, was Sie tun! Der folgende
+Befehl überschreibt vorhandene Daten ohne weitere Rückfragen!
 :::
-When called with a timestamp argument (matching the backups filename),
-Zammad will proceed immediately to restoring the specified backup.
+Beim Aufruf mit einem Zeitstempel-Argument (das mit dem Dateinamen des Backups übereinstimmt),
+beginnt Zammad sofort mit der Wiederherstellung des angegebenen Backups.
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh 20170507121848
 ```
 ::::
 
-The result should look like this:
+Das Ergebnis sollte wie folgt aussehen:
 
 ```
 # Zammad restore started - Fri Jan 21 17:54:13 CET 2022!
@@ -210,47 +217,51 @@ CREATE DATABASE
 
 ### Zusätzliche Schritte
 
-- If you've set any environmental settings, please re-apply them now.
-- If not already done, [install
-  Elasticsearch](/en/tutorials/install-elasticsearch) now.
-- [Connect Elasticsearch with Zammad and rebuild its search
-  index](/en/tutorials/connect-config-elasticsearch). The rebuild can safely
-  run during your work, but will cause a degraded search performance and may
-  lead to temporarily not found data.
+- Falls Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden
+  Sie diese jetzt an.
+- Falls noch nicht geschehen, [installieren Sie jetzt
+  Elasticsearch](/de/tutorials/install-elasticsearch).
+- [Verbinden Sie Elasticsearch mit Zammad und bauen Sie den Suchindex neu
+  auf](/de/tutorials/connect-config-elasticsearch). Der Neuaufbau kann
+  gefahrlos während der Arbeit durchgeführt werden, führt aber zu einer
+  verminderten Suchleistung und kann zu vorübergehend nicht gefundenen Daten
+  führen.
 
-## Troubleshooting Backup & Restore
+## Fehlerbehebung Sicherung & Wiederherstellung
 
-You can find some common problems below. If your issue is not listed, feel
-free to consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
-for technical assistance.
+Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
+nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad Community]
+(https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5),
+um nach Unterstützung zu fragen.
 
 ### Exit Codes
 
-Our backup & restore scripts come with exit codes to help you finding a
-solution. However, we do not guarantee a complete error handling.
+Unsere Sicherungs- und Wiederherstellungsskripte enthalten Exit-Codes, die
+Ihnen helfen, eine Lösung zu finden. Eine vollständiges Handling aller
+Fehler können wir jedoch nicht garantieren.
 
-Beside the exit codes, there are also error messages returned to standard
-out.
+Neben den Exit-Codes gibt es auch Fehlermeldungen, die über standard out
+ausgegeben werden.
 
-| Code | Description / Situation                                                                                                                                                                |
+| Code | Beschreibung / Situation |
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `0`  | The script finished successfully (or the error is not handled).                                                                                                                        |
-| `1`  | This is a general error. Most often used for script aborts due to incorrect information provided or information missing.                                                               |
-| `2`  | There was an error with database handling. This usually either happens if your database server does not meet script requirements, login data being invalid or "broken‟ database dumps. |
-| `3`  | There were issues with file / folder permissions.                                                                                                                                      |
+| `0` | Das Skript wurde erfolgreich beendet (oder der Fehler wird nicht abgedeckt).                                                                                                                        |
+| `1` | Dies ist ein allgemeiner Fehler. Wird meist für Skriptabbrüche aufgrund von falschen oder fehlenden Informationen verwendet.                                                               |
+| `2` | Es gab einen Fehler im Zusammenhang mit der Datenbank. Dies geschieht in der Regel entweder, wenn Ihr Datenbankserver die Anforderungen des Skripts nicht erfüllt, wenn die Anmeldedaten ungültig sind oder wenn Datenbank-Dumps "kaputt" sind. |
+| `3` | Es gab Probleme mit Datei-/Ordnerberechtigungen.                                                                                                                                      |
 
-### Common Problems
+### Häufige Probleme
 
 #### Password Authentication Failed / Peer Authentication Failed
 
-This indicates that the password of your Zammad DB user is either different
-from your `database.yml` or the wrong database server may be contacted.
+Dies deutet darauf hin, dass das Passwort Ihres Zammad DB Benutzers entweder
+nicht mit Ihrer `database.yml` übereinstimmt oder der falsche
+Datenbankserver kontaktiert wurde.
 
-If your Zammad instance is running, it can be caused by falling back to
-socket connection which is why you didn't notice.
+Wenn Ihre Zammad-Instanz läuft, kann dies durch einen Rückfall auf eine
+Socket-Verbindung verursacht werden, weshalb Sie es nicht bemerkt haben.
 
-**What to do?**
+**Was ist zu tun?**
 
 Vergewissern Sie sich, dass die angegebenen Zugangsdaten des Benutzers
 korrekt sind. Sie können auch das Skript `reset_db_password` verwenden, das
@@ -258,80 +269,84 @@ Sie im Backup-Verzeichnis finden.
 
 #### Ident Authentication Failed for User
 
-This indicates your database server does require `ident` authentication.
-That authentication method is not supported by our scripts.
+Dies bedeutet, dass Ihr Datenbankserver eine `ident`-Authentifizierung
+erfordert.  Diese Authentifizierungsmethode wird von unseren Skripten nicht
+unterstützt.
 
-**What to do?**
+**Was ist zu tun?**
 
-Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed.
+Überprüfen Sie die `pg_hba.conf` Ihres PostgreSQL-Servers und passen Sie sie
+bei Bedarf an.
 
-Usually, authentication can be allowed like this:
+In der Regel kann die Authentifizierung auf diese Weise zugelassen werden:
 
 ```sh
-# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT
+# DIES IST EIN BEISPIEL UND PASST MÖGLICHERWEISE NICHT ZU IHRER UMGEBUNG
 host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
 
-Please consult the official [PostgreSQL
-documentation](https://www.postgresql.org/docs/) for this, as this is out of
-our documentation scope.
+Bitte konsultieren Sie dazu die offizielle
+[PostgreSQL-Dokumentation](https://www.postgresql.org/docs/), da dies nicht
+Gegenstand dieser Dokumentation ist.
 
 #### WARNING: You don't Seem to Have Any Attachments in the File System!
-This indicate that your instance currently does not save attachments to file
-system.
+Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem
+speichert.
 
-This warning will be shown once before creating an empty directory to allow
-the backup process to continue successfully.
+Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt
+wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann.
 
-Check and adjust your
-storage settings [via console](/en/reference/console#storage-provider-setting)
-or in Zammad's admin interface under *Settings > System > Storage*.
+Prüfen und passen Sie Ihre
+Speichereinstellungen [über die Konsole](/de/reference/console#speicherung-anhänge)
+oder in der Verwaltungsoberfläche von Zammad unter *Einstellungen > System > Speicherung* an.
 
-## Helper Script
+## Hilfsskript
 
-### Warning
+### Warnung
 
-A script can potentially be destructive! You should **never** run scripts
-which scopes you don't understand.
+Ein Skript kann potenziell zerstörerisch sein! Sie sollten **niemals**
+Skripte ausführen, deren Anwendungsbereich Sie nicht verstehen.
 
-Be aware that you are running these scripts at your own risk.
+Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen.
 
-### Database Helper: (Re)set Password
+### Datenbank Hilfsskript: Passwort (neu) setzen
 
-#### Limitations
+#### Einschränkungen
 
-- This script is working for PostgreSQL installations only.
-- Only local database servers are supported (script changes user).
-- This script requires to be run as `root` or similar privileged user.
-- Be aware that the script will automatically stop and start Zammad!
+- Dieses Skript ist nur für PostgreSQL-Installationen geeignet.
+- Es werden nur lokale Datenbankserver unterstützt (Skript ändert Benutzer).
+- Dieses Skript muss als `root` oder als ähnlich privilegierter Benutzer
+  ausgeführt werden.
+- Beachten Sie, dass das Skript Zammad automatisch stoppt und startet!
 
-#### Scopes
+#### Anwendungsbereiche
 
-The scope of this script are mostly package installations and especially
-CentOS and SUSE operating systems. It might work on source code /
-development installations as well, but this highly depends on your setup and
-is out of scope.
+Anwendungsbereiche dieses Skripts sind hauptsächlich Paketinstallationen und
+dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei
+Quellcode-/Entwicklungsinstallationen funktionieren, aber das hängt stark
+von Ihrer Einrichtung ab und ist nicht Gegenstand dieser Dokumentation.
 
-#### Functionality
+#### Funktionsweise
 
-The script will do the following actions automatically for you, depending on
-the situation. It will ask for your confirmation before performing actions.
+Das Skript führt die folgenden Aktionen je nach Situation automatisch für
+Sie aus. Vor der Ausführung von Aktionen wird es Sie um eine Bestätigung
+bitten.
 
-- If `database.yml` contains an empty password line, a new password will be
-  generated and set for the database user of Zammad. It will also be saved
-  to the configuration file.
-- If `database.yml` contains a password, it will be used to set the password
-  of the Zammad database user.
+- Wenn `database.yml` eine leere Passwort-Zeile enthält, wird ein neues
+  Passwort für den Datenbank Benutzer von Zammad generiert und
+  festgelegt. Es wird auch in der Konfigurationsdatei gespeichert.
+- Wenn `database.yml` ein Passwort enthält, wird es verwendet, um das
+  Passwort des Benutzers der Datenbank Zammad festzulegen.
 
-#### Usage
+#### Verwendung
 
-Run the script with the command below and follow the instructions. No
-specific configuration is required.
+Führen Sie das Skript mit dem unten stehenden Befehl aus und folgen Sie den
+Anweisungen. Es ist keine spezielle Konfiguration erforderlich.
 
 ```sh
 /opt/zammad/contrib/backup/zammad_db_user_helper.sh
 ```
 
-If errors occur, the script will try to bring Zammad back online before
-exiting.
+Wenn Fehler auftreten, versucht das Skript vor dem Beenden, Zammad wieder zu
+starten.

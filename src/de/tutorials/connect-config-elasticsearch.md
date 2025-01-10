@@ -1,17 +1,18 @@
 ---
 order: 2
-title: 'Connect and Configure Elasticsearch'
+title: 'Verbinden und konfigurieren von Elasticsearch'
 ---
 
-# Connect and Configure Elasticsearch
+# Verbinden und konfigurieren von Elasticsearch
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Connect Elasticsearch with Zammad
+## Elasticsearch mit Zammad verbinden
 
-### Set the Elasticsearch URL
+### Festlegen der Elasticsearch URL
 
-Set the Elasticsearch server address; adapt it to your scenario.
+Legen Sie die Adresse des Elasticsearch-Servers fest; passen Sie diese an
+Ihr Szenario an.
 
 Elasticsearch 7 / ohne `https`:
 ```sh
@@ -22,7 +23,7 @@ Elasticsearch 8 / mit `https`:
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch User and Password <Badge type="warning" text="only ES8" />
+### Festlegen von Elasticsearch-Benutzer und -Passwort <Badge type="warning" text="only ES8" />
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
@@ -31,58 +32,61 @@ zammad run rails r "Setting.set('es_user', 'elastic')"
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add Certificate to Zammad <Badge type="warning" text="only ES8" />
+### Zertifikat zu Zammad hinzufügen <Badge type="warning" text="only ES8" />
 
-Show and copy the auto-generated certificate from Elasticsearch and add it
-to Zammad. Make sure to copy/paste the delimiters (e.g. `-----BEGIN
-CERTIFICATE-----`) too.
+Zeigen und kopieren Sie das automatisch generierte Zertifikat von
+Elasticsearch und fügen Sie es zu Zammad hinzu. Achten Sie darauf, auch die
+Begrenzungszeichen zu kopieren/einzufügen (z.B. `-----BEGIN
+CERTIFICATE-----`).
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-Go to the admin panel of Zammad and add your copied certificate under
-*Settings > Security > SSL Certificates*.
+Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes Zertifikat unter
+*Einstellungen > Sicherheit > SSL-Zertifikate* ein.
 
-### Build/Rebuild the Searchindex
+### Den Suchindex aufbauen/neu erstellen
 
-Without specifying CPU cores to use:
+Ohne Angabe der zu verwendenden CPU-Kerne:
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
-With specifying CPU core to use (example 8):
+Mit Angabe der zu verwendenden CPU-Kerne (Beispiel 8):
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-## Optional Settings
+## Optionale Einstellungen
 
-We collected some useful settings you may want to apply. For further
-information please have a look at [Elastic's
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch
+anwenden möchten. Weitere Informationen finden Sie in der
+[Elastic-Dokumentation]
+(https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
 
 ### Index Namespacing
 
-Useful when connecting multiple services or Zammad instances to a single
-Elasticsearch server (to prevent name collisions during indexing).
+Nützlich, wenn mehrere Dienste oder Zammad-Instanzen mit einem einzigen
+Elasticsearch-Server verbunden werden (um Namenskollisionen bei der
+Indizierung zu vermeiden).
 ```sh
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
 
-### File-Attachment Indexing Rules
+### Regeln für die Indizierung von Dateianhängen
 
-Zammad supports searching in file attachments, which means Elasticsearch has
-to index those, too. Limiting such indexing can help preserve system
-resources.
+Zammad unterstützt die Suche in Dateianhängen, was bedeutet, dass
+Elasticsearch auch diese indizieren muss. Eine Einschränkung dieser
+Indizierung kann helfen, Systemressourcen zu schonen.
 
 
-Files with these extensions will not be indexed:
+Dateien mit diesen Erweiterungen werden nicht indiziert:
 ```sh
 zammad run rails r "Setting.set('es_attachment_ignore',\
 [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )"
 ```
 
-Files larger than this size (in MB) will not be indexed:
+Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:
 ```sh
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ```
@@ -90,23 +94,24 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ## Fehlerbehebung
 
 :::tip
-Troubleshooting unsuccessful or issue not described?
+Fehlersuche erfolglos oder Problem nicht beschrieben?
 
-If you can't solve your issue using the provided troubleshooting steps
-or can't find your particular issue described here, feel free to [ask
-the community](https://community.zammad.org) for technical assistance.
+Wenn Sie Ihr Problem nicht anhand der angegebenen Schritte zur Fehlerbehebung lösen können
+oder Ihr spezielles Problem hier nicht beschrieben ist, können Sie [in
+der Community](https://community.zammad.org) nachfragen.
 :::
 
-### Data Missing From the Web-UI / Search Data Missing or Incomplete
+### Fehlende Daten in der Web-Benutzeroberfläche / Fehlende oder unvollständige Suchdaten
 
-A commonly reported issue is data missing from the Web-UI. This could be
-tickets, articles, users or anything else [indexed by
-Elasticsearch](/en/reference/es-indexed-attributes)  and can be caused by
-missing or incomplete indexes.
+Ein häufig berichtetes Problem sind fehlende Daten in der Web-UI. Dabei kann
+es sich um Tickets, Artikel, Benutzer oder andere [von Elasticsearch
+indizierte] Daten handeln (/de/reference/es-indexed-attributes), die durch
+fehlende oder unvollständige Indizes verursacht werden können.
 
-If you are experiencing this issue and installed Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch), please follow
-these steps to make sure Elasticsearch is working correctly.
+Wenn Sie dieses Problem haben und Elasticsearch gemäß unserer
+[Installationsanleitung](/de/tutorials/install-elasticsearch) installiert
+haben, führen Sie bitte die folgenden Schritte aus, um sicherzustellen, dass
+Elasticsearch korrekt funktioniert.
 
 #### Step 1: Verify Elasticsearch is Running
 

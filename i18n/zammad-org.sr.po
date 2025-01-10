@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-07 16:37+0100\n"
+"POT-Creation-Date: 2025-01-08 12:01+0000\n"
 "PO-Revision-Date: 2024-12-17 08:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -206,6 +206,18 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -11846,10 +11858,11 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:181
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 msgstr ""
 
 #. type: Title #
@@ -14000,18 +14013,6 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -17415,98 +17416,94 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:230
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:232
 #, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:232
 #: src/en/tutorials/reporting-grafana.md:235
-#: src/en/tutorials/reporting-grafana.md:249
-#: src/en/tutorials/reporting-grafana.md:255
-#: src/en/tutorials/reporting-grafana.md:258
-#: src/en/tutorials/reporting-grafana.md:261
-#: src/en/tutorials/reporting-grafana.md:264
 #, no-wrap
-msgid "    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
-msgid "[^2]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:236
-#, no-wrap
-msgid "[^3]: Requires SLA function to be active. Negative values indicate SLA"
+msgid ""
+"[^2]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
-#: src/en/tutorials/reporting-grafana.md:252
 #, no-wrap
-msgid "    violations.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:239
-#, no-wrap
-msgid "[^4]: Specific reference IDs are not the same on every instance and thus"
+msgid ""
+"[^3]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:242
-#: src/en/tutorials/reporting-grafana.md:246
 #, no-wrap
 msgid ""
+"[^4]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:243
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:246
 #, no-wrap
-msgid "[^5]: Specific reference IDs are not the same on every instance and thus"
+msgid ""
+"[^5]: Specific reference IDs are not the same on every instance and thus\n"
+"    the panel may not work or show incorrect data. Check the panels\n"
+"    description on how to find our the relations on your system.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:247
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:249
 #, no-wrap
-msgid "[^6]: Some values are not available as time series information. This"
+msgid ""
+"[^6]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:250
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:252
 #, no-wrap
-msgid "[^7]: Requires SLA function to be active. Negative values indicate SLA"
+msgid ""
+"[^7]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:253
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:255
 #, no-wrap
-msgid "[^8]: Some values are not available as time series information. This"
+msgid ""
+"[^8]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:256
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:258
 #, no-wrap
-msgid "[^9]: Some values are not available as time series information. This"
+msgid ""
+"[^9]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:259
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:261
 #, no-wrap
-msgid "[^10]: Some values are not available as time series information. This"
+msgid ""
+"[^10]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:262
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:264
 #, no-wrap
-msgid "[^11]: Some values are not available as time series information. This"
+msgid ""
+"[^11]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

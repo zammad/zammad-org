@@ -5,8 +5,8 @@ title: Einführung
 
 # Einführung
 
-Zammad provides a powerful REST-API[^1] which allows all operations that are
-available via UI as well.
+Zammad bietet eine leistungsstarke REST-API[^1], die alle Operationen
+ermöglicht, die auch über die Benutzeroberfläche verfügbar sind.
 
 Auf dieser Seite erhalten Sie einen ersten Eindruck von den Dingen, die
 generell für alle Endpunkte gelten und wie Sie sie anpassen können.

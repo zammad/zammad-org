@@ -1,15 +1,15 @@
 ---
 order: 8
-title: Role
+title: Rolle
 ---
 
-# Roles
+# Rollen
 
 ## Auflisten
 
-Required permission: `admin.role`
+Erforderliche Berechtigung: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles`
+`GET` - Anfrage gesendet: `/api/v1/roles`
 
 ::: details Show response
 
@@ -20,9 +20,9 @@ Required permission: `admin.role`
 
 ## Anzeigen
 
-Required permission: `admin.role`
+Erforderliche Berechtigung: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles/{id}`
+`GET` -Anfrage gesendet: `/api/v1/roles/{id}`
 
 ::: details Show response
 
@@ -32,9 +32,9 @@ Required permission: `admin.role`
 
 ## Erstellen
 
-Required permission: `admin.role`
+Erforderliche Berechtigung: `admin.role`
 
-`POST` -Request sent: `/api/v1/roles`
+`POST` -Anfrage gesendet: `/api/v1/roles`
 
 :::: details Show request/response
 
@@ -53,9 +53,9 @@ Required permission: `admin.role`
 
 ## Aktualisierung
 
-Required permission: `admin.role`
+Erforderliche Berechtigung: `admin.role`
 
-`PUT` -Request sent: `/api/v1/roles/{id}`
+`PUT` -Anfrage gesendet: `/api/v1/roles/{id}`
 
 :::: details Show request/response
 

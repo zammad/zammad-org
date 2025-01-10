@@ -1,22 +1,22 @@
 ---
 order: 2
-title: States
+title: Status
 ---
 
-# States
+# Status
 
 ::: warning
-Creating, changing or removing states via below endpoints is not
-recommended! You can do this in Zammad's UI. To do so, go to the
-admin interface to *System > Objects > Ticket*.
+Das Erstellen, Ändern oder Entfernen von Status über die unten aufgeführten Endpunkte wird nicht
+empfohlen! Sie können dies in der Benutzeroberfläche von Zammad tun. Gehen Sie dazu in der
+Verwaltungsoberfläche zu *System > Objekte > Ticket*.
 :::
 
 ## Auflisten
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_states`
+`GET`-Anfrage gesendet: `/api/v1/ticket_states`
 
 ::: details Show response
 
@@ -26,10 +26,10 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ## Anzeigen
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_states/{id}`
+`GET`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
 ::: details Show response
 
@@ -41,14 +41,14 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 Erforderliche Berechtigung: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_states`
+`POST`-Anfrage gesendet: `/api/v1/ticket_states`
 
 ::: info
-Below payload makes use of `state_type_id` which is a instance
-specific set of IDs. State types indicate how the state will work.
+Der nachstehende Payload verwendet `state_type_id`, ein Instanz-spezifischer
+Satz von IDs. Die Statustypen geben an, wie der Status funktionieren wird.
 
-As there's no endpoint for retrieving these, please use the
-[rails console](/en/reference/console).
+Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die
+[Rails Konsole](/de/reference/console).
 :::
 
 :::: details Show request/response
@@ -70,7 +70,7 @@ As there's no endpoint for retrieving these, please use the
 
 Erforderliche Berechtigung: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_states/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
 :::: details Show request/response
 
@@ -91,19 +91,19 @@ Erforderliche Berechtigung: `admin.object`
 
 Erforderliche Berechtigung: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_states/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing ticket states cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Ticket-Status nicht rückgängig gemacht werden kann.
 
-Removing ticket states with references in tickets is not possible via
-API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+Das Entfernen von Ticket-Status mit Referenzen in Tickets ist nicht möglich über
+API - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist *kein* Fehler.
 
-Consider either setting said state to `active: false` or adjust all
-tickets with the to remove state to another state.
+Erwägen Sie, entweder den besagten Status auf `active: false` zu setzen oder alle
+Tickets mit dem Status auf einen anderen Status abzuändern.
 :::
 
 ::: details Show response

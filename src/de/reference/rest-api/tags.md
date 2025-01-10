@@ -5,13 +5,13 @@ title: Tags
 
 # Tags
 
-## Ticket Scope
+## Ticket-Bezug
 
 ### Auflisten
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
-`GET`-Request sent: `/api/v1/tags?object=Ticket&o_id={ticket id}`
+`GET`-Anfrage gesendet: `/api/v1/tags?object=Ticket&o_id={ticket id}`
 
 ::: details Show response
 
@@ -21,12 +21,12 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 ### Suche
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
-`GET`-Request sent: `/api/v1/tag_search?term={tag name}`
+`GET`-Anfrage gesendet: `/api/v1/tag_search?term={tag name}`
 
 ::: info
-Zammad will return all tags that contain your search phrase.
+Zammad gibt alle Tags zurück, die Ihren Suchbegriff enthalten.
 :::
 
 ::: details Show response
@@ -37,9 +37,9 @@ Zammad will return all tags that contain your search phrase.
 
 ### Hinzufügen
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
-`POST`-Request sent: `/api/v1/tags/add`
+`POST`-Anfrage gesendet: `/api/v1/tags/add`
 
 ::::: details Show request/response
 
@@ -50,8 +50,8 @@ Required permission: `ticket.agent` **or** `admin.tag`
 <<< @/fixtures/rest-api/tags/add/post-req.json
 
 ::: info
-This will create the tag if it doesn't exist and the user has permission
-to do so.
+Dadurch wird das Tag erstellt, wenn es nicht existiert und der Benutzer die
+Erlaubnis dazu hat.
 :::
 
 === Response
@@ -61,11 +61,11 @@ to do so.
 ::::
 :::::
 
-### Remove
+### Entfernen
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tags/remove`
+`DELETE`-Anfrage gesendet: `/api/v1/tags/remove`
 
 :::: details Show request/response
 
@@ -82,13 +82,13 @@ Required permission: `ticket.agent` **or** `admin.tag`
 :::
 ::::
 
-## Administration Scope
+## Admin-Bezug
 
-### Admin - List
+### Verwaltung - Auflisten
 
-Required permission: `admin.tag`
+Erforderliche Berechtigung: `admin.tag`
 
-`GET`-Request sent: `/api/v1/tag_list`
+`GET`-Anfrage gesendet: `/api/v1/tag_list`
 
 ::: details Show response
 
@@ -96,11 +96,11 @@ Required permission: `admin.tag`
 
 :::
 
-### Admin - Create
+### Verwaltung - Erstellen
 
-Required permission: `admin.tag`
+Erforderliche Berechtigung: `admin.tag`
 
-`POST`-Request sent: `/api/v1/tag_list`
+`POST`-Anfrage gesendet: `/api/v1/tag_list`
 
 :::: details Show request/response
 
@@ -117,11 +117,11 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Rename
+### Verwaltung - Umbenennen
 
-Required permission: `admin.tag`
+Erforderliche Berechtigung: `admin.tag`
 
-`PUT`-Request sent: `/api/v1/tag_list/{tag id}`
+`PUT`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`
 
 :::: details Show request/response
 
@@ -138,11 +138,11 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Delete
+### Verwaltung - Löschen
 
-Required permission: `admin.tag`
+Erforderliche Berechtigung: `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`
+`DELETE`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`
 
 ::: details Show response
 

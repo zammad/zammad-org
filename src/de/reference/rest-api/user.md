@@ -6,16 +6,16 @@ title: Benutzer
 # Benutzer
 
 ::: info
-Please note that below samples were provided with `admin` and
-`ticket.agent` permissions. Some attributes / information may not be
-available in specific situations.
+Bitte beachten Sie, dass die folgenden Beispiele mit den Berechtigungen `admin` und
+`ticket.agent` erstellt wurden. Einige Attribute/Informationen sind andernfalls möglicherweise nicht
+verfügbar.
 :::
 
-## Me - Current User
+## Ich - Aktueller Benutzer
 
-Required permission: any
+Erforderliche Berechtigung: beliebig
 
-`GET`-Request sent: `/api/v1/users/me`
+`GET`-Anfrage gesendet: `/api/v1/users/me`
 
 ::: details Show response
 
@@ -25,9 +25,9 @@ Required permission: any
 
 ## Auflisten
 
-Required permission: `ticket.agent` **or** `admin.user`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`
 
-`GET`-Request sent: `/api/v1/users`
+`GET`-Anfrage gesendet: `/api/v1/users`
 
 ::: details Show response
 
@@ -37,10 +37,10 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 ## Suche
 
-Required permission: `ticket.agent` **or** `admin.user`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`
 
-`GET`-Request sent: `/api/v1/users/search?query=organization.name:{search
-string}&limit=10`
+`GET`-Anfrage gesendet:
+`/api/v1/users/search?query=organization.name:{search string}&limit=10`
 
 ::: details Show response
 
@@ -50,14 +50,14 @@ string}&limit=10`
 
 ## Anzeigen
 
-Required permission: `ticket.agent` **or** `admin.user` **or**
-`ticket.customer` (shared organization)
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user` **oder**
+`ticket.customer` (teilende Organisation)
 
 ::: info
-Technically, any listings will return user's own information only.
+Technisch gesehen werden bei allen Auflistungen nur die Informationen des Benutzers selbst angezeigt.
 :::
 
-`GET`-Request sent: `/api/v1/users/{id}`
+`GET`- Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: details Show response
 
@@ -67,27 +67,27 @@ Technically, any listings will return user's own information only.
 
 ## Erstellen
 
-Required permission: `admin.user` **or** `ticket.agent`
+Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`
 
-`POST`-Request sent: `/api/v1/users`
+`POST`-Anfrage gesendet: `/api/v1/users`
 
 ::: tip
-**This depends on permissions**
+**Dies hängt von den Berechtigungen ab**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under *Manage > Roles* and check which is selected as **Default at signup**.
+Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen festlegen. Stattdessen
+verwendet Zammad die Standardrolle für neue Anmeldungen. Prüfen Sie in Zammads Verwaltungsoberfläche
+unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** ausgewählt ist.
 
-Technically, unauthenticated user creation is possible if you manage
-to provide the required CSRF token (out of scope of this
-documentation). If you don't want that, consider
-disabling user registration under *Settings > Security > Base* by setting
-**New user accounts** to no.
+Technisch gesehen ist die Erstellung nicht authentifizierter Benutzer möglich, wenn Sie es schaffen
+das erforderliche CSRF Token bereitzustellen (dies ist nicht Gegenstand dieser
+Dokumentation). Wenn Sie das nicht wollen, sollten Sie
+die Registrierung von Benutzern unter *Einstellungen > Sicherheit > Basis* deaktivieren, indem Sie
+**Neue Benutzer-Konten** auf nein setzen.
 :::
 
 ::: tip
-Unsure which attributes you can use or set? Run a GET query on any
-fitting user existing in your instance already.
+Sind Sie unsicher, welche Attribute Sie verwenden oder einstellen können? Führen Sie eine GET-Abfrage für einen
+Benutzer aus, der bereits in Ihrer Instanz vorhanden ist.
 :::
 
 :::: details Show request/response
@@ -107,16 +107,16 @@ fitting user existing in your instance already.
 
 ## Aktualisierung
 
-Required permission: `admin.user` **or** `ticket.agent`
+Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`
 
-`PUT`-Request sent: `/api/v1/users/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: tip
-**This depends on permissions**
+**Dies hängt von den Berechtigungen ab**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under *Manage > Roles* and check which is selected as **Default at signup**.
+Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen festlegen. Stattdessen
+wendet Zammad die Standardrolle für die Neunnmeldung an. Prüfen Sie in Zammads Verwaltungsoberfläche
+unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** ausgewählt ist.
 :::
 
 :::: details
@@ -136,22 +136,22 @@ under *Manage > Roles* and check which is selected as **Default at signup**.
 
 ## Löschen
 
-Required permission: `admin.user`
+Erforderliche Berechtigung: `admin.user`
 
-`DELETE`-Request sent: `/api/v1/users/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing users cannot be undone. Zammad will also
-remove references - thus potentially tickets!
+Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig gemacht werden kann. Zammad wird auch
+Referenzen entfernen - also möglicherweise auch Tickets!
 
-Removing users with references in e.g. activity streams is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+Das Entfernen von Benutzern mit Referenzen in z.B. Aktivitäts-Verläufen ist nicht möglich
+über API - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen"`. Dies ist *kein* Fehler.
 
-Consider using Zammad's Data Privacy feature via UI for
-more control instead (admin interface under *System > Data privacy*).
+Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
+mehr Kontrolle (Admin-Interface unter *System > Datenschutz*).
 :::
 
 ::: details Show response

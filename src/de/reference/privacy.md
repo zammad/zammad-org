@@ -79,13 +79,13 @@ Diese Funktionen können im Admin-Bereich unter
 *Einstellungen > System > Services* deaktiviert werden.
 
 ::: info
-By default, the third-party services that Zammad relies on are mostly
-ones hosted and managed by the Zammad Foundation itself, but Zammad
-can be extended to interface with other services instead.
+Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist
+von der Zammad Foundation selbst gehostet und verwaltet, aber Zammad
+kann angepasst werden, um stattdessen mit anderen Diensten zu kommunizieren.
 
-The source code for these third-party service integrations can be
-found
-[here](https://github.com/zammad/zammad/tree/develop/lib/service).
+Der Quellcode für diese Integrationen von Drittanbieter-Services befindet
+sich unter
+[hier](https://github.com/zammad/zammad/tree/develop/lib/service).
 :::
 
 ### Bilder

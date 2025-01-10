@@ -6,14 +6,14 @@ title: SLA
 # Service-Level Agreements (SLA)
 
 ::: tip
-SLAs depend on [Zammad's calendars](/en/reference/rest-api/calendar).
+SLAs hängen von [Zammads Kalender](/de/reference/rest-api/calendar) ab.
 :::
 
 ## Auflisten
 
-Required permission: `admin.sla`
+Erforderliche Berechtigung: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas`
+`GET`-Anfrage gesendet: `/api/v1/slas`
 
 ::: details Show response
 
@@ -25,9 +25,9 @@ Response:
 
 ## Anzeigen
 
-Required permission: `admin.sla`
+Erforderliche Berechtigung: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas/{id}`
+`GET` - Anfrage gesendet: `/api/v1/slas/{id}`
 
 ::: details Show response
 
@@ -37,9 +37,9 @@ Required permission: `admin.sla`
 
 ## Erstellen
 
-Required permission: `admin.sla`
+Erforderliche Berechtigung: `admin.sla`
 
-`POST`-Request sent: `/api/v1/slas`
+`POST`-Anfrage gesendet: `/api/v1/slas`
 
 :::: details
 
@@ -58,9 +58,9 @@ Required permission: `admin.sla`
 
 ## Aktualisierung
 
-Required permission: `admin.sla`
+Erforderliche Berechtigung: `admin.sla`
 
-`PUT`-Request sent: `/api/v1/slas/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/slas/{id}`
 
 :::: details Show request/response
 
@@ -79,14 +79,14 @@ Required permission: `admin.sla`
 
 ## Löschen
 
-Required permission: `admin.sla`
+Erforderliche Berechtigung: `admin.sla`
 
-`DELETE`-Request sent: `/api/v1/slas/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/slas/{id}`
 
 ::: danger
-**This is a permanent removal!**
+**Dies ist eine dauerhafte Entfernung!**
 
-Please note that removing SLA configurations cannot be undone.
+Bitte beachten Sie, dass das Entfernen von SLA-Konfigurationen nicht rückgängig gemacht werden kann.
 :::
 
 ::: details Show response

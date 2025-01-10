@@ -202,6 +202,6 @@ id}/{attachment id}`
 Response: `{image file}`
 
 ::: tip
-If you're not sure which articles a ticket contains, please
-[list](#list-articles-by-ticket) affected articles first.
+Wenn Sie sich nicht sicher sind, welche Artikel ein Ticket enthält,
+[listen Sie die Artikel](#artikel-per-ticket-auflisten) zuerst auf.
 :::

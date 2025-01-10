@@ -1,16 +1,16 @@
 ---
 order: 2
-title: Priorities
+title: Prioritäten
 ---
 
-# Priorities
+# Prioritäten
 
 ## Auflisten
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities`
+`GET`-Anfrage gesendet: `/api/v1/ticket_priorities`
 
 ::: details Show response
 
@@ -20,10 +20,10 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 ## Anzeigen
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities/{id}`
+`GET`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
 ::: details Show response
 
@@ -35,7 +35,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 Erforderliche Berechtigung: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_priorities`
+`POST`-Anfrage gesendet: `/api/v1/ticket_priorities`
 
 :::: details
 
@@ -56,7 +56,7 @@ Erforderliche Berechtigung: `admin.object`
 
 Erforderliche Berechtigung: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_priorities/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
 :::: details
 
@@ -77,19 +77,19 @@ Erforderliche Berechtigung: `admin.object`
 
 Erforderliche Berechtigung: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
 ::: warning
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing priorities cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Prioritäten nicht rückgängig gemacht werden kann.
 
-Removing ticket priorities with references in tickets is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+Das Entfernen von Ticketprioritäten mit Referenzen in Tickets ist nicht möglich
+über die API - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist *kein* Fehler.
 
-Consider either setting said priority to `active: false` or adjust all
-tickets with the to remove priority to another priority.
+Erwägen Sie, entweder die besagte Priorität auf `active: false` zu setzen oder alle
+Tickets mit der Priorität auf eine andere Priorität abzuändern.
 :::
 
 ::: details Show response

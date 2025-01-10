@@ -29,7 +29,7 @@ Erforderliche Berechtigung: `admin.object`
 
 Erforderliche Berechtigung: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`GET`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
 ::: details Show response
 
@@ -41,7 +41,7 @@ Erforderliche Berechtigung: `admin.object`
 
 Erforderliche Berechtigung: `admin.object`
 
-`POST`-Request sent: `/api/v1/object_manager_attributes`
+`POST`-Anfrage gesendet: `/api/v1/object_manager_attributes`
 
 ### Boolean
 
@@ -60,7 +60,7 @@ Erforderliche Berechtigung: `admin.object`
 :::
 ::::
 
-### Date
+### Datum
 
 :::: details Show request/response
 
@@ -77,7 +77,7 @@ Erforderliche Berechtigung: `admin.object`
 :::
 ::::
 
-### Date Time
+### Datum & Zeit
 
 :::: details Show request/response
 
@@ -111,7 +111,7 @@ Erforderliche Berechtigung: `admin.object`
 :::
 ::::
 
-### Select
+### Einfachauswahl
 
 :::: details Show request/response
 
@@ -140,15 +140,15 @@ Erforderliche Berechtigung: `admin.object`
 
 :::tip
 
-Zammad input fields can have 4 different types:
+Zammad-Eingabefelder können 4 verschiedene Typen haben:
 
-- `email`
-- `tel`
-- `text`
-- `url` (does not support link-templates)
+- `E-Mail`
+- `Tel`
+- `Text`
+- `Url` (unterstützt keine Link-Templates)
 
-Depending on the chosen input type, Zammad expects different formats of
-data. E.g.: email demands an email address to be provided.
+Je nach gewähltem Eingabetyp erwartet Zammad unterschiedliche Formate von
+Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.
 :::
 
 === Response
@@ -158,7 +158,7 @@ data. E.g.: email demands an email address to be provided.
 ::::
 :::::
 
-### Tree Select
+### Einfach-Baumauswahl
 
 :::: details Show request/response
 
@@ -176,16 +176,16 @@ data. E.g.: email demands an email address to be provided.
 ::::
 
 ::::info
-Please note that above payloads cover ticket objects. This is fine in
-most situations, except if you're looking at the default object
-permissions. This is why we're listing these separate for you to view.
+Bitte beachten Sie, dass sich die oben genannten Payloads auf Ticket-Objekte beziehen. Dies ist in
+den meisten Situationen in Ordnung, außer wenn es um die Standardobjekt-Berechtigungen
+geht. Deshalb führen wir diese hier separat auf.
 
-The attribute `object` controls which context is being used:
+Das Attribut `object` steuert, welcher Kontext verwendet wird:
 
 - `Ticket`
 - `User`
 - `Organisation`
-- `Group`
+- `Group`.
 
 ::: tabs
 
@@ -212,15 +212,16 @@ The attribute `object` controls which context is being used:
 
 Erforderliche Berechtigung: `admin.object`
 
-Except on the request method, payloads or updating and creating objects are
-identical. For full payload samples thus scroll up to `create_object`.
+Abgesehen von der Request-Methode sind die Payloads zum Aktualisieren und
+Erstellen von Objekten identisch. Für vollständige Payload-Beispiele
+scrollen Sie also bis zu `create_object`.
 
-Zammad will return two attributes during update: `data_option` and
-`data_option_new`. The first attribute contains the current active values
-and the second one the new to be values (they'll become active after
-executing the database migrations).
+Zammad gibt während der Aktualisierung zwei Attribute zurück: `data_option`
+und `data_option_new`. Das erste Attribut enthält die aktuellen aktiven
+Werte und das zweite die neuen Werte (sie werden nach der Ausführung der
+Datenbankmigrationen aktiv).
 
-`PUT`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
 ::::: details Show request/response
 
@@ -231,9 +232,9 @@ executing the database migrations).
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Ensure to provide `data_option`. Zammad is very picky if you leave out
-this attribute. Please note that changing the object type *after*
-creation is not possible.
+Stellen Sie sicher, dass Sie `data_option` angeben. Zammad ist sehr wählerisch, wenn Sie dieses Attribut weglassen.
+Bitte beachten Sie, dass eine Änderung des Objekttyps *nach* der
+Erstellung nicht mehr möglich ist.
 :::
 
 === Response
@@ -247,7 +248,7 @@ creation is not possible.
 
 Erforderliche Berechtigung: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
 ::: details Show response
 
@@ -255,17 +256,18 @@ Erforderliche Berechtigung: `admin.object`
 
 :::
 
-## Execute Database Migrations
+## Ausführen von Datenbank-Migrationen
 
 Erforderliche Berechtigung: `admin.object`
 
 ::: warning
-After executing the database migrations a restart of Zammad is
-*mandatory*. If configured Zammad also can restart automatically (this
-is the case on Hosted environments) – expect a short downtime.
+Nach der Durchführung der Datenbankmigrationen ist ein Neustart von Zammad
+*zwingend* erforderlich. Wenn konfiguriert, kann Zammad auch automatisch neu starten (dies
+ist der Fall bei gehosteten Umgebungen) - rechnen Sie mit einer kurzen Ausfallzeit.
 :::
 
-`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`
+`POST`-Anfrage gesendet:
+`/api/v1/object_manager_attributes_execute_migrations`
 
 ::: details Show response
 

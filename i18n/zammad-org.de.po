@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-07 16:37+0100\n"
-"PO-Revision-Date: 2025-01-08 09:00+0000\n"
+"POT-Creation-Date: 2025-01-08 12:01+0000\n"
+"PO-Revision-Date: 2025-01-10 12:25+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -206,6 +206,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -11180,6 +11192,13 @@ msgid ""
 "found\n"
 "[here](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
 msgstr ""
+"Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist\n"
+"von der Zammad Foundation selbst gehostet und verwaltet, aber Zammad\n"
+"kann angepasst werden, um stattdessen mit anderen Diensten zu kommunizieren.\n"
+"\n"
+"Der Quellcode für diese Integrationen von Drittanbieter-Services befindet\n"
+"sich unter\n"
+"[hier](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
 
 #. type: Title ###
 #: src/en/reference/privacy.md:89
@@ -11765,16 +11784,13 @@ msgstr "Response: `{image file}`"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/articles.md:203
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you're not sure which articles an article contains, please\n"
-#| "[list](#list-articles-by-ticket) affected articles first.\n"
+#, no-wrap
 msgid ""
 "If you're not sure which articles a ticket contains, please\n"
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
-"Wenn Sie sich nicht sicher sind, welche Artikel ein Ticket enthält, können Sie\n"
-"die betroffenen Artikel zuerst [auflisten](#list-articles-by-ticket) lassen.\n"
+"Wenn Sie sich nicht sicher sind, welche Artikel ein Ticket enthält,\n"
+"[listen Sie die Artikel](#artikel-per-ticket-auflisten) zuerst auf.\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/calendar.md:1
@@ -13204,6 +13220,8 @@ msgid ""
 "`event` <Badge type=\"info\" text=\"hangup\" />:\n"
 ": Tell Zammad that someone answered the call.\n"
 msgstr ""
+"`event` <Badge type=\"info\" text=\"hangup\" />:\n"
+": Teilt Zammad mit, dass jemand den Anruf entgegengenommen hat.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/cti.md:390
@@ -13221,6 +13239,17 @@ msgid ""
 "  - `notFound` (the called number does not exist or called party is offline)\n"
 "  - `forwarded` (the call was forwarded to a different party)\n"
 msgstr ""
+"`cause`\n"
+": Hier wird der Grund für die Beendigung angegeben. Zammad wertet den Grund aus und\n"
+"  zeigt z.B. verpasste Anrufe entsprechend im Anruferprotokoll an.\n"
+"  Mögliche Werte sind:\n"
+"  - `normalClearing` (eine der Parteien hat aufgelegt, nachdem das Gespräch zustande gekommen ist)\n"
+"  - `busy` (der angerufene Teilnehmer war besetzt)\n"
+"  - `cancel` (der Anrufer hat aufgelegt, bevor der angerufene Teilnehmer abgenommen hat)\n"
+"  - `noAnswer` (der angerufene Teilnehmer hat den Anruf abgelehnt, z.B. durch eine DND-Einstellung)\n"
+"  - `congestion` (der angerufene Teilnehmer konnte nicht erreicht werden)\n"
+"  - `notFound` (die angerufene Nummer existiert nicht oder der angerufene Teilnehmer ist offline)\n"
+"  - `forwarded` (der Anruf wurde an einen anderen Teilnehmer weitergeleitet)\n"
 
 #. type: Fenced div block (details Show examples|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:401
@@ -13262,6 +13291,41 @@ msgid ""
 "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh\n"
 "\n"
 msgstr ""
+"\n"
+"=== JSON\n"
+"\n"
+"`POST`-Request gesendet:\n"
+"`https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`\n"
+"\n"
+"Payload:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.json\n"
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json\n"
+"\n"
+"Beispiel curl Befehl:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.sh\n"
+"\n"
+"=== Form-Daten\n"
+"\n"
+"`POST`-Request gesendet:\n"
+"`https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`\n"
+"\n"
+"Payload:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req\n"
+"\n"
+"Rückgabe:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json\n"
+"\n"
+"Beispiel curl Befehl:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh\n"
+"\n"
 
 #. type: Fenced div block (details Show examples|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:444
@@ -13297,6 +13361,35 @@ msgid ""
 "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh\n"
 "\n"
 msgstr ""
+"\n"
+"=== JSON\n"
+"\n"
+"Payload:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.json\n"
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json\n"
+"\n"
+"Beispiel curl Befehl:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.sh\n"
+"\n"
+"=== Form-Daten\n"
+"\n"
+"Payload:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req\n"
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json\n"
+"\n"
+"Beispiel curl Befehl:\n"
+"\n"
+"<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh\n"
+"\n"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/group.md:8
@@ -13304,6 +13397,8 @@ msgid ""
 "Please note that `follow_up_possible` may not work as expected. The possible "
 "values are `yes` or `new_ticket`!"
 msgstr ""
+"Bitte beachten Sie, dass `follow_up_possible` möglicherweise nicht wie "
+"erwartet funktioniert. Die möglichen Werte sind `yes` oder `new_ticket`!"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/group.md:8
@@ -13312,18 +13407,21 @@ msgid ""
 "names. You also have to name the complete hierarchy in the name. Example: "
 "`Sales::Europe::South`"
 msgstr ""
+"Wenn Sie **Untergruppen** erstellen oder aktualisieren möchten, verwenden "
+"Sie `::` als Trennzeichen für die Namen. Sie müssen auch die gesamte "
+"Hierarchie im Namen nennen. Beispiel: \"Vertrieb::Europa::Süd\""
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:19 src/en/reference/rest-api/group.md:31
 #: src/en/reference/rest-api/group.md:43 src/en/reference/rest-api/group.md:64
 #: src/en/reference/rest-api/group.md:85
 msgid "Required permission: `admin.group`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.group`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:21
 msgid "`GET`-Request sent: `/api/v1/groups`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/groups`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/group.md:22
@@ -13333,11 +13431,14 @@ msgid ""
 "<<< @/fixtures/rest-api/groups/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/groups/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:33
 msgid "`GET`-Request sent: `/api/v1/groups/{id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/groups/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/group.md:34
@@ -13347,11 +13448,14 @@ msgid ""
 "<<< @/fixtures/rest-api/groups/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/groups/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:45
 msgid "`POST`-Request sent: `/api/v1/groups`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/groups`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/group.md:46
@@ -13367,11 +13471,20 @@ msgid ""
 "<<< @/fixtures/rest-api/groups/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/groups/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/groups/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:66
 msgid "`PUT`-Request sent: `/api/v1/groups/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/groups/{id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/group.md:67
@@ -13387,11 +13500,20 @@ msgid ""
 "<<< @/fixtures/rest-api/groups/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/groups/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/groups/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/group.md:87
 msgid "`DELETE`-Request sent: `/api/v1/groups/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/groups/{id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/group.md:88
@@ -13410,6 +13532,18 @@ msgid ""
 "all existing tickets to new groups.\n"
 "\n"
 msgstr ""
+"\n"
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Gruppen nicht rückgängig gemacht werden kann.\n"
+"\n"
+"Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder\n"
+"Tickets ist über die API nicht möglich - dies wird angezeigt durch\n"
+"`\"Fehler\": \"Kann nicht gelöscht werden, Objekt hat Referenzen.\"`. Dies ist *kein* Fehler.\n"
+"\n"
+"Erwägen Sie stattdessen, betroffene Gruppen auf inaktiv zu setzen oder sicherzustellen, dass\n"
+"alle bestehenden Tickets in neue Gruppen verschoben werden.\n"
+"\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/group.md:103
@@ -13419,6 +13553,9 @@ msgid ""
 "<<< @/fixtures/rest-api/groups/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/groups/delete-id-res.json\n"
+"\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/rest-api/index.md:1
@@ -13428,15 +13565,11 @@ msgstr "REST API"
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:10
-#, fuzzy
-#| msgid ""
-#| "Zammad provides a powerful REST-API which allows all operations that are "
-#| "available via UI as well."
 msgid ""
 "Zammad provides a powerful REST-API[^1] which allows all operations that are "
 "available via UI as well."
 msgstr ""
-"Zammad bietet eine leistungsstarke REST-API, die alle Operationen "
+"Zammad bietet eine leistungsstarke REST-API[^1], die alle Operationen "
 "ermöglicht, die auch über die Benutzeroberfläche verfügbar sind."
 
 #. type: Plain text
@@ -13898,11 +14031,14 @@ msgstr ""
 "Wikipedia-Artikel] (https://de.wikipedia.org/wiki/URL-Encoding) hilfreich "
 "sein"
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:181
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 msgstr ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/link.md:1 src/en/reference/rest-api/link.md:6
@@ -14341,7 +14477,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:33
 msgid "`GET`-Request sent: `/api/v1/object_manager_attributes/{id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/object.md:34
@@ -14351,17 +14487,20 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:45
 msgid "`POST`-Request sent: `/api/v1/object_manager_attributes`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/object_manager_attributes`"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:46
 #, no-wrap
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:48
@@ -14377,12 +14516,21 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:63
 #, no-wrap
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:65
@@ -14398,12 +14546,21 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-date-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-date-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-date-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:80
 #, no-wrap
 msgid "Date Time"
-msgstr ""
+msgstr "Datum & Zeit"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:82
@@ -14419,12 +14576,21 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-datetime-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-datetime-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-datetime-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:97
 #, no-wrap
 msgid "Integer"
-msgstr ""
+msgstr "Integer"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:99
@@ -14440,13 +14606,21 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-integer-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-integer-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-integer-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:114
-#, fuzzy, no-wrap
-#| msgid "to select"
+#, no-wrap
 msgid "Select"
-msgstr "zum Auswählen"
+msgstr "Einfachauswahl"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:116
@@ -14462,12 +14636,21 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-select-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-select-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-select-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:131
 #, no-wrap
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #. type: Fenced div block (details Show request/response)
 #: src/en/reference/rest-api/object.md:133
@@ -14479,6 +14662,11 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json\n"
+"\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres|tip)
 #: src/en/reference/rest-api/object.md:133
@@ -14495,6 +14683,16 @@ msgid ""
 "Depending on the chosen input type, Zammad expects different formats of\n"
 "data. E.g.: email demands an email address to be provided.\n"
 msgstr ""
+"\n"
+"Zammad-Eingabefelder können 4 verschiedene Typen haben:\n"
+"\n"
+"- `E-Mail`\n"
+"- `Tel`\n"
+"- `Text`\n"
+"- `Url` (unterstützt keine Link-Templates)\n"
+"\n"
+"Je nach gewähltem Eingabetyp erwartet Zammad unterschiedliche Formate von\n"
+"Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:133
@@ -14506,13 +14704,17 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-text-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-text-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/object.md:161
-#, fuzzy, no-wrap
-#| msgid "to select"
+#, no-wrap
 msgid "Tree Select"
-msgstr "zum Auswählen"
+msgstr "Einfach-Baumauswahl"
 
 #. type: Fenced div block (details Show request/response|tabs key:regres)
 #: src/en/reference/rest-api/object.md:163
@@ -14528,6 +14730,15 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-treeselect-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-treeselect-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-treeselect-res.json\n"
+"\n"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/object.md:178
@@ -14545,6 +14756,17 @@ msgid ""
 "- `Group`\n"
 "\n"
 msgstr ""
+"Bitte beachten Sie, dass sich die oben genannten Payloads auf Ticket-Objekte beziehen. Dies ist in\n"
+"den meisten Situationen in Ordnung, außer wenn es um die Standardobjekt-Berechtigungen\n"
+"geht. Deshalb führen wir diese hier separat auf.\n"
+"\n"
+"Das Attribut `object` steuert, welcher Kontext verwendet wird:\n"
+"\n"
+"- `Ticket`\n"
+"- `User`\n"
+"- `Organisation`\n"
+"- `Group`.\n"
+"\n"
 
 #. type: Fenced div block (info|tabs)
 #: src/en/reference/rest-api/object.md:178
@@ -14568,6 +14790,23 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-screens-group-req.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ticket\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-screens-ticket-req.json\n"
+"\n"
+"=== User\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-screens-user-req.json\n"
+"\n"
+"=== Organization\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-screens-organization-req.json\n"
+"\n"
+"=== Group\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/post-screens-group-req.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:218
@@ -14575,6 +14814,9 @@ msgid ""
 "Except on the request method, payloads or updating and creating objects are "
 "identical. For full payload samples thus scroll up to `create_object`."
 msgstr ""
+"Abgesehen von der Request-Methode sind die Payloads zum Aktualisieren und "
+"Erstellen von Objekten identisch. Für vollständige Payload-Beispiele "
+"scrollen Sie also bis zu `create_object`."
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:223
@@ -14584,11 +14826,15 @@ msgid ""
 "and the second one the new to be values (they'll become active after "
 "executing the database migrations)."
 msgstr ""
+"Zammad gibt während der Aktualisierung zwei Attribute zurück: `data_option` "
+"und `data_option_new`. Das erste Attribut enthält die aktuellen aktiven "
+"Werte und das zweite die neuen Werte (sie werden nach der Ausführung der "
+"Datenbankmigrationen aktiv)."
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:225
 msgid "`PUT`-Request sent: `/api/v1/object_manager_attributes/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`"
 
 #. type: Fenced div block (details Show request/response)
 #: src/en/reference/rest-api/object.md:226
@@ -14600,6 +14846,11 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json\n"
+"\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres|info)
 #: src/en/reference/rest-api/object.md:226
@@ -14609,6 +14860,9 @@ msgid ""
 "this attribute. Please note that changing the object type *after*\n"
 "creation is not possible.\n"
 msgstr ""
+"Stellen Sie sicher, dass Sie `data_option` angeben. Zammad ist sehr wählerisch, wenn Sie dieses Attribut weglassen.\n"
+"Bitte beachten Sie, dass eine Änderung des Objekttyps *nach* der\n"
+"Erstellung nicht mehr möglich ist.\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/object.md:226
@@ -14620,11 +14874,16 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:252
 msgid "`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/object.md:253
@@ -14634,12 +14893,15 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes/delete-id-res.json\n"
+"\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/object.md:259
 #, no-wrap
 msgid "Execute Database Migrations"
-msgstr ""
+msgstr "Ausführen von Datenbank-Migrationen"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/object.md:263
@@ -14649,12 +14911,17 @@ msgid ""
 "*mandatory*. If configured Zammad also can restart automatically (this\n"
 "is the case on Hosted environments) – expect a short downtime.\n"
 msgstr ""
+"Nach der Durchführung der Datenbankmigrationen ist ein Neustart von Zammad\n"
+"*zwingend* erforderlich. Wenn konfiguriert, kann Zammad auch automatisch neu starten (dies\n"
+"ist der Fall bei gehosteten Umgebungen) - rechnen Sie mit einer kurzen Ausfallzeit.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:271
 msgid ""
 "`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`"
 msgstr ""
+"`POST`-Anfrage gesendet: `/api/v1/"
+"object_manager_attributes_execute_migrations`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/object.md:272
@@ -14664,6 +14931,9 @@ msgid ""
 "<<< @/fixtures/rest-api/object_manager_attributes_execute_migrations/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/object_manager_attributes_execute_migrations/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:11
@@ -14671,17 +14941,18 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:39
 msgid "Required permission: `ticket.agent` **or** `admin.organization`"
 msgstr ""
+"Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/organization.md:12
 #, no-wrap
 msgid "Technically, customers can only see their own organization if applicable.\n"
-msgstr ""
+msgstr "Technisch können Kunden nur ihre eigene Organisation sehen, sofern zutreffend.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:17
 msgid "`GET`-Request sent: `/api/v1/organizations`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/organizations`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/organization.md:18
@@ -14691,11 +14962,15 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/organizations/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:29
 msgid "`GET`-Request sent: `/api/v1/organizations/search?query=inc&limit=10`"
 msgstr ""
+"`GET`-Anfrage gesendet: `/api/v1/organizations/search?query=inc&limit=10`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/organization.md:30
@@ -14705,17 +14980,20 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/search/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/organizations/search/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:41
 msgid "`GET`-Request sent: `/api/v1/organizations/{id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/organizations/{id}`"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/organization.md:42
 #, no-wrap
 msgid "Technically, any users in question can only see their own organization.\n"
-msgstr ""
+msgstr "Technisch können die betreffenden Benutzer nur ihre eigene Organisation sehen.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/organization.md:46
@@ -14725,18 +15003,21 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/organizations/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:55
 #: src/en/reference/rest-api/organization.md:76
 #: src/en/reference/rest-api/organization.md:98
 msgid "Required permission: `admin.organization`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.organization`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:57
 msgid "`POST`-Request sent: `/api/v1/organizations`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/organizations`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/organization.md:58
@@ -14752,11 +15033,20 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:78
 msgid "`PUT`-Request sent: `/api/v1/organizations/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/organizations/{id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/organization.md:79
@@ -14772,11 +15062,20 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:100
 msgid "`DELETE`-Request sent: `/api/v1/organizations/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/organizations/{id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/organization.md:101
@@ -14793,6 +15092,16 @@ msgid ""
 "Consider using Zammad's Data Privacy feature via UI for\n"
 "more control instead.\n"
 msgstr ""
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Organisationen nicht rückgängig gemacht werden kann.\n"
+"\n"
+"Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder Benutzern\n"
+"ist über die API nicht möglich - dies wird angezeigt durch\n"
+"`\"Fehler\": \"Kann nicht gelöscht werden, Objekt hat Referenzen.\"`. Dies ist *kein* Fehler.\n"
+"\n"
+"Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für\n"
+"mehr Kontrolle.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/organization.md:114
@@ -14804,13 +15113,18 @@ msgid ""
 "<<< @/fixtures/rest-api/organizations/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/delete-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/priorities.md:1
 #: src/en/reference/rest-api/priorities.md:6
 #, no-wrap
 msgid "Priorities"
-msgstr ""
+msgstr "Prioritäten"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:12
@@ -14821,11 +15135,13 @@ msgid ""
 "Required permission: `admin.object` **or** `ticket.agent` **or** `ticket."
 "customer`"
 msgstr ""
+"Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder** "
+"`ticket.customer`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:14
 msgid "`GET`-Request sent: `/api/v1/ticket_priorities`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/ticket_priorities`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/priorities.md:15
@@ -14835,11 +15151,14 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_priorities/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:27
 msgid "`GET`-Request sent: `/api/v1/ticket_priorities/{id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/priorities.md:28
@@ -14849,11 +15168,14 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_priorities/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:39
 msgid "`POST`-Request sent: `/api/v1/ticket_priorities`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/ticket_priorities`"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/priorities.md:40
@@ -14869,11 +15191,20 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_priorities/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:60
 msgid "`PUT`-Request sent: `/api/v1/ticket_priorities/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/priorities.md:61
@@ -14889,11 +15220,20 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_priorities/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/priorities.md:81
 msgid "`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/priorities.md:82
@@ -14910,6 +15250,16 @@ msgid ""
 "Consider either setting said priority to `active: false` or adjust all\n"
 "tickets with the to remove priority to another priority.\n"
 msgstr ""
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Prioritäten nicht rückgängig gemacht werden kann.\n"
+"\n"
+"Das Entfernen von Ticketprioritäten mit Referenzen in Tickets ist nicht möglich\n"
+"über die API - dies wird angezeigt durch\n"
+"`\"Fehler\": \"Kann nicht gelöscht werden, Objekt hat Referenzen.\"`. Dies ist *kein* Fehler.\n"
+"\n"
+"Erwägen Sie, entweder die besagte Priorität auf `active: false` zu setzen oder alle\n"
+"Tickets mit der Priorität auf eine andere Priorität abzuändern.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/priorities.md:95
@@ -14921,29 +15271,34 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json\n"
+"\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/rest-api/role.md:1
 #, no-wrap
 msgid "Role"
-msgstr ""
+msgstr "Rolle"
 
 #. type: Title #
 #: src/en/reference/rest-api/role.md:6
 #, no-wrap
 msgid "Roles"
-msgstr ""
+msgstr "Rollen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/role.md:11 src/en/reference/rest-api/role.md:24
 #: src/en/reference/rest-api/role.md:36 src/en/reference/rest-api/role.md:57
 msgid "Required permission: `admin.role`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.role`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/role.md:13
 msgid "`GET` -Request sent: `/api/v1/roles`"
-msgstr ""
+msgstr "`GET` - Anfrage gesendet: `/api/v1/roles`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/role.md:14
@@ -14953,11 +15308,14 @@ msgid ""
 "<<< @/fixtures/rest-api/roles/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/role.md:26
 msgid "`GET` -Request sent: `/api/v1/roles/{id}`"
-msgstr ""
+msgstr "`GET` -Anfrage gesendet: `/api/v1/roles/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/role.md:27
@@ -14967,11 +15325,14 @@ msgid ""
 "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/role.md:38
 msgid "`POST` -Request sent: `/api/v1/roles`"
-msgstr ""
+msgstr "`POST` -Anfrage gesendet: `/api/v1/roles`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/role.md:39
@@ -14987,11 +15348,20 @@ msgid ""
 "<<< @/fixtures/rest-api/roles/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/role.md:59
 msgid "`PUT` -Request sent: `/api/v1/roles/{id}`"
-msgstr ""
+msgstr "`PUT` -Anfrage gesendet: `/api/v1/roles/{id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/role.md:60
@@ -15007,24 +15377,33 @@ msgid ""
 "<<< @/fixtures/rest-api/roles/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, no-wrap
 msgid "Shared Drafts"
-msgstr ""
+msgstr "Gemeinsame Entwürfe"
 
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:11
 #: src/en/reference/rest-api/shared-draft.md:23
 msgid "Required permission: `ticket.agent`."
-msgstr ""
+msgstr "Erforderliche Berechtigung: `ticket.agent`."
 
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:13
 msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/shared-draft.md:14
@@ -15034,11 +15413,14 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/shared_draft/get-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/get-ticket-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:25
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/shared-draft.md:26
@@ -15054,11 +15436,20 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:46
 msgid "`PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`"
-msgstr ""
+msgstr "`PATCH`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/shared-draft.md:47
@@ -15074,6 +15465,15 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-res.json\n"
+"\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/shared-draft.md:62
@@ -15081,12 +15481,12 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:76
 #, no-wrap
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:67
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/shared-draft.md:68
@@ -15096,36 +15496,39 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/shared_draft/delete-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/shared_draft/delete-ticket-id-res.json\n"
+"\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/rest-api/sla.md:1
 #, no-wrap
 msgid "SLA"
-msgstr ""
+msgstr "SLA"
 
 #. type: Title #
 #: src/en/reference/rest-api/sla.md:6
 #, no-wrap
 msgid "Service-Level Agreements (SLA)"
-msgstr ""
+msgstr "Service-Level Agreements (SLA)"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/sla.md:8
 #, no-wrap
 msgid "SLAs depend on [Zammad's calendars](/en/reference/rest-api/calendar).\n"
-msgstr ""
+msgstr "SLAs hängen von [Zammads Kalender](/de/reference/rest-api/calendar) ab.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:15 src/en/reference/rest-api/sla.md:29
 #: src/en/reference/rest-api/sla.md:41 src/en/reference/rest-api/sla.md:62
 #: src/en/reference/rest-api/sla.md:83
 msgid "Required permission: `admin.sla`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.sla`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:17
 msgid "`GET`-Request sent: `/api/v1/slas`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/slas`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/sla.md:18
@@ -15137,11 +15540,16 @@ msgid ""
 "<<< @/fixtures/rest-api/slas/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:31
 msgid "`GET`-Request sent: `/api/v1/slas/{id}`"
-msgstr ""
+msgstr "`GET` - Anfrage gesendet: `/api/v1/slas/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/sla.md:32
@@ -15151,11 +15559,14 @@ msgid ""
 "<<< @/fixtures/rest-api/slas/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/slas/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:43
 msgid "`POST`-Request sent: `/api/v1/slas`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/slas`"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/sla.md:44
@@ -15171,11 +15582,20 @@ msgid ""
 "<<< @/fixtures/rest-api/slas/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:64
 msgid "`PUT`-Request sent: `/api/v1/slas/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/slas/{id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/sla.md:65
@@ -15191,11 +15611,20 @@ msgid ""
 "<<< @/fixtures/rest-api/slas/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/sla.md:85
 msgid "`DELETE`-Request sent: `/api/v1/slas/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/slas/{id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/sla.md:86
@@ -15205,6 +15634,9 @@ msgid ""
 "\n"
 "Please note that removing SLA configurations cannot be undone.\n"
 msgstr ""
+"**Dies ist eine dauerhafte Entfernung!**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von SLA-Konfigurationen nicht rückgängig gemacht werden kann.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/sla.md:92
@@ -15216,12 +15648,17 @@ msgid ""
 "<<< @/fixtures/rest-api/slas/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/slas/delete-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/states.md:1 src/en/reference/rest-api/states.md:6
 #, no-wrap
 msgid "States"
-msgstr ""
+msgstr "Status"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/states.md:8
@@ -15231,11 +15668,14 @@ msgid ""
 "recommended! You can do this in Zammad's UI. To do so, go to the\n"
 "admin interface to *System > Objects > Ticket*.\n"
 msgstr ""
+"Das Erstellen, Ändern oder Entfernen von Status über die unten aufgeführten Endpunkte wird nicht\n"
+"empfohlen! Sie können dies in der Benutzeroberfläche von Zammad tun. Gehen Sie dazu in der\n"
+"Verwaltungsoberfläche zu *System > Objekte > Ticket*.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/states.md:20
 msgid "`GET`-Request sent: `/api/v1/ticket_states`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/ticket_states`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/states.md:21
@@ -15245,11 +15685,14 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_states/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/states.md:33
 msgid "`GET`-Request sent: `/api/v1/ticket_states/{id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/ticket_states/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/states.md:34
@@ -15259,11 +15702,14 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_states/get-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/get-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/states.md:45
 msgid "`POST`-Request sent: `/api/v1/ticket_states`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/ticket_states`"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/states.md:46
@@ -15275,6 +15721,12 @@ msgid ""
 "As there's no endpoint for retrieving these, please use the\n"
 "[rails console](/en/reference/console).\n"
 msgstr ""
+"Der nachstehende Payload verwendet `state_type_id`, ein Instanz-"
+"spezifischer\n"
+"Satz von IDs. Die Statustypen geben an, wie der Status funktionieren wird.\n"
+"\n"
+"Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die\n"
+"[Rails Konsole](/de/reference/console).\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/states.md:54
@@ -15290,11 +15742,20 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_states/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/states.md:74
 msgid "`PUT`-Request sent: `/api/v1/ticket_states/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/ticket_states/{id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/states.md:75
@@ -15310,11 +15771,20 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_states/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/states.md:95
 msgid "`DELETE`-Request sent: `/api/v1/ticket_states/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/ticket_states/{id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/states.md:96
@@ -15331,6 +15801,16 @@ msgid ""
 "Consider either setting said state to `active: false` or adjust all\n"
 "tickets with the to remove state to another state.\n"
 msgstr ""
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Ticket-Status nicht rückgängig gemacht werden kann.\n"
+"\n"
+"Das Entfernen von Ticket-Status mit Referenzen in Tickets ist nicht möglich über\n"
+"API - dies wird angezeigt durch\n"
+"`\"Fehler\": \"Kann nicht gelöscht werden, Objekt hat Referenzen.\"`. Dies ist *kein* Fehler.\n"
+"\n"
+"Erwägen Sie, entweder den besagten Status auf `active: false` zu setzen oder alle\n"
+"Tickets mit dem Status auf einen anderen Status abzuändern.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/states.md:109
@@ -15342,30 +15822,34 @@ msgid ""
 "<<< @/fixtures/rest-api/ticket_states/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/ticket_states/delete-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
 #, no-wrap
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #. type: Title ##
 #: src/en/reference/rest-api/tags.md:8
-#, fuzzy, no-wrap
-#| msgid "Get Started"
+#, no-wrap
 msgid "Ticket Scope"
-msgstr "Loslegen"
+msgstr "Ticket-Bezug"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:13 src/en/reference/rest-api/tags.md:25
 #: src/en/reference/rest-api/tags.md:41 src/en/reference/rest-api/tags.md:67
 msgid "Required permission: `ticket.agent` **or** `admin.tag`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:15
 msgid "`GET`-Request sent: `/api/v1/tags?object=Ticket&o_id={ticket id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tags?object=Ticket&o_id={ticket id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/tags.md:16
@@ -15375,17 +15859,20 @@ msgid ""
 "<<< @/fixtures/rest-api/tags/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tags/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:27
 msgid "`GET`-Request sent: `/api/v1/tag_search?term={tag name}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tag_search?term={tag name}`"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/tags.md:28
 #, no-wrap
 msgid "Zammad will return all tags that contain your search phrase.\n"
-msgstr ""
+msgstr "Zammad gibt alle Tags zurück, die Ihren Suchbegriff enthalten.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/tags.md:32
@@ -15395,11 +15882,14 @@ msgid ""
 "<<< @/fixtures/rest-api/tag_search/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tag_search/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:43
 msgid "`POST`-Request sent: `/api/v1/tags/add`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/tags/add`"
 
 #. type: Fenced div block (details Show request/response)
 #: src/en/reference/rest-api/tags.md:44
@@ -15411,6 +15901,11 @@ msgid ""
 "<<< @/fixtures/rest-api/tags/add/post-req.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tags/add/post-req.json\n"
+"\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres|info)
 #: src/en/reference/rest-api/tags.md:44
@@ -15419,6 +15914,8 @@ msgid ""
 "This will create the tag if it doesn't exist and the user has permission\n"
 "to do so.\n"
 msgstr ""
+"Dadurch wird das Tag erstellt, wenn es nicht existiert und der Benutzer die\n"
+"Erlaubnis dazu hat.\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/tags.md:44
@@ -15430,11 +15927,16 @@ msgid ""
 "<<< @/fixtures/rest-api/tags/add/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tags/add/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:69
 msgid "`DELETE`-Request sent: `/api/v1/tags/remove`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/tags/remove`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/tags.md:70
@@ -15450,30 +15952,38 @@ msgid ""
 "<<< @/fixtures/rest-api/tags/remove/delete-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tags/remove/delete-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tags/remove/delete-res.json\n"
+"\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/tags.md:85
-#, fuzzy, no-wrap
-#| msgid "Administrate Zammad"
+#, no-wrap
 msgid "Administration Scope"
-msgstr "Zammad administrieren"
+msgstr "Admin-Bezug"
 
 #. type: Title ###
 #: src/en/reference/rest-api/tags.md:87
 #, no-wrap
 msgid "Admin - List"
-msgstr ""
+msgstr "Verwaltung - Auflisten"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:90 src/en/reference/rest-api/tags.md:102
 #: src/en/reference/rest-api/tags.md:123 src/en/reference/rest-api/tags.md:144
 msgid "Required permission: `admin.tag`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.tag`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:92
 msgid "`GET`-Request sent: `/api/v1/tag_list`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tag_list`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/tags.md:93
@@ -15483,17 +15993,20 @@ msgid ""
 "<<< @/fixtures/rest-api/tag_list/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tag_list/get-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/tags.md:99
 #, no-wrap
 msgid "Admin - Create"
-msgstr ""
+msgstr "Verwaltung - Erstellen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:104
 msgid "`POST`-Request sent: `/api/v1/tag_list`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/tag_list`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/tags.md:105
@@ -15509,17 +16022,26 @@ msgid ""
 "<<< @/fixtures/rest-api/tag_list/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tag_list/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tag_list/post-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/tags.md:120
 #, no-wrap
 msgid "Admin - Rename"
-msgstr ""
+msgstr "Verwaltung - Umbenennen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:125
 msgid "`PUT`-Request sent: `/api/v1/tag_list/{tag id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/tags.md:126
@@ -15535,17 +16057,26 @@ msgid ""
 "<<< @/fixtures/rest-api/tag_list/put-tag-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tag_list/put-tag-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tag_list/put-tag-id-res.json\n"
+"\n"
 
 #. type: Title ###
 #: src/en/reference/rest-api/tags.md:141
 #, no-wrap
 msgid "Admin - Delete"
-msgstr ""
+msgstr "Verwaltung - Löschen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:146
 msgid "`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/tags.md:147
@@ -15557,6 +16088,11 @@ msgid ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
+"\n"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
@@ -15566,11 +16102,14 @@ msgid ""
 "using is an **agent**. Because of this tickets may or may not be\n"
 "available.\n"
 msgstr ""
+"Ticket-Endpunkte hängen von den Gruppenberechtigungen ab und ob der Benutzer, den Sie\n"
+"verwenden, ein **Agent** ist. Aus diesem Grund können Tickets unter Umständen nicht\n"
+"verfügbar sein.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:19
 msgid "`GET`-Request sent: `/api/v1/tickets`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tickets`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/ticket.md:20
@@ -15580,12 +16119,17 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:32
 msgid ""
 "`GET`-Request sent: `/api/v1/tickets/search?query={search string}&limit=10`"
 msgstr ""
+"`GET`-Anfrage gesendet: `/api/v1/tickets/search?query={search string}"
+"&limit=10`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/ticket.md:33
@@ -15595,6 +16139,9 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/search/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/search/get-res.json\n"
+"\n"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:39
@@ -15603,11 +16150,13 @@ msgid ""
 "`tickets_count` returns the *current* number of returned tickets, not\n"
 "*the total amount*.\n"
 msgstr ""
+"`tickets_count` gibt die Anzahl der zurückgegebenen Tickets zurück, nicht\n"
+"*die Gesamtzahl*.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:49
 msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/ticket.md:50
@@ -15617,11 +16166,14 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:61
 msgid "`POST`-Request sent: `/api/v1/tickets`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/tickets`"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/ticket.md:62
@@ -15643,6 +16195,25 @@ msgid ""
 "*E.g.:* `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 msgstr ""
+"**Im Namen anderer Benutzer**\n"
+"\n"
+"Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie "
+"das\n"
+"Attribut `customer_id`. Das Attribut `ticket.agent` ist dabei zwingend "
+"erforderlich. Verwenden Sie\n"
+"`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu speichern, wenn Sie die\n"
+"ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen\n"
+"(`customer_id: \"guess:jane@doe.com\"`).\n"
+"\n"
+"**Erwähnungen sofort hinzufügen**\n"
+"\n"
+"Fügen Sie das Attribut `mentions` zu Ihrem Ticket Payload hinzu und "
+"übermitteln Sie ein\n"
+"Array von Benutzer IDs, um sie direkt bei der Erstellung des Tickets als "
+"Abonnenten anzulegen.\n"
+"\n"
+"*Z.B.:* `\"mentions\": [1, 5, 7, 8],`\n"
+"\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/ticket.md:80
@@ -15658,6 +16229,15 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/ticket.md:95
@@ -15666,11 +16246,13 @@ msgid ""
 "For more article attributes and options have a look into\n"
 "[articles](/en/reference/rest-api/articles).\n"
 msgstr ""
+"Weitere Artikel-Attribute und Optionen finden Sie unter\n"
+"[Artikel](/de/reference/rest-api/articles).\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:105
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/tickets/{ticket id}`"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/ticket.md:106
@@ -15682,6 +16264,11 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/put-ticket-id-req.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/put-ticket-id-req.json\n"
+"\n"
 
 #. type: Fenced div block (details|tabs key:reqres|info)
 #: src/en/reference/rest-api/ticket.md:106
@@ -15690,6 +16277,9 @@ msgid ""
 "Above example provides an article. This article is a *new article* and\n"
 "does not affect any existing ones.\n"
 msgstr ""
+"Das obige Beispiel liefert einen Artikel. Dieser Artikel ist ein *neuer "
+"Artikel* und\n"
+"hat keine Auswirkungen auf bestehende Artikel.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/ticket.md:106
@@ -15701,6 +16291,11 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/put-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/put-ticket-id-res.json\n"
+"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/ticket.md:126
@@ -15711,16 +16306,21 @@ msgid ""
 "Attachment payloads are identical to the `POST` method, just use `PUT`\n"
 "instead.\n"
 msgstr ""
+"**Anhänge hinzufügen**\n"
+"\n"
+"Der Payload von Anhängen ist identisch mit dem `POST`-Request, es wird "
+"stattdessen\n"
+"lediglich `PUT` verwendet.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:136
 msgid "Required permission: `admin`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket.md:138
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/tickets/{ticket id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/ticket.md:139
@@ -15732,6 +16332,12 @@ msgid ""
 "Please note that removing tickets cannot be undone. All data (e.g.\n"
 "articles & attachments) will be lost.\n"
 msgstr ""
+"\n"
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Tickets nicht rückgängig gemacht "
+"werden kann. Alle Daten (z.B.\n"
+"Artikel & Anhänge) gehen dabei verloren.\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/ticket.md:147
@@ -15743,13 +16349,18 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
 msgid "Time Accounting"
-msgstr ""
+msgstr "Zeiterfassung"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:11
@@ -15757,11 +16368,12 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:36
 msgid "Required permission: `ticket.agent` **or** `admin.time_accounting`"
 msgstr ""
+"Erforderliche Berechtigung: `ticket.agent` **oder** `admin.time_accounting`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:13
 msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/time_accountings`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/time-accounting.md:14
@@ -15771,6 +16383,9 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:26
@@ -15778,6 +16393,8 @@ msgid ""
 "`GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings/"
 "{timeaccounting id}`"
 msgstr ""
+"`GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/time_accountings/{"
+"timeaccounting id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/time-accounting.md:27
@@ -15787,11 +16404,15 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-timeaccounting-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-"
+"timeaccounting-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:38
 msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/time_accountings`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/time-accounting.md:39
@@ -15807,12 +16428,21 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:57
 #: src/en/reference/rest-api/time-accounting.md:79
 msgid "Required permission: `admin.time_accounting`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.time_accounting`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:60
@@ -15820,6 +16450,8 @@ msgid ""
 "`PUT`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings/"
 "{timeaccounting id}`"
 msgstr ""
+"`PUT`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/time_accountings/{"
+"timeaccounting id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/time-accounting.md:61
@@ -15835,6 +16467,17 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-"
+"timeaccounting-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-"
+"timeaccounting-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:82
@@ -15842,6 +16485,8 @@ msgid ""
 "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings/"
 "{timeaccounting id}`"
 msgstr ""
+"`DELETE`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/time_accountings/{"
+"timeaccounting id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/time-accounting.md:83
@@ -15853,25 +16498,31 @@ msgid ""
 "<<< @/fixtures/rest-api/tickets/time_accountings/delete-ticket-id-timaccounting-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/time_accountings/delete-ticket-id-"
+"timaccounting-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/reference/rest-api/user-access-token.md:1
 #: src/en/reference/rest-api/user-access-token.md:6
 #, no-wrap
 msgid "User Access Token"
-msgstr ""
+msgstr "Benutzer Zugangs-Token"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user-access-token.md:11
 #: src/en/reference/rest-api/user-access-token.md:23
 #: src/en/reference/rest-api/user-access-token.md:49
 msgid "Required permission: `user_preferences.access_token`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `user_preferences.access_token`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user-access-token.md:13
 msgid "`GET`-Request sent: `/api/v1/user_access_token`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/user_access_token`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user-access-token.md:14
@@ -15881,11 +16532,14 @@ msgid ""
 "<<< @/fixtures/rest-api/user_access_token/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/user_access_token/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user-access-token.md:25
 msgid "`POST`-Request sent: `/api/v1/user_access_token`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/user_access_token`"
 
 #. type: Fenced div block (details Show request/response)
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -15901,6 +16555,15 @@ msgid ""
 "<<< @/fixtures/rest-api/user_access_token/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/user_access_token/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/user_access_token/post-res.json\n"
+"\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres|info)
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -15909,11 +16572,15 @@ msgid ""
 "Above returned `token` is the API token. This value is provided once\n"
 "after creation and can't be retrieved after.\n"
 msgstr ""
+"Der oben zurückgegebene `token` ist das API-Token. Dieser Wert wird "
+"einmalig\n"
+"nach der Erstellung bereitgestellt und kann danach nicht mehr abgerufen "
+"werden.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user-access-token.md:51
 msgid "`DELETE`-Request sent: `/api/v1/user_access_token/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/user_access_token/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user-access-token.md:52
@@ -15925,6 +16592,11 @@ msgid ""
 "<<< @/fixtures/rest-api/user_access_token/delete-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"Response:\n"
+"\n"
+"<<< @/fixtures/rest-api/user_access_token/delete-id-res.json\n"
+"\n"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/user.md:8
@@ -15934,23 +16606,27 @@ msgid ""
 "`ticket.agent` permissions. Some attributes / information may not be\n"
 "available in specific situations.\n"
 msgstr ""
+"Bitte beachten Sie, dass die folgenden Beispiele mit den Berechtigungen "
+"`admin` und\n"
+"`ticket.agent` erstellt wurden. Einige Attribute/Informationen sind "
+"andernfalls möglicherweise nicht\n"
+"verfügbar.\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/user.md:14
-#, fuzzy, no-wrap
-#| msgid "Current release"
+#, no-wrap
 msgid "Me - Current User"
-msgstr "Aktuelle Version"
+msgstr "Ich - Aktueller Benutzer"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:17
 msgid "Required permission: any"
-msgstr ""
+msgstr "Erforderliche Berechtigung: beliebig"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:19
 msgid "`GET`-Request sent: `/api/v1/users/me`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/users/me`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user.md:20
@@ -15960,16 +16636,19 @@ msgid ""
 "<<< @/fixtures/rest-api/users/me/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/me/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:29 src/en/reference/rest-api/user.md:41
 msgid "Required permission: `ticket.agent` **or** `admin.user`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:31
 msgid "`GET`-Request sent: `/api/v1/users`"
-msgstr ""
+msgstr "`GET`-Anfrage gesendet: `/api/v1/users`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user.md:32
@@ -15979,6 +16658,9 @@ msgid ""
 "<<< @/fixtures/rest-api/users/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:44
@@ -15986,6 +16668,8 @@ msgid ""
 "`GET`-Request sent: `/api/v1/users/search?query=organization.name:{search "
 "string}&limit=10`"
 msgstr ""
+"`GET`-Anfrage gesendet: `/api/v1/users/search?query=organization.name:{"
+"search string}&limit=10`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user.md:45
@@ -15995,6 +16679,9 @@ msgid ""
 "<<< @/fixtures/rest-api/users/search/get-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/search/get-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:55
@@ -16002,17 +16689,21 @@ msgid ""
 "Required permission: `ticket.agent` **or** `admin.user` **or** `ticket."
 "customer` (shared organization)"
 msgstr ""
+"Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user` **oder** "
+"`ticket.customer` (teilende Organisation)"
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/user.md:56
 #, no-wrap
 msgid "Technically, any listings will return user's own information only.\n"
 msgstr ""
+"Technisch gesehen werden bei allen Auflistungen nur die Informationen des "
+"Benutzers selbst angezeigt.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:61
 msgid "`GET`-Request sent: `/api/v1/users/{id}`"
-msgstr ""
+msgstr "`GET`- Anfrage gesendet: `/api/v1/users/{id}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user.md:62
@@ -16022,16 +16713,19 @@ msgid ""
 "<<< @/fixtures/rest-api/users/get-user-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/get-user-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:71 src/en/reference/rest-api/user.md:111
 msgid "Required permission: `admin.user` **or** `ticket.agent`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:73
 msgid "`POST`-Request sent: `/api/v1/users`"
-msgstr ""
+msgstr "`POST`-Anfrage gesendet: `/api/v1/users`"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/user.md:74
@@ -16049,6 +16743,23 @@ msgid ""
 "disabling user registration under *Settings > Security > Base* by setting\n"
 "**New user accounts** to no.\n"
 msgstr ""
+"**Dies hängt von den Berechtigungen ab**\n"
+"\n"
+"Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen "
+"festlegen. Stattdessen\n"
+"verwendet Zammad die Standardrolle für neue Anmeldungen. Prüfen Sie in "
+"Zammads Verwaltungsoberfläche\n"
+"unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** "
+"ausgewählt ist.\n"
+"\n"
+"Technisch gesehen ist die Erstellung nicht authentifizierter Benutzer "
+"möglich, wenn Sie es schaffen\n"
+"das erforderliche CSRF Token bereitzustellen (dies ist nicht Gegenstand "
+"dieser\n"
+"Dokumentation). Wenn Sie das nicht wollen, sollten Sie\n"
+"die Registrierung von Benutzern unter *Einstellungen > Sicherheit > Basis* "
+"deaktivieren, indem Sie\n"
+"**Neue Benutzer-Konten** auf nein setzen.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/user.md:88
@@ -16057,6 +16768,9 @@ msgid ""
 "Unsure which attributes you can use or set? Run a GET query on any\n"
 "fitting user existing in your instance already.\n"
 msgstr ""
+"Sind Sie unsicher, welche Attribute Sie verwenden oder einstellen können? "
+"Führen Sie eine GET-Abfrage für einen\n"
+"Benutzer aus, der bereits in Ihrer Instanz vorhanden ist.\n"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/user.md:93
@@ -16072,11 +16786,20 @@ msgid ""
 "<<< @/fixtures/rest-api/users/post-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/users/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/users/post-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:113
 msgid "`PUT`-Request sent: `/api/v1/users/{id}`"
-msgstr ""
+msgstr "`PUT`-Anfrage gesendet: `/api/v1/users/{id}`"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/user.md:114
@@ -16088,6 +16811,14 @@ msgid ""
 "Zammad will apply the default sign up role. Check Zammad's admin interface\n"
 "under *Manage > Roles* and check which is selected as **Default at signup**.\n"
 msgstr ""
+"**Dies hängt von den Berechtigungen ab**\n"
+"\n"
+"Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen "
+"festlegen. Stattdessen\n"
+"wendet Zammad die Standardrolle für die Neunnmeldung an. Prüfen Sie in "
+"Zammads Verwaltungsoberfläche\n"
+"unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** "
+"ausgewählt ist.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/user.md:122
@@ -16103,16 +16834,25 @@ msgid ""
 "<<< @/fixtures/rest-api/users/put-id-res.json\n"
 "\n"
 msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/users/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/users/put-id-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:140
 msgid "Required permission: `admin.user`"
-msgstr ""
+msgstr "Erforderliche Berechtigung: `admin.user`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:142
 msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
-msgstr ""
+msgstr "`DELETE`-Anfrage gesendet: `/api/v1/users/{id}`"
 
 #. type: Fenced div block (danger)
 #: src/en/reference/rest-api/user.md:143
@@ -16130,6 +16870,21 @@ msgid ""
 "Consider using Zammad's Data Privacy feature via UI for\n"
 "more control instead (admin interface under *System > Data privacy*).\n"
 msgstr ""
+"**Dies ist eine dauerhafte Entfernung**\n"
+"\n"
+"Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig "
+"gemacht werden kann. Zammad wird auch\n"
+"Referenzen entfernen - also möglicherweise auch Tickets!\n"
+"\n"
+"Das Entfernen von Benutzern mit Referenzen in z.B. Aktivitäts-Verläufen ist "
+"nicht möglich\n"
+"über API - dies wird angezeigt durch\n"
+"`\"Fehler\": \"Kann nicht gelöscht werden, Objekt hat Referenzen\"`. Dies "
+"ist *kein* Fehler.\n"
+"\n"
+"Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die "
+"Benutzeroberfläche für\n"
+"mehr Kontrolle (Admin-Interface unter *System > Datenschutz*).\n"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/user.md:157
@@ -16139,18 +16894,9 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
+"\n"
+"<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -16164,6 +16910,8 @@ msgid ""
 "Zammad ships scripts in package installations for backup & restore which you "
 "can use."
 msgstr ""
+"Zammad liefert Skripte zur Sicherung und Wiederherstellung bei "
+"Paketinstallationen mit, die Sie verwenden können."
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/backup-restore.md:10
@@ -16177,26 +16925,40 @@ msgid ""
 "functionality or scope is not working for your cases, feel free to copy these\n"
 "to a independent location and adjust the scripts as needed.\n"
 msgstr ""
+"Diese Skripte sind ohne jegliche Garantie und funktionieren möglicherweise "
+"nicht in Ihrem speziellen\n"
+"Anwendungsfall. Dies hängt von der Konfiguration und dem Installationstyp "
+"Ihrer\n"
+"Instanz ab.\n"
+"\n"
+"Sie sollten die Funktionalität immer regelmäßig testen und überprüfen! Falls "
+"eine\n"
+"Funktionalität oder der Umfang in Ihrem Fall nicht funktioniert, können Sie "
+"diese Skripte\n"
+"an einen unabhängigen Ort kopieren und nach Bedarf anpassen.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:21
 msgid "There are some limitations you should know:"
-msgstr ""
+msgstr "Es gibt einige Einschränkungen, die Sie kennen sollten:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "These scripts won't work in container based installations."
 msgstr ""
+"Diese Skripte funktionieren nicht in Container-basierten Installationen."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "They only work for PostgreSQL installations."
-msgstr ""
+msgstr "Sie funktionieren nur für PostgreSQL-Installationen."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "The backup is always a full dump (no incremental backup)."
 msgstr ""
+"Bei der Sicherung handelt es sich immer um einen vollständigen Dump (keine "
+"inkrementelle Sicherung)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
@@ -16204,21 +16966,24 @@ msgid ""
 "Partial backup and restore (e.g. only specific data like tickets, users) is "
 "not possible."
 msgstr ""
+"Eine partielle Sicherung und Wiederherstellung (z.B. nur bestimmter Daten "
+"wie Tickets, Benutzer) ist nicht möglich."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "Switching database system is not possible."
-msgstr ""
+msgstr "Ein Wechsel des Datenbanksystems ist nicht möglich."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "System settings (like environment variables) are not backed up."
-msgstr ""
+msgstr "Systemeinstellungen (wie Umgebungsvariablen) werden nicht gesichert."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
 msgid "Restore to an older Zammad version is not possible."
 msgstr ""
+"Eine Wiederherstellung in einer älteren Zammad-Version ist nicht möglich."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:32
@@ -16226,6 +16991,8 @@ msgid ""
 "Do not restore backup files from custom scripts with the provided scripts by "
 "Zammad. This might cause problems."
 msgstr ""
+"Stellen Sie Sicherungsdateien aus benutzerdefinierten Skripten nicht mit den "
+"Standard-Skripten von Zammad wieder her. Dies könnte Probleme verursachen."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:37
@@ -16233,21 +17000,23 @@ msgid ""
 "The scripts are located in `/opt/zammad/contrib/backup`. The following files "
 "are relevant:"
 msgstr ""
+"Die Skripte befinden sich in `/opt/zammad/contrib/backup`. Die folgenden "
+"Dateien sind relevant:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:41
 msgid "Backup configuration file: `config.dist`"
-msgstr ""
+msgstr "Konfigurationsdatei für Sicherungen: `config.dist`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:41
 msgid "Script for backing up your data: `zammad_backup.sh`"
-msgstr ""
+msgstr "Skript zum Sichern Ihrer Daten: `zammad_backup.sh`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:41
 msgid "Script for restoring your data: `zammad_restore.sh`"
-msgstr ""
+msgstr "Skript zum Wiederherstellen Ihrer Daten: `zammad_restore.sh`"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:43
@@ -16255,11 +17024,13 @@ msgid ""
 "To execute a backup based on the default configuration, follow the steps "
 "below:"
 msgstr ""
+"Gehen Sie wie folgt vor, um eine Sicherung auf Basis einer "
+"Standardkonfiguration durchzuführen:"
 
 #. type: Bullet: '1. '
 #: src/en/tutorials/backup-restore.md:50
 msgid "Copy the `config.dist` file to `config`."
-msgstr ""
+msgstr "Kopieren Sie die Datei `config.dist` nach `config`."
 
 #. type: Bullet: '1. '
 #: src/en/tutorials/backup-restore.md:50
@@ -16268,13 +17039,13 @@ msgid ""
 "Configuration](#backup-config-parametersbackup-config-parameters) for "
 "details."
 msgstr ""
+"Ändern Sie bei Bedarf die Standardparameter in der Konfigurationsdatei. "
+"Siehe [Backup-Konfiguration](#backup-konfiguration) für Details."
 
 #. type: Bullet: '1. '
 #: src/en/tutorials/backup-restore.md:50
-#, fuzzy
-#| msgid "Get started with Zammad"
 msgid "Stop Zammad `systemctl stop zammad`"
-msgstr "Mit Zammad loslegen"
+msgstr "Zammad stoppen `systemctl stop zammad`"
 
 #. type: Bullet: '1. '
 #: src/en/tutorials/backup-restore.md:50
@@ -16282,12 +17053,14 @@ msgid ""
 "Execute `/opt/zammad/contrib/backup/zammad_backup.sh` (as `root` or `zammad` "
 "user)"
 msgstr ""
+"Ausführen von `/opt/zammad/contrib/backup/zammad_backup.sh` (als `root` oder "
+"`zammad` Benutzer)"
 
 #. type: Title ##
 #: src/en/tutorials/backup-restore.md:51
 #, no-wrap
 msgid "Backup Configuration"
-msgstr ""
+msgstr "Backup-Konfiguration"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:55
@@ -16295,6 +17068,8 @@ msgid ""
 "You can find details about the configuration parameters with default values "
 "below."
 msgstr ""
+"Einzelheiten zu den Konfigurationsparametern mit Standardwerten finden Sie "
+"weiter unten."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:60
@@ -16305,6 +17080,12 @@ msgid ""
 "  created if it does not exist. Make sure you have enough space because the\n"
 "  script writes full dumps.\n"
 msgstr ""
+"`BACKUP_DIR` <Badge type=\"info\" text=\"/var/tmp/zammad_backup\"/>\n"
+": Verzeichnis, in das das Skript die Sicherungsdateien schreibt. Das "
+"Verzeichnis wird\n"
+"  erstellt, wenn es nicht existiert. Stellen Sie sicher, dass Sie genügend "
+"Speicherplatz haben, da das\n"
+"  Skript vollständige Dumps schreibt.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:65
@@ -16315,6 +17096,12 @@ msgid ""
 "  contains a 60 minutes grace period (e.g. 10 days plus 1 hour) for safety\n"
 "  reasons. Old backups are removed before creating the a new backup.\n"
 msgstr ""
+"`HOLD_DAYS` <Badge type=\"info\" text=\"10\"/>\n"
+": Legen Sie fest, wie viele Tage das Backup-Skript alte Backups aufbewahren "
+"soll. Dieser Wert\n"
+"  enthält aus Sicherheitsgründen eine 60-minütige Karenzzeit (z.B. 10 Tage "
+"plus 1 Stunde).\n"
+"  Alte Backups werden vor der Erstellung eines neuen Backups entfernt.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:69
@@ -16324,6 +17111,9 @@ msgid ""
 "  - `1` will keep backups of the last 25 hours\n"
 "  - `-1` will remove all available backups (except the new one)\n"
 msgstr ""
+"  Beispiele:\n"
+"   - `1` behält Backups der letzten 25 Stunden\n"
+"   - `-1` entfernt alle vorhandenen Sicherungen (außer der neuen)\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:73
@@ -16333,6 +17123,9 @@ msgid ""
 ": - `yes`: the backup includes also application files.\n"
 "  - `no`: the backup includes only user data.\n"
 msgstr ""
+"`FULL_FS_DUMP` <Badge type=\"info\" text=\"yes\"/>\n"
+": - `yes`: die Sicherung umfasst auch Anwendungsdateien.\n"
+"  - `no`: das Backup enthält nur Benutzerdaten.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:76
@@ -16341,6 +17134,10 @@ msgid ""
 "  In any case, it includes the Zammad database and the attachments, if you\n"
 "  stored them in the file system. If you are in doubt, set this to no.\n"
 msgstr ""
+"  In jedem Fall umfasst sie die Datenbank von Zammad und die Anhänge, wenn "
+"Sie\n"
+"  diese im Dateisystem gespeichert haben. Wenn Sie unsicher sind, setzen Sie "
+"dies auf nein.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:79
@@ -16349,6 +17146,9 @@ msgid ""
 "``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
 ": Setting this option to `yes` will output useful debug messages.\n"
 msgstr ""
+"``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
+": Wenn Sie diese Option auf ``yess`` setzen, werden nützliche Debug-"
+"Meldungen ausgegeben.\n"
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/backup-restore.md:79
@@ -16358,18 +17158,22 @@ msgid ""
 "  not use this option in production environments or ensure to turn it off after\n"
 "  testing.\n"
 msgstr ""
+"  Diese Option gibt potenziell sensible Informationen über die "
+"Standardausgabe aus! Verwenden Sie\n"
+"  diese Option nicht in Produktivumgebungen oder schalten Sie sie nach dem\n"
+"  testen wieder ab.\n"
 
 #. type: Title ##
 #: src/en/tutorials/backup-restore.md:85
 #, no-wrap
 msgid "Restore Backups"
-msgstr ""
+msgstr "Sicherungen wiederherstellen"
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:87
 #, no-wrap
 msgid "Important Information"
-msgstr ""
+msgstr "Wichtige Informationen"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:90
@@ -16377,6 +17181,8 @@ msgid ""
 "Please read the following information carefully before starting to restore "
 "your data."
 msgstr ""
+"Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit "
+"der Wiederherstellung Ihrer Daten beginnen."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
@@ -16385,17 +17191,23 @@ msgid ""
 "can find instructions about this topic in the [next section](#migrate-to-a-"
 "new-host)."
 msgstr ""
+"In diesem Abschnitt geht es **nicht** um die **Migration von einem Host zu "
+"einem anderen**. Sie finden Anweisungen zu diesem Thema im "
+"[nächsten Abschnitt](#migration-zu-neuem-host)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
 msgid "This guide expects a fully installed Zammad version"
 msgstr ""
+"Diese Anleitung setzt eine vollständig installierte Zammad-Version voraus"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
 msgid ""
 "It also expects you to restore Zammad on the same host and Zammad version"
 msgstr ""
+"Außerdem wird erwartet, dass Sie Zammad auf demselben Host und derselben "
+"Zammad-Version wiederherstellen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
@@ -16403,11 +17215,15 @@ msgid ""
 "The restore process stops & restarts Zammad. Therefore you have to run the "
 "restore script with appropriate permissions (e.g. as root)."
 msgstr ""
+"Der Wiederherstellungsprozess stoppt Zammad an und startet es neu. Daher "
+"müssen Sie das Wiederherstellungsskript mit den entsprechenden Rechten (z.B. "
+"als root) ausführen."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
 msgid "PostgreSQL based installations will drop and re-create the database!"
 msgstr ""
+"PostgreSQL-basierte Installationen löschen und erstellen die Datenbank neu!"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:101
@@ -16415,6 +17231,9 @@ msgid ""
 "At least twice the backed up Zammad instance size of free storage is "
 "required. If you have the dump only, factor 3 could be a good number."
 msgstr ""
+"Es ist mindestens die doppelte Größe der Sicherung als freier Speicherplatz "
+"erforderlich. Wenn Sie nur den Dump haben, könnte der Faktor 3 eine gute "
+"Zahl sein."
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/backup-restore.md:102
@@ -16424,12 +17243,18 @@ msgid ""
 "[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) or consider\n"
 "[paid support options](https://zammad.com/en/services/professional-services).\n"
 msgstr ""
+"Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte "
+"die\n"
+"[Zammad Community](https://community.zammad.org/c/"
+"trouble-running-zammad-this-is-your-place/5) oder erwägen Sie\n"
+"[bezahlte Support-Optionen](https://zammad.com/de/services/professional-"
+"services).\n"
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:108
 #, no-wrap
 msgid "Copy Backup Files to a Fitting Location"
-msgstr ""
+msgstr "Kopieren von Sicherungsdateien an einen passenden Ort"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:112
@@ -16437,11 +17262,15 @@ msgid ""
 "Ensure that the user you're using for restoration is allowed to read the "
 "backup files and to write to `/opt/zammad/`."
 msgstr ""
+"Stellen Sie sicher, dass der Benutzer, den Sie für die Wiederherstellung "
+"verwenden, berechtigt ist, die Sicherungsdateien zu lesen und in `/opt/"
+"zammad/` zu schreiben."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:114
 msgid "The Zammad backup consists of two files. They are named like this:"
 msgstr ""
+"Die Zammad-Sicherung besteht aus zwei Dateien. Sie sind wie folgt benannt:"
 
 #. type: Fenced code block
 #: src/en/tutorials/backup-restore.md:115
@@ -16450,6 +17279,8 @@ msgid ""
 "<timestamp>_zammad_db.psql.gz\n"
 "<timestamp>_zammad_files.tar.gz\n"
 msgstr ""
+"<timestamp>_zammad_db.psql.gz\n"
+"<timestamp>_zammad_files.tar.gz\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:121
@@ -16457,6 +17288,8 @@ msgid ""
 "There are also two symlinks in your backup directory pointing to the newest "
 "backup created:"
 msgstr ""
+"Es gibt auch zwei Symlinks in Ihrem Backup-Verzeichnis, die auf das zuletzt "
+"erstellte Backup verweisen:"
 
 #. type: Fenced code block
 #: src/en/tutorials/backup-restore.md:122
@@ -16465,6 +17298,8 @@ msgid ""
 "latest_zammad_db.psql.gz\n"
 "latest_zammad_files.tar.gz\n"
 msgstr ""
+"latest_zammad_db.psql.gz\n"
+"latest_zammad_files.tar.gz\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:129
@@ -16472,12 +17307,14 @@ msgid ""
 "Copy them to a fitting location which is accessible for the user who "
 "executes the restore script."
 msgstr ""
+"Kopieren Sie diese an einen passenden Ort, der für den Benutzer, der das "
+"Wiederherstellungsskript ausführt, zugänglich ist."
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:130
 #, no-wrap
 msgid "Configure Backup Script"
-msgstr ""
+msgstr "Backup-Skript konfigurieren"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:134
@@ -16486,13 +17323,15 @@ msgid ""
 "directory where your backups are stored. See [Backup Configuration](#backup-"
 "configuration) for more information."
 msgstr ""
+"Bei einer Neuinstallation ist dies erforderlich. Sie müssen mindestens ein "
+"Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe "
+"[Backup-Konfiguration](#backup-konfiguration) für weitere Informationen."
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:135
-#, fuzzy, no-wrap
-#| msgid "Backup & Restore"
+#, no-wrap
 msgid "Run the Restore"
-msgstr "Sichern & Wiederherstellen"
+msgstr "Die Wiederherstellung ausführen"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:141
@@ -16503,6 +17342,13 @@ msgid ""
 "is a `database.yml` in the directory *config > database*, ensure to save the\n"
 "original version **before restoring**.\n"
 msgstr ""
+"Beachten Sie, dass das Wiederherstellen von Sicherungskopien Ihre "
+"`database.yml` überschreiben kann. Sie können\n"
+"dies überprüfen, indem Sie in die Datei `[...]_zammad_files.tar.gz` schauen. "
+"Wenn es\n"
+"die Datei `database.yml` im Verzeichnis *config > database* gibt, stellen "
+"Sie sicher, dass Sie die\n"
+"Originalversion **vor dem Wiederherstellen** sichern.\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:144
@@ -16510,6 +17356,8 @@ msgid ""
 "The restore works in two possible ways, depending on how interactive you "
 "want to go:"
 msgstr ""
+"Die Wiederherstellung kann auf zwei Arten erfolgen, je nachdem, wie "
+"interaktiv Sie vorgehen möchten:"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/backup-restore.md:145
@@ -16528,6 +17376,20 @@ msgid ""
 "=== Non-interactive restore\n"
 "\n"
 msgstr ""
+"\n"
+"=== Interaktive Wiederherstellung (empfohlen)\n"
+"Führen Sie das Skript aus:\n"
+"```sh\n"
+"/opt/zammad/contrib/backup/zammad_restore.sh\n"
+"```\n"
+"Geben Sie dem Skript die angeforderten Informationen und warten Sie, bis die "
+"Wiederherstellung\n"
+"beendet ist. Abhängig von der Größe des Backups und der Leistung des "
+"Rechners\n"
+"kann dies einige Zeit dauern.\n"
+"\n"
+"=== Nicht-interaktive Wiederherstellung\n"
+"\n"
 
 #. type: Fenced div block (tabs|warning)
 #: src/en/tutorials/backup-restore.md:145
@@ -16536,6 +17398,9 @@ msgid ""
 "Only use the following option if you know what you're doing! The following\n"
 "command will overwrite existing data without further prompts!\n"
 msgstr ""
+"Verwenden Sie die folgende Option nur, wenn Sie wissen, was Sie tun! Der "
+"folgende\n"
+"Befehl überschreibt vorhandene Daten ohne weitere Rückfragen!\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/backup-restore.md:145
@@ -16547,11 +17412,17 @@ msgid ""
 "/opt/zammad/contrib/backup/zammad_restore.sh 20170507121848\n"
 "```\n"
 msgstr ""
+"Beim Aufruf mit einem Zeitstempel-Argument (das mit dem Dateinamen des "
+"Backups übereinstimmt),\n"
+"beginnt Zammad sofort mit der Wiederherstellung des angegebenen Backups.\n"
+"```sh\n"
+"/opt/zammad/contrib/backup/zammad_restore.sh 20170507121848\n"
+"```\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:170
 msgid "The result should look like this:"
-msgstr ""
+msgstr "Das Ergebnis sollte wie folgt aussehen:"
 
 #. type: Fenced code block
 #: src/en/tutorials/backup-restore.md:171
@@ -16590,11 +17461,46 @@ msgid ""
 "\n"
 "# Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!\n"
 msgstr ""
+"# Zammad restore started - Fri Jan 21 17:54:13 CET 2022!\n"
+"\n"
+"The restore will delete your current database!\n"
+"Be sure to have a backup available!\n"
+"\n"
+"Please ensure to have twice the storage of the uncompressed backup size!\n"
+"\n"
+"Note that the restoration USUALLY requires root permissions as services are "
+"stopped!\n"
+"\n"
+"Enter 'yes' if you want to proceed!\n"
+"Restore?: yes\n"
+"Enter file date to restore:\n"
+"20220120124714\n"
+"20220121175344\n"
+"File date: 20220121175344\n"
+"Enter db date to restore:\n"
+"20220120124714\n"
+"20220121175344\n"
+"DB date: 20220121175344\n"
+"# Stopping Zammad\n"
+"# Checking requirements\n"
+"# ... Dropping current database zammad\n"
+"Dropped database 'zammad'\n"
+"# ... Creating database zammad for owner zammad\n"
+"CREATE DATABASE\n"
+"# Restoring PostgreSQL DB\n"
+"# Restoring Files\n"
+"# Ensuring correct file permissions ...\n"
+"# Clearing Cache ...\n"
+"# Starting Zammad\n"
+"\n"
+"# Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!\n"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:214
 msgid "If you've set any environmental settings, please re-apply them now."
 msgstr ""
+"Falls Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie "
+"diese jetzt an."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:214
@@ -16602,6 +17508,8 @@ msgid ""
 "If not already done, [install Elasticsearch](/en/tutorials/install-"
 "elasticsearch) now."
 msgstr ""
+"Falls noch nicht geschehen, [installieren Sie jetzt Elasticsearch](/de/"
+"tutorials/install-elasticsearch)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:214
@@ -16611,13 +17519,17 @@ msgid ""
 "your work, but will cause a degraded search performance and may lead to "
 "temporarily not found data."
 msgstr ""
+"[Verbinden Sie Elasticsearch mit Zammad und bauen Sie den Suchindex neu "
+"auf](/de/tutorials/connect-config-elasticsearch). Der Neuaufbau kann "
+"gefahrlos während der Arbeit durchgeführt werden, führt aber zu einer "
+"verminderten Suchleistung und kann zu vorübergehend nicht gefundenen Daten "
+"führen."
 
 #. type: Title ##
 #: src/en/tutorials/backup-restore.md:215
-#, fuzzy, no-wrap
-#| msgid "Backup & Restore"
+#, no-wrap
 msgid "Troubleshooting Backup & Restore"
-msgstr "Sichern & Wiederherstellen"
+msgstr "Fehlerbehebung Sicherung & Wiederherstellung"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:221
@@ -16626,12 +17538,16 @@ msgid ""
 "free to consult the [Zammad Community](https://community.zammad.org/c/"
 "trouble-running-zammad-this-is-your-place/5)  for technical assistance."
 msgstr ""
+"Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem "
+"nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad Community] "
+"(https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)"
+", um nach Unterstützung zu fragen."
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:222
 #, no-wrap
 msgid "Exit Codes"
-msgstr ""
+msgstr "Exit Codes"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:226
@@ -16639,6 +17555,9 @@ msgid ""
 "Our backup & restore scripts come with exit codes to help you finding a "
 "solution. However, we do not guarantee a complete error handling."
 msgstr ""
+"Unsere Sicherungs- und Wiederherstellungsskripte enthalten Exit-Codes, die "
+"Ihnen helfen, eine Lösung zu finden. Eine vollständiges Handling aller "
+"Fehler können wir jedoch nicht garantieren."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:229
@@ -16646,6 +17565,8 @@ msgid ""
 "Beside the exit codes, there are also error messages returned to standard "
 "out."
 msgstr ""
+"Neben den Exit-Codes gibt es auch Fehlermeldungen, die über standard out "
+"ausgegeben werden."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:236
@@ -16658,18 +17579,35 @@ msgid ""
 "| `2`  | There was an error with database handling. This usually either happens if your database server does not meet script requirements, login data being invalid or \"broken‟ database dumps. |\n"
 "| `3`  | There were issues with file / folder permissions.                                                                                                                                      |\n"
 msgstr ""
+"| Code | Beschreibung / Situation |\n"
+"|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|"
+"\n"
+"| `0` | Das Skript wurde erfolgreich beendet (oder der Fehler wird nicht "
+"abgedeckt)"
+".                                                                                                                        "
+"|\n"
+"| `1` | Dies ist ein allgemeiner Fehler. Wird meist für Skriptabbrüche "
+"aufgrund von falschen oder fehlenden Informationen "
+"verwendet.                                                               |\n"
+"| `2` | Es gab einen Fehler im Zusammenhang mit der Datenbank. Dies "
+"geschieht in der Regel entweder, wenn Ihr Datenbankserver die Anforderungen "
+"des Skripts nicht erfüllt, wenn die Anmeldedaten ungültig sind oder wenn "
+"Datenbank-Dumps \"kaputt\" sind. |\n"
+"| `3` | Es gab Probleme mit Datei-/"
+"Ordnerberechtigungen.                                                                                                                                      "
+"|\n"
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:237
 #, no-wrap
 msgid "Common Problems"
-msgstr ""
+msgstr "Häufige Probleme"
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:239
 #, no-wrap
 msgid "Password Authentication Failed / Peer Authentication Failed"
-msgstr ""
+msgstr "Password Authentication Failed / Peer Authentication Failed"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:244
@@ -16677,6 +17615,9 @@ msgid ""
 "This indicates that the password of your Zammad DB user is either different "
 "from your `database.yml` or the wrong database server may be contacted."
 msgstr ""
+"Dies deutet darauf hin, dass das Passwort Ihres Zammad DB Benutzers entweder "
+"nicht mit Ihrer `database.yml` übereinstimmt oder der falsche "
+"Datenbankserver kontaktiert wurde."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:247
@@ -16684,13 +17625,15 @@ msgid ""
 "If your Zammad instance is running, it can be caused by falling back to "
 "socket connection which is why you didn't notice."
 msgstr ""
+"Wenn Ihre Zammad-Instanz läuft, kann dies durch einen Rückfall auf eine "
+"Socket-Verbindung verursacht werden, weshalb Sie es nicht bemerkt haben."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:249
 #: src/en/tutorials/backup-restore.md:260
 #, no-wrap
 msgid "**What to do?**\n"
-msgstr ""
+msgstr "**Was ist zu tun?**\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:253
@@ -16706,7 +17649,7 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:254
 #, no-wrap
 msgid "Ident Authentication Failed for User"
-msgstr ""
+msgstr "Ident Authentication Failed for User"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:258
@@ -16714,17 +17657,23 @@ msgid ""
 "This indicates your database server does require `ident` authentication.  "
 "That authentication method is not supported by our scripts."
 msgstr ""
+"Dies bedeutet, dass Ihr Datenbankserver eine `ident`-Authentifizierung "
+"erfordert.  Diese Authentifizierungsmethode wird von unseren Skripten nicht "
+"unterstützt."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:263
 msgid ""
 "Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed."
 msgstr ""
+"Überprüfen Sie die `pg_hba.conf` Ihres PostgreSQL-Servers und passen Sie sie "
+"bei Bedarf an."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:265
 msgid "Usually, authentication can be allowed like this:"
 msgstr ""
+"In der Regel kann die Authentifizierung auf diese Weise zugelassen werden:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/backup-restore.md:266
@@ -16734,6 +17683,9 @@ msgid ""
 "host    all             all             127.0.0.1/32            md5\n"
 "host    all             all             ::1/128                 md5\n"
 msgstr ""
+"# DIES IST EIN BEISPIEL UND PASST MÖGLICHERWEISE NICHT ZU IHRER UMGEBUNG\n"
+"host    all             all             127.0.0.1/32            md5\n"
+"host    all             all             ::1/128                 md5\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:275
@@ -16741,12 +17693,15 @@ msgid ""
 "Please consult the official [PostgreSQL documentation](https://www."
 "postgresql.org/docs/) for this, as this is out of our documentation scope."
 msgstr ""
+"Bitte konsultieren Sie dazu die offizielle [PostgreSQL-Dokumentation]"
+"(https://www.postgresql.org/docs/), da dies nicht Gegenstand dieser "
+"Dokumentation ist."
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:276
 #, no-wrap
 msgid "WARNING: You don't Seem to Have Any Attachments in the File System!"
-msgstr ""
+msgstr "WARNING: You don't Seem to Have Any Attachments in the File System!"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:279
@@ -16754,6 +17709,8 @@ msgid ""
 "This indicate that your instance currently does not save attachments to file "
 "system."
 msgstr ""
+"Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem "
+"speichert."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:282
@@ -16761,6 +17718,8 @@ msgid ""
 "This warning will be shown once before creating an empty directory to allow "
 "the backup process to continue successfully."
 msgstr ""
+"Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt "
+"wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:286
@@ -16770,18 +17729,23 @@ msgid ""
 "storage settings [via console](/en/reference/console#storage-provider-setting)\n"
 "or in Zammad's admin interface under *Settings > System > Storage*.\n"
 msgstr ""
+"Prüfen und passen Sie Ihre\n"
+"Speichereinstellungen [über die Konsole](/de/reference/console#speicherung-"
+"anhänge)\n"
+"oder in der Verwaltungsoberfläche von Zammad unter *Einstellungen > System > "
+"Speicherung* an.\n"
 
 #. type: Title ##
 #: src/en/tutorials/backup-restore.md:287
 #, no-wrap
 msgid "Helper Script"
-msgstr ""
+msgstr "Hilfsskript"
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:289
 #, no-wrap
 msgid "Warning"
-msgstr ""
+msgstr "Warnung"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:293
@@ -16789,51 +17753,56 @@ msgid ""
 "A script can potentially be destructive! You should **never** run scripts "
 "which scopes you don't understand."
 msgstr ""
+"Ein Skript kann potenziell zerstörerisch sein! Sie sollten **niemals** "
+"Skripte ausführen, deren Anwendungsbereich Sie nicht verstehen."
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:295
 msgid "Be aware that you are running these scripts at your own risk."
 msgstr ""
+"Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen."
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:296
 #, no-wrap
 msgid "Database Helper: (Re)set Password"
-msgstr ""
+msgstr "Datenbank Hilfsskript: Passwort (neu) setzen"
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:298 src/en/tutorials/migrate.md:54
 #: src/en/tutorials/migrate.md:331 src/en/tutorials/migrate.md:484
-#, fuzzy, no-wrap
-#| msgid "Administration"
+#, no-wrap
 msgid "Limitations"
-msgstr "Administration"
+msgstr "Einschränkungen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:304
 msgid "This script is working for PostgreSQL installations only."
-msgstr ""
+msgstr "Dieses Skript ist nur für PostgreSQL-Installationen geeignet."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:304
 msgid "Only local database servers are supported (script changes user)."
 msgstr ""
+"Es werden nur lokale Datenbankserver unterstützt (Skript ändert Benutzer)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:304
 msgid "This script requires to be run as `root` or similar privileged user."
 msgstr ""
+"Dieses Skript muss als `root` oder als ähnlich privilegierter Benutzer "
+"ausgeführt werden."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:304
 msgid "Be aware that the script will automatically stop and start Zammad!"
-msgstr ""
+msgstr "Beachten Sie, dass das Skript Zammad automatisch stoppt und startet!"
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:305
 #, no-wrap
 msgid "Scopes"
-msgstr ""
+msgstr "Anwendungsbereiche"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:310
@@ -16843,12 +17812,16 @@ msgid ""
 "development installations as well, but this highly depends on your setup and "
 "is out of scope."
 msgstr ""
+"Anwendungsbereiche dieses Skripts sind hauptsächlich Paketinstallationen und "
+"dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei "
+"Quellcode-/Entwicklungsinstallationen funktionieren, aber das hängt stark "
+"von Ihrer Einrichtung ab und ist nicht Gegenstand dieser Dokumentation."
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:311
 #, no-wrap
 msgid "Functionality"
-msgstr ""
+msgstr "Funktionsweise"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:316
@@ -16856,6 +17829,9 @@ msgid ""
 "The script will do the following actions automatically for you, depending on "
 "the situation. It will ask for your confirmation before performing actions."
 msgstr ""
+"Das Skript führt die folgenden Aktionen je nach Situation automatisch für "
+"Sie aus. Vor der Ausführung von Aktionen wird es Sie um eine Bestätigung "
+"bitten."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:322
@@ -16864,6 +17840,9 @@ msgid ""
 "generated and set for the database user of Zammad. It will also be saved to "
 "the configuration file."
 msgstr ""
+"Wenn `database.yml` eine leere Passwort-Zeile enthält, wird ein neues "
+"Passwort für den Datenbank Benutzer von Zammad generiert und festgelegt. Es "
+"wird auch in der Konfigurationsdatei gespeichert."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:322
@@ -16871,12 +17850,14 @@ msgid ""
 "If `database.yml` contains a password, it will be used to set the password "
 "of the Zammad database user."
 msgstr ""
+"Wenn `database.yml` ein Passwort enthält, wird es verwendet, um das Passwort "
+"des Benutzers der Datenbank Zammad festzulegen."
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:323
 #, no-wrap
 msgid "Usage"
-msgstr ""
+msgstr "Verwendung"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:327
@@ -16884,12 +17865,14 @@ msgid ""
 "Run the script with the command below and follow the instructions. No "
 "specific configuration is required."
 msgstr ""
+"Führen Sie das Skript mit dem unten stehenden Befehl aus und folgen Sie den "
+"Anweisungen. Es ist keine spezielle Konfiguration erforderlich."
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/backup-restore.md:328
 #, no-wrap
 msgid "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
-msgstr ""
+msgstr "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:333
@@ -16897,31 +17880,34 @@ msgid ""
 "If errors occur, the script will try to bring Zammad back online before "
 "exiting."
 msgstr ""
+"Wenn Fehler auftreten, versucht das Skript vor dem Beenden, Zammad wieder zu "
+"starten."
 
 #. type: Title #
 #: src/en/tutorials/connect-config-elasticsearch.md:1
 #: src/en/tutorials/connect-config-elasticsearch.md:6
 #, no-wrap
 msgid "Connect and Configure Elasticsearch"
-msgstr ""
+msgstr "Verbinden und konfigurieren von Elasticsearch"
 
 #. type: Title ##
 #: src/en/tutorials/connect-config-elasticsearch.md:10
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "Connect Elasticsearch with Zammad"
-msgstr "Mit Zammad loslegen"
+msgstr "Elasticsearch mit Zammad verbinden"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:12
 #, no-wrap
 msgid "Set the Elasticsearch URL"
-msgstr ""
+msgstr "Festlegen der Elasticsearch URL"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:15
 msgid "Set the Elasticsearch server address; adapt it to your scenario."
 msgstr ""
+"Legen Sie die Adresse des Elasticsearch-Servers fest; passen Sie diese an "
+"Ihr Szenario an."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:17
@@ -16932,7 +17918,7 @@ msgstr "Elasticsearch 7 / ohne `https`:"
 #: src/en/tutorials/connect-config-elasticsearch.md:17
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
-msgstr ""
+msgstr "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:21
@@ -16944,32 +17930,34 @@ msgstr "Elasticsearch 8 / mit `https`:"
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
 msgstr ""
+"zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:25
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Set the Elasticsearch User and Password <Badge type=\"warning\" text=\"only ES8\" />"
-msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
+msgstr ""
+"Festlegen von Elasticsearch-Benutzer und -Passwort <Badge type=\"warning\" "
+"text=\"only ES8\" />"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:27
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
-msgstr ""
+msgstr "zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:30
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
-msgstr ""
+msgstr "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:34
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\"only ES8\" />"
-msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
+msgstr ""
+"Zertifikat zu Zammad hinzufügen <Badge type=\"warning\" text=\"only ES8\" />"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:39
@@ -16978,12 +17966,16 @@ msgid ""
 "to Zammad. Make sure to copy/paste the delimiters (e.g. `-----BEGIN "
 "CERTIFICATE-----`) too."
 msgstr ""
+"Zeigen und kopieren Sie das automatisch generierte Zertifikat von "
+"Elasticsearch und fügen Sie es zu Zammad hinzu. Achten Sie darauf, auch die "
+"Begrenzungszeichen zu kopieren/einzufügen (z.B. `-----BEGIN "
+"CERTIFICATE-----`)."
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:40
 #, no-wrap
 msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
-msgstr ""
+msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:46
@@ -16992,41 +17984,44 @@ msgid ""
 "Go to the admin panel of Zammad and add your copied certificate under\n"
 "*Settings > Security > SSL Certificates*.\n"
 msgstr ""
+"Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes "
+"Zertifikat unter\n"
+"*Einstellungen > Sicherheit > SSL-Zertifikate* ein.\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:47
 #, no-wrap
 msgid "Build/Rebuild the Searchindex"
-msgstr ""
+msgstr "Den Suchindex aufbauen/neu erstellen"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:50
 msgid "Without specifying CPU cores to use:"
-msgstr ""
+msgstr "Ohne Angabe der zu verwendenden CPU-Kerne:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:50
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild\n"
-msgstr ""
+msgstr "zammad run rake zammad:searchindex:rebuild\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:54
 msgid "With specifying CPU core to use (example 8):"
-msgstr ""
+msgstr "Mit Angabe der zu verwendenden CPU-Kerne (Beispiel 8):"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:54
 #: src/en/tutorials/connect-config-elasticsearch.md:170
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
-msgstr ""
+msgstr "zammad run rake zammad:searchindex:rebuild[8]\n"
 
 #. type: Title ##
 #: src/en/tutorials/connect-config-elasticsearch.md:58
 #, no-wrap
 msgid "Optional Settings"
-msgstr ""
+msgstr "Optionale Einstellungen"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:63
@@ -17035,12 +18030,16 @@ msgid ""
 "information please have a look at [Elastic's documentation](https://www."
 "elastic.co/guide/en/elasticsearch/reference/current/index.html)."
 msgstr ""
+"Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch "
+"anwenden möchten. Weitere Informationen finden Sie in der "
+"[Elastic-Dokumentation] (https://www.elastic.co/guide/en/elasticsearch/"
+"reference/current/index.html)."
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:64
 #, no-wrap
 msgid "Index Namespacing"
-msgstr ""
+msgstr "Index Namespacing"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:68
@@ -17048,18 +18047,23 @@ msgid ""
 "Useful when connecting multiple services or Zammad instances to a single "
 "Elasticsearch server (to prevent name collisions during indexing)."
 msgstr ""
+"Nützlich, wenn mehrere Dienste oder Zammad-Instanzen mit einem einzigen "
+"Elasticsearch-Server verbunden werden (um Namenskollisionen bei der "
+"Indizierung zu vermeiden)."
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:68
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 msgstr ""
+"zammad run rails r "
+"\"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:72
 #, no-wrap
 msgid "File-Attachment Indexing Rules"
-msgstr ""
+msgstr "Regeln für die Indizierung von Dateianhängen"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:77
@@ -17068,11 +18072,14 @@ msgid ""
 "to index those, too. Limiting such indexing can help preserve system "
 "resources."
 msgstr ""
+"Zammad unterstützt die Suche in Dateianhängen, was bedeutet, dass "
+"Elasticsearch auch diese indizieren muss. Eine Einschränkung dieser "
+"Indizierung kann helfen, Systemressourcen zu schonen."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:80
 msgid "Files with these extensions will not be indexed:"
-msgstr ""
+msgstr "Dateien mit diesen Erweiterungen werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:80
@@ -17081,17 +18088,21 @@ msgid ""
 "zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
 "[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )\"\n"
 msgstr ""
+"zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
+"[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', "
+"'.mbox' ] )\"\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:86
 msgid "Files larger than this size (in MB) will not be indexed:"
-msgstr ""
+msgstr "Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:86
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr ""
+"zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/connect-config-elasticsearch.md:92
@@ -17103,12 +18114,20 @@ msgid ""
 "or can't find your particular issue described here, feel free to [ask\n"
 "the community](https://community.zammad.org) for technical assistance.\n"
 msgstr ""
+"Fehlersuche erfolglos oder Problem nicht beschrieben?\n"
+"\n"
+"Wenn Sie Ihr Problem nicht anhand der angegebenen Schritte zur "
+"Fehlerbehebung lösen können\n"
+"oder Ihr spezielles Problem hier nicht beschrieben ist, können Sie [in\n"
+"der Community](https://community.zammad.org) nachfragen.\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:100
 #, no-wrap
 msgid "Data Missing From the Web-UI / Search Data Missing or Incomplete"
 msgstr ""
+"Fehlende Daten in der Web-Benutzeroberfläche / Fehlende oder unvollständige "
+"Suchdaten"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:106
@@ -17118,6 +18137,11 @@ msgid ""
 "reference/es-indexed-attributes)  and can be caused by missing or incomplete "
 "indexes."
 msgstr ""
+"Ein häufig berichtetes Problem sind fehlende Daten in der Web-UI. Dabei kann "
+"es sich um Tickets, Artikel, Benutzer oder andere "
+"[von Elasticsearch indizierte] Daten handeln (/de/reference/es-indexed-"
+"attributes), die durch fehlende oder unvollständige Indizes verursacht "
+"werden können."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:110
@@ -17126,6 +18150,10 @@ msgid ""
 "our [installation guide](/en/tutorials/install-elasticsearch), please follow "
 "these steps to make sure Elasticsearch is working correctly."
 msgstr ""
+"Wenn Sie dieses Problem haben und Elasticsearch gemäß unserer "
+"[Installationsanleitung](/de/tutorials/install-elasticsearch) installiert "
+"haben, führen Sie bitte die folgenden Schritte aus, um sicherzustellen, dass "
+"Elasticsearch korrekt funktioniert."
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:111
@@ -19572,98 +20600,94 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr "CTI-Protokoll"
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:230
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:232
 #, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:232
 #: src/en/tutorials/reporting-grafana.md:235
-#: src/en/tutorials/reporting-grafana.md:249
-#: src/en/tutorials/reporting-grafana.md:255
-#: src/en/tutorials/reporting-grafana.md:258
-#: src/en/tutorials/reporting-grafana.md:261
-#: src/en/tutorials/reporting-grafana.md:264
 #, no-wrap
-msgid "    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
-msgid "[^2]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:236
-#, no-wrap
-msgid "[^3]: Requires SLA function to be active. Negative values indicate SLA"
+msgid ""
+"[^2]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
-#: src/en/tutorials/reporting-grafana.md:252
 #, no-wrap
-msgid "    violations.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:239
-#, no-wrap
-msgid "[^4]: Specific reference IDs are not the same on every instance and thus"
+msgid ""
+"[^3]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:242
-#: src/en/tutorials/reporting-grafana.md:246
 #, no-wrap
 msgid ""
+"[^4]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:243
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:246
 #, no-wrap
-msgid "[^5]: Specific reference IDs are not the same on every instance and thus"
+msgid ""
+"[^5]: Specific reference IDs are not the same on every instance and thus\n"
+"    the panel may not work or show incorrect data. Check the panels\n"
+"    description on how to find our the relations on your system.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:247
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:249
 #, no-wrap
-msgid "[^6]: Some values are not available as time series information. This"
+msgid ""
+"[^6]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:250
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:252
 #, no-wrap
-msgid "[^7]: Requires SLA function to be active. Negative values indicate SLA"
+msgid ""
+"[^7]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:253
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:255
 #, no-wrap
-msgid "[^8]: Some values are not available as time series information. This"
+msgid ""
+"[^8]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:256
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:258
 #, no-wrap
-msgid "[^9]: Some values are not available as time series information. This"
+msgid ""
+"[^9]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:259
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:261
 #, no-wrap
-msgid "[^10]: Some values are not available as time series information. This"
+msgid ""
+"[^10]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:262
+#. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:264
 #, no-wrap
-msgid "[^11]: Some values are not available as time series information. This"
+msgid ""
+"[^11]: Some values are not available as time series information. This\n"
+"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

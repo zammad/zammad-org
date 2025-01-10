@@ -366,7 +366,7 @@ Beispiel curl Befehl:
 ### Allgemein
 
 `event` <Badge type="info" text="hangup" />:
-: Tell Zammad that someone answered the call.
+: Teilt Zammad mit, dass jemand den Anruf entgegengenommen hat.
 
 `from` <Badge type="info" text="493055571600" />:
 : Nummer, von der der Anruf ausgeht.
@@ -382,16 +382,16 @@ Beispiel curl Befehl:
   bestehenden Anrufs mit folgenden Aktionen (z.B. Annehmen oder Auflegen).
 
 `cause`
-: This defines the reason of the hangup. Zammad evaluates the cause and
-  indicates e.g. missed calls accordingly in the caller log.
-  Possible values are:
-  - `normalClearing` (one of the parties hung up after the call was established)
-  - `busy` (the called party was busy)
-  - `cancel` (the caller hung up before the called party picked up)
-  - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
-  - `congestion` (the called party could not be reached)
-  - `notFound` (the called number does not exist or called party is offline)
-  - `forwarded` (the call was forwarded to a different party)
+: Hier wird der Grund für die Beendigung angegeben. Zammad wertet den Grund aus und
+  zeigt z.B. verpasste Anrufe entsprechend im Anruferprotokoll an.
+  Mögliche Werte sind:
+  - `normalClearing` (eine der Parteien hat aufgelegt, nachdem das Gespräch zustande gekommen ist)
+  - `busy` (der angerufene Teilnehmer war besetzt)
+  - `cancel` (der Anrufer hat aufgelegt, bevor der angerufene Teilnehmer abgenommen hat)
+  - `noAnswer` (der angerufene Teilnehmer hat den Anruf abgelehnt, z.B. durch eine DND-Einstellung)
+  - `congestion` (der angerufene Teilnehmer konnte nicht erreicht werden)
+  - `notFound` (die angerufene Nummer existiert nicht oder der angerufene Teilnehmer ist offline)
+  - `forwarded` (der Anruf wurde an einen anderen Teilnehmer weitergeleitet)
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
 : Zammad sucht nach einem Benutzer mit einem entsprechenden Wert. Die folgenden Attribute
@@ -409,7 +409,7 @@ Beispiel curl Befehl:
 
 === JSON
 
-`POST`-Request send:
+`POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
@@ -420,24 +420,24 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Beispiel curl Befehl:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.sh
 
-=== Form-data
+=== Form-Daten
 
-`POST`-Request sent:
+`POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req
 
-Returns:
+Rückgabe:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Beispiel curl Befehl:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh
 
@@ -460,11 +460,11 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Beispiel curl Befehl:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.sh
 
-=== Form-data
+=== Form-Daten
 
 Payload:
 
@@ -474,7 +474,7 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Beispiel curl Befehl:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh
 

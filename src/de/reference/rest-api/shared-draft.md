@@ -1,15 +1,15 @@
 ---
 order: 2
-title: 'Shared Drafts'
+title: 'Gemeinsame Entwürfe'
 ---
 
-# Shared Drafts
+# Gemeinsame Entwürfe
 
 ## Anzeigen
 
-Required permission: `ticket.agent`.
+Erforderliche Berechtigung: `ticket.agent`.
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details Show response
 
@@ -19,9 +19,9 @@ Required permission: `ticket.agent`.
 
 ## Erstellen
 
-Required permission: `ticket.agent`.
+Erforderliche Berechtigung: `ticket.agent`.
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`PUT`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details Show request/response
 
@@ -42,7 +42,7 @@ Required permission: `ticket.agent`.
 
 Erforderliche Berechtigung: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`PATCH`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details Show request/response
 
@@ -59,11 +59,11 @@ Erforderliche Berechtigung: `ticket.agent`
 :::
 ::::
 
-## Remove
+## Entfernen
 
 Erforderliche Berechtigung: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`DELETE`-Anfrage gesendet: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details Show response
 

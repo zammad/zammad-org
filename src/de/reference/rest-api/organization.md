@@ -7,13 +7,13 @@ title: Organisation
 
 ## Auflisten
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`
 
 ::: info
-Technically, customers can only see their own organization if applicable.
+Technisch können Kunden nur ihre eigene Organisation sehen, sofern zutreffend.
 :::
 
-`GET`-Request sent: `/api/v1/organizations`
+`GET`-Anfrage gesendet: `/api/v1/organizations`
 
 ::: details Show response
 
@@ -23,9 +23,9 @@ Technically, customers can only see their own organization if applicable.
 
 ## Suche
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`
 
-`GET`-Request sent: `/api/v1/organizations/search?query=inc&limit=10`
+`GET`-Anfrage gesendet: `/api/v1/organizations/search?query=inc&limit=10`
 
 ::: details Show response
 
@@ -35,12 +35,12 @@ Required permission: `ticket.agent` **or** `admin.organization`
 
 ## Anzeigen
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`
 
-`GET`-Request sent: `/api/v1/organizations/{id}`
+`GET`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
 ::: info
-Technically, any users in question can only see their own organization.
+Technisch können die betreffenden Benutzer nur ihre eigene Organisation sehen.
 :::
 
 ::: details Show response
@@ -51,9 +51,9 @@ Technically, any users in question can only see their own organization.
 
 ## Erstellen
 
-Required permission: `admin.organization`
+Erforderliche Berechtigung: `admin.organization`
 
-`POST`-Request sent: `/api/v1/organizations`
+`POST`-Anfrage gesendet: `/api/v1/organizations`
 
 :::: details Show request/response
 
@@ -72,9 +72,9 @@ Required permission: `admin.organization`
 
 ## Aktualisierung
 
-Required permission: `admin.organization`
+Erforderliche Berechtigung: `admin.organization`
 
-`PUT`-Request sent: `/api/v1/organizations/{id}`
+`PUT`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
 :::: details Show request/response
 
@@ -94,21 +94,21 @@ Required permission: `admin.organization`
 
 ## Löschen
 
-Required permission: `admin.organization`
+Erforderliche Berechtigung: `admin.organization`
 
-`DELETE`-Request sent: `/api/v1/organizations/{id}`
+`DELETE`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing organizations cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Organisationen nicht rückgängig gemacht werden kann.
 
-Removing organizations with references in e.g. activity streams or users
-is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder Benutzern
+ist über die API nicht möglich - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist *kein* Fehler.
 
-Consider using Zammad's Data Privacy feature via UI for
-more control instead.
+Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
+mehr Kontrolle.
 :::
 
 ::: details Show response
