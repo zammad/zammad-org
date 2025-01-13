@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-01-08 12:01+0000\n"
-"PO-Revision-Date: 2025-01-10 12:25+0000\n"
+"PO-Revision-Date: 2025-01-11 15:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -18159,14 +18159,13 @@ msgstr ""
 #: src/en/tutorials/connect-config-elasticsearch.md:111
 #, no-wrap
 msgid "Step 1: Verify Elasticsearch is Running"
-msgstr ""
+msgstr "Schritt 1: Überprüfen Sie, ob Elasticsearch läuft"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:113
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl status elasticsearch\n"
-msgstr "Mit Zammad loslegen"
+msgstr "systemctl status elasticsearch\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:119
@@ -18174,6 +18173,8 @@ msgid ""
 "This should output something like the following, make sure it says `Active: "
 "active (running)`:"
 msgstr ""
+"Die Ausgabe sollte in etwa wie folgt aussehen. Achten Sie darauf, dass dort "
+"`Active: active (running)` steht:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:120
@@ -18185,19 +18186,26 @@ msgid ""
 "   Docs: https://www.elastic.co\n"
 "   Main PID: 1790 (java)\n"
 msgstr ""
+"● elasticsearch.service - Elasticsearch\n"
+"   Loaded: loaded (/lib/systemd/system/elasticsearch.service; enabled; "
+"vendor preset: enabled)\n"
+"   Active: active (running) since Tue 2021-07-20 09:38:21 UTC; 1h 4min ago\n"
+"   Docs: https://www.elastic.co\n"
+"   Main PID: 1790 (java)\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:129
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
+"Andernfalls versuchen Sie, den Service neu zu starten und prüfen Sie dann "
+"erneut:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:130
 #: src/en/tutorials/connect-config-elasticsearch.md:158
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl restart elasticsearch\n"
-msgstr "Mit Zammad loslegen"
+msgstr "systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/connect-config-elasticsearch.md:134
@@ -18207,56 +18215,67 @@ msgid ""
 "Try completely purging and reinstalling Elasticsearch according to\n"
 "our [installation guide](/en/tutorials/install-elasticsearch).\n"
 msgstr ""
+"Wenn dies fehlschlägt, ist Ihre Elasticsearch-Installation wahrscheinlich "
+"defekt.\n"
+"Versuchen Sie, Elasticsearch vollständig zu bereinigen und neu zu "
+"installieren, wie in\n"
+"unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) "
+"beschrieben.\n"
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:140
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type=\"warning\" text=\"only ES7\" />"
-msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
+msgstr ""
+"Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist "
+"<Badge type=\"warning\" text=\"only ES7\" />"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:143
-#, fuzzy
-#| msgid "Install Elasticsearch"
 msgid "List installed elasticsearch plugins:"
-msgstr "Elasticsearch installieren"
+msgstr "Liste der installierten Elasticsearch-Plugins:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:143
 #: src/en/tutorials/connect-config-elasticsearch.md:161
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
-msgstr ""
+msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:148
 msgid "The output should include `ingest-attachment`."
-msgstr ""
+msgstr "Die Ausgabe sollte `ingest-attachment` enthalten."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:151
 msgid ""
 "Otherwise, try reinstalling the `ingest-attachment` plugin and check again:"
 msgstr ""
+"Versuchen Sie andernfalls, das Plugin `ingest-attachment` neu zu "
+"installieren, und prüfen Sie dann erneut:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:152
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
 msgstr ""
+"/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:155
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
 msgstr ""
+"/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:165
 #, no-wrap
 msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
 msgstr ""
+"Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und die "
+"Indizes neu erstellen kann"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:169
@@ -18264,11 +18283,16 @@ msgid ""
 "Force Zammad to drop and rebuild the elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
 msgstr ""
+"Erzwingen, dass Zammad die Elasticsearch-Indizes löscht und neu aufbaut, "
+"optional mit einer definierten Anzahl von CPU-Kernen, die für die "
+"Neuindizierung verwendet werden sollen (Beispiel `[8]`):"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:174
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
+"Dies sollte den Wiederaufbau der Indizes starten und den Fortschritt "
+"ausgeben:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:175
@@ -18286,6 +18310,17 @@ msgid ""
 "\n"
 "[...]\n"
 msgstr ""
+"Dropping indexes... done.\n"
+"Deleting pipeline... done.\n"
+"Creating indexes... done.\n"
+"Creating pipeline... done.\n"
+"Reloading data...\n"
+"   - Chat::Session...\n"
+"      done in 0 seconds.\n"
+"   - Cti::Log...\n"
+"      done in 0 seconds.\n"
+"\n"
+"[...]\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:191
@@ -18294,6 +18329,9 @@ msgid ""
 "while to complete. Please let this task finish completely and wait until it "
 "drops you back to the console."
 msgstr ""
+"Je nach Systemleistung und Datenmenge kann dies eine Weile dauern. Bitte "
+"warten Sie bis diese Aufgabe vollständig abgeschlossen ist und Sie wieder in "
+"die Konsole sind."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:196
@@ -18303,6 +18341,11 @@ msgid ""
 "and integration procedure according to our [installation guide](/en/"
 "tutorials/install-elasticsearch)."
 msgstr ""
+"Wenn dieser Vorgang fehlschlägt oder einen Fehler ausgibt, ist "
+"möglicherweise etwas anderes mit Ihrer Installation nicht in Ordnung. "
+"Vergewissern Sie sich, dass Sie die vollständige Einrichtung und Integration "
+"von Elasticsearch gemäß unserer [Installationsanleitung](/de/tutorials/"
+"install-elasticsearch) durchgeführt haben."
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/connect-config-elasticsearch.md:197
@@ -18312,6 +18355,9 @@ msgid ""
 "may want to check Elasticsearch's log file:\n"
 "`/var/log/elasticsearch/elasticsearch.log`.\n"
 msgstr ""
+"Falls Sie mit den obigen Schritten keinen Erfolg haben,\n"
+"sollten Sie die Elasticsearch-Protokolldatei überprüfen:\n"
+"`/var/log/elasticsearch/elasticsearch.log`.\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:204
@@ -18319,13 +18365,16 @@ msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
 msgstr ""
+"Nachdem Sie diese Schritte durchgeführt haben, sollten Sie sicherstellen, "
+"dass Ihre Elasticsearch-Installation läuft und die Indizes neu erstellt "
+"wurden."
 
 #. type: Title #
 #: src/en/tutorials/firewall-selinux.md:1
 #: src/en/tutorials/firewall-selinux.md:6
 #, no-wrap
 msgid "Firewall & SELinux"
-msgstr ""
+msgstr "Firewall & SELinux"
 
 #. type: Plain text
 #: src/en/tutorials/firewall-selinux.md:10
@@ -18333,12 +18382,15 @@ msgid ""
 "This is just a collection of snippets which might be useful for you. Feel "
 "free to skip parts and/or adapt it to your needs."
 msgstr ""
+"Dies ist nur eine Sammlung von Beispielen, die für Sie nützlich sein "
+"könnten. Es steht Ihnen frei, Teile auszulassen und/oder sie an Ihre "
+"Bedürfnisse anzupassen."
 
 #. type: Title ##
 #: src/en/tutorials/firewall-selinux.md:11
 #, no-wrap
 msgid "SELinux"
-msgstr ""
+msgstr "SELinux"
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/firewall-selinux.md:13
@@ -18347,42 +18399,46 @@ msgid ""
 "The following commands only work on Ubuntu, Debian and CentOS. If you use a\n"
 "different distribution, please have a look at their documentation.\n"
 msgstr ""
+"Die folgenden Befehle funktionieren nur unter Ubuntu, Debian und CentOS. "
+"Wenn Sie eine\n"
+"andere Distribution verwenden, werfen Sie bitte einen Blick in deren "
+"Dokumentation.\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/firewall-selinux.md:18
 #, no-wrap
 msgid "sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/\n"
-msgstr ""
+msgstr "sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/firewall-selinux.md:21
 #, no-wrap
 msgid "sudo setsebool httpd_can_network_connect on -P\n"
-msgstr ""
+msgstr "sudo setsebool httpd_can_network_connect on -P\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/firewall-selinux.md:24
 #, no-wrap
 msgid "sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/\n"
-msgstr ""
+msgstr "sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/firewall-selinux.md:27
 #, no-wrap
 msgid "sudo restorecon -Rv /opt/zammad/public/\n"
-msgstr ""
+msgstr "sudo restorecon -Rv /opt/zammad/public/\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/firewall-selinux.md:30
 #, no-wrap
 msgid "sudo chmod -R a+r /opt/zammad/public/\n"
-msgstr ""
+msgstr "sudo chmod -R a+r /opt/zammad/public/\n"
 
 #. type: Title ##
 #: src/en/tutorials/firewall-selinux.md:34
 #, no-wrap
 msgid "Firewall"
-msgstr ""
+msgstr "Firewall"
 
 #. type: Plain text
 #: src/en/tutorials/firewall-selinux.md:39
@@ -18392,6 +18448,10 @@ msgid ""
 "are using a different distribution, please have a look at their "
 "documentation."
 msgstr ""
+"Stellen Sie sicher, dass Sie neben den Ports, die Sie benötigen, auch die "
+"Ports `80` und `443` (TCP & UDP) öffnen. Unten finden Sie einige Beispiele "
+"für verschiedene Distributionen. Wenn Sie eine andere Distribution "
+"verwenden, werfen Sie bitte einen Blick in deren Dokumentation."
 
 #. type: Plain text
 #: src/en/tutorials/firewall-selinux.md:42
@@ -18399,6 +18459,9 @@ msgid ""
 "Please note that the examples below only cover the distribution’s default "
 "firewall. It may not cover your case."
 msgstr ""
+"Bitte beachten Sie, dass die folgenden Beispiele nur die Standard-Firewall "
+"der Distributionen abdecken. Sie passen möglicherweise nicht zu Ihrem "
+"Szenario ab."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/firewall-selinux.md:43
@@ -18419,6 +18482,20 @@ msgid ""
 "===Debian\n"
 "\n"
 msgstr ""
+"\n"
+"===Ubuntu\n"
+"```sh\n"
+"sudo ufw allow 80\n"
+"```\n"
+"```sh\n"
+"sudo ufw allow 443\n"
+"```\n"
+"```sh\n"
+"sudo ufw reload\n"
+"```\n"
+"\n"
+"===Debian\n"
+"\n"
 
 #. type: Fenced div block (tabs|info)
 #: src/en/tutorials/firewall-selinux.md:43
@@ -18428,6 +18505,10 @@ msgid ""
 "starting from Debian 10 (Buster). Our example uses the `input` chain, yours\n"
 "may be a different one!\n"
 msgstr ""
+"Wir behandeln `nftables` in diesem Teil - von `iptables` wird\n"
+"seit Debian 10 (Buster) abgeraten. Unser Beispiel verwendet die `input`-"
+"chain, Ihre\n"
+"kann eine andere sein!\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/firewall-selinux.md:43
@@ -18485,13 +18566,65 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"Fügen Sie folgende Zeilen zu `/etc/nftables.conf` oder zu ihrer Regel-Datei "
+"hinzu.\n"
+"Stellen Sie sicher, dass Sie diese Zeilen zu Ihrer input-chain Datei "
+"hinzufügen.\n"
+"\n"
+"```sh\n"
+"sudo tcp dport { http, https } accept\n"
+"```\n"
+"```sh\n"
+"sudo udp dport { http, https } accept\n"
+"```\n"
+"Das Ergebnis kann wie folgt aussehen. Beachten Sie, dass Ihre Umgebung\n"
+"andere/zusätzliche Regeln benötigen kann.\n"
+"\n"
+"```sh\n"
+"table inet filter {\n"
+"   chain input {\n"
+"      type filter hook input priority 0; policy drop;\n"
+"      ct state established,related accept\n"
+"      tcp dport ssh log accept\n"
+"      tcp dport { http, https } accept\n"
+"      udp dport { http, https } accept\n"
+"   }\n"
+"\n"
+"   chain forward {\n"
+"      type filter hook forward priority 0; policy accept;\n"
+"   }\n"
+"\n"
+"   chain output {\n"
+"      type filter hook output priority 0; policy accept;\n"
+"   }\n"
+"}\n"
+"```\n"
+"Laden Sie die Regeln:\n"
+"```sh\n"
+"sudo systemctl reload nftables\n"
+"```\n"
+"\n"
+"===CenOS, RHEL, OpenSUSE, SLES\n"
+"\n"
+"```sh\n"
+"sudo firewall-cmd --zone=public --add-service=http --permanent\n"
+"```\n"
+"\n"
+"```sh\n"
+"sudo firewall-cmd --zone=public --add-service=https --permanent\n"
+"```\n"
+"\n"
+"```sh\n"
+"sudo firewall-cmd --reload\n"
+"```\n"
+"\n"
 
 #. type: Title #
 #: src/en/tutorials/first-steps.md:1 src/en/tutorials/first-steps.md:6
-#, fuzzy, no-wrap
-#| msgid "Migrate to Zammad"
+#, no-wrap
 msgid "First Steps in Zammad"
-msgstr "Zu Zammad migrieren"
+msgstr "Erste Schritte in Zammad"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:11
@@ -18500,24 +18633,30 @@ msgid ""
 "your fresh installed Zammad, head over to the next section. Alternatively, "
 "you have other options:"
 msgstr ""
+"Herzlichen Glückwunsch, es scheint, als hätten Sie Zammad erfolgreich "
+"installiert. Um mit dem frisch installierten Zammad zu beginnen, springen "
+"Sie zum nächsten Abschnitt. Alternativ haben Sie folgende Möglichkeiten:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:14
 msgid ""
 "[Migrate from another supported ticketing system](/en/tutorials/migrate)"
 msgstr ""
+"[Migrieren von einem anderen unterstützten Ticket-System](/de/tutorials/"
+"migrate)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:14
 msgid "[Restore Zammad from an existing backup](/en/tutorials/backup-restore)"
 msgstr ""
+"[Zammad aus einer vorhandenen Sicherung wiederherstellen](/de/tutorials/"
+"backup-restore)"
 
 #. type: Title ##
 #: src/en/tutorials/first-steps.md:15
-#, fuzzy, no-wrap
-#| msgid "Getting started"
+#, no-wrap
 msgid "Getting Started Wizard"
-msgstr "Loslegen"
+msgstr "Einrichtungsassistent"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:19
@@ -18526,12 +18665,15 @@ msgid ""
 "Getting Started Wizard. It will guide you through the first most important "
 "things."
 msgstr ""
+"Wenn Sie die Webseite von Zammad zum ersten Mal besuchen, werden Sie von "
+"seinem Einrichtungsassistenten begrüßt. Er wird Sie durch die ersten "
+"wichtigen Schritte führen."
 
 #. type: Title ###
 #: src/en/tutorials/first-steps.md:20
 #, no-wrap
 msgid "Step 1: Create Your First Administrator Account"
-msgstr ""
+msgstr "Schritt 1: Erstellen Ihres ersten Administratorkontos"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:24
@@ -18539,32 +18681,35 @@ msgid ""
 "Fill in the required information in the dialog. Your email address and "
 "password are important. These are your credentials to log in."
 msgstr ""
+"Geben Sie die erforderlichen Informationen im Dialogfeld an. Ihre E-Mail "
+"Adresse und Ihr Passwort sind wichtig. Dies sind Ihre Zugangsdaten für die "
+"Anmeldung."
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:26
 msgid "Zammad applies the following password policy by default:"
-msgstr ""
+msgstr "Zammad wendet standardmäßig die folgende Passwort-Richtlinie an:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:30
 msgid "10 characters or more"
-msgstr ""
+msgstr "10 Zeichen oder mehr"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:30
 msgid "At least 2 UPPER and 2 lower characters"
-msgstr ""
+msgstr "Mindestens 2 GROSSE und 2 kleine Buchstaben"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:30
 msgid "One or more digits"
-msgstr ""
+msgstr "Eine oder mehrere Ziffern"
 
 #. type: Title ###
 #: src/en/tutorials/first-steps.md:31
 #, no-wrap
 msgid "Step 2: Provide Company Information"
-msgstr ""
+msgstr "Schritt 2: Firmeninformationen hinterlegen"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:36
@@ -18573,17 +18718,23 @@ msgid ""
 "detected automatically and only requires adjustment in case it is detected "
 "wrong. If you skip it, you can adjust these things later too."
 msgstr ""
+"Sie können hier ein individuelles Logo Ihrer Firma hochladen. Die "
+"Instanzadresse wird automatisch erkannt und muss nur dann angepasst werden, "
+"falls sie falsch ist. Wenn Sie den Dialog überspringen, können Sie die "
+"Anpassung auch später vornehmen."
 
 #. type: Title ###
 #: src/en/tutorials/first-steps.md:37
 #, no-wrap
 msgid "Step 3: Email Notification Channel"
-msgstr ""
+msgstr "Schritt 3: E-Mail-Benachrichtigungskanal"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:40
 msgid "By default, Zammad uses sendmail. This can be changed to SMTP here."
 msgstr ""
+"Standardmäßig verwendet Zammad sendmail. Dies kann hier auf SMTP geändert "
+"werden."
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:43
@@ -18592,19 +18743,25 @@ msgid ""
 "Zammad uses ``noreply@<your-fqdn>`` as sender address by default. SMTP setups\n"
 "might fail - you can skip this step with choosing sendmail and adjust it later!\n"
 msgstr ""
+"Zammad verwendet standardmäßig ``noreply@<Ihre-fqdn>`` als Absenderadresse. "
+"Die SMTP-Einrichtung\n"
+"kann hier fehlschlagen - Sie können diesen Schritt mit der Auswahl von "
+"sendmail überspringen und später anpassen!\n"
 
 #. type: Title ###
 #: src/en/tutorials/first-steps.md:44
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Step 4: Your First Email Channel <Badge type=\"info\" text=\"optional\" />"
-msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
+msgstr ""
+"Schritt 4: Ihr erster E-Mail-Kanal <Badge type=\"info\" text=\"optional\" />"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:47
 msgid ""
 "If you want to start right away, you can connect your email account already."
 msgstr ""
+"Wenn Sie sofort loslegen wollen, können Sie Ihr E-Mail Konto bereits "
+"verbinden."
 
 #. type: Fenced div block (danger)
 #: src/en/tutorials/first-steps.md:48
@@ -18614,6 +18771,11 @@ msgid ""
 "automatically generated answers) If that’s not what you want, skip this step\n"
 "for now.\n"
 msgstr ""
+"Standardmäßig reagiert Zammad auf abgeholte E-Mails (z.B. löscht sie und "
+"sendet\n"
+"automatisch generierte Antworten). Wenn Sie das nicht wollen, überspringen "
+"Sie diesen Schritt\n"
+"fürs Erste.\n"
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:56
@@ -18621,6 +18783,8 @@ msgid ""
 "After finishing the wizard you are automatically logged in to the just "
 "created account."
 msgstr ""
+"Nach Beendigung des Assistenten sind Sie automatisch mit dem gerade "
+"erstellten Konto angemeldet."
 
 #. type: Plain text
 #: src/en/tutorials/first-steps.md:62
@@ -18629,72 +18793,73 @@ msgid ""
 "adapt it to your needs. You can find additional information across this "
 "documentation."
 msgstr ""
+"Die folgende Liste sollte Ihnen helfen, den richtigen Weg zu finden. Sie "
+"sollten sie jedoch an Ihre Bedürfnisse anpassen. Weitere Informationen "
+"finden Sie in dieser Dokumentation."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Configure your required groups"
-msgstr ""
+msgstr "Konfigurieren Sie die benötigten Gruppen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Adjust triggers as needed"
-msgstr ""
+msgstr "Trigger nach Bedarf anpassen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Add postmaster filters if needed"
-msgstr ""
+msgstr "Postmaster-Filter hinzufügen, falls erforderlich"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
-#, fuzzy
-#| msgid "Configure Webserver"
 msgid "Configure SLAs if needed"
-msgstr "Webserver konfigurieren"
+msgstr "Konfigurieren Sie bei Bedarf SLAs"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Add email / social media channels & signatures"
-msgstr ""
+msgstr "E-Mail-/Social-Media-Kanäle und Signaturen hinzufügen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Go back to group settings to add outgoing email addresses"
 msgstr ""
+"Gehen Sie zurück zu den Gruppeneinstellungen, um ausgehende E-Mail-Adressen "
+"hinzuzufügen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
-#, fuzzy
-#| msgid "Modules"
 msgid "Add Text Modules"
-msgstr "Module"
+msgstr "Textbausteine hinzufügen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Add Organizations"
-msgstr ""
+msgstr "Organisationen hinzufügen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
-#, fuzzy
-#| msgid "Configure Webserver"
 msgid "Configure roles if needed"
-msgstr "Webserver konfigurieren"
+msgstr "Konfigurieren Sie bei Bedarf Rollen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Consider third party logins or LDAP integration for easier logins"
 msgstr ""
+"Erwägen Sie Logins per Drittanbieter oder eine LDAP-Integration für "
+"einfachere Logins"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Add agent accounts"
-msgstr ""
+msgstr "Konten für Agenten hinzufügen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/first-steps.md:75
 msgid "Consider backup strategies for Zammad"
-msgstr ""
+msgstr "Erwägen Sie Backup-Strategien für Zammad"
 
 #. type: Fenced div block (tip Are you still lost?)
 #: src/en/tutorials/first-steps.md:76
@@ -18705,6 +18870,11 @@ msgid ""
 "book workshops with one of our\n"
 "[Zammad consultants](https://zammad.com/en/company/contact).\n"
 msgstr ""
+"\n"
+"Wenn Sie Hilfe brauchen oder schneller produktiv sein wollen, können Sie "
+"auch\n"
+"Workshops mit einem unserer\n"
+"[Zammad-Berater](https://zammad.com/de/company/contact) buchen.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/index.md:1
@@ -18718,7 +18888,7 @@ msgstr "Tutorials"
 #: src/en/tutorials/install-elasticsearch.md:32
 #, no-wrap
 msgid "Install Elasticsearch 7"
-msgstr ""
+msgstr "Elasticsearch 7 installieren"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:14
@@ -18754,6 +18924,11 @@ msgid ""
 "that the maintenance of version 7 might be stopped earlier than for version "
 "8, which also comes with some additional security features."
 msgstr ""
+"Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu "
+"installieren ist), finden Sie unten die konsolidierten "
+"Installationsschritte. Beachten Sie, dass die Wartung von Version 7 "
+"möglicherweise früher eingestellt wird als bei Version 8, die außerdem "
+"einige zusätzliche Sicherheitsfunktionen enthält."
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/install-elasticsearch.md:26
@@ -18763,6 +18938,11 @@ msgid ""
 "[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure\n"
 "to copy/save the password which is shown while installing Elasticsearch.\n"
 msgstr ""
+"Wenn Sie Elasticsearch 8 installieren und unserer\n"
+"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen "
+"wollen, stellen Sie sicher\n"
+"dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt "
+"wird, kopieren/speichern.\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/install-elasticsearch.md:34
@@ -18849,6 +19029,88 @@ msgid ""
 "=== Direct Download\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu\n"
+"\n"
+"```sh\n"
+"apt install apt-transport-https sudo wget curl gnupg\n"
+"```\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://"
+"artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
+"  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+"```\n"
+"```sh\n"
+"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+"  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+"```\n"
+"```sh\n"
+"apt update\n"
+"```\n"
+"```sh\n"
+"apt install elasticsearch\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"```sh\n"
+"apt install apt-transport-https sudo wget curl gnupg\n"
+"```\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://"
+"artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
+"  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+"```\n"
+"```sh\n"
+"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+"  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+"```\n"
+"```sh\n"
+"apt update\n"
+"```\n"
+"```sh\n"
+"apt install elasticsearch\n"
+"```\n"
+"\n"
+"=== OpenSUSE\n"
+"\n"
+"```sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"```\n"
+"```sh\n"
+"echo \"[elasticsearch-7.x]\n"
+"name=Elasticsearch repository for 7.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+"gpgcheck=1\n"
+"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"enabled=1\n"
+"autorefresh=1\n"
+"type=rpm-md\"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
+"```\n"
+"```sh\n"
+"zypper install elasticsearch\n"
+"```\n"
+"\n"
+"=== CentOS\n"
+"\n"
+"```sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"```\n"
+"```sh\n"
+"echo \"[elasticsearch-7.x]\n"
+"name=Elasticsearch repository for 7.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+"gpgcheck=1\n"
+"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"enabled=1\n"
+"autorefresh=1\n"
+"type=rpm-md\"| tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
+"```\n"
+"```sh\n"
+"yum install -y elasticsearch\n"
+"```\n"
+"=== Direct Download\n"
+"\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:120
@@ -18858,6 +19120,10 @@ msgid ""
 ": ```sh\n"
 "  /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
 msgstr ""
+"Installieren Sie das Plugin \"ingest-attachment\":\n"
+": ```sh\n"
+"   /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-"
+"attachment\n"
 
 #. type: Fenced code block
 #: src/en/tutorials/install-elasticsearch.md:120
@@ -18868,6 +19134,10 @@ msgid ""
 ": ```sh\n"
 "  sysctl -w vm.max_map_count=262144\n"
 msgstr ""
+"\n"
+"Erhöhen Sie das Virtual Memory Limit:\n"
+": ```sh\n"
+"  sysctl -w vm.max_map_count=262144\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:130
@@ -18877,6 +19147,9 @@ msgid ""
 ": ```yml\n"
 "  # /etc/elasticsearch/elasticsearch.yml\n"
 msgstr ""
+"Adjust ``/etc/elasticsearch/elasticsearch.yml``:\n"
+": ```yml\n"
+"  # /etc/elasticsearch/elasticsearch.yml\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:141
@@ -18893,6 +19166,16 @@ msgid ""
 "  # Performance may suffer if it is set too high.\n"
 "  http.max_content_length: 400mb\n"
 msgstr ""
+"  # Tickets above this size (articles + attachments + metadata)\n"
+"  # may fail to be properly indexed (Default: 100mb).\n"
+"  #\n"
+"  # When Zammad sends tickets to Elasticsearch for indexing,\n"
+"  # it bundles together all the data on each individual ticket\n"
+"  # and issues a single HTTP request for it.\n"
+"  # Payloads exceeding this threshold will be truncated.\n"
+"  #\n"
+"  # Performance may suffer if it is set too high.\n"
+"  http.max_content_length: 400mb\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:149
@@ -18906,6 +19189,14 @@ msgid ""
 "  # Available in version 6.6+ only.\n"
 "  indices.query.bool.max_clause_count: 2000\n"
 msgstr ""
+"  # Allows the engine to generate larger (more complex) search queries.\n"
+"  # Elasticsearch will raise an error or deprecation notice if this value "
+"is\n"
+"  # too low, but setting it too high can overload system\n"
+"  # resources (Default: 1024).\n"
+"  #\n"
+"  # Available in version 6.6+ only.\n"
+"  indices.query.bool.max_clause_count: 2000\n"
 
 #. type: Fenced code block
 #: src/en/tutorials/install-elasticsearch.md:149
@@ -18916,6 +19207,10 @@ msgid ""
 ": ```sh\n"
 "  systemctl enable elasticsearch --now\n"
 msgstr ""
+"\n"
+"Aktivieren Sie es standardmäßig und starten Sie es:\n"
+": ```sh\n"
+"  systemctl enable elasticsearch --now\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:159
@@ -18924,13 +19219,15 @@ msgid ""
 " Go on with\n"
 " [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).\n"
 msgstr ""
+" Fahren Sie fort indem Sie\n"
+" [Elasticsearch mit Zammad verbinden](/de/tutorials/connect-config-"
+"elasticsearch).\n"
 
 #. type: Title #
 #: src/en/tutorials/migrate-host.md:1 src/en/tutorials/migrate-host.md:6
-#, fuzzy, no-wrap
-#| msgid "Migrate to Zammad"
+#, no-wrap
 msgid "Migrate Zammad to New Host"
-msgstr "Zu Zammad migrieren"
+msgstr "Zammad auf einen neuen Host migrieren"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:15
@@ -18942,6 +19239,13 @@ msgid ""
 "your-place/5)  or consider [paid support options](https://zammad.com/en/"
 "services/professional-services)."
 msgstr ""
+"Dies ist nur eine Beschreibung der grundlegenden Schritte zur Durchführung "
+"einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher "
+"sollten Sie dies nur als Anhaltspunkt betrachten. Wenn etwas schief geht, "
+"wenden Sie sich bitte an die [Zammad Community] (https://"
+"community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) oder "
+"ziehen Sie [bezahlte Support-Optionen] (https://zammad.com/de/services/"
+"professional-services) in Betracht."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:19
@@ -18950,6 +19254,10 @@ msgid ""
 "guide](/en/tutorials/backup-restore). They're not meant to stand alone - "
 "we'll link and note this in the relevant parts."
 msgstr ""
+"Die auf dieser Seite beschriebenen Schritte sind eine Ergänzung zur "
+"[Anleitung zur Sicherung und Wiederherstellung](/de/tutorials/backup-restore)"
+". Sie sind nicht dazu gedacht, für sich allein zu stehen - wir verlinken und "
+"vermerken dies an den entsprechenden Stellen."
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/migrate-host.md:20
@@ -18959,12 +19267,16 @@ msgid ""
 "[Step 7](#step-7-transfer-your-backup-files). For restoration, you've\n"
 "received an attachment dump!\n"
 msgstr ""
+"Migration von Zammad SaaS? Springen Sie zu\n"
+"[Schritt 7](#schritt-7-transfer-der-backup-dateien). Zur Wiederherstellung "
+"haben Sie\n"
+"einen Anhang-Dump erhalten!\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:26
 #, no-wrap
 msgid "Step 1: Note Down Your Environmental Adjustments"
-msgstr ""
+msgstr "Schritt 1: Notieren Sie Ihre Umgebungseinstellungen"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:29
@@ -18972,12 +19284,14 @@ msgid ""
 "If you have set any environment variables or similar, make sure to backup "
 "them."
 msgstr ""
+"Falls Sie Umgebungsvariablen oder ähnliches gesetzt haben, sollten Sie diese "
+"nun sichern."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:30
 #, no-wrap
 msgid "Step 2: Install Zammad on the Destination Host"
-msgstr ""
+msgstr "Schritt 2: Installieren Sie Zammad auf dem Zielhost"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:36
@@ -18987,12 +19301,17 @@ msgid ""
 "before migrating. The following guide assumes that you have the same version "
 "of Zammad on your old and new host."
 msgstr ""
+"Um die Wiederherstellung so einfach wie möglich zu gestalten, installieren "
+"Sie bitte die gleiche Version wie Ihre Ursprungsinstanz. Sie können ggf. "
+"erwägen, die alte Instanz vor der Migration zu aktualisieren. Die folgende "
+"Anleitung geht davon aus, dass Sie die gleiche Version von Zammad auf Ihrem "
+"alten und neuen Host haben."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:37
 #, no-wrap
 msgid "Step 3: Activate Maintenance Mode"
-msgstr ""
+msgstr "Schritt 3: Aktivieren des Wartungsmodus"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:41
@@ -19001,12 +19320,15 @@ msgid ""
 "This ends all agent and customer sessions. Activate it in Zammad's admin\n"
 "interface under *System > Maintenance*.\n"
 msgstr ""
+"Dadurch werden alle Sitzungen von Agenten und Kunden beendet. Aktivieren Sie "
+"es in Zammads Admin\n"
+"Schnittstelle unter *System > Wartung*.\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:42
 #, no-wrap
 msgid "Step 4: Disable Your Communication Channels"
-msgstr ""
+msgstr "Schritt 4: Deaktivieren Sie Ihre Kommunikationskanäle"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:46
@@ -19014,32 +19336,32 @@ msgid ""
 "The restore script starts Zammad automatically, this may help to avoid data "
 "loss and inconsistencies."
 msgstr ""
+"Das Wiederherstellungsskript startet Zammad automatisch. Das Deaktivieren "
+"trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:47
-#, fuzzy, no-wrap
-#| msgid "Setup, manage and use Zammad."
+#, no-wrap
 msgid "Step 5: Stop and Disable Zammad"
-msgstr "Zammad einrichten, verwalten und nutzen."
+msgstr "Schritt 5: Zammad beenden und deaktivieren"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:50
 msgid "Make sure that no data will be changed *before* backing up."
 msgstr ""
+"Stellen Sie sicher, dass keine Daten *vor* der Sicherung geändert werden."
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:51
-#, fuzzy, no-wrap
-#| msgid "systemctl start zammad\n"
+#, no-wrap
 msgid "systemctl disable zammad\n"
-msgstr "systemctl start zammad\n"
+msgstr "systemctl disable zammad\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:58
-#, fuzzy, no-wrap
-#| msgid "Step 1: Add Stack"
+#, no-wrap
 msgid "Step 6: Backup"
-msgstr "Schritt 1: Stack hinzufügen"
+msgstr "Schritt 6: Sicherung"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:62
@@ -19047,6 +19369,8 @@ msgid ""
 "Follow the [backup guide](/en/tutorials/backup-restore#) to create your "
 "backup."
 msgstr ""
+"Folgen Sie der [Backup Anleitung](/de/tutorials/backup-restore#), um Ihre "
+"Sicherung zu erstellen."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:65
@@ -19054,17 +19378,21 @@ msgid ""
 "Remember if you've created a full filesystem dump or only backed up your "
 "data. This will be important for the restoration."
 msgstr ""
+"Merken Sie sich, ob Sie ein vollständigen Dateisystem-Dump erstellt oder nur "
+"Ihre Daten gesichert haben. Dies ist für die Wiederherstellung wichtig."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:67
 msgid "If you want to go the easiest way, consider only dumping your data."
 msgstr ""
+"Wenn Sie den einfachsten Weg gehen wollen, erwägen Sie nur Ihre Daten zu "
+"sichern."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:68
 #, no-wrap
 msgid "Step 7: Transfer Your Backup Files"
-msgstr ""
+msgstr "Schritt 7: Transfer der Backup Dateien"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:74
@@ -19073,12 +19401,16 @@ msgid ""
 "file. Under [backup configuration](/en/tutorials/backup-restore#backup-"
 "configuration) you can find how to adjust the config file to your needs."
 msgstr ""
+"Speichern Sie Ihre Sicherungsdateien in einem Verzeichnis und geben Sie den "
+"Pfad in der Datei `config` an. Unter [Backup-Konfiguration](/de/tutorials/"
+"backup-restore#backup-konfiguration) erfahren Sie, wie Sie die "
+"Konfigurationsdatei an Ihre Bedürfnisse anpassen können."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:75
 #, no-wrap
 msgid "Step 8: Restore Your Backup"
-msgstr ""
+msgstr "Schritt 8: Wiederherstellung der Sicherung"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:79
@@ -19087,17 +19419,24 @@ msgid ""
 "backups)  up to and including \"Run the Restore\" to restore the backup on "
 "the new host."
 msgstr ""
+"Folgen Sie der [Wiederherstellungsanleitung](/de/tutorials/backup-restore"
+"#backup-wiederherstellen) bis einschließlich \"Backup wiederherstellen\", um "
+"die Sicherung auf dem neuen Host wiederherzustellen."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:81
 msgid "Make sure to stop Zammad after the restoration has finished."
 msgstr ""
+"Stellen Sie sicher, dass Sie Zammad nach Abschluss der Wiederherstellung "
+"beenden."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:82
 #, no-wrap
 msgid "Step 9: Run Required Maintenance Tasks After Restoring"
 msgstr ""
+"Schritt 9: Erforderliche Wartungsaufgaben nach der Wiederherstellung "
+"ausführen"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:86
@@ -19105,31 +19444,33 @@ msgid ""
 "After successful restoration, please continue below depending if you've only "
 "backed up your data or have a full filesystem dump."
 msgstr ""
+"Nach erfolgreicher Wiederherstellung fahren Sie bitte unten fort, abhängig "
+"davon, ob Sie nur Ihre Daten gesichert haben oder eine vollständige "
+"Dateisystem-Sicherung haben."
 
 #. type: Title ###
 #: src/en/tutorials/migrate-host.md:87
 #, no-wrap
 msgid "Data Dump"
-msgstr ""
+msgstr "Daten-Sicherung"
 
 #. type: Title ####
 #: src/en/tutorials/migrate-host.md:89
-#, fuzzy, no-wrap
-#| msgid "Step 3: Start the Stack"
+#, no-wrap
 msgid "Step 9.1: Clear the cache"
-msgstr "Schritt 3: Starten des Stacks"
+msgstr "Schritt 9.1: Löschen Sie den Cache"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:91 src/en/tutorials/migrate-host.md:154
 #, no-wrap
 msgid "zammad run rails r \"Rails.cache.clear\"\n"
-msgstr ""
+msgstr "zammad run rails r \"Rails.cache.clear\"\n"
 
 #. type: Title ###
 #: src/en/tutorials/migrate-host.md:95
 #, no-wrap
 msgid "Full Filesystem Dump"
-msgstr ""
+msgstr "Vollständige Dateisystem-Sicherung"
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/migrate-host.md:97
@@ -19148,12 +19489,29 @@ msgid ""
 "\n"
 "Zammad files are distribution and version specific!\n"
 msgstr ""
+"Dieser Schritt ist nur erforderlich, wenn einer der folgenden Punkte erfüllt "
+"ist:\n"
+"\n"
+"- Die Quell- und Zielversion von Zammad sind nicht identisch\n"
+"- Die Zammad-Installation ist keine Quellcode-Installation\n"
+"- Das Zammad-Backup ist kein Export von unserer gehosteten Installation\n"
+"\n"
+"Vollständige Sicherungen für Quellcode-Installationen sind jedoch nicht "
+"abgedeckt,\n"
+"Grundsätzlich gilt für Sie das Gleiche wie unten: Sie müssen sicherstellen, "
+"dass die\n"
+"Umgebungen und Anwendungsdateien mit der neuen / richtigen\n"
+"Version überschrieben werden.\n"
+"\n"
+"Zammad-Dateien sind distributions- und versionsspezifisch!\n"
 
 #. type: Title ####
 #: src/en/tutorials/migrate-host.md:112
 #, no-wrap
 msgid "Step 9.1: Uninstall and Reinstall Zammad Without Resolving Dependencies"
 msgstr ""
+"Schritt 9.1: Deinstallation und Neuinstallation von Zammad ohne Auflösen der "
+"Abhängigkeiten"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate-host.md:114
@@ -19178,6 +19536,24 @@ msgid ""
 "zypper install zammad\n"
 "```\n"
 msgstr ""
+"\n"
+"=== Debian & Ubuntu\n"
+"\n"
+"```sh\n"
+"dpkg -r --force-depends zammad\n"
+"```\n"
+"```sh\n"
+"apt install zammad\n"
+"```\n"
+"\n"
+"=== OpenSUSE\n"
+"\n"
+"``` sh\n"
+"zypper remove -R zammad\n"
+"```\n"
+"```sh\n"
+"zypper install zammad\n"
+"```\n"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/migrate-host.md:135

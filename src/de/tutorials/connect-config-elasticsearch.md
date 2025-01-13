@@ -113,14 +113,14 @@ Wenn Sie dieses Problem haben und Elasticsearch gemäß unserer
 haben, führen Sie bitte die folgenden Schritte aus, um sicherzustellen, dass
 Elasticsearch korrekt funktioniert.
 
-#### Step 1: Verify Elasticsearch is Running
+#### Schritt 1: Überprüfen Sie, ob Elasticsearch läuft
 
 ```sh
 systemctl status elasticsearch
 ```
 
-This should output something like the following, make sure it says `Active:
-active (running)`:
+Die Ausgabe sollte in etwa wie folgt aussehen. Achten Sie darauf, dass dort
+`Active: active (running)` steht:
 
 ```sh
 ● elasticsearch.service - Elasticsearch
@@ -130,28 +130,30 @@ active (running)`:
    Main PID: 1790 (java)
 ```
 
-Otherwise, try restarting it and check again:
+Andernfalls versuchen Sie, den Service neu zu starten und prüfen Sie dann
+erneut:
 
 ```sh
 systemctl restart elasticsearch
 ```
 
 ::: warning
-If this fails, your Elasticsearch installation is probably broken.
-Try completely purging and reinstalling Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch).
+Wenn dies fehlschlägt, ist Ihre Elasticsearch-Installation wahrscheinlich defekt.
+Versuchen Sie, Elasticsearch vollständig zu bereinigen und neu zu installieren, wie in
+unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschrieben.
 :::
 
-#### Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type="warning" text="only ES7" />
+#### Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist <Badge type="warning" text="only ES7" />
 
-List installed elasticsearch plugins:
+Liste der installierten Elasticsearch-Plugins:
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
 ```
 
-The output should include `ingest-attachment`.
+Die Ausgabe sollte `ingest-attachment` enthalten.
 
-Otherwise, try reinstalling the `ingest-attachment` plugin and check again:
+Versuchen Sie andernfalls, das Plugin `ingest-attachment` neu zu
+installieren, und prüfen Sie dann erneut:
 
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment
@@ -166,15 +168,17 @@ systemctl restart elasticsearch
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
 ```
 
-#### Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes
+#### Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und die Indizes neu erstellen kann
 
-Force Zammad to drop and rebuild the elasticsearch indexes, optionally with
-a specified number of CPU cores to use for re-indexing (example `[8]`):
+Erzwingen, dass Zammad die Elasticsearch-Indizes löscht und neu aufbaut,
+optional mit einer definierten Anzahl von CPU-Kernen, die für die
+Neuindizierung verwendet werden sollen (Beispiel `[8]`):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
-This should start rebuilding the indexes and output its progress:
+Dies sollte den Wiederaufbau der Indizes starten und den Fortschritt
+ausgeben:
 
 ```sh
 Dropping indexes... done.
@@ -189,20 +193,23 @@ Reloading data...
 
 [...]
 ```
-Depending on the system performance and amount of data, this can take a
-while to complete. Please let this task finish completely and wait until it
-drops you back to the console.
+Je nach Systemleistung und Datenmenge kann dies eine Weile dauern. Bitte
+warten Sie bis diese Aufgabe vollständig abgeschlossen ist und Sie wieder in
+die Konsole sind.
 
-If this fails or throws an error, there might be something else wrong with
-your installation. Make sure you followed the complete Elasticsearch set up
-and integration procedure according to our [installation
-guide](/en/tutorials/install-elasticsearch).
+Wenn dieser Vorgang fehlschlägt oder einen Fehler ausgibt, ist
+möglicherweise etwas anderes mit Ihrer Installation nicht in
+Ordnung. Vergewissern Sie sich, dass Sie die vollständige Einrichtung und
+Integration von Elasticsearch gemäß unserer
+[Installationsanleitung](/de/tutorials/install-elasticsearch) durchgeführt
+haben.
 
 ::: tip
-In many situations where you're not successful with above steps, you
-may want to check Elasticsearch's log file:
+Falls Sie mit den obigen Schritten keinen Erfolg haben,
+sollten Sie die Elasticsearch-Protokolldatei überprüfen:
 `/var/log/elasticsearch/elasticsearch.log`.
 :::
 
-After completing these steps, you should have verified your Elasticsearch
-installation is running and rebuilt the indexes.
+Nachdem Sie diese Schritte durchgeführt haben, sollten Sie sicherstellen,
+dass Ihre Elasticsearch-Installation läuft und die Indizes neu erstellt
+wurden.

@@ -1,52 +1,56 @@
 ---
 order: 12
-title: 'Migrate Zammad to New Host'
+title: 'Zammad auf einen neuen Host migrieren'
 ---
 
-# Migrate Zammad to New Host
+# Zammad auf einen neuen Host migrieren
 
-This is just a description of basic steps to perform a migration to a new
-host. Your environment may be different so you should consider this as a
-reference point only. If anything goes wrong, please consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
-or consider [paid support
-options](https://zammad.com/en/services/professional-services).
+Dies ist nur eine Beschreibung der grundlegenden Schritte zur Durchführung
+einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher
+sollten Sie dies nur als Anhaltspunkt betrachten. Wenn etwas schief geht,
+wenden Sie sich bitte an die [Zammad Community]
+(https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
+oder ziehen Sie [bezahlte Support-Optionen]
+(https://zammad.com/de/services/professional-services) in Betracht.
 
-The steps described on this page are an addition to the [backup and restore
-guide](/en/tutorials/backup-restore). They're not meant to stand alone -
-we'll link and note this in the relevant parts.
+Die auf dieser Seite beschriebenen Schritte sind eine Ergänzung zur
+[Anleitung zur Sicherung und
+Wiederherstellung](/de/tutorials/backup-restore). Sie sind nicht dazu
+gedacht, für sich allein zu stehen - wir verlinken und vermerken dies an den
+entsprechenden Stellen.
 
 ::: tip
-Migrating from Zammad SaaS? Skip to
-[Step 7](#step-7-transfer-your-backup-files). For restoration, you've
-received an attachment dump!
+Migration von Zammad SaaS? Springen Sie zu
+[Schritt 7](#schritt-7-transfer-der-backup-dateien). Zur Wiederherstellung haben Sie
+einen Anhang-Dump erhalten!
 :::
 
-## Step 1: Note Down Your Environmental Adjustments
+## Schritt 1: Notieren Sie Ihre Umgebungseinstellungen
 
-If you have set any environment variables or similar, make sure to backup
-them.
+Falls Sie Umgebungsvariablen oder ähnliches gesetzt haben, sollten Sie diese
+nun sichern.
 
-## Step 2: Install Zammad on the Destination Host
+## Schritt 2: Installieren Sie Zammad auf dem Zielhost
 
-For the easiest restoration path possible, please install the same version
-like your origin instance. You could also consider updating the old instance
-before migrating. The following guide assumes that you have the same version
-of Zammad on your old and new host.
+Um die Wiederherstellung so einfach wie möglich zu gestalten, installieren
+Sie bitte die gleiche Version wie Ihre Ursprungsinstanz. Sie können
+ggf. erwägen, die alte Instanz vor der Migration zu aktualisieren. Die
+folgende Anleitung geht davon aus, dass Sie die gleiche Version von Zammad
+auf Ihrem alten und neuen Host haben.
 
-## Step 3: Activate Maintenance Mode
+## Schritt 3: Aktivieren des Wartungsmodus
 
-This ends all agent and customer sessions. Activate it in Zammad's admin
-interface under *System > Maintenance*.
+Dadurch werden alle Sitzungen von Agenten und Kunden beendet. Aktivieren Sie es in Zammads Admin
+Schnittstelle unter *System > Wartung*.
 
-## Step 4: Disable Your Communication Channels
+## Schritt 4: Deaktivieren Sie Ihre Kommunikationskanäle
 
-The restore script starts Zammad automatically, this may help to avoid data
-loss and inconsistencies.
+Das Wiederherstellungsskript startet Zammad automatisch. Das Deaktivieren
+trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden.
 
-## Step 5: Stop and Disable Zammad
+## Schritt 5: Zammad beenden und deaktivieren
 
-Make sure that no data will be changed *before* backing up.
+Stellen Sie sicher, dass keine Daten *vor* der Sicherung geändert werden.
 
 ```sh
 systemctl disable zammad
@@ -55,61 +59,67 @@ systemctl disable zammad
 systemctl stop zammad
 ```
 
-## Step 6: Backup
+## Schritt 6: Sicherung
 
-Follow the [backup guide](/en/tutorials/backup-restore#) to create your
-backup.
+Folgen Sie der [Backup Anleitung](/de/tutorials/backup-restore#), um Ihre
+Sicherung zu erstellen.
 
-Remember if you've created a full filesystem dump or only backed up your
-data. This will be important for the restoration.
+Merken Sie sich, ob Sie ein vollständigen Dateisystem-Dump erstellt oder nur
+Ihre Daten gesichert haben. Dies ist für die Wiederherstellung wichtig.
 
-If you want to go the easiest way, consider only dumping your data.
+Wenn Sie den einfachsten Weg gehen wollen, erwägen Sie nur Ihre Daten zu
+sichern.
 
-## Step 7: Transfer Your Backup Files
+## Schritt 7: Transfer der Backup Dateien
 
-Save your backup files in a directory and provide the path to the `config`
-file. Under [backup
-configuration](/en/tutorials/backup-restore#backup-configuration) you can
-find how to adjust the config file to your needs.
+Speichern Sie Ihre Sicherungsdateien in einem Verzeichnis und geben Sie den
+Pfad in der Datei `config` an. Unter
+[Backup-Konfiguration](/de/tutorials/backup-restore#backup-konfiguration)
+erfahren Sie, wie Sie die Konfigurationsdatei an Ihre Bedürfnisse anpassen
+können.
 
-## Step 8: Restore Your Backup
+## Schritt 8: Wiederherstellung der Sicherung
 
-Follow the [restoration guide](/en/tutorials/backup-restore#restore-backups)
-up to and including "Run the Restore" to restore the backup on the new host.
+Folgen Sie der
+[Wiederherstellungsanleitung](/de/tutorials/backup-restore#backup-wiederherstellen)
+bis einschließlich "Backup wiederherstellen", um die Sicherung auf dem neuen
+Host wiederherzustellen.
 
-Make sure to stop Zammad after the restoration has finished.
+Stellen Sie sicher, dass Sie Zammad nach Abschluss der Wiederherstellung
+beenden.
 
-## Step 9: Run Required Maintenance Tasks After Restoring
+## Schritt 9: Erforderliche Wartungsaufgaben nach der Wiederherstellung ausführen
 
-After successful restoration, please continue below depending if you've only
-backed up your data or have a full filesystem dump.
+Nach erfolgreicher Wiederherstellung fahren Sie bitte unten fort, abhängig
+davon, ob Sie nur Ihre Daten gesichert haben oder eine vollständige
+Dateisystem-Sicherung haben.
 
-### Data Dump
+### Daten-Sicherung
 
-#### Step 9.1: Clear the cache
+#### Schritt 9.1: Löschen Sie den Cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-### Full Filesystem Dump
+### Vollständige Dateisystem-Sicherung
 
 ::: info
-This step is only needed, if one of the following points is met:
+Dieser Schritt ist nur erforderlich, wenn einer der folgenden Punkte erfüllt ist:
 
-- The source and destination Zammad versions are not the same
-- The Zammad installation is not a source code installation
-- The Zammad backup is not an export from our hosted setup
+- Die Quell- und Zielversion von Zammad sind nicht identisch
+- Die Zammad-Installation ist keine Quellcode-Installation
+- Das Zammad-Backup ist kein Export von unserer gehosteten Installation
 
-Full dumps for source code installations are not covered, however,
-basically the same below applies to you: You have to ensure that the
-environments and application files are overwritten with the new /
-correct version.
+Vollständige Sicherungen für Quellcode-Installationen sind jedoch nicht abgedeckt,
+Grundsätzlich gilt für Sie das Gleiche wie unten: Sie müssen sicherstellen, dass die
+Umgebungen und Anwendungsdateien mit der neuen / richtigen
+Version überschrieben werden.
 
-Zammad files are distribution and version specific!
+Zammad-Dateien sind distributions- und versionsspezifisch!
 :::
 
-#### Step 9.1: Uninstall and Reinstall Zammad Without Resolving Dependencies
+#### Schritt 9.1: Deinstallation und Neuinstallation von Zammad ohne Auflösen der Abhängigkeiten
 
 ::: tabs
 

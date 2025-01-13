@@ -1,9 +1,9 @@
 ---
 order: 1
-title: 'Install Elasticsearch 7'
+title: 'Elasticsearch 7 installieren'
 ---
 
-# Install Elasticsearch 7
+# Elasticsearch 7 installieren
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
@@ -19,18 +19,19 @@ Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/i
 beachten.  Verwenden Sie das Dropdown-Menü in der oberen linken Ecke, um die
 Version auszuwählen, die Sie installieren möchten.
 
-However, if you want go with Elasticsearch 7 (which is slightly easier to
-install), you can find the consolidated installation steps below. Be aware
-that the maintenance of version 7 might be stopped earlier than for version
-8, which also comes with some additional security features.
+Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu
+installieren ist), finden Sie unten die konsolidierten
+Installationsschritte. Beachten Sie, dass die Wartung von Version 7
+möglicherweise früher eingestellt wird als bei Version 8, die außerdem
+einige zusätzliche Sicherheitsfunktionen enthält.
 
 :::info
-If you are installing Elasticsearch 8 and want to follow our
-[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure
-to copy/save the password which is shown while installing Elasticsearch.
+Wenn Sie Elasticsearch 8 installieren und unserer
+[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher
+dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird, kopieren/speichern.
 :::
 
-## Install Elasticsearch 7
+## Elasticsearch 7 installieren
 
 :::tabs
 
@@ -115,12 +116,12 @@ yum install -y elasticsearch
 
 :::
 
-Install the ingest-attachment plugin:
+Installieren Sie das Plugin "ingest-attachment":
 : ```sh
-  /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
+   /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
   ```
 
-Increase Virtual Memory Map Limit:
+Erhöhen Sie das Virtual Memory Limit:
 : ```sh
   sysctl -w vm.max_map_count=262144
   ```
@@ -149,12 +150,12 @@ Adjust ``/etc/elasticsearch/elasticsearch.yml``:
   indices.query.bool.max_clause_count: 2000
   ```
 
-Enable it by default and start it:
+Aktivieren Sie es standardmäßig und starten Sie es:
 : ```sh
   systemctl enable elasticsearch --now
   ```
 
 ## Nächste Schritte
 
- Go on with
- [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).
+ Fahren Sie fort indem Sie
+ [Elasticsearch mit Zammad verbinden](/de/tutorials/connect-config-elasticsearch).

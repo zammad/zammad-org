@@ -5,14 +5,15 @@ title: 'Firewall & SELinux'
 
 # Firewall & SELinux
 
-This is just a collection of snippets which might be useful for you. Feel
-free to skip parts and/or adapt it to your needs.
+Dies ist nur eine Sammlung von Beispielen, die für Sie nützlich sein
+könnten. Es steht Ihnen frei, Teile auszulassen und/oder sie an Ihre
+Bedürfnisse anzupassen.
 
 ## SELinux
 
 ::: info
-The following commands only work on Ubuntu, Debian and CentOS. If you use a
-different distribution, please have a look at their documentation.
+Die folgenden Befehle funktionieren nur unter Ubuntu, Debian und CentOS. Wenn Sie eine
+andere Distribution verwenden, werfen Sie bitte einen Blick in deren Dokumentation.
 :::
 
 ```sh
@@ -33,13 +34,14 @@ sudo chmod -R a+r /opt/zammad/public/
 
 ## Firewall
 
-Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you
-need. Below you can find a few examples for different distributions. If you
-are using a different distribution, please have a look at their
-documentation.
+Stellen Sie sicher, dass Sie neben den Ports, die Sie benötigen, auch die
+Ports `80` und `443` (TCP & UDP) öffnen. Unten finden Sie einige Beispiele
+für verschiedene Distributionen. Wenn Sie eine andere Distribution
+verwenden, werfen Sie bitte einen Blick in deren Dokumentation.
 
-Please note that the examples below only cover the distribution’s default
-firewall. It may not cover your case.
+Bitte beachten Sie, dass die folgenden Beispiele nur die Standard-Firewall
+der Distributionen abdecken. Sie passen möglicherweise nicht zu Ihrem
+Szenario ab.
 
 ::::tabs
 
@@ -57,13 +59,13 @@ sudo ufw reload
 ===Debian
 
 ::: info
-We’re covering `nftables` in this part - `iptables` is discouraged
-starting from Debian 10 (Buster). Our example uses the `input` chain, yours
-may be a different one!
+Wir behandeln `nftables` in diesem Teil - von `iptables` wird
+seit Debian 10 (Buster) abgeraten. Unser Beispiel verwendet die `input`-chain, Ihre
+kann eine andere sein!
 :::
 
-Add the following lines to `/etc/nftables.conf` or your specific rule file.
-Ensure to add these lines to your input-chain.
+Fügen Sie folgende Zeilen zu `/etc/nftables.conf` oder zu ihrer Regel-Datei hinzu.
+Stellen Sie sicher, dass Sie diese Zeilen zu Ihrer input-chain Datei hinzufügen.
 
 ```sh
 sudo tcp dport { http, https } accept
@@ -71,8 +73,8 @@ sudo tcp dport { http, https } accept
 ```sh
 sudo udp dport { http, https } accept
 ```
-The result can look like the following. Keep in mind that your environment
-could require different / more rules.
+Das Ergebnis kann wie folgt aussehen. Beachten Sie, dass Ihre Umgebung
+andere/zusätzliche Regeln benötigen kann.
 
 ```sh
 table inet filter {
@@ -93,7 +95,7 @@ table inet filter {
    }
 }
 ```
-To load the rules, run:
+Laden Sie die Regeln:
 ```sh
 sudo systemctl reload nftables
 ```
