@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-08 12:01+0000\n"
+"POT-Creation-Date: 2025-01-14 16:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,18 +204,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -11626,23 +11614,328 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rest-api/intro.md:136
 #, markdown-text, no-wrap
+msgid "Search via API"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:138
+#, markdown-text, no-wrap
+msgid "Endpoint Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:141
+#, markdown-text
+msgid "Some endpoints support a search query. These are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, markdown-text
+msgid "`Groups <group>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, markdown-text
+msgid "`Organizations <organization>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, markdown-text
+msgid "`Roles <role>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, markdown-text
+msgid "`Tickets <ticket>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, markdown-text
+msgid "`Users <user>`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:150
+#, markdown-text
+msgid ""
+"The following endpoints support a search query as well, but they are not "
+"explicitly covered in this documentation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Chat Sessions"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Knowledgebase"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Macros"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Overview"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Templates"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, markdown-text
+msgid "Text module"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:158
+#, markdown-text, no-wrap
+msgid "Search Example"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:161
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:162
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-basic-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:166
+#, markdown-text, no-wrap
+msgid "Expand Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:171
+#, markdown-text
+msgid ""
+"If you want to have additional related information, you can use the `expand` "
+"parameter. Using it resolves the IDs and outputs values/names in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:173
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:174
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-expand-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:178
+#, markdown-text, no-wrap
+msgid "Full Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:183
+#, markdown-text
+msgid ""
+"You can even extend the response by using the `full` parameter. Be aware "
+"that this response can be huge. It outputs all assets including related "
+"attributes and a `total_count` of search results as well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:185
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:186
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-full-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:191
+#, markdown-text, no-wrap
+msgid "Only Total Count Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:195
+#, markdown-text
+msgid ""
+"Using this `only_total_count` parameter will output only the amount of "
+"search results."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:198
+#, markdown-text
+msgid ""
+"`GET`-Request sent: "
+"`/api/v1/tickets/search?query=welcome&only_total_count=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:199
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-total-count.json\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:203
+#, markdown-text, no-wrap
+msgid "Global Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:211
+#, markdown-text
+msgid ""
+"If you need to search not only in a specific object type, you can do so by "
+"using the global search without specifying an object. The response may "
+"include users, tickets, organizations, knowledgebase articles and answers "
+"and chats, depending on your system and content. This global search behaves "
+"like the search in Zammad's UI in the left task bar. The available "
+"parameters are different to the ones for the endpoint search."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:213
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/search?query=welcome`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:214
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-global-search.json\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:218
+#, markdown-text, no-wrap
+msgid "Condition Based Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:224
+#, markdown-text
+msgid ""
+"You can even use conditions like for triggers and schedulers to search via "
+"API. If you don't want to build such conditions manually, you can find a "
+"hint below how to quickly build a condition structure via UI and fetch it "
+"for you API request."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:226
+#, markdown-text
+msgid "So, how do I build such a condition based request?"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+#, markdown-text
+msgid ""
+"In Zammad, go to the admin interface and create a condition, e.g. by "
+"creating a new overview or trigger. It can be inactive so you won't have any "
+"unwanted actions or changes."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+#, markdown-text
+msgid ""
+"Go to the `Rails console </admin/console>`, either by using `rails c` / "
+"`zammad run rails c` or adding the prefix `rails r` / `zammad run rails r` "
+"in front of the commands below, depending on your setup."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+#, markdown-text
+msgid ""
+"Search for the created condition, adjust the following examples to your "
+"needs:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rest-api/intro.md:237
+#, no-wrap
+msgid ""
+"puts Overview.find_by(name: 'My test "
+"overview').attributes.slice('condition').to_json\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rest-api/intro.md:241
+#, no-wrap
+msgid ""
+"puts Trigger.find_by(name: 'My new test "
+"trigger').attributes.slice('condition').to_json\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:246
+#, markdown-text
+msgid "This leads to an output like the following:"
+msgstr ""
+
+#. type: Fenced div block (details Show output)
+#: src/en/reference/rest-api/intro.md:247
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:254
+#, markdown-text
+msgid ""
+"Use this as payload in your `POST`-Request in an endpoint search. The "
+"response includes the same objects as the trigger or overview you created."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/intro.md:255
+#, markdown-text, no-wrap
 msgid "Sorting Search Results"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:139
+#: src/en/reference/rest-api/intro.md:258
 #, markdown-text
 msgid "Zammad allows you to sort your search results by field if needed."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:140
+#: src/en/reference/rest-api/intro.md:259
 #, markdown-text, no-wrap
 msgid "`sort_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:143
+#: src/en/reference/rest-api/intro.md:262
 #, markdown-text
 msgid ""
 "Append `?sort_by={row name}` to your query to sort by a specific row that "
@@ -11650,13 +11943,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:144
+#: src/en/reference/rest-api/intro.md:263
 #, markdown-text, no-wrap
 msgid "`order_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:147
+#: src/en/reference/rest-api/intro.md:266
 #, markdown-text
 msgid ""
 "Append `?order_by={direction}` to your query to switch in between ascending "
@@ -11664,13 +11957,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:149
+#: src/en/reference/rest-api/intro.md:268
 #, markdown-text
 msgid "Directions are: `asc` and `desc`."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/intro.md:150
+#: src/en/reference/rest-api/intro.md:269
 #, no-wrap
 msgid ""
 "Usually you'll want to combine both parameters in your searches -\n"
@@ -11678,13 +11971,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:155
+#: src/en/reference/rest-api/intro.md:274
 #, markdown-text, no-wrap
 msgid "Actions On Behalf of Other Users"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:159
+#: src/en/reference/rest-api/intro.md:278
 #, markdown-text, no-wrap
 msgid ""
 "**Requirement:** the user used for running the query on behalf requires\n"
@@ -11692,7 +11985,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:162
+#: src/en/reference/rest-api/intro.md:281
 #, markdown-text
 msgid ""
 "Running API queries on behalf of other users allows you to e.g. create "
@@ -11700,7 +11993,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:165
+#: src/en/reference/rest-api/intro.md:284
 #, markdown-text
 msgid ""
 "To do so, add a new HTTP header named `From` to your request. The value of "
@@ -11708,37 +12001,37 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 #, markdown-text
 msgid "user ID"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 #, markdown-text
 msgid "user login"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 #, markdown-text
 msgid "user email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:171
+#: src/en/reference/rest-api/intro.md:290
 #, markdown-text
 msgid "`From` is available for all endpoints."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:172
+#: src/en/reference/rest-api/intro.md:291
 #, markdown-text, no-wrap
 msgid "Encoding"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:177
+#: src/en/reference/rest-api/intro.md:296
 #, markdown-text
 msgid ""
 "The API expects UTF-8 encoding. Keep in mind that especially when using URLs "
@@ -11747,16 +12040,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:180
+#: src/en/reference/rest-api/intro.md:299
 #, markdown-text
 msgid ""
 "If you want to learn more about URL encoding, [this Wikipedia "
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/rest-api/intro.md:181
-#, markdown-text
+#. type: Link reference
+#: src/en/reference/rest-api/intro.md:300
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -14015,6 +14308,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -16482,8 +16787,7 @@ msgid ""
 "=== Via Browser\n"
 "\n"
 "After installing Zammad and\n"
-"[configuring your webserver](/en/tutorials/webserver-config), navigate to "
-"your\n"
+"[configuring your webserver](./webserver-config), navigate to your\n"
 "Zammads FQDN in your browser and follow the migration wizard. You can find\n"
 "it in the log in screen by clicking the \"Or migrate from another system\"\n"
 "link at the bottom.\n"
@@ -17676,94 +17980,98 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:232
-#, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:230
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
 msgstr ""
 
 #. type: Plain text
+#: src/en/tutorials/reporting-grafana.md:232
 #: src/en/tutorials/reporting-grafana.md:235
+#: src/en/tutorials/reporting-grafana.md:249
+#: src/en/tutorials/reporting-grafana.md:255
+#: src/en/tutorials/reporting-grafana.md:258
+#: src/en/tutorials/reporting-grafana.md:261
+#: src/en/tutorials/reporting-grafana.md:264
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+msgid "    means we can only display the *last* value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:233
+#, no-wrap
+msgid "[^2]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:236
+#, no-wrap
+msgid "[^3]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
+#: src/en/tutorials/reporting-grafana.md:252
 #, markdown-text, no-wrap
-msgid ""
-"[^3]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:239
+#, no-wrap
+msgid "[^4]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:242
-#, markdown-text, no-wrap
-msgid ""
-"[^4]: Specific reference IDs are not the same on every instance and thus\n"
-"    the panel may not work or show incorrect data. Check the panels\n"
-"    description on how to find our the relations on your system.\n"
-msgstr ""
-
-#. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:246
 #, markdown-text, no-wrap
 msgid ""
-"[^5]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:249
-#, markdown-text, no-wrap
-msgid ""
-"[^6]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:243
+#, no-wrap
+msgid "[^5]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:252
-#, markdown-text, no-wrap
-msgid ""
-"[^7]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:247
+#, no-wrap
+msgid "[^6]: Some values are not available as time series information. This"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:255
-#, markdown-text, no-wrap
-msgid ""
-"[^8]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:250
+#, no-wrap
+msgid "[^7]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:258
-#, markdown-text, no-wrap
-msgid ""
-"[^9]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:253
+#, no-wrap
+msgid "[^8]: Some values are not available as time series information. This"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:261
-#, markdown-text, no-wrap
-msgid ""
-"[^10]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:256
+#, no-wrap
+msgid "[^9]: Some values are not available as time series information. This"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:264
-#, markdown-text, no-wrap
-msgid ""
-"[^11]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:259
+#, no-wrap
+msgid "[^10]: Some values are not available as time series information. This"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:262
+#, no-wrap
+msgid "[^11]: Some values are not available as time series information. This"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

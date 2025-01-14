@@ -90,7 +90,7 @@ over the browser version.
 === Via Browser
 
 After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
+[configuring your webserver](./webserver-config), navigate to your
 Zammads FQDN in your browser and follow the migration wizard. You can find
 it in the log in screen by clicking the "Or migrate from another system"
 link at the bottom.

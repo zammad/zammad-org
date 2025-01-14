@@ -143,10 +143,10 @@ zypper install zammad
 :::
 
 ::: tip
-You're unsure if above is really required and a mere reinstall would be
-enough? If you run a dedicated install command on for Zammad and receive
-the following, you absolutely have to run above to fix your
-installation.
+Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich erforderlich sind oder eine einfache Neuinstallation
+ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und
+die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl ausführen, um Ihre
+Installation zu reparieren.
 
 ``` sh
 root@zammad:/# apt-get update && apt install zammad
@@ -159,45 +159,46 @@ root@zammad:/# apt-get update && apt install zammad
 :::
 
 
-#### Step 9.2: Clear the Cache
+#### Schritt 9.2: Löschen des Cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-#### Step 9.3: Ensure Zammad is Running
+#### Schritt 9.3: Sicherstellen, dass Zammad ausgeführt wird
 
 ``` sh
 systemctl status zammad
 ```
 
-If Zammad is not running, run:
+Wenn Zammad nicht läuft, führen Sie aus:
 ```sh
 systemctl start zammad
 ```
 :::tip
-Migrated from Zammad SaaS or switching provider?
+Von Zammad SaaS migriert oder den Anbieter gewechselt?
 
-Please make sure that your email notification channel and
-FQDN configuration is correct.
+Bitte stellen Sie sicher, dass Ihr E-Mail-Benachrichtigungskanal und Ihre
+FQDN-Konfiguration korrekt sind.
 :::
 
-## Step 10: Apply Missing Environmental Settings
+## Schritt 10: Fehlende Umgebungseinstellungen übernehmen
 
-If you've set any environmental settings please re-apply your settings now.
-You backed them up in [Step
-1](#step-1-note-down-your-environmental-adjustments).
+Wenn Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie
+diese jetzt wieder an.  Sie haben sie in [Schritt
+1](#step-1-note-down-your-environmental-adjustments) gesichert.
 
-If not already done, please [install
-Elasticsearch](/en/tutorials/install-elasticsearch) now and perform the
-steps to [connect to and configure
-Elasticsearch](/en/tutorials/connect-config-elasticsearch) after
-installation.
+Falls noch nicht geschehen, [installieren Sie
+Elasticsearch](/de/tutorials/install-elasticsearch) und führen Sie nach der
+Installation die Schritte für [verbinden und konfigurieren von
+Elasticsearch](/de/tutorials/connect-config-elasticsearch) aus.
 
-## Step 11: Re-enable Channels and Deactivate Maintenance Mode
+## Schritt 11: Kanäle wieder aktivieren und den Wartungsmodus deaktivieren
 
-Set the previous deactivated channels back to active if you're sure
-everything was successful. At this point Zammad will start to *change data*!
+Setzen Sie die zuvor deaktivierten Kanäle wieder auf aktiv, wenn Sie sicher
+sind, dass alles erfolgreich war. An diesem Punkt beginnt Zammad damit
+*Daten zu ändern*!
 
-After verifying the functionality of your channels, allow your agents and
-customers to log in again by disabling the maintenance mode.
+Nachdem Sie die Funktionalität Ihrer Kanäle überprüft haben, erlauben Sie
+Ihren Agenten und Kunden, sich wieder anzumelden, indem Sie den
+Wartungsmodus deaktivieren.

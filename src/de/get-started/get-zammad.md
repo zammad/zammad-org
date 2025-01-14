@@ -15,10 +15,10 @@ Informationen und Hilfe finden können.
 ## Zammad testen
 
 Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu
-testen, ist die Verwendung einer [kostenlosen Testversion]
-(https://zammad.com/de/getting-started). Sie können damit herumspielen und
-dann zu einer offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten
-behalten oder mit einem leeren System beginnen können.
+testen, ist die Verwendung einer [kostenlosen
+Testversion](https://zammad.com/de/getting-started). Sie können damit
+herumspielen und dann zu einer offiziellen Instanz wechseln, wobei Sie
+entweder Ihre Daten behalten oder mit einem leeren System beginnen können.
 
 ## Nutzen Sie Zammads Hosting-Service
 

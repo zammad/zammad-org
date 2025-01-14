@@ -1,0 +1,1 @@
+{"condition":{"ticket.state_id":{"operator":"is","value":["2"]},"ticket.title":{"operator":"contains","value":"Test"}}}
