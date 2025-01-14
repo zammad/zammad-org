@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-01-08 12:01+0000\n"
-"PO-Revision-Date: 2025-01-11 15:00+0000\n"
+"PO-Revision-Date: 2025-01-14 13:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1728,10 +1728,10 @@ msgid ""
 "your data or start with an empty system."
 msgstr ""
 "Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu "
-"testen, ist die Verwendung einer [kostenlosen Testversion] (https://zammad."
-"com/de/getting-started). Sie können damit herumspielen und dann zu einer "
-"offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten behalten oder "
-"mit einem leeren System beginnen können."
+"testen, ist die Verwendung einer [kostenlosen Testversion](https://"
+"zammad.com/de/getting-started). Sie können damit herumspielen und dann zu "
+"einer offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten behalten "
+"oder mit einem leeren System beginnen können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:22
@@ -19573,31 +19573,44 @@ msgid ""
 "  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.\n"
 "```\n"
 msgstr ""
+"Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich "
+"erforderlich sind oder eine einfache Neuinstallation\n"
+"ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und\n"
+"die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl "
+"ausführen, um Ihre\n"
+"Installation zu reparieren.\n"
+"\n"
+"``` sh\n"
+"root@zammad:/# apt-get update && apt install zammad\n"
+"  Reading package lists... Done\n"
+"  Building dependency tree\n"
+"  Reading state information... Done\n"
+"  zammad is already the newest version (x.x.x-xxxxxx.xxxxxx.xxx).\n"
+"  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.\n"
+"```\n"
 
 #. type: Title ####
 #: src/en/tutorials/migrate-host.md:152
-#, fuzzy, no-wrap
-#| msgid "Step 3: Start the Stack"
+#, no-wrap
 msgid "Step 9.2: Clear the Cache"
-msgstr "Schritt 3: Starten des Stacks"
+msgstr "Schritt 9.2: Löschen des Cache"
 
 #. type: Title ####
 #: src/en/tutorials/migrate-host.md:158
 #, no-wrap
 msgid "Step 9.3: Ensure Zammad is Running"
-msgstr ""
+msgstr "Schritt 9.3: Sicherstellen, dass Zammad ausgeführt wird"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:160
-#, fuzzy, no-wrap
-#| msgid "systemctl start zammad\n"
+#, no-wrap
 msgid "systemctl status zammad\n"
-msgstr "systemctl start zammad\n"
+msgstr "systemctl status zammad\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:165
 msgid "If Zammad is not running, run:"
-msgstr ""
+msgstr "Wenn Zammad nicht läuft, führen Sie aus:"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/migrate-host.md:168
@@ -19608,12 +19621,16 @@ msgid ""
 "Please make sure that your email notification channel and\n"
 "FQDN configuration is correct.\n"
 msgstr ""
+"Von Zammad SaaS migriert oder den Anbieter gewechselt?\n"
+"\n"
+"Bitte stellen Sie sicher, dass Ihr E-Mail-Benachrichtigungskanal und Ihre\n"
+"FQDN-Konfiguration korrekt sind.\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:175
 #, no-wrap
 msgid "Step 10: Apply Missing Environmental Settings"
-msgstr ""
+msgstr "Schritt 10: Fehlende Umgebungseinstellungen übernehmen"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:179
@@ -19622,6 +19639,9 @@ msgid ""
 "You backed them up in [Step 1](#step-1-note-down-your-environmental-"
 "adjustments)."
 msgstr ""
+"Wenn Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie "
+"diese jetzt wieder an.  Sie haben sie in [Schritt 1](#step-1-note-down-your-"
+"environmental-adjustments) gesichert."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:183
@@ -19631,12 +19651,16 @@ msgid ""
 "Elasticsearch](/en/tutorials/connect-config-elasticsearch) after "
 "installation."
 msgstr ""
+"Falls noch nicht geschehen, [installieren Sie Elasticsearch](/de/tutorials/"
+"install-elasticsearch) und führen Sie nach der Installation die Schritte für "
+"[verbinden und konfigurieren von Elasticsearch](/de/tutorials/connect-config-"
+"elasticsearch) aus."
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:184
 #, no-wrap
 msgid "Step 11: Re-enable Channels and Deactivate Maintenance Mode"
-msgstr ""
+msgstr "Schritt 11: Kanäle wieder aktivieren und den Wartungsmodus deaktivieren"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:189
@@ -19644,6 +19668,9 @@ msgid ""
 "Set the previous deactivated channels back to active if you're sure "
 "everything was successful. At this point Zammad will start to *change data*!"
 msgstr ""
+"Setzen Sie die zuvor deaktivierten Kanäle wieder auf aktiv, wenn Sie sicher "
+"sind, dass alles erfolgreich war. An diesem Punkt beginnt Zammad damit *"
+"Daten zu ändern*!"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:191
@@ -19651,6 +19678,9 @@ msgid ""
 "After verifying the functionality of your channels, allow your agents and "
 "customers to log in again by disabling the maintenance mode."
 msgstr ""
+"Nachdem Sie die Funktionalität Ihrer Kanäle überprüft haben, erlauben Sie "
+"Ihren Agenten und Kunden, sich wieder anzumelden, indem Sie den "
+"Wartungsmodus deaktivieren."
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/migrate.md:1
@@ -19660,8 +19690,7 @@ msgstr "Zu Zammad migrieren"
 
 #. type: Title #
 #: src/en/tutorials/migrate.md:6
-#, fuzzy, no-wrap
-#| msgid "Migrate to Zammad"
+#, no-wrap
 msgid "Migrate To Zammad"
 msgstr "Zu Zammad migrieren"
 
@@ -19670,28 +19699,28 @@ msgstr "Zu Zammad migrieren"
 msgid ""
 "You can migrate the following data from another ticketing system to Zammad:"
 msgstr ""
+"Sie können die folgenden Daten von einem anderen Ticket-System zu Zammad "
+"migrieren:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:14
 msgid "Tickets and their Articles"
-msgstr ""
+msgstr "Tickets und ihre Artikel"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:14
 msgid "Groups / Queues"
-msgstr ""
+msgstr "Gruppen / Warteschlangen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:14
-#, fuzzy
-#| msgid "Translation"
 msgid "Organizations"
-msgstr "Übersetzung"
+msgstr "Organisationen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:14
 msgid "Agents and Customers (if applicable)"
-msgstr ""
+msgstr "Agenten und Kunden (falls zutreffend)"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:19
@@ -19702,6 +19731,12 @@ msgid ""
 "This is important because the getting started wizard is skipped by the\n"
 "migration.\n"
 msgstr ""
+"Nach der Migration zu Zammad sollten Sie zunächst Ihre FQDN-Einstellungen "
+"und den HTTP-Typ\n"
+"in der Verwaltungsoberfläche von Zammad unter *Einstellungen > System > "
+"Basis* anpassen.\n"
+"Dies ist wichtig, da der Einrichtungsassistent bei der Umstellung auf Zammad "
+"übersprungen wird.\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:23
@@ -19709,12 +19744,15 @@ msgid ""
 "After that, you may want to continue with the [First Steps](/en/tutorials/"
 "first-steps) to configure Zammad. This has to be done after migration."
 msgstr ""
+"Danach können Sie mit den [Ersten Schritten](/de/tutorials/first-steps) "
+"fortfahren, um Zammad zu konfigurieren. Dies muss nach der Migration "
+"durchgeführt werden."
 
 #. type: Title ##
 #: src/en/tutorials/migrate.md:24
 #, no-wrap
 msgid "General Limitations"
-msgstr ""
+msgstr "Allgemeine Einschränkungen"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:29
@@ -19723,16 +19761,19 @@ msgid ""
 "also be limitations, depending from which system you are coming. These are "
 "covered in the specific sections."
 msgstr ""
+"Es gibt einige allgemeine Einschränkungen, die Sie unten finden. Je nachdem, "
+"von welchem System Sie kommen, kann es auch spezifische Einschränkungen "
+"geben. Diese werden in den jeweiligen Abschnitten behandelt."
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:31
 msgid "General limitations for all migrations:"
-msgstr ""
+msgstr "Allgemeine Einschränkungen für alle Migrationen:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:38
 msgid "Migrations are only possible on new instances."
-msgstr ""
+msgstr "Migrationen sind nur auf neuen Instanzen möglich."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:38
@@ -19740,12 +19781,16 @@ msgid ""
 "Migrations are only possible from one source. Several migration sources on "
 "one instance are not supported."
 msgstr ""
+"Migrationen sind nur von einer Quelle aus möglich. Mehrere Migrationsquellen "
+"auf einer Instanz werden nicht unterstützt."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:38
 msgid ""
 "Zammad can't migrate object types it doesn't know, migrations will fail."
 msgstr ""
+"Zammad kann keine Objekttypen migrieren, die es nicht kennt, Migrationen "
+"werden fehlschlagen."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:38
@@ -19753,12 +19798,14 @@ msgid ""
 "Zammad migrates all or nothing. This means that you can't deselect specific "
 "information specific groups, tickets or users."
 msgstr ""
+"Zammad migriert alles oder nichts. Das bedeutet, dass Sie bestimmte "
+"Informationen aus Gruppen, Tickets oder Benutzer nicht abwählen können."
 
 #. type: Title ##
 #: src/en/tutorials/migrate.md:39
 #, no-wrap
 msgid "Specific Migration Guides"
-msgstr ""
+msgstr "Spezifische Migrationsanleitungen"
 
 #. type: Fenced div block (info Missing a migration source?)
 #: src/en/tutorials/migrate.md:41
@@ -19773,12 +19820,23 @@ msgid ""
 "Migrations are available for hosted setups too! Contact support for further\n"
 "information!\n"
 msgstr ""
+"\n"
+"Wenn Ihr System noch nicht aufgeführt ist, haben Sie zwei Möglichkeiten. Sie "
+"können entweder\n"
+"die leistungsstarke API von Zammad nutzen oder unserem\n"
+"[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact) "
+"schicken für eine kundenspezifische\n"
+"Entwicklung oder sogar für das Sponsoring eines Migrations-Features..\n"
+"\n"
+"Migrationen sind auch für von Zammad gehostete Installationen verfügbar! "
+"Kontaktieren Sie den Support für weitere\n"
+"Informationen!\n"
 
 #. type: Title ###
 #: src/en/tutorials/migrate.md:52
 #, no-wrap
 msgid "Freshdesk"
-msgstr ""
+msgstr "Freshdesk"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:58 src/en/tutorials/migrate.md:192
@@ -19786,6 +19844,8 @@ msgid ""
 "Please note Freshdesk specific limitations below. These are additional "
 "limitations to the general ones listed."
 msgstr ""
+"Bitte beachten Sie die folgenden Freshdesk-spezifischen Einschränkungen. "
+"Dies sind zusätzliche Einschränkungen zu den allgemein aufgeführten."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:69 src/en/tutorials/migrate.md:207
@@ -19794,6 +19854,9 @@ msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
 "a test import before to learn how long the migration will take."
 msgstr ""
+"Differenzielle Migrationen werden nicht unterstützt! Im Allgemeinen wird "
+"empfohlen, vorher einen Testimport durchzuführen, um zu erfahren, wie lange "
+"die Migration dauern wird."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:69
@@ -19801,6 +19864,8 @@ msgid ""
 "Important: Please note that migration speed highly depends on your Freshdesk "
 "plan (API rate limits apply)."
 msgstr ""
+"Wichtig: Bitte beachten Sie, dass die Migrationsgeschwindigkeit stark von "
+"Ihrem Freshdesk-Tarif abhängt (es gibt API-Beschränkungen)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:69
@@ -19808,6 +19873,8 @@ msgid ""
 "Due to API limitations, Zammad will not show the total number of objects to "
 "import, but instead correct them in steps of 100."
 msgstr ""
+"Aufgrund von API-Beschränkungen zeigt Zammad nicht die Gesamtzahl der zu "
+"importierenden Objekte an, sondern korrigiert sie in 100er-Schritten."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:69
@@ -19815,6 +19882,8 @@ msgid ""
 "Your Freshdesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
+"Ihr Freshdesk-Tarif muss API-Unterstützung bieten. Dies gilt möglicherweise "
+"nicht für alle verfügbaren Tarife."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:69 src/en/tutorials/migrate.md:207
@@ -19822,6 +19891,9 @@ msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on Zammad's login page."
 msgstr ""
+"Die Passwörter der Benutzer werden nicht migriert und der Benutzer muss den "
+"Link zum Zurücksetzen des Passworts auf der Anmeldeseite von Zammad "
+"verwenden."
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:76
@@ -19831,6 +19903,10 @@ msgid ""
 "your-api-key)  for the migration. The migrator will request your Freshdesk "
 "subdomain and API key."
 msgstr ""
+"Zammad erfordert API-Zugriff, weshalb Sie für die Migration einen "
+"[API-Schlüssel](https://support.freshdesk.com/support/solutions/articles/"
+"215517-how-to-find-your-api-key) erstellen müssen. Der Migrator wird Ihre "
+"Freshdesk-Subdomain und Ihren API-Schlüssel anfordern."
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/migrate.md:77 src/en/tutorials/migrate.md:507
@@ -19839,13 +19915,16 @@ msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
 "privileged users will end in a broken migration.\n"
 msgstr ""
+"Stellen Sie sicher, dass Sie den API-Schlüssel mit einem vollständigen "
+"Administratorkonto abrufen. Weniger\n"
+"privilegierte Benutzer führen zu einer fehlerhaften Migration.\n"
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:82 src/en/tutorials/migrate.md:219
 #: src/en/tutorials/migrate.md:411 src/en/tutorials/migrate.md:512
 #, no-wrap
 msgid "Import"
-msgstr ""
+msgstr "Import"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:87 src/en/tutorials/migrate.md:224
@@ -19855,6 +19934,9 @@ msgid ""
 "fairly big instance with a lot of data, you may want to consider using the "
 "console over the browser version."
 msgstr ""
+"Im Allgemeinen haben Sie zwei Möglichkeiten, wie Sie Daten migrieren können. "
+"Wenn Sie eine ziemlich große Instanz mit vielen Daten haben, sollten Sie die "
+"Konsole der Browser-Version vorziehen."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:88
@@ -19925,6 +20007,77 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Per Browser\n"
+"\n"
+"Nach der Installation von Zammad und der\n"
+"[Konfiguration des Webservers](en/tutorials/webserver-config) rufen Sie\n"
+"den FQDN in Ihrem Browser auf und folgen dem Migrations-Assistenten. Sie "
+"finden\n"
+"diesen im Login-Screen, indem Sie auf den Link "
+"\"Oder migrieren Sie von einem anderen System\"\n"
+"unten klicken.\n"
+"\n"
+"Abhängig von der Anzahl der Benutzer, Tickets und Ihres Freshdesk-Plans kann "
+"dies\n"
+"eine Weile dauern.\n"
+"\n"
+"Sehen Sie die Meldung \"*Interrupted by scheduler restart. Please restart "
+"manually\n"
+"or wait till next execution time.*\"?\n"
+"\n"
+"Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben "
+"haben, haben Sie\n"
+"bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten."
+"\n"
+"\n"
+"Falls Sie diese Meldung erscheint, nachdem die Migration bereits begonnen "
+"hat, sollten Sie\n"
+"es per Konsole versuchen und Ihre Installation zurücksetzen.\n"
+"\n"
+"=== Per Konsole\n"
+"\n"
+"Konsole öffnen:\n"
+"\n"
+"```sh\n"
+"zammad run rails c\n"
+"```\n"
+"Variablen angeben:\n"
+"\n"
+"```sh\n"
+"subdomain = '{freshdesk subdomain}.freshdesk.com'\n"
+"```\n"
+"```sh\n"
+"token = '{freshdesk token}'\n"
+"```\n"
+"Zammad-Einstellungen für Freshdesk-Import aktualisieren:\n"
+"```sh\n"
+"Setting.set('import_freshdesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_freshdesk_endpoint_key', token)\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_backend', 'freshdesk')\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Prüfen Sie die Einstellungen in einem Testlauf:\n"
+"```sh\n"
+"Sequencer.process('Import::Freshdesk::ConnectionTest')\n"
+"```\n"
+"\n"
+"Auführen der Migration:\n"
+"\n"
+"```sh\n"
+"job = ImportJob.create(name: 'Import::Freshdesk')\n"
+"```\n"
+"```sh\n"
+"AsyncImportJob.perform_later(job)\n"
+"```\n"
+"\n"
 
 #. type: Fenced div block (tabs|tip)
 #: src/en/tutorials/migrate.md:88 src/en/tutorials/migrate.md:518
@@ -19941,40 +20094,50 @@ msgid ""
 "which gives you an output of the current state of the job.\n"
 "\n"
 msgstr ""
+"\n"
+"Möchten Sie den Fortschritt der Migration verfolgen?\n"
+"\n"
+"Verwenden Sie\n"
+"\n"
+"```sh\n"
+"pp ImportJob.find_by(Name: 'Import::Freshdesk')\n"
+"```\n"
+"Damit erhalten Sie eine Ausgabe des aktuellen Status der Aufgabe.\n"
+"\n"
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:167 src/en/tutorials/migrate.md:309
 #: src/en/tutorials/migrate.md:468 src/en/tutorials/migrate.md:597
 #, no-wrap
 msgid "After Migration"
-msgstr ""
+msgstr "Nach der Migration"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:170 src/en/tutorials/migrate.md:312
 #: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:600
 msgid "Run the following commands:"
-msgstr ""
+msgstr "Führen Sie die folgenden Befehle aus:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate.md:171 src/en/tutorials/migrate.md:313
 #: src/en/tutorials/migrate.md:472 src/en/tutorials/migrate.md:601
 #, no-wrap
 msgid "Setting.set('import_mode', false)\n"
-msgstr ""
+msgstr "Setting.set('import_mode', false)\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate.md:174 src/en/tutorials/migrate.md:316
 #: src/en/tutorials/migrate.md:475 src/en/tutorials/migrate.md:604
 #, no-wrap
 msgid "Setting.set('system_init_done', true)\n"
-msgstr ""
+msgstr "Setting.set('system_init_done', true)\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate.md:177 src/en/tutorials/migrate.md:319
 #: src/en/tutorials/migrate.md:478 src/en/tutorials/migrate.md:607
 #, no-wrap
 msgid "Rails.cache.clear\n"
-msgstr ""
+msgstr "Rails.cache.clear\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:183 src/en/tutorials/migrate.md:613
@@ -19982,6 +20145,9 @@ msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
 "address and API token provided during the migration to login."
 msgstr ""
+"Melden Sie sich mit dem Benutzer an, dessen API-Token Sie genutzt haben. "
+"Melden Sie sich mit der E-Mail-Adresse und dem API-Token des Administrators "
+"an."
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:328
@@ -19990,17 +20156,20 @@ msgid ""
 "All other users will have to use the password reset function or login "
 "methods like LDAP or one click logins."
 msgstr ""
+"Alle anderen Benutzer müssen die Funktion zum Zurücksetzen des Passworts "
+"oder Anmeldemethoden wie LDAP oder One-Click-Logins verwenden."
 
 #. type: Title ###
 #: src/en/tutorials/migrate.md:187
 #, no-wrap
 msgid "Kayako"
-msgstr ""
+msgstr "Kayako"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:207
 msgid "Selfhosted installations (Kayako classic) are not supported."
 msgstr ""
+"Selbst gehostete Installationen (Kayako classic) werden nicht unterstützt."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:207
@@ -20008,23 +20177,23 @@ msgid ""
 "The following ticket field customizations are being ignored (affects “Scale” "
 "plan):"
 msgstr ""
+"Die folgenden Anpassungen der Ticket-Felder werden ignoriert (betrifft den "
+"\"Scale\"-Tarif):"
 
 #. type: Bullet: '    - '
 #: src/en/tutorials/migrate.md:207
-#, fuzzy
-#| msgid "Get Started"
 msgid "Custom ticket states"
-msgstr "Loslegen"
+msgstr "Benutzerdefinierte Ticket-Status"
 
 #. type: Bullet: '    - '
 #: src/en/tutorials/migrate.md:207
 msgid "Custom ticket priorities"
-msgstr ""
+msgstr "Benutzerdefinierte Ticket-Prioritäten"
 
 #. type: Bullet: '    - '
 #: src/en/tutorials/migrate.md:207
 msgid "Custom ticket types"
-msgstr ""
+msgstr "Benutzerdefinierte Ticket-Typen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:207
@@ -20032,6 +20201,8 @@ msgid ""
 "Important: Please note that migration speed highly depends on your Kayako "
 "plan (API rate limits apply)."
 msgstr ""
+"Wichtig: Bitte beachten Sie, dass die Migrationsgeschwindigkeit stark von "
+"Ihrem Kayako-Tarif abhängt (es gelten API-Beschränkungen)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:207
@@ -20039,6 +20210,8 @@ msgid ""
 "Your Kayako plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
+"Ihr Kayako-Tarif muss API-Unterstützung bieten. Dies gilt möglicherweise "
+"nicht für alle verfügbaren Tarife."
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:213
@@ -20046,6 +20219,8 @@ msgid ""
 "Zammad requires API access which is why the migrator will request your "
 "Kayako-URL, email address and password."
 msgstr ""
+"Zammad benötigt API-Zugang, weshalb der Migrator Ihre Kayako-URL, Ihre E"
+"-Mail-Adresse und Ihr Passwort abfragt."
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/migrate.md:214
@@ -20054,6 +20229,9 @@ msgid ""
 "Ensure to provide an user account with full administrative permissions. Less\n"
 "privileged users will end in a broken migration.\n"
 msgstr ""
+"Stellen Sie sicher, dass Sie ein Benutzerkonto mit vollen administrativen "
+"Rechten zur Verfügung stellen. Weniger\n"
+"privilegierte Benutzer führen zu einer fehlerhaften Migration.\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:225
@@ -20129,6 +20307,81 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Per Browser\n"
+"\n"
+"Nachdem Sie Zammad installiert und Ihren\n"
+"[Webserver konfiguriert haben](/de/tutorials/webserver-config), öffnen Sie\n"
+"den FQDN Ihres Zammads im Browser und folgen Sie dem Migrations-Assistenten."
+"\n"
+"Sie können diesen unten im Login Screen finden, indem Sie\n"
+"\"Oder migrieren Sie von einem anderen System\" anklicken.\n"
+"\n"
+"Abhängig von den vorhandenen Benutzern, Tickets und des Kayako-Tarifs kann "
+"dies eine Weile dauern.\n"
+"\n"
+"Erscheint die Meldunge \"*Interrupted by scheduler restart. Please restart "
+"manually\n"
+"or wait till next execution time.*\"?\n"
+"\n"
+"Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben "
+"haben, haben Sie\n"
+"bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten."
+"\n"
+"\n"
+"Falls Sie die Meldung erhalten haben, nachdem die Migration begonnen hat, "
+"sollten\n"
+"Sie die Migration per Konsole versuchen und Ihre Installation zurücksetzen.\n"
+"\n"
+"=== Per Console\n"
+"\n"
+"Konsole öffnen:\n"
+"\n"
+"```sh\n"
+"zammad run rails c\n"
+"```\n"
+"Variablen setzen:\n"
+"\n"
+"```sh\n"
+"subdomain = '{kayako subdomain}.kayako.com'\n"
+"```\n"
+"```sh\n"
+"email = '{kayako admin email address}'\n"
+"```\n"
+"```sh\n"
+"password = '{kayako admin password}'\n"
+"```\n"
+"Zammad-Einstellungen für Kayako-Import anpassen:\n"
+"```sh\n"
+"Setting.set('import_kayako_endpoint', \"https://#{subdomain}/api/v1\")\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_kayako_endpoint_username', email)\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_kayako_endpoint_password', password)\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_backend', 'kayako')\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Prüfen Sie Ihre Konfiguration mit einem Testlauf:\n"
+"```sh\n"
+"Sequencer.process('Import::Kayako::ConnectionTest')\n"
+"```\n"
+"\n"
+"Ausführen der Migration:\n"
+"\n"
+"```sh\n"
+"job = ImportJob.create(name: 'Import::Kayako')\n"
+"```\n"
+"```sh\n"
+"AsyncImportJob.perform_later(job)\n"
+"```\n"
+"\n"
 
 #. type: Fenced div block (tabs|tip)
 #: src/en/tutorials/migrate.md:225
@@ -20145,6 +20398,16 @@ msgid ""
 "which gives you an output of the current state of the job.\n"
 "\n"
 msgstr ""
+"\n"
+"Möchten Sie den Fortschritt der Migration verfolgen?\n"
+"\n"
+"Verwenden Sie\n"
+"\n"
+"```sh\n"
+"pp ImportJob.find_by(Name: 'Import::Kayako')\n"
+"```\n"
+"Damit erhalten Sie eine Ausgabe des aktuellen Status der Aufgabe.\n"
+"\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:325
@@ -20152,23 +20415,25 @@ msgid ""
 "Log in with the user whose login credentials you provided. Use the admins "
 "email address and password provided during the migration to login."
 msgstr ""
+"Melden Sie sich mit dem Benutzer an, dessen Zugangsdaten Sie angegeben "
+"haben. Verwenden Sie die E-Mail Adresse und das Passwort des Administrators, "
+"mit dem Sie die Migration durchgeführt haben."
 
 #. type: Title ###
 #: src/en/tutorials/migrate.md:329
-#, fuzzy, no-wrap
-#| msgid "From OTRS"
+#, no-wrap
 msgid "OTRS"
-msgstr "Von OTRS"
+msgstr "OTRS"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:334 src/en/tutorials/migrate.md:487
 msgid "Additional limitations to the general one:"
-msgstr ""
+msgstr "Zusätzliche Einschränkungen zu den allgemeinen:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:342
 msgid "Supported OTRS versions are: 3.1 - 6.x"
-msgstr ""
+msgstr "Unterstützte OTRS Versionen sind: 3.1 - 6.x"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:342
@@ -20176,6 +20441,8 @@ msgid ""
 "Password migration works for OTRS >= 3.3 only (on older instances a password "
 "reset within Zammad will be required)"
 msgstr ""
+"Die Passwort-Migration funktioniert nur für OTRS >= 3.3 (auf älteren "
+"Instanzen ist ein Passwort-Reset in Zammad erforderlich)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:342
@@ -20183,21 +20450,25 @@ msgid ""
 "If you plan to import a differential migration after the main one, do not "
 "change any data in Zammad!"
 msgstr ""
+"Wenn Sie vorhaben, einen differentiellen Import nach der Hauptmigration "
+"vorzunehmen, ändern Sie keine Daten in Zammad!"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:342
 msgid "Only customers of tickets are imported"
-msgstr ""
+msgstr "Nur Kunden von Tickets werden importiert"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:342
 msgid "Zammad expects your OTRS timestamps to be UTC and won't adjust them"
 msgstr ""
+"Zammad erwartet, dass Ihre OTRS-Zeitstempel UTC sind und wird sie nicht "
+"anpassen"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:346
 msgid "Install Znuny4OTRS-Repo:"
-msgstr ""
+msgstr "Installieren Sie Znuny4OTRS-Repo:"
 
 #. type: Fenced div block (tabs key:otrs)
 #: src/en/tutorials/migrate.md:347
@@ -20229,11 +20500,36 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== OTRS 6\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm\n"
+"```\n"
+"\n"
+"=== OTRS 5\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm\n"
+"```\n"
+"\n"
+"=== OTRS 4\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm\n"
+"```\n"
+"\n"
+"=== OTRS 3\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm\n"
+"```\n"
+"\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:376
 msgid "Install OTRS migration plugin:"
-msgstr ""
+msgstr "Installieren Sie das OTRS Migrations-Plugin:"
 
 #. type: Fenced div block (tabs key:otrs)
 #: src/en/tutorials/migrate.md:377
@@ -20265,6 +20561,35 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== OTRS 6\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7."
+"opm\n"
+"```\n"
+"\n"
+"=== OTRS 5\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4."
+"opm\n"
+"```\n"
+"\n"
+"=== OTRS 4\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-4.1.12.opm\n"
+"```\n"
+"\n"
+"=== OTRS 3\n"
+"\n"
+"```\n"
+"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-3.0.33.opm\n"
+"```\n"
+"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/migrate.md:405
@@ -20273,6 +20598,8 @@ msgid ""
 "In some cases restarting your webserver may help to solve internal server\n"
 "errors.\n"
 msgstr ""
+"In einigen Fällen kann ein Neustart des Webservers helfen, interne "
+"Serverfehler zu beheben.\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:413
@@ -20331,12 +20658,71 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Per Browser\n"
+"\n"
+"Nach der Installation von Zammad und der\n"
+"[Konfiguration Ihres Webservers](/de/tutorials/webserver-config), navigieren "
+"Sie zu\n"
+"Zammads FQDN in Ihrem Browser und folgen Sie dem Assistenten für die "
+"Migration. Sie finden\n"
+"ihn im Anmeldebildschirm, indem Sie auf den Link "
+"\"Oder von einem anderen System migrieren\"\n"
+"am unteren Rand klicken.\n"
+"\n"
+"Abhängig von der Größe Ihrer OTRS-Installation kann dies eine Weile dauern. "
+"In einem solchen\n"
+"sollten Sie die Migration per Konsole verwenden. Dies gilt auch,\n"
+" wenn Sie während der Migration Timeouts feststellen.\n"
+"\n"
+"\n"
+"=== Per Konsole\n"
+"\n"
+"Öffnen Sie die Konsole:\n"
+"\n"
+"```sh\n"
+"zammad run rails c\n"
+"```\n"
+"Variablen setzen (stellen Sie sicher, dass Sie *xxx* durch passende Werte "
+"ersetzen):\n"
+"\n"
+"```sh\n"
+"Setting.set('import_otrs_endpoint', 'https://xxx/otrs/"
+"public.pl?Action=ZammadMigrator')\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_otrs_endpoint_key', 'xxx')\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"\n"
+"Eine vollständige Migration durchführen:\n"
+"\n"
+"```sh\n"
+"Import::OTRS.start\n"
+"```\n"
+"\n"
+"Führen Sie eine differenzielle Migration durch (nur möglich nach Abschluss "
+"einer früheren vollständigen\n"
+"Migration):\n"
+"\n"
+"Alle Schritte ab \"Variablen setzen\" +\n"
+"\n"
+"```sh\n"
+"Setting.set('system_init_done', false)\n"
+"```\n"
+"\n"
+"```sh\n"
+"Import::OTRS.diff_worker\n"
+"```\n"
+"\n"
 
 #. type: Title ###
 #: src/en/tutorials/migrate.md:482
 #, no-wrap
 msgid "Zendesk"
-msgstr ""
+msgstr "Zendesk"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:498
@@ -20344,6 +20730,8 @@ msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
 "plan (API rate limits apply)."
 msgstr ""
+"Wichtig: Bitte beachten Sie, dass die Migrationsgeschwindigkeit stark von "
+"Ihrem Zendesk-Tarif abhängt (es gelten API-Beschränkungen)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:498
@@ -20351,6 +20739,8 @@ msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
+"Ihr Zendesk-Tarif muss API-Unterstützung bieten. Dies ist möglicherweise "
+"nicht in allen Tarifen der Fall."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:498
@@ -20358,6 +20748,8 @@ msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on the login page."
 msgstr ""
+"Die Passwörter der Benutzer werden nicht migriert und der Benutzer muss den "
+"Link zum Zurücksetzen des Passworts auf der Anmeldeseite verwenden."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:498
@@ -20365,6 +20757,8 @@ msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
 "before starting the migration."
 msgstr ""
+"Objekte mit kyrillischen Zeichen können nicht migriert werden. Stellen Sie "
+"sicher, dass Sie sie umbenennen, bevor Sie die Migration starten."
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:506
@@ -20374,6 +20768,10 @@ msgid ""
 "new-API-token)  for the migration. The migrator will request your Zendesk-"
 "URL, email address and API key."
 msgstr ""
+"Zammad erfordert einen API-Zugang, weshalb Sie für die Migration einen "
+"[API-Schlüssel] (https://support.zendesk.com/hc/en-us/articles/"
+"4408889192858-Generating-a-new-API-token) erstellen müssen. Die Migration "
+"wird Ihre Zendesk-URL, Ihre E-Mail-Adresse und Ihren API-Schlüssel abfragen."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:518
@@ -20443,13 +20841,78 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Per Browser\n"
+"\n"
+"Nach der Installation von Zammad und der\n"
+"[Konfiguration Ihres Webservers](/de/tutorials/webserver-config) rufen Sie\n"
+"Zammads FQDN in Ihrem Browser auf und folgen dem Assistenten für die "
+"Migration. Sie finden\n"
+"ihn im Anmeldebildschirm, indem Sie auf den Link "
+"\"Oder von einem anderen System migrieren\"\n"
+"am unteren Rand klicken.\n"
+"\n"
+"Je nach Anzahl der Benutzer, Tickets und des Zendesk-Tarifs kann dies eine\n"
+"eine Weile dauern.\n"
+"\n"
+"=== Per Konsole\n"
+"\n"
+"Öffnen Sie die Konsole:\n"
+"\n"
+"```sh\n"
+"zammad run rails c\n"
+"```\n"
+"Variablen setzen:\n"
+"\n"
+"```sh\n"
+"subdomain = '{zendesk url}'\n"
+"```\n"
+"```sh\n"
+"email = '{zendesk admin email-Adresse}'\n"
+"```\n"
+"````sh\n"
+"token = '{zendesk token}'\n"
+"\n"
+"```\n"
+"\n"
+"Zammad-Einstellungen aktualisieren:\n"
+"```sh\n"
+"Setting.set('import_zendesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
+"```\n"
+"```sh\n"
+"Setting.set('import_zendesk_endpoint_username', email)\n"
+"```\n"
+"````sh\n"
+"Setting.set('import_zendesk_endpoint_key', token)\n"
+"```\n"
+"````sh\n"
+"Setting.set('import_backend', 'zendesk')\n"
+"```\n"
+"````sh\n"
+"Setting.set('import_mode', true)\n"
+"```\n"
+"Überprüfen Sie Ihre Konfiguration in einem Testlauf:\n"
+"\n"
+"```sh\n"
+"Sequencer.process('Import::Zendesk::ConnectionTest')\n"
+"```\n"
+"\n"
+"Führen Sie die Migration aus:\n"
+"\n"
+"```sh\n"
+"Aufgabe = ImportJob.create(Name: 'Import::Zendesk')\n"
+"```\n"
+"```sh\n"
+"AsyncImportJob.perform_later(aufgabe)\n"
+"```\n"
+"\n"
 
 #. type: Title #
 #: src/en/tutorials/reporting-grafana.md:1
 #: src/en/tutorials/reporting-grafana.md:6
 #, no-wrap
 msgid "Reporting with Grafana"
-msgstr ""
+msgstr "Berichte mit Grafana"
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/reporting-grafana.md:8
@@ -20458,6 +20921,9 @@ msgid ""
 "This guide is about Grafana. If you want to use another tool, check if it\n"
 "supports Elasticsearch indexes. If yes, then you are good to go!\n"
 msgstr ""
+"Diese Anleitung bezieht sich auf Grafana. Wenn Sie ein anderes Tool "
+"verwenden möchten, prüfen Sie, ob es\n"
+"Elasticsearch-Indizes unterstützt. Wenn ja, dann sind Sie startklar!\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:16
@@ -20466,6 +20932,9 @@ msgid ""
 "to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index "
 "and visualize your Zammad data."
 msgstr ""
+"Grafana ist eine Analyse-/Visualisierungsanwendung eines Drittanbieters, die "
+"Sie mit Zammad (genauer: Elasticsearch) verbinden können. Sie kann auf den "
+"Elasticsearch-Index zugreifen und Ihre Zammad-Daten visualisieren."
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:21
@@ -20475,6 +20944,10 @@ msgid ""
 "es-indexed-attributes) of Elasticsearch and to read the [documentation of "
 "Grafana](https://grafana.com/docs/)."
 msgstr ""
+"Diese Anleitung bietet Ihnen einige Schritte für den Einstieg. Für einen "
+"tieferen Einblick sollten Sie einen Blick auf die [indizierten Attribute](/"
+"de/reference/es-indexed-attributes) von Elasticsearch werfen und die "
+"[Dokumentation von Grafana](https://grafana.com/docs/) lesen."
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:25
@@ -20483,11 +20956,16 @@ msgid ""
 "core configurations of each tool. Please also note that we can't support you "
 "with configuration of your specific third party tool."
 msgstr ""
+"In dieser Dokumentation wird davon ausgegangen, dass alle Anforderungen "
+"erfüllt sind und funktionieren. Wir werden nicht auf die Kernkonfigurationen "
+"der einzelnen Tools eingehen. Bitte beachten Sie auch, dass wir Sie bei der "
+"Konfiguration Ihres spezifischen Drittanbieter-Tools nicht unterstützen "
+"können."
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:29
 msgid "You need:"
-msgstr ""
+msgstr "Sie benötigen:"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:34
@@ -20495,16 +20973,18 @@ msgid ""
 "A running instance of Grafana (hosted or self-hosted) in version 10.3 or "
 "higher"
 msgstr ""
+"Eine laufende Instanz von Grafana (SaaS oder selbst gehostet) in Version "
+"10.3 oder höher"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:34
 msgid "Read access to your Elasticsearch index"
-msgstr ""
+msgstr "Lesezugriff auf Ihren Elasticsearch-Index"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:34
 msgid "A Zammad instance in version 4 or higher"
-msgstr ""
+msgstr "Eine Zammad-Instanz in Version 4 oder höher"
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/reporting-grafana.md:35
@@ -20515,12 +20995,18 @@ msgid ""
 "stores **very sensitive** information within the Elasticsearch\n"
 "Index.\n"
 msgstr ""
+"Veröffentlichen Sie Ihren Elasticsearch-Index niemals, wenn Sie nicht sicher "
+"sind, was\n"
+"Sie tun. Sie sollten das insbesondere **niemals** ohne Authentifizierung "
+"tun! Zammad\n"
+"speichert **sehr sensible** Informationen innerhalb des Elasticsearch\n"
+"Index.\n"
 
 #. type: Title ##
 #: src/en/tutorials/reporting-grafana.md:42
 #, no-wrap
 msgid "Setting up Required Data Sources"
-msgstr ""
+msgstr "Einrichten der erforderlichen Datenquellen"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:47
@@ -20530,6 +21016,11 @@ msgid ""
 "reduced below information to `name`, `time field name` and `index name`.\n"
 "Everything else relies on your environment and is out of our scope.\n"
 msgstr ""
+"**Vor dem Start:** Die Datenquellen folgen immer dem gleichen Schema. Wir\n"
+"haben die folgenden Informationen auf `name`, `time field name` und `index "
+"name` reduziert.\n"
+"Alles andere hängt von Ihrer Umgebung ab und ist nicht Gegenstand dieser "
+"Dokumentation.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/reporting-grafana.md:48
@@ -20538,6 +21029,8 @@ msgid ""
 "Replace `zammad_production_` with your fitting prefix.\n"
 "\n"
 msgstr ""
+"Ersetzen Sie `zammad_production_` durch Ihr passendes Präfix.\n"
+"\n"
 
 #. type: Fenced div block (tip|details How to query the index?)
 #: src/en/tutorials/reporting-grafana.md:48
@@ -20591,6 +21084,53 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"Passen Sie den folgenden Befehl an Ihre Umgebung an:\n"
+"\n"
+"```sh\n"
+"curl http://localhost:9200/_aliases?pretty=true\n"
+"```\n"
+"\n"
+"Daraufhin erhalten Sie eine Ausgabe wie die folgende:\n"
+"```\n"
+"{\n"
+"  \"zammad_production_knowledge_base_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket_priority\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_stats_store\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_organization\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_cti_log\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_group\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_knowledge_base_answer_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_ticket_state\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_chat_session\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_user\" : {\n"
+"    \"aliases\" : { }\n"
+"  },\n"
+"  \"zammad_production_knowledge_base_category_translation\" : {\n"
+"    \"aliases\" : { }\n"
+"  }\n"
+"}\n"
+"```\n"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:102
@@ -20601,30 +21141,29 @@ msgstr "ES - Chat-Sitzungen"
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:106
 msgid "Index name: `zammad_production_chat_session`"
-msgstr ""
+msgstr "Indexname: `zammad_production_chat_session`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:106
 #: src/en/tutorials/reporting-grafana.md:126
 msgid "Time field name: `created_at`"
-msgstr ""
+msgstr "Zeitfeldname: `created_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:107
-#, fuzzy, no-wrap
-#| msgid "CTI Log"
+#, no-wrap
 msgid "ES - CTI Log"
-msgstr "CTI-Protokoll"
+msgstr "ES - CTI-Protokoll"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:111
 msgid "Index name: `zammad_production_cti_log`"
-msgstr ""
+msgstr "Indexname: `zammad_production_cti_log`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:111
 msgid "Time field name: `start_at`"
-msgstr ""
+msgstr "Zeitfeldname: `start_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:112
@@ -20638,12 +21177,12 @@ msgstr "ES - Ticket Artikel"
 #: src/en/tutorials/reporting-grafana.md:126
 #: src/en/tutorials/reporting-grafana.md:131
 msgid "Index name: `zammad_production_ticket`"
-msgstr ""
+msgstr "Indexname: `zammad_production_ticket`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:116
 msgid "Time field name: `article.created_at`"
-msgstr ""
+msgstr "Zeitfeldname: `article.created_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:117
@@ -20654,7 +21193,7 @@ msgstr "ES - Tickets closed_at"
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:121
 msgid "Time field name: `close_at`"
-msgstr ""
+msgstr "Zeitfeldname: `close_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:122
@@ -20671,7 +21210,7 @@ msgstr "ES - Tickets first_response_at"
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:131
 msgid "Time field name: `first_response_at`"
-msgstr ""
+msgstr "Zeitfeldname: `first_response_at`"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:134
@@ -20679,12 +21218,14 @@ msgid ""
 "With above data sources you basically have everything you need to start "
 "building your own dashboards."
 msgstr ""
+"Mit den oben genannten Datenquellen haben Sie im Grunde alles, was Sie "
+"brauchen, um mit der Erstellung Ihrer eigenen Dashboards zu beginnen."
 
 #. type: Title ##
 #: src/en/tutorials/reporting-grafana.md:135
 #, no-wrap
 msgid "Quick Start with Dashboard Template"
-msgstr ""
+msgstr "Schnellstart mit Dashboard-Vorlage"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:140
@@ -20693,12 +21234,15 @@ msgid ""
 "below. These dashboards can also be found on [GitHub](https://github.com/"
 "zammad/grafana-dashboards)."
 msgstr ""
+"Wenn Sie sich inspirieren lassen möchten, können Sie unsere unten "
+"aufgeführten Beispiel-Dashboards verwenden. Diese Dashboards sind auch auf "
+"[GitHub](https://github.com/zammad/grafana-dashboards) zu finden."
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:141
 #, no-wrap
 msgid "Importing a Dashboard"
-msgstr ""
+msgstr "Importieren eines Dashboards"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:147
@@ -20709,6 +21253,14 @@ msgid ""
 "downloaded from Github or use the grafana.com ID, provided as badge\n"
 "like <Badge type=\"info\" text=\"12345\"/> attached to the next sections titles.\n"
 msgstr ""
+"Wählen Sie in Grafana *➕ > Import* (oder eine andere Stelle, die Ihnen den "
+"Import\n"
+"eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die "
+"Sie\n"
+"von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die "
+"als Badge\n"
+"wie <Badge type=\"info\" text=\"12345\"/> den Überschriften der nächsten "
+"Abschnitte angehängt ist.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:151
@@ -20717,18 +21269,21 @@ msgid ""
 "asked to map the data sources to your environment. If you used our data "
 "source names above, you can simply search for the same name."
 msgstr ""
+"Während des Imports können Sie einen Dashboard-Namen und einen Ordner "
+"angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung "
+"zuzuordnen. Wenn Sie unsere Datenquellennamen oben verwendet haben, können "
+"Sie einfach nach demselben Namen suchen."
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:152
-#, fuzzy, no-wrap
-#| msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
+#, no-wrap
 msgid "Ticket Statistics Dashboard <Badge type=\"info\" text=\"14222\"/>"
-msgstr "Memcached <Badge type=\"info\" text=\"optional\"/>"
+msgstr "Ticket-Statistik Dashboard <Badge type=\"info\" text=\"14222\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:155
 msgid "![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)"
-msgstr ""
+msgstr "![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)"
 
 #. type: Title ####
 #: src/en/tutorials/reporting-grafana.md:156
@@ -20736,97 +21291,95 @@ msgstr ""
 #: src/en/tutorials/reporting-grafana.md:212
 #, no-wrap
 msgid "Dashboard Graphs"
-msgstr ""
+msgstr "Dashboard-Grafiken"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:161
 msgid "ticket opening and closing[^1]"
-msgstr ""
+msgstr "Ticket öffnen und schließen[^1]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:161
 msgid "created articles"
-msgstr ""
+msgstr "Erstellte Artikel"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:161
 msgid "ticket SLA (in time *and* violation) per type[^2][^3]"
-msgstr ""
+msgstr "Ticket SLA (in Zeit *und* Verletzung) pro Typ[^2][^3]"
 
 #. type: Title ####
 #: src/en/tutorials/reporting-grafana.md:162
 #, no-wrap
 msgid "Ticket and Article Meta Information"
-msgstr ""
+msgstr "Ticket und Artikel Meta-Informationen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "ticket group distribution"
-msgstr ""
+msgstr "Verteilung der Tickets nach Gruppe"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "sender ratio (e.g. Customer / Agent)[^4]"
-msgstr ""
+msgstr "Absenderverhältnis (z.B. Kunde / Agent)[^4]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "article type ratio (e.g. email, phone)[^5]"
-msgstr ""
+msgstr "Verhältnis der Artikelarten (z.B. E-Mail, Telefon)[^5]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
-#, fuzzy
-#| msgid "`content_type`"
 msgid "article content type"
-msgstr "`content_type`"
+msgstr "Typ des Artikelinhalts"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "escalation ratios[^6]"
-msgstr ""
+msgstr "Eskalationsquoten[^6]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "average first response, update time and close time[^7]"
-msgstr ""
+msgstr "Durchschnittliche Erstreaktion, Aktualisierungszeit und Schließzeit[^7]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 #: src/en/tutorials/reporting-grafana.md:203
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "top 10 of:"
-msgstr ""
+msgstr "Top 10 von:"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "organization of ticket customer[^8]"
-msgstr ""
+msgstr "Organisation des Ticket-Kunden[^8]"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "ticket customers[^9]"
-msgstr ""
+msgstr "Ticket-Kunden[^9]"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "ticket owners[^10]"
-msgstr ""
+msgstr "Besitzer von Tickets[^10]"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "average accounted time on ticket"
-msgstr ""
+msgstr "Durchschnittlich erfasste Zeit auf dem Ticket"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "ticket tags[^11]"
-msgstr ""
+msgstr "Ticket-Tags[^11]"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 msgid "last 10 escalated tickets"
-msgstr ""
+msgstr "die letzten 10 eskalierten Tickets"
 
 #. type: Title ####
 #: src/en/tutorials/reporting-grafana.md:178
@@ -20834,147 +21387,136 @@ msgstr ""
 #: src/en/tutorials/reporting-grafana.md:225
 #, no-wrap
 msgid "Required Data Sources"
-msgstr ""
+msgstr "Erforderliche Datenquellen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:183
 msgid "`ES - Ticket Articles`"
-msgstr ""
+msgstr "`ES - Ticket Articles`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:183
 msgid "`ES - Tickets by created_at`"
-msgstr ""
+msgstr "`ES - Tickets by created_at`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:183
 msgid "`ES - Tickets by closed_at`"
-msgstr ""
+msgstr "`ES - Tickets by closed_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:184
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Chat-Session Statistics Dashboard <Badge type=\"info\" text=\"14224\"/>"
-msgstr "Abschnitt mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
+msgstr "Chat-Sitzungsstatistik Dashboard <Badge type=\"info\" text=\"14224\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:187
 msgid "![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)"
-msgstr ""
+msgstr "![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:191
-#, fuzzy
-#| msgid "Chat Session"
 msgid "Chat session creations."
-msgstr "Chat-Sitzung"
+msgstr "Erstellung von Chatsitzungen."
 
 #. type: Title ####
 #: src/en/tutorials/reporting-grafana.md:192
 #: src/en/tutorials/reporting-grafana.md:216
-#, fuzzy, no-wrap
-#| msgid "Sharing your personal information"
+#, no-wrap
 msgid "Chat Session Meta Information"
-msgstr "Weitergabe Ihrer persönlichen Informationen"
+msgstr "Meta-Informationen zur Chat-Sitzung"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "chat tags"
-msgstr ""
+msgstr "Chat-Tags"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "chat agents"
-msgstr ""
+msgstr "Chat-Agenten"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:203
-#, fuzzy
-#| msgid "Next page"
 msgid "chat exit pages"
-msgstr "Vorige Seite"
+msgstr "Chat-Exit-Seiten"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "city origins"
-msgstr ""
+msgstr "Verteilung über Städte"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "chat topic ratio"
-msgstr ""
+msgstr "Verhältnis Chat-Themen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "average number of messages within chat-sessions"
-msgstr ""
+msgstr "Durchschnittliche Anzahl von Nachrichten innerhalb von Chat-Sitzungen"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "average chatting time"
-msgstr ""
+msgstr "Durchschnittliche Chatdauer"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:203
 msgid "world map with chat origin countries"
-msgstr ""
+msgstr "Weltkarte mit Chat-Ursprungsländern"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:207
-#, fuzzy
-#| msgid "Chat Session"
 msgid "`ES - Chat Sessions`"
-msgstr "Chat-Sitzung"
+msgstr "`ES - Chat Sessions`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:208
-#, fuzzy, no-wrap
-#| msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
+#, no-wrap
 msgid "CTI-Log Statistics Dashboard <Badge type=\"info\" text=\"14223\"/>"
-msgstr "Memcached <Badge type=\"info\" text=\"optional\"/>"
+msgstr "CTI-Log Statistik Dashboard <Badge type=\"info\" text=\"14223\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:211
 msgid "![Grafana Call Dashboard](/screenshots/reporting/calls.png)"
-msgstr ""
+msgstr "![Grafana Call Dashboard](/screenshots/reporting/calls.png)"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:215
 msgid "Number of calls per direction (in / out)."
-msgstr ""
+msgstr "Anzahl der Anrufe pro Richtung (ein-/ausgehend)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "call ratio (in / out)"
-msgstr ""
+msgstr "Gesprächsverhältnis (ein-/ausgehend)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "average waiting time"
-msgstr ""
+msgstr "Durchschnittliche Wartezeit"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "average talking time"
-msgstr ""
+msgstr "Durchschnittliche Gesprächsdauer"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "callers (in)"
-msgstr ""
+msgstr "Anrufer (eingehend)"
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:224
 msgid "call answerers (in)"
-msgstr ""
+msgstr "Abnehmer der Anrufe (eingehend)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:228
-#, fuzzy
-#| msgid "CTI Log"
 msgid "`ES - CTI Log`"
-msgstr "CTI-Protokoll"
+msgstr "`ES - CTI Log`"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:232
@@ -20983,6 +21525,9 @@ msgid ""
 "[^1]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:235
@@ -20991,6 +21536,9 @@ msgid ""
 "[^2]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^2]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
@@ -20999,6 +21547,9 @@ msgid ""
 "[^3]: Requires SLA function to be active. Negative values indicate SLA\n"
 "    violations.\n"
 msgstr ""
+"[^3]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte weisen auf "
+"SLA-Verstöße\n"
+"    hin.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:242
@@ -21008,6 +21559,11 @@ msgid ""
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
+"[^4]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten "
+"an. Prüfen Sie in der\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden "
+"können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:246
@@ -21017,6 +21573,11 @@ msgid ""
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
+"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten "
+"an. Prüfen Sie die\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden "
+"können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:249
@@ -21025,6 +21586,9 @@ msgid ""
 "[^6]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^6]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:252
@@ -21033,6 +21597,9 @@ msgid ""
 "[^7]: Requires SLA function to be active. Negative values indicate SLA\n"
 "    violations.\n"
 msgstr ""
+"[^7]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte weisen auf "
+"SLA-Verstöße\n"
+"    hin.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:255
@@ -21041,6 +21608,9 @@ msgid ""
 "[^8]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^8]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:258
@@ -21049,6 +21619,9 @@ msgid ""
 "[^9]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^9]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:261
@@ -21057,6 +21630,9 @@ msgid ""
 "[^10]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^10]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:264
@@ -21065,6 +21641,9 @@ msgid ""
 "[^11]: Some values are not available as time series information. This\n"
 "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
+"[^11]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das\n"
+"    bedeutet, dass wir nur den *letzten* Wert des betreffenden Feldes "
+"anzeigen können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
