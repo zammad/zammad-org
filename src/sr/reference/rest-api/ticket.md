@@ -23,23 +23,6 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Претрага
-
-Required permission: `ticket.agent` **or** `ticket.customer`
-
-`GET`-Request sent: `/api/v1/tickets/search?query={search string}&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/tickets/search/get-res.json
-
-:::
-
-::: warning
-`tickets_count` returns the *current* number of returned tickets, not
-*the total amount*.
-:::
-
 ## Show
 
 Required permission: `ticket.agent` **or** `ticket.customer`

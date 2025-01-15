@@ -19,22 +19,6 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 :::
 
-### Search
-
-Required permission: `ticket.agent` **or** `admin.tag`
-
-`GET`-Request sent: `/api/v1/tag_search?term={tag name}`
-
-::: info
-Zammad will return all tags that contain your search phrase.
-:::
-
-::: details Show response
-
-<<< @/fixtures/rest-api/tag_search/get-res.json
-
-:::
-
 ### Add
 
 Required permission: `ticket.agent` **or** `admin.tag`

@@ -21,18 +21,6 @@ Technically, customers can only see their own organization if applicable.
 
 :::
 
-## Search
-
-Required permission: `ticket.agent` **or** `admin.organization`
-
-`GET`-Request sent: `/api/v1/organizations/search?query=inc&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/organizations/search/get-res.json
-
-:::
-
 ## Show
 
 Required permission: `ticket.agent` **or** `admin.organization`

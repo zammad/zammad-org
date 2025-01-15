@@ -21,18 +21,6 @@ Technisch können Kunden nur ihre eigene Organisation sehen, sofern zutreffend.
 
 :::
 
-## Suche
-
-Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`
-
-`GET`-Anfrage gesendet: `/api/v1/organizations/search?query=inc&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/organizations/search/get-res.json
-
-:::
-
 ## Anzeigen
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`

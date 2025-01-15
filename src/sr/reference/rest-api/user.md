@@ -35,19 +35,6 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 :::
 
-## Претрага
-
-Required permission: `ticket.agent` **or** `admin.user`
-
-`GET`-Request sent: `/api/v1/users/search?query=organization.name:{search
-string}&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/users/search/get-res.json
-
-:::
-
 ## Show
 
 Required permission: `ticket.agent` **or** `admin.user` **or**

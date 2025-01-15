@@ -19,22 +19,6 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
 :::
 
-### Suche
-
-Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
-
-`GET`-Anfrage gesendet: `/api/v1/tag_search?term={tag name}`
-
-::: info
-Zammad gibt alle Tags zurück, die Ihren Suchbegriff enthalten.
-:::
-
-::: details Show response
-
-<<< @/fixtures/rest-api/tag_search/get-res.json
-
-:::
-
 ### Hinzufügen
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`

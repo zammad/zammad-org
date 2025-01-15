@@ -35,19 +35,6 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`
 
 :::
 
-## Suche
-
-Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`
-
-`GET`-Anfrage gesendet:
-`/api/v1/users/search?query=organization.name:{search string}&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/users/search/get-res.json
-
-:::
-
 ## Anzeigen
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user` **oder**

@@ -23,24 +23,6 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 :::
 
-## Suche
-
-Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
-
-`GET`-Anfrage gesendet: `/api/v1/tickets/search?query={search
-string}&limit=10`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/tickets/search/get-res.json
-
-:::
-
-::: warning
-`tickets_count` gibt die Anzahl der zurückgegebenen Tickets zurück, nicht
-*die Gesamtzahl*.
-:::
-
 ## Anzeigen
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
