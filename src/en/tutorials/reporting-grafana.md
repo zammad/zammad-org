@@ -157,22 +157,22 @@ names above, you can simply search for the same name.
 
 - ticket opening and closing[^1]
 - created articles
-- ticket SLA (in time *and* violation) per type[^2][^3]
+- ticket SLA (in time *and* violation) per type[^1][^2]
 
 #### Ticket and Article Meta Information
 
 - ticket group distribution
-- sender ratio (e.g. Customer / Agent)[^4]
-- article type ratio (e.g. email, phone)[^5]
+- sender ratio (e.g. Customer / Agent)[^3]
+- article type ratio (e.g. email, phone)[^3]
 - article content type
-- escalation ratios[^6]
-- average first response, update time and close time[^7]
+- escalation ratios[^1]
+- average first response, update time and close time[^2]
 - top 10 of:
-  - organization of ticket customer[^8]
-  - ticket customers[^9]
-  - ticket owners[^10]
+  - organization of ticket customer[^1]
+  - ticket customers[^1]
+  - ticket owners[^1]
   - average accounted time on ticket
-  - ticket tags[^11]
+  - ticket tags[^1]
 - last 10 escalated tickets
 
 #### Required Data Sources
@@ -230,35 +230,9 @@ Number of calls per direction (in / out).
 [^1]: Some values are not available as time series information. This
     means we can only display the *last* value of the field in question.
 
-[^2]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^3]: Requires SLA function to be active. Negative values indicate SLA
+[^2]: Requires SLA function to be active. Negative values indicate SLA
     violations.
 
-[^4]: Specific reference IDs are not the same on every instance and thus
+[^3]: Specific reference IDs are not the same on every instance and thus
     the panel may not work or show incorrect data. Check the panels
     description on how to find our the relations on your system.
-
-[^5]: Specific reference IDs are not the same on every instance and thus
-    the panel may not work or show incorrect data. Check the panels
-    description on how to find our the relations on your system.
-
-[^6]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^7]: Requires SLA function to be active. Negative values indicate SLA
-    violations.
-
-[^8]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^9]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^10]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^11]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-

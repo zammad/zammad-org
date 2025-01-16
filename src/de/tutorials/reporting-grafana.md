@@ -160,22 +160,22 @@ Sie einfach nach demselben Namen suchen.
 
 - Ticket öffnen und schließen[^1]
 - Erstellte Artikel
-- Ticket SLA (in Zeit *und* Verletzung) pro Typ[^2][^3]
+- ticket SLA (in time *and* violation) per type[^1][^2]
 
 #### Ticket und Artikel Meta-Informationen
 
 - Verteilung der Tickets nach Gruppe
-- Absenderverhältnis (z.B. Kunde / Agent)[^4]
-- Verhältnis der Artikelarten (z.B. E-Mail, Telefon)[^5]
+- sender ratio (e.g. Customer / Agent)[^3]
+- article type ratio (e.g. email, phone)[^3]
 - Typ des Artikelinhalts
-- Eskalationsquoten[^6]
-- Durchschnittliche Erstreaktion, Aktualisierungszeit und Schließzeit[^7]
+- escalation ratios[^1]
+- average first response, update time and close time[^2]
 - Top 10 von:
-  - Organisation des Ticket-Kunden[^8]
-  - Ticket-Kunden[^9]
-  - Besitzer von Tickets[^10]
+  - organization of ticket customer[^1]
+  - ticket customers[^1]
+  - ticket owners[^1]
   - Durchschnittlich erfasste Zeit auf dem Ticket
-  - Ticket-Tags[^11]
+  - ticket tags[^1]
 - die letzten 10 eskalierten Tickets
 
 #### Erforderliche Datenquellen
@@ -233,35 +233,9 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 [^1]: Some values are not available as time series information. This
     means we can only display the *last* value of the field in question.
 
-[^2]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^3]: Requires SLA function to be active. Negative values indicate SLA
+[^2]: Requires SLA function to be active. Negative values indicate SLA
     violations.
 
-[^4]: Specific reference IDs are not the same on every instance and thus
+[^3]: Specific reference IDs are not the same on every instance and thus
     the panel may not work or show incorrect data. Check the panels
     description on how to find our the relations on your system.
-
-[^5]: Specific reference IDs are not the same on every instance and thus
-    the panel may not work or show incorrect data. Check the panels
-    description on how to find our the relations on your system.
-
-[^6]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^7]: Requires SLA function to be active. Negative values indicate SLA
-    violations.
-
-[^8]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^9]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^10]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-
-[^11]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
-

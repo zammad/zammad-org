@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-15 08:13+0100\n"
+"POT-Creation-Date: 2025-01-16 09:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17652,7 +17652,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:161
 #, markdown-text
-msgid "ticket SLA (in time *and* violation) per type[^2][^3]"
+msgid "ticket SLA (in time *and* violation) per type[^1][^2]"
 msgstr ""
 
 #. type: Title ####
@@ -17670,13 +17670,13 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "sender ratio (e.g. Customer / Agent)[^4]"
+msgid "sender ratio (e.g. Customer / Agent)[^3]"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "article type ratio (e.g. email, phone)[^5]"
+msgid "article type ratio (e.g. email, phone)[^3]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17688,13 +17688,13 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "escalation ratios[^6]"
+msgid "escalation ratios[^1]"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "average first response, update time and close time[^7]"
+msgid "average first response, update time and close time[^2]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17708,19 +17708,19 @@ msgstr ""
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "organization of ticket customer[^8]"
+msgid "organization of ticket customer[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "ticket customers[^9]"
+msgid "ticket customers[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "ticket owners[^10]"
+msgid "ticket owners[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -17732,7 +17732,7 @@ msgstr ""
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
 #, markdown-text
-msgid "ticket tags[^11]"
+msgid "ticket tags[^1]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17908,12 +17908,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:232
-#: src/en/tutorials/reporting-grafana.md:235
-#: src/en/tutorials/reporting-grafana.md:249
-#: src/en/tutorials/reporting-grafana.md:255
-#: src/en/tutorials/reporting-grafana.md:258
-#: src/en/tutorials/reporting-grafana.md:261
-#: src/en/tutorials/reporting-grafana.md:264
 #, markdown-text, no-wrap
 msgid "    means we can only display the *last* value of the field in question.\n"
 msgstr ""
@@ -17921,77 +17915,27 @@ msgstr ""
 #. type: Link reference
 #: src/en/tutorials/reporting-grafana.md:233
 #, no-wrap
-msgid "[^2]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:236
-#, no-wrap
-msgid "[^3]: Requires SLA function to be active. Negative values indicate SLA"
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:238
-#: src/en/tutorials/reporting-grafana.md:252
+#: src/en/tutorials/reporting-grafana.md:235
 #, markdown-text, no-wrap
 msgid "    violations.\n"
 msgstr ""
 
 #. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:239
+#: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid "[^4]: Specific reference IDs are not the same on every instance and thus"
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:242
-#: src/en/tutorials/reporting-grafana.md:246
+#: src/en/tutorials/reporting-grafana.md:238
 #, markdown-text, no-wrap
 msgid ""
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:243
-#, no-wrap
-msgid "[^5]: Specific reference IDs are not the same on every instance and thus"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:247
-#, no-wrap
-msgid "[^6]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:250
-#, no-wrap
-msgid "[^7]: Requires SLA function to be active. Negative values indicate SLA"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:253
-#, no-wrap
-msgid "[^8]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:256
-#, no-wrap
-msgid "[^9]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:259
-#, no-wrap
-msgid "[^10]: Some values are not available as time series information. This"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:262
-#, no-wrap
-msgid "[^11]: Some values are not available as time series information. This"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
