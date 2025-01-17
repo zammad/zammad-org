@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-16 12:52+0000\n"
+"POT-Creation-Date: 2025-01-17 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,18 +202,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1226,8 +1214,9 @@ msgstr ""
 msgid "\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/faq.md:37
+#: src/en/documentation/use/manage-profile.md:1
 #, markdown-text, no-wrap
 msgid "User Profile"
 msgstr ""
@@ -1316,6 +1305,352 @@ msgstr ""
 #: src/en/documentation/use/how-to.md:5
 #, markdown-text, no-wrap
 msgid "How-To"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/manage-profile.md:6
+#, markdown-text, no-wrap
+msgid "Manage Your User Profile"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:9
+#, markdown-text
+msgid ""
+"![Screenshot shows user profile "
+"settings](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/manage-profile.md:10
+#, markdown-text, no-wrap
+msgid "Avatar Menu"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:14
+#, markdown-text
+msgid ""
+"In the left navigation sidebar, you can find an avatar icon in the bottom "
+"left corner. This icon can display your profile picture or your initials."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:16
+#, markdown-text
+msgid "Clicking on this icon opens a menu where you can find different things:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:18
+#, markdown-text
+msgid ""
+"![Screenshot shows user menu "
+"popover](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+#, markdown-text
+msgid ""
+"**Appearance** with toggle to switch between dark and light mode (or based "
+"on your web browser)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+#, markdown-text
+msgid ""
+"**Keyboard shortcuts**: opens a popup where you can see the available "
+"keyboard shortcuts. You can open this popup by pressing the <kbd>?</kbd> "
+"button on your keyboard as well."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+#, markdown-text
+msgid ""
+"**Profile settings**: opens your profile settings where you can adjust your "
+"avatar, password, notification settings and much more, see next section."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/manage-profile.md:27
+#, markdown-text, no-wrap
+msgid "Profile Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:32
+#, markdown-text
+msgid ""
+"In your profile settings, you can adjust things concerning your account and "
+"your personal settings. Some of the options may not be available for you, "
+"depending on how your system is configured and your permissions."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:33
+#, markdown-text, no-wrap
+msgid "Appearance"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:36
+#, markdown-text
+msgid "Change the appearance of Zammad. Available options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+#, markdown-text
+msgid "Dark mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+#, markdown-text
+msgid "Light mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+#, markdown-text
+msgid "Sync with computer"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:43
+#, markdown-text
+msgid ""
+"The last option tries to detect your browser's preference. It depends on "
+"your web browser. If it doesn't work, you can choose one of the other "
+"options."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/manage-profile.md:44
+#, no-wrap
+msgid ""
+"If you want to switch quickly between dark and light mode, you can also "
+"use\n"
+"the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut "
+"by\n"
+"simply pressing <kbd>d</kbd>.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:50
+#, markdown-text, no-wrap
+msgid "Language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:53
+#, markdown-text
+msgid "Choose your preferred language of Zammad."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:54
+#, markdown-text, no-wrap
+msgid "Avatar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:59
+#, markdown-text
+msgid ""
+"In this section, you can adjust your avatar image. By default, the initials "
+"of your user are displayed on a colored background. If you want to add an "
+"image, simply upload one or use your camera, if you have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:62
+#, markdown-text
+msgid ""
+"After capturing or uploading an image, you can crop it. Have a look at the "
+"preview at the top of the right side panel."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:63
+#, markdown-text, no-wrap
+msgid "Out of Office"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:67
+#, markdown-text
+msgid ""
+"Define absence periods (e.g. for your vacation), and designate a substitute "
+"to handle your tickets while you are away."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:72
+#, markdown-text
+msgid ""
+"Your designated substitute will receive updates on new tickets and changes "
+"to existing ones while you're away. Additionally, your custom overviews are "
+"available for this agent to keep track of your tickets. You receive "
+"notifications while you are absent, too."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:73
+#, markdown-text, no-wrap
+msgid "Password"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:77
+#, markdown-text
+msgid ""
+"Change the password of your account. Update it by entering your old "
+"password, the new password and confirm the new one by entering it again."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:78
+#, markdown-text, no-wrap
+msgid "Devices"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:83
+#, markdown-text
+msgid ""
+"Here you can find a list of all devices logged into your Zammad account.  If "
+"necessary, you can revoke the access by clicking the delete icon in the "
+"\"Actions\" column."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:84
+#, markdown-text, no-wrap
+msgid "Token Access"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:89
+#, markdown-text
+msgid ""
+"Generate a personal access token for a third party application to access the "
+"Zammad API. After clicking the **New Personal Access Token** button, you can "
+"set a name, an expiration date and configure the permissions for this token."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:90
+#, markdown-text, no-wrap
+msgid "Notifications"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:93
+#, markdown-text
+msgid "Adjust the notifications you get. You can adjust:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+#, markdown-text
+msgid ""
+"For which ticket actions you get notified (e.g. for new tickets, for "
+"escalated tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+#, markdown-text
+msgid ""
+"For which ticket you get notified based on the assignment and your relation "
+"to it (e.g. only yours, not assigned, subscribed tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+#, markdown-text
+msgid "On which way you get notified (only in browser or additionally via email)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+#, markdown-text
+msgid "For tickets in which group you get notified"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:102
+#, markdown-text
+msgid "Additionally, you can select a notification sound or disable the sound."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/manage-profile.md:103
+#, no-wrap
+msgid ""
+"To get notified via sound and notification on your operating system, you "
+"have\n"
+"to allow Zammad to send you notifications. This is requested when Zammad "
+"wants\n"
+"to send you a notification the first time.\n"
+"\n"
+"If you refused it and want to allow it now, it depends on your browser on "
+"how\n"
+"to do that. Usually there is an icon in the address bar where you can "
+"adjust\n"
+"the permissions of the site.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:113
+#, markdown-text, no-wrap
+msgid "Overviews"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:117
+#, markdown-text
+msgid ""
+"Change the order of overviews for your account. Simply drag & drop them by "
+"clicking the handles on the left side."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:120
+#, markdown-text
+msgid ""
+"If your admin changes the order, your custom order remains. You can switch "
+"back to your admin's order by clicking the **Reset Overview Order** button."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/manage-profile.md:121
+#: src/en/reference/rest-api/calendar.md:1
+#: src/en/reference/rest-api/calendar.md:6
+#, markdown-text, no-wrap
+msgid "Calendar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:125
+#, markdown-text
+msgid ""
+"Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
+"your favorite calendar application."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:128
+#, markdown-text
+msgid ""
+"Use either the upper \"Combined subscription URL\" to subscribe to all "
+"tickets or the lower \"Direct subscription URL\". With the later one, you "
+"can define which tickets based on ticket states and assignment you want to "
+"include."
 msgstr ""
 
 #. type: Title ###
@@ -9918,13 +10253,6 @@ msgid ""
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/rest-api/calendar.md:1
-#: src/en/reference/rest-api/calendar.md:6
-#, markdown-text, no-wrap
-msgid "Calendar"
-msgstr ""
-
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/calendar.md:8
 #, no-wrap
@@ -12056,9 +12384,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:300
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -14240,6 +14568,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -17900,27 +18240,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:230
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:232
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+msgid "    means we can only display the *last* value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:233
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:235
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:236
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
