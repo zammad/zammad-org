@@ -9,20 +9,7 @@ Haben Sie sich jemals gefragt, was wir mit bestimmten Begriffen meinen? Wir
 haben die wichtigsten Begrifflichkeiten unten für Ihr Verständnis
 zusammengetragen.
 
-::: info
-In der nicht englischen Version funktioniert die alphabetische Sortierung nicht
-auf dieser Seite.
-:::
-
-Schnell zu...
-
-[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i)
-[J](#j) [K](#k) [L](#l) [M](#m)  [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r)
-[S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [X](#x) [Y](#y) [Z](#z)
-
--------------------------------------------------------
-
-## A
+<VPGlossary>
 
 Admin
 : Ein Admin(istrator) ist ein Benutzer in Zammad, der besondere Rechte hat und Ihre
@@ -42,9 +29,9 @@ API
   Es ermöglicht Ihnen, Systeme von Drittanbietern mit Ihrem Zammad zu verbinden (z.B. soziale
   Medien, Messenger, Monitoring-Tools).
 
-  Sie können mehr erfahren auf unserer
-  [API-Landingpage](https://zammad.com/de/product/features/rest-api) sowie
-  sowie in unserer [API-Referenz](/de/reference/rest-api/intro).
+  You can learn more on our
+  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
+  as well as in our [API reference](/en/reference/rest-api/intro).
 
 Artikel
 : Jedes Element innerhalb eines Tickets wird als Artikel bezeichnet. Ticket-Artikel
@@ -60,25 +47,22 @@ Automatisierung
   Ein Beispiel wäre die wiederkehrende Löschung von Kunden, die
   nicht mehr benötigt werden oder die Zuweisung von Gruppen auf Basis von Ticket-Attributen.
 
-Automatisches Speichern (Autosave)
-: Die Autosave-Funktion von Zammad sorgt dafür, dass keine Arbeit verloren geht. Falls Ihr Browser
-  abstürzt, melden Sie sich einfach wieder an und machen dort weiter, wo Sie vorher waren.
-  Erfahren Sie mehr auf unserer
-  [Autosave Landing Page](https://zammad.com/de/product/features/autosave).
-
-## B
+Autosave
+: Zammad's autosave feature makes sure that no work is lost. So if your browser
+  crashes, simply log in again and resume where you were before.
+  Learn more on our
+  [Autosave landing page](https://zammad.com/en/product/features/autosave){target=_blank}.
 
 Branding
 : Jede Firma hat ihre eigene Identität. Deshalb können Sie bei Zammad Ihr
   Logo, Ihre Signatur, Links und andere Dinge hinzufügen!
 
-## C
-
 Changelog
 : Mit jeder neuen Version kommt ein neues Changelog. Es ist im Grunde eine Liste aller
   Dinge, die sich geändert haben, von neuen Verbesserungen bis hin zu Fehlerkorrekturen.
 
-  Sie finden sie alle auf unserem [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md)!
+  You can find them all on our
+  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
 : Checkmk ist ein leistungsstarkes IT-Überwachungstool, das Echtzeit-Statusmeldungen
@@ -130,8 +114,6 @@ Kunde
   Jeder Kunde kann über das Kundeninterface auf Zammad zugreifen, wo alle seine
   Tickets mit dem aktuellen Status und Live-Aktualisierungen einsehbar sind.
 
-## D
-
 Dashboard
 : Das Dashboard ist die individuelle Begrüßungsseite in Zammad und gibt
   Ihnen Feedback über Ihre Arbeit.
@@ -147,8 +129,6 @@ Dialog
 Dokumentation
 : Sie haben es sicher schon gemerkt: Sie lesen gerade einen Teil der Dokumentation der
   Zammad-Dokumentation 😉 .
-
-## E
 
 Elasticsearch
 : Zammad bietet eine Elasticsearch-Integration (eine freie und offene Suchmaschine)
@@ -174,35 +154,31 @@ Externe Authentifizierung
   Zammad unterstützt derzeit mehr als zehn Login-Anbieter, wie z.B. Facebook,
   GitHub, GitLab, Google, oder Microsoft / Office365.
 
-## F
-
 Feature
 : Ein Feature ist eine bestimmte Fähigkeit oder Funktionalität, die Zammad Ihnen zur Verfügung
   stellt wie z.B. unsere Integrationen, Produktivitätstools oder zusätzliche Kanäle.
   Wir fügen mit jeder Version neue Funktionen hinzu.
 
-Feature-Anfrage
-: Lassen Sie uns wissen, wenn Sie eine bestimmte Funktion in Zammad vermissen.
-  Wir sammeln alle Ihre Wünsche in unserem Community-Forum in der
-  [Kategorie "Feature Requests" (https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all).
-  Wenn eine Anfrage regelmäßig eingeht und wir denken, dass es eine
-  großartige Ergänzung wäre, setzen wir sie auf unsere Roadmap und beginnen mit der Arbeit daran.
+Feature Request
+: You can let us know if you are missing a particular feature in Zammad.
+  We collect all of your wishes in our community forum in the
+  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  If a request comes in regularly and we think that it would be a
+  great addition, we'll put it on our roadmap and start working on it.
 
 Feature-Sponsoring
 : Wenn eine Organisation ein Feature auf der Liste dringend benötigt,
   kann sie die Entwicklung vorantreiben und die Priorität erhöhen, indem sie
   es sponsert, d.h. die Entwicklungskosten übernimmt.
 
-## G
-
 GitHub
 : GitHub ist ein Dienst für die Versionsverwaltung von Softwareentwicklungsprojekten.
   Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.
   Hier bei Zammad verwenden wir es, um unser Repository zu verwalten.
 
-  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen
-  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.
-  Sie finden das Repository [hier](https://github.com/zammad/zammad).
+  As Zammad is an open-source project, many developers and tech-lovers from all
+  over the world contribute to it. GitHub is where we coordinate all of this.
+  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.
 
   Neben unserem eigenen Repo hat Zammad auch eine Integration für GitHub.
   Sie schafft einen Datenaustausch, der Ihnen alle relevanten Informationen über Ihre
@@ -237,11 +213,6 @@ Gruppen
   Prinzip der "queues". Die Gruppen in Zammad sind die gleichen wie die queues in
   OTRS.
 
-## H
-
-
-## I
-
 Icinga
 : Icinga ist ein Überwachungssystem, das die Verfügbarkeit
   der gesamten Systeminfrastruktur einer Organisation überwacht.
@@ -263,11 +234,6 @@ Issue-Tracking-System
   Als Helpdesk konzentriert es sich jedoch auf die Kommunikation auf
   Kundenebene und nicht auf die technische Ebene.
 
-## J
-
-
-## K
-
 Kibana <Badge type="info" text="nur on-premise" />
 : Kibana ist ein browserbasiertes Open-Source-Reporting-Tool, das sich auf die Auswertung
   von Daten konzentriert. Es wurde von Elastic entwickelt, weshalb es nicht verwunderlich ist,
@@ -286,13 +252,9 @@ Knowledge Base
   (z.B. gut für Informationen zu ihrem Produkt oder Service) oder
   innerhalb Ihres Teams halten (für interne Prozesse oder Informationen für Teams).
 
-## L
-
 Ein LDAP-Server (Lightweight Directory Access Protocol) stellt zusätzliche Informationen
 : über Ihre Benutzer in Zammad zur Verfügung. Eine Authentifizierung gegen den LDAP und
   die Zuordnung von LDAP-Rollen zu Zammad-Rollen ist ebenfalls möglich.
-
-## M
 
 Makro
 : Ein Makro ist eine Reihe von Aktionen. Durch den Start des Makros werden die Aktionen
@@ -319,8 +281,6 @@ Monit
   eine starke Gemeinschaft dahintersteht. Sie können es in Zammad integrieren. Auf diese Weise
   wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.
 
-## N
-
 Navigation
 : Unter Navigation versteht man die linke Seitenleiste in Zammad, die Tabs zur Navigation,
   die Suche, Benachrichtigungen und viele weitere Elemente enthält, abhängig von Ihrem System.
@@ -333,8 +293,6 @@ Nagios
 : Nagios ist ein weiteres Überwachungstool, das IT-Teams benachrichtigt, wenn ein Vorfall
   auftritt. Es kann in Zammad integriert werden, so dass bei einem Alarm ein Ticket 
   erstellt wird.
-
-## O
 
 On-Premise
 : Dieser Begriff bedeutet, dass Zammad nicht als Cloud-Service der Firma Zammad bereitgestellt wird,
@@ -352,8 +310,6 @@ Besitzer
   Der Besitzer kann durch einen anderen ersetzt werden.
   In diesem Fall empfiehlt es sich, einen Übergabevermerk im Ticket zu hinterlassen, damit
   der neue Besitzer weiß, was zu tun ist.
-
-## P
 
 Eltern/Kind Beziehung
 : Wenn ein Ticket zu weiteren Teilaufgaben (oder zusätzlichen Korrespondenzen) führt,
@@ -376,11 +332,6 @@ Priorität
   Zusätzlich gibt es die Prioritäten 1 (niedrig) und 3 (hoch). Sie können sogar
   weitere Prioritäten zu Ihrem Zammad hinzufügen.
 
-## Q
-
-
-## R
-
 Release
 : Alle paar Monate veröffentlichen wir eine neue Version von Zammad, die als
   Release bezeichnet wird. Jedes Release fügt neue Funktionen zu unserer Software
@@ -389,9 +340,9 @@ Release
   Nebenversionen (wie 1.1, 2.1, usw.) werden in der Zwischenzeit veröffentlicht und bringen
   kleinere Aktualisierungen.
 
-  In unseren [Versionshinweisen] (https://zammad.com/de/releases) können Sie nachlesen, welche
-  Funktionen in neuen Versionen enthalten sind und auch wichtige Informationen darüber,
-  was vor der Aktualisierung von Zammad zu beachten ist.
+  In our [release notes](https://zammad.com/en/releases){target=_blank} you can
+  find what features are included in new versions and also important information
+  about what to consider before updating Zammad.
 
 Rolle
 : Jeder Benutzer hat eine zugewiesene Rolle. Standardmäßig gibt es drei Rollen:
@@ -405,8 +356,6 @@ Rolle
   Kundenoberfläche einsehen.
 
   Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
-
-## S
 
 Zweite Navigationsebene
 : Bezieht sich auf ein zusätzliches Menü neben der Navigation (z.B. beim Öffnen der
@@ -456,8 +405,6 @@ Status
   Automatisierungen oder SLA gesetzt werden. Jeder Status hat einen Statustyp. Es gibt vier Statustypen
   und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.
 
-## T
-
 Tags
 : Tags helfen Ihnen, Tickets zu kategorisieren. Sie können sie auf der Grundlage Ihres Anwendungsfalls
   definieren. Wenn Sie zum Beispiel ein Einzelhandelsunternehmen sind, könnten Ihre Tags auf Ihren
@@ -483,18 +430,11 @@ Textbaustein
   kann hilfreich sein für Einführungen in Ihr Produkt/Ihre Dienstleistung oder für die Ausarbeitung eines
   Angebots.
 
-## U
-
 Benutzer
 : Ein Benutzer ist ein beliebiger Benutzer des Ticketsystems. Jeder Benutzer hat zugewiesene
   Berechtigungen, die ihm den Zugang zu bestimmten Bereichen und Informationen ermöglichen.
   Benutzer können verschiedene Rollen haben, wobei die Standardrollen Agent, Admin
   und Kunde sind.
-
-## V
-
-
-## W
 
 Webhooks
 : Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren.
@@ -502,14 +442,6 @@ Webhooks
   Dadurch haben Sie die Möglichkeit, ein Drittsystem über neue
   Informationen in Zammad zu informieren.
 
-## X
-
-
-## Y
-
-
-## Z
-
 Zammad : Zammad ist der beste Helpdesk der Welt. Punkt.
 
-
+</VPGlossary>
