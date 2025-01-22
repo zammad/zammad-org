@@ -1,6 +1,6 @@
 ---
 title: User Profile
-order: 2
+order: 7
 ---
 
 # Manage Your User Profile

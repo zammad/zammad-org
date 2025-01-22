@@ -267,7 +267,7 @@
       "id": 3,
       "area": "Email::Account",
       "group": "Users",
-      "active": false,
+      "active": true,
       "options": {
         "inbound": {
           "adapter": "imap",

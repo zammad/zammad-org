@@ -14,22 +14,28 @@ title: Уопштено
 које нису очигледне на први поглед. Ове функције су описане у овој
 документацији као и нека општа објашњења и савети.
 
-Ова документације је подељена различите одељке. Тренутно читате одељак
-*Уопштено*. Овај одељак укључује објашњења о документацији као и опис
-функција. Такође постоје често постављана питања (FAQ) и одељак „Како
-да”. Погледајте бочну траку са леве стране или кликните испод за навигацију
-на жељене информације.
+This documentation is divided in different sections. Currently you are
+reading the *General* section. Use the left sidebar to navigate to your
+desired information or the search in the header.
 
-## Садржај одељка корисничке документације
+## Zammad Beginner
 
-TODO: - Links / TOC to different sections of user documentation
+If you are new to Zammad and ticketing software at all, our recommendation
+is to have a look at the [start with Zammad](start-using-zammad) page. You
+can find a description of some important UI elements there as well as basic
+ticket attributes and how to use them.
 
-## Снимци екрана
+## Advanced User
 
-![Пример снимка екрана (пуна
-страна)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)
+If you are already familiar with the basics of Zammad, you should have a
+look at the [advanced features](advanced-features) page.
 
-![Пример снимка екрана (елемент
-стране)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)
+If you can't find what you are looking for, try the search in the header of
+the site.
 
-![Пример снимка екрана (статички)](/screenshots/dashboard.png)
+## Administrator
+
+Are you an administrator and want to learn how to configure and manage
+Zammad? Then head over to the [manage
+Zammad](/en/documentation/manage-zammad/general) section, have a look at the
+tutorials and reference and use the search.

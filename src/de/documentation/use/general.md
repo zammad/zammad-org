@@ -16,22 +16,28 @@ es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
 Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
 allgemeine Erklärungen und Tipps.
 
-Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit lesen
-Sie den Abschnitt *Allgemein*. Dieser Abschnitt enthält Erklärungen zur
-Dokumentation selbst sowie eine Beschreibung der Funktionen. Es gibt auch
-häufig gestellte Fragen (FAQ) und einen How-To-Bereich. Siehe linke
-Seitenleiste oder unten, um zu den entsprechenden Bereichen zu navigieren.
+This documentation is divided in different sections. Currently you are
+reading the *General* section. Use the left sidebar to navigate to your
+desired information or the search in the header.
 
-## Inhalt der Benutzerdokumentation
+## Zammad Beginner
 
-TODO: - Links / TOC to different sections of user documentation
+If you are new to Zammad and ticketing software at all, our recommendation
+is to have a look at the [start with Zammad](start-using-zammad) page. You
+can find a description of some important UI elements there as well as basic
+ticket attributes and how to use them.
 
-## Screenshots
+## Advanced User
 
-![Test Screenshot (Full
-Page)](/screenshots/cypress/test.cy.js/test-screenshot-full-page.png)
+If you are already familiar with the basics of Zammad, you should have a
+look at the [advanced features](advanced-features) page.
 
-![Test Screenshot (Page
-Element)](/screenshots/cypress/test.cy.js/test-screenshot-page-element.png)
+If you can't find what you are looking for, try the search in the header of
+the site.
 
-![Test Screenshot (Static)](/screenshots/dashboard.png)
+## Administrator
+
+Are you an administrator and want to learn how to configure and manage
+Zammad? Then head over to the [manage
+Zammad](/en/documentation/manage-zammad/general) section, have a look at the
+tutorials and reference and use the search.
