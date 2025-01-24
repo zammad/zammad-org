@@ -14,7 +14,7 @@ title: Уопштено
 које нису очигледне на први поглед. Ове функције су описане у овој
 документацији као и нека општа објашњења и савети.
 
-This documentation is divided in different sections. Currently you are
+This documentation is divided into different sections. Currently you are
 reading the *General* section. Use the left sidebar to navigate to your
 desired information or the search in the header.
 

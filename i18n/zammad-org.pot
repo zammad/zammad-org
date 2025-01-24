@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-22 09:51+0100\n"
+"POT-Creation-Date: 2025-01-24 16:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1160,61 +1160,633 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:8
 #, markdown-text, no-wrap
-msgid "Mention a Colleague"
+msgid "Use Keyboard Shortcuts"
 msgstr ""
 
-#. type: Title ##
-#: src/en/documentation/use/advanced-features.md:10
-#, markdown-text, no-wrap
-msgid "Subscribe to a Ticket"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:11
+#, markdown-text
+msgid "TODO"
 msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:12
 #, markdown-text, no-wrap
+msgid "Adjust Behavior After Updating a Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:15
+#, markdown-text
+msgid ""
+"![Screenshot shows behavior after update "
+"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:17
+#: src/en/documentation/use/advanced-features.md:47
+#: src/en/documentation/use/advanced-features.md:73
+#: src/en/documentation/use/advanced-features.md:92
+#: src/en/documentation/use/advanced-features.md:109
+#: src/en/documentation/use/advanced-features.md:131
+#: src/en/documentation/use/advanced-features.md:152
+#: src/en/documentation/use/advanced-features.md:199
+#: src/en/documentation/use/advanced-features.md:206
+#: src/en/documentation/use/advanced-features.md:213
+#: src/en/documentation/use/advanced-features.md:227
+#: src/en/documentation/use/advanced-features.md:258
+#: src/en/documentation/use/advanced-features.md:278
+#, markdown-text, no-wrap
+msgid "**Why?**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:21
+#, markdown-text
+msgid ""
+"It is possible to automatically close a ticket tab in the navigation "
+"sidebar.  It depends on your preferences, but you can save a click after "
+"updating or updating a ticket to *closed* state."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:23
+#: src/en/documentation/use/advanced-features.md:55
+#: src/en/documentation/use/advanced-features.md:79
+#: src/en/documentation/use/advanced-features.md:97
+#: src/en/documentation/use/advanced-features.md:117
+#: src/en/documentation/use/advanced-features.md:139
+#: src/en/documentation/use/advanced-features.md:159
+#: src/en/documentation/use/advanced-features.md:202
+#: src/en/documentation/use/advanced-features.md:209
+#: src/en/documentation/use/advanced-features.md:216
+#: src/en/documentation/use/advanced-features.md:238
+#: src/en/documentation/use/advanced-features.md:264
+#: src/en/documentation/use/advanced-features.md:280
+#, markdown-text, no-wrap
+msgid "**How?**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:27
+#, markdown-text
+msgid ""
+"In the footer bar of the ticket detail view, click on the `Stay on tab ^` "
+"button and select your desired option (if the default is still set, "
+"otherwise it is labeled as the other options below). You have different "
+"options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+#, markdown-text
+msgid ""
+"**Stay on tab**: Default option. You have to manually close the tab if you "
+"want to have it removed from your navigation sidebar."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+#, markdown-text
+msgid ""
+"**Close tab**: This option closes the tab on each update of the "
+"ticket. Might be a good option if you have to deal with many tickets and/or "
+"the tickets require many interactions."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+#, markdown-text
+msgid ""
+"**Close tab on ticket close**: This option only closes the tab when the "
+"ticket is updated and the state is set to *closed*."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/advanced-features.md:36
+#, no-wrap
+msgid ""
+"If your situation differs from ticket to ticket, you can leave **Stay on "
+"tab**\n"
+"and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing "
+"the\n"
+"ticket state to closed and close the ticket tab.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:42
+#, markdown-text, no-wrap
 msgid "Use Text Templates"
 msgstr ""
 
-#. type: Title ##
-#: src/en/documentation/use/advanced-features.md:14
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:45
+#, markdown-text
+msgid ""
+"![Screenshot shows text template "
+"feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:49
+#, markdown-text
+msgid "The usage of text modules has benefits like:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:53
+#, markdown-text
+msgid "You save time while answering tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:53
+#, markdown-text
+msgid ""
+"Answers from you and your colleagues are aligned because you use the same "
+"text for answers"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:58
+#, markdown-text
+msgid ""
+"To use text modules simply type `::` in the editor followed by parts of the "
+"name or keyword of the text module."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:62
 #, markdown-text, no-wrap
-msgid "Assign a Colleague to a Ticket"
+msgid ""
+"You can pick one by clicking on it or by using the up and down arrows "
+"followed\n"
+"by <kbd>enter</kbd> on your keyboard. There are some text modules in "
+"Zammad\n"
+"which are shipped by default.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:67
+#, markdown-text
+msgid ""
+"If you have to answer the same question again and again, ask your Zammad "
+"admin to create such a text module for you. They can even include variables "
+"like customer name or any other available attribute which get replaced while "
+"using it in a ticket."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:16
+#: src/en/documentation/use/advanced-features.md:68
+#, markdown-text, no-wrap
+msgid "Mention a Colleague"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:71
+#, markdown-text
+msgid ""
+"![Screenshot shows mention "
+"feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:77
+#, markdown-text
+msgid ""
+"Ask or request information from your colleagues or mention them in important "
+"tickets so they receive notifications for ticket updates and are "
+"automatically subscribed to this ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:82
+#, markdown-text
+msgid ""
+"While writing an ticket article, simply type `@@` and enter some letters of "
+"the name of the colleague you want to mention."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:86
+#, markdown-text, no-wrap
+msgid ""
+"Zammad displays a list with all possible matches where you can pick one\n"
+"by clicking on it or by using the up and down arrows followed by\n"
+"<kbd>enter</kbd> on your keyboard.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:87
+#, markdown-text, no-wrap
+msgid "Subscribe to a Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:90
+#, markdown-text
+msgid ""
+"![Screenshot shows subscribe "
+"feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:95
+#, markdown-text
+msgid ""
+"If you are interested in the progress of a ticket, you can subscribe to it.  "
+"This means you will receive notifications for each update."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:103
+#, markdown-text
+msgid ""
+"Activate the \"Subscribe me\" toggle in the ticket side panel to get "
+"notifications. If you have been mentioned in a ticket, you are automatically "
+"subscribed. Switch the toggle off to stop the notification.  The avatars "
+"displayed show you who has subscribed to the ticket and is therefore "
+"notified of updates."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:104
 #, markdown-text, no-wrap
 msgid "Use a Macro"
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:107
+#, markdown-text
+msgid ""
+"![Screenshot shows macro action "
+"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:115
+#, markdown-text
+msgid ""
+"If you have many steps you do over and over again, you should use a macro "
+"for that. In such a macro, your admin can pre-define different ticket "
+"actions you can apply with just a click. As an example, Zammad ships a "
+"\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
+"the macro is assigned as owner, a tag `spam` is added and the ticket is "
+"closed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:121
+#, markdown-text
+msgid ""
+"If your admin already created a macro, you can execute it in the ticket "
+"detail view by clicking the three dots button `︙` in the right corner of the "
+"footer bar and select the macro you want to execute."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/advanced-features.md:122
+#, no-wrap
+msgid ""
+"The macro gets executed immediately and without an additional "
+"confirmation!\n"
+msgstr ""
+
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:18
+#: src/en/documentation/use/advanced-features.md:126
 #, markdown-text, no-wrap
 msgid "Use Tags"
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:129
+#, markdown-text
+msgid ""
+"![Screenshot shows macro action "
+"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:137
+#, markdown-text
+msgid ""
+"Tags are one way to categorize a ticket. You can think of tags as some kind "
+"of labels. They can be used in conditions like in triggers and in overviews "
+"and they can also be assigned automatically by macros, schedulers and "
+"triggers.  Of course you can search for the text of the tags and will find "
+"tickets which have the tag attached."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:143
+#, markdown-text
+msgid ""
+"In the ticket sidebar, you can find a section which is labels as "
+"\"Tags\". Add a tag by clicking on the `+` button. You can select existing "
+"tags and add new ones (if your admin didn't disable to add new tags)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:146
+#, markdown-text
+msgid ""
+"Remove them by simply click on the `X` button. Be aware that there is no "
+"confirmation dialog for deleting a tag from a ticket."
+msgstr ""
+
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:20
+#: src/en/documentation/use/advanced-features.md:147
 #, markdown-text, no-wrap
 msgid "Use a Checklist"
 msgstr ""
 
-#. type: Title ##
-#: src/en/documentation/use/advanced-features.md:22
-#, markdown-text, no-wrap
-msgid "Use Keyboard Shortcuts"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:150
+#, markdown-text
+msgid ""
+"![Screenshot shows macro action "
+"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:157
+#, markdown-text
+msgid "To keep track of tasks"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:157
+#, markdown-text
+msgid "To complete tasks in a structured way"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:157
+#, markdown-text
+msgid "To make sure nothing gets forgotten"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:157
+#, markdown-text
+msgid "To make the progress of work more visible"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:163
+#, markdown-text
+msgid ""
+"Select the \"Checklist\" tab in the sidebar. If you can't see it, your "
+"Zammad admin disabled it. You can only add or edit a checklist, if you have "
+"the permission to edit the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:165
+#, markdown-text
+msgid "In the checklist sidebar, you can:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid ""
+"Add a checklist: either by creating a new one by clicking on `Add Empty "
+"Checklist` or from a template by using `Add From a Template` (if you don't "
+"see the template button, there is none)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid "Edit the current checklist:"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid ""
+"Rename it by clicking on the title or using the `︙` menu in the sidebar "
+"header."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid "Add checklist items by clicking the `+` button."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid ""
+"Change the text of the checklist items, either by just clicking on it or "
+"using the `︙` menu next to the item."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid "`Reorder` the items by clicking this button and drag & drop the items."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:177
+#, markdown-text
+msgid "Delete the complete checklist by using the `︙` menu in the sidebar header."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:179
+#, markdown-text
+msgid "There are two features, which are not directly visible:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:183
+#, markdown-text
+msgid ""
+"You can refer to other tickets as a checklist item by using its hook and "
+"number in the item text (e.g. `Ticket#123456`). Such items can't be checked "
+"manually, they reflect the state of the referred ticket."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/advanced-features.md:183
+#, no-wrap
+msgid ""
+"  Fetch the ticket hook and number by going to the desired ticket and "
+"either\n"
+"  use the copy button in the header or use the keyboard shortcut "
+"<kbd>.</kbd>.\n"
+"  Then you can paste it in the checklist you want to have it included.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:194
+#, markdown-text
+msgid ""
+"Zammad automatically checks if all checklist items are completed. The check "
+"is performed when you set a ticket to \"closed\". If not all items are "
+"completed, Zammad will prompt you to either work on the remaining tasks and "
+"keep the ticket open or to close it anyway. When referencing other tickets "
+"in your checklist, only those which are closed (with a green circle) are "
+"considered as completed."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:24
+#: src/en/documentation/use/advanced-features.md:196
 #, markdown-text, no-wrap
 msgid "Ticket Templates"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:26
+#: src/en/documentation/use/advanced-features.md:203
 #, markdown-text, no-wrap
 msgid "Simultaneous Processing Detection"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:210
+#, markdown-text, no-wrap
+msgid "Bulk Actions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:218
+#, markdown-text
+msgid "TODO after overview bulk action implementation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:221
+#, markdown-text
+msgid "Via drag & drop Via drop down selectors"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:222
+#, markdown-text, no-wrap
+msgid "Merge Tickets"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:225
+#, markdown-text
+msgid ""
+"![Screenshot shows the ticket merge side "
+"panel](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:233
+#, markdown-text
+msgid ""
+"If you have two or more tickets about the same issue, you may want to merge "
+"those tickets into one. This might be the case if a customer sends you a new "
+"email which can't be assigned to the existing ticket (e.g. the ticket "
+"reference is missing because the customer sends you a completely new email "
+"instead of answering in the existing thread)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:236
+#, markdown-text
+msgid ""
+"Merging a ticket migrates all messages and notes of the ticket from where "
+"you select the merging into the selected one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:244
+#, markdown-text
+msgid ""
+"Go to the ticket you want to merge into another one. In the ticket sidebar, "
+"use the `︙` menu and select `Merge`. This opens a side panel in which you "
+"can select a ticket by clicking on it or enter a ticket number in search "
+"field.  When you selected a target ticket, confirm by using the `Merge` "
+"button at the bottom."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:247
+#, markdown-text
+msgid ""
+"As result, the articles are moved into the chosen tickets. The ticket in "
+"which you executed the merge still exists with the following changes:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:251
+#, markdown-text
+msgid "The articles have been replaced by a \"merged\" label"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:251
+#, markdown-text
+msgid "The state has changed to \"merged\""
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:251
+#, markdown-text
+msgid "The ticket is linked to its \"parent\" ticket"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:253
+#, markdown-text, no-wrap
+msgid "Split Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:256
+#, markdown-text
+msgid ""
+"![Screenshot shows the article action split "
+"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:262
+#, markdown-text
+msgid ""
+"If you have a ticket which is about more than one issue, you might want to "
+"split it in two or more separate tickets. For example this might be the case "
+"if a customer has a technical question and wants to place an order."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:267
+#, markdown-text
+msgid ""
+"To split an article off, use the `︙` menu next to an article and select "
+"`Split`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:271
+#, markdown-text
+msgid ""
+"This results in a ticket create screen with the same attributes set as in "
+"the initial ticket. The content of the article is also included. You can "
+"change everything to your needs and then click on `Create`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:274
+#, markdown-text
+msgid ""
+"The just created ticket is linked in the original one as child. The original "
+"ticket is linked in the split off ticket as parent."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:275
+#, markdown-text, no-wrap
+msgid "Link Tickets"
 msgstr ""
 
 #. type: Title #
@@ -1326,7 +1898,7 @@ msgstr ""
 #: src/en/documentation/use/general.md:20
 #, markdown-text
 msgid ""
-"This documentation is divided in different sections. Currently you are "
+"This documentation is divided into different sections. Currently you are "
 "reading the *General* section. Use the left sidebar to navigate to your "
 "desired information or the search in the header."
 msgstr ""

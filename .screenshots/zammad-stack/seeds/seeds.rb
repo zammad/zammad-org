@@ -438,6 +438,42 @@ RMA? Or can we ask our engineering team for help?",
   updated_at:   created_at,
 )
 
+# Demo ticket for screenshots of some elements
+mola = User.find_by(login: 'mola@babangida.xz')
+ava = User.find_by(login: 'ava@fastlane.inc')
+UserInfo.current_user_id = mola.id
+created_at = Time.zone.now - 1.hours
+ticket6 = Ticket.create(
+  title:      'My battery is dead / order 110572',
+  group:      Group.find_by(name: 'Support'),
+  customer:   mola,
+  owner_id:   ava.id,
+  state:      Ticket::State.find_by(name: 'open'),
+  priority:   Ticket::Priority.find_by(name: '2 normal'),
+  created_at: created_at,
+  updated_at: created_at,
+)
+article = Ticket::Article.create(
+  ticket:       ticket6,
+  type:         Ticket::Article::Type.find_by(name: 'email'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{mola.fullname} <#{mola.email}>",
+  to:           'support@fastlane.inc',
+  subject:      'My battery is dead / order 110572',
+  body:         "Hi Fast Lane Team,
+
+I just received my new mobile phone and the battery seems dead. It only lasts
+about 15 minutes after a full charge. What's the process now? This is unusable
+for me currently.
+
+Mola
+",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at,
+  updated_at:   created_at,
+)
+
 puts 'Setting up system...'
 
 # System preparation
