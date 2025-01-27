@@ -1,7 +1,8 @@
-.DS_Store
+.gitignore .DS_Store
 node_modules
 cache
 dist
 
 .screenshots/zammad-stack/zammad-docker-compose
+.screenshots/cypress/downloads
 src/public/screenshots/cypress
