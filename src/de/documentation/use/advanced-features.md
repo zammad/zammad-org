@@ -130,6 +130,9 @@ footer bar and select the macro you want to execute.
 The macro gets executed immediately and without an additional confirmation!
 :::
 
+You can also apply a macro to several ticket at once. Have a loot at [bulk
+actions](#bulk-actions) how to do that.
+
 ## Use Tags
 
 ![Screenshot shows macro action
@@ -206,24 +209,81 @@ There are two features, which are not directly visible:
 
 **Why?**
 
+Quickly create a ticket with pre-defined attributes like title, text, tags
+and more saves you time. This requires your admin to create a ticket
+template.
 
 **How?**
 
-## Simultaneous Processing Detection
+In the ticket create screen, you can find an `Apply Template ^` button in
+the footer bar, if a template is available. Select the template you want to
+apply and apply changes if desired.
+
+
+## Gemeinsame Entwürfe
 
 **Why?**
 
+To share a draft with other agents of your group, e.g. to reflect a QA
+process, instead of "just" adding an internal article. In such a draft you
+can even include changed ticket attributes like priority, state and custom
+attributes as well as an article with an answer to the customer.
+
+This is an optional feature. If you can't see it, your admin has turned it
+off.
 
 **How?**
+
+To **save a draft**, use the `︙` menu in the footer of the ticket details
+view and select "Save as draft".
+
+To **apply an already existing draft**, click on the `Draft Available`
+button on the left side of the footer.
+
+::: warning
+Applying a draft overwrites your unsaved changes!
+:::
+
+## Simultaneous Work Detection
+
+![Screenshot shows other agents viewing/editing the
+ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
+
+**Why?**
+
+Things to avoid:
+
+- Superfluous work
+- Conflicting answers from different agents
+- Overwritten/undone changes by different agents
+
+This is why you can immediately see who views and edits the currently viewed
+ticket.
+
+**How?**
+
+Have a look at the footer bar in the ticket detail view. When there is an
+avatar from another agent (see screenshot above), you are not the only one
+viewing this ticket.
+
+Depending on the additional icon and if the avatar icon is faded, it means:
+
+- Another agent is viewing the ticket (not faded avatar without additional
+  icon)
+- Another agent opened the ticket but is currently not actively viewing this
+  ticket (faded avatar icon with the snooze icon, see left avatar in
+  screenshot)
+- Another agent is currently actively working on this ticket (not faded
+  avatar icon with a pencil icon, see right avatar in screenshot)
+
 
 ## Bulk Actions
 
+TODO after overview bulk action implementation
+
 **Why?**
 
-
 **How?**
-
-TODO after overview bulk action implementation
 
 Via drag & drop Via drop down selectors
 
@@ -286,5 +346,18 @@ ticket is linked in the split off ticket as parent.
 
 **Why?**
 
+When tickets about related issues arise, they can be linked to each other
+for easier reference. [Merged](#merge-tickets) and [split](#split-ticket)
+tickets are automatically linked.
 
 **How?**
+
+In the ticket sidebar, add a link to another ticket by clicking the `+`
+button in the "Links" section. This opens a side panel in which you can
+select a ticket by clicking on it or enter a ticket number in search
+field. Additionally, you can choose between different link types:
+
+- **Normal:** for related ticket which have no hierarchy.
+- **Parent/Child**: for related tickets where one is the main issue and the
+  other is a subtask. This link type is used by default if a tickets gets
+  split or merged.
