@@ -43,11 +43,10 @@ describe('usage advanced features', () => {
     cy.wait(3000) // loading
     cy.get('[aria-label="Additional ticket edit actions"]').click()
     cy.wait(500) //transition
-    //Screenshot of complete Zammad app is done, but I only want to have the button and the menu
     cy.get('[id^=popover-]').clip().then((PopoverClip) => {
       cy.get('footer').find('[id^=action-menu-]').clip().then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
-          cy.screenshot('ticket-macro')
+          cy.screenshot('ticket-macro', { clip })
         })
       })
     })
