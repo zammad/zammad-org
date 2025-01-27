@@ -49,16 +49,16 @@ const waitForGqlResponse = (alias, key) => {
 
 Cypress.Commands.add('waitForGqlResponse', waitForGqlResponse)
 
-Cypress.Commands.add('clip', { prevSubject: 'get'}, ($el) => {
+Cypress.Commands.add('clip', { prevSubject: 'get'}, ($el, options = { padding: 0 }) => {
   const offset = $el.offset()
   const width = $el.outerWidth()
   const height = $el.outerHeight()
 
   return cy.wrap({
-    x: offset.left,
-    y: offset.top,
-    width,
-    height,
+    x: offset.left - options.padding,
+    y: offset.top - options.padding,
+    width: width + options.padding * 2,
+    height: height + options.padding * 2,
   })
 })
 

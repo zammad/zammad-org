@@ -27,6 +27,9 @@ module.exports = defineConfig({
 
           // force screen to be non-retina (1280x720 size)
           launchOptions.args.push('--force-device-scale-factor=1')
+
+          // Render scrollbars only as overlays.
+          launchOptions.args.push('--enable-features=OverlayScrollbar')
         }
 
         if (browser.name === 'electron' && browser.isHeadless) {

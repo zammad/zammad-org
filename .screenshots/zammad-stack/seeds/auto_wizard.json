@@ -23,7 +23,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -36,7 +37,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -49,7 +51,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -62,7 +65,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -75,7 +79,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -88,7 +93,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -101,7 +107,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -114,7 +121,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -127,7 +135,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -140,7 +149,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -153,7 +163,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -166,7 +177,8 @@
       "organization": "Fast Lane Hardware",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "roles": ["Agent"]
     },
@@ -200,7 +212,8 @@
       "organization": "Midland Bank",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "vip": true,
       "roles": ["Customer"]
@@ -214,7 +227,8 @@
       "organization": "Joe's car parts",
       "preferences": {
         "intro": true,
-        "keyboard_shortcuts_clues": true
+        "keyboard_shortcuts_clues": true,
+        "theme": "light"
       },
       "vip": true,
       "roles": ["Customer"]
@@ -223,42 +237,52 @@
   "Groups": [
     {
       "name": "Support",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "hannah@fastlane.inc"]
     },
     {
       "name": "Support::1st Level",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "julian@fastlane.inc", "thomas@fastlane.inc", "liam@fastlane.inc", "alex@fastlane.inc", "emily@fastlane.inc", "hannah@fastlane.inc"]
     },
     {
       "name": "Support::2nd Level",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "ethan@fastlane.inc", "julian@fastlane.inc", "thomas@fastlane.inc", "liam@fastlane.inc", "hannah@fastlane.inc"]
     },
     {
       "name": "Sales",
+      "email_address": "Fast Lane B2B Sales",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "morgan@fastlane.inc", "ava@fastlane.inc"]
     },
     {
       "name": "Logistics Department",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
     },
     {
       "name": "Logistics Department::Shipping",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
     },
     {
       "name": "Logistics Department::Returns Processing",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "ava@fastlane.inc"]
     },
     {
       "name": "IT Internal",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "jackson@fastlane.inc"]
     },
     {
       "name": "IT Internal::Infrastructure",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "jackson@fastlane.inc"]
     },
     {
       "name": "IT Internal::IT Support",
+      "email_address": "Fast Lane Support",
       "users": ["lauren@fastlane.inc", "hannah@fastlane.inc", "emily.t@fastlane.inc"]
     }
   ],
@@ -286,14 +310,12 @@
   ],
   "EmailAddresses": [
     {
-      "id": 1,
-      "channel_id": 1,
+      "channel_id": 3,
       "name": "Fast Lane Support",
       "email": "support@fastlane.inc"
     },
     {
-      "id": 1,
-      "channel_id": 2,
+      "channel_id": 3,
       "name": "Fast Lane B2B Sales",
       "email": "sales@fastlane.inc"
     }
