@@ -98,7 +98,7 @@ describe('usage advanced features', () => {
     cy.get('#content-sidebar').find('[id^=action-menu-]').click()
     cy.wait(300) // transition
     cy.get('button').contains('Merge').click()
-    cy.wait(500) //transition
+    cy.wait(1000) //transition
     //cy.get('[id=flyout-ticket-merge]').screenshot('ticket-merge') //alternative with complete sidebar
     cy.get('[id="flyout-ticket-merge"]').find('header').clip().then((TopClip) => {
       cy.get('table').clip().then((BottomClip) => {

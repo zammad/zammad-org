@@ -24,7 +24,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -38,7 +38,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -52,7 +52,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -66,7 +66,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -80,7 +80,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -94,7 +94,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -108,7 +108,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -122,7 +122,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -136,7 +136,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -150,7 +150,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Admin", "Agent"]
     },
@@ -164,7 +164,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -178,7 +178,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "roles": ["Agent"]
     },
@@ -213,7 +213,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "vip": true,
       "roles": ["Customer"]
@@ -228,7 +228,7 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "light"
+        "theme": "dark"
       },
       "vip": true,
       "roles": ["Customer"]
