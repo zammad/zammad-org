@@ -135,8 +135,8 @@ actions](#bulk-actions) how to do that.
 
 ## Use Tags
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
+![Screenshot shows tag area in ticket side
+bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
 
 **Why?**
 
@@ -157,8 +157,8 @@ confirmation dialog for deleting a tag from a ticket.
 
 ## Use a Checklist
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
+![Screenshot shows a checklist from checklist
+sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
 
 **Why?**
 
@@ -311,7 +311,7 @@ can select a ticket by clicking on it or enter a ticket number in search
 field.  When you selected a target ticket, confirm by using the `Merge`
 button at the bottom.
 
-As result, the articles are moved into the chosen tickets. The ticket in
+As result, the articles are moved into the chosen ticket. The ticket in
 which you executed the merge still exists with the following changes:
 
 - The articles have been replaced by a "merged" label

@@ -213,7 +213,7 @@ systemctl start nginx
 
 This documentation expects a already working Apache configuration.  You
 should have a look at the [webserver configuration
-guide](/en/tutorials/webserver-config.md) before continuing.
+guide](/en/tutorials/webserver-config) before continuing.
 
 ### 2c. Install Further Apache Dependencies
 
