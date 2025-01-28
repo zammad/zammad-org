@@ -94,11 +94,11 @@ describe('usage advanced features', () => {
   it('ticket merge', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/5')
-    cy.wait(2000) // transition
+    cy.wait(1000) // transition
     cy.get('#content-sidebar').find('[id^=action-menu-]').click()
     cy.wait(300) // transition
     cy.get('button').contains('Merge').click()
-    cy.wait(1000) //transition
+    cy.wait(3000) // waiting on ticket to show up in side panel
     //cy.get('[id=flyout-ticket-merge]').screenshot('ticket-merge') //alternative with complete sidebar
     cy.get('[id="flyout-ticket-merge"]').find('header').clip().then((TopClip) => {
       cy.get('table').clip().then((BottomClip) => {
