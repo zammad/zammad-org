@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-08 12:01+0000\n"
-"PO-Revision-Date: 2024-12-17 08:00+0000\n"
+"POT-Creation-Date: 2025-02-03 14:55+0100\n"
+"PO-Revision-Date: 2025-01-31 14:48+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -133,10 +133,8 @@ msgstr "На овој страни"
 msgid "https://github.com/zammad"
 msgstr "https://github.com/zammad"
 
-#. type: Title ##
-#: .vitepress/search.en.yaml:1 src/en/reference/rest-api/organization.md:24
-#: src/en/reference/rest-api/tags.md:22 src/en/reference/rest-api/ticket.md:26
-#: src/en/reference/rest-api/user.md:38
+#. type: Hash Value: translations button buttonText
+#: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Search"
 msgstr "Претрага"
@@ -206,18 +204,6 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -769,7 +755,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:179
 #: src/en/tutorials/connect-config-elasticsearch.md:90
-#: src/en/tutorials/sso-kerberos.md:527
+#: src/en/tutorials/sso-kerberos.md:528
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "Решавање проблема"
@@ -1139,8 +1125,10 @@ msgstr ""
 ": Ово је додатна дефиниција другог термина.\n"
 
 #. type: Title ##
-#: src/en/documentation/introduction.md:1 src/en/reference/rest-api/cti.md:8
-#: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
+#: src/en/documentation/introduction.md:1
+#: src/en/documentation/use/start-using-zammad.md:215
+#: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
+#: src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
 #, no-wrap
 msgid "Introduction"
@@ -1189,6 +1177,18 @@ msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
 msgstr ""
 "[Администраторска документација](/en/documentation/manage-zammad/general)"
 
+#. type: Title ###
+#: src/en/documentation/manage-zammad/general.md:1
+#: src/en/documentation/manage-zammad/general.md:6
+#: src/en/documentation/use/faq.md:8 src/en/documentation/use/general.md:1
+#: src/en/documentation/use/general.md:11
+#: src/en/documentation/use/start-using-zammad.md:10
+#: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:90
+#: src/en/reference/rest-api/cti.md:243 src/en/reference/rest-api/cti.md:361
+#, no-wrap
+msgid "General"
+msgstr "Уопштено"
+
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/manage-zammad/index.md:1
 #, no-wrap
@@ -1208,35 +1208,862 @@ msgid "Setup a new system"
 msgstr "Подешавање новог система"
 
 #. type: Title #
-#: src/en/documentation/use/faq.md:5
+#: src/en/documentation/use/advanced-features.md:1
+#: src/en/documentation/use/advanced-features.md:6
+#, no-wrap
+msgid "Advanced Features"
+msgstr "Напредне функције"
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:8
+#, no-wrap
+msgid "Use Keyboard Shortcuts"
+msgstr "Користите пречице на тастатури"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:11
+msgid "TODO"
+msgstr "TODO"
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:12
+#, no-wrap
+msgid "Adjust Behavior After Updating a Ticket"
+msgstr "Подесите понашање након освежавања тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:15
+msgid ""
+"![Screenshot shows behavior after update menu](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-behavior-update.png)"
+msgstr ""
+"![Снимак екрана приказује мени понашања након освежавања](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:17
+#: src/en/documentation/use/advanced-features.md:47
+#: src/en/documentation/use/advanced-features.md:73
+#: src/en/documentation/use/advanced-features.md:92
+#: src/en/documentation/use/advanced-features.md:109
+#: src/en/documentation/use/advanced-features.md:134
+#: src/en/documentation/use/advanced-features.md:155
+#: src/en/documentation/use/advanced-features.md:202
+#: src/en/documentation/use/advanced-features.md:216
+#: src/en/documentation/use/advanced-features.md:241
+#: src/en/documentation/use/advanced-features.md:271
+#: src/en/documentation/use/advanced-features.md:282
+#: src/en/documentation/use/advanced-features.md:313
+#: src/en/documentation/use/advanced-features.md:333
+#, no-wrap
+msgid "**Why?**\n"
+msgstr "**Зашто?**\n"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:21
+msgid ""
+"It is possible to automatically close a ticket tab in the navigation "
+"sidebar.  It depends on your preferences, but you can save a click after "
+"updating or updating a ticket to *closed* state."
+msgstr ""
+"Могуће је аутоматски затворити прозор тикета у бочној траци навигације.  "
+"Зависи од ваших подешавања, али можете уштедети клик након освежавања или "
+"освежавања тикета са стањем *затворено*."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:23
+#: src/en/documentation/use/advanced-features.md:55
+#: src/en/documentation/use/advanced-features.md:79
+#: src/en/documentation/use/advanced-features.md:97
+#: src/en/documentation/use/advanced-features.md:117
+#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:162
+#: src/en/documentation/use/advanced-features.md:207
+#: src/en/documentation/use/advanced-features.md:225
+#: src/en/documentation/use/advanced-features.md:252
+#: src/en/documentation/use/advanced-features.md:273
+#: src/en/documentation/use/advanced-features.md:293
+#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:339
+#, no-wrap
+msgid "**How?**\n"
+msgstr "**Како?**\n"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:27
+msgid ""
+"In the footer bar of the ticket detail view, click on the `Stay on tab ^` "
+"button and select your desired option (if the default is still set, "
+"otherwise it is labeled as the other options below). You have different "
+"options:"
+msgstr ""
+"У доњој траци детаљног приказа тикета, кликните на дугме `Остани у прозору "
+"^` и одаберите жељену опцију (уколико је на подразумеваној вредности, у "
+"супротном имаће један од назива опција испод). Имате неколико различитих "
+"опција:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+msgid ""
+"**Stay on tab**: Default option. You have to manually close the tab if you "
+"want to have it removed from your navigation sidebar."
+msgstr ""
+"**Остани у прозору**: Подразумевана опција. Мораћете ручно да затворите "
+"прозор уколико желите да буде уклоњен из ваше бочне траке навигације."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+msgid ""
+"**Close tab**: This option closes the tab on each update of the ticket. "
+"Might be a good option if you have to deal with many tickets and/or the "
+"tickets require many interactions."
+msgstr ""
+"**Затвори прозор**: Ова опција затвара прозор по сваком освежавању тикета. "
+"Може бити добра опција ако обрађујете пуно тикета и/или тикети захтевају "
+"пуно интеракције."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:35
+msgid ""
+"**Close tab on ticket close**: This option only closes the tab when the "
+"ticket is updated and the state is set to *closed*."
+msgstr ""
+"**Затвори прозор по затварању тикета**: Ова опција затвара прозор само када "
+"је тикет освежен и стање је постављено на *затворено*."
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/advanced-features.md:36
+#, no-wrap
+msgid ""
+"If your situation differs from ticket to ticket, you can leave **Stay on tab**\n"
+"and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing the\n"
+"ticket state to closed and close the ticket tab.\n"
+msgstr ""
+"Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**\n"
+"и користити пречицу на тастатури <kbd>Shift</kbd> <kbd>c</kbd> за промену\n"
+"стања тикета на затворено и затварање прозора тикета.\n"
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:42
+#, no-wrap
+msgid "Use Text Templates"
+msgstr "Користите текстуалне шаблоне"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:45
+msgid ""
+"![Screenshot shows text template feature](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-article-text-template.png)"
+msgstr ""
+"![Снимак екрана приказује функцију текстуалних шаблона](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-article-text-template.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:49
+msgid "The usage of text modules has benefits like:"
+msgstr "Коришћење текстуалних исечака доноси предности као што су:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:53
+msgid "You save time while answering tickets"
+msgstr "Штедите време приликом одговарања на тикете"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:53
+msgid ""
+"Answers from you and your colleagues are aligned because you use the same "
+"text for answers"
+msgstr ""
+"Ваши и одговори ваших колега се поклапају јер користите идентичан текст за "
+"одговоре"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:58
+msgid ""
+"To use text modules simply type `::` in the editor followed by parts of the "
+"name or keyword of the text module."
+msgstr ""
+"За коришћење текстуалних исечака, једноставно унесите `::` у уредник текста "
+"а затим део назива или кључну реч исечка."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:62
+#, no-wrap
+msgid ""
+"You can pick one by clicking on it or by using the up and down arrows followed\n"
+"by <kbd>enter</kbd> on your keyboard. There are some text modules in Zammad\n"
+"which are shipped by default.\n"
+msgstr ""
+"Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле а затим\n"
+"притиском на <kbd>enter</kbd> на вашој тастатури. Zammad долази са неким подразумеваним\n"
+"текстуалним исечцима.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:67
+msgid ""
+"If you have to answer the same question again and again, ask your Zammad "
+"admin to create such a text module for you. They can even include variables "
+"like customer name or any other available attribute which get replaced while "
+"using it in a ticket."
+msgstr ""
+"Уколико ухватите себе да стално одговарате на идентично питање, замолите "
+"вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу "
+"укључивати и променљиве као што су име клијента или било који други атрибут, "
+"које ће бити замењене кад их користите у тикету."
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:68
+#, no-wrap
+msgid "Mention a Colleague"
+msgstr "Помените колегу"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:71
+msgid ""
+"![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
+"features.cy.js/ticket-article-mention.png)"
+msgstr ""
+"![Снимак екрана приказује функцију помињања](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-article-mention.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:77
+msgid ""
+"Ask or request information from your colleagues or mention them in important "
+"tickets so they receive notifications for ticket updates and are "
+"automatically subscribed to this ticket."
+msgstr ""
+"Затражите информације од ваших колега или их помените у важним тикетима да "
+"би добили обавештења о освежавању тикета и да би били аутоматски претплаћени "
+"на тај тикет."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:82
+msgid ""
+"While writing an ticket article, simply type `@@` and enter some letters of "
+"the name of the colleague you want to mention."
+msgstr ""
+"Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова "
+"из имена колеге кога желите да поменете."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:86
+#, no-wrap
+msgid ""
+"Zammad displays a list with all possible matches where you can pick one\n"
+"by clicking on it or by using the up and down arrows followed by\n"
+"<kbd>enter</kbd> on your keyboard.\n"
+msgstr ""
+"Zammad приказује листу свих корисника који одговарају вашем уносу и можете их одабрати\n"
+"кликом или коришћењем стрелица на горе и доле а затим\n"
+"притиском на <kbd>enter</kbd> на вашој тастатури.\n"
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:87
+#, no-wrap
+msgid "Subscribe to a Ticket"
+msgstr "Претплатите се на тикет"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:90
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows subscribe feature](/screenshots/cypress/usage-advanced-"
+"features.cy.js/ticket-subscribe.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:95
+msgid ""
+"If you are interested in the progress of a ticket, you can subscribe to it.  "
+"This means you will receive notifications for each update."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:103
+msgid ""
+"Activate the \"Subscribe me\" toggle in the ticket side panel to get "
+"notifications. If you have been mentioned in a ticket, you are automatically "
+"subscribed. Switch the toggle off to stop the notification.  The avatars "
+"displayed show you who has subscribed to the ticket and is therefore "
+"notified of updates."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:104
+#, fuzzy, no-wrap
+#| msgid "Use of Matomo"
+msgid "Use a Macro"
+msgstr "Употреба Matomo"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:107
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
+"features.cy.js/ticket-macro.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:115
+msgid ""
+"If you have many steps you do over and over again, you should use a macro "
+"for that. In such a macro, your admin can pre-define different ticket "
+"actions you can apply with just a click. As an example, Zammad ships a "
+"\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
+"the macro is assigned as owner, a tag `spam` is added and the ticket is "
+"closed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:121
+msgid ""
+"If your admin already created a macro, you can execute it in the ticket "
+"detail view by clicking the three dots button `︙` in the right corner of "
+"the footer bar and select the macro you want to execute."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/advanced-features.md:122
+#, no-wrap
+msgid "The macro gets executed immediately and without an additional confirmation!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:128
+msgid ""
+"You can also apply a macro to several ticket at once. Have a loot at [bulk "
+"actions](#bulk-actions) how to do that."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:129
+#, fuzzy, no-wrap
+#| msgid "Tags"
+msgid "Use Tags"
+msgstr "Ознаке"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:132
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:140
+msgid ""
+"Tags are one way to categorize a ticket. You can think of tags as some kind "
+"of labels. They can be used in conditions like in triggers and in overviews "
+"and they can also be assigned automatically by macros, schedulers and "
+"triggers.  Of course you can search for the text of the tags and will find "
+"tickets which have the tag attached."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:146
+msgid ""
+"In the ticket sidebar, you can find a section which is labels as \"Tags\". "
+"Add a tag by clicking on the `+` button. You can select existing tags and "
+"add new ones (if your admin didn't disable to add new tags)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:149
+msgid ""
+"Remove them by simply click on the `X` button. Be aware that there is no "
+"confirmation dialog for deleting a tag from a ticket."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:150
+#, fuzzy, no-wrap
+#| msgid "Checklist"
+msgid "Use a Checklist"
+msgstr "Списак задатака"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:153
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-checklist.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:160
+msgid "To keep track of tasks"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:160
+msgid "To complete tasks in a structured way"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:160
+msgid "To make sure nothing gets forgotten"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:160
+msgid "To make the progress of work more visible"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:166
+msgid ""
+"Select the \"Checklist\" tab in the sidebar. If you can't see it, your "
+"Zammad admin disabled it. You can only add or edit a checklist, if you have "
+"the permission to edit the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:168
+msgid "In the checklist sidebar, you can:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:180
+msgid ""
+"Add a checklist: either by creating a new one by clicking on `Add Empty "
+"Checklist` or from a template by using `Add From a Template` (if you don't "
+"see the template button, there is none)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:180
+msgid "Edit the current checklist:"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:180
+msgid ""
+"Rename it by clicking on the title or using the `︙` menu in the sidebar "
+"header."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:180
+msgid "Add checklist items by clicking the `+` button."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:180
+msgid ""
+"Change the text of the checklist items, either by just clicking on it or "
+"using the `︙` menu next to the item."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/advanced-features.md:180
+msgid "`Reorder` the items by clicking this button and drag & drop the items."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:180
+msgid ""
+"Delete the complete checklist by using the `︙` menu in the sidebar header."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:182
+msgid "There are two features, which are not directly visible:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:186
+msgid ""
+"You can refer to other tickets as a checklist item by using its hook and "
+"number in the item text (e.g. `Ticket#123456`). Such items can't be checked "
+"manually, they reflect the state of the referred ticket."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/advanced-features.md:186
+#, no-wrap
+msgid ""
+"  Fetch the ticket hook and number by going to the desired ticket and either\n"
+"  use the copy button in the header or use the keyboard shortcut <kbd>.</kbd>.\n"
+"  Then you can paste it in the checklist you want to have it included.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:197
+msgid ""
+"Zammad automatically checks if all checklist items are completed. The check "
+"is performed when you set a ticket to \"closed\". If not all items are "
+"completed, Zammad will prompt you to either work on the remaining tasks and "
+"keep the ticket open or to close it anyway. When referencing other tickets "
+"in your checklist, only those which are closed (with a green circle) are "
+"considered as completed."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:199
+#, fuzzy, no-wrap
+#| msgid "Templates"
+msgid "Ticket Templates"
+msgstr "Шаблони"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:205
+msgid ""
+"Quickly create a ticket with pre-defined attributes like title, text, tags "
+"and more saves you time. This requires your admin to create a ticket "
+"template."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:211
+msgid ""
+"In the ticket create screen, you can find an `Apply Template ^` button in "
+"the footer bar, if a template is available. Select the template you want to "
+"apply and apply changes if desired."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/advanced-features.md:213
+#: src/en/reference/rest-api/shared-draft.md:1
+#: src/en/reference/rest-api/shared-draft.md:6
+#, no-wrap
+msgid "Shared Drafts"
+msgstr "Заједнички нацрти"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:221
+msgid ""
+"To share a draft with other agents of your group, e.g. to reflect a QA "
+"process, instead of \"just\" adding an internal article. In such a draft you "
+"can even include changed ticket attributes like priority, state and custom "
+"attributes as well as an article with an answer to the customer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:223
+msgid ""
+"This is an optional feature. If you can't see it, your admin has turned it "
+"off."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:228
+msgid ""
+"To **save a draft**, use the `︙` menu in the footer of the ticket details "
+"view and select \"Save as draft\"."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:231
+msgid ""
+"To **apply an already existing draft**, click on the `Draft Available` "
+"button on the left side of the footer."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/advanced-features.md:232
+#, no-wrap
+msgid "Applying a draft overwrites your unsaved changes!\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:236
+#, no-wrap
+msgid "Simultaneous Work Detection"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:239
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
+"advanced-features/simultaneous-work-detection.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:243
+msgid "Things to avoid:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:247
+msgid "Superfluous work"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:247
+msgid "Conflicting answers from different agents"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:247
+msgid "Overwritten/undone changes by different agents"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:250
+msgid ""
+"This is why you can immediately see who views and edits the currently viewed "
+"ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:256
+msgid ""
+"Have a look at the footer bar in the ticket detail view. When there is an "
+"avatar from another agent (see screenshot above), you are not the only one "
+"viewing this ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:258
+msgid ""
+"Depending on the additional icon and if the avatar icon is faded, it means:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:264
+msgid ""
+"Another agent is viewing the ticket (not faded avatar without additional "
+"icon)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:264
+msgid ""
+"Another agent opened the ticket but is currently not actively viewing this "
+"ticket (faded avatar icon with the snooze icon, see left avatar in "
+"screenshot)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:264
+msgid ""
+"Another agent is currently actively working on this ticket (not faded avatar "
+"icon with a pencil icon, see right avatar in screenshot)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:266
+#, no-wrap
+msgid "Bulk Actions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:269
+msgid "TODO after overview bulk action implementation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:276
+msgid "Via drag & drop Via drop down selectors"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:277
+#, fuzzy, no-wrap
+#| msgid "Work on Tickets"
+msgid "Merge Tickets"
+msgstr "Рад на тикетима"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:280
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows the ticket merge side panel](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-merge.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:288
+msgid ""
+"If you have two or more tickets about the same issue, you may want to merge "
+"those tickets into one. This might be the case if a customer sends you a new "
+"email which can't be assigned to the existing ticket (e.g. the ticket "
+"reference is missing because the customer sends you a completely new email "
+"instead of answering in the existing thread)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:291
+msgid ""
+"Merging a ticket migrates all messages and notes of the ticket from where "
+"you select the merging into the selected one."
+msgstr ""
+"Спајање тикета мигрира све поруке и напомене из тикета који спајате у "
+"одабрани."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:299
+msgid ""
+"Go to the ticket you want to merge into another one. In the ticket sidebar, "
+"use the `︙` menu and select `Merge`. This opens a side panel in which you "
+"can select a ticket by clicking on it or enter a ticket number in search "
+"field.  When you selected a target ticket, confirm by using the `Merge` "
+"button at the bottom."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:302
+msgid ""
+"As result, the articles are moved into the chosen ticket. The ticket in "
+"which you executed the merge still exists with the following changes:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:306
+msgid "The articles have been replaced by a \"merged\" label"
+msgstr "Сви чланци су замењени ознаком „спојено”"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:306
+msgid "The state has changed to \"merged\""
+msgstr "Стање је промењено у „спојено”"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:306
+msgid "The ticket is linked to its \"parent\" ticket"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:308
+#, fuzzy, no-wrap
+#| msgid "Ticket"
+msgid "Split Ticket"
+msgstr "Тикет"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:311
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows the article action split menu](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-split.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:317
+msgid ""
+"If you have a ticket which is about more than one issue, you might want to "
+"split it in two or more separate tickets. For example this might be the case "
+"if a customer has a technical question and wants to place an order."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:322
+msgid ""
+"To split an article off, use the `︙` menu next to an article and select "
+"`Split`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:326
+msgid ""
+"This results in a ticket create screen with the same attributes set as in "
+"the initial ticket. The content of the article is also included. You can "
+"change everything to your needs and then click on `Create`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:329
+msgid ""
+"The just created ticket is linked in the original one as child. The original "
+"ticket is linked in the split off ticket as parent."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:330
+#, fuzzy, no-wrap
+#| msgid "Work on Tickets"
+msgid "Link Tickets"
+msgstr "Рад на тикетима"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:337
+msgid ""
+"When tickets about related issues arise, they can be linked to each other "
+"for easier reference. [Merged](#merge-tickets) and [split](#split-ticket) "
+"tickets are automatically linked."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:344
+msgid ""
+"In the ticket sidebar, add a link to another ticket by clicking the `+` "
+"button in the \"Links\" section. This opens a side panel in which you can "
+"select a ticket by clicking on it or enter a ticket number in search field. "
+"Additionally, you can choose between different link types:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:348
+msgid "**Normal:** for related ticket which have no hierarchy."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:348
+msgid ""
+"**Parent/Child**: for related tickets where one is the main issue and the "
+"other is a subtask. This link type is used by default if a tickets gets "
+"split or merged."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:6
 #, no-wrap
 msgid "FAQs"
 msgstr "FAQ"
 
-#. type: Title ###
-#: src/en/documentation/use/faq.md:7 src/en/documentation/use/general.md:1
-#: src/en/documentation/use/general.md:11
-#: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:90
-#: src/en/reference/rest-api/cti.md:243 src/en/reference/rest-api/cti.md:361
-#, no-wrap
-msgid "General"
-msgstr "Уопштено"
-
 #. type: Fenced div block (details How to find tickets?)
-#: src/en/documentation/use/faq.md:9
+#: src/en/documentation/use/faq.md:10
 #, no-wrap
 msgid "You can either search them via search field or via overviews.\n"
 msgstr "Можете их претраживати преко поља за претрагу или преко прегледа.\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/documentation/use/faq.md:13 src/en/documentation/use/faq.md:17
-#: src/en/documentation/use/faq.md:21 src/en/documentation/use/faq.md:25
-#: src/en/documentation/use/faq.md:29 src/en/documentation/use/faq.md:33
-#: src/en/documentation/use/faq.md:39 src/en/documentation/use/faq.md:43
-#: src/en/documentation/use/faq.md:47 src/en/documentation/use/faq.md:51
-#: src/en/documentation/use/faq.md:57 src/en/documentation/use/faq.md:61
-#: src/en/documentation/use/faq.md:65 src/en/documentation/use/faq.md:69
-#: src/en/documentation/use/faq.md:73 src/en/reference/rest-api/articles.md:142
+#: src/en/documentation/use/faq.md:14 src/en/documentation/use/faq.md:18
+#: src/en/documentation/use/faq.md:22 src/en/documentation/use/faq.md:26
+#: src/en/documentation/use/faq.md:30 src/en/documentation/use/faq.md:34
+#: src/en/documentation/use/faq.md:40 src/en/documentation/use/faq.md:44
+#: src/en/documentation/use/faq.md:48 src/en/documentation/use/faq.md:52
+#: src/en/documentation/use/faq.md:58 src/en/documentation/use/faq.md:62
+#: src/en/documentation/use/faq.md:66 src/en/documentation/use/faq.md:70
+#: src/en/documentation/use/faq.md:74 src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
 #: src/en/reference/rest-api/calendar.md:42
@@ -1263,8 +2090,8 @@ msgstr "Можете их претраживати преко поља за пр
 #: src/en/reference/rest-api/object.md:133
 #: src/en/reference/rest-api/object.md:163
 #: src/en/reference/rest-api/object.md:226
-#: src/en/reference/rest-api/organization.md:58
-#: src/en/reference/rest-api/organization.md:79
+#: src/en/reference/rest-api/organization.md:46
+#: src/en/reference/rest-api/organization.md:67
 #: src/en/reference/rest-api/priorities.md:40
 #: src/en/reference/rest-api/priorities.md:61
 #: src/en/reference/rest-api/role.md:39 src/en/reference/rest-api/role.md:60
@@ -1272,27 +2099,28 @@ msgstr "Можете их претраживати преко поља за пр
 #: src/en/reference/rest-api/shared-draft.md:47
 #: src/en/reference/rest-api/sla.md:44 src/en/reference/rest-api/sla.md:65
 #: src/en/reference/rest-api/states.md:54
-#: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:44
-#: src/en/reference/rest-api/tags.md:70 src/en/reference/rest-api/tags.md:105
-#: src/en/reference/rest-api/tags.md:126 src/en/reference/rest-api/ticket.md:80
-#: src/en/reference/rest-api/ticket.md:106
+#: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
+#: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
+#: src/en/reference/rest-api/ticket.md:88
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
-#: src/en/reference/rest-api/user.md:93 src/en/reference/rest-api/user.md:122
+#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
 #: src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid "\n"
 msgstr "\n"
 
-#. type: Title ##
-#: src/en/documentation/use/faq.md:37
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/faq.md:38
+#: src/en/documentation/use/manage-profile.md:1
 #, no-wrap
 msgid "User Profile"
 msgstr "Кориснички профил"
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:55
+#: src/en/documentation/use/faq.md:56
 #, no-wrap
 msgid "Work on Tickets"
 msgstr "Рад на тикетима"
@@ -1324,13 +2152,18 @@ msgstr ""
 "документацији као и нека општа објашњења и савети."
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:21
+#: src/en/documentation/use/general.md:20
+#, fuzzy
+#| msgid ""
+#| "This documentation is divided in different sections. Currently you are "
+#| "reading the *General* section. This section includes explanations of the "
+#| "documentation itself as well as a description of features. There are also "
+#| "FAQs and a how-to section. See left sidebar or below to navigate to your "
+#| "desired information."
 msgid ""
-"This documentation is divided in different sections. Currently you are "
-"reading the *General* section. This section includes explanations of the "
-"documentation itself as well as a description of features. There are also "
-"FAQs and a how-to section. See left sidebar or below to navigate to your "
-"desired information."
+"This documentation is divided into different sections. Currently you are "
+"reading the *General* section. Use the left sidebar to navigate to your "
+"desired information or the search in the header."
 msgstr ""
 "Ова документације је подељена различите одељке. Тренутно читате одељак "
 "*Уопштено*. Овај одељак укључује објашњења о документацији као и опис "
@@ -1339,50 +2172,1024 @@ msgstr ""
 "жељене информације."
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:22
-#, no-wrap
-msgid "Content of User Documentation Section"
-msgstr "Садржај одељка корисничке документације"
+#: src/en/documentation/use/general.md:21
+#, fuzzy, no-wrap
+#| msgid "Zammad Team"
+msgid "Zammad Beginner"
+msgstr "Zammad тим"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:26
-msgid "TODO: - Links / TOC to different sections of user documentation"
-msgstr "TODO: - Links / TOC to different sections of user documentation"
+#: src/en/documentation/use/general.md:27
+msgid ""
+"If you are new to Zammad and ticketing software at all, our recommendation "
+"is to have a look at the [start with Zammad](start-using-zammad) page. You "
+"can find a description of some important UI elements there as well as basic "
+"ticket attributes and how to use them."
+msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:27
-#, no-wrap
-msgid "Screenshots"
-msgstr "Снимци екрана"
+#: src/en/documentation/use/general.md:28
+#, fuzzy, no-wrap
+#| msgid "User"
+msgid "Advanced User"
+msgstr "Корисник"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:30
+#: src/en/documentation/use/general.md:32
 msgid ""
-"![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+"If you are already familiar with the basics of Zammad, you should have a "
+"look at the [advanced features](advanced-features) page."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:35
+msgid ""
+"If you can't find what you are looking for, try the search in the header of "
+"the site."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/general.md:36
+#, fuzzy, no-wrap
+#| msgid "For Users and Administrators"
+msgid "Administrator"
+msgstr "За кориснике и администраторе"
+
+#. type: Plain text
+#: src/en/documentation/use/general.md:41
+msgid ""
+"Are you an administrator and want to learn how to configure and manage "
+"Zammad? Then head over to the [manage Zammad](/en/documentation/manage-"
+"zammad/general) section, have a look at the tutorials and reference and use "
+"the search."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/how-to/how-to.md:1
+#: src/en/documentation/use/how-to/how-to.md:6
+#: src/en/reference/rest-api/time-accounting.md:1
+#: src/en/reference/rest-api/time-accounting.md:6
+#, no-wrap
+msgid "Time Accounting"
+msgstr "Обрачун времена"
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/how-to/index.md:1
+#, no-wrap
+msgid "How-To"
+msgstr "Како да"
+
+#. type: Title #
+#: src/en/documentation/use/manage-profile.md:6
+#, fuzzy, no-wrap
+#| msgid "User Profile"
+msgid "Manage Your User Profile"
+msgstr "Кориснички профил"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:9
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows user profile settings](/screenshots/cypress/user-profile."
+"cy.js/user-profile-settings-full.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/manage-profile.md:10
+#, no-wrap
+msgid "Avatar Menu"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:14
+msgid ""
+"In the left navigation sidebar, you can find an avatar icon in the bottom "
+"left corner. This icon can display your profile picture or your initials."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:16
+msgid "Clicking on this icon opens a menu where you can find different things:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:18
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows user menu popover](/screenshots/cypress/user-profile.cy."
+"js/user-menu-popover.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+msgid ""
+"**Appearance** with toggle to switch between dark and light mode (or based "
+"on your web browser)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+msgid ""
+"**Keyboard shortcuts**: opens a popup where you can see the available "
+"keyboard shortcuts. You can open this popup by pressing the <kbd>?</kbd> "
+"button on your keyboard as well."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:26
+msgid ""
+"**Profile settings**: opens your profile settings where you can adjust your "
+"avatar, password, notification settings and much more, see next section."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/manage-profile.md:27
+#, no-wrap
+msgid "Profile Settings"
+msgstr "Подешавање профила"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:32
+msgid ""
+"In your profile settings, you can adjust things concerning your account and "
+"your personal settings. Some of the options may not be available for you, "
+"depending on how your system is configured and your permissions."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:33
+#, no-wrap
+msgid "Appearance"
+msgstr "Изглед"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:36
+msgid "Change the appearance of Zammad. Available options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+msgid "Dark mode"
+msgstr "Тамни изглед"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+msgid "Light mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:40
+msgid "Sync with computer"
+msgstr "Синхронизуј са рачунаром"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:43
+msgid ""
+"The last option tries to detect your browser's preference. It depends on "
+"your web browser. If it doesn't work, you can choose one of the other "
+"options."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/manage-profile.md:44
+#, no-wrap
+msgid ""
+"If you want to switch quickly between dark and light mode, you can also use\n"
+"the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by\n"
+"simply pressing <kbd>d</kbd>.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:50
+#, no-wrap
+msgid "Language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:53
+msgid "Choose your preferred language of Zammad."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:54
+#, no-wrap
+msgid "Avatar"
+msgstr "Аватар"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:59
+msgid ""
+"In this section, you can adjust your avatar image. By default, the initials "
+"of your user are displayed on a colored background. If you want to add an "
+"image, simply upload one or use your camera, if you have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:62
+msgid ""
+"After capturing or uploading an image, you can crop it. Have a look at the "
+"preview at the top of the right side panel."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:63
+#, no-wrap
+msgid "Out of Office"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:67
+msgid ""
+"Define absence periods (e.g. for your vacation), and designate a substitute "
+"to handle your tickets while you are away."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:72
+msgid ""
+"Your designated substitute will receive updates on new tickets and changes "
+"to existing ones while you're away. Additionally, your custom overviews are "
+"available for this agent to keep track of your tickets. You receive "
+"notifications while you are absent, too."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:73
+#, no-wrap
+msgid "Password"
+msgstr "Лозинка"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:77
+msgid ""
+"Change the password of your account. Update it by entering your old "
+"password, the new password and confirm the new one by entering it again."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:78
+#, no-wrap
+msgid "Devices"
+msgstr "Уређаји"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:83
+msgid ""
+"Here you can find a list of all devices logged into your Zammad account.  If "
+"necessary, you can revoke the access by clicking the delete icon in the "
+"\"Actions\" column."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:84
+#, no-wrap
+msgid "Token Access"
+msgstr "Приступ путем кључа"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:89
+msgid ""
+"Generate a personal access token for a third party application to access the "
+"Zammad API. After clicking the **New Personal Access Token** button, you can "
+"set a name, an expiration date and configure the permissions for this token."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:90
+#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:196
+#, fuzzy, no-wrap
+#| msgid "Administration"
+msgid "Notifications"
+msgstr "Администрација"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:93
+msgid "Adjust the notifications you get. You can adjust:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+msgid ""
+"For which ticket actions you get notified (e.g. for new tickets, for "
+"escalated tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+msgid ""
+"For which ticket you get notified based on the assignment and your relation "
+"to it (e.g. only yours, not assigned, subscribed tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+msgid ""
+"On which way you get notified (only in browser or additionally via email)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/manage-profile.md:100
+msgid "For tickets in which group you get notified"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:102
+msgid "Additionally, you can select a notification sound or disable the sound."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/manage-profile.md:103
+#, no-wrap
+msgid ""
+"To get notified via sound and notification on your operating system, you have\n"
+"to allow Zammad to send you notifications. This is requested when Zammad wants\n"
+"to send you a notification the first time.\n"
+"\n"
+"If you refused it and want to allow it now, it depends on your browser on how\n"
+"to do that. Usually there is an icon in the address bar where you can adjust\n"
+"the permissions of the site.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:113
+#, no-wrap
+msgid "Overviews"
+msgstr "Прегледи"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:117
+msgid ""
+"Change the order of overviews for your account. Simply drag & drop them by "
+"clicking the handles on the left side."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:120
+msgid ""
+"If your admin changes the order, your custom order remains. You can switch "
+"back to your admin's order by clicking the **Reset Overview Order** button."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/manage-profile.md:121
+#: src/en/reference/rest-api/calendar.md:1
+#: src/en/reference/rest-api/calendar.md:6
+#, no-wrap
+msgid "Calendar"
+msgstr "Календар"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:125
+msgid ""
+"Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
+"your favorite calendar application."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:128
+msgid ""
+"Use either the upper \"Combined subscription URL\" to subscribe to all "
+"tickets or the lower \"Direct subscription URL\". With the later one, you "
+"can define which tickets based on ticket states and assignment you want to "
+"include."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/start-using-zammad.md:1
+#: src/en/documentation/use/start-using-zammad.md:6
+#, fuzzy, no-wrap
+#| msgid "Get Zammad"
+msgid "Start with Zammad"
+msgstr "Преузмите Zammad"
+
+#. type: Title ##
+#: src/en/documentation/use/start-using-zammad.md:8
+#, fuzzy, no-wrap
+#| msgid "User Profile"
+msgid "User Interface"
+msgstr "Кориснички профил"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:15
+msgid ""
+"The user interface (UI) of Zammad is designed to provide an intuitive "
+"experience for users. It is built around the concept of simplicity, clarity, "
+"and accessibility."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:19
+msgid ""
+"There are basic modular components for different features to keep the UI "
+"consistent. These components are described in [UI Elements](#main-ui-"
+"elements) as well as [Navigating](#navigating) below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:22
+msgid ""
+"Depending on the currently opened screen, there are interactive components, "
+"such as tooltips and a contextual help. Use them wherever needed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:25
+msgid ""
+"In any case, the UI is based on common software design principles and is "
+"mostly self explanatory."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:26
+#, no-wrap
+msgid "Main UI Elements"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:29
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-ui.cy."
+"js/zammad-ui-full.png)"
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:32
+#: src/en/documentation/use/start-using-zammad.md:32
 msgid ""
-"![Test Screenshot (Page Element)](/screenshots/cypress/test.cy.js/test-"
-"screenshot-page-element.png)"
+"The screenshot above shows a ticket detail view in Zammad. Read on for a "
+"description of the different main elements of Zammad."
 msgstr ""
-"![Пример снимка екрана (елемент стране)](/screenshots/cypress/test.cy.js/"
-"test-screenshot-page-element.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:33
-msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"
-msgstr "![Пример снимка екрана (статички)](/screenshots/dashboard.png)"
-
-#. type: Title #
-#: src/en/documentation/use/how-to.md:5
+#: src/en/documentation/use/start-using-zammad.md:36
 #, no-wrap
-msgid "How-To"
-msgstr "Како да"
+msgid ""
+"Navigation sidebar\n"
+": This is the left sidebar which includes the search, notifications, overviews,\n"
+"  ticket tabs, your avatar and the ticket create button.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:41
+#, no-wrap
+msgid ""
+"Navigation tab\n"
+": Each item of the navigation sidebar is called navigation tab. Depending on the\n"
+"  content, it can be a ticket tab (with the ticket detail view) or the overview\n"
+"  tab which opens the list of available overviews.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:45
+#, no-wrap
+msgid ""
+"Ticket detail view\n"
+": This is where you handle your customer requests. It is located in the middle\n"
+"  of the screen if a ticket tab is selected in the navigation sidebar.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:49
+#, no-wrap
+msgid ""
+"Sidebar\n"
+": This is the right sidebar in the ticket detail view. It contains sidebar\n"
+"  tabs like customers and checklists and displays the currently selected tab.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:55
+#, no-wrap
+msgid ""
+"Sidebar tabs\n"
+": On the right side of the sidebar, you can find small icons to switch between\n"
+"  the different tabs. The availability of these tabs depends on your system\n"
+"  configuration, your permissions and the ticket attributes (e.g. if the\n"
+"  ticket customer has an assigned organization).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:59
+#, no-wrap
+msgid ""
+"Active sidebar\n"
+": The selected sidebar tab. Displays the content of the tab. It can show things\n"
+"  like customer sidebar, organization sidebar, checklist sidebar and more.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:60
+#, no-wrap
+msgid "Navigating"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:64
+msgid ""
+"The navigation sidebar is your central place to access all main parts of "
+"Zammad.  It includes:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+msgid "Search bar"
+msgstr "Трака претраге"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+#, fuzzy
+#| msgid "Overviews"
+msgid "Overview section"
+msgstr "Прегледи"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+msgid "Chat (if activated)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+msgid "Phone (if activated)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+#, fuzzy
+#| msgid "Ticket State"
+msgid "Ticket tabs"
+msgstr "Стање тикета"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+msgid "Avatar with menu"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+msgid "Settings (if you have permissions)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:74
+#, fuzzy
+#| msgid "Ticket State"
+msgid "Ticket create button"
+msgstr "Стање тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:77
+msgid ""
+"The main navigation in Zammad is done in this sidebar. It is always visible "
+"and you can switch between ticket, overviews and the search, for example."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:81
+msgid ""
+"Zammad immediately saves your current work progress, so you can easily "
+"switch between the different areas of Zammad and you don't have to be afraid "
+"of loosing any data like a not yet sent answer in a ticket."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/start-using-zammad.md:82
+#, no-wrap
+msgid "Finding Tickets"
+msgstr "Проналажење тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:85
+msgid "There are different ways to find tickets, depending on your use case."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:86
+#, fuzzy, no-wrap
+#| msgid "Overviews"
+msgid "Via Overviews"
+msgstr "Прегледи"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:92
+#, no-wrap
+msgid ""
+"If you search for new tickets to work on, your first look should be in\n"
+"the overview section. You can either open it by clicking the **Overviews**\n"
+"button in the navigation bar or use the keyboard shortcut <kbd>o</kbd>.\n"
+"You can see overviews as a kind of ticket lists.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:98
+msgid ""
+"By default, there are some built in overviews, you can use. For example, "
+"there is an overview called \"Open Tickets\". This might be a good starting "
+"point.  Your Zammad admin may have created additional overviews. These are "
+"based on conditions, which are basically rules, to define which ticket "
+"appears in which overview."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:101
+msgid ""
+"You can adjust the order by clicking on one of the column headers as well as "
+"change their width by dragging the column dividers."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:104
+msgid ""
+"To visualize different ticket states and priorities, the entries are color "
+"coded. The **state** is represented by a circle:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:110
+msgid "Closed: green"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:110
+msgid "Merged: green"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:110
+msgid "Pending: grey/black"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:110
+msgid "New/open: yellow"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:110
+msgid "Escalated: red"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:112
+msgid "The **priority** is represented by colored text:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:116
+msgid "3 - high: red"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:116
+msgid "2 - normal: blue"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:116
+msgid "1 - low: light blue"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:117
+#, fuzzy, no-wrap
+#| msgid "Search"
+msgid "Via Search"
+msgstr "Претрага"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:123
+#, no-wrap
+msgid ""
+"However, if you search for a specific ticket which might or might not be\n"
+"visible in the overviews, you can use the search. You can find it in the top\n"
+"left corner in the navigation bar. Either select it via mouse or use the\n"
+"keyboard shortcut by simply pressing <kbd>s</kbd>.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:125
+msgid "The search covers:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:130
+msgid "Message subject and text"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:130
+msgid "Names and email addresses"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:130
+msgid "Text in file attachments"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:130
+msgid "User and organizations details (like notes, names, etc.)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:135
+msgid ""
+"When you enter a search term, you immediately see a preview of the search "
+"results. If you press enter or click on \"Show Search Details\", Zammad "
+"displays a page with search results. There you can differentiate by object "
+"type (e.g.  customer), what you are searching."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:138
+msgid ""
+"Are you a power user and want to have more powerful feature? Have a look at "
+"the \"Advanced search\" block below."
+msgstr ""
+
+#. type: Fenced div block (details Advanced search)
+#: src/en/documentation/use/start-using-zammad.md:139
+#, no-wrap
+msgid ""
+"\n"
+"You can narrow down your search results to specific attributes. Read on for\n"
+"some examples and explanations. For a more detailed list of available\n"
+"attributes please take a look at the\n"
+"[indexed attributes by Elasticsearch](/en/reference/es-indexed-attributes).\n"
+"\n"
+"**Example**:\n"
+"\n"
+"Search for a specific customer by using\n"
+"`customer.attribute`:\n"
+"\n"
+"```\n"
+"customer.firstname: John\n"
+"```\n"
+"\n"
+"or:\n"
+"\n"
+"```\n"
+"customer.lastname: Doe\n"
+"```\n"
+"\n"
+"If you want to run a more complex search, you can use conditions with\n"
+"`()` and `AND`/`OR` options:\n"
+"\n"
+"```\n"
+"state.name: open AND (article.from:me OR article.from:somebody)\n"
+"```\n"
+"\n"
+"**Available Attributes**\n"
+"\n"
+"| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |\n"
+"|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+"| number        | 1118566                               | number:1118566 number:11185\\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |\n"
+"| title         | some title                            | title:\"some title\" title:Printer title: \"some ti\\*\"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |\n"
+"| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\\[2018-11-15 TO 2018-11-18\\] created_at:\\>now-1h              | You can either use a simple date, a date-range or \\>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |\n"
+"| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |\n"
+"| article_count | 5 \\[5 TO 10\\] \\[5 TO \\*\\] \\[\\* TO 5\\] | article_count:5 article_count: \\[5 TO 10\\] article_count:\\[5 TO \\*\\] article_count:\\[\\* TO 5\\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |\n"
+"| article.from  | \\*bob\\*                               | article.from:\\*bob\\*                                                                           | Show all tickets that contain articles from \"Bob\"                                                                                                                                                                                                    |\n"
+"| article.body  | heat heat~ /joh?n(ath\\[oa\\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\\[oa\\]n)/                           | First example shows every ticket containing the word \"heat\" - you can also use the fuzzy operator \"~\" to search for similar words like e.g. like \"head\". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |\n"
+"\n"
+"\n"
+"**Combining Search Phrases**\n"
+"\n"
+"You can combine search phrases by using `AND`, `OR` and `TO` and even\n"
+"separate them with `()`. If you want to exclude search results, you can use\n"
+"negation `!`.\n"
+"\n"
+"| Search phrase                                                                               | Description                                                                                                       |\n"
+"|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback) AND !(*Zammad*) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to \"Zammad\" |\n"
+"| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |\n"
+"| state.name:pending\\* AND article_count:\\[1 TO 5\\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:203
+msgid ""
+"Depending on the [notification settings](/en/documentation/use/manage-"
+"profile#notifications) in your profile, you receive updates for different "
+"ticket based events like the creation or the update of a ticket. This "
+"ensures that no important change to a ticket is overlooked."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:207
+msgid ""
+"You can open them by clicking on the notification counter in the top left "
+"corner. If there is a badge with a counter, the counter shows the number of "
+"unread notifications."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:212
+msgid ""
+"By default, you get notified when one of your tickets (means you are the "
+"owner) got updated. By clicking on the link in the notification, this ticket "
+"gets opened in the navigation sidebar as tab and the ticket detail view is "
+"displayed."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/start-using-zammad.md:213
+#, fuzzy, no-wrap
+#| msgid "Rails commands"
+msgid "Ticket Basics"
+msgstr "Rails команде"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:220
+msgid ""
+"If you're completely new to a ticket system and handled your customer "
+"requests with an email client so far, you might think that a ticket system "
+"is complicated. But the opposite is the case:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid ""
+"All emails are now collected in Zammad (and requests from other channels "
+"might be as well)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid ""
+"You and your colleagues can see who is working on which customer request "
+"(\"ticket\")."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid ""
+"The state of each request as well as the history (who did what?) is "
+"transparent."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid "There is no duplicate work and nothing gets overlooked."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid ""
+"You can ask your colleagues directly in the ticket for help in difficult "
+"cases."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:232
+msgid ""
+"With Zammad's intuitive UI, you can focus on what matters: to resolve "
+"customer issues and answer customer questions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:236
+msgid ""
+"So, basically you can work with Zammad similar as with your email client. "
+"Except that you have some additional attributes you can set in the *Ticket* "
+"sidebar tab:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**State**: reflects the current state of a ticket (mainly if a customer "
+"request is resolved or not). By default, there are the following states:"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket the first time, it automatically switches to *open*."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to *closed*."
+msgstr ""
+
+#. type: Bullet: '    - '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"to a certain date and time. Requires you to enter a date and time at which "
+"you want to get notified. For example useful if you had a question to a "
+"third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**Owner**: This is the person who is currently responsible for the ticket.  "
+"In case you need to have an information from another colleague, you can "
+"either change to owner to this person or mention the person in an article by "
+"typing `@@` and selecting the user. In the later case, the user gets "
+"notified and is automatically subscribed to receive notifications on ticket "
+"updates."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:259
+msgid ""
+"**Group**: This ticket attribute is useful for organizations with more than "
+"one team. Depending on the permissions, you might not see the ticket after "
+"changing the group and saving the changes."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:260
+#, no-wrap
+msgid "Ticket Detail View"
+msgstr "Детаљни приказ тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:264
+msgid ""
+"Now that you are aware about some attributes, let's have a look at the "
+"ticket detail view."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:271
+msgid ""
+"The ticket detail view provides all relevant information of a ticket. As its "
+"main part, all articles of the ticket are shown here. The oldest article "
+"(which created the ticket) at the top, the newest at the bottom. Depending "
+"on the article type, Zammad offers you different ways to react. For text "
+"communication based articles, you can directly create an answer by using the "
+"**reply** button below the article or use the **forward** feature."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:274
+msgid ""
+"Independent of the customer's article type, you can always add internal "
+"notes.  These are useful to add information to the ticket or ask a colleague."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/start-using-zammad.md:275
+#, no-wrap
+msgid "Updating your Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:282
+msgid ""
+"After you have done your changes like writing an answer to a customer and "
+"change the state of the ticket, you can see a highlighted **Update** button "
+"in the right footer. By clicking it, your changes are applied and if you "
+"created an answer, it is now sent out to the customer. If you consider the "
+"issue as resolved, you should set the state to *closed* now."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/start-using-zammad.md:283
+#, no-wrap
+msgid "Conclusion"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:289
+msgid ""
+"This was a brief introduction about how to work with Zammad if you are "
+"completely new to ticket systems. Knowing the basics of Zammad now, you can "
+"either start working or have a look at the [advanced features section]"
+"(advanced-features) to become even more productive and use the full "
+"potential of Zammad. 🚀"
+msgstr ""
 
 #. type: Title ###
 #: src/en/gdpr.md:8
@@ -3317,14 +5124,14 @@ msgstr ""
 #: src/en/reference/rest-api/group.md:61
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
-#: src/en/reference/rest-api/organization.md:73
+#: src/en/reference/rest-api/organization.md:61
 #: src/en/reference/rest-api/priorities.md:55
 #: src/en/reference/rest-api/role.md:54
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:100
+#: src/en/reference/rest-api/ticket.md:82
 #: src/en/reference/rest-api/time-accounting.md:54
-#: src/en/reference/rest-api/user.md:108
+#: src/en/reference/rest-api/user.md:95
 #, no-wrap
 msgid "Update"
 msgstr "Освежавање"
@@ -3510,10 +5317,9 @@ msgstr "Преузмите Zammad"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:118 src/en/tutorials/migrate-host.md:165
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl start zammad\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl start zammad\n"
 
 #. type: Title ##
 #: src/en/get-started/update.md:122
@@ -3870,10 +5676,9 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/reference/config-db-server.md:67
 #: src/en/reference/config-db-server.md:94
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl restart postgresql zammad\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl restart postgresql zammad\n"
 
 #. type: Title ##
 #: src/en/reference/config-db-server.md:71
@@ -4589,10 +6394,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/console.md:352
-#, fuzzy
-#| msgid "Setup a new system"
 msgid "Set a new FQDN:"
-msgstr "Подешавање новог система"
+msgstr "Подесите нови FQDN:"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:352
@@ -4736,10 +6539,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/console.md:417
-#, fuzzy
-#| msgid "Elasticsearch"
 msgid "Change elasticsearch URL:"
-msgstr "Elasticsearch"
+msgstr "Промените Elasticsearch URL:"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:417
@@ -6131,10 +7932,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:18
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Default values are marked with a <Badge type=\"info\" text=\"badge\"/>.\n"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "Потразумеване вредности су означене са <Badge type=\"info\" text=\"badge\"/>.\n"
 
 #. type: Title ##
 #: src/en/reference/env-vars.md:19
@@ -6488,7 +8288,7 @@ msgstr ""
 #: src/en/reference/rest-api/ticket.md:1 src/en/reference/rest-api/ticket.md:6
 #, no-wrap
 msgid "Ticket"
-msgstr ""
+msgstr "Тикет"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:33
@@ -7314,13 +9114,31 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:423
 #, no-wrap
 msgid ""
+"`detected_language`\n"
+": - `en`, `de`\n"
+"  - Language code of detected language, may be empty\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:427
+#, no-wrap
+msgid ""
+"`detected_language_name`\n"
+": - `English`, `German`\n"
+"  - Language name of detected language, may be empty\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:431
+#, no-wrap
+msgid ""
 "`from`\n"
 ": - `John Doe <john.doe@example.com>`\n"
 "  - From field of article creator\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:427
+#: src/en/reference/es-indexed-attributes.md:435
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -7329,7 +9147,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:431
+#: src/en/reference/es-indexed-attributes.md:439
 #, no-wrap
 msgid ""
 "`in_reply_to`\n"
@@ -7338,7 +9156,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:435
+#: src/en/reference/es-indexed-attributes.md:443
 #, no-wrap
 msgid ""
 "`internal`\n"
@@ -7347,7 +9165,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:439
+#: src/en/reference/es-indexed-attributes.md:447
 #, no-wrap
 msgid ""
 "`message_id`\n"
@@ -7356,7 +9174,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:443
+#: src/en/reference/es-indexed-attributes.md:451
 #, no-wrap
 msgid ""
 "`origin_by_id`\n"
@@ -7365,7 +9183,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:447
+#: src/en/reference/es-indexed-attributes.md:455
 #, no-wrap
 msgid ""
 "`preferences`\n"
@@ -7374,7 +9192,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:451
+#: src/en/reference/es-indexed-attributes.md:459
 #, no-wrap
 msgid ""
 "`reply_to`\n"
@@ -7383,7 +9201,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:455
+#: src/en/reference/es-indexed-attributes.md:463
 #, no-wrap
 msgid ""
 "`sender_id`\n"
@@ -7392,7 +9210,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:459
+#: src/en/reference/es-indexed-attributes.md:467
 #, no-wrap
 msgid ""
 "`subject`\n"
@@ -7401,7 +9219,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:463
+#: src/en/reference/es-indexed-attributes.md:471
 #, no-wrap
 msgid ""
 "`ticket_id`\n"
@@ -7410,7 +9228,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:467
+#: src/en/reference/es-indexed-attributes.md:475
 #, no-wrap
 msgid ""
 "`to`\n"
@@ -7419,7 +9237,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:471
+#: src/en/reference/es-indexed-attributes.md:479
 #, no-wrap
 msgid ""
 "`type_id`\n"
@@ -7428,7 +9246,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:475
+#: src/en/reference/es-indexed-attributes.md:483
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -7437,7 +9255,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:479
+#: src/en/reference/es-indexed-attributes.md:487
 #, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -7446,14 +9264,14 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:481
+#: src/en/reference/es-indexed-attributes.md:489
 #: src/en/reference/rest-api/user.md:1 src/en/reference/rest-api/user.md:6
 #, no-wrap
 msgid "User"
 msgstr "Корисник"
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:486
+#: src/en/reference/es-indexed-attributes.md:494
 #, no-wrap
 msgid ""
 "`active`\n"
@@ -7462,7 +9280,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:490
+#: src/en/reference/es-indexed-attributes.md:498
 #, no-wrap
 msgid ""
 "`address`\n"
@@ -7471,7 +9289,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:494
+#: src/en/reference/es-indexed-attributes.md:502
 #, no-wrap
 msgid ""
 "`city`\n"
@@ -7480,7 +9298,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:498
+#: src/en/reference/es-indexed-attributes.md:506
 #, no-wrap
 msgid ""
 "`country`\n"
@@ -7489,7 +9307,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:502
+#: src/en/reference/es-indexed-attributes.md:510
 #, no-wrap
 msgid ""
 "`created_at`\n"
@@ -7498,7 +9316,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:506
+#: src/en/reference/es-indexed-attributes.md:514
 #, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -7507,7 +9325,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:510
+#: src/en/reference/es-indexed-attributes.md:518
 #, no-wrap
 msgid ""
 "`department`\n"
@@ -7516,7 +9334,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:514
+#: src/en/reference/es-indexed-attributes.md:522
 #, no-wrap
 msgid ""
 "`email`\n"
@@ -7525,7 +9343,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:518
+#: src/en/reference/es-indexed-attributes.md:526
 #, no-wrap
 msgid ""
 "`fax`\n"
@@ -7534,7 +9352,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:522
+#: src/en/reference/es-indexed-attributes.md:530
 #, no-wrap
 msgid ""
 "`firstname`\n"
@@ -7543,7 +9361,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:526
+#: src/en/reference/es-indexed-attributes.md:534
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -7552,7 +9370,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:530
+#: src/en/reference/es-indexed-attributes.md:538
 #, no-wrap
 msgid ""
 "`last_login`\n"
@@ -7561,7 +9379,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:534
+#: src/en/reference/es-indexed-attributes.md:542
 #, no-wrap
 msgid ""
 "`lastname`\n"
@@ -7570,7 +9388,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:538
+#: src/en/reference/es-indexed-attributes.md:546
 #, no-wrap
 msgid ""
 "`login`\n"
@@ -7579,7 +9397,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:542
+#: src/en/reference/es-indexed-attributes.md:550
 #, no-wrap
 msgid ""
 "`mobile`\n"
@@ -7588,7 +9406,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:546
+#: src/en/reference/es-indexed-attributes.md:554
 #, no-wrap
 msgid ""
 "`note`\n"
@@ -7597,7 +9415,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:551
+#: src/en/reference/es-indexed-attributes.md:559
 #, no-wrap
 msgid ""
 "`organization`\n"
@@ -7607,7 +9425,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:555
+#: src/en/reference/es-indexed-attributes.md:563
 #, no-wrap
 msgid ""
 "`organization_id`\n"
@@ -7616,7 +9434,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:559
+#: src/en/reference/es-indexed-attributes.md:567
 #, no-wrap
 msgid ""
 "`out_of_office`\n"
@@ -7625,7 +9443,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:563
+#: src/en/reference/es-indexed-attributes.md:571
 #, no-wrap
 msgid ""
 "`out_of_office_end_at`\n"
@@ -7634,7 +9452,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:567
+#: src/en/reference/es-indexed-attributes.md:575
 #, no-wrap
 msgid ""
 "`out_of_office_replacement_id`\n"
@@ -7643,7 +9461,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:571
+#: src/en/reference/es-indexed-attributes.md:579
 #, no-wrap
 msgid ""
 "`out_of_office_start_at`\n"
@@ -7652,7 +9470,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:575
+#: src/en/reference/es-indexed-attributes.md:583
 #, no-wrap
 msgid ""
 "`permissions`\n"
@@ -7661,7 +9479,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:579
+#: src/en/reference/es-indexed-attributes.md:587
 #, no-wrap
 msgid ""
 "`phone`\n"
@@ -7670,7 +9488,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:584
+#: src/en/reference/es-indexed-attributes.md:592
 #, no-wrap
 msgid ""
 "`preferences`\n"
@@ -7680,7 +9498,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:588
+#: src/en/reference/es-indexed-attributes.md:596
 #, no-wrap
 msgid ""
 "`role_ids`\n"
@@ -7689,7 +9507,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:592
+#: src/en/reference/es-indexed-attributes.md:600
 #, no-wrap
 msgid ""
 "`street`\n"
@@ -7698,7 +9516,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:596
+#: src/en/reference/es-indexed-attributes.md:604
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -7707,7 +9525,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:600
+#: src/en/reference/es-indexed-attributes.md:608
 #, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -7716,7 +9534,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:604
+#: src/en/reference/es-indexed-attributes.md:612
 #, no-wrap
 msgid ""
 "`verified`\n"
@@ -7725,7 +9543,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:608
+#: src/en/reference/es-indexed-attributes.md:616
 #, no-wrap
 msgid ""
 "`vip`\n"
@@ -7734,7 +9552,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:612
+#: src/en/reference/es-indexed-attributes.md:620
 #, no-wrap
 msgid ""
 "`web`\n"
@@ -7743,7 +9561,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:616
+#: src/en/reference/es-indexed-attributes.md:624
 #, no-wrap
 msgid ""
 "`zip`\n"
@@ -7752,7 +9570,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:618
+#: src/en/reference/es-indexed-attributes.md:626
 #: src/en/reference/rest-api/organization.md:1
 #: src/en/reference/rest-api/organization.md:6
 #, no-wrap
@@ -7760,13 +9578,13 @@ msgid "Organization"
 msgstr "Организација"
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:621
+#: src/en/reference/es-indexed-attributes.md:629
 msgid ""
 "The following index contains below mentioned information: `*_organization`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:626
+#: src/en/reference/es-indexed-attributes.md:634
 #, no-wrap
 msgid ""
 "`active`\n"
@@ -7775,7 +9593,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:630
+#: src/en/reference/es-indexed-attributes.md:638
 #, no-wrap
 msgid ""
 "`created_at`\n"
@@ -7784,7 +9602,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:635
+#: src/en/reference/es-indexed-attributes.md:643
 #, no-wrap
 msgid ""
 "`created_by`\n"
@@ -7794,7 +9612,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:639
+#: src/en/reference/es-indexed-attributes.md:647
 #, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -7803,7 +9621,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:643
+#: src/en/reference/es-indexed-attributes.md:651
 #, no-wrap
 msgid ""
 "`domain`\n"
@@ -7812,7 +9630,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:647
+#: src/en/reference/es-indexed-attributes.md:655
 #, no-wrap
 msgid ""
 "`domain_assignment`\n"
@@ -7821,7 +9639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:651
+#: src/en/reference/es-indexed-attributes.md:659
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -7830,7 +9648,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:656
+#: src/en/reference/es-indexed-attributes.md:664
 #, no-wrap
 msgid ""
 "`members`\n"
@@ -7840,7 +9658,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:660
+#: src/en/reference/es-indexed-attributes.md:668
 #, no-wrap
 msgid ""
 "`name`\n"
@@ -7849,7 +9667,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:664
+#: src/en/reference/es-indexed-attributes.md:672
 #, no-wrap
 msgid ""
 "`note`\n"
@@ -7858,7 +9676,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:668
+#: src/en/reference/es-indexed-attributes.md:676
 #, no-wrap
 msgid ""
 "`shared`\n"
@@ -7867,7 +9685,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:672
+#: src/en/reference/es-indexed-attributes.md:680
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -7876,7 +9694,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:677
+#: src/en/reference/es-indexed-attributes.md:685
 #, no-wrap
 msgid ""
 "`updated_by`\n"
@@ -7886,7 +9704,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:681
+#: src/en/reference/es-indexed-attributes.md:689
 #, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -7895,7 +9713,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:685
+#: src/en/reference/es-indexed-attributes.md:693
 #, no-wrap
 msgid ""
 "`vip`\n"
@@ -7904,19 +9722,19 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:686
+#: src/en/reference/es-indexed-attributes.md:694
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, no-wrap
 msgid "Group"
 msgstr "Група"
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:689
+#: src/en/reference/es-indexed-attributes.md:697
 msgid "The following index contains below mentioned information: `*_group`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:693
+#: src/en/reference/es-indexed-attributes.md:701
 #, no-wrap
 msgid ""
 "`active`\n"
@@ -7925,7 +9743,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:697
+#: src/en/reference/es-indexed-attributes.md:705
 #, no-wrap
 msgid ""
 "`assignment_timeout`\n"
@@ -7934,7 +9752,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:701
+#: src/en/reference/es-indexed-attributes.md:709
 #, no-wrap
 msgid ""
 "`created_at`\n"
@@ -7943,7 +9761,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:705
+#: src/en/reference/es-indexed-attributes.md:713
 #, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -7952,7 +9770,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:720
+#: src/en/reference/es-indexed-attributes.md:728
 #, no-wrap
 msgid ""
 "`email_address`\n"
@@ -7972,7 +9790,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:724
+#: src/en/reference/es-indexed-attributes.md:732
 #, no-wrap
 msgid ""
 "`email_address_id`\n"
@@ -7981,7 +9799,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:728
+#: src/en/reference/es-indexed-attributes.md:736
 #, no-wrap
 msgid ""
 "`follow_up_assignment`\n"
@@ -7990,7 +9808,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:732
+#: src/en/reference/es-indexed-attributes.md:740
 #, no-wrap
 msgid ""
 "`follow_up_possible`\n"
@@ -7999,7 +9817,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:736
+#: src/en/reference/es-indexed-attributes.md:744
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -8008,7 +9826,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:740
+#: src/en/reference/es-indexed-attributes.md:748
 #, no-wrap
 msgid ""
 "`name`\n"
@@ -8017,7 +9835,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:744
+#: src/en/reference/es-indexed-attributes.md:752
 #, no-wrap
 msgid ""
 "`note`\n"
@@ -8026,7 +9844,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:757
+#: src/en/reference/es-indexed-attributes.md:765
 #, no-wrap
 msgid ""
 "`signature`\n"
@@ -8044,7 +9862,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:761
+#: src/en/reference/es-indexed-attributes.md:769
 #, no-wrap
 msgid ""
 "`signature_id`\n"
@@ -8053,7 +9871,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:765
+#: src/en/reference/es-indexed-attributes.md:773
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -8062,7 +9880,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:769
+#: src/en/reference/es-indexed-attributes.md:777
 #, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -8071,18 +9889,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:770
+#: src/en/reference/es-indexed-attributes.md:778
 #, no-wrap
 msgid "CTI Log"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:773
+#: src/en/reference/es-indexed-attributes.md:781
 msgid "The following index contains below mentioned information: `*_cti_log`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:777
+#: src/en/reference/es-indexed-attributes.md:785
 #, no-wrap
 msgid ""
 "`call_id`\n"
@@ -8091,7 +9909,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:781
+#: src/en/reference/es-indexed-attributes.md:789
 #, no-wrap
 msgid ""
 "`comment`\n"
@@ -8100,7 +9918,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:785
+#: src/en/reference/es-indexed-attributes.md:793
 #, no-wrap
 msgid ""
 "`created_at`\n"
@@ -8109,7 +9927,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:789
+#: src/en/reference/es-indexed-attributes.md:797
 #, no-wrap
 msgid ""
 "`direction`\n"
@@ -8118,7 +9936,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:793
+#: src/en/reference/es-indexed-attributes.md:801
 #, no-wrap
 msgid ""
 "`done`\n"
@@ -8127,7 +9945,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:797
+#: src/en/reference/es-indexed-attributes.md:805
 #, no-wrap
 msgid ""
 "`duration_talking_time`\n"
@@ -8136,7 +9954,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:801
+#: src/en/reference/es-indexed-attributes.md:809
 #, no-wrap
 msgid ""
 "`duration_waiting_time`\n"
@@ -8145,7 +9963,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:805
+#: src/en/reference/es-indexed-attributes.md:813
 #, no-wrap
 msgid ""
 "`end_at`\n"
@@ -8154,7 +9972,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:809
+#: src/en/reference/es-indexed-attributes.md:817
 #, no-wrap
 msgid ""
 "`from`\n"
@@ -8163,7 +9981,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:813
+#: src/en/reference/es-indexed-attributes.md:821
 #, no-wrap
 msgid ""
 "`from_comment`\n"
@@ -8172,7 +9990,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:817
+#: src/en/reference/es-indexed-attributes.md:825
 #, no-wrap
 msgid ""
 "`from_pretty`\n"
@@ -8181,7 +9999,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:821
+#: src/en/reference/es-indexed-attributes.md:829
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -8190,7 +10008,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:825
+#: src/en/reference/es-indexed-attributes.md:833
 #, no-wrap
 msgid ""
 "`initialized_at`\n"
@@ -8199,7 +10017,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:829
+#: src/en/reference/es-indexed-attributes.md:837
 #, no-wrap
 msgid ""
 "`preferences`\n"
@@ -8208,7 +10026,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:833
+#: src/en/reference/es-indexed-attributes.md:841
 #, no-wrap
 msgid ""
 "`queue`\n"
@@ -8217,7 +10035,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:837
+#: src/en/reference/es-indexed-attributes.md:845
 #, no-wrap
 msgid ""
 "`start_at`\n"
@@ -8226,7 +10044,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:841
+#: src/en/reference/es-indexed-attributes.md:849
 #, no-wrap
 msgid ""
 "`state`\n"
@@ -8235,7 +10053,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:845
+#: src/en/reference/es-indexed-attributes.md:853
 #, no-wrap
 msgid ""
 "`to`\n"
@@ -8244,7 +10062,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:849
+#: src/en/reference/es-indexed-attributes.md:857
 #, no-wrap
 msgid ""
 "`to_comment`\n"
@@ -8253,7 +10071,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:853
+#: src/en/reference/es-indexed-attributes.md:861
 #, no-wrap
 msgid ""
 "`to_pretty`\n"
@@ -8262,7 +10080,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:857
+#: src/en/reference/es-indexed-attributes.md:865
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -8271,19 +10089,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:859
+#: src/en/reference/es-indexed-attributes.md:867
 #, no-wrap
 msgid "Chat Session"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:862
+#: src/en/reference/es-indexed-attributes.md:870
 msgid ""
 "The following index contains below mentioned information: `*_chat_session`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:880
+#: src/en/reference/es-indexed-attributes.md:888
 #, no-wrap
 msgid ""
 "`chat`\n"
@@ -8306,7 +10124,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:884
+#: src/en/reference/es-indexed-attributes.md:892
 #, no-wrap
 msgid ""
 "`chat_id`\n"
@@ -8315,7 +10133,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:888
+#: src/en/reference/es-indexed-attributes.md:896
 #, no-wrap
 msgid ""
 "`created_at`\n"
@@ -8324,7 +10142,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:892
+#: src/en/reference/es-indexed-attributes.md:900
 #, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -8333,7 +10151,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:896
+#: src/en/reference/es-indexed-attributes.md:904
 #, no-wrap
 msgid ""
 "`id`\n"
@@ -8342,7 +10160,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:905
+#: src/en/reference/es-indexed-attributes.md:913
 #, no-wrap
 msgid ""
 "`messages`\n"
@@ -8356,7 +10174,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:909
+#: src/en/reference/es-indexed-attributes.md:917
 #, no-wrap
 msgid ""
 "`name`\n"
@@ -8365,7 +10183,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:918
+#: src/en/reference/es-indexed-attributes.md:926
 #, no-wrap
 msgid ""
 "`preferences`\n"
@@ -8379,7 +10197,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:922
+#: src/en/reference/es-indexed-attributes.md:930
 #, no-wrap
 msgid ""
 "`session_id`\n"
@@ -8388,7 +10206,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:926
+#: src/en/reference/es-indexed-attributes.md:934
 #, no-wrap
 msgid ""
 "`state`\n"
@@ -8397,7 +10215,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:930
+#: src/en/reference/es-indexed-attributes.md:938
 #, no-wrap
 msgid ""
 "`tags`\n"
@@ -8406,7 +10224,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:934
+#: src/en/reference/es-indexed-attributes.md:942
 #, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -8415,7 +10233,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:938
+#: src/en/reference/es-indexed-attributes.md:946
 #, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -8424,7 +10242,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:942
+#: src/en/reference/es-indexed-attributes.md:950
 #, no-wrap
 msgid ""
 "`user`\n"
@@ -8433,7 +10251,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:945
+#: src/en/reference/es-indexed-attributes.md:953
 #, no-wrap
 msgid ""
 "`user_id`\n"
@@ -8454,35 +10272,14 @@ msgid ""
 "most relevant terms below for your insight."
 msgstr ""
 
-#. type: Fenced div block (info)
-#: src/en/reference/glossary.md:11
+#. type: Plain text
+#: src/en/reference/glossary.md:12
 #, no-wrap
-msgid ""
-"Due to translation alphabetical sorting may be off in non english versions\n"
-"of this page.\n"
-msgstr ""
+msgid "<VPGlossary>\n"
+msgstr "<VPGlossary>\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:17
-msgid "Quickly jump to..."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/glossary.md:20
-msgid ""
-"[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [J]"
-"(#j) [K](#k) [L](#l) [M](#m)  [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) [S]"
-"(#s) [T](#t) [U](#u) [V](#v) [W](#w) [X](#x) [Y](#y) [Z](#z)"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:23
-#, no-wrap
-msgid "A"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/glossary.md:31
+#: src/en/reference/glossary.md:19
 #, no-wrap
 msgid ""
 "Admin\n"
@@ -8494,7 +10291,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:36
+#: src/en/reference/glossary.md:24
 #, no-wrap
 msgid ""
 "Agent\n"
@@ -8504,7 +10301,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:42
+#: src/en/reference/glossary.md:30
 #, no-wrap
 msgid ""
 "API\n"
@@ -8515,16 +10312,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:46
+#: src/en/reference/glossary.md:34
 #, no-wrap
 msgid ""
 "  You can learn more on our\n"
-"  [API landing page](https://zammad.com/en/product/features/rest-api) as well\n"
-"  as in our [API reference](/en/reference/rest-api/intro).\n"
+"  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}\n"
+"  as well as in our [API reference](/en/reference/rest-api/intro).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:52
+#: src/en/reference/glossary.md:40
 #, no-wrap
 msgid ""
 "Article\n"
@@ -8535,7 +10332,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:60
+#: src/en/reference/glossary.md:48
 #, no-wrap
 msgid ""
 "Automation\n"
@@ -8548,24 +10345,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:66
+#: src/en/reference/glossary.md:54
 #, no-wrap
 msgid ""
 "Autosave\n"
 ": Zammad's autosave feature makes sure that no work is lost. So if your browser\n"
 "  crashes, simply log in again and resume where you were before.\n"
 "  Learn more on our\n"
-"  [Autosave landing page](https://zammad.com/en/product/features/autosave).\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:67
-#, no-wrap
-msgid "B"
+"  [Autosave landing page](https://zammad.com/en/product/features/autosave){target=_blank}.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:72
+#: src/en/reference/glossary.md:58
 #, no-wrap
 msgid ""
 "Branding\n"
@@ -8573,14 +10364,8 @@ msgid ""
 "  logo, signature, links and other things!\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:73
-#, no-wrap
-msgid "C"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:78
+#: src/en/reference/glossary.md:62
 #, no-wrap
 msgid ""
 "Changelog\n"
@@ -8589,14 +10374,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:80
-#, fuzzy, no-wrap
-#| msgid "Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
-msgid "  You can find them all on our [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md)!\n"
-msgstr "Подржано је са исправкама грешака и сигурносних пропуста – погледајте и нашу [безбедносну полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
+#: src/en/reference/glossary.md:65
+#, no-wrap
+msgid ""
+"  You can find them all on our\n"
+"  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!\n"
+msgstr ""
+"  Све их можете пронаћи на нашој\n"
+"  [GitHub страни](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:86
+#: src/en/reference/glossary.md:71
 #, no-wrap
 msgid ""
 "Checkmk\n"
@@ -8607,7 +10395,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:92
+#: src/en/reference/glossary.md:77
 #, no-wrap
 msgid ""
 "Clearbit\n"
@@ -8618,7 +10406,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:99
+#: src/en/reference/glossary.md:84
 #, no-wrap
 msgid ""
 "Conflict Warning\n"
@@ -8630,7 +10418,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:103
+#: src/en/reference/glossary.md:88
 #, no-wrap
 msgid ""
 "Content Sidebar\n"
@@ -8639,7 +10427,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:109
+#: src/en/reference/glossary.md:94
 #, no-wrap
 msgid ""
 "Core Workflows\n"
@@ -8650,7 +10438,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:115
+#: src/en/reference/glossary.md:100
 #, no-wrap
 msgid ""
 "CTI\n"
@@ -8661,7 +10449,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:124
+#: src/en/reference/glossary.md:109
 #, no-wrap
 msgid ""
 "Custom Development (CD)\n"
@@ -8675,7 +10463,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:132
+#: src/en/reference/glossary.md:117
 #, no-wrap
 msgid ""
 "Customer\n"
@@ -8687,14 +10475,8 @@ msgid ""
 "  status and live updates.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:133
-#, no-wrap
-msgid "D"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:141
+#: src/en/reference/glossary.md:124
 #, no-wrap
 msgid ""
 "Dashboard\n"
@@ -8706,7 +10488,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:146
+#: src/en/reference/glossary.md:129
 #, no-wrap
 msgid ""
 "Dialog\n"
@@ -8716,7 +10498,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:150
+#: src/en/reference/glossary.md:133
 #, no-wrap
 msgid ""
 "Documentation\n"
@@ -8724,14 +10506,8 @@ msgid ""
 "  documentation. 😉\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:151
-#, no-wrap
-msgid "E"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:158
+#: src/en/reference/glossary.md:139
 #, no-wrap
 msgid ""
 "Elasticsearch\n"
@@ -8742,7 +10518,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:163
+#: src/en/reference/glossary.md:144
 #, no-wrap
 msgid ""
 "Escalation\n"
@@ -8752,7 +10528,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:169
+#: src/en/reference/glossary.md:150
 #, no-wrap
 msgid ""
 "Exchange Integration\n"
@@ -8763,7 +10539,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:176
+#: src/en/reference/glossary.md:157
 #, no-wrap
 msgid ""
 "External Authentication\n"
@@ -8774,14 +10550,8 @@ msgid ""
 "  GitHub, GitLab, Google, or Microsoft / Office365.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:177
-#, no-wrap
-msgid "F"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:183
+#: src/en/reference/glossary.md:162
 #, no-wrap
 msgid ""
 "Feature\n"
@@ -8791,19 +10561,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:190
+#: src/en/reference/glossary.md:169
 #, no-wrap
 msgid ""
 "Feature Request\n"
 ": You can let us know if you are missing a particular feature in Zammad.\n"
 "  We collect all of your wishes in our community forum in the\n"
-"  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all).\n"
+"  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.\n"
 "  If a request comes in regularly and we think that it would be a\n"
 "  great addition, we'll put it on our roadmap and start working on it.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:195
+#: src/en/reference/glossary.md:174
 #, no-wrap
 msgid ""
 "Feature Sponsoring\n"
@@ -8812,14 +10582,8 @@ msgid ""
 "  sponsoring it, which means that they cover the costs for the development.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:196
-#, no-wrap
-msgid "G"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:202
+#: src/en/reference/glossary.md:179
 #, no-wrap
 msgid ""
 "GitHub\n"
@@ -8829,16 +10593,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:206
+#: src/en/reference/glossary.md:183
 #, no-wrap
 msgid ""
 "  As Zammad is an open-source project, many developers and tech-lovers from all\n"
 "  over the world contribute to it. GitHub is where we coordinate all of this.\n"
-"  You can find the repository [here](https://github.com/zammad/zammad).\n"
+"  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:210
+#: src/en/reference/glossary.md:187
 #, no-wrap
 msgid ""
 "  Besides our own repo, Zammad also has an integration for GitHub.\n"
@@ -8847,7 +10611,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:214
+#: src/en/reference/glossary.md:191
 #, no-wrap
 msgid ""
 "GitLab\n"
@@ -8856,7 +10620,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:218
+#: src/en/reference/glossary.md:195
 #, no-wrap
 msgid ""
 "  There is also an integration that allows users to connect GitLab to Zammad\n"
@@ -8865,7 +10629,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:223
+#: src/en/reference/glossary.md:200
 #, no-wrap
 msgid ""
 "Grafana\n"
@@ -8875,7 +10639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:226
+#: src/en/reference/glossary.md:203
 #, no-wrap
 msgid ""
 "  Hooking up Grafana to Elasticsearch is an possibility you can do on your\n"
@@ -8883,7 +10647,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:235
+#: src/en/reference/glossary.md:212
 #, no-wrap
 msgid ""
 "Groups\n"
@@ -8897,7 +10661,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:239
+#: src/en/reference/glossary.md:216
 #, no-wrap
 msgid ""
 "  If you have worked with the OTRS system in the past, you might remember the\n"
@@ -8905,20 +10669,8 @@ msgid ""
 "  OTRS.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:240
-#, no-wrap
-msgid "H"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:243
-#, no-wrap
-msgid "I"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:250
+#: src/en/reference/glossary.md:222
 #, no-wrap
 msgid ""
 "Icinga\n"
@@ -8929,7 +10681,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:258
+#: src/en/reference/glossary.md:230
 #, no-wrap
 msgid ""
 "i-doit\n"
@@ -8942,7 +10694,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:262
+#: src/en/reference/glossary.md:234
 #, no-wrap
 msgid ""
 "Issue-Tracking System\n"
@@ -8951,7 +10703,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:266
+#: src/en/reference/glossary.md:238
 #, no-wrap
 msgid ""
 "  Zammad is also often referred to as an issue-tracking system.\n"
@@ -8959,20 +10711,8 @@ msgid ""
 "  level rather than the technical level.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:267
-#, no-wrap
-msgid "J"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:270
-#, no-wrap
-msgid "K"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:276
+#: src/en/reference/glossary.md:243
 #, no-wrap
 msgid ""
 "Kibana <Badge type=\"info\" text=\"on-premise only\" />\n"
@@ -8982,7 +10722,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:279
+#: src/en/reference/glossary.md:246
 #, no-wrap
 msgid ""
 "  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
@@ -8990,7 +10730,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:284
+#: src/en/reference/glossary.md:251
 #, no-wrap
 msgid ""
 "Knowledge Base\n"
@@ -9000,7 +10740,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:289
+#: src/en/reference/glossary.md:256
 #, no-wrap
 msgid ""
 "  Knowledge base articles can be either internal or external, so you can\n"
@@ -9009,14 +10749,8 @@ msgid ""
 "  or team info).\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:290
-#, no-wrap
-msgid "L"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:296
+#: src/en/reference/glossary.md:261
 #, no-wrap
 msgid ""
 "LDAP\n"
@@ -9025,14 +10759,8 @@ msgid ""
 "  and LDAP role mapping to Zammad roles are also possible.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:297
-#, no-wrap
-msgid "M"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:304
+#: src/en/reference/glossary.md:267
 #, no-wrap
 msgid ""
 "Macro\n"
@@ -9043,7 +10771,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:307
+#: src/en/reference/glossary.md:270
 #, no-wrap
 msgid ""
 "  You can define your own macros and perform actions based on all available\n"
@@ -9051,7 +10779,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:312
+#: src/en/reference/glossary.md:275
 #, no-wrap
 msgid ""
 "Mentions\n"
@@ -9061,7 +10789,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:318
+#: src/en/reference/glossary.md:281
 #, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -9072,7 +10800,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:323
+#: src/en/reference/glossary.md:286
 #, no-wrap
 msgid ""
 "Monit\n"
@@ -9081,14 +10809,8 @@ msgid ""
 "  a ticket is created every time you receive an email in Monit.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:324
-#, no-wrap
-msgid "N"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:329
+#: src/en/reference/glossary.md:290
 #, no-wrap
 msgid ""
 "Navigation\n"
@@ -9097,7 +10819,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:333
+#: src/en/reference/glossary.md:294
 #, no-wrap
 msgid ""
 "Navigation Tab\n"
@@ -9106,7 +10828,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:338
+#: src/en/reference/glossary.md:299
 #, no-wrap
 msgid ""
 "Nagios\n"
@@ -9115,14 +10837,8 @@ msgid ""
 "  case of an alert.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:339
-#, no-wrap
-msgid "O"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:345
+#: src/en/reference/glossary.md:304
 #, no-wrap
 msgid ""
 "On-Premise\n"
@@ -9132,7 +10848,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:351
+#: src/en/reference/glossary.md:310
 #, no-wrap
 msgid ""
 "Organization\n"
@@ -9143,7 +10859,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:357
+#: src/en/reference/glossary.md:316
 #, no-wrap
 msgid ""
 "Owner\n"
@@ -9153,14 +10869,8 @@ msgid ""
 "  that the new owner knows what to do.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:358
-#, no-wrap
-msgid "P"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:365
+#: src/en/reference/glossary.md:322
 #, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -9171,7 +10881,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:371
+#: src/en/reference/glossary.md:328
 #, no-wrap
 msgid ""
 "Placetel\n"
@@ -9182,7 +10892,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:376
+#: src/en/reference/glossary.md:333
 #, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call log,\n"
@@ -9192,7 +10902,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:381
+#: src/en/reference/glossary.md:338
 #, no-wrap
 msgid ""
 "Priority\n"
@@ -9201,20 +10911,8 @@ msgid ""
 "  add more priorities to your Zammad.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:382
-#, no-wrap
-msgid "Q"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:385
-#, no-wrap
-msgid "R"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:394
+#: src/en/reference/glossary.md:346
 #, no-wrap
 msgid ""
 "Release\n"
@@ -9227,16 +10925,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:398
+#: src/en/reference/glossary.md:350
 #, no-wrap
 msgid ""
-"  In our [release notes](https://zammad.com/en/releases) you can find what\n"
-"  features are included in new versions and also important information about\n"
-"  what to consider before updating Zammad.\n"
+"  In our [release notes](https://zammad.com/en/releases){target=_blank} you can\n"
+"  find what features are included in new versions and also important information\n"
+"  about what to consider before updating Zammad.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:402
+#: src/en/reference/glossary.md:354
 #, no-wrap
 msgid ""
 "Role\n"
@@ -9245,7 +10943,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:409
+#: src/en/reference/glossary.md:361
 #, no-wrap
 msgid ""
 "  *Admins* have the most rights: they can define roles, permissions,\n"
@@ -9257,19 +10955,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:411
+#: src/en/reference/glossary.md:363
 #, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:412
-#, no-wrap
-msgid "S"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:417
+#: src/en/reference/glossary.md:367
 #, no-wrap
 msgid ""
 "Second Level Navigation\n"
@@ -9278,7 +10970,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:421
+#: src/en/reference/glossary.md:371
 #, no-wrap
 msgid ""
 "Side(Panel)\n"
@@ -9287,7 +10979,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:426
+#: src/en/reference/glossary.md:376
 #, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -9297,13 +10989,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:428
+#: src/en/reference/glossary.md:378
 #, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:434
+#: src/en/reference/glossary.md:384
 #, no-wrap
 msgid ""
 "Sipgate\n"
@@ -9314,7 +11006,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:441
+#: src/en/reference/glossary.md:391
 #, no-wrap
 msgid ""
 "SLA\n"
@@ -9326,7 +11018,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:445
+#: src/en/reference/glossary.md:395
 #, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the time\n"
@@ -9335,7 +11027,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:450
+#: src/en/reference/glossary.md:400
 #, no-wrap
 msgid ""
 "S/MIME\n"
@@ -9345,7 +11037,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:455
+#: src/en/reference/glossary.md:405
 #, no-wrap
 msgid ""
 "SSO\n"
@@ -9355,7 +11047,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:462
+#: src/en/reference/glossary.md:412
 #, no-wrap
 msgid ""
 "State\n"
@@ -9366,14 +11058,8 @@ msgid ""
 "  your Zammad.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:463
-#, no-wrap
-msgid "T"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:472
+#: src/en/reference/glossary.md:420
 #, no-wrap
 msgid ""
 "Tags\n"
@@ -9386,7 +11072,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:475
+#: src/en/reference/glossary.md:423
 #, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and also assigned\n"
@@ -9394,7 +11080,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:483
+#: src/en/reference/glossary.md:431
 #, no-wrap
 msgid ""
 "Text Module\n"
@@ -9407,7 +11093,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:486
+#: src/en/reference/glossary.md:434
 #, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -9415,7 +11101,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:491
+#: src/en/reference/glossary.md:439
 #, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -9424,14 +11110,8 @@ msgid ""
 "  offer.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:492
-#, no-wrap
-msgid "U"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:499
+#: src/en/reference/glossary.md:445
 #, no-wrap
 msgid ""
 "User\n"
@@ -9441,20 +11121,8 @@ msgid ""
 "  and customer.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:500
-#, no-wrap
-msgid "V"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:503
-#, no-wrap
-msgid "W"
-msgstr ""
-
 #. type: Plain text
-#: src/en/reference/glossary.md:510
+#: src/en/reference/glossary.md:451
 #, no-wrap
 msgid ""
 "Webhooks\n"
@@ -9464,28 +11132,16 @@ msgid ""
 "  information in Zammad.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/glossary.md:511
-#, no-wrap
-msgid "X"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:514
-#, no-wrap
-msgid "Y"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/glossary.md:517
-#, no-wrap
-msgid "Z"
+#. type: Plain text
+#: src/en/reference/glossary.md:454
+msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:521
-msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
-msgstr ""
+#: src/en/reference/glossary.md:455
+#, no-wrap
+msgid "</VPGlossary>\n"
+msgstr "</VPGlossary>\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/index.md:1
@@ -9979,9 +11635,8 @@ msgstr ""
 #: src/en/reference/rest-api/mentions.md:17
 #: src/en/reference/rest-api/ticket.md:17
 #: src/en/reference/rest-api/ticket.md:29
-#: src/en/reference/rest-api/ticket.md:47
-#: src/en/reference/rest-api/ticket.md:59
-#: src/en/reference/rest-api/ticket.md:103
+#: src/en/reference/rest-api/ticket.md:41
+#: src/en/reference/rest-api/ticket.md:85
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr ""
 
@@ -10028,15 +11683,15 @@ msgstr ""
 #: src/en/reference/rest-api/group.md:40
 #: src/en/reference/rest-api/mentions.md:26
 #: src/en/reference/rest-api/object.md:40
-#: src/en/reference/rest-api/organization.md:52
+#: src/en/reference/rest-api/organization.md:40
 #: src/en/reference/rest-api/priorities.md:34
 #: src/en/reference/rest-api/role.md:33
 #: src/en/reference/rest-api/shared-draft.md:20
 #: src/en/reference/rest-api/sla.md:38 src/en/reference/rest-api/states.md:40
-#: src/en/reference/rest-api/ticket.md:56
+#: src/en/reference/rest-api/ticket.md:38
 #: src/en/reference/rest-api/time-accounting.md:33
 #: src/en/reference/rest-api/user-access-token.md:20
-#: src/en/reference/rest-api/user.md:68
+#: src/en/reference/rest-api/user.md:55
 #, no-wrap
 msgid "Create"
 msgstr ""
@@ -10157,13 +11812,6 @@ msgid ""
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/rest-api/calendar.md:1
-#: src/en/reference/rest-api/calendar.md:6
-#, no-wrap
-msgid "Calendar"
-msgstr "Календар"
-
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/calendar.md:8
 #, no-wrap
@@ -10219,14 +11867,14 @@ msgstr ""
 #: src/en/reference/rest-api/group.md:28
 #: src/en/reference/rest-api/notification.md:32
 #: src/en/reference/rest-api/object.md:28
-#: src/en/reference/rest-api/organization.md:36
+#: src/en/reference/rest-api/organization.md:24
 #: src/en/reference/rest-api/priorities.md:21
 #: src/en/reference/rest-api/role.md:21
 #: src/en/reference/rest-api/shared-draft.md:8
 #: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
-#: src/en/reference/rest-api/ticket.md:44
+#: src/en/reference/rest-api/ticket.md:26
 #: src/en/reference/rest-api/time-accounting.md:20
-#: src/en/reference/rest-api/user.md:51
+#: src/en/reference/rest-api/user.md:38
 #, no-wrap
 msgid "Show"
 msgstr ""
@@ -10294,12 +11942,12 @@ msgstr ""
 #: src/en/reference/rest-api/mentions.md:55
 #: src/en/reference/rest-api/notification.md:65
 #: src/en/reference/rest-api/object.md:247
-#: src/en/reference/rest-api/organization.md:95
+#: src/en/reference/rest-api/organization.md:83
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:133
+#: src/en/reference/rest-api/ticket.md:115
 #: src/en/reference/rest-api/user-access-token.md:46
-#: src/en/reference/rest-api/user.md:137
+#: src/en/reference/rest-api/user.md:124
 #, no-wrap
 msgid "Delete"
 msgstr ""
@@ -10337,7 +11985,7 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:6
 #, no-wrap
 msgid "Checklist"
-msgstr ""
+msgstr "Списак задатака"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:9
@@ -10793,10 +12441,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/rest-api/cti.md:71
-#, fuzzy, no-wrap
-#| msgid "Example:"
+#, no-wrap
 msgid "Used Examples"
-msgstr "Пример:"
+msgstr "Коришћени примери"
 
 #. type: Plain text
 #: src/en/reference/rest-api/cti.md:76
@@ -10846,10 +12493,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/cti.md:93 src/en/reference/rest-api/cti.md:246
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#, no-wrap
 msgid "Available `attributes` and <Badge type=\"info\" text=\"sample data\" />:\n"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "Доступни `атрибути` и <Badge type=\"info\" text=\"примери\" />:\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/cti.md:96
@@ -11741,48 +13387,328 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/intro.md:136
+#, fuzzy, no-wrap
+#| msgid "Search"
+msgid "Search via API"
+msgstr "Претрага"
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:138
+#, no-wrap
+msgid "Endpoint Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:141
+msgid "Some endpoints support a search query. These are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+msgid "`Groups <group>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, fuzzy
+#| msgid "Organizations"
+msgid "`Organizations <organization>`"
+msgstr "Организације"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+msgid "`Roles <role>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+#, fuzzy
+#| msgid "Ticket State"
+msgid "`Tickets <ticket>`"
+msgstr "Стање тикета"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:147
+msgid "`Users <user>`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:150
+msgid ""
+"The following endpoints support a search query as well, but they are not "
+"explicitly covered in this documentation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+#, fuzzy
+#| msgid "Rails commands"
+msgid "Chat Sessions"
+msgstr "Rails команде"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+msgid "Knowledgebase"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+msgid "Macros"
+msgstr "Макрои"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+msgid "Overview"
+msgstr "Преглед"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+msgid "Templates"
+msgstr "Шаблони"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:157
+msgid "Text module"
+msgstr "Текстуални исечак"
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:158
+#, no-wrap
+msgid "Search Example"
+msgstr "Пример претраге"
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:161
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:162
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-basic-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:166
+#, no-wrap
+msgid "Expand Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:171
+msgid ""
+"If you want to have additional related information, you can use the `expand` "
+"parameter. Using it resolves the IDs and outputs values/names in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:173
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:174
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-expand-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:178
+#, no-wrap
+msgid "Full Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:183
+msgid ""
+"You can even extend the response by using the `full` parameter. Be aware "
+"that this response can be huge. It outputs all assets including related "
+"attributes and a `total_count` of search results as well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:185
+msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:186
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-full-search.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:191
+#, no-wrap
+msgid "Only Total Count Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:195
+msgid ""
+"Using this `only_total_count` parameter will output only the amount of "
+"search results."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:198
+msgid ""
+"`GET`-Request sent: `/api/v1/tickets/search?"
+"query=welcome&only_total_count=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:199
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-total-count.json\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:203
+#, fuzzy, no-wrap
+#| msgid "Close search"
+msgid "Global Search"
+msgstr "Затвори претрагу"
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:211
+msgid ""
+"If you need to search not only in a specific object type, you can do so by "
+"using the global search without specifying an object. The response may "
+"include users, tickets, organizations, knowledgebase articles and answers "
+"and chats, depending on your system and content. This global search behaves "
+"like the search in Zammad's UI in the left task bar. The available "
+"parameters are different to the ones for the endpoint search."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:213
+msgid "`GET`-Request sent: `/api/v1/search?query=welcome`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:214
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-global-search.json\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/intro.md:218
+#, no-wrap
+msgid "Condition Based Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:224
+msgid ""
+"You can even use conditions like for triggers and schedulers to search via "
+"API. If you don't want to build such conditions manually, you can find a "
+"hint below how to quickly build a condition structure via UI and fetch it "
+"for you API request."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:226
+msgid "So, how do I build such a condition based request?"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+msgid ""
+"In Zammad, go to the admin interface and create a condition, e.g. by "
+"creating a new overview or trigger. It can be inactive so you won't have any "
+"unwanted actions or changes."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+msgid ""
+"Go to the `Rails console </admin/console>`, either by using `rails c` / "
+"`zammad run rails c` or adding the prefix `rails r` / `zammad run rails r` "
+"in front of the commands below, depending on your setup."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:236
+msgid ""
+"Search for the created condition, adjust the following examples to your "
+"needs:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rest-api/intro.md:237
+#, no-wrap
+msgid "puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rest-api/intro.md:241
+#, no-wrap
+msgid "puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:246
+msgid "This leads to an output like the following:"
+msgstr ""
+
+#. type: Fenced div block (details Show output)
+#: src/en/reference/rest-api/intro.md:247
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:254
+msgid ""
+"Use this as payload in your `POST`-Request in an endpoint search. The "
+"response includes the same objects as the trigger or overview you created."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/intro.md:255
 #, no-wrap
 msgid "Sorting Search Results"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:139
+#: src/en/reference/rest-api/intro.md:258
 msgid "Zammad allows you to sort your search results by field if needed."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:140
+#: src/en/reference/rest-api/intro.md:259
 #, no-wrap
 msgid "`sort_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:143
+#: src/en/reference/rest-api/intro.md:262
 msgid ""
 "Append `?sort_by={row name}` to your query to sort by a specific row that "
 "appears in the search result."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:144
+#: src/en/reference/rest-api/intro.md:263
 #, no-wrap
 msgid "`order_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:147
+#: src/en/reference/rest-api/intro.md:266
 msgid ""
 "Append `?order_by={direction}` to your query to switch in between ascending "
 "and descending order."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:149
+#: src/en/reference/rest-api/intro.md:268
 msgid "Directions are: `asc` and `desc`."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/intro.md:150
+#: src/en/reference/rest-api/intro.md:269
 #, no-wrap
 msgid ""
 "Usually you'll want to combine both parameters in your searches -\n"
@@ -11790,13 +13716,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:155
+#: src/en/reference/rest-api/intro.md:274
 #, no-wrap
 msgid "Actions On Behalf of Other Users"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:159
+#: src/en/reference/rest-api/intro.md:278
 #, no-wrap
 msgid ""
 "**Requirement:** the user used for running the query on behalf requires\n"
@@ -11804,47 +13730,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:162
+#: src/en/reference/rest-api/intro.md:281
 msgid ""
 "Running API queries on behalf of other users allows you to e.g. create "
 "tickets by a different user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:165
+#: src/en/reference/rest-api/intro.md:284
 msgid ""
 "To do so, add a new HTTP header named `From` to your request. The value of "
 "this header can be one of the following:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 msgid "user ID"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 msgid "user login"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:288
 msgid "user email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:171
+#: src/en/reference/rest-api/intro.md:290
 msgid "`From` is available for all endpoints."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:172
+#: src/en/reference/rest-api/intro.md:291
 #, no-wrap
 msgid "Encoding"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:177
+#: src/en/reference/rest-api/intro.md:296
 msgid ""
 "The API expects UTF-8 encoding. Keep in mind that especially when using URLs "
 "with get options (e.g. `?query=this`) you may need to encode your URL "
@@ -11852,17 +13778,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:180
+#: src/en/reference/rest-api/intro.md:299
 msgid ""
 "If you want to learn more about URL encoding, [this Wikipedia article]"
 "(https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/rest-api/intro.md:181
-msgid ""
-"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
-"**P**rogramming **I**nterface)"
+#. type: Link reference
+#: src/en/reference/rest-api/intro.md:300
+#, no-wrap
+msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
 msgstr ""
 
 #. type: Title #
@@ -11905,7 +13830,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/link.md:29 src/en/reference/rest-api/tags.md:38
+#: src/en/reference/rest-api/link.md:29 src/en/reference/rest-api/tags.md:22
 #, no-wrap
 msgid "Add"
 msgstr ""
@@ -12543,7 +14468,6 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:11
 #: src/en/reference/rest-api/organization.md:27
-#: src/en/reference/rest-api/organization.md:39
 msgid "Required permission: `ticket.agent` **or** `admin.organization`"
 msgstr ""
 
@@ -12569,31 +14493,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/organization.md:29
-msgid "`GET`-Request sent: `/api/v1/organizations/search?query=inc&limit=10`"
-msgstr ""
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/organization.md:30
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/organizations/search/get-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/organization.md:41
 msgid "`GET`-Request sent: `/api/v1/organizations/{id}`"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rest-api/organization.md:42
+#: src/en/reference/rest-api/organization.md:30
 #, no-wrap
 msgid "Technically, any users in question can only see their own organization.\n"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/organization.md:46
+#: src/en/reference/rest-api/organization.md:34
 #, no-wrap
 msgid ""
 "\n"
@@ -12602,19 +14512,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/organization.md:55
-#: src/en/reference/rest-api/organization.md:76
-#: src/en/reference/rest-api/organization.md:98
+#: src/en/reference/rest-api/organization.md:43
+#: src/en/reference/rest-api/organization.md:64
+#: src/en/reference/rest-api/organization.md:86
 msgid "Required permission: `admin.organization`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/organization.md:57
+#: src/en/reference/rest-api/organization.md:45
 msgid "`POST`-Request sent: `/api/v1/organizations`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/organization.md:58
+#: src/en/reference/rest-api/organization.md:46
 #, no-wrap
 msgid ""
 "\n"
@@ -12629,12 +14539,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/organization.md:78
+#: src/en/reference/rest-api/organization.md:66
 msgid "`PUT`-Request sent: `/api/v1/organizations/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/organization.md:79
+#: src/en/reference/rest-api/organization.md:67
 #, no-wrap
 msgid ""
 "\n"
@@ -12649,12 +14559,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/organization.md:100
+#: src/en/reference/rest-api/organization.md:88
 msgid "`DELETE`-Request sent: `/api/v1/organizations/{id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/organization.md:101
+#: src/en/reference/rest-api/organization.md:89
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
@@ -12670,7 +14580,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/organization.md:114
+#: src/en/reference/rest-api/organization.md:102
 #, no-wrap
 msgid ""
 "\n"
@@ -12801,7 +14711,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:1
 #, no-wrap
 msgid "Role"
-msgstr ""
+msgstr "Улога"
 
 #. type: Title #
 #: src/en/reference/rest-api/role.md:6
@@ -12883,13 +14793,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/rest-api/shared-draft.md:1
-#: src/en/reference/rest-api/shared-draft.md:6
-#, no-wrap
-msgid "Shared Drafts"
-msgstr "Заједнички нацрти"
-
 #. type: Plain text
 #: src/en/reference/rest-api/shared-draft.md:11
 #: src/en/reference/rest-api/shared-draft.md:23
@@ -12952,7 +14855,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/shared-draft.md:62
-#: src/en/reference/rest-api/tags.md:64
+#: src/en/reference/rest-api/tags.md:48
 #: src/en/reference/rest-api/time-accounting.md:76
 #, no-wrap
 msgid "Remove"
@@ -13233,7 +15136,7 @@ msgstr "Стање тикета"
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:13 src/en/reference/rest-api/tags.md:25
-#: src/en/reference/rest-api/tags.md:41 src/en/reference/rest-api/tags.md:67
+#: src/en/reference/rest-api/tags.md:51
 msgid "Required permission: `ticket.agent` **or** `admin.tag`"
 msgstr ""
 
@@ -13253,31 +15156,11 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/tags.md:27
-msgid "`GET`-Request sent: `/api/v1/tag_search?term={tag name}`"
-msgstr ""
-
-#. type: Fenced div block (info)
-#: src/en/reference/rest-api/tags.md:28
-#, no-wrap
-msgid "Zammad will return all tags that contain your search phrase.\n"
-msgstr ""
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/tags.md:32
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/tag_search/get-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/tags.md:43
 msgid "`POST`-Request sent: `/api/v1/tags/add`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response)
-#: src/en/reference/rest-api/tags.md:44
+#: src/en/reference/rest-api/tags.md:28
 #, no-wrap
 msgid ""
 "\n"
@@ -13288,7 +15171,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres|info)
-#: src/en/reference/rest-api/tags.md:44
+#: src/en/reference/rest-api/tags.md:28
 #, no-wrap
 msgid ""
 "This will create the tag if it doesn't exist and the user has permission\n"
@@ -13296,7 +15179,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/tags.md:44
+#: src/en/reference/rest-api/tags.md:28
 #, no-wrap
 msgid ""
 "\n"
@@ -13307,12 +15190,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:69
+#: src/en/reference/rest-api/tags.md:53
 msgid "`DELETE`-Request sent: `/api/v1/tags/remove`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/tags.md:70
+#: src/en/reference/rest-api/tags.md:54
 #, no-wrap
 msgid ""
 "\n"
@@ -13327,30 +15210,30 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/tags.md:85
+#: src/en/reference/rest-api/tags.md:69
 #, no-wrap
 msgid "Administration Scope"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/tags.md:87
+#: src/en/reference/rest-api/tags.md:71
 #, no-wrap
 msgid "Admin - List"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:90 src/en/reference/rest-api/tags.md:102
-#: src/en/reference/rest-api/tags.md:123 src/en/reference/rest-api/tags.md:144
+#: src/en/reference/rest-api/tags.md:74 src/en/reference/rest-api/tags.md:86
+#: src/en/reference/rest-api/tags.md:107 src/en/reference/rest-api/tags.md:128
 msgid "Required permission: `admin.tag`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:92
+#: src/en/reference/rest-api/tags.md:76
 msgid "`GET`-Request sent: `/api/v1/tag_list`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/tags.md:93
+#: src/en/reference/rest-api/tags.md:77
 #, no-wrap
 msgid ""
 "\n"
@@ -13359,18 +15242,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/tags.md:99
+#: src/en/reference/rest-api/tags.md:83
 #, no-wrap
 msgid "Admin - Create"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:104
+#: src/en/reference/rest-api/tags.md:88
 msgid "`POST`-Request sent: `/api/v1/tag_list`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/tags.md:105
+#: src/en/reference/rest-api/tags.md:89
 #, no-wrap
 msgid ""
 "\n"
@@ -13385,18 +15268,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/tags.md:120
+#: src/en/reference/rest-api/tags.md:104
 #, no-wrap
 msgid "Admin - Rename"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:125
+#: src/en/reference/rest-api/tags.md:109
 msgid "`PUT`-Request sent: `/api/v1/tag_list/{tag id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/tags.md:126
+#: src/en/reference/rest-api/tags.md:110
 #, no-wrap
 msgid ""
 "\n"
@@ -13411,18 +15294,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/tags.md:141
+#: src/en/reference/rest-api/tags.md:125
 #, no-wrap
 msgid "Admin - Delete"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/tags.md:146
+#: src/en/reference/rest-api/tags.md:130
 msgid "`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/tags.md:147
+#: src/en/reference/rest-api/tags.md:131
 #, no-wrap
 msgid ""
 "\n"
@@ -13456,35 +15339,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:32
-msgid ""
-"`GET`-Request sent: `/api/v1/tickets/search?query={search string}&limit=10`"
-msgstr ""
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/ticket.md:33
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/tickets/search/get-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Fenced div block (warning)
-#: src/en/reference/rest-api/ticket.md:39
-#, no-wrap
-msgid ""
-"`tickets_count` returns the *current* number of returned tickets, not\n"
-"*the total amount*.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket.md:49
+#: src/en/reference/rest-api/ticket.md:31
 msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/ticket.md:50
+#: src/en/reference/rest-api/ticket.md:32
 #, no-wrap
 msgid ""
 "\n"
@@ -13493,12 +15353,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:61
+#: src/en/reference/rest-api/ticket.md:43
 msgid "`POST`-Request sent: `/api/v1/tickets`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:62
+#: src/en/reference/rest-api/ticket.md:44
 #, no-wrap
 msgid ""
 "**On behalf of users**\n"
@@ -13519,7 +15379,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:80
+#: src/en/reference/rest-api/ticket.md:62
 #, no-wrap
 msgid ""
 "\n"
@@ -13534,7 +15394,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:95
+#: src/en/reference/rest-api/ticket.md:77
 #, no-wrap
 msgid ""
 "For more article attributes and options have a look into\n"
@@ -13542,12 +15402,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:105
+#: src/en/reference/rest-api/ticket.md:87
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:106
+#: src/en/reference/rest-api/ticket.md:88
 #, no-wrap
 msgid ""
 "\n"
@@ -13558,7 +15418,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:106
+#: src/en/reference/rest-api/ticket.md:88
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a *new article* and\n"
@@ -13566,7 +15426,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:106
+#: src/en/reference/rest-api/ticket.md:88
 #, no-wrap
 msgid ""
 "\n"
@@ -13577,7 +15437,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:126
+#: src/en/reference/rest-api/ticket.md:108
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -13587,17 +15447,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:136
+#: src/en/reference/rest-api/ticket.md:118
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:138
+#: src/en/reference/rest-api/ticket.md:120
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:139
+#: src/en/reference/rest-api/ticket.md:121
 #, no-wrap
 msgid ""
 "\n"
@@ -13608,7 +15468,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/ticket.md:147
+#: src/en/reference/rest-api/ticket.md:129
 #, no-wrap
 msgid ""
 "\n"
@@ -13616,13 +15476,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/rest-api/time-accounting.md:1
-#: src/en/reference/rest-api/time-accounting.md:6
-#, no-wrap
-msgid "Time Accounting"
 msgstr ""
 
 #. type: Plain text
@@ -13836,7 +15689,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:29 src/en/reference/rest-api/user.md:41
+#: src/en/reference/rest-api/user.md:29
 msgid "Required permission: `ticket.agent` **or** `admin.user`"
 msgstr ""
 
@@ -13855,41 +15708,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:44
-msgid ""
-"`GET`-Request sent: `/api/v1/users/search?query=organization.name:{search "
-"string}&limit=10`"
-msgstr ""
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/user.md:45
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/users/search/get-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/user.md:55
+#: src/en/reference/rest-api/user.md:42
 msgid ""
 "Required permission: `ticket.agent` **or** `admin.user` **or** `ticket."
 "customer` (shared organization)"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rest-api/user.md:56
+#: src/en/reference/rest-api/user.md:43
 #, no-wrap
 msgid "Technically, any listings will return user's own information only.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:61
+#: src/en/reference/rest-api/user.md:48
 msgid "`GET`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/user.md:62
+#: src/en/reference/rest-api/user.md:49
 #, no-wrap
 msgid ""
 "\n"
@@ -13898,17 +15735,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:71 src/en/reference/rest-api/user.md:111
+#: src/en/reference/rest-api/user.md:58 src/en/reference/rest-api/user.md:98
 msgid "Required permission: `admin.user` **or** `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:73
+#: src/en/reference/rest-api/user.md:60
 msgid "`POST`-Request sent: `/api/v1/users`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/user.md:74
+#: src/en/reference/rest-api/user.md:61
 #, no-wrap
 msgid ""
 "**This depends on permissions**\n"
@@ -13925,7 +15762,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/user.md:88
+#: src/en/reference/rest-api/user.md:75
 #, no-wrap
 msgid ""
 "Unsure which attributes you can use or set? Run a GET query on any\n"
@@ -13933,7 +15770,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:93
+#: src/en/reference/rest-api/user.md:80
 #, no-wrap
 msgid ""
 "\n"
@@ -13948,12 +15785,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:113
+#: src/en/reference/rest-api/user.md:100
 msgid "`PUT`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/user.md:114
+#: src/en/reference/rest-api/user.md:101
 #, no-wrap
 msgid ""
 "**This depends on permissions**\n"
@@ -13964,7 +15801,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:122
+#: src/en/reference/rest-api/user.md:109
 #, no-wrap
 msgid ""
 "\n"
@@ -13979,17 +15816,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:140
+#: src/en/reference/rest-api/user.md:127
 msgid "Required permission: `admin.user`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:142
+#: src/en/reference/rest-api/user.md:129
 msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/user.md:143
+#: src/en/reference/rest-api/user.md:130
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
@@ -14006,13 +15843,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/user.md:157
+#: src/en/reference/rest-api/user.md:144
 #, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -14663,10 +16512,9 @@ msgstr ""
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:298 src/en/tutorials/migrate.md:54
 #: src/en/tutorials/migrate.md:331 src/en/tutorials/migrate.md:484
-#, fuzzy, no-wrap
-#| msgid "Administration"
+#, no-wrap
 msgid "Limitations"
-msgstr "Администрација"
+msgstr "Ограничења"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:304
@@ -14735,7 +16583,7 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:323
 #, no-wrap
 msgid "Usage"
-msgstr ""
+msgstr "Употреба"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:327
@@ -14994,10 +16842,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:113
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl status elasticsearch\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl status elasticsearch\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:119
@@ -15025,10 +16872,9 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:130
 #: src/en/tutorials/connect-config-elasticsearch.md:158
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl restart elasticsearch\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/connect-config-elasticsearch.md:134
@@ -15048,10 +16894,8 @@ msgstr "Одељак са значком <Badge type=\"warning\" text=\"прил
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:143
-#, fuzzy
-#| msgid "Install Elasticsearch"
 msgid "List installed elasticsearch plugins:"
-msgstr "Elasticsearch инсталација"
+msgstr "Листа инсталираних Elasticsearch додатака:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:143
@@ -15840,10 +17684,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:47
-#, fuzzy, no-wrap
-#| msgid "Setup, manage and use Zammad."
+#, no-wrap
 msgid "Step 5: Stop and Disable Zammad"
-msgstr "Подесите, управљајте и користите Zammad."
+msgstr "Корак 5: Зауставите и искључите Zammad"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:50
@@ -15852,10 +17695,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:51
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl disable zammad\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl disable zammad\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:58
@@ -16036,10 +17878,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:160
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl status zammad\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl status zammad\n"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:165
@@ -16309,7 +18150,7 @@ msgid ""
 "=== Via Browser\n"
 "\n"
 "After installing Zammad and\n"
-"[configuring your webserver](/en/tutorials/webserver-config), navigate to your\n"
+"[configuring your webserver](./webserver-config), navigate to your\n"
 "Zammads FQDN in your browser and follow the migration wizard. You can find\n"
 "it in the log in screen by clicking the \"Or migrate from another system\"\n"
 "link at the bottom.\n"
@@ -17196,7 +19037,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:161
-msgid "ticket SLA (in time *and* violation) per type[^2][^3]"
+msgid "ticket SLA (in time *and* violation) per type[^1][^2]"
 msgstr ""
 
 #. type: Title ####
@@ -17212,12 +19053,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "sender ratio (e.g. Customer / Agent)[^4]"
+msgid "sender ratio (e.g. Customer / Agent)[^3]"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "article type ratio (e.g. email, phone)[^5]"
+msgid "article type ratio (e.g. email, phone)[^3]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17229,12 +19070,12 @@ msgstr "Водич кроз стил и садржај"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "escalation ratios[^6]"
+msgid "escalation ratios[^1]"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "average first response, update time and close time[^7]"
+msgid "average first response, update time and close time[^2]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17246,17 +19087,17 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "organization of ticket customer[^8]"
+msgid "organization of ticket customer[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "ticket customers[^9]"
+msgid "ticket customers[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "ticket owners[^10]"
+msgid "ticket owners[^1]"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -17266,7 +19107,7 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/tutorials/reporting-grafana.md:177
-msgid "ticket tags[^11]"
+msgid "ticket tags[^1]"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -17416,94 +19257,42 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:230
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:232
 #, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+msgid "    means we can only display the *last* value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:233
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:235
 #, no-wrap
-msgid ""
-"[^2]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:236
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
 #, no-wrap
 msgid ""
-"[^3]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:242
-#, no-wrap
-msgid ""
-"[^4]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:246
-#, no-wrap
-msgid ""
-"[^5]: Specific reference IDs are not the same on every instance and thus\n"
-"    the panel may not work or show incorrect data. Check the panels\n"
-"    description on how to find our the relations on your system.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:249
-#, no-wrap
-msgid ""
-"[^6]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:252
-#, no-wrap
-msgid ""
-"[^7]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:255
-#, no-wrap
-msgid ""
-"[^8]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:258
-#, no-wrap
-msgid ""
-"[^9]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:261
-#, no-wrap
-msgid ""
-"[^10]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/reporting-grafana.md:264
-#, no-wrap
-msgid ""
-"[^11]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -17563,7 +19352,7 @@ msgstr ""
 #: src/en/tutorials/sso-kerberos.md:28
 #, no-wrap
 msgid "How Does it Work?"
-msgstr ""
+msgstr "Како то уствари функционише?"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:34
@@ -17743,13 +19532,13 @@ msgid "1c. Register a SPN for Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:115 src/en/tutorials/sso-kerberos.md:339
+#: src/en/tutorials/sso-kerberos.md:115 src/en/tutorials/sso-kerberos.md:340
 msgid "Replace the following placeholders in the commands below:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:344
-#: src/en/tutorials/sso-kerberos.md:412
+#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:345
+#: src/en/tutorials/sso-kerberos.md:413
 msgid "`<zammad-host>`: Zammad FQDN"
 msgstr ""
 
@@ -17766,8 +19555,8 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:299
-#: src/en/tutorials/sso-kerberos.md:344 src/en/tutorials/sso-kerberos.md:412
+#: src/en/tutorials/sso-kerberos.md:122 src/en/tutorials/sso-kerberos.md:300
+#: src/en/tutorials/sso-kerberos.md:345 src/en/tutorials/sso-kerberos.md:413
 msgid "`<domain>`: Windows domain"
 msgstr ""
 
@@ -17891,10 +19680,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:182
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl stop nginx\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl stop nginx\n"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:186
@@ -17903,10 +19691,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:186
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "$ systemctl disable nginx\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "$ systemctl disable nginx\n"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:193
@@ -17948,21 +19735,21 @@ msgid "2b. Pre-Configure Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:217
+#: src/en/tutorials/sso-kerberos.md:218
 msgid ""
 "This documentation expects a already working Apache configuration.  You "
 "should have a look at the [webserver configuration guide](/en/tutorials/"
-"webserver-config.md) before continuing."
+"webserver-config) before continuing."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:218
+#: src/en/tutorials/sso-kerberos.md:219
 #, no-wrap
 msgid "2c. Install Further Apache Dependencies"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:220
+#: src/en/tutorials/sso-kerberos.md:221
 #, no-wrap
 msgid ""
 "\n"
@@ -17992,20 +19779,20 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:248
+#: src/en/tutorials/sso-kerberos.md:249
 #, no-wrap
 msgid "2d. Enable Apache Modules"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:252
+#: src/en/tutorials/sso-kerberos.md:253
 msgid ""
 "SSO requires modules that are not enabled by default. By default you can use "
 "`a2enmod` to do so."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:254
+#: src/en/tutorials/sso-kerberos.md:255
 #, no-wrap
 msgid ""
 "\n"
@@ -18042,37 +19829,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:288
+#: src/en/tutorials/sso-kerberos.md:289
 #, no-wrap
 msgid "2e. Configure Kerberos"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:292
+#: src/en/tutorials/sso-kerberos.md:293
 msgid ""
 "Kerberos realm configuration is how you tell the Zammad server how to reach "
 "the *domain controller* (Active Directory server)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:294
+#: src/en/tutorials/sso-kerberos.md:295
 msgid "Replace the following placeholders in the sample config below:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:299
+#: src/en/tutorials/sso-kerberos.md:300
 msgid "`<domain-controller>`: Domain controller IP/FQDN(s)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:299
+#: src/en/tutorials/sso-kerberos.md:300
 msgid ""
 "`<master-domain-controller>`: Master domain controller IP/FQDN (must not be "
 "read-only, but can be the same as `<domain-controller>`)"
 msgstr ""
 
 #. type: Fenced code block
-#: src/en/tutorials/sso-kerberos.md:300
+#: src/en/tutorials/sso-kerberos.md:301
 #, no-wrap
 msgid ""
 "# /etc/krb5.conf\n"
@@ -18108,53 +19895,53 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:333
+#: src/en/tutorials/sso-kerberos.md:334
 #, no-wrap
 msgid "2f. Generate Keytab"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:337
+#: src/en/tutorials/sso-kerberos.md:338
 msgid ""
 "Apache needs a Kerberos *keytab* (key table) to manage its shared secrets "
 "with the domain controller."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:344
+#: src/en/tutorials/sso-kerberos.md:345
 msgid "`<secret-key>`: Secret key (**omit the leading** `0x`)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:344
+#: src/en/tutorials/sso-kerberos.md:345
 msgid "`<vno>`: Secret key version number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:347
+#: src/en/tutorials/sso-kerberos.md:348
 msgid ""
 "The secret key and version number were found in `sso-register-spn` (Step "
 "1d)  above."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:349
+#: src/en/tutorials/sso-kerberos.md:350
 msgid "Enter ktutil:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:349
+#: src/en/tutorials/sso-kerberos.md:350
 #, no-wrap
 msgid "ktutil\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:353
+#: src/en/tutorials/sso-kerberos.md:354
 msgid "Add keytab:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:353
+#: src/en/tutorials/sso-kerberos.md:354
 #, no-wrap
 msgid ""
 "ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts\n"
@@ -18162,12 +19949,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:358
+#: src/en/tutorials/sso-kerberos.md:359
 msgid "Confirm the entry was added successfully:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:358
+#: src/en/tutorials/sso-kerberos.md:359
 #, no-wrap
 msgid ""
 "ktutil: list\n"
@@ -18177,36 +19964,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:365
+#: src/en/tutorials/sso-kerberos.md:366
 msgid "Write keytab to disk:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:365
+#: src/en/tutorials/sso-kerberos.md:366
 #, no-wrap
 msgid "ktutil: wkt /root/zammad.keytab\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:369
+#: src/en/tutorials/sso-kerberos.md:370
 msgid "Leave ktutil:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:369
+#: src/en/tutorials/sso-kerberos.md:370
 #, no-wrap
 msgid "ktutil: quit\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:375
+#: src/en/tutorials/sso-kerberos.md:376
 msgid ""
 "Then, place the keytab in the Apache config directory and set the "
 "appropriate permissions:"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:376
+#: src/en/tutorials/sso-kerberos.md:377
 #, no-wrap
 msgid ""
 "\n"
@@ -18236,25 +20023,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:403
+#: src/en/tutorials/sso-kerberos.md:404
 #, no-wrap
 msgid "2g. Configure Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:407
+#: src/en/tutorials/sso-kerberos.md:408
 msgid ""
 "Add the following directive to the end of the virtual host configuration "
 "file to create your Kerberos SSO endpoint at `/auth/sso`:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:409
+#: src/en/tutorials/sso-kerberos.md:410
 msgid "Replace the following placeholders in the command below:"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:414
+#: src/en/tutorials/sso-kerberos.md:415
 #, no-wrap
 msgid ""
 "\n"
@@ -18310,28 +20097,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:467
+#: src/en/tutorials/sso-kerberos.md:468
 #, no-wrap
 msgid "2g. Restart Apache to Apply Changes"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:469
+#: src/en/tutorials/sso-kerberos.md:470
 #: src/en/tutorials/webserver-config.md:167
-#, fuzzy, no-wrap
-#| msgid "Get started with Zammad"
+#, no-wrap
 msgid "systemctl restart apache2\n"
-msgstr "Први кораци са Zammad-ом"
+msgstr "systemctl restart apache2\n"
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:473
-#, fuzzy, no-wrap
-#| msgid "Setup, manage and use Zammad."
+#: src/en/tutorials/sso-kerberos.md:474
+#, no-wrap
 msgid "Step 3: Enable SSO in Zammad"
-msgstr "Подесите, управљајте и користите Zammad."
+msgstr "Корак 3: Укључите SSO пријаву за Zammad"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:477
+#: src/en/tutorials/sso-kerberos.md:478
 #, no-wrap
 msgid ""
 "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
@@ -18339,7 +20124,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:478
+#: src/en/tutorials/sso-kerberos.md:479
 #, no-wrap
 msgid ""
 "On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
@@ -18347,39 +20132,39 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:483
+#: src/en/tutorials/sso-kerberos.md:484
 #, no-wrap
 msgid "Step 4: Configure Client System (Windows Only)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:487
+#: src/en/tutorials/sso-kerberos.md:488
 msgid ""
 "For the full SSO experience (i.e. for passwordless one-click sign-in), "
 "Zammad users must:"
 msgstr ""
 
 #. type: Bullet: '1.  '
-#: src/en/tutorials/sso-kerberos.md:491
+#: src/en/tutorials/sso-kerberos.md:492
 msgid "be on the Active Directory server's local intranet; and"
 msgstr ""
 
 #. type: Bullet: '2.  '
-#: src/en/tutorials/sso-kerberos.md:491
+#: src/en/tutorials/sso-kerberos.md:492
 msgid ""
 "modify their network settings for the Zammad host to be treated as a local "
 "intranet server."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:494
+#: src/en/tutorials/sso-kerberos.md:495
 msgid ""
 "Without this step, users must enter their Active Directory credentials "
 "during SSO."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:496
 #, no-wrap
 msgid ""
 "\n"
@@ -18388,7 +20173,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:496
 #, no-wrap
 msgid ""
 "This setting can be centrally managed across the entire intranet using\n"
@@ -18396,7 +20181,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:496
 #, no-wrap
 msgid ""
 "\n"
@@ -18413,7 +20198,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|info)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:496
 #, no-wrap
 msgid ""
 "This option cannot be centrally managed because it is set in the\n"
@@ -18421,7 +20206,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:496
 #, no-wrap
 msgid ""
 "\n"
@@ -18434,14 +20219,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:534
+#: src/en/tutorials/sso-kerberos.md:535
 msgid ""
 "Are all relevant FQDNs/hostnames reachable from your Active Directory and "
 "Zammad servers (including each other's)?"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:534
+#: src/en/tutorials/sso-kerberos.md:535
 msgid ""
 "Are the system clocks of your Active Directory and Zammad servers "
 "synchronized within five minutes of each other? Kerberos is a time-sensitive "
@@ -18449,13 +20234,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:535
+#: src/en/tutorials/sso-kerberos.md:536
 #, no-wrap
 msgid "Errors in Apache Logs"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:537
+#: src/en/tutorials/sso-kerberos.md:538
 #, no-wrap
 msgid ""
 "**Try raising your Apache log level temporarily.**\n"
@@ -18465,20 +20250,20 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:544
+#: src/en/tutorials/sso-kerberos.md:545
 #, no-wrap
 msgid "An unsupported mechanism was requested"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:547
+#: src/en/tutorials/sso-kerberos.md:548
 msgid ""
 "Does your Active Directory service account have **Kerberos AES 256-bit "
 "encryption** enabled?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:551
+#: src/en/tutorials/sso-kerberos.md:552
 msgid ""
 "If for some reason your server does not support AES 256-bit encryption, the "
 "LDAP Wiki has [more information about Kerberos encryption types](https://"
@@ -18486,13 +20271,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:552
+#: src/en/tutorials/sso-kerberos.md:553
 #, no-wrap
 msgid "Failed to verify krb5 credentials: Key version is not available"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:555
+#: src/en/tutorials/sso-kerberos.md:556
 #, no-wrap
 msgid ""
 "Did you use the exact **version number** (`vno`) provided by `ktpass`\n"
@@ -18500,18 +20285,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:557 src/en/tutorials/sso-kerberos.md:563
+#: src/en/tutorials/sso-kerberos.md:558 src/en/tutorials/sso-kerberos.md:564
 msgid "Try generating it again, just to be sure."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:558
+#: src/en/tutorials/sso-kerberos.md:559
 #, no-wrap
 msgid "Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:561
+#: src/en/tutorials/sso-kerberos.md:562
 #, no-wrap
 msgid ""
 "Does the **service name** you provided to `setspn` exactly match the one\n"
@@ -18519,58 +20304,58 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:564
+#: src/en/tutorials/sso-kerberos.md:565
 #, no-wrap
 msgid "No key table entry found for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:567
+#: src/en/tutorials/sso-kerberos.md:568
 msgid ""
 "Does your virtual host configuration's `KrbServiceName` setting exactly "
 "match the **service name** you provided to `setspn`?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:569
+#: src/en/tutorials/sso-kerberos.md:570
 msgid "This setting is case-sensitive."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:570
+#: src/en/tutorials/sso-kerberos.md:571
 #, no-wrap
 msgid "Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:573
+#: src/en/tutorials/sso-kerberos.md:574
 msgid ""
 "Is your Zammad host accessible at an FQDN? This error may indicate that you "
 "configured your Zammad host as a numeric IP address instead."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:574
+#: src/en/tutorials/sso-kerberos.md:575
 #, no-wrap
 msgid "Cannot decrypt ticket for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:577
+#: src/en/tutorials/sso-kerberos.md:578
 msgid ""
 "Did you make sure to change the password on your Active Directory service "
 "account *after enabling 256-bit AES encryption?*"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:580
+#: src/en/tutorials/sso-kerberos.md:581
 msgid ""
 "And did you make sure to register the SPN (with `ktpass`) and generate your "
 "keytab (with `ktutil`) *after changing your password?*"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:586
+#: src/en/tutorials/sso-kerberos.md:587
 #, no-wrap
 msgid ""
 "Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.\n"
@@ -18581,23 +20366,23 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:587
+#: src/en/tutorials/sso-kerberos.md:588
 #, no-wrap
 msgid "Failed when verifying KDC\" and \"failed to verify krb5 credentials: Decrypt integrity check failed"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:589
+#: src/en/tutorials/sso-kerberos.md:590
 msgid "Ensure `KrbServiceName` is the correct ServiceName provided via setspn."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:591
+#: src/en/tutorials/sso-kerberos.md:592
 msgid "Ensure your Active Directory supports the encryption method configured."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:594
+#: src/en/tutorials/sso-kerberos.md:595
 msgid ""
 "If all above is correct and the rest of FAQ also is ensured, make sure your "
 "client does not cache the results. `klist purge` clears the clients cache - "
@@ -19048,6 +20833,121 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~| "screenshot-full-page.png)"
+#~ msgid ""
+#~ "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
+#~ "features.cy.js/ticket-tags.png)"
+#~ msgstr ""
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/"
+#~ "test-screenshot-full-page.png)"
+
+#, no-wrap
+#~ msgid "Content of User Documentation Section"
+#~ msgstr "Садржај одељка корисничке документације"
+
+#~ msgid "TODO: - Links / TOC to different sections of user documentation"
+#~ msgstr "TODO: - Links / TOC to different sections of user documentation"
+
+#, no-wrap
+#~ msgid "Screenshots"
+#~ msgstr "Снимци екрана"
+
+#~ msgid ""
+#~ "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~ "screenshot-full-page.png)"
+#~ msgstr ""
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/"
+#~ "test-screenshot-full-page.png)"
+
+#~ msgid ""
+#~ "![Test Screenshot (Page Element)](/screenshots/cypress/test.cy.js/test-"
+#~ "screenshot-page-element.png)"
+#~ msgstr ""
+#~ "![Пример снимка екрана (елемент стране)](/screenshots/cypress/test.cy.js/"
+#~ "test-screenshot-page-element.png)"
+
+#~ msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"
+#~ msgstr "![Пример снимка екрана (статички)](/screenshots/dashboard.png)"
+
+#, no-wrap
+#~ msgid "A"
+#~ msgstr "A"
+
+#, no-wrap
+#~ msgid "B"
+#~ msgstr "B"
+
+#, no-wrap
+#~ msgid "C"
+#~ msgstr "C"
+
+#, no-wrap
+#~ msgid "D"
+#~ msgstr "D"
+
+#, no-wrap
+#~ msgid "E"
+#~ msgstr "E"
+
+#, no-wrap
+#~ msgid "F"
+#~ msgstr "F"
+
+#, no-wrap
+#~ msgid "G"
+#~ msgstr "G"
+
+#, no-wrap
+#~ msgid "J"
+#~ msgstr "J"
+
+#, no-wrap
+#~ msgid "K"
+#~ msgstr "K"
+
+#, no-wrap
+#~ msgid "L"
+#~ msgstr "L"
+
+#, no-wrap
+#~ msgid "M"
+#~ msgstr "M"
+
+#, no-wrap
+#~ msgid "Q"
+#~ msgstr "Q"
+
+#, no-wrap
+#~ msgid "R"
+#~ msgstr "R"
+
+#, no-wrap
+#~ msgid "S"
+#~ msgstr "S"
+
+#, no-wrap
+#~ msgid "T"
+#~ msgstr "T"
+
+#, no-wrap
+#~ msgid "U"
+#~ msgstr "U"
+
+#, no-wrap
+#~ msgid "W"
+#~ msgstr "W"
+
+#, no-wrap
+#~ msgid "X"
+#~ msgstr "X"
+
+#, no-wrap
+#~ msgid "Z"
+#~ msgstr "Z"
 
 #, fuzzy, no-wrap
 #~| msgid "The Zammad source code can be found on GitHub in the [Zammad repository](https://github.com/zammad/zammad)."
