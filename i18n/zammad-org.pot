@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-28 16:08+0100\n"
+"POT-Creation-Date: 2025-02-03 14:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8857,13 +8857,31 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:423
 #, markdown-text, no-wrap
 msgid ""
+"`detected_language`\n"
+": - `en`, `de`\n"
+"  - Language code of detected language, may be empty\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:427
+#, markdown-text, no-wrap
+msgid ""
+"`detected_language_name`\n"
+": - `English`, `German`\n"
+"  - Language name of detected language, may be empty\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:431
+#, markdown-text, no-wrap
+msgid ""
 "`from`\n"
 ": - `John Doe <john.doe@example.com>`\n"
 "  - From field of article creator\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:427
+#: src/en/reference/es-indexed-attributes.md:435
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -8872,7 +8890,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:431
+#: src/en/reference/es-indexed-attributes.md:439
 #, markdown-text, no-wrap
 msgid ""
 "`in_reply_to`\n"
@@ -8881,7 +8899,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:435
+#: src/en/reference/es-indexed-attributes.md:443
 #, markdown-text, no-wrap
 msgid ""
 "`internal`\n"
@@ -8890,7 +8908,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:439
+#: src/en/reference/es-indexed-attributes.md:447
 #, markdown-text, no-wrap
 msgid ""
 "`message_id`\n"
@@ -8899,7 +8917,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:443
+#: src/en/reference/es-indexed-attributes.md:451
 #, markdown-text, no-wrap
 msgid ""
 "`origin_by_id`\n"
@@ -8908,7 +8926,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:447
+#: src/en/reference/es-indexed-attributes.md:455
 #, markdown-text, no-wrap
 msgid ""
 "`preferences`\n"
@@ -8917,7 +8935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:451
+#: src/en/reference/es-indexed-attributes.md:459
 #, markdown-text, no-wrap
 msgid ""
 "`reply_to`\n"
@@ -8926,7 +8944,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:455
+#: src/en/reference/es-indexed-attributes.md:463
 #, markdown-text, no-wrap
 msgid ""
 "`sender_id`\n"
@@ -8935,7 +8953,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:459
+#: src/en/reference/es-indexed-attributes.md:467
 #, markdown-text, no-wrap
 msgid ""
 "`subject`\n"
@@ -8944,7 +8962,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:463
+#: src/en/reference/es-indexed-attributes.md:471
 #, markdown-text, no-wrap
 msgid ""
 "`ticket_id`\n"
@@ -8953,7 +8971,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:467
+#: src/en/reference/es-indexed-attributes.md:475
 #, markdown-text, no-wrap
 msgid ""
 "`to`\n"
@@ -8962,7 +8980,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:471
+#: src/en/reference/es-indexed-attributes.md:479
 #, markdown-text, no-wrap
 msgid ""
 "`type_id`\n"
@@ -8971,7 +8989,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:475
+#: src/en/reference/es-indexed-attributes.md:483
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -8980,7 +8998,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:479
+#: src/en/reference/es-indexed-attributes.md:487
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -8989,14 +9007,14 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:481
+#: src/en/reference/es-indexed-attributes.md:489
 #: src/en/reference/rest-api/user.md:1 src/en/reference/rest-api/user.md:6
 #, markdown-text, no-wrap
 msgid "User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:486
+#: src/en/reference/es-indexed-attributes.md:494
 #, markdown-text, no-wrap
 msgid ""
 "`active`\n"
@@ -9005,7 +9023,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:490
+#: src/en/reference/es-indexed-attributes.md:498
 #, markdown-text, no-wrap
 msgid ""
 "`address`\n"
@@ -9014,7 +9032,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:494
+#: src/en/reference/es-indexed-attributes.md:502
 #, markdown-text, no-wrap
 msgid ""
 "`city`\n"
@@ -9023,7 +9041,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:498
+#: src/en/reference/es-indexed-attributes.md:506
 #, markdown-text, no-wrap
 msgid ""
 "`country`\n"
@@ -9032,7 +9050,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:502
+#: src/en/reference/es-indexed-attributes.md:510
 #, markdown-text, no-wrap
 msgid ""
 "`created_at`\n"
@@ -9041,7 +9059,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:506
+#: src/en/reference/es-indexed-attributes.md:514
 #, markdown-text, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -9050,7 +9068,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:510
+#: src/en/reference/es-indexed-attributes.md:518
 #, markdown-text, no-wrap
 msgid ""
 "`department`\n"
@@ -9059,7 +9077,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:514
+#: src/en/reference/es-indexed-attributes.md:522
 #, markdown-text, no-wrap
 msgid ""
 "`email`\n"
@@ -9068,7 +9086,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:518
+#: src/en/reference/es-indexed-attributes.md:526
 #, markdown-text, no-wrap
 msgid ""
 "`fax`\n"
@@ -9077,7 +9095,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:522
+#: src/en/reference/es-indexed-attributes.md:530
 #, markdown-text, no-wrap
 msgid ""
 "`firstname`\n"
@@ -9086,7 +9104,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:526
+#: src/en/reference/es-indexed-attributes.md:534
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -9095,7 +9113,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:530
+#: src/en/reference/es-indexed-attributes.md:538
 #, markdown-text, no-wrap
 msgid ""
 "`last_login`\n"
@@ -9104,7 +9122,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:534
+#: src/en/reference/es-indexed-attributes.md:542
 #, markdown-text, no-wrap
 msgid ""
 "`lastname`\n"
@@ -9113,7 +9131,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:538
+#: src/en/reference/es-indexed-attributes.md:546
 #, markdown-text, no-wrap
 msgid ""
 "`login`\n"
@@ -9122,7 +9140,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:542
+#: src/en/reference/es-indexed-attributes.md:550
 #, markdown-text, no-wrap
 msgid ""
 "`mobile`\n"
@@ -9131,7 +9149,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:546
+#: src/en/reference/es-indexed-attributes.md:554
 #, markdown-text, no-wrap
 msgid ""
 "`note`\n"
@@ -9140,7 +9158,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:551
+#: src/en/reference/es-indexed-attributes.md:559
 #, markdown-text, no-wrap
 msgid ""
 "`organization`\n"
@@ -9151,7 +9169,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:555
+#: src/en/reference/es-indexed-attributes.md:563
 #, markdown-text, no-wrap
 msgid ""
 "`organization_id`\n"
@@ -9160,7 +9178,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:559
+#: src/en/reference/es-indexed-attributes.md:567
 #, markdown-text, no-wrap
 msgid ""
 "`out_of_office`\n"
@@ -9169,7 +9187,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:563
+#: src/en/reference/es-indexed-attributes.md:571
 #, markdown-text, no-wrap
 msgid ""
 "`out_of_office_end_at`\n"
@@ -9178,7 +9196,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:567
+#: src/en/reference/es-indexed-attributes.md:575
 #, markdown-text, no-wrap
 msgid ""
 "`out_of_office_replacement_id`\n"
@@ -9187,7 +9205,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:571
+#: src/en/reference/es-indexed-attributes.md:579
 #, markdown-text, no-wrap
 msgid ""
 "`out_of_office_start_at`\n"
@@ -9196,7 +9214,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:575
+#: src/en/reference/es-indexed-attributes.md:583
 #, markdown-text, no-wrap
 msgid ""
 "`permissions`\n"
@@ -9205,7 +9223,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:579
+#: src/en/reference/es-indexed-attributes.md:587
 #, markdown-text, no-wrap
 msgid ""
 "`phone`\n"
@@ -9214,7 +9232,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:584
+#: src/en/reference/es-indexed-attributes.md:592
 #, markdown-text, no-wrap
 msgid ""
 "`preferences`\n"
@@ -9224,7 +9242,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:588
+#: src/en/reference/es-indexed-attributes.md:596
 #, markdown-text, no-wrap
 msgid ""
 "`role_ids`\n"
@@ -9233,7 +9251,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:592
+#: src/en/reference/es-indexed-attributes.md:600
 #, markdown-text, no-wrap
 msgid ""
 "`street`\n"
@@ -9242,7 +9260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:596
+#: src/en/reference/es-indexed-attributes.md:604
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -9251,7 +9269,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:600
+#: src/en/reference/es-indexed-attributes.md:608
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -9260,7 +9278,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:604
+#: src/en/reference/es-indexed-attributes.md:612
 #, markdown-text, no-wrap
 msgid ""
 "`verified`\n"
@@ -9269,7 +9287,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:608
+#: src/en/reference/es-indexed-attributes.md:616
 #, markdown-text, no-wrap
 msgid ""
 "`vip`\n"
@@ -9278,7 +9296,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:612
+#: src/en/reference/es-indexed-attributes.md:620
 #, markdown-text, no-wrap
 msgid ""
 "`web`\n"
@@ -9287,7 +9305,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:616
+#: src/en/reference/es-indexed-attributes.md:624
 #, markdown-text, no-wrap
 msgid ""
 "`zip`\n"
@@ -9296,7 +9314,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:618
+#: src/en/reference/es-indexed-attributes.md:626
 #: src/en/reference/rest-api/organization.md:1
 #: src/en/reference/rest-api/organization.md:6
 #, markdown-text, no-wrap
@@ -9304,13 +9322,13 @@ msgid "Organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:621
+#: src/en/reference/es-indexed-attributes.md:629
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_organization`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:626
+#: src/en/reference/es-indexed-attributes.md:634
 #, markdown-text, no-wrap
 msgid ""
 "`active`\n"
@@ -9319,7 +9337,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:630
+#: src/en/reference/es-indexed-attributes.md:638
 #, markdown-text, no-wrap
 msgid ""
 "`created_at`\n"
@@ -9328,7 +9346,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:635
+#: src/en/reference/es-indexed-attributes.md:643
 #, markdown-text, no-wrap
 msgid ""
 "`created_by`\n"
@@ -9339,7 +9357,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:639
+#: src/en/reference/es-indexed-attributes.md:647
 #, markdown-text, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -9348,7 +9366,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:643
+#: src/en/reference/es-indexed-attributes.md:651
 #, markdown-text, no-wrap
 msgid ""
 "`domain`\n"
@@ -9357,7 +9375,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:647
+#: src/en/reference/es-indexed-attributes.md:655
 #, markdown-text, no-wrap
 msgid ""
 "`domain_assignment`\n"
@@ -9366,7 +9384,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:651
+#: src/en/reference/es-indexed-attributes.md:659
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -9375,7 +9393,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:656
+#: src/en/reference/es-indexed-attributes.md:664
 #, markdown-text, no-wrap
 msgid ""
 "`members`\n"
@@ -9386,7 +9404,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:660
+#: src/en/reference/es-indexed-attributes.md:668
 #, markdown-text, no-wrap
 msgid ""
 "`name`\n"
@@ -9395,7 +9413,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:664
+#: src/en/reference/es-indexed-attributes.md:672
 #, markdown-text, no-wrap
 msgid ""
 "`note`\n"
@@ -9404,7 +9422,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:668
+#: src/en/reference/es-indexed-attributes.md:676
 #, markdown-text, no-wrap
 msgid ""
 "`shared`\n"
@@ -9413,7 +9431,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:672
+#: src/en/reference/es-indexed-attributes.md:680
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -9422,7 +9440,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:677
+#: src/en/reference/es-indexed-attributes.md:685
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by`\n"
@@ -9433,7 +9451,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:681
+#: src/en/reference/es-indexed-attributes.md:689
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -9442,7 +9460,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:685
+#: src/en/reference/es-indexed-attributes.md:693
 #, markdown-text, no-wrap
 msgid ""
 "`vip`\n"
@@ -9451,20 +9469,20 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:686
+#: src/en/reference/es-indexed-attributes.md:694
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, markdown-text, no-wrap
 msgid "Group"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:689
+#: src/en/reference/es-indexed-attributes.md:697
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_group`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:693
+#: src/en/reference/es-indexed-attributes.md:701
 #, markdown-text, no-wrap
 msgid ""
 "`active`\n"
@@ -9473,7 +9491,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:697
+#: src/en/reference/es-indexed-attributes.md:705
 #, markdown-text, no-wrap
 msgid ""
 "`assignment_timeout`\n"
@@ -9483,7 +9501,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:701
+#: src/en/reference/es-indexed-attributes.md:709
 #, markdown-text, no-wrap
 msgid ""
 "`created_at`\n"
@@ -9492,7 +9510,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:705
+#: src/en/reference/es-indexed-attributes.md:713
 #, markdown-text, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -9501,7 +9519,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:720
+#: src/en/reference/es-indexed-attributes.md:728
 #, markdown-text, no-wrap
 msgid ""
 "`email_address`\n"
@@ -9521,7 +9539,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:724
+#: src/en/reference/es-indexed-attributes.md:732
 #, markdown-text, no-wrap
 msgid ""
 "`email_address_id`\n"
@@ -9530,7 +9548,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:728
+#: src/en/reference/es-indexed-attributes.md:736
 #, markdown-text, no-wrap
 msgid ""
 "`follow_up_assignment`\n"
@@ -9539,7 +9557,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:732
+#: src/en/reference/es-indexed-attributes.md:740
 #, markdown-text, no-wrap
 msgid ""
 "`follow_up_possible`\n"
@@ -9548,7 +9566,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:736
+#: src/en/reference/es-indexed-attributes.md:744
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -9557,7 +9575,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:740
+#: src/en/reference/es-indexed-attributes.md:748
 #, markdown-text, no-wrap
 msgid ""
 "`name`\n"
@@ -9566,7 +9584,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:744
+#: src/en/reference/es-indexed-attributes.md:752
 #, markdown-text, no-wrap
 msgid ""
 "`note`\n"
@@ -9575,7 +9593,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:757
+#: src/en/reference/es-indexed-attributes.md:765
 #, markdown-text, no-wrap
 msgid ""
 "`signature`\n"
@@ -9594,7 +9612,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:761
+#: src/en/reference/es-indexed-attributes.md:769
 #, markdown-text, no-wrap
 msgid ""
 "`signature_id`\n"
@@ -9603,7 +9621,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:765
+#: src/en/reference/es-indexed-attributes.md:773
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -9612,7 +9630,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:769
+#: src/en/reference/es-indexed-attributes.md:777
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -9621,19 +9639,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:770
+#: src/en/reference/es-indexed-attributes.md:778
 #, markdown-text, no-wrap
 msgid "CTI Log"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:773
+#: src/en/reference/es-indexed-attributes.md:781
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_cti_log`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:777
+#: src/en/reference/es-indexed-attributes.md:785
 #, markdown-text, no-wrap
 msgid ""
 "`call_id`\n"
@@ -9642,7 +9660,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:781
+#: src/en/reference/es-indexed-attributes.md:789
 #, markdown-text, no-wrap
 msgid ""
 "`comment`\n"
@@ -9651,7 +9669,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:785
+#: src/en/reference/es-indexed-attributes.md:793
 #, markdown-text, no-wrap
 msgid ""
 "`created_at`\n"
@@ -9660,7 +9678,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:789
+#: src/en/reference/es-indexed-attributes.md:797
 #, markdown-text, no-wrap
 msgid ""
 "`direction`\n"
@@ -9669,7 +9687,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:793
+#: src/en/reference/es-indexed-attributes.md:801
 #, markdown-text, no-wrap
 msgid ""
 "`done`\n"
@@ -9678,7 +9696,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:797
+#: src/en/reference/es-indexed-attributes.md:805
 #, markdown-text, no-wrap
 msgid ""
 "`duration_talking_time`\n"
@@ -9687,7 +9705,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:801
+#: src/en/reference/es-indexed-attributes.md:809
 #, markdown-text, no-wrap
 msgid ""
 "`duration_waiting_time`\n"
@@ -9696,7 +9714,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:805
+#: src/en/reference/es-indexed-attributes.md:813
 #, markdown-text, no-wrap
 msgid ""
 "`end_at`\n"
@@ -9705,7 +9723,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:809
+#: src/en/reference/es-indexed-attributes.md:817
 #, markdown-text, no-wrap
 msgid ""
 "`from`\n"
@@ -9714,7 +9732,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:813
+#: src/en/reference/es-indexed-attributes.md:821
 #, markdown-text, no-wrap
 msgid ""
 "`from_comment`\n"
@@ -9723,7 +9741,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:817
+#: src/en/reference/es-indexed-attributes.md:825
 #, markdown-text, no-wrap
 msgid ""
 "`from_pretty`\n"
@@ -9732,7 +9750,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:821
+#: src/en/reference/es-indexed-attributes.md:829
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -9741,7 +9759,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:825
+#: src/en/reference/es-indexed-attributes.md:833
 #, markdown-text, no-wrap
 msgid ""
 "`initialized_at`\n"
@@ -9750,7 +9768,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:829
+#: src/en/reference/es-indexed-attributes.md:837
 #, markdown-text, no-wrap
 msgid ""
 "`preferences`\n"
@@ -9759,7 +9777,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:833
+#: src/en/reference/es-indexed-attributes.md:841
 #, markdown-text, no-wrap
 msgid ""
 "`queue`\n"
@@ -9768,7 +9786,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:837
+#: src/en/reference/es-indexed-attributes.md:845
 #, markdown-text, no-wrap
 msgid ""
 "`start_at`\n"
@@ -9777,7 +9795,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:841
+#: src/en/reference/es-indexed-attributes.md:849
 #, markdown-text, no-wrap
 msgid ""
 "`state`\n"
@@ -9786,7 +9804,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:845
+#: src/en/reference/es-indexed-attributes.md:853
 #, markdown-text, no-wrap
 msgid ""
 "`to`\n"
@@ -9795,7 +9813,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:849
+#: src/en/reference/es-indexed-attributes.md:857
 #, markdown-text, no-wrap
 msgid ""
 "`to_comment`\n"
@@ -9804,7 +9822,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:853
+#: src/en/reference/es-indexed-attributes.md:861
 #, markdown-text, no-wrap
 msgid ""
 "`to_pretty`\n"
@@ -9813,7 +9831,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:857
+#: src/en/reference/es-indexed-attributes.md:865
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -9822,19 +9840,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:859
+#: src/en/reference/es-indexed-attributes.md:867
 #, markdown-text, no-wrap
 msgid "Chat Session"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:862
+#: src/en/reference/es-indexed-attributes.md:870
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_chat_session`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:880
+#: src/en/reference/es-indexed-attributes.md:888
 #, markdown-text, no-wrap
 msgid ""
 "`chat`\n"
@@ -9857,7 +9875,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:884
+#: src/en/reference/es-indexed-attributes.md:892
 #, markdown-text, no-wrap
 msgid ""
 "`chat_id`\n"
@@ -9866,7 +9884,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:888
+#: src/en/reference/es-indexed-attributes.md:896
 #, markdown-text, no-wrap
 msgid ""
 "`created_at`\n"
@@ -9875,7 +9893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:892
+#: src/en/reference/es-indexed-attributes.md:900
 #, markdown-text, no-wrap
 msgid ""
 "`created_by_id`\n"
@@ -9884,7 +9902,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:896
+#: src/en/reference/es-indexed-attributes.md:904
 #, markdown-text, no-wrap
 msgid ""
 "`id`\n"
@@ -9893,7 +9911,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:905
+#: src/en/reference/es-indexed-attributes.md:913
 #, markdown-text, no-wrap
 msgid ""
 "`messages`\n"
@@ -9907,7 +9925,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:909
+#: src/en/reference/es-indexed-attributes.md:917
 #, markdown-text, no-wrap
 msgid ""
 "`name`\n"
@@ -9916,7 +9934,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:918
+#: src/en/reference/es-indexed-attributes.md:926
 #, markdown-text, no-wrap
 msgid ""
 "`preferences`\n"
@@ -9930,7 +9948,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:922
+#: src/en/reference/es-indexed-attributes.md:930
 #, markdown-text, no-wrap
 msgid ""
 "`session_id`\n"
@@ -9939,7 +9957,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:926
+#: src/en/reference/es-indexed-attributes.md:934
 #, markdown-text, no-wrap
 msgid ""
 "`state`\n"
@@ -9948,7 +9966,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:930
+#: src/en/reference/es-indexed-attributes.md:938
 #, markdown-text, no-wrap
 msgid ""
 "`tags`\n"
@@ -9957,7 +9975,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:934
+#: src/en/reference/es-indexed-attributes.md:942
 #, markdown-text, no-wrap
 msgid ""
 "`updated_at`\n"
@@ -9966,7 +9984,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:938
+#: src/en/reference/es-indexed-attributes.md:946
 #, markdown-text, no-wrap
 msgid ""
 "`updated_by_id`\n"
@@ -9975,7 +9993,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:942
+#: src/en/reference/es-indexed-attributes.md:950
 #, markdown-text, no-wrap
 msgid ""
 "`user`\n"
@@ -9984,7 +10002,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:945
+#: src/en/reference/es-indexed-attributes.md:953
 #, markdown-text, no-wrap
 msgid ""
 "`user_id`\n"

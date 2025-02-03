@@ -418,6 +418,14 @@ haben wir sie in einen eigenen Bereich verschoben.
 : - `10`
   - Benutzer ID des Benutzers, der den Artikel erstellt hat
 
+`detected_language`
+: - `en`, `de`
+  - Language code of detected language, may be empty
+
+`detected_language_name`
+: - `English`, `German`
+  - Language name of detected language, may be empty
+
 `from`
 : - `John Doe <john.doe@example.com>`
   - Von-Feld des Artikel-Erstellers

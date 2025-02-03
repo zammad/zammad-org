@@ -419,6 +419,14 @@ provide it in its own table.
 : - `10`
   - User ID that created the article
 
+`detected_language`
+: - `en`, `de`
+  - Language code of detected language, may be empty
+
+`detected_language_name`
+: - `English`, `German`
+  - Language name of detected language, may be empty
+
 `from`
 : - `John Doe <john.doe@example.com>`
   - From field of article creator
