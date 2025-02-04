@@ -19,7 +19,8 @@ For package installation, the following Linux distributions are supported:
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
 If your distribution is not supported, feel free to use a different installation
-method or consider using [Zammad's cloud service](https://zammad.com/en/pricing).
+method or consider using
+[Zammad's cloud service](https://zammad.com/en/pricing){target=_blank}.
 
 To follow the installation steps below, you might need to install additional
 tools like curl, gnupg and others.
@@ -127,7 +128,8 @@ sudo localectl set-locale LANG=en_US.UTF-8
 ### Install Elasticsearch
 
 The recommended method is to use
-[Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) for installing Elasticsearch.
+[Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
+for installing Elasticsearch.
 
 Alternatively, you can follow
 [our example setup](/en/tutorials/install-elasticsearch.md) of
@@ -361,10 +363,11 @@ Instead of storing Zammads cache files within your filesystem, they can be
 cached in memory with Memcached.
 
 The installation and configuration is out of our scope of this documentation.
-Please follow the [official guides](https://docs.memcached.org/).
+Please follow the [official guides](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 
 If you want to use the PGP integration for sending and receiving signed and
 encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG website](https://www.gnupg.org/index.html).
+the official
+[GnuPG website](https://www.gnupg.org/index.html){target=_blank}.

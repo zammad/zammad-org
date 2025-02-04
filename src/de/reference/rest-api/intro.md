@@ -16,16 +16,21 @@ generell für alle Endpunkte gelten und wie Sie sie anpassen können.
 Es sind einige API Clients verfügbar. Bitte beachten Sie, dass diese Clients
 möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 
-- [Ruby Client](https://github.com/zammad/zammad-api-client-ruby)
-  *(offiziell)*
-- [PHP Client](https://github.com/zammad/zammad-api-client-php)
-  *(offiziell)*
-- [Python Client](https://pypi.org/project/zammad-py/) *(Third-Party)*
-- [.NET Client](https://github.com/Asesjix/Zammad-Client) *(Third-Party)*
-- [Android API-Client](https://github.com/KirkBushman/zammad-android)
+- [Ruby
+  Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
+  *(official)*
+- [PHP
+  Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
+  *(official)*
+- [Python Client](https://pypi.org/project/zammad-py/){target=_blank}
   *(Third-Party)*
-- [Go Client](https://github.com/AlessandroSechi/zammad-go) *(Third-Party;
-  nur API-Client, keine "gebrauchsfertige" Anwendung)*
+- [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
+  *(third-Party)*
+- [Android
+  API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
+  *(third-Party)*
+- [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
+  *(third-Party; API client only, no "ready to use" app)*
 
 ## Authentifizierung
 
@@ -304,5 +309,4 @@ Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
 Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
 sein
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
-**P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

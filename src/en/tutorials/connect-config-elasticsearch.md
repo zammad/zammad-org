@@ -59,7 +59,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 
 We collected some useful settings you may want to apply. For further
 information please have a look at
-[Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+[Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
 ### Index Namespacing
 
@@ -93,8 +93,9 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 Troubleshooting unsuccessful or issue not described?
 
 If you can't solve your issue using the provided troubleshooting steps
-or can't find your particular issue described here, feel free to [ask
-the community](https://community.zammad.org) for technical assistance.
+or can't find your particular issue described here, feel free to
+[ask the community](https://community.zammad.org){target=_blank} for technical
+assistance.
 :::
 
 ### Data Missing From the Web-UI / Search Data Missing or Incomplete

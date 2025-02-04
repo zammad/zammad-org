@@ -33,12 +33,12 @@ Die Konfigurationsverzeichnisse sind normalerweise:
 
 ### Let's Encrypt
 
-Es gibt zwei gängige Tools zum Abrufen von Zertifikaten, zu denen Sie unten
-eine Grundkonfiguration finden:
-[certbot](https://certbot.eff.org/instructions) und
-[acme.sh](https://github.com/acmesh-official/acme.sh/wiki). Schauen Sie sich
-die Dokumentation dieser Tools an, um weitere Konfigurationsdetails und
-Beispiele zu finden.
+There are two common tools to get certificates, to which your find a basic
+configuration below:
+[certbot](https://certbot.eff.org/instructions){target=_blank} and
+[acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
+Have a look at their documentation for further configuration details and
+other examples.
 
 :::tabs
 
@@ -150,11 +150,10 @@ openssl dhparam -out <path>/dhparam.pem 4096
 ```
 #### Schritt 3 - Anpassen der HTTPS-Konfiguration
 
-Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
-Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
-Anforderungen. Mozilla hat einen großartigen
-[SSL-Generator](https://ssl-config.mozilla.org/), der Ihnen helfen sollte,
-Ihre Anforderungen zu erfüllen!
+Our default configuration aims for a broad support of end user devices. This
+may not fit your needs. Mozilla has a great [ssl-config
+generator](https://ssl-config.mozilla.org/){target=_blank} that should help
+you to meet your requirements!
 
 #### Schritt 4 - Speichern und neu laden
 
@@ -233,11 +232,10 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Schritt 4 - Anpassen der HTTPS-Konfiguration
 
-Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
-Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
-Anforderungen. Mozilla hat einen großartigen
-[SSL-Generator](https://ssl-config.mozilla.org/), der Ihnen helfen sollte,
-Ihre Anforderungen zu erfüllen!
+Our default configuration aims for a broad support of end user devices. This
+may not fit your needs. Mozilla has a great [ssl-config
+generator](https://ssl-config.mozilla.org/){target=_blank} that should help
+you to meet your requirements!
 
 #### Schritt 5 - Aktivieren der Website
 

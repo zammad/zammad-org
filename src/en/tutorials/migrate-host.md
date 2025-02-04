@@ -8,10 +8,9 @@ order: 12
 This is just a description of basic steps to perform a migration to a
 new host. Your environment may be different so you should consider this
 as a reference point only. If anything goes wrong, please consult the
-[Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
-or consider [paid support
-options](https://zammad.com/en/services/professional-services).
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider
+[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
 
 The steps described on this page are an addition to the
 [backup and restore guide](/en/tutorials/backup-restore). They're not meant to

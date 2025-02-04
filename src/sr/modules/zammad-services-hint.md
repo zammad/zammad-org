@@ -1,6 +1,8 @@
 ::: tip
-Да ли сте преуморни од комплексних поставки, подешавања, резервних копија и ажурирања? Дозволите нам да вам помогнемо око тога! 🚀
+Are you tired of complex setup, configuration, backup and update tasks? Let us
+handle this stuff for you! 🚀
 
-Најлакши и најчешће најјефтинији начин да имплементирате Zаmmad је наш
-[сервис у облаку](https://zammad.com/en/pricing). Уверите се преко бесплатне пробне инстанце!
+The easiest and often most cost-effective way to operate Zammad is our
+[cloud service](https://zammad.com/en/pricing){target=_blank}. Give it a try
+with a free trial instance!
 :::

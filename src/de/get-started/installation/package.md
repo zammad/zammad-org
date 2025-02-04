@@ -19,9 +19,9 @@ unterstützt:
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
-Installationsmethode verwenden oder [Zammads Cloud
-Service](https://zammad.com/de/pricing) in Betracht ziehen.
+If your distribution is not supported, feel free to use a different
+installation method or consider using [Zammad's cloud
+service](https://zammad.com/en/pricing){target=_blank}.
 
 Um die folgenden Installationsschritte durchzuführen, müssen Sie
 möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren.
@@ -128,8 +128,9 @@ sudo localectl set-locale LANG=en_US.UTF-8
 
 ### Elasticsearch installieren
 
-Die empfohlene Methode ist die Verwendung von [Elastics offizieller
-Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+The recommended method is to use [Elastic's official
+guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
+for installing Elasticsearch.
 
 Alternativ können Sie [unserem
 Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 7
@@ -368,13 +369,13 @@ benötigt, um den Inhalt von E-Mail-Anhängen zu indizieren. Ab Elasticsearch
 Anstatt Zammads Cache-Dateien in Ihrem Dateisystem zu speichern, können sie
 mit Memcached im Arbeitsspeicher zwischengespeichert werden.
 
-Die Installation und Konfiguration ist nicht Bestandteil dieser
-Dokumentation .  Bitte folgen Sie der [offiziellen
-Anleitung](https://docs.memcached.org/).
+The installation and configuration is out of our scope of this
+documentation.  Please follow the [official
+guides](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 
-Wenn Sie die PGP-Integration zum Senden und Empfangen von signierten und
-verschlüsselten E-Mails nutzen möchten, müssen Sie das GnuPG-Tool
-installieren. Bitte werfen Sie einen Blick auf die offizielle
-[GnuPG-Website](https://www.gnupg.org/index.html).
+If you want to use the PGP integration for sending and receiving signed and
+encrypted emails, you need to install the GnuPG-Tool. Please have a look at
+the official [GnuPG
+website](https://www.gnupg.org/index.html){target=_blank}.

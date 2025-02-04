@@ -59,9 +59,9 @@ zammad run rake zammad:searchindex:rebuild[8]
 
 ## Optionale Einstellungen
 
-Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch
-anwenden möchten. Weitere Informationen finden Sie in der
-[Elastic-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+We collected some useful settings you may want to apply. For further
+information please have a look at [Elastic's
+documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
 ### Index Namespacing
 
@@ -93,11 +93,12 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ## Fehlerbehebung
 
 :::tip
-Fehlersuche erfolglos oder Problem nicht beschrieben?
+Troubleshooting unsuccessful or issue not described?
 
-Wenn Sie Ihr Problem nicht anhand der angegebenen Schritte zur Fehlerbehebung lösen können
-oder Ihr spezielles Problem hier nicht beschrieben ist, können Sie [in
-der Community](https://community.zammad.org) nachfragen.
+If you can't solve your issue using the provided troubleshooting steps
+or can't find your particular issue described here, feel free to
+[ask the community](https://community.zammad.org){target=_blank} for technical
+assistance.
 :::
 
 ### Fehlende Daten in der Web-Benutzeroberfläche / Fehlende oder unvollständige Suchdaten

@@ -7,24 +7,23 @@ order: 1
 Још увек не користите Zammad? Свидеће вам се! Погледајте одељке испод за
 различите опције.
 
-Уколико имате додатних питања, слободно [нам се
-обратите](https://zammad.com/en/company/contact) или погледајте
-[форум](https://community.zammad.org/) где можете пронаћи корисне
-информације и помоћ.
+If you have questions, feel free to [get in touch with
+us](https://zammad.com/en/company/contact){target=_blank} and to have a look
+at the [community forum](https://community.zammad.org/){target=_blank} were
+you can find useful information and help.
 
 ## Проба Zammad-а
 
-Сигурни смо да ће вам се Zammad свидети! Најлакши начин да га пробате је да
-искористите [бесплатну пробну
-инстанцу](https://zammad.com/en/getting-started). Можете се поиграти и на
-крају пређи на званичну подршку, са чувањем ваших података или почети
-испочетка.
+We are sure you like Zammad! The easiest way to test it is to use a [free
+trial instance](https://zammad.com/en/getting-started){target=_blank}.  You
+can play around and then you can switch to a official supported instance,
+either keeping your data or start with an empty system.
 
 ## Користите Zammad-ов хостинг сервис
 
-Да бисте користили Zammad у продукцији, идите на наш званичан сајт
-[zammad.com](https://zammad.com/en/pricing) где можете пронаћи ценовних
-нашег хостинг сервиса.
+To use Zammad in production, head over to our sister site
+[zammad.com](https://zammad.com/en/pricing){target=_blank} where you can
+find prices for Zammad's hosted services.
 
 ## Инсталација у сопственој режији
 
@@ -32,7 +31,7 @@ Zammad можете чак и сами да хостујете. Погледај
 инсталацију](/en/get-started/installation/prerequisites) и који начин
 покретања вам највише одговара.
 
-Уколико сте корисник који сам хостује и желите пуну техничку подршку, наш
-продајни тим ће радо ступити у контакт са вама. Оставите им
-[поруку](https://zammad.com/en/company/contact).
+If you are a self-hosted user and want to have support at hand, our sales
+team is happy to get in touch with you. Just leave them [a
+message](https://zammad.com/en/company/contact){target=_blank}.
 

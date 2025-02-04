@@ -5,14 +5,12 @@ title: 'Zammad auf einen neuen Host migrieren'
 
 # Zammad auf einen neuen Host migrieren
 
-Dies ist nur eine Beschreibung der grundlegenden Schritte zur Durchführung
-einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher
-sollten Sie dies nur als Anhaltspunkt betrachten. Wenn etwas schief geht,
-wenden Sie sich bitte an die [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
-oder ziehen Sie [bezahlte
-Support-Optionen](https://zammad.com/de/services/professional-services) in
-Betracht.
+This is just a description of basic steps to perform a migration to a new
+host. Your environment may be different so you should consider this as a
+reference point only. If anything goes wrong, please consult the [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider [paid support
+options](https://zammad.com/en/services/professional-services){target=_blank}.
 
 Die auf dieser Seite beschriebenen Schritte sind eine Ergänzung zur
 [Anleitung zur Sicherung und

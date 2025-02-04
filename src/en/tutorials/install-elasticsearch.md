@@ -14,7 +14,7 @@ recommended.
 
 Elasticsearch offers two versions. Currently, the versions 7 and 8 are
 maintained. For installation instructions, you should first and foremost
-follow [Elastic’s installation documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-install-packages).
+follow [Elastic’s installation documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-install-packages){target=_blank}.
 Use the dropdown in the top left corner to choose which version you want to
 install.
 
@@ -25,8 +25,9 @@ which also comes with some additional security features.
 
 :::info
 If you are installing Elasticsearch 8 and want to follow our
-[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure
-to copy/save the password which is shown while installing Elasticsearch.
+[standard configuration](/en/tutorials/connect-config-elasticsearch){target=_blank},
+make sure to copy/save the password which is shown while installing
+Elasticsearch.
 :::
 
 ## Install Elasticsearch 7

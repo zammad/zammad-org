@@ -30,7 +30,7 @@ information.
 
 * Use short and clear sentences, prioritizing information over complexity
 * Capitalize all words except minor ones in the page title and sections
-(see [title case](https://en.wikipedia.org/wiki/Title_case))
+(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})
 * Line length of 80 characters in the source file should not be exceeded if
 possible
 * Proper breadcrumb separation for paths and locations with `>`

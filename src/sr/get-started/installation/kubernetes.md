@@ -5,8 +5,8 @@ title: Kubernetes
 
 # Kubernetes инсталација
 
-Упутство за инсталацију можете пронаћи у [документацији нашег helm
-chart-а](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
+You can find installation instructions in the [documentation of our helm
+chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md){target=_blank}.
 
 :::info
 Не пружамо техничку подршку у вези специфичних Kubernetes проблема. Уколико

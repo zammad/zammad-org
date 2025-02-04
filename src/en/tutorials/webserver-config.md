@@ -31,9 +31,11 @@ The config directories are usually:
 ### Let's Encrypt
 
 There are two common tools to get certificates, to which your find a basic
-configuration below: [certbot](https://certbot.eff.org/instructions) and
-[acme.sh](https://github.com/acmesh-official/acme.sh/wiki). Have a look at
-their documentation for further configuration details and other examples.
+configuration below:
+[certbot](https://certbot.eff.org/instructions){target=_blank} and
+[acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
+Have a look at their documentation for further configuration details and other
+examples.
 
 :::tabs
 
@@ -143,8 +145,8 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 Our default configuration aims for a broad support of end user devices. This
 may not fit your needs. Mozilla has a great
-[ssl-config generator](https://ssl-config.mozilla.org/) that should
-help you to meet your requirements!
+[ssl-config generator](https://ssl-config.mozilla.org/){target=_blank} that
+should help you to meet your requirements!
 
 #### Step 4 - Save & Reload
 
@@ -220,8 +222,8 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 Our default configuration aims for a broad support of end user devices. This
 may not fit your needs. Mozilla has a great
-[ssl-config generator](https://ssl-config.mozilla.org/) that should
-help you to meet your requirements!
+[ssl-config generator](https://ssl-config.mozilla.org/){target=_blank} that
+should help you to meet your requirements!
 
 #### Step 5 - Enable the Site
 

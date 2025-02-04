@@ -6,7 +6,7 @@ order: 1
 # Rails Console
 
 Zammad uses Ruby on Rails so you can make use of the [rails
-console](http://guides.rubyonrails.org/command_line.html).
+console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
 :::warning
 Please double check your commands before running, as some of those

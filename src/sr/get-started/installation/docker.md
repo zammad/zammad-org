@@ -5,13 +5,15 @@ title: Docker
 
 # Docker инсталација
 
-Zammad се може покренути преко Docker Compose. Можете чак користити и
-графички интерфејс за Docker као што је
-[Portainer](https://www.portainer.io/).
+Zammad can be deployed using Docker-Compose. You can even use graphical
+docker front ends like
+[Portainer](https://www.portainer.io/){target=_blank}.
 
 ::: info
 
-Не пружамо техничку подршку у вези проблема са Docker (Compose) или Portainer инсталацијама. Уколико одлучите да користите Zammad путем Docker-а, подршка је могућа само за Zammad апликацију.
+We do not provide support in terms of Docker (-Compose) or Portainer specific
+problems. If you choose to run Zammad via Docker, support is only provided for
+the Zammad application.
 :::
 
 ## Предуслови
@@ -25,10 +27,10 @@ Zammad се може покренути преко Docker Compose. Можете 
 
 ## Покретање преко Portainer-а
 
-Најлакши начин да покренете Zammad је преко графичког Docker
-интерфејса. Препоручујемо [Portainer](https://www.portainer.io/). За
-упутство инсталације, погледајте [званичну Portainer
-документацију](https://docs.portainer.io/).
+The easiest way to get Zammad running is via a graphical docker UI. We
+recommend [Portainer](https://www.portainer.io/){target=_blank}. For
+installation instructions, check out [Portainer's
+documentation](https://docs.portainer.io/){target=_blank}.
 
 ### Корак 1: Додавање stack-а
 У графичком интерфејсу Portainer-а (нпр. `https://yourdomain.tld:9443`),
@@ -42,11 +44,10 @@ Zammad се може покренути преко Docker Compose. Можете 
 reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
 (подразумевано)
 
-Опционо: уколико желите да подесите променљиве окружења, можете их унети у
-одељку **Environment variable** или чак да их отпремите преко .env
-датотеке. Погледајте [env
-шаблон](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
-за пример.
+Optional: if you need to provide environment variables, you can enter them
+in the **Environment variable** section or even upload a .env file. See [env
+template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
+as an example.
 
 ### Корак 3: Покретање stack-а
 Након што је stack спреман, можете приступити Zammad-у преко подешеног
@@ -65,9 +66,9 @@ Docker хоста и порта, нпр. `http://localhost:8080/`.
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
-Обавезно често извршавајте `git pull` команду за ажурирање. Алтернативно,
-можете преузети датотеке са [странице
-издања](https://github.com/zammad/zammad-docker-compose/releases).
+Make sure to run `git pull` frequently to fetch updates. Alternatively, you
+can download the files from the [releases
+page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 
 ### Корак 2: Подешавање окружења по потреби
 
@@ -98,12 +99,13 @@ Docker хоста и порта, нпр. `http://localhost:8080/`.
 
 ## Прилагођавање Zammad stack-а
 
-Понекад је неопходно применити локалне измене за Zammad docker stack,
-нпр. укључити додатне сервисе. Уколико планирате то да урадите,
-препоручујемо да не мењате `docker-compose.yml` датотеку, већ да додате
-локалну `docker-compose.override.yml` која укључује све ваше измене.  Docker
-compose ће [аутоматски учитати ову датотеку и применити измене на ваш
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+Sometimes it's necessary to apply local changes to the Zammad docker stack,
+e.g. to include additional services. If you plan to do so, we recommend that
+you do not change the `docker-compose.yml` file, but instead create a local
+`docker-compose.override.yml` that includes all your modifications.
+Docker-Compose will [automatically load this file and merge its changes into
+your
+stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
 
 ## Извршавање команди у stack-у
 

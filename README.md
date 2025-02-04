@@ -2,7 +2,7 @@
 
 This repo will replace the current zammad.org with the with a single landing page from where users can jump to different sections as well as to related sites.
 
-It contains the new documentation system which is based on Vitepress. Their documentation can be found [here](https://vitepress.dev/guide/getting-started).
+It contains the new documentation system which is based on Vitepress. Their documentation can be found [here](https://vitepress.dev/guide/getting-started){target=_blank}.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ It contains the new documentation system which is based on Vitepress. Their docu
 
 ## Internationalization (i18n)
 
-Only the content in `src/en/` directory and child directories should be modified. The content in other language directories is auto-generated. Please submit your translations via [Weblate](https://translations.zammad.org) and they will be automatically applied.
+Only the content in `src/en/` directory and child directories should be modified. The content in other language directories is auto-generated. Please submit your translations via [Weblate](https://translations.zammad.org){target=_blank} and they will be automatically applied.
 
 ## Automatic Screenshots (Cypress)
 
@@ -32,4 +32,4 @@ Finally, the Zammad stack can be shut down via `pnpm screenshots:stop-stack`. Th
 ## Additional Info
 
 - Before pushing your changes, make sure to update the translation catalog by executing `pnpm i18n`.
-- Make sure to change the English source files only. All other languages are automatically built based on the translations from [Weblate](https://translations.zammad.org).
+- Make sure to change the English source files only. All other languages are automatically built based on the translations from [Weblate](https://translations.zammad.org){target=_blank}.

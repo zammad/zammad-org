@@ -77,5 +77,5 @@ documentation.
 
 If you need help or you'll need to get in production a lot faster, you can also
 book workshops with one of our
-[Zammad consultants](https://zammad.com/en/company/contact).
+[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.
 :::

@@ -41,13 +41,13 @@ Allgemeine Einschränkungen für alle Migrationen:
 
 :::info Missing a migration source?
 
-Wenn Ihr System noch nicht aufgeführt ist, haben Sie zwei Möglichkeiten. Sie können entweder
-die leistungsstarke API von Zammad nutzen oder unserem
-[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact) schicken für eine kundenspezifische
-Entwicklung oder sogar für das Sponsoring eines Migrations-Features..
+If your system it not mentioned yet, you'll have two options. You can either
+use Zammad's powerful API or drop our
+[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
+development or even migrator sponsoring.
 
-Migrationen sind auch für von Zammad gehostete Installationen verfügbar! Kontaktieren Sie den Support für weitere
-Informationen!
+Migrations are available for hosted setups too! Contact support for further
+information!
 :::
 
 ### Freshdesk
@@ -73,10 +73,10 @@ aufgeführten.
 
 #### Voraussetzungen
 
-Zammad erfordert API-Zugriff, weshalb Sie für die Migration einen
-[API-Schlüssel](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key)
-erstellen müssen. Der Migrator wird Ihre Freshdesk-Subdomain und Ihren
-API-Schlüssel anfordern.
+Zammad requires API access which is why you'll need to [create an API
+key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
+for the migration. The migrator will request your Freshdesk subdomain and
+API key.
 
 :::warning
 Stellen Sie sicher, dass Sie den API-Schlüssel mit einem vollständigen Administratorkonto abrufen. Weniger
@@ -509,10 +509,10 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 
 #### Voraussetzungen
 
-Zammad erfordert einen API-Zugang, weshalb Sie für die Migration einen
-[API-Schlüssel](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token)
-erstellen müssen. Die Migration wird Ihre Zendesk-URL, Ihre E-Mail-Adresse
-und Ihren API-Schlüssel abfragen.
+Zammad requires API access which is why you’ll need to [create an API
+key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
+for the migration. The migrator will request your Zendesk-URL, email address
+and API key.
 
 :::warning
 Stellen Sie sicher, dass Sie den API-Schlüssel mit einem vollständigen Administratorkonto abrufen. Weniger

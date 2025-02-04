@@ -8,22 +8,23 @@ Not using Zammad yet? You will like it! See the sections below for different
 options.
 
 If you have questions, feel free to
-[get in touch with us](https://zammad.com/en/company/contact) and to have a
-look at the [community forum](https://community.zammad.org/) were you can find
-useful information and help.
+[get in touch with us](https://zammad.com/en/company/contact){target=_blank} and
+to have a look at the
+[community forum](https://community.zammad.org/){target=_blank} were you can
+find useful information and help.
 
 ## Testing Zammad
 
 We are sure you like Zammad! The easiest way to test it is to use a
-[free trial instance](https://zammad.com/en/getting-started). You can play
-around and then you can switch to a official supported instance, either keeping
-your data or start with an empty system.
+[free trial instance](https://zammad.com/en/getting-started){target=_blank}.
+You can play around and then you can switch to a official supported instance,
+either keeping your data or start with an empty system.
 
 ## Use Zammad's Hosted Service
 
 To use Zammad in production, head over to our sister
-site [zammad.com](https://zammad.com/en/pricing) where you can find prices for
-Zammad's hosted services.
+site [zammad.com](https://zammad.com/en/pricing){target=_blank} where you can
+find prices for Zammad's hosted services.
 
 ## Self Hosted Installation
 
@@ -33,5 +34,5 @@ which deployment method fits your needs.
 
 If you are a self-hosted user and want to have support at hand, our sales
 team is happy to get in touch with you. Just leave them
-[a message](https://zammad.com/en/company/contact).
+[a message](https://zammad.com/en/company/contact){target=_blank}.
 

@@ -6,11 +6,13 @@ order: 3
 # Install with Docker
 
 Zammad can be deployed using Docker-Compose. You can even use graphical docker
-front ends like [Portainer](https://www.portainer.io/).
+front ends like [Portainer](https://www.portainer.io/){target=_blank}.
 
 ::: info
 
-We do not provide support in terms of Docker (-Compose) or Portainer specific problems. If you choose to run Zammad via Docker, support is only provided for the Zammad application.
+We do not provide support in terms of Docker (-Compose) or Portainer specific
+problems. If you choose to run Zammad via Docker, support is only provided for
+the Zammad application.
 :::
 
 ## Prerequisites
@@ -25,12 +27,14 @@ We do not provide support in terms of Docker (-Compose) or Portainer specific pr
 ## Deployment with Portainer
 
 The easiest way to get Zammad running is via a graphical docker UI. We
-recommend [Portainer](https://www.portainer.io/). For installation instructions,
-check out [Portainer's documentation](https://docs.portainer.io/).
+recommend [Portainer](https://www.portainer.io/){target=_blank}. For
+installation instructions, check out
+[Portainer's documentation](https://docs.portainer.io/){target=_blank}.
 
 ### Step 1: Add Stack
 In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and choose `Add stack` as you can see in the screenshot below.
+target environment, select **Stacks** and choose `Add stack` as you can see in
+the screenshot below.
 
 ### Step 2: Build From Repository
 Switch to **Repository** build method and provide the information below:
@@ -41,7 +45,7 @@ Switch to **Repository** build method and provide the information below:
 
 Optional: if you need to provide environment variables, you can enter them in
 the **Environment variable** section or even upload a .env file. See
-[env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
+[env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
 as an example.
 
 ### Step 3: Deploy the Stack
@@ -61,7 +65,7 @@ git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 Make sure to run `git pull` frequently to fetch updates. Alternatively,
 you can download the files from the
-[releases page](https://github.com/zammad/zammad-docker-compose/releases).
+[releases page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 
 ### Step 2: Adjust Environment as Needed
 
@@ -97,7 +101,7 @@ e.g. to include additional services. If you plan to do so, we recommend that
 you do not change the `docker-compose.yml` file, but instead create a local
 `docker-compose.override.yml` that includes all your modifications.
 Docker-Compose will [automatically load this file and merge its changes into
-your stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+your stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
 
 ## Run Commands in the Stack
 

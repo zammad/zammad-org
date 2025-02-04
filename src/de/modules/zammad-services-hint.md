@@ -1,6 +1,8 @@
 ::: tip
-Haben Sie genug von komplizierten Aufgaben rund um die Einrichtung, Konfiguration, Sicherung und Aktualisierung? Lassen Sie uns diese Dinge für Sie erledigen! 🚀
+Are you tired of complex setup, configuration, backup and update tasks? Let us
+handle this stuff for you! 🚀
 
-Der einfachste und oft auch kostengünstigste Weg, Zammad zu betreiben, ist unser
-[Cloud-Dienst](https://zammad.com/de/pricing). Testen Sie es in einer kostenlosen Testinstanz!
+The easiest and often most cost-effective way to operate Zammad is our
+[cloud service](https://zammad.com/en/pricing){target=_blank}. Give it a try
+with a free trial instance!
 :::

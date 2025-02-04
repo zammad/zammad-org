@@ -7,10 +7,10 @@ title: Aktualisierung
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-Bevor Sie Zammad aktualisieren, empfehlen wir Ihnen dringend, einen Blick in
-unsere [Release Notes](https://zammad.com/de/releases) zu werfen. Dort
-finden Sie Informationen über Funktionen und Fehlerbehebungen sowie
-Anmerkungen zu Änderungen und Breaking Changes.
+Before updating Zammad, we strongly recommend to take a look at our [release
+notes](https://zammad.com/en/releases){target=_blank}. You can find
+information about features and fixes as well as technical remarks and
+breaking changes.
 
 Beachten Sie, dass Sie bei der Aktualisierung keine Hauptversionen von
 Zammad überspringen sollten. Das bedeutet zum Beispiel, dass Ihr
@@ -111,10 +111,9 @@ haben (siehe
 [Paket-Installation](/de/get-started/installation/package#elasticsearch) für
 unterstützte Versionen).
 
-Wenn Sie Elasticsearch aktualisieren müssen, werfen Sie bitte einen Blick
-auf [deren
-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
-und folgen Sie den Anweisungen.
+If you have to update Elasticsearch, please have a look at [their
+documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
+and follow the instructions.
 
 Falls Sie Plugins für Elasticsearch verwenden, stellen Sie sicher, dass
 diese ebenfalls aktualisiert werden (Hinweis: Ab Elasticsearch 8 ist das

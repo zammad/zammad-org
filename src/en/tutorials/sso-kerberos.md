@@ -67,8 +67,8 @@ security hole.
 **Too busy to handle it on your own?**
 
 We've got you covered. Our experts offer custom-tailored workshops to
-get your team up and running fast and with confidence. [Just drop us a
-line](https://zammad.com/contact)!
+get your team up and running fast and with confidence.
+[Just drop us a line](https://zammad.com/contact){target=_blank}!
 :::
 
 You will need:
@@ -547,8 +547,8 @@ Does your Active Directory service account have **Kerberos AES 256-bit
 encryption** enabled?
 
 If for some reason your server does not support AES 256-bit encryption,
-the LDAP Wiki has [more information about Kerberos encryption
-types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes).
+the LDAP Wiki has
+[more information about Kerberos encryption types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
 #### Failed to verify krb5 credentials: Key version is not available
 Did you use the exact **version number** (`vno`) provided by `ktpass`

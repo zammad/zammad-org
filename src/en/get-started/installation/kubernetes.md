@@ -6,7 +6,7 @@ order: 4
 # Install on Kubernetes
 
 You can find installation instructions in the
-[documentation of our helm chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
+[documentation of our helm chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md){target=_blank}.
 
 :::info
 We do not provide support in terms of Kubernetes specific problems. If you

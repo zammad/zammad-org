@@ -8,8 +8,9 @@ order: 3
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
 Before updating Zammad, we strongly recommend to take a look at our
-[release notes](https://zammad.com/en/releases). You can find information about
-features and fixes as well as technical remarks and breaking changes.
+[release notes](https://zammad.com/en/releases){target=_blank}. You can find
+information about features and fixes as well as technical remarks and breaking
+changes.
 
 Be aware that you should not skip major Zammad versions while updating. That
 means, for example, your upgrade path from version `2.4` to `5.1` (assuming
@@ -108,7 +109,8 @@ version of Elasticsearch installed
 for supported versions).
 
 If you have to update Elasticsearch, please have a look at
-[their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) and follow the instructions.
+[their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
+and follow the instructions.
 
 In case your are using plugins for Elasticsearch, make sure they are updated
 as well (note: starting with Elasticsearch 8, the ingest-attachment is no

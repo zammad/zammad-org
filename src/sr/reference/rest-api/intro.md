@@ -16,16 +16,21 @@ all endpoints and how to adapt.
 There are API clients available. Please note that these clients may not
 provide access to all available endpoints listed here.
 
-- [Ruby Client](https://github.com/zammad/zammad-api-client-ruby)
+- [Ruby
+  Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
   *(official)*
-- [PHP Client](https://github.com/zammad/zammad-api-client-php)
+- [PHP
+  Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
   *(official)*
-- [Python Client](https://pypi.org/project/zammad-py/) *(Third-Party)*
-- [.NET Client](https://github.com/Asesjix/Zammad-Client)  *(third-Party)*
-- [Android API-Client](https://github.com/KirkBushman/zammad-android)
+- [Python Client](https://pypi.org/project/zammad-py/){target=_blank}
+  *(Third-Party)*
+- [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
   *(third-Party)*
-- [Go Client](https://github.com/AlessandroSechi/zammad-go)  *(third-Party;
-  API client only, no "ready to use" app)*
+- [Android
+  API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
+  *(third-Party)*
+- [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
+  *(third-Party; API client only, no "ready to use" app)*
 
 ## Аутентификација
 
@@ -292,5 +297,4 @@ accordingly.
 If you want to learn more about URL encoding, [this Wikipedia
 article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
-**P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

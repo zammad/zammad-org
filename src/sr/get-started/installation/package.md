@@ -18,9 +18,9 @@ title: Пакет
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-Уколико ваша дистрибуција тренутно није подржана, пробајте други метод
-инсталације или размотрите претплату на [Zammad сервис у
-облаку](https://zammad.com/en/pricing).
+If your distribution is not supported, feel free to use a different
+installation method or consider using [Zammad's cloud
+service](https://zammad.com/en/pricing){target=_blank}.
 
 Да бисте испратили инсалационе кораке испод, може бити неопходно да
 инсталирате додатне алате као curl, gnupg и остале.
@@ -127,9 +127,9 @@ sudo localectl set-locale LANG=en_US.UTF-8
 
 ### Elasticsearch инсталација
 
-Препоручени метод је да користите [званичан Elastic
-водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-за инсталацију Elasticsearch.
+The recommended method is to use [Elastic's official
+guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
+for installing Elasticsearch.
 
 Алтернативно, можете погледати [наш
 пример](/en/tutorials/install-elasticsearch.md) за Elasticsearch 7, који се
@@ -366,10 +366,11 @@ cached in memory with Memcached.
 
 The installation and configuration is out of our scope of this
 documentation.  Please follow the [official
-guides](https://docs.memcached.org/).
+guides](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 
 If you want to use the PGP integration for sending and receiving signed and
 encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG website](https://www.gnupg.org/index.html).
+the official [GnuPG
+website](https://www.gnupg.org/index.html){target=_blank}.

@@ -65,11 +65,11 @@ entstehen.
 ## Erste Schritte
 
 ::: tip
-**Zu beschäftigt, um es selbst zu machen?**
+**Too busy to handle it on your own?**
 
-Wir sind für Sie da. Unsere Experten bieten maßgeschneiderte Workshops an, damit
-Ihr Team schnell und sicher starten kann. [Schreiben Sie uns einfach eine
-Nachricht](https://zammad.com/contact)!
+We've got you covered. Our experts offer custom-tailored workshops to
+get your team up and running fast and with confidence.
+[Just drop us a line](https://zammad.com/contact){target=_blank}!
 :::
 
 Sie benötigen:
@@ -554,10 +554,9 @@ den Dienst neu, um die Änderungen zu übernehmen.
 Ist in Ihrem Active Directory-Serviceaccount die **Kerberos AES 256-bit
 encryption** aktiviert?
 
-Wenn Ihr Server aus irgendeinem Grund keine AES 256-Bit-Verschlüsselung
-unterstützt, finden Sie im
-[LDAP-Wiki](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes) weitere
-Informationen über Kerberos-Verschlüsselungsarten.
+If for some reason your server does not support AES 256-bit encryption, the
+LDAP Wiki has [more information about Kerberos encryption
+types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
 #### Failed to verify krb5 credentials: Key version is not available
 Haben Sie die genaue **Versionsnummer** (`vno`) verwendet, die von `ktpass`

@@ -101,8 +101,9 @@ Please read the following information carefully before starting to restore your 
 
 :::tip
 If your scenario is different as described above, please consult the
-[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) or consider
-[paid support options](https://zammad.com/en/services/professional-services).
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider
+[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
 :::
 
 ### Copy Backup Files to a Fitting Location
@@ -215,8 +216,8 @@ CREATE DATABASE
 ## Troubleshooting Backup & Restore
 
 You can find some common problems below. If your issue is not listed,
-feel free to consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)
+feel free to consult the
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
 for technical assistance.
 
 ### Exit Codes
@@ -270,7 +271,7 @@ host    all             all             ::1/128                 md5
 ```
 
 Please consult the official [PostgreSQL
-documentation](https://www.postgresql.org/docs/) for this, as this is
+documentation](https://www.postgresql.org/docs/){target=_blank} for this, as this is
 out of our documentation scope.
 
 #### WARNING: You don't Seem to Have Any Attachments in the File System!

@@ -110,9 +110,10 @@ der Wiederherstellung Ihrer Daten beginnen.
   3 eine gute Zahl sein.
 
 :::tip
-Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
-[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) oder erwägen Sie
-[bezahlte Support-Optionen](https://zammad.com/de/services/professional-services).
+If your scenario is different as described above, please consult the
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider
+[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
 :::
 
 ### Kopieren von Sicherungsdateien an einen passenden Ort
@@ -229,10 +230,10 @@ CREATE DATABASE
 
 ## Fehlerbehebung Sicherung & Wiederherstellung
 
-Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
-nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5),
-um nach Unterstützung zu fragen.
+You can find some common problems below. If your issue is not listed, feel
+free to consult the [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+for technical assistance.
 
 ### Exit Codes
 
@@ -286,9 +287,9 @@ host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
 
-Bitte konsultieren Sie dazu die offizielle
-[PostgreSQL-Dokumentation](https://www.postgresql.org/docs/), da dies nicht
-Gegenstand dieser Dokumentation ist.
+Please consult the official [PostgreSQL
+documentation](https://www.postgresql.org/docs/){target=_blank} for this, as
+this is out of our documentation scope.
 
 #### WARNING: You don't Seem to Have Any Attachments in the File System!
 Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem

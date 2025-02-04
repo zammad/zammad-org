@@ -17,7 +17,7 @@ index and visualize your Zammad data.
 This guide will provide you some steps to get started. For a deeper insight
 you should consider having a look at the
 [indexed attributes](/en/reference/es-indexed-attributes) of Elasticsearch and
-to read the [documentation of Grafana](https://grafana.com/docs/).
+to read the [documentation of Grafana](https://grafana.com/docs/){target=_blank}.
 
 This guide expects all requirements to be up and running. We will not cover
 core configurations of each tool. Please also note that we can't support
@@ -136,7 +136,7 @@ building your own dashboards.
 
 If you want to get inspired, you can use our sample dashboards as
 mentioned below. These dashboards can also be found on
-[GitHub](https://github.com/zammad/grafana-dashboards).
+[GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
 ### Importing a Dashboard
 

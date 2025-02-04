@@ -5,8 +5,8 @@ title: Rails-Befehle
 
 # Rails-Konsole
 
-Zammad verwendet Ruby on Rails, so dass Sie die [Rails
-Konsole](http://guides.rubyonrails.org/command_line.html) nutzen können.
+Zammad uses Ruby on Rails so you can make use of the [rails
+console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
 :::warning
 Bitte überprüfen Sie Ihre Befehle vor der Ausführung, da einige dieser
