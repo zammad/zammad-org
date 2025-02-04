@@ -10,9 +10,9 @@ auf GitHub forken und einen Pull Request mit Ihren Änderungen erstellen
 (außer für Übersetzungen, siehe unten). 🚀
 
 Sie können dazu beitragen:
- * [Quellcode]contribute#zammad-source-code)
- * [Dokumentation](contribute#documentation)
- * [Übersetzung](contribute#translation)
+ * [Quellcode](contribute#zammad-quellcode)
+ * [Dokumentation](contribute#dokumentation)
+ * [Übersetzung](contribute#ubersetzung)
 
 Bitte sehen Sie sich unsere Hinweise für Beiträge an.
 

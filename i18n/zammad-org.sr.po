@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-03 14:55+0100\n"
+"POT-Creation-Date: 2025-02-04 12:35+0100\n"
 "PO-Revision-Date: 2025-02-04 10:24+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -246,7 +246,10 @@ msgstr "Погледајте детаље о томе како да доприн
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:20
-msgid "All repos can be found on [Github](https://github.com/zammad)."
+#, fuzzy
+#| msgid "All repos can be found on [Github](https://github.com/zammad)."
+msgid ""
+"All repos can be found on [Github](https://github.com/zammad){target=_blank}."
 msgstr ""
 "Све репозиторијуме можете пронаћи на [GitHub](https://github.com/zammad)-у."
 
@@ -258,18 +261,26 @@ msgstr "Zammad изворни кoд"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:25
+#, fuzzy
+#| msgid ""
+#| "The Zammad source code can be found on GitHub in the [Zammad repository]"
+#| "(https://github.com/zammad/zammad)."
 msgid ""
 "The Zammad source code can be found on GitHub in the [Zammad repository]"
-"(https://github.com/zammad/zammad)."
+"(https://github.com/zammad/zammad){target=_blank}."
 msgstr ""
 "Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad репозиторију]"
 "(https://github.com/zammad/zammad)."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:27
+#, fuzzy
+#| msgid ""
+#| "Have a look at the [developer manual](https://github.com/zammad/zammad/"
+#| "blob/develop/doc/developer_manual/index.md) to get started."
 msgid ""
 "Have a look at the [developer manual](https://github.com/zammad/zammad/blob/"
-"develop/doc/developer_manual/index.md) to get started."
+"develop/doc/developer_manual/index.md){target=_blank} to get started."
 msgstr ""
 "Прочитајте [уџбеник за програме](https://github.com/zammad/zammad/blob/"
 "develop/doc/developer_manual/index.md) за почетак."
@@ -282,9 +293,13 @@ msgstr "Подржани огранци/верзије"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:32
+#, fuzzy
+#| msgid ""
+#| "The main [Zammad repository](https://github.com/zammad/zammad) at Github "
+#| "has several branches."
 msgid ""
-"The main [Zammad repository](https://github.com/zammad/zammad) at Github has "
-"several branches."
+"The main [Zammad repository](https://github.com/zammad/zammad)"
+"{target=_blank} at Github has several branches."
 msgstr ""
 "Централни [Zammad репозиториј](https://github.com/zammad/zammad) на GitHub-у "
 "има неколико огранка."
@@ -311,9 +326,13 @@ msgstr "Не користите у продукцији!"
 
 #. type: Bullet: '* '
 #: src/en/contribute/contribute.md:39 src/en/contribute/contribute.md:45
+#, fuzzy
+#| msgid ""
+#| "Supported with bug and security fixes - see also our [Security Policy]"
+#| "(https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
 msgid ""
 "Supported with bug and security fixes - see also our [Security Policy]"
-"(https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
+"(https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}."
 msgstr ""
 "Подржано је са исправкама грешака и сигурносних пропуста – погледајте и нашу "
 "[безбедносну полису](https://github.com/zammad/zammad/blob/develop/SECURITY."
@@ -354,7 +373,7 @@ msgid "No support for bug or security issues is provided."
 msgstr "Нису подржане исправке грешака и сигурносних пропуста."
 
 #. type: Yaml Front Matter Hash Value: hero actions text
-#: src/en/contribute/contribute.md:52 src/en/contribute/contribute.md:128
+#: src/en/contribute/contribute.md:52 src/en/contribute/contribute.md:100
 #: src/en/documentation/index.md:1 src/en/index.md:1
 #, no-wrap
 msgid "Documentation"
@@ -366,70 +385,29 @@ msgid "Do you want to contribute to the Zammad documentation?"
 msgstr "Да ли желите да допринесете Zammad документацији?"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:57
-msgid "Open a new GitHub pull request at"
-msgstr "Отворите нови GitHub pull request на"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:63
+#: src/en/contribute/contribute.md:59
 msgid ""
-"https://github.com/zammad/zammad-org (the documentation you are currently "
-"reading)"
+"Open a new GitHub pull request at https://github.com/zammad/zammad-org with "
+"your changes and make sure to follow the prerequisites and instructions in "
+"the repo's README."
 msgstr ""
-"https://github.com/zammad/zammad-org (документација коју управо читате)"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:63
-msgid "https://github.com/zammad/zammad-documentation (legacy)"
-msgstr "https://github.com/zammad/zammad-documentation (претходно издање)"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:63
-msgid "https://github.com/zammad/zammad-admin-documentation (legacy)"
-msgstr ""
-"https://github.com/zammad/zammad-admin-documentation (претходно издање)"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:63
-msgid "https://github.com/zammad/zammad-user-documentation (legacy)"
-msgstr "https://github.com/zammad/zammad-user-documentation (претходно издање)"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:65
-msgid "with your changes."
-msgstr "са вашим изменама."
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:67
-msgid ""
-"The legacy documentation is hosted on Read the Docs. You can find it under:"
-msgstr ""
-"Документација претходног издања је хостована на Read the Docs. Можете је "
-"пронаћи под:"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:71
-msgid "https://docs.zammad.org"
-msgstr "https://docs.zammad.org"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:71
-msgid "https://admin-docs.zammad.org"
-msgstr "https://admin-docs.zammad.org"
-
-#. type: Bullet: '* '
-#: src/en/contribute/contribute.md:71
-msgid "https://user-docs.zammad.org"
-msgstr "https://user-docs.zammad.org"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:77
+#, fuzzy
+#| msgid ""
+#| "The documentation you are reading is available on next.zammad.org and "
+#| "zammad.org and is built via Vitepress. The source files are written in "
+#| "Markdown.  Make sure to change the English source files only which are "
+#| "placed under `/src/en/`. The translations are made via Weblate and will "
+#| "overwrite any changes in the language specific folders (except `/src/eng/"
+#| "`)."
 msgid ""
 "The documentation you are reading is available on next.zammad.org and zammad."
 "org and is built via Vitepress. The source files are written in Markdown.  "
 "Make sure to change the English source files only which are placed under `/"
-"src/en/`. The translations are made via Weblate and will overwrite any "
-"changes in the language specific folders (except `/src/eng/`)."
+"src/en/`. The translation is done via Weblate and will overwrite any changes "
+"in the language specific folders (except `/src/eng/`)."
 msgstr ""
 "Документација коју читате је доступна под next.zammad.org и zammad.org и "
 "направљена је у Vitepress систему. Изворне датотеке су написане у Markdown "
@@ -438,58 +416,14 @@ msgstr ""
 "апликације и преписаће све измене направљене под директоријумима специфичних "
 "језика (осим `/src/en/`)."
 
-#. type: Title ###
-#: src/en/contribute/contribute.md:78
-#, no-wrap
-msgid "ReStructuredText markup"
-msgstr "ReStructuredText код"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:82
-msgid ""
-"If you like to edit the docs, use the ReStructuredText markup language.  "
-"Information about this language can be found at:"
-msgstr ""
-"Уколико желите да уређујете документацију претходног издања, користите "
-"ReStructuredText језик.  Информације о овом језику можете пронаћи на:"
-
-#. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:86
-msgid "http://www.sphinx-doc.org/en/stable/rest.html"
-msgstr "http://www.sphinx-doc.org/en/stable/rest.html"
-
-#. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:86
-msgid "http://docutils.sourceforge.net/docs/user/rst/quickref.html"
-msgstr "http://docutils.sourceforge.net/docs/user/rst/quickref.html"
-
-#. type: Bullet: '  * '
-#: src/en/contribute/contribute.md:86
-msgid ""
-"http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/"
-"source/demo.html"
-msgstr ""
-"http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/"
-"source/demo.html"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:88
-msgid "Thanks! ❤ ❤ ❤"
-msgstr "Хвала вам! ❤ ❤ ❤"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:90
-msgid "Zammad Team"
-msgstr "Zammad тим"
-
 #. type: Title ##
-#: src/en/contribute/contribute.md:91
+#: src/en/contribute/contribute.md:66
 #, no-wrap
 msgid "Translation"
 msgstr "Превод"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:97
+#: src/en/contribute/contribute.md:72
 msgid ""
 "If you want to help us with translation and improve the multi-language "
 "support of Zammad and/or the documentation, you are welcome to contribute as "
@@ -503,24 +437,36 @@ msgstr ""
 "сервис за колаборацију на преводима пројеката."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:101
+#: src/en/contribute/contribute.md:76
+#, fuzzy
+#| msgid ""
+#| "You just have to head over to Zammad's [Weblate instance](https://"
+#| "translations.zammad.org/).  You can either create an account (if you "
+#| "don't have one already) or even sign in with your Github account!"
 msgid ""
 "You just have to head over to Zammad's [Weblate instance](https://"
-"translations.zammad.org/).  You can either create an account (if you don't "
-"have one already) or even sign in with your Github account!"
+"translations.zammad.org/){target=_blank}.  You can either create an account "
+"(if you don't have one already) or even sign in with your Github account!"
 msgstr ""
 "Све што је неопходно је да се упутите на Zammad [Weblate инстанцу](https://"
 "translations.zammad.org/).  Можете или отворити налог (уколико га још "
 "немате) или да се пријавите путем вашег GitHub налога!"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:107
+#: src/en/contribute/contribute.md:82
+#, fuzzy
+#| msgid ""
+#| "We will cover some basic steps in the following sections to get you "
+#| "started with translating. However, if you want to use some additional "
+#| "features of Weblate and want to dive deeper into it, their [translation "
+#| "documentation](https://docs.weblate.org/en/latest/user/translating.htm)  "
+#| "is a good starting point."
 msgid ""
 "We will cover some basic steps in the following sections to get you started "
 "with translating. However, if you want to use some additional features of "
 "Weblate and want to dive deeper into it, their [translation documentation]"
-"(https://docs.weblate.org/en/latest/user/translating.htm)  is a good "
-"starting point."
+"(https://docs.weblate.org/en/latest/user/translating.htm){target=_blank} is "
+"a good starting point."
 msgstr ""
 "Представићемо неке основне кораке у следећим одељцима како бисте могли да "
 "започнете са превођењем. Међутим, уколико желите да користите напредне "
@@ -529,18 +475,23 @@ msgstr ""
 "може помоћи."
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:108
+#: src/en/contribute/contribute.md:83
 #, no-wrap
 msgid "Basics"
 msgstr "Основе"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:114
-#, no-wrap
+#: src/en/contribute/contribute.md:89
+#, fuzzy, no-wrap
+#| msgid ""
+#| "The translation of **Zammad** and the translation of the **documentation**\n"
+#| "are split into two projects in Weblate. When you click in the top menu under\n"
+#| "\"*Projects > Browse all projects*\", you can find the overview of the two\n"
+#| "projects:\n"
 msgid ""
 "The translation of **Zammad** and the translation of the **documentation**\n"
-"are split into two projects in Weblate. When you click in the top menu under\n"
-"\"*Projects > Browse all projects*\", you can find the overview of the two\n"
+"are split into different projects in Weblate. When you click in the top menu under\n"
+"\"*Projects > Browse all projects*\", you can find the overview of the\n"
 "projects:\n"
 msgstr ""
 "Превод **Zammad-а** и документације су раздвојени у два пројекта у\n"
@@ -549,7 +500,7 @@ msgstr ""
 "„*Projects > Browse all projects*”:\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:116
+#: src/en/contribute/contribute.md:91
 msgid ""
 "![Screenshot showing translation projects in Weblate and menu](/screenshots/"
 "weblate-overview-docs.png)"
@@ -558,59 +509,52 @@ msgstr ""
 "screenshots/weblate-overview-docs.png)"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:118
+#: src/en/contribute/contribute.md:93
 msgid "Structure of translation projects in Weblate:"
 msgstr "Структура пројекта превода у Weblate-у:"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
-msgid "User Documentation (`latest`)"
+#: src/en/contribute/contribute.md:100
+#, fuzzy
+#| msgid "User Documentation (`latest`)"
+msgid "New Documentation at next.zammad.org"
 msgstr "Корисничка документације (`latest`)"
 
-#. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
-msgid "User Documentation (`pre-release`)"
-msgstr "Корисничка документација (`pre-release`)"
-
-#. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
-msgid "Admin Documentation (`latest`)"
-msgstr "Администраторска документација (`latest`)"
-
-#. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
-msgid "Admin Documentation (`pre-release`)"
-msgstr "Администраторска документација (`pre-release`)"
-
 #. type: Title ##
-#: src/en/contribute/contribute.md:128 src/en/reference/docker-env-vars.md:11
+#: src/en/contribute/contribute.md:100 src/en/reference/docker-env-vars.md:11
 #, no-wrap
 msgid "Zammad"
 msgstr "Zammad"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
+#: src/en/contribute/contribute.md:100
 msgid "Zammad (`develop`, development version)"
 msgstr "Zammad (`develop`, развојна верзија)"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
+#: src/en/contribute/contribute.md:100
 msgid "Zammad (`stable` version)"
 msgstr "Zammad (`stable` верзија)"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:128
+#: src/en/contribute/contribute.md:100
 msgid "*Some more which aren't relevant here*"
 msgstr "*Додатне верзије које овде нису релевантне*"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/contribute.md:129
-#, no-wrap
+#: src/en/contribute/contribute.md:101
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "It is no big difference which branch you choose to translate. When Weblate\n"
+#| "detects the same strings in different branches, they will be used for all\n"
+#| "branches and only have to be translated once.\n"
 msgid ""
 "\n"
-"It is no big difference which branch you choose to translate. When Weblate\n"
+"It should be no big difference which branch you choose to translate. When Weblate\n"
 "detects the same strings in different branches, they will be used for all\n"
-"branches and only have to be translated once.\n"
+"branches and only have to be translated once. If in doubt, choose the `develop`\n"
+"version.\n"
 msgstr ""
 "\n"
 "Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate\n"
@@ -618,7 +562,7 @@ msgstr ""
 "огранке и тиме се преводи само једном.\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:140
+#: src/en/contribute/contribute.md:113
 msgid ""
 "After selecting a project (Documentation or Zammad), you will see different "
 "sub-projects and their translation status summarized for all languages.  "
@@ -631,7 +575,7 @@ msgstr ""
 "различите језике."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:146
+#: src/en/contribute/contribute.md:119
 #, no-wrap
 msgid ""
 "Here you can select one of the \"components\", which is more or less the same as\n"
@@ -647,7 +591,7 @@ msgstr ""
 "Documentation (latest)*:\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:149
+#: src/en/contribute/contribute.md:122
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
 "documentation ](/screenshots/weblate-translations-user-docs.png)"
@@ -656,13 +600,13 @@ msgstr ""
 "корисничку документацију](/screenshots/weblate-translations-user-docs.png)"
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:150
+#: src/en/contribute/contribute.md:123
 #, no-wrap
 msgid "Translating"
 msgstr "Превођење"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:155
+#: src/en/contribute/contribute.md:128
 msgid ""
 "After selecting your language you want to translate to, a good starting "
 "point is to select \"*Untranslated strings*\" (or the same meaning in your "
@@ -673,7 +617,7 @@ msgstr ""
 "зависности шта сте подесили у свом профилу)."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:159
+#: src/en/contribute/contribute.md:132
 msgid ""
 "After that, you will finally see the first untranslated string in the upper "
 "field and, in theory, you can start to translate. First a brief overview of "
@@ -684,7 +628,7 @@ msgstr ""
 "Weblate апликације:"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:161
+#: src/en/contribute/contribute.md:134
 msgid ""
 "![Screenshot of Weblate translation user interface](/screenshots/weblate-ui."
 "png)"
@@ -693,12 +637,12 @@ msgstr ""
 "weblate-ui.png)"
 
 #. type: Bullet: '1. '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid "**Breadcrumbs with path** to the current project and language"
 msgstr "**Путања навигације** на тренутни пројекат и језик превода"
 
 #. type: Bullet: '2. '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid ""
 "**Translation area** itself. You can find the source string (*\"English "
 "(United States)\"*) at the top and the field for your translation "
@@ -709,7 +653,7 @@ msgstr ""
 "примеру)."
 
 #. type: Bullet: '3. '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid ""
 "**Glossary**: here you can find common translations in Zammad context. The "
 "terms from the glossary are highlighted in the source strings, as well."
@@ -718,17 +662,17 @@ msgstr ""
 "из речника ће бити наглашени у изворном тексту такође."
 
 #. type: Bullet: '4. '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid "**Some useful tabs**:"
 msgstr "**Неке корисне картице**:"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid "**Nearby strings**: shows you the context of the word or string"
 msgstr "**Nearby strings**: вам приказује контекст речи или низа текста"
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid ""
 "**Automatic suggestions**: here you can find automatic suggestions from "
 "DeepL and suggestions from similar strings, which are already translated.  "
@@ -743,7 +687,7 @@ msgstr ""
 "одмах пређене на следећи низ текста."
 
 #. type: Bullet: '    * '
-#: src/en/contribute/contribute.md:178
+#: src/en/contribute/contribute.md:151
 msgid ""
 "**Other languages**: here you can get an overview, which languages are "
 "translated and you can also see the translated strings (could be useful for "
@@ -753,7 +697,7 @@ msgstr ""
 "превод и саме преводе (може бити корисно за сличне језике)."
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:179
+#: src/en/contribute/contribute.md:152
 #: src/en/tutorials/connect-config-elasticsearch.md:90
 #: src/en/tutorials/sso-kerberos.md:528
 #, no-wrap
@@ -761,25 +705,35 @@ msgid "Troubleshooting"
 msgstr "Решавање проблема"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:183
+#: src/en/contribute/contribute.md:156
+#, fuzzy
+#| msgid ""
+#| "And finally some notes for \"special\" source strings, you might see in "
+#| "the documentation projects (see RestructuredText_ for details):"
 msgid ""
 "And finally some notes for \"special\" source strings, you might see in the "
-"documentation projects (see RestructuredText_ for details):"
+"documentation projects:"
 msgstr ""
 "И коначно, пар напомена за „посебне” изворне низове текста, које можете "
 "видети у пројектима документације (погледајте RestructuredText_ за детаље):"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:185
-msgid "**\\`\\`example-string\\`\\`**"
+#: src/en/contribute/contribute.md:158
+#, fuzzy
+#| msgid "**\\`\\`example-string\\`\\`**"
+msgid "**\\`example-string\\`**"
 msgstr "**\\`\\`example-string\\`\\`**"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:189
-#, no-wrap
+#: src/en/contribute/contribute.md:162
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    This is rendered as `example-string`. Depending on the context, it can be\n"
+#| "    translated or not. In any case, use the \\`` before and after the string in\n"
+#| "    your translation.\n"
 msgid ""
 "    This is rendered as `example-string`. Depending on the context, it can be\n"
-"    translated or not. In any case, use the \\`` before and after the string in\n"
+"    translated or not. In any case, use the \\` before and after the string in\n"
 "    your translation.\n"
 msgstr ""
 "    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може\n"
@@ -787,69 +741,32 @@ msgstr ""
 "    вашем преводу.\n"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:191
-msgid "**\\:doc:\\`example \\<path/to/document>\\`**"
+#: src/en/contribute/contribute.md:164
+#, fuzzy
+#| msgid "**\\:doc:\\`example \\<path/to/document>\\`**"
+msgid "**\\[example\\](/en/path/to/document-or-website\\)**"
 msgstr "**\\:doc:\\`пример \\<path/to/document>\\`**"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:196
+#: src/en/contribute/contribute.md:172
 #, no-wrap
 msgid ""
-"    This is a link to another page. Some links doesn't have the \"example\" part\n"
-"    included, e.g. \\:doc:\\`path/to/document. The above \"example\" is the text,\n"
-"    which is shown as link. This part can be translated. The path/to/document\n"
-"    may not be translated, otherwise the link would not work anymore.\n"
+"    This is a link to another page, including the language code.\n"
+"    The above \"example\" is the text, which is shown as link text. This part can\n"
+"    be translated. For the path, only the `en` may be replaced by the\n"
+"    language code you are translating in. Make sure that your language is\n"
+"    already present on zammad.org (check it by using the language switcher).\n"
+"    Otherwise contact us if you want to have your language activated (and a\n"
+"    substantial amount of the strings are already translated).\n"
 msgstr ""
-"    Ово је линк на другу страницу. Неки линкови немају укључен део „пример”,\n"
-"    нпр. \\:doc:\\`path/to/document\\`. Пример изнад је текст који ће бити линкован.\n"
-"    Овај део можете превести. Путању `path/to/document` не треба преводити,\n"
-"    иначе ризикујете да линк не функционише.\n"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:198
-msgid "**\\`some text \\<https://example.com\\>`\\_**"
-msgstr "**\\`неки текст \\<https://example.com\\>`\\_**"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:203
-#, no-wrap
-msgid ""
-"    This is a link which can refer to an external website. \"some text\" is the\n"
-"    displayed text in the documentation, the part between \\< and \\> is the link\n"
-"    target. The \\_ at the end is important and must remain in the translated\n"
-"    text.\n"
-msgstr ""
-"    Овај линк води на екстерну страницу. „Неки текст” ће бити\n"
-"    приказан у документацији, а део између \\< и \\> је путања\n"
-"    везе. Ознака \\_ на крају је важна и мора остати део преведеног\n"
-"    текста.\n"
-
-#. type: Bullet: '- '
-#: src/en/contribute/contribute.md:205
-msgid "**\\:admin-docs:\\`some text \\</manage-text-modules.html\\>\\`**"
-msgstr "**\\:admin-docs:\\`неки текст \\</manage-text-modules.html\\>\\`**"
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:210
-#, no-wrap
-msgid ""
-"    This is a link which refers to external documentation. \"some text\" is the\n"
-"    displayed text in the documentation, the part between \\< and \\> is the link\n"
-"    target. Note the absence of \\_ at the end, since this link is using a\n"
-"    different construction mechanism.\n"
-msgstr ""
-"    Ово је веза која води на екстерну документацију. „Неки текст” ће бити\n"
-"    приказан у документацији, а део између \\< и \\> је путања\n"
-"    везе. Обратите пажњу на недостатак знака \\_ на крају, пошто овај линк користи\n"
-"    другачију структуру.\n"
-
-#. type: Bullet: '- '
-#: src/en/contribute/contribute.md:212
+#: src/en/contribute/contribute.md:174
 msgid "**\\*\\*example string\\*\\***"
 msgstr "**\\*\\*пример текста\\*\\***"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:216
+#: src/en/contribute/contribute.md:178
 #, no-wrap
 msgid ""
 "    Markup for text (e.g. bold, italics). Alternative: \\*example string\\*.\n"
@@ -1470,8 +1387,8 @@ msgid ""
 "![Screenshot shows subscribe feature](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-subscribe.png)"
 msgstr ""
-"![Снимак екрана приказује функцију претплате](/screenshots/cypress/"
-"usage-advanced-features.cy.js/ticket-subscribe.png)"
+"![Снимак екрана приказује функцију претплате](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-subscribe.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:95
@@ -1508,8 +1425,8 @@ msgid ""
 "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-macro.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"usage-advanced-features.cy.js/ticket-macro.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:115
@@ -14442,19 +14359,20 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:263
 #, no-wrap
 msgid ""
-"After executing the database migrations a restart of Zammad is\n"
-"*mandatory*. If configured Zammad also can restart automatically (this\n"
-"is the case on Hosted environments) – expect a short downtime.\n"
+"After executing the database migrations, a restart of Zammad is\n"
+"*mandatory*. If not deactivated via\n"
+"[auto shutdown setting](/en/reference/console#auto-shutdown-setting),\n"
+"Zammad automatically restarts - expect a short downtime.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:271
+#: src/en/reference/rest-api/object.md:272
 msgid ""
 "`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/object.md:272
+#: src/en/reference/rest-api/object.md:273
 #, no-wrap
 msgid ""
 "\n"
@@ -20830,6 +20748,126 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#~ msgid "Open a new GitHub pull request at"
+#~ msgstr "Отворите нови GitHub pull request на"
+
+#~ msgid ""
+#~ "https://github.com/zammad/zammad-org (the documentation you are currently "
+#~ "reading)"
+#~ msgstr ""
+#~ "https://github.com/zammad/zammad-org (документација коју управо читате)"
+
+#~ msgid "https://github.com/zammad/zammad-documentation (legacy)"
+#~ msgstr "https://github.com/zammad/zammad-documentation (претходно издање)"
+
+#~ msgid "https://github.com/zammad/zammad-admin-documentation (legacy)"
+#~ msgstr ""
+#~ "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
+
+#~ msgid "https://github.com/zammad/zammad-user-documentation (legacy)"
+#~ msgstr ""
+#~ "https://github.com/zammad/zammad-user-documentation (претходно издање)"
+
+#~ msgid "with your changes."
+#~ msgstr "са вашим изменама."
+
+#~ msgid ""
+#~ "The legacy documentation is hosted on Read the Docs. You can find it "
+#~ "under:"
+#~ msgstr ""
+#~ "Документација претходног издања је хостована на Read the Docs. Можете је "
+#~ "пронаћи под:"
+
+#~ msgid "https://docs.zammad.org"
+#~ msgstr "https://docs.zammad.org"
+
+#~ msgid "https://admin-docs.zammad.org"
+#~ msgstr "https://admin-docs.zammad.org"
+
+#~ msgid "https://user-docs.zammad.org"
+#~ msgstr "https://user-docs.zammad.org"
+
+#, no-wrap
+#~ msgid "ReStructuredText markup"
+#~ msgstr "ReStructuredText код"
+
+#~ msgid ""
+#~ "If you like to edit the docs, use the ReStructuredText markup language.  "
+#~ "Information about this language can be found at:"
+#~ msgstr ""
+#~ "Уколико желите да уређујете документацију претходног издања, користите "
+#~ "ReStructuredText језик.  Информације о овом језику можете пронаћи на:"
+
+#~ msgid "http://www.sphinx-doc.org/en/stable/rest.html"
+#~ msgstr "http://www.sphinx-doc.org/en/stable/rest.html"
+
+#~ msgid "http://docutils.sourceforge.net/docs/user/rst/quickref.html"
+#~ msgstr "http://docutils.sourceforge.net/docs/user/rst/quickref.html"
+
+#~ msgid ""
+#~ "http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/"
+#~ "source/demo.html"
+#~ msgstr ""
+#~ "http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/"
+#~ "source/demo.html"
+
+#~ msgid "Thanks! ❤ ❤ ❤"
+#~ msgstr "Хвала вам! ❤ ❤ ❤"
+
+#~ msgid "Zammad Team"
+#~ msgstr "Zammad тим"
+
+#~ msgid "User Documentation (`pre-release`)"
+#~ msgstr "Корисничка документација (`pre-release`)"
+
+#~ msgid "Admin Documentation (`latest`)"
+#~ msgstr "Администраторска документација (`latest`)"
+
+#~ msgid "Admin Documentation (`pre-release`)"
+#~ msgstr "Администраторска документација (`pre-release`)"
+
+#, no-wrap
+#~ msgid ""
+#~ "    This is a link to another page. Some links doesn't have the \"example\" part\n"
+#~ "    included, e.g. \\:doc:\\`path/to/document. The above \"example\" is the text,\n"
+#~ "    which is shown as link. This part can be translated. The path/to/document\n"
+#~ "    may not be translated, otherwise the link would not work anymore.\n"
+#~ msgstr ""
+#~ "    Ово је линк на другу страницу. Неки линкови немају укључен део „пример”,\n"
+#~ "    нпр. \\:doc:\\`path/to/document\\`. Пример изнад је текст који ће бити линкован.\n"
+#~ "    Овај део можете превести. Путању `path/to/document` не треба преводити,\n"
+#~ "    иначе ризикујете да линк не функционише.\n"
+
+#~ msgid "**\\`some text \\<https://example.com\\>`\\_**"
+#~ msgstr "**\\`неки текст \\<https://example.com\\>`\\_**"
+
+#, no-wrap
+#~ msgid ""
+#~ "    This is a link which can refer to an external website. \"some text\" is the\n"
+#~ "    displayed text in the documentation, the part between \\< and \\> is the link\n"
+#~ "    target. The \\_ at the end is important and must remain in the translated\n"
+#~ "    text.\n"
+#~ msgstr ""
+#~ "    Овај линк води на екстерну страницу. „Неки текст” ће бити\n"
+#~ "    приказан у документацији, а део између \\< и \\> је путања\n"
+#~ "    везе. Ознака \\_ на крају је важна и мора остати део преведеног\n"
+#~ "    текста.\n"
+
+#~ msgid "**\\:admin-docs:\\`some text \\</manage-text-modules.html\\>\\`**"
+#~ msgstr "**\\:admin-docs:\\`неки текст \\</manage-text-modules.html\\>\\`**"
+
+#, no-wrap
+#~ msgid ""
+#~ "    This is a link which refers to external documentation. \"some text\" is the\n"
+#~ "    displayed text in the documentation, the part between \\< and \\> is the link\n"
+#~ "    target. Note the absence of \\_ at the end, since this link is using a\n"
+#~ "    different construction mechanism.\n"
+#~ msgstr ""
+#~ "    Ово је веза која води на екстерну документацију. „Неки текст” ће бити\n"
+#~ "    приказан у документацији, а део између \\< и \\> је путања\n"
+#~ "    везе. Обратите пажњу на недостатак знака \\_ на крају, пошто овај линк користи\n"
+#~ "    другачију структуру.\n"
 
 #, fuzzy
 #~| msgid ""
