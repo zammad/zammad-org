@@ -6,7 +6,7 @@ title: Docker
 # Installation via Docker
 
 Zammad kann mit Docker-Compose installiert werden. Sie können sogar
-grafische Docker-Frontends wie [Portainer] (https://www.portainer.io/)
+grafische Docker-Frontends wie [Portainer](https://www.portainer.io/)
 verwenden.
 
 ::: info
@@ -52,8 +52,8 @@ Vorlage](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host
 und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
-![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in Portainer.]
-(screenshots/installation/portainer-stacks.png)
+![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in
+Portainer.](/screenshots/installation/portainer-stacks.png)
 
 ![Stack-Erstellung mit Informationen aus der
 Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
@@ -104,8 +104,8 @@ vorzunehmen, z.B. um zusätzliche Dienste einzubinden. Wenn Sie dies planen,
 empfehlen wir Ihnen, die Datei `docker-compose.yml` nicht zu ändern, sondern
 eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre
 Änderungen enthält.  Docker-Compose wird [automatisch diese Datei laden und
-ihre Änderungen in Ihren Stack einfügen]
-(https://docs.docker.com/compose/multiple-compose-files/merge/).
+ihre Änderungen in Ihren Stack
+einfügen](https://docs.docker.com/compose/multiple-compose-files/merge/).
 
 ## Befehle im Stack ausführen
 

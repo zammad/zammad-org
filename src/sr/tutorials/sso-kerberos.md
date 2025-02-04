@@ -25,7 +25,7 @@ If you don't have this IT infrastructure but still want one-click
 login, you can use alternatives like Github, Google, Facebook and more.
 :::
 
-## How Does it Work?
+## Како то уствари функционише?
 
 Once enabled, single sign-on activates an endpoint at
 `https://your.zammad.host/auth/sso`. When the Zammad server receives a GET
@@ -470,7 +470,7 @@ The configuration for CentOS and OpenSUSE below contains two
 systemctl restart apache2
 ```
 
-## Step 3: Enable SSO in Zammad
+## Корак 3: Укључите SSO пријаву за Zammad
 
 Next, enable "Authentication via SSO" in Zammad's Admin Panel under
 *Settings > Security > Third-Party Applications*

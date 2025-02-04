@@ -129,8 +129,7 @@ sudo localectl set-locale LANG=en_US.UTF-8
 ### Elasticsearch installieren
 
 Die empfohlene Methode ist die Verwendung von [Elastics offizieller
-Installationsanleitung]
-(https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 Alternativ können Sie [unserem
 Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 7
@@ -370,8 +369,8 @@ Anstatt Zammads Cache-Dateien in Ihrem Dateisystem zu speichern, können sie
 mit Memcached im Arbeitsspeicher zwischengespeichert werden.
 
 Die Installation und Konfiguration ist nicht Bestandteil dieser
-Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung]
-(https://docs.memcached.org/).
+Dokumentation .  Bitte folgen Sie der [offiziellen
+Anleitung](https://docs.memcached.org/).
 
 ### GnuPG <Badge type="info" text="optional"/>
 

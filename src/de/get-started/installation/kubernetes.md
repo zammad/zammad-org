@@ -6,7 +6,7 @@ title: Kubernetes
 # Installation mit Kubernetes
 
 Sie finden die Installationsanweisungen in der [Dokumentation zum Helm
-Chart] (https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
+Chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md).
 
 :::info
 Wir bieten keine Unterstützung bei Kubernetes-spezifischen Problemen. Wenn Sie

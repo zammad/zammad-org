@@ -28,7 +28,7 @@ that:
 : - `1`, `null`
   - This is the description of the attribute, if available.
 
-## Ticket
+## Тикет
 
 The following index contains below mentioned information: `*_ticket`
 

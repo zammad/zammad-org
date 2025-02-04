@@ -142,7 +142,7 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
 `group`
 : - \#\{group object\}
   - Vollständiger Payload der aktuellen Gruppe. Werfen Sie einen Blick in den
-    Abschnitt [Gruppe] (#gruppe) für weitere Informationen.
+    [Abschnitt Gruppe](#Gruppe) für weitere Informationen.
 
 `group_id`
 : - `1`
@@ -420,11 +420,11 @@ haben wir sie in einen eigenen Bereich verschoben.
 
 `detected_language`
 : - `en`, `de`
-  - Language code of detected language, may be empty
+  - Sprachen-Code der ermittelten Sprache, kann leer sein
 
 `detected_language_name`
 : - `English`, `German`
-  - Language name of detected language, may be empty
+  - Sprach-Name der ermittelten Sprache, kann leer sein
 
 `from`
 : - `John Doe <john.doe@example.com>`
@@ -556,7 +556,7 @@ haben wir sie in einen eigenen Bereich verschoben.
 `organization`
 : - \#\{organization object\}
   - Vollständiger Payload der Organisation, in der der Benutzer Mitglied ist. Schauen Sie sich
-    den Abschnitt [Organisation] (#organisation) an für weitere Informationen.
+    den [Abschnitt Organisation](#organisation) an für weitere Informationen.
 
 `organization_id`
 : - `3`

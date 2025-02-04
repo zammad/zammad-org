@@ -60,8 +60,8 @@ Changelog
 : With every new release comes a new changelog. It is basically a list of all
   the things that have changed, from new enhancements to bug fixes.
 
-  You can find them all on our
-  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
+  Све их можете пронаћи на нашој
+  [GitHub страни](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
 : Checkmk is a powerful IT monitoring tool that can send real-time status

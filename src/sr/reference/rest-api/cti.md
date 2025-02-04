@@ -67,7 +67,7 @@ reject) if you blocked a specific caller. Zammad will never initiate
 specific actions with your PBX. Zammad is a passive component in all
 described cases.
 
-### Used Examples
+### Коришћени примери
 
 **Example:**
 Below calls have been sent with the following configuration. This is
@@ -88,7 +88,7 @@ important for you to understand the responses we are showing here.
 
 ### Уопштено
 
-Available `attributes` and <Badge type="info" text="sample data" />:
+Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="newCall"/>
 : Tell Zammad there is a new call.
@@ -241,7 +241,7 @@ will return the following.
 
 ### Уопштено
 
-Available `attributes` and <Badge type="info" text="sample data" />:
+Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="answer" />:
 : Tell Zammad that someone answered the call.

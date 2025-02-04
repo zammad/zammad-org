@@ -148,12 +148,12 @@ explicitly covered in this documentation:
 
 - Chat Sessions
 - Knowledgebase
-- Macros
-- Overview
-- Templates
-- Text module
+- Макрои
+- Преглед
+- Шаблони
+- Текстуални исечак
 
-#### Search Example
+#### Пример претраге
 
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome`
 

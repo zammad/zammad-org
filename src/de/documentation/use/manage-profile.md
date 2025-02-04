@@ -3,130 +3,147 @@ order: 7
 title: Benutzerprofil
 ---
 
-# Manage Your User Profile
+# Benutzerprofil verwalten
 
-![Screenshot shows user profile
-settings](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot zeigt
+Benutzerprofil-Einstellungen](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)
 
-## Avatar Menu
+## Avatar-Menü
 
-In the left navigation sidebar, you can find an avatar icon in the bottom
-left corner. This icon can display your profile picture or your initials.
+In der linken Navigationsleiste finden Sie in der unteren linken Ecke ein
+Avatar-Symbol. Dieses Symbol kann Ihr Profilbild oder Ihre Initialen
+anzeigen.
 
-Clicking on this icon opens a menu where you can find different things:
+Wenn Sie auf dieses Symbol klicken, öffnet sich ein Menü, in dem Sie
+verschiedene Dinge finden können:
 
-![Screenshot shows user menu
-popover](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)
+![Screenshot zeigt
+Benutzer-Menü](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)
 
-- **Appearance** with toggle to switch between dark and light mode (or based
-  on your web browser)
-- **Keyboard shortcuts**: opens a popup where you can see the available
-  keyboard shortcuts. You can open this popup by pressing the <kbd>?</kbd>
-  button on your keyboard as well.
-- **Profile settings**: opens your profile settings where you can adjust
-  your avatar, password, notification settings and much more, see next
-  section.
+- **Aussehen** mit Schalter zum Wechseln zwischen dunklem und hellem Modus
+  (oder basierend auf Webbrowser-Einstellung)
+- **Tastaturkürzel**: öffnet ein Popup, in dem Sie die verfügbaren
+  Tastaturkürzel sehen können. Sie können dieses Popup auch durch Drücken
+  der Taste <kbd>?</kbd> auf Ihrer Tastatur öffnen.
+- **Profileinstellungen**: öffnet Ihre Profileinstellungen, wo Sie Ihren
+  Avatar, Ihr Passwort, Ihre Benachrichtigungseinstellungen und vieles mehr
+  anpassen können, siehe nächster Abschnitt.
 
-## Profile Settings
+## Profil-Einstellungen
 
-In your profile settings, you can adjust things concerning your account and
-your personal settings. Some of the options may not be available for you,
-depending on how your system is configured and your permissions.
+In Ihren Profileinstellungen können Sie Einstellungen zu Ihrem Konto und
+Ihren persönlichen Einstellungen vornehmen. Einige der Optionen stehen Ihnen
+möglicherweise nicht zur Verfügung, je nachdem, wie Ihr System konfiguriert
+ist und welche Rechte Sie haben.
 
-### Appearance
+### Aussehen
 
-Change the appearance of Zammad. Available options:
+Ändern Sie das Aussehen von Zammad. Verfügbare Optionen:
 
-- Dark mode
-- Light mode
-- Sync with computer
+- Dunkel
+- Hell
+- Mit Computer synchronisieren
 
-The last option tries to detect your browser's preference. It depends on
-your web browser. If it doesn't work, you can choose one of the other
-options.
+Die letzte Option versucht, die Einstellung Ihres Browsers zu erkennen. Ob
+das funktioniert hängt von Ihrem Webbrowser ab. Falls nicht können Sie eine
+der anderen Optionen wählen.
 
 ::: tip
-If you want to switch quickly between dark and light mode, you can also use
-the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by
-simply pressing <kbd>d</kbd>.
+Wenn Sie schnell zwischen dunklem und hellem Modus wechseln möchten, können Sie auch
+die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastaturkürzel dafür verwenden, indem Sie
+einfach <kbd>d</kbd> drücken.
 :::
 
-### Language
+### Sprache
 
-Choose your preferred language of Zammad.
+Wählen Sie Ihre bevorzugte Sprache für Zammad.
 
 ### Avatar
 
-In this section, you can adjust your avatar image. By default, the initials
-of your user are displayed on a colored background. If you want to add an
-image, simply upload one or use your camera, if you have one.
+In diesem Bereich können Sie Ihr Avatarbild anpassen. Standardmäßig werden
+die Initialen Ihres Benutzers vor einem farbigen Hintergrund angezeigt. Wenn
+Sie ein Bild hinzufügen möchten, laden Sie einfach eines hoch oder verwenden
+Sie Ihre Kamera, wenn Sie eine haben.
 
-After capturing or uploading an image, you can crop it. Have a look at the
-preview at the top of the right side panel.
+Nachdem Sie ein Bild aufgenommen oder hochgeladen haben, können Sie es
+zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten
+Seiten-Panel.
 
-### Out of Office
+### Abwesenheit
 
-Define absence periods (e.g. for your vacation), and designate a substitute
-to handle your tickets while you are away.
+Definieren Sie Abwesenheitszeiten (z.B. für Ihren Urlaub) und bestimmen Sie
+einen Vertreter, der Ihre Tickets während Ihrer Abwesenheit bearbeitet.
 
-Your designated substitute will receive updates on new tickets and changes
-to existing ones while you're away. Additionally, your custom overviews are
-available for this agent to keep track of your tickets. You receive
-notifications while you are absent, too.
+Ihre ausgewählte Vertretung erhält während Ihrer Abwesenheit
+Benachrichtigungen für neue Tickets und Änderungen an bestehenden
+Tickets. Außerdem stehen diesem Agenten Ihre benutzerdefinierten Übersichten
+zur Verfügung, damit er den Überblick über Ihre Tickets behält. Sie erhalten
+auch Benachrichtigungen, wenn Sie abwesend sind.
 
-### Password
+### Passwort
 
-Change the password of your account. Update it by entering your old
-password, the new password and confirm the new one by entering it again.
+Ändern Sie das Passwort für Ihr Konto. Aktualisieren Sie es, indem Sie Ihr
+altes Passwort und das neue Passwort eingeben und das neue Passwort durch
+erneute Eingabe bestätigen.
 
-### Devices
+### Geräte
 
-Here you can find a list of all devices logged into your Zammad account.  If
-necessary, you can revoke the access by clicking the delete icon in the
-"Actions" column.
+Hier finden Sie eine Liste aller Geräte, die in Ihrem Zammad Konto
+angemeldet sind.  Falls nötig, können Sie den Zugriff widerrufen, indem Sie
+auf das Löschsymbol in der Spalte "Aktionen" klicken.
 
-### Token Access
+### Token-Zugriff
 
-Generate a personal access token for a third party application to access the
-Zammad API. After clicking the **New Personal Access Token** button, you can
-set a name, an expiration date and configure the permissions for this token.
+Generieren Sie einen persönlichen Zugangs-Token für eine Anwendung eines
+Drittanbieters für den Zugriff auf die Zammad API. Nachdem Sie auf die
+Schaltfläche **Neuer persönlicher Zugangs-Token** geklickt haben, können Sie
+einen Namen und ein Ablaufdatum festlegen und die Berechtigungen für diesen
+Token konfigurieren.
 
-### Notifications
+### Benachrichtigungen
 
-Adjust the notifications you get. You can adjust:
+Passen Sie die Benachrichtigungen an, die Sie erhalten. Sie können
+einstellen:
 
-- For which ticket actions you get notified (e.g. for new tickets, for
-  escalated tickets)
-- For which ticket you get notified based on the assignment and your
-  relation to it (e.g. only yours, not assigned, subscribed tickets)
-- On which way you get notified (only in browser or additionally via email)
-- For tickets in which group you get notified
+- Für welche Ticket-Aktionen Sie benachrichtigt werden (z.B. für neue
+  Tickets, für eskalierte Tickets)
+- Für welches Ticket Sie benachrichtigt werden basierend auf dessen
+  Zuweisung und Ihrer Beziehung dazu (z.B. nur Ihre eigenen, nicht
+  zugewiesene Tickets, abonnierte Tickets)
+- Auf welchem Weg Sie benachrichtigt werden (nur im Browser oder zusätzlich
+  per E-Mail)
+- Für in welcher Gruppe befindliche Tickets Sie benachrichtigt werden
 
-Additionally, you can select a notification sound or disable the sound.
+Außerdem können Sie einen Benachrichtigungston auswählen oder den Ton
+deaktivieren.
 
 ::: tip
-To get notified via sound and notification on your operating system, you have
-to allow Zammad to send you notifications. This is requested when Zammad wants
-to send you a notification the first time.
+Um über Töne und Benachrichtigungen auf Ihrem Betriebssystem benachrichtigt zu werden, müssen Sie
+Zammad erlauben, Ihnen Benachrichtigungen zu senden. Dies ist erforderlich, wenn Zammad
+Ihnen zum ersten Mal eine Benachrichtigung senden möchte.
 
-If you refused it and want to allow it now, it depends on your browser on how
-to do that. Usually there is an icon in the address bar where you can adjust
-the permissions of the site.
+Wenn Sie dies abgelehnt haben und es jetzt erlauben wollen, hängt es von Ihrem Browser ab,
+wie Sie das umstellen. Normalerweise gibt es ein Symbol in der Adressleiste, mit dem Sie die
+Berechtigungen der Website anpassen können.
 :::
 
-### Overviews
+### Übersichten
 
-Change the order of overviews for your account. Simply drag & drop them by
-clicking the handles on the left side.
+Ändern Sie die Reihenfolge der Übersichten für Ihr Konto. Ziehen Sie sie
+einfach per Drag & Drop, indem Sie auf die Fläche auf der linken Seite
+klicken.
 
-If your admin changes the order, your custom order remains. You can switch
-back to your admin's order by clicking the **Reset Overview Order** button.
+Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
+Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres Administrators
+wechseln, indem Sie auf die Schaltfläche **Reihenfolge der Übersichten
+zurücksetzen** klicken.
 
 ### Kalender
 
-Zammad allows you to subscribe to a calender feed (ical) to see tickets in
-your favorite calendar application.
+Zammad ermöglicht es Ihnen, einen Kalender-Feed (ical) zu abonnieren, um
+Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen.
 
-Use either the upper "Combined subscription URL" to subscribe to all tickets
-or the lower "Direct subscription URL". With the later one, you can define
-which tickets based on ticket states and assignment you want to include.
+Verwenden Sie entweder die obere "Kombinierte Abonnement-URL", um alle
+Tickets zu abonnieren, oder die untere "URL für Direktabonnement". Mit der
+letzteren können Sie festlegen, welche Tickets basierend auf Ticketstatus
+und -zuweisung Sie einbeziehen möchten.

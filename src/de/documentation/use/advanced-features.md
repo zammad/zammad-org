@@ -1,363 +1,395 @@
 ---
 order: 4
-title: 'Advanced Features'
+title: 'Erweiterte Funktionen'
 ---
 
-# Advanced Features
+# Erweiterte Funktionen
 
-## Use Keyboard Shortcuts
+## Tastaturkürzel verwenden
 
 TODO
 
-## Adjust Behavior After Updating a Ticket
+## Verhalten nach Ticketaktualisierung anpassen
 
-![Screenshot shows behavior after update
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
+![Screenshot zeigt Menü bzgl. Verhalten nach
+Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
 
-**Why?**
+**Warum?**
 
-It is possible to automatically close a ticket tab in the navigation
-sidebar.  It depends on your preferences, but you can save a click after
-updating or updating a ticket to *closed* state.
+Es ist möglich, einen Tab für ein Ticket in der Navigationsleiste
+automatisch zu schließen.  Es hängt von Ihren Präferenzen ab, aber Sie
+können sich einen Klick nach der Aktualisierung oder der Aktualisierung auf
+den Status *geschlossen* sparen.
 
-**How?**
+**Wie? **
 
-In the footer bar of the ticket detail view, click on the `Stay on tab ^`
-button and select your desired option (if the default is still set,
-otherwise it is labeled as the other options below). You have different
-options:
+Klicken Sie in der Fußleiste der Ticket-Detailansicht auf die Schaltfläche
+`Tab beibehalten` und wählen Sie die gewünschte Option aus (falls die
+Standardeinstellung noch vorhanden ist, andernfalls ist sie wie die anderen
+Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you
-  want to have it removed from your navigation sidebar.
-- **Close tab**: This option closes the tab on each update of the
-  ticket. Might be a good option if you have to deal with many tickets
-  and/or the tickets require many interactions.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated and the state is set to *closed*.
+- **Tab beibehalten**: Standardoption. Sie müssen den Tab manuell schließen,
+  wenn Sie ihn aus Ihrer Navigationsseitenleiste entfernen möchten.
+- **Tab schließen**: Mit dieser Option wird der Tab bei jeder Aktualisierung
+  des Tickets geschlossen. Dies kann eine gute Option sein, wenn Sie mit
+  vielen Tickets zu tun haben und/oder die Tickets viele Interaktionen
+  erfordern.
+- **Tab schließen bei Ticket-Schließung**: Mit dieser Option wird der Tab
+  nur geschlossen, wenn das Ticket aktualisiert wird und der Status auf
+  *geschlossen* gesetzt wird.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab**
-and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing the
-ticket state to closed and close the ticket tab.
+Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten**
+belassen und das Tastaturkürzel <kbd>Shift</kbd> <kbd>c</kbd> verwenden, um den
+Status des Tickets auf geschlossen setzen und den Tab des Tickets schließen.
 :::
 
-## Use Text Templates
+## Textbausteine verwenden
 
-![Screenshot shows text template
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot zeigt
+Textbaustein-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
-**Why?**
+**Warum?**
 
-The usage of text modules has benefits like:
+Die Verwendung von Textbausteinen hat Vorteile wie:
 
-- You save time while answering tickets
-- Answers from you and your colleagues are aligned because you use the same
-  text for answers
+- Sie sparen Zeit bei der Beantwortung von Tickets
+- Die Antworten von Ihnen und Ihren Kollegen sind aufeinander abgestimmt, da
+  Sie denselben Text für die Antworten verwenden
 
-**How?**
+**Wie? **
 
-To use text modules simply type `::` in the editor followed by parts of the
-name or keyword of the text module.
+Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein,
+gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins.
 
-You can pick one by clicking on it or by using the up and down arrows followed
-by <kbd>enter</kbd> on your keyboard. There are some text modules in Zammad
-which are shipped by default.
+Sie können eine auswählen, indem Sie sie anklicken oder die Pfeiltasten nach oben und unten benutzen, gefolgt von
+ <kbd>enter</kbd> auf Ihrer Tastatur. Es gibt einige Textbausteine in Zammad
+die standardmäßig mitgeliefert werden.
 
-If you have to answer the same question again and again, ask your Zammad
-admin to create such a text module for you. They can even include variables
-like customer name or any other available attribute which get replaced while
-using it in a ticket.
+Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren
+Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie
+können sogar Variablen wie den Namen des Kunden oder jedes andere verfügbare
+Attribut einfügen, die bei der Verwendung in einem Ticket ersetzt werden.
 
-## Mention a Colleague
+## Erwähnen von Kollegen
 
-![Screenshot shows mention
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot zeigt
+Erwähnungs-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
-**Why?**
+**Warum?**
 
-Ask or request information from your colleagues or mention them in important
-tickets so they receive notifications for ticket updates and are
-automatically subscribed to this ticket.
+Bitten Sie Ihre Kollegen um Informationen oder erwähnen Sie sie in wichtigen
+Tickets, damit sie Benachrichtigungen über Ticket-Aktualisierungen erhalten
+und dieses Ticket abonnieren.
 
-**How?**
+**Wie? **
 
-While writing an ticket article, simply type `@@` and enter some letters of
-the name of the colleague you want to mention.
+Wenn Sie einen Ticket-Artikel schreiben, geben Sie einfach `@@` und einige
+Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten.
 
-Zammad displays a list with all possible matches where you can pick one
-by clicking on it or by using the up and down arrows followed by
-<kbd>enter</kbd> on your keyboard.
+Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der Sie einen Eintrag
+auswählen können, indem Sie darauf klicken oder die Pfeiltasten nach oben und unten benutzen, gefolgt von
+<kbd>Enter</kbd> auf Ihrer Tastatur.
 
-## Subscribe to a Ticket
+## Ein Ticket abonnieren
 
-![Screenshot shows subscribe
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
+![Screenshot zeigt die Funktion Ticket
+abonnieren](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
 
-**Why?**
+**Warum?**
 
-If you are interested in the progress of a ticket, you can subscribe to it.
-This means you will receive notifications for each update.
+Wenn Sie am Fortschritt eines Tickets interessiert sind, können Sie es
+abonnieren.  Das bedeutet, dass Sie bei jeder Aktualisierung eine
+Benachrichtigung erhalten.
 
-**How?**
+**Wie? **
 
-Activate the "Subscribe me" toggle in the ticket side panel to get
-notifications. If you have been mentioned in a ticket, you are automatically
-subscribed. Switch the toggle off to stop the notification.  The avatars
-displayed show you who has subscribed to the ticket and is therefore
-notified of updates.
+Aktivieren Sie den Schalter "Abonnieren" im seitlichen Bereich des Tickets,
+um Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt wurden,
+werden Sie automatisch benachrichtigt. Deaktivieren Sie den Schalter, um die
+Benachrichtigung zu stoppen.  Die angezeigten Avatare zeigen Ihnen, wer das
+Ticket abonniert hat und somit über Aktualisierungen benachrichtigt wird.
 
-## Use a Macro
+## Ein Makro verwenden
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
+![Screenshot zeigt
+Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
 
-**Why?**
+**Warum?**
 
-If you have many steps you do over and over again, you should use a macro
-for that. In such a macro, your admin can pre-define different ticket
-actions you can apply with just a click. As an example, Zammad ships a
-"Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag `spam` is added and the ticket is
-closed.
+Wenn Sie viele Schritte immer wieder durchführen müssen, sollten Sie dafür
+ein Makro verwenden. In einem solchen Makro kann Ihr Administrator
+verschiedene Ticket-Aktionen vordefinieren, die Sie mit nur einem Klick
+anwenden können. Zammad liefert zum Beispiel standardmäßig ein Makro
+"Schließen & als Spam markieren". Wenn es angewendet wird, wird der
+Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag `spam`
+wird hinzugefügt und das Ticket wird geschlossen.
 
-**How?**
+**Wie? **
 
-If your admin already created a macro, you can execute it in the ticket
-detail view by clicking the three dots button `︙` in the right corner of the
-footer bar and select the macro you want to execute.
+Wenn Ihr Administrator bereits ein Makro erstellt hat, können Sie es in der
+Ticket-Detailansicht ausführen, indem Sie auf die Schaltfläche mit den drei
+Punkten `︙` in der rechten Ecke der Fußleiste klicken und das auszuführende
+Makro auswählen.
 
 ::: warning
-The macro gets executed immediately and without an additional confirmation!
+Das Makro wird sofort und ohne zusätzliche Bestätigung ausgeführt!
 :::
 
-You can also apply a macro to several ticket at once. Have a loot at [bulk
-actions](#bulk-actions) how to do that.
+Sie können ein Makro auch auf mehrere Tickets auf einmal anwenden. Sehen Sie
+sich unter [Mehrfach-Aktionen](#mehrfach-aktionen) an, wie das geht.
 
-## Use Tags
+## Tags verwenden
 
-![Screenshot shows tag area in ticket side
-bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
+![Screenshot zeigt Tag-Bereich in der
+Ticket-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
 
-**Why?**
+**Warum?**
 
-Tags are one way to categorize a ticket. You can think of tags as some kind
-of labels. They can be used in conditions like in triggers and in overviews
-and they can also be assigned automatically by macros, schedulers and
-triggers.  Of course you can search for the text of the tags and will find
-tickets which have the tag attached.
+Tags sind eine Möglichkeit, ein Ticket zu kategorisieren. Sie können sich
+die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie
+z.B. in Triggern und Übersichten, verwendet werden und sie können auch
+automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.
+Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets,
+die mit dem Tag versehen sind.
 
-**How?**
+**Wie? **
 
-In the ticket sidebar, you can find a section which is labels as "Tags". Add
-a tag by clicking on the `+` button. You can select existing tags and add
-new ones (if your admin didn't disable to add new tags).
+In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der
+Bezeichnung "Tags". Fügen Sie einen Tag hinzu, indem Sie auf die
+Schaltfläche `+` klicken. Sie können vorhandene Tags auswählen und neue
+hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht
+deaktiviert hat).
 
-Remove them by simply click on the `X` button. Be aware that there is no
-confirmation dialog for deleting a tag from a ticket.
+Entfernen Sie sie, indem Sie einfach auf die Schaltfläche `X`
+klicken. Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen
+eines Tags aus einem Ticket gibt.
 
-## Use a Checklist
+## Verwenden einer Checkliste
 
-![Screenshot shows a checklist from checklist
-sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
+![Screenshot zeigt eine Checkliste aus der
+Checklisten-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
 
-**Why?**
+**Warum?**
 
-- To keep track of tasks
-- To complete tasks in a structured way
-- To make sure nothing gets forgotten
-- To make the progress of work more visible
+- Um den Überblick über Ihre Aufgaben zu behalten
+- Um Aufgaben auf strukturierte Weise zu erledigen
+- Um sicherzustellen, dass nichts vergessen wird
+- Um den Fortschritt der Arbeiten besser sichtbar machen
 
-**How?**
+**Wie? **
 
-Select the "Checklist" tab in the sidebar. If you can't see it, your Zammad
-admin disabled it. You can only add or edit a checklist, if you have the
-permission to edit the ticket.
+Wählen Sie den Tab "Checkliste" in der Seitenleiste. Wenn Sie sie nicht
+sehen können, hat Ihr Zammad-Administrator sie deaktiviert. Sie können eine
+Checkliste nur hinzufügen oder bearbeiten, wenn Sie die Berechtigung haben,
+das Ticket zu bearbeiten.
 
-In the checklist sidebar, you can:
+In der Checklisten-Seitenleiste können Sie:
 
-- Add a checklist: either by creating a new one by clicking on `Add Empty
-  Checklist` or from a template by using `Add From a Template` (if you don't
-  see the template button, there is none).
-- Edit the current checklist:
-    - Rename it by clicking on the title or using the `︙` menu in the
-      sidebar header.
-    - Add checklist items by clicking the `+` button.
-    - Change the text of the checklist items, either by just clicking on it
-      or using the `︙` menu next to the item.
-    - `Reorder` the items by clicking this button and drag & drop the items.
-- Delete the complete checklist by using the `︙` menu in the sidebar header.
+- Fügen Sie eine Checkliste hinzu: entweder durch Erstellen einer neuen
+  Checkliste, indem Sie auf `Leere Checkliste hinzufügen` klicken, oder aus
+  einer Vorlage, indem Sie `Aus einer Vorlage hinzufügen` verwenden (wenn
+  Sie die Schaltfläche für die Vorlage nicht sehen, gibt es keine).
+- Bearbeiten Sie die aktuelle Checkliste:
+    - Benennen Sie sie um, indem Sie auf den Titel klicken oder das `︙` Menü
+      im im Header der Seitenleiste verwenden.
+    - Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die
+      Schaltfläche `+` klicken.
+    - Ändern Sie den Text der Elemente der Checkliste, entweder durch
+      einfaches Anklicken oder über das `︙` Menü neben dem Element.
+    - Ordnen Sie die Elemente neu an, indem Sie auf die Schaltfläche
+      `Reihenfolge ändern` klicken und die Elemente per Drag & Drop
+      verschieben.
+- Löschen Sie die komplette Checkliste über das `︙` Menü im Header der
+  Seitenleiste.
 
-There are two features, which are not directly visible:
+Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
 
-- You can refer to other tickets as a checklist item by using its hook and
-  number in the item text (e.g. `Ticket#123456`). Such items can't be
-  checked manually, they reflect the state of the referred ticket.
+- Sie können auf andere Tickets in einem Checklisten-Element verweisen,
+  indem Sie den Ticket-Hook und die Nummer im Elementtext verwenden
+  (z.B. `Ticket#123456`). Solche Elemente können nicht manuell als erledigt
+  gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
+  sie verweisen.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either
-  use the copy button in the header or use the keyboard shortcut <kbd>.</kbd>.
-  Then you can paste it in the checklist you want to have it included.
+  Rufen Sie den Ticket-Hook und die Ticket-Nummer ab, indem Sie zum gewünschten Ticket gehen und entweder
+  die Schaltfläche "Ticket-Nummer kopieren" in der Kopfzeile verwenden oder das Tastaturkürzel <kbd>.</kbd> verwenden.
+  Dann können Sie sie in die Checkliste einfügen, die sie enthalten soll.
   :::
-- Zammad automatically checks if all checklist items are completed. The
-  check is performed when you set a ticket to "closed". If not all items are
-  completed, Zammad will prompt you to either work on the remaining tasks
-  and keep the ticket open or to close it anyway. When referencing other
-  tickets in your checklist, only those which are closed (with a green
-  circle) are considered as completed.
+- Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
+  sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"
+  setzen. Wenn nicht alle Elemente erledigt sind, fordert Zammad Sie auf,
+  entweder die verbleibenden Aufgaben zu bearbeiten und das Ticket offen zu
+  lassen oder es trotzdem zu schließen. Wenn Sie in Ihrer Checkliste auf
+  andere Tickets verweisen, gelten nur diejenigen als erledigt, die
+  geschlossen sind (mit einem grünen Kreis).
 
 
-## Ticket Templates
+## Ticket-Vorlagen
 
-**Why?**
+**Warum?**
 
-Quickly create a ticket with pre-defined attributes like title, text, tags
-and more saves you time. This requires your admin to create a ticket
-template.
+Erstellen Sie schnell ein Ticket mit vordefinierten Attributen wie Titel,
+Text, Tags und mehr und sparen Sie Zeit. Dafür muss Ihr Administrator
+bereits eine Ticket-Vorlage erstellt haben.
 
-**How?**
+**Wie? **
 
-In the ticket create screen, you can find an `Apply Template ^` button in
-the footer bar, if a template is available. Select the template you want to
-apply and apply changes if desired.
+In der Ansicht zum Erstellen eines Tickets finden Sie in der Fußleiste eine
+Schaltfläche "Vorlage anwenden", wenn eine Vorlage verfügbar ist. Wählen Sie
+die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
+Änderungen vor.
 
 
 ## Gemeinsame Entwürfe
 
-**Why?**
+**Warum?**
 
-To share a draft with other agents of your group, e.g. to reflect a QA
-process, instead of "just" adding an internal article. In such a draft you
-can even include changed ticket attributes like priority, state and custom
-attributes as well as an article with an answer to the customer.
+Um einen Entwurf mit anderen Agenten Ihrer Gruppe zu teilen, z.B. um einem
+Qualitätssicherungsprozess zu entsprechen, anstatt "nur" einen internen
+Artikel hinzuzufügen. In einen solchen Entwurf können Sie sogar geänderte
+Ticket-Attribute wie Priorität, Status und benutzerdefinierte Attribute
+sowie einen Artikel mit einer Antwort an den Kunden aufnehmen.
 
-This is an optional feature. If you can't see it, your admin has turned it
-off.
+Dies ist eine optionale Funktion. Wenn Sie sie nicht sehen können, hat Ihr
+Administrator sie ausgeschaltet.
 
-**How?**
+**Wie? **
 
-To **save a draft**, use the `︙` menu in the footer of the ticket details
-view and select "Save as draft".
+Zum **Speichern eines Entwurfs** verwenden Sie das `︙` Menü in der Fußzeile
+der Ticket-Detailansicht und wählen "Als Entwurf speichern".
 
-To **apply an already existing draft**, click on the `Draft Available`
-button on the left side of the footer.
+Um **einen bereits vorhandenen Entwurf zu übernehmen**, klicken Sie auf die
+Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile.
 
 ::: warning
-Applying a draft overwrites your unsaved changes!
+Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!
 :::
 
-## Simultaneous Work Detection
+## Erkennung gleichzeitige Ticketbearbeitung
 
-![Screenshot shows other agents viewing/editing the
-ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
+![Screenshot zeigt andere Agenten, die das Ticket gerade
+sehen/bearbeiten](/screenshots/advanced-features/simultaneous-work-detection.png)
 
-**Why?**
+**Warum?**
 
-Things to avoid:
+Dinge, die man vermeiden sollte:
 
-- Superfluous work
-- Conflicting answers from different agents
-- Overwritten/undone changes by different agents
+- Überflüssige Arbeit
+- Widersprüchliche Antworten von verschiedenen Agenten
+- Überschriebene/zurückgenommene Änderungen durch verschiedene Agenten
 
-This is why you can immediately see who views and edits the currently viewed
-ticket.
+Deshalb können Sie sofort sehen, wer das aktuell angezeigte Ticket ansieht
+und bearbeitet.
 
-**How?**
+**Wie? **
 
-Have a look at the footer bar in the ticket detail view. When there is an
-avatar from another agent (see screenshot above), you are not the only one
-viewing this ticket.
+Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des
+Tickets. Wenn dort ein Avatar eines anderen Agenten zu sehen ist (siehe
+Screenshot oben), sind Sie nicht der einzige, der dieses Ticket betrachtet.
 
-Depending on the additional icon and if the avatar icon is faded, it means:
+Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
 
-- Another agent is viewing the ticket (not faded avatar without additional
-  icon)
-- Another agent opened the ticket but is currently not actively viewing this
-  ticket (faded avatar icon with the snooze icon, see left avatar in
-  screenshot)
-- Another agent is currently actively working on this ticket (not faded
-  avatar icon with a pencil icon, see right avatar in screenshot)
-
-
-## Bulk Actions
-
-TODO after overview bulk action implementation
-
-**Why?**
-
-**How?**
-
-Via drag & drop Via drop down selectors
-
-## Merge Tickets
-
-![Screenshot shows the ticket merge side
-panel](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
-
-**Why?**
-
-If you have two or more tickets about the same issue, you may want to merge
-those tickets into one. This might be the case if a customer sends you a new
-email which can't be assigned to the existing ticket (e.g. the ticket
-reference is missing because the customer sends you a completely new email
-instead of answering in the existing thread).
-
-Merging a ticket migrates all messages and notes of the ticket from where
-you select the merging into the selected one.
-
-**How?**
-
-Go to the ticket you want to merge into another one. In the ticket sidebar,
-use the `︙` menu and select `Merge`. This opens a side panel in which you
-can select a ticket by clicking on it or enter a ticket number in search
-field.  When you selected a target ticket, confirm by using the `Merge`
-button at the bottom.
-
-As result, the articles are moved into the chosen ticket. The ticket in
-which you executed the merge still exists with the following changes:
-
-- The articles have been replaced by a "merged" label
-- The state has changed to "merged"
-- The ticket is linked to its "parent" ticket
+- Ein anderer Agent sieht sich das Ticket an (nicht abgedunkelter Avatar
+  ohne zusätzliches Icon)
+- Ein anderer Agent hat das Ticket geöffnet, ist aber momentan nicht aktiv
+  mit dem Ticket beschäftigt (abgedunkelter Avatar mit einem Schlummer-Icon,
+  siehe linker Avatar im Screenshot)
+- Ein anderer Agent arbeitet gerade aktiv an diesem Ticket (nicht
+  abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im
+  Screenshot)
 
 
-## Split Ticket
+## Mehrfach-Aktionen
 
-![Screenshot shows the article action split
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
+TODO nach der Implementierung von Mehrfach-Aktionen in Übersichten
 
-**Why?**
+**Warum?**
 
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets. For example this might be the case
-if a customer has a technical question and wants to place an order.
+**Wie? **
 
-**How?**
+Per Drag & Drop Über Dropdown-Selektoren
 
-To split an article off, use the `︙` menu next to an article and select
-`Split`.
+## Tickets zusammenfassen
 
-This results in a ticket create screen with the same attributes set as in
-the initial ticket. The content of the article is also included. You can
-change everything to your needs and then click on `Create`.
+![Screenshot zeigt das Seiten-Panel zur
+Ticket-Zusammenführung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
 
-The just created ticket is linked in the original one as child. The original
-ticket is linked in the split off ticket as parent.
+**Warum?**
 
-## Link Tickets
+Wenn Sie zwei oder mehr Tickets zu demselben Problem haben, möchten Sie
+diese möglicherweise zu einem einzigen Ticket zusammenführen. Dies kann der
+Fall sein, wenn ein Kunde Ihnen eine neue E-Mail schickt, die nicht dem
+bestehenden Ticket zugeordnet werden kann (z.B. fehlt die Ticket-Referenz,
+weil der Kunde Ihnen eine völlig neue E-Mail schickt, anstatt auf die
+bestehende Kommunikation zu antworten).
 
-**Why?**
+Beim Zusammenfassen von Tickets werden alle Nachrichten und Notizen des
+Tickets, von dem Sie das Zusammenfassen ausgewählt haben, in das ausgewählte
+Ticket übernommen.
 
-When tickets about related issues arise, they can be linked to each other
-for easier reference. [Merged](#merge-tickets) and [split](#split-ticket)
-tickets are automatically linked.
+**Wie? **
 
-**How?**
+Gehen Sie zu dem Ticket, das Sie mit einem anderen zusammenführen
+möchten. Wählen Sie in der Seitenleiste des Tickets im `︙` Menü
+`Zusammenfassen`. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
+Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
+eingeben können.  Wenn Sie ein Ticket ausgewählt haben, bestätigen Sie es
+mit der Schaltfläche `Zusammenfassen` am unteren Rand.
 
-In the ticket sidebar, add a link to another ticket by clicking the `+`
-button in the "Links" section. This opens a side panel in which you can
-select a ticket by clicking on it or enter a ticket number in search
-field. Additionally, you can choose between different link types:
+Als Ergebnis werden die Artikel in das gewählte Ticket verschoben. Das
+Ticket, in dem Sie die Zusammenfassung durchgeführt haben, existiert
+weiterhin mit den folgenden Änderungen:
 
-- **Normal:** for related ticket which have no hierarchy.
-- **Parent/Child**: for related tickets where one is the main issue and the
-  other is a subtask. This link type is used by default if a tickets gets
-  split or merged.
+- Die Artikel wurden durch ein `merged` Label ersetzt
+- Der Status hat sich auf "zusammengefasst" geändert
+- Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
+
+
+## Ticket Abspalten
+
+![Screenshot zeigt das Menü zur Abspaltung eines
+Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
+
+**Warum?**
+
+Wenn Sie ein Ticket haben, bei dem es um mehr als ein Problem geht, möchten
+Sie es vielleicht in zwei oder mehr separate Tickets aufteilen. Dies kann
+zum Beispiel der Fall sein, wenn ein Kunde eine technische Frage hat und
+eine Bestellung aufgeben möchte.
+
+**Wie? **
+
+Um einen Artikel abzuspalten, benutzen Sie das Menü `︙` an dem Artikel und
+wählen Sie `Abspalten`.
+
+Im Ergebnis sehen Sie die Ansicht zum Erstellen eines Tickets mit denselben
+Attributen wie im ursprünglichen Ticket. Der Inhalt des Artikels ist
+ebenfalls enthalten. Sie können alles nach Ihren Wünschen ändern und dann
+auf `Erstellen` klicken.
+
+Das soeben erstellte Ticket ist im ursprünglichen Ticket als "Kind"-Ticket
+verlinkt. Das ursprüngliche Ticket ist im abgespaltenen Ticket als
+"Eltern"-Ticket verknüpft.
+
+## Tickets verknüpfen
+
+**Warum?**
+
+Wenn Tickets zu verwandten Themen auftauchen, können sie zur einfacheren
+Auffindbarkeit und Referenz miteinander verknüpft
+werden. [Zusammengefasste](#tickets-zusammenfassen) und
+[abgespaltene](#ticket-abspalten) Tickets werden automatisch verknüpft.
+
+**Wie? **
+
+Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
+hinzu, indem Sie auf die Schaltfläche `+` im Abschnitt "Links"
+klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein Ticket durch
+Anklicken auswählen oder eine Ticketnummer in das Suchfeld eingeben
+können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
+
+- **Normal:** für verwandte Tickets, die keine Hierarchie haben.
+- **Eltern/Kinder**: für verwandte Tickets, von denen eines das Hauptthema
+  und das andere eine Unteraufgabe ist. Dieser Verknüpfungstyp wird
+  standardmäßig verwendet, wenn ein Ticket geteilt oder zusammengefasst
+  wird.

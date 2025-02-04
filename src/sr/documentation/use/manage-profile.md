@@ -27,19 +27,19 @@ popover](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)
   your avatar, password, notification settings and much more, see next
   section.
 
-## Profile Settings
+## Подешавање профила
 
 In your profile settings, you can adjust things concerning your account and
 your personal settings. Some of the options may not be available for you,
 depending on how your system is configured and your permissions.
 
-### Appearance
+### Изглед
 
 Change the appearance of Zammad. Available options:
 
-- Dark mode
+- Тамни изглед
 - Light mode
-- Sync with computer
+- Синхронизуј са рачунаром
 
 The last option tries to detect your browser's preference. It depends on
 your web browser. If it doesn't work, you can choose one of the other
@@ -55,7 +55,7 @@ simply pressing <kbd>d</kbd>.
 
 Choose your preferred language of Zammad.
 
-### Avatar
+### Аватар
 
 In this section, you can adjust your avatar image. By default, the initials
 of your user are displayed on a colored background. If you want to add an
@@ -74,18 +74,18 @@ to existing ones while you're away. Additionally, your custom overviews are
 available for this agent to keep track of your tickets. You receive
 notifications while you are absent, too.
 
-### Password
+### Лозинка
 
 Change the password of your account. Update it by entering your old
 password, the new password and confirm the new one by entering it again.
 
-### Devices
+### Уређаји
 
 Here you can find a list of all devices logged into your Zammad account.  If
 necessary, you can revoke the access by clicking the delete icon in the
 "Actions" column.
 
-### Token Access
+### Приступ путем кључа
 
 Generate a personal access token for a third party application to access the
 Zammad API. After clicking the **New Personal Access Token** button, you can
@@ -114,7 +114,7 @@ to do that. Usually there is an icon in the address bar where you can adjust
 the permissions of the site.
 :::
 
-### Overviews
+### Прегледи
 
 Change the order of overviews for your account. Simply drag & drop them by
 clicking the handles on the left side.

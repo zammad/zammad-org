@@ -139,7 +139,7 @@ our [installation guide](/en/tutorials/install-elasticsearch).
 
 #### Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type="warning" text="only ES7" />
 
-List installed elasticsearch plugins:
+Листа инсталираних Elasticsearch додатака:
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
 ```

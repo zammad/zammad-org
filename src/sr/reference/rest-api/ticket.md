@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Ticket
+title: Тикет
 ---
 
-# Ticket
+# Тикет
 
 :::warning
 Ticket endpoints depend on group permissions and if the user you're

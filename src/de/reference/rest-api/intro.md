@@ -135,31 +135,31 @@ und `page`. Kombinieren Sie sie, um 5 Ergebnisse von der ersten
 Ergebnisseite zu erhalten: `?page=1&per_page=5`. Erhöhen Sie die Seitenzahl,
 um mehr Ergebnisse zu erhalten.
 
-## Search via API
+## Suche per API
 
-### Endpoint Search
+### Endpunkt Suche
 
-Some endpoints support a search query. These are:
+Einige Endpunkte unterstützen eine Suchanfrage. Diese sind:
 
-- `Groups <group>`
-- `Organizations <organization>`
-- `Roles <role>`
+- `Gruppen <group>`
+- `Organisationen <organization>`
+- `Rollen <role>`
 - `Tickets <ticket>`
-- `Users <user>`
+- `Benutzer <user>`
 
-The following endpoints support a search query as well, but they are not
-explicitly covered in this documentation:
+Die folgenden Endpunkte unterstützen ebenfalls eine Suchanfrage, werden aber
+in dieser Dokumentation nicht explizit behandelt:
 
-- Chat Sessions
+- Chat-Sitzungen
 - Knowledgebase
-- Macros
-- Overview
-- Templates
-- Text module
+- Makros
+- Übersicht
+- Vorlagen
+- Textbaustein
 
-#### Search Example
+#### Beispiel für eine Suche
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome`
+`GET`-Request gesendet: `/api/v1/tickets/search?query=welcome`
 
 ::: details Show response
 <<< @/fixtures/rest-api/intro/get-basic-search.json
@@ -167,10 +167,11 @@ explicitly covered in this documentation:
 
 #### Expand Parameter
 
-If you want to have additional related information, you can use the `expand`
-parameter. Using it resolves the IDs and outputs values/names in addition.
+Wenn Sie zusätzliche erweiterte Informationen wünschen, können Sie den
+Parameter `expand` verwenden. Mit ihm werden die IDs aufgelöst und
+zusätzlich Werte/Namen ausgegeben.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`
+`GET`-Request gesendet: `/api/v1/tickets/search?query=welcome&expand=true`
 
 ::: details Show response
 <<< @/fixtures/rest-api/intro/get-expand-search.json
@@ -178,11 +179,12 @@ parameter. Using it resolves the IDs and outputs values/names in addition.
 
 #### Full Parameter
 
-You can even extend the response by using the `full` parameter. Be aware
-that this response can be huge. It outputs all assets including related
-attributes and a `total_count` of search results as well.
+Sie können die Antwort sogar noch erweitern, indem Sie den Parameter `full`
+verwenden. Seien Sie sich bewusst, dass diese Antwort sehr umfangreich sein
+kann. Sie gibt alle Assets aus, einschließlich der zugehörigen Attribute und
+einer `total_count` genannten Gesamtzahl der Suchergebnisse.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`
+`GET`-Request gesendet: `/api/v1/tickets/search?query=welcome&full=true`
 
 ::: details Show response
 <<< @/fixtures/rest-api/intro/get-full-search.json
@@ -191,48 +193,51 @@ attributes and a `total_count` of search results as well.
 
 #### Only Total Count Parameter
 
-Using this `only_total_count` parameter will output only the amount of
-search results.
+Mit dem Parameter `only_total_count` wird nur die Anzahl der Suchergebnisse
+ausgegeben.
 
-`GET`-Request sent:
+`GET`-Request gesendet:
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
 ::: details Show response
 <<< @/fixtures/rest-api/intro/get-total-count.json
 :::
 
-### Global Search
+### Globale Suche
 
-If you need to search not only in a specific object type, you can do so by
-using the global search without specifying an object. The response may
-include users, tickets, organizations, knowledgebase articles and answers
-and chats, depending on your system and content. This global search behaves
-like the search in Zammad's UI in the left task bar. The available
-parameters are different to the ones for the endpoint search.
+Wenn Sie nicht nur in einem bestimmten Objekttyp suchen möchten, können Sie
+dies mit der globalen Suche ohne Angabe eines Objekts tun. Die Antwort kann
+Benutzer, Tickets, Organisationen, Knowledgebase-Artikel und -Antworten
+sowie Chats umfassen, je nach System und Inhalt. Diese globale Suche verhält
+sich wie die Suche in Zammads UI in der linken Taskleiste. Die verfügbaren
+Parameter unterscheiden sich von denen der Endpunktsuche.
 
-`GET`-Request sent: `/api/v1/search?query=welcome`
+`GET`-Request gesendet: `/api/v1/search?query=welcome`
 
 ::: details Show response
 <<< @/fixtures/rest-api/intro/get-global-search.json
 :::
 
-### Condition Based Search
+### Bedingungsabhängige Suche
 
-You can even use conditions like for triggers and schedulers to search via
-API. If you don't want to build such conditions manually, you can find a
-hint below how to quickly build a condition structure via UI and fetch it
-for you API request.
+Sie können sogar Bedingungen wie in Triggern und Automatisierungen
+verwenden, um über die API zu suchen. Wenn Sie solche Bedingungen nicht
+manuell erstellen möchten, finden Sie unten einen Hinweis, wie Sie schnell
+eine Bedingungsstruktur über die Benutzeroberfläche erstellen und für Ihre
+API-Anfrage abrufen können.
 
-So, how do I build such a condition based request?
+Wie kann ich also eine solche bedingungsabhängige Anfrage erstellen?
 
-- In Zammad, go to the admin interface and create a condition, e.g. by
-  creating a new overview or trigger. It can be inactive so you won't have
-  any unwanted actions or changes.
-- Go to the `Rails console </admin/console>`, either by using `rails c` /
-  `zammad run rails c` or adding the prefix `rails r` / `zammad run rails r`
-  in front of the commands below, depending on your setup.
-- Search for the created condition, adjust the following examples to your
-  needs:
+- Rufen Sie in Zammad die Verwaltungsoberfläche auf und erstellen Sie eine
+  Bedingung, z.B. indem Sie eine neue Übersicht oder einen neuen Trigger
+  erstellen. Die erstellte Logik kann inaktiv sein, damit keine unerwünschte
+  Aktion oder Änderung ausgeführt wird.
+- Rufen Sie die `Rails-Konsole </admin/console>` auf, indem Sie entweder
+  `rails c` / `zammad run rails c` verwenden oder den Präfix `rails r` /
+  `zammad run rails r` vor den unten stehenden Befehlen hinzufügen, abhängig
+  von Ihrem Setup.
+- Suchen Sie nach der erstellten Bedingung, passen Sie die folgenden
+  Beispiele an Ihr Szenario an:
 
 ``` ruby
 puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json
@@ -242,14 +247,15 @@ puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to
 puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json
 ```
 
-This leads to an output like the following:
+Dies führt zu einer Ausgabe wie der folgenden:
 
 ::: details Show output
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 
-Use this as payload in your `POST`-Request in an endpoint search. The
-response includes the same objects as the trigger or overview you created.
+Verwenden Sie dies als Payload in Ihrem `POST`-Request in einer
+Endpunktsuche. Die Antwort enthält die gleichen Objekte wie der Trigger oder
+die Übersicht, die Sie erstellt haben.
 
 ## Sortierung der Suchergebnisse
 
@@ -295,7 +301,7 @@ bei der Verwendung von URLs mit Get-Optionen (z. B. `?query=this`) Ihre URL
 entsprechend kodieren müssen.
 
 Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
-Wikipedia-Artikel] (https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
+Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
 sein
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

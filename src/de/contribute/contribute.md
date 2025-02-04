@@ -21,16 +21,16 @@ Alle Repos sind auf [Github](https://github.com/zammad) zu finden.
 
 ## Zammad Quellcode
 
-Der Quellcode von Zammad ist auf GitHub im [Zammad Repository]
-(https://github.com/zammad/zammad) zu finden.
+Der Quellcode von Zammad ist auf GitHub im [Zammad
+Repository](https://github.com/zammad/zammad) zu finden.
 
-Werfen Sie einen Blick in das [Entwicklerhandbuch]
-(https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md),
+Werfen Sie einen Blick in das
+[Entwicklerhandbuch](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md),
 um loszulegen.
 
 ### Unterstützte Branches / Versionen
 
-Das Haupt-[Zammad-Repository] (https://github.com/zammad/zammad) auf Github
+Das Haupt-[Zammad-Repository](https://github.com/zammad/zammad) auf Github
 hat mehrere Branches.
 
 #### `develop`
@@ -39,16 +39,16 @@ hat mehrere Branches.
   Hauptversion (dieser wird zum neuen `stable`-Branch).
 * Verwenden Sie das nicht für den Produktiv-Betrieb!
 * Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
-  [Security Policy]
-  (https://github.com/zammad/zammad/blob/develop/SECURITY.md).
+  [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
 #### `stable`
 
 * Dies ist die aktuelle stabile Version, z.B. Zammad 5.2.
 * Verwenden Sie diese für den Produktiv-Betrieb.
 * Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
-  [Security Policy]
-  (https://github.com/zammad/zammad/blob/develop/SECURITY.md).
+  [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
 
 #### `stable-x.y`
 
@@ -108,17 +108,17 @@ willkommen! Die Übersetzung von Zammad selbst und der Dokumentation erfolgt
 mit Hilfe von Weblate, einem Dienst für die gemeinschaftliche Übersetzung
 von Projekten.
 
-Sie müssen dazu nur zu Zammads [Weblate-Instanz]
-(https://translations.zammad.org/) gehen.  Sie können entweder ein Konto
-erstellen (falls Sie noch keines haben) oder sich sogar mit Ihrem
-Github-Konto anmelden!
+Sie müssen dazu nur zu Zammads
+[Weblate-Instanz](https://translations.zammad.org/) gehen.  Sie können
+entweder ein Konto erstellen (falls Sie noch keines haben) oder sich sogar
+mit Ihrem Github-Konto anmelden!
 
 In den folgenden Abschnitten werden wir einige grundlegende Schritte
 behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch
 einige zusätzliche Funktionen von Weblate nutzen und tiefer eintauchen
-möchten, ist deren [Übersetzungsdokumentation]
-(https://docs.weblate.org/en/latest/user/translating.htm) ein guter
-Ausgangspunkt.
+möchten, ist deren
+[Übersetzungsdokumentation](https://docs.weblate.org/en/latest/user/translating.htm)
+ein guter Ausgangspunkt.
 
 ### Grundlagen
 

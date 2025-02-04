@@ -51,7 +51,7 @@ information!
 
 ### Freshdesk
 
-#### Limitations
+#### Ограничења
 
 Please note Freshdesk specific limitations below. These are additional
 limitations to the general ones listed.
@@ -328,7 +328,7 @@ methods like LDAP or one click logins.
 
 ### OTRS
 
-#### Limitations
+#### Ограничења
 
 Additional limitations to the general one:
 
@@ -481,7 +481,7 @@ Rails.cache.clear
 
 ### Zendesk
 
-#### Limitations
+#### Ограничења
 
 Additional limitations to the general one:
 

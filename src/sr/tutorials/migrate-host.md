@@ -44,7 +44,7 @@ interface under *System > Maintenance*.
 The restore script starts Zammad automatically, this may help to avoid data
 loss and inconsistencies.
 
-## Step 5: Stop and Disable Zammad
+## Корак 5: Зауставите и искључите Zammad
 
 Make sure that no data will be changed *before* backing up.
 

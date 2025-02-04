@@ -261,9 +261,10 @@ Erforderliche Berechtigung: `admin.object`
 Erforderliche Berechtigung: `admin.object`
 
 ::: warning
-Nach der Durchführung der Datenbankmigrationen ist ein Neustart von Zammad
-*zwingend* erforderlich. Wenn konfiguriert, kann Zammad auch automatisch neu starten (dies
-ist der Fall bei gehosteten Umgebungen) - rechnen Sie mit einer kurzen Ausfallzeit.
+After executing the database migrations, a restart of Zammad is
+*mandatory*. If not deactivated via
+[auto shutdown setting](/en/reference/console#auto-shutdown-setting),
+Zammad automatically restarts - expect a short downtime.
 :::
 
 `POST`-Anfrage gesendet:

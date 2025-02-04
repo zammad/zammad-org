@@ -298,14 +298,14 @@ Be aware that you are running these scripts at your own risk.
 
 ### Database Helper: (Re)set Password
 
-#### Limitations
+#### Ограничења
 
 - This script is working for PostgreSQL installations only.
 - Only local database servers are supported (script changes user).
 - This script requires to be run as `root` or similar privileged user.
 - Be aware that the script will automatically stop and start Zammad!
 
-#### Scopes
+#### Опсези
 
 The scope of this script are mostly package installations and especially
 CentOS and SUSE operating systems. It might work on source code /
@@ -323,7 +323,7 @@ the situation. It will ask for your confirmation before performing actions.
 - If `database.yml` contains a password, it will be used to set the password
   of the Zammad database user.
 
-#### Usage
+#### Употреба
 
 Run the script with the command below and follow the instructions. No
 specific configuration is required.

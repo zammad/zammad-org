@@ -91,34 +91,34 @@ Sie die Konsole der Browser-Version vorziehen.
 
 ::::tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](./webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nach der Installation von Zammad und der
+[Konfiguration des Webservers](./webserver-config) rufen Sie
+den FQDN in Ihrem Browser auf und folgen dem Migrations-Assistenten. Sie finden
+diesen im Login-Screen, indem Sie auf den Link "Oder migrieren Sie von einem anderen System"
+unten klicken.
 
-Depending on the number of users, tickets and Freshdesk plan this may take a
-while.
+Abhängig von der Anzahl der Benutzer, Tickets und Ihres Freshdesk-Plans kann dies
+eine Weile dauern.
 
-Seeing the message "*Interrupted by scheduler restart. Please restart manually
+Sehen Sie die Meldung "*Interrupted by scheduler restart. Please restart manually
 or wait till next execution time.*"?
 
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben haben, haben Sie
+bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.
 
-If you receive above message after the migration begun, please consider using
-the console approach instead and reset the installation.
+Falls Sie diese Meldung erscheint, nachdem die Migration bereits begonnen hat, sollten Sie
+es per Konsole versuchen und Ihre Installation zurücksetzen.
 
-=== Via Console
+=== Per Konsole
 
-Open console:
+Konsole öffnen:
 
 ```sh
 zammad run rails c
 ```
-Set variables:
+Variablen angeben:
 
 ```sh
 subdomain = '{freshdesk subdomain}.freshdesk.com'
@@ -126,7 +126,7 @@ subdomain = '{freshdesk subdomain}.freshdesk.com'
 ```sh
 token = '{freshdesk token}'
 ```
-Update Zammad settings for freshdesk import:
+Zammad-Einstellungen für Freshdesk-Import aktualisieren:
 ```sh
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
 ```
@@ -140,12 +140,12 @@ Setting.set('import_backend', 'freshdesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Prüfen Sie die Einstellungen in einem Testlauf:
 ```sh
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
-Run the migration:
+Auführen der Migration:
 
 ```sh
 job = ImportJob.create(name: 'Import::Freshdesk')
@@ -510,8 +510,7 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 #### Voraussetzungen
 
 Zammad erfordert einen API-Zugang, weshalb Sie für die Migration einen
-[API-Schlüssel]
-(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token)
+[API-Schlüssel](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token)
 erstellen müssen. Die Migration wird Ihre Zendesk-URL, Ihre E-Mail-Adresse
 und Ihren API-Schlüssel abfragen.
 

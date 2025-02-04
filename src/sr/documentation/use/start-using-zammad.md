@@ -63,7 +63,7 @@ Active sidebar
 The navigation sidebar is your central place to access all main parts of
 Zammad.  It includes:
 
-- Search bar
+- Трака претраге
 - Notifications
 - Overview section
 - Chat (if activated)
@@ -80,7 +80,7 @@ Zammad immediately saves your current work progress, so you can easily
 switch between the different areas of Zammad and you don't have to be afraid
 of loosing any data like a not yet sent answer in a ticket.
 
-## Finding Tickets
+## Проналажење тикета
 
 There are different ways to find tickets, depending on your use case.
 
@@ -260,7 +260,7 @@ client. Except that you have some additional attributes you can set in the
   than one team. Depending on the permissions, you might not see the ticket
   after changing the group and saving the changes.
 
-### Ticket Detail View
+### Детаљни приказ тикета
 
 Now that you are aware about some attributes, let's have a look at the
 ticket detail view.

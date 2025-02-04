@@ -112,8 +112,8 @@ haben (siehe
 unterstützte Versionen).
 
 Wenn Sie Elasticsearch aktualisieren müssen, werfen Sie bitte einen Blick
-auf [deren Dokumentation]
-(https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
+auf [deren
+Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
 und folgen Sie den Anweisungen.
 
 Falls Sie Plugins für Elasticsearch verwenden, stellen Sie sicher, dass

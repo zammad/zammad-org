@@ -347,7 +347,7 @@ Get current FQDN:
 ```ruby
 Setting.get('fqdn')
 ```
-Set a new FQDN:
+Подесите нови FQDN:
 ```ruby
 Setting.set('fqdn', 'new.domain.tld')
 ```
@@ -413,7 +413,7 @@ The following settings are available in a default installation:
 If your Elasticsearch installation changes, you can use the following
 commands to ensure that Zammad still can access Elasticsearch.
 
-Change elasticsearch URL:
+Промените Elasticsearch URL:
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```

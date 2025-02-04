@@ -230,8 +230,8 @@ CREATE DATABASE
 ## Fehlerbehebung Sicherung & Wiederherstellung
 
 Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
-nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad Community]
-(https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5),
+nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5),
 um nach Unterstützung zu fragen.
 
 ### Exit Codes

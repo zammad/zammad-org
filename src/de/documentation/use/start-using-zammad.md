@@ -1,293 +1,311 @@
 ---
 order: 2
-title: 'Start with Zammad'
+title: 'Mit Zammad starten'
 ---
 
-# Start with Zammad
+# Mit Zammad starten
 
-## User Interface
+## Benutzeroberfläche
 
 ### Allgemein
 
-The user interface (UI) of Zammad is designed to provide an intuitive
-experience for users. It is built around the concept of simplicity, clarity,
-and accessibility.
+Die Benutzeroberfläche (User Interface, UI) von Zammad ist so konzipiert,
+dass Benutzer sie intuitiv nutzen können. Sie ist nach den Prinzipien
+Einfachheit, Klarheit und Zugänglichkeit aufgebaut.
 
-There are basic modular components for different features to keep the UI
-consistent. These components are described in [UI
-Elements](#main-ui-elements) as well as [Navigating](#navigating) below.
+Es gibt grundlegende modulare Komponenten für verschiedene Funktionen, um
+die Benutzeroberfläche einheitlich zu halten. Diese Komponenten werden unter
+[UI-Elemente](#main-ui-elements) sowie unter [Navigation](#navigating)
+beschrieben.
 
-Depending on the currently opened screen, there are interactive components,
-such as tooltips and a contextual help. Use them wherever needed.
+Abhängig von der aktuell geöffneten Ansicht gibt es interaktive Komponenten
+wie Tooltips und eine kontextbezogene Hilfe. Verwenden Sie diese bei Bedarf.
 
-In any case, the UI is based on common software design principles and is
-mostly self explanatory.
+In jedem Fall basiert die Benutzeroberfläche auf gängigen
+Software-Design-Prinzipien und ist weitgehend selbsterklärend.
 
-### Main UI Elements
+### Haupt UI-Elemente
 
-![Screenshot shows a ticket detail
-view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
+![Screenshot zeigt eine
+Ticket-Detailansicht](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
 
-The screenshot above shows a ticket detail view in Zammad. Read on for a
-description of the different main elements of Zammad.
+Der Screenshot oben zeigt eine Ticket-Detailansicht in Zammad. Lesen Sie
+weiter, um eine Beschreibung der verschiedenen Elemente von Zammad zu
+erhalten.
 
-Navigation sidebar
-: This is the left sidebar which includes the search, notifications, overviews,
-  ticket tabs, your avatar and the ticket create button.
+Navigations-Seitenleiste
+: Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,
+  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.
 
-Navigation tab
-: Each item of the navigation sidebar is called navigation tab. Depending on the
-  content, it can be a ticket tab (with the ticket detail view) or the overview
-  tab which opens the list of available overviews.
+Navigations-Tab
+: Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach
+  Inhalt kann es ein Ticket-Tab sein (mit der Ticket-Detailansicht) oder der Übersichten-
+  Tab sein, der die Liste der verfügbaren Übersichten öffnet.
 
-Ticket detail view
-: This is where you handle your customer requests. It is located in the middle
-  of the screen if a ticket tab is selected in the navigation sidebar.
+Ticket-Detailansicht
+: Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte
+  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.
 
-Sidebar
-: This is the right sidebar in the ticket detail view. It contains sidebar
-  tabs like customers and checklists and displays the currently selected tab.
+Seitenleiste
+: Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs
+  wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.
 
-Sidebar tabs
-: On the right side of the sidebar, you can find small icons to switch between
-  the different tabs. The availability of these tabs depends on your system
-  configuration, your permissions and the ticket attributes (e.g. if the
-  ticket customer has an assigned organization).
+Seitenleisten-Tabs
+: Auf der rechten Seite der Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen
+  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,
+  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der
+  Ticket-Kunde eine zugewiesene Organisation hat).
 
-Active sidebar
-: The selected sidebar tab. Displays the content of the tab. It can show things
-  like customer sidebar, organization sidebar, checklist sidebar and more.
+Aktive Seitenleiste
+: Der ausgewählte Seitenleisten-Tab. Zeigt den Inhalt des Tabs an. Sie kann Dinge beinhalten
+  wie die Kunden-, Organisationns- oder Checklisten-Seitenleiste und mehr.
 
-### Navigating
+### Navigieren
 
-The navigation sidebar is your central place to access all main parts of
-Zammad.  It includes:
+Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen
+Bereiche von Zammad zuzugreifen.  Sie umfasst:
 
-- Search bar
-- Notifications
-- Overview section
-- Chat (if activated)
-- Phone (if activated)
-- Ticket tabs
-- Avatar with menu
-- Settings (if you have permissions)
-- Ticket create button
+- Suchleiste
+- Benachrichtigungen
+- Übersichten
+- Chat (falls aktiviert)
+- Telefon (falls aktiviert)
+- Ticket Tabs
+- Avatar mit Menü
+- Einstellungen (wenn Sie die entsprechenden Rechte haben)
+- Ticket erstellen Schaltfläche
 
-The main navigation in Zammad is done in this sidebar. It is always visible
-and you can switch between ticket, overviews and the search, for example.
+Die Hauptnavigation in Zammad findet in dieser Seitenleiste statt. Sie ist
+immer sichtbar und Sie können z.B. zwischen Ticket, Übersichten und der
+Suche wechseln.
 
-Zammad immediately saves your current work progress, so you can easily
-switch between the different areas of Zammad and you don't have to be afraid
-of loosing any data like a not yet sent answer in a ticket.
+Zammad speichert Ihren aktuellen Arbeitsfortschritt sofort, so dass Sie
+leicht zwischen den verschiedenen Bereichen von Zammad wechseln können und
+keine Angst haben müssen, Daten zu verlieren, z.B. eine noch nicht
+abgeschickte Antwort in einem Ticket.
 
-## Finding Tickets
+## Tickets finden
 
-There are different ways to find tickets, depending on your use case.
+Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig vom
+Anwendungsfall.
 
-### Via Overviews
+### Über Übersichten
 
-If you search for new tickets to work on, your first look should be in
-the overview section. You can either open it by clicking the **Overviews**
-button in the navigation bar or use the keyboard shortcut <kbd>o</kbd>.
-You can see overviews as a kind of ticket lists.
+Wenn Sie nach neuen Tickets suchen, an denen Sie arbeiten möchten, sollten Sie zuerst einen Blick
+in die Übersichten werfen. Sie können ihn entweder durch Klicken auf die Schaltfläche **Übersichten**
+in der Navigationsleiste oder das Tastaturkürzel <kbd>o</kbd>  öffnen.
+Sie können Übersichten als eine Art Ticket-Listen betrachten.
 
-By default, there are some built in overviews, you can use. For example,
-there is an overview called "Open Tickets". This might be a good starting
-point.  Your Zammad admin may have created additional overviews. These are
-based on conditions, which are basically rules, to define which ticket
-appears in which overview.
+Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
+können. Zum Beispiel gibt es eine Übersicht namens "Offene Tickets". Dies
+könnte ein guter Ausgangspunkt sein.  Ihr Zammad-Administrator hat
+möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf
+Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht
+erscheint.
 
-You can adjust the order by clicking on one of the column headers as well as
-change their width by dragging the column dividers.
+Sie können die Reihenfolge anpassen, indem Sie auf einen der Kopfzeilen der
+Spalten klicken, und die Breite der Spalten ändern, indem Sie die
+Spaltentrennlinien verschieben.
 
-To visualize different ticket states and priorities, the entries are color
-coded. The **state** is represented by a circle:
+Zur Hervorhebung der verschiedenen Status und Prioritäten von Tickets sind
+die Einträge farblich gekennzeichnet. Der **Status** wird durch einen Kreis
+dargestellt:
 
-- Closed: green
-- Merged: green
-- Pending: grey/black
-- New/open: yellow
-- Escalated: red
+- Geschlossen: grün
+- Zusammengefasst: grün
+- Warten auf: grau/schwarz
+- Neu/offen: gelb
+- Eskaliert: rot
 
-The **priority** is represented by colored text:
+Die **Priorität** wird durch farbigen Text dargestellt:
 
-- 3 - high: red
-- 2 - normal: blue
-- 1 - low: light blue
+- 3 - hoch: rot
+- 2 - normal: blau
+- 1 - niedrig: hellblau
 
-### Via Search
+### Über die Suche
 
-However, if you search for a specific ticket which might or might not be
-visible in the overviews, you can use the search. You can find it in the top
-left corner in the navigation bar. Either select it via mouse or use the
-keyboard shortcut by simply pressing <kbd>s</kbd>.
+Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten sichtbar sein kann oder auch nicht,
+können Sie die Suche verwenden. Sie finden diese in der oberen
+linken Ecke in der Navigations-Seitenleiste. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das
+Tastaturkürzel, indem Sie einfach <kbd>s</kbd> drücken.
 
-The search covers:
+Die Suche umfasst:
 
-- Message subject and text
-- Names and email addresses
-- Text in file attachments
-- User and organizations details (like notes, names, etc.)
+- Betreff und Text der Nachricht
+- Namen und E-Mail-Adressen
+- Text in Dateianhängen
+- Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-When you enter a search term, you immediately see a preview of the search
-results. If you press enter or click on "Show Search Details", Zammad
-displays a page with search results. There you can differentiate by object
-type (e.g.  customer), what you are searching.
+Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der
+Suchergebnisse. Wenn Sie die Eingabetaste drücken oder auf "Suchdetails
+anzeigen" klicken, zeigt Zammad eine Seite mit Suchergebnissen an. Dort
+können Sie den Objekttyp (z.B. Benutzer) bei Ihrer Suche berücksichtigen.
 
-Are you a power user and want to have more powerful feature? Have a look at
-the "Advanced search" block below.
+Sie sind ein fortgeschrittener Benutzer und möchten mehr Funktionen haben?
+Werfen Sie einen Blick auf den Bereich "Erweiterte Suche" unten.
 
 ::: details Advanced search
 
-You can narrow down your search results to specific attributes. Read on for
-some examples and explanations. For a more detailed list of available
-attributes please take a look at the
-[indexed attributes by Elasticsearch](/en/reference/es-indexed-attributes).
+Sie können Ihre Suche auf spezifische Attribute eingrenzen. Unten finden Sie
+einige Beispiele und Erklärungen. Um eine detailliertere Übersicht zu erhalten,
+schauen Sie sich bitte die [indizierten Attribute von Elasticsearch](/de/reference/es-indexed-attributes) an.
 
-**Example**:
+**Beispiel**:
 
-Search for a specific customer by using
+Suche nach einem spezifischen Kunden:
 `customer.attribute`:
 
 ```
 customer.firstname: John
 ```
 
-or:
+oder:
 
 ```
 customer.lastname: Doe
 ```
 
-If you want to run a more complex search, you can use conditions with
-`()` and `AND`/`OR` options:
+Wenn Sie eine komplexere Suche durchführen wollen, können Sie die einzelnen Konditionen mit
+`()` kapseln und and `AND`/`OR` Operatoren einbauen:
 
 ```
 state.name: open AND (article.from:me OR article.from:somebody)
 ```
 
-**Available Attributes**
+**Verfügbare Attribute**
 
-| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
-|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |
-| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |
-| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | You can either use a simple date, a date-range or \>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |
-| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |
-| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
-| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
-| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
+| Attribut      | Suche nach                            | Beispiel                                                                                       | Beschreibung                                                                                                                                                                                                                                                         |
+|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Suche nach einem Ticket                                                                                                                                                                                                                                              |
+| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | Falls Sie Leerzeichen in dem Suchtext haben, benutzen Sie Anführungszeichen. Zammad führt sonst eine AND-Suche aus. Sie können natürlich auch einzelne Wörter ohne Anführungzeichen verwenden.                                                                       |
+| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | Sie können ein einfaches Datum, einen Datumsbereich oder \>now-xh verwenden. Das Datum muss im Format YYYY-MM-DD eingegeben werden.                                                                                                                                  |
+| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | Sie können nach einzelnen Ticket-Status filtern (und diese sogar mit OR kombinieren). Beachten Sie, dass Sie die englischen Namen für Status verwenden müssen, sofern Sie keine selbst erstellten Status haben.                                                      |
+| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | Sie können nach Tickets mit einer konkreten Anzahl an Artikeln suchen (Sie können sogar nach allem mit mehr als 5 Artikel oder bis zu 5 Artikel suchen).                                                                                                             |
+| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Alle Tickets anzeigen, die Artikel von "Bob" enthalten.                                                                                                                                                                                                              |
+| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | Das erste Beispiel zeigt alle Tickets, die "heat" enthalten - Sie können sogar einen Fuzzy-Operator "~" verwenden, um nach ähnlichen Wörtern wie z.B. "head" zu suchen. Zammad erlaubt sogar die Verwendung regulärer Ausrücke, sofern das Attribut es unterstützt.  |
 
 
-**Combining Search Phrases**
+**Suchen kombinieren**
 
-You can combine search phrases by using `AND`, `OR` and `TO` and even
-separate them with `()`. If you want to exclude search results, you can use
-negation `!`.
+Sie können die Suche mit `AND`, `OR` und `TO` verknüpfen und diese sogar
+mit `()` verschachteln. Sofern Sie etwas von der Suche ausschließen wollen,
+verwenden Sie die Negierung mit `!`.
 
-| Search phrase                                                                               | Description                                                                                                       |
-|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(*Zammad*) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
-| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
-| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
+| Suche                                                                                       | Beschreibung                                                                                                             |
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Zeigt alle Tickets im Status geschlossen oder offen, die die Priorität normal haben oder ein Tag "feedback" enthalten.   |
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(*Zammad*) | Wie das obige Beispiel, jedoch ohne Zammad zu beinhalten                                                                 |
+| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Zeigt Tickets von <bob@example.net> welche offen oder neu sind                                                           |
+| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Zeigt alles mit einem "Warten auf" Status und einer Artikelanzahl zwischen 1 und 5.                                      |
 
 :::
 
-### Notifications
+### Benachrichtigungen
 
-Depending on the [notification
-settings](/en/documentation/use/manage-profile#notifications) in your
-profile, you receive updates for different ticket based events like the
-creation or the update of a ticket. This ensures that no important change to
-a ticket is overlooked.
+Abhängig von den
+[Benachrichtigungseinstellungen](/de/documentation/use/manage-profile#benachrichtigungen)
+in Ihrem Profil erhalten Sie Aktualisierungen für verschiedene
+ticketbasierte Ereignisse wie die Erstellung oder die Aktualisierung eines
+Tickets. So wird sichergestellt, dass keine wichtige Änderung an einem
+Ticket übersehen wird.
 
-You can open them by clicking on the notification counter in the top left
-corner. If there is a badge with a counter, the counter shows the number of
-unread notifications.
+Sie können sie öffnen, indem Sie auf den Benachrichtigungszähler in der
+oberen linken Ecke klicken. Wenn ein Label mit einem Zähler vorhanden ist,
+zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an.
 
-By default, you get notified when one of your tickets (means you are the
-owner) got updated. By clicking on the link in the notification, this ticket
-gets opened in the navigation sidebar as tab and the ticket detail view is
-displayed.
+Standardmäßig werden Sie benachrichtigt, wenn eines Ihrer Tickets (das
+heißt, Sie sind der Besitzer) aktualisiert wurde. Wenn Sie auf den Link in
+der Benachrichtigung klicken, wird dieses Ticket in der
+Navigations-Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird
+angezeigt.
 
-## Ticket Basics
+## Ticket-Grundlagen
 
 ### Einführung
 
-If you're completely new to a ticket system and handled your customer
-requests with an email client so far, you might think that a ticket system
-is complicated. But the opposite is the case:
+Wenn Sie ganz neu in Ticket-Systemen sind und Ihre Kundenanfragen bisher mit
+einem E-Mail-Client bearbeitet haben, denken Sie vielleicht, dass ein
+Ticket-System kompliziert ist. Aber das Gegenteil ist der Fall:
 
-- All emails are now collected in Zammad (and requests from other channels
-  might be as well).
-- You and your colleagues can see who is working on which customer request
-  ("ticket").
-- The state of each request as well as the history (who did what?) is
+- Alle E-Mails werden nun in Zammad gesammelt (und Anfragen aus anderen
+  Kanälen möglicherweise auch).
+- Sie und Ihre Kollegen können sehen, wer an welcher Kundenanfrage
+  ("Ticket") arbeitet.
+- Der Status jeder Anfrage sowie die Historie (wer hat was getan?) sind
   transparent.
-- There is no duplicate work and nothing gets overlooked.
-- You can ask your colleagues directly in the ticket for help in difficult
-  cases.
-- With Zammad's intuitive UI, you can focus on what matters: to resolve
-  customer issues and answer customer questions.
+- Es gibt keine doppelte Arbeit und nichts wird übersehen.
+- In schwierigen Fällen können Sie Ihre Kollegen direkt im Ticket um Hilfe
+  bitten.
+- Mit der intuitiven Benutzeroberfläche von Zammad können Sie sich auf das
+  Wesentliche konzentrieren: die Lösung von Kundenproblemen und die
+  Beantwortung von Kundenfragen.
 
-So, basically you can work with Zammad similar as with your email
-client. Except that you have some additional attributes you can set in the
-*Ticket* sidebar tab:
+Im Grunde können Sie mit Zammad also ähnlich wie mit Ihrem E-Mail Client
+arbeiten. Sie haben jedoch einige zusätzliche Attribute, die Sie im
+Seitenleisten-Tab *Ticket* einstellen können:
 
-- **State**: reflects the current state of a ticket (mainly if a customer
-  request is resolved or not). By default, there are the following states:
-    - **New**: State for new tickets on which no one has worked on. When
-      updating a ticket the first time, it automatically switches to *open*.
-    - **Open**: State for tickets which aren't resolved yet and some work
-      needs to be done.
-    - **Pending Close**: State for tickets which are basically resolved but
-      you don't want to close immediately. This state requires you to enter
-      a date and time at which the ticket automatically switches to
-      *closed*.
-    - **Pending Reminder**: State for open tickets which you want to get
-      reminded to a certain date and time. Requires you to enter a date and
-      time at which you want to get notified. For example useful if you had
-      a question to a third party and want to make sure that this issue
-      won't be forgotten.
-- **Owner**: This is the person who is currently responsible for the
-  ticket.  In case you need to have an information from another colleague,
-  you can either change to owner to this person or mention the person in an
-  article by typing `@@` and selecting the user. In the later case, the user
-  gets notified and is automatically subscribed to receive notifications on
-  ticket updates.
-- **Group**: This ticket attribute is useful for organizations with more
-  than one team. Depending on the permissions, you might not see the ticket
-  after changing the group and saving the changes.
+- **Status**: spiegelt den aktuellen Status eines Tickets wider
+  (hauptsächlich, ob eine Kundenanfrage gelöst ist oder
+  nicht). Standardmäßig gibt es die folgenden Status:
+    - **Neu**: Status für neue Tickets, an denen noch niemand gearbeitet
+      hat. Wenn ein Ticket zum ersten Mal aktualisiert wird, wechselt es
+      automatisch zu *offen*.
+    - **Offen**: Status für Tickets, die noch nicht gelöst sind und an denen
+      noch gearbeitet werden muss.
+    - **Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst
+      sind, die Sie aber nicht sofort schließen möchten. Für diesen Status
+      müssen Sie ein Datum und eine Uhrzeit eingeben, zu der das Ticket
+      automatisch auf *geschlossen* wechselt.
+    - **Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu
+      einem bestimmten Datum und einer bestimmten Uhrzeit erinnert werden
+      möchten. Hier müssen Sie ein Datum und eine Uhrzeit eingeben, zu der
+      Sie benachrichtigt werden möchten. Dies ist z.B. nützlich, wenn Sie
+      eine Frage an einen Dritten hatten und sicherstellen möchten, dass
+      dieses Problem nicht vergessen wird.
+- **Besitzer**: Dies ist die Person, die derzeit für das Ticket
+  verantwortlich ist.  Falls Sie eine Information von einem anderen Kollegen
+  benötigen, können Sie entweder den Besitzer darauf ändern oder die Person
+  in einem Artikel erwähnen, indem Sie `@@` eingeben und den Benutzer
+  auswählen. Im letzteren Fall wird der Benutzer benachrichtigt und erhält
+  automatisch Benachrichtigungen über Aktualisierungen von Tickets.
+- **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit
+  mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket
+  möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
+  gespeichert haben.
 
-### Ticket Detail View
+### Ticket Detailansicht
 
-Now that you are aware about some attributes, let's have a look at the
-ticket detail view.
+Da Sie nun über einige Attribute Bescheid wissen, lassen Sie uns einen Blick
+auf die Ticket Detailansicht werfen.
 
-The ticket detail view provides all relevant information of a ticket. As its
-main part, all articles of the ticket are shown here. The oldest article
-(which created the ticket) at the top, the newest at the bottom. Depending
-on the article type, Zammad offers you different ways to react. For text
-communication based articles, you can directly create an answer by using the
-**reply** button below the article or use the **forward** feature.
+Die Ticket Detailansicht liefert alle relevanten Informationen zu einem
+Ticket. Als Hauptbestandteil werden hier alle Artikel des Tickets
+angezeigt. Der älteste Artikel (der das Ticket erstellt hat) ganz oben, der
+neueste ganz unten. Je nach Art des Artikels bietet Ihnen Zammad
+verschiedene Reaktionsmöglichkeiten an. Bei Artikeln, die auf
+Textkommunikation basieren, können Sie direkt eine Antwort erstellen, indem
+Sie den **Antworten**-Button unter dem Artikel verwenden oder die
+**Weiterleiten**-Funktion nutzen.
 
-Independent of the customer's article type, you can always add internal
-notes.  These are useful to add information to the ticket or ask a
-colleague.
+Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen
+hinzufügen.  Diese sind nützlich, um dem Ticket Informationen hinzuzufügen
+oder einen Kollegen zu fragen.
 
-### Updating your Ticket
+### Aktualisierung Ihres Tickets
 
-After you have done your changes like writing an answer to a customer and
-change the state of the ticket, you can see a highlighted **Update** button
-in the right footer. By clicking it, your changes are applied and if you
-created an answer, it is now sent out to the customer. If you consider the
-issue as resolved, you should set the state to *closed* now.
+Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen
+Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in
+der rechten Fußzeile eine hervorgehobene Schaltfläche
+**Aktualisieren**. Wenn Sie auf diese Schaltfläche klicken, werden Ihre
+Änderungen übernommen, und wenn Sie eine Antwort erstellt haben, wird diese
+nun an den Kunden gesendet. Wenn Sie das Problem als gelöst betrachten,
+sollten Sie den Status auf *geschlossen* setzen.
 
-## Conclusion
+## Abschluss
 
-This was a brief introduction about how to work with Zammad if you are
-completely new to ticket systems. Knowing the basics of Zammad now, you can
-either start working or have a look at the [advanced features
-section](advanced-features) to become even more productive and use the full
-potential of Zammad. 🚀
+Dies war eine kurze Einführung in die Arbeit mit Zammad, wenn Sie völlig neu
+im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von Zammad
+kennen, können Sie entweder anfangen zu arbeiten oder einen Blick auf die
+[erweiterten Features](advanced-features) werfen, um noch produktiver zu
+werden und das volle Potential von Zammad zu nutzen. 🚀

@@ -23,7 +23,7 @@ entweder Ihre Daten behalten oder mit einem leeren System beginnen können.
 ## Nutzen Sie Zammads Hosting-Service
 
 Wenn Sie Zammad produktiv einsetzen möchten, besuchen Sie unsere andere
-Seite [zammad.com] (https://zammad.com/de/pricing), wo Sie die Preise für
+Seite [zammad.com](https://zammad.com/de/pricing), wo Sie die Preise für
 Hosing Services von Zammad finden können.
 
 ## Selbst gehostete Installation
@@ -34,5 +34,5 @@ sehen Sie, welche Variante Ihren Bedürfnissen entspricht.
 
 Wenn Sie Zammad selbst hosten und Support wünschen, nimmt unser
 Vertriebsteam gerne Kontakt mit Ihnen auf. Hinterlassen Sie einfach eine
-[Nachricht] (https://zammad.com/de/company/contact).
+[Nachricht](https://zammad.com/de/company/contact).
 

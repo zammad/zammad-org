@@ -1,127 +1,129 @@
 ---
 order: 13
-title: 'Single Sign-on with Kerberos'
+title: 'Single Sign-on mit Kerberos'
 ---
 
-# Single Sign-On for Kerberos <Badge type="warning" text="on-premise only"/>
+# Single Sign-On für Kerberos <Badge type="warning" text="on-premise only"/>
 
-This guide will discuss how to set up single sign-on using Microsoft Active
-Directory.
+In dieser Anleitung wird beschrieben, wie Sie Single Sign-On mit Microsoft
+Active Directory einrichten.
 
-## Conceptual Overview
+## Konzeptionelle Übersicht
 
-Like every other web application out there, Zammad has its own logic for
-signing users up, storing their passwords, authenticating them, and managing
-their sessions.
+Wie jede andere Webanwendung hat auch Zammad seine eigene Logik, um Benutzer
+anzumelden, ihre Passwörter zu speichern, sie zu authentifizieren und ihre
+Sitzungen zu verwalten.
 
-If your IT department keeps its own user identity store (like Active
-Directory), Zammad's SSO support allows you to leverage that existing auth
-system so that anyone with an account on your local intranet will 1)
-automatically have an account in Zammad and 2) be able to log in with a
-single click.
+Wenn Ihre IT-Abteilung ein eigenes System für Benutzeridentitäten (wie
+Active Directory) unterhält, können Sie mit der SSO-Unterstützung von Zammad
+dieses bestehende Autorisierungssystem nutzen, so dass jeder, der ein Konto
+in Ihrer Firma hat, 1) automatisch ein Konto in Zammad hat und 2) sich mit
+einem einzigen Klick anmelden kann.
 
 ::: tip
-If you don't have this IT infrastructure but still want one-click
-login, you can use alternatives like Github, Google, Facebook and more.
+Wenn Sie nicht über diese IT-Infrastruktur verfügen, aber trotzdem eine Ein-Klick
+Anmeldung wünschen, können Sie Alternativen wie Github, Google, Facebook und andere nutzen.
 :::
 
-## How Does it Work?
+## Wie funktioniert das?
 
-Once enabled, single sign-on activates an endpoint at
-`https://your.zammad.host/auth/sso`. When the Zammad server receives a GET
-request at this endpoint with a valid username in **any one of the
-following** entities, it creates a new session for that user:
+Einmal aktiviert, stellt das Single Sign-On Feature einen Endpunkt unter
+`https://your.zammad.host/auth/sso` bereit. Wenn der Zammad-Server an diesem
+Endpunkt eine GET-Anfrage mit einem gültigen Benutzernamen in **einer der
+folgenden** Entitäten erhält, erstellt er eine neue Sitzung für diesen
+Benutzer:
 
-- an `X-Forwarded-User` request header
-- a `REMOTE_USER` web server environment variable
-- an `HTTP_REMOTE_USER` web server environment variable
+- einen `X-Forwarded-User` Request Header
+- eine `REMOTE_USER` Webserver Umgebungsvariable
+- eine `HTTP_REMOTE_USER` Webserver-Umgebungsvariable
 
 
 ::: info
-**Wait. SSO allows you to sign in with only a username?**
+**Moment, mit SSO ist es möglich, sich nur mit einem Benutzernamen anzumelden?
 
-In principle, yes.
+Im Prinzip ja.
 
-**How is that okay?**
+**Wie kann das richtig sein?**
 
-In this guide, we configure our web server (Apache) to intercept all
-requests to the `/auth/sso` endpoint. Instead of forwarding them to
-Zammad, Apache initiates a three-sided login process (*Kerberos
-authentication*) between the itself, the user, and the Active
-Directory server.
+In dieser Anleitung konfigurieren wir unseren Webserver (Apache) so, dass er alle
+Anfragen an den Endpunkt `/auth/sso` abfängt. Anstatt sie an
+Zammad weiterzuleiten, initiiert Apache einen dreiseitigen Anmeldeprozess (*Kerberos
+Authentifizierung*) zwischen ihm selbst, dem Benutzer und dem Active
+Directory-Server.
 
-If Active Directory doesn't recognize the user or their password,
-Zammad never sees the request, and the session is never created.
+Wenn Active Directory den Benutzer oder sein Passwort nicht erkennt,
+sieht Zammad die Anfrage nie, und die Sitzung wird nie erstellt.
 
-**What does this all mean?**
+**Was bedeutet das alles?**
 
-It means there are many ways you could set up SSO—you don't need to
-follow this guide or even use Active Directory or Kerberos—but if you
-don't know what you're doing, you're going to end up with a *massive*
-security hole.
+Es bedeutet, dass es viele Möglichkeiten gibt, SSO einzurichten - Sie müssen weder
+diesem Leitfaden folgen noch Active Directory oder Kerberos verwenden. Aber Sie
+sollten unbedingt wissen, was Sie tun. Andernfalls kann leicht eine Sicherheitslücke
+entstehen.
 :::
 
-## Getting Started
+## Erste Schritte
 
 ::: tip
-**Too busy to handle it on your own?**
+**Zu beschäftigt, um es selbst zu machen?**
 
-We've got you covered. Our experts offer custom-tailored workshops to
-get your team up and running fast and with confidence. [Just drop us a
-line](https://zammad.com/contact)!
+Wir sind für Sie da. Unsere Experten bieten maßgeschneiderte Workshops an, damit
+Ihr Team schnell und sicher starten kann. [Schreiben Sie uns einfach eine
+Nachricht](https://zammad.com/contact)!
 :::
 
-You will need:
+Sie benötigen:
 
-- a Microsoft Active Directory environment with
-  - root access
-  - support for AES 256-bit encryption
-- a Zammad host with
-  - root access
-  - a fully-qualified domain name (FQDN)
-- some familiarity with system administration (e.g. Apache configuration)
+- eine Microsoft Active Directory-Umgebung mit
+  - Root-Zugang
+  - Unterstützung für AES 256-bit Verschlüsselung
+- einen Zammad-Host mit
+  - Root-Zugang
+  - einem vollständigen Domänennamen (FQDN)
+- gewisse Kenntnisse in der Systemverwaltung (z.B. Apache-Konfiguration)
 
-For best results, set up the LDAP integration to make sure
-your Active Directory and Zammad user accounts are always in sync. You
-can find it in Zammad's admin interface under
-*Settings > Security > Third-party Applications*.
+Am besten richten Sie auch eine LDAP-Integration ein, um sicherzustellen,
+dass Ihre Active Directory- und Zammad-Benutzerkonten immer synchronisiert sind. Sie
+finden Sie in der Verwaltungsoberfläche von Zammad unter
+*Einstellungen > Sicherheit > Anwendungen von Drittanbietern*.
 
-## Step 1: Configure Active Directory
+## Schritt 1: Konfigurieren Sie Active Directory
 
-In the Kerberos authentication scheme, the **authentication server** (Active
-Directory) needs to maintain shared secrets with the **service**
-(Zammad). To make this possible, we need to register a **service principal
-name** (SPN) for Zammad on Active Directory.
+Im Kerberos-Authentifizierungsschema muss der **Authentifizierungsserver**
+(Active Directory) gemeinsame Geheimnisse mit dem **Service** (Zammad)
+verwalten. Um dies zu ermöglichen, müssen wir einen **service principal
+name** (SPN) für Zammad im Active Directory registrieren.
 
 :::info
-These directions have been confirmed on Windows Server 2016.
+Diese Anweisungen wurden für Windows Server 2016 bestätigt.
 :::
 
-### 1a. Create a service account
+### 1a. Erstellen Sie einen Service-Account
 
-You may use an existing service account if you have one. Admin privileges
-are not required; a normal user account will do.
+Sie können ein bestehendes Konto verwenden, wenn Sie eines
+haben. Admin-Rechte sind nicht erforderlich; ein normales Benutzerkonto ist
+ausreichend.
 
-![Screenshot Active Directory service account
-settings](/screenshots/sso-kerberos/active-directory-service-account-settings.png)
+![Screenshot Active Directory Service Account
+Einstellungen](/screenshots/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Reset Password
+### 1b. Passwort zurücksetzen
 
-Reset service account password after enabling the "This account supports
-Kerberos AES 256 bit encryption".
+Passwort des Service Accounts zurücksetzen, nachdem die Option "This account
+supports Kerberos AES 256 bit encryption" aktiviert wurde.
 
-### 1c. Register a SPN for Zammad
+### 1c. Registrieren eines SPN für Zammad
 
-Replace the following placeholders in the commands below:
+Ersetzen Sie die folgenden Platzhalter in den nachstehenden Befehlen:
 
 - `<zammad-host>`: Zammad FQDN
-- `<service-acct>`: Service account logon name
-- `<password>`: Password of the service account (Option `/pass *` did prove
-  to not work)
-- `<domain>`: Windows domain
-- `<master-domain-controller>`: Master domain controller IP/FQD
+- `<service-acct>`: Service-Account Login Name
+- `<password>`: Passwort des Service-Accounts (Option `/pass *` hat sich als
+  unbrauchbar erwiesen)
+- `<domain>`: Windows Domäne
+- `<master-domain-controller>`: IP/FQDN des Master Domain Controllers
 
-The commands below will prompt for the users password:
+Mit den folgenden Befehlen wird das Passwort des Benutzers abgefragt:
 
 ```sh
 setspn -s HTTP/<zammad-host> <service-acct>
@@ -136,9 +138,10 @@ ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
         /out zammad.keytab
 ```
 
-### 1d. Note the secret key and version number
+### 1d. Notieren Sie den geheimen Schlüssel und die Versionsnummer
 
-The output of the command above contains important data for Step 2e below:
+Die Ausgabe des obigen Befehls enthält wichtige Daten für den folgenden
+Schritt 2e:
 
 ```
 Using legacy password setting method
@@ -153,46 +156,49 @@ Keytab version: 0x502
 keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) // [!code focus]
 ```
 
-On the last line, take note of:
+Die letzte Zeile ist zu beachten:
 
-- the secret key in parentheses at the end (**0x5ee827...**)
-- the secret key version number preceded by `vno` (**3**)
+- den geheimen Schlüssel in Klammern am Ende (**0x5ee827...**)
+- die Versionsnummer des geheimen Schlüssels mit vorangestelltem `vno`
+  (**3**)
 
-## Step 2: Remove NGINX, Set up Apache + Kerberos
+## Schritt 2: NGINX entfernen, Apache + Kerberos einrichten
 
-Next, the Zammad host must be configured to support Kerberos (and to accept
-auth credentials provided by the Active Directory server).
+Als nächstes muss der Zammad-Host so konfiguriert werden, dass er Kerberos
+unterstützt (und die vom Active Directory-Server bereitgestellten
+Zugangsdaten akzeptiert).
 
-In most cases, you would have to recompile NGINX from source with an extra
-module to enable Kerberos support. To get around this, we will use Apache,
-which offers Kerberos support through a plug-in module instead.
+In den meisten Fällen müssten Sie NGINX aus dem Quellcode mit einem
+zusätzlichen Modul neu kompilieren, um die Kerberos-Unterstützung zu
+aktivieren. Um dies zu umgehen, werden wir Apache verwenden, der
+Kerberos-Unterstützung durch ein Plug-in-Modul bietet.
 
 ::: info
-All commands in this section must be run as root (or with `sudo`).
+Alle Befehle in diesem Abschnitt müssen als root (oder mit `sudo`) ausgeführt werden.
 :::
 
-### 2a. Turn Off NGINX
+### 2a. NGINX ausschalten
 
 ::: warning
-This will take your Zammad instance **offline** until Apache is fully
-configured and running.
+Dadurch ist Ihre Zammad-Instanz **offline**, bis der Apache vollständig
+konfiguriert ist und läuft.
 :::
 
-Turn off nginx:
+Schalten Sie nginx aus:
 ```sh
 systemctl stop nginx
 ```
-Keep it off after reboot:
+Lassen Sie es nach einem Neustart ausgeschaltet:
 ```sh
 $ systemctl disable nginx
 ```
 
-If you wish to minimize downtime, you can save this step for last; just bear
-in mind that Apache will not start if the port it wants to listen on is
-being used by NGINX.
+Wenn Sie die Ausfallzeit minimieren möchten, können Sie diesen Schritt zum
+Schluss ausführen; bedenken Sie jedoch, dass Apache nicht startet, wenn der
+Port, auf dem gelauscht werden soll, von NGINX verwendet wird.
 
-If for any reason you can't complete this tutorial, simply turn off Apache
-and restore NGINX:
+Wenn Sie aus irgendeinem Grund dieses Tutorial nicht abschließen können,
+schalten Sie einfach Apache aus und stellen NGINX wieder her:
 
 ::: details
 ```sh
@@ -209,13 +215,13 @@ systemctl start nginx
 ```
 :::
 
-### 2b. Pre-Configure Apache
+### 2b. Apache vorkonfigurieren
 
-This documentation expects a already working Apache configuration.  You
-should have a look at the [webserver configuration
-guide](/en/tutorials/webserver-config) before continuing.
+Diese Dokumentation setzt eine bereits funktionierende Apache-Konfiguration
+voraus.  Sie sollten einen Blick in die [Webserver
+Konfiguration](/de/tutorials/webserver-config) werfen, bevor Sie fortfahren.
 
-### 2c. Install Further Apache Dependencies
+### 2c. Weitere Apache-Abhängigkeiten installieren
 
 ::: tabs
 
@@ -245,10 +251,10 @@ zypper install krb5-client apache2-mod_auth_kerb
 :::
 
 
-### 2d. Enable Apache Modules
+### 2d. Apache-Module einschalten
 
-SSO requires modules that are not enabled by default. By default you can use
-`a2enmod` to do so.
+SSO erfordert Module, die standardmäßig nicht aktiviert sind. Standardmäßig
+können Sie dafür `a2enmod` verwenden.
 
 
 ::: tabs
@@ -271,10 +277,10 @@ a2enmod auth_kerb rewrite
 systemctl restart apache2
 ```
 
-=== via configuration file (CentOS)
+=== per Konfigurationsdatei (CentOS)
 
-add/uncomment the appropriate `LoadModule` statements in your Apache
-config:
+Ergänzen Sie oder entfernen Sie den Kommentar für `LoadModule` in
+der Apache Konfiguration:
 
 ```
 # /etc/httpd/conf/httpd.conf
@@ -285,17 +291,18 @@ LoadModule rewrite_module modules/mod_rewrite.so
 
 :::
 
-### 2e. Configure Kerberos
+### 2e. Kerberos konfigurieren
 
-Kerberos realm configuration is how you tell the Zammad server how to reach
-the *domain controller* (Active Directory server).
+Mit der Kerberos-Realm-Konfiguration teilen Sie dem Zammad-Server mit, wie
+er den *Domänencontroller* (Active Directory-Server) erreichen kann.
 
-Replace the following placeholders in the sample config below:
+Ersetzen Sie die folgenden Platzhalter in der untenstehenden
+Beispielkonfiguration:
 
-- `<domain>`: Windows domain
-- `<domain-controller>`: Domain controller IP/FQDN(s)
-- `<master-domain-controller>`: Master domain controller IP/FQDN (must not
-  be read-only, but can be the same as `<domain-controller>`)
+- `<domain>`: Windows Domäne
+- `<domain-controller>`: IP/FQDN(s) des Domain-Controllers
+- `<master-domain-controller>`: IP/FQDN des Master Domain-Controllers (darf
+  nicht read-only sein; kann identisch zum `<domain-controller>` sein)
 
 ```
 # /etc/krb5.conf
@@ -330,48 +337,49 @@ Replace the following placeholders in the sample config below:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Generate Keytab
+### 2f. Keytab generieren
 
-Apache needs a Kerberos *keytab* (key table) to manage its shared secrets
-with the domain controller.
+Apache benötigt eine Kerberos *keytab* (Schlüsseltabelle), um seine
+gemeinsamen Geheimnisse mit dem Domain Controller zu verwalten.
 
-Replace the following placeholders in the commands below:
+Ersetzen Sie die folgenden Platzhalter in den nachstehenden Befehlen:
 
 - `<zammad-host>`: Zammad FQDN
-- `<domain>`: Windows domain
-- `<secret-key>`: Secret key (**omit the leading** `0x`)
-- `<vno>`: Secret key version number
+- `<domain>`: Windows Domäne
+- `<secret-key>`: Geheimer Schlüssel (**lassen Sie die führende** `0x`
+  **weg**)
+- `<vno>`: Versionsnummer des geheimen Schlüssels
 
-The secret key and version number were found in `sso-register-spn` (Step 1d)
-above.
+Der geheime Schlüssel und die Versionsnummer wurden in `sso-register-spn`
+(Schritt 1d) oben ermittelt.
 
-Enter ktutil:
+Führen Sie ktutil aus:
 ```sh
 ktutil
 ```
-Add keytab:
+Keytab hinzufügen:
 ```sh
 ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts
 Key for HTTP/<zammad-host>@<domain> (hex): <secret-key>
 ```
-Confirm the entry was added successfully:
+Prüfen Sie, ob der Eintrag erfolgreich hinzugefügt wurde:
 ```sh
 ktutil: list
 slot KVNO Principal
 ---- ---- ---------------------------------------------------------------
    1    3 HTTP/<zammad-host>@<DOMAIN>
 ```
-Write keytab to disk:
+Keytab speichern:
 ```sh
 ktutil: wkt /root/zammad.keytab
 ```
-Leave ktutil:
+Verlassen Sie ktutil:
 ```sh
 ktutil: quit
 ```
 
-Then, place the keytab in the Apache config directory and set the
-appropriate permissions:
+Legen Sie die keytab in das Apache-Konfigurationsverzeichnis und setzen Sie
+die entsprechenden Berechtigungen:
 
 ::: tabs
 
@@ -400,15 +408,16 @@ chmod 640 /etc/httpd/zammad.keytab
 ```
 :::
 
-### 2g. Configure Apache
+### 2g. Apache konfigurieren
 
-Add the following directive to the end of the virtual host configuration
-file to create your Kerberos SSO endpoint at `/auth/sso`:
+Fügen Sie die folgende Parameter am Ende der Konfigurationsdatei des
+virtuellen Hosts hinzu, um Ihren Kerberos-SSO-Endpunkt unter `/auth/sso` zu
+erstellen:
 
-Replace the following placeholders in the command below:
+Ersetzen Sie die folgenden Platzhalter in dem unten stehenden Befehl:
 
 - `<zammad-host>`: Zammad FQDN
-- `<domain>`: Windows domain
+- `<domain>`: Windows Domäne
 
 
 ::: tabs
@@ -464,132 +473,138 @@ The configuration for CentOS and OpenSUSE below contains two
 ```
 :::
 
-### 2g. Restart Apache to Apply Changes
+### 2g. Apache neu starten, um Änderungen zu übernehmen
 
 ```sh
 systemctl restart apache2
 ```
 
-## Step 3: Enable SSO in Zammad
+## Schritt 3: Aktivieren Sie SSO in Zammad
 
-Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-*Settings > Security > Third-Party Applications*
+Als Nächstes aktivieren Sie "Anmeldung über SSO" in Zammads Admin Bereich unter
+*Einstellungen > Sicherheit > Anwendungen von Drittanbietern*.
 
 ::: tip
-On older versions of Zammad, visit `https://your.zammad.host/auth/sso`
-to sign in.
+Öffnen Sie bei älteren Versionen von Zammad `https://your.zammad.host/auth/sso`,
+um sich anzumelden.
 :::
 
-## Step 4: Configure Client System (Windows Only)
+## Schritt 4: Client-System konfigurieren (nur Windows)
 
-For the full SSO experience (i.e. for passwordless one-click sign-in),
-Zammad users must:
+Für die vollständige SSO-Erfahrung (d.h. für die passwortlose Anmeldung mit
+einem Klick) müssen Benutzer von Zammad:
 
-1.  be on the Active Directory server's local intranet; and
-2.  modify their network settings for the Zammad host to be treated as a
-    local intranet server.
+1.  sich im lokalen Intranet des Active Directory-Servers befinden; und
+2.  ihre Netzwerkeinstellungen so ändern, dass der Zammad-Host wie ein
+    lokaler Intranet-Server behandelt wird.
 
-Without this step, users must enter their Active Directory credentials
-during SSO.
+Ohne diesen Schritt müssen die Benutzer ihre Zugangsdaten für Active
+Directory während des SSO eingeben.
 
 :::: tabs
 
 === IE / Edge / Chromium
 
 ::: tip
-This setting can be centrally managed across the entire intranet using
-a **group policy object** (GPO).
+Diese Einstellung kann zentral für das gesamte Intranet verwaltet werden, indem
+ein **Gruppenrichtlinienobjekt** (GPO) verwendet wird.
 :::
 
-1. Add your Zammad FQDN in Internet Options under *Security > Local
-   Intranet > Sites > Advanced*.
-2. Select "Require server verification (https:) for all sites in this
-   zone".
-3. Under *Security level for this zone > Custom level... > Settings
-   \> User Authentication > Logon*, select "Automatic logon only in
+1. Fügen Sie Ihren Zammad FQDN in den Internetoptionen unter *Security > Local
+   Intranet > Sites > Advanced* hinzu.
+2. Wählen Sie "Require server verification (https:) for all sites in this
+   zone"
+3. Wählen Sie unter *Security level for this zone > Custom level... > Settings
+   \> User Authentication > Logon* die Option "Automatic logon only in
    Intranet Zone".
 
 === Firefox
 
 ::: info
-This option cannot be centrally managed because it is set in the
-browser rather than Windows Settings.
+Diese Option kann nicht zentral verwaltet werden, da sie im
+Browser und nicht in den Windows-Einstellungen festgelegt wird.
 :::
 
-1.  Enter `about:config` in the address bar. Click **Accept the risk and
-    continue**.
-2.  Search for the `network.negotiate-auth.trusted-uris` option.
-3.  Double-click to edit, then add your Zammad FQDN.
-4.  Restart Firefox to apply your changes.
+1.  Geben Sie `about:config` in die Adressleiste ein. Klicken Sie auf **Das Risiko akzeptieren und
+    fortfahren**.
+2.  Suchen Sie nach der Option `network.negotiate-auth.trusted-uris`.
+3.  Doppelklicken Sie darauf, um sie zu bearbeiten, und fügen Sie Ihren Zammad FQDN hinzu.
+4.  Starten Sie Firefox neu, damit Ihre Änderungen wirksam sind.
 
 ::::
 
 ## Fehlerbehebung
 
-- Are all relevant FQDNs/hostnames reachable from your Active Directory and
-  Zammad servers (including each other's)?
-- Are the system clocks of your Active Directory and Zammad servers
-  synchronized within five minutes of each other? Kerberos is a
-  time-sensitive protocol!
+- Sind alle relevanten FQDNs/Hostnamen von Ihren Active Directory- und
+  Zammad-Servern (auch die beiden gegenseitig) erreichbar?
+- Sind die Systemuhren Ihrer Active Directory- und Zammad-Server innerhalb
+  von fünf Minuten zueinander synchronisiert? Kerberos ist ein
+  zeitkritisches Protokoll!
 
-### Errors in Apache Logs
+### Fehler in Apache-Protokollen
 
 ::: tip
-**Try raising your Apache log level temporarily.**
+**Versuchen Sie, das Apache-Log-Level vorübergehend zu erhöhen.**
 
-Add `LogLevel debug` to your virtual host configuration, then restart
-the service to apply the changes.
+Fügen Sie `LogLevel debug` zur Konfiguration Ihres virtuellen Hosts hinzu und starten Sie dann
+den Dienst neu, um die Änderungen zu übernehmen.
 :::
 
 #### An unsupported mechanism was requested
-Does your Active Directory service account have **Kerberos AES 256-bit
-encryption** enabled?
+Ist in Ihrem Active Directory-Serviceaccount die **Kerberos AES 256-bit
+encryption** aktiviert?
 
-If for some reason your server does not support AES 256-bit encryption, the
-LDAP Wiki has [more information about Kerberos encryption
-types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes).
+Wenn Ihr Server aus irgendeinem Grund keine AES 256-Bit-Verschlüsselung
+unterstützt, finden Sie im
+[LDAP-Wiki](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes) weitere
+Informationen über Kerberos-Verschlüsselungsarten.
 
 #### Failed to verify krb5 credentials: Key version is not available
-Did you use the exact **version number** (`vno`) provided by `ktpass`
-when `generating your keytab <sso-generate-keytab>`?
+Haben Sie die genaue **Versionsnummer** (`vno`) verwendet, die von `ktpass`
+ausgegeben wurde, als Sie Ihre `sso-generate-keytab`-Schlüsseltabelle erzeugt haben?
 
-Try generating it again, just to be sure.
+Versuchen Sie sicherheitshalber, sie erneut zu erzeugen.
 
 #### Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)
-Does the **service name** you provided to `setspn` exactly match the one
-you used when `generating your keytab <sso-generate-keytab>`?
+Stimmt der **service name**, den Sie bei `setspn` angegeben haben, genau mit dem überein,
+den Sie beim Generieren Ihrer Keytab `<sso-generate-keytab>` verwendet haben?
 
-Try generating it again, just to be sure.
+Versuchen Sie sicherheitshalber, sie erneut zu erzeugen.
 
 #### No key table entry found for HTTP/FQDN@DOMAIN
-Does your virtual host configuration's `KrbServiceName` setting exactly
-match the **service name** you provided to `setspn`?
+Stimmt die Einstellung `KrbServiceName` Ihrer virtuellen Hostkonfiguration
+genau mit dem **service name** überein, den Sie in `setspn` angegeben haben?
 
-This setting is case-sensitive.
+Bei dieser Einstellung wird zwischen Groß- und Kleinschreibung
+unterschieden.
 
 #### Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
-Is your Zammad host accessible at an FQDN? This error may indicate that you
-configured your Zammad host as a numeric IP address instead.
+Ist Ihr Zammad-Host unter einem FQDN erreichbar? Dieser Fehler kann darauf
+hinweisen, dass Sie Ihren Zammad-Host stattdessen als IP-Adresse
+konfiguriert haben.
 
 #### Cannot decrypt ticket for HTTP/FQDN@DOMAIN
-Did you make sure to change the password on your Active Directory service
-account *after enabling 256-bit AES encryption?*
+Haben Sie sichergestellt, dass Sie das Passwort für Ihr Konto beim Active
+Directory-Dienst *nach der Aktivierung der 256-Bit-AES-Verschlüsselung*
+geändert haben?
 
-And did you make sure to register the SPN (with `ktpass`) and generate your
-keytab (with `ktutil`) *after changing your password?*
+Und haben Sie darauf geachtet, *nach dem Ändern Ihres Passwortes* den SPN zu
+registrieren (mit `ktpass`) und Ihre Keytab zu generieren (mit `ktutil`)?
 
-Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.
-If no output is returned, you're good - if you see "kinit:
-Preauthentication failed while getting initial credentials" your
-credentials provided were wrong or you used `/pass *` during ktpass
-command.
+Versuchen Sie, `kinit -k -t <Pfad zu keytab Schlüsseltabelle> HTTP/<zammad-host>@<DOMAIN>` auszuführen.
+Wenn keine Ausgabe zurückgegeben wird, ist alles gut - wenn Sie "kinit:
+Preauthentication failed while getting initial credentials" sehen, waren entweder Ihre
+Zugangsdaten falsch oder Sie haben `/pass *` während des ktpass-Befehls
+verwendet.
 
 #### Failed when verifying KDC" and "failed to verify krb5 credentials: Decrypt integrity check failed
 Vergewissern Sie sich, dass `KrbServiceName` der richtige, über setspn
 bereitgestellte ServiceName ist.
 
-Ensure your Active Directory supports the encryption method configured.
+Stellen Sie sicher, dass Ihr Active Directory die konfigurierte
+Verschlüsselungsmethode unterstützt.
 
-If all above is correct and the rest of FAQ also is ensured, make sure your
-client does not cache the results. `klist purge` clears the clients cache -
-a reboot of your client would do too.
+Wenn alles oben genannte korrekt ist und Sie die Anleitung befolgt haben,
+stellen Sie sicher, dass Ihr Client die Ergebnisse nicht im Cache
+speichert. `klist purge` löscht den Cache des Clients - alternativ können
+Sie auch einen Neustart des Clients durchführen.

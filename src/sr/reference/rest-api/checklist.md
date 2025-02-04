@@ -1,9 +1,9 @@
 ---
 order: 2
-title: Checklist
+title: 'Списак задатака'
 ---
 
-# Checklist
+# Списак задатака
 
 Zammad has different checklist endpoints:
 

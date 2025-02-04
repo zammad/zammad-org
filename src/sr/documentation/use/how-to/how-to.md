@@ -1,6 +1,6 @@
 ---
 order: 1
-title: 'Time Accounting'
+title: 'Обрачун времена'
 ---
 
-# Time Accounting
+# Обрачун времена

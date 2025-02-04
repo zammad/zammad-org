@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-03 14:55+0100\n"
+"POT-Creation-Date: 2025-02-04 11:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14508,19 +14508,20 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:263
 #, no-wrap
 msgid ""
-"After executing the database migrations a restart of Zammad is\n"
-"*mandatory*. If configured Zammad also can restart automatically (this\n"
-"is the case on Hosted environments) – expect a short downtime.\n"
+"After executing the database migrations, a restart of Zammad is\n"
+"*mandatory*. If not deactivated via\n"
+"[auto shutdown setting](/en/reference/console#auto-shutdown-setting),\n"
+"Zammad automatically restarts - expect a short downtime.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:271
+#: src/en/reference/rest-api/object.md:272
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/object.md:272
+#: src/en/reference/rest-api/object.md:273
 #, no-wrap
 msgid ""
 "\n"

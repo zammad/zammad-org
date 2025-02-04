@@ -260,9 +260,10 @@ Required permission: `admin.object`
 Required permission: `admin.object`
 
 ::: warning
-After executing the database migrations a restart of Zammad is
-*mandatory*. If configured Zammad also can restart automatically (this
-is the case on Hosted environments) – expect a short downtime.
+After executing the database migrations, a restart of Zammad is
+*mandatory*. If not deactivated via
+[auto shutdown setting](/en/reference/console#auto-shutdown-setting),
+Zammad automatically restarts - expect a short downtime.
 :::
 
 `POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`

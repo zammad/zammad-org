@@ -160,22 +160,22 @@ Sie einfach nach demselben Namen suchen.
 
 - Ticket öffnen und schließen[^1]
 - Erstellte Artikel
-- ticket SLA (in time *and* violation) per type[^1][^2]
+- Ticket SLA (in Zeit *und* Verletzung) pro Typ[^1][^2]
 
 #### Ticket und Artikel Meta-Informationen
 
 - Verteilung der Tickets nach Gruppe
-- sender ratio (e.g. Customer / Agent)[^3]
-- article type ratio (e.g. email, phone)[^3]
+- Absenderverhältnis (z.B. Kunde / Agent)[^3]
+- Verhältnis der Artikelarten (z.B. E-Mail, Telefon)[^3]
 - Typ des Artikelinhalts
-- escalation ratios[^1]
-- average first response, update time and close time[^2]
+- Eskalationsquoten[^1]
+- Durchschnittliche Erstreaktion, Aktualisierungszeit und Schließzeit[^2]
 - Top 10 von:
-  - organization of ticket customer[^1]
-  - ticket customers[^1]
-  - ticket owners[^1]
+  - Organisation des Ticket-Kunden[^1]
+  - Ticket-Kunden[^1]
+  - Besitzer von Tickets[^1]
   - Durchschnittlich erfasste Zeit auf dem Ticket
-  - ticket tags[^1]
+  - Ticket-Tags[^1]
 - die letzten 10 eskalierten Tickets
 
 #### Erforderliche Datenquellen
@@ -230,12 +230,12 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 - `ES - CTI Log`
 
 
-[^1]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
+[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
+    bedeutet, dass nur der *letzte* Wert des betreffenden Feldes angezeigt werden kann.
 
-[^2]: Requires SLA function to be active. Negative values indicate SLA
-    violations.
+[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
+    Verletzung.
 
-[^3]: Specific reference IDs are not the same on every instance and thus
-    the panel may not work or show incorrect data. Check the panels
-    description on how to find our the relations on your system.
+[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher
+    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,
+    wie Sie die Beziehungen auf Ihrem System herausfinden können.

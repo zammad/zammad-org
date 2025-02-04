@@ -1,117 +1,116 @@
 ---
 order: 4
-title: 'Advanced Features'
+title: 'Напредне функције'
 ---
 
-# Advanced Features
+# Напредне функције
 
-## Use Keyboard Shortcuts
+## Користите пречице на тастатури
 
 TODO
 
-## Adjust Behavior After Updating a Ticket
+## Подесите понашање након освежавања тикета
 
-![Screenshot shows behavior after update
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
+![Снимак екрана приказује мени понашања након
+освежавања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
 
-**Why?**
+**Зашто?**
 
-It is possible to automatically close a ticket tab in the navigation
-sidebar.  It depends on your preferences, but you can save a click after
-updating or updating a ticket to *closed* state.
+Могуће је аутоматски затворити прозор тикета у бочној траци навигације.
+Зависи од ваших подешавања, али можете уштедети клик након освежавања или
+освежавања тикета са стањем *затворено*.
 
-**How?**
+**Како?**
 
-In the footer bar of the ticket detail view, click on the `Stay on tab ^`
-button and select your desired option (if the default is still set,
-otherwise it is labeled as the other options below). You have different
-options:
+У доњој траци детаљног приказа тикета, кликните на дугме `Остани у прозору
+^` и одаберите жељену опцију (уколико је на подразумеваној вредности, у
+супротном имаће један од назива опција испод). Имате неколико различитих
+опција:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you
-  want to have it removed from your navigation sidebar.
-- **Close tab**: This option closes the tab on each update of the
-  ticket. Might be a good option if you have to deal with many tickets
-  and/or the tickets require many interactions.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated and the state is set to *closed*.
+- **Остани у прозору**: Подразумевана опција. Мораћете ручно да затворите
+  прозор уколико желите да буде уклоњен из ваше бочне траке навигације.
+- **Затвори прозор**: Ова опција затвара прозор по сваком освежавању
+  тикета. Може бити добра опција ако обрађујете пуно тикета и/или тикети
+  захтевају пуно интеракције.
+- **Затвори прозор по затварању тикета**: Ова опција затвара прозор само
+  када је тикет освежен и стање је постављено на *затворено*.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab**
-and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing the
-ticket state to closed and close the ticket tab.
+Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**
+и користити пречицу на тастатури <kbd>Shift</kbd> <kbd>c</kbd> за промену
+стања тикета на затворено и затварање прозора тикета.
 :::
 
-## Use Text Templates
+## Користите текстуалне шаблоне
 
-![Screenshot shows text template
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Снимак екрана приказује функцију текстуалних
+шаблона](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
-**Why?**
+**Зашто?**
 
-The usage of text modules has benefits like:
+Коришћење текстуалних исечака доноси предности као што су:
 
-- You save time while answering tickets
-- Answers from you and your colleagues are aligned because you use the same
-  text for answers
+- Штедите време приликом одговарања на тикете
+- Ваши и одговори ваших колега се поклапају јер користите идентичан текст за
+  одговоре
 
-**How?**
+**Како?**
 
-To use text modules simply type `::` in the editor followed by parts of the
-name or keyword of the text module.
+За коришћење текстуалних исечака, једноставно унесите `::` у уредник текста
+а затим део назива или кључну реч исечка.
 
-You can pick one by clicking on it or by using the up and down arrows followed
-by <kbd>enter</kbd> on your keyboard. There are some text modules in Zammad
-which are shipped by default.
+Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле а затим
+притиском на <kbd>enter</kbd> на вашој тастатури. Zammad долази са неким подразумеваним
+текстуалним исечцима.
 
-If you have to answer the same question again and again, ask your Zammad
-admin to create such a text module for you. They can even include variables
-like customer name or any other available attribute which get replaced while
-using it in a ticket.
+Уколико ухватите себе да стално одговарате на идентично питање, замолите
+вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу
+укључивати и променљиве као што су име клијента или било који други атрибут,
+које ће бити замењене кад их користите у тикету.
 
-## Mention a Colleague
+## Помените колегу
 
-![Screenshot shows mention
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Снимак екрана приказује функцију
+помињања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
-**Why?**
+**Зашто?**
 
-Ask or request information from your colleagues or mention them in important
-tickets so they receive notifications for ticket updates and are
-automatically subscribed to this ticket.
+Затражите информације од ваших колега или их помените у важним тикетима да
+би добили обавештења о освежавању тикета и да би били аутоматски претплаћени
+на тај тикет.
 
-**How?**
+**Како?**
 
-While writing an ticket article, simply type `@@` and enter some letters of
-the name of the colleague you want to mention.
+Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова
+из имена колеге кога желите да поменете.
 
-Zammad displays a list with all possible matches where you can pick one
-by clicking on it or by using the up and down arrows followed by
-<kbd>enter</kbd> on your keyboard.
+Zammad приказује листу свих корисника који одговарају вашем уносу и можете их одабрати
+кликом или коришћењем стрелица на горе и доле а затим
+притиском на <kbd>enter</kbd> на вашој тастатури.
 
-## Subscribe to a Ticket
+## Претплатите се на тикет
 
-![Screenshot shows subscribe
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
+![Снимак екрана приказује функцију
+претплате](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
 
-**Why?**
+**Зашто?**
 
-If you are interested in the progress of a ticket, you can subscribe to it.
-This means you will receive notifications for each update.
+Уколико сте заинтересовани за прогрес тикета, можете се претплатити на
+исти.  Ово значи да ћете примати обавештења за свако освежавање.
 
-**How?**
+**Како?**
 
-Activate the "Subscribe me" toggle in the ticket side panel to get
-notifications. If you have been mentioned in a ticket, you are automatically
-subscribed. Switch the toggle off to stop the notification.  The avatars
-displayed show you who has subscribed to the ticket and is therefore
-notified of updates.
+Укључите прекидач „Претплати се” у траци тикета са стране за добијање
+обавештења. Уколико сте већ поменути у тикету, већ сте
+претплаћени. Искључите прекидач за заустављање обавештења.  Сличице испод
+вам приказују ко је претплаћен на тикет и ко је обавештен о освежавањима.
 
-## Use a Macro
+## Користите макро
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
+![Снимак екрана који приказује мени радњи
+макроа](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
 
-**Why?**
+**Зашто?**
 
 If you have many steps you do over and over again, you should use a macro
 for that. In such a macro, your admin can pre-define different ticket
@@ -120,7 +119,7 @@ actions you can apply with just a click. As an example, Zammad ships a
 the macro is assigned as owner, a tag `spam` is added and the ticket is
 closed.
 
-**How?**
+**Како?**
 
 If your admin already created a macro, you can execute it in the ticket
 detail view by clicking the three dots button `︙` in the right corner of the
@@ -138,7 +137,7 @@ actions](#bulk-actions) how to do that.
 ![Screenshot shows tag area in ticket side
 bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
 
-**Why?**
+**Зашто?**
 
 Tags are one way to categorize a ticket. You can think of tags as some kind
 of labels. They can be used in conditions like in triggers and in overviews
@@ -146,7 +145,7 @@ and they can also be assigned automatically by macros, schedulers and
 triggers.  Of course you can search for the text of the tags and will find
 tickets which have the tag attached.
 
-**How?**
+**Како?**
 
 In the ticket sidebar, you can find a section which is labels as "Tags". Add
 a tag by clicking on the `+` button. You can select existing tags and add
@@ -160,14 +159,14 @@ confirmation dialog for deleting a tag from a ticket.
 ![Screenshot shows a checklist from checklist
 sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
 
-**Why?**
+**Зашто?**
 
 - To keep track of tasks
 - To complete tasks in a structured way
 - To make sure nothing gets forgotten
 - To make the progress of work more visible
 
-**How?**
+**Како?**
 
 Select the "Checklist" tab in the sidebar. If you can't see it, your Zammad
 admin disabled it. You can only add or edit a checklist, if you have the
@@ -207,13 +206,13 @@ There are two features, which are not directly visible:
 
 ## Ticket Templates
 
-**Why?**
+**Зашто?**
 
 Quickly create a ticket with pre-defined attributes like title, text, tags
 and more saves you time. This requires your admin to create a ticket
 template.
 
-**How?**
+**Како?**
 
 In the ticket create screen, you can find an `Apply Template ^` button in
 the footer bar, if a template is available. Select the template you want to
@@ -222,7 +221,7 @@ apply and apply changes if desired.
 
 ## Заједнички нацрти
 
-**Why?**
+**Зашто?**
 
 To share a draft with other agents of your group, e.g. to reflect a QA
 process, instead of "just" adding an internal article. In such a draft you
@@ -232,7 +231,7 @@ attributes as well as an article with an answer to the customer.
 This is an optional feature. If you can't see it, your admin has turned it
 off.
 
-**How?**
+**Како?**
 
 To **save a draft**, use the `︙` menu in the footer of the ticket details
 view and select "Save as draft".
@@ -249,7 +248,7 @@ Applying a draft overwrites your unsaved changes!
 ![Screenshot shows other agents viewing/editing the
 ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
 
-**Why?**
+**Зашто?**
 
 Things to avoid:
 
@@ -260,7 +259,7 @@ Things to avoid:
 This is why you can immediately see who views and edits the currently viewed
 ticket.
 
-**How?**
+**Како?**
 
 Have a look at the footer bar in the ticket detail view. When there is an
 avatar from another agent (see screenshot above), you are not the only one
@@ -281,9 +280,9 @@ Depending on the additional icon and if the avatar icon is faded, it means:
 
 TODO after overview bulk action implementation
 
-**Why?**
+**Зашто?**
 
-**How?**
+**Како?**
 
 Via drag & drop Via drop down selectors
 
@@ -292,7 +291,7 @@ Via drag & drop Via drop down selectors
 ![Screenshot shows the ticket merge side
 panel](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
 
-**Why?**
+**Зашто?**
 
 If you have two or more tickets about the same issue, you may want to merge
 those tickets into one. This might be the case if a customer sends you a new
@@ -300,10 +299,10 @@ email which can't be assigned to the existing ticket (e.g. the ticket
 reference is missing because the customer sends you a completely new email
 instead of answering in the existing thread).
 
-Merging a ticket migrates all messages and notes of the ticket from where
-you select the merging into the selected one.
+Спајање тикета мигрира све поруке и напомене из тикета који спајате у
+одабрани.
 
-**How?**
+**Како?**
 
 Go to the ticket you want to merge into another one. In the ticket sidebar,
 use the `︙` menu and select `Merge`. This opens a side panel in which you
@@ -314,8 +313,8 @@ button at the bottom.
 As result, the articles are moved into the chosen ticket. The ticket in
 which you executed the merge still exists with the following changes:
 
-- The articles have been replaced by a "merged" label
-- The state has changed to "merged"
+- Сви чланци су замењени ознаком „спојено”
+- Стање је промењено у „спојено”
 - The ticket is linked to its "parent" ticket
 
 
@@ -324,13 +323,13 @@ which you executed the merge still exists with the following changes:
 ![Screenshot shows the article action split
 menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
-**Why?**
+**Зашто?**
 
 If you have a ticket which is about more than one issue, you might want to
 split it in two or more separate tickets. For example this might be the case
 if a customer has a technical question and wants to place an order.
 
-**How?**
+**Како?**
 
 To split an article off, use the `︙` menu next to an article and select
 `Split`.
@@ -344,13 +343,13 @@ ticket is linked in the split off ticket as parent.
 
 ## Link Tickets
 
-**Why?**
+**Зашто?**
 
 When tickets about related issues arise, they can be linked to each other
 for easier reference. [Merged](#merge-tickets) and [split](#split-ticket)
 tickets are automatically linked.
 
-**How?**
+**Како?**
 
 In the ticket sidebar, add a link to another ticket by clicking the `+`
 button in the "Links" section. This opens a side panel in which you can

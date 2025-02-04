@@ -61,8 +61,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 
 Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch
 anwenden möchten. Weitere Informationen finden Sie in der
-[Elastic-Dokumentation]
-(https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+[Elastic-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
 
 ### Index Namespacing
 

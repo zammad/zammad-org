@@ -14,7 +14,7 @@ Please note that environment variables may be named differently for
 installations based on [Docker](/en/reference/docker-env-vars) and Kubernetes.
 :::
 
-Default values are marked with a <Badge type="info" text="badge"/>.
+Потразумеване вредности су означене са <Badge type="info" text="badge"/>.
 
 ## General Options
 

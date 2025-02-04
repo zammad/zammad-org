@@ -29,9 +29,9 @@ API
   Es ermöglicht Ihnen, Systeme von Drittanbietern mit Ihrem Zammad zu verbinden (z.B. soziale
   Medien, Messenger, Monitoring-Tools).
 
-  You can learn more on our
-  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
-  as well as in our [API reference](/en/reference/rest-api/intro).
+  Sie können mehr erfahren auf unserer
+  [API-Landingpage](https://zammad.com/de/product/features/rest-api){target=_blank} sowie
+  sowie in unserer [API-Referenz](/de/reference/rest-api/intro).
 
 Artikel
 : Jedes Element innerhalb eines Tickets wird als Artikel bezeichnet. Ticket-Artikel
@@ -47,11 +47,11 @@ Automatisierung
   Ein Beispiel wäre die wiederkehrende Löschung von Kunden, die
   nicht mehr benötigt werden oder die Zuweisung von Gruppen auf Basis von Ticket-Attributen.
 
-Autosave
-: Zammad's autosave feature makes sure that no work is lost. So if your browser
-  crashes, simply log in again and resume where you were before.
-  Learn more on our
-  [Autosave landing page](https://zammad.com/en/product/features/autosave){target=_blank}.
+Automatisches Speichern (Autosave)
+: Die Autosave-Funktion von Zammad sorgt dafür, dass keine Arbeit verloren geht. Falls Ihr Browser
+  abstürzt, melden Sie sich einfach wieder an und machen dort weiter, wo Sie vorher waren.
+  Erfahren Sie mehr auf unserer
+  [Autosave Landing Page](https://zammad.com/de/product/features/autosave){target=_blank}.
 
 Branding
 : Jede Firma hat ihre eigene Identität. Deshalb können Sie bei Zammad Ihr
@@ -61,8 +61,7 @@ Changelog
 : Mit jeder neuen Version kommt ein neues Changelog. Es ist im Grunde eine Liste aller
   Dinge, die sich geändert haben, von neuen Verbesserungen bis hin zu Fehlerkorrekturen.
 
-  You can find them all on our
-  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
+  Sie finden sie alle auf unserem [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
 : Checkmk ist ein leistungsstarkes IT-Überwachungstool, das Echtzeit-Statusmeldungen
@@ -159,12 +158,12 @@ Feature
   stellt wie z.B. unsere Integrationen, Produktivitätstools oder zusätzliche Kanäle.
   Wir fügen mit jeder Version neue Funktionen hinzu.
 
-Feature Request
-: You can let us know if you are missing a particular feature in Zammad.
-  We collect all of your wishes in our community forum in the
-  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
-  If a request comes in regularly and we think that it would be a
-  great addition, we'll put it on our roadmap and start working on it.
+Feature-Anfrage
+: Lassen Sie uns wissen, wenn Sie eine bestimmte Funktion in Zammad vermissen.
+  Wir sammeln alle Ihre Wünsche in unserem Community-Forum in der
+  [Kategorie "Feature Requests" (https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  Wenn eine Anfrage regelmäßig eingeht und wir denken, dass es eine
+  großartige Ergänzung wäre, setzen wir sie auf unsere Roadmap und beginnen mit der Arbeit daran.
 
 Feature-Sponsoring
 : Wenn eine Organisation ein Feature auf der Liste dringend benötigt,
@@ -176,9 +175,9 @@ GitHub
   Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.
   Hier bei Zammad verwenden wir es, um unser Repository zu verwalten.
 
-  As Zammad is an open-source project, many developers and tech-lovers from all
-  over the world contribute to it. GitHub is where we coordinate all of this.
-  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.
+  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen
+  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.
+  Sie finden das Repository [hier](https://github.com/zammad/zammad){target=_blank}.
 
   Neben unserem eigenen Repo hat Zammad auch eine Integration für GitHub.
   Sie schafft einen Datenaustausch, der Ihnen alle relevanten Informationen über Ihre
@@ -340,9 +339,9 @@ Release
   Nebenversionen (wie 1.1, 2.1, usw.) werden in der Zwischenzeit veröffentlicht und bringen
   kleinere Aktualisierungen.
 
-  In our [release notes](https://zammad.com/en/releases){target=_blank} you can
-  find what features are included in new versions and also important information
-  about what to consider before updating Zammad.
+  In unseren [Versionshinweisen](https://zammad.com/de/releases){target=_blank} können Sie nachlesen, welche
+  Funktionen in neuen Versionen enthalten sind und auch wichtige Informationen darüber,
+  was vor der Aktualisierung von Zammad zu beachten ist.
 
 Rolle
 : Jeder Benutzer hat eine zugewiesene Rolle. Standardmäßig gibt es drei Rollen:

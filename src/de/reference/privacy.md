@@ -128,5 +128,5 @@ Der Geo-Lokalisierungsdienst von Zammad stützt sich auf OpenStreetMap (OSM),
 es sei denn, Sie haben es ausgeschaltet. Wenn Sie eine Adresse (oder Teile
 einer Adresse) in einem Benutzerobjekt angeben, werden die Koordinaten von
 OSM in der Datenbank von Zammad gespeichert. Weitere Informationen finden
-Sie in den [Datenschutzbestimmungen von OSM]
-(https://osmfoundation.org/wiki/Privacy_Policy).
+Sie in den [Datenschutzbestimmungen von
+OSM](https://osmfoundation.org/wiki/Privacy_Policy).
