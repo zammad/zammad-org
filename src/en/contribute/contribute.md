@@ -16,18 +16,18 @@ You can contribute to:
 
 Please have a look on our notes on how to contribute below.
 
-All repos can be found on [Github](https://github.com/zammad).
+All repos can be found on [Github](https://github.com/zammad){target=_blank}.
 
 
 ## Zammad Source Code
 
-The Zammad source code can be found on GitHub in the [Zammad repository](https://github.com/zammad/zammad).
+The Zammad source code can be found on GitHub in the [Zammad repository](https://github.com/zammad/zammad){target=_blank}.
 
-Have a look at the [developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md) to get started.
+Have a look at the [developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank} to get started.
 
 ### Supported Branches / Versions
 
-The main [Zammad repository](https://github.com/zammad/zammad) at Github has
+The main [Zammad repository](https://github.com/zammad/zammad){target=_blank} at Github has
 several branches.
 
 #### `develop`
@@ -35,13 +35,13 @@ several branches.
 * This is the current (unreleased) development state of next major release
   (this will become the new `stable` branch).
 * Don't use it for production!
-* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
+* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable`
 
 * This is the current stable release, e.g. Zammad 5.2.
 * Use this branch for production installations.
-* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md).
+* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable-x.y`
 
@@ -53,40 +53,15 @@ several branches.
 
 Do you want to contribute to the Zammad documentation?
 
-Open a new GitHub pull request at
-
-* https://github.com/zammad/zammad-org (the documentation you are currently
-  reading)
-* https://github.com/zammad/zammad-documentation (legacy)
-* https://github.com/zammad/zammad-admin-documentation (legacy)
-* https://github.com/zammad/zammad-user-documentation (legacy)
-
-with your changes.
-
-The legacy documentation is hosted on Read the Docs. You can find it under:
-
-* https://docs.zammad.org
-* https://admin-docs.zammad.org
-* https://user-docs.zammad.org
+Open a new GitHub pull request at https://github.com/zammad/zammad-org
+with your changes and make sure to follow the prerequisites and instructions
+in the repo's README.
 
 The documentation you are reading is available on next.zammad.org and zammad.org
 and is built via Vitepress. The source files are written in Markdown.
 Make sure to change the English source files only which are placed under
-`/src/en/`. The translations are made via Weblate and will overwrite
+`/src/en/`. The translation is done via Weblate and will overwrite
 any changes in the language specific folders (except `/src/eng/`).
-
-### ReStructuredText markup
-
-If you like to edit the docs, use the ReStructuredText markup language.
-Information about this language can be found at:
-
-  * http://www.sphinx-doc.org/en/stable/rest.html
-  * http://docutils.sourceforge.net/docs/user/rst/quickref.html
-  * http://docs.readthedocs.io/en/latest/_themes/sphinx_rtd_theme/demo_docs/source/demo.html
-
-Thanks! ❤ ❤ ❤
-
-Zammad Team
 
 ## Translation
 
@@ -95,21 +70,21 @@ support of Zammad and/or the documentation, you are welcome to contribute
 as well! The translation of Zammad itself and the documentation is done by using
 Weblate, which is a service for the collaborative translation of projects.
 
-You just have to head over to Zammad's [Weblate instance](https://translations.zammad.org/).
+You just have to head over to Zammad's [Weblate instance](https://translations.zammad.org/){target=_blank}.
 You can either create an account (if you don't have one already) or even sign in with your
 Github account!
 
 We will cover some basic steps in the following sections to get you started with
 translating. However, if you want to use some additional features of Weblate
 and want to dive deeper into it, their
-[translation documentation](https://docs.weblate.org/en/latest/user/translating.htm)
+[translation documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
 is a good starting point.
 
 ### Basics
 
 The translation of **Zammad** and the translation of the **documentation**
-are split into two projects in Weblate. When you click in the top menu under
-"*Projects > Browse all projects*", you can find the overview of the two
+are split into different projects in Weblate. When you click in the top menu under
+"*Projects > Browse all projects*", you can find the overview of the
 projects:
 
 ![Screenshot showing translation projects in Weblate and menu](/screenshots/weblate-overview-docs.png)
@@ -117,10 +92,7 @@ projects:
 Structure of translation projects in Weblate:
 
  * Documentation
-    * User Documentation (`latest`)
-    * User Documentation (`pre-release`)
-    * Admin Documentation (`latest`)
-    * Admin Documentation (`pre-release`)
+    * New Documentation at next.zammad.org
  * Zammad
     * Zammad (`develop`, development version)
     * Zammad (`stable` version)
@@ -128,9 +100,10 @@ Structure of translation projects in Weblate:
 
 ::: tip
 
-It is no big difference which branch you choose to translate. When Weblate
+It should be no big difference which branch you choose to translate. When Weblate
 detects the same strings in different branches, they will be used for all
-branches and only have to be translated once.
+branches and only have to be translated once. If in doubt, choose the `develop`
+version.
 :::
 
 After selecting a project (Documentation or Zammad), you will see different
@@ -179,34 +152,23 @@ the user interface of Weblate:
 ### Troubleshooting
 
 And finally some notes for "special" source strings, you might see in the
-documentation projects (see RestructuredText_ for details):
+documentation projects:
 
-- **\`\`example-string\`\`**
+- **\`example-string\`**
 
     This is rendered as `example-string`. Depending on the context, it can be
-    translated or not. In any case, use the \`` before and after the string in
+    translated or not. In any case, use the \` before and after the string in
     your translation.
 
-- **\:doc:\`example \<path/to/document>\`**
+- **\[example\](/en/path/to/document-or-website\)**
 
-    This is a link to another page. Some links doesn't have the "example" part
-    included, e.g. \:doc:\`path/to/document. The above "example" is the text,
-    which is shown as link. This part can be translated. The path/to/document
-    may not be translated, otherwise the link would not work anymore.
-
-- **\`some text \<https://example.com\>`\_**
-
-    This is a link which can refer to an external website. "some text" is the
-    displayed text in the documentation, the part between \< and \> is the link
-    target. The \_ at the end is important and must remain in the translated
-    text.
-
-- **\:admin-docs:\`some text \</manage-text-modules.html\>\`**
-
-    This is a link which refers to external documentation. "some text" is the
-    displayed text in the documentation, the part between \< and \> is the link
-    target. Note the absence of \_ at the end, since this link is using a
-    different construction mechanism.
+    This is a link to another page, including the language code.
+    The above "example" is the text, which is shown as link text. This part can
+    be translated. For the path, only the `en` may be replaced by the
+    language code you are translating in. Make sure that your language is
+    already present on zammad.org (check it by using the language switcher).
+    Otherwise contact us if you want to have your language activated (and a
+    substantial amount of the strings are already translated).
 
 - **\*\*example string\*\***
 
