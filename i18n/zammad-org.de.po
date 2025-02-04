@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-02-03 14:55+0100\n"
-"PO-Revision-Date: 2025-01-31 14:48+0000\n"
+"PO-Revision-Date: 2025-02-04 10:24+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -10227,6 +10227,9 @@ msgid ""
 ": - `en`, `de`\n"
 "  - Language code of detected language, may be empty\n"
 msgstr ""
+"`detected_language`\n"
+": - `en`, `de`\n"
+"  - Sprachen-Code der ermittelten Sprache, kann leer sein\n"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:427
@@ -10236,6 +10239,9 @@ msgid ""
 ": - `English`, `German`\n"
 "  - Language name of detected language, may be empty\n"
 msgstr ""
+"`detected_language_name`\n"
+": - `English`, `German`\n"
+"  - Sprach-Name der ermittelten Sprache, kann leer sein\n"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:431
@@ -24171,7 +24177,7 @@ msgid ""
 "webserver-config) before continuing."
 msgstr ""
 "Diese Dokumentation setzt eine bereits funktionierende Apache-Konfiguration "
-"voraus.  Sie sollten einen Blick in die [Webserver Konfiguration](de/"
+"voraus.  Sie sollten einen Blick in die [Webserver Konfiguration](/de/"
 "tutorials/webserver-config) werfen, bevor Sie fortfahren."
 
 #. type: Title ###

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-02-03 14:55+0100\n"
-"PO-Revision-Date: 2025-01-31 14:48+0000\n"
+"PO-Revision-Date: 2025-02-04 10:24+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -1466,16 +1466,12 @@ msgstr "Претплатите се на тикет"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:90
-#, fuzzy
-#| msgid ""
-#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
-#| "screenshot-full-page.png)"
 msgid ""
 "![Screenshot shows subscribe feature](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-subscribe.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
-"screenshot-full-page.png)"
+"![Снимак екрана приказује функцију претплате](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-subscribe.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:95
@@ -1483,6 +1479,8 @@ msgid ""
 "If you are interested in the progress of a ticket, you can subscribe to it.  "
 "This means you will receive notifications for each update."
 msgstr ""
+"Уколико сте заинтересовани за прогрес тикета, можете се претплатити на "
+"исти.  Ово значи да ћете примати обавештења за свако освежавање."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:103
@@ -1493,26 +1491,25 @@ msgid ""
 "displayed show you who has subscribed to the ticket and is therefore "
 "notified of updates."
 msgstr ""
+"Укључите прекидач „Претплати се” у траци тикета са стране за добијање "
+"обавештења. Уколико сте већ поменути у тикету, већ сте претплаћени. "
+"Искључите прекидач за заустављање обавештења.  Сличице испод вам приказују "
+"ко је претплаћен на тикет и ко је обавештен о освежавањима."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:104
-#, fuzzy, no-wrap
-#| msgid "Use of Matomo"
+#, no-wrap
 msgid "Use a Macro"
-msgstr "Употреба Matomo"
+msgstr "Користите макро"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:107
-#, fuzzy
-#| msgid ""
-#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
-#| "screenshot-full-page.png)"
 msgid ""
 "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-macro.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
-"screenshot-full-page.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:115
@@ -16540,7 +16537,7 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:305
 #, no-wrap
 msgid "Scopes"
-msgstr ""
+msgstr "Опсези"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:310
