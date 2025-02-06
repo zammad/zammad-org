@@ -116,7 +116,7 @@ Change the order of overviews for your account. Simply drag & drop them
 by clicking the handles on the left side.
 
 If your admin changes the order, your custom order remains. You can switch back
-to your admin's order by clicking the **Reset Overview Order** button.
+to your admin's order by clicking the `Reset Overview Order` button.
 
 ### Calendar
 

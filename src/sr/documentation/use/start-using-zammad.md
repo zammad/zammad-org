@@ -97,23 +97,8 @@ point.  Your Zammad admin may have created additional overviews. These are
 based on conditions, which are basically rules, to define which ticket
 appears in which overview.
 
-You can adjust the order by clicking on one of the column headers as well as
-change their width by dragging the column dividers.
-
-To visualize different ticket states and priorities, the entries are color
-coded. The **state** is represented by a circle:
-
-- Closed: green
-- Merged: green
-- Pending: grey/black
-- New/open: yellow
-- Escalated: red
-
-The **priority** is represented by colored text:
-
-- 3 - high: red
-- 2 - normal: blue
-- 1 - low: light blue
+For a detailed description, head over to the [overview usage
+guide](/en/documentation/use/guides/overviews).
 
 ### Via Search
 

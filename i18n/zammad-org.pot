@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-05 06:00+0000\n"
+"POT-Creation-Date: 2025-02-06 14:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,18 +202,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -944,7 +932,8 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
-#: src/en/documentation/use/start-using-zammad.md:215
+#: src/en/documentation/use/guides/overviews.md:10
+#: src/en/documentation/use/start-using-zammad.md:200
 #: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
 #: src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
@@ -2017,19 +2006,296 @@ msgid ""
 "tutorials and reference and use the search."
 msgstr ""
 
-#. type: Title #
-#: src/en/documentation/use/how-to/how-to.md:1
-#: src/en/documentation/use/how-to/how-to.md:6
-#: src/en/reference/rest-api/time-accounting.md:1
-#: src/en/reference/rest-api/time-accounting.md:6
-#, markdown-text, no-wrap
-msgid "Time Accounting"
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/guides/index.md:1
+#, no-wrap
+msgid "Guides"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/how-to/index.md:1
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:1
+#: src/en/documentation/use/guides/overviews.md:6
+#: src/en/documentation/use/manage-profile.md:113
+#, markdown-text, no-wrap
+msgid "Overviews"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:9
+#, markdown-text
+msgid ""
+"![Screenshot shows opened overview "
+"section](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:17
+#, markdown-text, no-wrap
+msgid ""
+"Overviews are a core component of Zammad. Open them by clicking the\n"
+"`Overviews` button in the navigation bar or use the keyboard shortcut\n"
+"<kbd>o</kbd>. You can think of overviews as a kind of email inbox with "
+"different\n"
+"folders. Use them to find new tickets that you want to process and to keep\n"
+"track of tickets that have not yet been completed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:20
+#, markdown-text
+msgid ""
+"Depending on your system configuration and what your Zammad admin set up, "
+"you can find different overviews there, for example:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+#, markdown-text
+msgid "Your assigned tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+#, markdown-text
+msgid "Unassigned and open tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+#, markdown-text
+msgid "Pending reached tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+#, markdown-text
+msgid "Escalated tickets"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:28
+#, markdown-text
+msgid ""
+"Selecting an overview in the second level navigation shows you a table which "
+"includes matching tickets."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/overviews.md:29
+#, markdown-text, no-wrap
+msgid "Usage and Features"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:34
+#, markdown-text
+msgid ""
+"Overviews can be defined by admins based on rules and conditions. That means "
+"if a ticket has been changed and the condition of the overview isn't "
+"matching anymore, the ticket is no longer visible in this overview."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:40
+#, markdown-text
+msgid ""
+"Overviews are updated automatically. You don't have to reload your browser "
+"to observe changes. You can adjust the order temporarily by clicking on one "
+"of the column headers as well as change their width by dragging the column "
+"dividers.  The order is only preserved until you switch to another overview "
+"or reload the page."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:43
+#, markdown-text
+msgid ""
+"For each overview, you can find a badge attached. The number in this badge "
+"tells you how many tickets are in each overview."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:48
+#, markdown-text
+msgid ""
+"The ticket lists in overviews can also be grouped by a specific attribute "
+"(e.g. customer, organization, owner). This has to be adjusted by your Zammad "
+"admin. If a grouping is activated, you can find a badge with a counter of "
+"the included tickets there as well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:51
+#, markdown-text
+msgid ""
+"Depending on what you are searching for, select a fitting overview and start "
+"working on a ticket."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/guides/overviews.md:53
 #, no-wrap
-msgid "How-To"
+msgid ""
+"If you miss an overview or want to have different settings, let your "
+"Zammad\n"
+"admin know!\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:58
+#, markdown-text, no-wrap
+msgid "Color Coded State and Priority"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:61
+#, markdown-text
+msgid ""
+"![Screenshot shows overview table with "
+"grouping](/screenshots/cypress/usage-guide-overview.cy.js/overview-detail.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:64
+#, markdown-text
+msgid ""
+"To visualize different ticket states and priorities, the entries in the "
+"table are color coded."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:66
+#, markdown-text
+msgid "The **state** is represented by a circle:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+#, markdown-text
+msgid "Closed: green"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+#, markdown-text
+msgid "Merged: green"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+#, markdown-text
+msgid "Pending: grey/black"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+#, markdown-text
+msgid "New/open: yellow"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+#, markdown-text
+msgid "Escalated: red"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:74
+#, markdown-text
+msgid "The **priority** is represented by colored text:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:78
+#, markdown-text
+msgid "3 high: red"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:78
+#, markdown-text
+msgid "2 normal: blue"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:78
+#, markdown-text
+msgid "1 low: light blue"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:79
+#, markdown-text, no-wrap
+msgid "Open a Ticket"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:85
+#, markdown-text
+msgid ""
+"Open a ticket by simply clicking on the line. This opens the ticket as a tab "
+"in the left navigation bar and shows you the ticket detail view. If this "
+"ticket is already present in your navigation bar, it activates this tab "
+"instead of opening a duplicate tab."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:89
+#, markdown-text
+msgid ""
+"If an overview contains more than one ticket and you open one of the "
+"tickets, you can find arrows in the ticket detail view header to switch to "
+"the next/previous ticket of this overview."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:90
+#, markdown-text, no-wrap
+msgid "TODO Bulk Actions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:94
+#, markdown-text
+msgid ""
+"Perform bulk actions by selecting multiple tickets and either use the "
+"drop-down fields or drag them with the mouse to invoke the bulk action "
+"overlay."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:95
+#, markdown-text, no-wrap
+msgid "Reorder Overviews"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:103
+#, markdown-text
+msgid ""
+"If the order of the overviews doesn't reflect your working process or you "
+"just like to have a different order, you can re-arrange them for your "
+"account. Use the `reorder items` button at the very top of the second level "
+"navigation bar, which opens your [profile "
+"settings](/en/documentation/use/manage-profile#overviews) where you can "
+"define a custom order for your overviews."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:106
+#, markdown-text
+msgid ""
+"To change the order, simply drag & drop them by clicking the handles on the "
+"left side."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:109
+#, markdown-text
+msgid ""
+"If your admin changes the order, your custom order is preserved. You can "
+"switch back to your admin's order by clicking the `Reset Overview Order` "
+"button."
 msgstr ""
 
 #. type: Title #
@@ -2270,7 +2536,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:90
 #: src/en/documentation/use/start-using-zammad.md:74
-#: src/en/documentation/use/start-using-zammad.md:196
+#: src/en/documentation/use/start-using-zammad.md:181
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
@@ -2332,12 +2598,6 @@ msgid ""
 "the permissions of the site.\n"
 msgstr ""
 
-#. type: Title ###
-#: src/en/documentation/use/manage-profile.md:113
-#, markdown-text, no-wrap
-msgid "Overviews"
-msgstr ""
-
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:117
 #, markdown-text
@@ -2351,7 +2611,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
-"back to your admin's order by clicking the **Reset Overview Order** button."
+"back to your admin's order by clicking the `Reset Overview Order` button."
 msgstr ""
 
 #. type: Title #
@@ -2636,80 +2896,18 @@ msgstr ""
 #: src/en/documentation/use/start-using-zammad.md:101
 #, markdown-text
 msgid ""
-"You can adjust the order by clicking on one of the column headers as well as "
-"change their width by dragging the column dividers."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:104
-#, markdown-text
-msgid ""
-"To visualize different ticket states and priorities, the entries are color "
-"coded. The **state** is represented by a circle:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-#, markdown-text
-msgid "Closed: green"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-#, markdown-text
-msgid "Merged: green"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-#, markdown-text
-msgid "Pending: grey/black"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-#, markdown-text
-msgid "New/open: yellow"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-#, markdown-text
-msgid "Escalated: red"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:112
-#, markdown-text
-msgid "The **priority** is represented by colored text:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-#, markdown-text
-msgid "3 - high: red"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-#, markdown-text
-msgid "2 - normal: blue"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-#, markdown-text
-msgid "1 - low: light blue"
+"For a detailed description, head over to the [overview usage "
+"guide](/en/documentation/use/guides/overviews)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:117
+#: src/en/documentation/use/start-using-zammad.md:102
 #, markdown-text, no-wrap
 msgid "Via Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:123
+#: src/en/documentation/use/start-using-zammad.md:108
 #, markdown-text, no-wrap
 msgid ""
 "However, if you search for a specific ticket which might or might not be\n"
@@ -2720,37 +2918,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:125
+#: src/en/documentation/use/start-using-zammad.md:110
 #, markdown-text
 msgid "The search covers:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 #, markdown-text
 msgid "Message subject and text"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 #, markdown-text
 msgid "Names and email addresses"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 #, markdown-text
 msgid "Text in file attachments"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 #, markdown-text
 msgid "User and organizations details (like notes, names, etc.)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:135
+#: src/en/documentation/use/start-using-zammad.md:120
 #, markdown-text
 msgid ""
 "When you enter a search term, you immediately see a preview of the search "
@@ -2760,7 +2958,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:138
+#: src/en/documentation/use/start-using-zammad.md:123
 #, markdown-text
 msgid ""
 "Are you a power user and want to have more powerful feature? Have a look at "
@@ -2768,7 +2966,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Advanced search)
-#: src/en/documentation/use/start-using-zammad.md:139
+#: src/en/documentation/use/start-using-zammad.md:124
 #, no-wrap
 msgid ""
 "\n"
@@ -2875,7 +3073,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:203
+#: src/en/documentation/use/start-using-zammad.md:188
 #, markdown-text
 msgid ""
 "Depending on the [notification "
@@ -2886,7 +3084,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:207
+#: src/en/documentation/use/start-using-zammad.md:192
 #, markdown-text
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
@@ -2895,7 +3093,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:212
+#: src/en/documentation/use/start-using-zammad.md:197
 #, markdown-text
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
@@ -2905,13 +3103,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:213
+#: src/en/documentation/use/start-using-zammad.md:198
 #, markdown-text, no-wrap
 msgid "Ticket Basics"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:220
+#: src/en/documentation/use/start-using-zammad.md:205
 #, markdown-text
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
@@ -2920,7 +3118,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
@@ -2928,7 +3126,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid ""
 "You and your colleagues can see who is working on which customer request "
@@ -2936,7 +3134,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid ""
 "The state of each request as well as the history (who did what?) is "
@@ -2944,13 +3142,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
@@ -2958,7 +3156,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 #, markdown-text
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
@@ -2966,7 +3164,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:236
+#: src/en/documentation/use/start-using-zammad.md:221
 #, markdown-text
 msgid ""
 "So, basically you can work with Zammad similar as with your email "
@@ -2975,7 +3173,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
@@ -2983,7 +3181,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
@@ -2991,7 +3189,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
@@ -2999,7 +3197,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
@@ -3008,7 +3206,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
@@ -3018,7 +3216,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket.  "
@@ -3030,7 +3228,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 #, markdown-text
 msgid ""
 "**Group**: This ticket attribute is useful for organizations with more than "
@@ -3039,13 +3237,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:260
+#: src/en/documentation/use/start-using-zammad.md:245
 #, markdown-text, no-wrap
 msgid "Ticket Detail View"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:264
+#: src/en/documentation/use/start-using-zammad.md:249
 #, markdown-text
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
@@ -3053,7 +3251,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:271
+#: src/en/documentation/use/start-using-zammad.md:256
 #, markdown-text
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
@@ -3065,7 +3263,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:274
+#: src/en/documentation/use/start-using-zammad.md:259
 #, markdown-text
 msgid ""
 "Independent of the customer's article type, you can always add internal "
@@ -3074,13 +3272,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:275
+#: src/en/documentation/use/start-using-zammad.md:260
 #, markdown-text, no-wrap
 msgid "Updating your Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:282
+#: src/en/documentation/use/start-using-zammad.md:267
 #, markdown-text
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
@@ -3091,13 +3289,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:283
+#: src/en/documentation/use/start-using-zammad.md:268
 #, markdown-text, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:289
+#: src/en/documentation/use/start-using-zammad.md:274
 #, markdown-text
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
@@ -13709,9 +13907,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:300
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -15481,6 +15679,13 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title #
+#: src/en/reference/rest-api/time-accounting.md:1
+#: src/en/reference/rest-api/time-accounting.md:6
+#, markdown-text, no-wrap
+msgid "Time Accounting"
+msgstr ""
+
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:11
 #: src/en/reference/rest-api/time-accounting.md:23
@@ -15880,6 +16085,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -19546,27 +19763,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:230
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:232
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the *last* value of the field in question.\n"
+msgid "    means we can only display the *last* value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:233
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:235
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:236
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:238
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

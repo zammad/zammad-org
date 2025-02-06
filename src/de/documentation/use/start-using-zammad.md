@@ -103,25 +103,8 @@ möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf
 Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht
 erscheint.
 
-Sie können die Reihenfolge anpassen, indem Sie auf einen der Kopfzeilen der
-Spalten klicken, und die Breite der Spalten ändern, indem Sie die
-Spaltentrennlinien verschieben.
-
-Zur Hervorhebung der verschiedenen Status und Prioritäten von Tickets sind
-die Einträge farblich gekennzeichnet. Der **Status** wird durch einen Kreis
-dargestellt:
-
-- Geschlossen: grün
-- Zusammengefasst: grün
-- Warten auf: grau/schwarz
-- Neu/offen: gelb
-- Eskaliert: rot
-
-Die **Priorität** wird durch farbigen Text dargestellt:
-
-- 3 - hoch: rot
-- 2 - normal: blau
-- 1 - niedrig: hellblau
+For a detailed description, head over to the [overview usage
+guide](/en/documentation/use/guides/overviews).
 
 ### Über die Suche
 

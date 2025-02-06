@@ -474,6 +474,35 @@ Mola
   updated_at:   created_at,
 )
 
+puts 'Creating overviews'
+# 2 individual overviews with 8-10 tickets in there
+UserInfo.current_user_id = 1
+overview_role = Role.find_by(name: 'Agent')
+Overview.create_if_not_exists(
+  name:      'Open Tickets by Group',
+  link:      'open-group',
+  prio:      1000,
+  role_ids:  [overview_role.id],
+  condition: {
+    'ticket.state_id' => {
+      operator: 'is',
+      value:    [1, 2, 3, 4, 5],
+    },
+  },
+  group_by:        'group',
+  group_direction: 'ASC',
+  order:     {
+    by:        'created_at',
+    direction: 'ASC',
+  },
+  view:      {
+    d:                 %w[title customer group created_at],
+    s:                 %w[title customer group created_at],
+    m:                 %w[number title customer group created_at],
+    view_mode_default: 's',
+  },
+)
+
 puts 'Setting up system...'
 
 # System preparation

@@ -133,10 +133,8 @@ Berechtigungen der Website anpassen können.
 einfach per Drag & Drop, indem Sie auf die Fläche auf der linken Seite
 klicken.
 
-Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
-Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres Administrators
-wechseln, indem Sie auf die Schaltfläche **Reihenfolge der Übersichten
-zurücksetzen** klicken.
+If your admin changes the order, your custom order remains. You can switch
+back to your admin's order by clicking the `Reset Overview Order` button.
 
 ### Kalender
 
