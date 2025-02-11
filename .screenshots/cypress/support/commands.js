@@ -30,7 +30,7 @@ Cypress.Commands.add('loginDesktopView', (userLogin, userPassword) => {
   cy.get('[name="login"]').type(userLogin)
   cy.get('[name="password"]').type(userPassword)
   cy.get('button').contains('Sign in').click()
-  cy.url().should('match', /\/desktop\/$/)
+  cy.url().should('not.include', '/desktop/login')
 })
 
 Cypress.Commands.add('closeTab', (tabTitle) => {

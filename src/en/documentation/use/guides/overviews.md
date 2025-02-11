@@ -57,24 +57,26 @@ admin know!
 
 ### Color Coded State and Priority
 
-![Screenshot shows overview table with grouping](/screenshots/cypress/usage-guide-overview.cy.js/overview-detail.png)
-
 To visualize different ticket states and priorities, the entries in the table
 are color coded.
 
-The **state** is represented by a circle:
 
-- Closed: green
-- Merged: green
-- Pending: grey/black
-- New/open: yellow
-- Escalated: red
+The icon next to the ticket title mainly represents the need for action:
 
-The **priority** is represented by colored text:
+![Screenshot shows ticket states](/screenshots/overviews/states.png)
 
-- 3 high: red
+- Yellow circle: action needed (e.g. new, open, pending reached)
+- Grey circle: paused, no action needed right now (e.g. pending)
+- Green circle: no action needed any more (e.g. closed, merged)
+- Red triangle: immediate action needed (ticket escalated due to an SLA violation)
+
+The **priority** is represented by the color of the ticket title:
+
+![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)
+
+- 1 low: grey
 - 2 normal: blue
-- 1 low: light blue
+- 3 high: red
 
 ### Open a Ticket
 

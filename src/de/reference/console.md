@@ -697,6 +697,15 @@ Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
 
+### Activate Priority Icon
+
+To activate additional icons which represent the priority, use the command
+below:
+
+```ruby
+Setting.set('ui_ticket_priority_icons', true)
+```
+
 ## Andere nützliche Befehle
 
 ### E-Mails abrufen

@@ -134,7 +134,7 @@ thanks a lot, I already got the money!
 evelynsmith = User.find_by(login: 'evely.smith@midlandbank.biz')
 morganreed = User.find_by(login: 'morgan@fastlane.inc')
 UserInfo.current_user_id = evelynsmith.id
-created_at = Time.zone.now - 1.hours
+created_at = Time.zone.now - 100.minutes
 ticket2 = Ticket.create(
   title:      'Order of 10 laptops XYX3000',
   group:      Group.find_by(name: 'Sales'),
@@ -144,6 +144,7 @@ ticket2 = Ticket.create(
   priority:   Ticket::Priority.find_by(name: '2 normal'),
   created_at: created_at,
   updated_at: created_at,
+  escalation_at: Time.zone.now - 40.minutes,
 )
 article = Ticket::Article.create(
   ticket:       ticket2,
@@ -449,7 +450,7 @@ ticket6 = Ticket.create(
   customer:   mola,
   owner_id:   ava.id,
   state:      Ticket::State.find_by(name: 'open'),
-  priority:   Ticket::Priority.find_by(name: '2 normal'),
+  priority:   Ticket::Priority.find_by(name: '1 low'),
   created_at: created_at,
   updated_at: created_at,
 )

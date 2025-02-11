@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-06 14:04+0100\n"
+"POT-Creation-Date: 2025-02-11 09:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2148,15 +2148,7 @@ msgid "Color Coded State and Priority"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:61
-#, markdown-text
-msgid ""
-"![Screenshot shows overview table with "
-"grouping](/screenshots/cypress/usage-guide-overview.cy.js/overview-detail.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:64
+#: src/en/documentation/use/guides/overviews.md:62
 #, markdown-text
 msgid ""
 "To visualize different ticket states and priorities, the entries in the "
@@ -2164,73 +2156,81 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:66
+#: src/en/documentation/use/guides/overviews.md:65
 #, markdown-text
-msgid "The **state** is represented by a circle:"
+msgid "The icon next to the ticket title mainly represents the need for action:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:67
+#, markdown-text
+msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:72
 #, markdown-text
-msgid "Closed: green"
+msgid "Yellow circle: action needed (e.g. new, open, pending reached)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:72
 #, markdown-text
-msgid "Merged: green"
+msgid "Grey circle: paused, no action needed right now (e.g. pending)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:72
 #, markdown-text
-msgid "Pending: grey/black"
+msgid "Green circle: no action needed any more (e.g. closed, merged)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:72
 #, markdown-text
-msgid "New/open: yellow"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:72
-#, markdown-text
-msgid "Escalated: red"
+msgid ""
+"Red triangle: immediate action needed (ticket escalated due to an SLA "
+"violation)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:74
 #, markdown-text
-msgid "The **priority** is represented by colored text:"
+msgid "The **priority** is represented by the color of the ticket title:"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:76
 #, markdown-text
-msgid "3 high: red"
+msgid "![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:80
+#, markdown-text
+msgid "1 low: grey"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:80
 #, markdown-text
 msgid "2 normal: blue"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:80
 #, markdown-text
-msgid "1 low: light blue"
+msgid "3 high: red"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:79
+#: src/en/documentation/use/guides/overviews.md:81
 #, markdown-text, no-wrap
 msgid "Open a Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:85
+#: src/en/documentation/use/guides/overviews.md:87
 #, markdown-text
 msgid ""
 "Open a ticket by simply clicking on the line. This opens the ticket as a tab "
@@ -2240,7 +2240,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:89
+#: src/en/documentation/use/guides/overviews.md:91
 #, markdown-text
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
@@ -2249,13 +2249,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:90
+#: src/en/documentation/use/guides/overviews.md:92
 #, markdown-text, no-wrap
 msgid "TODO Bulk Actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:96
 #, markdown-text
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the "
@@ -2264,13 +2264,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:95
+#: src/en/documentation/use/guides/overviews.md:97
 #, markdown-text, no-wrap
 msgid "Reorder Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:103
+#: src/en/documentation/use/guides/overviews.md:105
 #, markdown-text
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
@@ -2282,7 +2282,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:106
+#: src/en/documentation/use/guides/overviews.md:108
 #, markdown-text
 msgid ""
 "To change the order, simply drag & drop them by clicking the handles on the "
@@ -2290,7 +2290,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:109
+#: src/en/documentation/use/guides/overviews.md:111
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
@@ -6866,20 +6866,40 @@ msgstr ""
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/reference/console.md:686
+#, markdown-text, no-wrap
+msgid "Activate Priority Icon"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:690
+#, markdown-text
+msgid ""
+"To activate additional icons which represent the priority, use the command "
+"below:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:691
+#, no-wrap
+msgid "Setting.set('ui_ticket_priority_icons', true)\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:695
 #, markdown-text, no-wrap
 msgid "Other Useful Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:688
+#: src/en/reference/console.md:697
 #, markdown-text, no-wrap
 msgid "Fetch Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:692
+#: src/en/reference/console.md:701
 #, markdown-text
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
@@ -6887,19 +6907,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:693
+#: src/en/reference/console.md:702
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:697
+#: src/en/reference/console.md:706
 #, markdown-text, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:702
+#: src/en/reference/console.md:711
 #, markdown-text
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
@@ -6908,7 +6928,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:706
+#: src/en/reference/console.md:715
 #, markdown-text
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
@@ -6917,19 +6937,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:707
+#: src/en/reference/console.md:716
 #, markdown-text, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:708
+#: src/en/reference/console.md:717
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:714
+#: src/en/reference/console.md:723
 #, markdown-text
 msgid ""
 "You can find the location of the exported email in the output of your "
@@ -6938,13 +6958,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:715
+#: src/en/reference/console.md:724
 #, markdown-text, no-wrap
 msgid "Edit the Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:719
+#: src/en/reference/console.md:728
 #, markdown-text
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
@@ -6953,25 +6973,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:720
+#: src/en/reference/console.md:729
 #, markdown-text, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:723
+#: src/en/reference/console.md:732
 #, markdown-text
 msgid "After editing the email, run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:724
+#: src/en/reference/console.md:733
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:732
+#: src/en/reference/console.md:741
 #, markdown-text
 msgid ""
 "This will apply your changes from the file to the database. You can also "
@@ -6981,7 +7001,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:733
+#: src/en/reference/console.md:742
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -6990,13 +7010,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:739
+#: src/en/reference/console.md:748
 #, markdown-text, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:743
+#: src/en/reference/console.md:752
 #, markdown-text
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
@@ -7004,13 +7024,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:743
+#: src/en/reference/console.md:752
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:750
+#: src/en/reference/console.md:759
 #, markdown-text
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
@@ -7019,13 +7039,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:751
+#: src/en/reference/console.md:760
 #, markdown-text, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:753
+#: src/en/reference/console.md:762
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -7033,7 +7053,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:762
+#: src/en/reference/console.md:771
 #, markdown-text
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
@@ -7043,7 +7063,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:763
+#: src/en/reference/console.md:772
 #, no-wrap
 msgid ""
 "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
@@ -7051,13 +7071,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:767
+#: src/en/reference/console.md:776
 #, markdown-text, no-wrap
 msgid "Deleting Records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:769
+#: src/en/reference/console.md:778
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -7066,61 +7086,61 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:775
+#: src/en/reference/console.md:784
 #, markdown-text, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:778
+#: src/en/reference/console.md:787
 #, markdown-text
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:778
+#: src/en/reference/console.md:787
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:791
 #, markdown-text
 msgid "Delete all tickets:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:791
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:786
+#: src/en/reference/console.md:795
 #, markdown-text
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:786
+#: src/en/reference/console.md:795
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:789
+#: src/en/reference/console.md:798
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:793
+#: src/en/reference/console.md:802
 #, markdown-text, no-wrap
 msgid "Removing Users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:795
+#: src/en/reference/console.md:804
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -7132,7 +7152,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:805
+#: src/en/reference/console.md:814
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -7143,31 +7163,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:813
+#: src/en/reference/console.md:822
 #, markdown-text
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:816
+#: src/en/reference/console.md:825
 #, markdown-text
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:817
+#: src/en/reference/console.md:826
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:821
+#: src/en/reference/console.md:830
 #, markdown-text
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:822
+#: src/en/reference/console.md:831
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -7176,67 +7196,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:828
+#: src/en/reference/console.md:837
 #, markdown-text, no-wrap
 msgid "Removing Organizations"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:830
+#: src/en/reference/console.md:839
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:834
+#: src/en/reference/console.md:843
 #, markdown-text, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:837
+#: src/en/reference/console.md:846
 #, markdown-text
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:837
+#: src/en/reference/console.md:846
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:842
+#: src/en/reference/console.md:851
 #, markdown-text
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:842
+#: src/en/reference/console.md:851
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:856
 #, markdown-text
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:856
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:851
+#: src/en/reference/console.md:860
 #, markdown-text, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:852
+#: src/en/reference/console.md:861
 #, no-wrap
 msgid ""
 "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
@@ -7244,13 +7264,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:856
+#: src/en/reference/console.md:865
 #, markdown-text, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:858
+#: src/en/reference/console.md:867
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -7258,7 +7278,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:862
+#: src/en/reference/console.md:871
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -7268,7 +7288,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:868
+#: src/en/reference/console.md:877
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -7277,37 +7297,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:874
+#: src/en/reference/console.md:883
 #, markdown-text, no-wrap
 msgid "Removing System Records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:877
+#: src/en/reference/console.md:886
 #, markdown-text
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:878
+#: src/en/reference/console.md:887
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:883
+#: src/en/reference/console.md:892
 #, markdown-text
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:884
+#: src/en/reference/console.md:893
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:889
+#: src/en/reference/console.md:898
 #, markdown-text
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
@@ -7315,13 +7335,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:890
+#: src/en/reference/console.md:899
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:896
+#: src/en/reference/console.md:905
 #, markdown-text
 msgid ""
 "Remove all history information from tickets, users and organizations "
@@ -7329,19 +7349,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:897
+#: src/en/reference/console.md:906
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:901
+#: src/en/reference/console.md:910
 #, markdown-text, no-wrap
 msgid "Reset Zammad Installation"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:903
+#: src/en/reference/console.md:912
 #, no-wrap
 msgid ""
 "\n"
@@ -7353,25 +7373,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:912
+#: src/en/reference/console.md:921
 #, no-wrap
 msgid "rake db:drop\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:915
+#: src/en/reference/console.md:924
 #, no-wrap
 msgid "rake db:create\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:918
+#: src/en/reference/console.md:927
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:921
+#: src/en/reference/console.md:930
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
