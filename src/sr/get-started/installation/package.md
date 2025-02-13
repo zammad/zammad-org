@@ -81,6 +81,10 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 === Debian
 List your current locale settings:
 
@@ -99,6 +103,10 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 === OpenSUSE/SLES
 List your current locale settings:
 
@@ -111,6 +119,10 @@ issue as follows:
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 ===CentOS/RHEL
 List your current locale settings:
 
@@ -123,6 +135,10 @@ issue as follows:
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 :::
 
 ### Elasticsearch инсталација

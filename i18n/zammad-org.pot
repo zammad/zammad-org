@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-11 09:47+0100\n"
+"POT-Creation-Date: 2025-02-13 16:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4106,6 +4106,10 @@ msgid ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "=== Debian\n"
 "List your current locale settings:\n"
 "\n"
@@ -4124,6 +4128,10 @@ msgid ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "=== OpenSUSE/SLES\n"
 "List your current locale settings:\n"
 "\n"
@@ -4136,6 +4144,10 @@ msgid ""
 "```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "===CentOS/RHEL\n"
 "List your current locale settings:\n"
 "\n"
@@ -4148,16 +4160,20 @@ msgid ""
 "```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:128
+#: src/en/get-started/installation/package.md:144
 #, markdown-text, no-wrap
 msgid "Install Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:133
+#: src/en/get-started/installation/package.md:149
 #, markdown-text
 msgid ""
 "The recommended method is to use [Elastic's official "
@@ -4166,7 +4182,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:138
+#: src/en/get-started/installation/package.md:154
 #, markdown-text
 msgid ""
 "Alternatively, you can follow [our example "
@@ -4176,13 +4192,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:139
+#: src/en/get-started/installation/package.md:155
 #, markdown-text, no-wrap
 msgid "Add Zammad Repository"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:141
+#: src/en/get-started/installation/package.md:157
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make "
@@ -4191,7 +4207,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:146
+#: src/en/get-started/installation/package.md:162
 #, no-wrap
 msgid ""
 "\n"
@@ -4280,13 +4296,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:224
+#: src/en/get-started/installation/package.md:240
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:226
+#: src/en/get-started/installation/package.md:242
 #, no-wrap
 msgid ""
 "\n"
@@ -4327,13 +4343,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:263
+#: src/en/get-started/installation/package.md:279
 #, markdown-text, no-wrap
 msgid "Manage Services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:267
+#: src/en/get-started/installation/package.md:283
 #, markdown-text
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
@@ -4341,49 +4357,49 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:267
+#: src/en/get-started/installation/package.md:283
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:287
 #, markdown-text
 msgid "Only internal puma server (relevant for displaying the web app):"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:287
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-web\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/installation/package.md:291
 #, markdown-text
 msgid "Only background worker - relevant for all delayed- and background jobs:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/installation/package.md:291
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-worker\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:279
+#: src/en/get-started/installation/package.md:295
 #, markdown-text
 msgid "Only websocket server for session related information:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:279
+#: src/en/get-started/installation/package.md:295
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:283
+#: src/en/get-started/installation/package.md:299
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:157
 #, markdown-text, no-wrap
@@ -4391,7 +4407,7 @@ msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 #, markdown-text
 msgid ""
 "Connect Zammad with Elasticsearch ([basic "
@@ -4399,7 +4415,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 #, markdown-text
 msgid ""
 "Adjust your SELinux rules and firewall ([basic "
@@ -4407,19 +4423,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 #, markdown-text
 msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:290
+#: src/en/get-started/installation/package.md:306
 #, markdown-text, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:296
+#: src/en/get-started/installation/package.md:312
 #, markdown-text
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
@@ -4429,26 +4445,26 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #, markdown-text
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #: src/en/reference/docker-env-vars.md:80
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #: src/en/reference/docker-env-vars.md:106
 #: src/en/tutorials/webserver-config.md:111
 #, markdown-text, no-wrap
@@ -4456,19 +4472,19 @@ msgid "Nginx"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #, markdown-text
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:319
 #, markdown-text, no-wrap
 msgid "Database Server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:309
+#: src/en/get-started/installation/package.md:325
 #, markdown-text
 msgid ""
 "Zammad will store all content in a Database. We supported PostgreSQL in "
@@ -4478,7 +4494,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:310
+#: src/en/get-started/installation/package.md:326
 #: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
@@ -4492,7 +4508,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:335
 #, markdown-text
 msgid ""
 "If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.  "
@@ -4500,31 +4516,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:336
 #, markdown-text, no-wrap
 msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:323
+#: src/en/get-started/installation/package.md:339
 #, markdown-text
 msgid "The following reverse proxies are supported:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:342
 #, markdown-text
 msgid "Nginx 1.3+"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:342
 #, markdown-text
 msgid "Apache 2.2+"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:346
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -4533,7 +4549,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:348
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -4541,7 +4557,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:355
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -4552,13 +4568,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:357
 #, markdown-text
 msgid "Supported Elasticsearch versions are `7.8` - `8.x`."
 msgstr ""
 
 #. type: Fenced div block (details Elasticsearch version history)
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:358
 #, no-wrap
 msgid ""
 "\n"
@@ -4575,7 +4591,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:375
 #, markdown-text
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
@@ -4584,13 +4600,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:376
 #, markdown-text, no-wrap
 msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:380
 #, markdown-text
 msgid ""
 "Instead of storing Zammads cache files within your filesystem, they can be "
@@ -4598,7 +4614,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:367
+#: src/en/get-started/installation/package.md:383
 #, markdown-text
 msgid ""
 "The installation and configuration is out of our scope of this "
@@ -4607,13 +4623,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:384
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:373
+#: src/en/get-started/installation/package.md:389
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "

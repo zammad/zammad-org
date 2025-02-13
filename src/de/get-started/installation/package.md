@@ -65,15 +65,15 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` sh
+```sh
 sudo apt install locales
 ```
 ```sh
@@ -82,16 +82,20 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 === Debian
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` sh
+```sh
 sudo apt install locales
 ```
 ```sh
@@ -100,30 +104,42 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
-=== OpenSUSE/SLES
-Auflisten der aktuellen locale Einstellungen:
 
-``` sh
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
+=== OpenSUSE/SLES
+List your current locale settings:
+
+```sh
 localectl status | grep LANG
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` sh
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-===CentOS/RHEL
-Auflisten der aktuellen locale Einstellungen:
 
-``` sh
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
+===CentOS/RHEL
+List your current locale settings:
+
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
-``` sh
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
 :::
 
 ### Elasticsearch installieren
