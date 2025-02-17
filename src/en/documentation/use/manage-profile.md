@@ -75,6 +75,16 @@ notifications while you are absent, too.
 Change the password of your account. Update it by entering your old password,
 the new password and confirm the new one by entering it again.
 
+### Two-factor Authentication
+
+Set up a two-factor authentication (2FA) to increase the security of your
+account. Your admin must have activated at least one 2FA method. It may be even
+enforced to use a 2FA method by your admin.
+
+After following the [2FA guide](./guides/two-factor-auth), you have to provide
+your second factor at the next login. If you can't provide your configured 2FA
+method, contact your admin who can reset it.
+
 ### Devices
 
 Here you can find a list of all devices logged into your Zammad account.

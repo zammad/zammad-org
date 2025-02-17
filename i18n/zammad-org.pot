@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-13 16:48+0100\n"
+"POT-Creation-Date: 2025-02-17 14:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -933,6 +933,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/overviews.md:10
+#: src/en/documentation/use/guides/two-factor-auth.md:6
 #: src/en/documentation/use/start-using-zammad.md:200
 #: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
 #: src/en/reference/rest-api/intro.md:6
@@ -2015,7 +2016,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/manage-profile.md:113
+#: src/en/documentation/use/manage-profile.md:123
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -2298,6 +2299,488 @@ msgid ""
 "button."
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/guides/two-factor-auth.md:1
+#, no-wrap
+msgid "Two-Factor Authentication"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:14
+#, markdown-text
+msgid ""
+"Two-factor authentication (2FA) enhances the security of your Zammad account "
+"by adding an extra layer of verification beyond a password. It requires you "
+"to provide two different types of authentication factors, typically "
+"something you know (like a password) and something you possess (like a "
+"mobile device or a security token), to ensure that you are an authorized "
+"individual who can access the account."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:19
+#, markdown-text
+msgid ""
+"Two-Factor Authentication is an **optional feature**. Administrators must "
+"activate it to be visible in your profile settings. It may be even enforced "
+"by your admin to set up a 2FA method. In this case, you can't use Zammad "
+"unless you set up at least one 2FA method."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:20
+#, markdown-text, no-wrap
+msgid "Set Up"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:26
+#, markdown-text, no-wrap
+msgid ""
+"If the system admin has enabled this feature, you can head to *Avatar >\n"
+"Profile > Two-factor Authentication* to set it up. Depending on the\n"
+"enabled two-factor methods, you may see one or more options in the\n"
+"table.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:28
+#, markdown-text
+msgid "To set up a two-factor method, use the wrench icon and follow the steps."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:30
+#, markdown-text
+msgid ""
+"![Screenshots shows 2FA methods in user profile "
+"settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:32
+#, markdown-text
+msgid "In a modal dialog, you will be asked to confirm your current password."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:36
+#, markdown-text
+msgid ""
+"Depending on the chosen two-factor method, you will be guided through the "
+"setup process, which includes specific steps. Continue with using an "
+"[Authentication App](#authentication-app) or a [Security "
+"Key](#security-key)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/two-factor-auth.md:38
+#, markdown-text, no-wrap
+msgid "Authentication App"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:44
+#, markdown-text
+msgid ""
+"The authenticator app method is a type of two-factor authentication that "
+"uses a mobile application to generate one-time codes for account "
+"verification. After setting up the authenticator app on your device, you "
+"will link it to your Zammad account."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:46
+#, markdown-text
+msgid ""
+"![Screenshots shows app authentication "
+"configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:49
+#, markdown-text
+msgid ""
+"First, make sure you have installed an authenticator app on your mobile "
+"device. Recommended apps are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+#, markdown-text
+msgid ""
+"[Aegis "
+"Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis&hl=de) "
+"(Android only)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+#, markdown-text
+msgid "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+#, markdown-text
+msgid "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+#, markdown-text
+msgid ""
+"[Microsoft "
+"Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:60
+#, markdown-text
+msgid ""
+"Next, open the authenticator app on your device and find a **Scan QR Code** "
+"action, or similar. Point your camera to the Zammad screen and scan the "
+"shown QR code in the middle."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/guides/two-factor-auth.md:61
+#, no-wrap
+msgid ""
+"If your device is not able to scan the QR code, first click on it to\n"
+"reveal your secret. Next, add a manual entry to your authenticator app\n"
+"and enter the provided secret when asked.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:70
+#, markdown-text
+msgid ""
+"Your authenticator app should immediately add the new entry for your Zammad "
+"account, and a 6-digit code will be displayed next to it together with a "
+"timer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:74
+#, markdown-text
+msgid ""
+"Back in Zammad, enter the provided code to the **Security Code** field and "
+"click on **Set Up**. Go on either by setting up another 2FA method "
+"([security key](#security-key)) or check how to [use and manage "
+"2FA](#sign-in)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/two-factor-auth.md:75
+#, markdown-text, no-wrap
+msgid "Security Key"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:81
+#, markdown-text
+msgid ""
+"The security keys method is a type of a two-factor authentication that uses "
+"Web Authentication API in the browser for verifying your identity.  You may "
+"register multiple hardware or software security keys with your Zammad "
+"account and then they can be used during the sign-in process."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:84
+#, markdown-text
+msgid ""
+"Initially, you will be presented with an empty side panel instructing you to "
+"**Set Up** your first key."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:86
+#, markdown-text
+msgid ""
+"![Screenshots shows security key authentication "
+"configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:90
+#, markdown-text
+msgid ""
+"Then, enter a descriptive **Name for this security key** you will be "
+"registering with your account, so you could later identify it in the "
+"list. Then, click on **Next**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:94
+#, markdown-text
+msgid ""
+"Next, depending you your browser, you will be presented with different "
+"options. Select one that refers to your chosen security key and follow the "
+"instructions on the screen."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:96
+#, markdown-text
+msgid ""
+"![Screenshots shows security key authentication "
+"configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:100
+#, markdown-text
+msgid ""
+"You may be asked by the browser to interact with a key or a device so you "
+"can prove you are in physical possession of it (e.g. enter its PIN to unlock "
+"it)."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/two-factor-auth.md:101
+#, no-wrap
+msgid ""
+"You will have limited time (measured in tens of seconds) to register\n"
+"your key. Better to have it ready before you proceed!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:109
+#, markdown-text
+msgid ""
+"If the registration was successful, the modal dialog will close and you are "
+"good to go. In case of errors, you will be able to **Retry** the "
+"registration of the key."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:112
+#, markdown-text
+msgid ""
+"Once set up, security keys can be managed by choosing **Edit** action next "
+"to the two-factor authentication method."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:118
+#, markdown-text
+msgid ""
+"You have an option to remove a key or set up additional ones. There is no "
+"limit in number of security keys you can set up, but keep in mind you cannot "
+"register an already registered key for your account.  Removal of the last "
+"security key will effectively remove the complete security keys method for "
+"your account."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:119
+#, markdown-text, no-wrap
+msgid "Sign-in"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:125
+#, markdown-text
+msgid ""
+"When you set up two-factor authentication for your Zammad account, during "
+"the next sign-in you will be asked to provide the same two-factor method "
+"after entering correct username and password. Depending on the chosen "
+"two-factor method, this may be a security code, hardware key, etc."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:129
+#, markdown-text
+msgid ""
+"In case you are having issues during sign-in with your preferred two-factor "
+"authentication method, you can switch to another one, provided you have set "
+"it up previously."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:133
+#, markdown-text
+msgid ""
+"Look for **Try another method** link below the sign in box. In case you "
+"don't see this link, you probably have no other available two-factor methods "
+"set up, or your admin has disabled this feature."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:135
+#, markdown-text
+msgid ""
+"![Log in screen with link to \"Try another "
+"method\"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:140
+#, markdown-text
+msgid ""
+"Alternatively, you can also use one of your recovery codes, which are "
+"auto-generated for your account during the initial setup of the two-factor "
+"authentication. Click on **Or use one of your recovery codes**, enter one of "
+"your unused codes and click on **Sign in**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:142
+#, markdown-text
+msgid ""
+"![Log in screen with recovery codes "
+"link](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/two-factor-auth.md:143
+#, no-wrap
+msgid ""
+"You can use a single recovery code only once! In case you exhaust the\n"
+"list of your recovery codes, it is recommended you regenerate them for\n"
+"your account.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:149
+#, markdown-text, no-wrap
+msgid "Generate Recovery Codes"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:154
+#, markdown-text
+msgid ""
+"Recovery codes are one-time use security codes that can be used to sign in "
+"if you lose access to your other two-factor authentication methods.  They "
+"can only be used as a **backup method**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:158
+#, markdown-text
+msgid ""
+"If the feature is enabled by the admin, recovery codes will be automatically "
+"generated for you during the setup of your initial two-factor authentication "
+"method."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:161
+#, markdown-text
+msgid ""
+"You will be asked to print out or save the generated recovery codes in a "
+"safe place. Once used, a recovery code cannot be reused."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:163
+#, markdown-text
+msgid ""
+"![Screenshot shows output of recovery codes during 2FA "
+"setup](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:168
+#, markdown-text
+msgid ""
+"You also have an option to regenerate your recovery codes at any time, which "
+"invalidates already existing recovery codes and provides you with a list of "
+"fresh codes. You can do this by clicking on **Regenerate recovery codes** "
+"button in your profile's 2FA settings."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:169
+#, markdown-text, no-wrap
+msgid "Set a Default 2FA Method"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:174
+#, markdown-text
+msgid ""
+"To set an already set up two-factor method as default, use the ⋮ **Actions** "
+"menu next to it in your profile's 2FA settings and choose **Set as "
+"default**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:177
+#, markdown-text
+msgid ""
+"In order to identify your current default two-factor authentication method, "
+"look for a small blue badge next to the method name."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:179
+#, markdown-text
+msgid ""
+"![Screenshot shows list of 2FA methods and default "
+"method](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:183
+#, markdown-text
+msgid ""
+"A default two-factor authentication method is just your preferred method "
+"during the sign-in process. You will always have an option to try signing in "
+"using another method."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:184
+#, markdown-text, no-wrap
+msgid "Edit a 2FA Method"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:187
+#, markdown-text
+msgid ""
+"![Screenshot shows output of recovery codes during 2FA "
+"setup](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:191
+#, markdown-text
+msgid ""
+"To edit an already set up two-factor method, use the ⋮ **Actions** menu next "
+"to it and choose **Edit**. In a modal dialog, you will be asked to confirm "
+"your current password."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:196
+#, markdown-text
+msgid ""
+"Depending on the chosen two-factor method, you will be guided again through "
+"the setup process. Normally, editing a method will simply renew it and "
+"replace the older setup, but some methods do support advanced functions "
+"(e.g. adding multiple security keys)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:197
+#, markdown-text, no-wrap
+msgid "Remove a 2FA Method"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:202
+#, markdown-text
+msgid ""
+"To remove an already set up two-factor method, use the ⋮ **Actions** menu "
+"next to it and choose **Remove**. In a modal dialog, you will be asked to "
+"confirm the removal with your current password."
+msgstr ""
+
 #. type: Title #
 #: src/en/documentation/use/manage-profile.md:6
 #, markdown-text, no-wrap
@@ -2506,11 +2989,35 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:78
 #, markdown-text, no-wrap
-msgid "Devices"
+msgid "Two-factor Authentication"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:83
+#, markdown-text
+msgid ""
+"Set up a two-factor authentication (2FA) to increase the security of your "
+"account. Your admin must have activated at least one 2FA method. It may be "
+"even enforced to use a 2FA method by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:87
+#, markdown-text
+msgid ""
+"After following the [2FA guide](./guides/two-factor-auth), you have to "
+"provide your second factor at the next login. If you can't provide your "
+"configured 2FA method, contact your admin who can reset it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:88
+#, markdown-text, no-wrap
+msgid "Devices"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:93
 #, markdown-text
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account.  If "
@@ -2519,13 +3026,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:84
+#: src/en/documentation/use/manage-profile.md:94
 #, markdown-text, no-wrap
 msgid "Token Access"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:89
+#: src/en/documentation/use/manage-profile.md:99
 #, markdown-text
 msgid ""
 "Generate a personal access token for a third party application to access the "
@@ -2534,7 +3041,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:90
+#: src/en/documentation/use/manage-profile.md:100
 #: src/en/documentation/use/start-using-zammad.md:74
 #: src/en/documentation/use/start-using-zammad.md:181
 #, markdown-text, no-wrap
@@ -2542,13 +3049,13 @@ msgid "Notifications"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:93
+#: src/en/documentation/use/manage-profile.md:103
 #, markdown-text
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 #, markdown-text
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
@@ -2556,7 +3063,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 #, markdown-text
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
@@ -2564,25 +3071,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 #, markdown-text
 msgid "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 #, markdown-text
 msgid "For tickets in which group you get notified"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:102
+#: src/en/documentation/use/manage-profile.md:112
 #, markdown-text
 msgid "Additionally, you can select a notification sound or disable the sound."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/manage-profile.md:103
+#: src/en/documentation/use/manage-profile.md:113
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you "
@@ -2599,7 +3106,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:117
+#: src/en/documentation/use/manage-profile.md:127
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -2607,7 +3114,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:120
+#: src/en/documentation/use/manage-profile.md:130
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
@@ -2615,7 +3122,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/manage-profile.md:121
+#: src/en/documentation/use/manage-profile.md:131
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -2623,7 +3130,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:125
+#: src/en/documentation/use/manage-profile.md:135
 #, markdown-text
 msgid ""
 "Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
@@ -2631,7 +3138,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:128
+#: src/en/documentation/use/manage-profile.md:138
 #, markdown-text
 msgid ""
 "Use either the upper \"Combined subscription URL\" to subscribe to all "

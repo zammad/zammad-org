@@ -86,6 +86,16 @@ auch Benachrichtigungen, wenn Sie abwesend sind.
 altes Passwort und das neue Passwort eingeben und das neue Passwort durch
 erneute Eingabe bestätigen.
 
+### Two-factor Authentication
+
+Set up a two-factor authentication (2FA) to increase the security of your
+account. Your admin must have activated at least one 2FA method. It may be
+even enforced to use a 2FA method by your admin.
+
+After following the [2FA guide](./guides/two-factor-auth), you have to
+provide your second factor at the next login. If you can't provide your
+configured 2FA method, contact your admin who can reset it.
+
 ### Geräte
 
 Hier finden Sie eine Liste aller Geräte, die in Ihrem Zammad Konto

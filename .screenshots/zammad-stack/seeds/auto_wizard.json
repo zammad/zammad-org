@@ -356,6 +356,18 @@
     {
       "name": "system_agent_limit",
       "value": null
+    },
+    {
+      "name": "two_factor_authentication_method_security_keys",
+      "value": true
+    },
+    {
+      "name": "two_factor_authentication_method_authenticator_app",
+      "value": true
+    },
+    {
+      "name": "two_factor_authentication_enforce_role_ids",
+      "value": []
     }
   ],
   "TextModuleLocale": {
