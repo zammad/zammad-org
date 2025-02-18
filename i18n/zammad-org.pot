@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-17 14:33+0100\n"
+"POT-Creation-Date: 2025-02-18 15:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2353,7 +2353,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:30
 #, markdown-text
 msgid ""
-"![Screenshots shows 2FA methods in user profile "
+"![Screenshot shows 2FA methods in user profile "
 "settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
 msgstr ""
 
@@ -2393,7 +2393,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:46
 #, markdown-text
 msgid ""
-"![Screenshots shows app authentication "
+"![Screenshot shows app authentication "
 "configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)"
 msgstr ""
 
@@ -2410,7 +2410,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "[Aegis "
-"Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis&hl=de) "
+"Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis) "
 "(Android only)"
 msgstr ""
 
@@ -2499,7 +2499,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:86
 #, markdown-text
 msgid ""
-"![Screenshots shows security key authentication "
+"![Screenshot shows security key authentication "
 "configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)"
 msgstr ""
 
@@ -2525,7 +2525,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:96
 #, markdown-text
 msgid ""
-"![Screenshots shows security key authentication "
+"![Screenshot shows security key authentication "
 "configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)"
 msgstr ""
 

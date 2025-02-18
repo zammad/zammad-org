@@ -26,7 +26,7 @@ table.
 
 To set up a two-factor method, use the wrench icon and follow the steps.
 
-![Screenshots shows 2FA methods in user profile
+![Screenshot shows 2FA methods in user profile
 settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
 
 In a modal dialog, you will be asked to confirm your current password.
@@ -44,14 +44,14 @@ uses a mobile application to generate one-time codes for account
 verification. After setting up the authenticator app on your device, you
 will link it to your Zammad account.
 
-![Screenshots shows app authentication
+![Screenshot shows app authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 
 First, make sure you have installed an authenticator app on your mobile
 device. Recommended apps are:
 
 - [Aegis
-  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis&hl=de)
+  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
   (Android only)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447)
 - [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
@@ -87,7 +87,7 @@ account and then they can be used during the sign-in process.
 Initially, you will be presented with an empty side panel instructing you to
 **Set Up** your first key.
 
-![Screenshots shows security key authentication
+![Screenshot shows security key authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
 
 Then, enter a descriptive **Name for this security key** you will be
@@ -98,7 +98,7 @@ Next, depending you your browser, you will be presented with different
 options. Select one that refers to your chosen security key and follow the
 instructions on the screen.
 
-![Screenshots shows security key authentication
+![Screenshot shows security key authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
 
 You may be asked by the browser to interact with a key or a device so you
