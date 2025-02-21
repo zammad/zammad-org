@@ -22,7 +22,19 @@ export default defineConfig(
     srcDir: 'src',
     srcExclude: ['README.md', 'modules/*'],
     description: 'Documentation for Zammad Users and Administrators',
-    head: [['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }]],
+    head: [
+      ['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }],
+      [
+        'script',
+        {},
+        `var _mtm = window._mtm = window._mtm || [];
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+        (function() {
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src='https://cdn.matomo.cloud/zammad.matomo.cloud/container_O1b7GNLx.js'; s.parentNode.insertBefore(g,s);
+        })();`
+      ],
+    ],
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
