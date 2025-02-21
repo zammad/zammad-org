@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-02-04 16:15+0100\n"
-"PO-Revision-Date: 2025-02-04 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 15:00+0100\n"
+"PO-Revision-Date: 2025-02-20 16:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -246,11 +246,11 @@ msgstr "Bitte sehen Sie sich unsere Hinweise für Beiträge an."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:20
-#, fuzzy
-#| msgid "All repos can be found on [Github](https://github.com/zammad)."
 msgid ""
 "All repos can be found on [Github](https://github.com/zammad){target=_blank}."
-msgstr "Alle Repos sind auf [Github](https://github.com/zammad) zu finden."
+msgstr ""
+"Alle Repos sind auf [Github](https://github.com/zammad){target=_blank} zu "
+"finden."
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:22
@@ -260,29 +260,22 @@ msgstr "Zammad Quellcode"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:25
-#, fuzzy
-#| msgid ""
-#| "The Zammad source code can be found on GitHub in the [Zammad repository]"
-#| "(https://github.com/zammad/zammad)."
 msgid ""
 "The Zammad source code can be found on GitHub in the [Zammad repository]"
 "(https://github.com/zammad/zammad){target=_blank}."
 msgstr ""
 "Der Quellcode von Zammad ist auf GitHub im [Zammad Repository](https://"
-"github.com/zammad/zammad) zu finden."
+"github.com/zammad/zammad){target=_blank} zu finden."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:27
-#, fuzzy
-#| msgid ""
-#| "Have a look at the [developer manual](https://github.com/zammad/zammad/"
-#| "blob/develop/doc/developer_manual/index.md) to get started."
 msgid ""
 "Have a look at the [developer manual](https://github.com/zammad/zammad/blob/"
 "develop/doc/developer_manual/index.md){target=_blank} to get started."
 msgstr ""
 "Werfen Sie einen Blick in das [Entwicklerhandbuch](https://github.com/zammad/"
-"zammad/blob/develop/doc/developer_manual/index.md), um loszulegen."
+"zammad/blob/develop/doc/developer_manual/index.md){target=_blank}, um "
+"loszulegen."
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:28
@@ -292,16 +285,12 @@ msgstr "Unterstützte Branches / Versionen"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:32
-#, fuzzy
-#| msgid ""
-#| "The main [Zammad repository](https://github.com/zammad/zammad) at Github "
-#| "has several branches."
 msgid ""
 "The main [Zammad repository](https://github.com/zammad/zammad)"
 "{target=_blank} at Github has several branches."
 msgstr ""
-"Das Haupt-[Zammad-Repository](https://github.com/zammad/zammad) auf Github "
-"hat mehrere Branches."
+"Das Haupt-[Zammad-Repository](https://github.com/zammad/zammad)"
+"{target=_blank} auf Github hat mehrere Branches."
 
 #. type: Title ####
 #: src/en/contribute/contribute.md:33
@@ -325,16 +314,13 @@ msgstr "Verwenden Sie das nicht für den Produktiv-Betrieb!"
 
 #. type: Bullet: '* '
 #: src/en/contribute/contribute.md:39 src/en/contribute/contribute.md:45
-#, fuzzy
-#| msgid ""
-#| "Supported with bug and security fixes - see also our [Security Policy]"
-#| "(https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
 msgid ""
 "Supported with bug and security fixes - see also our [Security Policy]"
 "(https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}."
 msgstr ""
 "Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere "
-"[Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md)."
+"[Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md)"
+"{target=_blank}."
 
 #. type: Title ####
 #: src/en/contribute/contribute.md:40
@@ -391,17 +377,12 @@ msgid ""
 "your changes and make sure to follow the prerequisites and instructions in "
 "the repo's README."
 msgstr ""
+"Erstellen Sie einen neuen GitHub-Pull-Request auf https://github.com/zammad/"
+"zammad-org mit Ihren Änderungen und stellen Sie sicher, dass Sie die "
+"Voraussetzungen und Anweisungen aus der README des Repo befolgen."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:65
-#, fuzzy
-#| msgid ""
-#| "The documentation you are reading is available on next.zammad.org and "
-#| "zammad.org and is built via Vitepress. The source files are written in "
-#| "Markdown.  Make sure to change the English source files only which are "
-#| "placed under `/src/en/`. The translations are made via Weblate and will "
-#| "overwrite any changes in the language specific folders (except `/src/eng/"
-#| "`)."
 msgid ""
 "The documentation you are reading is available on next.zammad.org and zammad."
 "org and is built via Vitepress. The source files are written in Markdown.  "
@@ -410,10 +391,10 @@ msgid ""
 "in the language specific folders (except `/src/eng/`)."
 msgstr ""
 "Die Dokumentation, die Sie gerade lesen, ist auf next.zammad.org und zammad."
-"org verfügbar und wurde mit Vitepress erstellt. Die Quelldateien sind in "
-"Markdown geschrieben. Stellen Sie sicher, dass Sie nur die englischen "
-"Quelldateien ändern, die sich unter ``/src/en/`` befinden. Die Übersetzungen "
-"werden über Weblate erstellt und überschreiben alle Änderungen in den "
+"org verfügbar und wird über Vitepress erstellt. Die Quelldateien sind in "
+"Markdown geschrieben.  Stellen Sie sicher, dass Sie nur die englischen "
+"Quelldateien ändern, die sich unter `/src/en/` befinden. Die Übersetzung "
+"erfolgt über Weblate und überschreibt alle Änderungen in den "
 "sprachspezifischen Ordnern (außer `/src/eng/`)."
 
 #. type: Title ##
@@ -439,29 +420,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:76
-#, fuzzy
-#| msgid ""
-#| "You just have to head over to Zammad's [Weblate instance](https://"
-#| "translations.zammad.org/).  You can either create an account (if you "
-#| "don't have one already) or even sign in with your Github account!"
 msgid ""
 "You just have to head over to Zammad's [Weblate instance](https://"
 "translations.zammad.org/){target=_blank}.  You can either create an account "
 "(if you don't have one already) or even sign in with your Github account!"
 msgstr ""
 "Sie müssen dazu nur zu Zammads [Weblate-Instanz](https://translations.zammad."
-"org/) gehen.  Sie können entweder ein Konto erstellen (falls Sie noch keines "
-"haben) oder sich sogar mit Ihrem Github-Konto anmelden!"
+"org/){target=_blank} gehen.  Sie können entweder ein Konto erstellen (falls "
+"Sie noch keines haben) oder sich sogar mit Ihrem Github-Konto anmelden!"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:82
-#, fuzzy
-#| msgid ""
-#| "We will cover some basic steps in the following sections to get you "
-#| "started with translating. However, if you want to use some additional "
-#| "features of Weblate and want to dive deeper into it, their [translation "
-#| "documentation](https://docs.weblate.org/en/latest/user/translating.htm)  "
-#| "is a good starting point."
 msgid ""
 "We will cover some basic steps in the following sections to get you started "
 "with translating. However, if you want to use some additional features of "
@@ -473,7 +442,7 @@ msgstr ""
 "behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch "
 "einige zusätzliche Funktionen von Weblate nutzen und tiefer eintauchen "
 "möchten, ist deren [Übersetzungsdokumentation](https://docs.weblate.org/en/"
-"latest/user/translating.htm) ein guter Ausgangspunkt."
+"latest/user/translating.htm){target=_blank} ein guter Ausgangspunkt."
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:83
@@ -483,12 +452,7 @@ msgstr "Grundlagen"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:89
-#, fuzzy, no-wrap
-#| msgid ""
-#| "The translation of **Zammad** and the translation of the **documentation**\n"
-#| "are split into two projects in Weblate. When you click in the top menu under\n"
-#| "\"*Projects > Browse all projects*\", you can find the overview of the two\n"
-#| "projects:\n"
+#, no-wrap
 msgid ""
 "The translation of **Zammad** and the translation of the **documentation**\n"
 "are split into different projects in Weblate. When you click in the top menu under\n"
@@ -496,8 +460,8 @@ msgid ""
 "projects:\n"
 msgstr ""
 "Die Übersetzung von **Zammad** und die Übersetzung der **Dokumentation**\n"
-"sind in Weblate in zwei Projekte aufgeteilt. Wenn Sie im oberen Menü unter\n"
-"\"*Projekte > Alle Projekte auflisten*\" klicken, finden Sie die Übersicht über die beiden\n"
+"sind in Weblate in verschiedene Projekte aufgeteilt. Wenn Sie im oberen Menü unter\n"
+"\"*Projekte > Alle Projekte auflisten*\" klicken, finden Sie die Übersicht über die\n"
 "Projekte:\n"
 
 #. type: Plain text
@@ -516,10 +480,8 @@ msgstr "Struktur von Übersetzungsprojekten in Weblate:"
 
 #. type: Bullet: '    * '
 #: src/en/contribute/contribute.md:100
-#, fuzzy
-#| msgid "User Documentation (`latest`)"
 msgid "New Documentation at next.zammad.org"
-msgstr "Benutzer Dokumentation (`latest`)"
+msgstr "Neue Dokumentation auf next.zammad.org"
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:100 src/en/reference/docker-env-vars.md:11
@@ -544,12 +506,7 @@ msgstr "*Einige weitere, die hier nicht relevant sind*"
 
 #. type: Fenced div block (tip)
 #: src/en/contribute/contribute.md:101
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "It is no big difference which branch you choose to translate. When Weblate\n"
-#| "detects the same strings in different branches, they will be used for all\n"
-#| "branches and only have to be translated once.\n"
+#, no-wrap
 msgid ""
 "\n"
 "It should be no big difference which branch you choose to translate. When Weblate\n"
@@ -561,6 +518,7 @@ msgstr ""
 "Es macht keinen großen Unterschied, welchen Zweig Sie zur Übersetzung wählen. Wenn Weblate\n"
 "die gleichen Zeichenketten in verschiedenen Branches erkennt, werden sie für alle\n"
 "Branches verwendet und müssen nur einmal übersetzt werden.\n"
+"I m Zweifelsfall wählen Sie die `develop` Version.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:113
@@ -713,47 +671,34 @@ msgstr "Fehlerbehebung"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:156
-#, fuzzy
-#| msgid ""
-#| "And finally some notes for \"special\" source strings, you might see in "
-#| "the documentation projects (see RestructuredText_ for details):"
 msgid ""
 "And finally some notes for \"special\" source strings, you might see in the "
 "documentation projects:"
 msgstr ""
 "Und schließlich noch einige Hinweise für \"spezielle\" Zeichenketten, die "
-"Sie vielleicht in den Dokumentationsprojekten sehen (siehe RestructuredText_ "
-"für Details):"
+"Sie vielleicht in den Dokumentationsprojekten sehen:"
 
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:158
-#, fuzzy
-#| msgid "**\\`\\`example-string\\`\\`**"
 msgid "**\\`example-string\\`**"
-msgstr "**\\`\\`Beispiel-String\\`\\`**"
+msgstr "**\\`Beispiel-String\\`**"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:162
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    This is rendered as `example-string`. Depending on the context, it can be\n"
-#| "    translated or not. In any case, use the \\`` before and after the string in\n"
-#| "    your translation.\n"
+#, no-wrap
 msgid ""
 "    This is rendered as `example-string`. Depending on the context, it can be\n"
 "    translated or not. In any case, use the \\` before and after the string in\n"
 "    your translation.\n"
 msgstr ""
-"    Dies wird als `Beispiel-String` ausgegeben. Je nach Kontext kann sie\n"
-"    übersetzt werden oder nicht. Verwenden Sie in jedem Fall \\`` vor und nach der Zeichenkette in\n"
+"    Dies wird als `Beispiel-String` ausgegeben. Je nach Kontext kann dieser\n"
+"    übersetzt werden oder nicht. Verwenden Sie in jedem Fall \\` vor und nach der Zeichenkette in\n"
 "    Ihrer Übersetzung.\n"
 
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:164
-#, fuzzy
-#| msgid "**\\:doc:\\`example \\<path/to/document>\\`**"
 msgid "**\\[example\\](/en/path/to/document-or-website\\)**"
-msgstr "**\\:doc:\\`Beispiel \\<path/to/document>\\`**"
+msgstr "**\\[Beispiel\\](/en/pfad/zu/dokument-oder-website\\)**"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:172
@@ -767,6 +712,13 @@ msgid ""
 "    Otherwise contact us if you want to have your language activated (and a\n"
 "    substantial amount of the strings are already translated).\n"
 msgstr ""
+"    Dies ist ein Link zu einer anderen Seite, einschließlich des Sprachcodes.\n"
+"    Das obige \"Beispiel\" ist der Text, der als Linktext angezeigt wird. Dieser Teil kann\n"
+"    übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden,\n"
+"    in den Sie übersetzen. Stellen Sie sicher, dass Ihre Sprache\n"
+"    bereits auf zammad.org vorhanden ist (überprüfen Sie dies mit dem Sprachumschalter).\n"
+"    Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen (und ein\n"
+"    maßgeblicher Teil der Zeichenketten bereits übersetzt ist).\n"
 
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:174
@@ -872,21 +824,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:45
-#, fuzzy, no-wrap
-#| msgid ""
-#| "* Capitalize all words except minor ones in the page title and sections\n"
-#| "(see [title case](https://en.wikipedia.org/wiki/Title_case))\n"
-#| "* Line length of 80 characters in the source file should not be exceeded if\n"
-#| "possible\n"
-#| "* Proper breadcrumb separation for paths and locations with `>`\n"
-#| "* Use code highlighting to emphasize programming snippets\n"
-#| "* Include screenshots when necessary\n"
-#| "* Provide step-by-step instructions with clear explanations\n"
-#| "* Use examples or scenarios to illustrate concepts\n"
-#| "* Include relevant images or diagrams when necessary\n"
-#| "* Abbreviations should be explained the first time they are used or included\n"
-#| "in the glossary and linked to\n"
-#| "* If in doubt, align it to the existing documentation\n"
+#, no-wrap
 msgid ""
 "* Capitalize all words except minor ones in the page title and sections\n"
 "(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
@@ -903,7 +841,7 @@ msgid ""
 "* If in doubt, align it to the existing documentation\n"
 msgstr ""
 "* Großschreibung aller Wörter mit Ausnahme von Füllwörtern im Seitentitel und in den Abschnitten\n"
-"(siehe [title case (eng.)](https://en.wikipedia.org/wiki/Title_case))\n"
+"(siehe [title case (eng.)](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
 "* Die Zeilenlänge von 80 Zeichen in der Quelldatei sollte nach Möglichkeit nicht überschritten werden\n"
 "* Pfade und Orte mit `>` als Hierarchietrenner\n"
 "* Code-Definition zur Hervorhebung von Snippets\n"
@@ -1067,7 +1005,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
-#: src/en/documentation/use/start-using-zammad.md:215
+#: src/en/documentation/use/guides/overviews.md:10
+#: src/en/documentation/use/guides/two-factor-auth.md:6
+#: src/en/documentation/use/start-using-zammad.md:200
 #: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
 #: src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
@@ -2280,20 +2220,948 @@ msgstr ""
 "manage-zammad/general), schauen Sie sich die Anleitungen an und nutzen Sie "
 "die Suche."
 
-#. type: Title #
-#: src/en/documentation/use/how-to/how-to.md:1
-#: src/en/documentation/use/how-to/how-to.md:6
-#: src/en/reference/rest-api/time-accounting.md:1
-#: src/en/reference/rest-api/time-accounting.md:6
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/guides/index.md:1
 #, no-wrap
-msgid "Time Accounting"
-msgstr "Zeiterfassung"
+msgid "Guides"
+msgstr "Anleitungen"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:1
+#: src/en/documentation/use/guides/overviews.md:6
+#: src/en/documentation/use/manage-profile.md:123
+#, no-wrap
+msgid "Overviews"
+msgstr "Übersichten"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:9
+msgid ""
+"![Screenshot shows opened overview section](/screenshots/cypress/usage-guide-"
+"overview.cy.js/overview-full.png)"
+msgstr ""
+"![Screenshot zeigt geöffneten Übersichten-Bereich](/screenshots/cypress/"
+"usage-guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:17
+#, no-wrap
+msgid ""
+"Overviews are a core component of Zammad. Open them by clicking the\n"
+"`Overviews` button in the navigation bar or use the keyboard shortcut\n"
+"<kbd>o</kbd>. You can think of overviews as a kind of email inbox with different\n"
+"folders. Use them to find new tickets that you want to process and to keep\n"
+"track of tickets that have not yet been completed.\n"
+msgstr ""
+"Übersichten sind eine Kernkomponente von Zammad. Öffnen Sie sie, indem Sie auf die Schaltfläche\n"
+"`Übersichten` in der Navigationsleiste klicken oder mit dem Tastaturkürzel\n"
+"<kbd>o</kbd>. Sie können sich die Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen\n"
+"Ordnern vorstellen. Verwenden Sie Übersichten, um neue Tickets für die Bearbeitung zu finden und um noch nicht\n"
+"abgeschlossene Tickets zu beobachten.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:20
+msgid ""
+"Depending on your system configuration and what your Zammad admin set up, "
+"you can find different overviews there, for example:"
+msgstr ""
+"Je nachdem, wie Ihr System konfiguriert ist und was Ihr Zammad-Administrator "
+"eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+msgid "Your assigned tickets"
+msgstr "Meine zugewiesenen Tickets"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+msgid "Unassigned and open tickets"
+msgstr "Nicht zugewiesene & offene Tickets"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+msgid "Pending reached tickets"
+msgstr "Meine \"Warten erreicht\" Tickets"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:25
+msgid "Escalated tickets"
+msgstr "Eskalierte Tickets"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:28
+msgid ""
+"Selecting an overview in the second level navigation shows you a table which "
+"includes matching tickets."
+msgstr ""
+"Wenn Sie eine Übersicht in der zweiten Navigationsebene auswählen, sehen Sie "
+"eine Tabelle mit den entsprechenden Tickets."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/overviews.md:29
+#, no-wrap
+msgid "Usage and Features"
+msgstr "Verwendung und Features"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:34
+msgid ""
+"Overviews can be defined by admins based on rules and conditions. That means "
+"if a ticket has been changed and the condition of the overview isn't "
+"matching anymore, the ticket is no longer visible in this overview."
+msgstr ""
+"Übersichten können von Administratoren anhand von Regeln und Bedingungen "
+"definiert werden. Das heißt, wenn ein Ticket geändert wurde und die "
+"Bedingung der Übersicht nicht mehr zutrifft, verschwindet das Ticket aus "
+"dieser Übersicht."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:40
+msgid ""
+"Overviews are updated automatically. You don't have to reload your browser "
+"to observe changes. You can adjust the order temporarily by clicking on one "
+"of the column headers as well as change their width by dragging the column "
+"dividers.  The order is only preserved until you switch to another overview "
+"or reload the page."
+msgstr ""
+"Die Übersichten werden automatisch aktualisiert. Sie müssen Ihren Browser "
+"nicht neu laden, um die Änderungen zu sehen. Sie können die Reihenfolge "
+"temporär anpassen, indem Sie auf eine der Spaltenbeschriftungen klicken und "
+"die Breite der Spalten durch Ziehen der Spaltentrennlinien verändern.  Die "
+"Reihenfolge bleibt nur so lange erhalten, bis Sie zu einer anderen Übersicht "
+"wechseln oder die Seite neu laden."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:43
+msgid ""
+"For each overview, you can find a badge attached. The number in this badge "
+"tells you how many tickets are in each overview."
+msgstr ""
+"Für jede Übersicht finden Sie einen angehängten Marker. Anhand der Zahl in "
+"diesem Marker können Sie erkennen, wie viele Tickets sich in der jeweiligen "
+"Übersicht befinden."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:48
+msgid ""
+"The ticket lists in overviews can also be grouped by a specific attribute (e."
+"g. customer, organization, owner). This has to be adjusted by your Zammad "
+"admin. If a grouping is activated, you can find a badge with a counter of "
+"the included tickets there as well."
+msgstr ""
+"Die Ticket-Listen in Übersichten können auch nach einem bestimmten Attribut "
+"(z.B. Kunde, Organisation, Besitzer) gruppiert werden. Dies muss von Ihrem "
+"Zammad-Administrator eingestellt werden. Wenn eine Gruppierung aktiviert "
+"ist, finden Sie dort auch ein Marker mit einem Zähler der enthaltenen "
+"Tickets."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:51
+msgid ""
+"Depending on what you are searching for, select a fitting overview and start "
+"working on a ticket."
+msgstr ""
+"Je nachdem, was Sie suchen, wählen Sie eine passende Übersicht und beginnen "
+"mit der Bearbeitung eines Tickets."
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/guides/overviews.md:53
+#, no-wrap
+msgid ""
+"If you miss an overview or want to have different settings, let your Zammad\n"
+"admin know!\n"
+msgstr ""
+"Wenn Sie eine Übersicht vermissen oder andere Einstellungen haben möchten, lassen Sie es Ihren Zammad\n"
+"Administrator wissen!\n"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:58
+#, no-wrap
+msgid "Color Coded State and Priority"
+msgstr "Farbcodierter Status und Priorität"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:62
+msgid ""
+"To visualize different ticket states and priorities, the entries in the "
+"table are color coded."
+msgstr ""
+"Um die verschiedenen Status und Prioritäten von Tickets zu visualisieren, "
+"sind die Einträge in der Tabelle farblich gekennzeichnet."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:65
+msgid ""
+"The icon next to the ticket title mainly represents the need for action:"
+msgstr ""
+"Das Symbol neben dem Titel des Tickets zeigt vor allem den Handlungsbedarf "
+"an:"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:67
+msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
+msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+msgid "Yellow circle: action needed (e.g. new, open, pending reached)"
+msgstr "Gelber Kreis: Handlungsbedarf (z.B. neu, offen, warten erreicht)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+msgid "Grey circle: paused, no action needed right now (e.g. pending)"
+msgstr ""
+"Grauer Kreis: pausiert, im Moment keine Aktion erforderlich (z.B. warten "
+"auf...)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+msgid "Green circle: no action needed any more (e.g. closed, merged)"
+msgstr ""
+"Grüner Kreis: keine Aktion mehr erforderlich (z.B. geschlossen, "
+"zusammengefasst)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:72
+msgid ""
+"Red triangle: immediate action needed (ticket escalated due to an SLA "
+"violation)"
+msgstr ""
+"Rotes Dreieck: Sofortiger Handlungsbedarf (Ticket eskaliert aufgrund einer "
+"SLA-Verletzung)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:74
+msgid "The **priority** is represented by the color of the ticket title:"
+msgstr "Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:76
+msgid ""
+"![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
+msgstr ""
+"![Screenshot zeigt Ticket Prioritäten](/screenshots/overviews/priorities.png)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:80
+msgid "1 low: grey"
+msgstr "1 niedrig: grau"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:80
+msgid "2 normal: blue"
+msgstr "2 normal: blau"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:80
+msgid "3 high: red"
+msgstr "3 hoch: rot"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:81
+#, no-wrap
+msgid "Open a Ticket"
+msgstr "Ein Ticket öffnen"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:87
+msgid ""
+"Open a ticket by simply clicking on the line. This opens the ticket as a tab "
+"in the left navigation bar and shows you the ticket detail view. If this "
+"ticket is already present in your navigation bar, it activates this tab "
+"instead of opening a duplicate tab."
+msgstr ""
+"Öffnen Sie ein Ticket, indem Sie einfach auf die Zeile klicken. Dadurch "
+"öffnet sich das Ticket als Tab in der linken Navigationsleiste und zeigt "
+"Ihnen die Ticket Detailansicht. Wenn dieses Ticket bereits in Ihrer "
+"Navigationsleiste vorhanden ist, wird dieser Tab aktiviert, anstatt einen "
+"doppelten Tab zu öffnen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:91
+msgid ""
+"If an overview contains more than one ticket and you open one of the "
+"tickets, you can find arrows in the ticket detail view header to switch to "
+"the next/previous ticket of this overview."
+msgstr ""
+"Wenn eine Übersicht mehr als ein Ticket enthält und Sie eines der Tickets "
+"öffnen, finden Sie im Header der Ticket Detailansicht Pfeile, um zum "
+"nächsten/vorherigen Ticket dieser Übersicht zu wechseln."
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:92
+#, no-wrap
+msgid "TODO Bulk Actions"
+msgstr "TODO Mehrfach-Aktionen"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:96
+msgid ""
+"Perform bulk actions by selecting multiple tickets and either use the drop-"
+"down fields or drag them with the mouse to invoke the bulk action overlay."
+msgstr ""
+"Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und "
+"entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um das "
+"Overlay für die Mehrfach-Aktion aufzurufen."
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:97
+#, no-wrap
+msgid "Reorder Overviews"
+msgstr "Übersichten neu anordnen"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:105
+msgid ""
+"If the order of the overviews doesn't reflect your working process or you "
+"just like to have a different order, you can re-arrange them for your "
+"account. Use the `reorder items` button at the very top of the second level "
+"navigation bar, which opens your [profile settings](/en/documentation/use/"
+"manage-profile#overviews) where you can define a custom order for your "
+"overviews."
+msgstr ""
+"Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht "
+"oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr "
+"Konto neu anordnen. Verwenden Sie die Schaltfläche \"Elemente neu anordnen\" "
+"ganz oben in der zweiten Navigationsleiste, die Ihre [Profileinstellungen](/"
+"de/documentation/use/manage-profile#ubersichten) öffnet, wo Sie eine "
+"benutzerdefinierte Reihenfolge festlegen können."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:108
+msgid ""
+"To change the order, simply drag & drop them by clicking the handles on the "
+"left side."
+msgstr ""
+"Um die Reihenfolge zu ändern, ziehen Sie die Übersichten einfach per Drag & "
+"Drop, indem Sie auf die Fläche auf der linken Seite klicken."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:111
+msgid ""
+"If your admin changes the order, your custom order is preserved. You can "
+"switch back to your admin's order by clicking the `Reset Overview Order` "
+"button."
+msgstr ""
+"Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle "
+"Reihenfolge erhalten. Sie können wieder zur Reihenfolge Ihres Administrators "
+"wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten "
+"zurücksetzen` klicken."
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/how-to/index.md:1
+#: src/en/documentation/use/guides/two-factor-auth.md:1
 #, no-wrap
-msgid "How-To"
-msgstr "How-To"
+msgid "Two-Factor Authentication"
+msgstr "Zwei-Faktor-Authentifizierung"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:14
+msgid ""
+"Two-factor authentication (2FA) enhances the security of your Zammad account "
+"by adding an extra layer of verification beyond a password. It requires you "
+"to provide two different types of authentication factors, typically "
+"something you know (like a password) and something you possess (like a "
+"mobile device or a security token), to ensure that you are an authorized "
+"individual who can access the account."
+msgstr ""
+"Die Zwei-Faktor-Authentifizierung (2FA) erweitert die Sicherheit Ihres "
+"Zammad-Kontos, indem eine zusätzliche Prüfung neben Ihrem Passwort "
+"erforderlich ist. Sie müssen über zwei verschiedene Komponenten verfügen, um "
+"sicherzustellen, dass Sie berechtigt sind, auf das Konto zuzugreifen. "
+"Typischerweise ist das etwas, was Sie wissen (wie ein Passwort) und etwas, "
+"das Sie besitzen (wie ein Mobilgerät oder ein Security-Token)."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:19
+msgid ""
+"Two-Factor Authentication is an **optional feature**. Administrators must "
+"activate it to be visible in your profile settings. It may be even enforced "
+"by your admin to set up a 2FA method. In this case, you can't use Zammad "
+"unless you set up at least one 2FA method."
+msgstr ""
+"Die Zwei-Faktor-Authentifizierung ist eine **optionale Funktion**. "
+"Administratoren müssen sie aktivieren, damit sie in Ihren "
+"Profileinstellungen sichtbar ist. Es kann sogar von Ihrem Administrator "
+"erzwungen werden, eine 2FA-Methode einzurichten. In diesem Fall können Sie "
+"Zammad nicht verwenden, wenn Sie nicht mindestens eine 2FA-Methode "
+"eingerichtet haben."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:20
+#, no-wrap
+msgid "Set Up"
+msgstr "Einrichtung"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:26
+#, no-wrap
+msgid ""
+"If the system admin has enabled this feature, you can head to *Avatar >\n"
+"Profile > Two-factor Authentication* to set it up. Depending on the\n"
+"enabled two-factor methods, you may see one or more options in the\n"
+"table.\n"
+msgstr ""
+"Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie unter *Avatar >\n"
+"Profil-Einstellungen > Zwei-Faktor-Authentifizierung* aufrufen, um sie einzurichten. Abhängig von den\n"
+"aktivierten Zwei-Faktor-Methoden, sehen Sie eine oder mehrere Optionen in der\n"
+"Tabelle.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:28
+msgid ""
+"To set up a two-factor method, use the wrench icon and follow the steps."
+msgstr ""
+"Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das "
+"Schraubenschlüssel-Symbol und befolgen Sie die Schritte."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:30
+#, fuzzy
+#| msgid ""
+#| "![Screenshots shows 2FA methods in user profile settings](/screenshots/"
+#| "cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+msgid ""
+"![Screenshot shows 2FA methods in user profile settings](/screenshots/"
+"cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+msgstr ""
+"![Screenshot zeigt 2FA-Methoden in den Einstellungen des Benutzerprofils](/"
+"screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:32
+msgid "In a modal dialog, you will be asked to confirm your current password."
+msgstr ""
+"In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu "
+"bestätigen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:36
+msgid ""
+"Depending on the chosen two-factor method, you will be guided through the "
+"setup process, which includes specific steps. Continue with using an "
+"[Authentication App](#authentication-app) or a [Security Key](#security-key)."
+msgstr ""
+"Je nach gewählter Zwei-Faktor-Methode werden Sie durch den "
+"Einrichtungsprozess geführt, der bestimmte Schritte umfasst. Fahren Sie mit "
+"der Verwendung einer [Authentifizierungs-App](#authentication-app) oder "
+"eines [Sicherheits-Schlüssels](#security-key) fort."
+
+#. type: Title ###
+#: src/en/documentation/use/guides/two-factor-auth.md:38
+#, no-wrap
+msgid "Authentication App"
+msgstr "Authentifizierungs-App"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:44
+msgid ""
+"The authenticator app method is a type of two-factor authentication that "
+"uses a mobile application to generate one-time codes for account "
+"verification. After setting up the authenticator app on your device, you "
+"will link it to your Zammad account."
+msgstr ""
+"Die Authentifizierungs-App ist eine Methode der Zwei-Faktor-"
+"Authentifizierung, bei der eine mobile App (\"Authentifizierungs-App\") "
+"Einmal-Codes generiert, die beim Anmelden geprüft werden. Nachdem Sie eine "
+"Authentifizierungs-App auf Ihrem Gerät eingerichtet haben, können Sie diese "
+"mit Ihrem Zammad-Konto verknüpfen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:46
+#, fuzzy
+#| msgid ""
+#| "![Screenshots shows app authentication configuration](/screenshots/two-"
+#| "factor-auth-usage/2fa-app-setup.png)"
+msgid ""
+"![Screenshot shows app authentication configuration](/screenshots/two-factor-"
+"auth-usage/2fa-app-setup.png)"
+msgstr ""
+"![Screenshot zeigt die Konfiguration der Authentifizierungs-App](/"
+"screenshots/two-factor-auth-usage/2fa-app-setup.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:49
+msgid ""
+"First, make sure you have installed an authenticator app on your mobile "
+"device. Recommended apps are:"
+msgstr ""
+"Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf "
+"Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+#, fuzzy
+#| msgid ""
+#| "[Aegis Authenticator](https://play.google.com/store/apps/details?id=com."
+#| "beemdevelopment.aegis&hl=de) (Android only)"
+msgid ""
+"[Aegis Authenticator](https://play.google.com/store/apps/details?id=com."
+"beemdevelopment.aegis) (Android only)"
+msgstr ""
+"[Aegis Authenticator](https://play.google.com/store/apps/details?id=com."
+"beemdevelopment.aegis&hl=de) (nur Android)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+msgid ""
+"[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
+msgstr ""
+"[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+msgid ""
+"[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-"
+"Authy-apps/)"
+msgstr ""
+"[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-"
+"Authy-apps/)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/two-factor-auth.md:56
+msgid ""
+"[Microsoft Authenticator](https://support.microsoft.com/en-us/account-"
+"billing/download-and-install-the-microsoft-authenticator-"
+"app-351498fc-850a-45da-b7b6-27e523b8702a)"
+msgstr ""
+"[Microsoft Authenticator](https://support.microsoft.com/de-de/account-"
+"billing/download-and-install-the-microsoft-authenticator-"
+"app-351498fc-850a-45da-b7b6-27e523b8702a)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:60
+msgid ""
+"Next, open the authenticator app on your device and find a **Scan QR Code** "
+"action, or similar. Point your camera to the Zammad screen and scan the "
+"shown QR code in the middle."
+msgstr ""
+"Öffnen Sie die Authentifizierungs-App auf Ihrem Mobilgerät und wählen Sie "
+"die Funktion **QR-Code scannen** (oder ähnlich bezeichnet). Richten Sie dann "
+"die Kamera auf den Bildschirm und scannen den angezeigten QR-Code."
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/guides/two-factor-auth.md:61
+#, no-wrap
+msgid ""
+"If your device is not able to scan the QR code, first click on it to\n"
+"reveal your secret. Next, add a manual entry to your authenticator app\n"
+"and enter the provided secret when asked.\n"
+msgstr ""
+"Falls Sie den QR-Code nicht scannen können, klicken Sie bitte\n"
+"auf den QR-Code, um den Sicherheitscode im Klartext zu sehen.\n"
+"Fügen Sie diesen anschließend manuell in Ihrer Authentifizierungs-App hinzu.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:70
+msgid ""
+"Your authenticator app should immediately add the new entry for your Zammad "
+"account, and a 6-digit code will be displayed next to it together with a "
+"timer."
+msgstr ""
+"Ihre Authentifizierungs-App sollte sofort den neuen Eintrag für Ihr Zammad-"
+"Konto angelegt haben und einen 6-stelligen Code mit einem Timer anzeigen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:74
+msgid ""
+"Back in Zammad, enter the provided code to the **Security Code** field and "
+"click on **Set Up**. Go on either by setting up another 2FA method "
+"([security key](#security-key)) or check how to [use and manage 2FA](#sign-"
+"in)."
+msgstr ""
+"Zurück in Zammad, geben Sie den bereitgestellten Code in das Feld "
+"**Sicherheitscode** ein und klicken Sie auf **Einrichten**. Fahren Sie "
+"entweder mit der Einrichtung einer anderen 2FA-Methode fort ([Sicherheits-"
+"Schlüssel](#security-key)) oder lesen Sie, wie man 2FA verwendet und "
+"verwaltet (#anmelden)."
+
+#. type: Title ###
+#: src/en/documentation/use/guides/two-factor-auth.md:75
+#, no-wrap
+msgid "Security Key"
+msgstr "Sicherheits-Schlüssel"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:81
+msgid ""
+"The security keys method is a type of a two-factor authentication that uses "
+"Web Authentication API in the browser for verifying your identity.  You may "
+"register multiple hardware or software security keys with your Zammad "
+"account and then they can be used during the sign-in process."
+msgstr ""
+"Die Zwei-Faktor-Methode mit Sicherheits-Schlüssel nutzt das Web "
+"Authentication API im Browser, um Ihre Identität zu bestätigen. Sie können "
+"mehrere Hardware- oder Software-Sicherheits-Schlüssel in Ihrem Zammad-Konto "
+"hinterlegen und für die Anmeldung nutzen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:84
+msgid ""
+"Initially, you will be presented with an empty side panel instructing you to "
+"**Set Up** your first key."
+msgstr ""
+"Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie "
+"aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:86
+#, fuzzy
+#| msgid ""
+#| "![Screenshots shows security key authentication configuration](/"
+#| "screenshots/two-factor-auth-usage/2fa-security-key-panel.png)"
+msgid ""
+"![Screenshot shows security key authentication configuration](/screenshots/"
+"two-factor-auth-usage/2fa-security-key-panel.png)"
+msgstr ""
+"![Screenshots zeigt die Konfiguration der Sicherheits-Schlüssel-"
+"Authentifizierung](/screenshots/two-factor-auth-usage/2fa-security-key-panel."
+"png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:90
+msgid ""
+"Then, enter a descriptive **Name for this security key** you will be "
+"registering with your account, so you could later identify it in the list. "
+"Then, click on **Next**."
+msgstr ""
+"Geben Sie als erstes einen **Name für diesen Sicherheitsschlüssel** im "
+"entsprechenden Feld ein, damit Sie diesen später in einer Übersicht "
+"identifizieren können. Klicken Sie anschließend auf **Weiter**."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:94
+msgid ""
+"Next, depending you your browser, you will be presented with different "
+"options. Select one that refers to your chosen security key and follow the "
+"instructions on the screen."
+msgstr ""
+"Abhängig von Ihrem Browser können Ihnen verschiedene Optionen angeboten "
+"werden. Wählen Sie die, die der Ihres angegebenen Sicherheits-Schlüssels "
+"entspricht und folgen den weiteren Anweisungen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:96
+#, fuzzy
+#| msgid ""
+#| "![Screenshots shows security key authentication configuration](/"
+#| "screenshots/two-factor-auth-usage/2fa-passkey-auth.png)"
+msgid ""
+"![Screenshot shows security key authentication configuration](/screenshots/"
+"two-factor-auth-usage/2fa-passkey-auth.png)"
+msgstr ""
+"![Screenshot zeigt die Konfiguration der Sicherheits-Schlüssel-"
+"Authentifizierung](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:100
+msgid ""
+"You may be asked by the browser to interact with a key or a device so you "
+"can prove you are in physical possession of it (e.g. enter its PIN to unlock "
+"it)."
+msgstr ""
+"Ihr Browser bittet Sie daraufhin, mit Ihrem Sicherheitsschlüssel oder Gerät "
+"zu interagieren (z.B. PIN-Eingabe zur Entsperrung), um zu prüfen, ob Sie in "
+"physischem Besitz des Geräts sind."
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/two-factor-auth.md:101
+#, no-wrap
+msgid ""
+"You will have limited time (measured in tens of seconds) to register\n"
+"your key. Better to have it ready before you proceed!\n"
+msgstr ""
+"Sie haben begrenzt Zeit (einige zehn Sekunden), um den Sicherheits-Schlüssel als Methode\n"
+"zu bestätigen. Am besten haben Sie Ihr Gerät einsatzbereit vor sich, bevor Sie loslegen!\n"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:109
+msgid ""
+"If the registration was successful, the modal dialog will close and you are "
+"good to go. In case of errors, you will be able to **Retry** the "
+"registration of the key."
+msgstr ""
+"Wenn die Registrierung erfolgreich war, wird der Dialog geschlossen und Sie "
+"können loslegen. Im Falle von Fehlern können Sie die Registrierung des "
+"Schlüssels **wiederholen**."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:112
+msgid ""
+"Once set up, security keys can be managed by choosing **Edit** action next "
+"to the two-factor authentication method."
+msgstr ""
+"Sobald Sie Sicherheits-Schlüssel eingerichtet haben, können Sie diese über "
+"die **Bearbeiten** Funktion neben der Zwei-Faktor-Methode verwalten."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:118
+msgid ""
+"You have an option to remove a key or set up additional ones. There is no "
+"limit in number of security keys you can set up, but keep in mind you cannot "
+"register an already registered key for your account.  Removal of the last "
+"security key will effectively remove the complete security keys method for "
+"your account."
+msgstr ""
+"Sie haben die Möglichkeit, einen Schlüssel zu entfernen oder zusätzliche "
+"Schlüssel einzurichten. Die Anzahl der Sicherheits-Schlüssel, die Sie "
+"einrichten können, ist nicht begrenzt. Beachten Sie jedoch, dass Sie einen "
+"bereits registrierten Schlüssel nicht erneut für Ihr Konto registrieren "
+"können.  Wenn Sie den letzten Sicherheits-Schlüssel entfernen, wird die "
+"gesamte Sicherheits-Schlüssel-Methode für Ihr Konto entfernt."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:119
+#, no-wrap
+msgid "Sign-in"
+msgstr "Anmelden"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:125
+msgid ""
+"When you set up two-factor authentication for your Zammad account, during "
+"the next sign-in you will be asked to provide the same two-factor method "
+"after entering correct username and password. Depending on the chosen two-"
+"factor method, this may be a security code, hardware key, etc."
+msgstr ""
+"Wenn Sie die Zwei-Faktor-Authentifizierung für Ihr Zammad Konto einrichten, "
+"werden Sie bei der nächsten Anmeldung aufgefordert, nach der Eingabe des "
+"korrekten Benutzernamens und Passworts die gleiche Zwei-Faktor-Methode "
+"anzugeben. Je nach gewählter Zwei-Faktor-Methode kann dies ein Sicherheits-"
+"Code, ein Hardware-Schlüssel, etc. sein."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:129
+msgid ""
+"In case you are having issues during sign-in with your preferred two-factor "
+"authentication method, you can switch to another one, provided you have set "
+"it up previously."
+msgstr ""
+"Sollten Sie bei der Anmeldung Probleme mit Ihrer bevorzugten Zwei-Faktor-"
+"Authentifizierungsmethode haben, können Sie zu einer anderen Methode "
+"wechseln, sofern Sie diese zuvor eingerichtet haben."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:133
+msgid ""
+"Look for **Try another method** link below the sign in box. In case you "
+"don't see this link, you probably have no other available two-factor methods "
+"set up, or your admin has disabled this feature."
+msgstr ""
+"Suchen Sie nach dem Link **Eine andere Methode verwenden** unterhalb des "
+"Anmeldefeldes. Falls Sie diesen Link nicht sehen, haben Sie vermutlich keine "
+"andere Zwei-Faktor-Methode eingerichtet oder Ihr Administrator hat diese "
+"Funktion deaktiviert."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:135
+msgid ""
+"![Log in screen with link to \"Try another method\"](/screenshots/two-factor-"
+"auth-usage/2fa-link-another-method.png)"
+msgstr ""
+"![Anmeldebildschirm mit Link zu \"Versuchen Sie eine andere Methode\"](/"
+"screenshots/two-factor-auth-usage/2fa-link-another-method.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:140
+msgid ""
+"Alternatively, you can also use one of your recovery codes, which are auto-"
+"generated for your account during the initial setup of the two-factor "
+"authentication. Click on **Or use one of your recovery codes**, enter one of "
+"your unused codes and click on **Sign in**."
+msgstr ""
+"Alternativ können Sie auch einen Ihrer Wiederherstellungscodes verwenden, "
+"die bei der Ersteinrichtung der Zwei-Faktor-Authentifizierung automatisch "
+"für Ihr Konto generiert werden. Klicken Sie auf **Oder verwenden Sie einen "
+"Ihrer Wiederherstellungs-Codes.**, geben Sie einen Ihrer nicht verwendeten "
+"Codes ein und klicken Sie auf **Anmelden**."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:142
+msgid ""
+"![Log in screen with recovery codes link](/screenshots/two-factor-auth-"
+"usage/2fa-login-recovery-codes.png)"
+msgstr ""
+"![Anmelde-Screen mit Link zur Nutzung von Wiederherstellungs-Codes](/"
+"screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)"
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/two-factor-auth.md:143
+#, no-wrap
+msgid ""
+"You can use a single recovery code only once! In case you exhaust the\n"
+"list of your recovery codes, it is recommended you regenerate them for\n"
+"your account.\n"
+msgstr ""
+"Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie\n"
+"alle Codes Ihrer Liste aufgebraucht haben können Sie diese in Ihrem Profil neu\n"
+"generieren lassen.\n"
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:149
+#, no-wrap
+msgid "Generate Recovery Codes"
+msgstr "Wiederherstellungs-Codes erzeugen"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:154
+msgid ""
+"Recovery codes are one-time use security codes that can be used to sign in "
+"if you lose access to your other two-factor authentication methods.  They "
+"can only be used as a **backup method**."
+msgstr ""
+"Wiederherstellungs-Codes sind einmalig verwendbare Sicherheitscodes, mit "
+"denen Sie sich anmelden können, wenn Sie den Zugriff auf Ihre anderen Zwei-"
+"Faktor-Authentifizierungsmethoden verlieren. Sie können nur als **Backup-"
+"Methode** verwendet werden."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:158
+msgid ""
+"If the feature is enabled by the admin, recovery codes will be automatically "
+"generated for you during the setup of your initial two-factor authentication "
+"method."
+msgstr ""
+"Falls die Funktion von Ihrem Administrator aktiviert wurde, werden die "
+"Wiederherstellungs-Codes automatisch bei der Einrichtung einer Zwei-Faktor-"
+"Methode generiert."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:161
+msgid ""
+"You will be asked to print out or save the generated recovery codes in a "
+"safe place. Once used, a recovery code cannot be reused."
+msgstr ""
+"Sie werden gebeten, die Wiederherstellungs-Codes zu speichern oder zu "
+"drucken und an einem sicheren Ort aufzubewahren. Ein bereits genutzter "
+"Wiederherstellungs-Code kann nicht mehr genutzt werden."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:163
+msgid ""
+"![Screenshot shows output of recovery codes during 2FA setup](/screenshots/"
+"two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
+msgstr ""
+"![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der 2FA-"
+"Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes."
+"png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:168
+msgid ""
+"You also have an option to regenerate your recovery codes at any time, which "
+"invalidates already existing recovery codes and provides you with a list of "
+"fresh codes. You can do this by clicking on **Regenerate recovery codes** "
+"button in your profile's 2FA settings."
+msgstr ""
+"Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu "
+"zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig "
+"werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun, "
+"indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche "
+"**Wiederherstellungs-Codes neu erzeugen** klicken."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:169
+#, no-wrap
+msgid "Set a Default 2FA Method"
+msgstr "Festlegen einer Standard-2FA-Methode"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:174
+msgid ""
+"To set an already set up two-factor method as default, use the ⋮ **Actions** "
+"menu next to it in your profile's 2FA settings and choose **Set as default**."
+msgstr ""
+"Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen, "
+"verwenden Sie das Menü ⋮ **Aktionen** neben der Methode in den 2FA-"
+"Einstellungen Ihres Profils und wählen Sie **Als Standard festlegen**."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:177
+msgid ""
+"In order to identify your current default two-factor authentication method, "
+"look for a small blue badge next to the method name."
+msgstr ""
+"Ein kleines, blaues Label (\"Standard\") zeigt Ihnen an, welche Methode für "
+"Ihr Konto als Standard festgelegt ist."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:179
+msgid ""
+"![Screenshot shows list of 2FA methods and default method](/screenshots/two-"
+"factor-auth-usage/2fa-profile-overview.png)"
+msgstr ""
+"![Screenshot zeigt Liste der 2FA-Methoden und Standardmethode](/screenshots/"
+"two-factor-auth-usage/2fa-profile-overview.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:183
+msgid ""
+"A default two-factor authentication method is just your preferred method "
+"during the sign-in process. You will always have an option to try signing in "
+"using another method."
+msgstr ""
+"Die Standard Zwei-Faktor-Methode bedeutet, dass dies Ihre bevorzugte Methode "
+"beim Anmelden ist. Sie können beim Anmelden immer auf eine andere Methode "
+"wechseln."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:184
+#, no-wrap
+msgid "Edit a 2FA Method"
+msgstr "Bearbeiten einer 2FA-Methode"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:187
+msgid ""
+"![Screenshot shows output of recovery codes during 2FA setup](/screenshots/"
+"two-factor-auth-usage/2fa-profile-overview-action.png)"
+msgstr ""
+"![Screenshot zeigt die Ausgabe von Wiederherstellungscodes während der 2FA-"
+"Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-action."
+"png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:191
+msgid ""
+"To edit an already set up two-factor method, use the ⋮ **Actions** menu next "
+"to it and choose **Edit**. In a modal dialog, you will be asked to confirm "
+"your current password."
+msgstr ""
+"Um eine bereits eingerichtete Zwei-Faktor-Methode zu bearbeiten, verwenden "
+"Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie **Bearbeiten**. "
+"In einem Dialog werden Sie aufgefordert, Ihr aktuelles Passwort zu "
+"bestätigen."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:196
+msgid ""
+"Depending on the chosen two-factor method, you will be guided again through "
+"the setup process. Normally, editing a method will simply renew it and "
+"replace the older setup, but some methods do support advanced functions (e."
+"g. adding multiple security keys)."
+msgstr ""
+"Sie werden abhängig von der gewählten Zwei-Faktor-Methode nochmal durch den "
+"Einrichtungs-Prozess geführt. Im Normalfall ersetzt eine bearbeitete Methode "
+"die bisherige Konfiguration, aber manche Methoden unterstützen erweiterte "
+"Funktionen (z.B. mehrere Sicherheits-Schlüssel)."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/two-factor-auth.md:197
+#, no-wrap
+msgid "Remove a 2FA Method"
+msgstr "Entfernen einer 2FA-Methode"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:202
+msgid ""
+"To remove an already set up two-factor method, use the ⋮ **Actions** menu "
+"next to it and choose **Remove**. In a modal dialog, you will be asked to "
+"confirm the removal with your current password."
+msgstr ""
+"Um eine bereits eingerichtete Zwei-Faktor-Methode zu entfernen, verwenden "
+"Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie **Entfernen**. "
+"In einem Dialog werden Sie aufgefordert, die Entfernung mit Ihrem aktuellen "
+"Passwort zu bestätigen."
 
 #. type: Title #
 #: src/en/documentation/use/manage-profile.md:6
@@ -2526,11 +3394,41 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:78
 #, no-wrap
+msgid "Two-factor Authentication"
+msgstr "Zwei-Faktor-Authentifizierung"
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:83
+msgid ""
+"Set up a two-factor authentication (2FA) to increase the security of your "
+"account. Your admin must have activated at least one 2FA method. It may be "
+"even enforced to use a 2FA method by your admin."
+msgstr ""
+"Richten Sie eine Zwei-Faktor-Authentifizierung (2FA) ein, um die Sicherheit "
+"Ihres Kontos zu erhöhen. Ihr Administrator muss mindestens eine 2FA-Methode "
+"aktiviert haben. Die Verwendung einer 2FA-Methode kann sogar von Ihrem "
+"Administrator erzwungen werden."
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:87
+msgid ""
+"After following the [2FA guide](./guides/two-factor-auth), you have to "
+"provide your second factor at the next login. If you can't provide your "
+"configured 2FA method, contact your admin who can reset it."
+msgstr ""
+"Nachdem Sie die [2FA-Anleitung] (./guides/two-factor-auth) befolgt haben, "
+"müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie Ihre "
+"konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an Ihren "
+"Administrator, der sie zurücksetzen kann."
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:88
+#, no-wrap
 msgid "Devices"
 msgstr "Geräte"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:83
+#: src/en/documentation/use/manage-profile.md:93
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account.  If "
 "necessary, you can revoke the access by clicking the delete icon in the "
@@ -2541,13 +3439,13 @@ msgstr ""
 "auf das Löschsymbol in der Spalte \"Aktionen\" klicken."
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:84
+#: src/en/documentation/use/manage-profile.md:94
 #, no-wrap
 msgid "Token Access"
 msgstr "Token-Zugriff"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:89
+#: src/en/documentation/use/manage-profile.md:99
 msgid ""
 "Generate a personal access token for a third party application to access the "
 "Zammad API. After clicking the **New Personal Access Token** button, you can "
@@ -2560,22 +3458,22 @@ msgstr ""
 "Token konfigurieren."
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:90
+#: src/en/documentation/use/manage-profile.md:100
 #: src/en/documentation/use/start-using-zammad.md:74
-#: src/en/documentation/use/start-using-zammad.md:196
+#: src/en/documentation/use/start-using-zammad.md:181
 #, no-wrap
 msgid "Notifications"
 msgstr "Benachrichtigungen"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:93
+#: src/en/documentation/use/manage-profile.md:103
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 "Passen Sie die Benachrichtigungen an, die Sie erhalten. Sie können "
 "einstellen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
 "escalated tickets)"
@@ -2584,7 +3482,7 @@ msgstr ""
 "für eskalierte Tickets)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
 "to it (e.g. only yours, not assigned, subscribed tickets)"
@@ -2594,7 +3492,7 @@ msgstr ""
 "abonnierte Tickets)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 msgid ""
 "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
@@ -2602,19 +3500,19 @@ msgstr ""
 "per E-Mail)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:110
 msgid "For tickets in which group you get notified"
 msgstr "Für in welcher Gruppe befindliche Tickets Sie benachrichtigt werden"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:102
+#: src/en/documentation/use/manage-profile.md:112
 msgid "Additionally, you can select a notification sound or disable the sound."
 msgstr ""
 "Außerdem können Sie einen Benachrichtigungston auswählen oder den Ton "
 "deaktivieren."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/manage-profile.md:103
+#: src/en/documentation/use/manage-profile.md:113
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you have\n"
@@ -2633,14 +3531,8 @@ msgstr ""
 "wie Sie das umstellen. Normalerweise gibt es ein Symbol in der Adressleiste, mit dem Sie die\n"
 "Berechtigungen der Website anpassen können.\n"
 
-#. type: Title ###
-#: src/en/documentation/use/manage-profile.md:113
-#, no-wrap
-msgid "Overviews"
-msgstr "Übersichten"
-
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:117
+#: src/en/documentation/use/manage-profile.md:127
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
 "clicking the handles on the left side."
@@ -2650,18 +3542,18 @@ msgstr ""
 "klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:120
+#: src/en/documentation/use/manage-profile.md:130
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
-"back to your admin's order by clicking the **Reset Overview Order** button."
+"back to your admin's order by clicking the `Reset Overview Order` button."
 msgstr ""
 "Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle "
 "Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres Administrators "
-"wechseln, indem Sie auf die Schaltfläche **Reihenfolge der Übersichten "
-"zurücksetzen** klicken."
+"wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten "
+"zurücksetzen` klicken."
 
 #. type: Title #
-#: src/en/documentation/use/manage-profile.md:121
+#: src/en/documentation/use/manage-profile.md:131
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, no-wrap
@@ -2669,7 +3561,7 @@ msgid "Calendar"
 msgstr "Kalender"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:125
+#: src/en/documentation/use/manage-profile.md:135
 msgid ""
 "Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
 "your favorite calendar application."
@@ -2678,7 +3570,7 @@ msgstr ""
 "Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen."
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:128
+#: src/en/documentation/use/manage-profile.md:138
 msgid ""
 "Use either the upper \"Combined subscription URL\" to subscribe to all "
 "tickets or the lower \"Direct subscription URL\". With the later one, you "
@@ -2976,76 +3868,20 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:101
 msgid ""
-"You can adjust the order by clicking on one of the column headers as well as "
-"change their width by dragging the column dividers."
+"For a detailed description, head over to the [overview usage guide](/en/"
+"documentation/use/guides/overviews)."
 msgstr ""
-"Sie können die Reihenfolge anpassen, indem Sie auf einen der Kopfzeilen der "
-"Spalten klicken, und die Breite der Spalten ändern, indem Sie die "
-"Spaltentrennlinien verschieben."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:104
-msgid ""
-"To visualize different ticket states and priorities, the entries are color "
-"coded. The **state** is represented by a circle:"
-msgstr ""
-"Zur Hervorhebung der verschiedenen Status und Prioritäten von Tickets sind "
-"die Einträge farblich gekennzeichnet. Der **Status** wird durch einen Kreis "
-"dargestellt:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-msgid "Closed: green"
-msgstr "Geschlossen: grün"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-msgid "Merged: green"
-msgstr "Zusammengefasst: grün"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-msgid "Pending: grey/black"
-msgstr "Warten auf: grau/schwarz"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-msgid "New/open: yellow"
-msgstr "Neu/offen: gelb"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:110
-msgid "Escalated: red"
-msgstr "Eskaliert: rot"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:112
-msgid "The **priority** is represented by colored text:"
-msgstr "Die **Priorität** wird durch farbigen Text dargestellt:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-msgid "3 - high: red"
-msgstr "3 - hoch: rot"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-msgid "2 - normal: blue"
-msgstr "2 - normal: blau"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:116
-msgid "1 - low: light blue"
-msgstr "1 - niedrig: hellblau"
+"Eine detaillierte Erklärung finden Sie in der [Beschreibung der Übersichten]"
+"(/de/documentation/use/guides/overviews)."
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:117
+#: src/en/documentation/use/start-using-zammad.md:102
 #, no-wrap
 msgid "Via Search"
 msgstr "Über die Suche"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:123
+#: src/en/documentation/use/start-using-zammad.md:108
 #, no-wrap
 msgid ""
 "However, if you search for a specific ticket which might or might not be\n"
@@ -3059,32 +3895,32 @@ msgstr ""
 "Tastaturkürzel, indem Sie einfach <kbd>s</kbd> drücken.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:125
+#: src/en/documentation/use/start-using-zammad.md:110
 msgid "The search covers:"
 msgstr "Die Suche umfasst:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 msgid "Message subject and text"
 msgstr "Betreff und Text der Nachricht"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 msgid "Names and email addresses"
 msgstr "Namen und E-Mail-Adressen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 msgid "Text in file attachments"
 msgstr "Text in Dateianhängen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:115
 msgid "User and organizations details (like notes, names, etc.)"
 msgstr "Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:135
+#: src/en/documentation/use/start-using-zammad.md:120
 msgid ""
 "When you enter a search term, you immediately see a preview of the search "
 "results. If you press enter or click on \"Show Search Details\", Zammad "
@@ -3097,7 +3933,7 @@ msgstr ""
 "können Sie den Objekttyp (z.B. Benutzer) bei Ihrer Suche berücksichtigen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:138
+#: src/en/documentation/use/start-using-zammad.md:123
 msgid ""
 "Are you a power user and want to have more powerful feature? Have a look at "
 "the \"Advanced search\" block below."
@@ -3106,7 +3942,7 @@ msgstr ""
 "Werfen Sie einen Blick auf den Bereich \"Erweiterte Suche\" unten."
 
 #. type: Fenced div block (details Advanced search)
-#: src/en/documentation/use/start-using-zammad.md:139
+#: src/en/documentation/use/start-using-zammad.md:124
 #, no-wrap
 msgid ""
 "\n"
@@ -3219,7 +4055,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:203
+#: src/en/documentation/use/start-using-zammad.md:188
 msgid ""
 "Depending on the [notification settings](/en/documentation/use/manage-"
 "profile#notifications) in your profile, you receive updates for different "
@@ -3233,7 +4069,7 @@ msgstr ""
 "dass keine wichtige Änderung an einem Ticket übersehen wird."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:207
+#: src/en/documentation/use/start-using-zammad.md:192
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
 "corner. If there is a badge with a counter, the counter shows the number of "
@@ -3244,7 +4080,7 @@ msgstr ""
 "zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:212
+#: src/en/documentation/use/start-using-zammad.md:197
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
 "owner) got updated. By clicking on the link in the notification, this ticket "
@@ -3257,13 +4093,13 @@ msgstr ""
 "Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird angezeigt."
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:213
+#: src/en/documentation/use/start-using-zammad.md:198
 #, no-wrap
 msgid "Ticket Basics"
 msgstr "Ticket-Grundlagen"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:220
+#: src/en/documentation/use/start-using-zammad.md:205
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
 "requests with an email client so far, you might think that a ticket system "
@@ -3274,7 +4110,7 @@ msgstr ""
 "System kompliziert ist. Aber das Gegenteil ist der Fall:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
 "might be as well)."
@@ -3283,7 +4119,7 @@ msgstr ""
 "Kanälen möglicherweise auch)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid ""
 "You and your colleagues can see who is working on which customer request "
 "(\"ticket\")."
@@ -3292,7 +4128,7 @@ msgstr ""
 "(\"Ticket\") arbeitet."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid ""
 "The state of each request as well as the history (who did what?) is "
 "transparent."
@@ -3301,12 +4137,12 @@ msgstr ""
 "transparent."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr "Es gibt keine doppelte Arbeit und nichts wird übersehen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
 "cases."
@@ -3315,7 +4151,7 @@ msgstr ""
 "bitten."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:232
+#: src/en/documentation/use/start-using-zammad.md:217
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
 "customer issues and answer customer questions."
@@ -3325,7 +4161,7 @@ msgstr ""
 "Beantwortung von Kundenfragen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:236
+#: src/en/documentation/use/start-using-zammad.md:221
 msgid ""
 "So, basically you can work with Zammad similar as with your email client. "
 "Except that you have some additional attributes you can set in the *Ticket* "
@@ -3336,7 +4172,7 @@ msgstr ""
 "Seitenleisten-Tab *Ticket* einstellen können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
 "request is resolved or not). By default, there are the following states:"
@@ -3346,7 +4182,7 @@ msgstr ""
 "gibt es die folgenden Status:"
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
 "a ticket the first time, it automatically switches to *open*."
@@ -3356,7 +4192,7 @@ msgstr ""
 "*offen*."
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
 "be done."
@@ -3365,7 +4201,7 @@ msgstr ""
 "gearbeitet werden muss."
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
 "don't want to close immediately. This state requires you to enter a date and "
@@ -3377,7 +4213,7 @@ msgstr ""
 "*geschlossen* wechselt."
 
 #. type: Bullet: '    - '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
 "to a certain date and time. Requires you to enter a date and time at which "
@@ -3391,7 +4227,7 @@ msgstr ""
 "hatten und sicherstellen möchten, dass dieses Problem nicht vergessen wird."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket.  "
 "In case you need to have an information from another colleague, you can "
@@ -3408,7 +4244,7 @@ msgstr ""
 "Benachrichtigungen über Aktualisierungen von Tickets."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:244
 msgid ""
 "**Group**: This ticket attribute is useful for organizations with more than "
 "one team. Depending on the permissions, you might not see the ticket after "
@@ -3420,13 +4256,13 @@ msgstr ""
 "gespeichert haben."
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:260
+#: src/en/documentation/use/start-using-zammad.md:245
 #, no-wrap
 msgid "Ticket Detail View"
 msgstr "Ticket Detailansicht"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:264
+#: src/en/documentation/use/start-using-zammad.md:249
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
 "ticket detail view."
@@ -3435,7 +4271,7 @@ msgstr ""
 "auf die Ticket Detailansicht werfen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:271
+#: src/en/documentation/use/start-using-zammad.md:256
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
 "main part, all articles of the ticket are shown here. The oldest article "
@@ -3453,7 +4289,7 @@ msgstr ""
 "unter dem Artikel verwenden oder die **Weiterleiten**-Funktion nutzen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:274
+#: src/en/documentation/use/start-using-zammad.md:259
 msgid ""
 "Independent of the customer's article type, you can always add internal "
 "notes.  These are useful to add information to the ticket or ask a colleague."
@@ -3463,13 +4299,13 @@ msgstr ""
 "oder einen Kollegen zu fragen."
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:275
+#: src/en/documentation/use/start-using-zammad.md:260
 #, no-wrap
 msgid "Updating your Ticket"
 msgstr "Aktualisierung Ihres Tickets"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:282
+#: src/en/documentation/use/start-using-zammad.md:267
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
 "change the state of the ticket, you can see a highlighted **Update** button "
@@ -3486,13 +4322,13 @@ msgstr ""
 "auf *geschlossen* setzen."
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:283
+#: src/en/documentation/use/start-using-zammad.md:268
 #, no-wrap
 msgid "Conclusion"
 msgstr "Abschluss"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:289
+#: src/en/documentation/use/start-using-zammad.md:274
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
@@ -3806,22 +4642,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:15
-#, fuzzy
-#| msgid ""
-#| "If you have questions, feel free to [get in touch with us](https://zammad."
-#| "com/en/company/contact) and to have a look at the [community forum]"
-#| "(https://community.zammad.org/) were you can find useful information and "
-#| "help."
 msgid ""
 "If you have questions, feel free to [get in touch with us](https://zammad."
 "com/en/company/contact){target=_blank} and to have a look at the [community "
 "forum](https://community.zammad.org/){target=_blank} were you can find "
 "useful information and help."
 msgstr ""
-"Wenn Sie Fragen haben, können Sie sich gerne [an uns](https://zammad.com/en/"
-"company/contact) wenden und einen Blick in das [Community-Forum](https://"
-"community.zammad.org/) werfen, wo Sie nützliche Informationen und Hilfe "
-"finden können."
+"Wenn Sie Fragen haben, können Sie sich gerne [an uns](https://zammad.com/de/"
+"company/contact){target=_blank} wenden und einen Blick in das [Community "
+"Forum](https://community.zammad.org/){target=_blank} werfen, wo Sie "
+"nützliche Informationen und Hilfe finden können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:16
@@ -3831,12 +4661,6 @@ msgstr "Zammad testen"
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:22
-#, fuzzy
-#| msgid ""
-#| "We are sure you like Zammad! The easiest way to test it is to use a [free "
-#| "trial instance](https://zammad.com/en/getting-started). You can play "
-#| "around and then you can switch to a official supported instance, either "
-#| "keeping your data or start with an empty system."
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
 "trial instance](https://zammad.com/en/getting-started){target=_blank}.  You "
@@ -3845,9 +4669,9 @@ msgid ""
 msgstr ""
 "Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu "
 "testen, ist die Verwendung einer [kostenlosen Testversion](https://zammad."
-"com/de/getting-started). Sie können damit herumspielen und dann zu einer "
-"offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten behalten oder "
-"mit einem leeren System beginnen können."
+"com/de/getting-started){target=_blank}. Sie können damit herumspielen und "
+"dann zu einer offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten "
+"behalten oder mit einem leeren System neu beginnen können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:23
@@ -3857,19 +4681,14 @@ msgstr "Nutzen Sie Zammads Hosting-Service"
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:28
-#, fuzzy
-#| msgid ""
-#| "To use Zammad in production, head over to our sister site [zammad.com]"
-#| "(https://zammad.com/en/pricing) where you can find prices for Zammad's "
-#| "hosted services."
 msgid ""
 "To use Zammad in production, head over to our sister site [zammad.com]"
 "(https://zammad.com/en/pricing){target=_blank} where you can find prices for "
 "Zammad's hosted services."
 msgstr ""
 "Wenn Sie Zammad produktiv einsetzen möchten, besuchen Sie unsere andere "
-"Seite [zammad.com](https://zammad.com/de/pricing), wo Sie die Preise für "
-"Hosing Services von Zammad finden können."
+"Seite [zammad.com](https://zammad.com/de/pricing){target=_blank}, wo Sie die "
+"Preise für Hosting Services von Zammad finden können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:29
@@ -3890,11 +4709,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:38
-#, fuzzy
-#| msgid ""
-#| "If you are a self-hosted user and want to have support at hand, our sales "
-#| "team is happy to get in touch with you. Just leave them [a message]"
-#| "(https://zammad.com/en/company/contact)."
 msgid ""
 "If you are a self-hosted user and want to have support at hand, our sales "
 "team is happy to get in touch with you. Just leave them [a message](https://"
@@ -3902,7 +4716,7 @@ msgid ""
 msgstr ""
 "Wenn Sie Zammad selbst hosten und Support wünschen, nimmt unser "
 "Vertriebsteam gerne Kontakt mit Ihnen auf. Hinterlassen Sie einfach eine "
-"[Nachricht](https://zammad.com/de/company/contact)."
+"[Nachricht](https://zammad.com/de/company/contact){target=_blank}."
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/get-started/index.md:1
@@ -3924,24 +4738,17 @@ msgstr "Installation via Docker"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:10
-#, fuzzy
-#| msgid ""
-#| "Zammad can be deployed using Docker-Compose. You can even use graphical "
-#| "docker front ends like [Portainer](https://www.portainer.io/)."
 msgid ""
 "Zammad can be deployed using Docker-Compose. You can even use graphical "
 "docker front ends like [Portainer](https://www.portainer.io/){target=_blank}."
 msgstr ""
 "Zammad kann mit Docker-Compose installiert werden. Sie können sogar "
-"grafische Docker-Frontends wie [Portainer](https://www.portainer.io/) "
-"verwenden."
+"grafische Docker-Frontends wie [Portainer](https://www.portainer.io/)"
+"{target=_blank} verwenden."
 
 #. type: Fenced div block (info)
 #: src/en/get-started/installation/docker.md:11
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "We do not provide support in terms of Docker (-Compose) or Portainer specific problems. If you choose to run Zammad via Docker, support is only provided for the Zammad application.\n"
+#, no-wrap
 msgid ""
 "\n"
 "We do not provide support in terms of Docker (-Compose) or Portainer specific\n"
@@ -3994,12 +4801,6 @@ msgstr "Installation mit Portainer"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:33
-#, fuzzy
-#| msgid ""
-#| "The easiest way to get Zammad running is via a graphical docker UI. We "
-#| "recommend [Portainer](https://www.portainer.io/). For installation "
-#| "instructions, check out [Portainer's documentation](https://docs."
-#| "portainer.io/)."
 msgid ""
 "The easiest way to get Zammad running is via a graphical docker UI. We "
 "recommend [Portainer](https://www.portainer.io/){target=_blank}. For "
@@ -4007,9 +4808,9 @@ msgid ""
 "docs.portainer.io/){target=_blank}."
 msgstr ""
 "Der einfachste Weg, Zammad zum Laufen zu bringen, ist über eine grafische "
-"Docker-Oberfläche. Wir empfehlen [Portainer](https://www.portainer.io/). "
-"Installationsanweisungen finden Sie in der [Portainer Dokumentation](https://"
-"docs.portainer.io/)."
+"Docker-Oberfläche. Wir empfehlen [Portainer](https://www.portainer.io/)"
+"{target=_blank}. Installationsanweisungen finden Sie in der [Portainer "
+"Dokumentation](https://docs.portainer.io/){target=_blank}."
 
 #. type: Title ###
 #: src/en/get-started/installation/docker.md:34
@@ -4050,12 +4851,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:50
-#, fuzzy
-#| msgid ""
-#| "Optional: if you need to provide environment variables, you can enter "
-#| "them in the **Environment variable** section or even upload a .env file. "
-#| "See [env template](https://github.com/zammad/zammad-docker-compose/blob/"
-#| "master/.env.dist)  as an example."
 msgid ""
 "Optional: if you need to provide environment variables, you can enter them "
 "in the **Environment variable** section or even upload a .env file. See [env "
@@ -4065,7 +4860,7 @@ msgstr ""
 "Optional: Wenn Sie Umgebungsvariablen angeben müssen, können Sie diese in "
 "den Abschnitt **Environment variable** eingeben oder sogar eine .env-Datei "
 "hochladen. Siehe [Beispiel .env Vorlage](https://github.com/zammad/zammad-"
-"docker-compose/blob/master/.env.dist)."
+"docker-compose/blob/master/.env.dist){target=_blank}."
 
 #. type: Title ###
 #: src/en/get-started/installation/docker.md:51
@@ -4121,11 +4916,6 @@ msgstr "git clone https://github.com/zammad/zammad-docker-compose.git\n"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:69
-#, fuzzy
-#| msgid ""
-#| "Make sure to run `git pull` frequently to fetch updates. Alternatively, "
-#| "you can download the files from the [releases page](https://github.com/"
-#| "zammad/zammad-docker-compose/releases)."
 msgid ""
 "Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
 "can download the files from the [releases page](https://github.com/zammad/"
@@ -4133,8 +4923,8 @@ msgid ""
 msgstr ""
 "Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um "
 "Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der "
-"[Release Seite](https://github.com/zammad/zammad-docker-compose/releases) "
-"herunterladen."
+"[Release Seite](https://github.com/zammad/zammad-docker-compose/releases)"
+"{target=_blank} herunterladen."
 
 #. type: Title ###
 #: src/en/get-started/installation/docker.md:70
@@ -4199,15 +4989,6 @@ msgstr "Anpassen des Zammad-Stacks"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:105
-#, fuzzy
-#| msgid ""
-#| "Sometimes it's necessary to apply local changes to the Zammad docker "
-#| "stack, e.g. to include additional services. If you plan to do so, we "
-#| "recommend that you do not change the `docker-compose.yml` file, but "
-#| "instead create a local `docker-compose.override.yml` that includes all "
-#| "your modifications.  Docker-Compose will [automatically load this file "
-#| "and merge its changes into your stack](https://docs.docker.com/compose/"
-#| "multiple-compose-files/merge/)."
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad docker stack, "
 "e.g. to include additional services. If you plan to do so, we recommend that "
@@ -4223,7 +5004,7 @@ msgstr ""
 "eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre "
 "Änderungen enthält.  Docker-Compose wird [automatisch diese Datei laden und "
 "ihre Änderungen in Ihren Stack einfügen](https://docs.docker.com/compose/"
-"multiple-compose-files/merge/)."
+"multiple-compose-files/merge/){target=_blank}."
 
 #. type: Title ##
 #: src/en/get-started/installation/docker.md:106
@@ -4310,17 +5091,14 @@ msgstr "Installation mit Kubernetes"
 
 #. type: Plain text
 #: src/en/get-started/installation/kubernetes.md:10
-#, fuzzy
-#| msgid ""
-#| "You can find installation instructions in the [documentation of our helm "
-#| "chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md)."
 msgid ""
 "You can find installation instructions in the [documentation of our helm "
 "chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md)"
 "{target=_blank}."
 msgstr ""
 "Sie finden die Installationsanweisungen in der [Dokumentation zum Helm Chart]"
-"(https://github.com/zammad/zammad-helm/blob/main/zammad/README.md)."
+"(https://github.com/zammad/zammad-helm/blob/main/zammad/README.md)"
+"{target=_blank}."
 
 #. type: Fenced div block (info)
 #: src/en/get-started/installation/kubernetes.md:11
@@ -4344,7 +5122,7 @@ msgstr "Paket"
 #: src/en/get-started/installation/package.md:6
 #, no-wrap
 msgid "Package Installation"
-msgstr "Paket Installation"
+msgstr "Paket-Installation"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:9
@@ -4368,7 +5146,7 @@ msgstr "Unterstützte Betriebssysteme"
 msgid ""
 "For package installation, the following Linux distributions are supported:"
 msgstr ""
-"Für die Paketinstallation werden die folgenden Linux-Distributionen "
+"Für die Paket-Installation werden die folgenden Linux-Distributionen "
 "unterstützt:"
 
 #. type: Plain text
@@ -4391,11 +5169,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:24
-#, fuzzy
-#| msgid ""
-#| "If your distribution is not supported, feel free to use a different "
-#| "installation method or consider using [Zammad's cloud service](https://"
-#| "zammad.com/en/pricing)."
 msgid ""
 "If your distribution is not supported, feel free to use a different "
 "installation method or consider using [Zammad's cloud service](https://"
@@ -4403,7 +5176,7 @@ msgid ""
 msgstr ""
 "Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere "
 "Installationsmethode verwenden oder [Zammads Cloud Service](https://zammad."
-"com/de/pricing) in Betracht ziehen."
+"com/de/pricing){target=_blank} in Betracht ziehen."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:27
@@ -4510,6 +5283,10 @@ msgid ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "=== Debian\n"
 "List your current locale settings:\n"
 "\n"
@@ -4528,6 +5305,10 @@ msgid ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "=== OpenSUSE/SLES\n"
 "List your current locale settings:\n"
 "\n"
@@ -4540,6 +5321,10 @@ msgid ""
 "```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 "===CentOS/RHEL\n"
 "List your current locale settings:\n"
 "\n"
@@ -4552,6 +5337,10 @@ msgid ""
 "```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"\n"
+"After fixing it, make sure to check the output again for including\n"
+"`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
+"\n"
 msgstr ""
 "\n"
 "=== Ubuntu\n"
@@ -4572,6 +5361,9 @@ msgstr ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf\n"
+"`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.\n"
+"\n"
 "=== Debian\n"
 "Auflisten der aktuellen locale Einstellungen:\n"
 "\n"
@@ -4590,6 +5382,9 @@ msgstr ""
 "```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
+"Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf\n"
+"`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.\n"
+"\n"
 "=== OpenSUSE/SLES\n"
 "Auflisten der aktuellen locale Einstellungen:\n"
 "\n"
@@ -4602,6 +5397,9 @@ msgstr ""
 "``` sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf\n"
+"`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.\n"
+"\n"
 "===CentOS/RHEL\n"
 "Auflisten der aktuellen locale Einstellungen:\n"
 "\n"
@@ -4614,20 +5412,18 @@ msgstr ""
 "``` sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
+"Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf\n"
+"`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.\n"
+"\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:128
+#: src/en/get-started/installation/package.md:144
 #, no-wrap
 msgid "Install Elasticsearch"
 msgstr "Elasticsearch installieren"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:133
-#, fuzzy
-#| msgid ""
-#| "The recommended method is to use [Elastic's official guide](https://www."
-#| "elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch."
-#| "html) for installing Elasticsearch."
+#: src/en/get-started/installation/package.md:149
 msgid ""
 "The recommended method is to use [Elastic's official guide](https://www."
 "elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch."
@@ -4635,10 +5431,10 @@ msgid ""
 msgstr ""
 "Die empfohlene Methode ist die Verwendung von [Elastics offizieller "
 "Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/"
-"reference/current/install-elasticsearch.html)."
+"reference/current/install-elasticsearch.html){target=_blank}."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:138
+#: src/en/get-started/installation/package.md:154
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
 "elasticsearch.md) of Elasticsearch 7, which we included in another page to "
@@ -4650,13 +5446,13 @@ msgstr ""
 "halten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:139
+#: src/en/get-started/installation/package.md:155
 #, no-wrap
 msgid "Add Zammad Repository"
 msgstr "Zammad-Repository hinzufügen"
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:141
+#: src/en/get-started/installation/package.md:157
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make sure\n"
@@ -4666,7 +5462,7 @@ msgstr ""
 "dies bei der Durchführung der folgenden Schritte berücksichtigen.\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:146
+#: src/en/get-started/installation/package.md:162
 #, no-wrap
 msgid ""
 "\n"
@@ -4822,13 +5618,13 @@ msgstr ""
 "```\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:224
+#: src/en/get-started/installation/package.md:240
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Zammad installieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:226
+#: src/en/get-started/installation/package.md:242
 #, no-wrap
 msgid ""
 "\n"
@@ -4902,13 +5698,13 @@ msgstr ""
 "```\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:263
+#: src/en/get-started/installation/package.md:279
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Zammad Services verwalten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:267
+#: src/en/get-started/installation/package.md:283
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
 "parent `zammad`:"
@@ -4917,47 +5713,47 @@ msgstr ""
 "`zammad` (neu)gestartet und gestoppt werden:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:267
+#: src/en/get-started/installation/package.md:283
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad\n"
 msgstr "systemctl (status|start|stop|restart) zammad\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:287
 msgid "Only internal puma server (relevant for displaying the web app):"
 msgstr "Nur interner Puma-Server (relevant zum Anzeigen der Web-App):"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:287
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-web\n"
 msgstr "systemctl (status|start|stop|restart) zammad-web\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/installation/package.md:291
 msgid "Only background worker - relevant for all delayed- and background jobs:"
 msgstr ""
 "Nur Background Worker - relevant für alle verzögerten und Hintergrund-Jobs:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/installation/package.md:291
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-worker\n"
 msgstr "systemctl (status|start|stop|restart) zammad-worker\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:279
+#: src/en/get-started/installation/package.md:295
 msgid "Only websocket server for session related information:"
 msgstr "Nur Websocket-Server für sitzungsbezogene Informationen:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:279
+#: src/en/get-started/installation/package.md:295
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
 msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:283
+#: src/en/get-started/installation/package.md:299
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:157
 #, no-wrap
@@ -4965,7 +5761,7 @@ msgid "Next Steps"
 msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 msgid ""
 "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
 "config-elasticsearch))"
@@ -4974,7 +5770,7 @@ msgstr ""
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 msgid ""
 "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-"
 "selinux))"
@@ -4983,20 +5779,20 @@ msgstr ""
 "tutorials/firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:288
+#: src/en/get-started/installation/package.md:304
 msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgstr ""
 "Konfigurieren Sie den Webserver ([Basis Anleitung](/de/tutorials/webserver-"
 "config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:290
+#: src/en/get-started/installation/package.md:306
 #, no-wrap
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:296
+#: src/en/get-started/installation/package.md:312
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -5009,24 +5805,24 @@ msgstr ""
 "Elasticsearch, das nicht automatisch installiert wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #: src/en/reference/docker-env-vars.md:80
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 #: src/en/reference/docker-env-vars.md:106
 #: src/en/tutorials/webserver-config.md:111
 #, no-wrap
@@ -5034,18 +5830,18 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:302
+#: src/en/get-started/installation/package.md:318
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:319
 #, no-wrap
 msgid "Database Server"
-msgstr "Datenbank Server"
+msgstr "Datenbank-Server"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:309
+#: src/en/get-started/installation/package.md:325
 msgid ""
 "Zammad will store all content in a Database. We supported PostgreSQL in "
 "version 10 or higher. The installation script tries to detect a MySQL/"
@@ -5059,7 +5855,7 @@ msgstr ""
 "installiert."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:310
+#: src/en/get-started/installation/package.md:326
 #: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
@@ -5074,7 +5870,7 @@ msgstr ""
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:335
 msgid ""
 "If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.  "
 "MySQL/MariaDB are **no longer** supported starting with Zammad 7."
@@ -5083,28 +5879,28 @@ msgstr ""
 "umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:336
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:323
+#: src/en/get-started/installation/package.md:339
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:342
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:342
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:346
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -5116,13 +5912,13 @@ msgstr ""
 "tutorials/webserver-config)."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:348
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:355
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -5138,12 +5934,12 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:357
 msgid "Supported Elasticsearch versions are `7.8` - `8.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `8.x`."
 
 #. type: Fenced div block (details Elasticsearch version history)
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:358
 #, no-wrap
 msgid ""
 "\n"
@@ -5171,7 +5967,7 @@ msgstr ""
 "| 2.0-3.0       | >= 2.4, <=5.6  |\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:375
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -5182,13 +5978,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:376
 #, no-wrap
 msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
 msgstr "Memcached <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:380
 msgid ""
 "Instead of storing Zammads cache files within your filesystem, they can be "
 "cached in memory with Memcached."
@@ -5197,12 +5993,7 @@ msgstr ""
 "mit Memcached im Arbeitsspeicher zwischengespeichert werden."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:367
-#, fuzzy
-#| msgid ""
-#| "The installation and configuration is out of our scope of this "
-#| "documentation.  Please follow the [official guides](https://docs."
-#| "memcached.org/)."
+#: src/en/get-started/installation/package.md:383
 msgid ""
 "The installation and configuration is out of our scope of this "
 "documentation.  Please follow the [official guides](https://docs.memcached."
@@ -5210,21 +6001,16 @@ msgid ""
 msgstr ""
 "Die Installation und Konfiguration ist nicht Bestandteil dieser "
 "Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung](https://docs."
-"memcached.org/)."
+"memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:384
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:373
-#, fuzzy
-#| msgid ""
-#| "If you want to use the PGP integration for sending and receiving signed "
-#| "and encrypted emails, you need to install the GnuPG-Tool. Please have a "
-#| "look at the official [GnuPG website](https://www.gnupg.org/index.html)."
+#: src/en/get-started/installation/package.md:389
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -5234,13 +6020,13 @@ msgstr ""
 "Wenn Sie die PGP-Integration zum Senden und Empfangen von signierten und "
 "verschlüsselten E-Mails nutzen möchten, müssen Sie das GnuPG-Tool "
 "installieren. Bitte werfen Sie einen Blick auf die offizielle [GnuPG-Website]"
-"(https://www.gnupg.org/index.html)."
+"(https://www.gnupg.org/index.html){target=_blank}."
 
 #. type: Title ##
 #: src/en/get-started/installation/prerequisites.md:10
 #, no-wrap
 msgid "Server Hardware"
-msgstr "Server Hardware"
+msgstr "Server-Hardware"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:16
@@ -5395,12 +6181,6 @@ msgstr "Zammad aktualisieren"
 
 #. type: Plain text
 #: src/en/get-started/update.md:14
-#, fuzzy
-#| msgid ""
-#| "Before updating Zammad, we strongly recommend to take a look at our "
-#| "[release notes](https://zammad.com/en/releases). You can find information "
-#| "about features and fixes as well as technical remarks and breaking "
-#| "changes."
 msgid ""
 "Before updating Zammad, we strongly recommend to take a look at our [release "
 "notes](https://zammad.com/en/releases){target=_blank}. You can find "
@@ -5408,9 +6188,9 @@ msgid ""
 "breaking changes."
 msgstr ""
 "Bevor Sie Zammad aktualisieren, empfehlen wir Ihnen dringend, einen Blick in "
-"unsere [Release Notes](https://zammad.com/de/releases) zu werfen. Dort "
-"finden Sie Informationen über Funktionen und Fehlerbehebungen sowie "
-"Anmerkungen zu Änderungen und Breaking Changes."
+"unsere [Release Notes](https://zammad.com/de/releases){target=_blank} zu "
+"werfen. Dort finden Sie Informationen über Funktionen und Fehlerbehebungen "
+"sowie Anmerkungen zu Änderungen und Breaking Changes."
 
 #. type: Plain text
 #: src/en/get-started/update.md:19
@@ -5430,7 +6210,7 @@ msgstr ""
 #: src/en/get-started/update.md:20
 #, no-wrap
 msgid "Update Package Installation"
-msgstr "Paketinstallation aktualisieren"
+msgstr "Paket-Installation aktualisieren"
 
 #. type: Title ###
 #: src/en/get-started/update.md:22
@@ -5627,11 +6407,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:114
-#, fuzzy
-#| msgid ""
-#| "If you have to update Elasticsearch, please have a look at [their "
-#| "documentation](https://www.elastic.co/guide/en/elasticsearch/reference/"
-#| "current/setup-upgrade.html) and follow the instructions."
 msgid ""
 "If you have to update Elasticsearch, please have a look at [their "
 "documentation](https://www.elastic.co/guide/en/elasticsearch/reference/"
@@ -5639,7 +6414,8 @@ msgid ""
 msgstr ""
 "Wenn Sie Elasticsearch aktualisieren müssen, werfen Sie bitte einen Blick "
 "auf [deren Dokumentation](https://www.elastic.co/guide/en/elasticsearch/"
-"reference/current/setup-upgrade.html) und folgen Sie den Anweisungen."
+"reference/current/setup-upgrade.html){target=_blank} und folgen Sie den "
+"Anweisungen."
 
 #. type: Plain text
 #: src/en/get-started/update.md:118
@@ -5905,12 +6681,7 @@ msgstr "Module"
 
 #. type: Fenced div block (tip)
 #: src/en/modules/zammad-services-hint.md:1
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Are you tired of complex setup, configuration, backup and update tasks? Let us handle this stuff for you! 🚀\n"
-#| "\n"
-#| "The easiest and often most cost-effective way to operate Zammad is our\n"
-#| "[cloud service](https://zammad.com/en/pricing). Give it a try with a free trial instance!\n"
+#, no-wrap
 msgid ""
 "Are you tired of complex setup, configuration, backup and update tasks? Let us\n"
 "handle this stuff for you! 🚀\n"
@@ -5922,7 +6693,7 @@ msgstr ""
 "Haben Sie genug von komplizierten Aufgaben rund um die Einrichtung, Konfiguration, Sicherung und Aktualisierung? Lassen Sie uns diese Dinge für Sie erledigen! 🚀\n"
 "\n"
 "Der einfachste und oft auch kostengünstigste Weg, Zammad zu betreiben, ist unser\n"
-"[Cloud-Dienst](https://zammad.com/de/pricing). Testen Sie es in einer kostenlosen Testinstanz!\n"
+"[Cloud-Dienst](https://zammad.com/de/pricing){target=_blank}. Testen Sie es in einer kostenlosen Testinstanz!\n"
 
 #. type: Title #
 #: src/en/reference/config-db-server.md:1
@@ -6133,16 +6904,12 @@ msgstr "Rails-Konsole"
 
 #. type: Plain text
 #: src/en/reference/console.md:10
-#, fuzzy
-#| msgid ""
-#| "Zammad uses Ruby on Rails so you can make use of the [rails console]"
-#| "(http://guides.rubyonrails.org/command_line.html)."
 msgid ""
 "Zammad uses Ruby on Rails so you can make use of the [rails console](http://"
 "guides.rubyonrails.org/command_line.html){target=_blank}."
 msgstr ""
 "Zammad verwendet Ruby on Rails, so dass Sie die [Rails Konsole](http://"
-"guides.rubyonrails.org/command_line.html) nutzen können."
+"guides.rubyonrails.org/command_line.html){target=_blank} nutzen können."
 
 #. type: Fenced div block (warning)
 #: src/en/reference/console.md:11
@@ -7712,20 +8479,41 @@ msgstr "Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:"
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/reference/console.md:686
+#, no-wrap
+msgid "Activate Priority Icon"
+msgstr "Prioritätssymbol aktivieren"
+
+#. type: Plain text
+#: src/en/reference/console.md:690
+msgid ""
+"To activate additional icons which represent the priority, use the command "
+"below:"
+msgstr ""
+"Um zusätzliche Symbole für die Priorität zu aktivieren, verwenden Sie den "
+"folgenden Befehl:"
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:691
+#, no-wrap
+msgid "Setting.set('ui_ticket_priority_icons', true)\n"
+msgstr "Setting.set('ui_ticket_priority_icons', true)\n"
+
+#. type: Title ##
+#: src/en/reference/console.md:695
 #, no-wrap
 msgid "Other Useful Commands"
 msgstr "Andere nützliche Befehle"
 
 #. type: Title ###
-#: src/en/reference/console.md:688
+#: src/en/reference/console.md:697
 #, no-wrap
 msgid "Fetch Emails"
 msgstr "E-Mails abrufen"
 
 #. type: Plain text
-#: src/en/reference/console.md:692
+#: src/en/reference/console.md:701
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
 "show errors that might appear within that process."
@@ -7735,19 +8523,19 @@ msgstr ""
 "auftreten können."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:693
+#: src/en/reference/console.md:702
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr "Channel.fetch\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:697
+#: src/en/reference/console.md:706
 #, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr "Fehlgeschlagene E-Mails erneut verarbeiten"
 
 #. type: Plain text
-#: src/en/reference/console.md:702
+#: src/en/reference/console.md:711
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
 "malformed message), it will store the email in the database and warn in the "
@@ -7758,7 +8546,7 @@ msgstr ""
 "Mail in der Datenbank und warnt im Überwachungsbereich darüber."
 
 #. type: Plain text
-#: src/en/reference/console.md:706
+#: src/en/reference/console.md:715
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
 "header fields), you may need to manually edit the email before Zammad can "
@@ -7770,19 +8558,19 @@ msgstr ""
 "Schritte aus."
 
 #. type: Title ####
-#: src/en/reference/console.md:707
+#: src/en/reference/console.md:716
 #, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr "Alle fehlgeschlagenen E-Mails in einen lokalen Ordner exportieren"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:708
+#: src/en/reference/console.md:717
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr "rake zammad:email_parser:failed_email:export_all`\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:714
+#: src/en/reference/console.md:723
 msgid ""
 "You can find the location of the exported email in the output of your "
 "console.  Every time you perform an export of failed (unprocessable) emails, "
@@ -7794,13 +8582,13 @@ msgstr ""
 "alle fehlgeschlagenen E-Mails zum Zeitpunkt der Ausführung enthält."
 
 #. type: Title ####
-#: src/en/reference/console.md:715
+#: src/en/reference/console.md:724
 #, no-wrap
 msgid "Edit the Email"
 msgstr "Bearbeiten Sie die E-Mail"
 
 #. type: Plain text
-#: src/en/reference/console.md:719
+#: src/en/reference/console.md:728
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
 "and try to repair it. Make sure to leave the file name untouched, as the "
@@ -7811,24 +8599,24 @@ msgstr ""
 "Dateiname nicht verändert wird, da der Import sonst fehlschlägt."
 
 #. type: Title ####
-#: src/en/reference/console.md:720
+#: src/en/reference/console.md:729
 #, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr "Importieren und erneutes Verarbeiten lokal geänderter E-Mails"
 
 #. type: Plain text
-#: src/en/reference/console.md:723
+#: src/en/reference/console.md:732
 msgid "After editing the email, run:"
 msgstr "Nachdem Sie die E-Mail bearbeitet haben, führen Sie sie folgendes aus:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:724
+#: src/en/reference/console.md:733
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:732
+#: src/en/reference/console.md:741
 msgid ""
 "This will apply your changes from the file to the database. You can also "
 "pass the entire folder as argument, so all `.eml` files in it will we "
@@ -7842,7 +8630,7 @@ msgstr ""
 "werden die Dateien gelöscht und der leere Ordner entfernt."
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:733
+#: src/en/reference/console.md:742
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -7854,13 +8642,13 @@ msgstr ""
 "erzeugten Unterordner auszuführen.\n"
 
 #. type: Title ####
-#: src/en/reference/console.md:739
+#: src/en/reference/console.md:748
 #, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr "Unerwünschte E-Mails löschen"
 
 #. type: Plain text
-#: src/en/reference/console.md:743
+#: src/en/reference/console.md:752
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
 "database after exporting them with the following command:"
@@ -7869,13 +8657,13 @@ msgstr ""
 "folgenden Befehl aus der Datenbank löschen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:743
+#: src/en/reference/console.md:752
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:750
+#: src/en/reference/console.md:759
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
 "be removed from the database, their files deleted and finally the empty "
@@ -7886,13 +8674,13 @@ msgstr ""
 "schließlich der leere Ordner entfernt."
 
 #. type: Title ###
-#: src/en/reference/console.md:751
+#: src/en/reference/console.md:760
 #, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr "Befüllen eines Testsystems mit Testdaten"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:753
+#: src/en/reference/console.md:762
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -7902,7 +8690,7 @@ msgstr ""
 "und ist schwer rückgängig zu machen!\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:762
+#: src/en/reference/console.md:771
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
 "organizations, `5` new overviews and `100` tickets. You can always use `0` "
@@ -7916,19 +8704,19 @@ msgstr ""
 "ergeben."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:763
+#: src/en/reference/console.md:772
 #, no-wrap
 msgid "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 msgstr "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 
 #. type: Title ##
-#: src/en/reference/console.md:767
+#: src/en/reference/console.md:776
 #, no-wrap
 msgid "Deleting Records"
 msgstr "Löschen von Datensätzen"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:769
+#: src/en/reference/console.md:778
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -7940,60 +8728,60 @@ msgstr ""
 "[ein Backup haben](/de/tutorials/backup-restore)!\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:775
+#: src/en/reference/console.md:784
 #, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr "Entfernen von Tickets (und ihren Artikeln)"
 
 #. type: Plain text
-#: src/en/reference/console.md:778
+#: src/en/reference/console.md:787
 msgid "Delete a ticket (specified by database ID):"
 msgstr "Löschen eines Tickets (angegeben durch die Datenbank ID):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:778
+#: src/en/reference/console.md:787
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr "Ticket.find(4).destroy\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:791
 msgid "Delete all tickets:"
 msgstr "Alle Tickets löschen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:791
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr "Ticket.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:786
+#: src/en/reference/console.md:795
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 "Behalten Sie einige Tickets (angegeben durch die Datenbank ID); löschen Sie "
 "den Rest:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:786
+#: src/en/reference/console.md:795
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr "tickets_to_keep = [1, 2, 3]\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:789
+#: src/en/reference/console.md:798
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:793
+#: src/en/reference/console.md:802
 #, no-wrap
 msgid "Removing Users"
 msgstr "Entfernen von Benutzern"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:795
+#: src/en/reference/console.md:804
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -8011,7 +8799,7 @@ msgstr ""
 "Befehle löschen ohne weitere Warnungen.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:805
+#: src/en/reference/console.md:814
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -8025,30 +8813,30 @@ msgstr ""
 "*System > Datenschutz*.\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:813
+#: src/en/reference/console.md:822
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 "Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und "
 "mehrere auf einmal."
 
 #. type: Plain text
-#: src/en/reference/console.md:816
+#: src/en/reference/console.md:825
 msgid "Remove a single user:"
 msgstr "Entfernen Sie einen einzelnen Benutzer:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:817
+#: src/en/reference/console.md:826
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr "User.find_by(email: '<email address>').destroy\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:821
+#: src/en/reference/console.md:830
 msgid "Remove several users:"
 msgstr "Mehrere Benutzer entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:822
+#: src/en/reference/console.md:831
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -8060,76 +8848,76 @@ msgstr ""
 "   ).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:828
+#: src/en/reference/console.md:837
 #, no-wrap
 msgid "Removing Organizations"
 msgstr "Entfernen von Organisationen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:830
+#: src/en/reference/console.md:839
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr "Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelöscht.\n"
 
 #. type: Title ####
-#: src/en/reference/console.md:834
+#: src/en/reference/console.md:843
 #, no-wrap
 msgid "Step 1: Select organizations"
 msgstr "Schritt 1: Organisationen auswählen"
 
 #. type: Plain text
-#: src/en/reference/console.md:837
+#: src/en/reference/console.md:846
 msgid "By \"active\" status:"
 msgstr "Nach dem Status \"aktiv\":"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:837
+#: src/en/reference/console.md:846
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr "organizations = Organization.where(active: false)\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:842
+#: src/en/reference/console.md:851
 msgid "By name:"
 msgstr "Nach dem Namen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:842
+#: src/en/reference/console.md:851
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr "organizations = Organization.where(name: 'Acme')\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:856
 msgid "By partial match on notes:"
 msgstr "Bei teilweiser Übereinstimmung mit den Notizen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:856
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 
 #. type: Title ####
-#: src/en/reference/console.md:851
+#: src/en/reference/console.md:860
 #, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr "Schritt 2: Vorschau der betroffenen Organisationen"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:852
+#: src/en/reference/console.md:861
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 msgstr "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 
 #. type: Title ####
-#: src/en/reference/console.md:856
+#: src/en/reference/console.md:865
 #, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr "Schritt 3: Mit der Löschung fortfahren"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:858
+#: src/en/reference/console.md:867
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -8139,7 +8927,7 @@ msgstr ""
 "    puts %{Preparing deletion of organization \"#{org.name}\"...}\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:862
+#: src/en/reference/console.md:871
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -8153,7 +8941,7 @@ msgstr ""
 "end\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:868
+#: src/en/reference/console.md:877
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -8165,35 +8953,35 @@ msgstr ""
 "   end\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:874
+#: src/en/reference/console.md:883
 #, no-wrap
 msgid "Removing System Records"
 msgstr "Entfernen von Systemdaten"
 
 #. type: Plain text
-#: src/en/reference/console.md:877
+#: src/en/reference/console.md:886
 msgid "Remove all online notifications:"
 msgstr "Löschen aller Online-Benachrichtigungen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:878
+#: src/en/reference/console.md:887
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr "OnlineNotification.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:883
+#: src/en/reference/console.md:892
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr "Entfernen Sie alle Einträge aus dem Aktivitätsverlauf (Dashboard):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:884
+#: src/en/reference/console.md:893
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr "ActivityStream.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:889
+#: src/en/reference/console.md:898
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
 "organizations):"
@@ -8202,13 +8990,13 @@ msgstr ""
 "Organisationen) entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:890
+#: src/en/reference/console.md:899
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr "RecentView.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/console.md:896
+#: src/en/reference/console.md:905
 msgid ""
 "Remove all history information from tickets, users and organizations "
 "(dangerous!):"
@@ -8217,19 +9005,19 @@ msgstr ""
 "Organisationen (gefährlich!):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:897
+#: src/en/reference/console.md:906
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr "History.destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/console.md:901
+#: src/en/reference/console.md:910
 #, no-wrap
 msgid "Reset Zammad Installation"
 msgstr "Zammad Installation zurücksetzen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:903
+#: src/en/reference/console.md:912
 #, no-wrap
 msgid ""
 "\n"
@@ -8247,25 +9035,25 @@ msgstr ""
 "Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:912
+#: src/en/reference/console.md:921
 #, no-wrap
 msgid "rake db:drop\n"
 msgstr "rake db:drop\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:915
+#: src/en/reference/console.md:924
 #, no-wrap
 msgid "rake db:create\n"
 msgstr "rake db:create\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:918
+#: src/en/reference/console.md:927
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr "rake db:migrate\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:921
+#: src/en/reference/console.md:930
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr "rake db:seed\n"
@@ -8736,8 +9524,10 @@ msgid ""
 "  Use `enabled` to turn this option on only until the next update. Use\n"
 "  `true` to turn it on permanently.\n"
 msgstr ""
-"  Diese Einstellung kann bei der Aktualisierung von Paketinstallationen überschrieben werden.\n"
-"  Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie\n"
+"  Diese Einstellung kann bei der Aktualisierung von Paket-Installationen "
+"überschrieben werden.\n"
+"  Verwenden Sie `enabled`, um diese Option nur bis zur nächsten "
+"Aktualisierung einzuschalten. Verwenden Sie\n"
 "  `true`, um sie dauerhaft einzuschalten.\n"
 
 #. type: Plain text
@@ -13159,9 +13949,9 @@ msgid ""
 "`logrotate` to rename and archive (or *rotate*) log files on a nightly basis "
 "and remove old logs after 14 days."
 msgstr ""
-"Bei Paketinstallationen wird ein separates Dienstprogramm namens `logrotate` "
-"eingerichtet, das die Protokolldateien jede Nacht umbenennt und archiviert "
-"(oder *rotiert*) und alte Protokolle nach 14 Tagen entfernt."
+"Bei Paket-Installationen wird ein separates Dienstprogramm namens `logrotate`"
+" eingerichtet, das die Protokolldateien jede Nacht umbenennt und archiviert ("
+"oder *rotiert*) und alte Protokolle nach 14 Tagen entfernt."
 
 #. type: Plain text
 #: src/en/reference/privacy.md:53
@@ -13249,15 +14039,7 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/reference/privacy.md:79
-#, fuzzy, no-wrap
-#| msgid ""
-#| "By default, the third-party services that Zammad relies on are mostly\n"
-#| "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
-#| "can be extended to interface with other services instead.\n"
-#| "\n"
-#| "The source code for these third-party service integrations can be\n"
-#| "found\n"
-#| "[here](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
+#, no-wrap
 msgid ""
 "By default, the third-party services that Zammad relies on are mostly\n"
 "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
@@ -13273,7 +14055,7 @@ msgstr ""
 "\n"
 "Der Quellcode für diese Integrationen von Drittanbieter-Services befindet\n"
 "sich unter\n"
-"[hier](https://github.com/zammad/zammad/tree/develop/lib/service).\n"
+"[hier](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
 
 #. type: Title ###
 #: src/en/reference/privacy.md:89
@@ -13362,13 +14144,6 @@ msgstr "Geo-Lokalisierung"
 
 #. type: Plain text
 #: src/en/reference/privacy.md:126
-#, fuzzy
-#| msgid ""
-#| "Zammad's geolocation service relies on OpenStreetMap (OSM) unless you "
-#| "turned it off. If you provide an address (or parts of an address) in a "
-#| "user object, there is a lookup of coordinates from OSM which are stored "
-#| "in Zammad's database. Have a look at their [privacy policy](https://"
-#| "osmfoundation.org/wiki/Privacy_Policy) for more information."
 msgid ""
 "Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned "
 "it off. If you provide an address (or parts of an address) in a user object, "
@@ -13381,7 +14156,7 @@ msgstr ""
 "einer Adresse) in einem Benutzerobjekt angeben, werden die Koordinaten von "
 "OSM in der Datenbank von Zammad gespeichert. Weitere Informationen finden "
 "Sie in den [Datenschutzbestimmungen von OSM](https://osmfoundation.org/wiki/"
-"Privacy_Policy)."
+"Privacy_Policy){target=_blank}."
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:12
@@ -15672,73 +16447,57 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)  "
-#| "*(official)*"
 msgid ""
 "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
 "{target=_blank} *(official)*"
 msgstr ""
-"[Ruby Client](https://github.com/zammad/zammad-api-client-ruby) *(offiziell)*"
+"[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
+"{target=_blank} *(offiziell)*"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[PHP Client](https://github.com/zammad/zammad-api-client-php)  "
-#| "*(official)*"
 msgid ""
 "[PHP Client](https://github.com/zammad/zammad-api-client-php){target=_blank} "
 "*(official)*"
 msgstr ""
-"[PHP Client](https://github.com/zammad/zammad-api-client-php)  *(offiziell)*"
+"[PHP Client](https://github.com/zammad/zammad-api-client-php)"
+"{target=_blank}  *(offiziell)*"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid "[Python Client](https://pypi.org/project/zammad-py/) *(Third-Party)*"
 msgid ""
 "[Python Client](https://pypi.org/project/zammad-py/){target=_blank} *(Third-"
 "Party)*"
-msgstr "[Python Client](https://pypi.org/project/zammad-py/) *(Third-Party)*"
+msgstr ""
+"[Python Client](https://pypi.org/project/zammad-py/){target=_blank} *(Third-"
+"Party)*"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[.NET Client](https://github.com/Asesjix/Zammad-Client)  *(third-Party)*"
 msgid ""
 "[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
 "*(third-Party)*"
 msgstr ""
-"[.NET Client](https://github.com/Asesjix/Zammad-Client) *(Third-Party)*"
+"[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
+"*(Third-Party)*"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Android API-Client](https://github.com/KirkBushman/zammad-android)  "
-#| "*(third-Party)*"
 msgid ""
 "[Android API-Client](https://github.com/KirkBushman/zammad-android)"
 "{target=_blank} *(third-Party)*"
 msgstr ""
-"[Android API-Client](https://github.com/KirkBushman/zammad-android) *(Third-"
-"Party)*"
+"[Android API-Client](https://github.com/KirkBushman/zammad-android)"
+"{target=_blank} *(Third-Party)*"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Go Client](https://github.com/AlessandroSechi/zammad-go)  *(third-Party; "
-#| "API client only, no \"ready to use\" app)*"
 msgid ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
 "*(third-Party; API client only, no \"ready to use\" app)*"
 msgstr ""
-"[Go Client](https://github.com/AlessandroSechi/zammad-go) *(Third-Party; nur "
-"API-Client, keine \"gebrauchsfertige\" Anwendung)*"
+"[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
+"*(Third-Party; nur API-Client, keine \"gebrauchsfertige\" Anwendung)*"
 
 #. type: Title ##
 #: src/en/reference/rest-api/intro.md:31
@@ -17312,20 +18071,17 @@ msgstr "Ausführen von Datenbank-Migrationen"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/object.md:263
-#, fuzzy, no-wrap
-#| msgid ""
-#| "After executing the database migrations a restart of Zammad is\n"
-#| "*mandatory*. If configured Zammad also can restart automatically (this\n"
-#| "is the case on Hosted environments) – expect a short downtime.\n"
+#, no-wrap
 msgid ""
 "After executing the database migrations, a restart of Zammad is\n"
 "*mandatory*. If not deactivated via\n"
 "[auto shutdown setting](/en/reference/console#auto-shutdown-setting),\n"
 "Zammad automatically restarts - expect a short downtime.\n"
 msgstr ""
-"Nach der Durchführung der Datenbankmigrationen ist ein Neustart von Zammad\n"
-"*zwingend* erforderlich. Wenn konfiguriert, kann Zammad auch automatisch neu starten (dies\n"
-"ist der Fall bei gehosteten Umgebungen) - rechnen Sie mit einer kurzen Ausfallzeit.\n"
+"Nach der Durchführung von Datenbankmigrationen ist ein Neustart von Zammad\n"
+"*zwingend erforderlich*. Wenn nicht per\n"
+"[Auto-Shutdown-Einstellung](/de/reference/console#auto-shutdown-einstellung),\n"
+"deaktiviert, startet Zammad automatisch neu - rechnen Sie mit einer kurzen Ausfallzeit.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/object.md:272
@@ -18680,6 +19436,13 @@ msgstr ""
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
 "\n"
 
+#. type: Title #
+#: src/en/reference/rest-api/time-accounting.md:1
+#: src/en/reference/rest-api/time-accounting.md:6
+#, no-wrap
+msgid "Time Accounting"
+msgstr "Zeiterfassung"
+
 #. type: Plain text
 #: src/en/reference/rest-api/time-accounting.md:11
 #: src/en/reference/rest-api/time-accounting.md:23
@@ -19196,8 +19959,8 @@ msgid ""
 "Zammad ships scripts in package installations for backup & restore which you "
 "can use."
 msgstr ""
-"Zammad liefert Skripte zur Sicherung und Wiederherstellung bei "
-"Paketinstallationen mit, die Sie verwenden können."
+"Zammad liefert Skripte zur Sicherung und Wiederherstellung bei Paket-"
+"Installationen mit, die Sie verwenden können."
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/backup-restore.md:10
@@ -19511,11 +20274,7 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/backup-restore.md:102
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If your scenario is different as described above, please consult the\n"
-#| "[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) or consider\n"
-#| "[paid support options](https://zammad.com/en/services/professional-services).\n"
+#, no-wrap
 msgid ""
 "If your scenario is different as described above, please consult the\n"
 "[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}\n"
@@ -19523,8 +20282,8 @@ msgid ""
 "[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.\n"
 msgstr ""
 "Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die\n"
-"[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5) oder erwägen Sie\n"
-"[bezahlte Support-Optionen](https://zammad.com/de/services/professional-services).\n"
+"[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank} oder erwägen Sie\n"
+"[bezahlte Support-Optionen](https://zammad.com/de/services/professional-services){target=_blank}.\n"
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:109
@@ -19800,11 +20559,6 @@ msgstr "Fehlerbehebung Sicherung & Wiederherstellung"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:222
-#, fuzzy
-#| msgid ""
-#| "You can find some common problems below. If your issue is not listed, "
-#| "feel free to consult the [Zammad Community](https://community.zammad.org/"
-#| "c/trouble-running-zammad-this-is-your-place/5)  for technical assistance."
 msgid ""
 "You can find some common problems below. If your issue is not listed, feel "
 "free to consult the [Zammad Community](https://community.zammad.org/c/"
@@ -19813,8 +20567,8 @@ msgid ""
 msgstr ""
 "Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem "
 "nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad Community]"
-"(https://community.zammad.org/c/trouble-running-zammad-this-is-your-"
-"place/5), um nach Unterstützung zu fragen."
+"(https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5)"
+"{target=_blank}, um nach Unterstützung zu fragen."
 
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:223
@@ -19951,18 +20705,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:276
-#, fuzzy
-#| msgid ""
-#| "Please consult the official [PostgreSQL documentation](https://www."
-#| "postgresql.org/docs/) for this, as this is out of our documentation scope."
 msgid ""
 "Please consult the official [PostgreSQL documentation](https://www."
 "postgresql.org/docs/){target=_blank} for this, as this is out of our "
 "documentation scope."
 msgstr ""
 "Bitte konsultieren Sie dazu die offizielle [PostgreSQL-Dokumentation]"
-"(https://www.postgresql.org/docs/), da dies nicht Gegenstand dieser "
-"Dokumentation ist."
+"(https://www.postgresql.org/docs/){target=_blank}, da dies nicht Gegenstand "
+"dieser Dokumentation ist."
 
 #. type: Title ####
 #: src/en/tutorials/backup-restore.md:277
@@ -20077,8 +20827,8 @@ msgid ""
 "development installations as well, but this highly depends on your setup and "
 "is out of scope."
 msgstr ""
-"Anwendungsbereiche dieses Skripts sind hauptsächlich Paketinstallationen und "
-"dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei "
+"Anwendungsbereiche dieses Skripts sind hauptsächlich Paket-Installationen "
+"und dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei "
 "Quellcode-/Entwicklungsinstallationen funktionieren, aber das hängt stark "
 "von Ihrer Einrichtung ab und ist nicht Gegenstand dieser Dokumentation."
 
@@ -20285,11 +21035,6 @@ msgstr "Optionale Einstellungen"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:63
-#, fuzzy
-#| msgid ""
-#| "We collected some useful settings you may want to apply. For further "
-#| "information please have a look at [Elastic's documentation](https://www."
-#| "elastic.co/guide/en/elasticsearch/reference/current/index.html)."
 msgid ""
 "We collected some useful settings you may want to apply. For further "
 "information please have a look at [Elastic's documentation](https://www."
@@ -20299,7 +21044,7 @@ msgstr ""
 "Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch "
 "anwenden möchten. Weitere Informationen finden Sie in der [Elastic-"
 "Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/"
-"current/index.html)."
+"current/index.html){target=_blank}."
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:64
@@ -20369,13 +21114,7 @@ msgstr "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/connect-config-elasticsearch.md:92
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Troubleshooting unsuccessful or issue not described?\n"
-#| "\n"
-#| "If you can't solve your issue using the provided troubleshooting steps\n"
-#| "or can't find your particular issue described here, feel free to [ask\n"
-#| "the community](https://community.zammad.org) for technical assistance.\n"
+#, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
 "\n"
@@ -20388,7 +21127,7 @@ msgstr ""
 "\n"
 "Wenn Sie Ihr Problem nicht anhand der angegebenen Schritte zur Fehlerbehebung lösen können\n"
 "oder Ihr spezielles Problem hier nicht beschrieben ist, können Sie [in\n"
-"der Community](https://community.zammad.org) nachfragen.\n"
+"der Community](https://community.zammad.org){target=_blank} nachfragen.\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:101
@@ -21109,12 +21848,7 @@ msgstr "Erwägen Sie Backup-Strategien für Zammad"
 
 #. type: Fenced div block (tip Are you still lost?)
 #: src/en/tutorials/first-steps.md:76
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "If you need help or you'll need to get in production a lot faster, you can also\n"
-#| "book workshops with one of our\n"
-#| "[Zammad consultants](https://zammad.com/en/company/contact).\n"
+#, no-wrap
 msgid ""
 "\n"
 "If you need help or you'll need to get in production a lot faster, you can also\n"
@@ -21124,7 +21858,7 @@ msgstr ""
 "\n"
 "Wenn Sie Hilfe brauchen oder schneller produktiv sein wollen, können Sie auch\n"
 "Workshops mit einem unserer\n"
-"[Zammad-Berater](https://zammad.com/de/company/contact) buchen.\n"
+"[Zammad-Berater](https://zammad.com/de/company/contact){target=_blank} buchen.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/index.md:1
@@ -21151,14 +21885,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:20
-#, fuzzy
-#| msgid ""
-#| "Elasticsearch offers two versions. Currently, the versions 7 and 8 are "
-#| "maintained. For installation instructions, you should first and foremost "
-#| "follow [Elastic’s installation documentation](https://www.elastic.co/"
-#| "guide/en/elasticsearch/reference/current/install-elasticsearch."
-#| "html#elasticsearch-install-packages).  Use the dropdown in the top left "
-#| "corner to choose which version you want to install."
 msgid ""
 "Elasticsearch offers two versions. Currently, the versions 7 and 8 are "
 "maintained. For installation instructions, you should first and foremost "
@@ -21171,8 +21897,9 @@ msgstr ""
 "gepflegt. Für die Installationsanweisungen sollten Sie in erster Linie die "
 "[Dokumentation von Elasticsearch](https://www.elastic.co/guide/en/"
 "elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-"
-"install-packages) beachten.  Verwenden Sie das Dropdown-Menü in der oberen "
-"linken Ecke, um die Version auszuwählen, die Sie installieren möchten."
+"install-packages){target=_blank} beachten.  Verwenden Sie das Dropdown-Menü "
+"in der oberen linken Ecke, um die Version auszuwählen, die Sie installieren "
+"möchten."
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:25
@@ -21190,11 +21917,7 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/install-elasticsearch.md:26
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you are installing Elasticsearch 8 and want to follow our\n"
-#| "[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure\n"
-#| "to copy/save the password which is shown while installing Elasticsearch.\n"
+#, no-wrap
 msgid ""
 "If you are installing Elasticsearch 8 and want to follow our\n"
 "[standard configuration](/en/tutorials/connect-config-elasticsearch){target=_blank},\n"
@@ -21202,7 +21925,7 @@ msgid ""
 "Elasticsearch.\n"
 msgstr ""
 "Wenn Sie Elasticsearch 8 installieren und unserer\n"
-"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher\n"
+"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch){target=_blank} folgen wollen, stellen Sie sicher\n"
 "dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird, kopieren/speichern.\n"
 
 #. type: Fenced div block (tabs)
@@ -21487,14 +22210,6 @@ msgstr "Zammad auf einen neuen Host migrieren"
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:14
-#, fuzzy
-#| msgid ""
-#| "This is just a description of basic steps to perform a migration to a new "
-#| "host. Your environment may be different so you should consider this as a "
-#| "reference point only. If anything goes wrong, please consult the [Zammad "
-#| "Community](https://community.zammad.org/c/trouble-running-zammad-this-is-"
-#| "your-place/5)  or consider [paid support options](https://zammad.com/en/"
-#| "services/professional-services)."
 msgid ""
 "This is just a description of basic steps to perform a migration to a new "
 "host. Your environment may be different so you should consider this as a "
@@ -21507,9 +22222,9 @@ msgstr ""
 "einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher "
 "sollten Sie dies nur als Anhaltspunkt betrachten. Wenn etwas schief geht, "
 "wenden Sie sich bitte an die [Zammad Community](https://community.zammad.org/"
-"c/trouble-running-zammad-this-is-your-place/5) oder ziehen Sie [bezahlte "
-"Support-Optionen](https://zammad.com/de/services/professional-services) in "
-"Betracht."
+"c/trouble-running-zammad-this-is-your-place/5){target=_blank} oder ziehen "
+"Sie [bezahlte Support-Optionen](https://zammad.com/de/services/professional-"
+"services){target=_blank} in Betracht."
 
 #. type: Plain text
 #: src/en/tutorials/migrate-host.md:18
@@ -22059,16 +22774,7 @@ msgstr "Spezifische Migrationsanleitungen"
 
 #. type: Fenced div block (info Missing a migration source?)
 #: src/en/tutorials/migrate.md:41
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "If your system it not mentioned yet, you'll have two options. You can either\n"
-#| "use Zammad's powerful API or drop our\n"
-#| "[sales team a message](https://zammad.com/en/company/contact) for a custom\n"
-#| "development or even migrator sponsoring.\n"
-#| "\n"
-#| "Migrations are available for hosted setups too! Contact support for further\n"
-#| "information!\n"
+#, no-wrap
 msgid ""
 "\n"
 "If your system it not mentioned yet, you'll have two options. You can either\n"
@@ -22082,7 +22788,7 @@ msgstr ""
 "\n"
 "Wenn Ihr System noch nicht aufgeführt ist, haben Sie zwei Möglichkeiten. Sie können entweder\n"
 "die leistungsstarke API von Zammad nutzen oder unserem\n"
-"[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact) schicken für eine kundenspezifische\n"
+"[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact){target=_blank} schicken für eine kundenspezifische\n"
 "Entwicklung oder sogar für das Sponsoring eines Migrations-Features..\n"
 "\n"
 "Migrationen sind auch für von Zammad gehostete Installationen verfügbar! Kontaktieren Sie den Support für weitere\n"
@@ -22153,12 +22859,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:76
-#, fuzzy
-#| msgid ""
-#| "Zammad requires API access which is why you'll need to [create an API key]"
-#| "(https://support.freshdesk.com/support/solutions/articles/215517-how-to-"
-#| "find-your-api-key)  for the migration. The migrator will request your "
-#| "Freshdesk subdomain and API key."
 msgid ""
 "Zammad requires API access which is why you'll need to [create an API key]"
 "(https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-"
@@ -22167,8 +22867,8 @@ msgid ""
 msgstr ""
 "Zammad erfordert API-Zugriff, weshalb Sie für die Migration einen [API-"
 "Schlüssel](https://support.freshdesk.com/support/solutions/articles/215517-"
-"how-to-find-your-api-key) erstellen müssen. Der Migrator wird Ihre Freshdesk-"
-"Subdomain und Ihren API-Schlüssel anfordern."
+"how-to-find-your-api-key){target=_blank} erstellen müssen. Der Migrator wird "
+"Ihre Freshdesk-Subdomain und Ihren API-Schlüssel anfordern."
 
 #. type: Fenced div block (warning)
 #: src/en/tutorials/migrate.md:77 src/en/tutorials/migrate.md:507
@@ -22996,12 +23696,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:506
-#, fuzzy
-#| msgid ""
-#| "Zammad requires API access which is why you’ll need to [create an API key]"
-#| "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
-#| "new-API-token)  for the migration. The migrator will request your Zendesk-"
-#| "URL, email address and API key."
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API key]"
 "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
@@ -23010,8 +23704,8 @@ msgid ""
 msgstr ""
 "Zammad erfordert einen API-Zugang, weshalb Sie für die Migration einen [API-"
 "Schlüssel](https://support.zendesk.com/hc/en-us/articles/4408889192858-"
-"Generating-a-new-API-token) erstellen müssen. Die Migration wird Ihre "
-"Zendesk-URL, Ihre E-Mail-Adresse und Ihren API-Schlüssel abfragen."
+"Generating-a-new-API-token){target=_blank} erstellen müssen. Die Migration "
+"wird Ihre Zendesk-URL, Ihre E-Mail-Adresse und Ihren API-Schlüssel abfragen."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:518
@@ -23175,12 +23869,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:21
-#, fuzzy
-#| msgid ""
-#| "This guide will provide you some steps to get started. For a deeper "
-#| "insight you should consider having a look at the [indexed attributes](/en/"
-#| "reference/es-indexed-attributes) of Elasticsearch and to read the "
-#| "[documentation of Grafana](https://grafana.com/docs/)."
 msgid ""
 "This guide will provide you some steps to get started. For a deeper insight "
 "you should consider having a look at the [indexed attributes](/en/reference/"
@@ -23190,7 +23878,7 @@ msgstr ""
 "Diese Anleitung bietet Ihnen einige Schritte für den Einstieg. Für einen "
 "tieferen Einblick sollten Sie einen Blick auf die [indizierten Attribute](/"
 "de/reference/es-indexed-attributes) von Elasticsearch werfen und die "
-"[Dokumentation von Grafana](https://grafana.com/docs/) lesen."
+"[Dokumentation von Grafana](https://grafana.com/docs/){target=_blank} lesen."
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:25
@@ -23468,11 +24156,6 @@ msgstr "Schnellstart mit Dashboard-Vorlage"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:140
-#, fuzzy
-#| msgid ""
-#| "If you want to get inspired, you can use our sample dashboards as "
-#| "mentioned below. These dashboards can also be found on [GitHub](https://"
-#| "github.com/zammad/grafana-dashboards)."
 msgid ""
 "If you want to get inspired, you can use our sample dashboards as mentioned "
 "below. These dashboards can also be found on [GitHub](https://github.com/"
@@ -23480,7 +24163,8 @@ msgid ""
 msgstr ""
 "Wenn Sie sich inspirieren lassen möchten, können Sie unsere unten "
 "aufgeführten Beispiel-Dashboards verwenden. Diese Dashboards sind auch auf "
-"[GitHub](https://github.com/zammad/grafana-dashboards) zu finden."
+"[GitHub](https://github.com/zammad/grafana-dashboards){target=_blank} zu "
+"finden."
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:141
@@ -23953,13 +24637,7 @@ msgstr "Erste Schritte"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/sso-kerberos.md:66
-#, fuzzy, no-wrap
-#| msgid ""
-#| "**Too busy to handle it on your own?**\n"
-#| "\n"
-#| "We've got you covered. Our experts offer custom-tailored workshops to\n"
-#| "get your team up and running fast and with confidence. [Just drop us a\n"
-#| "line](https://zammad.com/contact)!\n"
+#, no-wrap
 msgid ""
 "**Too busy to handle it on your own?**\n"
 "\n"
@@ -23971,7 +24649,7 @@ msgstr ""
 "\n"
 "Wir sind für Sie da. Unsere Experten bieten maßgeschneiderte Workshops an, damit\n"
 "Ihr Team schnell und sicher starten kann. [Schreiben Sie uns einfach eine\n"
-"Nachricht](https://zammad.com/contact)!\n"
+"Nachricht](https://zammad.com/contact){target=_blank}!\n"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:75
@@ -25105,11 +25783,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:552
-#, fuzzy
-#| msgid ""
-#| "If for some reason your server does not support AES 256-bit encryption, "
-#| "the LDAP Wiki has [more information about Kerberos encryption types]"
-#| "(https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes)."
 msgid ""
 "If for some reason your server does not support AES 256-bit encryption, the "
 "LDAP Wiki has [more information about Kerberos encryption types](https://"
@@ -25117,7 +25790,7 @@ msgid ""
 msgstr ""
 "Wenn Ihr Server aus irgendeinem Grund keine AES 256-Bit-Verschlüsselung "
 "unterstützt, finden Sie im [LDAP-Wiki](https://ldapwiki.com/wiki/MsDS-"
-"SupportedEncryptionTypes) weitere Informationen über Kerberos-"
+"SupportedEncryptionTypes){target=_blank} weitere Informationen über Kerberos-"
 "Verschlüsselungsarten."
 
 #. type: Title ####
@@ -25282,7 +25955,7 @@ msgid ""
 "your nginx.  You can find example configuration files for your webserver in "
 "the ``contrib/`` directory of your Zammad installation."
 msgstr ""
-"Diese Anleitung ist nur für Paketinstallationen relevant. Während der "
+"Diese Anleitung ist nur für Paket-Installationen relevant. Während der "
 "Installation versucht Zammad, automatisch eine Konfigurationsdatei für Ihren "
 "nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren "
 "Webserver im Verzeichnis ``contrib/`` Ihrer Zammad-Installation."
@@ -25349,13 +26022,6 @@ msgstr "Let's Encrypt"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:39
-#, fuzzy
-#| msgid ""
-#| "There are two common tools to get certificates, to which your find a "
-#| "basic configuration below: [certbot](https://certbot.eff.org/"
-#| "instructions) and [acme.sh](https://github.com/acmesh-official/acme.sh/"
-#| "wiki). Have a look at their documentation for further configuration "
-#| "details and other examples."
 msgid ""
 "There are two common tools to get certificates, to which your find a basic "
 "configuration below: [certbot](https://certbot.eff.org/instructions)"
@@ -25365,9 +26031,9 @@ msgid ""
 msgstr ""
 "Es gibt zwei gängige Tools zum Abrufen von Zertifikaten, zu denen Sie unten "
 "eine Grundkonfiguration finden: [certbot](https://certbot.eff.org/"
-"instructions) und [acme.sh](https://github.com/acmesh-official/acme.sh/"
-"wiki). Schauen Sie sich die Dokumentation dieser Tools an, um weitere "
-"Konfigurationsdetails und Beispiele zu finden."
+"instructions){target=_blank} und [acme.sh](https://github.com/acmesh-"
+"official/acme.sh/wiki){target=_blank}. Schauen Sie sich die Dokumentation "
+"dieser Tools an, um weitere Konfigurationsdetails und Beispiele zu finden."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:40
@@ -25620,12 +26286,6 @@ msgstr "Schritt 3 - Anpassen der HTTPS-Konfiguration"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:150
 #: src/en/tutorials/webserver-config.md:227
-#, fuzzy
-#| msgid ""
-#| "Our default configuration aims for a broad support of end user devices. "
-#| "This may not fit your needs. Mozilla has a great [ssl-config generator]"
-#| "(https://ssl-config.mozilla.org/) that should help you to meet your "
-#| "requirements!"
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
 "may not fit your needs. Mozilla has a great [ssl-config generator](https://"
@@ -25635,8 +26295,8 @@ msgstr ""
 "Unsere Standardkonfiguration zielt auf eine breite Unterstützung von "
 "Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren "
 "Anforderungen. Mozilla hat einen großartigen [SSL-Generator](https://ssl-"
-"config.mozilla.org/), der Ihnen helfen sollte, Ihre Anforderungen zu "
-"erfüllen!"
+"config.mozilla.org/){target=_blank}, der Ihnen helfen sollte, Ihre "
+"Anforderungen zu erfüllen!"
 
 #. type: Title ####
 #: src/en/tutorials/webserver-config.md:151
@@ -25733,7 +26393,7 @@ msgid ""
 "The package installation copied a ``zammad.conf`` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
 msgstr ""
-"Die Paketinstallation hat eine Datei ``zammad.conf`` in das "
+"Die Paket-Installation hat eine Datei ``zammad.conf`` in das "
 "Konfigurationsverzeichnis Ihres Webservers kopiert. Prüfen Sie, ob sie "
 "vorhanden ist und benennen Sie diese Datei nicht um!"
 
@@ -25886,6 +26546,65 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, fuzzy
+#~| msgid ""
+#~| "![Screenshot shows user profile settings](/screenshots/cypress/user-"
+#~| "profile.cy.js/user-profile-settings-full.png)"
+#~ msgid ""
+#~ "![Screenshot shows overview table with grouping](/screenshots/cypress/"
+#~ "usage-guide-overview.cy.js/overview-detail.png)"
+#~ msgstr ""
+#~ "![Screenshot zeigt Benutzerprofil-Einstellungen](/screenshots/cypress/"
+#~ "user-profile.cy.js/user-profile-settings-full.png)"
+
+#, fuzzy
+#~| msgid "The **priority** is represented by colored text:"
+#~ msgid "The **state** is represented by a circle:"
+#~ msgstr "Die **Priorität** wird durch farbigen Text dargestellt:"
+
+#~ msgid "Closed: green"
+#~ msgstr "Geschlossen: grün"
+
+#~ msgid "Merged: green"
+#~ msgstr "Zusammengefasst: grün"
+
+#~ msgid "Pending: grey/black"
+#~ msgstr "Warten auf: grau/schwarz"
+
+#~ msgid "New/open: yellow"
+#~ msgstr "Neu/offen: gelb"
+
+#~ msgid "Escalated: red"
+#~ msgstr "Eskaliert: rot"
+
+#, no-wrap
+#~ msgid "How-To"
+#~ msgstr "How-To"
+
+#~ msgid ""
+#~ "You can adjust the order by clicking on one of the column headers as well "
+#~ "as change their width by dragging the column dividers."
+#~ msgstr ""
+#~ "Sie können die Reihenfolge anpassen, indem Sie auf einen der Kopfzeilen "
+#~ "der Spalten klicken, und die Breite der Spalten ändern, indem Sie die "
+#~ "Spaltentrennlinien verschieben."
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+#~ "    violations.\n"
+#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid "Open a new GitHub pull request at"
 #~ msgstr "Öffnen Sie einen neuen GitHub Pull-Request unter"
@@ -26169,22 +26888,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "Z"
 #~ msgstr "Z"
-
-#, fuzzy, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
-
-#, fuzzy, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #, no-wrap
 #~ msgid "[^2]: Some values are not available as time series information. This"

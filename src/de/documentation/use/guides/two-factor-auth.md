@@ -1,54 +1,59 @@
 ---
 order: 2
-title: 'Two-Factor Authentication'
+title: Zwei-Faktor-Authentifizierung
 ---
 
 # Einführung
 
-Two-factor authentication (2FA) enhances the security of your Zammad account
-by adding an extra layer of verification beyond a password. It requires you
-to provide two different types of authentication factors, typically
-something you know (like a password) and something you possess (like a
-mobile device or a security token), to ensure that you are an authorized
-individual who can access the account.
+Die Zwei-Faktor-Authentifizierung (2FA) erweitert die Sicherheit Ihres
+Zammad-Kontos, indem eine zusätzliche Prüfung neben Ihrem Passwort
+erforderlich ist. Sie müssen über zwei verschiedene Komponenten verfügen, um
+sicherzustellen, dass Sie berechtigt sind, auf das Konto
+zuzugreifen. Typischerweise ist das etwas, was Sie wissen (wie ein Passwort)
+und etwas, das Sie besitzen (wie ein Mobilgerät oder ein Security-Token).
 
-Two-Factor Authentication is an **optional feature**. Administrators must
-activate it to be visible in your profile settings. It may be even enforced
-by your admin to set up a 2FA method. In this case, you can't use Zammad
-unless you set up at least one 2FA method.
+Die Zwei-Faktor-Authentifizierung ist eine **optionale
+Funktion**. Administratoren müssen sie aktivieren, damit sie in Ihren
+Profileinstellungen sichtbar ist. Es kann sogar von Ihrem Administrator
+erzwungen werden, eine 2FA-Methode einzurichten. In diesem Fall können Sie
+Zammad nicht verwenden, wenn Sie nicht mindestens eine 2FA-Methode
+eingerichtet haben.
 
-## Set Up
+## Einrichtung
 
-If the system admin has enabled this feature, you can head to *Avatar >
-Profile > Two-factor Authentication* to set it up. Depending on the
-enabled two-factor methods, you may see one or more options in the
-table.
+Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie unter *Avatar >
+Profil-Einstellungen > Zwei-Faktor-Authentifizierung* aufrufen, um sie einzurichten. Abhängig von den
+aktivierten Zwei-Faktor-Methoden, sehen Sie eine oder mehrere Optionen in der
+Tabelle.
 
-To set up a two-factor method, use the wrench icon and follow the steps.
+Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
+Schraubenschlüssel-Symbol und befolgen Sie die Schritte.
 
 ![Screenshot shows 2FA methods in user profile
 settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
 
-In a modal dialog, you will be asked to confirm your current password.
+In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
+bestätigen.
 
-Depending on the chosen two-factor method, you will be guided through the
-setup process, which includes specific steps. Continue with using an
-[Authentication App](#authentication-app) or a [Security
-Key](#security-key).
+Je nach gewählter Zwei-Faktor-Methode werden Sie durch den
+Einrichtungsprozess geführt, der bestimmte Schritte umfasst. Fahren Sie mit
+der Verwendung einer [Authentifizierungs-App](#authentication-app) oder
+eines [Sicherheits-Schlüssels](#security-key) fort.
 
 
-### Authentication App
+### Authentifizierungs-App
 
-The authenticator app method is a type of two-factor authentication that
-uses a mobile application to generate one-time codes for account
-verification. After setting up the authenticator app on your device, you
-will link it to your Zammad account.
+Die Authentifizierungs-App ist eine Methode der
+Zwei-Faktor-Authentifizierung, bei der eine mobile App
+("Authentifizierungs-App") Einmal-Codes generiert, die beim Anmelden geprüft
+werden. Nachdem Sie eine Authentifizierungs-App auf Ihrem Gerät eingerichtet
+haben, können Sie diese mit Ihrem Zammad-Konto verknüpfen.
 
 ![Screenshot shows app authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 
-First, make sure you have installed an authenticator app on your mobile
-device. Recommended apps are:
+Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf
+Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:
 
 - [Aegis
   Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
@@ -56,159 +61,169 @@ device. Recommended apps are:
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447)
 - [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
 - [Microsoft
-  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
+  Authenticator](https://support.microsoft.com/de-de/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
 
-Next, open the authenticator app on your device and find a **Scan QR Code**
-action, or similar. Point your camera to the Zammad screen and scan the
-shown QR code in the middle.
+Öffnen Sie die Authentifizierungs-App auf Ihrem Mobilgerät und wählen Sie
+die Funktion **QR-Code scannen** (oder ähnlich bezeichnet). Richten Sie dann
+die Kamera auf den Bildschirm und scannen den angezeigten QR-Code.
 
 ::: tip
-If your device is not able to scan the QR code, first click on it to
-reveal your secret. Next, add a manual entry to your authenticator app
-and enter the provided secret when asked.
+Falls Sie den QR-Code nicht scannen können, klicken Sie bitte
+auf den QR-Code, um den Sicherheitscode im Klartext zu sehen.
+Fügen Sie diesen anschließend manuell in Ihrer Authentifizierungs-App hinzu.
 :::
 
-Your authenticator app should immediately add the new entry for your Zammad
-account, and a 6-digit code will be displayed next to it together with a
-timer.
+Ihre Authentifizierungs-App sollte sofort den neuen Eintrag für Ihr
+Zammad-Konto angelegt haben und einen 6-stelligen Code mit einem Timer
+anzeigen.
 
-Back in Zammad, enter the provided code to the **Security Code** field and
-click on **Set Up**. Go on either by setting up another 2FA method
-([security key](#security-key)) or check how to [use and manage
-2FA](#sign-in).
+Zurück in Zammad, geben Sie den bereitgestellten Code in das Feld
+**Sicherheitscode** ein und klicken Sie auf **Einrichten**. Fahren Sie
+entweder mit der Einrichtung einer anderen 2FA-Methode fort
+([Sicherheits-Schlüssel](#security-key)) oder lesen Sie, wie man 2FA
+verwendet und verwaltet (#anmelden).
 
-### Security Key
+### Sicherheits-Schlüssel
 
-The security keys method is a type of a two-factor authentication that uses
-Web Authentication API in the browser for verifying your identity.  You may
-register multiple hardware or software security keys with your Zammad
-account and then they can be used during the sign-in process.
+Die Zwei-Faktor-Methode mit Sicherheits-Schlüssel nutzt das Web
+Authentication API im Browser, um Ihre Identität zu bestätigen. Sie können
+mehrere Hardware- oder Software-Sicherheits-Schlüssel in Ihrem Zammad-Konto
+hinterlegen und für die Anmeldung nutzen.
 
-Initially, you will be presented with an empty side panel instructing you to
-**Set Up** your first key.
+Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie
+aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten.
 
 ![Screenshot shows security key authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
 
-Then, enter a descriptive **Name for this security key** you will be
-registering with your account, so you could later identify it in the
-list. Then, click on **Next**.
+Geben Sie als erstes einen **Name für diesen Sicherheitsschlüssel** im
+entsprechenden Feld ein, damit Sie diesen später in einer Übersicht
+identifizieren können. Klicken Sie anschließend auf **Weiter**.
 
-Next, depending you your browser, you will be presented with different
-options. Select one that refers to your chosen security key and follow the
-instructions on the screen.
+Abhängig von Ihrem Browser können Ihnen verschiedene Optionen angeboten
+werden. Wählen Sie die, die der Ihres angegebenen Sicherheits-Schlüssels
+entspricht und folgen den weiteren Anweisungen.
 
 ![Screenshot shows security key authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
 
-You may be asked by the browser to interact with a key or a device so you
-can prove you are in physical possession of it (e.g. enter its PIN to unlock
-it).
+Ihr Browser bittet Sie daraufhin, mit Ihrem Sicherheitsschlüssel oder Gerät
+zu interagieren (z.B. PIN-Eingabe zur Entsperrung), um zu prüfen, ob Sie in
+physischem Besitz des Geräts sind.
 
 ::: warning
-You will have limited time (measured in tens of seconds) to register
-your key. Better to have it ready before you proceed!
+Sie haben begrenzt Zeit (einige zehn Sekunden), um den Sicherheits-Schlüssel als Methode
+zu bestätigen. Am besten haben Sie Ihr Gerät einsatzbereit vor sich, bevor Sie loslegen!
 :::
 
-If the registration was successful, the modal dialog will close and you are
-good to go. In case of errors, you will be able to **Retry** the
-registration of the key.
+Wenn die Registrierung erfolgreich war, wird der Dialog geschlossen und Sie
+können loslegen. Im Falle von Fehlern können Sie die Registrierung des
+Schlüssels **wiederholen**.
 
-Once set up, security keys can be managed by choosing **Edit** action next
-to the two-factor authentication method.
+Sobald Sie Sicherheits-Schlüssel eingerichtet haben, können Sie diese über
+die **Bearbeiten** Funktion neben der Zwei-Faktor-Methode verwalten.
 
-You have an option to remove a key or set up additional ones. There is no
-limit in number of security keys you can set up, but keep in mind you cannot
-register an already registered key for your account.  Removal of the last
-security key will effectively remove the complete security keys method for
-your account.
+Sie haben die Möglichkeit, einen Schlüssel zu entfernen oder zusätzliche
+Schlüssel einzurichten. Die Anzahl der Sicherheits-Schlüssel, die Sie
+einrichten können, ist nicht begrenzt. Beachten Sie jedoch, dass Sie einen
+bereits registrierten Schlüssel nicht erneut für Ihr Konto registrieren
+können.  Wenn Sie den letzten Sicherheits-Schlüssel entfernen, wird die
+gesamte Sicherheits-Schlüssel-Methode für Ihr Konto entfernt.
 
-## Sign-in
+## Anmelden
 
-When you set up two-factor authentication for your Zammad account, during
-the next sign-in you will be asked to provide the same two-factor method
-after entering correct username and password. Depending on the chosen
-two-factor method, this may be a security code, hardware key, etc.
+Wenn Sie die Zwei-Faktor-Authentifizierung für Ihr Zammad Konto einrichten,
+werden Sie bei der nächsten Anmeldung aufgefordert, nach der Eingabe des
+korrekten Benutzernamens und Passworts die gleiche Zwei-Faktor-Methode
+anzugeben. Je nach gewählter Zwei-Faktor-Methode kann dies ein
+Sicherheits-Code, ein Hardware-Schlüssel, etc. sein.
 
-In case you are having issues during sign-in with your preferred two-factor
-authentication method, you can switch to another one, provided you have set
-it up previously.
+Sollten Sie bei der Anmeldung Probleme mit Ihrer bevorzugten
+Zwei-Faktor-Authentifizierungsmethode haben, können Sie zu einer anderen
+Methode wechseln, sofern Sie diese zuvor eingerichtet haben.
 
-Look for **Try another method** link below the sign in box. In case you
-don't see this link, you probably have no other available two-factor methods
-set up, or your admin has disabled this feature.
+Suchen Sie nach dem Link **Eine andere Methode verwenden** unterhalb des
+Anmeldefeldes. Falls Sie diesen Link nicht sehen, haben Sie vermutlich keine
+andere Zwei-Faktor-Methode eingerichtet oder Ihr Administrator hat diese
+Funktion deaktiviert.
 
-![Log in screen with link to "Try another
-method"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)
+![Anmeldebildschirm mit Link zu "Versuchen Sie eine andere
+Methode"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)
 
-Alternatively, you can also use one of your recovery codes, which are
-auto-generated for your account during the initial setup of the two-factor
-authentication. Click on **Or use one of your recovery codes**, enter one of
-your unused codes and click on **Sign in**.
+Alternativ können Sie auch einen Ihrer Wiederherstellungscodes verwenden,
+die bei der Ersteinrichtung der Zwei-Faktor-Authentifizierung automatisch
+für Ihr Konto generiert werden. Klicken Sie auf **Oder verwenden Sie einen
+Ihrer Wiederherstellungs-Codes.**, geben Sie einen Ihrer nicht verwendeten
+Codes ein und klicken Sie auf **Anmelden**.
 
-![Log in screen with recovery codes
-link](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
+![Anmelde-Screen mit Link zur Nutzung von
+Wiederherstellungs-Codes](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
-You can use a single recovery code only once! In case you exhaust the
-list of your recovery codes, it is recommended you regenerate them for
-your account.
+Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie
+alle Codes Ihrer Liste aufgebraucht haben können Sie diese in Ihrem Profil neu
+generieren lassen.
 :::
 
-## Generate Recovery Codes
+## Wiederherstellungs-Codes erzeugen
 
-Recovery codes are one-time use security codes that can be used to sign in
-if you lose access to your other two-factor authentication methods.  They
-can only be used as a **backup method**.
+Wiederherstellungs-Codes sind einmalig verwendbare Sicherheitscodes, mit
+denen Sie sich anmelden können, wenn Sie den Zugriff auf Ihre anderen
+Zwei-Faktor-Authentifizierungsmethoden verlieren. Sie können nur als
+**Backup-Methode** verwendet werden.
 
-If the feature is enabled by the admin, recovery codes will be automatically
-generated for you during the setup of your initial two-factor authentication
-method.
+Falls die Funktion von Ihrem Administrator aktiviert wurde, werden die
+Wiederherstellungs-Codes automatisch bei der Einrichtung einer
+Zwei-Faktor-Methode generiert.
 
-You will be asked to print out or save the generated recovery codes in a
-safe place. Once used, a recovery code cannot be reused.
+Sie werden gebeten, die Wiederherstellungs-Codes zu speichern oder zu
+drucken und an einem sicheren Ort aufzubewahren. Ein bereits genutzter
+Wiederherstellungs-Code kann nicht mehr genutzt werden.
 
-![Screenshot shows output of recovery codes during 2FA
-setup](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
+![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der
+2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-You also have an option to regenerate your recovery codes at any time, which
-invalidates already existing recovery codes and provides you with a list of
-fresh codes. You can do this by clicking on **Regenerate recovery codes**
-button in your profile's 2FA settings.
+Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu
+zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig
+werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun,
+indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche
+**Wiederherstellungs-Codes neu erzeugen** klicken.
 
-## Set a Default 2FA Method
+## Festlegen einer Standard-2FA-Methode
 
-To set an already set up two-factor method as default, use the ⋮ **Actions**
-menu next to it in your profile's 2FA settings and choose **Set as
-default**.
+Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen,
+verwenden Sie das Menü ⋮ **Aktionen** neben der Methode in den
+2FA-Einstellungen Ihres Profils und wählen Sie **Als Standard festlegen**.
 
-In order to identify your current default two-factor authentication method,
-look for a small blue badge next to the method name.
+Ein kleines, blaues Label ("Standard") zeigt Ihnen an, welche Methode für
+Ihr Konto als Standard festgelegt ist.
 
-![Screenshot shows list of 2FA methods and default
-method](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)
+![Screenshot zeigt Liste der 2FA-Methoden und
+Standardmethode](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)
 
-A default two-factor authentication method is just your preferred method
-during the sign-in process. You will always have an option to try signing in
-using another method.
+Die Standard Zwei-Faktor-Methode bedeutet, dass dies Ihre bevorzugte Methode
+beim Anmelden ist. Sie können beim Anmelden immer auf eine andere Methode
+wechseln.
 
-## Edit a 2FA Method
+## Bearbeiten einer 2FA-Methode
 
-![Screenshot shows output of recovery codes during 2FA
-setup](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)
+![Screenshot zeigt die Ausgabe von Wiederherstellungscodes während der
+2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)
 
-To edit an already set up two-factor method, use the ⋮ **Actions** menu next
-to it and choose **Edit**. In a modal dialog, you will be asked to confirm
-your current password.
+Um eine bereits eingerichtete Zwei-Faktor-Methode zu bearbeiten, verwenden
+Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie
+**Bearbeiten**. In einem Dialog werden Sie aufgefordert, Ihr aktuelles
+Passwort zu bestätigen.
 
-Depending on the chosen two-factor method, you will be guided again through
-the setup process. Normally, editing a method will simply renew it and
-replace the older setup, but some methods do support advanced functions
-(e.g. adding multiple security keys).
+Sie werden abhängig von der gewählten Zwei-Faktor-Methode nochmal durch den
+Einrichtungs-Prozess geführt. Im Normalfall ersetzt eine bearbeitete Methode
+die bisherige Konfiguration, aber manche Methoden unterstützen erweiterte
+Funktionen (z.B. mehrere Sicherheits-Schlüssel).
 
-## Remove a 2FA Method
+## Entfernen einer 2FA-Methode
 
-To remove an already set up two-factor method, use the ⋮ **Actions** menu
-next to it and choose **Remove**. In a modal dialog, you will be asked to
-confirm the removal with your current password.
+Um eine bereits eingerichtete Zwei-Faktor-Methode zu entfernen, verwenden
+Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie
+**Entfernen**. In einem Dialog werden Sie aufgefordert, die Entfernung mit
+Ihrem aktuellen Passwort zu bestätigen.
 

@@ -103,8 +103,8 @@ möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf
 Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht
 erscheint.
 
-For a detailed description, head over to the [overview usage
-guide](/en/documentation/use/guides/overviews).
+Eine detaillierte Erklärung finden Sie in der [Beschreibung der
+Übersichten](/de/documentation/use/guides/overviews).
 
 ### Über die Suche
 

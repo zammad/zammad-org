@@ -16,38 +16,40 @@ Sie können dazu beitragen:
 
 Bitte sehen Sie sich unsere Hinweise für Beiträge an.
 
-All repos can be found on
-[Github](https://github.com/zammad){target=_blank}.
+Alle Repos sind auf [Github](https://github.com/zammad){target=_blank} zu
+finden.
 
 
 ## Zammad Quellcode
 
-The Zammad source code can be found on GitHub in the [Zammad
-repository](https://github.com/zammad/zammad){target=_blank}.
+Der Quellcode von Zammad ist auf GitHub im [Zammad
+Repository](https://github.com/zammad/zammad){target=_blank} zu finden.
 
-Have a look at the [developer
-manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-to get started.
+Werfen Sie einen Blick in das
+[Entwicklerhandbuch](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank},
+um loszulegen.
 
 ### Unterstützte Branches / Versionen
 
-The main [Zammad
-repository](https://github.com/zammad/zammad){target=_blank} at Github has
-several branches.
+Das
+Haupt-[Zammad-Repository](https://github.com/zammad/zammad){target=_blank}
+auf Github hat mehrere Branches.
 
 #### `develop`
 
 * Dies ist der aktuelle (unveröffentlichte) Entwicklungsstand der nächsten
   Hauptversion (dieser wird zum neuen `stable`-Branch).
 * Verwenden Sie das nicht für den Produktiv-Betrieb!
-* Supported with bug and security fixes - see also our [Security
+* Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
+  [Security
   Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable`
 
 * Dies ist die aktuelle stabile Version, z.B. Zammad 5.2.
 * Verwenden Sie diese für den Produktiv-Betrieb.
-* Supported with bug and security fixes - see also our [Security
+* Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
+  [Security
   Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable-x.y`
@@ -60,15 +62,17 @@ several branches.
 
 Möchten Sie zur Zammad-Dokumentation beitragen?
 
-Open a new GitHub pull request at https://github.com/zammad/zammad-org with
-your changes and make sure to follow the prerequisites and instructions in
-the repo's README.
+Erstellen Sie einen neuen GitHub-Pull-Request auf
+https://github.com/zammad/zammad-org mit Ihren Änderungen und stellen Sie
+sicher, dass Sie die Voraussetzungen und Anweisungen aus der README des Repo
+befolgen.
 
-The documentation you are reading is available on next.zammad.org and
-zammad.org and is built via Vitepress. The source files are written in
-Markdown.  Make sure to change the English source files only which are
-placed under `/src/en/`. The translation is done via Weblate and will
-overwrite any changes in the language specific folders (except `/src/eng/`).
+Die Dokumentation, die Sie gerade lesen, ist auf next.zammad.org und
+zammad.org verfügbar und wird über Vitepress erstellt. Die Quelldateien sind
+in Markdown geschrieben.  Stellen Sie sicher, dass Sie nur die englischen
+Quelldateien ändern, die sich unter `/src/en/` befinden. Die Übersetzung
+erfolgt über Weblate und überschreibt alle Änderungen in den
+sprachspezifischen Ordnern (außer `/src/eng/`).
 
 ## Übersetzung
 
@@ -78,23 +82,24 @@ willkommen! Die Übersetzung von Zammad selbst und der Dokumentation erfolgt
 mit Hilfe von Weblate, einem Dienst für die gemeinschaftliche Übersetzung
 von Projekten.
 
-You just have to head over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Sie müssen dazu nur zu Zammads
+[Weblate-Instanz](https://translations.zammad.org/){target=_blank} gehen.
+Sie können entweder ein Konto erstellen (falls Sie noch keines haben) oder
+sich sogar mit Ihrem Github-Konto anmelden!
 
-We will cover some basic steps in the following sections to get you started
-with translating. However, if you want to use some additional features of
-Weblate and want to dive deeper into it, their [translation
-documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
-is a good starting point.
+In den folgenden Abschnitten werden wir einige grundlegende Schritte
+behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch
+einige zusätzliche Funktionen von Weblate nutzen und tiefer eintauchen
+möchten, ist deren
+[Übersetzungsdokumentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
+ein guter Ausgangspunkt.
 
 ### Grundlagen
 
-The translation of **Zammad** and the translation of the **documentation**
-are split into different projects in Weblate. When you click in the top menu under
-"*Projects > Browse all projects*", you can find the overview of the
-projects:
+Die Übersetzung von **Zammad** und die Übersetzung der **Dokumentation**
+sind in Weblate in verschiedene Projekte aufgeteilt. Wenn Sie im oberen Menü unter
+"*Projekte > Alle Projekte auflisten*" klicken, finden Sie die Übersicht über die
+Projekte:
 
 ![Screenshot mit Übersetzungsprojekten in Weblate und
 Menü](/screenshots/weblate-overview-docs.png)
@@ -102,7 +107,7 @@ Menü](/screenshots/weblate-overview-docs.png)
 Struktur von Übersetzungsprojekten in Weblate:
 
  * Dokumentation
-    * New Documentation at next.zammad.org
+    * Neue Dokumentation auf next.zammad.org
  * Zammad
     * Zammad (`develop`, Entwicklungsversion)
     * Zammad (`stable` Version)
@@ -110,10 +115,10 @@ Struktur von Übersetzungsprojekten in Weblate:
 
 ::: tip
 
-It should be no big difference which branch you choose to translate. When Weblate
-detects the same strings in different branches, they will be used for all
-branches and only have to be translated once. If in doubt, choose the `develop`
-version.
+Es macht keinen großen Unterschied, welchen Zweig Sie zur Übersetzung wählen. Wenn Weblate
+die gleichen Zeichenketten in verschiedenen Branches erkennt, werden sie für alle
+Branches verwendet und müssen nur einmal übersetzt werden.
+I m Zweifelsfall wählen Sie die `develop` Version.
 :::
 
 Nachdem Sie ein Projekt (Dokumentation oder Zammad) ausgewählt haben, sehen
@@ -168,24 +173,24 @@ können theoretisch mit dem Übersetzen beginnen. Zunächst eine kurze
 
 ### Fehlerbehebung
 
-And finally some notes for "special" source strings, you might see in the
-documentation projects:
+Und schließlich noch einige Hinweise für "spezielle" Zeichenketten, die Sie
+vielleicht in den Dokumentationsprojekten sehen:
 
-- **\`example-string\`**
+- **\`Beispiel-String\`**
 
-    This is rendered as `example-string`. Depending on the context, it can be
-    translated or not. In any case, use the \` before and after the string in
-    your translation.
+    Dies wird als `Beispiel-String` ausgegeben. Je nach Kontext kann dieser
+    übersetzt werden oder nicht. Verwenden Sie in jedem Fall \` vor und nach der Zeichenkette in
+    Ihrer Übersetzung.
 
-- **\[example\](/en/path/to/document-or-website\)**
+- **\[Beispiel\](/en/pfad/zu/dokument-oder-website\)**
 
-    This is a link to another page, including the language code.
-    The above "example" is the text, which is shown as link text. This part can
-    be translated. For the path, only the `en` may be replaced by the
-    language code you are translating in. Make sure that your language is
-    already present on zammad.org (check it by using the language switcher).
-    Otherwise contact us if you want to have your language activated (and a
-    substantial amount of the strings are already translated).
+    Dies ist ein Link zu einer anderen Seite, einschließlich des Sprachcodes.
+    Das obige "Beispiel" ist der Text, der als Linktext angezeigt wird. Dieser Teil kann
+    übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden,
+    in den Sie übersetzen. Stellen Sie sicher, dass Ihre Sprache
+    bereits auf zammad.org vorhanden ist (überprüfen Sie dies mit dem Sprachumschalter).
+    Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen (und ein
+    maßgeblicher Teil der Zeichenketten bereits übersetzt ist).
 
 - **\*\*Beispiel Text\*\***
 

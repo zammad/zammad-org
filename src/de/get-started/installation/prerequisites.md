@@ -7,7 +7,7 @@ title: Voraussetzungen
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Server Hardware
+## Server-Hardware
 
 Die Hardwareanforderungen variieren je nach Szenario. Das macht es schwer,
 spezifische CPU- und Speicherangaben zu nennen, die für alle Anwendungsfälle

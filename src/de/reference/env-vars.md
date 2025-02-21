@@ -28,7 +28,7 @@ Standardwerte sind mit einem <Badge type="info" text="badge"/> gekennzeichnet.
 : Ausgabe direkt auf Standard Output anstatt in
   `/var/log/zammad/production.log`.
 
-  Diese Einstellung kann bei der Aktualisierung von Paketinstallationen überschrieben werden.
+  Diese Einstellung kann bei der Aktualisierung von Paket-Installationen überschrieben werden.
   Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie
   `true`, um sie dauerhaft einzuschalten.
 

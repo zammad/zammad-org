@@ -5,15 +5,13 @@ title: Docker
 
 # Installation via Docker
 
-Zammad can be deployed using Docker-Compose. You can even use graphical
-docker front ends like
-[Portainer](https://www.portainer.io/){target=_blank}.
+Zammad kann mit Docker-Compose installiert werden. Sie können sogar
+grafische Docker-Frontends wie
+[Portainer](https://www.portainer.io/){target=_blank} verwenden.
 
 ::: info
 
-We do not provide support in terms of Docker (-Compose) or Portainer specific
-problems. If you choose to run Zammad via Docker, support is only provided for
-the Zammad application.
+Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifische Probleme. Wenn Sie sich dafür entscheiden, Zammad per Docker zu installieren, kann Support nur für Zammad als Anwendung geleistet werden.
 :::
 
 ## Voraussetzungen
@@ -27,10 +25,11 @@ the Zammad application.
 
 ## Installation mit Portainer
 
-The easiest way to get Zammad running is via a graphical docker UI. We
-recommend [Portainer](https://www.portainer.io/){target=_blank}. For
-installation instructions, check out [Portainer's
-documentation](https://docs.portainer.io/){target=_blank}.
+Der einfachste Weg, Zammad zum Laufen zu bringen, ist über eine grafische
+Docker-Oberfläche. Wir empfehlen
+[Portainer](https://www.portainer.io/){target=_blank}.
+Installationsanweisungen finden Sie in der [Portainer
+Dokumentation](https://docs.portainer.io/){target=_blank}.
 
 ### Schritt 1: Stack hinzufügen
 Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
@@ -45,10 +44,10 @@ Stacks ein - **Repository URL**:
 reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
 (Standard)
 
-Optional: if you need to provide environment variables, you can enter them
-in the **Environment variable** section or even upload a .env file. See [env
-template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
-as an example.
+Optional: Wenn Sie Umgebungsvariablen angeben müssen, können Sie diese in
+den Abschnitt **Environment variable** eingeben oder sogar eine .env-Datei
+hochladen. Siehe [Beispiel .env
+Vorlage](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}.
 
 ### Schritt 3: Starten des Stacks
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host
@@ -67,9 +66,11 @@ Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
-Make sure to run `git pull` frequently to fetch updates. Alternatively, you
-can download the files from the [releases
-page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
+Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
+Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der
+[Release
+Seite](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
+herunterladen.
 
 ### Schritt 2: Umgebung nach Bedarf anpassen
 
@@ -100,13 +101,13 @@ und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
 ## Anpassen des Zammad-Stacks
 
-Sometimes it's necessary to apply local changes to the Zammad docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications.
-Docker-Compose will [automatically load this file and merge its changes into
-your
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
+Manchmal ist es notwendig, lokale Änderungen am Zammad-Docker-Stack
+vorzunehmen, z.B. um zusätzliche Dienste einzubinden. Wenn Sie dies planen,
+empfehlen wir Ihnen, die Datei `docker-compose.yml` nicht zu ändern, sondern
+eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre
+Änderungen enthält.  Docker-Compose wird [automatisch diese Datei laden und
+ihre Änderungen in Ihren Stack
+einfügen](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
 
 ## Befehle im Stack ausführen
 

@@ -44,9 +44,9 @@ Eintrag in der Anruferliste wird nach 12 Monaten automatisch gelöscht.
 Zammad schreibt Protokolldateien auf die Festplatte (normalerweise unter
 `/opt/zammad/log/`).
 
-Bei Paketinstallationen wird ein separates Dienstprogramm namens `logrotate`
-eingerichtet, das die Protokolldateien jede Nacht umbenennt und archiviert
-(oder *rotiert*) und alte Protokolle nach 14 Tagen entfernt.
+Bei Paket-Installationen wird ein separates Dienstprogramm namens
+`logrotate` eingerichtet, das die Protokolldateien jede Nacht umbenennt und
+archiviert (oder *rotiert*) und alte Protokolle nach 14 Tagen entfernt.
 
 Bei einer Source-/Entwickler-Installation wird dringend empfohlen,
 `logrotate` oder ein ähnliches Dienstprogramm zur Protokollverwaltung zu
@@ -79,13 +79,13 @@ Diese Funktionen können im Admin-Bereich unter
 *Einstellungen > System > Services* deaktiviert werden.
 
 ::: info
-By default, the third-party services that Zammad relies on are mostly
-ones hosted and managed by the Zammad Foundation itself, but Zammad
-can be extended to interface with other services instead.
+Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist
+von der Zammad Foundation selbst gehostet und verwaltet, aber Zammad
+kann angepasst werden, um stattdessen mit anderen Diensten zu kommunizieren.
 
-The source code for these third-party service integrations can be
-found
-[here](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+Der Quellcode für diese Integrationen von Drittanbieter-Services befindet
+sich unter
+[hier](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
 ### Bilder
@@ -124,9 +124,9 @@ geografischen Gebiet zuzuordnen.
 
 ### Geo-Lokalisierung
 
-Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned
-it off. If you provide an address (or parts of an address) in a user object,
-there is a lookup of coordinates from OSM which are stored in Zammad's
-database. Have a look at their [privacy
-policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for
-more information.
+Der Geo-Lokalisierungsdienst von Zammad stützt sich auf OpenStreetMap (OSM),
+es sei denn, Sie haben es ausgeschaltet. Wenn Sie eine Adresse (oder Teile
+einer Adresse) in einem Benutzerobjekt angeben, werden die Koordinaten von
+OSM in der Datenbank von Zammad gespeichert. Weitere Informationen finden
+Sie in den [Datenschutzbestimmungen von
+OSM](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank}.

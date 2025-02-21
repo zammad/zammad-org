@@ -64,80 +64,80 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
-```sh
+```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
-```sh
+```bash
 sudo apt install locales
 ```
-```sh
+```bash
 sudo locale-gen en_US.UTF-8
 ```
-```sh
+```bash
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 === Debian
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
-```sh
+```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
-```sh
+```bash
 sudo apt install locales
 ```
-```sh
+```bash
 sudo locale-gen en_US.UTF-8
 ```
-```sh
+```bash
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 === OpenSUSE/SLES
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
-```sh
+```bash
 localectl status | grep LANG
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
-```sh
+```bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
-===CentOS/RHEL
-List your current locale settings:
+=== CentOS/RHEL
+Излистајте ваша тренутна locale подешавања:
 
-```sh
+```bash
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
-```sh
+```bash
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 :::
 

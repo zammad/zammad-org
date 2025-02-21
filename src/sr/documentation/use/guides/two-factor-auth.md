@@ -1,16 +1,16 @@
 ---
 order: 2
-title: 'Two-Factor Authentication'
+title: 'Двофакторска аутентификација'
 ---
 
 # Увод
 
-Two-factor authentication (2FA) enhances the security of your Zammad account
-by adding an extra layer of verification beyond a password. It requires you
-to provide two different types of authentication factors, typically
-something you know (like a password) and something you possess (like a
-mobile device or a security token), to ensure that you are an authorized
-individual who can access the account.
+Двофакторска аутентификација (2FA) повишава безбедност вашег Zammad налога
+додавањем додатног слоја верификације поред лозинке. Захтева од вас да
+обезбедите два различита фактора за аутентификацију, обично нешто што знате
+(попут лозинке) и нешто што поседујете (као што је мобилни уређај или
+безбедносни кључ), да би потвдили да сте овлашћена особа која може да
+приступи налогу.
 
 Two-Factor Authentication is an **optional feature**. Administrators must
 activate it to be visible in your profile settings. It may be even enforced
@@ -29,7 +29,7 @@ To set up a two-factor method, use the wrench icon and follow the steps.
 ![Screenshot shows 2FA methods in user profile
 settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
 
-In a modal dialog, you will be asked to confirm your current password.
+У дијалогу ћете бити упитани да потврдите вашу тренутну лозинку.
 
 Depending on the chosen two-factor method, you will be guided through the
 setup process, which includes specific steps. Continue with using an
@@ -47,8 +47,8 @@ will link it to your Zammad account.
 ![Screenshot shows app authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 
-First, make sure you have installed an authenticator app on your mobile
-device. Recommended apps are:
+Прво, проверите да ли сте инсталирали апликацију за аутентификацију на свом
+мобилном уређају. Препоручене апликације су:
 
 - [Aegis
   Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
@@ -94,9 +94,9 @@ Then, enter a descriptive **Name for this security key** you will be
 registering with your account, so you could later identify it in the
 list. Then, click on **Next**.
 
-Next, depending you your browser, you will be presented with different
-options. Select one that refers to your chosen security key and follow the
-instructions on the screen.
+Затим, у зависности од вашег претраживача, биће вам представљене различите
+опције. Изаберите ону која се односи на жељени безбедносни кључ и пратите
+упутства на екрану.
 
 ![Screenshot shows security key authentication
 configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
@@ -114,8 +114,8 @@ If the registration was successful, the modal dialog will close and you are
 good to go. In case of errors, you will be able to **Retry** the
 registration of the key.
 
-Once set up, security keys can be managed by choosing **Edit** action next
-to the two-factor authentication method.
+Када се подесе, безбедносним кључевима се може управљати тако што ћете
+изабрати акцију **Измени** поред метода редакторске аутентификације.
 
 You have an option to remove a key or set up additional ones. There is no
 limit in number of security keys you can set up, but keep in mind you cannot
@@ -134,9 +134,10 @@ In case you are having issues during sign-in with your preferred two-factor
 authentication method, you can switch to another one, provided you have set
 it up previously.
 
-Look for **Try another method** link below the sign in box. In case you
-don't see this link, you probably have no other available two-factor methods
-set up, or your admin has disabled this feature.
+Потражите линк **Покушајте други метод** испод прозора за пријаву. У случају
+да не видите овај линк, вероватно немате подешене друге доступне методе
+двофакторске аутентификације или је ваш администратор онемогућио ову
+функцију.
 
 ![Log in screen with link to "Try another
 method"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)
@@ -161,9 +162,9 @@ Recovery codes are one-time use security codes that can be used to sign in
 if you lose access to your other two-factor authentication methods.  They
 can only be used as a **backup method**.
 
-If the feature is enabled by the admin, recovery codes will be automatically
-generated for you during the setup of your initial two-factor authentication
-method.
+Ако је администратор омогућио ову функцију, шифре за опоравак ће бити
+аутоматски генерисане за вас током постављања вашег почетног метода
+двофакторске аутентификације.
 
 You will be asked to print out or save the generated recovery codes in a
 safe place. Once used, a recovery code cannot be reused.
@@ -201,10 +202,10 @@ To edit an already set up two-factor method, use the ⋮ **Actions** menu next
 to it and choose **Edit**. In a modal dialog, you will be asked to confirm
 your current password.
 
-Depending on the chosen two-factor method, you will be guided again through
-the setup process. Normally, editing a method will simply renew it and
-replace the older setup, but some methods do support advanced functions
-(e.g. adding multiple security keys).
+У зависности од изабраног метода двофакторске аутентификације, бићете поново
+вођени кроз процес постављања. Обично ће уређивање методе једноставно
+обновити и заменити старију поставку, али неке методе подржавају и напредне
+функције (нпр. додавање више безбедносних кључева).
 
 ## Remove a 2FA Method
 

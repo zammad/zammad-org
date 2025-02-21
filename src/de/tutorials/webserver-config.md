@@ -7,7 +7,7 @@ title: Webserver-Konfiguration
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-Diese Anleitung ist nur für Paketinstallationen relevant. Während der
+Diese Anleitung ist nur für Paket-Installationen relevant. Während der
 Installation versucht Zammad, automatisch eine Konfigurationsdatei für Ihren
 nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren
 Webserver im Verzeichnis ``contrib/`` Ihrer Zammad-Installation.
@@ -33,12 +33,12 @@ Die Konfigurationsverzeichnisse sind normalerweise:
 
 ### Let's Encrypt
 
-There are two common tools to get certificates, to which your find a basic
-configuration below:
-[certbot](https://certbot.eff.org/instructions){target=_blank} and
+Es gibt zwei gängige Tools zum Abrufen von Zertifikaten, zu denen Sie unten
+eine Grundkonfiguration finden:
+[certbot](https://certbot.eff.org/instructions){target=_blank} und
 [acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
-Have a look at their documentation for further configuration details and
-other examples.
+Schauen Sie sich die Dokumentation dieser Tools an, um weitere
+Konfigurationsdetails und Beispiele zu finden.
 
 :::tabs
 
@@ -150,10 +150,11 @@ openssl dhparam -out <path>/dhparam.pem 4096
 ```
 #### Schritt 3 - Anpassen der HTTPS-Konfiguration
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [ssl-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
+Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
+Anforderungen. Mozilla hat einen großartigen
+[SSL-Generator](https://ssl-config.mozilla.org/){target=_blank}, der Ihnen
+helfen sollte, Ihre Anforderungen zu erfüllen!
 
 #### Schritt 4 - Speichern und neu laden
 
@@ -195,7 +196,7 @@ Starten Sie Ihren Webserver neu, nachdem Sie die Konfiguration gespeichert haben
 
 #### Schritt 2 - Abrufen einer aktuellen Konfigurationsdatei
 
-Die Paketinstallation hat eine Datei ``zammad.conf`` in das
+Die Paket-Installation hat eine Datei ``zammad.conf`` in das
 Konfigurationsverzeichnis Ihres Webservers kopiert. Prüfen Sie, ob sie
 vorhanden ist und benennen Sie diese Datei nicht um!
 
@@ -232,10 +233,11 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Schritt 4 - Anpassen der HTTPS-Konfiguration
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [ssl-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
+Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
+Anforderungen. Mozilla hat einen großartigen
+[SSL-Generator](https://ssl-config.mozilla.org/){target=_blank}, der Ihnen
+helfen sollte, Ihre Anforderungen zu erfüllen!
 
 #### Schritt 5 - Aktivieren der Website
 

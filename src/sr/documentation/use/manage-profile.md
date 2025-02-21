@@ -51,7 +51,7 @@ the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by
 simply pressing <kbd>d</kbd>.
 :::
 
-### Language
+### Jезик
 
 Choose your preferred language of Zammad.
 

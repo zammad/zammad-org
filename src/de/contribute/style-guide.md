@@ -32,19 +32,17 @@ Informationen.
 
 * Verwenden Sie kurze und klare Sätze und stellen Sie Informationen über
   Komplexität
-* Capitalize all words except minor ones in the page title and sections
-(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})
-* Line length of 80 characters in the source file should not be exceeded if
-possible
-* Proper breadcrumb separation for paths and locations with `>`
-* Use code highlighting to emphasize programming snippets
-* Include screenshots when necessary
-* Provide step-by-step instructions with clear explanations
-* Use examples or scenarios to illustrate concepts
-* Include relevant images or diagrams when necessary
-* Abbreviations should be explained the first time they are used or included
-in the glossary and linked to
-* If in doubt, align it to the existing documentation
+* Großschreibung aller Wörter mit Ausnahme von Füllwörtern im Seitentitel und in den Abschnitten
+(siehe [title case (eng.)](https://en.wikipedia.org/wiki/Title_case){target=_blank})
+* Die Zeilenlänge von 80 Zeichen in der Quelldatei sollte nach Möglichkeit nicht überschritten werden
+* Pfade und Orte mit `>` als Hierarchietrenner
+* Code-Definition zur Hervorhebung von Snippets
+* Einfügen von Screenshots, wenn nötig
+* Schritt-für-Schritt-Anleitungen mit klaren Erklärungen
+* Verwendung von Beispielen oder Szenarien zur Veranschaulichung von Konzepten
+* Wenn sinnvoll, relevante Bilder oder Diagramme einbauen.
+* Abkürzungen sollten bei der ersten Verwendung erklärt oder in das Glossar aufgenommen werden.
+* Im Zweifelsfall an der vorhandenen Dokumentation orientieren.
 
 
 ## Formatierung

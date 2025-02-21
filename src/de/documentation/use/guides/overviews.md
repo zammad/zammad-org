@@ -5,111 +5,121 @@ title: Übersichten
 
 # Übersichten
 
-![Screenshot shows opened overview
-section](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)
+![Screenshot zeigt geöffneten
+Übersichten-Bereich](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)
 
 ## Einführung
 
-Overviews are a core component of Zammad. Open them by clicking the
-`Overviews` button in the navigation bar or use the keyboard shortcut
-<kbd>o</kbd>. You can think of overviews as a kind of email inbox with different
-folders. Use them to find new tickets that you want to process and to keep
-track of tickets that have not yet been completed.
+Übersichten sind eine Kernkomponente von Zammad. Öffnen Sie sie, indem Sie auf die Schaltfläche
+`Übersichten` in der Navigationsleiste klicken oder mit dem Tastaturkürzel
+<kbd>o</kbd>. Sie können sich die Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen
+Ordnern vorstellen. Verwenden Sie Übersichten, um neue Tickets für die Bearbeitung zu finden und um noch nicht
+abgeschlossene Tickets zu beobachten.
 
-Depending on your system configuration and what your Zammad admin set up,
-you can find different overviews there, for example:
+Je nachdem, wie Ihr System konfiguriert ist und was Ihr Zammad-Administrator
+eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:
 
-- Your assigned tickets
-- Unassigned and open tickets
-- Pending reached tickets
-- Escalated tickets
+- Meine zugewiesenen Tickets
+- Nicht zugewiesene & offene Tickets
+- Meine "Warten erreicht" Tickets
+- Eskalierte Tickets
 
-Selecting an overview in the second level navigation shows you a table which
-includes matching tickets.
+Wenn Sie eine Übersicht in der zweiten Navigationsebene auswählen, sehen Sie
+eine Tabelle mit den entsprechenden Tickets.
 
-## Usage and Features
+## Verwendung und Features
 
-Overviews can be defined by admins based on rules and conditions. That means
-if a ticket has been changed and the condition of the overview isn't
-matching anymore, the ticket is no longer visible in this overview.
+Übersichten können von Administratoren anhand von Regeln und Bedingungen
+definiert werden. Das heißt, wenn ein Ticket geändert wurde und die
+Bedingung der Übersicht nicht mehr zutrifft, verschwindet das Ticket aus
+dieser Übersicht.
 
-Overviews are updated automatically. You don't have to reload your browser
-to observe changes. You can adjust the order temporarily by clicking on one
-of the column headers as well as change their width by dragging the column
-dividers.  The order is only preserved until you switch to another overview
-or reload the page.
+Die Übersichten werden automatisch aktualisiert. Sie müssen Ihren Browser
+nicht neu laden, um die Änderungen zu sehen. Sie können die Reihenfolge
+temporär anpassen, indem Sie auf eine der Spaltenbeschriftungen klicken und
+die Breite der Spalten durch Ziehen der Spaltentrennlinien verändern.  Die
+Reihenfolge bleibt nur so lange erhalten, bis Sie zu einer anderen Übersicht
+wechseln oder die Seite neu laden.
 
-For each overview, you can find a badge attached. The number in this badge
-tells you how many tickets are in each overview.
+Für jede Übersicht finden Sie einen angehängten Marker. Anhand der Zahl in
+diesem Marker können Sie erkennen, wie viele Tickets sich in der jeweiligen
+Übersicht befinden.
 
-The ticket lists in overviews can also be grouped by a specific attribute
-(e.g. customer, organization, owner). This has to be adjusted by your Zammad
-admin. If a grouping is activated, you can find a badge with a counter of
-the included tickets there as well.
+Die Ticket-Listen in Übersichten können auch nach einem bestimmten Attribut
+(z.B. Kunde, Organisation, Besitzer) gruppiert werden. Dies muss von Ihrem
+Zammad-Administrator eingestellt werden. Wenn eine Gruppierung aktiviert
+ist, finden Sie dort auch ein Marker mit einem Zähler der enthaltenen
+Tickets.
 
-Depending on what you are searching for, select a fitting overview and start
-working on a ticket.
+Je nachdem, was Sie suchen, wählen Sie eine passende Übersicht und beginnen
+mit der Bearbeitung eines Tickets.
 
 
 ::: tip
-If you miss an overview or want to have different settings, let your Zammad
-admin know!
+Wenn Sie eine Übersicht vermissen oder andere Einstellungen haben möchten, lassen Sie es Ihren Zammad
+Administrator wissen!
 :::
 
-### Color Coded State and Priority
+### Farbcodierter Status und Priorität
 
-To visualize different ticket states and priorities, the entries in the
-table are color coded.
+Um die verschiedenen Status und Prioritäten von Tickets zu visualisieren,
+sind die Einträge in der Tabelle farblich gekennzeichnet.
 
 
-The icon next to the ticket title mainly represents the need for action:
+Das Symbol neben dem Titel des Tickets zeigt vor allem den Handlungsbedarf
+an:
 
-![Screenshot shows ticket states](/screenshots/overviews/states.png)
+![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)
 
-- Yellow circle: action needed (e.g. new, open, pending reached)
-- Grey circle: paused, no action needed right now (e.g. pending)
-- Green circle: no action needed any more (e.g. closed, merged)
-- Red triangle: immediate action needed (ticket escalated due to an SLA
-  violation)
+- Gelber Kreis: Handlungsbedarf (z.B. neu, offen, warten erreicht)
+- Grauer Kreis: pausiert, im Moment keine Aktion erforderlich (z.B. warten
+  auf...)
+- Grüner Kreis: keine Aktion mehr erforderlich (z.B. geschlossen,
+  zusammengefasst)
+- Rotes Dreieck: Sofortiger Handlungsbedarf (Ticket eskaliert aufgrund einer
+  SLA-Verletzung)
 
-The **priority** is represented by the color of the ticket title:
+Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:
 
-![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)
+![Screenshot zeigt Ticket
+Prioritäten](/screenshots/overviews/priorities.png)
 
-- 1 low: grey
-- 2 normal: blue
-- 3 high: red
+- 1 niedrig: grau
+- 2 normal: blau
+- 3 hoch: rot
 
-### Open a Ticket
+### Ein Ticket öffnen
 
-Open a ticket by simply clicking on the line. This opens the ticket as a tab
-in the left navigation bar and shows you the ticket detail view. If this
-ticket is already present in your navigation bar, it activates this tab
-instead of opening a duplicate tab.
+Öffnen Sie ein Ticket, indem Sie einfach auf die Zeile klicken. Dadurch
+öffnet sich das Ticket als Tab in der linken Navigationsleiste und zeigt
+Ihnen die Ticket Detailansicht. Wenn dieses Ticket bereits in Ihrer
+Navigationsleiste vorhanden ist, wird dieser Tab aktiviert, anstatt einen
+doppelten Tab zu öffnen.
 
-If an overview contains more than one ticket and you open one of the
-tickets, you can find arrows in the ticket detail view header to switch to
-the next/previous ticket of this overview.
+Wenn eine Übersicht mehr als ein Ticket enthält und Sie eines der Tickets
+öffnen, finden Sie im Header der Ticket Detailansicht Pfeile, um zum
+nächsten/vorherigen Ticket dieser Übersicht zu wechseln.
 
-### TODO Bulk Actions
+### TODO Mehrfach-Aktionen
 
-Perform bulk actions by selecting multiple tickets and either use the
-drop-down fields or drag them with the mouse to invoke the bulk action
-overlay.
+Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und
+entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um das
+Overlay für die Mehrfach-Aktion aufzurufen.
 
-### Reorder Overviews
+### Übersichten neu anordnen
 
-If the order of the overviews doesn't reflect your working process or you
-just like to have a different order, you can re-arrange them for your
-account. Use the `reorder items` button at the very top of the second level
-navigation bar, which opens your [profile
-settings](/en/documentation/use/manage-profile#overviews) where you can
-define a custom order for your overviews.
+Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht
+oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr
+Konto neu anordnen. Verwenden Sie die Schaltfläche "Elemente neu anordnen"
+ganz oben in der zweiten Navigationsleiste, die Ihre
+[Profileinstellungen](/de/documentation/use/manage-profile#ubersichten)
+öffnet, wo Sie eine benutzerdefinierte Reihenfolge festlegen können.
 
-To change the order, simply drag & drop them by clicking the handles on the
-left side.
+Um die Reihenfolge zu ändern, ziehen Sie die Übersichten einfach per Drag &
+Drop, indem Sie auf die Fläche auf der linken Seite klicken.
 
-If your admin changes the order, your custom order is preserved. You can
-switch back to your admin's order by clicking the `Reset Overview Order`
-button.
+Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
+Reihenfolge erhalten. Sie können wieder zur Reihenfolge Ihres Administrators
+wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten
+zurücksetzen` klicken.
 

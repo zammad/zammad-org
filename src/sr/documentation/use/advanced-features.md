@@ -112,85 +112,87 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-If you have many steps you do over and over again, you should use a macro
-for that. In such a macro, your admin can pre-define different ticket
-actions you can apply with just a click. As an example, Zammad ships a
-"Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag `spam` is added and the ticket is
-closed.
+Уколико стално понављате велики број корака, размислите о употреби макроа за
+њих. У таквом макроу, ваш администратор може да дефинише одређене радње на
+тикетима које можете покренути једним кликом. На пример, Zammad
+подразумевано долази са макроом „Затвори и означи као непожељно”. По
+активацији, корисник који изврши макро ће постати власник тикета, ознака
+`spam` ће бити додата и тикет затворен.
 
 **Како?**
 
-If your admin already created a macro, you can execute it in the ticket
-detail view by clicking the three dots button `︙` in the right corner of the
-footer bar and select the macro you want to execute.
+Уколико је ваш администратор већ додао макро, можете га извршити у детаљном
+приказу тикета кликом на дугме са три тачкице `︙` у доњем десном углу и
+одабиром макроа из листе.
 
 ::: warning
-The macro gets executed immediately and without an additional confirmation!
+Макро ће бити моментално извршен без додатне потврде!
 :::
 
-You can also apply a macro to several ticket at once. Have a loot at [bulk
-actions](#bulk-actions) how to do that.
+Такође можете извршити макро над неколико тикета одједном. Погледајте
+[масовне радње](#bulk-actions) за упутство.
 
-## Use Tags
+## Користите ознаке
 
-![Screenshot shows tag area in ticket side
-bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
-
-**Зашто?**
-
-Tags are one way to categorize a ticket. You can think of tags as some kind
-of labels. They can be used in conditions like in triggers and in overviews
-and they can also be assigned automatically by macros, schedulers and
-triggers.  Of course you can search for the text of the tags and will find
-tickets which have the tag attached.
-
-**Како?**
-
-In the ticket sidebar, you can find a section which is labels as "Tags". Add
-a tag by clicking on the `+` button. You can select existing tags and add
-new ones (if your admin didn't disable to add new tags).
-
-Remove them by simply click on the `X` button. Be aware that there is no
-confirmation dialog for deleting a tag from a ticket.
-
-## Use a Checklist
-
-![Screenshot shows a checklist from checklist
-sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
 
 **Зашто?**
 
-- To keep track of tasks
-- To complete tasks in a structured way
-- To make sure nothing gets forgotten
-- To make the progress of work more visible
+Ознаке су један од начина категоризације тикета. О ознакама можете
+размишљати као о некој врсти тагова. Могу се користити у условима окидача и
+прегледа и могу бити додељени аутоматски од стране макроа, планера и
+окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете
+који имају додељену ознаку.
 
 **Како?**
 
-Select the "Checklist" tab in the sidebar. If you can't see it, your Zammad
-admin disabled it. You can only add or edit a checklist, if you have the
-permission to edit the ticket.
+У бочној траци тикета, можете пронаћи одељак под насловом „Ознаке”. Додајте
+ознаку кликом на дугме `+`. Можете изабрати између постојећих и нових ознака
+(уколико ваш администратор није искључио додавање нових ознака).
 
-In the checklist sidebar, you can:
+Уклоните их једноставним кликом на дугме `X`. Обратите пажњу да неће бити
+потврдног дијалога за брисање ознаке са тикета.
 
-- Add a checklist: either by creating a new one by clicking on `Add Empty
-  Checklist` or from a template by using `Add From a Template` (if you don't
-  see the template button, there is none).
-- Edit the current checklist:
-    - Rename it by clicking on the title or using the `︙` menu in the
-      sidebar header.
-    - Add checklist items by clicking the `+` button.
-    - Change the text of the checklist items, either by just clicking on it
-      or using the `︙` menu next to the item.
-    - `Reorder` the items by clicking this button and drag & drop the items.
-- Delete the complete checklist by using the `︙` menu in the sidebar header.
+## Користите списак задатака
 
-There are two features, which are not directly visible:
+![Снимак екрана приказује списак задатака у бочној
+траци](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
 
-- You can refer to other tickets as a checklist item by using its hook and
-  number in the item text (e.g. `Ticket#123456`). Such items can't be
-  checked manually, they reflect the state of the referred ticket.
+**Зашто?**
+
+- Да пратите тренутне задатке
+- Да извршите задатке на структурисан начин
+- Да ништа не заборавите
+- Да напредак у раду буде видљивији
+
+**Како?**
+
+Одаберите језичак „Списак задатака” у бочној траци. Ако га не видите, ваш
+Zammad администратор га је искључио. Списак задатака можете додати или
+уређивати само ако имате дозволу да освежавате тикет.
+
+У траци списка задатака можете:
+
+- Додајте списак задатака: или додавањем новог кликом на `Додај празан
+  списак` или на основу шаблона коришћењем `Додај по шаблону` (уколико не
+  видите дугме за шаблон, не постоје).
+- Уређивање постојећег списка:
+    - Промените назив кликом на наслов или коришћењем падајућег менија `︙` у
+      заглављу траке.
+    - Додајте задатке на списак кликом на дугме `+` .
+    - Промените текст задатка, или кликом на њега или коришћењем падајућег
+      менија `︙` поред ставке.
+    - Кликом на дугме `Измени редослед` можете превући и пустити ставке за
+      жељени распоред.
+- Обришите комплетан списак задатака коришћењем падајућег менија `︙` у
+  заглављу траке.
+
+Постоје две функције које нису директно видљиве:
+
+- Можете рефернцирати друге тикете на списку коришћењем њиховог прикључка и
+  броја у тексту задатка (нпр. `Ticket#123456`). Ове ставке се не могу ручно
+  означити, већ ће одражавати стање референцираног тикета.
   ::: tip
   Fetch the ticket hook and number by going to the desired ticket and either
   use the copy button in the header or use the keyboard shortcut <kbd>.</kbd>.

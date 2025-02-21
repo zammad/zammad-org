@@ -16,39 +16,41 @@ order: 1
 
 Погледајте детаље о томе како да допринесете у наставку.
 
-All repos can be found on
-[Github](https://github.com/zammad){target=_blank}.
+Све репозиторије можете пронаћи на
+[GitHub](https://github.com/zammad){target=_blank}-у.
 
 
 ## Zammad изворни кoд
 
-The Zammad source code can be found on GitHub in the [Zammad
-repository](https://github.com/zammad/zammad){target=_blank}.
+Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
+репозиторију](https://github.com/zammad/zammad){target=_blank}.
 
-Have a look at the [developer
-manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-to get started.
+Прочитајте [уџбеник за
+програмере](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
+за почетак.
 
 ### Подржани огранци/верзије
 
-The main [Zammad
-repository](https://github.com/zammad/zammad){target=_blank} at Github has
-several branches.
+Централни [Zammad
+репозиториј](https://github.com/zammad/zammad){target=_blank} на GitHub-у
+има неколико огранка.
 
 #### `develop`
 
 * Ово је тренутно (необјављено) развојно стање следећег већег издања
   (постаће нови `stable` огранак).
 * Не користите у продукцији!
-* Supported with bug and security fixes - see also our [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+* Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
+  нашу [безбедносну
+  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable`
 
 * Ово је тренутно стабилно издање, нпр. Zammad 5.2.
 * Користите овај огранак за инсталације у продукцији.
-* Supported with bug and security fixes - see also our [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+* Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
+  нашу [безбедносну
+  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable-x.y`
 
@@ -59,15 +61,16 @@ several branches.
 
 Да ли желите да допринесете Zammad документацији?
 
-Open a new GitHub pull request at https://github.com/zammad/zammad-org with
-your changes and make sure to follow the prerequisites and instructions in
-the repo's README.
+Отворите нови GitHub pull request на https://github.com/zammad/zammad-org са
+вашим изменама и обавезно испратите предуслове и инструкције у README
+датотеци репозиторија.
 
-The documentation you are reading is available on next.zammad.org and
-zammad.org and is built via Vitepress. The source files are written in
-Markdown.  Make sure to change the English source files only which are
-placed under `/src/en/`. The translation is done via Weblate and will
-overwrite any changes in the language specific folders (except `/src/eng/`).
+Документација коју читате је доступна под next.zammad.org и zammad.org и
+направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
+формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
+које су под `/src/en/` директоријумом. Преводи се обрађују преко Weblate
+апликације и преписаће све измене направљене под директоријумима специфичних
+језика (осим `/src/en/`).
 
 ## Превод
 
@@ -76,23 +79,23 @@ overwrite any changes in the language specific folders (except `/src/eng/`).
 Zammad-а и документације обавља се преко Weblate апликације, која представља
 сервис за колаборацију на преводима пројеката.
 
-You just have to head over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Све што је неопходно је да се упутите на Zammad [Weblate
+инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
+отворити налог (уколико га још немате) или да се пријавите путем вашег
+GitHub налога!
 
-We will cover some basic steps in the following sections to get you started
-with translating. However, if you want to use some additional features of
-Weblate and want to dive deeper into it, their [translation
-documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
-is a good starting point.
+Представићемо неке основне кораке у следећим одељцима како бисте могли да
+започнете са превођењем. Међутим, уколико желите да користите напредне
+Weblate функције и да дубље уђете у проблематику, њихова [званична
+документација](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
+вам може помоћи.
 
 ### Основе
 
-The translation of **Zammad** and the translation of the **documentation**
-are split into different projects in Weblate. When you click in the top menu under
-"*Projects > Browse all projects*", you can find the overview of the
-projects:
+Превод **Zammad-а** и **документације** су раздвојени
+у различите пројекте у Weblate апликацији. Преглед пројеката
+можете пронаћи кликом на мени при врху под
+„*Projects > Browse all projects*”:
 
 ![Снимак екрана који приказује пројекте превода у Weblate
 менију](/screenshots/weblate-overview-docs.png)
@@ -100,7 +103,7 @@ projects:
 Структура пројекта превода у Weblate-у:
 
  * Документација
-    * New Documentation at next.zammad.org
+    * Нова документација на next.zammad.org
  * Zammad
     * Zammad (`develop`, развојна верзија)
     * Zammad (`stable` верзија)
@@ -108,10 +111,10 @@ projects:
 
 ::: tip
 
-It should be no big difference which branch you choose to translate. When Weblate
-detects the same strings in different branches, they will be used for all
-branches and only have to be translated once. If in doubt, choose the `develop`
-version.
+Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate
+детектује идентичне низове текста у различитим огранцима, користиће исти превод за све
+огранке и тиме се преводи само једном. Уколико нисте сигурни, одаберите `develop`
+верзију.
 :::
 
 По одабиру пројекта (Documentation или Zammad), видећете различите
@@ -159,24 +162,24 @@ Weblate-у](/screenshots/weblate-ui.png)
 
 ### Решавање проблема
 
-And finally some notes for "special" source strings, you might see in the
-documentation projects:
+И коначно, пар напомена за „посебне” изворне низове текста, које можете
+видети у пројектима документације:
 
 - **\`example-string\`**
 
-    This is rendered as `example-string`. Depending on the context, it can be
-    translated or not. In any case, use the \` before and after the string in
-    your translation.
+    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може
+    превести, или не. У сваком случају, користите \` пре и после низа текста у
+    вашем преводу.
 
 - **\[example\](/en/path/to/document-or-website\)**
 
-    This is a link to another page, including the language code.
-    The above "example" is the text, which is shown as link text. This part can
-    be translated. For the path, only the `en` may be replaced by the
-    language code you are translating in. Make sure that your language is
-    already present on zammad.org (check it by using the language switcher).
-    Otherwise contact us if you want to have your language activated (and a
-    substantial amount of the strings are already translated).
+    Ово је линк на другу страницу, и укључује код језика
+    Текст „example” изнад биће приказан као текст линка. Овај део
+    можете превести. Што се тиче путање, само замените `en` са кодом језика
+    на који преводите. Обратите пажњу да ли је ваш језик
+    већ омогућен на zammad.org (проверите преко избора језика).
+    У супротном обратите нам се уколико желите да омогућимо ваш језик
+    (у случају да је већина текста већ преведена).
 
 - **\*\*пример текста\*\***
 

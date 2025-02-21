@@ -3,13 +3,13 @@ order: 2
 title: Paket
 ---
 
-# Paket Installation
+# Paket-Installation
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
 ## Unterstützte Betriebssysteme
 
-Für die Paketinstallation werden die folgenden Linux-Distributionen
+Für die Paket-Installation werden die folgenden Linux-Distributionen
 unterstützt:
 
 | Distribution  | Version             |
@@ -19,9 +19,9 @@ unterstützt:
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider using [Zammad's cloud
-service](https://zammad.com/en/pricing){target=_blank}.
+Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
+Installationsmethode verwenden oder [Zammads Cloud
+Service](https://zammad.com/de/pricing){target=_blank} in Betracht ziehen.
 
 Um die folgenden Installationsschritte durchzuführen, müssen Sie
 möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren.
@@ -65,15 +65,15 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo apt install locales
 ```
 ```sh
@@ -82,20 +82,19 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
+`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
 
 === Debian
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo apt install locales
 ```
 ```sh
@@ -104,49 +103,45 @@ sudo locale-gen en_US.UTF-8
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
+`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
 
 === OpenSUSE/SLES
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 localectl status | grep LANG
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
+`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
 
 ===CentOS/RHEL
-List your current locale settings:
+Auflisten der aktuellen locale Einstellungen:
 
-```sh
+``` sh
 locale | grep "LANG="
 ```
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
+Sie das wie folgt korrigieren:
 
-```sh
+``` sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
+`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
 
 :::
 
 ### Elasticsearch installieren
 
-The recommended method is to use [Elastic's official
-guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
-for installing Elasticsearch.
+Die empfohlene Methode ist die Verwendung von [Elastics offizieller
+Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}.
 
 Alternativ können Sie [unserem
 Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 7
@@ -320,7 +315,7 @@ Elasticsearch, das nicht automatisch installiert wird.
 - Nginx
 - Redis
 
-### Datenbank Server
+### Datenbank-Server
 
 Zammad speichert alle Inhalte in einer Datenbank. Wir unterstützen
 PostgreSQL in Version 10 oder höher. Das Installationsskript versucht,
@@ -385,13 +380,13 @@ benötigt, um den Inhalt von E-Mail-Anhängen zu indizieren. Ab Elasticsearch
 Anstatt Zammads Cache-Dateien in Ihrem Dateisystem zu speichern, können sie
 mit Memcached im Arbeitsspeicher zwischengespeichert werden.
 
-The installation and configuration is out of our scope of this
-documentation.  Please follow the [official
-guides](https://docs.memcached.org/){target=_blank}.
+Die Installation und Konfiguration ist nicht Bestandteil dieser
+Dokumentation .  Bitte folgen Sie der [offiziellen
+Anleitung](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 
-If you want to use the PGP integration for sending and receiving signed and
-encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG
-website](https://www.gnupg.org/index.html){target=_blank}.
+Wenn Sie die PGP-Integration zum Senden und Empfangen von signierten und
+verschlüsselten E-Mails nutzen möchten, müssen Sie das GnuPG-Tool
+installieren. Bitte werfen Sie einen Blick auf die offizielle
+[GnuPG-Website](https://www.gnupg.org/index.html){target=_blank}.

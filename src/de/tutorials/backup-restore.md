@@ -6,7 +6,7 @@ title: 'Sichern & Wiederherstellen'
 # Sichern & Wiederherstellen
 
 Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
-Paketinstallationen mit, die Sie verwenden können.
+Paket-Installationen mit, die Sie verwenden können.
 
 :::warning
 Diese Skripte sind ohne jegliche Garantie und funktionieren möglicherweise nicht in Ihrem speziellen
@@ -110,10 +110,9 @@ der Wiederherstellung Ihrer Daten beginnen.
   3 eine gute Zahl sein.
 
 :::tip
-If your scenario is different as described above, please consult the
-[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-or consider
-[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
+Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank} oder erwägen Sie
+[bezahlte Support-Optionen](https://zammad.com/de/services/professional-services){target=_blank}.
 :::
 
 ### Kopieren von Sicherungsdateien an einen passenden Ort
@@ -230,10 +229,10 @@ CREATE DATABASE
 
 ## Fehlerbehebung Sicherung & Wiederherstellung
 
-You can find some common problems below. If your issue is not listed, feel
-free to consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-for technical assistance.
+Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
+nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank},
+um nach Unterstützung zu fragen.
 
 ### Exit Codes
 
@@ -287,9 +286,9 @@ host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
 
-Please consult the official [PostgreSQL
-documentation](https://www.postgresql.org/docs/){target=_blank} for this, as
-this is out of our documentation scope.
+Bitte konsultieren Sie dazu die offizielle
+[PostgreSQL-Dokumentation](https://www.postgresql.org/docs/){target=_blank},
+da dies nicht Gegenstand dieser Dokumentation ist.
 
 #### WARNING: You don't Seem to Have Any Attachments in the File System!
 Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem
@@ -323,8 +322,8 @@ Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen.
 
 #### Anwendungsbereiche
 
-Anwendungsbereiche dieses Skripts sind hauptsächlich Paketinstallationen und
-dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei
+Anwendungsbereiche dieses Skripts sind hauptsächlich Paket-Installationen
+und dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei
 Quellcode-/Entwicklungsinstallationen funktionieren, aber das hängt stark
 von Ihrer Einrichtung ab und ist nicht Gegenstand dieser Dokumentation.
 

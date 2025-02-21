@@ -5,8 +5,9 @@ title: Rails-Befehle
 
 # Rails-Konsole
 
-Zammad uses Ruby on Rails so you can make use of the [rails
-console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
+Zammad verwendet Ruby on Rails, so dass Sie die [Rails
+Konsole](http://guides.rubyonrails.org/command_line.html){target=_blank}
+nutzen können.
 
 :::warning
 Bitte überprüfen Sie Ihre Befehle vor der Ausführung, da einige dieser
@@ -697,10 +698,10 @@ Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
 
-### Activate Priority Icon
+### Prioritätssymbol aktivieren
 
-To activate additional icons which represent the priority, use the command
-below:
+Um zusätzliche Symbole für die Priorität zu aktivieren, verwenden Sie den
+folgenden Befehl:
 
 ```ruby
 Setting.set('ui_ticket_priority_icons', true)

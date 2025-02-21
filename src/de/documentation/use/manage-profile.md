@@ -86,15 +86,17 @@ auch Benachrichtigungen, wenn Sie abwesend sind.
 altes Passwort und das neue Passwort eingeben und das neue Passwort durch
 erneute Eingabe bestätigen.
 
-### Two-factor Authentication
+### Zwei-Faktor-Authentifizierung
 
-Set up a two-factor authentication (2FA) to increase the security of your
-account. Your admin must have activated at least one 2FA method. It may be
-even enforced to use a 2FA method by your admin.
+Richten Sie eine Zwei-Faktor-Authentifizierung (2FA) ein, um die Sicherheit
+Ihres Kontos zu erhöhen. Ihr Administrator muss mindestens eine 2FA-Methode
+aktiviert haben. Die Verwendung einer 2FA-Methode kann sogar von Ihrem
+Administrator erzwungen werden.
 
-After following the [2FA guide](./guides/two-factor-auth), you have to
-provide your second factor at the next login. If you can't provide your
-configured 2FA method, contact your admin who can reset it.
+Nachdem Sie die [2FA-Anleitung] (./guides/two-factor-auth) befolgt haben,
+müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie Ihre
+konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an Ihren
+Administrator, der sie zurücksetzen kann.
 
 ### Geräte
 
@@ -143,8 +145,10 @@ Berechtigungen der Website anpassen können.
 einfach per Drag & Drop, indem Sie auf die Fläche auf der linken Seite
 klicken.
 
-If your admin changes the order, your custom order remains. You can switch
-back to your admin's order by clicking the `Reset Overview Order` button.
+Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
+Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres Administrators
+wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten
+zurücksetzen` klicken.
 
 ### Kalender
 
