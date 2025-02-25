@@ -297,5 +297,4 @@ accordingly.
 If you want to learn more about URL encoding, [this Wikipedia
 article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
-**P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
