@@ -528,6 +528,14 @@ Setting.set('product_logo', logo_timestamp)
 
 KnowledgeBase::Locale.where(system_locale_id: Locale.find_by(locale: 'en-us').id).update(primary: true)
 
+# Activate Time Accounting
+Setting.set('time_accounting', true)
+Setting.set('time_accounting_unit', 'hour')
+Setting.set('time_accounting_selector', {"condition"=>{"ticket.state_id"=>{"operator"=>"is", "value"=>["5", "1", "2", "6", "3"]}}})
+Setting.set('time_accounting_types', true)
+Ticket::TimeAccounting::Type.create!(name: 'Internal', created_by_id: 1, updated_by_id: 1)
+Ticket::TimeAccounting::Type.create!(name: 'B2C Support', created_by_id: 1, updated_by_id: 1)
+
 
 # UserInfo.current_user_id = morganreed
 # OnlineNotification.create!([

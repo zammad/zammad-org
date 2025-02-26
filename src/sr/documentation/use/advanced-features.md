@@ -362,3 +362,42 @@ field. Additionally, you can choose between different link types:
 - **Parent/Child**: for related tickets where one is the main issue and the
   other is a subtask. This link type is used by default if a tickets gets
   split or merged.
+
+## Account Time
+
+**Зашто?**
+
+With Zammad's integrated time accounting, you can help to keep track of how
+much time you spent on tickets. Based on the accounted times in the ticket,
+it is automatically assigned to customers and organizations. This might be
+used in your company for billing or to keep track of support budgets.
+
+**Како?**
+
+After updating a ticket, a time accounting dialog will appear. Enter how
+much time you spent on the ticket.
+
+![Screenshot shows the time accounting
+dialog](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+
+The feature is **optional**. If you don't see it whenever you update a
+ticket, your administrator hasn't enabled it yet or the rule for tickets to
+be taken into consideration doesn't match.
+
+The accounted time is always recorded and stored without a unit. However,
+your administrator may decide to show an optional label next to the field to
+hint you and your colleagues in which unit the time is expected (see
+screenshot).
+
+Activity types can be used to distinguish between different activities and
+for grouping the accounted times. If this optional feature is active, it
+shows a list of activities from which you can select in the time accounting
+dialog.
+
+If a ticket already has accounted time(s), you can see it in the ticket
+sidebar on the right side in the ticket detail view at the bottom. You can
+find the calculated sums of each activity type (if configured) as well as
+the total sum of accounted times for all activity types.
+
+![Screenshot shows the time accounting
+overview](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)

@@ -118,4 +118,28 @@ describe('usage advanced features', () => {
     // cy.get('#icon-split').trigger('mouseover') doesn't work
     cy.get('[id^="popover-"]').screenshot('ticket-split')
   })
+
+  it('time accounting', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/7')
+    cy.wait(1000) // transition
+    cy.get('button').contains('note').click()
+    cy.wait(500) // transition
+    cy.get('label').contains('Text').click().type('test')
+    cy.wait(500)
+    cy.get('button').contains('Update').click()
+    cy.wait(300) // transition
+    cy.get('[id="timeUnit"]').click().type('1.5')
+    cy.get('[id="accountedTimeTypeId"]').click().type('{downArrow}{downArrow}{enter}')
+    cy.get('[id="flyout-ticket-time-accounting-title"]').click()
+    cy.get('[id="flyout-ticket-time-accounting-title"]').parent().clip().then((TopClip) => {
+      cy.get('[id="accountedTimeTypeId"]').clip({ padding: 5 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('time-accounting-dialog', { clip })
+        })
+      })
+    })
+    cy.get('button').contains('Account Time').click()
+    cy.get('[id="ticket-time-accounting-header"]').parent().screenshot('time-accounting-overview', {padding: 5})
+  })
 })
