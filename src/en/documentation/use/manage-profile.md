@@ -19,7 +19,7 @@ Clicking on this icon opens a menu where you can find different things:
 - **Appearance** with toggle to switch between dark and light mode (or based on your
   web browser)
 - **Keyboard shortcuts**: opens a popup where you can see the available keyboard
-  shortcuts. You can open this popup by pressing the <kbd>?</kbd> button on
+  shortcuts. You can open this popup by pressing the [[?]] button on
   your keyboard as well.
 - **Profile settings**: opens your profile settings where you can adjust your
   avatar, password, notification settings and much more, see next section.
@@ -44,7 +44,7 @@ web browser. If it doesn't work, you can choose one of the other options.
 ::: tip
 If you want to switch quickly between dark and light mode, you can also use
 the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by
-simply pressing <kbd>d</kbd>.
+simply pressing [[d]].
 :::
 
 ### Language

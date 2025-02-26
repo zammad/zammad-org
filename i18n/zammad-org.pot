@@ -204,6 +204,18 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -1133,8 +1145,7 @@ msgstr ""
 msgid ""
 "If your situation differs from ticket to ticket, you can leave **Stay on "
 "tab**\n"
-"and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing "
-"the\n"
+"and use the keyboard shortcut [[Shift]] [[c]] for changing the\n"
 "ticket state to closed and close the ticket tab.\n"
 msgstr ""
 
@@ -1182,13 +1193,11 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:62
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
 "You can pick one by clicking on it or by using the up and down arrows "
-"followed\n"
-"by <kbd>enter</kbd> on your keyboard. There are some text modules in "
-"Zammad\n"
-"which are shipped by default.\n"
+"followed by [[Enter]] on your keyboard. There are some text modules in "
+"Zammad which are shipped by default."
 msgstr ""
 
 #. type: Plain text
@@ -1234,11 +1243,11 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:86
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"Zammad displays a list with all possible matches where you can pick one\n"
-"by clicking on it or by using the up and down arrows followed by\n"
-"<kbd>enter</kbd> on your keyboard.\n"
+"Zammad displays a list with all possible matches where you can pick one by "
+"clicking on it or by using the up and down arrows followed by [[enter]] on "
+"your keyboard."
 msgstr ""
 
 #. type: Title ##
@@ -1490,8 +1499,7 @@ msgstr ""
 msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and "
 "either\n"
-"  use the copy button in the header or use the keyboard shortcut "
-"<kbd>.</kbd>.\n"
+"  use the copy button in the header or use the keyboard shortcut [[.]].\n"
 "  Then you can paste it in the checklist you want to have it included.\n"
 msgstr ""
 
@@ -2112,14 +2120,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:17
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"Overviews are a core component of Zammad. Open them by clicking the\n"
-"`Overviews` button in the navigation bar or use the keyboard shortcut\n"
-"<kbd>o</kbd>. You can think of overviews as a kind of email inbox with "
-"different\n"
-"folders. Use them to find new tickets that you want to process and to keep\n"
-"track of tickets that have not yet been completed.\n"
+"Overviews are a core component of Zammad. Open them by clicking the "
+"`Overviews` button in the navigation bar or use the keyboard shortcut "
+"[[o]]. You can think of overviews as a kind of email inbox with different "
+"folders. Use them to find new tickets that you want to process and to keep "
+"track of tickets that have not yet been completed."
 msgstr ""
 
 #. type: Plain text
@@ -2917,8 +2924,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "**Keyboard shortcuts**: opens a popup where you can see the available "
-"keyboard shortcuts. You can open this popup by pressing the <kbd>?</kbd> "
-"button on your keyboard as well."
+"keyboard shortcuts. You can open this popup by pressing the [[?]] button on "
+"your keyboard as well."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -2991,7 +2998,7 @@ msgid ""
 "use\n"
 "the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut "
 "by\n"
-"simply pressing <kbd>d</kbd>.\n"
+"simply pressing [[d]].\n"
 msgstr ""
 
 #. type: Title ###
@@ -3461,12 +3468,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:92
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"If you search for new tickets to work on, your first look should be in\n"
-"the overview section. You can either open it by clicking the **Overviews**\n"
-"button in the navigation bar or use the keyboard shortcut <kbd>o</kbd>.\n"
-"You can see overviews as a kind of ticket lists.\n"
+"If you search for new tickets to work on, your first look should be in the "
+"overview section. You can either open it by clicking the **Overviews** "
+"button in the navigation bar or use the keyboard shortcut [[o]].  You can "
+"see overviews as a kind of ticket lists."
 msgstr ""
 
 #. type: Plain text
@@ -3496,13 +3503,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:108
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"However, if you search for a specific ticket which might or might not be\n"
-"visible in the overviews, you can use the search. You can find it in the "
-"top\n"
-"left corner in the navigation bar. Either select it via mouse or use the\n"
-"keyboard shortcut by simply pressing <kbd>s</kbd>.\n"
+"However, if you search for a specific ticket which might or might not be "
+"visible in the overviews, you can use the search. You can find it in the top "
+"left corner in the navigation bar. Either select it via mouse or use the "
+"keyboard shortcut by simply pressing [[s]]."
 msgstr ""
 
 #. type: Plain text
@@ -16709,18 +16715,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #

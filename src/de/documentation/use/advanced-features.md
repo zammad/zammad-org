@@ -39,9 +39,9 @@ Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
   *geschlossen* gesetzt wird.
 
 ::: tip
-Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten**
-belassen und das Tastaturkürzel <kbd>Shift</kbd> <kbd>c</kbd> verwenden, um den
-Status des Tickets auf geschlossen setzen und den Tab des Tickets schließen.
+If your situation differs from ticket to ticket, you can leave **Stay on tab**
+and use the keyboard shortcut [[Shift]] [[c]] for changing the
+ticket state to closed and close the ticket tab.
 :::
 
 ## Textbausteine verwenden
@@ -62,9 +62,9 @@ Die Verwendung von Textbausteinen hat Vorteile wie:
 Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein,
 gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins.
 
-Sie können eine auswählen, indem Sie sie anklicken oder die Pfeiltasten nach oben und unten benutzen, gefolgt von
- <kbd>enter</kbd> auf Ihrer Tastatur. Es gibt einige Textbausteine in Zammad
-die standardmäßig mitgeliefert werden.
+You can pick one by clicking on it or by using the up and down arrows
+followed by [[Enter]] on your keyboard. There are some text modules in
+Zammad which are shipped by default.
 
 Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren
 Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie
@@ -87,9 +87,9 @@ und dieses Ticket abonnieren.
 Wenn Sie einen Ticket-Artikel schreiben, geben Sie einfach `@@` und einige
 Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten.
 
-Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der Sie einen Eintrag
-auswählen können, indem Sie darauf klicken oder die Pfeiltasten nach oben und unten benutzen, gefolgt von
-<kbd>Enter</kbd> auf Ihrer Tastatur.
+Zammad displays a list with all possible matches where you can pick one by
+clicking on it or by using the up and down arrows followed by [[enter]] on
+your keyboard.
 
 ## Ein Ticket abonnieren
 
@@ -211,9 +211,9 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
   sie verweisen.
   ::: tip
-  Rufen Sie den Ticket-Hook und die Ticket-Nummer ab, indem Sie zum gewünschten Ticket gehen und entweder
-  die Schaltfläche "Ticket-Nummer kopieren" in der Kopfzeile verwenden oder das Tastaturkürzel <kbd>.</kbd> verwenden.
-  Dann können Sie sie in die Checkliste einfügen, die sie enthalten soll.
+  Fetch the ticket hook and number by going to the desired ticket and either
+  use the copy button in the header or use the keyboard shortcut [[.]].
+  Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
   sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"

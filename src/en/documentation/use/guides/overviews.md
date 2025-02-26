@@ -11,7 +11,7 @@ title: Overviews
 
 Overviews are a core component of Zammad. Open them by clicking the
 `Overviews` button in the navigation bar or use the keyboard shortcut
-<kbd>o</kbd>. You can think of overviews as a kind of email inbox with different
+[[o]]. You can think of overviews as a kind of email inbox with different
 folders. Use them to find new tickets that you want to process and to keep
 track of tickets that have not yet been completed.
 

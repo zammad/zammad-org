@@ -36,9 +36,9 @@ TODO
   када је тикет освежен и стање је постављено на *затворено*.
 
 ::: tip
-Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**
-и користити пречицу на тастатури <kbd>Shift</kbd> <kbd>c</kbd> за промену
-стања тикета на затворено и затварање прозора тикета.
+If your situation differs from ticket to ticket, you can leave **Stay on tab**
+and use the keyboard shortcut [[Shift]] [[c]] for changing the
+ticket state to closed and close the ticket tab.
 :::
 
 ## Користите текстуалне шаблоне
@@ -59,9 +59,9 @@ TODO
 За коришћење текстуалних исечака, једноставно унесите `::` у уредник текста
 а затим део назива или кључну реч исечка.
 
-Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле а затим
-притиском на <kbd>enter</kbd> на вашој тастатури. Zammad долази са неким подразумеваним
-текстуалним исечцима.
+You can pick one by clicking on it or by using the up and down arrows
+followed by [[Enter]] on your keyboard. There are some text modules in
+Zammad which are shipped by default.
 
 Уколико ухватите себе да стално одговарате на идентично питање, замолите
 вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу
@@ -84,9 +84,9 @@ TODO
 Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова
 из имена колеге кога желите да поменете.
 
-Zammad приказује листу свих корисника који одговарају вашем уносу и можете их одабрати
-кликом или коришћењем стрелица на горе и доле а затим
-притиском на <kbd>enter</kbd> на вашој тастатури.
+Zammad displays a list with all possible matches where you can pick one by
+clicking on it or by using the up and down arrows followed by [[enter]] on
+your keyboard.
 
 ## Претплатите се на тикет
 
@@ -195,7 +195,7 @@ Zammad администратор га је искључио. Списак за�
   означити, већ ће одражавати стање референцираног тикета.
   ::: tip
   Fetch the ticket hook and number by going to the desired ticket and either
-  use the copy button in the header or use the keyboard shortcut <kbd>.</kbd>.
+  use the copy button in the header or use the keyboard shortcut [[.]].
   Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad automatically checks if all checklist items are completed. The

@@ -14,6 +14,9 @@ importers:
       markdown-it-footnote:
         specifier: ^4
         version: 4.0.0
+      markdown-it-kbd:
+        specifier: ^2.2.2
+        version: 2.2.2
       vitepress:
         specifier: ^1.5.0
         version: 1.5.0(@algolia/client-search@5.13.0)(@types/node@22.9.0)(postcss@8.4.49)(search-insights@2.17.2)(typescript@5.6.2)
@@ -700,6 +703,10 @@ packages:
 
   markdown-it-footnote@4.0.0:
     resolution: {integrity: sha512-WYJ7urf+khJYl3DqofQpYfEYkZKbmXmwxQV8c8mO/hGIhgZ1wOe7R4HLFNwqx7TjILbnC98fuyeSsin19JdFcQ==}
+
+  markdown-it-kbd@2.2.2:
+    resolution: {integrity: sha512-J5qVHtLuxh1HTJcl5xhopiFpf6fnHIBY0OO1akGHf2KW0VwQLYhsip/bkiTJFoEZqhssxQuUBY1LO5/SbCrB6g==}
+    engines: {node: '>=6.0.0'}
 
   mdast-util-to-hast@13.2.0:
     resolution: {integrity: sha512-QGYKEuUsYT9ykKBCMOEDLsU5JRObWQusAolFMeko/tYPufNkRffBAQjIE+99jbA87xv6FgmjLtwjh9wBWajwAA==}
@@ -1619,6 +1626,8 @@ snapshots:
   markdown-it-deflist@3.0.0: {}
 
   markdown-it-footnote@4.0.0: {}
+
+  markdown-it-kbd@2.2.2: {}
 
   mdast-util-to-hast@13.2.0:
     dependencies:

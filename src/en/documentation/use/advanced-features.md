@@ -35,7 +35,7 @@ labeled as the other options below). You have different options:
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab**
-and use the keyboard shortcut <kbd>Shift</kbd> <kbd>c</kbd> for changing the
+and use the keyboard shortcut [[Shift]] [[c]] for changing the
 ticket state to closed and close the ticket tab.
 :::
 
@@ -57,8 +57,8 @@ To use text modules simply type `::` in the editor followed by parts of the name
 or keyword of the text module.
 
 You can pick one by clicking on it or by using the up and down arrows followed
-by <kbd>enter</kbd> on your keyboard. There are some text modules in Zammad
-which are shipped by default.
+by [[Enter]] on your keyboard. There are some text modules in Zammad which are shipped
+by default.
 
 If you have to answer the same question again and again, ask your Zammad admin
 to create such a text module for you. They can even include variables like
@@ -81,8 +81,8 @@ While writing an ticket article, simply type `@@` and enter some
 letters of the name of the colleague you want to mention.
 
 Zammad displays a list with all possible matches where you can pick one
-by clicking on it or by using the up and down arrows followed by
-<kbd>enter</kbd> on your keyboard.
+by clicking on it or by using the up and down arrows followed by [[enter]]
+on your keyboard.
 
 ## Subscribe to a Ticket
 
@@ -185,7 +185,7 @@ There are two features, which are not directly visible:
   manually, they reflect the state of the referred ticket.
   ::: tip
   Fetch the ticket hook and number by going to the desired ticket and either
-  use the copy button in the header or use the keyboard shortcut <kbd>.</kbd>.
+  use the copy button in the header or use the keyboard shortcut [[.]].
   Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad automatically checks if all checklist items are completed. The check

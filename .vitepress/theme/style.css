@@ -624,3 +624,18 @@
     }
   }
 }
+
+.vp-doc {
+  kbd {
+    color: var(--vp-c-text-1);
+    font-family: var(--vp-font-family-mono);
+    font-weight: 600;
+    font-size: 90%;
+    background-color: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-border);
+    border-radius: 4px;
+    box-shadow: 0 2px var(--vp-c-border);
+    padding: 2.4px 6px;
+    margin: auto 0;
+  }
+}

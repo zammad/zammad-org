@@ -10,11 +10,11 @@ title: Übersichten
 
 ## Einführung
 
-Übersichten sind eine Kernkomponente von Zammad. Öffnen Sie sie, indem Sie auf die Schaltfläche
-`Übersichten` in der Navigationsleiste klicken oder mit dem Tastaturkürzel
-<kbd>o</kbd>. Sie können sich die Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen
-Ordnern vorstellen. Verwenden Sie Übersichten, um neue Tickets für die Bearbeitung zu finden und um noch nicht
-abgeschlossene Tickets zu beobachten.
+Overviews are a core component of Zammad. Open them by clicking the
+`Overviews` button in the navigation bar or use the keyboard shortcut
+[[o]]. You can think of overviews as a kind of email inbox with different
+folders. Use them to find new tickets that you want to process and to keep
+track of tickets that have not yet been completed.
 
 Je nachdem, wie Ihr System konfiguriert ist und was Ihr Zammad-Administrator
 eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:
