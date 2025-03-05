@@ -9,7 +9,7 @@ order: 5
 The availability of notification highly depends on the users
 permission and chosen notification settings.
 
-Please note that the best results are always achieved with *Agents*.
+Please note that the best results are always achieved with _Agents_.
 :::
 
 ## List

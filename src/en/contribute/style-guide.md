@@ -28,21 +28,20 @@ American English is the original source language for the documentation.
 Translations are made via Weblate, see contribution section for more
 information.
 
-* Use short and clear sentences, prioritizing information over complexity
-* Capitalize all words except minor ones in the page title and sections
+- Use short and clear sentences, prioritizing information over complexity
+- Capitalize all words except minor ones in the page title and sections
 (see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})
-* Line length of 80 characters in the source file should not be exceeded if
+- Line length of 80 characters in the source file should not be exceeded if
 possible
-* Proper breadcrumb separation for paths and locations with `>`
-* Use code highlighting to emphasize programming snippets
-* Include screenshots when necessary
-* Provide step-by-step instructions with clear explanations
-* Use examples or scenarios to illustrate concepts
-* Include relevant images or diagrams when necessary
-* Abbreviations should be explained the first time they are used or included
+- Proper breadcrumb separation for paths and locations with `>`
+- Use code highlighting to emphasize programming snippets
+- Include screenshots when necessary
+- Provide step-by-step instructions with clear explanations
+- Use examples or scenarios to illustrate concepts
+- Include relevant images or diagrams when necessary
+- Abbreviations should be explained the first time they are used or included
 in the glossary and linked to
-* If in doubt, align it to the existing documentation
-
+- If in doubt, align it to the existing documentation
 
 ## Formatting
 
@@ -50,8 +49,7 @@ in the glossary and linked to
 |----------------|-------------------------------|---------------------------------|
 | Buttons        | `Sign in`                   | \`\`Sign in\`\`                 |
 | Fields         | **Name**                      | \*\*Name\*\*                    |
-| Location/path  | *Settings > Channels > Email* | \*Settings > Channels > Email\* |
-
+| Location/path  | _Settings > Channels > Email_ | \*Settings > Channels > Email\* |
 
 ## Heading Structure
 
@@ -74,7 +72,7 @@ Example:
 ### Section with badge <Badge type="warning" text="custom text" />
 
 This section title uses a badge of type "warning". There are other badges available:  
-https://vitepress.dev/reference/default-theme-badge#usage
+<https://vitepress.dev/reference/default-theme-badge#usage>
 
 ### Custom boxes
 

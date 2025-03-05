@@ -54,7 +54,6 @@ Tickets.
 Je nachdem, was Sie suchen, wählen Sie eine passende Übersicht und beginnen
 mit der Bearbeitung eines Tickets.
 
-
 ::: tip
 Wenn Sie eine Übersicht vermissen oder andere Einstellungen haben möchten, lassen Sie es Ihren Zammad
 Administrator wissen!
@@ -64,7 +63,6 @@ Administrator wissen!
 
 Um die verschiedenen Status und Prioritäten von Tickets zu visualisieren,
 sind die Einträge in der Tabelle farblich gekennzeichnet.
-
 
 Das Symbol neben dem Titel des Tickets zeigt vor allem den Handlungsbedarf
 an:
@@ -122,4 +120,3 @@ Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
 Reihenfolge erhalten. Sie können wieder zur Reihenfolge Ihres Administrators
 wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten
 zurücksetzen` klicken.
-

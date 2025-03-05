@@ -35,6 +35,7 @@ output (without you won't!).
 ```sh
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
+
 === Package Installation
 
 ```sh
@@ -43,9 +44,11 @@ zammad run rails r '{COMMAND}'
 ```
 
 === Source / Development Installation
+
 ```sh
 rails r '{COMMAND}'
 ```
+
 :::
 
 ### Run Interactive Rails Console
@@ -57,6 +60,7 @@ rails r '{COMMAND}'
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
+
 === Package Installation
 
 ```sh
@@ -65,9 +69,11 @@ zammad run rails c
 ```
 
 === Source / Development Installation
+
 ```sh
 rails c
 ```
+
 :::
 
 ### Rails Console Safe Mode
@@ -109,11 +115,15 @@ In the first step we get all article IDs of the ticket:
 ```ruby
 Ticket.find_by(number:'101234').article_ids
 ```
+
 Output:
+
 ```ruby
 [4, 3, 2]
 ```
+
 From the list we get, we can then get the articles content:
+
 ```ruby
 Ticket::Article.find(3).as_raw.content
 ```
@@ -143,10 +153,10 @@ Ticket::StateType.pluck(:id, :name)
 ```
 
 Above will return both, the type ID and name - e.g.:
+
 ```ruby
 `[[1, "new"], [2, "open"], ...`.
 ```
-
 
 ## User Commands
 
@@ -156,14 +166,19 @@ In order to work on user information or to check for specific information,
 you'll need to find it first.
 
 User ID already known:
+
 ```ruby
 User.find(4)
 ```
+
 Searching for the user by his email address:
+
 ```ruby
 User.find_by(email: 'your@email')
 ```
+
 Searching for the user by his login:
+
 ```ruby
 User.find_by(login: 'john.doe')
 ```
@@ -185,9 +200,11 @@ you reset the counter.
 ```ruby
 u=User.find(**USERID**)
 ```
+
 ```ruby
 u.login_failed=0
 ```
+
 ```ruby
 u.save!
 ```
@@ -212,9 +229,11 @@ Zammad thus might show different information within the UI.
 ```ruby
 u = User.find(**USERID**)
 ```
+
 ```ruby
 u.email = 'user@exmaple.com'
 ```
+
 ```ruby
 u.save!
 ```
@@ -229,9 +248,11 @@ username instead of a mail address)
 ```ruby
 u = User.find(**USERID**)
 ```
+
 ```ruby
 u.login = 'user@exmaple.com'
 ```
+
 ```sh
 u.save!
 ```
@@ -246,9 +267,11 @@ administrative rights.
 ```ruby
 u = User.find_by(email: 'you@example.com')
 ```
+
 ```ruby
 u.roles = Role.where(name: ['Agent', 'Admin'])
 ```
+
 ```ruby
 u.save!
 ```
@@ -293,12 +316,15 @@ that haven't been updated in the last seven days:
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
 next if session.preferences['remote_ip'].blank?
 ```
+
 ```ruby
 session.preferences.delete('geo_ip')
 ```
+
 ```ruby
 session.preferences.delete('remote_ip')
 ```
+
 ```ruby
 session.save!(touch: false)
 end
@@ -344,10 +370,13 @@ configurations.
 :::
 
 Get current FQDN:
+
 ```ruby
 Setting.get('fqdn')
 ```
+
 Подесите нови FQDN:
+
 ```ruby
 Setting.set('fqdn', 'new.domain.tld')
 ```
@@ -366,10 +395,13 @@ It has no effect on SSL certificates or any web server configuration.
 :::
 
 Get the current http type:
+
 ```ruby
 Setting.get('http_type')
 ```
+
 Change the http type to HTTPs:
+
 ```ruby
 Setting.set('http_type', 'https')
 ```
@@ -382,10 +414,13 @@ installation, using the database to store attachments is not the best
 approach.
 
 Get the current attachment storage:
+
 ```ruby
 Setting.get('storage_provider')
 ```
+
 Change attachment storage to database
+
 ```ruby
 Setting.set('storage_provider', 'DB')
 ```
@@ -414,30 +449,43 @@ If your Elasticsearch installation changes, you can use the following
 commands to ensure that Zammad still can access Elasticsearch.
 
 Промените Elasticsearch URL:
+
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
+
 Change elasticsearch user (e.g. for authentication):
+
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
+
 Change the elasticsearch password for authentication:
+
 ```ruby
 Setting.set('es_password', 'zammad')
 ```
+
 Change the index name:
+
 ```ruby
 Setting.set('es_index', Socket.gethostname + '_zammad')
 ```
+
 Ignore files by file extension from being indexed:
+
 ```ruby
 Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin .exe .box .mbox])
 ```
+
 Limit the attachment size:
+
 ```ruby
 Setting.set('es_attachment_max_size_in_mb', 50)
 ```
+
 Turn SSL verification on or off:
+
 ```ruby
 Setting.set('es_ssl_verify', 'false')
 ```
@@ -449,9 +497,11 @@ Set a proxy to use by Zammad:
 ```ruby
 Setting.set('proxy', 'proxy.example.com:3128')
 ```
+
 ```ruby
 Setting.set('proxy_username', 'some user')
 ```
+
 ```ruby
 Setting.set('proxy_password', 'some pass')
 ```
@@ -483,14 +533,19 @@ Setting.get('system_bcc')
 This enables a ticket number value in each heading for grouped elements.
 
 Enable counter for grouped overviews:
+
 ```ruby
 Setting.set('ui_table_group_by_show_count', true)
 ```
+
 Disable counter for grouped overviews:
+
 ```ruby
 Setting.set('ui_table_group_by_show_count', false)
 ```
+
 Get current setting (`nil` is false):
+
 ```ruby
 Setting.get('ui_table_group_by_show_count')
 ```
@@ -546,7 +601,6 @@ To check what's currently set, you can use:
 ```ruby
 Setting.get('ui_ticket_create_notes')
 ```
-
 
 ### Adding a Warning to the Article Reply Process
 
@@ -639,7 +693,6 @@ these thresholds.
 | **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
 | **New Ticket dialog** | 0             | 1                | \>= 2        |
 
-
 ### Activate Attachment Tab in Sidebar
 
 This option activates a new tab in the right sidebar in the ticket view
@@ -657,6 +710,7 @@ period. The default time period is 30 days. If there is no ticket in this
 period, the customer dialog is not shown automatically.
 
 Set the time period to 90 days:
+
 ```ruby
 Setting.set('cti_customer_last_activity', '90')
 ```
@@ -664,8 +718,8 @@ Setting.set('cti_customer_last_activity', '90')
 ### Set Public "Notes" as SLA relevant
 
 Normally, notes aren't SLA relevant. Use the following command to include
-publicly-visible notes when tracking SLA compliance (internal notes *will
-never* affect SLA calculations). Be aware that this setting will disable the
+publicly-visible notes when tracking SLA compliance (internal notes _will
+never_ affect SLA calculations). Be aware that this setting will disable the
 option to delete public notes.
 
 :::info
@@ -674,10 +728,13 @@ ticket. Set up a trigger if you wish to change this behavior.
 :::
 
 Enable SLA to count notes as communication:
+
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: true)
 ```
+
 Enable SLA to ignore notes as communication:
+
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
@@ -713,14 +770,17 @@ header fields), you may need to manually edit the email before Zammad can
 process it. To do so, follow the steps below.
 
 #### Export all Failed Emails to a Local Folder
+
 ```sh
 rake zammad:email_parser:failed_email:export_all`
 ```
+
 You can find the location of the exported email in the output of your
 console.  Every time you perform an export of failed (unprocessable) emails,
 it creates one folder containing all failed emails at the time of execution.
 
 #### Edit the Email
+
 The email has been exported in the step above. Now you can have a look at it
 and try to repair it. Make sure to leave the file name untouched, as the
 import will otherwise fail.
@@ -748,6 +808,7 @@ the generated subfolder.
 
 In case of unwanted emails such as spam, you can delete them from the
 database after exporting them with the following command:
+
 ```ruby
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
@@ -783,17 +844,23 @@ proceed if you know what you're doing and you
 ### Removing Tickets (And Their Articles)
 
 Delete a ticket (specified by database ID):
+
 ```ruby
 Ticket.find(4).destroy
 ```
+
 Delete all tickets:
+
 ```ruby
 Ticket.destroy_all
 ```
+
 Keep some tickets (specified by database ID); delete the rest:
+
 ```ruby
 tickets_to_keep = [1, 2, 3]
 ```
+
 ```ruby
 Ticket.where.not(id: tickets_to_keep).destroy_all
 ```
@@ -809,22 +876,21 @@ customers, but **all tickets associated with them**, as well. Below
 commands delete without any further warnings.
 :::
 
-
 :::tip
 If you're not sure what to do and need to learn more about what Zammad
 does upon removing users, please consider using Zammad's UI options in
 stead. You can find the data privacy feature in Zammad's admin interface under
-*System > Data Privacy*.
+_System > Data Privacy_.
 :::
 
 Removing users is possible in 2 ways: A single user and in bulk.
-
 
 Remove a single user:
 
 ```ruby
 User.find_by(email: '<email address>').destroy
 ```
+
 Remove several users:
 
 ```ruby
@@ -842,21 +908,25 @@ Removing an organization does **not** delete associated customers.
 #### Step 1: Select organizations
 
 By "active" status:
+
 ```ruby
 organizations = Organization.where(active: false)
 ```
 
 By name:
+
 ```ruby
 organizations = Organization.where(name: 'Acme')
 ```
 
 By partial match on notes:
+
 ```ruby
 organizations = Organization.where('note LIKE ?', '%foo%')
 ```
 
 #### Step 2: Preview affected organizations
+
 ```ruby
 puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 ```
@@ -867,12 +937,14 @@ puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 organizations.each do |org|
     puts %{Preparing deletion of organization "#{org.name}"...}
 ```
+
 ```ruby
 org.members.each do |member|
     puts "  Removing #{member.fullname} from organization..."
     member.update!(organization_id: nil)
 end
 ```
+
 ```ruby
     puts "  Deleting #{org.name}..."
     org.destroy
@@ -921,12 +993,15 @@ Don't forget to stop Zammad before trying to drop the database!
 ```sh
 rake db:drop
 ```
+
 ```sh
 rake db:create
 ```
+
 ```sh
 rake db:migrate
 ```
+
 ```sh
 rake db:seed
 ```

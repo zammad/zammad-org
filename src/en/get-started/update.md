@@ -20,11 +20,13 @@ this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
 ## Update Package Installation
 
 ### Stop Zammad
+
 ```sh
 systemctl stop zammad
 ```
 
 ### Backup Zammad
+
 Create a backup. You can use the
 [backup script](/en/tutorials/backup-restore) which is shipped with the Zammad package.
 
@@ -43,22 +45,31 @@ you can see in the commands below.
 
 === Ubuntu/Debian
 Update package lists:
+
 ```sh
 apt update
 ```
+
 Disable updates for Zammad:
+
 ```sh
 apt-mark hold zammad
 ```
+
 Update all packages except Zammad:
+
 ```sh
 apt upgrade
 ```
+
 Re-enable updates for Zammad:
+
 ```sh
 apt-mark unhold zammad
 ```
+
 Update Zammad:
+
 ```sh
 apt upgrade
 ```
@@ -66,39 +77,55 @@ apt upgrade
 === OpenSUSE/SLES
 
 Update package lists:
+
 ```sh
 zypper refresh
 ```
+
 Disable updates for Zammad:
+
 ```sh
 zypper addlock zammad
 ```
+
 Update all packages except Zammad:
+
 ```sh
 zypper update
 ```
+
 Re-enable updates for Zammad:
+
 ```sh
 zypper removelock zammad
 ```
+
 Update Zammad:
+
 ```sh
 zypper update
 ```
+
 === CentOS/RHEL
 
 Update package lists:
+
 ```sh
 yum check-update
 ```
+
 Update all packages except Zammad:
+
 ```sh
 yum upgrade --exclude zammad
 ```
+
 Update Zammad:
+
 ```sh
 yum upgrade
 ```
+
 :::
 
 ### Additional Steps
@@ -117,6 +144,7 @@ as well (note: starting with Elasticsearch 8, the ingest-attachment is no
 longer a plugin, it’s now included in Elasticsearch).
 
 ### Start Zammad
+
 ```sh
 systemctl start zammad
 ```
@@ -141,12 +169,15 @@ In your Zammad stack, click on `Pull and redeploy`, activate
 ```sh
 cd zammad-docker-compose
 ```
+
 ```sh
 git pull
 ```
+
 ```sh
 docker-compose pull
 ```
+
 ```sh
 docker-compose up -d
 ```

@@ -232,9 +232,9 @@ Datenbankmigrationen aktiv).
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Stellen Sie sicher, dass Sie `data_option` angeben. Zammad ist sehr wählerisch, wenn Sie dieses Attribut weglassen.
-Bitte beachten Sie, dass eine Änderung des Objekttyps *nach* der
-Erstellung nicht mehr möglich ist.
+Ensure to provide `data_option`. Zammad is very picky if you leave out
+this attribute. Please note that changing the object type _after_
+creation is not possible.
 :::
 
 === Response
@@ -261,10 +261,10 @@ Erforderliche Berechtigung: `admin.object`
 Erforderliche Berechtigung: `admin.object`
 
 ::: warning
-Nach der Durchführung von Datenbankmigrationen ist ein Neustart von Zammad
-*zwingend erforderlich*. Wenn nicht per
-[Auto-Shutdown-Einstellung](/de/reference/console#auto-shutdown-einstellung),
-deaktiviert, startet Zammad automatisch neu - rechnen Sie mit einer kurzen Ausfallzeit.
+After executing the database migrations, a restart of Zammad is
+_mandatory_. If not deactivated via
+[auto shutdown setting](/en/reference/console#auto-shutdown-setting),
+Zammad automatically restarts - expect a short downtime.
 :::
 
 `POST`-Anfrage gesendet:

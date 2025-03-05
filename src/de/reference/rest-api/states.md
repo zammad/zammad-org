@@ -6,9 +6,9 @@ title: Status
 # Status
 
 ::: warning
-Das Erstellen, Ändern oder Entfernen von Status über die unten aufgeführten Endpunkte wird nicht
-empfohlen! Sie können dies in der Benutzeroberfläche von Zammad tun. Gehen Sie dazu in der
-Verwaltungsoberfläche zu *System > Objekte > Ticket*.
+Creating, changing or removing states via below endpoints is not
+recommended! You can do this in Zammad's UI. To do so, go to the
+admin interface to _System > Objects > Ticket_.
 :::
 
 ## Auflisten
@@ -94,16 +94,16 @@ Erforderliche Berechtigung: `admin.object`
 `DELETE`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
 ::: danger
-**Dies ist eine dauerhafte Entfernung**
+**This is a permanent removal**
 
-Bitte beachten Sie, dass das Entfernen von Ticket-Status nicht rückgängig gemacht werden kann.
+Please note that removing ticket states cannot be undone.
 
-Das Entfernen von Ticket-Status mit Referenzen in Tickets ist nicht möglich über
-API - dies wird angezeigt durch
-`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist *kein* Fehler.
+Removing ticket states with references in tickets is not possible via
+API - this will be indicated by
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
-Erwägen Sie, entweder den besagten Status auf `active: false` zu setzen oder alle
-Tickets mit dem Status auf einen anderen Status abzuändern.
+Consider either setting said state to `active: false` or adjust all
+tickets with the to remove state to another state.
 :::
 
 ::: details Show response

@@ -33,7 +33,6 @@ included in the installation instructions:
 - [Kubernetes](kubernetes)
 - [Package](package)
 
-
 ## Client Requirements
 
 Because Zammad is a web application, only a up-to-date browser is needed. The

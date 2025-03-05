@@ -15,7 +15,7 @@ features that are not obvious at first glance. These features are described in
 this documentation as well as some general explanations and tips.
 
 This documentation is divided into different sections. Currently you are reading
-the *General* section. Use the left sidebar to navigate to your desired
+the _General_ section. Use the left sidebar to navigate to your desired
 information or the search in the header.
 
 ## Zammad Beginner

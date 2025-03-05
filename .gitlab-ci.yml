@@ -57,32 +57,13 @@ push translations update commit:
     - git show --stat
     - git push gitlab_origin HEAD:$CI_COMMIT_REF_NAME
 
-super linter:
+markdownlint:
   stage: lint
   image:
-    name: github/super-linter:slim-v5
+    name: davidanson/markdownlint-cli2:latest
     entrypoint: [""]
-  variables:
-    FILTER_REGEX_EXCLUDE: .vitepress|pnpm-lock.yaml
   script:
-    - |
-      if [[ "${CI_DEBUG_TRACE,,}" == "true" || "${CI_COMPONENT_TRACE,,}" == "true" ]]; then
-        echo "CI Component Trace (I_COMPONENT_TRACE) or GitLab's global trace (CI_DEBUG_TRACE) has been set, debug logging. More info: https://docs.gitlab.com/ee/ci/variables/#enable-debug-logging"
-        set -xv
-        SL_LOG_LEVEL="TRACE"
-      fi
-      export DISABLE_ERRORS=true #must be set in order to collect output file.
-      export RUN_LOCAL="true"
-      export DEFAULT_WORKSPACE=${CI_PROJECT_DIR}
-      export ANSIBLE_DIRECTORY=$CI_PROJECT_PATH
-      export LINTER_RULES_PATH=$CI_PROJECT_PATH/.github/linters
-      export CREATE_LOG_FILE=true
-      export LOG_FILE=super-linter.log
-      echo "Running super-linter"
-      LOG_LEVEL=VERBOSE /action/lib/linter.sh
-  artifacts:
-    expose_as: 'Super Linter Test Results'
-    paths: ['super-linter.log']
+    - markdownlint-cli2 "src/en/**/*.md"
 
 screenshots:
   stage: screenshots

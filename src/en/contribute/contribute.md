@@ -10,20 +10,23 @@ GitHub and creating a pull request with your changes (except for translations,
 see below). 🚀
 
 You can contribute to:
- * [Source-code](contribute#zammad-source-code)
- * [Documentation](contribute#documentation)
- * [Translation](contribute#translation)
+
+- [Source-code](contribute#zammad-source-code)
+- [Documentation](contribute#documentation)
+- [Translation](contribute#translation)
 
 Please have a look on our notes on how to contribute below.
 
 All repos can be found on [Github](https://github.com/zammad){target=_blank}.
 
-
 ## Zammad Source Code
 
-The Zammad source code can be found on GitHub in the [Zammad repository](https://github.com/zammad/zammad){target=_blank}.
+The Zammad source code can be found on GitHub in the
+[Zammad repository](https://github.com/zammad/zammad){target=_blank}.
 
-Have a look at the [developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank} to get started.
+Have a look at the
+[developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
+to get started.
 
 ### Supported Branches / Versions
 
@@ -32,28 +35,28 @@ several branches.
 
 #### `develop`
 
-* This is the current (unreleased) development state of next major release
+- This is the current (unreleased) development state of next major release
   (this will become the new `stable` branch).
-* Don't use it for production!
-* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- Don't use it for production!
+- Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable`
 
-* This is the current stable release, e.g. Zammad 5.2.
-* Use this branch for production installations.
-* Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This is the current stable release, e.g. Zammad 5.2.
+- Use this branch for production installations.
+- Supported with bug and security fixes - see also our [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable-x.y`
 
-* These are the branches of old versions of Zammad like `stable-5.1` for
+- These are the branches of old versions of Zammad like `stable-5.1` for
   Zammad 5.1.
-* No support for bug or security issues is provided.
+- No support for bug or security issues is provided.
 
 ## Documentation
 
 Do you want to contribute to the Zammad documentation?
 
-Open a new GitHub pull request at https://github.com/zammad/zammad-org
+Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
 with your changes and make sure to follow the prerequisites and instructions
 in the repo's README.
 
@@ -61,7 +64,7 @@ The documentation you are reading is available on next.zammad.org and zammad.org
 and is built via Vitepress. The source files are written in Markdown.
 Make sure to change the English source files only which are placed under
 `/src/en/`. The translation is done via Weblate and will overwrite
-any changes in the language specific folders (except `/src/eng/`).
+any changes in the language specific folders (except `/src/en/`).
 
 ## Translation
 
@@ -84,19 +87,19 @@ is a good starting point.
 
 The translation of **Zammad** and the translation of the **documentation**
 are split into different projects in Weblate. When you click in the top menu under
-"*Projects > Browse all projects*", you can find the overview of the
+"_Projects > Browse all projects_", you can find the overview of the
 projects:
 
 ![Screenshot showing translation projects in Weblate and menu](/screenshots/weblate-overview-docs.png)
 
 Structure of translation projects in Weblate:
 
- * Documentation
-    * New Documentation at next.zammad.org
- * Zammad
-    * Zammad (`develop`, development version)
-    * Zammad (`stable` version)
-    * *Some more which aren't relevant here*
+- Documentation
+  - New Documentation at next.zammad.org
+- Zammad
+  - Zammad (`develop`, development version)
+  - Zammad (`stable` version)
+  - _Some more which aren't relevant here_
 
 ::: tip
 
@@ -114,16 +117,15 @@ amount of active languages.
 Here you can select one of the "components", which is more or less the same as
 different versions. After selecting one of them, you can see the status of
 translation for the different languages, as you can see in the
-following screenshot with an example from *Documentation > User
-Documentation (latest)*:
+following screenshot with an example from _Documentation > User
+Documentation (latest)_:
 
-![Screenshot showing translation status of different languages for the user documentation
-](/screenshots/weblate-translations-user-docs.png)
+![Screenshot showing translation status of different languages for the user documentation](/screenshots/weblate-translations-user-docs.png)
 
 ### Translating
 
 After selecting your language you want to translate to, a good starting point
-is to select "*Untranslated strings*" (or the same meaning in your language,
+is to select "_Untranslated strings_" (or the same meaning in your language,
 depending on what you have set in your profile).
 
 After that, you will finally see the first untranslated string in the upper
@@ -134,18 +136,18 @@ the user interface of Weblate:
 
 1. **Breadcrumbs with path** to the current project and language
 2. **Translation area** itself. You can find the source string
-   (*"English (United States)"*) at the top and the field for your translation
-   (*"French"* in this example).
+   (_"English (United States)"_) at the top and the field for your translation
+   (_"French"_ in this example).
 3. **Glossary**: here you can find common translations in Zammad context. The terms
    from the glossary are highlighted in the source strings, as well.
 4. **Some useful tabs**:
-    * **Nearby strings**: shows you the context of the word or string
-    * **Automatic suggestions**: here you can find automatic suggestions from
+    - **Nearby strings**: shows you the context of the word or string
+    - **Automatic suggestions**: here you can find automatic suggestions from
       DeepL and suggestions from similar strings, which are already translated.
-      Use the "*Clone to translation*" button to insert it in the translation
-      field to apply changes. Use the "*Accept*" button to accept the suggested
+      Use the "_Clone to translation_" button to insert it in the translation
+      field to apply changes. Use the "_Accept_" button to accept the suggested
       translation and automatically switch to the next string.
-    * **Other languages**: here you can get an overview, which languages are
+    - **Other languages**: here you can get an overview, which languages are
       translated and you can also see the translated strings (could be useful
       for languages, which are similar).
 
@@ -175,5 +177,3 @@ documentation projects:
     Markup for text (e.g. bold, italics). Alternative: \*example string\*.
     These strings can be translated, but the markup labeling (e.g. one or
     more \*) should be adopted true to meaning.
-
-

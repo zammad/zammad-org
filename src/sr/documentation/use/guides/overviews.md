@@ -50,7 +50,6 @@ the included tickets there as well.
 Depending on what you are searching for, select a fitting overview and start
 working on a ticket.
 
-
 ::: tip
 If you miss an overview or want to have different settings, let your Zammad
 admin know!
@@ -60,7 +59,6 @@ admin know!
 
 To visualize different ticket states and priorities, the entries in the
 table are color coded.
-
 
 The icon next to the ticket title mainly represents the need for action:
 
@@ -112,4 +110,3 @@ left side.
 If your admin changes the order, your custom order is preserved. You can
 switch back to your admin's order by clicking the `Reset Overview Order`
 button.
-

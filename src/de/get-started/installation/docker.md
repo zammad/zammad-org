@@ -18,7 +18,8 @@ Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifis
 
 - Eine funktionierende Docker Compose-Umgebung
 - Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Passen Sie die Einstellungen Ihres Hosts an, damit Elasticsearch ordnungsgemäß läuft:
+- Adjust your host's settings to run Elasticsearch properly:
+
     ```sh
     sysctl -w vm.max_map_count=262144
     ```
@@ -32,17 +33,19 @@ Installationsanweisungen finden Sie in der [Portainer
 Dokumentation](https://docs.portainer.io/){target=_blank}.
 
 ### Schritt 1: Stack hinzufügen
+
 Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
 Zielumgebung aus, wählen Sie **Stacks** und wählen Sie `Add stack`, wie Sie
 im Screenshot unten sehen können.
 
 ### Schritt 2: Aus dem Repository erstellen
-Wechseln Sie zur Erstellungsmethode **Repository** und geben Sie die
-folgenden Informationen an: - **Name**: Geben Sie den gewünschten Namen des
-Stacks ein - **Repository URL**:
-`https://github.com/zammad/zammad-docker-compose` - **Repository
-reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
-(Standard)
+
+Switch to **Repository** build method and provide the information below:
+
+- **Name**: enter a desired name of the stack
+- **Repository URL**: `https://github.com/zammad/zammad-docker-compose`
+- **Repository reference**: `refs/heads/master`
+- **Compose path**: `docker-compose.yml` (default)
 
 Optional: Wenn Sie Umgebungsvariablen angeben müssen, können Sie diese in
 den Abschnitt **Environment variable** eingeben oder sogar eine .env-Datei
@@ -50,6 +53,7 @@ hochladen. Siehe [Beispiel .env
 Vorlage](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}.
 
 ### Schritt 3: Starten des Stacks
+
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host
 und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
@@ -66,6 +70,7 @@ Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
+
 Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
 Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der
 [Release
@@ -89,9 +94,11 @@ können Sie ihn über die Variable `NGINX_EXPOSE_PORT` einstellen.
 :::
 
 ### Schritt 3: Starten des Stacks
+
 ```sh
 cd zammad-docker-compose
 ```
+
 ```sh
 docker compose up -d
 ```
@@ -117,15 +124,20 @@ benötigt, um ordnungsgemäß zu funktionieren. Deshalb sollte der Aufruf von
 erfolgen:
 
 Direktes Ausführen eines bestimmten Befehls:
+
 ```sh
 docker compose run --rm zammad-railsserver rails r '...Ihr Rails Befehl...'
 ```
+
 Führen Sie die interaktive Rails-Konsole aus, um Rails-Befehle manuell
 einzugeben:
+
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
+
 Über "docker exec":
+
 ```sh
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...Ihr Rails Befehl...'
 ```

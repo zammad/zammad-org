@@ -30,7 +30,7 @@ adapt where needed.
 
 === CentOS & OpenSUSE
 
-```
+```plain
 /var/lib/pgsql/data/postgresql.conf
 ```
 
@@ -40,8 +40,9 @@ Can't find your configuration files? You can run the following command
 to get the path:
 
 ``` sh
-$ sudo -u postgres psql -c 'SHOW config_file'
+sudo -u postgres psql -c 'SHOW config_file'
 ```
+
 :::
 
 ## Adjust Pool Size
@@ -50,20 +51,23 @@ Within `database.yml` (`config/` directory) you can define the allowed
 pool size. By default each Zammad process takes up to `50` connections
 (`pool: 50`).
 
-This should be fairly enough for *every* use case. If you experience
+This should be fairly enough for _every_ use case. If you experience
 database connection timeouts or similar pool errors, this usually
 indicates to other issues that are relevant to your PostgreSQL.
 
-
 ## Adjust `max_connections` (mandatory)
+
 Zammad will take up to 200 connections by default, with below command
 you can raise this limit fairly high.
 
 Raise maximum allowed number of connections:
+
 ``` sh
 sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
 ```
+
 Apply changes by restarting postgresql and Zammad (in this order):
+
 ```sh
 systemctl restart postgresql zammad
 ```
@@ -77,20 +81,25 @@ everything else is out of scope of this documentation!
 :::
 
 Some caching improvements:
+
 ``` sh
 sed -i "/shared_buffers/c\shared_buffers = 2GB" <postgresql-configuration-file>
 ```
+
 ```sh
 sed -i "/temp_buffers/c\temp_buffers = 256MB" <postgresql-configuration-file>
 ```
+
 ```sh
 sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
 ```
+
 ```sh
 sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
 Apply changes by restarting postgresql and Zammad (in this order):
+
 ```sh
 systemctl restart postgresql zammad
 ```

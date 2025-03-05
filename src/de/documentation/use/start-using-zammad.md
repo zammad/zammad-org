@@ -130,57 +130,57 @@ Werfen Sie einen Blick auf den Bereich "Erweiterte Suche" unten.
 
 ::: details Advanced search
 
-Sie können Ihre Suche auf spezifische Attribute eingrenzen. Unten finden Sie
-einige Beispiele und Erklärungen. Um eine detailliertere Übersicht zu erhalten,
-schauen Sie sich bitte die [indizierten Attribute von Elasticsearch](/de/reference/es-indexed-attributes) an.
+You can narrow down your search results to specific attributes. Read on for
+some examples and explanations. For a more detailed list of available
+attributes please take a look at the
+[indexed attributes by Elasticsearch](/en/reference/es-indexed-attributes).
 
-**Beispiel**:
+**Example**:
 
-Suche nach einem spezifischen Kunden:
+Search for a specific customer by using
 `customer.attribute`:
 
-```
+```plain
 customer.firstname: John
 ```
 
-oder:
+or:
 
-```
+```plain
 customer.lastname: Doe
 ```
 
-Wenn Sie eine komplexere Suche durchführen wollen, können Sie die einzelnen Konditionen mit
-`()` kapseln und and `AND`/`OR` Operatoren einbauen:
+If you want to run a more complex search, you can use conditions with
+`()` and `AND`/`OR` options:
 
-```
+```plain
 state.name: open AND (article.from:me OR article.from:somebody)
 ```
 
-**Verfügbare Attribute**
+**Available Attributes**:
 
-| Attribut      | Suche nach                            | Beispiel                                                                                       | Beschreibung                                                                                                                                                                                                                                                         |
-|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Suche nach einem Ticket                                                                                                                                                                                                                                              |
-| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | Falls Sie Leerzeichen in dem Suchtext haben, benutzen Sie Anführungszeichen. Zammad führt sonst eine AND-Suche aus. Sie können natürlich auch einzelne Wörter ohne Anführungzeichen verwenden.                                                                       |
-| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | Sie können ein einfaches Datum, einen Datumsbereich oder \>now-xh verwenden. Das Datum muss im Format YYYY-MM-DD eingegeben werden.                                                                                                                                  |
-| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | Sie können nach einzelnen Ticket-Status filtern (und diese sogar mit OR kombinieren). Beachten Sie, dass Sie die englischen Namen für Status verwenden müssen, sofern Sie keine selbst erstellten Status haben.                                                      |
-| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | Sie können nach Tickets mit einer konkreten Anzahl an Artikeln suchen (Sie können sogar nach allem mit mehr als 5 Artikel oder bis zu 5 Artikel suchen).                                                                                                             |
-| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Alle Tickets anzeigen, die Artikel von "Bob" enthalten.                                                                                                                                                                                                              |
-| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | Das erste Beispiel zeigt alle Tickets, die "heat" enthalten - Sie können sogar einen Fuzzy-Operator "~" verwenden, um nach ähnlichen Wörtern wie z.B. "head" zu suchen. Zammad erlaubt sogar die Verwendung regulärer Ausrücke, sofern das Attribut es unterstützt.  |
+| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
+|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |
+| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |
+| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | You can either use a simple date, a date-range or \>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |
+| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |
+| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
+| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
+| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
 
+**Combining Search Phrases**:
 
-**Suchen kombinieren**
+You can combine search phrases by using `AND`, `OR` and `TO` and even
+separate them with `()`. If you want to exclude search results, you can use
+negation `!`.
 
-Sie können die Suche mit `AND`, `OR` und `TO` verknüpfen und diese sogar
-mit `()` verschachteln. Sofern Sie etwas von der Suche ausschließen wollen,
-verwenden Sie die Negierung mit `!`.
-
-| Suche                                                                                       | Beschreibung                                                                                                             |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Zeigt alle Tickets im Status geschlossen oder offen, die die Priorität normal haben oder ein Tag "feedback" enthalten.   |
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(*Zammad*) | Wie das obige Beispiel, jedoch ohne Zammad zu beinhalten                                                                 |
-| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Zeigt Tickets von <bob@example.net> welche offen oder neu sind                                                           |
-| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Zeigt alles mit einem "Warten auf" Status und einer Artikelanzahl zwischen 1 und 5.                                      |
+| Search phrase                                                                               | Description                                                                                                       |
+|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
+| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
+| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
 
 :::
 
@@ -224,38 +224,33 @@ Ticket-System kompliziert ist. Aber das Gegenteil ist der Fall:
   Wesentliche konzentrieren: die Lösung von Kundenproblemen und die
   Beantwortung von Kundenfragen.
 
-Im Grunde können Sie mit Zammad also ähnlich wie mit Ihrem E-Mail Client
-arbeiten. Sie haben jedoch einige zusätzliche Attribute, die Sie im
-Seitenleisten-Tab *Ticket* einstellen können:
+So, basically you can work with Zammad similar as with your email
+client. Except that you have some additional attributes you can set in the
+_Ticket_ sidebar tab:
 
 - **Status**: spiegelt den aktuellen Status eines Tickets wider
   (hauptsächlich, ob eine Kundenanfrage gelöst ist oder
   nicht). Standardmäßig gibt es die folgenden Status:
-    - **Neu**: Status für neue Tickets, an denen noch niemand gearbeitet
-      hat. Wenn ein Ticket zum ersten Mal aktualisiert wird, wechselt es
-      automatisch zu *offen*.
-    - **Offen**: Status für Tickets, die noch nicht gelöst sind und an denen
-      noch gearbeitet werden muss.
-    - **Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst
-      sind, die Sie aber nicht sofort schließen möchten. Für diesen Status
-      müssen Sie ein Datum und eine Uhrzeit eingeben, zu der das Ticket
-      automatisch auf *geschlossen* wechselt.
-    - **Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu
-      einem bestimmten Datum und einer bestimmten Uhrzeit erinnert werden
-      möchten. Hier müssen Sie ein Datum und eine Uhrzeit eingeben, zu der
-      Sie benachrichtigt werden möchten. Dies ist z.B. nützlich, wenn Sie
-      eine Frage an einen Dritten hatten und sicherstellen möchten, dass
-      dieses Problem nicht vergessen wird.
-- **Besitzer**: Dies ist die Person, die derzeit für das Ticket
-  verantwortlich ist.  Falls Sie eine Information von einem anderen Kollegen
-  benötigen, können Sie entweder den Besitzer darauf ändern oder die Person
-  in einem Artikel erwähnen, indem Sie `@@` eingeben und den Benutzer
-  auswählen. Im letzteren Fall wird der Benutzer benachrichtigt und erhält
-  automatisch Benachrichtigungen über Aktualisierungen von Tickets.
-- **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit
-  mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket
-  möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
-  gespeichert haben.
+  - **New**: State for new tickets on which no one has worked on. When
+      updating a ticket the first time, it automatically switches to _open_.
+  - **Open**: State for tickets which aren't resolved yet and some
+      work needs to be done.
+  - **Pending Close**: State for tickets which are basically resolved but
+      you don't want to close immediately. This state requires you to enter
+      a date and time at which the ticket automatically switches to _closed_.
+  - **Pending Reminder**: State for open tickets which you want to get
+      reminded to a certain date and time. Requires you to enter a date and time
+      at which you want to get notified. For example useful if you had a
+      question to a third party and want to make sure that this issue won't
+      be forgotten.
+- **Owner**: This is the person who is currently responsible for the ticket.
+  In case you need to have an information from another colleague, you can either
+  change to owner to this person or mention the person in an article by
+  typing `@@` and selecting the user. In the later case, the user gets notified
+  and is automatically subscribed to receive notifications on ticket updates.
+- **Group**: This ticket attribute is useful for organizations with more than
+  one team. Depending on the permissions, you might not see the ticket after
+  changing the group and saving the changes.
 
 ### Ticket Detailansicht
 
@@ -277,13 +272,11 @@ oder einen Kollegen zu fragen.
 
 ### Aktualisierung Ihres Tickets
 
-Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen
-Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in
-der rechten Fußzeile eine hervorgehobene Schaltfläche
-**Aktualisieren**. Wenn Sie auf diese Schaltfläche klicken, werden Ihre
-Änderungen übernommen, und wenn Sie eine Antwort erstellt haben, wird diese
-nun an den Kunden gesendet. Wenn Sie das Problem als gelöst betrachten,
-sollten Sie den Status auf *geschlossen* setzen.
+After you have done your changes like writing an answer to a customer and
+change the state of the ticket, you can see a highlighted **Update** button
+in the right footer. By clicking it, your changes are applied and if you
+created an answer, it is now sent out to the customer. If you consider the
+issue as resolved, you should set the state to _closed_ now.
 
 ## Abschluss
 

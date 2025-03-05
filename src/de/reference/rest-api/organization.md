@@ -79,7 +79,6 @@ Erforderliche Berechtigung: `admin.organization`
 :::
 ::::
 
-
 ## Löschen
 
 Erforderliche Berechtigung: `admin.organization`
@@ -87,16 +86,16 @@ Erforderliche Berechtigung: `admin.organization`
 `DELETE`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
 ::: danger
-**Dies ist eine dauerhafte Entfernung**
+**This is a permanent removal**
 
-Bitte beachten Sie, dass das Entfernen von Organisationen nicht rückgängig gemacht werden kann.
+Please note that removing organizations cannot be undone.
 
-Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder Benutzern
-ist über die API nicht möglich - dies wird angezeigt durch
-`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist *kein* Fehler.
+Removing organizations with references in e.g. activity streams or users
+is not possible via API - this will be indicated by
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
-Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
-mehr Kontrolle.
+Consider using Zammad's Data Privacy feature via UI for
+more control instead.
 :::
 
 ::: details Show response

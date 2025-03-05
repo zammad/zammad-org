@@ -5,8 +5,8 @@ order: 2
 
 # Docker Environment Variables
 
-Find the available docker environment variables below with default values, if applicable. You might also be interested in the
-[environment variables documentation](/en/reference/env-vars).
+Find the available docker environment variables below with default values, if
+applicable. You might also be interested in the [environment variables documentation](/en/reference/env-vars).
 
 ## Zammad
 

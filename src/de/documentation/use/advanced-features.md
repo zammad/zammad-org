@@ -16,10 +16,9 @@ Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavi
 
 **Warum?**
 
-Es ist möglich, einen Tab für ein Ticket in der Navigationsleiste
-automatisch zu schließen.  Es hängt von Ihren Präferenzen ab, aber Sie
-können sich einen Klick nach der Aktualisierung oder der Aktualisierung auf
-den Status *geschlossen* sparen.
+It is possible to automatically close a ticket tab in the navigation
+sidebar.  It depends on your preferences, but you can save a click after
+updating or updating a ticket to _closed_ state.
 
 **Wie? **
 
@@ -34,9 +33,8 @@ Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
   des Tickets geschlossen. Dies kann eine gute Option sein, wenn Sie mit
   vielen Tickets zu tun haben und/oder die Tickets viele Interaktionen
   erfordern.
-- **Tab schließen bei Ticket-Schließung**: Mit dieser Option wird der Tab
-  nur geschlossen, wenn das Ticket aktualisiert wird und der Status auf
-  *geschlossen* gesetzt wird.
+- **Close tab on ticket close**: This option only closes the tab when the
+  ticket is updated and the state is set to _closed_.
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab**
@@ -191,17 +189,13 @@ In der Checklisten-Seitenleiste können Sie:
   einer Vorlage, indem Sie `Aus einer Vorlage hinzufügen` verwenden (wenn
   Sie die Schaltfläche für die Vorlage nicht sehen, gibt es keine).
 - Bearbeiten Sie die aktuelle Checkliste:
-    - Benennen Sie sie um, indem Sie auf den Titel klicken oder das `︙` Menü
-      im im Header der Seitenleiste verwenden.
-    - Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die
-      Schaltfläche `+` klicken.
-    - Ändern Sie den Text der Elemente der Checkliste, entweder durch
-      einfaches Anklicken oder über das `︙` Menü neben dem Element.
-    - Ordnen Sie die Elemente neu an, indem Sie auf die Schaltfläche
-      `Reihenfolge ändern` klicken und die Elemente per Drag & Drop
-      verschieben.
-- Löschen Sie die komplette Checkliste über das `︙` Menü im Header der
-  Seitenleiste.
+  - Rename it by clicking on the title or using the `︙` menu in the sidebar
+      header.
+  - Add checklist items by clicking the `+` button.
+  - Change the text of the checklist items, either by just clicking on it
+      or using the `︙` menu next to the item.
+  - `Reorder` the items by clicking this button and drag & drop the items.
+- Delete the complete checklist by using the `︙` menu in the sidebar header.
 
 Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
 
@@ -223,7 +217,6 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   andere Tickets verweisen, gelten nur diejenigen als erledigt, die
   geschlossen sind (mit einem grünen Kreis).
 
-
 ## Ticket-Vorlagen
 
 **Warum?**
@@ -238,7 +231,6 @@ In der Ansicht zum Erstellen eines Tickets finden Sie in der Fußleiste eine
 Schaltfläche "Vorlage anwenden", wenn eine Vorlage verfügbar ist. Wählen Sie
 die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
 Änderungen vor.
-
 
 ## Gemeinsame Entwürfe
 
@@ -298,7 +290,6 @@ Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
   abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im
   Screenshot)
 
-
 ## Mehrfach-Aktionen
 
 TODO nach der Implementierung von Mehrfach-Aktionen in Übersichten
@@ -343,7 +334,6 @@ weiterhin mit den folgenden Änderungen:
 - Die Artikel wurden durch ein `merged` Label ersetzt
 - Der Status hat sich auf "zusammengefasst" geändert
 - Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
-
 
 ## Ticket Abspalten
 

@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 ::: tip
 Haben Sie genug von komplizierten Aufgaben rund um die Einrichtung, Konfiguration, Sicherung und Aktualisierung? Lassen Sie uns diese Dinge für Sie erledigen! 🚀
 

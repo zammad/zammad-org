@@ -43,7 +43,7 @@ To execute a backup based on the default configuration, follow the steps below:
 
 1. Copy the `config.dist` file to `config`.
 1. Change default parameters in the config file if needed. See
-   [Backup Configuration](#backup-config-parametersbackup-config-parameters) for details.
+   [Backup Configuration](#backup-configuration) for details.
 1. Stop Zammad `systemctl stop zammad`
 1. Execute `/opt/zammad/contrib/backup/zammad_backup.sh` (as `root` or `zammad`
    user)
@@ -64,12 +64,12 @@ below.
   reasons. Old backups are removed before creating the a new backup.
 
   Examples:
-  - `1` will keep backups of the last 25 hours
-  - `-1` will remove all available backups (except the new one)
+    - `1` will keep backups of the last 25 hours
+    - `-1` will remove all available backups (except the new one)
 
 `FULL_FS_DUMP` <Badge type="info" text="yes"/>
-: - `yes`: the backup includes also application files.
-  - `no`: the backup includes only user data.
+:   - `yes`: the backup includes also application files.
+    - `no`: the backup includes only user data.
 
   In any case, it includes the Zammad database and the attachments, if you
   stored them in the file system. If you are in doubt, set this to no.
@@ -90,7 +90,7 @@ Please read the following information carefully before starting to restore your 
 
 - This section is **not** about **migrating from one host to another**. You can
   find instructions about this topic in the
-  [next section](#migrate-to-a-new-host).
+  [next section](migrate-host).
 - This guide expects a fully installed Zammad version
 - It also expects you to restore Zammad on the same host and Zammad version
 - The restore process stops & restarts Zammad. Therefore you have to run the
@@ -113,14 +113,15 @@ files and to write to `/opt/zammad/`.
 
 The Zammad backup consists of two files. They are named like this:
 
-```
+```plain
 <timestamp>_zammad_db.psql.gz
 <timestamp>_zammad_files.tar.gz
 ```
+
 There are also two symlinks in your backup directory pointing to the newest
 backup created:
 
-```
+```plain
 latest_zammad_db.psql.gz
 latest_zammad_files.tar.gz
 ```
@@ -137,7 +138,7 @@ directory where your backups are stored. See [Backup Configuration](#backup-conf
 
 Be aware that restoring backups can overwrite your `database.yml`. You can
 check that by looking into the `[...]_zammad_files.tar.gz` file. If there
-is a `database.yml` in the directory *config > database*, ensure to save the
+is a `database.yml` in the directory _config > database_, ensure to save the
 original version **before restoring**.
 
 The restore works in two possible ways, depending on how interactive you want
@@ -147,9 +148,11 @@ to go:
 
 === Interactive restore (recommended)
 Run the script:
+
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh
 ```
+
 Provide the requested information to the script and wait for the restore
 process to finish. Depending on the size of your backup and host performance,
 this may take some time.
@@ -162,14 +165,16 @@ command will overwrite existing data without further prompts!
 :::
 When called with a timestamp argument (matching the backups filename),
 Zammad will proceed immediately to restoring the specified backup.
+
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh 20170507121848
 ```
+
 ::::
 
 The result should look like this:
 
-```
+```ansi
 # Zammad restore started - Fri Jan 21 17:54:13 CET 2022!
 
 The restore will delete your current database!
@@ -274,7 +279,8 @@ Please consult the official [PostgreSQL
 documentation](https://www.postgresql.org/docs/){target=_blank} for this, as this is
 out of our documentation scope.
 
-#### WARNING: You don't Seem to Have Any Attachments in the File System!
+#### WARNING: You don't Seem to Have Any Attachments in the File System
+
 This indicate that your instance currently does not save attachments to
 file system.
 
@@ -283,7 +289,7 @@ allow the backup process to continue successfully.
 
 Check and adjust your
 storage settings [via console](/en/reference/console#storage-provider-setting)
-or in Zammad's admin interface under *Settings > System > Storage*.
+or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Helper Script
 
@@ -305,8 +311,9 @@ Be aware that you are running these scripts at your own risk.
 
 #### Scopes
 
-The scope of this script are mostly package installations and especially CentOS and SUSE operating systems. It might work on source code / development
-installations as well, but this highly depends on your setup and is out of 
+The scope of this script are mostly package installations and especially
+CentOS and SUSE operating systems. It might work on source code / development
+installations as well, but this highly depends on your setup and is out of
 scope.
 
 #### Functionality

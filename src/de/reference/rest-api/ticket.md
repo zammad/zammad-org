@@ -42,20 +42,20 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 `POST`-Anfrage gesendet: `/api/v1/tickets`
 
 ::: tip
-**Im Namen anderer Benutzer**
+**On behalf of users**
 
-Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie das
-Attribut `customer_id`. Das Attribut `ticket.agent` ist dabei zwingend erforderlich. Verwenden Sie
-`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu speichern, wenn Sie die
-ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen
-(`customer_id: "guess:jane@doe.com"`).
+If you want to create tickets on behalf of other users, use the
+`customer_id` attribute. `ticket.agent` is mandatory for this. Use
+`guess:{email address}` to save an API call if you don't know the
+user's ID or want to create the user in question
+(`"customer_id": "guess:jane@doe.com"`).
 
-**Erwähnungen sofort hinzufügen**
+**Add mention subscription right away**:
 
-Fügen Sie das Attribut `mentions` zu Ihrem Ticket Payload hinzu und übermitteln Sie ein
-Array von Benutzer IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
+Add the `mentions` attribute to your ticket payload and provide an
+array of user ids to directly subscribe them during ticket creation.
 
-*Z.B.:* `"mentions": [1, 5, 7, 8],`
+_E.g.:_ `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -94,8 +94,8 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Das obige Beispiel liefert einen Artikel. Dieser Artikel ist ein *neuer Artikel* und
-hat keine Auswirkungen auf bestehende Artikel.
+Above example provides an article. This article is a _new article_ and
+does not affect any existing ones.
 :::
 
 === Response
@@ -120,10 +120,10 @@ Erforderliche Berechtigung: `admin`
 
 ::: danger
 
-**Dies ist eine dauerhafte Entfernung**
+**This is a permanent removal**:
 
-Bitte beachten Sie, dass das Entfernen von Tickets nicht rückgängig gemacht werden kann. Alle Daten (z.B.
-Artikel & Anhänge) gehen dabei verloren.
+Please note that removing tickets cannot be undone. All data (e.g.
+articles & attachments) will be lost.
 :::
 
 ::: details Show response

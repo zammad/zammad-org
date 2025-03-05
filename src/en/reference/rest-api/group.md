@@ -6,6 +6,7 @@ title: Group
 # Group
 
 ::: info
+
 - Please note that `follow_up_possible` may not work as expected. The
   possible values are `yes` or `new_ticket`!
 - If you want to create or update **subgroups**, use `::` as delimiter
@@ -87,13 +88,13 @@ Required permission: `admin.group`
 
 ::: danger
 
-**This is a permanent removal**
+**This is a permanent removal**:
 
 Please note that removing groups cannot be undone.
 
 Removing organizations with references in e.g. activity streams or
 tickets is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
 Consider setting affected groups to inactive instead or ensure to move
 all existing tickets to new groups.

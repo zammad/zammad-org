@@ -36,7 +36,8 @@ Ausgabe im Terminal (ohne sehen Sie nichts!).
 ```sh
 docker compose run --rm zammad-railsserver rails r '{COMMAND}'
 ```
-=== Paket Installation
+
+=== Package Installation
 
 ```sh
 zammad run rails r '{COMMAND}'
@@ -44,9 +45,11 @@ zammad run rails r '{COMMAND}'
 ```
 
 === Source / Development Installation
+
 ```sh
 rails r '{COMMAND}'
 ```
+
 :::
 
 ### Interaktive Rails-Konsole ausführen
@@ -58,7 +61,8 @@ rails r '{COMMAND}'
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
-=== Paket Installation
+
+=== Package Installation
 
 ```sh
 zammad run rails c
@@ -66,9 +70,11 @@ zammad run rails c
 ```
 
 === Source / Development Installation
+
 ```sh
 rails c
 ```
+
 :::
 
 ### Safe Mode der Rails-Konsole
@@ -111,12 +117,16 @@ Im ersten Schritt erhalten wir alle Artikel IDs des Tickets:
 ```ruby
 Ticket.find_by(number:'101234').article_ids
 ```
+
 Ausgabe:
+
 ```ruby
 [4, 3, 2]
 ```
+
 Aus der Liste, die wir erhalten, können wir dann den Inhalt des Artikels
 abrufen:
+
 ```ruby
 Ticket::Article.find(3).as_raw.content
 ```
@@ -147,10 +157,10 @@ Ticket::StateType.pluck(:id, :name)
 ```
 
 Oben werden sowohl die ID des Typs als auch der Name zurückgegeben - z.B.:
+
 ```ruby
 `[[1, "neu"], [2, "offen"], ...`.
 ```
-
 
 ## Benutzer-Befehle
 
@@ -160,14 +170,19 @@ Um Benutzerinformationen zu bearbeiten oder nach bestimmten Informationen zu
 suchen, müssen Sie den Benutzer zunächst finden.
 
 ID des Benutzers ist bereits bekannt:
+
 ```ruby
 User.find(4)
 ```
+
 Suche nach dem Benutzer über seine E-Mail-Adresse:
+
 ```ruby
 User.find_by(email: 'your@email')
 ```
+
 Suche nach dem Benutzer anhand seines Logins:
+
 ```ruby
 User.find_by(login: 'john.doe')
 ```
@@ -188,9 +203,11 @@ Der Benutzer kann sich nicht mehr anmelden, wenn er das Passwort nicht
 ```ruby
 u=User.find(**USERID**)
 ```
+
 ```ruby
 u.login_failed=0
 ```
+
 ```ruby
 u.save!
 ```
@@ -215,9 +232,11 @@ Zammad daher möglicherweise andere Informationen in der Benutzeroberfläche anz
 ```ruby
 u = User.find(**USERID**)
 ```
+
 ```ruby
 u.email = 'user@exmaple.com'
 ```
+
 ```ruby
 u.save!
 ```
@@ -232,9 +251,11 @@ kürzeren Benutzernamen anstelle einer Mailadresse anmelden möchten)
 ```ruby
 u = User.find(**USERID**)
 ```
+
 ```ruby
 u.login = 'user@exmaple.com'
 ```
+
 ```sh
 u.save!
 ```
@@ -249,9 +270,11 @@ einem anderen Benutzer administrative Rechte.
 ```ruby
 u = User.find_by(email: 'you@example.com')
 ```
+
 ```ruby
 u.roles = Role.where(name: ['Agent', 'Admin'])
 ```
+
 ```ruby
 u.save!
 ```
@@ -298,12 +321,15 @@ wurden:
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
 next if session.preferences['remote_ip'].blank?
 ```
+
 ```ruby
 session.preferences.delete('geo_ip')
 ```
+
 ```ruby
 session.preferences.delete('remote_ip')
 ```
+
 ```ruby
 session.save!(touch: false)
 end
@@ -350,10 +376,13 @@ Konfigurationen.
 :::
 
 Aktuellen FQDN abrufen:
+
 ```ruby
 Setting.get('fqdn')
 ```
+
 Legen Sie einen neuen FQDN fest:
+
 ```ruby
 Setting.set('fqdn', 'new.domain.tld')
 ```
@@ -373,10 +402,13 @@ Die Einstellung hat keinen Einfluss auf SSL-Zertifikate oder die Konfiguration d
 :::
 
 Abrufen des aktuellen http-Typs:
+
 ```ruby
 Setting.get('http_type')
 ```
+
 Ändern Sie den http-Typ in HTTPs:
+
 ```ruby
 Setting.set('http_type', 'https')
 ```
@@ -389,10 +421,13 @@ ausgelastete Installation haben, ist die Verwendung der Datenbank zum
 Speichern von Anhängen nicht die empfohlene Lösung.
 
 Abrufen der aktuellen Speichermethode für Anhänge:
+
 ```ruby
 Setting.get('storage_provider')
 ```
+
 Ändern der Speicherung von Anhängen in der Datenbank
+
 ```ruby
 Setting.set('storage_provider', 'DB')
 ```
@@ -423,30 +458,43 @@ Befehle verwenden, um sicherzustellen, dass Zammad weiterhin auf
 Elasticsearch zugreifen kann.
 
 Ändern Sie die URL von Elasticsearch:
+
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
+
 Ändern Sie den Benutzer von Elasticsearch (z.B. für die Authentifizierung):
+
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
+
 Ändern Sie das Elasticsearch-Passwort für die Authentifizierung:
+
 ```ruby
 Setting.set('es_password', 'zammad')
 ```
+
 Ändern Sie den Indexnamen:
+
 ```ruby
 Setting.set('es_index', Socket.gethostname + '_zammad')
 ```
+
 Ignorieren Sie Dateien für die Indizierung nach Dateityp:
+
 ```ruby
 Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin .exe .box .mbox])
 ```
+
 Begrenzen Sie die Größe der Anhänge:
+
 ```ruby
 Setting.set('es_attachment_max_size_in_mb', 50)
 ```
+
 Schalten Sie die SSL-Verifizierung ein oder aus:
+
 ```ruby
 Setting.set('es_ssl_verify', 'false')
 ```
@@ -458,9 +506,11 @@ Legen Sie einen von Zammad zu verwendenden Proxy fest:
 ```ruby
 Setting.set('proxy', 'proxy.example.com:3128')
 ```
+
 ```ruby
 Setting.set('proxy_username', 'some user')
 ```
+
 ```ruby
 Setting.set('proxy_password', 'some pass')
 ```
@@ -495,14 +545,19 @@ Dies ermöglicht einen Ticket-Zähler in jeder Kopfzeile bei gruppierten
 Elemente.
 
 Aktivieren Sie den Zähler für gruppierte Übersichten:
+
 ```ruby
 Setting.set('ui_table_group_by_show_count', true)
 ```
+
 Zähler für gruppierte Übersichten deaktivieren:
+
 ```ruby
 Setting.set('ui_table_group_by_show_count', false)
 ```
+
 Aktuelle Einstellung abrufen (`nil` ist false):
+
 ```ruby
 Setting.get('ui_table_group_by_show_count')
 ```
@@ -559,7 +614,6 @@ Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
 ```ruby
 Setting.get('ui_ticket_create_notes')
 ```
-
 
 ### Hinzufügen einer Warnung für den Artikel-Antwortprozess
 
@@ -654,7 +708,6 @@ diese Werte **nicht** ändern.
 | **Ticket-Bearbeitung**       | \< 2          | 2                | \>= 3        |
 | **Ticket Neu-Erstellung** | 0             | 1                | \>= 2        |
 
-
 ### Tab "Anhang" in der Seitenleiste aktivieren
 
 Diese Option aktiviert einen neuen Tab in der rechten Seitenleiste der
@@ -672,17 +725,17 @@ ist 30 Tage. Liegt kein Ticket in diesem Zeitraum vor, wird der Kundendialog
 nicht automatisch angezeigt.
 
 Setzen Sie den Zeitraum auf 90 Tage:
+
 ```ruby
 Setting.set('cti_customer_last_activity', '90')
 ```
 
 ### Öffentliche "Notizen" als SLA-relevant einstellen
 
-Normalerweise sind Notizen nicht SLA-relevant. Verwenden Sie den folgenden
-Befehl, um öffentlich sichtbare Notizen in die Berechnung der SLA-Einhaltung
-einzubeziehen (interne Notizen haben *nie* Auswirkungen auf die
-SLA-Berechnungen). Beachten Sie, dass mit dieser Einstellung die Option zum
-Löschen öffentlicher Notizen deaktiviert wird.
+Normally, notes aren't SLA relevant. Use the following command to include
+publicly-visible notes when tracking SLA compliance (internal notes _will
+never_ affect SLA calculations). Be aware that this setting will disable the
+option to delete public notes.
 
 :::info
 Standardmäßig werden Kunden nicht benachrichtigt, wenn einem Ticket öffentliche Notizen hinzugefügt werden.
@@ -690,10 +743,13 @@ Richten Sie einen Trigger ein, wenn Sie dieses Verhalten ändern möchten.
 :::
 
 Aktivieren Sie SLA, um Notizen als Kommunikation zu zählen:
+
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: true)
 ```
+
 Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:
+
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
@@ -731,15 +787,18 @@ bearbeiten, bevor Zammad sie verarbeiten kann. Führen Sie dazu die folgenden
 Schritte aus.
 
 #### Alle fehlgeschlagenen E-Mails in einen lokalen Ordner exportieren
+
 ```sh
 rake zammad:email_parser:failed_email:export_all`
 ```
+
 Sie können den Speicherort der exportierten E-Mails in der Ausgabe Ihrer
 Konsole finden.  Jedes Mal, wenn Sie einen Export von fehlgeschlagenen
 (nicht verarbeitbaren) E-Mails durchführen, wird ein Ordner erstellt, der
 alle fehlgeschlagenen E-Mails zum Zeitpunkt der Ausführung enthält.
 
 #### Bearbeiten Sie die E-Mail
+
 Die E-Mail wurde im obigen Schritt exportiert. Nun können Sie sie sich
 ansehen und versuchen, sie zu reparieren. Achten Sie darauf, dass der
 Dateiname nicht verändert wird, da der Import sonst fehlschlägt.
@@ -768,6 +827,7 @@ erzeugten Unterordner auszuführen.
 
 Unerwünschte E-Mails, z.B. Spam, können Sie nach dem Export mit dem
 folgenden Befehl aus der Datenbank löschen:
+
 ```ruby
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
@@ -804,18 +864,24 @@ fortfahren, wenn Sie wissen, was Sie tun und
 ### Entfernen von Tickets (und ihren Artikeln)
 
 Löschen eines Tickets (angegeben durch die Datenbank ID):
+
 ```ruby
 Ticket.find(4).destroy
 ```
+
 Alle Tickets löschen:
+
 ```ruby
 Ticket.destroy_all
 ```
+
 Behalten Sie einige Tickets (angegeben durch die Datenbank ID); löschen Sie
 den Rest:
+
 ```ruby
 tickets_to_keep = [1, 2, 3]
 ```
+
 ```ruby
 Ticket.where.not(id: tickets_to_keep).destroy_all
 ```
@@ -831,23 +897,22 @@ Kunden, sondern auch **alle mit ihnen verbundenen Tickets** gelöscht. Untensteh
 Befehle löschen ohne weitere Warnungen.
 :::
 
-
 :::tip
-Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
-beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
-verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
-*System > Datenschutz*.
+If you're not sure what to do and need to learn more about what Zammad
+does upon removing users, please consider using Zammad's UI options in
+stead. You can find the data privacy feature in Zammad's admin interface under
+_System > Data Privacy_.
 :::
 
 Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und
 mehrere auf einmal.
-
 
 Entfernen Sie einen einzelnen Benutzer:
 
 ```ruby
 User.find_by(email: '<email address>').destroy
 ```
+
 Mehrere Benutzer entfernen:
 
 ```ruby
@@ -865,21 +930,25 @@ Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelö
 #### Schritt 1: Organisationen auswählen
 
 Nach dem Status "aktiv":
+
 ```ruby
 organizations = Organization.where(active: false)
 ```
 
 Nach dem Namen:
+
 ```ruby
 organizations = Organization.where(name: 'Acme')
 ```
 
 Bei teilweiser Übereinstimmung mit den Notizen:
+
 ```ruby
 organizations = Organization.where('note LIKE ?', '%foo%')
 ```
 
 #### Schritt 2: Vorschau der betroffenen Organisationen
+
 ```ruby
 puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 ```
@@ -890,12 +959,14 @@ puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 organizations.each do |org|
     puts %{Preparing deletion of organization "#{org.name}"...}
 ```
+
 ```ruby
 org.members.each do |member|
     puts "  Removing #{member.fullname} from organization..."
     member.update!(organization_id: nil)
 end
 ```
+
 ```ruby
     puts "  Deleting #{org.name}..."
     org.destroy
@@ -944,12 +1015,15 @@ Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!
 ```sh
 rake db:drop
 ```
+
 ```sh
 rake db:create
 ```
+
 ```sh
 rake db:migrate
 ```
+
 ```sh
 rake db:seed
 ```

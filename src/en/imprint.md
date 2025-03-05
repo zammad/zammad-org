@@ -16,7 +16,7 @@ Germany
 
 Phone: +49 (0) 30 55 57 160-00 \
 Fax: +49 (0) 30 55 57 160-99 \
-Email: enjoy@zammad.com
+Email: <enjoy@zammad.com>
 
 Managing Director: Martin Edenhofer \
 Commercial Register Charlottenburg, No. HRB 163946 B \

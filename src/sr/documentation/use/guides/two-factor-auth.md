@@ -19,8 +19,8 @@ unless you set up at least one 2FA method.
 
 ## Set Up
 
-If the system admin has enabled this feature, you can head to *Avatar >
-Profile > Two-factor Authentication* to set it up. Depending on the
+If the system admin has enabled this feature, you can head to _Avatar >
+Profile > Two-factor Authentication_ to set it up. Depending on the
 enabled two-factor methods, you may see one or more options in the
 table.
 
@@ -35,7 +35,6 @@ Depending on the chosen two-factor method, you will be guided through the
 setup process, which includes specific steps. Continue with using an
 [Authentication App](#authentication-app) or a [Security
 Key](#security-key).
-
 
 ### Authentication App
 
@@ -212,4 +211,3 @@ your current password.
 To remove an already set up two-factor method, use the ⋮ **Actions** menu
 next to it and choose **Remove**. In a modal dialog, you will be asked to
 confirm the removal with your current password.
-

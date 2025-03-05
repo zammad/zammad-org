@@ -34,6 +34,7 @@ möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren.
 ```sh
 sudo apt install curl apt-transport-https gnupg
 ```
+
 === Debian
 
 ```sh
@@ -42,10 +43,12 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Nur SLES - Nicht notwendig unter OpenSUSE:
+Only SLES - Not required for OpenSUSE:
+
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
+
 ```sh
 sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
@@ -55,6 +58,7 @@ sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(u
 ```sh
 sudo yum install wget epel-release
 ```
+
 :::
 ::::
 
@@ -65,76 +69,88 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
 
-``` sh
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo apt install locales
 ```
+
 ```sh
 sudo locale-gen en_US.UTF-8
 ```
+
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
 
-``` sh
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo apt install locales
 ```
+
 ```sh
 sudo locale-gen en_US.UTF-8
 ```
+
 ```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 localectl status | grep LANG
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
 
-``` sh
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 ===CentOS/RHEL
-Auflisten der aktuellen locale Einstellungen:
+List your current locale settings:
 
-``` sh
+```sh
 locale | grep "LANG="
 ```
-Sofern der obige Befehl nicht `<lang_code>.utf8` ausgibt, können
-Sie das wie folgt korrigieren:
 
-``` sh
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich ist.
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
@@ -158,69 +174,80 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::tabs key:distros
 
 === Ubuntu
-Installation des Repository Keys:
-``` sh
+Install repository key:
+
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
+
 Ubuntu 20.04
 
-``` sh
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
-``` sh
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
-``` sh
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
+
 === Debian
-Installation des Repository Keys:
-``` sh
+Install repository key:
+
+```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
+
 Debian 11
 
-``` sh
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
-``` sh
+```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
+
 === OpenSUSE/SLES
-Installation des Repository Keys:
-``` sh
+Install repository key:
+
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
+
 OpenSUSE 15.x / SLES15
 
-``` sh
+```sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
+
 ===CentOS/RHEL
-Installation des Repository Keys:
-``` sh
+Install repository key:
+
+```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
+
 CentOS 8 / RHEL 8
 
-``` sh
+```sh
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
@@ -231,6 +258,7 @@ CentOS 9 / RHEL 9
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
+
 :::
 
 ### Zammad installieren
@@ -242,52 +270,68 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```sh
 sudo apt update
 ```
+
 ```sh
 sudo apt install zammad
 ```
+
 === Debian
 
 ```sh
 sudo apt update
 ```
+
 ```sh
 sudo apt install zammad
 ```
+
 === OpenSUSE/SLES
+
 ```sh
 sudo zypper ref
 ```
+
 ```sh
 sudo zypper install zammad
 ```
+
 ===CentOS/RHEL
+
 ```sh
 sudo yum install zammad
 ```
 
-Auf Grund eines Problems im Zusammenhang mit packager.io müssen Sie die Dateiberechtigungen für öffentliche Dateien unter CentOS korrigieren:
+Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
 
 ```sh
 sudo chmod -R 755 /opt/zammad/public/
 ```
+
 :::
 
 ### Zammad Services verwalten
 
 Zammad verwendet drei Dienste. Sie können mit dem übergeordneten Dienst
 `zammad` (neu)gestartet und gestoppt werden:
+
 ```sh
 systemctl (status|start|stop|restart) zammad
 ```
+
 Nur interner Puma-Server (relevant zum Anzeigen der Web-App):
+
 ```sh
 systemctl (status|start|stop|restart) zammad-web
 ```
+
 Nur Background Worker - relevant für alle verzögerten und Hintergrund-Jobs:
+
 ```sh
 systemctl (status|start|stop|restart) zammad-worker
 ```
+
 Nur Websocket-Server für sitzungsbezogene Informationen:
+
 ```sh
 systemctl (status|start|stop|restart) zammad-websocket
 ```
@@ -300,7 +344,6 @@ systemctl (status|start|stop|restart) zammad-websocket
   Anleitung](/de/tutorials/firewall-selinux))
 - Konfigurieren Sie den Webserver ([Basis
   Anleitung](/de/tutorials/webserver-config))
-
 
 ## Abhängigkeiten
 
@@ -345,7 +388,6 @@ Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
 installiert.  Eine Anleitung zur Grundkonfiguration finden Sie
 [hier](/de/tutorials/webserver-config).
 
-
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 
 Elasticsearch wird nicht automatisch installiert. Da es für eine
@@ -369,6 +411,7 @@ Unterstützte Elasticsearch-Versionen sind `7.8` - `8.x`.
 | 3.2           | >= 2.4, <=7.5  |
 | 3.1           | >= 2.4, <=7.4  |
 | 2.0-3.0       | >= 2.4, <=5.6  |
+
 :::
 
 Das Elasticsearch-Plugin `ingest-attachment` wird für Version 7 oder älter

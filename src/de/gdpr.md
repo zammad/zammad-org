@@ -4,13 +4,12 @@ layout: home
 
 # Datenschutzbestimmungen
 
-### Allgemeine Datenschutzbestimmungen
+> General Data Protection Regulation
 
 ## Zammad GmbH Datenschutzerklärung
 
-Diese Datenschutzerklärung beschreibt, wie Ihre persönlichen Daten
-gesammelt, verwendet und weitergegeben werden, wenn Sie
-https://www.zammad.org (die "Website") besuchen.
+This privacy policy describes how your personal information is collected,
+used and shared when you visit <https://www.zammad.org> (the "site").
 
 ## Persönliche Informationen, die wir sammeln
 
@@ -23,16 +22,16 @@ welche Websites oder Suchbegriffe Sie auf die Website verwiesen haben, und
 Informationen darüber, wie Sie mit der Website interagieren. Wir bezeichnen
 diese automatisch erfassten Informationen als "Geräteinformationen".
 
-## Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:
+Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:
 
-* Cookies" sind Datendateien, die auf Ihrem Gerät oder Computer abgelegt werden und häufig
-eine anonyme eindeutige Kennung enthalten. Für weitere Informationen über Cookies und
-wie Sie Cookies deaktivieren können, besuchen Sie https://www.allaboutcookies.org.
-* "Log-Dateien" verfolgen Aktionen auf der Website und sammeln Daten wie
-Ihre IP-Adresse, den Browsertyp, den Internetprovider, die Verweis- und Ausstiegsseiten
-und Datums-/Zeitstempel.
-* Web-Beacons", "Tags" und "Pixel" sind elektronische Dateien, die zur Aufzeichnung von
-Informationen darüber, wie Sie auf der Website surfen.
+- "Cookies" are data files that are placed on your device or computer and
+often include an anonymous unique identifier. For more information about
+cookies and how to disable cookies visit <https://www.allaboutcookies.org>.
+- "Log files" track actions occurring on the site, and collect data
+including your IP address, browser type, internet service provider,
+referring/exit pages, and date/time stamps.  - "Web beacons", "tags", and
+"pixels" are electronic files used to record information about how you
+browse the site.
 
 ## Verwendung von Matomo
 
@@ -111,9 +110,8 @@ regulatorische Gründe zu berücksichtigen.
 
 ## Kontakt
 
-Wenn Sie weitere Informationen über unsere Datenschutzpraktiken wünschen,
-Fragen haben oder eine Beschwerde einreichen möchten, wenden Sie sich bitte
-per E-Mail an info@zammad.org oder per Post an die unten angegebenen
-Kontaktdaten:
+For more information about our privacy practices, if you have questions, or
+if you would like to make a complaint, please contact us by e-mail at
+<info@zammad.org> or by mail using the details provided below:
 
 Marienstraße 18, Berlin, BE, 10117, Deutschland

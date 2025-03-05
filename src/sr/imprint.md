@@ -10,8 +10,8 @@ Zammad.org је услуга коју пружа:
 
 Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Germany
 
-Телефон: +49 (0) 30 55 57 160-00 \ Факс: +49 (0) 30 55 57 160-99 \ Имејл
-адреса: enjoy@zammad.com
+Phone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
+<enjoy@zammad.com>
 
 Директор: Martin Edenhofer \ Привредни регистар Charlottenburg, бр. HRB
 163946 B \ Главна канцеларија: Berlin (Mitte) \ Порески идентификациони

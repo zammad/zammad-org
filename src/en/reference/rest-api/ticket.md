@@ -50,12 +50,12 @@ If you want to create tickets on behalf of other users, use the
 user's ID or want to create the user in question
 (`"customer_id": "guess:jane@doe.com"`).
 
-**Add mention subscription right away**
+**Add mention subscription right away**:
 
 Add the `mentions` attribute to your ticket payload and provide an
 array of user ids to directly subscribe them during ticket creation.
 
-*E.g.:* `"mentions": [1, 5, 7, 8],`
+_E.g.:_ `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -94,7 +94,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Above example provides an article. This article is a *new article* and
+Above example provides an article. This article is a _new article_ and
 does not affect any existing ones.
 :::
 
@@ -120,7 +120,7 @@ Required permission: `admin`
 
 ::: danger
 
-**This is a permanent removal**
+**This is a permanent removal**:
 
 Please note that removing tickets cannot be undone. All data (e.g.
 articles & attachments) will be lost.

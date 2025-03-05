@@ -11,14 +11,15 @@ This page describes the generic CTI API scopes and functionalities.
 
 ::: warning
 
-* Authentication on this endpoint works fundamentally different compared to
+- Authentication on this endpoint works fundamentally different compared to
   the rest of the API.
-* API clients *do not* work with the CTI endpoints unless explicitly stated
+- API clients _do not_ work with the CTI endpoints unless explicitly stated
   by the client vendor!
-* The CTI endpoints are relevant for PBX systems only.
+- The CTI endpoints are relevant for PBX systems only.
 :::
 
 ## Features
+
 Here's a small condensed list of the possibilities this CTI API
 provides.
 
@@ -40,7 +41,7 @@ endpoint URL safe.
 
 ::: info
 Generic CTI configuration and the correct endpoint can be found in your
-Zammad in the admin interface under *System > Integrations > CTI (generic)*.
+Zammad in the admin interface under _System > Integrations > CTI (generic)_.
 
 Please also note the there listed requirements and limitations.
 All options that require returns (e.g. blocking, manipulating outgoing
@@ -50,6 +51,7 @@ page.
 
 ::: tip
 There are two options how to `POST` the relevant data to Zammad:
+
 - JSON (recommended)
 - Form-data
 :::
@@ -113,7 +115,6 @@ from external side to you are `in`.
   params depending on the call method you choose. If the direction is `out`,
   this is the name of the calling person(s). If the direction is `in`, this
   is the name of the called person(s).
-
 
 `queue` <Badge type="info" text="support"/>
 : An optional queue name, this option is relevant for the caller log filter.
@@ -261,12 +262,11 @@ Available `attributes` and <Badge type="info" text="sample data" />:
   existing call with following actions (e.g. like answering or hanging up).
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-: Zammad will look up for a user with given value, the following attributes
-  will be evaluated in given order:
-  - `user.phone`
-  - `user.login`
-  - `user.if`
-  This value is optional.
+:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+      - `user.phone`
+      - `user.login`
+      - `user.if`
+    This value is optional.
 
 `user` <Badge type="info" text="John Doe" />:
 : The user(s) real name involved. You may have to provide array style (`[]`)
@@ -377,24 +377,22 @@ Sample curl command:
   existing call with following actions (e.g. like answering or hanging up).
 
 `cause`
-: This defines the reason of the hangup. Zammad evaluates the cause and
-  indicates e.g. missed calls accordingly in the caller log.
-  Possible values are:
-  - `normalClearing` (one of the parties hung up after the call was established)
-  - `busy` (the called party was busy)
-  - `cancel` (the caller hung up before the called party picked up)
-  - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
-  - `congestion` (the called party could not be reached)
-  - `notFound` (the called number does not exist or called party is offline)
-  - `forwarded` (the call was forwarded to a different party)
+:   This defines the reason of the hangup. Zammad evaluates the cause and indicates
+    e.g. missed calls accordingly in the caller log. Possible values are:
+    - `normalClearing` (one of the parties hung up after the call was established)
+    - `busy` (the called party was busy)
+    - `cancel` (the caller hung up before the called party picked up)
+    - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
+    - `congestion` (the called party could not be reached)
+    - `notFound` (the called number does not exist or called party is offline)
+    - `forwarded` (the call was forwarded to a different party)
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-: Zammad will look up for a user with given value, the following attributes
-  will be evaluated in given order:
-  - `user.phone`
-  - `user.login`
-  - `user.if`
-  This value is optional.
+:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+    - `user.phone`
+    - `user.login`
+    - `user.if`
+    This value is optional.
 
 ### Outbound
 

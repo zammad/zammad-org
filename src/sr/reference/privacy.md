@@ -18,11 +18,11 @@ By default, Zammad never automatically deletes tickets or users.
 
 To enable **automatic** deletion of tickets after a given interval,
 use Zammad's scheduler. You can configure it in Zammad's admin interface under
-*Manage > Scheduler*.
+_Manage > Scheduler_.
 
 To **manually** delete users and all their associated tickets (e.g. in
 compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under *System > Data Privacy*
+the data privacy functions in the admin panel under _System > Data Privacy_
 or [use the console](/en/reference/console#deleting-records).
 
 ### Chat sessions
@@ -44,7 +44,7 @@ caller log is automatically deleted after 12 months.
 Zammad writes log files to disk (typically under `/opt/zammad/log/`).
 
 Package installations will set up a separate system utility called
-`logrotate` to rename and archive (or *rotate*) log files on a nightly basis
+`logrotate` to rename and archive (or _rotate_) log files on a nightly basis
 and remove old logs after 14 days.
 
 If installing from source, it is strongly recommended to configure
@@ -56,9 +56,9 @@ logs on its own.
 Zammad maintains session information about every user currently logged in.
 
 This information is automatically purged when a user logs out, and can
-be viewed or manually deleted via the admin panel (under *System >
-Sessions*). Users may also delete their own session information via the
-user preferences menu, under *Devices*.
+be viewed or manually deleted via the admin panel (under _System >
+Sessions_). Users may also delete their own session information via the
+user preferences menu, under _Devices_.
 
 Session information includes IP address (and possibly geographic location),
 browser, time of original login, and time of last visit.
@@ -73,7 +73,7 @@ months.
 Zammad utilizes third-party web services for certain functions, meaning
 that user data may occasionally be sent or exposed to third parties.
 These functions can be individually disabled in the admin panel under
-*Settings > System > Services*.
+_Settings > System > Services_.
 
 ::: info
 By default, the third-party services that Zammad relies on are mostly
@@ -101,7 +101,7 @@ days; organization logos are cached for 30 days.
 No user information is stored or cached on geo.zammad.com.
 
 As part of its service-level agreement (SLA) functionality, Zammad requires
-detailed, localized calendar information (*e.g.,* to set the time zone and
+detailed, localized calendar information (_e.g.,_ to set the time zone and
 accommodate national holidays and daylight savings time).  The GeoCalendar
 service is used to retrieve this information.
 

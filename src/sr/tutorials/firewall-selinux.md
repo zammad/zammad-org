@@ -18,15 +18,19 @@ different distribution, please have a look at their documentation.
 ```sh
 sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/
 ```
+
 ```sh
 sudo setsebool httpd_can_network_connect on -P
 ```
+
 ```sh
 sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/
 ```
+
 ```sh
 sudo restorecon -Rv /opt/zammad/public/
 ```
+
 ```sh
 sudo chmod -R a+r /opt/zammad/public/
 ```
@@ -44,12 +48,15 @@ firewall. It may not cover your case.
 ::::tabs
 
 ===Ubuntu
+
 ```sh
 sudo ufw allow 80
 ```
+
 ```sh
 sudo ufw allow 443
 ```
+
 ```sh
 sudo ufw reload
 ```
@@ -68,9 +75,11 @@ Ensure to add these lines to your input-chain.
 ```sh
 sudo tcp dport { http, https } accept
 ```
+
 ```sh
 sudo udp dport { http, https } accept
 ```
+
 The result can look like the following. Keep in mind that your environment
 could require different / more rules.
 
@@ -93,7 +102,9 @@ table inet filter {
    }
 }
 ```
+
 To load the rules, run:
+
 ```sh
 sudo systemctl reload nftables
 ```

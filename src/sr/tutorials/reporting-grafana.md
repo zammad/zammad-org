@@ -57,7 +57,8 @@ curl http://localhost:9200/_aliases?pretty=true
 ```
 
 This will return an output like the following:
-```
+
+```json
 {
   "zammad_production_knowledge_base_translation" : {
     "aliases" : { }
@@ -97,6 +98,7 @@ This will return an output like the following:
   }
 }
 ```
+
 :::
 ::::
 
@@ -141,7 +143,7 @@ below. These dashboards can also be found on
 
 ### Importing a Dashboard
 
-In Grafana, select *➕ > Import* (or any other place which offers you to import
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
 a dashboard) and either upload the json file you
 downloaded from Github or use the grafana.com ID, provided as badge
 like <Badge type="info" text="12345"/> attached to the next sections titles.
@@ -158,7 +160,7 @@ source names above, you can simply search for the same name.
 
 - ticket opening and closing[^1]
 - created articles
-- ticket SLA (in time *and* violation) per type[^1][^2]
+- ticket SLA (in time _and_ violation) per type[^1][^2]
 
 #### Ticket and Article Meta Information
 
@@ -227,9 +229,8 @@ Number of calls per direction (in / out).
 
 - `ES - CTI Log`
 
-
 [^1]: Some values are not available as time series information. This
-    means we can only display the *last* value of the field in question.
+    means we can only display the _last_ value of the field in question.
 
 [^2]: Requires SLA function to be active. Negative values indicate SLA
     violations.

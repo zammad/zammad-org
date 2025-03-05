@@ -79,7 +79,6 @@ Required permission: `admin.organization`
 :::
 ::::
 
-
 ## Delete
 
 Required permission: `admin.organization`
@@ -93,7 +92,7 @@ Please note that removing organizations cannot be undone.
 
 Removing organizations with references in e.g. activity streams or users
 is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
 Consider using Zammad's Data Privacy feature via UI for
 more control instead.

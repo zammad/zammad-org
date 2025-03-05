@@ -9,8 +9,8 @@ title: 'Elasticsearch 7 installieren'
 
 ## Einführung
 
-Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird
-aber dringend empfohlen.
+Elasticsearch is technically not required to run Zammad, but _highly_
+recommended.
 
 Elasticsearch bietet zwei Versionen an. Derzeit werden die Versionen 7 und 8
 gepflegt. Für die Installationsanweisungen sollten Sie in erster Linie die
@@ -40,17 +40,21 @@ dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird
 ```sh
 apt install apt-transport-https sudo wget curl gnupg
 ```
+
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
   tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
+
 ```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
+
 ```sh
 apt update
 ```
+
 ```sh
 apt install elasticsearch
 ```
@@ -60,17 +64,21 @@ apt install elasticsearch
 ```sh
 apt install apt-transport-https sudo wget curl gnupg
 ```
+
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
   tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
+
 ```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
+
 ```sh
 apt update
 ```
+
 ```sh
 apt install elasticsearch
 ```
@@ -80,6 +88,7 @@ apt install elasticsearch
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
+
 ```sh
 echo "[elasticsearch-7.x]
 name=Elasticsearch repository for 7.x packages
@@ -90,6 +99,7 @@ enabled=1
 autorefresh=1
 type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 ```
+
 ```sh
 zypper install elasticsearch
 ```
@@ -99,6 +109,7 @@ zypper install elasticsearch
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
+
 ```sh
 echo "[elasticsearch-7.x]
 name=Elasticsearch repository for 7.x packages
@@ -109,51 +120,54 @@ enabled=1
 autorefresh=1
 type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
 ```
+
 ```sh
 yum install -y elasticsearch
 ```
+
 === Direct Download
 
 :::
 
-Installieren Sie das Plugin "ingest-attachment":
-: ```sh
-   /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
-  ```
+Install the ingest-attachment plugin:
+:   ```sh
+    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
+    ```
 
-Erhöhen Sie das Virtual Memory Limit:
-: ```sh
-  sysctl -w vm.max_map_count=262144
-  ```
+Increase Virtual Memory Map Limit:
+:   ```sh
+    sysctl -w vm.max_map_count=262144
+    ```
+<!-- markdownlint-disable MD046 -->
+Adjust `/etc/elasticsearch/elasticsearch.yml`:
+:   ```
+    # /etc/elasticsearch/elasticsearch.yml
 
-Adjust ``/etc/elasticsearch/elasticsearch.yml``:
-: ```yml
-  # /etc/elasticsearch/elasticsearch.yml
+    # Tickets above this size (articles + attachments + metadata)
+    # may fail to be properly indexed (Default: 100mb).
+    #
+    # When Zammad sends tickets to Elasticsearch for indexing,
+    # it bundles together all the data on each individual ticket
+    # and issues a single HTTP request for it.
+    # Payloads exceeding this threshold will be truncated.
+    #
+    # Performance may suffer if it is set too high.
+    http.max_content_length: 400mb
 
-  # Tickets above this size (articles + attachments + metadata)
-  # may fail to be properly indexed (Default: 100mb).
-  #
-  # When Zammad sends tickets to Elasticsearch for indexing,
-  # it bundles together all the data on each individual ticket
-  # and issues a single HTTP request for it.
-  # Payloads exceeding this threshold will be truncated.
-  #
-  # Performance may suffer if it is set too high.
-  http.max_content_length: 400mb
+    # Allows the engine to generate larger (more complex) search queries.
+    # Elasticsearch will raise an error or deprecation notice if this value is
+    # too low, but setting it too high can overload system
+    # resources (Default: 1024).
+    #
+    # Available in version 6.6+ only.
+    indices.query.bool.max_clause_count: 2000
+    ```
+<!-- markdownlint-enable MD046 -->
 
-  # Allows the engine to generate larger (more complex) search queries.
-  # Elasticsearch will raise an error or deprecation notice if this value is
-  # too low, but setting it too high can overload system
-  # resources (Default: 1024).
-  #
-  # Available in version 6.6+ only.
-  indices.query.bool.max_clause_count: 2000
-  ```
-
-Aktivieren Sie es standardmäßig und starten Sie es:
-: ```sh
-  systemctl enable elasticsearch --now
-  ```
+Enable it by default and start it:
+:   ```sh
+    systemctl enable elasticsearch --now
+    ```
 
 ## Nächste Schritte
 

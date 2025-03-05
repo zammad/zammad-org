@@ -21,10 +21,10 @@ eingerichtet haben.
 
 ## Einrichtung
 
-Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie unter *Avatar >
-Profil-Einstellungen > Zwei-Faktor-Authentifizierung* aufrufen, um sie einzurichten. Abhängig von den
-aktivierten Zwei-Faktor-Methoden, sehen Sie eine oder mehrere Optionen in der
-Tabelle.
+If the system admin has enabled this feature, you can head to _Avatar >
+Profile > Two-factor Authentication_ to set it up. Depending on the
+enabled two-factor methods, you may see one or more options in the
+table.
 
 Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
 Schraubenschlüssel-Symbol und befolgen Sie die Schritte.
@@ -39,7 +39,6 @@ Je nach gewählter Zwei-Faktor-Methode werden Sie durch den
 Einrichtungsprozess geführt, der bestimmte Schritte umfasst. Fahren Sie mit
 der Verwendung einer [Authentifizierungs-App](#authentication-app) oder
 eines [Sicherheits-Schlüssels](#security-key) fort.
-
 
 ### Authentifizierungs-App
 
@@ -226,4 +225,3 @@ Um eine bereits eingerichtete Zwei-Faktor-Methode zu entfernen, verwenden
 Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie
 **Entfernen**. In einem Dialog werden Sie aufgefordert, die Entfernung mit
 Ihrem aktuellen Passwort zu bestätigen.
-

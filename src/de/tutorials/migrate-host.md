@@ -41,8 +41,8 @@ auf Ihrem alten und neuen Host haben.
 
 ## Schritt 3: Aktivieren des Wartungsmodus
 
-Dadurch werden alle Sitzungen von Agenten und Kunden beendet. Aktivieren Sie es in Zammads Admin
-Schnittstelle unter *System > Wartung*.
+This ends all agent and customer sessions. Activate it in Zammad's admin
+interface under _System > Maintenance_.
 
 ## Schritt 4: Deaktivieren Sie Ihre Kommunikationskanäle
 
@@ -51,11 +51,12 @@ trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden.
 
 ## Schritt 5: Zammad beenden und deaktivieren
 
-Stellen Sie sicher, dass keine Daten *vor* der Sicherung geändert werden.
+Make sure that no data will be changed _before_ backing up.
 
 ```sh
 systemctl disable zammad
 ```
+
 ```sh
 systemctl stop zammad
 ```
@@ -129,6 +130,7 @@ Zammad-Dateien sind distributions- und versionsspezifisch!
 ```sh
 dpkg -r --force-depends zammad
 ```
+
 ```sh
 apt install zammad
 ```
@@ -138,16 +140,18 @@ apt install zammad
 ``` sh
 zypper remove -R zammad
 ```
+
 ```sh
 zypper install zammad
 ```
+
 :::
 
 ::: tip
-Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich erforderlich sind oder eine einfache Neuinstallation
-ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und
-die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl ausführen, um Ihre
-Installation zu reparieren.
+You're unsure if above is really required and a mere reinstall would be
+enough? If you run a dedicated install command on for Zammad and receive
+the following, you absolutely have to run above to fix your
+installation.
 
 ``` sh
 root@zammad:/# apt-get update && apt install zammad
@@ -157,8 +161,8 @@ root@zammad:/# apt-get update && apt install zammad
   zammad is already the newest version (x.x.x-xxxxxx.xxxxxx.xxx).
   0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 ```
-:::
 
+:::
 
 #### Schritt 9.2: Löschen des Cache
 
@@ -173,9 +177,11 @@ systemctl status zammad
 ```
 
 Wenn Zammad nicht läuft, führen Sie aus:
+
 ```sh
 systemctl start zammad
 ```
+
 :::tip
 Von Zammad SaaS migriert oder den Anbieter gewechselt?
 
@@ -196,9 +202,8 @@ Elasticsearch](/de/tutorials/connect-config-elasticsearch) aus.
 
 ## Schritt 11: Kanäle wieder aktivieren und den Wartungsmodus deaktivieren
 
-Setzen Sie die zuvor deaktivierten Kanäle wieder auf aktiv, wenn Sie sicher
-sind, dass alles erfolgreich war. An diesem Punkt beginnt Zammad damit
-*Daten zu ändern*!
+Set the previous deactivated channels back to active if you're sure
+everything was successful. At this point Zammad will start to _change data_!
 
 Nachdem Sie die Funktionalität Ihrer Kanäle überprüft haben, erlauben Sie
 Ihren Agenten und Kunden, sich wieder anzumelden, indem Sie den

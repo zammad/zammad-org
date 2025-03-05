@@ -32,7 +32,6 @@ Default values are marked with a <Badge type="info" text="badge"/>.
   Use `enabled` to turn this option on only until the next update. Use
   `true` to turn it on permanently.
 
-
 `ZAMMAD_SAFE_MODE` <Badge type="info" text="unset"/>
 : Ignore availability of third-party services when running Zammad
   commands. Possible values: `1` or `true`
@@ -44,7 +43,6 @@ Default values are marked with a <Badge type="info" text="badge"/>.
   While it may allow an escape hatch for certain commands, it has a
   potential to break regular Zammad operations.
   :::
-
 
 `ZAMMAD_HTTP_TYPE` <Badge type="info" text="unset"/>
 : Defines the HTTP protocol of your instance. Possible values: `http` or
@@ -66,7 +64,6 @@ make here.
 `ZAMMAD_RAILS_PORT` <Badge type="info" text="3000"/>
 : The port that the web server is exposed on.
 
-
 `ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : The port that the web socket server is exposed on.
 
@@ -76,7 +73,7 @@ Each of below settings comes with its own tradeoffs. There are no "recommended
 values" here; the optimal configuration will depend on your system's resources
 and typical application load.
 
-Below settings *may* consume all available database connections. Please
+Below settings _may_ consume all available database connections. Please
 consider to check your database server configuration.
 
 ::: danger
@@ -105,7 +102,6 @@ zammad run rails r "p Sessions.list.uniq.count"
   Generally speaking, it should only be useful to adjust this setting if
   you have more than 40 active users at a time.
 
-
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type="info" text="unset"/>
 : Allows spawning an independent process just for processing scheduled
   jobs like LDAP syncs. This can free up Zammad's background worker for
@@ -117,7 +113,7 @@ zammad run rails r "p Sessions.list.uniq.count"
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="unset"/>
-: How many processes should work on delayed jobs? Increasing this *can*
+: How many processes should work on delayed jobs? Increasing this _can_
   improve issues with delayed jobs stacking up in your system. You may want to
   try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
 
@@ -144,7 +140,6 @@ the scope of this documentation.
   If not provided, Zammad falls back to file system
   (`/opt/zammad/tmp/websocket_*`).
 
-
 `MEMCACHE_SERVERS` <Badge type="info" text="unset"/>
 : Store your application cache files within Memcached.
   To do so, tell Zammad where to find your Memcached instance:
@@ -162,7 +157,7 @@ the scope of this documentation.
 : Allows you to provide your S3 configuration.
 
   Format / example:
+
   ```sh
   https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true
   ```
-

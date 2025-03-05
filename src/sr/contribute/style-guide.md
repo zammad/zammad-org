@@ -28,31 +28,29 @@ order: 2
 Амерички енглески је изворни језик документације. Преводи се врше преко
 Weblate апликације, погледајте одељак о преводима за више информација.
 
-* Користите кратке и јасне реченице, дајући предност информацијама у односу
+- Користите кратке и јасне реченице, дајући предност информацијама у односу
   на сложеност
-* Све речи у наслову и одељцима (осим мањих) започните великим словом
-(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case){target=_blank})
-* Уколико је могуће, немојте прекорачивати дужину линије од 80 карактера
-у изворној датотеци
-* Одвајате правилно путање и локације са `>`
-* Користите истицање кода да бисте нагласили исечке текста који садрже инструкције
-* Убаците снимке екрана када је потребно
-* Дајте упутства корак-по-корак са јасним објашњењима
-* Користите примере или сценарије да илуструјете концепте
-* Укључите релевантне слике или дијаграме када је потребно
-* Скраћенице треба објаснити први пут када се користе или укључују
-у речнику и повезати их
-* Ако сте у недоумици, ускладите се са постојећом документацијом
-
+- Capitalize all words except minor ones in the page title and sections
+(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})
+- Line length of 80 characters in the source file should not be exceeded if
+possible
+- Proper breadcrumb separation for paths and locations with `>`
+- Use code highlighting to emphasize programming snippets
+- Include screenshots when necessary
+- Provide step-by-step instructions with clear explanations
+- Use examples or scenarios to illustrate concepts
+- Include relevant images or diagrams when necessary
+- Abbreviations should be explained the first time they are used or included
+in the glossary and linked to
+- If in doubt, align it to the existing documentation
 
 ## Форматирање текста
 
-| Тип у Zammad-у  | Истицање                      | Markdown синтакса               |
-|-----------------|-------------------------------|---------------------------------|
-| Дугмићи         | `Пријава`                     | \`Пријава\`                     |
-| Поља            | **Назив**                     | \*\*Назив\*\*                   |
-| Путања/локације | *Подешавања > Канали > Имејл* | \*Подешавања > Канали > Имејл\* |
-
+| Type in Zammad | Highlighting                  | Markdown syntax                 |
+|----------------|-------------------------------|---------------------------------|
+| Buttons        | `Sign in`                   | \`\`Sign in\`\`                 |
+| Fields         | **Name**                      | \*\*Name\*\*                    |
+| Location/path  | _Settings > Channels > Email_ | \*Settings > Channels > Email\* |
 
 ## Структура наслова
 
@@ -75,7 +73,7 @@ Weblate апликације, погледајте одељак о превод�
 ### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
 Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке:  
-https://vitepress.dev/reference/default-theme-badge#usage
+<https://vitepress.dev/reference/default-theme-badge#usage>
 
 ### Прилагођени оквири
 

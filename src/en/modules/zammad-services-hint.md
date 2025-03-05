@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 ::: tip
 Are you tired of complex setup, configuration, backup and update tasks? Let us
 handle this stuff for you! 🚀

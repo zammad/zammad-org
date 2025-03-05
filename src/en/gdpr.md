@@ -5,12 +5,12 @@ layout: home
 
 # Privacy policy
 
-### General Data Protection Regulation
+> General Data Protection Regulation
 
 ## Zammad GmbH Privacy Policy
 
 This privacy policy describes how your personal information is collected, used
-and shared when you visit https://www.zammad.org (the "site").
+and shared when you visit <https://www.zammad.org> (the "site").
 
 ## Personal information we collect
 
@@ -22,15 +22,15 @@ you view, what websites or search terms referred you to the site, and
 information about how you interact with the site. We refer to this automatically
 collected information as "device information."
 
-## We collect device information using the following technologies:
+We collect device information using the following technologies:
 
-* "Cookies" are data files that are placed on your device or computer and often
+- "Cookies" are data files that are placed on your device or computer and often
 include an anonymous unique identifier. For more information about cookies and
-how to disable cookies visit https://www.allaboutcookies.org.
-* "Log files" track actions occurring on the site, and collect data including
+how to disable cookies visit <https://www.allaboutcookies.org>.
+- "Log files" track actions occurring on the site, and collect data including
 your IP address, browser type, internet service provider, referring/exit pages,
 and date/time stamps.
-* "Web beacons", "tags", and "pixels" are electronic files used to record
+- "Web beacons", "tags", and "pixels" are electronic files used to record
 information about how you browse the site.
 
 ## Use of Matomo
@@ -103,6 +103,6 @@ reasons.
 
 For more information about our privacy practices, if you have questions, or if
 you would like to make a complaint, please contact us by e-mail at
-info@zammad.org or by mail using the details provided below:
+<info@zammad.org> or by mail using the details provided below:
 
 Marienstraße 18, Berlin, BE, 10117, Germany

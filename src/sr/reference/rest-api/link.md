@@ -41,9 +41,9 @@ Required permission: `ticket.agent` **or** `admin`
 <<< @/fixtures/rest-api/links/post-req.json
 
 :::info
-The value for `link_object_target` has to be the *ticket ID*. The
-value for the `link_object_source_number` has to be the *ticket
-number*.
+The value for `link_object_target` has to be the _ticket ID_. The
+value for the `link_object_source_number` has to be the _ticket
+number_.
 :::
 
 === Response

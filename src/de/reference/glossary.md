@@ -347,12 +347,12 @@ Rolle
 : Jeder Benutzer hat eine zugewiesene Rolle. Standardmäßig gibt es drei Rollen:
   Admin, Agent und Kunde.
 
-  *Admins* haben die meisten Rechte: Sie können Rollen, Berechtigungen
-  und Einstellungen für das gesamte Team und die Instanz festlegen.
-  *Agenten* können Tickets anzeigen und bearbeiten, aber keine anderen Einstellungen ändern als
-  die ihres eigenen Profils.
-  *Kunden* können den Bearbeitungsstatus ihres Tickets in der
-  Kundenoberfläche einsehen.
+  _Admins_ have the most rights: they can define roles, permissions,
+  and settings for the entire team and instance.
+  _Agents_ can view and edit tickets, but not change any settings other than
+  those of their own profiles.
+  _Customers_ can view their ticket's processing status in their
+  customer interface.
 
   Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
 

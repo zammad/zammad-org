@@ -17,7 +17,6 @@ Required permission: `admin.role`
 
 :::
 
-
 ## Show
 
 Required permission: `admin.role`

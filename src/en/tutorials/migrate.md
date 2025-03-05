@@ -13,7 +13,7 @@ You can migrate the following data from another ticketing system to Zammad:
 - Agents and Customers (if applicable)
 
 After migrating to Zammad, you should first adjust your FQDN settings and HTTP
-type in Zammad's admin interface under *Settings > System > Base*.
+type in Zammad's admin interface under _Settings > System > Base_.
 This is important because the getting started wizard is skipped by the
 migration.
 
@@ -98,8 +98,8 @@ link at the bottom.
 Depending on the number of users, tickets and Freshdesk plan this may take a
 while.
 
-Seeing the message "*Interrupted by scheduler restart. Please restart manually
-or wait till next execution time.*"?
+Seeing the message "_Interrupted by scheduler restart. Please restart manually
+or wait till next execution time._"?
 
 If this message appears after providing your credentials, please be patient.
 The migration should start within 5 minutes.
@@ -114,29 +114,37 @@ Open console:
 ```sh
 zammad run rails c
 ```
+
 Set variables:
 
 ```sh
 subdomain = '{freshdesk subdomain}.freshdesk.com'
 ```
+
 ```sh
 token = '{freshdesk token}'
 ```
+
 Update Zammad settings for freshdesk import:
+
 ```sh
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
 ```
+
 ```sh
 Setting.set('import_freshdesk_endpoint_key', token)
 ```
+
 ```sh
 Setting.set('import_backend', 'freshdesk')
 ```
+
 ```sh
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
+
 ```sh
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
@@ -146,6 +154,7 @@ Run the migration:
 ```sh
 job = ImportJob.create(name: 'Import::Freshdesk')
 ```
+
 ```sh
 AsyncImportJob.perform_later(job)
 ```
@@ -159,6 +168,7 @@ Use
 ```sh
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
+
 which gives you an output of the current state of the job.
 
 :::
@@ -171,9 +181,11 @@ Run the following commands:
 ```sh
 Setting.set('import_mode', false)
 ```
+
 ```sh
 Setting.set('system_init_done', true)
 ```
+
 ```sh
 Rails.cache.clear
 ```
@@ -186,7 +198,6 @@ like LDAP or one click logins.
 
 ### Kayako
 
-
 Please note Freshdesk specific limitations below. These are additional
 limitations to the general ones listed.
 
@@ -195,16 +206,15 @@ limitations to the general ones listed.
 - Selfhosted installations (Kayako classic) are not supported.
 - The following ticket field customizations are being ignored (affects “Scale”
   plan):
-    - Custom ticket states
-    - Custom ticket priorities
-    - Custom ticket types
+  - Custom ticket states
+  - Custom ticket priorities
+  - Custom ticket types
 - Important: Please note that migration speed highly depends on your Kayako
   plan (API rate limits apply).
 - Your Kayako plan has to provide API support. This may not apply to all
   available plans.
 - User passwords are not migrated and will require the user to use the password
   reset link on Zammad's login page.
-
 
 #### Prerequisites
 
@@ -234,8 +244,8 @@ link at the bottom.
 
 Depending on the number of users, tickets and Kayako plan this may take a while.
 
-Seeing the message "*Interrupted by scheduler restart. Please restart manually
-or wait till next execution time.*"?
+Seeing the message "_Interrupted by scheduler restart. Please restart manually
+or wait till next execution time._"?
 
 If this message appears after providing your credentials, please be patient.
 The migration should start within 5 minutes.
@@ -250,35 +260,45 @@ Open console:
 ```sh
 zammad run rails c
 ```
+
 Set variables:
 
 ```sh
 subdomain = '{kayako subdomain}.kayako.com'
 ```
+
 ```sh
 email = '{kayako admin email address}'
 ```
+
 ```sh
 password = '{kayako admin password}'
 ```
+
 Update Zammad settings for Kayako import:
+
 ```sh
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
 ```
+
 ```sh
 Setting.set('import_kayako_endpoint_username', email)
 ```
+
 ```sh
 Setting.set('import_kayako_endpoint_password', password)
 ```
+
 ```sh
 Setting.set('import_backend', 'kayako')
 ```
+
 ```sh
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
+
 ```sh
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
@@ -288,6 +308,7 @@ Run the migration:
 ```sh
 job = ImportJob.create(name: 'Import::Kayako')
 ```
+
 ```sh
 AsyncImportJob.perform_later(job)
 ```
@@ -301,6 +322,7 @@ Use
 ```sh
 pp ImportJob.find_by(name: 'Import::Kayako')
 ```
+
 which gives you an output of the current state of the job.
 
 :::
@@ -313,9 +335,11 @@ Run the following commands:
 ```sh
 Setting.set('import_mode', false)
 ```
+
 ```sh
 Setting.set('system_init_done', true)
 ```
+
 ```sh
 Rails.cache.clear
 ```
@@ -348,25 +372,25 @@ Install Znuny4OTRS-Repo:
 
 === OTRS 6
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm
 ```
 
 === OTRS 5
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm
 ```
 
 === OTRS 4
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm
 ```
 
 === OTRS 3
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm
 ```
 
@@ -378,25 +402,25 @@ Install OTRS migration plugin:
 
 === OTRS 6
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm
 ```
 
 === OTRS 5
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm
 ```
 
 === OTRS 4
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm
 ```
 
 === OTRS 3
 
-```
+```plain
 https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm
 ```
 
@@ -406,7 +430,6 @@ https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.op
 In some cases restarting your webserver may help to solve internal server
 errors.
 :::
-
 
 #### Import
 
@@ -424,7 +447,6 @@ Depending on the size of your OTRS installation this may take a while. In such
 a case, consider using the command line version of this feature. This also
 applies if you experience timeouts during the migration.
 
-
 === Via Console
 
 Open console:
@@ -432,14 +454,17 @@ Open console:
 ```sh
 zammad run rails c
 ```
-Set variables (ensure to replace *xxx* with your values):
+
+Set variables (ensure to replace _xxx_ with your values):
 
 ```sh
 Setting.set('import_otrs_endpoint', 'https://xxx/otrs/public.pl?Action=ZammadMigrator')
 ```
+
 ```sh
 Setting.set('import_otrs_endpoint_key', 'xxx')
 ```
+
 ```sh
 Setting.set('import_mode', true)
 ```
@@ -472,9 +497,11 @@ Run the following commands:
 ```sh
 Setting.set('import_mode', false)
 ```
+
 ```sh
 Setting.set('system_init_done', true)
 ```
+
 ```sh
 Rails.cache.clear
 ```
@@ -495,7 +522,6 @@ Additional limitations to the general one:
   reset link on the login page.
 - Objects with cyrillic strings can't be migrated. Make sure to rename them
   before starting the migration.
-
 
 #### Prerequisites
 
@@ -535,35 +561,44 @@ Open console:
 ```sh
 zammad run rails c
 ```
+
 Set variables:
 
 ```sh
 subdomain = '{zendesk url}'
 ```
+
 ```sh
 email = '{zendesk admin email address}'
 ```
+
 ```sh
 token = '{zendesk token}'
 
 ```
 
 Update Zammad settings:
+
 ```sh
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
 ```
+
 ```sh
 Setting.set('import_zendesk_endpoint_username', email)
 ```
+
 ```sh
 Setting.set('import_zendesk_endpoint_key', token)
 ```
+
 ```sh
 Setting.set('import_backend', 'zendesk')
 ```
+
 ```sh
 Setting.set('import_mode', true)
 ```
+
 Check your configuration in a dry run:
 
 ```sh
@@ -575,6 +610,7 @@ Run the migration:
 ```sh
 job = ImportJob.create(name: 'Import::Zendesk')
 ```
+
 ```sh
 AsyncImportJob.perform_later(job)
 ```
@@ -588,6 +624,7 @@ Use
 ```sh
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
+
 which gives you an output of the current state of the job.
 
 :::
@@ -601,9 +638,11 @@ Run the following commands:
 ```sh
 Setting.set('import_mode', false)
 ```
+
 ```sh
 Setting.set('system_init_done', true)
 ```
+
 ```sh
 Rails.cache.clear
 ```

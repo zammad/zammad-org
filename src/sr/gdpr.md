@@ -4,12 +4,12 @@ layout: home
 
 # Политика приватности
 
-### Општа правила о заштити података
+> General Data Protection Regulation
 
 ## Zammad GmbH полиса приватности
 
-Ова полиса приватности описује како се ваше лични подаци прикупљају, користе
-и деле када посећујете https://www.zammad.org („сајт”).
+This privacy policy describes how your personal information is collected,
+used and shared when you visit <https://www.zammad.org> (the "site").
 
 ## Лични подаци које прикупљамо
 
@@ -21,16 +21,16 @@ layout: home
 преусмериле на сајт и информације о томе како интерагујете са сајтом. Ове
 аутоматски прикупљене информације називамо „подаци о уређају”.
 
-## Прикупљамо податке о уређају коришћењем следећих технологија:
+Прикупљамо податке о уређају коришћењем следећих технологија:
 
-* „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и често
-укључују анонимни јединствени идентификатор. За више информација о колачићима и
-како да их искључите, посетите https://www.allaboutcookies.org.
-* „Датотеке дневника” прате операције на сајту, и прикупљају податке укључујући
-вашу IP адресу, врсту претраживача, интернет провајдера, референциране/излазне странице,
-и ознаке датума и времена.
-* „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које снимају
-информације о томе на који начин прегледавате сајт.
+- "Cookies" are data files that are placed on your device or computer and
+often include an anonymous unique identifier. For more information about
+cookies and how to disable cookies visit <https://www.allaboutcookies.org>.
+- "Log files" track actions occurring on the site, and collect data
+including your IP address, browser type, internet service provider,
+referring/exit pages, and date/time stamps.  - "Web beacons", "tags", and
+"pixels" are electronic files used to record information about how you
+browse the site.
 
 ## Употреба Matomo
 
@@ -101,8 +101,8 @@ layout: home
 
 ## Контактирајте нас
 
-За више информација о нашој пракси заштите приватности, уколико имате питања
-или уколико желите да поднесете жалбу, молимо вас да нас контактирате преко
-имејл адресе info@zammad.org или путем поште преко детаља испод:
+For more information about our privacy practices, if you have questions, or
+if you would like to make a complaint, please contact us by e-mail at
+<info@zammad.org> or by mail using the details provided below:
 
 Marienstraße 18, Berlin, BE, 10117, Germany

@@ -37,7 +37,7 @@ of Zammad on your old and new host.
 ## Step 3: Activate Maintenance Mode
 
 This ends all agent and customer sessions. Activate it in Zammad's admin
-interface under *System > Maintenance*.
+interface under _System > Maintenance_.
 
 ## Step 4: Disable Your Communication Channels
 
@@ -46,11 +46,12 @@ loss and inconsistencies.
 
 ## Корак 5: Зауставите и искључите Zammad
 
-Make sure that no data will be changed *before* backing up.
+Make sure that no data will be changed _before_ backing up.
 
 ```sh
 systemctl disable zammad
 ```
+
 ```sh
 systemctl stop zammad
 ```
@@ -118,6 +119,7 @@ Zammad files are distribution and version specific!
 ```sh
 dpkg -r --force-depends zammad
 ```
+
 ```sh
 apt install zammad
 ```
@@ -127,9 +129,11 @@ apt install zammad
 ``` sh
 zypper remove -R zammad
 ```
+
 ```sh
 zypper install zammad
 ```
+
 :::
 
 ::: tip
@@ -146,8 +150,8 @@ root@zammad:/# apt-get update && apt install zammad
   zammad is already the newest version (x.x.x-xxxxxx.xxxxxx.xxx).
   0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 ```
-:::
 
+:::
 
 #### Step 9.2: Clear the Cache
 
@@ -162,9 +166,11 @@ systemctl status zammad
 ```
 
 If Zammad is not running, run:
+
 ```sh
 systemctl start zammad
 ```
+
 :::tip
 Migrated from Zammad SaaS or switching provider?
 
@@ -187,7 +193,7 @@ installation.
 ## Step 11: Re-enable Channels and Deactivate Maintenance Mode
 
 Set the previous deactivated channels back to active if you're sure
-everything was successful. At this point Zammad will start to *change data*!
+everything was successful. At this point Zammad will start to _change data_!
 
 After verifying the functionality of your channels, allow your agents and
 customers to log in again by disabling the maintenance mode.

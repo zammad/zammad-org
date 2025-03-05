@@ -59,17 +59,17 @@ Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`
 `POST`-Anfrage gesendet: `/api/v1/users`
 
 ::: tip
-**Dies hängt von den Berechtigungen ab**
+**This depends on permissions**
 
-Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen festlegen. Stattdessen
-verwendet Zammad die Standardrolle für neue Anmeldungen. Prüfen Sie in Zammads Verwaltungsoberfläche
-unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** ausgewählt ist.
+Agents can't set user passwords, roles or group permission. Instead
+Zammad will apply the default sign up role. Check Zammad's admin interface
+under _Manage > Roles_ and check which is selected as **Default at signup**.
 
-Technisch gesehen ist die Erstellung nicht authentifizierter Benutzer möglich, wenn Sie es schaffen
-das erforderliche CSRF Token bereitzustellen (dies ist nicht Gegenstand dieser
-Dokumentation). Wenn Sie das nicht wollen, sollten Sie
-die Registrierung von Benutzern unter *Einstellungen > Sicherheit > Basis* deaktivieren, indem Sie
-**Neue Benutzer-Konten** auf nein setzen.
+Technically, unauthenticated user creation is possible if you manage
+to provide the required CSRF token (out of scope of this
+documentation). If you don't want that, consider
+disabling user registration under _Settings > Security > Base_ by setting
+**New user accounts** to no.
 :::
 
 ::: tip
@@ -99,11 +99,11 @@ Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`
 `PUT`-Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: tip
-**Dies hängt von den Berechtigungen ab**
+**This depends on permissions**
 
-Agenten können keine Benutzer-Passwörter, Rollen oder Gruppenberechtigungen festlegen. Stattdessen
-wendet Zammad die Standardrolle für die Neunnmeldung an. Prüfen Sie in Zammads Verwaltungsoberfläche
-unter *Verwaltung > Rollen*, welche Rolle als **Aktiv bei Neuanmeldung** ausgewählt ist.
+Agents can't set user passwords, roles or group permission. Instead
+Zammad will apply the default sign up role. Check Zammad's admin interface
+under _Manage > Roles_ and check which is selected as **Default at signup**.
 :::
 
 :::: details
@@ -128,17 +128,17 @@ Erforderliche Berechtigung: `admin.user`
 `DELETE`-Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: danger
-**Dies ist eine dauerhafte Entfernung**
+**This is a permanent removal**
 
-Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig gemacht werden kann. Zammad wird auch
-Referenzen entfernen - also möglicherweise auch Tickets!
+Please note that removing users cannot be undone. Zammad will also
+remove references - thus potentially tickets!
 
-Das Entfernen von Benutzern mit Referenzen in z.B. Aktivitäts-Verläufen ist nicht möglich
-über API - dies wird angezeigt durch
-`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen"`. Dies ist *kein* Fehler.
+Removing users with references in e.g. activity streams is not possible
+via API - this will be indicated by
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
-Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
-mehr Kontrolle (Admin-Interface unter *System > Datenschutz*).
+Consider using Zammad's Data Privacy feature via UI for
+more control instead (admin interface under _System > Data privacy_).
 :::
 
 ::: details Show response

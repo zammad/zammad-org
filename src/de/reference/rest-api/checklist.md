@@ -12,8 +12,8 @@ Zammad hat verschiedene Endpunkte für Checklisten:
 - [Checklisten-Vorlagen](#checklisten-vorlagen)
 
 :::info
-*Checklisten-Vorlagen* enthalten ihre Elemente, während die *Standard
-Checkliste* einen eigenen Endpunkt für Elemente hat.
+_Checklist templates_ include their items whereas the _standard
+checklist_ has a separate item endpoint.
 :::
 
 ## Checklisten

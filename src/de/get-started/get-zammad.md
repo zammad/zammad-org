@@ -36,4 +36,3 @@ sehen Sie, welche Variante Ihren Bedürfnissen entspricht.
 Wenn Sie Zammad selbst hosten und Support wünschen, nimmt unser
 Vertriebsteam gerne Kontakt mit Ihnen auf. Hinterlassen Sie einfach eine
 [Nachricht](https://zammad.com/de/company/contact){target=_blank}.
-

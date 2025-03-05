@@ -16,9 +16,9 @@ TODO
 
 **Зашто?**
 
-Могуће је аутоматски затворити прозор тикета у бочној траци навигације.
-Зависи од ваших подешавања, али можете уштедети клик након освежавања или
-освежавања тикета са стањем *затворено*.
+It is possible to automatically close a ticket tab in the navigation
+sidebar.  It depends on your preferences, but you can save a click after
+updating or updating a ticket to _closed_ state.
 
 **Како?**
 
@@ -32,8 +32,8 @@ TODO
 - **Затвори прозор**: Ова опција затвара прозор по сваком освежавању
   тикета. Може бити добра опција ако обрађујете пуно тикета и/или тикети
   захтевају пуно интеракције.
-- **Затвори прозор по затварању тикета**: Ова опција затвара прозор само
-  када је тикет освежен и стање је постављено на *затворено*.
+- **Close tab on ticket close**: This option only closes the tab when the
+  ticket is updated and the state is set to _closed_.
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab**
@@ -178,15 +178,13 @@ Zammad администратор га је искључио. Списак за�
   списак` или на основу шаблона коришћењем `Додај по шаблону` (уколико не
   видите дугме за шаблон, не постоје).
 - Уређивање постојећег списка:
-    - Промените назив кликом на наслов или коришћењем падајућег менија `︙` у
-      заглављу траке.
-    - Додајте задатке на списак кликом на дугме `+` .
-    - Промените текст задатка, или кликом на њега или коришћењем падајућег
-      менија `︙` поред ставке.
-    - Кликом на дугме `Измени редослед` можете превући и пустити ставке за
-      жељени распоред.
-- Обришите комплетан списак задатака коришћењем падајућег менија `︙` у
-  заглављу траке.
+  - Rename it by clicking on the title or using the `︙` menu in the sidebar
+      header.
+  - Add checklist items by clicking the `+` button.
+  - Change the text of the checklist items, either by just clicking on it
+      or using the `︙` menu next to the item.
+  - `Reorder` the items by clicking this button and drag & drop the items.
+- Delete the complete checklist by using the `︙` menu in the sidebar header.
 
 Постоје две функције које нису директно видљиве:
 
@@ -205,7 +203,6 @@ Zammad администратор га је искључио. Списак за�
   tickets in your checklist, only those which are closed (with a green
   circle) are considered as completed.
 
-
 ## Ticket Templates
 
 **Зашто?**
@@ -219,7 +216,6 @@ template.
 In the ticket create screen, you can find an `Apply Template ^` button in
 the footer bar, if a template is available. Select the template you want to
 apply and apply changes if desired.
-
 
 ## Заједнички нацрти
 
@@ -277,7 +273,6 @@ Depending on the additional icon and if the avatar icon is faded, it means:
 - Another agent is currently actively working on this ticket (not faded
   avatar icon with a pencil icon, see right avatar in screenshot)
 
-
 ## Bulk Actions
 
 TODO after overview bulk action implementation
@@ -318,7 +313,6 @@ which you executed the merge still exists with the following changes:
 - Сви чланци су замењени ознаком „спојено”
 - Стање је промењено у „спојено”
 - The ticket is linked to its "parent" ticket
-
 
 ## Split Ticket
 

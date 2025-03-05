@@ -12,14 +12,15 @@ beschrieben.
 
 ::: warning
 
-* Die Authentifizierung an diesem Endpunkt funktioniert grundlegend anders als
-  der Rest der API.
-* API-Clients arbeiten *nicht* mit den CTI-Endpunkten, es sei denn, dies wird ausdrücklich
-  vom Client-Anbieter angegeben!
-* Die CTI-Endpunkte sind nur für PBX-Systeme relevant.
+- Authentication on this endpoint works fundamentally different compared to
+  the rest of the API.
+- API clients _do not_ work with the CTI endpoints unless explicitly stated
+  by the client vendor!
+- The CTI endpoints are relevant for PBX systems only.
 :::
 
 ## Features
+
 Hier ist eine kleine, komprimierte Liste der Möglichkeiten, die diese CTI
 API bietet.
 
@@ -40,19 +41,20 @@ ein eindeutiges Token, das zur Authentifizierung dient. Achten Sie darauf,
 dass Sie die URL dieses Endpunkts sicher aufbewahren.
 
 ::: info
-Die generische CTI-Konfiguration und den richtigen Endpunkt finden Sie in Ihrem
-Zammad in der Verwaltungsoberfläche unter *System > Integrationen > CTI (generic)*.
+Generic CTI configuration and the correct endpoint can be found in your
+Zammad in the admin interface under _System > Integrations > CTI (generic)_.
 
-Bitte beachten Sie auch die dort aufgeführten Anforderungen und Einschränkungen.
-Alle Optionen, die Rückgaben erfordern (z.B. Blockieren, Manipulation von ausgehenden
-Anrufer IDs) sind abhängig von Konfigurationen innerhalb der Zammad CTI Integration
-Seite.
+Please also note the there listed requirements and limitations.
+All options that require returns (e.g. blocking, manipulating outgoing
+caller IDs) rely on configurations within the Zammad CTI integration
+page.
 :::
 
 ::: tip
-Es gibt zwei Möglichkeiten, wie man die relevanten Daten an Zammad "posten" (`POST`) kann:
-- JSON (empfohlen)
-- Form-Daten
+There are two options how to `POST` the relevant data to Zammad:
+
+- JSON (recommended)
+- Form-data
 :::
 
 ### Ereignisse
@@ -115,7 +117,6 @@ von externer Seite an Sie sind `in`.
   abhängig von der von Ihnen gewählten Aufrufmethode. Wenn die Richtung `out` ist,
   ist dies der Name der anrufenden Person(en). Wenn die Richtung `in` ist, ist dies
   der Name der angerufenen Person(en).
-
 
 `queue` <Badge type="info" text="support"/>
 : Ein optionaler Name der Warteschlange; diese Option ist für den Anruferprotokollfilter relevant.
@@ -265,12 +266,11 @@ Verfügbare `Attribute` und <Badge type="info" text="Beispiel-Daten" />:
   bestehenden Anrufs mit folgenden Aktionen (z.B. Annehmen oder Auflegen).
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-: Zammad sucht nach einem Benutzer mit einem entsprechenden Wert. Die folgenden Attribute
-  werden in der angegebenen Reihenfolge ausgewertet:
-  - `user.phone`
-  - `user.login`
-  - `user.if`
-   Dieser Wert ist optional.
+:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+      - `user.phone`
+      - `user.login`
+      - `user.if`
+    This value is optional.
 
 `user` <Badge type="info" text="John Doe" />:
 : Der echte Name des/der betreffenden Benutzer(s). Sie müssen die Parameter eventuell im Array-Stil (`[]`) angeben,
@@ -382,24 +382,22 @@ Beispiel curl Befehl:
   bestehenden Anrufs mit folgenden Aktionen (z.B. Annehmen oder Auflegen).
 
 `cause`
-: Hier wird der Grund für die Beendigung angegeben. Zammad wertet den Grund aus und
-  zeigt z.B. verpasste Anrufe entsprechend im Anruferprotokoll an.
-  Mögliche Werte sind:
-  - `normalClearing` (eine der Parteien hat aufgelegt, nachdem das Gespräch zustande gekommen ist)
-  - `busy` (der angerufene Teilnehmer war besetzt)
-  - `cancel` (der Anrufer hat aufgelegt, bevor der angerufene Teilnehmer abgenommen hat)
-  - `noAnswer` (der angerufene Teilnehmer hat den Anruf abgelehnt, z.B. durch eine DND-Einstellung)
-  - `congestion` (der angerufene Teilnehmer konnte nicht erreicht werden)
-  - `notFound` (die angerufene Nummer existiert nicht oder der angerufene Teilnehmer ist offline)
-  - `forwarded` (der Anruf wurde an einen anderen Teilnehmer weitergeleitet)
+:   This defines the reason of the hangup. Zammad evaluates the cause and indicates
+    e.g. missed calls accordingly in the caller log. Possible values are:
+    - `normalClearing` (one of the parties hung up after the call was established)
+    - `busy` (the called party was busy)
+    - `cancel` (the caller hung up before the called party picked up)
+    - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
+    - `congestion` (the called party could not be reached)
+    - `notFound` (the called number does not exist or called party is offline)
+    - `forwarded` (the call was forwarded to a different party)
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-: Zammad sucht nach einem Benutzer mit einem entsprechenden Wert. Die folgenden Attribute
-  werden in der angegebenen Reihenfolge ausgewertet:
-  - `user.phone`
-  - `user.login`
-  - `user.if`
-   Dieser Wert ist optional.
+:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+    - `user.phone`
+    - `user.login`
+    - `user.if`
+    This value is optional.
 
 ### Ausgehend
 

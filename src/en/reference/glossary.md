@@ -352,11 +352,11 @@ Role
 : Every user has an assigned role. By default there are three roles:
   admin, agent, and customer.
 
-  *Admins* have the most rights: they can define roles, permissions,
+  _Admins_ have the most rights: they can define roles, permissions,
   and settings for the entire team and instance.
-  *Agents* can view and edit tickets, but not change any settings other than
+  _Agents_ can view and edit tickets, but not change any settings other than
   those of their own profiles.
-  *Customers* can view their ticket's processing status in their
+  _Customers_ can view their ticket's processing status in their
   customer interface.
 
   You can even add new roles to your Zammad.

@@ -21,6 +21,7 @@ docker front ends like
 - Радно Docker Compose окружење
 - Најмање 4 GB RAM за контејнере
 - Adjust your host's settings to run Elasticsearch properly:
+
     ```sh
     sysctl -w vm.max_map_count=262144
     ```
@@ -33,16 +34,19 @@ installation instructions, check out [Portainer's
 documentation](https://docs.portainer.io/){target=_blank}.
 
 ### Корак 1: Додавање stack-а
+
 У графичком интерфејсу Portainer-а (нпр. `https://yourdomain.tld:9443`),
 идите на циљно окружење, одаберите **Stacks** и кликните на `Add stack` као
 на снимку екрана испод.
 
 ### Корак 2: Инсталација из репозиторија
-Пребаците се на **Repository** метод инсталације и унесите податке испод: -
-**Name**: унесите жељено име stack-а - **Repository URL**:
-`https://github.com/zammad/zammad-docker-compose` - **Repository
-reference**: `refs/heads/master` - **Compose path**: `docker-compose.yml`
-(подразумевано)
+
+Switch to **Repository** build method and provide the information below:
+
+- **Name**: enter a desired name of the stack
+- **Repository URL**: `https://github.com/zammad/zammad-docker-compose`
+- **Repository reference**: `refs/heads/master`
+- **Compose path**: `docker-compose.yml` (default)
 
 Optional: if you need to provide environment variables, you can enter them
 in the **Environment variable** section or even upload a .env file. See [env
@@ -50,6 +54,7 @@ template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)
 as an example.
 
 ### Корак 3: Покретање stack-а
+
 Након што је stack спреман, можете приступити Zammad-у преко подешеног
 Docker хоста и порта, нпр. `http://localhost:8080/`.
 
@@ -66,6 +71,7 @@ Docker хоста и порта, нпр. `http://localhost:8080/`.
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
+
 Make sure to run `git pull` frequently to fetch updates. Alternatively, you
 can download the files from the [releases
 page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
@@ -87,9 +93,11 @@ Zammad се подразумевано покреће на порту број `
 :::
 
 ### Корак 3: Покретање stack-а
+
 ```sh
 cd zammad-docker-compose
 ```
+
 ```sh
 docker compose up -d
 ```
@@ -114,14 +122,19 @@ Docker извршна скрипта поставља променљиве ок�
 `rake` конзолних команди је неопходно одрадити на један од следећих начина:
 
 Директно извршавање одговарајуће команде:
+
 ```sh
 docker compose run --rm zammad-railsserver rails r '...ваша rails команда овде...'
 ```
+
 Извршавање интерактивне rails конзоле за ручни унос команди:
+
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
+
 Преко „docker exec”:
+
 ```sh
 docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...ваша rails команда овде...'
 ```

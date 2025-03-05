@@ -18,19 +18,19 @@ möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 
 - [Ruby
   Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  *(offiziell)*
+  _(official)_
 - [PHP
   Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  *(offiziell)*
+  _(official)_
 - [Python Client](https://pypi.org/project/zammad-py/){target=_blank}
-  *(Third-Party)*
+  _(Third-Party)_
 - [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
-  *(Third-Party)*
+  _(third-Party)_
 - [Android
   API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
-  *(Third-Party)*
+  _(third-Party)_
 - [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  *(Third-Party; nur API-Client, keine "gebrauchsfertige" Anwendung)*
+  _(third-Party; API client only, no "ready to use" app)_
 
 ## Authentifizierung
 
@@ -44,7 +44,7 @@ angegeben werden.  Diese Authentifizierungsmethode kann deaktiviert werden
 und ist möglicherweise in Ihrem System nicht verfügbar.
 
 ```sh
-$ curl -u {username}:{password} https://{fqdn}/{endpoint}
+curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
 :::warning
@@ -60,16 +60,17 @@ erstellen.  Diese Authentifizierungsmethode kann deaktiviert werden und ist
 möglicherweise in Ihrem System nicht verfügbar.
 
 ```sh
-$ curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
+curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
 ### OAuth2 (Token-Zugang)
+
 Das Token muss als HTTP Header in Ihren Aufrufen angegeben werden.  Dies
 ermöglicht es Anwendungen von Drittanbietern, sich gegenüber Zammad zu
 authentifizieren.
 
 ```sh
-$ curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
+curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
 ## Endpunkte und Beispieldaten
@@ -195,7 +196,6 @@ einer `total_count` genannten Gesamtzahl der Suchergebnisse.
 <<< @/fixtures/rest-api/intro/get-full-search.json
 :::
 
-
 #### Only Total Count Parameter
 
 Mit dem Parameter `only_total_count` wird nur die Anzahl der Suchergebnisse
@@ -268,10 +268,12 @@ Zammad ermöglicht es Ihnen, Ihre Suchergebnisse bei Bedarf nach Feldern zu
 sortieren.
 
 ### `sort_by`
+
 Fügen Sie `?sort_by={Zeilenname}` an Ihre Abfrage an, um nach einer
 bestimmten Zeile zu sortieren, die im Suchergebnis erscheint.
 
 ### `order_by`
+
 Fügen Sie `?order_by={Richtung}` an Ihre Abfrage an, um zwischen
 aufsteigender und absteigender Reihenfolge zu wechseln.
 

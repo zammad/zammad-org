@@ -1,5 +1,4 @@
 ---
-title: Webserver Configuration
 order: 3
 ---
 
@@ -141,6 +140,7 @@ config. Search for ``ssl_dhparam``.
 openssl dhparam -out <path>/dhparam.pem 4096
 
 ```
+
 #### Step 3 - Adjust HTTPS Configuration
 
 Our default configuration aims for a broad support of end user devices. This
@@ -166,6 +166,7 @@ users have to adjust a config file because this module is not available there.
 ```sh
 a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
+
 ```sh
 systemctl restart apache2
 ```
@@ -173,13 +174,15 @@ systemctl restart apache2
 :::details Config for CentOS
 Add/uncomment the appropriate ``LoadModule`` statements in your Apache config
 in ``/etc/httpd/conf/httpd.conf``:
-```
+
+```apache
 LoadModule headers_module modules/mod_headers.so
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_html_module modules/mod_proxy_html.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
 LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so
 ```
+
 Restart your webserver after saving the configuration.
 
 :::
@@ -235,12 +238,14 @@ This step mostly depends on your selected folders and should only affect
 === Ubuntu, Debian, OpenSUSE
 
 Make sure the following line is present in your Apache config
-(``/etc/apache2/apache2.conf``):
-```
+(`/etc/apache2/apache2.conf`):
+
+```apache
 IncludeOptional sites-enabled/*.conf
 ```
 
 Enable it:
+
 ```sh
 a2ensite zammad
 ```
@@ -248,12 +253,14 @@ a2ensite zammad
 === CentOS
 
 Make sure the following line is present in your Apache config
-(``/etc/httpd/conf/httpd.conf``):
-```
+(`/etc/httpd/conf/httpd.conf`):
+
+```apache
 IncludeOptional sites-enabled/*.conf
 ```
 
 Enable it:
+
 ```sh
 ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 ```
@@ -267,4 +274,3 @@ changes.
 
 After that, you should be greeted by our getting started wizard.
 Go on with the [first steps in Zammad](/en/tutorials/first-steps).
-

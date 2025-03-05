@@ -17,7 +17,7 @@ TODO
 
 It is possible to automatically close a ticket tab in the navigation sidebar.
 It depends on your preferences, but you can save a click after updating or
-updating a ticket to *closed* state.
+updating a ticket to _closed_ state.
 
 **How?**
 
@@ -31,7 +31,7 @@ labeled as the other options below). You have different options:
   be a good option if you have to deal with many tickets and/or the tickets
   require many interactions.
 - **Close tab on ticket close**: This option only closes the tab when the ticket
-  is updated and the state is set to *closed*.
+  is updated and the state is set to _closed_.
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab**
@@ -170,12 +170,12 @@ In the checklist sidebar, you can:
   `Add Empty Checklist` or from a template by using `Add From a Template` (if
   you don't see the template button, there is none).
 - Edit the current checklist:
-    - Rename it by clicking on the title or using the `︙` menu in the sidebar
+  - Rename it by clicking on the title or using the `︙` menu in the sidebar
       header.
-    - Add checklist items by clicking the `+` button.
-    - Change the text of the checklist items, either by just clicking on it
+  - Add checklist items by clicking the `+` button.
+  - Change the text of the checklist items, either by just clicking on it
       or using the `︙` menu next to the item.
-    - `Reorder` the items by clicking this button and drag & drop the items.
+  - `Reorder` the items by clicking this button and drag & drop the items.
 - Delete the complete checklist by using the `︙` menu in the sidebar header.
 
 There are two features, which are not directly visible:
@@ -195,7 +195,6 @@ There are two features, which are not directly visible:
   in your checklist, only those which are closed (with a green circle) are
   considered as completed.
 
-
 ## Ticket Templates
 
 **Why?**
@@ -208,7 +207,6 @@ more saves you time. This requires your admin to create a ticket template.
 In the ticket create screen, you can find an `Apply Template ^` button in the
 footer bar, if a template is available. Select the template you want to apply
 and apply changes if desired.
-
 
 ## Shared Drafts
 
@@ -262,7 +260,6 @@ Depending on the additional icon and if the avatar icon is faded, it means:
 - Another agent is currently actively working on this ticket (not faded avatar
   icon with a pencil icon, see right avatar in screenshot)
 
-
 ## Bulk Actions
 
 TODO after overview bulk action implementation
@@ -303,7 +300,6 @@ you executed the merge still exists with the following changes:
 - The articles have been replaced by a "merged" label
 - The state has changed to "merged"
 - The ticket is linked to its "parent" ticket
-
 
 ## Split Ticket
 

@@ -9,16 +9,16 @@ order: 1
 репозиторија на GitHub-у форкује и направи pull request са вашим изменама
 (осим за преводе, погледајте испод за детаље). 🚀
 
-Можете допринети:
- * [изворном коду](contribute#zammad-source-code)
- * [документацији](contribute#documentation)
- * [преводу](contribute#translation)
+You can contribute to:
+
+- [Source-code](contribute#zammad-source-code)
+- [Documentation](contribute#documentation)
+- [Translation](contribute#translation)
 
 Погледајте детаље о томе како да допринесете у наставку.
 
 Све репозиторије можете пронаћи на
 [GitHub](https://github.com/zammad){target=_blank}-у.
-
 
 ## Zammad изворни кoд
 
@@ -37,40 +37,39 @@ order: 1
 
 #### `develop`
 
-* Ово је тренутно (необјављено) развојно стање следећег већег издања
+- Ово је тренутно (необјављено) развојно стање следећег већег издања
   (постаће нови `stable` огранак).
-* Не користите у продукцији!
-* Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
+- Не користите у продукцији!
+- Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
   нашу [безбедносну
   полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable`
 
-* Ово је тренутно стабилно издање, нпр. Zammad 5.2.
-* Користите овај огранак за инсталације у продукцији.
-* Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
+- Ово је тренутно стабилно издање, нпр. Zammad 5.2.
+- Користите овај огранак за инсталације у продукцији.
+- Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
   нашу [безбедносну
   полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
 
 #### `stable-x.y`
 
-* Ово су огранци старих Zammad издања као `stable-5.1` за Zammad 5.1.
-* Нису подржане исправке грешака и сигурносних пропуста.
+- Ово су огранци старих Zammad издања као `stable-5.1` за Zammad 5.1.
+- Нису подржане исправке грешака и сигурносних пропуста.
 
 ## Документација
 
 Да ли желите да допринесете Zammad документацији?
 
-Отворите нови GitHub pull request на https://github.com/zammad/zammad-org са
-вашим изменама и обавезно испратите предуслове и инструкције у README
-датотеци репозиторија.
+Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
+with your changes and make sure to follow the prerequisites and instructions
+in the repo's README.
 
-Документација коју читате је доступна под next.zammad.org и zammad.org и
-направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
-формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
-које су под `/src/en/` директоријумом. Преводи се обрађују преко Weblate
-апликације и преписаће све измене направљене под директоријумима специфичних
-језика (осим `/src/en/`).
+The documentation you are reading is available on next.zammad.org and
+zammad.org and is built via Vitepress. The source files are written in
+Markdown.  Make sure to change the English source files only which are
+placed under `/src/en/`. The translation is done via Weblate and will
+overwrite any changes in the language specific folders (except `/src/en/`).
 
 ## Превод
 
@@ -92,22 +91,22 @@ Weblate функције и да дубље уђете у проблематик
 
 ### Основе
 
-Превод **Zammad-а** и **документације** су раздвојени
-у различите пројекте у Weblate апликацији. Преглед пројеката
-можете пронаћи кликом на мени при врху под
-„*Projects > Browse all projects*”:
+The translation of **Zammad** and the translation of the **documentation**
+are split into different projects in Weblate. When you click in the top menu under
+"_Projects > Browse all projects_", you can find the overview of the
+projects:
 
 ![Снимак екрана који приказује пројекте превода у Weblate
 менију](/screenshots/weblate-overview-docs.png)
 
 Структура пројекта превода у Weblate-у:
 
- * Документација
-    * Нова документација на next.zammad.org
- * Zammad
-    * Zammad (`develop`, развојна верзија)
-    * Zammad (`stable` верзија)
-    * *Додатне верзије које овде нису релевантне*
+- Документација
+  - Нова документација на next.zammad.org
+- Zammad
+  - Zammad (`develop`, развојна верзија)
+  - Zammad (`stable` верзија)
+  - _Some more which aren't relevant here_
 
 ::: tip
 
@@ -122,20 +121,20 @@ Weblate функције и да дубље уђете у проблематик
 ови прегледи прикажу ниску стопу превода, услед броја активних преводиоца за
 различите језике.
 
-Овде можете одабрати једну од „компонената”, које су мање или више идентичне
-различитим верзијама. По одабиру једне, можете видети статус
-превода по различитим језицима, по узору на
-следећи снимак екрана са примером из *Documentation > User
-Documentation (latest)*:
+Here you can select one of the "components", which is more or less the same as
+different versions. After selecting one of them, you can see the status of
+translation for the different languages, as you can see in the
+following screenshot with an example from _Documentation > User
+Documentation (latest)_:
 
-![Снимак екрана који приказује статус первода по различитим језицима за
-корисничку документацију](/screenshots/weblate-translations-user-docs.png)
+![Screenshot showing translation status of different languages for the user
+documentation](/screenshots/weblate-translations-user-docs.png)
 
 ### Превођење
 
-По одабиру вашег језика на који желите да преводите, добра почетна тачка је
-одабир „*Untranslated strings*” (или слично значење у вашем језику, у
-зависности шта сте подесили у свом профилу).
+After selecting your language you want to translate to, a good starting
+point is to select "_Untranslated strings_" (or the same meaning in your
+language, depending on what you have set in your profile).
 
 Након овога, коначно ћете добити први непреведен низ текста у горњем пољу, и
 можете започети са преводом. Прво, кратак преглед корисничког интерфејса
@@ -145,19 +144,20 @@ Weblate апликације:
 Weblate-у](/screenshots/weblate-ui.png)
 
 1. **Путања навигације** на тренутни пројекат и језик превода
-2. Сам **Translation** одељак. Можете видети изворни низ текста („English
-   (United States)”*) при врху и поље за унос вашег превода (*„French”* у
-   овом примеру).
+2. **Translation area** itself. You can find the source string (_"English
+   (United States)"_) at the top and the field for your translation
+   (_"French"_ in this example).
 3. **Glossary**: овде можете пронаћи уобичајене у контексту
    Zammad-а. Термини из речника ће бити наглашени у изворном тексту такође.
 4. **Неке корисне картице**:
-    * **Nearby strings**: вам приказује контекст речи или низа текста
-    * **Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге
-      од DeepL сервиса и предлоге на основу сличног текста, који је већ
-      преведен.  Користите дугме „*Clone to translation*” да убаците текст у
-      поље превода и снимите измене. Користите дугме „*Accept*” да
-      прихватите предложен предлог и одмах пређене на следећи низ текста.
-    * **Other languages**: овде можете добити преглед који језици већ садрже
+    - **Nearby strings**: вам приказује контекст речи или низа текста
+    - **Automatic suggestions**: here you can find automatic suggestions
+      from DeepL and suggestions from similar strings, which are already
+      translated.  Use the "_Clone to translation_" button to insert it in
+      the translation field to apply changes. Use the "_Accept_" button to
+      accept the suggested translation and automatically switch to the next
+      string.
+    - **Other languages**: овде можете добити преглед који језици већ садрже
       превод и саме преводе (може бити корисно за сличне језике).
 
 ### Решавање проблема
@@ -186,5 +186,3 @@ Weblate-у](/screenshots/weblate-ui.png)
     Ознака текста (нпр. подебљано, курзив=. Алтернатива: \*пример текста\*.
     Ови низови текста се могу преводити, али ознаке (нпр. једна или
     више \*) би требало прилагодити правом значењу.
-
-

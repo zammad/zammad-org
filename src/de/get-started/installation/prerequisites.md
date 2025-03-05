@@ -35,7 +35,6 @@ jeweiligen Installationsanweisungen enthalten:
 - [Kubernetes](kubernetes)
 - [Packet](package)
 
-
 ## Anforderungen an Clients
 
 Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser

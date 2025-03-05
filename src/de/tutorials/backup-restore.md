@@ -46,9 +46,8 @@ Gehen Sie wie folgt vor, um eine Sicherung auf Basis einer
 Standardkonfiguration durchzuführen:
 
 1. Kopieren Sie die Datei `config.dist` nach `config`.
-1. Ändern Sie bei Bedarf die Standardparameter in der
-   Konfigurationsdatei. Siehe [Backup-Konfiguration](#backup-konfiguration)
-   für Details.
+1. Change default parameters in the config file if needed. See [Backup
+   Configuration](#backup-configuration) for details.
 1. Zammad stoppen `systemctl stop zammad`
 1. Ausführen von `/opt/zammad/contrib/backup/zammad_backup.sh` (als `root`
    oder `zammad` Benutzer)
@@ -68,13 +67,13 @@ weiter unten.
   enthält aus Sicherheitsgründen eine 60-minütige Karenzzeit (z.B. 10 Tage plus 1 Stunde).
   Alte Backups werden vor der Erstellung eines neuen Backups entfernt.
 
-  Beispiele:
-   - `1` behält Backups der letzten 25 Stunden
-   - `-1` entfernt alle vorhandenen Sicherungen (außer der neuen)
+  Examples:
+    - `1` will keep backups of the last 25 hours
+    - `-1` will remove all available backups (except the new one)
 
 `FULL_FS_DUMP` <Badge type="info" text="yes"/>
-: - `yes`: die Sicherung umfasst auch Anwendungsdateien.
-  - `no`: das Backup enthält nur Benutzerdaten.
+:   - `yes`: the backup includes also application files.
+    - `no`: the backup includes only user data.
 
   In jedem Fall umfasst sie die Datenbank von Zammad und die Anhänge, wenn Sie
   diese im Dateisystem gespeichert haben. Wenn Sie unsicher sind, setzen Sie dies auf nein.
@@ -94,9 +93,9 @@ weiter unten.
 Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit
 der Wiederherstellung Ihrer Daten beginnen.
 
-- In diesem Abschnitt geht es **nicht** um die **Migration von einem Host zu
-  einem anderen**. Sie finden Anweisungen zu diesem Thema im [nächsten
-  Abschnitt](#migration-zu-neuem-host).
+- This section is **not** about **migrating from one host to another**. You
+  can find instructions about this topic in the [next
+  section](migrate-host).
 - Diese Anleitung setzt eine vollständig installierte Zammad-Version voraus
 - Außerdem wird erwartet, dass Sie Zammad auf demselben Host und derselben
   Zammad-Version wiederherstellen
@@ -123,14 +122,15 @@ verwenden, berechtigt ist, die Sicherungsdateien zu lesen und in
 
 Die Zammad-Sicherung besteht aus zwei Dateien. Sie sind wie folgt benannt:
 
-```
+```plain
 <timestamp>_zammad_db.psql.gz
 <timestamp>_zammad_files.tar.gz
 ```
+
 Es gibt auch zwei Symlinks in Ihrem Backup-Verzeichnis, die auf das zuletzt
 erstellte Backup verweisen:
 
-```
+```plain
 latest_zammad_db.psql.gz
 latest_zammad_files.tar.gz
 ```
@@ -146,41 +146,45 @@ Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe
 
 ### Die Wiederherstellung ausführen
 
-Beachten Sie, dass das Wiederherstellen von Sicherungskopien Ihre `database.yml` überschreiben kann. Sie können
-dies überprüfen, indem Sie in die Datei `[...]_zammad_files.tar.gz` schauen. Wenn es
-die Datei `database.yml` im Verzeichnis *config > database* gibt, stellen Sie sicher, dass Sie die
-Originalversion **vor dem Wiederherstellen** sichern.
+Be aware that restoring backups can overwrite your `database.yml`. You can
+check that by looking into the `[...]_zammad_files.tar.gz` file. If there
+is a `database.yml` in the directory _config > database_, ensure to save the
+original version **before restoring**.
 
 Die Wiederherstellung kann auf zwei Arten erfolgen, je nachdem, wie
 interaktiv Sie vorgehen möchten:
 
 ::::tabs
 
-=== Interaktive Wiederherstellung (empfohlen)
-Führen Sie das Skript aus:
+=== Interactive restore (recommended)
+Run the script:
+
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh
 ```
-Geben Sie dem Skript die angeforderten Informationen und warten Sie, bis die Wiederherstellung
-beendet ist. Abhängig von der Größe des Backups und der Leistung des Rechners
-kann dies einige Zeit dauern.
 
-=== Nicht-interaktive Wiederherstellung
+Provide the requested information to the script and wait for the restore
+process to finish. Depending on the size of your backup and host performance,
+this may take some time.
+
+=== Non-interactive restore
 
 :::warning
 Verwenden Sie die folgende Option nur, wenn Sie wissen, was Sie tun! Der folgende
 Befehl überschreibt vorhandene Daten ohne weitere Rückfragen!
 :::
-Beim Aufruf mit einem Zeitstempel-Argument (das mit dem Dateinamen des Backups übereinstimmt),
-beginnt Zammad sofort mit der Wiederherstellung des angegebenen Backups.
+When called with a timestamp argument (matching the backups filename),
+Zammad will proceed immediately to restoring the specified backup.
+
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh 20170507121848
 ```
+
 ::::
 
 Das Ergebnis sollte wie folgt aussehen:
 
-```
+```ansi
 # Zammad restore started - Fri Jan 21 17:54:13 CET 2022!
 
 The restore will delete your current database!
@@ -290,16 +294,17 @@ Bitte konsultieren Sie dazu die offizielle
 [PostgreSQL-Dokumentation](https://www.postgresql.org/docs/){target=_blank},
 da dies nicht Gegenstand dieser Dokumentation ist.
 
-#### WARNING: You don't Seem to Have Any Attachments in the File System!
+#### WARNING: You don't Seem to Have Any Attachments in the File System
+
 Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem
 speichert.
 
 Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt
 wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann.
 
-Prüfen und passen Sie Ihre
-Speichereinstellungen [über die Konsole](/de/reference/console#speicherung-anhänge)
-oder in der Verwaltungsoberfläche von Zammad unter *Einstellungen > System > Speicherung* an.
+Check and adjust your
+storage settings [via console](/en/reference/console#storage-provider-setting)
+or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Hilfsskript
 

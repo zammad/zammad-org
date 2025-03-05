@@ -34,4 +34,3 @@ Zammad можете чак и сами да хостујете. Погледај
 If you are a self-hosted user and want to have support at hand, our sales
 team is happy to get in touch with you. Just leave them [a
 message](https://zammad.com/en/company/contact){target=_blank}.
-

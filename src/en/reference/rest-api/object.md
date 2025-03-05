@@ -233,7 +233,7 @@ after executing the database migrations).
 
 ::: info
 Ensure to provide `data_option`. Zammad is very picky if you leave out
-this attribute. Please note that changing the object type *after*
+this attribute. Please note that changing the object type _after_
 creation is not possible.
 :::
 
@@ -262,7 +262,7 @@ Required permission: `admin.object`
 
 ::: warning
 After executing the database migrations, a restart of Zammad is
-*mandatory*. If not deactivated via
+_mandatory_. If not deactivated via
 [auto shutdown setting](/en/reference/console#auto-shutdown-setting),
 Zammad automatically restarts - expect a short downtime.
 :::

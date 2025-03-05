@@ -33,6 +33,7 @@ service](https://zammad.com/en/pricing){target=_blank}.
 ```sh
 sudo apt install curl apt-transport-https gnupg
 ```
+
 === Debian
 
 ```sh
@@ -42,9 +43,11 @@ sudo apt install curl apt-transport-https gnupg
 === OpenSUSE/SLES
 
 Only SLES - Not required for OpenSUSE:
+
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
+
 ```sh
 sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
@@ -54,6 +57,7 @@ sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(u
 ```sh
 sudo yum install wget epel-release
 ```
+
 :::
 ::::
 
@@ -64,80 +68,88 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
 
-```bash
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo apt install locales
 ```
-```bash
+
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
 
-```bash
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo apt install locales
 ```
-```bash
+
+```sh
 sudo locale-gen en_US.UTF-8
 ```
-```bash
+
+```sh
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
-```bash
+```sh
 localectl status | grep LANG
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
 
-```bash
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
-=== CentOS/RHEL
-Излистајте ваша тренутна locale подешавања:
+===CentOS/RHEL
+List your current locale settings:
 
-```bash
+```sh
 locale | grep "LANG="
 ```
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
 
-```bash
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
@@ -162,10 +174,12 @@ Packager.io можда није доступан из окружења са ис
 
 === Ubuntu
 Install repository key:
+
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
+
 Ubuntu 20.04
 
 ```sh
@@ -186,12 +200,15 @@ Ubuntu 24.04
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
+
 === Debian
 Install repository key:
+
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
    gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
+
 Debian 11
 
 ```sh
@@ -205,22 +222,28 @@ Debian 12
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
    sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
+
 === OpenSUSE/SLES
 Install repository key:
+
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
+
 OpenSUSE 15.x / SLES15
 
 ```sh
 sudo wget -O /etc/zypp/repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
+
 ===CentOS/RHEL
 Install repository key:
+
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
+
 CentOS 8 / RHEL 8
 
 ```sh
@@ -234,6 +257,7 @@ CentOS 9 / RHEL 9
 sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
+
 :::
 
 ### Инсталација Zammad-а
@@ -245,25 +269,33 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```sh
 sudo apt update
 ```
+
 ```sh
 sudo apt install zammad
 ```
+
 === Debian
 
 ```sh
 sudo apt update
 ```
+
 ```sh
 sudo apt install zammad
 ```
+
 === OpenSUSE/SLES
+
 ```sh
 sudo zypper ref
 ```
+
 ```sh
 sudo zypper install zammad
 ```
+
 ===CentOS/RHEL
+
 ```sh
 sudo yum install zammad
 ```
@@ -273,25 +305,33 @@ Due to an issue with packager.io, you'll need to correct file permissions for pu
 ```sh
 sudo chmod -R 755 /opt/zammad/public/
 ```
+
 :::
 
 ### Управљање Zammad сервисима
 
 Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за
 основним `zammad` процесом:
+
 ```sh
 systemctl (status|start|stop|restart) zammad
 ```
+
 Само интерни puma сервис (одговоран за приказ веб апликације):
+
 ```sh
 systemctl (status|start|stop|restart) zammad-web
 ```
+
 Само позадински процес - одговоран за извршавање свих одложених и задатке у
 позадини:
+
 ```sh
 systemctl (status|start|stop|restart) zammad-worker
 ```
+
 Само websocker сервис за информације о сесији:
+
 ```sh
 systemctl (status|start|stop|restart) zammad-websocket
 ```
@@ -303,7 +343,6 @@ systemctl (status|start|stop|restart) zammad-websocket
 - Подесите ваша SELinux правила и firewall ([соновни
   водич](/en/tutorials/firewall-selinux))
 - Подесите веб сервис ([основни водич](/en/tutorials/webserver-config))
-
 
 ## Предуслови
 
@@ -346,7 +385,6 @@ The installation script tries to detect a Apache or Nginx during the
 installation. In case none is found, Nginx is automatically installed.  You
 can find a basic configuration guide [here](/en/tutorials/webserver-config).
 
-
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
 
 Elasticsearch is not automatically installed. Because it is crucial for a
@@ -369,6 +407,7 @@ Supported Elasticsearch versions are `7.8` - `8.x`.
 | 3.2           | >= 2.4, <=7.5  |
 | 3.1           | >= 2.4, <=7.4  |
 | 2.0-3.0       | >= 2.4, <=5.6  |
+
 :::
 
 The Elasticsearch plugin `ingest-attachment` is required for version 7 or

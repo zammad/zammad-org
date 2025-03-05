@@ -17,7 +17,6 @@ Erforderliche Berechtigung: `admin.role`
 
 :::
 
-
 ## Anzeigen
 
 Erforderliche Berechtigung: `admin.role`

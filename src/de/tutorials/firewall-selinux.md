@@ -19,15 +19,19 @@ andere Distribution verwenden, werfen Sie bitte einen Blick in deren Dokumentati
 ```sh
 sudo chcon -Rv --type=httpd_sys_content_t /opt/zammad/public/
 ```
+
 ```sh
 sudo setsebool httpd_can_network_connect on -P
 ```
+
 ```sh
 sudo semanage fcontext -a -t httpd_sys_content_t /opt/zammad/public/
 ```
+
 ```sh
 sudo restorecon -Rv /opt/zammad/public/
 ```
+
 ```sh
 sudo chmod -R a+r /opt/zammad/public/
 ```
@@ -46,12 +50,15 @@ Szenario ab.
 ::::tabs
 
 ===Ubuntu
+
 ```sh
 sudo ufw allow 80
 ```
+
 ```sh
 sudo ufw allow 443
 ```
+
 ```sh
 sudo ufw reload
 ```
@@ -64,17 +71,19 @@ seit Debian 10 (Buster) abgeraten. Unser Beispiel verwendet die `input`-chain, I
 kann eine andere sein!
 :::
 
-Fügen Sie folgende Zeilen zu `/etc/nftables.conf` oder zu ihrer Regel-Datei hinzu.
-Stellen Sie sicher, dass Sie diese Zeilen zu Ihrer input-chain Datei hinzufügen.
+Add the following lines to `/etc/nftables.conf` or your specific rule file.
+Ensure to add these lines to your input-chain.
 
 ```sh
 sudo tcp dport { http, https } accept
 ```
+
 ```sh
 sudo udp dport { http, https } accept
 ```
-Das Ergebnis kann wie folgt aussehen. Beachten Sie, dass Ihre Umgebung
-andere/zusätzliche Regeln benötigen kann.
+
+The result can look like the following. Keep in mind that your environment
+could require different / more rules.
 
 ```sh
 table inet filter {
@@ -95,7 +104,9 @@ table inet filter {
    }
 }
 ```
-Laden Sie die Regeln:
+
+To load the rules, run:
+
 ```sh
 sudo systemctl reload nftables
 ```

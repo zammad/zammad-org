@@ -134,24 +134,24 @@ attributes please take a look at the
 Search for a specific customer by using
 `customer.attribute`:
 
-```
+```plain
 customer.firstname: John
 ```
 
 or:
 
-```
+```plain
 customer.lastname: Doe
 ```
 
 If you want to run a more complex search, you can use conditions with
 `()` and `AND`/`OR` options:
 
-```
+```plain
 state.name: open AND (article.from:me OR article.from:somebody)
 ```
 
-**Available Attributes**
+**Available Attributes**:
 
 | Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
 |---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -163,8 +163,7 @@ state.name: open AND (article.from:me OR article.from:somebody)
 | article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
 | article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
 
-
-**Combining Search Phrases**
+**Combining Search Phrases**:
 
 You can combine search phrases by using `AND`, `OR` and `TO` and even
 separate them with `()`. If you want to exclude search results, you can use
@@ -173,7 +172,7 @@ negation `!`.
 | Search phrase                                                                               | Description                                                                                                       |
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(*Zammad*) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
 | owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
 | state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
 
@@ -218,32 +217,30 @@ is complicated. But the opposite is the case:
 
 So, basically you can work with Zammad similar as with your email
 client. Except that you have some additional attributes you can set in the
-*Ticket* sidebar tab:
+_Ticket_ sidebar tab:
 
 - **State**: reflects the current state of a ticket (mainly if a customer
   request is resolved or not). By default, there are the following states:
-    - **New**: State for new tickets on which no one has worked on. When
-      updating a ticket the first time, it automatically switches to *open*.
-    - **Open**: State for tickets which aren't resolved yet and some work
-      needs to be done.
-    - **Pending Close**: State for tickets which are basically resolved but
+  - **New**: State for new tickets on which no one has worked on. When
+      updating a ticket the first time, it automatically switches to _open_.
+  - **Open**: State for tickets which aren't resolved yet and some
+      work needs to be done.
+  - **Pending Close**: State for tickets which are basically resolved but
       you don't want to close immediately. This state requires you to enter
-      a date and time at which the ticket automatically switches to
-      *closed*.
-    - **Pending Reminder**: State for open tickets which you want to get
-      reminded to a certain date and time. Requires you to enter a date and
-      time at which you want to get notified. For example useful if you had
-      a question to a third party and want to make sure that this issue
-      won't be forgotten.
-- **Owner**: This is the person who is currently responsible for the
-  ticket.  In case you need to have an information from another colleague,
-  you can either change to owner to this person or mention the person in an
-  article by typing `@@` and selecting the user. In the later case, the user
-  gets notified and is automatically subscribed to receive notifications on
-  ticket updates.
-- **Group**: This ticket attribute is useful for organizations with more
-  than one team. Depending on the permissions, you might not see the ticket
-  after changing the group and saving the changes.
+      a date and time at which the ticket automatically switches to _closed_.
+  - **Pending Reminder**: State for open tickets which you want to get
+      reminded to a certain date and time. Requires you to enter a date and time
+      at which you want to get notified. For example useful if you had a
+      question to a third party and want to make sure that this issue won't
+      be forgotten.
+- **Owner**: This is the person who is currently responsible for the ticket.
+  In case you need to have an information from another colleague, you can either
+  change to owner to this person or mention the person in an article by
+  typing `@@` and selecting the user. In the later case, the user gets notified
+  and is automatically subscribed to receive notifications on ticket updates.
+- **Group**: This ticket attribute is useful for organizations with more than
+  one team. Depending on the permissions, you might not see the ticket after
+  changing the group and saving the changes.
 
 ### Детаљни приказ тикета
 
@@ -267,7 +264,7 @@ After you have done your changes like writing an answer to a customer and
 change the state of the ticket, you can see a highlighted **Update** button
 in the right footer. By clicking it, your changes are applied and if you
 created an answer, it is now sent out to the customer. If you consider the
-issue as resolved, you should set the state to *closed* now.
+issue as resolved, you should set the state to _closed_ now.
 
 ## Conclusion
 

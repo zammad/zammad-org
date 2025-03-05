@@ -32,7 +32,6 @@ Standardwerte sind mit einem <Badge type="info" text="badge"/> gekennzeichnet.
   Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie
   `true`, um sie dauerhaft einzuschalten.
 
-
 ZAMMAD_SAFE_MODE` <Badge type="info" text="nicht gesetzt"/>
 : Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von
   Zammad- Befehlen. Mögliche Werte: `1` oder `true`
@@ -44,7 +43,6 @@ ZAMMAD_SAFE_MODE` <Badge type="info" text="nicht gesetzt"/>
   Dies kann zwar einen Ausweg für bestimmte Fälle bieten, hat aber
   das Potenzial, reguläre Zammad-Vorgänge zu unterbrechen.
   :::
-
 
 `ZAMMAD_HTTP_TYPE` <Badge type="info" text="nicht gesetzt"/>
 : Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder
@@ -66,7 +64,6 @@ hier vorgenommen haben, wirksam werden.
 `ZAMMAD_RAILS_PORT` <Badge type="info" text="3000"/>
 : Der Port, auf dem der Webserver erreichbar ist.
 
-
 ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : Der Port, auf dem der Web-Socket-Server betrieben wird.
 
@@ -76,8 +73,8 @@ Jede der unten aufgeführten Einstellungen bringt ihre eigenen Kompromisse
 mit sich. Es gibt hier keine "empfohlenen Werte"; die optimale Konfiguration
 hängt von den Ressourcen Ihres Systems und der typischen Anwendungslast ab.
 
-Die folgenden Einstellungen *können* alle verfügbaren Datenbankverbindungen
-verbrauchen. Bitte prüfen Sie die Konfiguration Ihres Datenbankservers.
+Below settings _may_ consume all available database connections. Please
+consider to check your database server configuration.
 
 ::: danger
 Seien Sie vorsichtig und verwenden Sie die Einstellungen nur, wenn Sie wissen, was Sie tun!
@@ -105,7 +102,6 @@ zammad run rails r "p Sessions.list.uniq.count"
   Im Allgemeinen ist es nur dann sinnvoll, diese Einstellung zu ändern, wenn
   Sie mehr als 40 aktive Benutzer gleichzeitig haben.
 
-
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type="info" text="nicht gesetzt"/>
 : Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter
   Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad für andere
@@ -116,10 +112,10 @@ zammad run rails r "p Sessions.list.uniq.count"
   Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
-`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="nicht gesetzt"/>
-: Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl *kann*
-  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.
-  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.
+`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="unset"/>
+: How many processes should work on delayed jobs? Increasing this _can_
+  improve issues with delayed jobs stacking up in your system. You may want to
+  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
 
   Maximale Anzahl von Workern: `16`
 
@@ -144,7 +140,6 @@ Inhalt dieser Dokumentation ist.
   Falls nicht angegeben, greift Zammad auf das Dateisystem zurück
   (`/opt/zammad/tmp/websocket_*`) zurück.
 
-
 `MEMCACHE_SERVERS` <Badge type="info" text="nicht gesetzt"/>
 : Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.
   Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:
@@ -161,7 +156,7 @@ Inhalt dieser Dokumentation ist.
 `S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben.
 
   Format / Beispiel:
+
   ```sh
   https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true
   ```
-

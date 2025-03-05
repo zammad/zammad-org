@@ -12,59 +12,59 @@ kann Elasticsearch auf jedes der unten aufgeführten Felder zugreifen.
 
 :::info
 
-- <Badge type="info" text="SLA"/>: Mit SLA markierte Attribute zeigen an, ob
-  das Attribut von der SLA-Berechnung betroffen ist. Bitte beachten Sie, dass einige Attribute
-  möglicherweise nicht gesetzt werden, wenn bestimmte Bedingungen nicht erfüllt sind.
-- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden können, wenn sie nicht mehr zutreffen.
-- `Notiz` Attribute: Notiz-Attribute sind normalerweise leer, wenn sie nicht über die Konsole oder API angegeben werden.
-- Zeitstempel: Alle von Zammad augegebenen Zeitstempel sind standardmäßig UTC. Dies gilt auch
-  für die von Elasticsearch ausgegebenen Zeiten
+- <Badge type="info" text="SLA"/>: Attributes marked as SLA are only set if
+  the ticket is affected by SLA calculation. Please note that some attributes
+  may not be set if specific conditions are not met.
+- Also note that some attributes may be reset to `null` if no longer applicable.
+- `note` attribute: Note attributes usually are empty if not specified via console or API.
+- Timestamps: All timestamps provided by Zammad are UTC by default. This also
+  applies to times provided by Elasticsearch
+
 :::
 
 Die nachstehenden Attribute, Beispielwerte und Beschreibungen sind auf diese
 Weise aufgebaut:
 
-`Attribut`
-: - `1`, `null`
-  - Dies ist die Beschreibung des Attributs, falls vorhanden.
+`attribute`
+:   - `1`, `null`
+    - This is the description of the attribute, if available.
 
 ## Ticket
 
 Der folgende Index enthält folgende Informationen: `*_ticket`
 
 `article`
-  - Array mit allen zum Ticket gehörenden Artikeln
-  - Siehe [Artikel](#artikel) für weitere Details.
+:   - Array with all articles belonging to the ticket
+    - See [article section](#article) for more details.
 
 `article_count`
-: - `1`
-  - Anzahl der Artikel innerhalb des Tickets
+:   - `1`
+    - Number of articles within the ticket
 
 `checklist`
-: - Enthält diese Attribute:
-    - name: `null`, `Checklist Titel`;
-    - items: `(array)`
-  - Das Elemente-Array enthält den Text der Elemente
+:   - Contains these attributes:
+      - name: `null`, `Checklist title`;
+      - items: `(array)`
+    - Items array contains the text of the items
 
 `close_at`
-: - `null`, `2021-03-03T14:50:20.673Z`
-  - Erste Schließzeit, einmalig festgelegt
+:   - `null`, `2021-03-03T14:50:20.673Z`
+    - First close time, set once
 
 `close_diff_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `239`, `-5`
-  -Hängt von close_in_min ab und gibt an, wie viele Minuten das Ticket relativ
-   zur SLA-Lösungszeit geschlossen wurde.
+:   - `null`, `239`, `-5`
+    - Depends on close_in_min and tells how many minutes the ticket was closed relative to SLAs solution time.
 
 `close_escalation_at` <Badge type="info" text="SLA"/>
-: - `null`, `2021-03-03T15:50:20.673Z`
-  - Zeitstempel, zu dem das Ticket eskaliert, wenn die Zeit für die Lösung überschritten wird.
+:   - `null`, `2021-03-03T15:50:20.673Z`
+    - Time stamp when the ticket would escalate in case solution time is violated.
 
 `close_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `11`
-  - Wert in Minuten, der angibt, wie lange das Ticket geöffnet war, basierend auf den Geschäftszeiten.
+:   - `null`, `11`
+    - Value in minutes for how long the ticket was open based on business hours.
 
 `create_article_sender`
-: - Enthält diese Attribute:
+:   - Contains these attributes:
       - note: `null`
       - updated_at: `2021-03-03T14:50:20.812Z`
       - name: `Customer`
@@ -72,324 +72,318 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
       - updated_by_id: `1`
       - id: `2`
       - created_by_id: `1`
-  - Absender des Artikels (System, Agent, Kunde)
+    - Sender of the article (System, Agent, Customer)
 
 `create_article_sender_id`
-: - `1`, `2`
-  - ID des Benutzers, der den Artikel erstellt hat.
+:   - `1`, `2`
+    - ID of the user that created the article.
 
 `create_article_type`
-: - Contains these attributes:
-    - note: `null`
-    - updated_at: `2021-03-03T14:50:20.812Z`
-    - name: `phone`, `email`, `web`
-    - active: `true`
-    - created_at: `2021-03-03T14:50:20.812Z`
-    - updated_by_id: `1`
-    - id: `5`
-    - created_by_id: `1`
-    - communication: `true`, `false`
-    - Informationen über die Art und Beschaffenheit des ersten Artikels
+:   - Contains these attributes:
+      - note: `null`
+      - updated_at: `2021-03-03T14:50:20.812Z`
+      - name: `phone`, `email`, `web`
+      - active: `true`
+      - created_at: `2021-03-03T14:50:20.812Z`
+      - updated_by_id: `1`
+      - id: `5`
+      - created_by_id: `1`
+      - communication: `true`, `false`
+    - Information of first article type and nature
 
 `create_article_type_id`
-: - `5`
-  - Typ-ID des ersten Artikels
+:   - `5`
+    - Type ID of first article
 
 `created_at`
-: - `2021-03-24T16:17:27.210Z`
-  - Zeitstempel der Ticketerstellung
+:   - `2021-03-24T16:17:27.210Z`
+    - Time stamp of ticket creation
 
 `created_by`
-: - \#\{user object\}
-  - Vollständiger Payload des Benutzers, der das Ticket erstellt hat. Schauen Sie sich den
-    Abschnitt [Benutzer](#benutzer) an für weitere Informationen.
+:   - \#\{user object\}
+    - Complete Payload of user that created the ticket.
+      Have a look at the [user section](#user) for more information.
 
 `created_by_id`
-: - `3`
-  - ID des Benutzers, der das Ticket erstellt hat.
+:   - `3`
+    - User ID that created the ticket.
 
 `customer`
-: - \#\{user object\}
-  - Vollständiger Payload des Kunden, der das Ticket erstellt hat. Schauen Sie sich den
-    Abschnitt [Benutzer](#benutzer) an für weitere Informationen.
+:   - \#\{user object\}
+    - Complete payload of the customer that created the ticket.
+      Have a look at the [user section](#user) for more information.
 
 `customer_id`
-: - `8`
-  - Benutzer-ID des Kunden
+:   - `8`
+    - Customer User ID
 
 `escalation_at` <Badge type="info" text="SLA"/>
-: - `null`, `2021-03-24T16:28:38.535Z`
-  - Zeitstempel der nächsten anwendbaren Eskalation. Eines der folgenden
-    Attribute:
+:   - `null`, `2021-03-24T16:28:38.535Z`
+    - Time stamp of the next applicable escalation. One of the following attributes:
       - `close_escalation_at`
       - `first_response_escalation_at`
       - `update_escalation_at`
 
 `first_response_at` <Badge type="info" text="SLA"/>
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Zeitstempel der ersten Reaktion der Art Kommunikation an den Kunden.
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Time stamp of the first communication type reaction to the customer.
 
 `first_response_diff_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `10`, `-6`
-  - Hängt von `first_response_in_min` ab und gibt an, wie viele Minuten die
-    Erstreaktion relativ zur ersten Antwortzeit Ihres SLA war.
+:   - `null`, `10`, `-6`
+    - Depends on `first_response_in_min` and tells how many minutes the tickets first
+      response took relative to the first response time of your SLA.
 
 `first_response_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `11`
-  - Wert in Minuten, der angibt, wie lange die erste Reaktion innerhalb der
-    Geschäftszeiten gebraucht hat.
+:   - `null`, `11`
+    - Value in minutes for how long the first response took based on the business hours.
 
 `group`
-: - \#\{group object\}
-  - Vollständiger Payload der aktuellen Gruppe. Werfen Sie einen Blick in den
-    [Abschnitt Gruppe](#Gruppe) für weitere Informationen.
+:   - \#\{group object\}
+    - Complete payload of the current tickets group.
+      Have a look at the [group section](#group) for more information.
 
 `group_id`
-: - `1`
-  - ID der aktuellen Gruppe
+:   - `1`
+    - ID of the current group
 
 `id`
-- : `1`, `111`
-  - ID des Tickets
+:   - `1`, `111`
+    - ID of the Ticket
 
 `last_close_at`
-: - `null`, `2021-03-03T14:50:20.673Z`
-  - Letzter Schließzeitpunkt, der bei jedem Schließen eines Tickets festgelegt wird.
+:   - `null`, `2021-03-03T14:50:20.673Z`
+    - Last close time, set on each closing of ticket.
 
 `last_contact_agent_at`
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Zeitstempel des letzten Kontakts des Typs Kommunikation eines beliebigen Agenten.
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Time stamp of last communication type contact of any agent.
 
 `last_contact_at`
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Zeitstempel des letzten Kontakts des Typs Kommunikation. Hängt ab von
-    `last_contact_agent_at`, `last_contact_customer_at` und der Einstellung
-    "Verhalten der Aktualisierung des letzter Kundenkontakts".
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Time stamp of last communication type contact. Depends on `last_contact_agent_at`,
+      `last_contact_customer_at` and "Ticket Last Contact Behavior" setting.
 
 `last_contact_customer_at`
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Zeitstempel des letzten Kontakts des Typs Kommunikations des Kunden.
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Time stamp of last communication type contact of customer.
 
 `mention_user_ids`
-: - `[3, 5]`
-  - Array mit den IDs der erwähnten oder abonnierten Benutzer.
+:   - `[3, 5]`
+    - Array with mentioned or subscribed users IDs.
 
 `note`
-: - `null`
-  - Notiz des Tickets, nur über die Konsole oder API gesetzt.
+:   - `null`
+    - Note of ticket, only set via console or API.
 
 `number`
-: - `1010138`, `202006231010138`
-  - Ticketnummer
+:   - `1010138`, `202006231010138`
+    - Ticket number
 
 `organization`
-: - `null`, \#\{organization object\}
-  - Vollständiger Payload des Benutzers, der Eigentümer des Tickets ist. Schauen Sie sich den
-    Abschnitt [Organisation](#organisation) an für weitere Informationen.
+:   - `null`, \#\{organization object\}
+    - Complete payload of user that owns the ticket.
+      Have a look at the [organization section](#organization) for more information.
 
 `organization_id`
-: - `null`, `2`
-  - ID der Organisation des Kunden
+:   - `null`, `2`
+    - ID of the customers organization
 
 `owner`
-: - `null`, \#\{user object\}
-  - Vollständiger Payload des Benutzers, der Eigentümer des Tickets ist. Schauen Sie sich den
-    Abschnitt [Benutzer](#benutzer) an für weitere Informationen.
+:   - `null`, \#\{user object\}
+    - Complete payload of user that owns the ticket.
+      Have a look at the [user section](#user) for more information.
 
 `owner_id`
-: - `null`, `3`
-  - ID des Benutzers, der das Ticket besitz
+:   - `null`, `3`
+    - User ID of the ticket owner
 
 `pending_time`
-: - `null`, `2021-03-24T17:44:06.912Z`
-  - Hängt vom Status "Warten auf ..." und dem Zeitstempel ab.
+:   - `null`, `2021-03-24T17:44:06.912Z`
+    - Depends on pending states and time stamp for pending time.
 
 `preferences`
-: - n/a, spezielle Informationen für interne Funktionen
-  - Kann in Ihrem System nicht verfügbar sein, enthält Informationen für interne
-    Systemfunktionen.
+:   - n/a, special information for internal functions
+    - May not be available in your system, contains information for internal system functions.
 
 `priority`
-: - \#\{priority object\}
-  - Vollständiger Payload der Priorität des Tickets. Werfen Sie einen Blick in den
-    Abschnitt [Priorität](#priorität) für weitere Informationen.
+:   - \#\{priority object\}
+    - Complete payload of priority of ticket.
+      Have a look at the [priority section](#ticket-priority) for more information.
 
 `priority_id`
-: - `2`
-  - ID der Priorität des Tickets.
+:   - `2`
+    - Priority ID of the ticket.
 
 `state`
-: - \#\{state object\}
-  - Vollständiger Payload des aktuellen Status des Tickets. Werfen Sie einen Blick in den
-    Abschnitt [Status](#status) für weitere Informationen.
+:   - \#\{state object\}
+    - Complete payload of current ticket state.
+      Have a look at the [state section](#ticket-state) for more information.
 
 `state_id`
-: - `1`, `4`
-  - ID des aktuellen Status des Tickets
+:   - `1`, `4`
+    - ID of current ticket state
 
 `tags`
-: - `["Bestellung", "Beschwerde"]`
-  - Array mit allen angehängten Tags.
+:   - `["order", "complaint"]`
+    - Array with all attached tags.
 
 `time_unit`
-: - `null`, `15`
-  -  Erfasste Zeiten für das Ticket (gesamt).
+:   - `null`, `15`
+    - Accounted time units for ticket (total).
 
 `title`
-: - `Feedback Formular`, `Brauche Hilfe`
-  - Titel/Betreff des Tickets
+:   - `Feedback Form`, `Need help`
+    - Title/subject of Ticket
 
 `type`
-: - `null`
-  - Ticket-Typ (veraltet)
+:   - `null`
+    - Ticket type (deprecated)
 
 `update_diff_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Hängt von `update_in_min` ab und gibt an, wie viele Minuten die letzte Ticket-
-    Aktualisierung relativ zur definierten Aktualisierungszeit gedauert hat.
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Depends on `update_in_min` and tells how many minutes the last ticket update took relatively to the update time setting.
 
 `update_escalation_at` <Badge type="info" text="SLA"/>
-: - `null`, `2021-03-24T16:28:38.303Z`
-  - Zeitpunkt, bei dem das Ticket eskaliert, wenn die Aktualisierungszeit verletzt wird.
+:   - `null`, `2021-03-24T16:28:38.303Z`
+    - Time stamp when the ticket would escalate in case update time is violated.
 
 `update_in_min` <Badge type="info" text="SLA"/>
-: - `null`, `5`, `-10`
-  - Wert in Minuten, der angibt, wie lange die letzte Aktualisierung eines Tickets gedauert hat, basierend auf den
-    Geschäftszeiten und der Aktualisierungszeit.
+:   - `null`, `5`, `-10`
+    - Value in minutes for how long the last ticket update took based on the
+    business hours and update time.
 
 `updated_at`
-: - `2021-03-24T16:28:38.303Z`
-  - Letzte Aktualisierung des Tickets
+:   - `2021-03-24T16:28:38.303Z`
+    - Last ticket update
 
 `updated_by`
-: - \#\{user object\}
-  - Vollständiger Payload des Benutzers, der das Ticket aktualisiert hat. Schauen Sie sich den
-    Abschnitt [Benutzer](#benutzer) an für weitere Informationen.
+:   - \#\{user object\}
+    - Complete payload of the user that updated the ticket.
+      Have a look at the [user section](#user) for more information.
 
 `updated_by_id`
-: - `1`, `3`
-  - ID des Benutzers, der das Ticket aktualisiert hat.
+:   - `1`, `3`
+    - User ID that updated the ticket.
 
 ## Ticket-Priorität
 
 Der folgende Index enthält folgende Informationen: `*_ticket_priority`
 
 `active`
-: - `true`, `false`
-  - Legt fest, ob die Priorität aktiv (verfügbar) ist.
+:   - `true`, `false`
+    - Defines if the priority is active (available).
 
 `created_at`
-: - `2021-03-03T14:50:20.724Z`
-  - Erstellungsdatum der Priorität
+:   - `2021-03-03T14:50:20.724Z`
+    - Creation date of priority
 
 `created_by_id`
-: - `1`
-  - Benutzer, der die Priorität erstellt hat
+:   - `1`
+    - User that created priority
 
 `default_create`
-: - `false`, `true`
-  - Legt fest, ob die Priorität bei der Erstellung eines Tickets die Standardpriorität ist.
+:   - `false`, `true`
+    - Defines if priority is default priority upon ticket creation.
 
 `id`
-: - `3`
-  - ID der Priorität
+:   - `3`
+    - ID of priority
 
 `name`
-: - `3 high`
-  - Name der Priorität
+:   - `3 high`
+    - Priority name
 
 `note`
-: - `null`
-  - Notiz für die Priorität, die über die Konsole oder API gesetzt wurde.
+:   - `null`
+    - Note for priority that has been set via console or API.
 
 `ui_color`
-: - `null`, `high-priority`
-  - CSS-Klasse für Tickets mit hoher Priorität.
+:   - `null`, `high-priority`
+    - CSS class for tickets of priority.
 
 `ui_icon`
-: - `null`, `important`
-  - CSS-Klasse für Ticket-Symbole der Priorität.
+:   - `null`, `important`
+    - CSS class for ticket icons of priority.
 
 `updated_at`
-: - `2021-03-03T14:50:20.724Z`
-  - Datum der letzten Änderung
+:   - `2021-03-03T14:50:20.724Z`
+    - Date of last change
 
 `updated_by_id`
-: - `1`
-  - Benutzer ID des Benutzers, der die Priorität zuletzt aktualisiert hat
-
+:   - `1`
+    - User ID of user last updating the priority
 
 ## Ticket-Status
 
 Der folgende Index enthält folgende Informationen: `*_ticket_state`
 
 `active`
-: - `true`, `false`
-  - Legt fest, ob der Status aktiv (verfügbar) ist
+:   - `true`, `false`
+    - Defines if state is active (available)
 
 `created_at`
-: - `2021-03-03T14:50:20.694Z`
-  -  Datum der Erstellung
+:   - `2021-03-03T14:50:20.694Z`
+    - Creation date
 
 `created_by_id`
-: - `1`
-  - ID des Benutzers, der den Status erstellt hat
+:   - `1`
+    - User ID that created state
 
 `default_create`
-: - `false`, `true`
-  - Legt fest, ob der Status bei der Erstellung eines Tickets der Standardstatus ist.
+:   - `false`, `true`
+    - Defines if the state is the default state upon ticket creation.
 
 `default_follow_up`
-: - `false`, `true`
-  - Legt fest, ob der Status der Standardstatus bei Rückfragen in Tickets ist.
+:   - `false`, `true`
+    - Defines if the state is the default follow up state on ticket follow ups.
 
 `id`
-: - `7`
-  - ID des Status
+:   - `7`
+    - State ID
 
 `ignore_escalation`
-: - `false`, `true`
-  - Legt fest, ob die SLA-Berechnung für diesen Status generell ignoriert wird.
+:   - `false`, `true`
+    - Defines if SLA calculation is generally ignored for this state.
 
 `name`
-: - `pending close`
-  - Name des Status
+:   - `pending close`
+    - State name
 
 `next_state`
-: - n/a, \#\{state object\}
-  - Enthält alle Informationen zum folgenden Status (bei "Warten auf" Status). Möglicherweise nicht
-    verfügbar je nach Status-Typ
+:   - n/a, \#\{state object\}
+    - Contains all follow up state information if applicable, may not be
+    available depending on the state type
 
 `next_state_id`
-: - `null`, `4`
-  - Status ID des folgenden Status
+:   - `null`, `4`
+    - State ID of follow up state
 
 `note`
-: - `null`
-  - Notiz, die über die Konsole oder API gesetzt wurde.
+:   - `null`
+    - Note that has been set via console or API.
 
 `state_type`
-: - Enthält diese Attribute:
-     - created_at: `2021-03-03T14:50:20.582Z`
-     - created_by_id: `1`
-     - id: `4`
-     - name: `pending action`
-     - note: `null`
-     - updated_at: `2021-03-03T14:50:20.582Z`
-     - updated_by_id: `1`
-  - Enthält alle verfügbaren Informationen zum Statustyp
+:   - Contains these attributes:
+       - created_at: `2021-03-03T14:50:20.582Z`
+       - created_by_id: `1`
+       - id: `4`
+       - name: `pending action`
+       - note: `null`
+       - updated_at: `2021-03-03T14:50:20.582Z`
+       - updated_by_id: `1`
+    - Contains all available information of the states type
 
 `state_type_id`
-: - `4`
-  - ID des Statustyps
+:   - `4`
+    - ID of the state type
 
 `updated_at`
-: - `2021-03-03T14:50:20.694Z`
-  - Letztes Update des Status
+:   - `2021-03-03T14:50:20.694Z`
+    - Last update of state
 
 `updated_by_id`
-: - `1`
-  - ID des Benutzers, der den Status zuletzt aktualisiert hat
+:   - `1`
+    - User ID that updated the state last
 
 ## Artikel
 
@@ -399,556 +393,552 @@ Artikel sind Teil des Ticket-Indexes. Um die Komplexität zu verringern,
 haben wir sie in einen eigenen Bereich verschoben.
 
 `body`
-: - `Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe`
-  - Artikeltext als Klartext
+:   - `Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe`
+    - Article body in plain text
 
 `cc`
-: - `null`, `alias@domain.tld`
-  - Als CC gesetzte Email-Adresse
+:   - `null`, `alias@domain.tld`
+    - Email-Addresses set as CC (String)
 
 `content_type`
-: - `text/html`
-  - Inhaltstyp des Artikels
+:   - `text/html`
+    - Content type of article
 
 `created_at`
-: - `2021-03-22T03:47:59.290Z`
-  - Erstellungszeitpunkt des Artikels
+:   - `2021-03-22T03:47:59.290Z`
+    - Time stamp of article creation
 
 `created_by_id`
-: - `10`
-  - Benutzer ID des Benutzers, der den Artikel erstellt hat
+:   - `10`
+    - User ID that created the article
 
 `detected_language`
-: - `en`, `de`
-  - Sprachen-Code der ermittelten Sprache, kann leer sein
+:   - `en`, `de`
+    - Language code of detected language, may be empty
 
 `detected_language_name`
-: - `English`, `German`
-  - Sprach-Name der ermittelten Sprache, kann leer sein
+:   - `English`, `German`
+    - Language name of detected language, may be empty
 
 `from`
-: - `John Doe <john.doe@example.com>`
-  - Von-Feld des Artikel-Erstellers
+:   - `John Doe <john.doe@example.com>`
+    - From field of article creator
 
 `id`
-: - `16`
-  - Interne Artikel ID
+:   - `16`
+    - Internal article ID
 
 `in_reply_to`
-: - `null`
-  - In-Reply-To Header von E-Mails, falls zutreffend
+:   - `null`
+    - In-Reply-To Header from emails if applicable
 
 `internal`
-: - `false`, `true`
-  - Legt fest, ob ein Artikel intern ist
+:   - `false`, `true`
+    - Defines if article is internal
 
 `message_id`
-: - `null`
-  - Message ID der E-Mail, falls zutreffend
+:   - `null`
+    - Message ID of Email if applicable
 
 `origin_by_id`
-: - `null`
-  - ID des Benutzers oder des ursprünglichen Erstellers, wenn er im Auftrag eines anderen Benutzers erstellt wurde
+:   - `null`
+    - User ID or original creator if created on behalf another user
 
 `preferences`
-: - `{}`
-  -  Interne Präferenzen, ggf. leer
+:   - `{}`
+    - Internal preferences, may be empty, mainly for delivery states
 
 `reply_to`
-: - `null`
-  - Enthält den reply to Header, falls vorhanden
+:   - `null`
+    - Contains reply to header if applicable
 
 `sender_id`
-: - `2`
-  -  ID des Absendertyps (Kunde, System, Agent)
+:   - `2`
+    - ID of sender type (Customer, System, Agent)
 
 `subject`
-: - `My amazing subject`
-  -Artikel-Betreff
+:   - `My amazing subject`
+    - Article subject
 
 `ticket_id`
-: - `9`
-  - Ticket ID, zu dem der Artikel gehört
+:   - `9`
+    - Ticket ID the article belongs to
 
 `to`
-: - `support@example.com`
-  - E-Mail-Adresse aus dem TO-Header
+:   - `support@example.com`
+    - Email address from TO Header
 
 `type_id`
-: - `1`
-  - ID des Artikels Typ (Telefon, E-Mail, Web, ...)
+:   - `1`
+    - ID of articles Type (phone, email, web, …)
 
 `updated_at`
-: - `2021-03-22T03:47:59.290Z`
-  - Letztes Update
+:   - `2021-03-22T03:47:59.290Z`
+    - Last update
 
 `updated_by_id`
-: - `10`
-  - Benutzer, der den Artikel aktualisiert hat
-
+:   - `10`
+    - User that updated article
 
 ## Benutzer
 
 `active`
-: - `true`, `false`
-  - Legt fest, ob der Benutzer aktiv ist
+:   - `true`, `false`
+    - Defines if user is active
 
 `address`
-: - `""`, `Unter den Linden 1,\n10178 Berlin`
-  - Zeichenkette der Adresse
+:   - `""`, `Unter den Linden 1,\n10178 Berlin`
+    - Address string
 
 `city`
-: - `""`, `Berlin`
-  - Zeichenkette der Stadt
+:   - `""`, `Berlin`
+    - City string
 
 `country`
-: - `""`, `Germany`
-  - Zeichenkette Land
+:   - `""`, `Germany`
+    - Country string
 
 `created_at`
-: - `2021-03-22T12:47:56.460Z`
-  - Erstellungsdatum des Benutzers
+:   - `2021-03-22T12:47:56.460Z`
+    - Creation date of user
 
 `created_by_id`
-: - `1`
-  - ID des Benutzers, der den Benutzer erstellt hat
+:   - `1`
+    - User ID that created the user
 
 `department`
-: - `""`, `IT`
-  - Zeichenkette Abteilung
+:   - `""`, `IT`
+    - Department string
 
 `email`
-: - `""`, `alias@domain.tld`
-  - E-Mail-Adresse des Benutzers, falls zutreffend
+:   - `""`, `alias@domain.tld`
+    - EMail Address of user, if applicable
 
 `fax`
-: - `""`, `1234`
-  - Fax-Nummer
+:   - `""`, `1234`
+    - Fax number
 
 `firstname`
-: - `null`, `John`
-  - Vorname des Benutzers
+:   - `null`, `John`
+    - Users first name
 
 `id`
-: - `8`
-  - Interne ID des Benutzers
+:   - `8`
+    - Internal User ID
 
 `last_login`
-: - `null`, `2021-03-23T12:47:56.460Z`
-  - Aktualisiert bei jeder Anmeldung eines Benutzers
+:   - `null`, `2021-03-23T12:47:56.460Z`
+    - Updated upon every user login
 
 `lastname`
-: - `null`, `Doe`
-  - Nachname des Benutzers
+:   - `null`, `Doe`
+    - Users last name
 
 `login`
-: - `auto-1234567`, `jdoe`
-  - Login-Name, immer gesetzt und eindeutig, kann von der E-Mail abweichen
+:   - `auto-1234567`, `jdoe`
+    - Login name, always set and unique, can differ from email
 
 `mobile`
-: - `""`, `1232`
-  - Telefonnummer mobil
+:   - `""`, `1232`
+    - Mobile phone number
 
 `note`
-: - `""`
-  - Notizen sind über Web, Konsole und API verfügbar
+:   - `""`
+    - Note being available via web, console and API
 
 `organization`
-: - \#\{organization object\}
-  - Vollständiger Payload der Organisation, in der der Benutzer Mitglied ist. Schauen Sie sich
-    den [Abschnitt Organisation](#organisation) an für weitere Informationen.
+:   - \#\{organization object\}
+    - Complete payload of the organization the user is member of.
+      Have a look at the [organization section](#organization) for more information.
 
 `organization_id`
-: - `3`
-  - ID der Organisation, in der der Benutzer Mitglied ist
+:   - `3`
+    - ID of organization the user is member of
 
 `out_of_office`
-: - `false`, `true`
-  - Zeigt an, ob der Benutzer die Abwesenheitsfunktion aktiviert hat
+:   - `false`, `true`
+    - Defines if user has activated out of office function
 
 `out_of_office_end_at`
-: - `null`, `2021-03-26`
-  - End-Datum der Abwesenheit
+:   - `null`, `2021-03-26`
+    - Ending date out of office
 
 `out_of_office_replacement_id`
-: - `null`, `3`
-  - ID des Benutzers, der diesen Benutzer während seiner Abwesenheit vertritt
+:   - `null`, `3`
+    - User ID that replaces this user during out of office period
 
 `out_of_office_start_at`
-: - `null`, `2021-03-24`
-  - Datum des Beginns der Abwesenheit
+:   - `null`, `2021-03-24`
+    - Begin date out of office
 
 `permissions`
-: - (Array)
-  - Array mit allen Berechtigungen des Benutzers
+:   - (Array)
+    - Array with all permissions of the user
 
 `phone`
-: - `""`, `0049 30 1234 5666`
-  - Telefonnummer des Benutzers
+:   - `""`, `0049 30 1234 5666`
+    - Phone number of user
 
 `preferences`
-: - `{}`, \#\{several preference attributes\}
-  - Hängt vom Benutzer und der Situation ab, kann `notification_config`,
-    `locale` und andere interne Systeminformationen enthalten.
+:   - `{}`, \#\{several preference attributes\}
+    - Depends on user and situation, may contain `notification_config`, `locale` and other internal system information.
 
 `role_ids`
-: - (Array), `[1, 2]`
-  - Enthält ein Array mit den dem Benutzer zugewiesenen Rollen IDs.
+:   - (Array), `[1, 2]`
+    - Contains array with role IDs assigned to the user.
 
 `street`
-: - `""`
-  - Straße
+:   - `""`
+    - Street
 
 `updated_at`
-: - `2021-03-25T00:27:52.308Z`
-  - Zeitstempel der letzten Aktualisierung
+:   - `2021-03-25T00:27:52.308Z`
+    - Time stamp of last update
 
 `updated_by_id`
-: - `3`
-  - ID des Benutzers, der diesen Eintrag aktualisiert hat
+:   - `3`
+    - User ID that updated this entry
 
 `verified`
-: - `false`, `true`
-  - Legt fest, ob der Benutzer das Konto verifiziert hat
+:   - `false`, `true`
+    - Defines if the user has verified the account
 
 `vip`
-: - `false`, `true`
-  - Legt fest, ob der Benutzer den Status VIP hat
+:   - `false`, `true`
+    - Defines if user has VIP state
 
 `web`
-: - `""`, `https://zammad.org`
-  - Web URL des Benutzers
+:   - `""`, `https://zammad.org`
+    - Web URL of User
 
 `zip`
-: - `""`, `10123`
-  - Postleitzahl
-
+:   - `""`, `10123`
+    - ZIP code
 
 ## Organisation
 
 Der folgende Index enthält folgende Informationen: `*_Organisation`
 
-
 `active`
-: - `true`, `false`
-  - Legt fest, ob die Organisation aktiv ist
+:   - `true`, `false`
+    - Defines if organization is active
 
 `created_at`
-: - `2021-03-22T12:47:54.807Z`
-  - Erstelldatum
+:   - `2021-03-22T12:47:54.807Z`
+    - Creation date
 
 `created_by`
-: - \#\{user object\}
-  - Vollständiger Payload des Benutzers, der die Organisation erstellt hat. Werfen Sie einen Blick in
-    den Bereich [Benutzer](#benutzer) für weitere Informationen.
+:   - \#\{user object\}
+    - Complete Payload of the user that created the organization.
+      Have a look at the [user section](#user) for more information.
 
 `created_by_id`
-: - `1`
-  - ID des Benutzers, der die Organisation erstellt hat
+:   - `1`
+    - User ID that created the organization
 
 `domain`
-: - `null`, `example.com`
-  - Domain der Organisation
+:   - `null`, `example.com`
+    - Organizations domain
 
 `domain_assignment`
-: - `false`, `true`
-  - Domainbasierte Zuordnung
+:   - `false`, `true`
+    - Domain assignment depends on domain
 
 `id`
-: - `1`
-  - Organisations-ID
+:   - `1`
+    - Organization ID
 
 `members`
-: - \#\{Array der Benutzer-Objekte\}
-  - Array mit dem kompletten Benutzer-Payload der Benutzer, die Mitglied der Organisation sind.
-    Schauen Sie sich den Bereich [Benutzer](#benutzer) an für weitere Informationen.
+:   - \#\{array of user objects\}
+    - Array with complete payload of the users being member of the organization.
+      Have a look at the [user section](#user) for more information.
 
 `name`
-: - `Fast Lane Hardware Inc.`
-  - Name der Organisation
+:   - `Fast Lane Hardware Inc.`
+    - Organization name
 
 `note`
-: - `IT hardware and custom PC builds`
-  - Über Web, Konsole und API verfügbar
+:   - `IT hardware and custom PC builds`
+    - Note being available via web, console and API
 
 `shared`
-: - `true`, `false`
-  - Legt fest, ob es sich um eine teilende Organisation handelt
+:   - `true`, `false`
+    - Defines if the organization is a sharing one
 
 `updated_at`
-: - `2021-03-22T12:47:54.807Z`
-  - Zeitpunkt der letzten Aktualisierung
+:   - `2021-03-22T12:47:54.807Z`
+    - Last update time
 
 `updated_by`
-: - \#\{user object\}
-  - Vollständiger Payload des Benutzers, der die Organisation aktualisiert hat. Sehen Sie sich
-    den Bereich [Benutzer](#benutzer) an für weitere Informationen.
+:   - \#\{user object\}
+    - Complete Payload of the user that updated the organization.
+      Have a look at the [user section](#user) for more information.
 
 `updated_by_id`
-: - `1`
-  - ID des Benutzers, der die Organisation aktualisiert hat
+:   - `1`
+    - User ID that updated the organization
 
 `vip`
-: - `true`, `false`
-  - Legt fest, ob die Organisation VIP-Status hat.
+:   - `true`, `false`
+    - Defines if the organization has VIP status.
 
 ## Gruppe
 
 Der folgende Index enthält folgende Informationen: `*_group`
 
 `active`
-: - `true`, `false`
-  - Legt fest, ob die Gruppe aktiv/verfügbar ist
+:   - `true`, `false`
+    - Defines if group is active (available)
 
 `assignment_timeout`
-: - `null`, `30`
-  - Zeit in Minuten, die ein Agent inaktiv sein kann, bis er als Eigentümer entfernt wird
+:   - `null`, `30`
+    - Time in minutes an agent can be inactive until the owner ship is removed
 
 `created_at`
-: - `2021-03-24T23:55:06.980Z`
-  - Zeitpunkt der Erstellung der Gruppe
+:   - `2021-03-24T23:55:06.980Z`
+    - Time stamp of group creation
 
 `created_by_id`
-: - `1`
-  - ID des Benutzers, der die Gruppe erstellt hat
+:   - `1`
+    - User ID that created the group
 
 `email_address`
-: - Enthält diese Attribute:
-    - active: `true`
-    - channel_id: `3`
-    - created_at: `2021-03-24T23:54:58.187Z`
-    - created_by_id: `3`
-    - email: `alias@domain.tld`
-    - id: `1`
-    - note: `null`
-    - realname: `Zammad GmbH`
-    - updated_at: `2021-03-24T23:54:58.187Z`
-    - updated_by_id: `3`
-    - preferences: `null`
-  - Enthält alle verfügbaren Informationen über die E-Mail-Adresse der Gruppe
+:   - Contains these attributes:
+      - active: `true`
+      - channel_id: `3`
+      - created_at: `2021-03-24T23:54:58.187Z`
+      - created_by_id: `3`
+      - email: `alias@domain.tld`
+      - id: `1`
+      - note: `null`
+      - realname: `Zammad GmbH`
+      - updated_at: `2021-03-24T23:54:58.187Z`
+      - updated_by_id: `3`
+      - preferences: `null`
+    - Contains all available information of the groups email address
 
 `email_address_id`
-: - `3`
-  - ID der E-Mail Adresse
+:   - `3`
+    - ID of email address
 
 `follow_up_assignment`
-: - `true`, f`alse
-  - Legt fest, ob Besitzer bei Nachfragen zugewiesen werden.
+:   - `true`, f`alse
+    - Defines if owners are still assigned after follow ups.
 
 `follow_up_possible`
-: - `yes`, `no`
-  - Legt fest, ob eine Nachfrage möglich ist, wenn ein Ticket geschlossen ist
+:   - `yes`, `no`
+    - Defines if following up on a closed ticket is possible.
 
 `id`
-: - `1`
-  - ID der Gruppe
+:   - `1`
+    - Group ID
 
 `name`
-: - `Support`, `IT`
-  - Name der Gruppe
+:   - `Support`, `IT`
+    - Group name
 
 `note`
-: - `null`
-  - Notizen für die Gruppe, verfügbar über Web, Konsole und API
+:   - `null`
+    - Notes for the group available via web, console and API
 
 `signature`
-: - Enthält diese Attribute:
-    - active: `true`
-    - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane Hardware`
-    - created_at: 2`021-03-03T14:50:19.775Z`
-    - created_by_id: `1`
-    - id: `1`
-    - name: `default`
-    - note: `null`
-    - updated_at: `2021-03-03T14:50:19.775Z`
-    - updated_by_id: `1`
-  - Enthält alle verfügbaren Informationen über die Signatur der Gruppe
+:   - Contains these attributes:
+      - active: `true`
+      - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane Hardware`
+      - created_at: 2`021-03-03T14:50:19.775Z`
+      - created_by_id: `1`
+      - id: `1`
+      - name: `default`
+      - note: `null`
+      - updated_at: `2021-03-03T14:50:19.775Z`
+      - updated_by_id: `1`
+    - Contains all available information of the groups signature
 
 `signature_id`
-: - `1`
-  - ID der Signatur
+:   - `1`
+    - Signature ID
 
 `updated_at`
-: - `2021-03-24T23:55:06.980Z`
-  - Zeitpunkt der letzten Aktualisierung der Gruppe
+:   - `2021-03-24T23:55:06.980Z`
+    - Time stamp of last group update
 
 `updated_by_id`
-: - `3`
-  - ID des Benutzers, der die Gruppe aktualisiert hat
+:   - `3`
+    - User ID that updated group
 
 ## CTI-Protokoll
 
 Der folgende Index enthält folgende Informationen: `*_cti_log`
 
 `call_id`
-: - `6`
-  - Eindeutige Anruf ID
+:   - `6`
+    - Unique Call ID
 
 `comment`
-: - `""`
-  - Optionaler Kommentar
+:   - `""`
+    - Optional comment
 
 `created_at`
-: - `2021-03-22T11:48:01.703Z`
-  - Erstelldatum des Anrufs
+:   - `2021-03-22T11:48:01.703Z`
+    - Creation date of Call
 
 `direction`
-: - `in`, `out`
-  - Anruf Richtung
+:   - `in`, `out`
+    - Call direction
 
 `done`
-: - `true`, `false`
-  - Legt fest, ob der Aufruf in der Benutzeroberfläche als "to do" angezeigt wird
+:   - `true`, `false`
+    - Defines if call displays as "to do" within UI
 
 `duration_talking_time`
-: - `27`
-  - Anrufdauer in Sekunden
+:   - `27`
+    - Call duration in seconds
 
 `duration_waiting_time`
-: - `77`
-  - Dauer in Sekunden, die der Anrufer auf die Antwort gewartet hat
+:   - `77`
+    - Duration in seconds the caller was waiting for answer
 
 `end_at`
-: - `2021-03-25T08:49:40.647Z`
-  - Zeitpunkt des Anruf-Endes
+:   - `2021-03-25T08:49:40.647Z`
+    - Time stamp of call end
 
 `from`
-: - `491711234567890`
-  - Anrufende Nummer
+:   - `491711234567890`
+    - Calling number
 
 `from_comment`
-: - `null`, `John`, `Doe`
-  - Name zur anrufenden Nummer anzeigen, falls möglich
+:   - `null`, `John`, `Doe`
+    - Display name of calling number if applicable
 
 `from_pretty`
-: - `+49 171 1234567890`
-  - "Hübsche" Version von `from`
+:   - `+49 171 1234567890`
+    - Pretty version of `from`
 
 `id`
-: - `8`
-  - Interne ID des Eintrags
+:   - `8`
+    - Internal ID of entry
 
 `initialized_at`
-: - `2021-03-25T08:47:56.753Z`
-  - Zeitstempel der Aufrufinitialisierung, entspricht normalerweise `created_at`
+:   - `2021-03-25T08:47:56.753Z`
+    - Time stamp of call initialization, usually matches created_at
 
 `preferences`
-: - (Array)
-  - Enthält interne Informationen, falls erforderlich
+:   - (Array)
+    - Contains internal information if required
 
 `queue`
-: - `null`, `491711234567890`
-  - Warteschlange, in der der Anruf angenommen wurde
+:   - `null`, `491711234567890`
+    - Queue the call was answered in
 
 `start_at`
-: - `2021-03-25T08:49:13.050Z`
-  - Zeitpunkt, zu dem der Anruf angenommen wurde
+:   - `2021-03-25T08:49:13.050Z`
+    - Time stamp the call was answered
 
 `state`
-: - `hangup`, `voicemail`
-  - Letzter Status des Anrufs
+:   - `hangup`, `voicemail`
+    - Last state of call
 
 `to`
-: - `491711234567890`
-  - Gewählte Nummer
+:   - `491711234567890`
+    - Dialed number
 
 `to_comment`
-: - null, John, Doe
-  -  Name zur angerufenen Nummer anzeigen, falls vorhanden
+:   - null, John, Doe
+    - Display name of called number if applicable
 
 `to_pretty`
-: - `491711234567890`
-  - "Hübsche" Version von `to`
+:   - `491711234567890`
+    - Pretty version of to
 
 `updated_at`
-: - `2021-03-25T08:49:40.647Z`
-  - Letzte Aktualisierung des Eintrags
-
+:   - `2021-03-25T08:49:40.647Z`
+    - Last update of entry
 
 ## Chat-Sitzung
 
 Der folgende Index enthält folgende Informationen: `*_chat_session`
 
 `chat`
-: - Enthält diese Attribute:
-    - active: `true`
-    - block_country: `null`
-    - block_ip: `null`
-    - created_at: `2021-03-03T14:50:22.607Z`
-    - created_by_id: `1`
-    - id: `1`
-    - max_queue: `5`
-    - name: `default`
-    - note: `""`
-    - preferences: `{}`
-    - public: `false`
-    - updated_at: `2021-03-03T14:50:22.607Z`
-    - updated_by_id: `1`
-    - whitelisted_websites: `null`
-  - Enthält diverse Einstellungen des zuständigen Chat-Themas
+:   - Contains these attributes:
+      - active: `true`
+      - block_country: `null`
+      - block_ip: `null`
+      - created_at: `2021-03-03T14:50:22.607Z`
+      - created_by_id: `1`
+      - id: `1`
+      - max_queue: `5`
+      - name: `default`
+      - note: `""`
+      - preferences: `{}`
+      - public: `false`
+      - updated_at: `2021-03-03T14:50:22.607Z`
+      - updated_by_id: `1`
+      - whitelisted_websites: `null`
+    - Contains various preferences of the chat topic in charge
 
 `chat_id`
-: - `1`
-  - ID des Chat-Themas
+:   - `1`
+    - ID of Chat topic
 
 `created_at`
-: - `2021-03-25T10:26:24.376Z`
-  - Zeitpunkt der Chaterstellung
+:   - `2021-03-25T10:26:24.376Z`
+    - Time stamp of chat creation
 
 `created_by_id`
-: - `null`
-  - Benutzer, der den Chat erstellt hat, Platzhalter, derzeit immer null
+:   - `null`
+    - User that created the chat, place holder, currently always null
 
 `id`
-: - `1`
-  - ID der Chat-Sitzung
+:   - `1`
+    - ID of Chat Session
 
 `messages`
-: - (Array) - Array-Einträge enthalten diese Attribute:
-    - chat_session_id: `1`
-    - content: `Hello dear customer`
-    - created_at: `2021-03-25T10:26:35.977Z`
-    - created_by_id: `null`, `3`
-    - id: 1 updated_at: `2021-03-25T10:26:35.977Z`
-  - Array mit allen Nachrichten des Chats
+:   - (Array) - Array entries contain these attributes:
+      - chat_session_id: `1`
+      - content: `Hello dear customer`
+      - created_at: `2021-03-25T10:26:35.977Z`
+      - created_by_id: `null`, `3`
+      - id: 1
+      - updated_at: `2021-03-25T10:26:35.977Z`
+    - Array with all messages of chat
 
 `name`
-: - `null`, `John Doe`
-  - Name, den Agent für den Benutzer des Chats vergeben hat, falls vorhanden
+:   - `null`, `John Doe`
+    - Name agent set for chat user, if applicable
 
 `preferences`
-: - Enthält dies Attribute:
-    - dns_name: `host.domain.tld`
-    - geo_ip: `{}`
-    - participants: Array, `["47118371175780", "47118371850300"]`
-    - remote_ip: `192.168.2.19`
-    - url: `https://zammad.com/en/company/contact`
-  - Verschiedene interne Metadaten der `session_id`
+:   - Contains these attributes:
+      - dns_name: `host.domain.tld`
+      - geo_ip: `{}`
+      - participants: Array, `["47118371175780", "47118371850300"]`
+      - remote_ip: `192.168.2.19`
+      - url: `https://zammad.com/en/company/contact`
+    - Various internal Meta data of the session_id
 
 `session_id`
-: - `92f2909631f1ad5ff4d5d1e046952be8`
-  - Eindeutige Session-ID
+:   - `92f2909631f1ad5ff4d5d1e046952be8`
+    - Unique Session ID
 
 `state`
-: - `closed`
-  - Aktueller Status der Chatsitzung
+:   - `closed`
+    - Current state of chat session
 
 `tags`
-: - (Array), `["order", "refund"]`
-  - Tags, die der Agent auf die Chat-Sitzung anwendet, falls vorhanden
+:   - (Array), `["order", "refund"]`
+    - Tags applied to Chat Session by agent, if applicable
 
 `updated_at`
-: - `2021-03-25T10:27:03.341Z`
-  - Letzte Aktualisierung
+:   - `2021-03-25T10:27:03.341Z`
+    - Last update
 
 `updated_by_id`
-: - `null`, `3`
-  - ID des Benutzers, der die Sitzung zuletzt aktualisiert hat, kann `null` sein
+:   - `null`, `3`
+    - User ID that last updated session, may be null
 
 `user`
-: - \#\{user object\}
-  - Vollständiger Payload des Chat-Agenten. Siehe Benutzer für weitere Informationen
+:   - \#\{user object\}
+    - Complete Payload of the chat agent Please see User for more
 
 `user_id`
-: - `3`
-  - Benutzer-ID des Chat-Agenten
+:   - `3`
+    - User ID of chat agent

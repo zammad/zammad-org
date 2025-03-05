@@ -63,12 +63,12 @@ Required permission: `admin.user` **or** `ticket.agent`
 
 Agents can't set user passwords, roles or group permission. Instead
 Zammad will apply the default sign up role. Check Zammad's admin interface
-under *Manage > Roles* and check which is selected as **Default at signup**.
+under _Manage > Roles_ and check which is selected as **Default at signup**.
 
 Technically, unauthenticated user creation is possible if you manage
 to provide the required CSRF token (out of scope of this
 documentation). If you don't want that, consider
-disabling user registration under *Settings > Security > Base* by setting
+disabling user registration under _Settings > Security > Base_ by setting
 **New user accounts** to no.
 :::
 
@@ -103,7 +103,7 @@ Required permission: `admin.user` **or** `ticket.agent`
 
 Agents can't set user passwords, roles or group permission. Instead
 Zammad will apply the default sign up role. Check Zammad's admin interface
-under *Manage > Roles* and check which is selected as **Default at signup**.
+under _Manage > Roles_ and check which is selected as **Default at signup**.
 :::
 
 :::: details
@@ -135,10 +135,10 @@ remove references - thus potentially tickets!
 
 Removing users with references in e.g. activity streams is not possible
 via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
 Consider using Zammad's Data Privacy feature via UI for
-more control instead (admin interface under *System > Data privacy*).
+more control instead (admin interface under _System > Data privacy_).
 :::
 
 ::: details Show response

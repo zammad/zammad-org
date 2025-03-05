@@ -12,8 +12,8 @@ Zammad has different checklist endpoints:
 - [Checklist templates](#checklist-templates)
 
 :::info
-*Checklist templates* include their items whereas the *standard
-checklist* has a separate item endpoint.
+_Checklist templates_ include their items whereas the _standard
+checklist_ has a separate item endpoint.
 :::
 
 ## Checklists

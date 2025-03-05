@@ -15,10 +15,13 @@ Legen Sie die Adresse des Elasticsearch-Servers fest; passen Sie diese an
 Ihr Szenario an.
 
 Elasticsearch 7 / ohne `https`:
+
 ```sh
 zammad run rails r "Setting.set('es_url', 'http://localhost:9200')"
 ```
+
 Elasticsearch 8 / mit `https`:
+
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
@@ -28,6 +31,7 @@ zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
 ```
+
 ```sh
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
@@ -43,16 +47,19 @@ CERTIFICATE-----`).
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes Zertifikat unter
-*Einstellungen > Sicherheit > SSL-Zertifikate* ein.
+Go to the admin panel of Zammad and add your copied certificate under
+_Settings > Security > SSL Certificates_.
 
 ### Den Suchindex aufbauen/neu erstellen
 
 Ohne Angabe der zu verwendenden CPU-Kerne:
+
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
+
 Mit Angabe der zu verwendenden CPU-Kerne (Beispiel 8):
+
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
@@ -68,6 +75,7 @@ anwenden möchten. Weitere Informationen finden Sie in der
 Nützlich, wenn mehrere Dienste oder Zammad-Instanzen mit einem einzigen
 Elasticsearch-Server verbunden werden (um Namenskollisionen bei der
 Indizierung zu vermeiden).
+
 ```sh
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
@@ -78,14 +86,15 @@ Zammad unterstützt die Suche in Dateianhängen, was bedeutet, dass
 Elasticsearch auch diese indizieren muss. Eine Einschränkung dieser
 Indizierung kann helfen, Systemressourcen zu schonen.
 
-
 Dateien mit diesen Erweiterungen werden nicht indiziert:
+
 ```sh
 zammad run rails r "Setting.set('es_attachment_ignore',\
 [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )"
 ```
 
 Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:
+
 ```sh
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ```
@@ -145,6 +154,7 @@ unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschriebe
 #### Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist <Badge type="warning" text="only ES7" />
 
 Liste der installierten Elasticsearch-Plugins:
+
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
 ```
@@ -157,12 +167,15 @@ installieren, und prüfen Sie dann erneut:
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment
 ```
+
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
 ```
+
 ```sh
 systemctl restart elasticsearch
 ```
+
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
 ```
@@ -176,6 +189,7 @@ Neuindizierung verwendet werden sollen (Beispiel `[8]`):
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
+
 Dies sollte den Wiederaufbau der Indizes starten und den Fortschritt
 ausgeben:
 
@@ -192,6 +206,7 @@ Reloading data...
 
 [...]
 ```
+
 Je nach Systemleistung und Datenmenge kann dies eine Weile dauern. Bitte
 warten Sie bis diese Aufgabe vollständig abgeschlossen ist und Sie wieder in
 die Konsole sind.

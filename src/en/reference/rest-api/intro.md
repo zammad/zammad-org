@@ -17,16 +17,16 @@ There are API clients available. Please note that these clients may not
 provide access to all available endpoints listed here.
 
 - [Ruby Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  *(official)*
+  _(official)_
 - [PHP Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  *(official)*
-- [Python Client](https://pypi.org/project/zammad-py/){target=_blank} *(Third-Party)*
+  _(official)_
+- [Python Client](https://pypi.org/project/zammad-py/){target=_blank} _(Third-Party)_
 - [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
-  *(third-Party)*
+  _(third-Party)_
 - [Android API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
-  *(third-Party)*
+  _(third-Party)_
 - [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  *(third-Party; API client only, no "ready to use" app)*
+  _(third-Party; API client only, no "ready to use" app)_
 
 ## Authentication
 
@@ -40,7 +40,7 @@ This authentication method can be disabled and may not be available in
 your system.
 
 ```sh
-$ curl -u {username}:{password} https://{fqdn}/{endpoint}
+curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
 :::warning
@@ -56,15 +56,16 @@ This authentication method can be disabled and may not be available in
 your system.
 
 ```sh
-$ curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
+curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
 ### OAuth2 (token access)
+
 The token must be provided as HTTP header in your calls.
 This allows 3rd party applications to authenticate against Zammad.
 
 ```sh
-$ curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
+curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
 ## Endpoints and Example Data
@@ -187,7 +188,6 @@ attributes and a `total_count` of search results as well.
 <<< @/fixtures/rest-api/intro/get-full-search.json
 :::
 
-
 #### Only Total Count Parameter
 
 Using this `only_total_count` parameter will output only the amount of
@@ -257,10 +257,12 @@ created.
 Zammad allows you to sort your search results by field if needed.
 
 ### `sort_by`
+
 Append `?sort_by={row name}` to your query to sort by a specific row
 that appears in the search result.
 
 ### `order_by`
+
 Append `?order_by={direction}` to your query to switch in between
 ascending and descending order.
 

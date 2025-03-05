@@ -36,7 +36,6 @@ following** entities, it creates a new session for that user:
 - a `REMOTE_USER` web server environment variable
 - an `HTTP_REMOTE_USER` web server environment variable
 
-
 ::: info
 **Wait. SSO allows you to sign in with only a username?**
 
@@ -46,8 +45,8 @@ In principle, yes.
 
 In this guide, we configure our web server (Apache) to intercept all
 requests to the `/auth/sso` endpoint. Instead of forwarding them to
-Zammad, Apache initiates a three-sided login process (*Kerberos
-authentication*) between the itself, the user, and the Active
+Zammad, Apache initiates a three-sided login process (_Kerberos
+authentication_) between the itself, the user, and the Active
 Directory server.
 
 If Active Directory doesn't recognize the user or their password,
@@ -57,7 +56,7 @@ Zammad never sees the request, and the session is never created.
 
 It means there are many ways you could set up SSO—you don't need to
 follow this guide or even use Active Directory or Kerberos—but if you
-don't know what you're doing, you're going to end up with a *massive*
+don't know what you're doing, you're going to end up with a _massive_
 security hole.
 :::
 
@@ -84,7 +83,7 @@ You will need:
 For best results, set up the LDAP integration to make sure
 your Active Directory and Zammad user accounts are always in sync. You
 can find it in Zammad's admin interface under
-*Settings > Security > Third-party Applications*.
+_Settings > Security > Third-party Applications_.
 
 ## Step 1: Configure Active Directory
 
@@ -126,6 +125,7 @@ The commands below will prompt for the users password:
 ```sh
 setspn -s HTTP/<zammad-host> <service-acct>
 ```
+
 ```sh
 ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
         /mapuser <service-acct> \
@@ -140,7 +140,7 @@ ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
 
 The output of the command above contains important data for Step 2e below:
 
-```
+```ansi
 Using legacy password setting method
 Failed to set property 'servicePrincipalName' to 'HTTP/<zammad-host>' on Dn 'CN=Zammad Service,DC=<domain>,DC=<tld>': 0x13.
 WARNING: Unable to set SPN mapping data.
@@ -179,12 +179,15 @@ configured and running.
 :::
 
 Turn off nginx:
+
 ```sh
 systemctl stop nginx
 ```
+
 Keep it off after reboot:
+
 ```sh
-$ systemctl disable nginx
+systemctl disable nginx
 ```
 
 If you wish to minimize downtime, you can save this step for last; just bear
@@ -195,18 +198,23 @@ If for any reason you can't complete this tutorial, simply turn off Apache
 and restore NGINX:
 
 ::: details
+
 ```sh
 systemctl stop apache2
 ```
+
 ```sh
 systemctl disable apache2
 ```
+
 ```sh
 systemctl enable nginx
 ```
+
 ```sh
 systemctl start nginx
 ```
+
 :::
 
 ### 2b. Pre-Configure Apache
@@ -224,6 +232,7 @@ guide](/en/tutorials/webserver-config) before continuing.
 ```sh
 apt update
 ```
+
 ```sh
 apt install krb5-user libapache2-mod-auth-gssapi
 ```
@@ -239,17 +248,17 @@ yum install krb5-workstation mod_auth_kerb
 ```sh
 zypper ref
 ```
+
 ```sh
 zypper install krb5-client apache2-mod_auth_kerb
 ```
-:::
 
+:::
 
 ### 2d. Enable Apache Modules
 
 SSO requires modules that are not enabled by default. By default you can use
 `a2enmod` to do so.
-
 
 ::: tabs
 
@@ -258,6 +267,7 @@ SSO requires modules that are not enabled by default. By default you can use
 ```sh
 a2enmod auth_gssapi rewrite
 ```
+
 ```sh
 systemctl restart apache2
 ```
@@ -267,6 +277,7 @@ systemctl restart apache2
 ```sh
 a2enmod auth_kerb rewrite
 ```
+
 ```sh
 systemctl restart apache2
 ```
@@ -276,7 +287,7 @@ systemctl restart apache2
 add/uncomment the appropriate `LoadModule` statements in your Apache
 config:
 
-```
+```apache
 # /etc/httpd/conf/httpd.conf
 
 LoadModule auth_kerb_module /usr/lib/apache2/modules/mod_auth_kerb.so
@@ -288,7 +299,7 @@ LoadModule rewrite_module modules/mod_rewrite.so
 ### 2e. Configure Kerberos
 
 Kerberos realm configuration is how you tell the Zammad server how to reach
-the *domain controller* (Active Directory server).
+the _domain controller_ (Active Directory server).
 
 Replace the following placeholders in the sample config below:
 
@@ -297,7 +308,7 @@ Replace the following placeholders in the sample config below:
 - `<master-domain-controller>`: Master domain controller IP/FQDN (must not
   be read-only, but can be the same as `<domain-controller>`)
 
-```
+```ini
 # /etc/krb5.conf
 
 [libdefaults]
@@ -332,7 +343,7 @@ Replace the following placeholders in the sample config below:
 
 ### 2f. Generate Keytab
 
-Apache needs a Kerberos *keytab* (key table) to manage its shared secrets
+Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets
 with the domain controller.
 
 Replace the following placeholders in the commands below:
@@ -346,26 +357,35 @@ The secret key and version number were found in `sso-register-spn` (Step 1d)
 above.
 
 Enter ktutil:
+
 ```sh
 ktutil
 ```
+
 Add keytab:
+
 ```sh
 ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts
 Key for HTTP/<zammad-host>@<domain> (hex): <secret-key>
 ```
+
 Confirm the entry was added successfully:
+
 ```sh
 ktutil: list
 slot KVNO Principal
 ---- ---- ---------------------------------------------------------------
    1    3 HTTP/<zammad-host>@<DOMAIN>
 ```
+
 Write keytab to disk:
+
 ```sh
 ktutil: wkt /root/zammad.keytab
 ```
+
 Leave ktutil:
+
 ```sh
 ktutil: quit
 ```
@@ -380,9 +400,11 @@ appropriate permissions:
 ```sh
 mv /root/zammad.keytab /etc/apache2/
 ```
+
 ```sh
 chown root:www-data /etc/apache2/zammad.keytab
 ```
+
 ```sh
 chmod 640 /etc/apache2/zammad.keytab
 ```
@@ -392,12 +414,15 @@ chmod 640 /etc/apache2/zammad.keytab
 ```sh
 mv /root/zammad.keytab /etc/httpd/
 ```
+
 ```sh
 chown root:apache /etc/httpd/zammad.keytab
 ```
+
 ```sh
 chmod 640 /etc/httpd/zammad.keytab
 ```
+
 :::
 
 ### 2g. Configure Apache
@@ -409,7 +434,6 @@ Replace the following placeholders in the command below:
 
 - `<zammad-host>`: Zammad FQDN
 - `<domain>`: Windows domain
-
 
 ::: tabs
 
@@ -462,6 +486,7 @@ The configuration for CentOS and OpenSUSE below contains two
    RequestHeader set X-Forwarded-User "%{RU}e" env=RU
 </LocationMatch>
 ```
+
 :::
 
 ### 2g. Restart Apache to Apply Changes
@@ -473,7 +498,7 @@ systemctl restart apache2
 ## Корак 3: Укључите SSO пријаву за Zammad
 
 Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-*Settings > Security > Third-Party Applications*
+_Settings > Security > Third-Party Applications_
 
 ::: tip
 On older versions of Zammad, visit `https://your.zammad.host/auth/sso`
@@ -485,9 +510,9 @@ to sign in.
 For the full SSO experience (i.e. for passwordless one-click sign-in),
 Zammad users must:
 
-1.  be on the Active Directory server's local intranet; and
-2.  modify their network settings for the Zammad host to be treated as a
-    local intranet server.
+1. be on the Active Directory server's local intranet; and
+2. modify their network settings for the Zammad host to be treated as a
+   local intranet server.
 
 Without this step, users must enter their Active Directory credentials
 during SSO.
@@ -501,12 +526,12 @@ This setting can be centrally managed across the entire intranet using
 a **group policy object** (GPO).
 :::
 
-1. Add your Zammad FQDN in Internet Options under *Security > Local
-   Intranet > Sites > Advanced*.
+1. Add your Zammad FQDN in Internet Options under _Security > Local
+   Intranet > Sites > Advanced_.
 2. Select "Require server verification (https:) for all sites in this
    zone".
-3. Under *Security level for this zone > Custom level... > Settings
-   \> User Authentication > Logon*, select "Automatic logon only in
+3. Under _Security level for this zone > Custom level... > Settings
+   \> User Authentication > Logon_, select "Automatic logon only in
    Intranet Zone".
 
 === Firefox
@@ -516,11 +541,11 @@ This option cannot be centrally managed because it is set in the
 browser rather than Windows Settings.
 :::
 
-1.  Enter `about:config` in the address bar. Click **Accept the risk and
-    continue**.
-2.  Search for the `network.negotiate-auth.trusted-uris` option.
-3.  Double-click to edit, then add your Zammad FQDN.
-4.  Restart Firefox to apply your changes.
+1. Enter `about:config` in the address bar. Click **Accept the risk and
+   continue**.
+2. Search for the `network.negotiate-auth.trusted-uris` option.
+3. Double-click to edit, then add your Zammad FQDN.
+4. Restart Firefox to apply your changes.
 
 ::::
 
@@ -542,6 +567,7 @@ the service to apply the changes.
 :::
 
 #### An unsupported mechanism was requested
+
 Does your Active Directory service account have **Kerberos AES 256-bit
 encryption** enabled?
 
@@ -550,33 +576,38 @@ LDAP Wiki has [more information about Kerberos encryption
 types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
 #### Failed to verify krb5 credentials: Key version is not available
+
 Did you use the exact **version number** (`vno`) provided by `ktpass`
 when `generating your keytab <sso-generate-keytab>`?
 
 Try generating it again, just to be sure.
 
 #### Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)
+
 Does the **service name** you provided to `setspn` exactly match the one
 you used when `generating your keytab <sso-generate-keytab>`?
 
 Try generating it again, just to be sure.
 
 #### No key table entry found for HTTP/FQDN@DOMAIN
+
 Does your virtual host configuration's `KrbServiceName` setting exactly
 match the **service name** you provided to `setspn`?
 
 This setting is case-sensitive.
 
 #### Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
+
 Is your Zammad host accessible at an FQDN? This error may indicate that you
 configured your Zammad host as a numeric IP address instead.
 
 #### Cannot decrypt ticket for HTTP/FQDN@DOMAIN
+
 Did you make sure to change the password on your Active Directory service
-account *after enabling 256-bit AES encryption?*
+account _after enabling 256-bit AES encryption?_
 
 And did you make sure to register the SPN (with `ktpass`) and generate your
-keytab (with `ktutil`) *after changing your password?*
+keytab (with `ktutil`) _after changing your password?_
 
 Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.
 If no output is returned, you're good - if you see "kinit:
@@ -585,6 +616,7 @@ credentials provided were wrong or you used `/pass *` during ktpass
 command.
 
 #### Failed when verifying KDC" and "failed to verify krb5 credentials: Decrypt integrity check failed
+
 Ensure `KrbServiceName` is the correct ServiceName provided via setspn.
 
 Ensure your Active Directory supports the encryption method configured.

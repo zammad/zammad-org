@@ -21,11 +21,13 @@ aktuelle stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` �
 ## Paket-Installation aktualisieren
 
 ### Zammad stoppen
+
 ```sh
 systemctl stop zammad
 ```
 
 ### Backup von Zammad
+
 Erstellen Sie ein Backup. Sie können das [Backup
 Script](/de/tutorials/backup-restore) verwenden, das mit dem Zammad-Paket
 ausgeliefert wird.
@@ -44,63 +46,88 @@ in den folgenden Befehlen zu sehen.
 :::tabs
 
 === Ubuntu/Debian
-Update Packet-Liste:
+Update package lists:
+
 ```sh
 apt update
 ```
-Update für Zammad deaktivieren:
+
+Disable updates for Zammad:
+
 ```sh
 apt-mark hold zammad
 ```
-Alle Pakete außer Zammad aktualisieren:
+
+Update all packages except Zammad:
+
 ```sh
 apt upgrade
 ```
-Re-Aktivierung der Updates für Zammad:
+
+Re-enable updates for Zammad:
+
 ```sh
 apt-mark unhold zammad
 ```
-Update von Zammad:
+
+Update Zammad:
+
 ```sh
 apt upgrade
 ```
 
 === OpenSUSE/SLES
 
-Update Packet-Liste
+Update package lists:
+
 ```sh
 zypper refresh
 ```
-Update für Zammad deaktivieren:
+
+Disable updates for Zammad:
+
 ```sh
 zypper addlock zammad
 ```
-Alle Pakete außer Zammad aktualisieren:
+
+Update all packages except Zammad:
+
 ```sh
 zypper update
 ```
-Re-Aktivierung der Updates für Zammad:
+
+Re-enable updates for Zammad:
+
 ```sh
 zypper removelock zammad
 ```
-Update von Zammad:
+
+Update Zammad:
+
 ```sh
 zypper update
 ```
+
 === CentOS/RHEL
 
-Update Packet-Liste:
+Update package lists:
+
 ```sh
 yum check-update
 ```
-Alle Pakete außer Zammad aktualisieren:
+
+Update all packages except Zammad:
+
 ```sh
 yum upgrade --exclude zammad
 ```
-Update von Zammad:
+
+Update Zammad:
+
 ```sh
 yum upgrade
 ```
+
 :::
 
 ### Zusätzliche Schritte
@@ -122,6 +149,7 @@ Ingest-Attachment-Plugin nicht mehr notwendig, sondern ist Bestandteil von
 Elasticsearch selbst).
 
 ### Zammad starten
+
 ```sh
 systemctl start zammad
 ```
@@ -147,12 +175,15 @@ Portainer](/screenshots/installation/portainer-stack-update.png)
 ```sh
 cd zammad-docker-compose
 ```
+
 ```sh
 git pull
 ```
+
 ```sh
 docker-compose pull
 ```
+
 ```sh
 docker-compose up -d
 ```

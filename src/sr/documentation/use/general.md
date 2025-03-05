@@ -15,7 +15,7 @@ title: Уопштено
 документацији као и нека општа објашњења и савети.
 
 This documentation is divided into different sections. Currently you are
-reading the *General* section. Use the left sidebar to navigate to your
+reading the _General_ section. Use the left sidebar to navigate to your
 desired information or the search in the header.
 
 ## Zammad Beginner

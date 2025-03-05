@@ -1,6 +1,5 @@
 ---
 order: 3
-title: Webserver-Konfiguration
 ---
 
 # Webserver-Konfiguration
@@ -148,6 +147,7 @@ korrekten Pfad in Ihrer Webserver-Konfiguration finden. Suchen Sie nach
 openssl dhparam -out <path>/dhparam.pem 4096
 
 ```
+
 #### Schritt 3 - Anpassen der HTTPS-Konfiguration
 
 Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
@@ -176,21 +176,24 @@ Modul dort nicht verfügbar ist.
 ```sh
 a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
+
 ```sh
 systemctl restart apache2
 ```
 
 :::details Config for CentOS
-Fügen Sie die entsprechenden ``LoadModule``-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare
+Add/uncomment the appropriate ``LoadModule`` statements in your Apache config
 in ``/etc/httpd/conf/httpd.conf``:
-```
+
+```apache
 LoadModule headers_module modules/mod_headers.so
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_html_module modules/mod_proxy_html.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
 LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so
 ```
-Starten Sie Ihren Webserver neu, nachdem Sie die Konfiguration gespeichert haben.
+
+Restart your webserver after saving the configuration.
 
 :::
 
@@ -248,26 +251,30 @@ nur die ``sites-available``-Ordner betreffen.
 
 === Ubuntu, Debian, OpenSUSE
 
-Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/apache2/apache2.conf``)
-vorhanden ist:
-```
+Make sure the following line is present in your Apache config
+(`/etc/apache2/apache2.conf`):
+
+```apache
 IncludeOptional sites-enabled/*.conf
 ```
 
-Aktivieren Sie es:
+Enable it:
+
 ```sh
 a2ensite zammad
 ```
 
 === CentOS
 
-Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/httpd/conf/httpd.conf``)
-vorhanden ist:
-```
+Make sure the following line is present in your Apache config
+(`/etc/httpd/conf/httpd.conf`):
+
+```apache
 IncludeOptional sites-enabled/*.conf
 ```
 
-Aktivieren Sie es:
+Enable it:
+
 ```sh
 ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 ```
@@ -282,4 +289,3 @@ Konfigurationsänderungen zu übernehmen.
 Danach sollten Sie von unserem Einrichtungsassistenten begrüßt werden.
 Fahren Sie mit den [ersten Schritten in Zammad](/de/tutorials/first-steps)
 fort.
-

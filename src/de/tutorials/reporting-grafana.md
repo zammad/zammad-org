@@ -52,14 +52,15 @@ Alles andere hängt von Ihrer Umgebung ab und ist nicht Gegenstand dieser Dokume
 Ersetzen Sie `zammad_production_` durch Ihr passendes Präfix.
 
 ::: details How to query the index?
-Passen Sie den folgenden Befehl an Ihre Umgebung an:
+Adjust the following command to your environment:
 
 ```sh
 curl http://localhost:9200/_aliases?pretty=true
 ```
 
-Daraufhin erhalten Sie eine Ausgabe wie die folgende:
-```
+This will return an output like the following:
+
+```json
 {
   "zammad_production_knowledge_base_translation" : {
     "aliases" : { }
@@ -99,6 +100,7 @@ Daraufhin erhalten Sie eine Ausgabe wie die folgende:
   }
 }
 ```
+
 :::
 ::::
 
@@ -144,10 +146,10 @@ finden.
 
 ### Importieren eines Dashboards
 
-Wählen Sie in Grafana *➕ > Import* (oder eine andere Stelle, die Ihnen den Import
-eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
-von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge
-wie <Badge type="info" text="12345"/> den Überschriften der nächsten Abschnitte angehängt ist.
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
+a dashboard) and either upload the json file you
+downloaded from Github or use the grafana.com ID, provided as badge
+like <Badge type="info" text="12345"/> attached to the next sections titles.
 
 Während des Imports können Sie einen Dashboard-Namen und einen Ordner
 angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung
@@ -162,7 +164,7 @@ Sie einfach nach demselben Namen suchen.
 
 - Ticket öffnen und schließen[^1]
 - Erstellte Artikel
-- Ticket SLA (in Zeit *und* Verletzung) pro Typ[^1][^2]
+- ticket SLA (in time _and_ violation) per type[^1][^2]
 
 #### Ticket und Artikel Meta-Informationen
 
@@ -231,9 +233,8 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
 - `ES - CTI Log`
 
-
 [^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
-    bedeutet, dass nur der *letzte* Wert des betreffenden Feldes angezeigt werden kann.
+    means we can only display the _last_ value of the field in question.
 
 [^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
     Verletzung.

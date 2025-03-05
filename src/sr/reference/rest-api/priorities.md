@@ -86,7 +86,7 @@ Please note that removing priorities cannot be undone.
 
 Removing ticket priorities with references in tickets is not possible
 via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
 Consider either setting said priority to `active: false` or adjust all
 tickets with the to remove priority to another priority.

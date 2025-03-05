@@ -8,7 +8,7 @@ order: 2
 ::: warning
 Creating, changing or removing states via below endpoints is not
 recommended! You can do this in Zammad's UI. To do so, go to the
-admin interface to *System > Objects > Ticket*.
+admin interface to _System > Objects > Ticket_.
 :::
 
 ## List
@@ -100,7 +100,7 @@ Please note that removing ticket states cannot be undone.
 
 Removing ticket states with references in tickets is not possible via
 API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is *not* a bug.
+`"error": "Can't delete, object has references."`. This is _not_ a bug.
 
 Consider either setting said state to `active: false` or adjust all
 tickets with the to remove state to another state.
