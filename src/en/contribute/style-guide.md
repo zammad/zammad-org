@@ -45,11 +45,12 @@ in the glossary and linked to
 
 ## Formatting
 
-| Type in Zammad | Highlighting                  | Markdown syntax                 |
-|----------------|-------------------------------|---------------------------------|
-| Buttons        | `Sign in`                   | \`\`Sign in\`\`                 |
-| Fields         | **Name**                      | \*\*Name\*\*                    |
-| Location/path  | _Settings > Channels > Email_ | \*Settings > Channels > Email\* |
+| Type in Zammad      | Highlighting                  | Markdown syntax                 |
+|---------------------|-------------------------------|---------------------------------|
+| Buttons             | `Sign in`                     | \`Sign in\`                     |
+| Fields              | **Name**                      | \*\*Name\*\*                    |
+| Location/path       | _Settings > Channels > Email_ | \*Settings > Channels > Email\* |
+| Keyboard shortcut   | [[x]]                         | \[\[x\]\]                       |
 
 ## Heading Structure
 

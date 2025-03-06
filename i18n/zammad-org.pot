@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-06 10:35+0100\n"
+"POT-Creation-Date: 2025-03-06 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,9 +132,10 @@ msgstr ""
 msgid "https://github.com/zammad"
 msgstr ""
 
-#. type: Hash Value: translations button buttonText
-#: .vitepress/search.en.yaml:1
-#, no-wrap
+#. type: Title #
+#: .vitepress/search.en.yaml:1 src/en/documentation/use/guides/search.md:1
+#: src/en/documentation/use/guides/search.md:6
+#, markdown-text, no-wrap
 msgid "Search"
 msgstr ""
 
@@ -434,8 +435,9 @@ msgid ""
 "is a good starting point."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/contribute/contribute.md:86
+#: src/en/documentation/use/guides/search.md:8
 #, markdown-text, no-wrap
 msgid "Basics"
 msgstr ""
@@ -799,28 +801,30 @@ msgid "Formatting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:53
+#: src/en/contribute/style-guide.md:54
 #, markdown-text, no-wrap
 msgid ""
-"| Type in Zammad | Highlighting                  | Markdown syntax                 "
+"| Type in Zammad      | Highlighting                  | Markdown syntax                 "
 "|\n"
-"|----------------|-------------------------------|---------------------------------|\n"
-"| Buttons        | `Sign in`                   | \\`\\`Sign in\\`\\`                 "
+"|---------------------|-------------------------------|---------------------------------|\n"
+"| Buttons             | `Sign in`                     | \\`Sign in\\`                     "
 "|\n"
-"| Fields         | **Name**                      | \\*\\*Name\\*\\*                    "
+"| Fields              | **Name**                      | \\*\\*Name\\*\\*                    "
 "|\n"
-"| Location/path  | _Settings > Channels > Email_ | \\*Settings > Channels > "
-"Email\\* |\n"
+"| Location/path       | _Settings > Channels > Email_ | \\*Settings > "
+"Channels > Email\\* |\n"
+"| Keyboard shortcut   | [[x]]                         | \\[\\[x\\]\\]                       "
+"|\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:54
+#: src/en/contribute/style-guide.md:55
 #, markdown-text, no-wrap
 msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:59
+#: src/en/contribute/style-guide.md:60
 #, markdown-text
 msgid ""
 "Every documentation file should include a title on top level (#). Lower "
@@ -829,49 +833,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:61
+#: src/en/contribute/style-guide.md:62
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:63
+#: src/en/contribute/style-guide.md:64
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:65
+#: src/en/contribute/style-guide.md:66
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:67
+#: src/en/contribute/style-guide.md:68
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:69
+#: src/en/contribute/style-guide.md:70
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:71
+#: src/en/contribute/style-guide.md:72
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:72
+#: src/en/contribute/style-guide.md:73
 #, markdown-text, no-wrap
 msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:74
+#: src/en/contribute/style-guide.md:75
 #, markdown-text, no-wrap
 msgid ""
 "This section title uses a badge of type \"warning\". There are other badges "
@@ -879,55 +883,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:76
+#: src/en/contribute/style-guide.md:77
 #, markdown-text
 msgid "<https://vitepress.dev/reference/default-theme-badge#usage>"
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:77
+#: src/en/contribute/style-guide.md:78
 #, markdown-text, no-wrap
 msgid "Custom boxes"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:79
+#: src/en/contribute/style-guide.md:80
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:83
+#: src/en/contribute/style-guide.md:84
 #, no-wrap
 msgid "This is a tip.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:87
+#: src/en/contribute/style-guide.md:88
 #, no-wrap
 msgid "This is a warning.\n"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:91
+#: src/en/contribute/style-guide.md:92
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:95
+#: src/en/contribute/style-guide.md:96
 #, no-wrap
 msgid "This is a details block.\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:99
+#: src/en/contribute/style-guide.md:100
 #, markdown-text, no-wrap
 msgid "Definition lists"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:103
+#: src/en/contribute/style-guide.md:104
 #, markdown-text, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -935,7 +939,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:106
+#: src/en/contribute/style-guide.md:107
 #, markdown-text, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" "
@@ -948,7 +952,7 @@ msgstr ""
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:199
+#: src/en/documentation/use/start-using-zammad.md:138
 #: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
 #: src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
@@ -2370,6 +2374,258 @@ msgid ""
 "button."
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:14
+#, markdown-text
+msgid ""
+"If you search for tickets, user and organizations, you can use the "
+"search. It is located in the top left corner in the navigation bar. Either "
+"select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all "
+"fitting items for which you have at least view or read permissions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:16
+#, markdown-text
+msgid ""
+"![Screenshot shows search results in navigation "
+"bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:19
+#, markdown-text
+msgid ""
+"The search covers basically all information which is stored in Zammad and "
+"which got indexed by Elasticsearch, like:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:24
+#, markdown-text
+msgid "Message subject and text"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:24
+#, markdown-text
+msgid "Names and email addresses"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:24
+#, markdown-text
+msgid "Text in file attachments"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:24
+#, markdown-text
+msgid "User and organizations details (like notes, names, etc.)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:27
+#, markdown-text
+msgid ""
+"When the search field is active, you can see your last viewed items as well "
+"as your recent search queries."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:32
+#, markdown-text
+msgid ""
+"After entering a search term, you immediately see a preview of the search "
+"results. These results are separated by type to make sure you won't get lost "
+"in the results. Selecting one of those results will open a new navigation "
+"tab (if not already opened) with the item."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:36
+#, markdown-text
+msgid ""
+"If you press [[enter]] or click on `detailed search`, Zammad displays a page "
+"with search results. There you can narrow down your search by selecting a "
+"specific object type (e.g. customer) in the tablist below the search bar."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:38
+#, markdown-text
+msgid ""
+"![Screenshot shows detailed "
+"search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:46
+#, markdown-text
+msgid ""
+"If you are still facing many results, try to narrow down your search by "
+"adding additional terms or use the sorting of the columns. To sort the "
+"results based on the column's values, click on a column header. The sorting "
+"is indicated by an arrow. Click on the column again to change the sorting "
+"from ascending to descending and back. If you still can't find what you are "
+"looking for, have a look at the next section where you can learn how to "
+"search for specific attributes like creation date or the ticket owner's "
+"email address."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/search.md:47
+#, markdown-text, no-wrap
+msgid "Advanced"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:53
+#, markdown-text
+msgid ""
+"You can narrow down your search results to specific attributes, even in the "
+"search field in the navigation bar. Read on for some examples and "
+"explanations.  For a more detailed list of available attributes, please take "
+"a look at the [indexed attributes by "
+"Elasticsearch](/en/reference/es-indexed-attributes)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:54
+#, markdown-text, no-wrap
+msgid "Syntax"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:58
+#, markdown-text
+msgid "Search for a specific customer by using `customer.attribute`:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:59
+#, no-wrap
+msgid "customer.firstname: John\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:64
+#, markdown-text
+msgid "or:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:65
+#, no-wrap
+msgid "customer.lastname: Doe\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:71
+#, markdown-text
+msgid ""
+"If you want to run a more complex search, you can use conditions with `()` "
+"and `AND`/`OR` options:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:72
+#, no-wrap
+msgid "state.name: open AND (article.from:me OR article.from:somebody)\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:76
+#, markdown-text, no-wrap
+msgid "Additional Examples"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:87
+#, markdown-text, no-wrap
+msgid ""
+"| Attribute     | possible Values                       | Example                                                                                        "
+"| Description                                                                                                                                                                                                                                          "
+"|\n"
+"|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+"| number        | 1118566                               | number:1118566 "
+"number:11185\\*                                                                  "
+"| Search for a ticket number                                                                                                                                                                                                                            "
+"|\n"
+"| title         | some title                            | title:\"some "
+"title\" title:Printer title: \"some ti\\*\"                                            "
+"| If you need to use spacings in the search phrase, use quotes. Zammad will "
+"do a AND-Search over the given words. You can also use a single keyword "
+"without quotation.                                                                                 "
+"|\n"
+"| created_at    | 2018-11-18                            | "
+"created_at:2018-11-18 created_at:\\[2018-11-15 TO 2018-11-18\\] "
+"created_at:\\>now-1h              | You can either use a simple date, a "
+"date-range or \\>now-xh. Please note that the date format needs to be "
+"YYYY-MM-DD                                                                                                                                  "
+"|\n"
+"| state.name    | new open closed                       | state.name: new "
+"state.name:new OR open                                                         "
+"| You can filter for specific ticket states (and even combine them with an "
+"OR). Please note that you need to use the english namings for states, unless "
+"you have custom ticket states defined in your instance.                                        "
+"|\n"
+"| article_count | 5 \\[5 TO 10\\] \\[5 TO \\*\\] \\[\\* TO 5\\] | "
+"article_count:5 article_count: \\[5 TO 10\\] article_count:\\[5 TO \\*\\] "
+"article_count:\\[\\* TO 5\\] | You can search for Tickets with a specific "
+"number of articles (you can even search for everything with 5 or more "
+"articles or even up to 5 articles, if needed).                                                                                      "
+"|\n"
+"| article.from  | \\*bob\\*                               | "
+"article.from:\\*bob\\*                                                                           "
+"| Show all tickets that contain articles from \"Bob\"                                                                                                                                                                                                    "
+"|\n"
+"| article.body  | heat heat~ /joh?n(ath\\[oa\\]n)/        | "
+"article.body:heat article.body:heat~ articlebody:/joh?n(ath\\[oa\\]n)/                           "
+"| First example shows every ticket containing the word \"heat\" - you can "
+"also use the fuzzy operator \"~\" to search for similar words like e.g. like "
+"\"head\". Zammad will also allow you to use regular expressions, where ever "
+"the attributes allows it. |\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:88
+#, markdown-text, no-wrap
+msgid "Combining Search Phrases"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:93
+#, markdown-text
+msgid ""
+"You can combine search phrases by using `AND`, `OR` and `TO` and even "
+"separate them with `()`. If you want to exclude search results, you can use "
+"negation `!`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:99
+#, markdown-text, no-wrap
+msgid ""
+"| Search phrase                                                                               "
+"| Description                                                                                                       "
+"|\n"
+"|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
+"tags:feedback)                 | Show every ticket that state is either "
+"closed or open and has priority normal or the tag feedback.                "
+"|\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
+"tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect "
+"that we don't want the ticket to contain anything matching to \"Zammad\" |\n"
+"| owner.email:<bob@example.net> AND state.name:(open OR new)                                  "
+"| Show Tickets from <bob@example.net> that are either open or new                                                   "
+"|\n"
+"| state.name:pending\\* AND article_count:\\[1 TO 5\\]                                           "
+"| Show everything with any pending state and an article count of 1 to 5.                                            "
+"|\n"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #, no-wrap
@@ -3114,7 +3370,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:100
 #: src/en/documentation/use/start-using-zammad.md:74
-#: src/en/documentation/use/start-using-zammad.md:180
+#: src/en/documentation/use/start-using-zammad.md:119
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
@@ -3495,161 +3751,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:110
+#: src/en/documentation/use/start-using-zammad.md:111
 #, markdown-text
-msgid "The search covers:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:115
-#, markdown-text
-msgid "Message subject and text"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:115
-#, markdown-text
-msgid "Names and email addresses"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:115
-#, markdown-text
-msgid "Text in file attachments"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:115
-#, markdown-text
-msgid "User and organizations details (like notes, names, etc.)"
+msgid ""
+"After activating the search field, you can see your last viewed items as "
+"well as your last search queries."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:120
+#: src/en/documentation/use/start-using-zammad.md:116
 #, markdown-text
 msgid ""
-"When you enter a search term, you immediately see a preview of the search "
-"results. If you press enter or click on \"Show Search Details\", Zammad "
+"By entering a search term, you immediately see a preview of the search "
+"results. If you press [[enter]] or click on `detailed search`, Zammad "
 "displays a page with search results. There you can differentiate by object "
 "type (e.g.  customer), what you are searching."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:123
+#: src/en/documentation/use/start-using-zammad.md:118
 #, markdown-text
-msgid ""
-"Are you a power user and want to have more powerful feature? Have a look at "
-"the \"Advanced search\" block below."
-msgstr ""
-
-#. type: Fenced div block (details Advanced search)
-#: src/en/documentation/use/start-using-zammad.md:124
-#, no-wrap
-msgid ""
-"\n"
-"You can narrow down your search results to specific attributes. Read on "
-"for\n"
-"some examples and explanations. For a more detailed list of available\n"
-"attributes please take a look at the\n"
-"[indexed attributes by "
-"Elasticsearch](/en/reference/es-indexed-attributes).\n"
-"\n"
-"**Example**:\n"
-"\n"
-"Search for a specific customer by using\n"
-"`customer.attribute`:\n"
-"\n"
-"```plain\n"
-"customer.firstname: John\n"
-"```\n"
-"\n"
-"or:\n"
-"\n"
-"```plain\n"
-"customer.lastname: Doe\n"
-"```\n"
-"\n"
-"If you want to run a more complex search, you can use conditions with\n"
-"`()` and `AND`/`OR` options:\n"
-"\n"
-"```plain\n"
-"state.name: open AND (article.from:me OR article.from:somebody)\n"
-"```\n"
-"\n"
-"**Available Attributes**:\n"
-"\n"
-"| Attribute     | possible Values                       | Example                                                                                        "
-"| Description                                                                                                                                                                                                                                          "
-"|\n"
-"|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n"
-"| number        | 1118566                               | number:1118566 "
-"number:11185\\*                                                                  "
-"| Search for a ticket number                                                                                                                                                                                                                            "
-"|\n"
-"| title         | some title                            | title:\"some "
-"title\" title:Printer title: \"some ti\\*\"                                            "
-"| If you need to use spacings in the search phrase, use quotes. Zammad will "
-"do a AND-Search over the given words. You can also use a single keyword "
-"without quotation.                                                                                 "
-"|\n"
-"| created_at    | 2018-11-18                            | "
-"created_at:2018-11-18 created_at:\\[2018-11-15 TO 2018-11-18\\] "
-"created_at:\\>now-1h              | You can either use a simple date, a "
-"date-range or \\>now-xh. Please note that the date format needs to be "
-"YYYY-MM-DD                                                                                                                                  "
-"|\n"
-"| state.name    | new open closed                       | state.name: new "
-"state.name:new OR open                                                         "
-"| You can filter for specific ticket states (and even combine them with an "
-"OR). Please note that you need to use the english namings for states, unless "
-"you have custom ticket states defined in your instance.                                        "
-"|\n"
-"| article_count | 5 \\[5 TO 10\\] \\[5 TO \\*\\] \\[\\* TO 5\\] | "
-"article_count:5 article_count: \\[5 TO 10\\] article_count:\\[5 TO \\*\\] "
-"article_count:\\[\\* TO 5\\] | You can search for Tickets with a specific "
-"number of articles (you can even search for everything with 5 or more "
-"articles or even up to 5 articles, if needed).                                                                                      "
-"|\n"
-"| article.from  | \\*bob\\*                               | "
-"article.from:\\*bob\\*                                                                           "
-"| Show all tickets that contain articles from \"Bob\"                                                                                                                                                                                                    "
-"|\n"
-"| article.body  | heat heat~ /joh?n(ath\\[oa\\]n)/        | "
-"article.body:heat article.body:heat~ articlebody:/joh?n(ath\\[oa\\]n)/                           "
-"| First example shows every ticket containing the word \"heat\" - you can "
-"also use the fuzzy operator \"~\" to search for similar words like e.g. like "
-"\"head\". Zammad will also allow you to use regular expressions, where ever "
-"the attributes allows it. |\n"
-"\n"
-"**Combining Search Phrases**:\n"
-"\n"
-"You can combine search phrases by using `AND`, `OR` and `TO` and even\n"
-"separate them with `()`. If you want to exclude search results, you can "
-"use\n"
-"negation `!`.\n"
-"\n"
-"| Search phrase                                                                               "
-"| Description                                                                                                       "
-"|\n"
-"|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
-"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
-"tags:feedback)                 | Show every ticket that state is either "
-"closed or open and has priority normal or the tag feedback.                "
-"|\n"
-"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
-"tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect "
-"that we don't want the ticket to contain anything matching to \"Zammad\" |\n"
-"| owner.email:<bob@example.net> AND state.name:(open OR new)                                  "
-"| Show Tickets from <bob@example.net> that are either open or new                                                   "
-"|\n"
-"| state.name:pending\\* AND article_count:\\[1 TO 5\\]                                           "
-"| Show everything with any pending state and an article count of 1 to 5.                                            "
-"|\n"
-"\n"
+msgid "Have a look at the [search guide](guides/search) for more details."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:187
+#: src/en/documentation/use/start-using-zammad.md:126
 #, markdown-text
 msgid ""
 "Depending on the [notification "
@@ -3660,7 +3786,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:191
+#: src/en/documentation/use/start-using-zammad.md:130
 #, markdown-text
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
@@ -3669,7 +3795,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:196
+#: src/en/documentation/use/start-using-zammad.md:135
 #, markdown-text
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
@@ -3679,13 +3805,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:197
+#: src/en/documentation/use/start-using-zammad.md:136
 #, markdown-text, no-wrap
 msgid "Ticket Basics"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:204
+#: src/en/documentation/use/start-using-zammad.md:143
 #, markdown-text
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
@@ -3694,7 +3820,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
@@ -3702,7 +3828,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "You and your colleagues can see who is working on which customer request "
@@ -3710,7 +3836,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "The state of each request as well as the history (who did what?) is "
@@ -3718,13 +3844,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
@@ -3732,7 +3858,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:216
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
@@ -3740,7 +3866,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:220
+#: src/en/documentation/use/start-using-zammad.md:159
 #, markdown-text
 msgid ""
 "So, basically you can work with Zammad similar as with your email "
@@ -3749,7 +3875,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:243
+#: src/en/documentation/use/start-using-zammad.md:182
 #, markdown-text
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
@@ -3757,7 +3883,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:243
+#: src/en/documentation/use/start-using-zammad.md:182
 #, markdown-text, no-wrap
 msgid ""
 "  - **New**: State for new tickets on which no one has worked on. When\n"
@@ -3794,13 +3920,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:244
+#: src/en/documentation/use/start-using-zammad.md:183
 #, markdown-text, no-wrap
 msgid "Ticket Detail View"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:248
+#: src/en/documentation/use/start-using-zammad.md:187
 #, markdown-text
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
@@ -3808,7 +3934,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:255
+#: src/en/documentation/use/start-using-zammad.md:194
 #, markdown-text
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
@@ -3820,7 +3946,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:258
+#: src/en/documentation/use/start-using-zammad.md:197
 #, markdown-text
 msgid ""
 "Independent of the customer's article type, you can always add internal "
@@ -3829,13 +3955,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:259
+#: src/en/documentation/use/start-using-zammad.md:198
 #, markdown-text, no-wrap
 msgid "Updating your Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:266
+#: src/en/documentation/use/start-using-zammad.md:205
 #, markdown-text
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
@@ -3846,13 +3972,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:267
+#: src/en/documentation/use/start-using-zammad.md:206
 #, markdown-text, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:273
+#: src/en/documentation/use/start-using-zammad.md:212
 #, markdown-text
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
