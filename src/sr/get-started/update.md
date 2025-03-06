@@ -153,7 +153,7 @@ systemctl start zammad
 ## Update Docker Installation
 
 ::: warning
-Docker-Compose stack updates may require extra steps or introduce breaking
+Docker compose stack updates may require extra steps or introduce breaking
 changes. Always check the docker compose release notes for updating
 instructions first.
 :::

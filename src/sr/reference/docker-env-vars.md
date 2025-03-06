@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: 'Docker Environment Variables'
 ---
 
@@ -8,6 +8,11 @@ title: 'Docker Environment Variables'
 Find the available docker environment variables below with default values,
 if applicable. You might also be interested in the [environment variables
 documentation](/en/reference/env-vars).
+
+::: tip
+If you want to use a `.env` file, you can use the provided `.env.dist` file and copy it to `.env`. That way it will be
+picked up by Docker-Compose automatically and not overwritten during updates.
+:::
 
 ## Zammad
 

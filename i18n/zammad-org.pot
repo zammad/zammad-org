@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-06 11:47+0100\n"
+"POT-Creation-Date: 2025-03-06 14:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -474,7 +474,7 @@ msgid "New Documentation at next.zammad.org"
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:103 src/en/reference/docker-env-vars.md:11
+#: src/en/contribute/contribute.md:103 src/en/reference/docker-env-vars.md:16
 #, markdown-text, no-wrap
 msgid "Zammad"
 msgstr ""
@@ -1935,7 +1935,9 @@ msgstr ""
 #: src/en/documentation/use/faq.md:48 src/en/documentation/use/faq.md:52
 #: src/en/documentation/use/faq.md:58 src/en/documentation/use/faq.md:62
 #: src/en/documentation/use/faq.md:66 src/en/documentation/use/faq.md:70
-#: src/en/documentation/use/faq.md:74 src/en/reference/rest-api/articles.md:142
+#: src/en/documentation/use/faq.md:74
+#: src/en/get-started/installation/docker.md:128
+#: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
 #: src/en/reference/rest-api/calendar.md:42
@@ -4315,7 +4317,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Zammad can be deployed using Docker-Compose. You can even use graphical "
-"docker front ends like "
+"Docker front ends like "
 "[Portainer](https://www.portainer.io/){target=_blank}."
 msgstr ""
 
@@ -4379,7 +4381,7 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:34
 #, markdown-text
 msgid ""
-"The easiest way to get Zammad running is via a graphical docker UI. We "
+"The easiest way to get Zammad running is via a graphical Docker UI. We "
 "recommend [Portainer](https://www.portainer.io/){target=_blank}. For "
 "installation instructions, check out [Portainer's "
 "documentation](https://docs.portainer.io/){target=_blank}."
@@ -4400,103 +4402,110 @@ msgid ""
 "in the screenshot below."
 msgstr ""
 
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:41
-#, markdown-text, no-wrap
-msgid "Step 2: Build From Repository"
-msgstr ""
-
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:44
-#, markdown-text
-msgid "Switch to **Repository** build method and provide the information below:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:49
-#, markdown-text
-msgid "**Name**: enter a desired name of the stack"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:49
-#, markdown-text
-msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:49
-#, markdown-text
-msgid "**Repository reference**: `refs/heads/master`"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:49
-#, markdown-text
-msgid "**Compose path**: `docker-compose.yml` (default)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:54
-#, markdown-text
-msgid ""
-"Optional: if you need to provide environment variables, you can enter them "
-"in the **Environment variable** section or even upload a .env file. See [env "
-"template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank} "
-"as an example."
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:55
-#, markdown-text, no-wrap
-msgid "Step 3: Deploy the Stack"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:59
-#: src/en/get-started/installation/docker.md:104
-#, markdown-text
-msgid ""
-"After the stack is ready, you can access Zammad via the configured docker "
-"host and port, e.g. `http://localhost:8080/`."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:61
+#: src/en/get-started/installation/docker.md:42
 #, markdown-text
 msgid ""
 "![Screenshot in the Stacks section and highlighted \"Add "
 "stack\".](/screenshots/installation/portainer-stacks.png)"
 msgstr ""
 
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:43
+#, markdown-text, no-wrap
+msgid "Step 2: Build From Repository"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:63
+#: src/en/get-started/installation/docker.md:46
+#, markdown-text
+msgid "Switch to **Repository** build method and provide the information below:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:51
+#, markdown-text
+msgid "**Name**: enter a desired name of the stack"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:51
+#, markdown-text
+msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:51
+#, markdown-text
+msgid "**Repository reference**: `refs/heads/master`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:51
+#, markdown-text
+msgid "**Compose path**: `docker-compose.yml` (default)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:56
+#, markdown-text
+msgid ""
+"In some cases, our default environment is not what a Docker-Compose user is "
+"looking for. You can customize the stack using pre-defined scenarios and "
+"adjust environment variables. Jump to the [customization "
+"section](#customizing-the-zammad-stack) below to find more information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:58
 #, markdown-text
 msgid ""
 "![Stack creation with provided information in Repository "
 "screen](/screenshots/installation/portainer-stack-creation.png)"
 msgstr ""
 
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:59
+#, markdown-text, no-wrap
+msgid "Step 3: Deploy the Stack"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:62
+#, markdown-text
+msgid ""
+"Finally, click **Deploy the stack** button. The first time, it may take some "
+"time until the Docker images are fetched."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:65
+#, markdown-text
+msgid ""
+"After the stack is ready, you can access Zammad via the configured Docker "
+"host and port, e.g. `http://localhost:8080/`."
+msgstr ""
+
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:64
+#: src/en/get-started/installation/docker.md:66
 #, markdown-text, no-wrap
 msgid "Deployment with Docker-Compose"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:66
+#: src/en/get-started/installation/docker.md:68
 #, markdown-text, no-wrap
 msgid "Step 1: Clone the GitHub Repo"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:68
+#: src/en/get-started/installation/docker.md:70
 #, no-wrap
 msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:75
+#: src/en/get-started/installation/docker.md:76
 #, markdown-text
 msgid ""
 "Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
@@ -4505,7 +4514,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:76
+#: src/en/get-started/installation/docker.md:77
 #, markdown-text, no-wrap
 msgid "Step 2: Adjust Environment as Needed"
 msgstr ""
@@ -4514,71 +4523,125 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:82
 #, markdown-text
 msgid ""
-"In some cases our default environment is not what a docker-compose user is "
-"looking for. See [Docker Environment "
-"Variables](/en/reference/docker-env-vars.md) for details on which settings "
-"can be configured."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/get-started/installation/docker.md:83
-#, no-wrap
-msgid ""
-"If you want to use a `.env` file, you can use the provided `.env.dist`\n"
-"file and copy it to `.env`. That way it will be picked up by "
-"Docker-Compose\n"
-"automatically and not overwritten during updates.\n"
-"\n"
-"Zammad runs on port `8080` by default. If you want to use another port,\n"
-"you can set it via the variable `NGINX_EXPOSE_PORT`.\n"
+"In some cases, our default environment is not what a Docker-Compose user is "
+"looking for. You can customize the stack using pre-defined scenarios and "
+"adjust environment variables. Jump to the [Customizing the Zammad "
+"Stack](#customizing-the-zammad-stack) section below to find more "
+"information."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:92
+#: src/en/get-started/installation/docker.md:83
 #, markdown-text, no-wrap
 msgid "Step 3: Start the Stack"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:94
+#: src/en/get-started/installation/docker.md:85
 #: src/en/get-started/update.md:169
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:98
+#: src/en/get-started/installation/docker.md:89
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:95
+#, markdown-text
+msgid ""
+"Optional: Use an additional `.yml` file to use a pre-defines scenario. Read "
+"on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack) "
+"section."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:98
+#, markdown-text
+msgid ""
+"After the stack is ready, you can access Zammad via the configured docker "
+"host and port, e.g. `http://localhost:8080/`."
+msgstr ""
+
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:105
+#: src/en/get-started/installation/docker.md:99
+#, markdown-text, no-wrap
+msgid "Exposing the Stack via HTTPS"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:103
+#, markdown-text
+msgid ""
+"To publish a Zammad stack on the internet, it needs be secured via the HTTPS "
+"protocol. To achieve that without modifying the Zammad stack, you can:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:107
+#, markdown-text
+msgid ""
+"Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
+"provides an easy [Letsencrypt](https://letsencrypt.org/) integration."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:107
+#, markdown-text
+msgid "Use a cloudflare tunnel, which provides SSL termination."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:109
+#, markdown-text
+msgid ""
+"Both scenarios are covered in the separate [Docker Compose "
+"Scenarios](/en/reference/docker-compose-scenarios) page."
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:110
 #, markdown-text, no-wrap
 msgid "Customizing the Zammad Stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:113
+#: src/en/get-started/installation/docker.md:115
 #, markdown-text
 msgid ""
-"Sometimes it's necessary to apply local changes to the Zammad docker stack, "
-"e.g. to include additional services. If you plan to do so, we recommend that "
-"you do not change the `docker-compose.yml` file, but instead create a local "
-"`docker-compose.override.yml` that includes all your modifications.  "
-"Docker-Compose will [automatically load this file and merge its changes into "
-"your "
-"stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}."
+"The Zammad stack can be customized by loading additional scenario files for "
+"common use cases. For example, you can deploy the stack with an included "
+"Nginx Proxy Manager (NPM) or with disabled Postgres or Elasticsearch "
+"services, in case you already have these services running."
 msgstr ""
 
-#. type: Title ##
-#: src/en/get-started/installation/docker.md:114
-#, markdown-text, no-wrap
-msgid "Run Commands in the Stack"
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:117
+#, markdown-text
+msgid ""
+"Please see the [Docker compose scenarios "
+"page](/en/reference/docker-compose-scenarios)."
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:119
+#, markdown-text
+msgid ""
+"To adjust the stack and settings, use [Docker specific environment "
+"variables](/en/reference/docker-env-vars)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:120
+#, markdown-text, no-wrap
+msgid "How to Run Commands in the Stack"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:125
 #, markdown-text
 msgid ""
 "The docker entrypoint script sets up environment variables required by "
@@ -4587,47 +4650,57 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:121
+#: src/en/get-started/installation/docker.md:127
 #, markdown-text
 msgid "Directly execute a specific command:"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:122
-#, no-wrap
-msgid ""
-"docker compose run --rm zammad-railsserver rails r '...your rails command "
-"here...'\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:127
-#, markdown-text
-msgid "Run the interactive rails console to manually enter Rails commands:"
-msgstr ""
-
-#. type: Fenced code block (sh)
+#. type: Fenced div block (tabs)
 #: src/en/get-started/installation/docker.md:128
 #, no-wrap
-msgid "docker compose run --rm zammad-railsserver rails c\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:133
-#, markdown-text
-msgid "Via \"docker exec\":"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:134
-#, no-wrap
 msgid ""
+"\n"
+"=== Via Portainer GUI\n"
+"\n"
+"In your Portainer GUI, go to the container view and select the running rails "
+"container from your Zammad stack. Click\n"
+"on the **Exec Console** icon in the \"Quick Actions\" column.\n"
+"\n"
+"![Portainer console "
+"execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
+"\n"
+"In the \"Execute\" dialog, select the \"rails console\" entry point as you "
+"can see in the screenshot:\n"
+"\n"
+"![Portainer execution "
+"command](/screenshots/installation/portainer-execute-command.png){width=80%}\n"
+"\n"
+"=== Via console\n"
+"\n"
+"Directly execute a specific command:\n"
+"\n"
+"```sh\n"
+"docker compose run --rm zammad-railsserver rails r '...your rails command "
+"here...'\n"
+"```\n"
+"\n"
+"Run the interactive rails console to manually enter Rails commands:\n"
+"\n"
+"```sh\n"
+"docker compose run --rm zammad-railsserver rails c\n"
+"```\n"
+"\n"
+"Via `docker exec`:\n"
+"\n"
+"```sh\n"
 "docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh "
 "rails r '...your rails command here...'\n"
+"```\n"
+"\n"
 msgstr ""
 
-#. type: Fenced div block (tip)
-#: src/en/get-started/installation/docker.md:138
+#. type: Fenced div block (tabs|tip)
+#: src/en/get-started/installation/docker.md:128
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the rails server, you can, for "
@@ -5193,14 +5266,14 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:357
-#: src/en/reference/docker-env-vars.md:80
+#: src/en/reference/docker-env-vars.md:85
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:357
-#: src/en/reference/docker-env-vars.md:106
+#: src/en/reference/docker-env-vars.md:111
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
 msgid "Nginx"
@@ -5755,7 +5828,7 @@ msgstr ""
 #: src/en/get-started/update.md:154
 #, no-wrap
 msgid ""
-"Docker-Compose stack updates may require extra steps or introduce breaking\n"
+"Docker compose stack updates may require extra steps or introduce breaking\n"
 "changes. Always check the docker compose release notes for updating\n"
 "instructions first.\n"
 msgstr ""
@@ -8187,6 +8260,520 @@ msgid "rake db:seed\n"
 msgstr ""
 
 #. type: Title #
+#: src/en/reference/docker-compose-scenarios.md:1
+#: src/en/reference/docker-compose-scenarios.md:6
+#, markdown-text, no-wrap
+msgid "Docker Compose Scenarios"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:8
+#: src/en/reference/rest-api/intro.md:158
+#, markdown-text, no-wrap
+msgid "Overview"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:14
+#, markdown-text
+msgid ""
+"If the \"vanilla\" Zammad stack doesn't cover your use-case, you can use one "
+"of the pre-defined scenarios. We don't recommend to change the compose files "
+"locally, because it will be hard to keep track of upstream changes for the "
+"stack then. This is why you should either use Portainer's repository build "
+"method or clone the repository and update it regularly, when using docker "
+"compose."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:16
+#, markdown-text
+msgid "The following scenarios are supported and explained further below:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid ""
+"[Making the stack available via "
+"HTTPS](#making-the-stack-available-via-https)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Add a Cloudflare tunnel service to the stack"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Add a Nginx Proxy Manager (NPM) to the stack"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Add an external docker network to Nginx"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "[Using external services](#using-external-services)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Disable Elasticsearch service"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid ""
+"[Making services externally "
+"available](#making-services-externally-available)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Add an external docker network to Elasticsearch"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Add an host port to Elasticsearch"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "[Additional scenarios](#additional-scenarios)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:28
+#, markdown-text
+msgid "Disable the backup service"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:30
+#, markdown-text
+msgid ""
+"You can find the files in the [Zammad-Docker-Compose "
+"repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:31
+#, markdown-text, no-wrap
+msgid "General Usage"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/docker-compose-scenarios.md:33
+#, no-wrap
+msgid ""
+"\n"
+"=== Portainer\n"
+"\n"
+"Follow the [general deployment guide](/en/get-started/installation/docker) "
+"and apply the following changes.\n"
+"\n"
+"Below the \"Compose path\" field, click on the **Add file** button. This "
+"opens the \"Additional paths\" section where you\n"
+"can specify the scenario you want to use. Add `scenarios/{scenario you want "
+"to use}.yml` and replace the last part in\n"
+"`{}` brackets with the name of one of the scenario files. You can even "
+"combine the scenarios by adding additional paths.\n"
+"\n"
+"![Portainer additional paths "
+"configuration](/screenshots/installation/portainer-additional-paths.png)\n"
+"\n"
+"=== Docker Compose\n"
+"\n"
+"Follow the first 2 steps of the [general deployment "
+"guide](/en/get-started/installation/docker). To start the stack with\n"
+"one or more additional scenarios, use the following command for step 3 in "
+"the cloned repository folder instead:\n"
+"\n"
+"``` sh\n"
+"docker compose -f docker-compose.yml -f scenarios/{scenario you want to "
+"use}.yml up -d\n"
+"```\n"
+"\n"
+"Replace the part in `{}` brackets with the file name of one of the scenario "
+"files. You can even combine the scenarios\n"
+"by adding additional files according to the example above.\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:59
+#, markdown-text, no-wrap
+msgid "Making the Stack Available via HTTPS"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:63
+#, markdown-text
+msgid ""
+"If you set up Zammad for production use, it needs to be secured by using an "
+"HTTPS connection. There are different scenarios for achieving this:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:64
+#, markdown-text, no-wrap
+msgid "Add Cloudflare Tunnel"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:67
+#, markdown-text
+msgid ""
+"If you want to publish Zammad in a very convenient way, you can use a "
+"[Cloudflare](https://www.cloudflare.com/) tunnel."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:73
+#, markdown-text
+msgid "Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:73
+#, markdown-text
+msgid "Add a sub-domain to an already existing domain in your Cloudflare dashboard"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:73
+#, markdown-text
+msgid ""
+"Create a tunnel for this subdomain and configure it to forward traffic to "
+"your zammad-nginx service with `http://zammad-nginx:8080`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:73
+#, markdown-text
+msgid ""
+"Provide your Cloudflare tunnel token to the Zammad stack by using the "
+"environment variable `CLOUDFLARE_TUNNEL_TOKEN`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:74
+#, markdown-text, no-wrap
+msgid "Add Nginx Proxy Manager"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:80
+#, markdown-text
+msgid ""
+"A very common setup of publishing web services is to use a reverse proxy, "
+"which handles the SSL termination. One common tool is the Nginx Proxy "
+"Manager (NPM), which can be configured via UI quite simply. If you don't "
+"have a reverse proxy already, this might be a useful scenario for you. If "
+"you already have a running reverse proxy, head over to the next section."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:85
+#, markdown-text
+msgid "Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for deployment"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:85
+#, markdown-text
+msgid "Provide your FQDN for Zammad by using the environment variable `ZAMMAD_FQDN`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:85
+#, markdown-text
+msgid ""
+"Configure your DNS. The chosen Zammad FQDN should point to the IP address of "
+"the NPM host"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:85
+#, markdown-text
+msgid ""
+"Configure a new proxy host in your NPM and follow the steps to get an SSL "
+"certificate"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:86
+#, markdown-text, no-wrap
+msgid "Add External Docker Network to Nginx"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:91
+#, markdown-text
+msgid ""
+"If you already have a reverse proxy which takes care about the SSL "
+"termination, this scenario is helpful. It adds an external docker network to "
+"Zammad's included Nginx service to be able to access it from a reverse proxy "
+"that is not part of the Zammad stack's network."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:94
+#, markdown-text
+msgid ""
+"Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
+"deployment"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:94
+#, markdown-text
+msgid ""
+"Provide the name of your external network by using the environment variable "
+"`ZAMMAD_NGINX_EXTERNAL_NETWORK`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:95
+#, markdown-text, no-wrap
+msgid "Using External Services"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:97
+#, markdown-text, no-wrap
+msgid "Disable Elasticsearch Service"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:101
+#, markdown-text
+msgid ""
+"Do you have an Elasticsearch instance already running and want to use it for "
+"Zammad, too? Then you can disable the Elasticsearch service in the Zammad "
+"stack to save resources."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid ""
+"Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
+"deployment - this will turn off the built-in service for Elasticsearch"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid ""
+"Use the following environment variables to provide information about the "
+"connection to your existing Elasticsearch instance:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid "`ELASTICSEARCH_SCHEMA`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid "`ELASTICSEARCH_HOST`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid "`ELASTICSEARCH_PORT`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid "`ELASTICSEARCH_USER`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:111
+#, markdown-text
+msgid "`ELASTICSEARCH_PASS`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:112
+#, markdown-text, no-wrap
+msgid "Making Services Externally Available"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:116
+#, markdown-text
+msgid ""
+"These scenarios are meant to connect from external applications to Zammad "
+"services. Depending on where your external service is hosted, you can use "
+"one of the following scenarios."
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/docker-compose-scenarios.md:117
+#, no-wrap
+msgid ""
+"\n"
+"When exposing Elasticsearch outside the stack, make sure to set the variable "
+"`ELASTICSEARCH_PASS` to a custom value\n"
+"first! Otherwise this is a big security issue because the Elasticsearch "
+"index contains most of Zammad's data.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/docker-compose-scenarios.md:124
+#, no-wrap
+msgid ""
+"\n"
+"If you want to use TLS, you have to connect to Elasticsearch via reverse "
+"proxy.\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:130
+#, markdown-text, no-wrap
+msgid "Add External Docker Network to Elasticsearch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:135
+#, markdown-text
+msgid ""
+"A common use case for this is to use a reporting/visualization tool like "
+"Grafana on the same host in another stack.  Because such tools need to "
+"access the Elasticsearch index, the network of the other stack has to be "
+"added to Zammad's Elasticsearch container."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:138
+#, markdown-text
+msgid ""
+"Use the scenario file `scenarios/add-external-network-to-elasticsearch.yml` "
+"for deployment"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:138
+#, markdown-text
+msgid ""
+"Provide the name of your external network by using the environment variable "
+"`ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:139
+#, markdown-text, no-wrap
+msgid "Add Host Port to Elasticsearch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:143
+#, markdown-text
+msgid ""
+"In case you want to expose the Elasticsearch service of the Zammad stack in "
+"the network, you can assign a host port to the container. This is useful if "
+"you need to access the Elasticsearch container from a different host."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:147
+#, markdown-text
+msgid ""
+"Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
+"deployment"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/docker-compose-scenarios.md:147
+#, markdown-text
+msgid ""
+"The default port for Elasticsearch is `9200`. Change it to another port by "
+"using the environment variable `ELASTICSEARCH_EXPOSE_HTTP_PORT`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:148
+#, markdown-text, no-wrap
+msgid "Additional Scenarios"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:150
+#, markdown-text, no-wrap
+msgid "Disable Backup Service"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:154
+#, markdown-text
+msgid ""
+"In case you want to handle backups in a different way, you can disable the "
+"built in backup service in the stack to save resources."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:156
+#, markdown-text
+msgid ""
+"You can do so by just using the scenario file "
+"`scenarios/disable-backup-service.yml` for deployment."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:157
+#, markdown-text, no-wrap
+msgid "Other Use Cases"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:161
+#, markdown-text
+msgid ""
+"Your scenario is not covered yet? Feel free to suggest your use case. We "
+"plan to add more common use cases to the stack in future."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/docker-compose-scenarios.md:162
+#, markdown-text, no-wrap
+msgid "Customize the Stack Locally"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:167
+#, markdown-text
+msgid ""
+"Sometimes it's necessary to apply local changes to the Zammad docker stack, "
+"e.g. to include additional services. If you plan to do so, we recommend that "
+"you do not change the `docker-compose.yml` file, but instead create a local "
+"`docker-compose.override.yml` that includes all your modifications. Docker "
+"compose will [automatically load this file and merge its changes into your "
+"stack](https://docs.docker.com/compose/multiple-compose-files/merge/)."
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/docker-env-vars.md:1 src/en/reference/docker-env-vars.md:6
 #, markdown-text, no-wrap
 msgid "Docker Environment Variables"
@@ -8201,8 +8788,18 @@ msgid ""
 "documentation](/en/reference/env-vars)."
 msgstr ""
 
+#. type: Fenced div block (tip)
+#: src/en/reference/docker-env-vars.md:11
+#, no-wrap
+msgid ""
+"If you want to use a `.env` file, you can use the provided `.env.dist` file "
+"and copy it to `.env`. That way it will be\n"
+"picked up by Docker-Compose automatically and not overwritten during "
+"updates.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:17
+#: src/en/reference/docker-env-vars.md:22
 #, markdown-text, no-wrap
 msgid ""
 "`VERSION` <Badge type=\"info\" text=\"<current stable version of "
@@ -8214,7 +8811,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:22
+#: src/en/reference/docker-env-vars.md:27
 #, markdown-text, no-wrap
 msgid ""
 "`AUTOWIZARD_JSON`\n"
@@ -8225,7 +8822,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:26
+#: src/en/reference/docker-env-vars.md:31
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -8234,7 +8831,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:30
+#: src/en/reference/docker-env-vars.md:35
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
@@ -8244,7 +8841,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:34
+#: src/en/reference/docker-env-vars.md:39
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -8253,7 +8850,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:38
+#: src/en/reference/docker-env-vars.md:43
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -8262,7 +8859,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:41
+#: src/en/reference/docker-env-vars.md:46
 #, markdown-text, no-wrap
 msgid ""
 "`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"['127.0.0.1', "
@@ -8271,7 +8868,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:44
+#: src/en/reference/docker-env-vars.md:49
 #, markdown-text, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
@@ -8279,7 +8876,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:48
+#: src/en/reference/docker-env-vars.md:53
 #, markdown-text, no-wrap
 msgid ""
 "`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
@@ -8289,13 +8886,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-env-vars.md:49
+#: src/en/reference/docker-env-vars.md:54
 #, markdown-text, no-wrap
 msgid "Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:54
+#: src/en/reference/docker-env-vars.md:59
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
@@ -8304,7 +8901,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:57
+#: src/en/reference/docker-env-vars.md:62
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
@@ -8312,7 +8909,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:60
+#: src/en/reference/docker-env-vars.md:65
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
@@ -8320,7 +8917,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:63
+#: src/en/reference/docker-env-vars.md:68
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
@@ -8328,7 +8925,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:67
+#: src/en/reference/docker-env-vars.md:72
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
@@ -8338,7 +8935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:71
+#: src/en/reference/docker-env-vars.md:76
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_REINDEX` <Badge type=\"info\" text=\"true\"/>\n"
@@ -8348,7 +8945,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:71
+#: src/en/reference/docker-env-vars.md:76
 #, no-wrap
 msgid ""
 "  Disabling this setting requires you to re-index your search index "
@@ -8357,7 +8954,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:79
+#: src/en/reference/docker-env-vars.md:84
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
@@ -8367,7 +8964,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:84
+#: src/en/reference/docker-env-vars.md:89
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
@@ -8376,7 +8973,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:87
+#: src/en/reference/docker-env-vars.md:92
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
@@ -8384,7 +8981,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:90
+#: src/en/reference/docker-env-vars.md:95
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
@@ -8392,7 +8989,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:93
+#: src/en/reference/docker-env-vars.md:98
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
@@ -8400,7 +8997,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:96
+#: src/en/reference/docker-env-vars.md:101
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
@@ -8408,7 +9005,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:99
+#: src/en/reference/docker-env-vars.md:104
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
@@ -8416,7 +9013,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:102
+#: src/en/reference/docker-env-vars.md:107
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
@@ -8424,13 +9021,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:102
+#: src/en/reference/docker-env-vars.md:107
 #, no-wrap
 msgid "  On dedicated database servers, this setting might be troublesome.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:112
+#: src/en/reference/docker-env-vars.md:117
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
@@ -8442,7 +9039,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:115
+#: src/en/reference/docker-env-vars.md:120
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
@@ -8450,7 +9047,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:119
+#: src/en/reference/docker-env-vars.md:124
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
@@ -8460,7 +9057,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:124
+#: src/en/reference/docker-env-vars.md:129
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
@@ -8472,7 +9069,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:127
+#: src/en/reference/docker-env-vars.md:132
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" "
@@ -8481,7 +9078,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:130
+#: src/en/reference/docker-env-vars.md:135
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
@@ -8489,7 +9086,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:133
+#: src/en/reference/docker-env-vars.md:138
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
@@ -8497,7 +9094,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:135
+#: src/en/reference/docker-env-vars.md:140
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
@@ -14363,12 +14960,6 @@ msgstr ""
 #: src/en/reference/rest-api/intro.md:158
 #, markdown-text
 msgid "Macros"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
-#, markdown-text
-msgid "Overview"
 msgstr ""
 
 #. type: Bullet: '- '
