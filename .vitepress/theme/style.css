@@ -322,7 +322,7 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-layout-max-width: 1440px;
+  --vp-layout-max-width: 1536px;
 }
 
 /**
@@ -638,4 +638,8 @@
     padding: 2.4px 6px;
     margin: auto 0;
   }
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: unset !important;
 }
