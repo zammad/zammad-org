@@ -18,24 +18,24 @@ This documentation is divided into different sections. Currently you are
 reading the _General_ section. Use the left sidebar to navigate to your
 desired information or the search in the header.
 
-## Zammad Beginner
+## Zammad почетник
 
-If you are new to Zammad and ticketing software at all, our recommendation
-is to have a look at the [start with Zammad](start-using-zammad) page. You
-can find a description of some important UI elements there as well as basic
-ticket attributes and how to use them.
+Уколико сте нови са Zammad-ом и уопштено са тикетинг системима, предлажемо
+да погледате наш водич [за почетнике](start-using-zammad). Тамо можете
+пронаћи опис неких важних елемената корисничкој интерфејса као и основне
+атрибуте тикета и начин њиховог коришћења.
 
-## Advanced User
+## Напредни корисник
 
-If you are already familiar with the basics of Zammad, you should have a
-look at the [advanced features](advanced-features) page.
+Уколико су вам основе Zammad-а већ познате, погледајте [напредне
+функције](advanced-features).
 
-If you can't find what you are looking for, try the search in the header of
-the site.
+Уколико не можете да пронађете жељене информације, пробајте да започенете
+претрагу из заглавља стране.
 
-## Administrator
+## Администратор
 
-Are you an administrator and want to learn how to configure and manage
-Zammad? Then head over to the [manage
-Zammad](/en/documentation/manage-zammad/general) section, have a look at the
-tutorials and reference and use the search.
+Да ли сте администратор и желите да научите како да подесите и управљате
+Zammad-ом? Свратите на одељак [управљање
+Zammad-ом](/sr/documentation/manage-zammad/general) и погледајте водиче и
+референцу и начин коришћења претраге.

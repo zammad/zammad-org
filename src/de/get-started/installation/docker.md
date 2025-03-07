@@ -11,7 +11,9 @@ Docker front ends like
 
 ::: info
 
-Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifische Probleme. Wenn Sie sich dafür entscheiden, Zammad per Docker zu installieren, kann Support nur für Zammad als Anwendung geleistet werden.
+Wir bieten keinen Support in Bezug auf Docker (-Compose) oder Portainer-spezifische Probleme.
+Wenn Sie sich dafür entscheiden, Zammad per Docker zu installieren, kann Support nur für Zammad
+als Anwendung geleistet werden.
 :::
 
 ## Voraussetzungen

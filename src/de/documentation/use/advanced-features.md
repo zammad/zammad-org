@@ -37,9 +37,9 @@ Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
   ticket is updated and the state is set to _closed_.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab**
-and use the keyboard shortcut [[Shift]] [[c]] for changing the
-ticket state to closed and close the ticket tab.
+Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten**
+belassen und das Tastaturkürzel [[Shift]] [[c]] verwenden, um den
+Status des Tickets auf geschlossen setzen und den Tab des Tickets schließen.
 :::
 
 ## Textbausteine verwenden
@@ -60,9 +60,10 @@ Die Verwendung von Textbausteinen hat Vorteile wie:
 Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein,
 gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins.
 
-You can pick one by clicking on it or by using the up and down arrows
-followed by [[Enter]] on your keyboard. There are some text modules in
-Zammad which are shipped by default.
+Sie können eine auswählen, indem Sie sie anklicken oder die Pfeiltasten nach
+oben und unten benutzen, gefolgt von
+[[Enter]] auf Ihrer Tastatur. Es gibt einige Textbausteine in Zammad
+die standardmäßig mitgeliefert werden.
 
 Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren
 Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie
@@ -85,9 +86,11 @@ und dieses Ticket abonnieren.
 Wenn Sie einen Ticket-Artikel schreiben, geben Sie einfach `@@` und einige
 Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten.
 
-Zammad displays a list with all possible matches where you can pick one by
-clicking on it or by using the up and down arrows followed by [[enter]] on
-your keyboard.
+Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
+Sie einen Eintrag
+auswählen können, indem Sie darauf klicken oder die Pfeiltasten nach oben
+und unten benutzen, gefolgt von
+[[enter]] auf Ihrer Tastatur.
 
 ## Ein Ticket abonnieren
 
@@ -205,9 +208,9 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
   sie verweisen.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either
-  use the copy button in the header or use the keyboard shortcut [[.]].
-  Then you can paste it in the checklist you want to have it included.
+  Rufen Sie den Ticket-Hook und die Ticket-Nummer ab, indem Sie zum gewünschten Ticket gehen und entweder
+  die Schaltfläche "Ticket-Nummer kopieren" in der Kopfzeile verwenden oder das Tastaturkürzel [[.]] verwenden.
+  Dann können Sie sie in die Checkliste einfügen, die sie enthalten soll.
   :::
 - Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
   sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"
@@ -384,41 +387,45 @@ können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
   standardmäßig verwendet, wenn ein Ticket geteilt oder zusammengefasst
   wird.
 
-## Account Time
+## Zeit erfassen
 
 **Warum?**
 
-With Zammad's integrated time accounting, you can help to keep track of how
-much time you spent on tickets. Based on the accounted times in the ticket,
-it is automatically assigned to customers and organizations. This might be
-used in your company for billing or to keep track of support budgets.
+Mit der integrierten Zeiterfassung von Zammad können Sie den Überblick über
+die Zeit behalten, die Sie für Tickets aufgewendet haben. Basierend auf den
+erfassten Zeiten im Ticket wird es automatisch Kunden und Organisationen
+zugeordnet. Dies kann in Ihrer Firma für die Rechnungsstellung oder zur
+Verfolgung von Support-Kontingenten verwendet werden.
 
 **Wie? **
 
-After updating a ticket, a time accounting dialog will appear. Enter how
-much time you spent on the ticket.
+Nach der Aktualisierung eines Tickets wird ein Dialog zur Zeiterfassung
+angezeigt. Geben Sie ein, wie viel Zeit Sie für diese Bearbeitung des
+Tickets gebraucht haben.
 
-![Screenshot shows the time accounting
-dialog](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+![Screenshot zeigt Dialog zur
+Zeiterfassung](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
 
-The feature is **optional**. If you don't see it whenever you update a
-ticket, your administrator hasn't enabled it yet or the rule for tickets to
-be taken into consideration doesn't match.
+Die Funktion ist **optional**. Wenn Sie das nach einer Ticketaktualisierung
+nicht sehen, hat Ihr Administrator die Funktion noch nicht aktiviert oder
+die Regel für die zu berücksichtigenden Tickets greift bei diesem Ticket
+nicht.
 
-The accounted time is always recorded and stored without a unit. However,
-your administrator may decide to show an optional label next to the field to
-hint you and your colleagues in which unit the time is expected (see
-screenshot).
+Die erfasste Zeit wird immer ohne Einheit erfasst und gespeichert. Ihr
+Administrator kann jedoch entscheiden, eine optionale Beschriftung neben dem
+Feld anzuzeigen, um Ihnen und Ihren Kollegen einen Hinweis darauf zu geben,
+in welcher Einheit die Zeit erwartet wird (siehe Screenshot).
 
-Activity types can be used to distinguish between different activities and
-for grouping the accounted times. If this optional feature is active, it
-shows a list of activities from which you can select in the time accounting
-dialog.
+Aktivitäts-Typen können zur Unterscheidung zwischen verschiedenen
+Tätigkeiten und zur Gruppierung der erfassten Zeiten verwendet werden. Wenn
+diese optionale Funktion aktiviert ist, wird eine Liste von Aktivitäten
+angezeigt, aus der Sie im Erfassungsdialog auswählen können.
 
-If a ticket already has accounted time(s), you can see it in the ticket
-sidebar on the right side in the ticket detail view at the bottom. You can
-find the calculated sums of each activity type (if configured) as well as
-the total sum of accounted times for all activity types.
+Wenn ein Ticket bereits abgerechnete Zeit(en) hat, können Sie diese in der
+Ticket Detailansicht in der rechten Seitenleiste unten sehen. Hier finden
+Sie die berechneten Summen der einzelnen Aktivitäts-Typen (sofern
+konfiguriert) sowie die Gesamtsumme der erfassten Zeiten über alle
+Aktivitäts-Typen.
 
-![Screenshot shows the time accounting
-overview](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
+![Screenshot zeigt eine Übersicht über erfasste
+Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)

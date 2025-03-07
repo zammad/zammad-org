@@ -91,10 +91,12 @@ Anwendungsfall.
 
 ### Über Übersichten
 
-If you search for new tickets to work on, your first look should be in the
-overview section. You can either open it by clicking the **Overviews**
-button in the navigation bar or use the keyboard shortcut [[o]].  You can
-see overviews as a kind of ticket lists.
+Wenn Sie nach neuen Tickets suchen, an denen Sie arbeiten möchten, sollten
+Sie zuerst einen Blick
+in die Übersichten werfen. Sie können ihn entweder durch Klicken auf die
+Schaltfläche **Übersichten**
+in der Navigationsleiste oder das Tastaturkürzel [[o]] öffnen.
+Sie können Übersichten als eine Art Ticket-Listen betrachten.
 
 Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
 können. Zum Beispiel gibt es eine Übersicht namens "Offene Tickets". Dies
@@ -108,10 +110,12 @@ Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 
 ### Über die Suche
 
-However, if you search for a specific ticket which might or might not be
-visible in the overviews, you can use the search. You can find it in the top
-left corner in the navigation bar. Either select it via mouse or use the
-keyboard shortcut by simply pressing [[s]].
+Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten
+sichtbar sein kann oder auch nicht,
+können Sie die Suche verwenden. Sie finden diese in der oberen
+linken Ecke in der Navigations-Seitenleiste. Wählen Sie sie entweder mit der
+Maus aus oder verwenden Sie das
+Tastaturkürzel, indem Sie einfach [[s]] drücken.
 
 After activating the search field, you can see your last viewed items as
 well as your last search queries.

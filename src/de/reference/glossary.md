@@ -30,7 +30,7 @@ API
   Medien, Messenger, Monitoring-Tools).
 
   Sie können mehr erfahren auf unserer
-  [API-Landingpage](https://zammad.com/de/product/features/rest-api){target=_blank} sowie
+  [API-Landingpage](https://zammad.com/de/product/features/rest-api){target=_blank}
   sowie in unserer [API-Referenz](/de/reference/rest-api/intro).
 
 Artikel
@@ -61,7 +61,8 @@ Changelog
 : Mit jeder neuen Version kommt ein neues Changelog. Es ist im Grunde eine Liste aller
   Dinge, die sich geändert haben, von neuen Verbesserungen bis hin zu Fehlerkorrekturen.
 
-  Sie finden sie alle auf unserem [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
+  Sie finden sie alle auf unserem
+  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
 : Checkmk ist ein leistungsstarkes IT-Überwachungstool, das Echtzeit-Statusmeldungen

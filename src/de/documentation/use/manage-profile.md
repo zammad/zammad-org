@@ -22,9 +22,9 @@ Benutzer-Menü](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)
 
 - **Aussehen** mit Schalter zum Wechseln zwischen dunklem und hellem Modus
   (oder basierend auf Webbrowser-Einstellung)
-- **Keyboard shortcuts**: opens a popup where you can see the available
-  keyboard shortcuts. You can open this popup by pressing the [[?]] button
-  on your keyboard as well.
+- **Tastaturkürzel**: öffnet ein Popup, in dem Sie die verfügbaren
+  Tastaturkürzel sehen können. Sie können dieses Popup auch durch Drücken
+  der Taste [[?]] auf Ihrer Tastatur öffnen.
 - **Profileinstellungen**: öffnet Ihre Profileinstellungen, wo Sie Ihren
   Avatar, Ihr Passwort, Ihre Benachrichtigungseinstellungen und vieles mehr
   anpassen können, siehe nächster Abschnitt.
@@ -49,9 +49,9 @@ das funktioniert hängt von Ihrem Webbrowser ab. Falls nicht können Sie eine
 der anderen Optionen wählen.
 
 ::: tip
-If you want to switch quickly between dark and light mode, you can also use
-the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by
-simply pressing [[d]].
+Wenn Sie schnell zwischen dunklem und hellem Modus wechseln möchten, können Sie auch
+die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastaturkürzel dafür verwenden, indem Sie
+einfach [[d]] drücken.
 :::
 
 ### Sprache

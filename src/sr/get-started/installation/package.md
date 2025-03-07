@@ -18,9 +18,9 @@ title: Пакет
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 20.04, 22.04, 24.04 |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider using [Zammad's cloud
-service](https://zammad.com/en/pricing){target=_blank}.
+Уколико ваша дистрибуција тренутно није подржана, пробајте други метод
+инсталације или размотрите претплату на [Zammad сервис у
+облаку](https://zammad.com/en/pricing){target=_blank}.
 
 Да бисте испратили инсалационе кораке испод, може бити неопходно да
 инсталирате додатне алате као curl, gnupg и остале.
@@ -155,12 +155,12 @@ After fixing it, make sure to check the output again for including
 
 ### Elasticsearch инсталација
 
-The recommended method is to use [Elastic's official
-guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
-for installing Elasticsearch.
+Препоручени метод је да користите [званичан Elastic
+водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
+за инсталацију Elasticsearch.
 
 Алтернативно, можете погледати [наш
-пример](/en/tutorials/install-elasticsearch.md) за Elasticsearch 7, који се
+пример](/sr/tutorials/install-elasticsearch.md) за Elasticsearch 7, који се
 налази на посебној страници да би упутство остало што прегледније.
 
 ### Додајте Zammad репозиториј
@@ -339,10 +339,10 @@ systemctl (status|start|stop|restart) zammad-websocket
 ### Следећи кораци
 
 - Повежите Zammad са Elasticsearch ([основни
-  водич](/en/tutorials/connect-config-elasticsearch))
-- Подесите ваша SELinux правила и firewall ([соновни
-  водич](/en/tutorials/firewall-selinux))
-- Подесите веб сервис ([основни водич](/en/tutorials/webserver-config))
+  водич](/sr/tutorials/connect-config-elasticsearch))
+- Подесите ваша SELinux правила и firewall ([основни
+  водич](/sr/tutorials/firewall-selinux))
+- Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))
 
 ## Предуслови
 

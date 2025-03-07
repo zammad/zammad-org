@@ -86,7 +86,7 @@ GitHub налога!
 Представићемо неке основне кораке у следећим одељцима како бисте могли да
 започнете са превођењем. Међутим, уколико желите да користите напредне
 Weblate функције и да дубље уђете у проблематику, њихова [званична
-документација](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
+документација](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
 вам може помоћи.
 
 ### Основе

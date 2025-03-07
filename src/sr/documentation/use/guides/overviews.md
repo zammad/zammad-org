@@ -5,33 +5,33 @@ title: Прегледи
 
 # Прегледи
 
-![Screenshot shows opened overview
-section](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)
+![Снимак екрана који приказује отворен
+преглед](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)
 
 ## Увод
 
-Overviews are a core component of Zammad. Open them by clicking the
-`Overviews` button in the navigation bar or use the keyboard shortcut
-[[o]]. You can think of overviews as a kind of email inbox with different
-folders. Use them to find new tickets that you want to process and to keep
-track of tickets that have not yet been completed.
+Прегледи представљају кључну компоненту Zammad-а. Отворите их кликом на
+дугме `Прегледи` у навигационој траци или користите пречицу на тастатури
+[[o]]. На прегледе можете гледати као врсту поштанских сандучића са
+различитим фолдерима. Користите их да пронађете нове тикете које желите да
+обрадите и пратите тикете који још нису затворени.
 
-Depending on your system configuration and what your Zammad admin set up,
-you can find different overviews there, for example:
+У зависности од ваше системске конфигурације и шта је ваш Zammad
+администратор подесио, овде можете видети различите прегледе, нпр:
 
-- Your assigned tickets
-- Unassigned and open tickets
-- Pending reached tickets
-- Escalated tickets
+- Ваши додељени тикети
+- Недодељени и отворени тикети
+- Тикети са достигнутим временом чекања
+- Ескалирани тикети
 
-Selecting an overview in the second level navigation shows you a table which
-includes matching tickets.
+Одабиром прегледа на другом нивоу навигације приказаће вам се табела са
+тикетима који задовољавају услове.
 
-## Usage and Features
+## Употреба и функције
 
-Overviews can be defined by admins based on rules and conditions. That means
-if a ticket has been changed and the condition of the overview isn't
-matching anymore, the ticket is no longer visible in this overview.
+Прегледе може дефинисати администратор на основу правила и услова. Ово значи
+да ако се тикет измени и више се не задовољава услове прегледа, тикет више
+неће бити видљив у том прегледу.
 
 Overviews are updated automatically. You don't have to reload your browser
 to observe changes. You can adjust the order temporarily by clicking on one

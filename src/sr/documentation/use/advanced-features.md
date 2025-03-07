@@ -36,9 +36,9 @@ updating or updating a ticket to _closed_ state.
   ticket is updated and the state is set to _closed_.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab**
-and use the keyboard shortcut [[Shift]] [[c]] for changing the
-ticket state to closed and close the ticket tab.
+Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**
+и користити пречицу на тастатури [[Shift]] [[c]] за промену
+стања тикета на затворено и затварање прозора тикета.
 :::
 
 ## Користите текстуалне шаблоне
@@ -59,9 +59,9 @@ ticket state to closed and close the ticket tab.
 За коришћење текстуалних исечака, једноставно унесите `::` у уредник текста
 а затим део назива или кључну реч исечка.
 
-You can pick one by clicking on it or by using the up and down arrows
-followed by [[Enter]] on your keyboard. There are some text modules in
-Zammad which are shipped by default.
+Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле
+а затим притиском на [[Enter]] на вашој тастатури. Zammad долази са неким
+подразумеваним текстуалним исечцима.
 
 Уколико ухватите себе да стално одговарате на идентично питање, замолите
 вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу
@@ -84,9 +84,9 @@ Zammad which are shipped by default.
 Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова
 из имена колеге кога желите да поменете.
 
-Zammad displays a list with all possible matches where you can pick one by
-clicking on it or by using the up and down arrows followed by [[enter]] on
-your keyboard.
+Zammad приказује листу свих корисника који одговарају вашем уносу и можете
+их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
+на [[enter]] на вашој тастатури.
 
 ## Претплатите се на тикет
 
@@ -192,196 +192,194 @@ Zammad администратор га је искључио. Списак за�
   броја у тексту задатка (нпр. `Ticket#123456`). Ове ставке се не могу ручно
   означити, већ ће одражавати стање референцираног тикета.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either
-  use the copy button in the header or use the keyboard shortcut [[.]].
-  Then you can paste it in the checklist you want to have it included.
+  Нађите прикључак тикета са бројем одласком у жељени тикет и или
+  кликом на дугме за копирање у заглављу или путем пречице на тастатури [[.]].
+  Онда га можете налепити у текст новог задатка.
   :::
-- Zammad automatically checks if all checklist items are completed. The
-  check is performed when you set a ticket to "closed". If not all items are
-  completed, Zammad will prompt you to either work on the remaining tasks
-  and keep the ticket open or to close it anyway. When referencing other
-  tickets in your checklist, only those which are closed (with a green
-  circle) are considered as completed.
+- Zammad врши аутоматску проверу да ли су сви задаци са списка
+  обављени. Провера се врши приликом затварања тикета. Уколико нису сви
+  задаци обављени, Zammad ће вас упитати за наставак рада на остатку и
+  чувања отвореног тикета, или да га свакако затворите. Када имате
+  референциране тикета у вашем списку, само они који су затворени (са
+  зеленим кругом) ће бити сматрани као обављени.
 
-## Ticket Templates
+## Шаблони тикета
 
 **Зашто?**
 
-Quickly create a ticket with pre-defined attributes like title, text, tags
-and more saves you time. This requires your admin to create a ticket
-template.
+Експресно отварање тикета са предефинисаним атрибутима као што су наслов,
+текст, ознаке и више вам штеди време. Ова функција захтева да ваш
+администратор дефинише шаблоне тикета.
 
 **Како?**
 
-In the ticket create screen, you can find an `Apply Template ^` button in
-the footer bar, if a template is available. Select the template you want to
-apply and apply changes if desired.
+У екрану отварања тикета, пронаћи ћете дугме `Примени шаблон ^` у подножју,
+уколико су доступни шаблони. Одаберите шаблон који желите и примените жељене
+измене.
 
 ## Заједнички нацрти
 
 **Зашто?**
 
-To share a draft with other agents of your group, e.g. to reflect a QA
-process, instead of "just" adding an internal article. In such a draft you
-can even include changed ticket attributes like priority, state and custom
-attributes as well as an article with an answer to the customer.
+За дељење нацрта са другим оператерима ваше групе, нпр. да би сте покренули
+QA процес, уместо додавања интерног чланка. У таквом нацрту можете убацити
+чак и измењене атрибуте тикета као што су приоритет, стање и прилагођени
+атрибути као и чланак са одговором за клијента.
 
-This is an optional feature. If you can't see it, your admin has turned it
-off.
+Ово је опциона функција. Уколико је не видите, ваш администратор је
+искључио.
 
 **Како?**
 
-To **save a draft**, use the `︙` menu in the footer of the ticket details
-view and select "Save as draft".
+Да бисте **сачували нацрт**, користите падајући мени `︙` у подножју прегледа
+тикета и одаберите „Сачувај нацрт”.
 
-To **apply an already existing draft**, click on the `Draft Available`
-button on the left side of the footer.
+Да би сте **применили постојећи нацрт**, кликните на дугме `Доступан нацрт`
+на левој страни подножја.
 
 ::: warning
-Applying a draft overwrites your unsaved changes!
+Примена нацрта преиначиће ваше неснимљене измене!
 :::
 
-## Simultaneous Work Detection
+## Откривање истовремене обраде
 
-![Screenshot shows other agents viewing/editing the
-ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
+![Снимак екрана приказује друге оператере како гледају/уређују
+тикет](/screenshots/advanced-features/simultaneous-work-detection.png)
 
 **Зашто?**
 
-Things to avoid:
+Ствари за избегавање:
 
-- Superfluous work
-- Conflicting answers from different agents
-- Overwritten/undone changes by different agents
+- Непотребан рад
+- Опречни одговори од других оператера
+- Преиначене/поништене измене од других оператера
 
-This is why you can immediately see who views and edits the currently viewed
-ticket.
+Из овог разлога можете одмах да видите ко гледа и уређује тренутни тикет.
 
 **Како?**
 
-Have a look at the footer bar in the ticket detail view. When there is an
-avatar from another agent (see screenshot above), you are not the only one
-viewing this ticket.
+Погледајте траку у подножју прегледа тиекта. Када видите аватар сличицу
+другог оператера (погледајте снимак изнад), нисте једини који тренутно раде
+на тикету.
 
-Depending on the additional icon and if the avatar icon is faded, it means:
+У зависности од одговарајуће иконица и да ли је аватар сличица изблеђена,
+пронађите додатно значење:
 
-- Another agent is viewing the ticket (not faded avatar without additional
-  icon)
-- Another agent opened the ticket but is currently not actively viewing this
-  ticket (faded avatar icon with the snooze icon, see left avatar in
-  screenshot)
-- Another agent is currently actively working on this ticket (not faded
-  avatar icon with a pencil icon, see right avatar in screenshot)
+- Други оператер гледа тикет (неизбледела аватар сличица без додатне
+  иконице)
+- Други оператер има отворен тикет али га не гледа активно (избледела аватар
+  сличица са иконицом „спавања”, погледајте леви аватар на снимку)
+- Други оператер тренутно активно ради на овом тикету (неизбледела аватар
+  сличица са иконицом оловке, погледајте десни аватар на снимку)
 
-## Bulk Actions
+## Масовне радње
 
-TODO after overview bulk action implementation
+TODO након имплементације масовне радње
 
 **Зашто?**
 
 **Како?**
 
-Via drag & drop Via drop down selectors
+Путем превлачења одабраних тикета
 
-## Merge Tickets
+## Спајање тикета
 
-![Screenshot shows the ticket merge side
-panel](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
+![Снимак екрана приказује бочну траку спајања
+тикета](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
 
 **Зашто?**
 
-If you have two or more tickets about the same issue, you may want to merge
-those tickets into one. This might be the case if a customer sends you a new
-email which can't be assigned to the existing ticket (e.g. the ticket
-reference is missing because the customer sends you a completely new email
-instead of answering in the existing thread).
+Уколико имате два или више тикета о истом проблему, можда ћете желети да их
+спојите у један. До овога може доћи ако вам клијент пошаље нову поруку која
+не може да се додели постојећем тикету (нпр. референца тикета недостаје јер
+је клијент послао потпуно нову поруку уместо одговара на постојећу
+конверзацију).
 
 Спајање тикета мигрира све поруке и напомене из тикета који спајате у
 одабрани.
 
 **Како?**
 
-Go to the ticket you want to merge into another one. In the ticket sidebar,
-use the `︙` menu and select `Merge`. This opens a side panel in which you
-can select a ticket by clicking on it or enter a ticket number in search
-field.  When you selected a target ticket, confirm by using the `Merge`
-button at the bottom.
+Идите на тикет који желите да спојите са другим. У траци тикета, одаберите
+`Споји` у падајућем менију `︙`. Ово ће отворити бочну траку у којој можете
+одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.
+Када одаберете циљни тикет, потврдите дугметом `Споји` при дну.
 
-As result, the articles are moved into the chosen ticket. The ticket in
-which you executed the merge still exists with the following changes:
+На крају, чланци ће бити пребачени у одабрани тикет. Тикет на коме сте
+извршили радњу спајања и даље постоји са следећим изменама:
 
 - Сви чланци су замењени ознаком „спојено”
 - Стање је промењено у „спојено”
-- The ticket is linked to its "parent" ticket
+- Тикет је повезан са својим „надређеним” тикетом
 
-## Split Ticket
+## Раздели тикет
 
-![Screenshot shows the article action split
-menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
-
-**Зашто?**
-
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets. For example this might be the case
-if a customer has a technical question and wants to place an order.
-
-**Како?**
-
-To split an article off, use the `︙` menu next to an article and select
-`Split`.
-
-This results in a ticket create screen with the same attributes set as in
-the initial ticket. The content of the article is also included. You can
-change everything to your needs and then click on `Create`.
-
-The just created ticket is linked in the original one as child. The original
-ticket is linked in the split off ticket as parent.
-
-## Link Tickets
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
 **Зашто?**
 
-When tickets about related issues arise, they can be linked to each other
-for easier reference. [Merged](#merge-tickets) and [split](#split-ticket)
-tickets are automatically linked.
+Уколико имате тикет са више од једног проблема, можда ћете хтети да га
+разделите на два или више различитих ткета. На пример до овога може доћи ако
+клијент има техничко питање и жели да пошаље поруџбину.
 
 **Како?**
 
-In the ticket sidebar, add a link to another ticket by clicking the `+`
-button in the "Links" section. This opens a side panel in which you can
-select a ticket by clicking on it or enter a ticket number in search
-field. Additionally, you can choose between different link types:
+За радељивање чланка, одаберите `Раздели` из падајућег менија `︙` поред
+чланка.
 
-- **Normal:** for related ticket which have no hierarchy.
-- **Parent/Child**: for related tickets where one is the main issue and the
-  other is a subtask. This link type is used by default if a tickets gets
-  split or merged.
+Ово ће резултовати у екрану отварања тикета са попуњеним атрибутима из
+оригиналног тикета. Садржај чланка ће такође бити убачен. Можете прилагодити
+све атрибуте својим потребама и кликнути на `Додај`.
 
-## Account Time
+Управо отворени тикет ће бити повезан са оригиналним као
+подређени. Оригинални тикет је повезан са раздељеним као надређени.
+
+## Повезивање тикета
 
 **Зашто?**
 
-With Zammad's integrated time accounting, you can help to keep track of how
-much time you spent on tickets. Based on the accounted times in the ticket,
-it is automatically assigned to customers and organizations. This might be
-used in your company for billing or to keep track of support budgets.
+Када се појаве тикети о сродним проблемима, могу бити међусобно повезани
+ради лакшег референцирања. [Спојени](#merge-tickets) и
+[раздељени](#split-ticket) тикети ће бити аутоматски повезани.
 
 **Како?**
 
-After updating a ticket, a time accounting dialog will appear. Enter how
-much time you spent on the ticket.
+У траци тикета, додајте везу на други тикет кликом на дугме `+` у одељку
+`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом
+на исти или уносом броја тикета у поље за претрагу. Додатно, можете изабрати
+између различитих типова веза:
 
-![Screenshot shows the time accounting
-dialog](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+- **Нормално:** за сродне тикете који немају хијерархију.
+- **Надређени/подређени**: за сродне тикете где је основни проблем а други
+  је задатак. Ова врста везе се подразумевано користи приликом раздељивања
+  или спајања тикета.
 
-The feature is **optional**. If you don't see it whenever you update a
-ticket, your administrator hasn't enabled it yet or the rule for tickets to
-be taken into consideration doesn't match.
+## Обрачун времена
 
-The accounted time is always recorded and stored without a unit. However,
-your administrator may decide to show an optional label next to the field to
-hint you and your colleagues in which unit the time is expected (see
-screenshot).
+**Зашто?**
+
+За Zammad-овим интегрисаним обрачуном времена, можете водити евиденцију
+колико времена трошите на обраду тикета. На основу обрачунатог времена у
+тикету, време ће бити аутоматски припојено клијентима и организацијама. Ово
+можете користити у вашој фирми за наплату или за вођење буџета.
+
+**Како?**
+
+По освежавању тикета, биће приказан дијалог обрачуна времена. Унесите колико
+времена сте провели на тикету.
+
+![Снимак екрана приказује дијалог обрачуна
+времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+
+Ова функција је **опциона**. Уколико је не видите по сваком освежавању
+тикета, ваш администратор је још није укључио или је услов за приказ на
+тикетима неиспуњен.
+
+Обрачунато време се увек бележи и снима без јединице времена. Међутим, ваш
+администратор може одлучити да прикаже додатан приказ јединице поред поља да
+наговести вама и вашим колегама у којим јединицима је очекивано време
+(погледајте снимак екрана).
 
 Activity types can be used to distinguish between different activities and
 for grouping the accounted times. If this optional feature is active, it

@@ -29,8 +29,8 @@ table.
 Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
 Schraubenschlüssel-Symbol und befolgen Sie die Schritte.
 
-![Screenshot shows 2FA methods in user profile
-settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
+![Screenshot zeigt 2FA-Methoden in den Einstellungen des
+Benutzerprofils](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
 
 In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
 bestätigen.
@@ -48,15 +48,15 @@ Zwei-Faktor-Authentifizierung, bei der eine mobile App
 werden. Nachdem Sie eine Authentifizierungs-App auf Ihrem Gerät eingerichtet
 haben, können Sie diese mit Ihrem Zammad-Konto verknüpfen.
 
-![Screenshot shows app authentication
-configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
+![Screenshot zeigt die Konfiguration der
+Authentifizierungs-App](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 
 Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf
 Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:
 
 - [Aegis
-  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
-  (Android only)
+  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis&hl=de)
+  (nur Android)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447)
 - [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
 - [Microsoft
@@ -92,8 +92,8 @@ hinterlegen und für die Anmeldung nutzen.
 Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie
 aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten.
 
-![Screenshot shows security key authentication
-configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
+![Screenshots zeigt die Konfiguration der
+Sicherheits-Schlüssel-Authentifizierung](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
 
 Geben Sie als erstes einen **Name für diesen Sicherheitsschlüssel** im
 entsprechenden Feld ein, damit Sie diesen später in einer Übersicht
@@ -103,8 +103,8 @@ Abhängig von Ihrem Browser können Ihnen verschiedene Optionen angeboten
 werden. Wählen Sie die, die der Ihres angegebenen Sicherheits-Schlüssels
 entspricht und folgen den weiteren Anweisungen.
 
-![Screenshot shows security key authentication
-configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
+![Screenshot zeigt die Konfiguration der
+Sicherheits-Schlüssel-Authentifizierung](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
 
 Ihr Browser bittet Sie daraufhin, mit Ihrem Sicherheitsschlüssel oder Gerät
 zu interagieren (z.B. PIN-Eingabe zur Entsperrung), um zu prüfen, ob Sie in
