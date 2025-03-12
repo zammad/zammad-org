@@ -15,10 +15,8 @@ You can contribute to:
 - [Documentation](contribute#documentation)
 - [Translation](contribute#translation)
 
-Bitte sehen Sie sich unsere Hinweise für Beiträge an.
-
-Alle Repos sind auf [Github](https://github.com/zammad){target=_blank} zu
-finden.
+Please have a look at our the sections below about how to contribute. All
+repos can be found on [Github](https://github.com/zammad){target=_blank}.
 
 ## Zammad Quellcode
 
@@ -63,14 +61,17 @@ auf Github hat mehrere Branches.
 Möchten Sie zur Zammad-Dokumentation beitragen?
 
 Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
-with your changes and make sure to follow the prerequisites and instructions
-in the repo's README.
+(targeting the `develop` branch) with your changes and make sure to follow
+the [style and content guide](style-guide). Consider to have a look at the
+[repo's
+README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}
+too.
 
-The documentation you are reading is available on next.zammad.org and
-zammad.org and is built via Vitepress. The source files are written in
-Markdown.  Make sure to change the English source files only which are
-placed under `/src/en/`. The translation is done via Weblate and will
-overwrite any changes in the language specific folders (except `/src/en/`).
+The documentation you are reading is available on zammad.org and
+next.zammad.org and is built with Vitepress. The source files are written in
+Markdown. Make sure to change the English source files only which are placed
+under `/src/en/`. The translation is done via Weblate and will overwrite any
+changes in the language specific folders (except `/src/en/`).
 
 ## Übersetzung
 
@@ -94,10 +95,8 @@ ein guter Ausgangspunkt.
 
 ### Grundlagen
 
-The translation of **Zammad** and the translation of the **documentation**
-are split into different projects in Weblate. When you click in the top menu under
-"_Projects > Browse all projects_", you can find the overview of the
-projects:
+The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
+When you click in the top menu under "_Projects > Browse all projects_", you can find the overview of the projects:
 
 ![Screenshot mit Übersetzungsprojekten in Weblate und
 Menü](/screenshots/weblate-overview-docs.png)
@@ -106,6 +105,7 @@ Struktur von Übersetzungsprojekten in Weblate:
 
 - Dokumentation
   - Neue Dokumentation auf next.zammad.org
+  - New Documentation at zammad.org
 - Zammad
   - Zammad (`develop`, Entwicklungsversion)
   - Zammad (`stable` Version)
@@ -113,23 +113,19 @@ Struktur von Übersetzungsprojekten in Weblate:
 
 ::: tip
 
-Es macht keinen großen Unterschied, welchen Zweig Sie zur Übersetzung wählen. Wenn Weblate
-die gleichen Zeichenketten in verschiedenen Branches erkennt, werden sie für alle
-Branches verwendet und müssen nur einmal übersetzt werden.
-I m Zweifelsfall wählen Sie die `develop` Version.
+It should be no big difference which branch you choose to translate. When Weblate detects the same strings in different
+branches, they will be used for all branches and only have to be translated once. If in doubt, choose the `develop`
+version.
 :::
 
-Nachdem Sie ein Projekt (Dokumentation oder Zammad) ausgewählt haben, sehen
-Sie verschiedene Unterprojekte und deren Übersetzungsstatus für alle
-Sprachen in einer Übersicht.  Diese Übersichten können eine recht niedrige
-Übersetzungsrate zeigen, was auf die Menge der aktiven Sprachen
-zurückzuführen ist.
+After selecting a project (Documentation or Zammad), you will see different
+sub-projects and their translation status summarized for all
+languages. These overviews may show a quite low translation rate, which is
+due to the amount of active languages.
 
-Here you can select one of the "components", which is more or less the same as
-different versions. After selecting one of them, you can see the status of
-translation for the different languages, as you can see in the
-following screenshot with an example from _Documentation > User
-Documentation (latest)_:
+Here you can select one of the "components", which is more or less the same as different versions. After selecting one
+of them, you can see the status of translation for the different languages, as you can see in the following screenshot
+with an example from _Documentation > User Documentation (latest)_:
 
 ![Screenshot showing translation status of different languages for the user
 documentation](/screenshots/weblate-translations-user-docs.png)
@@ -158,7 +154,7 @@ können theoretisch mit dem Übersetzen beginnen. Zunächst eine kurze
       der Zeichenkette an
     - **Automatic suggestions**: here you can find automatic suggestions
       from DeepL and suggestions from similar strings, which are already
-      translated.  Use the "_Clone to translation_" button to insert it in
+      translated. Use the "_Clone to translation_" button to insert it in
       the translation field to apply changes. Use the "_Accept_" button to
       accept the suggested translation and automatically switch to the next
       string.
@@ -169,27 +165,24 @@ können theoretisch mit dem Übersetzen beginnen. Zunächst eine kurze
 
 ### Fehlerbehebung
 
-Und schließlich noch einige Hinweise für "spezielle" Zeichenketten, die Sie
-vielleicht in den Dokumentationsprojekten sehen:
+And finally some examples for "special" source strings, you might see in the
+documentation projects. You should also have a look at the [style
+guide](style-guide) where you can find more information about the syntax and
+the usage of Markdown/Vitepress features.
 
 - **\`Beispiel-String\`**
 
-    Dies wird als `Beispiel-String` ausgegeben. Je nach Kontext kann dieser
-    übersetzt werden oder nicht. Verwenden Sie in jedem Fall \` vor und nach der Zeichenkette in
-    Ihrer Übersetzung.
+    This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
+    \` before and after the string in your translation.
 
 - **\[Beispiel\](/en/pfad/zu/dokument-oder-website\)**
 
-    Dies ist ein Link zu einer anderen Seite, einschließlich des Sprachcodes.
-    Das obige "Beispiel" ist der Text, der als Linktext angezeigt wird. Dieser Teil kann
-    übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden,
-    in den Sie übersetzen. Stellen Sie sicher, dass Ihre Sprache
-    bereits auf zammad.org vorhanden ist (überprüfen Sie dies mit dem Sprachumschalter).
-    Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen (und ein
-    maßgeblicher Teil der Zeichenketten bereits übersetzt ist).
+    This is a link to another page, including the language code. The above "example" is the text, which is shown as
+    link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
+    translating in. Make sure that your language is already present on zammad.org (check it by using the language
+    switcher). Otherwise contact us if you want to have your language activated.
 
 - **\*\*Beispiel Text\*\***
 
-    Markierung für Text (z. B. fett, kursiv). Alternativ: \*Beispiel Text\*.
-    Diese Zeichenketten können übersetzt werden, aber die Markup-Kennzeichnung
-    (z.B. ein oder mehrere \*) sollte sinngemäß übernommen werden.
+    Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
+    markup (e.g. `**` or `_`) should be adopted true to meaning.
