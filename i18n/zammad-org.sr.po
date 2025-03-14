@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-06 14:54+0100\n"
-"PO-Revision-Date: 2025-03-05 17:00+0000\n"
+"POT-Creation-Date: 2025-03-12 06:50+0100\n"
+"PO-Revision-Date: 2025-03-11 08:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -214,7 +214,7 @@ msgid "Contribute"
 msgstr "Учествујте"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:11
+#: src/en/contribute/contribute.md:9
 msgid ""
 "We are happy to see you contribute to Zammad! You can do this in several "
 "ways. Contributions are mainly done by forking one of our repos on GitHub "
@@ -227,48 +227,46 @@ msgstr ""
 "(осим за преводе, погледајте испод за детаље). 🚀"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:13
+#: src/en/contribute/contribute.md:11
 msgid "You can contribute to:"
-msgstr ""
+msgstr "Можете допринети:"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:17
+#: src/en/contribute/contribute.md:15
 msgid "[Source-code](contribute#zammad-source-code)"
-msgstr ""
+msgstr "[Изворном коду](contribute#zammad-source-code)"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:17
-#, fuzzy
-#| msgid "[User Documentation](/en/documentation/use/general)"
+#: src/en/contribute/contribute.md:15
 msgid "[Documentation](contribute#documentation)"
-msgstr "[Корисничка документација](/sr/documentation/use/general)"
+msgstr "[Документацији](/sr/documentation/use/general)"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:17
+#: src/en/contribute/contribute.md:15
 msgid "[Translation](contribute#translation)"
-msgstr ""
+msgstr "[Преводу](contribute#translation)"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:19
-msgid "Please have a look on our notes on how to contribute below."
-msgstr "Погледајте детаље о томе како да допринесете у наставку."
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:21
+#: src/en/contribute/contribute.md:18
+#, fuzzy
+#| msgid ""
+#| "All repos can be found on [Github](https://github.com/zammad)"
+#| "{target=_blank}."
 msgid ""
-"All repos can be found on [Github](https://github.com/zammad){target=_blank}."
+"Please have a look at our the sections below about how to contribute. All "
+"repos can be found on [Github](https://github.com/zammad){target=_blank}."
 msgstr ""
 "Све репозиторије можете пронаћи на [GitHub](https://github.com/zammad)"
 "{target=_blank}-у."
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:22
+#: src/en/contribute/contribute.md:19
 #, no-wrap
 msgid "Zammad Source Code"
 msgstr "Zammad изворни кoд"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:26
+#: src/en/contribute/contribute.md:23
 msgid ""
 "The Zammad source code can be found on GitHub in the [Zammad repository]"
 "(https://github.com/zammad/zammad){target=_blank}."
@@ -277,7 +275,7 @@ msgstr ""
 "(https://github.com/zammad/zammad){target=_blank}."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:30
+#: src/en/contribute/contribute.md:27
 msgid ""
 "Have a look at the [developer manual](https://github.com/zammad/zammad/blob/"
 "develop/doc/developer_manual/index.md){target=_blank} to get started."
@@ -286,13 +284,13 @@ msgstr ""
 "develop/doc/developer_manual/index.md){target=_blank} за почетак."
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:31
+#: src/en/contribute/contribute.md:28
 #, no-wrap
 msgid "Supported Branches / Versions"
 msgstr "Подржани огранци/верзије"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:35
+#: src/en/contribute/contribute.md:31
 msgid ""
 "The main [Zammad repository](https://github.com/zammad/zammad)"
 "{target=_blank} at Github has several branches."
@@ -301,13 +299,13 @@ msgstr ""
 "{target=_blank} на GitHub-у има неколико огранка."
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:36
+#: src/en/contribute/contribute.md:32
 #, no-wrap
 msgid "`develop`"
 msgstr "`develop`"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:42
+#: src/en/contribute/contribute.md:39
 msgid ""
 "This is the current (unreleased) development state of next major release "
 "(this will become the new `stable` branch)."
@@ -316,12 +314,12 @@ msgstr ""
 "нови `stable` огранак)."
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:42
+#: src/en/contribute/contribute.md:39
 msgid "Don't use it for production!"
 msgstr "Не користите у продукцији!"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:42 src/en/contribute/contribute.md:48
+#: src/en/contribute/contribute.md:39 src/en/contribute/contribute.md:46
 msgid ""
 "Supported with bug and security fixes - see also our [Security Policy]"
 "(https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}."
@@ -331,80 +329,82 @@ msgstr ""
 "md){target=_blank}."
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:43
+#: src/en/contribute/contribute.md:40
 #, no-wrap
 msgid "`stable`"
 msgstr "`stable`"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:48
+#: src/en/contribute/contribute.md:46
 msgid "This is the current stable release, e.g. Zammad 5.2."
 msgstr "Ово је тренутно стабилно издање, нпр. Zammad 5.2."
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:48
+#: src/en/contribute/contribute.md:46
 msgid "Use this branch for production installations."
 msgstr "Користите овај огранак за инсталације у продукцији."
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:49
+#: src/en/contribute/contribute.md:47
 #, no-wrap
 msgid "`stable-x.y`"
 msgstr "`stable-x.y`"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:54
+#: src/en/contribute/contribute.md:51
 msgid ""
 "These are the branches of old versions of Zammad like `stable-5.1` for "
 "Zammad 5.1."
 msgstr "Ово су огранци старих Zammad издања као `stable-5.1` за Zammad 5.1."
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:54
+#: src/en/contribute/contribute.md:51
 msgid "No support for bug or security issues is provided."
 msgstr "Нису подржане исправке грешака и сигурносних пропуста."
 
 #. type: Yaml Front Matter Hash Value: hero actions text
-#: src/en/contribute/contribute.md:55 src/en/contribute/contribute.md:103
+#: src/en/contribute/contribute.md:52 src/en/contribute/contribute.md:95
 #: src/en/documentation/index.md:1 src/en/index.md:1
 #, no-wrap
 msgid "Documentation"
 msgstr "Документација"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:58
+#: src/en/contribute/contribute.md:55
 msgid "Do you want to contribute to the Zammad documentation?"
 msgstr "Да ли желите да допринесете Zammad документацији?"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:62
+#: src/en/contribute/contribute.md:59
 #, fuzzy
 #| msgid ""
-#| "Open a new GitHub pull request at https://github.com/zammad/zammad-org "
+#| "Open a new GitHub pull request at <https://github.com/zammad/zammad-org> "
 #| "with your changes and make sure to follow the prerequisites and "
 #| "instructions in the repo's README."
 msgid ""
 "Open a new GitHub pull request at <https://github.com/zammad/zammad-org> "
-"with your changes and make sure to follow the prerequisites and instructions "
-"in the repo's README."
+"(targeting the `develop` branch) with your changes and make sure to follow "
+"the [style and content guide](style-guide). Consider to have a look at the "
+"[repo's README.md](https://github.com/zammad/zammad-org?tab=readme-ov-"
+"file#zammad-hub){target=_blank} too."
 msgstr ""
-"Отворите нови GitHub pull request на https://github.com/zammad/zammad-org са "
-"вашим изменама и обавезно испратите предуслове и инструкције у README "
+"Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org> "
+"са вашим изменама и обавезно испратите предуслове и инструкције у README "
 "датотеци репозиторија."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:68
+#: src/en/contribute/contribute.md:64
 #, fuzzy
 #| msgid ""
 #| "The documentation you are reading is available on next.zammad.org and "
 #| "zammad.org and is built via Vitepress. The source files are written in "
 #| "Markdown.  Make sure to change the English source files only which are "
 #| "placed under `/src/en/`. The translation is done via Weblate and will "
-#| "overwrite any changes in the language specific folders (except `/src/eng/"
+#| "overwrite any changes in the language specific folders (except `/src/en/"
 #| "`)."
 msgid ""
-"The documentation you are reading is available on next.zammad.org and zammad."
-"org and is built via Vitepress. The source files are written in Markdown.  "
+"The documentation you are reading is available on zammad.org and next.zammad."
+"org and is built with Vitepress. The source files are written in Markdown. "
 "Make sure to change the English source files only which are placed under `/"
 "src/en/`. The translation is done via Weblate and will overwrite any changes "
 "in the language specific folders (except `/src/en/`)."
@@ -417,13 +417,13 @@ msgstr ""
 "језика (осим `/src/en/`)."
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:69
+#: src/en/contribute/contribute.md:65
 #, no-wrap
 msgid "Translation"
 msgstr "Превод"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:75
+#: src/en/contribute/contribute.md:70
 msgid ""
 "If you want to help us with translation and improve the multi-language "
 "support of Zammad and/or the documentation, you are welcome to contribute as "
@@ -437,7 +437,7 @@ msgstr ""
 "сервис за колаборацију на преводима пројеката."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:79
+#: src/en/contribute/contribute.md:73
 msgid ""
 "You just have to head over to Zammad's [Weblate instance](https://"
 "translations.zammad.org/){target=_blank}.  You can either create an account "
@@ -448,7 +448,7 @@ msgstr ""
 "(уколико га још немате) или да се пријавите путем вашег GitHub налога!"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:85
+#: src/en/contribute/contribute.md:78
 msgid ""
 "We will cover some basic steps in the following sections to get you started "
 "with translating. However, if you want to use some additional features of "
@@ -463,33 +463,31 @@ msgstr ""
 "{target=_blank} вам може помоћи."
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:86
+#: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:51
 #: src/en/documentation/use/guides/search.md:8
 #, no-wrap
 msgid "Basics"
 msgstr "Основе"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:92
+#: src/en/contribute/contribute.md:83
 #, fuzzy, no-wrap
 #| msgid ""
 #| "The translation of **Zammad** and the translation of the **documentation**\n"
 #| "are split into different projects in Weblate. When you click in the top menu under\n"
-#| "\"*Projects > Browse all projects*\", you can find the overview of the\n"
+#| "\"_Projects > Browse all projects_\", you can find the overview of the\n"
 #| "projects:\n"
 msgid ""
-"The translation of **Zammad** and the translation of the **documentation**\n"
-"are split into different projects in Weblate. When you click in the top menu under\n"
-"\"_Projects > Browse all projects_\", you can find the overview of the\n"
-"projects:\n"
+"The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.\n"
+"When you click in the top menu under \"_Projects > Browse all projects_\", you can find the overview of the projects:\n"
 msgstr ""
 "Превод **Zammad-а** и **документације** су раздвојени\n"
 "у различите пројекте у Weblate апликацији. Преглед пројеката\n"
 "можете пронаћи кликом на мени при врху под\n"
-"„*Projects > Browse all projects*”:\n"
+"„_Projects > Browse all projects_”:\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:94
+#: src/en/contribute/contribute.md:85
 msgid ""
 "![Screenshot showing translation projects in Weblate and menu](/screenshots/"
 "weblate-overview-docs.png)"
@@ -498,46 +496,56 @@ msgstr ""
 "screenshots/weblate-overview-docs.png)"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:96
+#: src/en/contribute/contribute.md:87
 msgid "Structure of translation projects in Weblate:"
 msgstr "Структура пројекта превода у Weblate-у:"
 
 #. type: Bullet: '  - '
-#: src/en/contribute/contribute.md:103
+#: src/en/contribute/contribute.md:95
 msgid "New Documentation at next.zammad.org"
 msgstr "Нова документација на next.zammad.org"
 
+#. type: Bullet: '  - '
+#: src/en/contribute/contribute.md:95
+#, fuzzy
+#| msgid "New Documentation at next.zammad.org"
+msgid "New Documentation at zammad.org"
+msgstr "Нова документација на next.zammad.org"
+
 #. type: Title ##
-#: src/en/contribute/contribute.md:103 src/en/reference/docker-env-vars.md:16
+#: src/en/contribute/contribute.md:95 src/en/reference/docker-env-vars.md:16
 #, no-wrap
 msgid "Zammad"
 msgstr "Zammad"
 
 #. type: Bullet: '  - '
-#: src/en/contribute/contribute.md:103
+#: src/en/contribute/contribute.md:95
 msgid "Zammad (`develop`, development version)"
 msgstr "Zammad (`develop`, развојна верзија)"
 
 #. type: Bullet: '  - '
-#: src/en/contribute/contribute.md:103
+#: src/en/contribute/contribute.md:95
 msgid "Zammad (`stable` version)"
 msgstr "Zammad (`stable` верзија)"
 
 #. type: Bullet: '  - '
-#: src/en/contribute/contribute.md:103
-#, fuzzy
-#| msgid "*Some more which aren't relevant here*"
+#: src/en/contribute/contribute.md:95
 msgid "_Some more which aren't relevant here_"
-msgstr "*Додатне верзије које овде нису релевантне*"
+msgstr "_Додатне верзије које овде нису релевантне_"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/contribute.md:104
-#, no-wrap
+#: src/en/contribute/contribute.md:96
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "It should be no big difference which branch you choose to translate. When Weblate\n"
+#| "detects the same strings in different branches, they will be used for all\n"
+#| "branches and only have to be translated once. If in doubt, choose the `develop`\n"
+#| "version.\n"
 msgid ""
 "\n"
-"It should be no big difference which branch you choose to translate. When Weblate\n"
-"detects the same strings in different branches, they will be used for all\n"
-"branches and only have to be translated once. If in doubt, choose the `develop`\n"
+"It should be no big difference which branch you choose to translate. When Weblate detects the same strings in different\n"
+"branches, they will be used for all branches and only have to be translated once. If in doubt, choose the `develop`\n"
 "version.\n"
 msgstr ""
 "\n"
@@ -547,10 +555,16 @@ msgstr ""
 "верзију.\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:116
+#: src/en/contribute/contribute.md:106
+#, fuzzy
+#| msgid ""
+#| "After selecting a project (Documentation or Zammad), you will see "
+#| "different sub-projects and their translation status summarized for all "
+#| "languages.  These overviews may show a quite low translation rate, which "
+#| "is due to the amount of active languages."
 msgid ""
 "After selecting a project (Documentation or Zammad), you will see different "
-"sub-projects and their translation status summarized for all languages.  "
+"sub-projects and their translation status summarized for all languages. "
 "These overviews may show a quite low translation rate, which is due to the "
 "amount of active languages."
 msgstr ""
@@ -560,33 +574,27 @@ msgstr ""
 "различите језике."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:122
+#: src/en/contribute/contribute.md:110
 #, fuzzy, no-wrap
 #| msgid ""
 #| "Here you can select one of the \"components\", which is more or less the same as\n"
 #| "different versions. After selecting one of them, you can see the status of\n"
 #| "translation for the different languages, as you can see in the\n"
-#| "following screenshot with an example from *Documentation > User\n"
-#| "Documentation (latest)*:\n"
+#| "following screenshot with an example from _Documentation > User\n"
+#| "Documentation (latest)_:\n"
 msgid ""
-"Here you can select one of the \"components\", which is more or less the same as\n"
-"different versions. After selecting one of them, you can see the status of\n"
-"translation for the different languages, as you can see in the\n"
-"following screenshot with an example from _Documentation > User\n"
-"Documentation (latest)_:\n"
+"Here you can select one of the \"components\", which is more or less the same as different versions. After selecting one\n"
+"of them, you can see the status of translation for the different languages, as you can see in the following screenshot\n"
+"with an example from _Documentation > User Documentation (latest)_:\n"
 msgstr ""
 "Овде можете одабрати једну од „компонената”, које су мање или више идентичне\n"
 "различитим верзијама. По одабиру једне, можете видети статус\n"
 "превода по различитим језицима, по узору на\n"
-"следећи снимак екрана са примером из *Documentation > User\n"
-"Documentation (latest)*:\n"
+"следећи снимак екрана са примером из _Documentation > User\n"
+"Documentation (latest)_:\n"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:124
-#, fuzzy
-#| msgid ""
-#| "![Screenshot showing translation status of different languages for the "
-#| "user documentation ](/screenshots/weblate-translations-user-docs.png)"
+#: src/en/contribute/contribute.md:112
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
 "documentation](/screenshots/weblate-translations-user-docs.png)"
@@ -595,29 +603,24 @@ msgstr ""
 "корисничку документацију](/screenshots/weblate-translations-user-docs.png)"
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:125
+#: src/en/contribute/contribute.md:113
 #, no-wrap
 msgid "Translating"
 msgstr "Превођење"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:130
-#, fuzzy
-#| msgid ""
-#| "After selecting your language you want to translate to, a good starting "
-#| "point is to select \"*Untranslated strings*\" (or the same meaning in "
-#| "your language, depending on what you have set in your profile)."
+#: src/en/contribute/contribute.md:117
 msgid ""
 "After selecting your language you want to translate to, a good starting "
 "point is to select \"_Untranslated strings_\" (or the same meaning in your "
 "language, depending on what you have set in your profile)."
 msgstr ""
 "По одабиру вашег језика на који желите да преводите, добра почетна тачка је "
-"одабир „*Untranslated strings*” (или слично значење у вашем језику, у "
+"одабир „_Untranslated strings_” (или слично значење у вашем језику, у "
 "зависности шта сте подесили у свом профилу)."
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:134
+#: src/en/contribute/contribute.md:120
 msgid ""
 "After that, you will finally see the first untranslated string in the upper "
 "field and, in theory, you can start to translate. First a brief overview of "
@@ -628,7 +631,7 @@ msgstr ""
 "Weblate апликације:"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:136
+#: src/en/contribute/contribute.md:122
 msgid ""
 "![Screenshot of Weblate translation user interface](/screenshots/weblate-ui."
 "png)"
@@ -637,28 +640,23 @@ msgstr ""
 "weblate-ui.png)"
 
 #. type: Bullet: '1. '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 msgid "**Breadcrumbs with path** to the current project and language"
 msgstr "**Путања навигације** на тренутни пројекат и језик превода"
 
 #. type: Bullet: '2. '
-#: src/en/contribute/contribute.md:153
-#, fuzzy
-#| msgid ""
-#| "**Translation area** itself. You can find the source string (*\"English "
-#| "(United States)\"*) at the top and the field for your translation "
-#| "(*\"French\"* in this example)."
+#: src/en/contribute/contribute.md:136
 msgid ""
 "**Translation area** itself. You can find the source string (_\"English "
 "(United States)\"_) at the top and the field for your translation "
 "(_\"French\"_ in this example)."
 msgstr ""
-"Сам **Translation** одељак. Можете видети изворни низ текста („English "
-"(United States)”*) при врху и поље за унос вашег превода (*„French”* у овом "
+"Сам **Translation** одељак. Можете видети изворни низ текста (_„English "
+"(United States)”_) при врху и поље за унос вашег превода (_„French”_ у овом "
 "примеру)."
 
 #. type: Bullet: '3. '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 msgid ""
 "**Glossary**: here you can find common translations in Zammad context. The "
 "terms from the glossary are highlighted in the source strings, as well."
@@ -667,40 +665,40 @@ msgstr ""
 "из речника ће бити наглашени у изворном тексту такође."
 
 #. type: Bullet: '4. '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 msgid "**Some useful tabs**:"
 msgstr "**Неке корисне картице**:"
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 msgid "**Nearby strings**: shows you the context of the word or string"
 msgstr "**Nearby strings**: вам приказује контекст речи или низа текста"
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 #, fuzzy
 #| msgid ""
 #| "**Automatic suggestions**: here you can find automatic suggestions from "
 #| "DeepL and suggestions from similar strings, which are already "
-#| "translated.  Use the \"*Clone to translation*\" button to insert it in "
-#| "the translation field to apply changes. Use the \"*Accept*\" button to "
+#| "translated.  Use the \"_Clone to translation_\" button to insert it in "
+#| "the translation field to apply changes. Use the \"_Accept_\" button to "
 #| "accept the suggested translation and automatically switch to the next "
 #| "string."
 msgid ""
 "**Automatic suggestions**: here you can find automatic suggestions from "
-"DeepL and suggestions from similar strings, which are already translated.  "
+"DeepL and suggestions from similar strings, which are already translated. "
 "Use the \"_Clone to translation_\" button to insert it in the translation "
 "field to apply changes. Use the \"_Accept_\" button to accept the suggested "
 "translation and automatically switch to the next string."
 msgstr ""
 "**Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге од "
 "DeepL сервиса и предлоге на основу сличног текста, који је већ преведен.  "
-"Користите дугме „*Clone to translation*” да убаците текст у поље превода и "
-"снимите измене. Користите дугме „*Accept*” да прихватите предложен предлог и "
+"Користите дугме „_Clone to translation_” да убаците текст у поље превода и "
+"снимите измене. Користите дугме „_Accept_” да прихватите предложен предлог и "
 "одмах пређене на следећи низ текста."
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:153
+#: src/en/contribute/contribute.md:136
 msgid ""
 "**Other languages**: here you can get an overview, which languages are "
 "translated and you can also see the translated strings (could be useful for "
@@ -710,7 +708,7 @@ msgstr ""
 "превод и саме преводе (може бити корисно за сличне језике)."
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:154
+#: src/en/contribute/contribute.md:137
 #: src/en/tutorials/connect-config-elasticsearch.md:99
 #: src/en/tutorials/sso-kerberos.md:553
 #, no-wrap
@@ -718,47 +716,55 @@ msgid "Troubleshooting"
 msgstr "Решавање проблема"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:158
+#: src/en/contribute/contribute.md:142
 msgid ""
-"And finally some notes for \"special\" source strings, you might see in the "
-"documentation projects:"
+"And finally some examples for \"special\" source strings, you might see in "
+"the documentation projects. You should also have a look at the [style guide]"
+"(style-guide) where you can find more information about the syntax and the "
+"usage of Markdown/Vitepress features."
 msgstr ""
-"И коначно, пар напомена за „посебне” изворне низове текста, које можете "
-"видети у пројектима документације:"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:160
+#: src/en/contribute/contribute.md:144
 msgid "**\\`example-string\\`**"
 msgstr "**\\`example-string\\`**"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:164
-#, no-wrap
+#: src/en/contribute/contribute.md:147
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    This is rendered as `example-string`. Depending on the context, it can be\n"
+#| "    translated or not. In any case, use the \\` before and after the string in\n"
+#| "    your translation.\n"
 msgid ""
-"    This is rendered as `example-string`. Depending on the context, it can be\n"
-"    translated or not. In any case, use the \\` before and after the string in\n"
-"    your translation.\n"
+"    This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the\n"
+"    \\` before and after the string in your translation.\n"
 msgstr ""
 "    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може\n"
 "    превести, или не. У сваком случају, користите \\` пре и после низа текста у\n"
 "    вашем преводу.\n"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:166
+#: src/en/contribute/contribute.md:149
 msgid "**\\[example\\](/en/path/to/document-or-website\\)**"
 msgstr "**\\[example\\](/en/path/to/document-or-website\\)**"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:174
-#, no-wrap
+#: src/en/contribute/contribute.md:154
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    This is a link to another page, including the language code.\n"
+#| "    The above \"example\" is the text, which is shown as link text. This part can\n"
+#| "    be translated. For the path, only the `en` may be replaced by the\n"
+#| "    language code you are translating in. Make sure that your language is\n"
+#| "    already present on zammad.org (check it by using the language switcher).\n"
+#| "    Otherwise contact us if you want to have your language activated (and a\n"
+#| "    substantial amount of the strings are already translated).\n"
 msgid ""
-"    This is a link to another page, including the language code.\n"
-"    The above \"example\" is the text, which is shown as link text. This part can\n"
-"    be translated. For the path, only the `en` may be replaced by the\n"
-"    language code you are translating in. Make sure that your language is\n"
-"    already present on zammad.org (check it by using the language switcher).\n"
-"    Otherwise contact us if you want to have your language activated (and a\n"
-"    substantial amount of the strings are already translated).\n"
+"    This is a link to another page, including the language code. The above \"example\" is the text, which is shown as\n"
+"    link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are\n"
+"    translating in. Make sure that your language is already present on zammad.org (check it by using the language\n"
+"    switcher). Otherwise contact us if you want to have your language activated.\n"
 msgstr ""
 "    Ово је линк на другу страницу, и укључује код језика\n"
 "    Текст „example” изнад биће приказан као текст линка. Овај део\n"
@@ -769,17 +775,20 @@ msgstr ""
 "    (у случају да је већина текста већ преведена).\n"
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:176
+#: src/en/contribute/contribute.md:156
 msgid "**\\*\\*example string\\*\\***"
 msgstr "**\\*\\*пример текста\\*\\***"
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:179
-#, no-wrap
+#: src/en/contribute/contribute.md:158
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    Markup for text (e.g. bold, italics). Alternative: \\*example string\\*.\n"
+#| "    These strings can be translated, but the markup labeling (e.g. one or\n"
+#| "    more \\*) should be adopted true to meaning.\n"
 msgid ""
-"    Markup for text (e.g. bold, italics). Alternative: \\*example string\\*.\n"
-"    These strings can be translated, but the markup labeling (e.g. one or\n"
-"    more \\*) should be adopted true to meaning.\n"
+"    Markup for text (e.g. bold, italics). Alternative: \\_example string\\_. These strings can be translated, but the\n"
+"    markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
 msgstr ""
 "    Ознака текста (нпр. подебљано, курзив=. Алтернатива: \\*пример текста\\*.\n"
 "    Ови низови текста се могу преводити, али ознаке (нпр. једна или\n"
@@ -792,266 +801,609 @@ msgid "Style and Content Guide"
 msgstr "Водич кроз стил и садржај"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:10
+#: src/en/contribute/style-guide.md:9
+#, fuzzy
+#| msgid ""
+#| "This guide provides an overview of the content that should be included in "
+#| "the Zammad documentation, as well as formatting guidelines to ensure "
+#| "clarity and readability."
 msgid ""
 "This guide provides an overview of the content that should be included in "
-"the Zammad documentation, as well as formatting guidelines to ensure clarity "
-"and readability."
+"the Zammad documentation, as well as formatting and style guidelines to "
+"ensure clarity and readability."
 msgstr ""
 "Овај водич вам пружа преглед садржаја Zammad документације, као и упутства "
 "за форматирање текста ради јасноће и читљивости."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:13
+#: src/en/contribute/style-guide.md:12
+msgid ""
+"The first sections are about general information and rules. A [section with "
+"useful examples](#basic-formatting-examples)  follows at the end."
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:16
+#, fuzzy
+#| msgid ""
+#| "If you have questions, feel free to ask in our community. If you want to "
+#| "contribute, have a look on our contribution page to get started."
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
-"contribute, have a look on our contribution page to get started."
+"contribute, you may also want to have a look at our [contribution page]"
+"(contribute) or [ask in an issue](https://github.com/zammad/zammad-org/"
+"issues){target=_blank} to get started."
 msgstr ""
 "Уколико имате додатних питања, слободно се обратите нашој онлајн заједници. "
 "Ако желите да учествујете, консултујте нашу документацију за прве кораке."
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:14
-#, no-wrap
-msgid "Audience Assumptions and Content"
+#: src/en/contribute/style-guide.md:17
+#, fuzzy, no-wrap
+#| msgid "Audience Assumptions and Content"
+msgid "Audience Assumptions"
 msgstr "Претпоставке о публици и садржај"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:18
+#: src/en/contribute/style-guide.md:22
+#, fuzzy
+#| msgid ""
+#| "The documentation is written assuming our **users** have a basic "
+#| "understanding of web browser usage and common software design concepts."
 msgid ""
-"The documentation is written assuming our **users** have a basic "
-"understanding of web browser usage and common software design concepts."
+"The documentation is written assuming that **users** have a basic "
+"understanding of web browser usage and common software design concepts. This "
+"means for example that features are described in detail, but not on a level "
+"of how to open a dropdown field."
 msgstr ""
 "Документација је написана у стилу који подразумева да наши **корисници** "
 "поседују основно знање о употреби претраживача и концептима софтверског "
 "дизајна."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:21
+#: src/en/contribute/style-guide.md:25
+#, fuzzy
+#| msgid ""
+#| "The **Zammad administrator** additionally should have a basic "
+#| "understanding of the workflows and communication process in its company."
 msgid ""
-"The **Zammad administrator** additionally should have a basic understanding "
-"of the workflows and communication process in its company."
+"The **Zammad administrator** additionally should have a basic technical "
+"understanding and should also know the workflows and communication processes "
+"in its company."
 msgstr ""
 "**Zammad администратор** треба додатно да поседује основно разумевање радних "
 "токова и процеса комуникације у својој фирми."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:24
+#: src/en/contribute/style-guide.md:28
+#, fuzzy
+#| msgid ""
+#| "For self-hosted instances, **system administrators** should also be "
+#| "familiar with Linux system administration basics."
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
-"with Linux system administration basics."
+"with Linux system administration basics.  Access to the host system (e.g. "
+"via SSH) and administrative permissions are taken for granted for system "
+"administrators."
 msgstr ""
 "За инстанце које сами хостују, **администратори система** такође треба да "
 "буду упознати са основама администрације Linux система."
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:25
+#: src/en/contribute/style-guide.md:29
 #, no-wrap
-msgid "Style"
-msgstr "Стил"
+msgid "Content"
+msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:30
+#: src/en/contribute/style-guide.md:32
+msgid "The documentation aims to include information about:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:37
+#, fuzzy
+#| msgid "Use Zammad"
+msgid "How to use Zammad"
+msgstr "Коришћење Zammad-а"
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:37
 msgid ""
-"American English is the original source language for the documentation.  "
-"Translations are made via Weblate, see contribution section for more "
-"information."
+"How to manage Zammad as an admin (e.g. setting it up after installation, "
+"adjust settings, configure features)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:37
+msgid "Different ways how to install Zammad"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:37
+msgid ""
+"Additional guides if (host) system configuration and/or configuration of "
+"third party systems is needed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:42
+msgid ""
+"Regarding the **level of detail**, the [audience assumptions](#audience-"
+"assumptions) should be considered. Because one of the goals of Zammad is to "
+"be intuitive and user friendly, there is no need to describe each click in "
+"detail. However, important steps should be included. The readers should "
+"achieve their goals as quickly and easily as possible without having to read "
+"a lot."
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:45
+msgid ""
+"Due to the fact that a documentation can't cover everything (otherwise it "
+"would be code), the relevance has to be considered. If parts with a common "
+"use case are missing, it should be strived to include them in the "
+"documentation."
+msgstr ""
+
+#. type: Title ##
+#: src/en/contribute/style-guide.md:46
+#, fuzzy, no-wrap
+#| msgid "Style and Content Guide"
+msgid "Style and Rules"
+msgstr "Водич кроз стил и садржај"
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:50
+msgid ""
+"The next sections cover general things to consider writing the "
+"documentation. After these you can find a section with some [basic examples "
+"of formatting and structuring](#basic-formatting-examples) the content."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:58
+msgid ""
+"The documentation is written in the Markdown markup language. The source "
+"files have the extension `.md`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:58
+msgid ""
+"The system uses [Vitepress](https://vitepress.dev/){target=_blank} to build "
+"the website."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:58
+msgid "The language of the source files is American English."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:58
+#, fuzzy
+#| msgid ""
+#| "American English is the original source language for the documentation.  "
+#| "Translations are made via Weblate, see contribution section for more "
+#| "information."
+msgid ""
+"The translation of the documentation is done via Weblate, see [contribution "
+"section](contribute#translation) for more details."
 msgstr ""
 "Амерички енглески је изворни језик документације. Преводи се врше преко "
 "Weblate апликације, погледајте одељак о преводима за више информација."
 
+#. type: Title ###
+#: src/en/contribute/style-guide.md:59
+#, no-wrap
+msgid "Style"
+msgstr "Стил"
+
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:45
-msgid "Use short and clear sentences, prioritizing information over complexity"
+#: src/en/contribute/style-guide.md:81
+#, fuzzy
+#| msgid ""
+#| "Use short and clear sentences, prioritizing information over complexity"
+msgid ""
+"Use short and clear sentences and prioritize information over complexity."
 msgstr ""
 "Користите кратке и јасне реченице, дајући предност информацијама у односу на "
 "сложеност"
 
-#. type: Plain text
-#: src/en/contribute/style-guide.md:45
-#, fuzzy, no-wrap
-#| msgid ""
-#| "* Capitalize all words except minor ones in the page title and sections\n"
-#| "(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
-#| "* Line length of 80 characters in the source file should not be exceeded if\n"
-#| "possible\n"
-#| "* Proper breadcrumb separation for paths and locations with `>`\n"
-#| "* Use code highlighting to emphasize programming snippets\n"
-#| "* Include screenshots when necessary\n"
-#| "* Provide step-by-step instructions with clear explanations\n"
-#| "* Use examples or scenarios to illustrate concepts\n"
-#| "* Include relevant images or diagrams when necessary\n"
-#| "* Abbreviations should be explained the first time they are used or included\n"
-#| "in the glossary and linked to\n"
-#| "* If in doubt, align it to the existing documentation\n"
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
 msgid ""
-"- Capitalize all words except minor ones in the page title and sections\n"
-"(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
-"- Line length of 80 characters in the source file should not be exceeded if\n"
-"possible\n"
-"- Proper breadcrumb separation for paths and locations with `>`\n"
-"- Use code highlighting to emphasize programming snippets\n"
-"- Include screenshots when necessary\n"
-"- Provide step-by-step instructions with clear explanations\n"
-"- Use examples or scenarios to illustrate concepts\n"
-"- Include relevant images or diagrams when necessary\n"
-"- Abbreviations should be explained the first time they are used or included\n"
-"in the glossary and linked to\n"
-"- If in doubt, align it to the existing documentation\n"
+"Page title and headings: capitalize the first letter of all words except "
+"minor words (see [title case](https://en.wikipedia.org/wiki/Title_case)"
+"{target=_blank})."
 msgstr ""
-"* Све речи у наслову и одељцима (осим мањих) започните великим словом\n"
-"(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
-"* Уколико је могуће, немојте прекорачивати дужину линије од 80 карактера\n"
-"у изворној датотеци\n"
-"* Одвајате правилно путање и локације са `>`\n"
-"* Користите истицање кода да бисте нагласили исечке текста који садрже инструкције\n"
-"* Убаците снимке екрана када је потребно\n"
-"* Дајте упутства корак-по-корак са јасним објашњењима\n"
-"* Користите примере или сценарије да илуструјете концепте\n"
-"* Укључите релевантне слике или дијаграме када је потребно\n"
-"* Скраћенице треба објаснити први пут када се користе или укључују\n"
-"у речнику и повезати их\n"
-"* Ако сте у недоумици, ускладите се са постојећом документацијом\n"
 
-#. type: Title ##
-#: src/en/contribute/style-guide.md:46
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid ""
+"Use breadcrumb separation for paths and locations with `>` as separator and "
+"format path in italics, e.g.  _Settings > Channels > Chat_."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "Use code highlighting to emphasize programming snippets."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "Use [info, tip, warning and danger boxes](#custom-boxes) when needed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid ""
+"Use a [detail box](#custom-boxes) when content may not be relevant for all "
+"the readers or may break the reading flow otherwise."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid ""
+"Include screenshots when necessary. The preferred way of adding screenshots "
+"of Zammad is by creating them automatically [using Cypress](https://github."
+"com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress)"
+"{target=_blank}.  This supports the maintainability of the documentation "
+"because the screenshots are re-generated each time the build pipeline runs. "
+"Please note that the usage of Cypress is not part of this documentation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "Provide step-by-step instructions with clear explanations."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "Use examples or scenarios to illustrate concepts."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "Include relevant images or diagrams when necessary."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid ""
+"Spell abbreviations full the first time they are used or include them in the "
+"glossary and link to them. Broadly used and common abbreviations may be "
+"excluded from this rule."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:81
+msgid "If in doubt, align it to the existing documentation."
+msgstr ""
+
+#. type: Title ###
+#: src/en/contribute/style-guide.md:82
+#, fuzzy, no-wrap
+#| msgid "Mentions"
+msgid "Conventions"
+msgstr "Помињања"
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:88
+msgid ""
+"The documentation stack includes automated checks (linting) to ensure "
+"compliance with the style guide and common rules for Markdown files. To "
+"check if your changes are compliant, run `pnpm lint` to perform the check. "
+"Some of the recognized problems can be even fixed automatically by running "
+"`pnpm lint:fix`. Make sure to run the check before committing your changes. "
+"Otherwise the build of the documentation will fail."
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:92
+msgid ""
+"The used linting has some built in rules which you can find [here](https://"
+"github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
+"{target=_blank}. Some important rules and customized ones are mentioned "
+"below."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid ""
+"Line length of 120 characters in the source file may not be exceeded for "
+"standard text. Make sure to use a line break before reaching this limit. A "
+"visual indicator in your editor may be helpful. This does not apply for "
+"special content like paths to screenshots and long links."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid "Multiple consecutive empty lines are not allowed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid ""
+"Empty lines before and after headings and fenced code blocks are required."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid ""
+"Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
+"language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is applicable, "
+"use `` ```plain``."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid "Use `-` for bullet point lists (unordered list) like this one."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid ""
+"To easily distinguish between **bold** and _italics_, use `_` around the "
+"text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid "Multiple headings with the same content are not allowed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:105
+msgid "Each document must have exactly one `h1` heading as title."
+msgstr ""
+
+#. type: Title ###
+#: src/en/contribute/style-guide.md:106
 #, no-wrap
-msgid "Formatting"
-msgstr "Форматирање текста"
+msgid "Basic Formatting Examples"
+msgstr ""
+
+#. type: Title ####
+#: src/en/contribute/style-guide.md:108
+#, fuzzy, no-wrap
+#| msgid "Rails commands"
+msgid "Text and UI"
+msgstr "Rails команде"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:54
+#: src/en/contribute/style-guide.md:116
 #, fuzzy, no-wrap
 #| msgid ""
-#| "| Type in Zammad | Highlighting                  | Markdown syntax                 |\n"
-#| "|----------------|-------------------------------|---------------------------------|\n"
-#| "| Buttons        | `Sign in`                   | \\`\\`Sign in\\`\\`                 |\n"
-#| "| Fields         | **Name**                      | \\*\\*Name\\*\\*                    |\n"
-#| "| Location/path  | *Settings > Channels > Email* | \\*Settings > Channels > Email\\* |\n"
+#| "| Type in Zammad      | Highlighting                  | Markdown syntax                 |\n"
+#| "|---------------------|-------------------------------|---------------------------------|\n"
+#| "| Buttons             | `Sign in`                     | \\`Sign in\\`                     |\n"
+#| "| Fields              | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+#| "| Location/path       | _Settings > Channels > Email_ | \\*Settings > Channels > Email\\* |\n"
+#| "| Keyboard shortcut   | [[x]]                         | \\[\\[x\\]\\]                       |\n"
 msgid ""
-"| Type in Zammad      | Highlighting                  | Markdown syntax                 |\n"
-"|---------------------|-------------------------------|---------------------------------|\n"
-"| Buttons             | `Sign in`                     | \\`Sign in\\`                     |\n"
-"| Fields              | **Name**                      | \\*\\*Name\\*\\*                    |\n"
-"| Location/path       | _Settings > Channels > Email_ | \\*Settings > Channels > Email\\* |\n"
-"| Keyboard shortcut   | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+"| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
+"|-------------------------- |-------------------------------|---------------------------------|\n"
+"| Buttons                   | `Sign in`                     | \\`Sign in\\`                     |\n"
+"| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+"| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
+"| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
 msgstr ""
-"| Тип у Zammad-у  | Истицање                      | Markdown синтакса               |\n"
-"|-----------------|-------------------------------|---------------------------------|\n"
-"| Дугмићи         | `Пријава`                     | \\`Пријава\\`                     |\n"
-"| Поља            | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
-"| Путања/локације | *Подешавања > Канали > Имејл* | \\*Подешавања > Канали > Имејл\\* |\n"
+"| Тип у Zammad-у       | Истицање                      | Markdown синтакса               |\n"
+"|----------------------|-------------------------------|---------------------------------|\n"
+"| Дугмићи              | `Пријава`                     | \\`Пријава\\`                     |\n"
+"| Поља                 | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
+"| Путања/локације      | *Подешавања > Канали > Имејл* | \\*Подешавања > Канали > Имејл\\* |\n"
+"| Пречица на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
 
-#. type: Title ##
-#: src/en/contribute/style-guide.md:55
+#. type: Title ####
+#: src/en/contribute/style-guide.md:117
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:60
+#: src/en/contribute/style-guide.md:121
+#, fuzzy
+#| msgid ""
+#| "Every documentation file should include a title on top level (#). Lower "
+#| "levels should contain at least two sections. If only one section exists, "
+#| "consider merging it with the higher-level content."
 msgid ""
-"Every documentation file should include a title on top level (#). Lower "
-"levels should contain at least two sections. If only one section exists, "
-"consider merging it with the higher-level content."
+"Every documentation file must include exactly one title on top level (like "
+"`# Title`). Levels below should always contain at least two sections. If "
+"only one section exists, consider merging it with the higher-level content."
 msgstr ""
 "Свака страна документације треба да поседује наслов највишег нивоа (#). Нижи "
 "нивои треба да садрже најмање два одељка. Уколико постоји само један одељак, "
 "размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:62
+#: src/en/contribute/style-guide.md:123
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:64
+#: src/en/contribute/style-guide.md:125
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:66
+#: src/en/contribute/style-guide.md:127
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:68
+#: src/en/contribute/style-guide.md:129
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:70
+#: src/en/contribute/style-guide.md:131
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:72
+#: src/en/contribute/style-guide.md:133
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
-#. type: Title ###
-#: src/en/contribute/style-guide.md:73
-#, no-wrap
-msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#. type: Title ####
+#: src/en/contribute/style-guide.md:134
+#, fuzzy, no-wrap
+#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:75
-#, no-wrap
-msgid "This section title uses a badge of type \"warning\". There are other badges available:  \n"
-msgstr "Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке:  \n"
-
-#. type: Plain text
-#: src/en/contribute/style-guide.md:77
+#: src/en/contribute/style-guide.md:138
 #, fuzzy
-#| msgid "https://vitepress.dev/reference/default-theme-badge#usage"
-msgid "<https://vitepress.dev/reference/default-theme-badge#usage>"
-msgstr "https://vitepress.dev/reference/default-theme-badge#usage"
+#| msgid ""
+#| "This section title uses a badge of type \"warning\". There are other "
+#| "badges available:  \n"
+msgid ""
+"This section title uses a badge of the type \"warning\". There are other "
+"badges available, see <https://vitepress.dev/reference/default-theme-"
+"badge#usage>."
+msgstr ""
+"Наслов овог одељка користи значку „упозорења”. Доступне су и остале "
+"значке:  \n"
 
-#. type: Title ###
-#: src/en/contribute/style-guide.md:78
+#. type: Fenced div block (details Usage)
+#: src/en/contribute/style-guide.md:139
+#, fuzzy, no-wrap
+#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+msgid ""
+"\n"
+"```md\n"
+"Text/title to add a badge <Badge type=\"warning\" text=\"custom text\" />\n"
+"```\n"
+"\n"
+msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+
+#. type: Title ####
+#: src/en/contribute/style-guide.md:147
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:80
+#: src/en/contribute/style-guide.md:149
+#, fuzzy, no-wrap
+#| msgid "This is an info box.\n"
+msgid ""
+"This is an info box.\n"
+"\n"
+msgstr "Ово је информациони оквир.\n"
+
+#. type: Fenced div block (danger)
+#: src/en/contribute/style-guide.md:149 src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:191
+#, no-wrap
+msgid ""
+"\n"
+"```md\n"
+msgstr ""
+
+#. type: Fenced div block (info|details Usage|info)
+#: src/en/contribute/style-guide.md:149
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Ово је информациони оквир.\n"
 
-#. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:84
+#. type: Fenced div block (danger|details Usage)
+#: src/en/contribute/style-guide.md:149 src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:191
 #, no-wrap
-msgid "This is a tip.\n"
+msgid ""
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/contribute/style-guide.md:163
+#, fuzzy, no-wrap
+#| msgid "This is a tip.\n"
+msgid ""
+"This is a tip.\n"
+"\n"
+msgstr "Ово је савет.\n"
+
+#. type: Fenced div block (tip|details Usage|tip)
+#: src/en/contribute/style-guide.md:163
+#, fuzzy, no-wrap
+#| msgid "This is a tip.\n"
+msgid "This is a tip box.\n"
 msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:88
-#, no-wrap
-msgid "This is a warning.\n"
+#: src/en/contribute/style-guide.md:177
+#, fuzzy, no-wrap
+#| msgid "This is a warning.\n"
+msgid ""
+"This is a warning.\n"
+"\n"
+msgstr "Ово је упозорење.\n"
+
+#. type: Fenced div block (warning|details Usage|warning)
+#: src/en/contribute/style-guide.md:177
+#, fuzzy, no-wrap
+#| msgid "This is a warning.\n"
+msgid "This is a warning box.\n"
 msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:92
+#: src/en/contribute/style-guide.md:191
+#, fuzzy, no-wrap
+#| msgid "This is a dangerous warning.\n"
+msgid ""
+"This is a dangerous warning.\n"
+"\n"
+msgstr "Ово је упозорење на опасност.\n"
+
+#. type: Fenced div block (danger|details Usage|warning)
+#: src/en/contribute/style-guide.md:191
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:96
-#, no-wrap
-msgid "This is a details block.\n"
+#: src/en/contribute/style-guide.md:205
+#, fuzzy, no-wrap
+#| msgid "This is a details block.\n"
+msgid ""
+"This is a details block.\n"
+"\n"
+"Usage:\n"
+"\n"
+"```md\n"
+"\n"
 msgstr "Ово је одељак са детаљима.\n"
 
-#. type: Title ###
-#: src/en/contribute/style-guide.md:100
+#. type: Fenced div block (details|details Box title shown in collapsed state)
+#: src/en/contribute/style-guide.md:205
+#, no-wrap
+msgid "This is the content shown in the expanded state.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/contribute/style-guide.md:205
+#, no-wrap
+msgid ""
+"\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/contribute/style-guide.md:220
 #, no-wrap
 msgid "Definition lists"
 msgstr "Листе дефиниција"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:104
+#: src/en/contribute/style-guide.md:224
 #, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1061,7 +1413,7 @@ msgstr ""
 ": Ово је дефиниција првог термина.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:228
 #, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1071,6 +1423,24 @@ msgstr ""
 "Други термин <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag2\" />\n"
 ": Ово је дефиниција другог термина.\n"
 ": Ово је додатна дефиниција другог термина.\n"
+
+#. type: Fenced div block (details Usage)
+#: src/en/contribute/style-guide.md:229
+#, fuzzy, no-wrap
+#| msgid ""
+#| "First Term <Badge type=\"info\" text=\"tag1\" />\n"
+#| ": This is the definition of the first term.\n"
+msgid ""
+"\n"
+"```md\n"
+"First Term <Badge type=\"info\" text=\"tag1\" />\n"
+": This is the definition of the first term\n"
+"  with another line.\n"
+"```\n"
+"\n"
+msgstr ""
+"Први термин <Badge type=\"info\" text=\"tag1\" />\n"
+": Ово је дефиниција првог термина.\n"
 
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
@@ -1212,11 +1582,6 @@ msgstr "**Зашто?**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:21
-#, fuzzy
-#| msgid ""
-#| "It is possible to automatically close a ticket tab in the navigation "
-#| "sidebar.  It depends on your preferences, but you can save a click after "
-#| "updating or updating a ticket to *closed* state."
 msgid ""
 "It is possible to automatically close a ticket tab in the navigation "
 "sidebar.  It depends on your preferences, but you can save a click after "
@@ -1224,7 +1589,7 @@ msgid ""
 msgstr ""
 "Могуће је аутоматски затворити прозор тикета у бочној траци навигације.  "
 "Зависи од ваших подешавања, али можете уштедети клик након освежавања или "
-"освежавања тикета са стањем *затворено*."
+"освежавања тикета са стањем _затворено_."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:23
@@ -1281,16 +1646,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:35
-#, fuzzy
-#| msgid ""
-#| "**Close tab on ticket close**: This option only closes the tab when the "
-#| "ticket is updated and the state is set to *closed*."
 msgid ""
 "**Close tab on ticket close**: This option only closes the tab when the "
 "ticket is updated and the state is set to _closed_."
 msgstr ""
 "**Затвори прозор по затварању тикета**: Ова опција затвара прозор само када "
-"је тикет освежен и стање је постављено на *затворено*."
+"је тикет освежен и стање је постављено на _затворено_."
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/advanced-features.md:36
@@ -2255,18 +2616,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:20
-#, fuzzy
-#| msgid ""
-#| "This documentation is divided into different sections. Currently you are "
-#| "reading the *General* section. Use the left sidebar to navigate to your "
-#| "desired information or the search in the header."
 msgid ""
 "This documentation is divided into different sections. Currently you are "
 "reading the _General_ section. Use the left sidebar to navigate to your "
 "desired information or the search in the header."
 msgstr ""
 "Ова документације је подељена на различите одељке. Тренутно читате одељак "
-"*Уопштено*. Користите бочну траку са леве стране за навигацију на жељене "
+"_Уопштено_. Користите бочну траку са леве стране за навигацију на жељене "
 "информације или претражите у заглављу."
 
 #. type: Title ##
@@ -2550,10 +2906,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:79
-#, fuzzy, no-wrap
-#| msgid "Ticket"
+#, no-wrap
 msgid "Open a Ticket"
-msgstr "Тикет"
+msgstr "Отворите тикет"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:85
@@ -2587,10 +2942,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:95
-#, fuzzy, no-wrap
-#| msgid "Features Overview"
+#, no-wrap
 msgid "Reorder Overviews"
-msgstr "Преглед функција"
+msgstr "Промена редоследа прегледа"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:103
@@ -2719,10 +3073,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/guides/search.md:47
-#, fuzzy, no-wrap
-#| msgid "Advanced User"
+#, no-wrap
 msgid "Advanced"
-msgstr "Напредни корисник"
+msgstr "Напредно"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:53
@@ -2738,7 +3091,7 @@ msgstr ""
 #: src/en/documentation/use/guides/search.md:54
 #, no-wrap
 msgid "Syntax"
-msgstr ""
+msgstr "Синтакса"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:58
@@ -2777,10 +3130,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/guides/search.md:76
-#, fuzzy, no-wrap
-#| msgid "Used Examples"
+#, no-wrap
 msgid "Additional Examples"
-msgstr "Коришћени примери"
+msgstr "Додатни примери"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:87
@@ -2859,7 +3211,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:20
 #, no-wrap
 msgid "Set Up"
-msgstr ""
+msgstr "Поставка"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:26
@@ -2905,10 +3257,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/guides/two-factor-auth.md:37
-#, fuzzy, no-wrap
-#| msgid "Authentication"
+#, no-wrap
 msgid "Authentication App"
-msgstr "Аутентификација"
+msgstr "Апликација за аутентификацију"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:43
@@ -3007,7 +3358,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:74
 #, no-wrap
 msgid "Security Key"
-msgstr ""
+msgstr "Безбедносни кључ"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:80
@@ -3117,7 +3468,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:118
 #, no-wrap
 msgid "Sign-in"
-msgstr ""
+msgstr "Пријава"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:124
@@ -3232,7 +3583,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:168
 #, no-wrap
 msgid "Set a Default 2FA Method"
-msgstr ""
+msgstr "Постављање подразумеваног метода двофакторске аутентификације"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:173
@@ -3313,7 +3664,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:196
 #, no-wrap
 msgid "Remove a 2FA Method"
-msgstr ""
+msgstr "Уклањање метода двофакторске аутентификације"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:200
@@ -3325,10 +3676,9 @@ msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/manage-profile.md:6
-#, fuzzy, no-wrap
-#| msgid "User Profile"
+#, no-wrap
 msgid "Manage Your User Profile"
-msgstr "Кориснички профил"
+msgstr "Управљање вашим корисничким профилом"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:9
@@ -3347,7 +3697,7 @@ msgstr ""
 #: src/en/documentation/use/manage-profile.md:10
 #, no-wrap
 msgid "Avatar Menu"
-msgstr ""
+msgstr "Кориснички мени"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:14
@@ -3429,7 +3779,7 @@ msgstr "Тамни изглед"
 #. type: Bullet: '- '
 #: src/en/documentation/use/manage-profile.md:40
 msgid "Light mode"
-msgstr ""
+msgstr "Светли изглед"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/manage-profile.md:40
@@ -3462,7 +3812,7 @@ msgstr "Jезик"
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:53
 msgid "Choose your preferred language of Zammad."
-msgstr ""
+msgstr "Одаберите ваш жељни језик Zammad-а."
 
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:54
@@ -3489,7 +3839,7 @@ msgstr ""
 #: src/en/documentation/use/manage-profile.md:63
 #, no-wrap
 msgid "Out of Office"
-msgstr ""
+msgstr "Ван канцеларије"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:67
@@ -3522,10 +3872,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:78
-#, fuzzy, no-wrap
-#| msgid "Authentication"
+#, no-wrap
 msgid "Two-factor Authentication"
-msgstr "Аутентификација"
+msgstr "Двофакторска аутентификација"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:83
@@ -3575,10 +3924,9 @@ msgstr ""
 #: src/en/documentation/use/manage-profile.md:100
 #: src/en/documentation/use/start-using-zammad.md:74
 #: src/en/documentation/use/start-using-zammad.md:119
-#, fuzzy, no-wrap
-#| msgid "Administration"
+#, no-wrap
 msgid "Notifications"
-msgstr "Администрација"
+msgstr "Обавештења"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:103
@@ -3669,17 +4017,15 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/start-using-zammad.md:1
 #: src/en/documentation/use/start-using-zammad.md:6
-#, fuzzy, no-wrap
-#| msgid "Get Zammad"
+#, no-wrap
 msgid "Start with Zammad"
-msgstr "Преузмите Zammad"
+msgstr "Започните Zammad авантуру"
 
 #. type: Title ##
 #: src/en/documentation/use/start-using-zammad.md:8
-#, fuzzy, no-wrap
-#| msgid "User Profile"
+#, no-wrap
 msgid "User Interface"
-msgstr "Кориснички профил"
+msgstr "Кориснички интерфејс"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:15
@@ -3715,7 +4061,7 @@ msgstr ""
 #: src/en/documentation/use/start-using-zammad.md:26
 #, no-wrap
 msgid "Main UI Elements"
-msgstr ""
+msgstr "Главни елементи корисничког интерфејса"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:29
@@ -4136,10 +4482,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/gdpr.md:9
-#, fuzzy, no-wrap
-#| msgid "General Data Protection Regulation"
+#, no-wrap
 msgid "> General Data Protection Regulation\n"
-msgstr "Општа правила о заштити података"
+msgstr "> Општа правила о заштити података\n"
 
 #. type: Title ##
 #: src/en/gdpr.md:10
@@ -4192,21 +4537,6 @@ msgstr "Прикупљамо податке о уређају коришћење
 
 #. type: Plain text
 #: src/en/gdpr.md:35
-#, fuzzy
-#| msgid ""
-#| "* \"Cookies\" are data files that are placed on your device or computer "
-#| "and often\n"
-#| "include an anonymous unique identifier. For more information about "
-#| "cookies and\n"
-#| "how to disable cookies visit https://www.allaboutcookies.org.\n"
-#| "* \"Log files\" track actions occurring on the site, and collect data "
-#| "including\n"
-#| "your IP address, browser type, internet service provider, referring/exit "
-#| "pages,\n"
-#| "and date/time stamps.\n"
-#| "* \"Web beacons\", \"tags\", and \"pixels\" are electronic files used to "
-#| "record\n"
-#| "information about how you browse the site.\n"
 msgid ""
 "- \"Cookies\" are data files that are placed on your device or computer and "
 "often include an anonymous unique identifier. For more information about "
@@ -4217,19 +4547,15 @@ msgid ""
 "and \"pixels\" are electronic files used to record information about how you "
 "browse the site."
 msgstr ""
-"* „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и "
-"често\n"
-"укључују анонимни јединствени идентификатор. За више информација о "
-"колачићима и\n"
-"како да их искључите, посетите https://www.allaboutcookies.org.\n"
-"* „Датотеке дневника” прате операције на сајту, и прикупљају податке "
-"укључујући\n"
-"вашу IP адресу, врсту претраживача, интернет провајдера, референциране/"
-"излазне странице,\n"
-"и ознаке датума и времена.\n"
-"* „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које "
-"снимају\n"
-"информације о томе на који начин прегледавате сајт.\n"
+"- „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и "
+"често укључују анонимни јединствени идентификатор. За више информација о "
+"колачићима и како да их искључите, посетите https://www.allaboutcookies."
+"org.\n"
+"- „Датотеке дневника” прате операције на сајту, и прикупљају податке "
+"укључујући вашу IP адресу, врсту претраживача, интернет провајдера, "
+"референциране/излазне странице, и ознаке датума и времена.\n"
+"- „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које "
+"снимају информације о томе на који начин прегледавате сајт."
 
 #. type: Title ##
 #: src/en/gdpr.md:36
@@ -4595,34 +4921,18 @@ msgstr "Најмање 4 GB RAM за контејнере"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:23
-#, fuzzy
-#| msgid ""
-#| "- Adjust your host's settings to run Elasticsearch properly:\n"
-#| "    ```bash\n"
-#| "    sysctl -w vm.max_map_count=262144\n"
-#| "    ```\n"
 msgid "Adjust your host's settings to run Elasticsearch properly:"
-msgstr ""
-"- Подесите ваш сервер да правилно извршава Elasticsearch сервис:\n"
-"    ```bash\n"
-"    sysctl -w vm.max_map_count=262144\n"
-"    ```\n"
+msgstr "Подесите ваш сервер да правилно извршава Elasticsearch сервис:"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:27
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- Adjust your host's settings to run Elasticsearch properly:\n"
-#| "    ```bash\n"
-#| "    sysctl -w vm.max_map_count=262144\n"
-#| "    ```\n"
+#, no-wrap
 msgid ""
 "    ```sh\n"
 "    sysctl -w vm.max_map_count=262144\n"
 "    ```\n"
 msgstr ""
-"- Подесите ваш сервер да правилно извршава Elasticsearch сервис:\n"
-"    ```bash\n"
+"    ```sh\n"
 "    sysctl -w vm.max_map_count=262144\n"
 "    ```\n"
 
@@ -4696,10 +5006,10 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:51
-#, fuzzy
-#| msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
 msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
-msgstr "git clone https://github.com/zammad/zammad-docker-compose.git\n"
+msgstr ""
+"**URL адреса репозиторија**: `https://github.com/zammad/zammad-docker-"
+"compose`"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:51
@@ -5094,35 +5404,7 @@ msgstr ""
 
 #. type: Fenced div block (details Required Tools|tabs key:distros)
 #: src/en/get-started/installation/package.md:28
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo apt install curl apt-transport-https gnupg\n"
-#| "```\n"
-#| "=== Debian\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo apt install curl apt-transport-https gnupg\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "Only SLES - Not required for OpenSUSE:\n"
-#| "```bash\n"
-#| "sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
-#| "```\n"
-#| "```bash\n"
-#| "sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo yum install wget epel-release\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -5159,30 +5441,34 @@ msgstr ""
 "\n"
 "=== Ubuntu\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt install curl apt-transport-https gnupg\n"
 "```\n"
+"\n"
 "=== Debian\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt install curl apt-transport-https gnupg\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
 "Само SLES - није обавезно за OpenSUSE:\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo yum install wget epel-release\n"
 "```\n"
+"\n"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:64
@@ -5199,85 +5485,7 @@ msgstr "Обезбедите исправан locale"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:68
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "List your current locale settings:\n"
-#| "\n"
-#| "```sh\n"
-#| "locale | grep \"LANG=\"\n"
-#| "```\n"
-#| "If above does not return `<lang_code>.utf8`, you can correct this\n"
-#| "issue as follows:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install locales\n"
-#| "```\n"
-#| "```sh\n"
-#| "sudo locale-gen en_US.UTF-8\n"
-#| "```\n"
-#| "```sh\n"
-#| "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
-#| "```\n"
-#| "\n"
-#| "After fixing it, make sure to check the output again for including\n"
-#| "`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
-#| "\n"
-#| "=== Debian\n"
-#| "List your current locale settings:\n"
-#| "\n"
-#| "```sh\n"
-#| "locale | grep \"LANG=\"\n"
-#| "```\n"
-#| "If above does not return `<lang_code>.utf8`, you can correct this\n"
-#| "issue as follows:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install locales\n"
-#| "```\n"
-#| "```sh\n"
-#| "sudo locale-gen en_US.UTF-8\n"
-#| "```\n"
-#| "```sh\n"
-#| "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
-#| "```\n"
-#| "\n"
-#| "After fixing it, make sure to check the output again for including\n"
-#| "`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "List your current locale settings:\n"
-#| "\n"
-#| "```sh\n"
-#| "localectl status | grep LANG\n"
-#| "```\n"
-#| "If above does not return `<lang_code>.utf8`, you can correct this\n"
-#| "issue as follows:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo localectl set-locale LANG=en_US.UTF-8\n"
-#| "```\n"
-#| "\n"
-#| "After fixing it, make sure to check the output again for including\n"
-#| "`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
-#| "\n"
-#| "===CentOS/RHEL\n"
-#| "List your current locale settings:\n"
-#| "\n"
-#| "```sh\n"
-#| "locale | grep \"LANG=\"\n"
-#| "```\n"
-#| "If above does not return `<lang_code>.utf8`, you can correct this\n"
-#| "issue as follows:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo localectl set-locale LANG=en_US.UTF-8\n"
-#| "```\n"
-#| "\n"
-#| "After fixing it, make sure to check the output again for including\n"
-#| "`<lang_code>.utf8`. A reboot may help if unsuccessful.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -5369,19 +5577,22 @@ msgstr ""
 "=== Ubuntu\n"
 "Излистајте ваша тренутна locale подешавања:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
+"\n"
 "Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити\n"
 "на следећи начин:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt install locales\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo locale-gen en_US.UTF-8\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
 "\n"
@@ -5391,19 +5602,22 @@ msgstr ""
 "=== Debian\n"
 "Излистајте ваша тренутна locale подешавања:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
+"\n"
 "Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити\n"
 "на следећи начин:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt install locales\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo locale-gen en_US.UTF-8\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
 "```\n"
 "\n"
@@ -5413,13 +5627,14 @@ msgstr ""
 "=== OpenSUSE/SLES\n"
 "Излистајте ваша тренутна locale подешавања:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "localectl status | grep LANG\n"
 "```\n"
+"\n"
 "Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити\n"
 "на следећи начин:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
 "\n"
@@ -5429,13 +5644,14 @@ msgstr ""
 "=== CentOS/RHEL\n"
 "Излистајте ваша тренутна locale подешавања:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "locale | grep \"LANG=\"\n"
 "```\n"
+"\n"
 "Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити\n"
 "на следећи начин:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo localectl set-locale LANG=en_US.UTF-8\n"
 "```\n"
 "\n"
@@ -5489,83 +5705,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:174
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "Install repository key:\n"
-#| "```bash\n"
-#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#| "```\n"
-#| "Ubuntu 20.04\n"
-#| "\n"
-#| "```bash\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Ubuntu 22.04\n"
-#| "\n"
-#| "```bash\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Ubuntu 24.04\n"
-#| "\n"
-#| "```bash\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
-#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "=== Debian\n"
-#| "Install repository key:\n"
-#| "```bash\n"
-#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#| "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#| "```\n"
-#| "Debian 11\n"
-#| "\n"
-#| "```bash\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Debian 12\n"
-#| "\n"
-#| "```bash\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "=== OpenSUSE/SLES\n"
-#| "Install repository key:\n"
-#| "```bash\n"
-#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#| "```\n"
-#| "OpenSUSE 15.x / SLES15\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#| "```\n"
-#| "===CentOS/RHEL\n"
-#| "Install repository key:\n"
-#| "```bash\n"
-#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#| "```\n"
-#| "CentOS 8 / RHEL 8\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#| "```\n"
-#| "\n"
-#| "CentOS 9 / RHEL 9\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -5658,78 +5798,90 @@ msgstr ""
 "\n"
 "=== Ubuntu\n"
 "Инсталирајте кључ репозиторија:\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
 "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
 "```\n"
+"\n"
 "Ubuntu 20.04\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
 "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
 "Ubuntu 22.04\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
 "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
 "Ubuntu 24.04\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
 "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
+"\n"
 "=== Debian\n"
 "Инсталирајте кључ репозиторија:\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
 "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
 "```\n"
+"\n"
 "Debian 11\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
 "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
 "Debian 12\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
 "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
+"\n"
 "=== OpenSUSE/SLES\n"
 "Инсталирајте кључ репозиторија:\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
 "```\n"
+"\n"
 "OpenSUSE 15.x / SLES15\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
 "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
 "```\n"
+"\n"
 "===CentOS/RHEL\n"
 "Инсталирајте кључ репозиторија:\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
 "```\n"
+"\n"
 "CentOS 8 / RHEL 8\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
 "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
 "```\n"
 "\n"
 "CentOS 9 / RHEL 9\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
 "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
 "```\n"
+"\n"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:264
@@ -5739,42 +5891,7 @@ msgstr "Инсталација Zammad-а"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:266
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "```bash\n"
-#| "sudo apt install zammad\n"
-#| "```\n"
-#| "=== Debian\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "```bash\n"
-#| "sudo apt install zammad\n"
-#| "```\n"
-#| "=== OpenSUSE/SLES\n"
-#| "```bash\n"
-#| "sudo zypper ref\n"
-#| "```\n"
-#| "```bash\n"
-#| "sudo zypper install zammad\n"
-#| "```\n"
-#| "===CentOS/RHEL\n"
-#| "```bash\n"
-#| "sudo yum install zammad\n"
-#| "```\n"
-#| "\n"
-#| "Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:\n"
-#| "\n"
-#| "```bash\n"
-#| "sudo chmod -R 755 /opt/zammad/public/\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -5823,37 +5940,46 @@ msgstr ""
 "\n"
 "=== Ubuntu\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt update\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo apt install zammad\n"
 "```\n"
+"\n"
 "=== Debian\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo apt update\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo apt install zammad\n"
 "```\n"
+"\n"
 "=== OpenSUSE/SLES\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo zypper ref\n"
 "```\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo zypper install zammad\n"
 "```\n"
+"\n"
 "===CentOS/RHEL\n"
-"```bash\n"
+"\n"
+"```sh\n"
 "sudo yum install zammad\n"
 "```\n"
 "\n"
 "Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:\n"
 "\n"
-"```bash\n"
+"```sh\n"
 "sudo chmod -R 755 /opt/zammad/public/\n"
 "```\n"
+"\n"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:312
@@ -9290,15 +9416,6 @@ msgstr "Прилагођавање Zammad stack-а"
 
 #. type: Plain text
 #: src/en/reference/docker-compose-scenarios.md:167
-#, fuzzy
-#| msgid ""
-#| "Sometimes it's necessary to apply local changes to the Zammad docker "
-#| "stack, e.g. to include additional services. If you plan to do so, we "
-#| "recommend that you do not change the `docker-compose.yml` file, but "
-#| "instead create a local `docker-compose.override.yml` that includes all "
-#| "your modifications.  Docker-Compose will [automatically load this file "
-#| "and merge its changes into your stack](https://docs.docker.com/compose/"
-#| "multiple-compose-files/merge/)."
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad docker stack, "
 "e.g. to include additional services. If you plan to do so, we recommend that "
@@ -9310,7 +9427,7 @@ msgstr ""
 "Понекад је неопходно применити локалне измене за Zammad docker stack, нпр. "
 "укључити додатне сервисе. Уколико планирате то да урадите, препоручујемо да "
 "не мењате `docker-compose.yml` датотеку, већ да додате локалну `docker-"
-"compose.override.yml` која укључује све ваше измене.  Docker compose ће "
+"compose.override.yml` која укључује све ваше измене. Docker compose ће "
 "[аутоматски учитати ову датотеку и применити измене на ваш stack](https://"
 "docs.docker.com/compose/multiple-compose-files/merge/)."
 
@@ -9331,24 +9448,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/reference/docker-env-vars.md:11
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you want to use a `.env` file, you can use the provided `.env.dist`\n"
-#| "file and copy it to `.env`. That way it will be picked up by Docker-Compose\n"
-#| "automatically and not overwritten during updates.\n"
-#| "\n"
-#| "Zammad runs on port `8080` by default. If you want to use another port,\n"
-#| "you can set it via the variable `NGINX_EXPOSE_PORT`.\n"
+#, no-wrap
 msgid ""
 "If you want to use a `.env` file, you can use the provided `.env.dist` file and copy it to `.env`. That way it will be\n"
 "picked up by Docker-Compose automatically and not overwritten during updates.\n"
 msgstr ""
-"Уколико желите да користите `.env` датотеку, можете икористити приложену `.env.dist`\n"
-"датотеку и ископирати је у `.env`. На тај начин биће аутоматски препозната од стране Docker Compose\n"
-"и преживеће ажурирања.\n"
-"\n"
-"Zammad се подразумевано покреће на порту број `8080`. Уколико желите да користите други порт,\n"
-"можете га подесити преко променљиве `NGINX_EXPOSE_PORT`.\n"
+"Уколико желите да користите `.env` датотеку, можете икористити приложену `.env.dist` датотеку и ископирати је у `.env`. На тај начин биће\n"
+"аутоматски препозната од стране Docker Compose и преживеће ажурирања.\n"
 
 #. type: Plain text
 #: src/en/reference/docker-env-vars.md:22
@@ -22681,6 +22787,53 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#~ msgid "Please have a look on our notes on how to contribute below."
+#~ msgstr "Погледајте детаље о томе како да допринесете у наставку."
+
+#~ msgid ""
+#~ "And finally some notes for \"special\" source strings, you might see in "
+#~ "the documentation projects:"
+#~ msgstr ""
+#~ "И коначно, пар напомена за „посебне” изворне низове текста, које можете "
+#~ "видети у пројектима документације:"
+
+#, no-wrap
+#~ msgid ""
+#~ "- Capitalize all words except minor ones in the page title and sections\n"
+#~ "(see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
+#~ "- Line length of 80 characters in the source file should not be exceeded if\n"
+#~ "possible\n"
+#~ "- Proper breadcrumb separation for paths and locations with `>`\n"
+#~ "- Use code highlighting to emphasize programming snippets\n"
+#~ "- Include screenshots when necessary\n"
+#~ "- Provide step-by-step instructions with clear explanations\n"
+#~ "- Use examples or scenarios to illustrate concepts\n"
+#~ "- Include relevant images or diagrams when necessary\n"
+#~ "- Abbreviations should be explained the first time they are used or included\n"
+#~ "in the glossary and linked to\n"
+#~ "- If in doubt, align it to the existing documentation\n"
+#~ msgstr ""
+#~ "- Све речи у наслову и одељцима (осим мањих) започните великим словом\n"
+#~ "(погледајте [правила о насловима](https://en.wikipedia.org/wiki/Title_case){target=_blank})\n"
+#~ "- Уколико је могуће, немојте прекорачивати дужину линије од 80 карактера\n"
+#~ "у изворној датотеци\n"
+#~ "- Одвајате правилно путање и локације са `>`\n"
+#~ "- Користите истицање кода да бисте нагласили исечке текста који садрже инструкције\n"
+#~ "- Убаците снимке екрана када је потребно\n"
+#~ "- Дајте упутства корак-по-корак са јасним објашњењима\n"
+#~ "- Користите примере или сценарије да илуструјете концепте\n"
+#~ "- Укључите релевантне слике или дијаграме када је потребно\n"
+#~ "- Скраћенице треба објаснити први пут када се користе или укључују\n"
+#~ "у речнику и повезати их\n"
+#~ "- Ако сте у недоумици, ускладите се са постојећом документацијом\n"
+
+#, no-wrap
+#~ msgid "Formatting"
+#~ msgstr "Форматирање текста"
+
+#~ msgid "<https://vitepress.dev/reference/default-theme-badge#usage>"
+#~ msgstr "<https://vitepress.dev/reference/default-theme-badge#usage>"
 
 #, fuzzy
 #~| msgid ""

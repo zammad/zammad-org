@@ -20,7 +20,7 @@ Docker front ends like
 
 - Радно Docker Compose окружење
 - Најмање 4 GB RAM за контејнере
-- Adjust your host's settings to run Elasticsearch properly:
+- Подесите ваш сервер да правилно извршава Elasticsearch сервис:
 
     ```sh
     sysctl -w vm.max_map_count=262144
@@ -47,7 +47,8 @@ documentation](https://docs.portainer.io/){target=_blank}.
 Switch to **Repository** build method and provide the information below:
 
 - **Name**: enter a desired name of the stack
-- **Repository URL**: `https://github.com/zammad/zammad-docker-compose`
+- **URL адреса репозиторија**:
+  `https://github.com/zammad/zammad-docker-compose`
 - **Repository reference**: `refs/heads/master`
 - **Compose path**: `docker-compose.yml` (default)
 

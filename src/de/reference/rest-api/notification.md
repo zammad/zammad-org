@@ -6,10 +6,10 @@ title: Benachrichtigung
 # Online-Benachrichtigung
 
 :::info
-The availability of notification highly depends on the users
-permission and chosen notification settings.
+Die Verfügbarkeit von Benachrichtigungen hängt stark von der Berechtigung
+des Benutzers und den gewählten Benachrichtigungseinstellungen ab.
 
-Please note that the best results are always achieved with _Agents_.
+Bitte beachten Sie, dass die besten Ergebnisse immer mit _Agenten_ erzielt werden.
 :::
 
 ## Auflisten

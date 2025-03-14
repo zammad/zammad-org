@@ -7,11 +7,11 @@ title: Gruppe
 
 ::: info
 
-- Please note that `follow_up_possible` may not work as expected. The
-  possible values are `yes` or `new_ticket`!
-- If you want to create or update **subgroups**, use `::` as delimiter
-  for the names. You also have to name the complete hierarchy in the
-  name. Example: `Sales::Europe::South`
+- Bitte beachten Sie, dass `follow_up_possible` möglicherweise nicht wie erwartet funktioniert. Die
+  möglichen Werte sind `yes` oder `new_ticket`!
+- Wenn Sie **Untergruppen** erstellen oder aktualisieren wollen, verwenden Sie `::` als Trennzeichen
+  für die Namen. Sie müssen auch die gesamte Hierarchie im
+  Namen nennen. Beispiel: `Verkauf::Europa::Süd`
 :::
 
 ## Auflisten
@@ -88,16 +88,16 @@ Erforderliche Berechtigung: `admin.group`
 
 ::: danger
 
-**This is a permanent removal**:
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing groups cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Gruppen nicht rückgängig gemacht werden kann.
 
-Removing organizations with references in e.g. activity streams or
-tickets is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder
+Tickets ist über die API nicht möglich - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist _kein_ Fehler.
 
-Consider setting affected groups to inactive instead or ensure to move
-all existing tickets to new groups.
+Erwägen Sie stattdessen, betroffene Gruppen auf inaktiv zu setzen oder sicherzustellen, dass
+alle bestehenden Tickets in neue Gruppen verschoben werden.
 
 :::
 

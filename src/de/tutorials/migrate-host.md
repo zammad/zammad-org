@@ -41,8 +41,8 @@ auf Ihrem alten und neuen Host haben.
 
 ## Schritt 3: Aktivieren des Wartungsmodus
 
-This ends all agent and customer sessions. Activate it in Zammad's admin
-interface under _System > Maintenance_.
+Dadurch werden alle Sitzungen von Agenten und Kunden beendet. Aktivieren Sie es in Zammads Admin
+Bereich unter _System > Wartung_.
 
 ## Schritt 4: Deaktivieren Sie Ihre Kommunikationskanäle
 
@@ -51,7 +51,7 @@ trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden.
 
 ## Schritt 5: Zammad beenden und deaktivieren
 
-Make sure that no data will be changed _before_ backing up.
+Stellen Sie sicher, dass keine Daten _vor_ der Sicherung geändert werden.
 
 ```sh
 systemctl disable zammad
@@ -148,10 +148,10 @@ zypper install zammad
 :::
 
 ::: tip
-You're unsure if above is really required and a mere reinstall would be
-enough? If you run a dedicated install command on for Zammad and receive
-the following, you absolutely have to run above to fix your
-installation.
+Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich erforderlich sind oder eine einfache Neuinstallation
+ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und
+die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl ausführen, um Ihre
+Installation zu reparieren.
 
 ``` sh
 root@zammad:/# apt-get update && apt install zammad
@@ -202,8 +202,9 @@ Elasticsearch](/de/tutorials/connect-config-elasticsearch) aus.
 
 ## Schritt 11: Kanäle wieder aktivieren und den Wartungsmodus deaktivieren
 
-Set the previous deactivated channels back to active if you're sure
-everything was successful. At this point Zammad will start to _change data_!
+Setzen Sie die zuvor deaktivierten Kanäle wieder auf aktiv, wenn Sie sicher
+sind, dass alles erfolgreich war. An diesem Punkt beginnt Zammad damit
+_Daten zu ändern_!
 
 Nachdem Sie die Funktionalität Ihrer Kanäle überprüft haben, erlauben Sie
 Ihren Agenten und Kunden, sich wieder anzumelden, indem Sie den

@@ -42,20 +42,20 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 `POST`-Anfrage gesendet: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**Im Namen anderer Benutzer**
 
-If you want to create tickets on behalf of other users, use the
-`customer_id` attribute. `ticket.agent` is mandatory for this. Use
-`guess:{email address}` to save an API call if you don't know the
-user's ID or want to create the user in question
-(`"customer_id": "guess:jane@doe.com"`).
+Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie das
+Attribut `customer_id`. Das Attribut `ticket.agent` ist dabei zwingend erforderlich. Verwenden Sie
+`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu speichern, wenn Sie die
+ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen
+(`customer_id: "guess:jane@doe.com"`).
 
-**Add mention subscription right away**:
+**Erwähnungen sofort hinzufügen**
 
-Add the `mentions` attribute to your ticket payload and provide an
-array of user ids to directly subscribe them during ticket creation.
+Fügen Sie das Attribut `mentions` zu Ihrem Ticket Payload hinzu und übermitteln Sie ein
+Array von Benutzer IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
 
-_E.g.:_ `"mentions": [1, 5, 7, 8],`
+_Z.B.:_ `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -94,8 +94,8 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Above example provides an article. This article is a _new article_ and
-does not affect any existing ones.
+Das obige Beispiel liefert einen Artikel. Dieser Artikel ist ein _neuer Artikel_ und
+hat keine Auswirkungen auf bestehende Artikel.
 :::
 
 === Response
@@ -120,10 +120,10 @@ Erforderliche Berechtigung: `admin`
 
 ::: danger
 
-**This is a permanent removal**:
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing tickets cannot be undone. All data (e.g.
-articles & attachments) will be lost.
+Bitte beachten Sie, dass das Entfernen von Tickets nicht rückgängig gemacht werden kann. Alle Daten (z.B.
+Artikel & Anhänge) gehen dabei verloren.
 :::
 
 ::: details Show response

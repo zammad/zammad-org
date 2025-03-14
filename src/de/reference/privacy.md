@@ -16,14 +16,14 @@ Die folgenden Daten werden lokal auf dem Produktivsystem gespeichert:
 
 Standardmäßig löscht Zammad niemals automatisch Tickets oder Benutzer.
 
-To enable **automatic** deletion of tickets after a given interval,
-use Zammad's scheduler. You can configure it in Zammad's admin interface under
-_Manage > Scheduler_.
+Um die **automatische** Löschung von Tickets nach einem bestimmten Intervall zu aktivieren,
+verwenden Sie die Automatisierung von Zammad. Sie können sie in Zammads Admin-Oberfläche konfigurieren unter
+_Verwalten > Automatisierung_.
 
-To **manually** delete users and all their associated tickets (e.g. in
-compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/console#deleting-records).
+Um Benutzer und alle mit ihnen verbundenen Tickets **manuell** zu löschen (z.B.
+auf Grund eines Lösch-Wunschs gemäß DSGVO) können Sie
+die Datenschutzfunktionen im Admin-Bereich unter _System > Datenschutz_
+nutzen oder [per Konsole löschen](/de/reference/console#daten-loschen).
 
 ### Chat-Sitzungen
 
@@ -44,9 +44,9 @@ Eintrag in der Anruferliste wird nach 12 Monaten automatisch gelöscht.
 Zammad schreibt Protokolldateien auf die Festplatte (normalerweise unter
 `/opt/zammad/log/`).
 
-Package installations will set up a separate system utility called
-`logrotate` to rename and archive (or _rotate_) log files on a nightly basis
-and remove old logs after 14 days.
+Bei Paket-Installationen wird ein separates Dienstprogramm namens
+`logrotate` eingerichtet, das die Protokolldateien jede Nacht umbenennt und
+archiviert (oder _rotiert_) und alte Protokolle nach 14 Tagen entfernt.
 
 Bei einer Source-/Entwickler-Installation wird dringend empfohlen,
 `logrotate` oder ein ähnliches Dienstprogramm zur Protokollverwaltung zu
@@ -57,10 +57,10 @@ konfigurieren; Zammad löscht alte Protokolle nicht von selbst.
 Zammad speichert Sitzungsinformationen über jeden aktuell angemeldeten
 Benutzer.
 
-This information is automatically purged when a user logs out, and can
-be viewed or manually deleted via the admin panel (under _System >
-Sessions_). Users may also delete their own session information via the
-user preferences menu, under _Devices_.
+Diese Informationen werden automatisch gelöscht, wenn sich ein Benutzer abmeldet, und
+können über den Admin-Bereich eingesehen oder manuell gelöscht werden (unter _System >
+Sitzungen_). Benutzer können ihre eigenen Sitzungsinformationen auch über die
+Benutzereinstellungen unter _Geräte_ löschen.
 
 Zu den Sitzungsdaten gehören die IP-Adresse (und möglicherweise der
 Standort), der Browser, der Zeitpunkt der ursprünglichen Anmeldung und der
@@ -73,10 +73,10 @@ automatisch gelöscht.
 
 ## Externe Dienste
 
-Zammad utilizes third-party web services for certain functions, meaning
-that user data may occasionally be sent or exposed to third parties.
-These functions can be individually disabled in the admin panel under
-_Settings > System > Services_.
+Zammad nutzt für bestimmte Funktionen Webdienste Dritter, was bedeutet
+dass Benutzerdaten gelegentlich an Dritte gesendet oder offengelegt werden können.
+Diese Funktionen können im Admin-Bereich unter
+_Einstellungen > System > Services_ deaktiviert werden.
 
 ::: info
 Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist
@@ -105,10 +105,10 @@ von Organisationen werden 30 Tage lang zwischengespeichert.
 Es werden keine Benutzerinformationen auf geo.zammad.com gespeichert oder
 zwischengespeichert.
 
-As part of its service-level agreement (SLA) functionality, Zammad requires
-detailed, localized calendar information (_e.g.,_ to set the time zone and
-accommodate national holidays and daylight savings time).  The GeoCalendar
-service is used to retrieve this information.
+Als Teil seiner Service-Level-Agreement (SLA)-Funktionalität benötigt Zammad
+detaillierte, lokalisierte Kalenderinformationen (z.B. um die Zeitzone
+festzulegen und nationale Feiertage und Zeitzonen zu berücksichtigen). Der
+Geo-Kalendar-Dienst wird verwendet, um diese Informationen abzurufen.
 
 ### Geo-IP
 

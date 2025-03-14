@@ -52,14 +52,13 @@ Alles andere hängt von Ihrer Umgebung ab und ist nicht Gegenstand dieser Dokume
 Ersetzen Sie `zammad_production_` durch Ihr passendes Präfix.
 
 ::: details How to query the index?
-Adjust the following command to your environment:
+Passen Sie den folgenden Befehl an Ihre Umgebung an:
 
 ```sh
 curl http://localhost:9200/_aliases?pretty=true
 ```
 
-This will return an output like the following:
-
+Daraufhin erhalten Sie eine Ausgabe wie die folgende:
 ```json
 {
   "zammad_production_knowledge_base_translation" : {
@@ -146,10 +145,10 @@ finden.
 
 ### Importieren eines Dashboards
 
-In Grafana, select _➕ > Import_ (or any other place which offers you to import
-a dashboard) and either upload the json file you
-downloaded from Github or use the grafana.com ID, provided as badge
-like <Badge type="info" text="12345"/> attached to the next sections titles.
+Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import
+eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
+von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge
+wie <Badge type="info" text="12345"/> den Überschriften der nächsten Abschnitte angehängt ist.
 
 Während des Imports können Sie einen Dashboard-Namen und einen Ordner
 angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung
@@ -164,7 +163,7 @@ Sie einfach nach demselben Namen suchen.
 
 - Ticket öffnen und schließen[^1]
 - Erstellte Artikel
-- ticket SLA (in time _and_ violation) per type[^1][^2]
+- Ticket SLA (in Zeit _und_ Verletzung) pro Typ[^1][^2]
 
 #### Ticket und Artikel Meta-Informationen
 
@@ -233,12 +232,12 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
 - `ES - CTI Log`
 
-[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
+[^1]: Some values are not available as time series information. This
     means we can only display the _last_ value of the field in question.
 
-[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
-    Verletzung.
+[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen
+     SLA-Verstöße.
 
-[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher
-    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,
-    wie Sie die Beziehungen auf Ihrem System herausfinden können.
+[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher
+    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die
+    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.

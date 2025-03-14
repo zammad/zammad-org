@@ -10,8 +10,8 @@ if applicable. You might also be interested in the [environment variables
 documentation](/en/reference/env-vars).
 
 ::: tip
-If you want to use a `.env` file, you can use the provided `.env.dist` file and copy it to `.env`. That way it will be
-picked up by Docker-Compose automatically and not overwritten during updates.
+Уколико желите да користите `.env` датотеку, можете икористити приложену `.env.dist` датотеку и ископирати је у `.env`. На тај начин биће
+аутоматски препозната од стране Docker Compose и преживеће ажурирања.
 :::
 
 ## Zammad

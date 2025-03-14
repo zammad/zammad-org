@@ -16,9 +16,10 @@ es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
 Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
 allgemeine Erklärungen und Tipps.
 
-This documentation is divided into different sections. Currently you are
-reading the _General_ section. Use the left sidebar to navigate to your
-desired information or the search in the header.
+Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit lesen
+Sie den Abschnitt _Allgemein_. Benutzen Sie die linke Seitenleiste, um zu
+den gewünschten Informationen zu gelangen, oder die Suchfunktion in der
+Kopfzeile.
 
 ## Zammad Anfänger
 

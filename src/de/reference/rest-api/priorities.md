@@ -80,16 +80,16 @@ Erforderliche Berechtigung: `admin.object`
 `DELETE`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
 ::: warning
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing priorities cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Prioritäten nicht rückgängig gemacht werden kann.
 
-Removing ticket priorities with references in tickets is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Das Entfernen von Ticketprioritäten mit Referenzen in Tickets ist nicht möglich
+über die API - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist _kein_ Fehler.
 
-Consider either setting said priority to `active: false` or adjust all
-tickets with the to remove priority to another priority.
+Erwägen Sie, entweder die besagte Priorität auf `active: false` zu setzen oder alle
+Tickets mit der Priorität auf eine andere Priorität abzuändern.
 :::
 
 ::: details Show response

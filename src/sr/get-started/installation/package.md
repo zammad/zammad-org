@@ -42,7 +42,7 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Only SLES - Not required for OpenSUSE:
+Само SLES - није обавезно за OpenSUSE:
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -68,14 +68,14 @@ sudo yum install wget epel-release
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```sh
 locale | grep "LANG="
 ```
 
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```sh
 sudo apt install locales
@@ -89,18 +89,18 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 === Debian
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```sh
 locale | grep "LANG="
 ```
 
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```sh
 sudo apt install locales
@@ -114,42 +114,42 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 === OpenSUSE/SLES
-List your current locale settings:
+Излистајте ваша тренутна locale подешавања:
 
 ```sh
 localectl status | grep LANG
 ```
 
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
-===CentOS/RHEL
-List your current locale settings:
+=== CentOS/RHEL
+Излистајте ваша тренутна locale подешавања:
 
 ```sh
 locale | grep "LANG="
 ```
 
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
+Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
+на следећи начин:
 
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
+Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
+`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
 
 :::
 
@@ -173,7 +173,7 @@ Packager.io можда није доступан из окружења са ис
 :::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -202,7 +202,7 @@ echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/s
 ```
 
 === Debian
-Install repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -224,7 +224,7 @@ echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/s
 ```
 
 === OpenSUSE/SLES
-Install repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -238,7 +238,7 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Install repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -300,7 +300,7 @@ sudo zypper install zammad
 sudo yum install zammad
 ```
 
-Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:
+Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:
 
 ```sh
 sudo chmod -R 755 /opt/zammad/public/

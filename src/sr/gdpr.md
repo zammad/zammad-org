@@ -4,7 +4,7 @@ layout: home
 
 # Политика приватности
 
-> General Data Protection Regulation
+> Општа правила о заштити података
 
 ## Zammad GmbH полиса приватности
 
@@ -23,14 +23,14 @@ used and shared when you visit <https://www.zammad.org> (the "site").
 
 Прикупљамо податке о уређају коришћењем следећих технологија:
 
-- "Cookies" are data files that are placed on your device or computer and
-often include an anonymous unique identifier. For more information about
-cookies and how to disable cookies visit <https://www.allaboutcookies.org>.
-- "Log files" track actions occurring on the site, and collect data
-including your IP address, browser type, internet service provider,
-referring/exit pages, and date/time stamps.  - "Web beacons", "tags", and
-"pixels" are electronic files used to record information about how you
-browse the site.
+- „Колачићи” су датотеке које се чувају на вашем уређају или компјутеру и
+често укључују анонимни јединствени идентификатор. За више информација о
+колачићима и како да их искључите, посетите https://www.allaboutcookies.org.
+- „Датотеке дневника” прате операције на сајту, и прикупљају податке
+укључујући вашу IP адресу, врсту претраживача, интернет провајдера,
+референциране/излазне странице, и ознаке датума и времена.
+- „Веб светионици”, „ознаке” и „пиксели” су електронске датотеке које
+снимају информације о томе на који начин прегледавате сајт.
 
 ## Употреба Matomo
 

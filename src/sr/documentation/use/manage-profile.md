@@ -3,12 +3,12 @@ order: 7
 title: 'Кориснички профил'
 ---
 
-# Manage Your User Profile
+# Управљање вашим корисничким профилом
 
 ![Screenshot shows user profile
 settings](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)
 
-## Avatar Menu
+## Кориснички мени
 
 In the left navigation sidebar, you can find an avatar icon in the bottom
 left corner. This icon can display your profile picture or your initials.
@@ -38,7 +38,7 @@ depending on how your system is configured and your permissions.
 Change the appearance of Zammad. Available options:
 
 - Тамни изглед
-- Light mode
+- Светли изглед
 - Синхронизуј са рачунаром
 
 The last option tries to detect your browser's preference. It depends on
@@ -53,7 +53,7 @@ simply pressing [[d]].
 
 ### Jезик
 
-Choose your preferred language of Zammad.
+Одаберите ваш жељни језик Zammad-а.
 
 ### Аватар
 
@@ -64,7 +64,7 @@ image, simply upload one or use your camera, if you have one.
 After capturing or uploading an image, you can crop it. Have a look at the
 preview at the top of the right side panel.
 
-### Out of Office
+### Ван канцеларије
 
 Define absence periods (e.g. for your vacation), and designate a substitute
 to handle your tickets while you are away.
@@ -79,7 +79,7 @@ notifications while you are absent, too.
 Change the password of your account. Update it by entering your old
 password, the new password and confirm the new one by entering it again.
 
-### Two-factor Authentication
+### Двофакторска аутентификација
 
 Set up a two-factor authentication (2FA) to increase the security of your
 account. Your admin must have activated at least one 2FA method. It may be
@@ -101,7 +101,7 @@ Generate a personal access token for a third party application to access the
 Zammad API. After clicking the **New Personal Access Token** button, you can
 set a name, an expiration date and configure the permissions for this token.
 
-### Notifications
+### Обавештења
 
 Adjust the notifications you get. You can adjust:
 

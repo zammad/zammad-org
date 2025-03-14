@@ -47,7 +47,7 @@ looking for, have a look at the next section where you can learn how to
 search for specific attributes like creation date or the ticket owner's
 email address.
 
-## Advanced
+## Напредно
 
 You can narrow down your search results to specific attributes, even in the
 search field in the navigation bar. Read on for some examples and
@@ -55,7 +55,7 @@ explanations.  For a more detailed list of available attributes, please take
 a look at the [indexed attributes by
 Elasticsearch](/en/reference/es-indexed-attributes).
 
-### Syntax
+### Синтакса
 
 Search for a specific customer by using `customer.attribute`:
 
@@ -76,7 +76,7 @@ and `AND`/`OR` options:
 state.name: open AND (article.from:me OR article.from:somebody)
 ```
 
-### Additional Examples
+### Додатни примери
 
 | Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
 |---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

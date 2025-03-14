@@ -73,8 +73,8 @@ Jede der unten aufgeführten Einstellungen bringt ihre eigenen Kompromisse
 mit sich. Es gibt hier keine "empfohlenen Werte"; die optimale Konfiguration
 hängt von den Ressourcen Ihres Systems und der typischen Anwendungslast ab.
 
-Below settings _may_ consume all available database connections. Please
-consider to check your database server configuration.
+Die folgenden Einstellungen _können_ alle verfügbaren Datenbankverbindungen
+beanspruchen. Bitte prüfen Sie die Konfiguration Ihres Datenbankservers.
 
 ::: danger
 Seien Sie vorsichtig und verwenden Sie die Einstellungen nur, wenn Sie wissen, was Sie tun!
@@ -112,10 +112,10 @@ zammad run rails r "p Sessions.list.uniq.count"
   Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
-`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="unset"/>
-: How many processes should work on delayed jobs? Increasing this _can_
-  improve issues with delayed jobs stacking up in your system. You may want to
-  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
+`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type="info" text="nicht gesetzt"/>
+: Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_
+  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.
+  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.
 
   Maximale Anzahl von Workern: `16`
 

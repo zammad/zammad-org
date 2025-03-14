@@ -78,7 +78,7 @@ The **priority** is represented by the color of the ticket title:
 - 2 normal: blue
 - 3 high: red
 
-### Open a Ticket
+### Отворите тикет
 
 Open a ticket by simply clicking on the line. This opens the ticket as a tab
 in the left navigation bar and shows you the ticket detail view. If this
@@ -95,7 +95,7 @@ Perform bulk actions by selecting multiple tickets and either use the
 drop-down fields or drag them with the mouse to invoke the bulk action
 overlay.
 
-### Reorder Overviews
+### Промена редоследа прегледа
 
 If the order of the overviews doesn't reflect your working process or you
 just like to have a different order, you can re-arrange them for your

@@ -9,11 +9,11 @@ order: 1
 репозиторија на GitHub-у форкује и направи pull request са вашим изменама
 (осим за преводе, погледајте испод за детаље). 🚀
 
-You can contribute to:
+Можете допринети:
 
-- [Source-code](contribute#zammad-source-code)
-- [Documentation](contribute#documentation)
-- [Translation](contribute#translation)
+- [Изворном коду](contribute#zammad-source-code)
+- [Документацији](/sr/documentation/use/general)
+- [Преводу](contribute#translation)
 
 Please have a look at our the sections below about how to contribute. All
 repos can be found on [Github](https://github.com/zammad){target=_blank}.
@@ -106,7 +106,7 @@ When you click in the top menu under "_Projects > Browse all projects_", you can
 - Zammad
   - Zammad (`develop`, развојна верзија)
   - Zammad (`stable` верзија)
-  - _Some more which aren't relevant here_
+  - _Додатне верзије које овде нису релевантне_
 
 ::: tip
 
@@ -124,14 +124,14 @@ Here you can select one of the "components", which is more or less the same as d
 of them, you can see the status of translation for the different languages, as you can see in the following screenshot
 with an example from _Documentation > User Documentation (latest)_:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/weblate-translations-user-docs.png)
+![Снимак екрана који приказује статус первода по различитим језицима за
+корисничку документацију](/screenshots/weblate-translations-user-docs.png)
 
 ### Превођење
 
-After selecting your language you want to translate to, a good starting
-point is to select "_Untranslated strings_" (or the same meaning in your
-language, depending on what you have set in your profile).
+По одабиру вашег језика на који желите да преводите, добра почетна тачка је
+одабир „_Untranslated strings_” (или слично значење у вашем језику, у
+зависности шта сте подесили у свом профилу).
 
 Након овога, коначно ћете добити први непреведен низ текста у горњем пољу, и
 можете започети са преводом. Прво, кратак преглед корисничког интерфејса
@@ -141,9 +141,9 @@ Weblate апликације:
 Weblate-у](/screenshots/weblate-ui.png)
 
 1. **Путања навигације** на тренутни пројекат и језик превода
-2. **Translation area** itself. You can find the source string (_"English
-   (United States)"_) at the top and the field for your translation
-   (_"French"_ in this example).
+2. Сам **Translation** одељак. Можете видети изворни низ текста (_„English
+   (United States)”_) при врху и поље за унос вашег превода (_„French”_ у
+   овом примеру).
 3. **Glossary**: овде можете пронаћи уобичајене у контексту
    Zammad-а. Термини из речника ће бити наглашени у изворном тексту такође.
 4. **Неке корисне картице**:

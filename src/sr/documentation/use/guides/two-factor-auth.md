@@ -17,7 +17,7 @@ activate it to be visible in your profile settings. It may be even enforced
 by your admin to set up a 2FA method. In this case, you can't use Zammad
 unless you set up at least one 2FA method.
 
-## Set Up
+## Поставка
 
 If the system admin has enabled this feature, you can head to _Avatar >
 Profile > Two-factor Authentication_ to set it up. Depending on the
@@ -36,7 +36,7 @@ setup process, which includes specific steps. Continue with using an
 [Authentication App](#authentication-app) or a [Security
 Key](#security-key).
 
-### Authentication App
+### Апликација за аутентификацију
 
 The authenticator app method is a type of two-factor authentication that
 uses a mobile application to generate one-time codes for account
@@ -76,7 +76,7 @@ click on **Set Up**. Go on either by setting up another 2FA method
 ([security key](#security-key)) or check how to [use and manage
 2FA](#sign-in).
 
-### Security Key
+### Безбедносни кључ
 
 The security keys method is a type of a two-factor authentication that uses
 Web Authentication API in the browser for verifying your identity.  You may
@@ -122,7 +122,7 @@ register an already registered key for your account.  Removal of the last
 security key will effectively remove the complete security keys method for
 your account.
 
-## Sign-in
+## Пријава
 
 When you set up two-factor authentication for your Zammad account, during
 the next sign-in you will be asked to provide the same two-factor method
@@ -176,7 +176,7 @@ invalidates already existing recovery codes and provides you with a list of
 fresh codes. You can do this by clicking on **Regenerate recovery codes**
 button in your profile's 2FA settings.
 
-## Set a Default 2FA Method
+## Постављање подразумеваног метода двофакторске аутентификације
 
 To set an already set up two-factor method as default, use the ⋮ **Actions**
 menu next to it in your profile's 2FA settings and choose **Set as
@@ -206,7 +206,7 @@ your current password.
 обновити и заменити старију поставку, али неке методе подржавају и напредне
 функције (нпр. додавање више безбедносних кључева).
 
-## Remove a 2FA Method
+## Уклањање метода двофакторске аутентификације
 
 To remove an already set up two-factor method, use the ⋮ **Actions** menu
 next to it and choose **Remove**. In a modal dialog, you will be asked to

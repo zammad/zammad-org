@@ -16,9 +16,9 @@ TODO
 
 **Зашто?**
 
-It is possible to automatically close a ticket tab in the navigation
-sidebar.  It depends on your preferences, but you can save a click after
-updating or updating a ticket to _closed_ state.
+Могуће је аутоматски затворити прозор тикета у бочној траци навигације.
+Зависи од ваших подешавања, али можете уштедети клик након освежавања или
+освежавања тикета са стањем _затворено_.
 
 **Како?**
 
@@ -32,8 +32,8 @@ updating or updating a ticket to _closed_ state.
 - **Затвори прозор**: Ова опција затвара прозор по сваком освежавању
   тикета. Може бити добра опција ако обрађујете пуно тикета и/или тикети
   захтевају пуно интеракције.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated and the state is set to _closed_.
+- **Затвори прозор по затварању тикета**: Ова опција затвара прозор само
+  када је тикет освежен и стање је постављено на _затворено_.
 
 ::: tip
 Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**

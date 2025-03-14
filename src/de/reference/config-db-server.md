@@ -32,17 +32,16 @@ Bedarf an.
 
 === CentOS & OpenSUSE
 
-```plain
+```sh
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Others
+=== Andere
 
-Can't find your configuration files? You can run the following command
-to get the path:
+Sie können Ihre Konfigurationsdateien nicht finden? Ermitteln Sie den Pfad mit folgendem Befehl:
 
 ``` sh
-sudo -u postgres psql -c 'SHOW config_file'
+$ sudo -u postgres psql -c 'SHOW config_file'
 ```
 
 :::
@@ -53,9 +52,9 @@ In der Datei `database.yml` (Verzeichnis `config/`) können Sie die zulässige
 Poolgröße festlegen. Standardmäßig nimmt jeder Zammad-Prozess bis zu `50`
 Verbindungen auf (`Pool: 50`).
 
-This should be fairly enough for _every_ use case. If you experience
-database connection timeouts or similar pool errors, this usually indicates
-to other issues that are relevant to your PostgreSQL.
+Dies sollte für _jeden_ Anwendungsfall ausreichend sein. Wenn Sie Timeouts
+bei der Datenbankverbindung oder Pool-Fehler feststellen, deutet dies in der
+Regel auf andere Probleme Ihres PostgreSQL-Servers hin.
 
 ## Anpassen von `max_connections` (erforderlich)
 

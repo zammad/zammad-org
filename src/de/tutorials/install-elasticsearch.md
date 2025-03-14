@@ -9,8 +9,8 @@ title: 'Elasticsearch 7 installieren'
 
 ## Einführung
 
-Elasticsearch is technically not required to run Zammad, but _highly_
-recommended.
+Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird
+aber _dringend_ empfohlen.
 
 Elasticsearch bietet zwei Versionen an. Derzeit werden die Versionen 7 und 8
 gepflegt. Für die Installationsanweisungen sollten Sie in erster Linie die
@@ -129,17 +129,17 @@ yum install -y elasticsearch
 
 :::
 
-Install the ingest-attachment plugin:
+Installieren Sie das Plugin "ingest-attachment":
 :   ```sh
     /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
     ```
 
-Increase Virtual Memory Map Limit:
+Erhöhen Sie das Virtual Memory Map Limit:
 :   ```sh
     sysctl -w vm.max_map_count=262144
     ```
 <!-- markdownlint-disable MD046 -->
-Adjust `/etc/elasticsearch/elasticsearch.yml`:
+Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:
 :   ```
     # /etc/elasticsearch/elasticsearch.yml
 
@@ -164,7 +164,7 @@ Adjust `/etc/elasticsearch/elasticsearch.yml`:
     ```
 <!-- markdownlint-enable MD046 -->
 
-Enable it by default and start it:
+Aktivieren Sie es standardmäßig und starten Sie es:
 :   ```sh
     systemctl enable elasticsearch --now
     ```

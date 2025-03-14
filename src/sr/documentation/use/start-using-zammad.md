@@ -1,11 +1,11 @@
 ---
 order: 2
-title: 'Start with Zammad'
+title: 'Започните Zammad авантуру'
 ---
 
-# Start with Zammad
+# Започните Zammad авантуру
 
-## User Interface
+## Кориснички интерфејс
 
 ### Уопштено
 
@@ -23,7 +23,7 @@ such as tooltips and a contextual help. Use them wherever needed.
 In any case, the UI is based on common software design principles and is
 mostly self explanatory.
 
-### Main UI Elements
+### Главни елементи корисничког интерфејса
 
 ![Screenshot shows a ticket detail
 view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
@@ -64,7 +64,7 @@ The navigation sidebar is your central place to access all main parts of
 Zammad.  It includes:
 
 - Трака претраге
-- Notifications
+- Обавештења
 - Overview section
 - Chat (if activated)
 - Phone (if activated)
@@ -117,7 +117,7 @@ type (e.g.  customer), what you are searching.
 
 Have a look at the [search guide](guides/search) for more details.
 
-### Notifications
+### Обавештења
 
 Depending on the [notification
 settings](/en/documentation/use/manage-profile#notifications) in your

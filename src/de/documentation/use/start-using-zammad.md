@@ -117,15 +117,15 @@ linken Ecke in der Navigations-Seitenleiste. Wählen Sie sie entweder mit der
 Maus aus oder verwenden Sie das
 Tastaturkürzel, indem Sie einfach [[s]] drücken.
 
-After activating the search field, you can see your last viewed items as
-well as your last search queries.
+Nachdem Sie das Suchfeld aktiviert haben, können Sie Ihre zuletzt
+angesehenen Elemente sowie Ihre letzten Suchanfragen sehen.
 
-By entering a search term, you immediately see a preview of the search
-results. If you press [[enter]] or click on `detailed search`, Zammad
-displays a page with search results. There you can differentiate by object
-type (e.g.  customer), what you are searching.
+Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der
+Suchergebnisse. Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche`
+klicken, zeigt Zammad eine Seite mit Suchergebnissen an. Dort können Sie die
+Suche basierend auf dem Objekttyp (z.B. Benutzer) durchführen.
 
-Have a look at the [search guide](guides/search) for more details.
+Weitere Einzelheiten finden Sie in den [Details zur Suche](guides/search).
 
 ### Benachrichtigungen
 
@@ -167,33 +167,33 @@ Ticket-System kompliziert ist. Aber das Gegenteil ist der Fall:
   Wesentliche konzentrieren: die Lösung von Kundenproblemen und die
   Beantwortung von Kundenfragen.
 
-So, basically you can work with Zammad similar as with your email
-client. Except that you have some additional attributes you can set in the
-_Ticket_ sidebar tab:
+Im Grunde können Sie mit Zammad also ähnlich wie mit Ihrem E-Mail Client
+arbeiten. Sie haben jedoch einige zusätzliche Attribute, die Sie im
+Seitenleisten-Tab _Ticket_ einstellen können:
 
 - **Status**: spiegelt den aktuellen Status eines Tickets wider
   (hauptsächlich, ob eine Kundenanfrage gelöst ist oder
   nicht). Standardmäßig gibt es die folgenden Status:
-  - **New**: State for new tickets on which no one has worked on. When
-      updating a ticket the first time, it automatically switches to _open_.
-  - **Open**: State for tickets which aren't resolved yet and some
-      work needs to be done.
-  - **Pending Close**: State for tickets which are basically resolved but
-      you don't want to close immediately. This state requires you to enter
-      a date and time at which the ticket automatically switches to _closed_.
-  - **Pending Reminder**: State for open tickets which you want to get
-      reminded to a certain date and time. Requires you to enter a date and time
-      at which you want to get notified. For example useful if you had a
-      question to a third party and want to make sure that this issue won't
-      be forgotten.
-- **Owner**: This is the person who is currently responsible for the ticket.
-  In case you need to have an information from another colleague, you can either
-  change to owner to this person or mention the person in an article by
-  typing `@@` and selecting the user. In the later case, the user gets notified
-  and is automatically subscribed to receive notifications on ticket updates.
-- **Group**: This ticket attribute is useful for organizations with more than
-  one team. Depending on the permissions, you might not see the ticket after
-  changing the group and saving the changes.
+  - **Neu**: Status für neue Tickets, an denen noch niemand gearbeitet hat. Wenn
+      ein Ticket zum ersten Mal aktualisiert wird, wechselt es automatisch in den Status _offen_.
+  - **Offen**: Status für Tickets, die noch nicht geklärt sind und an denen noch gearbeitet
+      werden muss.
+  - **Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst sind, aber die
+      Sie nicht sofort schließen möchten. Für diesen Status müssen Sie
+      ein Datum und eine Uhrzeit eingeben, zu der das Ticket automatisch auf _geschlossen_ wechselt.
+  - **Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu einem bestimmten
+      Zeitpunkt erinnert werden möchten. Erfordert die Eingabe eines Datums und einer Uhrzeit,
+      zu der Sie benachrichtigt werden möchten. Zum Beispiel nützlich, wenn Sie eine
+      Frage an einen Dritten haben und sicherstellen möchten, dass diese Frage nicht
+      vergessen wird.
+- **Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich ist.
+  Falls Sie eine Information von einem anderen Kollegen benötigen, können Sie entweder
+  den Besitzer auf diese Person ändern oder die Person in einem Artikel erwähnen, indem Sie
+  `@@` eingeben und den Benutzer auswählen. Im letzteren Fall wird der Benutzer benachrichtigt
+  und erhält automatisch Benachrichtigungen über Aktualisierungen von Tickets.
+- **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit mehr als
+  einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket möglicherweise nicht, nachdem Sie
+  die Gruppe geändert und die Änderungen gespeichert haben.
 
 ### Ticket Detailansicht
 
@@ -215,11 +215,13 @@ oder einen Kollegen zu fragen.
 
 ### Aktualisierung Ihres Tickets
 
-After you have done your changes like writing an answer to a customer and
-change the state of the ticket, you can see a highlighted **Update** button
-in the right footer. By clicking it, your changes are applied and if you
-created an answer, it is now sent out to the customer. If you consider the
-issue as resolved, you should set the state to _closed_ now.
+Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen
+Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in
+der rechten Fußzeile eine hervorgehobene Schaltfläche
+**Aktualisieren**. Wenn Sie auf diese Schaltfläche klicken, werden Ihre
+Änderungen übernommen, und wenn Sie eine Antwort erstellt haben, wird diese
+nun an den Kunden gesendet. Wenn Sie das Problem als gelöst betrachten,
+sollten Sie den Status auf _geschlossen_ setzen.
 
 ## Abschluss
 

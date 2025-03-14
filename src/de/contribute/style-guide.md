@@ -4,131 +4,145 @@ order: 2
 
 # Leitfaden für Stil und Inhalt
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation, as well as formatting and style guidelines to
-ensure clarity and readability.
+Dieser Leitfaden bietet eine Übersicht über den Inhalt, der in der
+Zammad-Dokumentation enthalten sein sollte, sowie Formatierungs- und
+Stilrichtlinien, um Klarheit und Lesbarkeit zu gewährleisten.
 
-The first sections are about general information and rules. A [section with
-useful examples](#basic-formatting-examples)  follows at the end.
+In den ersten Abschnitten geht es um allgemeine Informationen und Regeln. Am
+Ende folgt ein [Abschnitt mit nützlichen
+Beispielen](#basic-formatting-examples).
 
-If you have questions, feel free to ask in our community. If you want to
-contribute, you may also want to have a look at our [contribution
-page](contribute) or [ask in an
-issue](https://github.com/zammad/zammad-org/issues){target=_blank} to get
-started.
+Wenn Sie Fragen haben, können Sie diese in unserer Community stellen. Wenn
+Sie beitragen wollen, sollten Sie einen Blick auf unsere [Seite für
+Beiträge](contribute) werfen oder in einem
+[Github-Issue](https://github.com/zammad/zammad-org/issues){target=_blank}
+fragen, um loszulegen.
 
-## Audience Assumptions
+## Annahmen zur Leserschaft
 
-The documentation is written assuming that **users** have a basic
-understanding of web browser usage and common software design concepts. This
-means for example that features are described in detail, but not on a level
-of how to open a dropdown field.
+Die Dokumentation geht davon aus, dass **Benutzer** ein grundlegendes
+Verständnis für die Verwendung von Webbrowsern und gängige
+Software-Design-Konzepte haben. Das bedeutet zum Beispiel, dass Funktionen
+detailliert beschrieben werden, aber nicht auf der Ebene, wie man ein
+Dropdown-Feld öffnet.
 
-The **Zammad administrator** additionally should have a basic technical
-understanding and should also know the workflows and communication processes
-in its company.
+Der **Zammad-Administrator** sollte zudem über ein technisches
+Grundverständnis verfügen und auch die Arbeitsabläufe und
+Kommunikationsprozesse in seinem Unternehmen kennen.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.  Access to the host system
-(e.g. via SSH) and administrative permissions are taken for granted for
-system administrators.
+Bei selbst gehosteten Instanzen sollten **Systemadministratoren** auch mit
+den Grundlagen der Linux-Systemverwaltung vertraut sein. Der Zugang zum
+Host-System (z.B. über SSH) und administrative Rechte werden für
+Systemadministratoren vorausgesetzt.
 
-## Content
+## Inhalt
 
-The documentation aims to include information about:
+Die Dokumentation soll Informationen zu folgenden Themen enthalten:
 
-- How to use Zammad
-- How to manage Zammad as an admin (e.g. setting it up after installation,
-  adjust settings, configure features)
-- Different ways how to install Zammad
-- Additional guides if (host) system configuration and/or configuration of
-  third party systems is needed.
+- Wie man Zammad benutzt
+- Wie man Zammad als Administrator verwaltet (z.B. nach der Installation
+  einrichten, Einstellungen anpassen, Funktionen konfigurieren)
+- Verschiedene Möglichkeiten, Zammad zu installieren
+- Zusätzliche Anleitungen, wenn eine (Host-)Systemkonfiguration und/oder
+  eine Konfiguration von Drittsystemen erforderlich ist.
 
-Regarding the **level of detail**, the [audience
-assumptions](#audience-assumptions) should be considered. Because one of the
-goals of Zammad is to be intuitive and user friendly, there is no need to
-describe each click in detail. However, important steps should be
-included. The readers should achieve their goals as quickly and easily as
-possible without having to read a lot.
+Was die **Detailtiefe** betrifft, so sollten die [Annahmen zur
+Leserschaft](#annahmen-zur-leserschaft) berücksichtigt werden. Da eines der
+Ziele von Zammad darin besteht, intuitiv und benutzerfreundlich zu sein, ist
+es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
+sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
+möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be code), the relevance has to be considered. If parts with a common
-use case are missing, it should be strived to include them in the
-documentation.
+Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie ja Code),
+muss die Relevanz berücksichtigt werden. Wenn Teile mit einem gebräuchlichen
+Anwendungsfall fehlen, sollte angestrebt werden, diese in die Dokumentation
+aufzunehmen.
 
-## Style and Rules
+## Stil und Regeln
 
-The next sections cover general things to consider writing the
-documentation. After these you can find a section with some [basic examples
-of formatting and structuring](#basic-formatting-examples) the content.
+Die nächsten Abschnitte behandeln allgemeine Dinge, die beim Schreiben der
+Dokumentation zu beachten sind. Danach finden Sie einen Abschnitt mit
+einigen [grundlegenden Beispielen zur Formatierung und
+Strukturierung](#basic-formatting-examples) des Inhalts.
 
 ### Grundlagen
 
-- The documentation is written in the Markdown markup language. The source
-  files have the extension `.md`.
-- The system uses [Vitepress](https://vitepress.dev/){target=_blank} to
-  build the website.
-- The language of the source files is American English.
-- The translation of the documentation is done via Weblate, see
-  [contribution section](contribute#translation) for more details.
+- Die Dokumentation ist in der Auszeichnungssprache Markdown
+  geschrieben. Die Quelldateien haben die Erweiterung `.md`.
+- Das System verwendet [Vitepress](https://vitepress.dev/){target=_blank}
+  zur Erstellung der Website.
+- Die Sprache der Quelldateien ist amerikanisches Englisch.
+- Die Übersetzung der Dokumentation erfolgt über Weblate, siehe
+  [Beitrags-Seite](contribute#ubersetzung) für weitere Details.
 
 ### Stil
 
-- Use short and clear sentences and prioritize information over complexity.
-- Page title and headings: capitalize the first letter of all words except
-  minor words (see [title
-  case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
-- Use breadcrumb separation for paths and locations with `>` as separator
-  and format path in italics, e.g.  _Settings > Channels > Chat_.
-- Use code highlighting to emphasize programming snippets.
-- Use [info, tip, warning and danger boxes](#custom-boxes) when needed.
-- Use a [detail box](#custom-boxes) when content may not be relevant for all
-  the readers or may break the reading flow otherwise.
-- Include screenshots when necessary. The preferred way of adding
-  screenshots of Zammad is by creating them automatically [using
-  Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
-  This supports the maintainability of the documentation because the
-  screenshots are re-generated each time the build pipeline runs. Please
-  note that the usage of Cypress is not part of this documentation.
-- Provide step-by-step instructions with clear explanations.
-- Use examples or scenarios to illustrate concepts.
-- Include relevant images or diagrams when necessary.
-- Spell abbreviations full the first time they are used or include them in
-  the glossary and link to them. Broadly used and common abbreviations may
-  be excluded from this rule.
-- If in doubt, align it to the existing documentation.
+- Verwenden Sie kurze und klare Sätze und fokussieren Sie sich auf
+  Informationen statt auf Komplexität.
+- Seitentitel und Überschriften: Großschreibung des ersten Buchstabens aller
+  Wörter mit Ausnahme von Artikeln usw., siehe (Title Case auf
+  Wikipedia](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+- Verwenden Sie eine Breadcrumb-Trennung für Pfade und Orte mit `>` als
+  Trennzeichen und formatieren Sie den Pfad kursiv, z.B. _Einstellungen >
+  Kanäle > Chat_.
+- Verwenden Sie die Codehervorhebung für Code-Snippets und Befehle.
+- Verwenden Sie bei Bedarf [Info-, Tip-, Warning- und
+  Danger-Kästen](#custom-boxes).
+- Verwenden Sie einen [Detail-Kasten](#custom-boxes), wenn der Inhalt nicht
+  für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
+- Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
+  von Zammad hinzuzufügen, ist, sie automatisch [mit
+  Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}
+  zu erstellen. Dies unterstützt die Pflege der Dokumentation, da die
+  Screenshots bei jedem Durchlauf der Build-Pipeline neu generiert
+  werden. Bitte beachten Sie, dass die Verwendung von Cypress nicht Teil
+  dieser Dokumentation ist.
+- Geben Sie Schritt-für-Schritt-Anleitungen mit klaren Erklärungen.
+- Verwenden Sie Beispiele oder Szenarien, um Konzepte zu veranschaulichen.
+- Fügen Sie bei Bedarf relevante Bilder oder Diagramme ein.
+- Schreiben Sie Abkürzungen bei der ersten Verwendung vollständig aus oder
+  nehmen Sie sie in das Glossar auf und verweisen Sie darauf. Weit
+  verbreitete und gängige Abkürzungen können von dieser Regel ausgenommen
+  werden.
+- Im Zweifelsfall können Sie sich an der vorhandenen Dokumentation
+  orientieren.
 
-### Conventions
+### Konventionen
 
-The documentation stack includes automated checks (linting) to ensure
-compliance with the style guide and common rules for Markdown files. To
-check if your changes are compliant, run `pnpm lint` to perform the
-check. Some of the recognized problems can be even fixed automatically by
-running `pnpm lint:fix`. Make sure to run the check before committing your
-changes. Otherwise the build of the documentation will fail.
+Der Dokumentations-Stack enthält automatische Prüfungen (Linting), um die
+Einhaltung des Styleguides und der allgemeinen Regeln für Markdown-Dateien
+sicherzustellen. Um zu prüfen, ob Ihre Änderungen konform sind, führen Sie
+`pnpm lint` aus, um die Prüfung durchzuführen. Einige der erkannten Probleme
+können sogar automatisch behoben werden, indem `pnpm lint:fix` ausgeführt
+wird. Stellen Sie sicher, dass Sie die Prüfung durchführen, bevor Sie Ihre
+Änderungen commiten. Andernfalls wird die Erstellung der Dokumentation
+fehlschlagen.
 
-The used linting has some built in rules which you can find
-[here](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Some important rules and customized ones are mentioned below.
+Das verwendete Linting hat einige eingebaute Regeln, die Sie
+[hier](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}
+finden können. Einige wichtige und von uns angepasste Regeln sind unten
+aufgeführt.
 
-- Line length of 120 characters in the source file may not be exceeded for
-  standard text. Make sure to use a line break before reaching this limit. A
-  visual indicator in your editor may be helpful. This does not apply for
-  special content like paths to screenshots and long links.
-- Multiple consecutive empty lines are not allowed.
-- Empty lines before and after headings and fenced code blocks are required.
-- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
-  language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is
-  applicable, use `` ```plain``.
-- Use `-` for bullet point lists (unordered list) like this one.
-- To easily distinguish between **bold** and _italics_, use `_` around the
-  text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`).
-- Multiple headings with the same content are not allowed.
-- Each document must have exactly one `h1` heading as title.
+- Die Zeilenlänge von 120 Zeichen in der Quelldatei darf bei Standardtext
+  nicht überschritten werden. Achten Sie darauf, dass Sie einen
+  Zeilenumbruch verwenden, bevor Sie diese Grenze erreichen. Ein visueller
+  Indikator in Ihrem Editor kann hilfreich sein. Dies gilt nicht für
+  spezielle Inhalte wie Pfade zu Screenshots und lange Links.
+- Mehrere aufeinanderfolgende Leerzeilen sind nicht zulässig.
+- Leerzeilen vor und nach Überschriften und Codeblöcken sind erforderlich.
+- Verwenden Sie `` ``` `` (Backticks) für Codeblöcke, gefolgt von einer
+  obligatorischen Angabe der Sprache, z.B. `` ```ruby`` oder ``
+  ```sh``. Wenn keine Sprache anwendbar ist, verwenden Sie `` ```plain``.
+- Verwenden Sie `-` für Aufzählungen (nicht numerische Listen) wie diese.
+- Um leicht zwischen **fett** und _kursiv_ zu unterscheiden, verwenden Sie
+  `_` um den Text in kursiv und `**` in fett zu setzen (z.B. `_kursiv_`
+  vs. `**fett**`).
+- Mehrere Überschriften mit gleichem Inhalt sind nicht zulässig.
+- Jedes Dokument muss genau eine `h1`-Überschrift als Titel haben.
 
-### Basic Formatting Examples
+### Grundlegende Formatierungsbeispiele
 
-#### Text and UI
+#### Text und UI
 
 | Type                      | Highlighting in documentation | Markdown syntax                 |
 |-------------------------- |-------------------------------|---------------------------------|

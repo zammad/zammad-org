@@ -38,27 +38,27 @@ Benutzer:
 - eine `HTTP_REMOTE_USER` Webserver-Umgebungsvariable
 
 ::: info
-**Wait. SSO allows you to sign in with only a username?**
+**Moment, mit SSO ist es möglich, sich nur mit einem Benutzernamen anzumelden?
 
-In principle, yes.
+Im Prinzip ja.
 
-**How is that okay?**
+**Wie kann das richtig sein?**
 
-In this guide, we configure our web server (Apache) to intercept all
-requests to the `/auth/sso` endpoint. Instead of forwarding them to
-Zammad, Apache initiates a three-sided login process (_Kerberos
-authentication_) between the itself, the user, and the Active
-Directory server.
+In dieser Anleitung konfigurieren wir unseren Webserver (Apache) so, dass er alle
+Anfragen an den Endpunkt `/auth/sso` abfängt. Anstatt sie an
+Zammad weiterzuleiten, initiiert Apache einen dreiseitigen Anmeldeprozess (_Kerberos
+Authentifizierung_) zwischen ihm selbst, dem Benutzer und dem Active
+Directory-Server.
 
-If Active Directory doesn't recognize the user or their password,
-Zammad never sees the request, and the session is never created.
+Wenn Active Directory den Benutzer oder sein Passwort nicht erkennt,
+sieht Zammad die Anfrage nie, und die Sitzung wird nie erstellt.
 
-**What does this all mean?**
+**Was bedeutet das alles?**
 
-It means there are many ways you could set up SSO—you don't need to
-follow this guide or even use Active Directory or Kerberos—but if you
-don't know what you're doing, you're going to end up with a _massive_
-security hole.
+Es bedeutet, dass es viele Möglichkeiten gibt, SSO einzurichten - Sie müssen weder
+diesem Leitfaden folgen noch Active Directory oder Kerberos verwenden. Aber Sie
+sollten unbedingt wissen, was Sie tun. Andernfalls kann leicht eine Sicherheitslücke
+entstehen.
 :::
 
 ## Erste Schritte
@@ -81,10 +81,10 @@ Sie benötigen:
   - einem vollständigen Domänennamen (FQDN)
 - gewisse Kenntnisse in der Systemverwaltung (z.B. Apache-Konfiguration)
 
-For best results, set up the LDAP integration to make sure
-your Active Directory and Zammad user accounts are always in sync. You
-can find it in Zammad's admin interface under
-_Settings > Security > Third-party Applications_.
+Am besten richten Sie auch eine LDAP-Integration ein, um sicherzustellen,
+dass Ihre Active Directory- und Zammad-Benutzerkonten immer synchronisiert sind. Sie
+finden Sie in der Verwaltungsoberfläche von Zammad unter
+_Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 
 ## Schritt 1: Konfigurieren Sie Active Directory
 
@@ -288,10 +288,10 @@ a2enmod auth_kerb rewrite
 systemctl restart apache2
 ```
 
-=== via configuration file (CentOS)
+=== per Konfigurationsdatei (CentOS)
 
-add/uncomment the appropriate `LoadModule` statements in your Apache
-config:
+Ergänzen Sie oder entfernen Sie den Kommentar für `LoadModule` in
+der Apache Konfiguration:
 
 ```apache
 # /etc/httpd/conf/httpd.conf
@@ -304,8 +304,8 @@ LoadModule rewrite_module modules/mod_rewrite.so
 
 ### 2e. Kerberos konfigurieren
 
-Kerberos realm configuration is how you tell the Zammad server how to reach
-the _domain controller_ (Active Directory server).
+Mit der Kerberos-Realm-Konfiguration teilen Sie dem Zammad-Server mit, wie
+er den _Domänencontroller_ (Active Directory-Server) erreichen kann.
 
 Ersetzen Sie die folgenden Platzhalter in der untenstehenden
 Beispielkonfiguration:
@@ -350,8 +350,8 @@ Beispielkonfiguration:
 
 ### 2f. Keytab generieren
 
-Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets
-with the domain controller.
+Apache benötigt eine Kerberos _keytab_ (Schlüsseltabelle), um seine
+gemeinsamen Geheimnisse mit dem Domain Controller zu verwalten.
 
 Ersetzen Sie die folgenden Platzhalter in den nachstehenden Befehlen:
 
@@ -448,7 +448,7 @@ Ersetzen Sie die folgenden Platzhalter in dem unten stehenden Befehl:
 
 === Debian & Ubuntu
 
-``` apache
+```apache
 # /etc/apache2/sites-available/zammad.conf
 
 <LocationMatch "/auth/sso">
@@ -472,7 +472,7 @@ Ersetzen Sie die folgenden Platzhalter in dem unten stehenden Befehl:
 The configuration for CentOS and OpenSUSE below contains two
 `Krb5KeyTab` lines! Keep only the one you need.
 
-``` apache
+```apache
 # /etc/apache2/sites-available/zammad.conf
 
 <LocationMatch "/auth/sso">
@@ -506,8 +506,8 @@ systemctl restart apache2
 
 ## Schritt 3: Aktivieren Sie SSO in Zammad
 
-Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-_Settings > Security > Third-Party Applications_
+Als Nächstes aktivieren Sie "Anmeldung über SSO" in Zammads Admin Bereich unter
+_Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 
 ::: tip
 Öffnen Sie bei älteren Versionen von Zammad `https://your.zammad.host/auth/sso`,
@@ -535,12 +535,12 @@ Diese Einstellung kann zentral für das gesamte Intranet verwaltet werden, indem
 ein **Gruppenrichtlinienobjekt** (GPO) verwendet wird.
 :::
 
-1. Add your Zammad FQDN in Internet Options under _Security > Local
-   Intranet > Sites > Advanced_.
-2. Select "Require server verification (https:) for all sites in this
-   zone".
-3. Under _Security level for this zone > Custom level... > Settings
-   \> User Authentication > Logon_, select "Automatic logon only in
+1. Fügen Sie Ihren Zammad FQDN in den Internetoptionen unter _Security > Local
+   Intranet > Sites > Advanced_ hinzu.
+2. Wählen Sie "Require server verification (https:) for all sites in this
+   zone"
+3. Wählen Sie unter _Security level for this zone > Custom level... > Settings
+   \> User Authentication > Logon_ die Option "Automatic logon only in
    Intranet Zone".
 
 === Firefox
@@ -550,11 +550,11 @@ Diese Option kann nicht zentral verwaltet werden, da sie im
 Browser und nicht in den Windows-Einstellungen festgelegt wird.
 :::
 
-1. Enter `about:config` in the address bar. Click **Accept the risk and
-   continue**.
-2. Search for the `network.negotiate-auth.trusted-uris` option.
-3. Double-click to edit, then add your Zammad FQDN.
-4. Restart Firefox to apply your changes.
+1. Geben Sie `about:config` in die Adressleiste ein. Klicken Sie auf **Das Risiko akzeptieren und
+   fortfahren**.
+2. Suchen Sie nach der Option `network.negotiate-auth.trusted-uris`.
+3. Doppelklicken Sie darauf, um sie zu bearbeiten, und fügen Sie Ihren Zammad FQDN hinzu.
+4. Starten Sie Firefox neu, damit Ihre Änderungen wirksam sind.
 
 ::::
 
@@ -615,11 +615,12 @@ konfiguriert haben.
 
 #### Cannot decrypt ticket for HTTP/FQDN@DOMAIN
 
-Did you make sure to change the password on your Active Directory service
-account _after enabling 256-bit AES encryption?_
+Haben Sie sichergestellt, dass Sie das Passwort für Ihr Konto beim Active
+Directory-Dienst _nach der Aktivierung der 256-Bit-AES-Verschlüsselung_
+geändert haben?
 
-And did you make sure to register the SPN (with `ktpass`) and generate your
-keytab (with `ktutil`) _after changing your password?_
+Und haben Sie darauf geachtet, _nach dem Ändern Ihres Passwortes_ den SPN zu
+registrieren (mit `ktpass`) und Ihre Keytab zu generieren (mit `ktutil`)?
 
 Versuchen Sie, `kinit -k -t <Pfad zu keytab Schlüsseltabelle> HTTP/<zammad-host>@<DOMAIN>` auszuführen.
 Wenn keine Ausgabe zurückgegeben wird, ist alles gut - wenn Sie "kinit:

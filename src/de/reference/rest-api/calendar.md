@@ -83,13 +83,13 @@ Erforderliche Berechtigung: `admin.calendar`
 
 ::: danger
 
-**This is a permanent removal**:
+**Dies ist eine dauerhafte Entfernung**:
 
-Please note that removing Calendar configurations cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Kalenderkonfigurationen nicht rückgängig gemacht werden kann.
 
-Removing calendars with references in SLA configurations is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Das Entfernen von Kalendern mit Referenzen in SLA-Konfigurationen ist nicht möglich
+über die API - dies wird angezeigt durch
+`"error": "Can't delete, object has references."`. Dies ist _kein_ Fehler.
 :::
 
 ::: details Show response

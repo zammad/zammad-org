@@ -46,31 +46,31 @@ in den folgenden Befehlen zu sehen.
 :::tabs
 
 === Ubuntu/Debian
-Update package lists:
+Aktualisierung der Paketlisten:
 
 ```sh
 apt update
 ```
 
-Disable updates for Zammad:
+Aktualisierungen für Zammad deaktivieren:
 
 ```sh
 apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Aktualisierung aller Pakete außer Zammad:
 
 ```sh
 apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Reaktivieren der Aktualisierungen für Zammad:
 
 ```sh
 apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 apt upgrade
@@ -78,31 +78,31 @@ apt upgrade
 
 === OpenSUSE/SLES
 
-Update package lists:
+Aktualisierung der Paketlisten:
 
 ```sh
 zypper refresh
 ```
 
-Disable updates for Zammad:
+Aktualisierungen für Zammad deaktivieren:
 
 ```sh
 zypper addlock zammad
 ```
 
-Update all packages except Zammad:
+Aktualisierung aller Pakete außer Zammad:
 
 ```sh
 zypper update
 ```
 
-Re-enable updates for Zammad:
+Reaktivieren der Aktualisierungen für Zammad:
 
 ```sh
 zypper removelock zammad
 ```
 
-Update Zammad:
+Aktualisierung Zammad:
 
 ```sh
 zypper update
@@ -110,19 +110,19 @@ zypper update
 
 === CentOS/RHEL
 
-Update package lists:
+Aktualisierung der Paketlisten:
 
 ```sh
 yum check-update
 ```
 
-Update all packages except Zammad:
+Aktualisierung aller Pakete außer Zammad:
 
 ```sh
 yum upgrade --exclude zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 yum upgrade
@@ -157,9 +157,9 @@ systemctl start zammad
 ## Docker-Installation aktualisieren
 
 ::: warning
-Docker compose stack updates may require extra steps or introduce breaking
-changes. Always check the docker compose release notes for updating
-instructions first.
+Aktualisierungen des Docker Compose Stacks können zusätzliche Schritte erfordern
+oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die Docker Compose
+Versionshinweise auf Hinweise für die Aktualisierungen.
 :::
 
 ### Portainer-basierte Installation aktualisieren

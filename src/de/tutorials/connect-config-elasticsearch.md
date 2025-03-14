@@ -47,8 +47,8 @@ CERTIFICATE-----`).
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-Go to the admin panel of Zammad and add your copied certificate under
-_Settings > Security > SSL Certificates_.
+Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes Zertifikat unter
+_Einstellungen > Sicherheit > SSL-Zertifikate_ ein.
 
 ### Den Suchindex aufbauen/neu erstellen
 

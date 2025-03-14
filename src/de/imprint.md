@@ -10,7 +10,7 @@ Zammad.org ist ein Dienst von:
 
 Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Deutschland
 
-Phone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
+Telefon: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
 <enjoy@zammad.com>
 
 Geschäftsführer: Martin Edenhofer \ Handelsregister Charlottenburg, Nr. HRB

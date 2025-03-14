@@ -21,10 +21,10 @@ eingerichtet haben.
 
 ## Einrichtung
 
-If the system admin has enabled this feature, you can head to _Avatar >
-Profile > Two-factor Authentication_ to set it up. Depending on the
-enabled two-factor methods, you may see one or more options in the
-table.
+Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie unter _Avatar >
+Profil-Einstellungen > Zwei-Faktor-Authentifizierung_ aufrufen, um sie einzurichten. Abhängig von den
+aktivierten Zwei-Faktor-Methoden, sehen Sie eine oder mehrere Optionen in der
+Tabelle.
 
 Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
 Schraubenschlüssel-Symbol und befolgen Sie die Schritte.

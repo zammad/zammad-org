@@ -185,9 +185,9 @@ plan to add more common use cases to the stack in future.
 
 ## Customize the Stack Locally
 
-Sometimes it's necessary to apply local changes to the Zammad docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker
-compose will [automatically load this file and merge its changes into your
+Понекад је неопходно применити локалне измене за Zammad docker stack,
+нпр. укључити додатне сервисе. Уколико планирате то да урадите,
+препоручујемо да не мењате `docker-compose.yml` датотеку, већ да додате
+локалну `docker-compose.override.yml` која укључује све ваше измене. Docker
+compose ће [аутоматски учитати ову датотеку и применити измене на ваш
 stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

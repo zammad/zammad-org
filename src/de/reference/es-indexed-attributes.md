@@ -12,13 +12,13 @@ kann Elasticsearch auf jedes der unten aufgeführten Felder zugreifen.
 
 :::info
 
-- <Badge type="info" text="SLA"/>: Attributes marked as SLA are only set if
-  the ticket is affected by SLA calculation. Please note that some attributes
-  may not be set if specific conditions are not met.
-- Also note that some attributes may be reset to `null` if no longer applicable.
-- `note` attribute: Note attributes usually are empty if not specified via console or API.
-- Timestamps: All timestamps provided by Zammad are UTC by default. This also
-  applies to times provided by Elasticsearch
+- <Badge type="info" text="SLA"/>: Mit SLA markierte Attribute zeigen an, ob
+  das Attribut von der SLA-Berechnung betroffen ist. Bitte beachten Sie, dass einige Attribute
+  möglicherweise nicht gesetzt werden, wenn bestimmte Bedingungen nicht erfüllt sind.
+- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden können, wenn sie nicht mehr zutreffen.
+- `Notiz` Attribute: Notiz-Attribute sind normalerweise leer, wenn sie nicht über die Konsole oder API angegeben werden.
+- Zeitstempel: Alle von Zammad augegebenen Zeitstempel sind standardmäßig UTC. Dies gilt auch
+  für die von Elasticsearch ausgegebenen Zeiten
 
 :::
 

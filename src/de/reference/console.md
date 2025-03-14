@@ -31,23 +31,23 @@ Ausgabe im Terminal (ohne sehen Sie nichts!).
 
 :::tabs key:installmethod
 
-=== Docker Installation
+=== Docker-Installation
 
 ```sh
-docker compose run --rm zammad-railsserver rails r '{COMMAND}'
+docker compose run --rm zammad-railsserver rails r '{BEFEHL}'
 ```
 
-=== Package Installation
+=== Paket-Installation
 
 ```sh
-zammad run rails r '{COMMAND}'
+zammad run rails r '{BEFEHL}'
 
 ```
 
-=== Source / Development Installation
+=== Quellcode-/Entwickler-Installation
 
 ```sh
-rails r '{COMMAND}'
+rails r '{BEFEHL}'
 ```
 
 :::
@@ -56,20 +56,20 @@ rails r '{COMMAND}'
 
 :::tabs key:installmethod
 
-=== Docker Installation
+=== Docker-Installation
 
 ```sh
 docker compose run --rm zammad-railsserver rails c
 ```
 
-=== Package Installation
+=== Paket-Installation
 
 ```sh
 zammad run rails c
 
 ```
 
-=== Source / Development Installation
+=== Quellcode-/Entwickler-Installation
 
 ```sh
 rails c
@@ -732,10 +732,11 @@ Setting.set('cti_customer_last_activity', '90')
 
 ### Öffentliche "Notizen" als SLA-relevant einstellen
 
-Normally, notes aren't SLA relevant. Use the following command to include
-publicly-visible notes when tracking SLA compliance (internal notes _will
-never_ affect SLA calculations). Be aware that this setting will disable the
-option to delete public notes.
+Normalerweise sind Notizen nicht SLA-relevant. Verwenden Sie den folgenden
+Befehl, um öffentlich sichtbare Notizen in die Berechnung der SLA-Einhaltung
+einzubeziehen (interne Notizen haben _nie_ Auswirkungen auf die
+SLA-Berechnungen). Beachten Sie, dass mit dieser Einstellung die Option zum
+Löschen öffentlicher Notizen deaktiviert wird.
 
 :::info
 Standardmäßig werden Kunden nicht benachrichtigt, wenn einem Ticket öffentliche Notizen hinzugefügt werden.
@@ -898,10 +899,10 @@ Befehle löschen ohne weitere Warnungen.
 :::
 
 :::tip
-If you're not sure what to do and need to learn more about what Zammad
-does upon removing users, please consider using Zammad's UI options in
-stead. You can find the data privacy feature in Zammad's admin interface under
-_System > Data Privacy_.
+Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
+beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
+verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
+_System > Datenschutz_.
 :::
 
 Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und

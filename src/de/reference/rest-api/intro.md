@@ -18,19 +18,19 @@ möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 
 - [Ruby
   Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  _(official)_
+  _(offiziell)_
 - [PHP
   Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  _(official)_
+  _(offiziell)_
 - [Python Client](https://pypi.org/project/zammad-py/){target=_blank}
   _(Third-Party)_
 - [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
-  _(third-Party)_
+  _(Third-Party)_
 - [Android
   API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
-  _(third-Party)_
+  _(Third-Party)_
 - [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  _(third-Party; API client only, no "ready to use" app)_
+  _(Third-Party; nur API-Client, keine "gebrauchsfertige" Anwendung)_
 
 ## Authentifizierung
 
@@ -311,4 +311,5 @@ Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
 Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
 sein
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
+**P**rogramming **I**nterface)

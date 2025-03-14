@@ -7,96 +7,101 @@ title: Suche
 
 ## Grundlagen
 
-If you search for tickets, user and organizations, you can use the
-search. It is located in the top left corner in the navigation bar. Either
-select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all
-fitting items for which you have at least view or read permissions.
+Wenn Sie nach Tickets, Benutzern und Organisationen suchen, können Sie die
+Suche verwenden. Sie befindet sich in der linken oberen Ecke der
+Navigationsleiste. Wählen Sie sie entweder mit der Maus aus oder benutzen
+Sie das Tastaturkürzel [[s]]. Zammad gibt alle passenden Elemente zurück,
+für die Sie mindestens Ansichts- oder Leserechte haben.
 
-![Screenshot shows search results in navigation
-bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
+![Screenshot zeigt Suchergebnisse in der
+Navigationsleiste](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
 
-The search covers basically all information which is stored in Zammad and
-which got indexed by Elasticsearch, like:
+Die Suche umfasst grundsätzlich alle Informationen, die in Zammad
+gespeichert sind und von Elasticsearch indiziert wurden, wie z.B:
 
 - Betreff und Text der Nachricht
 - Namen und E-Mail-Adressen
 - Text in Dateianhängen
 - Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-When the search field is active, you can see your last viewed items as well
-as your recent search queries.
+Wenn das Suchfeld aktiv ist, können Sie Ihre zuletzt angesehenen Elemente
+sowie Ihre letzten Suchanfragen sehen.
 
-After entering a search term, you immediately see a preview of the search
-results. These results are separated by type to make sure you won't get lost
-in the results. Selecting one of those results will open a new navigation
-tab (if not already opened) with the item.
+Nachdem Sie einen Suchbegriff eingegeben haben, sehen Sie sofort eine
+Vorschau der Suchergebnisse. Diese Ergebnisse sind nach Typ getrennt, damit
+Sie nicht den Überblick verlieren. Wenn Sie eines dieser Ergebnisse
+auswählen, wird ein neuer Tab mit dem entsprechenden Element geöffnet (falls
+nicht bereits geöffnet).
 
-If you press [[enter]] or click on `detailed search`, Zammad displays a page
-with search results. There you can narrow down your search by selecting a
-specific object type (e.g. customer) in the tablist below the search bar.
+Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, zeigt Zammad
+eine Seite mit Suchergebnissen an. Dort können Sie Ihre Suche eingrenzen,
+indem Sie einen bestimmten Objekttyp (z.B. Benutzer) in der Tab-Leiste unter
+der Suche auswählen.
 
-![Screenshot shows detailed
-search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
+![Screenshot zeigt die Erweiterte
+Suche](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
 
-If you are still facing many results, try to narrow down your search by
-adding additional terms or use the sorting of the columns. To sort the
-results based on the column's values, click on a column header. The sorting
-is indicated by an arrow. Click on the column again to change the sorting
-from ascending to descending and back. If you still can't find what you are
-looking for, have a look at the next section where you can learn how to
-search for specific attributes like creation date or the ticket owner's
-email address.
+Wenn Sie immer noch viele Ergebnisse erhalten, versuchen Sie, Ihre Suche
+einzugrenzen, indem Sie weitere Begriffe hinzufügen oder die Sortierung der
+Spalten verwenden. Um die Ergebnisse nach den Werten der Spalten zu
+sortieren, klicken Sie auf eine der Spaltenüberschriften. Die Sortierung
+wird durch einen Pfeil angezeigt. Klicken Sie erneut auf die Spalte, um die
+Sortierung von aufsteigend zu absteigend und zurück zu ändern. Wenn Sie
+immer noch nicht finden, wonach Sie suchen, sehen Sie sich den nächsten
+Abschnitt an, in dem Sie erfahren, wie Sie nach bestimmten Attributen wie
+dem Erstellungsdatum oder der E-Mail-Adresse des Besitzers eines Tickets
+suchen können.
 
-## Advanced
+## Zusätzliche Funktionen
 
-You can narrow down your search results to specific attributes, even in the
-search field in the navigation bar. Read on for some examples and
-explanations.  For a more detailed list of available attributes, please take
-a look at the [indexed attributes by
-Elasticsearch](/en/reference/es-indexed-attributes).
+Sie können Ihre Suchergebnisse auf bestimmte Attribute eingrenzen, auch im
+Suchfeld in der Navigationsleiste. Lesen Sie weiter für Beispiele und
+Erklärungen.  Eine ausführlichere Liste der verfügbaren Attribute finden Sie
+unter [indizierte
+Elasticsearch-Attribute](/de/reference/es-indexed-attributes).
 
 ### Syntax
 
-Search for a specific customer by using `customer.attribute`:
+Suche nach einem bestimmten Kunden mit Hilfe von `customer.attribute`:
 
 ```plain
 customer.firstname: John
 ```
 
-or:
+oder:
 
 ```plain
 customer.lastname: Doe
 ```
 
-If you want to run a more complex search, you can use conditions with `()`
-and `AND`/`OR` options:
+Wenn Sie eine komplexere Suche durchführen möchten, können Sie Bedingungen
+mit den Optionen `()` und `AND`/`OR` verwenden:
 
 ```plain
-state.name: open AND (article.from:me OR article.from:somebody)
+state.name: offen AND (article.from:me OR article.from:somebody)
 ```
 
-### Additional Examples
+### Zusätzliche Beispiele
 
-| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
-|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |
-| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |
-| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | You can either use a simple date, a date-range or \>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |
-| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |
-| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
-| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
-| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
+| Attribut      | Suche nach                            | Beispiel                                                                                       | Beschreibung                                                                                                                                                                                                                                                         |
+|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Suche nach einem Ticket                                                                                                                                                                                                                                              |
+| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | Falls Sie Leerzeichen in dem Suchtext haben, benutzen Sie Anführungszeichen. Zammad führt sonst eine AND-Suche aus. Sie können natürlich auch einzelne Wörter ohne Anführungzeichen verwenden.                                                                       |
+| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | Sie können ein einfaches Datum, einen Datumsbereich oder \>now-xh verwenden. Das Datum muss im Format YYYY-MM-DD eingegeben werden.                                                                                                                                  |
+| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | Sie können nach einzelnen Ticket-Status filtern (und diese sogar mit OR kombinieren). Beachten Sie, dass Sie die englischen Namen für Status verwenden müssen, sofern Sie keine selbst erstellten Status haben.                                                      |
+| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | Sie können nach Tickets mit einer konkreten Anzahl an Artikeln suchen (Sie können sogar nach allem mit mehr als 5 Artikel oder bis zu 5 Artikel suchen).                                                                                                             |
+| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Alle Tickets anzeigen, die Artikel von "Bob" enthalten.                                                                                                                                                                                                              |
+| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | Das erste Beispiel zeigt alle Tickets, die "heat" enthalten - Sie können sogar einen Fuzzy-Operator "~" verwenden, um nach ähnlichen Wörtern wie z.B. "head" zu suchen. Zammad erlaubt sogar die Verwendung regulärer Ausrücke, sofern das Attribut es unterstützt.  |
 
-### Combining Search Phrases
+### Suchbegriffe kombinieren
 
-You can combine search phrases by using `AND`, `OR` and `TO` and even
-separate them with `()`. If you want to exclude search results, you can use
-negation `!`.
+Sie können Suchbegriffe mit `AND`, `OR` und `TO` kombinieren und sie sogar
+mit `()` trennen. Wenn Sie Suchergebnisse ausschließen wollen, können Sie
+die Negation `!` verwenden.
 
-| Search phrase                                                                               | Description                                                                                                       |
+| Suchbegriff | Beschreibung |
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
-| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
-| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
+| status.name:(geschlossen OR offen) AND (priority.name: "2 normal" ODER tags:feedback) | Zeige jedes Ticket, dessen Status entweder geschlossen oder offen ist und das die Priorität normal oder den Tag "feedback" hat.                |
+| status.name:(geschlossen OR offen) AND (priority.name: "2 normal" OR tags:feedback) AND !(_Zammad_) | Dies liefert das gleiche Ergebnis wie oben, nur dass keine Tickets im Ergebnis enthalten sein sollen, die mit "Zammad" übereinstimmen |
+| owner.email:<bob@example.net> AND state.name:(offen OR neu) | Zeige Tickets von <bob@example.net>, die entweder offen oder neu sind |
+| status.name:pending\* AND article_count:\[1 TO 5\] | Zeigt alles mit einem "Warten auf..."-Status und einer Artikelanzahl von 1 bis 5.                                            |

@@ -182,7 +182,7 @@ systemctl restart apache2
 ```
 
 :::details Config for CentOS
-Add/uncomment the appropriate ``LoadModule`` statements in your Apache config
+Fügen Sie die entsprechenden ``LoadModule``-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare
 in ``/etc/httpd/conf/httpd.conf``:
 
 ```apache
@@ -193,7 +193,7 @@ LoadModule proxy_http_module modules/mod_proxy_http.so
 LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so
 ```
 
-Restart your webserver after saving the configuration.
+Starten Sie Ihren Webserver neu, nachdem Sie die Konfiguration gespeichert haben.
 
 :::
 
@@ -251,14 +251,14 @@ nur die ``sites-available``-Ordner betreffen.
 
 === Ubuntu, Debian, OpenSUSE
 
-Make sure the following line is present in your Apache config
-(`/etc/apache2/apache2.conf`):
+Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/apache2/apache2.conf``)
+vorhanden ist:
 
-```apache
+```
 IncludeOptional sites-enabled/*.conf
 ```
 
-Enable it:
+Aktivieren Sie es:
 
 ```sh
 a2ensite zammad
@@ -266,14 +266,14 @@ a2ensite zammad
 
 === CentOS
 
-Make sure the following line is present in your Apache config
-(`/etc/httpd/conf/httpd.conf`):
+Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/httpd/conf/httpd.conf``)
+vorhanden ist:
 
-```apache
+```
 IncludeOptional sites-enabled/*.conf
 ```
 
-Enable it:
+Aktivieren Sie es:
 
 ```sh
 ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/

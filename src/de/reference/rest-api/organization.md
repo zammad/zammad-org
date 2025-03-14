@@ -86,16 +86,16 @@ Erforderliche Berechtigung: `admin.organization`
 `DELETE`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing organizations cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Organisationen nicht rückgängig gemacht werden kann.
 
-Removing organizations with references in e.g. activity streams or users
-is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Das Entfernen von Organisationen mit Referenzen in z.B. Aktivitäts-Verläufen oder Benutzern
+ist über die API nicht möglich - dies wird angezeigt durch
+`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen."`. Dies ist _kein_ Fehler.
 
-Consider using Zammad's Data Privacy feature via UI for
-more control instead.
+Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
+mehr Kontrolle.
 :::
 
 ::: details Show response

@@ -11,8 +11,8 @@ Standardwerten, falls zutreffend. Sie könnten auch an der
 sein.
 
 ::: tip
-If you want to use a `.env` file, you can use the provided `.env.dist` file and copy it to `.env`. That way it will be
-picked up by Docker-Compose automatically and not overwritten during updates.
+Wenn Sie eine `.env`-Datei verwenden wollen, können Sie die mitgelieferte `.env.dist`-Datei verwenden und sie nach `.env` kopieren. Auf diese Weise wird sie
+automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen überschrieben.
 :::
 
 ## Zammad
