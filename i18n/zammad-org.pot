@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-13 14:00+0000\n"
+"POT-Creation-Date: 2025-03-17 16:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,18 +203,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1522,14 +1510,14 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:42
 #, markdown-text, no-wrap
-msgid "Use Text Templates"
+msgid "Use Text Modules"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:45
 #, markdown-text
 msgid ""
-"![Screenshot shows text template "
+"![Screenshot shows text modules "
 "feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)"
 msgstr ""
 
@@ -2288,79 +2276,226 @@ msgstr ""
 #. type: Fenced div block (details How to find tickets?)
 #: src/en/documentation/use/faq.md:10
 #, no-wrap
-msgid "You can either search them via search field or via overviews.\n"
+msgid ""
+"It depends on your use case. Zammad offers many possibilities to search and "
+"access tickets.\n"
+"\n"
+"If you **search for a specific ticket or content**, the search is the best "
+"way. You can find the search field in the top\n"
+"area of the navigation sidebar or activate it by using the keyboard shortcut "
+"[[s]]. The search even shows your\n"
+"last viewed items, maybe you can find what you are searching for already "
+"there. There is a separate\n"
+"[search page](./guides/search) for more information.\n"
+"\n"
+"If you want to **start working on tickets**, take a look at [the "
+"overviews](./guides/overviews), which are basically a\n"
+"list of current tickets. These overviews should put you in a position where "
+"you can easily distinguish between what\n"
+"needs to be done, what is in progress and what is currently on hold. In case "
+"you face issues with these overviews,\n"
+"your Zammad admin should be able to help.\n"
 msgstr ""
 
-#. type: Fenced div block (tabs)
-#: src/en/documentation/use/faq.md:14 src/en/documentation/use/faq.md:18
-#: src/en/documentation/use/faq.md:22 src/en/documentation/use/faq.md:26
-#: src/en/documentation/use/faq.md:30 src/en/documentation/use/faq.md:34
-#: src/en/documentation/use/faq.md:40 src/en/documentation/use/faq.md:44
-#: src/en/documentation/use/faq.md:48 src/en/documentation/use/faq.md:52
-#: src/en/documentation/use/faq.md:58 src/en/documentation/use/faq.md:62
-#: src/en/documentation/use/faq.md:66 src/en/documentation/use/faq.md:70
-#: src/en/documentation/use/faq.md:74
-#: src/en/get-started/installation/docker.md:128
-#: src/en/reference/rest-api/articles.md:142
-#: src/en/reference/rest-api/articles.md:159
-#: src/en/reference/rest-api/articles.md:178
-#: src/en/reference/rest-api/calendar.md:42
-#: src/en/reference/rest-api/calendar.md:63
-#: src/en/reference/rest-api/checklist.md:55
-#: src/en/reference/rest-api/checklist.md:76
-#: src/en/reference/rest-api/checklist.md:123
-#: src/en/reference/rest-api/checklist.md:144
-#: src/en/reference/rest-api/checklist.md:192
-#: src/en/reference/rest-api/checklist.md:214
-#: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
-#: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
-#: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
-#: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
-#: src/en/reference/rest-api/link.md:14 src/en/reference/rest-api/link.md:35
-#: src/en/reference/rest-api/link.md:62
-#: src/en/reference/rest-api/mentions.md:32
-#: src/en/reference/rest-api/notification.md:50
-#: src/en/reference/rest-api/object.md:48
-#: src/en/reference/rest-api/object.md:65
-#: src/en/reference/rest-api/object.md:82
-#: src/en/reference/rest-api/object.md:99
-#: src/en/reference/rest-api/object.md:116
-#: src/en/reference/rest-api/object.md:133
-#: src/en/reference/rest-api/object.md:163
-#: src/en/reference/rest-api/object.md:226
-#: src/en/reference/rest-api/organization.md:46
-#: src/en/reference/rest-api/organization.md:67
-#: src/en/reference/rest-api/priorities.md:40
-#: src/en/reference/rest-api/priorities.md:61
-#: src/en/reference/rest-api/role.md:38 src/en/reference/rest-api/role.md:59
-#: src/en/reference/rest-api/shared-draft.md:26
-#: src/en/reference/rest-api/shared-draft.md:47
-#: src/en/reference/rest-api/sla.md:44 src/en/reference/rest-api/sla.md:65
-#: src/en/reference/rest-api/states.md:54
-#: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
-#: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
-#: src/en/reference/rest-api/ticket.md:88
-#: src/en/reference/rest-api/time-accounting.md:39
-#: src/en/reference/rest-api/time-accounting.md:61
-#: src/en/reference/rest-api/user-access-token.md:26
-#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/tutorials/migrate.md:544
+#. type: Fenced div block (details How to get notified for ticket changes?)
+#: src/en/documentation/use/faq.md:24
 #, no-wrap
-msgid "\n"
+msgid ""
+"Adjust the [notification settings in your "
+"profile](manage-profile#notifications). You can distinguish between the\n"
+"action (e.g. ticket creation), the notification channel (email and/or "
+"browser), your relation to the ticket (e.g. if\n"
+"you are the owner) and limit the notifications to a specific group.\n"
+msgstr ""
+
+#. type: Fenced div block (details Why is the ticket open again? I closed it already!)
+#: src/en/documentation/use/faq.md:30
+#, no-wrap
+msgid ""
+"Depending on the settings of your Zammad instance, the reasons can "
+"differ. But usually the reason is that a customer\n"
+"replied to the ticket after it was set to closed. Another reason could be "
+"that a colleague re-opened it. If you can't\n"
+"see an article which fits to the description, you can take a look at the "
+"ticket history to find out more. Do so by\n"
+"opening the `︙` menu in the ticket sidebar tab and select **History**.\n"
+"\n"
+"Your Zammad admin can adjust what should happen when a customer replies "
+"after a ticket got closed.\n"
+msgstr ""
+
+#. type: Fenced div block (details What does the customer see in the ticket?)
+#: src/en/documentation/use/faq.md:39
+#, no-wrap
+msgid ""
+"By default, customers only have a reduced interface. They can create "
+"tickets, view their own tickets (and maybe their\n"
+"colleague's too, depending on the setting) and access their profile "
+"settings. Even the ticket detail view only includes\n"
+"relevant elements for the customer. Elements, which have an internal purpose "
+"(like group, priority, internal notes, are\n"
+"not visible to the customer.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (details What does the customer see in the ticket?|warning)
+#: src/en/documentation/use/faq.md:39
+#, no-wrap
+msgid ""
+"The explanation above is based on the default Zammad settings. Be aware that "
+"the configuration of your system might be\n"
+"different. If in doubt, you should ask your admin.\n"
+msgstr ""
+
+#. type: Fenced div block (details I can't log in. What can I do?)
+#: src/en/documentation/use/faq.md:51
+#, no-wrap
+msgid ""
+"\n"
+"- Forgot your password? Try resetting it in the login screen under the "
+"**Forgot password?** link by providing your email\n"
+"  address.\n"
+"- Lost the possibility to provide your 2nd factor for "
+"2-factor-authentication (2FA)? Use a recovery code and set up a\n"
+"  new 2FA method. See [2FA page](./guides/two-factor-auth) for more "
+"information.\n"
+"- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This "
+"also applies if your problem is not mentioned\n"
+"  here.\n"
+msgstr ""
+
+#. type: Fenced div block (details How can I use keyboard shortcuts? I want to be more productive.)
+#: src/en/documentation/use/faq.md:61
+#, no-wrap
+msgid ""
+"Just use them! You can find an overview of the available shortcuts by "
+"pressing [[?]] on your keyboard or open the\n"
+"overview from the avatar menu (click on your avatar in the bottom left "
+"corner and select **Keyboard shortcuts**).\n"
+"\n"
+"Some of them depend on the location you are or action you perform "
+"(e.g. being in the editor or in the ticket\n"
+"detail view).\n"
+msgstr ""
+
+#. type: Fenced div block (details How to switch between dark and light mode for the user interface?)
+#: src/en/documentation/use/faq.md:69
+#, no-wrap
+msgid ""
+"You can switch between light, dark and automatic mode (tries to adapt to "
+"your browser) in the avatar menu. Open it\n"
+"by clicking your avatar in the bottom left corner and switch the toggle to "
+"the desired state.\n"
+"\n"
+"Another possibility is to use the keyboard shortcut [[d]]. If no input field "
+"is activated, pressing it cycles between\n"
+"the different modes.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/faq.md:38
+#: src/en/documentation/use/faq.md:77
 #: src/en/documentation/use/manage-profile.md:1
 #, markdown-text, no-wrap
 msgid "User Profile"
 msgstr ""
 
+#. type: Fenced div block (details How to change my profile/avatar image?)
+#: src/en/documentation/use/faq.md:79
+#, no-wrap
+msgid ""
+"Go to the [avatar section in you profile settings](manage-profile#avatar) by "
+"opening the avatar menu in the bottom\n"
+"left corner and select **Profile settings**. There you can upload an image, "
+"capture a photo (if your device has a\n"
+"camera) or delete already present images.\n"
+msgstr ""
+
+#. type: Fenced div block (details I want to change the language of the Zammad user interface. How can I do that?)
+#: src/en/documentation/use/faq.md:85
+#, no-wrap
+msgid ""
+"Go to the language section in you profile settings by opening the avatar "
+"menu in the bottom left corner and select\n"
+"**Profile settings**.\n"
+msgstr ""
+
+#. type: Fenced div block (details What should I do before going on vacation?)
+#: src/en/documentation/use/faq.md:90
+#, no-wrap
+msgid ""
+"Go to the [out of office section](manage-profile#out-of-office) in you "
+"profile settings by opening the avatar menu in\n"
+"the bottom left corner and select **Profile settings**. There you can define "
+"a replacement agent.\n"
+msgstr ""
+
+#. type: Fenced div block (details Can I adjust the order of the overviews?)
+#: src/en/documentation/use/faq.md:95
+#, no-wrap
+msgid "Yes! Read on [here](guides/overviews#reorder-overviews).\n"
+msgstr ""
+
 #. type: Title ##
-#: src/en/documentation/use/faq.md:56
+#: src/en/documentation/use/faq.md:99
 #, markdown-text, no-wrap
 msgid "Work on Tickets"
+msgstr ""
+
+#. type: Fenced div block (details How to assign somebody to a ticket?)
+#: src/en/documentation/use/faq.md:101
+#, no-wrap
+msgid ""
+"In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
+"offered agents and make sure to leave an\n"
+"internal note so the other agent knows what it is about.\n"
+"\n"
+"If you only have a question or need some information, you could also just\n"
+"[mention a colleague](advanced-features#mention-a-colleague) in an article "
+"by using `@@` and raise your question.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to delete a ticket?)
+#: src/en/documentation/use/faq.md:109
+#, no-wrap
+msgid ""
+"First of all, tickets can't be deleted by agents. This is done for the "
+"reason of transparency and to prevent deletion\n"
+"by accident and arbitrary deletion.\n"
+"\n"
+"However, if customers want their data to be deleted (e.g. due to a GDPR "
+"deletion request), this can be done in Zammad.\n"
+"Contact your Zammad admin and ask to execute the deletion job.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to use text templates?)
+#: src/en/documentation/use/faq.md:117
+#, no-wrap
+msgid ""
+"Use Zammad's [text modules](advanced-features#use-text-modules) by typing "
+"`::` in the article editor. If you need to\n"
+"have additional modules, ask your Zammad admin to add it for you.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to ask a colleague for help in the ticket?)
+#: src/en/documentation/use/faq.md:122
+#, no-wrap
+msgid ""
+"Either [mention a colleague](advanced-features#mention-a-colleague) in an "
+"article by using `@@` and raise your question.\n"
+msgstr ""
+
+#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#: src/en/documentation/use/faq.md:126
+#, no-wrap
+msgid ""
+"To partially or selective cite the article or parts of it, mark the text, "
+"you want to cite, and click on the **Reply**\n"
+"button next to the article. This can be done even multiple times (e.g. to "
+"answer different parts of the ticket).\n"
+"\n"
+"The citation of the whole article depends on how your Zammad is "
+"configured. If you want to apply changes to this\n"
+"behavior, ask your admin to change it.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -5071,6 +5206,57 @@ msgid ""
 "example,\n"
 "place `pp` (pretty print) in front of your rails command. This leads to an\n"
 "output in your terminal.\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/get-started/installation/docker.md:128
+#: src/en/reference/rest-api/articles.md:142
+#: src/en/reference/rest-api/articles.md:159
+#: src/en/reference/rest-api/articles.md:178
+#: src/en/reference/rest-api/calendar.md:42
+#: src/en/reference/rest-api/calendar.md:63
+#: src/en/reference/rest-api/checklist.md:55
+#: src/en/reference/rest-api/checklist.md:76
+#: src/en/reference/rest-api/checklist.md:123
+#: src/en/reference/rest-api/checklist.md:144
+#: src/en/reference/rest-api/checklist.md:192
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
+#: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
+#: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
+#: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
+#: src/en/reference/rest-api/link.md:14 src/en/reference/rest-api/link.md:35
+#: src/en/reference/rest-api/link.md:62
+#: src/en/reference/rest-api/mentions.md:32
+#: src/en/reference/rest-api/notification.md:50
+#: src/en/reference/rest-api/object.md:48
+#: src/en/reference/rest-api/object.md:65
+#: src/en/reference/rest-api/object.md:82
+#: src/en/reference/rest-api/object.md:99
+#: src/en/reference/rest-api/object.md:116
+#: src/en/reference/rest-api/object.md:133
+#: src/en/reference/rest-api/object.md:163
+#: src/en/reference/rest-api/object.md:226
+#: src/en/reference/rest-api/organization.md:46
+#: src/en/reference/rest-api/organization.md:67
+#: src/en/reference/rest-api/priorities.md:40
+#: src/en/reference/rest-api/priorities.md:61
+#: src/en/reference/rest-api/role.md:38 src/en/reference/rest-api/role.md:59
+#: src/en/reference/rest-api/shared-draft.md:26
+#: src/en/reference/rest-api/shared-draft.md:47
+#: src/en/reference/rest-api/sla.md:44 src/en/reference/rest-api/sla.md:65
+#: src/en/reference/rest-api/states.md:54
+#: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
+#: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
+#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/time-accounting.md:39
+#: src/en/reference/rest-api/time-accounting.md:61
+#: src/en/reference/rest-api/user-access-token.md:26
+#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
+#: src/en/tutorials/migrate.md:544
+#, no-wrap
+msgid "\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -15682,9 +15868,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -17860,6 +18046,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -21586,27 +21784,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

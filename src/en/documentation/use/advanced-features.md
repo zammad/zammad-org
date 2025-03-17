@@ -39,9 +39,9 @@ and use the keyboard shortcut [[Shift]] [[c]] for changing the
 ticket state to closed and close the ticket tab.
 :::
 
-## Use Text Templates
+## Use Text Modules
 
-![Screenshot shows text template feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
 **Why?**
 

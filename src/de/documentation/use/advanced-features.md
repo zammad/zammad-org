@@ -44,10 +44,10 @@ belassen und das Tastaturkürzel [[Shift]] [[c]] verwenden, um den
 Status des Tickets auf geschlossen setzen und den Tab des Tickets schließen.
 :::
 
-## Textbausteine verwenden
+## Use Text Modules
 
-![Screenshot zeigt
-Textbaustein-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules
+feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
 **Warum?**
 

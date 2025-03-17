@@ -41,10 +41,10 @@ TODO
 стања тикета на затворено и затварање прозора тикета.
 :::
 
-## Користите текстуалне шаблоне
+## Use Text Modules
 
-![Снимак екрана приказује функцију текстуалних
-шаблона](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules
+feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
 **Зашто?**
 
