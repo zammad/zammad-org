@@ -1,0 +1,12 @@
+{
+  "category_id": "1",
+  "translations_attributes": [
+    {
+      "content_attributes": {
+        "body": "This is such an important answer!"
+      },
+      "kb_locale_id": 1,
+      "title": "Very important answer!!"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# HTTP-Code 200 Ok
+
+{
+  "id": 6,
+  "knowledge_base_id": 1,
+  "parent_id": null,
+  "category_icon": "f115",
+  "position": 5,
+  "created_at": "2025-03-13T10:40:37.096Z",
+  "updated_at": "2025-03-13T10:40:37.104Z",
+  "translation_ids": [
+    6
+  ],
+  "answer_ids": [],
+  "child_ids": [
+    6
+  ],
+  "permission_ids": [],
+  "permissions_effective": []
+}

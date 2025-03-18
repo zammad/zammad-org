@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-17 16:42+0100\n"
+"POT-Creation-Date: 2025-03-18 11:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5225,6 +5225,17 @@ msgstr ""
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
 #: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
+#: src/en/reference/rest-api/knowledgebase.md:49
+#: src/en/reference/rest-api/knowledgebase.md:82
+#: src/en/reference/rest-api/knowledgebase.md:105
+#: src/en/reference/rest-api/knowledgebase.md:131
+#: src/en/reference/rest-api/knowledgebase.md:164
+#: src/en/reference/rest-api/knowledgebase.md:185
+#: src/en/reference/rest-api/knowledgebase.md:230
+#: src/en/reference/rest-api/knowledgebase.md:253
+#: src/en/reference/rest-api/knowledgebase.md:291
+#: src/en/reference/rest-api/knowledgebase.md:312
+#: src/en/reference/rest-api/knowledgebase.md:348
 #: src/en/reference/rest-api/link.md:14 src/en/reference/rest-api/link.md:35
 #: src/en/reference/rest-api/link.md:62
 #: src/en/reference/rest-api/mentions.md:32
@@ -8816,9 +8827,10 @@ msgstr ""
 msgid "Docker Compose Scenarios"
 msgstr ""
 
-#. type: Bullet: '- '
+#. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:8
 #: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/knowledgebase.md:19
 #, markdown-text, no-wrap
 msgid "Overview"
 msgstr ""
@@ -13592,6 +13604,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:117
 #: src/en/reference/rest-api/checklist.md:186
 #: src/en/reference/rest-api/group.md:41
+#: src/en/reference/rest-api/knowledgebase.md:158
+#: src/en/reference/rest-api/knowledgebase.md:285
 #: src/en/reference/rest-api/mentions.md:26
 #: src/en/reference/rest-api/object.md:40
 #: src/en/reference/rest-api/organization.md:40
@@ -13784,6 +13798,9 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:105
 #: src/en/reference/rest-api/checklist.md:173
 #: src/en/reference/rest-api/group.md:29
+#: src/en/reference/rest-api/knowledgebase.md:31
+#: src/en/reference/rest-api/knowledgebase.md:146
+#: src/en/reference/rest-api/knowledgebase.md:268
 #: src/en/reference/rest-api/notification.md:32
 #: src/en/reference/rest-api/object.md:28
 #: src/en/reference/rest-api/organization.md:24
@@ -13860,7 +13877,10 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:91
 #: src/en/reference/rest-api/checklist.md:159
 #: src/en/reference/rest-api/checklist.md:229
-#: src/en/reference/rest-api/group.md:83 src/en/reference/rest-api/link.md:56
+#: src/en/reference/rest-api/group.md:83
+#: src/en/reference/rest-api/knowledgebase.md:200
+#: src/en/reference/rest-api/knowledgebase.md:327
+#: src/en/reference/rest-api/link.md:56
 #: src/en/reference/rest-api/mentions.md:55
 #: src/en/reference/rest-api/notification.md:65
 #: src/en/reference/rest-api/object.md:247
@@ -15874,6 +15894,592 @@ msgstr ""
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rest-api/knowledgebase.md:1
+#: src/en/reference/rest-api/knowledgebase.md:6
+#, markdown-text, no-wrap
+msgid "Knowledge Base"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:11
+#, markdown-text
+msgid ""
+"Zammad has multiple knowledge base related endpoints. The most important - "
+"but not all - are covered in this documentation. You can find the general "
+"ones about the knowledge base itself below, followed by the sub-endpoints "
+"for [answers](#answers) and [categories](#categories)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/knowledgebase.md:12
+#, markdown-text, no-wrap
+msgid "Knowledge Base General"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/knowledgebase.md:14
+#, no-wrap
+msgid ""
+"The request and response examples include the knowledge base ID `1`. Your ID "
+"may be different, for example if you\n"
+"created a knowledge base before, dropped it and created a new one.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:22
+#: src/en/reference/rest-api/knowledgebase.md:46
+#: src/en/reference/rest-api/knowledgebase.md:67
+#: src/en/reference/rest-api/knowledgebase.md:79
+#: src/en/reference/rest-api/knowledgebase.md:102
+#: src/en/reference/rest-api/knowledgebase.md:128
+#: src/en/reference/rest-api/knowledgebase.md:161
+#: src/en/reference/rest-api/knowledgebase.md:182
+#: src/en/reference/rest-api/knowledgebase.md:203
+#: src/en/reference/rest-api/knowledgebase.md:215
+#: src/en/reference/rest-api/knowledgebase.md:227
+#: src/en/reference/rest-api/knowledgebase.md:250
+#: src/en/reference/rest-api/knowledgebase.md:288
+#: src/en/reference/rest-api/knowledgebase.md:309
+#: src/en/reference/rest-api/knowledgebase.md:330
+#: src/en/reference/rest-api/knowledgebase.md:342
+#: src/en/reference/rest-api/knowledgebase.md:378
+#, markdown-text
+msgid "Required permission: `knowledge_base.editor`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:24
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/knowledge_bases/init`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:25
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-init.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:34
+#: src/en/reference/rest-api/knowledgebase.md:149
+#: src/en/reference/rest-api/knowledgebase.md:271
+#, markdown-text
+msgid "Required permission: `knowledge_base.reader` or `knowledge_base.editor`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:36
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:37
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/get-kb.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:43
+#, markdown-text, no-wrap
+msgid "Change Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:48
+#, markdown-text
+msgid "`PATCH`-Request sent: `/api/v1/knowledge_bases/manage/{ID of your KB}`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:49
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-manage.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-manage-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:64
+#: src/en/reference/rest-api/knowledgebase.md:212
+#, markdown-text, no-wrap
+msgid "Show Permissions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:69
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:70
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/get-permissions.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:76
+#: src/en/reference/rest-api/knowledgebase.md:224
+#, markdown-text, no-wrap
+msgid "Change Permissions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:81
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:82
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/put-permissions.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/put-permissions-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/knowledgebase.md:97
+#, markdown-text, no-wrap
+msgid "Categories"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:99
+#, markdown-text, no-wrap
+msgid "Reorder Sub-Categories"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:104
+#, markdown-text
+msgid ""
+"`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/categories/{ID of category}/reorder_categories`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:105
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-reorder.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-reorder-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:120
+#, markdown-text, no-wrap
+msgid "Reorder Root Categories"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/knowledgebase.md:122
+#, no-wrap
+msgid ""
+"You have to provide the order of all top level categories, i.e.\n"
+"categories with no category as parent (parent: `>> Homepage <<`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:130
+#, markdown-text
+msgid ""
+"`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/categories/reorder_root_categories`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:131
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-reorder-root.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-reorder-root-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:151
+#, markdown-text
+msgid ""
+"`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
+"of category}`"
+msgstr ""
+
+#. type: Fenced div block (details Show response:)
+#: src/en/reference/rest-api/knowledgebase.md:152
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/get-categories.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:163
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:164
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-categories.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-categories-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:179
+#: src/en/reference/rest-api/knowledgebase.md:306
+#, markdown-text, no-wrap
+msgid "Change"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:184
+#, markdown-text
+msgid ""
+"`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/categories/{ID of category}`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:185
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-categories.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-categories-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:205
+#, markdown-text
+msgid ""
+"`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/categories/{ID of category}`"
+msgstr ""
+
+#. type: Fenced div block (details Show response:)
+#: src/en/reference/rest-api/knowledgebase.md:206
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/delete-categories.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:217
+#, markdown-text
+msgid ""
+"`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
+"of category}/permissions`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:218
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/get-categories-permissions.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:229
+#, markdown-text
+msgid ""
+"`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
+"of category}/permissions`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:230
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/put-categories-permissions.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< "
+"@/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/knowledgebase.md:245
+#, markdown-text, no-wrap
+msgid "Answers"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:247
+#, markdown-text, no-wrap
+msgid "Reorder Answers"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:252
+#, markdown-text
+msgid ""
+"`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/categories/{ID of category}/reorder_answers`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:253
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< "
+"@/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< "
+"@/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:273
+#, markdown-text
+msgid ""
+"`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of "
+"answer}`"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/knowledgebase.md:274
+#, no-wrap
+msgid ""
+"If you want to get the content of an answer, add the parameters "
+"`?full=1&include_contents=1` to the query URL. The\n"
+"request for the following response included the parameters.\n"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:279
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/get-answers.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:290
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:291
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-answers.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-answers-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:311
+#, markdown-text
+msgid ""
+"`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
+"of answer}`"
+msgstr ""
+
+#. type: Fenced div block (details Show request/response|tabs key:reqres)
+#: src/en/reference/rest-api/knowledgebase.md:312
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-answers.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-answers-response.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:332
+#, markdown-text
+msgid ""
+"`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
+"of answer}`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:333
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/delete-answers.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:339
+#, markdown-text, no-wrap
+msgid "Manage Publication Status"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/knowledgebase.md:343
+#, no-wrap
+msgid ""
+"Responses are omitted here. You can expect to get a response like for "
+"showing an answer with a populated value for\n"
+"`archived_at`, `published_at` or `internal_at`, depending on which request "
+"you execute.\n"
+msgstr ""
+
+#. type: Fenced div block (details Show requests|tabs)
+#: src/en/reference/rest-api/knowledgebase.md:348
+#, no-wrap
+msgid ""
+"\n"
+"=== Publish internally\n"
+"\n"
+"`POST`-Request sent:\n"
+"`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/internal`\n"
+"\n"
+"=== Publish publicly\n"
+"\n"
+"`POST`-Request sent:\n"
+"`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/publish`\n"
+"\n"
+"=== Archive\n"
+"\n"
+"`POST`-Request sent:\n"
+"`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/archive`\n"
+"\n"
+"=== Unarchive\n"
+"\n"
+"`POST`-Request sent:\n"
+"`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/unarchive`\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/knowledgebase.md:375
+#, markdown-text, no-wrap
+msgid "Manage Attachments"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:380
+#, markdown-text
+msgid "Add attachment:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:382
+#, markdown-text
+msgid ""
+"`POST`-Request with payload sent: `/api/v1/knowledge_bases/{ID of your "
+"KB}/answers/{ID of answer}/attachments`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:383
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/post-answers-attachment.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:390
+#, markdown-text
+msgid "Delete attachment:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/knowledgebase.md:392
+#, markdown-text
+msgid ""
+"`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
+"of answer}/attachments/{ID of attachment}`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/knowledgebase.md:393
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/knowledgebase/delete-answers-attachments.json\n"
+"\n"
 msgstr ""
 
 #. type: Title #

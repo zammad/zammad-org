@@ -1,0 +1,33 @@
+# HTTP-Code 200 Ok
+
+{
+  "id": 1,
+  "iconset": "FontAwesome",
+  "color_highlight": "#38ae6a",
+  "color_header": "#f9fafb",
+  "color_header_link": "hsl(206,8%,50%)",
+  "homepage_layout": "grid",
+  "category_layout": "grid",
+  "active": true,
+  "show_feed_icon": false,
+  "custom_address": null,
+  "created_at": "2025-03-12T10:09:01.203Z",
+  "updated_at": "2025-03-12T15:38:47.669Z",
+  "translation_ids": [
+      1
+  ],
+  "kb_locale_ids": [
+      1
+  ],
+  "category_ids": [
+      2,
+      1
+  ],
+  "answer_ids": [
+      2,
+      3,
+      1
+  ],
+  "permission_ids": [],
+  "permissions_effective": []
+}

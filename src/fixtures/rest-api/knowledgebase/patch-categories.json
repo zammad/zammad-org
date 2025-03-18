@@ -1,0 +1,10 @@
+{
+  "category_icon": "f00c",
+  "parent_id": "2",
+  "translations_attributes": [
+    {
+      "id": 3,
+      "title": "My new category"
+    }
+  ]
+}

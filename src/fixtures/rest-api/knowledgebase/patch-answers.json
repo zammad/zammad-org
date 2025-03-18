@@ -1,0 +1,12 @@
+{
+  "category_id": "1",
+  "translations_attributes": [
+    {
+      "content_attributes": {
+        "body": "Changed text of answer via API"
+      },
+      "id": 7,
+      "title": "Changed title of answer via API"
+    }
+  ]
+}

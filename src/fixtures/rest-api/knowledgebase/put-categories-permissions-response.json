@@ -1,0 +1,28 @@
+# HTTP-Code 200 Ok
+
+{
+  "roles_reader": [],
+  "roles_editor": [
+    {
+      "id": 1,
+      "name": "Admin"
+    },
+    {
+    "id": 2,
+    "name": "Agent"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "access": "editor",
+      "role_id": 1
+    },
+    {
+      "id": 2,
+      "access": "reader",
+      "role_id": 2
+    }
+  ],
+  "inherited": []
+}
