@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-18 11:32+0100\n"
+"POT-Creation-Date: 2025-03-18 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -822,7 +822,7 @@ msgstr ""
 msgid ""
 "Due to the fact that a documentation can't cover everything (otherwise it "
 "would be code), the relevance has to be considered. If parts with a common "
-"use case are missing, it should be strived to include them in the "
+"use case are missing, it should be intended to include them in the "
 "documentation."
 msgstr ""
 
@@ -993,7 +993,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid ""
 "Line length of 120 characters in the source file may not be exceeded for "
@@ -1003,19 +1003,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid "Multiple consecutive empty lines are not allowed."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid "Empty lines before and after headings and fenced code blocks are required."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid ""
 "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
@@ -1024,13 +1024,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid "Use `-` for bullet point lists (unordered list) like this one."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid ""
 "To easily distinguish between **bold** and _italics_, use `_` around the "
@@ -1038,31 +1038,47 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid "Multiple headings with the same content are not allowed."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:105
+#: src/en/contribute/style-guide.md:107
 #, markdown-text
 msgid "Each document must have exactly one `h1` heading as title."
 msgstr ""
 
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:107
+#, markdown-text
+msgid ""
+"Resolution of manual full page screenshots for _mobile view_ is 400x867 "
+"pixels."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:107
+#, markdown-text
+msgid ""
+"Resolution of manual full page screenshots for _desktop view_ is 1920x1080 "
+"pixels."
+msgstr ""
+
 #. type: Title ###
-#: src/en/contribute/style-guide.md:106
+#: src/en/contribute/style-guide.md:108
 #, markdown-text, no-wrap
 msgid "Basic Formatting Examples"
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:108
+#: src/en/contribute/style-guide.md:110
 #, markdown-text, no-wrap
 msgid "Text and UI"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:116
+#: src/en/contribute/style-guide.md:118
 #, markdown-text, no-wrap
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown "
@@ -1080,13 +1096,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:117
+#: src/en/contribute/style-guide.md:119
 #, markdown-text, no-wrap
 msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:121
+#: src/en/contribute/style-guide.md:123
 #, markdown-text
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
@@ -1095,49 +1111,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:123
+#: src/en/contribute/style-guide.md:125
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:125
+#: src/en/contribute/style-guide.md:127
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:127
+#: src/en/contribute/style-guide.md:129
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:129
+#: src/en/contribute/style-guide.md:131
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:131
+#: src/en/contribute/style-guide.md:133
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:133
+#: src/en/contribute/style-guide.md:135
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:134
+#: src/en/contribute/style-guide.md:136
 #, markdown-text, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:138
+#: src/en/contribute/style-guide.md:140
 #, markdown-text
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
@@ -1146,7 +1162,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:139
+#: src/en/contribute/style-guide.md:141
 #, no-wrap
 msgid ""
 "\n"
@@ -1157,13 +1173,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:147
+#: src/en/contribute/style-guide.md:149
 #, markdown-text, no-wrap
 msgid "Custom boxes"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:149
+#: src/en/contribute/style-guide.md:151
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1171,8 +1187,8 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:149 src/en/contribute/style-guide.md:163
-#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:191
+#: src/en/contribute/style-guide.md:151 src/en/contribute/style-guide.md:165
+#: src/en/contribute/style-guide.md:179 src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid ""
 "\n"
@@ -1180,14 +1196,14 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info|details Usage|info)
-#: src/en/contribute/style-guide.md:149
+#: src/en/contribute/style-guide.md:151
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger|details Usage)
-#: src/en/contribute/style-guide.md:149 src/en/contribute/style-guide.md:163
-#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:191
+#: src/en/contribute/style-guide.md:151 src/en/contribute/style-guide.md:165
+#: src/en/contribute/style-guide.md:179 src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid ""
 "```\n"
@@ -1195,7 +1211,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:165
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1203,13 +1219,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip|details Usage|tip)
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:165
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:177
+#: src/en/contribute/style-guide.md:179
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1217,13 +1233,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning|details Usage|warning)
-#: src/en/contribute/style-guide.md:177
+#: src/en/contribute/style-guide.md:179
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:191
+#: src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1231,13 +1247,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger|details Usage|warning)
-#: src/en/contribute/style-guide.md:191
+#: src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:205
+#: src/en/contribute/style-guide.md:207
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1249,13 +1265,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|details Box title shown in collapsed state)
-#: src/en/contribute/style-guide.md:205
+#: src/en/contribute/style-guide.md:207
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:205
+#: src/en/contribute/style-guide.md:207
 #, no-wrap
 msgid ""
 "\n"
@@ -1264,13 +1280,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:220
+#: src/en/contribute/style-guide.md:222
 #, markdown-text, no-wrap
 msgid "Definition lists"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:226
 #, markdown-text, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1278,7 +1294,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:228
+#: src/en/contribute/style-guide.md:230
 #, markdown-text, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" "
@@ -1288,7 +1304,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:231
 #, no-wrap
 msgid ""
 "\n"
@@ -2588,6 +2604,277 @@ msgstr ""
 #: src/en/documentation/use/guides/index.md:1
 #, no-wrap
 msgid "Guides"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/guides/mobile-view.md:1
+#: src/en/documentation/use/guides/mobile-view.md:6
+#, markdown-text, no-wrap
+msgid "Use Mobile View"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mobile-view.md:8
+#, markdown-text, no-wrap
+msgid "Intro"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:14
+#, markdown-text
+msgid ""
+"The development of a dedicated mobile view for Zammad was driven by the "
+"increasing need for access while on the move.  The desktop application "
+"offers responsive functionality for smaller screens, but it was determined "
+"to be too complex for optimal mobile use. This mobile view focuses on "
+"presenting the most critical information in a touch-friendly and modern "
+"design, prioritizing a streamlined user experience."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/mobile-view.md:15
+#, no-wrap
+msgid ""
+"We intentionally do not provide specific instructions and comprehensive "
+"documentation for the mobile view! The overall\n"
+"UX should be intuitive and self-explanatory in most cases.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:21
+#, markdown-text
+msgid ""
+"You can find screenshots below to get an impression how the mobile view "
+"looks like."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/documentation/use/guides/mobile-view.md:22
+#, no-wrap
+msgid ""
+"\n"
+"=== Login & Home\n"
+"\n"
+"| Login | Home |\n"
+"|:-------------------------:|:-------------------------:|\n"
+"|![Screenshot shows login screen of Zammad's mobile "
+"view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen "
+"of Zammad's mobile view](/screenshots/mobile-view/home.png) |\n"
+"\n"
+"=== Search & Overview\n"
+"\n"
+"| Search | Overview |\n"
+"|:-------------------------:|:-------------------------:|\n"
+"|![Screenshot shows search screen of Zammad's mobile "
+"view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview "
+"screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |\n"
+"\n"
+"=== Ticket Details\n"
+"\n"
+"| Articles | Details |\n"
+"|:-------------------------:|:-------------------------:|\n"
+"|![Screenshot shows ticket screen of Zammad's mobile "
+"view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows "
+"ticket detail view of Zammad's mobile "
+"view](/screenshots/mobile-view/ticket-details.png) |\n"
+"\n"
+"=== Notifications & Account\n"
+"\n"
+"| Notifications | Account |\n"
+"|:-------------------------:|:-------------------------:|\n"
+"|![Screenshot shows notifications screen of Zammad's mobile "
+"view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows "
+"account settings screen of Zammad's mobile "
+"view](/screenshots/mobile-view/profile.png) |\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mobile-view.md:50
+#: src/en/reference/rest-api/cti.md:21
+#, markdown-text, no-wrap
+msgid "Features"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:53
+#, markdown-text
+msgid ""
+"Mobile view provides you with a way to do your common Zammad daily tasks "
+"while on the go:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Manage & use your ticket overviews"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Search for existing records"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Create a new ticket"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Reply in an already existing ticket"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Modify ticket attributes"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Modify customer attributes"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:61
+#, markdown-text
+msgid "Modify organization attributes"
+msgstr ""
+
+#. type: Title ####
+#: src/en/documentation/use/guides/mobile-view.md:62
+#: src/en/tutorials/backup-restore.md:305 src/en/tutorials/migrate.md:54
+#: src/en/tutorials/migrate.md:355 src/en/tutorials/migrate.md:511
+#, markdown-text, no-wrap
+msgid "Limitations"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:65
+#, markdown-text
+msgid ""
+"Mobile view is also currently missing some features which are provided by "
+"the desktop view:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Time accounting"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Split article"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Link tickets and see linked tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Execution of macros"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Ticket history"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:72
+#, markdown-text
+msgid "Template creation & shared drafts"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:74
+#, markdown-text
+msgid ""
+"Additionally, certain features were intentionally omitted in order to "
+"improve the focus on important information:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Most management features (except ticket user and organization management)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Most knowledge base features (except ticket integration)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Most user profile functions (except avatar and language preferences)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Reports"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Caller log"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mobile-view.md:81
+#, markdown-text
+msgid "Live chat"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mobile-view.md:82
+#, markdown-text, no-wrap
+msgid "Switch the Views"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:86
+#, markdown-text
+msgid ""
+"Zammad implements a mobile device detection, which results in automatic "
+"redirection to mobile view. Even with this mechanism in place, it's possible "
+"to explicitly switch between the views by using app links."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:89
+#, markdown-text
+msgid ""
+"In both desktop and mobile view login screens, you can find a link below the "
+"**Sign in** button to explicitly switch to the other view (see login "
+"screenshot from above as an example)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:92
+#, markdown-text
+msgid ""
+"While you are signed in and want to switch from the mobile to the desktop "
+"view, go to your profile by selecting your avatar at the bottom and select "
+"**Continue to desktop** (see account screenshot from above as an "
+"example). The other way round is similar: in the avatar menu, you can find "
+"an entry to switch to the mobile view."
 msgstr ""
 
 #. type: Title ###
@@ -14294,12 +14581,6 @@ msgid ""
 "- The CTI endpoints are relevant for PBX systems only.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/cti.md:21
-#, markdown-text, no-wrap
-msgid "Features"
-msgstr ""
-
 #. type: Plain text
 #: src/en/reference/rest-api/cti.md:25
 #, markdown-text
@@ -19381,13 +19662,6 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:303
 #, markdown-text, no-wrap
 msgid "Database Helper: (Re)set Password"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/backup-restore.md:305 src/en/tutorials/migrate.md:54
-#: src/en/tutorials/migrate.md:355 src/en/tutorials/migrate.md:511
-#, markdown-text, no-wrap
-msgid "Limitations"
 msgstr ""
 
 #. type: Bullet: '- '

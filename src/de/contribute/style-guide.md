@@ -53,10 +53,10 @@ es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
 sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
 möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie ja Code),
-muss die Relevanz berücksichtigt werden. Wenn Teile mit einem gebräuchlichen
-Anwendungsfall fehlen, sollte angestrebt werden, diese in die Dokumentation
-aufzunehmen.
+Due to the fact that a documentation can't cover everything (otherwise it
+would be code), the relevance has to be considered. If parts with a common
+use case are missing, it should be intended to include them in the
+documentation.
 
 ## Stil und Regeln
 
@@ -139,6 +139,10 @@ aufgeführt.
   vs. `**fett**`).
 - Mehrere Überschriften mit gleichem Inhalt sind nicht zulässig.
 - Jedes Dokument muss genau eine `h1`-Überschrift als Titel haben.
+- Resolution of manual full page screenshots for _mobile view_ is 400x867
+  pixels.
+- Resolution of manual full page screenshots for _desktop view_ is 1920x1080
+  pixels.
 
 ### Grundlegende Formatierungsbeispiele
 

@@ -41,7 +41,7 @@ important steps should be included. The readers should achieve their goals as qu
 having to read a lot.
 
 Due to the fact that a documentation can't cover everything (otherwise it would be code), the relevance has to be
-considered. If parts with a common use case are missing, it should be strived to include them in the documentation.
+considered. If parts with a common use case are missing, it should be intended to include them in the documentation.
 
 ## Style and Rules
 
@@ -102,6 +102,8 @@ important rules and customized ones are mentioned below.
   `_italic_` vs. `**bold**`).
 - Multiple headings with the same content are not allowed.
 - Each document must have exactly one `h1` heading as title.
+- Resolution of manual full page screenshots for _mobile view_ is 400x867 pixels.
+- Resolution of manual full page screenshots for _desktop view_ is 1920x1080 pixels.
 
 ### Basic Formatting Examples
 
