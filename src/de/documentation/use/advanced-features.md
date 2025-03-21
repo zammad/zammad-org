@@ -16,10 +16,9 @@ Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavi
 
 **Warum?**
 
-Es ist möglich, einen Tab für ein Ticket in der Navigationsleiste
-automatisch zu schließen.  Es hängt von Ihren Präferenzen ab, aber Sie
-können sich einen Klick nach der Aktualisierung oder der Aktualisierung auf
-den Status _geschlossen_ sparen.
+It is possible to automatically close a ticket tab in the navigation
+sidebar. It depends on your preferences, but you can save a click after
+updating or updating a ticket to _closed_ state.
 
 **Wie? **
 
@@ -39,9 +38,8 @@ Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
   _geschlossen_ gesetzt wird.
 
 ::: tip
-Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten**
-belassen und das Tastaturkürzel [[Shift]] [[c]] verwenden, um den
-Status des Tickets auf geschlossen setzen und den Tab des Tickets schließen.
+If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
+[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
 ## Use Text Modules
@@ -67,10 +65,10 @@ oben und unten benutzen, gefolgt von
 [[Enter]] auf Ihrer Tastatur. Es gibt einige Textbausteine in Zammad
 die standardmäßig mitgeliefert werden.
 
-Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren
-Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie
-können sogar Variablen wie den Namen des Kunden oder jedes andere verfügbare
-Attribut einfügen, die bei der Verwendung in einem Ticket ersetzt werden.
+If you have to answer the same question again and again, ask your Zammad
+admin to create such a text module for you.  They can even include variables
+like customer name or any other available attribute which get replaced while
+using it in a ticket.
 
 ## Erwähnen von Kollegen
 
@@ -101,17 +99,16 @@ abonnieren](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.
 
 **Warum?**
 
-Wenn Sie am Fortschritt eines Tickets interessiert sind, können Sie es
-abonnieren.  Das bedeutet, dass Sie bei jeder Aktualisierung eine
-Benachrichtigung erhalten.
+If you are interested in the progress of a ticket, you can subscribe to
+it. This means you will receive notifications for each update.
 
 **Wie? **
 
-Aktivieren Sie den Schalter "Abonnieren" im seitlichen Bereich des Tickets,
-um Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt wurden,
-werden Sie automatisch benachrichtigt. Deaktivieren Sie den Schalter, um die
-Benachrichtigung zu stoppen.  Die angezeigten Avatare zeigen Ihnen, wer das
-Ticket abonniert hat und somit über Aktualisierungen benachrichtigt wird.
+Activate the "Subscribe me" toggle in the ticket side panel to get
+notifications. If you have been mentioned in a ticket, you are automatically
+subscribed. Switch the toggle off to stop the notification. The avatars
+displayed show you who has subscribed to the ticket and is therefore
+notified of updates.
 
 ## Ein Makro verwenden
 
@@ -194,23 +191,26 @@ In der Checklisten-Seitenleiste können Sie:
   einer Vorlage, indem Sie `Aus einer Vorlage hinzufügen` verwenden (wenn
   Sie die Schaltfläche für die Vorlage nicht sehen, gibt es keine).
 - Bearbeiten Sie die aktuelle Checkliste:
-  - Benennen Sie sie um, indem Sie auf den Titel klicken oder das `︙` Menü in der Seitenleiste oben verwenden.
-  - Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die Schaltfläche `+` klicken.
-  - Ändern Sie den Text der Elemente in der Checkliste, indem Sie darauf klicken oder über das Menü `︙` neben dem Element.
-  - Ordnen Sie die Elemente neu an, indem Sie auf die entsprechende Schaltfläche klicken und die Elemente per Drag & Drop verschieben.
-- Löschen Sie die komplette Checkliste über das Menü im Header der Seitenleiste.
+  - Benennen Sie sie um, indem Sie auf den Titel klicken oder das `︙` Menü
+    im im Header der Seitenleiste verwenden.
+  - Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die Schaltfläche
+    `+` klicken.
+  - Ändern Sie den Text der Elemente der Checkliste, entweder durch
+    einfaches Anklicken oder über das `︙` Menü neben dem Element.
+  - Ordnen Sie die Elemente neu an, indem Sie auf die Schaltfläche
+    `Reihenfolge ändern` klicken und die Elemente per Drag & Drop
+    verschieben.
+- Löschen Sie die komplette Checkliste über das `︙` Menü im Header der
+  Seitenleiste.
 
 Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
 
-- Sie können auf andere Tickets in einem Checklisten-Element verweisen,
-  indem Sie den Ticket-Hook und die Nummer im Elementtext verwenden
-  (z.B. `Ticket#123456`). Solche Elemente können nicht manuell als erledigt
-  gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
-  sie verweisen.
+- You can refer to other tickets as a checklist item by using its hook and
+  number in the item text (e.g.  `Ticket#123456`). Such items can't be
+  checked manually, they reflect the state of the referred ticket.
   ::: tip
-  Rufen Sie den Ticket-Hook und die Ticket-Nummer ab, indem Sie zum gewünschten Ticket gehen und entweder
-  die Schaltfläche "Ticket-Nummer kopieren" in der Kopfzeile verwenden oder das Tastaturkürzel [[.]] verwenden.
-  Dann können Sie sie in die Checkliste einfügen, die sie enthalten soll.
+  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use
+  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
   sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"
@@ -230,10 +230,9 @@ bereits eine Ticket-Vorlage erstellt haben.
 
 **Wie? **
 
-In der Ansicht zum Erstellen eines Tickets finden Sie in der Fußleiste eine
-Schaltfläche "Vorlage anwenden", wenn eine Vorlage verfügbar ist. Wählen Sie
-die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
-Änderungen vor.
+In the ticket create screen, you can find an `Apply Template ^` button in
+the footer bar, if a template is available.  Select the template you want to
+apply and apply changes if desired.
 
 ## Gemeinsame Entwürfe
 
@@ -295,13 +294,40 @@ Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
 
 ## Mehrfach-Aktionen
 
-TODO nach der Implementierung von Mehrfach-Aktionen in Übersichten
+![Screenshot shows the bulk action
+flyout](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
 
 **Warum?**
 
+If you have to apply the same changes for many ticket, you can save time!
+
 **Wie? **
 
-Per Drag & Drop Über Dropdown-Selektoren
+There are 2 _places_ where you can perform bulk actions:
+
+- Detail search page
+- Übersichten
+
+Assuming you are in the overviews or in the detail search page, you can bulk
+edit tickets in 2 _ways_:
+
+- Use the **Bulk Action** button in the top right corner and change/add
+  attributes by using the fields in the flyout
+- Drag the tickets with the mouse to invoke the bulk action overlay and drop
+  them on the desired action
+
+To bulk edit tickets in either way, you have to select them before. Do so by
+clicking the checkbox on the left side of each row in the ticket
+table. Selected tickets are highlighted next to the checkbox.
+
+The available changes you can apply to tickets are:
+
+- Set group
+- Set owner
+- Set state
+- Set priority
+- Add a note
+- Execute a macro
 
 ## Tickets zusammenfassen
 
@@ -345,10 +371,9 @@ Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
 **Warum?**
 
-Wenn Sie ein Ticket haben, bei dem es um mehr als ein Problem geht, möchten
-Sie es vielleicht in zwei oder mehr separate Tickets aufteilen. Dies kann
-zum Beispiel der Fall sein, wenn ein Kunde eine technische Frage hat und
-eine Bestellung aufgeben möchte.
+If you have a ticket which is about more than one issue, you might want to
+split it in two or more separate tickets.  For example this might be the
+case if a customer has a technical question and wants to place an order.
 
 **Wie? **
 
@@ -368,10 +393,9 @@ verlinkt. Das ursprüngliche Ticket ist im abgespaltenen Ticket als
 
 **Warum?**
 
-Wenn Tickets zu verwandten Themen auftauchen, können sie zur einfacheren
-Auffindbarkeit und Referenz miteinander verknüpft
-werden. [Zusammengefasste](#tickets-zusammenfassen) und
-[abgespaltene](#ticket-abspalten) Tickets werden automatisch verknüpft.
+When tickets about related issues arise, they can be linked to each other
+for easier reference.  [Merged](#merge-tickets) and [split](#split-ticket)
+tickets are automatically linked.
 
 **Wie? **
 

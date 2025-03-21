@@ -16,9 +16,9 @@ TODO
 
 **Зашто?**
 
-Могуће је аутоматски затворити прозор тикета у бочној траци навигације.
-Зависи од ваших подешавања, али можете уштедети клик након освежавања или
-освежавања тикета са стањем _затворено_.
+It is possible to automatically close a ticket tab in the navigation
+sidebar. It depends on your preferences, but you can save a click after
+updating or updating a ticket to _closed_ state.
 
 **Како?**
 
@@ -36,9 +36,8 @@ TODO
   када је тикет освежен и стање је постављено на _затворено_.
 
 ::: tip
-Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**
-и користити пречицу на тастатури [[Shift]] [[c]] за промену
-стања тикета на затворено и затварање прозора тикета.
+If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
+[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
 ## Use Text Modules
@@ -63,10 +62,10 @@ feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-
 а затим притиском на [[Enter]] на вашој тастатури. Zammad долази са неким
 подразумеваним текстуалним исечцима.
 
-Уколико ухватите себе да стално одговарате на идентично питање, замолите
-вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу
-укључивати и променљиве као што су име клијента или било који други атрибут,
-које ће бити замењене кад их користите у тикету.
+If you have to answer the same question again and again, ask your Zammad
+admin to create such a text module for you.  They can even include variables
+like customer name or any other available attribute which get replaced while
+using it in a ticket.
 
 ## Помените колегу
 
@@ -95,15 +94,16 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-Уколико сте заинтересовани за прогрес тикета, можете се претплатити на
-исти.  Ово значи да ћете примати обавештења за свако освежавање.
+If you are interested in the progress of a ticket, you can subscribe to
+it. This means you will receive notifications for each update.
 
 **Како?**
 
-Укључите прекидач „Претплати се” у траци тикета са стране за добијање
-обавештења. Уколико сте већ поменути у тикету, већ сте
-претплаћени. Искључите прекидач за заустављање обавештења.  Сличице испод
-вам приказују ко је претплаћен на тикет и ко је обавештен о освежавањима.
+Activate the "Subscribe me" toggle in the ticket side panel to get
+notifications. If you have been mentioned in a ticket, you are automatically
+subscribed. Switch the toggle off to stop the notification. The avatars
+displayed show you who has subscribed to the ticket and is therefore
+notified of updates.
 
 ## Користите макро
 
@@ -178,23 +178,24 @@ Zammad администратор га је искључио. Списак за�
   списак` или на основу шаблона коришћењем `Додај по шаблону` (уколико не
   видите дугме за шаблон, не постоје).
 - Уређивање постојећег списка:
-  - Rename it by clicking on the title or using the `︙` menu in the sidebar
-      header.
-  - Add checklist items by clicking the `+` button.
-  - Change the text of the checklist items, either by just clicking on it
-      or using the `︙` menu next to the item.
-  - `Reorder` the items by clicking this button and drag & drop the items.
-- Delete the complete checklist by using the `︙` menu in the sidebar header.
+  - Промените назив кликом на наслов или коришћењем падајућег менија `︙` у
+    заглављу траке.
+  - Додајте задатке на списак кликом на дугме `+` .
+  - Промените текст задатка, или кликом на њега или коришћењем падајућег
+    менија `︙` поред ставке.
+  - Кликом на дугме `Измени редослед` можете превући и пустити ставке за
+    жељени распоред.
+- Обришите комплетан списак задатака коришћењем падајућег менија `︙` у
+  заглављу траке.
 
 Постоје две функције које нису директно видљиве:
 
-- Можете рефернцирати друге тикете на списку коришћењем њиховог прикључка и
-  броја у тексту задатка (нпр. `Ticket#123456`). Ове ставке се не могу ручно
-  означити, већ ће одражавати стање референцираног тикета.
+- You can refer to other tickets as a checklist item by using its hook and
+  number in the item text (e.g.  `Ticket#123456`). Such items can't be
+  checked manually, they reflect the state of the referred ticket.
   ::: tip
-  Нађите прикључак тикета са бројем одласком у жељени тикет и или
-  кликом на дугме за копирање у заглављу или путем пречице на тастатури [[.]].
-  Онда га можете налепити у текст новог задатка.
+  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use
+  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad врши аутоматску проверу да ли су сви задаци са списка
   обављени. Провера се врши приликом затварања тикета. Уколико нису сви
@@ -213,9 +214,9 @@ Zammad администратор га је искључио. Списак за�
 
 **Како?**
 
-У екрану отварања тикета, пронаћи ћете дугме `Примени шаблон ^` у подножју,
-уколико су доступни шаблони. Одаберите шаблон који желите и примените жељене
-измене.
+In the ticket create screen, you can find an `Apply Template ^` button in
+the footer bar, if a template is available.  Select the template you want to
+apply and apply changes if desired.
 
 ## Заједнички нацрти
 
@@ -274,13 +275,40 @@ QA процес, уместо додавања интерног чланка. У
 
 ## Масовне радње
 
-TODO након имплементације масовне радње
+![Screenshot shows the bulk action
+flyout](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
 
 **Зашто?**
 
+If you have to apply the same changes for many ticket, you can save time!
+
 **Како?**
 
-Путем превлачења одабраних тикета
+There are 2 _places_ where you can perform bulk actions:
+
+- Detail search page
+- Прегледи
+
+Assuming you are in the overviews or in the detail search page, you can bulk
+edit tickets in 2 _ways_:
+
+- Use the **Bulk Action** button in the top right corner and change/add
+  attributes by using the fields in the flyout
+- Drag the tickets with the mouse to invoke the bulk action overlay and drop
+  them on the desired action
+
+To bulk edit tickets in either way, you have to select them before. Do so by
+clicking the checkbox on the left side of each row in the ticket
+table. Selected tickets are highlighted next to the checkbox.
+
+The available changes you can apply to tickets are:
+
+- Set group
+- Set owner
+- Set state
+- Set priority
+- Add a note
+- Execute a macro
 
 ## Спајање тикета
 
@@ -319,9 +347,9 @@ TODO након имплементације масовне радње
 
 **Зашто?**
 
-Уколико имате тикет са више од једног проблема, можда ћете хтети да га
-разделите на два или више различитих ткета. На пример до овога може доћи ако
-клијент има техничко питање и жели да пошаље поруџбину.
+If you have a ticket which is about more than one issue, you might want to
+split it in two or more separate tickets.  For example this might be the
+case if a customer has a technical question and wants to place an order.
 
 **Како?**
 
@@ -339,9 +367,9 @@ TODO након имплементације масовне радње
 
 **Зашто?**
 
-Када се појаве тикети о сродним проблемима, могу бити међусобно повезани
-ради лакшег референцирања. [Спојени](#merge-tickets) и
-[раздељени](#split-ticket) тикети ће бити аутоматски повезани.
+When tickets about related issues arise, they can be linked to each other
+for easier reference.  [Merged](#merge-tickets) and [split](#split-ticket)
+tickets are automatically linked.
 
 **Како?**
 

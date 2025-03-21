@@ -1,4 +1,4 @@
-describe('usage advanced features', () => {
+describe('search screenshots', () => {
   it('search', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/1')
@@ -12,6 +12,10 @@ describe('usage advanced features', () => {
         })
       })
     })
+  })
+
+  it('detailed search', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/search/supp?entity=Ticket')
     cy.get('[id="group_id-header"]').click()
     cy.wait(300) //transition

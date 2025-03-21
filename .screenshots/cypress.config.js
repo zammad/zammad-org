@@ -30,6 +30,9 @@ module.exports = defineConfig({
 
           // Render scrollbars only as overlays.
           launchOptions.args.push('--enable-features=OverlayScrollbar')
+
+          // Disable spellcheck in input fields.
+          launchOptions.preferences.default['browser.enable_spellchecking'] = false
         }
 
         if (browser.name === 'electron' && browser.isHeadless) {
@@ -38,6 +41,9 @@ module.exports = defineConfig({
           // there is currently no known way to automatically scale this down!
           launchOptions.preferences.width = 1920
           launchOptions.preferences.height = 1080
+
+          // Disable spellcheck in input fields.
+          launchOptions.preferences.spellcheck = false
         }
 
         if (browser.name === 'firefox' && browser.isHeadless) {
@@ -45,6 +51,9 @@ module.exports = defineConfig({
           // so fullPage screenshot size is 1920x1081
           launchOptions.args.push('--width=1920')
           launchOptions.args.push('--height=1081')
+
+          // Disable spellcheck in input fields.
+          launchOptions.preferences['layout.spellcheckDefault'] = 0
         }
 
         return launchOptions
