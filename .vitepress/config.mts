@@ -58,6 +58,12 @@ export default defineConfig(
               new URL('./theme/VPFooter.vue', import.meta.url)
             )
           },
+          {
+            find: /^.*\/VPSidebarItem\.vue$/,
+            replacement: fileURLToPath(
+              new URL('./theme/VPSidebarItem.vue', import.meta.url)
+            )
+          },
         ],
       },
     },
