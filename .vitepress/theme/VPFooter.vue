@@ -1,10 +1,12 @@
 <script setup lang="ts">
+/* zammad-org:START */
+// import { useData } from '../composables/data'
+// import { useSidebar } from '../composables/sidebar'
 import { useData } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
-import VPMenuGroup from 'vitepress/dist/client/theme-default/components/VPMenuGroup.vue'
-import VPMenuLink from 'vitepress/dist/client/theme-default/components/VPMenuLink.vue'
 import VPNavBarMenuLink from 'vitepress/dist/client/theme-default/components/VPNavBarMenuLink.vue'
 import VPNavBarMenuGroup from 'vitepress/dist/client/theme-default/components/VPNavBarMenuGroup.vue'
+/* zammad-org:END */
 
 const { theme, frontmatter } = useData()
 const { hasSidebar } = useSidebar()
@@ -13,7 +15,7 @@ const { hasSidebar } = useSidebar()
 <template>
   <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
-      <!-- zammad-org START -->
+      <!-- zammad-org:START -->
       <nav
         v-if="theme.footer.items?.length"
         aria-labelledby="footer-nav-aria-label"
@@ -32,7 +34,7 @@ const { hasSidebar } = useSidebar()
           <VPNavBarMenuGroup v-else :item="item" />
         </template>
       </nav>
-      <!-- zammad-org END -->
+      <!-- zammad-org:END -->
       <p v-if="theme.footer.message" class="message" v-html="theme.footer.message"></p>
       <p v-if="theme.footer.copyright" class="copyright" v-html="theme.footer.copyright"></p>
     </div>
