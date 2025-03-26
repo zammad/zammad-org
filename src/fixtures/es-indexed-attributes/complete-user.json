@@ -1,0 +1,182 @@
+{
+  "country": "",
+  "note": "",
+  "firstname": "Hannah",
+  "city": "",
+  "created_at": "2025-03-21T10:35:19.771Z",
+  "login": "hannah@fastlane.inc",
+  "role_ids": [
+    1,
+    2
+  ],
+  "updated_at": "2025-03-21T10:35:26.524Z",
+  "web": "",
+  "street": "",
+  "permissions": [
+    "user_preferences.beta_ui_switch",
+    "admin",
+    "admin.user",
+    "admin.group",
+    "admin.role",
+    "admin.organization",
+    "admin.overview",
+    "admin.text_module",
+    "admin.macro",
+    "admin.template",
+    "admin.tag",
+    "admin.calendar",
+    "admin.sla",
+    "admin.trigger",
+    "admin.public_links",
+    "admin.webhook",
+    "admin.scheduler",
+    "admin.report_profile",
+    "admin.time_accounting",
+    "admin.knowledge_base",
+    "admin.channel_web",
+    "admin.channel_formular",
+    "admin.channel_email",
+    "admin.channel_sms",
+    "admin.channel_chat",
+    "admin.channel_google",
+    "admin.channel_microsoft365",
+    "admin.channel_microsoft_graph",
+    "admin.channel_twitter",
+    "admin.channel_facebook",
+    "admin.channel_telegram",
+    "admin.channel_whatsapp",
+    "admin.branding",
+    "admin.system",
+    "admin.security",
+    "admin.ticket",
+    "admin.ticket_auto_assignment",
+    "admin.ticket_duplicate_detection",
+    "admin.integration",
+    "admin.api",
+    "admin.object",
+    "admin.ticket_state",
+    "admin.ticket_priority",
+    "admin.core_workflow",
+    "admin.translation",
+    "admin.data_privacy",
+    "admin.maintenance",
+    "admin.monitoring",
+    "admin.package",
+    "admin.session",
+    "admin.system_report",
+    "admin.checklist",
+    "chat.agent",
+    "cti.agent",
+    "knowledge_base.editor",
+    "knowledge_base.reader",
+    "report",
+    "ticket.agent",
+    "user_preferences",
+    "user_preferences.appearance",
+    "user_preferences.language",
+    "user_preferences.avatar",
+    "user_preferences.out_of_office",
+    "user_preferences.password",
+    "user_preferences.two_factor_authentication",
+    "user_preferences.device",
+    "user_preferences.access_token",
+    "user_preferences.linked_accounts",
+    "user_preferences.notifications",
+    "user_preferences.overview_sorting",
+    "user_preferences.calendar"
+  ],
+  "id": 10,
+  "fax": "",
+  "department": null,
+  "vip": false,
+  "email": "hannah@fastlane.inc",
+  "out_of_office": false,
+  "out_of_office_start_at": null,
+  "zip": "",
+  "preferences": {
+    "keyboard_shortcuts_clues": true,
+    "notification_config": {
+      "matrix": {
+        "reminder_reached": {
+          "criteria": {
+            "subscribed": false,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": false
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "escalation": {
+          "criteria": {
+            "subscribed": false,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": false
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "create": {
+          "criteria": {
+            "subscribed": true,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": true
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "update": {
+          "criteria": {
+            "subscribed": true,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": true
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        }
+      }
+    },
+    "intro": true,
+    "theme": "dark"
+  },
+  "address": null,
+  "last_login": null,
+  "mobile": "",
+  "verified": false,
+  "active": true,
+  "organization_ids": [],
+  "lastname": "Taylor",
+  "out_of_office_end_at": null,
+  "out_of_office_replacement_id": null,
+  "phone": "",
+  "organization_id": 2,
+  "organization": {
+    "shared": true,
+    "note": "IT hardware and custom PC builds",
+    "domain_assignment": false,
+    "updated_at": "2025-03-21T10:35:18.317Z",
+    "domain": "",
+    "name": "Fast Lane Hardware",
+    "active": true,
+    "created_at": "2025-03-21T10:35:18.317Z",
+    "updated_by_id": 1,
+    "id": 2,
+    "created_by_id": 1,
+    "vip": false
+  },
+  "organizations": [],
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "fullname": "Hannah Taylor"
+}

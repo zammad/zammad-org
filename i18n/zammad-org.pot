@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-21 09:28+0100\n"
+"POT-Creation-Date: 2025-03-26 11:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5606,6 +5606,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/get-started/installation/docker.md:128
+#: src/en/reference/es-indexed-attributes.md:30
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
@@ -9225,6 +9226,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:8
+#: src/en/reference/es-indexed-attributes.md:25
 #: src/en/reference/rest-api/intro.md:158
 #: src/en/reference/rest-api/knowledgebase.md:19
 #, markdown-text, no-wrap
@@ -10402,842 +10404,1524 @@ msgid ""
 "https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 msgstr ""
 
+#. type: Yaml Front Matter Array Element: outline
+#: src/en/reference/es-indexed-attributes.md:1
+#, no-wrap
+msgid "2"
+msgstr ""
+
 #. type: Title #
 #: src/en/reference/es-indexed-attributes.md:1
-#: src/en/reference/es-indexed-attributes.md:6
+#: src/en/reference/es-indexed-attributes.md:9
 #, markdown-text, no-wrap
 msgid "Elasticsearch Indexed Attributes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:12
+#: src/en/reference/es-indexed-attributes.md:13
 #, markdown-text
 msgid ""
-"You can find a comprehensive list of all default object attributes indexed "
-"by Elasticsearch below. In other words, if you wish to find a ticket, "
-"article, or user via the Zammad search box, Elasticsearch can match on any "
-"(or all) of the fields below."
+"You can find a list of the main object attributes indexed by Elasticsearch "
+"(ES) below. In other words, if you wish to find a ticket, article, or user "
+"via the Zammad search box, ES can search in any of the fields below."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/es-indexed-attributes.md:13
+#: src/en/reference/es-indexed-attributes.md:14
 #, no-wrap
 msgid ""
 "\n"
-"- <Badge type=\"info\" text=\"SLA\"/>: Attributes marked as SLA are only set "
-"if\n"
-"  the ticket is affected by SLA calculation. Please note that some "
-"attributes\n"
-"  may not be set if specific conditions are not met.\n"
+"- This page lists Zammad's default object attributes which are indexed by "
+"ES. There are some more ES indexes, mainly\n"
+"  about objects in the admin interface of Zammad. They are out of scope of "
+"this documentation.\n"
+"- Attributes marked as SLA (<Badge type=\"info\" text=\"SLA\"/>) are only "
+"set if the ticket is affected by SLA calculation.\n"
+"  Please note that some attributes may not be set if specific conditions are "
+"not met.\n"
 "- Also note that some attributes may be reset to `null` if no longer "
 "applicable.\n"
-"- `note` attribute: Note attributes usually are empty if not specified via "
-"console or API.\n"
-"- Timestamps: All timestamps provided by Zammad are UTC by default. This "
-"also\n"
-"  applies to times provided by Elasticsearch\n"
+"- All timestamps provided by Zammad are UTC by default. This also applies to "
+"times provided by ES.\n"
 "\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:26
+#: src/en/reference/es-indexed-attributes.md:29
 #, markdown-text
 msgid ""
-"The attributes, example values and description below are constructed like "
-"that:"
+"You can find details about each object attribute in the next section. In "
+"this section, you can get a quick overview about the most important objects "
+"and how they look as complete JSON output."
 msgstr ""
 
-#. type: Plain text
+#. type: Fenced div block (tabs)
 #: src/en/reference/es-indexed-attributes.md:30
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
-"`attribute`\n"
-":   - `1`, `null`\n"
-"    - This is the description of the attribute, if available.\n"
+"\n"
+"=== Ticket\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete ticket structure <Badge type="danger" text="Huge content ahead!"/>)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/complete-ticket.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete ticket structure <Badge type="danger" text="Huge content ahead!"/>)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"=== Article\n"
+"\n"
+"The following structure is already included in the ticket index (see first "
+"tab) and added here separately for\n"
+"overview reasons.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete article structure)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/complete-article.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete article structure)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"=== User\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete user structure)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/complete-user.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete user structure)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"=== Organization\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|details Show complete organization structure)
+#: src/en/reference/es-indexed-attributes.md:30
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/complete-organization.json\n"
+"\n"
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:31
+#: src/en/reference/es-indexed-attributes.md:69
 #: src/en/reference/rest-api/ticket.md:1 src/en/reference/rest-api/ticket.md:6
 #, markdown-text, no-wrap
 msgid "Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:34
-#: src/en/reference/es-indexed-attributes.md:390
+#: src/en/reference/es-indexed-attributes.md:72
+#: src/en/reference/es-indexed-attributes.md:591
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_ticket`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:38
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:73
 #, markdown-text, no-wrap
-msgid ""
-"`article`\n"
-":   - Array with all articles belonging to the ticket\n"
-"    - See [article section](#article) for more details.\n"
+msgid "`article`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:42
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:76
+#, markdown-text
 msgid ""
-"`article_count`\n"
-":   - `1`\n"
-"    - Number of articles within the ticket\n"
+"Array with all articles belonging to the ticket. See [article "
+"section](#article-1) for details."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:77
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/article.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:83
+#, markdown-text, no-wrap
+msgid "`article_count`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:48
-#, markdown-text, no-wrap
-msgid ""
-"`checklist`\n"
-":   - Contains these attributes:\n"
-"      - name: `null`, `Checklist title`;\n"
-"      - items: `(array)`\n"
-"    - Items array contains the text of the items\n"
+#: src/en/reference/es-indexed-attributes.md:86
+#, markdown-text
+msgid "Number of articles within the ticket."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:52
-#, markdown-text, no-wrap
-msgid ""
-"`close_at`\n"
-":   - `null`, `2021-03-03T14:50:20.673Z`\n"
-"    - First close time, set once\n"
+#: src/en/reference/es-indexed-attributes.md:88
+#: src/en/reference/es-indexed-attributes.md:227
+#: src/en/reference/es-indexed-attributes.md:437
+#: src/en/reference/es-indexed-attributes.md:485
+#: src/en/reference/es-indexed-attributes.md:507
+#: src/en/reference/es-indexed-attributes.md:587
+#: src/en/reference/es-indexed-attributes.md:714
+#: src/en/reference/es-indexed-attributes.md:764
+#: src/en/reference/es-indexed-attributes.md:972
+#: src/en/reference/es-indexed-attributes.md:990
+#: src/en/reference/es-indexed-attributes.md:1041
+#: src/en/reference/es-indexed-attributes.md:1075
+#: src/en/reference/es-indexed-attributes.md:1109
+#: src/en/reference/es-indexed-attributes.md:1137
+#: src/en/reference/es-indexed-attributes.md:1303
+#: src/en/reference/es-indexed-attributes.md:1321
+#, markdown-text
+msgid "Example: `1`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:56
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:89
 #, markdown-text, no-wrap
-msgid ""
-"`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `239`, `-5`\n"
-"    - Depends on close_in_min and tells how many minutes the ticket was "
-"closed relative to SLAs solution time.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:60
-#, markdown-text, no-wrap
-msgid ""
-"`close_escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `2021-03-03T15:50:20.673Z`\n"
-"    - Time stamp when the ticket would escalate in case solution time is "
-"violated.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:64
-#, markdown-text, no-wrap
-msgid ""
-"`close_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `11`\n"
-"    - Value in minutes for how long the ticket was open based on business "
-"hours.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:75
-#, markdown-text, no-wrap
-msgid ""
-"`create_article_sender`\n"
-":   - Contains these attributes:\n"
-"      - note: `null`\n"
-"      - updated_at: `2021-03-03T14:50:20.812Z`\n"
-"      - name: `Customer`\n"
-"      - created_at: `2021-03-03T14:50:20.812Z`\n"
-"      - updated_by_id: `1`\n"
-"      - id: `2`\n"
-"      - created_by_id: `1`\n"
-"    - Sender of the article (System, Agent, Customer)\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:79
-#, markdown-text, no-wrap
-msgid ""
-"`create_article_sender_id`\n"
-":   - `1`, `2`\n"
-"    - ID of the user that created the article.\n"
+msgid "`checklist`"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:92
-#, markdown-text, no-wrap
+#, markdown-text
+msgid "Complete checklist structure and elements."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:93
+#, no-wrap
 msgid ""
-"`create_article_type`\n"
-":   - Contains these attributes:\n"
-"      - note: `null`\n"
-"      - updated_at: `2021-03-03T14:50:20.812Z`\n"
-"      - name: `phone`, `email`, `web`\n"
-"      - active: `true`\n"
-"      - created_at: `2021-03-03T14:50:20.812Z`\n"
-"      - updated_by_id: `1`\n"
-"      - id: `5`\n"
-"      - created_by_id: `1`\n"
-"      - communication: `true`, `false`\n"
-"    - Information of first article type and nature\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/checklist.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:99
+#, markdown-text, no-wrap
+msgid "`close_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:96
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:102
+#, markdown-text
 msgid ""
-"`create_article_type_id`\n"
-":   - `5`\n"
-"    - Type ID of first article\n"
+"First close time, set once. See `last_close_at` for the last close time (if "
+"ticket was reopened and closed again)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:100
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-24T16:17:27.210Z`\n"
-"    - Time stamp of ticket creation\n"
+#: src/en/reference/es-indexed-attributes.md:104
+#, markdown-text
+msgid "Example: `\"2025-03-20T06:48:46.438Z\"`"
 msgstr ""
 
-#. type: Plain text
+#. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:105
 #, markdown-text, no-wrap
-msgid ""
-"`created_by`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete Payload of user that created the ticket.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+msgid "`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:109
+#: src/en/reference/es-indexed-attributes.md:108
 #, markdown-text, no-wrap
 msgid ""
-"`created_by_id`\n"
-":   - `3`\n"
-"    - User ID that created the ticket.\n"
+"<!-- markdownlint-disable-next-line MD051 -->\n"
+"Depends on [close_in_min](#close_in_min) and tells how many minutes the "
+"ticket was closed relative to SLAs solution time.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:110
+#, markdown-text
+msgid "Examples: `239`, `-5`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:111
+#, markdown-text, no-wrap
+msgid "`close_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:114
-#, markdown-text, no-wrap
-msgid ""
-"`customer`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete payload of the customer that created the ticket.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+#, markdown-text
+msgid "Timestamp when the ticket would escalate in case solution time is violated."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:118
+#: src/en/reference/es-indexed-attributes.md:116
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-03T15:50:20.673Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:117
 #, markdown-text, no-wrap
-msgid ""
-"`customer_id`\n"
-":   - `8`\n"
-"    - Customer User ID\n"
+msgid "`close_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:125
-#, markdown-text, no-wrap
-msgid ""
-"`escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `2021-03-24T16:28:38.535Z`\n"
-"    - Time stamp of the next applicable escalation. One of the following "
-"attributes:\n"
-"      - `close_escalation_at`\n"
-"      - `first_response_escalation_at`\n"
-"      - `update_escalation_at`\n"
+#: src/en/reference/es-indexed-attributes.md:120
+#, markdown-text
+msgid "Value in minutes for how long the ticket was open based on business hours."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:129
+#: src/en/reference/es-indexed-attributes.md:122
+#: src/en/reference/es-indexed-attributes.md:211
+#, markdown-text
+msgid "Examples: `null`, `11`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:123
 #, markdown-text, no-wrap
-msgid ""
-"`first_response_at` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Time stamp of the first communication type reaction to the customer.\n"
+msgid "`create_article_sender`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:134
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:126
+#, markdown-text
+msgid "Sender of the article (System, Agent, Customer)"
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:127
+#, no-wrap
 msgid ""
-"`first_response_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `10`, `-6`\n"
-"    - Depends on `first_response_in_min` and tells how many minutes the "
-"tickets first\n"
-"      response took relative to the first response time of your SLA.\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/create_article_sender.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:133
+#, markdown-text, no-wrap
+msgid "`create_article_sender_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:136
+#, markdown-text
+msgid "ID of the user that created the article."
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:138
+#, markdown-text
+msgid "Examples: `1`, `2`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:139
 #, markdown-text, no-wrap
-msgid ""
-"`first_response_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `11`\n"
-"    - Value in minutes for how long the first response took based on the "
-"business hours.\n"
+msgid "`create_article_type`"
 msgstr ""
 
 #. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:142
+#, markdown-text
+msgid "Information of first article of a ticket."
+msgstr ""
+
+#. type: Fenced div block (details Example)
 #: src/en/reference/es-indexed-attributes.md:143
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
-"`group`\n"
-":   - \\#\\{group object\\}\n"
-"    - Complete payload of the current tickets group.\n"
-"      Have a look at the [group section](#group) for more information.\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/create_article_type.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:149
+#, markdown-text, no-wrap
+msgid "`create_article_type_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:147
-#, markdown-text, no-wrap
-msgid ""
-"`group_id`\n"
-":   - `1`\n"
-"    - ID of the current group\n"
+#: src/en/reference/es-indexed-attributes.md:152
+#, markdown-text
+msgid "ID of the type of the first article."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:151
-#, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `1`, `111`\n"
-"    - ID of the Ticket\n"
+#: src/en/reference/es-indexed-attributes.md:154
+#, markdown-text
+msgid "Example: `5`"
 msgstr ""
 
-#. type: Plain text
+#. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:155
+#: src/en/reference/es-indexed-attributes.md:426
+#: src/en/reference/es-indexed-attributes.md:496
+#: src/en/reference/es-indexed-attributes.md:613
+#: src/en/reference/es-indexed-attributes.md:753
+#: src/en/reference/es-indexed-attributes.md:951
+#: src/en/reference/es-indexed-attributes.md:1064
+#: src/en/reference/es-indexed-attributes.md:1166
+#: src/en/reference/es-indexed-attributes.md:1304
 #, markdown-text, no-wrap
-msgid ""
-"`last_close_at`\n"
-":   - `null`, `2021-03-03T14:50:20.673Z`\n"
-"    - Last close time, set on each closing of ticket.\n"
+msgid "`created_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:159
+#: src/en/reference/es-indexed-attributes.md:158
+#, markdown-text
+msgid "Timestamp of ticket creation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:160
+#, markdown-text
+msgid "Example: `\"2025-02-24T16:17:27.210Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:161
+#: src/en/reference/es-indexed-attributes.md:957
 #, markdown-text, no-wrap
-msgid ""
-"`last_contact_agent_at`\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Time stamp of last communication type contact of any agent.\n"
+msgid "`created_by`"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:164
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"`last_contact_at`\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Time stamp of last communication type contact. Depends on "
-"`last_contact_agent_at`,\n"
-"      `last_contact_customer_at` and \"Ticket Last Contact Behavior\" "
-"setting.\n"
+"Details of the user who created the ticket. Have a look at the [user "
+"section](#user) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:165
+#: src/en/reference/es-indexed-attributes.md:961
+#: src/en/reference/es-indexed-attributes.md:1382
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/created_by.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:171
+#: src/en/reference/es-indexed-attributes.md:432
+#: src/en/reference/es-indexed-attributes.md:502
+#: src/en/reference/es-indexed-attributes.md:619
+#: src/en/reference/es-indexed-attributes.md:759
+#: src/en/reference/es-indexed-attributes.md:967
+#: src/en/reference/es-indexed-attributes.md:1070
+#, markdown-text, no-wrap
+msgid "`created_by_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:168
-#, markdown-text, no-wrap
-msgid ""
-"`last_contact_customer_at`\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Time stamp of last communication type contact of customer.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:172
-#, markdown-text, no-wrap
-msgid ""
-"`mention_user_ids`\n"
-":   - `[3, 5]`\n"
-"    - Array with mentioned or subscribed users IDs.\n"
+#: src/en/reference/es-indexed-attributes.md:174
+#, markdown-text
+msgid "ID of user who created the ticket."
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:176
+#: src/en/reference/es-indexed-attributes.md:449
+#: src/en/reference/es-indexed-attributes.md:841
+#: src/en/reference/es-indexed-attributes.md:916
+#: src/en/reference/es-indexed-attributes.md:1091
+#: src/en/reference/es-indexed-attributes.md:1149
+#: src/en/reference/es-indexed-attributes.md:1392
+#, markdown-text
+msgid "Example: `3`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:177
 #, markdown-text, no-wrap
-msgid ""
-"`note`\n"
-":   - `null`\n"
-"    - Note of ticket, only set via console or API.\n"
+msgid "`customer`"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:180
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"`number`\n"
-":   - `1010138`, `202006231010138`\n"
-"    - Ticket number\n"
+"Details of the customer of the ticket. Have a look at the [user "
+"section](#user) for more information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:181
+#, markdown-text, no-wrap
+msgid "`customer_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:185
-#, markdown-text, no-wrap
-msgid ""
-"`organization`\n"
-":   - `null`, \\#\\{organization object\\}\n"
-"    - Complete payload of user that owns the ticket.\n"
-"      Have a look at the [organization section](#organization) for more "
-"information.\n"
+#: src/en/reference/es-indexed-attributes.md:184
+#, markdown-text
+msgid "ID of customer who created the ticket."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:189
+#: src/en/reference/es-indexed-attributes.md:186
+#: src/en/reference/es-indexed-attributes.md:794
+#: src/en/reference/es-indexed-attributes.md:1225
+#, markdown-text
+msgid "Example: `8`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:187
 #, markdown-text, no-wrap
-msgid ""
-"`organization_id`\n"
-":   - `null`, `2`\n"
-"    - ID of the customers organization\n"
+msgid "`escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:194
+#: src/en/reference/es-indexed-attributes.md:190
+#, markdown-text
+msgid "Timestamp of the next applicable escalation, independent of escalation type."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:192
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-24T16:28:38.535Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:193
 #, markdown-text, no-wrap
-msgid ""
-"`owner`\n"
-":   - `null`, \\#\\{user object\\}\n"
-"    - Complete payload of user that owns the ticket.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+msgid "`first_response_at` <Badge type=\"info\" text=\"SLA\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:196
+#, markdown-text
+msgid "Timestamp of the first response to the customer (communication type)."
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:198
+#: src/en/reference/es-indexed-attributes.md:245
+#: src/en/reference/es-indexed-attributes.md:251
+#: src/en/reference/es-indexed-attributes.md:257
+#: src/en/reference/es-indexed-attributes.md:381
+#: src/en/reference/es-indexed-attributes.md:387
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-24T16:28:38.303Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:199
 #, markdown-text, no-wrap
-msgid ""
-"`owner_id`\n"
-":   - `null`, `3`\n"
-"    - User ID of the ticket owner\n"
+msgid "`first_response_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:202
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:203
+#, markdown-text
 msgid ""
-"`pending_time`\n"
-":   - `null`, `2021-03-24T17:44:06.912Z`\n"
-"    - Depends on pending states and time stamp for pending time.\n"
+"Depends on `first_response_in_min` and tells how many minutes the first "
+"response took relative to the first response time of your SLA."
 msgstr ""
 
 #. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:205
+#, markdown-text
+msgid "Examples: `null`, `10`, `-6`"
+msgstr ""
+
+#. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:206
 #, markdown-text, no-wrap
-msgid ""
-"`preferences`\n"
-":   - n/a, special information for internal functions\n"
-"    - May not be available in your system, contains information for internal "
-"system functions.\n"
+msgid "`first_response_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:211
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:209
+#, markdown-text
 msgid ""
-"`priority`\n"
-":   - \\#\\{priority object\\}\n"
-"    - Complete payload of priority of ticket.\n"
-"      Have a look at the [priority section](#ticket-priority) for more "
-"information.\n"
+"Value in minutes about how long the first response took based on the "
+"business hours."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:212
+#, markdown-text, no-wrap
+msgid "`group`"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:215
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"`priority_id`\n"
-":   - `2`\n"
-"    - Priority ID of the ticket.\n"
+"Details of the group of the ticket. Have a look at the [group "
+"section](#group-1) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:216
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/group.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:222
+#, markdown-text, no-wrap
+msgid "`group_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:220
-#, markdown-text, no-wrap
-msgid ""
-"`state`\n"
-":   - \\#\\{state object\\}\n"
-"    - Complete payload of current ticket state.\n"
-"      Have a look at the [state section](#ticket-state) for more "
-"information.\n"
+#: src/en/reference/es-indexed-attributes.md:225
+#, markdown-text
+msgid "ID of the current group"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:224
-#, markdown-text, no-wrap
-msgid ""
-"`state_id`\n"
-":   - `1`, `4`\n"
-"    - ID of current ticket state\n"
-msgstr ""
-
-#. type: Plain text
+#. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:228
+#: src/en/reference/es-indexed-attributes.md:444
+#: src/en/reference/es-indexed-attributes.md:520
+#: src/en/reference/es-indexed-attributes.md:643
+#: src/en/reference/es-indexed-attributes.md:789
+#: src/en/reference/es-indexed-attributes.md:985
+#: src/en/reference/es-indexed-attributes.md:1104
+#: src/en/reference/es-indexed-attributes.md:1220
+#: src/en/reference/es-indexed-attributes.md:1316
 #, markdown-text, no-wrap
-msgid ""
-"`tags`\n"
-":   - `[\"order\", \"complaint\"]`\n"
-"    - Array with all attached tags.\n"
+msgid "`id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:232
-#, markdown-text, no-wrap
-msgid ""
-"`time_unit`\n"
-":   - `null`, `15`\n"
-"    - Accounted time units for ticket (total).\n"
+#: src/en/reference/es-indexed-attributes.md:231
+#, markdown-text
+msgid "ID of the Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:236
+#: src/en/reference/es-indexed-attributes.md:233
+#, markdown-text
+msgid "Examples: `1`, `111`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:234
 #, markdown-text, no-wrap
-msgid ""
-"`title`\n"
-":   - `Feedback Form`, `Need help`\n"
-"    - Title/subject of Ticket\n"
+msgid "`last_close_at`"
 msgstr ""
 
 #. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:237
+#, markdown-text
+msgid "Last close time, set on each closing of ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:239
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-03T14:50:20.673Z\"`"
+msgstr ""
+
+#. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:240
 #, markdown-text, no-wrap
-msgid ""
-"`type`\n"
-":   - `null`\n"
-"    - Ticket type (deprecated)\n"
+msgid "`last_contact_agent_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:244
+#: src/en/reference/es-indexed-attributes.md:243
+#, markdown-text
+msgid "Timestamp of last communication type contact of any agent."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:246
 #, markdown-text, no-wrap
-msgid ""
-"`update_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Depends on `update_in_min` and tells how many minutes the last ticket "
-"update took relatively to the update time setting.\n"
+msgid "`last_contact_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:248
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:249
+#, markdown-text
 msgid ""
-"`update_escalation_at` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `2021-03-24T16:28:38.303Z`\n"
-"    - Time stamp when the ticket would escalate in case update time is "
-"violated.\n"
+"Timestamp of last contact/article of type communication, independent of who "
+"created it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:252
+#, markdown-text, no-wrap
+msgid "`last_contact_customer_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:253
+#: src/en/reference/es-indexed-attributes.md:255
+#, markdown-text
+msgid "Timestamp of last contact/article of type communication from customer."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:258
 #, markdown-text, no-wrap
-msgid ""
-"`update_in_min` <Badge type=\"info\" text=\"SLA\"/>\n"
-":   - `null`, `5`, `-10`\n"
-"    - Value in minutes for how long the last ticket update took based on "
-"the\n"
-"    business hours and update time.\n"
+msgid "`mention_user_ids`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:257
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-24T16:28:38.303Z`\n"
-"    - Last ticket update\n"
+#: src/en/reference/es-indexed-attributes.md:261
+#, markdown-text
+msgid "Array with user IDs of mentioned or subscribed users."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:262
+#: src/en/reference/es-indexed-attributes.md:263
+#, markdown-text
+msgid "Examples: `[3, 5]`, `[]`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:264
+#: src/en/reference/es-indexed-attributes.md:456
+#: src/en/reference/es-indexed-attributes.md:554
+#: src/en/reference/es-indexed-attributes.md:819
+#: src/en/reference/es-indexed-attributes.md:1008
+#: src/en/reference/es-indexed-attributes.md:1116
 #, markdown-text, no-wrap
-msgid ""
-"`updated_by`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete payload of the user that updated the ticket.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+msgid "`note`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:266
+#: src/en/reference/es-indexed-attributes.md:267
+#, markdown-text
+msgid "Note of ticket, only set via console or API."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:269
+#: src/en/reference/es-indexed-attributes.md:654
+#: src/en/reference/es-indexed-attributes.md:666
+#: src/en/reference/es-indexed-attributes.md:672
+#: src/en/reference/es-indexed-attributes.md:684
+#: src/en/reference/es-indexed-attributes.md:1121
+#, markdown-text
+msgid "Example: `null`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:270
 #, markdown-text, no-wrap
+msgid "`number`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:273
+#, markdown-text
+msgid "Ticket number."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:275
+#, markdown-text
+msgid "Examples: `1010138`, `202006231010138`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:276
+#: src/en/reference/es-indexed-attributes.md:825
+#, markdown-text, no-wrap
+msgid "`organization`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:280
+#, markdown-text
 msgid ""
-"`updated_by_id`\n"
-":   - `1`, `3`\n"
-"    - User ID that updated the ticket.\n"
+"Details of the customer organization of the ticket. Have a look at the "
+"[organization section](#organization-2) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:281
+#: src/en/reference/es-indexed-attributes.md:830
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/organization.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:287
+#: src/en/reference/es-indexed-attributes.md:836
+#, markdown-text, no-wrap
+msgid "`organization_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:290
+#, markdown-text
+msgid "ID of the customers organization of the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:292
+#, markdown-text
+msgid "Examples: `null`, `2`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:293
+#, markdown-text, no-wrap
+msgid "`owner`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:296
+#, markdown-text
+msgid ""
+"Details of the user who is owner of the ticket. Have a look at the [user "
+"section](#user) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:297
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/owner.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:303
+#, markdown-text, no-wrap
+msgid "`owner_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:306
+#, markdown-text
+msgid "User ID of the ticket owner."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:308
+#: src/en/reference/es-indexed-attributes.md:859
+#: src/en/reference/es-indexed-attributes.md:1377
+#, markdown-text
+msgid "Examples: `null`, `3`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:309
+#, markdown-text, no-wrap
+msgid "`pending_time`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:312
+#, markdown-text
+msgid ""
+"Timestamp of set pending time. Only if a pending state is set and "
+"independent of the pending state type."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:314
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-24T17:44:06.912Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:315
+#: src/en/reference/es-indexed-attributes.md:673
+#: src/en/reference/es-indexed-attributes.md:882
+#: src/en/reference/es-indexed-attributes.md:1232
+#: src/en/reference/es-indexed-attributes.md:1338
+#, markdown-text, no-wrap
+msgid "`preferences`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:319
+#, markdown-text
+msgid ""
+"Special information for internal functions. May not be available in your "
+"system, contains information for internal system functions."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:320
+#, markdown-text, no-wrap
+msgid "`priority`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:324
+#, markdown-text
+msgid ""
+"Details of the priority state of the ticket. Have a look at the [priority "
+"section](#ticket-priority) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:325
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/priority.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:331
+#, markdown-text, no-wrap
+msgid "`priority_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:334
+#, markdown-text
+msgid "Priority ID of the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:336
+#: src/en/reference/es-indexed-attributes.md:690
+#, markdown-text
+msgid "Example: `2`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:337
+#: src/en/reference/es-indexed-attributes.md:1254
+#: src/en/reference/es-indexed-attributes.md:1354
+#, markdown-text, no-wrap
+msgid "`state`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:340
+#, markdown-text
+msgid ""
+"Details of the state of the ticket. Have a look at the [state "
+"section](#ticket-state) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:341
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/state.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:347
+#, markdown-text, no-wrap
+msgid "`state_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:350
+#, markdown-text
+msgid "ID of current ticket state."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:352
+#, markdown-text
+msgid "Examples: `1`, `4`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:353
+#: src/en/reference/es-indexed-attributes.md:1360
+#, markdown-text, no-wrap
+msgid "`tags`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:356
+#, markdown-text
+msgid "Array with all tags attached to the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:358
+#, markdown-text
+msgid "Examples: `[\"order\", \"complaint\"]`, `[]`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:359
+#, markdown-text, no-wrap
+msgid "`time_unit`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:362
+#, markdown-text
+msgid "Accounted time units for ticket (total)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:364
+#, markdown-text
+msgid "Examples: `null`, `15`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:365
+#, markdown-text, no-wrap
+msgid "`title`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:368
+#, markdown-text
+msgid "Title/subject of ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:370
+#, markdown-text
+msgid "Examples: `Feedback Form`, `Need help`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:371
+#, markdown-text, no-wrap
+msgid "`type` <Badge type=\"warning\" text=\"deprecated\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:374
+#: src/en/reference/es-indexed-attributes.md:1315
+#, markdown-text
+msgid "Value: `null`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:375
+#, markdown-text, no-wrap
+msgid "`update_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:379
+#, markdown-text
+msgid ""
+"Depends on `update_in_min` and tells how many minutes the last ticket update "
+"took relative to the update time setting of the SLA."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:382
+#, markdown-text, no-wrap
+msgid "`update_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:385
+#, markdown-text
+msgid ""
+"Timestamp when the ticket would escalate in case the SLA update period is "
+"violated."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:388
+#, markdown-text, no-wrap
+msgid "`update_in_min` <Badge type=\"info\" text=\"SLA\"/>"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:391
+#, markdown-text
+msgid ""
+"Value in minutes for how long the last ticket update took based on the "
+"business hours and update time."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:393
+#, markdown-text
+msgid "Examples: `null`, `5`, `-10`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:394
+#: src/en/reference/es-indexed-attributes.md:474
+#: src/en/reference/es-indexed-attributes.md:576
+#: src/en/reference/es-indexed-attributes.md:715
+#: src/en/reference/es-indexed-attributes.md:905
+#: src/en/reference/es-indexed-attributes.md:1020
+#: src/en/reference/es-indexed-attributes.md:1138
+#: src/en/reference/es-indexed-attributes.md:1278
+#: src/en/reference/es-indexed-attributes.md:1366
+#, markdown-text, no-wrap
+msgid "`updated_at`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:397
+#, markdown-text
+msgid "Timestamp of last ticket update."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:399
+#, markdown-text
+msgid "Example: `\"2025-02-24T16:28:38.303Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:400
+#: src/en/reference/es-indexed-attributes.md:1026
+#, markdown-text, no-wrap
+msgid "`updated_by`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:403
+#, markdown-text
+msgid ""
+"Details of the user who updated the ticket. Have a look at the [user "
+"section](#user) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:404
+#: src/en/reference/es-indexed-attributes.md:1030
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/updated_by.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:410
+#: src/en/reference/es-indexed-attributes.md:480
+#: src/en/reference/es-indexed-attributes.md:582
+#: src/en/reference/es-indexed-attributes.md:721
+#: src/en/reference/es-indexed-attributes.md:911
+#: src/en/reference/es-indexed-attributes.md:1036
+#: src/en/reference/es-indexed-attributes.md:1144
+#: src/en/reference/es-indexed-attributes.md:1372
+#, markdown-text, no-wrap
+msgid "`updated_by_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:413
+#, markdown-text
+msgid "ID of user who updated the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:415
+#, markdown-text
+msgid "Examples: `1`, `3`"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:267
+#: src/en/reference/es-indexed-attributes.md:416
 #, markdown-text, no-wrap
 msgid "Ticket Priority"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:270
+#: src/en/reference/es-indexed-attributes.md:419
 #, markdown-text
 msgid ""
 "The following index contains below mentioned information: "
 "`*_ticket_priority`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:274
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:420
+#: src/en/reference/es-indexed-attributes.md:490
+#: src/en/reference/es-indexed-attributes.md:729
+#: src/en/reference/es-indexed-attributes.md:945
+#: src/en/reference/es-indexed-attributes.md:1052
 #, markdown-text, no-wrap
-msgid ""
-"`active`\n"
-":   - `true`, `false`\n"
-"    - Defines if the priority is active (available).\n"
+msgid "`active`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:278
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-03T14:50:20.724Z`\n"
-"    - Creation date of priority\n"
+#: src/en/reference/es-indexed-attributes.md:423
+#, markdown-text
+msgid "Defines if the priority is active or not."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:282
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `1`\n"
-"    - User that created priority\n"
+#: src/en/reference/es-indexed-attributes.md:425
+#: src/en/reference/es-indexed-attributes.md:495
+#: src/en/reference/es-indexed-attributes.md:734
+#: src/en/reference/es-indexed-attributes.md:950
+#: src/en/reference/es-indexed-attributes.md:1183
+#, markdown-text
+msgid "Values: `true`, `false`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:286
-#, markdown-text, no-wrap
-msgid ""
-"`default_create`\n"
-":   - `false`, `true`\n"
-"    - Defines if priority is default priority upon ticket creation.\n"
+#: src/en/reference/es-indexed-attributes.md:429
+#, markdown-text
+msgid "Timestamp of priority creation."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:290
-#, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `3`\n"
-"    - ID of priority\n"
+#: src/en/reference/es-indexed-attributes.md:431
+#: src/en/reference/es-indexed-attributes.md:479
+#, markdown-text
+msgid "Example: `\"2025-02-03T14:50:20.724Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:294
+#: src/en/reference/es-indexed-attributes.md:435
+#, markdown-text
+msgid "ID of the user who created the priority."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:438
+#: src/en/reference/es-indexed-attributes.md:508
 #, markdown-text, no-wrap
-msgid ""
-"`name`\n"
-":   - `3 high`\n"
-"    - Priority name\n"
+msgid "`default_create`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:298
-#, markdown-text, no-wrap
-msgid ""
-"`note`\n"
-":   - `null`\n"
-"    - Note for priority that has been set via console or API.\n"
+#: src/en/reference/es-indexed-attributes.md:441
+#, markdown-text
+msgid "Defines if the priority is the default priority for ticket creation or not."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:302
-#, markdown-text, no-wrap
-msgid ""
-"`ui_color`\n"
-":   - `null`, `high-priority`\n"
-"    - CSS class for tickets of priority.\n"
+#: src/en/reference/es-indexed-attributes.md:443
+#: src/en/reference/es-indexed-attributes.md:513
+#: src/en/reference/es-indexed-attributes.md:519
+#: src/en/reference/es-indexed-attributes.md:531
+#: src/en/reference/es-indexed-attributes.md:660
+#: src/en/reference/es-indexed-attributes.md:847
+#: src/en/reference/es-indexed-attributes.md:922
+#: src/en/reference/es-indexed-attributes.md:928
+#: src/en/reference/es-indexed-attributes.md:984
+#: src/en/reference/es-indexed-attributes.md:1019
+#: src/en/reference/es-indexed-attributes.md:1047
+#: src/en/reference/es-indexed-attributes.md:1057
+#: src/en/reference/es-indexed-attributes.md:1097
+#, markdown-text
+msgid "Values: `false`, `true`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:306
+#: src/en/reference/es-indexed-attributes.md:447
+#, markdown-text
+msgid "ID of the priority."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:450
+#: src/en/reference/es-indexed-attributes.md:532
+#: src/en/reference/es-indexed-attributes.md:1002
+#: src/en/reference/es-indexed-attributes.md:1110
+#: src/en/reference/es-indexed-attributes.md:1332
 #, markdown-text, no-wrap
-msgid ""
-"`ui_icon`\n"
-":   - `null`, `important`\n"
-"    - CSS class for ticket icons of priority.\n"
+msgid "`name`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:310
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-03T14:50:20.724Z`\n"
-"    - Date of last change\n"
+#: src/en/reference/es-indexed-attributes.md:453
+#, markdown-text
+msgid "Name of the priority."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:314
+#: src/en/reference/es-indexed-attributes.md:455
+#, markdown-text
+msgid "Example: `\"3 high\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:459
+#, markdown-text
+msgid "Note for priority that has been set via console or API."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:461
+#: src/en/reference/es-indexed-attributes.md:559
+#, markdown-text
+msgid "Example: `\"null\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:462
 #, markdown-text, no-wrap
-msgid ""
-"`updated_by_id`\n"
-":   - `1`\n"
-"    - User ID of user last updating the priority\n"
+msgid "`ui_color`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:465
+#, markdown-text
+msgid "CSS class for the highlight color for tickets with this priority."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:467
+#, markdown-text
+msgid "Examples: `\"null\"`, `\"high-priority\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:468
+#, markdown-text, no-wrap
+msgid "`ui_icon`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:471
+#, markdown-text
+msgid "CSS class for highlight icon for tickets with this priority."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:473
+#, markdown-text
+msgid "Examples: `\"null\"`, `\"important\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:477
+#, markdown-text
+msgid "Timestamp of last change."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:483
+#, markdown-text
+msgid "ID of the user who performed the last update."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:315
+#: src/en/reference/es-indexed-attributes.md:486
 #, markdown-text, no-wrap
 msgid "Ticket State"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:318
+#: src/en/reference/es-indexed-attributes.md:489
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_ticket_state`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:322
-#, markdown-text, no-wrap
-msgid ""
-"`active`\n"
-":   - `true`, `false`\n"
-"    - Defines if state is active (available)\n"
+#: src/en/reference/es-indexed-attributes.md:493
+#, markdown-text
+msgid "Defines if state is active (available) or not."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:326
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-03T14:50:20.694Z`\n"
-"    - Creation date\n"
+#: src/en/reference/es-indexed-attributes.md:499
+#, markdown-text
+msgid "Timestamp of the creation of the state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:330
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `1`\n"
-"    - User ID that created state\n"
+#: src/en/reference/es-indexed-attributes.md:501
+#: src/en/reference/es-indexed-attributes.md:581
+#, markdown-text
+msgid "Example: `\"2025-02-03T14:50:20.694Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:334
-#, markdown-text, no-wrap
-msgid ""
-"`default_create`\n"
-":   - `false`, `true`\n"
-"    - Defines if the state is the default state upon ticket creation.\n"
+#: src/en/reference/es-indexed-attributes.md:505
+#, markdown-text
+msgid "ID of user who created the state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:338
+#: src/en/reference/es-indexed-attributes.md:511
+#, markdown-text
+msgid "Defines if the state is the default state for ticket creation."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:514
 #, markdown-text, no-wrap
-msgid ""
-"`default_follow_up`\n"
-":   - `false`, `true`\n"
-"    - Defines if the state is the default follow up state on ticket follow "
-"ups.\n"
+msgid "`default_follow_up`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:342
-#, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `7`\n"
-"    - State ID\n"
+#: src/en/reference/es-indexed-attributes.md:517
+#, markdown-text
+msgid "Defines if the state is the default follow up state on ticket follow ups."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:346
-#, markdown-text, no-wrap
-msgid ""
-"`ignore_escalation`\n"
-":   - `false`, `true`\n"
-"    - Defines if SLA calculation is generally ignored for this state.\n"
+#: src/en/reference/es-indexed-attributes.md:523
+#, markdown-text
+msgid "ID of the state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:350
+#: src/en/reference/es-indexed-attributes.md:525
+#, markdown-text
+msgid "Example: `7`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:526
 #, markdown-text, no-wrap
-msgid ""
-"`name`\n"
-":   - `pending close`\n"
-"    - State name\n"
+msgid "`ignore_escalation`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:355
-#, markdown-text, no-wrap
-msgid ""
-"`next_state`\n"
-":   - n/a, \\#\\{state object\\}\n"
-"    - Contains all follow up state information if applicable, may not be\n"
-"    available depending on the state type\n"
+#: src/en/reference/es-indexed-attributes.md:529
+#, markdown-text
+msgid "Defines if SLA calculation is ignored for this state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:359
-#, markdown-text, no-wrap
-msgid ""
-"`next_state_id`\n"
-":   - `null`, `4`\n"
-"    - State ID of follow up state\n"
+#: src/en/reference/es-indexed-attributes.md:535
+#, markdown-text
+msgid "Name of the state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:363
+#: src/en/reference/es-indexed-attributes.md:537
+#, markdown-text
+msgid "Example: `\"pending close\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:538
 #, markdown-text, no-wrap
-msgid ""
-"`note`\n"
-":   - `null`\n"
-"    - Note that has been set via console or API.\n"
+msgid "`next_state`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:374
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:541
+#, markdown-text
 msgid ""
-"`state_type`\n"
-":   - Contains these attributes:\n"
-"       - created_at: `2021-03-03T14:50:20.582Z`\n"
-"       - created_by_id: `1`\n"
-"       - id: `4`\n"
-"       - name: `pending action`\n"
-"       - note: `null`\n"
-"       - updated_at: `2021-03-03T14:50:20.582Z`\n"
-"       - updated_by_id: `1`\n"
-"    - Contains all available information of the states type\n"
+"Contains all follow up state information if applicable, may not be available "
+"depending on the state type"
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:542
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/next_state.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:548
+#, markdown-text, no-wrap
+msgid "`next_state_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:378
-#, markdown-text, no-wrap
-msgid ""
-"`state_type_id`\n"
-":   - `4`\n"
-"    - ID of the state type\n"
+#: src/en/reference/es-indexed-attributes.md:551
+#, markdown-text
+msgid "ID of follow up state."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:382
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-03T14:50:20.694Z`\n"
-"    - Last update of state\n"
+#: src/en/reference/es-indexed-attributes.md:553
+#, markdown-text
+msgid "Examples: `null`, `4`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:386
+#: src/en/reference/es-indexed-attributes.md:557
+#, markdown-text
+msgid "Note that has been set via console or API."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:560
 #, markdown-text, no-wrap
+msgid "`state_type`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:563
+#, markdown-text
+msgid "Contains all available information of the states type"
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:564
+#, no-wrap
 msgid ""
-"`updated_by_id`\n"
-":   - `1`\n"
-"    - User ID that updated the state last\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/state_type.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:570
+#, markdown-text, no-wrap
+msgid "`state_type_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:573
+#, markdown-text
+msgid "ID of the state type."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:575
+#, markdown-text
+msgid "Example: `4`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:579
+#, markdown-text
+msgid "Timestamp of last update of the state."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:585
+#, markdown-text
+msgid "ID of user who performed the last update of the state."
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:387
+#: src/en/reference/es-indexed-attributes.md:588
 #: src/en/reference/rest-api/articles.md:1
 #: src/en/reference/rest-api/articles.md:6
 #, markdown-text, no-wrap
@@ -11245,520 +11929,826 @@ msgid "Article"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:393
+#: src/en/reference/es-indexed-attributes.md:594
 #, markdown-text
 msgid ""
 "Articles are part of the ticket index. To reduce complexity we decided to "
-"provide it in its own table."
+"provide it in its own section."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:595
+#, markdown-text, no-wrap
+msgid "`body`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:397
-#, markdown-text, no-wrap
-msgid ""
-"`body`\n"
-":   - `Hi,\\n\\nplease send me:\\n1 [...] \\nThank you\\n\\nJohn Doe`\n"
-"    - Article body in plain text\n"
+#: src/en/reference/es-indexed-attributes.md:598
+#, markdown-text
+msgid "Article body in plaintext."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:401
+#: src/en/reference/es-indexed-attributes.md:600
+#, markdown-text
+msgid "Example: `\"Hi,\\n\\nplease send me:\\n1 [...] \\nThank you\\n\\nJohn Doe\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:601
 #, markdown-text, no-wrap
-msgid ""
-"`cc`\n"
-":   - `null`, `alias@domain.tld`\n"
-"    - Email-Addresses set as CC (String)\n"
+msgid "`cc`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:405
-#, markdown-text, no-wrap
-msgid ""
-"`content_type`\n"
-":   - `text/html`\n"
-"    - Content type of article\n"
+#: src/en/reference/es-indexed-attributes.md:604
+#, markdown-text
+msgid "The email-addresses set as CC."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:409
+#: src/en/reference/es-indexed-attributes.md:606
+#, markdown-text
+msgid "Examples: `null`, `alias@domain.tld`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:607
+#: src/en/reference/rest-api/articles.md:13
 #, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-22T03:47:59.290Z`\n"
-"    - Time stamp of article creation\n"
+msgid "`content_type`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:413
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `10`\n"
-"    - User ID that created the article\n"
+#: src/en/reference/es-indexed-attributes.md:610
+#, markdown-text
+msgid "Content type of article."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:417
-#, markdown-text, no-wrap
-msgid ""
-"`detected_language`\n"
-":   - `en`, `de`\n"
-"    - Language code of detected language, may be empty\n"
+#: src/en/reference/es-indexed-attributes.md:612
+#, markdown-text
+msgid "Examples: `\"text/html\"`, `\"text/plain\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:421
-#, markdown-text, no-wrap
-msgid ""
-"`detected_language_name`\n"
-":   - `English`, `German`\n"
-"    - Language name of detected language, may be empty\n"
+#: src/en/reference/es-indexed-attributes.md:616
+#, markdown-text
+msgid "Timestamp of article creation."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:425
-#, markdown-text, no-wrap
-msgid ""
-"`from`\n"
-":   - `John Doe <john.doe@example.com>`\n"
-"    - From field of article creator\n"
+#: src/en/reference/es-indexed-attributes.md:618
+#, markdown-text
+msgid "Example: `\"2025-02-22T03:47:59.290Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:429
-#, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `16`\n"
-"    - Internal article ID\n"
+#: src/en/reference/es-indexed-attributes.md:622
+#, markdown-text
+msgid "ID of user who created the article."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:433
+#: src/en/reference/es-indexed-attributes.md:624
+#: src/en/reference/es-indexed-attributes.md:726
+#, markdown-text
+msgid "Example: `10`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:625
 #, markdown-text, no-wrap
-msgid ""
-"`in_reply_to`\n"
-":   - `null`\n"
-"    - In-Reply-To Header from emails if applicable\n"
+msgid "`detected_language`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:437
-#, markdown-text, no-wrap
-msgid ""
-"`internal`\n"
-":   - `false`, `true`\n"
-"    - Defines if article is internal\n"
+#: src/en/reference/es-indexed-attributes.md:628
+#, markdown-text
+msgid "Language code of detected language."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:441
+#: src/en/reference/es-indexed-attributes.md:630
+#, markdown-text
+msgid "Examples: `\"en\"`, `\"de\"`, `null`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:631
 #, markdown-text, no-wrap
-msgid ""
-"`message_id`\n"
-":   - `null`\n"
-"    - Message ID of Email if applicable\n"
+msgid "`detected_language_name`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:445
-#, markdown-text, no-wrap
-msgid ""
-"`origin_by_id`\n"
-":   - `null`\n"
-"    - User ID or original creator if created on behalf another user\n"
+#: src/en/reference/es-indexed-attributes.md:634
+#, markdown-text
+msgid "Language name of detected language."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:449
+#: src/en/reference/es-indexed-attributes.md:636
+#, markdown-text
+msgid "Examples: `\"English\"`, `\"German\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:637
+#: src/en/reference/es-indexed-attributes.md:1202
 #, markdown-text, no-wrap
-msgid ""
-"`preferences`\n"
-":   - `{}`\n"
-"    - Internal preferences, may be empty, mainly for delivery states\n"
+msgid "`from`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:453
-#, markdown-text, no-wrap
-msgid ""
-"`reply_to`\n"
-":   - `null`\n"
-"    - Contains reply to header if applicable\n"
+#: src/en/reference/es-indexed-attributes.md:640
+#, markdown-text
+msgid "Name (and email address) of article creator."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:457
+#: src/en/reference/es-indexed-attributes.md:642
 #, markdown-text, no-wrap
-msgid ""
-"`sender_id`\n"
-":   - `2`\n"
-"    - ID of sender type (Customer, System, Agent)\n"
+msgid "Examples: `\"Nicole Braun <nicole.braun@zammad.org>\"`, `\"John Doe\"`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:461
-#, markdown-text, no-wrap
-msgid ""
-"`subject`\n"
-":   - `My amazing subject`\n"
-"    - Article subject\n"
+#: src/en/reference/es-indexed-attributes.md:646
+#, markdown-text
+msgid "Internal ID of the article."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:465
+#: src/en/reference/es-indexed-attributes.md:648
+#, markdown-text
+msgid "Example: `16`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:649
 #, markdown-text, no-wrap
-msgid ""
-"`ticket_id`\n"
-":   - `9`\n"
-"    - Ticket ID the article belongs to\n"
+msgid "`in_reply_to`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:469
+#: src/en/reference/es-indexed-attributes.md:652
+#, markdown-text
+msgid "\"In-Reply-To\" header from email, if applicable."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:655
+#: src/en/reference/rest-api/articles.md:76
 #, markdown-text, no-wrap
-msgid ""
-"`to`\n"
-":   - `support@example.com`\n"
-"    - Email address from TO Header\n"
+msgid "`internal`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:473
+#: src/en/reference/es-indexed-attributes.md:658
+#, markdown-text
+msgid "Defines if article is internal or not."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:661
 #, markdown-text, no-wrap
-msgid ""
-"`type_id`\n"
-":   - `1`\n"
-"    - ID of articles Type (phone, email, web, …)\n"
+msgid "`message_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:477
+#: src/en/reference/es-indexed-attributes.md:664
+#, markdown-text
+msgid "Message ID of email, if applicable."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:667
 #, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-22T03:47:59.290Z`\n"
-"    - Last update\n"
+msgid "`origin_by_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:481
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:670
+#, markdown-text
 msgid ""
-"`updated_by_id`\n"
-":   - `10`\n"
-"    - User that updated article\n"
+"ID of user (or ID of original creator if created on behalf of another user) "
+"who created the article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:676
+#, markdown-text
+msgid "Internal preferences, may be empty."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:678
+#, markdown-text
+msgid "Example: `{}`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:679
+#, markdown-text, no-wrap
+msgid "`reply_to`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:682
+#, markdown-text
+msgid "Contains the \"Reply-To\" header, if applicable."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:685
+#, markdown-text, no-wrap
+msgid "`sender_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:688
+#, markdown-text
+msgid "ID of the user who sent/created the article."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:691
+#, markdown-text, no-wrap
+msgid "`subject`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:694
+#, markdown-text
+msgid "Subject of the article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:696
+#, markdown-text
+msgid "Example: `\"My amazing subject\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:697
+#, markdown-text, no-wrap
+msgid "`ticket_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:700
+#, markdown-text
+msgid "ID of the ticket, the article belongs to."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:702
+#, markdown-text
+msgid "Example: `9`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:703
+#: src/en/reference/es-indexed-attributes.md:1260
+#, markdown-text, no-wrap
+msgid "`to`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:706
+#, markdown-text
+msgid "Email address of \"To\" header or group which was set with this article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:708
+#, markdown-text
+msgid "Examples: `support@example.com`,`\"Support\"`, `null`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:709
+#, markdown-text, no-wrap
+msgid "`type_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:712
+#, markdown-text
+msgid "ID of type of article (e.g. phone, email, web)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:718
+#, markdown-text
+msgid "Timestamp of last update of article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:720
+#, markdown-text
+msgid "`\"2025-02-22T03:47:59.290Z\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:724
+#, markdown-text
+msgid "ID of the user who updated the article."
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:482
+#: src/en/reference/es-indexed-attributes.md:727
 #: src/en/reference/rest-api/user.md:1 src/en/reference/rest-api/user.md:6
 #, markdown-text, no-wrap
 msgid "User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:487
+#: src/en/reference/es-indexed-attributes.md:732
+#, markdown-text
+msgid "Defines, if a user is active."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:735
 #, markdown-text, no-wrap
-msgid ""
-"`active`\n"
-":   - `true`, `false`\n"
-"    - Defines if user is active\n"
+msgid "`address`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:491
-#, markdown-text, no-wrap
-msgid ""
-"`address`\n"
-":   - `\"\"`, `Unter den Linden 1,\\n10178 Berlin`\n"
-"    - Address string\n"
+#: src/en/reference/es-indexed-attributes.md:738
+#, markdown-text
+msgid "Address of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:495
+#: src/en/reference/es-indexed-attributes.md:740
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Hauptstraße 100, 99999 Berlin\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:741
 #, markdown-text, no-wrap
-msgid ""
-"`city`\n"
-":   - `\"\"`, `Berlin`\n"
-"    - City string\n"
+msgid "`city`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:499
-#, markdown-text, no-wrap
-msgid ""
-"`country`\n"
-":   - `\"\"`, `Germany`\n"
-"    - Country string\n"
+#: src/en/reference/es-indexed-attributes.md:744
+#, markdown-text
+msgid "Name of the city of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:503
+#: src/en/reference/es-indexed-attributes.md:746
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Berlin\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:747
 #, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-22T12:47:56.460Z`\n"
-"    - Creation date of user\n"
+msgid "`country`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:507
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `1`\n"
-"    - User ID that created the user\n"
+#: src/en/reference/es-indexed-attributes.md:750
+#, markdown-text
+msgid "Name of the country of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:511
-#, markdown-text, no-wrap
-msgid ""
-"`department`\n"
-":   - `\"\"`, `IT`\n"
-"    - Department string\n"
+#: src/en/reference/es-indexed-attributes.md:752
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Germany\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:515
-#, markdown-text, no-wrap
-msgid ""
-"`email`\n"
-":   - `\"\"`, `alias@domain.tld`\n"
-"    - EMail Address of user, if applicable\n"
+#: src/en/reference/es-indexed-attributes.md:756
+#, markdown-text
+msgid "Timestamp of creation of user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:519
-#, markdown-text, no-wrap
-msgid ""
-"`fax`\n"
-":   - `\"\"`, `1234`\n"
-"    - Fax number\n"
+#: src/en/reference/es-indexed-attributes.md:758
+#, markdown-text
+msgid "Example: `\"2025-02-22T12:47:56.460Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:523
+#: src/en/reference/es-indexed-attributes.md:762
+#, markdown-text
+msgid "ID of user who created the user."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:765
 #, markdown-text, no-wrap
-msgid ""
-"`firstname`\n"
-":   - `null`, `John`\n"
-"    - Users first name\n"
+msgid "`department`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:527
-#, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `8`\n"
-"    - Internal User ID\n"
+#: src/en/reference/es-indexed-attributes.md:768
+#, markdown-text
+msgid "Name of department."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:531
+#: src/en/reference/es-indexed-attributes.md:770
+#, markdown-text
+msgid "Examples: `\"\"`, `\"IT\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:771
 #, markdown-text, no-wrap
-msgid ""
-"`last_login`\n"
-":   - `null`, `2021-03-23T12:47:56.460Z`\n"
-"    - Updated upon every user login\n"
+msgid "`email`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:535
-#, markdown-text, no-wrap
-msgid ""
-"`lastname`\n"
-":   - `null`, `Doe`\n"
-"    - Users last name\n"
+#: src/en/reference/es-indexed-attributes.md:774
+#, markdown-text
+msgid "Email address of user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:539
+#: src/en/reference/es-indexed-attributes.md:776
+#, markdown-text
+msgid "Examples: `\"\"`, `\"nicole.braun@zammad.org\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:777
 #, markdown-text, no-wrap
-msgid ""
-"`login`\n"
-":   - `auto-1234567`, `jdoe`\n"
-"    - Login name, always set and unique, can differ from email\n"
+msgid "`fax`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:543
-#, markdown-text, no-wrap
-msgid ""
-"`mobile`\n"
-":   - `\"\"`, `1232`\n"
-"    - Mobile phone number\n"
+#: src/en/reference/es-indexed-attributes.md:780
+#, markdown-text
+msgid "Fax number of user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:547
+#: src/en/reference/es-indexed-attributes.md:782
+#, markdown-text
+msgid "Examples: `\"\"`, `\"+49 123 456 789 01\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:783
 #, markdown-text, no-wrap
-msgid ""
-"`note`\n"
-":   - `\"\"`\n"
-"    - Note being available via web, console and API\n"
+msgid "`firstname`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:552
-#, markdown-text, no-wrap
-msgid ""
-"`organization`\n"
-":   - \\#\\{organization object\\}\n"
-"    - Complete payload of the organization the user is member of.\n"
-"      Have a look at the [organization section](#organization) for more "
-"information.\n"
+#: src/en/reference/es-indexed-attributes.md:786
+#, markdown-text
+msgid "First name of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:556
-#, markdown-text, no-wrap
-msgid ""
-"`organization_id`\n"
-":   - `3`\n"
-"    - ID of organization the user is member of\n"
+#: src/en/reference/es-indexed-attributes.md:788
+#, markdown-text
+msgid "Examples: `\"\"`, `\"John\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:560
+#: src/en/reference/es-indexed-attributes.md:792
+#, markdown-text
+msgid "Internal ID of the user."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:795
 #, markdown-text, no-wrap
-msgid ""
-"`out_of_office`\n"
-":   - `false`, `true`\n"
-"    - Defines if user has activated out of office function\n"
+msgid "`last_login`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:564
-#, markdown-text, no-wrap
-msgid ""
-"`out_of_office_end_at`\n"
-":   - `null`, `2021-03-26`\n"
-"    - Ending date out of office\n"
+#: src/en/reference/es-indexed-attributes.md:798
+#, markdown-text
+msgid "Timestamp of the last login of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:568
+#: src/en/reference/es-indexed-attributes.md:800
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-23T12:47:56.460Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:801
 #, markdown-text, no-wrap
-msgid ""
-"`out_of_office_replacement_id`\n"
-":   - `null`, `3`\n"
-"    - User ID that replaces this user during out of office period\n"
+msgid "`lastname`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:572
-#, markdown-text, no-wrap
-msgid ""
-"`out_of_office_start_at`\n"
-":   - `null`, `2021-03-24`\n"
-"    - Begin date out of office\n"
+#: src/en/reference/es-indexed-attributes.md:804
+#, markdown-text
+msgid "Last name of the user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:576
+#: src/en/reference/es-indexed-attributes.md:806
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Doe\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:807
 #, markdown-text, no-wrap
-msgid ""
-"`permissions`\n"
-":   - (Array)\n"
-"    - Array with all permissions of the user\n"
+msgid "`login`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:580
-#, markdown-text, no-wrap
-msgid ""
-"`phone`\n"
-":   - `\"\"`, `0049 30 1234 5666`\n"
-"    - Phone number of user\n"
+#: src/en/reference/es-indexed-attributes.md:810
+#, markdown-text
+msgid "Login name of the user, always set and unique, can differ from email."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:584
+#: src/en/reference/es-indexed-attributes.md:812
+#, markdown-text
+msgid "Examples: `\"auto-1234567\"`, `\"jdoe\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:813
 #, markdown-text, no-wrap
-msgid ""
-"`preferences`\n"
-":   - `{}`, \\#\\{several preference attributes\\}\n"
-"    - Depends on user and situation, may contain `notification_config`, "
-"`locale` and other internal system information.\n"
+msgid "`mobile`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:588
-#, markdown-text, no-wrap
-msgid ""
-"`role_ids`\n"
-":   - (Array), `[1, 2]`\n"
-"    - Contains array with role IDs assigned to the user.\n"
+#: src/en/reference/es-indexed-attributes.md:816
+#, markdown-text
+msgid "Mobile phone number of user."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:592
-#, markdown-text, no-wrap
-msgid ""
-"`street`\n"
-":   - `\"\"`\n"
-"    - Street\n"
+#: src/en/reference/es-indexed-attributes.md:818
+#, markdown-text
+msgid "Examples: `\"\"`, `\"+49 123 456 789\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:596
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-25T00:27:52.308Z`\n"
-"    - Time stamp of last update\n"
+#: src/en/reference/es-indexed-attributes.md:822
+#, markdown-text
+msgid "Note of user object."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:600
-#, markdown-text, no-wrap
-msgid ""
-"`updated_by_id`\n"
-":   - `3`\n"
-"    - User ID that updated this entry\n"
+#: src/en/reference/es-indexed-attributes.md:824
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Some text.\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:604
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:829
+#, markdown-text
 msgid ""
-"`verified`\n"
-":   - `false`, `true`\n"
-"    - Defines if the user has verified the account\n"
+"Details of the organization, the user is member of. Have a look at the "
+"[organization section](#organization-2) for more information."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:608
+#: src/en/reference/es-indexed-attributes.md:839
+#, markdown-text
+msgid "ID of the organization, the user is member of."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:842
 #, markdown-text, no-wrap
-msgid ""
-"`vip`\n"
-":   - `false`, `true`\n"
-"    - Defines if user has VIP state\n"
+msgid "`out_of_office`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:612
+#: src/en/reference/es-indexed-attributes.md:845
+#, markdown-text
+msgid "Defines, if the user has activated the out of office function."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:848
 #, markdown-text, no-wrap
-msgid ""
-"`web`\n"
-":   - `\"\"`, `https://zammad.org`\n"
-"    - Web URL of User\n"
+msgid "`out_of_office_end_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:616
+#: src/en/reference/es-indexed-attributes.md:851
+#, markdown-text
+msgid "End date out of office period."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:853
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-26\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:854
 #, markdown-text, no-wrap
+msgid "`out_of_office_replacement_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:857
+#, markdown-text
+msgid "ID of the user who replaces this user during the out of office period."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:860
+#, markdown-text, no-wrap
+msgid "`out_of_office_start_at`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:863
+#, markdown-text
+msgid "Begin date of out of office period."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:865
+#, markdown-text
+msgid "Examples: `null`, `\"2025-02-24\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:866
+#, markdown-text, no-wrap
+msgid "`permissions`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:869
+#, markdown-text
+msgid "Set permissions of the user as array."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:870
+#, no-wrap
 msgid ""
-"`zip`\n"
-":   - `\"\"`, `10123`\n"
-"    - ZIP code\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/permissions.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:876
+#, markdown-text, no-wrap
+msgid "`phone`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:879
+#, markdown-text
+msgid "Phone number of the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:881
+#, markdown-text
+msgid "Examples: `\"\"`, `\"+49 1234 567 890\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:886
+#, markdown-text
+msgid ""
+"Details of the preferences of the user, may contain `notification_config`, "
+"`locale` and other internal system information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:887
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/preferences.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:893
+#, markdown-text, no-wrap
+msgid "`role_ids`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:896
+#, markdown-text
+msgid "Array with role IDs which are assigned to the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:898
+#, markdown-text
+msgid "Example: `[1, 2]`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:899
+#, markdown-text, no-wrap
+msgid "`street`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:902
+#, markdown-text
+msgid "Name of the street of the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:904
+#, markdown-text
+msgid "Examples: `\"\"`, `\"Hauptstraße 100\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:908
+#, markdown-text
+msgid "Timestamp of last update of the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:910
+#, markdown-text
+msgid "Example: `\"2025-02-25T00:27:52.308Z\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:914
+#, markdown-text
+msgid "ID of user who updated this user."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:917
+#, markdown-text, no-wrap
+msgid "`verified`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:920
+#, markdown-text
+msgid "Defines if the user has verified the account or not."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:923
+#: src/en/reference/es-indexed-attributes.md:1042
+#, markdown-text, no-wrap
+msgid "`vip`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:926
+#, markdown-text
+msgid "Defines if the user has VIP state or not."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:929
+#, markdown-text, no-wrap
+msgid "`web`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:932
+#, markdown-text
+msgid "Web URL of the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:934
+#, markdown-text
+msgid "Examples: `\"\"`, `\"https://zammad.org\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:935
+#, markdown-text, no-wrap
+msgid "`zip`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:938
+#, markdown-text
+msgid "ZIP code of the user."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:940
+#, markdown-text
+msgid "Examples: `\"\"`, `\"123456\"`"
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:617
+#: src/en/reference/es-indexed-attributes.md:941
 #: src/en/reference/rest-api/organization.md:1
 #: src/en/reference/rest-api/organization.md:6
 #, markdown-text, no-wrap
@@ -11766,691 +12756,882 @@ msgid "Organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:620
+#: src/en/reference/es-indexed-attributes.md:944
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_organization`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:624
-#, markdown-text, no-wrap
-msgid ""
-"`active`\n"
-":   - `true`, `false`\n"
-"    - Defines if organization is active\n"
+#: src/en/reference/es-indexed-attributes.md:948
+#, markdown-text
+msgid "Defines, if the organization is active or not."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:628
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-22T12:47:54.807Z`\n"
-"    - Creation date\n"
+#: src/en/reference/es-indexed-attributes.md:954
+#, markdown-text
+msgid "Timestamp of creation date of organization."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:633
-#, markdown-text, no-wrap
-msgid ""
-"`created_by`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete Payload of the user that created the organization.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+#: src/en/reference/es-indexed-attributes.md:956
+#: src/en/reference/es-indexed-attributes.md:1025
+#, markdown-text
+msgid "Example: `\"2025-02-22T12:47:54.807Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:637
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:960
+#, markdown-text
 msgid ""
-"`created_by_id`\n"
-":   - `1`\n"
-"    - User ID that created the organization\n"
+"Details of the user who created the organization. Have a look at the [user "
+"section](#user) for more information."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:641
+#: src/en/reference/es-indexed-attributes.md:970
+#, markdown-text
+msgid "ID of the user who created the organization."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:973
 #, markdown-text, no-wrap
-msgid ""
-"`domain`\n"
-":   - `null`, `example.com`\n"
-"    - Organizations domain\n"
+msgid "`domain`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:645
-#, markdown-text, no-wrap
-msgid ""
-"`domain_assignment`\n"
-":   - `false`, `true`\n"
-"    - Domain assignment depends on domain\n"
+#: src/en/reference/es-indexed-attributes.md:976
+#, markdown-text
+msgid "Domain of the organization."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:649
+#: src/en/reference/es-indexed-attributes.md:978
+#, markdown-text
+msgid "Examples: `\"null\"`, `\"example.com\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:979
 #, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `1`\n"
-"    - Organization ID\n"
+msgid "`domain_assignment`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:654
-#, markdown-text, no-wrap
-msgid ""
-"`members`\n"
-":   - \\#\\{array of user objects\\}\n"
-"    - Array with complete payload of the users being member of the "
-"organization.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+#: src/en/reference/es-indexed-attributes.md:982
+#, markdown-text
+msgid "Defines if domain assignment is active or not, depends on `domain`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:658
+#: src/en/reference/es-indexed-attributes.md:988
+#, markdown-text
+msgid "Internal ID of the organization."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:991
 #, markdown-text, no-wrap
-msgid ""
-"`name`\n"
-":   - `Fast Lane Hardware Inc.`\n"
-"    - Organization name\n"
+msgid "`members`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:662
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:995
+#, markdown-text
 msgid ""
-"`note`\n"
-":   - `IT hardware and custom PC builds`\n"
-"    - Note being available via web, console and API\n"
+"Array with details of each user who is a member of the organization. Have a "
+"look at the [user section](#user) for more information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:996
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/es-indexed-attributes/members.json\n"
+"\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:666
-#, markdown-text, no-wrap
-msgid ""
-"`shared`\n"
-":   - `true`, `false`\n"
-"    - Defines if the organization is a sharing one\n"
+#: src/en/reference/es-indexed-attributes.md:1005
+#, markdown-text
+msgid "Name of the organization."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:670
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-22T12:47:54.807Z`\n"
-"    - Last update time\n"
+#: src/en/reference/es-indexed-attributes.md:1007
+#, markdown-text
+msgid "Example: `\"Fast Lane Hardware Inc.\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:675
-#, markdown-text, no-wrap
-msgid ""
-"`updated_by`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete Payload of the user that updated the organization.\n"
-"      Have a look at the [user section](#user) for more information.\n"
+#: src/en/reference/es-indexed-attributes.md:1011
+#, markdown-text
+msgid "Note of organization object."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:679
+#: src/en/reference/es-indexed-attributes.md:1013
+#, markdown-text
+msgid "Example: `\"IT hardware and custom PC builds.\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1014
 #, markdown-text, no-wrap
-msgid ""
-"`updated_by_id`\n"
-":   - `1`\n"
-"    - User ID that updated the organization\n"
+msgid "`shared`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:683
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:1017
+#, markdown-text
+msgid "Defines if it is a \"shared organization\" or not."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1023
+#, markdown-text
+msgid "Timestamp of last update of the organization."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1029
+#, markdown-text
 msgid ""
-"`vip`\n"
-":   - `true`, `false`\n"
-"    - Defines if the organization has VIP status.\n"
+"Details of the user who updated the organization. Have a look at the [user "
+"section](#user) for more information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1039
+#, markdown-text
+msgid "ID of user who updated the organization."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1045
+#, markdown-text
+msgid "Defines if the organization has VIP status or not."
 msgstr ""
 
 #. type: Title #
-#: src/en/reference/es-indexed-attributes.md:684
+#: src/en/reference/es-indexed-attributes.md:1048
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, markdown-text, no-wrap
 msgid "Group"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:687
+#: src/en/reference/es-indexed-attributes.md:1051
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_group`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:691
+#: src/en/reference/es-indexed-attributes.md:1055
+#, markdown-text
+msgid "Defines, if the group is active or not."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1058
 #, markdown-text, no-wrap
-msgid ""
-"`active`\n"
-":   - `true`, `false`\n"
-"    - Defines if group is active (available)\n"
+msgid "`assignment_timeout`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:695
-#, markdown-text, no-wrap
-msgid ""
-"`assignment_timeout`\n"
-":   - `null`, `30`\n"
-"    - Time in minutes an agent can be inactive until the owner ship is "
-"removed\n"
+#: src/en/reference/es-indexed-attributes.md:1061
+#, markdown-text
+msgid "Time in minutes, an agent can be inactive until the ownership is removed."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:699
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-24T23:55:06.980Z`\n"
-"    - Time stamp of group creation\n"
+#: src/en/reference/es-indexed-attributes.md:1063
+#, markdown-text
+msgid "Examples: `null`, `30`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:703
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `1`\n"
-"    - User ID that created the group\n"
+#: src/en/reference/es-indexed-attributes.md:1067
+#, markdown-text
+msgid "Timestamp of creation of group."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:718
-#, markdown-text, no-wrap
-msgid ""
-"`email_address`\n"
-":   - Contains these attributes:\n"
-"      - active: `true`\n"
-"      - channel_id: `3`\n"
-"      - created_at: `2021-03-24T23:54:58.187Z`\n"
-"      - created_by_id: `3`\n"
-"      - email: `alias@domain.tld`\n"
-"      - id: `1`\n"
-"      - note: `null`\n"
-"      - realname: `Zammad GmbH`\n"
-"      - updated_at: `2021-03-24T23:54:58.187Z`\n"
-"      - updated_by_id: `3`\n"
-"      - preferences: `null`\n"
-"    - Contains all available information of the groups email address\n"
+#: src/en/reference/es-indexed-attributes.md:1069
+#: src/en/reference/es-indexed-attributes.md:1143
+#, markdown-text
+msgid "Example: `\"2025-02-24T23:55:06.980Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:722
+#: src/en/reference/es-indexed-attributes.md:1073
+#, markdown-text
+msgid "ID of the user who created the group."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1076
 #, markdown-text, no-wrap
-msgid ""
-"`email_address_id`\n"
-":   - `3`\n"
-"    - ID of email address\n"
+msgid "`email_address`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:726
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:1079
+#, markdown-text
+msgid "Details about the email address of the group."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1080
+#, no-wrap
 msgid ""
-"`follow_up_assignment`\n"
-":   - `true`, f`alse\n"
-"    - Defines if owners are still assigned after follow ups.\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/email_address.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1086
+#, markdown-text, no-wrap
+msgid "`email_address_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:730
+#: src/en/reference/es-indexed-attributes.md:1089
+#, markdown-text
+msgid "ID of the email address of the group."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1092
 #, markdown-text, no-wrap
-msgid ""
-"`follow_up_possible`\n"
-":   - `yes`, `no`\n"
-"    - Defines if following up on a closed ticket is possible.\n"
+msgid "`follow_up_assignment`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:734
+#: src/en/reference/es-indexed-attributes.md:1095
+#, markdown-text
+msgid "Defines, if ticket owners are still assigned after a follow up."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1098
 #, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `1`\n"
-"    - Group ID\n"
+msgid "`follow_up_possible`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:738
-#, markdown-text, no-wrap
-msgid ""
-"`name`\n"
-":   - `Support`, `IT`\n"
-"    - Group name\n"
+#: src/en/reference/es-indexed-attributes.md:1101
+#, markdown-text
+msgid "Defines if a follow up on a closed ticket is possible or not."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:742
-#, markdown-text, no-wrap
-msgid ""
-"`note`\n"
-":   - `null`\n"
-"    - Notes for the group available via web, console and API\n"
+#: src/en/reference/es-indexed-attributes.md:1103
+#, markdown-text
+msgid "Values: `\"yes\"`, `\"no\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:755
-#, markdown-text, no-wrap
-msgid ""
-"`signature`\n"
-":   - Contains these attributes:\n"
-"      - active: `true`\n"
-"      - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane "
-"Hardware`\n"
-"      - created_at: 2`021-03-03T14:50:19.775Z`\n"
-"      - created_by_id: `1`\n"
-"      - id: `1`\n"
-"      - name: `default`\n"
-"      - note: `null`\n"
-"      - updated_at: `2021-03-03T14:50:19.775Z`\n"
-"      - updated_by_id: `1`\n"
-"    - Contains all available information of the groups signature\n"
+#: src/en/reference/es-indexed-attributes.md:1107
+#, markdown-text
+msgid "Internal ID of the group."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:759
-#, markdown-text, no-wrap
-msgid ""
-"`signature_id`\n"
-":   - `1`\n"
-"    - Signature ID\n"
+#: src/en/reference/es-indexed-attributes.md:1113
+#, markdown-text
+msgid "Name of the group."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:763
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-24T23:55:06.980Z`\n"
-"    - Time stamp of last group update\n"
+#: src/en/reference/es-indexed-attributes.md:1115
+#, markdown-text
+msgid "Examples: `\"Support\"`, `\"IT\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:767
+#: src/en/reference/es-indexed-attributes.md:1119
+#, markdown-text
+msgid "Note for the group object."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1122
 #, markdown-text, no-wrap
+msgid "`signature`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1125
+#, markdown-text
+msgid "Details of the signature of the group."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1126
+#, no-wrap
 msgid ""
-"`updated_by_id`\n"
-":   - `3`\n"
-"    - User ID that updated group\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/signature.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1132
+#, markdown-text, no-wrap
+msgid "`signature_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1135
+#, markdown-text
+msgid "Internal ID of the signature."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1141
+#, markdown-text
+msgid "Timestamp of the last group update."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1147
+#, markdown-text
+msgid "ID of the user who updated the group."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:768
+#: src/en/reference/es-indexed-attributes.md:1150
 #, markdown-text, no-wrap
 msgid "CTI Log"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:771
+#: src/en/reference/es-indexed-attributes.md:1153
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_cti_log`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:775
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1154
 #, markdown-text, no-wrap
-msgid ""
-"`call_id`\n"
-":   - `6`\n"
-"    - Unique Call ID\n"
+msgid "`call_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:779
-#, markdown-text, no-wrap
-msgid ""
-"`comment`\n"
-":   - `\"\"`\n"
-"    - Optional comment\n"
+#: src/en/reference/es-indexed-attributes.md:1157
+#, markdown-text
+msgid "Unique ID of the call."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:783
+#: src/en/reference/es-indexed-attributes.md:1159
+#, markdown-text
+msgid "Example: `6`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1160
 #, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-22T11:48:01.703Z`\n"
-"    - Creation date of Call\n"
+msgid "`comment`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:787
-#, markdown-text, no-wrap
-msgid ""
-"`direction`\n"
-":   - `in`, `out`\n"
-"    - Call direction\n"
+#: src/en/reference/es-indexed-attributes.md:1163
+#, markdown-text
+msgid "Optional comment."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:791
-#, markdown-text, no-wrap
-msgid ""
-"`done`\n"
-":   - `true`, `false`\n"
-"    - Defines if call displays as \"to do\" within UI\n"
+#: src/en/reference/es-indexed-attributes.md:1165
+#, markdown-text
+msgid "Example: `\"\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:795
-#, markdown-text, no-wrap
-msgid ""
-"`duration_talking_time`\n"
-":   - `27`\n"
-"    - Call duration in seconds\n"
+#: src/en/reference/es-indexed-attributes.md:1169
+#, markdown-text
+msgid "Creation date of call."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:799
+#: src/en/reference/es-indexed-attributes.md:1171
+#, markdown-text
+msgid "Example: `\"2025-02-22T11:48:01.703Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1172
 #, markdown-text, no-wrap
-msgid ""
-"`duration_waiting_time`\n"
-":   - `77`\n"
-"    - Duration in seconds the caller was waiting for answer\n"
+msgid "`direction`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:803
-#, markdown-text, no-wrap
-msgid ""
-"`end_at`\n"
-":   - `2021-03-25T08:49:40.647Z`\n"
-"    - Time stamp of call end\n"
+#: src/en/reference/es-indexed-attributes.md:1175
+#, markdown-text
+msgid "Call direction."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:807
+#: src/en/reference/es-indexed-attributes.md:1177
+#, markdown-text
+msgid "Values: `in`, `out`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1178
 #, markdown-text, no-wrap
-msgid ""
-"`from`\n"
-":   - `491711234567890`\n"
-"    - Calling number\n"
+msgid "`done`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:811
+#: src/en/reference/es-indexed-attributes.md:1181
+#, markdown-text
+msgid "Defines if call displays as \"to do\" within UI."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1184
 #, markdown-text, no-wrap
-msgid ""
-"`from_comment`\n"
-":   - `null`, `John`, `Doe`\n"
-"    - Display name of calling number if applicable\n"
+msgid "`duration_talking_time`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:815
-#, markdown-text, no-wrap
-msgid ""
-"`from_pretty`\n"
-":   - `+49 171 1234567890`\n"
-"    - Pretty version of `from`\n"
+#: src/en/reference/es-indexed-attributes.md:1187
+#, markdown-text
+msgid "Call duration time in seconds."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:819
+#: src/en/reference/es-indexed-attributes.md:1189
+#, markdown-text
+msgid "Example: `27`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1190
 #, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `8`\n"
-"    - Internal ID of entry\n"
+msgid "`duration_waiting_time`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:823
-#, markdown-text, no-wrap
-msgid ""
-"`initialized_at`\n"
-":   - `2021-03-25T08:47:56.753Z`\n"
-"    - Time stamp of call initialization, usually matches created_at\n"
+#: src/en/reference/es-indexed-attributes.md:1193
+#, markdown-text
+msgid "Waiting time in seconds until call got answered."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:827
+#: src/en/reference/es-indexed-attributes.md:1195
+#, markdown-text
+msgid "Example: `77`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1196
 #, markdown-text, no-wrap
-msgid ""
-"`preferences`\n"
-":   - (Array)\n"
-"    - Contains internal information if required\n"
+msgid "`end_at`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:831
-#, markdown-text, no-wrap
-msgid ""
-"`queue`\n"
-":   - `null`, `491711234567890`\n"
-"    - Queue the call was answered in\n"
+#: src/en/reference/es-indexed-attributes.md:1199
+#, markdown-text
+msgid "Timestamp of call end."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:835
-#, markdown-text, no-wrap
-msgid ""
-"`start_at`\n"
-":   - `2021-03-25T08:49:13.050Z`\n"
-"    - Time stamp the call was answered\n"
+#: src/en/reference/es-indexed-attributes.md:1201
+#: src/en/reference/es-indexed-attributes.md:1283
+#, markdown-text
+msgid "Example: `\"2025-02-25T08:49:40.647Z\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:839
-#, markdown-text, no-wrap
-msgid ""
-"`state`\n"
-":   - `hangup`, `voicemail`\n"
-"    - Last state of call\n"
+#: src/en/reference/es-indexed-attributes.md:1205
+#, markdown-text
+msgid "Calling number."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:843
+#: src/en/reference/es-indexed-attributes.md:1207
+#: src/en/reference/es-indexed-attributes.md:1265
+#, markdown-text
+msgid "Example: `491711234567890`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1208
 #, markdown-text, no-wrap
-msgid ""
-"`to`\n"
-":   - `491711234567890`\n"
-"    - Dialed number\n"
+msgid "`from_comment`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:847
-#, markdown-text, no-wrap
-msgid ""
-"`to_comment`\n"
-":   - null, John, Doe\n"
-"    - Display name of called number if applicable\n"
+#: src/en/reference/es-indexed-attributes.md:1211
+#, markdown-text
+msgid "Name of calling number, if applicable."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:851
+#: src/en/reference/es-indexed-attributes.md:1213
+#, markdown-text
+msgid "Examples: `null`, `\"John\"`, `\"Doe\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1214
 #, markdown-text, no-wrap
-msgid ""
-"`to_pretty`\n"
-":   - `491711234567890`\n"
-"    - Pretty version of to\n"
+msgid "`from_pretty`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:855
+#: src/en/reference/es-indexed-attributes.md:1217
+#, markdown-text
+msgid "Pretty version of `from` with spacing and added `+`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1219
+#: src/en/reference/es-indexed-attributes.md:1277
+#, markdown-text
+msgid "Example: `+49 171 1234567890`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1223
+#, markdown-text
+msgid "Internal ID of log entry."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1226
 #, markdown-text, no-wrap
+msgid "`initialized_at`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1229
+#, markdown-text
+msgid "Timestamp of call initialization, usually matches `created_at`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1231
+#, markdown-text
+msgid "Example: `\"2025-02-25T08:47:56.753Z\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1235
+#, markdown-text
+msgid "Details of preferences, internal information."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1236
+#, no-wrap
 msgid ""
-"`updated_at`\n"
-":   - `2021-03-25T08:49:40.647Z`\n"
-"    - Last update of entry\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/call-log-preferences.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1242
+#, markdown-text, no-wrap
+msgid "`queue`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1245
+#, markdown-text
+msgid "Queue, the call was answered in."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1247
+#, markdown-text
+msgid "Examples: `null`, `491711234567890`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1248
+#, markdown-text, no-wrap
+msgid "`start_at`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1251
+#, markdown-text
+msgid "Timestamp the call was answered."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1253
+#, markdown-text
+msgid "Example: `\"2025-02-25T08:49:13.050Z\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1257
+#, markdown-text
+msgid "Last state of the call."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1259
+#, markdown-text
+msgid "Examples: `hangup`, `voicemail`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1263
+#, markdown-text
+msgid "Dialed number."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1266
+#, markdown-text, no-wrap
+msgid "`to_comment`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1269
+#, markdown-text
+msgid "Display name of called number, if applicable."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1271
+#, markdown-text
+msgid "`\"null\"`, `\"John\"`, `\"Doe\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1272
+#, markdown-text, no-wrap
+msgid "`to_pretty`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1275
+#, markdown-text
+msgid "Pretty version of `to`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1281
+#, markdown-text
+msgid "Last update of entry."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/es-indexed-attributes.md:856
+#: src/en/reference/es-indexed-attributes.md:1284
 #, markdown-text, no-wrap
 msgid "Chat Session"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:859
+#: src/en/reference/es-indexed-attributes.md:1287
 #, markdown-text
 msgid "The following index contains below mentioned information: `*_chat_session`"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:877
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1288
 #, markdown-text, no-wrap
-msgid ""
-"`chat`\n"
-":   - Contains these attributes:\n"
-"      - active: `true`\n"
-"      - block_country: `null`\n"
-"      - block_ip: `null`\n"
-"      - created_at: `2021-03-03T14:50:22.607Z`\n"
-"      - created_by_id: `1`\n"
-"      - id: `1`\n"
-"      - max_queue: `5`\n"
-"      - name: `default`\n"
-"      - note: `\"\"`\n"
-"      - preferences: `{}`\n"
-"      - public: `false`\n"
-"      - updated_at: `2021-03-03T14:50:22.607Z`\n"
-"      - updated_by_id: `1`\n"
-"      - whitelisted_websites: `null`\n"
-"    - Contains various preferences of the chat topic in charge\n"
+msgid "`chat`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:881
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:1291
+#, markdown-text
+msgid "Details of the chat topic."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1292
+#, no-wrap
 msgid ""
-"`chat_id`\n"
-":   - `1`\n"
-"    - ID of Chat topic\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/chat.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1298
+#, markdown-text, no-wrap
+msgid "`chat_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:885
-#, markdown-text, no-wrap
-msgid ""
-"`created_at`\n"
-":   - `2021-03-25T10:26:24.376Z`\n"
-"    - Time stamp of chat creation\n"
+#: src/en/reference/es-indexed-attributes.md:1301
+#, markdown-text
+msgid "ID of the chat topic."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:889
-#, markdown-text, no-wrap
-msgid ""
-"`created_by_id`\n"
-":   - `null`\n"
-"    - User that created the chat, place holder, currently always null\n"
+#: src/en/reference/es-indexed-attributes.md:1307
+#, markdown-text
+msgid "Timestamp of chat creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:893
+#: src/en/reference/es-indexed-attributes.md:1309
+#, markdown-text
+msgid "`\"2025-02-25T10:26:24.376Z\"`"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1310
 #, markdown-text, no-wrap
-msgid ""
-"`id`\n"
-":   - `1`\n"
-"    - ID of Chat Session\n"
+msgid "`created_by_id` <Badge type=\"warning\" text=\"deprecated\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:903
-#, markdown-text, no-wrap
-msgid ""
-"`messages`\n"
-":   - (Array) - Array entries contain these attributes:\n"
-"      - chat_session_id: `1`\n"
-"      - content: `Hello dear customer`\n"
-"      - created_at: `2021-03-25T10:26:35.977Z`\n"
-"      - created_by_id: `null`, `3`\n"
-"      - id: 1\n"
-"      - updated_at: `2021-03-25T10:26:35.977Z`\n"
-"    - Array with all messages of chat\n"
+#: src/en/reference/es-indexed-attributes.md:1313
+#, markdown-text
+msgid "ID of user who created the chat."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:907
+#: src/en/reference/es-indexed-attributes.md:1319
+#, markdown-text
+msgid "ID of chat session."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1322
 #, markdown-text, no-wrap
-msgid ""
-"`name`\n"
-":   - `null`, `John Doe`\n"
-"    - Name agent set for chat user, if applicable\n"
+msgid "`messages`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:916
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:1325
+#, markdown-text
+msgid "Array with all messages of the chat."
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1326
+#, no-wrap
 msgid ""
-"`preferences`\n"
-":   - Contains these attributes:\n"
-"      - dns_name: `host.domain.tld`\n"
-"      - geo_ip: `{}`\n"
-"      - participants: Array, `[\"47118371175780\", \"47118371850300\"]`\n"
-"      - remote_ip: `192.168.2.19`\n"
-"      - url: `https://zammad.com/en/company/contact`\n"
-"    - Various internal Meta data of the session_id\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/messages.json\n"
+"\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:920
-#, markdown-text, no-wrap
-msgid ""
-"`session_id`\n"
-":   - `92f2909631f1ad5ff4d5d1e046952be8`\n"
-"    - Unique Session ID\n"
+#: src/en/reference/es-indexed-attributes.md:1335
+#, markdown-text
+msgid "The name for the chat user which was set by the agent, if applicable."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:924
-#, markdown-text, no-wrap
-msgid ""
-"`state`\n"
-":   - `closed`\n"
-"    - Current state of chat session\n"
+#: src/en/reference/es-indexed-attributes.md:1337
+#, markdown-text
+msgid "Examples: `null`, `\"John Doe\"`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:928
-#, markdown-text, no-wrap
+#: src/en/reference/es-indexed-attributes.md:1341
+#, markdown-text
+msgid "Various internal Meta data of the session_id"
+msgstr ""
+
+#. type: Fenced div block (details Example)
+#: src/en/reference/es-indexed-attributes.md:1342
+#, no-wrap
 msgid ""
-"`tags`\n"
-":   - (Array), `[\"order\", \"refund\"]`\n"
-"    - Tags applied to Chat Session by agent, if applicable\n"
+"\n"
+"<<< @/fixtures/es-indexed-attributes/chat-session-preferences.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1348
+#, markdown-text, no-wrap
+msgid "`session_id`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:932
-#, markdown-text, no-wrap
-msgid ""
-"`updated_at`\n"
-":   - `2021-03-25T10:27:03.341Z`\n"
-"    - Last update\n"
+#: src/en/reference/es-indexed-attributes.md:1351
+#, markdown-text
+msgid "Unique ID of chat session."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:936
-#, markdown-text, no-wrap
-msgid ""
-"`updated_by_id`\n"
-":   - `null`, `3`\n"
-"    - User ID that last updated session, may be null\n"
+#: src/en/reference/es-indexed-attributes.md:1353
+#, markdown-text
+msgid "Example: `92f2909631f1ad5ff4d5d1e046952be8`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:940
-#, markdown-text, no-wrap
-msgid ""
-"`user`\n"
-":   - \\#\\{user object\\}\n"
-"    - Complete Payload of the chat agent Please see User for more\n"
+#: src/en/reference/es-indexed-attributes.md:1357
+#, markdown-text
+msgid "Current state of chat session."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/es-indexed-attributes.md:943
+#: src/en/reference/es-indexed-attributes.md:1359
+#, markdown-text
+msgid "Example: `closed`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1363
+#, markdown-text
+msgid "Tags which got applied to the chat session by the agent, if applicable."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1365
+#, markdown-text
+msgid "Example: `[\"order\", \"refund\"]`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1369
+#, markdown-text
+msgid "Timestamp of last update of the chat."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1371
+#, markdown-text
+msgid "Example: `\"2025-02-25T10:27:03.341Z\"`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1375
+#, markdown-text
+msgid "ID of the user who updated the chat session the last time."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1378
 #, markdown-text, no-wrap
-msgid ""
-"`user_id`\n"
-":   - `3`\n"
-"    - User ID of chat agent\n"
+msgid "`user`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1381
+#, markdown-text
+msgid "Details of chat agent. See [user section](#user) for more information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/es-indexed-attributes.md:1388
+#, markdown-text, no-wrap
+msgid "`user_id`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/es-indexed-attributes.md:1391
+#, markdown-text
+msgid "ID of the agent of the chat."
 msgstr ""
 
 #. type: Title #
@@ -13729,12 +14910,6 @@ msgid ""
 "fairly many options - below list hopefully helps you on this journey."
 msgstr ""
 
-#. type: Title ###
-#: src/en/reference/rest-api/articles.md:13
-#, markdown-text, no-wrap
-msgid "`content_type`"
-msgstr ""
-
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:18
 #, markdown-text
@@ -13871,12 +15046,6 @@ msgid ""
 "`telegram personal-message`\n"
 ": Used by Zammad's Telegram channel. Technically you can use these to\n"
 "  automatically respond to existing requests via Telegram.\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/reference/rest-api/articles.md:76
-#, markdown-text, no-wrap
-msgid "`internal`"
 msgstr ""
 
 #. type: Plain text
@@ -20760,8 +21929,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "If you are installing Elasticsearch 8 and want to follow our\n"
-"[standard "
-"configuration](/en/tutorials/connect-config-elasticsearch){target=_blank},\n"
+"[standard configuration](/en/tutorials/connect-config-elasticsearch),\n"
 "make sure to copy/save the password which is shown while installing\n"
 "Elasticsearch.\n"
 msgstr ""

@@ -1,0 +1,55 @@
+{
+  "keyboard_shortcuts_clues": true,
+  "notification_config": {
+    "matrix": {
+      "reminder_reached": {
+        "criteria": {
+          "subscribed": false,
+          "no": false,
+          "owned_by_me": true,
+          "owned_by_nobody": false
+        },
+        "channel": {
+          "online": true,
+          "email": true
+        }
+      },
+      "escalation": {
+        "criteria": {
+          "subscribed": false,
+          "no": false,
+          "owned_by_me": true,
+          "owned_by_nobody": false
+        },
+        "channel": {
+          "online": true,
+          "email": true
+        }
+      },
+      "create": {
+        "criteria": {
+          "subscribed": true,
+          "no": false,
+          "owned_by_me": true,
+          "owned_by_nobody": true
+        },
+        "channel": {
+          "online": true,
+          "email": true
+        }
+      },
+      "update": {
+        "criteria": {
+          "subscribed": true,
+          "no": false,
+          "owned_by_me": true,
+          "owned_by_nobody": true
+        },
+        "channel": {
+          "online": true,
+          "email": true
+        }
+      }
+    }
+  }
+}

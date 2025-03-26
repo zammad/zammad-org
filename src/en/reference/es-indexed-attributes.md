@@ -1,943 +1,1392 @@
 ---
 title: Elasticsearch Indexed Attributes
 order: 8
+outline:
+  - 2
+  - 2
 ---
 
 # Elasticsearch Indexed Attributes
 
-You can find a comprehensive list of all default object attributes indexed by
-Elasticsearch below. In other words, if you wish to find a ticket, article,
-or user via the Zammad search box, Elasticsearch can match on any (or all) of
-the fields below.
+You can find a list of the main object attributes indexed by Elasticsearch (ES) below. In other words, if you wish to
+find a ticket, article, or user via the Zammad search box, ES can search in any of the fields below.
 
-:::info
+::: info
 
-- <Badge type="info" text="SLA"/>: Attributes marked as SLA are only set if
-  the ticket is affected by SLA calculation. Please note that some attributes
-  may not be set if specific conditions are not met.
+- This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly
+  about objects in the admin interface of Zammad. They are out of scope of this documentation.
+- Attributes marked as SLA (<Badge type="info" text="SLA"/>) are only set if the ticket is affected by SLA calculation.
+  Please note that some attributes may not be set if specific conditions are not met.
 - Also note that some attributes may be reset to `null` if no longer applicable.
-- `note` attribute: Note attributes usually are empty if not specified via console or API.
-- Timestamps: All timestamps provided by Zammad are UTC by default. This also
-  applies to times provided by Elasticsearch
+- All timestamps provided by Zammad are UTC by default. This also applies to times provided by ES.
 
 :::
 
-The attributes, example values and description below are constructed like that:
+## Overview
 
-`attribute`
-:   - `1`, `null`
-    - This is the description of the attribute, if available.
+You can find details about each object attribute in the next section. In this section, you can get a quick overview
+about the most important objects and how they look as complete JSON output.
+
+:::: tabs
+
+=== Ticket
+
+::: details Show complete ticket structure <Badge type="danger" text="Huge content ahead!"/>
+
+<<< @/fixtures/es-indexed-attributes/complete-ticket.json
+
+:::
+
+=== Article
+
+The following structure is already included in the ticket index (see first tab) and added here separately for
+overview reasons.
+
+::: details Show complete article structure
+
+<<< @/fixtures/es-indexed-attributes/complete-article.json
+
+:::
+
+=== User
+
+::: details Show complete user structure
+
+<<< @/fixtures/es-indexed-attributes/complete-user.json
+
+:::
+
+=== Organization
+
+::: details Show complete organization structure
+
+<<< @/fixtures/es-indexed-attributes/complete-organization.json
+
+:::
+
+::::
 
 ## Ticket
 
 The following index contains below mentioned information: `*_ticket`
 
-`article`
-:   - Array with all articles belonging to the ticket
-    - See [article section](#article) for more details.
+### `article`
 
-`article_count`
-:   - `1`
-    - Number of articles within the ticket
+Array with all articles belonging to the ticket. See [article section](#article-1) for details.
 
-`checklist`
-:   - Contains these attributes:
-      - name: `null`, `Checklist title`;
-      - items: `(array)`
-    - Items array contains the text of the items
+::: details Example
 
-`close_at`
-:   - `null`, `2021-03-03T14:50:20.673Z`
-    - First close time, set once
+<<< @/fixtures/es-indexed-attributes/article.json
 
-`close_diff_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `239`, `-5`
-    - Depends on close_in_min and tells how many minutes the ticket was closed relative to SLAs solution time.
+:::
 
-`close_escalation_at` <Badge type="info" text="SLA"/>
-:   - `null`, `2021-03-03T15:50:20.673Z`
-    - Time stamp when the ticket would escalate in case solution time is violated.
+### `article_count`
 
-`close_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `11`
-    - Value in minutes for how long the ticket was open based on business hours.
+Number of articles within the ticket.
 
-`create_article_sender`
-:   - Contains these attributes:
-      - note: `null`
-      - updated_at: `2021-03-03T14:50:20.812Z`
-      - name: `Customer`
-      - created_at: `2021-03-03T14:50:20.812Z`
-      - updated_by_id: `1`
-      - id: `2`
-      - created_by_id: `1`
-    - Sender of the article (System, Agent, Customer)
+Example: `1`
 
-`create_article_sender_id`
-:   - `1`, `2`
-    - ID of the user that created the article.
+### `checklist`
 
-`create_article_type`
-:   - Contains these attributes:
-      - note: `null`
-      - updated_at: `2021-03-03T14:50:20.812Z`
-      - name: `phone`, `email`, `web`
-      - active: `true`
-      - created_at: `2021-03-03T14:50:20.812Z`
-      - updated_by_id: `1`
-      - id: `5`
-      - created_by_id: `1`
-      - communication: `true`, `false`
-    - Information of first article type and nature
+Complete checklist structure and elements.
 
-`create_article_type_id`
-:   - `5`
-    - Type ID of first article
+::: details Example
 
-`created_at`
-:   - `2021-03-24T16:17:27.210Z`
-    - Time stamp of ticket creation
+<<< @/fixtures/es-indexed-attributes/checklist.json
 
-`created_by`
-:   - \#\{user object\}
-    - Complete Payload of user that created the ticket.
-      Have a look at the [user section](#user) for more information.
+:::
 
-`created_by_id`
-:   - `3`
-    - User ID that created the ticket.
+### `close_at`
 
-`customer`
-:   - \#\{user object\}
-    - Complete payload of the customer that created the ticket.
-      Have a look at the [user section](#user) for more information.
+First close time, set once. See `last_close_at` for the last close time (if ticket was reopened and closed again).
 
-`customer_id`
-:   - `8`
-    - Customer User ID
+Example: `"2025-03-20T06:48:46.438Z"`
 
-`escalation_at` <Badge type="info" text="SLA"/>
-:   - `null`, `2021-03-24T16:28:38.535Z`
-    - Time stamp of the next applicable escalation. One of the following attributes:
-      - `close_escalation_at`
-      - `first_response_escalation_at`
-      - `update_escalation_at`
+### `close_diff_in_min` <Badge type="info" text="SLA"/>
+<!-- markdownlint-disable-next-line MD051 -->
+Depends on [close_in_min](#close_in_min) and tells how many minutes the ticket was closed relative to SLAs solution time.
 
-`first_response_at` <Badge type="info" text="SLA"/>
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Time stamp of the first communication type reaction to the customer.
+Examples: `239`, `-5`
 
-`first_response_diff_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `10`, `-6`
-    - Depends on `first_response_in_min` and tells how many minutes the tickets first
-      response took relative to the first response time of your SLA.
+### `close_escalation_at` <Badge type="info" text="SLA"/>
 
-`first_response_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `11`
-    - Value in minutes for how long the first response took based on the business hours.
+Timestamp when the ticket would escalate in case solution time is violated.
 
-`group`
-:   - \#\{group object\}
-    - Complete payload of the current tickets group.
-      Have a look at the [group section](#group) for more information.
+Examples: `null`, `"2025-02-03T15:50:20.673Z"`
 
-`group_id`
-:   - `1`
-    - ID of the current group
+### `close_in_min` <Badge type="info" text="SLA"/>
 
-`id`
-:   - `1`, `111`
-    - ID of the Ticket
+Value in minutes for how long the ticket was open based on business hours.
 
-`last_close_at`
-:   - `null`, `2021-03-03T14:50:20.673Z`
-    - Last close time, set on each closing of ticket.
+Examples: `null`, `11`
 
-`last_contact_agent_at`
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Time stamp of last communication type contact of any agent.
+### `create_article_sender`
 
-`last_contact_at`
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Time stamp of last communication type contact. Depends on `last_contact_agent_at`,
-      `last_contact_customer_at` and "Ticket Last Contact Behavior" setting.
+Sender of the article (System, Agent, Customer)
 
-`last_contact_customer_at`
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Time stamp of last communication type contact of customer.
+::: details Example
 
-`mention_user_ids`
-:   - `[3, 5]`
-    - Array with mentioned or subscribed users IDs.
+<<< @/fixtures/es-indexed-attributes/create_article_sender.json
 
-`note`
-:   - `null`
-    - Note of ticket, only set via console or API.
+:::
 
-`number`
-:   - `1010138`, `202006231010138`
-    - Ticket number
+### `create_article_sender_id`
 
-`organization`
-:   - `null`, \#\{organization object\}
-    - Complete payload of user that owns the ticket.
-      Have a look at the [organization section](#organization) for more information.
+ID of the user that created the article.
 
-`organization_id`
-:   - `null`, `2`
-    - ID of the customers organization
+Examples: `1`, `2`
 
-`owner`
-:   - `null`, \#\{user object\}
-    - Complete payload of user that owns the ticket.
-      Have a look at the [user section](#user) for more information.
+### `create_article_type`
 
-`owner_id`
-:   - `null`, `3`
-    - User ID of the ticket owner
+Information of first article of a ticket.
 
-`pending_time`
-:   - `null`, `2021-03-24T17:44:06.912Z`
-    - Depends on pending states and time stamp for pending time.
+::: details Example
 
-`preferences`
-:   - n/a, special information for internal functions
-    - May not be available in your system, contains information for internal system functions.
+<<< @/fixtures/es-indexed-attributes/create_article_type.json
 
-`priority`
-:   - \#\{priority object\}
-    - Complete payload of priority of ticket.
-      Have a look at the [priority section](#ticket-priority) for more information.
+:::
 
-`priority_id`
-:   - `2`
-    - Priority ID of the ticket.
+### `create_article_type_id`
 
-`state`
-:   - \#\{state object\}
-    - Complete payload of current ticket state.
-      Have a look at the [state section](#ticket-state) for more information.
+ID of the type of the first article.
 
-`state_id`
-:   - `1`, `4`
-    - ID of current ticket state
+Example: `5`
 
-`tags`
-:   - `["order", "complaint"]`
-    - Array with all attached tags.
+### `created_at`
 
-`time_unit`
-:   - `null`, `15`
-    - Accounted time units for ticket (total).
+Timestamp of ticket creation.
 
-`title`
-:   - `Feedback Form`, `Need help`
-    - Title/subject of Ticket
+Example: `"2025-02-24T16:17:27.210Z"`
 
-`type`
-:   - `null`
-    - Ticket type (deprecated)
+### `created_by`
 
-`update_diff_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Depends on `update_in_min` and tells how many minutes the last ticket update took relatively to the update time setting.
+Details of the user who created the ticket. Have a look at the [user section](#user) for more information.
 
-`update_escalation_at` <Badge type="info" text="SLA"/>
-:   - `null`, `2021-03-24T16:28:38.303Z`
-    - Time stamp when the ticket would escalate in case update time is violated.
+::: details Example
 
-`update_in_min` <Badge type="info" text="SLA"/>
-:   - `null`, `5`, `-10`
-    - Value in minutes for how long the last ticket update took based on the
-    business hours and update time.
+<<< @/fixtures/es-indexed-attributes/created_by.json
 
-`updated_at`
-:   - `2021-03-24T16:28:38.303Z`
-    - Last ticket update
+:::
 
-`updated_by`
-:   - \#\{user object\}
-    - Complete payload of the user that updated the ticket.
-      Have a look at the [user section](#user) for more information.
+### `created_by_id`
 
-`updated_by_id`
-:   - `1`, `3`
-    - User ID that updated the ticket.
+ID of user who created the ticket.
+
+Example: `3`
+
+### `customer`
+
+Details of the customer of the ticket. Have a look at the [user section](#user) for more information.
+
+### `customer_id`
+
+ID of customer who created the ticket.
+
+Example: `8`
+
+### `escalation_at` <Badge type="info" text="SLA"/>
+
+Timestamp of the next applicable escalation, independent of escalation type.
+
+Examples: `null`, `"2025-02-24T16:28:38.535Z"`
+
+### `first_response_at` <Badge type="info" text="SLA"/>
+
+Timestamp of the first response to the customer (communication type).
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `first_response_diff_in_min` <Badge type="info" text="SLA"/>
+
+Depends on `first_response_in_min` and tells how many minutes the first response took relative to the first response
+time of your SLA.
+
+Examples: `null`, `10`, `-6`
+
+### `first_response_in_min` <Badge type="info" text="SLA"/>
+
+Value in minutes about how long the first response took based on the business hours.
+
+Examples: `null`, `11`
+
+### `group`
+
+Details of the group of the ticket. Have a look at the [group section](#group-1) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/group.json
+
+:::
+
+### `group_id`
+
+ID of the current group
+
+Example: `1`
+
+### `id`
+
+ID of the Ticket
+
+Examples: `1`, `111`
+
+### `last_close_at`
+
+Last close time, set on each closing of ticket.
+
+Examples: `null`, `"2025-02-03T14:50:20.673Z"`
+
+### `last_contact_agent_at`
+
+Timestamp of last communication type contact of any agent.
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `last_contact_at`
+
+Timestamp of last contact/article of type communication, independent of who created it.
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `last_contact_customer_at`
+
+Timestamp of last contact/article of type communication from customer.
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `mention_user_ids`
+
+Array with user IDs of mentioned or subscribed users.
+
+Examples: `[3, 5]`, `[]`
+
+### `note`
+
+Note of ticket, only set via console or API.
+
+Example: `null`
+
+### `number`
+
+Ticket number.
+
+Examples: `1010138`, `202006231010138`
+
+### `organization`
+
+Details of the customer organization of the ticket. Have a look at the [organization section](#organization-2) for more
+information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/organization.json
+
+:::
+
+### `organization_id`
+
+ID of the customers organization of the ticket.
+
+Examples: `null`, `2`
+
+### `owner`
+
+Details of the user who is owner of the ticket. Have a look at the [user section](#user) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/owner.json
+
+:::
+
+### `owner_id`
+
+User ID of the ticket owner.
+
+Examples: `null`, `3`
+
+### `pending_time`
+
+Timestamp of set pending time. Only if a pending state is set and independent of the pending state type.
+
+Examples: `null`, `"2025-02-24T17:44:06.912Z"`
+
+### `preferences`
+
+Special information for internal functions. May not be available in your system, contains information for internal
+system functions.
+
+### `priority`
+
+Details of the priority state of the ticket. Have a look at the [priority section](#ticket-priority) for more
+information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/priority.json
+
+:::
+
+### `priority_id`
+
+Priority ID of the ticket.
+
+Example: `2`
+
+### `state`
+
+Details of the state of the ticket. Have a look at the [state section](#ticket-state) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/state.json
+
+:::
+
+### `state_id`
+
+ID of current ticket state.
+
+Examples: `1`, `4`
+
+### `tags`
+
+Array with all tags attached to the ticket.
+
+Examples: `["order", "complaint"]`, `[]`
+
+### `time_unit`
+
+Accounted time units for ticket (total).
+
+Examples: `null`, `15`
+
+### `title`
+
+Title/subject of ticket.
+
+Examples: `Feedback Form`, `Need help`
+
+### `type` <Badge type="warning" text="deprecated"/>
+
+Value: `null`
+
+### `update_diff_in_min` <Badge type="info" text="SLA"/>
+
+Depends on `update_in_min` and tells how many minutes the last ticket update took relative to the update time setting
+of the SLA.
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `update_escalation_at` <Badge type="info" text="SLA"/>
+
+Timestamp when the ticket would escalate in case the SLA update period is violated.
+
+Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+
+### `update_in_min` <Badge type="info" text="SLA"/>
+
+Value in minutes for how long the last ticket update took based on the business hours and update time.
+
+Examples: `null`, `5`, `-10`
+
+### `updated_at`
+
+Timestamp of last ticket update.
+
+Example: `"2025-02-24T16:28:38.303Z"`
+
+### `updated_by`
+
+Details of the user who updated the ticket. Have a look at the [user section](#user) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/updated_by.json
+
+:::
+
+### `updated_by_id`
+
+ID of user who updated the ticket.
+
+Examples: `1`, `3`
 
 ## Ticket Priority
 
 The following index contains below mentioned information: `*_ticket_priority`
 
-`active`
-:   - `true`, `false`
-    - Defines if the priority is active (available).
+### `active`
 
-`created_at`
-:   - `2021-03-03T14:50:20.724Z`
-    - Creation date of priority
+Defines if the priority is active or not.
 
-`created_by_id`
-:   - `1`
-    - User that created priority
+Values: `true`, `false`
 
-`default_create`
-:   - `false`, `true`
-    - Defines if priority is default priority upon ticket creation.
+### `created_at`
 
-`id`
-:   - `3`
-    - ID of priority
+Timestamp of priority creation.
 
-`name`
-:   - `3 high`
-    - Priority name
+Example: `"2025-02-03T14:50:20.724Z"`
 
-`note`
-:   - `null`
-    - Note for priority that has been set via console or API.
+### `created_by_id`
 
-`ui_color`
-:   - `null`, `high-priority`
-    - CSS class for tickets of priority.
+ID of the user who created the priority.
 
-`ui_icon`
-:   - `null`, `important`
-    - CSS class for ticket icons of priority.
+Example: `1`
 
-`updated_at`
-:   - `2021-03-03T14:50:20.724Z`
-    - Date of last change
+### `default_create`
 
-`updated_by_id`
-:   - `1`
-    - User ID of user last updating the priority
+Defines if the priority is the default priority for ticket creation or not.
+
+Values: `false`, `true`
+
+### `id`
+
+ID of the priority.
+
+Example: `3`
+
+### `name`
+
+Name of the priority.
+
+Example: `"3 high"`
+
+### `note`
+
+Note for priority that has been set via console or API.
+
+Example: `"null"`
+
+### `ui_color`
+
+CSS class for the highlight color for tickets with this priority.
+
+Examples: `"null"`, `"high-priority"`
+
+### `ui_icon`
+
+CSS class for highlight icon for tickets with this priority.
+
+Examples: `"null"`, `"important"`
+
+### `updated_at`
+
+Timestamp of last change.
+
+Example: `"2025-02-03T14:50:20.724Z"`
+
+### `updated_by_id`
+
+ID of the user who performed the last update.
+
+Example: `1`
 
 ## Ticket State
 
 The following index contains below mentioned information: `*_ticket_state`
 
-`active`
-:   - `true`, `false`
-    - Defines if state is active (available)
+### `active`
 
-`created_at`
-:   - `2021-03-03T14:50:20.694Z`
-    - Creation date
+Defines if state is active (available) or not.
 
-`created_by_id`
-:   - `1`
-    - User ID that created state
+Values: `true`, `false`
 
-`default_create`
-:   - `false`, `true`
-    - Defines if the state is the default state upon ticket creation.
+### `created_at`
 
-`default_follow_up`
-:   - `false`, `true`
-    - Defines if the state is the default follow up state on ticket follow ups.
+Timestamp of the creation of the state.
 
-`id`
-:   - `7`
-    - State ID
+Example: `"2025-02-03T14:50:20.694Z"`
 
-`ignore_escalation`
-:   - `false`, `true`
-    - Defines if SLA calculation is generally ignored for this state.
+### `created_by_id`
 
-`name`
-:   - `pending close`
-    - State name
+ID of user who created the state.
 
-`next_state`
-:   - n/a, \#\{state object\}
-    - Contains all follow up state information if applicable, may not be
-    available depending on the state type
+Example: `1`
 
-`next_state_id`
-:   - `null`, `4`
-    - State ID of follow up state
+### `default_create`
 
-`note`
-:   - `null`
-    - Note that has been set via console or API.
+Defines if the state is the default state for ticket creation.
 
-`state_type`
-:   - Contains these attributes:
-       - created_at: `2021-03-03T14:50:20.582Z`
-       - created_by_id: `1`
-       - id: `4`
-       - name: `pending action`
-       - note: `null`
-       - updated_at: `2021-03-03T14:50:20.582Z`
-       - updated_by_id: `1`
-    - Contains all available information of the states type
+Values: `false`, `true`
 
-`state_type_id`
-:   - `4`
-    - ID of the state type
+### `default_follow_up`
 
-`updated_at`
-:   - `2021-03-03T14:50:20.694Z`
-    - Last update of state
+Defines if the state is the default follow up state on ticket follow ups.
 
-`updated_by_id`
-:   - `1`
-    - User ID that updated the state last
+Values: `false`, `true`
+
+### `id`
+
+ID of the state.
+
+Example: `7`
+
+### `ignore_escalation`
+
+Defines if SLA calculation is ignored for this state.
+
+Values: `false`, `true`
+
+### `name`
+
+Name of the state.
+
+Example: `"pending close"`
+
+### `next_state`
+
+Contains all follow up state information if applicable, may not be available depending on the state type
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/next_state.json
+
+:::
+
+### `next_state_id`
+
+ID of follow up state.
+
+Examples: `null`, `4`
+
+### `note`
+
+Note that has been set via console or API.
+
+Example: `"null"`
+
+### `state_type`
+
+Contains all available information of the states type
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/state_type.json
+
+:::
+
+### `state_type_id`
+
+ID of the state type.
+
+Example: `4`
+
+### `updated_at`
+
+Timestamp of last update of the state.
+
+Example: `"2025-02-03T14:50:20.694Z"`
+
+### `updated_by_id`
+
+ID of user who performed the last update of the state.
+
+Example: `1`
 
 ## Article
 
 The following index contains below mentioned information: `*_ticket`
 
 Articles are part of the ticket index. To reduce complexity we decided to
-provide it in its own table.
+provide it in its own section.
 
-`body`
-:   - `Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe`
-    - Article body in plain text
+### `body`
 
-`cc`
-:   - `null`, `alias@domain.tld`
-    - Email-Addresses set as CC (String)
+Article body in plaintext.
 
-`content_type`
-:   - `text/html`
-    - Content type of article
+Example: `"Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe"`
 
-`created_at`
-:   - `2021-03-22T03:47:59.290Z`
-    - Time stamp of article creation
+### `cc`
 
-`created_by_id`
-:   - `10`
-    - User ID that created the article
+The email-addresses set as CC.
 
-`detected_language`
-:   - `en`, `de`
-    - Language code of detected language, may be empty
+Examples: `null`, `alias@domain.tld`
 
-`detected_language_name`
-:   - `English`, `German`
-    - Language name of detected language, may be empty
+### `content_type`
 
-`from`
-:   - `John Doe <john.doe@example.com>`
-    - From field of article creator
+Content type of article.
 
-`id`
-:   - `16`
-    - Internal article ID
+Examples: `"text/html"`, `"text/plain"`
 
-`in_reply_to`
-:   - `null`
-    - In-Reply-To Header from emails if applicable
+### `created_at`
 
-`internal`
-:   - `false`, `true`
-    - Defines if article is internal
+Timestamp of article creation.
 
-`message_id`
-:   - `null`
-    - Message ID of Email if applicable
+Example: `"2025-02-22T03:47:59.290Z"`
 
-`origin_by_id`
-:   - `null`
-    - User ID or original creator if created on behalf another user
+### `created_by_id`
 
-`preferences`
-:   - `{}`
-    - Internal preferences, may be empty, mainly for delivery states
+ID of user who created the article.
 
-`reply_to`
-:   - `null`
-    - Contains reply to header if applicable
+Example: `10`
 
-`sender_id`
-:   - `2`
-    - ID of sender type (Customer, System, Agent)
+### `detected_language`
 
-`subject`
-:   - `My amazing subject`
-    - Article subject
+Language code of detected language.
 
-`ticket_id`
-:   - `9`
-    - Ticket ID the article belongs to
+Examples: `"en"`, `"de"`, `null`
 
-`to`
-:   - `support@example.com`
-    - Email address from TO Header
+### `detected_language_name`
 
-`type_id`
-:   - `1`
-    - ID of articles Type (phone, email, web, …)
+Language name of detected language.
 
-`updated_at`
-:   - `2021-03-22T03:47:59.290Z`
-    - Last update
+Examples: `"English"`, `"German"`
 
-`updated_by_id`
-:   - `10`
-    - User that updated article
+### `from`
+
+Name (and email address) of article creator.
+
+Examples: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
+
+### `id`
+
+Internal ID of the article.
+
+Example: `16`
+
+### `in_reply_to`
+
+"In-Reply-To" header from email, if applicable.
+
+Example: `null`
+
+### `internal`
+
+Defines if article is internal or not.
+
+Values: `false`, `true`
+
+### `message_id`
+
+Message ID of email, if applicable.
+
+Example: `null`
+
+### `origin_by_id`
+
+ID of user (or ID of original creator if created on behalf of another user) who created the article.
+
+Example: `null`
+
+### `preferences`
+
+Internal preferences, may be empty.
+
+Example: `{}`
+
+### `reply_to`
+
+Contains the "Reply-To" header, if applicable.
+
+Example: `null`
+
+### `sender_id`
+
+ID of the user who sent/created the article.
+
+Example: `2`
+
+### `subject`
+
+Subject of the article.
+
+Example: `"My amazing subject"`
+
+### `ticket_id`
+
+ID of the ticket, the article belongs to.
+
+Example: `9`
+
+### `to`
+
+Email address of "To" header or group which was set with this article.
+
+Examples: `support@example.com`,`"Support"`, `null`
+
+### `type_id`
+
+ID of type of article (e.g. phone, email, web).
+
+Example: `1`
+
+### `updated_at`
+
+Timestamp of last update of article.
+
+`"2025-02-22T03:47:59.290Z"`
+
+### `updated_by_id`
+
+ID of the user who updated the article.
+
+Example: `10`
 
 ## User
 
-`active`
-:   - `true`, `false`
-    - Defines if user is active
+### `active`
 
-`address`
-:   - `""`, `Unter den Linden 1,\n10178 Berlin`
-    - Address string
+Defines, if a user is active.
 
-`city`
-:   - `""`, `Berlin`
-    - City string
+Values: `true`, `false`
 
-`country`
-:   - `""`, `Germany`
-    - Country string
+### `address`
 
-`created_at`
-:   - `2021-03-22T12:47:56.460Z`
-    - Creation date of user
+Address of the user.
 
-`created_by_id`
-:   - `1`
-    - User ID that created the user
+Examples: `""`, `"Hauptstraße 100, 99999 Berlin"`
 
-`department`
-:   - `""`, `IT`
-    - Department string
+### `city`
 
-`email`
-:   - `""`, `alias@domain.tld`
-    - EMail Address of user, if applicable
+Name of the city of the user.
 
-`fax`
-:   - `""`, `1234`
-    - Fax number
+Examples: `""`, `"Berlin"`
 
-`firstname`
-:   - `null`, `John`
-    - Users first name
+### `country`
 
-`id`
-:   - `8`
-    - Internal User ID
+Name of the country of the user.
 
-`last_login`
-:   - `null`, `2021-03-23T12:47:56.460Z`
-    - Updated upon every user login
+Examples: `""`, `"Germany"`
 
-`lastname`
-:   - `null`, `Doe`
-    - Users last name
+### `created_at`
 
-`login`
-:   - `auto-1234567`, `jdoe`
-    - Login name, always set and unique, can differ from email
+Timestamp of creation of user.
 
-`mobile`
-:   - `""`, `1232`
-    - Mobile phone number
+Example: `"2025-02-22T12:47:56.460Z"`
 
-`note`
-:   - `""`
-    - Note being available via web, console and API
+### `created_by_id`
 
-`organization`
-:   - \#\{organization object\}
-    - Complete payload of the organization the user is member of.
-      Have a look at the [organization section](#organization) for more information.
+ID of user who created the user.
 
-`organization_id`
-:   - `3`
-    - ID of organization the user is member of
+Example: `1`
 
-`out_of_office`
-:   - `false`, `true`
-    - Defines if user has activated out of office function
+### `department`
 
-`out_of_office_end_at`
-:   - `null`, `2021-03-26`
-    - Ending date out of office
+Name of department.
 
-`out_of_office_replacement_id`
-:   - `null`, `3`
-    - User ID that replaces this user during out of office period
+Examples: `""`, `"IT"`
 
-`out_of_office_start_at`
-:   - `null`, `2021-03-24`
-    - Begin date out of office
+### `email`
 
-`permissions`
-:   - (Array)
-    - Array with all permissions of the user
+Email address of user.
 
-`phone`
-:   - `""`, `0049 30 1234 5666`
-    - Phone number of user
+Examples: `""`, `"nicole.braun@zammad.org"`
 
-`preferences`
-:   - `{}`, \#\{several preference attributes\}
-    - Depends on user and situation, may contain `notification_config`, `locale` and other internal system information.
+### `fax`
 
-`role_ids`
-:   - (Array), `[1, 2]`
-    - Contains array with role IDs assigned to the user.
+Fax number of user.
 
-`street`
-:   - `""`
-    - Street
+Examples: `""`, `"+49 123 456 789 01"`
 
-`updated_at`
-:   - `2021-03-25T00:27:52.308Z`
-    - Time stamp of last update
+### `firstname`
 
-`updated_by_id`
-:   - `3`
-    - User ID that updated this entry
+First name of the user.
 
-`verified`
-:   - `false`, `true`
-    - Defines if the user has verified the account
+Examples: `""`, `"John"`
 
-`vip`
-:   - `false`, `true`
-    - Defines if user has VIP state
+### `id`
 
-`web`
-:   - `""`, `https://zammad.org`
-    - Web URL of User
+Internal ID of the user.
 
-`zip`
-:   - `""`, `10123`
-    - ZIP code
+Example: `8`
+
+### `last_login`
+
+Timestamp of the last login of the user.
+
+Examples: `null`, `"2025-02-23T12:47:56.460Z"`
+
+### `lastname`
+
+Last name of the user.
+
+Examples: `""`, `"Doe"`
+
+### `login`
+
+Login name of the user, always set and unique, can differ from email.
+
+Examples: `"auto-1234567"`, `"jdoe"`
+
+### `mobile`
+
+Mobile phone number of user.
+
+Examples: `""`, `"+49 123 456 789"`
+
+### `note`
+
+Note of user object.
+
+Examples: `""`, `"Some text."`
+
+### `organization`
+
+Details of the organization, the user is member of. Have a look at the [organization section](#organization-2) for
+more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/organization.json
+
+:::
+
+### `organization_id`
+
+ID of the organization, the user is member of.
+
+Example: `3`
+
+### `out_of_office`
+
+Defines, if the user has activated the out of office function.
+
+Values: `false`, `true`
+
+### `out_of_office_end_at`
+
+End date out of office period.
+
+Examples: `null`, `"2025-02-26"`
+
+### `out_of_office_replacement_id`
+
+ID of the user who replaces this user during the out of office period.
+
+Examples: `null`, `3`
+
+### `out_of_office_start_at`
+
+Begin date of out of office period.
+
+Examples: `null`, `"2025-02-24"`
+
+### `permissions`
+
+Set permissions of the user as array.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/permissions.json
+
+:::
+
+### `phone`
+
+Phone number of the user.
+
+Examples: `""`, `"+49 1234 567 890"`
+
+### `preferences`
+
+Details of the preferences of the user, may contain `notification_config`, `locale` and other internal system
+information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/preferences.json
+
+:::
+
+### `role_ids`
+
+Array with role IDs which are assigned to the user.
+
+Example: `[1, 2]`
+
+### `street`
+
+Name of the street of the user.
+
+Examples: `""`, `"Hauptstraße 100"`
+
+### `updated_at`
+
+Timestamp of last update of the user.
+
+Example: `"2025-02-25T00:27:52.308Z"`
+
+### `updated_by_id`
+
+ID of user who updated this user.
+
+Example: `3`
+
+### `verified`
+
+Defines if the user has verified the account or not.
+
+Values: `false`, `true`
+
+### `vip`
+
+Defines if the user has VIP state or not.
+
+Values: `false`, `true`
+
+### `web`
+
+Web URL of the user.
+
+Examples: `""`, `"https://zammad.org"`
+
+### `zip`
+
+ZIP code of the user.
+
+Examples: `""`, `"123456"`
 
 ## Organization
 
 The following index contains below mentioned information: `*_organization`
 
-`active`
-:   - `true`, `false`
-    - Defines if organization is active
+### `active`
 
-`created_at`
-:   - `2021-03-22T12:47:54.807Z`
-    - Creation date
+Defines, if the organization is active or not.
 
-`created_by`
-:   - \#\{user object\}
-    - Complete Payload of the user that created the organization.
-      Have a look at the [user section](#user) for more information.
+Values: `true`, `false`
 
-`created_by_id`
-:   - `1`
-    - User ID that created the organization
+### `created_at`
 
-`domain`
-:   - `null`, `example.com`
-    - Organizations domain
+Timestamp of creation date of organization.
 
-`domain_assignment`
-:   - `false`, `true`
-    - Domain assignment depends on domain
+Example: `"2025-02-22T12:47:54.807Z"`
 
-`id`
-:   - `1`
-    - Organization ID
+### `created_by`
 
-`members`
-:   - \#\{array of user objects\}
-    - Array with complete payload of the users being member of the organization.
-      Have a look at the [user section](#user) for more information.
+Details of the user who created the organization. Have a look at the [user section](#user) for more information.
 
-`name`
-:   - `Fast Lane Hardware Inc.`
-    - Organization name
+::: details Example
 
-`note`
-:   - `IT hardware and custom PC builds`
-    - Note being available via web, console and API
+<<< @/fixtures/es-indexed-attributes/created_by.json
 
-`shared`
-:   - `true`, `false`
-    - Defines if the organization is a sharing one
+:::
 
-`updated_at`
-:   - `2021-03-22T12:47:54.807Z`
-    - Last update time
+### `created_by_id`
 
-`updated_by`
-:   - \#\{user object\}
-    - Complete Payload of the user that updated the organization.
-      Have a look at the [user section](#user) for more information.
+ID of the user who created the organization.
 
-`updated_by_id`
-:   - `1`
-    - User ID that updated the organization
+Example: `1`
 
-`vip`
-:   - `true`, `false`
-    - Defines if the organization has VIP status.
+### `domain`
+
+Domain of the organization.
+
+Examples: `"null"`, `"example.com"`
+
+### `domain_assignment`
+
+Defines if domain assignment is active or not, depends on `domain`.
+
+Values: `false`, `true`
+
+### `id`
+
+Internal ID of the organization.
+
+Example: `1`
+
+### `members`
+
+Array with details of each user who is a member of the organization. Have a look at the [user section](#user) for more
+information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/members.json
+
+:::
+
+### `name`
+
+Name of the organization.
+
+Example: `"Fast Lane Hardware Inc."`
+
+### `note`
+
+Note of organization object.
+
+Example: `"IT hardware and custom PC builds."`
+
+### `shared`
+
+Defines if it is a "shared organization" or not.
+
+Values: `false`, `true`
+
+### `updated_at`
+
+Timestamp of last update of the organization.
+
+Example: `"2025-02-22T12:47:54.807Z"`
+
+### `updated_by`
+
+Details of the user who updated the organization. Have a look at the [user section](#user) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/updated_by.json
+
+:::
+
+### `updated_by_id`
+
+ID of user who updated the organization.
+
+Example: `1`
+
+### `vip`
+
+Defines if the organization has VIP status or not.
+
+Values: `false`, `true`
 
 ## Group
 
 The following index contains below mentioned information: `*_group`
 
-`active`
-:   - `true`, `false`
-    - Defines if group is active (available)
+### `active`
 
-`assignment_timeout`
-:   - `null`, `30`
-    - Time in minutes an agent can be inactive until the owner ship is removed
+Defines, if the group is active or not.
 
-`created_at`
-:   - `2021-03-24T23:55:06.980Z`
-    - Time stamp of group creation
+Values: `false`, `true`
 
-`created_by_id`
-:   - `1`
-    - User ID that created the group
+### `assignment_timeout`
 
-`email_address`
-:   - Contains these attributes:
-      - active: `true`
-      - channel_id: `3`
-      - created_at: `2021-03-24T23:54:58.187Z`
-      - created_by_id: `3`
-      - email: `alias@domain.tld`
-      - id: `1`
-      - note: `null`
-      - realname: `Zammad GmbH`
-      - updated_at: `2021-03-24T23:54:58.187Z`
-      - updated_by_id: `3`
-      - preferences: `null`
-    - Contains all available information of the groups email address
+Time in minutes, an agent can be inactive until the ownership is removed.
 
-`email_address_id`
-:   - `3`
-    - ID of email address
+Examples: `null`, `30`
 
-`follow_up_assignment`
-:   - `true`, f`alse
-    - Defines if owners are still assigned after follow ups.
+### `created_at`
 
-`follow_up_possible`
-:   - `yes`, `no`
-    - Defines if following up on a closed ticket is possible.
+Timestamp of creation of group.
 
-`id`
-:   - `1`
-    - Group ID
+Example: `"2025-02-24T23:55:06.980Z"`
 
-`name`
-:   - `Support`, `IT`
-    - Group name
+### `created_by_id`
 
-`note`
-:   - `null`
-    - Notes for the group available via web, console and API
+ID of the user who created the group.
 
-`signature`
-:   - Contains these attributes:
-      - active: `true`
-      - body: `<br>  #{user.firstname} #{user.lastname}<br>--<br>Fast Lane Hardware`
-      - created_at: 2`021-03-03T14:50:19.775Z`
-      - created_by_id: `1`
-      - id: `1`
-      - name: `default`
-      - note: `null`
-      - updated_at: `2021-03-03T14:50:19.775Z`
-      - updated_by_id: `1`
-    - Contains all available information of the groups signature
+Example: `1`
 
-`signature_id`
-:   - `1`
-    - Signature ID
+### `email_address`
 
-`updated_at`
-:   - `2021-03-24T23:55:06.980Z`
-    - Time stamp of last group update
+Details about the email address of the group.
 
-`updated_by_id`
-:   - `3`
-    - User ID that updated group
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/email_address.json
+
+:::
+
+### `email_address_id`
+
+ID of the email address of the group.
+
+Example: `3`
+
+### `follow_up_assignment`
+
+Defines, if ticket owners are still assigned after a follow up.
+
+Values: `false`, `true`
+
+### `follow_up_possible`
+
+Defines if a follow up on a closed ticket is possible or not.
+
+Values: `"yes"`, `"no"`
+
+### `id`
+
+Internal ID of the group.
+
+Example: `1`
+
+### `name`
+
+Name of the group.
+
+Examples: `"Support"`, `"IT"`
+
+### `note`
+
+Note for the group object.
+
+Example: `null`
+
+### `signature`
+
+Details of the signature of the group.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/signature.json
+
+:::
+
+### `signature_id`
+
+Internal ID of the signature.
+
+Example: `1`
+
+### `updated_at`
+
+Timestamp of the last group update.
+
+Example: `"2025-02-24T23:55:06.980Z"`
+
+### `updated_by_id`
+
+ID of the user who updated the group.
+
+Example: `3`
 
 ## CTI Log
 
 The following index contains below mentioned information: `*_cti_log`
 
-`call_id`
-:   - `6`
-    - Unique Call ID
+### `call_id`
 
-`comment`
-:   - `""`
-    - Optional comment
+Unique ID of the call.
 
-`created_at`
-:   - `2021-03-22T11:48:01.703Z`
-    - Creation date of Call
+Example: `6`
 
-`direction`
-:   - `in`, `out`
-    - Call direction
+### `comment`
 
-`done`
-:   - `true`, `false`
-    - Defines if call displays as "to do" within UI
+Optional comment.
 
-`duration_talking_time`
-:   - `27`
-    - Call duration in seconds
+Example: `""`
 
-`duration_waiting_time`
-:   - `77`
-    - Duration in seconds the caller was waiting for answer
+### `created_at`
 
-`end_at`
-:   - `2021-03-25T08:49:40.647Z`
-    - Time stamp of call end
+Creation date of call.
 
-`from`
-:   - `491711234567890`
-    - Calling number
+Example: `"2025-02-22T11:48:01.703Z"`
 
-`from_comment`
-:   - `null`, `John`, `Doe`
-    - Display name of calling number if applicable
+### `direction`
 
-`from_pretty`
-:   - `+49 171 1234567890`
-    - Pretty version of `from`
+Call direction.
 
-`id`
-:   - `8`
-    - Internal ID of entry
+Values: `in`, `out`
 
-`initialized_at`
-:   - `2021-03-25T08:47:56.753Z`
-    - Time stamp of call initialization, usually matches created_at
+### `done`
 
-`preferences`
-:   - (Array)
-    - Contains internal information if required
+Defines if call displays as "to do" within UI.
 
-`queue`
-:   - `null`, `491711234567890`
-    - Queue the call was answered in
+Values: `true`, `false`
 
-`start_at`
-:   - `2021-03-25T08:49:13.050Z`
-    - Time stamp the call was answered
+### `duration_talking_time`
 
-`state`
-:   - `hangup`, `voicemail`
-    - Last state of call
+Call duration time in seconds.
 
-`to`
-:   - `491711234567890`
-    - Dialed number
+Example: `27`
 
-`to_comment`
-:   - null, John, Doe
-    - Display name of called number if applicable
+### `duration_waiting_time`
 
-`to_pretty`
-:   - `491711234567890`
-    - Pretty version of to
+Waiting time in seconds until call got answered.
 
-`updated_at`
-:   - `2021-03-25T08:49:40.647Z`
-    - Last update of entry
+Example: `77`
+
+### `end_at`
+
+Timestamp of call end.
+
+Example: `"2025-02-25T08:49:40.647Z"`
+
+### `from`
+
+Calling number.
+
+Example: `491711234567890`
+
+### `from_comment`
+
+Name of calling number, if applicable.
+
+Examples: `null`, `"John"`, `"Doe"`
+
+### `from_pretty`
+
+Pretty version of `from` with spacing and added `+`.
+
+Example: `+49 171 1234567890`
+
+### `id`
+
+Internal ID of log entry.
+
+Example: `8`
+
+### `initialized_at`
+
+Timestamp of call initialization, usually matches `created_at`.
+
+Example: `"2025-02-25T08:47:56.753Z"`
+
+### `preferences`
+
+Details of preferences, internal information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/call-log-preferences.json
+
+:::
+
+### `queue`
+
+Queue, the call was answered in.
+
+Examples: `null`, `491711234567890`
+
+### `start_at`
+
+Timestamp the call was answered.
+
+Example: `"2025-02-25T08:49:13.050Z"`
+
+### `state`
+
+Last state of the call.
+
+Examples: `hangup`, `voicemail`
+
+### `to`
+
+Dialed number.
+
+Example: `491711234567890`
+
+### `to_comment`
+
+Display name of called number, if applicable.
+
+`"null"`, `"John"`, `"Doe"`
+
+### `to_pretty`
+
+Pretty version of `to`.
+
+Example: `+49 171 1234567890`
+
+### `updated_at`
+
+Last update of entry.
+
+Example: `"2025-02-25T08:49:40.647Z"`
 
 ## Chat Session
 
 The following index contains below mentioned information: `*_chat_session`
 
-`chat`
-:   - Contains these attributes:
-      - active: `true`
-      - block_country: `null`
-      - block_ip: `null`
-      - created_at: `2021-03-03T14:50:22.607Z`
-      - created_by_id: `1`
-      - id: `1`
-      - max_queue: `5`
-      - name: `default`
-      - note: `""`
-      - preferences: `{}`
-      - public: `false`
-      - updated_at: `2021-03-03T14:50:22.607Z`
-      - updated_by_id: `1`
-      - whitelisted_websites: `null`
-    - Contains various preferences of the chat topic in charge
+### `chat`
 
-`chat_id`
-:   - `1`
-    - ID of Chat topic
+Details of the chat topic.
 
-`created_at`
-:   - `2021-03-25T10:26:24.376Z`
-    - Time stamp of chat creation
+::: details Example
 
-`created_by_id`
-:   - `null`
-    - User that created the chat, place holder, currently always null
+<<< @/fixtures/es-indexed-attributes/chat.json
 
-`id`
-:   - `1`
-    - ID of Chat Session
+:::
 
-`messages`
-:   - (Array) - Array entries contain these attributes:
-      - chat_session_id: `1`
-      - content: `Hello dear customer`
-      - created_at: `2021-03-25T10:26:35.977Z`
-      - created_by_id: `null`, `3`
-      - id: 1
-      - updated_at: `2021-03-25T10:26:35.977Z`
-    - Array with all messages of chat
+### `chat_id`
 
-`name`
-:   - `null`, `John Doe`
-    - Name agent set for chat user, if applicable
+ID of the chat topic.
 
-`preferences`
-:   - Contains these attributes:
-      - dns_name: `host.domain.tld`
-      - geo_ip: `{}`
-      - participants: Array, `["47118371175780", "47118371850300"]`
-      - remote_ip: `192.168.2.19`
-      - url: `https://zammad.com/en/company/contact`
-    - Various internal Meta data of the session_id
+Example: `1`
 
-`session_id`
-:   - `92f2909631f1ad5ff4d5d1e046952be8`
-    - Unique Session ID
+### `created_at`
 
-`state`
-:   - `closed`
-    - Current state of chat session
+Timestamp of chat creation
 
-`tags`
-:   - (Array), `["order", "refund"]`
-    - Tags applied to Chat Session by agent, if applicable
+`"2025-02-25T10:26:24.376Z"`
 
-`updated_at`
-:   - `2021-03-25T10:27:03.341Z`
-    - Last update
+### `created_by_id` <Badge type="warning" text="deprecated"/>
 
-`updated_by_id`
-:   - `null`, `3`
-    - User ID that last updated session, may be null
+ID of user who created the chat.
 
-`user`
-:   - \#\{user object\}
-    - Complete Payload of the chat agent Please see User for more
+Value: `null`
 
-`user_id`
-:   - `3`
-    - User ID of chat agent
+### `id`
+
+ID of chat session.
+
+Example: `1`
+
+### `messages`
+
+Array with all messages of the chat.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/messages.json
+
+:::
+
+### `name`
+
+The name for the chat user which was set by the agent, if applicable.
+
+Examples: `null`, `"John Doe"`
+
+### `preferences`
+
+Various internal Meta data of the session_id
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/chat-session-preferences.json
+
+:::
+
+### `session_id`
+
+Unique ID of chat session.
+
+Example: `92f2909631f1ad5ff4d5d1e046952be8`
+
+### `state`
+
+Current state of chat session.
+
+Example: `closed`
+
+### `tags`
+
+Tags which got applied to the chat session by the agent, if applicable.
+
+Example: `["order", "refund"]`
+
+### `updated_at`
+
+Timestamp of last update of the chat.
+
+Example: `"2025-02-25T10:27:03.341Z"`
+
+### `updated_by_id`
+
+ID of the user who updated the chat session the last time.
+
+Examples: `null`, `3`
+
+### `user`
+
+Details of chat agent. See [user section](#user) for more information.
+
+::: details Example
+
+<<< @/fixtures/es-indexed-attributes/created_by.json
+
+:::
+
+### `user_id`
+
+ID of the agent of the chat.
+
+Example: `3`

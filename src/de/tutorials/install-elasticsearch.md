@@ -26,9 +26,10 @@ möglicherweise früher eingestellt wird als bei Version 8, die außerdem
 einige zusätzliche Sicherheitsfunktionen enthält.
 
 :::info
-Wenn Sie Elasticsearch 8 installieren und unserer
-[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch){target=_blank} folgen wollen, stellen Sie sicher
-dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird, kopieren/speichern.
+If you are installing Elasticsearch 8 and want to follow our
+[standard configuration](/en/tutorials/connect-config-elasticsearch),
+make sure to copy/save the password which is shown while installing
+Elasticsearch.
 :::
 
 ## Elasticsearch 7 installieren

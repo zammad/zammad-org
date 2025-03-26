@@ -1,0 +1,13 @@
+{
+  "note": null,
+  "preferences": null,
+  "updated_at": "2025-02-24T15:06:08.858Z",
+  "name": "My org",
+  "active": true,
+  "created_at": "2025-02-24T15:06:08.858Z",
+  "updated_by_id": 3,
+  "id": 1,
+  "created_by_id": 3,
+  "channel_id": 3,
+  "email": "debug@example.org"
+}

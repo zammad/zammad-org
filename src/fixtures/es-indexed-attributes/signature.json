@@ -1,0 +1,11 @@
+{
+  "note": null,
+  "updated_at": "2025-02-24T14:23:56.101Z",
+  "name": "default",
+  "active": true,
+  "created_at": "2025-02-24T14:23:56.101Z",
+  "updated_by_id": 1,
+  "id": 1,
+  "created_by_id": 1,
+  "body": "<br>  #{user.firstname} #{user.lastname}<br><br>--<br> Super Support - Waterford Business Park<br> 5201 Blue Lagoon Drive - 8th Floor &amp; 9th Floor - Miami, 33126 USA<br> Email: hot@example.com - Web: <a href=\"http://www.example.com/\" rel=\"nofollow noreferrer noopener\" target=\"_blank\">http://www.example.com/</a><br>--"
+}

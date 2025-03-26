@@ -1,0 +1,7 @@
+{
+  "dns_name": "host.domain.tld",
+  "geo_ip": {},
+  "participants": ["49123456789100", "49987654321010"],
+  "remote_ip": "192.168.2.19",
+  "url": "https://zammad.com/en/company/contact"
+}

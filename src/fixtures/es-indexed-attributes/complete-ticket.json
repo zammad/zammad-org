@@ -1,0 +1,468 @@
+{
+  "owner_id": 14,
+  "create_article_sender_id": 2,
+  "first_response_diff_in_min": null,
+  "type": null,
+  "close_diff_in_min": null,
+  "mention_user_ids": [
+    13
+  ],
+  "number": "36003",
+  "article_count": 3,
+  "time_unit": null,
+  "update_in_min": null,
+  "id": 3,
+  "state_id": 2,
+  "state": {
+    "next_state_id": null,
+    "note": null,
+    "active": true,
+    "created_at": "2025-03-21T10:34:03.945Z",
+    "default_create": false,
+    "state_type_id": 2,
+    "default_follow_up": true,
+    "updated_at": "2025-03-21T10:34:03.945Z",
+    "name": "open",
+    "updated_by_id": 1,
+    "id": 2,
+    "created_by_id": 1,
+    "ignore_escalation": false
+  },
+  "group": {
+    "follow_up_possible": "yes",
+    "note": null,
+    "follow_up_assignment": true,
+    "active": true,
+    "created_at": "2025-03-21T10:35:21.119Z",
+    "name_last": "Sales",
+    "shared_drafts": true,
+    "reopen_time_in_days": null,
+    "signature_id": null,
+    "updated_at": "2025-03-21T10:35:21.201Z",
+    "parent_id": null,
+    "email_address_id": 2,
+    "name": "Sales",
+    "updated_by_id": 3,
+    "id": 5,
+    "created_by_id": 3,
+    "assignment_timeout": null
+  },
+  "first_response_escalation_at": null,
+  "first_response_in_min": null,
+  "create_article_sender": {
+    "note": null,
+    "updated_at": "2025-03-21T10:34:04.414Z",
+    "name": "Customer",
+    "created_at": "2025-03-21T10:34:04.414Z",
+    "updated_by_id": 1,
+    "id": 2,
+    "created_by_id": 1
+  },
+  "first_response_at": null,
+  "close_escalation_at": null,
+  "priority": {
+    "note": null,
+    "ui_color": null,
+    "updated_at": "2025-03-21T10:34:04.118Z",
+    "ui_icon": null,
+    "name": "2 normal",
+    "active": true,
+    "created_at": "2025-03-21T10:34:04.118Z",
+    "updated_by_id": 1,
+    "id": 2,
+    "default_create": true,
+    "created_by_id": 1
+  },
+  "close_in_min": null,
+  "created_by": {
+    "country": "",
+    "note": "",
+    "firstname": "Evelyn",
+    "city": "",
+    "created_at": "2025-03-21T10:35:20.481Z",
+    "source": null,
+    "login": "evely.smith@midlandbank.biz",
+    "image_source": null,
+    "login_failed": 0,
+    "updated_at": "2025-03-21T10:35:26.861Z",
+    "web": "",
+    "street": "",
+    "id": 18,
+    "fax": "",
+    "department": null,
+    "vip": true,
+    "email": "evely.smith@midlandbank.biz",
+    "out_of_office": false,
+    "out_of_office_start_at": null,
+    "zip": "",
+    "image": "750e11f249cf115648932e3cbf17d6da",
+    "preferences": {
+      "keyboard_shortcuts_clues": true,
+      "intro": true,
+      "theme": "dark"
+    },
+    "address": null,
+    "last_login": null,
+    "mobile": "",
+    "verified": false,
+    "active": true,
+    "lastname": "Smith",
+    "out_of_office_end_at": null,
+    "out_of_office_replacement_id": null,
+    "phone": "",
+    "organization_id": 3,
+    "updated_by_id": 3,
+    "created_by_id": 3,
+    "fullname": "Evelyn Smith"
+  },
+  "article": [
+    {
+      "cc": null,
+      "internal": false,
+      "preferences": {},
+      "origin_by_id": null,
+      "type_id": 1,
+      "subject": "Order of 10 laptops XYX3000",
+      "created_at": "2025-03-21T08:55:27.109Z",
+      "message_id": null,
+      "ticket_id": 3,
+      "body": "Dear Morgan,\n\nhope you're doing fine! We are growing and have 10 new employees.\n\nTherefore we need 10 additional laptops (same as from our last order). Please let me know when they can be delivered.\n\nThanks! See you at your VIP customer event next week :-)\n\nEvelyn\n",
+      "sender_id": 2,
+      "in_reply_to": null,
+      "reply_to": null,
+      "content_type": "text/plain",
+      "updated_at": "2025-03-21T08:55:27.109Z",
+      "attachment": [],
+      "detected_language": null,
+      "from": "Evelyn Smith <evely.smith@midlandbank.biz>",
+      "updated_by_id": 18,
+      "id": 5,
+      "to": "sales@fastlane.inc",
+      "created_by_id": 18
+    },
+    {
+      "cc": null,
+      "internal": false,
+      "preferences": {},
+      "origin_by_id": null,
+      "type_id": 1,
+      "subject": null,
+      "created_at": "2025-03-21T09:58:27.163Z",
+      "message_id": null,
+      "ticket_id": 3,
+      "body": "Hello Evelyn,\n\n  we have them in stock for the same price. I'll check with our logistics department when the items can be shipped and let you know.\n\n  Best regards\n\n  Morgan",
+      "sender_id": 1,
+      "in_reply_to": null,
+      "reply_to": null,
+      "content_type": "text/plain",
+      "updated_at": "2025-03-21T09:58:27.163Z",
+      "attachment": [],
+      "detected_language": null,
+      "from": "Morgan Reed via <sales@fastlane.inc>",
+      "updated_by_id": 14,
+      "id": 6,
+      "to": "Evelyn Smith <evely.smith@midlandbank.biz>",
+      "created_by_id": 14
+    },
+    {
+      "cc": null,
+      "internal": true,
+      "preferences": {},
+      "origin_by_id": null,
+      "type_id": 10,
+      "subject": null,
+      "created_at": "2025-03-21T10:02:27.190Z",
+      "message_id": null,
+      "ticket_id": 3,
+      "body": "Hi Ava,\n\nMidland Bank ordered 10x XYX3000. They want to know when it can be shipped. Be aware that we have the special shipment agreement, so it has to be forwarded by 'Hanson Freight'.\n\nThanks!\n\nMorgan",
+      "sender_id": 1,
+      "in_reply_to": null,
+      "reply_to": null,
+      "content_type": "text/html",
+      "updated_at": "2025-03-21T10:02:27.190Z",
+      "attachment": [],
+      "detected_language": null,
+      "from": "Morgan Reed <morgan@fastlane.inc>",
+      "updated_by_id": 14,
+      "id": 7,
+      "to": null,
+      "created_by_id": 14
+    }
+  ],
+  "tags": [],
+  "update_escalation_at": null,
+  "last_owner_update_at": null,
+  "organization_id": 3,
+  "updated_by": {
+    "country": "",
+    "note": "",
+    "firstname": "Morgan",
+    "city": "",
+    "created_at": "2025-03-21T10:35:20.260Z",
+    "source": null,
+    "login": "morgan@fastlane.inc",
+    "image_source": null,
+    "login_failed": 0,
+    "updated_at": "2025-03-21T10:35:26.783Z",
+    "web": "",
+    "street": "",
+    "id": 14,
+    "fax": "",
+    "department": null,
+    "vip": false,
+    "email": "morgan@fastlane.inc",
+    "out_of_office": false,
+    "out_of_office_start_at": null,
+    "zip": "",
+    "image": "eafff35130fb15cda7008f93024e25bd",
+    "preferences": {
+      "keyboard_shortcuts_clues": true,
+      "notification_config": {
+        "matrix": {
+          "reminder_reached": {
+            "criteria": {
+              "subscribed": false,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": false
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "escalation": {
+            "criteria": {
+              "subscribed": false,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": false
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "create": {
+            "criteria": {
+              "subscribed": true,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": true
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "update": {
+            "criteria": {
+              "subscribed": true,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": true
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          }
+        }
+      },
+      "intro": true,
+      "theme": "dark"
+    },
+    "address": null,
+    "last_login": null,
+    "mobile": "",
+    "verified": false,
+    "active": true,
+    "lastname": "Reed",
+    "out_of_office_end_at": null,
+    "out_of_office_replacement_id": null,
+    "phone": "",
+    "organization_id": 2,
+    "updated_by_id": 3,
+    "created_by_id": 3,
+    "fullname": "Morgan Reed"
+  },
+  "updated_by_id": 14,
+  "created_by_id": 18,
+  "update_diff_in_min": null,
+  "note": null,
+  "last_close_at": null,
+  "last_contact_agent_at": "2025-03-21T09:58:27.163Z",
+  "created_at": "2025-03-21T08:55:27.109Z",
+  "title": "Order of 10 laptops XYX3000",
+  "pending_time": null,
+  "priority_id": 2,
+  "last_contact_at": "2025-03-21T09:58:27.163Z",
+  "updated_at": "2025-03-21T10:35:27.222Z",
+  "checklist_id": null,
+  "escalation_at": "2025-03-21T09:55:27.110Z",
+  "last_contact_customer_at": "2025-03-21T08:55:27.109Z",
+  "owner": {
+    "country": "",
+    "note": "",
+    "firstname": "Morgan",
+    "city": "",
+    "created_at": "2025-03-21T10:35:20.260Z",
+    "source": null,
+    "login": "morgan@fastlane.inc",
+    "image_source": null,
+    "login_failed": 0,
+    "updated_at": "2025-03-21T10:35:26.783Z",
+    "web": "",
+    "street": "",
+    "id": 14,
+    "fax": "",
+    "department": null,
+    "vip": false,
+    "email": "morgan@fastlane.inc",
+    "out_of_office": false,
+    "out_of_office_start_at": null,
+    "zip": "",
+    "image": "eafff35130fb15cda7008f93024e25bd",
+    "preferences": {
+      "keyboard_shortcuts_clues": true,
+      "notification_config": {
+        "matrix": {
+          "reminder_reached": {
+            "criteria": {
+              "subscribed": false,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": false
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "escalation": {
+            "criteria": {
+              "subscribed": false,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": false
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "create": {
+            "criteria": {
+              "subscribed": true,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": true
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          },
+          "update": {
+            "criteria": {
+              "subscribed": true,
+              "no": false,
+              "owned_by_me": true,
+              "owned_by_nobody": true
+            },
+            "channel": {
+              "online": true,
+              "email": true
+            }
+          }
+        }
+      },
+      "intro": true,
+      "theme": "dark"
+    },
+    "address": null,
+    "last_login": null,
+    "mobile": "",
+    "verified": false,
+    "active": true,
+    "lastname": "Reed",
+    "out_of_office_end_at": null,
+    "out_of_office_replacement_id": null,
+    "phone": "",
+    "organization_id": 2,
+    "updated_by_id": 3,
+    "created_by_id": 3,
+    "fullname": "Morgan Reed"
+  },
+  "preferences": {},
+  "group_id": 5,
+  "create_article_type": {
+    "note": null,
+    "updated_at": "2025-03-21T10:34:04.180Z",
+    "name": "email",
+    "active": true,
+    "created_at": "2025-03-21T10:34:04.180Z",
+    "updated_by_id": 1,
+    "id": 1,
+    "created_by_id": 1,
+    "communication": true
+  },
+  "create_article_type_id": 1,
+  "organization": {
+    "shared": true,
+    "note": "Financial industry; very good customer!",
+    "domain_assignment": false,
+    "updated_at": "2025-03-21T10:35:18.360Z",
+    "domain": "",
+    "name": "Midland Bank",
+    "active": true,
+    "created_at": "2025-03-21T10:35:18.360Z",
+    "updated_by_id": 1,
+    "id": 3,
+    "created_by_id": 1,
+    "vip": false
+  },
+  "close_at": null,
+  "customer_id": 18,
+  "customer": {
+    "country": "",
+    "note": "",
+    "firstname": "Evelyn",
+    "city": "",
+    "created_at": "2025-03-21T10:35:20.481Z",
+    "source": null,
+    "login": "evely.smith@midlandbank.biz",
+    "image_source": null,
+    "login_failed": 0,
+    "updated_at": "2025-03-21T10:35:26.861Z",
+    "web": "",
+    "street": "",
+    "id": 18,
+    "fax": "",
+    "department": null,
+    "vip": true,
+    "email": "evely.smith@midlandbank.biz",
+    "out_of_office": false,
+    "out_of_office_start_at": null,
+    "zip": "",
+    "image": "750e11f249cf115648932e3cbf17d6da",
+    "preferences": {
+      "keyboard_shortcuts_clues": true,
+      "intro": true,
+      "theme": "dark"
+    },
+    "address": null,
+    "last_login": null,
+    "mobile": "",
+    "verified": false,
+    "active": true,
+    "lastname": "Smith",
+    "out_of_office_end_at": null,
+    "out_of_office_replacement_id": null,
+    "phone": "",
+    "organization_id": 3,
+    "updated_by_id": 3,
+    "created_by_id": 3,
+    "fullname": "Evelyn Smith"
+  }
+}

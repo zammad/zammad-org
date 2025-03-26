@@ -1,0 +1,16 @@
+{
+  "active": true,
+  "block_country": null,
+  "block_ip": null,
+  "created_at": "2025-02-03T14:50:22.607Z",
+  "created_by_id": 1,
+  "id": 1,
+  "max_queue": 5,
+  "name": "default",
+  "note": "",
+  "preferences": {},
+  "public": false,
+  "updated_at": "2025-02-03T14:50:22.607Z",
+  "updated_by_id": 1,
+  "whitelisted_websites": null
+}

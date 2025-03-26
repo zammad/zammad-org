@@ -26,7 +26,7 @@ that the maintenance of version 7 might be stopped earlier than for version
 
 :::info
 If you are installing Elasticsearch 8 and want to follow our
-[standard configuration](/en/tutorials/connect-config-elasticsearch){target=_blank},
+[standard configuration](/en/tutorials/connect-config-elasticsearch),
 make sure to copy/save the password which is shown while installing
 Elasticsearch.
 :::

@@ -1,0 +1,104 @@
+{
+  "country": "",
+  "note": "",
+  "firstname": "Test",
+  "city": "",
+  "created_at": "2025-02-24T14:33:11.408Z",
+  "source": null,
+  "login": "admin@example.com",
+  "image_source": null,
+  "login_failed": 0,
+  "updated_at": "2025-03-20T06:38:44.504Z",
+  "web": "",
+  "street": "",
+  "id": 3,
+  "fax": "",
+  "department": null,
+  "vip": false,
+  "email": "admin@example.com",
+  "out_of_office": false,
+  "out_of_office_start_at": null,
+  "zip": "",
+  "image": null,
+  "preferences": {
+    "keyboard_shortcuts_clues": true,
+    "notification_config": {
+      "matrix": {
+        "reminder_reached": {
+          "criteria": {
+            "subscribed": false,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": false
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "escalation": {
+          "criteria": {
+            "subscribed": false,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": false
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "create": {
+          "criteria": {
+            "subscribed": true,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": true
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        },
+        "update": {
+          "criteria": {
+            "subscribed": true,
+            "no": false,
+            "owned_by_me": true,
+            "owned_by_nobody": true
+          },
+          "channel": {
+            "online": true,
+            "email": true
+          }
+        }
+      }
+    },
+    "intro": true,
+    "overviews_last_used": {
+      "1": "2025-03-12T09:19:44.289Z",
+      "2": "2025-03-12T09:19:36.992Z",
+      "3": "2025-03-12T09:19:43.220Z",
+      "4": "2025-03-12T09:19:50.743Z",
+      "5": "2025-03-12T09:19:15.831Z",
+      "6": "2025-03-12T09:19:50.081Z",
+      "12": "2025-03-12T09:19:35.027Z",
+      "13": "2025-03-12T09:19:41.238Z"
+    },
+    "theme": "light",
+    "locale": "en-us"
+  },
+  "address": null,
+  "last_login": "2025-03-20T06:38:44.463Z",
+  "mobile": "",
+  "verified": false,
+  "active": true,
+  "lastname": "Admin",
+  "out_of_office_end_at": null,
+  "out_of_office_replacement_id": null,
+  "phone": "",
+  "organization_id": null,
+  "updated_by_id": 1,
+  "created_by_id": 1,
+  "fullname": "Test Admin"
+}

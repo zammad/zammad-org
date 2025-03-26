@@ -1,0 +1,19 @@
+{
+  "follow_up_possible": "yes",
+  "note": "Standard Group/Pool for Tickets.",
+  "follow_up_assignment": true,
+  "active": true,
+  "created_at": "2025-02-24T14:23:57.140Z",
+  "name_last": "Users",
+  "shared_drafts": true,
+  "reopen_time_in_days": null,
+  "signature_id": 1,
+  "updated_at": "2025-03-17T15:33:58.310Z",
+  "parent_id": null,
+  "email_address_id": 1,
+  "name": "Users",
+  "updated_by_id": 3,
+  "id": 1,
+  "created_by_id": 1,
+  "assignment_timeout": null
+}

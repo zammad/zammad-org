@@ -1,0 +1,15 @@
+{
+  "next_state_id": null,
+  "note": null,
+  "active": true,
+  "created_at": "2025-02-24T14:23:57.339Z",
+  "default_create": false,
+  "state_type_id": 5,
+  "default_follow_up": false,
+  "updated_at": "2025-02-24T14:23:57.339Z",
+  "name": "closed",
+  "updated_by_id": 1,
+  "id": 4,
+  "created_by_id": 1,
+  "ignore_escalation": true
+}

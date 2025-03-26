@@ -1,0 +1,11 @@
+{
+  "note": null,
+  "updated_at": "2025-02-24T14:23:57.541Z",
+  "name": "phone",
+  "active": true,
+  "created_at": "2025-02-24T14:23:57.541Z",
+  "updated_by_id": 1,
+  "id": 5,
+  "created_by_id": 1,
+  "communication": true
+}
