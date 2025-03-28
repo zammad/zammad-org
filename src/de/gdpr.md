@@ -25,19 +25,15 @@ diese automatisch erfassten Informationen als "Geräteinformationen".
 
 Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:
 
-- "Cookies" sind Datendateien, die auf Ihrem Gerät oder Computer abgelegt
-werden und häufig
- eine anonyme eindeutige Kennung enthalten. Für weitere Informationen über
-Cookies und
- wie Sie Cookies deaktivieren können, besuchen Sie
-<https://www.allaboutcookies.org>.
-- "Log-Dateien" verfolgen Aktionen auf der Website und sammeln Daten wie
- Ihre IP-Adresse, den Browsertyp, den Internetprovider, die Verweis- und
-Ausstiegsseiten
- und Datums-/Zeitstempel.
-- Web-Beacons", "Tags" und "Pixel" sind elektronische Dateien, die zur
-Aufzeichnung von
- Informationen darüber, wie Sie auf der Website surfen.
+- "Cookies" sind Dateien, die auf Ihrem Gerät oder Computer abgelegt werden
+und oft eine anonyme eindeutige Kennung enthalten. Weitere Informationen zu
+Cookies und zur Deaktivierung von Cookies finden Sie unter
+<https://www.allaboutcookies.org>.  - "Log-Dateien" verfolgen die Aktionen
+auf der Website und erfassen Daten wie Ihre IP-Adresse, den Browsertyp, den
+Internetdienstanbieter, die Verweis- und Ausgangsseiten sowie Datums- und
+Zeitstempel.  - "Web Beacons", "Tags" und "Pixel" sind zusätzliche
+Maßnahmen, die Informationen darüber aufzeichnen, wie Sie auf der Website
+surfen.
 
 ## Verwendung von Matomo
 

@@ -295,7 +295,7 @@ Bitte konsultieren Sie dazu die offizielle
 [PostgreSQL-Dokumentation](https://www.postgresql.org/docs/){target=_blank},
 da dies nicht Gegenstand dieser Dokumentation ist.
 
-#### WARNING: You don't Seem to Have Any Attachments in the File System!
+#### WARNING: You don't Seem to Have Any Attachments in the File System
 
 Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem
 speichert.
@@ -326,7 +326,7 @@ Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen.
   ausgeführt werden.
 - Beachten Sie, dass das Skript Zammad automatisch stoppt und startet!
 
-#### Anwendungsbereiche
+#### Scopes
 
 Anwendungsbereiche dieses Skripts sind hauptsächlich Paket-Installationen
 und dabei insbesondere CentOS und SUSE Betriebssysteme. Es könnte auch bei

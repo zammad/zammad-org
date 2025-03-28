@@ -5,23 +5,24 @@ title: 'Knowledge Base'
 
 # Knowledge Base
 
-Zammad has multiple knowledge base related endpoints. The most important -
-but not all - are covered in this documentation. You can find the general
-ones about the knowledge base itself below, followed by the sub-endpoints
-for [answers](#answers) and [categories](#categories).
+Zammad hat mehrere Endpunkte, die mit der Knowledge Base zusammenhängen. Die
+wichtigsten - aber nicht alle - werden in dieser Dokumentation
+behandelt. Sie finden die allgemeinen Endpunkte zur Knowledge Base selbst
+weiter unten, gefolgt von den Unter-Endpunkten für [Antworten](#antworten)
+und [Kategorien](#kategorien).
 
-## Knowledge Base General
+## Knowledge Base Allgemein
 
 ::: info
-The request and response examples include the knowledge base ID `1`. Your ID may be different, for example if you
-created a knowledge base before, dropped it and created a new one.
+Die Beispiele für Anfragen und Antworten enthalten die Knowledge Base ID `1`. Ihre ID kann anders lauten, zum Beispiel wenn Sie
+eine Knowledge Base erstellt haben, diese gelöscht und nochmal eine neue erstellt haben.
 :::
 
 ### Übersicht
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/init`
+`POST`-Request gesendet: `/api/v1/knowledge_bases/init`
 
 ::: details Show response
 
@@ -31,9 +32,10 @@ Required permission: `knowledge_base.editor`
 
 ### Anzeigen
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.reader` oder
+`knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}`
+`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}`
 
 ::: details Show response
 
@@ -41,11 +43,11 @@ Required permission: `knowledge_base.reader` or `knowledge_base.editor`
 
 :::
 
-### Change Settings
+### Einstellungen ändern
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/manage/{ID of your KB}`
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/manage/{ID of your KB}`
 
 :::: details Show request/response
 
@@ -62,11 +64,12 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-### Show Permissions
+### Berechtigungen anzeigen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/permissions`
 
 ::: details Show response
 
@@ -74,11 +77,12 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Change Permissions
+### Berechtigungen ändern
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+`PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/permissions`
 
 :::: details Show request/response
 
@@ -95,13 +99,13 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-## Categories
+## Kategorien
 
-### Reorder Sub-Categories
+### Unterkategorien neu ordnen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_categories`
 
 :::: details Show request/response
@@ -119,16 +123,16 @@ KB}/categories/{ID of category}/reorder_categories`
 :::
 ::::
 
-### Reorder Root Categories
+### Hauptkategorien neu anordnen
 
 ::: info
-You have to provide the order of all top level categories, i.e.
-categories with no category as parent (parent: `>> Homepage <<`).
+Sie müssen die Reihenfolge aller Kategorien der obersten Ebene angeben, d.h.
+Kategorien, die keine übergeordnete Kategorie haben (übergeordnete Kategorie: `>> Homepage <<`).
 :::
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/reorder_root_categories`
 
 :::: details Show request/response
@@ -148,10 +152,11 @@ KB}/categories/reorder_root_categories`
 
 ### Anzeigen
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.reader` oder
+`knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}`
+`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}`
 
 ::: details Show response:
 
@@ -161,9 +166,10 @@ of category}`
 
 ### Erstellen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories`
+`POST`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/categories`
 
 :::: details Show request/response
 
@@ -180,11 +186,11 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-### Change
+### Ändern
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
 :::: details Show request/response
@@ -204,9 +210,9 @@ KB}/categories/{ID of category}`
 
 ### Löschen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
 ::: details Show response:
@@ -215,12 +221,12 @@ KB}/categories/{ID of category}`
 
 :::
 
-### Show Permissions
+### Berechtigungen anzeigen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}/permissions`
+`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}/permissions`
 
 ::: details Show response
 
@@ -228,12 +234,12 @@ of category}/permissions`
 
 :::
 
-### Change Permissions
+### Berechtigungen ändern
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}/permissions`
+`PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}/permissions`
 
 :::: details Show request/response
 
@@ -250,13 +256,13 @@ of category}/permissions`
 :::
 ::::
 
-## Answers
+## Antworten
 
-### Reorder Answers
+### Antworten neu anordnen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_answers`
 
 :::: details Show request/response
@@ -276,14 +282,15 @@ KB}/categories/{ID of category}/reorder_answers`
 
 ### Anzeigen
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.reader` oder
+`knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of
-answer}`
+`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
+of answer}`
 
 ::: tip
-If you want to get the content of an answer, add the parameters `?full=1&include_contents=1` to the query URL. The
-request for the following response included the parameters.
+Wenn Sie den Inhalt einer Antwort abrufen möchten, fügen Sie die Parameter `?full=1&include_contents=1` zur URL der Abfrage hinzu. Die
+Anfrage für die folgende Antwort enthielt die Parameter.
 :::
 
 ::: details Show response
@@ -294,9 +301,9 @@ request for the following response included the parameters.
 
 ### Erstellen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers`
+`POST`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
 :::: details Show request/response
 
@@ -313,12 +320,12 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-### Change
+### Ändern
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}`
+`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}`
 
 :::: details Show request/response
 
@@ -337,10 +344,10 @@ of answer}`
 
 ### Löschen
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}`
+`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}`
 
 ::: details Show response
 
@@ -348,35 +355,35 @@ of answer}`
 
 :::
 
-### Manage Publication Status
+### Veröffentlichungsstatus verwalten
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
 ::: info
-Responses are omitted here. You can expect to get a response like for showing an answer with a populated value for
-`archived_at`, `published_at` or `internal_at`, depending on which request you execute.
+Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit einem gesetzten Wert für
+`archived_at`, `published_at` oder `internal_at`, je nachdem, welche Anfrage Sie ausführen.
 :::
 
 :::: details Show requests
 
 ::: tabs
 
-=== Publish internally
+=== Intern veröffentlichen
 
 `POST`-Request sent:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/internal`
 
-=== Publish publicly
+=== Veröffentlichen
 
 `POST`-Request sent:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/publish`
 
-=== Archive
+=== Archivieren
 
 `POST`-Request sent:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/archive`
 
-=== Unarchive
+===De-Archivieren
 
 `POST`-Request sent:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/unarchive`
@@ -384,13 +391,13 @@ Responses are omitted here. You can expect to get a response like for showing an
 :::
 ::::
 
-### Manage Attachments
+### Anhänge verwalten
 
-Required permission: `knowledge_base.editor`
+Erforderliche Berechtigung: `knowledge_base.editor`
 
-Add attachment:
+Anhang hinzufügen:
 
-`POST`-Request with payload sent: `/api/v1/knowledge_bases/{ID of your
+`POST`-Request mit Payload gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}/attachments`
 
 ::: details Show response
@@ -399,10 +406,10 @@ KB}/answers/{ID of answer}/attachments`
 
 :::
 
-Delete attachment:
+Anhang löschen:
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}/attachments/{ID of attachment}`
+`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}/attachments/{ID of attachment}`
 
 ::: details Show response
 

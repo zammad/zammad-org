@@ -52,12 +52,12 @@ looks like.
 
 ## Функције
 
-Mobile view provides you with a way to do your common Zammad daily tasks
-while on the go:
+Мобилни приказ вам пружа начин да обављате уобичајене дневне Zammad задатке
+док сте у покрету:
 
-- Manage & use your ticket overviews
-- Search for existing records
-- Create a new ticket
+- Управљајте и користите прегледе тикета
+- Потражите постојеће уносе
+- Отворите нови тикет
 - Reply in an already existing ticket
 - Modify ticket attributes
 - Modify customer attributes
@@ -65,8 +65,8 @@ while on the go:
 
 ## Ограничења
 
-Mobile view is also currently missing some features which are provided by
-the desktop view:
+Мобилном приказу такође тренутно недостају неке функције које пружа основни
+приказ:
 
 - Time accounting
 - Split article
@@ -75,13 +75,13 @@ the desktop view:
 - Ticket history
 - Template creation & shared drafts
 
-Additionally, certain features were intentionally omitted in order to
-improve the focus on important information:
+Додатно, одређене функције су намерно изостављене да би се побољшао фокус на
+важне информације:
 
 - Most management features (except ticket user and organization management)
 - Most knowledge base features (except ticket integration)
 - Most user profile functions (except avatar and language preferences)
-- Reports
+- Извештаји
 - Caller log
 - Live chat
 

@@ -4,119 +4,121 @@ order: 2
 
 # Водич кроз стил и садржај
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation, as well as formatting and style guidelines to
-ensure clarity and readability.
+Овај водич вам пружа преглед садржаја Zammad документације, као и упутства
+за форматирање и стилизовање текста ради јасноће и читљивости.
 
-The first sections are about general information and rules. A [section with
-useful examples](#basic-formatting-examples)  follows at the end.
+Први одељци садрже уопштене информације и правила. [Одељак са корисним
+примерима](#основни-примери-форматирања) је на крају.
 
-If you have questions, feel free to ask in our community. If you want to
-contribute, you may also want to have a look at our [contribution
-page](contribute) or [ask in an
-issue](https://github.com/zammad/zammad-org/issues){target=_blank} to get
-started.
+Уколико имате додатних питања, слободно се обратите нашој онлајн
+заједници. Ако желите да учествујете, можете погледати нашу страницу о
+[доприносима](contribute) или [отворите проблем са
+питањем](https://github.com/zammad/zammad-org/issues){target=_blank} за
+смернице.
 
-## Audience Assumptions
+## Претпоставке о публици
 
-The documentation is written assuming that **users** have a basic
-understanding of web browser usage and common software design concepts. This
-means for example that features are described in detail, but not on a level
-of how to open a dropdown field.
+Документација је написана у стилу који подразумева да наши **корисници**
+поседују основно знање о употреби претраживача и концептима софтверског
+дизајна. Ово на пример значи да су функције описане до детаља, али не на
+нивоу како приступити падајућем менију.
 
-The **Zammad administrator** additionally should have a basic technical
-understanding and should also know the workflows and communication processes
-in its company.
+**Zammad администратор** треба додатно да поседује основно техничко
+разумевање радних токова и процеса комуникације у својој фирми.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.  Access to the host system
-(e.g. via SSH) and administrative permissions are taken for granted for
-system administrators.
+За инстанце које сами хостују, **администратори система** такође треба да
+буду упознати са основама администрације Linux система. Приступ систему који
+хостује (нпр. путем SSH) и администраторске дозволе се подразумевају.
 
-## Content
+## Садржај
 
-The documentation aims to include information about:
+Циљ документације да садржи информације о:
 
-- How to use Zammad
-- How to manage Zammad as an admin (e.g. setting it up after installation,
-  adjust settings, configure features)
-- Different ways how to install Zammad
-- Additional guides if (host) system configuration and/or configuration of
-  third party systems is needed.
+- Начину коришћења Zammad-а
+- Како управљати Zammad-ом као администратор (нпр. поставка након
+  инсталације, подешавања, конфигурација функција)
+- Различити начини како инсталирати Zammad
+- Додатни водичи уколико је неопходна конфигурација система (за хостовање)
+  и/или конфигурација сервиса трећих лица.
 
-Regarding the **level of detail**, the [audience
-assumptions](#audience-assumptions) should be considered. Because one of the
-goals of Zammad is to be intuitive and user friendly, there is no need to
-describe each click in detail. However, important steps should be
-included. The readers should achieve their goals as quickly and easily as
-possible without having to read a lot.
+У зависности од **нивоа детаља**, неопходно је узети у обзир [претпоставке о
+публици](#претпоставке-о-публици). Управо из разлога зато што је један од
+циљева Zammad-а да буде интуитиван и прилагођен кориснику, није неопходно
+објашњавати сваки посебан клик мишем. Међутим, важни кораци морају бити
+укључени. Читаоци би требало да постигну своје циљеве што брже и
+једноставније без потребе да пуно читају.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be code), the relevance has to be considered. If parts with a common
-use case are missing, it should be intended to include them in the
-documentation.
+Из разлога што документација не може да покрије све (иначе би садржала сам
+кôд), неопходно је узети у обзир значајност информације. Уколико недостају
+делови који се односе на уобичајене случајеве коришћења, требало би их
+укључити у документацију.
 
-## Style and Rules
+## Стил и правила
 
-The next sections cover general things to consider writing the
-documentation. After these you can find a section with some [basic examples
-of formatting and structuring](#basic-formatting-examples) the content.
+Следећи одељак покрива опште ствари у вези писања документације. Након овога
+можете прећи на одељак са неким [основним примерима форматирања и
+структуре](#основни-примери-форматирања) садржаја.
 
 ### Основе
 
-- The documentation is written in the Markdown markup language. The source
-  files have the extension `.md`.
-- The system uses [Vitepress](https://vitepress.dev/){target=_blank} to
-  build the website.
-- The language of the source files is American English.
-- The translation of the documentation is done via Weblate, see
-  [contribution section](contribute#translation) for more details.
+- Документација је написана у Markdown језику описа страна. Изворне датотеке
+  имају `.md` екстензију.
+- Систем користи [Vitepress](https://vitepress.dev/){target=_blank} за
+  прављење веб сајта.
+- Изворни језик датотека је амерички енглески.
+- Преводи документације се врше преко Weblate апликације, погледајте [одељак
+  о преводима](contribute#превод) за више информација.
 
 ### Стил
 
-- Use short and clear sentences and prioritize information over complexity.
-- Page title and headings: capitalize the first letter of all words except
-  minor words (see [title
+- Користите кратке и јасне реченице, дајући предност информацијама у односу
+  на сложеност.
+- Наслови страна и поднаслови: започните великим словом све речи осим
+  изузетих (погледајте [title
   case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
-- Use breadcrumb separation for paths and locations with `>` as separator
-  and format path in italics, e.g.  _Settings > Channels > Chat_.
-- Use code highlighting to emphasize programming snippets.
-- Use [info, tip, warning and danger boxes](#custom-boxes) when needed.
-- Use a [detail box](#custom-boxes) when content may not be relevant for all
-  the readers or may break the reading flow otherwise.
-- Include screenshots when necessary. The preferred way of adding
-  screenshots of Zammad is by creating them automatically [using
-  Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
-  This supports the maintainability of the documentation because the
-  screenshots are re-generated each time the build pipeline runs. Please
-  note that the usage of Cypress is not part of this documentation.
-- Provide step-by-step instructions with clear explanations.
-- Use examples or scenarios to illustrate concepts.
-- Include relevant images or diagrams when necessary.
-- Spell abbreviations full the first time they are used or include them in
-  the glossary and link to them. Broadly used and common abbreviations may
-  be excluded from this rule.
-- If in doubt, align it to the existing documentation.
+- Одвојите путање навигације са `>` сепаратором и користите форматирање у
+  курзиву, нпр. _Подешавања > Канали > Ћаскање_.
+- Користите назначавање изворног кода да бисте нагласили секције о
+  програмском језику.
+- Користите [оквире са информацијама, саветима и
+  упозорењима](#прилагођени-оквири) по потреби.
+- Користите [одељак са детаљима](#прилагођени-оквири) када садржај можда
+  није релевантан за све читаоце и има потенцијал да прекине ток мисли).
+- Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
+  Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress
+  апликације](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
+  Ово доприноси лакшем одржавању документације јер ће свежи снимци екрана
+  бити аутоматски направљени сваки пут кад се генерише
+  документација. Обратите пажњу да је начин коришћења Cypress-а изван обима
+  ове документације.
+- Приложите упутства корак по корак са јасним објашњењима.
+- Користите примере или сценарије да илуструјете концепте.
+- Убаците релевантне слике или дијаграме по потреби.
+- Дефинишите скраћенице када се први пут користе или их укључите у речник и
+  убаците везу на њих. Нашироко коришћене и уобичајене скраћенице могу бити
+  искључене из овог правила.
+- Ако сте у недоумици, ускладите се са постојећом документацијом.
 
-### Conventions
+### Конвенције
 
-The documentation stack includes automated checks (linting) to ensure
-compliance with the style guide and common rules for Markdown files. To
-check if your changes are compliant, run `pnpm lint` to perform the
-check. Some of the recognized problems can be even fixed automatically by
-running `pnpm lint:fix`. Make sure to run the check before committing your
-changes. Otherwise the build of the documentation will fail.
+Алати за прављење документације укључују аутоматске провере (linting) да би
+осигурали усклађеност са водичем кроз стил и основним правилима за Markdown
+садржај. Да бисте проверили усклађеност, покрените `pnpm lint` за покретање
+провере. Неки уобичајени проблеми се чак могу и аутоматски поправити
+покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања
+ваших измена. У супротном, генерисање документације неће успети.
 
-The used linting has some built in rules which you can find
-[here](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Some important rules and customized ones are mentioned below.
+Провере користе нека уобичајена правила која можете пронаћи
+[овде](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Нека важнија и прилагођена правила су излистана испод.
 
-- Line length of 120 characters in the source file may not be exceeded for
-  standard text. Make sure to use a line break before reaching this limit. A
-  visual indicator in your editor may be helpful. This does not apply for
-  special content like paths to screenshots and long links.
-- Multiple consecutive empty lines are not allowed.
-- Empty lines before and after headings and fenced code blocks are required.
+- Дужина линије у изворној датотеци не би требало да прелази 120 карактера
+  за стандардан текст. Обратите пажњу да убаците ред пре постизања ове
+  границе. Визуелни индикатор у вашем уреднику текста вам може помоћи. Ово
+  се не односи на специјалан садржај као путање на снимке екрана и дугачке
+  везе.
+- Више узастопних празних редова није дозвољено.
+- Празни редови пре и после наслова и блокова кôда су обавезни.
 - Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
   language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is
   applicable, use `` ```plain``.
@@ -130,7 +132,7 @@ Some important rules and customized ones are mentioned below.
 - Resolution of manual full page screenshots for _desktop view_ is 1920x1080
   pixels.
 
-### Basic Formatting Examples
+### Основни примери форматирања
 
 #### Text and UI
 
@@ -161,14 +163,13 @@ only one section exists, consider merging it with the higher-level content.
 
 #### Section with Badge <Badge type="warning" text="custom text" />
 
-This section title uses a badge of the type "warning". There are other
-badges available, see
-<https://vitepress.dev/reference/default-theme-badge#usage>.
+Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке,
+погледајте <https://vitepress.dev/reference/default-theme-badge#usage>.
 
 ::: details Usage
 
 ```md
-Text/title to add a badge <Badge type="warning" text="custom text" />
+Одељак са значком <Badge type="warning" text="прилагођен текст" />
 ```
 
 :::
@@ -176,7 +177,7 @@ Text/title to add a badge <Badge type="warning" text="custom text" />
 #### Прилагођени оквири
 
 ::::: info
-This is an info box.
+Ово је информациони оквир.
 
 :::: details Usage
 
@@ -190,7 +191,7 @@ This is an info box.
 :::::
 
 ::::: tip
-This is a tip.
+Ово је савет.
 
 :::: details Usage
 
@@ -204,7 +205,7 @@ This is a tip box.
 :::::
 
 ::::: warning
-This is a warning.
+Ово је упозорење.
 
 :::: details Usage
 
@@ -218,7 +219,7 @@ This is a warning box.
 :::::
 
 ::::: danger
-This is a dangerous warning.
+Ово је упозорење на опасност.
 
 :::: details Usage
 
@@ -232,9 +233,9 @@ This is a dangerous warning.
 :::::
 
 :::: details
-This is a details block.
+Ово је одељак са детаљима.
 
-Usage:
+Начин коришћења:
 
 ```md
 
@@ -258,9 +259,9 @@ This is the content shown in the expanded state.
 ::: details Usage
 
 ```md
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term
-  with another line.
+Први термин <Badge type="info" text="tag1" />
+: Ово је дефиниција првог термина
+  са додатном линијом текста.
 ```
 
 :::

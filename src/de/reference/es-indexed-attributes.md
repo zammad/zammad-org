@@ -8,26 +8,28 @@ title: 'Elasticsearch indizierte Attribute'
 
 # Elasticsearch indizierte Attribute
 
-You can find a list of the main object attributes indexed by Elasticsearch
-(ES) below. In other words, if you wish to find a ticket, article, or user
-via the Zammad search box, ES can search in any of the fields below.
+Sie finden unten eine Liste der wichtigsten Objektattribute, die von
+Elasticsearch (ES) indiziert werden. Mit anderen Worten: Wenn Sie ein
+Ticket, einen Artikel oder einen Benutzer über das Suchfeld von Zammad
+finden möchten, kann ES in jedem der unten aufgeführten Felder suchen.
 
 ::: info
 
-- This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly
-  about objects in the admin interface of Zammad. They are out of scope of this documentation.
-- Attributes marked as SLA (<Badge type="info" text="SLA"/>) are only set if the ticket is affected by SLA calculation.
-  Please note that some attributes may not be set if specific conditions are not met.
-- Also note that some attributes may be reset to `null` if no longer applicable.
-- All timestamps provided by Zammad are UTC by default. This also applies to times provided by ES.
+- Diese Seite listet Zammads Standardobjektattribute auf, die von ES indiziert werden. Es gibt einige weitere ES-Indizes, hauptsächlich
+  von Objekten in der Verwaltungsoberfläche von Zammad. Das ist nicht Gegenstand dieser Dokumentation.
+- Attribute, die mit SLA (<Badge type="info" text="SLA"/>) gekennzeichnet sind, werden nur gesetzt, wenn das Ticket von der SLA-Berechnung betroffen ist.
+  Bitte beachten Sie, dass einige Attribute möglicherweise nicht gesetzt werden, wenn bestimmte Bedingungen nicht erfüllt sind.
+- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden können, wenn sie nicht mehr zutreffen.
+- Alle von Zammad bereitgestellten Zeitstempel sind standardmäßig UTC. Dies gilt auch für von ES bereitgestellte Zeiten.
 
 :::
 
 ## Übersicht
 
-You can find details about each object attribute in the next section. In
-this section, you can get a quick overview about the most important objects
-and how they look as complete JSON output.
+Einzelheiten zu den verschiedenen Attributen der Objekte finden Sie im
+nächsten Abschnitt. In diesem Abschnitt erhalten Sie eine schnelle Übersicht
+über die wichtigsten Objekte und wie sie als vollständige JSON-Ausgabe
+aussehen.
 
 :::: tabs
 
@@ -39,10 +41,10 @@ and how they look as complete JSON output.
 
 :::
 
-=== Article
+=== Artikel
 
-The following structure is already included in the ticket index (see first tab) and added here separately for
-overview reasons.
+Die folgende Struktur ist bereits im Ticket-Index enthalten (siehe erster Tab) und wird hier aus Gründen der
+Übersicht separat aufgeführt.
 
 ::: details Show complete article structure
 
@@ -50,7 +52,7 @@ overview reasons.
 
 :::
 
-=== User
+=== Benutzer
 
 ::: details Show complete user structure
 
@@ -58,7 +60,7 @@ overview reasons.
 
 :::
 
-=== Organization
+=== Organisation
 
 ::: details Show complete organization structure
 
@@ -74,8 +76,8 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
 
 ### `article`
 
-Array with all articles belonging to the ticket. See [article
-section](#article-1) for details.
+Array mit allen zum Ticket gehörenden Artikeln. Siehe Abschnitt
+[Artikel](#article-1) für weitere Details.
 
 ::: details Example
 
@@ -85,13 +87,13 @@ section](#article-1) for details.
 
 ### `article_count`
 
-Number of articles within the ticket.
+Anzahl der Artikel innerhalb des Tickets.
 
-Example: `1`
+Beispiel: `1`
 
 ### `checklist`
 
-Complete checklist structure and elements.
+Vollständige Struktur und Elemente der Checkliste.
 
 ::: details Example
 
@@ -101,32 +103,34 @@ Complete checklist structure and elements.
 
 ### `close_at`
 
-First close time, set once. See `last_close_at` for the last close time (if
-ticket was reopened and closed again).
+Erste Schließzeit, einmalig festgelegt. Siehe `last_close_at` für die letzte
+Schließzeit (wenn das Ticket erneut geöffnet und geschlossen wurde).
 
-Example: `"2025-03-20T06:48:46.438Z"`
+Beispiel: `"2025-03-20T06:48:46.438Z"`
 
 ### `close_diff_in_min` <Badge type="info" text="SLA"/>
 <!-- markdownlint-disable-next-line MD051 -->
-Depends on [close_in_min](#close_in_min) and tells how many minutes the ticket was closed relative to SLAs solution time.
+Hängt von [close_in_min](#close_in_min) ab und gibt an, wie viele Minuten das Ticket relativ zur SLAs-Lösungszeit geschlossen wurde.
 
-Examples: `239`, `-5`
+Beispiele: `239`, `-5`
 
 ### `close_escalation_at` <Badge type="info" text="SLA"/>
 
-Timestamp when the ticket would escalate in case solution time is violated.
+Zeitstempel, zu dem das Ticket eskaliert, wenn die Lösungszeit nicht
+eingehalten wird.
 
-Examples: `null`, `"2025-02-03T15:50:20.673Z"`
+Beispiele: `null`, `"2025-02-03T15:50:20.673Z"`
 
 ### `close_in_min` <Badge type="info" text="SLA"/>
 
-Value in minutes for how long the ticket was open based on business hours.
+Wert in Minuten, der angibt, wie lange das Ticket während der
+Geschäftszeiten offen war.
 
-Examples: `null`, `11`
+Beispiele: `null`, `11`
 
 ### `create_article_sender`
 
-Sender of the article (System, Agent, Customer)
+Absender des Artikels (System, Agent, Kunde)
 
 ::: details Example
 
@@ -136,13 +140,13 @@ Sender of the article (System, Agent, Customer)
 
 ### `create_article_sender_id`
 
-ID of the user that created the article.
+ID des Benutzers, der den Artikel erstellt hat.
 
-Examples: `1`, `2`
+Beispiele: `1`, `2`
 
 ### `create_article_type`
 
-Information of first article of a ticket.
+Informationen zum ersten Artikel eines Tickets.
 
 ::: details Example
 
@@ -152,20 +156,20 @@ Information of first article of a ticket.
 
 ### `create_article_type_id`
 
-ID of the type of the first article.
+ID des Typs des ersten Artikels.
 
-Example: `5`
+Beispiel: `5`
 
 ### `created_at`
 
-Timestamp of ticket creation.
+Zeitstempel der Erstellung des Tickets.
 
-Example: `"2025-02-24T16:17:27.210Z"`
+Beispiel: `"2025-02-24T16:17:27.210Z"`
 
 ### `created_by`
 
-Details of the user who created the ticket. Have a look at the [user
-section](#user) for more information.
+Angaben zu dem Benutzer, der das Ticket erstellt hat. Weitere Informationen
+finden Sie im Abschnitt [Benutzer](#user).
 
 ::: details Example
 
@@ -175,51 +179,52 @@ section](#user) for more information.
 
 ### `created_by_id`
 
-ID of user who created the ticket.
+ID des Benutzers, der das Ticket erstellt hat.
 
-Example: `3`
+Beispiel: `3`
 
 ### `customer`
 
-Details of the customer of the ticket. Have a look at the [user
-section](#user) for more information.
+Angaben zum Kunden des Tickets. Weitere Informationen finden Sie im
+Abschnitt [Benutzer](#user).
 
 ### `customer_id`
 
-ID of customer who created the ticket.
+ID des Kunden, der das Ticket erstellt hat.
 
-Example: `8`
+Beispiel: `8`
 
 ### `escalation_at` <Badge type="info" text="SLA"/>
 
-Timestamp of the next applicable escalation, independent of escalation type.
+Zeitstempel der nächsten anwendbaren Eskalation, unabhängig von der
+Eskalationsart.
 
-Examples: `null`, `"2025-02-24T16:28:38.535Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.535Z"`
 
 ### `first_response_at` <Badge type="info" text="SLA"/>
 
-Timestamp of the first response to the customer (communication type).
+Zeitstempel der Ersten Reaktion auf den Kunden (vom Typ Kommunikation).
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `first_response_diff_in_min` <Badge type="info" text="SLA"/>
 
-Depends on `first_response_in_min` and tells how many minutes the first
-response took relative to the first response time of your SLA.
+Hängt von `first_response_in_min` ab und gibt an, wie viele Minuten die
+erste Reaktion im Verhältnis zur ersten Antwortzeit Ihres SLAs gedauert hat.
 
-Examples: `null`, `10`, `-6`
+Beispiele: `Null`, `10`, `-6`
 
 ### `first_response_in_min` <Badge type="info" text="SLA"/>
 
-Value in minutes about how long the first response took based on the
-business hours.
+Wert in Minuten, der angibt, wie lange die erste Reaktion auf der Grundlage
+der Geschäftszeiten gedauert hat.
 
-Examples: `null`, `11`
+Beispiele: `null`, `11`
 
 ### `group`
 
-Details of the group of the ticket. Have a look at the [group
-section](#group-1) for more information.
+Details zur Gruppe des Tickets. Weitere Informationen finden Sie im
+Abschnitt [Gruppe](#group-1).
 
 ::: details Example
 
@@ -229,63 +234,64 @@ section](#group-1) for more information.
 
 ### `group_id`
 
-ID of the current group
+ID der aktuellen Gruppe
 
-Example: `1`
+Beispiel: `1`
 
 ### `id`
 
-ID of the Ticket
+ID des Tickets
 
-Examples: `1`, `111`
+Beispiele: `1`, `111`
 
 ### `last_close_at`
 
-Last close time, set on each closing of ticket.
+Letzte Schließzeit, die bei jedem Schließen eines Tickets gesetzt wird.
 
-Examples: `null`, `"2025-02-03T14:50:20.673Z"`
+Beispiele: `null`, `"2025-02-03T14:50:20.673Z"`
 
 ### `last_contact_agent_at`
 
-Timestamp of last communication type contact of any agent.
+Zeitstempel des letzten Kontakts vom Typ Kommunikation eines beliebigen
+Agenten.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `last_contact_at`
 
-Timestamp of last contact/article of type communication, independent of who
-created it.
+Zeitstempel des letzten Kontakts/Artikels vom Typ Kommunikation, unabhängig
+davon, wer ihn erstellt hat.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `last_contact_customer_at`
 
-Timestamp of last contact/article of type communication from customer.
+Zeitstempel des letzten Kontakts/Artikels des Typs Kommunikation vom Kunden.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `mention_user_ids`
 
-Array with user IDs of mentioned or subscribed users.
+Array mit den IDs der erwähnten oder abonnierenden Benutzer.
 
-Examples: `[3, 5]`, `[]`
+Beispiele: `[3, 5]`, `[]`
 
 ### `note`
 
-Note of ticket, only set via console or API.
+Notizen zum Ticket, kann nur über die Konsole oder API gesetzt werden.
 
-Example: `null`
+Beispiel: `null`
 
 ### `number`
 
-Ticket number.
+Ticket-Nummer.
 
-Examples: `1010138`, `202006231010138`
+Beispiele: `1010138`, `202006231010138`
 
 ### `organization`
 
-Details of the customer organization of the ticket. Have a look at the
-[organization section](#organization-2) for more information.
+Details der Organisation des Kunden des Tickets. Weitere Informationen
+finden Sie im Abschnitt [Organisation](#organization-2).
 
 ::: details Example
 
@@ -295,14 +301,14 @@ Details of the customer organization of the ticket. Have a look at the
 
 ### `organization_id`
 
-ID of the customers organization of the ticket.
+ID der Organisation des Kunden, die das Ticket erstellt hat.
 
-Examples: `null`, `2`
+Beispiele: `null`, `2`
 
 ### `owner`
 
-Details of the user who is owner of the ticket. Have a look at the [user
-section](#user) for more information.
+Details zum Benutzer, der Besitzer des Tickets ist. Weitere Informationen
+finden Sie im Abschnitt [Benutzer](#user).
 
 ::: details Example
 
@@ -312,26 +318,27 @@ section](#user) for more information.
 
 ### `owner_id`
 
-User ID of the ticket owner.
+ID des Benutzers, der Besitzer des Tickets ist.
 
-Examples: `null`, `3`
+Beispiele: `null`, `3`
 
 ### `pending_time`
 
-Timestamp of set pending time. Only if a pending state is set and
-independent of the pending state type.
+Zeitstempel der hinterlegten "Warten auf..." Zeit. Nur wenn ein Status vom
+Typ "Warten auf..." gesetzt ist.
 
-Examples: `null`, `"2025-02-24T17:44:06.912Z"`
+Beispiele: `null`, `"2025-02-24T17:44:06.912Z"`
 
 ### `preferences`
 
-Special information for internal functions. May not be available in your
-system, contains information for internal system functions.
+Spezielle Informationen für interne Funktionen. Steht in Ihrem System
+möglicherweise nicht zur Verfügung, enthält Informationen für interne
+Systemfunktionen.
 
 ### `priority`
 
-Details of the priority state of the ticket. Have a look at the [priority
-section](#ticket-priority) for more information.
+Details zur Priorität des Tickets. Weitere Informationen finden Sie im
+Abschnitt [Priorität](#ticket-prioritat).
 
 ::: details Example
 
@@ -341,14 +348,14 @@ section](#ticket-priority) for more information.
 
 ### `priority_id`
 
-Priority ID of the ticket.
+ID der Priorität des Tickets.
 
-Example: `2`
+Beispiel: `2`
 
 ### `state`
 
-Details of the state of the ticket. Have a look at the [state
-section](#ticket-state) for more information.
+Details über den Status des Tickets. Weitere Informationen finden Sie im
+Abschnitt [Status](#ticket-status).
 
 ::: details Example
 
@@ -358,63 +365,65 @@ section](#ticket-state) for more information.
 
 ### `state_id`
 
-ID of current ticket state.
+ID des aktuellen Status des Tickets.
 
-Examples: `1`, `4`
+Beispiele: `1`, `4`
 
 ### `tags`
 
-Array with all tags attached to the ticket.
+Array mit allen Tags, die an das Ticket angehängt sind.
 
-Examples: `["order", "complaint"]`, `[]`
+Beispiele: `["Bestellung", "Beschwerde"]`, `[]`
 
 ### `time_unit`
 
-Accounted time units for ticket (total).
+Erfasste Zeiteinheiten für das Ticket (gesamt).
 
-Examples: `null`, `15`
+Beispiele: `null`, `15`
 
 ### `title`
 
-Title/subject of ticket.
+Titel/Betreff des Tickets.
 
-Examples: `Feedback Form`, `Need help`
+Beispiele: `Feedback-Formular`, `Brauche Hilfe`
 
-### `type` <Badge type="warning" text="deprecated"/>
+### `type` <Badge type="warning" text="veraltet"/>
 
-Value: `null`
+Wert: `null`
 
 ### `update_diff_in_min` <Badge type="info" text="SLA"/>
 
-Depends on `update_in_min` and tells how many minutes the last ticket update
-took relative to the update time setting of the SLA.
+Hängt von `update_in_min` ab und gibt an, wie viele Minuten die letzte
+Aktualisierung eines Tickets im Verhältnis zur Aktualisierungszeit des SLAs
+gedauert hat.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `update_escalation_at` <Badge type="info" text="SLA"/>
 
-Timestamp when the ticket would escalate in case the SLA update period is
-violated.
+Zeitstempel, zu dem das Ticket bei Verletzung der SLA-Aktualisierungsfrist
+eskalieren würde.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Beispiele: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `update_in_min` <Badge type="info" text="SLA"/>
 
-Value in minutes for how long the last ticket update took based on the
-business hours and update time.
+Wert in Minuten, der angibt, wie lange die letzte Aktualisierung eines
+Tickets gedauert hat, basierend auf den Geschäftszeiten und der
+Aktualisierungszeit.
 
-Examples: `null`, `5`, `-10`
+Beispiele: `Null`, `5`, `-10`
 
 ### `updated_at`
 
-Timestamp of last ticket update.
+Zeitstempel der letzten Aktualisierung des Tickets.
 
-Example: `"2025-02-24T16:28:38.303Z"`
+Beispiel: `"2025-02-24T16:28:38.303Z"`
 
 ### `updated_by`
 
-Details of the user who updated the ticket. Have a look at the [user
-section](#user) for more information.
+Details des Benutzers, der das Ticket aktualisiert hat. Weitere
+Informationen finden Sie im Abschnitt [Benutzer](#user).
 
 ::: details Example
 
@@ -424,9 +433,9 @@ section](#user) for more information.
 
 ### `updated_by_id`
 
-ID of user who updated the ticket.
+ID des Benutzers, der das Ticket aktualisiert hat.
 
-Examples: `1`, `3`
+Beispiele: `1`, `3`
 
 ## Ticket-Priorität
 
@@ -434,69 +443,70 @@ Der folgende Index enthält folgende Informationen: `*_ticket_priority`
 
 ### `active`
 
-Defines if the priority is active or not.
+Legt fest, ob die Priorität aktiv ist oder nicht.
 
-Values: `true`, `false`
+Werte: `true`, `false`
 
 ### `created_at`
 
-Timestamp of priority creation.
+Zeitstempel der Erstellung der Priorität.
 
-Example: `"2025-02-03T14:50:20.724Z"`
+Beispiel: `"2025-02-03T14:50:20.724Z"`
 
 ### `created_by_id`
 
-ID of the user who created the priority.
+ID des Benutzers, der die Priorität erstellt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `default_create`
 
-Defines if the priority is the default priority for ticket creation or not.
+Legt fest, ob die Priorität die Standardpriorität für die Erstellung von
+Tickets ist oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `id`
 
-ID of the priority.
+ID der Priorität.
 
-Example: `3`
+Beispiel: `3`
 
 ### `name`
 
-Name of the priority.
+Name der Priorität.
 
-Example: `"3 high"`
+Beispiel: `"3 hoch"`
 
 ### `note`
 
-Note for priority that has been set via console or API.
+Notiz zur Priorität, die über die Konsole oder API festgelegt wurde.
 
-Example: `"null"`
+Beispiel: `"null"`
 
 ### `ui_color`
 
-CSS class for the highlight color for tickets with this priority.
+CSS-Klasse für die Farbe der Hervorhebung für Tickets mit dieser Priorität.
 
-Examples: `"null"`, `"high-priority"`
+Beispiele: `"null"`, `"high-priority"`
 
 ### `ui_icon`
 
-CSS class for highlight icon for tickets with this priority.
+CSS-Klasse für das Symbol der Hervorhebung für Tickets mit dieser Priorität.
 
-Examples: `"null"`, `"important"`
+Beispiele: `"null"`, `"important"`
 
 ### `updated_at`
 
-Timestamp of last change.
+Zeitstempel der letzten Änderung.
 
-Example: `"2025-02-03T14:50:20.724Z"`
+Beispiel: `"2025-02-03T14:50:20.724Z"`
 
 ### `updated_by_id`
 
-ID of the user who performed the last update.
+ID des Benutzers, der die letzte Aktualisierung durchgeführt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ## Ticket-Status
 
@@ -504,56 +514,58 @@ Der folgende Index enthält folgende Informationen: `*_ticket_state`
 
 ### `active`
 
-Defines if state is active (available) or not.
+Legt fest, ob der Status aktiv (verfügbar) ist oder nicht.
 
-Values: `true`, `false`
+Werte: `true`, `false`
 
 ### `created_at`
 
-Timestamp of the creation of the state.
+Zeitstempel der Erstellung des Status.
 
-Example: `"2025-02-03T14:50:20.694Z"`
+Beispiel: `"2025-02-03T14:50:20.694Z"`
 
 ### `created_by_id`
 
-ID of user who created the state.
+ID des Benutzers, der den Status erstellt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `default_create`
 
-Defines if the state is the default state for ticket creation.
+Legt fest, ob der Status der Standardstatus bei der Erstellung von Tickets
+ist.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `default_follow_up`
 
-Defines if the state is the default follow up state on ticket follow ups.
+Legt fest, ob der Status der Standardstatus für Rückfragen zu einem Ticket
+ist.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `id`
 
-ID of the state.
+ID des Status.
 
-Example: `7`
+Beispiel: `7`
 
 ### `ignore_escalation`
 
-Defines if SLA calculation is ignored for this state.
+Legt fest, ob die SLA-Berechnung für diesen Status ignoriert wird.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `name`
 
-Name of the state.
+Name des Status.
 
-Example: `"pending close"`
+Beispiel: `"Warten auf Schließen"`
 
 ### `next_state`
 
-Contains all follow up state information if applicable, may not be available
-depending on the state type
+Enthält alle Informationen über den Status bei Rückfragen, falls zutreffend;
+kann je nach Art des Status nicht verfügbar sein
 
 ::: details Example
 
@@ -563,19 +575,19 @@ depending on the state type
 
 ### `next_state_id`
 
-ID of follow up state.
+ID des Status bei Rückfragen.
 
-Examples: `null`, `4`
+Beispiele: `null`, `4`
 
 ### `note`
 
-Note that has been set via console or API.
+Notiz, die über die Konsole oder API erstellt wurde.
 
-Example: `"null"`
+Beispiel: `"null"`
 
 ### `state_type`
 
-Contains all available information of the states type
+Enthält alle verfügbaren Informationen über den Statustyp
 
 ::: details Example
 
@@ -585,264 +597,267 @@ Contains all available information of the states type
 
 ### `state_type_id`
 
-ID of the state type.
+ID des Status-Typs.
 
-Example: `4`
+Beispiel: `4`
 
 ### `updated_at`
 
-Timestamp of last update of the state.
+Zeitstempel der letzten Aktualisierung des Status.
 
-Example: `"2025-02-03T14:50:20.694Z"`
+Beispiel: `"2025-02-03T14:50:20.694Z"`
 
 ### `updated_by_id`
 
-ID of user who performed the last update of the state.
+ID des Benutzers, der die letzte Aktualisierung des Status vorgenommen hat.
 
-Example: `1`
+Beispiel: `1`
 
 ## Artikel
 
 Der folgende Index enthält folgende Informationen: `*_ticket`
 
-Articles are part of the ticket index. To reduce complexity we decided to
-provide it in its own section.
+Artikel sind Teil des Ticket-Indexes. Um die Übersicht zu wahren beschreiben
+wir sie in einem eigenen Abschnitt.
 
 ### `body`
 
-Article body in plaintext.
+Text des Artikels als Plaintext.
 
-Example: `"Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe"`
+Beispiel: `"Hallo, \n\nBitte schicken Sie mir:\n1 [...] \nDanke\n\nJohn
+Doe"`
 
 ### `cc`
 
-The email-addresses set as CC.
+Die in CC eingetragenen E-Mail-Adressen.
 
-Examples: `null`, `alias@domain.tld`
+Beispiele: `null`, `alias@domain.tld`
 
 ### `content_type`
 
-Content type of article.
+Art des Inhalts des Artikels.
 
-Examples: `"text/html"`, `"text/plain"`
+Beispiele: `"text/html"`, `"text/plain"`
 
 ### `created_at`
 
-Timestamp of article creation.
+Zeitstempel der Erstellung des Artikels.
 
-Example: `"2025-02-22T03:47:59.290Z"`
+Beispiel: `"2025-02-22T03:47:59.290Z"`
 
 ### `created_by_id`
 
-ID of user who created the article.
+ID des Benutzers, der den Artikel erstellt hat.
 
-Example: `10`
+Beispiel: `10`
 
 ### `detected_language`
 
-Language code of detected language.
+Sprachcode der erkannten Sprache.
 
-Examples: `"en"`, `"de"`, `null`
+Beispiele: `"en"`, `"de"`, `null`
 
 ### `detected_language_name`
 
-Language name of detected language.
+Sprachenname der erkannten Sprache.
 
-Examples: `"English"`, `"German"`
+Beispiele: `"English"`, `"German"``
 
 ### `from`
 
-Name (and email address) of article creator.
+Name (und E-Mail-Adresse) des Verfassers des Artikels.
 
-Examples: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
+Beispiele: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
 
 ### `id`
 
-Internal ID of the article.
+Interne ID des Artikels.
 
-Example: `16`
+Beispiel: `16`
 
 ### `in_reply_to`
 
-"In-Reply-To" header from email, if applicable.
+"In-Reply-To" Header der E-Mail, falls zutreffend.
 
-Example: `null`
+Beispiel: `null`
 
 ### `internal`
 
-Defines if article is internal or not.
+Legt fest, ob ein Artikel intern ist oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `message_id`
 
-Message ID of email, if applicable.
+Message ID der E-Mail, falls zutreffend.
 
-Example: `null`
+Beispiel: `null`
 
 ### `origin_by_id`
 
-ID of user (or ID of original creator if created on behalf of another user)
-who created the article.
+ID des Benutzers, der den Artikel erstellt hat (oder des eigentlichen
+Erstellers, falls im Namen eines anderen Benutzers erstellt wurde).
 
-Example: `null`
+Beispiel: `null`
 
 ### `preferences`
 
-Internal preferences, may be empty.
+Interne Einstellungen, kann leer sein.
 
-Example: `{}`
+Beispiel: `{}`
 
 ### `reply_to`
 
-Contains the "Reply-To" header, if applicable.
+Enthält den "Reply-To" Header, falls zutreffend.
 
-Example: `null`
+Beispiel: `null`
 
 ### `sender_id`
 
-ID of the user who sent/created the article.
+ID des Benutzers, der den Artikel gesendet/erstellt hat.
 
-Example: `2`
+Beispiel: `2`
 
 ### `subject`
 
-Subject of the article.
+Betreff des Artikels.
 
-Example: `"My amazing subject"`
+Beispiel: `"Mein toller Betreff"`
 
 ### `ticket_id`
 
-ID of the ticket, the article belongs to.
+ID des Tickets, zu dem der Artikel gehört.
 
-Example: `9`
+Beispiel: `9`
 
 ### `to`
 
-Email address of "To" header or group which was set with this article.
+E-Mail-Adresse aus dem "To" Header oder die Gruppe, die mit diesem Artikel
+eingestellt wurde.
 
-Examples: `support@example.com`,`"Support"`, `null`
+Beispiele: `support@example.com`,`"Support"`, `null`
 
 ### `type_id`
 
-ID of type of article (e.g. phone, email, web).
+ID des Typs des Artikels (z.B. Telefon, E-Mail, Web).
 
-Example: `1`
+Beispiel: `1`
 
 ### `updated_at`
 
-Timestamp of last update of article.
+Zeitstempel der letzten Aktualisierung des Artikels.
 
 `"2025-02-22T03:47:59.290Z"`
 
 ### `updated_by_id`
 
-ID of the user who updated the article.
+ID des Benutzers, der den Artikel aktualisiert hat.
 
-Example: `10`
+Beispiel: `10`
 
 ## Benutzer
 
 ### `active`
 
-Defines, if a user is active.
+Definiert, ob ein Benutzer aktiv ist.
 
-Values: `true`, `false`
+Werte: `true`, `false`
 
 ### `address`
 
-Address of the user.
+Adresse des Benutzers.
 
-Examples: `""`, `"Hauptstraße 100, 99999 Berlin"`
+Beispiele: `""`, `"Hauptstraße 100, 99999 Berlin"`
 
 ### `city`
 
-Name of the city of the user.
+Name der Stadt des Benutzers.
 
-Examples: `""`, `"Berlin"`
+Beispiele: `""`, `"Berlin"`
 
 ### `country`
 
-Name of the country of the user.
+Name des Landes, das im Benutzer eingetragen ist.
 
-Examples: `""`, `"Germany"`
+Beispiele: `""`, `"Deutschland"`
 
 ### `created_at`
 
-Timestamp of creation of user.
+Zeitstempel der Erstellung des Benutzers.
 
-Example: `"2025-02-22T12:47:56.460Z"`
+Beispiel: `"2025-02-22T12:47:56.460Z"`
 
 ### `created_by_id`
 
-ID of user who created the user.
+ID des Benutzers, der den Benutzer erstellt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `department`
 
-Name of department.
+Name der Abteilung.
 
-Examples: `""`, `"IT"`
+Beispiele: `""`, `"IT"`
 
 ### `email`
 
-Email address of user.
+E-Mail-Adresse des Benutzers.
 
-Examples: `""`, `"nicole.braun@zammad.org"`
+Beispiele: `""`, `"nicole.braun@zammad.org"`
 
 ### `fax`
 
-Fax number of user.
+Faxnummer des Benutzers.
 
-Examples: `""`, `"+49 123 456 789 01"`
+Beispiele: `""`, `"+49 123 456 789 01"`
 
 ### `firstname`
 
-First name of the user.
+Vorname des Benutzers.
 
-Examples: `""`, `"John"`
+Beispiele: `""`, `"John"`
 
 ### `id`
 
-Internal ID of the user.
+Interne ID des Benutzers.
 
-Example: `8`
+Beispiel: `8`
 
 ### `last_login`
 
-Timestamp of the last login of the user.
+Zeitstempel der letzten Anmeldung des Benutzers.
 
-Examples: `null`, `"2025-02-23T12:47:56.460Z"`
+Beispiele: `null`, `"2025-02-23T12:47:56.460Z"`
 
 ### `lastname`
 
-Last name of the user.
+Nachname des Benutzers.
 
-Examples: `""`, `"Doe"`
+Beispiele: `""`, `"Doe"`
 
 ### `login`
 
-Login name of the user, always set and unique, can differ from email.
+Der Login-Name des Benutzers. Ist immer festgelegt und eindeutig und kann
+sich von der E-Mail-Adresse unterscheiden.
 
-Examples: `"auto-1234567"`, `"jdoe"`
+Beispiele: `"auto-1234567"`, `"jdoe"`
 
 ### `mobile`
 
-Mobile phone number of user.
+Mobiltelefonnummer des Benutzers.
 
-Examples: `""`, `"+49 123 456 789"`
+Beispiele: `""`, `"+49 123 456 789"`
 
 ### `note`
 
-Note of user object.
+Notiz, die im Benutzer-Objekt eingetragen ist.
 
-Examples: `""`, `"Some text."`
+Beispiele: `""`, `"Ein Text."`
 
 ### `organization`
 
-Details of the organization, the user is member of. Have a look at the
-[organization section](#organization-2) for more information.
+Details zur Organisation, in welcher der Benutzer Mitglied ist. Weitere
+Informationen finden Sie im Abschnitt [Organisation](#organisation-2).
 
 ::: details Example
 
@@ -852,37 +867,38 @@ Details of the organization, the user is member of. Have a look at the
 
 ### `organization_id`
 
-ID of the organization, the user is member of.
+ID der Organisation, in welcher der Benutzer Mitglied ist.
 
-Example: `3`
+Beispiel: `3`
 
 ### `out_of_office`
 
-Defines, if the user has activated the out of office function.
+Legt fest, ob der Benutzer die Abwesenheitsfunktion aktiviert hat.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `out_of_office_end_at`
 
-End date out of office period.
+Enddatum der Abwesenheitsperiode.
 
-Examples: `null`, `"2025-02-26"`
+Beispiele: `null`, `"2025-02-26"`
 
 ### `out_of_office_replacement_id`
 
-ID of the user who replaces this user during the out of office period.
+ID des Benutzers, der diesen Benutzer während des Abwesenheitszeitraums
+vertritt.
 
-Examples: `null`, `3`
+Beispiele: `null`, `3`
 
 ### `out_of_office_start_at`
 
-Begin date of out of office period.
+Datum des Beginns der Abwesenheitsperiode.
 
-Examples: `null`, `"2025-02-24"`
+Beispiele: `null`, `"2025-02-24"`
 
 ### `permissions`
 
-Set permissions of the user as array.
+Die festgelegten Berechtigungen des Benutzers als Array.
 
 ::: details Example
 
@@ -892,14 +908,14 @@ Set permissions of the user as array.
 
 ### `phone`
 
-Phone number of the user.
+Telefonnummer des Benutzers.
 
-Examples: `""`, `"+49 1234 567 890"`
+Beispiele: `""`, `"+49 1234 567 890"`
 
 ### `preferences`
 
-Details of the preferences of the user, may contain `notification_config`,
-`locale` and other internal system information.
+Details zu den Einstellungen des Benutzers, kann `notification_config`,
+`locale` und andere interne Systeminformationen enthalten.
 
 ::: details Example
 
@@ -909,51 +925,51 @@ Details of the preferences of the user, may contain `notification_config`,
 
 ### `role_ids`
 
-Array with role IDs which are assigned to the user.
+Array mit Rollen IDs, die dem Benutzer zugewiesen sind.
 
-Example: `[1, 2]`
+Beispiel: `[1, 2]`
 
 ### `street`
 
-Name of the street of the user.
+Name der Straße des Benutzers.
 
-Examples: `""`, `"Hauptstraße 100"`
+Beispiele: `""`, `"Hauptstraße 100"`
 
 ### `updated_at`
 
-Timestamp of last update of the user.
+Zeitstempel der letzten Aktualisierung des Benutzers.
 
-Example: `"2025-02-25T00:27:52.308Z"`
+Beispiel: `"2025-02-25T00:27:52.308Z"`
 
 ### `updated_by_id`
 
-ID of user who updated this user.
+ID des Benutzers, der diesen Benutzer aktualisiert hat.
 
-Example: `3`
+Beispiel: `3`
 
 ### `verified`
 
-Defines if the user has verified the account or not.
+Legt fest, ob der Benutzer das Konto verifiziert hat oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `vip`
 
-Defines if the user has VIP state or not.
+Legt fest, ob der Benutzer den Status VIP hat oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `web`
 
-Web URL of the user.
+Web URL des Benutzers.
 
-Examples: `""`, `"https://zammad.org"`
+Beispiele: `""`, `"https://zammad.org"`
 
 ### `zip`
 
-ZIP code of the user.
+Postleitzahl des Benutzers.
 
-Examples: `""`, `"123456"`
+Beispiele: `""`, `"123456"`
 
 ## Organisation
 
@@ -961,20 +977,20 @@ Der folgende Index enthält folgende Informationen: `*_Organisation`
 
 ### `active`
 
-Defines, if the organization is active or not.
+Definiert, ob die Organisation aktiv ist oder nicht.
 
-Values: `true`, `false`
+Werte: `true`, `false`
 
 ### `created_at`
 
-Timestamp of creation date of organization.
+Zeitstempel des Erstellungsdatums der Organisation.
 
-Example: `"2025-02-22T12:47:54.807Z"`
+Beispiel: `"2025-02-22T12:47:54.807Z"`
 
 ### `created_by`
 
-Details of the user who created the organization. Have a look at the [user
-section](#user) for more information.
+Details des Benutzers, der die Organisation erstellt hat. Weitere
+Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 
@@ -984,32 +1000,33 @@ section](#user) for more information.
 
 ### `created_by_id`
 
-ID of the user who created the organization.
+ID des Benutzers, der die Organisation erstellt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `domain`
 
-Domain of the organization.
+Domain der Organisation.
 
-Examples: `"null"`, `"example.com"`
+Beispiele: `"null"`, `"beispiel.com"`
 
 ### `domain_assignment`
 
-Defines if domain assignment is active or not, depends on `domain`.
+Legt fest, ob die Domainbasierte Zuweisung aktiv ist oder nicht, abhängig
+von `domain`.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `id`
 
-Internal ID of the organization.
+Interne ID der Organisation.
 
-Example: `1`
+Beispiel: `1`
 
 ### `members`
 
-Array with details of each user who is a member of the organization. Have a
-look at the [user section](#user) for more information.
+Array mit Details zu jedem Benutzer, der Mitglied der Organisation
+ist. Weitere Informationen finden Sie im Abschnitt [Benutzer](#user).
 
 ::: details Example
 
@@ -1019,32 +1036,32 @@ look at the [user section](#user) for more information.
 
 ### `name`
 
-Name of the organization.
+Name der Organisation.
 
-Example: `"Fast Lane Hardware Inc."`
+Beispiel: `"Fast Lane Hardware Inc."`
 
 ### `note`
 
-Note of organization object.
+Notiz zur Organisation.
 
-Example: `"IT hardware and custom PC builds."`
+Beispiel: `"IT-Hardware und Custom-PCs."`
 
 ### `shared`
 
-Defines if it is a "shared organization" or not.
+Legt fest, ob es sich um eine "teilende Organisation" handelt oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `updated_at`
 
-Timestamp of last update of the organization.
+Zeitstempel der letzten Aktualisierung der Organisation.
 
-Example: `"2025-02-22T12:47:54.807Z"`
+Beispiel: `"2025-02-22T12:47:54.807Z"`
 
 ### `updated_by`
 
-Details of the user who updated the organization. Have a look at the [user
-section](#user) for more information.
+Angaben zu dem Benutzer, der die Organisation aktualisiert hat. Weitere
+Informationen finden Sie im Abschnitt [Benutzer](#user).
 
 ::: details Example
 
@@ -1054,15 +1071,15 @@ section](#user) for more information.
 
 ### `updated_by_id`
 
-ID of user who updated the organization.
+ID des Benutzers, der die Organisation aktualisiert hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `vip`
 
-Defines if the organization has VIP status or not.
+Legt fest, ob die Organisation VIP-Status hat oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ## Gruppe
 
@@ -1070,31 +1087,32 @@ Der folgende Index enthält folgende Informationen: `*_group`
 
 ### `active`
 
-Defines, if the group is active or not.
+Legt fest, ob die Gruppe aktiv ist oder nicht.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `assignment_timeout`
 
-Time in minutes, an agent can be inactive until the ownership is removed.
+Zeit in Minuten, die ein Agent inaktiv sein kann, bis der Besitzer entfernt
+wird.
 
-Examples: `null`, `30`
+Beispiele: `null`, `30`
 
 ### `created_at`
 
-Timestamp of creation of group.
+Zeitstempel der Erstellung der Gruppe.
 
-Example: `"2025-02-24T23:55:06.980Z"`
+Beispiel: `"2025-02-24T23:55:06.980Z"`
 
 ### `created_by_id`
 
-ID of the user who created the group.
+ID des Benutzers, der die Gruppe erstellt hat.
 
-Example: `1`
+Beispiel: `1`
 
 ### `email_address`
 
-Details about the email address of the group.
+Details zur E-Mail-Adresse der Gruppe.
 
 ::: details Example
 
@@ -1104,43 +1122,45 @@ Details about the email address of the group.
 
 ### `email_address_id`
 
-ID of the email address of the group.
+ID der E-Mail Adresse der Gruppe.
 
-Example: `3`
+Beispiel: `3`
 
 ### `follow_up_assignment`
 
-Defines, if ticket owners are still assigned after a follow up.
+Legt fest, ob Besitzer von Tickets nach einer Rückfrage noch zugewiesen
+werden.
 
-Values: `false`, `true`
+Werte: `false`, `true`
 
 ### `follow_up_possible`
 
-Defines if a follow up on a closed ticket is possible or not.
+Legt fest, ob eine Rückfrage in einem geschlossenen Ticket möglich ist oder
+nicht.
 
-Values: `"yes"`, `"no"`
+Werte: `"yes"`, `"no"`
 
 ### `id`
 
-Internal ID of the group.
+Interne ID der Gruppe.
 
-Example: `1`
+Beispiel: `1`
 
 ### `name`
 
-Name of the group.
+Name der Gruppe.
 
-Examples: `"Support"`, `"IT"`
+Beispiele: `"Support"`, `"IT"`
 
 ### `note`
 
-Note for the group object.
+Notiz zur Gruppe.
 
-Example: `null`
+Beispiel: `null`
 
 ### `signature`
 
-Details of the signature of the group.
+Details zur Signatur der Gruppe.
 
 ::: details Example
 
@@ -1150,21 +1170,21 @@ Details of the signature of the group.
 
 ### `signature_id`
 
-Internal ID of the signature.
+Interne ID der Signatur.
 
-Example: `1`
+Beispiel: `1`
 
 ### `updated_at`
 
-Timestamp of the last group update.
+Zeitstempel der letzten Aktualisierung der Gruppe.
 
-Example: `"2025-02-24T23:55:06.980Z"`
+Beispiel: `"2025-02-24T23:55:06.980Z"`
 
 ### `updated_by_id`
 
-ID of the user who updated the group.
+ID des Benutzers, der die Gruppe aktualisiert hat.
 
-Example: `3`
+Beispiel: `3`
 
 ## CTI-Protokoll
 
@@ -1172,85 +1192,86 @@ Der folgende Index enthält folgende Informationen: `*_cti_log`
 
 ### `call_id`
 
-Unique ID of the call.
+Eindeutige ID des Anrufs.
 
-Example: `6`
+Beispiel: `6`
 
 ### `comment`
 
-Optional comment.
+Optionaler Kommentar.
 
-Example: `""`
+Beispiel: `""`
 
 ### `created_at`
 
-Creation date of call.
+Datum der Erstellung des Aufrufs.
 
-Example: `"2025-02-22T11:48:01.703Z"`
+Beispiel: `"2025-02-22T11:48:01.703Z"`
 
 ### `direction`
 
-Call direction.
+Richtung des Anrufs.
 
-Values: `in`, `out`
+Werte: `in`, `out`
 
 ### `done`
 
-Defines if call displays as "to do" within UI.
+Legt fest, ob der Anruf in der Benutzeroberfläche als "to do" angezeigt
+wird.
 
-Values: `true`, `false`
+Werte: `true`, `false`
 
 ### `duration_talking_time`
 
-Call duration time in seconds.
+Dauer des Anrufs in Sekunden.
 
-Example: `27`
+Beispiel: `27`
 
 ### `duration_waiting_time`
 
-Waiting time in seconds until call got answered.
+Wartezeit in Sekunden, bis der Anruf entgegengenommen wurde.
 
-Example: `77`
+Beispiel: `77`
 
 ### `end_at`
 
-Timestamp of call end.
+Zeitstempel des Anrufendes.
 
-Example: `"2025-02-25T08:49:40.647Z"`
+Beispiel: `"2025-02-25T08:49:40.647Z"`
 
 ### `from`
 
-Calling number.
+Anrufende Nummer.
 
-Example: `491711234567890`
+Beispiel: `491711234567890`
 
 ### `from_comment`
 
-Name of calling number, if applicable.
+Name zur anrufenden Nummer, falls zutreffend.
 
-Examples: `null`, `"John"`, `"Doe"`
+Beispiele: `null`, `"John"`, `"Doe"`
 
 ### `from_pretty`
 
-Pretty version of `from` with spacing and added `+`.
+Hübsche Version von`from` mit Abständen und hinzugefügtem `+`.
 
-Example: `+49 171 1234567890`
+Beispiel: `+49 171 1234567890`
 
 ### `id`
 
-Internal ID of log entry.
+Interne ID des Protokolleintrags.
 
-Example: `8`
+Beispiel: `8`
 
 ### `initialized_at`
 
-Timestamp of call initialization, usually matches `created_at`.
+Zeitstempel der Anrufinitialisierung, entspricht normalerweise `created_at`.
 
-Example: `"2025-02-25T08:47:56.753Z"`
+Beispiel: `"2025-02-25T08:47:56.753Z"`
 
 ### `preferences`
 
-Details of preferences, internal information.
+Details zu Einstellungen, interne Informationen.
 
 ::: details Example
 
@@ -1260,45 +1281,45 @@ Details of preferences, internal information.
 
 ### `queue`
 
-Queue, the call was answered in.
+Warteschlange, in der der Anruf angenommen wurde.
 
-Examples: `null`, `491711234567890`
+Beispiele: `null`, `491711234567890`
 
 ### `start_at`
 
-Timestamp the call was answered.
+Zeitstempel, zu dem der Anruf entgegengenommen wurde.
 
-Example: `"2025-02-25T08:49:13.050Z"`
+Beispiel: `"2025-02-25T08:49:13.050Z"`
 
 ### `state`
 
-Last state of the call.
+Letzter Status des Anrufs.
 
-Examples: `hangup`, `voicemail`
+Beispiele: `hangup`, `voicemail`
 
 ### `to`
 
-Dialed number.
+Gewählte Nummer.
 
-Example: `491711234567890`
+Beispiel: `491711234567890`
 
 ### `to_comment`
 
-Display name of called number, if applicable.
+Anzeige des Namens zur angerufenen Nummer, falls zutreffend.
 
 `"null"`, `"John"`, `"Doe"`
 
 ### `to_pretty`
 
-Pretty version of `to`.
+Hübsche Version von `to`.
 
-Example: `+49 171 1234567890`
+Beispiel: `+49 171 1234567890`
 
 ### `updated_at`
 
-Last update of entry.
+Letzte Aktualisierung des Eintrags.
 
-Example: `"2025-02-25T08:49:40.647Z"`
+Beispiel: `"2025-02-25T08:49:40.647Z"`
 
 ## Chat-Sitzung
 
@@ -1306,7 +1327,7 @@ Der folgende Index enthält folgende Informationen: `*_chat_session`
 
 ### `chat`
 
-Details of the chat topic.
+Details zum Thema des Chats.
 
 ::: details Example
 
@@ -1316,31 +1337,31 @@ Details of the chat topic.
 
 ### `chat_id`
 
-ID of the chat topic.
+ID des Chat-Themas.
 
-Example: `1`
+Beispiel: `1`
 
 ### `created_at`
 
-Timestamp of chat creation
+Zeitstempel der Chaterstellung
 
 `"2025-02-25T10:26:24.376Z"`
 
 ### `created_by_id` <Badge type="warning" text="deprecated"/>
 
-ID of user who created the chat.
+ID des Benutzers, der den Chat erstellt hat.
 
-Value: `null`
+Wert: `null`
 
 ### `id`
 
-ID of chat session.
+ID der Chatsitzung.
 
-Example: `1`
+Beispiel: `1`
 
 ### `messages`
 
-Array with all messages of the chat.
+Array mit allen Nachrichten des Chats.
 
 ::: details Example
 
@@ -1350,13 +1371,13 @@ Array with all messages of the chat.
 
 ### `name`
 
-The name for the chat user which was set by the agent, if applicable.
+Der Name für den Benutzer des Chats, der ggf. vom Agenten festgelegt wurde.
 
-Examples: `null`, `"John Doe"`
+Beispiele: `Null`, `"John Doe"`
 
 ### `preferences`
 
-Various internal Meta data of the session_id
+Verschiedene interne Metadaten der session_id
 
 ::: details Example
 
@@ -1366,37 +1387,38 @@ Various internal Meta data of the session_id
 
 ### `session_id`
 
-Unique ID of chat session.
+Eindeutige ID der Chatsitzung.
 
-Example: `92f2909631f1ad5ff4d5d1e046952be8`
+Beispiel: `92f2909631f1ad5ff4d5d1e046952be8`
 
 ### `state`
 
-Current state of chat session.
+Aktueller Status der Chatsitzung.
 
-Example: `closed`
+Beispiel: `closed`
 
 ### `tags`
 
-Tags which got applied to the chat session by the agent, if applicable.
+Tags, die der Agent auf die Chatsitzung angewendet hat, falls zutreffend.
 
-Example: `["order", "refund"]`
+Beispiel: `["Bestellung", "Erstattung"]`
 
 ### `updated_at`
 
-Timestamp of last update of the chat.
+Zeitstempel der letzten Aktualisierung des Chats.
 
-Example: `"2025-02-25T10:27:03.341Z"`
+Beispiel: `"2025-02-25T10:27:03.341Z"`
 
 ### `updated_by_id`
 
-ID of the user who updated the chat session the last time.
+ID des Benutzers, der die Chatsitzung das letzte Mal aktualisiert hat.
 
-Examples: `null`, `3`
+Beispiele: `null`, `3`
 
 ### `user`
 
-Details of chat agent. See [user section](#user) for more information.
+Details zum Chat Agent. Siehe Abschnitt [Benutzer](#benutzer) für weitere
+Informationen.
 
 ::: details Example
 
@@ -1406,6 +1428,6 @@ Details of chat agent. See [user section](#user) for more information.
 
 ### `user_id`
 
-ID of the agent of the chat.
+ID des Agenten des Chats.
 
-Example: `3`
+Beispiel: `3`

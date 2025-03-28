@@ -1,9 +1,9 @@
 ---
 order: 7
-title: 'Knowledge Base'
+title: 'База знања'
 ---
 
-# Knowledge Base
+# База знања
 
 Zammad has multiple knowledge base related endpoints. The most important -
 but not all - are covered in this documentation. You can find the general

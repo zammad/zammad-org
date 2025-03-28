@@ -11,12 +11,12 @@ order: 1
 
 Можете допринети:
 
-- [Изворном коду](contribute#zammad-source-code)
-- [Документацији](/sr/documentation/use/general)
-- [Преводу](contribute#translation)
+- [Изворном коду](contribute#zammad-изворни-кoд)
+- [Документацији](contribute#документација)
+- [Преводу](contribute#превод)
 
-Please have a look at our the sections below about how to contribute. All
-repos can be found on [Github](https://github.com/zammad){target=_blank}.
+Погледајте наш одељак како можете да допринесете. Све репозиторије можете
+пронаћи на [GitHub](https://github.com/zammad){target=_blank}-у.
 
 ## Zammad изворни кoд
 
@@ -59,18 +59,18 @@ repos can be found on [Github](https://github.com/zammad){target=_blank}.
 
 Да ли желите да допринесете Zammad документацији?
 
-Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
-(targeting the `develop` branch) with your changes and make sure to follow
-the [style and content guide](style-guide). Consider to have a look at the
-[repo's
-README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}
-too.
+Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org>
+(заснован на `develop` огранку) са вашим изменама и обавезно испратите
+[водич кроз стил и садржај](style-guide). Узмите у обзир и инструкције у
+[README датотеци
+репозиторија](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
 
-The documentation you are reading is available on zammad.org and
-next.zammad.org and is built with Vitepress. The source files are written in
-Markdown. Make sure to change the English source files only which are placed
-under `/src/en/`. The translation is done via Weblate and will overwrite any
-changes in the language specific folders (except `/src/en/`).
+Документација коју читате је доступна под zammad.org и next.zammad.org и
+направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
+формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
+које су под `/src/en/` директоријумом. Преводи се обрађују преко Weblate
+апликације и преписаће све измене направљене под директоријумима специфичних
+језика (осим `/src/en/`).
 
 ## Превод
 
@@ -92,8 +92,8 @@ Weblate функције и да дубље уђете у проблематик
 
 ### Основе
 
-The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
-When you click in the top menu under "_Projects > Browse all projects_", you can find the overview of the projects:
+Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у Weblate апликацији.
+Преглед пројеката можете пронаћи кликом на мени при врху под „_Projects > Browse all projects_”:
 
 ![Снимак екрана који приказује пројекте превода у Weblate
 менију](/screenshots/weblate-overview-docs.png)
@@ -102,7 +102,7 @@ When you click in the top menu under "_Projects > Browse all projects_", you can
 
 - Документација
   - Нова документација на next.zammad.org
-  - New Documentation at zammad.org
+  - Нова документација на next.zammad.org
 - Zammad
   - Zammad (`develop`, развојна верзија)
   - Zammad (`stable` верзија)
@@ -110,19 +110,19 @@ When you click in the top menu under "_Projects > Browse all projects_", you can
 
 ::: tip
 
-It should be no big difference which branch you choose to translate. When Weblate detects the same strings in different
-branches, they will be used for all branches and only have to be translated once. If in doubt, choose the `develop`
-version.
+Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate детектује идентичне низове текста у различитим
+огранцима, користиће исти превод за све огранке и тиме се преводи само једном. Уколико нисте сигурни, одаберите `develop`
+верзију.
 :::
 
-After selecting a project (Documentation or Zammad), you will see different
-sub-projects and their translation status summarized for all
-languages. These overviews may show a quite low translation rate, which is
-due to the amount of active languages.
+По одабиру пројекта (Documentation или Zammad), видећете различите
+под-пројекте и њихов статус превода разложен по свим језицима. Могуће је да
+ови прегледи прикажу ниску стопу превода, услед броја активних преводиоца за
+различите језике.
 
-Here you can select one of the "components", which is more or less the same as different versions. After selecting one
-of them, you can see the status of translation for the different languages, as you can see in the following screenshot
-with an example from _Documentation > User Documentation (latest)_:
+Овде можете одабрати једну од „компонената”, које су мање или више идентичне различитим верзијама. По одабиру једне,
+можете видети статус превода по различитим језицима, по узору на следећи снимак екрана
+са примером из _Documentation > User Documentation (latest)_:
 
 ![Снимак екрана који приказује статус первода по различитим језицима за
 корисничку документацију](/screenshots/weblate-translations-user-docs.png)
@@ -148,35 +148,34 @@ Weblate-у](/screenshots/weblate-ui.png)
    Zammad-а. Термини из речника ће бити наглашени у изворном тексту такође.
 4. **Неке корисне картице**:
     - **Nearby strings**: вам приказује контекст речи или низа текста
-    - **Automatic suggestions**: here you can find automatic suggestions
-      from DeepL and suggestions from similar strings, which are already
-      translated. Use the "_Clone to translation_" button to insert it in
-      the translation field to apply changes. Use the "_Accept_" button to
-      accept the suggested translation and automatically switch to the next
-      string.
+    - **Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге
+      од DeepL сервиса и предлоге на основу сличног текста, који је већ
+      преведен. Користите дугме „_Clone to translation_” да убаците текст у
+      поље превода и снимите измене. Користите дугме „_Accept_” да
+      прихватите предложен предлог и одмах пређене на следећи низ текста.
     - **Other languages**: овде можете добити преглед који језици већ садрже
       превод и саме преводе (може бити корисно за сличне језике).
 
 ### Решавање проблема
 
-And finally some examples for "special" source strings, you might see in the
-documentation projects. You should also have a look at the [style
-guide](style-guide) where you can find more information about the syntax and
-the usage of Markdown/Vitepress features.
+Коначно, ево пар примера за „специјалне” низове текста на које можете наићи
+у пројектима документације. Обавезно погледајте и [водич кроз
+стил](style-guide) где можете пронаћи више информација о синтакси и
+коришћењу Markdown/Vitepress функција.
 
 - **\`example-string\`**
 
-    This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
-    \` before and after the string in your translation.
+    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може превести, или не. У сваком случају, користите
+    \` пре и после низа текста у вашем преводу.
 
 - **\[example\](/en/path/to/document-or-website\)**
 
-    This is a link to another page, including the language code. The above "example" is the text, which is shown as
-    link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
-    translating in. Make sure that your language is already present on zammad.org (check it by using the language
-    switcher). Otherwise contact us if you want to have your language activated.
+    Ово је линк на другу страницу, и укључује код језика. Текст „example” изнад биће приказан као
+    текст линка. Овај део можете превести. Што се тиче путање, само замените `en` са кодом језика на који
+    преводите. Обратите пажњу да ли је ваш језик већ омогућен на zammad.org (проверите преко избора
+    језика). У супротном обратите нам се уколико желите да омогућимо ваш језик (у случају да је већина текста већ преведена).
 
 - **\*\*пример текста\*\***
 
-    Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
-    markup (e.g. `**` or `_`) should be adopted true to meaning.
+    Ознака текста (нпр. подебљано, курзив=. Алтернатива: \_пример текста\_. Ови низови текста се могу преводити, али
+    ознаке (нпр. `**` ili `_`) би требало прилагодити правом значењу.

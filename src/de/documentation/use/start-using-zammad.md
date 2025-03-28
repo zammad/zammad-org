@@ -91,12 +91,11 @@ Anwendungsfall.
 
 ### Über Übersichten
 
-Wenn Sie nach neuen Tickets suchen, an denen Sie arbeiten möchten, sollten
-Sie zuerst einen Blick
-in die Übersichten werfen. Sie können ihn entweder durch Klicken auf die
-Schaltfläche **Übersichten**
-in der Navigationsleiste oder das Tastaturkürzel [[o]] öffnen.
-Sie können Übersichten als eine Art Ticket-Listen betrachten.
+Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie
+zuerst in die Übersichten schauen. Sie können sie entweder durch Klicken auf
+die Schaltfläche **Übersichten** in der Navigationsleiste öffnen oder das
+Tastaturkürzel [[o]] verwenden.  Sie können die Übersichten als eine Art von
+Ticket-Listen betrachten.
 
 Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
 können. Zum Beispiel gibt es eine Übersicht namens "Offene Tickets". Dies
@@ -111,11 +110,9 @@ Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 ### Über die Suche
 
 Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten
-sichtbar sein kann oder auch nicht,
-können Sie die Suche verwenden. Sie finden diese in der oberen
-linken Ecke in der Navigations-Seitenleiste. Wählen Sie sie entweder mit der
-Maus aus oder verwenden Sie das
-Tastaturkürzel, indem Sie einfach [[s]] drücken.
+sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie
+finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie
+entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]].
 
 Nachdem Sie das Suchfeld aktiviert haben, können Sie Ihre zuletzt
 angesehenen Elemente sowie Ihre letzten Suchanfragen sehen.

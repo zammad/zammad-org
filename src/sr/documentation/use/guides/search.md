@@ -88,7 +88,7 @@ state.name: open AND (article.from:me OR article.from:somebody)
 | article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
 | article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
 
-### Combining Search Phrases
+### Комбиновање фраза за претрагу
 
 You can combine search phrases by using `AND`, `OR` and `TO` and even
 separate them with `()`. If you want to exclude search results, you can use

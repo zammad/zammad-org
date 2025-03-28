@@ -53,10 +53,10 @@ es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
 sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
 möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be code), the relevance has to be considered. If parts with a common
-use case are missing, it should be intended to include them in the
-documentation.
+Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie ja quasi
+Code), muss die Relevanz berücksichtigt werden. Wenn Teile mit einem
+gebräuchlichen Anwendungsfall fehlen, sollte in Erwägung gezogen werden,
+diese in die Dokumentation aufzunehmen.
 
 ## Stil und Regeln
 
@@ -139,27 +139,28 @@ aufgeführt.
   vs. `**fett**`).
 - Mehrere Überschriften mit gleichem Inhalt sind nicht zulässig.
 - Jedes Dokument muss genau eine `h1`-Überschrift als Titel haben.
-- Resolution of manual full page screenshots for _mobile view_ is 400x867
-  pixels.
-- Resolution of manual full page screenshots for _desktop view_ is 1920x1080
-  pixels.
+- Die Auflösung von manuellen Screenshots der ganzen Seite für die
+  _Mobilansicht_ beträgt 400x867 Pixel.
+- Die Auflösung von manuellen Screenshots der ganzen Seite für die
+  _Desktop-View_ beträgt 1920x1080 Pixel.
 
 ### Grundlegende Formatierungsbeispiele
 
 #### Text und UI
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Buttons                   | `Sign in`                     | \`Sign in\`                     |
-| Fields and UI elements    | **Name**                      | \*\*Name\*\*                    |
-| Locations/paths           | _Settings > Channels > Email_ | \_Settings > Channels > Email\_ |
-| Keyboard shortcuts        | [[x]]                         | \[\[x\]\]                       |
+| Typ                    | Hervorhebung in Dokumentation     | Markdown Syntax                     |
+|------------------------|-----------------------------------|-------------------------------------|
+| Buttons                | `Sign in`                         | \`Sign in\`                         |
+| Felder und UI-Elemente | **Name**                          | \*\*Name\*\*                        |
+| Orte/Pfade             | _Einstellungen > Kanäle > Email_  | \_Einstellungen > Kanäle > Email\_  |
+| Tastaturkürzel         | [[x]]                             | \[\[x\]\]                           |
 
 #### Struktur der Überschrift
 
-Every documentation file must include exactly one title on top level (like
-`# Title`). Levels below should always contain at least two sections. If
-only one section exists, consider merging it with the higher-level content.
+Jede Dokumentationsdatei muss genau einen Titel auf der obersten Ebene
+enthalten (z.B. `# Titel`). Die darunter liegenden Ebenen sollten immer
+mindestens zwei Abschnitte enthalten. Wenn nur ein Abschnitt vorhanden ist,
+sollte er mit dem übergeordneten Inhalt zusammengelegt werden.
 
 Beispiel:
 
@@ -173,16 +174,16 @@ Beispiel:
 
 `## Abschnitt 2`
 
-#### Section with Badge <Badge type="warning" text="custom text" />
+#### Überschrift mit Badge <Badge type="warning" text="angepasster Text" />
 
-This section title uses a badge of the type "warning". There are other
-badges available, see
+Dieser Abschnittstitel verwendet ein Badge des Typs "warning". Es sind auch
+andere Badges verfügbar, siehe
 <https://vitepress.dev/reference/default-theme-badge#usage>.
 
 ::: details Usage
 
 ```md
-Text/title to add a badge <Badge type="warning" text="custom text" />
+Text/Titel, dem ein Badge hinzugefügt werden soll <Badge type="warning" text="freier Text" />
 ```
 
 :::
@@ -190,7 +191,7 @@ Text/title to add a badge <Badge type="warning" text="custom text" />
 #### Anpassbare Boxen
 
 ::::: info
-This is an info box.
+Dies ist eine Infobox.
 
 :::: details Usage
 
@@ -204,13 +205,13 @@ Dies ist eine Infobox.
 :::::
 
 ::::: tip
-This is a tip.
+Dies ist ein Tipp.
 
 :::: details Usage
 
 ```md
 ::: tip
-This is a tip box.
+Dies ist eine Tipp-Box.
 :::
 ```
 
@@ -218,13 +219,13 @@ This is a tip box.
 :::::
 
 ::::: warning
-This is a warning.
+Dies ist eine Warnung.
 
 :::: details Usage
 
 ```md
 ::: warning
-This is a warning box.
+Dies ist eine Warnungs-Box.
 :::
 ```
 
@@ -232,7 +233,7 @@ This is a warning box.
 :::::
 
 ::::: danger
-This is a dangerous warning.
+Dies ist eine gefährliche Warnung.
 
 :::: details Usage
 
@@ -246,14 +247,14 @@ Dies ist eine gefährliche Warnung.
 :::::
 
 :::: details
-This is a details block.
+Dies ist ein Detailblock.
 
-Usage:
+Verwendung:
 
-```md
+``md
 
 ::: details Box title shown in collapsed state
-This is the content shown in the expanded state.
+Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.
 :::
 
 ```
@@ -272,9 +273,9 @@ Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" 
 ::: details Usage
 
 ```md
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term
-  with another line.
+Erster Begriff <Badge type="info" text="tag1" />
+: Dies ist die Definition des ersten Begriffs
+  mit einer weiteren Zeile.
 ```
 
 :::
