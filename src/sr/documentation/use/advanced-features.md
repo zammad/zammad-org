@@ -5,11 +5,11 @@ title: 'Напредне функције'
 
 # Напредне функције
 
-## Користите пречице на тастатури
+## Keyboard Shortcuts
 
 TODO
 
-## Подесите понашање након освежавања тикета
+## Ticket Update Behavior
 
 ![Снимак екрана приказује мени понашања након
 освежавања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
@@ -40,7 +40,7 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 [[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
-## Use Text Modules
+## Text Modules
 
 ![Screenshot shows text modules
 feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
@@ -80,8 +80,8 @@ using it in a ticket.
 
 **Како?**
 
-Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова
-из имена колеге кога желите да поменете.
+While writing a ticket article, simply type `@@` and enter some letters of
+the name of the colleague you want to mention.
 
 Zammad приказује листу свих корисника који одговарају вашем уносу и можете
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
@@ -94,8 +94,9 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-If you are interested in the progress of a ticket, you can subscribe to
-it. This means you will receive notifications for each update.
+If you are interested in the progress of a ticket, you are not the owner,
+you can subscribe to it. This means you will receive notifications for each
+update.
 
 **Како?**
 
@@ -105,7 +106,7 @@ subscribed. Switch the toggle off to stop the notification. The avatars
 displayed show you who has subscribed to the ticket and is therefore
 notified of updates.
 
-## Користите макро
+## Макрои
 
 ![Снимак екрана који приказује мени радњи
 макроа](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
@@ -132,7 +133,7 @@ notified of updates.
 Такође можете извршити макро над неколико тикета одједном. Погледајте
 [масовне радње](#масовне-радње) за упутство.
 
-## Користите ознаке
+## Ознаке
 
 ![Снимак екрана приказује одељак ознака у траци тикета са
 стране](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
@@ -147,14 +148,14 @@ notified of updates.
 
 **Како?**
 
-У бочној траци тикета, можете пронаћи одељак под насловом „Ознаке”. Додајте
-ознаку кликом на дугме `+`. Можете изабрати између постојећих и нових ознака
-(уколико ваш администратор није искључио додавање нових ознака).
+In the ticket sidebar, you can find a section which is labels as
+**Tags**. Add a tag by clicking on the `+` button. You can select existing
+tags and add new ones (if your admin didn't disable to add new tags).
 
 Уклоните их једноставним кликом на дугме `X`. Обратите пажњу да неће бити
 потврдног дијалога за брисање ознаке са тикета.
 
-## Користите списак задатака
+## Checklists
 
 ![Снимак екрана приказује списак задатака у бочној
 траци](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
@@ -168,9 +169,9 @@ notified of updates.
 
 **Како?**
 
-Одаберите језичак „Списак задатака” у бочној траци. Ако га не видите, ваш
-Zammad администратор га је искључио. Списак задатака можете додати или
-уређивати само ако имате дозволу да освежавате тикет.
+Select the **Checklist** tab in the sidebar. If you can't see it, your
+Zammad admin disabled it. You can only add or edit a checklist, if you have
+the permission to edit the ticket.
 
 У траци списка задатака можете:
 
@@ -340,7 +341,7 @@ The available changes you can apply to tickets are:
 - Стање је промењено у „спојено”
 - Тикет је повезан са својим „надређеним” тикетом
 
-## Раздели тикет
+## Split Tickets
 
 ![Снимак екрана приказује радњу чланка за раздељивање у падајућем
 менију](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
@@ -368,7 +369,7 @@ case if a customer has a technical question and wants to place an order.
 **Зашто?**
 
 When tickets about related issues arise, they can be linked to each other
-for easier reference.  [Merged](#merge-tickets) and [split](#split-ticket)
+for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets)
 tickets are automatically linked.
 
 **Како?**

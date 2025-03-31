@@ -38,22 +38,25 @@ order: 1
 - Ово је тренутно (необјављено) развојно стање следећег већег издања
   (постаће нови `stable` огранак).
 - Не користите у продукцији!
-- Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
-  нашу [безбедносну
-  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well
+  as security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable`
 
 - Ово је тренутно стабилно издање, нпр. Zammad 5.2.
 - Користите овај огранак за инсталације у продукцији.
-- Подржано је са исправкама грешака и сигурносних пропуста – погледајте и
-  нашу [безбедносну
-  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well
+  as security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable-x.y`
 
 - Ово су огранци старих Zammad издања као `stable-5.1` за Zammad 5.1.
-- Нису подржане исправке грешака и сигурносних пропуста.
+- Не користите у продукцији!
+- Bug fixes and security updates are not applied to these branches.
 
 ## Документација
 
@@ -163,19 +166,16 @@ Weblate-у](/screenshots/weblate-ui.png)
 стил](style-guide) где можете пронаћи више информација о синтакси и
 коришћењу Markdown/Vitepress функција.
 
-- **\`example-string\`**
+**\`example-string\`**
+: This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
+  \` before and after the string in your translation.
 
-    Ово ће бити приказано као `example-string`. У зависности од контекста, ово се може превести, или не. У сваком случају, користите
-    \` пре и после низа текста у вашем преводу.
+**\[example\](/en/path/to/document-or-website\)**
+: This is a link to another page, including the language code. The above "example" is the text, which is shown as
+  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
+  translating in. Make sure that your language is already present on zammad.org (check it by using the language
+  switcher). Otherwise contact us if you want to have your language activated.
 
-- **\[example\](/en/path/to/document-or-website\)**
-
-    Ово је линк на другу страницу, и укључује код језика. Текст „example” изнад биће приказан као
-    текст линка. Овај део можете превести. Што се тиче путање, само замените `en` са кодом језика на који
-    преводите. Обратите пажњу да ли је ваш језик већ омогућен на zammad.org (проверите преко избора
-    језика). У супротном обратите нам се уколико желите да омогућимо ваш језик (у случају да је већина текста већ преведена).
-
-- **\*\*пример текста\*\***
-
-    Ознака текста (нпр. подебљано, курзив=. Алтернатива: \_пример текста\_. Ови низови текста се могу преводити, али
-    ознаке (нпр. `**` ili `_`) би требало прилагодити правом значењу.
+**\*\*example string\*\***
+: Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
+  markup (e.g. `**` or `_`) should be adopted true to meaning.

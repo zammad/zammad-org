@@ -13,16 +13,14 @@ title: 'Двофакторска аутентификација'
 приступи налогу.
 
 Two-Factor Authentication is an **optional feature**. Administrators must
-activate it to be visible in your profile settings. It may be even enforced
-by your admin to set up a 2FA method. In this case, you can't use Zammad
-unless you set up at least one 2FA method.
+activate it to be visible in your profile settings. The 2FA usage may be
+even enforced by your admin. In this case, you can't use Zammad unless you
+set up at least one 2FA method.
 
 ## Поставка
 
-If the system admin has enabled this feature, you can head to _Avatar >
-Profile > Two-factor Authentication_ to set it up. Depending on the
-enabled two-factor methods, you may see one or more options in the
-table.
+If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
+up. Depending on the enabled two-factor methods, you may see one or more options in the table.
 
 To set up a two-factor method, use the wrench icon and follow the steps.
 
@@ -32,7 +30,7 @@ settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
 У дијалогу ћете бити упитани да потврдите вашу тренутну лозинку.
 
 Depending on the chosen two-factor method, you will be guided through the
-setup process, which includes specific steps. Continue with using an
+setup process, which includes specific steps.  Continue with using an
 [Authentication App](#authentication-app) or a [Security
 Key](#security-key).
 
@@ -62,9 +60,8 @@ action, or similar. Point your camera to the Zammad screen and scan the
 shown QR code in the middle.
 
 ::: tip
-If your device is not able to scan the QR code, first click on it to
-reveal your secret. Next, add a manual entry to your authenticator app
-and enter the provided secret when asked.
+If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to
+your authenticator app and enter the provided secret when asked.
 :::
 
 Your authenticator app should immediately add the new entry for your Zammad
@@ -73,13 +70,12 @@ timer.
 
 Back in Zammad, enter the provided code to the **Security Code** field and
 click on **Set Up**. Go on either by setting up another 2FA method
-([security key](#security-key)) or check how to [use and manage
-2FA](#sign-in).
+([security key](#security-key)) or check how to [log in with 2FA](#sign-in).
 
 ### Безбедносни кључ
 
 The security keys method is a type of a two-factor authentication that uses
-Web Authentication API in the browser for verifying your identity.  You may
+Web Authentication API in the browser for verifying your identity. You may
 register multiple hardware or software security keys with your Zammad
 account and then they can be used during the sign-in process.
 
@@ -105,8 +101,8 @@ can prove you are in physical possession of it (e.g. enter its PIN to unlock
 it).
 
 ::: warning
-You will have limited time (measured in tens of seconds) to register
-your key. Better to have it ready before you proceed!
+You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you
+proceed!
 :::
 
 If the registration was successful, the modal dialog will close and you are
@@ -118,7 +114,7 @@ registration of the key.
 
 You have an option to remove a key or set up additional ones. There is no
 limit in number of security keys you can set up, but keep in mind you cannot
-register an already registered key for your account.  Removal of the last
+register an already registered key for your account. Removal of the last
 security key will effectively remove the complete security keys method for
 your account.
 
@@ -150,16 +146,15 @@ your unused codes and click on **Sign in**.
 link](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
-You can use a single recovery code only once! In case you exhaust the
-list of your recovery codes, it is recommended you regenerate them for
-your account.
+You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended
+you regenerate them for your account.
 :::
 
 ## Generate Recovery Codes
 
 Recovery codes are one-time use security codes that can be used to sign in
-if you lose access to your other two-factor authentication methods.  They
-can only be used as a **backup method**.
+if you lose access to your other two-factor authentication methods. They can
+only be used as a **backup method**.
 
 Ако је администратор омогућио ову функцију, шифре за опоравак ће бити
 аутоматски генерисане за вас током постављања вашег почетног метода

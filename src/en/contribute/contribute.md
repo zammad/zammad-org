@@ -31,23 +31,23 @@ The main [Zammad repository](https://github.com/zammad/zammad){target=_blank} at
 
 #### `develop`
 
-- This is the current (unreleased) development state of next major release
-  (this will become the new `stable` branch).
+- This is the current (unreleased) development state of next major release (this will become the new `stable` branch).
 - Don't use it for production!
-- Supported with bug and security fixes - see also our
-  [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well as security updates (see
+  [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} for more details).
 
 #### `stable`
 
 - This is the current stable release, e.g. Zammad 5.2.
 - Use this branch for production installations.
-- Supported with bug and security fixes - see also our
-  [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well as security updates (see
+  [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} for more details).
 
 #### `stable-x.y`
 
 - These are the branches of old versions of Zammad like `stable-5.1` for Zammad 5.1.
-- No support for bug or security issues is provided.
+- Don't use it for production!
+- Bug fixes and security updates are not applied to these branches.
 
 ## Documentation
 
@@ -140,19 +140,16 @@ And finally some examples for "special" source strings, you might see in the doc
 have a look at the [style guide](style-guide) where you can find more information about the syntax and the usage of
 Markdown/Vitepress features.
 
-- **\`example-string\`**
+**\`example-string\`**
+: This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
+  \` before and after the string in your translation.
 
-    This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
-    \` before and after the string in your translation.
+**\[example\](/en/path/to/document-or-website\)**
+: This is a link to another page, including the language code. The above "example" is the text, which is shown as
+  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
+  translating in. Make sure that your language is already present on zammad.org (check it by using the language
+  switcher). Otherwise contact us if you want to have your language activated.
 
-- **\[example\](/en/path/to/document-or-website\)**
-
-    This is a link to another page, including the language code. The above "example" is the text, which is shown as
-    link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
-    translating in. Make sure that your language is already present on zammad.org (check it by using the language
-    switcher). Otherwise contact us if you want to have your language activated.
-
-- **\*\*example string\*\***
-
-    Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
-    markup (e.g. `**` or `_`) should be adopted true to meaning.
+**\*\*example string\*\***
+: Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
+  markup (e.g. `**` or `_`) should be adopted true to meaning.

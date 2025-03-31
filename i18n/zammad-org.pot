@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-28 11:00+0000\n"
+"POT-Creation-Date: 2025-03-31 15:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,18 +205,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -311,7 +299,7 @@ msgid "`develop`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:39
+#: src/en/contribute/contribute.md:38
 #, markdown-text
 msgid ""
 "This is the current (unreleased) development state of next major release "
@@ -319,39 +307,41 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:39
+#: src/en/contribute/contribute.md:38 src/en/contribute/contribute.md:51
 #, markdown-text
 msgid "Don't use it for production!"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:39 src/en/contribute/contribute.md:46
+#: src/en/contribute/contribute.md:38 src/en/contribute/contribute.md:45
 #, markdown-text
 msgid ""
-"Supported with bug and security fixes - see also our [Security "
-"Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}."
+"This branch is actively supported and receives regular bug fixes as well as "
+"security updates (see [Security "
+"Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} "
+"for more details)."
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:40
+#: src/en/contribute/contribute.md:39
 #, markdown-text, no-wrap
 msgid "`stable`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:46
+#: src/en/contribute/contribute.md:45
 #, markdown-text
 msgid "This is the current stable release, e.g. Zammad 5.2."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/contribute.md:46
+#: src/en/contribute/contribute.md:45
 #, markdown-text
 msgid "Use this branch for production installations."
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/contribute.md:47
+#: src/en/contribute/contribute.md:46
 #, markdown-text, no-wrap
 msgid "`stable-x.y`"
 msgstr ""
@@ -367,7 +357,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:51
 #, markdown-text
-msgid "No support for bug or security issues is provided."
+msgid "Bug fixes and security updates are not applied to these branches."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -657,54 +647,39 @@ msgid ""
 "the usage of Markdown/Vitepress features."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/contribute/contribute.md:144
-#, markdown-text
-msgid "**\\`example-string\\`**"
+#. type: Plain text
+#: src/en/contribute/contribute.md:146
+#, markdown-text, no-wrap
+msgid ""
+"**\\`example-string\\`**\n"
+": This is rendered as `example-string`. Depending on the context, it can be "
+"translated or not. In any case, use the\n"
+"  \\` before and after the string in your translation.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:147
+#: src/en/contribute/contribute.md:152
 #, markdown-text, no-wrap
 msgid ""
-"    This is rendered as `example-string`. Depending on the context, it can "
-"be translated or not. In any case, use the\n"
-"    \\` before and after the string in your translation.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/contribute/contribute.md:149
-#, markdown-text
-msgid "**\\[example\\](/en/path/to/document-or-website\\)**"
-msgstr ""
-
-#. type: Plain text
-#: src/en/contribute/contribute.md:154
-#, markdown-text, no-wrap
-msgid ""
-"    This is a link to another page, including the language code. The above "
+"**\\[example\\](/en/path/to/document-or-website\\)**\n"
+": This is a link to another page, including the language code. The above "
 "\"example\" is the text, which is shown as\n"
-"    link text. This part can be translated. For the path, only the `en` may "
-"be replaced by the language code you are\n"
-"    translating in. Make sure that your language is already present on "
+"  link text. This part can be translated. For the path, only the `en` may be "
+"replaced by the language code you are\n"
+"  translating in. Make sure that your language is already present on "
 "zammad.org (check it by using the language\n"
-"    switcher). Otherwise contact us if you want to have your language "
+"  switcher). Otherwise contact us if you want to have your language "
 "activated.\n"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/contribute/contribute.md:156
-#, markdown-text
-msgid "**\\*\\*example string\\*\\***"
-msgstr ""
-
 #. type: Plain text
-#: src/en/contribute/contribute.md:158
+#: src/en/contribute/contribute.md:155
 #, markdown-text, no-wrap
 msgid ""
-"    Markup for text (e.g. bold, italics). Alternative: \\_example "
+"**\\*\\*example string\\*\\***\n"
+": Markup for text (e.g. bold, italics). Alternative: \\_example "
 "string\\_. These strings can be translated, but the\n"
-"    markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
+"  markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
 msgstr ""
 
 #. type: Title #
@@ -723,15 +698,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:12
+#: src/en/contribute/style-guide.md:11
 #, markdown-text
 msgid ""
 "The first sections are about general information and rules. A [section with "
-"useful examples](#basic-formatting-examples)  follows at the end."
+"examples](#examples) follows at the end."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:16
+#: src/en/contribute/style-guide.md:15
 #, markdown-text
 msgid ""
 "If you have questions, feel free to ask in our community. If you want to "
@@ -742,13 +717,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:17
+#: src/en/contribute/style-guide.md:16
 #, markdown-text, no-wrap
 msgid "Audience Assumptions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:22
+#: src/en/contribute/style-guide.md:21
 #, markdown-text
 msgid ""
 "The documentation is written assuming that **users** have a basic "
@@ -758,7 +733,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:25
+#: src/en/contribute/style-guide.md:24
 #, markdown-text
 msgid ""
 "The **Zammad administrator** additionally should have a basic technical "
@@ -767,7 +742,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:28
+#: src/en/contribute/style-guide.md:27
 #, markdown-text
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
@@ -777,25 +752,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:29
+#: src/en/contribute/style-guide.md:28
 #, markdown-text, no-wrap
 msgid "Content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:32
+#: src/en/contribute/style-guide.md:31
 #, markdown-text
 msgid "The documentation aims to include information about:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:37
+#: src/en/contribute/style-guide.md:36
 #, markdown-text
 msgid "How to use Zammad"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:37
+#: src/en/contribute/style-guide.md:36
 #, markdown-text
 msgid ""
 "How to manage Zammad as an admin (e.g. setting it up after installation, "
@@ -803,13 +778,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:37
+#: src/en/contribute/style-guide.md:36
 #, markdown-text
 msgid "Different ways how to install Zammad"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:37
+#: src/en/contribute/style-guide.md:36
 #, markdown-text
 msgid ""
 "Additional guides if (host) system configuration and/or configuration of "
@@ -817,7 +792,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:42
+#: src/en/contribute/style-guide.md:41
 #, markdown-text
 msgid ""
 "Regarding the **level of detail**, the [audience "
@@ -833,9 +808,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Due to the fact that a documentation can't cover everything (otherwise it "
-"would be code), the relevance has to be considered. If parts with a common "
-"use case are missing, it should be intended to include them in the "
-"documentation."
+"would be on a code-like detail level), the relevance has to be "
+"considered. If parts with a common use case are missing, it should be "
+"intended to include them in the documentation."
 msgstr ""
 
 #. type: Title ##
@@ -849,8 +824,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "The next sections cover general things to consider writing the "
-"documentation. After these you can find a section with some [basic examples "
-"of formatting and structuring](#basic-formatting-examples) the content."
+"documentation. After these you can find a section with some "
+"[examples](#examples) about how to format and structure the content."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -879,8 +854,8 @@ msgstr ""
 #: src/en/contribute/style-guide.md:58
 #, markdown-text
 msgid ""
-"The translation of the documentation is done via Weblate, see [contribution "
-"section](contribute#translation) for more details."
+"The translation of the documentation is done via Weblate, see [translation "
+"section](contribute#translation) in the contribute page for more details."
 msgstr ""
 
 #. type: Title ###
@@ -1031,14 +1006,14 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
-"language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is applicable, "
-"use `` ```plain``."
+"language tag, e.g. `ruby` or `sh`. If no language is applicable, use "
+"`plain`."
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:107
 #, markdown-text
-msgid "Use `-` for bullet point lists (unordered list) like this one."
+msgid "Use `-` for bullet point lists (unordered lists) like this one."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -1080,7 +1055,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/contribute/style-guide.md:108
 #, markdown-text, no-wrap
-msgid "Basic Formatting Examples"
+msgid "Examples"
 msgstr ""
 
 #. type: Title ####
@@ -1332,7 +1307,7 @@ msgstr ""
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:138
+#: src/en/documentation/use/start-using-zammad.md:120
 #: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
 #: src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
@@ -1418,7 +1393,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:8
 #, markdown-text, no-wrap
-msgid "Use Keyboard Shortcuts"
+msgid "Keyboard Shortcuts"
 msgstr ""
 
 #. type: Plain text
@@ -1430,7 +1405,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:12
 #, markdown-text, no-wrap
-msgid "Adjust Behavior After Updating a Ticket"
+msgid "Ticket Update Behavior"
 msgstr ""
 
 #. type: Plain text
@@ -1538,7 +1513,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:38
 #, markdown-text, no-wrap
-msgid "Use Text Modules"
+msgid "Text Modules"
 msgstr ""
 
 #. type: Plain text
@@ -1623,7 +1598,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:73
 #, markdown-text
 msgid ""
-"While writing an ticket article, simply type `@@` and enter some letters of "
+"While writing a ticket article, simply type `@@` and enter some letters of "
 "the name of the colleague you want to mention."
 msgstr ""
 
@@ -1654,8 +1629,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:85
 #, markdown-text
 msgid ""
-"If you are interested in the progress of a ticket, you can subscribe to "
-"it. This means you will receive notifications for each update."
+"If you are interested in the progress of a ticket, you are not the owner, "
+"you can subscribe to it. This means you will receive notifications for each "
+"update."
 msgstr ""
 
 #. type: Plain text
@@ -1669,10 +1645,11 @@ msgid ""
 "notified of updates."
 msgstr ""
 
-#. type: Title ##
+#. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:92
+#: src/en/reference/rest-api/intro.md:158
 #, markdown-text, no-wrap
-msgid "Use a Macro"
+msgid "Macros"
 msgstr ""
 
 #. type: Plain text
@@ -1720,10 +1697,11 @@ msgid ""
 "actions](#bulk-actions) how to do that."
 msgstr ""
 
-#. type: Title ##
+#. type: Title #
 #: src/en/documentation/use/advanced-features.md:114
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
 #, markdown-text, no-wrap
-msgid "Use Tags"
+msgid "Tags"
 msgstr ""
 
 #. type: Plain text
@@ -1750,7 +1728,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "In the ticket sidebar, you can find a section which is labels as "
-"\"Tags\". Add a tag by clicking on the `+` button. You can select existing "
+"**Tags**. Add a tag by clicking on the `+` button. You can select existing "
 "tags and add new ones (if your admin didn't disable to add new tags)."
 msgstr ""
 
@@ -1764,8 +1742,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:132
+#: src/en/reference/rest-api/checklist.md:19
 #, markdown-text, no-wrap
-msgid "Use a Checklist"
+msgid "Checklists"
 msgstr ""
 
 #. type: Plain text
@@ -1804,7 +1783,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:147
 #, markdown-text
 msgid ""
-"Select the \"Checklist\" tab in the sidebar. If you can't see it, your "
+"Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
 "the permission to edit the ticket."
 msgstr ""
@@ -2059,8 +2038,9 @@ msgid ""
 "icon with a pencil icon, see right avatar in screenshot)"
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/advanced-features.md:231
+#: src/en/documentation/use/guides/overviews.md:78
 #, markdown-text, no-wrap
 msgid "Bulk Actions"
 msgstr ""
@@ -2248,7 +2228,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:288
 #, markdown-text, no-wrap
-msgid "Split Ticket"
+msgid "Split Tickets"
 msgstr ""
 
 #. type: Plain text
@@ -2304,7 +2284,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
-"for easier reference.  [Merged](#merge-tickets) and [split](#split-ticket) "
+"for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
 "tickets are automatically linked."
 msgstr ""
 
@@ -2333,10 +2313,12 @@ msgid ""
 "split or merged."
 msgstr ""
 
-#. type: Title ##
+#. type: Title #
 #: src/en/documentation/use/advanced-features.md:324
+#: src/en/reference/rest-api/time-accounting.md:1
+#: src/en/reference/rest-api/time-accounting.md:6
 #, markdown-text, no-wrap
-msgid "Account Time"
+msgid "Time Accounting"
 msgstr ""
 
 #. type: Plain text
@@ -2658,47 +2640,50 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:16
+#: src/en/documentation/use/general.md:15
 #, markdown-text
 msgid ""
 "In general, Zammad should be pretty self explanatory. However, there are "
-"features that are not obvious at first glance. These features are described "
+"features that are not obvious at first glance.  These features are described "
 "in this documentation as well as some general explanations and tips."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:20
-#, markdown-text
+#: src/en/documentation/use/general.md:19
+#, markdown-text, no-wrap
 msgid ""
 "This documentation is divided into different sections. Currently you are "
-"reading the _General_ section. Use the left sidebar to navigate to your "
-"desired information or the search in the header."
+"viewing the _General_ section in the\n"
+"_Documentation > Use Zammad_ section. Use the left sidebar to navigate to "
+"your desired information or the search in the\n"
+"header. You can even activate the search by using the keyboard shortcut "
+"[[Ctrl]] [[k]].\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:21
+#: src/en/documentation/use/general.md:20
 #, markdown-text, no-wrap
 msgid "Zammad Beginner"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:27
+#: src/en/documentation/use/general.md:25
 #, markdown-text
 msgid ""
 "If you are new to Zammad and ticketing software at all, our recommendation "
-"is to have a look at the [start with Zammad](start-using-zammad) page. You "
+"is to have a look at the [Start with Zammad](start-using-zammad) page. You "
 "can find a description of some important UI elements there as well as basic "
 "ticket attributes and how to use them."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:28
+#: src/en/documentation/use/general.md:26
 #, markdown-text, no-wrap
 msgid "Advanced User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:32
+#: src/en/documentation/use/general.md:30
 #, markdown-text
 msgid ""
 "If you are already familiar with the basics of Zammad, you should have a "
@@ -2706,7 +2691,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:35
+#: src/en/documentation/use/general.md:32
 #, markdown-text
 msgid ""
 "If you can't find what you are looking for, try the search in the header of "
@@ -2714,13 +2699,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:36
+#: src/en/documentation/use/general.md:33
 #, markdown-text, no-wrap
 msgid "Administrator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:41
+#: src/en/documentation/use/general.md:37
 #, markdown-text
 msgid ""
 "Are you an administrator and want to learn how to configure and manage "
@@ -2877,7 +2862,7 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
-#: src/en/tutorials/backup-restore.md:305 src/en/tutorials/migrate.md:54
+#: src/en/tutorials/backup-restore.md:304 src/en/tutorials/migrate.md:54
 #: src/en/tutorials/migrate.md:355 src/en/tutorials/migrate.md:511
 #, markdown-text, no-wrap
 msgid "Limitations"
@@ -3015,7 +3000,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:17
+#: src/en/documentation/use/guides/overviews.md:15
 #, markdown-text
 msgid ""
 "Overviews are a core component of Zammad. Open them by clicking the "
@@ -3026,7 +3011,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:20
+#: src/en/documentation/use/guides/overviews.md:18
 #, markdown-text
 msgid ""
 "Depending on your system configuration and what your Zammad admin set up, "
@@ -3034,31 +3019,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:23
 #, markdown-text
 msgid "Your assigned tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:23
 #, markdown-text
 msgid "Unassigned and open tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:23
 #, markdown-text
 msgid "Pending reached tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:23
 #, markdown-text
 msgid "Escalated tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:28
+#: src/en/documentation/use/guides/overviews.md:25
 #, markdown-text
 msgid ""
 "Selecting an overview in the second level navigation shows you a table which "
@@ -3066,13 +3051,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/overviews.md:29
+#: src/en/documentation/use/guides/overviews.md:26
 #, markdown-text, no-wrap
 msgid "Usage and Features"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:34
+#: src/en/documentation/use/guides/overviews.md:30
 #, markdown-text
 msgid ""
 "Overviews can be defined by admins based on rules and conditions. That means "
@@ -3081,7 +3066,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:40
+#: src/en/documentation/use/guides/overviews.md:34
 #, markdown-text
 msgid ""
 "Overviews are updated automatically. You don't have to reload your browser "
@@ -3092,7 +3077,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:43
+#: src/en/documentation/use/guides/overviews.md:37
 #, markdown-text
 msgid ""
 "For each overview, you can find a badge attached. The number in this badge "
@@ -3100,7 +3085,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:48
+#: src/en/documentation/use/guides/overviews.md:41
 #, markdown-text
 msgid ""
 "The ticket lists in overviews can also be grouped by a specific attribute "
@@ -3110,7 +3095,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:51
+#: src/en/documentation/use/guides/overviews.md:43
 #, markdown-text
 msgid ""
 "Depending on what you are searching for, select a fitting overview and start "
@@ -3118,22 +3103,21 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/overviews.md:52
+#: src/en/documentation/use/guides/overviews.md:44
 #, no-wrap
 msgid ""
-"If you miss an overview or want to have different settings, let your "
-"Zammad\n"
+"If you miss an overview or want to have different settings, let your Zammad "
 "admin know!\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:57
+#: src/en/documentation/use/guides/overviews.md:48
 #, markdown-text, no-wrap
 msgid "Color Coded State and Priority"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:61
+#: src/en/documentation/use/guides/overviews.md:51
 #, markdown-text
 msgid ""
 "To visualize different ticket states and priorities, the entries in the "
@@ -3141,37 +3125,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:63
+#: src/en/documentation/use/guides/overviews.md:53
 #, markdown-text
 msgid "The icon next to the ticket title mainly represents the need for action:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:65
+#: src/en/documentation/use/guides/overviews.md:55
 #, markdown-text
 msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:70
+#: src/en/documentation/use/guides/overviews.md:60
 #, markdown-text
 msgid "Yellow circle: action needed (e.g. new, open, pending reached)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:70
+#: src/en/documentation/use/guides/overviews.md:60
 #, markdown-text
 msgid "Grey circle: paused, no action needed right now (e.g. pending)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:70
+#: src/en/documentation/use/guides/overviews.md:60
 #, markdown-text
 msgid "Green circle: no action needed any more (e.g. closed, merged)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:70
+#: src/en/documentation/use/guides/overviews.md:60
 #, markdown-text
 msgid ""
 "Red triangle: immediate action needed (ticket escalated due to an SLA "
@@ -3179,43 +3163,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:72
+#: src/en/documentation/use/guides/overviews.md:62
 #, markdown-text
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:74
+#: src/en/documentation/use/guides/overviews.md:64
 #, markdown-text
 msgid "![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:68
 #, markdown-text
 msgid "1 low: grey"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:68
 #, markdown-text
 msgid "2 normal: blue"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:68
 #, markdown-text
 msgid "3 high: red"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:79
+#: src/en/documentation/use/guides/overviews.md:69
 #, markdown-text, no-wrap
 msgid "Open a Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:85
+#: src/en/documentation/use/guides/overviews.md:74
 #, markdown-text
 msgid ""
 "Open a ticket by simply clicking on the line. This opens the ticket as a tab "
@@ -3225,7 +3209,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:89
+#: src/en/documentation/use/guides/overviews.md:77
 #, markdown-text
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
@@ -3233,29 +3217,25 @@ msgid ""
 "the next/previous ticket of this overview."
 msgstr ""
 
-#. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:90
-#, markdown-text, no-wrap
-msgid "TODO Bulk Actions"
-msgstr ""
-
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:83
 #, markdown-text
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the "
 "drop-down fields or drag them with the mouse to invoke the bulk action "
-"overlay."
+"overlay. You can find more information about that in the [Bulk "
+"Actions](../advanced-features#bulk-actions) section in the advanced features "
+"page."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:95
+#: src/en/documentation/use/guides/overviews.md:84
 #, markdown-text, no-wrap
 msgid "Reorder Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:103
+#: src/en/documentation/use/guides/overviews.md:90
 #, markdown-text
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
@@ -3267,7 +3247,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:106
+#: src/en/documentation/use/guides/overviews.md:92
 #, markdown-text
 msgid ""
 "To change the order, simply drag & drop them by clicking the handles on the "
@@ -3275,7 +3255,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:108
+#: src/en/documentation/use/guides/overviews.md:94
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
@@ -3284,17 +3264,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:14
+#: src/en/documentation/use/guides/search.md:13
 #, markdown-text
 msgid ""
 "If you search for tickets, user and organizations, you can use the "
-"search. It is located in the top left corner in the navigation bar. Either "
-"select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all "
-"fitting items for which you have at least view or read permissions."
+"search. It is located in the top left corner in the primary navigation "
+"bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad "
+"returns all fitting items for which you have at least view or read "
+"permissions."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:16
+#: src/en/documentation/use/guides/search.md:15
 #, markdown-text
 msgid ""
 "![Screenshot shows search results in navigation "
@@ -3302,39 +3283,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:19
+#: src/en/documentation/use/guides/search.md:18
 #, markdown-text
 msgid ""
 "The search covers basically all information which is stored in Zammad and "
-"which got indexed by Elasticsearch, like:"
+"which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes), "
+"like:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:24
+#: src/en/documentation/use/guides/search.md:23
 #, markdown-text
 msgid "Message subject and text"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:24
+#: src/en/documentation/use/guides/search.md:23
 #, markdown-text
 msgid "Names and email addresses"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:24
+#: src/en/documentation/use/guides/search.md:23
 #, markdown-text
 msgid "Text in file attachments"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:24
+#: src/en/documentation/use/guides/search.md:23
 #, markdown-text
 msgid "User and organizations details (like notes, names, etc.)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:27
+#: src/en/documentation/use/guides/search.md:25
 #, markdown-text
 msgid ""
 "When the search field is active, you can see your last viewed items as well "
@@ -3342,7 +3324,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:32
+#: src/en/documentation/use/guides/search.md:29
 #, markdown-text
 msgid ""
 "After entering a search term, you immediately see a preview of the search "
@@ -3352,16 +3334,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:36
+#: src/en/documentation/use/guides/search.md:32
 #, markdown-text
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad displays a page "
 "with search results. There you can narrow down your search by selecting a "
-"specific object type (e.g. customer) in the tablist below the search bar."
+"specific object type (e.g. customer) in the tab bar below the search bar."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:38
+#: src/en/documentation/use/guides/search.md:34
 #, markdown-text
 msgid ""
 "![Screenshot shows detailed "
@@ -3369,7 +3351,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:46
+#: src/en/documentation/use/guides/search.md:40
 #, markdown-text
 msgid ""
 "If you are still facing many results, try to narrow down your search by "
@@ -3383,54 +3365,54 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:47
+#: src/en/documentation/use/guides/search.md:41
 #, markdown-text, no-wrap
 msgid "Advanced"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:53
+#: src/en/documentation/use/guides/search.md:46
 #, markdown-text
 msgid ""
 "You can narrow down your search results to specific attributes, even in the "
 "search field in the navigation bar. Read on for some examples and "
-"explanations.  For a more detailed list of available attributes, please take "
+"explanations. For a more detailed list of available attributes, please take "
 "a look at the [indexed attributes by "
 "Elasticsearch](/en/reference/es-indexed-attributes)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:54
+#: src/en/documentation/use/guides/search.md:47
 #, markdown-text, no-wrap
 msgid "Syntax"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:58
+#: src/en/documentation/use/guides/search.md:51
 #, markdown-text
 msgid "Search for a specific customer by using `customer.attribute`:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:59
+#: src/en/documentation/use/guides/search.md:52
 #, no-wrap
 msgid "customer.firstname: John\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:64
+#: src/en/documentation/use/guides/search.md:57
 #, markdown-text
 msgid "or:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:65
+#: src/en/documentation/use/guides/search.md:58
 #, no-wrap
 msgid "customer.lastname: Doe\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:71
+#: src/en/documentation/use/guides/search.md:63
 #, markdown-text
 msgid ""
 "If you want to run a more complex search, you can use conditions with `()` "
@@ -3438,19 +3420,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:72
+#: src/en/documentation/use/guides/search.md:64
 #, no-wrap
 msgid "state.name: open AND (article.from:me OR article.from:somebody)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:76
+#: src/en/documentation/use/guides/search.md:68
 #, markdown-text, no-wrap
 msgid "Additional Examples"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:87
+#: src/en/documentation/use/guides/search.md:79
 #, markdown-text, no-wrap
 msgid ""
 "| Attribute     | possible Values                       | Example                                                                                        "
@@ -3498,13 +3480,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:88
+#: src/en/documentation/use/guides/search.md:80
 #, markdown-text, no-wrap
 msgid "Combining Search Phrases"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:93
+#: src/en/documentation/use/guides/search.md:85
 #, markdown-text
 msgid ""
 "You can combine search phrases by using `AND`, `OR` and `TO` and even "
@@ -3513,7 +3495,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:99
+#: src/en/documentation/use/guides/search.md:91
 #, markdown-text, no-wrap
 msgid ""
 "| Search phrase                                                                               "
@@ -3542,7 +3524,7 @@ msgid "Two-Factor Authentication"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:14
+#: src/en/documentation/use/guides/two-factor-auth.md:12
 #, markdown-text
 msgid ""
 "Two-factor authentication (2FA) enhances the security of your Zammad account "
@@ -3554,39 +3536,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:19
+#: src/en/documentation/use/guides/two-factor-auth.md:16
 #, markdown-text
 msgid ""
 "Two-Factor Authentication is an **optional feature**. Administrators must "
-"activate it to be visible in your profile settings. It may be even enforced "
-"by your admin to set up a 2FA method. In this case, you can't use Zammad "
-"unless you set up at least one 2FA method."
+"activate it to be visible in your profile settings. The 2FA usage may be "
+"even enforced by your admin. In this case, you can't use Zammad unless you "
+"set up at least one 2FA method."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:20
+#: src/en/documentation/use/guides/two-factor-auth.md:17
 #, markdown-text, no-wrap
 msgid "Set Up"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:26
+#: src/en/documentation/use/guides/two-factor-auth.md:21
 #, markdown-text, no-wrap
 msgid ""
-"If the system admin has enabled this feature, you can head to _Avatar >\n"
-"Profile > Two-factor Authentication_ to set it up. Depending on the\n"
-"enabled two-factor methods, you may see one or more options in the\n"
-"table.\n"
+"If the system admin has enabled this feature, you can head to _Avatar > "
+"Profile > Two-factor Authentication_ to set it\n"
+"up. Depending on the enabled two-factor methods, you may see one or more "
+"options in the table.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:28
+#: src/en/documentation/use/guides/two-factor-auth.md:23
 #, markdown-text
 msgid "To set up a two-factor method, use the wrench icon and follow the steps."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:30
+#: src/en/documentation/use/guides/two-factor-auth.md:25
 #, markdown-text
 msgid ""
 "![Screenshot shows 2FA methods in user profile "
@@ -3594,29 +3576,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:32
+#: src/en/documentation/use/guides/two-factor-auth.md:27
 #, markdown-text
 msgid "In a modal dialog, you will be asked to confirm your current password."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:36
+#: src/en/documentation/use/guides/two-factor-auth.md:30
 #, markdown-text
 msgid ""
 "Depending on the chosen two-factor method, you will be guided through the "
-"setup process, which includes specific steps. Continue with using an "
+"setup process, which includes specific steps.  Continue with using an "
 "[Authentication App](#authentication-app) or a [Security "
 "Key](#security-key)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:37
+#: src/en/documentation/use/guides/two-factor-auth.md:31
 #, markdown-text, no-wrap
 msgid "Authentication App"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:43
+#: src/en/documentation/use/guides/two-factor-auth.md:36
 #, markdown-text
 msgid ""
 "The authenticator app method is a type of two-factor authentication that "
@@ -3626,7 +3608,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:45
+#: src/en/documentation/use/guides/two-factor-auth.md:38
 #, markdown-text
 msgid ""
 "![Screenshot shows app authentication "
@@ -3634,7 +3616,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:48
+#: src/en/documentation/use/guides/two-factor-auth.md:40
 #, markdown-text
 msgid ""
 "First, make sure you have installed an authenticator app on your mobile "
@@ -3642,7 +3624,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 #, markdown-text
 msgid ""
 "[Aegis "
@@ -3651,19 +3633,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 #, markdown-text
 msgid "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 #, markdown-text
 msgid "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 #, markdown-text
 msgid ""
 "[Microsoft "
@@ -3671,7 +3653,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:59
+#: src/en/documentation/use/guides/two-factor-auth.md:50
 #, markdown-text
 msgid ""
 "Next, open the authenticator app on your device and find a **Scan QR Code** "
@@ -3680,16 +3662,16 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/two-factor-auth.md:60
+#: src/en/documentation/use/guides/two-factor-auth.md:51
 #, no-wrap
 msgid ""
-"If your device is not able to scan the QR code, first click on it to\n"
-"reveal your secret. Next, add a manual entry to your authenticator app\n"
-"and enter the provided secret when asked.\n"
+"If your device is not able to scan the QR code, first click on it to reveal "
+"your secret. Next, add a manual entry to\n"
+"your authenticator app and enter the provided secret when asked.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:69
+#: src/en/documentation/use/guides/two-factor-auth.md:58
 #, markdown-text
 msgid ""
 "Your authenticator app should immediately add the new entry for your Zammad "
@@ -3698,33 +3680,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:73
+#: src/en/documentation/use/guides/two-factor-auth.md:61
 #, markdown-text
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
 "click on **Set Up**. Go on either by setting up another 2FA method "
-"([security key](#security-key)) or check how to [use and manage "
-"2FA](#sign-in)."
+"([security key](#security-key)) or check how to [log in with 2FA](#sign-in)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:74
+#: src/en/documentation/use/guides/two-factor-auth.md:62
 #, markdown-text, no-wrap
 msgid "Security Key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:80
+#: src/en/documentation/use/guides/two-factor-auth.md:67
 #, markdown-text
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
-"Web Authentication API in the browser for verifying your identity.  You may "
+"Web Authentication API in the browser for verifying your identity. You may "
 "register multiple hardware or software security keys with your Zammad "
 "account and then they can be used during the sign-in process."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:83
+#: src/en/documentation/use/guides/two-factor-auth.md:69
 #, markdown-text
 msgid ""
 "Initially, you will be presented with an empty side panel instructing you to "
@@ -3732,7 +3713,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:85
+#: src/en/documentation/use/guides/two-factor-auth.md:71
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -3740,7 +3721,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:89
+#: src/en/documentation/use/guides/two-factor-auth.md:74
 #, markdown-text
 msgid ""
 "Then, enter a descriptive **Name for this security key** you will be "
@@ -3749,7 +3730,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:93
+#: src/en/documentation/use/guides/two-factor-auth.md:77
 #, markdown-text
 msgid ""
 "Next, depending you your browser, you will be presented with different "
@@ -3758,7 +3739,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:95
+#: src/en/documentation/use/guides/two-factor-auth.md:79
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -3766,7 +3747,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:99
+#: src/en/documentation/use/guides/two-factor-auth.md:82
 #, markdown-text
 msgid ""
 "You may be asked by the browser to interact with a key or a device so you "
@@ -3775,15 +3756,16 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:100
+#: src/en/documentation/use/guides/two-factor-auth.md:83
 #, no-wrap
 msgid ""
-"You will have limited time (measured in tens of seconds) to register\n"
-"your key. Better to have it ready before you proceed!\n"
+"You will have limited time (measured in tens of seconds) to register your "
+"key. Better to have it ready before you\n"
+"proceed!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:108
+#: src/en/documentation/use/guides/two-factor-auth.md:90
 #, markdown-text
 msgid ""
 "If the registration was successful, the modal dialog will close and you are "
@@ -3792,7 +3774,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:111
+#: src/en/documentation/use/guides/two-factor-auth.md:92
 #, markdown-text
 msgid ""
 "Once set up, security keys can be managed by choosing **Edit** action next "
@@ -3800,24 +3782,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:117
+#: src/en/documentation/use/guides/two-factor-auth.md:96
 #, markdown-text
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
 "limit in number of security keys you can set up, but keep in mind you cannot "
-"register an already registered key for your account.  Removal of the last "
+"register an already registered key for your account. Removal of the last "
 "security key will effectively remove the complete security keys method for "
 "your account."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:118
+#: src/en/documentation/use/guides/two-factor-auth.md:97
 #, markdown-text, no-wrap
 msgid "Sign-in"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:124
+#: src/en/documentation/use/guides/two-factor-auth.md:102
 #, markdown-text
 msgid ""
 "When you set up two-factor authentication for your Zammad account, during "
@@ -3827,7 +3809,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:128
+#: src/en/documentation/use/guides/two-factor-auth.md:105
 #, markdown-text
 msgid ""
 "In case you are having issues during sign-in with your preferred two-factor "
@@ -3836,7 +3818,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:132
+#: src/en/documentation/use/guides/two-factor-auth.md:108
 #, markdown-text
 msgid ""
 "Look for **Try another method** link below the sign in box. In case you "
@@ -3845,7 +3827,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:134
+#: src/en/documentation/use/guides/two-factor-auth.md:110
 #, markdown-text
 msgid ""
 "![Log in screen with link to \"Try another "
@@ -3853,7 +3835,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:139
+#: src/en/documentation/use/guides/two-factor-auth.md:114
 #, markdown-text
 msgid ""
 "Alternatively, you can also use one of your recovery codes, which are "
@@ -3863,7 +3845,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:141
+#: src/en/documentation/use/guides/two-factor-auth.md:116
 #, markdown-text
 msgid ""
 "![Log in screen with recovery codes "
@@ -3871,31 +3853,31 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:142
+#: src/en/documentation/use/guides/two-factor-auth.md:117
 #, no-wrap
 msgid ""
-"You can use a single recovery code only once! In case you exhaust the\n"
-"list of your recovery codes, it is recommended you regenerate them for\n"
-"your account.\n"
+"You can use a single recovery code only once! In case you exhaust the list "
+"of your recovery codes, it is recommended\n"
+"you regenerate them for your account.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:148
+#: src/en/documentation/use/guides/two-factor-auth.md:122
 #, markdown-text, no-wrap
 msgid "Generate Recovery Codes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:153
+#: src/en/documentation/use/guides/two-factor-auth.md:126
 #, markdown-text
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
-"if you lose access to your other two-factor authentication methods.  They "
-"can only be used as a **backup method**."
+"if you lose access to your other two-factor authentication methods. They can "
+"only be used as a **backup method**."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:157
+#: src/en/documentation/use/guides/two-factor-auth.md:129
 #, markdown-text
 msgid ""
 "If the feature is enabled by the admin, recovery codes will be automatically "
@@ -3904,7 +3886,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:160
+#: src/en/documentation/use/guides/two-factor-auth.md:132
 #, markdown-text
 msgid ""
 "You will be asked to print out or save the generated recovery codes in a "
@@ -3912,7 +3894,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:162
+#: src/en/documentation/use/guides/two-factor-auth.md:134
 #, markdown-text
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA "
@@ -3920,7 +3902,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:167
+#: src/en/documentation/use/guides/two-factor-auth.md:138
 #, markdown-text
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
@@ -3930,13 +3912,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:168
+#: src/en/documentation/use/guides/two-factor-auth.md:139
 #, markdown-text, no-wrap
 msgid "Set a Default 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:173
+#: src/en/documentation/use/guides/two-factor-auth.md:143
 #, markdown-text
 msgid ""
 "To set an already set up two-factor method as default, use the ⋮ **Actions** "
@@ -3945,7 +3927,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:176
+#: src/en/documentation/use/guides/two-factor-auth.md:146
 #, markdown-text
 msgid ""
 "In order to identify your current default two-factor authentication method, "
@@ -3953,7 +3935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:178
+#: src/en/documentation/use/guides/two-factor-auth.md:148
 #, markdown-text
 msgid ""
 "![Screenshot shows list of 2FA methods and default "
@@ -3961,7 +3943,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:182
+#: src/en/documentation/use/guides/two-factor-auth.md:151
 #, markdown-text
 msgid ""
 "A default two-factor authentication method is just your preferred method "
@@ -3970,13 +3952,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:183
+#: src/en/documentation/use/guides/two-factor-auth.md:152
 #, markdown-text, no-wrap
 msgid "Edit a 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:186
+#: src/en/documentation/use/guides/two-factor-auth.md:155
 #, markdown-text
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA "
@@ -3984,7 +3966,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:190
+#: src/en/documentation/use/guides/two-factor-auth.md:158
 #, markdown-text
 msgid ""
 "To edit an already set up two-factor method, use the ⋮ **Actions** menu next "
@@ -3993,7 +3975,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:195
+#: src/en/documentation/use/guides/two-factor-auth.md:162
 #, markdown-text
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
@@ -4003,13 +3985,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:196
+#: src/en/documentation/use/guides/two-factor-auth.md:163
 #, markdown-text, no-wrap
 msgid "Remove a 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:200
+#: src/en/documentation/use/guides/two-factor-auth.md:166
 #, markdown-text
 msgid ""
 "To remove an already set up two-factor method, use the ⋮ **Actions** menu "
@@ -4278,8 +4260,8 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:100
-#: src/en/documentation/use/start-using-zammad.md:74
-#: src/en/documentation/use/start-using-zammad.md:119
+#: src/en/documentation/use/start-using-zammad.md:68
+#: src/en/documentation/use/start-using-zammad.md:105
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
@@ -4397,7 +4379,7 @@ msgid "User Interface"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:15
+#: src/en/documentation/use/start-using-zammad.md:14
 #, markdown-text
 msgid ""
 "The user interface (UI) of Zammad is designed to provide an intuitive "
@@ -4406,16 +4388,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:19
+#: src/en/documentation/use/start-using-zammad.md:17
 #, markdown-text
 msgid ""
 "There are basic modular components for different features to keep the UI "
-"consistent. These components are described in [UI "
+"consistent. These components are described in the section [Main UI "
 "Elements](#main-ui-elements) as well as [Navigating](#navigating) below."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:22
+#: src/en/documentation/use/start-using-zammad.md:20
 #, markdown-text
 msgid ""
 "Depending on the currently opened screen, there are interactive components, "
@@ -4423,7 +4405,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:25
+#: src/en/documentation/use/start-using-zammad.md:22
 #, markdown-text
 msgid ""
 "In any case, the UI is based on common software design principles and is "
@@ -4431,13 +4413,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:26
+#: src/en/documentation/use/start-using-zammad.md:23
 #, markdown-text, no-wrap
 msgid "Main UI Elements"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:29
+#: src/en/documentation/use/start-using-zammad.md:26
 #, markdown-text
 msgid ""
 "![Screenshot shows a ticket detail "
@@ -4445,7 +4427,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:32
+#: src/en/documentation/use/start-using-zammad.md:29
 #, markdown-text
 msgid ""
 "The screenshot above shows a ticket detail view in Zammad. Read on for a "
@@ -4453,134 +4435,132 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:36
+#: src/en/documentation/use/start-using-zammad.md:33
 #, markdown-text, no-wrap
 msgid ""
 "Navigation sidebar\n"
 ": This is the left sidebar which includes the search, notifications, "
-"overviews,\n"
-"  ticket tabs, your avatar and the ticket create button.\n"
+"overviews, ticket tabs, your avatar and the ticket\n"
+"  create button.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/start-using-zammad.md:37
+#, markdown-text, no-wrap
+msgid ""
+"Navigation tab\n"
+": Each item of the navigation sidebar is called navigation tab. Depending on "
+"the content, it can be a ticket tab (with\n"
+"  the ticket detail view) or the overview tab which opens the list of "
+"available overviews.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:41
 #, markdown-text, no-wrap
 msgid ""
-"Navigation tab\n"
-": Each item of the navigation sidebar is called navigation tab. Depending on "
-"the\n"
-"  content, it can be a ticket tab (with the ticket detail view) or the "
-"overview\n"
-"  tab which opens the list of available overviews.\n"
+"Ticket detail view\n"
+": This is where you handle your customer requests. It is located in the "
+"middle of the screen if a ticket tab is\n"
+"  selected in the navigation sidebar.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:45
 #, markdown-text, no-wrap
 msgid ""
-"Ticket detail view\n"
-": This is where you handle your customer requests. It is located in the "
-"middle\n"
-"  of the screen if a ticket tab is selected in the navigation sidebar.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:49
-#, markdown-text, no-wrap
-msgid ""
 "Sidebar\n"
-": This is the right sidebar in the ticket detail view. It contains sidebar\n"
-"  tabs like customers and checklists and displays the currently selected "
-"tab.\n"
+": This is the right sidebar in the ticket detail view. It contains sidebar "
+"tabs like customers and checklists and\n"
+"  displays the currently selected tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:55
+#: src/en/documentation/use/start-using-zammad.md:50
 #, markdown-text, no-wrap
 msgid ""
 "Sidebar tabs\n"
 ": On the right side of the sidebar, you can find small icons to switch "
-"between\n"
-"  the different tabs. The availability of these tabs depends on your "
-"system\n"
-"  configuration, your permissions and the ticket attributes (e.g. if the\n"
-"  ticket customer has an assigned organization).\n"
+"between the different tabs. The availability of\n"
+"  these tabs depends on your system configuration, your permissions and the "
+"ticket attributes (e.g. if the ticket\n"
+"  customer has an assigned organization).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:59
+#: src/en/documentation/use/start-using-zammad.md:54
 #, markdown-text, no-wrap
 msgid ""
 "Active sidebar\n"
 ": The selected sidebar tab. Displays the content of the tab. It can show "
-"things\n"
-"  like customer sidebar, organization sidebar, checklist sidebar and more.\n"
+"things like customer sidebar, organization\n"
+"  sidebar, checklist sidebar and more.\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:60
+#: src/en/documentation/use/start-using-zammad.md:55
 #, markdown-text, no-wrap
 msgid "Navigating"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:64
+#: src/en/documentation/use/start-using-zammad.md:58
 #, markdown-text
 msgid ""
 "The navigation sidebar is your central place to access all main parts of "
-"Zammad.  It includes:"
+"Zammad. It includes:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Search bar"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Overview section"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Chat (if activated)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Phone (if activated)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Ticket tabs"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Avatar with menu"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Settings (if you have permissions)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:74
+#: src/en/documentation/use/start-using-zammad.md:68
 #, markdown-text
 msgid "Ticket create button"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:77
+#: src/en/documentation/use/start-using-zammad.md:71
 #, markdown-text
 msgid ""
 "The main navigation in Zammad is done in this sidebar. It is always visible "
@@ -4588,7 +4568,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:81
+#: src/en/documentation/use/start-using-zammad.md:74
 #, markdown-text
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
@@ -4597,46 +4577,46 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:82
+#: src/en/documentation/use/start-using-zammad.md:75
 #, markdown-text, no-wrap
 msgid "Finding Tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:85
+#: src/en/documentation/use/start-using-zammad.md:78
 #, markdown-text
 msgid "There are different ways to find tickets, depending on your use case."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:86
+#: src/en/documentation/use/start-using-zammad.md:79
 #, markdown-text, no-wrap
 msgid "Via Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:92
+#: src/en/documentation/use/start-using-zammad.md:84
 #, markdown-text
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
 "overview section. You can either open it by clicking the **Overviews** "
-"button in the navigation bar or use the keyboard shortcut [[o]].  You can "
-"see overviews as a kind of ticket lists."
+"button in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"overviews as a kind of ticket lists."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:98
+#: src/en/documentation/use/start-using-zammad.md:88
 #, markdown-text
 msgid ""
 "By default, there are some built in overviews, you can use. For example, "
-"there is an overview called \"Open Tickets\". This might be a good starting "
-"point.  Your Zammad admin may have created additional overviews. These are "
+"there is an overview called \"Open Tickets\".  This might be a good starting "
+"point. Your Zammad admin may have created additional overviews. These are "
 "based on conditions, which are basically rules, to define which ticket "
 "appears in which overview."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:101
+#: src/en/documentation/use/start-using-zammad.md:90
 #, markdown-text
 msgid ""
 "For a detailed description, head over to the [overview usage "
@@ -4644,13 +4624,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:102
+#: src/en/documentation/use/start-using-zammad.md:91
 #, markdown-text, no-wrap
 msgid "Via Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:108
+#: src/en/documentation/use/start-using-zammad.md:96
 #, markdown-text
 msgid ""
 "However, if you search for a specific ticket which might or might not be "
@@ -4660,7 +4640,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:111
+#: src/en/documentation/use/start-using-zammad.md:98
 #, markdown-text
 msgid ""
 "After activating the search field, you can see your last viewed items as "
@@ -4668,7 +4648,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:116
+#: src/en/documentation/use/start-using-zammad.md:102
 #, markdown-text
 msgid ""
 "By entering a search term, you immediately see a preview of the search "
@@ -4678,13 +4658,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:118
+#: src/en/documentation/use/start-using-zammad.md:104
 #, markdown-text
 msgid "Have a look at the [search guide](guides/search) for more details."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:126
+#: src/en/documentation/use/start-using-zammad.md:111
 #, markdown-text
 msgid ""
 "Depending on the [notification "
@@ -4695,7 +4675,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:130
+#: src/en/documentation/use/start-using-zammad.md:114
 #, markdown-text
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
@@ -4704,7 +4684,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:135
+#: src/en/documentation/use/start-using-zammad.md:117
 #, markdown-text
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
@@ -4714,13 +4694,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:136
+#: src/en/documentation/use/start-using-zammad.md:118
 #, markdown-text, no-wrap
 msgid "Ticket Basics"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:143
+#: src/en/documentation/use/start-using-zammad.md:124
 #, markdown-text
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
@@ -4729,7 +4709,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
@@ -4737,7 +4717,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid ""
 "You and your colleagues can see who is working on which customer request "
@@ -4745,7 +4725,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid ""
 "The state of each request as well as the history (who did what?) is "
@@ -4753,13 +4733,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
@@ -4767,7 +4747,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:131
 #, markdown-text
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
@@ -4775,7 +4755,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:159
+#: src/en/documentation/use/start-using-zammad.md:134
 #, markdown-text
 msgid ""
 "So, basically you can work with Zammad similar as with your email "
@@ -4784,58 +4764,77 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:182
+#: src/en/documentation/use/start-using-zammad.md:151
 #, markdown-text
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
 "request is resolved or not). By default, there are the following states:"
 msgstr ""
 
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:182
-#, markdown-text, no-wrap
+#. type: Bullet: '  - '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
 msgid ""
-"  - **New**: State for new tickets on which no one has worked on. When\n"
-"      updating a ticket the first time, it automatically switches to "
-"_open_.\n"
-"  - **Open**: State for tickets which aren't resolved yet and some\n"
-"      work needs to be done.\n"
-"  - **Pending Close**: State for tickets which are basically resolved but\n"
-"      you don't want to close immediately. This state requires you to "
-"enter\n"
-"      a date and time at which the ticket automatically switches to "
-"_closed_.\n"
-"  - **Pending Reminder**: State for open tickets which you want to get\n"
-"      reminded to a certain date and time. Requires you to enter a date and "
-"time\n"
-"      at which you want to get notified. For example useful if you had a\n"
-"      question to a third party and want to make sure that this issue "
-"won't\n"
-"      be forgotten.\n"
-"- **Owner**: This is the person who is currently responsible for the "
-"ticket.\n"
-"  In case you need to have an information from another colleague, you can "
-"either\n"
-"  change to owner to this person or mention the person in an article by\n"
-"  typing `@@` and selecting the user. In the later case, the user gets "
-"notified\n"
-"  and is automatically subscribed to receive notifications on ticket "
-"updates.\n"
-"- **Group**: This ticket attribute is useful for organizations with more "
-"than\n"
-"  one team. Depending on the permissions, you might not see the ticket "
-"after\n"
-"  changing the group and saving the changes.\n"
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket the first time, it automatically switches to _open_."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to _closed_."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"to a certain date and time. Requires you to enter a date and time at which "
+"you want to get notified. For example useful if you had a question to a "
+"third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
+msgid ""
+"**Owner**: This is the person who is currently responsible for the "
+"ticket. In case you need to have an information from another colleague, you "
+"can either change to owner to this person or mention the person in an "
+"article by typing `@@` and selecting the user. In the later case, the user "
+"gets notified and is automatically subscribed to receive notifications on "
+"ticket updates."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/start-using-zammad.md:151
+#, markdown-text
+msgid ""
+"**Group**: This ticket attribute is useful for organizations with more than "
+"one team. Depending on the permissions, you might not see the ticket after "
+"changing the group and saving the changes."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:183
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text, no-wrap
 msgid "Ticket Detail View"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:187
+#: src/en/documentation/use/start-using-zammad.md:155
 #, markdown-text
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
@@ -4843,7 +4842,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:194
+#: src/en/documentation/use/start-using-zammad.md:160
 #, markdown-text
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
@@ -4855,22 +4854,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:197
+#: src/en/documentation/use/start-using-zammad.md:163
 #, markdown-text
 msgid ""
-"Independent of the customer's article type, you can always add internal "
-"notes.  These are useful to add information to the ticket or ask a "
-"colleague."
+"Regardless of the customer's article type, you can always add internal "
+"notes. These are useful to add information to the ticket or ask a colleague."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:198
+#: src/en/documentation/use/start-using-zammad.md:164
 #, markdown-text, no-wrap
 msgid "Updating your Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:205
+#: src/en/documentation/use/start-using-zammad.md:170
 #, markdown-text
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
@@ -4881,19 +4879,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:206
+#: src/en/documentation/use/start-using-zammad.md:171
 #, markdown-text, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:212
+#: src/en/documentation/use/start-using-zammad.md:175
 #, markdown-text
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
 "either start working or have a look at the [advanced features "
-"section](advanced-features) to become even more productive and use the full "
+"section](advanced-features)  to become even more productive and use the full "
 "potential of Zammad. 🚀"
 msgstr ""
 
@@ -5216,7 +5214,7 @@ msgstr ""
 #. type: Title #
 #: src/en/get-started/installation/docker.md:6
 #, markdown-text, no-wrap
-msgid "Install with Docker"
+msgid "Docker Installation"
 msgstr ""
 
 #. type: Plain text
@@ -5694,7 +5692,7 @@ msgstr ""
 #. type: Title #
 #: src/en/get-started/installation/kubernetes.md:6
 #, markdown-text, no-wrap
-msgid "Install on Kubernetes"
+msgid "Kubernetes Installation"
 msgstr ""
 
 #. type: Plain text
@@ -6515,7 +6513,7 @@ msgstr ""
 #: src/en/get-started/installation/prerequisites.md:40
 #, markdown-text
 msgid ""
-"Because Zammad is a web application, only a up-to-date browser is "
+"Because Zammad is a web application, only an up-to-date browser is "
 "needed. The following browsers are supported:"
 msgstr ""
 
@@ -6743,7 +6741,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:212
+#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:211
 #, markdown-text, no-wrap
 msgid "Additional Steps"
 msgstr ""
@@ -7331,17 +7329,16 @@ msgid "Rails Console Safe Mode"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:85
+#: src/en/reference/console.md:84
 #, markdown-text
 msgid ""
-"Normally, starting rails console requires certain [third-party "
-"services](/en/get-started/installation/prerequisites#server-software)  to be "
+"Normally, starting rails console requires certain third-party services to be "
 "up and running. You may receive errors and console will refuse to start in "
 "case they are not available."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:89
+#: src/en/reference/console.md:88
 #, markdown-text
 msgid ""
 "However, it's possible to start rails console in safe mode by setting a "
@@ -7350,25 +7347,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:90
+#: src/en/reference/console.md:89
 #, no-wrap
 msgid "ZAMMAD_SAFE_MODE=1 zammad run rails c\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:94
+#: src/en/reference/console.md:93
 #, markdown-text, no-wrap
 msgid "Ticket Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:96
+#: src/en/reference/console.md:95
 #, markdown-text, no-wrap
 msgid "Get the RAW Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:101
+#: src/en/reference/console.md:100
 #, markdown-text
 msgid ""
 "The following command will help you to check on received EML-files Zammad "
@@ -7377,7 +7374,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:104
+#: src/en/reference/console.md:103
 #, markdown-text
 msgid ""
 "To get the first articles EML-file, you can use the following command.  In "
@@ -7385,13 +7382,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:105
+#: src/en/reference/console.md:104
 #, no-wrap
 msgid "Ticket.find_by(number:'101234').articles.first.as_raw.content\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:112
+#: src/en/reference/console.md:111
 #, markdown-text
 msgid ""
 "If needed, you can also get the raw content of later articles (you'll need "
@@ -7400,43 +7397,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:115
+#: src/en/reference/console.md:114
 #, markdown-text
 msgid "In the first step we get all article IDs of the ticket:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:116
+#: src/en/reference/console.md:115
 #, no-wrap
 msgid "Ticket.find_by(number:'101234').article_ids\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:121
+#: src/en/reference/console.md:120
 #, markdown-text
 msgid "Output:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:122
+#: src/en/reference/console.md:121
 #, no-wrap
 msgid "[4, 3, 2]\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:127
+#: src/en/reference/console.md:126
 #, markdown-text
 msgid "From the list we get, we can then get the articles content:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:128
+#: src/en/reference/console.md:127
 #, no-wrap
 msgid "Ticket::Article.find(3).as_raw.content\n"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:132
+#: src/en/reference/console.md:131
 #, no-wrap
 msgid ""
 "If you just use `Ticket::Article.find(3)` you can see further\n"
@@ -7444,13 +7441,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:137
+#: src/en/reference/console.md:136
 #, markdown-text, no-wrap
 msgid "Update All Tickets of a Specific Customer"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:139
+#: src/en/reference/console.md:138
 #, no-wrap
 msgid ""
 "Please note that this action can be expensive resource wise, if you\n"
@@ -7458,55 +7455,55 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:144
+#: src/en/reference/console.md:143
 #, no-wrap
 msgid "Ticket.where(customer_id: 4).update_all(customer_id: 1)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:148
+#: src/en/reference/console.md:147
 #, markdown-text, no-wrap
 msgid "Get Ticket State Types"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:151
+#: src/en/reference/console.md:150
 #, markdown-text
 msgid "This will show all state types needed for creating new ticket states:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:152
+#: src/en/reference/console.md:151
 #, no-wrap
 msgid "Ticket::StateType.pluck(:id, :name)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:157
+#: src/en/reference/console.md:156
 #, markdown-text
 msgid "Above will return both, the type ID and name - e.g.:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:158
+#: src/en/reference/console.md:157
 #, no-wrap
 msgid "`[[1, \"new\"], [2, \"open\"], ...`.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:162
+#: src/en/reference/console.md:161
 #, markdown-text, no-wrap
 msgid "User Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:164
+#: src/en/reference/console.md:163
 #, markdown-text, no-wrap
 msgid "Find User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:168
+#: src/en/reference/console.md:167
 #, markdown-text
 msgid ""
 "In order to work on user information or to check for specific information, "
@@ -7514,55 +7511,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:170
+#: src/en/reference/console.md:169
 #, markdown-text
 msgid "User ID already known:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:171
+#: src/en/reference/console.md:170
 #, no-wrap
 msgid "User.find(4)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:176
+#: src/en/reference/console.md:175
 #, markdown-text
 msgid "Searching for the user by his email address:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:177
+#: src/en/reference/console.md:176
 #, no-wrap
 msgid "User.find_by(email: 'your@email')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:182
+#: src/en/reference/console.md:181
 #, markdown-text
 msgid "Searching for the user by his login:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:183
+#: src/en/reference/console.md:182
 #, no-wrap
 msgid "User.find_by(login: 'john.doe')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:187
+#: src/en/reference/console.md:186
 #, markdown-text, no-wrap
 msgid "Unlock a Locked User Account"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:189
+#: src/en/reference/console.md:188
 #, no-wrap
 msgid "Unlocking a locked user account is also supported by Zammad's web UI!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:197
+#: src/en/reference/console.md:196
 #, markdown-text, no-wrap
 msgid ""
 "It sometimes happens that a user locks himself out by wildly trying the\n"
@@ -7572,7 +7569,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:200
+#: src/en/reference/console.md:199
 #, markdown-text
 msgid ""
 "The user can't login any more (forever) if he doesn't change the password or "
@@ -7580,26 +7577,26 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:201
+#: src/en/reference/console.md:200
 #, no-wrap
 msgid "u=User.find(**USERID**)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:205
+#: src/en/reference/console.md:204
 #, no-wrap
 msgid "u.login_failed=0\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:209 src/en/reference/console.md:238
-#: src/en/reference/console.md:257 src/en/reference/console.md:276
+#: src/en/reference/console.md:208 src/en/reference/console.md:237
+#: src/en/reference/console.md:256 src/en/reference/console.md:275
 #, no-wrap
 msgid "u.save!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:216
+#: src/en/reference/console.md:215
 #, markdown-text
 msgid ""
 "You can also double check if the account is locked by running the following "
@@ -7608,25 +7605,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:217
+#: src/en/reference/console.md:216
 #, no-wrap
 msgid "User.find(**USERID**).login_failed\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:221
+#: src/en/reference/console.md:220
 #, markdown-text, no-wrap
 msgid "Change / Update Email Address of User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:224
+#: src/en/reference/console.md:223
 #, markdown-text
 msgid "If needed, you can simply change the email address of the user."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:225
+#: src/en/reference/console.md:224
 #, no-wrap
 msgid ""
 "Please note that the login attribute is not affected by this and\n"
@@ -7634,31 +7631,31 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:230 src/en/reference/console.md:249
+#: src/en/reference/console.md:229 src/en/reference/console.md:248
 #, no-wrap
 msgid "u = User.find(**USERID**)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:234
+#: src/en/reference/console.md:233
 #, no-wrap
 msgid "u.email = 'user@exmaple.com'\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:243 src/en/reference/console.md:262
+#: src/en/reference/console.md:242 src/en/reference/console.md:261
 #, markdown-text
 msgid "You need to find the user ID of the user first for this."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:244
+#: src/en/reference/console.md:243
 #, markdown-text, no-wrap
 msgid "Change / Update Login Name of User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:248
+#: src/en/reference/console.md:247
 #, markdown-text
 msgid ""
 "Change the user name of the user (e.g. if you want to login with a shorter "
@@ -7666,19 +7663,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:253
+#: src/en/reference/console.md:252
 #, no-wrap
 msgid "u.login = 'user@exmaple.com'\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:263
+#: src/en/reference/console.md:262
 #, markdown-text, no-wrap
 msgid "Set Admin Rights for User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:267
+#: src/en/reference/console.md:266
 #, markdown-text
 msgid ""
 "Don't have access to Zammad anymore? Grant yourself or another user "
@@ -7686,25 +7683,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:268
+#: src/en/reference/console.md:267
 #, no-wrap
 msgid "u = User.find_by(email: 'you@example.com')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:272
+#: src/en/reference/console.md:271
 #, no-wrap
 msgid "u.roles = Role.where(name: ['Agent', 'Admin'])\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:280
+#: src/en/reference/console.md:279
 #, markdown-text, no-wrap
 msgid "Set Password for User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:284
+#: src/en/reference/console.md:283
 #, markdown-text
 msgid ""
 "You or the user did forget his password? No problem! Simply reset it by hand "
@@ -7712,7 +7709,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:285
+#: src/en/reference/console.md:284
 #, no-wrap
 msgid ""
 "User.find_by(email: 'you@example.com').update!(password: "
@@ -7720,13 +7717,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:289
+#: src/en/reference/console.md:288
 #, markdown-text, no-wrap
 msgid "Remove Password for User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:296
+#: src/en/reference/console.md:295
 #, markdown-text
 msgid ""
 "If you added a second authentication method (e.g. LDAP) after launch, there "
@@ -7737,43 +7734,43 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:297
+#: src/en/reference/console.md:296
 #, no-wrap
 msgid "User.find_by(email: 'you@example.com').update!(password: nil)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:301
+#: src/en/reference/console.md:300
 #, markdown-text, no-wrap
 msgid "Group Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:303
+#: src/en/reference/console.md:302
 #, markdown-text, no-wrap
 msgid "Find a Group"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:305
+#: src/en/reference/console.md:304
 #, no-wrap
 msgid "Group.find_by(name: 'Users').follow_up_possible\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:309
+#: src/en/reference/console.md:308
 #, markdown-text, no-wrap
 msgid "Chat Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:311
+#: src/en/reference/console.md:310
 #, markdown-text, no-wrap
 msgid "Remove IP Address Logs"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:315
+#: src/en/reference/console.md:314
 #, markdown-text
 msgid ""
 "Use the following command to remove all IP address records from closed chats "
@@ -7781,7 +7778,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:316
+#: src/en/reference/console.md:315
 #, no-wrap
 msgid ""
 "Chat::Session.where(state: 'closed').where('updated_at < ?', "
@@ -7790,19 +7787,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:321
+#: src/en/reference/console.md:320
 #, no-wrap
 msgid "session.preferences.delete('geo_ip')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:325
+#: src/en/reference/console.md:324
 #, no-wrap
 msgid "session.preferences.delete('remote_ip')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:329
+#: src/en/reference/console.md:328
 #, no-wrap
 msgid ""
 "session.save!(touch: false)\n"
@@ -7810,13 +7807,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:334
+#: src/en/reference/console.md:333
 #, markdown-text, no-wrap
 msgid "Zammad Settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:338
+#: src/en/reference/console.md:337
 #, markdown-text
 msgid ""
 "In this section, you can find some settings which you can set in the Zammad "
@@ -7824,13 +7821,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:339
+#: src/en/reference/console.md:338
 #, markdown-text, no-wrap
 msgid "Auto Shutdown Setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:346
+#: src/en/reference/console.md:345
 #, markdown-text
 msgid ""
 "Defines if an automatic shutdown of Zammad is performed when the the "
@@ -7841,7 +7838,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:349
+#: src/en/reference/console.md:348
 #, markdown-text
 msgid ""
 "Setting this to ``false`` might only make sense in very rare cases and you "
@@ -7849,19 +7846,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:350
+#: src/en/reference/console.md:349
 #, no-wrap
 msgid "Setting.set('auto_shutdown', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:354
+#: src/en/reference/console.md:353
 #, markdown-text, no-wrap
 msgid "Ticket_hook Setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:359
+#: src/en/reference/console.md:358
 #, markdown-text
 msgid ""
 "This will give you the ticket hook that you'll find inside the `[]` in front "
@@ -7870,25 +7867,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:360
+#: src/en/reference/console.md:359
 #, no-wrap
 msgid "Setting.get('ticket_hook')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:364
+#: src/en/reference/console.md:363
 #, markdown-text, no-wrap
 msgid "FQDN Setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:367
+#: src/en/reference/console.md:366
 #, markdown-text
 msgid "Get the current FQDN setting of Zammad and, if needed, adjust it."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:368
+#: src/en/reference/console.md:367
 #, no-wrap
 msgid ""
 "This setting has no effect on SSL certificates or any web server\n"
@@ -7896,37 +7893,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:374
+#: src/en/reference/console.md:373
 #, markdown-text
 msgid "Get current FQDN:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:375
+#: src/en/reference/console.md:374
 #, no-wrap
 msgid "Setting.get('fqdn')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:380
+#: src/en/reference/console.md:379
 #, markdown-text
 msgid "Set a new FQDN:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:381
+#: src/en/reference/console.md:380
 #, no-wrap
 msgid "Setting.set('fqdn', 'new.domain.tld')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:385
+#: src/en/reference/console.md:384
 #, markdown-text, no-wrap
 msgid "HTTP(s) Setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:389
+#: src/en/reference/console.md:388
 #, markdown-text
 msgid ""
 "This setting indirectly belongs to your FQDN setting and is relevant for "
@@ -7934,7 +7931,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:390
+#: src/en/reference/console.md:389
 #, no-wrap
 msgid ""
 "This setting also affects Zammad's CSRF token behavior. If you set\n"
@@ -7945,37 +7942,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:399
+#: src/en/reference/console.md:398
 #, markdown-text
 msgid "Get the current http type:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:400
+#: src/en/reference/console.md:399
 #, no-wrap
 msgid "Setting.get('http_type')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:405
+#: src/en/reference/console.md:404
 #, markdown-text
 msgid "Change the http type to HTTPs:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:406
+#: src/en/reference/console.md:405
 #, no-wrap
 msgid "Setting.set('http_type', 'https')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:410
+#: src/en/reference/console.md:409
 #, markdown-text, no-wrap
 msgid "Storage Provider Setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:416
+#: src/en/reference/console.md:415
 #, markdown-text
 msgid ""
 "The storage provider setting is set to `DB` on default installations.  "
@@ -7985,31 +7982,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:418
+#: src/en/reference/console.md:417
 #, markdown-text
 msgid "Get the current attachment storage:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:419
+#: src/en/reference/console.md:418
 #, no-wrap
 msgid "Setting.get('storage_provider')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:424
+#: src/en/reference/console.md:423
 #, markdown-text
 msgid "Change attachment storage to database"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:425
+#: src/en/reference/console.md:424
 #, no-wrap
 msgid "Setting.set('storage_provider', 'DB')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:434
+#: src/en/reference/console.md:433
 #, markdown-text
 msgid ""
 "If you have already stored files and want to move them, you can use the "
@@ -8020,7 +8017,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:436
+#: src/en/reference/console.md:435
 #, markdown-text
 msgid ""
 "Move files from DB to File with a specified delay after each file in "
@@ -8028,37 +8025,37 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:437
+#: src/en/reference/console.md:436
 #, no-wrap
 msgid "Store::File.move('DB', 'File', delay_in_sec)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:442
+#: src/en/reference/console.md:441
 #, markdown-text
 msgid "The following settings are available in a default installation:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:445
+#: src/en/reference/console.md:444
 #, markdown-text
 msgid "`DB` (database)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:445
+#: src/en/reference/console.md:444
 #, markdown-text
 msgid "`File` (Filesystem (`/opt/zammad/storage/`))"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:446
+#: src/en/reference/console.md:445
 #, markdown-text, no-wrap
 msgid "Configuring Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:450
+#: src/en/reference/console.md:449
 #, markdown-text
 msgid ""
 "If your Elasticsearch installation changes, you can use the following "
@@ -8066,61 +8063,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:452
+#: src/en/reference/console.md:451
 #, markdown-text
 msgid "Change elasticsearch URL:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:453
+#: src/en/reference/console.md:452
 #, no-wrap
 msgid "Setting.set('es_url', 'http://127.0.0.1:9200')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:458
+#: src/en/reference/console.md:457
 #, markdown-text
 msgid "Change elasticsearch user (e.g. for authentication):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:459
+#: src/en/reference/console.md:458
 #, no-wrap
 msgid "Setting.set('es_user', 'elasticsearch')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:464
+#: src/en/reference/console.md:463
 #, markdown-text
 msgid "Change the elasticsearch password for authentication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:465
+#: src/en/reference/console.md:464
 #, no-wrap
 msgid "Setting.set('es_password', 'zammad')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:470
+#: src/en/reference/console.md:469
 #, markdown-text
 msgid "Change the index name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:471
+#: src/en/reference/console.md:470
 #, no-wrap
 msgid "Setting.set('es_index', Socket.gethostname + '_zammad')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:476
+#: src/en/reference/console.md:475
 #, markdown-text
 msgid "Ignore files by file extension from being indexed:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:477
+#: src/en/reference/console.md:476
 #, no-wrap
 msgid ""
 "Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin "
@@ -8128,67 +8125,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:482
+#: src/en/reference/console.md:481
 #, markdown-text
 msgid "Limit the attachment size:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:483
+#: src/en/reference/console.md:482
 #, no-wrap
 msgid "Setting.set('es_attachment_max_size_in_mb', 50)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:488
+#: src/en/reference/console.md:487
 #, markdown-text
 msgid "Turn SSL verification on or off:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:489
+#: src/en/reference/console.md:488
 #, no-wrap
 msgid "Setting.set('es_ssl_verify', 'false')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:493
+#: src/en/reference/console.md:492
 #, markdown-text, no-wrap
 msgid "Enable Proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:496
+#: src/en/reference/console.md:495
 #, markdown-text
 msgid "Set a proxy to use by Zammad:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:497
+#: src/en/reference/console.md:496
 #, no-wrap
 msgid "Setting.set('proxy', 'proxy.example.com:3128')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:501
+#: src/en/reference/console.md:500
 #, no-wrap
 msgid "Setting.set('proxy_username', 'some user')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:505
+#: src/en/reference/console.md:504
 #, no-wrap
 msgid "Setting.set('proxy_password', 'some pass')\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:509
+#: src/en/reference/console.md:508
 #, markdown-text, no-wrap
 msgid "Hidden Settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:514
+#: src/en/reference/console.md:513
 #, markdown-text
 msgid ""
 "In this section you can find some settings that you won't find within the "
@@ -8197,13 +8194,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:515
+#: src/en/reference/console.md:514
 #, markdown-text, no-wrap
 msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:521
+#: src/en/reference/console.md:520
 #, markdown-text
 msgid ""
 "This option allows you to send all outgoing E-Mails (not notifications)  to "
@@ -8212,79 +8209,79 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:522
+#: src/en/reference/console.md:521
 #, no-wrap
 msgid "Setting.set('system_bcc', 'alias@domain.tld')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:527
+#: src/en/reference/console.md:526
 #, markdown-text
 msgid "You can easily check the current BCC-Setting by running the following:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:528
+#: src/en/reference/console.md:527
 #, no-wrap
 msgid "Setting.get('system_bcc')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:532
+#: src/en/reference/console.md:531
 #, markdown-text, no-wrap
 msgid "Activate Counter on Grouped Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:535
+#: src/en/reference/console.md:534
 #, markdown-text
 msgid "This enables a ticket number value in each heading for grouped elements."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:537
+#: src/en/reference/console.md:536
 #, markdown-text
 msgid "Enable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:538
+#: src/en/reference/console.md:537
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:543
+#: src/en/reference/console.md:542
 #, markdown-text
 msgid "Disable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:544
+#: src/en/reference/console.md:543
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:549
+#: src/en/reference/console.md:548
 #, markdown-text
 msgid "Get current setting (`nil` is false):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:550
+#: src/en/reference/console.md:549
 #, no-wrap
 msgid "Setting.get('ui_table_group_by_show_count')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:554
+#: src/en/reference/console.md:553
 #, markdown-text, no-wrap
 msgid "Default Ticket Type on Creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:558
+#: src/en/reference/console.md:557
 #, markdown-text
 msgid ""
 "Zammad allows you to define the default article type upon ticket "
@@ -8292,55 +8289,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:560
+#: src/en/reference/console.md:559
 #, markdown-text
 msgid "You can choose between"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:564
+#: src/en/reference/console.md:563
 #, markdown-text
 msgid "`phone-in` (incoming call, **default**),"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:564
+#: src/en/reference/console.md:563
 #, markdown-text
 msgid "`phone-out` (outgoing call) and"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:564
+#: src/en/reference/console.md:563
 #, markdown-text
 msgid "`email-out` (Sending an E-Mail out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:565
+#: src/en/reference/console.md:564
 #, no-wrap
 msgid "Setting.set('ui_ticket_create_default_type', 'email-out')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:570
+#: src/en/reference/console.md:569
 #, markdown-text
 msgid "To check what setting is set currently, simply run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:571
+#: src/en/reference/console.md:570
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_default_type')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:575
+#: src/en/reference/console.md:574
 #, markdown-text, no-wrap
 msgid "Adding a Warning to the Ticket Creation Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:579
+#: src/en/reference/console.md:578
 #, markdown-text
 msgid ""
 "If you want to give your agent a note or warning during ticket **creation**, "
@@ -8348,31 +8345,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:581
+#: src/en/reference/console.md:580
 #, markdown-text
 msgid "You can use three different warnings for:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:585
+#: src/en/reference/console.md:584
 #, markdown-text
 msgid "Incoming Calls `:\"phone-in\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:585
+#: src/en/reference/console.md:584
 #, markdown-text
 msgid "Outgoing Calls `:\"phone-out\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:585
+#: src/en/reference/console.md:584
 #, markdown-text
 msgid "Outgoing E-Mails `:\"email-out\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:586
+#: src/en/reference/console.md:585
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
@@ -8383,7 +8380,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:594
+#: src/en/reference/console.md:593
 #, no-wrap
 msgid ""
 "You can use those three sub-settings independently, if you e.g. don't\n"
@@ -8392,25 +8389,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:601 src/en/reference/console.md:640
+#: src/en/reference/console.md:600 src/en/reference/console.md:639
 #, markdown-text
 msgid "To check what's currently set, you can use:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:602
+#: src/en/reference/console.md:601
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_notes')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:606
+#: src/en/reference/console.md:605
 #, markdown-text, no-wrap
 msgid "Adding a Warning to the Article Reply Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:610
+#: src/en/reference/console.md:609
 #, markdown-text
 msgid ""
 "If you want to give your agent a warning during the ticket article "
@@ -8418,7 +8415,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:613
+#: src/en/reference/console.md:612
 #, markdown-text
 msgid ""
 "You can provide different warnings for different channels and article "
@@ -8426,43 +8423,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Internal Notes `:\"note-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Public Notes `:\"note-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Internal Calls `:\"phone-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Public Calls `:\"phone-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Internal Emails `:\"email-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid "Public Emails `:\"email-public\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:621
+#: src/en/reference/console.md:620
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
@@ -8479,7 +8476,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:632
+#: src/en/reference/console.md:631
 #, no-wrap
 msgid ""
 "You can use example sub-settings above independently, if you e.g.\n"
@@ -8489,19 +8486,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:641
+#: src/en/reference/console.md:640
 #, no-wrap
 msgid "Setting.get('ui_ticket_add_article_hint')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:645
+#: src/en/reference/console.md:644
 #, markdown-text, no-wrap
 msgid "Show Email Address of Customer on Customer Selection (Ticket Creation)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:649
+#: src/en/reference/console.md:648
 #, markdown-text
 msgid ""
 "By default, Zammad will not display the email addresses of customers.  The "
@@ -8509,31 +8506,31 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:650
+#: src/en/reference/console.md:649
 #, no-wrap
 msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:655 src/en/reference/console.md:675
+#: src/en/reference/console.md:654 src/en/reference/console.md:674
 #, markdown-text
 msgid "Get the current state of this setting with:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:656
+#: src/en/reference/console.md:655
 #, no-wrap
 msgid "Setting.get('ui_user_organization_selector_with_email')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:660
+#: src/en/reference/console.md:659
 #, markdown-text, no-wrap
 msgid "Change Font Settings for Outgoing HTML Emails"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:662
+#: src/en/reference/console.md:661
 #, no-wrap
 msgid ""
 "Some clients (like Outlook) might fallback to other settings while it\n"
@@ -8541,7 +8538,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:669
+#: src/en/reference/console.md:668
 #, markdown-text
 msgid ""
 "The below setting allows you to adjust Zammad's email font setting. This "
@@ -8549,7 +8546,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:670
+#: src/en/reference/console.md:669
 #, no-wrap
 msgid ""
 "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', "
@@ -8557,19 +8554,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:676
+#: src/en/reference/console.md:675
 #, no-wrap
 msgid "Setting.get('html_email_css_font')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:680
+#: src/en/reference/console.md:679
 #, markdown-text, no-wrap
 msgid "Highlight Customer's Open Ticket Count"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:684
+#: src/en/reference/console.md:683
 #, markdown-text
 msgid ""
 "This option enhances the selected customer's open tickets count. It "
@@ -8577,13 +8574,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:685
+#: src/en/reference/console.md:684
 #, no-wrap
 msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:691
+#: src/en/reference/console.md:690
 #, markdown-text
 msgid ""
 "Above settings has specific thresholds as follows. You **cannot** adjust "
@@ -8591,7 +8588,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:696
+#: src/en/reference/console.md:695
 #, markdown-text, no-wrap
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) "
@@ -8604,13 +8601,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:697
+#: src/en/reference/console.md:696
 #, markdown-text, no-wrap
 msgid "Activate Attachment Tab in Sidebar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:701
+#: src/en/reference/console.md:700
 #, markdown-text
 msgid ""
 "This option activates a new tab in the right sidebar in the ticket view "
@@ -8618,19 +8615,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:702
+#: src/en/reference/console.md:701
 #, no-wrap
 msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:706
+#: src/en/reference/console.md:705
 #, markdown-text, no-wrap
 msgid "Time Period for Showing Customer Profile on New Calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:712
+#: src/en/reference/console.md:711
 #, markdown-text
 msgid ""
 "Zammad shows the customer profile dialog when a call of this customer is "
@@ -8640,25 +8637,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:714
+#: src/en/reference/console.md:713
 #, markdown-text
 msgid "Set the time period to 90 days:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:715
+#: src/en/reference/console.md:714
 #, no-wrap
 msgid "Setting.set('cti_customer_last_activity', '90')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:719
+#: src/en/reference/console.md:718
 #, markdown-text, no-wrap
 msgid "Set Public \"Notes\" as SLA relevant"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:725
+#: src/en/reference/console.md:724
 #, markdown-text
 msgid ""
 "Normally, notes aren't SLA relevant. Use the following command to include "
@@ -8668,7 +8665,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:726
+#: src/en/reference/console.md:725
 #, no-wrap
 msgid ""
 "By default, customers are not notified when public notes are added to a\n"
@@ -8676,37 +8673,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:732
+#: src/en/reference/console.md:731
 #, markdown-text
 msgid "Enable SLA to count notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:733
+#: src/en/reference/console.md:732
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:738
+#: src/en/reference/console.md:737
 #, markdown-text
 msgid "Enable SLA to ignore notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:739
+#: src/en/reference/console.md:738
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:743
+#: src/en/reference/console.md:742
 #, markdown-text, no-wrap
 msgid "Activate Priority Icon"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:747
+#: src/en/reference/console.md:746
 #, markdown-text
 msgid ""
 "To activate additional icons which represent the priority, use the command "
@@ -8714,25 +8711,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:748
+#: src/en/reference/console.md:747
 #, no-wrap
 msgid "Setting.set('ui_ticket_priority_icons', true)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:752
+#: src/en/reference/console.md:751
 #, markdown-text, no-wrap
 msgid "Other Useful Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:754
+#: src/en/reference/console.md:753
 #, markdown-text, no-wrap
 msgid "Fetch Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:758
+#: src/en/reference/console.md:757
 #, markdown-text
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
@@ -8740,19 +8737,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:759
+#: src/en/reference/console.md:758
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:763
+#: src/en/reference/console.md:762
 #, markdown-text, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:768
+#: src/en/reference/console.md:767
 #, markdown-text
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
@@ -8761,7 +8758,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:772
+#: src/en/reference/console.md:771
 #, markdown-text
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
@@ -8770,19 +8767,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:773
+#: src/en/reference/console.md:772
 #, markdown-text, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:775
+#: src/en/reference/console.md:774
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:781
 #, markdown-text
 msgid ""
 "You can find the location of the exported email in the output of your "
@@ -8791,13 +8788,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:783
+#: src/en/reference/console.md:782
 #, markdown-text, no-wrap
 msgid "Edit the Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:788
+#: src/en/reference/console.md:787
 #, markdown-text
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
@@ -8806,25 +8803,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:789
+#: src/en/reference/console.md:788
 #, markdown-text, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:792
+#: src/en/reference/console.md:791
 #, markdown-text
 msgid "After editing the email, run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:793
+#: src/en/reference/console.md:792
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:801
+#: src/en/reference/console.md:800
 #, markdown-text
 msgid ""
 "This will apply your changes from the file to the database. You can also "
@@ -8834,7 +8831,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:802
+#: src/en/reference/console.md:801
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -8843,13 +8840,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:808
+#: src/en/reference/console.md:807
 #, markdown-text, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:812
+#: src/en/reference/console.md:811
 #, markdown-text
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
@@ -8857,13 +8854,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:813
+#: src/en/reference/console.md:812
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:820
+#: src/en/reference/console.md:819
 #, markdown-text
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
@@ -8872,13 +8869,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:821
+#: src/en/reference/console.md:820
 #, markdown-text, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:823
+#: src/en/reference/console.md:822
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -8886,7 +8883,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:832
+#: src/en/reference/console.md:831
 #, markdown-text
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
@@ -8896,7 +8893,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:833
+#: src/en/reference/console.md:832
 #, no-wrap
 msgid ""
 "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
@@ -8904,13 +8901,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:837
+#: src/en/reference/console.md:836
 #, markdown-text, no-wrap
 msgid "Deleting Records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:839
+#: src/en/reference/console.md:838
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -8919,61 +8916,61 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:845
+#: src/en/reference/console.md:844
 #, markdown-text, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:848
+#: src/en/reference/console.md:847
 #, markdown-text
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:849
+#: src/en/reference/console.md:848
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:854
+#: src/en/reference/console.md:853
 #, markdown-text
 msgid "Delete all tickets:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:855
+#: src/en/reference/console.md:854
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:860
+#: src/en/reference/console.md:859
 #, markdown-text
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:861
+#: src/en/reference/console.md:860
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:865
+#: src/en/reference/console.md:864
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:869
+#: src/en/reference/console.md:868
 #, markdown-text, no-wrap
 msgid "Removing Users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:871
+#: src/en/reference/console.md:870
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -8985,7 +8982,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:880
+#: src/en/reference/console.md:879
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -8996,31 +8993,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:888
+#: src/en/reference/console.md:887
 #, markdown-text
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:890
+#: src/en/reference/console.md:889
 #, markdown-text
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:891
+#: src/en/reference/console.md:890
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:896
+#: src/en/reference/console.md:895
 #, markdown-text
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:897
+#: src/en/reference/console.md:896
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -9029,67 +9026,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:903
+#: src/en/reference/console.md:902
 #, markdown-text, no-wrap
 msgid "Removing Organizations"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:905
+#: src/en/reference/console.md:904
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:909
+#: src/en/reference/console.md:908
 #, markdown-text, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:912
+#: src/en/reference/console.md:911
 #, markdown-text
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:913
+#: src/en/reference/console.md:912
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:918
+#: src/en/reference/console.md:917
 #, markdown-text
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:919
+#: src/en/reference/console.md:918
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:924
+#: src/en/reference/console.md:923
 #, markdown-text
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:925
+#: src/en/reference/console.md:924
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:929
+#: src/en/reference/console.md:928
 #, markdown-text, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:931
+#: src/en/reference/console.md:930
 #, no-wrap
 msgid ""
 "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
@@ -9097,13 +9094,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:935
+#: src/en/reference/console.md:934
 #, markdown-text, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:937
+#: src/en/reference/console.md:936
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -9111,7 +9108,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:942
+#: src/en/reference/console.md:941
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -9121,7 +9118,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:949
+#: src/en/reference/console.md:948
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -9130,37 +9127,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:955
+#: src/en/reference/console.md:954
 #, markdown-text, no-wrap
 msgid "Removing System Records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:958
+#: src/en/reference/console.md:957
 #, markdown-text
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:959
+#: src/en/reference/console.md:958
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:964
+#: src/en/reference/console.md:963
 #, markdown-text
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:965
+#: src/en/reference/console.md:964
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:970
+#: src/en/reference/console.md:969
 #, markdown-text
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
@@ -9168,13 +9165,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:971
+#: src/en/reference/console.md:970
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:977
+#: src/en/reference/console.md:976
 #, markdown-text
 msgid ""
 "Remove all history information from tickets, users and organizations "
@@ -9182,19 +9179,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:978
+#: src/en/reference/console.md:977
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:982
+#: src/en/reference/console.md:981
 #, markdown-text, no-wrap
 msgid "Reset Zammad Installation"
 msgstr ""
 
-#. type: Fenced div block (info)
-#: src/en/reference/console.md:984
+#. type: Fenced div block (danger)
+#: src/en/reference/console.md:983
 #, no-wrap
 msgid ""
 "\n"
@@ -9206,25 +9203,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:993
+#: src/en/reference/console.md:992
 #, no-wrap
 msgid "rake db:drop\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:997
+#: src/en/reference/console.md:996
 #, no-wrap
 msgid "rake db:create\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1001
+#: src/en/reference/console.md:1000
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1005
+#: src/en/reference/console.md:1004
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
@@ -10106,7 +10103,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/env-vars.md:18
 #, markdown-text, no-wrap
-msgid "Default values are marked with a <Badge type=\"info\" text=\"badge\"/>.\n"
+msgid ""
+"Default values are tagged with a <Badge type=\"info\" text=\"badge\"/>, if "
+"present.\n"
 msgstr ""
 
 #. type: Title ##
@@ -10119,7 +10118,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:26
 #, markdown-text, no-wrap
 msgid ""
-"`GPG_PATH` <Badge type=\"info\" text=\"unset\"/>\n"
+"`GPG_PATH`\n"
 ": Defines the path to the GPG installation. This is only needed if you\n"
 "  installed Zammad from Source, if you want to use different versions of\n"
 "  PGP on your machine or if your PGP installation differs from the\n"
@@ -10130,7 +10129,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:30
 #, markdown-text, no-wrap
 msgid ""
-"`RAILS_LOG_TO_STDOUT` <Badge type=\"info\" text=\"unset\"/>\n"
+"`RAILS_LOG_TO_STDOUT`\n"
 ": Print output directly to standard output instead of\n"
 "  `/var/log/zammad/production.log`.\n"
 msgstr ""
@@ -10148,7 +10147,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:38
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_SAFE_MODE` <Badge type=\"info\" text=\"unset\"/>\n"
+"`ZAMMAD_SAFE_MODE`\n"
 ": Ignore availability of third-party services when running Zammad\n"
 "  commands. Possible values: `1` or `true`\n"
 msgstr ""
@@ -10168,17 +10167,15 @@ msgstr ""
 #: src/en/reference/env-vars.md:50
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_HTTP_TYPE` <Badge type=\"info\" text=\"unset\"/>\n"
+"`ZAMMAD_HTTP_TYPE`\n"
 ": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
 "  `https`\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:53
-#, markdown-text, no-wrap
-msgid ""
-"`ZAMMAD_FQDN` <Badge type=\"info\" text=\"unset\"/>\n"
-": Defines the fully qualified domain name of the system.\n"
+#, markdown-text
+msgid "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
 msgstr ""
 
 #. type: Title ##
@@ -10270,7 +10267,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:96
 #, markdown-text, no-wrap
 msgid ""
-"`WEB_CONCURRENCY` <Badge type=\"info\" text=\"unset\"/>\n"
+"`WEB_CONCURRENCY`\n"
 ": How many instances of the application server to keep open at a time.\n"
 "  Increasing this can reduce loading times when too many users are on\n"
 "  Zammad at once.\n"
@@ -10280,7 +10277,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:101
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type=\"info\" text=\"unset\"/>\n"
+"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
 ": How many instances of the session worker to run at a time. Increasing "
 "this\n"
 "  can speed up background jobs (like the scheduler) when too many users are "
@@ -10300,8 +10297,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:109
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type=\"info\" "
-"text=\"unset\"/>\n"
+"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Allows spawning an independent process just for processing scheduled\n"
 "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
 "  other tasks when running tasks that take fairly long.\n"
@@ -10325,8 +10321,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:119
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type=\"info\" "
-"text=\"unset\"/>\n"
+"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": How many processes should work on delayed jobs? Increasing this _can_\n"
 "  improve issues with delayed jobs stacking up in your system. You may want "
 "to\n"
@@ -10361,7 +10356,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:142
 #, markdown-text, no-wrap
 msgid ""
-"`REDIS_URL` <Badge type=\"info\" text=\"unset\"/>\n"
+"`REDIS_URL`\n"
 ": Store your web socket connection information within Redis.\n"
 "  To do so, tell Zammad where to find your Redis instance:\n"
 "  `redis://your.redis.server:6379`\n"
@@ -10373,7 +10368,7 @@ msgstr ""
 #: src/en/reference/env-vars.md:149
 #, markdown-text, no-wrap
 msgid ""
-"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"unset\"/>\n"
+"`MEMCACHE_SERVERS`\n"
 ": Store your application cache files within Memcached.\n"
 "  To do so, tell Zammad where to find your Memcached instance:\n"
 "  `your.memcached.server:11211`\n"
@@ -10447,8 +10442,8 @@ msgid ""
 "ES. There are some more ES indexes, mainly\n"
 "  about objects in the admin interface of Zammad. They are out of scope of "
 "this documentation.\n"
-"- Attributes marked as SLA (<Badge type=\"info\" text=\"SLA\"/>) are only "
-"set if the ticket is affected by SLA calculation.\n"
+"- Attributes marked as <Badge type=\"info\" text=\"SLA\"/> are only set if "
+"the ticket is affected by SLA calculation.\n"
 "  Please note that some attributes may not be set if specific conditions are "
 "not met.\n"
 "- Also note that some attributes may be reset to `null` if no longer "
@@ -10662,11 +10657,10 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:108
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"<!-- markdownlint-disable-next-line MD051 -->\n"
-"Depends on [close_in_min](#close_in_min) and tells how many minutes the "
-"ticket was closed relative to SLAs solution time.\n"
+"Depends on `close_in_min` and tells how many minutes the ticket was closed "
+"relative to SLAs solution time."
 msgstr ""
 
 #. type: Plain text
@@ -15540,12 +15534,6 @@ msgid ""
 "checklist_ has a separate item endpoint.\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/checklist.md:19
-#, markdown-text, no-wrap
-msgid "Checklists"
-msgstr ""
-
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/checklist.md:21
 #, no-wrap
@@ -17100,12 +17088,6 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:158
 #, markdown-text
-msgid "Macros"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
-#, markdown-text
 msgid "Templates"
 msgstr ""
 
@@ -17459,9 +17441,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -18982,7 +18964,7 @@ msgstr ""
 msgid "`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`"
 msgstr ""
 
-#. type: Fenced div block (warning)
+#. type: Fenced div block (danger)
 #: src/en/reference/rest-api/priorities.md:82
 #, no-wrap
 msgid ""
@@ -19446,12 +19428,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, markdown-text, no-wrap
-msgid "Tags"
-msgstr ""
-
 #. type: Title ##
 #: src/en/reference/rest-api/tags.md:8
 #, markdown-text, no-wrap
@@ -19815,13 +19791,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/rest-api/time-accounting.md:1
-#: src/en/reference/rest-api/time-accounting.md:6
-#, markdown-text, no-wrap
-msgid "Time Accounting"
 msgstr ""
 
 #. type: Plain text
@@ -20225,6 +20194,18 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, markdown-text, no-wrap
@@ -20478,27 +20459,28 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid ""
 "This section is **not** about **migrating from one host to another**. You "
-"can find instructions about this topic in the [next section](migrate-host)."
+"can find instructions about this topic on the [Migrate Zammad "
+"page](migrate-host)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid "This guide expects a fully installed Zammad version"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid "It also expects you to restore Zammad on the same host and Zammad version"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid ""
 "The restore process stops & restarts Zammad. Therefore you have to run the "
@@ -20506,13 +20488,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid "PostgreSQL based installations will drop and re-create the database!"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:101
+#: src/en/tutorials/backup-restore.md:100
 #, markdown-text
 msgid ""
 "At least twice the backed up Zammad instance size of free storage is "
@@ -20520,7 +20502,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/backup-restore.md:102
+#: src/en/tutorials/backup-restore.md:101
 #, no-wrap
 msgid ""
 "If your scenario is different as described above, please consult the\n"
@@ -20532,13 +20514,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:109
+#: src/en/tutorials/backup-restore.md:108
 #, markdown-text, no-wrap
 msgid "Copy Backup Files to a Fitting Location"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:113
+#: src/en/tutorials/backup-restore.md:112
 #, markdown-text
 msgid ""
 "Ensure that the user you're using for restoration is allowed to read the "
@@ -20546,13 +20528,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:115
+#: src/en/tutorials/backup-restore.md:114
 #, markdown-text
 msgid "The Zammad backup consists of two files. They are named like this:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/tutorials/backup-restore.md:116
+#: src/en/tutorials/backup-restore.md:115
 #, no-wrap
 msgid ""
 "<timestamp>_zammad_db.psql.gz\n"
@@ -20560,7 +20542,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:123
+#: src/en/tutorials/backup-restore.md:122
 #, markdown-text
 msgid ""
 "There are also two symlinks in your backup directory pointing to the newest "
@@ -20568,7 +20550,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/tutorials/backup-restore.md:124
+#: src/en/tutorials/backup-restore.md:123
 #, no-wrap
 msgid ""
 "latest_zammad_db.psql.gz\n"
@@ -20576,7 +20558,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:131
+#: src/en/tutorials/backup-restore.md:130
 #, markdown-text
 msgid ""
 "Copy them to a fitting location which is accessible for the user who "
@@ -20584,13 +20566,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:132
+#: src/en/tutorials/backup-restore.md:131
 #, markdown-text, no-wrap
 msgid "Configure Backup Script"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:136
+#: src/en/tutorials/backup-restore.md:135
 #, markdown-text
 msgid ""
 "For a new installation, this is required. At least you have to provide a "
@@ -20599,13 +20581,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:137
+#: src/en/tutorials/backup-restore.md:136
 #, markdown-text, no-wrap
 msgid "Run the Restore"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:143
+#: src/en/tutorials/backup-restore.md:142
 #, markdown-text, no-wrap
 msgid ""
 "Be aware that restoring backups can overwrite your `database.yml`. You can\n"
@@ -20616,7 +20598,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:145
 #, markdown-text
 msgid ""
 "The restore works in two possible ways, depending on how interactive you "
@@ -20624,7 +20606,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:147
+#: src/en/tutorials/backup-restore.md:146
 #, no-wrap
 msgid ""
 "\n"
@@ -20645,7 +20627,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|warning)
-#: src/en/tutorials/backup-restore.md:147
+#: src/en/tutorials/backup-restore.md:146
 #, no-wrap
 msgid ""
 "Only use the following option if you know what you're doing! The following\n"
@@ -20653,7 +20635,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:147
+#: src/en/tutorials/backup-restore.md:146
 #, no-wrap
 msgid ""
 "When called with a timestamp argument (matching the backups filename),\n"
@@ -20666,13 +20648,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:176
+#: src/en/tutorials/backup-restore.md:175
 #, markdown-text
 msgid "The result should look like this:"
 msgstr ""
 
 #. type: Fenced code block (ansi)
-#: src/en/tutorials/backup-restore.md:177
+#: src/en/tutorials/backup-restore.md:176
 #, no-wrap
 msgid ""
 "# Zammad restore started - Fri Jan 21 17:54:13 CET 2022!\n"
@@ -20711,13 +20693,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:220
+#: src/en/tutorials/backup-restore.md:219
 #, markdown-text
 msgid "If you've set any environmental settings, please re-apply them now."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:220
+#: src/en/tutorials/backup-restore.md:219
 #, markdown-text
 msgid ""
 "If not already done, [install "
@@ -20725,7 +20707,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:220
+#: src/en/tutorials/backup-restore.md:219
 #, markdown-text
 msgid ""
 "[Connect Elasticsearch with Zammad and rebuild its search "
@@ -20735,13 +20717,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:221
+#: src/en/tutorials/backup-restore.md:220
 #, markdown-text, no-wrap
 msgid "Troubleshooting Backup & Restore"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:227
+#: src/en/tutorials/backup-restore.md:226
 #, markdown-text
 msgid ""
 "You can find some common problems below. If your issue is not listed, feel "
@@ -20751,13 +20733,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:228
+#: src/en/tutorials/backup-restore.md:227
 #, markdown-text, no-wrap
 msgid "Exit Codes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:232
+#: src/en/tutorials/backup-restore.md:231
 #, markdown-text
 msgid ""
 "Our backup & restore scripts come with exit codes to help you finding a "
@@ -20765,7 +20747,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:235
+#: src/en/tutorials/backup-restore.md:234
 #, markdown-text
 msgid ""
 "Beside the exit codes, there are also error messages returned to standard "
@@ -20773,7 +20755,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:242
+#: src/en/tutorials/backup-restore.md:241
 #, markdown-text, no-wrap
 msgid ""
 "| Code | Description / Situation                                                                                                                                                                "
@@ -20792,19 +20774,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:243
+#: src/en/tutorials/backup-restore.md:242
 #, markdown-text, no-wrap
 msgid "Common Problems"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:245
+#: src/en/tutorials/backup-restore.md:244
 #, markdown-text, no-wrap
 msgid "Password Authentication Failed / Peer Authentication Failed"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:250
+#: src/en/tutorials/backup-restore.md:249
 #, markdown-text
 msgid ""
 "This indicates that the password of your Zammad DB user is either different "
@@ -20812,7 +20794,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:253
+#: src/en/tutorials/backup-restore.md:252
 #, markdown-text
 msgid ""
 "If your Zammad instance is running, it can be caused by falling back to "
@@ -20820,14 +20802,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:255
-#: src/en/tutorials/backup-restore.md:266
+#: src/en/tutorials/backup-restore.md:254
+#: src/en/tutorials/backup-restore.md:265
 #, markdown-text, no-wrap
 msgid "**What to do?**\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:259
+#: src/en/tutorials/backup-restore.md:258
 #, markdown-text
 msgid ""
 "Ensure that the provided user credentials are correct. You can also consider "
@@ -20835,13 +20817,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:260
+#: src/en/tutorials/backup-restore.md:259
 #, markdown-text, no-wrap
 msgid "Ident Authentication Failed for User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:264
+#: src/en/tutorials/backup-restore.md:263
 #, markdown-text
 msgid ""
 "This indicates your database server does require `ident` authentication.  "
@@ -20849,19 +20831,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:269
+#: src/en/tutorials/backup-restore.md:268
 #, markdown-text
 msgid "Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:271
+#: src/en/tutorials/backup-restore.md:270
 #, markdown-text
 msgid "Usually, authentication can be allowed like this:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:272
+#: src/en/tutorials/backup-restore.md:271
 #, no-wrap
 msgid ""
 "# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT\n"
@@ -20870,7 +20852,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:281
+#: src/en/tutorials/backup-restore.md:280
 #, markdown-text
 msgid ""
 "Please consult the official [PostgreSQL "
@@ -20879,13 +20861,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:282
+#: src/en/tutorials/backup-restore.md:281
 #, markdown-text, no-wrap
 msgid "WARNING: You don't Seem to Have Any Attachments in the File System"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:286
+#: src/en/tutorials/backup-restore.md:285
 #, markdown-text
 msgid ""
 "This indicate that your instance currently does not save attachments to file "
@@ -20893,7 +20875,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:289
+#: src/en/tutorials/backup-restore.md:288
 #, markdown-text
 msgid ""
 "This warning will be shown once before creating an empty directory to allow "
@@ -20901,29 +20883,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:293
+#: src/en/tutorials/backup-restore.md:292
 #, markdown-text, no-wrap
 msgid ""
 "Check and adjust your\n"
-"storage settings [via "
+"[storage settings via "
 "console](/en/reference/console#storage-provider-setting)\n"
 "or in Zammad's admin interface under _Settings > System > Storage_.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:294
+#: src/en/tutorials/backup-restore.md:293
 #, markdown-text, no-wrap
 msgid "Helper Script"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:296
+#: src/en/tutorials/backup-restore.md:295
 #, markdown-text, no-wrap
 msgid "Warning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:300
+#: src/en/tutorials/backup-restore.md:299
 #, markdown-text
 msgid ""
 "A script can potentially be destructive! You should **never** run scripts "
@@ -20931,49 +20913,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:302
+#: src/en/tutorials/backup-restore.md:301
 #, markdown-text
 msgid "Be aware that you are running these scripts at your own risk."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:303
+#: src/en/tutorials/backup-restore.md:302
 #, markdown-text, no-wrap
 msgid "Database Helper: (Re)set Password"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:310
 #, markdown-text
 msgid "This script is working for PostgreSQL installations only."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:310
 #, markdown-text
 msgid "Only local database servers are supported (script changes user)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:310
 #, markdown-text
 msgid "This script requires to be run as `root` or similar privileged user."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:310
 #, markdown-text
 msgid "Be aware that the script will automatically stop and start Zammad!"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:312
+#: src/en/tutorials/backup-restore.md:311
 #, markdown-text, no-wrap
 msgid "Scopes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:318
+#: src/en/tutorials/backup-restore.md:317
 #, markdown-text
 msgid ""
 "The scope of this script are mostly package installations and especially "
@@ -20983,13 +20965,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:319
+#: src/en/tutorials/backup-restore.md:318
 #, markdown-text, no-wrap
 msgid "Functionality"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:324
+#: src/en/tutorials/backup-restore.md:323
 #, markdown-text
 msgid ""
 "The script will do the following actions automatically for you, depending on "
@@ -20997,7 +20979,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:330
+#: src/en/tutorials/backup-restore.md:329
 #, markdown-text
 msgid ""
 "If `database.yml` contains an empty password line, a new password will be "
@@ -21006,7 +20988,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:330
+#: src/en/tutorials/backup-restore.md:329
 #, markdown-text
 msgid ""
 "If `database.yml` contains a password, it will be used to set the password "
@@ -21014,13 +20996,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:331
+#: src/en/tutorials/backup-restore.md:330
 #, markdown-text, no-wrap
 msgid "Usage"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:335
+#: src/en/tutorials/backup-restore.md:334
 #, markdown-text
 msgid ""
 "Run the script with the command below and follow the instructions. No "
@@ -21028,13 +21010,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:336
+#: src/en/tutorials/backup-restore.md:335
 #, no-wrap
 msgid "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:341
+#: src/en/tutorials/backup-restore.md:340
 #, markdown-text
 msgid ""
 "If errors occur, the script will try to bring Zammad back online before "
@@ -23391,10 +23373,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "This guide will provide you some steps to get started. For a deeper insight "
-"you should consider having a look at the [indexed "
-"attributes](/en/reference/es-indexed-attributes) of Elasticsearch and to "
-"read the [documentation of "
-"Grafana](https://grafana.com/docs/){target=_blank}."
+"you should consider having a look at [Elasticsearch's indexed "
+"attributes](/en/reference/es-indexed-attributes) and to read the "
+"[documentation of Grafana](https://grafana.com/docs/){target=_blank}."
 msgstr ""
 
 #. type: Plain text
@@ -23645,7 +23626,7 @@ msgid ""
 "import\n"
 "a dashboard) and either upload the json file you\n"
 "downloaded from Github or use the grafana.com ID, provided as badge\n"
-"like <Badge type=\"info\" text=\"12345\"/> attached to the next sections "
+"like <Badge type=\"tip\" text=\"12345\"/> attached to the next sections "
 "titles.\n"
 msgstr ""
 
@@ -23661,7 +23642,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:154
 #, markdown-text, no-wrap
-msgid "Ticket Statistics Dashboard <Badge type=\"info\" text=\"14222\"/>"
+msgid "Ticket Statistics Dashboard <Badge type=\"tip\" text=\"14222\"/>"
 msgstr ""
 
 #. type: Plain text
@@ -23811,7 +23792,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:186
 #, markdown-text, no-wrap
-msgid "Chat-Session Statistics Dashboard <Badge type=\"info\" text=\"14224\"/>"
+msgid "Chat-Session Statistics Dashboard <Badge type=\"tip\" text=\"14224\"/>"
 msgstr ""
 
 #. type: Plain text
@@ -23890,7 +23871,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:210
 #, markdown-text, no-wrap
-msgid "CTI-Log Statistics Dashboard <Badge type=\"info\" text=\"14223\"/>"
+msgid "CTI-Log Statistics Dashboard <Badge type=\"tip\" text=\"14223\"/>"
 msgstr ""
 
 #. type: Plain text
@@ -23941,27 +23922,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

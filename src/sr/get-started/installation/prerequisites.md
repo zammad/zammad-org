@@ -36,8 +36,8 @@ title: Предуслови
 
 ## Предуслови клијента
 
-Пошто је Zammad веб апликација, неопходан је само ажуриран
-претраживач. Подржани су следећи претраживачи:
+Because Zammad is a web application, only an up-to-date browser is
+needed. The following browsers are supported:
 
 - Firefox 78+
 - Chrome (и базирани на chromium платформи) 83+

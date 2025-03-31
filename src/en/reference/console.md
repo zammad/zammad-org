@@ -78,8 +78,7 @@ rails c
 
 ### Rails Console Safe Mode
 
-Normally, starting rails console requires certain
-[third-party services](/en/get-started/installation/prerequisites#server-software)
+Normally, starting rails console requires certain third-party services
 to be up and running. You may receive errors and console will refuse to start
 in case they are not available.
 
@@ -981,7 +980,7 @@ History.destroy_all
 
 ### Reset Zammad Installation
 
-::: info
+::: danger
 
 Below commands are incomplete intentionally, error outputs will hint you
 through! The following operations will cause data loss and are for

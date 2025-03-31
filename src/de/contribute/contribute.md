@@ -39,23 +39,26 @@ auf Github hat mehrere Branches.
 - Dies ist der aktuelle (unveröffentlichte) Entwicklungsstand der nächsten
   Hauptversion (dieser wird zum neuen `stable`-Branch).
 - Verwenden Sie das nicht für den Produktiv-Betrieb!
-- Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
-  [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well
+  as security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable`
 
 - Dies ist die aktuelle stabile Version, z.B. Zammad 5.2.
 - Verwenden Sie diese für den Produktiv-Betrieb.
-- Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere
-  [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}.
+- This branch is actively supported and receives regular bug fixes as well
+  as security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable-x.y`
 
 - Dies sind Branches von alten Versionen von Zammad wie `stable-5.1` für
   Zammad 5.1.
-- Keine Unterstützung durch Fehler- oder Sicherheitskorrekturen.
+- Verwenden Sie das nicht für den Produktiv-Betrieb!
+- Bug fixes and security updates are not applied to these branches.
 
 ## Dokumentation
 
@@ -175,19 +178,16 @@ eventuell in den Dokumentationsprojekten sehen. Sie sollten auch einen Blick
 in den [Styleguide](style-guide) werfen, wo Sie weitere Informationen über
 die Syntax und die Verwendung von Markdown/Vitepress-Funktionen finden.
 
-- **\`Beispiel-String\`**
+**\`example-string\`**
+: This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
+  \` before and after the string in your translation.
 
-    Dies wird als `Beispiel-Zeichenkette` ausgegeben. Je nach Kontext kann er übersetzt werden oder nicht. Verwenden Sie in jedem Fall das
-    \` vor und nach der Zeichenkette in Ihrer Übersetzung.
+**\[example\](/en/path/to/document-or-website\)**
+: This is a link to another page, including the language code. The above "example" is the text, which is shown as
+  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
+  translating in. Make sure that your language is already present on zammad.org (check it by using the language
+  switcher). Otherwise contact us if you want to have your language activated.
 
-- **\[Beispiel\](/en/pfad/zu/dokument-oder-website\)**
-
-    Dies ist ein Link zu einer anderen Seite, der auch den Sprachcode enthält. Das obige "Beispiel" ist der Text, der als
-    Link-Text angezeigt wird. Dieser Teil kann übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden, in den Sie
-    übersetzen. Vergewissern Sie sich, dass Ihre Sprache bereits auf zammad.org vorhanden ist (überprüfen Sie dies mit der Sprachauswahl).
-    Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen.
-
-- **\*\*Beispiel Text\*\***
-
-    Auszeichnung für Text (z. B. fett, kursiv). Alternativ: \_Beispiel Zeichenkette\_. Diese Zeichenketten können übersetzt werden, aber die
-    Auszeichnung (z.B. `**` oder `_`) sollte sinngemäß übernommen werden.
+**\*\*example string\*\***
+: Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
+  markup (e.g. `**` or `_`) should be adopted true to meaning.

@@ -79,7 +79,7 @@ Erforderliche Berechtigung: `admin.object`
 
 `DELETE`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
-::: warning
+::: danger
 **Dies ist eine dauerhafte Entfernung**
 
 Bitte beachten Sie, dass das Entfernen von Prioritäten nicht rückgängig gemacht werden kann.

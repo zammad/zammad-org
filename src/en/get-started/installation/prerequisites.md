@@ -35,7 +35,7 @@ included in the installation instructions:
 
 ## Client Requirements
 
-Because Zammad is a web application, only a up-to-date browser is needed. The
+Because Zammad is a web application, only an up-to-date browser is needed. The
 following browsers are supported:
 
 - Firefox 78+

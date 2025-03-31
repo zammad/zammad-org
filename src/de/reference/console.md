@@ -79,10 +79,9 @@ rails c
 
 ### Safe Mode der Rails-Konsole
 
-Normalerweise müssen zum Starten der Rails-Konsole bestimmte
-[Drittanbieter-Dienste](/de/get-started/installation/prerequisites#server-software)
-vorhanden sein und laufen. Sie erhalten möglicherweise Fehlermeldungen und
-die Konsole startet nicht, wenn sie nicht verfügbar sind.
+Normally, starting rails console requires certain third-party services to be
+up and running. You may receive errors and console will refuse to start in
+case they are not available.
 
 Es ist jedoch möglich, die Rails-Konsole im sicheren Modus zu starten, indem
 man eine spezielle Umgebungsvariable setzt. Wenn `ZAMMAD_SAFE_MODE=1`
@@ -1004,7 +1003,7 @@ History.destroy_all
 
 ### Zammad Installation zurücksetzen
 
-::: info
+::: danger
 
 Die folgenden Befehle sind absichtlich unvollständig, Fehlerausgaben leiten Sie
 durch die Schritte! Die folgenden Operationen führen zu Datenverlust und sind nur für

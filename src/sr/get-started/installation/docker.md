@@ -3,7 +3,7 @@ order: 3
 title: Docker
 ---
 
-# Docker инсталација
+# Docker Installation
 
 Zammad can be deployed using Docker-Compose. You can even use graphical
 Docker front ends like

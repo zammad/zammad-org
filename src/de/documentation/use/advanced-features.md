@@ -5,11 +5,11 @@ title: 'Erweiterte Funktionen'
 
 # Erweiterte Funktionen
 
-## Tastaturkürzel verwenden
+## Keyboard Shortcuts
 
 TODO
 
-## Verhalten nach Ticketaktualisierung anpassen
+## Ticket Update Behavior
 
 ![Screenshot zeigt Menü bzgl. Verhalten nach
 Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
@@ -43,7 +43,7 @@ Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab b
 [[Umschalt]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.
 :::
 
-## Textbausteine verwenden
+## Text Modules
 
 ![Screenshot zeigt
 Textbausteine-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
@@ -83,8 +83,8 @@ und dieses Ticket abonnieren.
 
 **Wie? **
 
-Wenn Sie einen Ticket-Artikel schreiben, geben Sie einfach `@@` und einige
-Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten.
+While writing a ticket article, simply type `@@` and enter some letters of
+the name of the colleague you want to mention.
 
 Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und
@@ -97,9 +97,9 @@ abonnieren](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.
 
 **Warum?**
 
-Wenn Sie am Fortschritt eines Tickets interessiert sind, können Sie es
-abonnieren. Das bedeutet, dass Sie bei jeder Aktualisierung eine
-Benachrichtigung erhalten.
+If you are interested in the progress of a ticket, you are not the owner,
+you can subscribe to it. This means you will receive notifications for each
+update.
 
 **Wie? **
 
@@ -109,7 +109,7 @@ werden Sie automatisch benachrichtigt. Deaktivieren Sie den Schalter, um die
 Benachrichtigung zu stoppen. Die angezeigten Avatare zeigen Ihnen, wer das
 Ticket abonniert hat und somit über Aktualisierungen benachrichtigt wird.
 
-## Ein Makro verwenden
+## Makros
 
 ![Screenshot zeigt
 Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
@@ -138,7 +138,7 @@ Das Makro wird sofort und ohne zusätzliche Bestätigung ausgeführt!
 Sie können ein Makro auch auf mehrere Tickets auf einmal anwenden. Sehen Sie
 sich unter [Mehrfach-Aktionen](#mehrfach-aktionen) an, wie das geht.
 
-## Tags verwenden
+## Tags
 
 ![Screenshot zeigt Tag-Bereich in der
 Ticket-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
@@ -154,17 +154,15 @@ die mit dem Tag versehen sind.
 
 **Wie? **
 
-In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der
-Bezeichnung "Tags". Fügen Sie einen Tag hinzu, indem Sie auf die
-Schaltfläche `+` klicken. Sie können vorhandene Tags auswählen und neue
-hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht
-deaktiviert hat).
+In the ticket sidebar, you can find a section which is labels as
+**Tags**. Add a tag by clicking on the `+` button. You can select existing
+tags and add new ones (if your admin didn't disable to add new tags).
 
 Entfernen Sie sie, indem Sie einfach auf die Schaltfläche `X`
 klicken. Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen
 eines Tags aus einem Ticket gibt.
 
-## Verwenden einer Checkliste
+## Checklisten
 
 ![Screenshot zeigt eine Checkliste aus der
 Checklisten-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
@@ -178,10 +176,9 @@ Checklisten-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/tic
 
 **Wie? **
 
-Wählen Sie den Tab "Checkliste" in der Seitenleiste. Wenn Sie sie nicht
-sehen können, hat Ihr Zammad-Administrator sie deaktiviert. Sie können eine
-Checkliste nur hinzufügen oder bearbeiten, wenn Sie die Berechtigung haben,
-das Ticket zu bearbeiten.
+Select the **Checklist** tab in the sidebar. If you can't see it, your
+Zammad admin disabled it. You can only add or edit a checklist, if you have
+the permission to edit the ticket.
 
 In der Checklisten-Seitenleiste können Sie:
 
@@ -369,7 +366,7 @@ weiterhin mit den folgenden Änderungen:
 - Der Status hat sich auf "zusammengefasst" geändert
 - Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
 
-## Ticket Abspalten
+## Split Tickets
 
 ![Screenshot zeigt das Menü zur Abspaltung eines
 Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
@@ -399,10 +396,9 @@ verlinkt. Das ursprüngliche Ticket ist im abgespaltenen Ticket als
 
 **Warum?**
 
-Wenn Tickets zu verwandten Themen auftauchen, können sie zur einfacheren
-Auffindbarkeit und Referenz miteinander verknüpft
-werden. [Zusammengefasste](#tickets-zusammenfassen) und
-[abgespaltene](#ticket-abspalten) Tickets werden automatisch verknüpft.
+When tickets about related issues arise, they can be linked to each other
+for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets)
+tickets are automatically linked.
 
 **Wie? **
 
@@ -418,7 +414,7 @@ können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
   standardmäßig verwendet, wenn ein Ticket geteilt oder zusammengefasst
   wird.
 
-## Zeit erfassen
+## Zeiterfassung
 
 **Warum?**
 

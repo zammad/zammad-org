@@ -5,11 +5,11 @@ order: 4
 
 # Advanced Features
 
-## Use Keyboard Shortcuts
+## Keyboard Shortcuts
 
 TODO
 
-## Adjust Behavior After Updating a Ticket
+## Ticket Update Behavior
 
 ![Screenshot shows behavior after update menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
 
@@ -35,7 +35,7 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 [[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
-## Use Text Modules
+## Text Modules
 
 ![Screenshot shows text modules feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
@@ -68,7 +68,7 @@ ticket updates and are automatically subscribed to this ticket.
 
 **How?**
 
-While writing an ticket article, simply type `@@` and enter some letters of the name of the colleague you want to
+While writing a ticket article, simply type `@@` and enter some letters of the name of the colleague you want to
 mention.
 
 Zammad displays a list with all possible matches where you can pick one by clicking on it or by using the up and down
@@ -80,8 +80,8 @@ arrows followed by [[enter]] on your keyboard.
 
 **Why?**
 
-If you are interested in the progress of a ticket, you can subscribe to it. This means you will receive notifications
-for each update.
+If you are interested in the progress of a ticket, you are not the owner, you can subscribe to it. This means you will
+receive notifications for each update.
 
 **How?**
 
@@ -89,7 +89,7 @@ Activate the "Subscribe me" toggle in the ticket side panel to get notifications
 ticket, you are automatically subscribed. Switch the toggle off to stop the notification. The avatars displayed show
 you who has subscribed to the ticket and is therefore notified of updates.
 
-## Use a Macro
+## Macros
 
 ![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
 
@@ -111,7 +111,7 @@ The macro gets executed immediately and without an additional confirmation!
 
 You can also apply a macro to several ticket at once. Have a loot at [bulk actions](#bulk-actions) how to do that.
 
-## Use Tags
+## Tags
 
 ![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
 
@@ -123,13 +123,13 @@ Of course you can search for the text of the tags and will find tickets which ha
 
 **How?**
 
-In the ticket sidebar, you can find a section which is labels as "Tags". Add a tag by clicking on the `+` button. You
+In the ticket sidebar, you can find a section which is labels as **Tags**. Add a tag by clicking on the `+` button. You
 can select existing tags and add new ones (if your admin didn't disable to add new tags).
 
 Remove them by simply click on the `X` button. Be aware that there is no confirmation dialog for deleting a tag from
 a ticket.
 
-## Use a Checklist
+## Checklists
 
 ![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
 
@@ -142,7 +142,7 @@ a ticket.
 
 **How?**
 
-Select the "Checklist" tab in the sidebar. If you can't see it, your Zammad admin disabled it. You can only add or edit
+Select the **Checklist** tab in the sidebar. If you can't see it, your Zammad admin disabled it. You can only add or edit
 a checklist, if you have the permission to edit the ticket.
 
 In the checklist sidebar, you can:
@@ -285,7 +285,7 @@ the following changes:
 - The state has changed to "merged"
 - The ticket is linked to its "parent" ticket
 
-## Split Ticket
+## Split Tickets
 
 ![Screenshot shows the article action split menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
@@ -309,7 +309,7 @@ as parent.
 **Why?**
 
 When tickets about related issues arise, they can be linked to each other for easier reference.
-[Merged](#merge-tickets) and [split](#split-ticket) tickets are automatically linked.
+[Merged](#merge-tickets) and [split](#split-tickets) tickets are automatically linked.
 
 **How?**
 
@@ -321,7 +321,7 @@ you can choose between different link types:
 - **Parent/Child**: for related tickets where one is the main issue and the other is a subtask. This link type is used
   by default if a tickets gets split or merged.
 
-## Account Time
+## Time Accounting
 
 **Why?**
 

@@ -8,9 +8,8 @@ Dieser Leitfaden bietet eine Übersicht über den Inhalt, der in der
 Zammad-Dokumentation enthalten sein sollte, sowie Formatierungs- und
 Stilrichtlinien, um Klarheit und Lesbarkeit zu gewährleisten.
 
-In den ersten Abschnitten geht es um allgemeine Informationen und Regeln. Am
-Ende folgt ein [Abschnitt mit nützlichen
-Beispielen](#basic-formatting-examples).
+The first sections are about general information and rules. A [section with
+examples](#examples) follows at the end.
 
 Wenn Sie Fragen haben, können Sie diese in unserer Community stellen. Wenn
 Sie beitragen wollen, sollten Sie einen Blick auf unsere [Seite für
@@ -53,17 +52,16 @@ es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
 sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
 möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie ja quasi
-Code), muss die Relevanz berücksichtigt werden. Wenn Teile mit einem
-gebräuchlichen Anwendungsfall fehlen, sollte in Erwägung gezogen werden,
-diese in die Dokumentation aufzunehmen.
+Due to the fact that a documentation can't cover everything (otherwise it
+would be on a code-like detail level), the relevance has to be
+considered. If parts with a common use case are missing, it should be
+intended to include them in the documentation.
 
 ## Stil und Regeln
 
-Die nächsten Abschnitte behandeln allgemeine Dinge, die beim Schreiben der
-Dokumentation zu beachten sind. Danach finden Sie einen Abschnitt mit
-einigen [grundlegenden Beispielen zur Formatierung und
-Strukturierung](#basic-formatting-examples) des Inhalts.
+The next sections cover general things to consider writing the
+documentation. After these you can find a section with some
+[examples](#examples) about how to format and structure the content.
 
 ### Grundlagen
 
@@ -72,8 +70,8 @@ Strukturierung](#basic-formatting-examples) des Inhalts.
 - Das System verwendet [Vitepress](https://vitepress.dev/){target=_blank}
   zur Erstellung der Website.
 - Die Sprache der Quelldateien ist amerikanisches Englisch.
-- Die Übersetzung der Dokumentation erfolgt über Weblate, siehe
-  [Beitrags-Seite](contribute#ubersetzung) für weitere Details.
+- The translation of the documentation is done via Weblate, see [translation
+  section](contribute#translation) in the contribute page for more details.
 
 ### Stil
 
@@ -130,10 +128,10 @@ aufgeführt.
   spezielle Inhalte wie Pfade zu Screenshots und lange Links.
 - Mehrere aufeinanderfolgende Leerzeilen sind nicht zulässig.
 - Leerzeilen vor und nach Überschriften und Codeblöcken sind erforderlich.
-- Verwenden Sie `` ``` `` (Backticks) für Codeblöcke, gefolgt von einer
-  obligatorischen Angabe der Sprache, z.B. `` ```ruby`` oder ``
-  ```sh``. Wenn keine Sprache anwendbar ist, verwenden Sie `` ```plain``.
-- Verwenden Sie `-` für Aufzählungen (nicht numerische Listen) wie diese.
+- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
+  language tag, e.g. `ruby` or `sh`. If no language is applicable, use
+  `plain`.
+- Use `-` for bullet point lists (unordered lists) like this one.
 - Um leicht zwischen **fett** und _kursiv_ zu unterscheiden, verwenden Sie
   `_` um den Text in kursiv und `**` in fett zu setzen (z.B. `_kursiv_`
   vs. `**fett**`).
@@ -144,7 +142,7 @@ aufgeführt.
 - Die Auflösung von manuellen Screenshots der ganzen Seite für die
   _Desktop-View_ beträgt 1920x1080 Pixel.
 
-### Grundlegende Formatierungsbeispiele
+### Examples
 
 #### Text und UI
 

@@ -13,10 +13,9 @@ Die Benutzeroberfläche (User Interface, UI) von Zammad ist so konzipiert,
 dass Benutzer sie intuitiv nutzen können. Sie ist nach den Prinzipien
 Einfachheit, Klarheit und Zugänglichkeit aufgebaut.
 
-Es gibt grundlegende modulare Komponenten für verschiedene Funktionen, um
-die Benutzeroberfläche einheitlich zu halten. Diese Komponenten werden unter
-[UI-Elemente](#main-ui-elements) sowie unter [Navigation](#navigating)
-beschrieben.
+There are basic modular components for different features to keep the UI
+consistent. These components are described in the section [Main UI
+Elements](#main-ui-elements) as well as [Navigating](#navigating) below.
 
 Abhängig von der aktuell geöffneten Ansicht gibt es interaktive Komponenten
 wie Tooltips und eine kontextbezogene Hilfe. Verwenden Sie diese bei Bedarf.
@@ -33,37 +32,35 @@ Der Screenshot oben zeigt eine Ticket-Detailansicht in Zammad. Lesen Sie
 weiter, um eine Beschreibung der verschiedenen Elemente von Zammad zu
 erhalten.
 
-Navigations-Seitenleiste
-: Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,
-  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.
+Navigation sidebar
+: This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket
+  create button.
 
-Navigations-Tab
-: Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach
-  Inhalt kann es ein Ticket-Tab sein (mit der Ticket-Detailansicht) oder der Übersichten-
-  Tab sein, der die Liste der verfügbaren Übersichten öffnet.
+Navigation tab
+: Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with
+  the ticket detail view) or the overview tab which opens the list of available overviews.
 
-Ticket-Detailansicht
-: Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte
-  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.
+Ticket detail view
+: This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is
+  selected in the navigation sidebar.
 
-Seitenleiste
-: Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs
-  wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.
+Sidebar
+: This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and
+  displays the currently selected tab.
 
-Seitenleisten-Tabs
-: Auf der rechten Seite der Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen
-  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,
-  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der
-  Ticket-Kunde eine zugewiesene Organisation hat).
+Sidebar tabs
+: On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of
+  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket
+  customer has an assigned organization).
 
-Aktive Seitenleiste
-: Der ausgewählte Seitenleisten-Tab. Zeigt den Inhalt des Tabs an. Sie kann Dinge beinhalten
-  wie die Kunden-, Organisationns- oder Checklisten-Seitenleiste und mehr.
+Active sidebar
+: The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization
+  sidebar, checklist sidebar and more.
 
 ### Navigieren
 
-Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen
-Bereiche von Zammad zuzugreifen.  Sie umfasst:
+The navigation sidebar is your central place to access all main parts of
+Zammad. It includes:
 
 - Suchleiste
 - Benachrichtigungen
@@ -91,18 +88,16 @@ Anwendungsfall.
 
 ### Über Übersichten
 
-Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie
-zuerst in die Übersichten schauen. Sie können sie entweder durch Klicken auf
-die Schaltfläche **Übersichten** in der Navigationsleiste öffnen oder das
-Tastaturkürzel [[o]] verwenden.  Sie können die Übersichten als eine Art von
-Ticket-Listen betrachten.
+If you search for new tickets to work on, your first look should be in the
+overview section. You can either open it by clicking the **Overviews**
+button in the navigation bar or use the keyboard shortcut [[o]]. You can see
+overviews as a kind of ticket lists.
 
-Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
-können. Zum Beispiel gibt es eine Übersicht namens "Offene Tickets". Dies
-könnte ein guter Ausgangspunkt sein.  Ihr Zammad-Administrator hat
-möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf
-Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht
-erscheint.
+By default, there are some built in overviews, you can use. For example,
+there is an overview called "Open Tickets".  This might be a good starting
+point. Your Zammad admin may have created additional overviews. These are
+based on conditions, which are basically rules, to define which ticket
+appears in which overview.
 
 Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 Übersichten](/de/documentation/use/guides/overviews).
@@ -171,26 +166,29 @@ Seitenleisten-Tab _Ticket_ einstellen können:
 - **Status**: spiegelt den aktuellen Status eines Tickets wider
   (hauptsächlich, ob eine Kundenanfrage gelöst ist oder
   nicht). Standardmäßig gibt es die folgenden Status:
-  - **Neu**: Status für neue Tickets, an denen noch niemand gearbeitet hat. Wenn
-      ein Ticket zum ersten Mal aktualisiert wird, wechselt es automatisch in den Status _offen_.
-  - **Offen**: Status für Tickets, die noch nicht geklärt sind und an denen noch gearbeitet
-      werden muss.
-  - **Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst sind, aber die
-      Sie nicht sofort schließen möchten. Für diesen Status müssen Sie
-      ein Datum und eine Uhrzeit eingeben, zu der das Ticket automatisch auf _geschlossen_ wechselt.
-  - **Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu einem bestimmten
-      Zeitpunkt erinnert werden möchten. Erfordert die Eingabe eines Datums und einer Uhrzeit,
-      zu der Sie benachrichtigt werden möchten. Zum Beispiel nützlich, wenn Sie eine
-      Frage an einen Dritten haben und sicherstellen möchten, dass diese Frage nicht
-      vergessen wird.
-- **Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich ist.
-  Falls Sie eine Information von einem anderen Kollegen benötigen, können Sie entweder
-  den Besitzer auf diese Person ändern oder die Person in einem Artikel erwähnen, indem Sie
-  `@@` eingeben und den Benutzer auswählen. Im letzteren Fall wird der Benutzer benachrichtigt
-  und erhält automatisch Benachrichtigungen über Aktualisierungen von Tickets.
-- **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit mehr als
-  einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket möglicherweise nicht, nachdem Sie
-  die Gruppe geändert und die Änderungen gespeichert haben.
+  - **New**: State for new tickets on which no one has worked on. When
+    updating a ticket the first time, it automatically switches to _open_.
+  - **Offen**: Status für Tickets, die noch nicht gelöst sind und an denen
+    noch gearbeitet werden muss.
+  - **Pending Close**: State for tickets which are basically resolved but
+    you don't want to close immediately. This state requires you to enter a
+    date and time at which the ticket automatically switches to _closed_.
+  - **Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu
+    einem bestimmten Datum und einer bestimmten Uhrzeit erinnert werden
+    möchten. Hier müssen Sie ein Datum und eine Uhrzeit eingeben, zu der Sie
+    benachrichtigt werden möchten. Dies ist z.B. nützlich, wenn Sie eine
+    Frage an einen Dritten hatten und sicherstellen möchten, dass dieses
+    Problem nicht vergessen wird.
+- **Owner**: This is the person who is currently responsible for the
+  ticket. In case you need to have an information from another colleague,
+  you can either change to owner to this person or mention the person in an
+  article by typing `@@` and selecting the user. In the later case, the user
+  gets notified and is automatically subscribed to receive notifications on
+  ticket updates.
+- **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit
+  mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket
+  möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
+  gespeichert haben.
 
 ### Ticket Detailansicht
 
@@ -206,9 +204,8 @@ Textkommunikation basieren, können Sie direkt eine Antwort erstellen, indem
 Sie den **Antworten**-Button unter dem Artikel verwenden oder die
 **Weiterleiten**-Funktion nutzen.
 
-Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen
-hinzufügen.  Diese sind nützlich, um dem Ticket Informationen hinzuzufügen
-oder einen Kollegen zu fragen.
+Regardless of the customer's article type, you can always add internal
+notes. These are useful to add information to the ticket or ask a colleague.
 
 ### Aktualisierung Ihres Tickets
 
@@ -222,8 +219,8 @@ sollten Sie den Status auf _geschlossen_ setzen.
 
 ## Abschluss
 
-Dies war eine kurze Einführung in die Arbeit mit Zammad, wenn Sie völlig neu
-im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von Zammad
-kennen, können Sie entweder anfangen zu arbeiten oder einen Blick auf die
-[erweiterten Features](advanced-features) werfen, um noch produktiver zu
-werden und das volle Potential von Zammad zu nutzen. 🚀
+This was a brief introduction about how to work with Zammad if you are
+completely new to ticket systems. Knowing the basics of Zammad now, you can
+either start working or have a look at the [advanced features
+section](advanced-features)  to become even more productive and use the full
+potential of Zammad. 🚀

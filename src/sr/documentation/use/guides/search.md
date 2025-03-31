@@ -8,15 +8,17 @@ title: Претрага
 ## Основе
 
 If you search for tickets, user and organizations, you can use the
-search. It is located in the top left corner in the navigation bar. Either
-select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all
-fitting items for which you have at least view or read permissions.
+search. It is located in the top left corner in the primary navigation
+bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad
+returns all fitting items for which you have at least view or read
+permissions.
 
 ![Screenshot shows search results in navigation
 bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
 
 The search covers basically all information which is stored in Zammad and
-which got indexed by Elasticsearch, like:
+which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes),
+like:
 
 - Message subject and text
 - Names and email addresses
@@ -33,7 +35,7 @@ tab (if not already opened) with the item.
 
 If you press [[enter]] or click on `detailed search`, Zammad displays a page
 with search results. There you can narrow down your search by selecting a
-specific object type (e.g. customer) in the tablist below the search bar.
+specific object type (e.g. customer) in the tab bar below the search bar.
 
 ![Screenshot shows detailed
 search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
@@ -51,7 +53,7 @@ email address.
 
 You can narrow down your search results to specific attributes, even in the
 search field in the navigation bar. Read on for some examples and
-explanations.  For a more detailed list of available attributes, please take
+explanations. For a more detailed list of available attributes, please take
 a look at the [indexed attributes by
 Elasticsearch](/en/reference/es-indexed-attributes).
 

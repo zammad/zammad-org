@@ -11,23 +11,20 @@ zusammenzuarbeiten!
 
 ## Allgemein
 
-Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt
-es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
-Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
-allgemeine Erklärungen und Tipps.
+In general, Zammad should be pretty self explanatory. However, there are
+features that are not obvious at first glance.  These features are described
+in this documentation as well as some general explanations and tips.
 
-Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit lesen
-Sie den Abschnitt _Allgemein_. Benutzen Sie die linke Seitenleiste, um zu
-den gewünschten Informationen zu gelangen, oder die Suchfunktion in der
-Kopfzeile.
+This documentation is divided into different sections. Currently you are viewing the _General_ section in the
+_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the
+header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].
 
 ## Zammad Anfänger
 
-Wenn Sie mit Zammad und Ticket-Software noch nicht vertraut sind, empfehlen
-wir Ihnen, einen Blick auf die Seite [Mit Zammad
-beginnen](start-using-zammad) zu werfen. Sie finden dort eine Beschreibung
-einiger wichtiger UI-Elemente sowie grundlegender Ticket-Attribute und wie
-man sie verwendet.
+If you are new to Zammad and ticketing software at all, our recommendation
+is to have a look at the [Start with Zammad](start-using-zammad) page. You
+can find a description of some important UI elements there as well as basic
+ticket attributes and how to use them.
 
 ## Fortgeschrittener Benutzer
 

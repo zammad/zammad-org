@@ -94,9 +94,9 @@ weiter unten.
 Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit
 der Wiederherstellung Ihrer Daten beginnen.
 
-- In diesem Abschnitt geht es **nicht** um die **Migration von einem Host zu
-  einem anderen**. Sie finden Anweisungen zu diesem Thema im [nächsten
-  Abschnitt](#migration-zu-neuem-host).
+- This section is **not** about **migrating from one host to another**. You
+  can find instructions about this topic on the [Migrate Zammad
+  page](migrate-host).
 - Diese Anleitung setzt eine vollständig installierte Zammad-Version voraus
 - Außerdem wird erwartet, dass Sie Zammad auf demselben Host und derselben
   Zammad-Version wiederherstellen
@@ -303,9 +303,9 @@ speichert.
 Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt
 wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann.
 
-Prüfen und passen Sie Ihre
-Einstellung zur Speicherung von Anhängen [über die Konsole](/de/reference/console#speicherung-anhange)
-oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.
+Check and adjust your
+[storage settings via console](/en/reference/console#storage-provider-setting)
+or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Hilfsskript
 

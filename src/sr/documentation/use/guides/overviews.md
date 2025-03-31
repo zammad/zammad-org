@@ -51,8 +51,7 @@ Depending on what you are searching for, select a fitting overview and start
 working on a ticket.
 
 ::: tip
-If you miss an overview or want to have different settings, let your Zammad
-admin know!
+If you miss an overview or want to have different settings, let your Zammad admin know!
 :::
 
 ### Color Coded State and Priority
@@ -89,11 +88,13 @@ If an overview contains more than one ticket and you open one of the
 tickets, you can find arrows in the ticket detail view header to switch to
 the next/previous ticket of this overview.
 
-### TODO Bulk Actions
+### Масовне радње
 
 Perform bulk actions by selecting multiple tickets and either use the
 drop-down fields or drag them with the mouse to invoke the bulk action
-overlay.
+overlay. You can find more information about that in the [Bulk
+Actions](../advanced-features#bulk-actions) section in the advanced features
+page.
 
 ### Промена редоследа прегледа
 

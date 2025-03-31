@@ -16,7 +16,7 @@ via the Zammad search box, ES can search in any of the fields below.
 
 - This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly
   about objects in the admin interface of Zammad. They are out of scope of this documentation.
-- Attributes marked as SLA (<Badge type="info" text="SLA"/>) are only set if the ticket is affected by SLA calculation.
+- Attributes marked as <Badge type="info" text="SLA"/> are only set if the ticket is affected by SLA calculation.
   Please note that some attributes may not be set if specific conditions are not met.
 - Also note that some attributes may be reset to `null` if no longer applicable.
 - All timestamps provided by Zammad are UTC by default. This also applies to times provided by ES.
@@ -107,8 +107,9 @@ ticket was reopened and closed again).
 Example: `"2025-03-20T06:48:46.438Z"`
 
 ### `close_diff_in_min` <Badge type="info" text="SLA"/>
-<!-- markdownlint-disable-next-line MD051 -->
-Depends on [close_in_min](#close_in_min) and tells how many minutes the ticket was closed relative to SLAs solution time.
+
+Depends on `close_in_min` and tells how many minutes the ticket was closed
+relative to SLAs solution time.
 
 Examples: `239`, `-5`
 

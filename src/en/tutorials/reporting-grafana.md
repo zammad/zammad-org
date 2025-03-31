@@ -15,8 +15,8 @@ to Zammad (precisely: Elasticsearch). It can access the Elasticsearch
 index and visualize your Zammad data.
 
 This guide will provide you some steps to get started. For a deeper insight
-you should consider having a look at the
-[indexed attributes](/en/reference/es-indexed-attributes) of Elasticsearch and
+you should consider having a look at
+[Elasticsearch's indexed attributes](/en/reference/es-indexed-attributes) and
 to read the [documentation of Grafana](https://grafana.com/docs/){target=_blank}.
 
 This guide expects all requirements to be up and running. We will not cover
@@ -145,13 +145,13 @@ mentioned below. These dashboards can also be found on
 In Grafana, select _➕ > Import_ (or any other place which offers you to import
 a dashboard) and either upload the json file you
 downloaded from Github or use the grafana.com ID, provided as badge
-like <Badge type="info" text="12345"/> attached to the next sections titles.
+like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 During importing you can provide a dashboard name and folder. You'll also be
 asked to map the data sources to your environment. If you used our data source
 names above, you can simply search for the same name.
 
-### Ticket Statistics Dashboard <Badge type="info" text="14222"/>
+### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
 
 ![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)
 
@@ -183,7 +183,7 @@ names above, you can simply search for the same name.
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Session Statistics Dashboard <Badge type="info" text="14224"/>
+### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
 
 ![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)
 
@@ -207,7 +207,7 @@ Chat session creations.
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistics Dashboard <Badge type="info" text="14223"/>
+### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
 
 ![Grafana Call Dashboard](/screenshots/reporting/calls.png)
 

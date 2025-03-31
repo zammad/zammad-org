@@ -14,11 +14,10 @@ Grafana ist eine Analyse-/Visualisierungsanwendung eines Drittanbieters, die
 Sie mit Zammad (genauer: Elasticsearch) verbinden können. Sie kann auf den
 Elasticsearch-Index zugreifen und Ihre Zammad-Daten visualisieren.
 
-Diese Anleitung bietet Ihnen einige Schritte für den Einstieg. Für einen
-tieferen Einblick sollten Sie einen Blick auf die [indizierten
-Attribute](/de/reference/es-indexed-attributes) von Elasticsearch werfen und
-die [Dokumentation von Grafana](https://grafana.com/docs/){target=_blank}
-lesen.
+This guide will provide you some steps to get started. For a deeper insight
+you should consider having a look at [Elasticsearch's indexed
+attributes](/en/reference/es-indexed-attributes) and to read the
+[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
 
 In dieser Dokumentation wird davon ausgegangen, dass alle Anforderungen
 erfüllt sind und funktionieren. Wir werden nicht auf die Kernkonfigurationen
@@ -145,17 +144,17 @@ finden.
 
 ### Importieren eines Dashboards
 
-Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import
-eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
-von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge
-wie <Badge type="info" text="12345"/> den Überschriften der nächsten Abschnitte angehängt ist.
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
+a dashboard) and either upload the json file you
+downloaded from Github or use the grafana.com ID, provided as badge
+like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 Während des Imports können Sie einen Dashboard-Namen und einen Ordner
 angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung
 zuzuordnen. Wenn Sie unsere Datenquellennamen oben verwendet haben, können
 Sie einfach nach demselben Namen suchen.
 
-### Ticket-Statistik Dashboard <Badge type="info" text="14222"/>
+### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
 
 ![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)
 
@@ -187,7 +186,7 @@ Sie einfach nach demselben Namen suchen.
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Sitzungsstatistik Dashboard <Badge type="info" text="14224"/>
+### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
 
 ![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)
 
@@ -211,7 +210,7 @@ Erstellung von Chatsitzungen.
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistik Dashboard <Badge type="info" text="14223"/>
+### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
 
 ![Grafana Call Dashboard](/screenshots/reporting/calls.png)
 
@@ -232,12 +231,12 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
 - `ES - CTI Log`
 
-[^1]: Some values are not available as time series information. This
+[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
     means we can only display the _last_ value of the field in question.
 
-[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen
-     SLA-Verstöße.
+[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
+    Verletzung.
 
-[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher
-    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die
-    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.
+[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher
+    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,
+    wie Sie die Beziehungen auf Ihrem System herausfinden können.

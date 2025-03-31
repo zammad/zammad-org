@@ -89,8 +89,7 @@ below.
 Please read the following information carefully before starting to restore your data.
 
 - This section is **not** about **migrating from one host to another**. You can
-  find instructions about this topic in the
-  [next section](migrate-host).
+  find instructions about this topic on the [Migrate Zammad page](migrate-host).
 - This guide expects a fully installed Zammad version
 - It also expects you to restore Zammad on the same host and Zammad version
 - The restore process stops & restarts Zammad. Therefore you have to run the
@@ -288,7 +287,7 @@ This warning will be shown once before creating an empty directory to
 allow the backup process to continue successfully.
 
 Check and adjust your
-storage settings [via console](/en/reference/console#storage-provider-setting)
+[storage settings via console](/en/reference/console#storage-provider-setting)
 or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Helper Script

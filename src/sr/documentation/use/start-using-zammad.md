@@ -14,7 +14,7 @@ experience for users. It is built around the concept of simplicity, clarity,
 and accessibility.
 
 There are basic modular components for different features to keep the UI
-consistent. These components are described in [UI
+consistent. These components are described in the section [Main UI
 Elements](#main-ui-elements) as well as [Navigating](#navigating) below.
 
 Depending on the currently opened screen, there are interactive components,
@@ -32,36 +32,34 @@ The screenshot above shows a ticket detail view in Zammad. Read on for a
 description of the different main elements of Zammad.
 
 Navigation sidebar
-: This is the left sidebar which includes the search, notifications, overviews,
-  ticket tabs, your avatar and the ticket create button.
+: This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket
+  create button.
 
 Navigation tab
-: Each item of the navigation sidebar is called navigation tab. Depending on the
-  content, it can be a ticket tab (with the ticket detail view) or the overview
-  tab which opens the list of available overviews.
+: Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with
+  the ticket detail view) or the overview tab which opens the list of available overviews.
 
 Ticket detail view
-: This is where you handle your customer requests. It is located in the middle
-  of the screen if a ticket tab is selected in the navigation sidebar.
+: This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is
+  selected in the navigation sidebar.
 
 Sidebar
-: This is the right sidebar in the ticket detail view. It contains sidebar
-  tabs like customers and checklists and displays the currently selected tab.
+: This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and
+  displays the currently selected tab.
 
 Sidebar tabs
-: On the right side of the sidebar, you can find small icons to switch between
-  the different tabs. The availability of these tabs depends on your system
-  configuration, your permissions and the ticket attributes (e.g. if the
-  ticket customer has an assigned organization).
+: On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of
+  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket
+  customer has an assigned organization).
 
 Active sidebar
-: The selected sidebar tab. Displays the content of the tab. It can show things
-  like customer sidebar, organization sidebar, checklist sidebar and more.
+: The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization
+  sidebar, checklist sidebar and more.
 
 ### Navigating
 
 The navigation sidebar is your central place to access all main parts of
-Zammad.  It includes:
+Zammad. It includes:
 
 - Трака претраге
 - Обавештења
@@ -88,12 +86,12 @@ There are different ways to find tickets, depending on your use case.
 
 If you search for new tickets to work on, your first look should be in the
 overview section. You can either open it by clicking the **Overviews**
-button in the navigation bar or use the keyboard shortcut [[o]].  You can
-see overviews as a kind of ticket lists.
+button in the navigation bar or use the keyboard shortcut [[o]]. You can see
+overviews as a kind of ticket lists.
 
 By default, there are some built in overviews, you can use. For example,
-there is an overview called "Open Tickets". This might be a good starting
-point.  Your Zammad admin may have created additional overviews. These are
+there is an overview called "Open Tickets".  This might be a good starting
+point. Your Zammad admin may have created additional overviews. These are
 based on conditions, which are basically rules, to define which ticket
 appears in which overview.
 
@@ -161,25 +159,26 @@ _Ticket_ sidebar tab:
 - **State**: reflects the current state of a ticket (mainly if a customer
   request is resolved or not). By default, there are the following states:
   - **New**: State for new tickets on which no one has worked on. When
-      updating a ticket the first time, it automatically switches to _open_.
-  - **Open**: State for tickets which aren't resolved yet and some
-      work needs to be done.
+    updating a ticket the first time, it automatically switches to _open_.
+  - **Open**: State for tickets which aren't resolved yet and some work
+    needs to be done.
   - **Pending Close**: State for tickets which are basically resolved but
-      you don't want to close immediately. This state requires you to enter
-      a date and time at which the ticket automatically switches to _closed_.
+    you don't want to close immediately. This state requires you to enter a
+    date and time at which the ticket automatically switches to _closed_.
   - **Pending Reminder**: State for open tickets which you want to get
-      reminded to a certain date and time. Requires you to enter a date and time
-      at which you want to get notified. For example useful if you had a
-      question to a third party and want to make sure that this issue won't
-      be forgotten.
-- **Owner**: This is the person who is currently responsible for the ticket.
-  In case you need to have an information from another colleague, you can either
-  change to owner to this person or mention the person in an article by
-  typing `@@` and selecting the user. In the later case, the user gets notified
-  and is automatically subscribed to receive notifications on ticket updates.
-- **Group**: This ticket attribute is useful for organizations with more than
-  one team. Depending on the permissions, you might not see the ticket after
-  changing the group and saving the changes.
+    reminded to a certain date and time. Requires you to enter a date and
+    time at which you want to get notified. For example useful if you had a
+    question to a third party and want to make sure that this issue won't be
+    forgotten.
+- **Owner**: This is the person who is currently responsible for the
+  ticket. In case you need to have an information from another colleague,
+  you can either change to owner to this person or mention the person in an
+  article by typing `@@` and selecting the user. In the later case, the user
+  gets notified and is automatically subscribed to receive notifications on
+  ticket updates.
+- **Group**: This ticket attribute is useful for organizations with more
+  than one team. Depending on the permissions, you might not see the ticket
+  after changing the group and saving the changes.
 
 ### Детаљни приказ тикета
 
@@ -193,9 +192,8 @@ on the article type, Zammad offers you different ways to react. For text
 communication based articles, you can directly create an answer by using the
 **reply** button below the article or use the **forward** feature.
 
-Independent of the customer's article type, you can always add internal
-notes.  These are useful to add information to the ticket or ask a
-colleague.
+Regardless of the customer's article type, you can always add internal
+notes. These are useful to add information to the ticket or ask a colleague.
 
 ### Updating your Ticket
 
@@ -210,5 +208,5 @@ issue as resolved, you should set the state to _closed_ now.
 This was a brief introduction about how to work with Zammad if you are
 completely new to ticket systems. Knowing the basics of Zammad now, you can
 either start working or have a look at the [advanced features
-section](advanced-features) to become even more productive and use the full
+section](advanced-features)  to become even more productive and use the full
 potential of Zammad. 🚀

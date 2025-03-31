@@ -7,8 +7,8 @@ order: 2
 Овај водич вам пружа преглед садржаја Zammad документације, као и упутства
 за форматирање и стилизовање текста ради јасноће и читљивости.
 
-Први одељци садрже уопштене информације и правила. [Одељак са корисним
-примерима](#основни-примери-форматирања) је на крају.
+The first sections are about general information and rules. A [section with
+examples](#examples) follows at the end.
 
 Уколико имате додатних питања, слободно се обратите нашој онлајн
 заједници. Ако желите да учествујете, можете погледати нашу страницу о
@@ -48,16 +48,16 @@ order: 2
 укључени. Читаоци би требало да постигну своје циљеве што брже и
 једноставније без потребе да пуно читају.
 
-Из разлога што документација не може да покрије све (иначе би садржала сам
-кôд), неопходно је узети у обзир значајност информације. Уколико недостају
-делови који се односе на уобичајене случајеве коришћења, требало би их
-укључити у документацију.
+Due to the fact that a documentation can't cover everything (otherwise it
+would be on a code-like detail level), the relevance has to be
+considered. If parts with a common use case are missing, it should be
+intended to include them in the documentation.
 
 ## Стил и правила
 
-Следећи одељак покрива опште ствари у вези писања документације. Након овога
-можете прећи на одељак са неким [основним примерима форматирања и
-структуре](#основни-примери-форматирања) садржаја.
+The next sections cover general things to consider writing the
+documentation. After these you can find a section with some
+[examples](#examples) about how to format and structure the content.
 
 ### Основе
 
@@ -66,8 +66,8 @@ order: 2
 - Систем користи [Vitepress](https://vitepress.dev/){target=_blank} за
   прављење веб сајта.
 - Изворни језик датотека је амерички енглески.
-- Преводи документације се врше преко Weblate апликације, погледајте [одељак
-  о преводима](contribute#превод) за више информација.
+- The translation of the documentation is done via Weblate, see [translation
+  section](contribute#translation) in the contribute page for more details.
 
 ### Стил
 
@@ -120,9 +120,9 @@ order: 2
 - Више узастопних празних редова није дозвољено.
 - Празни редови пре и после наслова и блокова кôда су обавезни.
 - Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
-  language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is
-  applicable, use `` ```plain``.
-- Use `-` for bullet point lists (unordered list) like this one.
+  language tag, e.g. `ruby` or `sh`. If no language is applicable, use
+  `plain`.
+- Use `-` for bullet point lists (unordered lists) like this one.
 - To easily distinguish between **bold** and _italics_, use `_` around the
   text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`).
 - Multiple headings with the same content are not allowed.
@@ -132,7 +132,7 @@ order: 2
 - Resolution of manual full page screenshots for _desktop view_ is 1920x1080
   pixels.
 
-### Основни примери форматирања
+### Examples
 
 #### Text and UI
 

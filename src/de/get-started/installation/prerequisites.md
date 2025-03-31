@@ -37,8 +37,8 @@ jeweiligen Installationsanweisungen enthalten:
 
 ## Anforderungen an Clients
 
-Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser
-benötigt. Die folgenden Browser werden unterstützt:
+Because Zammad is a web application, only an up-to-date browser is
+needed. The following browsers are supported:
 
 - Firefox 78+
 - Chrome (und chrome-basiert) 83+

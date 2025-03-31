@@ -79,7 +79,7 @@ Required permission: `admin.object`
 
 `DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
 
-::: warning
+::: danger
 **This is a permanent removal**
 
 Please note that removing priorities cannot be undone.

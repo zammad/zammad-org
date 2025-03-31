@@ -7,8 +7,7 @@ order: 2
 This guide provides an overview of the content that should be included in the Zammad documentation, as well as
 formatting and style guidelines to ensure clarity and readability.
 
-The first sections are about general information and rules. A [section with useful examples](#basic-formatting-examples)
-follows at the end.
+The first sections are about general information and rules. A [section with examples](#examples) follows at the end.
 
 If you have questions, feel free to ask in our community. If you want to contribute, you may also want to have a look at
 our [contribution page](contribute) or [ask in an issue](https://github.com/zammad/zammad-org/issues){target=_blank}
@@ -40,21 +39,22 @@ of the goals of Zammad is to be intuitive and user friendly, there is no need to
 important steps should be included. The readers should achieve their goals as quickly and easily as possible without
 having to read a lot.
 
-Due to the fact that a documentation can't cover everything (otherwise it would be code), the relevance has to be
-considered. If parts with a common use case are missing, it should be intended to include them in the documentation.
+Due to the fact that a documentation can't cover everything (otherwise it would be on a code-like detail level), the
+relevance has to be considered. If parts with a common use case are missing, it should be intended to include them in
+the documentation.
 
 ## Style and Rules
 
 The next sections cover general things to consider writing the documentation. After these you can find a section
-with some [basic examples of formatting and structuring](#basic-formatting-examples) the content.
+with some [examples](#examples) about how to format and structure the content.
 
 ### Basics
 
 - The documentation is written in the Markdown markup language. The source files have the extension `.md`.
 - The system uses [Vitepress](https://vitepress.dev/){target=_blank} to build the website.
 - The language of the source files is American English.
-- The translation of the documentation is done via Weblate, see [contribution section](contribute#translation) for
-  more details.
+- The translation of the documentation is done via Weblate, see [translation section](contribute#translation) in the
+  contribute page for more details.
 
 ### Style
 
@@ -95,9 +95,9 @@ important rules and customized ones are mentioned below.
   like paths to screenshots and long links.
 - Multiple consecutive empty lines are not allowed.
 - Empty lines before and after headings and fenced code blocks are required.
-- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory language tag, e.g. `` ```ruby`` or
-  `` ```sh``. If no language is applicable, use `` ```plain``.
-- Use `-` for bullet point lists (unordered list) like this one.
+- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory language tag, e.g. `ruby` or
+  `sh`. If no language is applicable, use `plain`.
+- Use `-` for bullet point lists (unordered lists) like this one.
 - To easily distinguish between **bold** and _italics_, use `_` around the text for italics and `**` for bold (e.g.
   `_italic_` vs. `**bold**`).
 - Multiple headings with the same content are not allowed.
@@ -105,7 +105,7 @@ important rules and customized ones are mentioned below.
 - Resolution of manual full page screenshots for _mobile view_ is 400x867 pixels.
 - Resolution of manual full page screenshots for _desktop view_ is 1920x1080 pixels.
 
-### Basic Formatting Examples
+### Examples
 
 #### Text and UI
 
