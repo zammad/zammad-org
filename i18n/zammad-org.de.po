@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-26 11:20+0100\n"
+"POT-Creation-Date: 2025-03-28 11:00+0000\n"
 "PO-Revision-Date: 2025-03-28 10:59+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -205,6 +205,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -2079,11 +2091,8 @@ msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
 "  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgstr ""
-"  Kopieren Sie den Ticket-Hook und die Ticket-Nummer, indem Sie zum "
-"gewünschten Ticket gehen und entweder die Kopierknopf in der Kopfzeile "
-"benutzen oder mit\n"
-"  ddem Tastaturkürzel [[.]]. Dann können Sie es in die Checkliste einfügen, "
-"in der Sie darauf verweisen möchten.\n"
+"  Kopieren Sie den Ticket-Hook und die Ticket-Nummer, indem Sie zum gewünschten Ticket gehen und entweder die Kopierknopf in der Kopfzeile benutzen oder mit\n"
+"  ddem Tastaturkürzel [[.]]. Dann können Sie es in die Checkliste einfügen, in der Sie darauf verweisen möchten.\n"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:171
@@ -2706,23 +2715,16 @@ msgid ""
 "needs to be done, what is in progress and what is currently on hold. In case you face issues with these overviews,\n"
 "your Zammad admin should be able to help.\n"
 msgstr ""
-"Das hängt von Ihrem Anwendungsfall ab. Zammad bietet viele Möglichkeiten, "
-"Tickets zu suchen und auf sie zuzugreifen.\n"
+"Das hängt von Ihrem Anwendungsfall ab. Zammad bietet viele Möglichkeiten, Tickets zu suchen und auf sie zuzugreifen.\n"
 "\n"
-"Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche "
-"der beste Weg. Sie finden das Suchfeld im oberen\n"
-"Bereich der Navigations-Seitenleiste oder können sie mit dem Tastaturkürzel "
-"[[s]] aktivieren. Die Suche zeigt Ihnen sogar Ihre\n"
-"zuletzt angesehenen Elemente an, vielleicht finden Sie dort schon, was Sie "
-"suchen. Es gibt eine separate Seite über die\n"
+"Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche der beste Weg. Sie finden das Suchfeld im oberen\n"
+"Bereich der Navigations-Seitenleiste oder können sie mit dem Tastaturkürzel [[s]] aktivieren. Die Suche zeigt Ihnen sogar Ihre\n"
+"zuletzt angesehenen Elemente an, vielleicht finden Sie dort schon, was Sie suchen. Es gibt eine separate Seite über die\n"
 "[Suche](./guides/search) für weitere Informationen.\n"
 "\n"
-"Wenn Sie **mit der Arbeit an Tickets** beginnen wollen, werfen Sie einen "
-"Blick auf [die Übersichten](./guides/overviews), die im Grunde eine\n"
-"Liste der aktuellen Tickets sind. Diese Übersichten sollten Sie in die Lage "
-"versetzen, leicht zu unterscheiden,\n"
-"was erledigt werden muss, was in Arbeit ist und was derzeit pausiert ist. "
-"Falls Sie Probleme mit diesen Übersichten haben,\n"
+"Wenn Sie **mit der Arbeit an Tickets** beginnen wollen, werfen Sie einen Blick auf [die Übersichten](./guides/overviews), die im Grunde eine\n"
+"Liste der aktuellen Tickets sind. Diese Übersichten sollten Sie in die Lage versetzen, leicht zu unterscheiden,\n"
+"was erledigt werden muss, was in Arbeit ist und was derzeit pausiert ist. Falls Sie Probleme mit diesen Übersichten haben,\n"
 "sollte Ihnen Ihr Zammad-Administrator helfen können.\n"
 
 #. type: Fenced div block (details How to get notified for ticket changes?)
@@ -2733,12 +2735,9 @@ msgid ""
 "action (e.g. ticket creation), the notification channel (email and/or browser), your relation to the ticket (e.g. if\n"
 "you are the owner) and limit the notifications to a specific group.\n"
 msgstr ""
-"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil] (manage-"
-"profile#benachrichtigungen) an. Sie können unterscheiden zwischen der\n"
-"Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder "
-"Browser), Ihrer Beziehung zum Ticket (z.B. ob\n"
-"Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe "
-"beschränken.\n"
+"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil] (manage-profile#benachrichtigungen) an. Sie können unterscheiden zwischen der\n"
+"Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder Browser), Ihrer Beziehung zum Ticket (z.B. ob\n"
+"Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe beschränken.\n"
 
 #. type: Fenced div block (details Why is the ticket open again? I closed it already!)
 #: src/en/documentation/use/faq.md:30
@@ -2751,19 +2750,12 @@ msgid ""
 "\n"
 "Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.\n"
 msgstr ""
-"Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür "
-"unterschiedlich sein. Normalerweise ist der Grund jedoch, dass ein Kunde\n"
-"auf das Ticket geantwortet hat, nachdem es auf geschlossen gesetzt wurde. "
-"Ein anderer Grund könnte sein, dass ein Kollege es wieder geöffnet hat. Wenn "
-"Sie\n"
-"keinen Artikel sehen, der auf diese Erklärung passt, können Sie einen Blick "
-"in die Ticket-Historie werfen, um mehr herauszufinden. Tun Sie dies, indem "
-"Sie\n"
-"das Menü `︙` im Ticket-Seitenleisten-Tab öffnen und **Historie** auswählen."
+"Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür unterschiedlich sein. Normalerweise ist der Grund jedoch, dass ein Kunde\n"
+"auf das Ticket geantwortet hat, nachdem es auf geschlossen gesetzt wurde. Ein anderer Grund könnte sein, dass ein Kollege es wieder geöffnet hat. Wenn Sie\n"
+"keinen Artikel sehen, der auf diese Erklärung passt, können Sie einen Blick in die Ticket-Historie werfen, um mehr herauszufinden. Tun Sie dies, indem Sie\n"
+"das Menü `︙` im Ticket-Seitenleisten-Tab öffnen und **Historie** auswählen.\n"
 "\n"
-"\n"
-"Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde "
-"antwortet, nachdem ein Ticket geschlossen wurde.\n"
+"Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde antwortet, nachdem ein Ticket geschlossen wurde.\n"
 
 #. type: Fenced div block (details What does the customer see in the ticket?)
 #: src/en/documentation/use/faq.md:39
@@ -2775,12 +2767,9 @@ msgid ""
 "not visible to the customer.\n"
 "\n"
 msgstr ""
-"Standardmäßig steht den Kunden nur eine reduzierte Oberfläche zur Verfügung. "
-"Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und\n"
-"je nach Einstellung auch die ihrer Kollegen) und auf ihre "
-"Profileinstellungen zugreifen. Auch die Ticket Detailansicht enthält nur\n"
-"relevante Elemente für den Kunden. Elemente, die einen internen Zweck haben ("
-"wie Gruppe, Priorität, interne Notizen), sind\n"
+"Standardmäßig steht den Kunden nur eine reduzierte Oberfläche zur Verfügung. Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und\n"
+"je nach Einstellung auch die ihrer Kollegen) und auf ihre Profileinstellungen zugreifen. Auch die Ticket Detailansicht enthält nur\n"
+"relevante Elemente für den Kunden. Elemente, die einen internen Zweck haben (wie Gruppe, Priorität, interne Notizen), sind\n"
 "für Kunden nicht sichtbar.\n"
 "\n"
 
@@ -2791,8 +2780,7 @@ msgid ""
 "The explanation above is based on the default Zammad settings. Be aware that the configuration of your system might be\n"
 "different. If in doubt, you should ask your admin.\n"
 msgstr ""
-"Die obige Erklärung basiert auf den Standardeinstellungen von Zammad. "
-"Beachten Sie, dass die Konfiguration Ihres Systems möglicherweise\n"
+"Die obige Erklärung basiert auf den Standardeinstellungen von Zammad. Beachten Sie, dass die Konfiguration Ihres Systems möglicherweise\n"
 "anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.\n"
 
 #. type: Fenced div block (details I can't log in. What can I do?)
@@ -2808,16 +2796,11 @@ msgid ""
 "  here.\n"
 msgstr ""
 "\n"
-"- Haben Sie Ihr Passwort vergessen? Versuchen Sie, es im Login-Dialog über "
-"den Link **Kennwort vergessen?** zurückzusetzen, indem Sie Ihre\n"
+"- Haben Sie Ihr Passwort vergessen? Versuchen Sie, es im Login-Dialog über den Link **Kennwort vergessen?** zurückzusetzen, indem Sie Ihre\n"
 "  E-Mail-Adresse eingeben.\n"
-"- Haben Sie keine Möglichkeit mehr, Ihren zweiten Faktor für die 2-Faktor-"
-"Authentifizierung (2FA) zu verwenden? Nutzen Sie einen "
-"Wiederherstellungscode und richten Sie eine\n"
-"  neue 2FA-Methode ein. Weitere Informationen finden Sie auf der [2FA-Seite]("
-"./guides/two-factor-auth).\n"
-"- Haben Sie Ihre 2FA-Wiederherstellungscodes verloren? Wenden Sie sich an "
-"Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem\n"
+"- Haben Sie keine Möglichkeit mehr, Ihren zweiten Faktor für die 2-Faktor-Authentifizierung (2FA) zu verwenden? Nutzen Sie einen Wiederherstellungscode und richten Sie eine\n"
+"  neue 2FA-Methode ein. Weitere Informationen finden Sie auf der [2FA-Seite](./guides/two-factor-auth).\n"
+"- Haben Sie Ihre 2FA-Wiederherstellungscodes verloren? Wenden Sie sich an Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem\n"
 "  hier nicht genannt wurde.\n"
 
 #. type: Fenced div block (details How can I use keyboard shortcuts? I want to be more productive.)
@@ -2830,14 +2813,10 @@ msgid ""
 "Some of them depend on the location you are or action you perform (e.g. being in the editor or in the ticket\n"
 "detail view).\n"
 msgstr ""
-"Benutzen Sie sie einfach! Eine Übersicht über die verfügbaren "
-"Tastenkombinationen finden Sie, indem Sie [[?]] auf Ihrer Tastatur drücken "
-"oder die\n"
-"Übersicht über das Avatar-Menü (klicken Sie auf Ihren Avatar in der unteren "
-"linken Ecke und wählen Sie **Tastaturkürzel**) öffnen.\n"
+"Benutzen Sie sie einfach! Eine Übersicht über die verfügbaren Tastenkombinationen finden Sie, indem Sie [[?]] auf Ihrer Tastatur drücken oder die\n"
+"Übersicht über das Avatar-Menü (klicken Sie auf Ihren Avatar in der unteren linken Ecke und wählen Sie **Tastaturkürzel**) öffnen.\n"
 "\n"
-"Einige dieser Tastenkombinationen hängen davon ab, wo Sie sich befinden oder "
-"welche Aktion Sie durchführen (z.B. im Editor oder in der Ticket\n"
+"Einige dieser Tastenkombinationen hängen davon ab, wo Sie sich befinden oder welche Aktion Sie durchführen (z.B. im Editor oder in der Ticket\n"
 "Detail-Ansicht).\n"
 
 #. type: Fenced div block (details How to switch between dark and light mode for the user interface?)
@@ -2850,13 +2829,10 @@ msgid ""
 "Another possibility is to use the keyboard shortcut [[d]]. If no input field is activated, pressing it cycles between\n"
 "the different modes.\n"
 msgstr ""
-"Sie können im Avatar-Menü zwischen hellem, dunklem und automatischem Modus ("
-"versucht, die Einstellung Ihres Browsers zu verwenden) wechseln. Ändern Sie\n"
-"die Darstellung, indem Sie auf Ihren Avatar in der unteren linken Ecke "
-"klicken und den Schalter auf den gewünschten Zustand stellen.\n"
+"Sie können im Avatar-Menü zwischen hellem, dunklem und automatischem Modus (versucht, die Einstellung Ihres Browsers zu verwenden) wechseln. Ändern Sie\n"
+"die Darstellung, indem Sie auf Ihren Avatar in der unteren linken Ecke klicken und den Schalter auf den gewünschten Zustand stellen.\n"
 "\n"
-"Eine weitere Möglichkeit ist die Verwendung des Tastaturkürzels [[d]]. Wenn "
-"kein Eingabefeld aktiviert ist, wechselt die Taste zwischen\n"
+"Eine weitere Möglichkeit ist die Verwendung des Tastaturkürzels [[d]]. Wenn kein Eingabefeld aktiviert ist, wechselt die Taste zwischen\n"
 "den verschiedenen Modi.\n"
 
 #. type: Yaml Front Matter Hash Value: title
@@ -2874,10 +2850,8 @@ msgid ""
 "left corner and select **Profile settings**. There you can upload an image, capture a photo (if your device has a\n"
 "camera) or delete already present images.\n"
 msgstr ""
-"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-"
-"profile#avatar), indem Sie das Avatar-Menü in der unteren\n"
-"linken Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie ein "
-"Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine\n"
+"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-profile#avatar), indem Sie das Avatar-Menü in der unteren\n"
+"linken Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie ein Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine\n"
 "Kamera verfügt) oder bereits vorhandene Bilder löschen.\n"
 
 #. type: Fenced div block (details I want to change the language of the Zammad user interface. How can I do that?)
@@ -2887,8 +2861,7 @@ msgid ""
 "Go to the language section in you profile settings by opening the avatar menu in the bottom left corner and select\n"
 "**Profile settings**.\n"
 msgstr ""
-"Gehen Sie in Ihren Profileinstellungen in den Bereich Sprache, indem Sie das "
-"Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie\n"
+"Gehen Sie in Ihren Profileinstellungen in den Bereich Sprache, indem Sie das Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie\n"
 "**Profileinstellungen**.\n"
 
 #. type: Fenced div block (details What should I do before going on vacation?)
@@ -2898,17 +2871,14 @@ msgid ""
 "Go to the [out of office section](manage-profile#out-of-office) in you profile settings by opening the avatar menu in\n"
 "the bottom left corner and select **Profile settings**. There you can define a replacement agent.\n"
 msgstr ""
-"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](manage-"
-"profile#abwesenheit), indem Sie das Avatar-Menü in der\n"
-"in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort "
-"können Sie einen Agenten als Vertretung festlegen.\n"
+"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](manage-profile#abwesenheit), indem Sie das Avatar-Menü in der\n"
+"in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie einen Agenten als Vertretung festlegen.\n"
 
 #. type: Fenced div block (details Can I adjust the order of the overviews?)
 #: src/en/documentation/use/faq.md:95
 #, no-wrap
 msgid "Yes! Read on [here](guides/overviews#reorder-overviews).\n"
-msgstr ""
-"Ja! Lesen Sie [hier](guides/overviews#ubersichten-neu-anordnen) weiter.\n"
+msgstr "Ja! Lesen Sie [hier](guides/overviews#ubersichten-neu-anordnen) weiter.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/faq.md:99
@@ -2926,14 +2896,11 @@ msgid ""
 "If you only have a question or need some information, you could also just\n"
 "[mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.\n"
 msgstr ""
-"In dem Ticket-Seitenleisten-Tab finden Sie ein Feld **Besitzer**. Wählen Sie "
-"einen der angebotenen Agenten aus und hinterlassen Sie eine\n"
+"In dem Ticket-Seitenleisten-Tab finden Sie ein Feld **Besitzer**. Wählen Sie einen der angebotenen Agenten aus und hinterlassen Sie eine\n"
 "interne Notiz, damit der andere Agent weiß, worum es geht.\n"
 "\n"
-"Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie "
-"auch einfach\n"
-"einen Kollegen in einem Artikel [erwähnen](advanced-features#erwahnen-von-"
-"kollegen), indem Sie `@@` verwenden und Ihre Frage stellen.\n"
+"Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie auch einfach\n"
+"einen Kollegen in einem Artikel [erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie `@@` verwenden und Ihre Frage stellen.\n"
 
 #. type: Fenced div block (details How to delete a ticket?)
 #: src/en/documentation/use/faq.md:109
@@ -2945,14 +2912,11 @@ msgid ""
 "However, if customers want their data to be deleted (e.g. due to a GDPR deletion request), this can be done in Zammad.\n"
 "Contact your Zammad admin and ask to execute the deletion job.\n"
 msgstr ""
-"Zunächst einmal können Tickets nicht von Agenten gelöscht werden. Dies "
-"geschieht aus Gründen der Transparenz und um\n"
+"Zunächst einmal können Tickets nicht von Agenten gelöscht werden. Dies geschieht aus Gründen der Transparenz und um\n"
 "versehentliches und willkürliches Löschen zu verhindern.\n"
 "\n"
-"Wenn Kunden jedoch möchten, dass ihre Daten gelöscht werden (z.B. aufgrund "
-"eines GDPR-Löschantrags), kann dies in Zammad durchgeführt werden.\n"
-"Wenden Sie sich an Ihren Zammad-Administrator und bitten Sie ihn, die "
-"Löschung auszuführen.\n"
+"Wenn Kunden jedoch möchten, dass ihre Daten gelöscht werden (z.B. aufgrund eines GDPR-Löschantrags), kann dies in Zammad durchgeführt werden.\n"
+"Wenden Sie sich an Ihren Zammad-Administrator und bitten Sie ihn, die Löschung auszuführen.\n"
 
 #. type: Fenced div block (details How to use text templates?)
 #: src/en/documentation/use/faq.md:117
@@ -2961,18 +2925,14 @@ msgid ""
 "Use Zammad's [text modules](advanced-features#use-text-modules) by typing `::` in the article editor. If you need to\n"
 "have additional modules, ask your Zammad admin to add it for you.\n"
 msgstr ""
-"Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine-"
-"verwenden), indem Sie im Artikel-Editor `::` eingeben. Wenn Sie\n"
-"zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, "
-"sie für Sie hinzuzufügen.\n"
+"Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine-verwenden), indem Sie im Artikel-Editor `::` eingeben. Wenn Sie\n"
+"zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, sie für Sie hinzuzufügen.\n"
 
 #. type: Fenced div block (details How to ask a colleague for help in the ticket?)
 #: src/en/documentation/use/faq.md:122
 #, no-wrap
 msgid "Either [mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.\n"
-msgstr ""
-"Entweder Sie [erwähnen](advanced-features#erwahnen-von-kollegen) Kollegen in "
-"einem Artikel, indem Sie `@@` verwenden und Ihre Frage stellen.\n"
+msgstr "Entweder Sie [erwähnen](advanced-features#erwahnen-von-kollegen) Kollegen in einem Artikel, indem Sie `@@` verwenden und Ihre Frage stellen.\n"
 
 #. type: Fenced div block (details How to cite the customer's email or parts of it?)
 #: src/en/documentation/use/faq.md:126
@@ -2984,13 +2944,10 @@ msgid ""
 "The citation of the whole article depends on how your Zammad is configured. If you want to apply changes to this\n"
 "behavior, ask your admin to change it.\n"
 msgstr ""
-"Um den Artikel oder Teile davon zu zitieren, markieren Sie den Text, den Sie "
-"zitieren möchten, und klicken Sie auf **Antworten**\n"
-"unter dem Artikel. Dies kann auch mehrfach geschehen (z.B. um verschiedene "
-"Teile des Tickets blockweise zu beantworten).\n"
+"Um den Artikel oder Teile davon zu zitieren, markieren Sie den Text, den Sie zitieren möchten, und klicken Sie auf **Antworten**\n"
+"unter dem Artikel. Dies kann auch mehrfach geschehen (z.B. um verschiedene Teile des Tickets blockweise zu beantworten).\n"
 "\n"
-"Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad "
-"konfiguriert ist. Wenn Sie dieses\n"
+"Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad konfiguriert ist. Wenn Sie dieses\n"
 "Verhalten ändern möchten, bitten Sie Ihren Administrator darum.\n"
 
 #. type: Yaml Front Matter Hash Value: title
@@ -3139,8 +3096,7 @@ msgid ""
 "We intentionally do not provide specific instructions and comprehensive documentation for the mobile view! The overall\n"
 "UX should be intuitive and self-explanatory in most cases.\n"
 msgstr ""
-"Wir stellen bewusst keine ausführliche Dokumentation für die Mobilansicht "
-"zur Verfügung. Das Layout und die Funktionen sollten\n"
+"Wir stellen bewusst keine ausführliche Dokumentation für die Mobilansicht zur Verfügung. Das Layout und die Funktionen sollten\n"
 "intuitiv und selbsterklärend sein.\n"
 
 #. type: Plain text
@@ -3187,37 +3143,25 @@ msgstr ""
 "\n"
 "| Login | Start |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt die Login-Ansicht von Zammads Mobilansicht](/screenshots/"
-"mobile-view/login.png) | !"
-"[Screenshot zeigt den Startbildschirm von Zammads Mobilansicht](/screenshots/"
-"mobile-view/home.png) |\n"
+"|![Screenshot zeigt die Login-Ansicht von Zammads Mobilansicht](/screenshots/mobile-view/login.png) | ![Screenshot zeigt den Startbildschirm von Zammads Mobilansicht](/screenshots/mobile-view/home.png) |\n"
 "\n"
 "=== Suche & Übersichten\n"
 "\n"
 "| Suche | Übersichten |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Suchansicht von Zammads Mobilansicht](/screenshots/"
-"mobile-view/search.png) | !"
-"[Screenshot zeigt Übersichten in Zammads Mobilansicht](/screenshots/"
-"mobile-view/overview.png) |\n"
+"|![Screenshot zeigt Suchansicht von Zammads Mobilansicht](/screenshots/mobile-view/search.png) | ![Screenshot zeigt Übersichten in Zammads Mobilansicht](/screenshots/mobile-view/overview.png) |\n"
 "\n"
 "=== Ticket-Details\n"
 "\n"
 "| Artikel | Details |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Ticketansicht in Zammads Mobilansicht](/screenshots/"
-"mobile-view/ticket-articles.png) | !"
-"[Screenshot zeigt Ticket-Details in Zammad Mobilansicht](/screenshots/"
-"mobile-view/ticket-details.png) |\n"
+"|![Screenshot zeigt Ticketansicht in Zammads Mobilansicht](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot zeigt Ticket-Details in Zammad Mobilansicht](/screenshots/mobile-view/ticket-details.png) |\n"
 "\n"
 "=== Benachrichtigungen & Konto\n"
 "\n"
 "| Benachrichtigungen | Konto |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Benachrichtigungen in Zammads Mobilansicht](/screenshots/"
-"mobile-view/notifications.png) | !"
-"[Screenshot zeigt Kontoeinstellungen in Zammads Mobilansicht](/screenshots/"
-"mobile-view/profile.png) |\n"
+"|![Screenshot zeigt Benachrichtigungen in Zammads Mobilansicht](/screenshots/mobile-view/notifications.png) | ![Screenshot zeigt Kontoeinstellungen in Zammads Mobilansicht](/screenshots/mobile-view/profile.png) |\n"
 "\n"
 
 #. type: Title ##
@@ -12061,19 +12005,12 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"- Diese Seite listet Zammads Standardobjektattribute auf, die von ES "
-"indiziert werden. Es gibt einige weitere ES-Indizes, hauptsächlich\n"
-"  von Objekten in der Verwaltungsoberfläche von Zammad. Das ist nicht "
-"Gegenstand dieser Dokumentation.\n"
-"- Attribute, die mit SLA (<Badge type=\"info\" text=\"SLA\"/>) "
-"gekennzeichnet sind, werden nur gesetzt, wenn das Ticket von der SLA-"
-"Berechnung betroffen ist.\n"
-"  Bitte beachten Sie, dass einige Attribute möglicherweise nicht gesetzt "
-"werden, wenn bestimmte Bedingungen nicht erfüllt sind.\n"
-"- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden "
-"können, wenn sie nicht mehr zutreffen.\n"
-"- Alle von Zammad bereitgestellten Zeitstempel sind standardmäßig UTC. Dies "
-"gilt auch für von ES bereitgestellte Zeiten.\n"
+"- Diese Seite listet Zammads Standardobjektattribute auf, die von ES indiziert werden. Es gibt einige weitere ES-Indizes, hauptsächlich\n"
+"  von Objekten in der Verwaltungsoberfläche von Zammad. Das ist nicht Gegenstand dieser Dokumentation.\n"
+"- Attribute, die mit SLA (<Badge type=\"info\" text=\"SLA\"/>) gekennzeichnet sind, werden nur gesetzt, wenn das Ticket von der SLA-Berechnung betroffen ist.\n"
+"  Bitte beachten Sie, dass einige Attribute möglicherweise nicht gesetzt werden, wenn bestimmte Bedingungen nicht erfüllt sind.\n"
+"- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden können, wenn sie nicht mehr zutreffen.\n"
+"- Alle von Zammad bereitgestellten Zeitstempel sind standardmäßig UTC. Dies gilt auch für von ES bereitgestellte Zeiten.\n"
 "\n"
 
 #. type: Plain text
@@ -12126,8 +12063,7 @@ msgstr ""
 "\n"
 "=== Artikel\n"
 "\n"
-"Die folgende Struktur ist bereits im Ticket-Index enthalten (siehe erster "
-"Tab) und wird hier aus Gründen der\n"
+"Die folgende Struktur ist bereits im Ticket-Index enthalten (siehe erster Tab) und wird hier aus Gründen der\n"
 "Übersicht separat aufgeführt.\n"
 "\n"
 
@@ -12319,8 +12255,7 @@ msgid ""
 "Depends on [close_in_min](#close_in_min) and tells how many minutes the ticket was closed relative to SLAs solution time.\n"
 msgstr ""
 "<!-- markdownlint-disable-next-line MD051 -->\n"
-"Hängt von [close_in_min](#close_in_min) ab und gibt an, wie viele Minuten "
-"das Ticket relativ zur SLAs-Lösungszeit geschlossen wurde.\n"
+"Hängt von [close_in_min](#close_in_min) ab und gibt an, wie viele Minuten das Ticket relativ zur SLAs-Lösungszeit geschlossen wurde.\n"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:110
@@ -12587,7 +12522,8 @@ msgstr "`first_response_at` <Badge type=\"info\" text=\"SLA\"/>"
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:196
 msgid "Timestamp of the first response to the customer (communication type)."
-msgstr "Zeitstempel der Ersten Reaktion auf den Kunden (vom Typ Kommunikation)."
+msgstr ""
+"Zeitstempel der Ersten Reaktion auf den Kunden (vom Typ Kommunikation)."
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:198
@@ -12705,7 +12641,8 @@ msgstr "`last_close_at`"
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:237
 msgid "Last close time, set on each closing of ticket."
-msgstr "Letzte Schließzeit, die bei jedem Schließen eines Tickets gesetzt wird."
+msgstr ""
+"Letzte Schließzeit, die bei jedem Schließen eines Tickets gesetzt wird."
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:239
@@ -13599,13 +13536,8 @@ msgstr "Text des Artikels als Plaintext."
 msgid ""
 "Example: `\"Hi,\\n\\nplease send me:\\n1 [...] \\nThank you\\n\\nJohn Doe\"`"
 msgstr ""
-"Beispiel: `\"Hallo, \\n"
-"\\n"
-"Bitte schicken Sie mir:\\n"
-"1 [...] \\n"
-"Danke\\n"
-"\\n"
-"John Doe\"`"
+"Beispiel: `\"Hallo, \\n\\nBitte schicken Sie mir:\\n1 [...] "
+"\\nDanke\\n\\nJohn Doe\"`"
 
 #. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:601
@@ -13709,8 +13641,7 @@ msgstr "Name (und E-Mail-Adresse) des Verfassers des Artikels."
 #: src/en/reference/es-indexed-attributes.md:642
 #, no-wrap
 msgid "Examples: `\"Nicole Braun <nicole.braun@zammad.org>\"`, `\"John Doe\"`\n"
-msgstr ""
-"Beispiele: `\"Nicole Braun <nicole.braun@zammad.org>\"`, `\"John Doe\"`\n"
+msgstr "Beispiele: `\"Nicole Braun <nicole.braun@zammad.org>\"`, `\"John Doe\"`\n"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:646
@@ -19779,11 +19710,14 @@ msgstr ""
 "Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser "
 "Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich sein"
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:302
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
-msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
+msgstr ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/knowledgebase.md:1
@@ -19819,10 +19753,8 @@ msgid ""
 "The request and response examples include the knowledge base ID `1`. Your ID may be different, for example if you\n"
 "created a knowledge base before, dropped it and created a new one.\n"
 msgstr ""
-"Die Beispiele für Anfragen und Antworten enthalten die Knowledge Base ID `1`"
-". Ihre ID kann anders lauten, zum Beispiel wenn Sie\n"
-"eine Knowledge Base erstellt haben, diese gelöscht und nochmal eine neue "
-"erstellt haben.\n"
+"Die Beispiele für Anfragen und Antworten enthalten die Knowledge Base ID `1`. Ihre ID kann anders lauten, zum Beispiel wenn Sie\n"
+"eine Knowledge Base erstellt haben, diese gelöscht und nochmal eine neue erstellt haben.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/knowledgebase.md:22
@@ -19868,8 +19800,8 @@ msgstr ""
 #: src/en/reference/rest-api/knowledgebase.md:271
 msgid "Required permission: `knowledge_base.reader` or `knowledge_base.editor`"
 msgstr ""
-"Erforderliche Berechtigung: `knowledge_base.reader` oder "
-"`knowledge_base.editor`"
+"Erforderliche Berechtigung: `knowledge_base.reader` oder `knowledge_base."
+"editor`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/knowledgebase.md:36
@@ -20046,10 +19978,8 @@ msgid ""
 "You have to provide the order of all top level categories, i.e.\n"
 "categories with no category as parent (parent: `>> Homepage <<`).\n"
 msgstr ""
-"Sie müssen die Reihenfolge aller Kategorien der obersten Ebene angeben, d.h."
-"\n"
-"Kategorien, die keine übergeordnete Kategorie haben (übergeordnete Kategorie:"
-" `>> Homepage <<`).\n"
+"Sie müssen die Reihenfolge aller Kategorien der obersten Ebene angeben, d.h.\n"
+"Kategorien, die keine übergeordnete Kategorie haben (übergeordnete Kategorie: `>> Homepage <<`).\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/knowledgebase.md:130
@@ -20090,8 +20020,8 @@ msgid ""
 "`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
 "of category}`"
 msgstr ""
-"`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/{"
-"ID of category}`"
+"`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/"
+"{ID of category}`"
 
 #. type: Fenced div block (details Show response:)
 #: src/en/reference/rest-api/knowledgebase.md:152
@@ -20203,8 +20133,8 @@ msgid ""
 "`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
 "of category}/permissions`"
 msgstr ""
-"`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/{"
-"ID of category}/permissions`"
+"`GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/"
+"{ID of category}/permissions`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/knowledgebase.md:218
@@ -20224,8 +20154,8 @@ msgid ""
 "`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID "
 "of category}/permissions`"
 msgstr ""
-"`PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/{"
-"ID of category}/permissions`"
+"`PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/categories/"
+"{ID of category}/permissions`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/knowledgebase.md:230
@@ -20248,8 +20178,7 @@ msgstr ""
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/knowledgebase/put-categories-permissions-response."
-"json\n"
+"<<< @/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json\n"
 "\n"
 
 #. type: Title ##
@@ -20294,8 +20223,7 @@ msgstr ""
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers-"
-"response.json\n"
+"<<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers-response.json\n"
 "\n"
 
 #. type: Plain text
@@ -20314,8 +20242,7 @@ msgid ""
 "If you want to get the content of an answer, add the parameters `?full=1&include_contents=1` to the query URL. The\n"
 "request for the following response included the parameters.\n"
 msgstr ""
-"Wenn Sie den Inhalt einer Antwort abrufen möchten, fügen Sie die Parameter "
-"`?full=1&include_contents=1` zur URL der Abfrage hinzu. Die\n"
+"Wenn Sie den Inhalt einer Antwort abrufen möchten, fügen Sie die Parameter `?full=1&include_contents=1` zur URL der Abfrage hinzu. Die\n"
 "Anfrage für die folgende Antwort enthielt die Parameter.\n"
 
 #. type: Fenced div block (details Show response)
@@ -20366,8 +20293,8 @@ msgid ""
 "`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
 "of answer}`"
 msgstr ""
-"`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/{"
-"ID of answer}`"
+"`PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/"
+"{ID of answer}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
 #: src/en/reference/rest-api/knowledgebase.md:312
@@ -20399,8 +20326,8 @@ msgid ""
 "`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
 "of answer}`"
 msgstr ""
-"`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/{"
-"ID of answer}`"
+"`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/"
+"{ID of answer}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/knowledgebase.md:333
@@ -20427,10 +20354,8 @@ msgid ""
 "Responses are omitted here. You can expect to get a response like for showing an answer with a populated value for\n"
 "`archived_at`, `published_at` or `internal_at`, depending on which request you execute.\n"
 msgstr ""
-"Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit "
-"einem gesetzten Wert für\n"
-"`archived_at`, `published_at` oder `internal_at`, je nachdem, welche Anfrage "
-"Sie ausführen.\n"
+"Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit einem gesetzten Wert für\n"
+"`archived_at`, `published_at` oder `internal_at`, je nachdem, welche Anfrage Sie ausführen.\n"
 
 #. type: Fenced div block (details Show requests|tabs)
 #: src/en/reference/rest-api/knowledgebase.md:348
@@ -20523,8 +20448,8 @@ msgid ""
 "`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID "
 "of answer}/attachments/{ID of attachment}`"
 msgstr ""
-"`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/{"
-"ID of answer}/attachments/{ID of attachment}`"
+"`DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers/"
+"{ID of answer}/attachments/{ID of attachment}`"
 
 #. type: Fenced div block (details Show response)
 #: src/en/reference/rest-api/knowledgebase.md:393
@@ -23267,18 +23192,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
-
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, no-wrap
@@ -25270,10 +25183,8 @@ msgid ""
 "Elasticsearch.\n"
 msgstr ""
 "Wenn Sie Elasticsearch 8 installieren und unserer\n"
-"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen "
-"wollen, stellen Sie sicher\n"
-"dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt "
-"wird, kopieren/speichern.\n"
+"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher\n"
+"dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird, kopieren/speichern.\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/install-elasticsearch.md:35
@@ -27899,47 +27810,36 @@ msgstr "Abnehmer der Anrufe (eingehend)"
 msgid "`ES - CTI Log`"
 msgstr "`ES - CTI Log`"
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:231
-#, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
-msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
-
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
-msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt "
-"werden kann.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:234
-#, no-wrap
-msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
-msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+#, fuzzy, no-wrap
+#| msgid "    means we can only display the _last_ value of the field in question.\n"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the _last_ value of the field in question.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid "    violations.\n"
-msgstr "    Verletzung.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:237
-#, no-wrap
-msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
-msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+msgid ""
+"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
+msgstr ""
+"[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+"     SLA-Verstöße.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
+"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
-"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
-"    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
@@ -30047,6 +29947,30 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "[^1]: Some values are not available as time series information. This"
+#~ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
+
+#, no-wrap
+#~ msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+
+#, no-wrap
+#~ msgid "    violations.\n"
+#~ msgstr "    Verletzung.\n"
+
+#, no-wrap
+#~ msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+#~ msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+
+#, no-wrap
+#~ msgid ""
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
+#~ "    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid ""
 #~ "The attributes, example values and description below are constructed like "
@@ -32271,24 +32195,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "You can either search them via search field or via overviews.\n"
 #~ msgstr "Sie können sie entweder über das Suchfeld oder über Übersichten suchen.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid "Please have a look on our notes on how to contribute below."
 #~ msgstr "Bitte sehen Sie sich unsere Hinweise für Beiträge an."
