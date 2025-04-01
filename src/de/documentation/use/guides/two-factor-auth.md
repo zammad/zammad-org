@@ -12,15 +12,16 @@ sicherzustellen, dass Sie berechtigt sind, auf das Konto
 zuzugreifen. Typischerweise ist das etwas, was Sie wissen (wie ein Passwort)
 und etwas, das Sie besitzen (wie ein Mobilgerät oder ein Security-Token).
 
-Two-Factor Authentication is an **optional feature**. Administrators must
-activate it to be visible in your profile settings. The 2FA usage may be
-even enforced by your admin. In this case, you can't use Zammad unless you
-set up at least one 2FA method.
+Die Zwei-Faktor-Authentifizierung ist eine **optionale
+Funktion**. Administratoren müssen sie aktivieren, damit sie in Ihren
+Profileinstellungen sichtbar ist. Die 2FA-Verwendung kann sogar von Ihrem
+Administrator erzwungen werden. In diesem Fall können Sie Zammad nicht
+verwenden, wenn Sie nicht mindestens eine 2FA-Methode eingerichtet haben.
 
 ## Einrichtung
 
-If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
-up. Depending on the enabled two-factor methods, you may see one or more options in the table.
+Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Profil-Einstellungen > Zwei-Faktor-Authentifizierung_
+einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.
 
 Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
 Schraubenschlüssel-Symbol und befolgen Sie die Schritte.
@@ -31,10 +32,10 @@ Benutzerprofils](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.
 In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
 bestätigen.
 
-Depending on the chosen two-factor method, you will be guided through the
-setup process, which includes specific steps.  Continue with using an
-[Authentication App](#authentication-app) or a [Security
-Key](#security-key).
+Je nach gewählter Zwei-Faktor-Methode werden Sie durch den
+Einrichtungsprozess geführt, der bestimmte Schritte umfasst. Fahren Sie mit
+der Verwendung einer [Authentifizierungs-App](#authentifizierungs-app) oder
+eines [Sicherheits-Schlüssels](#sicherheits-schlussel) fort.
 
 ### Authentifizierungs-App
 
@@ -63,24 +64,26 @@ die Funktion **QR-Code scannen** (oder ähnlich bezeichnet). Richten Sie dann
 die Kamera auf den Bildschirm und scannen den angezeigten QR-Code.
 
 ::: tip
-If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to
-your authenticator app and enter the provided secret when asked.
+Wenn Ihr Gerät nicht in der Lage ist, den QR-Code zu scannen, klicken Sie zunächst darauf, um das Secret anzuzeigen. Fügen Sie dann einen manuellen Eintrag in
+Ihrer Authentifizierungs-App hinzu und geben Sie den Code ein, wenn Sie dazu aufgefordert werden.
 :::
 
 Ihre Authentifizierungs-App sollte sofort den neuen Eintrag für Ihr
 Zammad-Konto angelegt haben und einen 6-stelligen Code mit einem Timer
 anzeigen.
 
-Back in Zammad, enter the provided code to the **Security Code** field and
-click on **Set Up**. Go on either by setting up another 2FA method
-([security key](#security-key)) or check how to [log in with 2FA](#sign-in).
+Zurück in Zammad, geben Sie den bereitgestellten Code in das Feld
+**Sicherheitscode** ein und klicken Sie auf **Einrichten**. Fahren Sie
+entweder mit der Einrichtung einer anderen 2FA-Methode fort
+([Sicherheits-Schlüssel](#sicherheits-schlussel)) oder lesen Sie, wie man
+2FA [bei der Anmeldung verwendet](#anmelden).
 
 ### Sicherheits-Schlüssel
 
-The security keys method is a type of a two-factor authentication that uses
-Web Authentication API in the browser for verifying your identity. You may
-register multiple hardware or software security keys with your Zammad
-account and then they can be used during the sign-in process.
+Die Zwei-Faktor-Methode mit Sicherheits-Schlüssel nutzt das Web
+Authentication API im Browser, um Ihre Identität zu bestätigen. Sie können
+mehrere Hardware- oder Software-Sicherheits-Schlüssel in Ihrem Zammad-Konto
+hinterlegen und für die Anmeldung nutzen.
 
 Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie
 aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten.
@@ -104,8 +107,8 @@ zu interagieren (z.B. PIN-Eingabe zur Entsperrung), um zu prüfen, ob Sie in
 physischem Besitz des Geräts sind.
 
 ::: warning
-You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you
-proceed!
+Sie haben begrenzt Zeit (einige zehn Sekunden), um den Sicherheits-Schlüssel als Methode
+zu bestätigen. Am besten haben Sie Ihr Gerät einsatzbereit vor sich, bevor Sie loslegen!
 :::
 
 Wenn die Registrierung erfolgreich war, wird der Dialog geschlossen und Sie
@@ -115,11 +118,12 @@ Schlüssels **wiederholen**.
 Sobald Sie Sicherheits-Schlüssel eingerichtet haben, können Sie diese über
 die **Bearbeiten** Funktion neben der Zwei-Faktor-Methode verwalten.
 
-You have an option to remove a key or set up additional ones. There is no
-limit in number of security keys you can set up, but keep in mind you cannot
-register an already registered key for your account. Removal of the last
-security key will effectively remove the complete security keys method for
-your account.
+Sie haben die Möglichkeit, einen Schlüssel zu entfernen oder zusätzliche
+Schlüssel einzurichten. Die Anzahl der Sicherheits-Schlüssel, die Sie
+einrichten können, ist nicht begrenzt. Beachten Sie jedoch, dass Sie einen
+bereits registrierten Schlüssel nicht erneut für Ihr Konto registrieren
+können. Wenn Sie den letzten Sicherheits-Schlüssel entfernen, wird die
+gesamte Sicherheits-Schlüssel-Methode für Ihr Konto entfernt.
 
 ## Anmelden
 
@@ -151,15 +155,16 @@ Codes ein und klicken Sie auf **Anmelden**.
 Wiederherstellungs-Codes](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
-You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended
-you regenerate them for your account.
+Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie alle Codes Ihrer Liste aufgebraucht haben,
+können Sie diese in Ihrem Profil neu erstellen.
 :::
 
 ## Wiederherstellungs-Codes erzeugen
 
-Recovery codes are one-time use security codes that can be used to sign in
-if you lose access to your other two-factor authentication methods. They can
-only be used as a **backup method**.
+Wiederherstellungs-Codes sind einmalig verwendbare Sicherheitscodes, mit
+denen Sie sich anmelden können, wenn Sie den Zugriff auf Ihre anderen
+Zwei-Faktor-Authentifizierungsmethoden verlieren. Sie können nur als
+**Backup-Methode** verwendet werden.
 
 Falls die Funktion von Ihrem Administrator aktiviert wurde, werden die
 Wiederherstellungs-Codes automatisch bei der Einrichtung einer

@@ -56,7 +56,7 @@ Je nachdem, was Sie suchen, wählen Sie eine passende Übersicht und beginnen
 mit der Bearbeitung eines Tickets.
 
 ::: tip
-If you miss an overview or want to have different settings, let your Zammad admin know!
+Wenn Sie eine Übersicht vermissen oder andere Einstellungen wünschen, lassen Sie es Ihren Zammad-Administrator wissen!
 :::
 
 ### Farbcodierter Status und Priorität
@@ -100,11 +100,12 @@ nächsten/vorherigen Ticket dieser Übersicht zu wechseln.
 
 ### Mehrfach-Aktionen
 
-Perform bulk actions by selecting multiple tickets and either use the
-drop-down fields or drag them with the mouse to invoke the bulk action
-overlay. You can find more information about that in the [Bulk
-Actions](../advanced-features#bulk-actions) section in the advanced features
-page.
+Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und
+entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um die
+Einblendung für die Mehrfach-Aktion aufzurufen. Weitere Informationen dazu
+finden Sie im Abschnitt
+[Mehrfach-Aktionen](../advanced-features#mehrfach-aktionen) auf der Seite
+mit den erweiterten Funktionen.
 
 ### Übersichten neu anordnen
 

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-31 15:38+0200\n"
-"PO-Revision-Date: 2025-03-31 14:40+0000\n"
+"POT-Creation-Date: 2025-03-31 14:41+0000\n"
+"PO-Revision-Date: 2025-04-01 11:41+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -206,6 +206,18 @@ msgstr "Keine Ergebnisse für"
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -318,19 +330,15 @@ msgstr "Verwenden Sie diesen nicht für den Produktiv-Betrieb!"
 
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:38 src/en/contribute/contribute.md:45
-#, fuzzy
-#| msgid ""
-#| "Supported with bug and security fixes - see also our [Security Policy]"
-#| "(https://github.com/zammad/zammad/blob/develop/SECURITY.md)"
-#| "{target=_blank}."
 msgid ""
 "This branch is actively supported and receives regular bug fixes as well as "
 "security updates (see [Security Policy](https://github.com/zammad/zammad/"
 "blob/develop/SECURITY.md){target=_blank} for more details)."
 msgstr ""
-"Unterstützt durch Fehler- und Sicherheitskorrekturen - siehe auch unsere "
-"[Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md)"
-"{target=_blank}."
+"Dieser Branch wird aktiv unterstützt und erhält regelmäßig Fehlerkorrekturen "
+"sowie Sicherheitsaktualisierungen (siehe [Security Policy](https://github."
+"com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} für weitere "
+"Details)."
 
 #. type: Title ####
 #: src/en/contribute/contribute.md:39
@@ -367,6 +375,8 @@ msgstr ""
 #: src/en/contribute/contribute.md:51
 msgid "Bug fixes and security updates are not applied to these branches."
 msgstr ""
+"Fehlerbehebungen und Sicherheitsaktualisierungen werden nicht auf diese "
+"Branches angewendet."
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:52 src/en/contribute/contribute.md:95
@@ -694,26 +704,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:146
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the\n"
-#| "    \\` before and after the string in your translation.\n"
+#, no-wrap
 msgid ""
 "**\\`example-string\\`**\n"
 ": This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the\n"
 "  \\` before and after the string in your translation.\n"
 msgstr ""
-"    Dies wird als `Beispiel-Zeichenkette` ausgegeben. Je nach Kontext kann er übersetzt werden oder nicht. Verwenden Sie in jedem Fall das\n"
-"    \\` vor und nach der Zeichenkette in Ihrer Übersetzung.\n"
+"**\\`Beispiel-Zeichenkette\\`**\n"
+": Dies wird als `Beispiel-Zeichenkette` ausgegeben. Je nach Kontext kann diese übersetzt werden oder nicht. Verwenden Sie in jedem Fall das\n"
+"  \\` vor und nach der Zeichenkette in Ihrer Übersetzung.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:152
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    This is a link to another page, including the language code. The above \"example\" is the text, which is shown as\n"
-#| "    link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are\n"
-#| "    translating in. Make sure that your language is already present on zammad.org (check it by using the language\n"
-#| "    switcher). Otherwise contact us if you want to have your language activated.\n"
+#, no-wrap
 msgid ""
 "**\\[example\\](/en/path/to/document-or-website\\)**\n"
 ": This is a link to another page, including the language code. The above \"example\" is the text, which is shown as\n"
@@ -721,24 +724,23 @@ msgid ""
 "  translating in. Make sure that your language is already present on zammad.org (check it by using the language\n"
 "  switcher). Otherwise contact us if you want to have your language activated.\n"
 msgstr ""
-"    Dies ist ein Link zu einer anderen Seite, der auch den Sprachcode enthält. Das obige \"Beispiel\" ist der Text, der als\n"
-"    Link-Text angezeigt wird. Dieser Teil kann übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden, in den Sie\n"
-"    übersetzen. Vergewissern Sie sich, dass Ihre Sprache bereits auf zammad.org vorhanden ist (überprüfen Sie dies mit der Sprachauswahl).\n"
-"    Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen.\n"
+"**\\[Beispiel\\](/de/pfad/zu/dokument-oder-website\\)**\n"
+": Dies ist ein Link zu einer anderen Seite, einschließlich des Sprachcodes. Das obige \"Beispiel\" ist der Text, der als Linktext angezeigt wird.\n"
+"  Dieser Teil kann übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden, in dessen Sprache Sie\n"
+"  übersetzen. Vergewissern Sie sich, dass Ihre Sprache bereits auf zammad.org vorhanden ist (überprüfen Sie dies im\n"
+"  Sprachwechsel-Menü). Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:155
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    Markup for text (e.g. bold, italics). Alternative: \\_example string\\_. These strings can be translated, but the\n"
-#| "    markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
+#, no-wrap
 msgid ""
 "**\\*\\*example string\\*\\***\n"
 ": Markup for text (e.g. bold, italics). Alternative: \\_example string\\_. These strings can be translated, but the\n"
 "  markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
 msgstr ""
-"    Auszeichnung für Text (z.B. fett, kursiv). Alternativ: \\_Beispiel Zeichenkette\\_. Diese Zeichenketten können übersetzt werden, aber die\n"
-"    Auszeichnung (z.B. `**` oder `_`) sollte sinngemäß übernommen werden.\n"
+"**\\*\\*Beispiel Zeichenkette\\*\\***\n"
+": Formatierung für Text (z.B. fett, kursiv). Alternativ: \\Beispiel Zeichenkette\\_. Diese Zeichenketten können übersetzt werden, aber die\n"
+"  Formatierung (z.B. `**` oder `_`) sollte sinngetreu übernommen werden.\n"
 
 #. type: Title #
 #: src/en/contribute/style-guide.md:5
@@ -759,16 +761,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:11
-#, fuzzy
-#| msgid ""
-#| "The first sections are about general information and rules. A [section "
-#| "with useful examples](#basic-formatting-examples)  follows at the end."
 msgid ""
 "The first sections are about general information and rules. A [section with "
 "examples](#examples) follows at the end."
 msgstr ""
 "In den ersten Abschnitten geht es um allgemeine Informationen und Regeln. Am "
-"Ende folgt ein [Abschnitt mit nützlichen Beispielen](#beispiele)."
+"Ende folgt ein [Abschnitt mit Beispielen](#beispiele)."
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:15
@@ -885,22 +883,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:45
-#, fuzzy
-#| msgid ""
-#| "Due to the fact that a documentation can't cover everything (otherwise it "
-#| "would be code), the relevance has to be considered. If parts with a "
-#| "common use case are missing, it should be intended to include them in the "
-#| "documentation."
 msgid ""
 "Due to the fact that a documentation can't cover everything (otherwise it "
 "would be on a code-like detail level), the relevance has to be considered. "
 "If parts with a common use case are missing, it should be intended to "
 "include them in the documentation."
 msgstr ""
-"Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie ja quasi "
-"Code), muss die Relevanz berücksichtigt werden. Wenn Teile mit einem "
-"gebräuchlichen Anwendungsfall fehlen, sollte in Erwägung gezogen werden, "
-"diese in die Dokumentation aufzunehmen."
+"Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie auf einer "
+"codeähnlichen Detailebene), muss die Relevanz berücksichtigt werden. Wenn "
+"Teile mit einem gebräuchlichen Anwendungsfall fehlen, sollte beabsichtigt "
+"werden, diese in die Dokumentation aufzunehmen."
 
 #. type: Title ##
 #: src/en/contribute/style-guide.md:46
@@ -910,12 +902,6 @@ msgstr "Stil und Regeln"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:50
-#, fuzzy
-#| msgid ""
-#| "The next sections cover general things to consider writing the "
-#| "documentation. After these you can find a section with some [basic "
-#| "examples of formatting and structuring](#basic-formatting-examples) the "
-#| "content."
 msgid ""
 "The next sections cover general things to consider writing the "
 "documentation. After these you can find a section with some [examples]"
@@ -923,8 +909,8 @@ msgid ""
 msgstr ""
 "Die nächsten Abschnitte behandeln allgemeine Dinge, die beim Schreiben der "
 "Dokumentation zu beachten sind. Danach finden Sie einen Abschnitt mit "
-"einigen [grundlegenden Beispielen zur Formatierung und Strukturierung]"
-"(#basic-formatting-examples) des Inhalts."
+"einigen [Beispielen](#beispiele), wie Sie den Inhalt formatieren und "
+"strukturieren können."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:58
@@ -951,16 +937,13 @@ msgstr "Die Sprache der Quelldateien ist amerikanisches Englisch."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:58
-#, fuzzy
-#| msgid ""
-#| "The translation of the documentation is done via Weblate, see "
-#| "[contribution section](contribute#translation) for more details."
 msgid ""
 "The translation of the documentation is done via Weblate, see [translation "
 "section](contribute#translation) in the contribute page for more details."
 msgstr ""
-"Die Übersetzung der Dokumentation erfolgt über Weblate, siehe [Beitrags-"
-"Seite](contribute#ubersetzung) für weitere Details."
+"Die Übersetzung der Dokumentation erfolgt über Weblate, siehe Abschnitt "
+"[Übersetzung](contribute#ubersetzung) auf der \"Beitragen\"-Seite für "
+"weitere Details."
 
 #. type: Title ###
 #: src/en/contribute/style-guide.md:59
@@ -1135,26 +1118,18 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:107
-#, fuzzy
-#| msgid ""
-#| "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
-#| "language tag, e.g. `` ```ruby`` or `` ```sh``. If no language is "
-#| "applicable, use `` ```plain``."
 msgid ""
 "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
 "language tag, e.g. `ruby` or `sh`. If no language is applicable, use `plain`."
 msgstr ""
-"Verwenden Sie `` ``` `` (Backticks) für Codeblöcke, gefolgt von einer "
-"obligatorischen Angabe der Sprache, z.B. `` ```ruby`` oder `` ```sh``. Wenn "
-"keine Sprache anwendbar ist, verwenden Sie `` ```plain``."
+"Verwenden Sie `` ``` `` (Backticks) für abgegrenzte Codeblöcke, gefolgt von "
+"einem obligatorischen Sprach-Tag, z.B. `ruby` oder `sh`. Wenn keine Sprache "
+"zutrifft, verwenden Sie `plain`."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:107
-#, fuzzy
-#| msgid "Use `-` for bullet point lists (unordered list) like this one."
 msgid "Use `-` for bullet point lists (unordered lists) like this one."
-msgstr ""
-"Verwenden Sie `-` für Aufzählungen (nicht numerische Listen) wie diese."
+msgstr "Verwenden Sie `-` für Aufzählungen (ungeordnete Liste) wie diese."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:107
@@ -1196,10 +1171,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/contribute/style-guide.md:108
-#, fuzzy, no-wrap
-#| msgid "Example:"
+#, no-wrap
 msgid "Examples"
-msgstr "Beispiel:"
+msgstr "Beispiele"
 
 #. type: Title ####
 #: src/en/contribute/style-guide.md:110
@@ -1578,10 +1552,9 @@ msgstr "Erweiterte Funktionen"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:8
-#, fuzzy, no-wrap
-#| msgid "Use Keyboard Shortcuts"
+#, no-wrap
 msgid "Keyboard Shortcuts"
-msgstr "Tastaturkürzel verwenden"
+msgstr "Tastaturkürzel"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:11
@@ -1590,10 +1563,9 @@ msgstr "TODO"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:12
-#, fuzzy, no-wrap
-#| msgid "Ticket history"
+#, no-wrap
 msgid "Ticket Update Behavior"
-msgstr "Ticket-Historie"
+msgstr "Verhalten bei Ticket-Aktualisierung"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:15
@@ -1712,10 +1684,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:38
-#, fuzzy, no-wrap
-#| msgid "Text module"
+#, no-wrap
 msgid "Text Modules"
-msgstr "Textbaustein"
+msgstr "Textbausteine"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:41
@@ -1806,15 +1777,11 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:73
-#, fuzzy
-#| msgid ""
-#| "While writing an ticket article, simply type `@@` and enter some letters "
-#| "of the name of the colleague you want to mention."
 msgid ""
 "While writing a ticket article, simply type `@@` and enter some letters of "
 "the name of the colleague you want to mention."
 msgstr ""
-"Wenn Sie einen Ticket-Artikel schreiben, geben Sie einfach `@@` und einige "
+"Wenn Sie einen Ticket-Artikel verfassen, geben Sie einfach `@@` und einige "
 "Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten."
 
 #. type: Plain text
@@ -1845,18 +1812,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:85
-#, fuzzy
-#| msgid ""
-#| "If you are interested in the progress of a ticket, you can subscribe to "
-#| "it. This means you will receive notifications for each update."
 msgid ""
 "If you are interested in the progress of a ticket, you are not the owner, "
 "you can subscribe to it. This means you will receive notifications for each "
 "update."
 msgstr ""
-"Wenn Sie am Fortschritt eines Tickets interessiert sind, können Sie es "
-"abonnieren. Das bedeutet, dass Sie bei jeder Aktualisierung eine "
-"Benachrichtigung erhalten."
+"Wenn Sie sich für den Fortschritt eines Tickets interessieren, Sie aber "
+"nicht der Besitzer sind, können Sie es abonnieren. Das bedeutet, dass Sie "
+"bei jeder Aktualisierung eine Benachrichtigung erhalten."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:91
@@ -1969,19 +1932,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:128
-#, fuzzy
-#| msgid ""
-#| "In the ticket sidebar, you can find a section which is labels as "
-#| "\"Tags\". Add a tag by clicking on the `+` button. You can select "
-#| "existing tags and add new ones (if your admin didn't disable to add new "
-#| "tags)."
 msgid ""
 "In the ticket sidebar, you can find a section which is labels as **Tags**. "
 "Add a tag by clicking on the `+` button. You can select existing tags and "
 "add new ones (if your admin didn't disable to add new tags)."
 msgstr ""
 "In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der "
-"Bezeichnung \"Tags\". Fügen Sie einen Tag hinzu, indem Sie auf die "
+"Bezeichnung **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die "
 "Schaltfläche `+` klicken. Sie können vorhandene Tags auswählen und neue "
 "hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht "
 "deaktiviert hat)."
@@ -2034,17 +1991,12 @@ msgstr "Um den Fortschritt der Arbeiten besser sichtbar machen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:147
-#, fuzzy
-#| msgid ""
-#| "Select the \"Checklist\" tab in the sidebar. If you can't see it, your "
-#| "Zammad admin disabled it. You can only add or edit a checklist, if you "
-#| "have the permission to edit the ticket."
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
 "the permission to edit the ticket."
 msgstr ""
-"Wählen Sie den Tab \"Checkliste\" in der Seitenleiste. Wenn Sie sie nicht "
+"Wählen Sie den Tab **Checkliste** in der Seitenleiste. Wenn Sie sie nicht "
 "sehen können, hat Ihr Zammad-Administrator sie deaktiviert. Sie können eine "
 "Checkliste nur hinzufügen oder bearbeiten, wenn Sie die Berechtigung haben, "
 "das Ticket zu bearbeiten."
@@ -2535,10 +2487,9 @@ msgstr "Das Ticket ist mit seinem \"Eltern\"-Ticket verknüpft"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:288
-#, fuzzy, no-wrap
-#| msgid "Split Ticket"
+#, no-wrap
 msgid "Split Tickets"
-msgstr "Ticket Abspalten"
+msgstr "Tickets Abspalten"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:291
@@ -2600,11 +2551,6 @@ msgstr "Tickets verknüpfen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:313
-#, fuzzy
-#| msgid ""
-#| "When tickets about related issues arise, they can be linked to each other "
-#| "for easier reference.  [Merged](#merge-tickets) and [split](#split-"
-#| "ticket) tickets are automatically linked."
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2612,7 +2558,7 @@ msgid ""
 msgstr ""
 "Wenn Tickets zu verwandten Themen auftauchen, können sie zur einfacheren "
 "Auffindbarkeit und Referenz miteinander verknüpft werden. [Zusammengefasste]"
-"(#tickets-zusammenfassen) und [abgespaltene](#ticket-abspalten) Tickets "
+"(#tickets-zusammenfassen) und [abgespaltene](#tickets-abspalten) Tickets "
 "werden automatisch verknüpft."
 
 #. type: Plain text
@@ -3021,12 +2967,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:15
-#, fuzzy
-#| msgid ""
-#| "In general, Zammad should be pretty self explanatory. However, there are "
-#| "features that are not obvious at first glance. These features are "
-#| "described in this documentation as well as some general explanations and "
-#| "tips."
 msgid ""
 "In general, Zammad should be pretty self explanatory. However, there are "
 "features that are not obvious at first glance.  These features are described "
@@ -3039,13 +2979,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:19
-#, fuzzy, no-wrap
-#| msgid "This documentation is divided into different sections. Currently you are reading the _General_ section. Use the left sidebar to navigate to your desired information or the search in the header."
+#, no-wrap
 msgid ""
 "This documentation is divided into different sections. Currently you are viewing the _General_ section in the\n"
 "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
 "header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].\n"
-msgstr "Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit lesen Sie den Abschnitt _Allgemein_. Benutzen Sie die linke Seitenleiste, um zu den gewünschten Informationen zu gelangen, oder die Suchfunktion in der Kopfzeile."
+msgstr ""
+"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich\n"
+"Bereich _Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.\n"
+"Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/general.md:20
@@ -3055,12 +2997,6 @@ msgstr "Zammad Anfänger"
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:25
-#, fuzzy
-#| msgid ""
-#| "If you are new to Zammad and ticketing software at all, our "
-#| "recommendation is to have a look at the [start with Zammad](start-using-"
-#| "zammad) page. You can find a description of some important UI elements "
-#| "there as well as basic ticket attributes and how to use them."
 msgid ""
 "If you are new to Zammad and ticketing software at all, our recommendation "
 "is to have a look at the [Start with Zammad](start-using-zammad) page. You "
@@ -3070,7 +3006,7 @@ msgstr ""
 "Wenn Sie mit Zammad und Ticket-Software noch nicht vertraut sind, empfehlen "
 "wir Ihnen, einen Blick auf die Seite [Mit Zammad starten](start-using-"
 "zammad) zu werfen. Sie finden dort eine Beschreibung einiger wichtiger UI-"
-"Elemente sowie grundlegender Ticket-Attribute und wie man sie verwendet."
+"Elemente sowie grundlegender Ticket-Attribute und wie man diese verwendet."
 
 #. type: Title ##
 #: src/en/documentation/use/general.md:26
@@ -3544,14 +3480,9 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/guides/overviews.md:44
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you miss an overview or want to have different settings, let your Zammad\n"
-#| "admin know!\n"
+#, no-wrap
 msgid "If you miss an overview or want to have different settings, let your Zammad admin know!\n"
-msgstr ""
-"Wenn Sie eine Übersicht vermissen oder andere Einstellungen haben möchten, lassen Sie es Ihren Zammad\n"
-"Administrator wissen!\n"
+msgstr "Wenn Sie eine Übersicht vermissen oder andere Einstellungen wünschen, lassen Sie es Ihren Zammad-Administrator wissen!\n"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:48
@@ -3669,11 +3600,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:83
-#, fuzzy
-#| msgid ""
-#| "Perform bulk actions by selecting multiple tickets and either use the "
-#| "drop-down fields or drag them with the mouse to invoke the bulk action "
-#| "overlay."
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the drop-"
 "down fields or drag them with the mouse to invoke the bulk action overlay. "
@@ -3681,8 +3607,10 @@ msgid ""
 "features#bulk-actions) section in the advanced features page."
 msgstr ""
 "Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und "
-"entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um das "
-"Overlay für die Mehrfach-Aktion aufzurufen."
+"entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um die "
+"Einblendung für die Mehrfach-Aktion aufzurufen. Weitere Informationen dazu "
+"finden Sie im Abschnitt [Mehrfach-Aktionen](../advanced-features#mehrfach-"
+"aktionen) auf der Seite mit den erweiterten Funktionen."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:84
@@ -3730,13 +3658,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:13
-#, fuzzy
-#| msgid ""
-#| "If you search for tickets, user and organizations, you can use the "
-#| "search. It is located in the top left corner in the navigation bar. "
-#| "Either select it via mouse or use the keyboard shortcut [[s]]. Zammad "
-#| "returns all fitting items for which you have at least view or read "
-#| "permissions."
 msgid ""
 "If you search for tickets, user and organizations, you can use the search. "
 "It is located in the top left corner in the primary navigation bar. Either "
@@ -3760,17 +3681,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:18
-#, fuzzy
-#| msgid ""
-#| "The search covers basically all information which is stored in Zammad and "
-#| "which got indexed by Elasticsearch, like:"
 msgid ""
 "The search covers basically all information which is stored in Zammad and "
 "which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes), "
 "like:"
 msgstr ""
-"Die Suche umfasst grundsätzlich alle Informationen, die in Zammad "
-"gespeichert sind und von Elasticsearch indiziert wurden, wie z.B:"
+"Die Suche deckt grundsätzlich alle Informationen ab, die in Zammad "
+"gespeichert bzw. von [Elasticsearch indiziert](/de/reference/es-indexed-"
+"attributes) wurden , wie z.B.:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:23
@@ -3817,12 +3735,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:32
-#, fuzzy
-#| msgid ""
-#| "If you press [[enter]] or click on `detailed search`, Zammad displays a "
-#| "page with search results. There you can narrow down your search by "
-#| "selecting a specific object type (e.g. customer) in the tablist below the "
-#| "search bar."
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad displays a page "
 "with search results. There you can narrow down your search by selecting a "
@@ -3830,8 +3742,8 @@ msgid ""
 msgstr ""
 "Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, zeigt Zammad "
 "eine Seite mit Suchergebnissen an. Dort können Sie Ihre Suche eingrenzen, "
-"indem Sie einen bestimmten Objekttyp (z.B. Benutzer) in der Tab-Leiste unter "
-"der Suche auswählen."
+"indem Sie in der Tab-Leiste unterhalb der Suchleiste einen bestimmten "
+"Objekttyp (z.B. Benutzer) auswählen."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:34
@@ -3873,13 +3785,6 @@ msgstr "Zusätzliche Funktionen"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:46
-#, fuzzy
-#| msgid ""
-#| "You can narrow down your search results to specific attributes, even in "
-#| "the search field in the navigation bar. Read on for some examples and "
-#| "explanations.  For a more detailed list of available attributes, please "
-#| "take a look at the [indexed attributes by Elasticsearch](/en/reference/es-"
-#| "indexed-attributes)."
 msgid ""
 "You can narrow down your search results to specific attributes, even in the "
 "search field in the navigation bar. Read on for some examples and "
@@ -4026,12 +3931,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:16
-#, fuzzy
-#| msgid ""
-#| "Two-Factor Authentication is an **optional feature**. Administrators must "
-#| "activate it to be visible in your profile settings. It may be even "
-#| "enforced by your admin to set up a 2FA method. In this case, you can't "
-#| "use Zammad unless you set up at least one 2FA method."
 msgid ""
 "Two-Factor Authentication is an **optional feature**. Administrators must "
 "activate it to be visible in your profile settings. The 2FA usage may be "
@@ -4052,20 +3951,13 @@ msgstr "Einrichtung"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:21
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If the system admin has enabled this feature, you can head to _Avatar >\n"
-#| "Profile > Two-factor Authentication_ to set it up. Depending on the\n"
-#| "enabled two-factor methods, you may see one or more options in the\n"
-#| "table.\n"
+#, no-wrap
 msgid ""
 "If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it\n"
 "up. Depending on the enabled two-factor methods, you may see one or more options in the table.\n"
 msgstr ""
-"Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie unter _Avatar >\n"
-"Profil-Einstellungen > Zwei-Faktor-Authentifizierung_ aufrufen, um sie einzurichten. Abhängig von den\n"
-"aktivierten Zwei-Faktor-Methoden, sehen Sie eine oder mehrere Optionen in der\n"
-"Tabelle.\n"
+"Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Profil-Einstellungen > Zwei-Faktor-Authentifizierung_\n"
+"einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:23
@@ -4093,12 +3985,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:30
-#, fuzzy
-#| msgid ""
-#| "Depending on the chosen two-factor method, you will be guided through the "
-#| "setup process, which includes specific steps. Continue with using an "
-#| "[Authentication App](#authentication-app) or a [Security Key](#security-"
-#| "key)."
 msgid ""
 "Depending on the chosen two-factor method, you will be guided through the "
 "setup process, which includes specific steps.  Continue with using an "
@@ -4196,18 +4082,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/guides/two-factor-auth.md:51
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If your device is not able to scan the QR code, first click on it to\n"
-#| "reveal your secret. Next, add a manual entry to your authenticator app\n"
-#| "and enter the provided secret when asked.\n"
+#, no-wrap
 msgid ""
 "If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to\n"
 "your authenticator app and enter the provided secret when asked.\n"
 msgstr ""
-"Falls Sie den QR-Code nicht scannen können, klicken Sie bitte\n"
-"auf den QR-Code, um den Sicherheitscode im Klartext zu sehen.\n"
-"Fügen Sie diesen anschließend manuell in Ihrer Authentifizierungs-App hinzu.\n"
+"Wenn Ihr Gerät nicht in der Lage ist, den QR-Code zu scannen, klicken Sie zunächst darauf, um das Secret anzuzeigen. Fügen Sie dann einen manuellen Eintrag in\n"
+"Ihrer Authentifizierungs-App hinzu und geben Sie den Code ein, wenn Sie dazu aufgefordert werden.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:58
@@ -4221,12 +4102,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:61
-#, fuzzy
-#| msgid ""
-#| "Back in Zammad, enter the provided code to the **Security Code** field "
-#| "and click on **Set Up**. Go on either by setting up another 2FA method "
-#| "([security key](#security-key)) or check how to [use and manage 2FA]"
-#| "(#sign-in)."
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
 "click on **Set Up**. Go on either by setting up another 2FA method "
@@ -4235,8 +4110,8 @@ msgstr ""
 "Zurück in Zammad, geben Sie den bereitgestellten Code in das Feld "
 "**Sicherheitscode** ein und klicken Sie auf **Einrichten**. Fahren Sie "
 "entweder mit der Einrichtung einer anderen 2FA-Methode fort ([Sicherheits-"
-"Schlüssel](#security-key)) oder lesen Sie, wie man 2FA verwendet und "
-"verwaltet (#anmelden)."
+"Schlüssel](#sicherheits-schlussel)) oder lesen Sie, wie man 2FA [bei der "
+"Anmeldung verwendet](#anmelden)."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/two-factor-auth.md:62
@@ -4246,12 +4121,6 @@ msgstr "Sicherheits-Schlüssel"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:67
-#, fuzzy
-#| msgid ""
-#| "The security keys method is a type of a two-factor authentication that "
-#| "uses Web Authentication API in the browser for verifying your identity.  "
-#| "You may register multiple hardware or software security keys with your "
-#| "Zammad account and then they can be used during the sign-in process."
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
 "Web Authentication API in the browser for verifying your identity. You may "
@@ -4326,10 +4195,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/two-factor-auth.md:83
-#, fuzzy, no-wrap
-#| msgid ""
-#| "You will have limited time (measured in tens of seconds) to register\n"
-#| "your key. Better to have it ready before you proceed!\n"
+#, no-wrap
 msgid ""
 "You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you\n"
 "proceed!\n"
@@ -4359,13 +4225,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:96
-#, fuzzy
-#| msgid ""
-#| "You have an option to remove a key or set up additional ones. There is no "
-#| "limit in number of security keys you can set up, but keep in mind you "
-#| "cannot register an already registered key for your account.  Removal of "
-#| "the last security key will effectively remove the complete security keys "
-#| "method for your account."
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
 "limit in number of security keys you can set up, but keep in mind you cannot "
@@ -4377,7 +4236,7 @@ msgstr ""
 "Schlüssel einzurichten. Die Anzahl der Sicherheits-Schlüssel, die Sie "
 "einrichten können, ist nicht begrenzt. Beachten Sie jedoch, dass Sie einen "
 "bereits registrierten Schlüssel nicht erneut für Ihr Konto registrieren "
-"können.  Wenn Sie den letzten Sicherheits-Schlüssel entfernen, wird die "
+"können. Wenn Sie den letzten Sicherheits-Schlüssel entfernen, wird die "
 "gesamte Sicherheits-Schlüssel-Methode für Ihr Konto entfernt."
 
 #. type: Title ##
@@ -4457,18 +4316,13 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/two-factor-auth.md:117
-#, fuzzy, no-wrap
-#| msgid ""
-#| "You can use a single recovery code only once! In case you exhaust the\n"
-#| "list of your recovery codes, it is recommended you regenerate them for\n"
-#| "your account.\n"
+#, no-wrap
 msgid ""
 "You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended\n"
 "you regenerate them for your account.\n"
 msgstr ""
-"Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie\n"
-"alle Codes Ihrer Liste aufgebraucht haben können Sie diese in Ihrem Profil neu\n"
-"generieren lassen.\n"
+"Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie alle Codes Ihrer Liste aufgebraucht haben,\n"
+"können Sie diese in Ihrem Profil neu erstellen.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/two-factor-auth.md:122
@@ -4478,11 +4332,6 @@ msgstr "Wiederherstellungs-Codes erzeugen"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:126
-#, fuzzy
-#| msgid ""
-#| "Recovery codes are one-time use security codes that can be used to sign "
-#| "in if you lose access to your other two-factor authentication methods.  "
-#| "They can only be used as a **backup method**."
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
 "if you lose access to your other two-factor authentication methods. They can "
@@ -5087,20 +4936,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:17
-#, fuzzy
-#| msgid ""
-#| "There are basic modular components for different features to keep the UI "
-#| "consistent. These components are described in [UI Elements](#main-ui-"
-#| "elements) as well as [Navigating](#navigating) below."
 msgid ""
 "There are basic modular components for different features to keep the UI "
 "consistent. These components are described in the section [Main UI Elements]"
 "(#main-ui-elements) as well as [Navigating](#navigating) below."
 msgstr ""
 "Es gibt grundlegende modulare Komponenten für verschiedene Funktionen, um "
-"die Benutzeroberfläche einheitlich zu halten. Diese Komponenten werden unter "
-"[UI-Elemente](#main-ui-elements) sowie unter [Navigation](#navigating) "
-"beschrieben."
+"die Benutzeroberfläche konsistent zu halten. Diese Komponenten werden in den "
+"Abschnitten [Haupt-UI-Elemente](#haupt-ui-elemente) sowie [Navigieren]"
+"(#navigieren) unten beschrieben."
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:20
@@ -5147,11 +4991,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:33
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Navigation sidebar\n"
-#| ": This is the left sidebar which includes the search, notifications, overviews,\n"
-#| "  ticket tabs, your avatar and the ticket create button.\n"
+#, no-wrap
 msgid ""
 "Navigation sidebar\n"
 ": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
@@ -5163,29 +5003,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:37
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Navigation tab\n"
-#| ": Each item of the navigation sidebar is called navigation tab. Depending on the\n"
-#| "  content, it can be a ticket tab (with the ticket detail view) or the overview\n"
-#| "  tab which opens the list of available overviews.\n"
+#, no-wrap
 msgid ""
 "Navigation tab\n"
 ": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
 "  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
 msgstr ""
 "Navigations-Tab\n"
-": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach\n"
-"  Inhalt kann es ein Ticket-Tab sein (mit der Ticket-Detailansicht) oder der Übersichten-\n"
-"  Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
+": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab sein (mit\n"
+"  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:41
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Ticket detail view\n"
-#| ": This is where you handle your customer requests. It is located in the middle\n"
-#| "  of the screen if a ticket tab is selected in the navigation sidebar.\n"
+#, no-wrap
 msgid ""
 "Ticket detail view\n"
 ": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
@@ -5197,11 +5027,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:45
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Sidebar\n"
-#| ": This is the right sidebar in the ticket detail view. It contains sidebar\n"
-#| "  tabs like customers and checklists and displays the currently selected tab.\n"
+#, no-wrap
 msgid ""
 "Sidebar\n"
 ": This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and\n"
@@ -5213,13 +5039,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:50
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Sidebar tabs\n"
-#| ": On the right side of the sidebar, you can find small icons to switch between\n"
-#| "  the different tabs. The availability of these tabs depends on your system\n"
-#| "  configuration, your permissions and the ticket attributes (e.g. if the\n"
-#| "  ticket customer has an assigned organization).\n"
+#, no-wrap
 msgid ""
 "Sidebar tabs\n"
 ": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
@@ -5229,16 +5049,11 @@ msgstr ""
 "Seitenleisten-Tabs\n"
 ": Auf der rechten Seite der Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen\n"
 "  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,\n"
-"  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der\n"
-"  Ticket-Kunde eine zugewiesene Organisation hat).\n"
+"  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).\n"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:54
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Active sidebar\n"
-#| ": The selected sidebar tab. Displays the content of the tab. It can show things\n"
-#| "  like customer sidebar, organization sidebar, checklist sidebar and more.\n"
+#, no-wrap
 msgid ""
 "Active sidebar\n"
 ": The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization\n"
@@ -5246,7 +5061,7 @@ msgid ""
 msgstr ""
 "Aktive Seitenleiste\n"
 ": Der ausgewählte Seitenleisten-Tab. Zeigt den Inhalt des Tabs an. Sie kann Dinge beinhalten\n"
-"  wie die Kunden-, Organisationns- oder Checklisten-Seitenleiste und mehr.\n"
+"  wie die Kunden-, Organisations- oder Checklisten-Seitenleiste und mehr.\n"
 
 #. type: Title ###
 #: src/en/documentation/use/start-using-zammad.md:55
@@ -5256,16 +5071,12 @@ msgstr "Navigieren"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:58
-#, fuzzy
-#| msgid ""
-#| "The navigation sidebar is your central place to access all main parts of "
-#| "Zammad.  It includes:"
 msgid ""
 "The navigation sidebar is your central place to access all main parts of "
 "Zammad. It includes:"
 msgstr ""
 "Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen "
-"Bereiche von Zammad zuzugreifen.  Sie umfasst:"
+"Bereiche von Zammad zuzugreifen. Sie umfasst:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/start-using-zammad.md:68
@@ -5350,12 +5161,6 @@ msgstr "Über Übersichten"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:84
-#, fuzzy
-#| msgid ""
-#| "If you search for new tickets to work on, your first look should be in "
-#| "the overview section. You can either open it by clicking the "
-#| "**Overviews** button in the navigation bar or use the keyboard shortcut "
-#| "[[o]].  You can see overviews as a kind of ticket lists."
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
 "overview section. You can either open it by clicking the **Overviews** "
@@ -5363,20 +5168,13 @@ msgid ""
 "overviews as a kind of ticket lists."
 msgstr ""
 "Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie "
-"zuerst in die Übersichten schauen. Sie können sie entweder durch Klicken auf "
-"die Schaltfläche **Übersichten** in der Navigationsleiste öffnen oder das "
-"Tastaturkürzel [[o]] verwenden.  Sie können die Übersichten als eine Art von "
-"Ticket-Listen betrachten."
+"zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch "
+"Klicken auf die Schaltfläche **Übersichten** in der Navigationsleiste öffnen "
+"oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine "
+"Art von Ticket-Listen betrachten."
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:88
-#, fuzzy
-#| msgid ""
-#| "By default, there are some built in overviews, you can use. For example, "
-#| "there is an overview called \"Open Tickets\". This might be a good "
-#| "starting point.  Your Zammad admin may have created additional overviews. "
-#| "These are based on conditions, which are basically rules, to define which "
-#| "ticket appears in which overview."
 msgid ""
 "By default, there are some built in overviews, you can use. For example, "
 "there is an overview called \"Open Tickets\".  This might be a good starting "
@@ -5386,7 +5184,7 @@ msgid ""
 msgstr ""
 "Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden "
 "können. Zum Beispiel gibt es eine Übersicht namens \"Offene Tickets\". Dies "
-"könnte ein guter Ausgangspunkt sein.  Ihr Zammad-Administrator hat "
+"könnte ein guter Ausgangspunkt sein. Ihr Zammad-Administrator hat "
 "möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf "
 "Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht "
 "erscheint."
@@ -5576,17 +5374,13 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/start-using-zammad.md:151
-#, fuzzy
-#| msgid ""
-#| "**New**: State for new tickets on which no one has worked on. When "
-#| "updating a ticket the first time, it automatically switches to *open*."
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
 "a ticket the first time, it automatically switches to _open_."
 msgstr ""
 "**Neu**: Status für neue Tickets, an denen noch niemand gearbeitet hat. Wenn "
 "ein Ticket zum ersten Mal aktualisiert wird, wechselt es automatisch zu "
-"*offen*."
+"_offen_."
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/start-using-zammad.md:151
@@ -5599,11 +5393,6 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/start-using-zammad.md:151
-#, fuzzy
-#| msgid ""
-#| "**Pending Close**: State for tickets which are basically resolved but you "
-#| "don't want to close immediately. This state requires you to enter a date "
-#| "and time at which the ticket automatically switches to *closed*."
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
 "don't want to close immediately. This state requires you to enter a date and "
@@ -5612,7 +5401,7 @@ msgstr ""
 "**Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst sind, "
 "die Sie aber nicht sofort schließen möchten. Für diesen Status müssen Sie "
 "ein Datum und eine Uhrzeit eingeben, zu der das Ticket automatisch auf "
-"*geschlossen* wechselt."
+"_geschlossen_ wechselt."
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/start-using-zammad.md:151
@@ -5630,14 +5419,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/start-using-zammad.md:151
-#, fuzzy
-#| msgid ""
-#| "**Owner**: This is the person who is currently responsible for the "
-#| "ticket.  In case you need to have an information from another colleague, "
-#| "you can either change to owner to this person or mention the person in an "
-#| "article by typing `@@` and selecting the user. In the later case, the "
-#| "user gets notified and is automatically subscribed to receive "
-#| "notifications on ticket updates."
 msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket. "
 "In case you need to have an information from another colleague, you can "
@@ -5647,10 +5428,10 @@ msgid ""
 "updates."
 msgstr ""
 "**Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich "
-"ist.  Falls Sie eine Information von einem anderen Kollegen benötigen, "
-"können Sie entweder den Besitzer darauf ändern oder die Person in einem "
-"Artikel erwähnen, indem Sie `@@` eingeben und den Benutzer auswählen. Im "
-"letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
+"ist. Falls Sie eine Information von einem anderen Kollegen benötigen, können "
+"Sie entweder den Besitzer auf diese Person ändern oder sie in einem Artikel "
+"erwähnen, indem Sie `@@` eingeben und den Benutzer auswählen. Im letzteren "
+"Fall wird der Benutzer benachrichtigt und erhält automatisch "
 "Benachrichtigungen über Aktualisierungen von Tickets."
 
 #. type: Bullet: '- '
@@ -5700,17 +5481,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:163
-#, fuzzy
-#| msgid ""
-#| "Independent of the customer's article type, you can always add internal "
-#| "notes.  These are useful to add information to the ticket or ask a "
-#| "colleague."
 msgid ""
 "Regardless of the customer's article type, you can always add internal "
 "notes. These are useful to add information to the ticket or ask a colleague."
 msgstr ""
 "Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen "
-"hinzufügen.  Diese sind nützlich, um dem Ticket Informationen hinzuzufügen "
+"hinzufügen. Diese sind nützlich, um dem Ticket Informationen hinzuzufügen "
 "oder einen Kollegen zu fragen."
 
 #. type: Title ###
@@ -5744,13 +5520,6 @@ msgstr "Abschluss"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:175
-#, fuzzy
-#| msgid ""
-#| "This was a brief introduction about how to work with Zammad if you are "
-#| "completely new to ticket systems. Knowing the basics of Zammad now, you "
-#| "can either start working or have a look at the [advanced features section]"
-#| "(advanced-features) to become even more productive and use the full "
-#| "potential of Zammad. 🚀"
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
@@ -6153,10 +5922,9 @@ msgstr "Docker"
 
 #. type: Title #
 #: src/en/get-started/installation/docker.md:6
-#, fuzzy, no-wrap
-#| msgid "Update Docker Installation"
+#, no-wrap
 msgid "Docker Installation"
-msgstr "Docker-Installation aktualisieren"
+msgstr "Docker-Installation"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:10
@@ -6699,10 +6467,9 @@ msgstr "Kubernetes"
 
 #. type: Title #
 #: src/en/get-started/installation/kubernetes.md:6
-#, fuzzy, no-wrap
-#| msgid "Installation"
+#, no-wrap
 msgid "Kubernetes Installation"
-msgstr "Installation"
+msgstr "Kubernetes-Installation"
 
 #. type: Plain text
 #: src/en/get-started/installation/kubernetes.md:10
@@ -7802,10 +7569,6 @@ msgstr "Anforderungen an Clients"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:40
-#, fuzzy
-#| msgid ""
-#| "Because Zammad is a web application, only a up-to-date browser is needed. "
-#| "The following browsers are supported:"
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is needed. "
 "The following browsers are supported:"
@@ -8807,21 +8570,14 @@ msgstr "Safe Mode der Rails-Konsole"
 
 #. type: Plain text
 #: src/en/reference/console.md:84
-#, fuzzy
-#| msgid ""
-#| "Normally, starting rails console requires certain [third-party services](/"
-#| "en/get-started/installation/prerequisites#server-software)  to be up and "
-#| "running. You may receive errors and console will refuse to start in case "
-#| "they are not available."
 msgid ""
 "Normally, starting rails console requires certain third-party services to be "
 "up and running. You may receive errors and console will refuse to start in "
 "case they are not available."
 msgstr ""
-"Normalerweise müssen zum Starten der Rails-Konsole bestimmte [Drittanbieter-"
-"Dienste](/de/get-started/installation/prerequisites#server-software) "
-"vorhanden sein und laufen. Sie erhalten möglicherweise Fehlermeldungen und "
-"die Konsole startet nicht, wenn sie nicht verfügbar sind."
+"Normalerweise müssen für den Start der Rails-Konsole bestimmte Dienste von "
+"Drittanbietern verfügbar sein. Sie erhalten möglicherweise Fehlermeldungen "
+"und die Konsole verweigert den Start, wenn sie nicht verfügbar sind."
 
 #. type: Plain text
 #: src/en/reference/console.md:88
@@ -11832,10 +11588,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:18
-#, fuzzy, no-wrap
-#| msgid "Default values are marked with a <Badge type=\"info\" text=\"badge\"/>.\n"
+#, no-wrap
 msgid "Default values are tagged with a <Badge type=\"info\" text=\"badge\"/>, if present.\n"
-msgstr "Standardwerte sind mit einem <Badge type=\"info\" text=\"badge\"/> gekennzeichnet.\n"
+msgstr "Standardwerte sind mit einem <Badge type=\"info\" text=\"badge\"/> gekennzeichnet, sofern vorhanden.\n"
 
 #. type: Title ##
 #: src/en/reference/env-vars.md:19
@@ -11845,13 +11600,7 @@ msgstr "Allgemeine Optionen"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:26
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`GPG_PATH` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Defines the path to the GPG installation. This is only needed if you\n"
-#| "  installed Zammad from Source, if you want to use different versions of\n"
-#| "  PGP on your machine or if your PGP installation differs from the\n"
-#| "  standard installation.\n"
+#, no-wrap
 msgid ""
 "`GPG_PATH`\n"
 ": Defines the path to the GPG installation. This is only needed if you\n"
@@ -11859,7 +11608,7 @@ msgid ""
 "  PGP on your machine or if your PGP installation differs from the\n"
 "  standard installation.\n"
 msgstr ""
-"`GPG_PATH` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`GPG_PATH`\n"
 ": Legt den Pfad zur GPG-Installation fest. Dies wird nur benötigt, wenn Sie\n"
 "  Zammad aus dem Quellcode installiert haben, wenn Sie verschiedene Versionen von\n"
 "  PGP auf Ihrem Rechner verwenden wollen oder wenn Ihre PGP-Installation von der\n"
@@ -11867,17 +11616,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:30
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`RAILS_LOG_TO_STDOUT` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Print output directly to standard output instead of\n"
-#| "  `/var/log/zammad/production.log`.\n"
+#, no-wrap
 msgid ""
 "`RAILS_LOG_TO_STDOUT`\n"
 ": Print output directly to standard output instead of\n"
 "  `/var/log/zammad/production.log`.\n"
 msgstr ""
-"`RAILS_LOG_TO_STDOUT` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`RAILS_LOG_TO_STDOUT`\n"
 ": Ausgabe direkt auf Standard Output anstatt in\n"
 "  `/var/log/zammad/production.log`.\n"
 
@@ -11895,17 +11640,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:38
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_SAFE_MODE` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Ignore availability of third-party services when running Zammad\n"
-#| "  commands. Possible values: `1` or `true`\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_SAFE_MODE`\n"
 ": Ignore availability of third-party services when running Zammad\n"
 "  commands. Possible values: `1` or `true`\n"
 msgstr ""
-"ZAMMAD_SAFE_MODE` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"ZAMMAD_SAFE_MODE`\n"
 ": Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von\n"
 "  Zammad- Befehlen. Mögliche Werte: `1` oder `true`\n"
 
@@ -11927,30 +11668,22 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:50
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_HTTP_TYPE` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
-#| "  `https`\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TYPE`\n"
 ": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
 "  `https`\n"
 msgstr ""
-"`ZAMMAD_HTTP_TYPE` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`ZAMMAD_HTTP_TYPE`\n"
 ": Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder\n"
 "  `https`\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:53
-#, fuzzy
-#| msgid ""
-#| "`ZAMMAD_FQDN` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Defines the fully qualified domain name of the system.\n"
 msgid "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
 msgstr ""
-"`ZAMMAD_FQDN` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
-": Legt den FQDN/Domainnamen des Systems fest.\n"
+"`ZAMMAD_FQDN`\n"
+": Legt den FQDN/Domainnamen des Systems fest."
 
 #. type: Title ##
 #: src/en/reference/env-vars.md:54
@@ -12054,38 +11787,28 @@ msgstr "zammad run rails r \"p Sessions.list.uniq.count\"\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:96
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`WEB_CONCURRENCY` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": How many instances of the application server to keep open at a time.\n"
-#| "  Increasing this can reduce loading times when too many users are on\n"
-#| "  Zammad at once.\n"
+#, no-wrap
 msgid ""
 "`WEB_CONCURRENCY`\n"
 ": How many instances of the application server to keep open at a time.\n"
 "  Increasing this can reduce loading times when too many users are on\n"
 "  Zammad at once.\n"
 msgstr ""
-"`WEB_CONCURRENCY` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`WEB_CONCURRENCY`\n"
 ": Wie viele Instanzen des Anwendungsservers gleichzeitig offen sein sollen.\n"
 "  Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf\n"
 "  Zammad sind.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:101
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": How many instances of the session worker to run at a time. Increasing this\n"
-#| "  can speed up background jobs (like the scheduler) when too many users are on\n"
-#| "  Zammad at once.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
 ": How many instances of the session worker to run at a time. Increasing this\n"
 "  can speed up background jobs (like the scheduler) when too many users are on\n"
 "  Zammad at once.\n"
 msgstr ""
-"`ZAMMAD_SESSION_JOBS_CONCURRENT` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
 ": Legt fest wie viele Instanzen des Sesstion Workers gleichzeitig ausgeführt werden sollen. \n"
 "  Eine Erhöhung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen,\n"
 "  wenn zu viele Benutzer gleichzeitig in Zammad arbeiten.\n"
@@ -12102,19 +11825,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Allows spawning an independent process just for processing scheduled\n"
-#| "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
-#| "  other tasks when running tasks that take fairly long.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Allows spawning an independent process just for processing scheduled\n"
 "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
 "  other tasks when running tasks that take fairly long.\n"
 msgstr ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter\n"
 "  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad für andere\n"
 "  Aufgaben freigeben, falls solche Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
@@ -12137,19 +11855,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:119
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": How many processes should work on delayed jobs? Increasing this _can_\n"
-#| "  improve issues with delayed jobs stacking up in your system. You may want to\n"
-#| "  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": How many processes should work on delayed jobs? Increasing this _can_\n"
 "  improve issues with delayed jobs stacking up in your system. You may want to\n"
 "  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
 msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_\n"
 "  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.\n"
 "  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.\n"
@@ -12186,14 +11899,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:142
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`REDIS_URL` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Store your web socket connection information within Redis.\n"
-#| "  To do so, tell Zammad where to find your Redis instance:\n"
-#| "  `redis://your.redis.server:6379`\n"
-#| "  If not provided, Zammad falls back to file system\n"
-#| "  (`/opt/zammad/tmp/websocket_*`).\n"
+#, no-wrap
 msgid ""
 "`REDIS_URL`\n"
 ": Store your web socket connection information within Redis.\n"
@@ -12202,7 +11908,7 @@ msgid ""
 "  If not provided, Zammad falls back to file system\n"
 "  (`/opt/zammad/tmp/websocket_*`).\n"
 msgstr ""
-"`REDIS_URL` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`REDIS_URL`\n"
 ": Speichern Sie Ihre Web-Socket-Verbindungsinformationen in Redis.\n"
 "  Dazu teilen Sie Zammad mit, wo Ihre Redis-Instanz zu finden ist:\n"
 "  `redis://Ihr.redis.server:6379`\n"
@@ -12211,14 +11917,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:149
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"unset\"/>\n"
-#| ": Store your application cache files within Memcached.\n"
-#| "  To do so, tell Zammad where to find your Memcached instance:\n"
-#| "  `your.memcached.server:11211`\n"
-#| "  If not provided, Zammad falls back to file system\n"
-#| "  (`/opt/zammad/tmp/cache*`).\n"
+#, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS`\n"
 ": Store your application cache files within Memcached.\n"
@@ -12227,7 +11926,7 @@ msgid ""
 "  If not provided, Zammad falls back to file system\n"
 "  (`/opt/zammad/tmp/cache*`).\n"
 msgstr ""
-"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"nicht gesetzt\"/>\n"
+"`MEMCACHE_SERVERS`\n"
 ": Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.\n"
 "  Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:\n"
 "  `Ihr.memcached.server:11211`\n"
@@ -12296,16 +11995,7 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/reference/es-indexed-attributes.md:14
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "- This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly\n"
-#| "  about objects in the admin interface of Zammad. They are out of scope of this documentation.\n"
-#| "- Attributes marked as SLA (<Badge type=\"info\" text=\"SLA\"/>) are only set if the ticket is affected by SLA calculation.\n"
-#| "  Please note that some attributes may not be set if specific conditions are not met.\n"
-#| "- Also note that some attributes may be reset to `null` if no longer applicable.\n"
-#| "- All timestamps provided by Zammad are UTC by default. This also applies to times provided by ES.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "- This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly\n"
@@ -12319,7 +12009,7 @@ msgstr ""
 "\n"
 "- Diese Seite listet Zammads Standardobjektattribute auf, die von ES indiziert werden. Es gibt einige weitere ES-Indizes, hauptsächlich\n"
 "  von Objekten in der Verwaltungsoberfläche von Zammad. Das ist nicht Gegenstand dieser Dokumentation.\n"
-"- Attribute, die mit SLA (<Badge type=\"info\" text=\"SLA\"/>) gekennzeichnet sind, werden nur gesetzt, wenn das Ticket von der SLA-Berechnung betroffen ist.\n"
+"- Attribute, die mit <Badge type=\"info\" text=\"SLA\"/> gekennzeichnet sind, werden nur gesetzt, wenn das Ticket von der SLA-Berechnung betroffen ist.\n"
 "  Bitte beachten Sie, dass einige Attribute möglicherweise nicht gesetzt werden, wenn bestimmte Bedingungen nicht erfüllt sind.\n"
 "- Beachten Sie auch, dass einige Attribute auf `null` zurückgesetzt werden können, wenn sie nicht mehr zutreffen.\n"
 "- Alle von Zammad bereitgestellten Zeitstempel sind standardmäßig UTC. Dies gilt auch für von ES bereitgestellte Zeiten.\n"
@@ -12561,18 +12251,12 @@ msgstr "`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:108
-#, fuzzy
-#| msgid ""
-#| "<!-- markdownlint-disable-next-line MD051 -->\n"
-#| "Depends on [close_in_min](#close_in_min) and tells how many minutes the "
-#| "ticket was closed relative to SLAs solution time.\n"
 msgid ""
 "Depends on `close_in_min` and tells how many minutes the ticket was closed "
 "relative to SLAs solution time."
 msgstr ""
-"<!-- markdownlint-disable-next-line MD051 -->\n"
-"Hängt von [close_in_min](#close_in_min) ab und gibt an, wie viele Minuten "
-"das Ticket relativ zur SLAs-Lösungszeit geschlossen wurde.\n"
+"Hängt von `close_in_min` ab und gibt an, wie viele Minuten das Ticket "
+"relativ zur SLAs-Lösungszeit geschlossen wurde."
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:110
@@ -20016,11 +19700,14 @@ msgstr ""
 "Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser "
 "Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich sein"
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:302
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
-msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
+msgstr ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/knowledgebase.md:1
@@ -23482,18 +23169,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
-
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, no-wrap
@@ -23769,19 +23444,14 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:100
-#, fuzzy
-#| msgid ""
-#| "This section is **not** about **migrating from one host to another**. You "
-#| "can find instructions about this topic in the [next section](migrate-"
-#| "host)."
 msgid ""
 "This section is **not** about **migrating from one host to another**. You "
 "can find instructions about this topic on the [Migrate Zammad page](migrate-"
 "host)."
 msgstr ""
 "In diesem Abschnitt geht es **nicht** um die **Migration von einem Host zu "
-"einem anderen**. Sie finden Anweisungen zu diesem Thema im [nächsten "
-"Abschnitt](#migration-zu-neuem-host)."
+"einem anderen**. Sie finden Informationen zu diesem Thema auf der Seite "
+"[Zammad zu einem neuen Host migrieren](migrate-host)."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/backup-restore.md:100
@@ -24299,18 +23969,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:292
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Check and adjust your\n"
-#| "storage settings [via console](/en/reference/console#storage-provider-setting)\n"
-#| "or in Zammad's admin interface under _Settings > System > Storage_.\n"
+#, no-wrap
 msgid ""
 "Check and adjust your\n"
 "[storage settings via console](/en/reference/console#storage-provider-setting)\n"
 "or in Zammad's admin interface under _Settings > System > Storage_.\n"
 msgstr ""
 "Prüfen und passen Sie Ihre\n"
-"[Einstellung zur Speicherung von Anhängen über die Konsole](/de/reference/console#storage-provider-einstellungen)\n"
+"Einstellung zur Speicherung von Anhängen [über die Konsole](/de/reference/console#storage-provider-einstellungen)\n"
 "oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.\n"
 
 #. type: Title ##
@@ -27545,12 +27211,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:21
-#, fuzzy
-#| msgid ""
-#| "This guide will provide you some steps to get started. For a deeper "
-#| "insight you should consider having a look at the [indexed attributes](/en/"
-#| "reference/es-indexed-attributes) of Elasticsearch and to read the "
-#| "[documentation of Grafana](https://grafana.com/docs/){target=_blank}."
 msgid ""
 "This guide will provide you some steps to get started. For a deeper insight "
 "you should consider having a look at [Elasticsearch's indexed attributes](/"
@@ -27558,8 +27218,8 @@ msgid ""
 "Grafana](https://grafana.com/docs/){target=_blank}."
 msgstr ""
 "Diese Anleitung bietet Ihnen einige Schritte für den Einstieg. Für einen "
-"tieferen Einblick sollten Sie einen Blick auf die [indizierten Attribute](/"
-"de/reference/es-indexed-attributes) von Elasticsearch werfen und die "
+"tieferen Einblick sollten Sie einen Blick auf die von [Elasticsearch "
+"indizierten Attribute](/de/reference/es-indexed-attributes) werfen und die "
 "[Dokumentation von Grafana](https://grafana.com/docs/){target=_blank} lesen."
 
 #. type: Plain text
@@ -27859,12 +27519,7 @@ msgstr "Importieren eines Dashboards"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:149
-#, fuzzy, no-wrap
-#| msgid ""
-#| "In Grafana, select _➕ > Import_ (or any other place which offers you to import\n"
-#| "a dashboard) and either upload the json file you\n"
-#| "downloaded from Github or use the grafana.com ID, provided as badge\n"
-#| "like <Badge type=\"info\" text=\"12345\"/> attached to the next sections titles.\n"
+#, no-wrap
 msgid ""
 "In Grafana, select _➕ > Import_ (or any other place which offers you to import\n"
 "a dashboard) and either upload the json file you\n"
@@ -27874,7 +27529,7 @@ msgstr ""
 "Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import\n"
 "eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie\n"
 "von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge\n"
-"wie <Badge type=\"info\" text=\"12345\"/> den Überschriften der nächsten Abschnitte angehängt ist.\n"
+"wie <Badge type=\"tip\" text=\"12345\"/> den Überschriften der nächsten Abschnitte angehängt ist.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:153
@@ -27890,10 +27545,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:154
-#, fuzzy, no-wrap
-#| msgid "Ticket Statistics Dashboard <Badge type=\"info\" text=\"14222\"/>"
+#, no-wrap
 msgid "Ticket Statistics Dashboard <Badge type=\"tip\" text=\"14222\"/>"
-msgstr "Ticket-Statistik Dashboard <Badge type=\"info\" text=\"14222\"/>"
+msgstr "Ticket-Statistik Dashboard <Badge type=\"tip\" text=\"14222\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:157
@@ -28022,10 +27676,9 @@ msgstr "`ES - Tickets by closed_at`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:186
-#, fuzzy, no-wrap
-#| msgid "Chat-Session Statistics Dashboard <Badge type=\"info\" text=\"14224\"/>"
+#, no-wrap
 msgid "Chat-Session Statistics Dashboard <Badge type=\"tip\" text=\"14224\"/>"
-msgstr "Chat-Sitzungsstatistik Dashboard <Badge type=\"info\" text=\"14224\"/>"
+msgstr "Chat-Sitzungsstatistik Dashboard <Badge type=\"tip\" text=\"14224\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:189
@@ -28091,10 +27744,9 @@ msgstr "`ES - Chat Sessions`"
 
 #. type: Title ###
 #: src/en/tutorials/reporting-grafana.md:210
-#, fuzzy, no-wrap
-#| msgid "CTI-Log Statistics Dashboard <Badge type=\"info\" text=\"14223\"/>"
+#, no-wrap
 msgid "CTI-Log Statistics Dashboard <Badge type=\"tip\" text=\"14223\"/>"
-msgstr "CTI-Log Statistik Dashboard <Badge type=\"info\" text=\"14223\"/>"
+msgstr "CTI-Log Statistik Dashboard <Badge type=\"tip\" text=\"14223\"/>"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:213
@@ -28136,46 +27788,36 @@ msgstr "Abnehmer der Anrufe (eingehend)"
 msgid "`ES - CTI Log`"
 msgstr "`ES - CTI Log`"
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:231
-#, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
-msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
-
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, fuzzy, no-wrap
 #| msgid "    means we can only display the _last_ value of the field in question.\n"
-msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:234
-#, no-wrap
-msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
-msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the _last_ value of the field in question.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigen werden kann.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid "    violations.\n"
-msgstr "    Verletzung.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:237
-#, no-wrap
-msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
-msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+msgid ""
+"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
+msgstr ""
+"[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+"     SLA-Verstöße.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
+"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
-"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
-"    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
@@ -30284,6 +29926,30 @@ msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
 
+#, no-wrap
+#~ msgid "[^1]: Some values are not available as time series information. This"
+#~ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
+
+#, no-wrap
+#~ msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+
+#, no-wrap
+#~ msgid "    violations.\n"
+#~ msgstr "    Verletzung.\n"
+
+#, no-wrap
+#~ msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+#~ msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+
+#, no-wrap
+#~ msgid ""
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
+#~ "    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+
 #~ msgid "No support for bug or security issues is provided."
 #~ msgstr "Keine Unterstützung durch Fehler- oder Sicherheitskorrekturen."
 
@@ -30379,24 +30045,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "Install on Kubernetes"
 #~ msgstr "Installation mit Kubernetes"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid ""
 #~ "The attributes, example values and description below are constructed like "

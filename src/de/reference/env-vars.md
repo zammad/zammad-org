@@ -14,27 +14,27 @@ Bitte beachten Sie, dass die Umgebungsvariablen für
 Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kubernetes unterschiedlich benannt sein können.
 :::
 
-Default values are tagged with a <Badge type="info" text="badge"/>, if present.
+Standardwerte sind mit einem <Badge type="info" text="badge"/> gekennzeichnet, sofern vorhanden.
 
 ## Allgemeine Optionen
 
 `GPG_PATH`
-: Defines the path to the GPG installation. This is only needed if you
-  installed Zammad from Source, if you want to use different versions of
-  PGP on your machine or if your PGP installation differs from the
-  standard installation.
+: Legt den Pfad zur GPG-Installation fest. Dies wird nur benötigt, wenn Sie
+  Zammad aus dem Quellcode installiert haben, wenn Sie verschiedene Versionen von
+  PGP auf Ihrem Rechner verwenden wollen oder wenn Ihre PGP-Installation von der
+  Standard-Installation abweicht.
 
 `RAILS_LOG_TO_STDOUT`
-: Print output directly to standard output instead of
+: Ausgabe direkt auf Standard Output anstatt in
   `/var/log/zammad/production.log`.
 
   Diese Einstellung kann bei der Aktualisierung von Paket-Installationen überschrieben werden.
   Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie
   `true`, um sie dauerhaft einzuschalten.
 
-`ZAMMAD_SAFE_MODE`
-: Ignore availability of third-party services when running Zammad
-  commands. Possible values: `1` or `true`
+ZAMMAD_SAFE_MODE`
+: Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von
+  Zammad- Befehlen. Mögliche Werte: `1` oder `true`
 
   ::: warning
   **Vorsicht** bei der Ausführung von Zammad-Befehlen auf Produktivsystemen im
@@ -45,10 +45,11 @@ Default values are tagged with a <Badge type="info" text="badge"/>, if present.
   :::
 
 `ZAMMAD_HTTP_TYPE`
-: Defines the HTTP protocol of your instance. Possible values: `http` or
+: Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder
   `https`
 
-`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system.
+`ZAMMAD_FQDN`
+: Legt den FQDN/Domainnamen des Systems fest.
 
 ## Netzwerk-Optionen
 
@@ -89,22 +90,22 @@ zammad run rails r "p Sessions.list.uniq.count"
 ```
 
 `WEB_CONCURRENCY`
-: How many instances of the application server to keep open at a time.
-  Increasing this can reduce loading times when too many users are on
-  Zammad at once.
+: Wie viele Instanzen des Anwendungsservers gleichzeitig offen sein sollen.
+  Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf
+  Zammad sind.
 
 `ZAMMAD_SESSION_JOBS_CONCURRENT`
-: How many instances of the session worker to run at a time. Increasing this
-  can speed up background jobs (like the scheduler) when too many users are on
-  Zammad at once.
+: Legt fest wie viele Instanzen des Sesstion Workers gleichzeitig ausgeführt werden sollen. 
+  Eine Erhöhung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen,
+  wenn zu viele Benutzer gleichzeitig in Zammad arbeiten.
 
   Im Allgemeinen ist es nur dann sinnvoll, diese Einstellung zu ändern, wenn
   Sie mehr als 40 aktive Benutzer gleichzeitig haben.
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
-: Allows spawning an independent process just for processing scheduled
-  jobs like LDAP syncs. This can free up Zammad's background worker for
-  other tasks when running tasks that take fairly long.
+: Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter
+  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad für andere
+  Aufgaben freigeben, falls solche Aufgaben ausgeführt werden, die ziemlich lange dauern.
 
   Maximale Anzahl von Workern: `1`
 
@@ -112,9 +113,9 @@ zammad run rails r "p Sessions.list.uniq.count"
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: How many processes should work on delayed jobs? Increasing this _can_
-  improve issues with delayed jobs stacking up in your system. You may want to
-  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
+: Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_
+  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.
+  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.
 
   Maximale Anzahl von Workern: `16`
 
@@ -133,18 +134,18 @@ Inhalt dieser Dokumentation ist.
 :::
 
 `REDIS_URL`
-: Store your web socket connection information within Redis.
-  To do so, tell Zammad where to find your Redis instance:
-  `redis://your.redis.server:6379`
-  If not provided, Zammad falls back to file system
-  (`/opt/zammad/tmp/websocket_*`).
+: Speichern Sie Ihre Web-Socket-Verbindungsinformationen in Redis.
+  Dazu teilen Sie Zammad mit, wo Ihre Redis-Instanz zu finden ist:
+  `redis://Ihr.redis.server:6379`
+  Falls nicht angegeben, greift Zammad auf das Dateisystem zurück
+  (`/opt/zammad/tmp/websocket_*`) zurück.
 
 `MEMCACHE_SERVERS`
-: Store your application cache files within Memcached.
-  To do so, tell Zammad where to find your Memcached instance:
-  `your.memcached.server:11211`
-  If not provided, Zammad falls back to file system
-  (`/opt/zammad/tmp/cache*`).
+: Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.
+  Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:
+  `Ihr.memcached.server:11211`
+  Wenn nicht angegeben, greift Zammad auf das Dateisystem zurück
+  (`/opt/zammad/tmp/cache*`) zurück.
 
   Mit Memcached können Sie die maximale Größe festlegen, die Zammad als
   Cache speichern kann. Dies ist sehr nützlich für die Leistung und um die

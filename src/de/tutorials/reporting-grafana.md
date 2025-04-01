@@ -14,10 +14,10 @@ Grafana ist eine Analyse-/Visualisierungsanwendung eines Drittanbieters, die
 Sie mit Zammad (genauer: Elasticsearch) verbinden können. Sie kann auf den
 Elasticsearch-Index zugreifen und Ihre Zammad-Daten visualisieren.
 
-This guide will provide you some steps to get started. For a deeper insight
-you should consider having a look at [Elasticsearch's indexed
-attributes](/en/reference/es-indexed-attributes) and to read the
-[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
+Diese Anleitung bietet Ihnen einige Schritte für den Einstieg. Für einen
+tieferen Einblick sollten Sie einen Blick auf die von [Elasticsearch
+indizierten Attribute](/de/reference/es-indexed-attributes) werfen und die
+[Dokumentation von Grafana](https://grafana.com/docs/){target=_blank} lesen.
 
 In dieser Dokumentation wird davon ausgegangen, dass alle Anforderungen
 erfüllt sind und funktionieren. Wir werden nicht auf die Kernkonfigurationen
@@ -144,17 +144,17 @@ finden.
 
 ### Importieren eines Dashboards
 
-In Grafana, select _➕ > Import_ (or any other place which offers you to import
-a dashboard) and either upload the json file you
-downloaded from Github or use the grafana.com ID, provided as badge
-like <Badge type="tip" text="12345"/> attached to the next sections titles.
+Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import
+eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
+von Github heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge
+wie <Badge type="tip" text="12345"/> den Überschriften der nächsten Abschnitte angehängt ist.
 
 Während des Imports können Sie einen Dashboard-Namen und einen Ordner
 angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung
 zuzuordnen. Wenn Sie unsere Datenquellennamen oben verwendet haben, können
 Sie einfach nach demselben Namen suchen.
 
-### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
+### Ticket-Statistik Dashboard <Badge type="tip" text="14222"/>
 
 ![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)
 
@@ -186,7 +186,7 @@ Sie einfach nach demselben Namen suchen.
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
+### Chat-Sitzungsstatistik Dashboard <Badge type="tip" text="14224"/>
 
 ![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)
 
@@ -210,7 +210,7 @@ Erstellung von Chatsitzungen.
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
+### CTI-Log Statistik Dashboard <Badge type="tip" text="14223"/>
 
 ![Grafana Call Dashboard](/screenshots/reporting/calls.png)
 

@@ -3,7 +3,7 @@ order: 3
 title: Docker
 ---
 
-# Docker Installation
+# Docker-Installation
 
 Zammad kann mit Docker-Compose installiert werden. Sie können sogar
 grafische Docker-Frontends wie

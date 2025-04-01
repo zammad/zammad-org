@@ -79,9 +79,9 @@ rails c
 
 ### Safe Mode der Rails-Konsole
 
-Normally, starting rails console requires certain third-party services to be
-up and running. You may receive errors and console will refuse to start in
-case they are not available.
+Normalerweise müssen für den Start der Rails-Konsole bestimmte Dienste von
+Drittanbietern verfügbar sein. Sie erhalten möglicherweise Fehlermeldungen
+und die Konsole verweigert den Start, wenn sie nicht verfügbar sind.
 
 Es ist jedoch möglich, die Rails-Konsole im sicheren Modus zu starten, indem
 man eine spezielle Umgebungsvariable setzt. Wenn `ZAMMAD_SAFE_MODE=1`

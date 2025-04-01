@@ -7,18 +7,18 @@ title: Suche
 
 ## Grundlagen
 
-If you search for tickets, user and organizations, you can use the
-search. It is located in the top left corner in the primary navigation
-bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad
-returns all fitting items for which you have at least view or read
-permissions.
+Wenn Sie nach Tickets, Benutzern und Organisationen suchen, können Sie die
+Suche verwenden. Sie befindet sich in der linken oberen Ecke der
+Navigationsleiste. Wählen Sie sie entweder mit der Maus aus oder benutzen
+Sie das Tastaturkürzel [[s]]. Zammad gibt alle passenden Elemente zurück,
+für die Sie mindestens Ansichts- oder Leserechte haben.
 
 ![Screenshot zeigt Suchergebnisse in der
 Navigationsleiste](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
 
-The search covers basically all information which is stored in Zammad and
-which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes),
-like:
+Die Suche deckt grundsätzlich alle Informationen ab, die in Zammad
+gespeichert bzw. von [Elasticsearch
+indiziert](/de/reference/es-indexed-attributes) wurden , wie z.B.:
 
 - Betreff und Text der Nachricht
 - Namen und E-Mail-Adressen
@@ -34,9 +34,10 @@ Sie nicht den Überblick verlieren. Wenn Sie eines dieser Ergebnisse
 auswählen, wird ein neuer Tab mit dem entsprechenden Element geöffnet (falls
 nicht bereits geöffnet).
 
-If you press [[enter]] or click on `detailed search`, Zammad displays a page
-with search results. There you can narrow down your search by selecting a
-specific object type (e.g. customer) in the tab bar below the search bar.
+Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, zeigt Zammad
+eine Seite mit Suchergebnissen an. Dort können Sie Ihre Suche eingrenzen,
+indem Sie in der Tab-Leiste unterhalb der Suchleiste einen bestimmten
+Objekttyp (z.B. Benutzer) auswählen.
 
 ![Screenshot zeigt die Erweiterte
 Suche](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
@@ -54,11 +55,11 @@ suchen können.
 
 ## Zusätzliche Funktionen
 
-You can narrow down your search results to specific attributes, even in the
-search field in the navigation bar. Read on for some examples and
-explanations. For a more detailed list of available attributes, please take
-a look at the [indexed attributes by
-Elasticsearch](/en/reference/es-indexed-attributes).
+Sie können Ihre Suchergebnisse auf bestimmte Attribute eingrenzen, auch im
+Suchfeld in der Navigationsleiste. Lesen Sie weiter für Beispiele und
+Erklärungen.  Eine ausführlichere Liste der verfügbaren Attribute finden Sie
+unter [indizierte
+Elasticsearch-Attribute](/de/reference/es-indexed-attributes).
 
 ### Syntax
 
