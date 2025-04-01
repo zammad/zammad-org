@@ -63,7 +63,7 @@ hier vorgenommen haben, wirksam werden.
 `ZAMMAD_RAILS_PORT` <Badge type="info" text="3000"/>
 : Der Port, auf dem der Webserver erreichbar ist.
 
-ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
+`ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : Der Port, auf dem der Web-Socket-Server betrieben wird.
 
 ## Leistungsoptimierung

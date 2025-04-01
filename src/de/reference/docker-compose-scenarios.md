@@ -8,8 +8,8 @@ title: 'Docker Compose-Szenarien'
 ## Übersicht
 
 Wenn der "vanilla" Zammad Stack Ihren Anwendungsfall nicht abdeckt, können
-Sie eines der vordefinierten Szenarien verwenden. Wir empfehlen nicht, die
-Compose-Dateien lokal zu ändern, da es dann schwierig sein kann, die
+Sie eines der vordefinierten Szenarien verwenden. Wir empfehlen, die
+Compose-Dateien lokal nicht zu ändern, da es dann schwierig sein kann, die
 Upstream-Änderungen des Stacks anzuwenden. Aus diesem Grund sollten Sie
 entweder die Repository-Build-Methode von Portainer verwenden oder das
 Repository klonen und regelmäßig aktualisieren, wenn Sie Docker Compose
@@ -64,7 +64,7 @@ indem Sie zusätzliche Dateien entsprechend dem obigen Beispiel hinzufügen.
 ## Stack über HTTPS erreichbar machen
 
 Wenn Sie Zammad für den produktiven Einsatz einrichten, muss es durch eine
-HTTPS-Verbindung gesichert werden. Es gibt verschiedene Szenarien, um dies
+HTTPS-Verbindung abgesichert werden. Es gibt verschiedene Szenarien, um dies
 zu erreichen:
 
 ### Cloudflare-Tunnel hinzufügen
@@ -84,8 +84,8 @@ Sie einen [Cloudflare](https://www.cloudflare.com/)-Tunnel verwenden.
 
 ### Nginx Proxy Manager hinzufügen
 
-Eine sehr verbreitete Einrichtung zur Veröffentlichung von Webdiensten ist
-die Verwendung eines Reverse Proxy, der die SSL-Terminierung übernimmt. Ein
+Eine sehr verbreitete Variante zur Veröffentlichung von Webdiensten ist die
+Verwendung eines Reverse Proxy, der die SSL-Terminierung übernimmt. Ein
 gängiges Tool ist der Nginx Proxy Manager (NPM), der über die
 Benutzeroberfläche recht einfach konfiguriert werden kann. Wenn Sie noch
 keinen Reverse-Proxy haben, könnte dies ein nützliches Szenario für Sie
@@ -113,7 +113,7 @@ der nicht zum Netzwerk des Zammad-Stacks gehört, darauf zugreifen zu können.
 - Geben Sie den Namen Ihres externen Netzes mit Hilfe der Umgebungsvariablen
   "ZAMMAD_NGINX_EXTERNAL_NETWORK" an
 
-## Externe Dienste nutzen
+## Externe Dienste verwenden
 
 ### Elasticsearch-Dienst deaktivieren
 

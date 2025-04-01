@@ -1,9 +1,9 @@
 ---
 order: 12
-title: 'Zammad auf einen neuen Host migrieren'
+title: 'Zammad zu einem neuen Host migrieren'
 ---
 
-# Zammad auf einen neuen Host migrieren
+# Zammad zu einem neuen Host migrieren
 
 Dies ist nur eine Beschreibung der grundlegenden Schritte zur Durchführung
 einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher
@@ -192,8 +192,8 @@ FQDN-Konfiguration korrekt sind.
 ## Schritt 10: Fehlende Umgebungseinstellungen übernehmen
 
 Wenn Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie
-diese jetzt wieder an.  Sie haben sie in [Schritt
-1](#step-1-note-down-your-environmental-adjustments) gesichert.
+diese jetzt wieder an. Sie haben diese in [Schritt
+1](#step-1-notieren-sie-ihre-umgebungseinstellungen) gesichert.
 
 Falls noch nicht geschehen, [installieren Sie
 Elasticsearch](/de/tutorials/install-elasticsearch) und führen Sie nach der

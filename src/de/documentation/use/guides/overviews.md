@@ -11,7 +11,7 @@ title: Übersichten
 ## Einführung
 
 Übersichten sind eine Kernkomponente von Zammad. Sie können sie öffnen,
-indem Sie auf die Schaltfläche "Übersichten" in der Navigationsleiste
+indem Sie auf die Schaltfläche `Übersichten` in der Navigationsleiste
 klicken oder das Tastaturkürzel [[o]] verwenden. Sie können sich die
 Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen Ordnern
 vorstellen. Verwenden Sie sie, um neue Tickets zu finden, die Sie bearbeiten
@@ -43,15 +43,14 @@ die Breite der Spalten durch Ziehen der Spaltentrennlinien verändern.  Die
 Reihenfolge bleibt nur so lange erhalten, bis Sie zu einer anderen Übersicht
 wechseln oder die Seite neu laden.
 
-Für jede Übersicht finden Sie einen angehängten Marker. Anhand der Zahl in
-diesem Marker können Sie erkennen, wie viele Tickets sich in der jeweiligen
-Übersicht befinden.
+Für jede Übersicht finden Sie einen angehängten Zähler. Anhand dieser Zahl
+können Sie erkennen, wie viele Tickets sich in der jeweiligen Übersicht
+befinden.
 
 Die Ticket-Listen in Übersichten können auch nach einem bestimmten Attribut
 (z.B. Kunde, Organisation, Besitzer) gruppiert werden. Dies muss von Ihrem
 Zammad-Administrator eingestellt werden. Wenn eine Gruppierung aktiviert
-ist, finden Sie dort auch ein Marker mit einem Zähler der enthaltenen
-Tickets.
+ist, finden Sie dort auch einen Zähler der enthaltenen Tickets.
 
 Je nachdem, was Sie suchen, wählen Sie eine passende Übersicht und beginnen
 mit der Bearbeitung eines Tickets.

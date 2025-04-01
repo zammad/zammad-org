@@ -167,7 +167,7 @@ Installationsanweisungen so schlank wie möglich zu halten.
 ### Zammad-Repository hinzufügen
 
 ::: info
-Es kann sein, dass Packager.io von reinen IPv6-Umgebungen aus nicht zugänglich ist, daher sollten Sie
+Es kann sein, dass Packager.io aus reinen IPv6-Umgebungen nicht erreichbar ist, daher sollten Sie
 dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::
 
@@ -312,7 +312,7 @@ sudo chmod -R 755 /opt/zammad/public/
 ### Zammad Services verwalten
 
 Zammad verwendet drei Dienste. Sie können mit dem übergeordneten Dienst
-`zammad` (neu)gestartet und gestoppt werden:
+`zammad` (neu) gestartet und gestoppt werden:
 
 ```sh
 systemctl (status|start|stop|restart) zammad

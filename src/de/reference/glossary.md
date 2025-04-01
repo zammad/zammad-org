@@ -162,7 +162,7 @@ Feature
 Feature-Anfrage
 : Lassen Sie uns wissen, wenn Sie eine bestimmte Funktion in Zammad vermissen.
   Wir sammeln alle Ihre Wünsche in unserem Community-Forum in der
-  [Kategorie "Feature Requests" (https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  [Kategorie "Feature Requests"](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
   Wenn eine Anfrage regelmäßig eingeht und wir denken, dass es eine
   großartige Ergänzung wäre, setzen wir sie auf unsere Roadmap und beginnen mit der Arbeit daran.
 

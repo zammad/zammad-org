@@ -27,19 +27,19 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
   Instanz bereitstellen. Autowizard JSON ist nicht Gegenstand dieser Dokumentation, aber diese
   Beispiel-Datei sollte helfen.
 
-ZAMMAD_WEB_CONCURRENCY`
+`ZAMMAD_WEB_CONCURRENCY`
 : Erlaubt das Erzeugen von `n` Workern, um mehrere gleichzeitige Verbindungen für
   Zammads Web-UI zu ermöglichen.
 
-ZAMMAD_SESSION_JOBS_CONCURRENT`
+`ZAMMAD_SESSION_JOBS_CONCURRENT`
 : Erlaubt das Erzeugen von `n` Session-Workern, um Zammads
   Background-Worker zu entlasten.
 
-ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
+`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
 : Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um
   Zammads Background-Worker zu entlasten.
 
-ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
+`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
 : Erlaubt das Erzeugen von n Workern für verzögerten Aufgaben, um Zammads
   Background-Worker zu entlasten.
 
@@ -112,7 +112,7 @@ Elasticsearch verwenden. Bitte beachten Sie, dass wir dringend davon abraten.
 
 ## Nginx
 
-NGINX_EXPOSE_PORT` <Badge type="info" text="8080"/>
+`NGINX_EXPOSE_PORT` <Badge type="info" text="8080"/>
 : Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern
   Sie diesen Wert auf einen anderen, wenn Sie bereits einen Dienst haben, der auf
   diesem Port lauscht.
@@ -135,8 +135,8 @@ ZAMMAD_RAILSSERVER_HOST` <Badge type="info" text="zammad-railsserver"/>
 `ZAMMAD_RAILSSERVER_PORT` <Badge type="info" text="3000"/>
 : Port von Zammads Rails-Server.
 
-ZAMMAD_WEBSOCKET_HOST` <Badge type="info" text="zammad-websocket"/>
+`ZAMMAD_WEBSOCKET_HOST` <Badge type="info" text="zammad-websocket"/>
 : Hostname von Zammads Websocket-Server.
 
-ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
+`ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : Port des Websocket-Servers von Zammad.

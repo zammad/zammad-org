@@ -29,7 +29,7 @@ ticket attributes and how to use them.
 ## Fortgeschrittener Benutzer
 
 Wenn Sie bereits mit den Grundlagen von Zammad vertraut sind, sollten Sie
-einen Blick auf die Seite [Erweiterte Features](advanced-features) werfen.
+einen Blick auf die Seite [Erweiterte Funktionen](advanced-features) werfen.
 
 Wenn Sie nicht finden können, was Sie suchen, versuchen Sie es mit der Suche
 im Header der Website.

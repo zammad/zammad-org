@@ -263,7 +263,7 @@ Erforderliche Berechtigung: `admin.object`
 ::: warning
 Nach der Durchführung von Datenbankmigrationen ist ein Neustart von Zammad
 _zwingend erforderlich_. Wenn nicht per
-[Auto-Shutdown-Einstellung](/de/reference/console#auto-shutdown-einstellung),
+[Auto-Shutdown-Einstellung](/de/reference/console#auto-shutdown-einstellungen),
 deaktiviert, startet Zammad automatisch neu - rechnen Sie mit einer kurzen Ausfallzeit.
 :::
 

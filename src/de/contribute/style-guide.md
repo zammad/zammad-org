@@ -21,8 +21,8 @@ fragen, um loszulegen.
 
 Die Dokumentation geht davon aus, dass **Benutzer** ein grundlegendes
 Verständnis für die Verwendung von Webbrowsern und gängige
-Software-Design-Konzepte haben. Das bedeutet zum Beispiel, dass Funktionen
-detailliert beschrieben werden, aber nicht auf der Ebene, wie man ein
+Software-Design-Konzepte haben. Das bedeutet, dass Funktionen detailliert
+beschrieben werden, aber zum Beispiel nicht auf der Ebene, wie man ein
 Dropdown-Feld öffnet.
 
 Der **Zammad-Administrator** sollte zudem über ein technisches
@@ -78,14 +78,14 @@ documentation. After these you can find a section with some
 - Verwenden Sie kurze und klare Sätze und fokussieren Sie sich auf
   Informationen statt auf Komplexität.
 - Seitentitel und Überschriften: Großschreibung des ersten Buchstabens aller
-  Wörter mit Ausnahme von Artikeln usw., siehe (Title Case auf
-  Wikipedia](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+  Wörter mit Ausnahme von Artikeln usw., siehe [Title Case auf
+  Wikipedia](https://en.wikipedia.org/wiki/Title_case){target=_blank}.
 - Verwenden Sie eine Breadcrumb-Trennung für Pfade und Orte mit `>` als
   Trennzeichen und formatieren Sie den Pfad kursiv, z.B. _Einstellungen >
   Kanäle > Chat_.
 - Verwenden Sie die Codehervorhebung für Code-Snippets und Befehle.
 - Verwenden Sie bei Bedarf [Info-, Tip-, Warning- und
-  Danger-Kästen](#custom-boxes).
+  Danger-Boxen](#spezial-boxen).
 - Verwenden Sie einen [Detail-Kasten](#custom-boxes), wenn der Inhalt nicht
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
@@ -186,7 +186,7 @@ Text/Titel, dem ein Badge hinzugefügt werden soll <Badge type="warning" text="f
 
 :::
 
-#### Anpassbare Boxen
+#### Spezial-Boxen
 
 ::::: info
 Dies ist eine Infobox.
@@ -249,7 +249,7 @@ Dies ist ein Detailblock.
 
 Verwendung:
 
-``md
+```md
 
 ::: details Box title shown in collapsed state
 Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.

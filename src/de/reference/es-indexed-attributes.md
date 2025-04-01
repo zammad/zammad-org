@@ -77,7 +77,7 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
 ### `article`
 
 Array mit allen zum Ticket gehörenden Artikeln. Siehe Abschnitt
-[Artikel](#article-1) für weitere Details.
+[Artikel](#artikel-1) für weitere Details.
 
 ::: details Example
 
@@ -170,7 +170,7 @@ Beispiel: `"2025-02-24T16:17:27.210Z"`
 ### `created_by`
 
 Angaben zu dem Benutzer, der das Ticket erstellt hat. Weitere Informationen
-finden Sie im Abschnitt [Benutzer](#user).
+finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 
@@ -187,7 +187,7 @@ Beispiel: `3`
 ### `customer`
 
 Angaben zum Kunden des Tickets. Weitere Informationen finden Sie im
-Abschnitt [Benutzer](#user).
+Abschnitt [Benutzer](#benutzer).
 
 ### `customer_id`
 
@@ -225,7 +225,7 @@ Beispiele: `null`, `11`
 ### `group`
 
 Details zur Gruppe des Tickets. Weitere Informationen finden Sie im
-Abschnitt [Gruppe](#group-1).
+Abschnitt [Gruppe](#gruppe-1).
 
 ::: details Example
 
@@ -292,7 +292,7 @@ Beispiele: `1010138`, `202006231010138`
 ### `organization`
 
 Details der Organisation des Kunden des Tickets. Weitere Informationen
-finden Sie im Abschnitt [Organisation](#organization-2).
+finden Sie im Abschnitt [Organisation](#organisation-2).
 
 ::: details Example
 
@@ -309,7 +309,7 @@ Beispiele: `null`, `2`
 ### `owner`
 
 Details zum Benutzer, der Besitzer des Tickets ist. Weitere Informationen
-finden Sie im Abschnitt [Benutzer](#user).
+finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 
@@ -424,7 +424,7 @@ Beispiel: `"2025-02-24T16:28:38.303Z"`
 ### `updated_by`
 
 Details des Benutzers, der das Ticket aktualisiert hat. Weitere
-Informationen finden Sie im Abschnitt [Benutzer](#user).
+Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 
@@ -1027,7 +1027,7 @@ Beispiel: `1`
 ### `members`
 
 Array mit Details zu jedem Benutzer, der Mitglied der Organisation
-ist. Weitere Informationen finden Sie im Abschnitt [Benutzer](#user).
+ist. Weitere Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 
@@ -1062,7 +1062,7 @@ Beispiel: `"2025-02-22T12:47:54.807Z"`
 ### `updated_by`
 
 Angaben zu dem Benutzer, der die Organisation aktualisiert hat. Weitere
-Informationen finden Sie im Abschnitt [Benutzer](#user).
+Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details Example
 

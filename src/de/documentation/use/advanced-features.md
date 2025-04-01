@@ -21,7 +21,7 @@ automatisch zu schließen. Es hängt von Ihren Präferenzen ab, aber Sie können
 sich einen Klick nach der Aktualisierung oder der Aktualisierung auf den
 Status _geschlossen_ sparen.
 
-**Wie? **
+**Wie?**
 
 Klicken Sie in der Fußleiste der Ticket-Detailansicht auf die Schaltfläche
 `Tab beibehalten` und wählen Sie die gewünschte Option aus (falls die
@@ -56,7 +56,7 @@ Die Verwendung von Textbausteinen hat Vorteile wie:
 - Die Antworten von Ihnen und Ihren Kollegen sind aufeinander abgestimmt, da
   Sie denselben Text für die Antworten verwenden
 
-**Wie? **
+**Wie?**
 
 Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein,
 gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins.
@@ -81,7 +81,7 @@ Bitten Sie Ihre Kollegen um Informationen oder erwähnen Sie sie in wichtigen
 Tickets, damit sie Benachrichtigungen über Ticket-Aktualisierungen erhalten
 und dieses Ticket abonnieren.
 
-**Wie? **
+**Wie?**
 
 While writing a ticket article, simply type `@@` and enter some letters of
 the name of the colleague you want to mention.
@@ -101,7 +101,7 @@ If you are interested in the progress of a ticket, you are not the owner,
 you can subscribe to it. This means you will receive notifications for each
 update.
 
-**Wie? **
+**Wie?**
 
 Aktivieren Sie den Schalter "Abonnieren" im seitlichen Bereich des Tickets,
 um Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt wurden,
@@ -124,7 +124,7 @@ anwenden können. Zammad liefert zum Beispiel standardmäßig ein Makro
 Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag `spam`
 wird hinzugefügt und das Ticket wird geschlossen.
 
-**Wie? **
+**Wie?**
 
 Wenn Ihr Administrator bereits ein Makro erstellt hat, können Sie es in der
 Ticket-Detailansicht ausführen, indem Sie auf die Schaltfläche mit den drei
@@ -152,7 +152,7 @@ automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.
 Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets,
 die mit dem Tag versehen sind.
 
-**Wie? **
+**Wie?**
 
 In the ticket sidebar, you can find a section which is labels as
 **Tags**. Add a tag by clicking on the `+` button. You can select existing
@@ -174,7 +174,7 @@ Checklisten-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/tic
 - Um sicherzustellen, dass nichts vergessen wird
 - Um den Fortschritt der Arbeiten besser sichtbar machen
 
-**Wie? **
+**Wie?**
 
 Select the **Checklist** tab in the sidebar. If you can't see it, your
 Zammad admin disabled it. You can only add or edit a checklist, if you have
@@ -226,11 +226,11 @@ Erstellen Sie schnell ein Ticket mit vordefinierten Attributen wie Titel,
 Text, Tags und mehr und sparen Sie Zeit. Dafür muss Ihr Administrator
 bereits eine Ticket-Vorlage erstellt haben.
 
-**Wie? **
+**Wie?**
 
 In der Ansicht zum Erstellen eines Tickets finden Sie in der Fußleiste eine
-Schaltfläche "Vorlage anwenden", wenn eine Vorlage verfügbar ist. Wählen Sie
-die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
+Schaltfläche `Vorlage anwenden ^`, wenn eine Vorlage verfügbar ist. Wählen
+Sie die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
 Änderungen vor.
 
 ## Gemeinsame Entwürfe
@@ -238,15 +238,15 @@ die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
 **Warum?**
 
 Um einen Entwurf mit anderen Agenten Ihrer Gruppe zu teilen, z.B. um einem
-Qualitätssicherungsprozess zu entsprechen, anstatt "nur" einen internen
-Artikel hinzuzufügen. In einen solchen Entwurf können Sie sogar geänderte
+Qualitätssicherungsprozess zu folgen, anstatt "nur" einen internen Artikel
+hinzuzufügen. In einen solchen Entwurf können Sie sogar geänderte
 Ticket-Attribute wie Priorität, Status und benutzerdefinierte Attribute
 sowie einen Artikel mit einer Antwort an den Kunden aufnehmen.
 
 Dies ist eine optionale Funktion. Wenn Sie sie nicht sehen können, hat Ihr
 Administrator sie ausgeschaltet.
 
-**Wie? **
+**Wie?**
 
 Zum **Speichern eines Entwurfs** verwenden Sie das `︙` Menü in der Fußzeile
 der Ticket-Detailansicht und wählen "Als Entwurf speichern".
@@ -274,7 +274,7 @@ Dinge, die man vermeiden sollte:
 Deshalb können Sie sofort sehen, wer das aktuell angezeigte Ticket ansieht
 und bearbeitet.
 
-**Wie? **
+**Wie?**
 
 Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des
 Tickets. Wenn dort ein Avatar eines anderen Agenten zu sehen ist (siehe
@@ -301,7 +301,7 @@ Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyou
 Wenn Sie die gleichen Änderungen für viele Tickets vornehmen müssen, können
 Sie Zeit sparen!
 
-**Wie? **
+**Wie?**
 
 Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:
 
@@ -349,7 +349,7 @@ Beim Zusammenfassen von Tickets werden alle Nachrichten und Notizen des
 Tickets, von dem Sie das Zusammenfassen ausgewählt haben, in das ausgewählte
 Ticket übernommen.
 
-**Wie? **
+**Wie?**
 
 Gehen Sie zu dem Ticket, das Sie mit einem anderen zusammenführen
 möchten. Wählen Sie in der Seitenleiste des Tickets im `︙` Menü
@@ -378,7 +378,7 @@ Sie es vielleicht in zwei oder mehr separate Tickets aufteilen. Dies kann
 zum Beispiel der Fall sein, wenn ein Kunde eine technische Frage hat und
 eine Bestellung aufgeben möchte.
 
-**Wie? **
+**Wie?**
 
 Um einen Artikel abzuspalten, benutzen Sie das Menü `︙` an dem Artikel und
 wählen Sie `Abspalten`.
@@ -400,7 +400,7 @@ When tickets about related issues arise, they can be linked to each other
 for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets)
 tickets are automatically linked.
 
-**Wie? **
+**Wie?**
 
 Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
 hinzu, indem Sie auf die Schaltfläche `+` im Abschnitt "Links"
@@ -424,7 +424,7 @@ erfassten Zeiten im Ticket wird es automatisch Kunden und Organisationen
 zugeordnet. Dies kann in Ihrer Firma für die Rechnungsstellung oder zur
 Verfolgung von Support-Kontingenten verwendet werden.
 
-**Wie? **
+**Wie?**
 
 Nach der Aktualisierung eines Tickets wird ein Dialog zur Zeiterfassung
 angezeigt. Geben Sie ein, wie viel Zeit Sie für diese Bearbeitung des
@@ -448,11 +448,10 @@ Tätigkeiten und zur Gruppierung der erfassten Zeiten verwendet werden. Wenn
 diese optionale Funktion aktiviert ist, wird eine Liste von Aktivitäten
 angezeigt, aus der Sie im Erfassungsdialog auswählen können.
 
-Wenn ein Ticket bereits abgerechnete Zeit(en) hat, können Sie diese in der
-Ticket Detailansicht in der rechten Seitenleiste unten sehen. Hier finden
-Sie die berechneten Summen der einzelnen Aktivitäts-Typen (sofern
-konfiguriert) sowie die Gesamtsumme der erfassten Zeiten über alle
-Aktivitäts-Typen.
+Wenn ein Ticket bereits erfasste Zeiten hat, sehen Sie diese in der Ticket
+Detailansicht in der rechten Seitenleiste unten. Hier finden Sie die
+berechneten Summen der einzelnen Aktivitäts-Typen (sofern konfiguriert),
+sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 
 ![Screenshot zeigt eine Übersicht über erfasste
 Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)

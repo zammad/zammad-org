@@ -33,7 +33,7 @@ jeweiligen Installationsanweisungen enthalten:
 
 - [Docker](docker)
 - [Kubernetes](kubernetes)
-- [Packet](package)
+- [Paket](package)
 
 ## Anforderungen an Clients
 

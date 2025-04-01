@@ -38,7 +38,7 @@ auf Github hat mehrere Branches.
 
 - Dies ist der aktuelle (unveröffentlichte) Entwicklungsstand der nächsten
   Hauptversion (dieser wird zum neuen `stable`-Branch).
-- Verwenden Sie das nicht für den Produktiv-Betrieb!
+- Verwenden Sie diesen nicht für den Produktiv-Betrieb!
 - This branch is actively supported and receives regular bug fixes as well
   as security updates (see [Security
   Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
@@ -57,7 +57,7 @@ auf Github hat mehrere Branches.
 
 - Dies sind Branches von alten Versionen von Zammad wie `stable-5.1` für
   Zammad 5.1.
-- Verwenden Sie das nicht für den Produktiv-Betrieb!
+- Verwenden Sie diesen nicht für den Produktiv-Betrieb!
 - Bug fixes and security updates are not applied to these branches.
 
 ## Dokumentation

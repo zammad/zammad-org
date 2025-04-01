@@ -30,9 +30,9 @@ nutzen oder [per Konsole löschen](/de/reference/console#daten-loschen).
 Sobald eine Chatsitzung als **geschlossen** markiert wurde, wird sie 12
 Monate später automatisch gelöscht.
 
-IP-Adressen aus Chatsitzungen können manuell gelöscht werden, indem Sie die
-Schritte im [Abschnitt Chat](/de/reference/console#remove-ip-address-logs)
-per Konsole ausführen.
+IP-Adressen aus Chatsitzungen können manuell über die Konsole gelöscht
+werden. Befolgen Sie dazu die [Schritte im Abschnitt
+Chat](/de/reference/console#protokolle-der-ip-adressen-entfernen).
 
 ### CTI-Anruferprotokoll
 

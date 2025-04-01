@@ -57,7 +57,7 @@ Informationen an:
 In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von
 Docker-Compose haben möchte. Sie können den Stack mit vordefinierten
 Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt
-[anpassen des Stacks](#anpassen-des-zammad-stacks) unten für weitere
+[Anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere
 Informationen.
 
 ![Stack-Erstellung mit Informationen aus der
@@ -91,7 +91,7 @@ herunterladen.
 In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von
 Docker-Compose haben möchte. Sie können den Stack mit vordefinierten
 Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt
-[anpassen des Stacks](#anpassen-des-zammad-stacks) unten für weitere
+[anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere
 Informationen.
 
 ### Schritt 3: Starten des Stacks

@@ -300,7 +300,7 @@ das von Zammad gespeicherte Passwort.
 User.find_by(email: 'you@example.com').update!(password: nil)
 ```
 
-## Gruppeen Befehle
+## Gruppen Befehle
 
 ### Eine Gruppe finden
 
@@ -853,7 +853,7 @@ ergeben.
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
 ```
 
-## Löschen von Datensätzen
+## Daten löschen
 
 :::danger
 ☠️ Die hier aufgeführten Befehle führen zu **nicht wiederherstellbarem Datenverlust**! Nur
