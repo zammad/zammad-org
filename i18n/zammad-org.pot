@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-03-31 14:41+0000\n"
+"POT-Creation-Date: 2025-04-17 16:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1317,6 +1317,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
+#: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
 #: src/en/documentation/use/start-using-zammad.md:120
@@ -2087,7 +2088,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:245
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/manage-profile.md:123
+#: src/en/documentation/use/manage-profile.md:127
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -2724,6 +2725,117 @@ msgid ""
 "Zammad? Then head over to the [manage "
 "Zammad](/en/documentation/manage-zammad/general) section, have a look at the "
 "tutorials and reference and use the search."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/guides/ai.md:1
+#: src/en/documentation/use/guides/ai.md:6
+#, markdown-text, no-wrap
+msgid "Zammad AI"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:12
+#, markdown-text
+msgid ""
+"Zammad is getting even smarter! We are expanding Zammad's AI capabilities to "
+"help you manage support tickets even more efficiently. The initial focus is "
+"on ticket summaries, but more features will arrive soon! ✨🚀"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/ai.md:13
+#, no-wrap
+msgid ""
+"The AI features have to be configured and activated by your "
+"administrator. If you can't see it, it is not configured.\n"
+"More information about how to configure and activate it can be found in the "
+"admin section.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:18
+#, markdown-text, no-wrap
+msgid "Ticket Summary"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:22
+#, markdown-text
+msgid ""
+"The ticket summary feature does what it says: it summarizes the ticket's "
+"content. This can be a huge time saver when dealing with large tickets "
+"and/or many hand-overs between agents."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:26
+#, markdown-text
+msgid ""
+"If the feature is activated, a banner is shown below the articles in the "
+"ticket detail view. By clicking the `See Summary` button, the **Summary** "
+"sidebar tab is opened and you can read the summary. The summary is created "
+"when you open a ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:28
+#, markdown-text
+msgid ""
+"![Screenshot shows Zammad's ticket detail view with highlighted ticket "
+"summary banner and summary "
+"sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:30
+#, markdown-text
+msgid ""
+"Depending on the configuration of your Zammad instance, the summary includes "
+"the following sections:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
+#, markdown-text
+msgid "Customer intent"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
+#, markdown-text
+msgid "Conversation summary"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
+#, markdown-text
+msgid "Open questions (optional)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
+#, markdown-text
+msgid "Suggested next steps (optional)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:38
+#, markdown-text
+msgid ""
+"If suggested next steps and the checklist feature are activated, you can "
+"even add single items or all the suggested next steps to a "
+"[checklist](../advanced-features#checklists) to keep track of the open tasks "
+"in this ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:40
+#, markdown-text
+msgid ""
+"If you don't want to see the banner below the articles, you can permanently "
+"hide it. To get the banner again, go to **Appearance** in your [profile "
+"settings](../manage-profile) and re-activate it by toggling the checkbox."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -4143,26 +4255,36 @@ msgid ""
 "simply pressing [[d]].\n"
 msgstr ""
 
-#. type: Title ###
-#: src/en/documentation/use/manage-profile.md:50
-#, markdown-text, no-wrap
-msgid "Language"
-msgstr ""
-
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:53
 #, markdown-text
-msgid "Choose your preferred language of Zammad."
+msgid ""
+"Additionally, you can activate or deactivate if the banner for Zammad's "
+"ticket summary AI feature is shown below the articles in the ticket detail "
+"view. This option is only available, if the feature is configured by your "
+"admin."
 msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:54
 #, markdown-text, no-wrap
+msgid "Language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:57
+#, markdown-text
+msgid "Choose your preferred language of Zammad."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/manage-profile.md:58
+#, markdown-text, no-wrap
 msgid "Avatar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:59
+#: src/en/documentation/use/manage-profile.md:63
 #, markdown-text
 msgid ""
 "In this section, you can adjust your avatar image. By default, the initials "
@@ -4171,7 +4293,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:62
+#: src/en/documentation/use/manage-profile.md:66
 #, markdown-text
 msgid ""
 "After capturing or uploading an image, you can crop it. Have a look at the "
@@ -4179,13 +4301,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:63
+#: src/en/documentation/use/manage-profile.md:67
 #, markdown-text, no-wrap
 msgid "Out of Office"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:67
+#: src/en/documentation/use/manage-profile.md:71
 #, markdown-text
 msgid ""
 "Define absence periods (e.g. for your vacation), and designate a substitute "
@@ -4193,7 +4315,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:72
+#: src/en/documentation/use/manage-profile.md:76
 #, markdown-text
 msgid ""
 "Your designated substitute will receive updates on new tickets and changes "
@@ -4203,13 +4325,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:73
+#: src/en/documentation/use/manage-profile.md:77
 #, markdown-text, no-wrap
 msgid "Password"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:77
+#: src/en/documentation/use/manage-profile.md:81
 #, markdown-text
 msgid ""
 "Change the password of your account. Update it by entering your old "
@@ -4217,13 +4339,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:78
+#: src/en/documentation/use/manage-profile.md:82
 #, markdown-text, no-wrap
 msgid "Two-factor Authentication"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:83
+#: src/en/documentation/use/manage-profile.md:87
 #, markdown-text
 msgid ""
 "Set up a two-factor authentication (2FA) to increase the security of your "
@@ -4232,7 +4354,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:87
+#: src/en/documentation/use/manage-profile.md:91
 #, markdown-text
 msgid ""
 "After following the [2FA guide](./guides/two-factor-auth), you have to "
@@ -4241,13 +4363,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:88
+#: src/en/documentation/use/manage-profile.md:92
 #, markdown-text, no-wrap
 msgid "Devices"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:93
+#: src/en/documentation/use/manage-profile.md:97
 #, markdown-text
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account.  If "
@@ -4256,13 +4378,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:94
+#: src/en/documentation/use/manage-profile.md:98
 #, markdown-text, no-wrap
 msgid "Token Access"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:99
+#: src/en/documentation/use/manage-profile.md:103
 #, markdown-text
 msgid ""
 "Generate a personal access token for a third party application to access the "
@@ -4271,7 +4393,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:104
 #: src/en/documentation/use/start-using-zammad.md:68
 #: src/en/documentation/use/start-using-zammad.md:105
 #, markdown-text, no-wrap
@@ -4279,13 +4401,13 @@ msgid "Notifications"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:103
+#: src/en/documentation/use/manage-profile.md:107
 #, markdown-text
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:114
 #, markdown-text
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
@@ -4293,7 +4415,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:114
 #, markdown-text
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
@@ -4301,25 +4423,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:114
 #, markdown-text
 msgid "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:114
 #, markdown-text
 msgid "For tickets in which group you get notified"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:112
+#: src/en/documentation/use/manage-profile.md:116
 #, markdown-text
 msgid "Additionally, you can select a notification sound or disable the sound."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/manage-profile.md:113
+#: src/en/documentation/use/manage-profile.md:117
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you "
@@ -4336,7 +4458,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:127
+#: src/en/documentation/use/manage-profile.md:131
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -4344,7 +4466,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:130
+#: src/en/documentation/use/manage-profile.md:134
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
@@ -4352,7 +4474,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/manage-profile.md:131
+#: src/en/documentation/use/manage-profile.md:135
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -4360,7 +4482,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:135
+#: src/en/documentation/use/manage-profile.md:139
 #, markdown-text
 msgid ""
 "Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
@@ -4368,7 +4490,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:138
+#: src/en/documentation/use/manage-profile.md:142
 #, markdown-text
 msgid ""
 "Use either the upper \"Combined subscription URL\" to subscribe to all "
@@ -17453,9 +17575,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -23922,27 +24044,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

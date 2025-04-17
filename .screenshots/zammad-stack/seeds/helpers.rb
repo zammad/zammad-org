@@ -19,4 +19,11 @@ module SeedHelpers
     Avatar.set_default('User', user.id, avatar.id)
     user.update(image: avatar.store_hash)
   end
+
+  def self.set_setting_without_validation(name:, value:)
+    setting = Setting.find_by(name:)
+    setting.state_current = { 'value' => value }
+    setting.save!(validate: false)
+    Rails.logger.info("Setting.set('#{name}', #{value}")
+  end
 end

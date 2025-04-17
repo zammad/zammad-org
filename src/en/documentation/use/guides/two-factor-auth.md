@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 9
 title: Two-Factor Authentication
 ---
 

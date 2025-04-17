@@ -54,6 +54,11 @@ die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastatur
 einfach [[d]] drücken.
 :::
 
+Additionally, you can activate or deactivate if the banner for Zammad's
+ticket summary AI feature is shown below the articles in the ticket detail
+view. This option is only available, if the feature is configured by your
+admin.
+
 ### Sprache
 
 Wählen Sie Ihre bevorzugte Sprache für Zammad.

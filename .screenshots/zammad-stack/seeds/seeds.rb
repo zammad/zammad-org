@@ -583,6 +583,10 @@ Cti::Log.create(
   created_at:   Time.zone.now,
 )
 
+SeedHelpers.set_setting_without_validation(name: 'ai_provider', value: 'zammad_ai')
+SeedHelpers.set_setting_without_validation(name: 'ai_provider_config', value: { 'token' => 'foobar' }) # just a fake token to trigger the feature
+Setting.set('ai_assistance_ticket_summary', true)
+
 # Disable import mode at the end of the seeding process so users can create new tickets.
 Setting.set('import_mode', false)
 
