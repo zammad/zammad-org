@@ -42,6 +42,17 @@ export default defineConfig(
           .use(definitionListMarkdownPlugin)
           .use(footnote)
           .use(kbd)
+
+        // Remove the sub ID from the footnote caption in case of multiple source references.
+        //   https://github.com/markdown-it/markdown-it-footnote/blob/master/index.mjs#L17
+        //   https://github.com/zammad/zammad-org/issues/37
+        md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf */) => {
+          let n = Number(tokens[idx].meta.id + 1).toString()
+
+          // if (tokens[idx].meta.subId > 0) n += `:${tokens[idx].meta.subId}`
+
+          return `[${n}]`
+        }
       },
     },
     locales: {
