@@ -1,8 +1,6 @@
-name: CI
-
 on:
   pull_request:
-  # TODO: Drop
+  # TODO: Drop after testing, but before merging.
   push:
 
 jobs:
@@ -27,13 +25,10 @@ jobs:
         path: zammad-docker-compose
     - run: .screenshots/zammad-stack/start.sh
     - run: |
-        .screenshots/zammad-stack/screenshots.sh || true # TODO drop this, first run always fails?
         .screenshots/zammad-stack/screenshots.sh
         test -d src/public/screenshots/cypress # check that screenshots were copied from the container
     - run: .screenshots/zammad-stack/stop.sh
-    - id: sha
-      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     - uses: actions/upload-artifact@v4
       with:
-        name: screenshots-${{ steps.sha.outputs.sha_short }}
+        name: screenshots
         path: src/public/screenshots/cypress
