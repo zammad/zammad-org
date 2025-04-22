@@ -20,8 +20,10 @@ jobs:
       CI_JOB_ID: ${{github.job}}
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
       with:
         repository: zammad/zammad-docker-compose
+        path: zammad-docker-compose
     - run: .screenshots/zammad-stack/start.sh
     - run: |
         .screenshots/zammad-stack/screenshots.sh || true # TODO drop this, first run always fails?
