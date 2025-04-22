@@ -43,12 +43,12 @@ cat - > .env <<ENV_FILE
 VERSION=${ZAMMAD_VERSION}
 ENV_FILE
 
-docker compose pull --policy always
-
 if [ -n "$CI" ]
 then
+  docker compose pull --policy always --quiet-pull
   docker compose up -d --quiet-pull
 else
+  docker compose pull --policy always
   docker compose up -d
 fi
 
