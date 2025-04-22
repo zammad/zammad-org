@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  pull_request:
+  # TODO: Drop
+  push:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: DavidAnson/markdownlint-cli2-action@v9
+      with:
+        globs: src/en/**/*.md
