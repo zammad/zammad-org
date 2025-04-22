@@ -45,7 +45,7 @@ ENV_FILE
 
 if [ -n "$CI" ]
 then
-  docker compose pull --policy always --quiet-pull
+  docker compose pull --policy always --quiet
   docker compose up -d --quiet-pull
 else
   docker compose pull --policy always
