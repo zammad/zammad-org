@@ -9,6 +9,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - uses: DavidAnson/markdownlint-cli2-action@v9
       with:
         globs: src/en/**/*.md
