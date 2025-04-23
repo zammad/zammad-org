@@ -1,7 +1,8 @@
 on:
   pull_request:
-  # TODO: Drop after testing, but before merging.
-  push:
+  schedule:
+    # Run every Friday to ensure everything works as expected.
+    - cron:  '0 6 * * 5'
 
 jobs:
   lint:
