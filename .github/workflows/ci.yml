@@ -47,6 +47,7 @@ jobs:
       with:
         name: screenshots-${{ needs.screenshots.outputs.sha_short }}
         path: src/public/screenshots/cypress
+    - uses: pnpm/action-setup@v4
     - run: |
         pnpm install
         pnpm build
