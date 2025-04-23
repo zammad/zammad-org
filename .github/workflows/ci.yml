@@ -21,30 +21,20 @@ jobs:
       sha_short: ${{ steps.sha.outputs.sha_short }}
       screenshots-artifact-url: ${{ steps.screenshots-artifact.outputs.artifact-url }}
     steps:
-    - id: sha
-      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-    - id: check-artifact
-      uses: softwareforgood/check-artifact-v4-existence@v0
-      with:
-        name: screenshots-${{ steps.sha.outputs.sha_short }}
-    - if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      uses: actions/checkout@v4
-    - if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
       with:
         repository: zammad/zammad-docker-compose
         path: zammad-docker-compose
-    - if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      run: .screenshots/zammad-stack/start.sh
-    - if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      run: |
+    - run: .screenshots/zammad-stack/start.sh
+    - run: |
         .screenshots/zammad-stack/screenshots.sh
         test -d src/public/screenshots/cypress # check that screenshots were copied from the container
-    - if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      run: .screenshots/zammad-stack/stop.sh
-    - id: screenshots-artifact
-      if: ${{ steps.check-artifact.outputs.exists == 'false' }}
-      uses: actions/upload-artifact@v4
+    - run: .screenshots/zammad-stack/stop.sh
+    - id: sha
+      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+    - uses: actions/upload-artifact@v4
+      id: screenshots-artifact
       with:
         name: screenshots-${{ steps.sha.outputs.sha_short }}
         path: src/public/screenshots/cypress
@@ -61,8 +51,8 @@ jobs:
     - run: |
         pnpm install
         pnpm build
-    - id: build-artifact
-      uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v4
+      id: build-artifact
       with:
         name: build-${{ needs.screenshots.outputs.sha_short }}
         path: dist

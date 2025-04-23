@@ -46,11 +46,11 @@ ENV_FILE
 if [ -n "$CI" ]
 then
   docker compose pull --policy always --quiet
+  docker compose up -d --quiet-pull
 else
   docker compose pull --policy always
+  docker compose up -d
 fi
-
-docker compose up -d
 
 # Mounts won't work since we're already in a container and not on the host, so use 'docker compose cp'.
 docker compose exec zammad-nginx mkdir -p /opt/zammad/zammad-org
