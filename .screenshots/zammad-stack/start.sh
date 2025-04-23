@@ -43,8 +43,14 @@ cat - > .env <<ENV_FILE
 VERSION=${ZAMMAD_VERSION}
 ENV_FILE
 
-docker compose pull --policy always
-docker compose  up -d
+if [ -n "$CI" ]
+then
+  docker compose pull --policy always --quiet
+else
+  docker compose pull --policy always
+fi
+
+docker compose up -d
 
 # Mounts won't work since we're already in a container and not on the host, so use 'docker compose cp'.
 docker compose exec zammad-nginx mkdir -p /opt/zammad/zammad-org
@@ -54,8 +60,8 @@ docker compose exec -u root zammad-nginx sh -c "rm -rf /opt/zammad/zammad-org/.s
 if [ -n "$CI" ]
 then
   # Install Node & cypress dependencies
-  docker compose exec -u root zammad-nginx sh -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -q -y nodejs && npm -g install yarn pnpm"
-  docker compose exec -u root zammad-nginx sh -c "apt-get install -q -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb"
+  docker compose exec -u root -e CI=true zammad-nginx sh -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get -q -y install nodejs && npm -g install yarn pnpm"
+  docker compose exec -u root -e CI=true zammad-nginx sh -c "apt-get -q -y install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb"
 fi
 
 # Wait for the application to be initialized.
@@ -71,4 +77,4 @@ docker compose exec zammad-nginx /docker-entrypoint.sh bundle exec rails r /opt/
 docker compose restart zammad-nginx zammad-railsserver zammad-websocket zammad-scheduler
 
 # Confirm Zammad is running.
-docker compose exec zammad-nginx curl --retry 30 --retry-delay 1 --retry-connrefused  -s localhost:8080 | grep "Fast Lane"
+docker compose exec zammad-nginx curl --retry 30 --retry-delay 1 --retry-connrefused -s localhost:8080 | grep "Fast Lane"
