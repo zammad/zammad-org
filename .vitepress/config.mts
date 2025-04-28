@@ -83,6 +83,7 @@ export default defineConfig(
         light: '/assets/logo-flat-light.svg',
         dark: '/assets/logo-flat-dark.svg',
       },
+      externalLinkIcon: true,
       lastUpdated: {
         formatOptions: {
           dateStyle: 'short',
