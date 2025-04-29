@@ -60,7 +60,7 @@ looks like.
 - Отворите нови тикет
 - Reply in an already existing ticket
 - Modify ticket attributes
-- Modify customer attributes
+- Измените атрибуте клијента
 - Modify organization attributes
 
 ## Ограничења

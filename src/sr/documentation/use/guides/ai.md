@@ -16,7 +16,7 @@ The AI features have to be configured and activated by your administrator. If yo
 More information about how to configure and activate it can be found in the admin section.
 :::
 
-## Ticket Summary
+## Сажети опис тикета
 
 The ticket summary feature does what it says: it summarizes the ticket's
 content. This can be a huge time saver when dealing with large tickets
@@ -31,13 +31,13 @@ when you open a ticket.
 summary banner and summary
 sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
-Depending on the configuration of your Zammad instance, the summary includes
-the following sections:
+У зависности од ваше Zammad конфигурације, сажети опис може садржати следеће
+одељке:
 
-- Customer intent
-- Conversation summary
-- Open questions (optional)
-- Suggested next steps (optional)
+- Намера клијента
+- Сажети опис конверзације
+- Отворена питања (опционо)
+- Предложени следећи кораци (опционо)
 
 If suggested next steps and the checklist feature are activated, you can
 even add single items or all the suggested next steps to a

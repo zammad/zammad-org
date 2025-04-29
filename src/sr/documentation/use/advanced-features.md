@@ -5,7 +5,7 @@ title: 'Напредне функције'
 
 # Напредне функције
 
-## Keyboard Shortcuts
+## Пречице на тастатури
 
 TODO
 
@@ -40,7 +40,7 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 [[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
-## Text Modules
+## Текстуални исечци
 
 ![Screenshot shows text modules
 feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)

@@ -17,7 +17,7 @@ Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
 allgemeine Erklärungen und Tipps.
 
 Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich
-Bereich _Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.
+_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.
 Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.
 
 ## Zammad Anfänger

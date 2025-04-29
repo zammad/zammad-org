@@ -77,7 +77,7 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
 ### `article`
 
 Array mit allen zum Ticket gehörenden Artikeln. Siehe Abschnitt
-[Artikel](#artikel-1) für weitere Details.
+[Artikel](#artikel) für weitere Details.
 
 ::: details Example
 
@@ -225,7 +225,7 @@ Beispiele: `null`, `11`
 ### `group`
 
 Details zur Gruppe des Tickets. Weitere Informationen finden Sie im
-Abschnitt [Gruppe](#gruppe-1).
+Abschnitt [Gruppe](#gruppe).
 
 ::: details Example
 
@@ -292,7 +292,7 @@ Beispiele: `1010138`, `202006231010138`
 ### `organization`
 
 Details der Organisation des Kunden des Tickets. Weitere Informationen
-finden Sie im Abschnitt [Organisation](#organisation-2).
+finden Sie im Abschnitt [Organisation](#organisation).
 
 ::: details Example
 
@@ -858,7 +858,7 @@ Beispiele: `""`, `"Ein Text."`
 ### `organization`
 
 Details zur Organisation, in welcher der Benutzer Mitglied ist. Weitere
-Informationen finden Sie im Abschnitt [Organisation](#organisation-2).
+Informationen finden Sie im Abschnitt [Organisation](#organisation).
 
 ::: details Example
 

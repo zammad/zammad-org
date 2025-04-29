@@ -57,7 +57,7 @@ suchen können.
 
 Sie können Ihre Suchergebnisse auf bestimmte Attribute eingrenzen, auch im
 Suchfeld in der Navigationsleiste. Lesen Sie weiter für Beispiele und
-Erklärungen.  Eine ausführlichere Liste der verfügbaren Attribute finden Sie
+Erklärungen. Eine ausführlichere Liste der verfügbaren Attribute finden Sie
 unter [indizierte
 Elasticsearch-Attribute](/de/reference/es-indexed-attributes).
 

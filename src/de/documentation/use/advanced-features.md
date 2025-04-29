@@ -365,7 +365,7 @@ Als Ergebnis werden die Artikel in das gewählte Ticket verschoben. Das
 Ticket, in dem Sie die Zusammenfassung durchgeführt haben, existiert
 weiterhin mit den folgenden Änderungen:
 
-- Die Artikel wurden durch ein `merged` Label ersetzt
+- Die Artikel wurden mit dem Text "zusammengefasst" ersetzt
 - Der Status hat sich auf "zusammengefasst" geändert
 - Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
 

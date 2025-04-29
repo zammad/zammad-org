@@ -74,10 +74,11 @@ click on **Set Up**. Go on either by setting up another 2FA method
 
 ### Безбедносни кључ
 
-The security keys method is a type of a two-factor authentication that uses
-Web Authentication API in the browser for verifying your identity. You may
-register multiple hardware or software security keys with your Zammad
-account and then they can be used during the sign-in process.
+Метод безбедносних кључева је врста двофакторске аутентификације која
+користи Web Authentication API претраживача за верификацију вашег
+идентитета. Можете да региструјете више хардверских или софтверских
+безбедносних кључева са својим Zammad налогом, а затим их можете користити
+током процеса пријављивања.
 
 Initially, you will be presented with an empty side panel instructing you to
 **Set Up** your first key.
@@ -150,11 +151,11 @@ You can use a single recovery code only once! In case you exhaust the list of yo
 you regenerate them for your account.
 :::
 
-## Generate Recovery Codes
+## Генерисање шифри за опоравак
 
-Recovery codes are one-time use security codes that can be used to sign in
-if you lose access to your other two-factor authentication methods. They can
-only be used as a **backup method**.
+Шифре за опоравак су једнократни безбедносни кодови који се могу користити
+за пријављивање ако изгубите приступ другим методама двофакторске
+аутентификације. Могуће их је користити само као **резервни метод**.
 
 Ако је администратор омогућио ову функцију, шифре за опоравак ће бити
 аутоматски генерисане за вас током постављања вашег почетног метода

@@ -1,49 +1,53 @@
 ---
 order: 3
-title: 'Zammad AI'
+title: 'Zammad KI'
 ---
 
-# Zammad AI
+# Zammad KI
 
 ## Einführung
 
-Zammad is getting even smarter! We are expanding Zammad's AI capabilities to
-help you manage support tickets even more efficiently. The initial focus is
-on ticket summaries, but more features will arrive soon! ✨🚀
+Zammad wird jetzt noch intelligenter! Wir erweitern die KI-Fähigkeiten von
+Zammad, damit Sie Support-Tickets noch effizienter verwalten können. Der
+Schwerpunkt liegt zunächst auf Ticket-Zusammenfassungen, aber weitere
+Funktionen werden bald hinzukommen! ✨🚀
 
 ::: info
-The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.
-More information about how to configure and activate it can be found in the admin section.
+Die KI-Funktionen müssen von Ihrem Administrator konfiguriert und aktiviert werden. Wenn Sie sie nicht sehen können, sind sie nicht konfiguriert.
+Weitere Informationen über die Konfiguration und Aktivierung finden Sie im Admin-Bereich.
 :::
 
-## Ticket Summary
+## Ticket Zusammenfassung
 
-The ticket summary feature does what it says: it summarizes the ticket's
-content. This can be a huge time saver when dealing with large tickets
-and/or many hand-overs between agents.
+Die Ticket-Zusammenfassung tut, was der Name sagt: Sie fasst den Inhalt des
+Tickets zusammen. Dies kann bei großen Tickets und/oder vielen Wechseln
+zwischen Agenten eine enorme Zeitersparnis bedeuten.
 
-If the feature is activated, a banner is shown below the articles in the
-ticket detail view. By clicking the `See Summary` button, the **Summary**
-sidebar tab is opened and you can read the summary. The summary is created
-when you open a ticket.
+Wenn die Funktion aktiviert ist, wird in der Ticket Detailansicht ein Banner
+unter den Artikeln angezeigt. Wenn Sie auf die Schaltfläche `Zusammenfassung
+ansehen` klicken, wird der Seitenleisten-Tab **Zusammenfassung** geöffnet
+und Sie können die Zusammenfassung lesen. Die Zusammenfassung wird erstellt,
+wenn Sie ein Ticket öffnen.
 
-![Screenshot shows Zammad's ticket detail view with highlighted ticket
-summary banner and summary
-sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
+für die Ticket-Zusammenfassung und der
+Zusammenfassungs-Seitenleiste](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
-Depending on the configuration of your Zammad instance, the summary includes
-the following sections:
+Abhängig von der Konfiguration Ihrer Zammad-Instanz enthält die
+Zusammenfassung die folgenden Abschnitte:
 
-- Customer intent
-- Conversation summary
-- Open questions (optional)
-- Suggested next steps (optional)
+- Anliegen des Kunden
+- Zusammenfassung der Konversation
+- Offene Fragen (optional)
+- Vorgeschlagene nächste Schritte (optional)
 
-If suggested next steps and the checklist feature are activated, you can
-even add single items or all the suggested next steps to a
-[checklist](../advanced-features#checklists) to keep track of the open tasks
-in this ticket.
+Wenn die vorgeschlagenen nächsten Schritte und die Checklistenfunktion
+aktiviert sind, können Sie sogar einzelne Elemente oder alle vorgeschlagenen
+nächsten Schritte zu einer [Checkliste](../advanced-features#checklists)
+hinzufügen, um den Überblick über die offenen Aufgaben in diesem Ticket zu
+behalten.
 
-If you don't want to see the banner below the articles, you can permanently
-hide it. To get the banner again, go to **Appearance** in your [profile
-settings](../manage-profile) and re-activate it by toggling the checkbox.
+Wenn Sie das Banner unter den Artikeln nicht sehen möchten, können Sie es
+dauerhaft ausblenden. Um das Banner wieder zu sehen, gehen Sie zu
+**Aussehen** in Ihren [Profileinstellungen](../manage-profile) und
+aktivieren Sie es wieder, indem Sie das Kontrollkästchen anklicken.

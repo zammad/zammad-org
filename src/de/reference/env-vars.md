@@ -48,8 +48,7 @@ ZAMMAD_SAFE_MODE`
 : Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder
   `https`
 
-`ZAMMAD_FQDN`
-: Legt den FQDN/Domainnamen des Systems fest.
+`ZAMMAD_FQDN`: Legt den FQDN/Domainnamen des Systems fest.
 
 ## Netzwerk-Optionen
 

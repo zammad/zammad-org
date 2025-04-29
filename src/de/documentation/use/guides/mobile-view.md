@@ -66,7 +66,7 @@ Zammad auch unterwegs zu erledigen:
 
 ## Einschränkungen
 
-Der Mobilansicht fehlen aktuell Features, die in der Desktop-Oberfläche
+Der mobilen Ansicht fehlen aktuell Features, die in der Desktop-Oberfläche
 vorhanden sind:
 
 - Zeiterfassung
@@ -76,8 +76,8 @@ vorhanden sind:
 - Ticket-Historie
 - Erstellung von Vorlagen und gemeinsamen Entwürfen
 
-Außerdem wurden bestimmte Merkmale absichtlich weggelassen, um den Fokus auf
-wichtige Informationen zu verbessern:
+Außerdem wurden bestimmte Features weggelassen, um Ihren Fokus auf die
+wichtigsten Informationen zu richten:
 
 - Die meisten Verwaltungs-Funktionen (außer Benutzer- und
   Organisations-Verwaltung)
