@@ -90,6 +90,8 @@ strukturieren können.
   Danger-Boxen](#spezial-boxen).
 - Verwenden Sie einen [Detail-Kasten](#custom-boxes), wenn der Inhalt nicht
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
+- If available, use icons for important UI buttons like ::+:: and ::x:: (see
+  [examples](#text-and-ui) below).
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
   von Zammad hinzuzufügen, ist, sie automatisch [mit
   Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}
@@ -148,12 +150,16 @@ aufgeführt.
 
 #### Text und UI
 
-| Typ                    | Hervorhebung in Dokumentation     | Markdown Syntax                     |
-|------------------------|-----------------------------------|-------------------------------------|
-| Buttons                | `Sign in`                         | \`Sign in\`                         |
-| Felder und UI-Elemente | **Name**                          | \*\*Name\*\*                        |
-| Orte/Pfade             | _Einstellungen > Kanäle > Email_  | \_Einstellungen > Kanäle > Email\_  |
-| Tastaturkürzel         | [[x]]                             | \[\[x\]\]                           |
+| Type                      | Highlighting in documentation | Markdown syntax                 |
+|-------------------------- |-------------------------------|---------------------------------|
+| Labeled buttons           | `Sign in`                     | \`Sign in\`                     |
+| Fields and UI elements    | **Name**                      | \*\*Name\*\*                    |
+| Locations/paths           | _Settings > Channels > Email_ | \_Settings > Channels > Email\_ |
+| Keyboard shortcuts        | [[x]]                         | \[\[x\]\]                       |
+| Add button                | ::+::                         | \:\:\+\:\:                      |
+| Delete button             | ::x::                         | \:\:x\:\:                       |
+| Action menu               | ::a::                         | \:\:a\:\:                       |
+
 
 #### Struktur der Überschrift
 
@@ -279,3 +285,4 @@ Erster Begriff <Badge type="info" text="tag1" />
 ```
 
 :::
+

@@ -153,7 +153,7 @@ die mit dem Tag versehen sind.
 
 **Wie?**
 
-In the ticket sidebar, you can find a section which is labels as
+In the ticket sidebar, you can find a section which is labeled as
 **Tags**. Add a tag by clicking on the ::+:: button. You can select existing
 tags and add new ones (if your admin didn't disable to add new tags).
 

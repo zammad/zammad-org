@@ -84,6 +84,8 @@ documentation. After these you can find a section with some
   упозорењима](#прилагођени-оквири) по потреби.
 - Користите [одељак са детаљима](#прилагођени-оквири) када садржај можда
   није релевантан за све читаоце и има потенцијал да прекине ток мисли).
+- If available, use icons for important UI buttons like ::+:: and ::x:: (see
+  [examples](#text-and-ui) below).
 - Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
   Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress
   апликације](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
@@ -138,10 +140,14 @@ documentation. After these you can find a section with some
 
 | Type                      | Highlighting in documentation | Markdown syntax                 |
 |-------------------------- |-------------------------------|---------------------------------|
-| Buttons                   | `Sign in`                     | \`Sign in\`                     |
+| Labeled buttons           | `Sign in`                     | \`Sign in\`                     |
 | Fields and UI elements    | **Name**                      | \*\*Name\*\*                    |
 | Locations/paths           | _Settings > Channels > Email_ | \_Settings > Channels > Email\_ |
 | Keyboard shortcuts        | [[x]]                         | \[\[x\]\]                       |
+| Add button                | ::+::                         | \:\:\+\:\:                      |
+| Delete button             | ::x::                         | \:\:x\:\:                       |
+| Action menu               | ::a::                         | \:\:a\:\:                       |
+
 
 #### Структура наслова
 
@@ -265,3 +271,4 @@ This is the content shown in the expanded state.
 ```
 
 :::
+

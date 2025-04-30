@@ -123,7 +123,7 @@ Of course you can search for the text of the tags and will find tickets which ha
 
 **How?**
 
-In the ticket sidebar, you can find a section which is labels as **Tags**. Add a tag by clicking on the ::+:: button. You
+In the ticket sidebar, you can find a section which is labeled as **Tags**. Add a tag by clicking on the ::+:: button. You
 can select existing tags and add new ones (if your admin didn't disable to add new tags).
 
 Remove them by simply click on the ::x:: button. Be aware that there is no confirmation dialog for deleting a tag from
