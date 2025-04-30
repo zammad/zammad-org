@@ -103,7 +103,7 @@ ticket is closed.
 **How?**
 
 If your admin already created a macro, you can execute it in the ticket detail view by clicking the three dots button
-`︙` in the right corner of the footer bar and select the macro you want to execute.
+::a:: in the right corner of the footer bar and select the macro you want to execute.
 
 ::: warning
 The macro gets executed immediately and without an additional confirmation!
@@ -123,10 +123,10 @@ Of course you can search for the text of the tags and will find tickets which ha
 
 **How?**
 
-In the ticket sidebar, you can find a section which is labels as **Tags**. Add a tag by clicking on the `+` button. You
+In the ticket sidebar, you can find a section which is labels as **Tags**. Add a tag by clicking on the ::+:: button. You
 can select existing tags and add new ones (if your admin didn't disable to add new tags).
 
-Remove them by simply click on the `X` button. Be aware that there is no confirmation dialog for deleting a tag from
+Remove them by simply click on the ::x:: button. Be aware that there is no confirmation dialog for deleting a tag from
 a ticket.
 
 ## Checklists
@@ -150,11 +150,11 @@ In the checklist sidebar, you can:
 - Add a checklist: either by creating a new one by clicking on `Add Empty Checklist` or from a template by using
   `Add From a Template` (if you don't see the template button, there is none).
 - Edit the current checklist:
-  - Rename it by clicking on the title or using the `︙` menu in the sidebar header.
-  - Add checklist items by clicking the `+` button.
-  - Change the text of the checklist items, either by just clicking on it or using the `︙` menu next to the item.
+  - Rename it by clicking on the title or using the ::a:: menu in the sidebar header.
+  - Add checklist items by clicking the ::+:: button.
+  - Change the text of the checklist items, either by just clicking on it or using the ::a:: menu next to the item.
   - `Reorder` the items by clicking this button and drag & drop the items.
-- Delete the complete checklist by using the `︙` menu in the sidebar header.
+- Delete the complete checklist by using the ::a:: menu in the sidebar header.
 
 There are two features, which are not directly visible:
 
@@ -193,7 +193,7 @@ This is an optional feature. If you can't see it, your admin has turned it off.
 
 **How?**
 
-To **save a draft**, use the `︙` menu in the footer of the ticket details view and select "Save as draft".
+To **save a draft**, use the ::a:: menu in the footer of the ticket details view and select "Save as draft".
 
 To **apply an already existing draft**, click on the `Draft Available` button on the left side of the footer.
 
@@ -274,7 +274,7 @@ Merging a ticket migrates all messages and notes of the ticket from where you se
 
 **How?**
 
-Go to the ticket you want to merge into another one. In the ticket sidebar, use the `︙` menu and select `Merge`. This
+Go to the ticket you want to merge into another one. In the ticket sidebar, use the ::a:: menu and select `Merge`. This
 opens a side panel in which you can select a ticket by clicking on it or enter a ticket number in search field.
 When you selected a target ticket, confirm by using the `Merge` button at the bottom.
 
@@ -296,7 +296,7 @@ For example this might be the case if a customer has a technical question and wa
 
 **How?**
 
-To split an article off, use the `︙` menu next to an article and select `Split`.
+To split an article off, use the ::a:: menu next to an article and select `Split`.
 
 This results in a ticket create screen with the same attributes set as in the initial ticket. The content of the
 article is also included. You can change everything to your needs and then click on `Create`.
@@ -313,7 +313,7 @@ When tickets about related issues arise, they can be linked to each other for ea
 
 **How?**
 
-In the ticket sidebar, add a link to another ticket by clicking the `+` button in the "Links" section. This opens a
+In the ticket sidebar, add a link to another ticket by clicking the ::+:: button in the "Links" section. This opens a
 side panel in which you can select a ticket by clicking on it or enter a ticket number in search field. Additionally,
 you can choose between different link types:
 

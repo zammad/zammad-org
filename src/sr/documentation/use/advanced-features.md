@@ -122,9 +122,9 @@ notified of updates.
 
 **Како?**
 
-Уколико је ваш администратор већ додао макро, можете га извршити у детаљном
-приказу тикета кликом на дугме са три тачкице `︙` у доњем десном углу и
-одабиром макроа из листе.
+If your admin already created a macro, you can execute it in the ticket
+detail view by clicking the three dots button ::a:: in the right corner of
+the footer bar and select the macro you want to execute.
 
 ::: warning
 Макро ће бити моментално извршен без додатне потврде!
@@ -149,11 +149,11 @@ notified of updates.
 **Како?**
 
 In the ticket sidebar, you can find a section which is labels as
-**Tags**. Add a tag by clicking on the `+` button. You can select existing
+**Tags**. Add a tag by clicking on the ::+:: button. You can select existing
 tags and add new ones (if your admin didn't disable to add new tags).
 
-Уклоните их једноставним кликом на дугме `X`. Обратите пажњу да неће бити
-потврдног дијалога за брисање ознаке са тикета.
+Remove them by simply click on the ::x:: button. Be aware that there is no
+confirmation dialog for deleting a tag from a ticket.
 
 ## Checklists
 
@@ -179,15 +179,15 @@ the permission to edit the ticket.
   списак` или на основу шаблона коришћењем `Додај по шаблону` (уколико не
   видите дугме за шаблон, не постоје).
 - Уређивање постојећег списка:
-  - Промените назив кликом на наслов или коришћењем падајућег менија `︙` у
-    заглављу траке.
-  - Додајте задатке на списак кликом на дугме `+` .
-  - Промените текст задатка, или кликом на њега или коришћењем падајућег
-    менија `︙` поред ставке.
+  - Rename it by clicking on the title or using the ::a:: menu in the
+    sidebar header.
+  - Add checklist items by clicking the ::+:: button.
+  - Change the text of the checklist items, either by just clicking on it or
+    using the ::a:: menu next to the item.
   - Кликом на дугме `Измени редослед` можете превући и пустити ставке за
     жељени распоред.
-- Обришите комплетан списак задатака коришћењем падајућег менија `︙` у
-  заглављу траке.
+- Delete the complete checklist by using the ::a:: menu in the sidebar
+  header.
 
 Постоје две функције које нису директно видљиве:
 
@@ -233,8 +233,8 @@ QA процес, уместо додавања интерног чланка. У
 
 **Како?**
 
-Да бисте **сачували нацрт**, користите падајући мени `︙` у подножју прегледа
-тикета и одаберите „Сачувај нацрт”.
+To **save a draft**, use the ::a:: menu in the footer of the ticket details
+view and select "Save as draft".
 
 Да би сте **применили постојећи нацрт**, кликните на дугме `Доступан нацрт`
 на левој страни подножја.
@@ -329,10 +329,11 @@ The available changes you can apply to tickets are:
 
 **Како?**
 
-Идите на тикет који желите да спојите са другим. У траци тикета, одаберите
-`Споји` у падајућем менију `︙`. Ово ће отворити бочну траку у којој можете
-одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.
-Када одаберете циљни тикет, потврдите дугметом `Споји` при дну.
+Go to the ticket you want to merge into another one. In the ticket sidebar,
+use the ::a:: menu and select `Merge`. This opens a side panel in which you
+can select a ticket by clicking on it or enter a ticket number in search
+field.  When you selected a target ticket, confirm by using the `Merge`
+button at the bottom.
 
 На крају, чланци ће бити пребачени у одабрани тикет. Тикет на коме сте
 извршили радњу спајања и даље постоји са следећим изменама:
@@ -354,8 +355,8 @@ case if a customer has a technical question and wants to place an order.
 
 **Како?**
 
-За радељивање чланка, одаберите `Раздели` из падајућег менија `︙` поред
-чланка.
+To split an article off, use the ::a:: menu next to an article and select
+`Split`.
 
 Ово ће резултовати у екрану отварања тикета са попуњеним атрибутима из
 оригиналног тикета. Садржај чланка ће такође бити убачен. Можете прилагодити
@@ -374,10 +375,10 @@ tickets are automatically linked.
 
 **Како?**
 
-У траци тикета, додајте везу на други тикет кликом на дугме `+` у одељку
-`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом
-на исти или уносом броја тикета у поље за претрагу. Додатно, можете изабрати
-између различитих типова веза:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the "Links" section. This opens a side panel in which you can
+select a ticket by clicking on it or enter a ticket number in search
+field. Additionally, you can choose between different link types:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други

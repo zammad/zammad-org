@@ -5,6 +5,7 @@ import { withSidebar } from 'vitepress-sidebar'
 import definitionListMarkdownPlugin from 'markdown-it-deflist'
 import footnote from 'markdown-it-footnote'
 import kbd from 'markdown-it-kbd'
+import { icon } from '@mdit/plugin-icon'
 import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
@@ -42,6 +43,35 @@ export default defineConfig(
           .use(definitionListMarkdownPlugin)
           .use(footnote)
           .use(kbd)
+          .use(icon, {
+            render: (rawIcon) => {
+              let className
+              let content
+              let ariaLabel
+
+              switch (rawIcon.toLowerCase()) {
+                case '+':
+                  className = 'add-button'
+                  content = '＋'
+                  ariaLabel = '+'
+                  break;
+                case 'a':
+                  className = 'action-menu'
+                  content = '︙'
+                  ariaLabel = '︙'
+                  break;
+                case 'x':
+                  className = 'remove-button'
+                  content = '✕'
+                  ariaLabel = 'X'
+                  break;
+                default:
+                  className = content = ariaLabel = rawIcon
+              }
+
+              return `<span class="${className}" aria-label="${ariaLabel}">${content}</span>`
+            },
+          })
 
         // Remove the sub ID from the footnote caption in case of multiple source references.
         //   https://github.com/markdown-it/markdown-it-footnote/blob/master/index.mjs#L17
@@ -49,7 +79,9 @@ export default defineConfig(
         md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf */) => {
           let n = Number(tokens[idx].meta.id + 1).toString()
 
+          /* zammad-org:START */
           // if (tokens[idx].meta.subId > 0) n += `:${tokens[idx].meta.subId}`
+          /* zammad-org:END */
 
           return `[${n}]`
         }

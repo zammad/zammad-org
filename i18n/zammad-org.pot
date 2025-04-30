@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-04-29 12:41+0000\n"
+"POT-Creation-Date: 2025-04-30 08:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,18 +203,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1690,8 +1678,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
-"detail view by clicking the three dots button `︙` in the right corner of the "
-"footer bar and select the macro you want to execute."
+"detail view by clicking the three dots button ::a:: in the right corner of "
+"the footer bar and select the macro you want to execute."
 msgstr ""
 
 #. type: Fenced div block (warning)
@@ -1741,7 +1729,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "In the ticket sidebar, you can find a section which is labels as "
-"**Tags**. Add a tag by clicking on the `+` button. You can select existing "
+"**Tags**. Add a tag by clicking on the ::+:: button. You can select existing "
 "tags and add new ones (if your admin didn't disable to add new tags)."
 msgstr ""
 
@@ -1749,7 +1737,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:131
 #, markdown-text
 msgid ""
-"Remove them by simply click on the `X` button. Be aware that there is no "
+"Remove them by simply click on the ::x:: button. Be aware that there is no "
 "confirmation dialog for deleting a tag from a ticket."
 msgstr ""
 
@@ -1826,14 +1814,14 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:158
 #, markdown-text
 msgid ""
-"Rename it by clicking on the title or using the `︙` menu in the sidebar "
+"Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
 msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/advanced-features.md:158
 #, markdown-text
-msgid "Add checklist items by clicking the `+` button."
+msgid "Add checklist items by clicking the ::+:: button."
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -1841,7 +1829,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
-"using the `︙` menu next to the item."
+"using the ::a:: menu next to the item."
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -1853,7 +1841,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:158
 #, markdown-text
-msgid "Delete the complete checklist by using the `︙` menu in the sidebar header."
+msgid "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
 
 #. type: Plain text
@@ -1947,7 +1935,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:197
 #, markdown-text
 msgid ""
-"To **save a draft**, use the `︙` menu in the footer of the ticket details "
+"To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
 msgstr ""
 
@@ -2206,7 +2194,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
-"use the `︙` menu and select `Merge`. This opens a side panel in which you "
+"use the ::a:: menu and select `Merge`. This opens a side panel in which you "
 "can select a ticket by clicking on it or enter a ticket number in search "
 "field.  When you selected a target ticket, confirm by using the `Merge` "
 "button at the bottom."
@@ -2265,7 +2253,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:300
 #, markdown-text
 msgid ""
-"To split an article off, use the `︙` menu next to an article and select "
+"To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
 msgstr ""
 
@@ -2305,7 +2293,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:319
 #, markdown-text
 msgid ""
-"In the ticket sidebar, add a link to another ticket by clicking the `+` "
+"In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
 "select a ticket by clicking on it or enter a ticket number in search "
 "field. Additionally, you can choose between different link types:"
@@ -2458,7 +2446,7 @@ msgid ""
 "that a colleague re-opened it. If you can't\n"
 "see an article which fits to the description, you can take a look at the "
 "ticket history to find out more. Do so by\n"
-"opening the `︙` menu in the ticket sidebar tab and select **History**.\n"
+"opening the ::a:: menu in the ticket sidebar tab and select **History**.\n"
 "\n"
 "Your Zammad admin can adjust what should happen when a customer replies "
 "after a ticket got closed.\n"
@@ -17575,9 +17563,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -20326,6 +20314,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -24044,27 +24044,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

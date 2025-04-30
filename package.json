@@ -1,6 +1,7 @@
 {
   "private": "true",
   "devDependencies": {
+    "@mdit/plugin-icon": "^0.16.5",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "markdown-it-deflist": "^3.0.0",
@@ -34,5 +35,8 @@
   },
   "lint-staged": {
     "./src/en/**/*.md": "pnpm lint:cmd"
+  },
+  "dependencies": {
+    "cypress": "^13.17.0"
   }
 }

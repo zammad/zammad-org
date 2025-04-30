@@ -643,3 +643,36 @@
 .VPDoc.has-aside .content-container {
   max-width: unset !important;
 }
+
+.vp-doc {
+  .add-button {
+    color: var(--vp-c-white);
+    background-color: #23a2cd;
+    border-radius: 4px;
+    padding: 1.25px 3px;
+
+    .dark & {
+      color: var(--vp-c-black);
+    }
+  }
+
+  .action-menu {
+    color: var(--vp-c-neutral);
+    background-color: var(--vp-c-gray-1);
+    border-radius: 6px;
+    padding: 1.5px 3px;
+    font-weight: 600;
+    font-family: var(--vp-font-family-mono);
+  }
+
+  .remove-button {
+    color: var(--vp-c-white);
+    background-color: #e9613a;
+    border-radius: 6px;
+    padding: 1.25px 4.9px;
+
+    .dark & {
+      background-color: #86270c;
+    }
+  }
+}

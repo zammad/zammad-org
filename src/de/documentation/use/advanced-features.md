@@ -126,10 +126,9 @@ wird hinzugefügt und das Ticket wird geschlossen.
 
 **Wie?**
 
-Wenn Ihr Administrator bereits ein Makro erstellt hat, können Sie es in der
-Ticket-Detailansicht ausführen, indem Sie auf die Schaltfläche mit den drei
-Punkten `︙` in der rechten Ecke der Fußleiste klicken und das auszuführende
-Makro auswählen.
+If your admin already created a macro, you can execute it in the ticket
+detail view by clicking the three dots button ::a:: in the right corner of
+the footer bar and select the macro you want to execute.
 
 ::: warning
 Das Makro wird sofort und ohne zusätzliche Bestätigung ausgeführt!
@@ -154,15 +153,12 @@ die mit dem Tag versehen sind.
 
 **Wie?**
 
-In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der
-Bezeichnung **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die
-Schaltfläche `+` klicken. Sie können vorhandene Tags auswählen und neue
-hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht
-deaktiviert hat).
+In the ticket sidebar, you can find a section which is labels as
+**Tags**. Add a tag by clicking on the ::+:: button. You can select existing
+tags and add new ones (if your admin didn't disable to add new tags).
 
-Entfernen Sie sie, indem Sie einfach auf die Schaltfläche `X`
-klicken. Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen
-eines Tags aus einem Ticket gibt.
+Remove them by simply click on the ::x:: button. Be aware that there is no
+confirmation dialog for deleting a tag from a ticket.
 
 ## Checklisten
 
@@ -190,17 +186,16 @@ In der Checklisten-Seitenleiste können Sie:
   einer Vorlage, indem Sie `Aus einer Vorlage hinzufügen` verwenden (wenn
   Sie die Schaltfläche für die Vorlage nicht sehen, gibt es keine).
 - Bearbeiten Sie die aktuelle Checkliste:
-  - Benennen Sie sie um, indem Sie auf den Titel klicken oder das `︙` Menü
-    im Header der Seitenleiste verwenden.
-  - Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die Schaltfläche
-    `+` klicken.
-  - Ändern Sie den Text der Elemente der Checkliste, entweder durch
-    einfaches Anklicken oder über das `︙` Menü neben dem Element.
+  - Rename it by clicking on the title or using the ::a:: menu in the
+    sidebar header.
+  - Add checklist items by clicking the ::+:: button.
+  - Change the text of the checklist items, either by just clicking on it or
+    using the ::a:: menu next to the item.
   - Ordnen Sie die Elemente neu an, indem Sie auf die Schaltfläche
     `Reihenfolge ändern` klicken und die Elemente per Drag & Drop
     verschieben.
-- Löschen Sie die komplette Checkliste über das `︙` Menü im Header der
-  Seitenleiste.
+- Delete the complete checklist by using the ::a:: menu in the sidebar
+  header.
 
 Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
 
@@ -251,8 +246,8 @@ Administrator sie ausgeschaltet.
 
 **Wie?**
 
-Zum **Speichern eines Entwurfs** verwenden Sie das `︙` Menü in der Fußzeile
-der Ticket-Detailansicht und wählen "Als Entwurf speichern".
+To **save a draft**, use the ::a:: menu in the footer of the ticket details
+view and select "Save as draft".
 
 Um **einen bereits vorhandenen Entwurf zu übernehmen**, klicken Sie auf die
 Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile.
@@ -354,12 +349,11 @@ Ticket übernommen.
 
 **Wie?**
 
-Gehen Sie zu dem Ticket, das Sie mit einem anderen zusammenführen
-möchten. Wählen Sie in der Seitenleiste des Tickets im `︙` Menü
-`Zusammenfassen`. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
-Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
-eingeben können.  Wenn Sie ein Ticket ausgewählt haben, bestätigen Sie es
-mit der Schaltfläche `Zusammenfassen` am unteren Rand.
+Go to the ticket you want to merge into another one. In the ticket sidebar,
+use the ::a:: menu and select `Merge`. This opens a side panel in which you
+can select a ticket by clicking on it or enter a ticket number in search
+field.  When you selected a target ticket, confirm by using the `Merge`
+button at the bottom.
 
 Als Ergebnis werden die Artikel in das gewählte Ticket verschoben. Das
 Ticket, in dem Sie die Zusammenfassung durchgeführt haben, existiert
@@ -383,8 +377,8 @@ eine Bestellung aufgeben möchte.
 
 **Wie?**
 
-Um einen Artikel abzuspalten, benutzen Sie das Menü `︙` an dem Artikel und
-wählen Sie `Abspalten`.
+To split an article off, use the ::a:: menu next to an article and select
+`Split`.
 
 Im Ergebnis sehen Sie die Ansicht zum Erstellen eines Tickets mit denselben
 Attributen wie im ursprünglichen Ticket. Der Inhalt des Artikels ist
@@ -406,11 +400,10 @@ werden. [Zusammengefasste](#tickets-zusammenfassen) und
 
 **Wie?**
 
-Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
-hinzu, indem Sie auf die Schaltfläche `+` im Abschnitt "Links"
-klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein Ticket durch
-Anklicken auswählen oder eine Ticketnummer in das Suchfeld eingeben
-können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the "Links" section. This opens a side panel in which you can
+select a ticket by clicking on it or enter a ticket number in search
+field. Additionally, you can choose between different link types:
 
 - **Normal:** für verwandte Tickets, die keine Hierarchie haben.
 - **Eltern/Kinder**: für verwandte Tickets, von denen eines das Hauptthema

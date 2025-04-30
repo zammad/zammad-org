@@ -31,7 +31,7 @@ you are the owner) and limit the notifications to a specific group.
 Depending on the settings of your Zammad instance, the reasons can differ. But usually the reason is that a customer
 replied to the ticket after it was set to closed. Another reason could be that a colleague re-opened it. If you can't
 see an article which fits to the description, you can take a look at the ticket history to find out more. Do so by
-opening the `︙` menu in the ticket sidebar tab and select **History**.
+opening the ::a:: menu in the ticket sidebar tab and select **History**.
 
 Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.
 :::
