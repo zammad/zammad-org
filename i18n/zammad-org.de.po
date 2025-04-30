@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-04-17 16:43+0100\n"
+"POT-Creation-Date: 2025-04-29 12:41+0000\n"
 "PO-Revision-Date: 2025-04-29 12:41+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -336,9 +336,9 @@ msgid ""
 "blob/develop/SECURITY.md){target=_blank} for more details)."
 msgstr ""
 "Dieser Branch wird aktiv unterstützt und erhält regelmäßig Fehlerkorrekturen "
-"sowie Sicherheitsaktualisierungen (siehe [Security Policy](https://github."
-"com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} für weitere "
-"Details)."
+"sowie Sicherheitsaktualisierungen (siehe [Security Policy](https://"
+"github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} für "
+"weitere Details)."
 
 #. type: Title ####
 #: src/en/contribute/contribute.md:39
@@ -408,17 +408,17 @@ msgstr ""
 #. type: Plain text
 #: src/en/contribute/contribute.md:64
 msgid ""
-"The documentation you are reading is available on zammad.org and next.zammad."
-"org and is built with Vitepress. The source files are written in Markdown. "
-"Make sure to change the English source files only which are placed under `/"
-"src/en/`. The translation is done via Weblate and will overwrite any changes "
-"in the language specific folders (except `/src/en/`)."
+"The documentation you are reading is available on zammad.org and "
+"next.zammad.org and is built with Vitepress. The source files are written in "
+"Markdown. Make sure to change the English source files only which are placed "
+"under `/src/en/`. The translation is done via Weblate and will overwrite any "
+"changes in the language specific folders (except `/src/en/`)."
 msgstr ""
-"Die Dokumentation, die Sie gerade lesen, ist auf zammad.org und next.zammad."
-"org verfügbar und wird mit Vitepress erstellt. Die Quelldateien sind in "
-"Markdown geschrieben. Stellen Sie sicher, dass Sie nur die englischen "
-"Quelldateien ändern, die sich unter `/src/en/` befinden. Die Übersetzung "
-"erfolgt mit Weblate und überschreibt alle Änderungen in den "
+"Die Dokumentation, die Sie gerade lesen, ist auf zammad.org und "
+"next.zammad.org verfügbar und wird mit Vitepress erstellt. Die Quelldateien "
+"sind in Markdown geschrieben. Stellen Sie sicher, dass Sie nur die "
+"englischen Quelldateien ändern, die sich unter `/src/en/` befinden. Die "
+"Übersetzung erfolgt mit Weblate und überschreibt alle Änderungen in den "
 "sprachspezifischen Ordnern (außer `/src/en/`)."
 
 #. type: Title ##
@@ -449,9 +449,10 @@ msgid ""
 "translations.zammad.org/){target=_blank}.  You can either create an account "
 "(if you don't have one already) or even sign in with your Github account!"
 msgstr ""
-"Sie müssen dazu nur zu Zammads [Weblate-Instanz](https://translations.zammad."
-"org/){target=_blank} gehen.  Sie können entweder ein Konto erstellen (falls "
-"Sie noch keines haben) oder sich sogar mit Ihrem Github-Konto anmelden!"
+"Sie müssen dazu nur zu Zammads [Weblate-Instanz](https://"
+"translations.zammad.org/){target=_blank} gehen.  Sie können entweder ein "
+"Konto erstellen (falls Sie noch keines haben) oder sich sogar mit Ihrem "
+"Github-Konto anmelden!"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:78
@@ -611,8 +612,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/contribute/contribute.md:122
 msgid ""
-"![Screenshot of Weblate translation user interface](/screenshots/weblate-ui."
-"png)"
+"![Screenshot of Weblate translation user interface](/screenshots/weblate-"
+"ui.png)"
 msgstr "![Screenshot des Weblate User-Interface](/screenshots/weblate-ui.png)"
 
 #. type: Bullet: '1. '
@@ -1005,11 +1006,12 @@ msgstr ""
 #: src/en/contribute/style-guide.md:81
 msgid ""
 "Include screenshots when necessary. The preferred way of adding screenshots "
-"of Zammad is by creating them automatically [using Cypress](https://github."
-"com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress)"
-"{target=_blank}.  This supports the maintainability of the documentation "
-"because the screenshots are re-generated each time the build pipeline runs. "
-"Please note that the usage of Cypress is not part of this documentation."
+"of Zammad is by creating them automatically [using Cypress](https://"
+"github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-"
+"cypress){target=_blank}.  This supports the maintainability of the "
+"documentation because the screenshots are re-generated each time the build "
+"pipeline runs. Please note that the usage of Cypress is not part of this "
+"documentation."
 msgstr ""
 "Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots von "
 "Zammad hinzuzufügen, ist, sie automatisch [mit Cypress](https://github.com/"
@@ -1925,8 +1927,8 @@ msgid ""
 "tickets which have the tag attached."
 msgstr ""
 "Tags sind eine Möglichkeit, ein Ticket zu kategorisieren. Sie können sich "
-"die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie z."
-"B. in Triggern und Übersichten, verwendet werden und sie können auch "
+"die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie "
+"z.B. in Triggern und Übersichten, verwendet werden und sie können auch "
 "automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.  "
 "Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets, "
 "die mit dem Tag versehen sind."
@@ -2986,11 +2988,8 @@ msgid ""
 "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
 "header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].\n"
 msgstr ""
-"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit "
-"befinden Sie sich im Abschnitt _Allgemein_ im Bereich\n"
-"_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um "
-"zu den gewünschten Informationen zu navigieren, oder die Suche in der "
-"Kopfzeile.\n"
+"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich\n"
+"_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.\n"
 "Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.\n"
 
 #. type: Title ##
@@ -3081,10 +3080,8 @@ msgid ""
 "The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.\n"
 "More information about how to configure and activate it can be found in the admin section.\n"
 msgstr ""
-"Die KI-Funktionen müssen von Ihrem Administrator konfiguriert und aktiviert "
-"werden. Wenn Sie sie nicht sehen können, sind sie nicht konfiguriert.\n"
-"Weitere Informationen über die Konfiguration und Aktivierung finden Sie im "
-"Admin-Bereich.\n"
+"Die KI-Funktionen müssen von Ihrem Administrator konfiguriert und aktiviert werden. Wenn Sie sie nicht sehen können, sind sie nicht konfiguriert.\n"
+"Weitere Informationen über die Konfiguration und Aktivierung finden Sie im Admin-Bereich.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:18
@@ -3121,8 +3118,8 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:28
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
-"summary banner and summary sidebar](/screenshots/cypress/usage-guide-ai.cy."
-"js/ai-ticket-summary-sidebar.png)"
+"summary banner and summary sidebar](/screenshots/cypress/usage-guide-"
+"ai.cy.js/ai-ticket-summary-sidebar.png)"
 msgstr ""
 "![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner "
 "für die Ticket-Zusammenfassung und der Zusammenfassungs-Seitenleiste](/"
@@ -3590,8 +3587,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:41
 msgid ""
-"The ticket lists in overviews can also be grouped by a specific attribute (e."
-"g. customer, organization, owner). This has to be adjusted by your Zammad "
+"The ticket lists in overviews can also be grouped by a specific attribute "
+"(e.g. customer, organization, owner). This has to be adjusted by your Zammad "
 "admin. If a grouping is activated, you can find a badge with a counter of "
 "the included tickets there as well."
 msgstr ""
@@ -3879,8 +3876,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:34
 msgid ""
-"![Screenshot shows detailed search](/screenshots/cypress/usage-guide-search."
-"cy.js/search-detail.png)"
+"![Screenshot shows detailed search](/screenshots/cypress/usage-guide-"
+"search.cy.js/search-detail.png)"
 msgstr ""
 "![Screenshot zeigt die Erweiterte Suche](/screenshots/cypress/usage-guide-"
 "search.cy.js/search-detail.png)"
@@ -4167,11 +4164,11 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/two-factor-auth.md:47
 msgid ""
-"[Aegis Authenticator](https://play.google.com/store/apps/details?id=com."
-"beemdevelopment.aegis) (Android only)"
+"[Aegis Authenticator](https://play.google.com/store/apps/details?"
+"id=com.beemdevelopment.aegis) (Android only)"
 msgstr ""
-"[Aegis Authenticator](https://play.google.com/store/apps/details?id=com."
-"beemdevelopment.aegis&hl=de) (nur Android)"
+"[Aegis Authenticator](https://play.google.com/store/apps/details?"
+"id=com.beemdevelopment.aegis&hl=de) (nur Android)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/two-factor-auth.md:47
@@ -4279,8 +4276,8 @@ msgid ""
 "two-factor-auth-usage/2fa-security-key-panel.png)"
 msgstr ""
 "![Screenshots zeigt die Konfiguration der Sicherheits-Schlüssel-"
-"Authentifizierung](/screenshots/two-factor-auth-usage/2fa-security-key-panel."
-"png)"
+"Authentifizierung](/screenshots/two-factor-auth-usage/2fa-security-key-"
+"panel.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:74
@@ -4439,8 +4436,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:116
 msgid ""
-"![Log in screen with recovery codes link](/screenshots/two-factor-auth-"
-"usage/2fa-login-recovery-codes.png)"
+"![Log in screen with recovery codes link](/screenshots/two-factor-auth-usage/"
+"2fa-login-recovery-codes.png)"
 msgstr ""
 "![Anmelde-Screen mit Link zur Nutzung von Wiederherstellungs-Codes](/"
 "screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)"
@@ -4501,8 +4498,8 @@ msgid ""
 "two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
 msgstr ""
 "![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der 2FA-"
-"Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes."
-"png)"
+"Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-"
+"codes.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:138
@@ -4576,8 +4573,8 @@ msgid ""
 "two-factor-auth-usage/2fa-profile-overview-action.png)"
 msgstr ""
 "![Screenshot zeigt die Ausgabe von Wiederherstellungscodes während der 2FA-"
-"Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-action."
-"png)"
+"Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-"
+"action.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:158
@@ -4596,8 +4593,8 @@ msgstr ""
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
 "the setup process. Normally, editing a method will simply renew it and "
-"replace the older setup, but some methods do support advanced functions (e."
-"g. adding multiple security keys)."
+"replace the older setup, but some methods do support advanced functions "
+"(e.g. adding multiple security keys)."
 msgstr ""
 "Sie werden abhängig von der gewählten Zwei-Faktor-Methode nochmal durch den "
 "Einrichtungs-Prozess geführt. Im Normalfall ersetzt eine bearbeitete Methode "
@@ -4631,8 +4628,8 @@ msgstr "Benutzerprofil verwalten"
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:9
 msgid ""
-"![Screenshot shows user profile settings](/screenshots/cypress/user-profile."
-"cy.js/user-profile-settings-full.png)"
+"![Screenshot shows user profile settings](/screenshots/cypress/user-"
+"profile.cy.js/user-profile-settings-full.png)"
 msgstr ""
 "![Screenshot zeigt Benutzerprofil-Einstellungen](/screenshots/cypress/user-"
 "profile.cy.js/user-profile-settings-full.png)"
@@ -4663,8 +4660,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:18
 msgid ""
-"![Screenshot shows user menu popover](/screenshots/cypress/user-profile.cy."
-"js/user-menu-popover.png)"
+"![Screenshot shows user menu popover](/screenshots/cypress/user-"
+"profile.cy.js/user-menu-popover.png)"
 msgstr ""
 "![Screenshot zeigt Benutzer-Menü](/screenshots/cypress/user-profile.cy.js/"
 "user-menu-popover.png)"
@@ -5117,11 +5114,11 @@ msgstr "Haupt UI-Elemente"
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:26
 msgid ""
-"![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-ui.cy."
-"js/zammad-ui-full.png)"
+"![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-"
+"ui.cy.js/zammad-ui-full.png)"
 msgstr ""
-"![Screenshot zeigt eine Ticket-Detailansicht](/screenshots/cypress/zammad-ui."
-"cy.js/zammad-ui-full.png)"
+"![Screenshot zeigt eine Ticket-Detailansicht](/screenshots/cypress/zammad-"
+"ui.cy.js/zammad-ui-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:29
@@ -5696,8 +5693,8 @@ msgid ""
 "used and shared when you visit <https://www.zammad.org> (the \"site\")."
 msgstr ""
 "Diese Datenschutzerklärung beschreibt, wie Ihre persönlichen Daten "
-"gesammelt, verwendet und weitergegeben werden, wenn Sie <https://www.zammad."
-"org> (die \"Website\") besuchen."
+"gesammelt, verwendet und weitergegeben werden, wenn Sie <https://"
+"www.zammad.org> (die \"Website\") besuchen."
 
 #. type: Title ##
 #: src/en/gdpr.md:15
@@ -5977,10 +5974,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:15
 msgid ""
-"If you have questions, feel free to [get in touch with us](https://zammad."
-"com/en/company/contact){target=_blank} and to have a look at the [community "
-"forum](https://community.zammad.org/){target=_blank} were you can find "
-"useful information and help."
+"If you have questions, feel free to [get in touch with us](https://"
+"zammad.com/en/company/contact){target=_blank} and to have a look at the "
+"[community forum](https://community.zammad.org/){target=_blank} were you can "
+"find useful information and help."
 msgstr ""
 "Wenn Sie Fragen haben, können Sie sich gerne [an uns](https://zammad.com/de/"
 "company/contact){target=_blank} wenden und einen Blick in das [Community "
@@ -6002,10 +5999,10 @@ msgid ""
 "either keeping your data or start with an empty system."
 msgstr ""
 "Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu "
-"testen, ist die Verwendung einer [kostenlosen Testversion](https://zammad."
-"com/de/getting-started){target=_blank}. Sie können damit herumspielen und "
-"dann zu einer offiziellen Instanz wechseln, wobei Sie entweder Ihre Daten "
-"behalten oder mit einem leeren System neu beginnen können."
+"testen, ist die Verwendung einer [kostenlosen Testversion](https://"
+"zammad.com/de/getting-started){target=_blank}. Sie können damit herumspielen "
+"und dann zu einer offiziellen Instanz wechseln, wobei Sie entweder Ihre "
+"Daten behalten oder mit einem leeren System neu beginnen können."
 
 #. type: Title ##
 #: src/en/get-started/get-zammad.md:23
@@ -6701,8 +6698,8 @@ msgid ""
 "zammad.com/en/pricing){target=_blank}."
 msgstr ""
 "Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere "
-"Installationsmethode verwenden oder [Zammads Cloud Service](https://zammad."
-"com/de/pricing){target=_blank} in Betracht ziehen."
+"Installationsmethode verwenden oder [Zammads Cloud Service](https://"
+"zammad.com/de/pricing){target=_blank} in Betracht ziehen."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:27
@@ -6979,9 +6976,9 @@ msgstr "Elasticsearch installieren"
 #. type: Plain text
 #: src/en/get-started/installation/package.md:161
 msgid ""
-"The recommended method is to use [Elastic's official guide](https://www."
-"elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch."
-"html){target=_blank} for installing Elasticsearch."
+"The recommended method is to use [Elastic's official guide](https://"
+"www.elastic.co/guide/en/elasticsearch/reference/current/install-"
+"elasticsearch.html){target=_blank} for installing Elasticsearch."
 msgstr ""
 "Die empfohlene Methode ist die Verwendung von [Elastics offizieller "
 "Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/"
@@ -7594,12 +7591,12 @@ msgstr ""
 #: src/en/get-started/installation/package.md:422
 msgid ""
 "The installation and configuration is out of our scope of this "
-"documentation.  Please follow the [official guides](https://docs.memcached."
-"org/){target=_blank}."
+"documentation.  Please follow the [official guides](https://"
+"docs.memcached.org/){target=_blank}."
 msgstr ""
 "Die Installation und Konfiguration ist nicht Bestandteil dieser "
-"Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung](https://docs."
-"memcached.org/){target=_blank}."
+"Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung](https://"
+"docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:423
@@ -10825,8 +10822,8 @@ msgid ""
 "You can find the files in the [Zammad-Docker-Compose repository](https://"
 "github.com/zammad/zammad-docker-compose){{target=_blank}}."
 msgstr ""
-"Sie finden die Dateien im [Zammad-Docker-Compose-Repository](https://github."
-"com/zammad/zammad-docker-compose){target=_blank}."
+"Sie finden die Dateien im [Zammad-Docker-Compose-Repository](https://"
+"github.com/zammad/zammad-docker-compose){target=_blank}."
 
 #. type: Title ##
 #: src/en/reference/docker-compose-scenarios.md:31
@@ -11034,8 +11031,8 @@ msgid ""
 "Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
 "deployment"
 msgstr ""
-"Verwenden Sie die Szenariodatei `scenarios/add-external-network-to-nginx."
-"yml` in Ihrem Stack"
+"Verwenden Sie die Szenariodatei `scenarios/add-external-network-to-"
+"nginx.yml` in Ihrem Stack"
 
 #. type: Bullet: '- '
 #: src/en/reference/docker-compose-scenarios.md:94
@@ -11075,9 +11072,9 @@ msgid ""
 "Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
 "deployment - this will turn off the built-in service for Elasticsearch"
 msgstr ""
-"Verwenden Sie die Szenariodatei `scenarios/disable-elasticsearch-service."
-"yml` in Ihrem Stack - dies wird den enthaltenen Dienst für Elasticsearch "
-"deaktivieren"
+"Verwenden Sie die Szenariodatei `scenarios/disable-elasticsearch-"
+"service.yml` in Ihrem Stack - dies wird den enthaltenen Dienst für "
+"Elasticsearch deaktivieren"
 
 #. type: Bullet: '- '
 #: src/en/reference/docker-compose-scenarios.md:111
@@ -11218,8 +11215,8 @@ msgid ""
 "Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
 "deployment"
 msgstr ""
-"Verwenden Sie die Szenariodatei `scenarios/add-hostport-to-elasticsearch."
-"yml` in Ihrem Stack"
+"Verwenden Sie die Szenariodatei `scenarios/add-hostport-to-"
+"elasticsearch.yml` in Ihrem Stack"
 
 #. type: Bullet: '- '
 #: src/en/reference/docker-compose-scenarios.md:147
@@ -16719,8 +16716,8 @@ msgstr "Bilder"
 #. type: Plain text
 #: src/en/reference/privacy.md:93
 msgid ""
-"No private images or personally-identifying information are stored on images."
-"zammad.com."
+"No private images or personally-identifying information are stored on "
+"images.zammad.com."
 msgstr ""
 "Auf images.zammad.com werden keine privaten Bilder oder persönlich "
 "identifizierende Informationen gespeichert."
@@ -19842,11 +19839,14 @@ msgstr ""
 "Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser "
 "Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich sein"
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:302
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
-msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
+msgstr ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/knowledgebase.md:1
@@ -19929,8 +19929,8 @@ msgstr ""
 #: src/en/reference/rest-api/knowledgebase.md:271
 msgid "Required permission: `knowledge_base.reader` or `knowledge_base.editor`"
 msgstr ""
-"Erforderliche Berechtigung: `knowledge_base.reader` oder `knowledge_base."
-"editor`"
+"Erforderliche Berechtigung: `knowledge_base.reader` oder "
+"`knowledge_base.editor`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/knowledgebase.md:36
@@ -21667,8 +21667,8 @@ msgstr "Prioritäten"
 #: src/en/reference/rest-api/states.md:18
 #: src/en/reference/rest-api/states.md:31
 msgid ""
-"Required permission: `admin.object` **or** `ticket.agent` **or** `ticket."
-"customer`"
+"Required permission: `admin.object` **or** `ticket.agent` **or** "
+"`ticket.customer`"
 msgstr ""
 "Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder** "
 "`ticket.customer`"
@@ -23112,8 +23112,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:42
 msgid ""
-"Required permission: `ticket.agent` **or** `admin.user` **or** `ticket."
-"customer` (shared organization)"
+"Required permission: `ticket.agent` **or** `admin.user` **or** "
+"`ticket.customer` (shared organization)"
 msgstr ""
 "Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user` **oder** "
 "`ticket.customer` (teilende Organisation)"
@@ -24074,8 +24074,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:280
 msgid ""
-"Please consult the official [PostgreSQL documentation](https://www."
-"postgresql.org/docs/){target=_blank} for this, as this is out of our "
+"Please consult the official [PostgreSQL documentation](https://"
+"www.postgresql.org/docs/){target=_blank} for this, as this is out of our "
 "documentation scope."
 msgstr ""
 "Bitte konsultieren Sie dazu die offizielle [PostgreSQL-Dokumentation]"
@@ -24398,8 +24398,8 @@ msgstr "Optionale Einstellungen"
 #: src/en/tutorials/connect-config-elasticsearch.md:70
 msgid ""
 "We collected some useful settings you may want to apply. For further "
-"information please have a look at [Elastic's documentation](https://www."
-"elastic.co/guide/en/elasticsearch/reference/current/index.html)"
+"information please have a look at [Elastic's documentation](https://"
+"www.elastic.co/guide/en/elasticsearch/reference/current/index.html)"
 "{target=_blank}."
 msgstr ""
 "Wir haben einige nützliche Einstellungen gesammelt, die Sie vielleicht auch "
@@ -27927,47 +27927,36 @@ msgstr "Abnehmer der Anrufe (eingehend)"
 msgid "`ES - CTI Log`"
 msgstr "`ES - CTI Log`"
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:231
-#, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
-msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
-
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
-msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt "
-"werden kann.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:234
-#, no-wrap
-msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
-msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+#, fuzzy, no-wrap
+#| msgid "    means we can only display the _last_ value of the field in question.\n"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the _last_ value of the field in question.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid "    violations.\n"
-msgstr "    Verletzung.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:237
-#, no-wrap
-msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
-msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+msgid ""
+"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
+msgstr ""
+"[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+"     SLA-Verstöße.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
+"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
-"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
-"    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
@@ -28041,10 +28030,10 @@ msgstr "Wie funktioniert das?"
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:34
 msgid ""
-"Once enabled, single sign-on activates an endpoint at `https://your.zammad."
-"host/auth/sso`. When the Zammad server receives a GET request at this "
-"endpoint with a valid username in **any one of the following** entities, it "
-"creates a new session for that user:"
+"Once enabled, single sign-on activates an endpoint at `https://"
+"your.zammad.host/auth/sso`. When the Zammad server receives a GET request at "
+"this endpoint with a valid username in **any one of the following** "
+"entities, it creates a new session for that user:"
 msgstr ""
 "Einmal aktiviert, stellt das Single Sign-On Feature einen Endpunkt unter "
 "`https://your.zammad.host/auth/sso` bereit. Wenn der Zammad-Server an diesem "
@@ -30077,22 +30066,28 @@ msgstr ""
 "Konfigurationsänderungen zu übernehmen."
 
 #, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
+#~ msgid "[^1]: Some values are not available as time series information. This"
+#~ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
+
+#, no-wrap
+#~ msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+
+#, no-wrap
+#~ msgid "    violations.\n"
+#~ msgstr "    Verletzung.\n"
+
+#, no-wrap
+#~ msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+#~ msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
 
 #, no-wrap
 #~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
 #~ "    the panel may not work or show incorrect data. Check the panels\n"
 #~ "    description on how to find our the relations on your system.\n"
 #~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
+#~ "    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid "No support for bug or security issues is provided."
 #~ msgstr "Keine Unterstützung durch Fehler- oder Sicherheitskorrekturen."
