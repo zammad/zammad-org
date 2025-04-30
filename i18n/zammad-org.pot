@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-04-30 08:59+0300\n"
+"POT-Creation-Date: 2025-04-30 12:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -631,7 +631,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:137
-#: src/en/tutorials/connect-config-elasticsearch.md:99
+#: src/en/tutorials/connect-config-elasticsearch.md:107
 #: src/en/tutorials/sso-kerberos.md:553
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
@@ -8300,14 +8300,42 @@ msgstr ""
 msgid "Setting.set('proxy_password', 'some pass')\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/reference/console.md:508
+#, markdown-text, no-wrap
+msgid "Disable Asciifold"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:511
+#, markdown-text
+msgid ""
+"This feature is turned on by default. In case you need a more exact search, "
+"you can turn it off:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:512
+#, no-wrap
+msgid "Setting.set('es_asciifolding', false)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:517
+#, markdown-text
+msgid ""
+"After changing the setting, make sure to [rebuild the search "
+"index](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:518
 #, markdown-text, no-wrap
 msgid "Hidden Settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:513
+#: src/en/reference/console.md:523
 #, markdown-text
 msgid ""
 "In this section you can find some settings that you won't find within the "
@@ -8316,13 +8344,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:514
+#: src/en/reference/console.md:524
 #, markdown-text, no-wrap
 msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:520
+#: src/en/reference/console.md:530
 #, markdown-text
 msgid ""
 "This option allows you to send all outgoing E-Mails (not notifications)  to "
@@ -8331,79 +8359,79 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:521
+#: src/en/reference/console.md:531
 #, no-wrap
 msgid "Setting.set('system_bcc', 'alias@domain.tld')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:526
+#: src/en/reference/console.md:536
 #, markdown-text
 msgid "You can easily check the current BCC-Setting by running the following:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:527
+#: src/en/reference/console.md:537
 #, no-wrap
 msgid "Setting.get('system_bcc')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:531
+#: src/en/reference/console.md:541
 #, markdown-text, no-wrap
 msgid "Activate Counter on Grouped Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:534
+#: src/en/reference/console.md:544
 #, markdown-text
 msgid "This enables a ticket number value in each heading for grouped elements."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:536
+#: src/en/reference/console.md:546
 #, markdown-text
 msgid "Enable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:537
+#: src/en/reference/console.md:547
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:542
+#: src/en/reference/console.md:552
 #, markdown-text
 msgid "Disable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:543
+#: src/en/reference/console.md:553
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:548
+#: src/en/reference/console.md:558
 #, markdown-text
 msgid "Get current setting (`nil` is false):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:549
+#: src/en/reference/console.md:559
 #, no-wrap
 msgid "Setting.get('ui_table_group_by_show_count')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:553
+#: src/en/reference/console.md:563
 #, markdown-text, no-wrap
 msgid "Default Ticket Type on Creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:557
+#: src/en/reference/console.md:567
 #, markdown-text
 msgid ""
 "Zammad allows you to define the default article type upon ticket "
@@ -8411,55 +8439,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:559
+#: src/en/reference/console.md:569
 #, markdown-text
 msgid "You can choose between"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 #, markdown-text
 msgid "`phone-in` (incoming call, **default**),"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 #, markdown-text
 msgid "`phone-out` (outgoing call) and"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 #, markdown-text
 msgid "`email-out` (Sending an E-Mail out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:564
+#: src/en/reference/console.md:574
 #, no-wrap
 msgid "Setting.set('ui_ticket_create_default_type', 'email-out')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:569
+#: src/en/reference/console.md:579
 #, markdown-text
 msgid "To check what setting is set currently, simply run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:570
+#: src/en/reference/console.md:580
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_default_type')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:574
+#: src/en/reference/console.md:584
 #, markdown-text, no-wrap
 msgid "Adding a Warning to the Ticket Creation Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:578
+#: src/en/reference/console.md:588
 #, markdown-text
 msgid ""
 "If you want to give your agent a note or warning during ticket **creation**, "
@@ -8467,31 +8495,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:580
+#: src/en/reference/console.md:590
 #, markdown-text
 msgid "You can use three different warnings for:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 #, markdown-text
 msgid "Incoming Calls `:\"phone-in\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 #, markdown-text
 msgid "Outgoing Calls `:\"phone-out\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 #, markdown-text
 msgid "Outgoing E-Mails `:\"email-out\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:585
+#: src/en/reference/console.md:595
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
@@ -8502,7 +8530,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:593
+#: src/en/reference/console.md:603
 #, no-wrap
 msgid ""
 "You can use those three sub-settings independently, if you e.g. don't\n"
@@ -8511,25 +8539,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:600 src/en/reference/console.md:639
+#: src/en/reference/console.md:610 src/en/reference/console.md:649
 #, markdown-text
 msgid "To check what's currently set, you can use:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:601
+#: src/en/reference/console.md:611
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_notes')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:605
+#: src/en/reference/console.md:615
 #, markdown-text, no-wrap
 msgid "Adding a Warning to the Article Reply Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:609
+#: src/en/reference/console.md:619
 #, markdown-text
 msgid ""
 "If you want to give your agent a warning during the ticket article "
@@ -8537,7 +8565,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:612
+#: src/en/reference/console.md:622
 #, markdown-text
 msgid ""
 "You can provide different warnings for different channels and article "
@@ -8545,43 +8573,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Internal Notes `:\"note-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Public Notes `:\"note-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Internal Calls `:\"phone-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Public Calls `:\"phone-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Internal Emails `:\"email-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 #, markdown-text
 msgid "Public Emails `:\"email-public\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:630
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
@@ -8598,7 +8626,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:631
+#: src/en/reference/console.md:641
 #, no-wrap
 msgid ""
 "You can use example sub-settings above independently, if you e.g.\n"
@@ -8608,19 +8636,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:640
+#: src/en/reference/console.md:650
 #, no-wrap
 msgid "Setting.get('ui_ticket_add_article_hint')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:644
+#: src/en/reference/console.md:654
 #, markdown-text, no-wrap
 msgid "Show Email Address of Customer on Customer Selection (Ticket Creation)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:648
+#: src/en/reference/console.md:658
 #, markdown-text
 msgid ""
 "By default, Zammad will not display the email addresses of customers.  The "
@@ -8628,31 +8656,31 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:649
+#: src/en/reference/console.md:659
 #, no-wrap
 msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:654 src/en/reference/console.md:674
+#: src/en/reference/console.md:664 src/en/reference/console.md:684
 #, markdown-text
 msgid "Get the current state of this setting with:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:655
+#: src/en/reference/console.md:665
 #, no-wrap
 msgid "Setting.get('ui_user_organization_selector_with_email')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:659
+#: src/en/reference/console.md:669
 #, markdown-text, no-wrap
 msgid "Change Font Settings for Outgoing HTML Emails"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:661
+#: src/en/reference/console.md:671
 #, no-wrap
 msgid ""
 "Some clients (like Outlook) might fallback to other settings while it\n"
@@ -8660,7 +8688,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:668
+#: src/en/reference/console.md:678
 #, markdown-text
 msgid ""
 "The below setting allows you to adjust Zammad's email font setting. This "
@@ -8668,7 +8696,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:669
+#: src/en/reference/console.md:679
 #, no-wrap
 msgid ""
 "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', "
@@ -8676,19 +8704,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:675
+#: src/en/reference/console.md:685
 #, no-wrap
 msgid "Setting.get('html_email_css_font')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:679
+#: src/en/reference/console.md:689
 #, markdown-text, no-wrap
 msgid "Highlight Customer's Open Ticket Count"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:683
+#: src/en/reference/console.md:693
 #, markdown-text
 msgid ""
 "This option enhances the selected customer's open tickets count. It "
@@ -8696,13 +8724,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:684
+#: src/en/reference/console.md:694
 #, no-wrap
 msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:690
+#: src/en/reference/console.md:700
 #, markdown-text
 msgid ""
 "Above settings has specific thresholds as follows. You **cannot** adjust "
@@ -8710,7 +8738,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:695
+#: src/en/reference/console.md:705
 #, markdown-text, no-wrap
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) "
@@ -8723,13 +8751,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:696
+#: src/en/reference/console.md:706
 #, markdown-text, no-wrap
 msgid "Activate Attachment Tab in Sidebar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:700
+#: src/en/reference/console.md:710
 #, markdown-text
 msgid ""
 "This option activates a new tab in the right sidebar in the ticket view "
@@ -8737,19 +8765,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:701
+#: src/en/reference/console.md:711
 #, no-wrap
 msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:705
+#: src/en/reference/console.md:715
 #, markdown-text, no-wrap
 msgid "Time Period for Showing Customer Profile on New Calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:711
+#: src/en/reference/console.md:721
 #, markdown-text
 msgid ""
 "Zammad shows the customer profile dialog when a call of this customer is "
@@ -8759,25 +8787,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:713
+#: src/en/reference/console.md:723
 #, markdown-text
 msgid "Set the time period to 90 days:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:714
+#: src/en/reference/console.md:724
 #, no-wrap
 msgid "Setting.set('cti_customer_last_activity', '90')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:718
+#: src/en/reference/console.md:728
 #, markdown-text, no-wrap
 msgid "Set Public \"Notes\" as SLA relevant"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:724
+#: src/en/reference/console.md:734
 #, markdown-text
 msgid ""
 "Normally, notes aren't SLA relevant. Use the following command to include "
@@ -8787,7 +8815,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:725
+#: src/en/reference/console.md:735
 #, no-wrap
 msgid ""
 "By default, customers are not notified when public notes are added to a\n"
@@ -8795,37 +8823,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:731
+#: src/en/reference/console.md:741
 #, markdown-text
 msgid "Enable SLA to count notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:732
+#: src/en/reference/console.md:742
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:737
+#: src/en/reference/console.md:747
 #, markdown-text
 msgid "Enable SLA to ignore notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:738
+#: src/en/reference/console.md:748
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:742
+#: src/en/reference/console.md:752
 #, markdown-text, no-wrap
 msgid "Activate Priority Icon"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:746
+#: src/en/reference/console.md:756
 #, markdown-text
 msgid ""
 "To activate additional icons which represent the priority, use the command "
@@ -8833,25 +8861,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:747
+#: src/en/reference/console.md:757
 #, no-wrap
 msgid "Setting.set('ui_ticket_priority_icons', true)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:751
+#: src/en/reference/console.md:761
 #, markdown-text, no-wrap
 msgid "Other Useful Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:753
+#: src/en/reference/console.md:763
 #, markdown-text, no-wrap
 msgid "Fetch Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:757
+#: src/en/reference/console.md:767
 #, markdown-text
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
@@ -8859,19 +8887,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:758
+#: src/en/reference/console.md:768
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:762
+#: src/en/reference/console.md:772
 #, markdown-text, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:767
+#: src/en/reference/console.md:777
 #, markdown-text
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
@@ -8880,7 +8908,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:771
+#: src/en/reference/console.md:781
 #, markdown-text
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
@@ -8889,19 +8917,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:772
+#: src/en/reference/console.md:782
 #, markdown-text, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:774
+#: src/en/reference/console.md:784
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:781
+#: src/en/reference/console.md:791
 #, markdown-text
 msgid ""
 "You can find the location of the exported email in the output of your "
@@ -8910,13 +8938,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:792
 #, markdown-text, no-wrap
 msgid "Edit the Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:787
+#: src/en/reference/console.md:797
 #, markdown-text
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
@@ -8925,25 +8953,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:788
+#: src/en/reference/console.md:798
 #, markdown-text, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:791
+#: src/en/reference/console.md:801
 #, markdown-text
 msgid "After editing the email, run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:792
+#: src/en/reference/console.md:802
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:800
+#: src/en/reference/console.md:810
 #, markdown-text
 msgid ""
 "This will apply your changes from the file to the database. You can also "
@@ -8953,7 +8981,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:801
+#: src/en/reference/console.md:811
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -8962,13 +8990,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:807
+#: src/en/reference/console.md:817
 #, markdown-text, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:811
+#: src/en/reference/console.md:821
 #, markdown-text
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
@@ -8976,13 +9004,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:812
+#: src/en/reference/console.md:822
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:819
+#: src/en/reference/console.md:829
 #, markdown-text
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
@@ -8991,13 +9019,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:820
+#: src/en/reference/console.md:830
 #, markdown-text, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:822
+#: src/en/reference/console.md:832
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -9005,7 +9033,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:831
+#: src/en/reference/console.md:841
 #, markdown-text
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
@@ -9015,7 +9043,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:832
+#: src/en/reference/console.md:842
 #, no-wrap
 msgid ""
 "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
@@ -9023,13 +9051,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:836
+#: src/en/reference/console.md:846
 #, markdown-text, no-wrap
 msgid "Deleting Records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:838
+#: src/en/reference/console.md:848
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -9038,61 +9066,61 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:844
+#: src/en/reference/console.md:854
 #, markdown-text, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:857
 #, markdown-text
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:848
+#: src/en/reference/console.md:858
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:853
+#: src/en/reference/console.md:863
 #, markdown-text
 msgid "Delete all tickets:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:854
+#: src/en/reference/console.md:864
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:859
+#: src/en/reference/console.md:869
 #, markdown-text
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:860
+#: src/en/reference/console.md:870
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:864
+#: src/en/reference/console.md:874
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:868
+#: src/en/reference/console.md:878
 #, markdown-text, no-wrap
 msgid "Removing Users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:870
+#: src/en/reference/console.md:880
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -9104,7 +9132,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:879
+#: src/en/reference/console.md:889
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -9115,31 +9143,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:887
+#: src/en/reference/console.md:897
 #, markdown-text
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:889
+#: src/en/reference/console.md:899
 #, markdown-text
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:890
+#: src/en/reference/console.md:900
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:895
+#: src/en/reference/console.md:905
 #, markdown-text
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:896
+#: src/en/reference/console.md:906
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -9148,67 +9176,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:902
+#: src/en/reference/console.md:912
 #, markdown-text, no-wrap
 msgid "Removing Organizations"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:904
+#: src/en/reference/console.md:914
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:908
+#: src/en/reference/console.md:918
 #, markdown-text, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:911
+#: src/en/reference/console.md:921
 #, markdown-text
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:912
+#: src/en/reference/console.md:922
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:917
+#: src/en/reference/console.md:927
 #, markdown-text
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:918
+#: src/en/reference/console.md:928
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:923
+#: src/en/reference/console.md:933
 #, markdown-text
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:924
+#: src/en/reference/console.md:934
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:928
+#: src/en/reference/console.md:938
 #, markdown-text, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:930
+#: src/en/reference/console.md:940
 #, no-wrap
 msgid ""
 "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
@@ -9216,13 +9244,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:934
+#: src/en/reference/console.md:944
 #, markdown-text, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:936
+#: src/en/reference/console.md:946
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -9230,7 +9258,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:941
+#: src/en/reference/console.md:951
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -9240,7 +9268,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:948
+#: src/en/reference/console.md:958
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -9249,37 +9277,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:954
+#: src/en/reference/console.md:964
 #, markdown-text, no-wrap
 msgid "Removing System Records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:957
+#: src/en/reference/console.md:967
 #, markdown-text
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:958
+#: src/en/reference/console.md:968
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:963
+#: src/en/reference/console.md:973
 #, markdown-text
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:964
+#: src/en/reference/console.md:974
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:969
+#: src/en/reference/console.md:979
 #, markdown-text
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
@@ -9287,13 +9315,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:970
+#: src/en/reference/console.md:980
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:976
+#: src/en/reference/console.md:986
 #, markdown-text
 msgid ""
 "Remove all history information from tickets, users and organizations "
@@ -9301,19 +9329,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:977
+#: src/en/reference/console.md:987
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:981
+#: src/en/reference/console.md:991
 #, markdown-text, no-wrap
 msgid "Reset Zammad Installation"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:983
+#: src/en/reference/console.md:993
 #, no-wrap
 msgid ""
 "\n"
@@ -9325,25 +9353,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:992
+#: src/en/reference/console.md:1002
 #, no-wrap
 msgid "rake db:drop\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:996
+#: src/en/reference/console.md:1006
 #, no-wrap
 msgid "rake db:create\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1000
+#: src/en/reference/console.md:1010
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1004
+#: src/en/reference/console.md:1014
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
@@ -21269,7 +21297,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:61
-#: src/en/tutorials/connect-config-elasticsearch.md:184
+#: src/en/tutorials/connect-config-elasticsearch.md:192
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
@@ -21353,8 +21381,32 @@ msgstr ""
 msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr ""
 
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:99
+#, markdown-text, no-wrap
+msgid "Asciifold"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:104
+#, markdown-text
+msgid ""
+"By default, the [Asciifold feature of "
+"Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank} "
+"is enabled. This can be useful if you deal with text which includes "
+"diacritics and/or umlauts."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:106
+#, markdown-text
+msgid ""
+"In case you need a more exact search, you can turn it off via [rails "
+"console](/en/reference/console#disable-asciifold)."
+msgstr ""
+
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:101
+#: src/en/tutorials/connect-config-elasticsearch.md:109
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -21367,13 +21419,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:110
+#: src/en/tutorials/connect-config-elasticsearch.md:118
 #, markdown-text, no-wrap
 msgid "Data Missing From the Web-UI / Search Data Missing or Incomplete"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:116
+#: src/en/tutorials/connect-config-elasticsearch.md:124
 #, markdown-text
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
@@ -21383,7 +21435,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:120
+#: src/en/tutorials/connect-config-elasticsearch.md:128
 #, markdown-text
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
@@ -21392,19 +21444,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:121
+#: src/en/tutorials/connect-config-elasticsearch.md:129
 #, markdown-text, no-wrap
 msgid "Step 1: Verify Elasticsearch is Running"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:123
+#: src/en/tutorials/connect-config-elasticsearch.md:131
 #, no-wrap
 msgid "systemctl status elasticsearch\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:129
+#: src/en/tutorials/connect-config-elasticsearch.md:137
 #, markdown-text
 msgid ""
 "This should output something like the following, make sure it says `Active: "
@@ -21412,7 +21464,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:130
+#: src/en/tutorials/connect-config-elasticsearch.md:138
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -21424,20 +21476,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:139
+#: src/en/tutorials/connect-config-elasticsearch.md:147
 #, markdown-text
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:140
-#: src/en/tutorials/connect-config-elasticsearch.md:171
+#: src/en/tutorials/connect-config-elasticsearch.md:148
+#: src/en/tutorials/connect-config-elasticsearch.md:179
 #, no-wrap
 msgid "systemctl restart elasticsearch\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:144
+#: src/en/tutorials/connect-config-elasticsearch.md:152
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -21446,7 +21498,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:150
+#: src/en/tutorials/connect-config-elasticsearch.md:158
 #, markdown-text, no-wrap
 msgid ""
 "Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge "
@@ -21454,38 +21506,38 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:153
+#: src/en/tutorials/connect-config-elasticsearch.md:161
 #, markdown-text
 msgid "List installed elasticsearch plugins:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:154
-#: src/en/tutorials/connect-config-elasticsearch.md:175
+#: src/en/tutorials/connect-config-elasticsearch.md:162
+#: src/en/tutorials/connect-config-elasticsearch.md:183
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:159
+#: src/en/tutorials/connect-config-elasticsearch.md:167
 #, markdown-text
 msgid "The output should include `ingest-attachment`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:162
+#: src/en/tutorials/connect-config-elasticsearch.md:170
 #, markdown-text
 msgid "Otherwise, try reinstalling the `ingest-attachment` plugin and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:163
+#: src/en/tutorials/connect-config-elasticsearch.md:171
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:167
+#: src/en/tutorials/connect-config-elasticsearch.md:175
 #, no-wrap
 msgid ""
 "/usr/share/elasticsearch/bin/elasticsearch-plugin install "
@@ -21493,13 +21545,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:179
+#: src/en/tutorials/connect-config-elasticsearch.md:187
 #, markdown-text, no-wrap
 msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:183
+#: src/en/tutorials/connect-config-elasticsearch.md:191
 #, markdown-text
 msgid ""
 "Force Zammad to drop and rebuild the elasticsearch indexes, optionally with "
@@ -21507,13 +21559,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:189
+#: src/en/tutorials/connect-config-elasticsearch.md:197
 #, markdown-text
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:190
+#: src/en/tutorials/connect-config-elasticsearch.md:198
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -21530,7 +21582,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:207
+#: src/en/tutorials/connect-config-elasticsearch.md:215
 #, markdown-text
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
@@ -21539,7 +21591,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:212
+#: src/en/tutorials/connect-config-elasticsearch.md:220
 #, markdown-text
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
@@ -21549,7 +21601,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:213
+#: src/en/tutorials/connect-config-elasticsearch.md:221
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -21558,7 +21610,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:220
+#: src/en/tutorials/connect-config-elasticsearch.md:228
 #, markdown-text
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "

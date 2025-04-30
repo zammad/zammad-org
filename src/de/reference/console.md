@@ -514,6 +514,18 @@ Setting.set('proxy_username', 'some user')
 Setting.set('proxy_password', 'some pass')
 ```
 
+### Disable Asciifold
+
+This feature is turned on by default. In case you need a more exact search,
+you can turn it off:
+
+```ruby
+Setting.set('es_asciifolding', false)
+```
+
+After changing the setting, make sure to [rebuild the search
+index](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
+
 ## Versteckte Einstellungen
 
 In diesem Abschnitt finden Sie einige Einstellungen, die Sie nicht in der

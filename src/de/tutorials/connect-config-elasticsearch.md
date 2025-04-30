@@ -99,6 +99,16 @@ Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 ```
 
+### Asciifold
+
+By default, the [Asciifold feature of
+Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
+is enabled. This can be useful if you deal with text which includes
+diacritics and/or umlauts.
+
+In case you need a more exact search, you can turn it off via [rails
+console](/en/reference/console#disable-asciifold).
+
 ## Fehlerbehebung
 
 :::tip
