@@ -13,8 +13,8 @@ importers:
         version: 13.17.0
     devDependencies:
       '@mdit/plugin-icon':
-        specifier: ^0.16.5
-        version: 0.16.5
+        specifier: ^0.17.0
+        version: 0.17.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -319,8 +319,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@mdit/helper@0.16.0':
-    resolution: {integrity: sha512-vUmLSZp+7UXJIYxOya9BkD0OgjgQ+6gpX+htEnc4SKaDPx4S1E7h5TE6Wy4E9Gm/JhkMHoD6TdeoQwrN/I9cLQ==}
+  '@mdit/helper@0.17.0':
+    resolution: {integrity: sha512-XGaICLdXkJvjZRFVbEbB7vYrF8BcpOUSj8j+y57j9LUVuGjqgPK3st+/7I3DZL41cqJJ3g9uq3MoNKEYEJHx0A==}
     engines: {node: '>= 18'}
     peerDependencies:
       markdown-it: ^14.1.0
@@ -328,8 +328,8 @@ packages:
       markdown-it:
         optional: true
 
-  '@mdit/plugin-icon@0.16.5':
-    resolution: {integrity: sha512-9T34gnNrjCMdqNLnC1oi+kZT1iCnwlHAtH3D7sjVkcP8Cw4GoDoAGy50oyryivDlczrKubOFtF05lYAfXZauuA==}
+  '@mdit/plugin-icon@0.17.0':
+    resolution: {integrity: sha512-oPooLa/F+yJ3TdBhzw6YlIGaAQbqCR3kmor2tNoYxsZ+WQ7rGk9UIrjoB4eV8GzXEVsJX0arlDZfvgDgAgt93w==}
     peerDependencies:
       markdown-it: ^14.1.0
     peerDependenciesMeta:
@@ -2027,13 +2027,13 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@mdit/helper@0.16.0':
+  '@mdit/helper@0.17.0':
     dependencies:
       '@types/markdown-it': 14.1.2
 
-  '@mdit/plugin-icon@0.16.5':
+  '@mdit/plugin-icon@0.17.0':
     dependencies:
-      '@mdit/helper': 0.16.0
+      '@mdit/helper': 0.17.0
       '@types/markdown-it': 14.1.2
 
   '@pkgjs/parseargs@0.11.0':
