@@ -1,7 +1,7 @@
 {
   "private": "true",
   "devDependencies": {
-    "@mdit/plugin-icon": "^0.17.0",
+    "@mdit/plugin-icon": "^0.18.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "markdown-it-deflist": "^3.0.0",
