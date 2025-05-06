@@ -23,11 +23,10 @@ verwenden, wenn Sie nicht mindestens eine 2FA-Methode eingerichtet haben.
 Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Profil-Einstellungen > Zwei-Faktor-Authentifizierung_
 einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.
 
-Um eine Zwei-Faktor-Methode einzurichten, verwenden Sie das
-Schraubenschlüssel-Symbol und befolgen Sie die Schritte.
+To set up a two-factor method, use the ::+:: button and follow the steps.
 
-![Screenshot zeigt 2FA-Methoden in den Einstellungen des
-Benutzerprofils](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
+![Screenshot shows 2FA methods in user profile
+settings](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
 bestätigen.
@@ -51,9 +50,6 @@ Authentifizierungs-App](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf
 Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:
 
-- [Aegis
-  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis&hl=de)
-  (nur Android)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447)
 - [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
 - [Microsoft
@@ -185,15 +181,15 @@ indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche
 
 ## Festlegen einer Standard-2FA-Methode
 
-Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen,
-verwenden Sie das Menü ⋮ **Aktionen** neben der Methode in den
-2FA-Einstellungen Ihres Profils und wählen Sie **Als Standard festlegen**.
+To set an already set up two-factor method as default, use the ::a:: actions
+menu next to it in your profile's 2FA settings and choose **Set as
+default**.
 
 Ein kleines, blaues Label ("Standard") zeigt Ihnen an, welche Methode für
 Ihr Konto als Standard festgelegt ist.
 
-![Screenshot zeigt Liste der 2FA-Methoden und
-Standardmethode](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)
+![Screenshot shows list of 2FA methods and default
+method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)
 
 Die Standard Zwei-Faktor-Methode bedeutet, dass dies Ihre bevorzugte Methode
 beim Anmelden ist. Sie können beim Anmelden immer auf eine andere Methode
@@ -201,13 +197,12 @@ wechseln.
 
 ## Bearbeiten einer 2FA-Methode
 
-![Screenshot zeigt die Ausgabe von Wiederherstellungscodes während der
-2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)
+![Screenshot shows the action menu for an already set up 2FA
+method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
 
-Um eine bereits eingerichtete Zwei-Faktor-Methode zu bearbeiten, verwenden
-Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie
-**Bearbeiten**. In einem Dialog werden Sie aufgefordert, Ihr aktuelles
-Passwort zu bestätigen.
+To edit an already set up two-factor method, use the ::a:: actions menu next
+to it and choose **Edit**. In a modal dialog, you will be asked to confirm
+your current password.
 
 Sie werden abhängig von der gewählten Zwei-Faktor-Methode nochmal durch den
 Einrichtungs-Prozess geführt. Im Normalfall ersetzt eine bearbeitete Methode
@@ -216,7 +211,6 @@ Funktionen (z.B. mehrere Sicherheits-Schlüssel).
 
 ## Entfernen einer 2FA-Methode
 
-Um eine bereits eingerichtete Zwei-Faktor-Methode zu entfernen, verwenden
-Sie das Menü ⋮ **Aktionen** neben der Methode und wählen Sie
-**Entfernen**. In einem Dialog werden Sie aufgefordert, die Entfernung mit
-Ihrem aktuellen Passwort zu bestätigen.
+To remove an already set up two-factor method, use the ::a:: actions menu
+next to it and choose **Remove**. In a modal dialog, you will be asked to
+confirm the removal with your current password.

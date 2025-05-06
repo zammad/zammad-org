@@ -178,7 +178,10 @@
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,
-        "theme": "dark"
+        "theme": "dark",
+        "two_factor_authentication": {
+          "default": "authenticator_app"
+        }
       },
       "roles": ["Agent"]
     },
@@ -332,6 +335,10 @@
     {
       "name": "product_name",
       "value": "Fast Lane Support"
+    },
+    {
+      "name": "application_secret",
+      "value": "57fc753f1e3f964ccb60e7e3186db272ea49e0ee97ff1df6be81c79e9e676476c7734285e84dc03dbb4ce6bb28ad4461e22463ea45f2c8d2424f67b20b48e3e540efcac70cc59ab07470604ee5ff01d74cd172268def2147fe88e056ed91f929eeaca439772b9c16cdd2503ac5730fe675ad63e4e3c596239c2d87d2a04a2e55"
     },
     {
       "name": "chat",

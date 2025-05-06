@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-04-30 16:14+0300\n"
+"POT-Creation-Date: 2025-05-05 16:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1097,13 +1097,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:124
+#: src/en/contribute/style-guide.md:123
 #, markdown-text, no-wrap
 msgid "Heading Structure"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:128
+#: src/en/contribute/style-guide.md:127
 #, markdown-text
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
@@ -1112,49 +1112,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:130
+#: src/en/contribute/style-guide.md:129
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:132
+#: src/en/contribute/style-guide.md:131
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:134
+#: src/en/contribute/style-guide.md:133
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:136
+#: src/en/contribute/style-guide.md:135
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:138
+#: src/en/contribute/style-guide.md:137
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:140
+#: src/en/contribute/style-guide.md:139
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:141
+#: src/en/contribute/style-guide.md:140
 #, markdown-text, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:145
+#: src/en/contribute/style-guide.md:144
 #, markdown-text
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
@@ -1163,7 +1163,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:146
+#: src/en/contribute/style-guide.md:145
 #, no-wrap
 msgid ""
 "\n"
@@ -1174,13 +1174,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:154
+#: src/en/contribute/style-guide.md:153
 #, markdown-text, no-wrap
 msgid "Custom boxes"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:156
+#: src/en/contribute/style-guide.md:155
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1188,8 +1188,8 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:156 src/en/contribute/style-guide.md:170
-#: src/en/contribute/style-guide.md:184 src/en/contribute/style-guide.md:198
+#: src/en/contribute/style-guide.md:155 src/en/contribute/style-guide.md:169
+#: src/en/contribute/style-guide.md:183 src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "\n"
@@ -1197,14 +1197,14 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info|details Usage|info)
-#: src/en/contribute/style-guide.md:156
+#: src/en/contribute/style-guide.md:155
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger|details Usage)
-#: src/en/contribute/style-guide.md:156 src/en/contribute/style-guide.md:170
-#: src/en/contribute/style-guide.md:184 src/en/contribute/style-guide.md:198
+#: src/en/contribute/style-guide.md:155 src/en/contribute/style-guide.md:169
+#: src/en/contribute/style-guide.md:183 src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "```\n"
@@ -1212,7 +1212,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:170
+#: src/en/contribute/style-guide.md:169
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1220,13 +1220,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip|details Usage|tip)
-#: src/en/contribute/style-guide.md:170
+#: src/en/contribute/style-guide.md:169
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:184
+#: src/en/contribute/style-guide.md:183
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1234,13 +1234,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning|details Usage|warning)
-#: src/en/contribute/style-guide.md:184
+#: src/en/contribute/style-guide.md:183
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:198
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1248,13 +1248,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger|details Usage|warning)
-#: src/en/contribute/style-guide.md:198
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:212
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1266,13 +1266,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|details Box title shown in collapsed state)
-#: src/en/contribute/style-guide.md:212
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:212
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid ""
 "\n"
@@ -1281,13 +1281,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:227
+#: src/en/contribute/style-guide.md:226
 #, markdown-text, no-wrap
 msgid "Definition lists"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:231
+#: src/en/contribute/style-guide.md:230
 #, markdown-text, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1295,7 +1295,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:235
+#: src/en/contribute/style-guide.md:234
 #, markdown-text, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" "
@@ -1305,7 +1305,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:236
+#: src/en/contribute/style-guide.md:235
 #, no-wrap
 msgid ""
 "\n"
@@ -3690,7 +3690,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:23
 #, markdown-text
-msgid "To set up a two-factor method, use the wrench icon and follow the steps."
+msgid "To set up a two-factor method, use the ::+:: button and follow the steps."
 msgstr ""
 
 #. type: Plain text
@@ -3698,7 +3698,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows 2FA methods in user profile "
-"settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+"settings](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3750,28 +3750,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
-#, markdown-text
-msgid ""
-"[Aegis "
-"Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis) "
-"(Android only)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 #, markdown-text
 msgid "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 #, markdown-text
 msgid "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 #, markdown-text
 msgid ""
 "[Microsoft "
@@ -3779,7 +3770,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:50
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 #, markdown-text
 msgid ""
 "Next, open the authenticator app on your device and find a **Scan QR Code** "
@@ -3788,7 +3779,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/two-factor-auth.md:51
+#: src/en/documentation/use/guides/two-factor-auth.md:48
 #, no-wrap
 msgid ""
 "If your device is not able to scan the QR code, first click on it to reveal "
@@ -3797,7 +3788,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:58
+#: src/en/documentation/use/guides/two-factor-auth.md:55
 #, markdown-text
 msgid ""
 "Your authenticator app should immediately add the new entry for your Zammad "
@@ -3806,7 +3797,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:61
+#: src/en/documentation/use/guides/two-factor-auth.md:58
 #, markdown-text
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
@@ -3815,13 +3806,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:62
+#: src/en/documentation/use/guides/two-factor-auth.md:59
 #, markdown-text, no-wrap
 msgid "Security Key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:67
+#: src/en/documentation/use/guides/two-factor-auth.md:64
 #, markdown-text
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
@@ -3831,7 +3822,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:69
+#: src/en/documentation/use/guides/two-factor-auth.md:66
 #, markdown-text
 msgid ""
 "Initially, you will be presented with an empty side panel instructing you to "
@@ -3839,7 +3830,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:71
+#: src/en/documentation/use/guides/two-factor-auth.md:68
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -3847,7 +3838,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:74
+#: src/en/documentation/use/guides/two-factor-auth.md:71
 #, markdown-text
 msgid ""
 "Then, enter a descriptive **Name for this security key** you will be "
@@ -3856,7 +3847,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:77
+#: src/en/documentation/use/guides/two-factor-auth.md:74
 #, markdown-text
 msgid ""
 "Next, depending you your browser, you will be presented with different "
@@ -3865,7 +3856,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:79
+#: src/en/documentation/use/guides/two-factor-auth.md:76
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -3873,7 +3864,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:82
+#: src/en/documentation/use/guides/two-factor-auth.md:79
 #, markdown-text
 msgid ""
 "You may be asked by the browser to interact with a key or a device so you "
@@ -3882,7 +3873,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:83
+#: src/en/documentation/use/guides/two-factor-auth.md:80
 #, no-wrap
 msgid ""
 "You will have limited time (measured in tens of seconds) to register your "
@@ -3891,7 +3882,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:90
+#: src/en/documentation/use/guides/two-factor-auth.md:87
 #, markdown-text
 msgid ""
 "If the registration was successful, the modal dialog will close and you are "
@@ -3900,7 +3891,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:92
+#: src/en/documentation/use/guides/two-factor-auth.md:89
 #, markdown-text
 msgid ""
 "Once set up, security keys can be managed by choosing **Edit** action next "
@@ -3908,7 +3899,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:96
+#: src/en/documentation/use/guides/two-factor-auth.md:93
 #, markdown-text
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
@@ -3919,13 +3910,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:97
+#: src/en/documentation/use/guides/two-factor-auth.md:94
 #, markdown-text, no-wrap
 msgid "Sign-in"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:102
+#: src/en/documentation/use/guides/two-factor-auth.md:99
 #, markdown-text
 msgid ""
 "When you set up two-factor authentication for your Zammad account, during "
@@ -3935,7 +3926,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:105
+#: src/en/documentation/use/guides/two-factor-auth.md:102
 #, markdown-text
 msgid ""
 "In case you are having issues during sign-in with your preferred two-factor "
@@ -3944,7 +3935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:108
+#: src/en/documentation/use/guides/two-factor-auth.md:105
 #, markdown-text
 msgid ""
 "Look for **Try another method** link below the sign in box. In case you "
@@ -3953,7 +3944,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:110
+#: src/en/documentation/use/guides/two-factor-auth.md:107
 #, markdown-text
 msgid ""
 "![Log in screen with link to \"Try another "
@@ -3961,7 +3952,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:114
+#: src/en/documentation/use/guides/two-factor-auth.md:111
 #, markdown-text
 msgid ""
 "Alternatively, you can also use one of your recovery codes, which are "
@@ -3971,7 +3962,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:116
+#: src/en/documentation/use/guides/two-factor-auth.md:113
 #, markdown-text
 msgid ""
 "![Log in screen with recovery codes "
@@ -3979,7 +3970,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:117
+#: src/en/documentation/use/guides/two-factor-auth.md:114
 #, no-wrap
 msgid ""
 "You can use a single recovery code only once! In case you exhaust the list "
@@ -3988,13 +3979,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:122
+#: src/en/documentation/use/guides/two-factor-auth.md:119
 #, markdown-text, no-wrap
 msgid "Generate Recovery Codes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:126
+#: src/en/documentation/use/guides/two-factor-auth.md:123
 #, markdown-text
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
@@ -4003,7 +3994,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:129
+#: src/en/documentation/use/guides/two-factor-auth.md:126
 #, markdown-text
 msgid ""
 "If the feature is enabled by the admin, recovery codes will be automatically "
@@ -4012,7 +4003,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:132
+#: src/en/documentation/use/guides/two-factor-auth.md:129
 #, markdown-text
 msgid ""
 "You will be asked to print out or save the generated recovery codes in a "
@@ -4020,7 +4011,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:134
+#: src/en/documentation/use/guides/two-factor-auth.md:131
 #, markdown-text
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA "
@@ -4028,7 +4019,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:138
+#: src/en/documentation/use/guides/two-factor-auth.md:135
 #, markdown-text
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
@@ -4038,22 +4029,22 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:139
+#: src/en/documentation/use/guides/two-factor-auth.md:136
 #, markdown-text, no-wrap
 msgid "Set a Default 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:143
+#: src/en/documentation/use/guides/two-factor-auth.md:140
 #, markdown-text
 msgid ""
-"To set an already set up two-factor method as default, use the ⋮ **Actions** "
+"To set an already set up two-factor method as default, use the ::a:: actions "
 "menu next to it in your profile's 2FA settings and choose **Set as "
 "default**."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:146
+#: src/en/documentation/use/guides/two-factor-auth.md:143
 #, markdown-text
 msgid ""
 "In order to identify your current default two-factor authentication method, "
@@ -4061,15 +4052,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:148
+#: src/en/documentation/use/guides/two-factor-auth.md:145
 #, markdown-text
 msgid ""
 "![Screenshot shows list of 2FA methods and default "
-"method](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)"
+"method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:151
+#: src/en/documentation/use/guides/two-factor-auth.md:148
 #, markdown-text
 msgid ""
 "A default two-factor authentication method is just your preferred method "
@@ -4078,30 +4069,30 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:152
+#: src/en/documentation/use/guides/two-factor-auth.md:149
 #, markdown-text, no-wrap
 msgid "Edit a 2FA Method"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/two-factor-auth.md:152
+#, markdown-text
+msgid ""
+"![Screenshot shows the action menu for an already set up 2FA "
+"method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-menu.png)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:155
 #, markdown-text
 msgid ""
-"![Screenshot shows output of recovery codes during 2FA "
-"setup](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:158
-#, markdown-text
-msgid ""
-"To edit an already set up two-factor method, use the ⋮ **Actions** menu next "
+"To edit an already set up two-factor method, use the ::a:: actions menu next "
 "to it and choose **Edit**. In a modal dialog, you will be asked to confirm "
 "your current password."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:162
+#: src/en/documentation/use/guides/two-factor-auth.md:159
 #, markdown-text
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
@@ -4111,16 +4102,16 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:163
+#: src/en/documentation/use/guides/two-factor-auth.md:160
 #, markdown-text, no-wrap
 msgid "Remove a 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:166
+#: src/en/documentation/use/guides/two-factor-auth.md:163
 #, markdown-text
 msgid ""
-"To remove an already set up two-factor method, use the ⋮ **Actions** menu "
+"To remove an already set up two-factor method, use the ::a:: actions menu "
 "next to it and choose **Remove**. In a modal dialog, you will be asked to "
 "confirm the removal with your current password."
 msgstr ""

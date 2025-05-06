@@ -24,12 +24,18 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('loginDesktopView', (userLogin, userPassword) => {
+Cypress.Commands.add('loginDesktopView', (userLogin, userPassword, recoveryCode = null) => {
   cy.visit('/desktop')
   cy.url().should('match', new RegExp('/desktop/login$'))
   cy.get('[name="login"]').type(userLogin)
   cy.get('[name="password"]').type(userPassword)
   cy.get('button').contains('Sign in').click()
+  if (recoveryCode) {
+    cy.get('a').contains('Try another method').click()
+    cy.get('a').contains('Or use one of your recovery codes.').click()
+    cy.get('[name="code"]').type(recoveryCode)
+    cy.get('button').contains('Sign in').click()
+  }
   cy.url().should('not.include', '/desktop/login')
 })
 

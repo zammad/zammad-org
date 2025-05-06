@@ -148,7 +148,6 @@ documentation. After these you can find a section with some
 | Delete button             | ::x::                         | \:\:x\:\:                       |
 | Action menu               | ::a::                         | \:\:a\:\:                       |
 
-
 #### Структура наслова
 
 Every documentation file must include exactly one title on top level (like
@@ -271,4 +270,3 @@ This is the content shown in the expanded state.
 ```
 
 :::
-

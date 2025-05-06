@@ -160,7 +160,6 @@ aufgeführt.
 | Delete button             | ::x::                         | \:\:x\:\:                       |
 | Action menu               | ::a::                         | \:\:a\:\:                       |
 
-
 #### Struktur der Überschrift
 
 Jede Dokumentationsdatei muss genau einen Titel auf der obersten Ebene
@@ -285,4 +284,3 @@ Erster Begriff <Badge type="info" text="tag1" />
 ```
 
 :::
-

@@ -22,10 +22,10 @@ set up at least one 2FA method.
 If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
 up. Depending on the enabled two-factor methods, you may see one or more options in the table.
 
-To set up a two-factor method, use the wrench icon and follow the steps.
+To set up a two-factor method, use the ::+:: button and follow the steps.
 
 ![Screenshot shows 2FA methods in user profile
-settings](/screenshots/cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)
+settings](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 У дијалогу ћете бити упитани да потврдите вашу тренутну лозинку.
 
@@ -47,9 +47,6 @@ configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
 Прво, проверите да ли сте инсталирали апликацију за аутентификацију на свом
 мобилном уређају. Препоручене апликације су:
 
-- [Aegis
-  Authenticator](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
-  (Android only)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447)
 - [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
 - [Microsoft
@@ -174,7 +171,7 @@ button in your profile's 2FA settings.
 
 ## Постављање подразумеваног метода двофакторске аутентификације
 
-To set an already set up two-factor method as default, use the ⋮ **Actions**
+To set an already set up two-factor method as default, use the ::a:: actions
 menu next to it in your profile's 2FA settings and choose **Set as
 default**.
 
@@ -182,7 +179,7 @@ In order to identify your current default two-factor authentication method,
 look for a small blue badge next to the method name.
 
 ![Screenshot shows list of 2FA methods and default
-method](/screenshots/two-factor-auth-usage/2fa-profile-overview.png)
+method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)
 
 A default two-factor authentication method is just your preferred method
 during the sign-in process. You will always have an option to try signing in
@@ -190,10 +187,10 @@ using another method.
 
 ## Edit a 2FA Method
 
-![Screenshot shows output of recovery codes during 2FA
-setup](/screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)
+![Screenshot shows the action menu for an already set up 2FA
+method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
 
-To edit an already set up two-factor method, use the ⋮ **Actions** menu next
+To edit an already set up two-factor method, use the ::a:: actions menu next
 to it and choose **Edit**. In a modal dialog, you will be asked to confirm
 your current password.
 
@@ -204,6 +201,6 @@ your current password.
 
 ## Уклањање метода двофакторске аутентификације
 
-To remove an already set up two-factor method, use the ⋮ **Actions** menu
+To remove an already set up two-factor method, use the ::a:: actions menu
 next to it and choose **Remove**. In a modal dialog, you will be asked to
 confirm the removal with your current password.
