@@ -123,23 +123,44 @@ unter _Verwaltung > Rollen_, welche Rolle als **Aktiv bei Neuanmeldung** ausgew�
 
 ## Löschen
 
+::: danger
+**This is a permanent removal**
+
+Please note that removing users cannot be undone. Zammad will also
+remove references - thus potentially tickets!
+:::
+
+Technically, you can delete users via ``/api/v1/users/{id}``. However, we
+strongly encourage you to use the data privacy in Zammad's UI or the data
+privacy endpoint instead (see section below). Using one of them makes sure
+that related information like tickets are deleted as well.
+
+### Via Data Privacy Endpoint
+
+Required permission: `admin.data_privacy`
+
+`POST`-Request sent: `/api/v1/data_privacy_task`
+
+:::: details
+
+::: tabs key:reqres
+
+=== Request
+
+<<< @/fixtures/rest-api/users/delete-privacy-task-req.json
+
+=== Response
+
+<<< @/fixtures/rest-api/users/delete-privacy-task-res.json
+
+:::
+::::
+
+### Via User Endpoint <Badge type="danger" text="not recommended" />
+
 Erforderliche Berechtigung: `admin.user`
 
 `DELETE`-Anfrage gesendet: `/api/v1/users/{id}`
-
-::: danger
-**Dies ist eine dauerhafte Entfernung**
-
-Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig gemacht werden kann. Zammad wird auch
-Referenzen entfernen - also möglicherweise auch Tickets!
-
-Das Entfernen von Benutzern mit Referenzen in z.B. Aktivitäts-Verläufen ist nicht möglich
-über API - dies wird angezeigt durch
-`"Fehler": "Kann nicht gelöscht werden, Objekt hat Referenzen"`. Dies ist _kein_ Fehler.
-
-Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzeroberfläche für
-mehr Kontrolle (Admin-Interface unter _System > Datenschutz_).
-:::
 
 ::: details Show response
 

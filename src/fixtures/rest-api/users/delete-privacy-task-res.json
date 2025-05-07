@@ -1,0 +1,24 @@
+# HTTP-Code 201 Created
+
+{
+  "id": 5,
+  "state": "in process",
+  "deletable_type": "User",
+  "deletable_id": 19,
+  "preferences": {
+    "owner_tickets": [],
+    "owner_tickets_count": 0,
+    "customer_tickets": [],
+    "customer_tickets_count": 0,
+    "user": {
+      "firstname": "A*r",
+      "lastname": "W*t",
+      "email": "a*t@j*s.com",
+      "organization": "J*s c*r p*s"
+    }
+  },
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2025-05-07T08:13:51.350Z",
+  "updated_at": "2025-05-07T08:13:51.350Z"
+}

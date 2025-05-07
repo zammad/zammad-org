@@ -123,23 +123,44 @@ under _Manage > Roles_ and check which is selected as **Default at signup**.
 
 ## Delete
 
-Required permission: `admin.user`
-
-`DELETE`-Request sent: `/api/v1/users/{id}`
-
 ::: danger
 **This is a permanent removal**
 
 Please note that removing users cannot be undone. Zammad will also
 remove references - thus potentially tickets!
-
-Removing users with references in e.g. activity streams is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
-
-Consider using Zammad's Data Privacy feature via UI for
-more control instead (admin interface under _System > Data privacy_).
 :::
+
+Technically, you can delete users via ``/api/v1/users/{id}``. However, we
+strongly encourage you to use the data privacy in Zammad's UI or the data
+privacy endpoint instead (see section below). Using one of them makes sure
+that related information like tickets are deleted as well.
+
+### Via Data Privacy Endpoint
+
+Required permission: `admin.data_privacy`
+
+`POST`-Request sent: `/api/v1/data_privacy_task`
+
+:::: details
+
+::: tabs key:reqres
+
+=== Request
+
+<<< @/fixtures/rest-api/users/delete-privacy-task-req.json
+
+=== Response
+
+<<< @/fixtures/rest-api/users/delete-privacy-task-res.json
+
+:::
+::::
+
+### Via User Endpoint <Badge type="danger" text="not recommended" />
+
+Required permission: `admin.user`
+
+`DELETE`-Request sent: `/api/v1/users/{id}`
 
 ::: details Show response
 

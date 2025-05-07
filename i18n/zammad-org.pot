@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-05 16:14+0100\n"
+"POT-Creation-Date: 2025-05-07 13:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5799,7 +5799,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/tutorials/migrate.md:544
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:544
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -20310,38 +20310,79 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/rest-api/user.md:127
-#, markdown-text
-msgid "Required permission: `admin.user`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/user.md:129
-#, markdown-text
-msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
-msgstr ""
-
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/user.md:130
+#: src/en/reference/rest-api/user.md:126
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
 "\n"
 "Please note that removing users cannot be undone. Zammad will also\n"
 "remove references - thus potentially tickets!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:137
+#, markdown-text
+msgid ""
+"Technically, you can delete users via ``/api/v1/users/{id}``. However, we "
+"strongly encourage you to use the data privacy in Zammad's UI or the data "
+"privacy endpoint instead (see section below). Using one of them makes sure "
+"that related information like tickets are deleted as well."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/user.md:138
+#, markdown-text, no-wrap
+msgid "Via Data Privacy Endpoint"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:141
+#, markdown-text
+msgid "Required permission: `admin.data_privacy`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:143
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/data_privacy_task`"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/user.md:144
+#, no-wrap
+msgid ""
 "\n"
-"Removing users with references in e.g. activity streams is not possible\n"
-"via API - this will be indicated by\n"
-"`\"error\": \"Can't delete, object has references.\"`. This is _not_ a "
-"bug.\n"
+"=== Request\n"
 "\n"
-"Consider using Zammad's Data Privacy feature via UI for\n"
-"more control instead (admin interface under _System > Data privacy_).\n"
+"<<< @/fixtures/rest-api/users/delete-privacy-task-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/users/delete-privacy-task-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/user.md:159
+#, markdown-text, no-wrap
+msgid "Via User Endpoint <Badge type=\"danger\" text=\"not recommended\" />"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:162
+#, markdown-text
+msgid "Required permission: `admin.user`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:164
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/user.md:144
+#: src/en/reference/rest-api/user.md:165
 #, no-wrap
 msgid ""
 "\n"
