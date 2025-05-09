@@ -101,13 +101,13 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 
 ### Asciifold
 
-By default, the [Asciifold feature of
+Standardmäßig ist die [Asciifold-Funktion von
 Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
-is enabled. This can be useful if you deal with text which includes
-diacritics and/or umlauts.
+aktiviert. Dies kann nützlich sein, wenn Sie mit Text arbeiten, der
+Diakritika und/oder Umlaute enthält.
 
-In case you need a more exact search, you can turn it off via [rails
-console](/en/reference/console#disable-asciifold).
+Falls Sie eine genauere Suche benötigen, können Sie diese über [Rails
+Konsole](/de/reference/console#asciifold-deaktivieren) deaktivieren.
 
 ## Fehlerbehebung
 

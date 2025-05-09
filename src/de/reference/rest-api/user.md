@@ -124,22 +124,24 @@ unter _Verwaltung > Rollen_, welche Rolle als **Aktiv bei Neuanmeldung** ausgew�
 ## Löschen
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing users cannot be undone. Zammad will also
-remove references - thus potentially tickets!
+Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig gemacht werden kann. Zammad wird auch
+Referenzen entfernen - also möglicherweise Tickets!
 :::
 
-Technically, you can delete users via ``/api/v1/users/{id}``. However, we
-strongly encourage you to use the data privacy in Zammad's UI or the data
-privacy endpoint instead (see section below). Using one of them makes sure
-that related information like tickets are deleted as well.
+Technisch gesehen können Sie Benutzer über `/api/v1/users/{id}` löschen. Wir
+empfehlen Ihnen jedoch dringend, stattdessen eine Datenschutz-Löschaufgabe
+in der Benutzeroberfläche von Zammad oder den Privacy-Endpunkt zu verwenden
+(siehe Abschnitt unten). Die Verwendung einer der beiden Möglichkeiten
+stellt sicher, dass auch zugehörige Informationen wie Tickets gelöscht
+werden.
 
-### Via Data Privacy Endpoint
+### Per Privacy-Endpunkt
 
-Required permission: `admin.data_privacy`
+Erforderliche Berechtigung: `admin.data_privacy`
 
-`POST`-Request sent: `/api/v1/data_privacy_task`
+`POST`-Request gesendet: `/api/v1/data_privacy_task`
 
 :::: details
 
@@ -156,7 +158,7 @@ Required permission: `admin.data_privacy`
 :::
 ::::
 
-### Via User Endpoint <Badge type="danger" text="not recommended" />
+### Per User Endpunkt <Badge type="danger" text="not recommended" />
 
 Erforderliche Berechtigung: `admin.user`
 

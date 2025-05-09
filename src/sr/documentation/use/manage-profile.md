@@ -56,7 +56,7 @@ ticket summary AI feature is shown below the articles in the ticket detail
 view. This option is only available, if the feature is configured by your
 admin.
 
-### Jезик
+### Језик
 
 Одаберите ваш жељни језик Zammad-а.
 

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-04-29 12:41+0000\n"
-"PO-Revision-Date: 2025-04-19 14:00+0000\n"
+"POT-Creation-Date: 2025-05-09 11:38+0200\n"
+"PO-Revision-Date: 2025-05-01 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.11\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -205,18 +205,6 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -674,7 +662,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:137
-#: src/en/tutorials/connect-config-elasticsearch.md:99
+#: src/en/tutorials/connect-config-elasticsearch.md:107
 #: src/en/tutorials/sso-kerberos.md:553
 #, no-wrap
 msgid "Troubleshooting"
@@ -961,7 +949,7 @@ msgid "Style"
 msgstr "Стил"
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Use short and clear sentences and prioritize information over complexity."
 msgstr ""
@@ -969,7 +957,7 @@ msgstr ""
 "сложеност."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Page title and headings: capitalize the first letter of all words except "
 "minor words (see [title case](https://en.wikipedia.org/wiki/Title_case)"
@@ -980,7 +968,7 @@ msgstr ""
 "{target=_blank})."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Use breadcrumb separation for paths and locations with `>` as separator and "
 "format path in italics, e.g.  _Settings > Channels > Chat_."
@@ -989,21 +977,21 @@ msgstr ""
 "курзиву, нпр. _Подешавања > Канали > Ћаскање_."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "Use code highlighting to emphasize programming snippets."
 msgstr ""
 "Користите назначавање изворног кода да бисте нагласили секције о програмском "
 "језику."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "Use [info, tip, warning and danger boxes](#custom-boxes) when needed."
 msgstr ""
 "Користите [оквире са информацијама, саветима и упозорењима](#прилагођени-"
 "оквири) по потреби."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Use a [detail box](#custom-boxes) when content may not be relevant for all "
 "the readers or may break the reading flow otherwise."
@@ -1012,7 +1000,14 @@ msgstr ""
 "релевантан за све читаоце и има потенцијал да прекине ток мисли)."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
+msgid ""
+"If available, use icons for important UI buttons like ::+:: and ::x:: (see "
+"[examples](#text-and-ui) below)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Include screenshots when necessary. The preferred way of adding screenshots "
 "of Zammad is by creating them automatically [using Cypress](https://"
@@ -1031,22 +1026,22 @@ msgstr ""
 "Cypress-а изван обима ове документације."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "Provide step-by-step instructions with clear explanations."
 msgstr "Приложите упутства корак по корак са јасним објашњењима."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "Use examples or scenarios to illustrate concepts."
 msgstr "Користите примере или сценарије да илуструјете концепте."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "Include relevant images or diagrams when necessary."
 msgstr "Убаците релевантне слике или дијаграме по потреби."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid ""
 "Spell abbreviations full the first time they are used or include them in the "
 "glossary and link to them. Broadly used and common abbreviations may be "
@@ -1057,18 +1052,18 @@ msgstr ""
 "искључене из овог правила."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:81
+#: src/en/contribute/style-guide.md:82
 msgid "If in doubt, align it to the existing documentation."
 msgstr "Ако сте у недоумици, ускладите се са постојећом документацијом."
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:82
+#: src/en/contribute/style-guide.md:83
 #, no-wrap
 msgid "Conventions"
 msgstr "Конвенције"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:88
+#: src/en/contribute/style-guide.md:89
 msgid ""
 "The documentation stack includes automated checks (linting) to ensure "
 "compliance with the style guide and common rules for Markdown files. To "
@@ -1085,7 +1080,7 @@ msgstr ""
 "ваших измена. У супротном, генерисање документације неће успети."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:92
+#: src/en/contribute/style-guide.md:93
 msgid ""
 "The used linting has some built in rules which you can find [here](https://"
 "github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
@@ -1097,7 +1092,7 @@ msgstr ""
 "{target=_blank}. Нека важнија и прилагођена правила су излистана испод."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "Line length of 120 characters in the source file may not be exceeded for "
 "standard text. Make sure to use a line break before reaching this limit. A "
@@ -1110,75 +1105,75 @@ msgstr ""
 "на специјалан садржај као путање на снимке екрана и дугачке везе."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid "Multiple consecutive empty lines are not allowed."
 msgstr "Више узастопних празних редова није дозвољено."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "Empty lines before and after headings and fenced code blocks are required."
 msgstr "Празни редови пре и после наслова и блокова кôда су обавезни."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
 "language tag, e.g. `ruby` or `sh`. If no language is applicable, use `plain`."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid "Use `-` for bullet point lists (unordered lists) like this one."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "To easily distinguish between **bold** and _italics_, use `_` around the "
 "text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid "Multiple headings with the same content are not allowed."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid "Each document must have exactly one `h1` heading as title."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "Resolution of manual full page screenshots for _mobile view_ is 400x867 "
 "pixels."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
 msgid ""
 "Resolution of manual full page screenshots for _desktop view_ is 1920x1080 "
 "pixels."
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:108
+#: src/en/contribute/style-guide.md:109
 #, fuzzy, no-wrap
 #| msgid "Example:"
 msgid "Examples"
 msgstr "Пример:"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:110
+#: src/en/contribute/style-guide.md:111
 #, fuzzy, no-wrap
 #| msgid "Rails commands"
 msgid "Text and UI"
 msgstr "Rails команде"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:118
+#: src/en/contribute/style-guide.md:122
 #, fuzzy, no-wrap
 #| msgid ""
 #| "| Type in Zammad      | Highlighting                  | Markdown syntax                 |\n"
@@ -1190,10 +1185,13 @@ msgstr "Rails команде"
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
 "|-------------------------- |-------------------------------|---------------------------------|\n"
-"| Buttons                   | `Sign in`                     | \\`Sign in\\`                     |\n"
+"| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
 "| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
 "| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
 "| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+"| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+"| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
+"| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
 msgstr ""
 "| Тип у Zammad-у       | Истицање                      | Markdown синтакса               |\n"
 "|----------------------|-------------------------------|---------------------------------|\n"
@@ -1203,13 +1201,13 @@ msgstr ""
 "| Пречица на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:119
+#: src/en/contribute/style-guide.md:123
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:123
+#: src/en/contribute/style-guide.md:127
 #, fuzzy
 #| msgid ""
 #| "Every documentation file should include a title on top level (#). Lower "
@@ -1225,44 +1223,44 @@ msgstr ""
 "размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:125
+#: src/en/contribute/style-guide.md:129
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:127
+#: src/en/contribute/style-guide.md:131
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:129
+#: src/en/contribute/style-guide.md:133
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:131
+#: src/en/contribute/style-guide.md:135
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:133
+#: src/en/contribute/style-guide.md:137
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:135
+#: src/en/contribute/style-guide.md:139
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:136
+#: src/en/contribute/style-guide.md:140
 #, fuzzy, no-wrap
 #| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:140
+#: src/en/contribute/style-guide.md:144
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
 "badges available, see <https://vitepress.dev/reference/default-theme-"
@@ -1272,7 +1270,7 @@ msgstr ""
 "погледајте <https://vitepress.dev/reference/default-theme-badge#usage>."
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:141
+#: src/en/contribute/style-guide.md:145
 #, no-wrap
 msgid ""
 "\n"
@@ -1288,13 +1286,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:149
+#: src/en/contribute/style-guide.md:153
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:151
+#: src/en/contribute/style-guide.md:155
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1304,8 +1302,8 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:151 src/en/contribute/style-guide.md:165
-#: src/en/contribute/style-guide.md:179 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:155 src/en/contribute/style-guide.md:169
+#: src/en/contribute/style-guide.md:183 src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "\n"
@@ -1313,14 +1311,14 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info|details Usage|info)
-#: src/en/contribute/style-guide.md:151
+#: src/en/contribute/style-guide.md:155
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Ово је информациони оквир.\n"
 
 #. type: Fenced div block (danger|details Usage)
-#: src/en/contribute/style-guide.md:151 src/en/contribute/style-guide.md:165
-#: src/en/contribute/style-guide.md:179 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:155 src/en/contribute/style-guide.md:169
+#: src/en/contribute/style-guide.md:183 src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "```\n"
@@ -1328,7 +1326,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:165
+#: src/en/contribute/style-guide.md:169
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1338,14 +1336,14 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip|details Usage|tip)
-#: src/en/contribute/style-guide.md:165
+#: src/en/contribute/style-guide.md:169
 #, fuzzy, no-wrap
 #| msgid "This is a tip.\n"
 msgid "This is a tip box.\n"
 msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:179
+#: src/en/contribute/style-guide.md:183
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1355,14 +1353,14 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (warning|details Usage|warning)
-#: src/en/contribute/style-guide.md:179
+#: src/en/contribute/style-guide.md:183
 #, fuzzy, no-wrap
 #| msgid "This is a warning.\n"
 msgid "This is a warning box.\n"
 msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1372,13 +1370,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger|details Usage|warning)
-#: src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:207
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1396,13 +1394,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|details Box title shown in collapsed state)
-#: src/en/contribute/style-guide.md:207
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:207
+#: src/en/contribute/style-guide.md:211
 #, no-wrap
 msgid ""
 "\n"
@@ -1411,13 +1409,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:222
+#: src/en/contribute/style-guide.md:226
 #, no-wrap
 msgid "Definition lists"
 msgstr "Листе дефиниција"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:226
+#: src/en/contribute/style-guide.md:230
 #, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1427,7 +1425,7 @@ msgstr ""
 ": Ово је дефиниција првог термина.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:230
+#: src/en/contribute/style-guide.md:234
 #, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1439,7 +1437,7 @@ msgstr ""
 ": Ово је додатна дефиниција другог термина.\n"
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:231
+#: src/en/contribute/style-guide.md:235
 #, no-wrap
 msgid ""
 "\n"
@@ -1903,9 +1901,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:107
+#, fuzzy
+#| msgid ""
+#| "If your admin already created a macro, you can execute it in the ticket "
+#| "detail view by clicking the three dots button `︙` in the right corner of "
+#| "the footer bar and select the macro you want to execute."
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
-"detail view by clicking the three dots button `︙` in the right corner of "
+"detail view by clicking the three dots button ::a:: in the right corner of "
 "the footer bar and select the macro you want to execute."
 msgstr ""
 "Уколико је ваш администратор већ додао макро, можете га извршити у детаљном "
@@ -1967,8 +1970,8 @@ msgstr ""
 #| "existing tags and add new ones (if your admin didn't disable to add new "
 #| "tags)."
 msgid ""
-"In the ticket sidebar, you can find a section which is labels as **Tags**. "
-"Add a tag by clicking on the `+` button. You can select existing tags and "
+"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
+"Add a tag by clicking on the ::+:: button. You can select existing tags and "
 "add new ones (if your admin didn't disable to add new tags)."
 msgstr ""
 "У бочној траци тикета, можете пронаћи одељак под насловом „Ознаке”. Додајте "
@@ -1977,8 +1980,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:131
+#, fuzzy
+#| msgid ""
+#| "Remove them by simply click on the `X` button. Be aware that there is no "
+#| "confirmation dialog for deleting a tag from a ticket."
 msgid ""
-"Remove them by simply click on the `X` button. Be aware that there is no "
+"Remove them by simply click on the ::x:: button. Be aware that there is no "
 "confirmation dialog for deleting a tag from a ticket."
 msgstr ""
 "Уклоните их једноставним кликом на дугме `X`. Обратите пажњу да неће бити "
@@ -2059,8 +2066,12 @@ msgstr "Уређивање постојећег списка:"
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/advanced-features.md:158
+#, fuzzy
+#| msgid ""
+#| "Rename it by clicking on the title or using the `︙` menu in the sidebar "
+#| "header."
 msgid ""
-"Rename it by clicking on the title or using the `︙` menu in the sidebar "
+"Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
 msgstr ""
 "Промените назив кликом на наслов или коришћењем падајућег менија `︙` у "
@@ -2068,14 +2079,20 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/advanced-features.md:158
-msgid "Add checklist items by clicking the `+` button."
+#, fuzzy
+#| msgid "Add checklist items by clicking the `+` button."
+msgid "Add checklist items by clicking the ::+:: button."
 msgstr "Додајте задатке на списак кликом на дугме `+` ."
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/advanced-features.md:158
+#, fuzzy
+#| msgid ""
+#| "Change the text of the checklist items, either by just clicking on it or "
+#| "using the `︙` menu next to the item."
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
-"using the `︙` menu next to the item."
+"using the ::a:: menu next to the item."
 msgstr ""
 "Промените текст задатка, или кликом на њега или коришћењем падајућег менија "
 "`︙` поред ставке."
@@ -2089,8 +2106,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:158
+#, fuzzy
+#| msgid ""
+#| "Delete the complete checklist by using the `︙` menu in the sidebar "
+#| "header."
 msgid ""
-"Delete the complete checklist by using the `︙` menu in the sidebar header."
+"Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
 "Обришите комплетан списак задатака коришћењем падајућег менија `︙` у "
 "заглављу траке."
@@ -2211,8 +2232,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:197
+#, fuzzy
+#| msgid ""
+#| "To **save a draft**, use the `︙` menu in the footer of the ticket "
+#| "details view and select \"Save as draft\"."
 msgid ""
-"To **save a draft**, use the `︙` menu in the footer of the ticket details "
+"To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
 msgstr ""
 "Да бисте **сачували нацрт**, користите падајући мени `︙` у подножју "
@@ -2482,9 +2507,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:280
+#, fuzzy
+#| msgid ""
+#| "Go to the ticket you want to merge into another one. In the ticket "
+#| "sidebar, use the `︙` menu and select `Merge`. This opens a side panel in "
+#| "which you can select a ticket by clicking on it or enter a ticket number "
+#| "in search field.  When you selected a target ticket, confirm by using the "
+#| "`Merge` button at the bottom."
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
-"use the `︙` menu and select `Merge`. This opens a side panel in which you "
+"use the ::a:: menu and select `Merge`. This opens a side panel in which you "
 "can select a ticket by clicking on it or enter a ticket number in search "
 "field.  When you selected a target ticket, confirm by using the `Merge` "
 "button at the bottom."
@@ -2553,8 +2585,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:300
+#, fuzzy
+#| msgid ""
+#| "To split an article off, use the `︙` menu next to an article and select "
+#| "`Split`."
 msgid ""
-"To split an article off, use the `︙` menu next to an article and select "
+"To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
 msgstr ""
 "За радељивање чланка, одаберите `Раздели` из падајућег менија `︙` поред "
@@ -2604,8 +2640,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:319
+#, fuzzy
+#| msgid ""
+#| "In the ticket sidebar, add a link to another ticket by clicking the `+` "
+#| "button in the \"Links\" section. This opens a side panel in which you can "
+#| "select a ticket by clicking on it or enter a ticket number in search "
+#| "field. Additionally, you can choose between different link types:"
 msgid ""
-"In the ticket sidebar, add a link to another ticket by clicking the `+` "
+"In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
 "select a ticket by clicking on it or enter a ticket number in search field. "
 "Additionally, you can choose between different link types:"
@@ -2764,7 +2806,7 @@ msgid ""
 "Depending on the settings of your Zammad instance, the reasons can differ. But usually the reason is that a customer\n"
 "replied to the ticket after it was set to closed. Another reason could be that a colleague re-opened it. If you can't\n"
 "see an article which fits to the description, you can take a look at the ticket history to find out more. Do so by\n"
-"opening the `︙` menu in the ticket sidebar tab and select **History**.\n"
+"opening the ::a:: menu in the ticket sidebar tab and select **History**.\n"
 "\n"
 "Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.\n"
 msgstr ""
@@ -3899,7 +3941,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:23
 msgid ""
-"To set up a two-factor method, use the wrench icon and follow the steps."
+"To set up a two-factor method, use the ::+:: button and follow the steps."
 msgstr ""
 
 #. type: Plain text
@@ -3910,7 +3952,7 @@ msgstr ""
 #| "screenshot-full-page.png)"
 msgid ""
 "![Screenshot shows 2FA methods in user profile settings](/screenshots/"
-"cypress/usage-guide-2fa.cy.js/2FA-methods-profile.png)"
+"cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
@@ -3976,27 +4018,20 @@ msgstr ""
 "мобилном уређају. Препоручене апликације су:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
-msgid ""
-"[Aegis Authenticator](https://play.google.com/store/apps/details?"
-"id=com.beemdevelopment.aegis) (Android only)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 msgid ""
 "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 msgid ""
 "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-"
 "Authy-apps/)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:44
 msgid ""
 "[Microsoft Authenticator](https://support.microsoft.com/en-us/account-"
 "billing/download-and-install-the-microsoft-authenticator-"
@@ -4004,7 +4039,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:50
+#: src/en/documentation/use/guides/two-factor-auth.md:47
 msgid ""
 "Next, open the authenticator app on your device and find a **Scan QR Code** "
 "action, or similar. Point your camera to the Zammad screen and scan the "
@@ -4012,7 +4047,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/two-factor-auth.md:51
+#: src/en/documentation/use/guides/two-factor-auth.md:48
 #, no-wrap
 msgid ""
 "If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to\n"
@@ -4020,7 +4055,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:58
+#: src/en/documentation/use/guides/two-factor-auth.md:55
 msgid ""
 "Your authenticator app should immediately add the new entry for your Zammad "
 "account, and a 6-digit code will be displayed next to it together with a "
@@ -4028,7 +4063,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:61
+#: src/en/documentation/use/guides/two-factor-auth.md:58
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
 "click on **Set Up**. Go on either by setting up another 2FA method "
@@ -4036,13 +4071,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:62
+#: src/en/documentation/use/guides/two-factor-auth.md:59
 #, no-wrap
 msgid "Security Key"
 msgstr "Безбедносни кључ"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:67
+#: src/en/documentation/use/guides/two-factor-auth.md:64
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
 "Web Authentication API in the browser for verifying your identity. You may "
@@ -4056,14 +4091,14 @@ msgstr ""
 "током процеса пријављивања."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:69
+#: src/en/documentation/use/guides/two-factor-auth.md:66
 msgid ""
 "Initially, you will be presented with an empty side panel instructing you to "
 "**Set Up** your first key."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:71
+#: src/en/documentation/use/guides/two-factor-auth.md:68
 #, fuzzy
 #| msgid ""
 #| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
@@ -4076,7 +4111,7 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:74
+#: src/en/documentation/use/guides/two-factor-auth.md:71
 msgid ""
 "Then, enter a descriptive **Name for this security key** you will be "
 "registering with your account, so you could later identify it in the list. "
@@ -4084,7 +4119,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:77
+#: src/en/documentation/use/guides/two-factor-auth.md:74
 msgid ""
 "Next, depending you your browser, you will be presented with different "
 "options. Select one that refers to your chosen security key and follow the "
@@ -4095,7 +4130,7 @@ msgstr ""
 "упутства на екрану."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:79
+#: src/en/documentation/use/guides/two-factor-auth.md:76
 #, fuzzy
 #| msgid ""
 #| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
@@ -4108,7 +4143,7 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:82
+#: src/en/documentation/use/guides/two-factor-auth.md:79
 msgid ""
 "You may be asked by the browser to interact with a key or a device so you "
 "can prove you are in physical possession of it (e.g. enter its PIN to unlock "
@@ -4116,7 +4151,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:83
+#: src/en/documentation/use/guides/two-factor-auth.md:80
 #, no-wrap
 msgid ""
 "You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you\n"
@@ -4124,7 +4159,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:90
+#: src/en/documentation/use/guides/two-factor-auth.md:87
 msgid ""
 "If the registration was successful, the modal dialog will close and you are "
 "good to go. In case of errors, you will be able to **Retry** the "
@@ -4132,7 +4167,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:92
+#: src/en/documentation/use/guides/two-factor-auth.md:89
 msgid ""
 "Once set up, security keys can be managed by choosing **Edit** action next "
 "to the two-factor authentication method."
@@ -4141,7 +4176,7 @@ msgstr ""
 "изабрати акцију **Измени** поред метода редакторске аутентификације."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:96
+#: src/en/documentation/use/guides/two-factor-auth.md:93
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
 "limit in number of security keys you can set up, but keep in mind you cannot "
@@ -4151,13 +4186,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:97
+#: src/en/documentation/use/guides/two-factor-auth.md:94
 #, no-wrap
 msgid "Sign-in"
 msgstr "Пријава"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:102
+#: src/en/documentation/use/guides/two-factor-auth.md:99
 msgid ""
 "When you set up two-factor authentication for your Zammad account, during "
 "the next sign-in you will be asked to provide the same two-factor method "
@@ -4166,7 +4201,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:105
+#: src/en/documentation/use/guides/two-factor-auth.md:102
 msgid ""
 "In case you are having issues during sign-in with your preferred two-factor "
 "authentication method, you can switch to another one, provided you have set "
@@ -4174,7 +4209,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:108
+#: src/en/documentation/use/guides/two-factor-auth.md:105
 msgid ""
 "Look for **Try another method** link below the sign in box. In case you "
 "don't see this link, you probably have no other available two-factor methods "
@@ -4186,14 +4221,14 @@ msgstr ""
 "функцију."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:110
+#: src/en/documentation/use/guides/two-factor-auth.md:107
 msgid ""
 "![Log in screen with link to \"Try another method\"](/screenshots/two-factor-"
 "auth-usage/2fa-link-another-method.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:114
+#: src/en/documentation/use/guides/two-factor-auth.md:111
 msgid ""
 "Alternatively, you can also use one of your recovery codes, which are auto-"
 "generated for your account during the initial setup of the two-factor "
@@ -4202,14 +4237,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:116
+#: src/en/documentation/use/guides/two-factor-auth.md:113
 msgid ""
 "![Log in screen with recovery codes link](/screenshots/two-factor-auth-usage/"
 "2fa-login-recovery-codes.png)"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:117
+#: src/en/documentation/use/guides/two-factor-auth.md:114
 #, no-wrap
 msgid ""
 "You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended\n"
@@ -4217,13 +4252,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:122
+#: src/en/documentation/use/guides/two-factor-auth.md:119
 #, no-wrap
 msgid "Generate Recovery Codes"
 msgstr "Генерисање шифри за опоравак"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:126
+#: src/en/documentation/use/guides/two-factor-auth.md:123
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
 "if you lose access to your other two-factor authentication methods. They can "
@@ -4234,7 +4269,7 @@ msgstr ""
 "аутентификације. Могуће их је користити само као **резервни метод**."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:129
+#: src/en/documentation/use/guides/two-factor-auth.md:126
 msgid ""
 "If the feature is enabled by the admin, recovery codes will be automatically "
 "generated for you during the setup of your initial two-factor authentication "
@@ -4245,21 +4280,21 @@ msgstr ""
 "двофакторске аутентификације."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:132
+#: src/en/documentation/use/guides/two-factor-auth.md:129
 msgid ""
 "You will be asked to print out or save the generated recovery codes in a "
 "safe place. Once used, a recovery code cannot be reused."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:134
+#: src/en/documentation/use/guides/two-factor-auth.md:131
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA setup](/screenshots/"
 "two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:138
+#: src/en/documentation/use/guides/two-factor-auth.md:135
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
 "invalidates already existing recovery codes and provides you with a list of "
@@ -4268,40 +4303,40 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:139
+#: src/en/documentation/use/guides/two-factor-auth.md:136
 #, no-wrap
 msgid "Set a Default 2FA Method"
 msgstr "Постављање подразумеваног метода двофакторске аутентификације"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:143
+#: src/en/documentation/use/guides/two-factor-auth.md:140
 msgid ""
-"To set an already set up two-factor method as default, use the ⋮ **Actions** "
+"To set an already set up two-factor method as default, use the ::a:: actions "
 "menu next to it in your profile's 2FA settings and choose **Set as default**."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:146
+#: src/en/documentation/use/guides/two-factor-auth.md:143
 msgid ""
 "In order to identify your current default two-factor authentication method, "
 "look for a small blue badge next to the method name."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:148
+#: src/en/documentation/use/guides/two-factor-auth.md:145
 #, fuzzy
 #| msgid ""
 #| "![Screenshot showing translation projects in Weblate and menu](/"
 #| "screenshots/weblate-overview-docs.png)"
 msgid ""
-"![Screenshot shows list of 2FA methods and default method](/screenshots/two-"
-"factor-auth-usage/2fa-profile-overview.png)"
+"![Screenshot shows list of 2FA methods and default method](/screenshots/"
+"cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)"
 msgstr ""
 "![Снимак екрана који приказује пројекте превода у Weblate менију](/"
 "screenshots/weblate-overview-docs.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:151
+#: src/en/documentation/use/guides/two-factor-auth.md:148
 msgid ""
 "A default two-factor authentication method is just your preferred method "
 "during the sign-in process. You will always have an option to try signing in "
@@ -4309,34 +4344,35 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:152
+#: src/en/documentation/use/guides/two-factor-auth.md:149
 #, no-wrap
 msgid "Edit a 2FA Method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:155
+#: src/en/documentation/use/guides/two-factor-auth.md:152
 #, fuzzy
 #| msgid ""
 #| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
 #| "screenshot-full-page.png)"
 msgid ""
-"![Screenshot shows output of recovery codes during 2FA setup](/screenshots/"
-"two-factor-auth-usage/2fa-profile-overview-action.png)"
+"![Screenshot shows the action menu for an already set up 2FA method](/"
+"screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-"
+"menu.png)"
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:158
+#: src/en/documentation/use/guides/two-factor-auth.md:155
 msgid ""
-"To edit an already set up two-factor method, use the ⋮ **Actions** menu next "
+"To edit an already set up two-factor method, use the ::a:: actions menu next "
 "to it and choose **Edit**. In a modal dialog, you will be asked to confirm "
 "your current password."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:162
+#: src/en/documentation/use/guides/two-factor-auth.md:159
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
 "the setup process. Normally, editing a method will simply renew it and "
@@ -4349,15 +4385,15 @@ msgstr ""
 "функције (нпр. додавање више безбедносних кључева)."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:163
+#: src/en/documentation/use/guides/two-factor-auth.md:160
 #, no-wrap
 msgid "Remove a 2FA Method"
 msgstr "Уклањање метода двофакторске аутентификације"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:166
+#: src/en/documentation/use/guides/two-factor-auth.md:163
 msgid ""
-"To remove an already set up two-factor method, use the ⋮ **Actions** menu "
+"To remove an already set up two-factor method, use the ::a:: actions menu "
 "next to it and choose **Remove**. In a modal dialog, you will be asked to "
 "confirm the removal with your current password."
 msgstr ""
@@ -4504,7 +4540,7 @@ msgstr ""
 #: src/en/documentation/use/manage-profile.md:54
 #, no-wrap
 msgid "Language"
-msgstr "Jезик"
+msgstr "Језик"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:57
@@ -6063,7 +6099,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/tutorials/migrate.md:544
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:544
 #, no-wrap
 msgid "\n"
 msgstr "\n"
@@ -7023,34 +7059,54 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:415
-#, fuzzy, no-wrap
-#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
-msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+#, no-wrap
+msgid "Memcached"
+msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:419
 msgid ""
-"Instead of storing Zammads cache files within your filesystem, they can be "
-"cached in memory with Memcached."
+"Zammad heavily relies on caching to improve performance. This cache can be "
+"stored in the file system without relying on externals services. However, "
+"this is only possible if all services of Zammad are running on the same file "
+"system!"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:422
+#: src/en/get-started/installation/package.md:423
 msgid ""
-"The installation and configuration is out of our scope of this "
-"documentation.  Please follow the [official guides](https://"
-"docs.memcached.org/){target=_blank}."
+"In all other cases like deploying Zammad via containers (Docker or "
+"Kubernetes) or on separate cluster nodes, a [Memcached](https://"
+"memcached.org/){target=_blank} service is required to store the cache and "
+"serve it to all Zammad instances.  The Docker and Kubernetes stacks already "
+"include this service."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:426
+msgid ""
+"However, even local file system installations may benefit from Memcached's "
+"performance improvements. You might want to have a look at our [performance "
+"tuning](/en/reference/env-vars.html#additional-performance-adjustments) "
+"section too."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:429
+msgid ""
+"The installation and configuration is out of scope of this documentation. In "
+"case you have to install Memcached manually, please follow the [official "
+"documentation of Memcached](https://docs.memcached.org/){target=_blank}."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:423
+#: src/en/get-started/installation/package.md:430
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:435
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -8763,14 +8819,40 @@ msgstr ""
 msgid "Setting.set('proxy_password', 'some pass')\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/reference/console.md:508
+#, no-wrap
+msgid "Disable Asciifold"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:511
+msgid ""
+"This feature is turned on by default. In case you need a more exact search, "
+"you can turn it off:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:512
+#, no-wrap
+msgid "Setting.set('es_asciifolding', false)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:517
+msgid ""
+"After changing the setting, make sure to [rebuild the search index](/en/"
+"tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/console.md:518
 #, no-wrap
 msgid "Hidden Settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:513
+#: src/en/reference/console.md:523
 msgid ""
 "In this section you can find some settings that you won't find within the "
 "Zammad UI. Those settings might come in handy as it can change Zammad's "
@@ -8778,13 +8860,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:514
+#: src/en/reference/console.md:524
 #, no-wrap
 msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:520
+#: src/en/reference/console.md:530
 msgid ""
 "This option allows you to send all outgoing E-Mails (not notifications)  to "
 "a specific mailbox. Please note that this shouldn't be a mailbox you're "
@@ -8792,152 +8874,152 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:521
+#: src/en/reference/console.md:531
 #, no-wrap
 msgid "Setting.set('system_bcc', 'alias@domain.tld')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:526
-msgid "You can easily check the current BCC-Setting by running the following:"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/reference/console.md:527
-#, no-wrap
-msgid "Setting.get('system_bcc')\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/reference/console.md:531
-#, no-wrap
-msgid "Activate Counter on Grouped Overviews"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/console.md:534
-msgid ""
-"This enables a ticket number value in each heading for grouped elements."
-msgstr ""
-
-#. type: Plain text
 #: src/en/reference/console.md:536
-msgid "Enable counter for grouped overviews:"
+msgid "You can easily check the current BCC-Setting by running the following:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:537
 #, no-wrap
+msgid "Setting.get('system_bcc')\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/console.md:541
+#, no-wrap
+msgid "Activate Counter on Grouped Overviews"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:544
+msgid ""
+"This enables a ticket number value in each heading for grouped elements."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:546
+msgid "Enable counter for grouped overviews:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:547
+#, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:542
+#: src/en/reference/console.md:552
 msgid "Disable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:543
+#: src/en/reference/console.md:553
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:548
+#: src/en/reference/console.md:558
 msgid "Get current setting (`nil` is false):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:549
+#: src/en/reference/console.md:559
 #, no-wrap
 msgid "Setting.get('ui_table_group_by_show_count')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:553
+#: src/en/reference/console.md:563
 #, no-wrap
 msgid "Default Ticket Type on Creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:557
+#: src/en/reference/console.md:567
 msgid ""
 "Zammad allows you to define the default article type upon ticket creation. "
 "By default this will be a incoming phone call."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:559
+#: src/en/reference/console.md:569
 msgid "You can choose between"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 msgid "`phone-in` (incoming call, **default**),"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 msgid "`phone-out` (outgoing call) and"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:563
+#: src/en/reference/console.md:573
 msgid "`email-out` (Sending an E-Mail out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:564
+#: src/en/reference/console.md:574
 #, no-wrap
 msgid "Setting.set('ui_ticket_create_default_type', 'email-out')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:569
+#: src/en/reference/console.md:579
 msgid "To check what setting is set currently, simply run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:570
+#: src/en/reference/console.md:580
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_default_type')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:574
+#: src/en/reference/console.md:584
 #, no-wrap
 msgid "Adding a Warning to the Ticket Creation Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:578
+#: src/en/reference/console.md:588
 msgid ""
 "If you want to give your agent a note or warning during ticket **creation**, "
 "you can do so with the below command."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:580
+#: src/en/reference/console.md:590
 msgid "You can use three different warnings for:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 msgid "Incoming Calls `:\"phone-in\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 msgid "Outgoing Calls `:\"phone-out\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:584
+#: src/en/reference/console.md:594
 msgid "Outgoing E-Mails `:\"email-out\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:585
+#: src/en/reference/console.md:595
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
@@ -8948,7 +9030,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:593
+#: src/en/reference/console.md:603
 #, no-wrap
 msgid ""
 "You can use those three sub-settings independently, if you e.g. don't\n"
@@ -8957,68 +9039,68 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:600 src/en/reference/console.md:639
+#: src/en/reference/console.md:610 src/en/reference/console.md:649
 msgid "To check what's currently set, you can use:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:601
+#: src/en/reference/console.md:611
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_notes')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:605
+#: src/en/reference/console.md:615
 #, no-wrap
 msgid "Adding a Warning to the Article Reply Process"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:609
+#: src/en/reference/console.md:619
 msgid ""
 "If you want to give your agent a warning during the ticket article "
 "**reply**, you can do that with the command below."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:612
+#: src/en/reference/console.md:622
 msgid ""
 "You can provide different warnings for different channels and article "
 "visibility:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Internal Notes `:\"note-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Public Notes `:\"note-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Internal Calls `:\"phone-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Public Calls `:\"phone-public\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Internal Emails `:\"email-internal\"=>\"\"`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/console.md:619
+#: src/en/reference/console.md:629
 msgid "Public Emails `:\"email-public\"=>\"\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:620
+#: src/en/reference/console.md:630
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
@@ -9032,7 +9114,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:631
+#: src/en/reference/console.md:641
 #, no-wrap
 msgid ""
 "You can use example sub-settings above independently, if you e.g.\n"
@@ -9042,49 +9124,49 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:640
+#: src/en/reference/console.md:650
 #, no-wrap
 msgid "Setting.get('ui_ticket_add_article_hint')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:644
+#: src/en/reference/console.md:654
 #, no-wrap
 msgid "Show Email Address of Customer on Customer Selection (Ticket Creation)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:648
+#: src/en/reference/console.md:658
 msgid ""
 "By default, Zammad will not display the email addresses of customers.  The "
 "below option allows you to change this behavior."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:649
+#: src/en/reference/console.md:659
 #, no-wrap
 msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:654 src/en/reference/console.md:674
+#: src/en/reference/console.md:664 src/en/reference/console.md:684
 msgid "Get the current state of this setting with:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:655
+#: src/en/reference/console.md:665
 #, no-wrap
 msgid "Setting.get('ui_user_organization_selector_with_email')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:659
+#: src/en/reference/console.md:669
 #, no-wrap
 msgid "Change Font Settings for Outgoing HTML Emails"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:661
+#: src/en/reference/console.md:671
 #, no-wrap
 msgid ""
 "Some clients (like Outlook) might fallback to other settings while it\n"
@@ -9092,52 +9174,52 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:668
+#: src/en/reference/console.md:678
 msgid ""
 "The below setting allows you to adjust Zammad's email font setting. This "
 "setting does not require a service restart."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:669
+#: src/en/reference/console.md:679
 #, no-wrap
 msgid "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;\")\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:675
+#: src/en/reference/console.md:685
 #, no-wrap
 msgid "Setting.get('html_email_css_font')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:679
+#: src/en/reference/console.md:689
 #, no-wrap
 msgid "Highlight Customer's Open Ticket Count"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:683
+#: src/en/reference/console.md:693
 msgid ""
 "This option enhances the selected customer's open tickets count. It "
 "highlights the count in different colors if they hit a threshold."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:684
+#: src/en/reference/console.md:694
 #, no-wrap
 msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:690
+#: src/en/reference/console.md:700
 msgid ""
 "Above settings has specific thresholds as follows. You **cannot** adjust "
 "these thresholds."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:695
+#: src/en/reference/console.md:705
 #, no-wrap
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) |\n"
@@ -9147,32 +9229,32 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:696
+#: src/en/reference/console.md:706
 #, no-wrap
 msgid "Activate Attachment Tab in Sidebar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:700
+#: src/en/reference/console.md:710
 msgid ""
 "This option activates a new tab in the right sidebar in the ticket view "
 "which shows all attachments of the currently viewed ticket."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:701
+#: src/en/reference/console.md:711
 #, no-wrap
 msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:705
+#: src/en/reference/console.md:715
 #, no-wrap
 msgid "Time Period for Showing Customer Profile on New Calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:711
+#: src/en/reference/console.md:721
 msgid ""
 "Zammad shows the customer profile dialog when a call of this customer is "
 "incoming and there is an existing ticket of this customer in this time "
@@ -9181,24 +9263,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:713
+#: src/en/reference/console.md:723
 msgid "Set the time period to 90 days:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:714
+#: src/en/reference/console.md:724
 #, no-wrap
 msgid "Setting.set('cti_customer_last_activity', '90')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:718
+#: src/en/reference/console.md:728
 #, no-wrap
 msgid "Set Public \"Notes\" as SLA relevant"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:724
+#: src/en/reference/console.md:734
 msgid ""
 "Normally, notes aren't SLA relevant. Use the following command to include "
 "publicly-visible notes when tracking SLA compliance (internal notes _will "
@@ -9207,7 +9289,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:725
+#: src/en/reference/console.md:735
 #, no-wrap
 msgid ""
 "By default, customers are not notified when public notes are added to a\n"
@@ -9215,79 +9297,79 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:731
+#: src/en/reference/console.md:741
 msgid "Enable SLA to count notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:732
+#: src/en/reference/console.md:742
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:737
+#: src/en/reference/console.md:747
 msgid "Enable SLA to ignore notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:738
+#: src/en/reference/console.md:748
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:742
+#: src/en/reference/console.md:752
 #, no-wrap
 msgid "Activate Priority Icon"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:746
+#: src/en/reference/console.md:756
 msgid ""
 "To activate additional icons which represent the priority, use the command "
 "below:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:747
+#: src/en/reference/console.md:757
 #, no-wrap
 msgid "Setting.set('ui_ticket_priority_icons', true)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:751
+#: src/en/reference/console.md:761
 #, no-wrap
 msgid "Other Useful Commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:753
+#: src/en/reference/console.md:763
 #, no-wrap
 msgid "Fetch Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:757
+#: src/en/reference/console.md:767
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
 "show errors that might appear within that process."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:758
+#: src/en/reference/console.md:768
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:762
+#: src/en/reference/console.md:772
 #, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:767
+#: src/en/reference/console.md:777
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
 "malformed message), it will store the email in the database and warn in the "
@@ -9295,7 +9377,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:771
+#: src/en/reference/console.md:781
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
 "header fields), you may need to manually edit the email before Zammad can "
@@ -9303,19 +9385,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:772
+#: src/en/reference/console.md:782
 #, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:774
+#: src/en/reference/console.md:784
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:781
+#: src/en/reference/console.md:791
 msgid ""
 "You can find the location of the exported email in the output of your "
 "console.  Every time you perform an export of failed (unprocessable) emails, "
@@ -9323,13 +9405,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:782
+#: src/en/reference/console.md:792
 #, no-wrap
 msgid "Edit the Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:787
+#: src/en/reference/console.md:797
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
 "and try to repair it. Make sure to leave the file name untouched, as the "
@@ -9337,24 +9419,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:788
+#: src/en/reference/console.md:798
 #, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:791
+#: src/en/reference/console.md:801
 msgid "After editing the email, run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:792
+#: src/en/reference/console.md:802
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:800
+#: src/en/reference/console.md:810
 msgid ""
 "This will apply your changes from the file to the database. You can also "
 "pass the entire folder as argument, so all `.eml` files in it will we "
@@ -9363,7 +9445,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:801
+#: src/en/reference/console.md:811
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -9372,26 +9454,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:807
+#: src/en/reference/console.md:817
 #, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:811
+#: src/en/reference/console.md:821
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
 "database after exporting them with the following command:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:812
+#: src/en/reference/console.md:822
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:819
+#: src/en/reference/console.md:829
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
 "be removed from the database, their files deleted and finally the empty "
@@ -9399,13 +9481,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:820
+#: src/en/reference/console.md:830
 #, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:822
+#: src/en/reference/console.md:832
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -9413,7 +9495,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:831
+#: src/en/reference/console.md:841
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
 "organizations, `5` new overviews and `100` tickets. You can always use `0` "
@@ -9422,19 +9504,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:832
+#: src/en/reference/console.md:842
 #, no-wrap
 msgid "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/console.md:836
+#: src/en/reference/console.md:846
 #, no-wrap
 msgid "Deleting Records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:838
+#: src/en/reference/console.md:848
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -9443,58 +9525,58 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:844
+#: src/en/reference/console.md:854
 #, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:847
+#: src/en/reference/console.md:857
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:848
+#: src/en/reference/console.md:858
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:853
+#: src/en/reference/console.md:863
 msgid "Delete all tickets:"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/reference/console.md:854
-#, no-wrap
-msgid "Ticket.destroy_all\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/console.md:859
-msgid "Keep some tickets (specified by database ID); delete the rest:"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/reference/console.md:860
-#, no-wrap
-msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:864
 #, no-wrap
+msgid "Ticket.destroy_all\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:869
+msgid "Keep some tickets (specified by database ID); delete the rest:"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:870
+#, no-wrap
+msgid "tickets_to_keep = [1, 2, 3]\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/console.md:874
+#, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:868
+#: src/en/reference/console.md:878
 #, no-wrap
 msgid "Removing Users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/console.md:870
+#: src/en/reference/console.md:880
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -9506,7 +9588,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/console.md:879
+#: src/en/reference/console.md:889
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -9516,28 +9598,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:887
+#: src/en/reference/console.md:897
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:889
+#: src/en/reference/console.md:899
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:890
+#: src/en/reference/console.md:900
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:895
+#: src/en/reference/console.md:905
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:896
+#: src/en/reference/console.md:906
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -9546,77 +9628,77 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:902
+#: src/en/reference/console.md:912
 #, fuzzy, no-wrap
 #| msgid "Organization"
 msgid "Removing Organizations"
 msgstr "Организација"
 
 #. type: Fenced div block (info)
-#: src/en/reference/console.md:904
+#: src/en/reference/console.md:914
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:908
+#: src/en/reference/console.md:918
 #, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:911
+#: src/en/reference/console.md:921
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:912
+#: src/en/reference/console.md:922
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:917
+#: src/en/reference/console.md:927
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:918
+#: src/en/reference/console.md:928
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:923
+#: src/en/reference/console.md:933
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:924
+#: src/en/reference/console.md:934
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:928
+#: src/en/reference/console.md:938
 #, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:930
+#: src/en/reference/console.md:940
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/console.md:934
+#: src/en/reference/console.md:944
 #, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:936
+#: src/en/reference/console.md:946
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -9624,7 +9706,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:941
+#: src/en/reference/console.md:951
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -9634,7 +9716,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:948
+#: src/en/reference/console.md:958
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -9643,68 +9725,68 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:954
+#: src/en/reference/console.md:964
 #, no-wrap
 msgid "Removing System Records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:957
+#: src/en/reference/console.md:967
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:958
+#: src/en/reference/console.md:968
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:963
+#: src/en/reference/console.md:973
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:964
+#: src/en/reference/console.md:974
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:969
+#: src/en/reference/console.md:979
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
 "organizations):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:970
+#: src/en/reference/console.md:980
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/console.md:976
+#: src/en/reference/console.md:986
 msgid ""
 "Remove all history information from tickets, users and organizations "
 "(dangerous!):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/console.md:977
+#: src/en/reference/console.md:987
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/console.md:981
+#: src/en/reference/console.md:991
 #, fuzzy, no-wrap
 #| msgid "/en/get-zammad/installation"
 msgid "Reset Zammad Installation"
 msgstr "/sr/get-zammad/installation"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/console.md:983
+#: src/en/reference/console.md:993
 #, no-wrap
 msgid ""
 "\n"
@@ -9716,25 +9798,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:992
+#: src/en/reference/console.md:1002
 #, no-wrap
 msgid "rake db:drop\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:996
+#: src/en/reference/console.md:1006
 #, no-wrap
 msgid "rake db:create\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1000
+#: src/en/reference/console.md:1010
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1004
+#: src/en/reference/console.md:1014
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
@@ -17415,11 +17497,10 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-msgid ""
-"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
-"**P**rogramming **I**nterface)"
+#, no-wrap
+msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
 msgstr ""
 
 #. type: Title #
@@ -20007,41 +20088,93 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/rest-api/user.md:127
-msgid "Required permission: `admin.user`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/user.md:129
-msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
-msgstr ""
-
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/user.md:130
+#: src/en/reference/rest-api/user.md:126
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
 "\n"
 "Please note that removing users cannot be undone. Zammad will also\n"
 "remove references - thus potentially tickets!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:137
+msgid ""
+"Technically, you can delete users via ``/api/v1/users/{id}``. However, we "
+"strongly encourage you to use the data privacy in Zammad's UI or the data "
+"privacy endpoint instead (see section below). Using one of them makes sure "
+"that related information like tickets are deleted as well."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/user.md:138
+#, no-wrap
+msgid "Via Data Privacy Endpoint"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:141
+msgid "Required permission: `admin.data_privacy`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:143
+msgid "`POST`-Request sent: `/api/v1/data_privacy_task`"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/user.md:144
+#, no-wrap
+msgid ""
 "\n"
-"Removing users with references in e.g. activity streams is not possible\n"
-"via API - this will be indicated by\n"
-"`\"error\": \"Can't delete, object has references.\"`. This is _not_ a bug.\n"
+"=== Request\n"
 "\n"
-"Consider using Zammad's Data Privacy feature via UI for\n"
-"more control instead (admin interface under _System > Data privacy_).\n"
+"<<< @/fixtures/rest-api/users/delete-privacy-task-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/users/delete-privacy-task-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/rest-api/user.md:159
+#, fuzzy, no-wrap
+#| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+msgid "Via User Endpoint <Badge type=\"danger\" text=\"not recommended\" />"
+msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:162
+msgid "Required permission: `admin.user`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/user.md:164
+msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/user.md:144
+#: src/en/reference/rest-api/user.md:165
 #, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -20903,7 +21036,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:61
-#: src/en/tutorials/connect-config-elasticsearch.md:184
+#: src/en/tutorials/connect-config-elasticsearch.md:192
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
@@ -20980,8 +21113,30 @@ msgstr ""
 msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr ""
 
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:99
+#, no-wrap
+msgid "Asciifold"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:104
+msgid ""
+"By default, the [Asciifold feature of Elasticsearch](https://www.elastic.co/"
+"docs/reference/text-analysis/analysis-asciifolding-tokenfilter)"
+"{target=_blank} is enabled. This can be useful if you deal with text which "
+"includes diacritics and/or umlauts."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:106
+msgid ""
+"In case you need a more exact search, you can turn it off via [rails console]"
+"(/en/reference/console#disable-asciifold)."
+msgstr ""
+
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:101
+#: src/en/tutorials/connect-config-elasticsearch.md:109
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -20993,13 +21148,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:110
+#: src/en/tutorials/connect-config-elasticsearch.md:118
 #, no-wrap
 msgid "Data Missing From the Web-UI / Search Data Missing or Incomplete"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:116
+#: src/en/tutorials/connect-config-elasticsearch.md:124
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
 "tickets, articles, users or anything else [indexed by Elasticsearch](/en/"
@@ -21008,7 +21163,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:120
+#: src/en/tutorials/connect-config-elasticsearch.md:128
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
 "our [installation guide](/en/tutorials/install-elasticsearch), please follow "
@@ -21016,26 +21171,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:121
+#: src/en/tutorials/connect-config-elasticsearch.md:129
 #, no-wrap
 msgid "Step 1: Verify Elasticsearch is Running"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:123
+#: src/en/tutorials/connect-config-elasticsearch.md:131
 #, no-wrap
 msgid "systemctl status elasticsearch\n"
 msgstr "systemctl status elasticsearch\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:129
+#: src/en/tutorials/connect-config-elasticsearch.md:137
 msgid ""
 "This should output something like the following, make sure it says `Active: "
 "active (running)`:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:130
+#: src/en/tutorials/connect-config-elasticsearch.md:138
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -21046,19 +21201,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:139
+#: src/en/tutorials/connect-config-elasticsearch.md:147
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:140
-#: src/en/tutorials/connect-config-elasticsearch.md:171
+#: src/en/tutorials/connect-config-elasticsearch.md:148
+#: src/en/tutorials/connect-config-elasticsearch.md:179
 #, no-wrap
 msgid "systemctl restart elasticsearch\n"
 msgstr "systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:144
+#: src/en/tutorials/connect-config-elasticsearch.md:152
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -21067,67 +21222,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:150
+#: src/en/tutorials/connect-config-elasticsearch.md:158
 #, fuzzy, no-wrap
 #| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
 msgid "Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type=\"warning\" text=\"only ES7\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:153
+#: src/en/tutorials/connect-config-elasticsearch.md:161
 msgid "List installed elasticsearch plugins:"
 msgstr "Листа инсталираних Elasticsearch додатака:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:154
-#: src/en/tutorials/connect-config-elasticsearch.md:175
+#: src/en/tutorials/connect-config-elasticsearch.md:162
+#: src/en/tutorials/connect-config-elasticsearch.md:183
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:159
+#: src/en/tutorials/connect-config-elasticsearch.md:167
 msgid "The output should include `ingest-attachment`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:162
+#: src/en/tutorials/connect-config-elasticsearch.md:170
 msgid ""
 "Otherwise, try reinstalling the `ingest-attachment` plugin and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:163
+#: src/en/tutorials/connect-config-elasticsearch.md:171
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:167
+#: src/en/tutorials/connect-config-elasticsearch.md:175
 #, no-wrap
 msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:179
+#: src/en/tutorials/connect-config-elasticsearch.md:187
 #, no-wrap
 msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:183
+#: src/en/tutorials/connect-config-elasticsearch.md:191
 msgid ""
 "Force Zammad to drop and rebuild the elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:189
+#: src/en/tutorials/connect-config-elasticsearch.md:197
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:190
+#: src/en/tutorials/connect-config-elasticsearch.md:198
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -21144,7 +21299,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:207
+#: src/en/tutorials/connect-config-elasticsearch.md:215
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
 "while to complete. Please let this task finish completely and wait until it "
@@ -21152,7 +21307,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:212
+#: src/en/tutorials/connect-config-elasticsearch.md:220
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
 "your installation. Make sure you followed the complete Elasticsearch set up "
@@ -21161,7 +21316,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:213
+#: src/en/tutorials/connect-config-elasticsearch.md:221
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -21170,7 +21325,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:220
+#: src/en/tutorials/connect-config-elasticsearch.md:228
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
@@ -23497,27 +23652,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
@@ -25084,6 +25252,22 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#, fuzzy, no-wrap
+#~| msgid "Section with badge <Badge type=\"warning\" text=\"custom text\" />"
+#~ msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
+#~ msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+
+#, fuzzy
+#~| msgid ""
+#~| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~| "screenshot-full-page.png)"
+#~ msgid ""
+#~ "![Screenshot shows output of recovery codes during 2FA setup](/"
+#~ "screenshots/two-factor-auth-usage/2fa-profile-overview-action.png)"
+#~ msgstr ""
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/"
+#~ "test-screenshot-full-page.png)"
 
 #~ msgid "No support for bug or security issues is provided."
 #~ msgstr "Нису подржане исправке грешака и сигурносних пропуста."

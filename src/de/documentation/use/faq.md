@@ -28,12 +28,12 @@ Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe besc
 :::
 
 ::: details Why is the ticket open again? I closed it already!
-Depending on the settings of your Zammad instance, the reasons can differ. But usually the reason is that a customer
-replied to the ticket after it was set to closed. Another reason could be that a colleague re-opened it. If you can't
-see an article which fits to the description, you can take a look at the ticket history to find out more. Do so by
-opening the ::a:: menu in the ticket sidebar tab and select **History**.
+Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür unterschiedlich sein. Normalerweise ist der Grund jedoch, dass ein Kunde
+auf das Ticket geantwortet hat, nachdem es auf geschlossen gesetzt wurde. Ein anderer Grund könnte sein, dass ein Kollege es wieder geöffnet hat. Wenn Sie
+keinen Artikel sehen, der auf diese Erklärung passt, können Sie einen Blick in die Ticket-Historie werfen, um mehr herauszufinden. Tun Sie dies, indem Sie
+das Menü ::a:: im Ticket-Seitenleisten-Tab öffnen und **Historie** auswählen.
 
-Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.
+Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde antwortet, nachdem ein Ticket geschlossen wurde.
 :::
 
 :::: details What does the customer see in the ticket?
