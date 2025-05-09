@@ -414,14 +414,27 @@ The Elasticsearch plugin `ingest-attachment` is required for version 7 or
 older to index the contents of email attachments. Starting with
 Elasticsearch 8, it is included by default.
 
-### Memcached <Badge type="info" text="optional"/>
+### Memcached
 
-Instead of storing Zammads cache files within your filesystem, they can be
-cached in memory with Memcached.
+Zammad heavily relies on caching to improve performance. This cache can be
+stored in the file system without relying on externals services. However,
+this is only possible if all services of Zammad are running on the same file
+system!
 
-The installation and configuration is out of our scope of this
-documentation.  Please follow the [official
-guides](https://docs.memcached.org/){target=_blank}.
+In all other cases like deploying Zammad via containers (Docker or
+Kubernetes) or on separate cluster nodes, a
+[Memcached](https://memcached.org/){target=_blank} service is required to
+store the cache and serve it to all Zammad instances.  The Docker and
+Kubernetes stacks already include this service.
+
+However, even local file system installations may benefit from Memcached's
+performance improvements. You might want to have a look at our [performance
+tuning](/en/reference/env-vars.html#additional-performance-adjustments)
+section too.
+
+The installation and configuration is out of scope of this documentation. In
+case you have to install Memcached manually, please follow the [official
+documentation of Memcached](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 

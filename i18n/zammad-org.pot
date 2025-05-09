@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-07 13:09+0200\n"
+"POT-Creation-Date: 2025-05-09 11:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6506,34 +6506,57 @@ msgstr ""
 #. type: Title ###
 #: src/en/get-started/installation/package.md:415
 #, markdown-text, no-wrap
-msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
+msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:419
 #, markdown-text
 msgid ""
-"Instead of storing Zammads cache files within your filesystem, they can be "
-"cached in memory with Memcached."
+"Zammad heavily relies on caching to improve performance. This cache can be "
+"stored in the file system without relying on externals services. However, "
+"this is only possible if all services of Zammad are running on the same file "
+"system!"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:422
+#: src/en/get-started/installation/package.md:423
 #, markdown-text
 msgid ""
-"The installation and configuration is out of our scope of this "
-"documentation.  Please follow the [official "
-"guides](https://docs.memcached.org/){target=_blank}."
+"In all other cases like deploying Zammad via containers (Docker or "
+"Kubernetes) or on separate cluster nodes, a "
+"[Memcached](https://memcached.org/){target=_blank} service is required to "
+"store the cache and serve it to all Zammad instances.  The Docker and "
+"Kubernetes stacks already include this service."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:426
+#, markdown-text
+msgid ""
+"However, even local file system installations may benefit from Memcached's "
+"performance improvements. You might want to have a look at our [performance "
+"tuning](/en/reference/env-vars.html#additional-performance-adjustments) "
+"section too."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:429
+#, markdown-text
+msgid ""
+"The installation and configuration is out of scope of this documentation. In "
+"case you have to install Memcached manually, please follow the [official "
+"documentation of Memcached](https://docs.memcached.org/){target=_blank}."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:423
+#: src/en/get-started/installation/package.md:430
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:435
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
