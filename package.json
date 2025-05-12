@@ -3,7 +3,7 @@
   "devDependencies": {
     "@mdit/plugin-icon": "^0.18.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^16.0.0",
     "markdown-it-deflist": "^3.0.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-kbd": "^3.0.0",
@@ -16,7 +16,7 @@
     "dev": "vitepress dev",
     "lint": "pnpm lint:cmd \"src/en/**/*.md\"",
     "lint:fix": "pnpm lint --fix",
-    "lint:cmd": "docker run -v $PWD:/workdir --rm davidanson/markdownlint-cli2:latest",
+    "lint:cmd": "docker run -v $PWD:/workdir --rm --pull=always davidanson/markdownlint-cli2:latest",
     "i18n": ".gitlab/update_po4a_conf.sh && po4a --verbose .po4a.conf && pnpm run build-language-config-json-files && pnpm run reset-po-changes",
     "build": "vitepress build",
     "preview": "vitepress preview",

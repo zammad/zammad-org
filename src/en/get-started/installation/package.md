@@ -381,7 +381,7 @@ The following reverse proxies are supported:
 
 The installation script tries to detect a Apache or Nginx during the
 installation. In case none is found, Nginx is automatically installed.
-You can find a basic configuration guide [here](/en/tutorials/webserver-config).
+You can find a basic example in [our Webserver configuration guide](/en/tutorials/webserver-config).
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
 

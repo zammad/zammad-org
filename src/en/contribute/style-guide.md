@@ -87,9 +87,9 @@ for Markdown files. To check if your changes are compliant, run `pnpm lint` to p
 recognized problems can be even fixed automatically by running `pnpm lint:fix`. Make sure to run the check before
 committing your changes. Otherwise the build of the documentation will fail.
 
-The used linting has some built in rules which you can find
-[here](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}. Some
-important rules and customized ones are mentioned below.
+The used linting has some built in rules which you can find in
+[the official repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Some important rules and customized ones are mentioned below.
 
 - Line length of 120 characters in the source file may not be exceeded for standard text. Make sure to use a line break
   before reaching this limit. A visual indicator in your editor may be helpful. This does not apply for special content
