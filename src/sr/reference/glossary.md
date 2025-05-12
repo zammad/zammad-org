@@ -179,7 +179,7 @@ GitHub
 
   As Zammad is an open-source project, many developers and tech-lovers from all
   over the world contribute to it. GitHub is where we coordinate all of this.
-  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.
+  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.
 
   Besides our own repo, Zammad also has an integration for GitHub.
   It creates a data exchange that shows you all relevant information about your

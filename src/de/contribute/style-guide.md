@@ -120,10 +120,9 @@ wird. Stellen Sie sicher, dass Sie die Prüfung durchführen, bevor Sie Ihre
 Änderungen commiten. Andernfalls wird die Erstellung der Dokumentation
 fehlschlagen.
 
-Das verwendete Linting hat einige eingebaute Regeln, die Sie
-[hier](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}
-finden können. Einige wichtige und von uns angepasste Regeln sind unten
-aufgeführt.
+The used linting has some built in rules which you can find in [the official
+repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Some important rules and customized ones are mentioned below.
 
 - Die Zeilenlänge von 120 Zeichen in der Quelldatei darf bei Standardtext
   nicht überschritten werden. Achten Sie darauf, dass Sie einen

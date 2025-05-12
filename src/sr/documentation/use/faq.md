@@ -93,7 +93,7 @@ the bottom left corner and select **Profile settings**. There you can define a r
 :::
 
 ::: details Can I adjust the order of the overviews?
-Yes! Read on [here](guides/overviews#reorder-overviews).
+Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).
 :::
 
 ## Рад на тикетима

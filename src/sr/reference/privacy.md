@@ -81,8 +81,8 @@ ones hosted and managed by the Zammad Foundation itself, but Zammad
 can be extended to interface with other services instead.
 
 The source code for these third-party service integrations can be
-found
-[here](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+found in
+[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
 ### Images

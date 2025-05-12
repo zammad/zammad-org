@@ -383,10 +383,10 @@ Die folgenden Reverse-Proxys werden unterstützt:
 - Nginx 1.3+
 - Apache 2.2+
 
-Das Installationsskript versucht, während der Installation einen Apache oder
-Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
-installiert.  Eine Anleitung zur Grundkonfiguration finden Sie
-[hier](/de/tutorials/webserver-config).
+The installation script tries to detect a Apache or Nginx during the
+installation. In case none is found, Nginx is automatically installed.  You
+can find a basic example in [our Webserver configuration
+guide](/en/tutorials/webserver-config).
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 

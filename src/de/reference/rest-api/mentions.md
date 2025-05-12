@@ -47,9 +47,9 @@ Erforderliche Berechtigung: `ticket.agent`
 Die Erwähnung wird für den Benutzer der aktuellen Sitzung erstellt.
 
 ::: tip
-Wenn Sie andere Benutzer erwähnen oder ein Ticket für sie abbonieren möchten, können Sie dies tun, indem Sie
-einen zusätzlichen `X-On-Behalf-Of`-Header in Ihrer Anfrage senden. Sie können entweder
-die ID des Benutzers oder die E-Mail-Adresse des Benutzers als Wert angeben.
+If you want to mention/subscribe other users, you can do so by sending
+an additional `From`-header in your request. You can either
+provide the user ID or the user email address as value.
 :::
 
 ## Löschen

@@ -110,9 +110,9 @@ documentation. After these you can find a section with some
 покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања
 ваших измена. У супротном, генерисање документације неће успети.
 
-Провере користе нека уобичајена правила која можете пронаћи
-[овде](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Нека важнија и прилагођена правила су излистана испод.
+The used linting has some built in rules which you can find in [the official
+repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Some important rules and customized ones are mentioned below.
 
 - Дужина линије у изворној датотеци не би требало да прелази 120 карактера
   за стандардан текст. Обратите пажњу да убаците ред пре постизања ове
