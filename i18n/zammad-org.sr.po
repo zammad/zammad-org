@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-09 11:38+0200\n"
+"POT-Creation-Date: 2025-05-12 17:18+0200\n"
 "PO-Revision-Date: 2025-05-01 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -1081,11 +1081,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:93
+#, fuzzy
+#| msgid ""
+#| "The used linting has some built in rules which you can find [here]"
+#| "(https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--"
+#| "aliases){target=_blank}. Some important rules and customized ones are "
+#| "mentioned below."
 msgid ""
-"The used linting has some built in rules which you can find [here](https://"
-"github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
-"{target=_blank}. Some important rules and customized ones are mentioned "
-"below."
+"The used linting has some built in rules which you can find in [the official "
+"repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/"
+"README.md#rules--aliases){target=_blank}.  Some important rules and "
+"customized ones are mentioned below."
 msgstr ""
 "Провере користе нека уобичајена правила која можете пронаћи [овде](https://"
 "github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
@@ -2900,7 +2906,7 @@ msgstr ""
 #. type: Fenced div block (details Can I adjust the order of the overviews?)
 #: src/en/documentation/use/faq.md:95
 #, no-wrap
-msgid "Yes! Read on [here](guides/overviews#reorder-overviews).\n"
+msgid "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).\n"
 msgstr ""
 
 #. type: Title ##
@@ -7007,7 +7013,8 @@ msgstr "Apache 2.2+"
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
-"can find a basic configuration guide [here](/en/tutorials/webserver-config)."
+"can find a basic example in [our Webserver configuration guide](/en/"
+"tutorials/webserver-config)."
 msgstr ""
 
 #. type: Title ###
@@ -14312,7 +14319,7 @@ msgstr ""
 msgid ""
 "  As Zammad is an open-source project, many developers and tech-lovers from all\n"
 "  over the world contribute to it. GitHub is where we coordinate all of this.\n"
-"  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.\n"
+"  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.\n"
 msgstr ""
 
 #. type: Plain text
@@ -15049,8 +15056,8 @@ msgid ""
 "can be extended to interface with other services instead.\n"
 "\n"
 "The source code for these third-party service integrations can be\n"
-"found\n"
-"[here](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
+"found in\n"
+"[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
 msgstr ""
 
 #. type: Title ###
@@ -18229,7 +18236,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "If you want to mention/subscribe other users, you can do so by sending\n"
-"an additional `X-On-Behalf-Of`-header in your request. You can either\n"
+"an additional `From`-header in your request. You can either\n"
 "provide the user ID or the user email address as value.\n"
 msgstr ""
 

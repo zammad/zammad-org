@@ -420,25 +420,27 @@ benötigt, um den Inhalt von E-Mail-Anhängen zu indizieren. Ab Elasticsearch
 
 ### Memcached
 
-Zammad heavily relies on caching to improve performance. This cache can be
-stored in the file system without relying on externals services. However,
-this is only possible if all services of Zammad are running on the same file
-system!
+Zammad verwendet ausgiebig Caching, um die Leistung zu verbessern. Dieser
+Cache kann im Dateisystem gespeichert werden, ohne auf externe Dienste
+angewiesen zu sein. Dies ist jedoch nur möglich, wenn alle Dienste von
+Zammad auf demselben Dateisystem laufen!
 
-In all other cases like deploying Zammad via containers (Docker or
-Kubernetes) or on separate cluster nodes, a
-[Memcached](https://memcached.org/){target=_blank} service is required to
-store the cache and serve it to all Zammad instances.  The Docker and
-Kubernetes stacks already include this service.
+In allen anderen Fällen, wie der Bereitstellung von Zammad über Container
+(Docker oder Kubernetes) oder auf separaten Clusterknoten, ist ein
+[Memcached](https://memcached.org/){target=_blank}-Dienst erforderlich, um
+den Cache zu speichern und ihn allen Zammad-Instanzen zur Verfügung zu
+stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits.
 
-However, even local file system installations may benefit from Memcached's
-performance improvements. You might want to have a look at our [performance
-tuning](/en/reference/env-vars.html#additional-performance-adjustments)
-section too.
+Aber auch lokale Dateisysteminstallationen können von den
+Leistungsverbesserungen von Memcached profitieren. Sie sollten auch einen
+Blick auf unseren Abschnitt
+[Leistungsoptimierung](/de/reference/env-vars.html#leistungsoptimierung)
+werfen.
 
-The installation and configuration is out of scope of this documentation. In
-case you have to install Memcached manually, please follow the [official
-documentation of Memcached](https://docs.memcached.org/){target=_blank}.
+Die Installation und Konfiguration ist nicht Gegenstand dieser
+Dokumentation. Falls Sie Memcached manuell installieren müssen, folgen Sie
+bitte der [offiziellen Dokumentation von
+Memcached](https://docs.memcached.org/){target=_blank}.
 
 ### GnuPG <Badge type="info" text="optional"/>
 

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-09 11:38+0200\n"
-"PO-Revision-Date: 2025-05-09 09:59+0000\n"
+"POT-Creation-Date: 2025-05-12 17:18+0200\n"
+"PO-Revision-Date: 2025-05-10 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1078,11 +1078,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:93
+#, fuzzy
+#| msgid ""
+#| "The used linting has some built in rules which you can find [here]"
+#| "(https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--"
+#| "aliases){target=_blank}. Some important rules and customized ones are "
+#| "mentioned below."
 msgid ""
-"The used linting has some built in rules which you can find [here](https://"
-"github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
-"{target=_blank}. Some important rules and customized ones are mentioned "
-"below."
+"The used linting has some built in rules which you can find in [the official "
+"repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/"
+"README.md#rules--aliases){target=_blank}.  Some important rules and "
+"customized ones are mentioned below."
 msgstr ""
 "Das verwendete Linting hat einige eingebaute Regeln, die Sie [hier](https://"
 "github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases)"
@@ -2881,8 +2887,9 @@ msgstr ""
 
 #. type: Fenced div block (details Can I adjust the order of the overviews?)
 #: src/en/documentation/use/faq.md:95
-#, no-wrap
-msgid "Yes! Read on [here](guides/overviews#reorder-overviews).\n"
+#, fuzzy, no-wrap
+#| msgid "Yes! Read on [here](guides/overviews#reorder-overviews).\n"
+msgid "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).\n"
 msgstr "Ja! Lesen Sie [hier](guides/overviews#ubersichten-neu-anordnen) weiter.\n"
 
 #. type: Title ##
@@ -7489,10 +7496,17 @@ msgstr "Apache 2.2+"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:385
+#, fuzzy
+#| msgid ""
+#| "The installation script tries to detect a Apache or Nginx during the "
+#| "installation. In case none is found, Nginx is automatically installed.  "
+#| "You can find a basic configuration guide [here](/en/tutorials/webserver-"
+#| "config)."
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
-"can find a basic configuration guide [here](/en/tutorials/webserver-config)."
+"can find a basic example in [our Webserver configuration guide](/en/"
+"tutorials/webserver-config)."
 msgstr ""
 "Das Installationsskript versucht, während der Installation einen Apache oder "
 "Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx "
@@ -7571,7 +7585,7 @@ msgstr ""
 #: src/en/get-started/installation/package.md:415
 #, no-wrap
 msgid "Memcached"
-msgstr ""
+msgstr "Memcached"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:419
@@ -7581,6 +7595,10 @@ msgid ""
 "this is only possible if all services of Zammad are running on the same file "
 "system!"
 msgstr ""
+"Zammad verwendet ausgiebig Caching, um die Leistung zu verbessern. Dieser "
+"Cache kann im Dateisystem gespeichert werden, ohne auf externe Dienste "
+"angewiesen zu sein. Dies ist jedoch nur möglich, wenn alle Dienste von "
+"Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:423
@@ -7591,6 +7609,11 @@ msgid ""
 "serve it to all Zammad instances.  The Docker and Kubernetes stacks already "
 "include this service."
 msgstr ""
+"In allen anderen Fällen, wie der Bereitstellung von Zammad über Container "
+"(Docker oder Kubernetes) oder auf separaten Clusterknoten, ist ein "
+"[Memcached](https://memcached.org/){target=_blank}-Dienst erforderlich, um "
+"den Cache zu speichern und ihn allen Zammad-Instanzen zur Verfügung zu "
+"stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:426
@@ -7600,21 +7623,21 @@ msgid ""
 "tuning](/en/reference/env-vars.html#additional-performance-adjustments) "
 "section too."
 msgstr ""
+"Aber auch lokale Dateisysteminstallationen können von den "
+"Leistungsverbesserungen von Memcached profitieren. Sie sollten auch einen "
+"Blick auf unseren Abschnitt [Leistungsoptimierung](/de/reference/env-"
+"vars.html#leistungsoptimierung) werfen."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:429
-#, fuzzy
-#| msgid ""
-#| "The installation and configuration is out of our scope of this "
-#| "documentation.  Please follow the [official guides](https://"
-#| "docs.memcached.org/){target=_blank}."
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
 "documentation of Memcached](https://docs.memcached.org/){target=_blank}."
 msgstr ""
-"Die Installation und Konfiguration ist nicht Bestandteil dieser "
-"Dokumentation .  Bitte folgen Sie der [offiziellen Anleitung](https://"
+"Die Installation und Konfiguration ist nicht Gegenstand dieser "
+"Dokumentation. Falls Sie Memcached manuell installieren müssen, folgen Sie "
+"bitte der [offiziellen Dokumentation von Memcached](https://"
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
@@ -15760,11 +15783,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:183
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  As Zammad is an open-source project, many developers and tech-lovers from all\n"
+#| "  over the world contribute to it. GitHub is where we coordinate all of this.\n"
+#| "  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.\n"
 msgid ""
 "  As Zammad is an open-source project, many developers and tech-lovers from all\n"
 "  over the world contribute to it. GitHub is where we coordinate all of this.\n"
-"  You can find the repository [here](https://github.com/zammad/zammad){target=_blank}.\n"
+"  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.\n"
 msgstr ""
 "  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen\n"
 "  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.\n"
@@ -16739,15 +16766,23 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/reference/privacy.md:79
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "By default, the third-party services that Zammad relies on are mostly\n"
+#| "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
+#| "can be extended to interface with other services instead.\n"
+#| "\n"
+#| "The source code for these third-party service integrations can be\n"
+#| "found\n"
+#| "[here](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
 msgid ""
 "By default, the third-party services that Zammad relies on are mostly\n"
 "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
 "can be extended to interface with other services instead.\n"
 "\n"
 "The source code for these third-party service integrations can be\n"
-"found\n"
-"[here](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
+"found in\n"
+"[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
 msgstr ""
 "Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist\n"
 "von der Zammad Foundation selbst gehostet und verwaltet, aber Zammad\n"
@@ -20842,10 +20877,14 @@ msgstr "Die Erwähnung wird für den Benutzer der aktuellen Sitzung erstellt."
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/mentions.md:49
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If you want to mention/subscribe other users, you can do so by sending\n"
+#| "an additional `X-On-Behalf-Of`-header in your request. You can either\n"
+#| "provide the user ID or the user email address as value.\n"
 msgid ""
 "If you want to mention/subscribe other users, you can do so by sending\n"
-"an additional `X-On-Behalf-Of`-header in your request. You can either\n"
+"an additional `From`-header in your request. You can either\n"
 "provide the user ID or the user email address as value.\n"
 msgstr ""
 "Wenn Sie andere Benutzer erwähnen oder ein Ticket für sie abbonieren möchten, können Sie dies tun, indem Sie\n"
@@ -28069,7 +28108,8 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid "    means we can only display the _last_ value of the field in question.\n"
 msgid "    means we can only display the _last_ value of the field in question.\n"
 msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
 
@@ -30209,6 +30249,24 @@ msgstr ""
 "Konfigurationsänderungen zu übernehmen."
 
 #, no-wrap
+#~ msgid ""
+#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+#~ "    violations.\n"
+#~ msgstr ""
+#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+#~ "     SLA-Verstöße.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+
+#, no-wrap
 #~ msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
 #~ msgstr "Memcached <Badge type=\"info\" text=\"optional\"/>"
 
@@ -30259,24 +30317,6 @@ msgstr ""
 #~ "![Screenshot zeigt die Ausgabe von Wiederherstellungscodes während der "
 #~ "2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-profile-overview-"
 #~ "action.png)"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid "No support for bug or security issues is provided."
 #~ msgstr "Keine Unterstützung durch Fehler- oder Sicherheitskorrekturen."
