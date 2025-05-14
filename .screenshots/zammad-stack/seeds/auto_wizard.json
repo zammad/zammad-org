@@ -213,6 +213,8 @@
       "email": "evely.smith@midlandbank.biz",
       "password": "evelyn4711",
       "organization": "Midland Bank",
+      "phone": "+49 123 45678910",
+      "note": "Hardware purchasing department; made a significant contribution to purchase all hardware from us.",
       "preferences": {
         "intro": true,
         "keyboard_shortcuts_clues": true,

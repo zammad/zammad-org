@@ -459,3 +459,19 @@ sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 
 ![Screenshot zeigt eine Übersicht über erfasste
 Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
+
+## User Popover
+
+**Warum?**
+
+Viewing important customer/user information at a glance without leaving your
+current view allows you to stay focused on your task.
+
+**Wie?**
+
+You might have seen it already: simply hover your mouse over an avatar icon,
+no matter if it is in the header, footer, main content or the content
+sidebar in the ticket detail view.
+
+![Screenshot shows the time accounting
+overview](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
