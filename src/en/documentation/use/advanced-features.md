@@ -362,7 +362,7 @@ your task.
 You might have seen it already: simply hover your mouse over an avatar icon, no matter if it is in the header, footer,
 main content or the content sidebar in the ticket detail view.
 
-![Screenshot shows the time accounting overview](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Screenshot shows an avatar with an open user popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
 
-By the way, the crown in the screenshot represents the customer's VIP state, which can be set in Zammad's customer
-overview in the admin settings.
+By the way, the crown in the screenshot represents the customer's VIP state, which can be set in the customer detail
+view and the admin settings.
