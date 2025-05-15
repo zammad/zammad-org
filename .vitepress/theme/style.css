@@ -323,6 +323,7 @@
 
 :root {
   --vp-layout-max-width: 1536px;
+  --vp-layout-top-height: 24px;
 }
 
 /**
@@ -674,5 +675,35 @@
     .dark & {
       background-color: #86270c;
     }
+  }
+}
+
+.VPHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--vp-layout-top-height);
+  background-color: #ffce33;
+  color: var(--vp-c-black);
+  border-bottom: 1px solid var(--vp-c-border);
+  text-align: center;
+  font-size: 13px;
+  z-index: 100;
+
+  &:hover:has(> a) {
+    background-color: #ffe21f;
+  }
+
+  > * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 11px;
   }
 }

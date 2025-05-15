@@ -13,6 +13,9 @@ themeConfig:
         link: /de/gdpr
         text: Datenschutzbestimmungen
     message: 'Zammad Hub'
+  header:
+    link: https://github.com/zammad/zammad-org/issues
+    text: '🛠️ This documentation is still under construction, please report any issues.'
   lastUpdated:
     text: 'Aktualisiert am'
   nav:

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-15 12:22+0200\n"
+"POT-Creation-Date: 2025-05-15 13:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,18 @@ msgstr ""
 #: .vitepress/config.en.yaml:1 src/en/index.md:1
 #, no-wrap
 msgid "Zammad Hub"
+msgstr ""
+
+#. type: Hash Value: themeConfig header link
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "https://github.com/zammad/zammad-org/issues"
+msgstr ""
+
+#. type: Hash Value: themeConfig header text
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "🛠️ This documentation is still under construction, please report any issues."
 msgstr ""
 
 #. type: Hash Value: themeConfig lastUpdated text
