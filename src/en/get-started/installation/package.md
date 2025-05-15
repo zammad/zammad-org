@@ -171,7 +171,7 @@ Packager.io may not be accessible from IPv6-only environments, so make sure
 to consider this when performing the steps below.
 :::
 
-:::tabs key:distros
+::::tabs key:distros
 
 === Ubuntu
 Install repository key:
@@ -185,21 +185,31 @@ Ubuntu 20.04
 
 ```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
 
 ```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 24.04
 
+::: info
+Starting with Ubuntu 24.04, we provide the command to add the repository in the
+[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
+:::
+
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+
+printf "Types: deb
+URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
+Suites: 22.04
+Components: main
+Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
+sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
 ```
 
 === Debian
@@ -207,21 +217,31 @@ Install repository key:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
 Debian 11
 
 ```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Debian 12
 
+::: info
+Starting with Debian 12, we provide the command to add the repository in the
+[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
+:::
+
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+
+printf "Types: deb
+URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/debian
+Suites: 12
+Components: main
+Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
+sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
 ```
 
 === OpenSUSE/SLES
@@ -259,7 +279,7 @@ sudo wget -O /etc/yum.repos.d/zammad.repo \
 https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
 
-:::
+::::
 
 ### Install Zammad
 

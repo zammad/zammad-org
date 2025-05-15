@@ -33,23 +33,46 @@ Elasticsearch.
 
 ## Install Elasticsearch 7
 
-:::tabs
+:::::tabs
 
-=== Ubuntu
+==== Ubuntu/Debian
 
 ```sh
 apt install apt-transport-https sudo wget curl gnupg
 ```
 
 ```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
+gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
 
+::::tabs
+
+=== Deb822 format
+
+:::info
+In this tab, the repository is added by using the
+[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
+If you run a distribution which doesn't support it, use the legacy format instead.
+:::
+
 ```sh
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
+printf "Types: deb
+URIs: https://artifacts.elastic.co/packages/7.x/apt
+Suites: stable
+Components: main
+Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg" | \
+sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null
 ```
+
+=== Legacy format
+
+```sh
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
+tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+```
+
+::::
 
 ```sh
 apt update
@@ -59,31 +82,7 @@ apt update
 apt install elasticsearch
 ```
 
-=== Debian
-
-```sh
-apt install apt-transport-https sudo wget curl gnupg
-```
-
-```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
-```
-
-```sh
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
-```
-
-```sh
-apt update
-```
-
-```sh
-apt install elasticsearch
-```
-
-=== OpenSUSE
+==== OpenSUSE
 
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
@@ -104,7 +103,7 @@ type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 zypper install elasticsearch
 ```
 
-=== CentOS
+==== CentOS
 
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
@@ -125,9 +124,13 @@ type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
 yum install -y elasticsearch
 ```
 
-=== Direct Download
+==== Direct Download
 
-:::
+Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the
+[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+for in-depth instructions.
+
+:::::
 
 Install the ingest-attachment plugin:
 :   ```sh
