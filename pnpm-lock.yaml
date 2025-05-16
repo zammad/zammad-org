@@ -41,7 +41,7 @@ importers:
         version: 1.31.1
       yaml:
         specifier: ^2.7.0
-        version: 2.7.1
+        version: 2.8.0
 
 packages:
 
@@ -1723,9 +1723,9 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  yaml@2.7.1:
-    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
-    engines: {node: '>= 14'}
+  yaml@2.8.0:
+    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+    engines: {node: '>= 14.6'}
     hasBin: true
 
   yauzl@2.10.0:
@@ -2849,7 +2849,7 @@ snapshots:
       nano-spawn: 1.0.1
       pidtree: 0.6.0
       string-argv: 0.3.2
-      yaml: 2.7.1
+      yaml: 2.8.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3463,7 +3463,7 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  yaml@2.7.1: {}
+  yaml@2.8.0: {}
 
   yauzl@2.10.0:
     dependencies:
