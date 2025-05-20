@@ -1,5 +1,23 @@
 ---
 order: 2
+features:
+  - icon: 🛠️
+    title: Simple and minimal, always
+    details: Lorem ipsum...
+    link: https://zammad.com
+    linkText: This is a link
+    target: _blank
+  - icon:
+      src: /assets/logo.svg
+    title: Another cool feature
+    details: Lorem ipsum...
+    link: https://zammad.com
+  - icon:
+      dark: /assets/logo-flat-dark.svg
+      light: /assets/logo-flat-light.svg
+    title: Another cool feature
+    details: Lorem ipsum...
+    link: https://zammad.com
 ---
 
 # Style and Content Guide
@@ -241,3 +259,37 @@ First Term <Badge type="info" text="tag1" />
 ```
 
 :::
+
+#### Highlighting with Boxes
+
+To highlight different options or variants, clickable boxes can be used.
+
+<VPDocFeatures />
+
+The definition of the content is done via frontmatter, see following example (reflects the boxes above):
+
+```yml
+
+features:
+  - icon: 🛠️
+    title: Simple and minimal, always
+    details: Lorem ipsum...
+    link: https://zammad.com
+    linkText: This is a link
+    target: _blank
+  - icon:
+      src: /assets/logo.svg
+    title: Another cool feature
+    details: Lorem ipsum...
+    link: https://zammad.com
+  - icon:
+      dark: /assets/logo-flat-dark.svg
+      light: /assets/logo-flat-light.svg
+    title: Another cool feature
+    details: Lorem ipsum...
+    link: https://zammad.com
+
+```
+
+To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
+rendered.
