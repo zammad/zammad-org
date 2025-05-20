@@ -174,7 +174,7 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 ::::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Repository Key eintragen::
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -198,8 +198,8 @@ sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 Ubuntu 24.04
 
 ::: info
-Starting with Ubuntu 24.04, we provide the command to add the repository in the
-[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
+Beginnend mit Ubuntu 24.04 enthält diese Doku den Befehl zum Hinzufügen des Repositorys im
+[deb822-Format] (https://repolib.readthedocs.io/en/latest/deb822-format.html).
 :::
 
 ```sh
@@ -230,8 +230,8 @@ sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 Debian 12
 
 ::: info
-Starting with Debian 12, we provide the command to add the repository in the
-[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
+Beginnend mit Debian 12 enthält diese Doku den Befehl zum Hinzufügen des Repositorys im
+[deb822-Format] (https://repolib.readthedocs.io/en/latest/deb822-format.html).
 :::
 
 ```sh
@@ -245,7 +245,7 @@ sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
 ```
 
 === OpenSUSE/SLES
-Install repository key:
+Repository Key hinzufügen:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -259,7 +259,7 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Install repository key:
+Repository Key hinzufügen:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -403,10 +403,10 @@ Die folgenden Reverse-Proxys werden unterstützt:
 - Nginx 1.3+
 - Apache 2.2+
 
-The installation script tries to detect a Apache or Nginx during the
-installation. In case none is found, Nginx is automatically installed.  You
-can find a basic example in [our Webserver configuration
-guide](/en/tutorials/webserver-config).
+Das Installationsskript versucht, während der Installation einen Apache oder
+Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
+installiert.  Eine Grundkonfiguration finden Sie in unserem
+[Webserver-Tutorial](/de/tutorials/webserver-config).
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 

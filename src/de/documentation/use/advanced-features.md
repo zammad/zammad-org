@@ -460,21 +460,24 @@ sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 ![Screenshot zeigt eine Übersicht über erfasste
 Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## User Popover
+## Benutzer Popover
 
 **Warum?**
 
-Viewing important customer/user information at a glance without leaving your
-current view allows you to stay focused on your task.
+Sie sehen wichtige Kunden-/Benutzerinformationen auf einen Blick, ohne Ihre
+aktuelle Ansicht zu verlassen und können sich auf Ihre Aufgabe
+konzentrieren.
 
 **Wie?**
 
-You might have seen it already: simply hover your mouse over an avatar icon,
-no matter if it is in the header, footer, main content or the content
-sidebar in the ticket detail view.
+Sie haben es vielleicht schon gesehen: Fahren Sie einfach mit der Maus über
+ein Avatar-Symbol, egal ob es sich im Header, in der Fußzeile, dem
+Hauptinhalt oder in der Inhalts-Seitenleiste der Ticket Detailansicht
+befindet.
 
-![Screenshot shows an avatar with an open user
-popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Screenshot zeigt einen Avatar mit einem geöffneten
+Benutzer-Popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
 
-By the way, the crown in the screenshot represents the customer's VIP state,
-which can be set in the customer detail view and the admin settings.
+Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
+der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
+kann.

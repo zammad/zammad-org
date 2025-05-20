@@ -93,7 +93,7 @@ in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort kö
 :::
 
 ::: details Can I adjust the order of the overviews?
-Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).
+Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-anordnen) weiter.
 :::
 
 ## Mit Tickets arbeiten

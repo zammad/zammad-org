@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: 🛠️
+    icon: "�\x9F\x9B��\x8F"
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
@@ -141,9 +141,10 @@ wird. Stellen Sie sicher, dass Sie die Prüfung durchführen, bevor Sie Ihre
 Änderungen commiten. Andernfalls wird die Erstellung der Dokumentation
 fehlschlagen.
 
-The used linting has some built in rules which you can find in [the official
-repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Some important rules and customized ones are mentioned below.
+Das verwendete Linting hat einige eingebaute Regeln, die Sie im [offiziellen
+Repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}
+finden können. Einige wichtige und von uns angepasste Regeln sind unten
+aufgeführt.
 
 - Die Zeilenlänge von 120 Zeichen in der Quelldatei darf bei Standardtext
   nicht überschritten werden. Achten Sie darauf, dass Sie einen

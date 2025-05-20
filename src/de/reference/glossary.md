@@ -176,9 +176,9 @@ GitHub
   Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.
   Hier bei Zammad verwenden wir es, um unser Repository zu verwalten.
 
-  As Zammad is an open-source project, many developers and tech-lovers from all
-  over the world contribute to it. GitHub is where we coordinate all of this.
-  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.
+  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen
+  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.
+  Folgen Sie dem Link um einen Blick in [das Repository](https://github.com/zammad/zammad){target=_blank} zu werfen.
 
   Neben unserem eigenen Repo hat Zammad auch eine Integration für GitHub.
   Sie schafft einen Datenaustausch, der Ihnen alle relevanten Informationen über Ihre
