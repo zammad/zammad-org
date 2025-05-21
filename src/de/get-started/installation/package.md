@@ -380,11 +380,11 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad speichert alle Inhalte in einer Datenbank. Wir unterstützen
-PostgreSQL in Version 10 oder höher. Das Installationsskript versucht,
-während der Installation einen MySQL/MariaDB- oder PostgreSQL-Server zu
-finden. Falls kein solcher gefunden wird, wird automatisch PostgreSQL
-installiert.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer.
+
+If no PostgreSQL server could be detected, it will be installed
+automatically during the package installation.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
@@ -392,9 +392,6 @@ einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. T
 "session connection pooling" genannt. Transaktionsbasiertes connection pooling wird
 nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 :::
-
-Wenn Sie noch MySQL/MariaDB verwenden, sollten Sie auf PostgreSQL
-umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt.
 
 ### Reverse Proxy
 

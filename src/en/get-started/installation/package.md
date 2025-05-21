@@ -377,10 +377,10 @@ installed.
 
 ### Database Server
 
-Zammad will store all content in a Database. We supported PostgreSQL in version
-10 or higher. The installation script tries to detect a MySQL/MariaDB or
-PostgreSQL server during the installation. In case none is found, PostgreSQL is
-automatically installed.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer.
+
+If no PostgreSQL server could be detected, it will be installed automatically during the package installation.
 
 ::: warning
 If you use database connection pooling software like PgBouncer, make sure to
@@ -388,9 +388,6 @@ use a pooling mode that is fully compatible with PostgreSQL. Typically this is
 called “session connection pooling”. Transaction-based connection pooling is
 not supported and may lead to errors during database migrations.
 :::
-
-If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.
-MySQL/MariaDB are **no longer** supported starting with Zammad 7.
 
 ### Reverse Proxy
 

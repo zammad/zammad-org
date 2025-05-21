@@ -379,10 +379,11 @@ systemctl (status|start|stop|restart) zammad-websocket
 
 ### Сервис базе података
 
-Zammad ће снимати сав садржај у базу података. Подржавамо PostgreSQL верзије
-10 и навише. Инсталациона скрипта ће покушати да детектује MySQL/MariaDB или
-PostgreSQL сервис приликом инсталације. У случају да не буде пронађен,
-PostgreSQL ће бити аутоматски инсталиран.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer.
+
+If no PostgreSQL server could be detected, it will be installed
+automatically during the package installation.
 
 ::: warning
 Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу
@@ -390,9 +391,6 @@ PostgreSQL ће бити аутоматски инсталиран.
 називом „session connection pooling”. Начин организација на основу трансакција није
 подржан и може довести до грешака приликом миграције базе података.
 :::
-
-Уколико још увек користите MySQL/MariaDB, требало би да мигрирате на
-PosgreSQL. Подршка за MySQL/MariaDB ће бити избачена почевши са Zammad 7.
 
 ### Прокси приступа
 
