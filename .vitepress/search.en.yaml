@@ -16,3 +16,4 @@ translations:
       navigateDownKeyAriaLabel: 'down arrow'
       closeText: 'to close'
       closeKeyAriaLabel: 'escape'
+  user: 'Use Zammad'

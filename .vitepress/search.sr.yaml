@@ -16,3 +16,4 @@ translations:
       selectText: 'за одабир'
     noResultsText: 'Без резултата за'
     resetButtonTitle: 'Поништи претрагу'
+  user: 'Use Zammad'

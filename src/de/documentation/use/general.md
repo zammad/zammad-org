@@ -20,6 +20,19 @@ Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden 
 _Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.
 Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.
 
+:::tip
+
+This user documentation is embedded in a comprehensive documentation of Zammad. Because this section is intended for
+users, we applied some tweaks.
+
+- The search is limited to user content only. However, if you are an admin or an interested user, you can search for
+  content across the whole documentation. To do so, activate a page outside the user documentation (e.g.
+  [Introduction](/en/documentation/introduction)) or simply click on the **Zammad Hub** in the top left corner.
+- The left navigation sidebar only shows the structure of the user content. If you want to see the whole structure of
+  the documentation, the same as above applies.
+
+:::
+
 ## Zammad Anfänger
 
 Wenn Sie mit Zammad und Ticket-Software noch nicht vertraut sind, empfehlen

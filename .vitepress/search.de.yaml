@@ -16,3 +16,4 @@ translations:
       selectText: 'zum Auswählen'
     noResultsText: 'Keine Ergebnisse für'
     resetButtonTitle: 'Suche zurücksetzen'
+  user: 'Use Zammad'

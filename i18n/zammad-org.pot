@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-21 13:24+0200\n"
+"POT-Creation-Date: 2025-05-21 14:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2813,14 +2813,35 @@ msgid ""
 "[[Ctrl]] [[k]].\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Fenced div block (tip)
 #: src/en/documentation/use/general.md:20
+#, no-wrap
+msgid ""
+"\n"
+"This user documentation is embedded in a comprehensive documentation of "
+"Zammad. Because this section is intended for\n"
+"users, we applied some tweaks.\n"
+"\n"
+"- The search is limited to user content only. However, if you are an admin "
+"or an interested user, you can search for\n"
+"  content across the whole documentation. To do so, activate a page outside "
+"the user documentation (e.g.\n"
+"  [Introduction](/en/documentation/introduction)) or simply click on the "
+"**Zammad Hub** in the top left corner.\n"
+"- The left navigation sidebar only shows the structure of the user "
+"content. If you want to see the whole structure of\n"
+"  the documentation, the same as above applies.\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/general.md:33
 #, markdown-text, no-wrap
 msgid "Zammad Beginner"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:25
+#: src/en/documentation/use/general.md:38
 #, markdown-text
 msgid ""
 "If you are new to Zammad and ticketing software at all, our recommendation "
@@ -2830,13 +2851,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:26
+#: src/en/documentation/use/general.md:39
 #, markdown-text, no-wrap
 msgid "Advanced User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:30
+#: src/en/documentation/use/general.md:43
 #, markdown-text
 msgid ""
 "If you are already familiar with the basics of Zammad, you should have a "
@@ -2844,7 +2865,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:32
+#: src/en/documentation/use/general.md:45
 #, markdown-text
 msgid ""
 "If you can't find what you are looking for, try the search in the header of "
@@ -2852,13 +2873,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:33
+#: src/en/documentation/use/general.md:46
 #, markdown-text, no-wrap
 msgid "Administrator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:37
+#: src/en/documentation/use/general.md:50
 #, markdown-text
 msgid ""
 "Are you an administrator and want to learn how to configure and manage "

@@ -15,6 +15,14 @@ import searchSR from './search.sr.yaml.json'
 
 const supportedLocales = ['en', 'de', 'sr']
 
+const searchConfigByLocale = {
+  en: searchEN,
+  de: searchDE,
+  sr: searchSR,
+}
+
+const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig(
   withSidebar({
@@ -129,8 +137,41 @@ export default defineConfig(
             root: searchEN,
             de:   searchDE,
             sr:   searchSR,
-          }
-        }
+          },
+          miniSearch: {
+            options: {
+              fields: ['title', 'titles', 'text', 'user'],
+              storeFields: ['title', 'titles', 'user'],
+              extractField(document, fieldName) {
+                // Mark all user pages in search index for later filtering.
+                if (fieldName === 'user') return userSearchRegex.test(document.id)
+
+                // Add localized prefix to the breadcrumb of user documentation pages.
+                if (fieldName === 'titles') {
+                  const matches = document.id.match(userSearchRegex)
+
+                  if (matches) {
+                    const localizedPrefix = searchConfigByLocale[ matches[1] ].translations.user
+
+                    return [localizedPrefix, ...document.titles]
+                  }
+
+                  return document.titles
+                }
+
+                return document[fieldName]
+              },
+            },
+            searchOptions: {
+              filter: (document) => {
+                // Show only user pages in search results, when in the user documentation section.
+                if (/\/documentation\/use\//.test(location.pathname))
+                  return document.user
+                return true
+              },
+            },
+          },
+        },
       },
     }
   }, [
