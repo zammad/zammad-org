@@ -93,18 +93,18 @@ zammad run rails r "p Sessions.list.uniq.count"
   Increasing this can reduce loading times when too many users are on
   Zammad at once.
 
-`ZAMMAD_SESSION_JOBS_CONCURRENT`
-: How many instances of the session worker to run at a time. Increasing this
-  can speed up background jobs (like the scheduler) when too many users are on
-  Zammad at once.
+`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session
+worker to run at a time.
 
-  Generally speaking, it should only be useful to adjust this setting if
-  you have more than 40 active users at a time.
+  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.
+
+  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of
+  workers can consume a lot of resources!
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
 : Allows spawning an independent process just for processing scheduled
   jobs like LDAP syncs. This can free up Zammad's background worker for
-  other tasks when running tasks that take fairly long.
+  other tasks when running tasks that take rather long.
 
   Maximum number of workers: `1`
 
@@ -112,14 +112,29 @@ zammad run rails r "p Sessions.list.uniq.count"
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: How many processes should work on delayed jobs? Increasing this _can_
-  improve issues with delayed jobs stacking up in your system. You may want to
-  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
+: How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in
+  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
 
   Maximum number of workers: `16`
 
-  You can disable the processing of scheduled jobs by setting
-  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).
+`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`
+: How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the
+  responses from the configured AI provider. By default, one worker is running.
+
+  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to
+  collapse.
+
+  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of
+  parallelization.
+
+  Maximum number of workers: `16`
+
+`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type="info" text="5"/>
+: How many threads should be processed by one AI worker (if you have more than one worker, it is multiplied by the
+  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core
+  anyway.
+
+  Maximum number of threads: 16
 
 ## Additional Performance Adjustments
 

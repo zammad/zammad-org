@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-22 12:02+0200\n"
+"POT-Creation-Date: 2025-05-22 13:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10811,23 +10811,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+#: src/en/reference/env-vars.md:99
+#, markdown-text
+msgid ""
+"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
+"worker to run at a time."
+msgstr ""
+
+#. type: Plain text
 #: src/en/reference/env-vars.md:101
 #, markdown-text, no-wrap
 msgid ""
-"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
-": How many instances of the session worker to run at a time. Increasing "
-"this\n"
-"  can speed up background jobs (like the scheduler) when too many users are "
-"on\n"
-"  Zammad at once.\n"
+"  Increasing this can speed up background jobs (like the scheduler) when "
+"many users are on Zammad at once.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:104
 #, markdown-text, no-wrap
 msgid ""
-"  Generally speaking, it should only be useful to adjust this setting if\n"
-"  you have more than 40 active users at a time.\n"
+"  It is not useful to adjust this setting if you have less than 40 active "
+"users at a time. Increasing the amount of\n"
+"  workers can consume a lot of resources!\n"
 msgstr ""
 
 #. type: Plain text
@@ -10837,7 +10842,7 @@ msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Allows spawning an independent process just for processing scheduled\n"
 "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
-"  other tasks when running tasks that take fairly long.\n"
+"  other tasks when running tasks that take rather long.\n"
 msgstr ""
 
 #. type: Plain text
@@ -10847,7 +10852,7 @@ msgid "  Maximum number of workers: `1`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:114 src/en/reference/env-vars.md:124
+#: src/en/reference/env-vars.md:114
 #, markdown-text, no-wrap
 msgid ""
 "  You can disable the processing of scheduled jobs by setting\n"
@@ -10855,30 +10860,78 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:119
+#: src/en/reference/env-vars.md:118
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": How many processes should work on delayed jobs? Increasing this _can_\n"
-"  improve issues with delayed jobs stacking up in your system. You may want "
-"to\n"
-"  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+": How many processes should work on delayed jobs? Increasing this can "
+"improve issues with delayed jobs stacking up in\n"
+"  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` "
+"before though.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:121
+#: src/en/reference/env-vars.md:120 src/en/reference/env-vars.md:132
 #, markdown-text, no-wrap
 msgid "  Maximum number of workers: `16`\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/reference/env-vars.md:124
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
+": How many instances of AI workers should run simultaneously. AI workers "
+"handle Zammad's AI requests and fetch the\n"
+"  responses from the configured AI provider. By default, one worker is "
+"running.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:127
+#, markdown-text, no-wrap
+msgid ""
+"  Self hosted AI users should be careful in increasing it. Depending on your "
+"hardware, it may cause your AI service to\n"
+"  collapse.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:130
+#, markdown-text, no-wrap
+msgid ""
+"  For AI cloud service users with a big Zammad instance, it could make sense "
+"to increase it to have some kind of\n"
+"  parallelization.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:137
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" "
+"text=\"5\"/>\n"
+": How many threads should be processed by one AI worker (if you have more "
+"than one worker, it is multiplied by the\n"
+"  amount of workers). This may speed up the AI processing, but be aware that "
+"a ruby worker can only span across 1 core\n"
+"  anyway.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:139
+#, markdown-text, no-wrap
+msgid "  Maximum number of threads: 16\n"
+msgstr ""
+
 #. type: Title ##
-#: src/en/reference/env-vars.md:125
+#: src/en/reference/env-vars.md:140
 #, markdown-text, no-wrap
 msgid "Additional Performance Adjustments"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/env-vars.md:127
+#: src/en/reference/env-vars.md:142
 #, no-wrap
 msgid ""
 "The options listed below allow you to distribute Zammad processes over\n"
@@ -10890,7 +10943,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:142
+#: src/en/reference/env-vars.md:157
 #, markdown-text, no-wrap
 msgid ""
 "`REDIS_URL`\n"
@@ -10902,7 +10955,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:149
+#: src/en/reference/env-vars.md:164
 #, markdown-text, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS`\n"
@@ -10914,7 +10967,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:153
+#: src/en/reference/env-vars.md:168
 #, markdown-text, no-wrap
 msgid ""
 "  Memcached allows you to restrict the maximum size Zammad may store as\n"
@@ -10923,25 +10976,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:154
+#: src/en/reference/env-vars.md:169
 #, markdown-text, no-wrap
 msgid "Storage Options"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:158
+#: src/en/reference/env-vars.md:173
 #, markdown-text
 msgid "`S3_URL` : Allows you to provide your S3 configuration."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:160
+#: src/en/reference/env-vars.md:175
 #, markdown-text, no-wrap
 msgid "  Format / example:\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:161
+#: src/en/reference/env-vars.md:176
 #, no-wrap
 msgid ""
 "  "
