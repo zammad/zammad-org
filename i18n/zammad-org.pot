@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-21 14:40+0100\n"
+"POT-Creation-Date: 2025-05-22 07:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -701,7 +701,7 @@ msgid "Lorem ipsum..."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/contribute/style-guide.md:1
+#: src/en/contribute/style-guide.md:1 src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "https://zammad.com"
 msgstr ""
@@ -1366,7 +1366,8 @@ msgid "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:268
+#: src/en/contribute/style-guide.md:268 src/en/documentation/introduction.md:25
+#: src/en/get-started/get-zammad.md:32
 #, markdown-text, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr ""
@@ -1414,6 +1415,44 @@ msgid ""
 "rendered.\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid ""
+"Find everything about how to work with Zammad on daily basis, with tips, "
+"tutorials and everything else you may need."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "/en/documentation/use/general"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "User Documentation"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Find out how to configure Zammad and connect it with remote systems."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "/en/documentation/manage-zammad/general"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Administrator Documentation"
+msgstr ""
+
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/ai.md:8
@@ -1428,41 +1467,29 @@ msgid "Introduction"
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/introduction.md:6
+#: src/en/documentation/introduction.md:15
 #, markdown-text, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:12
+#: src/en/documentation/introduction.md:20
 #, markdown-text
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
-"out of your ticketing and helpdesk software. Here, you'll find in-depth "
+"out of your ticketing and helpdesk software.  Here, you'll find in-depth "
 "tutorials, user manuals and guides on how to effectively manage customer "
 "support requests, track issues, and collaborate with your team."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:17
+#: src/en/documentation/introduction.md:24
 #, markdown-text
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
-"designed to provide you with the knowledge and tools you need to succeed.  "
-"Browse through our resources, and discover how Zammad can help you deliver "
-"exceptional customer service and streamline your support operations."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/introduction.md:19
-#, markdown-text
-msgid "[User Documentation](/en/documentation/use/general)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/introduction.md:20
-#, markdown-text
-msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
+"designed to provide you with the knowledge and tools you need to "
+"succeed. Browse through our resources, and discover how Zammad can help you "
+"deliver exceptional customer service and streamline your support operations."
 msgstr ""
 
 #. type: Title ###
@@ -5406,22 +5433,74 @@ msgstr ""
 msgid "Marienstraße 18, Berlin, BE, 10117, Germany"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid ""
+"If you are unsure if Zammad is the right tool, test it by using a free trial "
+"instance."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "https://zammad.com/en/getting-started"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "Free Trial"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid ""
+"Get your cloud-based Zammad here. No installation, no hassle, we take care "
+"of everything!"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "Zammad Hosted Services"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "You can even self-host Zammad. Find installation instructions here."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "/en/get-started/installation/prerequisites"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "Self Hosting"
+msgstr ""
+
 #. type: Title #
-#: src/en/get-started/get-zammad.md:5
+#: src/en/get-started/get-zammad.md:21
 #, markdown-text, no-wrap
 msgid "Get Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:9
+#: src/en/get-started/get-zammad.md:24
 #, markdown-text
 msgid ""
-"Not using Zammad yet? You will like it! See the sections below for different "
-"options."
+"Not using Zammad yet? You will like it! Choose your favorite option below or "
+"read on in the sections below."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:15
+#: src/en/get-started/get-zammad.md:30
 #, markdown-text
 msgid ""
 "If you have questions, feel free to [get in touch with "
@@ -5431,29 +5510,29 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:16
+#: src/en/get-started/get-zammad.md:33
 #, markdown-text, no-wrap
 msgid "Testing Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:22
+#: src/en/get-started/get-zammad.md:39
 #, markdown-text
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
 "trial instance](https://zammad.com/en/getting-started){target=_blank}.  You "
-"can play around and then you can switch to a official supported instance, "
+"can play around and then you can switch to an official supported instance, "
 "either keeping your data or start with an empty system."
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:23
+#: src/en/get-started/get-zammad.md:40
 #, markdown-text, no-wrap
 msgid "Use Zammad's Hosted Service"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:28
+#: src/en/get-started/get-zammad.md:45
 #, markdown-text
 msgid ""
 "To use Zammad in production, head over to our sister site "
@@ -5462,13 +5541,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:29
+#: src/en/get-started/get-zammad.md:46
 #, markdown-text, no-wrap
 msgid "Self Hosted Installation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:34
+#: src/en/get-started/get-zammad.md:51
 #, markdown-text
 msgid ""
 "You can even host Zammad on your own. Read our [installation "
@@ -5477,7 +5556,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:37
+#: src/en/get-started/get-zammad.md:54
 #, markdown-text
 msgid ""
 "If you are a self-hosted user and want to have support at hand, our sales "

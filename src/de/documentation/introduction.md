@@ -1,23 +1,29 @@
 ---
+features:
+  - 
+    details: 'Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need.'
+    icon: 🙋
+    link: /en/documentation/use/general
+    title: 'User Documentation'
+  - 
+    details: 'Find out how to configure Zammad and connect it with remote systems.'
+    icon: 🧑‍🔧
+    link: /en/documentation/manage-zammad/general
+    title: 'Administrator Documentation'
 order: 1
 title: Einführung
 ---
 
 # Willkommen bei der Zammad-Dokumentation
 
-Diese Dokumentation dient als umfassender Leitfaden, um das Beste aus Ihrer
-Ticket- und Helpdesk-Software herauszuholen. Hier finden Sie ausführliche
-Tutorials, Benutzerhandbücher und Anleitungen zur effektiven Verwaltung von
-Supportanfragen, zur Verfolgung von Problemen und zur Zusammenarbeit mit
-Ihrem Team.
+This documentation serves as your comprehensive guide to getting the most
+out of your ticketing and helpdesk software.  Here, you'll find in-depth
+tutorials, user manuals and guides on how to effectively manage customer
+support requests, track issues, and collaborate with your team.
 
-Ganz gleich, ob Sie ein neuer Benutzer oder ein erfahrener Administrator
-sind, unsere Dokumentation soll Ihnen das Wissen und die Werkzeuge an die
-Hand geben, die Sie für Ihren Erfolg benötigen.  Stöbern Sie in unseren
-Ressourcen und entdecken Sie, wie Zammad Ihnen helfen kann, einen
-außergewöhnlichen Kundenservice zu bieten und Ihre Supportabläufe zu
-optimieren.
+Whether you're a new user or an experienced admin, our documentation is
+designed to provide you with the knowledge and tools you need to
+succeed. Browse through our resources, and discover how Zammad can help you
+deliver exceptional customer service and streamline your support operations.
 
-[Benutzer-Dokumentation](/de/documentation/use/general)
-
-[Admin Dokumentation](/de/documentation/manage-zammad/general)
+<VPDocFeatures />

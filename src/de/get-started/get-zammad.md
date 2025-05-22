@@ -1,25 +1,44 @@
 ---
+features:
+  - 
+    details: 'If you are unsure if Zammad is the right tool, test it by using a free trial instance.'
+    icon: 🧪
+    link: https://zammad.com/en/getting-started
+    target: _blank
+    title: 'Free Trial'
+  - 
+    details: 'Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!'
+    icon:
+      src: /assets/logo.svg
+    link: https://zammad.com
+    target: _blank
+    title: 'Zammad Hosted Services'
+  - 
+    details: 'You can even self-host Zammad. Find installation instructions here.'
+    icon: 🖥️
+    link: /en/get-started/installation/prerequisites
+    title: 'Self Hosting'
 order: 1
 ---
 
 # Zammad holen
 
-Sie benutzen Zammad noch nicht? Es wird Ihnen gefallen! In den folgenden
-Abschnitten finden Sie verschiedene Optionen.
+Not using Zammad yet? You will like it! Choose your favorite option below or
+read on in the sections below.
 
 Wenn Sie Fragen haben, können Sie sich gerne [an
 uns](https://zammad.com/de/company/contact){target=_blank} wenden und einen
 Blick in das [Community Forum](https://community.zammad.org/){target=_blank}
 werfen, wo Sie nützliche Informationen und Hilfe finden können.
 
+<VPDocFeatures />
+
 ## Zammad testen
 
-Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu
-testen, ist die Verwendung einer [kostenlosen
-Testversion](https://zammad.com/de/getting-started){target=_blank}. Sie
-können damit herumspielen und dann zu einer offiziellen Instanz wechseln,
-wobei Sie entweder Ihre Daten behalten oder mit einem leeren System neu
-beginnen können.
+We are sure you like Zammad! The easiest way to test it is to use a [free
+trial instance](https://zammad.com/en/getting-started){target=_blank}.  You
+can play around and then you can switch to an official supported instance,
+either keeping your data or start with an empty system.
 
 ## Nutzen Sie Zammads Hosting-Service
 
