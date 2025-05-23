@@ -2,7 +2,7 @@
 features:
   - 
     details: 'If you are unsure if Zammad is the right tool, test it by using a free trial instance.'
-    icon: ğŸ§ª
+    icon: "ğ\x9F§ª"
     link: https://zammad.com/en/getting-started
     target: _blank
     title: 'Free Trial'
@@ -15,7 +15,7 @@ features:
     title: 'Zammad Hosted Services'
   - 
     details: 'You can even self-host Zammad. Find installation instructions here.'
-    icon: ğŸ–¥ï¸
+    icon: "ğ\x9F\x96¥ï¸\x8F"
     link: /en/get-started/installation/prerequisites
     title: 'Self Hosting'
 order: 1

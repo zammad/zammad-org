@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-20 11:39+0200\n"
+"POT-Creation-Date: 2025-05-22 13:16+0200\n"
 "PO-Revision-Date: 2025-05-20 07:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -750,7 +750,7 @@ msgid "Lorem ipsum..."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/contribute/style-guide.md:1
+#: src/en/contribute/style-guide.md:1 src/en/get-started/get-zammad.md:1
 #, fuzzy, no-wrap
 #| msgid "https://www.zammad.com"
 msgid "https://zammad.com"
@@ -1511,7 +1511,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:268
+#: src/en/contribute/style-guide.md:268 src/en/documentation/introduction.md:25
+#: src/en/get-started/get-zammad.md:32
 #, fuzzy, no-wrap
 #| msgid "Features"
 msgid "<VPDocFeatures />\n"
@@ -1558,6 +1559,46 @@ msgid ""
 "rendered.\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "[User Documentation](/en/documentation/use/general)"
+msgid "/en/documentation/use/general"
+msgstr "[Benutzer-Dokumentation](/de/documentation/use/general)"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "Documentation"
+msgid "User Documentation"
+msgstr "Dokumentation"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Find out how to configure Zammad and connect it with remote systems."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
+msgid "/en/documentation/manage-zammad/general"
+msgstr "[Admin Dokumentation](/de/documentation/manage-zammad/general)"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "Admin documentation"
+msgid "Administrator Documentation"
+msgstr "Administrations-Dokumentation"
+
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/ai.md:8
@@ -1572,16 +1613,22 @@ msgid "Introduction"
 msgstr "Einführung"
 
 #. type: Title #
-#: src/en/documentation/introduction.md:6
+#: src/en/documentation/introduction.md:15
 #, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr "Willkommen bei der Zammad-Dokumentation"
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:12
+#: src/en/documentation/introduction.md:20
+#, fuzzy
+#| msgid ""
+#| "This documentation serves as your comprehensive guide to getting the most "
+#| "out of your ticketing and helpdesk software. Here, you'll find in-depth "
+#| "tutorials, user manuals and guides on how to effectively manage customer "
+#| "support requests, track issues, and collaborate with your team."
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
-"out of your ticketing and helpdesk software. Here, you'll find in-depth "
+"out of your ticketing and helpdesk software.  Here, you'll find in-depth "
 "tutorials, user manuals and guides on how to effectively manage customer "
 "support requests, track issues, and collaborate with your team."
 msgstr ""
@@ -1592,10 +1639,17 @@ msgstr ""
 "Ihrem Team."
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:17
+#: src/en/documentation/introduction.md:24
+#, fuzzy
+#| msgid ""
+#| "Whether you're a new user or an experienced admin, our documentation is "
+#| "designed to provide you with the knowledge and tools you need to "
+#| "succeed.  Browse through our resources, and discover how Zammad can help "
+#| "you deliver exceptional customer service and streamline your support "
+#| "operations."
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
-"designed to provide you with the knowledge and tools you need to succeed.  "
+"designed to provide you with the knowledge and tools you need to succeed. "
 "Browse through our resources, and discover how Zammad can help you deliver "
 "exceptional customer service and streamline your support operations."
 msgstr ""
@@ -1605,16 +1659,6 @@ msgstr ""
 "Ressourcen und entdecken Sie, wie Zammad Ihnen helfen kann, einen "
 "außergewöhnlichen Kundenservice zu bieten und Ihre Supportabläufe zu "
 "optimieren."
-
-#. type: Plain text
-#: src/en/documentation/introduction.md:19
-msgid "[User Documentation](/en/documentation/use/general)"
-msgstr "[Benutzer-Dokumentation](/de/documentation/use/general)"
-
-#. type: Plain text
-#: src/en/documentation/introduction.md:20
-msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
-msgstr "[Admin Dokumentation](/de/documentation/manage-zammad/general)"
 
 #. type: Title ###
 #: src/en/documentation/manage-zammad/general.md:1
@@ -3140,14 +3184,30 @@ msgstr ""
 "_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.\n"
 "Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.\n"
 
-#. type: Title ##
+#. type: Fenced div block (tip)
 #: src/en/documentation/use/general.md:20
+#, no-wrap
+msgid ""
+"\n"
+"This user documentation is embedded in a comprehensive documentation of Zammad. Because this section is intended for\n"
+"users, we applied some tweaks.\n"
+"\n"
+"- The search is limited to user content only. However, if you are an admin or an interested user, you can search for\n"
+"  content across the whole documentation. To do so, activate a page outside the user documentation (e.g.\n"
+"  [Introduction](/en/documentation/introduction)) or simply click on the **Zammad Hub** in the top left corner.\n"
+"- The left navigation sidebar only shows the structure of the user content. If you want to see the whole structure of\n"
+"  the documentation, the same as above applies.\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/general.md:33
 #, no-wrap
 msgid "Zammad Beginner"
 msgstr "Zammad Anfänger"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:25
+#: src/en/documentation/use/general.md:38
 msgid ""
 "If you are new to Zammad and ticketing software at all, our recommendation "
 "is to have a look at the [Start with Zammad](start-using-zammad) page. You "
@@ -3160,13 +3220,13 @@ msgstr ""
 "Elemente sowie grundlegender Ticket-Attribute und wie man diese verwendet."
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:26
+#: src/en/documentation/use/general.md:39
 #, no-wrap
 msgid "Advanced User"
 msgstr "Fortgeschrittener Benutzer"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:30
+#: src/en/documentation/use/general.md:43
 msgid ""
 "If you are already familiar with the basics of Zammad, you should have a "
 "look at the [advanced features](advanced-features) page."
@@ -3175,7 +3235,7 @@ msgstr ""
 "einen Blick auf die Seite [Erweiterte Funktionen](advanced-features) werfen."
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:32
+#: src/en/documentation/use/general.md:45
 msgid ""
 "If you can't find what you are looking for, try the search in the header of "
 "the site."
@@ -3184,13 +3244,13 @@ msgstr ""
 "im Header der Website."
 
 #. type: Title ##
-#: src/en/documentation/use/general.md:33
+#: src/en/documentation/use/general.md:46
 #, no-wrap
 msgid "Administrator"
 msgstr "Administrator"
 
 #. type: Plain text
-#: src/en/documentation/use/general.md:37
+#: src/en/documentation/use/general.md:50
 msgid ""
 "Are you an administrator and want to learn how to configure and manage "
 "Zammad? Then head over to the [manage Zammad](/en/documentation/manage-"
@@ -3211,10 +3271,14 @@ msgstr "Zammad KI"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:12
+#, fuzzy
+#| msgid ""
+#| "Zammad is getting even smarter! We are expanding Zammad's AI capabilities "
+#| "to help you manage support tickets even more efficiently. The initial "
+#| "focus is on ticket summaries, but more features will arrive soon! ✨🚀"
 msgid ""
 "Zammad is getting even smarter! We are expanding Zammad's AI capabilities to "
-"help you manage support tickets even more efficiently. The initial focus is "
-"on ticket summaries, but more features will arrive soon! ✨🚀"
+"help you manage support tickets even more efficiently. ✨🚀"
 msgstr ""
 "Zammad wird jetzt noch intelligenter! Wir erweitern die KI-Fähigkeiten von "
 "Zammad, damit Sie Support-Tickets noch effizienter verwalten können. Der "
@@ -3316,7 +3380,7 @@ msgstr ""
 "behalten."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:40
+#: src/en/documentation/use/guides/ai.md:41
 msgid ""
 "If you don't want to see the banner below the articles, you can permanently "
 "hide it. To get the banner again, go to **Appearance** in your [profile "
@@ -3326,6 +3390,85 @@ msgstr ""
 "dauerhaft ausblenden. Um das Banner wieder zu sehen, gehen Sie zu "
 "**Aussehen** in Ihren [Profileinstellungen](../manage-profile) und "
 "aktivieren Sie es wieder, indem Sie das Kontrollkästchen anklicken."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:42
+#, no-wrap
+msgid "Smart Editor"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:46
+msgid ""
+"The new AI-powered smart editor is designed to simplify and enhance your "
+"ticket response workflow. It helps you with text tools while you create an "
+"article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:50
+msgid ""
+"To use any of the following features, you first have to select text you want "
+"to apply the changes to. After that, click the **Smart Editor** link at the "
+"bottom of the article creation and choose one of the following features, "
+"depending on what you want to perform."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:52
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
+#| "features.cy.js/ticket-macro.png)"
+msgid ""
+"![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-"
+"guide-ai.cy.js/ai-ticket-smart-editor.png)"
+msgstr ""
+"![Screenshot zeigt Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-"
+"features.cy.js/ticket-macro.png)"
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/ai.md:53
+#, no-wrap
+msgid ""
+"\n"
+"- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,\n"
+"  try using the undo feature by pressing [[Ctrl]] + [[z]].\n"
+"- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in\n"
+"  individual cases due to the nature of neural networks.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:68
+msgid ""
+"**Improve writing**: Uses your text as a base and tries to improve it by "
+"enhancing clarity, conciseness and structure as well as removing "
+"misspellings and grammar issues."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:68
+msgid ""
+"**Fix spelling and grammar**: Just proofreads your text and automatically "
+"removes spelling and grammar mistakes."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:68
+msgid ""
+"**Expand**: Expands your text while keeping your message. Useful if your "
+"customer expects more than some bullet points as an answer. You can even use "
+"it by providing only basic information (e.g. via bullet points) and let the "
+"AI write the answer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:68
+msgid ""
+"**Simplify**: Does the opposite of the expansion and shrinks your text while "
+"keeping your message."
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/guides/index.md:1
@@ -6096,23 +6239,78 @@ msgstr ""
 msgid "Marienstraße 18, Berlin, BE, 10117, Germany"
 msgstr "Marienstraße 18, Berlin, BE, 10117, Deutschland"
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "If you are unsure if Zammad is the right tool, test it by using a free trial instance."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/get-started/get-zammad.md:1
+#, fuzzy, no-wrap
+#| msgid "https://zammad.com/en/company"
+msgid "https://zammad.com/en/getting-started"
+msgstr "https://zammad.com/de/company"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "Free Trial"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, fuzzy, no-wrap
+#| msgid "Use Zammad's Hosted Service"
+msgid "Zammad Hosted Services"
+msgstr "Nutzen Sie Zammads Hosting-Service"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "You can even self-host Zammad. Find installation instructions here."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/get-started/get-zammad.md:1
+#, no-wrap
+msgid "/en/get-started/installation/prerequisites"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/get-started/get-zammad.md:1
+#, fuzzy, no-wrap
+#| msgid "Self Hosted Installation"
+msgid "Self Hosting"
+msgstr "Selbst gehostete Installation"
+
 #. type: Title #
-#: src/en/get-started/get-zammad.md:5
+#: src/en/get-started/get-zammad.md:21
 #, no-wrap
 msgid "Get Zammad"
 msgstr "Zammad holen"
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:9
+#: src/en/get-started/get-zammad.md:24
+#, fuzzy
+#| msgid ""
+#| "Not using Zammad yet? You will like it! See the sections below for "
+#| "different options."
 msgid ""
-"Not using Zammad yet? You will like it! See the sections below for different "
-"options."
+"Not using Zammad yet? You will like it! Choose your favorite option below or "
+"read on in the sections below."
 msgstr ""
 "Sie benutzen Zammad noch nicht? Es wird Ihnen gefallen! In den folgenden "
 "Abschnitten finden Sie verschiedene Optionen."
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:15
+#: src/en/get-started/get-zammad.md:30
 msgid ""
 "If you have questions, feel free to [get in touch with us](https://"
 "zammad.com/en/company/contact){target=_blank} and to have a look at the "
@@ -6125,17 +6323,23 @@ msgstr ""
 "nützliche Informationen und Hilfe finden können."
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:16
+#: src/en/get-started/get-zammad.md:33
 #, no-wrap
 msgid "Testing Zammad"
 msgstr "Zammad testen"
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:22
+#: src/en/get-started/get-zammad.md:39
+#, fuzzy
+#| msgid ""
+#| "We are sure you like Zammad! The easiest way to test it is to use a [free "
+#| "trial instance](https://zammad.com/en/getting-started){target=_blank}.  "
+#| "You can play around and then you can switch to a official supported "
+#| "instance, either keeping your data or start with an empty system."
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
 "trial instance](https://zammad.com/en/getting-started){target=_blank}.  You "
-"can play around and then you can switch to a official supported instance, "
+"can play around and then you can switch to an official supported instance, "
 "either keeping your data or start with an empty system."
 msgstr ""
 "Wir sind sicher, dass Ihnen Zammad gefällt! Der einfachste Weg, es zu "
@@ -6145,13 +6349,13 @@ msgstr ""
 "Daten behalten oder mit einem leeren System neu beginnen können."
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:23
+#: src/en/get-started/get-zammad.md:40
 #, no-wrap
 msgid "Use Zammad's Hosted Service"
 msgstr "Nutzen Sie Zammads Hosting-Service"
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:28
+#: src/en/get-started/get-zammad.md:45
 msgid ""
 "To use Zammad in production, head over to our sister site [zammad.com]"
 "(https://zammad.com/en/pricing){target=_blank} where you can find prices for "
@@ -6162,13 +6366,13 @@ msgstr ""
 "Preise für Hosting Services von Zammad finden können."
 
 #. type: Title ##
-#: src/en/get-started/get-zammad.md:29
+#: src/en/get-started/get-zammad.md:46
 #, no-wrap
 msgid "Self Hosted Installation"
 msgstr "Selbst gehostete Installation"
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:34
+#: src/en/get-started/get-zammad.md:51
 msgid ""
 "You can even host Zammad on your own. Read our [installation instructions](/"
 "en/get-started/installation/prerequisites) and see which deployment method "
@@ -6179,7 +6383,7 @@ msgstr ""
 "sehen Sie, welche Variante Ihren Bedürfnissen entspricht."
 
 #. type: Plain text
-#: src/en/get-started/get-zammad.md:37
+#: src/en/get-started/get-zammad.md:54
 msgid ""
 "If you are a self-hosted user and want to have support at hand, our sales "
 "team is happy to get in touch with you. Just leave them [a message](https://"
@@ -7630,18 +7834,18 @@ msgid "Database Server"
 msgstr "Datenbank-Server"
 
 #. type: Plain text
+#: src/en/get-started/installation/package.md:382
+msgid ""
+"Zammad stores its content in a database. The supported database system is "
+"[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer."
+msgstr ""
+
+#. type: Plain text
 #: src/en/get-started/installation/package.md:384
 msgid ""
-"Zammad will store all content in a Database. We supported PostgreSQL in "
-"version 10 or higher. The installation script tries to detect a MySQL/"
-"MariaDB or PostgreSQL server during the installation. In case none is found, "
-"PostgreSQL is automatically installed."
+"If no PostgreSQL server could be detected, it will be installed "
+"automatically during the package installation."
 msgstr ""
-"Zammad speichert alle Inhalte in einer Datenbank. Wir unterstützen "
-"PostgreSQL in Version 10 oder höher. Das Installationsskript versucht, "
-"während der Installation einen MySQL/MariaDB- oder PostgreSQL-Server zu "
-"finden. Falls kein solcher gefunden wird, wird automatisch PostgreSQL "
-"installiert."
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/installation/package.md:385
@@ -7658,38 +7862,29 @@ msgstr ""
 "\"session connection pooling\" genannt. Transaktionsbasiertes connection pooling wird\n"
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:394
-msgid ""
-"If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.  "
-"MySQL/MariaDB are **no longer** supported starting with Zammad 7."
-msgstr ""
-"Wenn Sie noch MySQL/MariaDB verwenden, sollten Sie auf PostgreSQL "
-"umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt."
-
 #. type: Title ###
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:392
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:398
+#: src/en/get-started/installation/package.md:395
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:398
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:398
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:402
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -7702,13 +7897,13 @@ msgstr ""
 "Tutorial](/de/tutorials/webserver-config)."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:406
+#: src/en/get-started/installation/package.md:403
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:413
+#: src/en/get-started/installation/package.md:410
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -7724,12 +7919,12 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:415
+#: src/en/get-started/installation/package.md:412
 msgid "Supported Elasticsearch versions are `7.8` - `8.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `8.x`."
 
 #. type: Fenced div block (details Elasticsearch version history)
-#: src/en/get-started/installation/package.md:416
+#: src/en/get-started/installation/package.md:413
 #, no-wrap
 msgid ""
 "\n"
@@ -7759,7 +7954,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:434
+#: src/en/get-started/installation/package.md:431
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -7770,13 +7965,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:432
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:436
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -7789,7 +7984,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:443
+#: src/en/get-started/installation/package.md:440
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -7804,7 +7999,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:446
+#: src/en/get-started/installation/package.md:443
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -7817,7 +8012,7 @@ msgstr ""
 "vars.html#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:449
+#: src/en/get-started/installation/package.md:446
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -7829,13 +8024,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:450
+#: src/en/get-started/installation/package.md:447
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:455
+#: src/en/get-started/installation/package.md:452
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -12200,13 +12395,21 @@ msgstr ""
 "  Zammad sind.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:101
-#, no-wrap
+#: src/en/reference/env-vars.md:99
 msgid ""
-"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
-": How many instances of the session worker to run at a time. Increasing this\n"
-"  can speed up background jobs (like the scheduler) when too many users are on\n"
-"  Zammad at once.\n"
+"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
+"worker to run at a time."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:101
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
+#| ": How many instances of the session worker to run at a time. Increasing this\n"
+#| "  can speed up background jobs (like the scheduler) when too many users are on\n"
+#| "  Zammad at once.\n"
+msgid "  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.\n"
 msgstr ""
 "`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
 ": Legt fest wie viele Instanzen des Sesstion Workers gleichzeitig ausgeführt werden sollen. \n"
@@ -12215,22 +12418,30 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:104
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  Generally speaking, it should only be useful to adjust this setting if\n"
+#| "  you have more than 40 active users at a time.\n"
 msgid ""
-"  Generally speaking, it should only be useful to adjust this setting if\n"
-"  you have more than 40 active users at a time.\n"
+"  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of\n"
+"  workers can consume a lot of resources!\n"
 msgstr ""
 "  Im Allgemeinen ist es nur dann sinnvoll, diese Einstellung zu ändern, wenn\n"
 "  Sie mehr als 40 aktive Benutzer gleichzeitig haben.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:109
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#| ": Allows spawning an independent process just for processing scheduled\n"
+#| "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
+#| "  other tasks when running tasks that take fairly long.\n"
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Allows spawning an independent process just for processing scheduled\n"
 "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
-"  other tasks when running tasks that take fairly long.\n"
+"  other tasks when running tasks that take rather long.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter\n"
@@ -12244,7 +12455,7 @@ msgid "  Maximum number of workers: `1`\n"
 msgstr "  Maximale Anzahl von Workern: `1`\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:114 src/en/reference/env-vars.md:124
+#: src/en/reference/env-vars.md:114
 #, no-wrap
 msgid ""
 "  You can disable the processing of scheduled jobs by setting\n"
@@ -12254,13 +12465,17 @@ msgstr ""
 "  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:119
-#, no-wrap
+#: src/en/reference/env-vars.md:118
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
+#| ": How many processes should work on delayed jobs? Increasing this _can_\n"
+#| "  improve issues with delayed jobs stacking up in your system. You may want to\n"
+#| "  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": How many processes should work on delayed jobs? Increasing this _can_\n"
-"  improve issues with delayed jobs stacking up in your system. You may want to\n"
-"  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+": How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in\n"
+"  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_\n"
@@ -12268,19 +12483,61 @@ msgstr ""
 "  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:121
+#: src/en/reference/env-vars.md:120 src/en/reference/env-vars.md:132
 #, no-wrap
 msgid "  Maximum number of workers: `16`\n"
 msgstr "  Maximale Anzahl von Workern: `16`\n"
 
+#. type: Plain text
+#: src/en/reference/env-vars.md:124
+#, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
+": How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the\n"
+"  responses from the configured AI provider. By default, one worker is running.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:127
+#, no-wrap
+msgid ""
+"  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to\n"
+"  collapse.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:130
+#, no-wrap
+msgid ""
+"  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of\n"
+"  parallelization.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:137
+#, no-wrap
+msgid ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
+": How many threads should be processed by one AI worker (if you have more than one worker, it is multiplied by the\n"
+"  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core\n"
+"  anyway.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/env-vars.md:139
+#, fuzzy, no-wrap
+#| msgid "  Maximum number of workers: `16`\n"
+msgid "  Maximum number of threads: 16\n"
+msgstr "  Maximale Anzahl von Workern: `16`\n"
+
 #. type: Title ##
-#: src/en/reference/env-vars.md:125
+#: src/en/reference/env-vars.md:140
 #, no-wrap
 msgid "Additional Performance Adjustments"
 msgstr "Zusätzliche Performance-Anpassungen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/env-vars.md:127
+#: src/en/reference/env-vars.md:142
 #, no-wrap
 msgid ""
 "The options listed below allow you to distribute Zammad processes over\n"
@@ -12298,7 +12555,7 @@ msgstr ""
 "Inhalt dieser Dokumentation ist.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:142
+#: src/en/reference/env-vars.md:157
 #, no-wrap
 msgid ""
 "`REDIS_URL`\n"
@@ -12316,7 +12573,7 @@ msgstr ""
 "  (`/opt/zammad/tmp/websocket_*`) zurück.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:149
+#: src/en/reference/env-vars.md:164
 #, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS`\n"
@@ -12334,7 +12591,7 @@ msgstr ""
 "  (`/opt/zammad/tmp/cache*`) zurück.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:153
+#: src/en/reference/env-vars.md:168
 #, no-wrap
 msgid ""
 "  Memcached allows you to restrict the maximum size Zammad may store as\n"
@@ -12346,24 +12603,24 @@ msgstr ""
 "  Cache-Dateien klein zu halten. `1 GB` sollte eine angemessene Größe sein.\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:154
+#: src/en/reference/env-vars.md:169
 #, no-wrap
 msgid "Storage Options"
 msgstr "Speicheroptionen"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:158
+#: src/en/reference/env-vars.md:173
 msgid "`S3_URL` : Allows you to provide your S3 configuration."
 msgstr "`S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:160
+#: src/en/reference/env-vars.md:175
 #, no-wrap
 msgid "  Format / example:\n"
 msgstr "  Format / Beispiel:\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:161
+#: src/en/reference/env-vars.md:176
 #, no-wrap
 msgid "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 msgstr "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
@@ -28338,7 +28595,8 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid "    means we can only display the _last_ value of the field in question.\n"
 msgid "    means we can only display the _last_ value of the field in question.\n"
 msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
 
@@ -30477,183 +30735,24 @@ msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
 
-#, no-wrap
 #~ msgid ""
-#~ "\n"
-#~ "=== Ubuntu\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 20.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 22.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 24.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== Debian\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 11\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 12\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== OpenSUSE/SLES\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "OpenSUSE 15.x / SLES15\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "===CentOS/RHEL\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 8 / RHEL 8\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 9 / RHEL 9\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#~ "```\n"
-#~ "\n"
+#~ "Zammad will store all content in a Database. We supported PostgreSQL in "
+#~ "version 10 or higher. The installation script tries to detect a MySQL/"
+#~ "MariaDB or PostgreSQL server during the installation. In case none is "
+#~ "found, PostgreSQL is automatically installed."
 #~ msgstr ""
-#~ "\n"
-#~ "=== Ubuntu\n"
-#~ "Repository-Key hinzufügen:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 20.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 22.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 24.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== Debian\n"
-#~ "Repository-Key hinzufügen:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 11\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 12\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== OpenSUSE/SLES\n"
-#~ "Repository-Key hinzufügen:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "OpenSUSE 15.x / SLES15\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "===CentOS/RHEL\n"
-#~ "Repository-Key hinzufügen:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 8 / RHEL 8\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 9 / RHEL 9\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#~ "```\n"
-#~ "\n"
+#~ "Zammad speichert alle Inhalte in einer Datenbank. Wir unterstützen "
+#~ "PostgreSQL in Version 10 oder höher. Das Installationsskript versucht, "
+#~ "während der Installation einen MySQL/MariaDB- oder PostgreSQL-Server zu "
+#~ "finden. Falls kein solcher gefunden wird, wird automatisch PostgreSQL "
+#~ "installiert."
+
+#~ msgid ""
+#~ "If you are still using MySQL/MariaDB, you should migrate to PostgreSQL.  "
+#~ "MySQL/MariaDB are **no longer** supported starting with Zammad 7."
+#~ msgstr ""
+#~ "Wenn Sie noch MySQL/MariaDB verwenden, sollten Sie auf PostgreSQL "
+#~ "umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt."
 
 #, no-wrap
 #~ msgid ""
@@ -30672,6 +30771,184 @@ msgstr ""
 #~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
 #~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
 #~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "=== Ubuntu\n"
+#~ "Install repository key:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 20.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 22.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 24.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Debian\n"
+#~ "Install repository key:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Debian 11\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Debian 12\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== OpenSUSE/SLES\n"
+#~ "Install repository key:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#~ "```\n"
+#~ "\n"
+#~ "OpenSUSE 15.x / SLES15\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "===CentOS/RHEL\n"
+#~ "Install repository key:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#~ "```\n"
+#~ "\n"
+#~ "CentOS 8 / RHEL 8\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "CentOS 9 / RHEL 9\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "=== Ubuntu\n"
+#~ "Repository-Key hinzufügen:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 20.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 22.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 24.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Debian\n"
+#~ "Repository-Key hinzufügen:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Debian 11\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Debian 12\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== OpenSUSE/SLES\n"
+#~ "Repository-Key hinzufügen:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#~ "```\n"
+#~ "\n"
+#~ "OpenSUSE 15.x / SLES15\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "===CentOS/RHEL\n"
+#~ "Repository-Key hinzufügen:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#~ "```\n"
+#~ "\n"
+#~ "CentOS 8 / RHEL 8\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "CentOS 9 / RHEL 9\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+#~ "```\n"
+#~ "\n"
 
 #, no-wrap
 #~ msgid "Memcached <Badge type=\"info\" text=\"optional\"/>"
@@ -34012,10 +34289,6 @@ msgstr ""
 #~ "  - title: Feature C\n"
 #~ "    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit\n"
 #~ "---\n"
-
-#, no-wrap
-#~ msgid "Admin documentation"
-#~ msgstr "Administrations-Dokumentation"
 
 #, no-wrap
 #~ msgid "/en/get-zammad/get-started"
