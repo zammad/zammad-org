@@ -1,0 +1,16 @@
+name: zammad-org
+
+services:
+  zammad-org-nginx:
+    image: nginx:latest
+    container_name: zammad-org-nginx
+    environment:
+    - NGINX_HOST=${NGINX_HOST}"
+    volumes:
+    - ../src/public/nginx/redirect_uri_301.map:/etc/nginx/redirect_uri_301.map:ro
+    - ../src/public/nginx/redirect_uri_302.map:/etc/nginx/redirect_uri_302.map:ro
+    - ./vitepress.conf:/etc/nginx/conf.d/default.conf:ro
+    - ../dist:/app:ro
+    ports:
+    - 80:80
+    restart: unless-stopped

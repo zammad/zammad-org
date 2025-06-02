@@ -1,3 +1,4 @@
+/.well-known/security.txt https://raw.githubusercontent.com/zammad/zammad/refs/heads/develop/security.txt;
 /english /en/;
 /deutsch /de/;
 /srpski /sr/;
