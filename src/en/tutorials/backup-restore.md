@@ -1,9 +1,9 @@
 ---
-title: Backup & Restore
+title: Backup & Restore (Package)
 order: 4
 ---
 
-# Backup & Restore
+# Backup & Restore (Package)
 
 Zammad ships scripts in package installations for backup & restore which you can use.
 
@@ -132,6 +132,12 @@ the restore script.
 
 For a new installation, this is required. At least you have to provide a
 directory where your backups are stored. See [Backup Configuration](#backup-configuration) for more information.
+
+### Clean Up the Storage Folder
+
+In case you restore to a production environment with activated filesystem storage, you should purge the content of the
+directory `/opt/zammad/storage/` inside the volume. The restore process only adds/overwrites files there, no cleanup
+will take place.
 
 ### Run the Restore
 

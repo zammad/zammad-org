@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-23 06:00+0000\n"
+"POT-Creation-Date: 2025-06-16 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,18 +215,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -3267,7 +3255,7 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
-#: src/en/tutorials/backup-restore.md:304 src/en/tutorials/migrate.md:54
+#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:54
 #: src/en/tutorials/migrate.md:355 src/en/tutorials/migrate.md:511
 #, markdown-text, no-wrap
 msgid "Limitations"
@@ -7262,7 +7250,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:211
+#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:217
 #, markdown-text, no-wrap
 msgid "Additional Steps"
 msgstr ""
@@ -18044,9 +18032,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:302
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -20838,10 +20826,22 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, markdown-text, no-wrap
-msgid "Backup & Restore"
+msgid "Backup & Restore (Package)"
 msgstr ""
 
 #. type: Plain text
@@ -21215,11 +21215,27 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:136
 #, markdown-text, no-wrap
+msgid "Clean Up the Storage Folder"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:141
+#, markdown-text
+msgid ""
+"In case you restore to a production environment with activated filesystem "
+"storage, you should purge the content of the directory "
+"`/opt/zammad/storage/` inside the volume. The restore process only "
+"adds/overwrites files there, no cleanup will take place."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:142
+#, markdown-text, no-wrap
 msgid "Run the Restore"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:142
+#: src/en/tutorials/backup-restore.md:148
 #, markdown-text, no-wrap
 msgid ""
 "Be aware that restoring backups can overwrite your `database.yml`. You can\n"
@@ -21230,7 +21246,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:145
+#: src/en/tutorials/backup-restore.md:151
 #, markdown-text
 msgid ""
 "The restore works in two possible ways, depending on how interactive you "
@@ -21238,7 +21254,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "\n"
@@ -21259,7 +21275,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|warning)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "Only use the following option if you know what you're doing! The following\n"
@@ -21267,7 +21283,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "When called with a timestamp argument (matching the backups filename),\n"
@@ -21280,13 +21296,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:175
+#: src/en/tutorials/backup-restore.md:181
 #, markdown-text
 msgid "The result should look like this:"
 msgstr ""
 
 #. type: Fenced code block (ansi)
-#: src/en/tutorials/backup-restore.md:176
+#: src/en/tutorials/backup-restore.md:182
 #, no-wrap
 msgid ""
 "# Zammad restore started - Fri Jan 21 17:54:13 CET 2022!\n"
@@ -21325,13 +21341,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 #, markdown-text
 msgid "If you've set any environmental settings, please re-apply them now."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 #, markdown-text
 msgid ""
 "If not already done, [install "
@@ -21339,7 +21355,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 #, markdown-text
 msgid ""
 "[Connect Elasticsearch with Zammad and rebuild its search "
@@ -21349,13 +21365,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:220
+#: src/en/tutorials/backup-restore.md:226
 #, markdown-text, no-wrap
 msgid "Troubleshooting Backup & Restore"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:226
+#: src/en/tutorials/backup-restore.md:232
 #, markdown-text
 msgid ""
 "You can find some common problems below. If your issue is not listed, feel "
@@ -21365,13 +21381,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:227
+#: src/en/tutorials/backup-restore.md:233
 #, markdown-text, no-wrap
 msgid "Exit Codes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:231
+#: src/en/tutorials/backup-restore.md:237
 #, markdown-text
 msgid ""
 "Our backup & restore scripts come with exit codes to help you finding a "
@@ -21379,7 +21395,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:234
+#: src/en/tutorials/backup-restore.md:240
 #, markdown-text
 msgid ""
 "Beside the exit codes, there are also error messages returned to standard "
@@ -21387,7 +21403,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:241
+#: src/en/tutorials/backup-restore.md:247
 #, markdown-text, no-wrap
 msgid ""
 "| Code | Description / Situation                                                                                                                                                                "
@@ -21406,19 +21422,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:242
+#: src/en/tutorials/backup-restore.md:248
 #, markdown-text, no-wrap
 msgid "Common Problems"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:244
+#: src/en/tutorials/backup-restore.md:250
 #, markdown-text, no-wrap
 msgid "Password Authentication Failed / Peer Authentication Failed"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:249
+#: src/en/tutorials/backup-restore.md:255
 #, markdown-text
 msgid ""
 "This indicates that the password of your Zammad DB user is either different "
@@ -21426,7 +21442,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:252
+#: src/en/tutorials/backup-restore.md:258
 #, markdown-text
 msgid ""
 "If your Zammad instance is running, it can be caused by falling back to "
@@ -21434,14 +21450,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:254
-#: src/en/tutorials/backup-restore.md:265
+#: src/en/tutorials/backup-restore.md:260
+#: src/en/tutorials/backup-restore.md:271
 #, markdown-text, no-wrap
 msgid "**What to do?**\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:258
+#: src/en/tutorials/backup-restore.md:264
 #, markdown-text
 msgid ""
 "Ensure that the provided user credentials are correct. You can also consider "
@@ -21449,13 +21465,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:259
+#: src/en/tutorials/backup-restore.md:265
 #, markdown-text, no-wrap
 msgid "Ident Authentication Failed for User"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:263
+#: src/en/tutorials/backup-restore.md:269
 #, markdown-text
 msgid ""
 "This indicates your database server does require `ident` authentication.  "
@@ -21463,19 +21479,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:268
+#: src/en/tutorials/backup-restore.md:274
 #, markdown-text
 msgid "Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:270
+#: src/en/tutorials/backup-restore.md:276
 #, markdown-text
 msgid "Usually, authentication can be allowed like this:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:271
+#: src/en/tutorials/backup-restore.md:277
 #, no-wrap
 msgid ""
 "# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT\n"
@@ -21484,7 +21500,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:280
+#: src/en/tutorials/backup-restore.md:286
 #, markdown-text
 msgid ""
 "Please consult the official [PostgreSQL "
@@ -21493,13 +21509,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:281
+#: src/en/tutorials/backup-restore.md:287
 #, markdown-text, no-wrap
 msgid "WARNING: You don't Seem to Have Any Attachments in the File System"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:285
+#: src/en/tutorials/backup-restore.md:291
 #, markdown-text
 msgid ""
 "This indicate that your instance currently does not save attachments to file "
@@ -21507,7 +21523,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:288
+#: src/en/tutorials/backup-restore.md:294
 #, markdown-text
 msgid ""
 "This warning will be shown once before creating an empty directory to allow "
@@ -21515,7 +21531,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:292
+#: src/en/tutorials/backup-restore.md:298
 #, markdown-text, no-wrap
 msgid ""
 "Check and adjust your\n"
@@ -21525,19 +21541,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:293
+#: src/en/tutorials/backup-restore.md:299
 #, markdown-text, no-wrap
 msgid "Helper Script"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:295
+#: src/en/tutorials/backup-restore.md:301
 #, markdown-text, no-wrap
 msgid "Warning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:299
+#: src/en/tutorials/backup-restore.md:305
 #, markdown-text
 msgid ""
 "A script can potentially be destructive! You should **never** run scripts "
@@ -21545,49 +21561,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:301
+#: src/en/tutorials/backup-restore.md:307
 #, markdown-text
 msgid "Be aware that you are running these scripts at your own risk."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:302
+#: src/en/tutorials/backup-restore.md:308
 #, markdown-text, no-wrap
 msgid "Database Helper: (Re)set Password"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 #, markdown-text
 msgid "This script is working for PostgreSQL installations only."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 #, markdown-text
 msgid "Only local database servers are supported (script changes user)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 #, markdown-text
 msgid "This script requires to be run as `root` or similar privileged user."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 #, markdown-text
 msgid "Be aware that the script will automatically stop and start Zammad!"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:317
 #, markdown-text, no-wrap
 msgid "Scopes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:317
+#: src/en/tutorials/backup-restore.md:323
 #, markdown-text
 msgid ""
 "The scope of this script are mostly package installations and especially "
@@ -21597,13 +21613,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:318
+#: src/en/tutorials/backup-restore.md:324
 #, markdown-text, no-wrap
 msgid "Functionality"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:323
+#: src/en/tutorials/backup-restore.md:329
 #, markdown-text
 msgid ""
 "The script will do the following actions automatically for you, depending on "
@@ -21611,7 +21627,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:329
+#: src/en/tutorials/backup-restore.md:335
 #, markdown-text
 msgid ""
 "If `database.yml` contains an empty password line, a new password will be "
@@ -21620,7 +21636,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:329
+#: src/en/tutorials/backup-restore.md:335
 #, markdown-text
 msgid ""
 "If `database.yml` contains a password, it will be used to set the password "
@@ -21628,13 +21644,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:330
+#: src/en/tutorials/backup-restore.md:336
 #, markdown-text, no-wrap
 msgid "Usage"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:334
+#: src/en/tutorials/backup-restore.md:340
 #, markdown-text
 msgid ""
 "Run the script with the command below and follow the instructions. No "
@@ -21642,13 +21658,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:335
+#: src/en/tutorials/backup-restore.md:341
 #, no-wrap
 msgid "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:340
+#: src/en/tutorials/backup-restore.md:346
 #, markdown-text
 msgid ""
 "If errors occur, the script will try to bring Zammad back online before "
@@ -22097,6 +22113,366 @@ msgstr ""
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/docker-file-handling.md:1
+#: src/en/tutorials/docker-file-handling.md:6
+#, markdown-text, no-wrap
+msgid "Docker File Handling Examples"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:10
+#, markdown-text
+msgid ""
+"If you're not sure how to handle the backup files and how to create the "
+"`restore` directory in the docker volume, you can find some examples below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:11
+#, markdown-text, no-wrap
+msgid "Restore Inside the Same Stack"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:14
+#, markdown-text, no-wrap
+msgid "**Requires:** console access to the zammad-backup container.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:18
+#, markdown-text
+msgid ""
+"If you want to restore a backup from the same stack, you just have to create "
+"the directory and copy/move the files into it. The following example starts "
+"the **zammad-backup** container and copies _all_ .gz files from the backup "
+"directory into the restore directory:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:19
+#, no-wrap
+msgid ""
+"docker compose run --rm zammad-backup bash -c \"mkdir "
+"/var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore "
+"-v\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:24
+#: src/en/tutorials/docker-file-handling.md:47
+#, markdown-text
+msgid "Now start the stack to execute the restore process."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:25
+#, markdown-text, no-wrap
+msgid "Restore from Another Installation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:28
+#, markdown-text, no-wrap
+msgid ""
+"**Requires:** console access to the host system and the zammad-backup "
+"container.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:31
+#, markdown-text
+msgid ""
+"To **obtain** your backup files from another docker compose deployment, one "
+"way is to copy it to the host system with `docker compose cp`:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:32
+#, no-wrap
+msgid ""
+"docker compose cp zammad-backup:/var/tmp/zammad/ "
+"/path/to/your/host/directory/\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:38
+#, markdown-text
+msgid ""
+"In case you are searching for your backup files from a package installation, "
+"have a look at the [Backup & Restore "
+"(Package)](/en/tutorials/backup-restore) section. You don't need a full dump "
+"for restoring your backup."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:41
+#, markdown-text
+msgid ""
+"To **restore** the backup, place your files in a folder called `restore` on "
+"the host system. This folder is mounted temporarily to `/restore` in the "
+"backup container. The directory then gets copied to the actual directory:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:42
+#, no-wrap
+msgid ""
+"docker compose run --rm -v /path/to/your/host/directory:/restore "
+"zammad-backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:48
+#, markdown-text, no-wrap
+msgid "Use a Web GUI"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:51
+#, markdown-text, no-wrap
+msgid ""
+"**Requires:** console access to the host system or Portainer access with the "
+"permission to deploy a container.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:53
+#, markdown-text
+msgid ""
+"This can be useful if you use Portainer to deploy Zammad and have limited "
+"access to the host system."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:56
+#, markdown-text
+msgid ""
+"Our example uses the tool [filebrowser](https://filebrowser.org/), but any "
+"similar tool should work too. If you'd like to use such a tool permanently, "
+"make sure to provide additional volumes for persistence (e.g. for their "
+"database)."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/docker-file-handling.md:57
+#, no-wrap
+msgid ""
+"\n"
+"The steps below cover the restore process by uploading files. To get your "
+"backup files in the same way from another\n"
+"stack, you can follow steps 1-4 below and simply map the **zammad-backup** "
+"volume of your _old_ stack. Then you can\n"
+"download the files, stop and remove the filebrowser container and redeploy "
+"it, following the steps below.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/docker-file-handling.md:66
+#, markdown-text
+msgid "Deploy filebrowser"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/docker-file-handling.md:67
+#, no-wrap
+msgid ""
+"\n"
+"   === Via console\n"
+"\n"
+"   Deploy the container and provide the volume of **zammad-backup** and\n"
+"   a port under which you want to access the web UI:\n"
+"\n"
+"   ``` sh\n"
+"   docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 "
+"filebrowser/filebrowser\n"
+"   ```\n"
+"\n"
+"   === Via Portainer\n"
+"\n"
+"   In your Portainer web UI, go to **Containers** in the left menu and\n"
+"   click the **Add container** button.\n"
+"\n"
+"   Add the following information:\n"
+"\n"
+"   - Name: enter a name which is not already in use.\n"
+"   - Image: `filebrowser/filebrowser`\n"
+"   - Map additional port: choose a port and map it to port `80` in the "
+"container.\n"
+"   - Advanced container settings:\n"
+"     - Switch to **Volumes** and click the **map additional volume** "
+"button.\n"
+"     - Enter `/srv` in the container section and select the volume "
+"containing `zammad-backup`\n"
+"   - Finally, click on **Deploy the container**.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/docker-file-handling.md:101
+#, markdown-text
+msgid ""
+"After the container is started, go to the web interface by using the IP "
+"address and the port you defined."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/docker-file-handling.md:101
+#, markdown-text
+msgid "Log in with the default credentials `admin` / `admin`."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/docker-file-handling.md:101
+#, markdown-text
+msgid "You should now see at least 2 .gz files including a timestamp."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/docker-file-handling.md:101
+#, markdown-text
+msgid ""
+"Create a **New folder** by using the button on the left side. Name it "
+"`restore`."
+msgstr ""
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/docker-file-handling.md:101
+#, markdown-text
+msgid ""
+"Enter this folder and upload your backup files (on the top right corner with "
+"the up arrow). If the upload fails, it might be required to change the "
+"permissions of the files (e.g. readable for everyone)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:103
+#, markdown-text
+msgid ""
+"Now start the stack to execute the restore process. After that, you can "
+"safely delete the renamed folder and stop the filebrowser."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/docker-restore.md:1 src/en/tutorials/docker-restore.md:6
+#, markdown-text, no-wrap
+msgid "Backup & Restore (Docker)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:9
+#, markdown-text
+msgid ""
+"This section shows some basics about the backup and restore process for a "
+"docker compose based deployment of Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:15
+#, markdown-text
+msgid ""
+"If you are familiar with volume based backup and restore procedures in "
+"docker, and perhaps already use a different method or tool, then you can "
+"keep using it. A backup would typically mean shutting down the stack to "
+"ensure all in-memory files get written to disk, then backing up the volume "
+"contents, and then starting the stack again. When using such method, you can "
+"consider using the [disable-backup-service "
+"scenario](/en/reference/docker-compose-scenarios) so that the built-in "
+"backup and restore mechanism of Zammad is not activated."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:17
+#, markdown-text
+msgid ""
+"The rest of this page describes the built-in backup and restore mechanism of "
+"Zammad's docker compose stack."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:21
+#, markdown-text
+msgid ""
+"If you're familiar with docker, the Quick Start section below includes the "
+"information you'll need. The [docker file "
+"handling](/en/tutorials/docker-file-handling) page covers some examples "
+"about how to handle the backup files and to copy it into a docker volume to "
+"restore it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/docker-restore.md:22
+#, markdown-text, no-wrap
+msgid "Backup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:26
+#, markdown-text
+msgid ""
+"By default, a backup is created at each start of the stack as well as at 3 "
+"o'clock each night. The backup is stored in the volume of the "
+"**zammad-backup** container under `/var/tmp/zammad`."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/docker-restore.md:27
+#, markdown-text, no-wrap
+msgid "Restore"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid "Start the new stack at least once so a Zammad database is available."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid "Stop the stack."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid ""
+"In case you restore to a production stack with activated file system "
+"storage, you should purge the content of the directory "
+"`/opt/zammad/storage/` inside the volume. The restore process only "
+"adds/overwrites files there, no cleanup will take place."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid ""
+"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
+"volume of the **zammad-backup** container. Be aware that the restore process "
+"always uses the latest backup according to the timestamp of the file "
+"name. Only backups from package and docker installations are supported by "
+"this built-in backup method. Don't provide the `latest_zammad_*.gz` files "
+"because they link to an unknown location for the restore process."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid ""
+"Start the stack. The restore process is triggered if the `restore` directory "
+"is detected and the backup files are in place."
+msgstr ""
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/docker-restore.md:40
+#, markdown-text
+msgid ""
+"After the restore process has finished, the `restore` directory got "
+"renamed. You can safely delete it now."
 msgstr ""
 
 #. type: Title #
@@ -24604,27 +24980,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
