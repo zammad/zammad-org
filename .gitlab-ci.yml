@@ -72,7 +72,6 @@ screenshots:
     - .screenshots/zammad-stack/start.sh
     - docker ps
   script:
-    - .screenshots/zammad-stack/screenshots.sh || true # TODO drop this, first run always fails?
     - .screenshots/zammad-stack/screenshots.sh
     - test -d src/public/screenshots/cypress # check that screenshots were copied from the container
   after_script:

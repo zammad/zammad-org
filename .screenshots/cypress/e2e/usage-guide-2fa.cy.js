@@ -15,7 +15,6 @@ describe('2FA usage guide', () => {
 
   // NB: Will work only once per stack, because the recovery codes are one-time usage only.
   it('2FA methods profile overview', () => {
-    Cypress.on('fail', () => true) // allow to fail
     cy.visit('/desktop/login')
     cy.loginDesktopView(Cypress.env('AGENT2_LOGIN'), Cypress.env('AGENT2_PASS'), '7f80b91f6bcd7b60')
     cy.visit('/desktop/personal-setting/two-factor-auth')
@@ -29,7 +28,7 @@ describe('2FA usage guide', () => {
     })
     cy.get('[aria-label="Action menu button for authenticator app"]').click()
     cy.wait(500) // transition
-    cy.get('div.popover.fixed.z-50').clip({ padding: 5 }).then((PopoverClip) => {
+    cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
         cy.mergeClips(PopoverClip, TopClip).then((MiddleClip) => {
           cy.get('button').contains('Regenerate Recovery Codes').parent().parent().clip({ padding: 5 }).then((BottomClip) => {

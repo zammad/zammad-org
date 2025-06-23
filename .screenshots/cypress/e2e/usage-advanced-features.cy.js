@@ -43,7 +43,7 @@ describe('usage advanced features', () => {
     cy.wait(3000) // loading
     cy.get('[aria-label="Additional ticket edit actions"]').click()
     cy.wait(500) //transition
-    cy.get('div.popover.fixed.z-50').clip({ padding: 5 }).then((PopoverClip) => {
+    cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('[aria-label="Additional ticket edit actions"]').clip({ padding: 5 }).then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
           cy.screenshot('ticket-macro', { clip })
@@ -58,7 +58,7 @@ describe('usage advanced features', () => {
     cy.wait(3000) // loading
     cy.get('button').contains('Stay on tab').click()
     cy.wait(500) //transition
-    cy.get('div.popover.fixed.z-50.flex').clip({ padding: 5 }).then((PopoverClip) => {
+    cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('button').contains('Stay on tab').parent().clip({ padding: 5 }).then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
           cy.screenshot('ticket-behavior-update', { clip })
