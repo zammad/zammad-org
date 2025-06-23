@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-05-22 13:16+0200\n"
-"PO-Revision-Date: 2025-05-20 07:00+0000\n"
+"POT-Creation-Date: 2025-06-16 12:25+0200\n"
+"PO-Revision-Date: 2025-06-18 07:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -747,26 +747,25 @@ msgstr ""
 #: src/en/contribute/style-guide.md:1
 #, no-wrap
 msgid "Lorem ipsum..."
-msgstr ""
+msgstr "Lorem ipsum..."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/contribute/style-guide.md:1 src/en/get-started/get-zammad.md:1
-#, fuzzy, no-wrap
-#| msgid "https://www.zammad.com"
+#, no-wrap
 msgid "https://zammad.com"
-msgstr "https://www.zammad.com/de"
+msgstr "https://zammad.com"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/contribute/style-guide.md:1
 #, no-wrap
 msgid "Simple and minimal, always"
-msgstr ""
+msgstr "Simple and minimal, always"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/contribute/style-guide.md:1
 #, no-wrap
 msgid "Another cool feature"
-msgstr ""
+msgstr "Another cool feature"
 
 #. type: Title #
 #: src/en/contribute/style-guide.md:23
@@ -1502,21 +1501,22 @@ msgstr ""
 #: src/en/contribute/style-guide.md:263
 #, no-wrap
 msgid "Highlighting with Boxes"
-msgstr ""
+msgstr "Hervorheben mit Kästen"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:266
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
+"Um verschiedene Optionen oder Varianten hervorzuheben, können anklickbare "
+"Kästen verwendet werden."
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:268 src/en/documentation/introduction.md:25
 #: src/en/get-started/get-zammad.md:32
-#, fuzzy, no-wrap
-#| msgid "Features"
+#, no-wrap
 msgid "<VPDocFeatures />\n"
-msgstr "Features"
+msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:270
@@ -1524,6 +1524,8 @@ msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
 msgstr ""
+"Die Definition des Inhalts erfolgt in Frontmatter, siehe folgendes Beispiel "
+"(Beispiel von oben):"
 
 #. type: Fenced code block (yml)
 #: src/en/contribute/style-guide.md:271
@@ -1550,6 +1552,26 @@ msgid ""
 "    link: https://zammad.com\n"
 "\n"
 msgstr ""
+"\n"
+"features:\n"
+"  - icon: 🛠️\n"
+"    title: Simple and minimal, always\n"
+"    details: Lorem ipsum...\n"
+"    link: https://zammad.com\n"
+"    linkText: This is a link\n"
+"    target: _blank\n"
+"  - icon:\n"
+"      src: /assets/logo.svg\n"
+"    title: Another cool feature\n"
+"    details: Lorem ipsum...\n"
+"    link: https://zammad.com\n"
+"  - icon:\n"
+"      dark: /assets/logo-flat-dark.svg\n"
+"      light: /assets/logo-flat-light.svg\n"
+"    title: Another cool feature\n"
+"    details: Lorem ipsum...\n"
+"    link: https://zammad.com\n"
+"\n"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:295
@@ -1558,46 +1580,44 @@ msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
 "rendered.\n"
 msgstr ""
+"Um sie innerhalb des Inhaltsbereichs zu platzieren, fügen Sie einfach den Verweis `<VPDocFeatures />` an der Stelle ein, an der sie dargestellt\n"
+"werden sollen.\n"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
 #, no-wrap
 msgid "Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need."
-msgstr ""
+msgstr "Hier finden Sie alles, wie Sie täglich mit Zammad arbeiten, mit Tipps, Anleitungen und allem, was Sie sonst noch brauchen könnten."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "[User Documentation](/en/documentation/use/general)"
+#, no-wrap
 msgid "/en/documentation/use/general"
-msgstr "[Benutzer-Dokumentation](/de/documentation/use/general)"
+msgstr "/de/documentation/use/general"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "Documentation"
+#, no-wrap
 msgid "User Documentation"
-msgstr "Dokumentation"
+msgstr "Benutzer Dokumentation"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
 #, no-wrap
 msgid "Find out how to configure Zammad and connect it with remote systems."
-msgstr ""
+msgstr "Erfahren Sie, wie Sie Zammad konfigurieren und mit anderen Systemen verbinden können."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "[Admin Documentation](/en/documentation/manage-zammad/general)"
+#, no-wrap
 msgid "/en/documentation/manage-zammad/general"
-msgstr "[Admin Dokumentation](/de/documentation/manage-zammad/general)"
+msgstr "/de/documentation/manage-zammad/general"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "Admin documentation"
+#, no-wrap
 msgid "Administrator Documentation"
-msgstr "Administrations-Dokumentation"
+msgstr "Administrator Dokumentation"
 
 #. type: Title ##
 #: src/en/documentation/introduction.md:1
@@ -1620,12 +1640,6 @@ msgstr "Willkommen bei der Zammad-Dokumentation"
 
 #. type: Plain text
 #: src/en/documentation/introduction.md:20
-#, fuzzy
-#| msgid ""
-#| "This documentation serves as your comprehensive guide to getting the most "
-#| "out of your ticketing and helpdesk software. Here, you'll find in-depth "
-#| "tutorials, user manuals and guides on how to effectively manage customer "
-#| "support requests, track issues, and collaborate with your team."
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
 "out of your ticketing and helpdesk software.  Here, you'll find in-depth "
@@ -1640,13 +1654,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/introduction.md:24
-#, fuzzy
-#| msgid ""
-#| "Whether you're a new user or an experienced admin, our documentation is "
-#| "designed to provide you with the knowledge and tools you need to "
-#| "succeed.  Browse through our resources, and discover how Zammad can help "
-#| "you deliver exceptional customer service and streamline your support "
-#| "operations."
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
 "designed to provide you with the knowledge and tools you need to succeed. "
@@ -1655,7 +1662,7 @@ msgid ""
 msgstr ""
 "Ganz gleich, ob Sie ein neuer Benutzer oder ein erfahrener Administrator "
 "sind, unsere Dokumentation soll Ihnen das Wissen und die Werkzeuge an die "
-"Hand geben, die Sie für Ihren Erfolg benötigen.  Stöbern Sie in unseren "
+"Hand geben, die Sie für Ihren Erfolg benötigen. Stöbern Sie in unseren "
 "Ressourcen und entdecken Sie, wie Zammad Ihnen helfen kann, einen "
 "außergewöhnlichen Kundenservice zu bieten und Ihre Supportabläufe zu "
 "optimieren."
@@ -3199,6 +3206,16 @@ msgid ""
 "  the documentation, the same as above applies.\n"
 "\n"
 msgstr ""
+"\n"
+"Diese Benutzer-Dokumentation ist eingebettet in eine Gesamtdokumentation von Zammad. Da dieser Bereich für\n"
+"Benutzer gedacht ist, haben wir einige Anpassungen vorgenommen.\n"
+"\n"
+"- Die Suche ist nur auf Benutzer-Inhalte beschränkt. Falls Sie ein Administrator oder ein interessierter Benutzer sind, können Sie nach\n"
+"  Inhalten in der gesamten Dokumentation suchen. Aktivieren Sie dazu eine Seite außerhalb der Benutzer-Dokumentation (z.B.\n"
+"  [Einführung](/de/documentation/introduction)) oder klicken Sie einfach auf **Zammad Hub** in der oberen linken Ecke.\n"
+"- Die linke Navigations-Seitenleiste zeigt nur die Struktur der Benutzer-Inhalte an. Wenn Sie die gesamte Struktur\n"
+"  der Dokumentation sehen wollen, gilt dasselbe wie oben.\n"
+"\n"
 
 #. type: Title ##
 #: src/en/documentation/use/general.md:33
@@ -3271,19 +3288,12 @@ msgstr "Zammad KI"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:12
-#, fuzzy
-#| msgid ""
-#| "Zammad is getting even smarter! We are expanding Zammad's AI capabilities "
-#| "to help you manage support tickets even more efficiently. The initial "
-#| "focus is on ticket summaries, but more features will arrive soon! ✨🚀"
 msgid ""
 "Zammad is getting even smarter! We are expanding Zammad's AI capabilities to "
 "help you manage support tickets even more efficiently. ✨🚀"
 msgstr ""
 "Zammad wird jetzt noch intelligenter! Wir erweitern die KI-Fähigkeiten von "
-"Zammad, damit Sie Support-Tickets noch effizienter verwalten können. Der "
-"Schwerpunkt liegt zunächst auf Ticket-Zusammenfassungen, aber weitere "
-"Funktionen werden bald hinzukommen! ✨🚀"
+"Zammad, damit Sie Support-Tickets noch effizienter verwalten können. ✨🚀"
 
 #. type: Fenced div block (info)
 #: src/en/documentation/use/guides/ai.md:13
@@ -3395,7 +3405,7 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:42
 #, no-wrap
 msgid "Smart Editor"
-msgstr ""
+msgstr "Smart Editor"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:46
@@ -3404,6 +3414,9 @@ msgid ""
 "ticket response workflow. It helps you with text tools while you create an "
 "article."
 msgstr ""
+"Der neue KI-gesteuerte smarte Editor wurde entwickelt, um Ihren Workflow bei "
+"der Beantwortung von Tickets zu vereinfachen und zu verbessern. Er hilft "
+"Ihnen mit Text-Tools, während Sie einen Artikel erstellen."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:50
@@ -3413,19 +3426,19 @@ msgid ""
 "bottom of the article creation and choose one of the following features, "
 "depending on what you want to perform."
 msgstr ""
+"Um eine der folgenden Funktionen zu nutzen, müssen Sie zunächst den Text "
+"auswählen, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf "
+"den Link **Smart Editor** am unteren Rand der Artikelerstellung und wählen "
+"Sie eine der folgenden Funktionen, je nachdem, was Sie durchführen möchten."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:52
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
-#| "features.cy.js/ticket-macro.png)"
 msgid ""
 "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-"
 "guide-ai.cy.js/ai-ticket-smart-editor.png)"
 msgstr ""
-"![Screenshot zeigt Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-"
-"features.cy.js/ticket-macro.png)"
+"![Screenshot zeigt Zammads Smart-Editor-Menü](/screenshots/cypress/usage-"
+"guide-ai.cy.js/ai-ticket-smart-editor.png)"
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/ai.md:53
@@ -3438,6 +3451,12 @@ msgid ""
 "  individual cases due to the nature of neural networks.\n"
 "\n"
 msgstr ""
+"\n"
+"- Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind\n"
+"  können Sie die Rückgängig-Funktion verwenden, indem Sie [[Strg]] + [[z]] drücken.\n"
+"- Prüfen Sie die Antwort immer gegen. Obwohl die Funktion sorgfältig entwickelt wurde, kann es in Einzelfällen zu kleineren Fehlern kommen,\n"
+"  die in der Natur neuronaler Netze liegen.\n"
+"\n"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:68
@@ -3446,6 +3465,9 @@ msgid ""
 "enhancing clarity, conciseness and structure as well as removing "
 "misspellings and grammar issues."
 msgstr ""
+"**Text verbessern**: Nimmt Ihren Text als Grundlage und versucht, ihn in "
+"Richtung Klarheit, Prägnanz und Struktur zu verbessern sowie Rechtschreib- "
+"und Grammatikfehler zu beseitigen."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:68
@@ -3453,6 +3475,8 @@ msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
 "removes spelling and grammar mistakes."
 msgstr ""
+"**Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und entfernt "
+"automatisch Rechtschreib- und Grammatikfehler."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:68
@@ -3462,6 +3486,11 @@ msgid ""
 "it by providing only basic information (e.g. via bullet points) and let the "
 "AI write the answer."
 msgstr ""
+"**Erweitern**: Erweitert Ihren Text und behält dabei Ihre Botschaft bei. "
+"Nützlich, wenn Ihr Kunde mehr als ein paar Aufzählungspunkte als Antwort "
+"erwartet. Sie können diese Funktion sogar nutzen, indem Sie nur grundlegende "
+"Informationen bereitstellen (z.B. als Stichworte) und die KI die Antwort "
+"schreiben lassen."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:68
@@ -3469,6 +3498,8 @@ msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
 "keeping your message."
 msgstr ""
+"**Vereinfachen**: Führt das Gegenteil von \"Erweitern\" aus und vereinfacht "
+"und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt."
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/guides/index.md:1
@@ -3635,7 +3666,7 @@ msgstr "Ändern von Organisations-Attributen"
 
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
-#: src/en/tutorials/backup-restore.md:304 src/en/tutorials/migrate.md:54
+#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:54
 #: src/en/tutorials/migrate.md:355 src/en/tutorials/migrate.md:511
 #, no-wrap
 msgid "Limitations"
@@ -6243,52 +6274,49 @@ msgstr "Marienstraße 18, Berlin, BE, 10117, Deutschland"
 #: src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "If you are unsure if Zammad is the right tool, test it by using a free trial instance."
-msgstr ""
+msgstr "Wenn Sie unsicher sind, ob Zammad das richtige Werkzeug ist, probieren Sie es mit einer kostenlosen Testversion aus."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/get-started/get-zammad.md:1
-#, fuzzy, no-wrap
-#| msgid "https://zammad.com/en/company"
+#, no-wrap
 msgid "https://zammad.com/en/getting-started"
-msgstr "https://zammad.com/de/company"
+msgstr "https://zammad.com/de/getting-started"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "Free Trial"
-msgstr ""
+msgstr "Kostenlose Testversion"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!"
-msgstr ""
+msgstr "Holen Sie sich Ihr Cloud-basiertes Zammad hier. Keine Installation, kein Ärger, wir kümmern uns um alles!"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/get-started/get-zammad.md:1
-#, fuzzy, no-wrap
-#| msgid "Use Zammad's Hosted Service"
+#, no-wrap
 msgid "Zammad Hosted Services"
-msgstr "Nutzen Sie Zammads Hosting-Service"
+msgstr "Zammad Hosting-Services"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "You can even self-host Zammad. Find installation instructions here."
-msgstr ""
+msgstr "Sie können Zammad sogar selbst hosten. Eine Installationsanleitung finden Sie hier."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/get-started/get-zammad.md:1
 #, no-wrap
 msgid "/en/get-started/installation/prerequisites"
-msgstr ""
+msgstr "/de/get-started/installation/prerequisites"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/get-started/get-zammad.md:1
-#, fuzzy, no-wrap
-#| msgid "Self Hosted Installation"
+#, no-wrap
 msgid "Self Hosting"
-msgstr "Selbst gehostete Installation"
+msgstr "Self-Hosting"
 
 #. type: Title #
 #: src/en/get-started/get-zammad.md:21
@@ -6298,16 +6326,12 @@ msgstr "Zammad holen"
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:24
-#, fuzzy
-#| msgid ""
-#| "Not using Zammad yet? You will like it! See the sections below for "
-#| "different options."
 msgid ""
 "Not using Zammad yet? You will like it! Choose your favorite option below or "
 "read on in the sections below."
 msgstr ""
-"Sie benutzen Zammad noch nicht? Es wird Ihnen gefallen! In den folgenden "
-"Abschnitten finden Sie verschiedene Optionen."
+"Sie benutzen Zammad noch nicht? Sie werden es mögen! Wählen Sie unten Ihre "
+"bevorzugte Option oder lesen Sie in den folgenden Abschnitten weiter."
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:30
@@ -6330,12 +6354,6 @@ msgstr "Zammad testen"
 
 #. type: Plain text
 #: src/en/get-started/get-zammad.md:39
-#, fuzzy
-#| msgid ""
-#| "We are sure you like Zammad! The easiest way to test it is to use a [free "
-#| "trial instance](https://zammad.com/en/getting-started){target=_blank}.  "
-#| "You can play around and then you can switch to a official supported "
-#| "instance, either keeping your data or start with an empty system."
 msgid ""
 "We are sure you like Zammad! The easiest way to test it is to use a [free "
 "trial instance](https://zammad.com/en/getting-started){target=_blank}.  You "
@@ -7839,6 +7857,9 @@ msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer."
 msgstr ""
+"Zammad speichert den Inhalt in einer Datenbank. Das unterstützte "
+"Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank} "
+"10 oder neuer."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:384
@@ -7846,6 +7867,8 @@ msgid ""
 "If no PostgreSQL server could be detected, it will be installed "
 "automatically during the package installation."
 msgstr ""
+"Wenn kein PostgreSQL-Server gefunden werden konnte, wird er automatisch "
+"während der Paketinstallation installiert."
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/installation/package.md:385
@@ -8458,7 +8481,7 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:211
+#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:217
 #, no-wrap
 msgid "Additional Steps"
 msgstr "Zusätzliche Schritte"
@@ -12400,43 +12423,28 @@ msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
 "worker to run at a time."
 msgstr ""
+"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : Wie viele Instanzen des Session "
+"Workers sollen gleichzeitig laufen."
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:101
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
-#| ": How many instances of the session worker to run at a time. Increasing this\n"
-#| "  can speed up background jobs (like the scheduler) when too many users are on\n"
-#| "  Zammad at once.\n"
+#, no-wrap
 msgid "  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.\n"
-msgstr ""
-"`ZAMMAD_SESSION_JOBS_CONCURRENT`\n"
-": Legt fest wie viele Instanzen des Sesstion Workers gleichzeitig ausgeführt werden sollen. \n"
-"  Eine Erhöhung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen,\n"
-"  wenn zu viele Benutzer gleichzeitig in Zammad arbeiten.\n"
+msgstr "  Eine Erhöhung dieser Einstellung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:104
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  Generally speaking, it should only be useful to adjust this setting if\n"
-#| "  you have more than 40 active users at a time.\n"
+#, no-wrap
 msgid ""
 "  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of\n"
 "  workers can consume a lot of resources!\n"
 msgstr ""
-"  Im Allgemeinen ist es nur dann sinnvoll, diese Einstellung zu ändern, wenn\n"
-"  Sie mehr als 40 aktive Benutzer gleichzeitig haben.\n"
+"  Es ist nicht sinnvoll, diese Einstellung zu ändern, wenn Sie weniger als 40 aktive Benutzer gleichzeitig haben. Das Erhöhen der\n"
+"  Worker kann eine Menge Ressourcen verbrauchen!\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-#| ": Allows spawning an independent process just for processing scheduled\n"
-#| "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
-#| "  other tasks when running tasks that take fairly long.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Allows spawning an independent process just for processing scheduled\n"
@@ -12445,8 +12453,8 @@ msgid ""
 msgstr ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
 ": Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter\n"
-"  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad für andere\n"
-"  Aufgaben freigeben, falls solche Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
+"  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad\n"
+"  für andere Aufgaben entlasten, wenn Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:111
@@ -12466,12 +12474,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:118
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-#| ": How many processes should work on delayed jobs? Increasing this _can_\n"
-#| "  improve issues with delayed jobs stacking up in your system. You may want to\n"
-#| "  try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
 ": How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in\n"
@@ -12496,6 +12499,9 @@ msgid ""
 ": How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the\n"
 "  responses from the configured AI provider. By default, one worker is running.\n"
 msgstr ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
+": Wie viele Instanzen von KI-Workern sollen gleichzeitig laufen. KI-Worker bearbeiten die KI-Anfragen von Zammad und holen sich die\n"
+"  Antworten von dem konfigurierten KI-Provider ab. Standardmäßig wird ein Worker ausgeführt.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:127
@@ -12504,6 +12510,8 @@ msgid ""
 "  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to\n"
 "  collapse.\n"
 msgstr ""
+"  Benutzer einer selbst gehosteten Instanz sollten bei der Erhöhung vorsichtig sein. Abhängig von Ihrer Hardware kann dies dazu führen, dass Ihr KI-Dienst\n"
+"  zusammenbricht.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:130
@@ -12512,6 +12520,8 @@ msgid ""
 "  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of\n"
 "  parallelization.\n"
 msgstr ""
+"  Für Benutzer von KI-Cloud-Diensten mit einer großen Zammad-Instanz könnte es sinnvoll sein, diesen Wert zu erhöhren, um eine Art von\n"
+"  Parallelisierung zu erreichen.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:137
@@ -12522,13 +12532,16 @@ msgid ""
 "  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core\n"
 "  anyway.\n"
 msgstr ""
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
+": Wie viele Threads sollen von einem KI-Worker bearbeitet werden (wenn Sie mehr als einen Worker haben, wird dies mit der\n"
+"  Anzahl der Worker multipliziert). Dies kann die KI-Verarbeitung beschleunigen, aber bedenken Sie, dass ein Ruby-Worker ohnehin nur 1 Kern\n"
+"  auslasten kann.\n"
 
 #. type: Plain text
 #: src/en/reference/env-vars.md:139
-#, fuzzy, no-wrap
-#| msgid "  Maximum number of workers: `16`\n"
+#, no-wrap
 msgid "  Maximum number of threads: 16\n"
-msgstr "  Maximale Anzahl von Workern: `16`\n"
+msgstr "  Maximale Anzahl von Threads: `16`\n"
 
 #. type: Title ##
 #: src/en/reference/env-vars.md:140
@@ -23884,8 +23897,8 @@ msgstr "Name of site"
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, no-wrap
-msgid "Backup & Restore"
-msgstr "Sichern & Wiederherstellen"
+msgid "Backup & Restore (Package)"
+msgstr "Backup & Restore (Paket)"
 
 #. type: Plain text
 #: src/en/tutorials/backup-restore.md:9
@@ -24298,11 +24311,31 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/backup-restore.md:136
 #, no-wrap
+msgid "Clean Up the Storage Folder"
+msgstr "Aufräumen des Speicherordners"
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore.md:141
+msgid ""
+"In case you restore to a production environment with activated filesystem "
+"storage, you should purge the content of the directory `/opt/zammad/storage/"
+"` inside the volume. The restore process only adds/overwrites files there, "
+"no cleanup will take place."
+msgstr ""
+"Falls Sie in einer Produktivumgebung mit aktivierte Dateisystem-"
+"Speichermethode wiederherstellen, sollten Sie den Inhalt des Verzeichnisses "
+"`/opt/zammad/storage/` innerhalb des Volumes bereinigen. Der "
+"Wiederherstellungsprozess fügt dort nur Dateien hinzu bzw. überschreibt sie, "
+"es findet keine Bereinigung statt."
+
+#. type: Title ###
+#: src/en/tutorials/backup-restore.md:142
+#, no-wrap
 msgid "Run the Restore"
 msgstr "Die Wiederherstellung ausführen"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:142
+#: src/en/tutorials/backup-restore.md:148
 #, no-wrap
 msgid ""
 "Be aware that restoring backups can overwrite your `database.yml`. You can\n"
@@ -24316,7 +24349,7 @@ msgstr ""
 "Originalversion **vor dem Wiederherstellen** sichern.\n"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:145
+#: src/en/tutorials/backup-restore.md:151
 msgid ""
 "The restore works in two possible ways, depending on how interactive you "
 "want to go:"
@@ -24325,7 +24358,7 @@ msgstr ""
 "interaktiv Sie vorgehen möchten:"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "\n"
@@ -24359,7 +24392,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|warning)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "Only use the following option if you know what you're doing! The following\n"
@@ -24369,7 +24402,7 @@ msgstr ""
 "Befehl überschreibt vorhandene Daten ohne weitere Rückfragen!\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/backup-restore.md:146
+#: src/en/tutorials/backup-restore.md:152
 #, no-wrap
 msgid ""
 "When called with a timestamp argument (matching the backups filename),\n"
@@ -24389,12 +24422,12 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:175
+#: src/en/tutorials/backup-restore.md:181
 msgid "The result should look like this:"
 msgstr "Das Ergebnis sollte wie folgt aussehen:"
 
 #. type: Fenced code block (ansi)
-#: src/en/tutorials/backup-restore.md:176
+#: src/en/tutorials/backup-restore.md:182
 #, no-wrap
 msgid ""
 "# Zammad restore started - Fri Jan 21 17:54:13 CET 2022!\n"
@@ -24464,14 +24497,14 @@ msgstr ""
 "# Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!\n"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 msgid "If you've set any environmental settings, please re-apply them now."
 msgstr ""
 "Falls Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie "
 "diese jetzt an."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 msgid ""
 "If not already done, [install Elasticsearch](/en/tutorials/install-"
 "elasticsearch) now."
@@ -24480,7 +24513,7 @@ msgstr ""
 "tutorials/install-elasticsearch)."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:219
+#: src/en/tutorials/backup-restore.md:225
 msgid ""
 "[Connect Elasticsearch with Zammad and rebuild its search index](/en/"
 "tutorials/connect-config-elasticsearch). The rebuild can safely run during "
@@ -24493,13 +24526,13 @@ msgstr ""
 "Suchleistung und kann zu vorübergehend nicht gefundenen Daten führen."
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:220
+#: src/en/tutorials/backup-restore.md:226
 #, no-wrap
 msgid "Troubleshooting Backup & Restore"
 msgstr "Fehlerbehebung Sicherung & Wiederherstellung"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:226
+#: src/en/tutorials/backup-restore.md:232
 msgid ""
 "You can find some common problems below. If your issue is not listed, feel "
 "free to consult the [Zammad Community](https://community.zammad.org/c/"
@@ -24512,13 +24545,13 @@ msgstr ""
 "{target=_blank}, um nach Unterstützung zu fragen."
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:227
+#: src/en/tutorials/backup-restore.md:233
 #, no-wrap
 msgid "Exit Codes"
 msgstr "Exit Codes"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:231
+#: src/en/tutorials/backup-restore.md:237
 msgid ""
 "Our backup & restore scripts come with exit codes to help you finding a "
 "solution. However, we do not guarantee a complete error handling."
@@ -24528,7 +24561,7 @@ msgstr ""
 "Fehler können wir jedoch nicht garantieren."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:234
+#: src/en/tutorials/backup-restore.md:240
 msgid ""
 "Beside the exit codes, there are also error messages returned to standard "
 "out."
@@ -24537,7 +24570,7 @@ msgstr ""
 "ausgegeben werden."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:241
+#: src/en/tutorials/backup-restore.md:247
 #, no-wrap
 msgid ""
 "| Code | Description / Situation                                                                                                                                                                |\n"
@@ -24555,19 +24588,19 @@ msgstr ""
 "| `3` | Es gab Probleme mit Datei-/Ordnerberechtigungen.                                                                                                                                      |\n"
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:242
+#: src/en/tutorials/backup-restore.md:248
 #, no-wrap
 msgid "Common Problems"
 msgstr "Häufige Probleme"
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:244
+#: src/en/tutorials/backup-restore.md:250
 #, no-wrap
 msgid "Password Authentication Failed / Peer Authentication Failed"
 msgstr "Password Authentication Failed / Peer Authentication Failed"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:249
+#: src/en/tutorials/backup-restore.md:255
 msgid ""
 "This indicates that the password of your Zammad DB user is either different "
 "from your `database.yml` or the wrong database server may be contacted."
@@ -24577,7 +24610,7 @@ msgstr ""
 "Datenbankserver kontaktiert wurde."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:252
+#: src/en/tutorials/backup-restore.md:258
 msgid ""
 "If your Zammad instance is running, it can be caused by falling back to "
 "socket connection which is why you didn't notice."
@@ -24586,14 +24619,14 @@ msgstr ""
 "Socket-Verbindung verursacht werden, weshalb Sie es nicht bemerkt haben."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:254
-#: src/en/tutorials/backup-restore.md:265
+#: src/en/tutorials/backup-restore.md:260
+#: src/en/tutorials/backup-restore.md:271
 #, no-wrap
 msgid "**What to do?**\n"
 msgstr "**Was ist zu tun?**\n"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:258
+#: src/en/tutorials/backup-restore.md:264
 msgid ""
 "Ensure that the provided user credentials are correct. You can also consider "
 "to use the `reset_db_password` script, you can find in the backup directory."
@@ -24603,13 +24636,13 @@ msgstr ""
 "Sie im Backup-Verzeichnis finden."
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:259
+#: src/en/tutorials/backup-restore.md:265
 #, no-wrap
 msgid "Ident Authentication Failed for User"
 msgstr "Ident Authentication Failed for User"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:263
+#: src/en/tutorials/backup-restore.md:269
 msgid ""
 "This indicates your database server does require `ident` authentication.  "
 "That authentication method is not supported by our scripts."
@@ -24619,7 +24652,7 @@ msgstr ""
 "unterstützt."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:268
+#: src/en/tutorials/backup-restore.md:274
 msgid ""
 "Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed."
 msgstr ""
@@ -24627,13 +24660,13 @@ msgstr ""
 "bei Bedarf an."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:270
+#: src/en/tutorials/backup-restore.md:276
 msgid "Usually, authentication can be allowed like this:"
 msgstr ""
 "In der Regel kann die Authentifizierung auf diese Weise zugelassen werden:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:271
+#: src/en/tutorials/backup-restore.md:277
 #, no-wrap
 msgid ""
 "# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT\n"
@@ -24645,7 +24678,7 @@ msgstr ""
 "host    all             all             ::1/128                 md5\n"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:280
+#: src/en/tutorials/backup-restore.md:286
 msgid ""
 "Please consult the official [PostgreSQL documentation](https://"
 "www.postgresql.org/docs/){target=_blank} for this, as this is out of our "
@@ -24656,13 +24689,13 @@ msgstr ""
 "dieser Dokumentation ist."
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:281
+#: src/en/tutorials/backup-restore.md:287
 #, no-wrap
 msgid "WARNING: You don't Seem to Have Any Attachments in the File System"
 msgstr "WARNING: You don't Seem to Have Any Attachments in the File System"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:285
+#: src/en/tutorials/backup-restore.md:291
 msgid ""
 "This indicate that your instance currently does not save attachments to file "
 "system."
@@ -24671,7 +24704,7 @@ msgstr ""
 "speichert."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:288
+#: src/en/tutorials/backup-restore.md:294
 msgid ""
 "This warning will be shown once before creating an empty directory to allow "
 "the backup process to continue successfully."
@@ -24680,7 +24713,7 @@ msgstr ""
 "wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:292
+#: src/en/tutorials/backup-restore.md:298
 #, no-wrap
 msgid ""
 "Check and adjust your\n"
@@ -24692,19 +24725,19 @@ msgstr ""
 "oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.\n"
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore.md:293
+#: src/en/tutorials/backup-restore.md:299
 #, no-wrap
 msgid "Helper Script"
 msgstr "Hilfsskript"
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:295
+#: src/en/tutorials/backup-restore.md:301
 #, no-wrap
 msgid "Warning"
 msgstr "Warnung"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:299
+#: src/en/tutorials/backup-restore.md:305
 msgid ""
 "A script can potentially be destructive! You should **never** run scripts "
 "which scopes you don't understand."
@@ -24713,48 +24746,48 @@ msgstr ""
 "Skripte ausführen, deren Anwendungsbereich Sie nicht verstehen."
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:301
+#: src/en/tutorials/backup-restore.md:307
 msgid "Be aware that you are running these scripts at your own risk."
 msgstr ""
 "Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen."
 
 #. type: Title ###
-#: src/en/tutorials/backup-restore.md:302
+#: src/en/tutorials/backup-restore.md:308
 #, no-wrap
 msgid "Database Helper: (Re)set Password"
 msgstr "Datenbank Hilfsskript: Passwort (neu) setzen"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 msgid "This script is working for PostgreSQL installations only."
 msgstr "Dieses Skript ist nur für PostgreSQL-Installationen geeignet."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 msgid "Only local database servers are supported (script changes user)."
 msgstr ""
 "Es werden nur lokale Datenbankserver unterstützt (Skript ändert Benutzer)."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 msgid "This script requires to be run as `root` or similar privileged user."
 msgstr ""
 "Dieses Skript muss als `root` oder als ähnlich privilegierter Benutzer "
 "ausgeführt werden."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:310
+#: src/en/tutorials/backup-restore.md:316
 msgid "Be aware that the script will automatically stop and start Zammad!"
 msgstr "Beachten Sie, dass das Skript Zammad automatisch stoppt und startet!"
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:311
+#: src/en/tutorials/backup-restore.md:317
 #, no-wrap
 msgid "Scopes"
 msgstr "Scopes"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:317
+#: src/en/tutorials/backup-restore.md:323
 msgid ""
 "The scope of this script are mostly package installations and especially "
 "CentOS and SUSE operating systems. It might work on source code / "
@@ -24767,13 +24800,13 @@ msgstr ""
 "von Ihrer Einrichtung ab und ist nicht Gegenstand dieser Dokumentation."
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:318
+#: src/en/tutorials/backup-restore.md:324
 #, no-wrap
 msgid "Functionality"
 msgstr "Funktionsweise"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:323
+#: src/en/tutorials/backup-restore.md:329
 msgid ""
 "The script will do the following actions automatically for you, depending on "
 "the situation. It will ask for your confirmation before performing actions."
@@ -24783,7 +24816,7 @@ msgstr ""
 "bitten."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:329
+#: src/en/tutorials/backup-restore.md:335
 msgid ""
 "If `database.yml` contains an empty password line, a new password will be "
 "generated and set for the database user of Zammad. It will also be saved to "
@@ -24794,7 +24827,7 @@ msgstr ""
 "wird auch in der Konfigurationsdatei gespeichert."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/backup-restore.md:329
+#: src/en/tutorials/backup-restore.md:335
 msgid ""
 "If `database.yml` contains a password, it will be used to set the password "
 "of the Zammad database user."
@@ -24803,13 +24836,13 @@ msgstr ""
 "des Benutzers der Datenbank Zammad festzulegen."
 
 #. type: Title ####
-#: src/en/tutorials/backup-restore.md:330
+#: src/en/tutorials/backup-restore.md:336
 #, no-wrap
 msgid "Usage"
 msgstr "Verwendung"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:334
+#: src/en/tutorials/backup-restore.md:340
 msgid ""
 "Run the script with the command below and follow the instructions. No "
 "specific configuration is required."
@@ -24818,13 +24851,13 @@ msgstr ""
 "Anweisungen. Es ist keine spezielle Konfiguration erforderlich."
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/backup-restore.md:335
+#: src/en/tutorials/backup-restore.md:341
 #, no-wrap
 msgid "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
 msgstr "/opt/zammad/contrib/backup/zammad_db_user_helper.sh\n"
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore.md:340
+#: src/en/tutorials/backup-restore.md:346
 msgid ""
 "If errors occur, the script will try to bring Zammad back online before "
 "exiting."
@@ -25325,6 +25358,449 @@ msgstr ""
 "Nachdem Sie diese Schritte durchgeführt haben, sollten Sie sicherstellen, "
 "dass Ihre Elasticsearch-Installation läuft und die Indizes neu erstellt "
 "wurden."
+
+#. type: Title #
+#: src/en/tutorials/docker-file-handling.md:1
+#: src/en/tutorials/docker-file-handling.md:6
+#, no-wrap
+msgid "Docker File Handling Examples"
+msgstr "Docker Datei Handling Beispiele"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:10
+msgid ""
+"If you're not sure how to handle the backup files and how to create the "
+"`restore` directory in the docker volume, you can find some examples below."
+msgstr ""
+"Wenn Sie nicht sicher sind, wie Sie mit den Sicherungsdateien umgehen und "
+"wie Sie das Verzeichnis `restore` im Docker-Volume erstellen, finden Sie "
+"unten einige Beispiele."
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:11
+#, no-wrap
+msgid "Restore Inside the Same Stack"
+msgstr "Wiederherstellung innerhalb eines Stacks"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:14
+#, no-wrap
+msgid "**Requires:** console access to the zammad-backup container.\n"
+msgstr "**Erfordert:** Konsolenzugriff auf den Container zammad-backup.\n"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:18
+msgid ""
+"If you want to restore a backup from the same stack, you just have to create "
+"the directory and copy/move the files into it. The following example starts "
+"the **zammad-backup** container and copies _all_ .gz files from the backup "
+"directory into the restore directory:"
+msgstr ""
+"Wenn Sie eine Sicherung innerhalb eines Stacks wiederherstellen möchten, "
+"müssen Sie nur das Verzeichnis erstellen und die Dateien dorthin kopieren/"
+"verschieben. Das folgende Beispiel startet den Container **zammad-backup** "
+"und kopiert _alle_ .gz-Dateien aus dem Backup- in das Restore-Verzeichnis:"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:19
+#, no-wrap
+msgid "docker compose run --rm zammad-backup bash -c \"mkdir /var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v\"\n"
+msgstr ""
+"docker compose run --rm zammad-backup bash -c \"mkdir /var/tmp/zammad/"
+"restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v\"\n"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:24
+#: src/en/tutorials/docker-file-handling.md:47
+msgid "Now start the stack to execute the restore process."
+msgstr ""
+"Starten Sie nun den Stack, um den Wiederherstellungsprozess durchzuführen."
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:25
+#, no-wrap
+msgid "Restore from Another Installation"
+msgstr "Wiederherstellen von einer anderen Installation"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:28
+#, no-wrap
+msgid "**Requires:** console access to the host system and the zammad-backup container.\n"
+msgstr ""
+"**Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zammad-"
+"backup.\n"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:31
+msgid ""
+"To **obtain** your backup files from another docker compose deployment, one "
+"way is to copy it to the host system with `docker compose cp`:"
+msgstr ""
+"Um Ihre Sicherungsdateien aus einer anderen Docker Compose Installation zu "
+"**holen**, können Sie diese mit `docker compose cp` auf das Hostsystem "
+"kopieren:"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:32
+#, no-wrap
+msgid "docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/\n"
+msgstr ""
+"docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/"
+"directory/\n"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:38
+msgid ""
+"In case you are searching for your backup files from a package installation, "
+"have a look at the [Backup & Restore (Package)](/en/tutorials/backup-"
+"restore) section. You don't need a full dump for restoring your backup."
+msgstr ""
+"Falls Sie Ihre Sicherungsdateien aus einer Paketinstallation suchen, finden "
+"Sie auf der Seite[Backup & Restore (Paket)](/de/tutorials/backup-restore) "
+"weitere Informationen. Sie brauchen keinen vollständigen Dump, um Ihre "
+"Sicherung wiederherzustellen."
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:41
+msgid ""
+"To **restore** the backup, place your files in a folder called `restore` on "
+"the host system. This folder is mounted temporarily to `/restore` in the "
+"backup container. The directory then gets copied to the actual directory:"
+msgstr ""
+"Um die Sicherung **wiederherzustellen**, legen Sie Ihre Dateien in einem "
+"Ordner namens `restore` auf dem Host-System ab. Dieser Ordner wird "
+"vorübergehend in das Verzeichnis `/restore` im Backup-Container eingebunden. "
+"Das temporäre Verzeichnis wird dann in das aktuelle Verzeichnis kopiert:"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/docker-file-handling.md:42
+#, no-wrap
+msgid "docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
+msgstr ""
+"docker compose run --rm -v /path/to/your/host/directory:/restore zammad-"
+"backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
+
+#. type: Title ##
+#: src/en/tutorials/docker-file-handling.md:48
+#, no-wrap
+msgid "Use a Web GUI"
+msgstr "Verwendung einer Web-GUI"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:51
+#, no-wrap
+msgid "**Requires:** console access to the host system or Portainer access with the permission to deploy a container.\n"
+msgstr ""
+"**Erfordert:** Konsolenzugriff auf das Hostsystem oder Portainer-Zugriff mit "
+"der Berechtigung, einen Container zu starten.\n"
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:53
+msgid ""
+"This can be useful if you use Portainer to deploy Zammad and have limited "
+"access to the host system."
+msgstr ""
+"Dies kann nützlich sein, wenn Sie Portainer zur Bereitstellung von Zammad "
+"verwenden und nur begrenzten Zugriff auf das Hostsystem haben."
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:56
+msgid ""
+"Our example uses the tool [filebrowser](https://filebrowser.org/), but any "
+"similar tool should work too. If you'd like to use such a tool permanently, "
+"make sure to provide additional volumes for persistence (e.g. for their "
+"database)."
+msgstr ""
+"Unser Beispiel verwendet das Tool [filebrowser](https://filebrowser.org/), "
+"aber jedes ähnliche Tool sollte ebenfalls funktionieren. Wenn Sie ein "
+"solches Tool dauerhaft verwenden möchten, stellen Sie sicher, dass Sie "
+"zusätzliche Volumes für die Persistenz bereitstellen (z.B. für deren "
+"Datenbank)."
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/docker-file-handling.md:57
+#, no-wrap
+msgid ""
+"\n"
+"The steps below cover the restore process by uploading files. To get your backup files in the same way from another\n"
+"stack, you can follow steps 1-4 below and simply map the **zammad-backup** volume of your _old_ stack. Then you can\n"
+"download the files, stop and remove the filebrowser container and redeploy it, following the steps below.\n"
+"\n"
+msgstr ""
+"\n"
+"Die folgenden Schritte beschreiben den Wiederherstellungsprozess durch "
+"Hochladen von Dateien. Um Ihre Sicherungsdateien auf die gleiche Weise aus "
+"einem anderen\n"
+"Stack zu bekommen, können Sie die Schritte 1-4 unten ausführen und einfach "
+"das Volume **zammad-backup** Ihres _alten_ Stacks mounten. Dann können Sie\n"
+"die Dateien herunterladen, den Filebrowser-Container stoppen, entfernen und "
+"ihn erneut mit den folgenden Schritten ausführen.\n"
+"\n"
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/docker-file-handling.md:66
+msgid "Deploy filebrowser"
+msgstr "Filebrowser starten"
+
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/docker-file-handling.md:67
+#, no-wrap
+msgid ""
+"\n"
+"   === Via console\n"
+"\n"
+"   Deploy the container and provide the volume of **zammad-backup** and\n"
+"   a port under which you want to access the web UI:\n"
+"\n"
+"   ``` sh\n"
+"   docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 filebrowser/filebrowser\n"
+"   ```\n"
+"\n"
+"   === Via Portainer\n"
+"\n"
+"   In your Portainer web UI, go to **Containers** in the left menu and\n"
+"   click the **Add container** button.\n"
+"\n"
+"   Add the following information:\n"
+"\n"
+"   - Name: enter a name which is not already in use.\n"
+"   - Image: `filebrowser/filebrowser`\n"
+"   - Map additional port: choose a port and map it to port `80` in the container.\n"
+"   - Advanced container settings:\n"
+"     - Switch to **Volumes** and click the **map additional volume** button.\n"
+"     - Enter `/srv` in the container section and select the volume containing `zammad-backup`\n"
+"   - Finally, click on **Deploy the container**.\n"
+"\n"
+msgstr ""
+"\n"
+"   === Via Konsole\n"
+"\n"
+"   Starten Sie den Container und geben Sie das Volume **zammad-backup** und\n"
+"   einen Port an, unter dem Sie auf die Web-UI zugreifen möchten:\n"
+"\n"
+"   ```sh\n"
+"   docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 "
+"filebrowser/filebrowser\n"
+"   ```\n"
+"\n"
+"   === Via Portainer\n"
+"\n"
+"   In Ihrer Portainer Web UI gehen Sie auf **Containers** im linken Menü "
+"und\n"
+"   klicken Sie auf die Schaltfläche **Add container**.\n"
+"\n"
+"   Fügen Sie die folgenden Informationen hinzu:\n"
+"\n"
+"   - Name: Geben Sie einen Namen ein, der noch nicht verwendet wird.\n"
+"   - Image: `filebrowser/filebrowser`\n"
+"   - Map additional port: Wählen Sie einen Port und ordnen Sie ihn dem Port "
+"`80` des Container zu.\n"
+"   - Advanced container settings:\n"
+"     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche **"
+"map additional volume**.\n"
+"     - Geben Sie im Container-Abschnitt `/srv` ein und wählen Sie das "
+"Volume, das `zammad-backup` enthält.\n"
+"   - Klicken Sie schließlich auf **Deploy the container**.\n"
+"\n"
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/docker-file-handling.md:101
+msgid ""
+"After the container is started, go to the web interface by using the IP "
+"address and the port you defined."
+msgstr ""
+"Nach dem Start des Containers rufen Sie die Weboberfläche über die IP-"
+"Adresse und den Port auf, den Sie festgelegt haben."
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/docker-file-handling.md:101
+msgid "Log in with the default credentials `admin` / `admin`."
+msgstr "Melden Sie sich mit den Standard-Zugangsdaten `admin` / `admin` an."
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/docker-file-handling.md:101
+msgid "You should now see at least 2 .gz files including a timestamp."
+msgstr ""
+"Sie sollten nun mindestens 2 .gz-Dateien sehen, deren Namen einen "
+"Zeitstempel beinhaltet."
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/docker-file-handling.md:101
+msgid ""
+"Create a **New folder** by using the button on the left side. Name it "
+"`restore`."
+msgstr ""
+"Erstellen Sie einen neuen Ordner, indem Sie die Schaltfläche auf der linken "
+"Seite verwenden. Nennen Sie ihn `restore`."
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/docker-file-handling.md:101
+msgid ""
+"Enter this folder and upload your backup files (on the top right corner with "
+"the up arrow). If the upload fails, it might be required to change the "
+"permissions of the files (e.g. readable for everyone)."
+msgstr ""
+"Öffnen Sie diesen Ordner und laden Sie Ihre Sicherungsdateien hoch (oben "
+"rechts mit dem Pfeil nach oben). Wenn der Upload fehlschlägt, müssen Sie "
+"möglicherweise die Berechtigungen der Dateien ändern (z.B. auf lesbar für "
+"alle)."
+
+#. type: Plain text
+#: src/en/tutorials/docker-file-handling.md:103
+msgid ""
+"Now start the stack to execute the restore process. After that, you can "
+"safely delete the renamed folder and stop the filebrowser."
+msgstr ""
+"Starten Sie nun den Stack, um den Wiederherstellungsprozess auszuführen. "
+"Danach können Sie den umbenannten Ordner löschen und Filebrowser beenden."
+
+#. type: Title #
+#: src/en/tutorials/docker-restore.md:1 src/en/tutorials/docker-restore.md:6
+#, no-wrap
+msgid "Backup & Restore (Docker)"
+msgstr "Backup & Restore (Docker)"
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:9
+msgid ""
+"This section shows some basics about the backup and restore process for a "
+"docker compose based deployment of Zammad."
+msgstr ""
+"Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und "
+"Wiederherstellungsprozess für eine auf Docker Compose basierte Installation "
+"von Zammad."
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:15
+msgid ""
+"If you are familiar with volume based backup and restore procedures in "
+"docker, and perhaps already use a different method or tool, then you can "
+"keep using it. A backup would typically mean shutting down the stack to "
+"ensure all in-memory files get written to disk, then backing up the volume "
+"contents, and then starting the stack again. When using such method, you can "
+"consider using the [disable-backup-service scenario](/en/reference/docker-"
+"compose-scenarios) so that the built-in backup and restore mechanism of "
+"Zammad is not activated."
+msgstr ""
+"Wenn Sie mit Volume-basierten Backup- und Restore-Prozessen in Docker "
+"vertraut sind und vielleicht bereits eine andere Methode oder ein anderes "
+"Tool verwenden, können Sie diese weiterhin nutzen. Ein Backup würde "
+"typischerweise bedeuten, den Stack herunterzufahren, um sicherzustellen, "
+"dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben "
+"werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack "
+"wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in "
+"Erwägung ziehen, das Szenario [Backup-Dienst deaktivieren](de/reference/"
+"docker-compose-scenarios) zu verwenden, damit der integrierte Backup- und "
+"Restore-Prozess von Zammad nicht aktiviert wird."
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:17
+msgid ""
+"The rest of this page describes the built-in backup and restore mechanism of "
+"Zammad's docker compose stack."
+msgstr ""
+"Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess "
+"von Zammads Docker Compose Stack."
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:21
+msgid ""
+"If you're familiar with docker, the Quick Start section below includes the "
+"information you'll need. The [docker file handling](/en/tutorials/docker-"
+"file-handling) page covers some examples about how to handle the backup "
+"files and to copy it into a docker volume to restore it."
+msgstr ""
+"Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt Schnellstart "
+"unten die Informationen, die Sie benötigen. Die Seite [Docker Datei Handling]"
+"(/de/tutorials/docker-file-handling) enthält einige Beispiele für den Umgang "
+"mit Sicherungsdateien und das Kopieren in ein Docker-Volume, um es "
+"wiederherzustellen."
+
+#. type: Title ##
+#: src/en/tutorials/docker-restore.md:22
+#, no-wrap
+msgid "Backup"
+msgstr "Backup"
+
+#. type: Plain text
+#: src/en/tutorials/docker-restore.md:26
+msgid ""
+"By default, a backup is created at each start of the stack as well as at 3 "
+"o'clock each night. The backup is stored in the volume of the **zammad-"
+"backup** container under `/var/tmp/zammad`."
+msgstr ""
+"Standardmäßig wird bei jedem Start des Stacks sowie nachts um 3 Uhr ein "
+"Backup erstellt. Das Backup wird im Volume des Containers **zammad-backup** "
+"unter `/var/tmp/zammad` gespeichert."
+
+#. type: Title ##
+#: src/en/tutorials/docker-restore.md:27
+#, no-wrap
+msgid "Restore"
+msgstr "Restore"
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/docker-restore.md:40
+msgid "Start the new stack at least once so a Zammad database is available."
+msgstr ""
+"Starten Sie den neuen Stack mindestens einmal, damit eine Zammad-Datenbank "
+"verfügbar ist."
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/docker-restore.md:40
+msgid "Stop the stack."
+msgstr "Stoppen Sie den Stack."
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/docker-restore.md:40
+msgid ""
+"In case you restore to a production stack with activated file system "
+"storage, you should purge the content of the directory `/opt/zammad/storage/"
+"` inside the volume. The restore process only adds/overwrites files there, "
+"no cleanup will take place."
+msgstr ""
+"Falls Sie auf einen produktiven Stack mit aktiviertem Dateisystemspeicher "
+"wiederherstellen, sollten Sie den Inhalt des Verzeichnisses `/opt/zammad/"
+"storage/` innerhalb des Volumes bereinigen. Der Wiederherstellungsprozess "
+"fügt dort nur Dateien hinzu bzw. überschreibt sie, es findet keine "
+"Bereinigung statt."
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/docker-restore.md:40
+msgid ""
+"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
+"volume of the **zammad-backup** container. Be aware that the restore process "
+"always uses the latest backup according to the timestamp of the file name. "
+"Only backups from package and docker installations are supported by this "
+"built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
+"they link to an unknown location for the restore process."
+msgstr ""
+"Kopieren oder verschieben Sie die Sicherungsdateien nach `/var/tmp/zammad/"
+"restore/` innerhalb des Volumes des Containers **zammad-backup**. Beachten "
+"Sie, dass der Wiederherstellungsprozess immer die neueste Sicherung gemäß "
+"dem Zeitstempel des Dateinamens verwendet. Nur Backups von Paket- und Docker-"
+"Installationen werden von dieser eingebauten Backup-Methode unterstützt. "
+"Kopieren Sie nicht die Dateien `latest_zammad_*.gz`, da sie auf einen für "
+"den Wiederherstellungsprozess unbekannten Ort verweisen."
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/docker-restore.md:40
+msgid ""
+"Start the stack. The restore process is triggered if the `restore` directory "
+"is detected and the backup files are in place."
+msgstr ""
+"Starten Sie den Stack. Der Wiederherstellungsprozess wird angestoßen, wenn "
+"das Verzeichnis `restore` erkannt wird und die Sicherungsdateien vorhanden "
+"sind."
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/docker-restore.md:40
+msgid ""
+"After the restore process has finished, the `restore` directory got renamed. "
+"You can safely delete it now."
+msgstr ""
+"Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das "
+"Verzeichnis `restore` umbenannt. Sie können es jetzt löschen."
 
 #. type: Title #
 #: src/en/tutorials/firewall-selinux.md:1
@@ -26062,22 +26538,6 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"=== Ubuntu\n"
-"\n"
-"```sh\n"
-"apt install apt-transport-https sudo wget curl gnupg\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
-"  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
-"```\n"
-"\n"
-"```sh\n"
-"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
-"```\n"
-"\n"
 "```sh\n"
 "apt update\n"
 "```\n"
@@ -26086,31 +26546,7 @@ msgstr ""
 "apt install elasticsearch\n"
 "```\n"
 "\n"
-"=== Debian\n"
-"\n"
-"```sh\n"
-"apt install apt-transport-https sudo wget curl gnupg\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
-"  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
-"```\n"
-"\n"
-"```sh\n"
-"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
-"```\n"
-"\n"
-"```sh\n"
-"apt update\n"
-"```\n"
-"\n"
-"```sh\n"
-"apt install elasticsearch\n"
-"```\n"
-"\n"
-"=== OpenSUSE\n"
+"==== OpenSUSE\n"
 "\n"
 "```sh\n"
 "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
@@ -26131,7 +26567,7 @@ msgstr ""
 "zypper install elasticsearch\n"
 "```\n"
 "\n"
-"=== CentOS\n"
+"==== CentOS\n"
 "\n"
 "```sh\n"
 "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
@@ -26152,7 +26588,11 @@ msgstr ""
 "yum install -y elasticsearch\n"
 "```\n"
 "\n"
-"=== Direkt Download\n"
+"==== Direkt Download\n"
+"\n"
+"Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine\n"
+"[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n"
+"für weitergehende Informationen.\n"
 "\n"
 
 #. type: Plain text
@@ -28595,10 +29035,11 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, fuzzy, no-wrap
-#| msgid "    means we can only display the _last_ value of the field in question.\n"
+#, no-wrap
 msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
+msgstr ""
+"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt "
+"werden kann.\n"
 
 #. type: Link reference
 #: src/en/tutorials/reporting-grafana.md:234
@@ -30735,6 +31176,24 @@ msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
 
+#, no-wrap
+#~ msgid ""
+#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+#~ "    violations.\n"
+#~ msgstr ""
+#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+#~ "     SLA-Verstöße.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+
 #~ msgid ""
 #~ "Zammad will store all content in a Database. We supported PostgreSQL in "
 #~ "version 10 or higher. The installation script tries to detect a MySQL/"
@@ -30753,24 +31212,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Wenn Sie noch MySQL/MariaDB verwenden, sollten Sie auf PostgreSQL "
 #~ "umsteigen.  MySQL/MariaDB werden ab Zammad 7 **nicht mehr** unterstützt."
-
-#, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #, no-wrap
 #~ msgid ""
