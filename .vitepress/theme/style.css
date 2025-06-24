@@ -730,3 +730,15 @@
     margin: 0;
   }
 }
+
+.VPSidebarItem .VPLink {
+  .back-icon {
+    margin: 0 2px 0 -6px;
+    color: var(--vp-c-text-3);
+    font-size: 18px;
+  }
+
+  &:hover .back-icon {
+    color: var(--vp-c-brand-1);
+  }
+}

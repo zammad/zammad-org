@@ -49,3 +49,5 @@ themeConfig:
     - 
       icon: github
       link: https://github.com/zammad
+  user:
+    rootGroupText: 'Use Zammad'

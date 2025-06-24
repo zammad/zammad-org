@@ -83,8 +83,13 @@ function onCaretClick() {
         :target="item.target"
         :title="item.text"
       >
+        <!-- <component :is="textTag" class="text" v-html="item.text" /> -->
+        <template v-if="item.text.match(/^\u2039\s/)">
+          <span class="vpi-chevron-left back-icon" />
+          <component :is="textTag" class="text" v-html="item.text.replace(/^\u2039\s/, '')" />
+        </template>
+        <component v-else :is="textTag" class="text" v-html="item.text" />
       <!-- zammad-org:END -->
-        <component :is="textTag" class="text" v-html="item.text" />
       </VPLink>
       <component v-else :is="textTag" class="text" v-html="item.text" />
 

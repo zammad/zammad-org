@@ -41,3 +41,5 @@ themeConfig:
   header:
     text: 🛠️ This documentation is still under construction, please report any issues.
     link: 'https://github.com/zammad/zammad-org/issues'
+  user:
+    rootGroupText: 'Use Zammad'

@@ -15,6 +15,12 @@ import searchSR from './search.sr.yaml.json'
 
 const supportedLocales = ['en', 'de', 'sr']
 
+const configByLocale = {
+  en: configEN,
+  de: configDE,
+  sr: configSR,
+}
+
 const searchConfigByLocale = {
   en: searchEN,
   de: searchDE,
@@ -22,6 +28,15 @@ const searchConfigByLocale = {
 }
 
 const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
+
+const commonSidebarConfig = {
+  collapsed: true,
+  collapseDepth: 1,
+  useTitleFromFileHeading: true,
+  useTitleFromFrontmatter: true,
+  useFolderTitleFromIndexFile: true,
+  sortMenusByFrontmatterOrder: true,
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(
@@ -176,21 +191,24 @@ export default defineConfig(
     }
   }, [
     ...supportedLocales.map((locale) => ({
+        ...commonSidebarConfig,
         documentRootPath: `/src/${locale}`,
         resolvePath: `/${locale}/`,
-        collapsed: true,
-        collapseDepth: 1,
-        useTitleFromFileHeading: true,
-        useTitleFromFrontmatter: true,
-        useFolderTitleFromIndexFile: true,
-        sortMenusByFrontmatterOrder: true,
         excludePattern: [
           'gdpr.md',
           'imprint.md',
           'TEMPLATE.md',
-          'modules/'
+          'modules/',
         ],
       }),
-    )
+    ),
+    ...supportedLocales.map((locale) => ({
+        ...commonSidebarConfig,
+        documentRootPath: `/src/${locale}/documentation/use`,
+        resolvePath: `/${locale}/documentation/use/`,
+        rootGroupText: `\u2039 ${configByLocale[locale].themeConfig.user.rootGroupText}`, // guillemet (‹)
+        rootGroupLink: '../introduction.html',
+      }),
+    ),
   ]),
 )
