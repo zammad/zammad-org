@@ -16,7 +16,7 @@ _Checklist templates_ include their items whereas the _standard
 checklist_ has a separate item endpoint.
 :::
 
-## Checklists
+## Спискови задатака
 
 :::info
 To add checklist items, use the [checklist items endpoint](#checklist-items).

@@ -10,13 +10,13 @@ title: Уопштено
 
 ## Уопштено
 
-In general, Zammad should be pretty self explanatory. However, there are
-features that are not obvious at first glance.  These features are described
-in this documentation as well as some general explanations and tips.
+Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције
+које нису очигледне на први поглед. Ове функције су описане у овој
+документацији као и нека општа објашњења и савети.
 
-This documentation is divided into different sections. Currently you are viewing the _General_ section in the
-_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the
-header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].
+Ова документације је подељена на различите одељке. Тренутно читате одељак _Уопштено_ у делу
+_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране за навигацију на жељене информације или претражите у
+заглављу. Можете чак покренути претрагу коришћењем пречице [[Ctrl]] [[k]] на тастатури.
 
 :::tip
 
@@ -33,10 +33,10 @@ users, we applied some tweaks.
 
 ## Zammad почетник
 
-If you are new to Zammad and ticketing software at all, our recommendation
-is to have a look at the [Start with Zammad](start-using-zammad) page. You
-can find a description of some important UI elements there as well as basic
-ticket attributes and how to use them.
+Уколико сте нови са Zammad-ом и уопштено са тикетинг системима, предлажемо
+да погледате [наш водич за почетнике](start-using-zammad). Тамо можете
+пронаћи опис неких важних елемената корисничкој интерфејса као и основне
+атрибуте тикета и начин њиховог коришћења.
 
 ## Напредни корисник
 

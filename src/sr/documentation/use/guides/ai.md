@@ -7,8 +7,8 @@ title: 'Zammad AI'
 
 ## Увод
 
-Zammad is getting even smarter! We are expanding Zammad's AI capabilities to
-help you manage support tickets even more efficiently. ✨🚀
+Zammad постаје све паметнији! Проширујемо Zammad-ове AI могућности да вам
+помогнемо у ефикаснијој обради тикета подршке. ✨🚀
 
 ::: info
 The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.
@@ -49,14 +49,14 @@ settings](../manage-profile) and re-activate it by toggling the checkbox.
 
 ## Smart Editor
 
-The new AI-powered smart editor is designed to simplify and enhance your
-ticket response workflow. It helps you with text tools while you create an
-article.
+Нови уредник текста са AI побољшањима је дизајниран да поједностави и
+унапреди ваш радни ток обраде тикета. Помаже вам преко текстуалних алатки
+док пишете чланак.
 
-To use any of the following features, you first have to select text you want
-to apply the changes to. After that, click the **Smart Editor** link at the
-bottom of the article creation and choose one of the following features,
-depending on what you want to perform.
+За коришћење излистаних функција, прво морате да обележите текст на који
+желите да се измене примене. Након тога, кликните на **Smart Editor** дугме
+при дну новог чланка и изаберите једну од следећих функција, у зависности од
+жељеног понашања.
 
 ![Screenshot shows Zammad's smart editor
 menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
@@ -70,14 +70,14 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 
 :::
 
-- **Improve writing**: Uses your text as a base and tries to improve it by
-  enhancing clarity, conciseness and structure as well as removing
-  misspellings and grammar issues.
-- **Fix spelling and grammar**: Just proofreads your text and automatically
-  removes spelling and grammar mistakes.
-- **Expand**: Expands your text while keeping your message. Useful if your
-  customer expects more than some bullet points as an answer. You can even
-  use it by providing only basic information (e.g. via bullet points) and
-  let the AI write the answer.
-- **Simplify**: Does the opposite of the expansion and shrinks your text
-  while keeping your message.
+- **Унапреди писање**: користи ваш текст као основу и покушава да га побољша
+  унапређењем јасноће, прецизности и структуре, притом отклањајући грешке у
+  правопису и граматици.
+- **Исправи правопис и граматику**: само лекторише ваш текст и аутоматски
+  отклања грешке у правопису и граматици.
+- **Прошири**: проширује ваш текст притом одржавајући вашу мисао. Корисно је
+  уколико ваш клијент очекује нешто више од пар ставки као одговор. Могуће
+  је искористити прилагањем само основних информација (нпр. путем листе са
+  тачкама) и пуштањем AI да напише одговор.
+- **Поједностави**: ради супротно од проширења и сажима ваш текст
+  одржавајући вашу мисао.

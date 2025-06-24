@@ -8,32 +8,32 @@ title: FAQ
 ## Уопштено
 
 ::: details How to find tickets?
-It depends on your use case. Zammad offers many possibilities to search and access tickets.
+У зависности од ваше ситуације, Zammad омогућава пуно начина за претрагу и приступ тикетима.
 
-If you **search for a specific ticket or content**, the search is the best way. You can find the search field in the top
-area of the navigation sidebar or activate it by using the keyboard shortcut [[s]]. The search even shows your
-last viewed items, maybe you can find what you are searching for already there. There is a separate
-[search page](./guides/search) for more information.
+Уколико **тражите одрељен тикет или садржај**, претрага је најбољи начин. Можете пронаћи поље претраге при врху
+бочне траке навигације или га активирајте пречицом [[s]] на тастатури. Претража вам чак приказује и ваше
+последње виђене ставке, можда можете пронаћи шта тражите већ ту. Постоји посебна
+[страна претраге](./guides/search) са више информација.
 
-If you want to **start working on tickets**, take a look at [the overviews](./guides/overviews), which are basically a
-list of current tickets. These overviews should put you in a position where you can easily distinguish between what
-needs to be done, what is in progress and what is currently on hold. In case you face issues with these overviews,
-your Zammad admin should be able to help.
+Уколико желите да **почнете да радите на тикетима**, погледајте [прегледе](./guides/overviews), који су једноставно
+листе актуелних тикета. Ови прегледи вас стављају у позицију одакле можете лако направити разлику између
+онога шта треба да се започне, шта је у процесу и на шта се тренутно чека. У случају да имате проблеме са овим ппрегледима
+ваш Zammad администратор вам може помоћи.
 :::
 
 ::: details How to get notified for ticket changes?
-Adjust the [notification settings in your profile](manage-profile#notifications). You can distinguish between the
-action (e.g. ticket creation), the notification channel (email and/or browser), your relation to the ticket (e.g. if
-you are the owner) and limit the notifications to a specific group.
+Подесите [подешавања обавештења у вашим личним подешавањима](manage-profile#обавештења). Моћете направите разлику између
+радње (нпр. отварање тикета), канала обавештења (имејл и/или претраживач), ваш однос према тикету (нпр. да ли
+сте његов власник) и ограничивање обавештења на одговорајућу групу.
 :::
 
 ::: details Why is the ticket open again? I closed it already!
-Depending on the settings of your Zammad instance, the reasons can differ. But usually the reason is that a customer
-replied to the ticket after it was set to closed. Another reason could be that a colleague re-opened it. If you can't
-see an article which fits to the description, you can take a look at the ticket history to find out more. Do so by
-opening the ::a:: menu in the ticket sidebar tab and select **History**.
+У зависности од подешавања ваше Zammad инстанце, узрок се може разликовати. Али обично је разлог што је клијент
+одговорио на тикет накош што је био затворен. Још један резлог може бити то што га је колега поново отворио. Уколико не
+видите чланак који објашњава ситуацију, погледајте у историјат тикета за више информација. Исти се може
+отворити преко ::a:: менија у бочној траци тикета и одабиром радње **Историјат**.
 
-Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.
+Ваш Zammad администратор може подесити шта се тачно дешава када клијент одговори на затворени тикет.
 :::
 
 :::: details What does the customer see in the ticket?

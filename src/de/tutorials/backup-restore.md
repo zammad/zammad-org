@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Backup & Restore (Package)'
+title: 'Backup & Restore (Paket)'
 ---
 
-# Backup & Restore (Package)
+# Backup & Restore (Paket)
 
 Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
 Paket-Installationen mit, die Sie verwenden können.
@@ -145,12 +145,13 @@ Bei einer Neuinstallation ist dies erforderlich. Sie müssen mindestens ein
 Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe
 [Backup-Konfiguration](#backup-konfiguration) für weitere Informationen.
 
-### Clean Up the Storage Folder
+### Aufräumen des Speicherordners
 
-In case you restore to a production environment with activated filesystem
-storage, you should purge the content of the directory
-`/opt/zammad/storage/` inside the volume. The restore process only
-adds/overwrites files there, no cleanup will take place.
+Falls Sie in einer Produktivumgebung mit aktivierte
+Dateisystem-Speichermethode wiederherstellen, sollten Sie den Inhalt des
+Verzeichnisses `/opt/zammad/storage/` innerhalb des Volumes bereinigen. Der
+Wiederherstellungsprozess fügt dort nur Dateien hinzu bzw. überschreibt sie,
+es findet keine Bereinigung statt.
 
 ### Die Wiederherstellung ausführen
 

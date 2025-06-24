@@ -93,18 +93,18 @@ zammad run rails r "p Sessions.list.uniq.count"
   Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf
   Zammad sind.
 
-`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session
-worker to run at a time.
+`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : Wie viele Instanzen des Session
+Workers sollen gleichzeitig laufen.
 
-  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.
+  Eine Erhöhung dieser Einstellung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind.
 
-  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of
-  workers can consume a lot of resources!
+  Es ist nicht sinnvoll, diese Einstellung zu ändern, wenn Sie weniger als 40 aktive Benutzer gleichzeitig haben. Das Erhöhen der
+  Worker kann eine Menge Ressourcen verbrauchen!
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
-: Allows spawning an independent process just for processing scheduled
-  jobs like LDAP syncs. This can free up Zammad's background worker for
-  other tasks when running tasks that take rather long.
+: Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter
+  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad
+  für andere Aufgaben entlasten, wenn Aufgaben ausgeführt werden, die ziemlich lange dauern.
 
   Maximale Anzahl von Workern: `1`
 
@@ -112,29 +112,30 @@ worker to run at a time.
   `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in
-  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.
+: Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_
+  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.
+  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.
 
   Maximale Anzahl von Workern: `16`
 
 `ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`
-: How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the
-  responses from the configured AI provider. By default, one worker is running.
+: Wie viele Instanzen von KI-Workern sollen gleichzeitig laufen. KI-Worker bearbeiten die KI-Anfragen von Zammad und holen sich die
+  Antworten von dem konfigurierten KI-Provider ab. Standardmäßig wird ein Worker ausgeführt.
 
-  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to
-  collapse.
+  Benutzer einer selbst gehosteten Instanz sollten bei der Erhöhung vorsichtig sein. Abhängig von Ihrer Hardware kann dies dazu führen, dass Ihr KI-Dienst
+  zusammenbricht.
 
-  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of
-  parallelization.
+  Für Benutzer von KI-Cloud-Diensten mit einer großen Zammad-Instanz könnte es sinnvoll sein, diesen Wert zu erhöhren, um eine Art von
+  Parallelisierung zu erreichen.
 
   Maximale Anzahl von Workern: `16`
 
 `ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type="info" text="5"/>
-: How many threads should be processed by one AI worker (if you have more than one worker, it is multiplied by the
-  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core
-  anyway.
+: Wie viele Threads sollen von einem KI-Worker bearbeitet werden (wenn Sie mehr als einen Worker haben, wird dies mit der
+  Anzahl der Worker multipliziert). Dies kann die KI-Verarbeitung beschleunigen, aber bedenken Sie, dass ein Ruby-Worker ohnehin nur 1 Kern
+  auslasten kann.
 
-  Maximum number of threads: 16
+  Maximale Anzahl von Threads: `16`
 
 ## Zusätzliche Performance-Anpassungen
 

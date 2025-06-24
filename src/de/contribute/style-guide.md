@@ -306,14 +306,15 @@ Erster Begriff <Badge type="info" text="tag1" />
 
 :::
 
-#### Highlighting with Boxes
+#### Hervorheben mit Kästen
 
-To highlight different options or variants, clickable boxes can be used.
+Um verschiedene Optionen oder Varianten hervorzuheben, können anklickbare
+Kästen verwendet werden.
 
 <VPDocFeatures />
 
-The definition of the content is done via frontmatter, see following example
-(reflects the boxes above):
+Die Definition des Inhalts erfolgt in Frontmatter, siehe folgendes Beispiel
+(Beispiel von oben):
 
 ```yml
 
@@ -338,5 +339,5 @@ features:
 
 ```
 
-To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
-rendered.
+Um sie innerhalb des Inhaltsbereichs zu platzieren, fügen Sie einfach den Verweis `<VPDocFeatures />` an der Stelle ein, an der sie dargestellt
+werden sollen.

@@ -12,18 +12,17 @@ title: 'Elasticsearch 7 installieren'
 Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird
 aber _dringend_ empfohlen.
 
-Elasticsearch bietet zwei Versionen an. Derzeit werden die Versionen 7 und 8
-gepflegt. Für die Installationsanweisungen sollten Sie in erster Linie die
-[Dokumentation von
-Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-install-packages){target=_blank}
-beachten.  Verwenden Sie das Dropdown-Menü in der oberen linken Ecke, um die
-Version auszuwählen, die Sie installieren möchten.
+Elasticsearch offers different versions. Currently, the versions 7 and 8 are
+supported by Zammad. For installation instructions, you should first and
+foremost follow [Elastic’s installation
+documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html){target=_blank}.
+Use the dropdown in the top left corner to choose which version you want to
+install.
 
-Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu
-installieren ist), finden Sie unten die konsolidierten
-Installationsschritte. Beachten Sie, dass die Wartung von Version 7
-möglicherweise früher eingestellt wird als bei Version 8, die außerdem
-einige zusätzliche Sicherheitsfunktionen enthält.
+However, if you want go with Elasticsearch 7 (which is slightly easier to
+install), you can find the consolidated installation steps below. Be aware
+that the maintenance of version 7 might be stopped earlier than for later
+versions, which also come with some additional security features.
 
 :::info
 Wenn Sie Elasticsearch 8 installieren und unserer
@@ -75,22 +74,6 @@ tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 
 ::::
 
-=== Ubuntu
-
-```sh
-apt install apt-transport-https sudo wget curl gnupg
-```
-
-```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
-```
-
-```sh
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
-```
-
 ```sh
 apt update
 ```
@@ -99,31 +82,7 @@ apt update
 apt install elasticsearch
 ```
 
-=== Debian
-
-```sh
-apt install apt-transport-https sudo wget curl gnupg
-```
-
-```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-  tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
-```
-
-```sh
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-  gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
-```
-
-```sh
-apt update
-```
-
-```sh
-apt install elasticsearch
-```
-
-=== OpenSUSE
+==== OpenSUSE
 
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
@@ -144,7 +103,7 @@ type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 zypper install elasticsearch
 ```
 
-=== CentOS
+==== CentOS
 
 ```sh
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
@@ -165,7 +124,11 @@ type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
 yum install -y elasticsearch
 ```
 
-=== Direkt Download
+==== Direkt Download
+
+Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine
+[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+für weitergehende Informationen.
 
 :::::
 

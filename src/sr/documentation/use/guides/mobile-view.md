@@ -69,10 +69,10 @@ looks like.
 приказ:
 
 - Time accounting
-- Split article
+- Раздели чланак
 - Link tickets and see linked tickets
 - Execution of macros
-- Ticket history
+- Историјат тикета
 - Template creation & shared drafts
 
 Додатно, одређене функције су намерно изостављене да би се побољшао фокус на

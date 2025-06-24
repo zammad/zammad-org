@@ -9,16 +9,16 @@ title: 'Напредне функције'
 
 TODO
 
-## Ticket Update Behavior
+## Понашање при освежавању тикета
 
 ![Снимак екрана приказује мени понашања након
 освежавања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
 
 **Зашто?**
 
-It is possible to automatically close a ticket tab in the navigation
-sidebar. It depends on your preferences, but you can save a click after
-updating or updating a ticket to _closed_ state.
+Могуће је аутоматски затворити прозор тикета у бочној траци
+навигације. Зависи од ваших подешавања, али можете уштедети клик након
+освежавања или освежавања тикета са стањем _затворено_.
 
 **Како?**
 
@@ -36,14 +36,14 @@ updating or updating a ticket to _closed_ state.
   када је тикет освежен и стање је постављено на _затворено_.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
-[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
+Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**
+и користити пречицу на тастатури [[Shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.
 :::
 
 ## Текстуални исечци
 
-![Screenshot shows text modules
-feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Снимак екрана приказује функцију текстуалних
+исечака](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
 
 **Зашто?**
 
@@ -62,10 +62,10 @@ feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-
 а затим притиском на [[Enter]] на вашој тастатури. Zammad долази са неким
 подразумеваним текстуалним исечцима.
 
-If you have to answer the same question again and again, ask your Zammad
-admin to create such a text module for you.  They can even include variables
-like customer name or any other available attribute which get replaced while
-using it in a ticket.
+Уколико ухватите себе да стално одговарате на идентично питање, замолите
+вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу
+укључивати и променљиве као што су име клијента или било који други атрибут,
+које ће бити замењене кад их користите у тикету.
 
 ## Помените колегу
 
@@ -80,8 +80,8 @@ using it in a ticket.
 
 **Како?**
 
-While writing a ticket article, simply type `@@` and enter some letters of
-the name of the colleague you want to mention.
+Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова
+из имена колеге кога желите да поменете.
 
 Zammad приказује листу свих корисника који одговарају вашем уносу и можете
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
@@ -94,17 +94,16 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-If you are interested in the progress of a ticket, you are not the owner,
-you can subscribe to it. This means you will receive notifications for each
-update.
+Уколико сте заинтересовани за прогрес тикета, а нисте власник тикета, можете
+се претплатити на исти. Ово значи да ћете примати обавештења за свако
+освежавање.
 
 **Како?**
 
-Activate the "Subscribe me" toggle in the ticket side panel to get
-notifications. If you have been mentioned in a ticket, you are automatically
-subscribed. Switch the toggle off to stop the notification. The avatars
-displayed show you who has subscribed to the ticket and is therefore
-notified of updates.
+Укључите прекидач „Претплати се” у траци тикета са стране за добијање
+обавештења. Уколико сте већ поменути у тикету, већ сте
+претплаћени. Искључите прекидач за заустављање обавештења. Сличице испод вам
+приказују ко је претплаћен на тикет и ко је обавештен о освежавањима.
 
 ## Макрои
 
@@ -122,9 +121,9 @@ notified of updates.
 
 **Како?**
 
-If your admin already created a macro, you can execute it in the ticket
-detail view by clicking the three dots button ::a:: in the right corner of
-the footer bar and select the macro you want to execute.
+Уколико је ваш администратор већ додао макро, можете га извршити у детаљном
+приказу тикета кликом на дугме са три тачкице ::a:: у доњем десном углу и
+одабиром макроа из листе.
 
 ::: warning
 Макро ће бити моментално извршен без додатне потврде!
@@ -148,14 +147,15 @@ the footer bar and select the macro you want to execute.
 
 **Како?**
 
-In the ticket sidebar, you can find a section which is labeled as
-**Tags**. Add a tag by clicking on the ::+:: button. You can select existing
-tags and add new ones (if your admin didn't disable to add new tags).
+У бочној траци тикета, можете пронаћи одељак под насловом
+**Ознаке**. Додајте ознаку кликом на дугме ::+::. Можете изабрати између
+постојећих и нових ознака (уколико ваш администратор није искључио додавање
+нових ознака).
 
-Remove them by simply click on the ::x:: button. Be aware that there is no
-confirmation dialog for deleting a tag from a ticket.
+Уклоните их једноставним кликом на дугме ::x::. Обратите пажњу да неће бити
+потврдног дијалога за брисање ознаке са тикета.
 
-## Checklists
+## Спискови задатака
 
 ![Снимак екрана приказује списак задатака у бочној
 траци](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
@@ -169,9 +169,9 @@ confirmation dialog for deleting a tag from a ticket.
 
 **Како?**
 
-Select the **Checklist** tab in the sidebar. If you can't see it, your
-Zammad admin disabled it. You can only add or edit a checklist, if you have
-the permission to edit the ticket.
+Одаберите језичак **Списак задатака** у бочној траци. Ако га не видите, ваш
+Zammad администратор га је искључио. Списак задатака можете додати или
+уређивати само ако имате дозволу да освежавате тикет.
 
 У траци списка задатака можете:
 
@@ -179,24 +179,24 @@ the permission to edit the ticket.
   списак` или на основу шаблона коришћењем `Додај по шаблону` (уколико не
   видите дугме за шаблон, не постоје).
 - Уређивање постојећег списка:
-  - Rename it by clicking on the title or using the ::a:: menu in the
-    sidebar header.
-  - Add checklist items by clicking the ::+:: button.
-  - Change the text of the checklist items, either by just clicking on it or
-    using the ::a:: menu next to the item.
+  - Промените назив кликом на наслов или коришћењем падајућег менија ::a:: у
+    заглављу траке.
+  - Додајте задатке на списак кликом на дугме ::a::.
+  - Промените текст задатка, или кликом на њега или коришћењем падајућег
+    менија ::a:: поред ставке.
   - Кликом на дугме `Измени редослед` можете превући и пустити ставке за
     жељени распоред.
-- Delete the complete checklist by using the ::a:: menu in the sidebar
-  header.
+- Обришите комплетан списак задатака коришћењем падајућег менија ::a:: у
+  заглављу траке.
 
 Постоје две функције које нису директно видљиве:
 
-- You can refer to other tickets as a checklist item by using its hook and
-  number in the item text (e.g.  `Ticket#123456`). Such items can't be
-  checked manually, they reflect the state of the referred ticket.
+- Можете рефернцирати друге тикете на списку коришћењем њиховог прикључка и
+  броја у тексту задатка (нпр. `Ticket#123456`). Ове ставке се не могу ручно
+  означити, већ ће одражавати стање референцираног тикета.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use
-  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
+  Нађите прикључак тикета са бројем одласком у жељени тикет и или кликом на дугме за копирање у заглављу
+  или путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка.
   :::
 - Zammad врши аутоматску проверу да ли су сви задаци са списка
   обављени. Провера се врши приликом затварања тикета. Уколико нису сви
@@ -215,9 +215,9 @@ the permission to edit the ticket.
 
 **Како?**
 
-In the ticket create screen, you can find an `Apply Template ^` button in
-the footer bar, if a template is available.  Select the template you want to
-apply and apply changes if desired.
+У екрану отварања тикета, пронаћи ћете дугме `Примени шаблон ^` у подножју,
+уколико су доступни шаблони. Одаберите шаблон који желите и примените жељене
+измене.
 
 ## Заједнички нацрти
 
@@ -233,8 +233,8 @@ QA процес, уместо додавања интерног чланка. У
 
 **Како?**
 
-To **save a draft**, use the ::a:: menu in the footer of the ticket details
-view and select "Save as draft".
+Да бисте **сачували нацрт**, користите падајући мени ::a:: у подножју
+прегледа тикета и одаберите „Сачувај нацрт”.
 
 Да би сте **применили постојећи нацрт**, кликните на дугме `Доступан нацрт`
 на левој страни подножја.
@@ -276,40 +276,42 @@ view and select "Save as draft".
 
 ## Масовне радње
 
-![Screenshot shows the bulk action
-flyout](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
+![Снимак екрана приказује бочни панел масовне
+радње](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
 
 **Зашто?**
 
-If you have to apply the same changes for many ticket, you can save time!
+Уколико морате да примените идентичне измене на више тикета, можете уштедети
+време!
 
 **Како?**
 
-There are 2 _places_ where you can perform bulk actions:
+Постоје два _места_ одакле можете покренути масовне радње:
 
-- Detail search page
+- Детаљни екран претраге
 - Прегледи
 
-Assuming you are in the overviews or in the detail search page, you can bulk
-edit tickets in 2 _ways_:
+Под претпоставком да се налазите у прегледима или на екрану детаљне
+претраге, можете да масовно уредите тикете на два _начина_:
 
-- Use the **Bulk Action** button in the top right corner and change/add
-  attributes by using the fields in the flyout
-- Drag the tickets with the mouse to invoke the bulk action overlay and drop
-  them on the desired action
+- Користите дугме **Mасовна радње** у горњем десном углу и промените/додајте
+  атрибуте коришћењем поља у бочном панелу
+- Превуците тикете за покретање режима масовне радње и пустите их на жељену
+  радњу
 
-To bulk edit tickets in either way, you have to select them before. Do so by
-clicking the checkbox on the left side of each row in the ticket
-table. Selected tickets are highlighted next to the checkbox.
+За масовно уређивање тикета, морате их прво одабрати без обзира на начин
+покретања радње. То можете урадити одабиром поља за потврду са леве стране
+сваког реда у табели тикета. Одабрани тикети ће бити наглашени одмах до поља
+за потврду.
 
-The available changes you can apply to tickets are:
+Доступне промене које можете применити на тикете су:
 
-- Set group
-- Set owner
-- Set state
-- Set priority
-- Add a note
-- Execute a macro
+- Промена групе
+- Промена власника
+- Промена стања
+- Промена приоритета
+- Додавање напомене
+- Покретање макроа
 
 ## Спајање тикета
 
@@ -329,11 +331,10 @@ The available changes you can apply to tickets are:
 
 **Како?**
 
-Go to the ticket you want to merge into another one. In the ticket sidebar,
-use the ::a:: menu and select `Merge`. This opens a side panel in which you
-can select a ticket by clicking on it or enter a ticket number in search
-field.  When you selected a target ticket, confirm by using the `Merge`
-button at the bottom.
+Идите на тикет који желите да спојите са другим. У траци тикета, одаберите
+`Споји` у падајућем менију ::a::. Ово ће отворити бочни панел у коме можете
+одабрати тикет кликом на исти или уносом броја тикета у поље за
+претрагу. Када одаберете циљни тикет, потврдите дугметом `Споји` при дну.
 
 На крају, чланци ће бити пребачени у одабрани тикет. Тикет на коме сте
 извршили радњу спајања и даље постоји са следећим изменама:
@@ -342,21 +343,21 @@ button at the bottom.
 - Стање је промењено у „спојено”
 - Тикет је повезан са својим „надређеним” тикетом
 
-## Split Tickets
+## Раздели тикете
 
 ![Снимак екрана приказује радњу чланка за раздељивање у падајућем
 менију](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
 **Зашто?**
 
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets.  For example this might be the
-case if a customer has a technical question and wants to place an order.
+Уколико имате тикет са више од једног проблема, можда ћете хтети да га
+разделите на два или више различитих ткета. На пример до овога може доћи ако
+клијент има техничко питање и жели да пошаље поруџбину.
 
 **Како?**
 
-To split an article off, use the ::a:: menu next to an article and select
-`Split`.
+За радељивање чланка, одаберите `Раздели` из падајућег менија ::a:: поред
+чланка.
 
 Ово ће резултовати у екрану отварања тикета са попуњеним атрибутима из
 оригиналног тикета. Садржај чланка ће такође бити убачен. Можете прилагодити
@@ -369,16 +370,16 @@ To split an article off, use the ::a:: menu next to an article and select
 
 **Зашто?**
 
-When tickets about related issues arise, they can be linked to each other
-for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets)
-tickets are automatically linked.
+Када се појаве тикети о сродним проблемима, могу бити међусобно повезани
+ради лакшег референцирања. [Спојени](#спајање-тикета) и
+[раздељени](#раздели-тикете) тикети ће бити аутоматски повезани.
 
 **Како?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+::
-button in the "Links" section. This opens a side panel in which you can
-select a ticket by clicking on it or enter a ticket number in search
-field. Additionally, you can choose between different link types:
+У траци тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку
+`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом
+на исти или уносом броја тикета у поље за претрагу. Додатно, можете изабрати
+између различитих типова веза:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други
@@ -411,34 +412,33 @@ field. Additionally, you can choose between different link types:
 наговести вама и вашим колегама у којим јединицима је очекивано време
 (погледајте снимак екрана).
 
-Activity types can be used to distinguish between different activities and
-for grouping the accounted times. If this optional feature is active, it
-shows a list of activities from which you can select in the time accounting
-dialog.
+Врсте активности се могу користити за разликовање активности и за груписање
+обрачунатих времена. Уколико је ова опциона функција укључена, приказује
+листу активности из које их можете одабрати у дијалогу обрачуна времена.
 
-If a ticket already has accounted time(s), you can see it in the ticket
-sidebar on the right side in the ticket detail view at the bottom. You can
-find the calculated sums of each activity type (if configured) as well as
-the total sum of accounted times for all activity types.
+Уколико тикет већ има обрачуната времена, можете их видети при дну бочне
+траке тикета са десне стране у детаљном приказу тикета. Можете пронаћи и
+обрачунате збирове за сваку врсту активности (уколико су подешене) као и
+укупан збир обрачунатог времена за све врсте активности.
 
-![Screenshot shows the time accounting
-overview](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
+![Снимак екрана приказује приказ обрачуна
+времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## User Popover
+## Кориснички детаљи
 
 **Зашто?**
 
-Viewing important customer/user information at a glance without leaving your
-current view allows you to stay focused on your task.
+Преглед важних информација о клијенту/кориснику без напуштања тренутног
+екрана вам омогућава да останете фокусирани на ваш задатак.
 
 **Како?**
 
-You might have seen it already: simply hover your mouse over an avatar icon,
-no matter if it is in the header, footer, main content or the content
-sidebar in the ticket detail view.
+Можда сте већ приметили: једноставно пређите мишем преко сличице корисника,
+без обзира да ли се налази у заглављу, подножју, основном садржају или са
+бочне стране у детаљном прегледу тикета.
 
-![Screenshot shows an avatar with an open user
-popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Снимак екрана приказује сличицу са отвореним детаљима
+корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
 
-By the way, the crown in the screenshot represents the customer's VIP state,
-which can be set in the customer detail view and the admin settings.
+Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
+можете бити укључено у детаљном приказу клијента и администраторском панелу.

@@ -6,20 +6,20 @@ features:
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
-    title: 'Simple and minimal, always'
+    title: 'Увек једноставан и сведен'
   - 
     details: 'Lorem ipsum...'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
-    title: 'Another cool feature'
+    title: 'Још једна „кул” функција'
   - 
     details: 'Lorem ipsum...'
     icon:
       dark: /assets/logo-flat-dark.svg
       light: /assets/logo-flat-light.svg
     link: https://zammad.com
-    title: 'Another cool feature'
+    title: 'Још једна „кул” функција'
 order: 2
 ---
 
@@ -69,16 +69,16 @@ order: 2
 укључени. Читаоци би требало да постигну своје циљеве што брже и
 једноставније без потребе да пуно читају.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be on a code-like detail level), the relevance has to be
-considered. If parts with a common use case are missing, it should be
-intended to include them in the documentation.
+С обзиром да документација не може да покрије апсолутно све (иначе би
+садржала саме детаље кôда), неопходно је узети у обзир значајност
+информације. Уколико недостају делови који се односе на уобичајене случајеве
+коришћења, требало би их укључити у документацију.
 
 ## Стил и правила
 
-The next sections cover general things to consider writing the
-documentation. After these you can find a section with some
-[examples](#examples) about how to format and structure the content.
+Следећи одељак покрива опште ствари у вези писања документације. Након овога
+можете прећи на одељак са неким [примерима](#основни-примери-форматирања)
+садржаја.
 
 ### Основе
 
@@ -87,8 +87,9 @@ documentation. After these you can find a section with some
 - Систем користи [Vitepress](https://vitepress.dev/){target=_blank} за
   прављење веб сајта.
 - Изворни језик датотека је амерички енглески.
-- The translation of the documentation is done via Weblate, see [translation
-  section](contribute#translation) in the contribute page for more details.
+- Преводи документације се врше преко Weblate апликације, погледајте [одељак
+  о преводима](contribute#превод) на страници о доприносима за више
+  информација.
 
 ### Стил
 
@@ -105,8 +106,9 @@ documentation. After these you can find a section with some
   упозорењима](#прилагођени-оквири) по потреби.
 - Користите [одељак са детаљима](#прилагођени-оквири) када садржај можда
   није релевантан за све читаоце и има потенцијал да прекине ток мисли).
-- If available, use icons for important UI buttons like ::+:: and ::x:: (see
-  [examples](#text-and-ui) below).
+- Уколико је могуће, користите иконице за важне елементе корисничког
+  интерфејса као што су ::+:: и ::x:: (погледајте
+  [примере](#текст-и-интерфејс) испод).
 - Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
   Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress
   апликације](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
@@ -131,9 +133,9 @@ documentation. After these you can find a section with some
 покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања
 ваших измена. У супротном, генерисање документације неће успети.
 
-The used linting has some built in rules which you can find in [the official
-repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Some important rules and customized ones are mentioned below.
+Провере користе нека уобичајена правила која можете пронаћи у [званичном
+репозиторију](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Нека важнија и прилагођена правила су излистана испод.
 
 - Дужина линије у изворној датотеци не би требало да прелази 120 карактера
   за стандардан текст. Обратите пажњу да убаците ред пре постизања ове
@@ -142,38 +144,37 @@ Some important rules and customized ones are mentioned below.
   везе.
 - Више узастопних празних редова није дозвољено.
 - Празни редови пре и после наслова и блокова кôда су обавезни.
-- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
-  language tag, e.g. `ruby` or `sh`. If no language is applicable, use
-  `plain`.
-- Use `-` for bullet point lists (unordered lists) like this one.
-- To easily distinguish between **bold** and _italics_, use `_` around the
-  text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`).
-- Multiple headings with the same content are not allowed.
-- Each document must have exactly one `h1` heading as title.
-- Resolution of manual full page screenshots for _mobile view_ is 400x867
-  pixels.
-- Resolution of manual full page screenshots for _desktop view_ is 1920x1080
-  pixels.
+- Користите `` ``` `` (машинске апострофе) за ограничавање блокова кôда,
+  пратећи их са ознаком језика, нпр. `ruby` или `sh`. Уколико у питању није
+  конкретан језик, користите `plain`.
+- Користите `-` за листу са тачкама (неуређене листе) као што је ова.
+- За јасну разлику између **подебљаног** и текста у _курзиву_, користите `_`
+  око текста у курзиву и `**` за подебљавање (нпр. `_курзив_` односно
+  `**подебљано**`).
+- Вишеструки наслови са идентичним садржајем нису дозвољени.
+- Сваки документ мора имати само једно `h1` заглавље као наслов.
+- Резолуција снимака пуног екрана за _мобилни приказ_ je 400x867 пиксела.
+- Резолуција снимака пуног екрана за _основни приказ_ je 1920x1080 пиксела.
 
-### Examples
+### Примери
 
-#### Text and UI
+#### Текст и интерфејс
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | \`Sign in\`                     |
-| Fields and UI elements    | **Name**                      | \*\*Name\*\*                    |
-| Locations/paths           | _Settings > Channels > Email_ | \_Settings > Channels > Email\_ |
-| Keyboard shortcuts        | [[x]]                         | \[\[x\]\]                       |
-| Add button                | ::+::                         | \:\:\+\:\:                      |
-| Delete button             | ::x::                         | \:\:x\:\:                       |
-| Action menu               | ::a::                         | \:\:a\:\:                       |
+| Тип                  | Истицање у документацији      | Markdown синтакса               |
+|----------------------|-------------------------------|---------------------------------|
+| Означени дугмићи     | `Пријава`                     | \`Пријава\`                     |
+| Поља и елементи      | **Назив**                     | \*\*Назив\*\*                   |
+| Путања/локације      | _Подешавања > Канали > Имејл_ | \_Подешавања > Канали > Имејл\_ |
+| Пречице на тастатури | [[x]]                         | \[\[x\]\]                       |
+| Дугме за додавање    | ::+::                         | \:\:\+\:\:                      |
+| Дугме за брисање     | ::x::                         | \:\:\x\:\:                      |
+| Дугме за мени радњи  | ::a::                         | \:\:\a\:\:                      |
 
 #### Структура наслова
 
-Every documentation file must include exactly one title on top level (like
-`# Title`). Levels below should always contain at least two sections. If
-only one section exists, consider merging it with the higher-level content.
+Свака страна документације мора да поседује наслов највишег нивоа (нпр. `#
+Наслов`). Нижи нивои треба да садрже најмање два одељка. Уколико постоји
+само један одељак, размотрите да га припојите садржају вишег нивоа.
 
 Пример:
 
@@ -187,7 +188,7 @@ only one section exists, consider merging it with the higher-level content.
 
 `## Одељак 2`
 
-#### Section with Badge <Badge type="warning" text="custom text" />
+#### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
 Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке,
 погледајте <https://vitepress.dev/reference/default-theme-badge#usage>.
@@ -223,7 +224,7 @@ only one section exists, consider merging it with the higher-level content.
 
 ```md
 ::: tip
-This is a tip box.
+Ово је савет.
 :::
 ```
 
@@ -237,7 +238,7 @@ This is a tip box.
 
 ```md
 ::: warning
-This is a warning box.
+Ово је упозорење.
 :::
 ```
 
@@ -266,7 +267,7 @@ This is a warning box.
 ```md
 
 ::: details Box title shown in collapsed state
-This is the content shown in the expanded state.
+Овај садржај је приказан у проширеном стању.
 :::
 
 ```
@@ -292,37 +293,37 @@ This is the content shown in the expanded state.
 
 :::
 
-#### Highlighting with Boxes
+#### Наглашавање са кућицама
 
-To highlight different options or variants, clickable boxes can be used.
+За наглашавање различитих опција или варијанти, можете користити кућице.
 
 <VPDocFeatures />
 
-The definition of the content is done via frontmatter, see following example
-(reflects the boxes above):
+Садржај се дефинише путем frontmatter одељка у Markdown датотеци, видите
+следећи пример (односи се на кућице изнад):
 
 ```yml
 
 features:
   - icon: 🛠️
-    title: Simple and minimal, always
+    title: Увек једноставан и сведен
     details: Lorem ipsum...
     link: https://zammad.com
-    linkText: This is a link
+    linkText: Ово је линк
     target: _blank
   - icon:
       src: /assets/logo.svg
-    title: Another cool feature
+    title: Још једна „кул” функција
     details: Lorem ipsum...
     link: https://zammad.com
   - icon:
       dark: /assets/logo-flat-dark.svg
       light: /assets/logo-flat-light.svg
-    title: Another cool feature
+    title: Још једна „кул” функција
     details: Lorem ipsum...
     link: https://zammad.com
 
 ```
 
-To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
-rendered.
+За уметање унутар садржаја стране, једноставно унесите `<VPDocFeatures />` референцу где желите да се
+појави.

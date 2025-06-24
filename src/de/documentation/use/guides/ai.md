@@ -7,8 +7,8 @@ title: 'Zammad KI'
 
 ## Einführung
 
-Zammad is getting even smarter! We are expanding Zammad's AI capabilities to
-help you manage support tickets even more efficiently. ✨🚀
+Zammad wird jetzt noch intelligenter! Wir erweitern die KI-Fähigkeiten von
+Zammad, damit Sie Support-Tickets noch effizienter verwalten können. ✨🚀
 
 ::: info
 Die KI-Funktionen müssen von Ihrem Administrator konfiguriert und aktiviert werden. Wenn Sie sie nicht sehen können, sind sie nicht konfiguriert.
@@ -52,35 +52,36 @@ aktivieren Sie es wieder, indem Sie das Kontrollkästchen anklicken.
 
 ## Smart Editor
 
-The new AI-powered smart editor is designed to simplify and enhance your
-ticket response workflow. It helps you with text tools while you create an
-article.
+Der neue KI-gesteuerte smarte Editor wurde entwickelt, um Ihren Workflow bei
+der Beantwortung von Tickets zu vereinfachen und zu verbessern. Er hilft
+Ihnen mit Text-Tools, während Sie einen Artikel erstellen.
 
-To use any of the following features, you first have to select text you want
-to apply the changes to. After that, click the **Smart Editor** link at the
-bottom of the article creation and choose one of the following features,
-depending on what you want to perform.
+Um eine der folgenden Funktionen zu nutzen, müssen Sie zunächst den Text
+auswählen, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf
+den Link **Smart Editor** am unteren Rand der Artikelerstellung und wählen
+Sie eine der folgenden Funktionen, je nachdem, was Sie durchführen möchten.
 
-![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
+![Screenshot zeigt Zammads
+Smart-Editor-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 
 :::warning
 
-- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[Ctrl]] + [[z]].
-- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
-  individual cases due to the nature of neural networks.
+- Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind
+  können Sie die Rückgängig-Funktion verwenden, indem Sie [[Strg]] + [[z]] drücken.
+- Prüfen Sie die Antwort immer gegen. Obwohl die Funktion sorgfältig entwickelt wurde, kann es in Einzelfällen zu kleineren Fehlern kommen,
+  die in der Natur neuronaler Netze liegen.
 
 :::
 
-- **Improve writing**: Uses your text as a base and tries to improve it by
-  enhancing clarity, conciseness and structure as well as removing
-  misspellings and grammar issues.
-- **Fix spelling and grammar**: Just proofreads your text and automatically
-  removes spelling and grammar mistakes.
-- **Expand**: Expands your text while keeping your message. Useful if your
-  customer expects more than some bullet points as an answer. You can even
-  use it by providing only basic information (e.g. via bullet points) and
-  let the AI write the answer.
-- **Simplify**: Does the opposite of the expansion and shrinks your text
-  while keeping your message.
+- **Text verbessern**: Nimmt Ihren Text als Grundlage und versucht, ihn in
+  Richtung Klarheit, Prägnanz und Struktur zu verbessern sowie Rechtschreib-
+  und Grammatikfehler zu beseitigen.
+- **Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und
+  entfernt automatisch Rechtschreib- und Grammatikfehler.
+- **Erweitern**: Erweitert Ihren Text und behält dabei Ihre Botschaft
+  bei. Nützlich, wenn Ihr Kunde mehr als ein paar Aufzählungspunkte als
+  Antwort erwartet. Sie können diese Funktion sogar nutzen, indem Sie nur
+  grundlegende Informationen bereitstellen (z.B. als Stichworte) und die KI
+  die Antwort schreiben lassen.
+- **Vereinfachen**: Führt das Gegenteil von "Erweitern" aus und vereinfacht
+  und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt.

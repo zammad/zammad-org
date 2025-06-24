@@ -22,14 +22,14 @@ Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.
 
 :::tip
 
-This user documentation is embedded in a comprehensive documentation of Zammad. Because this section is intended for
-users, we applied some tweaks.
+Diese Benutzer-Dokumentation ist eingebettet in eine Gesamtdokumentation von Zammad. Da dieser Bereich für
+Benutzer gedacht ist, haben wir einige Anpassungen vorgenommen.
 
-- The search is limited to user content only. However, if you are an admin or an interested user, you can search for
-  content across the whole documentation. To do so, activate a page outside the user documentation (e.g.
-  [Introduction](/en/documentation/introduction)) or simply click on the **Zammad Hub** in the top left corner.
-- The left navigation sidebar only shows the structure of the user content. If you want to see the whole structure of
-  the documentation, the same as above applies.
+- Die Suche ist nur auf Benutzer-Inhalte beschränkt. Falls Sie ein Administrator oder ein interessierter Benutzer sind, können Sie nach
+  Inhalten in der gesamten Dokumentation suchen. Aktivieren Sie dazu eine Seite außerhalb der Benutzer-Dokumentation (z.B.
+  [Einführung](/de/documentation/introduction)) oder klicken Sie einfach auf **Zammad Hub** in der oberen linken Ecke.
+- Die linke Navigations-Seitenleiste zeigt nur die Struktur der Benutzer-Inhalte an. Wenn Sie die gesamte Struktur
+  der Dokumentation sehen wollen, gilt dasselbe wie oben.
 
 :::
 

@@ -48,7 +48,7 @@ Default values are tagged with a <Badge type="info" text="badge"/>, if present.
 : Defines the HTTP protocol of your instance. Possible values: `http` or
   `https`
 
-`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system.
+`ZAMMAD_FQDN` : Одређује квалификовани назив домена система.
 
 ## Network Options
 

@@ -380,11 +380,12 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer.
+Zammad speichert den Inhalt in einer Datenbank. Das unterstützte
+Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
+10 oder neuer.
 
-If no PostgreSQL server could be detected, it will be installed
-automatically during the package installation.
+Wenn kein PostgreSQL-Server gefunden werden konnte, wird er automatisch
+während der Paketinstallation installiert.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie

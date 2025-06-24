@@ -31,7 +31,7 @@ and how they look as complete JSON output.
 
 :::: tabs
 
-=== Ticket
+=== Тикет
 
 ::: details Show complete ticket structure <Badge type="danger" text="Huge content ahead!"/>
 
@@ -58,7 +58,7 @@ overview reasons.
 
 :::
 
-=== Organization
+=== Организација
 
 ::: details Show complete organization structure
 
@@ -87,7 +87,7 @@ section](#article-1) for details.
 
 Number of articles within the ticket.
 
-Example: `1`
+Пример: `1`
 
 ### `checklist`
 
@@ -139,7 +139,7 @@ Sender of the article (System, Agent, Customer)
 
 ID of the user that created the article.
 
-Examples: `1`, `2`
+Примери: `1`, `2`
 
 ### `create_article_type`
 
@@ -155,7 +155,7 @@ Information of first article of a ticket.
 
 ID of the type of the first article.
 
-Example: `5`
+Пример: `5`
 
 ### `created_at`
 
@@ -178,7 +178,7 @@ section](#user) for more information.
 
 ID of user who created the ticket.
 
-Example: `3`
+Пример: `3`
 
 ### `customer`
 
@@ -189,7 +189,7 @@ section](#user) for more information.
 
 ID of customer who created the ticket.
 
-Example: `8`
+Пример: `8`
 
 ### `escalation_at` <Badge type="info" text="SLA"/>
 
@@ -232,7 +232,7 @@ section](#group-1) for more information.
 
 ID of the current group
 
-Example: `1`
+Пример: `1`
 
 ### `id`
 
@@ -275,11 +275,11 @@ Examples: `[3, 5]`, `[]`
 
 Note of ticket, only set via console or API.
 
-Example: `null`
+Пример: `null`
 
 ### `number`
 
-Ticket number.
+Број тикета.
 
 Examples: `1010138`, `202006231010138`
 
@@ -344,7 +344,7 @@ section](#ticket-priority) for more information.
 
 Priority ID of the ticket.
 
-Example: `2`
+Пример: `2`
 
 ### `state`
 
@@ -359,9 +359,9 @@ section](#ticket-state) for more information.
 
 ### `state_id`
 
-ID of current ticket state.
+ID актуелног стања тикета.
 
-Examples: `1`, `4`
+Примери: `1`, `4`
 
 ### `tags`
 
@@ -427,7 +427,7 @@ section](#user) for more information.
 
 ID of user who updated the ticket.
 
-Examples: `1`, `3`
+Примери: `1`, `3`
 
 ## Приоритет тикета
 
@@ -450,7 +450,7 @@ Example: `"2025-02-03T14:50:20.724Z"`
 
 ID of the user who created the priority.
 
-Example: `1`
+Пример: `1`
 
 ### `default_create`
 
@@ -460,13 +460,13 @@ Values: `false`, `true`
 
 ### `id`
 
-ID of the priority.
+ID приоритета.
 
-Example: `3`
+Пример: `3`
 
 ### `name`
 
-Name of the priority.
+Назив приоритета.
 
 Example: `"3 high"`
 
@@ -474,7 +474,7 @@ Example: `"3 high"`
 
 Note for priority that has been set via console or API.
 
-Example: `"null"`
+Пример: `"null"`
 
 ### `ui_color`
 
@@ -498,7 +498,7 @@ Example: `"2025-02-03T14:50:20.724Z"`
 
 ID of the user who performed the last update.
 
-Example: `1`
+Пример: `1`
 
 ## Стање тикета
 
@@ -520,7 +520,7 @@ Example: `"2025-02-03T14:50:20.694Z"`
 
 ID of user who created the state.
 
-Example: `1`
+Пример: `1`
 
 ### `default_create`
 
@@ -538,7 +538,7 @@ Values: `false`, `true`
 
 ID of the state.
 
-Example: `7`
+Пример: `7`
 
 ### `ignore_escalation`
 
@@ -548,7 +548,7 @@ Values: `false`, `true`
 
 ### `name`
 
-Name of the state.
+Назив стања.
 
 Example: `"pending close"`
 
@@ -573,7 +573,7 @@ Examples: `null`, `4`
 
 Note that has been set via console or API.
 
-Example: `"null"`
+Пример: `"null"`
 
 ### `state_type`
 
@@ -589,7 +589,7 @@ Contains all available information of the states type
 
 ID of the state type.
 
-Example: `4`
+Пример: `4`
 
 ### `updated_at`
 
@@ -601,7 +601,7 @@ Example: `"2025-02-03T14:50:20.694Z"`
 
 ID of user who performed the last update of the state.
 
-Example: `1`
+Пример: `1`
 
 ## Чланак
 
@@ -638,7 +638,7 @@ Example: `"2025-02-22T03:47:59.290Z"`
 
 ID of user who created the article.
 
-Example: `10`
+Пример: `10`
 
 ### `detected_language`
 
@@ -662,13 +662,13 @@ Examples: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
 
 Internal ID of the article.
 
-Example: `16`
+Пример: `16`
 
 ### `in_reply_to`
 
 "In-Reply-To" header from email, if applicable.
 
-Example: `null`
+Пример: `null`
 
 ### `internal`
 
@@ -680,32 +680,32 @@ Values: `false`, `true`
 
 Message ID of email, if applicable.
 
-Example: `null`
+Пример: `null`
 
 ### `origin_by_id`
 
 ID of user (or ID of original creator if created on behalf of another user)
 who created the article.
 
-Example: `null`
+Пример: `null`
 
 ### `preferences`
 
 Internal preferences, may be empty.
 
-Example: `{}`
+Пример: `{}`
 
 ### `reply_to`
 
 Contains the "Reply-To" header, if applicable.
 
-Example: `null`
+Пример: `null`
 
 ### `sender_id`
 
 ID of the user who sent/created the article.
 
-Example: `2`
+Пример: `2`
 
 ### `subject`
 
@@ -717,7 +717,7 @@ Example: `"My amazing subject"`
 
 ID of the ticket, the article belongs to.
 
-Example: `9`
+Пример: `9`
 
 ### `to`
 
@@ -729,7 +729,7 @@ Examples: `support@example.com`,`"Support"`, `null`
 
 ID of type of article (e.g. phone, email, web).
 
-Example: `1`
+Пример: `1`
 
 ### `updated_at`
 
@@ -741,7 +741,7 @@ Timestamp of last update of article.
 
 ID of the user who updated the article.
 
-Example: `10`
+Пример: `10`
 
 ## Корисник
 
@@ -779,11 +779,11 @@ Example: `"2025-02-22T12:47:56.460Z"`
 
 ID of user who created the user.
 
-Example: `1`
+Пример: `1`
 
 ### `department`
 
-Name of department.
+Назив одељења.
 
 Examples: `""`, `"IT"`
 
@@ -809,7 +809,7 @@ Examples: `""`, `"John"`
 
 Internal ID of the user.
 
-Example: `8`
+Пример: `8`
 
 ### `last_login`
 
@@ -856,7 +856,7 @@ Details of the organization, the user is member of. Have a look at the
 
 ID of the organization, the user is member of.
 
-Example: `3`
+Пример: `3`
 
 ### `out_of_office`
 
@@ -913,7 +913,7 @@ Details of the preferences of the user, may contain `notification_config`,
 
 Array with role IDs which are assigned to the user.
 
-Example: `[1, 2]`
+Пример: `[1, 2]`
 
 ### `street`
 
@@ -931,7 +931,7 @@ Example: `"2025-02-25T00:27:52.308Z"`
 
 ID of user who updated this user.
 
-Example: `3`
+Пример: `3`
 
 ### `verified`
 
@@ -988,11 +988,11 @@ section](#user) for more information.
 
 ID of the user who created the organization.
 
-Example: `1`
+Пример: `1`
 
 ### `domain`
 
-Domain of the organization.
+Домен организације.
 
 Examples: `"null"`, `"example.com"`
 
@@ -1006,7 +1006,7 @@ Values: `false`, `true`
 
 Internal ID of the organization.
 
-Example: `1`
+Пример: `1`
 
 ### `members`
 
@@ -1058,7 +1058,7 @@ section](#user) for more information.
 
 ID of user who updated the organization.
 
-Example: `1`
+Пример: `1`
 
 ### `vip`
 
@@ -1092,7 +1092,7 @@ Example: `"2025-02-24T23:55:06.980Z"`
 
 ID of the user who created the group.
 
-Example: `1`
+Пример: `1`
 
 ### `email_address`
 
@@ -1108,7 +1108,7 @@ Details about the email address of the group.
 
 ID of the email address of the group.
 
-Example: `3`
+Пример: `3`
 
 ### `follow_up_assignment`
 
@@ -1126,11 +1126,11 @@ Values: `"yes"`, `"no"`
 
 Internal ID of the group.
 
-Example: `1`
+Пример: `1`
 
 ### `name`
 
-Name of the group.
+Назив групе.
 
 Examples: `"Support"`, `"IT"`
 
@@ -1138,7 +1138,7 @@ Examples: `"Support"`, `"IT"`
 
 Note for the group object.
 
-Example: `null`
+Пример: `null`
 
 ### `signature`
 
@@ -1154,7 +1154,7 @@ Details of the signature of the group.
 
 Internal ID of the signature.
 
-Example: `1`
+Пример: `1`
 
 ### `updated_at`
 
@@ -1166,7 +1166,7 @@ Example: `"2025-02-24T23:55:06.980Z"`
 
 ID of the user who updated the group.
 
-Example: `3`
+Пример: `3`
 
 ## CTI Log
 
@@ -1176,13 +1176,13 @@ The following index contains below mentioned information: `*_cti_log`
 
 Unique ID of the call.
 
-Example: `6`
+Пример: `6`
 
 ### `comment`
 
 Optional comment.
 
-Example: `""`
+Пример: `""`
 
 ### `created_at`
 
@@ -1206,13 +1206,13 @@ Values: `true`, `false`
 
 Call duration time in seconds.
 
-Example: `27`
+Пример: `27`
 
 ### `duration_waiting_time`
 
 Waiting time in seconds until call got answered.
 
-Example: `77`
+Пример: `77`
 
 ### `end_at`
 
@@ -1242,7 +1242,7 @@ Example: `+49 171 1234567890`
 
 Internal ID of log entry.
 
-Example: `8`
+Пример: `8`
 
 ### `initialized_at`
 
@@ -1252,7 +1252,7 @@ Example: `"2025-02-25T08:47:56.753Z"`
 
 ### `preferences`
 
-Details of preferences, internal information.
+Детаљи личних подешавања, интерне информације.
 
 ::: details Example
 
@@ -1320,7 +1320,7 @@ Details of the chat topic.
 
 ID of the chat topic.
 
-Example: `1`
+Пример: `1`
 
 ### `created_at`
 
@@ -1336,9 +1336,9 @@ Value: `null`
 
 ### `id`
 
-ID of chat session.
+ID сесије ћаскања.
 
-Example: `1`
+Пример: `1`
 
 ### `messages`
 
@@ -1376,7 +1376,7 @@ Example: `92f2909631f1ad5ff4d5d1e046952be8`
 
 Current state of chat session.
 
-Example: `closed`
+Пример: `closed`
 
 ### `tags`
 
@@ -1410,4 +1410,4 @@ Details of chat agent. See [user section](#user) for more information.
 
 ID of the agent of the chat.
 
-Example: `3`
+Пример: `3`
