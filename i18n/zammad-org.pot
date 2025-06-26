@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-26 09:41+0200\n"
+"POT-Creation-Date: 2025-06-26 15:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6716,14 +6716,14 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:377
-#: src/en/reference/docker-env-vars.md:97
+#: src/en/reference/docker-env-vars.md:103
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:377
-#: src/en/reference/docker-env-vars.md:123
+#: src/en/reference/docker-env-vars.md:129
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
 msgid "Nginx"
@@ -10393,7 +10393,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:31
+#: src/en/reference/docker-env-vars.md:30
+#, markdown-text
+msgid "`ZAMMAD_HTTP_TYPE` : Set the http type (http/https) for your instance."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:33
+#, markdown-text
+msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:37
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -10403,7 +10415,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:34
+#: src/en/reference/docker-env-vars.md:40
 #, markdown-text, no-wrap
 msgid ""
 "  In case you applied [docker hardware resource "
@@ -10412,7 +10424,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:38
+#: src/en/reference/docker-env-vars.md:44
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
@@ -10422,9 +10434,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:41
-#: src/en/reference/docker-env-vars.md:48
-#: src/en/reference/docker-env-vars.md:55
+#: src/en/reference/docker-env-vars.md:47
+#: src/en/reference/docker-env-vars.md:54
+#: src/en/reference/docker-env-vars.md:61
 #, markdown-text, no-wrap
 msgid ""
 "  In case you applied [docker hardware resource "
@@ -10433,7 +10445,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:45
+#: src/en/reference/docker-env-vars.md:51
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -10443,7 +10455,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:52
+#: src/en/reference/docker-env-vars.md:58
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -10453,7 +10465,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:58
+#: src/en/reference/docker-env-vars.md:64
 #, markdown-text, no-wrap
 msgid ""
 "`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"['127.0.0.1', "
@@ -10462,7 +10474,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:61
+#: src/en/reference/docker-env-vars.md:67
 #, markdown-text, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
@@ -10470,7 +10482,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:65
+#: src/en/reference/docker-env-vars.md:71
 #, markdown-text, no-wrap
 msgid ""
 "`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
@@ -10480,13 +10492,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-env-vars.md:66
+#: src/en/reference/docker-env-vars.md:72
 #, markdown-text, no-wrap
 msgid "Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:71
+#: src/en/reference/docker-env-vars.md:77
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
@@ -10495,7 +10507,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:74
+#: src/en/reference/docker-env-vars.md:80
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
@@ -10503,7 +10515,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:77
+#: src/en/reference/docker-env-vars.md:83
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
@@ -10511,7 +10523,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:80
+#: src/en/reference/docker-env-vars.md:86
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
@@ -10519,7 +10531,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:84
+#: src/en/reference/docker-env-vars.md:90
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
@@ -10529,26 +10541,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:88
+#: src/en/reference/docker-env-vars.md:94
 #, markdown-text, no-wrap
 msgid ""
-"`ELASTICSEARCH_REINDEX` <Badge type=\"info\" text=\"true\"/>\n"
-": By default the docker-compose will always re-index upon a restart. On "
-"big\n"
-"  installations, this may be troublesome.\n"
-msgstr ""
-
-#. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:88
-#, no-wrap
-msgid ""
-"  Disabling this setting requires you to re-index your search index "
-"manually\n"
-"  whenever you upgrade to a new Zammad version!\n"
+"`ELASTICSEARCH_REINDEX`\n"
+": The searchindex automatically gets rebuilt when no index can be "
+"detected. If you need to rebuild the searchindex\n"
+"  manually, either set this variable to `true` or run the reindex command "
+"via docker manually.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:96
+#: src/en/reference/docker-env-vars.md:98
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
@@ -10558,7 +10562,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:101
+#: src/en/reference/docker-env-vars.md:102
+#, markdown-text, no-wrap
+msgid ""
+"`ELASTICSEARCH_HEAP_SIZE` <Badge type=\"info\" text=\"1G\"/>\n"
+": Set the available memory for Elasticsearch. If you face issues with ES and "
+"its performance, you should increase this\n"
+"  value to a reasonable size.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:107
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
@@ -10567,7 +10581,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:104
+#: src/en/reference/docker-env-vars.md:110
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
@@ -10575,7 +10589,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:107
+#: src/en/reference/docker-env-vars.md:113
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
@@ -10583,23 +10597,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:110
+#: src/en/reference/docker-env-vars.md:116
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
-": The password of Zammads database user.\n"
+": The password of Zammad's database user.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:113
+#: src/en/reference/docker-env-vars.md:119
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
-": Zammads database to use.\n"
+": Zammad's database to use.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:116
+#: src/en/reference/docker-env-vars.md:122
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
@@ -10607,7 +10621,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:119
+#: src/en/reference/docker-env-vars.md:125
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
@@ -10615,13 +10629,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:119
+#: src/en/reference/docker-env-vars.md:125
 #, no-wrap
 msgid "  On dedicated database servers, this setting might be troublesome.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:129
+#: src/en/reference/docker-env-vars.md:135
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
@@ -10633,7 +10647,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:132
+#: src/en/reference/docker-env-vars.md:138
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
@@ -10641,7 +10655,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:136
+#: src/en/reference/docker-env-vars.md:142
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
@@ -10651,7 +10665,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:141
+#: src/en/reference/docker-env-vars.md:147
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
@@ -10663,7 +10677,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:144
+#: src/en/reference/docker-env-vars.md:150
+#, markdown-text
+msgid ""
+"`NGINX_CLIENT_MAX_BODY_SIZE` : Define the maximum size of data that a client "
+"can send to the server."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-env-vars.md:153
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" "
@@ -10672,23 +10694,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:147
+#: src/en/reference/docker-env-vars.md:156
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
-": Port of Zammads rails server.\n"
+": Port of Zammad's rails server.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:150
+#: src/en/reference/docker-env-vars.md:159
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
-": Host name of Zammads websocket server.\n"
+": Host name of Zammad's websocket server.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:152
+#: src/en/reference/docker-env-vars.md:161
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"

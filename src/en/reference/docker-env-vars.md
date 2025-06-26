@@ -25,6 +25,12 @@ picked up by Docker-Compose automatically and not overwritten during updates.
   instance. Autowizard JSON is out of scope of this documentation, however this
   example file should help.
 
+`ZAMMAD_HTTP_TYPE`
+: Set the http type (http/https) for your instance.
+
+`ZAMMAD_FQDN`
+: Set the FQDN for your instance.
+
 `ZAMMAD_WEB_CONCURRENCY`
 : Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:
   [Configuration via Environment Variables](env-vars).
@@ -82,17 +88,17 @@ Elasticsearch. Please note that we strongly advise against doing so.
 : With this name space all Zammad related indexes will be created. Change this
   if you're using external clusters.
 
-`ELASTICSEARCH_REINDEX` <Badge type="info" text="true"/>
-: By default the docker-compose will always re-index upon a restart. On big
-  installations, this may be troublesome.
-  :::warning
-  Disabling this setting requires you to re-index your search index manually
-  whenever you upgrade to a new Zammad version!
-  :::
+`ELASTICSEARCH_REINDEX`
+: The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex
+  manually, either set this variable to `true` or run the reindex command via docker manually.
 
 `ELASTICSEARCH_SSL_VERIFY` <Badge type="info" text="true"/>
 : Allows you to let the compose scripts ignore self signed SSL certificates
   for your Elasticsearch installation if needed.
+
+`ELASTICSEARCH_HEAP_SIZE` <Badge type="info" text="1G"/>
+: Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this
+  value to a reasonable size.
 
 ## PostgreSQL
 
@@ -106,10 +112,10 @@ Elasticsearch. Please note that we strongly advise against doing so.
 : The database user for Zammad.
 
 `POSTGRESQL_PASS` <Badge type="info" text="zammad"/>
-: The password of Zammads database user.
+: The password of Zammad's database user.
 
 `POSTGRESQL_DB` <Badge type="info" text="zammad_production"/>
-: Zammads database to use.
+: Zammad's database to use.
 
 `POSTGRESQL_OPTIONS` <Badge type="info" text="?pool=50"/>
 : Additional postgresql parameters to be appended to the database URI.
@@ -139,14 +145,17 @@ Elasticsearch. Please note that we strongly advise against doing so.
   are using another proxy in front of nginx) you might want to change this.
   You can set the correct scheme `http` or `https` if needed.
 
+`NGINX_CLIENT_MAX_BODY_SIZE`
+: Define the maximum size of data that a client can send to the server.
+
 `ZAMMAD_RAILSSERVER_HOST` <Badge type="info" text="zammad-railsserver"/>
 : Host name of the rails server container.
 
 `ZAMMAD_RAILSSERVER_PORT` <Badge type="info" text="3000"/>
-: Port of Zammads rails server.
+: Port of Zammad's rails server.
 
 `ZAMMAD_WEBSOCKET_HOST` <Badge type="info" text="zammad-websocket"/>
-: Host name of Zammads websocket server.
+: Host name of Zammad's websocket server.
 
 `ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : Port of Zammad's websocket server.
