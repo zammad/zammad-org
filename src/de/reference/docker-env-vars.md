@@ -28,20 +28,32 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
   Beispiel-Datei sollte helfen.
 
 `ZAMMAD_WEB_CONCURRENCY`
-: Erlaubt das Erzeugen von `n` Workern, um mehrere gleichzeitige Verbindungen für
-  Zammads Web-UI zu ermöglichen.
+: Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:
+  [Configuration via Environment Variables](env-vars).
 
-`ZAMMAD_SESSION_JOBS_CONCURRENT`
-: Erlaubt das Erzeugen von `n` Session-Workern, um Zammads
-  Background-Worker zu entlasten.
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-railsserver’s CPU setting
+  should match the value from this variable.
+
+`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`
+: Allows spawning `n` independent session jobs workers to release pressure from Zammad’s background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
-: Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um
-  Zammads Background-Worker zu entlasten.
+: Allows spawning `1` independent scheduled job worker to reduce pressure from Zammad's background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: Erlaubt das Erzeugen von n Workern für verzögerten Aufgaben, um Zammads
-  Background-Worker zu entlasten.
+: Allows spawning `n` delayed job workers to reduce pressure from Zammad's background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="info" text="['127.0.0.1', '::1']"/>
 : Standardmäßig vertraut Zammad nur localhost-Proxies.

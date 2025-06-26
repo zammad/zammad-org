@@ -29,6 +29,8 @@ The following scenarios are supported and explained further below:
   - Add an host port to Elasticsearch
 - [Additional scenarios](#additional-scenarios)
   - Disable the backup service
+  - Add an Ollama instance to the stack
+  - Limit hardware resources of the stack
 
 You can find the files in the [Zammad-Docker-Compose
 repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
@@ -177,6 +179,32 @@ built in backup service in the stack to save resources.
 
 You can do so by just using the scenario file
 `scenarios/disable-backup-service.yml` for deployment.
+
+### Add Ollama
+
+You can spin up an additional [Ollama](https://ollama.com/) container to use
+Zammad's AI features on your machine.
+
+::: info
+This is intended for development or testing purposes as running a productive LLM stack is complex.
+:::
+
+To deploy an Ollama container inside the Zammad stack, use the scenario file
+`scenarios/add-ollama.yml`. This creates an Ollama container which
+automatically pulls and serves ``Llama3.2`` to be ready to use/test AI
+features out of the box.
+
+To use it in Zammad, add the service name and port (`http://ollama:11434`)
+to the provider configuration.
+
+### Limit Resources
+
+If you want to limit the hardware resources the Zammad stack is allowed to
+use, use the `scenarios/apply-resource-limits.yml` scenario. Default values
+for CPU and memory usage for each container in the stack are applied
+then. You can find these default values in the ``.env.dist`` file. Provide
+the changed variables you want to use as environment variables and deploy
+the stack.
 
 ### Other Use Cases
 

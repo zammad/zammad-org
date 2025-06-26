@@ -27,20 +27,32 @@ documentation](/en/reference/env-vars).
   example file should help.
 
 `ZAMMAD_WEB_CONCURRENCY`
-: Allows spawning `n` workers to allow more simultaneous connections for
-  Zammad's  web UI.
+: Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:
+  [Configuration via Environment Variables](env-vars).
 
-`ZAMMAD_SESSION_JOBS_CONCURRENT`
-: Allows spawning `n` session job workers to release pressure from Zammad's
-  background worker.
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-railsserver’s CPU setting
+  should match the value from this variable.
+
+`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`
+: Allows spawning `n` independent session jobs workers to release pressure from Zammad’s background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
-: Allows spawning `1` independent scheduled job worker to reduce pressure
-  from Zammad's background worker.
+: Allows spawning `1` independent scheduled job worker to reduce pressure from Zammad's background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: Allows spawning n delayed job workers to reduce pressure from Zammad's
-  background worker.
+: Allows spawning `n` delayed job workers to reduce pressure from Zammad's background worker. See also:
+  [Configuration via Environment Variables](env-vars).
+
+  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
+  should match the sum of all worker settings variables.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="info" text="['127.0.0.1', '::1']"/>
 : By default Zammad trusts localhost proxies only.
