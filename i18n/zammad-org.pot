@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-24 08:57+0200\n"
+"POT-Creation-Date: 2025-06-26 07:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -449,6 +449,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/guides/search.md:8
+#: src/en/get-started/installation/package.md:64
+#: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
 msgid "Basics"
 msgstr ""
@@ -6261,13 +6263,6 @@ msgid ""
 "sudo yum install wget epel-release\n"
 "```\n"
 "\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/get-started/installation/package.md:64
-#: src/en/tutorials/backup-restore.md:33
-#, markdown-text, no-wrap
-msgid "Quick Start"
 msgstr ""
 
 #. type: Title ###
@@ -22397,11 +22392,10 @@ msgstr ""
 #: src/en/tutorials/docker-restore.md:21
 #, markdown-text
 msgid ""
-"If you're familiar with docker, the Quick Start section below includes the "
-"information you'll need. The [docker file "
-"handling](/en/tutorials/docker-file-handling) page covers some examples "
-"about how to handle the backup files and to copy it into a docker volume to "
-"restore it."
+"If you're familiar with docker, the sections below include the information "
+"you'll need. The [docker file handling](/en/tutorials/docker-file-handling) "
+"page covers some examples about how to handle the backup files and to copy "
+"it into a docker volume to restore it."
 msgstr ""
 
 #. type: Title ##

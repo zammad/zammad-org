@@ -33,7 +33,7 @@ Es gibt einige Einschränkungen, die Sie kennen sollten:
   den Standard-Skripten von Zammad wieder her. Dies könnte Probleme
   verursachen.
 
-## Schnellstart
+## Grundlagen
 
 Die Skripte befinden sich in `/opt/zammad/contrib/backup`. Die folgenden
 Dateien sind relevant:

@@ -15,7 +15,7 @@ that the built-in backup and restore mechanism of Zammad is not activated.
 
 The rest of this page describes the built-in backup and restore mechanism of Zammad's docker compose stack.
 
-If you're familiar with docker, the Quick Start section below includes the information you'll need. The
+If you're familiar with docker, the sections below include the information you'll need. The
 [docker file handling](/en/tutorials/docker-file-handling) page covers some examples about how to handle the
 backup files and to copy it into a docker volume to restore it.
 

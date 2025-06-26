@@ -30,7 +30,7 @@ There are some limitations you should know:
 - Do not restore backup files from custom scripts with the provided scripts by
   Zammad. This might cause problems.
 
-## Quick Start
+## Basics
 
 The scripts are located in `/opt/zammad/contrib/backup`. The following files
 are relevant:

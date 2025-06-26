@@ -61,7 +61,7 @@ sudo yum install wget epel-release
 :::
 ::::
 
-## Quick Start
+## Basics
 
 ### Ensure Correct Locale
 
