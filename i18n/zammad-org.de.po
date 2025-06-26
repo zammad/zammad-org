@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-16 12:25+0200\n"
-"PO-Revision-Date: 2025-06-18 07:00+0000\n"
+"POT-Creation-Date: 2025-06-26 07:18+0200\n"
+"PO-Revision-Date: 2025-06-26 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -472,6 +472,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/guides/search.md:8
+#: src/en/get-started/installation/package.md:64
+#: src/en/tutorials/backup-restore.md:33
 #, no-wrap
 msgid "Basics"
 msgstr "Grundlagen"
@@ -7140,13 +7142,6 @@ msgstr ""
 "```\n"
 "\n"
 
-#. type: Title ##
-#: src/en/get-started/installation/package.md:64
-#: src/en/tutorials/backup-restore.md:33
-#, no-wrap
-msgid "Quick Start"
-msgstr "Schnellstart"
-
 #. type: Title ###
 #: src/en/get-started/installation/package.md:66
 #, no-wrap
@@ -7766,7 +7761,7 @@ msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
 #. type: Title ##
 #: src/en/get-started/installation/package.md:359
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:174
+#: src/en/tutorials/install-elasticsearch.md:172
 #, no-wrap
 msgid "Next Steps"
 msgstr "Nächste Schritte"
@@ -25405,9 +25400,7 @@ msgstr ""
 #: src/en/tutorials/docker-file-handling.md:19
 #, no-wrap
 msgid "docker compose run --rm zammad-backup bash -c \"mkdir /var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v\"\n"
-msgstr ""
-"docker compose run --rm zammad-backup bash -c \"mkdir /var/tmp/zammad/"
-"restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v\"\n"
+msgstr "docker compose run --rm zammad-backup bash -c \"mkdir /var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v\"\n"
 
 #. type: Plain text
 #: src/en/tutorials/docker-file-handling.md:24
@@ -25426,9 +25419,7 @@ msgstr "Wiederherstellen von einer anderen Installation"
 #: src/en/tutorials/docker-file-handling.md:28
 #, no-wrap
 msgid "**Requires:** console access to the host system and the zammad-backup container.\n"
-msgstr ""
-"**Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zammad-"
-"backup.\n"
+msgstr "**Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zammad-backup.\n"
 
 #. type: Plain text
 #: src/en/tutorials/docker-file-handling.md:31
@@ -25444,9 +25435,7 @@ msgstr ""
 #: src/en/tutorials/docker-file-handling.md:32
 #, no-wrap
 msgid "docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/\n"
-msgstr ""
-"docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/"
-"directory/\n"
+msgstr "docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/\n"
 
 #. type: Plain text
 #: src/en/tutorials/docker-file-handling.md:38
@@ -25476,9 +25465,7 @@ msgstr ""
 #: src/en/tutorials/docker-file-handling.md:42
 #, no-wrap
 msgid "docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
-msgstr ""
-"docker compose run --rm -v /path/to/your/host/directory:/restore zammad-"
-"backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
+msgstr "docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup bash -c \"cp -rv /restore /var/tmp/zammad/\"\n"
 
 #. type: Title ##
 #: src/en/tutorials/docker-file-handling.md:48
@@ -25490,9 +25477,7 @@ msgstr "Verwendung einer Web-GUI"
 #: src/en/tutorials/docker-file-handling.md:51
 #, no-wrap
 msgid "**Requires:** console access to the host system or Portainer access with the permission to deploy a container.\n"
-msgstr ""
-"**Erfordert:** Konsolenzugriff auf das Hostsystem oder Portainer-Zugriff mit "
-"der Berechtigung, einen Container zu starten.\n"
+msgstr "**Erfordert:** Konsolenzugriff auf das Hostsystem oder Portainer-Zugriff mit der Berechtigung, einen Container zu starten.\n"
 
 #. type: Plain text
 #: src/en/tutorials/docker-file-handling.md:53
@@ -25528,13 +25513,9 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Die folgenden Schritte beschreiben den Wiederherstellungsprozess durch "
-"Hochladen von Dateien. Um Ihre Sicherungsdateien auf die gleiche Weise aus "
-"einem anderen\n"
-"Stack zu bekommen, können Sie die Schritte 1-4 unten ausführen und einfach "
-"das Volume **zammad-backup** Ihres _alten_ Stacks mounten. Dann können Sie\n"
-"die Dateien herunterladen, den Filebrowser-Container stoppen, entfernen und "
-"ihn erneut mit den folgenden Schritten ausführen.\n"
+"Die folgenden Schritte beschreiben den Wiederherstellungsprozess durch Hochladen von Dateien. Um Ihre Sicherungsdateien auf die gleiche Weise aus einem anderen\n"
+"Stack zu bekommen, können Sie die Schritte 1-4 unten ausführen und einfach das Volume **zammad-backup** Ihres _alten_ Stacks mounten. Dann können Sie\n"
+"die Dateien herunterladen, den Filebrowser-Container stoppen, entfernen und ihn erneut mit den folgenden Schritten ausführen.\n"
 "\n"
 
 #. type: Bullet: '1. '
@@ -25579,27 +25560,22 @@ msgstr ""
 "   einen Port an, unter dem Sie auf die Web-UI zugreifen möchten:\n"
 "\n"
 "   ```sh\n"
-"   docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 "
-"filebrowser/filebrowser\n"
+"   docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 filebrowser/filebrowser\n"
 "   ```\n"
 "\n"
 "   === Via Portainer\n"
 "\n"
-"   In Ihrer Portainer Web UI gehen Sie auf **Containers** im linken Menü "
-"und\n"
+"   In Ihrer Portainer Web UI gehen Sie auf **Containers** im linken Menü und\n"
 "   klicken Sie auf die Schaltfläche **Add container**.\n"
 "\n"
 "   Fügen Sie die folgenden Informationen hinzu:\n"
 "\n"
 "   - Name: Geben Sie einen Namen ein, der noch nicht verwendet wird.\n"
 "   - Image: `filebrowser/filebrowser`\n"
-"   - Map additional port: Wählen Sie einen Port und ordnen Sie ihn dem Port "
-"`80` des Container zu.\n"
+"   - Map additional port: Wählen Sie einen Port und ordnen Sie ihn dem Port `80` des Container zu.\n"
 "   - Advanced container settings:\n"
-"     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche **"
-"map additional volume**.\n"
-"     - Geben Sie im Container-Abschnitt `/srv` ein und wählen Sie das "
-"Volume, das `zammad-backup` enthält.\n"
+"     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche **map additional volume**.\n"
+"     - Geben Sie im Container-Abschnitt `/srv` ein und wählen Sie das Volume, das `zammad-backup` enthält.\n"
 "   - Klicken Sie schließlich auf **Deploy the container**.\n"
 "\n"
 
@@ -25689,7 +25665,7 @@ msgstr ""
 "dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben "
 "werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack "
 "wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in "
-"Erwägung ziehen, das Szenario [Backup-Dienst deaktivieren](de/reference/"
+"Erwägung ziehen, das Szenario [Backup-Dienst deaktivieren](/de/reference/"
 "docker-compose-scenarios) zu verwenden, damit der integrierte Backup- und "
 "Restore-Prozess von Zammad nicht aktiviert wird."
 
@@ -25704,11 +25680,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/docker-restore.md:21
+#, fuzzy
+#| msgid ""
+#| "If you're familiar with docker, the Quick Start section below includes "
+#| "the information you'll need. The [docker file handling](/en/tutorials/"
+#| "docker-file-handling) page covers some examples about how to handle the "
+#| "backup files and to copy it into a docker volume to restore it."
 msgid ""
-"If you're familiar with docker, the Quick Start section below includes the "
-"information you'll need. The [docker file handling](/en/tutorials/docker-"
-"file-handling) page covers some examples about how to handle the backup "
-"files and to copy it into a docker volume to restore it."
+"If you're familiar with docker, the sections below include the information "
+"you'll need. The [docker file handling](/en/tutorials/docker-file-handling) "
+"page covers some examples about how to handle the backup files and to copy "
+"it into a docker volume to restore it."
 msgstr ""
 "Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt Schnellstart "
 "unten die Informationen, die Sie benötigen. Die Seite [Docker Datei Handling]"
@@ -26321,13 +26303,13 @@ msgstr "Tutorials"
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:1
 #: src/en/tutorials/install-elasticsearch.md:6
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid "Install Elasticsearch 7"
 msgstr "Elasticsearch 7 installieren"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:14
+#: src/en/tutorials/install-elasticsearch.md:13
 msgid ""
 "Elasticsearch is technically not required to run Zammad, but _highly_ "
 "recommended."
@@ -26336,39 +26318,38 @@ msgstr ""
 "aber _dringend_ empfohlen."
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:20
+#: src/en/tutorials/install-elasticsearch.md:18
 msgid ""
-"Elasticsearch offers two versions. Currently, the versions 7 and 8 are "
-"maintained. For installation instructions, you should first and foremost "
-"follow [Elastic’s installation documentation](https://www.elastic.co/guide/"
-"en/elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-"
-"install-packages){target=_blank}.  Use the dropdown in the top left corner "
-"to choose which version you want to install."
+"Elasticsearch offers different versions. Currently, the versions 7 and 8 are "
+"supported by Zammad. For installation instructions, you should first and "
+"foremost follow [Elastic’s installation documentation](https://"
+"www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html)"
+"{target=_blank}.  Use the dropdown in the top left corner to choose which "
+"version you want to install."
 msgstr ""
-"Elasticsearch bietet zwei Versionen an. Derzeit werden die Versionen 7 und 8 "
-"gepflegt. Für die Installationsanweisungen sollten Sie in erster Linie die "
-"[Dokumentation von Elasticsearch](https://www.elastic.co/guide/en/"
-"elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-"
-"install-packages){target=_blank} beachten.  Verwenden Sie das Dropdown-Menü "
-"in der oberen linken Ecke, um die Version auszuwählen, die Sie installieren "
-"möchten."
+"Elasticsearch bietet verschiedene Versionen an. Derzeit werden die Versionen "
+"7 und 8 von Zammad unterstützt. Für die Installationsanweisungen sollten Sie "
+"in erster Linie [Elastics Installation-Dokumentation](https://www.elastic.co/"
+"guide/en/elasticsearch/reference/8.x/setup.html){target=_blank} befolgen. "
+"Verwenden Sie das Dropdown-Menü in der oberen linken Ecke, um die Version "
+"auszuwählen, die Sie installieren möchten."
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:25
+#: src/en/tutorials/install-elasticsearch.md:23
 msgid ""
 "However, if you want go with Elasticsearch 7 (which is slightly easier to "
 "install), you can find the consolidated installation steps below. Be aware "
-"that the maintenance of version 7 might be stopped earlier than for version "
-"8, which also comes with some additional security features."
+"that the maintenance of version 7 might be stopped earlier than for later "
+"versions, which also come with some additional security features."
 msgstr ""
 "Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu "
 "installieren ist), finden Sie unten die konsolidierten "
 "Installationsschritte. Beachten Sie, dass die Wartung von Version 7 "
-"möglicherweise früher eingestellt wird als bei Version 8, die außerdem "
-"einige zusätzliche Sicherheitsfunktionen enthält."
+"möglicherweise früher eingestellt wird als bei darauffolgenden Versionen, "
+"die außerdem einige zusätzliche Sicherheitsfunktionen enthalten."
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/install-elasticsearch.md:26
+#: src/en/tutorials/install-elasticsearch.md:24
 #, no-wrap
 msgid ""
 "If you are installing Elasticsearch 8 and want to follow our\n"
@@ -26381,7 +26362,7 @@ msgstr ""
 "dass Sie das Passwort, das bei der Installation von Elasticsearch angezeigt wird, kopieren/speichern.\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -26411,7 +26392,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -26423,7 +26404,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tabs|info)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "In this tab, the repository is added by using the\n"
@@ -26436,7 +26417,7 @@ msgstr ""
 "verwenden Sie stattdessen das Legacy-Format.\n"
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -26476,7 +26457,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -26596,7 +26577,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:138
+#: src/en/tutorials/install-elasticsearch.md:136
 #, no-wrap
 msgid ""
 "Install the ingest-attachment plugin:\n"
@@ -26610,7 +26591,7 @@ msgstr ""
 "    ```\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:147
+#: src/en/tutorials/install-elasticsearch.md:145
 #, no-wrap
 msgid ""
 "Increase Virtual Memory Map Limit:\n"
@@ -26632,7 +26613,7 @@ msgstr ""
 "    # /etc/elasticsearch/elasticsearch.yml\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:158
+#: src/en/tutorials/install-elasticsearch.md:156
 #, no-wrap
 msgid ""
 "    # Tickets above this size (articles + attachments + metadata)\n"
@@ -26658,7 +26639,7 @@ msgstr ""
 "    http.max_content_length: 400mb\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:168
+#: src/en/tutorials/install-elasticsearch.md:166
 #, no-wrap
 msgid ""
 "    # Allows the engine to generate larger (more complex) search queries.\n"
@@ -26682,7 +26663,7 @@ msgstr ""
 "<!-- markdownlint-enable MD046 -->\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:173
+#: src/en/tutorials/install-elasticsearch.md:171
 #, no-wrap
 msgid ""
 "Enable it by default and start it:\n"
@@ -26696,7 +26677,7 @@ msgstr ""
 "    ```\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:177
+#: src/en/tutorials/install-elasticsearch.md:175
 #, no-wrap
 msgid ""
 " Go on with\n"
@@ -29037,9 +29018,7 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 #: src/en/tutorials/reporting-grafana.md:233
 #, no-wrap
 msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt "
-"werden kann.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
 
 #. type: Link reference
 #: src/en/tutorials/reporting-grafana.md:234
@@ -31175,6 +31154,10 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "Quick Start"
+#~ msgstr "Schnellstart"
 
 #, no-wrap
 #~ msgid ""

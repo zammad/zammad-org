@@ -12,17 +12,18 @@ title: 'Elasticsearch 7 installieren'
 Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird
 aber _dringend_ empfohlen.
 
-Elasticsearch offers different versions. Currently, the versions 7 and 8 are
-supported by Zammad. For installation instructions, you should first and
-foremost follow [Elastic’s installation
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html){target=_blank}.
-Use the dropdown in the top left corner to choose which version you want to
-install.
+Elasticsearch bietet verschiedene Versionen an. Derzeit werden die Versionen
+7 und 8 von Zammad unterstützt. Für die Installationsanweisungen sollten Sie
+in erster Linie [Elastics
+Installation-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html){target=_blank}
+befolgen. Verwenden Sie das Dropdown-Menü in der oberen linken Ecke, um die
+Version auszuwählen, die Sie installieren möchten.
 
-However, if you want go with Elasticsearch 7 (which is slightly easier to
-install), you can find the consolidated installation steps below. Be aware
-that the maintenance of version 7 might be stopped earlier than for later
-versions, which also come with some additional security features.
+Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu
+installieren ist), finden Sie unten die konsolidierten
+Installationsschritte. Beachten Sie, dass die Wartung von Version 7
+möglicherweise früher eingestellt wird als bei darauffolgenden Versionen,
+die außerdem einige zusätzliche Sicherheitsfunktionen enthalten.
 
 :::info
 Wenn Sie Elasticsearch 8 installieren und unserer

@@ -17,8 +17,8 @@ dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben
 werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack
 wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in
 Erwägung ziehen, das Szenario [Backup-Dienst
-deaktivieren](/de/reference/docker-compose-scenarios) zu verwenden, damit der
-integrierte Backup- und Restore-Prozess von Zammad nicht aktiviert wird.
+deaktivieren](/de/reference/docker-compose-scenarios) zu verwenden, damit
+der integrierte Backup- und Restore-Prozess von Zammad nicht aktiviert wird.
 
 Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess
 von Zammads Docker Compose Stack.

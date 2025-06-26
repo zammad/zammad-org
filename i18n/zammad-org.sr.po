@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-16 12:25+0200\n"
+"POT-Creation-Date: 2025-06-26 07:18+0200\n"
 "PO-Revision-Date: 2025-06-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -464,6 +464,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/guides/search.md:8
+#: src/en/get-started/installation/package.md:64
+#: src/en/tutorials/backup-restore.md:33
 #, no-wrap
 msgid "Basics"
 msgstr "Основе"
@@ -6525,13 +6527,6 @@ msgstr ""
 "```\n"
 "\n"
 
-#. type: Title ##
-#: src/en/get-started/installation/package.md:64
-#: src/en/tutorials/backup-restore.md:33
-#, no-wrap
-msgid "Quick Start"
-msgstr "Брзи почетак"
-
 #. type: Title ###
 #: src/en/get-started/installation/package.md:66
 #, no-wrap
@@ -7048,7 +7043,7 @@ msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
 #. type: Title ##
 #: src/en/get-started/installation/package.md:359
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:174
+#: src/en/tutorials/install-elasticsearch.md:172
 #, no-wrap
 msgid "Next Steps"
 msgstr "Следећи кораци"
@@ -21750,10 +21745,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/docker-restore.md:21
 msgid ""
-"If you're familiar with docker, the Quick Start section below includes the "
-"information you'll need. The [docker file handling](/en/tutorials/docker-"
-"file-handling) page covers some examples about how to handle the backup "
-"files and to copy it into a docker volume to restore it."
+"If you're familiar with docker, the sections below include the information "
+"you'll need. The [docker file handling](/en/tutorials/docker-file-handling) "
+"page covers some examples about how to handle the backup files and to copy "
+"it into a docker volume to restore it."
 msgstr ""
 
 #. type: Title ##
@@ -22226,40 +22221,40 @@ msgstr "Водичи"
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:1
 #: src/en/tutorials/install-elasticsearch.md:6
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid "Install Elasticsearch 7"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:14
+#: src/en/tutorials/install-elasticsearch.md:13
 msgid ""
 "Elasticsearch is technically not required to run Zammad, but _highly_ "
 "recommended."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:20
+#: src/en/tutorials/install-elasticsearch.md:18
 msgid ""
-"Elasticsearch offers two versions. Currently, the versions 7 and 8 are "
-"maintained. For installation instructions, you should first and foremost "
-"follow [Elastic’s installation documentation](https://www.elastic.co/guide/"
-"en/elasticsearch/reference/current/install-elasticsearch.html#elasticsearch-"
-"install-packages){target=_blank}.  Use the dropdown in the top left corner "
-"to choose which version you want to install."
+"Elasticsearch offers different versions. Currently, the versions 7 and 8 are "
+"supported by Zammad. For installation instructions, you should first and "
+"foremost follow [Elastic’s installation documentation](https://"
+"www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html)"
+"{target=_blank}.  Use the dropdown in the top left corner to choose which "
+"version you want to install."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:25
+#: src/en/tutorials/install-elasticsearch.md:23
 msgid ""
 "However, if you want go with Elasticsearch 7 (which is slightly easier to "
 "install), you can find the consolidated installation steps below. Be aware "
-"that the maintenance of version 7 might be stopped earlier than for version "
-"8, which also comes with some additional security features."
+"that the maintenance of version 7 might be stopped earlier than for later "
+"versions, which also come with some additional security features."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/install-elasticsearch.md:26
+#: src/en/tutorials/install-elasticsearch.md:24
 #, no-wrap
 msgid ""
 "If you are installing Elasticsearch 8 and want to follow our\n"
@@ -22269,7 +22264,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -22287,7 +22282,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -22296,7 +22291,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs|info)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "In this tab, the repository is added by using the\n"
@@ -22305,7 +22300,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -22328,7 +22323,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:35
+#: src/en/tutorials/install-elasticsearch.md:33
 #, no-wrap
 msgid ""
 "\n"
@@ -22391,7 +22386,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:138
+#: src/en/tutorials/install-elasticsearch.md:136
 #, no-wrap
 msgid ""
 "Install the ingest-attachment plugin:\n"
@@ -22401,7 +22396,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:147
+#: src/en/tutorials/install-elasticsearch.md:145
 #, no-wrap
 msgid ""
 "Increase Virtual Memory Map Limit:\n"
@@ -22415,7 +22410,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:158
+#: src/en/tutorials/install-elasticsearch.md:156
 #, no-wrap
 msgid ""
 "    # Tickets above this size (articles + attachments + metadata)\n"
@@ -22431,7 +22426,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:168
+#: src/en/tutorials/install-elasticsearch.md:166
 #, no-wrap
 msgid ""
 "    # Allows the engine to generate larger (more complex) search queries.\n"
@@ -22446,7 +22441,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:173
+#: src/en/tutorials/install-elasticsearch.md:171
 #, no-wrap
 msgid ""
 "Enable it by default and start it:\n"
@@ -22456,7 +22451,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:177
+#: src/en/tutorials/install-elasticsearch.md:175
 #, no-wrap
 msgid ""
 " Go on with\n"
@@ -25768,6 +25763,10 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#, no-wrap
+#~ msgid "Quick Start"
+#~ msgstr "Брзи почетак"
 
 #~ msgid ""
 #~ "Zammad will store all content in a Database. We supported PostgreSQL in "
