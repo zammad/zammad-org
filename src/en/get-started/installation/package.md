@@ -159,10 +159,8 @@ The recommended method is to use
 [Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 for installing Elasticsearch.
 
-Alternatively, you can follow
-[our example setup](/en/tutorials/install-elasticsearch.md) of
-Elasticsearch 7, which we included in another page to keep the install
-instructions as lean as possible.
+Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we
+included in another page to keep the install instructions as lean as possible.
 
 ### Add Zammad Repository
 
@@ -408,13 +406,14 @@ to connect Zammad to an already existing Elasticsearch instance, make sure to
 use a supported version and have a look at our
 [config example](/en/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `7.8` - `8.x`.
+Supported Elasticsearch versions are `7.8` - `9.x`.
 
 :::details Elasticsearch version history
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 5.2+          | >= 7.8, <9     |
+| 7+            | >= 7.8, <10    |
+| 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
 | 4.0-4.1       | >= 6.5, <=7.12 |
 | 3.4-3.6       | >= 5.5, <=7.9  |

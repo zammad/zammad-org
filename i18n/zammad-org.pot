@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-27 11:14+0200\n"
+"POT-Creation-Date: 2025-07-01 11:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6378,7 +6378,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:166
+#: src/en/get-started/installation/package.md:164
 #, markdown-text
 msgid ""
 "Alternatively, you can follow [our example "
@@ -6388,13 +6388,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:167
+#: src/en/get-started/installation/package.md:165
 #, markdown-text, no-wrap
 msgid "Add Zammad Repository"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:169
+#: src/en/get-started/installation/package.md:167
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make "
@@ -6403,7 +6403,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:174
+#: src/en/get-started/installation/package.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -6438,7 +6438,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:174
+#: src/en/get-started/installation/package.md:172
 #, no-wrap
 msgid ""
 "Starting with Ubuntu 24.04, we provide the command to add the repository in "
@@ -6448,7 +6448,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:174
+#: src/en/get-started/installation/package.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -6483,7 +6483,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:174
+#: src/en/get-started/installation/package.md:172
 #, no-wrap
 msgid ""
 "Starting with Debian 12, we provide the command to add the repository in "
@@ -6493,7 +6493,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:174
+#: src/en/get-started/installation/package.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -6545,13 +6545,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:284
+#: src/en/get-started/installation/package.md:282
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:286
+#: src/en/get-started/installation/package.md:284
 #, no-wrap
 msgid ""
 "\n"
@@ -6601,13 +6601,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:330
 #, markdown-text, no-wrap
 msgid "Manage Services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:336
+#: src/en/get-started/installation/package.md:334
 #, markdown-text
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
@@ -6615,57 +6615,57 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:337
+#: src/en/get-started/installation/package.md:335
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:340
 #, markdown-text
 msgid "Only internal puma server (relevant for displaying the web app):"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:343
+#: src/en/get-started/installation/package.md:341
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-web\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:348
+#: src/en/get-started/installation/package.md:346
 #, markdown-text
 msgid "Only background worker - relevant for all delayed- and background jobs:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:349
+#: src/en/get-started/installation/package.md:347
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-worker\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:352
 #, markdown-text
 msgid "Only websocket server for session related information:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:355
+#: src/en/get-started/installation/package.md:353
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:357
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:172
+#: src/en/tutorials/install-elasticsearch.md:170
 #, markdown-text, no-wrap
 msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:362
 #, markdown-text
 msgid ""
 "Connect Zammad with Elasticsearch ([basic "
@@ -6673,7 +6673,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:362
 #, markdown-text
 msgid ""
 "Adjust your SELinux rules and firewall ([basic "
@@ -6681,19 +6681,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:362
 #, markdown-text
 msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:365
+#: src/en/get-started/installation/package.md:363
 #, markdown-text, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:369
 #, markdown-text
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
@@ -6703,26 +6703,26 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:375
 #, markdown-text
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:375
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:375
 #: src/en/reference/docker-env-vars.md:110
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:375
 #: src/en/reference/docker-env-vars.md:136
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
@@ -6730,19 +6730,19 @@ msgid "Nginx"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:375
 #, markdown-text
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:376
 #, markdown-text, no-wrap
 msgid "Database Server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:380
 #, markdown-text
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
@@ -6750,7 +6750,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:384
+#: src/en/get-started/installation/package.md:382
 #, markdown-text
 msgid ""
 "If no PostgreSQL server could be detected, it will be installed "
@@ -6758,7 +6758,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:385
+#: src/en/get-started/installation/package.md:383
 #: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
@@ -6772,31 +6772,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:392
+#: src/en/get-started/installation/package.md:390
 #, markdown-text, no-wrap
 msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:393
 #, markdown-text
 msgid "The following reverse proxies are supported:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:398
+#: src/en/get-started/installation/package.md:396
 #, markdown-text
 msgid "Nginx 1.3+"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:398
+#: src/en/get-started/installation/package.md:396
 #, markdown-text
 msgid "Apache 2.2+"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:402
+#: src/en/get-started/installation/package.md:400
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -6806,7 +6806,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:401
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -6814,7 +6814,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:410
+#: src/en/get-started/installation/package.md:408
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -6825,19 +6825,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:412
+#: src/en/get-started/installation/package.md:410
 #, markdown-text
-msgid "Supported Elasticsearch versions are `7.8` - `8.x`."
+msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr ""
 
 #. type: Fenced div block (details Elasticsearch version history)
-#: src/en/get-started/installation/package.md:413
+#: src/en/get-started/installation/package.md:411
 #, no-wrap
 msgid ""
 "\n"
 "| Zammad        | Elasticsearch  |\n"
 "| ------------- | :------------- |\n"
-"| 5.2+          | >= 7.8, <9     |\n"
+"| 7+            | >= 7.8, <10    |\n"
+"| 5.2-6.5       | >= 7.8, <9     |\n"
 "| 5.0-5.1       | >= 7.8, <8     |\n"
 "| 4.0-4.1       | >= 6.5, <=7.12 |\n"
 "| 3.4-3.6       | >= 5.5, <=7.9  |\n"
@@ -6849,7 +6850,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:431
+#: src/en/get-started/installation/package.md:430
 #, markdown-text
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
@@ -6858,13 +6859,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:432
+#: src/en/get-started/installation/package.md:431
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:435
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -6874,7 +6875,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:439
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -6885,7 +6886,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:443
+#: src/en/get-started/installation/package.md:442
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -6895,7 +6896,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:446
+#: src/en/get-started/installation/package.md:445
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -6904,13 +6905,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:447
+#: src/en/get-started/installation/package.md:446
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:452
+#: src/en/get-started/installation/package.md:451
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -21883,8 +21884,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:23
-#, markdown-text
-msgid "Elasticsearch 8 / with `https`:"
+#, markdown-text, no-wrap
+msgid "Elasticsearch >= 8 / with `https`:\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
@@ -21897,8 +21898,8 @@ msgstr ""
 #: src/en/tutorials/connect-config-elasticsearch.md:28
 #, markdown-text, no-wrap
 msgid ""
-"Set the Elasticsearch User and Password <Badge type=\"warning\" text=\"only "
-"ES8\" />"
+"Set the Elasticsearch User and Password <Badge type=\"warning\" text=\">= "
+"ES8\"/>"
 msgstr ""
 
 #. type: Fenced code block (sh)
@@ -21916,7 +21917,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:38
 #, markdown-text, no-wrap
-msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\"only ES8\" />"
+msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\">= ES8\"/>"
 msgstr ""
 
 #. type: Plain text
@@ -23075,7 +23076,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:1
 #: src/en/tutorials/install-elasticsearch.md:6
-#: src/en/tutorials/install-elasticsearch.md:31
+#: src/en/tutorials/install-elasticsearch.md:29
 #, markdown-text, no-wrap
 msgid "Install Elasticsearch 7"
 msgstr ""
@@ -23092,16 +23093,16 @@ msgstr ""
 #: src/en/tutorials/install-elasticsearch.md:18
 #, markdown-text
 msgid ""
-"Elasticsearch offers different versions. Currently, the versions 7 and 8 are "
-"supported by Zammad. For installation instructions, you should first and "
-"foremost follow [Elastic’s installation "
-"documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.x/setup.html){target=_blank}.  "
-"Use the dropdown in the top left corner to choose which version you want to "
+"Elasticsearch offers different versions. Currently, the versions 7, 8 and 9 "
+"are supported by Zammad. For installation instructions, you should first and "
+"foremost follow [Elastic's installation "
+"documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.  "
+"Use the dropdown in the top right corner to choose which version you want to "
 "install."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:23
+#: src/en/tutorials/install-elasticsearch.md:22
 #, markdown-text
 msgid ""
 "However, if you want go with Elasticsearch 7 (which is slightly easier to "
@@ -23111,17 +23112,17 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/install-elasticsearch.md:24
+#: src/en/tutorials/install-elasticsearch.md:23
 #, no-wrap
 msgid ""
-"If you are installing Elasticsearch 8 and want to follow our\n"
-"[standard configuration](/en/tutorials/connect-config-elasticsearch),\n"
-"make sure to copy/save the password which is shown while installing\n"
-"Elasticsearch.\n"
+"If you install Elasticsearch >= 8 and want to follow our\n"
+"[standard configuration](/en/tutorials/connect-config-elasticsearch), make "
+"sure to copy/save the password which is\n"
+"shown during the installation of Elasticsearch.\n"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid ""
 "\n"
@@ -23139,7 +23140,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid ""
 "\n"
@@ -23148,7 +23149,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs|info)
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid ""
 "In this tab, the repository is added by using the\n"
@@ -23159,7 +23160,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid ""
 "\n"
@@ -23183,7 +23184,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:33
+#: src/en/tutorials/install-elasticsearch.md:31
 #, no-wrap
 msgid ""
 "\n"
@@ -23248,7 +23249,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:136
+#: src/en/tutorials/install-elasticsearch.md:134
 #, markdown-text, no-wrap
 msgid ""
 "Install the ingest-attachment plugin:\n"
@@ -23259,7 +23260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:145
+#: src/en/tutorials/install-elasticsearch.md:143
 #, markdown-text, no-wrap
 msgid ""
 "Increase Virtual Memory Map Limit:\n"
@@ -23273,7 +23274,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:156
+#: src/en/tutorials/install-elasticsearch.md:154
 #, markdown-text, no-wrap
 msgid ""
 "    # Tickets above this size (articles + attachments + metadata)\n"
@@ -23289,7 +23290,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:166
+#: src/en/tutorials/install-elasticsearch.md:164
 #, markdown-text, no-wrap
 msgid ""
 "    # Allows the engine to generate larger (more complex) search queries.\n"
@@ -23305,7 +23306,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:171
+#: src/en/tutorials/install-elasticsearch.md:169
 #, markdown-text, no-wrap
 msgid ""
 "Enable it by default and start it:\n"
@@ -23315,7 +23316,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:175
+#: src/en/tutorials/install-elasticsearch.md:173
 #, markdown-text, no-wrap
 msgid ""
 " Go on with\n"

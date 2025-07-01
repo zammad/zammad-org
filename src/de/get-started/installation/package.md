@@ -415,13 +415,14 @@ existierenden Elasticsearch-Instanz verbinden wollen, stellen Sie sicher,
 dass Sie eine unterstützte Version verwenden und werfen Sie einen Blick auf
 unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
-Unterstützte Elasticsearch-Versionen sind `7.8` - `8.x`.
+Supported Elasticsearch versions are `7.8` - `9.x`.
 
 :::details Elasticsearch version history
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 5.2+          | >= 7.8, <9     |
+| 7+            | >= 7.8, <10    |
+| 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
 | 4.0-4.1       | >= 6.5, <=7.12 |
 | 3.4-3.6       | >= 5.5, <=7.9  |

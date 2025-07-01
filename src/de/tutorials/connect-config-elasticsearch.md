@@ -20,13 +20,13 @@ Elasticsearch 7 / ohne `https`:
 zammad run rails r "Setting.set('es_url', 'http://localhost:9200')"
 ```
 
-Elasticsearch 8 / mit `https`:
+Elasticsearch >= 8 / with `https`:
 
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Festlegen von Elasticsearch-Benutzer und -Passwort <Badge type="warning" text="only ES8" />
+### Set the Elasticsearch User and Password <Badge type="warning" text=">= ES8"/>
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
@@ -36,7 +36,7 @@ zammad run rails r "Setting.set('es_user', 'elastic')"
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Zertifikat zu Zammad hinzufügen <Badge type="warning" text="only ES8" />
+### Add Certificate to Zammad <Badge type="warning" text=">= ES8"/>
 
 Zeigen und kopieren Sie das automatisch generierte Zertifikat von
 Elasticsearch und fügen Sie es zu Zammad hinzu. Achten Sie darauf, auch die

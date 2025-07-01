@@ -19,13 +19,13 @@ Elasticsearch 7 / without `https`:
 zammad run rails r "Setting.set('es_url', 'http://localhost:9200')"
 ```
 
-Elasticsearch 8 / with `https`:
+Elasticsearch >= 8 / with `https`:
 
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch User and Password <Badge type="warning" text="only ES8" />
+### Set the Elasticsearch User and Password <Badge type="warning" text=">= ES8"/>
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
@@ -35,7 +35,7 @@ zammad run rails r "Setting.set('es_user', 'elastic')"
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add Certificate to Zammad <Badge type="warning" text="only ES8" />
+### Add Certificate to Zammad <Badge type="warning" text=">= ES8"/>
 
 Show and copy the auto-generated certificate from Elasticsearch and add it to
 Zammad. Make sure to copy/paste the delimiters
