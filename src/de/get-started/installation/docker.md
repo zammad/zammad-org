@@ -151,35 +151,43 @@ Direktes Ausführen eines bestimmten Befehls:
 
 ::::tabs
 
-=== Per Portainer-GUI
+=== Via Portainer GUI
 
-Gehen Sie in Ihrem Portainer GUI zur Containeransicht und wählen Sie den laufenden Rails-Container aus Ihrem Zammad-Stack aus. Klicken Sie
-auf das Symbol **Exec Console** in der Spalte "Quick Actions".
+In your Portainer GUI, go to the container view and select the running rails container from your Zammad stack. Click
+on the **Exec Console** icon in the "Quick Actions" column and on the **Connect** button.
 
-![Ausführung der Portainer-Konsole](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
 
-Wählen Sie im Dialogfeld "Execute" den Entry point "rails console", wie Sie im Screenshot sehen können:
-
-![Portainer Execute Befehl](/screenshots/installation/portainer-execute-command.png){width=80%}
-
-=== Per Konsole
-
-Direktes Ausführen eines bestimmten Befehls:
+Run the interactive rails console by executing:
 
 ```sh
-docker compose run --rm zammad-railsserver rails r '...your rails command here...'
+bundle exec rails c
 ```
 
-Führen Sie die interaktive Rails-Konsole aus, um Rails-Befehle manuell einzugeben:
+Directly execute a specific command:
 
 ```sh
-docker compose run --rm zammad-railsserver rails c
+bundle exec rails r '...your rails command here...'
 ```
 
-Über `docker exec`:
+=== Via console
+
+Directly execute a specific command:
 
 ```sh
-docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
+```
+
+Run the interactive rails console to manually enter Rails commands:
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rails c
+```
+
+Via `docker compose exec`:
+
+```sh
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip

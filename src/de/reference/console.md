@@ -31,23 +31,23 @@ Ausgabe im Terminal (ohne sehen Sie nichts!).
 
 :::tabs key:installmethod
 
-=== Docker-Installation
+=== Docker Installation
 
 ```sh
-docker compose run --rm zammad-railsserver rails r '{BEFEHL}'
+docker compose run --rm zammad-railsserver bundle exec rails r '{COMMAND}'
 ```
 
-=== Paket-Installation
+=== Package Installation
 
 ```sh
-zammad run rails r '{BEFEHL}'
+zammad run rails r '{COMMAND}'
 
 ```
 
-=== Quellcode-/Entwickler-Installation
+=== Source / Development Installation
 
 ```sh
-rails r '{BEFEHL}'
+rails r '{COMMAND}'
 ```
 
 :::
@@ -56,20 +56,20 @@ rails r '{BEFEHL}'
 
 :::tabs key:installmethod
 
-=== Docker-Installation
+=== Docker Installation
 
 ```sh
-docker compose run --rm zammad-railsserver rails c
+docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
-=== Paket-Installation
+=== Package Installation
 
 ```sh
 zammad run rails c
 
 ```
 
-=== Quellcode-/Entwickler-Installation
+=== Source / Development Installation
 
 ```sh
 rails c

@@ -33,7 +33,7 @@ output (without you won't!).
 === Docker Installation
 
 ```sh
-docker compose run --rm zammad-railsserver rails r '{COMMAND}'
+docker compose run --rm zammad-railsserver bundle exec rails r '{COMMAND}'
 ```
 
 === Package Installation
@@ -58,7 +58,7 @@ rails r '{COMMAND}'
 === Docker Installation
 
 ```sh
-docker compose run --rm zammad-railsserver rails c
+docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
 === Package Installation

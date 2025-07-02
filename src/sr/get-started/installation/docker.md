@@ -143,32 +143,40 @@ Docker извршна скрипта поставља променљиве ок�
 === Via Portainer GUI
 
 In your Portainer GUI, go to the container view and select the running rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column.
+on the **Exec Console** icon in the "Quick Actions" column and on the **Connect** button.
 
 ![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
 
-In the "Execute" dialog, select the "rails console" entry point as you can see in the screenshot:
+Run the interactive rails console by executing:
 
-![Portainer execution command](/screenshots/installation/portainer-execute-command.png){width=80%}
+```sh
+bundle exec rails c
+```
+
+Directly execute a specific command:
+
+```sh
+bundle exec rails r '...your rails command here...'
+```
 
 === Via console
 
 Directly execute a specific command:
 
 ```sh
-docker compose run --rm zammad-railsserver rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 Run the interactive rails console to manually enter Rails commands:
 
 ```sh
-docker compose run --rm zammad-railsserver rails c
+docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
-Via `docker exec`:
+Via `docker compose exec`:
 
 ```sh
-docker exec zammad-docker-compose-zammad-railsserver-1 /docker-entrypoint.sh rails r '...your rails command here...'
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip
