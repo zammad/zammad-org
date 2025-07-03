@@ -96,16 +96,30 @@ This switch will provide even more information - at least named
 relations on top of the ID ones. Below you can find two examples, one for
 ticket and one for user:
 
-:::: details
+:::: details User payload
 :::tabs
 
-=== User payload
+=== expand=true
 
-<<< @/fixtures/rest-api/users/get-id-res.json
+<<< @/fixtures/rest-api/intro/get-user-expand-true-res.json
 
-=== Ticket payload
+=== expand=false
 
-<<< @/fixtures/rest-api/tickets/get-id-res.json
+<<< @/fixtures/rest-api/intro/get-user-expand-false-res.json
+
+:::
+::::
+
+:::: details Ticket payload
+:::tabs
+
+=== expand=true
+
+<<< @/fixtures/rest-api/intro/get-ticket-expand-true-res.json
+
+=== expand=false
+
+<<< @/fixtures/rest-api/intro/get-ticket-expand-false-res.json
 
 :::
 ::::
@@ -124,10 +138,10 @@ you may have to use pagination at some points.
 **Number of returned objects:** Zammad has hard limits for the
 maximum returned objects. You can't raise these limits.
 
-**Number of total to return objects:** Zammad does not provide a
-total count of objects available for your query. This forces you to
-cycle through the pages until Zammad no longer returns further
-objects.
+**Number of total to return objects:** Zammad does not provide a total count of
+objects available for your query, unless you explicitly request it. To include
+the amount of search results, use the `with_total_count` or `only_total_count`
+parameter.
 :::
 
 In order to use pagination you'll need two get options: `per_page` and
@@ -161,7 +175,7 @@ explicitly covered in this documentation:
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-basic-search.json
+<<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
 #### Expand Parameter
@@ -173,7 +187,7 @@ in addition.
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-expand-search.json
+<<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
 #### Full Parameter
@@ -185,7 +199,18 @@ attributes and a `total_count` of search results as well.
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-full-search.json
+<<< @/fixtures/rest-api/intro/get-full-search-res.json
+:::
+
+#### With Total Count Parameter
+
+Using this parameter will additionally output the amount of search results.
+It can be combined with `full` and `expand`.
+
+`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
+
+::: details Show response
+<<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
 #### Only Total Count Parameter
@@ -197,7 +222,7 @@ search results.
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-total-count.json
+<<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
 ### Global Search
@@ -212,7 +237,7 @@ available parameters are different to the ones for the endpoint search.
 `GET`-Request sent: `/api/v1/search?query=welcome`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-global-search.json
+<<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
 ### Condition Based Search
@@ -220,7 +245,7 @@ available parameters are different to the ones for the endpoint search.
 You can even use conditions like for triggers and schedulers to search
 via API. If you don't want to build such conditions manually, you can
 find a hint below how to quickly build a condition structure via UI and
-fetch it for you API request.
+fetch it for your API request.
 
 So, how do I build such a condition based request?
 

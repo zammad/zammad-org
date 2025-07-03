@@ -103,16 +103,30 @@ Dieser Schalter liefert noch mehr Informationen - zumindest benannte
 Beziehungen zusätzlich zu den ID-Beziehungen. Nachfolgend finden Sie zwei
 Beispiele, eines für ein Ticket und eines für einen Benutzer:
 
-:::: details
+:::: details User payload
 :::tabs
 
-=== Benutzer Payload
+=== expand=true
 
-<<< @/fixtures/rest-api/users/get-id-res.json
+<<< @/fixtures/rest-api/intro/get-user-expand-true-res.json
 
-=== Ticket Payload
+=== expand=false
 
-<<< @/fixtures/rest-api/tickets/get-id-res.json
+<<< @/fixtures/rest-api/intro/get-user-expand-false-res.json
+
+:::
+::::
+
+:::: details Ticket payload
+:::tabs
+
+=== expand=true
+
+<<< @/fixtures/rest-api/intro/get-ticket-expand-true-res.json
+
+=== expand=false
+
+<<< @/fixtures/rest-api/intro/get-ticket-expand-false-res.json
 
 :::
 ::::
@@ -128,12 +142,13 @@ Da Zammad die Anzahl der zurückgegebenen Objekte aus Leistungsgründen
 begrenzt, müssen Sie an einigen Stellen eine Paginierung verwenden.
 
 :::info
-**Anzahl der zurückgegebenen Objekte:** Zammad hat eine harte Grenzen für die
-maximal zurückgegebenen Objekte. Sie können diese Grenzen nicht überschreiten.
+**Number of returned objects:** Zammad has hard limits for the
+maximum returned objects. You can't raise these limits.
 
-**Gesamtzahl der zurückzugebenden Objekte:** Zammad bietet keine
-Gesamtanzahl der für Ihre Abfrage verfügbaren Objekte. Dies zwingt Sie dazu,
-durch die Seiten zu blättern, bis Zammad keine weiteren Objekte mehr zurückgibt.
+**Number of total to return objects:** Zammad does not provide a total count of
+objects available for your query, unless you explicitly request it. To include
+the amount of search results, use the `with_total_count` or `only_total_count`
+parameter.
 :::
 
 Um die Paginierung zu verwenden, benötigen Sie zwei get-Optionen: `per_page`
@@ -168,7 +183,7 @@ in dieser Dokumentation nicht explizit behandelt:
 `GET`-Request gesendet: `/api/v1/tickets/search?query=welcome`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-basic-search.json
+<<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
 #### Expand Parameter
@@ -180,7 +195,7 @@ zusätzlich Werte/Namen ausgegeben.
 `GET`-Request gesendet: `/api/v1/tickets/search?query=welcome&expand=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-expand-search.json
+<<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
 #### Full Parameter
@@ -193,7 +208,19 @@ einer `total_count` genannten Gesamtzahl der Suchergebnisse.
 `GET`-Request gesendet: `/api/v1/tickets/search?query=welcome&full=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-full-search.json
+<<< @/fixtures/rest-api/intro/get-full-search-res.json
+:::
+
+#### With Total Count Parameter
+
+Using this parameter will additionally output the amount of search results.
+It can be combined with `full` and `expand`.
+
+`GET`-Request sent:
+`/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
+
+::: details Show response
+<<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
 #### Only Total Count Parameter
@@ -205,7 +232,7 @@ ausgegeben.
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-total-count.json
+<<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
 ### Globale Suche
@@ -220,16 +247,15 @@ Parameter unterscheiden sich von denen der Endpunktsuche.
 `GET`-Request gesendet: `/api/v1/search?query=welcome`
 
 ::: details Show response
-<<< @/fixtures/rest-api/intro/get-global-search.json
+<<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
 ### Bedingungsabhängige Suche
 
-Sie können sogar Bedingungen wie in Triggern und Automatisierungen
-verwenden, um über die API zu suchen. Wenn Sie solche Bedingungen nicht
-manuell erstellen möchten, finden Sie unten einen Hinweis, wie Sie schnell
-eine Bedingungsstruktur über die Benutzeroberfläche erstellen und für Ihre
-API-Anfrage abrufen können.
+You can even use conditions like for triggers and schedulers to search via
+API. If you don't want to build such conditions manually, you can find a
+hint below how to quickly build a condition structure via UI and fetch it
+for your API request.
 
 Wie kann ich also eine solche bedingungsabhängige Anfrage erstellen?
 

@@ -66,11 +66,11 @@ Required permission: `admin.calendar`
 
 === Request
 
-<<< @/fixtures/rest-api/calendars/post-id-req.json
+<<< @/fixtures/rest-api/calendars/put-id-req.json
 
 === Response
 
-<<< @/fixtures/rest-api/calendars/post-id-res.json
+<<< @/fixtures/rest-api/calendars/put-id-res.json
 
 :::
 ::::

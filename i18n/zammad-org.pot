@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-02 14:51+0200\n"
+"POT-Creation-Date: 2025-07-03 11:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1790,7 +1790,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:92
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #, markdown-text, no-wrap
 msgid "Macros"
 msgstr ""
@@ -9776,7 +9776,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:8
 #: src/en/reference/es-indexed-attributes.md:25
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #: src/en/reference/rest-api/knowledgebase.md:19
 #, markdown-text, no-wrap
 msgid "Overview"
@@ -16207,11 +16207,11 @@ msgid ""
 "\n"
 "=== Request\n"
 "\n"
-"<<< @/fixtures/rest-api/calendars/post-id-req.json\n"
+"<<< @/fixtures/rest-api/calendars/put-id-req.json\n"
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/calendars/post-id-res.json\n"
+"<<< @/fixtures/rest-api/calendars/put-id-res.json\n"
 "\n"
 msgstr ""
 
@@ -17730,23 +17730,38 @@ msgid ""
 "for user:"
 msgstr ""
 
-#. type: Fenced div block (details|tabs)
+#. type: Fenced div block (details User payload|tabs)
 #: src/en/reference/rest-api/intro.md:99
 #, no-wrap
 msgid ""
 "\n"
-"=== User payload\n"
+"=== expand=true\n"
 "\n"
-"<<< @/fixtures/rest-api/users/get-id-res.json\n"
+"<<< @/fixtures/rest-api/intro/get-user-expand-true-res.json\n"
 "\n"
-"=== Ticket payload\n"
+"=== expand=false\n"
 "\n"
-"<<< @/fixtures/rest-api/tickets/get-id-res.json\n"
+"<<< @/fixtures/rest-api/intro/get-user-expand-false-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (details Ticket payload|tabs)
+#: src/en/reference/rest-api/intro.md:113
+#, no-wrap
+msgid ""
+"\n"
+"=== expand=true\n"
+"\n"
+"<<< @/fixtures/rest-api/intro/get-ticket-expand-true-res.json\n"
+"\n"
+"=== expand=false\n"
+"\n"
+"<<< @/fixtures/rest-api/intro/get-ticket-expand-false-res.json\n"
 "\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/intro.md:113
+#: src/en/reference/rest-api/intro.md:127
 #, no-wrap
 msgid ""
 "Please note that Core Workflows may restrict access to attributes or\n"
@@ -17754,13 +17769,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:118
+#: src/en/reference/rest-api/intro.md:132
 #, markdown-text, no-wrap
 msgid "Pagination"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:122
+#: src/en/reference/rest-api/intro.md:136
 #, markdown-text
 msgid ""
 "As Zammad limits the number of returned objects for performance reasons, you "
@@ -17768,20 +17783,23 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rest-api/intro.md:123
+#: src/en/reference/rest-api/intro.md:137
 #, no-wrap
 msgid ""
 "**Number of returned objects:** Zammad has hard limits for the\n"
 "maximum returned objects. You can't raise these limits.\n"
 "\n"
-"**Number of total to return objects:** Zammad does not provide a\n"
-"total count of objects available for your query. This forces you to\n"
-"cycle through the pages until Zammad no longer returns further\n"
-"objects.\n"
+"**Number of total to return objects:** Zammad does not provide a total count "
+"of\n"
+"objects available for your query, unless you explicitly request it. To "
+"include\n"
+"the amount of search results, use the `with_total_count` or "
+"`only_total_count`\n"
+"parameter.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:136
+#: src/en/reference/rest-api/intro.md:150
 #, markdown-text
 msgid ""
 "In order to use pagination you'll need two get options: `per_page` and "
@@ -17790,55 +17808,55 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:137
+#: src/en/reference/rest-api/intro.md:151
 #, markdown-text, no-wrap
 msgid "Search via API"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:139
+#: src/en/reference/rest-api/intro.md:153
 #, markdown-text, no-wrap
 msgid "Endpoint Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:142
+#: src/en/reference/rest-api/intro.md:156
 #, markdown-text
 msgid "Some endpoints support a search query. These are:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:148
+#: src/en/reference/rest-api/intro.md:162
 #, markdown-text
 msgid "`Groups <group>`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:148
+#: src/en/reference/rest-api/intro.md:162
 #, markdown-text
 msgid "`Organizations <organization>`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:148
+#: src/en/reference/rest-api/intro.md:162
 #, markdown-text
 msgid "`Roles <role>`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:148
+#: src/en/reference/rest-api/intro.md:162
 #, markdown-text
 msgid "`Tickets <ticket>`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:148
+#: src/en/reference/rest-api/intro.md:162
 #, markdown-text
 msgid "`Users <user>`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:151
+#: src/en/reference/rest-api/intro.md:165
 #, markdown-text
 msgid ""
 "The following endpoints support a search query as well, but they are not "
@@ -17846,55 +17864,55 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #, markdown-text
 msgid "Chat Sessions"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #, markdown-text
 msgid "Knowledgebase"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #, markdown-text
 msgid "Templates"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:158
+#: src/en/reference/rest-api/intro.md:172
 #, markdown-text
 msgid "Text module"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:159
+#: src/en/reference/rest-api/intro.md:173
 #, markdown-text, no-wrap
 msgid "Search Example"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:162
+#: src/en/reference/rest-api/intro.md:176
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/intro.md:163
+#: src/en/reference/rest-api/intro.md:177
 #, no-wrap
-msgid "<<< @/fixtures/rest-api/intro/get-basic-search.json\n"
+msgid "<<< @/fixtures/rest-api/intro/get-basic-search-res.json\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:167
+#: src/en/reference/rest-api/intro.md:181
 #, markdown-text, no-wrap
 msgid "Expand Parameter"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:172
+#: src/en/reference/rest-api/intro.md:186
 #, markdown-text
 msgid ""
 "If you want to have additional related information, you can use the `expand` "
@@ -17902,25 +17920,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:174
+#: src/en/reference/rest-api/intro.md:188
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/intro.md:175
+#: src/en/reference/rest-api/intro.md:189
 #, no-wrap
-msgid "<<< @/fixtures/rest-api/intro/get-expand-search.json\n"
+msgid "<<< @/fixtures/rest-api/intro/get-expand-search-res.json\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:179
+#: src/en/reference/rest-api/intro.md:193
 #, markdown-text, no-wrap
 msgid "Full Parameter"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:184
+#: src/en/reference/rest-api/intro.md:198
 #, markdown-text
 msgid ""
 "You can even extend the response by using the `full` parameter. Be aware "
@@ -17929,25 +17947,53 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:186
+#: src/en/reference/rest-api/intro.md:200
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/intro.md:187
+#: src/en/reference/rest-api/intro.md:201
 #, no-wrap
-msgid "<<< @/fixtures/rest-api/intro/get-full-search.json\n"
+msgid "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:191
+#: src/en/reference/rest-api/intro.md:205
+#, markdown-text, no-wrap
+msgid "With Total Count Parameter"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:209
+#, markdown-text
+msgid ""
+"Using this parameter will additionally output the amount of search results.  "
+"It can be combined with `full` and `expand`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/intro.md:211
+#, markdown-text
+msgid ""
+"`GET`-Request sent: "
+"`/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/intro.md:212
+#, no-wrap
+msgid "<<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/rest-api/intro.md:216
 #, markdown-text, no-wrap
 msgid "Only Total Count Parameter"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:195
+#: src/en/reference/rest-api/intro.md:220
 #, markdown-text
 msgid ""
 "Using this `only_total_count` parameter will output only the amount of "
@@ -17955,7 +18001,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:198
+#: src/en/reference/rest-api/intro.md:223
 #, markdown-text
 msgid ""
 "`GET`-Request sent: "
@@ -17963,19 +18009,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/intro.md:199
+#: src/en/reference/rest-api/intro.md:224
 #, no-wrap
-msgid "<<< @/fixtures/rest-api/intro/get-total-count.json\n"
+msgid "<<< @/fixtures/rest-api/intro/get-total-count-res.json\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:203
+#: src/en/reference/rest-api/intro.md:228
 #, markdown-text, no-wrap
 msgid "Global Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:211
+#: src/en/reference/rest-api/intro.md:236
 #, markdown-text
 msgid ""
 "If you need to search not only in a specific object type, you can do so by "
@@ -17987,41 +18033,41 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:213
+#: src/en/reference/rest-api/intro.md:238
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/search?query=welcome`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/intro.md:214
+#: src/en/reference/rest-api/intro.md:239
 #, no-wrap
-msgid "<<< @/fixtures/rest-api/intro/get-global-search.json\n"
+msgid "<<< @/fixtures/rest-api/intro/get-global-search-res.json\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:218
+#: src/en/reference/rest-api/intro.md:243
 #, markdown-text, no-wrap
 msgid "Condition Based Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:224
+#: src/en/reference/rest-api/intro.md:249
 #, markdown-text
 msgid ""
 "You can even use conditions like for triggers and schedulers to search via "
 "API. If you don't want to build such conditions manually, you can find a "
 "hint below how to quickly build a condition structure via UI and fetch it "
-"for you API request."
+"for your API request."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:226
+#: src/en/reference/rest-api/intro.md:251
 #, markdown-text
 msgid "So, how do I build such a condition based request?"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:236
+#: src/en/reference/rest-api/intro.md:261
 #, markdown-text
 msgid ""
 "In Zammad, go to the admin interface and create a condition, e.g. by "
@@ -18030,7 +18076,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:236
+#: src/en/reference/rest-api/intro.md:261
 #, markdown-text
 msgid ""
 "Go to the `Rails console </admin/console>`, either by using `rails c` / "
@@ -18039,7 +18085,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:236
+#: src/en/reference/rest-api/intro.md:261
 #, markdown-text
 msgid ""
 "Search for the created condition, adjust the following examples to your "
@@ -18047,7 +18093,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rest-api/intro.md:237
+#: src/en/reference/rest-api/intro.md:262
 #, no-wrap
 msgid ""
 "puts Overview.find_by(name: 'My test "
@@ -18055,7 +18101,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rest-api/intro.md:241
+#: src/en/reference/rest-api/intro.md:266
 #, no-wrap
 msgid ""
 "puts Trigger.find_by(name: 'My new test "
@@ -18063,19 +18109,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:246
+#: src/en/reference/rest-api/intro.md:271
 #, markdown-text
 msgid "This leads to an output like the following:"
 msgstr ""
 
 #. type: Fenced div block (details Show output)
-#: src/en/reference/rest-api/intro.md:247
+#: src/en/reference/rest-api/intro.md:272
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:254
+#: src/en/reference/rest-api/intro.md:279
 #, markdown-text
 msgid ""
 "Use this as payload in your `POST`-Request in an endpoint search. The "
@@ -18083,25 +18129,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:255
+#: src/en/reference/rest-api/intro.md:280
 #, markdown-text, no-wrap
 msgid "Sorting Search Results"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:258
+#: src/en/reference/rest-api/intro.md:283
 #, markdown-text
 msgid "Zammad allows you to sort your search results by field if needed."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:259
+#: src/en/reference/rest-api/intro.md:284
 #, markdown-text, no-wrap
 msgid "`sort_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:263
+#: src/en/reference/rest-api/intro.md:288
 #, markdown-text
 msgid ""
 "Append `?sort_by={row name}` to your query to sort by a specific row that "
@@ -18109,13 +18155,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:264
+#: src/en/reference/rest-api/intro.md:289
 #, markdown-text, no-wrap
 msgid "`order_by`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:268
+#: src/en/reference/rest-api/intro.md:293
 #, markdown-text
 msgid ""
 "Append `?order_by={direction}` to your query to switch in between ascending "
@@ -18123,13 +18169,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:270
+#: src/en/reference/rest-api/intro.md:295
 #, markdown-text
 msgid "Directions are: `asc` and `desc`."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/intro.md:271
+#: src/en/reference/rest-api/intro.md:296
 #, no-wrap
 msgid ""
 "Usually you'll want to combine both parameters in your searches -\n"
@@ -18137,13 +18183,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:276
+#: src/en/reference/rest-api/intro.md:301
 #, markdown-text, no-wrap
 msgid "Actions On Behalf of Other Users"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:280
+#: src/en/reference/rest-api/intro.md:305
 #, markdown-text, no-wrap
 msgid ""
 "**Requirement:** the user used for running the query on behalf requires\n"
@@ -18151,7 +18197,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:283
+#: src/en/reference/rest-api/intro.md:308
 #, markdown-text
 msgid ""
 "Running API queries on behalf of other users allows you to e.g. create "
@@ -18159,7 +18205,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:286
+#: src/en/reference/rest-api/intro.md:311
 #, markdown-text
 msgid ""
 "To do so, add a new HTTP header named `From` to your request. The value of "
@@ -18167,37 +18213,37 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:290
+#: src/en/reference/rest-api/intro.md:315
 #, markdown-text
 msgid "user ID"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:290
+#: src/en/reference/rest-api/intro.md:315
 #, markdown-text
 msgid "user login"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:290
+#: src/en/reference/rest-api/intro.md:315
 #, markdown-text
 msgid "user email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:292
+#: src/en/reference/rest-api/intro.md:317
 #, markdown-text
 msgid "`From` is available for all endpoints."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:293
+#: src/en/reference/rest-api/intro.md:318
 #, markdown-text, no-wrap
 msgid "Encoding"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:298
+#: src/en/reference/rest-api/intro.md:323
 #, markdown-text
 msgid ""
 "The API expects UTF-8 encoding. Keep in mind that especially when using URLs "
@@ -18206,7 +18252,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:301
+#: src/en/reference/rest-api/intro.md:326
 #, markdown-text
 msgid ""
 "If you want to learn more about URL encoding, [this Wikipedia "
@@ -18214,7 +18260,7 @@ msgid ""
 msgstr ""
 
 #. type: Link reference
-#: src/en/reference/rest-api/intro.md:302
+#: src/en/reference/rest-api/intro.md:327
 #, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
@@ -20972,11 +21018,11 @@ msgid ""
 "\n"
 "=== Request\n"
 "\n"
-"<<< @/fixtures/rest-api/users/delete-privacy-task-req.json\n"
+"<<< @/fixtures/rest-api/users/post-privacy-task-req.json\n"
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/users/delete-privacy-task-res.json\n"
+"<<< @/fixtures/rest-api/users/post-privacy-task-res.json\n"
 "\n"
 msgstr ""
 

@@ -147,11 +147,11 @@ Required permission: `admin.data_privacy`
 
 === Request
 
-<<< @/fixtures/rest-api/users/delete-privacy-task-req.json
+<<< @/fixtures/rest-api/users/post-privacy-task-req.json
 
 === Response
 
-<<< @/fixtures/rest-api/users/delete-privacy-task-res.json
+<<< @/fixtures/rest-api/users/post-privacy-task-res.json
 
 :::
 ::::
