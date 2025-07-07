@@ -47,10 +47,6 @@ the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by
 simply pressing [[d]].
 :::
 
-Additionally, you can activate or deactivate if the banner for Zammad's ticket
-summary AI feature is shown below the articles in the ticket detail view. This
-option is only available, if the feature is configured by your admin.
-
 ### Language
 
 Choose your preferred language of Zammad.

@@ -54,11 +54,6 @@ die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastatur
 einfach [[d]] drücken.
 :::
 
-Zusätzlich können Sie aktivieren oder deaktivieren, ob das Banner für die
-Ticket-Zusammenfassung von Zammad in der Ticket Detailansicht unter den
-Artikeln angezeigt wird. Diese Option ist nur verfügbar, wenn die Funktion
-von Ihrem Administrator konfiguriert wurde.
-
 ### Sprache
 
 Wählen Sie Ihre bevorzugte Sprache für Zammad.

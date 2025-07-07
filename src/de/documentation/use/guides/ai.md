@@ -21,11 +21,9 @@ Die Ticket-Zusammenfassung tut, was der Name sagt: Sie fasst den Inhalt des
 Tickets zusammen. Dies kann bei großen Tickets und/oder vielen Wechseln
 zwischen Agenten eine enorme Zeitersparnis bedeuten.
 
-Wenn die Funktion aktiviert ist, wird in der Ticket Detailansicht ein Banner
-unter den Artikeln angezeigt. Wenn Sie auf die Schaltfläche `Zusammenfassung
-ansehen` klicken, wird der Seitenleisten-Tab **Zusammenfassung** geöffnet
-und Sie können die Zusammenfassung lesen. Die Zusammenfassung wird erstellt,
-wenn Sie ein Ticket öffnen.
+If the feature is activated, a summary of the ticket is generated when a
+ticket is opened. An indicator shows up on the **AI summary** sidebar tab to
+show you that a summary has been generated.
 
 ![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
 für die Ticket-Zusammenfassung und der
@@ -44,11 +42,6 @@ aktiviert sind, können Sie sogar einzelne Elemente oder alle vorgeschlagenen
 nächsten Schritte zu einer [Checkliste](../advanced-features#checklists)
 hinzufügen, um den Überblick über die offenen Aufgaben in diesem Ticket zu
 behalten.
-
-Wenn Sie das Banner unter den Artikeln nicht sehen möchten, können Sie es
-dauerhaft ausblenden. Um das Banner wieder zu sehen, gehen Sie zu
-**Aussehen** in Ihren [Profileinstellungen](../manage-profile) und
-aktivieren Sie es wieder, indem Sie das Kontrollkästchen anklicken.
 
 ## Smart Editor
 
