@@ -12,12 +12,12 @@ title: 'Elasticsearch 7 installieren'
 Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird
 aber _dringend_ empfohlen.
 
-Elasticsearch offers different versions. Currently, the versions 7, 8 and 9
-are supported by Zammad. For installation instructions, you should first and
-foremost follow [Elastic's installation
-documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Use the dropdown in the top right corner to choose which version you want to
-install.
+Elasticsearch bietet verschiedene Versionen an. Derzeit werden die Versionen
+7, 8 und 9 von Zammad unterstützt. Für die Installationsanweisungen sollten
+Sie in erster Linie der
+[Installations-Dokumentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}
+folgen.  Verwenden Sie das Dropdown-Menü in der oberen rechten Ecke, um die
+Version auszuwählen, die Sie installieren möchten.
 
 Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu
 installieren ist), finden Sie unten die konsolidierten
@@ -26,9 +26,9 @@ möglicherweise früher eingestellt wird als bei darauffolgenden Versionen,
 die außerdem einige zusätzliche Sicherheitsfunktionen enthalten.
 
 :::info
-If you install Elasticsearch >= 8 and want to follow our
-[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure to copy/save the password which is
-shown during the installation of Elasticsearch.
+Wenn Sie Elasticsearch >= 8 installieren und unserer
+[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher, dass Sie das Passwort kopieren/speichern, das
+während der Installation von Elasticsearch angezeigt wird.
 :::
 
 ## Elasticsearch 7 installieren

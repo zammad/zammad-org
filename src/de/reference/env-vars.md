@@ -16,16 +16,16 @@ Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kuberne
 
 :::details **How to set an environment variable?**
 
-It depends on how you installed Zammad (source, package, docker). Either set it via `zammad config` command as you can
-see below, use your system's way of setting variables via command line (e.g. `export VARIABLE=value`), place an `.env`
-file in the directory or even use a GUI like Portainer to define them for a docker installation.
+Es hängt davon ab, wie Sie Zammad installiert haben (Source, Paket, Docker). Entweder setzen Sie sie über den Befehl `zammad config`, wie
+unten zu sehen, nutzen die Möglichkeit Ihres Systems, Variablen über die Kommandozeile zu setzen (z.B. `export VARIABLE=value`), legen eine `.env`
+Datei im Verzeichnis ab oder Sie verwenden sogar ein GUI wie Portainer, um Variablen für eine Docker-Installation zu setzen.
 
-Examples for package installations:
+Beispiele für Paketinstallationen:
 
-**Set OPTION to "value":**
+**OPTION auf "Wert" setzen:**
 
 ```sh
-zammad config:set OPTION=value
+zammad config:set OPTION=Wert
 
 ```
 
@@ -43,7 +43,7 @@ zammad config:unset OPTION
 
 ```
 
-**Restart Zammad:**
+**Neustart Zammad:**
 
 ```sh
 systemctl restart zammad

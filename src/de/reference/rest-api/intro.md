@@ -142,13 +142,12 @@ Da Zammad die Anzahl der zurückgegebenen Objekte aus Leistungsgründen
 begrenzt, müssen Sie an einigen Stellen eine Paginierung verwenden.
 
 :::info
-**Number of returned objects:** Zammad has hard limits for the
-maximum returned objects. You can't raise these limits.
+**Anzahl der zurückgegebenen Objekte:** Zammad hat eine fest programmierte Grenze für die
+maximal zurückgegebenen Objekte. Sie können diese Grenze nicht überschreiten.
 
-**Number of total to return objects:** Zammad does not provide a total count of
-objects available for your query, unless you explicitly request it. To include
-the amount of search results, use the `with_total_count` or `only_total_count`
-parameter.
+**Gesamtzahl der zurückzugebenden Objekte:** Zammad gibt keine Gesamtzahl der
+Objekte zurück, die in der Antwort enthalten sind, es sei denn, Sie fordern dies ausdrücklich an. Um
+die Anzahl der Suchergebnisse einzubeziehen, verwenden Sie den Parameter `with_total_count` oder `only_total_count`.
 :::
 
 Um die Paginierung zu verwenden, benötigen Sie zwei get-Optionen: `per_page`
@@ -213,10 +212,10 @@ einer `total_count` genannten Gesamtzahl der Suchergebnisse.
 
 #### With Total Count Parameter
 
-Using this parameter will additionally output the amount of search results.
-It can be combined with `full` and `expand`.
+Mit diesem Parameter wird zusätzlich die Anzahl der Suchergebnisse
+ausgegeben.  Er kann mit `full` und `expand` kombiniert werden.
 
-`GET`-Request sent:
+`GET`-Request gesendet:
 `/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
 
 ::: details Show response
@@ -252,10 +251,11 @@ Parameter unterscheiden sich von denen der Endpunktsuche.
 
 ### Bedingungsabhängige Suche
 
-You can even use conditions like for triggers and schedulers to search via
-API. If you don't want to build such conditions manually, you can find a
-hint below how to quickly build a condition structure via UI and fetch it
-for your API request.
+Sie können sogar Bedingungen wie in Triggern und Automatisierungen
+verwenden, um über die API zu suchen. Wenn Sie solche Bedingungen nicht
+manuell erstellen möchten, finden Sie unten einen Hinweis, wie Sie schnell
+eine Bedingungsstruktur über die Benutzeroberfläche erstellen und für Ihre
+API-Anfrage abrufen können.
 
 Wie kann ich also eine solche bedingungsabhängige Anfrage erstellen?
 
@@ -337,4 +337,5 @@ Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
 Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
 sein
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
+**P**rogramming **I**nterface)

@@ -17,71 +17,70 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
 
 ## Zammad
 
-`VERSION` <Badge type="info" text="<current stable version of Zammad>"/>
-: Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you
-  update your Zammad docker stack. Please see the
-  [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on
-  this variable.
+`VERSION` <Badge type="info" text="<aktuelle stabile Version von Zammad>"/>
+: Ermöglicht die Anpassung des Zammad Image Tags. Beispiel: `6.3.1-54`.
+  Diese Standardversion kann erhöht werden, wenn Sie Ihren Zammad-Docker
+  Stack aktualisieren. Weitere Details zu dieser Variable finden Sie in der (Beispiel env Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
 
 `AUTOWIZARD_JSON`
-: This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of
-  this documentation, however this example file should help.
+: Diese Variable ermöglicht es Ihnen, die anfänglichen Konfigurationsdaten für Ihre Instanz bereitstellen. Autowizard JSON ist nicht Gegenstand dieser Dokumentation,
+  aber diese Beispiel-Datei sollte helfen.
 
-`ZAMMAD_HTTP_TYPE` : Set the http type (http/https) for your instance.
+`ZAMMAD_HTTP_TYPE`: Legt den http-Typ (http/https) Ihrer Instanz fest.
 
-`ZAMMAD_FQDN` : Set the FQDN for your instance.
+`ZAMMAD_FQDN`: Legen Sie den FQDN für Ihre Instanz fest.
 
 `ZAMMAD_WEB_CONCURRENCY`
-: Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:
-  [Configuration via Environment Variables](env-vars).
+: Erlaubt das Erzeugen von `n` Workern, um mehrere gleichzeitige Verbindungen für
+  Zammads Web-UI zu ermöglichen. Siehe auch: [Konfiguration per Umgebungsvariablen](env-vars).
 
-  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-railsserver's CPU setting
-  should match the value from this variable.
-
-`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`
-: Allows spawning `n` independent session jobs workers to release pressure from Zammad's background worker. See also:
-  [Configuration via Environment Variables](env-vars).
-
-  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
-  should match the sum of all worker settings variables.
+  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-railsserver
+  dem Wert dieser Variable entsprechen.
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
-: Allows spawning `1` independent scheduled job worker to reduce pressure from Zammad's background worker. See also:
-  [Configuration via Environment Variables](env-vars).
+: Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.
+  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).
 
-  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
-  should match the sum of all worker settings variables.
+  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-scheduler
+  mit der Summe aller Variablen der Worker-Einstellungen übereinstimmen.
+
+`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
+: Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.
+  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).
+
+  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-scheduler
+  mit der Summe aller Variablen der Worker-Einstellungen übereinstimmen.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
-: Allows spawning `n` delayed job workers to reduce pressure from Zammad's background worker. See also:
-  [Configuration via Environment Variables](env-vars).
+: Erlaubt das Erzeugen von n Workern für verzögerten Aufgaben, um Zammads
+  Background-Worker zu entlasten. Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).
 
-  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting
-  should match the sum of all worker settings variables.
+  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-scheduler
+  mit der Summe aller Variablen der Worker-Einstellungen übereinstimmen.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="info" text="127.0.0.1,::1"/>
-: This setting is important for the correct detection of client IP addresses and features based on it, like rate
-  limiting.
+: Diese Einstellung ist wichtig für die korrekte Erkennung von Client IP Adressen und darauf basierenden Funktionen, wie z.B. Rate
+  Limiting.
 
-  By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address
-  (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever
-  the IP address of a proxy server changes.
+  Standardmäßig vertraut Zammad nur Localhost-Proxys. Zusätzliche Proxyserver müssen hier hinzugefügt werden, entweder mit IP-Adresse
+  (falls statisch) oder über den Hostnamen. Hostnamen werden beim Start von Zammad aufgelöst, so dass ein Neustart erforderlich ist,
+  wenn sich die IP-Adresse eines Proxy-Servers ändert.
 
-  Note that in docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address,
-  if it is placed in another network.
+  Beachten Sie, dass Zammad im Docker-Kontext möglicherweise die IP-Adresse des Netzwerk-Gateways anstelle der tatsächlichen IP-Adresse des Proxy-Servers sieht,
+  wenn er sich in einem anderen Netzwerk befindet.
 
 `MEMCACHE_SERVERS` <Badge type="info" text="zammad-memcached:11211"/>
 : Stellen Sie Zammad Ihre eigene Memcached-Instanz zur Verfügung, wenn Sie bereits eine haben.
 
 `REDIS_URL` <Badge type="info" text="redis://zammad-redis:6379"/>
-: Provide your own Redis instance if you already have one. Please note that this method currently does not allow
-  authentication.
+: Geben Sie Ihre eigene Redis-Instanz an, wenn Sie bereits eine haben. Bitte beachten Sie, dass
+ diese Methode derzeit keine Authentifizierung erlaubt.
 
 ## Elasticsearch
 
 `ELASTICSEARCH_ENABLED` <Badge type="info" text="true"/>
-: Setting this variable to false will allow you to run your Zammad without Elasticsearch. Please note that we strongly
-  advise against doing so.
+: Wenn Sie diese Variable auf false setzen, können Sie Ihr Zammad ohne
+Elasticsearch verwenden. Bitte beachten Sie, dass wir dringend davon abraten.
 
 `ELASTICSEARCH_HOST` <Badge type="info" text="zammad-elasticsearch"/>
 : Geben Sie einen Hostnamen oder eine Adresse für Ihr Elasticsearch-Cluster an.
@@ -93,19 +92,20 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
 : Standardmäßig ist Elasticsearch über HTTP erreichbar.
 
 `ELASTICSEARCH_NAMESPACE` <Badge type="info" text="zammad"/>
-: With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
+: Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie dies
+  wenn Sie externe Cluster verwenden.
 
 `ELASTICSEARCH_REINDEX`
-: The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex
-  manually, either set this variable to `true` or run the reindex command via docker manually.
+: Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden kann. Wenn Sie den Suchindex manuell neu aufbauen müssen,
+  setzen Sie entweder diese Variable auf `true` oder führen Sie den Reindex-Befehl über Docker manuell aus.
 
 `ELASTICSEARCH_SSL_VERIFY` <Badge type="info" text="true"/>
-: Allows you to let the compose scripts ignore self signed SSL certificates for your Elasticsearch installation if
-  needed.
+: Ermöglicht es Ihnen, dass die Compose-Skripte selbstsignierte SSL-Zertifikate
+  für Ihre Elasticsearch-Installation ignorieren, falls erforderlich.
 
 `ELASTICSEARCH_HEAP_SIZE` <Badge type="info" text="1G"/>
-: Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this
-  value to a reasonable size.
+: Legt den verfügbaren Arbeitsspeicher für Elasticsearch fest. Wenn Sie Probleme mit ES und seiner Leistung haben, sollten Sie diesen
+  Wert auf eine angemessene Größe erhöhen.
 
 ## PostgreSQL
 
@@ -119,10 +119,10 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
 : Der Datenbank-Benutzer für Zammad.
 
 `POSTGRESQL_PASS` <Badge type="info" text="zammad"/>
-: The password of Zammad's database user.
+: Das Passwort von Zammads Datenbank-Benutzer.
 
 `POSTGRESQL_DB` <Badge type="info" text="zammad_production"/>
-: Zammad's database to use.
+: Zammads zu verwendende Datenbank.
 
 `POSTGRESQL_OPTIONS` <Badge type="info" text="?pool=50"/>
 : Zusätzliche postgresql-Parameter, die an den Datenbank-URI angehängt werden.
@@ -136,30 +136,30 @@ automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen ü
 ## Nginx
 
 `NGINX_EXPOSE_PORT` <Badge type="info" text="8080"/>
-: The port to be exposed for accessing the Zammad stack from outside. Change this to another value if you already have
-  an existing service listening on this port.
+: Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern
+  Sie diesen Wert auf einen anderen, wenn Sie bereits einen Dienst haben, der auf diesem Port lauscht.
 
 `NGINX_PORT` <Badge type="info" text="8080"/>
 : Der interne Port, an dem der nginx-Dienst lauschen soll.
 
 `NGINX_SERVER_NAME` <Badge type="info" text="_"/>
-: By default the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
+: Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das möchten.
 
 `NGINX_SERVER_SCHEME` <Badge type="info" text="\$scheme"/>
-: If the Nginx container for Zammad is not the upstream server (means if you are using another proxy in front of nginx)
-  you might want to change this. You can set the correct scheme `http` or `https` if needed.
+: Wenn der Nginx-Container für Zammad nicht der Upstream-Server ist (d.h. wenn Sie einen anderen Proxy vor Nginx verwenden), möchten Sie
+  dies vielleicht ändern. Sie können das richtige Schema `http` oder `https` einstellen, falls nötig.
 
-`NGINX_CLIENT_MAX_BODY_SIZE` : Define the maximum size of data that a client
-can send to the server.
+`NGINX_CLIENT_MAX_BODY_SIZE`: Definiert die maximale Größe der Daten, die
+ein Client an den Server senden kann.
 
 ZAMMAD_RAILSSERVER_HOST` <Badge type="info" text="zammad-railsserver"/>
 : Hostname des Rails-Server-Containers.
 
 `ZAMMAD_RAILSSERVER_PORT` <Badge type="info" text="3000"/>
-: Port of Zammad's rails server.
+: Port von Zammads Rails-Server.
 
 `ZAMMAD_WEBSOCKET_HOST` <Badge type="info" text="zammad-websocket"/>
-: Host name of Zammad's websocket server.
+: Hostname von Zammads Websocket-Server.
 
 `ZAMMAD_WEBSOCKET_PORT` <Badge type="info" text="6042"/>
 : Port des Websocket-Servers von Zammad.

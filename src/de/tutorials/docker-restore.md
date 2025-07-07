@@ -23,10 +23,11 @@ der integrierte Backup- und Restore-Prozess von Zammad nicht aktiviert wird.
 Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess
 von Zammads Docker Compose Stack.
 
-If you're familiar with docker, the sections below include the information
-you'll need. The [docker file handling](/en/tutorials/docker-file-handling)
-page covers some examples about how to handle the backup files and to copy
-it into a docker volume to restore it.
+Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt unten die
+Informationen, die Sie benötigen. Die Seite [Docker Datei
+Handling](/de/tutorials/docker-file-handling) enthält einige Beispiele für
+den Umgang mit Sicherungsdateien und das Kopieren in ein Docker-Volume, um
+es wiederherzustellen.
 
 ## Backup
 

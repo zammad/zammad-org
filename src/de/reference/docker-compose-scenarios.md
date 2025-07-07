@@ -29,8 +29,8 @@ Die folgenden Szenarien werden unterstützt und weiter unten erläutert:
   - Einen Host-Port zu Elasticsearch hinzufügen
 - [Zusätzliche Szenarien](#zusatzliche-szenarien)
   - Deaktivieren des Backup-Dienstes
-  - Add an Ollama instance to the stack
-  - Limit hardware resources of the stack
+  - Ollama zum Stack hinzufügen
+  - Hardware-Ressourcen des Stacks begrenzen
 
 Sie finden die Dateien im
 [Zammad-Docker-Compose-Repository](https://github.com/zammad/zammad-docker-compose){target=_blank}.
@@ -190,31 +190,31 @@ sparen.
 Sie können dies tun, indem Sie einfach die Szenariodatei
 `scenarios/disable-backup-service.yml` in Ihrem Stack verwenden.
 
-### Add Ollama
+### Ollama hinzufügen
 
-You can spin up an additional [Ollama](https://ollama.com/) container to use
-Zammad's AI features on your machine.
+Sie können einen zusätzlichen [Ollama](https://ollama.com/)-Container
+starten, um die KI-Funktionen von Zammad auf Ihrem Rechner zu nutzen.
 
 ::: info
-This is intended for development or testing purposes as running a productive LLM stack is complex.
+Dies ist für Entwicklungs- oder Testzwecke gedacht, da der Betrieb eines produktiven LLM-Stacks komplex ist.
 :::
 
-To deploy an Ollama container inside the Zammad stack, use the scenario file
-`scenarios/add-ollama.yml`. This creates an Ollama container which
-automatically pulls and serves ``Llama3.2`` to be ready to use/test AI
-features out of the box.
+Um einen Ollama-Container innerhalb des Zammad Stacks einzusetzen, verwenden
+Sie die Szenario-Datei `scenarios/add-ollama.yml`. Dadurch wird ein
+Ollama-Container erstellt, der automatisch ``Llama3.2`` abruft und
+bereitstellt, um KI-Funktionen sofort nutzen und testen zu können.
 
-To use it in Zammad, add the service name and port (`http://ollama:11434`)
-to the provider configuration.
+Um ihn in Zammad zu verwenden, fügen Sie den Dienstnamen und den Port
+(`http://ollama:11434`) in der Anbieterkonfiguration hinzu.
 
-### Limit Resources
+### Ressourcen begrenzen
 
-If you want to limit the hardware resources the Zammad stack is allowed to
-use, use the `scenarios/apply-resource-limits.yml` scenario. Default values
-for CPU and memory usage for each container in the stack are applied
-then. You can find these default values in the ``.env.dist`` file. Provide
-the changed variables you want to use as environment variables and deploy
-the stack.
+Wenn Sie die Hardwareressourcen, die der Zammad Stack verwenden darf,
+einschränken möchten, verwenden Sie das Szenario
+`scenarios/apply-resource-limits.yml`. Es werden dann Standardwerte für die
+CPU- und Arbeitsspeichernutzung für jeden Container im Stack angewendet. Sie
+können diese Standardwerte in der Datei `.env.dist` finden. Passen Sie die
+gewünschten Variablen an und starten Sie den Stack.
 
 ### Andere Anwendungsfälle
 

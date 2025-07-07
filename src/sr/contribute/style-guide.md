@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: ğŸ› ï¸
+    icon: "ğ\x9F\x9B ï¸\x8F"
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank

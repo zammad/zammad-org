@@ -415,7 +415,7 @@ existierenden Elasticsearch-Instanz verbinden wollen, stellen Sie sicher,
 dass Sie eine unterstützte Version verwenden und werfen Sie einen Blick auf
 unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `7.8` - `9.x`.
+Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`.
 
 :::details Elasticsearch version history
 
