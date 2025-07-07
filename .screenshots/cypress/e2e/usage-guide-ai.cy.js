@@ -29,7 +29,7 @@ describe('AI screenshots', () => {
     })
     cy.visit('/desktop/tickets/2')
     cy.wait(3000) // loading
-    cy.get('button').contains('See Summary').click()
+    cy.get('[aria-label="Summary"]').click()
     cy.get('#content-sidebar').highlight()
     cy.screenshot('ai-ticket-summary-sidebar')
   })
