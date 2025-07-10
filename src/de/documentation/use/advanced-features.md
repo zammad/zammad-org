@@ -39,8 +39,8 @@ Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
   _geschlossen_ gesetzt wird.
 
 ::: tip
-Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten** lassen und die Tastenkombination
-[[Umschalt]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.
+If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
+[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
 ## Textbausteine
@@ -50,7 +50,10 @@ Textbausteine-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticke
 
 **Warum?**
 
-Die Verwendung von Textbausteinen hat Vorteile wie:
+If you have to answer the same question again and again, ask your Zammad
+admin to create such a text module for you.  They can even include variables
+like customer name or any other available attribute which get replaced while
+using it in a ticket. The usage of text modules has benefits like:
 
 - Sie sparen Zeit bei der Beantwortung von Tickets
 - Die Antworten von Ihnen und Ihren Kollegen sind aufeinander abgestimmt, da
@@ -58,22 +61,35 @@ Die Verwendung von Textbausteinen hat Vorteile wie:
 
 **Wie?**
 
-Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein,
-gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins.
+Use the button in the toolbar of the editor or simply write `::` in the
+editor. Both ways let you search for the desired text module by typing some
+characters or words of the text or keywords of the text module.
 
-Sie können einen auswählen, indem Sie ihn anklicken oder die Pfeiltasten
-nach oben und unten, gefolgt von [[Enter]], auf Ihrer Tastatur benutzen. Es
-gibt einige Textbausteine in Zammad, die standardmäßig mitgeliefert werden.
+You can pick one by clicking on it or by using the up and down arrows
+followed by [[enter]] on your keyboard. There are some text modules in
+Zammad which are shipped by default.
 
-Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren
-Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie
-können sogar Variablen wie den Namen des Kunden oder jedes andere verfügbare
-Attribut einfügen, die bei der Verwendung in einem Ticket ersetzt werden.
+## Insert Knowledge Base Article
+
+![Screenshot shows inserting knowledge base
+article](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
+
+**Warum?**
+
+If you often have the same or very similar customer requests about an issue
+of which a knowledge base article exists.  This saves you time because you
+don't have to switch to the knowledge base and copy/paste content.
+
+**Wie?**
+
+Use the button in the toolbar of the editor or simply write `??` in the
+editor. Both ways let you search for the desired knowledge base article by
+typing some characters or words.
 
 ## Erwähnen von Kollegen
 
-![Screenshot zeigt
-Erwähnungs-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a
+colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Warum?**
 
@@ -83,8 +99,9 @@ und dieses Ticket abonnieren.
 
 **Wie?**
 
-Wenn Sie einen Ticket-Artikel verfassen, geben Sie einfach `@@` und einige
-Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten.
+While writing a ticket article, use the button in the toolbar of the editor
+or simply type `@@`. Both ways let you search for the name of the colleague
+you want to mention by typing some characters or the complete name.
 
 Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und

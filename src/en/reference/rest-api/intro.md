@@ -164,7 +164,7 @@ The following endpoints support a search query as well, but they are not
 explicitly covered in this documentation:
 
 - Chat Sessions
-- Knowledgebase
+- Knowledge base
 - Macros
 - Overview
 - Templates
@@ -229,7 +229,7 @@ search results.
 
 If you need to search not only in a specific object type, you can do so
 by using the global search without specifying an object. The response
-may include users, tickets, organizations, knowledgebase articles and
+may include users, tickets, organizations, knowledge base articles and
 answers and chats, depending on your system and content. This global
 search behaves like the search in Zammad's UI in the left task bar. The
 available parameters are different to the ones for the endpoint search.

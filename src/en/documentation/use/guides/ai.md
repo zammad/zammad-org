@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Zammad AI
 ---
 
@@ -35,21 +35,21 @@ Depending on the configuration of your Zammad instance, the summary includes the
 If suggested next steps and the checklist feature are activated, you can even add single items or all the suggested next
 steps to a [checklist](../advanced-features#checklists) to keep track of the open tasks in this ticket.
 
-## Smart Editor
+## AI Assistant Text Tools
 
 The new AI-powered smart editor is designed to simplify and enhance your ticket response workflow. It helps you with
 text tools while you create an article.
 
 To use any of the following features, you first have to select text you want to apply the changes to. After that,
-click the **Smart Editor** link at the bottom of the article creation and choose one of the following features,
-depending on what you want to perform.
+click the **AI Assistant text tools** button at the left side of the editor toolbar and choose one of the following
+functions, depending on what you want to perform.
 
 ![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 
 :::warning
 
 - Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[Ctrl]] + [[z]].
+  try using the undo feature by pressing [[ctrl]] + [[z]].
 - Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
   individual cases due to the nature of neural networks.
 

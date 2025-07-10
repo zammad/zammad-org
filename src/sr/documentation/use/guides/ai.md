@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: 'Zammad AI'
 ---
 
@@ -42,16 +42,16 @@ even add single items or all the suggested next steps to a
 [checklist](../advanced-features#checklists) to keep track of the open tasks
 in this ticket.
 
-## Smart Editor
+## AI Assistant Text Tools
 
 Нови уредник текста са AI побољшањима је дизајниран да поједностави и
 унапреди ваш радни ток обраде тикета. Помаже вам преко текстуалних алатки
 док пишете чланак.
 
-За коришћење излистаних функција, прво морате да обележите текст на који
-желите да се измене примене. Након тога, кликните на **Smart Editor** дугме
-при дну новог чланка и изаберите једну од следећих функција, у зависности од
-жељеног понашања.
+To use any of the following features, you first have to select text you want
+to apply the changes to. After that, click the **AI Assistant text tools**
+button at the left side of the editor toolbar and choose one of the
+following functions, depending on what you want to perform.
 
 ![Screenshot shows Zammad's smart editor
 menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
@@ -59,7 +59,7 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 :::warning
 
 - Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[Ctrl]] + [[z]].
+  try using the undo feature by pressing [[ctrl]] + [[z]].
 - Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
   individual cases due to the nature of neural networks.
 

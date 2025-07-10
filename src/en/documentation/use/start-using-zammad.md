@@ -70,7 +70,7 @@ The main navigation in Zammad is done in this sidebar. It is always visible and 
 overviews and the search, for example.
 
 Zammad immediately saves your current work progress, so you can easily switch between the different areas of Zammad and
-you don't have to be afraid of loosing any data like a not yet sent answer in a ticket.
+you don't have to be afraid of losing any data like a not yet sent answer in a ticket.
 
 ## Finding Tickets
 
@@ -156,7 +156,9 @@ Now that you are aware about some attributes, let's have a look at the ticket de
 The ticket detail view provides all relevant information of a ticket. As its main part, all articles of the ticket are
 shown here. The oldest article (which created the ticket) at the top, the newest at the bottom. Depending on the
 article type, Zammad offers you different ways to react. For text communication based articles, you can directly create
-an answer by using the **reply** button below the article or use the **forward** feature.
+an answer by using the **reply** button below the article or use the **forward** feature. The integrated text editor is
+intuitive and includes buttons in the toolbar to format your text and insert objects like tables or images. If you want
+to learn more about the editor, the [editor guide](guides/editor) includes additional information.
 
 Regardless of the customer's article type, you can always add internal notes. These are useful to add information to
 the ticket or ask a colleague.

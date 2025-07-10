@@ -6,8 +6,21 @@ describe('usage advanced features', () => {
     cy.get('button').contains('note').click()
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('Hello @@et')
-    cy.wait(500)
+    cy.wait(1000)
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-mention', { padding: [10, 0, 0, 0] })
+    cy.get('button').contains('Discard your unsaved changes').click()
+    cy.get('button').contains('Discard Changes').click()
+  })
+
+  it('ticket article kba', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/7')
+    cy.wait(1000) // transition
+    cy.get('button').contains('note').click()
+    cy.wait(500) // transition
+    cy.get('label').contains('Text').click().type('??')
+    cy.wait(1000)
+    cy.get('#ticketArticleReplyForm').screenshot('ticket-article-insert-kba', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
     cy.get('button').contains('Discard Changes').click()
   })
@@ -19,7 +32,7 @@ describe('usage advanced features', () => {
     cy.get('button').contains('note').click()
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('::mr')
-    cy.wait(500)
+    cy.wait(1000)
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-text-template', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
     cy.get('button').contains('Discard Changes').click()

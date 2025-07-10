@@ -15,7 +15,7 @@ These features are described in this documentation as well as some general expla
 
 This documentation is divided into different sections. Currently you are viewing the _General_ section in the
 _Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the
-header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].
+header. You can even activate the search by using the keyboard shortcut [[ctrl]] [[k]].
 
 :::tip
 

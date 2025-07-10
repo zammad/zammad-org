@@ -86,6 +86,7 @@ with some [examples](#examples) about how to format and structure the content.
 - Use a [detail box](#custom-boxes) when content may not be relevant for all the readers or may break the reading
   flow otherwise.
 - If available, use icons for important UI buttons like ::+:: and ::x:: (see [examples](#text-and-ui) below).
+- Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see [examples](#text-and-ui) below).
 - Include screenshots when necessary. The preferred way of adding screenshots of Zammad is by creating them
   automatically
   [using Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
@@ -103,7 +104,7 @@ with some [examples](#examples) about how to format and structure the content.
 The documentation stack includes automated checks (linting) to ensure compliance with the style guide and common rules
 for Markdown files. To check if your changes are compliant, run `pnpm lint` to perform the check. Some of the
 recognized problems can be even fixed automatically by running `pnpm lint:fix`. Make sure to run the check before
-committing your changes. Otherwise the build of the documentation will fail.
+committing your changes. Otherwise, the build of the documentation will fail.
 
 The used linting has some built in rules which you can find in
 [the official repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.

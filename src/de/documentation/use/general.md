@@ -16,9 +16,9 @@ es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
 Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
 allgemeine Erklärungen und Tipps.
 
-Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich
-_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.
-Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.
+This documentation is divided into different sections. Currently you are viewing the _General_ section in the
+_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the
+header. You can even activate the search by using the keyboard shortcut [[ctrl]] [[k]].
 
 :::tip
 

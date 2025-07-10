@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: "�\x9F\x9B��\x8F"
+    icon: 🛠️
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
@@ -109,6 +109,8 @@ order: 2
 - Уколико је могуће, користите иконице за важне елементе корисничког
   интерфејса као што су ::+:: и ::x:: (погледајте
   [примере](#текст-и-интерфејс) испод).
+- Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see
+  [examples](#text-and-ui) below).
 - Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
   Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress
   апликације](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
@@ -126,12 +128,12 @@ order: 2
 
 ### Конвенције
 
-Алати за прављење документације укључују аутоматске провере (linting) да би
-осигурали усклађеност са водичем кроз стил и основним правилима за Markdown
-садржај. Да бисте проверили усклађеност, покрените `pnpm lint` за покретање
-провере. Неки уобичајени проблеми се чак могу и аутоматски поправити
-покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања
-ваших измена. У супротном, генерисање документације неће успети.
+The documentation stack includes automated checks (linting) to ensure
+compliance with the style guide and common rules for Markdown files. To
+check if your changes are compliant, run `pnpm lint` to perform the
+check. Some of the recognized problems can be even fixed automatically by
+running `pnpm lint:fix`. Make sure to run the check before committing your
+changes. Otherwise, the build of the documentation will fail.
 
 Провере користе нека уобичајена правила која можете пронаћи у [званичном
 репозиторију](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.

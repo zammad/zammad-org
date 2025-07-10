@@ -14,9 +14,9 @@ title: Уопштено
 које нису очигледне на први поглед. Ове функције су описане у овој
 документацији као и нека општа објашњења и савети.
 
-Ова документације је подељена на различите одељке. Тренутно читате одељак _Уопштено_ у делу
-_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране за навигацију на жељене информације или претражите у
-заглављу. Можете чак покренути претрагу коришћењем пречице [[Ctrl]] [[k]] на тастатури.
+This documentation is divided into different sections. Currently you are viewing the _General_ section in the
+_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the
+header. You can even activate the search by using the keyboard shortcut [[ctrl]] [[k]].
 
 :::tip
 

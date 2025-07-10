@@ -32,7 +32,7 @@ default is still set, otherwise it is labeled as the other options below). You h
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
-[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
+[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
 ## Text Modules
@@ -41,25 +41,38 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 
 **Why?**
 
-The usage of text modules has benefits like:
+If you have to answer the same question again and again, ask your Zammad admin to create such a text module for you.
+They can even include variables like customer name or any other available attribute which get replaced while using it
+in a ticket. The usage of text modules has benefits like:
 
 - You save time while answering tickets
 - Answers from you and your colleagues are aligned because you use the same text for answers
 
 **How?**
 
-To use text modules simply type `::` in the editor followed by parts of the name or keyword of the text module.
+Use the button in the toolbar of the editor or simply write `::` in the editor. Both ways let you search for the desired
+text module by typing some characters or words of the text or keywords of the text module.
 
-You can pick one by clicking on it or by using the up and down arrows followed by [[Enter]] on your keyboard. There are
+You can pick one by clicking on it or by using the up and down arrows followed by [[enter]] on your keyboard. There are
 some text modules in Zammad which are shipped by default.
 
-If you have to answer the same question again and again, ask your Zammad admin to create such a text module for you.
-They can even include variables like customer name or any other available attribute which get replaced while using it
-in a ticket.
+## Insert Knowledge Base Article
+
+![Screenshot shows inserting knowledge base article](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
+
+**Why?**
+
+If you often have the same or very similar customer requests about an issue of which a knowledge base article exists.
+This saves you time because you don't have to switch to the knowledge base and copy/paste content.
+
+**How?**
+
+Use the button in the toolbar of the editor or simply write `??` in the editor. Both ways let you search for the desired
+knowledge base article by typing some characters or words.
 
 ## Mention a Colleague
 
-![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Why?**
 
@@ -68,8 +81,8 @@ ticket updates and are automatically subscribed to this ticket.
 
 **How?**
 
-While writing a ticket article, simply type `@@` and enter some letters of the name of the colleague you want to
-mention.
+While writing a ticket article, use the button in the toolbar of the editor or simply type `@@`. Both ways let you
+search for the name of the colleague you want to mention by typing some characters or the complete name.
 
 Zammad displays a list with all possible matches where you can pick one by clicking on it or by using the up and down
 arrows followed by [[enter]] on your keyboard.
