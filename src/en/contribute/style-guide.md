@@ -86,7 +86,7 @@ with some [examples](#examples) about how to format and structure the content.
 - Use a [detail box](#custom-boxes) when content may not be relevant for all the readers or may break the reading
   flow otherwise.
 - If available, use icons for important UI buttons like ::+:: and ::x:: (see [examples](#text-and-ui) below).
-- Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see [examples](#text-and-ui) below).
+- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see [examples](#text-and-ui) below).
 - Include screenshots when necessary. The preferred way of adding screenshots of Zammad is by creating them
   automatically
   [using Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.

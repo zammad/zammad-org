@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Wenn Sie unsicher sind, ob Zammad das richtige Werkzeug ist, probieren Sie es mit einer kostenlosen Testversion aus.'
-    icon: "ğ\x9F§ª"
+    icon: ğŸ§ª
     link: https://zammad.com/de/getting-started
     target: _blank
     title: 'Kostenlose Testversion'
@@ -15,7 +15,7 @@ features:
     title: 'Zammad Hosting-Services'
   - 
     details: 'Sie kÃ¶nnen Zammad sogar selbst hosten. Eine Installationsanleitung finden Sie hier.'
-    icon: "ğ\x9F\x96¥ï¸\x8F"
+    icon: ğŸ–¥ï¸
     link: /de/get-started/installation/prerequisites
     title: Self-Hosting
 order: 1

@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: "�\x9F\x9B��\x8F"
+    icon: 🛠️
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
@@ -109,7 +109,7 @@ order: 2
 - Уколико је могуће, користите иконице за важне елементе корисничког
   интерфејса као што су ::+:: и ::x:: (погледајте
   [примере](#текст-и-интерфејс) испод).
-- Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see
+- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see
   [examples](#text-and-ui) below).
 - Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
   Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress

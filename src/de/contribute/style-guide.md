@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: "�\x9F\x9B��\x8F"
+    icon: 🛠️
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
@@ -113,7 +113,7 @@ strukturieren können.
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
 - Falls vorhanden, verwenden Sie Icons für wichtige UI-Buttons wie ::+:: und
   ::x:: (siehe [Beispiele](#text-and-ui) unten).
-- Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see
+- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see
   [examples](#text-and-ui) below).
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
   von Zammad hinzuzufügen, ist, sie automatisch [mit
