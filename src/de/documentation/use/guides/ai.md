@@ -21,9 +21,10 @@ Die Ticket-Zusammenfassung tut, was der Name sagt: Sie fasst den Inhalt des
 Tickets zusammen. Dies kann bei großen Tickets und/oder vielen Wechseln
 zwischen Agenten eine enorme Zeitersparnis bedeuten.
 
-If the feature is activated, a summary of the ticket is generated when a
-ticket is opened. An indicator shows up on the **AI summary** sidebar tab to
-show you that a summary has been generated.
+Wenn die Funktion aktiviert ist, wird eine Zusammenfassung des Tickets
+erstellt, wenn ein Ticket geöffnet wird. Auf dem Seitenleisten-Tab
+**KI-Zusammenfassung** wird ein Indikator eingeblendet, der Ihnen anzeigt,
+dass eine Zusammenfassung erstellt wurde.
 
 ![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
 für die Ticket-Zusammenfassung und der

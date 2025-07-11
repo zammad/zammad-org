@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-07 10:40+0200\n"
+"POT-Creation-Date: 2025-07-10 12:28+0200\n"
 "PO-Revision-Date: 2025-06-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -959,7 +959,7 @@ msgid "Style"
 msgstr "Стил"
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Use short and clear sentences and prioritize information over complexity."
 msgstr ""
@@ -967,7 +967,7 @@ msgstr ""
 "сложеност."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Page title and headings: capitalize the first letter of all words except "
 "minor words (see [title case](https://en.wikipedia.org/wiki/Title_case)"
@@ -978,7 +978,7 @@ msgstr ""
 "{target=_blank})."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Use breadcrumb separation for paths and locations with `>` as separator and "
 "format path in italics, e.g.  _Settings > Channels > Chat_."
@@ -987,21 +987,21 @@ msgstr ""
 "курзиву, нпр. _Подешавања > Канали > Ћаскање_."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "Use code highlighting to emphasize programming snippets."
 msgstr ""
 "Користите назначавање изворног кода да бисте нагласили секције о програмском "
 "језику."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "Use [info, tip, warning and danger boxes](#custom-boxes) when needed."
 msgstr ""
 "Користите [оквире са информацијама, саветима и упозорењима](#прилагођени-"
 "оквири) по потреби."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Use a [detail box](#custom-boxes) when content may not be relevant for all "
 "the readers or may break the reading flow otherwise."
@@ -1010,7 +1010,7 @@ msgstr ""
 "релевантан за све читаоце и има потенцијал да прекине ток мисли)."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "If available, use icons for important UI buttons like ::+:: and ::x:: (see "
 "[examples](#text-and-ui) below)."
@@ -1020,7 +1020,14 @@ msgstr ""
 "интерфејс) испод)."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
+msgid ""
+"Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see "
+"[examples](#text-and-ui) below)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Include screenshots when necessary. The preferred way of adding screenshots "
 "of Zammad is by creating them automatically [using Cypress](https://"
@@ -1039,22 +1046,22 @@ msgstr ""
 "Cypress-а изван обима ове документације."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "Provide step-by-step instructions with clear explanations."
 msgstr "Приложите упутства корак по корак са јасним објашњењима."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "Use examples or scenarios to illustrate concepts."
 msgstr "Користите примере или сценарије да илуструјете концепте."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "Include relevant images or diagrams when necessary."
 msgstr "Убаците релевантне слике или дијаграме по потреби."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid ""
 "Spell abbreviations full the first time they are used or include them in the "
 "glossary and link to them. Broadly used and common abbreviations may be "
@@ -1065,25 +1072,33 @@ msgstr ""
 "искључене из овог правила."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:100
+#: src/en/contribute/style-guide.md:101
 msgid "If in doubt, align it to the existing documentation."
 msgstr "Ако сте у недоумици, ускладите се са постојећом документацијом."
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:101
+#: src/en/contribute/style-guide.md:102
 #, no-wrap
 msgid "Conventions"
 msgstr "Конвенције"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:107
+#: src/en/contribute/style-guide.md:108
+#, fuzzy
+#| msgid ""
+#| "The documentation stack includes automated checks (linting) to ensure "
+#| "compliance with the style guide and common rules for Markdown files. To "
+#| "check if your changes are compliant, run `pnpm lint` to perform the "
+#| "check. Some of the recognized problems can be even fixed automatically by "
+#| "running `pnpm lint:fix`. Make sure to run the check before committing "
+#| "your changes. Otherwise the build of the documentation will fail."
 msgid ""
 "The documentation stack includes automated checks (linting) to ensure "
 "compliance with the style guide and common rules for Markdown files. To "
 "check if your changes are compliant, run `pnpm lint` to perform the check. "
 "Some of the recognized problems can be even fixed automatically by running "
 "`pnpm lint:fix`. Make sure to run the check before committing your changes. "
-"Otherwise the build of the documentation will fail."
+"Otherwise, the build of the documentation will fail."
 msgstr ""
 "Алати за прављење документације укључују аутоматске провере (linting) да би "
 "осигурали усклађеност са водичем кроз стил и основним правилима за Markdown "
@@ -1093,7 +1108,7 @@ msgstr ""
 "ваших измена. У супротном, генерисање документације неће успети."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:111
+#: src/en/contribute/style-guide.md:112
 msgid ""
 "The used linting has some built in rules which you can find in [the official "
 "repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/"
@@ -1106,7 +1121,7 @@ msgstr ""
 "су излистана испод."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "Line length of 120 characters in the source file may not be exceeded for "
 "standard text. Make sure to use a line break before reaching this limit. A "
@@ -1119,18 +1134,18 @@ msgstr ""
 "на специјалан садржај као путање на снимке екрана и дугачке везе."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid "Multiple consecutive empty lines are not allowed."
 msgstr "Више узастопних празних редова није дозвољено."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "Empty lines before and after headings and fenced code blocks are required."
 msgstr "Празни редови пре и после наслова и блокова кôда су обавезни."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory "
 "language tag, e.g. `ruby` or `sh`. If no language is applicable, use `plain`."
@@ -1140,12 +1155,12 @@ msgstr ""
 "конкретан језик, користите `plain`."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid "Use `-` for bullet point lists (unordered lists) like this one."
 msgstr "Користите `-` за листу са тачкама (неуређене листе) као што је ова."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "To easily distinguish between **bold** and _italics_, use `_` around the "
 "text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`)."
@@ -1155,17 +1170,17 @@ msgstr ""
 "`**подебљано**`)."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid "Multiple headings with the same content are not allowed."
 msgstr "Вишеструки наслови са идентичним садржајем нису дозвољени."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid "Each document must have exactly one `h1` heading as title."
 msgstr "Сваки документ мора имати само једно `h1` заглавље као наслов."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "Resolution of manual full page screenshots for _mobile view_ is 400x867 "
 "pixels."
@@ -1173,7 +1188,7 @@ msgstr ""
 "Резолуција снимака пуног екрана за _мобилни приказ_ je 400x867 пиксела."
 
 #. type: Bullet: '- '
-#: src/en/contribute/style-guide.md:126
+#: src/en/contribute/style-guide.md:127
 msgid ""
 "Resolution of manual full page screenshots for _desktop view_ is 1920x1080 "
 "pixels."
@@ -1181,19 +1196,19 @@ msgstr ""
 "Резолуција снимака пуног екрана за _основни приказ_ je 1920x1080 пиксела."
 
 #. type: Title ###
-#: src/en/contribute/style-guide.md:127
+#: src/en/contribute/style-guide.md:128
 #, no-wrap
 msgid "Examples"
 msgstr "Примери"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:129
+#: src/en/contribute/style-guide.md:130
 #, no-wrap
 msgid "Text and UI"
 msgstr "Текст и интерфејс"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:140
+#: src/en/contribute/style-guide.md:141
 #, no-wrap
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
@@ -1217,13 +1232,13 @@ msgstr ""
 "| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:141
+#: src/en/contribute/style-guide.md:142
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:145
+#: src/en/contribute/style-guide.md:146
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
 "`# Title`). Levels below should always contain at least two sections. If "
@@ -1234,43 +1249,43 @@ msgstr ""
 "само један одељак, размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:147
+#: src/en/contribute/style-guide.md:148
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:149
+#: src/en/contribute/style-guide.md:150
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:151
+#: src/en/contribute/style-guide.md:152
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:153
+#: src/en/contribute/style-guide.md:154
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:155
+#: src/en/contribute/style-guide.md:156
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:157
+#: src/en/contribute/style-guide.md:158
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:158
+#: src/en/contribute/style-guide.md:159
 #, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:162
+#: src/en/contribute/style-guide.md:163
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
 "badges available, see <https://vitepress.dev/reference/default-theme-"
@@ -1280,7 +1295,7 @@ msgstr ""
 "погледајте <https://vitepress.dev/reference/default-theme-badge#usage>."
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:164
 #, no-wrap
 msgid ""
 "\n"
@@ -1296,13 +1311,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:171
+#: src/en/contribute/style-guide.md:172
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:173
+#: src/en/contribute/style-guide.md:174
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1312,8 +1327,8 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:173 src/en/contribute/style-guide.md:187
-#: src/en/contribute/style-guide.md:201 src/en/contribute/style-guide.md:215
+#: src/en/contribute/style-guide.md:174 src/en/contribute/style-guide.md:188
+#: src/en/contribute/style-guide.md:202 src/en/contribute/style-guide.md:216
 #, no-wrap
 msgid ""
 "\n"
@@ -1323,14 +1338,14 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (info|details Usage|info)
-#: src/en/contribute/style-guide.md:173
+#: src/en/contribute/style-guide.md:174
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Ово је информациони оквир.\n"
 
 #. type: Fenced div block (danger|details Usage)
-#: src/en/contribute/style-guide.md:173 src/en/contribute/style-guide.md:187
-#: src/en/contribute/style-guide.md:201 src/en/contribute/style-guide.md:215
+#: src/en/contribute/style-guide.md:174 src/en/contribute/style-guide.md:188
+#: src/en/contribute/style-guide.md:202 src/en/contribute/style-guide.md:216
 #, no-wrap
 msgid ""
 "```\n"
@@ -1340,7 +1355,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:187
+#: src/en/contribute/style-guide.md:188
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1350,13 +1365,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip|details Usage|tip)
-#: src/en/contribute/style-guide.md:187
+#: src/en/contribute/style-guide.md:188
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:201
+#: src/en/contribute/style-guide.md:202
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1366,13 +1381,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (warning|details Usage|warning)
-#: src/en/contribute/style-guide.md:201
+#: src/en/contribute/style-guide.md:202
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:215
+#: src/en/contribute/style-guide.md:216
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1382,13 +1397,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger|details Usage|warning)
-#: src/en/contribute/style-guide.md:215
+#: src/en/contribute/style-guide.md:216
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:230
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1406,13 +1421,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|details Box title shown in collapsed state)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:230
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr "Овај садржај је приказан у проширеном стању.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:230
 #, no-wrap
 msgid ""
 "\n"
@@ -1424,13 +1439,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:244
+#: src/en/contribute/style-guide.md:245
 #, no-wrap
 msgid "Definition lists"
 msgstr "Листе дефиниција"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:248
+#: src/en/contribute/style-guide.md:249
 #, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1440,7 +1455,7 @@ msgstr ""
 ": Ово је дефиниција првог термина.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:252
+#: src/en/contribute/style-guide.md:253
 #, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1452,7 +1467,7 @@ msgstr ""
 ": Ово је додатна дефиниција другог термина.\n"
 
 #. type: Fenced div block (details Usage)
-#: src/en/contribute/style-guide.md:253
+#: src/en/contribute/style-guide.md:254
 #, no-wrap
 msgid ""
 "\n"
@@ -1472,27 +1487,27 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:263
+#: src/en/contribute/style-guide.md:264
 #, no-wrap
 msgid "Highlighting with Boxes"
 msgstr "Наглашавање са кућицама"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:266
+#: src/en/contribute/style-guide.md:267
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 "За наглашавање различитих опција или варијанти, можете користити кућице."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:268 src/en/documentation/introduction.md:25
+#: src/en/contribute/style-guide.md:269 src/en/documentation/introduction.md:25
 #: src/en/get-started/get-zammad.md:32
 #, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:270
+#: src/en/contribute/style-guide.md:271
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
@@ -1501,7 +1516,7 @@ msgstr ""
 "следећи пример (односи се на кућице изнад):"
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:271
+#: src/en/contribute/style-guide.md:272
 #, no-wrap
 msgid ""
 "\n"
@@ -1547,7 +1562,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:295
+#: src/en/contribute/style-guide.md:296
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1703,20 +1718,21 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:17
 #: src/en/documentation/use/advanced-features.md:43
-#: src/en/documentation/use/advanced-features.md:65
-#: src/en/documentation/use/advanced-features.md:82
-#: src/en/documentation/use/advanced-features.md:97
-#: src/en/documentation/use/advanced-features.md:119
-#: src/en/documentation/use/advanced-features.md:137
-#: src/en/documentation/use/advanced-features.md:175
-#: src/en/documentation/use/advanced-features.md:187
-#: src/en/documentation/use/advanced-features.md:209
-#: src/en/documentation/use/advanced-features.md:236
-#: src/en/documentation/use/advanced-features.md:268
-#: src/en/documentation/use/advanced-features.md:293
-#: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:327
-#: src/en/documentation/use/advanced-features.md:356
+#: src/en/documentation/use/advanced-features.md:64
+#: src/en/documentation/use/advanced-features.md:78
+#: src/en/documentation/use/advanced-features.md:95
+#: src/en/documentation/use/advanced-features.md:110
+#: src/en/documentation/use/advanced-features.md:132
+#: src/en/documentation/use/advanced-features.md:150
+#: src/en/documentation/use/advanced-features.md:188
+#: src/en/documentation/use/advanced-features.md:200
+#: src/en/documentation/use/advanced-features.md:222
+#: src/en/documentation/use/advanced-features.md:249
+#: src/en/documentation/use/advanced-features.md:281
+#: src/en/documentation/use/advanced-features.md:306
+#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:340
+#: src/en/documentation/use/advanced-features.md:369
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Зашто?**\n"
@@ -1734,21 +1750,22 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:22
-#: src/en/documentation/use/advanced-features.md:50
-#: src/en/documentation/use/advanced-features.md:70
-#: src/en/documentation/use/advanced-features.md:87
-#: src/en/documentation/use/advanced-features.md:104
-#: src/en/documentation/use/advanced-features.md:125
-#: src/en/documentation/use/advanced-features.md:144
-#: src/en/documentation/use/advanced-features.md:180
-#: src/en/documentation/use/advanced-features.md:195
-#: src/en/documentation/use/advanced-features.md:219
-#: src/en/documentation/use/advanced-features.md:240
-#: src/en/documentation/use/advanced-features.md:276
-#: src/en/documentation/use/advanced-features.md:298
-#: src/en/documentation/use/advanced-features.md:315
-#: src/en/documentation/use/advanced-features.md:333
-#: src/en/documentation/use/advanced-features.md:361
+#: src/en/documentation/use/advanced-features.md:52
+#: src/en/documentation/use/advanced-features.md:69
+#: src/en/documentation/use/advanced-features.md:83
+#: src/en/documentation/use/advanced-features.md:100
+#: src/en/documentation/use/advanced-features.md:117
+#: src/en/documentation/use/advanced-features.md:138
+#: src/en/documentation/use/advanced-features.md:157
+#: src/en/documentation/use/advanced-features.md:193
+#: src/en/documentation/use/advanced-features.md:208
+#: src/en/documentation/use/advanced-features.md:232
+#: src/en/documentation/use/advanced-features.md:253
+#: src/en/documentation/use/advanced-features.md:289
+#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:328
+#: src/en/documentation/use/advanced-features.md:346
+#: src/en/documentation/use/advanced-features.md:374
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Како?**\n"
@@ -1797,10 +1814,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/advanced-features.md:33
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut\n"
+#| "[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
 msgid ""
 "If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut\n"
-"[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
+"[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
 msgstr ""
 "Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**\n"
 "и користити пречицу на тастатури [[Shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.\n"
@@ -1821,17 +1841,31 @@ msgstr ""
 "usage-advanced-features.cy.js/ticket-article-text-template.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:45
-msgid "The usage of text modules has benefits like:"
-msgstr "Коришћење текстуалних исечака доноси предности као што су:"
+#: src/en/documentation/use/advanced-features.md:47
+#, fuzzy
+#| msgid ""
+#| "If you have to answer the same question again and again, ask your Zammad "
+#| "admin to create such a text module for you.  They can even include "
+#| "variables like customer name or any other available attribute which get "
+#| "replaced while using it in a ticket."
+msgid ""
+"If you have to answer the same question again and again, ask your Zammad "
+"admin to create such a text module for you.  They can even include variables "
+"like customer name or any other available attribute which get replaced while "
+"using it in a ticket. The usage of text modules has benefits like:"
+msgstr ""
+"Уколико ухватите себе да стално одговарате на идентично питање, замолите "
+"вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу "
+"укључивати и променљиве као што су име клијента или било који други атрибут, "
+"које ће бити замењене кад их користите у тикету."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:48
+#: src/en/documentation/use/advanced-features.md:50
 msgid "You save time while answering tickets"
 msgstr "Штедите време приликом одговарања на тикете"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:48
+#: src/en/documentation/use/advanced-features.md:50
 msgid ""
 "Answers from you and your colleagues are aligned because you use the same "
 "text for answers"
@@ -1840,55 +1874,86 @@ msgstr ""
 "одговоре"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:52
-msgid ""
-"To use text modules simply type `::` in the editor followed by parts of the "
-"name or keyword of the text module."
-msgstr ""
-"За коришћење текстуалних исечака, једноставно унесите `::` у уредник текста "
-"а затим део назива или кључну реч исечка."
-
-#. type: Plain text
 #: src/en/documentation/use/advanced-features.md:55
 msgid ""
+"Use the button in the toolbar of the editor or simply write `::` in the "
+"editor. Both ways let you search for the desired text module by typing some "
+"characters or words of the text or keywords of the text module."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:58
+#, fuzzy
+#| msgid ""
+#| "You can pick one by clicking on it or by using the up and down arrows "
+#| "followed by [[Enter]] on your keyboard. There are some text modules in "
+#| "Zammad which are shipped by default."
+msgid ""
 "You can pick one by clicking on it or by using the up and down arrows "
-"followed by [[Enter]] on your keyboard. There are some text modules in "
+"followed by [[enter]] on your keyboard. There are some text modules in "
 "Zammad which are shipped by default."
 msgstr ""
 "Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле "
 "а затим притиском на [[Enter]] на вашој тастатури. Zammad долази са неким "
 "подразумеваним текстуалним исечцима."
 
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:59
-msgid ""
-"If you have to answer the same question again and again, ask your Zammad "
-"admin to create such a text module for you.  They can even include variables "
-"like customer name or any other available attribute which get replaced while "
-"using it in a ticket."
-msgstr ""
-"Уколико ухватите себе да стално одговарате на идентично питање, замолите "
-"вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу "
-"укључивати и променљиве као што су име клијента или било који други атрибут, "
-"које ће бити замењене кад их користите у тикету."
-
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:60
-#, no-wrap
-msgid "Mention a Colleague"
-msgstr "Помените колегу"
+#: src/en/documentation/use/advanced-features.md:59
+#, fuzzy, no-wrap
+#| msgid "Knowledge Base"
+msgid "Insert Knowledge Base Article"
+msgstr "База знања"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:63
+#: src/en/documentation/use/advanced-features.md:62
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
+#| "features.cy.js/ticket-article-mention.png)"
 msgid ""
-"![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
-"features.cy.js/ticket-article-mention.png)"
+"![Screenshot shows inserting knowledge base article](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
 msgstr ""
 "![Снимак екрана приказује функцију помињања](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-article-mention.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:68
+#: src/en/documentation/use/advanced-features.md:67
+msgid ""
+"If you often have the same or very similar customer requests about an issue "
+"of which a knowledge base article exists.  This saves you time because you "
+"don't have to switch to the knowledge base and copy/paste content."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:72
+msgid ""
+"Use the button in the toolbar of the editor or simply write `??` in the "
+"editor. Both ways let you search for the desired knowledge base article by "
+"typing some characters or words."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:73
+#, no-wrap
+msgid "Mention a Colleague"
+msgstr "Помените колегу"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:76
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
+#| "features.cy.js/ticket-article-mention.png)"
+msgid ""
+"![Screenshot shows mentioning a colleague](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-article-mention.png)"
+msgstr ""
+"![Снимак екрана приказује функцију помињања](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-article-mention.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:81
 msgid ""
 "Ask or request information from your colleagues or mention them in important "
 "tickets so they receive notifications for ticket updates and are "
@@ -1899,16 +1964,21 @@ msgstr ""
 "на тај тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:73
+#: src/en/documentation/use/advanced-features.md:86
+#, fuzzy
+#| msgid ""
+#| "While writing a ticket article, simply type `@@` and enter some letters "
+#| "of the name of the colleague you want to mention."
 msgid ""
-"While writing a ticket article, simply type `@@` and enter some letters of "
-"the name of the colleague you want to mention."
+"While writing a ticket article, use the button in the toolbar of the editor "
+"or simply type `@@`. Both ways let you search for the name of the colleague "
+"you want to mention by typing some characters or the complete name."
 msgstr ""
 "Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова "
 "из имена колеге кога желите да поменете."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:76
+#: src/en/documentation/use/advanced-features.md:89
 msgid ""
 "Zammad displays a list with all possible matches where you can pick one by "
 "clicking on it or by using the up and down arrows followed by [[enter]] on "
@@ -1919,13 +1989,13 @@ msgstr ""
 "на [[enter]] на вашој тастатури."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:77
+#: src/en/documentation/use/advanced-features.md:90
 #, no-wrap
 msgid "Subscribe to a Ticket"
 msgstr "Претплатите се на тикет"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:80
+#: src/en/documentation/use/advanced-features.md:93
 msgid ""
 "![Screenshot shows subscribe feature](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-subscribe.png)"
@@ -1934,7 +2004,7 @@ msgstr ""
 "advanced-features.cy.js/ticket-subscribe.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:85
+#: src/en/documentation/use/advanced-features.md:98
 msgid ""
 "If you are interested in the progress of a ticket, you are not the owner, "
 "you can subscribe to it. This means you will receive notifications for each "
@@ -1945,7 +2015,7 @@ msgstr ""
 "освежавање."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:91
+#: src/en/documentation/use/advanced-features.md:104
 msgid ""
 "Activate the \"Subscribe me\" toggle in the ticket side panel to get "
 "notifications. If you have been mentioned in a ticket, you are automatically "
@@ -1959,14 +2029,14 @@ msgstr ""
 "је претплаћен на тикет и ко је обавештен о освежавањима."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:92
+#: src/en/documentation/use/advanced-features.md:105
 #: src/en/reference/rest-api/intro.md:172
 #, no-wrap
 msgid "Macros"
 msgstr "Макрои"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:95
+#: src/en/documentation/use/advanced-features.md:108
 msgid ""
 "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-macro.png)"
@@ -1975,7 +2045,7 @@ msgstr ""
 "advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:102
+#: src/en/documentation/use/advanced-features.md:115
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
@@ -1992,7 +2062,7 @@ msgstr ""
 "`spam` ће бити додата и тикет затворен."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:107
+#: src/en/documentation/use/advanced-features.md:120
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
 "detail view by clicking the three dots button ::a:: in the right corner of "
@@ -2003,13 +2073,13 @@ msgstr ""
 "одабиром макроа из листе."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:108
+#: src/en/documentation/use/advanced-features.md:121
 #, no-wrap
 msgid "The macro gets executed immediately and without an additional confirmation!\n"
 msgstr "Макро ће бити моментално извршен без додатне потврде!\n"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:113
+#: src/en/documentation/use/advanced-features.md:126
 msgid ""
 "You can also apply a macro to several ticket at once. Have a loot at [bulk "
 "actions](#bulk-actions) how to do that."
@@ -2018,14 +2088,14 @@ msgstr ""
 "[масовне радње](#масовне-радње) за упутство."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:114
+#: src/en/documentation/use/advanced-features.md:127
 #: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
 #, no-wrap
 msgid "Tags"
 msgstr "Ознаке"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:117
+#: src/en/documentation/use/advanced-features.md:130
 msgid ""
 "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-tags.png)"
@@ -2034,7 +2104,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:123
+#: src/en/documentation/use/advanced-features.md:136
 msgid ""
 "Tags are one way to categorize a ticket. You can think of tags as some kind "
 "of labels. They can be used in conditions like in triggers and in overviews "
@@ -2049,7 +2119,7 @@ msgstr ""
 "који имају додељену ознаку."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:128
+#: src/en/documentation/use/advanced-features.md:141
 msgid ""
 "In the ticket sidebar, you can find a section which is labeled as **Tags**. "
 "Add a tag by clicking on the ::+:: button. You can select existing tags and "
@@ -2060,7 +2130,7 @@ msgstr ""
 "нових ознака (уколико ваш администратор није искључио додавање нових ознака)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:131
+#: src/en/documentation/use/advanced-features.md:144
 msgid ""
 "Remove them by simply click on the ::x:: button. Be aware that there is no "
 "confirmation dialog for deleting a tag from a ticket."
@@ -2069,14 +2139,14 @@ msgstr ""
 "потврдног дијалога за брисање ознаке са тикета."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:132
+#: src/en/documentation/use/advanced-features.md:145
 #: src/en/reference/rest-api/checklist.md:19
 #, no-wrap
 msgid "Checklists"
 msgstr "Спискови задатака"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:148
 msgid ""
 "![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
 "usage-advanced-features.cy.js/ticket-checklist.png)"
@@ -2085,27 +2155,27 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-checklist.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:155
 msgid "To keep track of tasks"
 msgstr "Да пратите тренутне задатке"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:155
 msgid "To complete tasks in a structured way"
 msgstr "Да извршите задатке на структурисан начин"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:155
 msgid "To make sure nothing gets forgotten"
 msgstr "Да ништа не заборавите"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:155
 msgid "To make the progress of work more visible"
 msgstr "Да напредак у раду буде видљивији"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:147
+#: src/en/documentation/use/advanced-features.md:160
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
@@ -2116,12 +2186,12 @@ msgstr ""
 "уређивати само ако имате дозволу да освежавате тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:149
+#: src/en/documentation/use/advanced-features.md:162
 msgid "In the checklist sidebar, you can:"
 msgstr "У траци списка задатака можете:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid ""
 "Add a checklist: either by creating a new one by clicking on `Add Empty "
 "Checklist` or from a template by using `Add From a Template` (if you don't "
@@ -2132,12 +2202,12 @@ msgstr ""
 "за шаблон, не постоје)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid "Edit the current checklist:"
 msgstr "Уређивање постојећег списка:"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid ""
 "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
@@ -2146,12 +2216,12 @@ msgstr ""
 "заглављу траке."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid "Add checklist items by clicking the ::+:: button."
 msgstr "Додајте задатке на списак кликом на дугме ::a::."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
 "using the ::a:: menu next to the item."
@@ -2160,14 +2230,14 @@ msgstr ""
 "менија ::a:: поред ставке."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid "`Reorder` the items by clicking this button and drag & drop the items."
 msgstr ""
 "Кликом на дугме `Измени редослед` можете превући и пустити ставке за жељени "
 "распоред."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:158
+#: src/en/documentation/use/advanced-features.md:171
 msgid ""
 "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
@@ -2175,12 +2245,12 @@ msgstr ""
 "заглављу траке."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:160
+#: src/en/documentation/use/advanced-features.md:173
 msgid "There are two features, which are not directly visible:"
 msgstr "Постоје две функције које нису директно видљиве:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:163
+#: src/en/documentation/use/advanced-features.md:176
 msgid ""
 "You can refer to other tickets as a checklist item by using its hook and "
 "number in the item text (e.g.  `Ticket#123456`). Such items can't be checked "
@@ -2191,7 +2261,7 @@ msgstr ""
 "означити, већ ће одражавати стање референцираног тикета."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/advanced-features.md:163
+#: src/en/documentation/use/advanced-features.md:176
 #, no-wrap
 msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
@@ -2201,7 +2271,7 @@ msgstr ""
 "  или путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка.\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:171
+#: src/en/documentation/use/advanced-features.md:184
 msgid ""
 "Zammad automatically checks if all checklist items are completed. The check "
 "is performed when you set a ticket to \"closed\". If not all items are "
@@ -2217,13 +2287,13 @@ msgstr ""
 "само они који су затворени (са зеленим кругом) ће бити сматрани као обављени."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:172
+#: src/en/documentation/use/advanced-features.md:185
 #, no-wrap
 msgid "Ticket Templates"
 msgstr "Шаблони тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:178
+#: src/en/documentation/use/advanced-features.md:191
 msgid ""
 "Quickly create a ticket with pre-defined attributes like title, text, tags "
 "and more saves you time. This requires your admin to create a ticket "
@@ -2234,7 +2304,7 @@ msgstr ""
 "администратор дефинише шаблоне тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:183
+#: src/en/documentation/use/advanced-features.md:196
 msgid ""
 "In the ticket create screen, you can find an `Apply Template ^` button in "
 "the footer bar, if a template is available.  Select the template you want to "
@@ -2245,7 +2315,7 @@ msgstr ""
 "измене."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:184
+#: src/en/documentation/use/advanced-features.md:197
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, no-wrap
@@ -2253,7 +2323,7 @@ msgid "Shared Drafts"
 msgstr "Заједнички нацрти"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:191
+#: src/en/documentation/use/advanced-features.md:204
 msgid ""
 "To share a draft with other agents of your group, e.g. to reflect a QA "
 "process, instead of \"just\" adding an internal article. In such a draft you "
@@ -2266,7 +2336,7 @@ msgstr ""
 "атрибути као и чланак са одговором за клијента."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:193
+#: src/en/documentation/use/advanced-features.md:206
 msgid ""
 "This is an optional feature. If you can't see it, your admin has turned it "
 "off."
@@ -2274,7 +2344,7 @@ msgstr ""
 "Ово је опциона функција. Уколико је не видите, ваш администратор је искључио."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:197
+#: src/en/documentation/use/advanced-features.md:210
 msgid ""
 "To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
@@ -2283,7 +2353,7 @@ msgstr ""
 "прегледа тикета и одаберите „Сачувај нацрт”."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:199
+#: src/en/documentation/use/advanced-features.md:212
 msgid ""
 "To **apply an already existing draft**, click on the `Draft Available` "
 "button on the left side of the footer."
@@ -2292,19 +2362,19 @@ msgstr ""
 "на левој страни подножја."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:200
+#: src/en/documentation/use/advanced-features.md:213
 #, no-wrap
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "Примена нацрта преиначиће ваше неснимљене измене!\n"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:204
+#: src/en/documentation/use/advanced-features.md:217
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Откривање истовремене обраде"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:207
+#: src/en/documentation/use/advanced-features.md:220
 msgid ""
 "![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
 "advanced-features/simultaneous-work-detection.png)"
@@ -2313,27 +2383,27 @@ msgstr ""
 "screenshots/advanced-features/simultaneous-work-detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:211
+#: src/en/documentation/use/advanced-features.md:224
 msgid "Things to avoid:"
 msgstr "Ствари за избегавање:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:215
+#: src/en/documentation/use/advanced-features.md:228
 msgid "Superfluous work"
 msgstr "Непотребан рад"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:215
+#: src/en/documentation/use/advanced-features.md:228
 msgid "Conflicting answers from different agents"
 msgstr "Опречни одговори од других оператера"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:215
+#: src/en/documentation/use/advanced-features.md:228
 msgid "Overwritten/undone changes by different agents"
 msgstr "Преиначене/поништене измене од других оператера"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/advanced-features.md:230
 msgid ""
 "This is why you can immediately see who views and edits the currently viewed "
 "ticket."
@@ -2341,7 +2411,7 @@ msgstr ""
 "Из овог разлога можете одмах да видите ко гледа и уређује тренутни тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:222
+#: src/en/documentation/use/advanced-features.md:235
 msgid ""
 "Have a look at the footer bar in the ticket detail view. When there is an "
 "avatar from another agent (see screenshot above), you are not the only one "
@@ -2352,7 +2422,7 @@ msgstr ""
 "на тикету."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:224
+#: src/en/documentation/use/advanced-features.md:237
 msgid ""
 "Depending on the additional icon and if the avatar icon is faded, it means:"
 msgstr ""
@@ -2360,7 +2430,7 @@ msgstr ""
 "пронађите додатно значење:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:230
+#: src/en/documentation/use/advanced-features.md:243
 msgid ""
 "Another agent is viewing the ticket (not faded avatar without additional "
 "icon)"
@@ -2368,7 +2438,7 @@ msgstr ""
 "Други оператер гледа тикет (неизбледела аватар сличица без додатне иконице)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:230
+#: src/en/documentation/use/advanced-features.md:243
 msgid ""
 "Another agent opened the ticket but is currently not actively viewing this "
 "ticket (faded avatar icon with the snooze icon, see left avatar in "
@@ -2378,7 +2448,7 @@ msgstr ""
 "сличица са иконицом „спавања”, погледајте леви аватар на снимку)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:230
+#: src/en/documentation/use/advanced-features.md:243
 msgid ""
 "Another agent is currently actively working on this ticket (not faded avatar "
 "icon with a pencil icon, see right avatar in screenshot)"
@@ -2387,14 +2457,14 @@ msgstr ""
 "сличица са иконицом оловке, погледајте десни аватар на снимку)"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:231
+#: src/en/documentation/use/advanced-features.md:244
 #: src/en/documentation/use/guides/overviews.md:78
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Масовне радње"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:234
+#: src/en/documentation/use/advanced-features.md:247
 msgid ""
 "![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
 "advanced-features.cy.js/bulk-flyout-overviews.png)"
@@ -2403,7 +2473,7 @@ msgstr ""
 "usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:238
+#: src/en/documentation/use/advanced-features.md:251
 msgid ""
 "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
@@ -2411,17 +2481,17 @@ msgstr ""
 "време!"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:242
+#: src/en/documentation/use/advanced-features.md:255
 msgid "There are 2 _places_ where you can perform bulk actions:"
 msgstr "Постоје два _места_ одакле можете покренути масовне радње:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:245
+#: src/en/documentation/use/advanced-features.md:258
 msgid "Detail search page"
 msgstr "Детаљни екран претраге"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:245
+#: src/en/documentation/use/advanced-features.md:258
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
 #: src/en/documentation/use/manage-profile.md:123
@@ -2430,7 +2500,7 @@ msgid "Overviews"
 msgstr "Прегледи"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:247
+#: src/en/documentation/use/advanced-features.md:260
 msgid ""
 "Assuming you are in the overviews or in the detail search page, you can bulk "
 "edit tickets in 2 _ways_:"
@@ -2439,7 +2509,7 @@ msgstr ""
 "претраге, можете да масовно уредите тикете на два _начина_:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:250
+#: src/en/documentation/use/advanced-features.md:263
 msgid ""
 "Use the **Bulk Action** button in the top right corner and change/add "
 "attributes by using the fields in the flyout"
@@ -2448,7 +2518,7 @@ msgstr ""
 "атрибуте коришћењем поља у бочном панелу"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:250
+#: src/en/documentation/use/advanced-features.md:263
 msgid ""
 "Drag the tickets with the mouse to invoke the bulk action overlay and drop "
 "them on the desired action"
@@ -2457,7 +2527,7 @@ msgstr ""
 "радњу"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:253
+#: src/en/documentation/use/advanced-features.md:266
 msgid ""
 "To bulk edit tickets in either way, you have to select them before. Do so by "
 "clicking the checkbox on the left side of each row in the ticket table. "
@@ -2469,48 +2539,48 @@ msgstr ""
 "за потврду."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:255
+#: src/en/documentation/use/advanced-features.md:268
 msgid "The available changes you can apply to tickets are:"
 msgstr "Доступне промене које можете применити на тикете су:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Set group"
 msgstr "Промена групе"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Set owner"
 msgstr "Промена власника"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Set state"
 msgstr "Промена стања"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Set priority"
 msgstr "Промена приоритета"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Add a note"
 msgstr "Додавање напомене"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:275
 msgid "Execute a macro"
 msgstr "Покретање макроа"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:263
+#: src/en/documentation/use/advanced-features.md:276
 #, no-wrap
 msgid "Merge Tickets"
 msgstr "Спајање тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:266
+#: src/en/documentation/use/advanced-features.md:279
 msgid ""
 "![Screenshot shows the ticket merge side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-merge.png)"
@@ -2519,7 +2589,7 @@ msgstr ""
 "usage-advanced-features.cy.js/ticket-merge.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:272
+#: src/en/documentation/use/advanced-features.md:285
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
 "those tickets into one. This might be the case if a customer sends you a new "
@@ -2534,7 +2604,7 @@ msgstr ""
 "конверзацију)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:287
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
 "you select the merging into the selected one."
@@ -2543,7 +2613,7 @@ msgstr ""
 "одабрани."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:280
+#: src/en/documentation/use/advanced-features.md:293
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
 "use the ::a:: menu and select `Merge`. This opens a side panel in which you "
@@ -2557,7 +2627,7 @@ msgstr ""
 "Када одаберете циљни тикет, потврдите дугметом `Споји` при дну."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:296
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
 "which you executed the merge still exists with the following changes:"
@@ -2566,28 +2636,28 @@ msgstr ""
 "извршили радњу спајања и даље постоји са следећим изменама:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:300
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr "Сви чланци су замењени ознаком „спојено”"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:300
 msgid "The state has changed to \"merged\""
 msgstr "Стање је промењено у „спојено”"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:300
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr "Тикет је повезан са својим „надређеним” тикетом"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:288
+#: src/en/documentation/use/advanced-features.md:301
 #, no-wrap
 msgid "Split Tickets"
 msgstr "Раздели тикете"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:291
+#: src/en/documentation/use/advanced-features.md:304
 msgid ""
 "![Screenshot shows the article action split menu](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-split.png)"
@@ -2596,7 +2666,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:296
+#: src/en/documentation/use/advanced-features.md:309
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example this might be the "
@@ -2607,7 +2677,7 @@ msgstr ""
 "клијент има техничко питање и жели да пошаље поруџбину."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:313
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
@@ -2616,7 +2686,7 @@ msgstr ""
 "чланка."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:303
+#: src/en/documentation/use/advanced-features.md:316
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
 "the initial ticket. The content of the article is also included. You can "
@@ -2627,7 +2697,7 @@ msgstr ""
 "све атрибуте својим потребама и кликнути на `Додај`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:306
+#: src/en/documentation/use/advanced-features.md:319
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
 "ticket is linked in the split off ticket as parent."
@@ -2636,13 +2706,13 @@ msgstr ""
 "Оригинални тикет је повезан са раздељеним као надређени."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:307
+#: src/en/documentation/use/advanced-features.md:320
 #, no-wrap
 msgid "Link Tickets"
 msgstr "Повезивање тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:313
+#: src/en/documentation/use/advanced-features.md:326
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2653,7 +2723,7 @@ msgstr ""
 "тикете) тикети ће бити аутоматски повезани."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:332
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
@@ -2666,12 +2736,12 @@ msgstr ""
 "између различитих типова веза:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:336
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr "**Нормално:** за сродне тикете који немају хијерархију."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:336
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
 "other is a subtask. This link type is used by default if a tickets gets "
@@ -2682,7 +2752,7 @@ msgstr ""
 "спајања тикета."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:337
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
@@ -2690,7 +2760,7 @@ msgid "Time Accounting"
 msgstr "Обрачун времена"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:331
+#: src/en/documentation/use/advanced-features.md:344
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
 "much time you spent on tickets. Based on the accounted times in the ticket, "
@@ -2703,7 +2773,7 @@ msgstr ""
 "можете користити у вашој фирми за наплату или за вођење буџета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:348
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
 "much time you spent on the ticket."
@@ -2712,7 +2782,7 @@ msgstr ""
 "времена сте провели на тикету."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:337
+#: src/en/documentation/use/advanced-features.md:350
 msgid ""
 "![Screenshot shows the time accounting dialog](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-dialog.png)"
@@ -2721,7 +2791,7 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:340
+#: src/en/documentation/use/advanced-features.md:353
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
 "ticket, your administrator hasn't enabled it yet or the rule for tickets to "
@@ -2732,7 +2802,7 @@ msgstr ""
 "тикетима неиспуњен."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:356
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
 "your administrator may decide to show an optional label next to the field to "
@@ -2745,7 +2815,7 @@ msgstr ""
 "(погледајте снимак екрана)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:346
+#: src/en/documentation/use/advanced-features.md:359
 msgid ""
 "Activity types can be used to distinguish between different activities and "
 "for grouping the accounted times. If this optional feature is active, it "
@@ -2757,7 +2827,7 @@ msgstr ""
 "листу активности из које их можете одабрати у дијалогу обрачуна времена."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:350
+#: src/en/documentation/use/advanced-features.md:363
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
@@ -2770,7 +2840,7 @@ msgstr ""
 "укупан збир обрачунатог времена за све врсте активности."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:352
+#: src/en/documentation/use/advanced-features.md:365
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-overview.png)"
@@ -2779,13 +2849,13 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:353
+#: src/en/documentation/use/advanced-features.md:366
 #, no-wrap
 msgid "User Popover"
 msgstr "Кориснички детаљи"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:359
+#: src/en/documentation/use/advanced-features.md:372
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -2794,7 +2864,7 @@ msgstr ""
 "екрана вам омогућава да останете фокусирани на ваш задатак."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:364
+#: src/en/documentation/use/advanced-features.md:377
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -2805,7 +2875,7 @@ msgstr ""
 "бочне стране у детаљном прегледу тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:366
+#: src/en/documentation/use/advanced-features.md:379
 msgid ""
 "![Screenshot shows an avatar with an open user popover](/screenshots/cypress/"
 "usage-advanced-features.cy.js/user-popover.png)"
@@ -2814,7 +2884,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:368
+#: src/en/documentation/use/advanced-features.md:381
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -3059,11 +3129,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:19
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "This documentation is divided into different sections. Currently you are viewing the _General_ section in the\n"
+#| "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
+#| "header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].\n"
 msgid ""
 "This documentation is divided into different sections. Currently you are viewing the _General_ section in the\n"
 "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
-"header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].\n"
+"header. You can even activate the search by using the keyboard shortcut [[ctrl]] [[k]].\n"
 msgstr ""
 "Ова документације је подељена на различите одељке. Тренутно читате одељак _Уопштено_ у делу\n"
 "_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране за навигацију на жељене информације или претражите у\n"
@@ -3246,8 +3320,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:38
 #, no-wrap
-msgid "Smart Editor"
-msgstr "Smart Editor"
+msgid "AI Assistant Text Tools"
+msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:42
@@ -3262,11 +3336,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:46
+#, fuzzy
+#| msgid ""
+#| "To use any of the following features, you first have to select text you "
+#| "want to apply the changes to. After that, click the **Smart Editor** link "
+#| "at the bottom of the article creation and choose one of the following "
+#| "features, depending on what you want to perform."
 msgid ""
 "To use any of the following features, you first have to select text you want "
-"to apply the changes to. After that, click the **Smart Editor** link at the "
-"bottom of the article creation and choose one of the following features, "
-"depending on what you want to perform."
+"to apply the changes to. After that, click the **AI Assistant text tools** "
+"button at the left side of the editor toolbar and choose one of the "
+"following functions, depending on what you want to perform."
 msgstr ""
 "За коришћење излистаних функција, прво морате да обележите текст на који "
 "желите да се измене примене. Након тога, кликните на **Smart Editor** дугме "
@@ -3292,7 +3372,7 @@ msgstr ""
 msgid ""
 "\n"
 "- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,\n"
-"  try using the undo feature by pressing [[Ctrl]] + [[z]].\n"
+"  try using the undo feature by pressing [[ctrl]] + [[z]].\n"
 "- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in\n"
 "  individual cases due to the nature of neural networks.\n"
 "\n"
@@ -3339,6 +3419,237 @@ msgid ""
 msgstr ""
 "**Поједностави**: ради супротно од проширења и сажима ваш текст одржавајући "
 "вашу мисао."
+
+#. type: Title #
+#: src/en/documentation/use/guides/editor.md:1
+#: src/en/documentation/use/guides/editor.md:6
+#, fuzzy, no-wrap
+#| msgid "Smart Editor"
+msgid "Editor"
+msgstr "Smart Editor"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:11
+msgid ""
+"The Zammad editor provides a rich text editing experience for creating "
+"articles. It should be self-explanatory and simple to use. Because of the "
+"importance of this central element in Zammad, this page covers some features "
+"which may not be visible at the first glance."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:13
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
+#| "features.cy.js/ticket-macro.png)"
+msgid ""
+"![Screenshot shows Zammad's editor](/screenshots/cypress/usage-guide-"
+"editor.cy.js/editor-overview.png)"
+msgstr ""
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-macro.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/guides/editor.md:14
+#, no-wrap
+msgid "Special Functions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:18
+msgid ""
+"Zammad's editor includes some smart features. You can find them on the left "
+"side of the toolbar in the editor. Because they are already described "
+"somewhere else, we only refer to these places here to avoid duplicate "
+"content."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:23
+msgid "[AI assistant text tools](ai#ai-assistant-text-tools)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:23
+msgid "[Mention users](../advanced-features#mention-a-colleague)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:23
+msgid "[Insert text modules](../advanced-features#text-modules)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:23
+msgid ""
+"[Insert knowledge base articles](../advanced-features#insert-knowledge-base-"
+"article)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/editor.md:24
+#, no-wrap
+msgid "Pasting Complex Content"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:30
+msgid ""
+"When pasting content from other sources, especially documents containing "
+"tables, complex formatting or images, be aware that the appearance in Zammad "
+"might differ. The editor attempts to preserve your formatting if possible, "
+"but inconsistencies can occur. If you face such a situation, try to copy/"
+"paste the content one by one or paste plain text and apply the formatting in "
+"the editor (see [formatting section](#apply-formatting) below)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/editor.md:31
+#, no-wrap
+msgid "Paragraphs"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:36
+msgid ""
+"To separate paragraphs in the editor, use the [[enter]] key **once**. This "
+"gets rendered as paragraphs either with an empty line or without, depending "
+"on the recipient's used software. If you add an additional empty line, this "
+"can get rendered as two empty lines on client side."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/editor.md:37
+#, no-wrap
+msgid "Cite Text"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:43
+msgid ""
+"You may want to quote text of your customer to exactly refer your answer to "
+"and your customer doesn't lose track in long conversations. To use this "
+"feature, simply select the text you want to cite and click on the **reply** "
+"or **forward** button next to the article. If you already inserted text, it "
+"gets preserved and the selected text gets inserted additionally. This means "
+"you can repeat this to cite different sections without losing your written "
+"text."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/editor.md:44
+#, fuzzy, no-wrap
+#| msgid "Formatting"
+msgid "Apply Formatting"
+msgstr "Форматирање текста"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:47
+msgid "You can format text in the editor in different ways:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:51
+msgid "Use the integrated toolbar"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:51
+#, fuzzy
+#| msgid "Keyboard Shortcuts"
+msgid "Use keyboard shortcuts"
+msgstr "Пречице на тастатури"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/editor.md:51
+msgid "Use [Markdown](https://www.markdownguide.org) syntax"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:56
+msgid ""
+"The editor **toolbar** includes buttons for common formatting tasks. "
+"Hovering over each button will display a tooltip explaining its function. As "
+"an alternative you can use **keyboard shortcuts** (see next two sections). "
+"For both variants you can activate a formatting option in advance and then "
+"add your text or select existing text and apply the formatting option "
+"afterwards."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/editor.md:57
+#, fuzzy, no-wrap
+#| msgid "Keyboard Shortcuts"
+msgid "General Keyboard Shortcuts"
+msgstr "Пречице на тастатури"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:61
+msgid ""
+"The editor also supports keyboard shortcuts to streamline your workflow. "
+"These shortcuts are common across many text processing tools. Important "
+"shortcuts are:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:67
+#, no-wrap
+msgid ""
+" Shortcut/command              | Formatting\n"
+"-------------------------------|---------------\n"
+"[[ctrl]] + [[b]]               | **Bold**\n"
+"[[ctrl]] + [[i]]               | _Italics_\n"
+"[[ctrl]] + [[u]]               | <u>Underline</u>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:70
+msgid ""
+"Have a look at the next section to use even more formatting via keyboard. "
+"Regardless if you are used to Markdown or not, some of them might still be "
+"helpful in your daily work."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/editor.md:71
+#, no-wrap
+msgid "Markdown Usage"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:76
+msgid ""
+"For users familiar with Markdown syntax, the editor provides support for "
+"formatting content with Markdown. When using Markdown syntax, it gets "
+"immediately replaced/executed so you can see the result directly in the "
+"editor. To go back to standard text, simply use the same limiter again or "
+"use [[enter]], depending on the option."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:80
+msgid ""
+"It is not intended to support all Markdown features, but to help users "
+"getting things done more easily. Therefore, the most important things are "
+"supported like headings, lists, links, code blocks and more. Have a look at "
+"the non-exhaustive formatting examples below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/editor.md:89
+#, no-wrap
+msgid ""
+"Markdown Syntax                | Formatting\n"
+"-------------------------------|---------------\n"
+"`**`                           | Limiter for **bold**\n"
+"`_`                            | Limiter for _italics_\n"
+"`#`, `##`, `###`               | Heading, level depending on number of `#`\n"
+"`>`                            | Quoted\n"
+"`` ` ``                        | Limiter for `inline code`\n"
+"`` ``` ``                      | Code block\n"
+"`---`                          | Horizontal line as divider\n"
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/guides/index.md:1
@@ -5099,7 +5410,7 @@ msgstr ""
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
 "switch between the different areas of Zammad and you don't have to be afraid "
-"of loosing any data like a not yet sent answer in a ticket."
+"of losing any data like a not yet sent answer in a ticket."
 msgstr ""
 
 #. type: Title ##
@@ -5343,31 +5654,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:160
+#: src/en/documentation/use/start-using-zammad.md:162
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
 "main part, all articles of the ticket are shown here. The oldest article "
 "(which created the ticket) at the top, the newest at the bottom. Depending "
 "on the article type, Zammad offers you different ways to react. For text "
 "communication based articles, you can directly create an answer by using the "
-"**reply** button below the article or use the **forward** feature."
+"**reply** button below the article or use the **forward** feature. The "
+"integrated text editor is intuitive and includes buttons in the toolbar to "
+"format your text and insert objects like tables or images. If you want to "
+"learn more about the editor, the [editor guide](guides/editor) includes "
+"additional information."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:163
+#: src/en/documentation/use/start-using-zammad.md:165
 msgid ""
 "Regardless of the customer's article type, you can always add internal "
 "notes. These are useful to add information to the ticket or ask a colleague."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:164
+#: src/en/documentation/use/start-using-zammad.md:166
 #, no-wrap
 msgid "Updating your Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:170
+#: src/en/documentation/use/start-using-zammad.md:172
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
 "change the state of the ticket, you can see a highlighted **Update** button "
@@ -5377,13 +5692,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:171
+#: src/en/documentation/use/start-using-zammad.md:173
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:175
+#: src/en/documentation/use/start-using-zammad.md:177
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
@@ -17482,8 +17797,10 @@ msgstr "Rails команде"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:172
-msgid "Knowledgebase"
-msgstr ""
+#, fuzzy
+#| msgid "Knowledge Base"
+msgid "Knowledge base"
+msgstr "База знања"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:172
@@ -17625,7 +17942,7 @@ msgstr "Затвори претрагу"
 msgid ""
 "If you need to search not only in a specific object type, you can do so by "
 "using the global search without specifying an object. The response may "
-"include users, tickets, organizations, knowledgebase articles and answers "
+"include users, tickets, organizations, knowledge base articles and answers "
 "and chats, depending on your system and content. This global search behaves "
 "like the search in Zammad's UI in the left task bar. The available "
 "parameters are different to the ones for the endpoint search."
@@ -25949,6 +26266,16 @@ msgid ""
 "configuration changes."
 msgstr ""
 
+#~ msgid "The usage of text modules has benefits like:"
+#~ msgstr "Коришћење текстуалних исечака доноси предности као што су:"
+
+#~ msgid ""
+#~ "To use text modules simply type `::` in the editor followed by parts of "
+#~ "the name or keyword of the text module."
+#~ msgstr ""
+#~ "За коришћење текстуалних исечака, једноставно унесите `::` у уредник "
+#~ "текста а затим део назива или кључну реч исечка."
+
 #, no-wrap
 #~ msgid "Quick Start"
 #~ msgstr "Брзи почетак"
@@ -26267,10 +26594,6 @@ msgstr ""
 #~ "- Скраћенице треба објаснити први пут када се користе или укључују\n"
 #~ "у речнику и повезати их\n"
 #~ "- Ако сте у недоумици, ускладите се са постојећом документацијом\n"
-
-#, no-wrap
-#~ msgid "Formatting"
-#~ msgstr "Форматирање текста"
 
 #~ msgid "<https://vitepress.dev/reference/default-theme-badge#usage>"
 #~ msgstr "<https://vitepress.dev/reference/default-theme-badge#usage>"
