@@ -501,3 +501,24 @@ panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
 kann.
+
+## External Issues and Assets
+
+**Warum?**
+
+If you use i-doit and Zammad for IT support or you deal with Github or
+Gitlab issues, you can link to these external systems to have all relevant
+information in one place. Your Zammad admin has to activate and configure
+these features in Zammad's settings.
+
+**Wie?**
+
+![Screenshot shows Gitlab content sidebar with "Link Issue"
+button](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
+
+If activated, simply open a ticket and choose the right content sidebar tab
+with the respective icon (see Gitlab example in screenshot above). Click the
+button to link to an issue by entering the URL of it or select the item from
+a select field (i-doit). Afterwards, you can see the linked item with
+additional metadata. By clicking on the linked item, you are redirected to
+it in the respective system.

@@ -191,4 +191,18 @@ describe('usage advanced features', () => {
       })
     })
   })
+
+  it('gitlab sidebar tab', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/6')
+    cy.wait(3000) // loading
+    cy.get('[aria-label="GitLab"]').click().wait(500)
+    cy.get('div.p-3:nth-child(1)').clip({ padding: 0 }).then((TopClip) => {
+      cy.get('[aria-label="Checklist"]').clip({ padding: 5 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('gitlab-content-sidebar', { clip })
+        })
+      })
+    })
+  })
 })

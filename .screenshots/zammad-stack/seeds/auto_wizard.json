@@ -377,6 +377,10 @@
     {
       "name": "two_factor_authentication_enforce_role_ids",
       "value": []
+    },
+    {
+      "name": "gitlab_integration",
+      "value": true
     }
   ],
   "TextModuleLocale": {

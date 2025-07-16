@@ -459,3 +459,24 @@ panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
+
+## External Issues and Assets
+
+**Зашто?**
+
+If you use i-doit and Zammad for IT support or you deal with Github or
+Gitlab issues, you can link to these external systems to have all relevant
+information in one place. Your Zammad admin has to activate and configure
+these features in Zammad's settings.
+
+**Како?**
+
+![Screenshot shows Gitlab content sidebar with "Link Issue"
+button](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
+
+If activated, simply open a ticket and choose the right content sidebar tab
+with the respective icon (see Gitlab example in screenshot above). Click the
+button to link to an issue by entering the URL of it or select the item from
+a select field (i-doit). Afterwards, you can see the linked item with
+additional metadata. By clicking on the linked item, you are redirected to
+it in the respective system.
