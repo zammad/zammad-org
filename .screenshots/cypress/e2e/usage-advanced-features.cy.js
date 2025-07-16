@@ -171,7 +171,7 @@ describe('usage advanced features', () => {
     cy.get('[id="flyout-tickets-bulk-edit"]').find('header').clip().then((TopClip) => {
       cy.get('[name="internal"]').clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
-          cy.screenshot('bulk-flyout-overviews', { clip })
+          cy.screenshot('bulk-side-panel-overviews', { clip })
         })
       })
     })
@@ -186,7 +186,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
       cy.get('.popover*').clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
-          cy.screenshot('user-popover', { clip })
+          cy.screenshot('user-detail-panel', { clip })
         })
       })
     })

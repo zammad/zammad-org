@@ -14,7 +14,7 @@ left corner. This icon can display your profile picture or your initials.
 
 Clicking on this icon opens a menu where you can find different things:
 
-![Screenshot shows user menu popover](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)
+![Screenshot shows user detail panel](/screenshots/cypress/user-profile.cy.js/user-menu-detail-panel.png)
 
 - **Appearance** with toggle to switch between dark and light mode (or based on your
   web browser)

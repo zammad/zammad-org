@@ -293,8 +293,8 @@ QA процес, уместо додавања интерног чланка. У
 
 ## Масовне радње
 
-![Снимак екрана приказује бочни панел масовне
-радње](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
+![Screenshot shows the bulk action side
+panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 **Зашто?**
 
@@ -311,8 +311,8 @@ QA процес, уместо додавања интерног чланка. У
 Под претпоставком да се налазите у прегледима или на екрану детаљне
 претраге, можете да масовно уредите тикете на два _начина_:
 
-- Користите дугме **Mасовна радње** у горњем десном углу и промените/додајте
-  атрибуте коришћењем поља у бочном панелу
+- Use the **Bulk Action** button in the top right corner and change/add
+  attributes by using the fields in the side panel
 - Превуците тикете за покретање режима масовне радње и пустите их на жељену
   радњу
 
@@ -367,9 +367,9 @@ QA процес, уместо додавања интерног чланка. У
 
 **Зашто?**
 
-Уколико имате тикет са више од једног проблема, можда ћете хтети да га
-разделите на два или више различитих ткета. На пример до овога може доћи ако
-клијент има техничко питање и жели да пошаље поруџбину.
+If you have a ticket which is about more than one issue, you might want to
+split it in two or more separate tickets.  For example, this might be the
+case if a customer has a technical question and wants to place an order.
 
 **Како?**
 
@@ -441,7 +441,7 @@ QA процес, уместо додавања интерног чланка. У
 ![Снимак екрана приказује приказ обрачуна
 времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## Кориснички детаљи
+## User Detail Panel
 
 **Зашто?**
 
@@ -454,8 +454,8 @@ QA процес, уместо додавања интерног чланка. У
 без обзира да ли се налази у заглављу, подножју, основном садржају или са
 бочне стране у детаљном прегледу тикета.
 
-![Снимак екрана приказује сличицу са отвореним детаљима
-корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Screenshot shows an avatar with opened user detail
+panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.

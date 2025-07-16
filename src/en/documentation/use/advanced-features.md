@@ -243,7 +243,7 @@ Depending on the additional icon and if the avatar icon is faded, it means:
 
 ## Bulk Actions
 
-![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
+![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 **Why?**
 
@@ -258,7 +258,7 @@ There are 2 _places_ where you can perform bulk actions:
 
 Assuming you are in the overviews or in the detail search page, you can bulk edit tickets in 2 _ways_:
 
-- Use the **Bulk Action** button in the top right corner and change/add attributes by using the fields in the flyout
+- Use the **Bulk Action** button in the top right corner and change/add attributes by using the fields in the side panel
 - Drag the tickets with the mouse to invoke the bulk action overlay and drop them on the desired action
 
 To bulk edit tickets in either way, you have to select them before. Do so by clicking the checkbox on the left side of
@@ -305,7 +305,7 @@ the following changes:
 **Why?**
 
 If you have a ticket which is about more than one issue, you might want to split it in two or more separate tickets.
-For example this might be the case if a customer has a technical question and wants to place an order.
+For example, this might be the case if a customer has a technical question and wants to place an order.
 
 **How?**
 
@@ -363,7 +363,7 @@ of accounted times for all activity types.
 
 ![Screenshot shows the time accounting overview](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## User Popover
+## User Detail Panel
 
 **Why?**
 
@@ -375,7 +375,7 @@ your task.
 You might have seen it already: simply hover your mouse over an avatar icon, no matter if it is in the header, footer,
 main content or the content sidebar in the ticket detail view.
 
-![Screenshot shows an avatar with an open user popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Screenshot shows an avatar with opened user detail panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 By the way, the crown in the screenshot represents the customer's VIP state, which can be set in the customer detail
 view and the admin settings.

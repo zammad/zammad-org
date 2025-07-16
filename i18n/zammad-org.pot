@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-11 11:43+0200\n"
+"POT-Creation-Date: 2025-07-16 11:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2230,8 +2230,8 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:247
 #, markdown-text
 msgid ""
-"![Screenshot shows the bulk action "
-"flyout](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
+"![Screenshot shows the bulk action side "
+"panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2274,7 +2274,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Use the **Bulk Action** button in the top right corner and change/add "
-"attributes by using the fields in the flyout"
+"attributes by using the fields in the side panel"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -2425,7 +2425,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
-"split it in two or more separate tickets.  For example this might be the "
+"split it in two or more separate tickets.  For example, this might be the "
 "case if a customer has a technical question and wants to place an order."
 msgstr ""
 
@@ -2578,7 +2578,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:366
 #, markdown-text, no-wrap
-msgid "User Popover"
+msgid "User Detail Panel"
 msgstr ""
 
 #. type: Plain text
@@ -2602,8 +2602,8 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:379
 #, markdown-text
 msgid ""
-"![Screenshot shows an avatar with an open user "
-"popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Screenshot shows an avatar with opened user detail "
+"panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
 
 #. type: Plain text
@@ -4691,8 +4691,8 @@ msgstr ""
 #: src/en/documentation/use/manage-profile.md:18
 #, markdown-text
 msgid ""
-"![Screenshot shows user menu "
-"popover](/screenshots/cypress/user-profile.cy.js/user-menu-popover.png)"
+"![Screenshot shows user detail "
+"panel](/screenshots/cypress/user-profile.cy.js/user-menu-detail-panel.png)"
 msgstr ""
 
 #. type: Bullet: '- '

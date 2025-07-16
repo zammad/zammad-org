@@ -313,8 +313,8 @@ Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
 
 ## Mehrfach-Aktionen
 
-![Screenshot zeigt Seitenleiste mit
-Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-flyout-overviews.png)
+![Screenshot shows the bulk action side
+panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 **Warum?**
 
@@ -331,9 +331,8 @@ Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:
 Wenn Sie sich in den Übersichten oder auf der Seite für die erweiterte Suche
 befinden, können Sie Tickets auf 2 _Arten_ bearbeiten:
 
-- Verwenden Sie die Schaltfläche **Mehrfach-Aktion** in der oberen rechten
-  Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der
-  Seitenleiste hinzu
+- Use the **Bulk Action** button in the top right corner and change/add
+  attributes by using the fields in the side panel
 - Ziehen Sie die Tickets mit der Maus, um die Mehrfach-Aktion einzublenden,
   und legen Sie sie auf der gewünschten Aktion ab
 
@@ -393,10 +392,9 @@ Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
 **Warum?**
 
-Wenn Sie ein Ticket haben, bei dem es um mehr als ein Problem geht, möchten
-Sie es vielleicht in zwei oder mehr separate Tickets aufteilen. Dies kann
-zum Beispiel der Fall sein, wenn ein Kunde eine technische Frage hat und
-eine Bestellung aufgeben möchte.
+If you have a ticket which is about more than one issue, you might want to
+split it in two or more separate tickets.  For example, this might be the
+case if a customer has a technical question and wants to place an order.
 
 **Wie?**
 
@@ -477,7 +475,7 @@ sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 ![Screenshot zeigt eine Übersicht über erfasste
 Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## Benutzer Popover
+## User Detail Panel
 
 **Warum?**
 
@@ -492,8 +490,8 @@ ein Avatar-Symbol, egal ob es sich im Header, in der Fußzeile, dem
 Hauptinhalt oder in der Inhalts-Seitenleiste der Ticket Detailansicht
 befindet.
 
-![Screenshot zeigt einen Avatar mit einem geöffneten
-Benutzer-Popover](/screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)
+![Screenshot shows an avatar with opened user detail
+panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
