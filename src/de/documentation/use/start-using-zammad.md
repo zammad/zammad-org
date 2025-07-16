@@ -77,9 +77,10 @@ Die Hauptnavigation in Zammad findet in dieser Seitenleiste statt. Sie ist
 immer sichtbar und Sie können z.B. zwischen Ticket, Übersichten und der
 Suche wechseln.
 
-Zammad immediately saves your current work progress, so you can easily
-switch between the different areas of Zammad and you don't have to be afraid
-of losing any data like a not yet sent answer in a ticket.
+Zammad speichert Ihren aktuellen Arbeitsfortschritt sofort, so dass Sie
+leicht zwischen den verschiedenen Bereichen von Zammad wechseln können und
+keine Angst haben müssen, Daten zu verlieren, z.B. eine noch nicht
+abgeschickte Antwort in einem Ticket.
 
 ## Tickets finden
 
@@ -199,16 +200,18 @@ Seitenleisten-Tab _Ticket_ einstellen können:
 Da Sie nun über einige Attribute Bescheid wissen, lassen Sie uns einen Blick
 auf die Ticket Detailansicht werfen.
 
-The ticket detail view provides all relevant information of a ticket. As its
-main part, all articles of the ticket are shown here. The oldest article
-(which created the ticket) at the top, the newest at the bottom. Depending
-on the article type, Zammad offers you different ways to react. For text
-communication based articles, you can directly create an answer by using the
-**reply** button below the article or use the **forward** feature. The
-integrated text editor is intuitive and includes buttons in the toolbar to
-format your text and insert objects like tables or images. If you want to
-learn more about the editor, the [editor guide](guides/editor) includes
-additional information.
+Die Ticket Detailansicht liefert alle relevanten Informationen zu einem
+Ticket. Als Hauptbestandteil werden hier alle Artikel des Tickets
+angezeigt. Der älteste Artikel (der das Ticket erstellt hat) ganz oben, der
+neueste ganz unten. Je nach Art des Artikels bietet Ihnen Zammad
+verschiedene Reaktionsmöglichkeiten an. Bei Artikeln, die auf
+Textkommunikation basieren, können Sie direkt eine Antwort verfassen, indem
+Sie die Schaltfläche **Antwort** unterhalb des Artikels verwenden oder die
+Funktion **Weiterleiten** nutzen. Der integrierte Texteditor ist intuitiv
+und enthält Schaltflächen in der Symbolleiste, um Ihren Text zu formatieren
+und Objekte wie Tabellen oder Bilder einzufügen. Wenn Sie mehr über den
+Editor erfahren möchten, finden Sie im [Editor-Leitfaden](guides/editor)
+zusätzliche Informationen.
 
 Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen
 hinzufügen. Diese sind nützlich, um dem Ticket Informationen hinzuzufügen

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-10 12:28+0200\n"
+"POT-Creation-Date: 2025-07-16 11:00+0200\n"
 "PO-Revision-Date: 2025-06-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -1022,7 +1022,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:101
 msgid ""
-"Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see "
+"Use key markup like [[ctrl]] and [[x]] to highlight a key press (see "
 "[examples](#text-and-ui) below)."
 msgstr ""
 
@@ -2465,9 +2465,13 @@ msgstr "Масовне радње"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:247
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
+#| "advanced-features.cy.js/bulk-flyout-overviews.png)"
 msgid ""
-"![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
-"advanced-features.cy.js/bulk-flyout-overviews.png)"
+"![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
+"advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Снимак екрана приказује бочни панел масовне радње](/screenshots/cypress/"
 "usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
@@ -2510,9 +2514,13 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:263
+#, fuzzy
+#| msgid ""
+#| "Use the **Bulk Action** button in the top right corner and change/add "
+#| "attributes by using the fields in the flyout"
 msgid ""
 "Use the **Bulk Action** button in the top right corner and change/add "
-"attributes by using the fields in the flyout"
+"attributes by using the fields in the side panel"
 msgstr ""
 "Користите дугме **Mасовна радње** у горњем десном углу и промените/додајте "
 "атрибуте коришћењем поља у бочном панелу"
@@ -2667,9 +2675,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:309
+#, fuzzy
+#| msgid ""
+#| "If you have a ticket which is about more than one issue, you might want "
+#| "to split it in two or more separate tickets.  For example this might be "
+#| "the case if a customer has a technical question and wants to place an "
+#| "order."
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
-"split it in two or more separate tickets.  For example this might be the "
+"split it in two or more separate tickets.  For example, this might be the "
 "case if a customer has a technical question and wants to place an order."
 msgstr ""
 "Уколико имате тикет са више од једног проблема, можда ћете хтети да га "
@@ -2850,9 +2864,10 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:366
-#, no-wrap
-msgid "User Popover"
-msgstr "Кориснички детаљи"
+#, fuzzy, no-wrap
+#| msgid "User Documentation"
+msgid "User Detail Panel"
+msgstr "Корисничка документација"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:372
@@ -2876,9 +2891,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:379
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows an avatar with an open user popover](/screenshots/"
+#| "cypress/usage-advanced-features.cy.js/user-popover.png)"
 msgid ""
-"![Screenshot shows an avatar with an open user popover](/screenshots/cypress/"
-"usage-advanced-features.cy.js/user-popover.png)"
+"![Screenshot shows an avatar with opened user detail panel](/screenshots/"
+"cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
 "![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
@@ -4919,8 +4938,8 @@ msgstr ""
 #| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
 #| "screenshot-full-page.png)"
 msgid ""
-"![Screenshot shows user menu popover](/screenshots/cypress/user-"
-"profile.cy.js/user-menu-popover.png)"
+"![Screenshot shows user detail panel](/screenshots/cypress/user-"
+"profile.cy.js/user-menu-detail-panel.png)"
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
@@ -26265,6 +26284,10 @@ msgid ""
 "Reload your apache with ``systemctl reload apache2`` to apply your "
 "configuration changes."
 msgstr ""
+
+#, no-wrap
+#~ msgid "User Popover"
+#~ msgstr "Кориснички детаљи"
 
 #~ msgid "The usage of text modules has benefits like:"
 #~ msgstr "Коришћење текстуалних исечака доноси предности као што су:"

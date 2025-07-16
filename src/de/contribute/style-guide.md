@@ -2,7 +2,7 @@
 features:
   - 
     details: 'Lorem ipsum...'
-    icon: 🛠️
+    icon: "�\x9F\x9B��\x8F"
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
@@ -113,8 +113,8 @@ strukturieren können.
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
 - Falls vorhanden, verwenden Sie Icons für wichtige UI-Buttons wie ::+:: und
   ::x:: (siehe [Beispiele](#text-and-ui) unten).
-- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see
-  [examples](#text-and-ui) below).
+- Verwenden Sie die eine Auszeichnung wie [[strg]] und [[x]], um einen
+  Tastenanschlag darzustellen (siehe [Beispiele](#text-und-ui) unten).
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
   von Zammad hinzuzufügen, ist, sie automatisch [mit
   Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}
@@ -134,12 +134,14 @@ strukturieren können.
 
 ### Konventionen
 
-The documentation stack includes automated checks (linting) to ensure
-compliance with the style guide and common rules for Markdown files. To
-check if your changes are compliant, run `pnpm lint` to perform the
-check. Some of the recognized problems can be even fixed automatically by
-running `pnpm lint:fix`. Make sure to run the check before committing your
-changes. Otherwise, the build of the documentation will fail.
+Der Dokumentations-Stack enthält automatische Prüfungen (Linting), um die
+Einhaltung des Styleguides und der allgemeinen Regeln für Markdown-Dateien
+sicherzustellen. Um zu prüfen, ob Ihre Änderungen konform sind, führen Sie
+`pnpm lint` aus, um die Prüfung durchzuführen. Einige der erkannten Probleme
+können sogar automatisch behoben werden, indem `pnpm lint:fix` ausgeführt
+wird. Stellen Sie sicher, dass Sie die Prüfung durchführen, bevor Sie Ihre
+Änderungen commiten. Andernfalls wird die Erstellung der Dokumentation
+fehlschlagen.
 
 Das verwendete Linting hat einige eingebaute Regeln, die Sie im [offiziellen
 Repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}

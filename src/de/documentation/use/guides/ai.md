@@ -44,26 +44,27 @@ nächsten Schritte zu einer [Checkliste](../advanced-features#checklists)
 hinzufügen, um den Überblick über die offenen Aufgaben in diesem Ticket zu
 behalten.
 
-## AI Assistant Text Tools
+## KI-Assistent Text-Werkzeuge
 
 Der neue KI-gesteuerte smarte Editor wurde entwickelt, um Ihren Workflow bei
 der Beantwortung von Tickets zu vereinfachen und zu verbessern. Er hilft
 Ihnen mit Text-Tools, während Sie einen Artikel erstellen.
 
-To use any of the following features, you first have to select text you want
-to apply the changes to. After that, click the **AI Assistant text tools**
-button at the left side of the editor toolbar and choose one of the
-following functions, depending on what you want to perform.
+Um eine der folgenden Funktionen zu nutzen, müssen Sie zunächst den Text
+auswählen, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf
+die Schaltfläche **KI-Assistent Text-Werkzeuge** in der Editor-Symbolleiste
+und wählen Sie eine der folgenden Funktionen, je nachdem, was Sie
+durchführen möchten.
 
 ![Screenshot zeigt Zammads
 Smart-Editor-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 
 :::warning
 
-- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[ctrl]] + [[z]].
-- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
-  individual cases due to the nature of neural networks.
+- Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind
+  können Sie die Rückgängig-Funktion verwenden, indem Sie [[strg]] + [[z]] drücken.
+- Prüfen Sie die Antwort immer gegen. Obwohl die Funktion sorgfältig entwickelt wurde, kann es in Einzelfällen zu kleineren Fehlern kommen,
+  die in der Natur neuronaler Netze liegen.
 
 :::
 

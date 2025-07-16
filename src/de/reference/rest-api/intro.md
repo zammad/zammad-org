@@ -171,7 +171,7 @@ Die folgenden Endpunkte unterstützen ebenfalls eine Suchanfrage, werden aber
 in dieser Dokumentation nicht explizit behandelt:
 
 - Chat-Sitzungen
-- Knowledge base
+- Knowledge Base
 - Makros
 - Übersicht
 - Vorlagen
@@ -236,12 +236,12 @@ ausgegeben.
 
 ### Globale Suche
 
-If you need to search not only in a specific object type, you can do so by
-using the global search without specifying an object. The response may
-include users, tickets, organizations, knowledge base articles and answers
-and chats, depending on your system and content. This global search behaves
-like the search in Zammad's UI in the left task bar. The available
-parameters are different to the ones for the endpoint search.
+Wenn Sie nicht nur in einem bestimmten Objekttyp suchen möchten, können Sie
+dies mit der globalen Suche ohne Angabe eines Objekts tun. Die Antwort kann
+Benutzer, Tickets, Organisationen, Knowledge Base-Artikel und -Antworten
+sowie Chats umfassen, je nach System und Inhalt. Diese globale Suche verhält
+sich wie die Suche in Zammads UI in der linken Taskleiste. Die verfügbaren
+Parameter unterscheiden sich von denen der Endpunktsuche.
 
 `GET`-Request gesendet: `/api/v1/search?query=welcome`
 
@@ -337,4 +337,5 @@ Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
 Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
 sein
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication
+**P**rogramming **I**nterface)

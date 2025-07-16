@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-16 11:00+0200\n"
+"POT-Creation-Date: 2025-07-16 09:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,6 +215,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -18521,9 +18533,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:327
-#, no-wrap
+#, markdown-text
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -21313,18 +21325,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -25468,40 +25468,27 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:231
-#, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
-msgstr ""
-
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:234
-#, no-wrap
-msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the _last_ value of the field in question.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid "    violations.\n"
-msgstr ""
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:237
-#, no-wrap
-msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+msgid ""
+"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
+"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""

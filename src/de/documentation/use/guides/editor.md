@@ -5,104 +5,114 @@ title: Editor
 
 # Editor
 
-The Zammad editor provides a rich text editing experience for creating
-articles. It should be self-explanatory and simple to use. Because of the
-importance of this central element in Zammad, this page covers some features
-which may not be visible at the first glance.
+Der Zammad-Editor bietet eine umfangreiche Textbearbeitung für die
+Erstellung von Artikeln. Er sollte selbsterklärend und einfach zu bedienen
+sein. Wegen der Bedeutung dieses zentralen Elements in Zammad werden auf
+dieser Seite einige Funktionen behandelt, die vielleicht nicht auf den
+ersten Blick sichtbar sind.
 
-![Screenshot shows Zammad's
-editor](/screenshots/cypress/usage-guide-editor.cy.js/editor-overview.png)
+![Screenshot zeigt Zammads
+Editor](/screenshots/cypress/usage-guide-editor.cy.js/editor-overview.png)
 
-## Special Functions
+## Spezialfunktionen
 
-Zammad's editor includes some smart features. You can find them on the left
-side of the toolbar in the editor. Because they are already described
-somewhere else, we only refer to these places here to avoid duplicate
-content.
+Der Editor von Zammad enthält einige intelligente Funktionen. Sie finden
+diese auf der linken Seite der Symbolleiste des Editors. Da sie bereits an
+anderer Stelle beschrieben sind, verweisen wir hier nur darauf, um doppelten
+Inhalt zu vermeiden.
 
-- [AI assistant text tools](ai#ai-assistant-text-tools)
-- [Mention users](../advanced-features#mention-a-colleague)
-- [Insert text modules](../advanced-features#text-modules)
-- [Insert knowledge base
-  articles](../advanced-features#insert-knowledge-base-article)
+- [KI-Assistent Text-Werkzeuge](ai#ki-assistent-text-werkzeuge)
+- [Benutzer erwähnen](../advanced-features#erwahnen-von-kollegen)
+- [Textbausteine einfügen](../advanced-features#textbausteine)
+- [Knowledge Base-Artikel
+  einfügen](../advanced-features#knowledge-base-artikel-einfugen)
 
-## Pasting Complex Content
+## Einfügen komplexer Inhalte
 
-When pasting content from other sources, especially documents containing
-tables, complex formatting or images, be aware that the appearance in Zammad
-might differ. The editor attempts to preserve your formatting if possible,
-but inconsistencies can occur. If you face such a situation, try to
-copy/paste the content one by one or paste plain text and apply the
-formatting in the editor (see [formatting section](#apply-formatting)
-below).
+Beim Einfügen von Inhalten aus anderen Quellen, insbesondere von Dokumenten,
+die Tabellen, komplexe Formatierungen oder Bilder enthalten, ist zu
+beachten, dass die Darstellung in Zammad abweichen kann. Der Editor
+versucht, Ihre Formatierung nach Möglichkeit beizubehalten, aber es kann zu
+Unstimmigkeiten kommen. Wenn Sie mit einer solchen Situation konfrontiert
+werden, versuchen Sie, den Inhalt einzeln zu kopieren/einzufügen oder fügen
+Sie reinen Text ein und wenden Sie die Formatierung im Editor an (siehe
+Abschnitt [Formatierung](#formatierung-anwenden) unten).
 
-## Paragraphs
+## Absätze
 
-To separate paragraphs in the editor, use the [[enter]] key **once**. This
-gets rendered as paragraphs either with an empty line or without, depending
-on the recipient's used software. If you add an additional empty line, this
-can get rendered as two empty lines on client side.
+Um Absätze im Editor zu trennen, drücken Sie **einmal** die
+[[enter]]-Taste. Dies wird je nach verwendeter Software des Empfängers
+entweder mit oder ohne Leerzeilen als Absätze dargestellt. Wenn Sie eine
+zusätzliche Leerzeile einfügen, kann dies auf der Client-Seite als zwei
+Leerzeilen dargestellt werden.
 
-## Cite Text
+## Text zitieren
 
-You may want to quote text of your customer to exactly refer your answer to
-and your customer doesn't lose track in long conversations. To use this
-feature, simply select the text you want to cite and click on the **reply**
-or **forward** button next to the article. If you already inserted text, it
-gets preserved and the selected text gets inserted additionally. This means
-you can repeat this to cite different sections without losing your written
-text.
+Möglicherweise möchten Sie einen Text Ihres Kunden zitieren, um Ihre Antwort
+genau darauf zu beziehen, und damit Ihre Kunden langen Konversationen nicht
+den Überblick verlieren. Um diese Funktion zu nutzen, markieren Sie einfach
+den Text, den Sie zitieren möchten, und klicken Sie auf die Schaltfläche
+**Antworten** oder **Weiterleiten** neben dem Artikel. Wenn Sie bereits Text
+eingefügt haben, bleibt dieser erhalten und der ausgewählte Text wird
+zusätzlich eingefügt. Das bedeutet, dass Sie diesen Vorgang wiederholen
+können, um verschiedene Abschnitte zu zitieren, ohne dass Ihr geschriebener
+Text verloren geht.
 
-## Apply Formatting
+## Formatierung anwenden
 
-You can format text in the editor in different ways:
+Sie können den Text im Editor auf verschiedene Arten formatieren:
 
-- Use the integrated toolbar
-- Use keyboard shortcuts
-- Use [Markdown](https://www.markdownguide.org) syntax
+- Verwenden Sie die integrierte Werkzeugleiste
+- Verwenden Sie Tastaturkürzel
+- Verwenden Sie [Markdown](https://www.markdownguide.org)-Syntax
 
-The editor **toolbar** includes buttons for common formatting
-tasks. Hovering over each button will display a tooltip explaining its
-function. As an alternative you can use **keyboard shortcuts** (see next two
-sections). For both variants you can activate a formatting option in advance
-and then add your text or select existing text and apply the formatting
-option afterwards.
+Die **Werkzeugleiste** des Editors enthält Schaltflächen für gängige
+Formatierungsaufgaben. Wenn Sie den Mauszeiger über eine Schaltfläche
+bewegen, wird ein Tooltip angezeigt, der die Funktion der Schaltfläche
+erklärt. Alternativ können Sie **Tastaturkürzel** verwenden (siehe die
+nächsten beiden Abschnitte). Bei beiden Varianten können Sie eine
+Formatierungsoption im Voraus aktivieren und dann Ihren Text hinzufügen oder
+vorhandenen Text auswählen und die Formatierungsoption anschließend
+anwenden.
 
-### General Keyboard Shortcuts
+### Allgemeine Tastaturkürzel
 
-The editor also supports keyboard shortcuts to streamline your
-workflow. These shortcuts are common across many text processing
-tools. Important shortcuts are:
+Der Editor unterstützt auch Tastaturkürzel, um Ihren Arbeitsablauf zu
+optimieren. Diese Tastenkombinationen sind bei vielen
+Textverarbeitungsprogrammen üblich. Wichtige Tastenkombinationen sind:
 
- Shortcut/command              | Formatting
+ Kürzel/Befehl          | Formatierung
+------------------------|----------------------
+[[strg]] + [[b]]        | **Fett**
+[[strg]] + [[i]]        | _Kursiv_
+[[strg]] + [[u]]        | <u>Unterstrichen</u>
+
+Schauen Sie sich den nächsten Abschnitt an, um zusätzliche Formatierungen
+über die Tastatur zu verwenden. Unabhängig davon, ob Sie an Markdown kennen
+oder nicht, könnten einige davon für Ihre tägliche Arbeit dennoch hilfreich
+sein.
+
+### Markdown-Verwendung
+
+Für Benutzer, die mit Markdown vertraut sind, bietet der Editor
+Unterstützung für die Formatierung von Inhalten mit Markdown. Wenn Sie
+Markdown-Syntax verwenden, wird Ihr Text sofort ersetzt/formatiert, sodass
+Sie das Ergebnis direkt im Editor sehen können. Um zum Standardtext
+zurückzukehren, verwenden Sie einfach erneut denselben Auszeichungsbefehl
+als Abschluss oder drücken Sie je nach Option [[enter]].
+
+Es ist nicht beabsichtigt, alle Markdown-Funktionen zu unterstützen, sondern
+den Benutzern zu helfen, Dinge einfacher zu erledigen. Daher werden die
+wichtigsten Dinge wie Überschriften, Listen, Links, Codeblöcke und mehr
+unterstützt. Werfen Sie einen Blick auf die nicht abschließende Liste an
+Formatierungsbeispielen unten.
+
+Markdown Syntax                | Formatierung
 -------------------------------|---------------
-[[ctrl]] + [[b]]               | **Bold**
-[[ctrl]] + [[i]]               | _Italics_
-[[ctrl]] + [[u]]               | <u>Underline</u>
-
-Have a look at the next section to use even more formatting via
-keyboard. Regardless if you are used to Markdown or not, some of them might
-still be helpful in your daily work.
-
-### Markdown Usage
-
-For users familiar with Markdown syntax, the editor provides support for
-formatting content with Markdown. When using Markdown syntax, it gets
-immediately replaced/executed so you can see the result directly in the
-editor. To go back to standard text, simply use the same limiter again or
-use [[enter]], depending on the option.
-
-It is not intended to support all Markdown features, but to help users
-getting things done more easily. Therefore, the most important things are
-supported like headings, lists, links, code blocks and more. Have a look at
-the non-exhaustive formatting examples below.
-
-Markdown Syntax                | Formatting
--------------------------------|---------------
-`**`                           | Limiter for **bold**
-`_`                            | Limiter for _italics_
-`#`, `##`, `###`               | Heading, level depending on number of `#`
-`>`                            | Quoted
-`` ` ``                        | Limiter for `inline code`
-`` ``` ``                      | Code block
-`---`                          | Horizontal line as divider
+`**`                           | Begrenzer für **fett**
+`_`                            | Begrenzer für _kursiv_
+`#`, `##`, `###`               | Überschrift, Level abhängig von Anzahl der `#`
+`>`                            | Zitiert
+`` ` ``                        | Begrenzer für `inline code`
+`` ``` ``                      | Code-Block
+`---`                          | Horizontale Linie als Trenner

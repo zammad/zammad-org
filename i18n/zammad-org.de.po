@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-10 12:28+0200\n"
-"PO-Revision-Date: 2025-07-09 15:00+0000\n"
+"POT-Creation-Date: 2025-07-16 11:00+0200\n"
+"PO-Revision-Date: 2025-07-16 08:39+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1040,9 +1040,11 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:101
 msgid ""
-"Use key markup key markup [[ctrl]] and [[x]] to highlight a key press (see "
+"Use key markup like [[ctrl]] and [[x]] to highlight a key press (see "
 "[examples](#text-and-ui) below)."
 msgstr ""
+"Verwenden Sie die eine Auszeichnung wie [[strg]] und [[x]], um einen "
+"Tastenanschlag darzustellen (siehe [Beispiele](#text-und-ui) unten)."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:101
@@ -1104,14 +1106,6 @@ msgstr "Konventionen"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:108
-#, fuzzy
-#| msgid ""
-#| "The documentation stack includes automated checks (linting) to ensure "
-#| "compliance with the style guide and common rules for Markdown files. To "
-#| "check if your changes are compliant, run `pnpm lint` to perform the "
-#| "check. Some of the recognized problems can be even fixed automatically by "
-#| "running `pnpm lint:fix`. Make sure to run the check before committing "
-#| "your changes. Otherwise the build of the documentation will fail."
 msgid ""
 "The documentation stack includes automated checks (linting) to ensure "
 "compliance with the style guide and common rules for Markdown files. To "
@@ -1849,16 +1843,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/advanced-features.md:33
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut\n"
-#| "[[Shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
+#, no-wrap
 msgid ""
 "If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut\n"
 "[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
 msgstr ""
 "Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten** lassen und die Tastenkombination\n"
-"[[Umschalt]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.\n"
+"[[umschalt]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:38
@@ -1877,12 +1868,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:47
-#, fuzzy
-#| msgid ""
-#| "If you have to answer the same question again and again, ask your Zammad "
-#| "admin to create such a text module for you.  They can even include "
-#| "variables like customer name or any other available attribute which get "
-#| "replaced while using it in a ticket."
 msgid ""
 "If you have to answer the same question again and again, ask your Zammad "
 "admin to create such a text module for you.  They can even include variables "
@@ -1892,7 +1877,8 @@ msgstr ""
 "Wenn Sie immer wieder die gleiche Frage beantworten müssen, bitten Sie Ihren "
 "Zammad-Administrator, einen solchen Textbaustein für Sie zu erstellen. Sie "
 "können sogar Variablen wie den Namen des Kunden oder jedes andere verfügbare "
-"Attribut einfügen, die bei der Verwendung in einem Ticket ersetzt werden."
+"Attribut einfügen, die bei der Verwendung in einem Ticket ersetzt werden. "
+"Die Verwendung von Textbausteinen hat Vorteile wie:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:50
@@ -1915,42 +1901,36 @@ msgid ""
 "editor. Both ways let you search for the desired text module by typing some "
 "characters or words of the text or keywords of the text module."
 msgstr ""
+"Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder "
+"schreiben Sie einfach `::` in den Editor. Auf beiden Wegen können Sie nach "
+"dem gewünschten Textbaustein suchen, indem Sie einige Zeichen oder Wörter "
+"des Textes oder Schlüsselwörter des Textbausteins eingeben."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:58
-#, fuzzy
-#| msgid ""
-#| "You can pick one by clicking on it or by using the up and down arrows "
-#| "followed by [[Enter]] on your keyboard. There are some text modules in "
-#| "Zammad which are shipped by default."
 msgid ""
 "You can pick one by clicking on it or by using the up and down arrows "
 "followed by [[enter]] on your keyboard. There are some text modules in "
 "Zammad which are shipped by default."
 msgstr ""
 "Sie können einen auswählen, indem Sie ihn anklicken oder die Pfeiltasten "
-"nach oben und unten, gefolgt von [[Enter]], auf Ihrer Tastatur benutzen. Es "
+"nach oben und unten, gefolgt von [[enter]], auf Ihrer Tastatur benutzen. Es "
 "gibt einige Textbausteine in Zammad, die standardmäßig mitgeliefert werden."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:59
-#, fuzzy, no-wrap
-#| msgid "Knowledge Base General"
+#, no-wrap
 msgid "Insert Knowledge Base Article"
-msgstr "Knowledge Base Allgemein"
+msgstr "Knowledge Base Artikel einfügen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:62
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
-#| "features.cy.js/ticket-article-mention.png)"
 msgid ""
 "![Screenshot shows inserting knowledge base article](/screenshots/cypress/"
 "usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
 msgstr ""
-"![Screenshot zeigt Erwähnungs-Funktion](/screenshots/cypress/usage-advanced-"
-"features.cy.js/ticket-article-mention.png)"
+"![Screenshot zeigt Einfügen eines Knowledge Base Artikels](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:67
@@ -1959,6 +1939,10 @@ msgid ""
 "of which a knowledge base article exists.  This saves you time because you "
 "don't have to switch to the knowledge base and copy/paste content."
 msgstr ""
+"Wenn Sie häufig dieselben oder sehr ähnliche Kundenanfragen zu einem Problem "
+"haben, zu dem ein Artikel in der Knowledge Base existiert.  So sparen Sie "
+"Zeit, weil Sie nicht zur Knowledge Base wechseln und Inhalte kopieren/"
+"einfügen müssen."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:72
@@ -1967,6 +1951,10 @@ msgid ""
 "editor. Both ways let you search for the desired knowledge base article by "
 "typing some characters or words."
 msgstr ""
+"Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder "
+"schreiben Sie einfach `??` in den Editor. Auf beiden Wegen können Sie nach "
+"dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen oder "
+"Wörter eingeben."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:73
@@ -1976,16 +1964,12 @@ msgstr "Erwähnen von Kollegen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:76
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows mention feature](/screenshots/cypress/usage-advanced-"
-#| "features.cy.js/ticket-article-mention.png)"
 msgid ""
 "![Screenshot shows mentioning a colleague](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-article-mention.png)"
 msgstr ""
-"![Screenshot zeigt Erwähnungs-Funktion](/screenshots/cypress/usage-advanced-"
-"features.cy.js/ticket-article-mention.png)"
+"![Screenshot zeigt Erwähnung eines Kollegen](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-article-mention.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:81
@@ -2000,17 +1984,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:86
-#, fuzzy
-#| msgid ""
-#| "While writing a ticket article, simply type `@@` and enter some letters "
-#| "of the name of the colleague you want to mention."
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
 "or simply type `@@`. Both ways let you search for the name of the colleague "
 "you want to mention by typing some characters or the complete name."
 msgstr ""
-"Wenn Sie einen Ticket-Artikel verfassen, geben Sie einfach `@@` und einige "
-"Buchstaben des Namens des Kollegen ein, den Sie erwähnen möchten."
+"Verwenden Sie beim Schreiben eines Ticket-Artikels die Schaltfläche in der "
+"Symbolleiste des Editors oder geben Sie einfach `@@` ein. Auf beiden Wegen "
+"können Sie nach dem Namen des Kollegen suchen, den Sie erwähnen möchten, "
+"indem Sie einige Buchstaben oder den vollständigen Namen eingeben."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:89
@@ -2522,9 +2504,13 @@ msgstr "Mehrfach-Aktionen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:247
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
+#| "advanced-features.cy.js/bulk-flyout-overviews.png)"
 msgid ""
-"![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
-"advanced-features.cy.js/bulk-flyout-overviews.png)"
+"![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
+"advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Screenshot zeigt Seitenleiste mit Mehrfach-Aktionen](/screenshots/cypress/"
 "usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
@@ -2567,9 +2553,13 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:263
+#, fuzzy
+#| msgid ""
+#| "Use the **Bulk Action** button in the top right corner and change/add "
+#| "attributes by using the fields in the flyout"
 msgid ""
 "Use the **Bulk Action** button in the top right corner and change/add "
-"attributes by using the fields in the flyout"
+"attributes by using the fields in the side panel"
 msgstr ""
 "Verwenden Sie die Schaltfläche **Mehrfach-Aktion** in der oberen rechten "
 "Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der "
@@ -2730,9 +2720,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:309
+#, fuzzy
+#| msgid ""
+#| "If you have a ticket which is about more than one issue, you might want "
+#| "to split it in two or more separate tickets.  For example this might be "
+#| "the case if a customer has a technical question and wants to place an "
+#| "order."
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
-"split it in two or more separate tickets.  For example this might be the "
+"split it in two or more separate tickets.  For example, this might be the "
 "case if a customer has a technical question and wants to place an order."
 msgstr ""
 "Wenn Sie ein Ticket haben, bei dem es um mehr als ein Problem geht, möchten "
@@ -2922,9 +2918,10 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:366
-#, no-wrap
-msgid "User Popover"
-msgstr "Benutzer Popover"
+#, fuzzy, no-wrap
+#| msgid "User Documentation"
+msgid "User Detail Panel"
+msgstr "Benutzer Dokumentation"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:372
@@ -2949,9 +2946,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:379
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows an avatar with an open user popover](/screenshots/"
+#| "cypress/usage-advanced-features.cy.js/user-popover.png)"
 msgid ""
-"![Screenshot shows an avatar with an open user popover](/screenshots/cypress/"
-"usage-advanced-features.cy.js/user-popover.png)"
+"![Screenshot shows an avatar with opened user detail panel](/screenshots/"
+"cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
 "![Screenshot zeigt einen Avatar mit einem geöffneten Benutzer-Popover](/"
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
@@ -3253,11 +3254,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:19
-#, fuzzy, no-wrap
-#| msgid ""
-#| "This documentation is divided into different sections. Currently you are viewing the _General_ section in the\n"
-#| "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
-#| "header. You can even activate the search by using the keyboard shortcut [[Ctrl]] [[k]].\n"
+#, no-wrap
 msgid ""
 "This documentation is divided into different sections. Currently you are viewing the _General_ section in the\n"
 "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to your desired information or the search in the\n"
@@ -3265,7 +3262,7 @@ msgid ""
 msgstr ""
 "Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich\n"
 "_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.\n"
-"Sie können die Suche auch mit dem Tastaturkürzel [[Strg]] [[k]] aufrufen.\n"
+"Sie können die Suche auch mit dem Tastaturkürzel [[strg]] [[k]] aufrufen.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/general.md:20
@@ -3467,7 +3464,7 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:38
 #, no-wrap
 msgid "AI Assistant Text Tools"
-msgstr ""
+msgstr "KI-Assistent Text-Werkzeuge"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:42
@@ -3482,12 +3479,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:46
-#, fuzzy
-#| msgid ""
-#| "To use any of the following features, you first have to select text you "
-#| "want to apply the changes to. After that, click the **Smart Editor** link "
-#| "at the bottom of the article creation and choose one of the following "
-#| "features, depending on what you want to perform."
 msgid ""
 "To use any of the following features, you first have to select text you want "
 "to apply the changes to. After that, click the **AI Assistant text tools** "
@@ -3496,8 +3487,9 @@ msgid ""
 msgstr ""
 "Um eine der folgenden Funktionen zu nutzen, müssen Sie zunächst den Text "
 "auswählen, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf "
-"den Link **Smart Editor** am unteren Rand der Artikelerstellung und wählen "
-"Sie eine der folgenden Funktionen, je nachdem, was Sie durchführen möchten."
+"die Schaltfläche **KI-Assistent Text-Werkzeuge** in der Editor-Symbolleiste "
+"und wählen Sie eine der folgenden Funktionen, je nachdem, was Sie "
+"durchführen möchten."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:48
@@ -3510,14 +3502,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/ai.md:49
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,\n"
-#| "  try using the undo feature by pressing [[Ctrl]] + [[z]].\n"
-#| "- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in\n"
-#| "  individual cases due to the nature of neural networks.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,\n"
@@ -3528,7 +3513,7 @@ msgid ""
 msgstr ""
 "\n"
 "- Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind\n"
-"  können Sie die Rückgängig-Funktion verwenden, indem Sie [[Strg]] + [[z]] drücken.\n"
+"  können Sie die Rückgängig-Funktion verwenden, indem Sie [[strg]] + [[z]] drücken.\n"
 "- Prüfen Sie die Antwort immer gegen. Obwohl die Funktion sorgfältig entwickelt wurde, kann es in Einzelfällen zu kleineren Fehlern kommen,\n"
 "  die in der Natur neuronaler Netze liegen.\n"
 "\n"
@@ -3579,10 +3564,9 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/guides/editor.md:1
 #: src/en/documentation/use/guides/editor.md:6
-#, fuzzy, no-wrap
-#| msgid "Smart Editor"
+#, no-wrap
 msgid "Editor"
-msgstr "Smart Editor"
+msgstr "Editor"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:11
@@ -3592,25 +3576,26 @@ msgid ""
 "importance of this central element in Zammad, this page covers some features "
 "which may not be visible at the first glance."
 msgstr ""
+"Der Zammad-Editor bietet eine umfangreiche Textbearbeitung für die "
+"Erstellung von Artikeln. Er sollte selbsterklärend und einfach zu bedienen "
+"sein. Wegen der Bedeutung dieses zentralen Elements in Zammad werden auf "
+"dieser Seite einige Funktionen behandelt, die vielleicht nicht auf den "
+"ersten Blick sichtbar sind."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:13
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-"
-#| "guide-ai.cy.js/ai-ticket-smart-editor.png)"
 msgid ""
 "![Screenshot shows Zammad's editor](/screenshots/cypress/usage-guide-"
 "editor.cy.js/editor-overview.png)"
 msgstr ""
-"![Screenshot zeigt Zammads Smart-Editor-Menü](/screenshots/cypress/usage-"
-"guide-ai.cy.js/ai-ticket-smart-editor.png)"
+"![Screenshot zeigt Zammads Editor](/screenshots/cypress/usage-guide-"
+"editor.cy.js/editor-overview.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:14
 #, no-wrap
 msgid "Special Functions"
-msgstr ""
+msgstr "Spezialfunktionen"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:18
@@ -3620,21 +3605,25 @@ msgid ""
 "somewhere else, we only refer to these places here to avoid duplicate "
 "content."
 msgstr ""
+"Der Editor von Zammad enthält einige intelligente Funktionen. Sie finden "
+"diese auf der linken Seite der Symbolleiste des Editors. Da sie bereits an "
+"anderer Stelle beschrieben sind, verweisen wir hier nur darauf, um doppelten "
+"Inhalt zu vermeiden."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
 msgid "[AI assistant text tools](ai#ai-assistant-text-tools)"
-msgstr ""
+msgstr "[KI-Assistent Text-Werkzeuge](ai#ki-assistent-text-werkzeuge)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
 msgid "[Mention users](../advanced-features#mention-a-colleague)"
-msgstr ""
+msgstr "[Benutzer erwähnen](../advanced-features#erwahnen-von-kollegen)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
 msgid "[Insert text modules](../advanced-features#text-modules)"
-msgstr ""
+msgstr "[Textbausteine einfügen](../advanced-features#textbausteine)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
@@ -3642,12 +3631,14 @@ msgid ""
 "[Insert knowledge base articles](../advanced-features#insert-knowledge-base-"
 "article)"
 msgstr ""
+"[Knowledge Base-Artikel einfügen](../advanced-features#knowledge-base-"
+"artikel-einfugen)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:24
 #, no-wrap
 msgid "Pasting Complex Content"
-msgstr ""
+msgstr "Einfügen komplexer Inhalte"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:30
@@ -3659,12 +3650,20 @@ msgid ""
 "paste the content one by one or paste plain text and apply the formatting in "
 "the editor (see [formatting section](#apply-formatting) below)."
 msgstr ""
+"Beim Einfügen von Inhalten aus anderen Quellen, insbesondere von Dokumenten, "
+"die Tabellen, komplexe Formatierungen oder Bilder enthalten, ist zu "
+"beachten, dass die Darstellung in Zammad abweichen kann. Der Editor "
+"versucht, Ihre Formatierung nach Möglichkeit beizubehalten, aber es kann zu "
+"Unstimmigkeiten kommen. Wenn Sie mit einer solchen Situation konfrontiert "
+"werden, versuchen Sie, den Inhalt einzeln zu kopieren/einzufügen oder fügen "
+"Sie reinen Text ein und wenden Sie die Formatierung im Editor an (siehe "
+"Abschnitt [Formatierung](#formatierung-anwenden) unten)."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:31
 #, no-wrap
 msgid "Paragraphs"
-msgstr ""
+msgstr "Absätze"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:36
@@ -3674,13 +3673,17 @@ msgid ""
 "on the recipient's used software. If you add an additional empty line, this "
 "can get rendered as two empty lines on client side."
 msgstr ""
+"Um Absätze im Editor zu trennen, drücken Sie **einmal** die [[enter]]-Taste. "
+"Dies wird je nach verwendeter Software des Empfängers entweder mit oder ohne "
+"Leerzeilen als Absätze dargestellt. Wenn Sie eine zusätzliche Leerzeile "
+"einfügen, kann dies auf der Client-Seite als zwei Leerzeilen dargestellt "
+"werden."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:37
-#, fuzzy, no-wrap
-#| msgid "Text"
+#, no-wrap
 msgid "Cite Text"
-msgstr "Text"
+msgstr "Text zitieren"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:43
@@ -3693,37 +3696,41 @@ msgid ""
 "you can repeat this to cite different sections without losing your written "
 "text."
 msgstr ""
+"Möglicherweise möchten Sie einen Text Ihres Kunden zitieren, um Ihre Antwort "
+"genau darauf zu beziehen, und damit Ihre Kunden langen Konversationen nicht "
+"den Überblick verlieren. Um diese Funktion zu nutzen, markieren Sie einfach "
+"den Text, den Sie zitieren möchten, und klicken Sie auf die Schaltfläche "
+"**Antworten** oder **Weiterleiten** neben dem Artikel. Wenn Sie bereits Text "
+"eingefügt haben, bleibt dieser erhalten und der ausgewählte Text wird "
+"zusätzlich eingefügt. Das bedeutet, dass Sie diesen Vorgang wiederholen "
+"können, um verschiedene Abschnitte zu zitieren, ohne dass Ihr geschriebener "
+"Text verloren geht."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:44
-#, fuzzy, no-wrap
-#| msgid "Formatting"
+#, no-wrap
 msgid "Apply Formatting"
-msgstr "Formatierung"
+msgstr "Formatierung anwenden"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:47
-#, fuzzy
-#| msgid "You can use three different warnings for:"
 msgid "You can format text in the editor in different ways:"
-msgstr "Sie können drei verschiedene Warnungen dafür verwenden:"
+msgstr "Sie können den Text im Editor auf verschiedene Arten formatieren:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:51
 msgid "Use the integrated toolbar"
-msgstr ""
+msgstr "Verwenden Sie die integrierte Werkzeugleiste"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:51
-#, fuzzy
-#| msgid "Keyboard Shortcuts"
 msgid "Use keyboard shortcuts"
-msgstr "Tastaturkürzel"
+msgstr "Verwenden Sie Tastaturkürzel"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:51
 msgid "Use [Markdown](https://www.markdownguide.org) syntax"
-msgstr ""
+msgstr "Verwenden Sie [Markdown](https://www.markdownguide.org)-Syntax"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:56
@@ -3735,13 +3742,19 @@ msgid ""
 "add your text or select existing text and apply the formatting option "
 "afterwards."
 msgstr ""
+"Die **Werkzeugleiste** des Editors enthält Schaltflächen für gängige "
+"Formatierungsaufgaben. Wenn Sie den Mauszeiger über eine Schaltfläche "
+"bewegen, wird ein Tooltip angezeigt, der die Funktion der Schaltfläche "
+"erklärt. Alternativ können Sie **Tastaturkürzel** verwenden (siehe die "
+"nächsten beiden Abschnitte). Bei beiden Varianten können Sie eine "
+"Formatierungsoption im Voraus aktivieren und dann Ihren Text hinzufügen oder "
+"vorhandenen Text auswählen und die Formatierungsoption anschließend anwenden."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/editor.md:57
-#, fuzzy, no-wrap
-#| msgid "Keyboard Shortcuts"
+#, no-wrap
 msgid "General Keyboard Shortcuts"
-msgstr "Tastaturkürzel"
+msgstr "Allgemeine Tastaturkürzel"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:61
@@ -3750,6 +3763,9 @@ msgid ""
 "These shortcuts are common across many text processing tools. Important "
 "shortcuts are:"
 msgstr ""
+"Der Editor unterstützt auch Tastaturkürzel, um Ihren Arbeitsablauf zu "
+"optimieren. Diese Tastenkombinationen sind bei vielen "
+"Textverarbeitungsprogrammen üblich. Wichtige Tastenkombinationen sind:"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:67
@@ -3761,6 +3777,11 @@ msgid ""
 "[[ctrl]] + [[i]]               | _Italics_\n"
 "[[ctrl]] + [[u]]               | <u>Underline</u>\n"
 msgstr ""
+" Kürzel/Befehl          | Formatierung\n"
+"------------------------|----------------------\n"
+"[[strg]] + [[b]]        | **Fett**\n"
+"[[strg]] + [[i]]        | _Kursiv_\n"
+"[[strg]] + [[u]]        | <u>Unterstrichen</u>\n"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:70
@@ -3769,12 +3790,16 @@ msgid ""
 "Regardless if you are used to Markdown or not, some of them might still be "
 "helpful in your daily work."
 msgstr ""
+"Schauen Sie sich den nächsten Abschnitt an, um zusätzliche Formatierungen "
+"über die Tastatur zu verwenden. Unabhängig davon, ob Sie an Markdown kennen "
+"oder nicht, könnten einige davon für Ihre tägliche Arbeit dennoch hilfreich "
+"sein."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/editor.md:71
 #, no-wrap
 msgid "Markdown Usage"
-msgstr ""
+msgstr "Markdown-Verwendung"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:76
@@ -3785,6 +3810,12 @@ msgid ""
 "editor. To go back to standard text, simply use the same limiter again or "
 "use [[enter]], depending on the option."
 msgstr ""
+"Für Benutzer, die mit Markdown vertraut sind, bietet der Editor "
+"Unterstützung für die Formatierung von Inhalten mit Markdown. Wenn Sie "
+"Markdown-Syntax verwenden, wird Ihr Text sofort ersetzt/formatiert, sodass "
+"Sie das Ergebnis direkt im Editor sehen können. Um zum Standardtext "
+"zurückzukehren, verwenden Sie einfach erneut denselben Auszeichungsbefehl "
+"als Abschluss oder drücken Sie je nach Option [[enter]]."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:80
@@ -3794,6 +3825,11 @@ msgid ""
 "supported like headings, lists, links, code blocks and more. Have a look at "
 "the non-exhaustive formatting examples below."
 msgstr ""
+"Es ist nicht beabsichtigt, alle Markdown-Funktionen zu unterstützen, sondern "
+"den Benutzern zu helfen, Dinge einfacher zu erledigen. Daher werden die "
+"wichtigsten Dinge wie Überschriften, Listen, Links, Codeblöcke und mehr "
+"unterstützt. Werfen Sie einen Blick auf die nicht abschließende Liste an "
+"Formatierungsbeispielen unten."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:89
@@ -3809,6 +3845,15 @@ msgid ""
 "`` ``` ``                      | Code block\n"
 "`---`                          | Horizontal line as divider\n"
 msgstr ""
+"Markdown Syntax                | Formatierung\n"
+"-------------------------------|---------------\n"
+"`**`                           | Begrenzer für **fett**\n"
+"`_`                            | Begrenzer für _kursiv_\n"
+"`#`, `##`, `###`               | Überschrift, Level abhängig von Anzahl der `#`\n"
+"`>`                            | Zitiert\n"
+"`` ` ``                        | Begrenzer für `inline code`\n"
+"`` ``` ``                      | Code-Block\n"
+"`---`                          | Horizontale Linie als Trenner\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/guides/index.md:1
@@ -5282,9 +5327,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:18
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows user menu popover](/screenshots/cypress/user-"
+#| "profile.cy.js/user-menu-popover.png)"
 msgid ""
-"![Screenshot shows user menu popover](/screenshots/cypress/user-"
-"profile.cy.js/user-menu-popover.png)"
+"![Screenshot shows user detail panel](/screenshots/cypress/user-"
+"profile.cy.js/user-menu-detail-panel.png)"
 msgstr ""
 "![Screenshot zeigt Benutzer-Menü](/screenshots/cypress/user-profile.cy.js/"
 "user-menu-popover.png)"
@@ -5881,11 +5930,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:74
-#, fuzzy
-#| msgid ""
-#| "Zammad immediately saves your current work progress, so you can easily "
-#| "switch between the different areas of Zammad and you don't have to be "
-#| "afraid of loosing any data like a not yet sent answer in a ticket."
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
 "switch between the different areas of Zammad and you don't have to be afraid "
@@ -6219,15 +6263,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:162
-#, fuzzy
-#| msgid ""
-#| "The ticket detail view provides all relevant information of a ticket. As "
-#| "its main part, all articles of the ticket are shown here. The oldest "
-#| "article (which created the ticket) at the top, the newest at the bottom. "
-#| "Depending on the article type, Zammad offers you different ways to react. "
-#| "For text communication based articles, you can directly create an answer "
-#| "by using the **reply** button below the article or use the **forward** "
-#| "feature."
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
 "main part, all articles of the ticket are shown here. The oldest article "
@@ -6245,8 +6280,13 @@ msgstr ""
 "Der älteste Artikel (der das Ticket erstellt hat) ganz oben, der neueste "
 "ganz unten. Je nach Art des Artikels bietet Ihnen Zammad verschiedene "
 "Reaktionsmöglichkeiten an. Bei Artikeln, die auf Textkommunikation basieren, "
-"können Sie direkt eine Antwort erstellen, indem Sie den **Antworten**-Button "
-"unter dem Artikel verwenden oder die **Weiterleiten**-Funktion nutzen."
+"können Sie direkt eine Antwort verfassen, indem Sie die Schaltfläche "
+"**Antwort** unterhalb des Artikels verwenden oder die Funktion "
+"**Weiterleiten** nutzen. Der integrierte Texteditor ist intuitiv und enthält "
+"Schaltflächen in der Symbolleiste, um Ihren Text zu formatieren und Objekte "
+"wie Tabellen oder Bilder einzufügen. Wenn Sie mehr über den Editor erfahren "
+"möchten, finden Sie im [Editor-Leitfaden](guides/editor) zusätzliche "
+"Informationen."
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:165
@@ -20547,10 +20587,8 @@ msgstr "Chat-Sitzungen"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:172
-#, fuzzy
-#| msgid "Knowledgebase"
 msgid "Knowledge base"
-msgstr "Knowledgebase"
+msgstr "Knowledge Base"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:172
@@ -20705,14 +20743,6 @@ msgstr "Globale Suche"
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:236
-#, fuzzy
-#| msgid ""
-#| "If you need to search not only in a specific object type, you can do so "
-#| "by using the global search without specifying an object. The response may "
-#| "include users, tickets, organizations, knowledgebase articles and answers "
-#| "and chats, depending on your system and content. This global search "
-#| "behaves like the search in Zammad's UI in the left task bar. The "
-#| "available parameters are different to the ones for the endpoint search."
 msgid ""
 "If you need to search not only in a specific object type, you can do so by "
 "using the global search without specifying an object. The response may "
@@ -20723,7 +20753,7 @@ msgid ""
 msgstr ""
 "Wenn Sie nicht nur in einem bestimmten Objekttyp suchen möchten, können Sie "
 "dies mit der globalen Suche ohne Angabe eines Objekts tun. Die Antwort kann "
-"Benutzer, Tickets, Organisationen, Knowledgebase-Artikel und -Antworten "
+"Benutzer, Tickets, Organisationen, Knowledge Base-Artikel und -Antworten "
 "sowie Chats umfassen, je nach System und Inhalt. Diese globale Suche verhält "
 "sich wie die Suche in Zammads UI in der linken Taskleiste. Die verfügbaren "
 "Parameter unterscheiden sich von denen der Endpunktsuche."
@@ -29614,14 +29644,9 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[^1]: Some values are not available as time series information. This\n"
-#| "    means we can only display the _last_ value of the field in question.\n"
+#, no-wrap
 msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-"[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies\n"
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
 
 #. type: Link reference
 #: src/en/tutorials/reporting-grafana.md:234
@@ -31757,6 +31782,10 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "User Popover"
+#~ msgstr "Benutzer Popover"
 
 #~ msgid "The usage of text modules has benefits like:"
 #~ msgstr "Die Verwendung von Textbausteinen hat Vorteile wie:"
