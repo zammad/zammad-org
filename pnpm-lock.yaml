@@ -38,7 +38,7 @@ importers:
         version: 0.7.1(vitepress@1.6.3(@algolia/client-search@5.21.0)(@types/node@22.9.0)(postcss@8.5.3)(search-insights@2.17.2)(typescript@5.6.2))(vue@3.5.13(typescript@5.6.2))
       vitepress-sidebar:
         specifier: ^1.31.1
-        version: 1.32.1
+        version: 1.33.0
       yaml:
         specifier: ^2.7.0
         version: 2.8.0
@@ -1684,8 +1684,8 @@ packages:
       vitepress: ^1.0.0
       vue: ^3.5.0
 
-  vitepress-sidebar@1.32.1:
-    resolution: {integrity: sha512-OMLeQ7jfgZqR6jbqEtMcHkcy1Pr434Grxc0fQlnJRSLc8XtWAJvEMxCWhDQcZ3m3O9UODbf9aa92lLOZ8CLsBA==}
+  vitepress-sidebar@1.33.0:
+    resolution: {integrity: sha512-+z45vGG6OQRKNU7OMhmrp5y9dk9Y8loFZGE2LwzqloqA4p+ECP3/Ti6qrS8kB3N8Rol4v0Nf8HSnsgZEDU4HXQ==}
     engines: {node: '>=18.0.0'}
 
   vitepress@1.6.3:
@@ -3381,7 +3381,7 @@ snapshots:
       vitepress: 1.6.3(@algolia/client-search@5.21.0)(@types/node@22.9.0)(postcss@8.5.3)(search-insights@2.17.2)(typescript@5.6.2)
       vue: 3.5.13(typescript@5.6.2)
 
-  vitepress-sidebar@1.32.1:
+  vitepress-sidebar@1.33.0:
     dependencies:
       glob: 10.4.5
       gray-matter: 4.0.3
