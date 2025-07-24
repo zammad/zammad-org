@@ -277,9 +277,9 @@ QA процес, уместо додавања интерног чланка. У
 
 **Како?**
 
-Погледајте траку у подножју прегледа тиекта. Када видите аватар сличицу
-другог оператера (погледајте снимак изнад), нисте једини који тренутно раде
-на тикету.
+Have a look at the footer bar in the ticket detail view. When there is an
+avatar from another agent in the live user section (see screenshot above),
+you are not the only one viewing this ticket.
 
 У зависности од одговарајуће иконица и да ли је аватар сличица изблеђена,
 пронађите додатно значење:

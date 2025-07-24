@@ -230,8 +230,8 @@ This is why you can immediately see who views and edits the currently viewed tic
 
 **How?**
 
-Have a look at the footer bar in the ticket detail view. When there is an avatar from another agent (see screenshot
-above), you are not the only one viewing this ticket.
+Have a look at the footer bar in the ticket detail view. When there is an avatar from another agent in the live user
+section (see screenshot above), you are not the only one viewing this ticket.
 
 Depending on the additional icon and if the avatar icon is faded, it means:
 

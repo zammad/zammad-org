@@ -21,9 +21,9 @@ The ticket summary feature does what it says: it summarizes the ticket's
 content. This can be a huge time saver when dealing with large tickets
 and/or many hand-overs between agents.
 
-If the feature is activated, a summary of the ticket is generated when a
-ticket is opened. An indicator shows up on the **AI summary** sidebar tab to
-show you that a summary has been generated.
+If the feature is activated, a summary of the ticket is generated when the
+ticket got updated and you either open the ticket or open the summary
+sidebar tab of the ticket, depending on the configuration.
 
 ![Screenshot shows Zammad's ticket detail view with highlighted ticket
 summary banner and summary
@@ -76,3 +76,42 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
   тачкама) и пуштањем AI да напише одговор.
 - **Поједностави**: ради супротно од проширења и сажима ваш текст
   одржавајући вашу мисао.
+
+## AI Agents
+
+This is no feature which allows any agent interaction. However, if the
+feature is configured, you may notice it at some points. This is why you can
+find an explanation here.
+
+AI agents can be configured to work on certain types of routine tasks. You
+may notice the AI agents at different locations:
+
+### Ticket History
+
+If an AI agent applied changes, you can see a ticket history entry telling
+you the name of the AI agent. If you notice ongoing issues with what the AI
+agent did, inform your Zammad admin.
+
+Example of a history entry of an AI agent:
+
+![Screenshot shows AI agent ticket history
+entry](/screenshots/ai/ai-agent-ticket-history.png)
+
+### Откривање истовремене обраде
+
+AI agents which are currently working on a ticket are displayed like other
+agents in the live user section in the bottom bar. This helps to avoid
+duplicate work as well as losing unsaved changes. If you see an AI agent
+avatar, wait for a moment or head over to another ticket.
+
+Avatar of AI agent:
+
+![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)
+
+### Overview Indicator
+
+A running AI agent is indicated in the status column in overviews. The
+status circle changes to a blue/pink gradient circle:
+
+![Screenshot shows a status circle in overviews indicating an AI agent is
+currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)

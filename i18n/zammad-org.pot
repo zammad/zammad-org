@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-16 16:48+0200\n"
+"POT-Creation-Date: 2025-07-24 14:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2135,8 +2135,9 @@ msgstr ""
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/guides/ai.md:83
 #, markdown-text, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr ""
@@ -2186,8 +2187,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Have a look at the footer bar in the ticket detail view. When there is an "
-"avatar from another agent (see screenshot above), you are not the only one "
-"viewing this ticket."
+"avatar from another agent in the live user section (see screenshot above), "
+"you are not the only one viewing this ticket."
 msgstr ""
 
 #. type: Plain text
@@ -2223,7 +2224,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:244
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:81
 #, markdown-text, no-wrap
 msgid "Bulk Actions"
 msgstr ""
@@ -3037,9 +3038,9 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:25
 #, markdown-text
 msgid ""
-"If the feature is activated, a summary of the ticket is generated when a "
-"ticket is opened. An indicator shows up on the **AI summary** sidebar tab to "
-"show you that a summary has been generated."
+"If the feature is activated, a summary of the ticket is generated when the "
+"ticket got updated and you either open the ticket or open the summary "
+"sidebar tab of the ticket, depending on the configuration."
 msgstr ""
 
 #. type: Plain text
@@ -3141,7 +3142,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 #, markdown-text
 msgid ""
 "**Improve writing**: Uses your text as a base and tries to improve it by "
@@ -3150,7 +3151,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 #, markdown-text
 msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
@@ -3158,7 +3159,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 #, markdown-text
 msgid ""
 "**Expand**: Expands your text while keeping your message. Useful if your "
@@ -3168,11 +3169,107 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 #, markdown-text
 msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
 "keeping your message."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:66
+#, markdown-text, no-wrap
+msgid "AI Agents"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:70
+#, markdown-text
+msgid ""
+"This is no feature which allows any agent interaction. However, if the "
+"feature is configured, you may notice it at some points. This is why you can "
+"find an explanation here."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:73
+#, markdown-text
+msgid ""
+"AI agents can be configured to work on certain types of routine tasks. You "
+"may notice the AI agents at different locations:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:74
+#, markdown-text, no-wrap
+msgid "Ticket History"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:78
+#, markdown-text
+msgid ""
+"If an AI agent applied changes, you can see a ticket history entry telling "
+"you the name of the AI agent. If you notice ongoing issues with what the AI "
+"agent did, inform your Zammad admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:80
+#, markdown-text
+msgid "Example of a history entry of an AI agent:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:82
+#, markdown-text
+msgid ""
+"![Screenshot shows AI agent ticket history "
+"entry](/screenshots/ai/ai-agent-ticket-history.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:88
+#, markdown-text
+msgid ""
+"AI agents which are currently working on a ticket are displayed like other "
+"agents in the live user section in the bottom bar. This helps to avoid "
+"duplicate work as well as losing unsaved changes. If you see an AI agent "
+"avatar, wait for a moment or head over to another ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid "Avatar of AI agent:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:92
+#, markdown-text
+msgid "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:93
+#, markdown-text, no-wrap
+msgid "Overview Indicator"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:96
+#, markdown-text
+msgid ""
+"A running AI agent is indicated in the status column in overviews. The "
+"status circle changes to a blue/pink gradient circle:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:97
+#, markdown-text
+msgid ""
+"![Screenshot shows a status circle in overviews indicating an AI agent is "
+"currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
 msgstr ""
 
 #. type: Title #
@@ -3864,43 +3961,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:62
+#: src/en/documentation/use/guides/overviews.md:63
+#, markdown-text
+msgid ""
+"If you spot a circle with a blue/pink gradient, it indicates that an [AI "
+"agent](ai#ai-agents) is currently working on the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:65
 #, markdown-text
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:64
+#: src/en/documentation/use/guides/overviews.md:67
 #, markdown-text
 msgid "![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 #, markdown-text
-msgid "1 low: grey"
+msgid "1 low: gray"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 #, markdown-text
 msgid "2 normal: blue"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 #, markdown-text
 msgid "3 high: red"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:69
+#: src/en/documentation/use/guides/overviews.md:72
 #, markdown-text, no-wrap
 msgid "Open a Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:74
+#: src/en/documentation/use/guides/overviews.md:77
 #, markdown-text
 msgid ""
 "Open a ticket by simply clicking on the line. This opens the ticket as a tab "
@@ -3910,7 +4015,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:77
+#: src/en/documentation/use/guides/overviews.md:80
 #, markdown-text
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
@@ -3919,7 +4024,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:83
+#: src/en/documentation/use/guides/overviews.md:86
 #, markdown-text
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the "
@@ -3930,13 +4035,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:84
+#: src/en/documentation/use/guides/overviews.md:87
 #, markdown-text, no-wrap
 msgid "Reorder Overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:90
+#: src/en/documentation/use/guides/overviews.md:93
 #, markdown-text
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
@@ -3948,7 +4053,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:92
+#: src/en/documentation/use/guides/overviews.md:95
 #, markdown-text
 msgid ""
 "To change the order, simply drag & drop them by clicking the handles on the "
@@ -3956,7 +4061,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:97
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "

@@ -58,11 +58,14 @@ The icon next to the ticket title mainly represents the need for action:
 - Green circle: no action needed any more (e.g. closed, merged)
 - Red triangle: immediate action needed (ticket escalated due to an SLA violation)
 
+If you spot a circle with a blue/pink gradient, it indicates that an [AI agent](ai#ai-agents) is currently working on
+the ticket.
+
 The **priority** is represented by the color of the ticket title:
 
 ![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)
 
-- 1 low: grey
+- 1 low: gray
 - 2 normal: blue
 - 3 high: red
 

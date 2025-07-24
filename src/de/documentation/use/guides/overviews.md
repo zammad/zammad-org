@@ -77,12 +77,15 @@ an:
 - Rotes Dreieck: Sofortiger Handlungsbedarf (Ticket eskaliert aufgrund einer
   SLA-Verletzung)
 
+If you spot a circle with a blue/pink gradient, it indicates that an [AI
+agent](ai#ai-agents) is currently working on the ticket.
+
 Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:
 
 ![Screenshot zeigt Ticket
 Prioritäten](/screenshots/overviews/priorities.png)
 
-- 1 niedrig: grau
+- 1 low: gray
 - 2 normal: blau
 - 3 hoch: rot
 
