@@ -318,8 +318,8 @@ Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
 
 ## Mehrfach-Aktionen
 
-![Screenshot shows the bulk action side
-panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot zeigt Seitenleiste mit
+Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 **Warum?**
 
@@ -336,8 +336,9 @@ Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:
 Wenn Sie sich in den Übersichten oder auf der Seite für die erweiterte Suche
 befinden, können Sie Tickets auf 2 _Arten_ bearbeiten:
 
-- Use the **Bulk Action** button in the top right corner and change/add
-  attributes by using the fields in the side panel
+- Verwenden Sie die Schaltfläche **Mehrfach-Aktion** in der oberen rechten
+  Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der
+  Seitenleiste hinzu
 - Ziehen Sie die Tickets mit der Maus, um die Mehrfach-Aktion einzublenden,
   und legen Sie sie auf der gewünschten Aktion ab
 
@@ -397,9 +398,10 @@ Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
 
 **Warum?**
 
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets.  For example, this might be the
-case if a customer has a technical question and wants to place an order.
+Wenn Sie ein Ticket haben, bei dem es um mehr als ein Problem geht, möchten
+Sie es vielleicht in zwei oder mehr separate Tickets aufteilen. Dies kann
+zum Beispiel der Fall sein, wenn ein Kunde eine technische Frage hat und
+eine Bestellung aufgeben möchte.
 
 **Wie?**
 
@@ -480,7 +482,7 @@ sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 ![Screenshot zeigt eine Übersicht über erfasste
 Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## User Detail Panel
+## Benutzerinfo
 
 **Warum?**
 
@@ -495,30 +497,32 @@ ein Avatar-Symbol, egal ob es sich im Header, in der Fußzeile, dem
 Hauptinhalt oder in der Inhalts-Seitenleiste der Ticket Detailansicht
 befindet.
 
-![Screenshot shows an avatar with opened user detail
-panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
+![Screenshot zeigt einen Avatar mit geöffneter
+Benutzerinfo](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
 kann.
 
-## External Issues and Assets
+## Externe Issues und Inventar
 
 **Warum?**
 
-If you use i-doit and Zammad for IT support or you deal with Github or
-Gitlab issues, you can link to these external systems to have all relevant
-information in one place. Your Zammad admin has to activate and configure
-these features in Zammad's settings.
+Wenn Sie i-doit und Zammad für den IT-Support nutzen oder sich mit Github-
+oder Gitlab-Problemen befassen, können Sie sich mit diesen externen Systemen
+verbinden, um alle relevanten Informationen an einem Ort zu haben. Ihr
+Zammad-Administrator muss diese Funktionen in den Einstellungen von Zammad
+aktivieren und konfigurieren.
 
 **Wie?**
 
-![Screenshot shows Gitlab content sidebar with "Link Issue"
-button](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot zeigt Gitlab Seitenleiste mit "Issue verknüpfen"
+Schaltfläche](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
 
-If activated, simply open a ticket and choose the right content sidebar tab
-with the respective icon (see Gitlab example in screenshot above). Click the
-button to link to an issue by entering the URL of it or select the item from
-a select field (i-doit). Afterwards, you can see the linked item with
-additional metadata. By clicking on the linked item, you are redirected to
-it in the respective system.
+Falls aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den rechten
+Seitenleisten-Tab mit dem entsprechenden Symbol (siehe Gitlab-Beispiel im
+Screenshot oben). Klicken Sie auf die Schaltfläche, um einen Link zu einem
+Issue zu erstellen und geben Sie die URL ein oder wählen das Element aus
+einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element
+mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken,
+werden Sie zu diesem im jeweiligen System weitergeleitet.

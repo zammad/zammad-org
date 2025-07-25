@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-16 11:00+0200\n"
-"PO-Revision-Date: 2025-07-16 08:39+0000\n"
+"POT-Creation-Date: 2025-07-24 14:35+0200\n"
+"PO-Revision-Date: 2025-07-23 09:01+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1759,6 +1759,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:323
 #: src/en/documentation/use/advanced-features.md:340
 #: src/en/documentation/use/advanced-features.md:369
+#: src/en/documentation/use/advanced-features.md:386
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Warum?**\n"
@@ -1793,6 +1794,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:328
 #: src/en/documentation/use/advanced-features.md:346
 #: src/en/documentation/use/advanced-features.md:374
+#: src/en/documentation/use/advanced-features.md:392
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Wie?**\n"
@@ -2403,8 +2405,9 @@ msgstr ""
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!\n"
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/guides/ai.md:83
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Erkennung gleichzeitige Ticketbearbeitung"
@@ -2449,10 +2452,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:235
+#, fuzzy
+#| msgid ""
+#| "Have a look at the footer bar in the ticket detail view. When there is an "
+#| "avatar from another agent (see screenshot above), you are not the only "
+#| "one viewing this ticket."
 msgid ""
 "Have a look at the footer bar in the ticket detail view. When there is an "
-"avatar from another agent (see screenshot above), you are not the only one "
-"viewing this ticket."
+"avatar from another agent in the live user section (see screenshot above), "
+"you are not the only one viewing this ticket."
 msgstr ""
 "Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des Tickets. "
 "Wenn dort ein Avatar eines anderen Agenten zu sehen ist (siehe Screenshot "
@@ -2497,23 +2505,19 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:244
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:81
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Mehrfach-Aktionen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:247
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows the bulk action flyout](/screenshots/cypress/usage-"
-#| "advanced-features.cy.js/bulk-flyout-overviews.png)"
 msgid ""
 "![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Screenshot zeigt Seitenleiste mit Mehrfach-Aktionen](/screenshots/cypress/"
-"usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
+"usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:251
@@ -2553,10 +2557,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:263
-#, fuzzy
-#| msgid ""
-#| "Use the **Bulk Action** button in the top right corner and change/add "
-#| "attributes by using the fields in the flyout"
 msgid ""
 "Use the **Bulk Action** button in the top right corner and change/add "
 "attributes by using the fields in the side panel"
@@ -2720,12 +2720,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:309
-#, fuzzy
-#| msgid ""
-#| "If you have a ticket which is about more than one issue, you might want "
-#| "to split it in two or more separate tickets.  For example this might be "
-#| "the case if a customer has a technical question and wants to place an "
-#| "order."
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example, this might be the "
@@ -2918,10 +2912,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:366
-#, fuzzy, no-wrap
-#| msgid "User Documentation"
+#, no-wrap
 msgid "User Detail Panel"
-msgstr "Benutzer Dokumentation"
+msgstr "Benutzerinfo"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:372
@@ -2946,19 +2939,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:379
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows an avatar with an open user popover](/screenshots/"
-#| "cypress/usage-advanced-features.cy.js/user-popover.png)"
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
-"![Screenshot zeigt einen Avatar mit einem geöffneten Benutzer-Popover](/"
-"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Screenshot zeigt einen Avatar mit geöffneter Benutzerinfo](/screenshots/"
+"cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -2966,6 +2955,54 @@ msgstr ""
 "Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in "
 "der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden "
 "kann."
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:383
+#, no-wrap
+msgid "External Issues and Assets"
+msgstr "Externe Issues und Inventar"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:390
+msgid ""
+"If you use i-doit and Zammad for IT support or you deal with Github or "
+"Gitlab issues, you can link to these external systems to have all relevant "
+"information in one place. Your Zammad admin has to activate and configure "
+"these features in Zammad's settings."
+msgstr ""
+"Wenn Sie i-doit und Zammad für den IT-Support nutzen oder sich mit Github- "
+"oder Gitlab-Problemen befassen, können Sie sich mit diesen externen Systemen "
+"verbinden, um alle relevanten Informationen an einem Ort zu haben. Ihr "
+"Zammad-Administrator muss diese Funktionen in den Einstellungen von Zammad "
+"aktivieren und konfigurieren."
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:394
+msgid ""
+"![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
+"screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)"
+msgstr ""
+"![Screenshot zeigt Gitlab Seitenleiste mit \"Issue verknüpfen\" Schaltfläche]"
+"(/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-"
+"sidebar.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:398
+msgid ""
+"If activated, simply open a ticket and choose the right content sidebar tab "
+"with the respective icon (see Gitlab example in screenshot above). Click the "
+"button to link to an issue by entering the URL of it or select the item from "
+"a select field (i-doit). Afterwards, you can see the linked item with "
+"additional metadata. By clicking on the linked item, you are redirected to "
+"it in the respective system."
+msgstr ""
+"Falls aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den rechten "
+"Seitenleisten-Tab mit dem entsprechenden Symbol (siehe Gitlab-Beispiel im "
+"Screenshot oben). Klicken Sie auf die Schaltfläche, um einen Link zu einem "
+"Issue zu erstellen und geben Sie die URL ein oder wählen das Element aus "
+"einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element "
+"mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken, "
+"werden Sie zu diesem im jeweiligen System weitergeleitet."
 
 #. type: Title #
 #: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:6
@@ -3397,10 +3434,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:25
+#, fuzzy
+#| msgid ""
+#| "If the feature is activated, a summary of the ticket is generated when a "
+#| "ticket is opened. An indicator shows up on the **AI summary** sidebar tab "
+#| "to show you that a summary has been generated."
 msgid ""
-"If the feature is activated, a summary of the ticket is generated when a "
-"ticket is opened. An indicator shows up on the **AI summary** sidebar tab to "
-"show you that a summary has been generated."
+"If the feature is activated, a summary of the ticket is generated when the "
+"ticket got updated and you either open the ticket or open the summary "
+"sidebar tab of the ticket, depending on the configuration."
 msgstr ""
 "Wenn die Funktion aktiviert ist, wird eine Zusammenfassung des Tickets "
 "erstellt, wenn ein Ticket geöffnet wird. Auf dem Seitenleisten-Tab **KI-"
@@ -3519,7 +3561,7 @@ msgstr ""
 "\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Improve writing**: Uses your text as a base and tries to improve it by "
 "enhancing clarity, conciseness and structure as well as removing "
@@ -3530,7 +3572,7 @@ msgstr ""
 "und Grammatikfehler zu beseitigen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
 "removes spelling and grammar mistakes."
@@ -3539,7 +3581,7 @@ msgstr ""
 "automatisch Rechtschreib- und Grammatikfehler."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Expand**: Expands your text while keeping your message. Useful if your "
 "customer expects more than some bullet points as an answer. You can even use "
@@ -3553,13 +3595,109 @@ msgstr ""
 "schreiben lassen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
 "keeping your message."
 msgstr ""
 "**Vereinfachen**: Führt das Gegenteil von \"Erweitern\" aus und vereinfacht "
 "und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:66
+#, fuzzy, no-wrap
+#| msgid "API clients"
+msgid "AI Agents"
+msgstr "API-Clients"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:70
+msgid ""
+"This is no feature which allows any agent interaction. However, if the "
+"feature is configured, you may notice it at some points. This is why you can "
+"find an explanation here."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:73
+msgid ""
+"AI agents can be configured to work on certain types of routine tasks. You "
+"may notice the AI agents at different locations:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:74
+#, fuzzy, no-wrap
+#| msgid "Ticket history"
+msgid "Ticket History"
+msgstr "Ticket-Historie"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:78
+msgid ""
+"If an AI agent applied changes, you can see a ticket history entry telling "
+"you the name of the AI agent. If you notice ongoing issues with what the AI "
+"agent did, inform your Zammad admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:80
+msgid "Example of a history entry of an AI agent:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:82
+#, fuzzy
+#| msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
+msgid ""
+"![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
+"ticket-history.png)"
+msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:88
+msgid ""
+"AI agents which are currently working on a ticket are displayed like other "
+"agents in the live user section in the bottom bar. This helps to avoid "
+"duplicate work as well as losing unsaved changes. If you see an AI agent "
+"avatar, wait for a moment or head over to another ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:90
+#, fuzzy
+#| msgid "Avatar Menu"
+msgid "Avatar of AI agent:"
+msgstr "Avatar-Menü"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:92
+#, fuzzy
+#| msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
+msgid ""
+"![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
+msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:93
+#, fuzzy, no-wrap
+#| msgid "Overview section"
+msgid "Overview Indicator"
+msgstr "Übersichten"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:96
+msgid ""
+"A running AI agent is indicated in the status column in overviews. The "
+"status circle changes to a blue/pink gradient circle:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:97
+msgid ""
+"![Screenshot shows a status circle in overviews indicating an AI agent is "
+"currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
+msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/guides/editor.md:1
@@ -4345,40 +4483,49 @@ msgstr ""
 "SLA-Verletzung)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:62
+#: src/en/documentation/use/guides/overviews.md:63
+msgid ""
+"If you spot a circle with a blue/pink gradient, it indicates that an [AI "
+"agent](ai#ai-agents) is currently working on the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:65
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr "Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:64
+#: src/en/documentation/use/guides/overviews.md:67
 msgid ""
 "![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
 msgstr ""
 "![Screenshot zeigt Ticket Prioritäten](/screenshots/overviews/priorities.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
-msgid "1 low: grey"
+#: src/en/documentation/use/guides/overviews.md:71
+#, fuzzy
+#| msgid "1 low: grey"
+msgid "1 low: gray"
 msgstr "1 niedrig: grau"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 msgid "2 normal: blue"
 msgstr "2 normal: blau"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 msgid "3 high: red"
 msgstr "3 hoch: rot"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:69
+#: src/en/documentation/use/guides/overviews.md:72
 #, no-wrap
 msgid "Open a Ticket"
 msgstr "Ein Ticket öffnen"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:74
+#: src/en/documentation/use/guides/overviews.md:77
 msgid ""
 "Open a ticket by simply clicking on the line. This opens the ticket as a tab "
 "in the left navigation bar and shows you the ticket detail view. If this "
@@ -4392,7 +4539,7 @@ msgstr ""
 "doppelten Tab zu öffnen."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:77
+#: src/en/documentation/use/guides/overviews.md:80
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
 "tickets, you can find arrows in the ticket detail view header to switch to "
@@ -4403,7 +4550,7 @@ msgstr ""
 "nächsten/vorherigen Ticket dieser Übersicht zu wechseln."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:83
+#: src/en/documentation/use/guides/overviews.md:86
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the drop-"
 "down fields or drag them with the mouse to invoke the bulk action overlay. "
@@ -4417,13 +4564,13 @@ msgstr ""
 "aktionen) auf der Seite mit den erweiterten Funktionen."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:84
+#: src/en/documentation/use/guides/overviews.md:87
 #, no-wrap
 msgid "Reorder Overviews"
 msgstr "Übersichten neu anordnen"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:90
+#: src/en/documentation/use/guides/overviews.md:93
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
@@ -4440,7 +4587,7 @@ msgstr ""
 "benutzerdefinierte Reihenfolge festlegen können."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:92
+#: src/en/documentation/use/guides/overviews.md:95
 msgid ""
 "To change the order, simply drag & drop them by clicking the handles on the "
 "left side."
@@ -4449,7 +4596,7 @@ msgstr ""
 "Drop, indem Sie auf die Fläche auf der linken Seite klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:97
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
 "switch back to your admin's order by clicking the `Reset Overview Order` "
@@ -5327,16 +5474,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:18
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows user menu popover](/screenshots/cypress/user-"
-#| "profile.cy.js/user-menu-popover.png)"
 msgid ""
 "![Screenshot shows user detail panel](/screenshots/cypress/user-"
 "profile.cy.js/user-menu-detail-panel.png)"
 msgstr ""
-"![Screenshot zeigt Benutzer-Menü](/screenshots/cypress/user-profile.cy.js/"
-"user-menu-popover.png)"
+"![Screenshot zeigt Benutzerinfo](/screenshots/cypress/user-profile.cy.js/"
+"user-menu-detail-panel.png)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/manage-profile.md:26

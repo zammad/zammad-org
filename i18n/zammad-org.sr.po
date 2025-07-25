@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-16 11:00+0200\n"
+"POT-Creation-Date: 2025-07-24 14:35+0200\n"
 "PO-Revision-Date: 2025-06-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -1733,6 +1733,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:323
 #: src/en/documentation/use/advanced-features.md:340
 #: src/en/documentation/use/advanced-features.md:369
+#: src/en/documentation/use/advanced-features.md:386
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Зашто?**\n"
@@ -1766,6 +1767,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:328
 #: src/en/documentation/use/advanced-features.md:346
 #: src/en/documentation/use/advanced-features.md:374
+#: src/en/documentation/use/advanced-features.md:392
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Како?**\n"
@@ -2367,8 +2369,9 @@ msgstr ""
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "Примена нацрта преиначиће ваше неснимљене измене!\n"
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/guides/ai.md:83
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Откривање истовремене обраде"
@@ -2412,10 +2415,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:235
+#, fuzzy
+#| msgid ""
+#| "Have a look at the footer bar in the ticket detail view. When there is an "
+#| "avatar from another agent (see screenshot above), you are not the only "
+#| "one viewing this ticket."
 msgid ""
 "Have a look at the footer bar in the ticket detail view. When there is an "
-"avatar from another agent (see screenshot above), you are not the only one "
-"viewing this ticket."
+"avatar from another agent in the live user section (see screenshot above), "
+"you are not the only one viewing this ticket."
 msgstr ""
 "Погледајте траку у подножју прегледа тиекта. Када видите аватар сличицу "
 "другог оператера (погледајте снимак изнад), нисте једини који тренутно раде "
@@ -2458,7 +2466,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:244
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:81
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Масовне радње"
@@ -2903,13 +2911,52 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
 msgstr ""
 "Иначе, иконица круне на снимку екрана представља VIP стање клијента, које "
 "можете бити укључено у детаљном приказу клијента и администраторском панелу."
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:383
+#, no-wrap
+msgid "External Issues and Assets"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:390
+msgid ""
+"If you use i-doit and Zammad for IT support or you deal with Github or "
+"Gitlab issues, you can link to these external systems to have all relevant "
+"information in one place. Your Zammad admin has to activate and configure "
+"these features in Zammad's settings."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:394
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
+#| "features.cy.js/ticket-macro.png)"
+msgid ""
+"![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
+"screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)"
+msgstr ""
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-macro.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:398
+msgid ""
+"If activated, simply open a ticket and choose the right content sidebar tab "
+"with the respective icon (see Gitlab example in screenshot above). Click the "
+"button to link to an issue by entering the URL of it or select the item from "
+"a select field (i-doit). Afterwards, you can see the linked item with "
+"additional metadata. By clicking on the linked item, you are redirected to "
+"it in the respective system."
+msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:6
@@ -3280,9 +3327,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:25
 msgid ""
-"If the feature is activated, a summary of the ticket is generated when a "
-"ticket is opened. An indicator shows up on the **AI summary** sidebar tab to "
-"show you that a summary has been generated."
+"If the feature is activated, a summary of the ticket is generated when the "
+"ticket got updated and you either open the ticket or open the summary "
+"sidebar tab of the ticket, depending on the configuration."
 msgstr ""
 
 #. type: Plain text
@@ -3398,7 +3445,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Improve writing**: Uses your text as a base and tries to improve it by "
 "enhancing clarity, conciseness and structure as well as removing "
@@ -3409,7 +3456,7 @@ msgstr ""
 "правопису и граматици."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
 "removes spelling and grammar mistakes."
@@ -3418,7 +3465,7 @@ msgstr ""
 "отклања грешке у правопису и граматици."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Expand**: Expands your text while keeping your message. Useful if your "
 "customer expects more than some bullet points as an answer. You can even use "
@@ -3431,13 +3478,116 @@ msgstr ""
 "тачкама) и пуштањем AI да напише одговор."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:65
 msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
 "keeping your message."
 msgstr ""
 "**Поједностави**: ради супротно од проширења и сажима ваш текст одржавајући "
 "вашу мисао."
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:66
+#, no-wrap
+msgid "AI Agents"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:70
+msgid ""
+"This is no feature which allows any agent interaction. However, if the "
+"feature is configured, you may notice it at some points. This is why you can "
+"find an explanation here."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:73
+msgid ""
+"AI agents can be configured to work on certain types of routine tasks. You "
+"may notice the AI agents at different locations:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:74
+#, fuzzy, no-wrap
+#| msgid "Ticket history"
+msgid "Ticket History"
+msgstr "Историјат тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:78
+msgid ""
+"If an AI agent applied changes, you can see a ticket history entry telling "
+"you the name of the AI agent. If you notice ongoing issues with what the AI "
+"agent did, inform your Zammad admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:80
+msgid "Example of a history entry of an AI agent:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:82
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
+"ticket-history.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:88
+msgid ""
+"AI agents which are currently working on a ticket are displayed like other "
+"agents in the live user section in the bottom bar. This helps to avoid "
+"duplicate work as well as losing unsaved changes. If you see an AI agent "
+"avatar, wait for a moment or head over to another ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:90
+#, fuzzy
+#| msgid "Avatar Menu"
+msgid "Avatar of AI agent:"
+msgstr "Кориснички мени"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:92
+#, fuzzy
+#| msgid ""
+#| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#| "screenshot-full-page.png)"
+msgid ""
+"![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:93
+#, fuzzy, no-wrap
+#| msgid "Overviews"
+msgid "Overview Indicator"
+msgstr "Прегледи"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:96
+msgid ""
+"A running AI agent is indicated in the status column in overviews. The "
+"status circle changes to a blue/pink gradient circle:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:97
+msgid ""
+"![Screenshot shows a status circle in overviews indicating an AI agent is "
+"currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
+msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/guides/editor.md:1
@@ -4089,12 +4239,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:62
+#: src/en/documentation/use/guides/overviews.md:63
+msgid ""
+"If you spot a circle with a blue/pink gradient, it indicates that an [AI "
+"agent](ai#ai-agents) is currently working on the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:65
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:64
+#: src/en/documentation/use/guides/overviews.md:67
 #, fuzzy
 #| msgid ""
 #| "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
@@ -4106,28 +4263,28 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
-msgid "1 low: grey"
+#: src/en/documentation/use/guides/overviews.md:71
+msgid "1 low: gray"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 msgid "2 normal: blue"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:68
+#: src/en/documentation/use/guides/overviews.md:71
 msgid "3 high: red"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:69
+#: src/en/documentation/use/guides/overviews.md:72
 #, no-wrap
 msgid "Open a Ticket"
 msgstr "Отворите тикет"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:74
+#: src/en/documentation/use/guides/overviews.md:77
 msgid ""
 "Open a ticket by simply clicking on the line. This opens the ticket as a tab "
 "in the left navigation bar and shows you the ticket detail view. If this "
@@ -4136,7 +4293,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:77
+#: src/en/documentation/use/guides/overviews.md:80
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
 "tickets, you can find arrows in the ticket detail view header to switch to "
@@ -4144,7 +4301,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:83
+#: src/en/documentation/use/guides/overviews.md:86
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the drop-"
 "down fields or drag them with the mouse to invoke the bulk action overlay. "
@@ -4153,13 +4310,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:84
+#: src/en/documentation/use/guides/overviews.md:87
 #, no-wrap
 msgid "Reorder Overviews"
 msgstr "Промена редоследа прегледа"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:90
+#: src/en/documentation/use/guides/overviews.md:93
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
@@ -4170,14 +4327,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:92
+#: src/en/documentation/use/guides/overviews.md:95
 msgid ""
 "To change the order, simply drag & drop them by clicking the handles on the "
 "left side."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:97
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
 "switch back to your admin's order by clicking the `Reset Overview Order` "

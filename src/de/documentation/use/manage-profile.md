@@ -17,8 +17,8 @@ anzeigen.
 Wenn Sie auf dieses Symbol klicken, öffnet sich ein Menü, in dem Sie
 verschiedene Dinge finden können:
 
-![Screenshot shows user detail
-panel](/screenshots/cypress/user-profile.cy.js/user-menu-detail-panel.png)
+![Screenshot zeigt
+Benutzerinfo](/screenshots/cypress/user-profile.cy.js/user-menu-detail-panel.png)
 
 - **Aussehen** mit Schalter zum Wechseln zwischen dunklem und hellem Modus
   (oder basierend auf Webbrowser-Einstellung)
