@@ -231,12 +231,12 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
 - `ES - CTI Log`
 
-[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies
-    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.
+[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
+    means we can only display the _last_ value of the field in question.
 
-[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen
-     SLA-Verstöße.
+[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
+    Verletzung.
 
-[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher
-    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die
-    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.
+[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher
+    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,
+    wie Sie die Beziehungen auf Ihrem System herausfinden können.
