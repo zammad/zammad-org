@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-24 14:35+0200\n"
-"PO-Revision-Date: 2025-07-23 09:01+0000\n"
+"POT-Creation-Date: 2025-07-25 04:58+0000\n"
+"PO-Revision-Date: 2025-07-26 07:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -217,6 +217,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -2452,19 +2464,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:235
-#, fuzzy
-#| msgid ""
-#| "Have a look at the footer bar in the ticket detail view. When there is an "
-#| "avatar from another agent (see screenshot above), you are not the only "
-#| "one viewing this ticket."
 msgid ""
 "Have a look at the footer bar in the ticket detail view. When there is an "
 "avatar from another agent in the live user section (see screenshot above), "
 "you are not the only one viewing this ticket."
 msgstr ""
 "Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des Tickets. "
-"Wenn dort ein Avatar eines anderen Agenten zu sehen ist (siehe Screenshot "
-"oben), sind Sie nicht der einzige, der dieses Ticket betrachtet."
+"Wenn in diesem Live-Benutzer-Bereich ein Avatar eines anderen Agenten zu "
+"sehen ist (siehe Screenshot oben), sind Sie nicht der einzige Agent, der "
+"dieses Ticket betrachtet."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:237
@@ -3434,20 +3442,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:25
-#, fuzzy
-#| msgid ""
-#| "If the feature is activated, a summary of the ticket is generated when a "
-#| "ticket is opened. An indicator shows up on the **AI summary** sidebar tab "
-#| "to show you that a summary has been generated."
 msgid ""
 "If the feature is activated, a summary of the ticket is generated when the "
 "ticket got updated and you either open the ticket or open the summary "
 "sidebar tab of the ticket, depending on the configuration."
 msgstr ""
-"Wenn die Funktion aktiviert ist, wird eine Zusammenfassung des Tickets "
-"erstellt, wenn ein Ticket geöffnet wird. Auf dem Seitenleisten-Tab **KI-"
-"Zusammenfassung** wird ein Indikator eingeblendet, der Ihnen anzeigt, dass "
-"eine Zusammenfassung erstellt wurde."
+"Wenn die Funktion aktiviert ist wird eine Zusammenfassung des Tickets "
+"generiert wenn das Ticket aktualisiert wurde und Sie es entweder öffnen oder "
+"den Seitenleisten-Tab für die Zusammenfassung des Tickets anklicken, "
+"abhängig von der Konfiguration."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:27
@@ -3605,10 +3608,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:66
-#, fuzzy, no-wrap
-#| msgid "API clients"
+#, no-wrap
 msgid "AI Agents"
-msgstr "API-Clients"
+msgstr "KI-Agenten"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:70
@@ -3617,6 +3619,9 @@ msgid ""
 "feature is configured, you may notice it at some points. This is why you can "
 "find an explanation here."
 msgstr ""
+"Dies ist keine Funktion, die eine Interaktion mit Agenten ermöglicht. Wenn "
+"die Funktion jedoch konfiguriert ist, können Sie sie an einigen Stellen "
+"bemerken. Deshalb finden Sie hier eine Erklärung."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:73
@@ -3624,11 +3629,13 @@ msgid ""
 "AI agents can be configured to work on certain types of routine tasks. You "
 "may notice the AI agents at different locations:"
 msgstr ""
+"KI Agenten können so konfiguriert werden, dass sie bestimmte Arten von "
+"Routineaufgaben übernehmen. Sie werden die KI-Agenten an verschiedenen "
+"Stellen bemerken:"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/ai.md:74
-#, fuzzy, no-wrap
-#| msgid "Ticket history"
+#, no-wrap
 msgid "Ticket History"
 msgstr "Ticket-Historie"
 
@@ -3639,20 +3646,24 @@ msgid ""
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
 "agent did, inform your Zammad admin."
 msgstr ""
+"Wenn ein KI-Agent Änderungen vorgenommen hat, sehen Sie einen Eintrag in der "
+"Ticket-Historie, der Ihnen den Namen des KI-Agenten nennt. Wenn Sie "
+"anhaltende Probleme mit der Arbeit des KI-Agenten feststellen, informieren "
+"Sie Ihren Zammad-Administrator."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:80
 msgid "Example of a history entry of an AI agent:"
-msgstr ""
+msgstr "Beispiel für einen Eintrag in die Ticket-Historie eines KI Agenten:"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:82
-#, fuzzy
-#| msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
 "ticket-history.png)"
-msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+msgstr ""
+"![Eintrag eines KI-Agenten in die Ticket-Historie](/screenshots/ai/ai-agent-"
+"ticket-history.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:88
@@ -3662,28 +3673,29 @@ msgid ""
 "duplicate work as well as losing unsaved changes. If you see an AI agent "
 "avatar, wait for a moment or head over to another ticket."
 msgstr ""
+"KI-Agenten, die gerade an einem Ticket arbeiten, werden wie andere Agenten "
+"im Live-Benutzer-Bereich in der unteren Leiste angezeigt. Dies hilft, "
+"doppelte Arbeit und den Verlust von nicht gespeicherten Änderungen zu "
+"vermeiden. Wenn Sie einen Avatar eines KI-Agenten sehen, warten Sie einen "
+"Moment oder wechseln Sie zu einem anderen Ticket."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:90
-#, fuzzy
-#| msgid "Avatar Menu"
 msgid "Avatar of AI agent:"
-msgstr "Avatar-Menü"
+msgstr "Avatar eines KI Agenten:"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:92
-#, fuzzy
-#| msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
-msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+msgstr ""
+"![Screenshot zeigt Avatar eines KI-Agenten](/screenshots/ai/ai-live-user.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/ai.md:93
-#, fuzzy, no-wrap
-#| msgid "Overview section"
+#, no-wrap
 msgid "Overview Indicator"
-msgstr "Übersichten"
+msgstr "Indikator in Übersichten"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:96
@@ -3691,6 +3703,9 @@ msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
 msgstr ""
+"Ein laufender KI-Agent wird in der Statusspalte in den Übersichten "
+"angezeigt. Die Farbe des Kreises ändert sich zu einem blau/pinken "
+"Farbverlauf:"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:97
@@ -3698,6 +3713,9 @@ msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
 msgstr ""
+"![Screenshot zeigt einen Statuskreis in Übersichten, der anzeigt, dass ein "
+"KI-Agent gerade daran arbeitet](/screenshots/ai/overview-ai-agent-"
+"indicator.png)"
 
 #. type: Title #
 #: src/en/documentation/use/guides/editor.md:1
@@ -4488,6 +4506,8 @@ msgid ""
 "If you spot a circle with a blue/pink gradient, it indicates that an [AI "
 "agent](ai#ai-agents) is currently working on the ticket."
 msgstr ""
+"Wenn Sie einen Kreis mit einem blau/pinken Farbverlauf sehen, bedeutet das, "
+"dass ein [KI-Agent](ai#ai-agents) gerade an dem Ticket arbeitet."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:65
@@ -4503,8 +4523,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:71
-#, fuzzy
-#| msgid "1 low: grey"
 msgid "1 low: gray"
 msgstr "1 niedrig: grau"
 
@@ -21141,11 +21159,14 @@ msgstr ""
 "Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser "
 "Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich sein"
 
-#. type: Link reference
+#. type: Plain text
 #: src/en/reference/rest-api/intro.md:327
-#, no-wrap
-msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
-msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgid ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
+msgstr ""
+"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
+"**P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/knowledgebase.md:1
@@ -24653,18 +24674,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -29779,45 +29788,38 @@ msgstr "Abnehmer der Anrufe (eingehend)"
 msgid "`ES - CTI Log`"
 msgstr "`ES - CTI Log`"
 
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:231
-#, no-wrap
-msgid "[^1]: Some values are not available as time series information. This"
-msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
-
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, no-wrap
-msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes anzeigt werden kann.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:234
-#, no-wrap
-msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
-msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+msgid ""
+"[^1]: Some values are not available as time series information. This\n"
+"    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+"[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies\n"
+"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt "
+"werden kann.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid "    violations.\n"
-msgstr "    Verletzung.\n"
-
-#. type: Link reference
-#: src/en/tutorials/reporting-grafana.md:237
-#, no-wrap
-msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
-msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+msgid ""
+"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+"    violations.\n"
+msgstr ""
+"[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+"     SLA-Verstöße.\n"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
+"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
-"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
-"    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
@@ -31927,6 +31929,30 @@ msgstr ""
 "Konfigurationsänderungen zu übernehmen."
 
 #, no-wrap
+#~ msgid "[^1]: Some values are not available as time series information. This"
+#~ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
+
+#, no-wrap
+#~ msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
+
+#, no-wrap
+#~ msgid "    violations.\n"
+#~ msgstr "    Verletzung.\n"
+
+#, no-wrap
+#~ msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+#~ msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+
+#, no-wrap
+#~ msgid ""
+#~ "    the panel may not work or show incorrect data. Check the panels\n"
+#~ "    description on how to find our the relations on your system.\n"
+#~ msgstr ""
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
+#~ "    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+
+#, no-wrap
 #~ msgid "User Popover"
 #~ msgstr "Benutzer Popover"
 
@@ -31939,24 +31965,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Um Textbausteine zu verwenden, geben Sie einfach `::` in den Editor ein, "
 #~ "gefolgt von Teilen des Namens oder dem Schlüsselwort des Textbausteins."
-
-#, no-wrap
-#~ msgid ""
-#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-#~ "    violations.\n"
-#~ msgstr ""
-#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-#~ "     SLA-Verstöße.\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
-#~ "    the panel may not work or show incorrect data. Check the panels\n"
-#~ "    description on how to find our the relations on your system.\n"
-#~ msgstr ""
-#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #~ msgid ""
 #~ "If you don't want to see the banner below the articles, you can "

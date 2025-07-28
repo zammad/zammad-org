@@ -21,9 +21,10 @@ Die Ticket-Zusammenfassung tut, was der Name sagt: Sie fasst den Inhalt des
 Tickets zusammen. Dies kann bei großen Tickets und/oder vielen Wechseln
 zwischen Agenten eine enorme Zeitersparnis bedeuten.
 
-If the feature is activated, a summary of the ticket is generated when the
-ticket got updated and you either open the ticket or open the summary
-sidebar tab of the ticket, depending on the configuration.
+Wenn die Funktion aktiviert ist wird eine Zusammenfassung des Tickets
+generiert wenn das Ticket aktualisiert wurde und Sie es entweder öffnen oder
+den Seitenleisten-Tab für die Zusammenfassung des Tickets anklicken,
+abhängig von der Konfiguration.
 
 ![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
 für die Ticket-Zusammenfassung und der
@@ -80,41 +81,47 @@ Smart-Editor-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-ed
 - **Vereinfachen**: Führt das Gegenteil von "Erweitern" aus und vereinfacht
   und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt.
 
-## AI Agents
+## KI-Agenten
 
-This is no feature which allows any agent interaction. However, if the
-feature is configured, you may notice it at some points. This is why you can
-find an explanation here.
+Dies ist keine Funktion, die eine Interaktion mit Agenten ermöglicht. Wenn
+die Funktion jedoch konfiguriert ist, können Sie sie an einigen Stellen
+bemerken. Deshalb finden Sie hier eine Erklärung.
 
-AI agents can be configured to work on certain types of routine tasks. You
-may notice the AI agents at different locations:
+KI Agenten können so konfiguriert werden, dass sie bestimmte Arten von
+Routineaufgaben übernehmen. Sie werden die KI-Agenten an verschiedenen
+Stellen bemerken:
 
-### Ticket History
+### Ticket-Historie
 
-If an AI agent applied changes, you can see a ticket history entry telling
-you the name of the AI agent. If you notice ongoing issues with what the AI
-agent did, inform your Zammad admin.
+Wenn ein KI-Agent Änderungen vorgenommen hat, sehen Sie einen Eintrag in der
+Ticket-Historie, der Ihnen den Namen des KI-Agenten nennt. Wenn Sie
+anhaltende Probleme mit der Arbeit des KI-Agenten feststellen, informieren
+Sie Ihren Zammad-Administrator.
 
-Example of a history entry of an AI agent:
+Beispiel für einen Eintrag in die Ticket-Historie eines KI Agenten:
 
-![Screenshot shows AI agent ticket history
-entry](/screenshots/ai/ai-agent-ticket-history.png)
+![Eintrag eines KI-Agenten in die
+Ticket-Historie](/screenshots/ai/ai-agent-ticket-history.png)
 
 ### Erkennung gleichzeitige Ticketbearbeitung
 
-AI agents which are currently working on a ticket are displayed like other
-agents in the live user section in the bottom bar. This helps to avoid
-duplicate work as well as losing unsaved changes. If you see an AI agent
-avatar, wait for a moment or head over to another ticket.
+KI-Agenten, die gerade an einem Ticket arbeiten, werden wie andere Agenten
+im Live-Benutzer-Bereich in der unteren Leiste angezeigt. Dies hilft,
+doppelte Arbeit und den Verlust von nicht gespeicherten Änderungen zu
+vermeiden. Wenn Sie einen Avatar eines KI-Agenten sehen, warten Sie einen
+Moment oder wechseln Sie zu einem anderen Ticket.
 
-Avatar of AI agent:
+Avatar eines KI Agenten:
 
-![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)
+![Screenshot zeigt Avatar eines
+KI-Agenten](/screenshots/ai/ai-live-user.png)
 
-### Overview Indicator
+### Indikator in Übersichten
 
-A running AI agent is indicated in the status column in overviews. The
-status circle changes to a blue/pink gradient circle:
+Ein laufender KI-Agent wird in der Statusspalte in den Übersichten
+angezeigt. Die Farbe des Kreises ändert sich zu einem blau/pinken
+Farbverlauf:
 
-![Screenshot shows a status circle in overviews indicating an AI agent is
-currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)
+![Screenshot zeigt einen Statuskreis in Übersichten, der anzeigt, dass ein
+KI-Agent gerade daran
+arbeitet](/screenshots/ai/overview-ai-agent-indicator.png)

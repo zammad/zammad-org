@@ -301,9 +301,10 @@ und bearbeitet.
 
 **Wie?**
 
-Have a look at the footer bar in the ticket detail view. When there is an
-avatar from another agent in the live user section (see screenshot above),
-you are not the only one viewing this ticket.
+Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des
+Tickets. Wenn in diesem Live-Benutzer-Bereich ein Avatar eines anderen
+Agenten zu sehen ist (siehe Screenshot oben), sind Sie nicht der einzige
+Agent, der dieses Ticket betrachtet.
 
 Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
 

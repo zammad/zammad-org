@@ -77,15 +77,15 @@ an:
 - Rotes Dreieck: Sofortiger Handlungsbedarf (Ticket eskaliert aufgrund einer
   SLA-Verletzung)
 
-If you spot a circle with a blue/pink gradient, it indicates that an [AI
-agent](ai#ai-agents) is currently working on the ticket.
+Wenn Sie einen Kreis mit einem blau/pinken Farbverlauf sehen, bedeutet das,
+dass ein [KI-Agent](ai#ai-agents) gerade an dem Ticket arbeitet.
 
 Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:
 
 ![Screenshot zeigt Ticket
 Prioritäten](/screenshots/overviews/priorities.png)
 
-- 1 low: gray
+- 1 niedrig: grau
 - 2 normal: blau
 - 3 hoch: rot
 

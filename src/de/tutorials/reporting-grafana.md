@@ -231,8 +231,8 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
 - `ES - CTI Log`
 
-[^1]: Some values are not available as time series information. This
-    means we can only display the _last_ value of the field in question.
+[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies
+    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.
 
 [^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen
      SLA-Verstöße.
