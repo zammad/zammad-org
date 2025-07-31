@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-25 04:58+0000\n"
+"POT-Creation-Date: 2025-07-28 11:44+0200\n"
 "PO-Revision-Date: 2025-07-26 07:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -217,18 +217,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -21159,14 +21147,11 @@ msgstr ""
 "Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser "
 "Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich sein"
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:327
-msgid ""
-"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
-"**P**rogramming **I**nterface)"
-msgstr ""
-"[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
-"**P**rogramming **I**nterface)"
+#, no-wrap
+msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
+msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
 
 #. type: Title #
 #: src/en/reference/rest-api/knowledgebase.md:1
@@ -24674,6 +24659,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -29788,38 +29785,50 @@ msgstr "Abnehmer der Anrufe (eingehend)"
 msgid "`ES - CTI Log`"
 msgstr "`ES - CTI Log`"
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+#, fuzzy, no-wrap
+#| msgid ""
+#| "[^1]: Some values are not available as time series information. This\n"
+#| "    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
 msgstr ""
 "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies\n"
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt "
-"werden kann.\n"
+"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.\n"
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
+msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
-msgstr ""
-"[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
-"     SLA-Verstöße.\n"
+msgid "    violations.\n"
+msgstr "    Verletzung.\n"
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
+msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
-"[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
-"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
-"    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+"    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
+"    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/tutorials/sso-kerberos.md:1
@@ -31929,28 +31938,22 @@ msgstr ""
 "Konfigurationsänderungen zu übernehmen."
 
 #, no-wrap
-#~ msgid "[^1]: Some values are not available as time series information. This"
-#~ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
-
-#, no-wrap
-#~ msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
-#~ msgstr "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA"
-
-#, no-wrap
-#~ msgid "    violations.\n"
-#~ msgstr "    Verletzung.\n"
-
-#, no-wrap
-#~ msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
-#~ msgstr "[^3]: Spezifische Referenz-IDs sind nicht bei jeder Instanz gleich und daher"
+#~ msgid ""
+#~ "[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
+#~ "    violations.\n"
+#~ msgstr ""
+#~ "[^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte zeigen\n"
+#~ "     SLA-Verstöße.\n"
 
 #, no-wrap
 #~ msgid ""
+#~ "[^3]: Specific reference IDs are not the same on every instance and thus\n"
 #~ "    the panel may not work or show incorrect data. Check the panels\n"
 #~ "    description on how to find our the relations on your system.\n"
 #~ msgstr ""
-#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie in der Panel-Beschreibung,\n"
-#~ "    wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
+#~ "[^5]: Spezifische Referenz IDs sind nicht in jeder Instanz gleich und daher\n"
+#~ "    funktioniert der Bereich möglicherweise nicht oder zeigt falsche Daten an. Prüfen Sie die\n"
+#~ "    Beschreibung, wie Sie die Beziehungen auf Ihrem System herausfinden können.\n"
 
 #, no-wrap
 #~ msgid "User Popover"
