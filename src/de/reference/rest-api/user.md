@@ -130,12 +130,10 @@ Bitte beachten Sie, dass das Entfernen von Benutzern nicht rückgängig gemacht 
 Referenzen entfernen - also möglicherweise Tickets!
 :::
 
-Technisch gesehen können Sie Benutzer über `/api/v1/users/{id}` löschen. Wir
-empfehlen Ihnen jedoch dringend, stattdessen eine Datenschutz-Löschaufgabe
-in der Benutzeroberfläche von Zammad oder den Privacy-Endpunkt zu verwenden
-(siehe Abschnitt unten). Die Verwendung einer der beiden Möglichkeiten
-stellt sicher, dass auch zugehörige Informationen wie Tickets gelöscht
-werden.
+Technically, you can delete users via `/api/v1/users/{id}`. However, we
+strongly encourage you to use the data privacy in Zammad's UI or the data
+privacy endpoint instead (see section below). Using one of them makes sure
+that related information like tickets are deleted as well.
 
 ### Per Privacy-Endpunkt
 

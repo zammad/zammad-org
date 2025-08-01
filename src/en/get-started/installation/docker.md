@@ -58,7 +58,7 @@ information.
 
 ### Step 3: Deploy the Stack
 
-Finally, click **Deploy the stack** button. The first time, it may take some time until the Docker images are fetched.
+Finally, click `Deploy the stack` button. The first time, it may take some time until the Docker images are fetched.
 
 After the stack is ready, you can access Zammad via the configured Docker host
 and port, e.g. `http://localhost:8080/`.
@@ -130,7 +130,7 @@ Directly execute a specific command:
 === Via Portainer GUI
 
 In your Portainer GUI, go to the container view and select the running rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column and on the **Connect** button.
+on the **Exec Console** icon in the "Quick Actions" column and on the `Connect` button.
 
 ![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
 

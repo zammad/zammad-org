@@ -79,29 +79,29 @@ die Dateien herunterladen, den Filebrowser-Container stoppen, entfernen und ihn 
 
    ::: tabs
 
-   === Via Konsole
+   === Via console
 
-   Starten Sie den Container und geben Sie das Volume **zammad-backup** und
-   einen Port an, unter dem Sie auf die Web-UI zugreifen möchten:
+   Deploy the container and provide the volume of **zammad-backup** and
+   a port under which you want to access the web UI:
 
-   ```sh
+   ``` sh
    docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 filebrowser/filebrowser
    ```
 
    === Via Portainer
 
-   In Ihrer Portainer Web UI gehen Sie auf **Containers** im linken Menü und
-   klicken Sie auf die Schaltfläche **Add container**.
+   In your Portainer web UI, go to **Containers** in the left menu and
+   click the `Add container` button.
 
-   Fügen Sie die folgenden Informationen hinzu:
+   Add the following information:
 
-   - Name: Geben Sie einen Namen ein, der noch nicht verwendet wird.
+   - Name: enter a name which is not already in use.
    - Image: `filebrowser/filebrowser`
-   - Map additional port: Wählen Sie einen Port und ordnen Sie ihn dem Port `80` des Container zu.
+   - Map additional port: choose a port and map it to port `80` in the container.
    - Advanced container settings:
-     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche **map additional volume**.
-     - Geben Sie im Container-Abschnitt `/srv` ein und wählen Sie das Volume, das `zammad-backup` enthält.
-   - Klicken Sie schließlich auf **Deploy the container**.
+     - Switch to **Volumes** and click the `map additional volume` button.
+     - Enter `/srv` in the container section and select the volume containing `zammad-backup`
+   - Finally, click on **Deploy the container**.
 
    :::
 

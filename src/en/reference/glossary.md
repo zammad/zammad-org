@@ -270,7 +270,7 @@ Macro
 
 Mentions
 : Mentions are a Zammad feature that allows you to tag another agent in a
-  ticket. Just type `@@` and the name. The selected person will be notified
+  ticket. Just type [[@]][[@]] and the name. The selected person will be notified
   and will be watching the ticket from now on.
 
 Migrator / Migration Wizard
@@ -418,16 +418,16 @@ Tags
   But they could also be based on the type of request, e.g. refund, delivery
   issue, complaint.
 
-  Tags can be queried in conditions in an automation and also assigned
+  Tags can be queried in conditions in an automation and assigned
   automatically, for example depending on keywords in the ticket title.
 
 Text Module
 : If you find that you send the same answers over and over again,
   you can save yourself a lot of work and create a text module.
-  This way, you just need to type the `::` shortcut in an article and all
+  This way, you just need to type the [[:]][[:]] shortcut in an article and all
   available text modules are shown from which you can select the desired one.
   You can limit the search results by adding parts of the text module's name,
-  keywords or content after the `::`.
+  keywords or content after the [[:]][[:]].
 
   For example, here at Zammad, we have a text module with the shortcut
   `::ilff`, which turns into `I look forward to your feedback`.

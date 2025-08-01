@@ -79,7 +79,7 @@ There are different ways to find tickets, depending on your use case.
 ### Via Overviews
 
 If you search for new tickets to work on, your first look should be in the overview section. You can either open it by
-clicking the **Overviews** button in the navigation bar or use the keyboard shortcut [[o]]. You can see overviews as a
+clicking the `Overviews` button in the navigation bar or use the keyboard shortcut [[o]]. You can see overviews as a
 kind of ticket lists.
 
 By default, there are some built in overviews, you can use. For example, there is an overview called "Open Tickets".
@@ -144,7 +144,7 @@ attributes you can set in the _Ticket_ sidebar tab:
     party and want to make sure that this issue won't be forgotten.
 - **Owner**: This is the person who is currently responsible for the ticket. In case you need to have an information
   from another colleague, you can either change to owner to this person or mention the person in an article by
-  typing `@@` and selecting the user. In the later case, the user gets notified and is automatically subscribed to
+  typing [[@]][[@]] and selecting the user. In the later case, the user gets notified and is automatically subscribed to
   receive notifications on ticket updates.
 - **Group**: This ticket attribute is useful for organizations with more than one team. Depending on the permissions,
   you might not see the ticket after changing the group and saving the changes.
@@ -156,7 +156,7 @@ Now that you are aware about some attributes, let's have a look at the ticket de
 The ticket detail view provides all relevant information of a ticket. As its main part, all articles of the ticket are
 shown here. The oldest article (which created the ticket) at the top, the newest at the bottom. Depending on the
 article type, Zammad offers you different ways to react. For text communication based articles, you can directly create
-an answer by using the **reply** button below the article or use the **forward** feature. The integrated text editor is
+an answer by using the `reply` button below the article or use the `forward` feature. The integrated text editor is
 intuitive and includes buttons in the toolbar to format your text and insert objects like tables or images. If you want
 to learn more about the editor, the [editor guide](guides/editor) includes additional information.
 
@@ -166,7 +166,7 @@ the ticket or ask a colleague.
 ### Updating your Ticket
 
 After you have done your changes like writing an answer to a customer and change the state of the ticket, you can see a
-highlighted **Update** button in the right footer. By clicking it, your changes are applied and if you created an
+highlighted `Update` button in the right footer. By clicking it, your changes are applied and if you created an
 answer, it is now sent out to the customer. If you consider the issue as resolved, you should set the state to _closed_
 now.
 

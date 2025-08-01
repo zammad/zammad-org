@@ -343,7 +343,7 @@ object manager).
 The underlying system (Systemd, Docker, Kubernetes) will then restart the
 processes/containers after this shutdown. The default setting is `true`.
 
-Setting this to ``false`` might only make sense in very rare cases and you
+Setting this to `false` might only make sense in very rare cases and you
 have to restart the Zammad services then manually.
 
 ```ruby

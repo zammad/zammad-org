@@ -84,7 +84,7 @@ Additionally, certain features were intentionally omitted in order to improve th
 Zammad implements a mobile device detection, which results in automatic redirection to mobile view. Even with this
 mechanism in place, it's possible to explicitly switch between the views by using app links.
 
-In both desktop and mobile view login screens, you can find a link below the **Sign in** button to explicitly switch to
+In both desktop and mobile view login screens, you can find a link below the `Sign in` button to explicitly switch to
 the other view (see login screenshot from above as an example).
 
 While you are signed in and want to switch from the mobile to the desktop view, go to your profile by selecting your

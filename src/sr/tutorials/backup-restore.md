@@ -76,7 +76,7 @@ below.
   In any case, it includes the Zammad database and the attachments, if you
   stored them in the file system. If you are in doubt, set this to no.
 
-``DEBUG`` <Badge type="info" text="no"/>
+`DEBUG` <Badge type="info" text="no"/>
 : Setting this option to `yes` will output useful debug messages.
   :::warning
   This option potentially returns sensitive information to standard output! Do

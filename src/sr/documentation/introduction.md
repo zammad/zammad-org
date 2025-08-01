@@ -2,12 +2,12 @@
 features:
   - 
     details: 'Сазнајте све о томе како да радите у Zammad-у на дневном нивоу, са саветима, упутствима и све остало што можете да замислите.'
-    icon: "�\x9F\x99\x8B"
+    icon: 🙋
     link: /sr/documentation/use/general
     title: 'Корисничка документација'
   - 
     details: 'Сазнајте како да подесите Zammad и повежете га са удаљеним системима.'
-    icon: "�\x9F�\x91�\x80\x8D�\x9F\x94�"
+    icon: 🧑‍🔧
     link: /sr/documentation/manage-zammad/general
     title: 'Администраторска документација'
 order: 1

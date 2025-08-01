@@ -38,7 +38,7 @@ You can find the files in the [Zammad-Docker-Compose repository](https://github.
 
 Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
 
-Below the "Compose path" field, click on the **Add file** button. This opens the "Additional paths" section where you
+Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
 can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
 `{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
 
@@ -165,7 +165,7 @@ This is intended for development or testing purposes as running a productive LLM
 :::
 
 To deploy an Ollama container inside the Zammad stack, use the scenario file `scenarios/add-ollama.yml`. This creates
-an Ollama container which automatically pulls and serves ``Llama3.2`` to be ready to use/test AI features out of the
+an Ollama container which automatically pulls and serves `Llama3.2` to be ready to use/test AI features out of the
 box.
 
 To use it in Zammad, add the service name and port (`http://ollama:11434`) to the provider configuration.
@@ -174,7 +174,7 @@ To use it in Zammad, add the service name and port (`http://ollama:11434`) to th
 
 If you want to limit the hardware resources the Zammad stack is allowed to use, use the
 `scenarios/apply-resource-limits.yml` scenario. Default values for CPU and memory usage for each container in the stack
-are applied then. You can find these default values in the ``.env.dist`` file. Provide the changed variables you want
+are applied then. You can find these default values in the `.env.dist` file. Provide the changed variables you want
 to use as environment variables and deploy the stack.
 
 ### Other Use Cases

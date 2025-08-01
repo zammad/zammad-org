@@ -103,7 +103,7 @@ In the ticket sidebar tab, you can find an **Owner** field. Choose from the offe
 internal note so the other agent knows what it is about.
 
 If you only have a question or need some information, you could also just
-[mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.
+[mention a colleague](advanced-features#mention-a-colleague) in an article by using [[@]][[@]] and raise your question.
 :::
 
 ::: details How to delete a ticket?
@@ -115,16 +115,18 @@ Contact your Zammad admin and ask to execute the deletion job.
 :::
 
 ::: details How to use text templates?
-Use Zammad's [text modules](advanced-features#use-text-modules) by typing `::` in the article editor. If you need to
-have additional modules, ask your Zammad admin to add it for you.
+Use Zammad's [text modules](advanced-features#text-modules) by typing [[:]][[:]] in the article editor or choose it
+from the editor toolbar. If you need to have additional modules, ask your Zammad admin to add it for you.
 :::
 
 ::: details How to ask a colleague for help in the ticket?
-Either [mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.
+The best way to do this is to [mention a colleague](advanced-features#mention-a-colleague) in an article by using
+[[@]][[@]] and raise your question. This triggers a notification for your colleague. Depending on your internal
+processes, switching the owner of the ticket could also be a possible option.
 :::
 
 ::: details How to cite the customer's email or parts of it?
-To partially or selective cite the article or parts of it, mark the text, you want to cite, and click on the **Reply**
+To partially or selective cite the article or parts of it, mark the text, you want to cite, and click on the `Reply`
 button next to the article. This can be done even multiple times (e.g. to answer different parts of the ticket).
 
 The citation of the whole article depends on how your Zammad is configured. If you want to apply changes to this

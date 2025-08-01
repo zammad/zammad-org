@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-29 06:00+0000\n"
+"POT-Creation-Date: 2025-07-31 10:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,18 +215,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1719,9 +1707,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:55
 #, markdown-text
 msgid ""
-"Use the button in the toolbar of the editor or simply write `::` in the "
-"editor. Both ways let you search for the desired text module by typing some "
-"characters or words of the text or keywords of the text module."
+"Use the button in the toolbar of the editor or simply write [[:]][[:]] in "
+"the editor. Both ways let you search for the desired text module by typing "
+"some characters or words of the text or keywords of the text module."
 msgstr ""
 
 #. type: Plain text
@@ -1760,9 +1748,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:72
 #, markdown-text
 msgid ""
-"Use the button in the toolbar of the editor or simply write `??` in the "
-"editor. Both ways let you search for the desired knowledge base article by "
-"typing some characters or words."
+"Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
+"the editor. Both ways let you search for the desired knowledge base article "
+"by typing some characters or words."
 msgstr ""
 
 #. type: Title ##
@@ -1793,8 +1781,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
-"or simply type `@@`. Both ways let you search for the name of the colleague "
-"you want to mention by typing some characters or the complete name."
+"or simply type [[@]][[@]]. Both ways let you search for the name of the "
+"colleague you want to mention by typing some characters or the complete "
+"name."
 msgstr ""
 
 #. type: Plain text
@@ -2288,7 +2277,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:263
 #, markdown-text
 msgid ""
-"Use the **Bulk Action** button in the top right corner and change/add "
+"Use the `Bulk Action` button in the top right corner and change/add "
 "attributes by using the fields in the side panel"
 msgstr ""
 
@@ -2849,7 +2838,7 @@ msgid ""
 "\n"
 "If you only have a question or need some information, you could also just\n"
 "[mention a colleague](advanced-features#mention-a-colleague) in an article "
-"by using `@@` and raise your question.\n"
+"by using [[@]][[@]] and raise your question.\n"
 msgstr ""
 
 #. type: Fenced div block (details How to delete a ticket?)
@@ -2869,25 +2858,30 @@ msgstr ""
 #: src/en/documentation/use/faq.md:117
 #, no-wrap
 msgid ""
-"Use Zammad's [text modules](advanced-features#use-text-modules) by typing "
-"`::` in the article editor. If you need to\n"
-"have additional modules, ask your Zammad admin to add it for you.\n"
+"Use Zammad's [text modules](advanced-features#text-modules) by typing "
+"[[:]][[:]] in the article editor or choose it\n"
+"from the editor toolbar. If you need to have additional modules, ask your "
+"Zammad admin to add it for you.\n"
 msgstr ""
 
 #. type: Fenced div block (details How to ask a colleague for help in the ticket?)
 #: src/en/documentation/use/faq.md:122
 #, no-wrap
 msgid ""
-"Either [mention a colleague](advanced-features#mention-a-colleague) in an "
-"article by using `@@` and raise your question.\n"
+"The best way to do this is to [mention a "
+"colleague](advanced-features#mention-a-colleague) in an article by using\n"
+"[[@]][[@]] and raise your question. This triggers a notification for your "
+"colleague. Depending on your internal\n"
+"processes, switching the owner of the ticket could also be a possible "
+"option.\n"
 msgstr ""
 
 #. type: Fenced div block (details How to cite the customer's email or parts of it?)
-#: src/en/documentation/use/faq.md:126
+#: src/en/documentation/use/faq.md:128
 #, no-wrap
 msgid ""
 "To partially or selective cite the article or parts of it, mark the text, "
-"you want to cite, and click on the **Reply**\n"
+"you want to cite, and click on the `Reply`\n"
 "button next to the article. This can be done even multiple times (e.g. to "
 "answer different parts of the ticket).\n"
 "\n"
@@ -3398,11 +3392,10 @@ msgstr ""
 msgid ""
 "You may want to quote text of your customer to exactly refer your answer to "
 "and your customer doesn't lose track in long conversations. To use this "
-"feature, simply select the text you want to cite and click on the **reply** "
-"or **forward** button next to the article. If you already inserted text, it "
-"gets preserved and the selected text gets inserted additionally. This means "
-"you can repeat this to cite different sections without losing your written "
-"text."
+"feature, simply select the text you want to cite and click on the `reply` or "
+"`forward` button next to the article. If you already inserted text, it gets "
+"preserved and the selected text gets inserted additionally. This means you "
+"can repeat this to cite different sections without losing your written text."
 msgstr ""
 
 #. type: Title ##
@@ -3786,7 +3779,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
-"**Sign in** button to explicitly switch to the other view (see login "
+"`Sign in` button to explicitly switch to the other view (see login "
 "screenshot from above as an example)."
 msgstr ""
 
@@ -4716,7 +4709,7 @@ msgstr ""
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
 "invalidates already existing recovery codes and provides you with a list of "
-"fresh codes. You can do this by clicking on **Regenerate recovery codes** "
+"fresh codes. You can do this by clicking on `Regenerate recovery codes` "
 "button in your profile's 2FA settings."
 msgstr ""
 
@@ -5063,7 +5056,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Generate a personal access token for a third party application to access the "
-"Zammad API. After clicking the **New Personal Access Token** button, you can "
+"Zammad API. After clicking the `New Personal Access Token` button, you can "
 "set a name, an expiration date and configure the permissions for this token."
 msgstr ""
 
@@ -5408,8 +5401,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
-"overview section. You can either open it by clicking the **Overviews** "
-"button in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"overview section. You can either open it by clicking the `Overviews` button "
+"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
 "overviews as a kind of ticket lists."
 msgstr ""
 
@@ -5622,9 +5615,9 @@ msgid ""
 "**Owner**: This is the person who is currently responsible for the "
 "ticket. In case you need to have an information from another colleague, you "
 "can either change to owner to this person or mention the person in an "
-"article by typing `@@` and selecting the user. In the later case, the user "
-"gets notified and is automatically subscribed to receive notifications on "
-"ticket updates."
+"article by typing [[@]][[@]] and selecting the user. In the later case, the "
+"user gets notified and is automatically subscribed to receive notifications "
+"on ticket updates."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -5659,7 +5652,7 @@ msgid ""
 "(which created the ticket) at the top, the newest at the bottom. Depending "
 "on the article type, Zammad offers you different ways to react. For text "
 "communication based articles, you can directly create an answer by using the "
-"**reply** button below the article or use the **forward** feature. The "
+"`reply` button below the article or use the `forward` feature. The "
 "integrated text editor is intuitive and includes buttons in the toolbar to "
 "format your text and insert objects like tables or images. If you want to "
 "learn more about the editor, the [editor guide](guides/editor) includes "
@@ -5685,8 +5678,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
-"change the state of the ticket, you can see a highlighted **Update** button "
-"in the right footer. By clicking it, your changes are applied and if you "
+"change the state of the ticket, you can see a highlighted `Update` button in "
+"the right footer. By clicking it, your changes are applied and if you "
 "created an answer, it is now sent out to the customer. If you consider the "
 "issue as resolved, you should set the state to _closed_ now."
 msgstr ""
@@ -6244,7 +6237,7 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:62
 #, markdown-text
 msgid ""
-"Finally, click **Deploy the stack** button. The first time, it may take some "
+"Finally, click `Deploy the stack` button. The first time, it may take some "
 "time until the Docker images are fetched."
 msgstr ""
 
@@ -6435,7 +6428,7 @@ msgid ""
 "In your Portainer GUI, go to the container view and select the running rails "
 "container from your Zammad stack. Click\n"
 "on the **Exec Console** icon in the \"Quick Actions\" column and on the "
-"**Connect** button.\n"
+"`Connect` button.\n"
 "\n"
 "![Portainer console "
 "execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
@@ -8770,7 +8763,7 @@ msgstr ""
 #: src/en/reference/console.md:348
 #, markdown-text
 msgid ""
-"Setting this to ``false`` might only make sense in very rare cases and you "
+"Setting this to `false` might only make sense in very rare cases and you "
 "have to restart the Zammad services then manually."
 msgstr ""
 
@@ -10323,8 +10316,8 @@ msgid ""
 "Follow the [general deployment guide](/en/get-started/installation/docker) "
 "and apply the following changes.\n"
 "\n"
-"Below the \"Compose path\" field, click on the **Add file** button. This "
-"opens the \"Additional paths\" section where you\n"
+"Below the \"Compose path\" field, click on the `Add file` button. This opens "
+"the \"Additional paths\" section where you\n"
 "can specify the scenario you want to use. Add `scenarios/{scenario you want "
 "to use}.yml` and replace the last part in\n"
 "`{}` brackets with the name of one of the scenario files. You can even "
@@ -10707,7 +10700,7 @@ msgstr ""
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
 "`scenarios/add-ollama.yml`. This creates an Ollama container which "
-"automatically pulls and serves ``Llama3.2`` to be ready to use/test AI "
+"automatically pulls and serves `Llama3.2` to be ready to use/test AI "
 "features out of the box."
 msgstr ""
 
@@ -10732,9 +10725,9 @@ msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
 "use, use the `scenarios/apply-resource-limits.yml` scenario. Default values "
 "for CPU and memory usage for each container in the stack are applied "
-"then. You can find these default values in the ``.env.dist`` file. Provide "
-"the changed variables you want to use as environment variables and deploy "
-"the stack."
+"then. You can find these default values in the `.env.dist` file. Provide the "
+"changed variables you want to use as environment variables and deploy the "
+"stack."
 msgstr ""
 
 #. type: Title ###
@@ -15407,7 +15400,7 @@ msgstr ""
 msgid ""
 "Mentions\n"
 ": Mentions are a Zammad feature that allows you to tag another agent in a\n"
-"  ticket. Just type `@@` and the name. The selected person will be "
+"  ticket. Just type [[@]][[@]] and the name. The selected person will be "
 "notified\n"
 "  and will be watching the ticket from now on.\n"
 msgstr ""
@@ -15735,7 +15728,7 @@ msgstr ""
 #: src/en/reference/glossary.md:423
 #, markdown-text, no-wrap
 msgid ""
-"  Tags can be queried in conditions in an automation and also assigned\n"
+"  Tags can be queried in conditions in an automation and assigned\n"
 "  automatically, for example depending on keywords in the ticket title.\n"
 msgstr ""
 
@@ -15746,12 +15739,13 @@ msgid ""
 "Text Module\n"
 ": If you find that you send the same answers over and over again,\n"
 "  you can save yourself a lot of work and create a text module.\n"
-"  This way, you just need to type the `::` shortcut in an article and all\n"
+"  This way, you just need to type the [[:]][[:]] shortcut in an article and "
+"all\n"
 "  available text modules are shown from which you can select the desired "
 "one.\n"
 "  You can limit the search results by adding parts of the text module's "
 "name,\n"
-"  keywords or content after the `::`.\n"
+"  keywords or content after the [[:]][[:]].\n"
 msgstr ""
 
 #. type: Plain text
@@ -18676,9 +18670,9 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help"
 msgstr ""
 
-#. type: Plain text
+#. type: Link reference
 #: src/en/reference/rest-api/intro.md:327
-#, markdown-text
+#, no-wrap
 msgid ""
 "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication "
 "**P**rogramming **I**nterface)"
@@ -21404,7 +21398,7 @@ msgstr ""
 #: src/en/reference/rest-api/user.md:137
 #, markdown-text
 msgid ""
-"Technically, you can delete users via ``/api/v1/users/{id}``. However, we "
+"Technically, you can delete users via `/api/v1/users/{id}`. However, we "
 "strongly encourage you to use the data privacy in Zammad's UI or the data "
 "privacy endpoint instead (see section below). Using one of them makes sure "
 "that related information like tickets are deleted as well."
@@ -21468,6 +21462,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -21687,7 +21693,7 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:79
 #, markdown-text, no-wrap
 msgid ""
-"``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
+"`DEBUG` <Badge type=\"info\" text=\"no\"/>\n"
 ": Setting this option to `yes` will output useful debug messages.\n"
 msgstr ""
 
@@ -22927,7 +22933,7 @@ msgid ""
 "   === Via Portainer\n"
 "\n"
 "   In your Portainer web UI, go to **Containers** in the left menu and\n"
-"   click the **Add container** button.\n"
+"   click the `Add container` button.\n"
 "\n"
 "   Add the following information:\n"
 "\n"
@@ -22936,8 +22942,7 @@ msgid ""
 "   - Map additional port: choose a port and map it to port `80` in the "
 "container.\n"
 "   - Advanced container settings:\n"
-"     - Switch to **Volumes** and click the **map additional volume** "
-"button.\n"
+"     - Switch to **Volumes** and click the `map additional volume` button.\n"
 "     - Enter `/srv` in the container section and select the volume "
 "containing `zammad-backup`\n"
 "   - Finally, click on **Deploy the container**.\n"
@@ -23396,7 +23401,7 @@ msgstr ""
 #: src/en/tutorials/first-steps.md:43
 #, markdown-text, no-wrap
 msgid ""
-"Zammad uses ``noreply@<your-fqdn>`` as sender address by default. SMTP "
+"Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP "
 "setups\n"
 "might fail - you can skip this step with choosing sendmail and adjust it "
 "later!\n"
@@ -25611,27 +25616,40 @@ msgstr ""
 msgid "`ES - CTI Log`"
 msgstr ""
 
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:231
+#, no-wrap
+msgid "[^1]: Some values are not available as time series information. This"
+msgstr ""
+
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
 #, markdown-text, no-wrap
-msgid ""
-"[^1]: Some values are not available as time series information. This\n"
-"    means we can only display the _last_ value of the field in question.\n"
+msgid "    means we can only display the _last_ value of the field in question.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:234
+#, no-wrap
+msgid "[^2]: Requires SLA function to be active. Negative values indicate SLA"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:236
 #, markdown-text, no-wrap
-msgid ""
-"[^2]: Requires SLA function to be active. Negative values indicate SLA\n"
-"    violations.\n"
+msgid "    violations.\n"
+msgstr ""
+
+#. type: Link reference
+#: src/en/tutorials/reporting-grafana.md:237
+#, no-wrap
+msgid "[^3]: Specific reference IDs are not the same on every instance and thus"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:239
 #, markdown-text, no-wrap
 msgid ""
-"[^3]: Specific reference IDs are not the same on every instance and thus\n"
 "    the panel may not work or show incorrect data. Check the panels\n"
 "    description on how to find our the relations on your system.\n"
 msgstr ""
@@ -26838,7 +26856,7 @@ msgid ""
 "This guide is only relevant for package installations. During the "
 "installation, Zammad tries to automatically install a configuration file to "
 "your nginx.  You can find example configuration files for your webserver in "
-"the ``contrib/`` directory of your Zammad installation."
+"the `contrib/` directory of your Zammad installation."
 msgstr ""
 
 #. type: Plain text
@@ -26861,8 +26879,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "You have to use a named configuration which is not configured by default. To "
-"fix this, open the ``zammad.conf`` in your webserver's config directory and "
-"replace the ``server_name localhost`` (Nginx) or ``ServerName localhost`` "
+"fix this, open the `zammad.conf` in your webserver's config directory and "
+"replace the `server_name localhost` (Nginx) or `ServerName localhost` "
 "(Apache)  with your Zammad domain."
 msgstr ""
 
@@ -26876,16 +26894,16 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:29
 #, markdown-text
 msgid ""
-"Nginx: ``/etc/nginx/conf.d/``, ``/etc/nginx/vhosts.d/``, "
-"``/etc/nginx/sites-available/``"
+"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, "
+"`/etc/nginx/sites-available/`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:29
 #, markdown-text
 msgid ""
-"Apache: ``/etc/apache2/conf.d/``, ``/etc/httpd/vhosts.d/``, "
-"``/etc/apache2/sites-available/``"
+"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, "
+"`/etc/apache2/sites-available/`"
 msgstr ""
 
 #. type: Title ###
@@ -26915,20 +26933,18 @@ msgid ""
 "\n"
 "If not happened automatically, you have to install the nginx or apache "
 "plugin\n"
-"for certbot: ``python3-certbot-nginx`` or ``python3-certbot-apache``\n"
+"for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
 "\n"
 "During the first certbot run it will request additional information once.\n"
-"Replace ``<webserver>`` in below command by either ``apache``, ``httpd`` "
-"or\n"
-"``nginx`` to match your setup.\n"
+"Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
+"`nginx` to match your setup.\n"
 "\n"
 "```sh\n"
 "certbot --<webserver> -d zammad.example.com\n"
 "```\n"
 "\n"
 "Certbot will now attempt to issue a certificate for you. If successful,\n"
-"certbot will ask you if you want to ``[1] not redirect`` or ``[2] "
-"redirect``\n"
+"certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
 "automatically. You can choose to not redirect if you plan to use the "
 "sample\n"
 "configuration of Zammad.\n"
@@ -26945,9 +26961,8 @@ msgid ""
 "acme.sh --set-default-ca  --server letsencrypt\n"
 "```\n"
 "\n"
-"Issue your certificate and replace ``<webserver>`` in the following "
-"command\n"
-"with either ``apache`` or ``nginx`` or ``standalone`` for other webserver.\n"
+"Issue your certificate and replace `<webserver>` in the following command\n"
+"with either `apache` or `nginx` or `standalone` for other webserver.\n"
 "\n"
 "```sh\n"
 "acme.sh --issue --<webserver> -d zammad.example.com\n"
@@ -26956,10 +26971,10 @@ msgid ""
 "It is not recommended to use the stored certificates directly. You should\n"
 "install the certificate to a directory of your choice instead as you can "
 "see\n"
-"in the next command below. We’re using ``/etc/ssl/private/`` in this case,\n"
+"in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
 "but you can use any directory you like.\n"
 "\n"
-"Replace ``<webserver>`` with ``apache2``, ``httpd`` or ``nginx``.\n"
+"Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
@@ -27013,7 +27028,7 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:116
 #, markdown-text
 msgid ""
-"Copy & overwrite the default ``zammad.conf``. Adjust your Nginx config "
+"Copy & overwrite the default `zammad.conf`. Adjust your Nginx config "
 "directory according to your setup:"
 msgstr ""
 
@@ -27044,8 +27059,8 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:127
 #, markdown-text
 msgid ""
-"Locate any ``server_name`` directive and adjust ``example.com`` to the "
-"domain of your Zammad instance."
+"Locate any `server_name` directive and adjust `example.com` to the domain of "
+"your Zammad instance."
 msgstr ""
 
 #. type: Plain text
@@ -27060,28 +27075,28 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
 #, markdown-text
-msgid "``ssl_certificate`` (your ssl certificate)"
+msgid "`ssl_certificate` (your ssl certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
 #, markdown-text
-msgid "``ssl_certificate_key`` (the certificates private key)"
+msgid "`ssl_certificate_key` (the certificates private key)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
 #, markdown-text
-msgid "``ssl_trusted_certificate`` (the public CA certificate)"
+msgid "`ssl_trusted_certificate` (the public CA certificate)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:138
 #, markdown-text
 msgid ""
-"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
-"example below to generate this file. You can find the correct path in your "
-"webserver config. Search for ``ssl_dhparam``."
+"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
+"below to generate this file. You can find the correct path in your webserver "
+"config. Search for `ssl_dhparam`."
 msgstr ""
 
 #. type: Fenced code block (sh)
@@ -27120,8 +27135,8 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:155
 #, markdown-text
 msgid ""
-"Reload your nginx with ``systemctl reload nginx`` to apply your "
-"configuration changes."
+"Reload your nginx with `systemctl reload nginx` to apply your configuration "
+"changes."
 msgstr ""
 
 #. type: Plain text
@@ -27149,9 +27164,9 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:165
 #, markdown-text
 msgid ""
-"Zammad requires a module (``a2enmod``) which is not enabled by "
-"default. CentOS users have to adjust a config file because this module is "
-"not available there."
+"Zammad requires a module (`a2enmod`) which is not enabled by default. CentOS "
+"users have to adjust a config file because this module is not available "
+"there."
 msgstr ""
 
 #. type: Fenced code block (sh)
@@ -27164,9 +27179,9 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:174
 #, no-wrap
 msgid ""
-"Add/uncomment the appropriate ``LoadModule`` statements in your Apache "
+"Add/uncomment the appropriate `LoadModule` statements in your Apache "
 "config\n"
-"in ``/etc/httpd/conf/httpd.conf``:\n"
+"in `/etc/httpd/conf/httpd.conf`:\n"
 "\n"
 "```apache\n"
 "LoadModule headers_module modules/mod_headers.so\n"
@@ -27190,7 +27205,7 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:194
 #, markdown-text
 msgid ""
-"The package installation copied a ``zammad.conf`` file to your webserver "
+"The package installation copied a `zammad.conf` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
 msgstr ""
 
@@ -27216,35 +27231,35 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:207
 #, markdown-text
 msgid ""
-"Locate any ``ServerName`` directive and adjust ``example.com`` to the domain "
-"of your Zammad instance."
+"Locate any `ServerName` directive and adjust `example.com` to the domain of "
+"your Zammad instance."
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
 #, markdown-text
-msgid "``SSLCertificateFile`` (your ssl certificate)"
+msgid "`SSLCertificateFile` (your ssl certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
 #, markdown-text
-msgid "``SSLCertificateKeyFile``(the certificates private key)"
+msgid "`SSLCertificateKeyFile`(the certificates private key)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
 #, markdown-text
-msgid "``SSLCertificateChainFile`` (the public CA certificate)"
+msgid "`SSLCertificateChainFile` (the public CA certificate)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:218
 #, markdown-text
 msgid ""
-"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
-"example below to generate this file. You can find the correct path in your "
-"webserver config. Search for ``SSLOpenSSLConfCmd DHParameters``."
+"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
+"below to generate this file. You can find the correct path in your webserver "
+"config. Search for `SSLOpenSSLConfCmd DHParameters`."
 msgstr ""
 
 #. type: Title ####
@@ -27264,7 +27279,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
-"``sites-available`` folders."
+"`sites-available` folders."
 msgstr ""
 
 #. type: Fenced div block (tabs)
@@ -27314,6 +27329,6 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:274
 #, markdown-text
 msgid ""
-"Reload your apache with ``systemctl reload apache2`` to apply your "
+"Reload your apache with `systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""

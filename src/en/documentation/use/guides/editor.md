@@ -37,8 +37,8 @@ get rendered as two empty lines on client side.
 ## Cite Text
 
 You may want to quote text of your customer to exactly refer your answer to and your customer doesn't lose
-track in long conversations. To use this feature, simply select the text you want to cite and click on the **reply** or
-**forward** button next to the article. If you already inserted text, it gets preserved and the selected text gets
+track in long conversations. To use this feature, simply select the text you want to cite and click on the `reply` or
+`forward` button next to the article. If you already inserted text, it gets preserved and the selected text gets
 inserted additionally. This means you can repeat this to cite different sections without losing your written text.
 
 ## Apply Formatting

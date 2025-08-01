@@ -130,7 +130,7 @@ be reused.
 ![Screenshot shows output of recovery codes during 2FA setup](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
 You also have an option to regenerate your recovery codes at any time, which invalidates already existing recovery
-codes and provides you with a list of fresh codes. You can do this by clicking on **Regenerate recovery codes** button
+codes and provides you with a list of fresh codes. You can do this by clicking on `Regenerate recovery codes` button
 in your profile's 2FA settings.
 
 ## Set a Default 2FA Method

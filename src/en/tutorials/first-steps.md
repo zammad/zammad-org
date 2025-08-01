@@ -38,7 +38,7 @@ wrong. If you skip it, you can adjust these things later too.
 
 By default, Zammad uses sendmail. This can be changed to SMTP here.
 
-Zammad uses ``noreply@<your-fqdn>`` as sender address by default. SMTP setups
+Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP setups
 might fail - you can skip this step with choosing sendmail and adjust it later!
 
 ### Step 4: Your First Email Channel <Badge type="info" text="optional" />

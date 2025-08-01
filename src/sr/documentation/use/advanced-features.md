@@ -58,9 +58,9 @@ using it in a ticket. The usage of text modules has benefits like:
 
 **Како?**
 
-Use the button in the toolbar of the editor or simply write `::` in the
-editor. Both ways let you search for the desired text module by typing some
-characters or words of the text or keywords of the text module.
+Use the button in the toolbar of the editor or simply write [[:]][[:]] in
+the editor. Both ways let you search for the desired text module by typing
+some characters or words of the text or keywords of the text module.
 
 You can pick one by clicking on it or by using the up and down arrows
 followed by [[enter]] on your keyboard. There are some text modules in
@@ -79,9 +79,9 @@ don't have to switch to the knowledge base and copy/paste content.
 
 **Како?**
 
-Use the button in the toolbar of the editor or simply write `??` in the
-editor. Both ways let you search for the desired knowledge base article by
-typing some characters or words.
+Use the button in the toolbar of the editor or simply write [[?]][[?]] in
+the editor. Both ways let you search for the desired knowledge base article
+by typing some characters or words.
 
 ## Помените колегу
 
@@ -97,8 +97,9 @@ colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-men
 **Како?**
 
 While writing a ticket article, use the button in the toolbar of the editor
-or simply type `@@`. Both ways let you search for the name of the colleague
-you want to mention by typing some characters or the complete name.
+or simply type [[@]][[@]]. Both ways let you search for the name of the
+colleague you want to mention by typing some characters or the complete
+name.
 
 Zammad приказује листу свих корисника који одговарају вашем уносу и можете
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
@@ -311,7 +312,7 @@ panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overvi
 Под претпоставком да се налазите у прегледима или на екрану детаљне
 претраге, можете да масовно уредите тикете на два _начина_:
 
-- Use the **Bulk Action** button in the top right corner and change/add
+- Use the `Bulk Action` button in the top right corner and change/add
   attributes by using the fields in the side panel
 - Превуците тикете за покретање режима масовне радње и пустите их на жељену
   радњу

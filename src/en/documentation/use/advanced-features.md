@@ -50,8 +50,8 @@ in a ticket. The usage of text modules has benefits like:
 
 **How?**
 
-Use the button in the toolbar of the editor or simply write `::` in the editor. Both ways let you search for the desired
-text module by typing some characters or words of the text or keywords of the text module.
+Use the button in the toolbar of the editor or simply write [[:]][[:]] in the editor. Both ways let you search for the
+desired text module by typing some characters or words of the text or keywords of the text module.
 
 You can pick one by clicking on it or by using the up and down arrows followed by [[enter]] on your keyboard. There are
 some text modules in Zammad which are shipped by default.
@@ -67,8 +67,8 @@ This saves you time because you don't have to switch to the knowledge base and c
 
 **How?**
 
-Use the button in the toolbar of the editor or simply write `??` in the editor. Both ways let you search for the desired
-knowledge base article by typing some characters or words.
+Use the button in the toolbar of the editor or simply write [[?]][[?]] in the editor. Both ways let you search for the
+desired knowledge base article by typing some characters or words.
 
 ## Mention a Colleague
 
@@ -81,7 +81,7 @@ ticket updates and are automatically subscribed to this ticket.
 
 **How?**
 
-While writing a ticket article, use the button in the toolbar of the editor or simply type `@@`. Both ways let you
+While writing a ticket article, use the button in the toolbar of the editor or simply type [[@]][[@]]. Both ways let you
 search for the name of the colleague you want to mention by typing some characters or the complete name.
 
 Zammad displays a list with all possible matches where you can pick one by clicking on it or by using the up and down
@@ -258,7 +258,7 @@ There are 2 _places_ where you can perform bulk actions:
 
 Assuming you are in the overviews or in the detail search page, you can bulk edit tickets in 2 _ways_:
 
-- Use the **Bulk Action** button in the top right corner and change/add attributes by using the fields in the side panel
+- Use the `Bulk Action` button in the top right corner and change/add attributes by using the fields in the side panel
 - Drag the tickets with the mouse to invoke the bulk action overlay and drop them on the desired action
 
 To bulk edit tickets in either way, you have to select them before. Do so by clicking the checkbox on the left side of

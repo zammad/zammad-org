@@ -265,10 +265,10 @@ Makro
   Sie können Ihre eigenen Makros definieren und Aktionen basierend auf allen verfügbaren
   Attributen im Ticket durchführen.
 
-Erwähnungen
-: Erwähnungen sind eine Funktion von Zammad, mit der Sie einen anderen Agenten in einem
-  Ticket markieren können. Geben Sie einfach `@@` und den Namen ein. Die ausgewählte Person
-  wird benachrichtigt und sie wird als Beobachter des Tickets eingetragen.
+Mentions
+: Mentions are a Zammad feature that allows you to tag another agent in a
+  ticket. Just type [[@]][[@]] and the name. The selected person will be notified
+  and will be watching the ticket from now on.
 
 Migrator / Assistent für die Migration
 : Wenn eine Firma von einer anderen Helpdesk-Software zu Zammad wechseln möchte,
@@ -411,16 +411,16 @@ Tags
   Produktkategorien basieren, um Ihnen zu helfen, Tickets nach der Art des Produkts zu kategorisieren.
   Sie könnten aber auch auf der Art der Anfrage basieren, z.B. Erstattung, Liefer-Problem, Beschwerde.
 
-  Tags können in Bedingungen in einer Automatisierung abgefragt werden und auch
-  automatisch zugewiesen werden, zum Beispiel in Abhängigkeit von Schlüsselwörtern im Titel des Tickets.
+  Tags can be queried in conditions in an automation and assigned
+  automatically, for example depending on keywords in the ticket title.
 
-Textbaustein
-: Wenn Sie feststellen, dass Sie immer wieder die gleichen Antworten senden
-  können Sie sich eine Menge Arbeit ersparen und einen Textbaustein erstellen.
-  Auf diese Weise brauchen Sie nur die Abkürzung `::` in einem Artikel einzugeben und alle
-  verfügbaren Textbausteine werden angezeigt, aus denen Sie den gewünschten auswählen können.
-  Sie können die Suchergebnisse einschränken, indem Sie Teile des Namens des Textbausteins,
-  Schlüsselwörter oder Inhalte des Textbausteins nach dem `::` hinzufügen.
+Text Module
+: If you find that you send the same answers over and over again,
+  you can save yourself a lot of work and create a text module.
+  This way, you just need to type the [[:]][[:]] shortcut in an article and all
+  available text modules are shown from which you can select the desired one.
+  You can limit the search results by adding parts of the text module's name,
+  keywords or content after the [[:]][[:]].
 
   Hier bei Zammad haben wir zum Beispiel einen Textbaustein mit dem Kürzel
   `::ilff`, was zu `I look forward to your feedback` wird.

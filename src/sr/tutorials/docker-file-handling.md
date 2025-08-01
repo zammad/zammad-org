@@ -85,7 +85,7 @@ download the files, stop and remove the filebrowser container and redeploy it, f
    === Via Portainer
 
    In your Portainer web UI, go to **Containers** in the left menu and
-   click the **Add container** button.
+   click the `Add container` button.
 
    Add the following information:
 
@@ -93,7 +93,7 @@ download the files, stop and remove the filebrowser container and redeploy it, f
    - Image: `filebrowser/filebrowser`
    - Map additional port: choose a port and map it to port `80` in the container.
    - Advanced container settings:
-     - Switch to **Volumes** and click the **map additional volume** button.
+     - Switch to **Volumes** and click the `map additional volume` button.
      - Enter `/srv` in the container section and select the volume containing `zammad-backup`
    - Finally, click on **Deploy the container**.
 

@@ -89,11 +89,10 @@ Anwendungsfall.
 
 ### Über Übersichten
 
-Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie
-zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch
-Klicken auf die Schaltfläche **Übersichten** in der Navigationsleiste öffnen
-oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine
-Art von Ticket-Listen betrachten.
+If you search for new tickets to work on, your first look should be in the
+overview section. You can either open it by clicking the `Overviews` button
+in the navigation bar or use the keyboard shortcut [[o]]. You can see
+overviews as a kind of ticket lists.
 
 Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
 können. Zum Beispiel gibt es eine Übersicht namens "Offene Tickets". Dies
@@ -184,12 +183,12 @@ Seitenleisten-Tab _Ticket_ einstellen können:
     benachrichtigt werden möchten. Dies ist z.B. nützlich, wenn Sie eine
     Frage an einen Dritten hatten und sicherstellen möchten, dass dieses
     Problem nicht vergessen wird.
-- **Besitzer**: Dies ist die Person, die derzeit für das Ticket
-  verantwortlich ist. Falls Sie eine Information von einem anderen Kollegen
-  benötigen, können Sie entweder den Besitzer auf diese Person ändern oder
-  sie in einem Artikel erwähnen, indem Sie `@@` eingeben und den Benutzer
-  auswählen. Im letzteren Fall wird der Benutzer benachrichtigt und erhält
-  automatisch Benachrichtigungen über Aktualisierungen von Tickets.
+- **Owner**: This is the person who is currently responsible for the
+  ticket. In case you need to have an information from another colleague,
+  you can either change to owner to this person or mention the person in an
+  article by typing [[@]][[@]] and selecting the user. In the later case,
+  the user gets notified and is automatically subscribed to receive
+  notifications on ticket updates.
 - **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit
   mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket
   möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
@@ -200,18 +199,16 @@ Seitenleisten-Tab _Ticket_ einstellen können:
 Da Sie nun über einige Attribute Bescheid wissen, lassen Sie uns einen Blick
 auf die Ticket Detailansicht werfen.
 
-Die Ticket Detailansicht liefert alle relevanten Informationen zu einem
-Ticket. Als Hauptbestandteil werden hier alle Artikel des Tickets
-angezeigt. Der älteste Artikel (der das Ticket erstellt hat) ganz oben, der
-neueste ganz unten. Je nach Art des Artikels bietet Ihnen Zammad
-verschiedene Reaktionsmöglichkeiten an. Bei Artikeln, die auf
-Textkommunikation basieren, können Sie direkt eine Antwort verfassen, indem
-Sie die Schaltfläche **Antwort** unterhalb des Artikels verwenden oder die
-Funktion **Weiterleiten** nutzen. Der integrierte Texteditor ist intuitiv
-und enthält Schaltflächen in der Symbolleiste, um Ihren Text zu formatieren
-und Objekte wie Tabellen oder Bilder einzufügen. Wenn Sie mehr über den
-Editor erfahren möchten, finden Sie im [Editor-Leitfaden](guides/editor)
-zusätzliche Informationen.
+The ticket detail view provides all relevant information of a ticket. As its
+main part, all articles of the ticket are shown here. The oldest article
+(which created the ticket) at the top, the newest at the bottom. Depending
+on the article type, Zammad offers you different ways to react. For text
+communication based articles, you can directly create an answer by using the
+`reply` button below the article or use the `forward` feature. The
+integrated text editor is intuitive and includes buttons in the toolbar to
+format your text and insert objects like tables or images. If you want to
+learn more about the editor, the [editor guide](guides/editor) includes
+additional information.
 
 Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen
 hinzufügen. Diese sind nützlich, um dem Ticket Informationen hinzuzufügen
@@ -219,13 +216,11 @@ oder einen Kollegen zu fragen.
 
 ### Aktualisierung Ihres Tickets
 
-Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen
-Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in
-der rechten Fußzeile eine hervorgehobene Schaltfläche
-**Aktualisieren**. Wenn Sie auf diese Schaltfläche klicken, werden Ihre
-Änderungen übernommen, und wenn Sie eine Antwort erstellt haben, wird diese
-nun an den Kunden gesendet. Wenn Sie das Problem als gelöst betrachten,
-sollten Sie den Status auf _geschlossen_ setzen.
+After you have done your changes like writing an answer to a customer and
+change the state of the ticket, you can see a highlighted `Update` button in
+the right footer. By clicking it, your changes are applied and if you
+created an answer, it is now sent out to the customer. If you consider the
+issue as resolved, you should set the state to _closed_ now.
 
 ## Abschluss
 

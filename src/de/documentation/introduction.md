@@ -2,12 +2,12 @@
 features:
   - 
     details: 'Hier finden Sie alles, wie Sie tÃ¤glich mit Zammad arbeiten, mit Tipps, Anleitungen und allem, was Sie sonst noch brauchen kÃ¶nnten.'
-    icon: "ğ\x9F\x99\x8B"
+    icon: ğŸ™‹
     link: /de/documentation/use/general
     title: 'Benutzer Dokumentation'
   - 
     details: 'Erfahren Sie, wie Sie Zammad konfigurieren und mit anderen Systemen verbinden kÃ¶nnen.'
-    icon: "ğ\x9F§\x91â\x80\x8Dğ\x9F\x94§"
+    icon: ğŸ§‘â€ğŸ”§
     link: /de/documentation/manage-zammad/general
     title: 'Administrator Dokumentation'
 order: 1

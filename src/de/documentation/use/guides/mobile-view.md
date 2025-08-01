@@ -94,9 +94,9 @@ Zammad prüft, ob es sich um ein Mobilgerät handelt und leitet automatisch
 auf die Mobilansicht um. Sie können allerdings weiterhin manuell zwischen
 den Ansichten wechseln, indem Sie die entsprechenden Links aufrufen.
 
-Sowohl in der Desktop- als auch in der Mobilansicht finden Sie unter der
-Schaltfläche **Anmelden** einen Link, über den Sie explizit in die andere
-Ansicht wechseln können (siehe Login-Screenshot von oben als Beispiel).
+In both desktop and mobile view login screens, you can find a link below the
+`Sign in` button to explicitly switch to the other view (see login
+screenshot from above as an example).
 
 Wenn Sie angemeldet sind und von der Mobilansicht zur Desktop-Ansicht
 wechseln möchten, gehen Sie zu Ihrem Profil, indem Sie unten Ihren Avatar

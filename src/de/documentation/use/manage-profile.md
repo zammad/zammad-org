@@ -106,11 +106,9 @@ auf das Löschsymbol in der Spalte "Aktionen" klicken.
 
 ### Token-Zugriff
 
-Generieren Sie einen persönlichen Zugangs-Token für eine Anwendung eines
-Drittanbieters für den Zugriff auf die Zammad API. Nachdem Sie auf die
-Schaltfläche **Neuer persönlicher Zugangs-Token** geklickt haben, können Sie
-einen Namen und ein Ablaufdatum festlegen und die Berechtigungen für diesen
-Token konfigurieren.
+Generate a personal access token for a third party application to access the
+Zammad API. After clicking the `New Personal Access Token` button, you can
+set a name, an expiration date and configure the permissions for this token.
 
 ### Benachrichtigungen
 

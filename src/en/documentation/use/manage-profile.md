@@ -94,7 +94,7 @@ If necessary, you can revoke the access by clicking the delete icon in the
 ### Token Access
 
 Generate a personal access token for a third party application to access the
-Zammad API. After clicking the **New Personal Access Token** button, you can set
+Zammad API. After clicking the `New Personal Access Token` button, you can set
 a name, an expiration date and configure the permissions for this token.
 
 ### Notifications

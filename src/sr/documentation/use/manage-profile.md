@@ -98,7 +98,7 @@ necessary, you can revoke the access by clicking the delete icon in the
 ### Приступ путем кључа
 
 Generate a personal access token for a third party application to access the
-Zammad API. After clicking the **New Personal Access Token** button, you can
+Zammad API. After clicking the `New Personal Access Token` button, you can
 set a name, an expiration date and configure the permissions for this token.
 
 ### Обавештења

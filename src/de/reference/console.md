@@ -347,8 +347,8 @@ im Objektmanager erstellt wurden).  Das zugrundeliegende System (Systemd,
 Docker, Kubernetes) wird dann die Prozesse/Container nach dem Herunterfahren
 neu starten. Die Standardeinstellung ist `true`.
 
-Die Einstellung ``false`` macht nur in sehr seltenen Fällen Sinn und Sie
-müssen die Zammad Dienste dann manuell neu starten.
+Setting this to `false` might only make sense in very rare cases and you
+have to restart the Zammad services then manually.
 
 ```ruby
 Setting.set('auto_shutdown', 'true')

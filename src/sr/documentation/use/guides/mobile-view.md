@@ -92,7 +92,7 @@ redirection to mobile view. Even with this mechanism in place, it's possible
 to explicitly switch between the views by using app links.
 
 In both desktop and mobile view login screens, you can find a link below the
-**Sign in** button to explicitly switch to the other view (see login
+`Sign in` button to explicitly switch to the other view (see login
 screenshot from above as an example).
 
 While you are signed in and want to switch from the mobile to the desktop

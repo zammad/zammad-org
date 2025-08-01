@@ -99,11 +99,11 @@ Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-an
 ## Mit Tickets arbeiten
 
 ::: details How to assign somebody to a ticket?
-In dem Ticket-Seitenleisten-Tab finden Sie ein Feld **Besitzer**. Wählen Sie einen der angebotenen Agenten aus und hinterlassen Sie eine
-interne Notiz, damit der andere Agent weiß, worum es geht.
+In the ticket sidebar tab, you can find an **Owner** field. Choose from the offered agents and make sure to leave an
+internal note so the other agent knows what it is about.
 
-Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie auch einfach
-einen Kollegen in einem Artikel [erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie `@@` verwenden und Ihre Frage stellen.
+If you only have a question or need some information, you could also just
+[mention a colleague](advanced-features#mention-a-colleague) in an article by using [[@]][[@]] and raise your question.
 :::
 
 ::: details How to delete a ticket?
@@ -115,18 +115,20 @@ Wenden Sie sich an Ihren Zammad-Administrator und bitten Sie ihn, die Löschung 
 :::
 
 ::: details How to use text templates?
-Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine-verwenden), indem Sie im Artikel-Editor `::` eingeben. Wenn Sie
-zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, sie für Sie hinzuzufügen.
+Use Zammad's [text modules](advanced-features#text-modules) by typing [[:]][[:]] in the article editor or choose it
+from the editor toolbar. If you need to have additional modules, ask your Zammad admin to add it for you.
 :::
 
 ::: details How to ask a colleague for help in the ticket?
-Entweder Sie [erwähnen](advanced-features#erwahnen-von-kollegen) Kollegen in einem Artikel, indem Sie `@@` verwenden und Ihre Frage stellen.
+The best way to do this is to [mention a colleague](advanced-features#mention-a-colleague) in an article by using
+[[@]][[@]] and raise your question. This triggers a notification for your colleague. Depending on your internal
+processes, switching the owner of the ticket could also be a possible option.
 :::
 
 ::: details How to cite the customer's email or parts of it?
-Um den Artikel oder Teile davon zu zitieren, markieren Sie den Text, den Sie zitieren möchten, und klicken Sie auf **Antworten**
-unter dem Artikel. Dies kann auch mehrfach geschehen (z.B. um verschiedene Teile des Tickets blockweise zu beantworten).
+To partially or selective cite the article or parts of it, mark the text, you want to cite, and click on the `Reply`
+button next to the article. This can be done even multiple times (e.g. to answer different parts of the ticket).
 
-Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad konfiguriert ist. Wenn Sie dieses
-Verhalten ändern möchten, bitten Sie Ihren Administrator darum.
+The citation of the whole article depends on how your Zammad is configured. If you want to apply changes to this
+behavior, ask your admin to change it.
 :::

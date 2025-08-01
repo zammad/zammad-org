@@ -27,6 +27,7 @@
 Cypress.Commands.add('loginDesktopView', (userLogin, userPassword, recoveryCode = null) => {
   cy.visit('/desktop')
   cy.url().should('match', new RegExp('/desktop/login$'))
+  window.localStorage.setItem('beta-ui-disclaimer', true)
   cy.get('[name="login"]').type(userLogin)
   cy.get('[name="password"]').type(userPassword)
   cy.get('button').contains('Sign in').click()
