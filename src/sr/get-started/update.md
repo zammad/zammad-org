@@ -154,8 +154,8 @@ systemctl start zammad
 
 ::: warning
 Docker compose stack updates may require extra steps or introduce breaking
-changes. Always check the docker compose release notes for updating
-instructions first.
+changes. Always check the [docker compose release notes](https://github.com/zammad/zammad-docker-compose/releases)
+for update instructions first.
 :::
 
 ### Updating Portainer Based Installations

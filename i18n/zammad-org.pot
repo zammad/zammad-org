@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-31 10:31+0200\n"
+"POT-Creation-Date: 2025-08-01 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7719,8 +7719,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Docker compose stack updates may require extra steps or introduce breaking\n"
-"changes. Always check the docker compose release notes for updating\n"
-"instructions first.\n"
+"changes. Always check the [docker compose release "
+"notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
+"for update instructions first.\n"
 msgstr ""
 
 #. type: Title ###
