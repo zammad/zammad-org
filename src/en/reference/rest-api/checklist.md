@@ -34,16 +34,8 @@ Required permission: `ticket.agent`
 
 :::
 
-### Show By Ticket
-
-Required permission: `ticket.agent`
-
-`GET`-Request sent: `/api/v1/checklists/by_ticket/{ticket id}`
-
-::: details Show response
-
-<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json
-
+::: tip
+You can find the `checklist_id` attribute of a ticket by sending a `GET` request to `/api/v1/tickets/{ticket id}`.
 :::
 
 ### Create

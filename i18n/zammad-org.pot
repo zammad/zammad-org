@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-01 16:14+0200\n"
+"POT-Creation-Date: 2025-08-04 10:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6487,12 +6487,12 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:178
 #: src/en/reference/rest-api/calendar.md:42
 #: src/en/reference/rest-api/calendar.md:63
-#: src/en/reference/rest-api/checklist.md:55
-#: src/en/reference/rest-api/checklist.md:76
-#: src/en/reference/rest-api/checklist.md:123
-#: src/en/reference/rest-api/checklist.md:144
-#: src/en/reference/rest-api/checklist.md:192
-#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:47
+#: src/en/reference/rest-api/checklist.md:68
+#: src/en/reference/rest-api/checklist.md:115
+#: src/en/reference/rest-api/checklist.md:136
+#: src/en/reference/rest-api/checklist.md:184
+#: src/en/reference/rest-api/checklist.md:206
 #: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
@@ -7474,9 +7474,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
-#: src/en/reference/rest-api/checklist.md:70
-#: src/en/reference/rest-api/checklist.md:138
-#: src/en/reference/rest-api/checklist.md:207
+#: src/en/reference/rest-api/checklist.md:62
+#: src/en/reference/rest-api/checklist.md:130
+#: src/en/reference/rest-api/checklist.md:199
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
@@ -16355,9 +16355,9 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rest-api/articles.md:128
 #: src/en/reference/rest-api/calendar.md:36
-#: src/en/reference/rest-api/checklist.md:49
-#: src/en/reference/rest-api/checklist.md:117
-#: src/en/reference/rest-api/checklist.md:186
+#: src/en/reference/rest-api/checklist.md:41
+#: src/en/reference/rest-api/checklist.md:109
+#: src/en/reference/rest-api/checklist.md:178
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -16550,8 +16550,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:24
 #: src/en/reference/rest-api/checklist.md:25
-#: src/en/reference/rest-api/checklist.md:105
-#: src/en/reference/rest-api/checklist.md:173
+#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -16629,9 +16629,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:78
-#: src/en/reference/rest-api/checklist.md:91
-#: src/en/reference/rest-api/checklist.md:159
-#: src/en/reference/rest-api/checklist.md:229
+#: src/en/reference/rest-api/checklist.md:83
+#: src/en/reference/rest-api/checklist.md:151
+#: src/en/reference/rest-api/checklist.md:221
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
@@ -16728,14 +16728,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:28
-#: src/en/reference/rest-api/checklist.md:40
-#: src/en/reference/rest-api/checklist.md:52
-#: src/en/reference/rest-api/checklist.md:73
-#: src/en/reference/rest-api/checklist.md:94
-#: src/en/reference/rest-api/checklist.md:108
-#: src/en/reference/rest-api/checklist.md:120
-#: src/en/reference/rest-api/checklist.md:141
-#: src/en/reference/rest-api/checklist.md:162
+#: src/en/reference/rest-api/checklist.md:44
+#: src/en/reference/rest-api/checklist.md:65
+#: src/en/reference/rest-api/checklist.md:86
+#: src/en/reference/rest-api/checklist.md:100
+#: src/en/reference/rest-api/checklist.md:112
+#: src/en/reference/rest-api/checklist.md:133
+#: src/en/reference/rest-api/checklist.md:154
 #: src/en/reference/rest-api/mentions.md:29
 #: src/en/reference/rest-api/mentions.md:58
 #: src/en/reference/rest-api/shared-draft.md:44
@@ -16759,35 +16758,22 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Fenced div block (tip)
 #: src/en/reference/rest-api/checklist.md:37
-#, markdown-text, no-wrap
-msgid "Show By Ticket"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:42
-#, markdown-text
-msgid "`GET`-Request sent: `/api/v1/checklists/by_ticket/{ticket id}`"
-msgstr ""
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:43
 #, no-wrap
 msgid ""
-"\n"
-"<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json\n"
-"\n"
+"You can find the `checklist_id` attribute of a ticket by sending a `GET` "
+"request to `/api/v1/tickets/{ticket id}`.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:54
+#: src/en/reference/rest-api/checklist.md:46
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/checklists`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:55
+#: src/en/reference/rest-api/checklist.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -16802,13 +16788,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:75
+#: src/en/reference/rest-api/checklist.md:67
 #, markdown-text
 msgid "`PATCH`-Request sent: `/api/v1/checklists/{checklist id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:76
+#: src/en/reference/rest-api/checklist.md:68
 #, no-wrap
 msgid ""
 "\n"
@@ -16823,13 +16809,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:96
+#: src/en/reference/rest-api/checklist.md:88
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/checklists/{checklist id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:89
 #, no-wrap
 msgid ""
 "\n"
@@ -16838,19 +16824,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/checklist.md:103
+#: src/en/reference/rest-api/checklist.md:95
 #, markdown-text, no-wrap
 msgid "Checklist Items"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:110
+#: src/en/reference/rest-api/checklist.md:102
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:111
+#: src/en/reference/rest-api/checklist.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16859,13 +16845,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:122
+#: src/en/reference/rest-api/checklist.md:114
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/checklist_items`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:123
+#: src/en/reference/rest-api/checklist.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -16880,13 +16866,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:143
+#: src/en/reference/rest-api/checklist.md:135
 #, markdown-text
 msgid "`PATCH`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:144
+#: src/en/reference/rest-api/checklist.md:136
 #, no-wrap
 msgid ""
 "\n"
@@ -16901,13 +16887,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:164
+#: src/en/reference/rest-api/checklist.md:156
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/checklist.md:157
 #, no-wrap
 msgid ""
 "\n"
@@ -16916,25 +16902,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/checklist.md:171
+#: src/en/reference/rest-api/checklist.md:163
 #, markdown-text, no-wrap
 msgid "Checklist Templates"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:176
+#: src/en/reference/rest-api/checklist.md:168
 #, markdown-text
 msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:179
+#: src/en/reference/rest-api/checklist.md:171
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:180
+#: src/en/reference/rest-api/checklist.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -16944,21 +16930,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:189
-#: src/en/reference/rest-api/checklist.md:210
-#: src/en/reference/rest-api/checklist.md:232
+#: src/en/reference/rest-api/checklist.md:181
+#: src/en/reference/rest-api/checklist.md:202
+#: src/en/reference/rest-api/checklist.md:224
 #, markdown-text
 msgid "Required permission: `admin.checklists`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:191
+#: src/en/reference/rest-api/checklist.md:183
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:192
+#: src/en/reference/rest-api/checklist.md:184
 #, no-wrap
 msgid ""
 "\n"
@@ -16973,13 +16959,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:213
+#: src/en/reference/rest-api/checklist.md:205
 #, markdown-text
 msgid "`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:206
 #, no-wrap
 msgid ""
 "\n"
@@ -16996,13 +16982,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:235
+#: src/en/reference/rest-api/checklist.md:227
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:236
+#: src/en/reference/rest-api/checklist.md:228
 #, no-wrap
 msgid ""
 "\n"
