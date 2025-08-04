@@ -42,7 +42,22 @@ push translations update commit:
       when: always
     - when: never
   script:
-    - apt update && apt install -y --no-install-recommends po4a
+    - apt update && apt install -y --no-install-recommends libmodule-build-perl libosp5 libpod-parser-perl libsgmls-perl libsyntax-keyword-try-perl libtext-wrapi18n-perl libunicode-linebreak-perl libxs-parse-keyword-perl libyaml-tiny-perl libxml2-utils locales opensp sgml-base xsltproc
+    # Set up an UTF-8-based locale.
+    - sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen
+    - locale-gen
+    - locale -a
+    - export LC_ALL=en_US.UTF-8
+    - export LANG=en_US.UTF-8
+    - export LANGUAGE=en_US.UTF-8
+    # Build po4a from source to get the latest version.
+    - git clone https://github.com/mquinson/po4a.git
+    - cd po4a
+    - perl Build.PL
+    - ./Build || true # ignore errors, as the build may fail when trying to fetch an external, non-critical stylesheet
+    - ./Build install
+    - cd .. && rm -rf po4a
+    - which po4a
     - pnpm install
     - pnpm i18n
     - git status
