@@ -17,7 +17,7 @@ unterstützt:
 | CentOS/RHEL   | 8 & 9               |
 | Debian        | 11 & 12             |
 | OpenSUSE/SLES | Leap 15.x / 15      |
-| Ubuntu        | 20.04, 22.04, 24.04 |
+| Ubuntu        | 22.04, 24.04        |
 
 Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
 Installationsmethode verwenden oder [Zammads Cloud
@@ -174,18 +174,11 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 ::::tabs key:distros
 
 === Ubuntu
-Repository Key eintragen::
+Install repository key:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
-```
-
-Ubuntu 20.04
-
-```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
-sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
@@ -380,12 +373,10 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad speichert den Inhalt in einer Datenbank. Das unterstützte
-Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
-10 oder neuer.
-
-Wenn kein PostgreSQL-Server gefunden werden konnte, wird er automatisch
-während der Paketinstallation installiert.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no
+PostgreSQL server could be detected, it will be installed automatically
+during the package installation.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
@@ -405,6 +396,14 @@ Das Installationsskript versucht, während der Installation einen Apache oder
 Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
 installiert.  Eine Grundkonfiguration finden Sie in unserem
 [Webserver-Tutorial](/de/tutorials/webserver-config).
+
+### Redis
+
+[Redis](https://redis.io/) is required for realtime communication via web
+socket. Zammad requires Redis 6 or newer.  The installation and
+configuration is out of scope of this documentation. Please follow the
+official guides and ensure to set it up in a secure way or consider another
+installation method or Zammad's hosting services.
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 

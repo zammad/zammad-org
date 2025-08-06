@@ -16,7 +16,7 @@ For package installation, the following Linux distributions are supported:
 | CentOS/RHEL   | 8 & 9               |
 | Debian        | 11 & 12             |
 | OpenSUSE/SLES | Leap 15.x / 15      |
-| Ubuntu        | 20.04, 22.04, 24.04 |
+| Ubuntu        | 22.04, 24.04        |
 
 If your distribution is not supported, feel free to use a different installation
 method or consider using
@@ -177,13 +177,6 @@ Install repository key:
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
-```
-
-Ubuntu 20.04
-
-```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
-sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 Ubuntu 22.04
@@ -376,9 +369,8 @@ installed.
 ### Database Server
 
 Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer.
-
-If no PostgreSQL server could be detected, it will be installed automatically during the package installation.
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no PostgreSQL server could be detected, it
+will be installed automatically during the package installation.
 
 ::: warning
 If you use database connection pooling software like PgBouncer, make sure to
@@ -397,6 +389,12 @@ The following reverse proxies are supported:
 The installation script tries to detect a Apache or Nginx during the
 installation. In case none is found, Nginx is automatically installed.
 You can find a basic example in [our Webserver configuration guide](/en/tutorials/webserver-config).
+
+### Redis
+
+[Redis](https://redis.io/) is required for realtime communication via web socket. Zammad requires Redis 6 or newer.
+The installation and configuration is out of scope of this documentation. Please follow the official guides and ensure
+to set it up in a secure way or consider another installation method or Zammad's hosting services.
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
 
