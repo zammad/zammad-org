@@ -44,7 +44,7 @@ jobs:
     needs: screenshots
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/download-artifact@v4
+    - uses: actions/download-artifact@v5
       with:
         name: screenshots-${{ needs.screenshots.outputs.sha_short }}
         path: src/public/screenshots/cypress
