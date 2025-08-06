@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-06 08:43+0200\n"
+"POT-Creation-Date: 2025-08-06 13:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1505,7 +1505,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/manage-zammad/general.md:1
 #: src/en/documentation/manage-zammad/general.md:6
-#: src/en/documentation/use/faq.md:8 src/en/documentation/use/general.md:1
+#: src/en/documentation/use/faq.md:13 src/en/documentation/use/general.md:1
 #: src/en/documentation/use/general.md:11
 #: src/en/documentation/use/start-using-zammad.md:10
 #: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:92
@@ -2654,79 +2654,126 @@ msgid ""
 "it in the respective system."
 msgstr ""
 
+#. type: Yaml Front Matter Array Element: outline
+#: src/en/documentation/use/faq.md:1
+#: src/en/reference/es-indexed-attributes.md:1
+#, no-wrap
+msgid "2"
+msgstr ""
+
 #. type: Title #
-#: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:6
+#: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:9
 #, markdown-text, no-wrap
 msgid "FAQs"
 msgstr ""
 
-#. type: Fenced div block (details How to find tickets?)
-#: src/en/documentation/use/faq.md:10
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:12
+#, markdown-text
+msgid "[[TOC]]"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:15
+#, markdown-text, no-wrap
+msgid "How to find tickets?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:18
+#, markdown-text
 msgid ""
 "It depends on your use case. Zammad offers many possibilities to search and "
-"access tickets.\n"
-"\n"
-"If you **search for a specific ticket or content**, the search is the best "
-"way. You can find the search field in the top\n"
-"area of the navigation sidebar or activate it by using the keyboard shortcut "
-"[[s]]. The search even shows your\n"
-"last viewed items, maybe you can find what you are searching for already "
-"there. There is a separate\n"
-"[search page](./guides/search) for more information.\n"
-"\n"
-"If you want to **start working on tickets**, take a look at [the "
-"overviews](./guides/overviews), which are basically a\n"
-"list of current tickets. These overviews should put you in a position where "
-"you can easily distinguish between what\n"
-"needs to be done, what is in progress and what is currently on hold. In case "
-"you face issues with these overviews,\n"
-"your Zammad admin should be able to help.\n"
+"access tickets."
 msgstr ""
 
-#. type: Fenced div block (details How to get notified for ticket changes?)
-#: src/en/documentation/use/faq.md:24
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:23
+#, markdown-text
+msgid ""
+"If you **search for a specific ticket or content**, the search is the best "
+"way. You can find the search field in the top area of the navigation sidebar "
+"or activate it by using the keyboard shortcut [[s]]. The search even shows "
+"your last viewed items, maybe you can find what you are searching for "
+"already there. There is a separate [search page](./guides/search) for more "
+"information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:28
+#, markdown-text
+msgid ""
+"If you want to **start working on tickets**, take a look at [the "
+"overviews](./guides/overviews), which are basically a list of current "
+"tickets. These overviews should put you in a position where you can easily "
+"distinguish between what needs to be done, what is in progress and what is "
+"currently on hold. In case you face issues with these overviews, your Zammad "
+"admin should be able to help."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:29
+#, markdown-text, no-wrap
+msgid "How to get notified for ticket changes?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:34
+#, markdown-text
 msgid ""
 "Adjust the [notification settings in your "
-"profile](manage-profile#notifications). You can distinguish between the\n"
+"profile](manage-profile#notifications). You can distinguish between the "
 "action (e.g. ticket creation), the notification channel (email and/or "
-"browser), your relation to the ticket (e.g. if\n"
-"you are the owner) and limit the notifications to a specific group.\n"
+"browser), your relation to the ticket (e.g. if you are the owner) and limit "
+"the notifications to a specific group."
 msgstr ""
 
-#. type: Fenced div block (details Why is the ticket open again? I closed it already!)
-#: src/en/documentation/use/faq.md:30
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:35
+#, markdown-text, no-wrap
+msgid "Why is the ticket open again? I closed it already"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:41
+#, markdown-text
 msgid ""
 "Depending on the settings of your Zammad instance, the reasons can "
-"differ. But usually the reason is that a customer\n"
-"replied to the ticket after it was set to closed. Another reason could be "
-"that a colleague re-opened it. If you can't\n"
-"see an article which fits to the description, you can take a look at the "
-"ticket history to find out more. Do so by\n"
-"opening the ::a:: menu in the ticket sidebar tab and select **History**.\n"
-"\n"
-"Your Zammad admin can adjust what should happen when a customer replies "
-"after a ticket got closed.\n"
+"differ. But usually the reason is that a customer replied to the ticket "
+"after it was set to closed. Another reason could be that a colleague "
+"re-opened it. If you can't see an article which fits to the description, you "
+"can take a look at the ticket history to find out more. Do so by opening the "
+"::a:: menu in the ticket sidebar tab and select **History**."
 msgstr ""
 
-#. type: Fenced div block (details What does the customer see in the ticket?)
-#: src/en/documentation/use/faq.md:39
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:43
+#, markdown-text
+msgid ""
+"Your Zammad admin can adjust what should happen when a customer replies "
+"after a ticket got closed."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:44
+#, markdown-text, no-wrap
+msgid "What does the customer see in the ticket?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:50
+#, markdown-text
 msgid ""
 "By default, customers only have a reduced interface. They can create "
-"tickets, view their own tickets (and maybe their\n"
-"colleague's too, depending on the setting) and access their profile "
-"settings. Even the ticket detail view only includes\n"
-"relevant elements for the customer. Elements, which have an internal purpose "
-"(like group, priority, internal notes, are\n"
-"not visible to the customer.\n"
-"\n"
+"tickets, view their own tickets (and maybe their colleague's too, depending "
+"on the setting) and access their profile settings. Even the ticket detail "
+"view only includes relevant elements for the customer. Elements, which have "
+"an internal purpose (like group, priority, internal notes, are not visible "
+"to the customer."
 msgstr ""
 
-#. type: Fenced div block (details What does the customer see in the ticket?|warning)
-#: src/en/documentation/use/faq.md:39
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/faq.md:51
 #, no-wrap
 msgid ""
 "The explanation above is based on the default Zammad settings. Be aware that "
@@ -2734,160 +2781,260 @@ msgid ""
 "different. If in doubt, you should ask your admin.\n"
 msgstr ""
 
-#. type: Fenced div block (details I can't log in. What can I do?)
-#: src/en/documentation/use/faq.md:51
-#, no-wrap
-msgid ""
-"\n"
-"- Forgot your password? Try resetting it in the login screen under the "
-"**Forgot password?** link by providing your email\n"
-"  address.\n"
-"- Lost the possibility to provide your 2nd factor for "
-"2-factor-authentication (2FA)? Use a recovery code and set up a\n"
-"  new 2FA method. See [2FA page](./guides/two-factor-auth) for more "
-"information.\n"
-"- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This "
-"also applies if your problem is not mentioned\n"
-"  here.\n"
+#. type: Title ###
+#: src/en/documentation/use/faq.md:56
+#, markdown-text, no-wrap
+msgid "I can't log in. What can I do?"
 msgstr ""
 
-#. type: Fenced div block (details How can I use keyboard shortcuts? I want to be more productive.)
-#: src/en/documentation/use/faq.md:61
-#, no-wrap
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+#, markdown-text
+msgid ""
+"Forgot your password? Try resetting it in the login screen under the "
+"**Forgot password?** link by providing your email address."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+#, markdown-text
+msgid ""
+"Lost the possibility to provide your 2nd factor for 2-factor-authentication "
+"(2FA)? Use a recovery code and set up a new 2FA method. See [2FA "
+"page](./guides/two-factor-auth) for more information."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+#, markdown-text
+msgid ""
+"Lost your 2FA recovery codes? Get in touch with your Zammad admin. This also "
+"applies if your problem is not mentioned here."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:65
+#, markdown-text, no-wrap
+msgid "How can I use keyboard shortcuts? I want to be more productive"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:69
+#, markdown-text
 msgid ""
 "Just use them! You can find an overview of the available shortcuts by "
-"pressing [[?]] on your keyboard or open the\n"
-"overview from the avatar menu (click on your avatar in the bottom left "
-"corner and select **Keyboard shortcuts**).\n"
-"\n"
-"Some of them depend on the location you are or action you perform "
-"(e.g. being in the editor or in the ticket\n"
-"detail view).\n"
+"pressing [[?]] on your keyboard or open the overview from the avatar menu "
+"(click on your avatar in the bottom left corner and select **Keyboard "
+"shortcuts**)."
 msgstr ""
 
-#. type: Fenced div block (details How to switch between dark and light mode for the user interface?)
-#: src/en/documentation/use/faq.md:69
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:72
+#, markdown-text
+msgid ""
+"Some of them depend on the location you are or action you perform "
+"(e.g. being in the editor or in the ticket detail view)."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:73
+#, markdown-text, no-wrap
+msgid "How to switch between dark and light mode for the user interface?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:77
+#, markdown-text
 msgid ""
 "You can switch between light, dark and automatic mode (tries to adapt to "
-"your browser) in the avatar menu. Open it\n"
-"by clicking your avatar in the bottom left corner and switch the toggle to "
-"the desired state.\n"
-"\n"
+"your browser) in the avatar menu. Open it by clicking your avatar in the "
+"bottom left corner and switch the toggle to the desired state."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:80
+#, markdown-text
+msgid ""
 "Another possibility is to use the keyboard shortcut [[d]]. If no input field "
-"is activated, pressing it cycles between\n"
-"the different modes.\n"
+"is activated, pressing it cycles between the different modes."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/faq.md:77
+#: src/en/documentation/use/faq.md:81
 #: src/en/documentation/use/manage-profile.md:1
 #, markdown-text, no-wrap
 msgid "User Profile"
 msgstr ""
 
-#. type: Fenced div block (details How to change my profile/avatar image?)
-#: src/en/documentation/use/faq.md:79
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:83
+#, markdown-text, no-wrap
+msgid "How to change my profile/avatar image?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:88
+#, markdown-text
 msgid ""
 "Go to the [avatar section in you profile settings](manage-profile#avatar) by "
-"opening the avatar menu in the bottom\n"
-"left corner and select **Profile settings**. There you can upload an image, "
-"capture a photo (if your device has a\n"
-"camera) or delete already present images.\n"
+"opening the avatar menu in the bottom left corner and select **Profile "
+"settings**. There you can upload an image, capture a photo (if your device "
+"has a camera) or delete already present images."
 msgstr ""
 
-#. type: Fenced div block (details I want to change the language of the Zammad user interface. How can I do that?)
-#: src/en/documentation/use/faq.md:85
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:89
+#, markdown-text, no-wrap
+msgid ""
+"I want to change the language of the Zammad user interface. How can I do "
+"that?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:93
+#, markdown-text
 msgid ""
 "Go to the language section in you profile settings by opening the avatar "
-"menu in the bottom left corner and select\n"
-"**Profile settings**.\n"
+"menu in the bottom left corner and select **Profile settings**."
 msgstr ""
 
-#. type: Fenced div block (details What should I do before going on vacation?)
-#: src/en/documentation/use/faq.md:90
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:94
+#, markdown-text, no-wrap
+msgid "What should I do before going on vacation?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:98
+#, markdown-text
 msgid ""
 "Go to the [out of office section](manage-profile#out-of-office) in you "
-"profile settings by opening the avatar menu in\n"
-"the bottom left corner and select **Profile settings**. There you can define "
-"a replacement agent.\n"
+"profile settings by opening the avatar menu in the bottom left corner and "
+"select **Profile settings**. There you can define a replacement agent."
 msgstr ""
 
-#. type: Fenced div block (details Can I adjust the order of the overviews?)
-#: src/en/documentation/use/faq.md:95
-#, no-wrap
-msgid "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).\n"
+#. type: Title ###
+#: src/en/documentation/use/faq.md:99
+#, markdown-text, no-wrap
+msgid "Can I adjust the order of the overviews?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:102
+#, markdown-text
+msgid "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:99
+#: src/en/documentation/use/faq.md:103
 #, markdown-text, no-wrap
 msgid "Work on Tickets"
 msgstr ""
 
-#. type: Fenced div block (details How to assign somebody to a ticket?)
-#: src/en/documentation/use/faq.md:101
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:105
+#, markdown-text, no-wrap
+msgid "How to assign somebody to a ticket?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:109
+#, markdown-text
 msgid ""
 "In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
-"offered agents and make sure to leave an\n"
-"internal note so the other agent knows what it is about.\n"
-"\n"
-"If you only have a question or need some information, you could also just\n"
-"[mention a colleague](advanced-features#mention-a-colleague) in an article "
-"by using [[@]][[@]] and raise your question.\n"
+"offered agents and make sure to leave an internal note so the other agent "
+"knows what it is about."
 msgstr ""
 
-#. type: Fenced div block (details How to delete a ticket?)
-#: src/en/documentation/use/faq.md:109
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:112
+#, markdown-text
+msgid ""
+"If you only have a question or need some information, you could also just "
+"[mention a colleague](advanced-features#mention-a-colleague) in an article "
+"by using [[@]][[@]] and raise your question."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:113
+#, markdown-text, no-wrap
+msgid "How to delete a ticket?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:117
+#, markdown-text
 msgid ""
 "First of all, tickets can't be deleted by agents. This is done for the "
-"reason of transparency and to prevent deletion\n"
-"by accident and arbitrary deletion.\n"
-"\n"
-"However, if customers want their data to be deleted (e.g. due to a GDPR "
-"deletion request), this can be done in Zammad.\n"
-"Contact your Zammad admin and ask to execute the deletion job.\n"
+"reason of transparency and to prevent deletion by accident and arbitrary "
+"deletion."
 msgstr ""
 
-#. type: Fenced div block (details How to use text templates?)
-#: src/en/documentation/use/faq.md:117
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:120
+#, markdown-text
+msgid ""
+"However, if customers want their data to be deleted (e.g. due to a GDPR "
+"deletion request), this can be done in Zammad.  Contact your Zammad admin "
+"and ask to execute the deletion job."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:121
+#, markdown-text, no-wrap
+msgid "How to use text templates?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:125
+#, markdown-text
 msgid ""
 "Use Zammad's [text modules](advanced-features#text-modules) by typing "
-"[[:]][[:]] in the article editor or choose it\n"
-"from the editor toolbar. If you need to have additional modules, ask your "
-"Zammad admin to add it for you.\n"
+"[[:]][[:]] in the article editor or choose it from the editor toolbar. If "
+"you need to have additional modules, ask your Zammad admin to add it for "
+"you."
 msgstr ""
 
-#. type: Fenced div block (details How to ask a colleague for help in the ticket?)
-#: src/en/documentation/use/faq.md:122
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:126
+#, markdown-text, no-wrap
+msgid "How to ask a colleague for help in the ticket?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:131
+#, markdown-text
 msgid ""
 "The best way to do this is to [mention a "
-"colleague](advanced-features#mention-a-colleague) in an article by using\n"
+"colleague](advanced-features#mention-a-colleague) in an article by using "
 "[[@]][[@]] and raise your question. This triggers a notification for your "
-"colleague. Depending on your internal\n"
-"processes, switching the owner of the ticket could also be a possible "
-"option.\n"
+"colleague. Depending on your internal processes, switching the owner of the "
+"ticket could also be a possible option."
 msgstr ""
 
-#. type: Fenced div block (details How to cite the customer's email or parts of it?)
-#: src/en/documentation/use/faq.md:128
-#, no-wrap
+#. type: Title ###
+#: src/en/documentation/use/faq.md:132
+#, markdown-text, no-wrap
+msgid "How to cite the customer's email or parts of it?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:136
+#, markdown-text
 msgid ""
 "To partially or selective cite the article or parts of it, mark the text, "
-"you want to cite, and click on the `Reply`\n"
-"button next to the article. This can be done even multiple times (e.g. to "
-"answer different parts of the ticket).\n"
-"\n"
+"you want to cite, and click on the `Reply` button next to the article. This "
+"can be done even multiple times (e.g. to answer different parts of the "
+"ticket)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:138
+#, markdown-text
+msgid ""
 "The citation of the whole article depends on how your Zammad is "
-"configured. If you want to apply changes to this\n"
-"behavior, ask your admin to change it.\n"
+"configured. If you want to apply changes to this behavior, ask your admin to "
+"change it."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -11588,12 +11735,6 @@ msgstr ""
 msgid ""
 "  "
 "https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
-msgstr ""
-
-#. type: Yaml Front Matter Array Element: outline
-#: src/en/reference/es-indexed-attributes.md:1
-#, no-wrap
-msgid "2"
 msgstr ""
 
 #. type: Title #
