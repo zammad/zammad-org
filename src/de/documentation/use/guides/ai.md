@@ -36,13 +36,8 @@ Zusammenfassung die folgenden Abschnitte:
 - Anliegen des Kunden
 - Zusammenfassung der Konversation
 - Offene Fragen (optional)
-- Vorgeschlagene nächste Schritte (optional)
-
-Wenn die vorgeschlagenen nächsten Schritte und die Checklistenfunktion
-aktiviert sind, können Sie sogar einzelne Elemente oder alle vorgeschlagenen
-nächsten Schritte zu einer [Checkliste](../advanced-features#checklists)
-hinzufügen, um den Überblick über die offenen Aufgaben in diesem Ticket zu
-behalten.
+- Upcoming events (optional)
+- Customer sentiment (optional)
 
 ## KI-Assistent Text-Werkzeuge
 

@@ -35,12 +35,8 @@ sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png
 - Намера клијента
 - Сажети опис конверзације
 - Отворена питања (опционо)
-- Предложени следећи кораци (опционо)
-
-If suggested next steps and the checklist feature are activated, you can
-even add single items or all the suggested next steps to a
-[checklist](../advanced-features#checklists) to keep track of the open tasks
-in this ticket.
+- Upcoming events (optional)
+- Customer sentiment (optional)
 
 ## AI Assistant Text Tools
 

@@ -30,10 +30,8 @@ Depending on the configuration of your Zammad instance, the summary includes the
 - Customer intent
 - Conversation summary
 - Open questions (optional)
-- Suggested next steps (optional)
-
-If suggested next steps and the checklist feature are activated, you can even add single items or all the suggested next
-steps to a [checklist](../advanced-features#checklists) to keep track of the open tasks in this ticket.
+- Upcoming events (optional)
+- Customer sentiment (optional)
 
 ## AI Assistant Text Tools
 

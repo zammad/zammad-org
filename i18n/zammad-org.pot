@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-06 13:33+0200\n"
+"POT-Creation-Date: 2025-08-08 16:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2138,7 +2138,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
-#: src/en/documentation/use/guides/ai.md:83
+#: src/en/documentation/use/guides/ai.md:81
 #, markdown-text, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr ""
@@ -3214,47 +3214,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 #, markdown-text
 msgid "Customer intent"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 #, markdown-text
 msgid "Conversation summary"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 #, markdown-text
 msgid "Open questions (optional)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 #, markdown-text
-msgid "Suggested next steps (optional)"
+msgid "Upcoming events (optional)"
 msgstr ""
 
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:37
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
 #, markdown-text
-msgid ""
-"If suggested next steps and the checklist feature are activated, you can "
-"even add single items or all the suggested next steps to a "
-"[checklist](../advanced-features#checklists) to keep track of the open tasks "
-"in this ticket."
+msgid "Customer sentiment (optional)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:38
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text, no-wrap
 msgid "AI Assistant Text Tools"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:42
+#: src/en/documentation/use/guides/ai.md:40
 #, markdown-text
 msgid ""
 "The new AI-powered smart editor is designed to simplify and enhance your "
@@ -3263,7 +3259,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:44
 #, markdown-text
 msgid ""
 "To use any of the following features, you first have to select text you want "
@@ -3273,7 +3269,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:48
+#: src/en/documentation/use/guides/ai.md:46
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's smart editor "
@@ -3281,7 +3277,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:49
+#: src/en/documentation/use/guides/ai.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -3295,7 +3291,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 #, markdown-text
 msgid ""
 "**Improve writing**: Uses your text as a base and tries to improve it by "
@@ -3304,7 +3300,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 #, markdown-text
 msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
@@ -3312,7 +3308,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 #, markdown-text
 msgid ""
 "**Expand**: Expands your text while keeping your message. Useful if your "
@@ -3322,7 +3318,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 #, markdown-text
 msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
@@ -3330,13 +3326,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:64
 #, markdown-text, no-wrap
 msgid "AI Agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:70
+#: src/en/documentation/use/guides/ai.md:68
 #, markdown-text
 msgid ""
 "This is no feature which allows any agent interaction. However, if the "
@@ -3345,7 +3341,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:73
+#: src/en/documentation/use/guides/ai.md:71
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. You "
@@ -3353,13 +3349,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:74
+#: src/en/documentation/use/guides/ai.md:72
 #, markdown-text, no-wrap
 msgid "Ticket History"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:76
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -3368,13 +3364,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:78
 #, markdown-text
 msgid "Example of a history entry of an AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:82
+#: src/en/documentation/use/guides/ai.md:80
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -3382,7 +3378,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:86
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -3392,25 +3388,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:88
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:92
+#: src/en/documentation/use/guides/ai.md:90
 #, markdown-text
 msgid "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text, no-wrap
 msgid "Overview Indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:96
+#: src/en/documentation/use/guides/ai.md:94
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -3418,7 +3414,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:97
+#: src/en/documentation/use/guides/ai.md:95
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
