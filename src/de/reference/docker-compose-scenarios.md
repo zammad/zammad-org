@@ -41,25 +41,25 @@ Sie finden die Dateien im
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Folgen Sie der [allgemeinen Einrichtung](/de/get-started/installation/docker) und nehmen Sie die folgenden Änderungen vor.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Unter dem Feld "Compose path" klicken Sie auf die Schaltfläche `Add file`. Dadurch wird der Abschnitt "Additional paths" geöffnet, in dem Sie
+das gewünschte Szenario angeben können. Fügen Sie `scenarios/{Szenario, das Sie verwenden möchten}.yml` hinzu und ersetzen Sie den letzten Teil in
+`{}`-Klammern durch den Namen einer der Szenariodateien. Sie können die Szenarien sogar kombinieren, indem Sie zusätzliche Pfade hinzufügen.
 
-![Portainer additional paths configuration](/screenshots/installation/portainer-additional-paths.png)
+![Portainer-Zusatzpfade-Konfiguration](/screenshots/installation/portainer-additional-paths.png)
 
 === Docker Compose
 
-Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with
-one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:
+Befolgen Sie die ersten 2 Schritte der [allgemeinen Einrichtung](/de/get-started/installation/docker). Zum Starten des Stacks mit
+einem oder mehreren zusätzlichen Szenarien verwenden Sie stattdessen den folgenden Befehl für Schritt 3 im geklonten Repository-Ordner:
 
-``` sh
+```sh
 docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d
 ```
 
-Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios
-by adding additional files according to the example above.
+Ersetzen Sie den Teil in `{}`-Klammern durch den Dateinamen einer der Szenario-Dateien. Sie können die Szenarien auch kombinieren,
+indem Sie zusätzliche Dateien entsprechend dem obigen Beispiel hinzufügen.
 
 :::
 
@@ -199,22 +199,22 @@ starten, um die KI-Funktionen von Zammad auf Ihrem Rechner zu nutzen.
 Dies ist für Entwicklungs- oder Testzwecke gedacht, da der Betrieb eines produktiven LLM-Stacks komplex ist.
 :::
 
-To deploy an Ollama container inside the Zammad stack, use the scenario file
-`scenarios/add-ollama.yml`. This creates an Ollama container which
-automatically pulls and serves `Llama3.2` to be ready to use/test AI
-features out of the box.
+Um einen Ollama-Container innerhalb des Zammad Stacks einzusetzen, verwenden
+Sie die Szenario-Datei `scenarios/add-ollama.yml`. Dadurch wird ein
+Ollama-Container erstellt, der automatisch `Llama3.2` abruft und
+bereitstellt, um KI-Funktionen sofort nutzen und testen zu können.
 
 Um ihn in Zammad zu verwenden, fügen Sie den Dienstnamen und den Port
 (`http://ollama:11434`) in der Anbieterkonfiguration hinzu.
 
 ### Ressourcen begrenzen
 
-If you want to limit the hardware resources the Zammad stack is allowed to
-use, use the `scenarios/apply-resource-limits.yml` scenario. Default values
-for CPU and memory usage for each container in the stack are applied
-then. You can find these default values in the `.env.dist` file. Provide the
-changed variables you want to use as environment variables and deploy the
-stack.
+Wenn Sie die Hardwareressourcen, die der Zammad Stack verwenden darf,
+einschränken möchten, verwenden Sie das Szenario
+`scenarios/apply-resource-limits.yml`. Es werden dann Standardwerte für die
+CPU- und Arbeitsspeichernutzung für jeden Container im Stack angewendet. Sie
+können diese Standardwerte in der Datei `.env.dist` finden. Passen Sie die
+gewünschten Variablen an und starten Sie den Stack.
 
 ### Andere Anwendungsfälle
 

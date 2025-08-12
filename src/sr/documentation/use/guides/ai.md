@@ -21,9 +21,9 @@ The ticket summary feature does what it says: it summarizes the ticket's
 content. This can be a huge time saver when dealing with large tickets
 and/or many hand-overs between agents.
 
-If the feature is activated, a summary of the ticket is generated when the
-ticket got updated and you either open the ticket or open the summary
-sidebar tab of the ticket, depending on the configuration.
+Уколико је функција укључена, сажети опис тикета ће бити припремљен при
+освежавању тикета и или отварањем детаљног прегледа тикета или бочне траке
+сажетог описа тикета, у зависности од подешавања.
 
 ![Screenshot shows Zammad's ticket detail view with highlighted ticket
 summary banner and summary
@@ -73,41 +73,41 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 - **Поједностави**: ради супротно од проширења и сажима ваш текст
   одржавајући вашу мисао.
 
-## AI Agents
+## AI агенти
 
-This is no feature which allows any agent interaction. However, if the
-feature is configured, you may notice it at some points. This is why you can
-find an explanation here.
+Ова функција не омогућава интеракцију оператера. Међутим, уколико је
+подесите, можете је приметити у акцији у неком тренутку. Из тог разлога наћи
+ћете објашњење овде.
 
-AI agents can be configured to work on certain types of routine tasks. You
-may notice the AI agents at different locations:
+AI агенти могу бити подешени да раде на одређеним врстама рутинских
+задатака. Можете приметити AI агенте на различитим местима:
 
 ### Ticket History
 
-If an AI agent applied changes, you can see a ticket history entry telling
-you the name of the AI agent. If you notice ongoing issues with what the AI
-agent did, inform your Zammad admin.
+Уколико AI агент освежи тикет, можете то и видети у евиденцији историјата
+тикета под називом AI агента. Уколико приметите проблеме са начином рада AI
+агента, обавестите о томе свог Zammad администратора.
 
-Example of a history entry of an AI agent:
+Пример евиденције историјата AI агента:
 
 ![Screenshot shows AI agent ticket history
 entry](/screenshots/ai/ai-agent-ticket-history.png)
 
 ### Откривање истовремене обраде
 
-AI agents which are currently working on a ticket are displayed like other
-agents in the live user section in the bottom bar. This helps to avoid
-duplicate work as well as losing unsaved changes. If you see an AI agent
-avatar, wait for a moment or head over to another ticket.
+AI агенти који тренутно раде на тикету су приказани као и други оператери у
+доњој траци присутних корисника. Ово ће вам помоћи да избегнете истовремени
+рад као и губитак несачуваних измена. Уколико приметите сличицу AI агента,
+сачекајте тренутак или пређите на други тикет.
 
-Avatar of AI agent:
+Сличица AI агента:
 
 ![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)
 
 ### Overview Indicator
 
-A running AI agent is indicated in the status column in overviews. The
-status circle changes to a blue/pink gradient circle:
+AI агент који се извршава има индикатор у колони стања у прегледима. Кружић
+стања ће бити приказан у плаво-љубичастом градијенту:
 
 ![Screenshot shows a status circle in overviews indicating an AI agent is
 currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)

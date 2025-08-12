@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-07-28 11:44+0200\n"
-"PO-Revision-Date: 2025-07-26 07:00+0000\n"
+"POT-Creation-Date: 2025-08-08 16:07+0200\n"
+"PO-Revision-Date: 2025-08-09 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1681,7 +1681,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/manage-zammad/general.md:1
 #: src/en/documentation/manage-zammad/general.md:6
-#: src/en/documentation/use/faq.md:8 src/en/documentation/use/general.md:1
+#: src/en/documentation/use/faq.md:13 src/en/documentation/use/general.md:1
 #: src/en/documentation/use/general.md:11
 #: src/en/documentation/use/start-using-zammad.md:10
 #: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:92
@@ -1899,14 +1899,14 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:55
 msgid ""
-"Use the button in the toolbar of the editor or simply write `::` in the "
-"editor. Both ways let you search for the desired text module by typing some "
-"characters or words of the text or keywords of the text module."
+"Use the button in the toolbar of the editor or simply write [[:]][[:]] in "
+"the editor. Both ways let you search for the desired text module by typing "
+"some characters or words of the text or keywords of the text module."
 msgstr ""
 "Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder "
-"schreiben Sie einfach `::` in den Editor. Auf beiden Wegen können Sie nach "
-"dem gewünschten Textbaustein suchen, indem Sie einige Zeichen oder Wörter "
-"des Textes oder Schlüsselwörter des Textbausteins eingeben."
+"schreiben Sie einfach [[:]][[:]] in den Editor. Auf beiden Wegen können Sie "
+"nach dem gewünschten Textbaustein suchen, indem Sie einige Zeichen oder "
+"Wörter des Textes oder Schlüsselwörter des Textbausteins eingeben."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:58
@@ -1949,14 +1949,14 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:72
 msgid ""
-"Use the button in the toolbar of the editor or simply write `??` in the "
-"editor. Both ways let you search for the desired knowledge base article by "
-"typing some characters or words."
+"Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
+"the editor. Both ways let you search for the desired knowledge base article "
+"by typing some characters or words."
 msgstr ""
 "Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder "
-"schreiben Sie einfach `??` in den Editor. Auf beiden Wegen können Sie nach "
-"dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen oder "
-"Wörter eingeben."
+"schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie "
+"nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen "
+"oder Wörter eingeben."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:73
@@ -1988,13 +1988,13 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:86
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
-"or simply type `@@`. Both ways let you search for the name of the colleague "
-"you want to mention by typing some characters or the complete name."
+"or simply type [[@]][[@]]. Both ways let you search for the name of the "
+"colleague you want to mention by typing some characters or the complete name."
 msgstr ""
 "Verwenden Sie beim Schreiben eines Ticket-Artikels die Schaltfläche in der "
-"Symbolleiste des Editors oder geben Sie einfach `@@` ein. Auf beiden Wegen "
-"können Sie nach dem Namen des Kollegen suchen, den Sie erwähnen möchten, "
-"indem Sie einige Buchstaben oder den vollständigen Namen eingeben."
+"Symbolleiste des Editors oder geben Sie einfach [[@]][[@]] ein. Auf beiden "
+"Wegen können Sie nach dem Namen des Kollegen suchen, den Sie erwähnen "
+"möchten, indem Sie einige Buchstaben oder den vollständigen Namen eingeben."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:89
@@ -2407,7 +2407,7 @@ msgstr "Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Ände
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
-#: src/en/documentation/use/guides/ai.md:83
+#: src/en/documentation/use/guides/ai.md:81
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Erkennung gleichzeitige Ticketbearbeitung"
@@ -2554,11 +2554,11 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:263
 msgid ""
-"Use the **Bulk Action** button in the top right corner and change/add "
+"Use the `Bulk Action` button in the top right corner and change/add "
 "attributes by using the fields in the side panel"
 msgstr ""
-"Verwenden Sie die Schaltfläche **Mehrfach-Aktion** in der oberen rechten "
-"Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der "
+"Verwenden Sie die Schaltfläche `Mehrfach-Aktion` in der oberen rechten Ecke "
+"und ändern Sie Attribute oder fügen Sie Werte über die Felder in der "
 "Seitenleiste hinzu"
 
 #. type: Bullet: '- '
@@ -3000,88 +3000,155 @@ msgstr ""
 "mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken, "
 "werden Sie zu diesem im jeweiligen System weitergeleitet."
 
+#. type: Yaml Front Matter Array Element: outline
+#: src/en/documentation/use/faq.md:1
+#: src/en/reference/es-indexed-attributes.md:1
+#, no-wrap
+msgid "2"
+msgstr "2"
+
 #. type: Title #
-#: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:6
+#: src/en/documentation/use/faq.md:1 src/en/documentation/use/faq.md:9
 #, no-wrap
 msgid "FAQs"
 msgstr "FAQs"
 
-#. type: Fenced div block (details How to find tickets?)
-#: src/en/documentation/use/faq.md:10
-#, no-wrap
-msgid ""
-"It depends on your use case. Zammad offers many possibilities to search and access tickets.\n"
-"\n"
-"If you **search for a specific ticket or content**, the search is the best way. You can find the search field in the top\n"
-"area of the navigation sidebar or activate it by using the keyboard shortcut [[s]]. The search even shows your\n"
-"last viewed items, maybe you can find what you are searching for already there. There is a separate\n"
-"[search page](./guides/search) for more information.\n"
-"\n"
-"If you want to **start working on tickets**, take a look at [the overviews](./guides/overviews), which are basically a\n"
-"list of current tickets. These overviews should put you in a position where you can easily distinguish between what\n"
-"needs to be done, what is in progress and what is currently on hold. In case you face issues with these overviews,\n"
-"your Zammad admin should be able to help.\n"
-msgstr ""
-"Das hängt von Ihrem Anwendungsfall ab. Zammad bietet viele Möglichkeiten, Tickets zu suchen und auf sie zuzugreifen.\n"
-"\n"
-"Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche der beste Weg. Sie finden das Suchfeld im oberen\n"
-"Bereich der Navigations-Seitenleiste oder können sie mit dem Tastaturkürzel [[s]] aktivieren. Die Suche zeigt Ihnen sogar Ihre\n"
-"zuletzt angesehenen Elemente an, vielleicht finden Sie dort schon, was Sie suchen. Es gibt eine separate Seite über die\n"
-"[Suche](./guides/search) für weitere Informationen.\n"
-"\n"
-"Wenn Sie **mit der Arbeit an Tickets** beginnen wollen, werfen Sie einen Blick auf [die Übersichten](./guides/overviews), die im Grunde eine\n"
-"Liste der aktuellen Tickets sind. Diese Übersichten sollten Sie in die Lage versetzen, leicht zu unterscheiden,\n"
-"was erledigt werden muss, was in Arbeit ist und was derzeit pausiert ist. Falls Sie Probleme mit diesen Übersichten haben,\n"
-"sollte Ihnen Ihr Zammad-Administrator helfen können.\n"
+#. type: Plain text
+#: src/en/documentation/use/faq.md:12
+msgid "[[TOC]]"
+msgstr "[[TOC]]"
 
-#. type: Fenced div block (details How to get notified for ticket changes?)
-#: src/en/documentation/use/faq.md:24
+#. type: Title ###
+#: src/en/documentation/use/faq.md:15
 #, no-wrap
-msgid ""
-"Adjust the [notification settings in your profile](manage-profile#notifications). You can distinguish between the\n"
-"action (e.g. ticket creation), the notification channel (email and/or browser), your relation to the ticket (e.g. if\n"
-"you are the owner) and limit the notifications to a specific group.\n"
-msgstr ""
-"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil] (manage-profile#benachrichtigungen) an. Sie können unterscheiden zwischen der\n"
-"Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder Browser), Ihrer Beziehung zum Ticket (z.B. ob\n"
-"Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe beschränken.\n"
+msgid "How to find tickets?"
+msgstr "Wie finde ich Tickets?"
 
-#. type: Fenced div block (details Why is the ticket open again? I closed it already!)
-#: src/en/documentation/use/faq.md:30
+#. type: Plain text
+#: src/en/documentation/use/faq.md:18
+msgid ""
+"It depends on your use case. Zammad offers many possibilities to search and "
+"access tickets."
+msgstr ""
+"Das hängt von Ihrem Anwendungsfall ab. Zammad bietet mehrere Möglichkeiten, "
+"Tickets zu suchen und auf sie zuzugreifen."
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:23
+msgid ""
+"If you **search for a specific ticket or content**, the search is the best "
+"way. You can find the search field in the top area of the navigation sidebar "
+"or activate it by using the keyboard shortcut [[s]]. The search even shows "
+"your last viewed items, maybe you can find what you are searching for "
+"already there. There is a separate [search page](./guides/search) for more "
+"information."
+msgstr ""
+"Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche "
+"der beste Weg. Sie finden das Suchfeld im oberen Bereich der Navigations-"
+"Seitenleiste oder können sie mit dem Tastaturkürzel [[s] aktivieren]. Die "
+"Suche zeigt sogar Ihre zuletzt angesehenen Elemente an, vielleicht finden "
+"Sie dort schon, was Sie suchen. Für weitere Informationen gibt es eine "
+"eigene [Suchseite](./guides/search)."
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:28
+msgid ""
+"If you want to **start working on tickets**, take a look at [the overviews]"
+"(./guides/overviews), which are basically a list of current tickets. These "
+"overviews should put you in a position where you can easily distinguish "
+"between what needs to be done, what is in progress and what is currently on "
+"hold. In case you face issues with these overviews, your Zammad admin should "
+"be able to help."
+msgstr ""
+"Wenn Sie **mit der Arbeit an Tickets** beginnen wollen, werfen Sie einen "
+"Blick auf die [Übersichten](./guides/overviews), die im Grunde eine Liste "
+"der aktuellen Tickets sind. Diese Übersichten sollten Sie in die Lage "
+"versetzen, leicht zu unterscheiden, was zu tun ist, was in Bearbeitung ist "
+"und was derzeit keine Bearbeitung erfordert. Falls Sie Probleme mit diesen "
+"Übersichten haben, kann Ihnen Ihr Zammad-Administrator weiterhelfen."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:29
 #, no-wrap
-msgid ""
-"Depending on the settings of your Zammad instance, the reasons can differ. But usually the reason is that a customer\n"
-"replied to the ticket after it was set to closed. Another reason could be that a colleague re-opened it. If you can't\n"
-"see an article which fits to the description, you can take a look at the ticket history to find out more. Do so by\n"
-"opening the ::a:: menu in the ticket sidebar tab and select **History**.\n"
-"\n"
-"Your Zammad admin can adjust what should happen when a customer replies after a ticket got closed.\n"
-msgstr ""
-"Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür unterschiedlich sein. Normalerweise ist der Grund jedoch, dass ein Kunde\n"
-"auf das Ticket geantwortet hat, nachdem es auf geschlossen gesetzt wurde. Ein anderer Grund könnte sein, dass ein Kollege es wieder geöffnet hat. Wenn Sie\n"
-"keinen Artikel sehen, der auf diese Erklärung passt, können Sie einen Blick in die Ticket-Historie werfen, um mehr herauszufinden. Tun Sie dies, indem Sie\n"
-"das Menü ::a:: im Ticket-Seitenleisten-Tab öffnen und **Historie** auswählen.\n"
-"\n"
-"Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde antwortet, nachdem ein Ticket geschlossen wurde.\n"
+msgid "How to get notified for ticket changes?"
+msgstr "Wie kann ich über Ticket-Änderungen informiert werden?"
 
-#. type: Fenced div block (details What does the customer see in the ticket?)
-#: src/en/documentation/use/faq.md:39
+#. type: Plain text
+#: src/en/documentation/use/faq.md:34
+msgid ""
+"Adjust the [notification settings in your profile](manage-"
+"profile#notifications). You can distinguish between the action (e.g. ticket "
+"creation), the notification channel (email and/or browser), your relation to "
+"the ticket (e.g. if you are the owner) and limit the notifications to a "
+"specific group."
+msgstr ""
+"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil] (manage-"
+"profile#benachrichtigungen) an. Sie können unterscheiden zwischen der\n"
+"Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder "
+"Browser), Ihrer Beziehung zum Ticket (z.B. ob\n"
+"Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe "
+"beschränken."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:35
 #, no-wrap
-msgid ""
-"By default, customers only have a reduced interface. They can create tickets, view their own tickets (and maybe their\n"
-"colleague's too, depending on the setting) and access their profile settings. Even the ticket detail view only includes\n"
-"relevant elements for the customer. Elements, which have an internal purpose (like group, priority, internal notes, are\n"
-"not visible to the customer.\n"
-"\n"
-msgstr ""
-"Standardmäßig steht den Kunden nur eine reduzierte Oberfläche zur Verfügung. Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und\n"
-"je nach Einstellung auch die ihrer Kollegen) und auf ihre Profileinstellungen zugreifen. Auch die Ticket Detailansicht enthält nur\n"
-"relevante Elemente für den Kunden. Elemente, die einen internen Zweck haben (wie Gruppe, Priorität, interne Notizen), sind\n"
-"für Kunden nicht sichtbar.\n"
-"\n"
+msgid "Why is the ticket open again? I closed it already"
+msgstr "Warum ist das Ticket wieder offen? Ich habe es bereits geschlossen"
 
-#. type: Fenced div block (details What does the customer see in the ticket?|warning)
-#: src/en/documentation/use/faq.md:39
+#. type: Plain text
+#: src/en/documentation/use/faq.md:41
+msgid ""
+"Depending on the settings of your Zammad instance, the reasons can differ. "
+"But usually the reason is that a customer replied to the ticket after it was "
+"set to closed. Another reason could be that a colleague re-opened it. If you "
+"can't see an article which fits to the description, you can take a look at "
+"the ticket history to find out more. Do so by opening the ::a:: menu in the "
+"ticket sidebar tab and select **History**."
+msgstr ""
+"Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür "
+"unterschiedlich sein. In der Regel liegt der Grund jedoch darin,\n"
+"dass ein Kunde auf das Ticket geantwortet hat, nachdem es auf geschlossen "
+"gesetzt wurde. Ein anderer Grund könnte sein, dass ein Kollege\n"
+"es wieder geöffnet hat. Wenn Sie keinen Artikel sehen, der auf die "
+"Beschreibung passt, können Sie einen Blick in die Ticket-Historie werfen,\n"
+"um mehr herauszufinden. Öffnen Sie dazu das Menü ::a:: im Seitenleisten-Tab "
+"des Tickets und wählen Sie **Historie**."
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:43
+msgid ""
+"Your Zammad admin can adjust what should happen when a customer replies "
+"after a ticket got closed."
+msgstr ""
+"Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde "
+"auf ein bereits geschlossenes Ticket antwortet."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:44
+#, no-wrap
+msgid "What does the customer see in the ticket?"
+msgstr "Was sieht ein Kunde im Ticket?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:50
+msgid ""
+"By default, customers only have a reduced interface. They can create "
+"tickets, view their own tickets (and maybe their colleague's too, depending "
+"on the setting) and access their profile settings. Even the ticket detail "
+"view only includes relevant elements for the customer. Elements, which have "
+"an internal purpose (like group, priority, internal notes, are not visible "
+"to the customer."
+msgstr ""
+"Standardmäßig steht den Kunden nur eine reduzierte Oberfläche zur Verfügung. "
+"Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und\n"
+"je nach Einstellung auch die ihrer Kollegen) und auf ihre "
+"Profileinstellungen zugreifen. Auch die Ticket Detailansicht enthält nur\n"
+"relevante Elemente für den Kunden. Elemente, die einen internen Zweck haben "
+"(wie Gruppe, Priorität, interne Notizen), sind\n"
+"für Kunden nicht sichtbar."
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/faq.md:51
 #, no-wrap
 msgid ""
 "The explanation above is based on the default Zammad settings. Be aware that the configuration of your system might be\n"
@@ -3090,172 +3157,328 @@ msgstr ""
 "Die obige Erklärung basiert auf den Standardeinstellungen von Zammad. Beachten Sie, dass die Konfiguration Ihres Systems möglicherweise\n"
 "anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.\n"
 
-#. type: Fenced div block (details I can't log in. What can I do?)
-#: src/en/documentation/use/faq.md:51
+#. type: Title ###
+#: src/en/documentation/use/faq.md:56
 #, no-wrap
-msgid ""
-"\n"
-"- Forgot your password? Try resetting it in the login screen under the **Forgot password?** link by providing your email\n"
-"  address.\n"
-"- Lost the possibility to provide your 2nd factor for 2-factor-authentication (2FA)? Use a recovery code and set up a\n"
-"  new 2FA method. See [2FA page](./guides/two-factor-auth) for more information.\n"
-"- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This also applies if your problem is not mentioned\n"
-"  here.\n"
-msgstr ""
-"\n"
-"- Haben Sie Ihr Passwort vergessen? Versuchen Sie, es im Login-Dialog über den Link **Kennwort vergessen?** zurückzusetzen, indem Sie Ihre\n"
-"  E-Mail-Adresse eingeben.\n"
-"- Haben Sie keine Möglichkeit mehr, Ihren zweiten Faktor für die 2-Faktor-Authentifizierung (2FA) zu verwenden? Nutzen Sie einen Wiederherstellungscode und richten Sie eine\n"
-"  neue 2FA-Methode ein. Weitere Informationen finden Sie auf der [2FA-Seite](./guides/two-factor-auth).\n"
-"- Haben Sie Ihre 2FA-Wiederherstellungscodes verloren? Wenden Sie sich an Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem\n"
-"  hier nicht genannt wurde.\n"
+msgid "I can't log in. What can I do?"
+msgstr "Ich kann mich nicht anmelden. Was kann ich tun?"
 
-#. type: Fenced div block (details How can I use keyboard shortcuts? I want to be more productive.)
-#: src/en/documentation/use/faq.md:61
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+msgid ""
+"Forgot your password? Try resetting it in the login screen under the "
+"**Forgot password?** link by providing your email address."
+msgstr ""
+"Haben Sie Ihr Passwort vergessen? Versuchen Sie, es auf der Anmeldeseite "
+"unter dem Link **Passwort vergessen?** zurückzusetzen, indem Sie Ihre E-Mail-"
+"Adresse angeben."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+msgid ""
+"Lost the possibility to provide your 2nd factor for 2-factor-authentication "
+"(2FA)? Use a recovery code and set up a new 2FA method. See [2FA page](./"
+"guides/two-factor-auth) for more information."
+msgstr ""
+"Haben Sie die Möglichkeit verloren, Ihren zweiten Faktor für die 2-Faktor-"
+"Authentifizierung (2FA) bereitzustellen? Verwenden Sie einen "
+"Wiederherstellungscode und richten Sie eine neue 2FA-Methode ein. Weitere "
+"Informationen finden Sie auf der [2FA-Seite](./guides/two-factor-auth)."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/faq.md:64
+msgid ""
+"Lost your 2FA recovery codes? Get in touch with your Zammad admin. This also "
+"applies if your problem is not mentioned here."
+msgstr ""
+"Haben Sie Ihre 2FA-Wiederherstellungscodes verloren? Wenden Sie sich an "
+"Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem hier nicht "
+"aufgeführt ist."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:65
 #, no-wrap
-msgid ""
-"Just use them! You can find an overview of the available shortcuts by pressing [[?]] on your keyboard or open the\n"
-"overview from the avatar menu (click on your avatar in the bottom left corner and select **Keyboard shortcuts**).\n"
-"\n"
-"Some of them depend on the location you are or action you perform (e.g. being in the editor or in the ticket\n"
-"detail view).\n"
-msgstr ""
-"Benutzen Sie sie einfach! Eine Übersicht über die verfügbaren Tastenkombinationen finden Sie, indem Sie [[?]] auf Ihrer Tastatur drücken oder die\n"
-"Übersicht über das Avatar-Menü (klicken Sie auf Ihren Avatar in der unteren linken Ecke und wählen Sie **Tastaturkürzel**) öffnen.\n"
-"\n"
-"Einige dieser Tastenkombinationen hängen davon ab, wo Sie sich befinden oder welche Aktion Sie durchführen (z.B. im Editor oder in der Ticket\n"
-"Detail-Ansicht).\n"
+msgid "How can I use keyboard shortcuts? I want to be more productive"
+msgstr "Wie kann ich Tastaturkürzel verwenden? Ich möchte produktiver sein"
 
-#. type: Fenced div block (details How to switch between dark and light mode for the user interface?)
+#. type: Plain text
 #: src/en/documentation/use/faq.md:69
-#, no-wrap
 msgid ""
-"You can switch between light, dark and automatic mode (tries to adapt to your browser) in the avatar menu. Open it\n"
-"by clicking your avatar in the bottom left corner and switch the toggle to the desired state.\n"
-"\n"
-"Another possibility is to use the keyboard shortcut [[d]]. If no input field is activated, pressing it cycles between\n"
-"the different modes.\n"
+"Just use them! You can find an overview of the available shortcuts by "
+"pressing [[?]] on your keyboard or open the overview from the avatar menu "
+"(click on your avatar in the bottom left corner and select **Keyboard "
+"shortcuts**)."
 msgstr ""
-"Sie können im Avatar-Menü zwischen hellem, dunklem und automatischem Modus (versucht, die Einstellung Ihres Browsers zu verwenden) wechseln. Ändern Sie\n"
-"die Darstellung, indem Sie auf Ihren Avatar in der unteren linken Ecke klicken und den Schalter auf den gewünschten Zustand stellen.\n"
-"\n"
-"Eine weitere Möglichkeit ist die Verwendung des Tastaturkürzels [[d]]. Wenn kein Eingabefeld aktiviert ist, wechselt die Taste zwischen\n"
-"den verschiedenen Modi.\n"
+"Benutzen Sie sie einfach! Sie finden eine Übersicht der verfügbaren "
+"Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken\n"
+"oder die Übersicht über das Avatar-Menü öffnen (klicken Sie auf Ihren Avatar "
+"in der unteren linken Ecke und wählen Sie **Tastaturkürzel**)."
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:72
+msgid ""
+"Some of them depend on the location you are or action you perform (e.g. "
+"being in the editor or in the ticket detail view)."
+msgstr ""
+"Einige davon hängen davon ab, wo Sie sich befinden oder welche Aktion Sie "
+"durchführen (z.B. im Editor oder in der Ticket Detailansicht)."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:73
+#, no-wrap
+msgid "How to switch between dark and light mode for the user interface?"
+msgstr "Wie schaltet man die Benutzeroberfläche zwischen Dunkel- und Hellmodus um?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:77
+msgid ""
+"You can switch between light, dark and automatic mode (tries to adapt to "
+"your browser) in the avatar menu. Open it by clicking your avatar in the "
+"bottom left corner and switch the toggle to the desired state."
+msgstr ""
+"Sie können im Avatar-Menü zwischen hellem, dunklem und automatischem Modus "
+"(versucht, sich an Ihren Browser anzupassen)\n"
+"umschalten. Öffnen Sie es, indem Sie auf Ihren Avatar in der linken unteren "
+"Ecke klicken und den Schalter auf den gewünschten\n"
+"Status stellen."
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:80
+msgid ""
+"Another possibility is to use the keyboard shortcut [[d]]. If no input field "
+"is activated, pressing it cycles between the different modes."
+msgstr ""
+"Eine andere Möglichkeit ist die Verwendung des Tastaturkürzels [[d]]. Wenn "
+"kein Eingabefeld aktiviert ist, wird durch Drücken dieser Taste zwischen den "
+"verschiedenen Modi gewechselt."
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/faq.md:77
+#: src/en/documentation/use/faq.md:81
 #: src/en/documentation/use/manage-profile.md:1
 #, no-wrap
 msgid "User Profile"
 msgstr "Benutzerprofil"
 
-#. type: Fenced div block (details How to change my profile/avatar image?)
-#: src/en/documentation/use/faq.md:79
+#. type: Title ###
+#: src/en/documentation/use/faq.md:83
 #, no-wrap
-msgid ""
-"Go to the [avatar section in you profile settings](manage-profile#avatar) by opening the avatar menu in the bottom\n"
-"left corner and select **Profile settings**. There you can upload an image, capture a photo (if your device has a\n"
-"camera) or delete already present images.\n"
-msgstr ""
-"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-profile#avatar), indem Sie das Avatar-Menü in der unteren\n"
-"linken Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie ein Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine\n"
-"Kamera verfügt) oder bereits vorhandene Bilder löschen.\n"
+msgid "How to change my profile/avatar image?"
+msgstr "Wie kann ich mein Profil-/Avatarbild ändern?"
 
-#. type: Fenced div block (details I want to change the language of the Zammad user interface. How can I do that?)
-#: src/en/documentation/use/faq.md:85
-#, no-wrap
+#. type: Plain text
+#: src/en/documentation/use/faq.md:88
 msgid ""
-"Go to the language section in you profile settings by opening the avatar menu in the bottom left corner and select\n"
-"**Profile settings**.\n"
+"Go to the [avatar section in you profile settings](manage-profile#avatar) by "
+"opening the avatar menu in the bottom left corner and select **Profile "
+"settings**. There you can upload an image, capture a photo (if your device "
+"has a camera) or delete already present images."
 msgstr ""
-"Gehen Sie in Ihren Profileinstellungen in den Bereich Sprache, indem Sie das Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie\n"
-"**Profileinstellungen**.\n"
+"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-"
+"profile#avatar), indem Sie das Avatar-Menü in der unteren\n"
+"linken Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie ein "
+"Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine\n"
+"Kamera verfügt) oder bereits vorhandene Bilder löschen."
 
-#. type: Fenced div block (details What should I do before going on vacation?)
-#: src/en/documentation/use/faq.md:90
+#. type: Title ###
+#: src/en/documentation/use/faq.md:89
 #, no-wrap
+msgid "I want to change the language of the Zammad user interface. How can I do that?"
+msgstr "Ich möchte die Sprache der Benutzeroberfläche von Zammad ändern. Wie kann ich das tun?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:93
 msgid ""
-"Go to the [out of office section](manage-profile#out-of-office) in you profile settings by opening the avatar menu in\n"
-"the bottom left corner and select **Profile settings**. There you can define a replacement agent.\n"
+"Go to the language section in you profile settings by opening the avatar "
+"menu in the bottom left corner and select **Profile settings**."
 msgstr ""
-"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](manage-profile#abwesenheit), indem Sie das Avatar-Menü in der\n"
-"in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie einen Agenten als Vertretung festlegen.\n"
+"Gehen Sie in Ihren Profileinstellungen in den Bereich Sprache, indem Sie das "
+"Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie\n"
+"**Profileinstellungen**."
 
-#. type: Fenced div block (details Can I adjust the order of the overviews?)
-#: src/en/documentation/use/faq.md:95
+#. type: Title ###
+#: src/en/documentation/use/faq.md:94
 #, no-wrap
-msgid "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).\n"
-msgstr "Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-anordnen) weiter.\n"
+msgid "What should I do before going on vacation?"
+msgstr "Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:98
+msgid ""
+"Go to the [out of office section](manage-profile#out-of-office) in you "
+"profile settings by opening the avatar menu in the bottom left corner and "
+"select **Profile settings**. There you can define a replacement agent."
+msgstr ""
+"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](manage-"
+"profile#abwesenheit), indem Sie das Avatar-Menü in der\n"
+"in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort "
+"können Sie einen anderen Agenten als Vertretung festlegen."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:99
+#, no-wrap
+msgid "Can I adjust the order of the overviews?"
+msgstr "Kann ich die Reihenfolge der Übersichten anpassen?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:102
+msgid ""
+"Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
+msgstr ""
+"Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-"
+"anordnen) weiter."
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:99
+#: src/en/documentation/use/faq.md:103
 #, no-wrap
 msgid "Work on Tickets"
 msgstr "Mit Tickets arbeiten"
 
-#. type: Fenced div block (details How to assign somebody to a ticket?)
-#: src/en/documentation/use/faq.md:101
+#. type: Title ###
+#: src/en/documentation/use/faq.md:105
 #, no-wrap
-msgid ""
-"In the ticket sidebar tab, you can find an **Owner** field. Choose from the offered agents and make sure to leave an\n"
-"internal note so the other agent knows what it is about.\n"
-"\n"
-"If you only have a question or need some information, you could also just\n"
-"[mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.\n"
-msgstr ""
-"In dem Ticket-Seitenleisten-Tab finden Sie ein Feld **Besitzer**. Wählen Sie einen der angebotenen Agenten aus und hinterlassen Sie eine\n"
-"interne Notiz, damit der andere Agent weiß, worum es geht.\n"
-"\n"
-"Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie auch einfach\n"
-"einen Kollegen in einem Artikel [erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie `@@` verwenden und Ihre Frage stellen.\n"
+msgid "How to assign somebody to a ticket?"
+msgstr "Wie weise ich einem Ticket eine Person zu?"
 
-#. type: Fenced div block (details How to delete a ticket?)
+#. type: Plain text
 #: src/en/documentation/use/faq.md:109
-#, no-wrap
 msgid ""
-"First of all, tickets can't be deleted by agents. This is done for the reason of transparency and to prevent deletion\n"
-"by accident and arbitrary deletion.\n"
-"\n"
-"However, if customers want their data to be deleted (e.g. due to a GDPR deletion request), this can be done in Zammad.\n"
-"Contact your Zammad admin and ask to execute the deletion job.\n"
+"In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
+"offered agents and make sure to leave an internal note so the other agent "
+"knows what it is about."
 msgstr ""
-"Zunächst einmal können Tickets nicht von Agenten gelöscht werden. Dies geschieht aus Gründen der Transparenz und um\n"
-"versehentliches und willkürliches Löschen zu verhindern.\n"
-"\n"
-"Wenn Kunden jedoch möchten, dass ihre Daten gelöscht werden (z.B. aufgrund eines GDPR-Löschantrags), kann dies in Zammad durchgeführt werden.\n"
-"Wenden Sie sich an Ihren Zammad-Administrator und bitten Sie ihn, die Löschung auszuführen.\n"
+"Im Ticket Seitenleisten-Tab finden Sie das Feld **Besitzer**. Wählen Sie die "
+"gewünschte Person aus den verfügbaren Agenten aus und stellen Sie sicher, "
+"dass Sie eine interne\n"
+"Notiz hinterlassen, damit der andere Agent weiß, worum es geht."
 
-#. type: Fenced div block (details How to use text templates?)
+#. type: Plain text
+#: src/en/documentation/use/faq.md:112
+msgid ""
+"If you only have a question or need some information, you could also just "
+"[mention a colleague](advanced-features#mention-a-colleague) in an article "
+"by using [[@]][[@]] and raise your question."
+msgstr ""
+"Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie "
+"auch einfach einen Kollegen in einem Artikel [erwähnen](advanced-"
+"features#erwahnen-von-kollegen), indem Sie [[@]][[@]] verwenden und Ihre "
+"Frage stellen."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:113
+#, no-wrap
+msgid "How to delete a ticket?"
+msgstr "Wie löscht man ein Ticket?"
+
+#. type: Plain text
 #: src/en/documentation/use/faq.md:117
-#, no-wrap
 msgid ""
-"Use Zammad's [text modules](advanced-features#use-text-modules) by typing `::` in the article editor. If you need to\n"
-"have additional modules, ask your Zammad admin to add it for you.\n"
+"First of all, tickets can't be deleted by agents. This is done for the "
+"reason of transparency and to prevent deletion by accident and arbitrary "
+"deletion."
 msgstr ""
-"Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine-verwenden), indem Sie im Artikel-Editor `::` eingeben. Wenn Sie\n"
-"zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, sie für Sie hinzuzufügen.\n"
+"Zunächst einmal können Tickets nicht von Agenten gelöscht werden. Dies "
+"geschieht aus Gründen der Transparenz und um versehentliches und "
+"willkürliches Löschen zu verhindern."
 
-#. type: Fenced div block (details How to ask a colleague for help in the ticket?)
-#: src/en/documentation/use/faq.md:122
+#. type: Plain text
+#: src/en/documentation/use/faq.md:120
+msgid ""
+"However, if customers want their data to be deleted (e.g. due to a GDPR "
+"deletion request), this can be done in Zammad.  Contact your Zammad admin "
+"and ask to execute the deletion job."
+msgstr ""
+"Wenn Kunden jedoch möchten, dass ihre Daten gelöscht werden (z.B. aufgrund "
+"einer DSGVO-Löschanfrage), kann Sie dies in Zammad veranlassen. Wenden Sie "
+"sich an Ihren Zammad-Administrator und bitten Sie ihn, die Löschung "
+"vorzunehmen."
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:121
 #, no-wrap
-msgid "Either [mention a colleague](advanced-features#mention-a-colleague) in an article by using `@@` and raise your question.\n"
-msgstr "Entweder Sie [erwähnen](advanced-features#erwahnen-von-kollegen) Kollegen in einem Artikel, indem Sie `@@` verwenden und Ihre Frage stellen.\n"
+msgid "How to use text templates?"
+msgstr "Wie verwendet man Textbausteine?"
 
-#. type: Fenced div block (details How to cite the customer's email or parts of it?)
+#. type: Plain text
+#: src/en/documentation/use/faq.md:125
+msgid ""
+"Use Zammad's [text modules](advanced-features#text-modules) by typing [[:]]"
+"[[:]] in the article editor or choose it from the editor toolbar. If you "
+"need to have additional modules, ask your Zammad admin to add it for you."
+msgstr ""
+"Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine), "
+"indem Sie im Artikel-Editor [[:]][[:]] eingeben. Wenn Sie\n"
+"zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, "
+"sie für Sie hinzuzufügen."
+
+#. type: Title ###
 #: src/en/documentation/use/faq.md:126
 #, no-wrap
+msgid "How to ask a colleague for help in the ticket?"
+msgstr "Wie kann man einen Kollegen im Ticket um Hilfe bitten?"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:131
+#, fuzzy
+#| msgid ""
+#| "The best way to do this is to [mention a colleague](advanced-"
+#| "features#mention-a-colleague) in an article by using\n"
+#| "[[@]][[@]] and raise your question. This triggers a notification for your "
+#| "colleague. Depending on your internal\n"
+#| "processes, switching the owner of the ticket could also be a possible "
+#| "option.\n"
 msgid ""
-"To partially or selective cite the article or parts of it, mark the text, you want to cite, and click on the **Reply**\n"
-"button next to the article. This can be done even multiple times (e.g. to answer different parts of the ticket).\n"
-"\n"
-"The citation of the whole article depends on how your Zammad is configured. If you want to apply changes to this\n"
-"behavior, ask your admin to change it.\n"
+"The best way to do this is to [mention a colleague](advanced-"
+"features#mention-a-colleague) in an article by using [[@]][[@]] and raise "
+"your question. This triggers a notification for your colleague. Depending on "
+"your internal processes, switching the owner of the ticket could also be a "
+"possible option."
 msgstr ""
-"Um den Artikel oder Teile davon zu zitieren, markieren Sie den Text, den Sie zitieren möchten, und klicken Sie auf **Antworten**\n"
-"unter dem Artikel. Dies kann auch mehrfach geschehen (z.B. um verschiedene Teile des Tickets blockweise zu beantworten).\n"
+"Das geht am besten, indem Sie mit [[@]][[@]] einen Kollegen in einem Artikel "
+"[erwähnen](advanced-features#erwahnen-von-kollegen)\n"
+"und Ihre Frage stellen. Dadurch wird Ihr Kollege benachrichtigt. Abhängig "
+"von Ihren internen\n"
+"Abläufen könnte auch ein Wechsel des Besitzers des Tickets eine Option "
+"sein.\n"
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:132
+#, no-wrap
+msgid "How to cite the customer's email or parts of it?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:136
+#, fuzzy
+#| msgid ""
+#| "To partially or selective cite the article or parts of it, mark the text, "
+#| "you want to cite, and click on the `Reply`\n"
+#| "button next to the article. This can be done even multiple times (e.g. to "
+#| "answer different parts of the ticket).\n"
+#| "\n"
+#| "The citation of the whole article depends on how your Zammad is "
+#| "configured. If you want to apply changes to this\n"
+#| "behavior, ask your admin to change it.\n"
+msgid ""
+"To partially or selective cite the article or parts of it, mark the text, "
+"you want to cite, and click on the `Reply` button next to the article. This "
+"can be done even multiple times (e.g. to answer different parts of the "
+"ticket)."
+msgstr ""
+"Um den Artikel oder Teile davon zu zitieren, markieren Sie den Text, den Sie "
+"zitieren möchten, und klicken Sie auf `Antworten`\n"
+"unter dem Artikel. Dies kann auch mehrfach geschehen (z.B. um verschiedene "
+"Teile des Tickets blockweise zu beantworten).\n"
 "\n"
-"Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad konfiguriert ist. Wenn Sie dieses\n"
+"Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad "
+"konfiguriert ist. Wenn Sie dieses\n"
 "Verhalten ändern möchten, bitten Sie Ihren Administrator darum.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:138
+msgid ""
+"The citation of the whole article depends on how your Zammad is configured. "
+"If you want to apply changes to this behavior, ask your admin to change it."
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/use/general.md:6 src/en/documentation/use/index.md:1
@@ -3461,46 +3684,42 @@ msgstr ""
 "Zusammenfassung die folgenden Abschnitte:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 msgid "Customer intent"
 msgstr "Anliegen des Kunden"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 msgid "Conversation summary"
 msgstr "Zusammenfassung der Konversation"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
+#: src/en/documentation/use/guides/ai.md:35
 msgid "Open questions (optional)"
 msgstr "Offene Fragen (optional)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:34
-msgid "Suggested next steps (optional)"
-msgstr "Vorgeschlagene nächste Schritte (optional)"
+#: src/en/documentation/use/guides/ai.md:35
+#, fuzzy
+#| msgid "Open questions (optional)"
+msgid "Upcoming events (optional)"
+msgstr "Offene Fragen (optional)"
 
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:37
-msgid ""
-"If suggested next steps and the checklist feature are activated, you can "
-"even add single items or all the suggested next steps to a [checklist](../"
-"advanced-features#checklists) to keep track of the open tasks in this ticket."
-msgstr ""
-"Wenn die vorgeschlagenen nächsten Schritte und die Checklistenfunktion "
-"aktiviert sind, können Sie sogar einzelne Elemente oder alle vorgeschlagenen "
-"nächsten Schritte zu einer [Checkliste](../advanced-features#checklists) "
-"hinzufügen, um den Überblick über die offenen Aufgaben in diesem Ticket zu "
-"behalten."
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:35
+#, fuzzy
+#| msgid "Customer intent"
+msgid "Customer sentiment (optional)"
+msgstr "Anliegen des Kunden"
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:38
+#: src/en/documentation/use/guides/ai.md:36
 #, no-wrap
 msgid "AI Assistant Text Tools"
 msgstr "KI-Assistent Text-Werkzeuge"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:42
+#: src/en/documentation/use/guides/ai.md:40
 msgid ""
 "The new AI-powered smart editor is designed to simplify and enhance your "
 "ticket response workflow. It helps you with text tools while you create an "
@@ -3511,7 +3730,7 @@ msgstr ""
 "Ihnen mit Text-Tools, während Sie einen Artikel erstellen."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:44
 msgid ""
 "To use any of the following features, you first have to select text you want "
 "to apply the changes to. After that, click the **AI Assistant text tools** "
@@ -3525,7 +3744,7 @@ msgstr ""
 "durchführen möchten."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:48
+#: src/en/documentation/use/guides/ai.md:46
 msgid ""
 "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-"
 "guide-ai.cy.js/ai-ticket-smart-editor.png)"
@@ -3534,7 +3753,7 @@ msgstr ""
 "guide-ai.cy.js/ai-ticket-smart-editor.png)"
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:49
+#: src/en/documentation/use/guides/ai.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -3552,7 +3771,7 @@ msgstr ""
 "\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 msgid ""
 "**Improve writing**: Uses your text as a base and tries to improve it by "
 "enhancing clarity, conciseness and structure as well as removing "
@@ -3563,7 +3782,7 @@ msgstr ""
 "und Grammatikfehler zu beseitigen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 msgid ""
 "**Fix spelling and grammar**: Just proofreads your text and automatically "
 "removes spelling and grammar mistakes."
@@ -3572,7 +3791,7 @@ msgstr ""
 "automatisch Rechtschreib- und Grammatikfehler."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 msgid ""
 "**Expand**: Expands your text while keeping your message. Useful if your "
 "customer expects more than some bullet points as an answer. You can even use "
@@ -3586,7 +3805,7 @@ msgstr ""
 "schreiben lassen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:65
+#: src/en/documentation/use/guides/ai.md:63
 msgid ""
 "**Simplify**: Does the opposite of the expansion and shrinks your text while "
 "keeping your message."
@@ -3595,13 +3814,13 @@ msgstr ""
 "und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:64
 #, no-wrap
 msgid "AI Agents"
 msgstr "KI-Agenten"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:70
+#: src/en/documentation/use/guides/ai.md:68
 msgid ""
 "This is no feature which allows any agent interaction. However, if the "
 "feature is configured, you may notice it at some points. This is why you can "
@@ -3612,7 +3831,7 @@ msgstr ""
 "bemerken. Deshalb finden Sie hier eine Erklärung."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:73
+#: src/en/documentation/use/guides/ai.md:71
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. You "
 "may notice the AI agents at different locations:"
@@ -3622,13 +3841,13 @@ msgstr ""
 "Stellen bemerken:"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:74
+#: src/en/documentation/use/guides/ai.md:72
 #, no-wrap
 msgid "Ticket History"
 msgstr "Ticket-Historie"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:76
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -3640,12 +3859,12 @@ msgstr ""
 "Sie Ihren Zammad-Administrator."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:78
 msgid "Example of a history entry of an AI agent:"
 msgstr "Beispiel für einen Eintrag in die Ticket-Historie eines KI Agenten:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:82
+#: src/en/documentation/use/guides/ai.md:80
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
 "ticket-history.png)"
@@ -3654,7 +3873,7 @@ msgstr ""
 "ticket-history.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:86
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
@@ -3668,25 +3887,25 @@ msgstr ""
 "Moment oder wechseln Sie zu einem anderen Ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:88
 msgid "Avatar of AI agent:"
 msgstr "Avatar eines KI Agenten:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:92
+#: src/en/documentation/use/guides/ai.md:90
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
 msgstr ""
 "![Screenshot zeigt Avatar eines KI-Agenten](/screenshots/ai/ai-live-user.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:91
 #, no-wrap
 msgid "Overview Indicator"
 msgstr "Indikator in Übersichten"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:96
+#: src/en/documentation/use/guides/ai.md:94
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
@@ -3696,7 +3915,7 @@ msgstr ""
 "Farbverlauf:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:97
+#: src/en/documentation/use/guides/ai.md:95
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
@@ -3834,17 +4053,16 @@ msgstr "Text zitieren"
 msgid ""
 "You may want to quote text of your customer to exactly refer your answer to "
 "and your customer doesn't lose track in long conversations. To use this "
-"feature, simply select the text you want to cite and click on the **reply** "
-"or **forward** button next to the article. If you already inserted text, it "
-"gets preserved and the selected text gets inserted additionally. This means "
-"you can repeat this to cite different sections without losing your written "
-"text."
+"feature, simply select the text you want to cite and click on the `reply` or "
+"`forward` button next to the article. If you already inserted text, it gets "
+"preserved and the selected text gets inserted additionally. This means you "
+"can repeat this to cite different sections without losing your written text."
 msgstr ""
 "Möglicherweise möchten Sie einen Text Ihres Kunden zitieren, um Ihre Antwort "
 "genau darauf zu beziehen, und damit Ihre Kunden langen Konversationen nicht "
 "den Überblick verlieren. Um diese Funktion zu nutzen, markieren Sie einfach "
 "den Text, den Sie zitieren möchten, und klicken Sie auf die Schaltfläche "
-"**Antworten** oder **Weiterleiten** neben dem Artikel. Wenn Sie bereits Text "
+"`Antworten` oder `Weiterleiten` neben dem Artikel. Wenn Sie bereits Text "
 "eingefügt haben, bleibt dieser erhalten und der ausgewählte Text wird "
 "zusätzlich eingefügt. Das bedeutet, dass Sie diesen Vorgang wiederholen "
 "können, um verschiedene Abschnitte zu zitieren, ohne dass Ihr geschriebener "
@@ -4274,11 +4492,11 @@ msgstr ""
 #: src/en/documentation/use/guides/mobile-view.md:89
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
-"**Sign in** button to explicitly switch to the other view (see login "
+"`Sign in` button to explicitly switch to the other view (see login "
 "screenshot from above as an example)."
 msgstr ""
 "Sowohl in der Desktop- als auch in der Mobilansicht finden Sie unter der "
-"Schaltfläche **Anmelden** einen Link, über den Sie explizit in die andere "
+"Schaltfläche `Anmelden` einen Link, über den Sie explizit in die andere "
 "Ansicht wechseln können (siehe Login-Screenshot von oben als Beispiel)."
 
 #. type: Plain text
@@ -5326,14 +5544,14 @@ msgstr ""
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
 "invalidates already existing recovery codes and provides you with a list of "
-"fresh codes. You can do this by clicking on **Regenerate recovery codes** "
+"fresh codes. You can do this by clicking on `Regenerate recovery codes` "
 "button in your profile's 2FA settings."
 msgstr ""
 "Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu "
 "zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig "
 "werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun, "
 "indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche "
-"**Wiederherstellungs-Codes neu erzeugen** klicken."
+"`Wiederherstellungs-Codes neu erzeugen` klicken."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/two-factor-auth.md:136
@@ -5725,12 +5943,12 @@ msgstr "Token-Zugriff"
 #: src/en/documentation/use/manage-profile.md:99
 msgid ""
 "Generate a personal access token for a third party application to access the "
-"Zammad API. After clicking the **New Personal Access Token** button, you can "
+"Zammad API. After clicking the `New Personal Access Token` button, you can "
 "set a name, an expiration date and configure the permissions for this token."
 msgstr ""
 "Generieren Sie einen persönlichen Zugangs-Token für eine Anwendung eines "
 "Drittanbieters für den Zugriff auf die Zammad API. Nachdem Sie auf die "
-"Schaltfläche **Neuer persönlicher Zugangs-Token** geklickt haben, können Sie "
+"Schaltfläche `Neuer persönlicher Zugangs-Token` geklickt haben, können Sie "
 "einen Namen und ein Ablaufdatum festlegen und die Berechtigungen für diesen "
 "Token konfigurieren."
 
@@ -6112,13 +6330,13 @@ msgstr "Über Übersichten"
 #: src/en/documentation/use/start-using-zammad.md:84
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
-"overview section. You can either open it by clicking the **Overviews** "
-"button in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"overview section. You can either open it by clicking the `Overviews` button "
+"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
 "overviews as a kind of ticket lists."
 msgstr ""
 "Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie "
 "zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch "
-"Klicken auf die Schaltfläche **Übersichten** in der Navigationsleiste öffnen "
+"Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen "
 "oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine "
 "Art von Ticket-Listen betrachten."
 
@@ -6372,15 +6590,15 @@ msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket. "
 "In case you need to have an information from another colleague, you can "
 "either change to owner to this person or mention the person in an article by "
-"typing `@@` and selecting the user. In the later case, the user gets "
+"typing [[@]][[@]] and selecting the user. In the later case, the user gets "
 "notified and is automatically subscribed to receive notifications on ticket "
 "updates."
 msgstr ""
 "**Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich "
 "ist. Falls Sie eine Information von einem anderen Kollegen benötigen, können "
 "Sie entweder den Besitzer auf diese Person ändern oder sie in einem Artikel "
-"erwähnen, indem Sie `@@` eingeben und den Benutzer auswählen. Im letzteren "
-"Fall wird der Benutzer benachrichtigt und erhält automatisch "
+"erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. Im "
+"letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
 "Benachrichtigungen über Aktualisierungen von Tickets."
 
 #. type: Bullet: '- '
@@ -6418,7 +6636,7 @@ msgid ""
 "(which created the ticket) at the top, the newest at the bottom. Depending "
 "on the article type, Zammad offers you different ways to react. For text "
 "communication based articles, you can directly create an answer by using the "
-"**reply** button below the article or use the **forward** feature. The "
+"`reply` button below the article or use the `forward` feature. The "
 "integrated text editor is intuitive and includes buttons in the toolbar to "
 "format your text and insert objects like tables or images. If you want to "
 "learn more about the editor, the [editor guide](guides/editor) includes "
@@ -6430,12 +6648,11 @@ msgstr ""
 "ganz unten. Je nach Art des Artikels bietet Ihnen Zammad verschiedene "
 "Reaktionsmöglichkeiten an. Bei Artikeln, die auf Textkommunikation basieren, "
 "können Sie direkt eine Antwort verfassen, indem Sie die Schaltfläche "
-"**Antwort** unterhalb des Artikels verwenden oder die Funktion "
-"**Weiterleiten** nutzen. Der integrierte Texteditor ist intuitiv und enthält "
-"Schaltflächen in der Symbolleiste, um Ihren Text zu formatieren und Objekte "
-"wie Tabellen oder Bilder einzufügen. Wenn Sie mehr über den Editor erfahren "
-"möchten, finden Sie im [Editor-Leitfaden](guides/editor) zusätzliche "
-"Informationen."
+"`Antwort` unterhalb des Artikels verwenden oder die Funktion `Weiterleiten` "
+"nutzen. Der integrierte Texteditor ist intuitiv und enthält Schaltflächen in "
+"der Symbolleiste, um Ihren Text zu formatieren und Objekte wie Tabellen oder "
+"Bilder einzufügen. Wenn Sie mehr über den Editor erfahren möchten, finden "
+"Sie im [Editor-Leitfaden](guides/editor) zusätzliche Informationen."
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:165
@@ -6457,18 +6674,18 @@ msgstr "Aktualisierung Ihres Tickets"
 #: src/en/documentation/use/start-using-zammad.md:172
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
-"change the state of the ticket, you can see a highlighted **Update** button "
-"in the right footer. By clicking it, your changes are applied and if you "
+"change the state of the ticket, you can see a highlighted `Update` button in "
+"the right footer. By clicking it, your changes are applied and if you "
 "created an answer, it is now sent out to the customer. If you consider the "
 "issue as resolved, you should set the state to _closed_ now."
 msgstr ""
 "Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen "
 "Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in "
-"der rechten Fußzeile eine hervorgehobene Schaltfläche **Aktualisieren**. "
-"Wenn Sie auf diese Schaltfläche klicken, werden Ihre Änderungen übernommen, "
-"und wenn Sie eine Antwort erstellt haben, wird diese nun an den Kunden "
-"gesendet. Wenn Sie das Problem als gelöst betrachten, sollten Sie den Status "
-"auf _geschlossen_ setzen."
+"der rechten Fußzeile eine hervorgehobene Schaltfläche `Aktualisieren`. Wenn "
+"Sie auf diese Schaltfläche klicken, werden Ihre Änderungen übernommen, und "
+"wenn Sie eine Antwort erstellt haben, wird diese nun an den Kunden gesendet. "
+"Wenn Sie das Problem als gelöst betrachten, sollten Sie den Status auf "
+"_geschlossen_ setzen."
 
 #. type: Title ##
 #: src/en/documentation/use/start-using-zammad.md:173
@@ -7107,12 +7324,11 @@ msgstr "Schritt 3: Starten des Stacks"
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:62
 msgid ""
-"Finally, click **Deploy the stack** button. The first time, it may take some "
+"Finally, click `Deploy the stack` button. The first time, it may take some "
 "time until the Docker images are fetched."
 msgstr ""
-"Klicken Sie schließlich auf die Schaltfläche **Deploy the stack**. Beim "
-"ersten Mal kann es einige Zeit dauern, bis die Docker-Images abgerufen "
-"werden."
+"Klicken Sie schließlich auf die Schaltfläche `Deploy the stack`. Beim ersten "
+"Mal kann es einige Zeit dauern, bis die Docker-Images abgerufen werden."
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:65
@@ -7322,7 +7538,7 @@ msgid ""
 "=== Via Portainer GUI\n"
 "\n"
 "In your Portainer GUI, go to the container view and select the running rails container from your Zammad stack. Click\n"
-"on the **Exec Console** icon in the \"Quick Actions\" column and on the **Connect** button.\n"
+"on the **Exec Console** icon in the \"Quick Actions\" column and on the `Connect` button.\n"
 "\n"
 "![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
 "\n"
@@ -7363,7 +7579,7 @@ msgstr ""
 "=== Via Portainer GUI\n"
 "\n"
 "Suchen Sie den laufenden Rails-Container In der Portainer GUI und klicken Sie auf das\n"
-"**Exec Console** Icon in der Spalte \"Quick Actions\" und auf den **Connect** Button.\n"
+"**Exec Console** Icon in der Spalte \"Quick Actions\" und auf den `Connect` Button.\n"
 "\n"
 "![Portainer Ausführung Console](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
 "\n"
@@ -7419,12 +7635,12 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:178
 #: src/en/reference/rest-api/calendar.md:42
 #: src/en/reference/rest-api/calendar.md:63
-#: src/en/reference/rest-api/checklist.md:55
-#: src/en/reference/rest-api/checklist.md:76
-#: src/en/reference/rest-api/checklist.md:123
-#: src/en/reference/rest-api/checklist.md:144
-#: src/en/reference/rest-api/checklist.md:192
-#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:47
+#: src/en/reference/rest-api/checklist.md:68
+#: src/en/reference/rest-api/checklist.md:115
+#: src/en/reference/rest-api/checklist.md:136
+#: src/en/reference/rest-api/checklist.md:184
+#: src/en/reference/rest-api/checklist.md:206
 #: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
@@ -7554,14 +7770,21 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:20
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Distribution  | Version             |\n"
+#| "| ------------- | :-----------------  |\n"
+#| "| CentOS/RHEL   | 8 & 9               |\n"
+#| "| Debian        | 11 & 12             |\n"
+#| "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
+#| "| Ubuntu        | 20.04, 22.04, 24.04 |\n"
 msgid ""
 "| Distribution  | Version             |\n"
 "| ------------- | :-----------------  |\n"
 "| CentOS/RHEL   | 8 & 9               |\n"
 "| Debian        | 11 & 12             |\n"
 "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
-"| Ubuntu        | 20.04, 22.04, 24.04 |\n"
+"| Ubuntu        | 22.04, 24.04        |\n"
 msgstr ""
 "| Distribution  | Version             |\n"
 "| ------------- | :-----------------  |\n"
@@ -7887,7 +8110,33 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:172
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 20.04\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 22.04\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 24.04\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -7896,13 +8145,6 @@ msgid ""
 "```sh\n"
 "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
 "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-"```\n"
-"\n"
-"Ubuntu 20.04\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
 "Ubuntu 22.04\n"
@@ -8122,13 +8364,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:282
+#: src/en/get-started/installation/package.md:275
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Zammad installieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:284
+#: src/en/get-started/installation/package.md:277
 #, no-wrap
 msgid ""
 "\n"
@@ -8220,13 +8462,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:323
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Zammad Services verwalten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/installation/package.md:327
 msgid ""
 "Zammad uses three services. They can be (re)started & stopped with the "
 "parent `zammad`:"
@@ -8235,47 +8477,47 @@ msgstr ""
 "`zammad` (neu) gestartet und gestoppt werden:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:335
+#: src/en/get-started/installation/package.md:328
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad\n"
 msgstr "systemctl (status|start|stop|restart) zammad\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:333
 msgid "Only internal puma server (relevant for displaying the web app):"
 msgstr "Nur interner Puma-Server (relevant zum Anzeigen der Web-App):"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:334
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-web\n"
 msgstr "systemctl (status|start|stop|restart) zammad-web\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:339
 msgid "Only background worker - relevant for all delayed- and background jobs:"
 msgstr ""
 "Nur Background Worker - relevant für alle verzögerten und Hintergrund-Jobs:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:347
+#: src/en/get-started/installation/package.md:340
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-worker\n"
 msgstr "systemctl (status|start|stop|restart) zammad-worker\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:345
 msgid "Only websocket server for session related information:"
 msgstr "Nur Websocket-Server für sitzungsbezogene Informationen:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:346
 #, no-wrap
 msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
 msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:350
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:170
 #, no-wrap
@@ -8283,7 +8525,7 @@ msgid "Next Steps"
 msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:362
+#: src/en/get-started/installation/package.md:355
 msgid ""
 "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
 "config-elasticsearch))"
@@ -8292,7 +8534,7 @@ msgstr ""
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:362
+#: src/en/get-started/installation/package.md:355
 msgid ""
 "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-"
 "selinux))"
@@ -8301,20 +8543,20 @@ msgstr ""
 "tutorials/firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:362
+#: src/en/get-started/installation/package.md:355
 msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgstr ""
 "Konfigurieren Sie den Webserver ([Basis Anleitung](/de/tutorials/webserver-"
 "config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:363
+#: src/en/get-started/installation/package.md:356
 #, no-wrap
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:369
+#: src/en/get-started/installation/package.md:362
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -8327,62 +8569,61 @@ msgstr ""
 "Elasticsearch, das nicht automatisch installiert wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:368
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:368
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:368
 #: src/en/reference/docker-env-vars.md:110
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:368
 #: src/en/reference/docker-env-vars.md:136
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
 
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:375
+#. type: Title ###
+#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:393
+#, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:376
+#: src/en/get-started/installation/package.md:369
 #, no-wrap
 msgid "Database Server"
 msgstr "Datenbank-Server"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:380
+#: src/en/get-started/installation/package.md:374
+#, fuzzy
+#| msgid ""
+#| "Zammad stores its content in a database. The supported database system is "
+#| "[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer."
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
-"[PostgreSQL](https://www.postgresql.org/){target=_blank} 10 or newer."
+"[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
+"PostgreSQL server could be detected, it will be installed automatically "
+"during the package installation."
 msgstr ""
 "Zammad speichert den Inhalt in einer Datenbank. Das unterstützte "
 "Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank} "
 "10 oder neuer."
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:382
-msgid ""
-"If no PostgreSQL server could be detected, it will be installed "
-"automatically during the package installation."
-msgstr ""
-"Wenn kein PostgreSQL-Server gefunden werden konnte, wird er automatisch "
-"während der Paketinstallation installiert."
-
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:375
 #: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
@@ -8397,28 +8638,28 @@ msgstr ""
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:390
+#: src/en/get-started/installation/package.md:382
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:393
+#: src/en/get-started/installation/package.md:385
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:388
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:388
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:392
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -8430,14 +8671,24 @@ msgstr ""
 "installiert.  Eine Grundkonfiguration finden Sie in unserem [Webserver-"
 "Tutorial](/de/tutorials/webserver-config)."
 
+#. type: Plain text
+#: src/en/get-started/installation/package.md:398
+msgid ""
+"[Redis](https://redis.io/) is required for realtime communication via web "
+"socket. Zammad requires Redis 6 or newer.  The installation and "
+"configuration is out of scope of this documentation. Please follow the "
+"official guides and ensure to set it up in a secure way or consider another "
+"installation method or Zammad's hosting services."
+msgstr ""
+
 #. type: Title ###
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:399
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:408
+#: src/en/get-started/installation/package.md:406
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -8453,12 +8704,12 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:410
+#: src/en/get-started/installation/package.md:408
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Fenced div block (details Elasticsearch version history)
-#: src/en/get-started/installation/package.md:411
+#: src/en/get-started/installation/package.md:409
 #, no-wrap
 msgid ""
 "\n"
@@ -8490,7 +8741,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:430
+#: src/en/get-started/installation/package.md:428
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -8501,13 +8752,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:431
+#: src/en/get-started/installation/package.md:429
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:433
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -8520,7 +8771,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:437
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -8535,7 +8786,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:442
+#: src/en/get-started/installation/package.md:440
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -8548,7 +8799,7 @@ msgstr ""
 "vars.html#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:445
+#: src/en/get-started/installation/package.md:443
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -8560,13 +8811,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:446
+#: src/en/get-started/installation/package.md:444
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:451
+#: src/en/get-started/installation/package.md:449
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -8711,9 +8962,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
-#: src/en/reference/rest-api/checklist.md:70
-#: src/en/reference/rest-api/checklist.md:138
-#: src/en/reference/rest-api/checklist.md:207
+#: src/en/reference/rest-api/checklist.md:62
+#: src/en/reference/rest-api/checklist.md:130
+#: src/en/reference/rest-api/checklist.md:199
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
@@ -9058,12 +9309,12 @@ msgstr "Docker-Installation aktualisieren"
 #, no-wrap
 msgid ""
 "Docker compose stack updates may require extra steps or introduce breaking\n"
-"changes. Always check the docker compose release notes for updating\n"
-"instructions first.\n"
+"changes. Always check the [docker compose release notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
+"for update instructions first.\n"
 msgstr ""
 "Aktualisierungen des Docker Compose Stacks können zusätzliche Schritte erfordern\n"
-"oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die Docker Compose\n"
-"Versionshinweise auf Hinweise für die Aktualisierungen.\n"
+"oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die [Docker Compose Release-Notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
+"auf Hinweise für die Aktualisierungen.\n"
 
 #. type: Title ###
 #: src/en/get-started/update.md:160
@@ -10216,10 +10467,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/console.md:348
 msgid ""
-"Setting this to ``false`` might only make sense in very rare cases and you "
+"Setting this to `false` might only make sense in very rare cases and you "
 "have to restart the Zammad services then manually."
 msgstr ""
-"Die Einstellung ``false`` macht nur in sehr seltenen Fällen Sinn und Sie "
+"Die Einstellung `false` macht nur in sehr seltenen Fällen Sinn und Sie "
 "müssen die Zammad Dienste dann manuell neu starten."
 
 #. type: Fenced code block (ruby)
@@ -11842,7 +12093,7 @@ msgid ""
 "\n"
 "Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.\n"
 "\n"
-"Below the \"Compose path\" field, click on the **Add file** button. This opens the \"Additional paths\" section where you\n"
+"Below the \"Compose path\" field, click on the `Add file` button. This opens the \"Additional paths\" section where you\n"
 "can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in\n"
 "`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.\n"
 "\n"
@@ -11866,7 +12117,7 @@ msgstr ""
 "\n"
 "Folgen Sie der [allgemeinen Einrichtung](/de/get-started/installation/docker) und nehmen Sie die folgenden Änderungen vor.\n"
 "\n"
-"Unter dem Feld \"Compose path\" klicken Sie auf die Schaltfläche **Add file**. Dadurch wird der Abschnitt \"Additional paths\" geöffnet, in dem Sie\n"
+"Unter dem Feld \"Compose path\" klicken Sie auf die Schaltfläche `Add file`. Dadurch wird der Abschnitt \"Additional paths\" geöffnet, in dem Sie\n"
 "das gewünschte Szenario angeben können. Fügen Sie `scenarios/{Szenario, das Sie verwenden möchten}.yml` hinzu und ersetzen Sie den letzten Teil in\n"
 "`{}`-Klammern durch den Namen einer der Szenariodateien. Sie können die Szenarien sogar kombinieren, indem Sie zusätzliche Pfade hinzufügen.\n"
 "\n"
@@ -12287,12 +12538,12 @@ msgstr "Dies ist für Entwicklungs- oder Testzwecke gedacht, da der Betrieb eine
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
 "`scenarios/add-ollama.yml`. This creates an Ollama container which "
-"automatically pulls and serves ``Llama3.2`` to be ready to use/test AI "
+"automatically pulls and serves `Llama3.2` to be ready to use/test AI "
 "features out of the box."
 msgstr ""
 "Um einen Ollama-Container innerhalb des Zammad Stacks einzusetzen, verwenden "
 "Sie die Szenario-Datei `scenarios/add-ollama.yml`. Dadurch wird ein Ollama-"
-"Container erstellt, der automatisch ``Llama3.2`` abruft und bereitstellt, um "
+"Container erstellt, der automatisch `Llama3.2` abruft und bereitstellt, um "
 "KI-Funktionen sofort nutzen und testen zu können."
 
 #. type: Plain text
@@ -12316,7 +12567,7 @@ msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
 "use, use the `scenarios/apply-resource-limits.yml` scenario. Default values "
 "for CPU and memory usage for each container in the stack are applied then. "
-"You can find these default values in the ``.env.dist`` file. Provide the "
+"You can find these default values in the `.env.dist` file. Provide the "
 "changed variables you want to use as environment variables and deploy the "
 "stack."
 msgstr ""
@@ -13361,12 +13612,6 @@ msgstr "  Format / Beispiel:\n"
 #, no-wrap
 msgid "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 msgstr "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
-
-#. type: Yaml Front Matter Array Element: outline
-#: src/en/reference/es-indexed-attributes.md:1
-#, no-wrap
-msgid "2"
-msgstr "2"
 
 #. type: Title #
 #: src/en/reference/es-indexed-attributes.md:1
@@ -17225,12 +17470,12 @@ msgstr ""
 msgid ""
 "Mentions\n"
 ": Mentions are a Zammad feature that allows you to tag another agent in a\n"
-"  ticket. Just type `@@` and the name. The selected person will be notified\n"
+"  ticket. Just type [[@]][[@]] and the name. The selected person will be notified\n"
 "  and will be watching the ticket from now on.\n"
 msgstr ""
 "Erwähnungen\n"
 ": Erwähnungen sind eine Funktion von Zammad, mit der Sie einen anderen Agenten in einem\n"
-"  Ticket markieren können. Geben Sie einfach `@@` und den Namen ein. Die ausgewählte Person\n"
+"  Ticket markieren können. Geben Sie einfach [[@]][[@]] und den Namen ein. Die ausgewählte Person\n"
 "  wird benachrichtigt und sie wird als Beobachter des Tickets eingetragen.\n"
 
 #. type: Plain text
@@ -17631,7 +17876,7 @@ msgstr ""
 #: src/en/reference/glossary.md:423
 #, no-wrap
 msgid ""
-"  Tags can be queried in conditions in an automation and also assigned\n"
+"  Tags can be queried in conditions in an automation and assigned\n"
 "  automatically, for example depending on keywords in the ticket title.\n"
 msgstr ""
 "  Tags können in Bedingungen in einer Automatisierung abgefragt werden und auch\n"
@@ -17644,18 +17889,18 @@ msgid ""
 "Text Module\n"
 ": If you find that you send the same answers over and over again,\n"
 "  you can save yourself a lot of work and create a text module.\n"
-"  This way, you just need to type the `::` shortcut in an article and all\n"
+"  This way, you just need to type the [[:]][[:]] shortcut in an article and all\n"
 "  available text modules are shown from which you can select the desired one.\n"
 "  You can limit the search results by adding parts of the text module's name,\n"
-"  keywords or content after the `::`.\n"
+"  keywords or content after the [[:]][[:]].\n"
 msgstr ""
 "Textbaustein\n"
 ": Wenn Sie feststellen, dass Sie immer wieder die gleichen Antworten senden\n"
 "  können Sie sich eine Menge Arbeit ersparen und einen Textbaustein erstellen.\n"
-"  Auf diese Weise brauchen Sie nur die Abkürzung `::` in einem Artikel einzugeben und alle\n"
+"  Auf diese Weise brauchen Sie nur die Abkürzung [[:]][[:]] in einem Artikel einzugeben und alle\n"
 "  verfügbaren Textbausteine werden angezeigt, aus denen Sie den gewünschten auswählen können.\n"
 "  Sie können die Suchergebnisse einschränken, indem Sie Teile des Namens des Textbausteins,\n"
-"  Schlüsselwörter oder Inhalte des Textbausteins nach dem `::` hinzufügen.\n"
+"  Schlüsselwörter oder Inhalte des Textbausteins nach dem [[:]][[:]] hinzufügen.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:434
@@ -18368,9 +18613,9 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rest-api/articles.md:128
 #: src/en/reference/rest-api/calendar.md:36
-#: src/en/reference/rest-api/checklist.md:49
-#: src/en/reference/rest-api/checklist.md:117
-#: src/en/reference/rest-api/checklist.md:186
+#: src/en/reference/rest-api/checklist.md:41
+#: src/en/reference/rest-api/checklist.md:109
+#: src/en/reference/rest-api/checklist.md:178
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -18595,8 +18840,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:24
 #: src/en/reference/rest-api/checklist.md:25
-#: src/en/reference/rest-api/checklist.md:105
-#: src/en/reference/rest-api/checklist.md:173
+#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -18692,9 +18937,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:78
-#: src/en/reference/rest-api/checklist.md:91
-#: src/en/reference/rest-api/checklist.md:159
-#: src/en/reference/rest-api/checklist.md:229
+#: src/en/reference/rest-api/checklist.md:83
+#: src/en/reference/rest-api/checklist.md:151
+#: src/en/reference/rest-api/checklist.md:221
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
@@ -18796,14 +19041,13 @@ msgstr "Um Elemente der Checkliste hinzuzufügen, verwenden Sie den Endpunkt [Ch
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:28
-#: src/en/reference/rest-api/checklist.md:40
-#: src/en/reference/rest-api/checklist.md:52
-#: src/en/reference/rest-api/checklist.md:73
-#: src/en/reference/rest-api/checklist.md:94
-#: src/en/reference/rest-api/checklist.md:108
-#: src/en/reference/rest-api/checklist.md:120
-#: src/en/reference/rest-api/checklist.md:141
-#: src/en/reference/rest-api/checklist.md:162
+#: src/en/reference/rest-api/checklist.md:44
+#: src/en/reference/rest-api/checklist.md:65
+#: src/en/reference/rest-api/checklist.md:86
+#: src/en/reference/rest-api/checklist.md:100
+#: src/en/reference/rest-api/checklist.md:112
+#: src/en/reference/rest-api/checklist.md:133
+#: src/en/reference/rest-api/checklist.md:154
 #: src/en/reference/rest-api/mentions.md:29
 #: src/en/reference/rest-api/mentions.md:58
 #: src/en/reference/rest-api/shared-draft.md:44
@@ -18828,36 +19072,19 @@ msgstr ""
 "<<< @/fixtures/rest-api/checklists/get-checklist-id-res.json\n"
 "\n"
 
-#. type: Title ###
+#. type: Fenced div block (tip)
 #: src/en/reference/rest-api/checklist.md:37
 #, no-wrap
-msgid "Show By Ticket"
-msgstr "Per Ticket anzeigen"
+msgid "You can find the `checklist_id` attribute of a ticket by sending a `GET` request to `/api/v1/tickets/{ticket id}`.\n"
+msgstr "Sie können das Attribut `checklist_id` eines Tickets finden, indem Sie eine `GET`-Anfrage an `/api/v1/tickets/{ticket id}` senden.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:42
-msgid "`GET`-Request sent: `/api/v1/checklists/by_ticket/{ticket id}`"
-msgstr "`GET`-Anfrage gesendet: `/api/v1/checklists/by_ticket/{ticket id}`"
-
-#. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:43
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:54
+#: src/en/reference/rest-api/checklist.md:46
 msgid "`POST`-Request sent: `/api/v1/checklists`"
 msgstr "`POST`-Anfrage gesendet: `/api/v1/checklists`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:55
+#: src/en/reference/rest-api/checklist.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -18881,12 +19108,12 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:75
+#: src/en/reference/rest-api/checklist.md:67
 msgid "`PATCH`-Request sent: `/api/v1/checklists/{checklist id}`"
 msgstr "`PATCH`-Anfrage gesendet: `/api/v1/checklists/{checklisten id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:76
+#: src/en/reference/rest-api/checklist.md:68
 #, no-wrap
 msgid ""
 "\n"
@@ -18910,12 +19137,12 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:96
+#: src/en/reference/rest-api/checklist.md:88
 msgid "`DELETE`-Request sent: `/api/v1/checklists/{checklist id}`"
 msgstr "`DELETE`-Anfrage gesendet: `/api/v1/checklists/{checklisten id}`"
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:89
 #, no-wrap
 msgid ""
 "\n"
@@ -18927,18 +19154,18 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/checklist.md:103
+#: src/en/reference/rest-api/checklist.md:95
 #, no-wrap
 msgid "Checklist Items"
 msgstr "Checklisten-Elemente"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:110
+#: src/en/reference/rest-api/checklist.md:102
 msgid "`GET`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr "`GET`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`"
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:111
+#: src/en/reference/rest-api/checklist.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -18950,12 +19177,12 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:122
+#: src/en/reference/rest-api/checklist.md:114
 msgid "`POST`-Request sent: `/api/v1/checklist_items`"
 msgstr "`POST`-Anfrage gesendet: `/api/v1/checklist_items`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:123
+#: src/en/reference/rest-api/checklist.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -18979,13 +19206,13 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:143
+#: src/en/reference/rest-api/checklist.md:135
 msgid "`PATCH`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr ""
 "`PATCH`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:144
+#: src/en/reference/rest-api/checklist.md:136
 #, no-wrap
 msgid ""
 "\n"
@@ -19009,13 +19236,13 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:164
+#: src/en/reference/rest-api/checklist.md:156
 msgid "`DELETE`-Request sent: `/api/v1/checklist_items/{checklist item id}`"
 msgstr ""
 "`DELETE`-Anfrage gesendet: `/api/v1/checklist_items/{checklist item id}`"
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/checklist.md:157
 #, no-wrap
 msgid ""
 "\n"
@@ -19027,25 +19254,25 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/checklist.md:171
+#: src/en/reference/rest-api/checklist.md:163
 #, no-wrap
 msgid "Checklist Templates"
 msgstr "Checklisten-Vorlagen"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:176
+#: src/en/reference/rest-api/checklist.md:168
 msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgstr "Erforderliche Berechtigung: `admin.checklists` oder `ticket.agent`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:179
+#: src/en/reference/rest-api/checklist.md:171
 msgid ""
 "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 "`GET`-Anfrage gesendet: `/api/v1/checklist_templates/{checklist template id}`"
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:180
+#: src/en/reference/rest-api/checklist.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -19057,19 +19284,19 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:189
-#: src/en/reference/rest-api/checklist.md:210
-#: src/en/reference/rest-api/checklist.md:232
+#: src/en/reference/rest-api/checklist.md:181
+#: src/en/reference/rest-api/checklist.md:202
+#: src/en/reference/rest-api/checklist.md:224
 msgid "Required permission: `admin.checklists`"
 msgstr "Erforderliche Berechtigung: `admin.checklists`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:191
+#: src/en/reference/rest-api/checklist.md:183
 msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
 msgstr "`POST`-Anfrage gesendet: `/api/v1/checklist_templates`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:192
+#: src/en/reference/rest-api/checklist.md:184
 #, no-wrap
 msgid ""
 "\n"
@@ -19093,7 +19320,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:213
+#: src/en/reference/rest-api/checklist.md:205
 msgid ""
 "`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
@@ -19101,7 +19328,7 @@ msgstr ""
 "id}`"
 
 #. type: Fenced div block (details Show request/response|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:206
 #, no-wrap
 msgid ""
 "\n"
@@ -19125,7 +19352,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:235
+#: src/en/reference/rest-api/checklist.md:227
 msgid ""
 "`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
@@ -19133,7 +19360,7 @@ msgstr ""
 "id}`"
 
 #. type: Fenced div block (details Show response)
-#: src/en/reference/rest-api/checklist.md:236
+#: src/en/reference/rest-api/checklist.md:228
 #, no-wrap
 msgid ""
 "\n"
@@ -24580,7 +24807,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/user.md:137
 msgid ""
-"Technically, you can delete users via ``/api/v1/users/{id}``. However, we "
+"Technically, you can delete users via `/api/v1/users/{id}`. However, we "
 "strongly encourage you to use the data privacy in Zammad's UI or the data "
 "privacy endpoint instead (see section below). Using one of them makes sure "
 "that related information like tickets are deleted as well."
@@ -24906,10 +25133,10 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:79
 #, no-wrap
 msgid ""
-"``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
+"`DEBUG` <Badge type=\"info\" text=\"no\"/>\n"
 ": Setting this option to `yes` will output useful debug messages.\n"
 msgstr ""
-"``DEBUG`` <Badge type=\"info\" text=\"no\"/>\n"
+"`DEBUG` <Badge type=\"info\" text=\"no\"/>\n"
 ": Wenn Sie diese Option auf ``yess`` setzen, werden nützliche Debug-Meldungen ausgegeben.\n"
 
 #. type: Fenced div block (warning)
@@ -26324,7 +26551,7 @@ msgid ""
 "   === Via Portainer\n"
 "\n"
 "   In your Portainer web UI, go to **Containers** in the left menu and\n"
-"   click the **Add container** button.\n"
+"   click the `Add container` button.\n"
 "\n"
 "   Add the following information:\n"
 "\n"
@@ -26332,7 +26559,7 @@ msgid ""
 "   - Image: `filebrowser/filebrowser`\n"
 "   - Map additional port: choose a port and map it to port `80` in the container.\n"
 "   - Advanced container settings:\n"
-"     - Switch to **Volumes** and click the **map additional volume** button.\n"
+"     - Switch to **Volumes** and click the `map additional volume` button.\n"
 "     - Enter `/srv` in the container section and select the volume containing `zammad-backup`\n"
 "   - Finally, click on **Deploy the container**.\n"
 "\n"
@@ -26350,7 +26577,7 @@ msgstr ""
 "   === Via Portainer\n"
 "\n"
 "   In Ihrer Portainer Web UI gehen Sie auf **Containers** im linken Menü und\n"
-"   klicken Sie auf die Schaltfläche **Add container**.\n"
+"   klicken Sie auf die Schaltfläche `Add container`.\n"
 "\n"
 "   Fügen Sie die folgenden Informationen hinzu:\n"
 "\n"
@@ -26358,7 +26585,7 @@ msgstr ""
 "   - Image: `filebrowser/filebrowser`\n"
 "   - Map additional port: Wählen Sie einen Port und ordnen Sie ihn dem Port `80` des Container zu.\n"
 "   - Advanced container settings:\n"
-"     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche **map additional volume**.\n"
+"     - Wechseln Sie zu **Volumes** und klicken Sie auf die Schaltfläche `map additional volume`.\n"
 "     - Geben Sie im Container-Abschnitt `/srv` ein und wählen Sie das Volume, das `zammad-backup` enthält.\n"
 "   - Klicken Sie schließlich auf **Deploy the container**.\n"
 "\n"
@@ -26942,10 +27169,10 @@ msgstr ""
 #: src/en/tutorials/first-steps.md:43
 #, no-wrap
 msgid ""
-"Zammad uses ``noreply@<your-fqdn>`` as sender address by default. SMTP setups\n"
+"Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP setups\n"
 "might fail - you can skip this step with choosing sendmail and adjust it later!\n"
 msgstr ""
-"Zammad verwendet standardmäßig ``noreply@<Ihre-fqdn>`` als Absenderadresse. Die SMTP-Einrichtung\n"
+"Zammad verwendet standardmäßig `noreply@<Ihre-fqdn>` als Absenderadresse. Die SMTP-Einrichtung\n"
 "kann hier fehlschlagen - Sie können diesen Schritt mit der Auswahl von sendmail überspringen und später anpassen!\n"
 
 #. type: Title ###
@@ -29793,14 +30020,9 @@ msgstr "[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:233
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[^1]: Some values are not available as time series information. This\n"
-#| "    means we can only display the _last_ value of the field in question.\n"
+#, no-wrap
 msgid "    means we can only display the _last_ value of the field in question.\n"
-msgstr ""
-"[^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Dies\n"
-"    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.\n"
+msgstr "    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.\n"
 
 #. type: Link reference
 #: src/en/tutorials/reporting-grafana.md:234
@@ -31331,12 +31553,12 @@ msgid ""
 "This guide is only relevant for package installations. During the "
 "installation, Zammad tries to automatically install a configuration file to "
 "your nginx.  You can find example configuration files for your webserver in "
-"the ``contrib/`` directory of your Zammad installation."
+"the `contrib/` directory of your Zammad installation."
 msgstr ""
 "Diese Anleitung ist nur für Paket-Installationen relevant. Während der "
 "Installation versucht Zammad, automatisch eine Konfigurationsdatei für Ihren "
 "nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren "
-"Webserver im Verzeichnis ``contrib/`` Ihrer Zammad-Installation."
+"Webserver im Verzeichnis `contrib/` Ihrer Zammad-Installation."
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:17
@@ -31359,15 +31581,15 @@ msgstr "SSL-Zertifikat anfordern"
 #: src/en/tutorials/webserver-config.md:24
 msgid ""
 "You have to use a named configuration which is not configured by default. To "
-"fix this, open the ``zammad.conf`` in your webserver's config directory and "
-"replace the ``server_name localhost`` (Nginx) or ``ServerName localhost`` "
+"fix this, open the `zammad.conf` in your webserver's config directory and "
+"replace the `server_name localhost` (Nginx) or `ServerName localhost` "
 "(Apache)  with your Zammad domain."
 msgstr ""
 "Sie müssen eine benannte Konfiguration verwenden, die standardmäßig nicht "
-"eingerichtet ist. Um dies zu tun, öffnen Sie die ``zammad.conf`` im "
-"Konfigurationsverzeichnis Ihres Webservers und ersetzen Sie den "
-"``server_name localhost`` (Nginx) oder den ``ServerName localhost`` (Apache) "
-"durch Ihre Zammad-Domain."
+"eingerichtet ist. Um dies zu tun, öffnen Sie die `zammad.conf` im "
+"Konfigurationsverzeichnis Ihres Webservers und ersetzen Sie den `server_name "
+"localhost` (Nginx) oder den `ServerName localhost` (Apache) durch Ihre "
+"Zammad-Domain."
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:26
@@ -31377,20 +31599,20 @@ msgstr "Die Konfigurationsverzeichnisse sind normalerweise:"
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:29
 msgid ""
-"Nginx: ``/etc/nginx/conf.d/``, ``/etc/nginx/vhosts.d/``, ``/etc/nginx/sites-"
-"available/``"
+"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
+"available/`"
 msgstr ""
-"Nginx: ``/etc/nginx/conf.d/``, ``/etc/nginx/vhosts.d/``, ``/etc/nginx/sites-"
-"available/``"
+"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
+"available/`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:29
 msgid ""
-"Apache: ``/etc/apache2/conf.d/``, ``/etc/httpd/vhosts.d/``, ``/etc/apache2/"
-"sites-available/``"
+"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/sites-"
+"available/`"
 msgstr ""
-"Apache: ``/etc/apache2/conf.d/``, ``/etc/httpd/vhosts.d/``, ``/etc/apache2/"
-"sites-available/``"
+"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/sites-"
+"available/`"
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:30
@@ -31421,18 +31643,18 @@ msgid ""
 "===certbot\n"
 "\n"
 "If not happened automatically, you have to install the nginx or apache plugin\n"
-"for certbot: ``python3-certbot-nginx`` or ``python3-certbot-apache``\n"
+"for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
 "\n"
 "During the first certbot run it will request additional information once.\n"
-"Replace ``<webserver>`` in below command by either ``apache``, ``httpd`` or\n"
-"``nginx`` to match your setup.\n"
+"Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
+"`nginx` to match your setup.\n"
 "\n"
 "```sh\n"
 "certbot --<webserver> -d zammad.example.com\n"
 "```\n"
 "\n"
 "Certbot will now attempt to issue a certificate for you. If successful,\n"
-"certbot will ask you if you want to ``[1] not redirect`` or ``[2] redirect``\n"
+"certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
 "automatically. You can choose to not redirect if you plan to use the sample\n"
 "configuration of Zammad.\n"
 "\n"
@@ -31447,8 +31669,8 @@ msgid ""
 "acme.sh --set-default-ca  --server letsencrypt\n"
 "```\n"
 "\n"
-"Issue your certificate and replace ``<webserver>`` in the following command\n"
-"with either ``apache`` or ``nginx`` or ``standalone`` for other webserver.\n"
+"Issue your certificate and replace `<webserver>` in the following command\n"
+"with either `apache` or `nginx` or `standalone` for other webserver.\n"
 "\n"
 "```sh\n"
 "acme.sh --issue --<webserver> -d zammad.example.com\n"
@@ -31456,10 +31678,10 @@ msgid ""
 "\n"
 "It is not recommended to use the stored certificates directly. You should\n"
 "install the certificate to a directory of your choice instead as you can see\n"
-"in the next command below. We’re using ``/etc/ssl/private/`` in this case,\n"
+"in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
 "but you can use any directory you like.\n"
 "\n"
-"Replace ``<webserver>`` with ``apache2``, ``httpd`` or ``nginx``.\n"
+"Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
@@ -31478,19 +31700,19 @@ msgstr ""
 "\n"
 "Falls nicht automatisch geschehen, müssen Sie das nginx- oder apache-Plugin für certbot\n"
 "installieren:\n"
-"``python3-certbot-nginx`` oder ``python3-certbot-apache``\n"
+"`python3-certbot-nginx`` oder ``python3-certbot-apache`\n"
 "\n"
 "Während des ersten certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.\n"
-"Ersetzen Sie ``<webserver>`` im folgenden Befehl entweder durch ``apache``, ``httpd`` oder\n"
-"``nginx``, je nach Ihrer Konfiguration.\n"
+"Ersetzen Sie `<webserver>` im folgenden Befehl entweder durch `apache`, `httpd` oder\n"
+"`nginx`, je nach Ihrer Konfiguration.\n"
 "\n"
 "```sh\n"
 "certbot --<webserver> -d zammad.example.com\n"
 "```\n"
 "\n"
 "Certbot wird nun versuchen, ein Zertifikat für Sie auszustellen. Falls erfolgreich,\n"
-"wird certbot Sie fragen, ob Sie ``[1] nicht umleiten`` oder automatisch ``[2] umleiten`` wollen.\n"
-"Sie können \"nicht umzuleiten\" wählen, wenn Sie unserem Beispiel folgen wollen.\n"
+"wird certbot Sie fragen, ob Sie `[1] nicht umleiten` oder automatisch `[2] umleiten` wollen.\n"
+"Sie können `nicht umleiten` wählen, wenn Sie unserem Beispiel folgen wollen.\n"
 "\n"
 "Von nun an erneuert certbot automatisch Ihre installierten Zertifikate, wenn\n"
 "sie noch 30 Tage oder kürzer gültig sind.\n"
@@ -31503,8 +31725,8 @@ msgstr ""
 "acme.sh --set-default-ca --server letsencrypt\n"
 "```\n"
 "\n"
-"Stellen Sie Ihr Zertifikat aus und ersetzen Sie ``<webserver>`` in dem folgenden Befehl\n"
-"entweder durch ``apache`` oder ``nginx`` oder ``standalone`` für andere Webserver.\n"
+"Stellen Sie Ihr Zertifikat aus und ersetzen Sie `<webserver>` in dem folgenden Befehl\n"
+"entweder durch `apache` oder `nginx` oder `standalone` für andere Webserver.\n"
 "\n"
 "```sh\n"
 "acme.sh --issue --<webserver> -d zammad.example.com\n"
@@ -31512,10 +31734,10 @@ msgstr ""
 "\n"
 "Es wird nicht empfohlen, die gespeicherten Zertifikate direkt zu verwenden. Sie sollten\n"
 "das Zertifikat stattdessen in ein Verzeichnis Ihrer Wahl installieren, wie Sie\n"
-"im nächsten Befehl unten sehen können. Wir verwenden in diesem Fall ``/etc/ssl/private/``,\n"
+"im nächsten Befehl unten sehen können. Wir verwenden in diesem Fall `/etc/ssl/private/`,\n"
 "aber Sie können jedes beliebige Verzeichnis verwenden.\n"
 "\n"
-"Ersetzen Sie ``<webserver>`` durch ``apache2``, ``httpd`` oder ``nginx``.\n"
+"Ersetzen Sie `<webserver>` durch `apache2`, `httpd` oder `nginx`.\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
@@ -31570,10 +31792,10 @@ msgstr "Schritt 1 - Abrufen einer aktuellen Konfigurationsdatei"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:116
 msgid ""
-"Copy & overwrite the default ``zammad.conf``. Adjust your Nginx config "
+"Copy & overwrite the default `zammad.conf`. Adjust your Nginx config "
 "directory according to your setup:"
 msgstr ""
-"Kopieren und überschreiben Sie die Standardkonfiguration ``zammad.conf``. "
+"Kopieren und überschreiben Sie die Standardkonfiguration `zammad.conf`. "
 "Passen Sie Ihr Nginx-Konfigurationsverzeichnis entsprechend Ihrem Setup an:"
 
 #. type: Fenced code block (sh)
@@ -31601,11 +31823,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:127
 msgid ""
-"Locate any ``server_name`` directive and adjust ``example.com`` to the "
-"domain of your Zammad instance."
+"Locate any `server_name` directive and adjust `example.com` to the domain of "
+"your Zammad instance."
 msgstr ""
-"Suchen Sie den ``server_name``-Parameter und passen Sie ``example.com`` an "
-"die Domain Ihrer Zammad-Instanz an."
+"Suchen Sie den `server_name`-Parameter und passen Sie `example.com` an die "
+"Domain Ihrer Zammad-Instanz an."
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
@@ -31619,30 +31841,30 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
-msgid "``ssl_certificate`` (your ssl certificate)"
-msgstr "``ssl_certificate`` (Ihr SSL Zertifikat)"
+msgid "`ssl_certificate` (your ssl certificate)"
+msgstr "`ssl_certificate` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
-msgid "``ssl_certificate_key`` (the certificates private key)"
-msgstr "``ssl_certificate_key`` (der private Schlüssel des Zertifikats)"
+msgid "`ssl_certificate_key` (the certificates private key)"
+msgstr "`ssl_certificate_key` (der private Schlüssel des Zertifikats)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
-msgid "``ssl_trusted_certificate`` (the public CA certificate)"
-msgstr "``ssl_trusted_certificate`` (das öffentliche CA-Zertifikat)"
+msgid "`ssl_trusted_certificate` (the public CA certificate)"
+msgstr "`ssl_trusted_certificate` (das öffentliche CA-Zertifikat)"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:138
 msgid ""
-"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
-"example below to generate this file. You can find the correct path in your "
-"webserver config. Search for ``ssl_dhparam``."
+"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
+"below to generate this file. You can find the correct path in your webserver "
+"config. Search for `ssl_dhparam`."
 msgstr ""
-"Wenn Sie noch keine ``dhparam.pem``-Datei haben, können Sie das folgende "
+"Wenn Sie noch keine `dhparam.pem`-Datei haben, können Sie das folgende "
 "Beispiel leicht anpassen, um diese Datei zu erzeugen. Sie können den "
 "korrekten Pfad in Ihrer Webserver-Konfiguration finden. Suchen Sie nach "
-"``ssl_dhparam``."
+"`ssl_dhparam`."
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:139
@@ -31685,10 +31907,10 @@ msgstr "Schritt 4 - Speichern und neu laden"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:155
 msgid ""
-"Reload your nginx with ``systemctl reload nginx`` to apply your "
-"configuration changes."
+"Reload your nginx with `systemctl reload nginx` to apply your configuration "
+"changes."
 msgstr ""
-"Laden Sie Ihr nginx mit ``systemctl reload nginx`` neu, um Ihre "
+"Laden Sie Ihr nginx mit `systemctl reload nginx` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
 
 #. type: Plain text
@@ -31717,11 +31939,11 @@ msgstr "Schritt 1 - Modul aktivieren"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:165
 msgid ""
-"Zammad requires a module (``a2enmod``) which is not enabled by default. "
-"CentOS users have to adjust a config file because this module is not "
-"available there."
+"Zammad requires a module (`a2enmod`) which is not enabled by default. CentOS "
+"users have to adjust a config file because this module is not available "
+"there."
 msgstr ""
-"Zammad benötigt ein Modul (``a2enmod``), das standardmäßig nicht aktiviert "
+"Zammad benötigt ein Modul (`a2enmod`), das standardmäßig nicht aktiviert "
 "ist. Benutzer von CentOS müssen eine Konfigurationsdatei anpassen, da dieses "
 "Modul dort nicht verfügbar ist."
 
@@ -31735,8 +31957,8 @@ msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 #: src/en/tutorials/webserver-config.md:174
 #, no-wrap
 msgid ""
-"Add/uncomment the appropriate ``LoadModule`` statements in your Apache config\n"
-"in ``/etc/httpd/conf/httpd.conf``:\n"
+"Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
+"in `/etc/httpd/conf/httpd.conf`:\n"
 "\n"
 "```apache\n"
 "LoadModule headers_module modules/mod_headers.so\n"
@@ -31749,8 +31971,8 @@ msgid ""
 "Restart your webserver after saving the configuration.\n"
 "\n"
 msgstr ""
-"Fügen Sie die entsprechenden ``LoadModule``-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare\n"
-"in ``/etc/httpd/conf/httpd.conf``:\n"
+"Fügen Sie die entsprechenden `LoadModule`-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare\n"
+"in `/etc/httpd/conf/httpd.conf`:\n"
 "\n"
 "```apache\n"
 "LoadModule headers_module modules/mod_headers.so\n"
@@ -31772,10 +31994,10 @@ msgstr "Schritt 2 - Abrufen einer aktuellen Konfigurationsdatei"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:194
 msgid ""
-"The package installation copied a ``zammad.conf`` file to your webserver "
+"The package installation copied a `zammad.conf` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
 msgstr ""
-"Die Paket-Installation hat eine Datei ``zammad.conf`` in das "
+"Die Paket-Installation hat eine Datei `zammad.conf` in das "
 "Konfigurationsverzeichnis Ihres Webservers kopiert. Prüfen Sie, ob sie "
 "vorhanden ist und benennen Sie diese Datei nicht um!"
 
@@ -31800,38 +32022,38 @@ msgstr "Schritt 3 - Anpassen der Konfig-Datei"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:207
 msgid ""
-"Locate any ``ServerName`` directive and adjust ``example.com`` to the domain "
-"of your Zammad instance."
+"Locate any `ServerName` directive and adjust `example.com` to the domain of "
+"your Zammad instance."
 msgstr ""
-"Suchen Sie einen ``ServerName``-Parameter und passen Sie ``example.com`` an "
-"die Domain Ihrer Zammad-Instanz an."
+"Suchen Sie einen `ServerName`-Parameter und passen Sie `example.com` an die "
+"Domain Ihrer Zammad-Instanz an."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
-msgid "``SSLCertificateFile`` (your ssl certificate)"
-msgstr "``SSLCertificateFile`` (Ihr SSL-Zertifikat)"
+msgid "`SSLCertificateFile` (your ssl certificate)"
+msgstr "`SSLCertificateFile` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
-msgid "``SSLCertificateKeyFile``(the certificates private key)"
-msgstr "``SSLCertificateKeyFile``(der private Schlüssel des Zertifikats)"
+msgid "`SSLCertificateKeyFile`(the certificates private key)"
+msgstr "`SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:214
-msgid "``SSLCertificateChainFile`` (the public CA certificate)"
-msgstr "``SSLCertificateChainFile`` (das öffentliche CA-Zertifikat)"
+msgid "`SSLCertificateChainFile` (the public CA certificate)"
+msgstr "`SSLCertificateChainFile` (das öffentliche CA-Zertifikat)"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:218
 msgid ""
-"If you don't have a ``dhparam.pem`` file yet, you can easily adapt the "
-"example below to generate this file. You can find the correct path in your "
-"webserver config. Search for ``SSLOpenSSLConfCmd DHParameters``."
+"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
+"below to generate this file. You can find the correct path in your webserver "
+"config. Search for `SSLOpenSSLConfCmd DHParameters`."
 msgstr ""
-"Wenn Sie noch keine ``dhparam.pem``-Datei haben, können Sie das folgende "
+"Wenn Sie noch keine `dhparam.pem`-Datei haben, können Sie das folgende "
 "Beispiel leicht anpassen, um diese Datei zu erzeugen. Sie können den "
 "korrekten Pfad in Ihrer Webserverkonfiguration finden. Suchen Sie nach "
-"``SSLOpenSSLConfCmd DHParameters``."
+"`SSLOpenSSLConfCmd DHParameters`."
 
 #. type: Title ####
 #: src/en/tutorials/webserver-config.md:224
@@ -31849,10 +32071,10 @@ msgstr "Schritt 5 - Aktivieren der Website"
 #: src/en/tutorials/webserver-config.md:235
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
-"``sites-available`` folders."
+"`sites-available` folders."
 msgstr ""
 "Dieser Schritt hängt größtenteils von den ausgewählten Ordnern ab und sollte "
-"nur die ``sites-available``-Ordner betreffen."
+"nur die `sites-available`-Ordner betreffen."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:236
@@ -31931,11 +32153,68 @@ msgstr "Schritt 6 - Speichern und neu laden"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:274
 msgid ""
-"Reload your apache with ``systemctl reload apache2`` to apply your "
+"Reload your apache with `systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""
-"Laden Sie Ihren Apache mit ``systemctl reload apache2`` neu, um Ihre "
+"Laden Sie Ihren Apache mit `systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid "Suggested next steps (optional)"
+#~ msgstr "Vorgeschlagene nächste Schritte (optional)"
+
+#~ msgid ""
+#~ "If suggested next steps and the checklist feature are activated, you can "
+#~ "even add single items or all the suggested next steps to a [checklist](../"
+#~ "advanced-features#checklists) to keep track of the open tasks in this "
+#~ "ticket."
+#~ msgstr ""
+#~ "Wenn die vorgeschlagenen nächsten Schritte und die Checklistenfunktion "
+#~ "aktiviert sind, können Sie sogar einzelne Elemente oder alle "
+#~ "vorgeschlagenen nächsten Schritte zu einer [Checkliste](../advanced-"
+#~ "features#checklists) hinzufügen, um den Überblick über die offenen "
+#~ "Aufgaben in diesem Ticket zu behalten."
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "- Forgot your password? Try resetting it in the login screen under the **Forgot password?** link by providing your email\n"
+#~ "  address.\n"
+#~ "- Lost the possibility to provide your 2nd factor for 2-factor-authentication (2FA)? Use a recovery code and set up a\n"
+#~ "  new 2FA method. See [2FA page](./guides/two-factor-auth) for more information.\n"
+#~ "- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This also applies if your problem is not mentioned\n"
+#~ "  here.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "- Haben Sie Ihr Passwort vergessen? Versuchen Sie, es im Login-Dialog über den Link **Kennwort vergessen?** zurückzusetzen, indem Sie Ihre\n"
+#~ "  E-Mail-Adresse eingeben.\n"
+#~ "- Haben Sie keine Möglichkeit mehr, Ihren zweiten Faktor für die 2-Faktor-Authentifizierung (2FA) zu verwenden? Nutzen Sie einen Wiederherstellungscode und richten Sie eine\n"
+#~ "  neue 2FA-Methode ein. Weitere Informationen finden Sie auf der [2FA-Seite](./guides/two-factor-auth).\n"
+#~ "- Haben Sie Ihre 2FA-Wiederherstellungscodes verloren? Wenden Sie sich an Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem\n"
+#~ "  hier nicht genannt wurde.\n"
+
+#~ msgid ""
+#~ "If no PostgreSQL server could be detected, it will be installed "
+#~ "automatically during the package installation."
+#~ msgstr ""
+#~ "Wenn kein PostgreSQL-Server gefunden werden konnte, wird er automatisch "
+#~ "während der Paketinstallation installiert."
+
+#, no-wrap
+#~ msgid "Show By Ticket"
+#~ msgstr "Per Ticket anzeigen"
+
+#~ msgid "`GET`-Request sent: `/api/v1/checklists/by_ticket/{ticket id}`"
+#~ msgstr "`GET`-Anfrage gesendet: `/api/v1/checklists/by_ticket/{ticket id}`"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<<< @/fixtures/rest-api/checklists/by_ticket/get-ticket-id-res.json\n"
+#~ "\n"
 
 #, no-wrap
 #~ msgid ""
@@ -34613,10 +34892,6 @@ msgstr ""
 
 #~ msgid "Via drag & drop Via drop down selectors"
 #~ msgstr "Per Drag & Drop Über Dropdown-Selektoren"
-
-#, no-wrap
-#~ msgid "Use Text Templates"
-#~ msgstr "Textbausteine verwenden"
 
 #, no-wrap
 #~ msgid "You can either search them via search field or via overviews.\n"

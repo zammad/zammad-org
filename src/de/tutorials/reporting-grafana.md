@@ -232,7 +232,7 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 - `ES - CTI Log`
 
 [^1]: Einige Werte sind nicht als Zeitreiheninformation verfügbar. Das
-    means we can only display the _last_ value of the field in question.
+    bedeutet, dass nur der _letzte_ Wert des betreffenden Feldes angezeigt werden kann.
 
 [^2]: Erfordert, dass die SLA-Funktion aktiv ist. Negative Werte bedeuten SLA
     Verletzung.

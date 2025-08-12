@@ -35,7 +35,7 @@ Erforderliche Berechtigung: `ticket.agent`
 :::
 
 ::: tip
-You can find the `checklist_id` attribute of a ticket by sending a `GET` request to `/api/v1/tickets/{ticket id}`.
+Sie können das Attribut `checklist_id` eines Tickets finden, indem Sie eine `GET`-Anfrage an `/api/v1/tickets/{ticket id}` senden.
 :::
 
 ### Erstellen

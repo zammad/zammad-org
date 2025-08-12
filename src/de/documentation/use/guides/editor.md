@@ -48,12 +48,15 @@ Leerzeilen dargestellt werden.
 
 ## Text zitieren
 
-You may want to quote text of your customer to exactly refer your answer to
-and your customer doesn't lose track in long conversations. To use this
-feature, simply select the text you want to cite and click on the `reply` or
-`forward` button next to the article. If you already inserted text, it gets
-preserved and the selected text gets inserted additionally. This means you
-can repeat this to cite different sections without losing your written text.
+Möglicherweise möchten Sie einen Text Ihres Kunden zitieren, um Ihre Antwort
+genau darauf zu beziehen, und damit Ihre Kunden langen Konversationen nicht
+den Überblick verlieren. Um diese Funktion zu nutzen, markieren Sie einfach
+den Text, den Sie zitieren möchten, und klicken Sie auf die Schaltfläche
+`Antworten` oder `Weiterleiten` neben dem Artikel. Wenn Sie bereits Text
+eingefügt haben, bleibt dieser erhalten und der ausgewählte Text wird
+zusätzlich eingefügt. Das bedeutet, dass Sie diesen Vorgang wiederholen
+können, um verschiedene Abschnitte zu zitieren, ohne dass Ihr geschriebener
+Text verloren geht.
 
 ## Formatierung anwenden
 

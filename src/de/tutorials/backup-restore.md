@@ -80,7 +80,7 @@ weiter unten.
   diese im Dateisystem gespeichert haben. Wenn Sie unsicher sind, setzen Sie dies auf nein.
 
 `DEBUG` <Badge type="info" text="no"/>
-: Setting this option to `yes` will output useful debug messages.
+: Wenn Sie diese Option auf ``yess`` setzen, werden nützliche Debug-Meldungen ausgegeben.
   :::warning
   Diese Option gibt potenziell sensible Informationen über die Standardausgabe aus! Verwenden Sie
   diese Option nicht in Produktivumgebungen oder schalten Sie sie nach dem

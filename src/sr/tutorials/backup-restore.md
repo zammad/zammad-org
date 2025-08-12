@@ -86,7 +86,7 @@ below.
 
 ## Restore Backups
 
-### Important Information
+### Важне информације
 
 Please read the following information carefully before starting to restore
 your data.

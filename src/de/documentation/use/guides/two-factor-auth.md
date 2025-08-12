@@ -174,10 +174,11 @@ Wiederherstellungs-Code kann nicht mehr genutzt werden.
 ![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der
 2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-You also have an option to regenerate your recovery codes at any time, which
-invalidates already existing recovery codes and provides you with a list of
-fresh codes. You can do this by clicking on `Regenerate recovery codes`
-button in your profile's 2FA settings.
+Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu
+zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig
+werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun,
+indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche
+`Wiederherstellungs-Codes neu erzeugen` klicken.
 
 ## Festlegen einer Standard-2FA-Methode
 

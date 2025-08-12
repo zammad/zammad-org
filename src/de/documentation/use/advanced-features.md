@@ -62,9 +62,10 @@ werden. Die Verwendung von Textbausteinen hat Vorteile wie:
 
 **Wie?**
 
-Use the button in the toolbar of the editor or simply write [[:]][[:]] in
-the editor. Both ways let you search for the desired text module by typing
-some characters or words of the text or keywords of the text module.
+Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder
+schreiben Sie einfach [[:]][[:]] in den Editor. Auf beiden Wegen können Sie
+nach dem gewünschten Textbaustein suchen, indem Sie einige Zeichen oder
+Wörter des Textes oder Schlüsselwörter des Textbausteins eingeben.
 
 Sie können einen auswählen, indem Sie ihn anklicken oder die Pfeiltasten
 nach oben und unten, gefolgt von [[enter]], auf Ihrer Tastatur benutzen. Es
@@ -84,9 +85,10 @@ kopieren/einfügen müssen.
 
 **Wie?**
 
-Use the button in the toolbar of the editor or simply write [[?]][[?]] in
-the editor. Both ways let you search for the desired knowledge base article
-by typing some characters or words.
+Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder
+schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie
+nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen
+oder Wörter eingeben.
 
 ## Erwähnen von Kollegen
 
@@ -101,10 +103,10 @@ und dieses Ticket abonnieren.
 
 **Wie?**
 
-While writing a ticket article, use the button in the toolbar of the editor
-or simply type [[@]][[@]]. Both ways let you search for the name of the
-colleague you want to mention by typing some characters or the complete
-name.
+Verwenden Sie beim Schreiben eines Ticket-Artikels die Schaltfläche in der
+Symbolleiste des Editors oder geben Sie einfach [[@]][[@]] ein. Auf beiden
+Wegen können Sie nach dem Namen des Kollegen suchen, den Sie erwähnen
+möchten, indem Sie einige Buchstaben oder den vollständigen Namen eingeben.
 
 Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und
@@ -335,8 +337,9 @@ Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:
 Wenn Sie sich in den Übersichten oder auf der Seite für die erweiterte Suche
 befinden, können Sie Tickets auf 2 _Arten_ bearbeiten:
 
-- Use the `Bulk Action` button in the top right corner and change/add
-  attributes by using the fields in the side panel
+- Verwenden Sie die Schaltfläche `Mehrfach-Aktion` in der oberen rechten
+  Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der
+  Seitenleiste hinzu
 - Ziehen Sie die Tickets mit der Maus, um die Mehrfach-Aktion einzublenden,
   und legen Sie sie auf der gewünschten Aktion ab
 
