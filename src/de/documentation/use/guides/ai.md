@@ -36,8 +36,8 @@ Zusammenfassung die folgenden Abschnitte:
 - Anliegen des Kunden
 - Zusammenfassung der Konversation
 - Offene Fragen (optional)
-- Upcoming events (optional)
-- Customer sentiment (optional)
+- Anstehende Ereignisse (optional)
+- Stimmung des Kunden (optional)
 
 ## KI-Assistent Text-Werkzeuge
 

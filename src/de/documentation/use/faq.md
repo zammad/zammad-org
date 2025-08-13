@@ -33,24 +33,23 @@ und was derzeit keine Bearbeitung erfordert. Falls Sie Probleme mit diesen
 
 ### Wie kann ich über Ticket-Änderungen informiert werden?
 
-Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil]
-(manage-profile#benachrichtigungen) an. Sie können unterscheiden zwischen
-der
-Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder
-Browser), Ihrer Beziehung zum Ticket (z.B. ob
-Sie der Besitzer sind) und die Benachrichtigungen auf eine bestimmte Gruppe
+Passen Sie die [Benachrichtigungseinstellungen in Ihrem
+Profil](manage-profile#benachrichtigungen) an. Sie können unterscheiden
+zwischen der Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal
+(E-Mail und/oder Browser) und Ihrer Beziehung zum Ticket (z.B. ob Sie der
+Besitzer sind) sowie die Benachrichtigungen auf eine bestimmte Gruppe
 beschränken.
 
 ### Warum ist das Ticket wieder offen? Ich habe es bereits geschlossen
 
-Je nach den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür
-unterschiedlich sein. In der Regel liegt der Grund jedoch darin,
-dass ein Kunde auf das Ticket geantwortet hat, nachdem es auf geschlossen
-gesetzt wurde. Ein anderer Grund könnte sein, dass ein Kollege
-es wieder geöffnet hat. Wenn Sie keinen Artikel sehen, der auf die
-Beschreibung passt, können Sie einen Blick in die Ticket-Historie werfen,
-um mehr herauszufinden. Öffnen Sie dazu das Menü ::a:: im Seitenleisten-Tab
-des Tickets und wählen Sie **Historie**.
+Abhängig von den Einstellungen Ihrer Zammad-Instanz können die Gründe dafür
+unterschiedlich sein. In der Regel liegt der Grund jedoch darin, dass ein
+Kunde auf das Ticket geantwortet hat, nachdem es auf geschlossen gesetzt
+wurde. Ein anderer Grund könnte sein, dass ein Kollege es wieder geöffnet
+hat. Wenn Sie keinen Artikel sehen, der auf die Beschreibung passt, können
+Sie einen Blick in die Ticket-Historie werfen, um mehr zu erfahren. Öffnen
+Sie dazu das ::a:: Menü im Ticket-Tab der Seitenleiste und wählen Sie
+**Historie**.
 
 Ihr Zammad-Administrator kann einstellen, was passieren soll, wenn ein Kunde
 auf ein bereits geschlossenes Ticket antwortet.
@@ -62,8 +61,7 @@ Verfügung. Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und
 je nach Einstellung auch die ihrer Kollegen) und auf ihre
 Profileinstellungen zugreifen. Auch die Ticket Detailansicht enthält nur
 relevante Elemente für den Kunden. Elemente, die einen internen Zweck haben
-(wie Gruppe, Priorität, interne Notizen), sind
-für Kunden nicht sichtbar.
+(wie Gruppe, Priorität, interne Notizen), sind für Kunden nicht sichtbar.
 
 ::: warning
 Die obige Erklärung basiert auf den Standardeinstellungen von Zammad. Beachten Sie, dass die Konfiguration Ihres Systems möglicherweise
@@ -86,9 +84,9 @@ anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.
 ### Wie kann ich Tastaturkürzel verwenden? Ich möchte produktiver sein
 
 Benutzen Sie sie einfach! Sie finden eine Übersicht der verfügbaren
-Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken
-oder die Übersicht über das Avatar-Menü öffnen (klicken Sie auf Ihren Avatar
-in der unteren linken Ecke und wählen Sie **Tastaturkürzel**).
+Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken oder die
+Übersicht über das Avatar-Menü öffnen (klicken Sie auf Ihren Avatar in der
+unteren linken Ecke und wählen Sie **Tastaturkürzel**).
 
 Einige davon hängen davon ab, wo Sie sich befinden oder welche Aktion Sie
 durchführen (z.B. im Editor oder in der Ticket Detailansicht).
@@ -96,10 +94,9 @@ durchführen (z.B. im Editor oder in der Ticket Detailansicht).
 ### Wie schaltet man die Benutzeroberfläche zwischen Dunkel- und Hellmodus um?
 
 Sie können im Avatar-Menü zwischen hellem, dunklem und automatischem Modus
-(versucht, sich an Ihren Browser anzupassen)
-umschalten. Öffnen Sie es, indem Sie auf Ihren Avatar in der linken unteren
-Ecke klicken und den Schalter auf den gewünschten
-Status stellen.
+(versucht, sich an Ihren Browser anzupassen) umschalten. Öffnen Sie es,
+indem Sie auf Ihren Avatar in der linken unteren Ecke klicken und den
+Schalter auf den gewünschten Status stellen.
 
 Eine andere Möglichkeit ist die Verwendung des Tastaturkürzels [[d]]. Wenn
 kein Eingabefeld aktiviert ist, wird durch Drücken dieser Taste zwischen den
@@ -111,10 +108,9 @@ verschiedenen Modi gewechselt.
 
 Gehen Sie zum [Avatar-Bereich in Ihren
 Profileinstellungen](manage-profile#avatar), indem Sie das Avatar-Menü in
-der unteren
-linken Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie ein
-Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine
-Kamera verfügt) oder bereits vorhandene Bilder löschen.
+der unteren linken Ecke öffnen und **Profileinstellungen** wählen. Dort
+können Sie ein Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über
+eine Kamera verfügt) oder bereits vorhandene Bilder löschen.
 
 ### Ich möchte die Sprache der Benutzeroberfläche von Zammad ändern. Wie kann ich das tun?
 
@@ -162,25 +158,25 @@ vorzunehmen.
 ### Wie verwendet man Textbausteine?
 
 Verwenden Sie Zammads [Textbausteine](advanced-features#textbausteine),
-indem Sie im Artikel-Editor [[:]][[:]] eingeben. Wenn Sie
-zusätzliche Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator,
-sie für Sie hinzuzufügen.
+indem Sie im Artikel-Editor [[:]][[:]] eingeben. Wenn Sie zusätzliche
+Textbausteine benötigen, bitten Sie Ihren Zammad-Administrator, sie für Sie
+hinzuzufügen.
 
 ### Wie kann man einen Kollegen im Ticket um Hilfe bitten?
 
-The best way to do this is to [mention a
-colleague](advanced-features#mention-a-colleague) in an article by using
-[[@]][[@]] and raise your question. This triggers a notification for your
-colleague. Depending on your internal processes, switching the owner of the
-ticket could also be a possible option.
+Das geht am besten, indem Sie in einem Artikel einen [Kollegen
+erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie [[@]][[@]]
+verwenden und Ihre Frage stellen. Dies löst eine Benachrichtigung an Ihren
+Kollegen aus. Abhängig von Ihren internen Abläufen könnte auch ein Wechsel
+des Besitzers des Tickets eine Möglichkeit sein.
 
-### How to cite the customer's email or parts of it?
+### Wie zitiert man die E-Mail des Kunden oder Teile davon?
 
-To partially or selective cite the article or parts of it, mark the text,
-you want to cite, and click on the `Reply` button next to the article. This
-can be done even multiple times (e.g. to answer different parts of the
-ticket).
+Um den Artikel oder Teile davon teilweise oder selektiv zu zitieren,
+markieren Sie den Text, den Sie zitieren möchten, und klicken Sie auf die
+Schaltfläche `Antworten` neben dem Artikel. Dies kann auch mehrfach
+geschehen (z.B. um verschiedene Teile des Tickets zu beantworten).
 
-The citation of the whole article depends on how your Zammad is
-configured. If you want to apply changes to this behavior, ask your admin to
-change it.
+Die Zitierung des gesamten Artikels hängt davon ab, wie Ihr Zammad
+konfiguriert ist. Wenn Sie dieses Verhalten ändern möchten, bitten Sie Ihren
+Administrator, dies zu tun.

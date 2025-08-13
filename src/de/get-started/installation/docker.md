@@ -176,6 +176,7 @@ Führen Sie einen Befehl direkt aus:
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
 ```
+
 Rufen Sie die interaktive Rails-Konsole auf um Rails-Befehle einzugeben:
 
 ```sh

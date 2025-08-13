@@ -174,7 +174,7 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 ::::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Repository Key eintragen::
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -373,10 +373,10 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no
-PostgreSQL server could be detected, it will be installed automatically
-during the package installation.
+Zammad speichert seinen Inhalt in einer Datenbank. Das unterstützte
+Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
+13 oder neuer. Wenn kein PostgreSQL-Server gefunden wird, wird er
+automatisch während der Paketinstallation installiert.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
@@ -399,11 +399,12 @@ installiert.  Eine Grundkonfiguration finden Sie in unserem
 
 ### Redis
 
-[Redis](https://redis.io/) is required for realtime communication via web
-socket. Zammad requires Redis 6 or newer.  The installation and
-configuration is out of scope of this documentation. Please follow the
-official guides and ensure to set it up in a secure way or consider another
-installation method or Zammad's hosting services.
+[Redis](https://redis.io/) wird für die Echtzeitkommunikation per Websocket
+benötigt. Zammad benötigt Redis 6 oder eine neuere Version. Die Installation
+und Konfiguration ist nicht Gegenstand dieser Dokumentation. Bitte folgen
+Sie den offiziellen Anleitungen und stellen Sie sicher, dass die Einrichtung
+sicher ist oder ziehen Sie eine andere Installationsmethode oder Zammads
+Hosting-Services in Betracht.
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>
 
