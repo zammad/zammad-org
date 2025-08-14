@@ -100,16 +100,32 @@ Cypress.Commands.add('mergeClips', (c1, c2) => {
   return cy.wrap(rect2Clip(boundingRect(clip2Rect(c1), clip2Rect(c2))))
 })
 
-Cypress.Commands.add('highlight', { prevSubject: 'get' }, ($el) => {
+Cypress.Commands.add('highlight', { prevSubject: 'get' }, ($el, opts = {}) => {
+  const options = Object.assign(
+    {
+      border: 4,
+      padding: 10,
+    },
+    opts,
+  )
+
+  const offset = $el.offset()
+  const width = $el.outerWidth()
+  const height = $el.outerHeight()
+
   const overlay = Cypress.$('<div />')
     .css('position', 'fixed')
-    .css('inset', 0)
-    .css('background-color', 'rgba(0,0,0,0.5)')
     .css('z-index', '10000')
+    .css('width', width + options.padding * 2)
+    .css('height', height + options.padding * 2)
+    .css('left', offset.left - options.padding)
+    .css('top', offset.top - options.padding)
+    .css('border-width', `${options.border}px`)
+    .css('border-style', 'solid')
+    .css('border-image-slice', '1')
+    .css('border-image-source', 'linear-gradient(270deg, #ffce33 30%, #e54011)')
 
-  $el.css('box-shadow', '0px 0px 15px 10px rgba(255,255,255,0.6)')
-    .css('z-index', '10001')
-    .before(overlay)
+  Cypress.$('body').append(overlay)
 
   return cy.wrap($el)
 })

@@ -1,6 +1,5 @@
 describe('AI screenshots', () => {
   it('AI ticket summary', () => {
-    cy.visit('/desktop/login')
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.intercept('POST', '/graphql', (req) => {
       if (req.body.operationName === 'ticketAIAssistanceSummarize') {
@@ -30,12 +29,11 @@ describe('AI screenshots', () => {
     cy.visit('/desktop/tickets/2')
     cy.wait(3000) // loading
     cy.get('[aria-label="Summary"]').click()
-    cy.get('#content-sidebar').highlight()
+    cy.get('#content-sidebar').highlight({ padding: -2 })
     cy.screenshot('ai-ticket-summary-sidebar')
   })
 
   it('AI ticket smart editor', () => {
-    cy.visit('/desktop/login')
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
