@@ -39,7 +39,7 @@ describe('AI screenshots', () => {
     cy.wait(3000) // loading
     cy.get('button').contains('Add reply').click().wait(500)
     cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}we are happy to tell you that your order has been shipped already. Who should get teh invoice?{selectAll}')
-    cy.get('[aria-label="Ai assistant text tools"]').click().wait(200)
+    cy.get('[aria-label="Writing Assistant Tools"]').click().wait(200)
     cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-ticket-smart-editor')
     cy.get('button').contains('Discard your unsaved changes').click() //removing draft to clean up
     cy.get('button').contains('Discard Changes').click() //removing draft to clean up

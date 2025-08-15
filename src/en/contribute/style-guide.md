@@ -131,13 +131,13 @@ Some important rules and customized ones are mentioned below.
 
 | Type                      | Highlighting in documentation | Markdown syntax                 |
 |-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | \`Sign in\`                     |
-| Fields and UI elements    | **Name**                      | \*\*Name\*\*                    |
-| Locations/paths           | _Settings > Channels > Email_ | \_Settings > Channels > Email\_ |
-| Keyboard shortcuts        | [[x]]                         | \[\[x\]\]                       |
-| Add button                | ::+::                         | \:\:\+\:\:                      |
-| Delete button             | ::x::                         | \:\:x\:\:                       |
-| Action menu               | ::a::                         | \:\:a\:\:                       |
+| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
+| Fields and UI elements    | **Name**                      | `**Name**`                      |
+| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
+| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
+| Add button                | ::+::                         | `::+::`                         |
+| Delete button             | ::x::                         | `::x::`                         |
+| Action menu               | ::a::                         | `::a::`                         |
 
 #### Heading Structure
 
