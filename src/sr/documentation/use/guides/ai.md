@@ -35,8 +35,8 @@ sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png
 - Намера клијента
 - Сажети опис конверзације
 - Отворена питања (опционо)
-- Upcoming events (optional)
-- Customer sentiment (optional)
+- Предстојећи догађаји (опционо)
+- Расположење клијента (опционо)
 
 ## AI Assistant Text Tools
 

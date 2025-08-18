@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-08 16:07+0200\n"
-"PO-Revision-Date: 2025-08-07 06:00+0000\n"
+"POT-Creation-Date: 2025-08-15 16:13+0200\n"
+"PO-Revision-Date: 2025-08-15 07:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -1209,17 +1209,27 @@ msgstr "Текст и интерфејс"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:141
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
+#| "|-------------------------- |-------------------------------|---------------------------------|\n"
+#| "| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
+#| "| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+#| "| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
+#| "| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+#| "| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+#| "| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
+#| "| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
 "|-------------------------- |-------------------------------|---------------------------------|\n"
-"| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
-"| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
-"| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
-"| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-"| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-"| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
-"| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
+"| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |\n"
+"| Fields and UI elements    | **Name**                      | `**Name**`                      |\n"
+"| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |\n"
+"| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |\n"
+"| Add button                | ::+::                         | `::+::`                         |\n"
+"| Delete button             | ::x::                         | `::x::`                         |\n"
+"| Action menu               | ::a::                         | `::a::`                         |\n"
 msgstr ""
 "| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
 "|----------------------|-------------------------------|---------------------------------|\n"
@@ -3645,17 +3655,13 @@ msgstr "Отворена питања (опционо)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:35
-#, fuzzy
-#| msgid "Open questions (optional)"
 msgid "Upcoming events (optional)"
-msgstr "Отворена питања (опционо)"
+msgstr "Предстојећи догађаји (опционо)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:35
-#, fuzzy
-#| msgid "Customer intent"
 msgid "Customer sentiment (optional)"
-msgstr "Намера клијента"
+msgstr "Расположење клијента (опционо)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:36
