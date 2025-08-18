@@ -58,7 +58,7 @@ Ohne Angabe der zu verwendenden CPU-Kerne:
 zammad run rake zammad:searchindex:rebuild
 ```
 
-Mit Angabe der zu verwendenden CPU-Kerne (Beispiel 8):
+With specifying CPU cores to use (example 8):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]

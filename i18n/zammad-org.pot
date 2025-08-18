@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-15 16:13+0200\n"
+"POT-Creation-Date: 2025-08-18 13:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6444,7 +6444,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:85
-#: src/en/get-started/update.md:169
+#: src/en/get-started/update.md:191
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr ""
@@ -7667,23 +7667,38 @@ msgstr ""
 #. type: Title ###
 #: src/en/get-started/update.md:22
 #, markdown-text, no-wrap
-msgid "Stop Zammad"
+msgid "Check Dependencies"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/get-started/update.md:24 src/en/tutorials/migrate-host.md:54
-#, no-wrap
-msgid "systemctl stop zammad\n"
+#. type: Plain text
+#: src/en/get-started/update.md:27
+#, markdown-text
+msgid ""
+"Before proceeding, double-check that your system environment matches "
+"Zammad's requirements (see [Prerequisites](installation/prerequisites) and "
+"[Package Installation](installation/package))."
 msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/update.md:28
 #, markdown-text, no-wrap
+msgid "Stop Zammad"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/update.md:30 src/en/tutorials/migrate-host.md:54
+#, no-wrap
+msgid "systemctl stop zammad\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:34
+#, markdown-text, no-wrap
 msgid "Backup Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:32
+#: src/en/get-started/update.md:38
 #, markdown-text
 msgid ""
 "Create a backup. You can use the [backup "
@@ -7692,13 +7707,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:33
+#: src/en/get-started/update.md:39
 #, markdown-text, no-wrap
 msgid "Update Zammad"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/update.md:35
+#: src/en/get-started/update.md:41
 #, no-wrap
 msgid ""
 "If you update your complete system and there are updates for Zammad **and** "
@@ -7713,7 +7728,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/update.md:44
+#: src/en/get-started/update.md:50
 #, no-wrap
 msgid ""
 "\n"
@@ -7803,13 +7818,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:131 src/en/tutorials/backup-restore.md:217
+#: src/en/get-started/update.md:137 src/en/tutorials/backup-restore.md:217
 #, markdown-text, no-wrap
 msgid "Additional Steps"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:137
+#: src/en/get-started/update.md:143
 #, markdown-text
 msgid ""
 "Updating Elasticsearch may be relevant, too. Make sure to have a supported "
@@ -7819,7 +7834,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:141
+#: src/en/get-started/update.md:147
 #, markdown-text
 msgid ""
 "If you have to update Elasticsearch, please have a look at [their "
@@ -7828,7 +7843,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:145
+#: src/en/get-started/update.md:151
 #, markdown-text
 msgid ""
 "In case your are using plugins for Elasticsearch, make sure they are updated "
@@ -7837,25 +7852,68 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:146
+#: src/en/get-started/update.md:152
+#, markdown-text, no-wrap
+msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:155
+#, markdown-text
+msgid ""
+"Only needed if the release note tells you to rebuild the Elasticsearch "
+"index."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:157
+#: src/en/tutorials/connect-config-elasticsearch.md:54
+#, markdown-text
+msgid "Without specifying CPU cores to use:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/update.md:158
+#: src/en/tutorials/connect-config-elasticsearch.md:55
+#, no-wrap
+msgid "zammad run rake zammad:searchindex:rebuild\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/update.md:163
+#: src/en/tutorials/connect-config-elasticsearch.md:60
+#, markdown-text
+msgid "With specifying CPU cores to use (example 8):"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/update.md:164
+#: src/en/tutorials/connect-config-elasticsearch.md:61
+#: src/en/tutorials/connect-config-elasticsearch.md:192
+#, no-wrap
+msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:168
 #, markdown-text, no-wrap
 msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:148 src/en/tutorials/migrate-host.md:169
+#: src/en/get-started/update.md:170 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "systemctl start zammad\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/update.md:152
+#: src/en/get-started/update.md:174
 #, markdown-text, no-wrap
 msgid "Update Docker Installation"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/update.md:154
+#: src/en/get-started/update.md:176
 #, no-wrap
 msgid ""
 "Docker compose stack updates may require extra steps or introduce breaking\n"
@@ -7865,13 +7923,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:160
+#: src/en/get-started/update.md:182
 #, markdown-text, no-wrap
 msgid "Updating Portainer Based Installations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:164
+#: src/en/get-started/update.md:186
 #, markdown-text
 msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
@@ -7879,7 +7937,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:166
+#: src/en/get-started/update.md:188
 #, markdown-text
 msgid ""
 "![Highlighted stack update in "
@@ -7887,25 +7945,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:167
+#: src/en/get-started/update.md:189
 #, markdown-text, no-wrap
 msgid "Updating Docker Compose Based Installations"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:173
+#: src/en/get-started/update.md:195
 #, no-wrap
 msgid "git pull\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:177
+#: src/en/get-started/update.md:199
 #, no-wrap
 msgid "docker-compose pull\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:181
+#: src/en/get-started/update.md:203
 #, no-wrap
 msgid "docker-compose up -d\n"
 msgstr ""
@@ -22532,31 +22590,6 @@ msgstr ""
 #: src/en/tutorials/connect-config-elasticsearch.md:51
 #, markdown-text, no-wrap
 msgid "Build/Rebuild the Searchindex"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:54
-#, markdown-text
-msgid "Without specifying CPU cores to use:"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:55
-#, no-wrap
-msgid "zammad run rake zammad:searchindex:rebuild\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:60
-#, markdown-text
-msgid "With specifying CPU core to use (example 8):"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:61
-#: src/en/tutorials/connect-config-elasticsearch.md:192
-#, no-wrap
-msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
 
 #. type: Title ##

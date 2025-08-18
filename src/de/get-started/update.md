@@ -20,6 +20,12 @@ aktuelle stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` �
 
 ## Paket-Installation aktualisieren
 
+### Check Dependencies
+
+Before proceeding, double-check that your system environment matches
+Zammad's requirements (see [Prerequisites](installation/prerequisites) and
+[Package Installation](installation/package)).
+
 ### Zammad stoppen
 
 ```sh
@@ -147,6 +153,23 @@ Falls Sie Plugins für Elasticsearch verwenden, stellen Sie sicher, dass
 diese ebenfalls aktualisiert werden (Hinweis: Ab Elasticsearch 8 ist das
 Ingest-Attachment-Plugin nicht mehr notwendig, sondern ist Bestandteil von
 Elasticsearch selbst).
+
+### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
+
+Only needed if the release note tells you to rebuild the Elasticsearch
+index.
+
+Ohne Angabe der zu verwendenden CPU-Kerne:
+
+```sh
+zammad run rake zammad:searchindex:rebuild
+```
+
+With specifying CPU cores to use (example 8):
+
+```sh
+zammad run rake zammad:searchindex:rebuild[8]
+```
 
 ### Zammad starten
 
