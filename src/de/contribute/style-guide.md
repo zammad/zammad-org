@@ -208,7 +208,9 @@ Dieser Abschnittstitel verwendet ein Badge des Typs "warning". Es sind auch
 andere Badges verfügbar, siehe
 <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 Text/Titel, dem ein Badge hinzugefügt werden soll <Badge type="warning" text="freier Text" />
@@ -219,9 +221,11 @@ Text/Titel, dem ein Badge hinzugefügt werden soll <Badge type="warning" text="f
 #### Spezial-Boxen
 
 ::::: info
-Dies ist eine Infobox.
+This is an info box.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: info
@@ -233,9 +237,11 @@ Dies ist eine Infobox.
 :::::
 
 ::::: tip
-Dies ist ein Tipp.
+This is a tip.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: tip
@@ -247,9 +253,11 @@ Dies ist eine Tipp-Box.
 :::::
 
 ::::: warning
-Dies ist eine Warnung.
+This is a warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -261,9 +269,11 @@ Dies ist eine Warnungs-Box.
 :::::
 
 ::::: danger
-Dies ist eine gefährliche Warnung.
+This is a dangerous warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -275,13 +285,12 @@ Dies ist eine gefährliche Warnung.
 :::::
 
 :::: details
-Dies ist ein Detailblock.
+This is a details block.
 
-Verwendung:
+**Usage:**
 
 ```md
-
-::: details Box title shown in collapsed state
+::: details
 Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.
 :::
 
@@ -298,7 +307,9 @@ Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" 
 : Dies ist eine Definition des zweiten Begriffs.
 : Dies ist eine weitere Definition des zweiten Begriffs.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 Erster Begriff <Badge type="info" text="tag1" />

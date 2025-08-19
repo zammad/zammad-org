@@ -17,7 +17,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Anfrage gesendet: `/api/v1/tickets`
 
-:::details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/get-res.json
 
@@ -29,7 +29,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Anfrage gesendet: `/api/v1/tickets/{ticket id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/get-ticket-id-res.json
 
@@ -59,7 +59,7 @@ _Z.B.:_ `"mentions": [1, 5, 7, 8],`
 
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -126,7 +126,7 @@ Bitte beachten Sie, dass das Entfernen von Tickets nicht rückgängig gemacht we
 Artikel & Anhänge) gehen dabei verloren.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

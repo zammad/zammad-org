@@ -17,7 +17,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/mentions`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/mentions/get-res.json
 
@@ -29,7 +29,7 @@ Required permission: `ticket.agent`
 
 `POST`-Request sent: `/api/v1/mentions`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -58,7 +58,7 @@ Required permission: `ticket.agent`
 
 `DELETE`-Request sent: `/api/v1/mentions/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/mentions/delete-id-res.json
 

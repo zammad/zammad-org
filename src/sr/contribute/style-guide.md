@@ -195,7 +195,9 @@ changes. Otherwise, the build of the documentation will fail.
 Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке,
 погледајте <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 Одељак са значком <Badge type="warning" text="прилагођен текст" />
@@ -206,9 +208,11 @@ changes. Otherwise, the build of the documentation will fail.
 #### Прилагођени оквири
 
 ::::: info
-Ово је информациони оквир.
+This is an info box.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: info
@@ -220,9 +224,11 @@ changes. Otherwise, the build of the documentation will fail.
 :::::
 
 ::::: tip
-Ово је савет.
+This is a tip.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: tip
@@ -234,9 +240,11 @@ changes. Otherwise, the build of the documentation will fail.
 :::::
 
 ::::: warning
-Ово је упозорење.
+This is a warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -248,9 +256,11 @@ changes. Otherwise, the build of the documentation will fail.
 :::::
 
 ::::: danger
-Ово је упозорење на опасност.
+This is a dangerous warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -262,13 +272,12 @@ changes. Otherwise, the build of the documentation will fail.
 :::::
 
 :::: details
-Ово је одељак са детаљима.
+This is a details block.
 
-Начин коришћења:
+**Usage:**
 
 ```md
-
-::: details Box title shown in collapsed state
+::: details
 Овај садржај је приказан у проширеном стању.
 :::
 
@@ -285,7 +294,9 @@ changes. Otherwise, the build of the documentation will fail.
 : Ово је дефиниција другог термина.
 : Ово је додатна дефиниција другог термина.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 Први термин <Badge type="info" text="tag1" />

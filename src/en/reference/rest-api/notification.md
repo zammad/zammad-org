@@ -23,7 +23,7 @@ Use the expand request to know the affected objects. Otherwise you'll
 need to find out what ID stands for which object type.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/get-res.json
 
@@ -35,7 +35,7 @@ Required permission: `any`
 
 `GET`-Request sent: `/api/v1/online_notifications/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/get-id-res.json
 
@@ -47,7 +47,7 @@ Required permission: `any`
 
 `PUT`-Request sent: `/api/v1/online_notifications/{id}`
 
-::::details Show request/response
+::::details
 
 ::: tabs key:reqres
 
@@ -68,7 +68,7 @@ Required permission: `any`
 
 `DELETE`-Request sent: `/api/v1/online_notifications/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/delete-id-res.json
 
@@ -80,7 +80,7 @@ Required permission: `any`
 
 `POST`-Request sent: `/api/v1/online_notifications/mark_all_as_read`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
 

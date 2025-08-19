@@ -38,7 +38,9 @@ General limitations for all migrations:
 
 ## Specific Migration Guides
 
-:::info Missing a migration source?
+:::info
+
+**Missing a migration source?**
 
 If your system it not mentioned yet, you'll have two options. You can either
 use Zammad's powerful API or drop our

@@ -15,7 +15,7 @@ Technisch können Kunden nur ihre eigene Organisation sehen, sofern zutreffend.
 
 `GET`-Anfrage gesendet: `/api/v1/organizations`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/organizations/get-res.json
 
@@ -31,7 +31,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.organization`
 Technisch können die betreffenden Benutzer nur ihre eigene Organisation sehen.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/organizations/get-id-res.json
 
@@ -43,7 +43,7 @@ Erforderliche Berechtigung: `admin.organization`
 
 `POST`-Anfrage gesendet: `/api/v1/organizations`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -64,7 +64,7 @@ Erforderliche Berechtigung: `admin.organization`
 
 `PUT`-Anfrage gesendet: `/api/v1/organizations/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -98,7 +98,7 @@ Erwägen Sie die Verwendung von Zammads Datenschutzfunktion über die Benutzerob
 mehr Kontrolle.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

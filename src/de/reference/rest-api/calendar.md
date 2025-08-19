@@ -15,7 +15,7 @@ Erforderliche Berechtigung: `admin.calendar`
 
 `GET`-Anfrage gesendet: `/api/v1/calendars`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/get-res.json
 
@@ -27,7 +27,7 @@ Erforderliche Berechtigung: `admin.calendar`
 
 `GET`-Anfrage gesendet: `/api/v1/calendars/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/get-id-res.json
 
@@ -39,7 +39,7 @@ Erforderliche Berechtigung: `admin.calendar`
 
 `POST`-Anfrage gesendet: `/api/v1/calendars`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:req-res
 
@@ -60,7 +60,7 @@ Erforderliche Berechtigung: `admin.calendar`
 
 `PUT`-Anfrage gesendet: `/api/v1/calendars/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:req-res
 
@@ -92,7 +92,7 @@ Das Entfernen von Kalendern mit Referenzen in SLA-Konfigurationen ist nicht mög
 `"error": "Can't delete, object has references."`. Dies ist _kein_ Fehler.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/delete-id-res.json
 

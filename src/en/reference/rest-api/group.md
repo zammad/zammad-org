@@ -20,7 +20,7 @@ Required permission: `admin.group`
 
 `GET`-Request sent: `/api/v1/groups`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/get-res.json
 
@@ -32,7 +32,7 @@ Required permission: `admin.group`
 
 `GET`-Request sent: `/api/v1/groups/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/get-id-res.json
 
@@ -44,7 +44,7 @@ Required permission: `admin.group`
 
 `POST`-Request sent: `/api/v1/groups`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -65,7 +65,7 @@ Required permission: `admin.group`
 
 `PUT`-Request sent: `/api/v1/groups/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -101,7 +101,7 @@ all existing tickets to new groups.
 
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/delete-id-res.json
 

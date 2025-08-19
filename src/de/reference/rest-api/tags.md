@@ -13,7 +13,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
 `GET`-Anfrage gesendet: `/api/v1/tags?object=Ticket&o_id={ticket id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tags/get-res.json
 
@@ -25,7 +25,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
 `POST`-Anfrage gesendet: `/api/v1/tags/add`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -51,7 +51,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 
 `DELETE`-Anfrage gesendet: `/api/v1/tags/remove`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -74,7 +74,7 @@ Erforderliche Berechtigung: `admin.tag`
 
 `GET`-Anfrage gesendet: `/api/v1/tag_list`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tag_list/get-res.json
 
@@ -86,7 +86,7 @@ Erforderliche Berechtigung: `admin.tag`
 
 `POST`-Anfrage gesendet: `/api/v1/tag_list`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -107,7 +107,7 @@ Erforderliche Berechtigung: `admin.tag`
 
 `PUT`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -128,7 +128,7 @@ Erforderliche Berechtigung: `admin.tag`
 
 `DELETE`-Anfrage gesendet: `/api/v1/tag_list/{tag id}`
 
-::: details Show response
+::: details
 
 Response:
 

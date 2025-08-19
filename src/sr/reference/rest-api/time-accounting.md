@@ -11,7 +11,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 `GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-res.json
 
@@ -24,7 +24,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 `GET`-Request sent: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/time_accountings/get-ticket-id-timeaccounting-id-res.json
 
@@ -36,7 +36,7 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 `POST`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -58,7 +58,7 @@ Required permission: `admin.time_accounting`
 `PUT`-Request sent: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -80,7 +80,7 @@ Required permission: `admin.time_accounting`
 `DELETE`-Request sent: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
-::: details Show response
+::: details
 
 Response:
 

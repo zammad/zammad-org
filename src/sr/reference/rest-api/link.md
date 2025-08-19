@@ -11,7 +11,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 `GET`-Request sent: `/api/v1/links`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -32,7 +32,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 `POST`-Request sent: `/api/v1/links/add`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -59,7 +59,7 @@ Required permission: `ticket.agent` **or** `admin`
 
 `DELETE`-Request sent: `/api/v1/links/remove`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 

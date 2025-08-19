@@ -23,7 +23,7 @@ Verwenden Sie den Erweiterungs-Parameter, um die betroffenen Objekte zu ermittel
 müssen Sie herausfinden, welche ID für welchen Objekttyp steht.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/get-res.json
 
@@ -35,7 +35,7 @@ Erforderliche Erlaubnis: `any`
 
 `GET`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/get-id-res.json
 
@@ -47,7 +47,7 @@ Erforderliche Erlaubnis: `any`
 
 `PUT`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
-::::details Show request/response
+::::details
 
 ::: tabs key:reqres
 
@@ -68,7 +68,7 @@ Erforderliche Erlaubnis: `any`
 
 `DELETE`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/delete-id-res.json
 
@@ -80,7 +80,7 @@ Erforderliche Erlaubnis: `any`
 
 `POST`-Anfrage gesendet: `/api/v1/online_notifications/mark_all_as_read`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
 

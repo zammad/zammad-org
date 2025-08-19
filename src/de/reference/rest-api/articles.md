@@ -107,7 +107,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_articles/by_ticket/get-ticket-id-res.json
 
@@ -119,7 +119,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_articles/{article id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_articles/get-article-id-res.json
 
@@ -139,7 +139,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 
 ### Einfacher Artikel
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -156,7 +156,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 
 ### Artikel mit angehängten Dateien
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -176,7 +176,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 Inline-Bilder können durch Angabe von Daten-URIs in Ihrem HTML-Markup
 verwendet werden.
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 

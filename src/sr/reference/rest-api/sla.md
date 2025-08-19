@@ -15,7 +15,7 @@ Required permission: `admin.sla`
 
 `GET`-Request sent: `/api/v1/slas`
 
-::: details Show response
+::: details
 
 Response:
 
@@ -29,7 +29,7 @@ Required permission: `admin.sla`
 
 `GET`-Request sent: `/api/v1/slas/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/slas/get-id-res.json
 
@@ -62,7 +62,7 @@ Required permission: `admin.sla`
 
 `PUT`-Request sent: `/api/v1/slas/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -89,7 +89,7 @@ Required permission: `admin.sla`
 Please note that removing SLA configurations cannot be undone.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

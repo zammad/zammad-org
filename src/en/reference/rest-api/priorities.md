@@ -12,7 +12,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 `GET`-Request sent: `/api/v1/ticket_priorities`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_priorities/get-res.json
 
@@ -25,7 +25,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 `GET`-Request sent: `/api/v1/ticket_priorities/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_priorities/get-id-res.json
 
@@ -92,7 +92,7 @@ Consider either setting said priority to `active: false` or adjust all
 tickets with the to remove priority to another priority.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

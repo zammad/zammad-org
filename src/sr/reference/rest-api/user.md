@@ -17,7 +17,7 @@ Required permission: any
 
 `GET`-Request sent: `/api/v1/users/me`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/me/get-res.json
 
@@ -29,7 +29,7 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 `GET`-Request sent: `/api/v1/users`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/get-res.json
 
@@ -46,7 +46,7 @@ Technically, any listings will return user's own information only.
 
 `GET`-Request sent: `/api/v1/users/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/get-user-id-res.json
 
@@ -77,7 +77,7 @@ Unsure which attributes you can use or set? Run a GET query on any
 fitting user existing in your instance already.
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -162,7 +162,7 @@ Required permission: `admin.user`
 
 `DELETE`-Request sent: `/api/v1/users/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/delete-id-res.json
 

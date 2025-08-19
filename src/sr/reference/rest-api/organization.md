@@ -15,7 +15,7 @@ Technically, customers can only see their own organization if applicable.
 
 `GET`-Request sent: `/api/v1/organizations`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/organizations/get-res.json
 
@@ -31,7 +31,7 @@ Required permission: `ticket.agent` **or** `admin.organization`
 Technically, any users in question can only see their own organization.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/organizations/get-id-res.json
 
@@ -43,7 +43,7 @@ Required permission: `admin.organization`
 
 `POST`-Request sent: `/api/v1/organizations`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -64,7 +64,7 @@ Required permission: `admin.organization`
 
 `PUT`-Request sent: `/api/v1/organizations/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -98,7 +98,7 @@ Consider using Zammad's Data Privacy feature via UI for
 more control instead.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

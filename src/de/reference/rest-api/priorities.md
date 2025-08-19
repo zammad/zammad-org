@@ -12,7 +12,7 @@ Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_priorities`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_priorities/get-res.json
 
@@ -25,7 +25,7 @@ Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_priorities/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_priorities/get-id-res.json
 
@@ -92,7 +92,7 @@ Erwägen Sie, entweder die besagte Priorität auf `active: false` zu setzen oder
 Tickets mit der Priorität auf eine andere Priorität abzuändern.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

@@ -11,7 +11,7 @@ Required permission: `ticket.agent`.
 
 `GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/shared_draft/get-ticket-id-res.json
 
@@ -23,7 +23,7 @@ Required permission: `ticket.agent`.
 
 `PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -44,7 +44,7 @@ Required permission: `ticket.agent`
 
 `PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -65,7 +65,7 @@ Required permission: `ticket.agent`
 
 `DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/shared_draft/delete-ticket-id-res.json
 

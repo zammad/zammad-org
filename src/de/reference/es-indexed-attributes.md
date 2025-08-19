@@ -35,34 +35,40 @@ aussehen.
 
 === Ticket
 
-::: details Show complete ticket structure <Badge type="danger" text="Huge content ahead!"/>
+Open details to show complete ticket structure: <Badge type="danger" text="Huge content ahead!"/>
+
+::: details
 
 <<< @/fixtures/es-indexed-attributes/complete-ticket.json
 
 :::
 
-=== Artikel
+=== Article
 
-Die folgende Struktur ist bereits im Ticket-Index enthalten (siehe erster Tab) und wird hier aus Gründen der
-Übersicht separat aufgeführt.
+The following structure is already included in the ticket index (see first tab) and added here separately for
+overview reasons. Open details to see the article content:
 
-::: details Show complete article structure
+::: details
 
 <<< @/fixtures/es-indexed-attributes/complete-article.json
 
 :::
 
-=== Benutzer
+=== User
 
-::: details Show complete user structure
+Open details to show complete user structure:
+
+::: details
 
 <<< @/fixtures/es-indexed-attributes/complete-user.json
 
 :::
 
-=== Organisation
+=== Organization
 
-::: details Show complete organization structure
+Open details to show complete organization structure:
+
+::: details
 
 <<< @/fixtures/es-indexed-attributes/complete-organization.json
 
@@ -79,7 +85,7 @@ Der folgende Index enthält folgende Informationen: `*_ticket`
 Array mit allen zum Ticket gehörenden Artikeln. Siehe Abschnitt
 [Artikel](#artikel) für weitere Details.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/article.json
 
@@ -95,7 +101,7 @@ Beispiel: `1`
 
 Vollständige Struktur und Elemente der Checkliste.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/checklist.json
 
@@ -133,7 +139,7 @@ Beispiele: `null`, `11`
 
 Absender des Artikels (System, Agent, Kunde)
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/create_article_sender.json
 
@@ -149,7 +155,7 @@ Beispiele: `1`, `2`
 
 Informationen zum ersten Artikel eines Tickets.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/create_article_type.json
 
@@ -172,7 +178,7 @@ Beispiel: `"2025-02-24T16:17:27.210Z"`
 Angaben zu dem Benutzer, der das Ticket erstellt hat. Weitere Informationen
 finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/created_by.json
 
@@ -227,7 +233,7 @@ Beispiele: `null`, `11`
 Details zur Gruppe des Tickets. Weitere Informationen finden Sie im
 Abschnitt [Gruppe](#gruppe).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/group.json
 
@@ -294,7 +300,7 @@ Beispiele: `1010138`, `202006231010138`
 Details der Organisation des Kunden des Tickets. Weitere Informationen
 finden Sie im Abschnitt [Organisation](#organisation).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/organization.json
 
@@ -311,7 +317,7 @@ Beispiele: `null`, `2`
 Details zum Benutzer, der Besitzer des Tickets ist. Weitere Informationen
 finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/owner.json
 
@@ -341,7 +347,7 @@ Systemfunktionen.
 Details zur Priorität des Tickets. Weitere Informationen finden Sie im
 Abschnitt [Priorität](#ticket-prioritat).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/priority.json
 
@@ -358,7 +364,7 @@ Beispiel: `2`
 Details über den Status des Tickets. Weitere Informationen finden Sie im
 Abschnitt [Status](#ticket-status).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/state.json
 
@@ -426,7 +432,7 @@ Beispiel: `"2025-02-24T16:28:38.303Z"`
 Details des Benutzers, der das Ticket aktualisiert hat. Weitere
 Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/updated_by.json
 
@@ -568,7 +574,7 @@ Beispiel: `"Warten auf Schließen"`
 Enthält alle Informationen über den Status bei Rückfragen, falls zutreffend;
 kann je nach Art des Status nicht verfügbar sein
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/next_state.json
 
@@ -590,7 +596,7 @@ Beispiel: `"null"`
 
 Enthält alle verfügbaren Informationen über den Statustyp
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/state_type.json
 
@@ -860,7 +866,7 @@ Beispiele: `""`, `"Ein Text."`
 Details zur Organisation, in welcher der Benutzer Mitglied ist. Weitere
 Informationen finden Sie im Abschnitt [Organisation](#organisation).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/organization.json
 
@@ -901,7 +907,7 @@ Beispiele: `null`, `"2025-02-24"`
 
 Die festgelegten Berechtigungen des Benutzers als Array.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/permissions.json
 
@@ -918,7 +924,7 @@ Beispiele: `""`, `"+49 1234 567 890"`
 Details zu den Einstellungen des Benutzers, kann `notification_config`,
 `locale` und andere interne Systeminformationen enthalten.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/preferences.json
 
@@ -993,7 +999,7 @@ Beispiel: `"2025-02-22T12:47:54.807Z"`
 Details des Benutzers, der die Organisation erstellt hat. Weitere
 Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/created_by.json
 
@@ -1029,7 +1035,7 @@ Beispiel: `1`
 Array mit Details zu jedem Benutzer, der Mitglied der Organisation
 ist. Weitere Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/members.json
 
@@ -1064,7 +1070,7 @@ Beispiel: `"2025-02-22T12:47:54.807Z"`
 Angaben zu dem Benutzer, der die Organisation aktualisiert hat. Weitere
 Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/updated_by.json
 
@@ -1115,7 +1121,7 @@ Beispiel: `1`
 
 Details zur E-Mail-Adresse der Gruppe.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/email_address.json
 
@@ -1163,7 +1169,7 @@ Beispiel: `null`
 
 Details zur Signatur der Gruppe.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/signature.json
 
@@ -1274,7 +1280,7 @@ Beispiel: `"2025-02-25T08:47:56.753Z"`
 
 Details zu Einstellungen, interne Informationen.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/call-log-preferences.json
 
@@ -1330,7 +1336,7 @@ Der folgende Index enthält folgende Informationen: `*_chat_session`
 
 Details zum Thema des Chats.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/chat.json
 
@@ -1364,7 +1370,7 @@ Beispiel: `1`
 
 Array mit allen Nachrichten des Chats.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/messages.json
 
@@ -1380,7 +1386,7 @@ Beispiele: `Null`, `"John Doe"`
 
 Verschiedene interne Metadaten der session_id
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/chat-session-preferences.json
 
@@ -1421,7 +1427,7 @@ Beispiele: `null`, `3`
 Details zum Chat Agent. Siehe Abschnitt [Benutzer](#benutzer) für weitere
 Informationen.
 
-::: details Example
+::: details
 
 <<< @/fixtures/es-indexed-attributes/created_by.json
 

@@ -17,7 +17,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 `GET`-Anfrage gesendet: `/api/v1/mentions`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/mentions/get-res.json
 
@@ -29,7 +29,7 @@ Erforderliche Berechtigung: `ticket.agent`
 
 `POST`-Anfrage gesendet: `/api/v1/mentions`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -58,7 +58,7 @@ Erforderliche Berechtigung: `ticket.agent`
 
 `DELETE`-Anfrage gesendet: `/api/v1/mentions/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/mentions/delete-id-res.json
 

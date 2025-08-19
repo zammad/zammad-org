@@ -39,15 +39,17 @@ Allgemeine Einschränkungen für alle Migrationen:
 
 ## Spezifische Migrationsanleitungen
 
-:::info Missing a migration source?
+:::info
 
-Wenn Ihr System noch nicht aufgeführt ist, haben Sie zwei Möglichkeiten. Sie können entweder
-die leistungsstarke API von Zammad nutzen oder unserem
-[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact){target=_blank} schicken für eine kundenspezifische
-Entwicklung oder sogar für das Sponsoring eines Migrations-Features..
+**Missing a migration source?**
 
-Migrationen sind auch für von Zammad gehostete Installationen verfügbar! Kontaktieren Sie den Support für weitere
-Informationen!
+If your system it not mentioned yet, you'll have two options. You can either
+use Zammad's powerful API or drop our
+[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
+development or even migrator sponsoring.
+
+Migrations are available for hosted setups too! Contact support for further
+information!
 :::
 
 ### Freshdesk

@@ -11,7 +11,7 @@ Erforderliche Berechtigung: `admin.role`
 
 `GET` - Anfrage gesendet: `/api/v1/roles`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/roles/get-res.json
 
@@ -23,7 +23,7 @@ Erforderliche Berechtigung: `admin.role`
 
 `GET` -Anfrage gesendet: `/api/v1/roles/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/roles/get-id-res.json
 
@@ -35,7 +35,7 @@ Erforderliche Berechtigung: `admin.role`
 
 `POST` -Anfrage gesendet: `/api/v1/roles`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -56,7 +56,7 @@ Erforderliche Berechtigung: `admin.role`
 
 `PUT` -Anfrage gesendet: `/api/v1/roles/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 

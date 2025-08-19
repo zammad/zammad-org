@@ -18,7 +18,7 @@ Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_states`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_states/get-res.json
 
@@ -31,7 +31,7 @@ Erforderliche Berechtigung: `admin.object` **oder** `ticket.agent` **oder**
 
 `GET`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_states/get-id-res.json
 
@@ -51,7 +51,7 @@ Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die
 [Rails Konsole](/de/reference/console).
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -72,7 +72,7 @@ Erforderliche Berechtigung: `admin.object`
 
 `PUT`-Anfrage gesendet: `/api/v1/ticket_states/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -106,7 +106,7 @@ Erwägen Sie, entweder den besagten Status auf `active: false` zu setzen oder al
 Tickets mit dem Status auf einen anderen Status abzuändern.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

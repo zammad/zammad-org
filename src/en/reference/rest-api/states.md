@@ -18,7 +18,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 `GET`-Request sent: `/api/v1/ticket_states`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_states/get-res.json
 
@@ -31,7 +31,7 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 `GET`-Request sent: `/api/v1/ticket_states/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_states/get-id-res.json
 
@@ -51,7 +51,7 @@ As there's no endpoint for retrieving these, please use the
 [rails console](/en/reference/console).
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -72,7 +72,7 @@ Required permission: `admin.object`
 
 `PUT`-Request sent: `/api/v1/ticket_states/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -106,7 +106,7 @@ Consider either setting said state to `active: false` or adjust all
 tickets with the to remove state to another state.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

@@ -15,7 +15,7 @@ Required permission: `admin.calendar`
 
 `GET`-Request sent: `/api/v1/calendars`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/get-res.json
 
@@ -27,7 +27,7 @@ Required permission: `admin.calendar`
 
 `GET`-Request sent: `/api/v1/calendars/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/get-id-res.json
 
@@ -39,7 +39,7 @@ Required permission: `admin.calendar`
 
 `POST`-Request sent: `/api/v1/calendars`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:req-res
 
@@ -60,7 +60,7 @@ Required permission: `admin.calendar`
 
 `PUT`-Request sent: `/api/v1/calendars/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:req-res
 
@@ -92,7 +92,7 @@ via API - this will be indicated by
 `"error": "Can't delete, object has references."`. This is _not_ a bug.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/calendars/delete-id-res.json
 

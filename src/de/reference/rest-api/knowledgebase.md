@@ -24,7 +24,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 
 `POST`-Request gesendet: `/api/v1/knowledge_bases/init`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/post-init.json
 
@@ -37,7 +37,7 @@ Erforderliche Berechtigung: `knowledge_base.reader` oder
 
 `GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-kb.json
 
@@ -49,7 +49,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/manage/{ID of your KB}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -71,7 +71,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/permissions`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-permissions.json
 
@@ -84,7 +84,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/permissions`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -108,7 +108,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_categories`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -135,7 +135,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/reorder_root_categories`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -158,7 +158,7 @@ Erforderliche Berechtigung: `knowledge_base.reader` oder
 `GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-::: details Show response:
+::: details:
 
 <<< @/fixtures/rest-api/knowledgebase/get-categories.json
 
@@ -171,7 +171,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `POST`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -193,7 +193,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -215,7 +215,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-::: details Show response:
+::: details:
 
 <<< @/fixtures/rest-api/knowledgebase/delete-categories.json
 
@@ -228,7 +228,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/permissions`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-categories-permissions.json
 
@@ -241,7 +241,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PUT`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/permissions`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -265,7 +265,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_answers`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -293,7 +293,7 @@ Wenn Sie den Inhalt einer Antwort abrufen möchten, fügen Sie die Parameter `?f
 Anfrage für die folgende Antwort enthielt die Parameter.
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-answers.json
 
@@ -305,7 +305,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 
 `POST`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -327,7 +327,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `PATCH`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -349,7 +349,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/delete-answers.json
 
@@ -400,7 +400,7 @@ Anhang hinzufügen:
 `POST`-Request mit Payload gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}/attachments`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/post-answers-attachment.json
 
@@ -411,7 +411,7 @@ Anhang löschen:
 `DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}/attachments/{ID of attachment}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/delete-answers-attachments.json
 

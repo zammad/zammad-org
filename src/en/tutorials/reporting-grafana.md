@@ -48,7 +48,9 @@ Everything else relies on your environment and is out of our scope.
 :::: tip
 Replace `zammad_production_` with your fitting prefix.
 
-::: details How to query the index?
+Click on details to see how to query the index.
+
+::: details
 Adjust the following command to your environment:
 
 ```sh

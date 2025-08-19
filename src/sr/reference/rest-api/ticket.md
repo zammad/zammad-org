@@ -17,7 +17,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/tickets`
 
-:::details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/get-res.json
 
@@ -29,7 +29,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/tickets/{ticket id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/tickets/get-ticket-id-res.json
 
@@ -59,7 +59,7 @@ _E.g.:_ `"mentions": [1, 5, 7, 8],`
 
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -126,7 +126,7 @@ Please note that removing tickets cannot be undone. All data (e.g.
 articles & attachments) will be lost.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

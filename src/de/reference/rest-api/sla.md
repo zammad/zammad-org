@@ -15,7 +15,7 @@ Erforderliche Berechtigung: `admin.sla`
 
 `GET`-Anfrage gesendet: `/api/v1/slas`
 
-::: details Show response
+::: details
 
 Response:
 
@@ -29,7 +29,7 @@ Erforderliche Berechtigung: `admin.sla`
 
 `GET` - Anfrage gesendet: `/api/v1/slas/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/slas/get-id-res.json
 
@@ -62,7 +62,7 @@ Erforderliche Berechtigung: `admin.sla`
 
 `PUT`-Anfrage gesendet: `/api/v1/slas/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -89,7 +89,7 @@ Erforderliche Berechtigung: `admin.sla`
 Bitte beachten Sie, dass das Entfernen von SLA-Konfigurationen nicht rückgängig gemacht werden kann.
 :::
 
-::: details Show response
+::: details
 
 Response:
 

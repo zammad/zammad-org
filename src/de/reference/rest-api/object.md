@@ -19,7 +19,7 @@ Erforderliche Berechtigung: `admin.object`
 
 `GET`-Anfrage gesendet: `/api/v1/object_manager_attributes`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/get-res.json
 
@@ -31,7 +31,7 @@ Erforderliche Berechtigung: `admin.object`
 
 `GET`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/get-id-res.json
 
@@ -45,7 +45,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Boolean
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -62,7 +62,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Datum
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -79,7 +79,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Datum & Zeit
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -96,7 +96,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Integer
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -113,7 +113,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Einfachauswahl
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -130,7 +130,7 @@ Erforderliche Berechtigung: `admin.object`
 
 ### Text
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:regres
 
@@ -160,7 +160,7 @@ Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.
 
 ### Einfach-Baumauswahl
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -223,7 +223,7 @@ Datenbankmigrationen aktiv).
 
 `PUT`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -250,7 +250,7 @@ Erforderliche Berechtigung: `admin.object`
 
 `DELETE`-Anfrage gesendet: `/api/v1/object_manager_attributes/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/delete-id-res.json
 
@@ -270,7 +270,7 @@ deaktiviert, startet Zammad automatisch neu - rechnen Sie mit einer kurzen Ausfa
 `POST`-Anfrage gesendet:
 `/api/v1/object_manager_attributes_execute_migrations`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes_execute_migrations/post-res.json
 

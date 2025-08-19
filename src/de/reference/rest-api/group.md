@@ -20,7 +20,7 @@ Erforderliche Berechtigung: `admin.group`
 
 `GET`-Anfrage gesendet: `/api/v1/groups`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/get-res.json
 
@@ -32,7 +32,7 @@ Erforderliche Berechtigung: `admin.group`
 
 `GET`-Anfrage gesendet: `/api/v1/groups/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/get-id-res.json
 
@@ -44,7 +44,7 @@ Erforderliche Berechtigung: `admin.group`
 
 `POST`-Anfrage gesendet: `/api/v1/groups`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -65,7 +65,7 @@ Erforderliche Berechtigung: `admin.group`
 
 `PUT`-Anfrage gesendet: `/api/v1/groups/{id}`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -101,7 +101,7 @@ alle bestehenden Tickets in neue Gruppen verschoben werden.
 
 :::
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/groups/delete-id-res.json
 

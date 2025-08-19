@@ -104,7 +104,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_articles/by_ticket/get-ticket-id-res.json
 
@@ -116,7 +116,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 `GET`-Request sent: `/api/v1/ticket_articles/{article id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket_articles/get-article-id-res.json
 
@@ -136,7 +136,7 @@ permission is mandatory for this.
 
 ### Plain Article
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -153,7 +153,7 @@ permission is mandatory for this.
 
 ### Article with Attached Files
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -172,7 +172,7 @@ permission is mandatory for this.
 
 Inline images can be used by providing data URIs in your HTML markup.
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 

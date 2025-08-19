@@ -11,7 +11,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
 `GET`-Anfrage gesendet: `/api/v1/links`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -32,7 +32,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
 `POST`-Anfrage gesendet: `/api/v1/links/add`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -59,7 +59,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
 `DELETE`-Anfrage gesendet: `/api/v1/links/remove`
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 

@@ -161,7 +161,9 @@ Example:
 This section title uses a badge of the type "warning". There are other badges available, see
 <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 Text/title to add a badge <Badge type="warning" text="custom text" />
@@ -174,7 +176,9 @@ Text/title to add a badge <Badge type="warning" text="custom text" />
 ::::: info
 This is an info box.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: info
@@ -188,7 +192,9 @@ This is an info box.
 ::::: tip
 This is a tip.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: tip
@@ -202,7 +208,9 @@ This is a tip box.
 ::::: warning
 This is a warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -216,7 +224,9 @@ This is a warning box.
 ::::: danger
 This is a dangerous warning.
 
-:::: details Usage
+**Usage:**
+
+:::: details
 
 ```md
 ::: warning
@@ -230,11 +240,10 @@ This is a dangerous warning.
 :::: details
 This is a details block.
 
-Usage:
+**Usage:**
 
 ```md
-
-::: details Box title shown in collapsed state
+::: details
 This is the content shown in the expanded state.
 :::
 
@@ -251,7 +260,9 @@ Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : This is one definition of the second term.
 : This is another definition of the second term.
 
-::: details Usage
+**Usage:**
+
+::: details
 
 ```md
 First Term <Badge type="info" text="tag1" />

@@ -11,7 +11,7 @@ Erforderliche Berechtigung: `user_preferences.access_token`
 
 `GET`-Anfrage gesendet: `/api/v1/user_access_token`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/user_access_token/get-res.json
 
@@ -23,7 +23,7 @@ Erforderliche Berechtigung: `user_preferences.access_token`
 
 `POST`-Anfrage gesendet: `/api/v1/user_access_token`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -49,7 +49,7 @@ Erforderliche Berechtigung: `user_preferences.access_token`
 
 `DELETE`-Anfrage gesendet: `/api/v1/user_access_token/{id}`
 
-::: details Show response
+::: details
 
 Response:
 

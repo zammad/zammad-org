@@ -17,7 +17,7 @@ Erforderliche Berechtigung: beliebig
 
 `GET`-Anfrage gesendet: `/api/v1/users/me`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/me/get-res.json
 
@@ -29,7 +29,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.user`
 
 `GET`-Anfrage gesendet: `/api/v1/users`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/get-res.json
 
@@ -46,7 +46,7 @@ Technisch gesehen werden bei allen Auflistungen nur die Informationen des Benutz
 
 `GET`- Anfrage gesendet: `/api/v1/users/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/get-user-id-res.json
 
@@ -77,7 +77,7 @@ Sind Sie unsicher, welche Attribute Sie verwenden oder einstellen können? Führ
 Benutzer aus, der bereits in Ihrer Instanz vorhanden ist.
 :::
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:reqres
 
@@ -164,7 +164,7 @@ Erforderliche Berechtigung: `admin.user`
 
 `DELETE`-Anfrage gesendet: `/api/v1/users/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/users/delete-id-res.json
 

@@ -99,7 +99,9 @@ This switch will provide even more information - at least named relations on
 top of the ID ones. Below you can find two examples, one for ticket and one
 for user:
 
-:::: details User payload
+**User payload:**
+
+:::: details
 :::tabs
 
 === expand=true
@@ -113,7 +115,9 @@ for user:
 :::
 ::::
 
-:::: details Ticket payload
+**Ticket payload:**
+
+:::: details
 :::tabs
 
 === expand=true
@@ -177,7 +181,7 @@ explicitly covered in this documentation:
 
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
@@ -188,7 +192,7 @@ parameter. Using it resolves the IDs and outputs values/names in addition.
 
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
@@ -200,7 +204,7 @@ attributes and a `total_count` of search results as well.
 
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
@@ -212,7 +216,7 @@ It can be combined with `full` and `expand`.
 `GET`-Request sent:
 `/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
@@ -224,7 +228,7 @@ search results.
 `GET`-Request sent:
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
@@ -239,7 +243,7 @@ parameters are different to the ones for the endpoint search.
 
 `GET`-Request sent: `/api/v1/search?query=welcome`
 
-::: details Show response
+::: details
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 

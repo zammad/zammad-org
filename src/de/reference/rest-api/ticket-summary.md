@@ -21,7 +21,7 @@ the AI job may take a few seconds.
 Sample response if the generation of a new summary was just triggered by the
 request:
 
-:::details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket-summary/post-res-null.json
 
@@ -30,7 +30,7 @@ request:
 Sample response for an existing summary (e.g. for the same ticket like above
 after waiting a few seconds):
 
-:::details Show response
+::: details
 
 <<< @/fixtures/rest-api/ticket-summary/post-res-summary.json
 

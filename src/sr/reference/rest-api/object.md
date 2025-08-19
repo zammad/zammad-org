@@ -19,7 +19,7 @@ Required permission: `admin.object`
 
 `GET`-Request sent: `/api/v1/object_manager_attributes`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/get-res.json
 
@@ -31,7 +31,7 @@ Required permission: `admin.object`
 
 `GET`-Request sent: `/api/v1/object_manager_attributes/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/get-id-res.json
 
@@ -45,7 +45,7 @@ Required permission: `admin.object`
 
 ### Boolean
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -62,7 +62,7 @@ Required permission: `admin.object`
 
 ### Date
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -79,7 +79,7 @@ Required permission: `admin.object`
 
 ### Date Time
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -96,7 +96,7 @@ Required permission: `admin.object`
 
 ### Integer
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -113,7 +113,7 @@ Required permission: `admin.object`
 
 ### Select
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -130,7 +130,7 @@ Required permission: `admin.object`
 
 ### Text
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:regres
 
@@ -160,7 +160,7 @@ data. E.g.: email demands an email address to be provided.
 
 ### Tree Select
 
-:::: details Show request/response
+:::: details
 
 ::: tabs key:regres
 
@@ -222,7 +222,7 @@ executing the database migrations).
 
 `PUT`-Request sent: `/api/v1/object_manager_attributes/{id}`
 
-::::: details Show request/response
+::::: details
 
 :::: tabs key:reqres
 
@@ -249,7 +249,7 @@ Required permission: `admin.object`
 
 `DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes/delete-id-res.json
 
@@ -268,7 +268,7 @@ Zammad automatically restarts - expect a short downtime.
 
 `POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`
 
-::: details Show response
+::: details
 
 <<< @/fixtures/rest-api/object_manager_attributes_execute_migrations/post-res.json
 
