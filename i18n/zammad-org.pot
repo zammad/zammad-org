@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-18 13:24+0200\n"
+"POT-Creation-Date: 2025-08-19 13:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3172,8 +3172,10 @@ msgid ""
 "admin section.\n"
 msgstr ""
 
-#. type: Title ##
+#. type: Title #
 #: src/en/documentation/use/guides/ai.md:18
+#: src/en/reference/rest-api/ticket-summary.md:1
+#: src/en/reference/rest-api/ticket-summary.md:6
 #, markdown-text, no-wrap
 msgid "Ticket Summary"
 msgstr ""
@@ -16931,6 +16933,7 @@ msgstr ""
 #: src/en/reference/rest-api/mentions.md:58
 #: src/en/reference/rest-api/shared-draft.md:44
 #: src/en/reference/rest-api/shared-draft.md:65
+#: src/en/reference/rest-api/ticket-summary.md:11
 #, markdown-text
 msgid "Required permission: `ticket.agent`"
 msgstr ""
@@ -21198,6 +21201,64 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:18
+#, markdown-text
+msgid ""
+"The following POST request fetches an existing summary, if there is one "
+"available in the ticket. If there is no summary available or the ticket was "
+"changed after the existing summary was created, a new summary is "
+"triggered. In such a case, you won’t get a response with the summary. To get "
+"a summary, you have to re-send the request with a small delay considering "
+"the AI job may take a few seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:20
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/ticket-summary.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:28
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting a few seconds):"
+msgstr ""
+
+#. type: Fenced div block (details Show response)
+#: src/en/reference/rest-api/ticket-summary.md:29
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 

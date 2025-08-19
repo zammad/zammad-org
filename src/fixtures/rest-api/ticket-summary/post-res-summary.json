@@ -1,0 +1,17 @@
+// HTTP Code 200 Ok
+
+{
+  "result": {
+    "language": "en-US",
+    "customer_mood": "concerned",
+    "open_questions": [
+      "Can you please tell us what color the LED is flashing and how often it flashes?"
+    ],
+    "upcoming_events": [],
+    "customer_emotion": "😐",
+    "customer_request": "Laptop not working [Order 931529477]",
+    "conversation_summary": "Customer Petra Parker reports a problem with her customized laptop, which only flashes one LED when pressed. Agent Alexander Jensen asks for more details and clarifies the issue with 2nd level support.",
+    "fingerprint_md5": "e516dda67c26605f31ea5ea9f8b184cf",
+    "relevant_for_current_user": true
+  }
+}
