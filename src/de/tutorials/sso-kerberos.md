@@ -200,8 +200,8 @@ Wenn Sie die Ausfallzeit minimieren möchten, können Sie diesen Schritt zum
 Schluss ausführen; bedenken Sie jedoch, dass Apache nicht startet, wenn der
 Port, auf dem gelauscht werden soll, von NGINX verwendet wird.
 
-Wenn Sie aus irgendeinem Grund dieses Tutorial nicht abschließen können,
-schalten Sie einfach Apache aus und stellen NGINX wieder her:
+If you can't complete this tutorial for any reason, simply turn off Apache
+and restore NGINX:
 
 ::: details
 
@@ -225,9 +225,9 @@ systemctl start nginx
 
 ### 2b. Apache vorkonfigurieren
 
-Diese Dokumentation setzt eine bereits funktionierende Apache-Konfiguration
-voraus.  Sie sollten einen Blick in die [Webserver
-Konfiguration](/de/tutorials/webserver-config) werfen, bevor Sie fortfahren.
+This documentation expects an already working Apache configuration.  You
+should have a look at the [webserver configuration
+guide](/en/tutorials/webserver-config) before continuing.
 
 ### 2c. Weitere Apache-Abhängigkeiten installieren
 

@@ -22,10 +22,9 @@ title: Пакет
 инсталације или размотрите претплату на [Zammad сервис у
 облаку](https://zammad.com/en/pricing){target=_blank}.
 
-Да бисте испратили инсалационе кораке испод, може бити неопходно да
-инсталирате додатне алате као curl, gnupg и остале.
+To follow the installation steps below, tools like curl, gnupg and others
+are required. If they are not present on your system, install them:
 
-::::details Required Tools
 :::tabs key:distros
 
 === Ubuntu
@@ -59,7 +58,6 @@ sudo yum install wget epel-release
 ```
 
 :::
-::::
 
 ## Основе
 
@@ -414,7 +412,9 @@ instance, make sure to use a supported version and have a look at our
 
 Supported Elasticsearch versions are `7.8` - `9.x`.
 
-:::details Elasticsearch version history
+Elasticsearch version history for Zammad:
+
+:::details
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |

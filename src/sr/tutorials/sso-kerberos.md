@@ -194,7 +194,7 @@ If you wish to minimize downtime, you can save this step for last; just bear
 in mind that Apache will not start if the port it wants to listen on is
 being used by NGINX.
 
-If for any reason you can't complete this tutorial, simply turn off Apache
+If you can't complete this tutorial for any reason, simply turn off Apache
 and restore NGINX:
 
 ::: details
@@ -219,7 +219,7 @@ systemctl start nginx
 
 ### 2b. Pre-Configure Apache
 
-This documentation expects a already working Apache configuration.  You
+This documentation expects an already working Apache configuration.  You
 should have a look at the [webserver configuration
 guide](/en/tutorials/webserver-config) before continuing.
 

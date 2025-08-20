@@ -22,10 +22,9 @@ If your distribution is not supported, feel free to use a different installation
 method or consider using
 [Zammad's cloud service](https://zammad.com/en/pricing){target=_blank}.
 
-To follow the installation steps below, you might need to install additional
-tools like curl, gnupg and others.
+To follow the installation steps below, tools like curl, gnupg and others are
+required. If they are not present on your system, install them:
 
-::::details Required Tools
 :::tabs key:distros
 
 === Ubuntu
@@ -59,7 +58,6 @@ sudo yum install wget epel-release
 ```
 
 :::
-::::
 
 ## Basics
 
@@ -406,7 +404,9 @@ use a supported version and have a look at our
 
 Supported Elasticsearch versions are `7.8` - `9.x`.
 
-:::details Elasticsearch version history
+Elasticsearch version history for Zammad:
+
+:::details
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
