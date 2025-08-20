@@ -173,15 +173,15 @@ aufgeführt.
 
 #### Text und UI
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
-| Fields and UI elements    | **Name**                      | `**Name**`                      |
-| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
-| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
-| Add button                | ::+::                         | `::+::`                         |
-| Delete button             | ::x::                         | `::x::`                         |
-| Action menu               | ::a::                         | `::a::`                         |
+| Typ                       | Hervorhebung in Dokumentation     | Markdown Syntax                     |
+|---------------------------|-----------------------------------|-------------------------------------|
+| Buttons                   | `Sign in`                         | `` `Sign in` ``                     |
+| Felder und UI-Elemente    | **Name**                          | `**Name**`                          |
+| Orte/Pfade                | _Einstellungen > Kanäle > Email_  | `_Einstellungen > Kanäle > Email_`  |
+| Tastaturkürzel            | [[x]]                             | `[[x]]`                             |
+| Hinzufügen Schaltfläche   | ::+::                             | `::+::`                             |
+| Löschen Schaltfläche      | ::x::                             | `::x::`                             |
+| Aktions-Schaltfläche      | ::a::                             | `::a::`                             |
 
 #### Struktur der Überschrift
 
@@ -208,7 +208,7 @@ Dieser Abschnittstitel verwendet ein Badge des Typs "warning". Es sind auch
 andere Badges verfügbar, siehe
 <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-**Usage:**
+**Verwendung:**
 
 ::: details
 
@@ -221,9 +221,9 @@ Text/Titel, dem ein Badge hinzugefügt werden soll <Badge type="warning" text="f
 #### Spezial-Boxen
 
 ::::: info
-This is an info box.
+Dies ist eine Infobox.
 
-**Usage:**
+**Verwendung:**
 
 :::: details
 
@@ -237,9 +237,9 @@ Dies ist eine Infobox.
 :::::
 
 ::::: tip
-This is a tip.
+Dies ist ein Tipp.
 
-**Usage:**
+**Verwendung:**
 
 :::: details
 
@@ -253,9 +253,9 @@ Dies ist eine Tipp-Box.
 :::::
 
 ::::: warning
-This is a warning.
+Dies ist eine Warnung.
 
-**Usage:**
+**Verwendung:**
 
 :::: details
 
@@ -269,9 +269,9 @@ Dies ist eine Warnungs-Box.
 :::::
 
 ::::: danger
-This is a dangerous warning.
+Dies ist eine gefährliche Warnung.
 
-**Usage:**
+**Verwendung:**
 
 :::: details
 
@@ -285,9 +285,9 @@ Dies ist eine gefährliche Warnung.
 :::::
 
 :::: details
-This is a details block.
+Dies ist eine Detail-Box.
 
-**Usage:**
+**Verwendung:**
 
 ```md
 ::: details
@@ -307,7 +307,7 @@ Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" 
 : Dies ist eine Definition des zweiten Begriffs.
 : Dies ist eine weitere Definition des zweiten Begriffs.
 
-**Usage:**
+**Verwendung:**
 
 ::: details
 

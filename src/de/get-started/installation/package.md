@@ -189,8 +189,8 @@ sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 Ubuntu 24.04
 
 ::: info
-Beginnend mit Ubuntu 24.04 enthält diese Doku den Befehl zum Hinzufügen des Repositorys im
-[deb822-Format] (https://repolib.readthedocs.io/en/latest/deb822-format.html).
+Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen des Repository im
+[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
 :::
 
 ```sh
@@ -221,8 +221,8 @@ sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 Debian 12
 
 ::: info
-Beginnend mit Debian 12 enthält diese Doku den Befehl zum Hinzufügen des Repositorys im
-[deb822-Format] (https://repolib.readthedocs.io/en/latest/deb822-format.html).
+Beginnend mit Debian 12 enthält diese Dokumentation den Befehl zum Hinzufügen des Repository im
+[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
 :::
 
 ```sh

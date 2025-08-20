@@ -41,15 +41,15 @@ Allgemeine Einschränkungen für alle Migrationen:
 
 :::info
 
-**Missing a migration source?**
+**Fehlt eine Migrationsquelle?**
 
-If your system it not mentioned yet, you'll have two options. You can either
-use Zammad's powerful API or drop our
-[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
-development or even migrator sponsoring.
+Wenn Ihr System noch nicht aufgeführt ist, haben Sie zwei Möglichkeiten. Sie können entweder
+die leistungsstarke API von Zammad nutzen oder unserem
+[Vertriebsteam eine Nachricht](https://zammad.com/de/company/contact){target=_blank} schicken für eine kundenspezifische
+Entwicklung oder sogar für das Sponsoring eines Migrations-Features.
 
-Migrations are available for hosted setups too! Contact support for further
-information!
+Migrationen sind auch für von Zammad gehostete Installationen verfügbar! Kontaktieren Sie den Support für weitere
+Informationen!
 :::
 
 ### Freshdesk
@@ -263,7 +263,7 @@ bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.
 Falls Sie die Meldung erhalten haben, nachdem die Migration begonnen hat, sollten
 Sie die Migration per Konsole versuchen und Ihre Installation zurücksetzen.
 
-=== Per Console
+=== Per Konsole
 
 Konsole öffnen:
 

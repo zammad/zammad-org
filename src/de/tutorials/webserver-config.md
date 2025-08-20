@@ -45,7 +45,7 @@ Konfigurationsdetails und Beispiele zu finden.
 
 Falls nicht automatisch geschehen, müssen Sie das nginx- oder apache-Plugin für certbot
 installieren:
-`python3-certbot-nginx`` oder ``python3-certbot-apache`
+`python3-certbot-nginx` oder `python3-certbot-apache`
 
 Während des ersten certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.
 Ersetzen Sie `<webserver>` im folgenden Befehl entweder durch `apache`, `httpd` oder

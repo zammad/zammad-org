@@ -5,21 +5,22 @@ title: 'Ticket Zusammenfassung'
 
 # Ticket Zusammenfassung
 
-## Show/Trigger
+## Anzeigen/Generieren
 
 Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`
+`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`
 
-The following POST request fetches an existing summary, if there is one
-available in the ticket. If there is no summary available or the ticket was
-changed after the existing summary was created, a new summary is
-triggered. In such a case, you won’t get a response with the summary. To get
-a summary, you have to re-send the request with a small delay considering
-the AI job may take a few seconds.
+Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern im
+Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist oder das
+Ticket nach der Erstellung der bestehenden Zusammenfassung geändert wurde,
+wird eine neue Zusammenfassung getriggert. In einem solchen Fall erhalten
+Sie keine Antwort mit der Zusammenfassung. Um eine Zusammenfassung zu
+erhalten, müssen Sie die Anfrage mit einer kleinen Verzögerung erneut
+senden, um der KI-Aufgabe einige Sekunden für die Erstellung zu geben.
 
-Sample response if the generation of a new summary was just triggered by the
-request:
+Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade
+durch die Anfrage ausgelöst wurde:
 
 ::: details
 
@@ -27,8 +28,8 @@ request:
 
 :::
 
-Sample response for an existing summary (e.g. for the same ticket like above
-after waiting a few seconds):
+Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe
+Ticket wie oben nach einigen Sekunden Wartezeit):
 
 ::: details
 

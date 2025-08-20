@@ -52,13 +52,13 @@ _Einstellungen > Sicherheit > SSL-Zertifikate_ ein.
 
 ### Den Suchindex aufbauen/neu erstellen
 
-Ohne Angabe der zu verwendenden CPU-Kerne:
+Ohne Vorgabe der zu verwendenden CPU-Kerne:
 
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Vorgabe der zu verwendenden CPU-Kerne (Beispiel 8):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]

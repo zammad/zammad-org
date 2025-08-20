@@ -103,7 +103,7 @@ Dieser Schalter liefert noch mehr Informationen - zumindest benannte
 Beziehungen zusätzlich zu den ID-Beziehungen. Nachfolgend finden Sie zwei
 Beispiele, eines für ein Ticket und eines für einen Benutzer:
 
-**User payload:**
+**User-Payload:**
 
 :::: details
 :::tabs
@@ -119,7 +119,7 @@ Beispiele, eines für ein Ticket und eines für einen Benutzer:
 :::
 ::::
 
-**Ticket payload:**
+**Tickets-Payload:**
 
 :::: details
 :::tabs

@@ -35,7 +35,7 @@ aussehen.
 
 === Ticket
 
-Open details to show complete ticket structure: <Badge type="danger" text="Huge content ahead!"/>
+Details öffnen, um die vollständige Struktur des Tickets anzuzeigen: <Badge type="danger" text="Großer Inhalt!"/>
 
 ::: details
 
@@ -45,8 +45,8 @@ Open details to show complete ticket structure: <Badge type="danger" text="Huge 
 
 === Article
 
-The following structure is already included in the ticket index (see first tab) and added here separately for
-overview reasons. Open details to see the article content:
+Die folgende Struktur ist bereits im Ticket-Index enthalten (siehe erster Tab) und wird hier aus Gründen
+der Übersichtlichkeit separat hinzugefügt. Öffnen Sie Details, um den Inhalt des Artikels zu sehen:
 
 ::: details
 
@@ -56,7 +56,7 @@ overview reasons. Open details to see the article content:
 
 === User
 
-Open details to show complete user structure:
+Details öffnen, um die vollständige Struktur der Benutzer anzuzeigen:
 
 ::: details
 
@@ -66,7 +66,7 @@ Open details to show complete user structure:
 
 === Organization
 
-Open details to show complete organization structure:
+Details öffnen, um die vollständige Organisationsstruktur anzuzeigen:
 
 ::: details
 

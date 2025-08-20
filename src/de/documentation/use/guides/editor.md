@@ -112,7 +112,7 @@ Markdown Syntax                | Formatierung
 `**`                           | Begrenzer für **fett**
 `_`                            | Begrenzer für _kursiv_
 `#`, `##`, `###`               | Überschrift, Level abhängig von Anzahl der `#`
-`>`                            | Zitiert
+`>`                            | Zitat
 `` ` ``                        | Begrenzer für `inline code`
 `` ``` ``                      | Code-Block
 `---`                          | Horizontale Linie als Trenner

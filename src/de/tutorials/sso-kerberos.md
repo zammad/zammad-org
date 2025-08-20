@@ -38,7 +38,7 @@ Benutzer:
 - eine `HTTP_REMOTE_USER` Webserver-Umgebungsvariable
 
 ::: info
-**Moment, mit SSO ist es möglich, sich nur mit einem Benutzernamen anzumelden?
+**Moment, mit SSO ist es möglich, sich nur mit einem Benutzernamen anzumelden?**
 
 Im Prinzip ja.
 
@@ -180,7 +180,7 @@ Alle Befehle in diesem Abschnitt müssen als root (oder mit `sudo`) ausgeführt 
 ### 2a. NGINX ausschalten
 
 ::: warning
-Dadurch ist Ihre Zammad-Instanz **offline**, bis der Apache vollständig
+Dadurch ist Ihre Zammad-Instanz **offline**, bis Apache vollständig
 konfiguriert ist und läuft.
 :::
 

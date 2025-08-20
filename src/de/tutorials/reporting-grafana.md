@@ -48,9 +48,9 @@ haben die folgenden Informationen auf `name`, `time field name` und `index name`
 Alles andere hängt von Ihrer Umgebung ab und ist nicht Gegenstand dieser Dokumentation.
 
 :::: tip
-Replace `zammad_production_` with your fitting prefix.
+Ersetzen Sie `zammad_production_` durch Ihr passendes Präfix.
 
-Click on details to see how to query the index.
+Klicken Sie auf Details, um zu sehen, wie Sie den Index abfragen können.
 
 ::: details
 Passen Sie den folgenden Befehl an Ihre Umgebung an:
