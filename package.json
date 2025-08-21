@@ -37,6 +37,6 @@
     "./src/en/**/*.md": "pnpm lint:cmd"
   },
   "dependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^15.0.0"
   }
 }
