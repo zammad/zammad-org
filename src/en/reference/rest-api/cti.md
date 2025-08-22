@@ -122,7 +122,7 @@ from external side to you are `in`.
 
 ### Outbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -165,7 +165,7 @@ Sample curl command:
 
 ### Inbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -278,7 +278,7 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 ### Outbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -321,7 +321,7 @@ Sample curl command:
 
 ### Inbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -396,7 +396,7 @@ Sample curl command:
 
 ### Outbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -439,7 +439,7 @@ Sample curl command:
 
 ### Inbound
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 

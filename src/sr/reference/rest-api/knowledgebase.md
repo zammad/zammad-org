@@ -357,7 +357,7 @@ Responses are omitted here. You can expect to get a response like for showing an
 `archived_at`, `published_at` or `internal_at`, depending on which request you execute.
 :::
 
-:::: details Show requests
+:::: details
 
 ::: tabs
 

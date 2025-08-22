@@ -121,7 +121,7 @@ from external side to you are `in`.
 
 ### Одлазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -164,7 +164,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -277,7 +277,7 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 ### Одлазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -320,7 +320,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -395,7 +395,7 @@ Sample curl command:
 
 ### Одлазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -438,7 +438,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 

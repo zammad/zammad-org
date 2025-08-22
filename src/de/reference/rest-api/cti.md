@@ -124,7 +124,7 @@ von externer Seite an Sie sind `in`.
 
 ### Ausgehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -167,7 +167,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -283,7 +283,7 @@ Es gibt zwei Möglichkeiten, wie Sie die relevanten Daten an Zammad "posten"
 
 ### Ausgehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -326,7 +326,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -402,7 +402,7 @@ Beispiel curl Befehl:
 
 ### Ausgehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 
@@ -445,7 +445,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details Show examples
+::::details
 
 ::: tabs key:cti
 

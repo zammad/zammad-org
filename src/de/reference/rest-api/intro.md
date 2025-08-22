@@ -284,7 +284,7 @@ puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').
 
 Dies führt zu einer Ausgabe wie der folgenden:
 
-::: details Show output
+::: details
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 

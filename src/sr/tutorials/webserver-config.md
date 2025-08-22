@@ -175,7 +175,9 @@ a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 systemctl restart apache2
 ```
 
-:::details Config for CentOS
+Click to open details for CentOS config:
+
+:::details
 Add/uncomment the appropriate `LoadModule` statements in your Apache config
 in `/etc/httpd/conf/httpd.conf`:
 

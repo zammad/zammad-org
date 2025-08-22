@@ -364,7 +364,7 @@ Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit einem g
 `archived_at`, `published_at` oder `internal_at`, je nachdem, welche Anfrage Sie ausführen.
 :::
 
-:::: details Show requests
+:::: details
 
 ::: tabs
 

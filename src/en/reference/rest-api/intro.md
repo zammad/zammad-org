@@ -273,7 +273,7 @@ puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').
 
 This leads to an output like the following:
 
-::: details Show output
+::: details
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 

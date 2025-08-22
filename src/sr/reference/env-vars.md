@@ -14,7 +14,9 @@ Please note that environment variables may be named differently for
 installations based on [Docker](/en/reference/docker-env-vars) and Kubernetes.
 :::
 
-:::details **How to set an environment variable?**
+Click to open details about how to set an environment variable:
+
+:::details
 
 It depends on how you installed Zammad (source, package, docker). Either set it via `zammad config` command as you can
 see below, use your system's way of setting variables via command line (e.g. `export VARIABLE=value`), place an `.env`
