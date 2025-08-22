@@ -14,7 +14,7 @@ describe('AI screenshots', () => {
                 openQuestions: ['No open questions'],
                 upcomingEvents: ['No upcoming events'],
                 customerMood: 'Grateful',
-                customerEmotion: '🤗',
+                customerEmotion: '😌',
               },
               fingerprintMd5: '1234567890abcdef1234567890abcdef',
             },
