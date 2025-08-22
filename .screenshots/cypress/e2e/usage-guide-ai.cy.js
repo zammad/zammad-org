@@ -9,14 +9,12 @@ describe('AI screenshots', () => {
               __typename: 'TicketAIAssistanceSummarizePayload',
               summary: {
                 __typename: 'TicketAIAssistanceSummary',
-                problem: "The customer, John Doe, contacted support regarding a missing refund for a returned order (number 4388019). He stated he had already returned the goods but hadn't received the corresponding refund.", // Customer Intent
-                conversationSummary: "John Doe initially inquired about the status of his refund for a returned order. The agent, Liam Chen, investigated and found the return receipt wasn't properly registered. The agent processed the refund and offered a 5% discount code for a future purchase. The customer confirmed receipt of the refund.", // Conversation Summary
-                openQuestions: [], // list of Open Questions
-                suggestions: [ // list of Suggested Next Steps
-                  'Confirm the refund was successfully processed in the system.',
-                  'Close the ticket as resolved.',
-                  'No further action is required.',
-                ],
+                customerRequest: "The customer, John Doe, contacted support regarding a missing refund for a returned order (number 4388019). He stated he had already returned the goods but hadn't received the corresponding refund.",
+                conversationSummary: "John Doe initially inquired about the status of his refund for a returned order. The agent, Liam Chen, investigated and found the return receipt wasn't properly registered. The agent processed the refund and offered a 5% discount code for a future purchase. The customer confirmed receipt of the refund.",
+                openQuestions: ['No open questions'],
+                upcomingEvents: ['No upcoming events'],
+                customerMood: 'Grateful',
+                customerEmotion: '🤗',
               },
               fingerprintMd5: '1234567890abcdef1234567890abcdef',
             },
