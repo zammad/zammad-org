@@ -742,3 +742,11 @@
     color: var(--vp-c-brand-1);
   }
 }
+
+.vp-doc .custom-block div[class*=language-] {
+  margin: 16px 0;
+
+  &:last-child {
+    margin-bottom: 8px;
+  }
+}
