@@ -23,8 +23,9 @@ Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
 Installationsmethode verwenden oder [Zammads Cloud
 Service](https://zammad.com/de/pricing){target=_blank} in Betracht ziehen.
 
-To follow the installation steps below, tools like curl, gnupg and others
-are required. If they are not present on your system, install them:
+Für die folgenden Installationsschritte werden Tools wie curl, gnupg und
+andere benötigt. Wenn sie nicht auf Ihrem System vorhanden sind,
+installieren Sie diese:
 
 :::tabs key:distros
 
@@ -415,7 +416,7 @@ unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
 Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`.
 
-Elasticsearch version history for Zammad:
+Elasticsearch-Versionsverlauf für Zammad:
 
 :::details
 

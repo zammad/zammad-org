@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-20 10:38+0200\n"
-"PO-Revision-Date: 2025-08-20 11:56+0000\n"
+"POT-Creation-Date: 2025-08-22 16:14+0200\n"
+"PO-Revision-Date: 2025-08-21 14:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -7799,6 +7799,9 @@ msgid ""
 "To follow the installation steps below, tools like curl, gnupg and others "
 "are required. If they are not present on your system, install them:"
 msgstr ""
+"Für die folgenden Installationsschritte werden Tools wie curl, gnupg und "
+"andere benötigt. Wenn sie nicht auf Ihrem System vorhanden sind, "
+"installieren Sie diese:"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:28
@@ -8667,10 +8670,8 @@ msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:408
-#, fuzzy
-#| msgid "Connect Elasticsearch with Zammad"
 msgid "Elasticsearch version history for Zammad:"
-msgstr "Elasticsearch mit Zammad verbinden"
+msgstr "Elasticsearch-Versionsverlauf für Zammad:"
 
 #. type: Fenced div block (details)
 #: src/en/get-started/installation/package.md:409
@@ -13127,8 +13128,13 @@ msgstr ""
 "Bitte beachten Sie, dass die Umgebungsvariablen für\n"
 "Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kubernetes unterschiedlich benannt sein können.\n"
 
-#. type: Fenced div block (details **How to set an environment variable?**)
-#: src/en/reference/env-vars.md:17
+#. type: Plain text
+#: src/en/reference/env-vars.md:18
+msgid "Click to open details about how to set an environment variable:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/env-vars.md:19
 #, no-wrap
 msgid ""
 "\n"
@@ -13204,19 +13210,19 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:56
+#: src/en/reference/env-vars.md:58
 #, no-wrap
 msgid "Default values are tagged with a <Badge type=\"info\" text=\"badge\"/>, if present.\n"
 msgstr "Standardwerte sind mit einem <Badge type=\"info\" text=\"badge\"/> gekennzeichnet, sofern vorhanden.\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:57
+#: src/en/reference/env-vars.md:59
 #, no-wrap
 msgid "General Options"
 msgstr "Allgemeine Optionen"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:64
+#: src/en/reference/env-vars.md:66
 #, no-wrap
 msgid ""
 "`GPG_PATH`\n"
@@ -13232,7 +13238,7 @@ msgstr ""
 "  Standard-Installation abweicht.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:68
+#: src/en/reference/env-vars.md:70
 #, no-wrap
 msgid ""
 "`RAILS_LOG_TO_STDOUT`\n"
@@ -13244,7 +13250,7 @@ msgstr ""
 "  `/var/log/zammad/production.log`.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:72
+#: src/en/reference/env-vars.md:74
 #, no-wrap
 msgid ""
 "  This setting can be overwritten during update on package installations.\n"
@@ -13256,7 +13262,7 @@ msgstr ""
 "  `true`, um sie dauerhaft einzuschalten.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:76
+#: src/en/reference/env-vars.md:78
 #, no-wrap
 msgid ""
 "`ZAMMAD_SAFE_MODE`\n"
@@ -13268,7 +13274,7 @@ msgstr ""
 "  Zammad- Befehlen. Mögliche Werte: `1` oder `true`\n"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/env-vars.md:77
+#: src/en/reference/env-vars.md:79
 #, no-wrap
 msgid ""
 "  **Be careful** when running Zammad commands on production systems in\n"
@@ -13284,7 +13290,7 @@ msgstr ""
 "  das Potenzial, reguläre Zammad-Vorgänge zu unterbrechen.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:88
+#: src/en/reference/env-vars.md:90
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TYPE`\n"
@@ -13296,18 +13302,18 @@ msgstr ""
 "  `https`\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:91
+#: src/en/reference/env-vars.md:93
 msgid "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
 msgstr "`ZAMMAD_FQDN`: Legt den FQDN/Domainnamen des Systems fest."
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:92
+#: src/en/reference/env-vars.md:94
 #, no-wrap
 msgid "Network Options"
 msgstr "Netzwerk-Optionen"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/env-vars.md:94
+#: src/en/reference/env-vars.md:96
 #, no-wrap
 msgid ""
 "Remember to update your web server config to reflect any changes you\n"
@@ -13317,7 +13323,7 @@ msgstr ""
 "hier vorgenommen haben, wirksam werden.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:101
+#: src/en/reference/env-vars.md:103
 #, no-wrap
 msgid ""
 "`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
@@ -13327,7 +13333,7 @@ msgstr ""
 ": Die IP-Adresse, an die der Webserver gebunden ist.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:104
+#: src/en/reference/env-vars.md:106
 #, no-wrap
 msgid ""
 "`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
@@ -13337,7 +13343,7 @@ msgstr ""
 ": Der Port, auf dem der Webserver erreichbar ist.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:107
+#: src/en/reference/env-vars.md:109
 #, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
@@ -13347,13 +13353,13 @@ msgstr ""
 ": Der Port, auf dem der Web-Socket-Server betrieben wird.\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:108
+#: src/en/reference/env-vars.md:110
 #, no-wrap
 msgid "Performance Tuning"
 msgstr "Leistungsoptimierung"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:113
+#: src/en/reference/env-vars.md:115
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "\"recommended values\" here; the optimal configuration will depend on your "
@@ -13365,7 +13371,7 @@ msgstr ""
 "Anwendungslast ab."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:116
+#: src/en/reference/env-vars.md:118
 msgid ""
 "Below settings _may_ consume all available database connections. Please "
 "consider to check your database server configuration."
@@ -13374,7 +13380,7 @@ msgstr ""
 "beanspruchen. Bitte prüfen Sie die Konfiguration Ihres Datenbankservers."
 
 #. type: Fenced div block (danger)
-#: src/en/reference/env-vars.md:117
+#: src/en/reference/env-vars.md:119
 #, no-wrap
 msgid ""
 "Proceed with caution and only if you know what you are doing!\n"
@@ -13386,7 +13392,7 @@ msgstr ""
 "relevante Teile von Zammad deaktivieren.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:125
+#: src/en/reference/env-vars.md:127
 msgid ""
 "To find out how many users are currently on Zammad, you can use the rails "
 "command below:"
@@ -13395,13 +13401,13 @@ msgstr ""
 "den folgenden Rails-Befehl verwenden:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:126
+#: src/en/reference/env-vars.md:128
 #, no-wrap
 msgid "zammad run rails r \"p Sessions.list.uniq.count\"\n"
 msgstr "zammad run rails r \"p Sessions.list.uniq.count\"\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:134
+#: src/en/reference/env-vars.md:136
 #, no-wrap
 msgid ""
 "`WEB_CONCURRENCY`\n"
@@ -13415,7 +13421,7 @@ msgstr ""
 "  Zammad sind.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:137
+#: src/en/reference/env-vars.md:139
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
 "worker to run at a time."
@@ -13424,13 +13430,13 @@ msgstr ""
 "Workers sollen gleichzeitig laufen."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:139
+#: src/en/reference/env-vars.md:141
 #, no-wrap
 msgid "  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.\n"
 msgstr "  Eine Erhöhung dieser Einstellung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:142
+#: src/en/reference/env-vars.md:144
 #, no-wrap
 msgid ""
 "  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of\n"
@@ -13440,7 +13446,7 @@ msgstr ""
 "  Worker kann eine Menge Ressourcen verbrauchen!\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:147
+#: src/en/reference/env-vars.md:149
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -13454,13 +13460,13 @@ msgstr ""
 "  für andere Aufgaben entlasten, wenn Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:149
+#: src/en/reference/env-vars.md:151
 #, no-wrap
 msgid "  Maximum number of workers: `1`\n"
 msgstr "  Maximale Anzahl von Workern: `1`\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:152
+#: src/en/reference/env-vars.md:154
 #, no-wrap
 msgid ""
 "  You can disable the processing of scheduled jobs by setting\n"
@@ -13470,7 +13476,7 @@ msgstr ""
 "  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:156
+#: src/en/reference/env-vars.md:158
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -13483,13 +13489,13 @@ msgstr ""
 "  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:158 src/en/reference/env-vars.md:170
+#: src/en/reference/env-vars.md:160 src/en/reference/env-vars.md:172
 #, no-wrap
 msgid "  Maximum number of workers: `16`\n"
 msgstr "  Maximale Anzahl von Workern: `16`\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:162
+#: src/en/reference/env-vars.md:164
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
@@ -13501,7 +13507,7 @@ msgstr ""
 "  Antworten von dem konfigurierten KI-Provider ab. Standardmäßig wird ein Worker ausgeführt.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:165
+#: src/en/reference/env-vars.md:167
 #, no-wrap
 msgid ""
 "  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to\n"
@@ -13511,7 +13517,7 @@ msgstr ""
 "  zusammenbricht.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:168
+#: src/en/reference/env-vars.md:170
 #, no-wrap
 msgid ""
 "  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of\n"
@@ -13521,7 +13527,7 @@ msgstr ""
 "  Parallelisierung zu erreichen.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:175
+#: src/en/reference/env-vars.md:177
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
@@ -13535,19 +13541,19 @@ msgstr ""
 "  auslasten kann.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:177
+#: src/en/reference/env-vars.md:179
 #, no-wrap
 msgid "  Maximum number of threads: 16\n"
 msgstr "  Maximale Anzahl von Threads: `16`\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:178
+#: src/en/reference/env-vars.md:180
 #, no-wrap
 msgid "Additional Performance Adjustments"
 msgstr "Zusätzliche Performance-Anpassungen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/env-vars.md:180
+#: src/en/reference/env-vars.md:182
 #, no-wrap
 msgid ""
 "The options listed below allow you to distribute Zammad processes over\n"
@@ -13565,7 +13571,7 @@ msgstr ""
 "Inhalt dieser Dokumentation ist.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:195
+#: src/en/reference/env-vars.md:197
 #, no-wrap
 msgid ""
 "`REDIS_URL`\n"
@@ -13583,7 +13589,7 @@ msgstr ""
 "  (`/opt/zammad/tmp/websocket_*`) zurück.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:202
+#: src/en/reference/env-vars.md:204
 #, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS`\n"
@@ -13601,7 +13607,7 @@ msgstr ""
 "  (`/opt/zammad/tmp/cache*`) zurück.\n"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:206
+#: src/en/reference/env-vars.md:208
 #, no-wrap
 msgid ""
 "  Memcached allows you to restrict the maximum size Zammad may store as\n"
@@ -13613,24 +13619,24 @@ msgstr ""
 "  Cache-Dateien klein zu halten. `1 GB` sollte eine angemessene Größe sein.\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:207
+#: src/en/reference/env-vars.md:209
 #, no-wrap
 msgid "Storage Options"
 msgstr "Speicheroptionen"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:211
+#: src/en/reference/env-vars.md:213
 msgid "`S3_URL` : Allows you to provide your S3 configuration."
 msgstr "`S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:213
+#: src/en/reference/env-vars.md:215
 #, no-wrap
 msgid "  Format / example:\n"
 msgstr "  Format / Beispiel:\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:214
+#: src/en/reference/env-vars.md:216
 #, no-wrap
 msgid "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 msgstr "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
@@ -19721,7 +19727,7 @@ msgstr ""
 ": Ein optionaler Name der Warteschlange; diese Option ist für den Anruferprotokollfilter relevant.\n"
 "  Dieser Wert ist optional.\n"
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:125
 #, no-wrap
 msgid ""
@@ -19797,7 +19803,7 @@ msgstr ""
 "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req.sh\n"
 "\n"
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:168
 #, no-wrap
 msgid ""
@@ -20066,7 +20072,7 @@ msgstr ""
 "Es gibt zwei Möglichkeiten, wie Sie die relevanten Daten an Zammad "
 "\"posten\" (`POST`) können."
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:281
 #, no-wrap
 msgid ""
@@ -20142,7 +20148,7 @@ msgstr ""
 "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req.sh\n"
 "\n"
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:324
 #, no-wrap
 msgid ""
@@ -20267,7 +20273,7 @@ msgstr ""
 "    - `user.if`\n"
 "    Dieser Wert ist optional.\n"
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:399
 #, no-wrap
 msgid ""
@@ -20343,7 +20349,7 @@ msgstr ""
 "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh\n"
 "\n"
 
-#. type: Fenced div block (details Show examples|tabs key:cti)
+#. type: Fenced div block (details|tabs key:cti)
 #: src/en/reference/rest-api/cti.md:442
 #, no-wrap
 msgid ""
@@ -21267,7 +21273,7 @@ msgstr "puts Trigger.find_by(name: 'My new test trigger').attributes.slice('cond
 msgid "This leads to an output like the following:"
 msgstr "Dies führt zu einer Ausgabe wie der folgenden:"
 
-#. type: Fenced div block (details Show output)
+#. type: Fenced div block (details)
 #: src/en/reference/rest-api/intro.md:276
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
@@ -22065,7 +22071,7 @@ msgstr ""
 "Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit einem gesetzten Wert für\n"
 "`archived_at`, `published_at` oder `internal_at`, je nachdem, welche Anfrage Sie ausführen.\n"
 
-#. type: Fenced div block (details Show requests|tabs)
+#. type: Fenced div block (details|tabs)
 #: src/en/reference/rest-api/knowledgebase.md:348
 #, no-wrap
 msgid ""
@@ -30651,15 +30657,11 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:199
-#, fuzzy
-#| msgid ""
-#| "If for any reason you can't complete this tutorial, simply turn off "
-#| "Apache and restore NGINX:"
 msgid ""
 "If you can't complete this tutorial for any reason, simply turn off Apache "
 "and restore NGINX:"
 msgstr ""
-"Wenn Sie aus irgendeinem Grund dieses Tutorial nicht abschließen können, "
+"Wenn Sie dieses Tutorial aus irgendeinem Grund nicht abschließen können, "
 "schalten Sie einfach Apache aus und stellen NGINX wieder her:"
 
 #. type: Fenced div block (details)
@@ -30710,11 +30712,6 @@ msgstr "2b. Apache vorkonfigurieren"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:226
-#, fuzzy
-#| msgid ""
-#| "This documentation expects a already working Apache configuration.  You "
-#| "should have a look at the [webserver configuration guide](/en/tutorials/"
-#| "webserver-config) before continuing."
 msgid ""
 "This documentation expects an already working Apache configuration.  You "
 "should have a look at the [webserver configuration guide](/en/tutorials/"
@@ -31925,7 +31922,7 @@ msgstr "Schritt 2 - Anpassen der Konfig-Datei"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:204
+#: src/en/tutorials/webserver-config.md:206
 msgid ""
 "Adjust the just copied file with a text editor of your choice (e.g. vi or "
 "nano)."
@@ -31944,7 +31941,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:210
+#: src/en/tutorials/webserver-config.md:212
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
 "you obtained. Adjust the following directives to match your setup:"
@@ -31981,7 +31978,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:219
+#: src/en/tutorials/webserver-config.md:221
 #, no-wrap
 msgid ""
 "openssl dhparam -out <path>/dhparam.pem 4096\n"
@@ -31998,7 +31995,7 @@ msgstr "Schritt 3 - Anpassen der HTTPS-Konfiguration"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:230
+#: src/en/tutorials/webserver-config.md:232
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
 "may not fit your needs. Mozilla has a great [ssl-config generator](https://"
@@ -32028,7 +32025,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:276
+#: src/en/tutorials/webserver-config.md:278
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
 "the [first steps in Zammad](/en/tutorials/first-steps)."
@@ -32066,8 +32063,13 @@ msgstr ""
 msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 
-#. type: Fenced div block (details Config for CentOS)
-#: src/en/tutorials/webserver-config.md:174
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:175
+msgid "Click to open details for CentOS config:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/tutorials/webserver-config.md:176
 #, no-wrap
 msgid ""
 "Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
@@ -32099,13 +32101,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:190
+#: src/en/tutorials/webserver-config.md:192
 #, no-wrap
 msgid "Step 2 - Get a Current Config File"
 msgstr "Schritt 2 - Abrufen einer aktuellen Konfigurationsdatei"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:194
+#: src/en/tutorials/webserver-config.md:196
 msgid ""
 "The package installation copied a `zammad.conf` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
@@ -32115,25 +32117,25 @@ msgstr ""
 "vorhanden ist und benennen Sie diese Datei nicht um!"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:196
+#: src/en/tutorials/webserver-config.md:198
 msgid "Adjust your Apache config directory according to your setup:"
 msgstr ""
 "Passen Sie Ihr Apache-Konfigurationsverzeichnis entsprechend Ihrem Setup an:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:197
+#: src/en/tutorials/webserver-config.md:199
 #, no-wrap
 msgid "ls /etc/apache2/sites-available\n"
 msgstr "ls /etc/apache2/sites-available\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:201
+#: src/en/tutorials/webserver-config.md:203
 #, no-wrap
 msgid "Step 3 - Adjust the Config File"
 msgstr "Schritt 3 - Anpassen der Konfig-Datei"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:207
+#: src/en/tutorials/webserver-config.md:209
 msgid ""
 "Locate any `ServerName` directive and adjust `example.com` to the domain of "
 "your Zammad instance."
@@ -32142,22 +32144,22 @@ msgstr ""
 "Domain Ihrer Zammad-Instanz an."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:214
+#: src/en/tutorials/webserver-config.md:216
 msgid "`SSLCertificateFile` (your ssl certificate)"
 msgstr "`SSLCertificateFile` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:214
+#: src/en/tutorials/webserver-config.md:216
 msgid "`SSLCertificateKeyFile`(the certificates private key)"
 msgstr "`SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:214
+#: src/en/tutorials/webserver-config.md:216
 msgid "`SSLCertificateChainFile` (the public CA certificate)"
 msgstr "`SSLCertificateChainFile` (das öffentliche CA-Zertifikat)"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:218
+#: src/en/tutorials/webserver-config.md:220
 msgid ""
 "If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
 "below to generate this file. You can find the correct path in your webserver "
@@ -32169,19 +32171,19 @@ msgstr ""
 "`SSLOpenSSLConfCmd DHParameters`."
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:224
+#: src/en/tutorials/webserver-config.md:226
 #, no-wrap
 msgid "Step 4 - Adjust HTTPS Configuration"
 msgstr "Schritt 4 - Anpassen der HTTPS-Konfiguration"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:231
+#: src/en/tutorials/webserver-config.md:233
 #, no-wrap
 msgid "Step 5 - Enable the Site"
 msgstr "Schritt 5 - Aktivieren der Website"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:235
+#: src/en/tutorials/webserver-config.md:237
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
 "`sites-available` folders."
@@ -32190,7 +32192,7 @@ msgstr ""
 "nur die `sites-available`-Ordner betreffen."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:236
+#: src/en/tutorials/webserver-config.md:238
 #, no-wrap
 msgid ""
 "\n"
@@ -32258,13 +32260,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:270
+#: src/en/tutorials/webserver-config.md:272
 #, no-wrap
 msgid "Step 6 - Save & Reload"
 msgstr "Schritt 6 - Speichern und neu laden"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:274
+#: src/en/tutorials/webserver-config.md:276
 msgid ""
 "Reload your apache with `systemctl reload apache2` to apply your "
 "configuration changes."
