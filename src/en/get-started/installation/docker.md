@@ -115,7 +115,7 @@ you already have these services running.
 
 Please see the [Docker compose scenarios page](/en/reference/docker-compose-scenarios).
 
-To adjust the stack and settings, use [Docker specific environment variables](/en/reference/docker-env-vars).
+To adjust the stack and settings, use [Docker specific environment variables](/en/reference/environment-variables).
 
 ## How to Run Commands in the Stack
 

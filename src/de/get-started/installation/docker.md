@@ -136,8 +136,8 @@ bereits nutzen.
 Bitte lesen Sie auf [Docker Compose
 Szenarien](/de/reference/docker-compose-scenarios) weiter.
 
-Um den Stack und die Einstellungen anzupassen, verwenden Sie
-[Docker-spezifische Umgebungsvariablen](/de/reference/docker-env-vars).
+To adjust the stack and settings, use [Docker specific environment
+variables](/en/reference/environment-variables).
 
 ## Ausführen von Befehlen im Stack
 

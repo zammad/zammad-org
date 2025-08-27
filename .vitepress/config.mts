@@ -83,6 +83,16 @@ export default defineConfig(
                   content = '︙'
                   ariaLabel = '︙'
                   break;
+                case 'd':
+                  className = 'docker-icon'
+                  content = '<img src="/assets/docker.svg" alt="docker" />'
+                  ariaLabel = 'docker'
+                  break;
+                case 'p':
+                  className = 'package-icon'
+                  content = '<img src="/assets/package.svg" alt="package" />'
+                  ariaLabel = 'package'
+                  break;
                 case 'x':
                   className = 'remove-button'
                   content = '✕'

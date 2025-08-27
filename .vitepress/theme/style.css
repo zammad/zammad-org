@@ -666,6 +666,18 @@
     font-family: var(--vp-font-family-mono);
   }
 
+  .docker-icon,
+  .package-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+    .dark & {
+      filter: invert(1);
+    }
+  }
+
   .remove-button {
     color: var(--vp-c-white);
     background-color: #e9613a;

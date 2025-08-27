@@ -436,7 +436,7 @@ In all other cases like deploying Zammad via containers (Docker or Kubernetes) o
 The Docker and Kubernetes stacks already include this service.
 
 However, even local file system installations may benefit from Memcached's performance improvements. You might want to
-have a look at our [performance tuning](/en/reference/env-vars.html#additional-performance-adjustments) section too.
+have a look at our [performance tuning](/en/reference/environment-variables#performance-tuning) section too.
 
 The installation and configuration is out of scope of this documentation. In case you have to install Memcached manually,
 please follow the [official documentation of Memcached](https://docs.memcached.org/){target=_blank}.
