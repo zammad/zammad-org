@@ -74,7 +74,9 @@ documentation.
 - Add agent accounts
 - Consider backup strategies for Zammad
 
-:::tip Are you still lost?
+:::tip
+
+**Are you still lost?**
 
 If you need help or you'll need to get in production a lot faster, you can also
 book workshops with one of our
