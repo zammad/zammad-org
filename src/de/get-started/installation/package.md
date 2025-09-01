@@ -451,9 +451,11 @@ In allen anderen Fällen, wie der Bereitstellung von Zammad über Container
 den Cache zu speichern und ihn allen Zammad-Instanzen zur Verfügung zu
 stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits.
 
-However, even local file system installations may benefit from Memcached's
-performance improvements. You might want to have a look at our [performance
-tuning](/en/reference/environment-variables#performance-tuning) section too.
+Aber auch lokale Dateisysteminstallationen können von den
+Leistungsverbesserungen von Memcached profitieren. Sie sollten auch einen
+Blick auf den Abschnitt
+[Leistungsoptimierung](/de/reference/environment-variables#leistungsoptimierung)
+werfen.
 
 Die Installation und Konfiguration ist nicht Gegenstand dieser
 Dokumentation. Falls Sie Memcached manuell installieren müssen, folgen Sie

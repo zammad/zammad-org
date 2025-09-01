@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-27 08:43+0200\n"
+"POT-Creation-Date: 2025-09-01 09:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,6 +215,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -20661,6 +20673,64 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:18
+#, markdown-text
+msgid ""
+"The following POST request fetches an existing summary, if there is one "
+"available in the ticket. If there is no summary available or the ticket was "
+"changed after the existing summary was created, a new summary is "
+"triggered. In such a case, you won’t get a response with the summary. To get "
+"a summary, you have to re-send the request with a small delay considering "
+"the AI job may take a few seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:20
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:28
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting a few seconds):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:29
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -20827,64 +20897,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:18
-#, markdown-text
-msgid ""
-"The following POST request fetches an existing summary, if there is one "
-"available in the ticket. If there is no summary available or the ticket was "
-"changed after the existing summary was created, a new summary is "
-"triggered. In such a case, you won’t get a response with the summary. To get "
-"a summary, you have to re-send the request with a small delay considering "
-"the AI job may take a few seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:20
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:21
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:28
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting a few seconds):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:29
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21328,18 +21340,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-22 16:14+0200\n"
-"PO-Revision-Date: 2025-08-21 14:00+0000\n"
+"POT-Creation-Date: 2025-08-27 08:43+0200\n"
+"PO-Revision-Date: 2025-08-28 12:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -513,7 +513,8 @@ msgid "New Documentation at zammad.org"
 msgstr "Neue Dokumentation auf zammad.org"
 
 #. type: Title ##
-#: src/en/contribute/contribute.md:95 src/en/reference/docker-env-vars.md:16
+#: src/en/contribute/contribute.md:95
+#: src/en/reference/environment-variables.md:33
 #, no-wrap
 msgid "Zammad"
 msgstr "Zammad"
@@ -7497,10 +7498,10 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:119
 msgid ""
 "To adjust the stack and settings, use [Docker specific environment variables]"
-"(/en/reference/docker-env-vars)."
+"(/en/reference/environment-variables)."
 msgstr ""
-"Um den Stack und die Einstellungen anzupassen, verwenden Sie [Docker-"
-"spezifische Umgebungsvariablen](/de/reference/docker-env-vars)."
+"Um den Stack und die Einstellungen anzupassen, verwenden Sie "
+"[Docker-spezifische Umgebungsvariablen](/de/reference/environment-variables)."
 
 #. type: Title ##
 #: src/en/get-started/installation/docker.md:120
@@ -8537,14 +8538,14 @@ msgstr "Node.js"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:366
-#: src/en/reference/docker-env-vars.md:110
+#: src/en/reference/environment-variables.md:60
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:366
-#: src/en/reference/docker-env-vars.md:136
+#: src/en/reference/environment-variables.md:72
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
 msgid "Nginx"
@@ -8755,13 +8756,12 @@ msgstr ""
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
-"tuning](/en/reference/env-vars.html#additional-performance-adjustments) "
-"section too."
+"tuning](/en/reference/environment-variables#performance-tuning) section too."
 msgstr ""
 "Aber auch lokale Dateisysteminstallationen können von den "
 "Leistungsverbesserungen von Memcached profitieren. Sie sollten auch einen "
-"Blick auf unseren Abschnitt [Leistungsoptimierung](/de/reference/env-"
-"vars.html#leistungsoptimierung) werfen."
+"Blick auf den Abschnitt [Leistungsoptimierung](/de/reference/environment-"
+"variables#leistungsoptimierung) werfen."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:443
@@ -12642,1004 +12642,538 @@ msgstr ""
 "compose-files/merge/){target=_blank}."
 
 #. type: Title #
-#: src/en/reference/docker-env-vars.md:1 src/en/reference/docker-env-vars.md:6
+#: src/en/reference/environment-variables.md:1
+#: src/en/reference/environment-variables.md:6
 #, no-wrap
-msgid "Docker Environment Variables"
-msgstr "Docker-Umgebungsvariablen"
+msgid "Environment Variables"
+msgstr "Umgebungsvariablen"
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:10
+#: src/en/reference/environment-variables.md:11
 msgid ""
-"Find the available docker environment variables below with default values, "
-"if applicable. You might also be interested in the [environment variables "
-"documentation](/en/reference/env-vars)."
+"Find the most important environment variables below with default values, if "
+"applicable. The variables for docker and package based installations can be "
+"different in some cases. You can find a badge in the column **Limited** with "
+"the following meaning:"
 msgstr ""
-"Nachfolgend finden Sie die verfügbaren Docker-Umgebungsvariablen mit "
-"Standardwerten, falls zutreffend. Sie könnten auch an der "
-"[Umgebungsvariablen-Dokumentation](/de/reference/env-vars) interessiert sein."
+"Nachfolgend finden Sie die wichtigsten Umgebungsvariablen mit "
+"Standardwerten, falls vorhanden. Die Variablen für docker- und paketbasierte "
+"Installationen können in einigen Fällen unterschiedlich sein. In der Spalte "
+"**Beschränkung** finden Sie Icons mit der folgenden Bedeutung:"
+
+#. type: Bullet: '- '
+#: src/en/reference/environment-variables.md:15
+msgid "Only available for docker installations: ::d::"
+msgstr "Nur für Docker-Installationen verfügbar: ::d::"
+
+#. type: Bullet: '- '
+#: src/en/reference/environment-variables.md:15
+msgid "Only available for package installations: ::p::"
+msgstr "Nur für Paketinstallationen verfügbar: ::p::"
+
+#. type: Bullet: '- '
+#: src/en/reference/environment-variables.md:15
+msgid "Available for both installation variants: without badge"
+msgstr "Verfügbar für beide Installationsvarianten: kein Icon"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-env-vars.md:11
+#: src/en/reference/environment-variables.md:16
 #, no-wrap
 msgid ""
-"If you want to use a `.env` file, you can use the provided `.env.dist` file and copy it to `.env`. That way it will be\n"
-"picked up by Docker-Compose automatically and not overwritten during updates.\n"
+"\n"
+"If you want to use a `.env` file in docker compose deployments, you can use the provided `.env.dist` file and copy it\n"
+"to `.env`. That way it will be picked up by docker compose automatically and not overwritten during updates.\n"
+"\n"
 msgstr ""
-"Wenn Sie eine `.env`-Datei verwenden wollen, können Sie die mitgelieferte `.env.dist`-Datei verwenden und sie nach `.env` kopieren. Auf diese Weise wird sie\n"
-"automatisch von Docker-Compose berücksichtigt und nicht bei Aktualisierungen überschrieben.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:23
-#, no-wrap
-msgid ""
-"`VERSION` <Badge type=\"info\" text=\"<current stable version of Zammad>\"/>\n"
-": Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you\n"
-"  update your Zammad docker stack. Please see the\n"
-"  [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on\n"
-"  this variable.\n"
-msgstr ""
-"`VERSION` <Badge type=\"info\" text=\"<aktuelle stabile Version von Zammad>\"/>\n"
-": Ermöglicht die Anpassung des Zammad Image Tags. Beispiel: `6.3.1-54`.\n"
-"  Diese Standardversion kann erhöht werden, wenn Sie Ihren Zammad-Docker\n"
-"  Stack aktualisieren. Weitere Details zu dieser Variable finden Sie in der (Beispiel env Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:27
-#, no-wrap
-msgid ""
-"`AUTOWIZARD_JSON`\n"
-": This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of\n"
-"  this documentation, however this example file should help.\n"
-msgstr ""
-"`AUTOWIZARD_JSON`\n"
-": Diese Variable ermöglicht es Ihnen, die anfänglichen Konfigurationsdaten für Ihre Instanz bereitstellen. Autowizard JSON ist nicht Gegenstand dieser Dokumentation,\n"
-"  aber diese Beispiel-Datei sollte helfen.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:30
-msgid "`ZAMMAD_HTTP_TYPE` : Set the http type (http/https) for your instance."
-msgstr "`ZAMMAD_HTTP_TYPE`: Legt den http-Typ (http/https) Ihrer Instanz fest."
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:33
-msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
-msgstr "`ZAMMAD_FQDN`: Legen Sie den FQDN für Ihre Instanz fest."
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:37
-#, no-wrap
-msgid ""
-"`ZAMMAD_WEB_CONCURRENCY`\n"
-": Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:\n"
-"  [Configuration via Environment Variables](env-vars).\n"
-msgstr ""
-"`ZAMMAD_WEB_CONCURRENCY`\n"
-": Erlaubt das Erzeugen von `n` Workern, um mehrere gleichzeitige Verbindungen für\n"
-"  Zammads Web-UI zu ermöglichen. Siehe auch: [Konfiguration per Umgebungsvariablen](env-vars).\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:40
-#, no-wrap
-msgid ""
-"  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-railsserver's CPU setting\n"
-"  should match the value from this variable.\n"
-msgstr ""
-"  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-railsserver\n"
-"  dem Wert dieser Variable entsprechen.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:44
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
-": Allows spawning `n` independent session jobs workers to release pressure from Zammad's background worker. See also:\n"
-"  [Configuration via Environment Variables](env-vars).\n"
-msgstr ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-": Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.\n"
-"  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:47
-#: src/en/reference/docker-env-vars.md:54
-#: src/en/reference/docker-env-vars.md:61
-#, no-wrap
-msgid ""
-"  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting\n"
-"  should match the sum of all worker settings variables.\n"
-msgstr ""
-"  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-scheduler\n"
-"  mit der Summe aller Variablen der Worker-Einstellungen übereinstimmen.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:51
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-": Allows spawning `1` independent scheduled job worker to reduce pressure from Zammad's background worker. See also:\n"
-"  [Configuration via Environment Variables](env-vars).\n"
-msgstr ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-": Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.\n"
-"  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:58
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": Allows spawning `n` delayed job workers to reduce pressure from Zammad's background worker. See also:\n"
-"  [Configuration via Environment Variables](env-vars).\n"
-msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": Erlaubt das Erzeugen von n Workern für verzögerten Aufgaben, um Zammads\n"
-"  Background-Worker zu entlasten. Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:65
-#, no-wrap
-msgid ""
-"`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"127.0.0.1,::1\"/>\n"
-": This setting is important for the correct detection of client IP addresses and features based on it, like rate\n"
-"  limiting.\n"
-msgstr ""
-"`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"127.0.0.1,::1\"/>\n"
-": Diese Einstellung ist wichtig für die korrekte Erkennung von Client IP Adressen und darauf basierenden Funktionen, wie z.B. Rate\n"
-"  Limiting.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:69
-#, no-wrap
-msgid ""
-"  By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address\n"
-"  (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever\n"
-"  the IP address of a proxy server changes.\n"
-msgstr ""
-"  Standardmäßig vertraut Zammad nur Localhost-Proxys. Zusätzliche Proxyserver müssen hier hinzugefügt werden, entweder mit IP-Adresse\n"
-"  (falls statisch) oder über den Hostnamen. Hostnamen werden beim Start von Zammad aufgelöst, so dass ein Neustart erforderlich ist,\n"
-"  wenn sich die IP-Adresse eines Proxy-Servers ändert.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:72
-#, no-wrap
-msgid ""
-"  Note that in docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address,\n"
-"  if it is placed in another network.\n"
-msgstr ""
-"  Beachten Sie, dass Zammad im Docker-Kontext möglicherweise die IP-Adresse des Netzwerk-Gateways anstelle der tatsächlichen IP-Adresse des Proxy-Servers sieht,\n"
-"  wenn er sich in einem anderen Netzwerk befindet.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:75
-#, no-wrap
-msgid ""
-"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
-": Provide your own Memcached instance to Zammad if you already have one.\n"
-msgstr ""
-"`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
-": Stellen Sie Zammad Ihre eigene Memcached-Instanz zur Verfügung, wenn Sie bereits eine haben.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:79
-#, no-wrap
-msgid ""
-"`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
-": Provide your own Redis instance if you already have one. Please note that this method currently does not allow\n"
-"  authentication.\n"
-msgstr ""
-"`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
-": Geben Sie Ihre eigene Redis-Instanz an, wenn Sie bereits eine haben. Bitte beachten Sie, dass\n"
-" diese Methode derzeit keine Authentifizierung erlaubt.\n"
+"\n"
+"Wenn Sie eine `.env`-Datei in Docker Compose-Installationen verwenden "
+"möchten, können Sie die mitgelieferte `.env.dist`-Datei verwenden und sie\n"
+"als `.env` kopieren. Auf diese Weise wird sie von docker compose automatisch "
+"übernommen und bei Aktualisierungen nicht überschrieben.\n"
+"\n"
 
 #. type: Title ##
-#: src/en/reference/docker-env-vars.md:80
+#: src/en/reference/environment-variables.md:23
+#, no-wrap
+msgid "Miscellaneous"
+msgstr "Verschiedenes"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:32
+#, no-wrap
+msgid ""
+"| Variable            | Limited | Default Value | Description                                                                                                                                                                                         |\n"
+"| ------------------- | ------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| GPG_PATH            | ::p::   | unset         | Defines the path of your GPG installation. Only needed if you want to use different versions of PGP or if your PGP installation differs from the standard installation.                             |\n"
+"| RAILS_LOG_TO_STDOUT | ::p::   | unset         | This setting can be overwritten during update on package installations. Use `enabled` to turn this option on only until the next update. Use `true` to turn it on permanently.                      |\n"
+"| ZAMMAD_SAFE_MODE    | ::p::   | unset         | Be careful when running Zammad commands on production systems in safe mode. While it may allow an escape hatch for certain commands, it has a potential to break regular Zammad operations.         |\n"
+"| ZAMMAD_BIND_IP      | ::p::   | `127.0.0.1`   | The IP address that the web server is bound to.                                                                                                                                                     |\n"
+"| S3_URL              | ::p::   | unset         | Allows you to provide your S3 storage provider configuration. Example for value: `https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true` |\n"
+msgstr ""
+"| Variable            | Beschränkung | Standardwert  | "
+"Beschreibung                                                                                                                                                                                                        "
+"|\n"
+"| ------------------- | ------------ | ------------- | "
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| GPG_PATH            | ::p::        | nicht gesetzt | Legt den Pfad der GPG-"
+"Installation fest. Nur benötigt wenn die PGP-Installation vom Standard "
+"abweicht oder Sie verschiedene PGP-Installationen verwenden "
+"wollen.                                                    |\n"
+"| RAILS_LOG_TO_STDOUT | ::p::        | nicht gesetzt | Dies Einstellung kann "
+"während einem Update einer Paketinstallation überschrieben werden. Verwenden "
+"Sie `enabled` für eine Aktivierung bis zum nächsten Update. Verwenden Sie "
+"`true` für eine dauerhaft Aktivierung. |\n"
+"| ZAMMAD_SAFE_MODE    | ::p::        | nicht gesetzt | Seien Sie vorsichtig "
+"beim Ausführen von Befehlen im Safe-Mode in Produktivsystemen. Obwohl dieser "
+"Modus eine Rettung für manche Systeme sein kann, hat er auch das Potenzial, "
+"Systeme zu beschädigen.               |\n"
+"| ZAMMAD_BIND_IP      | ::p::        | `127.0.0.1`   | Die IP-Adresse, auf "
+"die Ihr Webserver "
+"lauscht.                                                                                                                                                                      "
+"|\n"
+"| S3_URL              | ::p::        | nicht gesetzt | Erlaubt es, eine S3 "
+"Speicher-Konfiguration zu setzen. Beispiel für einen Wert: "
+"`https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-"
+"bucket?region=eu-central-1&force_path_style=true`                   |\n"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:46
+#, no-wrap
+msgid ""
+"| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
+"| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
+"| AUTOWIZARD_JSON                                        | ::d::   | unset                               | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
+"| ZAMMAD_HTTP_TYPE                                       |         | unset                               | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
+"| ZAMMAD_FQDN                                            |         | unset                               | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
+"| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
+"| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
+"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
+msgstr ""
+"| Variable                                               | Beschränkung | "
+"Standardwert                                                       | "
+"Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "
+"|\n"
+"| ------------------------------------------------------ | ------------ | "
+"------------------------------------------------------------------ | "
+"------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| VERSION                                                | ::d::        | "
+"aktuelle stable Version von Zammad                                 | Erlaubt "
+"die Anpassung des Zammad Image-Tags. Beispiel: `6.3.1-54`. Diese Default-"
+"Version kann bei einem Update von Zammad erhöht werden. Bitte sehen Sie sich "
+"die [Beispiel env-Datei](https://github.com/zammad/zammad-docker-compose/"
+"blob/master/.env.dist)_ an für weitere "
+"Informationen.                                                                                                                                                                                                                                                                                                                                               "
+"|\n"
+"| AUTOWIZARD_JSON                                        | ::d::        | "
+"nicht gesetzt                                                      | Diese "
+"Variable erlaubt es, eine initiale Konfiguration von Zammad zu definieren. "
+"Die Autowizard JSON ist nicht Inhalt dieser Dokumentation. Sie können "
+"allerdings einen Blick auf [diese Beispiel-Datei](https://github.com/zammad/"
+"zammad/blob/stable/contrib/auto_wizard_example.json) "
+"werfen.                                                                                                                                                                                                                                                                                                                                            "
+"|\n"
+"| ZAMMAD_HTTP_TYPE                                       |              | "
+"nicht gesetzt                                                      | Setzen "
+"Sie den http-Typ Ihrer Instanz. Mögliche Werte sind `http` und `https`"
+".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "
+"|\n"
+"| ZAMMAD_FQDN                                            |              | "
+"nicht gesetzt                                                      | Setzen "
+"Sie den FQDN Ihrer "
+"Instanz.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "
+"|\n"
+"| RAILS_TRUSTED_PROXIES                                  |              | "
+"`127.0.0.1,::1`                                                    | Diese "
+"Einstellung ist wichtig für die korrekte Ermittlung der Client-IP-Adressen "
+"und darauf aufbauender Features wie Rate Limiting. Standardmäßig vertraut "
+"Zammad nur localhost Proxies. Jeder zusätzliche Proxy-Server muss hier unter "
+"Angabe der IP-Adresse (falls statisch) oder des Hostnamens angegeben werden. "
+"Hostnamen werden während des Start von Zammad aufgelöst, weshalb ein "
+"Neustart bei Änderungen der IP-Adresse des Proxy-Servers notwendig ist. "
+"Beachten Sie, dass Zammad im Docker-Kontext ggf. die IP-Adresse des Netzwerk-"
+"Gateways anstelle der Proxy-IP-Adresse sieht, sofern es sich um separate "
+"Netzwerke handelt. |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |              | "
+"nicht gesetzt                                                      | "
+"Wieviele AI-Worker-Instanzen sollen gleichzeitig laufen. AI-Workers wickeln "
+"Zammads KI-Anfragen ab und rufen die Antworten vom konfigurierten KI-"
+"Anbieter ab. Standardmäßig läuft ein Worker. Nutzer mit selbst gehosteter KI "
+"sollten vorsichtig mit einer Erhöung sein, der KI-Dienst kann "
+"zusammenbrechen. Für Nutzer einer KI-Cloud mit einer großen Zammad-Instanz "
+"kann eine Erhöung hingegeben Sinn machen um eine Art Parallelisierung zu "
+"erreichen. Die maximale Anzahl an Workern beträgt `16`"
+".                                                                                                                                    "
+"|\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |              | `5`"
+"                                                                | Wieviele "
+"Threads sollen von **einem** KI-Worker bearbeitet werden (sofern Sie mehr "
+"als einen Worker haben, ist der Wert mit der Anzahl an Workern zu "
+"multiplizieren. Dies kann die KI-Verarbeitung beschleunigen. Seien Sie sich "
+"aber bewusst, dass ein Ruby-Worker ohnehin nur auf einem Core laufen kann. "
+"Die maximale Anzahl an Threads ist `16`"
+".                                                                                                                                                                                                                                                                                       "
+"|\n"
+"| MEMCACHE_SERVERS                                       |              | - "
+"Docker: `zammad-memcached:11211`<br> - Paket: nicht gesetzt      | Legen Sie "
+"Ihre eigene Memcached-Instanz fest, sofern Sie eine haben. Der Fallback bei "
+"Paket-Installationen ist `/opt/zammad/tmp/cache*`"
+".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "
+"|\n"
+"| REDIS_URL                                              |              | - "
+"Docker: `redis://zammad-redis:6379`<br> - Paket: nicht gesetzt   | Legen Sie "
+"Ihre eigene Redis-Instanz fest, sofern Sie eine haben. Bitte beachten Sie, "
+"dass diese Methode aktuell keine Authentifizierung erlaubt. Der Fallback bei "
+"Paket-Installationen ist `/opt/zammad/tmp/websocket_*`"
+".                                                                                                                                                                                                                                                                                                                                                                                                                  "
+"|\n"
+
+#. type: Title ##
+#: src/en/reference/environment-variables.md:47
 #, no-wrap
 msgid "Elasticsearch"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:85
+#: src/en/reference/environment-variables.md:59
 #, no-wrap
 msgid ""
-"`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
-": Setting this variable to false will allow you to run your Zammad without Elasticsearch. Please note that we strongly\n"
-"  advise against doing so.\n"
+"| Variable                 | Limited | Default Value          | Description                                                                                                                                                                                                   |\n"
+"| ------------------------ | ------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| ELASTICSEARCH_ENABLED    | ::d::   | `true`                 | Setting this variable to false will allow you to run your Zammad without Elasticsearch. Please note that we strongly advise **against** doing so.                                                             |\n"
+"| ELASTICSEARCH_HOST       | ::d::   | `zammad-elasticsearch` | Provide a host name or address to your external Elasticsearch cluster.                                                                                                                                        |\n"
+"| ELASTICSEARCH_PORT       | ::d::   | `9200`                 | Provide a different port for Elasticsearch if needed.                                                                                                                                                         |\n"
+"| ELASTICSEARCH_SCHEMA     | ::d::   | `http`                 | By default, Elasticsearch is reachable via HTTP.                                                                                                                                                              |\n"
+"| ELASTICSEARCH_NAMESPACE  | ::d::   | `zammad`               | With this name space all Zammad related indexes will be created. Change this if you're using external clusters.                                                                                               |\n"
+"| ELASTICSEARCH_REINDEX    | ::d::   | unset                  | The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex manually, either set this variable to `true` or run the reindex command via docker manually. |\n"
+"| ELASTICSEARCH_SSL_VERIFY | ::d::   | `true`                 | Allows you to let the compose scripts ignore self signed SSL certificates for your Elasticsearch installation if needed.                                                                                      |\n"
+"| ELASTICSEARCH_HEAP_SIZE  | ::d::   | `1G`                   | Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this value to a reasonable size.                                                              |\n"
 msgstr ""
-"`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
-": Wenn Sie diese Variable auf false setzen, können Sie Ihr Zammad ohne\n"
-"Elasticsearch verwenden. Bitte beachten Sie, dass wir dringend davon abraten.\n"
+"| Variable                 | Beschränkung | Standardwert           | "
+"Beschreibung                                                                                                                                                                                                                                      "
+"|\n"
+"| ------------------------ | ------------ | ---------------------- | "
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| ELASTICSEARCH_ENABLED    | ::d::        | `true`                 | Wenn "
+"Sie diese Variable auf false setzen, können Sie Ihr Zammad ohne "
+"Elasticsearch betreiben. Bitte beachten Sie, dass wir dringend davon "
+"abraten, dies zu "
+"tun.                                                                                   "
+"|\n"
+"| ELASTICSEARCH_HOST       | ::d::        | `zammad-elasticsearch` | Geben "
+"Sie einen Hostnamen oder eine Adresse für Ihre externes Elasticsearch-"
+"Cluster "
+"an.                                                                                                                                                           "
+"|\n"
+"| ELASTICSEARCH_PORT       | ::d::        | `9200`                 | Geben "
+"Sie bei Bedarf einen anderen Port für Elasticsearch "
+"an.                                                                                                                                                                                     "
+"|\n"
+"| ELASTICSEARCH_SCHEMA     | ::d::        | `http`                 | "
+"Standardmäßig ist Elasticsearch über HTTP "
+"erreichbar.                                                                                                                                                                                             "
+"|\n"
+"| ELASTICSEARCH_NAMESPACE  | ::d::        | `zammad`               | Mit "
+"diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie "
+"dies, wenn Sie externe Cluster "
+"verwenden.                                                                                                                         "
+"|\n"
+"| ELASTICSEARCH_REINDEX    | ::d::        | nicht gesetzt          | Der "
+"Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden "
+"kann. Wenn Sie den Suchindex manuell neu aufbauen müssen, setzen Sie diese "
+"Variable entweder auf `true` oder führen Sie den Reindex-Befehl über Docker "
+"manuell aus. |\n"
+"| ELASTICSEARCH_SSL_VERIFY | ::d::        | `true`                 | Erlaubt "
+"Ihnen, dass die Compose-Skripte bei Bedarf selbstsignierte SSL-Zertifikate "
+"für Ihre Elasticsearch-Installation "
+"ignorieren.                                                                                                                "
+"|\n"
+"| ELASTICSEARCH_HEAP_SIZE  | ::d::        | `1G`                   | Legt "
+"den verfügbaren Speicher für Elasticsearch fest. Wenn Sie Probleme mit ES "
+"und seiner Leistung haben, sollten Sie diesen Wert auf eine angemessene "
+"Größe "
+"erhöhen.                                                                             "
+"|\n"
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:88
+#: src/en/reference/environment-variables.md:71
 #, no-wrap
 msgid ""
-"`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
-": Provide a host name or address to your external Elasticsearch cluster.\n"
+"| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
+"| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
+"| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
+"| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
+"| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
+"| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
+"| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
+"| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional postgresql params to be appended to the database URI.                                                          |\n"
+"| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
 msgstr ""
-"`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
-": Geben Sie einen Hostnamen oder eine Adresse für Ihr Elasticsearch-Cluster an.\n"
+"| Variable             | Beschränkung | Standardwert        | "
+"Beschreibung                                                                                                                                      "
+"|\n"
+"| -------------------- | ------------ | ------------------- | "
+"-------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| POSTGRESQL_HOST      | ::d::        | `zammad-postgresql` | Hostname Ihres "
+"PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen "
+"haben.                                                     |\n"
+"| POSTGRESQL_PORT      | ::d::        | `5432`              | Stellen Sie "
+"den Port Ihres PostgreSQL-Servers "
+"ein.                                                                                                "
+"|\n"
+"| POSTGRESQL_USER      | ::d::        | `zammad`            | Der Datenbank "
+"Benutzer für "
+"Zammad.                                                                                                                "
+"|\n"
+"| POSTGRESQL_PASS      | ::d::        | `zammad`            | Das Passwort "
+"des Datenbank-Benutzers von "
+"Zammad.                                                                                                  "
+"|\n"
+"| POSTGRESQL_DB        | ::d::        | `zammad_production` | Zammads zu "
+"verwendende "
+"Datenbank.                                                                                                                 "
+"|\n"
+"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche "
+"Postgresql-Parameter, die an den Datenbank-URI angehängt "
+"werden.                                                                      "
+"|\n"
+"| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig "
+"erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden "
+"Datenbankservern kann die Voreinstellung problematisch sein. |\n"
 
 #. type: Plain text
-#: src/en/reference/docker-env-vars.md:91
+#: src/en/reference/environment-variables.md:86
 #, no-wrap
 msgid ""
-"`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
-": Provide a different port for Elasticsearch if needed.\n"
+"| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                             |\n"
+"| -------------------------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| NGINX_EXPOSE_PORT          | ::d::   | `8080`               | The port to be exposed for accessing the Zammad stack from outside. Change this to another value if you already have an existing service listening on this port.                                        |\n"
+"| NGINX_PORT                 | ::d::   | `8080`               | The internal port the Nginx service will listen on.                                                                                                                                                     |\n"
+"| NGINX_SERVER_NAME          | ::d::   | `_`                  | By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.                                                                                   |\n"
+"| NGINX_SERVER_SCHEME        | ::d::   | `\\$scheme`           | If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx) `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. |\n"
+"| NGINX_CLIENT_MAX_BODY_SIZE | ::d::   | unset                | Define the maximum size of data that a client can send to the server.                                                                                                                                   |\n"
+"| ZAMMAD_RAILSSERVER_HOST    | ::d::   | `zammad-railsserver` | Host name of the rails server container.                                                                                                                                                                |\n"
+"| ZAMMAD_RAILSSERVER_PORT    | ::d::   | `3000`               | Port of Zammad's rails server.                                                                                                                                                                          |\n"
+"| ZAMMAD_RAILS_PORT          | ::p::   | `3000`               | Port of Zammad's rails server.                                                                                                                                                                          |\n"
+"| ZAMMAD_WEBSOCKET_HOST      | ::d::   | `zammad-websocket`   | Host name of Zammad's websocket server.                                                                                                                                                                 |\n"
+"| ZAMMAD_WEBSOCKET_PORT      | ::d::   | `6042`               | Port of Zammad's websocket server.                                                                                                                                                                      |\n"
 msgstr ""
-"`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
-": Geben Sie bei Bedarf einen anderen Port für Elasticsearch an.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:94
-#, no-wrap
-msgid ""
-"`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
-": By default, Elasticsearch is reachable via HTTP.\n"
-msgstr ""
-"`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
-": Standardmäßig ist Elasticsearch über HTTP erreichbar.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:97
-#, no-wrap
-msgid ""
-"`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
-": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
-msgstr ""
-"`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
-": Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie dies\n"
-"  wenn Sie externe Cluster verwenden.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:101
-#, no-wrap
-msgid ""
-"`ELASTICSEARCH_REINDEX`\n"
-": The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex\n"
-"  manually, either set this variable to `true` or run the reindex command via docker manually.\n"
-msgstr ""
-"`ELASTICSEARCH_REINDEX`\n"
-": Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden kann. Wenn Sie den Suchindex manuell neu aufbauen müssen,\n"
-"  setzen Sie entweder diese Variable auf `true` oder führen Sie den Reindex-Befehl über Docker manuell aus.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:105
-#, no-wrap
-msgid ""
-"`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
-": Allows you to let the compose scripts ignore self signed SSL certificates for your Elasticsearch installation if\n"
-"  needed.\n"
-msgstr ""
-"`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
-": Ermöglicht es Ihnen, dass die Compose-Skripte selbstsignierte SSL-Zertifikate\n"
-"  für Ihre Elasticsearch-Installation ignorieren, falls erforderlich.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:109
-#, no-wrap
-msgid ""
-"`ELASTICSEARCH_HEAP_SIZE` <Badge type=\"info\" text=\"1G\"/>\n"
-": Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this\n"
-"  value to a reasonable size.\n"
-msgstr ""
-"`ELASTICSEARCH_HEAP_SIZE` <Badge type=\"info\" text=\"1G\"/>\n"
-": Legt den verfügbaren Arbeitsspeicher für Elasticsearch fest. Wenn Sie Probleme mit ES und seiner Leistung haben, sollten Sie diesen\n"
-"  Wert auf eine angemessene Größe erhöhen.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:114
-#, no-wrap
-msgid ""
-"`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
-": Host name of your PostgreSQL server. Use your own if you already have one.\n"
-msgstr ""
-"`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
-": Der Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:117
-#, no-wrap
-msgid ""
-"`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
-": Adjust the Port of your PostgreSQL server.\n"
-msgstr ""
-"`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
-": Stellen Sie den Port Ihres PostgreSQL-Servers ein.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:120
-#, no-wrap
-msgid ""
-"`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
-": The database user for Zammad.\n"
-msgstr ""
-"`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
-": Der Datenbank-Benutzer für Zammad.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:123
-#, no-wrap
-msgid ""
-"`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
-": The password of Zammad's database user.\n"
-msgstr ""
-"`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
-": Das Passwort von Zammads Datenbank-Benutzer.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:126
-#, no-wrap
-msgid ""
-"`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
-": Zammad's database to use.\n"
-msgstr ""
-"`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
-": Zammads zu verwendende Datenbank.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:129
-#, no-wrap
-msgid ""
-"`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
-": Additional postgresql parameters to be appended to the database URI.\n"
-msgstr ""
-"`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
-": Zusätzliche postgresql-Parameter, die an den Datenbank-URI angehängt werden.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:132
-#, no-wrap
-msgid ""
-"`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
-": By default Zammad creates the required database.\n"
-msgstr ""
-"`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
-": Standardmäßig erstellt Zammad die gewünschte Datenbank.\n"
-
-#. type: Fenced div block (warning)
-#: src/en/reference/docker-env-vars.md:132
-#, no-wrap
-msgid "  On dedicated database servers, this setting might be troublesome.\n"
-msgstr "  Auf dedizierten Datenbankservern kann diese Einstellung problematisch sein.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:141
-#, no-wrap
-msgid ""
-"`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
-": The port to be exposed for accessing the Zammad stack from outside. Change this to another value if you already have\n"
-"  an existing service listening on this port.\n"
-msgstr ""
-"`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
-": Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern\n"
-"  Sie diesen Wert auf einen anderen, wenn Sie bereits einen Dienst haben, der auf diesem Port lauscht.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:144
-#, no-wrap
-msgid ""
-"`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
-": The internal port the nginx service will listen on.\n"
-msgstr ""
-"`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
-": Der interne Port, an dem der nginx-Dienst lauschen soll.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:147
-#, no-wrap
-msgid ""
-"`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
-": By default the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
-msgstr ""
-"`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
-": Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das möchten.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:151
-#, no-wrap
-msgid ""
-"`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
-": If the Nginx container for Zammad is not the upstream server (means if you are using another proxy in front of nginx)\n"
-"  you might want to change this. You can set the correct scheme `http` or `https` if needed.\n"
-msgstr ""
-"`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
-": Wenn der Nginx-Container für Zammad nicht der Upstream-Server ist (d.h. wenn Sie einen anderen Proxy vor Nginx verwenden), möchten Sie\n"
-"  dies vielleicht ändern. Sie können das richtige Schema `http` oder `https` einstellen, falls nötig.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:154
-msgid ""
-"`NGINX_CLIENT_MAX_BODY_SIZE` : Define the maximum size of data that a client "
-"can send to the server."
-msgstr ""
-"`NGINX_CLIENT_MAX_BODY_SIZE`: Definiert die maximale Größe der Daten, die "
-"ein Client an den Server senden kann."
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:157
-#, no-wrap
-msgid ""
-"`ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" text=\"zammad-railsserver\"/>\n"
-": Host name of the rails server container.\n"
-msgstr ""
-"ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" text=\"zammad-railsserver\"/>\n"
-": Hostname des Rails-Server-Containers.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:160
-#, no-wrap
-msgid ""
-"`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
-": Port of Zammad's rails server.\n"
-msgstr ""
-"`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
-": Port von Zammads Rails-Server.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:163
-#, no-wrap
-msgid ""
-"`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
-": Host name of Zammad's websocket server.\n"
-msgstr ""
-"`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
-": Hostname von Zammads Websocket-Server.\n"
-
-#. type: Plain text
-#: src/en/reference/docker-env-vars.md:165
-#, no-wrap
-msgid ""
-"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
-": Port of Zammad's websocket server.\n"
-msgstr ""
-"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
-": Port des Websocket-Servers von Zammad.\n"
-
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/reference/env-vars.md:1
-#, no-wrap
-msgid "Environment Variables"
-msgstr "Umgebungsvariablen"
-
-#. type: Title #
-#: src/en/reference/env-vars.md:6
-#, no-wrap
-msgid "Configuration via Environment Variables"
-msgstr "Konfiguration über Umgebungsvariablen"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:11
-msgid ""
-"Use these environment variables to configure Zammad's behavior at runtime. "
-"You may want to have a look at the [collection of rails commands](/en/"
-"reference/console) as well."
-msgstr ""
-"Verwenden Sie diese Umgebungsvariablen, um das Verhalten von Zammad zur "
-"Laufzeit zu konfigurieren. Sie sollten auch einen Blick auf die [Sammlung "
-"von Rails-Befehlen](/de/reference/console) werfen."
-
-#. type: Fenced div block (warning)
-#: src/en/reference/env-vars.md:12
-#, no-wrap
-msgid ""
-"Please note that environment variables may be named differently for\n"
-"installations based on [Docker](/en/reference/docker-env-vars) and Kubernetes.\n"
-msgstr ""
-"Bitte beachten Sie, dass die Umgebungsvariablen für\n"
-"Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kubernetes unterschiedlich benannt sein können.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:18
-msgid "Click to open details about how to set an environment variable:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/env-vars.md:19
-#, no-wrap
-msgid ""
-"\n"
-"It depends on how you installed Zammad (source, package, docker). Either set it via `zammad config` command as you can\n"
-"see below, use your system's way of setting variables via command line (e.g. `export VARIABLE=value`), place an `.env`\n"
-"file in the directory or even use a GUI like Portainer to define them for a docker installation.\n"
-"\n"
-"Examples for package installations:\n"
-"\n"
-"**Set OPTION to \"value\":**\n"
-"\n"
-"```sh\n"
-"zammad config:set OPTION=value\n"
-"\n"
-"```\n"
-"\n"
-"**Get OPTION:**\n"
-"\n"
-"```sh\n"
-"zammad config:get OPTION\n"
-"\n"
-"```\n"
-"\n"
-"**Unset OPTION:**\n"
-"\n"
-"```sh\n"
-"zammad config:unset OPTION\n"
-"\n"
-"```\n"
-"\n"
-"**Restart Zammad:**\n"
-"\n"
-"```sh\n"
-"systemctl restart zammad\n"
-"\n"
-"```\n"
-"\n"
-msgstr ""
-"\n"
-"Es hängt davon ab, wie Sie Zammad installiert haben (Source, Paket, Docker). Entweder setzen Sie sie über den Befehl `zammad config`, wie\n"
-"unten zu sehen, nutzen die Möglichkeit Ihres Systems, Variablen über die Kommandozeile zu setzen (z.B. `export VARIABLE=value`), legen eine `.env`\n"
-"Datei im Verzeichnis ab oder Sie verwenden sogar ein GUI wie Portainer, um Variablen für eine Docker-Installation zu setzen.\n"
-"\n"
-"Beispiele für Paketinstallationen:\n"
-"\n"
-"**OPTION auf \"Wert\" setzen:**\n"
-"\n"
-"```sh\n"
-"zammad config:set OPTION=Wert\n"
-"\n"
-"```\n"
-"\n"
-"**Get OPTION:**\n"
-"\n"
-"```sh\n"
-"zammad config:get OPTION\n"
-"\n"
-"```\n"
-"\n"
-"**Unset OPTION:**\n"
-"\n"
-"```sh\n"
-"zammad config:unset OPTION\n"
-"\n"
-"```\n"
-"\n"
-"**Neustart Zammad:**\n"
-"\n"
-"```sh\n"
-"systemctl restart zammad\n"
-"\n"
-"```\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:58
-#, no-wrap
-msgid "Default values are tagged with a <Badge type=\"info\" text=\"badge\"/>, if present.\n"
-msgstr "Standardwerte sind mit einem <Badge type=\"info\" text=\"badge\"/> gekennzeichnet, sofern vorhanden.\n"
+"| Variable                   | Beschränkung | Standardwert         | "
+"Beschreibung                                                                                                                                                                                                                      "
+"|\n"
+"| -------------------------- | ------------ | -------------------- | "
+"---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| NGINX_EXPOSE_PORT          | ::d::        | `8080`               | Der "
+"Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden "
+"soll. Ändern Sie diesen Wert, wenn Sie bereits einen bestehenden Dienst "
+"haben, der auf diesen Port hört.                                          |\n"
+"| NGINX_PORT                 | ::d::        | `8080`               | Der "
+"interne Port, an dem der Nginx-Dienst lauschen "
+"wird.                                                                                                                                                                          "
+"|\n"
+"| NGINX_SERVER_NAME          | ::d::        | `_`                  | "
+"Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen "
+"antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das "
+"möchten.                                                                                           "
+"|\n"
+"| NGINX_SERVER_SCHEME        | ::d::        | `\\$scheme`           | Wenn "
+"der Nginx-Container für Zammad **nicht** der Upstream-Server ist (d.h. Sie "
+"verwenden einen anderen Proxy vor Nginx), kann `$scheme` falsch sein. Sie "
+"können das korrekte Schema `http` oder `https` einstellen, falls nötig. |\n"
+"| NGINX_CLIENT_MAX_BODY_SIZE | ::d::        | nicht gesetzt        | "
+"Definieren Sie die maximale Größe der Daten, die ein Client an den Server "
+"senden "
+"kann.                                                                                                                                            "
+"|\n"
+"| ZAMMAD_RAILSSERVER_HOST    | ::d::        | `zammad-railsserver` | "
+"Hostname des Rails-Server-"
+"Containers.                                                                                                                                                                                             "
+"|\n"
+"| ZAMMAD_RAILSSERVER_PORT    | ::d::        | `3000`               | Port "
+"des Rails-Servers von "
+"Zammad.                                                                                                                                                                                                "
+"|\n"
+"| ZAMMAD_RAILS_PORT          | ::p::        | `3000`               | Port "
+"des Rails-Servers von "
+"Zammad.                                                                                                                                                                                                "
+"|\n"
+"| ZAMMAD_WEBSOCKET_HOST      | ::d::        | `zammad-websocket`   | "
+"Hostname des Websocket-Servers von "
+"Zammad.                                                                                                                                                                                        "
+"|\n"
+"| ZAMMAD_WEBSOCKET_PORT      | ::d::        | `6042`               | Port "
+"des Websocket-Servers von "
+"Zammad.                                                                                                                                                                                            "
+"|\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:59
-#, no-wrap
-msgid "General Options"
-msgstr "Allgemeine Optionen"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:66
-#, no-wrap
-msgid ""
-"`GPG_PATH`\n"
-": Defines the path to the GPG installation. This is only needed if you\n"
-"  installed Zammad from Source, if you want to use different versions of\n"
-"  PGP on your machine or if your PGP installation differs from the\n"
-"  standard installation.\n"
-msgstr ""
-"`GPG_PATH`\n"
-": Legt den Pfad zur GPG-Installation fest. Dies wird nur benötigt, wenn Sie\n"
-"  Zammad aus dem Quellcode installiert haben, wenn Sie verschiedene Versionen von\n"
-"  PGP auf Ihrem Rechner verwenden wollen oder wenn Ihre PGP-Installation von der\n"
-"  Standard-Installation abweicht.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:70
-#, no-wrap
-msgid ""
-"`RAILS_LOG_TO_STDOUT`\n"
-": Print output directly to standard output instead of\n"
-"  `/var/log/zammad/production.log`.\n"
-msgstr ""
-"`RAILS_LOG_TO_STDOUT`\n"
-": Ausgabe direkt auf Standard Output anstatt in\n"
-"  `/var/log/zammad/production.log`.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:74
-#, no-wrap
-msgid ""
-"  This setting can be overwritten during update on package installations.\n"
-"  Use `enabled` to turn this option on only until the next update. Use\n"
-"  `true` to turn it on permanently.\n"
-msgstr ""
-"  Diese Einstellung kann bei der Aktualisierung von Paket-Installationen überschrieben werden.\n"
-"  Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie\n"
-"  `true`, um sie dauerhaft einzuschalten.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:78
-#, no-wrap
-msgid ""
-"`ZAMMAD_SAFE_MODE`\n"
-": Ignore availability of third-party services when running Zammad\n"
-"  commands. Possible values: `1` or `true`\n"
-msgstr ""
-"ZAMMAD_SAFE_MODE`\n"
-": Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von\n"
-"  Zammad- Befehlen. Mögliche Werte: `1` oder `true`\n"
-
-#. type: Fenced div block (warning)
-#: src/en/reference/env-vars.md:79
-#, no-wrap
-msgid ""
-"  **Be careful** when running Zammad commands on production systems in\n"
-"  safe mode.\n"
-"\n"
-"  While it may allow an escape hatch for certain commands, it has a\n"
-"  potential to break regular Zammad operations.\n"
-msgstr ""
-"  **Vorsicht** bei der Ausführung von Zammad-Befehlen auf Produktivsystemen im\n"
-"  abgesicherten Modus.\n"
-"\n"
-"  Dies kann zwar einen Ausweg für bestimmte Fälle bieten, hat aber\n"
-"  das Potenzial, reguläre Zammad-Vorgänge zu unterbrechen.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:90
-#, no-wrap
-msgid ""
-"`ZAMMAD_HTTP_TYPE`\n"
-": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
-"  `https`\n"
-msgstr ""
-"`ZAMMAD_HTTP_TYPE`\n"
-": Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder\n"
-"  `https`\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:93
-msgid "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
-msgstr "`ZAMMAD_FQDN`: Legt den FQDN/Domainnamen des Systems fest."
-
-#. type: Title ##
-#: src/en/reference/env-vars.md:94
-#, no-wrap
-msgid "Network Options"
-msgstr "Netzwerk-Optionen"
-
-#. type: Fenced div block (tip)
-#: src/en/reference/env-vars.md:96
-#, no-wrap
-msgid ""
-"Remember to update your web server config to reflect any changes you\n"
-"make here.\n"
-msgstr ""
-"Denken Sie daran, Ihre Webserverkonfiguration zu aktualisieren, damit alle Änderungen, die Sie\n"
-"hier vorgenommen haben, wirksam werden.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:103
-#, no-wrap
-msgid ""
-"`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
-": The IP address that the web server is bound to.\n"
-msgstr ""
-"`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
-": Die IP-Adresse, an die der Webserver gebunden ist.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:106
-#, no-wrap
-msgid ""
-"`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
-": The port that the web server is exposed on.\n"
-msgstr ""
-"`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
-": Der Port, auf dem der Webserver erreichbar ist.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:109
-#, no-wrap
-msgid ""
-"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
-": The port that the web socket server is exposed on.\n"
-msgstr ""
-"`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
-": Der Port, auf dem der Web-Socket-Server betrieben wird.\n"
-
-#. type: Title ##
-#: src/en/reference/env-vars.md:110
+#: src/en/reference/environment-variables.md:87
 #, no-wrap
 msgid "Performance Tuning"
 msgstr "Leistungsoptimierung"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:115
+#: src/en/reference/environment-variables.md:91
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
-"\"recommended values\" here; the optimal configuration will depend on your "
-"system's resources and typical application load."
+"recommended values here; the optimal configuration depends on your system's "
+"resources and typical application load."
 msgstr ""
 "Jede der unten aufgeführten Einstellungen bringt ihre eigenen Kompromisse "
-"mit sich. Es gibt hier keine \"empfohlenen Werte\"; die optimale "
-"Konfiguration hängt von den Ressourcen Ihres Systems und der typischen "
-"Anwendungslast ab."
+"mit sich. Es gibt hier keine empfohlenen Werte; die optimale Konfiguration "
+"hängt von den Ressourcen Ihres Systems und der typischen Anwendungslast ab."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:118
+#: src/en/reference/environment-variables.md:94
 msgid ""
-"Below settings _may_ consume all available database connections. Please "
-"consider to check your database server configuration."
+"Proceed with caution; when adjusting any of these settings, there is a point "
+"at which performance will begin to degrade rather than improve, or other "
+"problems will begin to emerge."
 msgstr ""
-"Die folgenden Einstellungen _können_ alle verfügbaren Datenbankverbindungen "
-"beanspruchen. Bitte prüfen Sie die Konfiguration Ihres Datenbankservers."
-
-#. type: Fenced div block (danger)
-#: src/en/reference/env-vars.md:119
-#, no-wrap
-msgid ""
-"Proceed with caution and only if you know what you are doing!\n"
-"The settings below may lead to a very high load of your system and/or disable\n"
-"relevant parts of Zammad.\n"
-msgstr ""
-"Seien Sie vorsichtig und verwenden Sie die Einstellungen nur, wenn Sie wissen, was Sie tun!\n"
-"Die folgenden Einstellungen können zu einer sehr hohen Systemauslastung führen und/oder\n"
-"relevante Teile von Zammad deaktivieren.\n"
+"Gehen Sie mit Vorsicht vor. Wenn Sie eine dieser Einstellungen anpassen, "
+"gibt es einen Punkt, an dem sich die Leistung eher verschlechtert als "
+"verbessert, oder andere Probleme auftreten."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:127
+#: src/en/reference/environment-variables.md:97
 msgid ""
-"To find out how many users are currently on Zammad, you can use the rails "
-"command below:"
+"Below settings may consume all available database connections. Please "
+"consider the [Configure Database Server](config-db-server) for more "
+"information."
 msgstr ""
-"Um herauszufinden, wie viele Benutzer derzeit auf Zammad sind, können Sie "
-"den folgenden Rails-Befehl verwenden:"
-
-#. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:128
-#, no-wrap
-msgid "zammad run rails r \"p Sessions.list.uniq.count\"\n"
-msgstr "zammad run rails r \"p Sessions.list.uniq.count\"\n"
+"Die nachstehenden Einstellungen können alle verfügbaren Datenbank-"
+"Verbindungen verwenden. Bitte beachten Sie die "
+"[Datenbankserver-Konfiguration](config-db-server) für weitere Informationen."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:136
+#: src/en/reference/environment-variables.md:104
 #, no-wrap
 msgid ""
-"`WEB_CONCURRENCY`\n"
-": How many instances of the application server to keep open at a time.\n"
-"  Increasing this can reduce loading times when too many users are on\n"
-"  Zammad at once.\n"
+"| Variable                                  | Limited | Default Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n"
+"| ----------------------------------------- | ------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| ZAMMAD_WEB_CONCURRENCY                    |         | unset         | Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-railsserver's CPU setting should match the value from this variable.                                                                                                                                                                                                                                                              |\n"
+"| ZAMMAD_PROCESS_SESSION_<br>JOBS_WORKERS   |         | unset         | How many instances of the session worker to run at a time. Increasing this value can speed up background jobs (like the scheduler) when many users are on Zammad at once. However, it is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of workers can consume a lot of resources! In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables. |\n"
+"| ZAMMAD_PROCESS_SCHEDULED_<br>JOBS_WORKERS |         | unset         | Allows spawning `1` independent scheduled jobs worker to release pressure from Zammad's background worker. Maximum number of workers: `1`. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                   |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>JOBS_WORKERS   |         | unset         | Allows spawning `n` delayed jobs workers to release pressure from Zammad's background worker. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                                                                |\n"
 msgstr ""
-"`WEB_CONCURRENCY`\n"
-": Wie viele Instanzen des Anwendungsservers gleichzeitig offen sein sollen.\n"
-"  Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf\n"
-"  Zammad sind.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:139
-msgid ""
-"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
-"worker to run at a time."
-msgstr ""
-"`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : Wie viele Instanzen des Session "
-"Workers sollen gleichzeitig laufen."
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:141
-#, no-wrap
-msgid "  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.\n"
-msgstr "  Eine Erhöhung dieser Einstellung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:144
-#, no-wrap
-msgid ""
-"  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of\n"
-"  workers can consume a lot of resources!\n"
-msgstr ""
-"  Es ist nicht sinnvoll, diese Einstellung zu ändern, wenn Sie weniger als 40 aktive Benutzer gleichzeitig haben. Das Erhöhen der\n"
-"  Worker kann eine Menge Ressourcen verbrauchen!\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:149
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-": Allows spawning an independent process just for processing scheduled\n"
-"  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
-"  other tasks when running tasks that take rather long.\n"
-msgstr ""
-"`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
-": Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter\n"
-"  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad\n"
-"  für andere Aufgaben entlasten, wenn Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:151
-#, no-wrap
-msgid "  Maximum number of workers: `1`\n"
-msgstr "  Maximale Anzahl von Workern: `1`\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:154
-#, no-wrap
-msgid ""
-"  You can disable the processing of scheduled jobs by setting\n"
-"  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).\n"
-msgstr ""
-"  Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie\n"
-"  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:158
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in\n"
-"  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
-msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_\n"
-"  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.\n"
-"  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:160 src/en/reference/env-vars.md:172
-#, no-wrap
-msgid "  Maximum number of workers: `16`\n"
-msgstr "  Maximale Anzahl von Workern: `16`\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:164
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
-": How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the\n"
-"  responses from the configured AI provider. By default, one worker is running.\n"
-msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
-": Wie viele Instanzen von KI-Workern sollen gleichzeitig laufen. KI-Worker bearbeiten die KI-Anfragen von Zammad und holen sich die\n"
-"  Antworten von dem konfigurierten KI-Provider ab. Standardmäßig wird ein Worker ausgeführt.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:167
-#, no-wrap
-msgid ""
-"  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to\n"
-"  collapse.\n"
-msgstr ""
-"  Benutzer einer selbst gehosteten Instanz sollten bei der Erhöhung vorsichtig sein. Abhängig von Ihrer Hardware kann dies dazu führen, dass Ihr KI-Dienst\n"
-"  zusammenbricht.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:170
-#, no-wrap
-msgid ""
-"  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of\n"
-"  parallelization.\n"
-msgstr ""
-"  Für Benutzer von KI-Cloud-Diensten mit einer großen Zammad-Instanz könnte es sinnvoll sein, diesen Wert zu erhöhren, um eine Art von\n"
-"  Parallelisierung zu erreichen.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:177
-#, no-wrap
-msgid ""
-"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
-": How many threads should be processed by one AI worker (if you have more than one worker, it is multiplied by the\n"
-"  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core\n"
-"  anyway.\n"
-msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
-": Wie viele Threads sollen von einem KI-Worker bearbeitet werden (wenn Sie mehr als einen Worker haben, wird dies mit der\n"
-"  Anzahl der Worker multipliziert). Dies kann die KI-Verarbeitung beschleunigen, aber bedenken Sie, dass ein Ruby-Worker ohnehin nur 1 Kern\n"
-"  auslasten kann.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:179
-#, no-wrap
-msgid "  Maximum number of threads: 16\n"
-msgstr "  Maximale Anzahl von Threads: `16`\n"
+"| Variable                                  | Beschränkung | Standardwert  | "
+"Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+"|\n"
+"| ----------------------------------------- | ------------ | ------------- | "
+"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+" |\n"
+"| ZAMMAD_WEB_CONCURRENCY                    |              | nicht gesetzt | "
+"Erlaubt das Erstellen von `n` Workern, um mehr gleichzeitige Verbindungen "
+"für Zammads Web-UI zu ermöglichen. Falls Sie "
+"[Hardware-Begrenzungen für Docker](docker-compose-scenarios#ressourcen-"
+"begrenzen) angewendet haben, sollte die CPU-Einstellung des Zammad-"
+"Railsservers mit dem Wert dieser Variable "
+"übereinstimmen.                                                                                                                                                                                                                                                                                                                        "
+"|\n"
+"| ZAMMAD_PROCESS_SESSION_<br>JOBS_WORKERS   |              | nicht gesetzt | "
+"Wie viele Instanzen des Session Workers gleichzeitig laufen sollen. Das "
+"Erhöhen dieses Wertes kann Hintergrundaufgaben (wie die Automatisierung) "
+"beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind. Es ist "
+"jedoch nicht sinnvoll, diese Einstellung zu ändern, wenn Sie weniger als 40 "
+"gleichzeitig aktive Benutzer haben. Das Erhöhen der Anzahl der Worker kann "
+"eine Menge Ressourcen verbrauchen! Falls Sie "
+"[Hardware-Begrenzungen für Docker](docker-compose-scenarios#ressourcen-"
+"begrenzen) angewendet haben, sollte die CPU-Einstellung des Zammad-"
+"Schedulers der Summe aller Variablen der Worker-Einstellungen entsprechen. |"
+"\n"
+"| ZAMMAD_PROCESS_SCHEDULED_<br>JOBS_WORKERS |              | nicht gesetzt | "
+"Erlaubt das Erstellen von `1` unabhängigem Worker für geplante Aufgaben, um "
+"Zammads Hintergrundworker zu entlasten. Maximale Anzahl von Workern: `1`. "
+"Falls Sie [Hardware-Begrenzungen für Docker](docker-compose-scenarios"
+"#ressourcen-begrenzen) angewendet haben, sollte die Zammad-Scheduler CPU-"
+"Einstellung der Summe aller Worker-Einstellungen "
+"entsprechen.                                                                                                                                                                                                                                                                                 "
+"|\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>JOBS_WORKERS   |              | nicht gesetzt | "
+"Erlaubt das Erstellen von `n` Delayed-Jobs Workern, um den Druck von Zammads "
+"Hintergrundworker zu nehmen. Falls Sie [Hardware-Begrenzungen für Docker]"
+"(docker-compose-scenarios#ressourcen-begrenzen) angewendet haben, sollte die "
+"Zammad-Scheduler CPU-Einstellung der Summe aller Worker-Einstellungen "
+"entsprechen.                                                                                                                                                                                                                                                                                                                             "
+"|\n"
 
 #. type: Title ##
-#: src/en/reference/env-vars.md:180
+#: src/en/reference/environment-variables.md:105
 #, no-wrap
-msgid "Additional Performance Adjustments"
-msgstr "Zusätzliche Performance-Anpassungen"
+msgid "How to Set Environment Variables"
+msgstr "Umgebungsvariablen setzen"
 
-#. type: Fenced div block (info)
-#: src/en/reference/env-vars.md:182
-#, no-wrap
+#. type: Plain text
+#: src/en/reference/environment-variables.md:110
 msgid ""
-"The options listed below allow you to distribute Zammad processes over\n"
-"several application nodes. Even if that's not your goal, they may\n"
-"provide great benefits on bigger installations.\n"
-"\n"
-"Please note that distribution of processes on several nodes is out of\n"
-"the scope of this documentation.\n"
+"It depends on how you installed Zammad (package, docker). Either set it via "
+"`zammad config` command as you can see below, use your system's way of "
+"setting variables via command line (e.g. `export VARIABLE=value)`, place an "
+"`.env` file in the directory or even use a GUI like Portainer to define them "
+"for a docker installation."
 msgstr ""
-"Mit den unten aufgeführten Optionen können Sie die Zammad-Prozesse über\n"
-"mehrere Anwendungsknoten zu verteilen. Auch wenn das nicht Ihr Ziel ist,\n"
-"können sie bei größeren Installationen von großem Nutzen sein.\n"
-"\n"
-"Bitte beachten Sie, dass die Verteilung von Prozessen auf mehrere Knoten nicht\n"
-"Inhalt dieser Dokumentation ist.\n"
+"Es hängt davon ab, wie Sie Zammad installiert haben (Paket, Docker). "
+"Entweder setzen Sie sie über den Befehl `zammad config`, wie Sie unten sehen "
+"können, verwenden die Art und Weise Ihres Systems, Variablen über die "
+"Kommandozeile zu setzen (z.B. `export VARIABLE=wert)`, legen eine `.env` "
+"Datei in das Verzeichnis oder Sie verwenden sogar eine GUI wie Portainer, um "
+"Variablen für eine Docker-Installation zu setzen."
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:197
-#, no-wrap
-msgid ""
-"`REDIS_URL`\n"
-": Store your web socket connection information within Redis.\n"
-"  To do so, tell Zammad where to find your Redis instance:\n"
-"  `redis://your.redis.server:6379`\n"
-"  If not provided, Zammad falls back to file system\n"
-"  (`/opt/zammad/tmp/websocket_*`).\n"
-msgstr ""
-"`REDIS_URL`\n"
-": Speichern Sie Ihre Web-Socket-Verbindungsinformationen in Redis.\n"
-"  Dazu teilen Sie Zammad mit, wo Ihre Redis-Instanz zu finden ist:\n"
-"  `redis://Ihr.redis.server:6379`\n"
-"  Falls nicht angegeben, greift Zammad auf das Dateisystem zurück\n"
-"  (`/opt/zammad/tmp/websocket_*`) zurück.\n"
+#: src/en/reference/environment-variables.md:112
+msgid "Examples for package installations:"
+msgstr "Beispiele für Paketinstallationen:"
 
 #. type: Plain text
-#: src/en/reference/env-vars.md:204
-#, no-wrap
-msgid ""
-"`MEMCACHE_SERVERS`\n"
-": Store your application cache files within Memcached.\n"
-"  To do so, tell Zammad where to find your Memcached instance:\n"
-"  `your.memcached.server:11211`\n"
-"  If not provided, Zammad falls back to file system\n"
-"  (`/opt/zammad/tmp/cache*`).\n"
-msgstr ""
-"`MEMCACHE_SERVERS`\n"
-": Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.\n"
-"  Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:\n"
-"  `Ihr.memcached.server:11211`\n"
-"  Wenn nicht angegeben, greift Zammad auf das Dateisystem zurück\n"
-"  (`/opt/zammad/tmp/cache*`) zurück.\n"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:208
-#, no-wrap
-msgid ""
-"  Memcached allows you to restrict the maximum size Zammad may store as\n"
-"  cache. This comes in handy in terms of performance and keeping caching\n"
-"  files small. `1 GB` should be a reasonable size.\n"
-msgstr ""
-"  Mit Memcached können Sie die maximale Größe festlegen, die Zammad als\n"
-"  Cache speichern kann. Dies ist sehr nützlich für die Leistung und um die\n"
-"  Cache-Dateien klein zu halten. `1 GB` sollte eine angemessene Größe sein.\n"
-
-#. type: Title ##
-#: src/en/reference/env-vars.md:209
-#, no-wrap
-msgid "Storage Options"
-msgstr "Speicheroptionen"
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:213
-msgid "`S3_URL` : Allows you to provide your S3 configuration."
-msgstr "`S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben."
-
-#. type: Plain text
-#: src/en/reference/env-vars.md:215
-#, no-wrap
-msgid "  Format / example:\n"
-msgstr "  Format / Beispiel:\n"
+#: src/en/reference/environment-variables.md:114
+msgid "Set OPTION to \"value\":"
+msgstr "Setzen Sie OPTION auf \"wert\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/env-vars.md:216
+#: src/en/reference/environment-variables.md:115
 #, no-wrap
-msgid "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
-msgstr "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
+msgid "zammad config:set OPTION=value\n"
+msgstr "zammad config:set OPTION=wert\n"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:120
+msgid "Get OPTION:"
+msgstr "OPTION abfragen:"
+
+#. type: Fenced code block (sh)
+#: src/en/reference/environment-variables.md:121
+#, no-wrap
+msgid "zammad config:get OPTION\n"
+msgstr "zammad config:get OPTION\n"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:126
+msgid "Unset OPTION:"
+msgstr "OPTION entfernen:"
+
+#. type: Fenced code block (sh)
+#: src/en/reference/environment-variables.md:127
+#, no-wrap
+msgid "zammad config:unset OPTION\n"
+msgstr "zammad config:unset OPTION\n"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:132
+msgid "Restart Zammad after changing settings:"
+msgstr "Starten Sie Zammad nach der Änderung der Einstellungen neu:"
+
+#. type: Fenced code block (sh)
+#: src/en/reference/environment-variables.md:133
+#, no-wrap
+msgid "systemctl restart zammad\n"
+msgstr "systemctl restart zammad\n"
 
 #. type: Title #
 #: src/en/reference/es-indexed-attributes.md:1
@@ -32066,7 +31600,7 @@ msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:175
 msgid "Click to open details for CentOS config:"
-msgstr ""
+msgstr "Klicken Sie auf Details, um Infos der CentOS-Konfiguration zu öffnen:"
 
 #. type: Fenced div block (details)
 #: src/en/tutorials/webserver-config.md:176
@@ -32273,6 +31807,709 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid ""
+#~ "Find the available docker environment variables below with default "
+#~ "values, if applicable. You might also be interested in the [environment "
+#~ "variables documentation](/en/reference/env-vars)."
+#~ msgstr ""
+#~ "Nachfolgend finden Sie die verfügbaren Docker-Umgebungsvariablen mit "
+#~ "Standardwerten, falls zutreffend. Sie könnten auch an der "
+#~ "[Umgebungsvariablen-Dokumentation](/de/reference/env-vars) interessiert "
+#~ "sein."
+
+#, no-wrap
+#~ msgid ""
+#~ "`VERSION` <Badge type=\"info\" text=\"<current stable version of Zammad>\"/>\n"
+#~ ": Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you\n"
+#~ "  update your Zammad docker stack. Please see the\n"
+#~ "  [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on\n"
+#~ "  this variable.\n"
+#~ msgstr ""
+#~ "`VERSION` <Badge type=\"info\" text=\"<aktuelle stabile Version von Zammad>\"/>\n"
+#~ ": Ermöglicht die Anpassung des Zammad Image Tags. Beispiel: `6.3.1-54`.\n"
+#~ "  Diese Standardversion kann erhöht werden, wenn Sie Ihren Zammad-Docker\n"
+#~ "  Stack aktualisieren. Weitere Details zu dieser Variable finden Sie in der (Beispiel env Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`AUTOWIZARD_JSON`\n"
+#~ ": This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of\n"
+#~ "  this documentation, however this example file should help.\n"
+#~ msgstr ""
+#~ "`AUTOWIZARD_JSON`\n"
+#~ ": Diese Variable ermöglicht es Ihnen, die anfänglichen Konfigurationsdaten für Ihre Instanz bereitstellen. Autowizard JSON ist nicht Gegenstand dieser Dokumentation,\n"
+#~ "  aber diese Beispiel-Datei sollte helfen.\n"
+
+#~ msgid ""
+#~ "`ZAMMAD_HTTP_TYPE` : Set the http type (http/https) for your instance."
+#~ msgstr ""
+#~ "`ZAMMAD_HTTP_TYPE`: Legt den http-Typ (http/https) Ihrer Instanz fest."
+
+#~ msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
+#~ msgstr "`ZAMMAD_FQDN`: Legen Sie den FQDN für Ihre Instanz fest."
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_WEB_CONCURRENCY`\n"
+#~ ": Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. See also:\n"
+#~ "  [Configuration via Environment Variables](env-vars).\n"
+#~ msgstr ""
+#~ "`ZAMMAD_WEB_CONCURRENCY`\n"
+#~ ": Erlaubt das Erzeugen von `n` Workern, um mehrere gleichzeitige Verbindungen für\n"
+#~ "  Zammads Web-UI zu ermöglichen. Siehe auch: [Konfiguration per Umgebungsvariablen](env-vars).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-railsserver's CPU setting\n"
+#~ "  should match the value from this variable.\n"
+#~ msgstr ""
+#~ "  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-railsserver\n"
+#~ "  dem Wert dieser Variable entsprechen.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
+#~ ": Allows spawning `n` independent session jobs workers to release pressure from Zammad's background worker. See also:\n"
+#~ "  [Configuration via Environment Variables](env-vars).\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#~ ": Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.\n"
+#~ "  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  In case you applied [docker hardware resource limits](docker-compose-scenarios), the zammad-scheduler CPU setting\n"
+#~ "  should match the sum of all worker settings variables.\n"
+#~ msgstr ""
+#~ "  Falls Sie eine [Begrenzung der Hardwareressourcen in Docker](docker-compose-scenarios) angewendet haben, sollte die CPU-Einstellung von zammad-scheduler\n"
+#~ "  mit der Summe aller Variablen der Worker-Einstellungen übereinstimmen.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#~ ": Allows spawning `1` independent scheduled job worker to reduce pressure from Zammad's background worker. See also:\n"
+#~ "  [Configuration via Environment Variables](env-vars).\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#~ ": Erlaubt das Erzeugen von `1` unabhängigen Worker für geplanten Aufgaben, um Zammads Background-Worker zu entlasten.\n"
+#~ "  Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
+#~ ": Allows spawning `n` delayed job workers to reduce pressure from Zammad's background worker. See also:\n"
+#~ "  [Configuration via Environment Variables](env-vars).\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
+#~ ": Erlaubt das Erzeugen von n Workern für verzögerten Aufgaben, um Zammads\n"
+#~ "  Background-Worker zu entlasten. Siehe auch: [Konfiguration via Umgebungsvariablen](env-vars).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"127.0.0.1,::1\"/>\n"
+#~ ": This setting is important for the correct detection of client IP addresses and features based on it, like rate\n"
+#~ "  limiting.\n"
+#~ msgstr ""
+#~ "`RAILS_TRUSTED_PROXIES` <Badge type=\"info\" text=\"127.0.0.1,::1\"/>\n"
+#~ ": Diese Einstellung ist wichtig für die korrekte Erkennung von Client IP Adressen und darauf basierenden Funktionen, wie z.B. Rate\n"
+#~ "  Limiting.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address\n"
+#~ "  (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever\n"
+#~ "  the IP address of a proxy server changes.\n"
+#~ msgstr ""
+#~ "  Standardmäßig vertraut Zammad nur Localhost-Proxys. Zusätzliche Proxyserver müssen hier hinzugefügt werden, entweder mit IP-Adresse\n"
+#~ "  (falls statisch) oder über den Hostnamen. Hostnamen werden beim Start von Zammad aufgelöst, so dass ein Neustart erforderlich ist,\n"
+#~ "  wenn sich die IP-Adresse eines Proxy-Servers ändert.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  Note that in docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address,\n"
+#~ "  if it is placed in another network.\n"
+#~ msgstr ""
+#~ "  Beachten Sie, dass Zammad im Docker-Kontext möglicherweise die IP-Adresse des Netzwerk-Gateways anstelle der tatsächlichen IP-Adresse des Proxy-Servers sieht,\n"
+#~ "  wenn er sich in einem anderen Netzwerk befindet.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
+#~ ": Provide your own Memcached instance to Zammad if you already have one.\n"
+#~ msgstr ""
+#~ "`MEMCACHE_SERVERS` <Badge type=\"info\" text=\"zammad-memcached:11211\"/>\n"
+#~ ": Stellen Sie Zammad Ihre eigene Memcached-Instanz zur Verfügung, wenn Sie bereits eine haben.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
+#~ ": Provide your own Redis instance if you already have one. Please note that this method currently does not allow\n"
+#~ "  authentication.\n"
+#~ msgstr ""
+#~ "`REDIS_URL` <Badge type=\"info\" text=\"redis://zammad-redis:6379\"/>\n"
+#~ ": Geben Sie Ihre eigene Redis-Instanz an, wenn Sie bereits eine haben. Bitte beachten Sie, dass\n"
+#~ " diese Methode derzeit keine Authentifizierung erlaubt.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": Setting this variable to false will allow you to run your Zammad without Elasticsearch. Please note that we strongly\n"
+#~ "  advise against doing so.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_ENABLED` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": Wenn Sie diese Variable auf false setzen, können Sie Ihr Zammad ohne\n"
+#~ "Elasticsearch verwenden. Bitte beachten Sie, dass wir dringend davon abraten.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
+#~ ": Provide a host name or address to your external Elasticsearch cluster.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_HOST` <Badge type=\"info\" text=\"zammad-elasticsearch\"/>\n"
+#~ ": Geben Sie einen Hostnamen oder eine Adresse für Ihr Elasticsearch-Cluster an.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
+#~ ": Provide a different port for Elasticsearch if needed.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_PORT` <Badge type=\"info\" text=\"9200\"/>\n"
+#~ ": Geben Sie bei Bedarf einen anderen Port für Elasticsearch an.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
+#~ ": By default, Elasticsearch is reachable via HTTP.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_SCHEMA` <Badge type=\"info\" text=\"http\"/>\n"
+#~ ": Standardmäßig ist Elasticsearch über HTTP erreichbar.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_NAMESPACE` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie dies\n"
+#~ "  wenn Sie externe Cluster verwenden.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_REINDEX`\n"
+#~ ": The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex\n"
+#~ "  manually, either set this variable to `true` or run the reindex command via docker manually.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_REINDEX`\n"
+#~ ": Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden kann. Wenn Sie den Suchindex manuell neu aufbauen müssen,\n"
+#~ "  setzen Sie entweder diese Variable auf `true` oder führen Sie den Reindex-Befehl über Docker manuell aus.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": Allows you to let the compose scripts ignore self signed SSL certificates for your Elasticsearch installation if\n"
+#~ "  needed.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_SSL_VERIFY` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": Ermöglicht es Ihnen, dass die Compose-Skripte selbstsignierte SSL-Zertifikate\n"
+#~ "  für Ihre Elasticsearch-Installation ignorieren, falls erforderlich.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ELASTICSEARCH_HEAP_SIZE` <Badge type=\"info\" text=\"1G\"/>\n"
+#~ ": Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this\n"
+#~ "  value to a reasonable size.\n"
+#~ msgstr ""
+#~ "`ELASTICSEARCH_HEAP_SIZE` <Badge type=\"info\" text=\"1G\"/>\n"
+#~ ": Legt den verfügbaren Arbeitsspeicher für Elasticsearch fest. Wenn Sie Probleme mit ES und seiner Leistung haben, sollten Sie diesen\n"
+#~ "  Wert auf eine angemessene Größe erhöhen.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
+#~ ": Host name of your PostgreSQL server. Use your own if you already have one.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_HOST` <Badge type=\"info\" text=\"zammad-postgresql\"/>\n"
+#~ ": Der Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
+#~ ": Adjust the Port of your PostgreSQL server.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_PORT` <Badge type=\"info\" text=\"5432\"/>\n"
+#~ ": Stellen Sie den Port Ihres PostgreSQL-Servers ein.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": The database user for Zammad.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_USER` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": Der Datenbank-Benutzer für Zammad.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": The password of Zammad's database user.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_PASS` <Badge type=\"info\" text=\"zammad\"/>\n"
+#~ ": Das Passwort von Zammads Datenbank-Benutzer.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
+#~ ": Zammad's database to use.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_DB` <Badge type=\"info\" text=\"zammad_production\"/>\n"
+#~ ": Zammads zu verwendende Datenbank.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
+#~ ": Additional postgresql parameters to be appended to the database URI.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_OPTIONS` <Badge type=\"info\" text=\"?pool=50\"/>\n"
+#~ ": Zusätzliche postgresql-Parameter, die an den Datenbank-URI angehängt werden.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": By default Zammad creates the required database.\n"
+#~ msgstr ""
+#~ "`POSTGRESQL_DB_CREATE` <Badge type=\"info\" text=\"true\"/>\n"
+#~ ": Standardmäßig erstellt Zammad die gewünschte Datenbank.\n"
+
+#, no-wrap
+#~ msgid "  On dedicated database servers, this setting might be troublesome.\n"
+#~ msgstr "  Auf dedizierten Datenbankservern kann diese Einstellung problematisch sein.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
+#~ ": The port to be exposed for accessing the Zammad stack from outside. Change this to another value if you already have\n"
+#~ "  an existing service listening on this port.\n"
+#~ msgstr ""
+#~ "`NGINX_EXPOSE_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
+#~ ": Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern\n"
+#~ "  Sie diesen Wert auf einen anderen, wenn Sie bereits einen Dienst haben, der auf diesem Port lauscht.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
+#~ ": The internal port the nginx service will listen on.\n"
+#~ msgstr ""
+#~ "`NGINX_PORT` <Badge type=\"info\" text=\"8080\"/>\n"
+#~ ": Der interne Port, an dem der nginx-Dienst lauschen soll.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
+#~ ": By default the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
+#~ msgstr ""
+#~ "`NGINX_SERVER_NAME` <Badge type=\"info\" text=\"_\"/>\n"
+#~ ": Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das möchten.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
+#~ ": If the Nginx container for Zammad is not the upstream server (means if you are using another proxy in front of nginx)\n"
+#~ "  you might want to change this. You can set the correct scheme `http` or `https` if needed.\n"
+#~ msgstr ""
+#~ "`NGINX_SERVER_SCHEME` <Badge type=\"info\" text=\"\\$scheme\"/>\n"
+#~ ": Wenn der Nginx-Container für Zammad nicht der Upstream-Server ist (d.h. wenn Sie einen anderen Proxy vor Nginx verwenden), möchten Sie\n"
+#~ "  dies vielleicht ändern. Sie können das richtige Schema `http` oder `https` einstellen, falls nötig.\n"
+
+#~ msgid ""
+#~ "`NGINX_CLIENT_MAX_BODY_SIZE` : Define the maximum size of data that a "
+#~ "client can send to the server."
+#~ msgstr ""
+#~ "`NGINX_CLIENT_MAX_BODY_SIZE`: Definiert die maximale Größe der Daten, die "
+#~ "ein Client an den Server senden kann."
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" text=\"zammad-railsserver\"/>\n"
+#~ ": Host name of the rails server container.\n"
+#~ msgstr ""
+#~ "ZAMMAD_RAILSSERVER_HOST` <Badge type=\"info\" text=\"zammad-railsserver\"/>\n"
+#~ ": Hostname des Rails-Server-Containers.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+#~ ": Port of Zammad's rails server.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_RAILSSERVER_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+#~ ": Port von Zammads Rails-Server.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
+#~ ": Host name of Zammad's websocket server.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_WEBSOCKET_HOST` <Badge type=\"info\" text=\"zammad-websocket\"/>\n"
+#~ ": Hostname von Zammads Websocket-Server.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+#~ ": Port of Zammad's websocket server.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+#~ ": Port des Websocket-Servers von Zammad.\n"
+
+#, no-wrap
+#~ msgid "Configuration via Environment Variables"
+#~ msgstr "Konfiguration über Umgebungsvariablen"
+
+#~ msgid ""
+#~ "Use these environment variables to configure Zammad's behavior at "
+#~ "runtime. You may want to have a look at the [collection of rails commands]"
+#~ "(/en/reference/console) as well."
+#~ msgstr ""
+#~ "Verwenden Sie diese Umgebungsvariablen, um das Verhalten von Zammad zur "
+#~ "Laufzeit zu konfigurieren. Sie sollten auch einen Blick auf die [Sammlung "
+#~ "von Rails-Befehlen](/de/reference/console) werfen."
+
+#, no-wrap
+#~ msgid ""
+#~ "Please note that environment variables may be named differently for\n"
+#~ "installations based on [Docker](/en/reference/docker-env-vars) and Kubernetes.\n"
+#~ msgstr ""
+#~ "Bitte beachten Sie, dass die Umgebungsvariablen für\n"
+#~ "Installationen auf Basis von [Docker](/de/reference/docker-env-vars) und Kubernetes unterschiedlich benannt sein können.\n"
+
+#~ msgid "Click to open details about how to set an environment variable:"
+#~ msgstr ""
+#~ "Klicken Sie auf Details, um Infos zum Setzen einer Umgebungsvariablen zu "
+#~ "öffnen:"
+
+#, no-wrap
+#~ msgid "Default values are tagged with a <Badge type=\"info\" text=\"badge\"/>, if present.\n"
+#~ msgstr "Standardwerte sind mit einem <Badge type=\"info\" text=\"badge\"/> gekennzeichnet, sofern vorhanden.\n"
+
+#, no-wrap
+#~ msgid "General Options"
+#~ msgstr "Allgemeine Optionen"
+
+#, no-wrap
+#~ msgid ""
+#~ "`GPG_PATH`\n"
+#~ ": Defines the path to the GPG installation. This is only needed if you\n"
+#~ "  installed Zammad from Source, if you want to use different versions of\n"
+#~ "  PGP on your machine or if your PGP installation differs from the\n"
+#~ "  standard installation.\n"
+#~ msgstr ""
+#~ "`GPG_PATH`\n"
+#~ ": Legt den Pfad zur GPG-Installation fest. Dies wird nur benötigt, wenn Sie\n"
+#~ "  Zammad aus dem Quellcode installiert haben, wenn Sie verschiedene Versionen von\n"
+#~ "  PGP auf Ihrem Rechner verwenden wollen oder wenn Ihre PGP-Installation von der\n"
+#~ "  Standard-Installation abweicht.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`RAILS_LOG_TO_STDOUT`\n"
+#~ ": Print output directly to standard output instead of\n"
+#~ "  `/var/log/zammad/production.log`.\n"
+#~ msgstr ""
+#~ "`RAILS_LOG_TO_STDOUT`\n"
+#~ ": Ausgabe direkt auf Standard Output anstatt in\n"
+#~ "  `/var/log/zammad/production.log`.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  This setting can be overwritten during update on package installations.\n"
+#~ "  Use `enabled` to turn this option on only until the next update. Use\n"
+#~ "  `true` to turn it on permanently.\n"
+#~ msgstr ""
+#~ "  Diese Einstellung kann bei der Aktualisierung von Paket-Installationen überschrieben werden.\n"
+#~ "  Verwenden Sie `enabled`, um diese Option nur bis zur nächsten Aktualisierung einzuschalten. Verwenden Sie\n"
+#~ "  `true`, um sie dauerhaft einzuschalten.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_SAFE_MODE`\n"
+#~ ": Ignore availability of third-party services when running Zammad\n"
+#~ "  commands. Possible values: `1` or `true`\n"
+#~ msgstr ""
+#~ "ZAMMAD_SAFE_MODE`\n"
+#~ ": Ignoriert die Verfügbarkeit von Third-Party-Diensten bei der Ausführung von\n"
+#~ "  Zammad- Befehlen. Mögliche Werte: `1` oder `true`\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  **Be careful** when running Zammad commands on production systems in\n"
+#~ "  safe mode.\n"
+#~ "\n"
+#~ "  While it may allow an escape hatch for certain commands, it has a\n"
+#~ "  potential to break regular Zammad operations.\n"
+#~ msgstr ""
+#~ "  **Vorsicht** bei der Ausführung von Zammad-Befehlen auf Produktivsystemen im\n"
+#~ "  abgesicherten Modus.\n"
+#~ "\n"
+#~ "  Dies kann zwar einen Ausweg für bestimmte Fälle bieten, hat aber\n"
+#~ "  das Potenzial, reguläre Zammad-Vorgänge zu unterbrechen.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_HTTP_TYPE`\n"
+#~ ": Defines the HTTP protocol of your instance. Possible values: `http` or\n"
+#~ "  `https`\n"
+#~ msgstr ""
+#~ "`ZAMMAD_HTTP_TYPE`\n"
+#~ ": Bestimmt das HTTP-Protokoll Ihrer Instanz. Mögliche Werte: `http` oder\n"
+#~ "  `https`\n"
+
+#~ msgid ""
+#~ "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
+#~ msgstr "`ZAMMAD_FQDN`: Legt den FQDN/Domainnamen des Systems fest."
+
+#, no-wrap
+#~ msgid "Network Options"
+#~ msgstr "Netzwerk-Optionen"
+
+#, no-wrap
+#~ msgid ""
+#~ "Remember to update your web server config to reflect any changes you\n"
+#~ "make here.\n"
+#~ msgstr ""
+#~ "Denken Sie daran, Ihre Webserverkonfiguration zu aktualisieren, damit alle Änderungen, die Sie\n"
+#~ "hier vorgenommen haben, wirksam werden.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
+#~ ": The IP address that the web server is bound to.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_BIND_IP` <Badge type=\"info\" text=\"127.0.0.1\"/>\n"
+#~ ": Die IP-Adresse, an die der Webserver gebunden ist.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+#~ ": The port that the web server is exposed on.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_RAILS_PORT` <Badge type=\"info\" text=\"3000\"/>\n"
+#~ ": Der Port, auf dem der Webserver erreichbar ist.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+#~ ": The port that the web socket server is exposed on.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_WEBSOCKET_PORT` <Badge type=\"info\" text=\"6042\"/>\n"
+#~ ": Der Port, auf dem der Web-Socket-Server betrieben wird.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Proceed with caution and only if you know what you are doing!\n"
+#~ "The settings below may lead to a very high load of your system and/or disable\n"
+#~ "relevant parts of Zammad.\n"
+#~ msgstr ""
+#~ "Seien Sie vorsichtig und verwenden Sie die Einstellungen nur, wenn Sie wissen, was Sie tun!\n"
+#~ "Die folgenden Einstellungen können zu einer sehr hohen Systemauslastung führen und/oder\n"
+#~ "relevante Teile von Zammad deaktivieren.\n"
+
+#~ msgid ""
+#~ "To find out how many users are currently on Zammad, you can use the rails "
+#~ "command below:"
+#~ msgstr ""
+#~ "Um herauszufinden, wie viele Benutzer derzeit auf Zammad sind, können Sie "
+#~ "den folgenden Rails-Befehl verwenden:"
+
+#, no-wrap
+#~ msgid "zammad run rails r \"p Sessions.list.uniq.count\"\n"
+#~ msgstr "zammad run rails r \"p Sessions.list.uniq.count\"\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`WEB_CONCURRENCY`\n"
+#~ ": How many instances of the application server to keep open at a time.\n"
+#~ "  Increasing this can reduce loading times when too many users are on\n"
+#~ "  Zammad at once.\n"
+#~ msgstr ""
+#~ "`WEB_CONCURRENCY`\n"
+#~ ": Wie viele Instanzen des Anwendungsservers gleichzeitig offen sein sollen.\n"
+#~ "  Eine Erhöhung kann die Ladezeiten verringern, wenn zu viele Benutzer gleichzeitig auf\n"
+#~ "  Zammad sind.\n"
+
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : How many instances of the session "
+#~ "worker to run at a time."
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS` : Wie viele Instanzen des Session "
+#~ "Workers sollen gleichzeitig laufen."
+
+#, no-wrap
+#~ msgid "  Increasing this can speed up background jobs (like the scheduler) when many users are on Zammad at once.\n"
+#~ msgstr "  Eine Erhöhung dieser Einstellung kann Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig auf Zammad sind.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  It is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of\n"
+#~ "  workers can consume a lot of resources!\n"
+#~ msgstr ""
+#~ "  Es ist nicht sinnvoll, diese Einstellung zu ändern, wenn Sie weniger als 40 aktive Benutzer gleichzeitig haben. Das Erhöhen der\n"
+#~ "  Worker kann eine Menge Ressourcen verbrauchen!\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#~ ": Allows spawning an independent process just for processing scheduled\n"
+#~ "  jobs like LDAP syncs. This can free up Zammad's background worker for\n"
+#~ "  other tasks when running tasks that take rather long.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
+#~ ": Ermöglicht das Erzeugen eines unabhängigen Prozesses nur für die Verarbeitung geplanter\n"
+#~ "  Aufgaben wie LDAP-Synchronisationen. Dies kann den Hintergrundprozess von Zammad\n"
+#~ "  für andere Aufgaben entlasten, wenn Aufgaben ausgeführt werden, die ziemlich lange dauern.\n"
+
+#, no-wrap
+#~ msgid "  Maximum number of workers: `1`\n"
+#~ msgstr "  Maximale Anzahl von Workern: `1`\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  You can disable the processing of scheduled jobs by setting\n"
+#~ "  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` (not recommended!).\n"
+#~ msgstr ""
+#~ "  Sie können die Verarbeitung von geplanten Aufgaben deaktivieren, indem Sie\n"
+#~ "  `ZAMMAD_PROCESS_SCHEDULED_JOBS_DISABLE` deaktivieren (nicht empfohlen!).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
+#~ ": How many processes should work on delayed jobs? Increasing this can improve issues with delayed jobs stacking up in\n"
+#~ "  your system. You may want to try to use `ZAMMAD_SESSION_JOBS_CONCURRENT` before though.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
+#~ ": Wie viele Prozesse sollen an verzögerten Aufgaben arbeiten? Eine Erhöhung dieser Zahl _kann_\n"
+#~ "  Probleme mit verzögerten Aufgaben verbessern, die sich in Ihrem System aufgestaut haben.\n"
+#~ "  Sie können vorher versuchen, `ZAMMAD_SESSION_JOBS_CONCURRENT` zu verwenden.\n"
+
+#, no-wrap
+#~ msgid "  Maximum number of workers: `16`\n"
+#~ msgstr "  Maximale Anzahl von Workern: `16`\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
+#~ ": How many instances of AI workers should run simultaneously. AI workers handle Zammad's AI requests and fetch the\n"
+#~ "  responses from the configured AI provider. By default, one worker is running.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS`\n"
+#~ ": Wie viele Instanzen von KI-Workern sollen gleichzeitig laufen. KI-Worker bearbeiten die KI-Anfragen von Zammad und holen sich die\n"
+#~ "  Antworten von dem konfigurierten KI-Provider ab. Standardmäßig wird ein Worker ausgeführt.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  Self hosted AI users should be careful in increasing it. Depending on your hardware, it may cause your AI service to\n"
+#~ "  collapse.\n"
+#~ msgstr ""
+#~ "  Benutzer einer selbst gehosteten Instanz sollten bei der Erhöhung vorsichtig sein. Abhängig von Ihrer Hardware kann dies dazu führen, dass Ihr KI-Dienst\n"
+#~ "  zusammenbricht.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of\n"
+#~ "  parallelization.\n"
+#~ msgstr ""
+#~ "  Für Benutzer von KI-Cloud-Diensten mit einer großen Zammad-Instanz könnte es sinnvoll sein, diesen Wert zu erhöhren, um eine Art von\n"
+#~ "  Parallelisierung zu erreichen.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
+#~ ": How many threads should be processed by one AI worker (if you have more than one worker, it is multiplied by the\n"
+#~ "  amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core\n"
+#~ "  anyway.\n"
+#~ msgstr ""
+#~ "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"info\" text=\"5\"/>\n"
+#~ ": Wie viele Threads sollen von einem KI-Worker bearbeitet werden (wenn Sie mehr als einen Worker haben, wird dies mit der\n"
+#~ "  Anzahl der Worker multipliziert). Dies kann die KI-Verarbeitung beschleunigen, aber bedenken Sie, dass ein Ruby-Worker ohnehin nur 1 Kern\n"
+#~ "  auslasten kann.\n"
+
+#, no-wrap
+#~ msgid "  Maximum number of threads: 16\n"
+#~ msgstr "  Maximale Anzahl von Threads: `16`\n"
+
+#, no-wrap
+#~ msgid "Additional Performance Adjustments"
+#~ msgstr "Zusätzliche Performance-Anpassungen"
+
+#, no-wrap
+#~ msgid ""
+#~ "The options listed below allow you to distribute Zammad processes over\n"
+#~ "several application nodes. Even if that's not your goal, they may\n"
+#~ "provide great benefits on bigger installations.\n"
+#~ "\n"
+#~ "Please note that distribution of processes on several nodes is out of\n"
+#~ "the scope of this documentation.\n"
+#~ msgstr ""
+#~ "Mit den unten aufgeführten Optionen können Sie die Zammad-Prozesse über\n"
+#~ "mehrere Anwendungsknoten zu verteilen. Auch wenn das nicht Ihr Ziel ist,\n"
+#~ "können sie bei größeren Installationen von großem Nutzen sein.\n"
+#~ "\n"
+#~ "Bitte beachten Sie, dass die Verteilung von Prozessen auf mehrere Knoten nicht\n"
+#~ "Inhalt dieser Dokumentation ist.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`REDIS_URL`\n"
+#~ ": Store your web socket connection information within Redis.\n"
+#~ "  To do so, tell Zammad where to find your Redis instance:\n"
+#~ "  `redis://your.redis.server:6379`\n"
+#~ "  If not provided, Zammad falls back to file system\n"
+#~ "  (`/opt/zammad/tmp/websocket_*`).\n"
+#~ msgstr ""
+#~ "`REDIS_URL`\n"
+#~ ": Speichern Sie Ihre Web-Socket-Verbindungsinformationen in Redis.\n"
+#~ "  Dazu teilen Sie Zammad mit, wo Ihre Redis-Instanz zu finden ist:\n"
+#~ "  `redis://Ihr.redis.server:6379`\n"
+#~ "  Falls nicht angegeben, greift Zammad auf das Dateisystem zurück\n"
+#~ "  (`/opt/zammad/tmp/websocket_*`) zurück.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "`MEMCACHE_SERVERS`\n"
+#~ ": Store your application cache files within Memcached.\n"
+#~ "  To do so, tell Zammad where to find your Memcached instance:\n"
+#~ "  `your.memcached.server:11211`\n"
+#~ "  If not provided, Zammad falls back to file system\n"
+#~ "  (`/opt/zammad/tmp/cache*`).\n"
+#~ msgstr ""
+#~ "`MEMCACHE_SERVERS`\n"
+#~ ": Speichern Sie Ihre Anwendungs-Cache-Dateien in Memcached.\n"
+#~ "  Dazu teilen Sie Zammad mit, wo Ihre Memcached-Instanz zu finden ist:\n"
+#~ "  `Ihr.memcached.server:11211`\n"
+#~ "  Wenn nicht angegeben, greift Zammad auf das Dateisystem zurück\n"
+#~ "  (`/opt/zammad/tmp/cache*`) zurück.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  Memcached allows you to restrict the maximum size Zammad may store as\n"
+#~ "  cache. This comes in handy in terms of performance and keeping caching\n"
+#~ "  files small. `1 GB` should be a reasonable size.\n"
+#~ msgstr ""
+#~ "  Mit Memcached können Sie die maximale Größe festlegen, die Zammad als\n"
+#~ "  Cache speichern kann. Dies ist sehr nützlich für die Leistung und um die\n"
+#~ "  Cache-Dateien klein zu halten. `1 GB` sollte eine angemessene Größe sein.\n"
+
+#, no-wrap
+#~ msgid "Storage Options"
+#~ msgstr "Speicheroptionen"
+
+#~ msgid "`S3_URL` : Allows you to provide your S3 configuration."
+#~ msgstr "`S3_URL`: Hier können Sie Ihre S3-Konfiguration angeben."
+
+#, no-wrap
+#~ msgid "  Format / example:\n"
+#~ msgstr "  Format / Beispiel:\n"
+
+#, no-wrap
+#~ msgid "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
+#~ msgstr "  https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true\n"
 
 #~ msgid ""
 #~ "To follow the installation steps below, you might need to install "

@@ -181,7 +181,7 @@ a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 systemctl restart apache2
 ```
 
-Click to open details for CentOS config:
+Klicken Sie auf Details, um Infos der CentOS-Konfiguration zu öffnen:
 
 :::details
 Fügen Sie die entsprechenden `LoadModule`-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare
