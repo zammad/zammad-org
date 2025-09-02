@@ -167,8 +167,8 @@ describe('usage advanced features', () => {
     cy.wait(300) // transition
     cy.get('button').contains('Bulk Actions').click()
     cy.wait(300) // transition
-    cy.get('[name="group_id"]').click().type('Infrastructure{downArrow}{enter}')
-    cy.get('[name="owner_id"]').click().type('Jackson{downArrow}{enter}')
+    cy.get('[name="group_id"]').click({ force: true }).type('Infrastructure{downArrow}{enter}')
+    cy.get('[name="owner_id"]').click({ force: true }).type('Jackson{downArrow}{enter}')
     cy.get('label').contains('Note').click()
     cy.get('[name="body"]').click().type('Hi Jackson, can you please take care of these tickets? Thanks!')
     cy.get('[id="flyout-tickets-bulk-edit"]').find('header').clip().then((TopClip) => {
