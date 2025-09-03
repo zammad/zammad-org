@@ -38,19 +38,17 @@ sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png
 - Предстојећи догађаји (опционо)
 - Расположење клијента (опционо)
 
-## AI Assistant Text Tools
+## Writing Assistant Tools
 
-Нови уредник текста са AI побољшањима је дизајниран да поједностави и
-унапреди ваш радни ток обраде тикета. Помаже вам преко текстуалних алатки
-док пишете чланак.
-
-To use any of the following features, you first have to select text you want
-to apply the changes to. After that, click the **AI Assistant text tools**
-button at the left side of the editor toolbar and choose one of the
-following functions, depending on what you want to perform.
+The AI-powered writing assistant tools are designed to simplify and enhance
+your ticket response workflow while you create an article.  To use such a
+tool, you first have to select text you want to apply the changes to. After
+that, click the **Writing Assistant Tools** button at the left side of the
+editor toolbar and choose one of the following tools, depending on what you
+want to perform.
 
 ![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
+menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
@@ -61,17 +59,22 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
 
 :::
 
-- **Унапреди писање**: користи ваш текст као основу и покушава да га побољша
-  унапређењем јасноће, прецизности и структуре, притом отклањајући грешке у
-  правопису и граматици.
-- **Исправи правопис и граматику**: само лекторише ваш текст и аутоматски
-  отклања грешке у правопису и граматици.
-- **Прошири**: проширује ваш текст притом одржавајући вашу мисао. Корисно је
-  уколико ваш клијент очекује нешто више од пар ставки као одговор. Могуће
-  је искористити прилагањем само основних информација (нпр. путем листе са
-  тачкама) и пуштањем AI да напише одговор.
-- **Поједностави**: ради супротно од проширења и сажима ваш текст
-  одржавајући вашу мисао.
+Zammad ships default writing assistant tools. The availability depends on
+the configuration of your Zammad instance. You might even have additional
+custom tools in case your admin added them.
+
+- **Expand draft into well-written section**: Uses your draft as a base and
+  tries to elaborate a proper text. It tries to add a structure and to
+  enhance clarity and conciseness and as well as removing misspellings and
+  grammar errors. You can even use it by providing only basic information
+  (e.g. via bullet points) and let the AI write the answer.
+- **Fix spelling and grammar**: Proofreads your text and removes spelling
+  and grammar mistakes.
+- **Summarize section to about half its current size**: Shrinks your text
+  while keeping the message and the tone of the text.
+- **Rewrite complex section and make it easy to understand**: Removes
+  unnecessary parts and rewrites your text in a clear and understandable
+  way.
 
 ## AI агенти
 

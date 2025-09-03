@@ -31,14 +31,14 @@ describe('AI screenshots', () => {
     cy.screenshot('ai-ticket-summary-sidebar')
   })
 
-  it('AI ticket smart editor', () => {
+  it('AI writing assistant tools', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     cy.get('button').contains('Add reply').click().wait(500)
-    cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}we are happy to tell you that your order has been shipped already. Who should get teh invoice?{selectAll}')
-    cy.get('[aria-label="Writing Assistant Tools"]').click().wait(200)
-    cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-ticket-smart-editor')
+    cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
+    cy.get('[aria-label="Writing Assistant Tools"]').click().highlight().wait(200)
+    cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-writing-assistant-tools')
     cy.get('button').contains('Discard your unsaved changes').click() //removing draft to clean up
     cy.get('button').contains('Discard Changes').click() //removing draft to clean up
   })

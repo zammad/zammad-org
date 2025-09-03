@@ -33,16 +33,15 @@ Depending on the configuration of your Zammad instance, the summary includes the
 - Upcoming events (optional)
 - Customer sentiment (optional)
 
-## AI Assistant Text Tools
+## Writing Assistant Tools
 
-The new AI-powered smart editor is designed to simplify and enhance your ticket response workflow. It helps you with
-text tools while you create an article.
+The AI-powered writing assistant tools are designed to simplify and enhance your ticket response workflow while you
+create an article.
+To use such a tool, you first have to select text you want to apply the changes to. After that,
+click the **Writing Assistant Tools** button at the left side of the editor toolbar and choose one of the following
+tools, depending on what you want to perform.
 
-To use any of the following features, you first have to select text you want to apply the changes to. After that,
-click the **AI Assistant text tools** button at the left side of the editor toolbar and choose one of the following
-functions, depending on what you want to perform.
-
-![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
+![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
@@ -53,13 +52,17 @@ functions, depending on what you want to perform.
 
 :::
 
-- **Improve writing**: Uses your text as a base and tries to improve it by enhancing clarity, conciseness and structure
-  as well as removing misspellings and grammar issues.
-- **Fix spelling and grammar**: Just proofreads your text and automatically removes spelling and grammar mistakes.
-- **Expand**: Expands your text while keeping your message. Useful if your customer expects more than some bullet points
-  as an answer. You can even use it by providing only basic information (e.g. via bullet points) and let the AI write
-  the answer.
-- **Simplify**: Does the opposite of the expansion and shrinks your text while keeping your message.
+Zammad ships default writing assistant tools. The availability depends on the configuration of your Zammad instance. You
+might even have additional custom tools in case your admin added them.
+
+- **Expand draft into well-written section**: Uses your draft as a base and tries to elaborate a proper text. It tries
+  to add a structure and to enhance clarity and conciseness and as well as removing misspellings and grammar errors. You
+  can even use it by providing only basic information (e.g. via bullet points) and let the AI write the answer.
+- **Fix spelling and grammar**: Proofreads your text and removes spelling and grammar mistakes.
+- **Summarize section to about half its current size**: Shrinks your text while keeping the message and the tone of the
+  text.
+- **Rewrite complex section and make it easy to understand**: Removes unnecessary parts and rewrites your text in a
+  clear and understandable way.
 
 ## AI Agents
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-01 13:25+0200\n"
+"POT-Creation-Date: 2025-09-03 11:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2152,7 +2152,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:84
 #, markdown-text, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr ""
@@ -3262,38 +3262,31 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:36
 #, markdown-text, no-wrap
-msgid "AI Assistant Text Tools"
+msgid "Writing Assistant Tools"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:40
+#: src/en/documentation/use/guides/ai.md:43
 #, markdown-text
 msgid ""
-"The new AI-powered smart editor is designed to simplify and enhance your "
-"ticket response workflow. It helps you with text tools while you create an "
-"article."
+"The AI-powered writing assistant tools are designed to simplify and enhance "
+"your ticket response workflow while you create an article.  To use such a "
+"tool, you first have to select text you want to apply the changes to. After "
+"that, click the **Writing Assistant Tools** button at the left side of the "
+"editor toolbar and choose one of the following tools, depending on what you "
+"want to perform."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:44
-#, markdown-text
-msgid ""
-"To use any of the following features, you first have to select text you want "
-"to apply the changes to. After that, click the **AI Assistant text tools** "
-"button at the left side of the editor toolbar and choose one of the "
-"following functions, depending on what you want to perform."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:45
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's smart editor "
-"menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)"
+"menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:47
+#: src/en/documentation/use/guides/ai.md:46
 #, no-wrap
 msgid ""
 "\n"
@@ -3306,49 +3299,58 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:57
 #, markdown-text
 msgid ""
-"**Improve writing**: Uses your text as a base and tries to improve it by "
-"enhancing clarity, conciseness and structure as well as removing "
-"misspellings and grammar issues."
+"Zammad ships default writing assistant tools. The availability depends on "
+"the configuration of your Zammad instance. You might even have additional "
+"custom tools in case your admin added them."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#: src/en/documentation/use/guides/ai.md:66
 #, markdown-text
 msgid ""
-"**Fix spelling and grammar**: Just proofreads your text and automatically "
-"removes spelling and grammar mistakes."
+"**Expand draft into well-written section**: Uses your draft as a base and "
+"tries to elaborate a proper text. It tries to add a structure and to enhance "
+"clarity and conciseness and as well as removing misspellings and grammar "
+"errors. You can even use it by providing only basic information (e.g. via "
+"bullet points) and let the AI write the answer."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#: src/en/documentation/use/guides/ai.md:66
 #, markdown-text
 msgid ""
-"**Expand**: Expands your text while keeping your message. Useful if your "
-"customer expects more than some bullet points as an answer. You can even use "
-"it by providing only basic information (e.g. via bullet points) and let the "
-"AI write the answer."
+"**Fix spelling and grammar**: Proofreads your text and removes spelling and "
+"grammar mistakes."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#: src/en/documentation/use/guides/ai.md:66
 #, markdown-text
 msgid ""
-"**Simplify**: Does the opposite of the expansion and shrinks your text while "
-"keeping your message."
+"**Summarize section to about half its current size**: Shrinks your text "
+"while keeping the message and the tone of the text."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:66
+#, markdown-text
+msgid ""
+"**Rewrite complex section and make it easy to understand**: Removes "
+"unnecessary parts and rewrites your text in a clear and understandable way."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:67
 #, markdown-text, no-wrap
 msgid "AI Agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:68
+#: src/en/documentation/use/guides/ai.md:71
 #, markdown-text
 msgid ""
 "This is no feature which allows any agent interaction. However, if the "
@@ -3357,7 +3359,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:74
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. You "
@@ -3365,13 +3367,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:72
+#: src/en/documentation/use/guides/ai.md:75
 #, markdown-text, no-wrap
 msgid "Ticket History"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:76
+#: src/en/documentation/use/guides/ai.md:79
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -3380,13 +3382,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:81
 #, markdown-text
 msgid "Example of a history entry of an AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:83
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -3394,7 +3396,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:86
+#: src/en/documentation/use/guides/ai.md:89
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -3404,25 +3406,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:93
 #, markdown-text
 msgid "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:94
 #, markdown-text, no-wrap
 msgid "Overview Indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:97
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -3430,7 +3432,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:95
+#: src/en/documentation/use/guides/ai.md:98
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "

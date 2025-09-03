@@ -39,20 +39,17 @@ Zusammenfassung die folgenden Abschnitte:
 - Anstehende Ereignisse (optional)
 - Stimmung des Kunden (optional)
 
-## KI-Assistent Text-Werkzeuge
+## Writing Assistant Tools
 
-Der neue KI-gesteuerte smarte Editor wurde entwickelt, um Ihren Workflow bei
-der Beantwortung von Tickets zu vereinfachen und zu verbessern. Er hilft
-Ihnen mit Text-Tools, während Sie einen Artikel erstellen.
+The AI-powered writing assistant tools are designed to simplify and enhance
+your ticket response workflow while you create an article.  To use such a
+tool, you first have to select text you want to apply the changes to. After
+that, click the **Writing Assistant Tools** button at the left side of the
+editor toolbar and choose one of the following tools, depending on what you
+want to perform.
 
-Um eine der folgenden Funktionen zu nutzen, müssen Sie zunächst den Text
-auswählen, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf
-die Schaltfläche **KI-Assistent Text-Werkzeuge** in der Editor-Symbolleiste
-und wählen Sie eine der folgenden Funktionen, je nachdem, was Sie
-durchführen möchten.
-
-![Screenshot zeigt Zammads
-Smart-Editor-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-editor.png)
+![Screenshot shows Zammad's smart editor
+menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
@@ -63,18 +60,22 @@ Smart-Editor-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-smart-ed
 
 :::
 
-- **Text verbessern**: Nimmt Ihren Text als Grundlage und versucht, ihn in
-  Richtung Klarheit, Prägnanz und Struktur zu verbessern sowie Rechtschreib-
-  und Grammatikfehler zu beseitigen.
-- **Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und
-  entfernt automatisch Rechtschreib- und Grammatikfehler.
-- **Erweitern**: Erweitert Ihren Text und behält dabei Ihre Botschaft
-  bei. Nützlich, wenn Ihr Kunde mehr als ein paar Aufzählungspunkte als
-  Antwort erwartet. Sie können diese Funktion sogar nutzen, indem Sie nur
-  grundlegende Informationen bereitstellen (z.B. als Stichworte) und die KI
-  die Antwort schreiben lassen.
-- **Vereinfachen**: Führt das Gegenteil von "Erweitern" aus und vereinfacht
-  und kürzt Ihren Text, während Ihre Botschaft erhalten bleibt.
+Zammad ships default writing assistant tools. The availability depends on
+the configuration of your Zammad instance. You might even have additional
+custom tools in case your admin added them.
+
+- **Expand draft into well-written section**: Uses your draft as a base and
+  tries to elaborate a proper text. It tries to add a structure and to
+  enhance clarity and conciseness and as well as removing misspellings and
+  grammar errors. You can even use it by providing only basic information
+  (e.g. via bullet points) and let the AI write the answer.
+- **Fix spelling and grammar**: Proofreads your text and removes spelling
+  and grammar mistakes.
+- **Summarize section to about half its current size**: Shrinks your text
+  while keeping the message and the tone of the text.
+- **Rewrite complex section and make it easy to understand**: Removes
+  unnecessary parts and rewrites your text in a clear and understandable
+  way.
 
 ## KI-Agenten
 
