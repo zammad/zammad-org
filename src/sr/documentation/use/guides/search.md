@@ -59,7 +59,7 @@ Elasticsearch](/en/reference/es-indexed-attributes).
 
 ### Синтакса
 
-Search for a specific customer by using `customer.attribute`:
+Search for a ticket of a specific customer:
 
 ```plain
 customer.firstname: John
@@ -70,25 +70,6 @@ or:
 ```plain
 customer.lastname: Doe
 ```
-
-If you want to run a more complex search, you can use conditions with `()`
-and `AND`/`OR` options:
-
-```plain
-state.name: open AND (article.from:me OR article.from:somebody)
-```
-
-### Додатни примери
-
-| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
-|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |
-| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |
-| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | You can either use a simple date, a date-range or \>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |
-| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |
-| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
-| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
-| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
 
 ### Комбиновање фраза за претрагу
 
@@ -102,3 +83,16 @@ negation `!`.
 | state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
 | owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
 | state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
+
+### Додатни примери
+
+| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |
+|---------------|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| number        | 1118566                               | number:1118566 number:11185\*                                                                  | Search for a ticket number                                                                                                                                                                                                                            |
+| title         | some title                            | title:"some title" title:Printer title: "some ti\*"                                            | If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation.                                                                                 |
+| created_at    | 2018-11-18                            | created_at:2018-11-18 created_at:\[2018-11-15 TO 2018-11-18\] created_at:\>now-1h              | You can either use a simple date, a date-range or \>now-xh. Please note that the date format needs to be YYYY-MM-DD                                                                                                                                  |
+| state.name    | new open closed                       | state.name: new state.name:new OR open                                                         | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance.                                        |
+| article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
+| article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
+| article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
+

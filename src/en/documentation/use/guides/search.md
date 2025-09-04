@@ -46,8 +46,7 @@ for some examples and explanations. For a more detailed list of available attrib
 
 ### Syntax
 
-Search for a specific customer by using
-`customer.attribute`:
+Search for a ticket of a specific customer:
 
 ```plain
 customer.firstname: John
@@ -59,11 +58,17 @@ or:
 customer.lastname: Doe
 ```
 
-If you want to run a more complex search, you can use conditions with `()` and `AND`/`OR` options:
+### Combining Search Phrases
 
-```plain
-state.name: open AND (article.from:me OR article.from:somebody)
-```
+You can combine search phrases by using `AND`, `OR` and `TO` and even separate them with `()`. If you want to exclude
+search results, you can use negation `!`.
+
+| Search phrase                                                                               | Description                                                                                                       |
+|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
+| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
+| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
+| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
 
 ### Additional Examples
 
@@ -76,16 +81,3 @@ state.name: open AND (article.from:me OR article.from:somebody)
 | article_count | 5 \[5 TO 10\] \[5 TO \*\] \[\* TO 5\] | article_count:5 article_count: \[5 TO 10\] article_count:\[5 TO \*\] article_count:\[\* TO 5\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |
 | article.from  | \*bob\*                               | article.from:\*bob\*                                                                           | Show all tickets that contain articles from "Bob"                                                                                                                                                                                                    |
 | article.body  | heat heat~ /joh?n(ath\[oa\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\[oa\]n)/                           | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator "~" to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
-
-### Combining Search Phrases
-
-You can combine search phrases by using `AND`, `OR` and `TO` and even
-separate them with `()`. If you want to exclude search results, you can use
-negation `!`.
-
-| Search phrase                                                                               | Description                                                                                                       |
-|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad" |
-| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |
-| state.name:pending\* AND article_count:\[1 TO 5\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |
