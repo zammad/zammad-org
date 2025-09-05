@@ -3,6 +3,7 @@ on:
   schedule:
     # Run every Friday to ensure everything works as expected.
     - cron:  '0 6 * * 5'
+  workflow_dispatch:
 
 jobs:
   lint:

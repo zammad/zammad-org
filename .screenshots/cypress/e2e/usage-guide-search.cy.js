@@ -6,9 +6,9 @@ describe('search screenshots', () => {
     cy.get('[aria-label="Search…"]').click().type('hannah')
     cy.wait(500) // transition
     cy.get('header').clip().then((TopClip) => {
-    cy.get('[id="Organization-2"]').clip({ padding: 5 }).then((BottomClip) => {
-      cy.mergeClips(TopClip, BottomClip).then((clip) => {
-        cy.screenshot('search-sidebar', { clip })
+      cy.get('[id="Organization-2"]', { timeout: 60000 }).clip({ padding: 5 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('search-sidebar', { clip })
         })
       })
     })
