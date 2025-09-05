@@ -54,11 +54,11 @@ trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden.
 Stellen Sie sicher, dass keine Daten _vor_ der Sicherung geändert werden.
 
 ```sh
-systemctl disable zammad
+sudo systemctl disable zammad
 ```
 
 ```sh
-systemctl stop zammad
+sudo systemctl stop zammad
 ```
 
 ## Schritt 6: Sicherung
@@ -128,21 +128,21 @@ Zammad-Dateien sind distributions- und versionsspezifisch!
 === Debian & Ubuntu
 
 ```sh
-dpkg -r --force-depends zammad
+sudo dpkg -r --force-depends zammad
 ```
 
 ```sh
-apt install zammad
+sudo apt install zammad
 ```
 
 === OpenSUSE
 
 ``` sh
-zypper remove -R zammad
+sudo zypper remove -R zammad
 ```
 
 ```sh
-zypper install zammad
+sudo zypper install zammad
 ```
 
 :::
@@ -173,13 +173,13 @@ zammad run rails r "Rails.cache.clear"
 #### Schritt 9.3: Sicherstellen, dass Zammad ausgeführt wird
 
 ``` sh
-systemctl status zammad
+sudo systemctl status zammad
 ```
 
 Wenn Zammad nicht läuft, führen Sie aus:
 
 ```sh
-systemctl start zammad
+sudo systemctl start zammad
 ```
 
 :::tip

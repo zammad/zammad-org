@@ -26,22 +26,23 @@ Bedarf an.
 
 === Debian & Ubuntu
 
-```sh
+```ansi
 /etc/postgresql/{your version}/main/postgresql.conf
 ```
 
 === CentOS & OpenSUSE
 
-```sh
+```ansi
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Andere
+=== Others
 
-Sie können Ihre Konfigurationsdateien nicht finden? Ermitteln Sie den Pfad mit folgendem Befehl:
+Can't find your configuration files? You can run the following command
+to get the path:
 
 ``` sh
-$ sudo -u postgres psql -c 'SHOW config_file'
+sudo -u postgres psql -c 'SHOW config_file'
 ```
 
 :::
@@ -71,7 +72,7 @@ Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten
 (in dieser Reihenfolge):
 
 ```sh
-systemctl restart postgresql zammad
+sudo systemctl restart postgresql zammad
 ```
 
 ## PostgreSQL für größere Instanzen anpassen (optional)
@@ -104,5 +105,5 @@ Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten
 (in dieser Reihenfolge):
 
 ```sh
-systemctl restart postgresql zammad
+sudo systemctl restart postgresql zammad
 ```

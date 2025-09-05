@@ -320,30 +320,22 @@ sudo chmod -R 755 /opt/zammad/public/
 
 ### Manage Services of Zammad
 
-Zammad uses three services. They can be (re)started & stopped with the parent
-`zammad`:
+Zammad uses three services. These services can be managed individually or all at once by using the parent **zammad**.
+
+- zammad: includes the services below
+  - **zammad-web**: internal puma server (relevant for displaying the web app)
+  - **zammad-worker**: background worker - relevant for all delayed- and background jobs
+  - **zammad-websocket**: websocket server for session related information
+
+Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, `status`.
+
+Example to start Zammad with all sub-services:
 
 ```sh
-systemctl (status|start|stop|restart) zammad
+sudo systemctl start zammad
 ```
 
-Only internal puma server (relevant for displaying the web app):
-
-```sh
-systemctl (status|start|stop|restart) zammad-web
-```
-
-Only background worker - relevant for all delayed- and background jobs:
-
-```sh
-systemctl (status|start|stop|restart) zammad-worker
-```
-
-Only websocket server for session related information:
-
-```sh
-systemctl (status|start|stop|restart) zammad-websocket
-```
+To stop or restart a service or to check its status, adjust the command as mentioned above.
 
 ### Next Steps
 

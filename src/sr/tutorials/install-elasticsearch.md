@@ -37,12 +37,12 @@ shown during the installation of Elasticsearch.
 ==== Ubuntu/Debian
 
 ```sh
-apt install apt-transport-https sudo wget curl gnupg
+sudo apt install apt-transport-https sudo wget curl gnupg
 ```
 
 ```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
+gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
 
 ::::tabs
@@ -68,23 +68,23 @@ sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null
 
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
 
 ::::
 
 ```sh
-apt update
+sudo apt update
 ```
 
 ```sh
-apt install elasticsearch
+sudo apt install elasticsearch
 ```
 
 ==== OpenSUSE
 
 ```sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 ```sh
@@ -95,17 +95,17 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
-type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
+type=rpm-md"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 ```
 
 ```sh
-zypper install elasticsearch
+sudo zypper install elasticsearch
 ```
 
 ==== CentOS
 
 ```sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 ```sh
@@ -116,11 +116,11 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
-type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
+type=rpm-md"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo
 ```
 
 ```sh
-yum install -y elasticsearch
+sudo yum install -y elasticsearch
 ```
 
 ==== Direct Download
@@ -138,7 +138,7 @@ Install the ingest-attachment plugin:
 
 Increase Virtual Memory Map Limit:
 :   ```sh
-    sysctl -w vm.max_map_count=262144
+    sudo sysctl -w vm.max_map_count=262144
     ```
 <!-- markdownlint-disable MD046 -->
 Adjust `/etc/elasticsearch/elasticsearch.yml`:
@@ -168,7 +168,7 @@ Adjust `/etc/elasticsearch/elasticsearch.yml`:
 
 Enable it by default and start it:
 :   ```sh
-    systemctl enable elasticsearch --now
+    sudo systemctl enable elasticsearch --now
     ```
 
 ## Следећи кораци

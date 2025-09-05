@@ -153,7 +153,7 @@ Required permission: `knowledge_base.reader` or `knowledge_base.editor`
 `GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
 of category}`
 
-::: details:
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-categories.json
 
@@ -209,7 +209,7 @@ Required permission: `knowledge_base.editor`
 `DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-::: details:
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/delete-categories.json
 
@@ -286,7 +286,7 @@ If you want to get the content of an answer, add the parameters `?full=1&include
 request for the following response included the parameters.
 :::
 
-::: details
+:::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-answers.json
 
@@ -298,7 +298,7 @@ Required permission: `knowledge_base.editor`
 
 `POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
-:::: details
+::: details
 
 ::: tabs key:reqres
 

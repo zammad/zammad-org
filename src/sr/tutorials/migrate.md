@@ -102,7 +102,6 @@ while.
 
 Seeing the message "_Interrupted by scheduler restart. Please restart manually
 or wait till next execution time._"?
-
 If this message appears after providing your credentials, please be patient.
 The migration should start within 5 minutes.
 
@@ -117,47 +116,47 @@ Open console:
 zammad run rails c
 ```
 
-Set variables:
+Set variables, replace the values in `{}` with your own:
 
-```sh
+```ruby
 subdomain = '{freshdesk subdomain}.freshdesk.com'
 ```
 
-```sh
+```ruby
 token = '{freshdesk token}'
 ```
 
 Update Zammad settings for freshdesk import:
 
-```sh
+```ruby
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
 ```
 
-```sh
+```ruby
 Setting.set('import_freshdesk_endpoint_key', token)
 ```
 
-```sh
+```ruby
 Setting.set('import_backend', 'freshdesk')
 ```
 
-```sh
+```ruby
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
 
-```sh
+```ruby
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
 Run the migration:
 
-```sh
+```ruby
 job = ImportJob.create(name: 'Import::Freshdesk')
 ```
 
-```sh
+```ruby
 AsyncImportJob.perform_later(job)
 ```
 
@@ -167,7 +166,7 @@ Want to see the progress of the migration?
 
 Use
 
-```sh
+```ruby
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 
@@ -180,15 +179,15 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```sh
+```ruby
 Setting.set('import_mode', false)
 ```
 
-```sh
+```ruby
 Setting.set('system_init_done', true)
 ```
 
-```sh
+```ruby
 Rails.cache.clear
 ```
 
@@ -263,23 +262,23 @@ Open console:
 zammad run rails c
 ```
 
-Set variables:
+Set variables, replace the values in `{}` with your own:
 
-```sh
+```ruby
 subdomain = '{kayako subdomain}.kayako.com'
 ```
 
-```sh
+```ruby
 email = '{kayako admin email address}'
 ```
 
-```sh
+```ruby
 password = '{kayako admin password}'
 ```
 
 Update Zammad settings for Kayako import:
 
-```sh
+```ruby
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
 ```
 
@@ -287,31 +286,31 @@ Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
 Setting.set('import_kayako_endpoint_username', email)
 ```
 
-```sh
+```ruby
 Setting.set('import_kayako_endpoint_password', password)
 ```
 
-```sh
+```ruby
 Setting.set('import_backend', 'kayako')
 ```
 
-```sh
+```ruby
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
 
-```sh
+```ruby
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
 
 Run the migration:
 
-```sh
+```ruby
 job = ImportJob.create(name: 'Import::Kayako')
 ```
 
-```sh
+```ruby
 AsyncImportJob.perform_later(job)
 ```
 
@@ -321,7 +320,7 @@ Want to see the progress of the migration?
 
 Use
 
-```sh
+```ruby
 pp ImportJob.find_by(name: 'Import::Kayako')
 ```
 
@@ -334,15 +333,15 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```sh
+```ruby
 Setting.set('import_mode', false)
 ```
 
-```sh
+```ruby
 Setting.set('system_init_done', true)
 ```
 
-```sh
+```ruby
 Rails.cache.clear
 ```
 
@@ -368,65 +367,27 @@ Additional limitations to the general one:
 
 #### Предуслови
 
-Install Znuny4OTRS-Repo:
+**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**
 
-:::tabs key:otrs
+- [OTRS
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
+- [OTRS
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm)
+- [OTRS
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm)
+- [OTRS
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
 
-=== OTRS 6
+**Install OTRS migration plugin that matches your OTRS version:**
 
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm
-```
-
-=== OTRS 5
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm
-```
-
-=== OTRS 4
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm
-```
-
-=== OTRS 3
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm
-```
-
-:::
-
-Install OTRS migration plugin:
-
-:::tabs key:otrs
-
-=== OTRS 6
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm
-```
-
-=== OTRS 5
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm
-```
-
-=== OTRS 4
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm
-```
-
-=== OTRS 3
-
-```plain
-https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm
-```
-
-:::
+- [OTRS
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
+- [OTRS
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
+- [OTRS
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm)
+- [OTRS
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm)
 
 ::: tip
 In some cases restarting your webserver may help to solve internal server
@@ -453,27 +414,27 @@ applies if you experience timeouts during the migration.
 
 Open console:
 
-```sh
+```ruby
 zammad run rails c
 ```
 
-Set variables (ensure to replace _xxx_ with your values):
+Set variables, replace the values in `{}` with your own:
 
-```sh
-Setting.set('import_otrs_endpoint', 'https://xxx/otrs/public.pl?Action=ZammadMigrator')
+```ruby
+Setting.set('import_otrs_endpoint', 'https://{domain}/otrs/public.pl?Action=ZammadMigrator')
 ```
 
-```sh
-Setting.set('import_otrs_endpoint_key', 'xxx')
+```ruby
+Setting.set('import_otrs_endpoint_key', '{xxx}')
 ```
 
-```sh
+```ruby
 Setting.set('import_mode', true)
 ```
 
 Run a full migration:
 
-```sh
+```ruby
 Import::OTRS.start
 ```
 
@@ -482,11 +443,11 @@ migration):
 
 All steps from "Set variables" +
 
-```sh
+```ruby
 Setting.set('system_init_done', false)
 ```
 
-```sh
+```ruby
 Import::OTRS.diff_worker
 ```
 
@@ -496,15 +457,15 @@ Import::OTRS.diff_worker
 
 Run the following commands:
 
-```sh
+```ruby
 Setting.set('import_mode', false)
 ```
 
-```sh
+```ruby
 Setting.set('system_init_done', true)
 ```
 
-```sh
+```ruby
 Rails.cache.clear
 ```
 
@@ -564,56 +525,56 @@ Open console:
 zammad run rails c
 ```
 
-Set variables:
+Set variables, replace the values in `{}` with your own:
 
-```sh
+```ruby
 subdomain = '{zendesk url}'
 ```
 
-```sh
+```ruby
 email = '{zendesk admin email address}'
 ```
 
-```sh
+```ruby
 token = '{zendesk token}'
 
 ```
 
 Update Zammad settings:
 
-```sh
+```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
 ```
 
-```sh
+```ruby
 Setting.set('import_zendesk_endpoint_username', email)
 ```
 
-```sh
+```ruby
 Setting.set('import_zendesk_endpoint_key', token)
 ```
 
-```sh
+```ruby
 Setting.set('import_backend', 'zendesk')
 ```
 
-```sh
+```ruby
 Setting.set('import_mode', true)
 ```
 
 Check your configuration in a dry run:
 
-```sh
+```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
 Run the migration:
 
-```sh
+```ruby
 job = ImportJob.create(name: 'Import::Zendesk')
 ```
 
-```sh
+```ruby
 AsyncImportJob.perform_later(job)
 ```
 
@@ -623,7 +584,7 @@ Want to see the progress of the migration?
 
 Use
 
-```sh
+```ruby
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 
@@ -637,15 +598,15 @@ which gives you an output of the current state of the job.
 
 Run the following commands:
 
-```sh
+```ruby
 Setting.set('import_mode', false)
 ```
 
-```sh
+```ruby
 Setting.set('system_init_done', true)
 ```
 
-```sh
+```ruby
 Rails.cache.clear
 ```
 

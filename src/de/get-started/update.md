@@ -30,7 +30,7 @@ Anforderungen von Zammad entspricht (siehe
 ### Zammad stoppen
 
 ```sh
-systemctl stop zammad
+sudo systemctl stop zammad
 ```
 
 ### Backup von Zammad
@@ -53,86 +53,86 @@ in den folgenden Befehlen zu sehen.
 :::tabs
 
 === Ubuntu/Debian
-Aktualisierung der Paketlisten:
+Update package lists:
 
 ```sh
-apt update
+sudo apt update
 ```
 
-Aktualisierungen für Zammad deaktivieren:
+Disable updates for Zammad:
 
 ```sh
-apt-mark hold zammad
+sudo apt-mark hold zammad
 ```
 
-Aktualisierung aller Pakete außer Zammad:
+Update all packages except Zammad:
 
 ```sh
-apt upgrade
+sudo apt upgrade
 ```
 
-Reaktivieren der Aktualisierungen für Zammad:
+Re-enable updates for Zammad:
 
 ```sh
-apt-mark unhold zammad
+sudo apt-mark unhold zammad
 ```
 
-Zammad aktualisieren:
+Update Zammad:
 
 ```sh
-apt upgrade
+sudo apt upgrade
 ```
 
 === OpenSUSE/SLES
 
-Aktualisierung der Paketlisten:
+Update package lists:
 
 ```sh
-zypper refresh
+sudo zypper refresh
 ```
 
-Aktualisierungen für Zammad deaktivieren:
+Disable updates for Zammad:
 
 ```sh
-zypper addlock zammad
+sudo zypper addlock zammad
 ```
 
-Aktualisierung aller Pakete außer Zammad:
+Update all packages except Zammad:
 
 ```sh
-zypper update
+sudo zypper update
 ```
 
-Reaktivieren der Aktualisierungen für Zammad:
+Re-enable updates for Zammad:
 
 ```sh
-zypper removelock zammad
+sudo zypper removelock zammad
 ```
 
-Aktualisierung Zammad:
+Update Zammad:
 
 ```sh
-zypper update
+sudo zypper update
 ```
 
 === CentOS/RHEL
 
-Aktualisierung der Paketlisten:
+Update package lists:
 
 ```sh
-yum check-update
+sudo yum check-update
 ```
 
-Aktualisierung aller Pakete außer Zammad:
+Update all packages except Zammad:
 
 ```sh
-yum upgrade --exclude zammad
+sudo yum upgrade --exclude zammad
 ```
 
-Zammad aktualisieren:
+Update Zammad:
 
 ```sh
-yum upgrade
+sudo yum upgrade
 ```
 
 :::
@@ -175,7 +175,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 ### Zammad starten
 
 ```sh
-systemctl start zammad
+sudo systemctl start zammad
 ```
 
 ## Docker-Installation aktualisieren

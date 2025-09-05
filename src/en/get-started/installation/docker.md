@@ -22,7 +22,7 @@ the Zammad application.
 - Adjust your host's settings to run Elasticsearch properly:
 
     ```sh
-    sysctl -w vm.max_map_count=262144
+    sudo sysctl -w vm.max_map_count=262144
     ```
 
 ## Deployment with Portainer

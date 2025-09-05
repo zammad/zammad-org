@@ -119,7 +119,7 @@ Ticket.find_by(number:'101234').article_ids
 
 Ausgabe:
 
-```ruby
+```ansi
 [4, 3, 2]
 ```
 
@@ -157,7 +157,7 @@ Ticket::StateType.pluck(:id, :name)
 
 Oben werden sowohl die ID des Typs als auch der Name zurückgegeben - z.B.:
 
-```ruby
+```ansi
 `[[1, "neu"], [2, "offen"], ...`.
 ```
 
@@ -255,7 +255,7 @@ u = User.find(**USERID**)
 u.login = 'user@exmaple.com'
 ```
 
-```sh
+```ruby
 u.save!
 ```
 
@@ -603,22 +603,22 @@ tun.
 
 Sie können drei verschiedene Warnungen dafür verwenden:
 
-- Eingehende Anrufe `:"phone-in"=>""`
-- Ausgehende Anrufe `:"phone-out"=>""`
-- Ausgehende E-Mails `:"email-out"=>""`
+- Incoming Calls `:"phone-in"=>"`
+- Outgoing Calls `:"phone-out"=>"`
+- Outgoing E-Mails `:"email-out"=>"`
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
-      : "phone-in"=>"Sie sind im Begriff, einen eingehenden Anruf zu notieren.",
-      : "phone-out"=>"Sie sind im Begriff, einen ausgehenden Anruf zu notieren.",
-      : "email-out"=>"Sie sind im Begriff, eine E-Mail zu versenden."
+      :"phone-in"  => "You're about to note a incoming phone call.",
+      :"phone-out" => "You're about to note an outgoing phone call.",
+      :"email-out" => "You're going to send out an E-Mail."
    })
 ```
 
 :::info
-Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine
-Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: "phone-in"=>""`
-aus dem Befehl. Die Einstellung selbst wird in einem Array (`{}`) vorgenommen.
+You can use those three sub-settings independently, if you e.g. don't
+need a warning on incoming calls, simply leave out `:"phone-in"=>"`
+out of the setting. The setting itself is done within an array ( `{}` ).
 :::
 
 Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
@@ -636,21 +636,21 @@ tun.
 Sie können unterschiedliche Warnungen für verschiedene Kanäle Sichtbarkeiten
 von Artikeln vorsehen:
 
-- Interne Notizen `: "note-internal"=>""`
-- Öffentliche Notizen `:"note-public"=>""`
-- Interne Anrufe `:"phone-internal"=>""`
-- Öffentliche Anrufe `: "phone-public"=>""`
-- Interne E-Mails `: "email-intern"=>""`
-- Öffentliche E-Mails `: "email-public"=>""`
+- Internal Notes `:"note-internal"=>"`
+- Public Notes `:"note-public"=>"`
+- Internal Calls `:"phone-internal"=>"`
+- Public Calls `:"phone-public"=>"`
+- Internal Emails `:"email-internal"=>"`
+- Public Emails `:"email-public"=>"`
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
-      : "note-internal"=>"Sie schreiben eine |interne Notiz|, die nur Personen aus Ihrer Organisation sehen können.",
-      : "note-public"=>"Sie schreiben eine |öffentliche Notiz|.",
-      : "phone-internal" => "Sie schreiben eine |interne Telefonnotiz|, die nur Personen aus Ihrer Organisation sehen können.",
-      : "phone-public"=>"Sie schreiben eine |öffentliche Telefonnotiz|.",
-      : "email-intern" => "Sie schreiben eine |interne E-Mail|, die nur Personen Ihrer Organisation sehen können.",
-      : "email-public"=>"Sie schreiben eine |öffentliche E-Mail|."
+      :"note-internal"  => "You are writing an |internal note|, only people of your organization will see it.",
+      :"note-public"    => "You are writing a |public note|.",
+      :"phone-internal" => "You are writing an |internal phone note|, only people of your organization will see it.",
+      :"phone-public"   => "You are writing a |public phone note|.",
+      :"email-internal" => "You are writing an |internal Email|, only people of your organization will see it.",
+      :"email-public"   => "You are writing a |public Email|."
    })
 ```
 
@@ -820,7 +820,7 @@ Dateiname nicht verändert wird, da der Import sonst fehlschlägt.
 
 Nachdem Sie die E-Mail bearbeitet haben, führen Sie sie folgendes aus:
 
-```ruby
+```sh
 rake zammad:email_parser:failed_email:import path/to/your/email.eml
 ```
 
@@ -841,7 +841,7 @@ erzeugten Unterordner auszuführen.
 Unerwünschte E-Mails, z.B. Spam, können Sie nach dem Export mit dem
 folgenden Befehl aus der Datenbank löschen:
 
-```ruby
+```sh
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
 
@@ -911,10 +911,10 @@ Befehle löschen ohne weitere Warnungen.
 :::
 
 :::tip
-Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
-beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
-verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
-_System > Datenschutz_.
+If you're not sure what to do and need to learn more about what Zammad
+does upon removing users, please consider using Zammad's UI options instead.
+You can find the data privacy feature in Zammad's admin interface under
+_System > Data Privacy_.
 :::
 
 Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und

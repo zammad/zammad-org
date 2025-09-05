@@ -134,7 +134,7 @@ Elasticsearch korrekt funktioniert.
 #### Schritt 1: Überprüfen Sie, ob Elasticsearch läuft
 
 ```sh
-systemctl status elasticsearch
+sudo systemctl status elasticsearch
 ```
 
 Die Ausgabe sollte in etwa wie folgt aussehen. Achten Sie darauf, dass dort
@@ -152,7 +152,7 @@ Andernfalls versuchen Sie, den Service neu zu starten und prüfen Sie dann
 erneut:
 
 ```sh
-systemctl restart elasticsearch
+sudo systemctl restart elasticsearch
 ```
 
 ::: warning
@@ -183,7 +183,7 @@ installieren, und prüfen Sie dann erneut:
 ```
 
 ```sh
-systemctl restart elasticsearch
+sudo systemctl restart elasticsearch
 ```
 
 ```sh

@@ -158,7 +158,7 @@ Erforderliche Berechtigung: `knowledge_base.reader` oder
 `GET`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-::: details:
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-categories.json
 
@@ -215,7 +215,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 `DELETE`-Request gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
-::: details:
+::: details
 
 <<< @/fixtures/rest-api/knowledgebase/delete-categories.json
 
@@ -293,7 +293,7 @@ Wenn Sie den Inhalt einer Antwort abrufen möchten, fügen Sie die Parameter `?f
 Anfrage für die folgende Antwort enthielt die Parameter.
 :::
 
-::: details
+:::: details
 
 <<< @/fixtures/rest-api/knowledgebase/get-answers.json
 
@@ -305,7 +305,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 
 `POST`-Request gesendet: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
-:::: details
+::: details
 
 ::: tabs key:reqres
 

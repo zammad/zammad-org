@@ -24,7 +24,7 @@ als Anwendung geleistet werden.
   ordnungsgemäß läuft:
 
     ```sh
-    sysctl -w vm.max_map_count=262144
+    sudo sysctl -w vm.max_map_count=262144
     ```
 
 ## Installation mit Portainer

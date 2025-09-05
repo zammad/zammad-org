@@ -117,7 +117,7 @@ Ticket.find_by(number:'101234').article_ids
 
 Output:
 
-```ruby
+```ansi
 [4, 3, 2]
 ```
 
@@ -153,7 +153,7 @@ Ticket::StateType.pluck(:id, :name)
 
 Above will return both, the type ID and name - e.g.:
 
-```ruby
+```ansi
 `[[1, "new"], [2, "open"], ...`.
 ```
 
@@ -252,7 +252,7 @@ u = User.find(**USERID**)
 u.login = 'user@exmaple.com'
 ```
 
-```sh
+```ruby
 u.save!
 ```
 
@@ -589,21 +589,21 @@ you can do so with the below command.
 
 You can use three different warnings for:
 
-- Incoming Calls `:"phone-in"=>""`
-- Outgoing Calls `:"phone-out"=>""`
-- Outgoing E-Mails `:"email-out"=>""`
+- Incoming Calls `:"phone-in"=>"`
+- Outgoing Calls `:"phone-out"=>"`
+- Outgoing E-Mails `:"email-out"=>"`
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
-      :"phone-in"=>"You're about to note a incoming phone call.",
-      :"phone-out"=>"You're about to note an outgoing phone call.",
-      :"email-out"=>"You're going to send out an E-Mail."
+      :"phone-in"  => "You're about to note a incoming phone call.",
+      :"phone-out" => "You're about to note an outgoing phone call.",
+      :"email-out" => "You're going to send out an E-Mail."
    })
 ```
 
 :::info
 You can use those three sub-settings independently, if you e.g. don't
-need a warning on incoming calls, simply leave out `:"phone-in"=>""`
+need a warning on incoming calls, simply leave out `:"phone-in"=>"`
 out of the setting. The setting itself is done within an array ( `{}` ).
 :::
 
@@ -621,21 +621,21 @@ If you want to give your agent a warning during the ticket article
 You can provide different warnings for different channels and article
 visibility:
 
-- Internal Notes `:"note-internal"=>""`
-- Public Notes `:"note-public"=>""`
-- Internal Calls `:"phone-internal"=>""`
-- Public Calls `:"phone-public"=>""`
-- Internal Emails `:"email-internal"=>""`
-- Public Emails `:"email-public"=>""`
+- Internal Notes `:"note-internal"=>"`
+- Public Notes `:"note-public"=>"`
+- Internal Calls `:"phone-internal"=>"`
+- Public Calls `:"phone-public"=>"`
+- Internal Emails `:"email-internal"=>"`
+- Public Emails `:"email-public"=>"`
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
-      :"note-internal"=>"You are writing an |internal note|, only people of your organization will see it.",
-      :"note-public"=>"You are writing a |public note|.",
+      :"note-internal"  => "You are writing an |internal note|, only people of your organization will see it.",
+      :"note-public"    => "You are writing a |public note|.",
       :"phone-internal" => "You are writing an |internal phone note|, only people of your organization will see it.",
-      :"phone-public"=>"You are writing a |public phone note|.",
+      :"phone-public"   => "You are writing a |public phone note|.",
       :"email-internal" => "You are writing an |internal Email|, only people of your organization will see it.",
-      :"email-public"=>"You are writing a |public Email|."
+      :"email-public"   => "You are writing a |public Email|."
    })
 ```
 
@@ -800,7 +800,7 @@ import will otherwise fail.
 
 After editing the email, run:
 
-```ruby
+```sh
 rake zammad:email_parser:failed_email:import path/to/your/email.eml
 ```
 
@@ -820,7 +820,7 @@ the generated subfolder.
 In case of unwanted emails such as spam, you can delete them from the
 database after exporting them with the following command:
 
-```ruby
+```sh
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
 
@@ -889,8 +889,8 @@ commands delete without any further warnings.
 
 :::tip
 If you're not sure what to do and need to learn more about what Zammad
-does upon removing users, please consider using Zammad's UI options in
-stead. You can find the data privacy feature in Zammad's admin interface under
+does upon removing users, please consider using Zammad's UI options instead.
+You can find the data privacy feature in Zammad's admin interface under
 _System > Data Privacy_.
 :::
 

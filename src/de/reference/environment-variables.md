@@ -138,5 +138,5 @@ zammad config:unset OPTION
 Starten Sie Zammad nach der Änderung der Einstellungen neu:
 
 ``` sh
-systemctl restart zammad
+sudo systemctl restart zammad
 ```

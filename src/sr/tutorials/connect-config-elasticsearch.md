@@ -131,7 +131,7 @@ these steps to make sure Elasticsearch is working correctly.
 #### Step 1: Verify Elasticsearch is Running
 
 ```sh
-systemctl status elasticsearch
+sudo systemctl status elasticsearch
 ```
 
 This should output something like the following, make sure it says `Active:
@@ -148,7 +148,7 @@ active (running)`:
 Otherwise, try restarting it and check again:
 
 ```sh
-systemctl restart elasticsearch
+sudo systemctl restart elasticsearch
 ```
 
 ::: warning
@@ -178,7 +178,7 @@ Otherwise, try reinstalling the `ingest-attachment` plugin and check again:
 ```
 
 ```sh
-systemctl restart elasticsearch
+sudo systemctl restart elasticsearch
 ```
 
 ```sh

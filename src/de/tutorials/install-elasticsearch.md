@@ -38,12 +38,12 @@ während der Installation von Elasticsearch angezeigt wird.
 ==== Ubuntu/Debian
 
 ```sh
-apt install apt-transport-https sudo wget curl gnupg
+sudo apt install apt-transport-https sudo wget curl gnupg
 ```
 
 ```sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
+gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
 ```
 
 ::::tabs
@@ -66,27 +66,27 @@ Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg" | \
 sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null
 ```
 
-=== Legacy Format
+=== Legacy format
 
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
 ```
 
 ::::
 
 ```sh
-apt update
+sudo apt update
 ```
 
 ```sh
-apt install elasticsearch
+sudo apt install elasticsearch
 ```
 
 ==== OpenSUSE
 
 ```sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 ```sh
@@ -97,17 +97,17 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
-type=rpm-md"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo
+type=rpm-md"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo
 ```
 
 ```sh
-zypper install elasticsearch
+sudo zypper install elasticsearch
 ```
 
 ==== CentOS
 
 ```sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 ```sh
@@ -118,18 +118,18 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
-type=rpm-md"| tee /etc/yum.repos.d/elasticsearch-7.x.repo
+type=rpm-md"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo
 ```
 
 ```sh
-yum install -y elasticsearch
+sudo yum install -y elasticsearch
 ```
 
-==== Direkt Download
+==== Direct Download
 
-Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine
-[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-für weitergehende Informationen.
+Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the
+[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+for in-depth instructions.
 
 :::::
 
@@ -138,12 +138,12 @@ Installieren Sie das Plugin "ingest-attachment":
     /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
     ```
 
-Erhöhen Sie das Virtual Memory Map Limit:
+Increase Virtual Memory Map Limit:
 :   ```sh
-    sysctl -w vm.max_map_count=262144
+    sudo sysctl -w vm.max_map_count=262144
     ```
 <!-- markdownlint-disable MD046 -->
-Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:
+Adjust `/etc/elasticsearch/elasticsearch.yml`:
 :   ```
     # /etc/elasticsearch/elasticsearch.yml
 
@@ -168,9 +168,9 @@ Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:
     ```
 <!-- markdownlint-enable MD046 -->
 
-Aktivieren Sie es standardmäßig und starten Sie es:
+Enable it by default and start it:
 :   ```sh
-    systemctl enable elasticsearch --now
+    sudo systemctl enable elasticsearch --now
     ```
 
 ## Nächste Schritte

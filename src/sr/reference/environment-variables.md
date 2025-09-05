@@ -137,5 +137,5 @@ zammad config:unset OPTION
 Restart Zammad after changing settings:
 
 ``` sh
-systemctl restart zammad
+sudo systemctl restart zammad
 ```

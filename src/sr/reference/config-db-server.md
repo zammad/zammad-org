@@ -25,13 +25,13 @@ where needed.
 
 === Debian & Ubuntu
 
-```sh
+```ansi
 /etc/postgresql/{your version}/main/postgresql.conf
 ```
 
 === CentOS & OpenSUSE
 
-```plain
+```ansi
 /var/lib/pgsql/data/postgresql.conf
 ```
 
@@ -70,7 +70,7 @@ sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-fil
 Apply changes by restarting postgresql and Zammad (in this order):
 
 ```sh
-systemctl restart postgresql zammad
+sudo systemctl restart postgresql zammad
 ```
 
 ## Adjust PostgreSQL for bigger instances (optional)
@@ -102,5 +102,5 @@ sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file
 Apply changes by restarting postgresql and Zammad (in this order):
 
 ```sh
-systemctl restart postgresql zammad
+sudo systemctl restart postgresql zammad
 ```

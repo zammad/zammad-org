@@ -28,7 +28,7 @@ requirements (see [Prerequisites](installation/prerequisites) and
 ### Stop Zammad
 
 ```sh
-systemctl stop zammad
+sudo systemctl stop zammad
 ```
 
 ### Backup Zammad
@@ -53,31 +53,31 @@ you can see in the commands below.
 Update package lists:
 
 ```sh
-apt update
+sudo apt update
 ```
 
 Disable updates for Zammad:
 
 ```sh
-apt-mark hold zammad
+sudo apt-mark hold zammad
 ```
 
 Update all packages except Zammad:
 
 ```sh
-apt upgrade
+sudo apt upgrade
 ```
 
 Re-enable updates for Zammad:
 
 ```sh
-apt-mark unhold zammad
+sudo apt-mark unhold zammad
 ```
 
 Update Zammad:
 
 ```sh
-apt upgrade
+sudo apt upgrade
 ```
 
 === OpenSUSE/SLES
@@ -85,31 +85,31 @@ apt upgrade
 Update package lists:
 
 ```sh
-zypper refresh
+sudo zypper refresh
 ```
 
 Disable updates for Zammad:
 
 ```sh
-zypper addlock zammad
+sudo zypper addlock zammad
 ```
 
 Update all packages except Zammad:
 
 ```sh
-zypper update
+sudo zypper update
 ```
 
 Re-enable updates for Zammad:
 
 ```sh
-zypper removelock zammad
+sudo zypper removelock zammad
 ```
 
 Update Zammad:
 
 ```sh
-zypper update
+sudo zypper update
 ```
 
 === CentOS/RHEL
@@ -117,19 +117,19 @@ zypper update
 Update package lists:
 
 ```sh
-yum check-update
+sudo yum check-update
 ```
 
 Update all packages except Zammad:
 
 ```sh
-yum upgrade --exclude zammad
+sudo yum upgrade --exclude zammad
 ```
 
 Update Zammad:
 
 ```sh
-yum upgrade
+sudo yum upgrade
 ```
 
 :::
@@ -168,7 +168,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 ### Start Zammad
 
 ```sh
-systemctl start zammad
+sudo systemctl start zammad
 ```
 
 ## Update Docker Installation

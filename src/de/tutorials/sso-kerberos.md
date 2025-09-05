@@ -143,7 +143,7 @@ ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
 Die Ausgabe des obigen Befehls enthält wichtige Daten für den folgenden
 Schritt 2e:
 
-```ansi
+```sh
 Using legacy password setting method
 Failed to set property 'servicePrincipalName' to 'HTTP/<zammad-host>' on Dn 'CN=Zammad Service,DC=<domain>,DC=<tld>': 0x13.
 WARNING: Unable to set SPN mapping data.
@@ -153,7 +153,7 @@ Hashing password with salt "<domain><service-acct>".
 Key created.
 Output keytab to zammad.keytab:
 Keytab version: 0x502
-keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) // [!code focus]
+keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) # [!code focus]
 ```
 
 Die letzte Zeile ist zu beachten:
@@ -187,13 +187,13 @@ konfiguriert ist und läuft.
 Schalten Sie nginx aus:
 
 ```sh
-systemctl stop nginx
+sudo systemctl stop nginx
 ```
 
 Lassen Sie es nach einem Neustart ausgeschaltet:
 
 ```sh
-systemctl disable nginx
+sudo systemctl disable nginx
 ```
 
 Wenn Sie die Ausfallzeit minimieren möchten, können Sie diesen Schritt zum
@@ -206,19 +206,19 @@ schalten Sie einfach Apache aus und stellen NGINX wieder her:
 ::: details
 
 ```sh
-systemctl stop apache2
+sudo systemctl stop apache2
 ```
 
 ```sh
-systemctl disable apache2
+sudo systemctl disable apache2
 ```
 
 ```sh
-systemctl enable nginx
+sudo systemctl enable nginx
 ```
 
 ```sh
-systemctl start nginx
+sudo systemctl start nginx
 ```
 
 :::
@@ -236,27 +236,27 @@ Konfiguration](/de/tutorials/webserver-config) werfen, bevor Sie fortfahren.
 === Debian & Ubuntu
 
 ```sh
-apt update
+sudo apt update
 ```
 
 ```sh
-apt install krb5-user libapache2-mod-auth-gssapi
+sudo apt install krb5-user libapache2-mod-auth-gssapi
 ```
 
 === CentOS
 
 ```sh
-yum install krb5-workstation mod_auth_kerb
+sudo yum install krb5-workstation mod_auth_kerb
 ```
 
 === OpenSUSE
 
 ```sh
-zypper ref
+sudo zypper ref
 ```
 
 ```sh
-zypper install krb5-client apache2-mod_auth_kerb
+sudo zypper install krb5-client apache2-mod_auth_kerb
 ```
 
 :::
@@ -275,7 +275,7 @@ a2enmod auth_gssapi rewrite
 ```
 
 ```sh
-systemctl restart apache2
+sudo systemctl restart apache2
 ```
 
 === a2enmod (OpenSUSE)
@@ -285,13 +285,13 @@ a2enmod auth_kerb rewrite
 ```
 
 ```sh
-systemctl restart apache2
+sudo systemctl restart apache2
 ```
 
-=== per Konfigurationsdatei (CentOS)
+=== via configuration file (CentOS)
 
-Ergänzen Sie oder entfernen Sie den Kommentar für `LoadModule` in
-der Apache Konfiguration:
+add/uncomment the appropriate `LoadModule` statements in your Apache
+config:
 
 ```apache
 # /etc/httpd/conf/httpd.conf
@@ -406,29 +406,29 @@ die entsprechenden Berechtigungen:
 === Debian, Ubuntu, OpenSUSE
 
 ```sh
-mv /root/zammad.keytab /etc/apache2/
+sudo mv /root/zammad.keytab /etc/apache2/
 ```
 
 ```sh
-chown root:www-data /etc/apache2/zammad.keytab
+sudo chown root:www-data /etc/apache2/zammad.keytab
 ```
 
 ```sh
-chmod 640 /etc/apache2/zammad.keytab
+sudo chmod 640 /etc/apache2/zammad.keytab
 ```
 
 === CentOS
 
 ```sh
-mv /root/zammad.keytab /etc/httpd/
+sudo mv /root/zammad.keytab /etc/httpd/
 ```
 
 ```sh
-chown root:apache /etc/httpd/zammad.keytab
+sudo chown root:apache /etc/httpd/zammad.keytab
 ```
 
 ```sh
-chmod 640 /etc/httpd/zammad.keytab
+sudo chmod 640 /etc/httpd/zammad.keytab
 ```
 
 :::
@@ -501,7 +501,7 @@ The configuration for CentOS and OpenSUSE below contains two
 ### 2g. Apache neu starten, um Änderungen zu übernehmen
 
 ```sh
-systemctl restart apache2
+sudo systemctl restart apache2
 ```
 
 ## Schritt 3: Aktivieren Sie SSO in Zammad

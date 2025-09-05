@@ -49,11 +49,11 @@ loss and inconsistencies.
 Make sure that no data will be changed _before_ backing up.
 
 ```sh
-systemctl disable zammad
+sudo systemctl disable zammad
 ```
 
 ```sh
-systemctl stop zammad
+sudo systemctl stop zammad
 ```
 
 ## Step 6: Backup
@@ -117,21 +117,21 @@ Zammad files are distribution and version specific!
 === Debian & Ubuntu
 
 ```sh
-dpkg -r --force-depends zammad
+sudo dpkg -r --force-depends zammad
 ```
 
 ```sh
-apt install zammad
+sudo apt install zammad
 ```
 
 === OpenSUSE
 
 ``` sh
-zypper remove -R zammad
+sudo zypper remove -R zammad
 ```
 
 ```sh
-zypper install zammad
+sudo zypper install zammad
 ```
 
 :::
@@ -162,13 +162,13 @@ zammad run rails r "Rails.cache.clear"
 #### Step 9.3: Ensure Zammad is Running
 
 ``` sh
-systemctl status zammad
+sudo systemctl status zammad
 ```
 
 If Zammad is not running, run:
 
 ```sh
-systemctl start zammad
+sudo systemctl start zammad
 ```
 
 :::tip

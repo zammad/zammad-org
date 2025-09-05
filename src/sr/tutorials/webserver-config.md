@@ -88,7 +88,7 @@ acme.sh --install-cert -d zammad.example.com \
     --cert-file      /etc/ssl/private/zammad.example.com.pem  \
     --key-file       /etc/ssl/private/zammad.example.com.key  \
     --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \
-    --reloadcmd     "systemctl force-reload <webserver>"
+    --reloadcmd     "sudo systemctl force-reload <webserver>"
 ```
 
 From now on, acme.sh will automatically renew your installed certificates if
@@ -153,8 +153,8 @@ you to meet your requirements!
 
 #### Step 4 - Save & Reload
 
-Reload your nginx with `systemctl reload nginx` to apply your configuration
-changes.
+Reload your nginx with `sudo systemctl reload nginx` to apply your
+configuration changes.
 
 After that, you should be greeted by our getting started wizard.  Go on with
 the [first steps in Zammad](/en/tutorials/first-steps).
@@ -172,7 +172,7 @@ a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
 
 ```sh
-systemctl restart apache2
+sudo systemctl restart apache2
 ```
 
 Click to open details for CentOS config:
@@ -276,7 +276,7 @@ ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 
 #### Step 6 - Save & Reload
 
-Reload your apache with `systemctl reload apache2` to apply your
+Reload your apache with `sudo systemctl reload apache2` to apply your
 configuration changes.
 
 After that, you should be greeted by our getting started wizard.  Go on with
