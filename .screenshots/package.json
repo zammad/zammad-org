@@ -1,7 +1,7 @@
 {
   "private": "true",
   "devDependencies": {
-    "cypress": "^15.0.0"
+    "cypress": "^13.17.0"
   },
   "scripts": {
     "dev": "cypress open",
