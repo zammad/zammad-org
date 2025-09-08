@@ -102,7 +102,7 @@ reasons.
 ## Contact us
 
 For more information about our privacy practices, if you have questions, or if
-you would like to make a complaint, please contact us by e-mail at
+you would like to make a complaint, please contact us by email at
 <info@zammad.org> or by mail using the details provided below:
 
 Marienstraße 18, Berlin, BE, 10117, Germany
