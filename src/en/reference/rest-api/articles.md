@@ -83,7 +83,7 @@ use `false`.
 **Visibility: internal doesn't mean it's silent**
 
 If you set an article to `internal: true` but choose to send an email,
-please be aware that said Email is still being sent out!
+please be aware that said email is still being sent out!
 :::
 
 ### `sender`

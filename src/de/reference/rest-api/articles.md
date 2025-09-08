@@ -80,10 +80,10 @@ die interne Sichtbarkeit verwenden Sie `true`, für die Sichtbarkeit auch für
 Ihre Kunden verwenden Sie `false`.
 
 ::: warning
-**Sichtbarkeit: Intern bedeutet nicht, dass nichts passiert**
+**Visibility: internal doesn't mean it's silent**
 
-Wenn Sie einen Artikel auf `internal: true` setzen, aber eine E-Mail versenden,
-beachten Sie bitte dass diese E-Mail trotzdem verschickt wird!
+If you set an article to `internal: true` but choose to send an email,
+please be aware that said email is still being sent out!
 :::
 
 ### `sender`

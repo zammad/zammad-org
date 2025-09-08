@@ -533,12 +533,11 @@ In diesem Abschnitt finden Sie einige Einstellungen, die Sie nicht in der
 Zammad-Benutzeroberfläche finden. Diese Einstellungen könnten nützlich sein,
 da sie das Verhalten von Zammad verändern können.
 
-### Alle ausgehenden E-Mails an ein BCC-Postfach senden
+### Send All Outgoing EMails to a BCC-Mailbox
 
-Mit dieser Option können Sie alle ausgehenden E-Mails (keine
-Benachrichtigungen) an ein bestimmtes Postfach senden. Bitte beachten Sie,
-dass es sich dabei nicht um ein Postfach handeln sollte, das Sie bereits
-importieren! Dies gilt für alle Gruppen und ist eine globale Einstellung.
+This option allows you to send all outgoing emails (not notifications)  to a
+specific mailbox. Please note that this shouldn't be a mailbox you're
+importing already! This will apply to all groups and is a global setting.
 
 ```ruby
 Setting.set('system_bcc', 'alias@domain.tld')
@@ -583,7 +582,7 @@ Sie können wählen zwischen
 
 - `phone-in` (eingehender Anruf, **Standard**),
 - `phone-out` (ausgehender Anruf) und
-- `email-out` (ausgehende E-Mail).
+- `email-out` (Sending an email out).
 
 ```ruby
 Setting.set('ui_ticket_create_default_type', 'email-out')
@@ -605,13 +604,13 @@ Sie können drei verschiedene Warnungen dafür verwenden:
 
 - Incoming Calls `:"phone-in"=>"`
 - Outgoing Calls `:"phone-out"=>"`
-- Outgoing E-Mails `:"email-out"=>"`
+- Outgoing emails `:"email-out"=>"`
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
       :"phone-in"  => "You're about to note a incoming phone call.",
       :"phone-out" => "You're about to note an outgoing phone call.",
-      :"email-out" => "You're going to send out an E-Mail."
+      :"email-out" => "You're going to send out an email."
    })
 ```
 
@@ -636,12 +635,12 @@ tun.
 Sie können unterschiedliche Warnungen für verschiedene Kanäle Sichtbarkeiten
 von Artikeln vorsehen:
 
-- Internal Notes `:"note-internal"=>"`
-- Public Notes `:"note-public"=>"`
-- Internal Calls `:"phone-internal"=>"`
-- Public Calls `:"phone-public"=>"`
-- Internal Emails `:"email-internal"=>"`
-- Public Emails `:"email-public"=>"`
+- Internal notes `:"note-internal"=>"`
+- Public notes `:"note-public"=>"`
+- Internal calls `:"phone-internal"=>"`
+- Public calls `:"phone-public"=>"`
+- Internal emails `:"email-internal"=>"`
+- Public emails `:"email-public"=>"`
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -649,8 +648,8 @@ Setting.set('ui_ticket_add_article_hint', {
       :"note-public"    => "You are writing a |public note|.",
       :"phone-internal" => "You are writing an |internal phone note|, only people of your organization will see it.",
       :"phone-public"   => "You are writing a |public phone note|.",
-      :"email-internal" => "You are writing an |internal Email|, only people of your organization will see it.",
-      :"email-public"   => "You are writing a |public Email|."
+      :"email-internal" => "You are writing an |internal email|, only people of your organization will see it.",
+      :"email-public"   => "You are writing a |public email|."
    })
 ```
 

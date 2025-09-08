@@ -521,9 +521,9 @@ In this section you can find some settings that you won't find within the
 Zammad UI. Those settings might come in handy as it can change Zammad's
 behavior.
 
-### Send All Outgoing E-Mails to a BCC-Mailbox
+### Send All Outgoing EMails to a BCC-Mailbox
 
-This option allows you to send all outgoing E-Mails (not notifications)
+This option allows you to send all outgoing emails (not notifications)
 to a specific mailbox. Please note that this shouldn't be a mailbox
 you're importing already! This will apply to all groups and is a global
 setting.
@@ -569,7 +569,7 @@ You can choose between
 
 - `phone-in` (incoming call, **default**),
 - `phone-out` (outgoing call) and
-- `email-out` (Sending an E-Mail out).
+- `email-out` (Sending an email out).
 
 ```ruby
 Setting.set('ui_ticket_create_default_type', 'email-out')
@@ -590,13 +590,13 @@ You can use three different warnings for:
 
 - Incoming Calls `:"phone-in"=>"`
 - Outgoing Calls `:"phone-out"=>"`
-- Outgoing E-Mails `:"email-out"=>"`
+- Outgoing emails `:"email-out"=>"`
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
       :"phone-in"  => "You're about to note a incoming phone call.",
       :"phone-out" => "You're about to note an outgoing phone call.",
-      :"email-out" => "You're going to send out an E-Mail."
+      :"email-out" => "You're going to send out an email."
    })
 ```
 
@@ -620,12 +620,12 @@ If you want to give your agent a warning during the ticket article
 You can provide different warnings for different channels and article
 visibility:
 
-- Internal Notes `:"note-internal"=>"`
-- Public Notes `:"note-public"=>"`
-- Internal Calls `:"phone-internal"=>"`
-- Public Calls `:"phone-public"=>"`
-- Internal Emails `:"email-internal"=>"`
-- Public Emails `:"email-public"=>"`
+- Internal notes `:"note-internal"=>"`
+- Public notes `:"note-public"=>"`
+- Internal calls `:"phone-internal"=>"`
+- Public calls `:"phone-public"=>"`
+- Internal emails `:"email-internal"=>"`
+- Public emails `:"email-public"=>"`
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -633,8 +633,8 @@ Setting.set('ui_ticket_add_article_hint', {
       :"note-public"    => "You are writing a |public note|.",
       :"phone-internal" => "You are writing an |internal phone note|, only people of your organization will see it.",
       :"phone-public"   => "You are writing a |public phone note|.",
-      :"email-internal" => "You are writing an |internal Email|, only people of your organization will see it.",
-      :"email-public"   => "You are writing a |public Email|."
+      :"email-internal" => "You are writing an |internal email|, only people of your organization will see it.",
+      :"email-public"   => "You are writing a |public email|."
    })
 ```
 

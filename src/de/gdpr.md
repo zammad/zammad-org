@@ -112,9 +112,8 @@ regulatorische Gründe zu berücksichtigen.
 
 ## Kontakt
 
-Wenn Sie weitere Informationen über unsere Datenschutzpraktiken wünschen,
-Fragen haben oder eine Beschwerde einreichen möchten, wenden Sie sich bitte
-per E-Mail an <info@zammad.org> oder per Post an die unten angegebenen
-Kontaktdaten:
+For more information about our privacy practices, if you have questions, or
+if you would like to make a complaint, please contact us by email at
+<info@zammad.org> or by mail using the details provided below:
 
 Marienstraße 18, Berlin, BE, 10117, Deutschland

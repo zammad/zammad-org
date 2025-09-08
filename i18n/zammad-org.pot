@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-05 11:29+0200\n"
+"POT-Creation-Date: 2025-09-08 12:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6063,7 +6063,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "For more information about our privacy practices, if you have questions, or "
-"if you would like to make a complaint, please contact us by e-mail at "
+"if you would like to make a complaint, please contact us by email at "
 "<info@zammad.org> or by mail using the details provided below:"
 msgstr ""
 
@@ -9361,15 +9361,15 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/console.md:524
 #, markdown-text, no-wrap
-msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
+msgid "Send All Outgoing EMails to a BCC-Mailbox"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/console.md:530
 #, markdown-text
 msgid ""
-"This option allows you to send all outgoing E-Mails (not notifications)  to "
-"a specific mailbox. Please note that this shouldn't be a mailbox you're "
+"This option allows you to send all outgoing emails (not notifications)  to a "
+"specific mailbox. Please note that this shouldn't be a mailbox you're "
 "importing already! This will apply to all groups and is a global setting."
 msgstr ""
 
@@ -9474,7 +9474,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/console.md:573
 #, markdown-text
-msgid "`email-out` (Sending an E-Mail out)."
+msgid "`email-out` (Sending an email out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9530,7 +9530,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/console.md:594
 #, markdown-text
-msgid "Outgoing E-Mails `:\"email-out\"=>\"`"
+msgid "Outgoing emails `:\"email-out\"=>\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9540,7 +9540,7 @@ msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
 "      :\"phone-in\"  => \"You're about to note a incoming phone call.\",\n"
 "      :\"phone-out\" => \"You're about to note an outgoing phone call.\",\n"
-"      :\"email-out\" => \"You're going to send out an E-Mail.\"\n"
+"      :\"email-out\" => \"You're going to send out an email.\"\n"
 "   })\n"
 msgstr ""
 
@@ -9590,37 +9590,37 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Internal Notes `:\"note-internal\"=>\"`"
+msgid "Internal notes `:\"note-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Public Notes `:\"note-public\"=>\"`"
+msgid "Public notes `:\"note-public\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Internal Calls `:\"phone-internal\"=>\"`"
+msgid "Internal calls `:\"phone-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Public Calls `:\"phone-public\"=>\"`"
+msgid "Public calls `:\"phone-public\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Internal Emails `:\"email-internal\"=>\"`"
+msgid "Internal emails `:\"email-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
 #, markdown-text
-msgid "Public Emails `:\"email-public\"=>\"`"
+msgid "Public emails `:\"email-public\"=>\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9634,9 +9634,9 @@ msgid ""
 "      :\"phone-internal\" => \"You are writing an |internal phone note|, "
 "only people of your organization will see it.\",\n"
 "      :\"phone-public\"   => \"You are writing a |public phone note|.\",\n"
-"      :\"email-internal\" => \"You are writing an |internal Email|, only "
+"      :\"email-internal\" => \"You are writing an |internal email|, only "
 "people of your organization will see it.\",\n"
-"      :\"email-public\"   => \"You are writing a |public Email|.\"\n"
+"      :\"email-public\"   => \"You are writing a |public email|.\"\n"
 "   })\n"
 msgstr ""
 
@@ -16057,7 +16057,7 @@ msgid ""
 "**Visibility: internal doesn't mean it's silent**\n"
 "\n"
 "If you set an article to `internal: true` but choose to send an email,\n"
-"please be aware that said Email is still being sent out!\n"
+"please be aware that said email is still being sent out!\n"
 msgstr ""
 
 #. type: Title ###
