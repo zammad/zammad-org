@@ -93,34 +93,35 @@ Sie die Konsole der Browser-Version vorziehen.
 
 ::::tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](./webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nach der Installation von Zammad und der
+[Konfiguration des Webservers](./webserver-config) rufen Sie
+den FQDN in Ihrem Browser auf und folgen dem Migrations-Assistenten. Sie finden
+diesen im Login-Screen, indem Sie auf den Link "Oder migrieren Sie von einem anderen System"
+unten klicken.
 
-Depending on the number of users, tickets and Freshdesk plan this may take a
-while.
+Abhängig von der Anzahl der Benutzer, Tickets und Ihres Freshdesk-Plans kann dies
+eine Weile dauern.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
+Sehen Sie die Meldung "_Interrupted by scheduler restart. Please restart manually
 or wait till next execution time._"?
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
 
-If you receive above message after the migration begun, please consider using
-the console approach instead and reset the installation.
+Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben haben, haben Sie
+bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.
 
-=== Via Console
+Falls Sie diese Meldung erscheint, nachdem die Migration bereits begonnen hat, sollten Sie
+es per Konsole versuchen und Ihre Installation zurücksetzen.
 
-Open console:
+=== Per Konsole
+
+Konsole öffnen:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Variablen definieren. Ersetzen Sie den Wert in Klammern `{}` mit Ihrem eigenen:
 
 ```ruby
 subdomain = '{freshdesk subdomain}.freshdesk.com'
@@ -130,7 +131,7 @@ subdomain = '{freshdesk subdomain}.freshdesk.com'
 token = '{freshdesk token}'
 ```
 
-Update Zammad settings for freshdesk import:
+Zammad-Einstellungen für Freshdesk-Import aktualisieren:
 
 ```ruby
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
@@ -148,13 +149,13 @@ Setting.set('import_backend', 'freshdesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Prüfen Sie die Einstellungen in einem Testlauf:
 
 ```ruby
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
-Run the migration:
+Auführen der Migration:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Freshdesk')
@@ -166,15 +167,15 @@ AsyncImportJob.perform_later(job)
 
 :::tip
 
-Want to see the progress of the migration?
+Möchten Sie den Fortschritt der Migration verfolgen?
 
-Use
+Verwenden Sie
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Freshdesk')
+pp ImportJob.find_by(Name: 'Import::Freshdesk')
 ```
 
-which gives you an output of the current state of the job.
+Damit erhalten Sie eine Ausgabe des aktuellen Stands der Aufgabe.
 
 :::
 ::::
@@ -243,34 +244,35 @@ Sie die Konsole der Browser-Version vorziehen.
 
 ::::tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nachdem Sie Zammad installiert und Ihren
+[Webserver konfiguriert haben](/de/tutorials/webserver-config), öffnen Sie
+den FQDN Ihres Zammads im Browser und folgen Sie dem Migrations-Assistenten.
+Sie können diesen unten im Login Screen finden, indem Sie
+"Oder migrieren Sie von einem anderen System" anklicken.
 
-Depending on the number of users, tickets and Kayako plan this may take a while.
+Abhängig von den vorhandenen Benutzern, Tickets und des Kayako-Tarifs kann dies eine Weile dauern.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
+Erscheint die Meldunge "*Interrupted by scheduler restart. Please restart manually
+or wait till next execution time.*"?
 
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben haben, haben Sie
+bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.
 
-If you receive above message after the migration begun, please consider
-using the console approach instead and reset the installation.
+Falls Sie die Meldung erhalten haben, nachdem die Migration begonnen hat, sollten
+Sie die Migration per Konsole versuchen und Ihre Installation zurücksetzen.
 
-=== Via Console
+=== Per Konsole
 
-Open console:
+Konsole öffnen:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+
+Variablen definieren. Ersetzen Sie den Wert in Klammern `{}` mit Ihrem eigenen:
 
 ```ruby
 subdomain = '{kayako subdomain}.kayako.com'
@@ -284,13 +286,13 @@ email = '{kayako admin email address}'
 password = '{kayako admin password}'
 ```
 
-Update Zammad settings for Kayako import:
+Zammad-Einstellungen für Kayako-Import anpassen:
 
 ```ruby
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
 ```
 
-```sh
+```ruby
 Setting.set('import_kayako_endpoint_username', email)
 ```
 
@@ -306,13 +308,13 @@ Setting.set('import_backend', 'kayako')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Prüfen Sie Ihre Konfiguration mit einem Testlauf:
 
 ```ruby
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
 
-Run the migration:
+Ausführen der Migration:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Kayako')
@@ -324,15 +326,15 @@ AsyncImportJob.perform_later(job)
 
 :::tip
 
-Want to see the progress of the migration?
+Möchten Sie den Fortschritt der Migration verfolgen?
 
-Use
+Verwenden Sie
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Kayako')
+pp ImportJob.find_by(Name: 'Import::Kayako')
 ```
 
-which gives you an output of the current state of the job.
+Damit erhalten Sie eine Ausgabe des aktuellen Status der Aufgabe.
 
 :::
 ::::
@@ -377,7 +379,7 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 
 #### Voraussetzungen
 
-**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**
+**Installieren Sie das Znuny4OTRS-Repo, das zu Ihrer OTRS-Version passt (Dependency des OTRS-Migrations-Plugins):**
 
 - [OTRS
   6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
@@ -388,7 +390,7 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 - [OTRS
   3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
 
-**Install OTRS migration plugin that matches your OTRS version:**
+**Installieren Sie das zu Ihrer OTRS Version passende OTRS Migrations-Plugin:**
 
 - [OTRS
   6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
@@ -407,27 +409,28 @@ In einigen Fällen kann ein Neustart des Webservers helfen, interne Serverfehler
 
 :::tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nach der Installation von Zammad und der
+[Konfiguration Ihres Webservers](/de/tutorials/webserver-config), navigieren Sie zu
+Zammads FQDN in Ihrem Browser und folgen Sie dem Assistenten für die Migration. Sie finden
+ihn im Anmeldebildschirm, indem Sie auf den Link "Oder von einem anderen System migrieren"
+am unteren Rand klicken.
 
-Depending on the size of your OTRS installation this may take a while. In such
-a case, consider using the command line version of this feature. This also
-applies if you experience timeouts during the migration.
+Abhängig von der Größe Ihrer OTRS-Installation kann dies eine Weile dauern. In einem solchen
+sollten Sie die Migration per Konsole verwenden. Dies gilt auch,
+ wenn Sie während der Migration Timeouts feststellen.
 
-=== Via Console
 
-Open console:
+=== Per Konsole
 
-```ruby
+Öffnen Sie die Konsole:
+
+```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Variablen definieren. Ersetzen Sie die Werte in Klammern `{}` mit Ihren eigenen Werten:
 
 ```ruby
 Setting.set('import_otrs_endpoint', 'https://{domain}/otrs/public.pl?Action=ZammadMigrator')
@@ -441,16 +444,16 @@ Setting.set('import_otrs_endpoint_key', '{xxx}')
 Setting.set('import_mode', true)
 ```
 
-Run a full migration:
+Eine vollständige Migration durchführen:
 
 ```ruby
 Import::OTRS.start
 ```
 
-Run a differential migration (only possible after finishing an earlier full
-migration):
+Führen Sie eine differenzielle Migration durch (nur möglich nach Abschluss einer früheren vollständigen
+Migration):
 
-All steps from "Set variables" +
+Alle Schritte ab "Variablen setzen" +
 
 ```ruby
 Setting.set('system_init_done', false)
@@ -516,33 +519,33 @@ Sie die Konsole der Browser-Version vorziehen.
 
 ::::tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nach der Installation von Zammad und der
+[Konfiguration Ihres Webservers](/de/tutorials/webserver-config) rufen Sie
+Zammads FQDN in Ihrem Browser auf und folgen dem Assistenten für die Migration. Sie finden
+ihn im Anmeldebildschirm, indem Sie auf den Link "Oder von einem anderen System migrieren"
+am unteren Rand klicken.
 
-Depending on the the number of users, tickets and Zendesk plan, this may take a
-while.
+Je nach Anzahl der Benutzer, Tickets und des Zendesk-Plans kann dies eine
+eine Weile dauern.
 
-=== Via Console
+=== Per Konsole
 
-Open console:
+Öffnen Sie die Konsole:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Variablen definieren. Ersetzen Sie die Werte in Klammern `{}` mit Ihren eigenen Werten:
 
 ```ruby
 subdomain = '{zendesk url}'
 ```
 
 ```ruby
-email = '{zendesk admin email address}'
+email = '{zendesk admin email-Adresse}'
 ```
 
 ```ruby
@@ -550,7 +553,7 @@ token = '{zendesk token}'
 
 ```
 
-Update Zammad settings:
+Zammad-Einstellungen aktualisieren:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -560,11 +563,11 @@ Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
 Setting.set('import_zendesk_endpoint_username', email)
 ```
 
-```ruby
+````ruby
 Setting.set('import_zendesk_endpoint_key', token)
 ```
 
-```ruby
+````ruby
 Setting.set('import_backend', 'zendesk')
 ```
 
@@ -572,33 +575,33 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Überprüfen Sie Ihre Konfiguration in einem Testlauf:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Run the migration:
+Führen Sie die Migration aus:
 
 ```ruby
-job = ImportJob.create(name: 'Import::Zendesk')
+Aufgabe = ImportJob.create(Name: 'Import::Zendesk')
 ```
 
 ```ruby
-AsyncImportJob.perform_later(job)
+AsyncImportJob.perform_later(aufgabe)
 ```
 
 :::tip
 
-Want to see the progress of the migration?
+Möchten Sie den Fortschritt der Migration verfolgen?
 
-Use
+Verwenden Sie
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Freshdesk')
+pp ImportJob.find_by(Name: 'Import::Freshdesk')
 ```
 
-which gives you an output of the current state of the job.
+Damit erhalten Sie eine Ausgabe des aktuellen Stands der Aufgabe.
 
 :::
 

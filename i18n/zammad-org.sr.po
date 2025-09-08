@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-27 08:43+0200\n"
-"PO-Revision-Date: 2025-08-18 15:00+0000\n"
+"POT-Creation-Date: 2025-09-08 12:18+0200\n"
+"PO-Revision-Date: 2025-09-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -2382,7 +2382,7 @@ msgstr "Примена нацрта преиначиће ваше неснимљ
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:217
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:84
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Откривање истовремене обраде"
@@ -3569,28 +3569,19 @@ msgstr "Расположење клијента (опционо)"
 #. type: Title ##
 #: src/en/documentation/use/guides/ai.md:36
 #, no-wrap
-msgid "AI Assistant Text Tools"
-msgstr ""
+msgid "Writing Assistant Tools"
+msgstr "Алатке помоћника писања"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:40
-msgid ""
-"The new AI-powered smart editor is designed to simplify and enhance your "
-"ticket response workflow. It helps you with text tools while you create an "
-"article."
-msgstr ""
-"Нови уредник текста са AI побољшањима је дизајниран да поједностави и "
-"унапреди ваш радни ток обраде тикета. Помаже вам преко текстуалних алатки "
-"док пишете чланак."
-
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:44
+#: src/en/documentation/use/guides/ai.md:43
 #, fuzzy
 msgid ""
-"To use any of the following features, you first have to select text you want "
-"to apply the changes to. After that, click the **AI Assistant text tools** "
-"button at the left side of the editor toolbar and choose one of the "
-"following functions, depending on what you want to perform."
+"The AI-powered writing assistant tools are designed to simplify and enhance "
+"your ticket response workflow while you create an article.  To use such a "
+"tool, you first have to select text you want to apply the changes to. After "
+"that, click the **Writing Assistant Tools** button at the left side of the "
+"editor toolbar and choose one of the following tools, depending on what you "
+"want to perform."
 msgstr ""
 "За коришћење излистаних функција, прво морате да обележите текст на који "
 "желите да се измене примене. Након тога, кликните на **Smart Editor** дугме "
@@ -3598,17 +3589,17 @@ msgstr ""
 "жељеног понашања."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:45
 #, fuzzy
 msgid ""
 "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/usage-"
-"guide-ai.cy.js/ai-ticket-smart-editor.png)"
+"guide-ai.cy.js/ai-writing-assistant-tools.png)"
 msgstr ""
 "![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:47
+#: src/en/documentation/use/guides/ai.md:46
 #, no-wrap
 msgid ""
 "\n"
@@ -3619,33 +3610,28 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:57
 msgid ""
-"**Improve writing**: Uses your text as a base and tries to improve it by "
-"enhancing clarity, conciseness and structure as well as removing "
-"misspellings and grammar issues."
+"Zammad ships default writing assistant tools. The availability depends on "
+"the configuration of your Zammad instance. You might even have additional "
+"custom tools in case your admin added them."
 msgstr ""
-"**Унапреди писање**: користи ваш текст као основу и покушава да га побољша "
-"унапређењем јасноће, прецизности и структуре, притом отклањајући грешке у "
-"правопису и граматици."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#: src/en/documentation/use/guides/ai.md:66
+#, fuzzy
+#| msgid ""
+#| "**Expand**: Expands your text while keeping your message. Useful if your "
+#| "customer expects more than some bullet points as an answer. You can even "
+#| "use it by providing only basic information (e.g. via bullet points) and "
+#| "let the AI write the answer."
 msgid ""
-"**Fix spelling and grammar**: Just proofreads your text and automatically "
-"removes spelling and grammar mistakes."
-msgstr ""
-"**Исправи правопис и граматику**: само лекторише ваш текст и аутоматски "
-"отклања грешке у правопису и граматици."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
-msgid ""
-"**Expand**: Expands your text while keeping your message. Useful if your "
-"customer expects more than some bullet points as an answer. You can even use "
-"it by providing only basic information (e.g. via bullet points) and let the "
-"AI write the answer."
+"**Expand draft into well-written section**: Uses your draft as a base and "
+"tries to elaborate a proper text. It tries to add a structure and to enhance "
+"clarity and conciseness and as well as removing misspellings and grammar "
+"errors. You can even use it by providing only basic information (e.g. via "
+"bullet points) and let the AI write the answer."
 msgstr ""
 "**Прошири**: проширује ваш текст притом одржавајући вашу мисао. Корисно је "
 "уколико ваш клијент очекује нешто више од пар ставки као одговор. Могуће је "
@@ -3653,22 +3639,40 @@ msgstr ""
 "тачкама) и пуштањем AI да напише одговор."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:63
+#: src/en/documentation/use/guides/ai.md:66
+#, fuzzy
+#| msgid ""
+#| "**Fix spelling and grammar**: Just proofreads your text and automatically "
+#| "removes spelling and grammar mistakes."
 msgid ""
-"**Simplify**: Does the opposite of the expansion and shrinks your text while "
-"keeping your message."
+"**Fix spelling and grammar**: Proofreads your text and removes spelling and "
+"grammar mistakes."
 msgstr ""
-"**Поједностави**: ради супротно од проширења и сажима ваш текст одржавајући "
-"вашу мисао."
+"**Исправи правопис и граматику**: само лекторише ваш текст и аутоматски "
+"отклања грешке у правопису и граматици."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:66
+msgid ""
+"**Summarize section to about half its current size**: Shrinks your text "
+"while keeping the message and the tone of the text."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:66
+msgid ""
+"**Rewrite complex section and make it easy to understand**: Removes "
+"unnecessary parts and rewrites your text in a clear and understandable way."
+msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:64
+#: src/en/documentation/use/guides/ai.md:67
 #, no-wrap
 msgid "AI Agents"
 msgstr "AI агенти"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:68
+#: src/en/documentation/use/guides/ai.md:71
 msgid ""
 "This is no feature which allows any agent interaction. However, if the "
 "feature is configured, you may notice it at some points. This is why you can "
@@ -3679,7 +3683,7 @@ msgstr ""
 "ћете објашњење овде."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:74
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. You "
 "may notice the AI agents at different locations:"
@@ -3688,13 +3692,13 @@ msgstr ""
 "задатака. Можете приметити AI агенте на различитим местима:"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:72
+#: src/en/documentation/use/guides/ai.md:75
 #, fuzzy, no-wrap
 msgid "Ticket History"
 msgstr "Историјат тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:76
+#: src/en/documentation/use/guides/ai.md:79
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -3705,12 +3709,12 @@ msgstr ""
 "агента, обавестите о томе свог Zammad администратора."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:81
 msgid "Example of a history entry of an AI agent:"
 msgstr "Пример евиденције историјата AI агента:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:83
 #, fuzzy
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
@@ -3720,7 +3724,7 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:86
+#: src/en/documentation/use/guides/ai.md:89
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
@@ -3733,12 +3737,12 @@ msgstr ""
 "сачекајте тренутак или пређите на други тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:91
 msgid "Avatar of AI agent:"
 msgstr "Сличица AI агента:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:93
 #, fuzzy
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
@@ -3747,13 +3751,13 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:94
 #, fuzzy, no-wrap
 msgid "Overview Indicator"
 msgstr "Прегледи"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:97
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
@@ -3762,7 +3766,7 @@ msgstr ""
 "стања ће бити приказан у плаво-љубичастом градијенту:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:95
+#: src/en/documentation/use/guides/ai.md:98
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
@@ -4121,7 +4125,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:357 src/en/tutorials/migrate.md:513
+#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:466
 #, no-wrap
 msgid "Limitations"
 msgstr "Ограничења"
@@ -4622,48 +4626,61 @@ msgid "Syntax"
 msgstr "Синтакса"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:51
-msgid "Search for a specific customer by using `customer.attribute`:"
+#: src/en/documentation/use/guides/search.md:50
+msgid "Search for a ticket of a specific customer:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:52
+#: src/en/documentation/use/guides/search.md:51
 #, no-wrap
 msgid "customer.firstname: John\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:57
+#: src/en/documentation/use/guides/search.md:56
 msgid "or:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:58
+#: src/en/documentation/use/guides/search.md:57
 #, no-wrap
 msgid "customer.lastname: Doe\n"
 msgstr ""
 
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:61
+#, no-wrap
+msgid "Combining Search Phrases"
+msgstr "Комбиновање фраза за претрагу"
+
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:63
+#: src/en/documentation/use/guides/search.md:65
 msgid ""
-"If you want to run a more complex search, you can use conditions with `()` "
-"and `AND`/`OR` options:"
+"You can combine search phrases by using `AND`, `OR` and `TO` and even "
+"separate them with `()`. If you want to exclude search results, you can use "
+"negation `!`."
 msgstr ""
 
-#. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:64
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:72
 #, no-wrap
-msgid "state.name: open AND (article.from:me OR article.from:somebody)\n"
+msgid ""
+"| Search phrase                                                                               | Description                                                                                                       |\n"
+"|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |\n"
+"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to \"Zammad\" |\n"
+"| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |\n"
+"| state.name:pending\\* AND article_count:\\[1 TO 5\\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:68
+#: src/en/documentation/use/guides/search.md:73
 #, no-wrap
 msgid "Additional Examples"
 msgstr "Додатни примери"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:79
+#: src/en/documentation/use/guides/search.md:83
 #, no-wrap
 msgid ""
 "| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |\n"
@@ -4675,32 +4692,6 @@ msgid ""
 "| article_count | 5 \\[5 TO 10\\] \\[5 TO \\*\\] \\[\\* TO 5\\] | article_count:5 article_count: \\[5 TO 10\\] article_count:\\[5 TO \\*\\] article_count:\\[\\* TO 5\\] | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed).                                                                                      |\n"
 "| article.from  | \\*bob\\*                               | article.from:\\*bob\\*                                                                           | Show all tickets that contain articles from \"Bob\"                                                                                                                                                                                                    |\n"
 "| article.body  | heat heat~ /joh?n(ath\\[oa\\]n)/        | article.body:heat article.body:heat~ articlebody:/joh?n(ath\\[oa\\]n)/                           | First example shows every ticket containing the word \"heat\" - you can also use the fuzzy operator \"~\" to search for similar words like e.g. like \"head\". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/guides/search.md:80
-#, no-wrap
-msgid "Combining Search Phrases"
-msgstr "Комбиновање фраза за претрагу"
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:85
-msgid ""
-"You can combine search phrases by using `AND`, `OR` and `TO` and even "
-"separate them with `()`. If you want to exclude search results, you can use "
-"negation `!`."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:91
-#, no-wrap
-msgid ""
-"| Search phrase                                                                               | Description                                                                                                       |\n"
-"|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
-"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback)                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |\n"
-"| state.name:(closed OR open) AND (priority.name:\"2 normal\" OR tags:feedback) AND !(_Zammad_) | This gets the same result as above, expect that we don't want the ticket to contain anything matching to \"Zammad\" |\n"
-"| owner.email:<bob@example.net> AND state.name:(open OR new)                                  | Show Tickets from <bob@example.net> that are either open or new                                                   |\n"
-"| state.name:pending\\* AND article_count:\\[1 TO 5\\]                                           | Show everything with any pending state and an article count of 1 to 5.                                            |\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -6265,7 +6256,7 @@ msgstr "Контактирајте нас"
 #, fuzzy
 msgid ""
 "For more information about our privacy practices, if you have questions, or "
-"if you would like to make a complaint, please contact us by e-mail at "
+"if you would like to make a complaint, please contact us by email at "
 "<info@zammad.org> or by mail using the details provided below:"
 msgstr ""
 "За више информација о нашој пракси заштите приватности, уколико имате питања "
@@ -6466,8 +6457,8 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:18
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
-#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:221
-#: src/en/tutorials/migrate.md:369 src/en/tutorials/migrate.md:528
+#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:481
 #: src/en/tutorials/reporting-grafana.md:26
 #, no-wrap
 msgid "Prerequisites"
@@ -6490,10 +6481,14 @@ msgstr "Подесите ваш сервер да правилно изврша�
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:27
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    ```sh\n"
+#| "    sysctl -w vm.max_map_count=262144\n"
+#| "    ```\n"
 msgid ""
 "    ```sh\n"
-"    sysctl -w vm.max_map_count=262144\n"
+"    sudo sysctl -w vm.max_map_count=262144\n"
 "    ```\n"
 msgstr ""
 "    ```sh\n"
@@ -6901,7 +6896,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:546
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid "\n"
 msgstr "\n"
@@ -7544,57 +7539,79 @@ msgid "Manage Services of Zammad"
 msgstr "Управљање Zammad сервисима"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:324
+#, fuzzy
+#| msgid ""
+#| "Zammad uses three services. They can be (re)started & stopped with the "
+#| "parent `zammad`:"
 msgid ""
-"Zammad uses three services. They can be (re)started & stopped with the "
-"parent `zammad`:"
+"Zammad uses three services. These services can be managed individually or "
+"all at once by using the parent **zammad**."
 msgstr ""
 "Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за "
 "основним `zammad` процесом:"
 
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:326
-#, no-wrap
-msgid "systemctl (status|start|stop|restart) zammad\n"
-msgstr "systemctl (status|start|stop|restart) zammad\n"
+#. type: Bullet: '- '
+#: src/en/get-started/installation/package.md:329
+msgid "zammad: includes the services below"
+msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:331
-msgid "Only internal puma server (relevant for displaying the web app):"
+#. type: Bullet: '  - '
+#: src/en/get-started/installation/package.md:329
+#, fuzzy
+#| msgid "Only internal puma server (relevant for displaying the web app):"
+msgid ""
+"**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr "Само интерни puma сервис (одговоран за приказ веб апликације):"
 
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:332
-#, no-wrap
-msgid "systemctl (status|start|stop|restart) zammad-web\n"
-msgstr "systemctl (status|start|stop|restart) zammad-web\n"
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:337
-msgid "Only background worker - relevant for all delayed- and background jobs:"
+#. type: Bullet: '  - '
+#: src/en/get-started/installation/package.md:329
+#, fuzzy
+#| msgid ""
+#| "Only background worker - relevant for all delayed- and background jobs:"
+msgid ""
+"**zammad-worker**: background worker - relevant for all delayed- and "
+"background jobs"
 msgstr ""
 "Само позадински процес - одговоран за извршавање свих одложених и задатке у "
 "позадини:"
 
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:338
-#, no-wrap
-msgid "systemctl (status|start|stop|restart) zammad-worker\n"
-msgstr "systemctl (status|start|stop|restart) zammad-worker\n"
-
-#. type: Plain text
-#: src/en/get-started/installation/package.md:343
-msgid "Only websocket server for session related information:"
+#. type: Bullet: '  - '
+#: src/en/get-started/installation/package.md:329
+#, fuzzy
+#| msgid "Only websocket server for session related information:"
+msgid "**zammad-websocket**: websocket server for session related information"
 msgstr "Само websocker сервис за информације о сесији:"
 
+#. type: Plain text
+#: src/en/get-started/installation/package.md:331
+msgid ""
+"Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
+"`status`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:333
+msgid "Example to start Zammad with all sub-services:"
+msgstr ""
+
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:344
-#, no-wrap
-msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
-msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
+#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/update.md:170 src/en/tutorials/migrate-host.md:169
+#, fuzzy, no-wrap
+#| msgid "systemctl start zammad\n"
+msgid "sudo systemctl start zammad\n"
+msgstr "systemctl start zammad\n"
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:339
+msgid ""
+"To stop or restart a service or to check its status, adjust the command as "
+"mentioned above."
+msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:348
+#: src/en/get-started/installation/package.md:340
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:170
 #, no-wrap
@@ -7602,7 +7619,7 @@ msgid "Next Steps"
 msgstr "Следећи кораци"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:345
 msgid ""
 "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
 "config-elasticsearch))"
@@ -7611,7 +7628,7 @@ msgstr ""
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:345
 msgid ""
 "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-"
 "selinux))"
@@ -7620,18 +7637,18 @@ msgstr ""
 "firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:345
 msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgstr "Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:346
 #, no-wrap
 msgid "Dependencies"
 msgstr "Предуслови"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:352
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -7644,24 +7661,24 @@ msgstr ""
 "инсталиран."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:358
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:358
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:358
 #: src/en/reference/environment-variables.md:60
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:358
 #: src/en/reference/environment-variables.md:72
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -7669,20 +7686,20 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:366
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:383
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:367
+#: src/en/get-started/installation/package.md:359
 #, no-wrap
 msgid "Database Server"
 msgstr "Сервис базе података"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:364
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
@@ -7691,7 +7708,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:373
+#: src/en/get-started/installation/package.md:365
 #: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
@@ -7706,28 +7723,28 @@ msgstr ""
 "подржан и може довести до грешака приликом миграције базе података.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:380
+#: src/en/get-started/installation/package.md:372
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Прокси приступа"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:375
 msgid "The following reverse proxies are supported:"
 msgstr "Следеће опције проксија приступа су подржане:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:386
+#: src/en/get-started/installation/package.md:378
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:386
+#: src/en/get-started/installation/package.md:378
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:390
+#: src/en/get-started/installation/package.md:382
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -7736,7 +7753,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:388
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  The installation and "
@@ -7746,13 +7763,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:397
+#: src/en/get-started/installation/package.md:389
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:396
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -7762,18 +7779,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:406
+#: src/en/get-started/installation/package.md:398
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:408
+#: src/en/get-started/installation/package.md:400
 #, fuzzy
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Први кораци са Zammad-ом"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:409
+#: src/en/get-started/installation/package.md:401
 #, no-wrap
 msgid ""
 "\n"
@@ -7792,7 +7809,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:420
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -7800,13 +7817,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:421
 #, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:425
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -7815,7 +7832,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:437
+#: src/en/get-started/installation/package.md:429
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -7825,7 +7842,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:432
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -7833,7 +7850,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:443
+#: src/en/get-started/installation/package.md:435
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -7841,13 +7858,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:444
+#: src/en/get-started/installation/package.md:436
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:449
+#: src/en/get-started/installation/package.md:441
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -8058,9 +8075,10 @@ msgstr "Преузмите Zammad"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:30 src/en/tutorials/migrate-host.md:54
-#, no-wrap
-msgid "systemctl stop zammad\n"
-msgstr ""
+#, fuzzy, no-wrap
+#| msgid "systemctl start zammad\n"
+msgid "sudo systemctl stop zammad\n"
+msgstr "systemctl start zammad\n"
 
 #. type: Title ###
 #: src/en/get-started/update.md:34
@@ -8102,31 +8120,31 @@ msgid ""
 "Update package lists:\n"
 "\n"
 "```sh\n"
-"apt update\n"
+"sudo apt update\n"
 "```\n"
 "\n"
 "Disable updates for Zammad:\n"
 "\n"
 "```sh\n"
-"apt-mark hold zammad\n"
+"sudo apt-mark hold zammad\n"
 "```\n"
 "\n"
 "Update all packages except Zammad:\n"
 "\n"
 "```sh\n"
-"apt upgrade\n"
+"sudo apt upgrade\n"
 "```\n"
 "\n"
 "Re-enable updates for Zammad:\n"
 "\n"
 "```sh\n"
-"apt-mark unhold zammad\n"
+"sudo apt-mark unhold zammad\n"
 "```\n"
 "\n"
 "Update Zammad:\n"
 "\n"
 "```sh\n"
-"apt upgrade\n"
+"sudo apt upgrade\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
@@ -8134,31 +8152,31 @@ msgid ""
 "Update package lists:\n"
 "\n"
 "```sh\n"
-"zypper refresh\n"
+"sudo zypper refresh\n"
 "```\n"
 "\n"
 "Disable updates for Zammad:\n"
 "\n"
 "```sh\n"
-"zypper addlock zammad\n"
+"sudo zypper addlock zammad\n"
 "```\n"
 "\n"
 "Update all packages except Zammad:\n"
 "\n"
 "```sh\n"
-"zypper update\n"
+"sudo zypper update\n"
 "```\n"
 "\n"
 "Re-enable updates for Zammad:\n"
 "\n"
 "```sh\n"
-"zypper removelock zammad\n"
+"sudo zypper removelock zammad\n"
 "```\n"
 "\n"
 "Update Zammad:\n"
 "\n"
 "```sh\n"
-"zypper update\n"
+"sudo zypper update\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
@@ -8166,19 +8184,19 @@ msgid ""
 "Update package lists:\n"
 "\n"
 "```sh\n"
-"yum check-update\n"
+"sudo yum check-update\n"
 "```\n"
 "\n"
 "Update all packages except Zammad:\n"
 "\n"
 "```sh\n"
-"yum upgrade --exclude zammad\n"
+"sudo yum upgrade --exclude zammad\n"
 "```\n"
 "\n"
 "Update Zammad:\n"
 "\n"
 "```sh\n"
-"yum upgrade\n"
+"sudo yum upgrade\n"
 "```\n"
 "\n"
 msgstr ""
@@ -8257,12 +8275,6 @@ msgstr ""
 #, fuzzy, no-wrap
 msgid "Start Zammad"
 msgstr "Преузмите Zammad"
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/update.md:170 src/en/tutorials/migrate-host.md:169
-#, no-wrap
-msgid "systemctl start zammad\n"
-msgstr "systemctl start zammad\n"
 
 #. type: Title ##
 #: src/en/get-started/update.md:174
@@ -8552,13 +8564,13 @@ msgid ""
 "\n"
 "=== Debian & Ubuntu\n"
 "\n"
-"```sh\n"
+"```ansi\n"
 "/etc/postgresql/{your version}/main/postgresql.conf\n"
 "```\n"
 "\n"
 "=== CentOS & OpenSUSE\n"
 "\n"
-"```plain\n"
+"```ansi\n"
 "/var/lib/pgsql/data/postgresql.conf\n"
 "```\n"
 "\n"
@@ -8628,8 +8640,9 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/reference/config-db-server.md:71
 #: src/en/reference/config-db-server.md:103
-#, no-wrap
-msgid "systemctl restart postgresql zammad\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl restart postgresql zammad\n"
+msgid "sudo systemctl restart postgresql zammad\n"
 msgstr "systemctl restart postgresql zammad\n"
 
 #. type: Title ##
@@ -8874,7 +8887,7 @@ msgstr ""
 msgid "Output:"
 msgstr ""
 
-#. type: Fenced code block (ruby)
+#. type: Fenced code block (ansi)
 #: src/en/reference/console.md:121
 #, no-wrap
 msgid "[4, 3, 2]\n"
@@ -8941,7 +8954,7 @@ msgstr ""
 msgid "Above will return both, the type ID and name - e.g.:"
 msgstr ""
 
-#. type: Fenced code block (ruby)
+#. type: Fenced code block (ansi)
 #: src/en/reference/console.md:157
 #, no-wrap
 msgid "`[[1, \"new\"], [2, \"open\"], ...`.\n"
@@ -9632,14 +9645,14 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/console.md:524
 #, no-wrap
-msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
+msgid "Send All Outgoing EMails to a BCC-Mailbox"
 msgstr ""
 
 #. type: Plain text
 #: src/en/reference/console.md:530
 msgid ""
-"This option allows you to send all outgoing E-Mails (not notifications)  to "
-"a specific mailbox. Please note that this shouldn't be a mailbox you're "
+"This option allows you to send all outgoing emails (not notifications)  to a "
+"specific mailbox. Please note that this shouldn't be a mailbox you're "
 "importing already! This will apply to all groups and is a global setting."
 msgstr ""
 
@@ -9735,7 +9748,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:573
-msgid "`email-out` (Sending an E-Mail out)."
+msgid "`email-out` (Sending an email out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9775,17 +9788,17 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:594
-msgid "Incoming Calls `:\"phone-in\"=>\"\"`"
+msgid "Incoming Calls `:\"phone-in\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:594
-msgid "Outgoing Calls `:\"phone-out\"=>\"\"`"
+msgid "Outgoing Calls `:\"phone-out\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:594
-msgid "Outgoing E-Mails `:\"email-out\"=>\"\"`"
+msgid "Outgoing emails `:\"email-out\"=>\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9793,9 +9806,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
-"      :\"phone-in\"=>\"You're about to note a incoming phone call.\",\n"
-"      :\"phone-out\"=>\"You're about to note an outgoing phone call.\",\n"
-"      :\"email-out\"=>\"You're going to send out an E-Mail.\"\n"
+"      :\"phone-in\"  => \"You're about to note a incoming phone call.\",\n"
+"      :\"phone-out\" => \"You're about to note an outgoing phone call.\",\n"
+"      :\"email-out\" => \"You're going to send out an email.\"\n"
 "   })\n"
 msgstr ""
 
@@ -9804,7 +9817,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "You can use those three sub-settings independently, if you e.g. don't\n"
-"need a warning on incoming calls, simply leave out `:\"phone-in\"=>\"\"`\n"
+"need a warning on incoming calls, simply leave out `:\"phone-in\"=>\"`\n"
 "out of the setting. The setting itself is done within an array ( `{}` ).\n"
 msgstr ""
 
@@ -9841,32 +9854,32 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Internal Notes `:\"note-internal\"=>\"\"`"
+msgid "Internal notes `:\"note-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Public Notes `:\"note-public\"=>\"\"`"
+msgid "Public notes `:\"note-public\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Internal Calls `:\"phone-internal\"=>\"\"`"
+msgid "Internal calls `:\"phone-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Public Calls `:\"phone-public\"=>\"\"`"
+msgid "Public calls `:\"phone-public\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Internal Emails `:\"email-internal\"=>\"\"`"
+msgid "Internal emails `:\"email-internal\"=>\"`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-msgid "Public Emails `:\"email-public\"=>\"\"`"
+msgid "Public emails `:\"email-public\"=>\"`"
 msgstr ""
 
 #. type: Fenced code block (ruby)
@@ -9874,12 +9887,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
-"      :\"note-internal\"=>\"You are writing an |internal note|, only people of your organization will see it.\",\n"
-"      :\"note-public\"=>\"You are writing a |public note|.\",\n"
+"      :\"note-internal\"  => \"You are writing an |internal note|, only people of your organization will see it.\",\n"
+"      :\"note-public\"    => \"You are writing a |public note|.\",\n"
 "      :\"phone-internal\" => \"You are writing an |internal phone note|, only people of your organization will see it.\",\n"
-"      :\"phone-public\"=>\"You are writing a |public phone note|.\",\n"
-"      :\"email-internal\" => \"You are writing an |internal Email|, only people of your organization will see it.\",\n"
-"      :\"email-public\"=>\"You are writing a |public Email|.\"\n"
+"      :\"phone-public\"   => \"You are writing a |public phone note|.\",\n"
+"      :\"email-internal\" => \"You are writing an |internal email|, only people of your organization will see it.\",\n"
+"      :\"email-public\"   => \"You are writing a |public email|.\"\n"
 "   })\n"
 msgstr ""
 
@@ -10199,7 +10212,7 @@ msgstr ""
 msgid "After editing the email, run:"
 msgstr ""
 
-#. type: Fenced code block (ruby)
+#. type: Fenced code block (sh)
 #: src/en/reference/console.md:802
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
@@ -10236,7 +10249,7 @@ msgid ""
 "database after exporting them with the following command:"
 msgstr ""
 
-#. type: Fenced code block (ruby)
+#. type: Fenced code block (sh)
 #: src/en/reference/console.md:822
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
@@ -10362,8 +10375,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
-"does upon removing users, please consider using Zammad's UI options in\n"
-"stead. You can find the data privacy feature in Zammad's admin interface under\n"
+"does upon removing users, please consider using Zammad's UI options instead.\n"
+"You can find the data privacy feature in Zammad's admin interface under\n"
 "_System > Data Privacy_.\n"
 msgstr ""
 
@@ -11365,7 +11378,7 @@ msgstr ""
 #: src/en/reference/environment-variables.md:133
 #, fuzzy, no-wrap
 #| msgid "systemctl start zammad\n"
-msgid "systemctl restart zammad\n"
+msgid "sudo systemctl restart zammad\n"
 msgstr "systemctl start zammad\n"
 
 #. type: Title #
@@ -15595,7 +15608,7 @@ msgid ""
 "**Visibility: internal doesn't mean it's silent**\n"
 "\n"
 "If you set an article to `internal: true` but choose to send an email,\n"
-"please be aware that said Email is still being sent out!\n"
+"please be aware that said email is still being sent out!\n"
 msgstr ""
 
 #. type: Title ###
@@ -18076,7 +18089,7 @@ msgid ""
 "of category}`"
 msgstr ""
 
-#. type: Fenced div block (details:)
+#. type: Fenced div block (details)
 #: src/en/reference/rest-api/knowledgebase.md:152
 #, no-wrap
 msgid ""
@@ -18142,7 +18155,7 @@ msgid ""
 "{ID of category}`"
 msgstr ""
 
-#. type: Fenced div block (details:)
+#. type: Fenced div block (details)
 #: src/en/reference/rest-api/knowledgebase.md:206
 #, no-wrap
 msgid ""
@@ -21538,8 +21551,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:131
-#, no-wrap
-msgid "systemctl status elasticsearch\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl status elasticsearch\n"
+msgid "sudo systemctl status elasticsearch\n"
 msgstr "systemctl status elasticsearch\n"
 
 #. type: Plain text
@@ -21568,8 +21582,9 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:148
 #: src/en/tutorials/connect-config-elasticsearch.md:179
-#, no-wrap
-msgid "systemctl restart elasticsearch\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl restart elasticsearch\n"
+msgid "sudo systemctl restart elasticsearch\n"
 msgstr "systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
@@ -22382,10 +22397,12 @@ msgstr ""
 msgid "Consider backup strategies for Zammad"
 msgstr ""
 
-#. type: Fenced div block (tip Are you still lost?)
+#. type: Fenced div block (tip)
 #: src/en/tutorials/first-steps.md:76
 #, no-wrap
 msgid ""
+"\n"
+"**Are you still lost?**\n"
 "\n"
 "If you need help or you'll need to get in production a lot faster, you can also\n"
 "book workshops with one of our\n"
@@ -22450,12 +22467,12 @@ msgid ""
 "==== Ubuntu/Debian\n"
 "\n"
 "```sh\n"
-"apt install apt-transport-https sudo wget curl gnupg\n"
+"sudo apt install apt-transport-https sudo wget curl gnupg\n"
 "```\n"
 "\n"
 "```sh\n"
 "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"gpg --dearmor | tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+"gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
 "```\n"
 "\n"
 msgstr ""
@@ -22496,7 +22513,7 @@ msgid ""
 "\n"
 "```sh\n"
 "echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
-"tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+"sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
 "```\n"
 "\n"
 msgstr ""
@@ -22507,17 +22524,17 @@ msgstr ""
 msgid ""
 "\n"
 "```sh\n"
-"apt update\n"
+"sudo apt update\n"
 "```\n"
 "\n"
 "```sh\n"
-"apt install elasticsearch\n"
+"sudo apt install elasticsearch\n"
 "```\n"
 "\n"
 "==== OpenSUSE\n"
 "\n"
 "```sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "```sh\n"
@@ -22528,17 +22545,17 @@ msgid ""
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "enabled=1\n"
 "autorefresh=1\n"
-"type=rpm-md\"| tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
+"type=rpm-md\"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
 "```\n"
 "\n"
 "```sh\n"
-"zypper install elasticsearch\n"
+"sudo zypper install elasticsearch\n"
 "```\n"
 "\n"
 "==== CentOS\n"
 "\n"
 "```sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "```sh\n"
@@ -22549,11 +22566,11 @@ msgid ""
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "enabled=1\n"
 "autorefresh=1\n"
-"type=rpm-md\"| tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
+"type=rpm-md\"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
 "```\n"
 "\n"
 "```sh\n"
-"yum install -y elasticsearch\n"
+"sudo yum install -y elasticsearch\n"
 "```\n"
 "\n"
 "==== Direct Download\n"
@@ -22580,7 +22597,7 @@ msgstr ""
 msgid ""
 "Increase Virtual Memory Map Limit:\n"
 ":   ```sh\n"
-"    sysctl -w vm.max_map_count=262144\n"
+"    sudo sysctl -w vm.max_map_count=262144\n"
 "    ```\n"
 "<!-- markdownlint-disable MD046 -->\n"
 "Adjust `/etc/elasticsearch/elasticsearch.yml`:\n"
@@ -22625,7 +22642,7 @@ msgstr ""
 msgid ""
 "Enable it by default and start it:\n"
 ":   ```sh\n"
-"    systemctl enable elasticsearch --now\n"
+"    sudo systemctl enable elasticsearch --now\n"
 "    ```\n"
 msgstr ""
 
@@ -22739,8 +22756,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:50
-#, no-wrap
-msgid "systemctl disable zammad\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl disable zammad\n"
+msgid "sudo systemctl disable zammad\n"
 msgstr "systemctl disable zammad\n"
 
 #. type: Title ##
@@ -22870,21 +22888,21 @@ msgid ""
 "=== Debian & Ubuntu\n"
 "\n"
 "```sh\n"
-"dpkg -r --force-depends zammad\n"
+"sudo dpkg -r --force-depends zammad\n"
 "```\n"
 "\n"
 "```sh\n"
-"apt install zammad\n"
+"sudo apt install zammad\n"
 "```\n"
 "\n"
 "=== OpenSUSE\n"
 "\n"
 "``` sh\n"
-"zypper remove -R zammad\n"
+"sudo zypper remove -R zammad\n"
 "```\n"
 "\n"
 "```sh\n"
-"zypper install zammad\n"
+"sudo zypper install zammad\n"
 "```\n"
 "\n"
 msgstr ""
@@ -22923,8 +22941,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/migrate-host.md:163
-#, no-wrap
-msgid "systemctl status zammad\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl status zammad\n"
+msgid "sudo systemctl status zammad\n"
 msgstr "systemctl status zammad\n"
 
 #. type: Plain text
@@ -23113,15 +23132,15 @@ msgid "Freshdesk"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:60 src/en/tutorials/migrate.md:205
+#: src/en/tutorials/migrate.md:60 src/en/tutorials/migrate.md:204
 msgid ""
 "Please note Freshdesk specific limitations below. These are additional "
 "limitations to the general ones listed."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:527
+#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:480
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
 "a test import before to learn how long the migration will take."
@@ -23149,7 +23168,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on Zammad's login page."
@@ -23165,7 +23184,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:535
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:488
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -23173,15 +23192,15 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:231
-#: src/en/tutorials/migrate.md:436 src/en/tutorials/migrate.md:540
+#: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
+#: src/en/tutorials/migrate.md:389 src/en/tutorials/migrate.md:493
 #, no-wrap
 msgid "Import"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:236
-#: src/en/tutorials/migrate.md:545
+#: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
+#: src/en/tutorials/migrate.md:498
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
 "fairly big instance with a lot of data, you may want to consider using the "
@@ -23206,7 +23225,6 @@ msgid ""
 "\n"
 "Seeing the message \"_Interrupted by scheduler restart. Please restart manually\n"
 "or wait till next execution time._\"?\n"
-"\n"
 "If this message appears after providing your credentials, please be patient.\n"
 "The migration should start within 5 minutes.\n"
 "\n"
@@ -23221,54 +23239,54 @@ msgid ""
 "zammad run rails c\n"
 "```\n"
 "\n"
-"Set variables:\n"
+"Set variables, replace the values in `{}` with your own:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "subdomain = '{freshdesk subdomain}.freshdesk.com'\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "token = '{freshdesk token}'\n"
 "```\n"
 "\n"
 "Update Zammad settings for freshdesk import:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_freshdesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_freshdesk_endpoint_key', token)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_backend', 'freshdesk')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_mode', true)\n"
 "```\n"
 "\n"
 "Check your configuration in a dry run:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Sequencer.process('Import::Freshdesk::ConnectionTest')\n"
 "```\n"
 "\n"
 "Run the migration:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "job = ImportJob.create(name: 'Import::Freshdesk')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "AsyncImportJob.perform_later(job)\n"
 "```\n"
 "\n"
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:546
+#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid ""
 "\n"
@@ -23276,7 +23294,7 @@ msgid ""
 "\n"
 "Use\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "pp ImportJob.find_by(name: 'Import::Freshdesk')\n"
 "```\n"
 "\n"
@@ -23285,112 +23303,112 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:179 src/en/tutorials/migrate.md:333
-#: src/en/tutorials/migrate.md:495 src/en/tutorials/migrate.md:636
+#: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
+#: src/en/tutorials/migrate.md:448 src/en/tutorials/migrate.md:589
 #, no-wrap
 msgid "After Migration"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:498 src/en/tutorials/migrate.md:639
+#: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
+#: src/en/tutorials/migrate.md:451 src/en/tutorials/migrate.md:592
 msgid "Run the following commands:"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/tutorials/migrate.md:183 src/en/tutorials/migrate.md:337
-#: src/en/tutorials/migrate.md:499 src/en/tutorials/migrate.md:640
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
+#: src/en/tutorials/migrate.md:452 src/en/tutorials/migrate.md:593
 #, no-wrap
 msgid "Setting.set('import_mode', false)\n"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/tutorials/migrate.md:187 src/en/tutorials/migrate.md:341
-#: src/en/tutorials/migrate.md:503 src/en/tutorials/migrate.md:644
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
+#: src/en/tutorials/migrate.md:456 src/en/tutorials/migrate.md:597
 #, no-wrap
 msgid "Setting.set('system_init_done', true)\n"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/tutorials/migrate.md:191 src/en/tutorials/migrate.md:345
-#: src/en/tutorials/migrate.md:507 src/en/tutorials/migrate.md:648
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
+#: src/en/tutorials/migrate.md:460 src/en/tutorials/migrate.md:601
 #, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:197 src/en/tutorials/migrate.md:654
+#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:607
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
 "address and API token provided during the migration to login."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:200 src/en/tutorials/migrate.md:354
-#: src/en/tutorials/migrate.md:656
+#: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
+#: src/en/tutorials/migrate.md:609
 msgid ""
 "All other users will have to use the password reset function or login "
 "methods like LDAP or one click logins."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:201
+#: src/en/tutorials/migrate.md:200
 #, no-wrap
 msgid "Kayako"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 msgid "Selfhosted installations (Kayako classic) are not supported."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 msgid ""
 "The following ticket field customizations are being ignored (affects “Scale” "
 "plan):"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 #, fuzzy
 msgid "Custom ticket states"
 msgstr "Стање тикета"
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 #, fuzzy
 msgid "Custom ticket priorities"
 msgstr "Приоритет тикета"
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 msgid "Custom ticket types"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 msgid ""
 "Important: Please note that migration speed highly depends on your Kayako "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:219
 msgid ""
 "Your Kayako plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:225
+#: src/en/tutorials/migrate.md:224
 msgid ""
 "Zammad requires API access which is why the migrator will request your "
 "Kayako-URL, email address and password."
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:226
+#: src/en/tutorials/migrate.md:225
 #, no-wrap
 msgid ""
 "Ensure to provide an user account with full administrative permissions. Less\n"
@@ -23398,7 +23416,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:237
+#: src/en/tutorials/migrate.md:236
 #, no-wrap
 msgid ""
 "\n"
@@ -23429,23 +23447,23 @@ msgid ""
 "zammad run rails c\n"
 "```\n"
 "\n"
-"Set variables:\n"
+"Set variables, replace the values in `{}` with your own:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "subdomain = '{kayako subdomain}.kayako.com'\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "email = '{kayako admin email address}'\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "password = '{kayako admin password}'\n"
 "```\n"
 "\n"
 "Update Zammad settings for Kayako import:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_kayako_endpoint', \"https://#{subdomain}/api/v1\")\n"
 "```\n"
 "\n"
@@ -23453,38 +23471,38 @@ msgid ""
 "Setting.set('import_kayako_endpoint_username', email)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_kayako_endpoint_password', password)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_backend', 'kayako')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_mode', true)\n"
 "```\n"
 "\n"
 "Check your configuration in a dry run:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Sequencer.process('Import::Kayako::ConnectionTest')\n"
 "```\n"
 "\n"
 "Run the migration:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "job = ImportJob.create(name: 'Import::Kayako')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "AsyncImportJob.perform_later(job)\n"
 "```\n"
 "\n"
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:237
+#: src/en/tutorials/migrate.md:236
 #, no-wrap
 msgid ""
 "\n"
@@ -23492,7 +23510,7 @@ msgid ""
 "\n"
 "Use\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "pp ImportJob.find_by(name: 'Import::Kayako')\n"
 "```\n"
 "\n"
@@ -23501,126 +23519,122 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:351
+#: src/en/tutorials/migrate.md:350
 msgid ""
 "Log in with the user whose login credentials you provided. Use the admins "
 "email address and password provided during the migration to login."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:355
+#: src/en/tutorials/migrate.md:354
 #, fuzzy, no-wrap
 msgid "OTRS"
 msgstr "Са OTRS"
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:360 src/en/tutorials/migrate.md:516
+#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:469
 msgid "Additional limitations to the general one:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:368
+#: src/en/tutorials/migrate.md:367
 msgid "Supported OTRS versions are: 3.1 - 6.x"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:368
+#: src/en/tutorials/migrate.md:367
 msgid ""
 "Password migration works for OTRS >= 3.3 only (on older instances a password "
 "reset within Zammad will be required)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:368
+#: src/en/tutorials/migrate.md:367
 msgid ""
 "If you plan to import a differential migration after the main one, do not "
 "change any data in Zammad!"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:368
+#: src/en/tutorials/migrate.md:367
 msgid "Only customers of tickets are imported"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:368
+#: src/en/tutorials/migrate.md:367
 msgid "Zammad expects your OTRS timestamps to be UTC and won't adjust them"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:372
-msgid "Install Znuny4OTRS-Repo:"
+#: src/en/tutorials/migrate.md:371
+#, no-wrap
+msgid "**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**\n"
 msgstr ""
 
-#. type: Fenced div block (tabs key:otrs)
-#: src/en/tutorials/migrate.md:373
-#, no-wrap
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:376
 msgid ""
-"\n"
-"=== OTRS 6\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm\n"
-"```\n"
-"\n"
-"=== OTRS 5\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm\n"
-"```\n"
-"\n"
-"=== OTRS 4\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm\n"
-"```\n"
-"\n"
-"=== OTRS 3\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm\n"
-"```\n"
-"\n"
+"[OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"Repo-6.0.76.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:376
+msgid ""
+"[OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"Repo-5.0.56.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:376
+msgid ""
+"[OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"Repo-4.0.25.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:376
+msgid ""
+"[OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"Repo-3.3.2.opm)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:402
-msgid "Install OTRS migration plugin:"
+#: src/en/tutorials/migrate.md:378
+#, no-wrap
+msgid "**Install OTRS migration plugin that matches your OTRS version:**\n"
 msgstr ""
 
-#. type: Fenced div block (tabs key:otrs)
-#: src/en/tutorials/migrate.md:403
-#, no-wrap
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:383
 msgid ""
-"\n"
-"=== OTRS 6\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm\n"
-"```\n"
-"\n"
-"=== OTRS 5\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm\n"
-"```\n"
-"\n"
-"=== OTRS 4\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm\n"
-"```\n"
-"\n"
-"=== OTRS 3\n"
-"\n"
-"```plain\n"
-"https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm\n"
-"```\n"
-"\n"
+"[OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-6.0.7.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:383
+msgid ""
+"[OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-5.0.4.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:383
+msgid ""
+"[OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-4.1.12.opm)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/migrate.md:383
+msgid ""
+"[OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
+"ZammadMigrator-3.0.33.opm)"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/migrate.md:431
+#: src/en/tutorials/migrate.md:384
 #, no-wrap
 msgid ""
 "In some cases restarting your webserver may help to solve internal server\n"
@@ -23628,7 +23642,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:438
+#: src/en/tutorials/migrate.md:391
 #, no-wrap
 msgid ""
 "\n"
@@ -23648,27 +23662,27 @@ msgid ""
 "\n"
 "Open console:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "zammad run rails c\n"
 "```\n"
 "\n"
-"Set variables (ensure to replace _xxx_ with your values):\n"
+"Set variables, replace the values in `{}` with your own:\n"
 "\n"
-"```sh\n"
-"Setting.set('import_otrs_endpoint', 'https://xxx/otrs/public.pl?Action=ZammadMigrator')\n"
+"```ruby\n"
+"Setting.set('import_otrs_endpoint', 'https://{domain}/otrs/public.pl?Action=ZammadMigrator')\n"
 "```\n"
 "\n"
-"```sh\n"
-"Setting.set('import_otrs_endpoint_key', 'xxx')\n"
+"```ruby\n"
+"Setting.set('import_otrs_endpoint_key', '{xxx}')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_mode', true)\n"
 "```\n"
 "\n"
 "Run a full migration:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Import::OTRS.start\n"
 "```\n"
 "\n"
@@ -23677,52 +23691,52 @@ msgid ""
 "\n"
 "All steps from \"Set variables\" +\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('system_init_done', false)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Import::OTRS.diff_worker\n"
 "```\n"
 "\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:511
+#: src/en/tutorials/migrate.md:464
 #, no-wrap
 msgid "Zendesk"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:527
+#: src/en/tutorials/migrate.md:480
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:527
+#: src/en/tutorials/migrate.md:480
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:527
+#: src/en/tutorials/migrate.md:480
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on the login page."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:527
+#: src/en/tutorials/migrate.md:480
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
 "before starting the migration."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:534
+#: src/en/tutorials/migrate.md:487
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API key]"
 "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
@@ -23731,7 +23745,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:546
+#: src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid ""
 "\n"
@@ -23754,56 +23768,56 @@ msgid ""
 "zammad run rails c\n"
 "```\n"
 "\n"
-"Set variables:\n"
+"Set variables, replace the values in `{}` with your own:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "subdomain = '{zendesk url}'\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "email = '{zendesk admin email address}'\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "token = '{zendesk token}'\n"
 "\n"
 "```\n"
 "\n"
 "Update Zammad settings:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_zendesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_zendesk_endpoint_username', email)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_zendesk_endpoint_key', token)\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_backend', 'zendesk')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Setting.set('import_mode', true)\n"
 "```\n"
 "\n"
 "Check your configuration in a dry run:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "Sequencer.process('Import::Zendesk::ConnectionTest')\n"
 "```\n"
 "\n"
 "Run the migration:\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "job = ImportJob.create(name: 'Import::Zendesk')\n"
 "```\n"
 "\n"
-"```sh\n"
+"```ruby\n"
 "AsyncImportJob.perform_later(job)\n"
 "```\n"
 "\n"
@@ -24671,7 +24685,7 @@ msgid ""
 "The output of the command above contains important data for Step 2e below:"
 msgstr ""
 
-#. type: Fenced code block (ansi)
+#. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:143
 #, no-wrap
 msgid ""
@@ -24684,7 +24698,7 @@ msgid ""
 "Key created.\n"
 "Output keytab to zammad.keytab:\n"
 "Keytab version: 0x502\n"
-"keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) // [!code focus]\n"
+"keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) # [!code focus]\n"
 msgstr ""
 
 #. type: Plain text
@@ -24750,8 +24764,9 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:183
-#, no-wrap
-msgid "systemctl stop nginx\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl stop nginx\n"
+msgid "sudo systemctl stop nginx\n"
 msgstr "systemctl stop nginx\n"
 
 #. type: Plain text
@@ -24762,7 +24777,7 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:189
 #, fuzzy, no-wrap
-msgid "systemctl disable nginx\n"
+msgid "sudo systemctl disable nginx\n"
 msgstr "$ systemctl disable nginx\n"
 
 #. type: Plain text
@@ -24786,19 +24801,19 @@ msgstr ""
 msgid ""
 "\n"
 "```sh\n"
-"systemctl stop apache2\n"
+"sudo systemctl stop apache2\n"
 "```\n"
 "\n"
 "```sh\n"
-"systemctl disable apache2\n"
+"sudo systemctl disable apache2\n"
 "```\n"
 "\n"
 "```sh\n"
-"systemctl enable nginx\n"
+"sudo systemctl enable nginx\n"
 "```\n"
 "\n"
 "```sh\n"
-"systemctl start nginx\n"
+"sudo systemctl start nginx\n"
 "```\n"
 "\n"
 msgstr ""
@@ -24831,27 +24846,27 @@ msgid ""
 "=== Debian & Ubuntu\n"
 "\n"
 "```sh\n"
-"apt update\n"
+"sudo apt update\n"
 "```\n"
 "\n"
 "```sh\n"
-"apt install krb5-user libapache2-mod-auth-gssapi\n"
+"sudo apt install krb5-user libapache2-mod-auth-gssapi\n"
 "```\n"
 "\n"
 "=== CentOS\n"
 "\n"
 "```sh\n"
-"yum install krb5-workstation mod_auth_kerb\n"
+"sudo yum install krb5-workstation mod_auth_kerb\n"
 "```\n"
 "\n"
 "=== OpenSUSE\n"
 "\n"
 "```sh\n"
-"zypper ref\n"
+"sudo zypper ref\n"
 "```\n"
 "\n"
 "```sh\n"
-"zypper install krb5-client apache2-mod_auth_kerb\n"
+"sudo zypper install krb5-client apache2-mod_auth_kerb\n"
 "```\n"
 "\n"
 msgstr ""
@@ -24881,7 +24896,7 @@ msgid ""
 "```\n"
 "\n"
 "```sh\n"
-"systemctl restart apache2\n"
+"sudo systemctl restart apache2\n"
 "```\n"
 "\n"
 "=== a2enmod (OpenSUSE)\n"
@@ -24891,7 +24906,7 @@ msgid ""
 "```\n"
 "\n"
 "```sh\n"
-"systemctl restart apache2\n"
+"sudo systemctl restart apache2\n"
 "```\n"
 "\n"
 "=== via configuration file (CentOS)\n"
@@ -25080,29 +25095,29 @@ msgid ""
 "=== Debian, Ubuntu, OpenSUSE\n"
 "\n"
 "```sh\n"
-"mv /root/zammad.keytab /etc/apache2/\n"
+"sudo mv /root/zammad.keytab /etc/apache2/\n"
 "```\n"
 "\n"
 "```sh\n"
-"chown root:www-data /etc/apache2/zammad.keytab\n"
+"sudo chown root:www-data /etc/apache2/zammad.keytab\n"
 "```\n"
 "\n"
 "```sh\n"
-"chmod 640 /etc/apache2/zammad.keytab\n"
+"sudo chmod 640 /etc/apache2/zammad.keytab\n"
 "```\n"
 "\n"
 "=== CentOS\n"
 "\n"
 "```sh\n"
-"mv /root/zammad.keytab /etc/httpd/\n"
+"sudo mv /root/zammad.keytab /etc/httpd/\n"
 "```\n"
 "\n"
 "```sh\n"
-"chown root:apache /etc/httpd/zammad.keytab\n"
+"sudo chown root:apache /etc/httpd/zammad.keytab\n"
 "```\n"
 "\n"
 "```sh\n"
-"chmod 640 /etc/httpd/zammad.keytab\n"
+"sudo chmod 640 /etc/httpd/zammad.keytab\n"
 "```\n"
 "\n"
 msgstr ""
@@ -25191,8 +25206,9 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
 #: src/en/tutorials/webserver-config.md:170
-#, no-wrap
-msgid "systemctl restart apache2\n"
+#, fuzzy, no-wrap
+#| msgid "systemctl restart apache2\n"
+msgid "sudo systemctl restart apache2\n"
 msgstr "systemctl restart apache2\n"
 
 #. type: Title ##
@@ -25601,7 +25617,7 @@ msgid ""
 "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
 "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
 "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-"    --reloadcmd     \"systemctl force-reload <webserver>\"\n"
+"    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
 "```\n"
 "\n"
 "From now on, acme.sh will automatically renew your installed certificates if\n"
@@ -25741,8 +25757,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:155
 msgid ""
-"Reload your nginx with `systemctl reload nginx` to apply your configuration "
-"changes."
+"Reload your nginx with `sudo systemctl reload nginx` to apply your "
+"configuration changes."
 msgstr ""
 
 #. type: Plain text
@@ -25928,9 +25944,50 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:276
 msgid ""
-"Reload your apache with `systemctl reload apache2` to apply your "
+"Reload your apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""
+
+#, no-wrap
+#~ msgid "systemctl (status|start|stop|restart) zammad\n"
+#~ msgstr "systemctl (status|start|stop|restart) zammad\n"
+
+#, no-wrap
+#~ msgid "systemctl (status|start|stop|restart) zammad-web\n"
+#~ msgstr "systemctl (status|start|stop|restart) zammad-web\n"
+
+#, no-wrap
+#~ msgid "systemctl (status|start|stop|restart) zammad-worker\n"
+#~ msgstr "systemctl (status|start|stop|restart) zammad-worker\n"
+
+#, no-wrap
+#~ msgid "systemctl (status|start|stop|restart) zammad-websocket\n"
+#~ msgstr "systemctl (status|start|stop|restart) zammad-websocket\n"
+
+#~ msgid ""
+#~ "The new AI-powered smart editor is designed to simplify and enhance your "
+#~ "ticket response workflow. It helps you with text tools while you create "
+#~ "an article."
+#~ msgstr ""
+#~ "Нови уредник текста са AI побољшањима је дизајниран да поједностави и "
+#~ "унапреди ваш радни ток обраде тикета. Помаже вам преко текстуалних алатки "
+#~ "док пишете чланак."
+
+#~ msgid ""
+#~ "**Improve writing**: Uses your text as a base and tries to improve it by "
+#~ "enhancing clarity, conciseness and structure as well as removing "
+#~ "misspellings and grammar issues."
+#~ msgstr ""
+#~ "**Унапреди писање**: користи ваш текст као основу и покушава да га "
+#~ "побољша унапређењем јасноће, прецизности и структуре, притом отклањајући "
+#~ "грешке у правопису и граматици."
+
+#~ msgid ""
+#~ "**Simplify**: Does the opposite of the expansion and shrinks your text "
+#~ "while keeping your message."
+#~ msgstr ""
+#~ "**Поједностави**: ради супротно од проширења и сажима ваш текст "
+#~ "одржавајући вашу мисао."
 
 #, fuzzy, no-wrap
 #~ msgid "Configuration via Environment Variables"

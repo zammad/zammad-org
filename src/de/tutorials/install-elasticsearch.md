@@ -66,7 +66,7 @@ Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg" | \
 sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null
 ```
 
-=== Legacy format
+=== Legacy Format
 
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
@@ -125,11 +125,11 @@ type=rpm-md"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo
 sudo yum install -y elasticsearch
 ```
 
-==== Direct Download
+==== Direkter Download
 
-Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the
-[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-for in-depth instructions.
+Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine
+[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+für weitergehende Informationen.
 
 :::::
 
@@ -138,12 +138,12 @@ Installieren Sie das Plugin "ingest-attachment":
     /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
     ```
 
-Increase Virtual Memory Map Limit:
+Erhöhen Sie das Virtual Memory Map Limit:
 :   ```sh
     sudo sysctl -w vm.max_map_count=262144
     ```
 <!-- markdownlint-disable MD046 -->
-Adjust `/etc/elasticsearch/elasticsearch.yml`:
+Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:
 :   ```
     # /etc/elasticsearch/elasticsearch.yml
 
@@ -168,7 +168,7 @@ Adjust `/etc/elasticsearch/elasticsearch.yml`:
     ```
 <!-- markdownlint-enable MD046 -->
 
-Enable it by default and start it:
+Aktivieren Sie es standardmäßig und starten Sie es:
 :   ```sh
     sudo systemctl enable elasticsearch --now
     ```

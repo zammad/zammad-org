@@ -323,27 +323,29 @@ sudo chmod -R 755 /opt/zammad/public/
 
 ### Zammad Services verwalten
 
-Zammad uses three services. These services can be managed individually or
-all at once by using the parent **zammad**.
+Zammad verwendet drei Dienste. Diese Dienste können einzeln oder alle auf
+einmal verwaltet werden, indem der übergeordnete Dienst **zammad** verwendet
+wird.
 
-- zammad: includes the services below
-  - **zammad-web**: internal puma server (relevant for displaying the web
-    app)
-  - **zammad-worker**: background worker - relevant for all delayed- and
-    background jobs
-  - **zammad-websocket**: websocket server for session related information
+- zammad: umfasst die folgenden Dienste
+  - **zammad-web**: interner Puma-Server (relevant für die Anzeige der
+    Webanwendung)
+  - **zammad-worker**: Hintergrund-Worker - relevant für alle verzögerten
+    Aufgaben sowie Hintergrundaufgaben
+  - **zammad-websocket**: Websocket-Server für sitzungsbezogene
+    Informationen
 
-Manage the services with `systemctl`'s commands `start`, `restart`, `stop`,
-`status`.
+Verwalten Sie die Dienste mit den `systemctl`-Befehlen `start`, `restart`,
+`stop`, `status`.
 
-Example to start Zammad with all sub-services:
+Beispiel für den Start von Zammad mit allen Diensten:
 
 ```sh
 sudo systemctl start zammad
 ```
 
-To stop or restart a service or to check its status, adjust the command as
-mentioned above.
+Um einen Dienst anzuhalten, neu zu starten oder dessen Status zu prüfen,
+passen Sie den Befehl wie oben beschrieben an.
 
 ### Nächste Schritte
 

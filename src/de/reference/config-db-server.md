@@ -36,13 +36,12 @@ Bedarf an.
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Others
+=== Andere
 
-Can't find your configuration files? You can run the following command
-to get the path:
+Sie können Ihre Konfigurationsdateien nicht finden? Ermitteln Sie den Pfad mit folgendem Befehl:
 
 ``` sh
-sudo -u postgres psql -c 'SHOW config_file'
+$ sudo -u postgres psql -c 'SHOW config_file'
 ```
 
 :::

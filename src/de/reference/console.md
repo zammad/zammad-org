@@ -602,8 +602,8 @@ tun.
 
 Sie können drei verschiedene Warnungen dafür verwenden:
 
-- Incoming Calls `:"phone-in"=>"`
-- Outgoing Calls `:"phone-out"=>"`
+- Eingehende Anrufe `:"phone-in"=>"`
+- Ausgehende Anrufe `:"phone-out"=>"`
 - Outgoing emails `:"email-out"=>"`
 
 ```ruby
@@ -615,9 +615,9 @@ Setting.set('ui_ticket_create_notes', {
 ```
 
 :::info
-You can use those three sub-settings independently, if you e.g. don't
-need a warning on incoming calls, simply leave out `:"phone-in"=>"`
-out of the setting. The setting itself is done within an array ( `{}` ).
+Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine
+Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: "phone-in"=>"`
+aus dem Befehl. Die Einstellung selbst wird in einem Hash (`{}`) vorgenommen.
 :::
 
 Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
@@ -910,10 +910,10 @@ Befehle löschen ohne weitere Warnungen.
 :::
 
 :::tip
-If you're not sure what to do and need to learn more about what Zammad
-does upon removing users, please consider using Zammad's UI options instead.
-You can find the data privacy feature in Zammad's admin interface under
-_System > Data Privacy_.
+Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
+beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
+verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
+_System > Datenschutz_.
 :::
 
 Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und

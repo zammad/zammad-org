@@ -39,17 +39,18 @@ Zusammenfassung die folgenden Abschnitte:
 - Anstehende Ereignisse (optional)
 - Stimmung des Kunden (optional)
 
-## Writing Assistant Tools
+## Schreibassistent-Werkzeuge
 
-The AI-powered writing assistant tools are designed to simplify and enhance
-your ticket response workflow while you create an article.  To use such a
-tool, you first have to select text you want to apply the changes to. After
-that, click the **Writing Assistant Tools** button at the left side of the
-editor toolbar and choose one of the following tools, depending on what you
-want to perform.
+Die KI-gestützten Schreibassistent-Werkzeuge wurden entwickelt, um Ihren
+Workflow bei der Erstellung eines Artikels beim Beantworten von Ticket zu
+vereinfachen. Um ein solches Werkzeug zu verwenden, markieren Sie zunächst
+den Text, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf
+die Schaltfläche **Schreibassist-Werkzeuge** auf der linken Seite der
+Symbolleiste des Editors und wählen Sie eines der Werkzeuge aus, je nachdem,
+was Sie durchführen möchten.
 
-![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Screenshot zeigt Zammads
+Schreibassistent-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
@@ -60,22 +61,26 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::
 
-Zammad ships default writing assistant tools. The availability depends on
-the configuration of your Zammad instance. You might even have additional
-custom tools in case your admin added them.
+Zammad liefert standardmäßig Schreibassistent-Werkzeuge mit. Die
+Verfügbarkeit hängt von der Konfiguration Ihrer Zammad-Instanz ab. Sie
+können sogar zusätzliche benutzerdefinierte Tools sehen, falls Ihr
+Administrator welche hinzugefügt hat.
 
-- **Expand draft into well-written section**: Uses your draft as a base and
-  tries to elaborate a proper text. It tries to add a structure and to
-  enhance clarity and conciseness and as well as removing misspellings and
-  grammar errors. You can even use it by providing only basic information
-  (e.g. via bullet points) and let the AI write the answer.
-- **Fix spelling and grammar**: Proofreads your text and removes spelling
-  and grammar mistakes.
-- **Summarize section to about half its current size**: Shrinks your text
-  while keeping the message and the tone of the text.
-- **Rewrite complex section and make it easy to understand**: Removes
-  unnecessary parts and rewrites your text in a clear and understandable
-  way.
+- **Entwurf in wohlformulierten Abschnitt wandeln**: Verwendet Ihren Entwurf
+  als Grundlage und versucht, einen ordentlichen Text auszuarbeiten. Das
+  Werkzeug versucht, eine Struktur hinzuzufügen, die Klarheit und Prägnanz
+  zu verbessern und Rechtschreib- sowie Grammatikfehler zu entfernen. Sie
+  können diese Funktion auch nutzen, indem Sie nur grundlegende
+  Informationen (z.B. in Form einer Auflistung) bereitstellen und die KI die
+  Antwort schreiben lassen.
+- **Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und
+  entfernt Rechtschreib- und Grammatikfehler.
+- **Zusammenfassen des Abschnitts auf ca. die halbe Länge**: Fasst Ihren
+  Text zusammen, wobei die Botschaft und der Ton des Textes erhalten
+  bleiben.
+- **Komplexen Abschnitt umformulieren und leicht verständlich machen**:
+  Entfernt überflüssige Teile und schreibt Ihren Text in einer klaren und
+  verständlichen Weise um.
 
 ## KI-Agenten
 

@@ -288,10 +288,10 @@ a2enmod auth_kerb rewrite
 sudo systemctl restart apache2
 ```
 
-=== via configuration file (CentOS)
+=== per Konfigurationsdatei (CentOS)
 
-add/uncomment the appropriate `LoadModule` statements in your Apache
-config:
+Ergänzen Sie oder entfernen Sie den Kommentar für `LoadModule` in
+der Apache Konfiguration:
 
 ```apache
 # /etc/httpd/conf/httpd.conf

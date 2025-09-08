@@ -84,9 +84,9 @@ finden Sie in dieser Dokumentation.
 
 :::tip
 
-**Are you still lost?**
+**Wissen Sie immer noch nicht weiter?
 
-If you need help or you'll need to get in production a lot faster, you can also
-book workshops with one of our
-[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.
+Wenn Sie Hilfe brauchen oder schneller in den Produktivbetrieg einsteigen wollen, können Sie auch
+Workshops mit einem unserer [Zammad Berater](https://zammad.com/en/company/contact){target=_blank}
+buchen.
 :::

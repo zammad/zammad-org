@@ -63,7 +63,7 @@ Elasticsearch-Attribute](/de/reference/es-indexed-attributes).
 
 ### Syntax
 
-Search for a ticket of a specific customer:
+Suche nach einem Ticket eines bestimmten Kunden:
 
 ```plain
 customer.firstname: John

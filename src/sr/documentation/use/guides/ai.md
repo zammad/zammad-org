@@ -38,7 +38,7 @@ sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png
 - Предстојећи догађаји (опционо)
 - Расположење клијента (опционо)
 
-## Writing Assistant Tools
+## Алатке помоћника писања
 
 The AI-powered writing assistant tools are designed to simplify and enhance
 your ticket response workflow while you create an article.  To use such a
