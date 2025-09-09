@@ -177,6 +177,12 @@ Modul dort nicht verfügbar ist.
 a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
 
+If you want to run Zammad under HTTP/2, you will also need:
+
+```sh
+a2enmod h2 proxy_http2 mpm_event
+```
+
 ```sh
 sudo systemctl restart apache2
 ```

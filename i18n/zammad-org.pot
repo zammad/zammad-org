@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-08 14:10+0000\n"
+"POT-Creation-Date: 2025-09-09 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,18 +215,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -20668,64 +20656,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:18
-#, markdown-text
-msgid ""
-"The following POST request fetches an existing summary, if there is one "
-"available in the ticket. If there is no summary available or the ticket was "
-"changed after the existing summary was created, a new summary is "
-"triggered. In such a case, you won’t get a response with the summary. To get "
-"a summary, you have to re-send the request with a small delay considering "
-"the AI job may take a few seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:20
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:21
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:28
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting a few seconds):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:29
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -20892,6 +20822,64 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:18
+#, markdown-text
+msgid ""
+"The following POST request fetches an existing summary, if there is one "
+"available in the ticket. If there is no summary available or the ticket was "
+"changed after the existing summary was created, a new summary is "
+"triggered. In such a case, you won’t get a response with the summary. To get "
+"a summary, you have to re-send the request with a small delay considering "
+"the AI job may take a few seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:20
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:28
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting a few seconds):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:29
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21335,6 +21323,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -26381,7 +26381,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
-#: src/en/tutorials/webserver-config.md:170
+#: src/en/tutorials/webserver-config.md:176
 #, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr ""
@@ -26894,7 +26894,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:206
+#: src/en/tutorials/webserver-config.md:212
 #, markdown-text
 msgid ""
 "Adjust the just copied file with a text editor of your choice (e.g. vi or "
@@ -26911,7 +26911,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:212
+#: src/en/tutorials/webserver-config.md:218
 #, markdown-text
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
@@ -26947,7 +26947,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:221
+#: src/en/tutorials/webserver-config.md:227
 #, no-wrap
 msgid ""
 "openssl dhparam -out <path>/dhparam.pem 4096\n"
@@ -26962,7 +26962,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:232
+#: src/en/tutorials/webserver-config.md:238
 #, markdown-text
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
@@ -26987,7 +26987,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:278
+#: src/en/tutorials/webserver-config.md:284
 #, markdown-text
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
@@ -27022,13 +27022,25 @@ msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:175
+#: src/en/tutorials/webserver-config.md:171
+#, markdown-text
+msgid "If you want to run Zammad under HTTP/2, you will also need:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/webserver-config.md:172
+#, no-wrap
+msgid "a2enmod h2 proxy_http2 mpm_event\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:181
 #, markdown-text
 msgid "Click to open details for CentOS config:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/tutorials/webserver-config.md:176
+#: src/en/tutorials/webserver-config.md:182
 #, no-wrap
 msgid ""
 "Add/uncomment the appropriate `LoadModule` statements in your Apache "
@@ -27048,13 +27060,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:192
+#: src/en/tutorials/webserver-config.md:198
 #, markdown-text, no-wrap
 msgid "Step 2 - Get a Current Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:196
+#: src/en/tutorials/webserver-config.md:202
 #, markdown-text
 msgid ""
 "The package installation copied a `zammad.conf` file to your webserver "
@@ -27062,25 +27074,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:198
+#: src/en/tutorials/webserver-config.md:204
 #, markdown-text
 msgid "Adjust your Apache config directory according to your setup:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:199
+#: src/en/tutorials/webserver-config.md:205
 #, no-wrap
 msgid "ls /etc/apache2/sites-available\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:203
+#: src/en/tutorials/webserver-config.md:209
 #, markdown-text, no-wrap
 msgid "Step 3 - Adjust the Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:209
+#: src/en/tutorials/webserver-config.md:215
 #, markdown-text
 msgid ""
 "Locate any `ServerName` directive and adjust `example.com` to the domain of "
@@ -27088,25 +27100,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 #, markdown-text
 msgid "`SSLCertificateFile` (your ssl certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 #, markdown-text
 msgid "`SSLCertificateKeyFile`(the certificates private key)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 #, markdown-text
 msgid "`SSLCertificateChainFile` (the public CA certificate)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:220
+#: src/en/tutorials/webserver-config.md:226
 #, markdown-text
 msgid ""
 "If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
@@ -27115,19 +27127,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:226
+#: src/en/tutorials/webserver-config.md:232
 #, markdown-text, no-wrap
 msgid "Step 4 - Adjust HTTPS Configuration"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:233
+#: src/en/tutorials/webserver-config.md:239
 #, markdown-text, no-wrap
 msgid "Step 5 - Enable the Site"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:237
+#: src/en/tutorials/webserver-config.md:243
 #, markdown-text
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
@@ -27135,7 +27147,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:238
+#: src/en/tutorials/webserver-config.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -27172,13 +27184,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:272
+#: src/en/tutorials/webserver-config.md:278
 #, markdown-text, no-wrap
 msgid "Step 6 - Save & Reload"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:276
+#: src/en/tutorials/webserver-config.md:282
 #, markdown-text
 msgid ""
 "Reload your apache with `sudo systemctl reload apache2` to apply your "
