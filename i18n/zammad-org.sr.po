@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-08 12:18+0200\n"
+"POT-Creation-Date: 2025-09-09 09:46+0200\n"
 "PO-Revision-Date: 2025-09-06 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -25205,7 +25205,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
-#: src/en/tutorials/webserver-config.md:170
+#: src/en/tutorials/webserver-config.md:176
 #, fuzzy, no-wrap
 #| msgid "systemctl restart apache2\n"
 msgid "sudo systemctl restart apache2\n"
@@ -25679,7 +25679,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:206
+#: src/en/tutorials/webserver-config.md:212
 msgid ""
 "Adjust the just copied file with a text editor of your choice (e.g. vi or "
 "nano)."
@@ -25694,7 +25694,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:212
+#: src/en/tutorials/webserver-config.md:218
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
 "you obtained. Adjust the following directives to match your setup:"
@@ -25725,7 +25725,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:221
+#: src/en/tutorials/webserver-config.md:227
 #, no-wrap
 msgid ""
 "openssl dhparam -out <path>/dhparam.pem 4096\n"
@@ -25740,7 +25740,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:232
+#: src/en/tutorials/webserver-config.md:238
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
 "may not fit your needs. Mozilla has a great [ssl-config generator](https://"
@@ -25763,7 +25763,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:278
+#: src/en/tutorials/webserver-config.md:284
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
 "the [first steps in Zammad](/en/tutorials/first-steps)."
@@ -25796,12 +25796,23 @@ msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:175
+#: src/en/tutorials/webserver-config.md:171
+msgid "If you want to run Zammad under HTTP/2, you will also need:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/webserver-config.md:172
+#, no-wrap
+msgid "a2enmod h2 proxy_http2 mpm_event\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:181
 msgid "Click to open details for CentOS config:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/tutorials/webserver-config.md:176
+#: src/en/tutorials/webserver-config.md:182
 #, no-wrap
 msgid ""
 "Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
@@ -25820,59 +25831,59 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:192
+#: src/en/tutorials/webserver-config.md:198
 #, no-wrap
 msgid "Step 2 - Get a Current Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:196
+#: src/en/tutorials/webserver-config.md:202
 msgid ""
 "The package installation copied a `zammad.conf` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:198
+#: src/en/tutorials/webserver-config.md:204
 msgid "Adjust your Apache config directory according to your setup:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:199
+#: src/en/tutorials/webserver-config.md:205
 #, no-wrap
 msgid "ls /etc/apache2/sites-available\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:203
+#: src/en/tutorials/webserver-config.md:209
 #, no-wrap
 msgid "Step 3 - Adjust the Config File"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:209
+#: src/en/tutorials/webserver-config.md:215
 msgid ""
 "Locate any `ServerName` directive and adjust `example.com` to the domain of "
 "your Zammad instance."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateFile` (your ssl certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateKeyFile`(the certificates private key)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateChainFile` (the public CA certificate)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:220
+#: src/en/tutorials/webserver-config.md:226
 msgid ""
 "If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
 "below to generate this file. You can find the correct path in your webserver "
@@ -25880,26 +25891,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:226
+#: src/en/tutorials/webserver-config.md:232
 #, no-wrap
 msgid "Step 4 - Adjust HTTPS Configuration"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:233
+#: src/en/tutorials/webserver-config.md:239
 #, no-wrap
 msgid "Step 5 - Enable the Site"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:237
+#: src/en/tutorials/webserver-config.md:243
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
 "`sites-available` folders."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:238
+#: src/en/tutorials/webserver-config.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -25936,13 +25947,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:272
+#: src/en/tutorials/webserver-config.md:278
 #, no-wrap
 msgid "Step 6 - Save & Reload"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:276
+#: src/en/tutorials/webserver-config.md:282
 msgid ""
 "Reload your apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."

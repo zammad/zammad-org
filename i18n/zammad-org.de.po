@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-08 12:18+0200\n"
-"PO-Revision-Date: 2025-09-08 14:10+0000\n"
+"POT-Creation-Date: 2025-09-09 09:46+0200\n"
+"PO-Revision-Date: 2025-09-10 11:01+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -6963,11 +6963,6 @@ msgstr "Kontakt"
 
 #. type: Plain text
 #: src/en/gdpr.md:107
-#, fuzzy
-#| msgid ""
-#| "For more information about our privacy practices, if you have questions, "
-#| "or if you would like to make a complaint, please contact us by e-mail at "
-#| "<info@zammad.org> or by mail using the details provided below:"
 msgid ""
 "For more information about our privacy practices, if you have questions, or "
 "if you would like to make a complaint, please contact us by email at "
@@ -10894,19 +10889,12 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/console.md:524
-#, fuzzy, no-wrap
-#| msgid "Send All Outgoing E-Mails to a BCC-Mailbox"
+#, no-wrap
 msgid "Send All Outgoing EMails to a BCC-Mailbox"
 msgstr "Alle ausgehenden E-Mails an ein BCC-Postfach senden"
 
 #. type: Plain text
 #: src/en/reference/console.md:530
-#, fuzzy
-#| msgid ""
-#| "This option allows you to send all outgoing E-Mails (not notifications)  "
-#| "to a specific mailbox. Please note that this shouldn't be a mailbox "
-#| "you're importing already! This will apply to all groups and is a global "
-#| "setting."
 msgid ""
 "This option allows you to send all outgoing emails (not notifications)  to a "
 "specific mailbox. Please note that this shouldn't be a mailbox you're "
@@ -11015,8 +11003,6 @@ msgstr "`phone-out` (ausgehender Anruf) und"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:573
-#, fuzzy
-#| msgid "`email-out` (Sending an E-Mail out)."
 msgid "`email-out` (Sending an email out)."
 msgstr "`email-out` (ausgehende E-Mail)."
 
@@ -11071,20 +11057,12 @@ msgstr "Ausgehende Anrufe `:\"phone-out\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:594
-#, fuzzy
-#| msgid "Outgoing E-Mails `:\"email-out\"=>\"`"
 msgid "Outgoing emails `:\"email-out\"=>\"`"
 msgstr "Ausgehende E-Mails `:\"email-out\"=>\"`"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:595
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Setting.set('ui_ticket_create_notes', {\n"
-#| "      :\"phone-in\"  => \"You're about to note a incoming phone call.\",\n"
-#| "      :\"phone-out\" => \"You're about to note an outgoing phone call.\",\n"
-#| "      :\"email-out\" => \"You're going to send out an E-Mail.\"\n"
-#| "   })\n"
+#, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
 "      :\"phone-in\"  => \"You're about to note a incoming phone call.\",\n"
@@ -11147,58 +11125,37 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Internal Notes `:\"note-internal\"=>\"`"
 msgid "Internal notes `:\"note-internal\"=>\"`"
 msgstr "Interne Notizen `: \"note-internal\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Public Notes `:\"note-public\"=>\"`"
 msgid "Public notes `:\"note-public\"=>\"`"
 msgstr "Öffentliche Notizen `:\"note-public\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Internal Calls `:\"phone-internal\"=>\"`"
 msgid "Internal calls `:\"phone-internal\"=>\"`"
 msgstr "Interne Anrufe `:\"phone-internal\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Public Calls `:\"phone-public\"=>\"`"
 msgid "Public calls `:\"phone-public\"=>\"`"
 msgstr "Öffentliche Anrufe `: \"phone-public\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Internal Emails `:\"email-internal\"=>\"`"
 msgid "Internal emails `:\"email-internal\"=>\"`"
 msgstr "Interne E-Mails `: \"email-intern\"=>\"`"
 
 #. type: Bullet: '- '
 #: src/en/reference/console.md:629
-#, fuzzy
-#| msgid "Public Emails `:\"email-public\"=>\"`"
 msgid "Public emails `:\"email-public\"=>\"`"
 msgstr "Öffentliche E-Mails `: \"email-public\"=>\"`"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/console.md:630
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Setting.set('ui_ticket_add_article_hint', {\n"
-#| "      :\"note-internal\"  => \"You are writing an |internal note|, only people of your organization will see it.\",\n"
-#| "      :\"note-public\"    => \"You are writing a |public note|.\",\n"
-#| "      :\"phone-internal\" => \"You are writing an |internal phone note|, only people of your organization will see it.\",\n"
-#| "      :\"phone-public\"   => \"You are writing a |public phone note|.\",\n"
-#| "      :\"email-internal\" => \"You are writing an |internal Email|, only people of your organization will see it.\",\n"
-#| "      :\"email-public\"   => \"You are writing a |public Email|.\"\n"
-#| "   })\n"
+#, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
 "      :\"note-internal\"  => \"You are writing an |internal note|, only people of your organization will see it.\",\n"
@@ -17904,12 +17861,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/articles.md:82
-#, fuzzy, no-wrap
-#| msgid ""
-#| "**Visibility: internal doesn't mean it's silent**\n"
-#| "\n"
-#| "If you set an article to `internal: true` but choose to send an email,\n"
-#| "please be aware that said Email is still being sent out!\n"
+#, no-wrap
 msgid ""
 "**Visibility: internal doesn't mean it's silent**\n"
 "\n"
@@ -30623,7 +30575,7 @@ msgstr "2g. Apache neu starten, um Änderungen zu übernehmen"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
-#: src/en/tutorials/webserver-config.md:170
+#: src/en/tutorials/webserver-config.md:176
 #, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr "sudo systemctl restart apache2\n"
@@ -31257,7 +31209,7 @@ msgstr "Schritt 2 - Anpassen der Konfig-Datei"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:206
+#: src/en/tutorials/webserver-config.md:212
 msgid ""
 "Adjust the just copied file with a text editor of your choice (e.g. vi or "
 "nano)."
@@ -31276,7 +31228,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:212
+#: src/en/tutorials/webserver-config.md:218
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
 "you obtained. Adjust the following directives to match your setup:"
@@ -31313,7 +31265,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:221
+#: src/en/tutorials/webserver-config.md:227
 #, no-wrap
 msgid ""
 "openssl dhparam -out <path>/dhparam.pem 4096\n"
@@ -31330,7 +31282,7 @@ msgstr "Schritt 3 - Anpassen der HTTPS-Konfiguration"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:232
+#: src/en/tutorials/webserver-config.md:238
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
 "may not fit your needs. Mozilla has a great [ssl-config generator](https://"
@@ -31360,7 +31312,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:278
+#: src/en/tutorials/webserver-config.md:284
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
 "the [first steps in Zammad](/en/tutorials/first-steps)."
@@ -31399,12 +31351,24 @@ msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:175
+#: src/en/tutorials/webserver-config.md:171
+msgid "If you want to run Zammad under HTTP/2, you will also need:"
+msgstr ""
+"Wenn Sie Zammad unter HTTP/2 laufen lassen möchten, benötigen Sie außerdem:"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/webserver-config.md:172
+#, no-wrap
+msgid "a2enmod h2 proxy_http2 mpm_event\n"
+msgstr "a2enmod h2 proxy_http2 mpm_event\n"
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:181
 msgid "Click to open details for CentOS config:"
 msgstr "Klicken Sie auf Details, um Infos der CentOS-Konfiguration zu öffnen:"
 
 #. type: Fenced div block (details)
-#: src/en/tutorials/webserver-config.md:176
+#: src/en/tutorials/webserver-config.md:182
 #, no-wrap
 msgid ""
 "Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
@@ -31436,13 +31400,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:192
+#: src/en/tutorials/webserver-config.md:198
 #, no-wrap
 msgid "Step 2 - Get a Current Config File"
 msgstr "Schritt 2 - Abrufen einer aktuellen Konfigurationsdatei"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:196
+#: src/en/tutorials/webserver-config.md:202
 msgid ""
 "The package installation copied a `zammad.conf` file to your webserver "
 "config directory. Check if it is present and do not rename this file!"
@@ -31452,25 +31416,25 @@ msgstr ""
 "vorhanden ist und benennen Sie diese Datei nicht um!"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:198
+#: src/en/tutorials/webserver-config.md:204
 msgid "Adjust your Apache config directory according to your setup:"
 msgstr ""
 "Passen Sie Ihr Apache-Konfigurationsverzeichnis entsprechend Ihrem Setup an:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:199
+#: src/en/tutorials/webserver-config.md:205
 #, no-wrap
 msgid "ls /etc/apache2/sites-available\n"
 msgstr "ls /etc/apache2/sites-available\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:203
+#: src/en/tutorials/webserver-config.md:209
 #, no-wrap
 msgid "Step 3 - Adjust the Config File"
 msgstr "Schritt 3 - Anpassen der Konfig-Datei"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:209
+#: src/en/tutorials/webserver-config.md:215
 msgid ""
 "Locate any `ServerName` directive and adjust `example.com` to the domain of "
 "your Zammad instance."
@@ -31479,22 +31443,22 @@ msgstr ""
 "Domain Ihrer Zammad-Instanz an."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateFile` (your ssl certificate)"
 msgstr "`SSLCertificateFile` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateKeyFile`(the certificates private key)"
 msgstr "`SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:216
+#: src/en/tutorials/webserver-config.md:222
 msgid "`SSLCertificateChainFile` (the public CA certificate)"
 msgstr "`SSLCertificateChainFile` (das öffentliche CA-Zertifikat)"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:220
+#: src/en/tutorials/webserver-config.md:226
 msgid ""
 "If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
 "below to generate this file. You can find the correct path in your webserver "
@@ -31506,19 +31470,19 @@ msgstr ""
 "`SSLOpenSSLConfCmd DHParameters`."
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:226
+#: src/en/tutorials/webserver-config.md:232
 #, no-wrap
 msgid "Step 4 - Adjust HTTPS Configuration"
 msgstr "Schritt 4 - Anpassen der HTTPS-Konfiguration"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:233
+#: src/en/tutorials/webserver-config.md:239
 #, no-wrap
 msgid "Step 5 - Enable the Site"
 msgstr "Schritt 5 - Aktivieren der Website"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:237
+#: src/en/tutorials/webserver-config.md:243
 msgid ""
 "This step mostly depends on your selected folders and should only affect "
 "`sites-available` folders."
@@ -31527,7 +31491,7 @@ msgstr ""
 "nur die `sites-available`-Ordner betreffen."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:238
+#: src/en/tutorials/webserver-config.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -31595,13 +31559,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/tutorials/webserver-config.md:272
+#: src/en/tutorials/webserver-config.md:278
 #, no-wrap
 msgid "Step 6 - Save & Reload"
 msgstr "Schritt 6 - Speichern und neu laden"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:276
+#: src/en/tutorials/webserver-config.md:282
 msgid ""
 "Reload your apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."
