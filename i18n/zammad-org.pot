@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-10 17:25+0200\n"
+"POT-Creation-Date: 2025-09-11 08:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7494,7 +7494,7 @@ msgid "Server Hardware"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:16
+#: src/en/get-started/installation/prerequisites.md:15
 #, markdown-text
 msgid ""
 "The hardware requirements vary depending on the scenario. This makes it hard "
@@ -7504,7 +7504,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:18
+#: src/en/get-started/installation/prerequisites.md:17
 #, markdown-text
 msgid ""
 "As an absolute minimum for basic usage with a PostgreSQL server, we "
@@ -7512,19 +7512,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:21
+#: src/en/get-started/installation/prerequisites.md:20
 #, markdown-text
 msgid "2 CPU cores"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:21
+#: src/en/get-started/installation/prerequisites.md:20
 #, markdown-text
 msgid "6 GB RAM (+4 GB for Elasticsearch)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:23
+#: src/en/get-started/installation/prerequisites.md:22
 #, markdown-text
 msgid ""
 "For an example scenario with up to 40 agents, a good starting point could "
@@ -7532,25 +7532,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:26
+#: src/en/get-started/installation/prerequisites.md:25
 #, markdown-text
 msgid "6 CPU cores"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:26
+#: src/en/get-started/installation/prerequisites.md:25
 #, markdown-text
 msgid "6 GB RAM (+6 GB for Elasticsearch)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/prerequisites.md:27
+#: src/en/get-started/installation/prerequisites.md:26
 #, markdown-text, no-wrap
 msgid "Server Software"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:31
+#: src/en/get-started/installation/prerequisites.md:29
 #, markdown-text
 msgid ""
 "Depending on the installation type, there are some prerequisites. They are "
@@ -7558,59 +7558,67 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:35
+#: src/en/get-started/installation/prerequisites.md:33
 #, markdown-text
 msgid "[Docker](docker)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:35
+#: src/en/get-started/installation/prerequisites.md:33
 #, markdown-text
 msgid "[Kubernetes](kubernetes)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:35
+#: src/en/get-started/installation/prerequisites.md:33
 #, markdown-text
 msgid "[Package](package)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/prerequisites.md:36
+#: src/en/get-started/installation/prerequisites.md:34
 #, markdown-text, no-wrap
 msgid "Client Requirements"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:40
+#: src/en/get-started/installation/prerequisites.md:38
 #, markdown-text
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is "
-"needed. The following browsers are supported:"
+"needed. The following browsers are supported in their latest stable version:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:45
+#: src/en/get-started/installation/prerequisites.md:43
 #, markdown-text
-msgid "Firefox 78+"
+msgid "Firefox"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:45
+#: src/en/get-started/installation/prerequisites.md:43
 #, markdown-text
-msgid "Chrome (and chromium based ) 83+"
+msgid "Chrome (and Chromium-based)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:45
+#: src/en/get-started/installation/prerequisites.md:43
 #, markdown-text
-msgid "Opera 69+"
+msgid "Opera"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:45
+#: src/en/get-started/installation/prerequisites.md:43
 #, markdown-text
-msgid "Safari 14.1+"
+msgid "Safari"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:46
+#, markdown-text
+msgid ""
+"This does not mean that Zammad will not work with other browsers or older "
+"versions, just that we do not test against or provide support for them."
 msgstr ""
 
 #. type: Plain text

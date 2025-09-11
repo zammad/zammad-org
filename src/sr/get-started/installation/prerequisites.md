@@ -37,12 +37,15 @@ title: Предуслови
 ## Предуслови клијента
 
 Because Zammad is a web application, only an up-to-date browser is
-needed. The following browsers are supported:
+needed. The following browsers are supported in their latest stable version:
 
-- Firefox 78+
-- Chrome (и базирани на chromium платформи) 83+
-- Opera 69+
-- Safari 14.1+
+- Firefox
+- Chrome (and Chromium-based)
+- Opera
+- Safari
+
+This does not mean that Zammad will not work with other browsers or older
+versions, just that we do not test against or provide support for them.
 
 Комуникација између клијента и сервера је заснована на web sockets. Неки
 firewall системи филтрирају ове конекције. Ово може довести то смањених

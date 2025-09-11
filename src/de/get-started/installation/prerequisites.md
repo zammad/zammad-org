@@ -37,13 +37,16 @@ jeweiligen Installationsanweisungen enthalten:
 
 ## Anforderungen an Clients
 
-Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser
-benötigt. Die folgenden Browser werden unterstützt:
+Because Zammad is a web application, only an up-to-date browser is
+needed. The following browsers are supported in their latest stable version:
 
-- Firefox 78+
-- Chrome (und chrome-basiert) 83+
-- Opera 69+
-- Safari 14.1+
+- Firefox
+- Chrome (and Chromium-based)
+- Opera
+- Safari
+
+This does not mean that Zammad will not work with other browsers or older
+versions, just that we do not test against or provide support for them.
 
 Die Kommunikation zwischen Client und Server erfolgt über
 Web-Sockets. Einige Firewalls können diese Verbindungen filtern. Dies kann
