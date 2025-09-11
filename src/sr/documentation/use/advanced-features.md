@@ -5,9 +5,9 @@ title: 'Напредне функције'
 
 # Напредне функције
 
-## Пречице на тастатури
-
-TODO
+This page covers useful features that would not make sense to cover on
+individual pages. Just keep reading, search the page or navigate to the
+desired section in the table of content on the right.
 
 ## Понашање при освежавању тикета
 

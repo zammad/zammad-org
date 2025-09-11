@@ -174,4 +174,5 @@ now.
 
 This was a brief introduction about how to work with Zammad if you are completely new to ticket systems. Knowing the
 basics of Zammad now, you can either start working or have a look at the [advanced features section](advanced-features)
-to become even more productive and use the full potential of Zammad. 🚀
+to become even more productive and use the full potential of Zammad. The different sections in the navigation menu might
+also include interesting content. 🚀

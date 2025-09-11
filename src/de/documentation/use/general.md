@@ -1,4 +1,20 @@
 ---
+features:
+  - 
+    details: 'If you are new to Zammad and ticketing software in general, first read the basics here.'
+    icon: 🙋
+    link: /en/documentation/use/start-using-zammad
+    title: 'Zammad Anfänger'
+  - 
+    details: 'If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar.'
+    icon: 🧑‍✈️
+    link: /en/documentation/use/advanced-features
+    title: 'Fortgeschrittener Benutzer'
+  - 
+    details: 'As an administrator, head over to the Manage Zammad section.'
+    icon: 🧑‍🔧
+    link: /de/documentation/manage-zammad/general
+    title: Administrator
 order: 1
 title: Allgemein
 ---
@@ -9,49 +25,23 @@ Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie
 Sie Zammad nutzen können, um noch besser mit Ihren Kollegen
 zusammenzuarbeiten!
 
-## Allgemein
-
 Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt
 es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
 Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
 allgemeine Erklärungen und Tipps.
 
-Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit befinden Sie sich im Abschnitt _Allgemein_ im Bereich
-_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um zu den gewünschten Informationen zu navigieren, oder die Suche in der Kopfzeile.
-Sie können die Suche auch mit dem Tastaturkürzel [[strg]] [[k]] aufrufen.
+This documentation is divided into different sections. Currently you are on
+the landing page of the user documentation.  Use the left sidebar to
+navigate to the desired section or use the search in the header or activate
+it by using its keyboard shortcut [[ctrl]] [[k]].
 
 :::tip
 
-Diese Benutzer-Dokumentation ist eingebettet in eine Gesamtdokumentation von Zammad. Da dieser Bereich für
-Benutzer gedacht ist, haben wir einige Anpassungen vorgenommen.
-
-- Die Suche ist nur auf Benutzer-Inhalte beschränkt. Falls Sie ein Administrator oder ein interessierter Benutzer sind, können Sie nach
-  Inhalten in der gesamten Dokumentation suchen. Aktivieren Sie dazu eine Seite außerhalb der Benutzer-Dokumentation (z.B.
-  [Einführung](/de/documentation/introduction)) oder klicken Sie einfach auf **Zammad Hub** in der oberen linken Ecke.
-- Die linke Navigations-Seitenleiste zeigt nur die Struktur der Benutzer-Inhalte an. Wenn Sie die gesamte Struktur
-  der Dokumentation sehen wollen, gilt dasselbe wie oben.
+This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed
+by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside
+the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a
+page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).
 
 :::
 
-## Zammad Anfänger
-
-Wenn Sie mit Zammad und Ticket-Software noch nicht vertraut sind, empfehlen
-wir Ihnen, einen Blick auf die Seite [Mit Zammad
-starten](start-using-zammad) zu werfen. Sie finden dort eine Beschreibung
-einiger wichtiger UI-Elemente sowie grundlegender Ticket-Attribute und wie
-man diese verwendet.
-
-## Fortgeschrittener Benutzer
-
-Wenn Sie bereits mit den Grundlagen von Zammad vertraut sind, sollten Sie
-einen Blick auf die Seite [Erweiterte Funktionen](advanced-features) werfen.
-
-Wenn Sie nicht finden können, was Sie suchen, versuchen Sie es mit der Suche
-im Header der Website.
-
-## Administrator
-
-Sie sind Administrator und möchten lernen, wie man Zammad konfiguriert und
-verwaltet? Dann gehen Sie zum Abschnitt [Zammad
-verwalten](/de/documentation/manage-zammad/general), schauen Sie sich die
-Anleitungen an und nutzen Sie die Suche.
+<VPDocFeatures />

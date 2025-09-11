@@ -229,8 +229,9 @@ auf _geschlossen_ setzen.
 
 ## Abschluss
 
-Dies war eine kurze Einführung in die Arbeit mit Zammad, wenn Sie völlig neu
-im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von Zammad
-kennen, können Sie entweder anfangen zu arbeiten oder einen Blick auf die
-[erweiterten Features](advanced-features) werfen, um noch produktiver zu
-werden und das volle Potential von Zammad zu nutzen. 🚀
+This was a brief introduction about how to work with Zammad if you are
+completely new to ticket systems. Knowing the basics of Zammad now, you can
+either start working or have a look at the [advanced features
+section](advanced-features)  to become even more productive and use the full
+potential of Zammad. The different sections in the navigation menu might
+also include interesting content. 🚀
