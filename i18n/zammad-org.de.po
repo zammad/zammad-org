@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-11 08:56+0200\n"
+"POT-Creation-Date: 2025-09-11 07:44+0000\n"
 "PO-Revision-Date: 2025-09-10 11:01+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -217,6 +217,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -23508,6 +23520,78 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgstr ""
+"`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:18
+msgid ""
+"The following POST request fetches an existing summary, if there is one "
+"available in the ticket. If there is no summary available or the ticket was "
+"changed after the existing summary was created, a new summary is triggered. "
+"In such a case, you won’t get a response with the summary. To get a summary, "
+"you have to re-send the request with a small delay considering the AI job "
+"may take a few seconds."
+msgstr ""
+"Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern im "
+"Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist oder das "
+"Ticket nach der Erstellung der bestehenden Zusammenfassung geändert wurde, "
+"wird eine neue Zusammenfassung getriggert. In einem solchen Fall erhalten "
+"Sie keine Antwort mit der Zusammenfassung. Um eine Zusammenfassung zu "
+"erhalten, müssen Sie die Anfrage mit einer kleinen Verzögerung erneut "
+"senden, um der KI-Aufgabe einige Sekunden für die Erstellung zu geben."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:20
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:28
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting a few seconds):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nach einigen Sekunden Wartezeit):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:29
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23730,78 +23814,6 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-msgstr ""
-"`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:18
-msgid ""
-"The following POST request fetches an existing summary, if there is one "
-"available in the ticket. If there is no summary available or the ticket was "
-"changed after the existing summary was created, a new summary is triggered. "
-"In such a case, you won’t get a response with the summary. To get a summary, "
-"you have to re-send the request with a small delay considering the AI job "
-"may take a few seconds."
-msgstr ""
-"Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern im "
-"Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist oder das "
-"Ticket nach der Erstellung der bestehenden Zusammenfassung geändert wurde, "
-"wird eine neue Zusammenfassung getriggert. In einem solchen Fall erhalten "
-"Sie keine Antwort mit der Zusammenfassung. Um eine Zusammenfassung zu "
-"erhalten, müssen Sie die Anfrage mit einer kleinen Verzögerung erneut "
-"senden, um der KI-Aufgabe einige Sekunden für die Erstellung zu geben."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:20
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:21
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:28
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting a few seconds):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nach einigen Sekunden Wartezeit):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:29
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -24342,18 +24354,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
