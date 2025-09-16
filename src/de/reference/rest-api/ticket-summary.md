@@ -9,15 +9,18 @@ title: 'Ticket Zusammenfassung'
 
 Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`
+`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`
 
-Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern im
-Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist oder das
-Ticket nach der Erstellung der bestehenden Zusammenfassung geändert wurde,
-wird eine neue Zusammenfassung getriggert. In einem solchen Fall erhalten
-Sie keine Antwort mit der Zusammenfassung. Um eine Zusammenfassung zu
-erhalten, müssen Sie die Anfrage mit einer kleinen Verzögerung erneut
-senden, um der KI-Aufgabe einige Sekunden für die Erstellung zu geben.
+The ticket summarize endpoint uses ``POST`` because creating and fetching
+the summary happen in a single operation:
+
+- If a summary exists, it is returned.
+- If a summary does not exist, creation is triggered in the background
+  (async job).
+
+Using ``GET`` would be incorrect since the call may also create data. If you
+want a summary to exist, call the endpoint; if it's not ready yet, retry
+after at least 30 seconds.
 
 Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade
 durch die Anfrage ausgelöst wurde:
@@ -28,8 +31,8 @@ durch die Anfrage ausgelöst wurde:
 
 :::
 
-Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe
-Ticket wie oben nach einigen Sekunden Wartezeit):
+Sample response for an existing summary (e.g. for the same ticket like above
+after waiting until creation has finished):
 
 ::: details
 
