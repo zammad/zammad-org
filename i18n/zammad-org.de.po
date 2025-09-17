@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-11 07:44+0000\n"
-"PO-Revision-Date: 2025-09-10 11:01+0000\n"
+"POT-Creation-Date: 2025-09-16 10:16+0200\n"
+"PO-Revision-Date: 2025-09-16 07:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -217,18 +217,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -1754,6 +1742,10 @@ msgid ""
 "individual pages. Just keep reading, search the page or navigate to the "
 "desired section in the table of content on the right."
 msgstr ""
+"Diese Seite deckt nützliche Funktionen ab, die auf einzelnen Seiten nicht "
+"sinnvoll wären. Lesen Sie einfach weiter, durchsuchen Sie die Seite oder "
+"navigieren Sie zu dem gewünschten Abschnitt im Inhaltsverzeichnis auf der "
+"rechten Seite."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:11
@@ -3490,14 +3482,13 @@ msgstr ""
 #: src/en/documentation/use/general.md:1
 #, no-wrap
 msgid "If you are new to Zammad and ticketing software in general, first read the basics here."
-msgstr ""
+msgstr "Wenn Sie neu in Zammad und in der Ticket-Software im Allgemeinen sind, lesen Sie zunächst hier die Grundlagen."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "/en/documentation/manage-zammad/general"
+#, no-wrap
 msgid "/en/documentation/use/start-using-zammad"
-msgstr "/de/documentation/manage-zammad/general"
+msgstr "/de/documentation/use/start-using-zammad"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/use/general.md:1
@@ -3507,17 +3498,15 @@ msgstr "Zammad Anfänger"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "If you are already familiar with the basics of Zammad, you should have a look at the [advanced features](advanced-features) page."
+#, no-wrap
 msgid "If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar."
-msgstr "Wenn Sie bereits mit den Grundlagen von Zammad vertraut sind, sollten Sie einen Blick auf die Seite [Erweiterte Funktionen](advanced-features) werfen."
+msgstr "Wenn Sie bereits mit den Grundlagen vertraut sind, lesen Sie hier weiter oder springen Sie direkt zu dem entsprechenden Abschnitt in der Navigations-Seitenleiste."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "/en/documentation/use/general"
+#, no-wrap
 msgid "/en/documentation/use/advanced-features"
-msgstr "/de/documentation/use/general"
+msgstr "/de/documentation/use/advanced-features"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/use/general.md:1
@@ -3529,7 +3518,7 @@ msgstr "Fortgeschrittener Benutzer"
 #: src/en/documentation/use/general.md:1
 #, no-wrap
 msgid "As an administrator, head over to the Manage Zammad section."
-msgstr ""
+msgstr "Schauen Sie sich als Administrator den Bereich \"Zammad verwalten\" an."
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/use/general.md:1
@@ -3567,26 +3556,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/general.md:30
-#, fuzzy
-#| msgid ""
-#| "This documentation is divided into different sections. Currently you are "
-#| "viewing the _General_ section in the\n"
-#| "_Documentation > Use Zammad_ section. Use the left sidebar to navigate to "
-#| "your desired information or the search in the\n"
-#| "header. You can even activate the search by using the keyboard shortcut "
-#| "[[ctrl]] [[k]].\n"
 msgid ""
 "This documentation is divided into different sections. Currently you are on "
 "the landing page of the user documentation.  Use the left sidebar to "
 "navigate to the desired section or use the search in the header or activate "
 "it by using its keyboard shortcut [[ctrl]] [[k]]."
 msgstr ""
-"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Derzeit "
-"befinden Sie sich im Abschnitt _Allgemein_ im Bereich\n"
-"_Dokumentation > Zammad verwenden_. Verwenden Sie die linke Seitenleiste, um "
-"zu den gewünschten Informationen zu navigieren, oder die Suche in der "
-"Kopfzeile.\n"
-"Sie können die Suche auch mit dem Tastaturkürzel [[strg]] [[k]] aufrufen.\n"
+"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Sie befinden "
+"sich derzeit auf der Startseite der Benutzer-Dokumentation.  Benutzen Sie "
+"die linke Seitenleiste, um zu dem gewünschten Abschnitt zu navigieren, "
+"öffnen die Suche im Kopfbereich oder aktivieren Sie diese mit dem "
+"Tastaturkürzel [[strg]] [[k]]."
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/general.md:31
@@ -3599,6 +3579,12 @@ msgid ""
 "page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
 "\n"
 msgstr ""
+"\n"
+"Diese Benutzer-Dokumentation ist Teil einer umfassenden Dokumentation von Zammad. Um sicherzustellen, dass Benutzer nicht mit für sie\n"
+"irrelevanten Informationen behelligt werden, ist die Suche auf den Inhalt dieses Bereichs beschränkt und die Navigations-Seitenleiste zeigt\n"
+"nur die Struktur des Bereichs. Um die gesamte Struktur zu sehen und/oder in der gesamten Dokumentation zu suchen, wechseln Sie einfach\n"
+"auf eine Seite außerhalb der Benutzerdokumentation (z.B. durch Klicken auf den **Zammad Hub** in der oberen linken Ecke).\n"
+"\n"
 
 #. type: Title #
 #: src/en/documentation/use/guides/ai.md:1
@@ -6677,13 +6663,6 @@ msgstr "Abschluss"
 
 #. type: Plain text
 #: src/en/documentation/use/start-using-zammad.md:178
-#, fuzzy
-#| msgid ""
-#| "This was a brief introduction about how to work with Zammad if you are "
-#| "completely new to ticket systems. Knowing the basics of Zammad now, you "
-#| "can either start working or have a look at the [advanced features section]"
-#| "(advanced-features)  to become even more productive and use the full "
-#| "potential of Zammad. 🚀"
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
@@ -6696,7 +6675,8 @@ msgstr ""
 "im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von Zammad "
 "kennen, können Sie entweder anfangen zu arbeiten oder einen Blick auf die "
 "[erweiterten Features](advanced-features) werfen, um noch produktiver zu "
-"werden und das volle Potential von Zammad zu nutzen. 🚀"
+"werden und das volle Potential von Zammad zu nutzen. Die verschiedenen "
+"Bereiche im Navigationsmenü könnten ebenfalls interessant sein. 🚀"
 
 #. type: Plain text
 #: src/en/gdpr.md:9
@@ -8900,44 +8880,33 @@ msgstr "Anforderungen an Clients"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:38
-#, fuzzy
-#| msgid ""
-#| "Because Zammad is a web application, only an up-to-date browser is "
-#| "needed. The following browsers are supported:"
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is needed. "
 "The following browsers are supported in their latest stable version:"
 msgstr ""
 "Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser benötigt. "
-"Die folgenden Browser werden unterstützt:"
+"Die folgenden Browser werden in der jeweils neuesten stabilen Version "
+"unterstützt:"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:43
-#, fuzzy
-#| msgid "Firefox 78+"
 msgid "Firefox"
-msgstr "Firefox 78+"
+msgstr "Firefox"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:43
-#, fuzzy
-#| msgid "Chrome (and chromium based ) 83+"
 msgid "Chrome (and Chromium-based)"
-msgstr "Chrome (und chrome-basiert) 83+"
+msgstr "Chrome (und Chromium-basiert)"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:43
-#, fuzzy
-#| msgid "Opera 69+"
 msgid "Opera"
-msgstr "Opera 69+"
+msgstr "Opera"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:43
-#, fuzzy
-#| msgid "Safari 14.1+"
 msgid "Safari"
-msgstr "Safari 14.1+"
+msgstr "Safari"
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:46
@@ -8945,6 +8914,8 @@ msgid ""
 "This does not mean that Zammad will not work with other browsers or older "
 "versions, just that we do not test against or provide support for them."
 msgstr ""
+"Das bedeutet nicht, dass Zammad mit anderen Browsern oder älteren Versionen "
+"nicht funktioniert, sondern nur, dass wir sie nicht testen und supporten."
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:48
@@ -23520,78 +23491,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-msgstr ""
-"`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:18
-msgid ""
-"The following POST request fetches an existing summary, if there is one "
-"available in the ticket. If there is no summary available or the ticket was "
-"changed after the existing summary was created, a new summary is triggered. "
-"In such a case, you won’t get a response with the summary. To get a summary, "
-"you have to re-send the request with a small delay considering the AI job "
-"may take a few seconds."
-msgstr ""
-"Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern im "
-"Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist oder das "
-"Ticket nach der Erstellung der bestehenden Zusammenfassung geändert wurde, "
-"wird eine neue Zusammenfassung getriggert. In einem solchen Fall erhalten "
-"Sie keine Antwort mit der Zusammenfassung. Um eine Zusammenfassung zu "
-"erhalten, müssen Sie die Anfrage mit einer kleinen Verzögerung erneut "
-"senden, um der KI-Aufgabe einige Sekunden für die Erstellung zu geben."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:20
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:21
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:28
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting a few seconds):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nach einigen Sekunden Wartezeit):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:29
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23814,6 +23713,93 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, fuzzy
+#| msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+"`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, fuzzy
+#| msgid ""
+#| "Sample response for an existing summary (e.g. for the same ticket like "
+#| "above after waiting a few seconds):"
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nach einigen Sekunden Wartezeit):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -24354,6 +24340,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -31581,6 +31579,23 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid ""
+#~ "The following POST request fetches an existing summary, if there is one "
+#~ "available in the ticket. If there is no summary available or the ticket "
+#~ "was changed after the existing summary was created, a new summary is "
+#~ "triggered. In such a case, you won’t get a response with the summary. To "
+#~ "get a summary, you have to re-send the request with a small delay "
+#~ "considering the AI job may take a few seconds."
+#~ msgstr ""
+#~ "Die folgende POST-Anfrage ruft eine vorhandene Zusammenfassung ab, sofern "
+#~ "im Ticket eine vorhanden ist. Wenn keine Zusammenfassung vorhanden ist "
+#~ "oder das Ticket nach der Erstellung der bestehenden Zusammenfassung "
+#~ "geändert wurde, wird eine neue Zusammenfassung getriggert. In einem "
+#~ "solchen Fall erhalten Sie keine Antwort mit der Zusammenfassung. Um eine "
+#~ "Zusammenfassung zu erhalten, müssen Sie die Anfrage mit einer kleinen "
+#~ "Verzögerung erneut senden, um der KI-Aufgabe einige Sekunden für die "
+#~ "Erstellung zu geben."
 
 #, no-wrap
 #~ msgid "Keyboard Shortcuts"

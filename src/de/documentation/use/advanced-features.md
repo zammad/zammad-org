@@ -5,9 +5,10 @@ title: 'Erweiterte Funktionen'
 
 # Erweiterte Funktionen
 
-This page covers useful features that would not make sense to cover on
-individual pages. Just keep reading, search the page or navigate to the
-desired section in the table of content on the right.
+Diese Seite deckt nützliche Funktionen ab, die auf einzelnen Seiten nicht
+sinnvoll wären. Lesen Sie einfach weiter, durchsuchen Sie die Seite oder
+navigieren Sie zu dem gewünschten Abschnitt im Inhaltsverzeichnis auf der
+rechten Seite.
 
 ## Verhalten bei Ticket-Aktualisierung
 

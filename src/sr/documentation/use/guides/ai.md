@@ -59,9 +59,9 @@ menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::
 
-Zammad ships default writing assistant tools. The availability depends on
-the configuration of your Zammad instance. You might even have additional
-custom tools in case your admin added them.
+Zammad долази са подразумеваним алаткама помоћника за писање. Доступност
+зависи од конфигурације ваше Zammad инстанце. Можете чак добити приступ и
+прилагођеним алаткама у случају да их је ваш администратор дефинисао.
 
 - **Expand draft into well-written section**: Uses your draft as a base and
   tries to elaborate a proper text. It tries to add a structure and to
