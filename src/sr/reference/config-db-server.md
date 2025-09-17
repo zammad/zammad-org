@@ -11,10 +11,9 @@ an existing PostgreSQL server and want to run Zammad's database there as
 well.
 
 ::: warning
-Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу
-да користите начин организације који је потпуно подржан у оквиру PostgreSQL. Обично је под
-називом „session connection pooling”. Начин организација на основу трансакција није
-подржан и може довести до грешака приликом миграције базе података.
+If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully
+compatible with PostgreSQL. Typically this is called "session connection pooling". Transaction-based connection pooling
+is not supported and may lead to errors during database migrations.
 :::
 
 Below you can the locations of the relevant PostgreSQL configuration files
@@ -37,8 +36,7 @@ where needed.
 
 === Others
 
-Can't find your configuration files? You can run the following command
-to get the path:
+Can't find your configuration files? You can run the following command to get the path:
 
 ``` sh
 sudo -u postgres psql -c 'SHOW config_file'
@@ -58,8 +56,24 @@ to other issues that are relevant to your PostgreSQL.
 
 ## Adjust `max_connections` (mandatory)
 
-Zammad will take up to 200 connections by default, with below command you
-can raise this limit fairly high.
+Zammad uses up to 200 connections by default. Depending on your setup and
+load, you may want to change this value.
+
+### Determine Value
+
+To help you determine a number, Zammad ships a function to calculate a
+suggestion. If executed, it asks you to input some integer values and
+additionally uses internally known values for the calculation. Be aware that
+the suggestion is instance specific. That means you must run the calculation
+on the system you want to adjust the `max_connection` value.
+
+Run it by using the command:
+
+``` sh
+rake zammad:db:max_connections
+```
+
+### Adjust Value
 
 Raise maximum allowed number of connections:
 
@@ -76,9 +90,8 @@ sudo systemctl restart postgresql zammad
 ## Adjust PostgreSQL for bigger instances (optional)
 
 ::: warning
-Check below settings first and ensure your system is able to provide
-the requirements! Below settings are what we found to be useful,
-everything else is out of scope of this documentation!
+Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found
+to be useful, everything else is out of scope of this documentation!
 :::
 
 Some caching improvements:
