@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-16 10:16+0200\n"
+"POT-Creation-Date: 2025-09-17 16:26+0200\n"
 "PO-Revision-Date: 2025-09-17 05:59+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -7699,7 +7699,6 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/installation/package.md:365
-#: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -8546,7 +8545,7 @@ msgid "Configure Database Server"
 msgstr "Сервис базе података"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:11
+#: src/en/reference/config-db-server.md:10
 msgid ""
 "This page should only enlighten the relevant parts for Zammad and is not "
 "meant to be a complete guide. It is only relevant for you if you are running "
@@ -8554,8 +8553,26 @@ msgid ""
 "well."
 msgstr ""
 
+#. type: Fenced div block (warning)
+#: src/en/reference/config-db-server.md:11
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If you use database connection pooling software like PgBouncer, make sure to\n"
+#| "use a pooling mode that is fully compatible with PostgreSQL. Typically this is\n"
+#| "called “session connection pooling”. Transaction-based connection pooling is\n"
+#| "not supported and may lead to errors during database migrations.\n"
+msgid ""
+"If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully\n"
+"compatible with PostgreSQL. Typically this is called \"session connection pooling\". Transaction-based connection pooling\n"
+"is not supported and may lead to errors during database migrations.\n"
+msgstr ""
+"Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу\n"
+"да користите начин организације који је потпуно подржан у оквиру PostgreSQL. Обично је под\n"
+"називом „session connection pooling”. Начин организација на основу трансакција није\n"
+"подржан и може довести до грешака приликом миграције базе података.\n"
+
 #. type: Plain text
-#: src/en/reference/config-db-server.md:22
+#: src/en/reference/config-db-server.md:19
 msgid ""
 "Below you can the locations of the relevant PostgreSQL configuration files "
 "to adjust. Keep in mind that versions may differ from your setup - adapt "
@@ -8563,7 +8580,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/config-db-server.md:23
+#: src/en/reference/config-db-server.md:20
 #, no-wrap
 msgid ""
 "\n"
@@ -8581,8 +8598,7 @@ msgid ""
 "\n"
 "=== Others\n"
 "\n"
-"Can't find your configuration files? You can run the following command\n"
-"to get the path:\n"
+"Can't find your configuration files? You can run the following command to get the path:\n"
 "\n"
 "``` sh\n"
 "sudo -u postgres psql -c 'SHOW config_file'\n"
@@ -8591,13 +8607,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:48
+#: src/en/reference/config-db-server.md:44
 #, no-wrap
 msgid "Adjust Pool Size"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:53
+#: src/en/reference/config-db-server.md:48
 msgid ""
 "Within `database.yml` (`config/` directory) you can define the allowed pool "
 "size. By default each Zammad process takes up to `50` connections (`pool: "
@@ -8605,7 +8621,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:57
+#: src/en/reference/config-db-server.md:51
 msgid ""
 "This should be fairly enough for _every_ use case. If you experience "
 "database connection timeouts or similar pool errors, this usually indicates "
@@ -8613,83 +8629,115 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:58
+#: src/en/reference/config-db-server.md:52
 #, no-wrap
 msgid "Adjust `max_connections` (mandatory)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:62
+#: src/en/reference/config-db-server.md:55
 msgid ""
-"Zammad will take up to 200 connections by default, with below command you "
-"can raise this limit fairly high."
+"Zammad uses up to 200 connections by default. Depending on your setup and "
+"load, you may want to change this value."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/config-db-server.md:56
+#, no-wrap
+msgid "Determine Value"
 msgstr ""
 
 #. type: Plain text
+#: src/en/reference/config-db-server.md:61
+msgid ""
+"To help you determine a number, Zammad ships a function to calculate a "
+"suggestion. If executed, it asks you to input some integer values and "
+"additionally uses internally known values for the calculation. Be aware that "
+"the suggestion is instance specific. That means you must run the calculation "
+"on the system you want to adjust the `max_connection` value."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:63
+msgid "Run it by using the command:"
+msgstr ""
+
+#. type: Fenced code block (sh)
 #: src/en/reference/config-db-server.md:64
+#, no-wrap
+msgid "rake zammad:db:max_connections\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/config-db-server.md:68
+#, no-wrap
+msgid "Adjust Value"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:71
 msgid "Raise maximum allowed number of connections:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:65
+#: src/en/reference/config-db-server.md:72
 #, no-wrap
 msgid "sed -i \"/max_connections/c\\max_connections = 2000\" <postgresql-configuration-file>\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:70
-#: src/en/reference/config-db-server.md:102
+#: src/en/reference/config-db-server.md:77
+#: src/en/reference/config-db-server.md:108
 msgid "Apply changes by restarting postgresql and Zammad (in this order):"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:71
-#: src/en/reference/config-db-server.md:103
+#: src/en/reference/config-db-server.md:78
+#: src/en/reference/config-db-server.md:109
 #, fuzzy, no-wrap
 #| msgid "systemctl restart postgresql zammad\n"
 msgid "sudo systemctl restart postgresql zammad\n"
 msgstr "systemctl restart postgresql zammad\n"
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:75
+#: src/en/reference/config-db-server.md:82
 #, no-wrap
 msgid "Adjust PostgreSQL for bigger instances (optional)"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/config-db-server.md:77
+#: src/en/reference/config-db-server.md:84
 #, no-wrap
 msgid ""
-"Check below settings first and ensure your system is able to provide\n"
-"the requirements! Below settings are what we found to be useful,\n"
-"everything else is out of scope of this documentation!\n"
+"Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found\n"
+"to be useful, everything else is out of scope of this documentation!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:84
+#: src/en/reference/config-db-server.md:90
 msgid "Some caching improvements:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:85
+#: src/en/reference/config-db-server.md:91
 #, no-wrap
 msgid "sed -i \"/shared_buffers/c\\shared_buffers = 2GB\" <postgresql-configuration-file>\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:89
+#: src/en/reference/config-db-server.md:95
 #, no-wrap
 msgid "sed -i \"/temp_buffers/c\\temp_buffers = 256MB\" <postgresql-configuration-file>\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:93
+#: src/en/reference/config-db-server.md:99
 #, no-wrap
 msgid "sed -i \"/work_mem/c\\work_mem = 10MB\" <postgresql-configuration-file>\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:97
+#: src/en/reference/config-db-server.md:103
 #, no-wrap
 msgid "sed -i \"/max_stack_depth/c\\max_stack_depth = 5MB\" <postgresql-configuration-file>\n"
 msgstr ""

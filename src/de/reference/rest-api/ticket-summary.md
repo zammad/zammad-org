@@ -9,18 +9,19 @@ title: 'Ticket Zusammenfassung'
 
 Erforderliche Berechtigung: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`
+`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`
 
-The ticket summarize endpoint uses ``POST`` because creating and fetching
-the summary happen in a single operation:
+Der Ticket-Endpunkt "summarize" verwendet ``POST``, da das Erstellen und
+Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:
 
-- If a summary exists, it is returned.
-- If a summary does not exist, creation is triggered in the background
-  (async job).
+- Wenn eine Zusammenfassung existiert, wird sie ausgegeben.
+- Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im
+  Hintergrund angestoßen (asynchrone Aufgabe).
 
-Using ``GET`` would be incorrect since the call may also create data. If you
-want a summary to exist, call the endpoint; if it's not ready yet, retry
-after at least 30 seconds.
+Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen
+kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie
+den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist,
+versuchen Sie es nach mindestens 30 Sekunden erneut.
 
 Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade
 durch die Anfrage ausgelöst wurde:
@@ -31,8 +32,8 @@ durch die Anfrage ausgelöst wurde:
 
 :::
 
-Sample response for an existing summary (e.g. for the same ticket like above
-after waiting until creation has finished):
+Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe
+Ticket wie oben nachdem die Zusammenfassung erstellt wurde):
 
 ::: details
 

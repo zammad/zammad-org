@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-16 10:16+0200\n"
-"PO-Revision-Date: 2025-09-16 07:00+0000\n"
+"POT-Creation-Date: 2025-09-17 16:26+0200\n"
+"PO-Revision-Date: 2025-09-18 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -8572,7 +8572,6 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/installation/package.md:365
-#: src/en/reference/config-db-server.md:12
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -9586,7 +9585,7 @@ msgid "Configure Database Server"
 msgstr "Datenbank-Server konfigurieren"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:11
+#: src/en/reference/config-db-server.md:10
 msgid ""
 "This page should only enlighten the relevant parts for Zammad and is not "
 "meant to be a complete guide. It is only relevant for you if you are running "
@@ -9598,8 +9597,26 @@ msgstr ""
 "wenn Sie einen bestehenden PostgreSQL-Server betreiben und die Datenbank von "
 "Zammad auch darin laufen lassen wollen."
 
+#. type: Fenced div block (warning)
+#: src/en/reference/config-db-server.md:11
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If you use database connection pooling software like PgBouncer, make sure to\n"
+#| "use a pooling mode that is fully compatible with PostgreSQL. Typically this is\n"
+#| "called “session connection pooling”. Transaction-based connection pooling is\n"
+#| "not supported and may lead to errors during database migrations.\n"
+msgid ""
+"If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully\n"
+"compatible with PostgreSQL. Typically this is called \"session connection pooling\". Transaction-based connection pooling\n"
+"is not supported and may lead to errors during database migrations.\n"
+msgstr ""
+"Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie\n"
+"einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. Typischerweise wird dies\n"
+"\"session connection pooling\" genannt. Transaktionsbasiertes connection pooling wird\n"
+"nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
+
 #. type: Plain text
-#: src/en/reference/config-db-server.md:22
+#: src/en/reference/config-db-server.md:19
 msgid ""
 "Below you can the locations of the relevant PostgreSQL configuration files "
 "to adjust. Keep in mind that versions may differ from your setup - adapt "
@@ -9610,8 +9627,31 @@ msgstr ""
 "Versionen von Ihrem Setup abweichen können - passen Sie sie bei Bedarf an."
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/config-db-server.md:23
-#, no-wrap
+#: src/en/reference/config-db-server.md:20
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Debian & Ubuntu\n"
+#| "\n"
+#| "```ansi\n"
+#| "/etc/postgresql/{your version}/main/postgresql.conf\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS & OpenSUSE\n"
+#| "\n"
+#| "```ansi\n"
+#| "/var/lib/pgsql/data/postgresql.conf\n"
+#| "```\n"
+#| "\n"
+#| "=== Others\n"
+#| "\n"
+#| "Can't find your configuration files? You can run the following command\n"
+#| "to get the path:\n"
+#| "\n"
+#| "``` sh\n"
+#| "sudo -u postgres psql -c 'SHOW config_file'\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Debian & Ubuntu\n"
@@ -9628,8 +9668,7 @@ msgid ""
 "\n"
 "=== Others\n"
 "\n"
-"Can't find your configuration files? You can run the following command\n"
-"to get the path:\n"
+"Can't find your configuration files? You can run the following command to get the path:\n"
 "\n"
 "``` sh\n"
 "sudo -u postgres psql -c 'SHOW config_file'\n"
@@ -9659,13 +9698,13 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:48
+#: src/en/reference/config-db-server.md:44
 #, no-wrap
 msgid "Adjust Pool Size"
 msgstr "Poolgröße anpassen"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:53
+#: src/en/reference/config-db-server.md:48
 msgid ""
 "Within `database.yml` (`config/` directory) you can define the allowed pool "
 "size. By default each Zammad process takes up to `50` connections (`pool: "
@@ -9676,7 +9715,7 @@ msgstr ""
 "Verbindungen auf (`Pool: 50`)."
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:57
+#: src/en/reference/config-db-server.md:51
 msgid ""
 "This should be fairly enough for _every_ use case. If you experience "
 "database connection timeouts or similar pool errors, this usually indicates "
@@ -9687,89 +9726,132 @@ msgstr ""
 "Regel auf andere Probleme Ihres PostgreSQL-Servers hin."
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:58
+#: src/en/reference/config-db-server.md:52
 #, no-wrap
 msgid "Adjust `max_connections` (mandatory)"
 msgstr "Anpassen von `max_connections` (erforderlich)"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:62
+#: src/en/reference/config-db-server.md:55
+#, fuzzy
+#| msgid ""
+#| "Zammad will take up to 200 connections by default, with below command you "
+#| "can raise this limit fairly high."
 msgid ""
-"Zammad will take up to 200 connections by default, with below command you "
-"can raise this limit fairly high."
+"Zammad uses up to 200 connections by default. Depending on your setup and "
+"load, you may want to change this value."
 msgstr ""
 "Zammad verwendet standardmäßig bis zu 200 Verbindungen, die Sie mit dem "
 "folgenden Befehl erhöhen können."
 
+#. type: Title ###
+#: src/en/reference/config-db-server.md:56
+#, no-wrap
+msgid "Determine Value"
+msgstr ""
+
 #. type: Plain text
+#: src/en/reference/config-db-server.md:61
+msgid ""
+"To help you determine a number, Zammad ships a function to calculate a "
+"suggestion. If executed, it asks you to input some integer values and "
+"additionally uses internally known values for the calculation. Be aware that "
+"the suggestion is instance specific. That means you must run the calculation "
+"on the system you want to adjust the `max_connection` value."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:63
+#, fuzzy
+#| msgid "Run the following commands:"
+msgid "Run it by using the command:"
+msgstr "Führen Sie die folgenden Befehle aus:"
+
+#. type: Fenced code block (sh)
 #: src/en/reference/config-db-server.md:64
+#, no-wrap
+msgid "rake zammad:db:max_connections\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/config-db-server.md:68
+#, fuzzy, no-wrap
+#| msgid "Adjust Pool Size"
+msgid "Adjust Value"
+msgstr "Poolgröße anpassen"
+
+#. type: Plain text
+#: src/en/reference/config-db-server.md:71
 msgid "Raise maximum allowed number of connections:"
 msgstr "Erhöhen Sie die maximal zulässige Anzahl von Verbindungen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:65
+#: src/en/reference/config-db-server.md:72
 #, no-wrap
 msgid "sed -i \"/max_connections/c\\max_connections = 2000\" <postgresql-configuration-file>\n"
 msgstr "sed -i \"/max_connections/c\\max_connections = 2000\" <postgresql-configuration-file>\n"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:70
-#: src/en/reference/config-db-server.md:102
+#: src/en/reference/config-db-server.md:77
+#: src/en/reference/config-db-server.md:108
 msgid "Apply changes by restarting postgresql and Zammad (in this order):"
 msgstr ""
 "Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten "
 "(in dieser Reihenfolge):"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:71
-#: src/en/reference/config-db-server.md:103
+#: src/en/reference/config-db-server.md:78
+#: src/en/reference/config-db-server.md:109
 #, no-wrap
 msgid "sudo systemctl restart postgresql zammad\n"
 msgstr "sudo systemctl restart postgresql zammad\n"
 
 #. type: Title ##
-#: src/en/reference/config-db-server.md:75
+#: src/en/reference/config-db-server.md:82
 #, no-wrap
 msgid "Adjust PostgreSQL for bigger instances (optional)"
 msgstr "PostgreSQL für größere Instanzen anpassen (optional)"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/config-db-server.md:77
-#, no-wrap
+#: src/en/reference/config-db-server.md:84
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Check below settings first and ensure your system is able to provide\n"
+#| "the requirements! Below settings are what we found to be useful,\n"
+#| "everything else is out of scope of this documentation!\n"
 msgid ""
-"Check below settings first and ensure your system is able to provide\n"
-"the requirements! Below settings are what we found to be useful,\n"
-"everything else is out of scope of this documentation!\n"
+"Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found\n"
+"to be useful, everything else is out of scope of this documentation!\n"
 msgstr ""
 "Überprüfen Sie zunächst die folgenden Einstellungen und stellen Sie sicher, dass Ihr System die\n"
 "Anforderung erfüllt! Die folgenden Einstellungen haben wir als nützlich erachtet,\n"
 "alles andere sprengt den Rahmen dieser Dokumentation!\n"
 
 #. type: Plain text
-#: src/en/reference/config-db-server.md:84
+#: src/en/reference/config-db-server.md:90
 msgid "Some caching improvements:"
 msgstr "Einige Verbesserungen beim Caching:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:85
+#: src/en/reference/config-db-server.md:91
 #, no-wrap
 msgid "sed -i \"/shared_buffers/c\\shared_buffers = 2GB\" <postgresql-configuration-file>\n"
 msgstr "sed -i \"/shared_buffers/c\\shared_buffers = 2GB\" <postgresql-configuration-file>\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:89
+#: src/en/reference/config-db-server.md:95
 #, no-wrap
 msgid "sed -i \"/temp_buffers/c\\temp_buffers = 256MB\" <postgresql-configuration-file>\n"
 msgstr "sed -i \"/temp_buffers/c\\temp_buffers = 256MB\" <postgresql-configuration-file>\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:93
+#: src/en/reference/config-db-server.md:99
 #, no-wrap
 msgid "sed -i \"/work_mem/c\\work_mem = 10MB\" <postgresql-configuration-file>\n"
 msgstr "sed -i \"/work_mem/c\\work_mem = 10MB\" <postgresql-configuration-file>\n"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/config-db-server.md:97
+#: src/en/reference/config-db-server.md:103
 #, no-wrap
 msgid "sed -i \"/max_stack_depth/c\\max_stack_depth = 5MB\" <postgresql-configuration-file>\n"
 msgstr "sed -i \"/max_stack_depth/c\\max_stack_depth = 5MB\" <postgresql-configuration-file>\n"
@@ -23723,11 +23805,8 @@ msgstr "Anzeigen/Generieren"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:13
-#, fuzzy
-#| msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
 msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-"`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/enqueue_summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:15
@@ -23735,11 +23814,13 @@ msgid ""
 "The ticket summarize endpoint uses ``POST`` because creating and fetching "
 "the summary happen in a single operation:"
 msgstr ""
+"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/ticket-summary.md:19
 msgid "If a summary exists, it is returned."
-msgstr ""
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/ticket-summary.md:19
@@ -23747,6 +23828,8 @@ msgid ""
 "If a summary does not exist, creation is triggered in the background (async "
 "job)."
 msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:22
@@ -23755,6 +23838,10 @@ msgid ""
 "want a summary to exist, call the endpoint; if it's not ready yet, retry "
 "after at least 30 seconds."
 msgstr ""
+"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:25
@@ -23779,16 +23866,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:33
-#, fuzzy
-#| msgid ""
-#| "Sample response for an existing summary (e.g. for the same ticket like "
-#| "above after waiting a few seconds):"
 msgid ""
 "Sample response for an existing summary (e.g. for the same ticket like above "
 "after waiting until creation has finished):"
 msgstr ""
 "Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nach einigen Sekunden Wartezeit):"
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/ticket-summary.md:34
