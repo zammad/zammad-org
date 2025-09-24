@@ -128,7 +128,7 @@ Dialog
   your unsaved changes.
 
 Documentation
-: You will probably have noticed already: you are reading a part of Zammad's
+: You probably have noticed already: you are reading a part of Zammad's
   documentation. 😉
 
 Elasticsearch
@@ -139,8 +139,8 @@ Elasticsearch
 
 Escalation
 : An escalation is what happens after the deadline for a ticket has passed. You
-  can configure it with Zammad's SLAs. An escalated ticket is marked red in your
-  taskbar and the overviews.
+  can configure it within Zammad's SLA (Service Level Agreement) feature. An
+  escalated ticket is marked red in your taskbar and the overviews.
 
 Exchange Integration
 : The Exchange integration allows you to sync your contacts from your
@@ -153,7 +153,7 @@ External Authentication
   into Zammad. It has various benefits: not only is it faster but it also
   means that your users will have to remember fewer passwords.
   Zammad currently supports more than ten login providers, such as Facebook,
-  GitHub, GitLab, Google, or Microsoft / Office365.
+  GitHub, GitLab, Google, or Microsoft.
 
 Feature
 : A feature is a specific capability or functionality that Zammad provides to
@@ -175,14 +175,14 @@ Feature Sponsoring
 GitHub
 : GitHub is a service for the version management of software development
   projects. It uses Git, a software that tracks changes in file sets.
-  Here at Zammad, we use it to maintain our repository.
+  Here at Zammad, we use it to maintain and enhance our code.
 
   As Zammad is an open-source project, many developers and tech-lovers from all
   over the world contribute to it. GitHub is where we coordinate all of this.
-  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.
+  Follow the link to find [our repositories](https://github.com/zammad){target=_blank}.
 
-  Besides our own repo, Zammad also has an integration for GitHub.
-  It creates a data exchange that shows you all relevant information about your
+  Besides our own repos, Zammad also has an integration for GitHub.
+  Using it allows you to show all relevant information about your
   issues directly in a sidebar tab, such as status or assignees.
 
 GitLab
@@ -194,12 +194,10 @@ GitLab
   Zammad's sidebar tab as well.
 
 Grafana
-: Grafana is an open-source reporting tool.
-  Zammad users on the Plus plan can integrate it into their instance and
-  receive detailed analytics on their performance.
+: Grafana is an open-source reporting tool. Hosted customers with a Plus plan
+  can use it to receive detailed metrics of their instance.
 
-  Hooking up Grafana to Elasticsearch is an possibility you can do on your
-  on-premise installation as well.
+  Self hosting Zammad users can connect Grafana to their Elasticsearch as well.
 
 Groups
 : Groups are a synonym for departments or processing groups.
@@ -284,12 +282,12 @@ Monit
   a strong community. You can integrate it with Zammad - this way,
   a ticket is created every time you receive an email in Monit.
 
-Navigation
-: Navigation means the left sidebar in Zammad which contains navigation tabs,
+Navigation Bar
+: The navigation bar is the left sidebar in Zammad which contains navigation tabs,
   the search, notifications and many more items, depending on your system.
 
 Navigation Tab
-: One element of the navigation. You can have multiple tabs open and quickly
+: One element of the navigation bar. You can have multiple tabs open and quickly
   switch between them.
 
 Nagios
@@ -395,13 +393,14 @@ SLA
 
 S/MIME
 : S/MIME is the most widely-supported method for secure email communication.
-  By activating it in Zammad, all messages sent from Zammad will be signed and
-  encrypted.
+  By activating and configuring this integration in Zammad, messages sent from
+  Zammad can be signed and encrypted, depending on the recipient and if the
+  agent made manual adjustments.
 
 SSO
 : Single-sign-on (SSO) allows you to access all your systems and devices with
   just one login. There are various providers that make this process easy and
-  secure. Zammad currently supports SSO via SAML and Shibboleth.
+  secure. Zammad currently supports SSO via different providers.
 
 State
 : Every ticket has a state which reflects the current progress of resolving the
@@ -445,9 +444,9 @@ User
 
 Webhooks
 : Webhooks are an easy way for systems to communicate with each
-  other and allow you to send real-time data to any other application.
-  We use them to allow our users to inform a third-party system about new
-  information in Zammad.
+  other and allow you to send data to any other application.
+  They allow you to inform a third-party system about new information in Zammad
+  (e.g. sending a notification for new and updated tickets to your Mattermost).
 
 Zammad
 : Zammad is the greatest helpdesk in the world. Period.

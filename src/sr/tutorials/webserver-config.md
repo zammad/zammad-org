@@ -8,7 +8,7 @@ order: 3
 
 This guide is only relevant for package installations. During the
 installation, Zammad tries to automatically install a configuration file to
-your nginx.  You can find example configuration files for your webserver in
+your Nginx.  You can find example configuration files for your webserver in
 the `contrib/` directory of your Zammad installation.
 
 In case this out-of-the-box approach doesn't work for you, you can find some
@@ -42,7 +42,7 @@ other examples.
 
 ===certbot
 
-If not happened automatically, you have to install the nginx or apache plugin
+If not happened automatically, you have to install the Nginx or Apache plugin
 for certbot: `python3-certbot-nginx` or `python3-certbot-apache`
 
 During the first certbot run it will request additional information once.
@@ -153,7 +153,7 @@ you to meet your requirements!
 
 #### Step 4 - Save & Reload
 
-Reload your nginx with `sudo systemctl reload nginx` to apply your
+Reload your Nginx with `sudo systemctl reload nginx` to apply your
 configuration changes.
 
 After that, you should be greeted by our getting started wizard.  Go on with
@@ -282,7 +282,7 @@ ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 
 #### Step 6 - Save & Reload
 
-Reload your apache with `sudo systemctl reload apache2` to apply your
+Reload your Apache with `sudo systemctl reload apache2` to apply your
 configuration changes.
 
 After that, you should be greeted by our getting started wizard.  Go on with

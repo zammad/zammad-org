@@ -7,13 +7,12 @@ title: 'Docker Compose-Szenarien'
 
 ## Übersicht
 
-Wenn der "vanilla" Zammad Stack Ihren Anwendungsfall nicht abdeckt, können
-Sie eines der vordefinierten Szenarien verwenden. Wir empfehlen, die
-Compose-Dateien lokal nicht zu ändern, da es dann schwierig sein kann, die
-Upstream-Änderungen des Stacks anzuwenden. Aus diesem Grund sollten Sie
-entweder die Repository-Build-Methode von Portainer verwenden oder das
-Repository klonen und regelmäßig aktualisieren, wenn Sie Docker Compose
-verwenden.
+If the "vanilla" Zammad stack doesn't cover your use-case, you can use one
+of the pre-defined scenarios. We don't recommend to change the Compose files
+locally, because it will be hard to keep track of upstream changes for the
+stack then. This is why you should either use Portainer's repository build
+method or clone the repository and update it regularly, when using Docker
+Compose.
 
 Die folgenden Szenarien werden unterstützt und weiter unten erläutert:
 
@@ -21,11 +20,11 @@ Die folgenden Szenarien werden unterstützt und weiter unten erläutert:
   machen](#stack-uber-https-erreichbar-machen)
   - Hinzufügen eines Cloudflare-Tunnel-Services zum Stack
   - Hinzufügen eines Nginx Proxy Managers (NPM) zum Stack
-  - Hinzufügen eines externen Docker-Netzwerks zum Nginx-Container
+  - Add an external Docker network to Nginx
 - [Externe Dienste verwenden](#externe-dienste-verwenden)
   - Elasticsearch-Dienst deaktivieren
 - [Dienste extern verfügbar machen](#dienste-extern-verfugbar-machen)
-  - Hinzufügen eines externen Docker-Netzwerks zum Elasticsearch-Container
+  - Add an external Docker network to Elasticsearch
   - Einen Host-Port zu Elasticsearch hinzufügen
 - [Zusätzliche Szenarien](#zusatzliche-szenarien)
   - Deaktivieren des Backup-Dienstes
@@ -105,10 +104,10 @@ nächsten Abschnitt.
 
 ### Externes Docker-Netzwerk zu Nginx hinzufügen
 
-Wenn Sie bereits einen Reverse-Proxy haben, der sich um die SSL-Terminierung
-kümmert, ist dieses Szenario hilfreich. Es fügt dem in Zammad enthaltenen
-Nginx-Dienst ein externes Docker-Netzwerk hinzu, um von einem Reverse-Proxy,
-der nicht zum Netzwerk des Zammad-Stacks gehört, darauf zugreifen zu können.
+If you already have a reverse proxy which takes care about the SSL
+termination, this scenario is helpful. It adds an external Docker network to
+Zammad's included Nginx service to be able to access it from a reverse proxy
+that is not part of the Zammad stack's network.
 
 - Verwenden Sie die Szenariodatei
   `scenarios/add-external-network-to-nginx.yml` in Ihrem Stack
@@ -224,10 +223,9 @@ Anwendungsfälle zu erweitern.
 
 ## Lokale Anpassung des Stacks
 
-Manchmal ist es notwendig, lokale Änderungen am Zammad-Docker-Stack
-vorzunehmen, z.B. um zusätzliche Dienste einzubinden. Wenn Sie dies planen,
-empfehlen wir Ihnen, die Datei `docker-compose.yml` nicht zu ändern, sondern
-eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre
-Änderungen enthält. Docker-Compose wird [diese Datei automatisch laden und
-ihre Änderungen am Stack
-anwenden](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
+Sometimes it's necessary to apply local changes to the Zammad Docker stack,
+e.g. to include additional services. If you plan to do so, we recommend that
+you do not change the `docker-compose.yml` file, but instead create a local
+`docker-compose.override.yml` that includes all your modifications. Docker
+Compose will [automatically load this file and merge its changes into your
+stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

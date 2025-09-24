@@ -48,7 +48,7 @@ Below payload makes use of `state_type_id` which is a instance
 specific set of IDs. State types indicate how the state will work.
 
 As there's no endpoint for retrieving these, please use the
-[rails console](/en/reference/console).
+[Rails console](/en/reference/console).
 :::
 
 :::: details

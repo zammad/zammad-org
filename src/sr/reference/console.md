@@ -5,7 +5,7 @@ title: 'Rails Commands'
 
 # Rails Console
 
-Zammad uses Ruby on Rails so you can make use of the [rails
+Zammad uses Ruby on Rails so you can make use of the [Rails
 console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
 :::warning
@@ -78,11 +78,11 @@ rails c
 
 ### Rails Console Safe Mode
 
-Normally, starting rails console requires certain third-party services to be
+Normally, starting Rails console requires certain third-party services to be
 up and running. You may receive errors and console will refuse to start in
 case they are not available.
 
-However, it's possible to start rails console in safe mode by setting a
+However, it's possible to start Rails console in safe mode by setting a
 special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
 ignored.
 
@@ -447,19 +447,19 @@ The following settings are available in a default installation:
 If your Elasticsearch installation changes, you can use the following
 commands to ensure that Zammad still can access Elasticsearch.
 
-Промените Elasticsearch URL:
+Change Elasticsearch URL:
 
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
 
-Change elasticsearch user (e.g. for authentication):
+Change Elasticsearch user (e.g. for authentication):
 
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
 
-Change the elasticsearch password for authentication:
+Change the Elasticsearch password for authentication:
 
 ```ruby
 Setting.set('es_password', 'zammad')

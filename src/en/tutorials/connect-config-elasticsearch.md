@@ -102,7 +102,7 @@ By default, the
 [Asciifold feature of Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
 is enabled. This can be useful if you deal with text which includes diacritics and/or umlauts.
 
-In case you need a more exact search, you can turn it off via [rails console](/en/reference/console#disable-asciifold).
+In case you need a more exact search, you can turn it off via [Rails console](/en/reference/console#disable-asciifold).
 
 ## Troubleshooting
 
@@ -157,7 +157,7 @@ our [installation guide](/en/tutorials/install-elasticsearch).
 
 #### Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type="warning" text="only ES7" />
 
-List installed elasticsearch plugins:
+List installed Elasticsearch plugins:
 
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
@@ -186,7 +186,7 @@ sudo systemctl restart elasticsearch
 
 #### Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes
 
-Force Zammad to drop and rebuild the elasticsearch indexes, optionally
+Force Zammad to drop and rebuild the Elasticsearch indexes, optionally
 with a specified number of CPU cores to use for re-indexing (example `[8]`):
 
 ```sh

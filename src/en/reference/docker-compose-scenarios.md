@@ -8,20 +8,20 @@ order: 2
 ## Overview
 
 If the "vanilla" Zammad stack doesn't cover your use-case, you can use one of the pre-defined scenarios. We don't
-recommend to change the compose files locally, because it will be hard to keep track of upstream changes for the stack
+recommend to change the Compose files locally, because it will be hard to keep track of upstream changes for the stack
 then. This is why you should either use Portainer's repository build method or clone the repository and update it
-regularly, when using docker compose.
+regularly, when using Docker Compose.
 
 The following scenarios are supported and explained further below:
 
 - [Making the stack available via HTTPS](#making-the-stack-available-via-https)
   - Add a Cloudflare tunnel service to the stack
   - Add a Nginx Proxy Manager (NPM) to the stack
-  - Add an external docker network to Nginx
+  - Add an external Docker network to Nginx
 - [Using external services](#using-external-services)
   - Disable Elasticsearch service
 - [Making services externally available](#making-services-externally-available)
-  - Add an external docker network to Elasticsearch
+  - Add an external Docker network to Elasticsearch
   - Add an host port to Elasticsearch
 - [Additional scenarios](#additional-scenarios)
   - Disable the backup service
@@ -88,7 +88,7 @@ next section.
 ### Add External Docker Network to Nginx
 
 If you already have a reverse proxy which takes care about the SSL termination, this scenario is helpful. It adds an
-external docker network to Zammad's included Nginx service to be able to access it from a reverse proxy that is not
+external Docker network to Zammad's included Nginx service to be able to access it from a reverse proxy that is not
 part of the Zammad stack's network.
 
 - Use the scenario file `scenarios/add-external-network-to-nginx.yml` for deployment
@@ -184,7 +184,7 @@ in future.
 
 ## Customize the Stack Locally
 
-Sometimes it's necessary to apply local changes to the Zammad docker stack, e.g. to include additional services. If you
+Sometimes it's necessary to apply local changes to the Zammad Docker stack, e.g. to include additional services. If you
 plan to do so, we recommend that you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker compose will
+`docker-compose.override.yml` that includes all your modifications. Docker Compose will
 [automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

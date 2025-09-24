@@ -174,8 +174,8 @@ sudo systemctl start zammad
 ## Update Docker Installation
 
 ::: warning
-Docker compose stack updates may require extra steps or introduce breaking
-changes. Always check the [docker compose release notes](https://github.com/zammad/zammad-docker-compose/releases)
+Docker Compose stack updates may require extra steps or introduce breaking
+changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases)
 for update instructions first.
 :::
 
@@ -197,9 +197,9 @@ git pull
 ```
 
 ```sh
-docker-compose pull
+docker compose pull
 ```
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```

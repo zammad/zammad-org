@@ -6,10 +6,10 @@ title: 'Backup & Restore (Docker)'
 # Backup & Restore (Docker)
 
 This section shows some basics about the backup and restore process for a
-docker compose based deployment of Zammad.
+Docker Compose based deployment of Zammad.
 
 If you are familiar with volume based backup and restore procedures in
-docker, and perhaps already use a different method or tool, then you can
+Docker, and perhaps already use a different method or tool, then you can
 keep using it. A backup would typically mean shutting down the stack to
 ensure all in-memory files get written to disk, then backing up the volume
 contents, and then starting the stack again. When using such method, you can
@@ -18,12 +18,12 @@ scenario](/en/reference/docker-compose-scenarios) so that the built-in
 backup and restore mechanism of Zammad is not activated.
 
 The rest of this page describes the built-in backup and restore mechanism of
-Zammad's docker compose stack.
+Zammad's Docker Compose stack.
 
-If you're familiar with docker, the sections below include the information
-you'll need. The [docker file handling](/en/tutorials/docker-file-handling)
+If you're familiar with Docker, the sections below include the information
+you'll need. The [Docker file handling](/en/tutorials/docker-file-handling)
 page covers some examples about how to handle the backup files and to copy
-it into a docker volume to restore it.
+it into a Docker volume to restore it.
 
 ## Backup
 
@@ -42,7 +42,7 @@ o'clock each night. The backup is stored in the volume of the
 4. Copy or move the backup files to `/var/tmp/zammad/restore/` inside the
    volume of the **zammad-backup** container. Be aware that the restore
    process always uses the latest backup according to the timestamp of the
-   file name. Only backups from package and docker installations are
+   file name. Only backups from package and Docker installations are
    supported by this built-in backup method. Don't provide the
    `latest_zammad_*.gz` files because they link to an unknown location for
    the restore process.

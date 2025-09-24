@@ -181,9 +181,9 @@ sudo systemctl start zammad
 ## Docker-Installation aktualisieren
 
 ::: warning
-Aktualisierungen des Docker Compose Stacks können zusätzliche Schritte erfordern
-oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die [Docker Compose Release-Notes](https://github.com/zammad/zammad-docker-compose/releases)
-auf Hinweise für die Aktualisierungen.
+Docker Compose stack updates may require extra steps or introduce breaking
+changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases)
+for update instructions first.
 :::
 
 ### Portainer-basierte Installation aktualisieren
@@ -205,9 +205,9 @@ git pull
 ```
 
 ```sh
-docker-compose pull
+docker compose pull
 ```
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```

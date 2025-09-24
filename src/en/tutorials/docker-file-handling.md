@@ -5,7 +5,7 @@ order: 6
 
 # Docker File Handling Examples
 
-If you're not sure how to handle the backup files and how to create the `restore` directory in the docker volume, you
+If you're not sure how to handle the backup files and how to create the `restore` directory in the Docker volume, you
 can find some examples below.
 
 ## Restore Inside the Same Stack
@@ -26,7 +26,7 @@ Now start the stack to execute the restore process.
 
 **Requires:** console access to the host system and the zammad-backup container.
 
-To **obtain** your backup files from another docker compose deployment, one way is to copy it to the host system with
+To **obtain** your backup files from another Docker Compose deployment, one way is to copy it to the host system with
 `docker compose cp`:
 
 ``` sh

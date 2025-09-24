@@ -82,8 +82,7 @@ Erhöhen Sie die maximal zulässige Anzahl von Verbindungen:
 sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
 ```
 
-Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten
-(in dieser Reihenfolge):
+Apply changes by restarting PostgreSQL and Zammad (in this order):
 
 ```sh
 sudo systemctl restart postgresql zammad
@@ -114,8 +113,7 @@ sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
 sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
-Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten
-(in dieser Reihenfolge):
+Apply changes by restarting PostgreSQL and Zammad (in this order):
 
 ```sh
 sudo systemctl restart postgresql zammad

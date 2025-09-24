@@ -106,8 +106,8 @@ Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asci
 aktiviert. Dies kann nützlich sein, wenn Sie mit Text arbeiten, der
 Diakritika und/oder Umlaute enthält.
 
-Falls Sie eine genauere Suche benötigen, können Sie diese über [Rails
-Konsole](/de/reference/console#asciifold-deaktivieren) deaktivieren.
+In case you need a more exact search, you can turn it off via [Rails
+console](/en/reference/console#disable-asciifold).
 
 ## Fehlerbehebung
 
@@ -163,7 +163,7 @@ unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschriebe
 
 #### Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist <Badge type="warning" text="only ES7" />
 
-Liste der installierten Elasticsearch-Plugins:
+List installed Elasticsearch plugins:
 
 ```sh
 /usr/share/elasticsearch/bin/elasticsearch-plugin list
@@ -192,9 +192,8 @@ sudo systemctl restart elasticsearch
 
 #### Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und die Indizes neu erstellen kann
 
-Erzwingen, dass Zammad die Elasticsearch-Indizes löscht und neu aufbaut,
-optional mit einer definierten Anzahl von CPU-Kernen, die für die
-Neuindizierung verwendet werden sollen (Beispiel `[8]`):
+Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with
+a specified number of CPU cores to use for re-indexing (example `[8]`):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]

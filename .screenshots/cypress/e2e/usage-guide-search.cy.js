@@ -4,7 +4,7 @@ describe('search screenshots', () => {
     cy.visit('/desktop/tickets/1')
     cy.wait(1000) // transition
     cy.get('[aria-label="Search…"]').click().type('hannah')
-    cy.wait(500) // transition
+    cy.wait(2000) // transition
     cy.get('header').clip().then((TopClip) => {
       cy.get('[id="Organization-2"]', { timeout: 60000 }).clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
