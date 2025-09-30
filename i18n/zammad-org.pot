@@ -6493,13 +6493,13 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
-"provides an easy [Letsencrypt](https://letsencrypt.org/) integration."
+"provides an easy [Let's Encrypt](https://letsencrypt.org/) integration."
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:107
 #, markdown-text
-msgid "Use a cloudflare tunnel, which provides SSL termination."
+msgid "Use a Cloudflare tunnel, which provides SSL termination."
 msgstr ""
 
 #. type: Plain text
@@ -15082,25 +15082,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:199
+#: src/en/reference/glossary.md:200
 #, markdown-text, no-wrap
 msgid ""
 "Grafana\n"
-": Grafana is an open-source reporting tool. Hosted customers with a Plus "
-"plan\n"
-"  can use it to receive detailed metrics of their instance.\n"
+": Grafana is an open-source reporting tool. It Elasticsearch as data "
+"source.\n"
+"  Hosted customers with a Plus plan can use it to get detailed statistics "
+"of\n"
+"  their instance. Self hosting Zammad users can use Grafana as well.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:201
-#, markdown-text, no-wrap
-msgid ""
-"  Self hosting Zammad users can connect Grafana to their Elasticsearch as "
-"well.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/glossary.md:210
+#: src/en/reference/glossary.md:209
 #, markdown-text, no-wrap
 msgid ""
 "Groups\n"
@@ -15116,7 +15110,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:214
+#: src/en/reference/glossary.md:213
 #, markdown-text, no-wrap
 msgid ""
 "  If you have worked with the OTRS system in the past, you might remember "
@@ -15127,7 +15121,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:220
+#: src/en/reference/glossary.md:219
 #, markdown-text, no-wrap
 msgid ""
 "Icinga\n"
@@ -15138,7 +15132,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:228
+#: src/en/reference/glossary.md:227
 #, markdown-text, no-wrap
 msgid ""
 "i-doit\n"
@@ -15151,7 +15145,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:232
+#: src/en/reference/glossary.md:231
 #, markdown-text, no-wrap
 msgid ""
 "Issue-Tracking System\n"
@@ -15161,7 +15155,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:236
+#: src/en/reference/glossary.md:235
 #, markdown-text, no-wrap
 msgid ""
 "  Zammad is also often referred to as an issue-tracking system.\n"
@@ -15170,7 +15164,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:241
+#: src/en/reference/glossary.md:240
 #, markdown-text, no-wrap
 msgid ""
 "Kibana <Badge type=\"info\" text=\"on-premise only\" />\n"
@@ -15182,7 +15176,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:244
+#: src/en/reference/glossary.md:243
 #, markdown-text, no-wrap
 msgid ""
 "  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
@@ -15190,7 +15184,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:249
+#: src/en/reference/glossary.md:248
 #, markdown-text, no-wrap
 msgid ""
 "Knowledge Base\n"
@@ -15200,7 +15194,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:254
+#: src/en/reference/glossary.md:253
 #, markdown-text, no-wrap
 msgid ""
 "  Knowledge base articles can be either internal or external, so you can\n"
@@ -15211,7 +15205,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:259
+#: src/en/reference/glossary.md:258
 #, markdown-text, no-wrap
 msgid ""
 "LDAP\n"
@@ -15221,7 +15215,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:265
+#: src/en/reference/glossary.md:264
 #, markdown-text, no-wrap
 msgid ""
 "Macro\n"
@@ -15233,7 +15227,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:268
+#: src/en/reference/glossary.md:267
 #, markdown-text, no-wrap
 msgid ""
 "  You can define your own macros and perform actions based on all "
@@ -15242,7 +15236,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:273
+#: src/en/reference/glossary.md:272
 #, markdown-text, no-wrap
 msgid ""
 "Mentions\n"
@@ -15253,7 +15247,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:279
+#: src/en/reference/glossary.md:278
 #, markdown-text, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -15265,7 +15259,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:284
+#: src/en/reference/glossary.md:283
 #, markdown-text, no-wrap
 msgid ""
 "Monit\n"
@@ -15276,7 +15270,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:288
+#: src/en/reference/glossary.md:287
 #, markdown-text, no-wrap
 msgid ""
 "Navigation Bar\n"
@@ -15286,7 +15280,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:292
+#: src/en/reference/glossary.md:291
 #, markdown-text, no-wrap
 msgid ""
 "Navigation Tab\n"
@@ -15296,7 +15290,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:297
+#: src/en/reference/glossary.md:296
 #, markdown-text, no-wrap
 msgid ""
 "Nagios\n"
@@ -15306,7 +15300,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:302
+#: src/en/reference/glossary.md:301
 #, markdown-text, no-wrap
 msgid ""
 "On-Premise\n"
@@ -15316,7 +15310,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:308
+#: src/en/reference/glossary.md:307
 #, markdown-text, no-wrap
 msgid ""
 "Organization\n"
@@ -15328,7 +15322,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:314
+#: src/en/reference/glossary.md:313
 #, markdown-text, no-wrap
 msgid ""
 "Owner\n"
@@ -15340,7 +15334,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:320
+#: src/en/reference/glossary.md:319
 #, markdown-text, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -15352,7 +15346,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:326
+#: src/en/reference/glossary.md:325
 #, markdown-text, no-wrap
 msgid ""
 "Placetel\n"
@@ -15365,7 +15359,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:331
+#: src/en/reference/glossary.md:330
 #, markdown-text, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call "
@@ -15376,7 +15370,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:336
+#: src/en/reference/glossary.md:335
 #, markdown-text, no-wrap
 msgid ""
 "Priority\n"
@@ -15387,7 +15381,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:344
+#: src/en/reference/glossary.md:343
 #, markdown-text, no-wrap
 msgid ""
 "Release\n"
@@ -15402,7 +15396,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:348
+#: src/en/reference/glossary.md:347
 #, markdown-text, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases){target=_blank} you "
@@ -15413,7 +15407,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:352
+#: src/en/reference/glossary.md:351
 #, markdown-text, no-wrap
 msgid ""
 "Role\n"
@@ -15422,7 +15416,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:359
+#: src/en/reference/glossary.md:358
 #, markdown-text, no-wrap
 msgid ""
 "  _Admins_ have the most rights: they can define roles, permissions,\n"
@@ -15435,13 +15429,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:361
+#: src/en/reference/glossary.md:360
 #, markdown-text, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:365
+#: src/en/reference/glossary.md:364
 #, markdown-text, no-wrap
 msgid ""
 "Second Level Navigation\n"
@@ -15451,7 +15445,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:369
+#: src/en/reference/glossary.md:368
 #, markdown-text, no-wrap
 msgid ""
 "Side(Panel)\n"
@@ -15461,7 +15455,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:374
+#: src/en/reference/glossary.md:373
 #, markdown-text, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -15472,13 +15466,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:376
+#: src/en/reference/glossary.md:375
 #, markdown-text, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:382
+#: src/en/reference/glossary.md:381
 #, markdown-text, no-wrap
 msgid ""
 "Sipgate\n"
@@ -15491,7 +15485,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:389
+#: src/en/reference/glossary.md:388
 #, markdown-text, no-wrap
 msgid ""
 "SLA\n"
@@ -15504,7 +15498,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:393
+#: src/en/reference/glossary.md:392
 #, markdown-text, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the "
@@ -15515,21 +15509,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:399
+#: src/en/reference/glossary.md:398
 #, markdown-text, no-wrap
 msgid ""
 "S/MIME\n"
 ": S/MIME is the most widely-supported method for secure email "
 "communication.\n"
-"  By activating and configuring this integration in Zammad, messages sent "
-"from\n"
-"  Zammad can be signed and encrypted, depending on the recipient and if "
-"the\n"
-"  agent made manual adjustments.\n"
+"  By activating and configuring this integration in Zammad, outgoing "
+"messages\n"
+"  can be signed and encrypted and incoming messages can be decrypted and "
+"their\n"
+"  signature checked.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:404
+#: src/en/reference/glossary.md:403
 #, markdown-text, no-wrap
 msgid ""
 "SSO\n"
@@ -15541,7 +15535,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:411
+#: src/en/reference/glossary.md:410
 #, markdown-text, no-wrap
 msgid ""
 "State\n"
@@ -15557,7 +15551,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:419
+#: src/en/reference/glossary.md:418
 #, markdown-text, no-wrap
 msgid ""
 "Tags\n"
@@ -15574,7 +15568,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:422
+#: src/en/reference/glossary.md:421
 #, markdown-text, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and assigned\n"
@@ -15582,7 +15576,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:430
+#: src/en/reference/glossary.md:429
 #, markdown-text, no-wrap
 msgid ""
 "Text Module\n"
@@ -15598,7 +15592,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:433
+#: src/en/reference/glossary.md:432
 #, markdown-text, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -15606,7 +15600,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:438
+#: src/en/reference/glossary.md:437
 #, markdown-text, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -15618,7 +15612,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:444
+#: src/en/reference/glossary.md:443
 #, markdown-text, no-wrap
 msgid ""
 "User\n"
@@ -15630,7 +15624,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:450
+#: src/en/reference/glossary.md:449
 #, markdown-text, no-wrap
 msgid ""
 "Webhooks\n"
@@ -15643,13 +15637,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:453
+#: src/en/reference/glossary.md:452
 #, markdown-text
 msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:454
+#: src/en/reference/glossary.md:453
 #, markdown-text, no-wrap
 msgid "</VPGlossary>\n"
 msgstr ""
@@ -27206,7 +27200,7 @@ msgstr ""
 msgid ""
 "There are two common tools to get certificates, to which your find a basic "
 "configuration below: "
-"[certbot](https://certbot.eff.org/instructions){target=_blank} and "
+"[Certbot](https://certbot.eff.org/instructions){target=_blank} and "
 "[acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.  "
 "Have a look at their documentation for further configuration details and "
 "other examples."
@@ -27217,13 +27211,13 @@ msgstr ""
 #, no-wrap
 msgid ""
 "\n"
-"===certbot\n"
+"===Certbot\n"
 "\n"
 "If not happened automatically, you have to install the Nginx or Apache "
 "plugin\n"
-"for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
+"for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
 "\n"
-"During the first certbot run it will request additional information once.\n"
+"During the first Certbot run it will request additional information once.\n"
 "Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
 "`nginx` to match your setup.\n"
 "\n"
@@ -27232,18 +27226,18 @@ msgid ""
 "```\n"
 "\n"
 "Certbot will now attempt to issue a certificate for you. If successful,\n"
-"certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
+"Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
 "automatically. You can choose to not redirect if you plan to use the "
 "sample\n"
 "configuration of Zammad.\n"
 "\n"
-"From now on, certbot will automatically renew your installed certificates "
+"From now on, Certbot will automatically renew your installed certificates "
 "if\n"
 "they’re valid for 30 days or less.\n"
 "\n"
 "===acme.sh\n"
 "\n"
-"Change the default certificate authority to Let's encrypt:\n"
+"Change the default certificate authority to Let's Encrypt:\n"
 "\n"
 "```sh\n"
 "acme.sh --set-default-ca  --server letsencrypt\n"

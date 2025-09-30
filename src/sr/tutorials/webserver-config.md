@@ -33,19 +33,19 @@ The config directories are usually:
 
 There are two common tools to get certificates, to which your find a basic
 configuration below:
-[certbot](https://certbot.eff.org/instructions){target=_blank} and
+[Certbot](https://certbot.eff.org/instructions){target=_blank} and
 [acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
 Have a look at their documentation for further configuration details and
 other examples.
 
 :::tabs
 
-===certbot
+===Certbot
 
 If not happened automatically, you have to install the Nginx or Apache plugin
-for certbot: `python3-certbot-nginx` or `python3-certbot-apache`
+for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`
 
-During the first certbot run it will request additional information once.
+During the first Certbot run it will request additional information once.
 Replace `<webserver>` in below command by either `apache`, `httpd` or
 `nginx` to match your setup.
 
@@ -54,16 +54,16 @@ certbot --<webserver> -d zammad.example.com
 ```
 
 Certbot will now attempt to issue a certificate for you. If successful,
-certbot will ask you if you want to `[1] not redirect` or `[2] redirect`
+Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`
 automatically. You can choose to not redirect if you plan to use the sample
 configuration of Zammad.
 
-From now on, certbot will automatically renew your installed certificates if
+From now on, Certbot will automatically renew your installed certificates if
 they’re valid for 30 days or less.
 
 ===acme.sh
 
-Change the default certificate authority to Let's encrypt:
+Change the default certificate authority to Let's Encrypt:
 
 ```sh
 acme.sh --set-default-ca  --server letsencrypt
