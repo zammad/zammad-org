@@ -101,6 +101,12 @@ Generate a personal access token for a third party application to access the
 Zammad API. After clicking the `New Personal Access Token` button, you can
 set a name, an expiration date and configure the permissions for this token.
 
+After creating the token, it gets displayed in a dialog only once. Make sure
+to copy it because there is no possibility to access it again.
+
+![Screenshot shows side panel with created token and copy
+button](/screenshots/cypress/user-profile.cy.js/token-dialog.png)
+
 ### Обавештења
 
 Adjust the notifications you get. You can adjust:
@@ -134,7 +140,7 @@ back to your admin's order by clicking the `Reset Overview Order` button.
 
 ### Календар
 
-Zammad allows you to subscribe to a calender feed (ical) to see tickets in
+Zammad allows you to subscribe to a calendar feed (ical) to see tickets in
 your favorite calendar application.
 
 Use either the upper "Combined subscription URL" to subscribe to all tickets

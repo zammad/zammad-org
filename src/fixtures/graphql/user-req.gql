@@ -1,0 +1,14 @@
+query userDetails (
+  $userId: ID!
+  ) {
+  user(userId: $userId) {
+    firstname
+    lastname
+    email
+    vip
+    ticketsCount {
+      open
+      closed
+    }
+  }
+}

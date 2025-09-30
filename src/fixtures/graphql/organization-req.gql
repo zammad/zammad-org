@@ -1,0 +1,11 @@
+query organizationDetails (
+  $organizationId: ID!
+  ) {
+  organization(organizationId: $organizationId) {
+    name
+    active
+    vip
+    domainAssignment
+    shared
+  }
+}

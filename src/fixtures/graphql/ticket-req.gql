@@ -1,0 +1,18 @@
+query ticketDetails (
+  $ticketId: ID!
+  ) {
+  ticket(ticketId: $ticketId) {
+    title
+    checklist {
+      items {
+        text
+        checked
+      }
+    }
+    tags
+    state {
+      name
+    }
+    escalationAt
+  }
+}

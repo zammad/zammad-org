@@ -1,0 +1,44 @@
+{
+  "data": {
+    "ticket": {
+      "title": "Onboarding new colleague",
+      "checklist": {
+        "items": [
+          {
+            "text": "Buy a desk and a chair",
+            "checked": false
+          },
+          {
+            "text": "Provide date and time of the first working day",
+            "checked": false
+          },
+          {
+            "text": "Allocate a bike parking space",
+            "checked": false
+          },
+          {
+            "text": "Create an access card for the building",
+            "checked": false
+          },
+          {
+            "text": "Ticket#79005",
+            "checked": false
+          },
+          {
+            "text": "Schedule a meeting with the complete department in the first week (duration at least 1 hour)",
+            "checked": false
+          }
+        ]
+      },
+      "tags": [
+        "internal",
+        "HR",
+        "onboarding"
+      ],
+      "state": {
+        "name": "open"
+      },
+      "escalationAt": null
+    }
+  }
+}

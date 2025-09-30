@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-24 11:27+0200\n"
+"POT-Creation-Date: 2025-09-30 09:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1107,8 +1107,8 @@ msgid ""
 "pixels."
 msgstr ""
 
-#. type: Title ###
-#: src/en/contribute/style-guide.md:128
+#. type: Title ##
+#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:105
 #, markdown-text, no-wrap
 msgid "Examples"
 msgstr ""
@@ -1483,8 +1483,8 @@ msgstr ""
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
 #: src/en/documentation/use/start-using-zammad.md:120
-#: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
-#: src/en/reference/rest-api/intro.md:6
+#: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
+#: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
 #, markdown-text, no-wrap
 msgid "Introduction"
@@ -2270,7 +2270,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:257
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/manage-profile.md:123
+#: src/en/documentation/use/manage-profile.md:128
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -5194,8 +5194,24 @@ msgid ""
 "set a name, an expiration date and configure the permissions for this token."
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:102
+#, markdown-text
+msgid ""
+"After creating the token, it gets displayed in a dialog only once. Make sure "
+"to copy it because there is no possibility to access it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:104
+#, markdown-text
+msgid ""
+"![Screenshot shows side panel with created token and copy "
+"button](/screenshots/cypress/user-profile.cy.js/token-dialog.png)"
+msgstr ""
+
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:105
 #: src/en/documentation/use/start-using-zammad.md:68
 #: src/en/documentation/use/start-using-zammad.md:105
 #, markdown-text, no-wrap
@@ -5203,13 +5219,13 @@ msgid "Notifications"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:103
+#: src/en/documentation/use/manage-profile.md:108
 #, markdown-text
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 #, markdown-text
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
@@ -5217,7 +5233,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 #, markdown-text
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
@@ -5225,25 +5241,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 #, markdown-text
 msgid "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 #, markdown-text
 msgid "For tickets in which group you get notified"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:112
+#: src/en/documentation/use/manage-profile.md:117
 #, markdown-text
 msgid "Additionally, you can select a notification sound or disable the sound."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/manage-profile.md:113
+#: src/en/documentation/use/manage-profile.md:118
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you "
@@ -5260,7 +5276,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:127
+#: src/en/documentation/use/manage-profile.md:132
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -5268,7 +5284,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:130
+#: src/en/documentation/use/manage-profile.md:135
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
@@ -5276,7 +5292,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/manage-profile.md:131
+#: src/en/documentation/use/manage-profile.md:136
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -5284,15 +5300,15 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:135
+#: src/en/documentation/use/manage-profile.md:140
 #, markdown-text
 msgid ""
-"Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
+"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:138
+#: src/en/documentation/use/manage-profile.md:143
 #, markdown-text
 msgid ""
 "Use either the upper \"Combined subscription URL\" to subscribe to all "
@@ -6610,7 +6626,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/get-started/installation/docker.md:128
-#: src/en/reference/es-indexed-attributes.md:30
+#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:109
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
@@ -15638,6 +15654,394 @@ msgstr ""
 msgid "</VPGlossary>\n"
 msgstr ""
 
+#. type: Title #
+#: src/en/reference/graphql.md:1 src/en/reference/graphql.md:6
+#, markdown-text, no-wrap
+msgid "GraphQL API"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:12
+#, markdown-text
+msgid ""
+"In addition to Zammad's [REST API](rest-api/intro), you can fetch, "
+"manipulate and create data via the powerful and open-source [GraphQL "
+"API](https://graphql.org/) too."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:16
+#, markdown-text
+msgid ""
+"This documentation isn't intended to cover everything about GraphQL. It "
+"should give you a basic understanding about how you can fetch and "
+"create/manipulate data to build upon. For a comprehensive guide, have a look "
+"at [GraphQL's documentation](https://graphql.org/learn/)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:20
+#, markdown-text
+msgid ""
+"GraphQL is used by many web services, even big ones. It became some kind of "
+"industry standard because of its efficiency and features. You can precisely "
+"request the data you require which minimizes unnecessary data transfers and "
+"searching the needle in a haystack."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:23
+#, markdown-text
+msgid ""
+"Fetching the GraphQL schema of Zammad (called introspection) allows you to "
+"have an autocomplete feature and logic checks in your client while writing a "
+"request."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/graphql.md:24 src/en/tutorials/sso-kerberos.md:63
+#, markdown-text, no-wrap
+msgid "Getting Started"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:27
+#, markdown-text
+msgid ""
+"Following the next steps enables you to successfully send a simple request "
+"and receive data from Zammad."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:28
+#, markdown-text, no-wrap
+msgid "Clients"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:33
+#, markdown-text
+msgid ""
+"To send request and receive responses, you need an API client. If you are "
+"already dealing with APIs, skip this section.  If you are new to the topic, "
+"search for a client which fits your needs. Depending on your operating "
+"system, you may have different options. Some examples for popular clients "
+"with GraphQL support are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+#, markdown-text
+msgid "[Bruno](https://www.usebruno.com/downloads)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+#, markdown-text
+msgid "[Insomnia](https://insomnia.rest/download)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+#, markdown-text
+msgid "[Postman](https://www.postman.com/downloads/)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/graphql.md:38 src/en/reference/rest-api/intro.md:31
+#, markdown-text, no-wrap
+msgid "Authentication"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:42
+#, markdown-text
+msgid ""
+"If not already present, create a [token in the Zammad "
+"profile](/en/documentation/use/manage-profile#token-access) you want to use "
+"as API user. Depending what you want to achieve via API, set the permissions "
+"accordingly."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:45
+#, markdown-text
+msgid ""
+"Make sure to copy it before closing the dialog because you can't view it "
+"again. In case it went wrong, simply create a new token."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:46
+#, markdown-text, no-wrap
+msgid "Prepare your Client"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:49
+#, markdown-text
+msgid "Open your API client and set it up."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+#, markdown-text
+msgid "Add your token from Zammad as bearer token."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+#, markdown-text
+msgid ""
+"Create a request and add your Zammad domain with `/graphql` suffix, "
+"e.g. `https://fastlane.inc/graphql`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+#, markdown-text
+msgid "Fetch Zammad's GraphQL schema from introspection or load it from file."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:55
+#, markdown-text
+msgid ""
+"Click on details to watch a screencast showing the basic steps using Bruno "
+"as client."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/graphql.md:56
+#, no-wrap
+msgid ""
+"<video controls=\"controls\" "
+"src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:60
+#, markdown-text, no-wrap
+msgid "Create a Request"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:64
+#, markdown-text
+msgid ""
+"All requests and responses are in JSON format. This means all information "
+"must be encapsulated in brackets and have a hierarchical structure."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:67
+#, markdown-text
+msgid ""
+"Let's have a look at a request to fetch information from Zammad. Such a "
+"request starts with the string `query`, followed by an object you want to "
+"query."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:69
+#, markdown-text
+msgid "Basic example to fetch users with their first and last name:"
+msgstr ""
+
+#. type: Fenced code block (gql :line-numbers)
+#: src/en/reference/graphql.md:70
+#, no-wrap
+msgid ""
+"query userName (\n"
+"  $userId: ID!\n"
+"  ) {\n"
+"  user(userId: $userId) {\n"
+"    firstname\n"
+"    lastname\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:83
+#, markdown-text
+msgid ""
+"The `$userId` from line 2 defines a variable which is used as an ID. In the "
+"variables section of your client, provide the value for it. In this example, "
+"the variables section looks like this:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: src/en/reference/graphql.md:84
+#, no-wrap
+msgid ""
+"{\n"
+"  \"userId\": \"gid://zammad/User/2\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:93
+#, markdown-text
+msgid ""
+"The value above is in the global ID format of Zammad's GraphQL "
+"implementation. Depending on which object type you want to deal with, "
+"replace the `User` by another object like `Ticket`, `Organization`, `Group`, "
+"etc. Zammad expects a numeric value as ID."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:96
+#, markdown-text
+msgid ""
+"Starting with line 4 in the code block above is the actual request. This "
+"simple example just fetches the attributes `firstname` and `lastname` from "
+"the user with the ID 2."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:98
+#, markdown-text
+msgid ""
+"Click on details to watch a screencast showing a basic request using a "
+"variable in Bruno."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/graphql.md:99
+#, no-wrap
+msgid ""
+"<video controls=\"controls\" "
+"src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:104
+#, markdown-text
+msgid ""
+"To create or change data, replace the `query` by `mutation` in the request "
+"body."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:108
+#, markdown-text
+msgid ""
+"The examples use variables for the different object types. Make sure to set "
+"it when using the examples."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"==== Ticket\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/ticket-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/ticket-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"==== User\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/user-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/user-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"==== Organization\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/organization-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/organization-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/graphql.md:155
+#, markdown-text, no-wrap
+msgid "Appendix"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:157
+#, markdown-text, no-wrap
+msgid "Global IDs"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/graphql.md:159
+#, no-wrap
+msgid ""
+"\n"
+"Replace the `{ID}` with a numeric value.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+#, markdown-text
+msgid "`gid://zammad/Ticket/{ID}`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+#, markdown-text
+msgid "`gid://zammad/User/{ID}`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+#, markdown-text
+msgid "`gid://zammad/Organization/{ID}`"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/index.md:1
 #, no-wrap
@@ -17811,12 +18215,6 @@ msgstr ""
 msgid ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
 "_(third-Party; API client only, no \"ready to use\" app)_"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/intro.md:31
-#, markdown-text, no-wrap
-msgid "Authentication"
 msgstr ""
 
 #. type: Plain text
@@ -25665,12 +26063,6 @@ msgid ""
 "follow this guide or even use Active Directory or Kerberos—but if you\n"
 "don't know what you're doing, you're going to end up with a _massive_\n"
 "security hole.\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:63
-#, markdown-text, no-wrap
-msgid "Getting Started"
 msgstr ""
 
 #. type: Fenced div block (tip)

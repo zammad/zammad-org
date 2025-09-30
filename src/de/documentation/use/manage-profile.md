@@ -112,6 +112,12 @@ Schaltfläche `Neuer persönlicher Zugangs-Token` geklickt haben, können Sie
 einen Namen und ein Ablaufdatum festlegen und die Berechtigungen für diesen
 Token konfigurieren.
 
+After creating the token, it gets displayed in a dialog only once. Make sure
+to copy it because there is no possibility to access it again.
+
+![Screenshot shows side panel with created token and copy
+button](/screenshots/cypress/user-profile.cy.js/token-dialog.png)
+
 ### Benachrichtigungen
 
 Passen Sie die Benachrichtigungen an, die Sie erhalten. Sie können
@@ -152,8 +158,8 @@ zurücksetzen` klicken.
 
 ### Kalender
 
-Zammad ermöglicht es Ihnen, einen Kalender-Feed (ical) zu abonnieren, um
-Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen.
+Zammad allows you to subscribe to a calendar feed (ical) to see tickets in
+your favorite calendar application.
 
 Verwenden Sie entweder die obere "Kombinierte Abonnement-URL", um alle
 Tickets zu abonnieren, oder die untere "URL für Direktabonnement". Mit der

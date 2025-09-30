@@ -1,0 +1,11 @@
+{
+  "data": {
+    "organization": {
+      "name": "Fast Lane Hardware",
+      "active": true,
+      "vip": false,
+      "domainAssignment": false,
+      "shared": true
+    }
+  }
+}
