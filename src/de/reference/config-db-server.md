@@ -11,9 +11,10 @@ wenn Sie einen bestehenden PostgreSQL-Server betreiben und die Datenbank von
 Zammad auch darin laufen lassen wollen.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully
-compatible with PostgreSQL. Typically this is called "session connection pooling". Transaction-based connection pooling
-is not supported and may lead to errors during database migrations.
+Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
+einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. Typischerweise wird dies
+"session connection pooling" genannt. Transaktionsbasiertes connection pooling wird
+nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 :::
 
 Nachfolgend finden Sie die Speicherorte der relevanten
@@ -35,12 +36,12 @@ Bedarf an.
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Others
+=== Andere
 
-Can't find your configuration files? You can run the following command to get the path:
+Sie können Ihre Konfigurationsdateien nicht finden? Ermitteln Sie den Pfad mit folgendem Befehl:
 
 ``` sh
-sudo -u postgres psql -c 'SHOW config_file'
+$ sudo -u postgres psql -c 'SHOW config_file'
 ```
 
 :::
@@ -57,24 +58,25 @@ Regel auf andere Probleme Ihres PostgreSQL-Servers hin.
 
 ## Anpassen von `max_connections` (erforderlich)
 
-Zammad uses up to 200 connections by default. Depending on your setup and
-load, you may want to change this value.
+Zammad verwendet standardmäßig bis zu 200 Verbindungen. Abhängig von Ihrer
+Umgebung und Auslastung möchten Sie diesen Wert eventuell ändern.
 
-### Determine Value
+### Wert bestimmen
 
-To help you determine a number, Zammad ships a function to calculate a
-suggestion. If executed, it asks you to input some integer values and
-additionally uses internally known values for the calculation. Be aware that
-the suggestion is instance specific. That means you must run the calculation
-on the system you want to adjust the `max_connection` value.
+Um Ihnen bei der Ermittlung eines Wertes zu helfen, bietet Zammad eine
+Funktion zur Berechnung eines Vorschlags. Wenn sie ausgeführt wird, fordert
+sie Sie auf, ein paar ganzzahlige Werte einzugeben und verwendet zusätzlich
+intern bekannte Werte für die Berechnung. Beachten Sie, dass der Vorschlag
+instanzspezifisch ist. Das bedeutet, dass Sie die Berechnung auf dem System
+durchführen müssen, auf dem Sie den `max_connection`-Wert anpassen wollen.
 
-Run it by using the command:
+Führen Sie sie mit dem Befehl aus:
 
 ``` sh
 rake zammad:db:max_connections
 ```
 
-### Adjust Value
+### Wert anpassen
 
 Erhöhen Sie die maximal zulässige Anzahl von Verbindungen:
 
@@ -82,7 +84,8 @@ Erhöhen Sie die maximal zulässige Anzahl von Verbindungen:
 sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Wenden Sie die Änderungen an, indem Sie PostgreSQL und Zammad neu starten
+(in dieser Reihenfolge):
 
 ```sh
 sudo systemctl restart postgresql zammad
@@ -91,8 +94,9 @@ sudo systemctl restart postgresql zammad
 ## PostgreSQL für größere Instanzen anpassen (optional)
 
 ::: warning
-Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found
-to be useful, everything else is out of scope of this documentation!
+Überprüfen Sie zunächst die folgenden Einstellungen und stellen Sie sicher, dass Ihr System die
+Anforderung erfüllt! Die folgenden Einstellungen haben wir als nützlich erachtet,
+alles andere sprengt den Rahmen dieser Dokumentation!
 :::
 
 Einige Verbesserungen beim Caching:
@@ -113,7 +117,8 @@ sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
 sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Wenden Sie die Änderungen an, indem Sie PostgreSQL und Zammad neu starten
+(in dieser Reihenfolge):
 
 ```sh
 sudo systemctl restart postgresql zammad

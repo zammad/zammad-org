@@ -5,8 +5,9 @@ title: Rails-Befehle
 
 # Rails-Konsole
 
-Zammad uses Ruby on Rails so you can make use of the [Rails
-console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
+Zammad verwendet Ruby on Rails, so dass Sie die [Rails
+Konsole](http://guides.rubyonrails.org/command_line.html){target=_blank}
+nutzen können.
 
 :::warning
 Bitte überprüfen Sie Ihre Befehle vor der Ausführung, da einige dieser
@@ -78,13 +79,13 @@ rails c
 
 ### Safe Mode der Rails-Konsole
 
-Normally, starting Rails console requires certain third-party services to be
-up and running. You may receive errors and console will refuse to start in
-case they are not available.
+Normalerweise müssen für den Start der Rails-Konsole bestimmte Dienste von
+Drittanbietern verfügbar sein. Sie erhalten möglicherweise Fehlermeldungen
+und die Konsole verweigert den Start, wenn sie nicht verfügbar sind.
 
-However, it's possible to start Rails console in safe mode by setting a
-special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
-ignored.
+Es ist jedoch möglich, die Rails-Konsole im sicheren Modus zu starten, indem
+man eine spezielle Umgebungsvariable setzt. Wenn `ZAMMAD_SAFE_MODE=1`
+gesetzt ist, wird die Prüfung auf Vorhandensein ignoriert.
 
 ```sh
 ZAMMAD_SAFE_MODE=1 zammad run rails c
@@ -455,19 +456,19 @@ Wenn sich Ihre Elasticsearch-Installation ändert, können Sie die folgenden
 Befehle verwenden, um sicherzustellen, dass Zammad weiterhin auf
 Elasticsearch zugreifen kann.
 
-Change Elasticsearch URL:
+Ändern Sie die URL von Elasticsearch:
 
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
 
-Change Elasticsearch user (e.g. for authentication):
+Ändern Sie den Benutzer von Elasticsearch (z.B. für die Authentifizierung):
 
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
 
-Change the Elasticsearch password for authentication:
+Ändern Sie das Elasticsearch-Passwort für die Authentifizierung:
 
 ```ruby
 Setting.set('es_password', 'zammad')

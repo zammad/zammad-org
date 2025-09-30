@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-17 16:26+0200\n"
-"PO-Revision-Date: 2025-09-18 06:00+0000\n"
+"POT-Creation-Date: 2025-09-30 09:44+0200\n"
+"PO-Revision-Date: 2025-09-30 11:59+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -1216,8 +1216,8 @@ msgstr ""
 "Die Auflösung von manuellen Screenshots der ganzen Seite für die _Desktop-"
 "View_ beträgt 1920x1080 Pixel."
 
-#. type: Title ###
-#: src/en/contribute/style-guide.md:128
+#. type: Title ##
+#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:105
 #, no-wrap
 msgid "Examples"
 msgstr "Beispiele"
@@ -1657,8 +1657,8 @@ msgstr "Administrator Dokumentation"
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
 #: src/en/documentation/use/start-using-zammad.md:120
-#: src/en/reference/rest-api/cti.md:8 src/en/reference/rest-api/intro.md:1
-#: src/en/reference/rest-api/intro.md:6
+#: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
+#: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #: src/en/tutorials/install-elasticsearch.md:10
 #, no-wrap
 msgid "Introduction"
@@ -2558,7 +2558,7 @@ msgstr "Erweiterte Suche"
 #: src/en/documentation/use/advanced-features.md:257
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/manage-profile.md:123
+#: src/en/documentation/use/manage-profile.md:128
 #, no-wrap
 msgid "Overviews"
 msgstr "Übersichten"
@@ -5920,8 +5920,28 @@ msgstr ""
 "einen Namen und ein Ablaufdatum festlegen und die Berechtigungen für diesen "
 "Token konfigurieren."
 
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:102
+msgid ""
+"After creating the token, it gets displayed in a dialog only once. Make sure "
+"to copy it because there is no possibility to access it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/manage-profile.md:104
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows user detail panel](/screenshots/cypress/user-"
+#| "profile.cy.js/user-menu-detail-panel.png)"
+msgid ""
+"![Screenshot shows side panel with created token and copy button](/"
+"screenshots/cypress/user-profile.cy.js/token-dialog.png)"
+msgstr ""
+"![Screenshot zeigt Benutzerinfo](/screenshots/cypress/user-profile.cy.js/"
+"user-menu-detail-panel.png)"
+
 #. type: Title ###
-#: src/en/documentation/use/manage-profile.md:100
+#: src/en/documentation/use/manage-profile.md:105
 #: src/en/documentation/use/start-using-zammad.md:68
 #: src/en/documentation/use/start-using-zammad.md:105
 #, no-wrap
@@ -5929,14 +5949,14 @@ msgid "Notifications"
 msgstr "Benachrichtigungen"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:103
+#: src/en/documentation/use/manage-profile.md:108
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 "Passen Sie die Benachrichtigungen an, die Sie erhalten. Sie können "
 "einstellen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
 "escalated tickets)"
@@ -5945,7 +5965,7 @@ msgstr ""
 "für eskalierte Tickets)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
 "to it (e.g. only yours, not assigned, subscribed tickets)"
@@ -5955,7 +5975,7 @@ msgstr ""
 "abonnierte Tickets)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 msgid ""
 "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
@@ -5963,19 +5983,19 @@ msgstr ""
 "per E-Mail)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/manage-profile.md:110
+#: src/en/documentation/use/manage-profile.md:115
 msgid "For tickets in which group you get notified"
 msgstr "Für in welcher Gruppe befindliche Tickets Sie benachrichtigt werden"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:112
+#: src/en/documentation/use/manage-profile.md:117
 msgid "Additionally, you can select a notification sound or disable the sound."
 msgstr ""
 "Außerdem können Sie einen Benachrichtigungston auswählen oder den Ton "
 "deaktivieren."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/manage-profile.md:113
+#: src/en/documentation/use/manage-profile.md:118
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you have\n"
@@ -5995,7 +6015,7 @@ msgstr ""
 "Berechtigungen der Website anpassen können.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:127
+#: src/en/documentation/use/manage-profile.md:132
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
 "clicking the handles on the left side."
@@ -6005,7 +6025,7 @@ msgstr ""
 "klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:130
+#: src/en/documentation/use/manage-profile.md:135
 msgid ""
 "If your admin changes the order, your custom order remains. You can switch "
 "back to your admin's order by clicking the `Reset Overview Order` button."
@@ -6016,7 +6036,7 @@ msgstr ""
 "zurücksetzen` klicken."
 
 #. type: Title #
-#: src/en/documentation/use/manage-profile.md:131
+#: src/en/documentation/use/manage-profile.md:136
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, no-wrap
@@ -6024,16 +6044,20 @@ msgid "Calendar"
 msgstr "Kalender"
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:135
+#: src/en/documentation/use/manage-profile.md:140
+#, fuzzy
+#| msgid ""
+#| "Zammad allows you to subscribe to a calender feed (ical) to see tickets "
+#| "in your favorite calendar application."
 msgid ""
-"Zammad allows you to subscribe to a calender feed (ical) to see tickets in "
+"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application."
 msgstr ""
 "Zammad ermöglicht es Ihnen, einen Kalender-Feed (ical) zu abonnieren, um "
 "Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen."
 
 #. type: Plain text
-#: src/en/documentation/use/manage-profile.md:138
+#: src/en/documentation/use/manage-profile.md:143
 msgid ""
 "Use either the upper \"Combined subscription URL\" to subscribe to all "
 "tickets or the lower \"Direct subscription URL\". With the later one, you "
@@ -7122,11 +7146,11 @@ msgstr "Docker-Installation"
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:10
 msgid ""
-"Zammad can be deployed using Docker-Compose. You can even use graphical "
+"Zammad can be deployed using Docker Compose. You can even use graphical "
 "Docker front ends like [Portainer](https://www.portainer.io/){target=_blank}."
 msgstr ""
-"Zammad kann mit Docker-Compose installiert werden. Sie können sogar "
-"grafische Docker-Frontends wie [Portainer](https://www.portainer.io/)"
+"Zammad kann per Docker Compose installiert werden. Sie können sogar "
+"grafische Docker-Oberflächen wie [Portainer](https://www.portainer.io/)"
 "{target=_blank} verwenden."
 
 #. type: Fenced div block (info)
@@ -7265,13 +7289,13 @@ msgstr "**Compose path**: `docker-compose.yml` (default)"
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:56
 msgid ""
-"In some cases, our default environment is not what a Docker-Compose user is "
+"In some cases, our default environment is not what a Docker Compose user is "
 "looking for. You can customize the stack using pre-defined scenarios and "
 "adjust environment variables. Jump to the [customization section]"
 "(#customizing-the-zammad-stack) below to find more information."
 msgstr ""
 "In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von "
-"Docker-Compose haben möchte. Sie können den Stack mit vordefinierten "
+"Docker Compose haben möchte. Sie können den Stack mit vordefinierten "
 "Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt "
 "[Anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere "
 "Informationen."
@@ -7302,6 +7326,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:65
+#: src/en/get-started/installation/docker.md:98
 msgid ""
 "After the stack is ready, you can access Zammad via the configured Docker "
 "host and port, e.g. `http://localhost:8080/`."
@@ -7312,8 +7337,8 @@ msgstr ""
 #. type: Title ##
 #: src/en/get-started/installation/docker.md:66
 #, no-wrap
-msgid "Deployment with Docker-Compose"
-msgstr "Installation mit Docker-Compose"
+msgid "Deployment with Docker Compose"
+msgstr "Installation per Docker Compose"
 
 #. type: Title ###
 #: src/en/get-started/installation/docker.md:68
@@ -7348,13 +7373,13 @@ msgstr "Schritt 2: Umgebung nach Bedarf anpassen"
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:82
 msgid ""
-"In some cases, our default environment is not what a Docker-Compose user is "
+"In some cases, our default environment is not what a Docker Compose user is "
 "looking for. You can customize the stack using pre-defined scenarios and "
 "adjust environment variables. Jump to the [Customizing the Zammad Stack]"
 "(#customizing-the-zammad-stack) section below to find more information."
 msgstr ""
 "In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von "
-"Docker-Compose haben möchte. Sie können den Stack mit vordefinierten "
+"Docker Compose haben möchte. Sie können den Stack mit vordefinierten "
 "Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt "
 "[anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere "
 "Informationen."
@@ -7374,6 +7399,7 @@ msgstr "cd zammad-docker-compose\n"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:89
+#: src/en/get-started/update.md:203
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr "docker compose up -d\n"
@@ -7388,15 +7414,6 @@ msgstr ""
 "Optional: Verwenden Sie eine zusätzliche `.yml`-Datei, um ein vordefiniertes "
 "Szenario zu verwenden. Springen Sie zum Bereich [Anpassen des Zammad-Stacks]"
 "(#anpassen-des-zammad-stacks) für weitere Informationen."
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:98
-msgid ""
-"After the stack is ready, you can access Zammad via the configured docker "
-"host and port, e.g. `http://localhost:8080/`."
-msgstr ""
-"Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten Host "
-"und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`."
 
 #. type: Title ##
 #: src/en/get-started/installation/docker.md:99
@@ -7416,9 +7433,13 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:107
+#, fuzzy
+#| msgid ""
+#| "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
+#| "provides an easy [Letsencrypt](https://letsencrypt.org/) integration."
 msgid ""
 "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
-"provides an easy [Letsencrypt](https://letsencrypt.org/) integration."
+"provides an easy [Let's Encrypt](https://letsencrypt.org/) integration."
 msgstr ""
 "Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat eine "
 "grafische Benutzeroberfläche, die eine einfache [Letsencrypt](https://"
@@ -7426,7 +7447,9 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:107
-msgid "Use a cloudflare tunnel, which provides SSL termination."
+#, fuzzy
+#| msgid "Use a cloudflare tunnel, which provides SSL termination."
+msgid "Use a Cloudflare tunnel, which provides SSL termination."
 msgstr ""
 "Verwenden Sie einen Cloudflare-Tunnel, der eine SSL-Terminierung ermöglicht."
 
@@ -7450,23 +7473,23 @@ msgstr "Anpassen des Zammad-Stacks"
 msgid ""
 "The Zammad stack can be customized by loading additional scenario files for "
 "common use cases. For example, you can deploy the stack with an included "
-"Nginx Proxy Manager (NPM) or with disabled Postgres or Elasticsearch "
+"Nginx Proxy Manager (NPM) or with disabled PostgreSQL or Elasticsearch "
 "services, in case you already have these services running."
 msgstr ""
 "Der Zammad-Stack kann durch das Laden zusätzlicher Szenario-Dateien für "
 "gängige Anwendungsfälle angepasst werden. Sie können den Stack zum Beispiel "
 "mit einem integrierten Nginx Proxy Manager (NPM) oder mit deaktivierten "
-"Postgres- oder Elasticsearch-Diensten bereitstellen, falls Sie diese Dienste "
-"bereits nutzen."
+"PostgreSQL- oder Elasticsearch-Diensten bereitstellen, falls Sie diese "
+"Dienste bereits nutzen."
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:117
 msgid ""
-"Please see the [Docker compose scenarios page](/en/reference/docker-compose-"
+"Please see the [Docker Compose scenarios page](/en/reference/docker-compose-"
 "scenarios)."
 msgstr ""
-"Bitte lesen Sie auf [Docker Compose Szenarien](/de/reference/docker-compose-"
-"scenarios) weiter."
+"Bitte lesen Sie unter [Docker Compose Szenarien](/de/reference/docker-"
+"compose-scenarios) weiter."
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:119
@@ -7486,7 +7509,7 @@ msgstr "Ausführen von Befehlen im Stack"
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:125
 msgid ""
-"The docker entrypoint script sets up environment variables required by "
+"The Docker entrypoint script sets up environment variables required by "
 "Zammad to function properly. That is why calling `rails` or `rake` on the "
 "console should be done via one of the following methods:"
 msgstr ""
@@ -7507,12 +7530,12 @@ msgid ""
 "\n"
 "=== Via Portainer GUI\n"
 "\n"
-"In your Portainer GUI, go to the container view and select the running rails container from your Zammad stack. Click\n"
+"In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click\n"
 "on the **Exec Console** icon in the \"Quick Actions\" column and on the `Connect` button.\n"
 "\n"
 "![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
 "\n"
-"Run the interactive rails console by executing:\n"
+"Run the interactive Rails console by executing:\n"
 "\n"
 "```sh\n"
 "bundle exec rails c\n"
@@ -7532,7 +7555,7 @@ msgid ""
 "docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'\n"
 "```\n"
 "\n"
-"Run the interactive rails console to manually enter Rails commands:\n"
+"Run the interactive Rails console to manually enter Rails commands:\n"
 "\n"
 "```sh\n"
 "docker compose run --rm zammad-railsserver bundle exec rails c\n"
@@ -7590,8 +7613,8 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:128
 #, no-wrap
 msgid ""
-"If you need to retrieve information from the rails server, you can, for example,\n"
-"place `pp` (pretty print) in front of your rails command. This leads to an\n"
+"If you need to retrieve information from the Rails server, you can, for example,\n"
+"place `pp` (pretty print) in front of your Rails command. This leads to an\n"
 "output in your terminal.\n"
 msgstr ""
 "Wenn Sie Informationen vom Rails-Server abrufen müssen, können Sie z.B,\n"
@@ -7600,7 +7623,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/get-started/installation/docker.md:128
-#: src/en/reference/es-indexed-attributes.md:30
+#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:109
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
@@ -9327,8 +9350,8 @@ msgstr "Docker-Installation aktualisieren"
 #: src/en/get-started/update.md:176
 #, no-wrap
 msgid ""
-"Docker compose stack updates may require extra steps or introduce breaking\n"
-"changes. Always check the [docker compose release notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
+"Docker Compose stack updates may require extra steps or introduce breaking\n"
+"changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
 "for update instructions first.\n"
 msgstr ""
 "Aktualisierungen des Docker Compose Stacks können zusätzliche Schritte erfordern\n"
@@ -9374,14 +9397,8 @@ msgstr "git pull\n"
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:199
 #, no-wrap
-msgid "docker-compose pull\n"
-msgstr "docker-compose pull\n"
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/update.md:203
-#, no-wrap
-msgid "docker-compose up -d\n"
-msgstr "docker-compose up -d\n"
+msgid "docker compose pull\n"
+msgstr "docker compose pull\n"
 
 #. type: Title ##
 #: src/en/imprint.md:8
@@ -9599,12 +9616,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: src/en/reference/config-db-server.md:11
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you use database connection pooling software like PgBouncer, make sure to\n"
-#| "use a pooling mode that is fully compatible with PostgreSQL. Typically this is\n"
-#| "called “session connection pooling”. Transaction-based connection pooling is\n"
-#| "not supported and may lead to errors during database migrations.\n"
+#, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully\n"
 "compatible with PostgreSQL. Typically this is called \"session connection pooling\". Transaction-based connection pooling\n"
@@ -9628,30 +9640,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/reference/config-db-server.md:20
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Debian & Ubuntu\n"
-#| "\n"
-#| "```ansi\n"
-#| "/etc/postgresql/{your version}/main/postgresql.conf\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS & OpenSUSE\n"
-#| "\n"
-#| "```ansi\n"
-#| "/var/lib/pgsql/data/postgresql.conf\n"
-#| "```\n"
-#| "\n"
-#| "=== Others\n"
-#| "\n"
-#| "Can't find your configuration files? You can run the following command\n"
-#| "to get the path:\n"
-#| "\n"
-#| "``` sh\n"
-#| "sudo -u postgres psql -c 'SHOW config_file'\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Debian & Ubuntu\n"
@@ -9733,22 +9722,18 @@ msgstr "Anpassen von `max_connections` (erforderlich)"
 
 #. type: Plain text
 #: src/en/reference/config-db-server.md:55
-#, fuzzy
-#| msgid ""
-#| "Zammad will take up to 200 connections by default, with below command you "
-#| "can raise this limit fairly high."
 msgid ""
 "Zammad uses up to 200 connections by default. Depending on your setup and "
 "load, you may want to change this value."
 msgstr ""
-"Zammad verwendet standardmäßig bis zu 200 Verbindungen, die Sie mit dem "
-"folgenden Befehl erhöhen können."
+"Zammad verwendet standardmäßig bis zu 200 Verbindungen. Abhängig von Ihrer "
+"Umgebung und Auslastung möchten Sie diesen Wert eventuell ändern."
 
 #. type: Title ###
 #: src/en/reference/config-db-server.md:56
 #, no-wrap
 msgid "Determine Value"
-msgstr ""
+msgstr "Wert bestimmen"
 
 #. type: Plain text
 #: src/en/reference/config-db-server.md:61
@@ -9759,26 +9744,29 @@ msgid ""
 "the suggestion is instance specific. That means you must run the calculation "
 "on the system you want to adjust the `max_connection` value."
 msgstr ""
+"Um Ihnen bei der Ermittlung eines Wertes zu helfen, bietet Zammad eine "
+"Funktion zur Berechnung eines Vorschlags. Wenn sie ausgeführt wird, fordert "
+"sie Sie auf, ein paar ganzzahlige Werte einzugeben und verwendet zusätzlich "
+"intern bekannte Werte für die Berechnung. Beachten Sie, dass der Vorschlag "
+"instanzspezifisch ist. Das bedeutet, dass Sie die Berechnung auf dem System "
+"durchführen müssen, auf dem Sie den `max_connection`-Wert anpassen wollen."
 
 #. type: Plain text
 #: src/en/reference/config-db-server.md:63
-#, fuzzy
-#| msgid "Run the following commands:"
 msgid "Run it by using the command:"
-msgstr "Führen Sie die folgenden Befehle aus:"
+msgstr "Führen Sie sie mit dem Befehl aus:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/config-db-server.md:64
 #, no-wrap
 msgid "rake zammad:db:max_connections\n"
-msgstr ""
+msgstr "rake zammad:db:max_connections\n"
 
 #. type: Title ###
 #: src/en/reference/config-db-server.md:68
-#, fuzzy, no-wrap
-#| msgid "Adjust Pool Size"
+#, no-wrap
 msgid "Adjust Value"
-msgstr "Poolgröße anpassen"
+msgstr "Wert anpassen"
 
 #. type: Plain text
 #: src/en/reference/config-db-server.md:71
@@ -9794,9 +9782,9 @@ msgstr "sed -i \"/max_connections/c\\max_connections = 2000\" <postgresql-config
 #. type: Plain text
 #: src/en/reference/config-db-server.md:77
 #: src/en/reference/config-db-server.md:108
-msgid "Apply changes by restarting postgresql and Zammad (in this order):"
+msgid "Apply changes by restarting PostgreSQL and Zammad (in this order):"
 msgstr ""
-"Wenden Sie die Änderungen an, indem Sie postgresql und Zammad neu starten "
+"Wenden Sie die Änderungen an, indem Sie PostgreSQL und Zammad neu starten "
 "(in dieser Reihenfolge):"
 
 #. type: Fenced code block (sh)
@@ -9814,11 +9802,7 @@ msgstr "PostgreSQL für größere Instanzen anpassen (optional)"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/config-db-server.md:84
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Check below settings first and ensure your system is able to provide\n"
-#| "the requirements! Below settings are what we found to be useful,\n"
-#| "everything else is out of scope of this documentation!\n"
+#, no-wrap
 msgid ""
 "Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found\n"
 "to be useful, everything else is out of scope of this documentation!\n"
@@ -9871,7 +9855,7 @@ msgstr "Rails-Konsole"
 #. type: Plain text
 #: src/en/reference/console.md:10
 msgid ""
-"Zammad uses Ruby on Rails so you can make use of the [rails console](http://"
+"Zammad uses Ruby on Rails so you can make use of the [Rails console](http://"
 "guides.rubyonrails.org/command_line.html){target=_blank}."
 msgstr ""
 "Zammad verwendet Ruby on Rails, so dass Sie die [Rails Konsole](http://"
@@ -10026,7 +10010,7 @@ msgstr "Safe Mode der Rails-Konsole"
 #. type: Plain text
 #: src/en/reference/console.md:84
 msgid ""
-"Normally, starting rails console requires certain third-party services to be "
+"Normally, starting Rails console requires certain third-party services to be "
 "up and running. You may receive errors and console will refuse to start in "
 "case they are not available."
 msgstr ""
@@ -10037,7 +10021,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/console.md:88
 msgid ""
-"However, it's possible to start rails console in safe mode by setting a "
+"However, it's possible to start Rails console in safe mode by setting a "
 "special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be "
 "ignored."
 msgstr ""
@@ -10808,7 +10792,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/console.md:451
-msgid "Change elasticsearch URL:"
+msgid "Change Elasticsearch URL:"
 msgstr "Ändern Sie die URL von Elasticsearch:"
 
 #. type: Fenced code block (ruby)
@@ -10819,7 +10803,7 @@ msgstr "Setting.set('es_url', 'http://127.0.0.1:9200')\n"
 
 #. type: Plain text
 #: src/en/reference/console.md:457
-msgid "Change elasticsearch user (e.g. for authentication):"
+msgid "Change Elasticsearch user (e.g. for authentication):"
 msgstr ""
 "Ändern Sie den Benutzer von Elasticsearch (z.B. für die Authentifizierung):"
 
@@ -10831,7 +10815,7 @@ msgstr "Setting.set('es_user', 'elasticsearch')\n"
 
 #. type: Plain text
 #: src/en/reference/console.md:463
-msgid "Change the elasticsearch password for authentication:"
+msgid "Change the Elasticsearch password for authentication:"
 msgstr "Ändern Sie das Elasticsearch-Passwort für die Authentifizierung:"
 
 #. type: Fenced code block (ruby)
@@ -12085,11 +12069,11 @@ msgstr "Übersicht"
 #: src/en/reference/docker-compose-scenarios.md:14
 msgid ""
 "If the \"vanilla\" Zammad stack doesn't cover your use-case, you can use one "
-"of the pre-defined scenarios. We don't recommend to change the compose files "
+"of the pre-defined scenarios. We don't recommend to change the Compose files "
 "locally, because it will be hard to keep track of upstream changes for the "
 "stack then. This is why you should either use Portainer's repository build "
-"method or clone the repository and update it regularly, when using docker "
-"compose."
+"method or clone the repository and update it regularly, when using Docker "
+"Compose."
 msgstr ""
 "Wenn der \"vanilla\" Zammad Stack Ihren Anwendungsfall nicht abdeckt, können "
 "Sie eines der vordefinierten Szenarien verwenden. Wir empfehlen, die Compose-"
@@ -12122,7 +12106,7 @@ msgstr "Hinzufügen eines Nginx Proxy Managers (NPM) zum Stack"
 
 #. type: Bullet: '  - '
 #: src/en/reference/docker-compose-scenarios.md:30
-msgid "Add an external docker network to Nginx"
+msgid "Add an external Docker network to Nginx"
 msgstr "Hinzufügen eines externen Docker-Netzwerks zum Nginx-Container"
 
 #. type: Bullet: '- '
@@ -12143,7 +12127,7 @@ msgstr "[Dienste extern verfügbar machen](#dienste-extern-verfugbar-machen)"
 
 #. type: Bullet: '  - '
 #: src/en/reference/docker-compose-scenarios.md:30
-msgid "Add an external docker network to Elasticsearch"
+msgid "Add an external Docker network to Elasticsearch"
 msgstr "Hinzufügen eines externen Docker-Netzwerks zum Elasticsearch-Container"
 
 #. type: Bullet: '  - '
@@ -12371,7 +12355,7 @@ msgstr "Externes Docker-Netzwerk zu Nginx hinzufügen"
 #: src/en/reference/docker-compose-scenarios.md:93
 msgid ""
 "If you already have a reverse proxy which takes care about the SSL "
-"termination, this scenario is helpful. It adds an external docker network to "
+"termination, this scenario is helpful. It adds an external Docker network to "
 "Zammad's included Nginx service to be able to access it from a reverse proxy "
 "that is not part of the Zammad stack's network."
 msgstr ""
@@ -12705,18 +12689,18 @@ msgstr "Lokale Anpassung des Stacks"
 #. type: Plain text
 #: src/en/reference/docker-compose-scenarios.md:190
 msgid ""
-"Sometimes it's necessary to apply local changes to the Zammad docker stack, "
+"Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
 "e.g. to include additional services. If you plan to do so, we recommend that "
 "you do not change the `docker-compose.yml` file, but instead create a local "
 "`docker-compose.override.yml` that includes all your modifications. Docker "
-"compose will [automatically load this file and merge its changes into your "
+"Compose will [automatically load this file and merge its changes into your "
 "stack](https://docs.docker.com/compose/multiple-compose-files/merge/)."
 msgstr ""
 "Manchmal ist es notwendig, lokale Änderungen am Zammad-Docker-Stack "
 "vorzunehmen, z.B. um zusätzliche Dienste einzubinden. Wenn Sie dies planen, "
 "empfehlen wir Ihnen, die Datei `docker-compose.yml` nicht zu ändern, sondern "
 "eine lokale `docker-compose.override.yml` zu erstellen, die alle Ihre "
-"Änderungen enthält. Docker-Compose wird [diese Datei automatisch laden und "
+"Änderungen enthält. Docker Compose wird [diese Datei automatisch laden und "
 "ihre Änderungen am Stack anwenden](https://docs.docker.com/compose/multiple-"
 "compose-files/merge/){target=_blank}."
 
@@ -12731,18 +12715,18 @@ msgstr "Umgebungsvariablen"
 #: src/en/reference/environment-variables.md:11
 msgid ""
 "Find the most important environment variables below with default values, if "
-"applicable. The variables for docker and package based installations can be "
+"applicable. The variables for Docker and package based installations can be "
 "different in some cases. You can find a badge in the column **Limited** with "
 "the following meaning:"
 msgstr ""
 "Nachfolgend finden Sie die wichtigsten Umgebungsvariablen mit "
-"Standardwerten, falls vorhanden. Die Variablen für docker- und paketbasierte "
+"Standardwerten, falls vorhanden. Die Variablen für Docker- und paketbasierte "
 "Installationen können in einigen Fällen unterschiedlich sein. In der Spalte "
 "**Beschränkung** finden Sie Icons mit der folgenden Bedeutung:"
 
 #. type: Bullet: '- '
 #: src/en/reference/environment-variables.md:15
-msgid "Only available for docker installations: ::d::"
+msgid "Only available for Docker installations: ::d::"
 msgstr "Nur für Docker-Installationen verfügbar: ::d::"
 
 #. type: Bullet: '- '
@@ -12760,13 +12744,13 @@ msgstr "Verfügbar für beide Installationsvarianten: kein Icon"
 #, no-wrap
 msgid ""
 "\n"
-"If you want to use a `.env` file in docker compose deployments, you can use the provided `.env.dist` file and copy it\n"
-"to `.env`. That way it will be picked up by docker compose automatically and not overwritten during updates.\n"
+"If you want to use a `.env` file in Docker Compose deployments, you can use the provided `.env.dist` file and copy it\n"
+"to `.env`. That way it will be picked up by Docker Compose automatically and not overwritten during updates.\n"
 "\n"
 msgstr ""
 "\n"
 "Wenn Sie eine `.env`-Datei in Docker Compose-Installationen verwenden möchten, können Sie die mitgelieferte `.env.dist`-Datei verwenden und sie\n"
-"als `.env` kopieren. Auf diese Weise wird sie von docker compose automatisch übernommen und bei Aktualisierungen nicht überschrieben.\n"
+"als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch übernommen und bei Aktualisierungen nicht überschrieben.\n"
 "\n"
 
 #. type: Title ##
@@ -12801,13 +12785,13 @@ msgstr ""
 msgid ""
 "| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
 "| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
+"| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad Docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
 "| AUTOWIZARD_JSON                                        | ::d::   | unset                               | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
 "| ZAMMAD_HTTP_TYPE                                       |         | unset                               | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
 "| ZAMMAD_FQDN                                            |         | unset                               | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
-"| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
+"| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in Docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
 "| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
 "| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
 msgstr ""
@@ -12840,8 +12824,8 @@ msgid ""
 "| ELASTICSEARCH_PORT       | ::d::   | `9200`                 | Provide a different port for Elasticsearch if needed.                                                                                                                                                         |\n"
 "| ELASTICSEARCH_SCHEMA     | ::d::   | `http`                 | By default, Elasticsearch is reachable via HTTP.                                                                                                                                                              |\n"
 "| ELASTICSEARCH_NAMESPACE  | ::d::   | `zammad`               | With this name space all Zammad related indexes will be created. Change this if you're using external clusters.                                                                                               |\n"
-"| ELASTICSEARCH_REINDEX    | ::d::   | unset                  | The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex manually, either set this variable to `true` or run the reindex command via docker manually. |\n"
-"| ELASTICSEARCH_SSL_VERIFY | ::d::   | `true`                 | Allows you to let the compose scripts ignore self signed SSL certificates for your Elasticsearch installation if needed.                                                                                      |\n"
+"| ELASTICSEARCH_REINDEX    | ::d::   | unset                  | The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex manually, either set this variable to `true` or run the reindex command via Docker manually. |\n"
+"| ELASTICSEARCH_SSL_VERIFY | ::d::   | `true`                 | Allows you to let the Compose scripts ignore self signed SSL certificates for your Elasticsearch installation if needed.                                                                                      |\n"
 "| ELASTICSEARCH_HEAP_SIZE  | ::d::   | `1G`                   | Set the available memory for Elasticsearch. If you face issues with ES and its performance, you should increase this value to a reasonable size.                                                              |\n"
 msgstr ""
 "| Variable                 | Beschränkung | Standardwert           | Beschreibung                                                                                                                                                                                                                                      |\n"
@@ -12866,7 +12850,7 @@ msgid ""
 "| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
 "| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
 "| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
-"| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional postgresql params to be appended to the database URI.                                                          |\n"
+"| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
 "| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
 msgstr ""
 "| Variable             | Beschränkung | Standardwert        | Beschreibung                                                                                                                                      |\n"
@@ -12876,7 +12860,7 @@ msgstr ""
 "| POSTGRESQL_USER      | ::d::        | `zammad`            | Der Datenbank Benutzer für Zammad.                                                                                                                |\n"
 "| POSTGRESQL_PASS      | ::d::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
 "| POSTGRESQL_DB        | ::d::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
-"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche Postgresql-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
+"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche PostgreSQL-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
 "| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
 
 #. type: Plain text
@@ -12890,9 +12874,9 @@ msgid ""
 "| NGINX_SERVER_NAME          | ::d::   | `_`                  | By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.                                                                                   |\n"
 "| NGINX_SERVER_SCHEME        | ::d::   | `\\$scheme`           | If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx) `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. |\n"
 "| NGINX_CLIENT_MAX_BODY_SIZE | ::d::   | unset                | Define the maximum size of data that a client can send to the server.                                                                                                                                   |\n"
-"| ZAMMAD_RAILSSERVER_HOST    | ::d::   | `zammad-railsserver` | Host name of the rails server container.                                                                                                                                                                |\n"
-"| ZAMMAD_RAILSSERVER_PORT    | ::d::   | `3000`               | Port of Zammad's rails server.                                                                                                                                                                          |\n"
-"| ZAMMAD_RAILS_PORT          | ::p::   | `3000`               | Port of Zammad's rails server.                                                                                                                                                                          |\n"
+"| ZAMMAD_RAILSSERVER_HOST    | ::d::   | `zammad-railsserver` | Host name of the Rails server container.                                                                                                                                                                |\n"
+"| ZAMMAD_RAILSSERVER_PORT    | ::d::   | `3000`               | Port of Zammad's Rails server.                                                                                                                                                                          |\n"
+"| ZAMMAD_RAILS_PORT          | ::p::   | `3000`               | Port of Zammad's Rails server.                                                                                                                                                                          |\n"
 "| ZAMMAD_WEBSOCKET_HOST      | ::d::   | `zammad-websocket`   | Host name of Zammad's websocket server.                                                                                                                                                                 |\n"
 "| ZAMMAD_WEBSOCKET_PORT      | ::d::   | `6042`               | Port of Zammad's websocket server.                                                                                                                                                                      |\n"
 msgstr ""
@@ -12954,10 +12938,10 @@ msgstr ""
 msgid ""
 "| Variable                                  | Limited | Default Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n"
 "| ----------------------------------------- | ------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| ZAMMAD_WEB_CONCURRENCY                    |         | unset         | Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-railsserver's CPU setting should match the value from this variable.                                                                                                                                                                                                                                                              |\n"
-"| ZAMMAD_PROCESS_SESSION_<br>JOBS_WORKERS   |         | unset         | How many instances of the session worker to run at a time. Increasing this value can speed up background jobs (like the scheduler) when many users are on Zammad at once. However, it is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of workers can consume a lot of resources! In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables. |\n"
-"| ZAMMAD_PROCESS_SCHEDULED_<br>JOBS_WORKERS |         | unset         | Allows spawning `1` independent scheduled jobs worker to release pressure from Zammad's background worker. Maximum number of workers: `1`. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                   |\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>JOBS_WORKERS   |         | unset         | Allows spawning `n` delayed jobs workers to release pressure from Zammad's background worker. In case you applied [docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                                                                |\n"
+"| ZAMMAD_WEB_CONCURRENCY                    |         | unset         | Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-railsserver's CPU setting should match the value from this variable.                                                                                                                                                                                                                                                              |\n"
+"| ZAMMAD_PROCESS_SESSION_<br>JOBS_WORKERS   |         | unset         | How many instances of the session worker to run at a time. Increasing this value can speed up background jobs (like the scheduler) when many users are on Zammad at once. However, it is not useful to adjust this setting if you have less than 40 active users at a time. Increasing the amount of workers can consume a lot of resources! In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables. |\n"
+"| ZAMMAD_PROCESS_SCHEDULED_<br>JOBS_WORKERS |         | unset         | Allows spawning `1` independent scheduled jobs worker to release pressure from Zammad's background worker. Maximum number of workers: `1`. In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                   |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>JOBS_WORKERS   |         | unset         | Allows spawning `n` delayed jobs workers to release pressure from Zammad's background worker. In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler CPU setting should match the sum of all worker settings variables.                                                                                                                                                                                                                                                |\n"
 msgstr ""
 "| Variable                                  | Beschränkung | Standardwert  | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
 "| ----------------------------------------- | ------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -12975,11 +12959,11 @@ msgstr "Umgebungsvariablen setzen"
 #. type: Plain text
 #: src/en/reference/environment-variables.md:110
 msgid ""
-"It depends on how you installed Zammad (package, docker). Either set it via "
+"It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
 "setting variables via command line (e.g. `export VARIABLE=value)`, place an "
 "`.env` file in the directory or even use a GUI like Portainer to define them "
-"for a docker installation."
+"for a Docker installation."
 msgstr ""
 "Es hängt davon ab, wie Sie Zammad installiert haben (Paket, Docker). "
 "Entweder setzen Sie sie über den Befehl `zammad config`, wie Sie unten sehen "
@@ -16513,11 +16497,11 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Documentation\n"
-": You will probably have noticed already: you are reading a part of Zammad's\n"
+": You probably have noticed already: you are reading a part of Zammad's\n"
 "  documentation. 😉\n"
 msgstr ""
 "Dokumentation\n"
-": Sie haben es sicher schon gemerkt: Sie lesen gerade einen Teil der Dokumentation der\n"
+": Sie haben es sicher schon gemerkt: Sie lesen gerade einen Teil der\n"
 "  Zammad-Dokumentation 😉 .\n"
 
 #. type: Plain text
@@ -16542,13 +16526,13 @@ msgstr ""
 msgid ""
 "Escalation\n"
 ": An escalation is what happens after the deadline for a ticket has passed. You\n"
-"  can configure it with Zammad's SLAs. An escalated ticket is marked red in your\n"
-"  taskbar and the overviews.\n"
+"  can configure it within Zammad's SLA (Service Level Agreement) feature. An\n"
+"  escalated ticket is marked red in your taskbar and the overviews.\n"
 msgstr ""
 "Eskalation\n"
 ": Eine Eskalation ist das, was passiert, nachdem die Frist für ein Ticket abgelaufen ist. Sie\n"
-"  können sie mit den SLAs von Zammad konfigurieren. Ein eskaliertes Ticket wird in Ihrer\n"
-"  Taskleiste und in den Übersichten rot markiert.\n"
+"  können sie innerhalb der SLA-Funktion (Service Level Agreement) von Zammad konfigurieren. Ein\n"
+"  eskaliertes Ticket wird in Ihrer Navigationsleiste und in Übersichten rot markiert.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:150
@@ -16575,14 +16559,14 @@ msgid ""
 "  into Zammad. It has various benefits: not only is it faster but it also\n"
 "  means that your users will have to remember fewer passwords.\n"
 "  Zammad currently supports more than ten login providers, such as Facebook,\n"
-"  GitHub, GitLab, Google, or Microsoft / Office365.\n"
+"  GitHub, GitLab, Google, or Microsoft.\n"
 msgstr ""
 "Externe Authentifizierung\n"
 ": Die externe Authentifizierung ist eine einfache Option für Ihre Benutzer, sich mit einem Klick\n"
 "  bei Zammad anzumelden. Sie hat verschiedene Vorteile: Sie ist nicht nur schneller, sondern bedeutet auch,\n"
 "  dass sich Ihre Benutzer weniger Passwörter merken müssen.\n"
 "  Zammad unterstützt derzeit mehr als zehn Login-Anbieter, wie z.B. Facebook,\n"
-"  GitHub, GitLab, Google, oder Microsoft / Office365.\n"
+"  GitHub, GitLab, Google, oder Microsoft.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:162
@@ -16637,12 +16621,12 @@ msgid ""
 "GitHub\n"
 ": GitHub is a service for the version management of software development\n"
 "  projects. It uses Git, a software that tracks changes in file sets.\n"
-"  Here at Zammad, we use it to maintain our repository.\n"
+"  Here at Zammad, we use it to maintain and enhance our code.\n"
 msgstr ""
 "GitHub\n"
 ": GitHub ist ein Dienst für die Versionsverwaltung von Softwareentwicklungsprojekten.\n"
 "  Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.\n"
-"  Hier bei Zammad verwenden wir es, um unser Repository zu verwalten.\n"
+"  Hier bei Zammad verwenden wir es, um unseren Code zu verwalten und zu erweitern.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:183
@@ -16650,23 +16634,23 @@ msgstr ""
 msgid ""
 "  As Zammad is an open-source project, many developers and tech-lovers from all\n"
 "  over the world contribute to it. GitHub is where we coordinate all of this.\n"
-"  Follow the link to find [our repository](https://github.com/zammad/zammad){target=_blank}.\n"
+"  Follow the link to find [our repositories](https://github.com/zammad){target=_blank}.\n"
 msgstr ""
 "  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen\n"
 "  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.\n"
-"  Folgen Sie dem Link um einen Blick in [das Repository](https://github.com/zammad/zammad){target=_blank} zu werfen.\n"
+"  Folgen Sie dem Link um einen Blick in [die Repositories](https://github.com/zammad){target=_blank} zu werfen.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:187
 #, no-wrap
 msgid ""
-"  Besides our own repo, Zammad also has an integration for GitHub.\n"
-"  It creates a data exchange that shows you all relevant information about your\n"
+"  Besides our own repos, Zammad also has an integration for GitHub.\n"
+"  Using it allows you to show all relevant information about your\n"
 "  issues directly in a sidebar tab, such as status or assignees.\n"
 msgstr ""
-"  Neben unserem eigenen Repo hat Zammad auch eine Integration für GitHub.\n"
-"  Sie schafft einen Datenaustausch, der Ihnen alle relevanten Informationen über Ihre\n"
-"  Issues direkt in einem Tab in der Seitenleiste anzeigt, wie z.B. den Status oder zugewiesene Personen.\n"
+"  Neben unseren eigenen Repos hat Zammad auch eine Integration für GitHub.\n"
+"  Damit können Sie alle relevanten Informationen über Ihre\n"
+"  Issues direkt in einem Seitenleisten-Tab anzeigen, wie z.B. den Status oder zugewiesene Personen.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:191
@@ -16694,30 +16678,23 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:200
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Grafana\n"
+#| ": Grafana is an open-source reporting tool. Hosted customers with a Plus plan\n"
+#| "  can use it to receive detailed metrics of their instance.\n"
 msgid ""
 "Grafana\n"
-": Grafana is an open-source reporting tool.\n"
-"  Zammad users on the Plus plan can integrate it into their instance and\n"
-"  receive detailed analytics on their performance.\n"
+": Grafana is an open-source reporting tool. It Elasticsearch as data source.\n"
+"  Hosted customers with a Plus plan can use it to get detailed statistics of\n"
+"  their instance. Self hosting Zammad users can use Grafana as well.\n"
 msgstr ""
 "Grafana\n"
-": Grafana ist ein Open-Source-Tool für Berichte.\n"
-"  Zammad Benutzer mit dem Plus-Tarif können es in ihre Instanz integrieren und\n"
-"  detaillierte Analysen über ihre Leistung erhalten.\n"
+": Grafana ist ein Open-Source-Tool für Berichte. Hosting-Kunden mit einem Plus-Tarif\n"
+"  können es nutzen, um detaillierte Metriken ihrer Instanz zu erhalten.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:203
-#, no-wrap
-msgid ""
-"  Hooking up Grafana to Elasticsearch is an possibility you can do on your\n"
-"  on-premise installation as well.\n"
-msgstr ""
-"  Die Anbindung von Grafana an Elasticsearch ist eine Möglichkeit, die Sie\n"
-"  auch in Ihrer Premise-Installation vornehmen können.\n"
-
-#. type: Plain text
-#: src/en/reference/glossary.md:212
+#: src/en/reference/glossary.md:209
 #, no-wrap
 msgid ""
 "Groups\n"
@@ -16739,7 +16716,7 @@ msgstr ""
 "  \"voll\" (oder keine davon).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:216
+#: src/en/reference/glossary.md:213
 #, no-wrap
 msgid ""
 "  If you have worked with the OTRS system in the past, you might remember the\n"
@@ -16751,7 +16728,7 @@ msgstr ""
 "  OTRS.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:222
+#: src/en/reference/glossary.md:219
 #, no-wrap
 msgid ""
 "Icinga\n"
@@ -16767,7 +16744,7 @@ msgstr ""
 "  einer Warnsituation auftritt.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:230
+#: src/en/reference/glossary.md:227
 #, no-wrap
 msgid ""
 "i-doit\n"
@@ -16786,7 +16763,7 @@ msgstr ""
 "  verlinken können. Sie können damit auch Zammad Tickets in i-doit erstellen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:234
+#: src/en/reference/glossary.md:231
 #, no-wrap
 msgid ""
 "Issue-Tracking System\n"
@@ -16798,7 +16775,7 @@ msgstr ""
 "  Zwei der bekanntesten Beispiele sind GitHub und GitLab.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:238
+#: src/en/reference/glossary.md:235
 #, no-wrap
 msgid ""
 "  Zammad is also often referred to as an issue-tracking system.\n"
@@ -16810,7 +16787,7 @@ msgstr ""
 "  Kundenebene und nicht auf die technische Ebene.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:243
+#: src/en/reference/glossary.md:240
 #, no-wrap
 msgid ""
 "Kibana <Badge type=\"info\" text=\"on-premise only\" />\n"
@@ -16824,7 +16801,7 @@ msgstr ""
 "  dass es für seine Analysen Daten aus Elasticsearch verwendet.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:246
+#: src/en/reference/glossary.md:243
 #, no-wrap
 msgid ""
 "  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
@@ -16834,7 +16811,7 @@ msgstr ""
 "  was die Nutzung der Helpdesk-Daten im Reporting-Tool erlaubt.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:251
+#: src/en/reference/glossary.md:248
 #, no-wrap
 msgid ""
 "Knowledge Base\n"
@@ -16848,7 +16825,7 @@ msgstr ""
 "  Definitionen, Prozesse, Anleitungen, Organigramme, usw.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:256
+#: src/en/reference/glossary.md:253
 #, no-wrap
 msgid ""
 "  Knowledge base articles can be either internal or external, so you can\n"
@@ -16862,7 +16839,7 @@ msgstr ""
 "  innerhalb Ihres Teams halten (für interne Prozesse oder Informationen für Teams).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:261
+#: src/en/reference/glossary.md:258
 #, no-wrap
 msgid ""
 "LDAP\n"
@@ -16875,7 +16852,7 @@ msgstr ""
 "  die Zuordnung von LDAP-Rollen zu Zammad-Rollen ist ebenfalls möglich.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:267
+#: src/en/reference/glossary.md:264
 #, no-wrap
 msgid ""
 "Macro\n"
@@ -16891,7 +16868,7 @@ msgstr ""
 "  dass kein Schritt vergessen wird.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:270
+#: src/en/reference/glossary.md:267
 #, no-wrap
 msgid ""
 "  You can define your own macros and perform actions based on all available\n"
@@ -16901,7 +16878,7 @@ msgstr ""
 "  Attributen im Ticket durchführen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:275
+#: src/en/reference/glossary.md:272
 #, no-wrap
 msgid ""
 "Mentions\n"
@@ -16915,7 +16892,7 @@ msgstr ""
 "  wird benachrichtigt und sie wird als Beobachter des Tickets eingetragen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:281
+#: src/en/reference/glossary.md:278
 #, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -16931,7 +16908,7 @@ msgstr ""
 "  Daten helfen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:286
+#: src/en/reference/glossary.md:283
 #, no-wrap
 msgid ""
 "Monit\n"
@@ -16945,31 +16922,31 @@ msgstr ""
 "  wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:290
+#: src/en/reference/glossary.md:287
 #, no-wrap
 msgid ""
-"Navigation\n"
-": Navigation means the left sidebar in Zammad which contains navigation tabs,\n"
+"Navigation Bar\n"
+": The navigation bar is the left sidebar in Zammad which contains navigation tabs,\n"
 "  the search, notifications and many more items, depending on your system.\n"
 msgstr ""
-"Navigation\n"
-": Unter Navigation versteht man die linke Seitenleiste in Zammad, die Tabs zur Navigation,\n"
-"  die Suche, Benachrichtigungen und viele weitere Elemente enthält, abhängig von Ihrem System.\n"
+"Navigationsleiste\n"
+": Die Navigations-Seitenleiste ist die linke Seitenleiste in Zammad, die Navigations-Tabs,\n"
+"  die Suche, Benachrichtigungen und - abhängig von Ihrem System - viele weitere Elemente enthalten kann.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:294
+#: src/en/reference/glossary.md:291
 #, no-wrap
 msgid ""
 "Navigation Tab\n"
-": One element of the navigation. You can have multiple tabs open and quickly\n"
+": One element of the navigation bar. You can have multiple tabs open and quickly\n"
 "  switch between them.\n"
 msgstr ""
-"Navigation Tab\n"
-": Ein Element der Navigation. Sie können mehrere Tabs geöffnet haben und schnell\n"
+"Navigations-Tab\n"
+": Ein Element der Navigations-Leiste. Sie können mehrere Tabs geöffnet haben und schnell\n"
 "  zwischen ihnen wechseln.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:299
+#: src/en/reference/glossary.md:296
 #, no-wrap
 msgid ""
 "Nagios\n"
@@ -16983,7 +16960,7 @@ msgstr ""
 "  erstellt wird.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:304
+#: src/en/reference/glossary.md:301
 #, no-wrap
 msgid ""
 "On-Premise\n"
@@ -16997,7 +16974,7 @@ msgstr ""
 "  Kunden von Zammad kontrolliert wird. Self-Hosting bedeutet das Gleiche.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:310
+#: src/en/reference/glossary.md:307
 #, no-wrap
 msgid ""
 "Organization\n"
@@ -17013,7 +16990,7 @@ msgstr ""
 "  Organisation.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:316
+#: src/en/reference/glossary.md:313
 #, no-wrap
 msgid ""
 "Owner\n"
@@ -17029,7 +17006,7 @@ msgstr ""
 "  der neue Besitzer weiß, was zu tun ist.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:322
+#: src/en/reference/glossary.md:319
 #, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -17045,7 +17022,7 @@ msgstr ""
 "  Übrigens: Auf die gleiche Weise können Sie auch zwei Tickets zu einem zusammenführen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:328
+#: src/en/reference/glossary.md:325
 #, no-wrap
 msgid ""
 "Placetel\n"
@@ -17060,7 +17037,7 @@ msgstr ""
 "  Kommunikation an einem Ort in Zammad haben.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:333
+#: src/en/reference/glossary.md:330
 #, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call log,\n"
@@ -17074,7 +17051,7 @@ msgstr ""
 "  den Agenten viel Zeit bei der Zuweisung von Anrufern spart.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:338
+#: src/en/reference/glossary.md:335
 #, no-wrap
 msgid ""
 "Priority\n"
@@ -17088,7 +17065,7 @@ msgstr ""
 "  weitere Prioritäten zu Ihrem Zammad hinzufügen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:346
+#: src/en/reference/glossary.md:343
 #, no-wrap
 msgid ""
 "Release\n"
@@ -17108,7 +17085,7 @@ msgstr ""
 "  kleinere Aktualisierungen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:350
+#: src/en/reference/glossary.md:347
 #, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases){target=_blank} you can\n"
@@ -17120,7 +17097,7 @@ msgstr ""
 "  was vor der Aktualisierung von Zammad zu beachten ist.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:354
+#: src/en/reference/glossary.md:351
 #, no-wrap
 msgid ""
 "Role\n"
@@ -17132,7 +17109,7 @@ msgstr ""
 "  Admin, Agent und Kunde.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:361
+#: src/en/reference/glossary.md:358
 #, no-wrap
 msgid ""
 "  _Admins_ have the most rights: they can define roles, permissions,\n"
@@ -17150,13 +17127,13 @@ msgstr ""
 "  Kundenoberfläche einsehen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:363
+#: src/en/reference/glossary.md:360
 #, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr "  Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:367
+#: src/en/reference/glossary.md:364
 #, no-wrap
 msgid ""
 "Second Level Navigation\n"
@@ -17168,7 +17145,7 @@ msgstr ""
 "  Profil-Einstellungen).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:371
+#: src/en/reference/glossary.md:368
 #, no-wrap
 msgid ""
 "Side(Panel)\n"
@@ -17180,7 +17157,7 @@ msgstr ""
 "  Ticket-Verknüpfung oder Zusammenführung von Tickets ins Bild schwebt.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:376
+#: src/en/reference/glossary.md:373
 #, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -17194,13 +17171,13 @@ msgstr ""
 "  Diese werden als Seitenleisten-Tabs bezeichnet.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:378
+#: src/en/reference/glossary.md:375
 #, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr "  Ein aktiver Seitenleisten-Tab ist der aktuell geöffnete Tab der Seitenleiste.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:384
+#: src/en/reference/glossary.md:381
 #, no-wrap
 msgid ""
 "Sipgate\n"
@@ -17216,7 +17193,7 @@ msgstr ""
 "  erfahren Sie im Anruferprotokoll, ob dieser Agent gerade verfügbar ist.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:391
+#: src/en/reference/glossary.md:388
 #, no-wrap
 msgid ""
 "SLA\n"
@@ -17234,7 +17211,7 @@ msgstr ""
 "  überwachen\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:395
+#: src/en/reference/glossary.md:392
 #, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the time\n"
@@ -17246,35 +17223,43 @@ msgstr ""
 "  eskaliert das Ticket.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:400
-#, no-wrap
+#: src/en/reference/glossary.md:398
+#, fuzzy, no-wrap
+#| msgid ""
+#| "S/MIME\n"
+#| ": S/MIME is the most widely-supported method for secure email communication.\n"
+#| "  By activating and configuring this integration in Zammad, messages sent from\n"
+#| "  Zammad can be signed and encrypted, depending on the recipient and if the\n"
+#| "  agent made manual adjustments.\n"
 msgid ""
 "S/MIME\n"
 ": S/MIME is the most widely-supported method for secure email communication.\n"
-"  By activating it in Zammad, all messages sent from Zammad will be signed and\n"
-"  encrypted.\n"
+"  By activating and configuring this integration in Zammad, outgoing messages\n"
+"  can be signed and encrypted and incoming messages can be decrypted and their\n"
+"  signature checked.\n"
 msgstr ""
 "S/MIME\n"
-": S/MIME ist die am weitesten verbreitete Methode für sichere E-Mail-Kommunikation.\n"
-"  Wenn Sie es in Zammad aktivieren, werden alle von Zammad aus gesendeten Nachrichten signiert und\n"
-"  verschlüsselt.\n"
+": S/MIME ist die am weitesten verbreitete Methode für die sichere Kommunikation per E-Mail.\n"
+"  Durch Aktivieren und Konfigurieren dieser Integration in Zammad können die von\n"
+"  Zammad gesendeten Nachrichten signiert und verschlüsselt werden, abhängig vom Empfänger und ob der\n"
+"  Agent manuelle Einstellungen vorgenommen hat.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:405
+#: src/en/reference/glossary.md:403
 #, no-wrap
 msgid ""
 "SSO\n"
 ": Single-sign-on (SSO) allows you to access all your systems and devices with\n"
 "  just one login. There are various providers that make this process easy and\n"
-"  secure. Zammad currently supports SSO via SAML and Shibboleth.\n"
+"  secure. Zammad currently supports SSO via different providers.\n"
 msgstr ""
 "SSO\n"
 ": Single-Sign-On (SSO) ermöglicht Ihnen den Zugriff auf alle Ihre Systeme und Geräte mit\n"
 "  nur einer Anmeldung. Es gibt verschiedene Anbieter, die diesen Prozess einfach und\n"
-"  sicher machen. Zammad unterstützt derzeit SSO über SAML und Shibboleth.\n"
+"  sicher machen. Zammad unterstützt SSO mittels verschiedener Provider.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:412
+#: src/en/reference/glossary.md:410
 #, no-wrap
 msgid ""
 "State\n"
@@ -17291,7 +17276,7 @@ msgstr ""
 "  und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:420
+#: src/en/reference/glossary.md:418
 #, no-wrap
 msgid ""
 "Tags\n"
@@ -17309,7 +17294,7 @@ msgstr ""
 "  Sie könnten aber auch auf der Art der Anfrage basieren, z.B. Erstattung, Liefer-Problem, Beschwerde.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:423
+#: src/en/reference/glossary.md:421
 #, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and assigned\n"
@@ -17319,7 +17304,7 @@ msgstr ""
 "  automatisch zugewiesen werden, zum Beispiel in Abhängigkeit von Schlüsselwörtern im Titel des Tickets.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:431
+#: src/en/reference/glossary.md:429
 #, no-wrap
 msgid ""
 "Text Module\n"
@@ -17339,7 +17324,7 @@ msgstr ""
 "  Schlüsselwörter oder Inhalte des Textbausteins nach dem [[:]][[:]] hinzufügen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:434
+#: src/en/reference/glossary.md:432
 #, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -17349,7 +17334,7 @@ msgstr ""
 "  `::ilff`, was zu `I look forward to your feedback` wird.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:439
+#: src/en/reference/glossary.md:437
 #, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -17363,7 +17348,7 @@ msgstr ""
 "  Angebots.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:445
+#: src/en/reference/glossary.md:443
 #, no-wrap
 msgid ""
 "User\n"
@@ -17379,31 +17364,467 @@ msgstr ""
 "  und Kunde sind.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:451
+#: src/en/reference/glossary.md:449
 #, no-wrap
 msgid ""
 "Webhooks\n"
 ": Webhooks are an easy way for systems to communicate with each\n"
-"  other and allow you to send real-time data to any other application.\n"
-"  We use them to allow our users to inform a third-party system about new\n"
-"  information in Zammad.\n"
+"  other and allow you to send data to any other application.\n"
+"  They allow you to inform a third-party system about new information in Zammad\n"
+"  (e.g. sending a notification for new and updated tickets to your Mattermost).\n"
 msgstr ""
 "Webhooks\n"
-": Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren.\n"
-"  Sie ermöglichen, Echtzeitdaten an jede andere Anwendung zu senden.\n"
-"  Dadurch haben Sie die Möglichkeit, ein Drittsystem über neue\n"
-"  Informationen in Zammad zu informieren.\n"
+": Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren\n"
+"  und erlauben es Ihnen, Daten an eine andere Anwendung zu senden.\n"
+"  Damit ist es möglich, ein Drittsystem über neue Informationen in Zammad zu informieren\n"
+"  (z.B. das Senden einer Benachrichtigung über neue und aktualisierte Tickets an Ihr Mattermost).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:454
+#: src/en/reference/glossary.md:452
 msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr "Zammad : Zammad ist der beste Helpdesk der Welt. Punkt."
 
 #. type: Plain text
-#: src/en/reference/glossary.md:455
+#: src/en/reference/glossary.md:453
 #, no-wrap
 msgid "</VPGlossary>\n"
 msgstr "</VPGlossary>\n"
+
+#. type: Title #
+#: src/en/reference/graphql.md:1 src/en/reference/graphql.md:6
+#, no-wrap
+msgid "GraphQL API"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:12
+msgid ""
+"In addition to Zammad's [REST API](rest-api/intro), you can fetch, "
+"manipulate and create data via the powerful and open-source [GraphQL API]"
+"(https://graphql.org/) too."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:16
+msgid ""
+"This documentation isn't intended to cover everything about GraphQL. It "
+"should give you a basic understanding about how you can fetch and create/"
+"manipulate data to build upon. For a comprehensive guide, have a look at "
+"[GraphQL's documentation](https://graphql.org/learn/)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:20
+msgid ""
+"GraphQL is used by many web services, even big ones. It became some kind of "
+"industry standard because of its efficiency and features. You can precisely "
+"request the data you require which minimizes unnecessary data transfers and "
+"searching the needle in a haystack."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:23
+msgid ""
+"Fetching the GraphQL schema of Zammad (called introspection) allows you to "
+"have an autocomplete feature and logic checks in your client while writing a "
+"request."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/graphql.md:24 src/en/tutorials/sso-kerberos.md:63
+#, no-wrap
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#. type: Plain text
+#: src/en/reference/graphql.md:27
+msgid ""
+"Following the next steps enables you to successfully send a simple request "
+"and receive data from Zammad."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:28
+#, fuzzy, no-wrap
+#| msgid "API clients"
+msgid "Clients"
+msgstr "API-Clients"
+
+#. type: Plain text
+#: src/en/reference/graphql.md:33
+msgid ""
+"To send request and receive responses, you need an API client. If you are "
+"already dealing with APIs, skip this section.  If you are new to the topic, "
+"search for a client which fits your needs. Depending on your operating "
+"system, you may have different options. Some examples for popular clients "
+"with GraphQL support are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+msgid "[Bruno](https://www.usebruno.com/downloads)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+msgid "[Insomnia](https://insomnia.rest/download)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:37
+msgid "[Postman](https://www.postman.com/downloads/)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/graphql.md:38 src/en/reference/rest-api/intro.md:31
+#, no-wrap
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#. type: Plain text
+#: src/en/reference/graphql.md:42
+msgid ""
+"If not already present, create a [token in the Zammad profile](/en/"
+"documentation/use/manage-profile#token-access) you want to use as API user. "
+"Depending what you want to achieve via API, set the permissions accordingly."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:45
+msgid ""
+"Make sure to copy it before closing the dialog because you can't view it "
+"again. In case it went wrong, simply create a new token."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:46
+#, no-wrap
+msgid "Prepare your Client"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:49
+msgid "Open your API client and set it up."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+msgid "Add your token from Zammad as bearer token."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+msgid ""
+"Create a request and add your Zammad domain with `/graphql` suffix, e.g. "
+"`https://fastlane.inc/graphql`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:53
+msgid "Fetch Zammad's GraphQL schema from introspection or load it from file."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:55
+msgid ""
+"Click on details to watch a screencast showing the basic steps using Bruno "
+"as client."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/graphql.md:56
+#, no-wrap
+msgid "<video controls=\"controls\" src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:60
+#, fuzzy, no-wrap
+#| msgid "Create a new ticket"
+msgid "Create a Request"
+msgstr "Erstellen eines neuen Tickets"
+
+#. type: Plain text
+#: src/en/reference/graphql.md:64
+msgid ""
+"All requests and responses are in JSON format. This means all information "
+"must be encapsulated in brackets and have a hierarchical structure."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:67
+msgid ""
+"Let's have a look at a request to fetch information from Zammad. Such a "
+"request starts with the string `query`, followed by an object you want to "
+"query."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:69
+msgid "Basic example to fetch users with their first and last name:"
+msgstr ""
+
+#. type: Fenced code block (gql :line-numbers)
+#: src/en/reference/graphql.md:70
+#, no-wrap
+msgid ""
+"query userName (\n"
+"  $userId: ID!\n"
+"  ) {\n"
+"  user(userId: $userId) {\n"
+"    firstname\n"
+"    lastname\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:83
+msgid ""
+"The `$userId` from line 2 defines a variable which is used as an ID. In the "
+"variables section of your client, provide the value for it. In this example, "
+"the variables section looks like this:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: src/en/reference/graphql.md:84
+#, no-wrap
+msgid ""
+"{\n"
+"  \"userId\": \"gid://zammad/User/2\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:93
+msgid ""
+"The value above is in the global ID format of Zammad's GraphQL "
+"implementation. Depending on which object type you want to deal with, "
+"replace the `User` by another object like `Ticket`, `Organization`, `Group`, "
+"etc. Zammad expects a numeric value as ID."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:96
+msgid ""
+"Starting with line 4 in the code block above is the actual request. This "
+"simple example just fetches the attributes `firstname` and `lastname` from "
+"the user with the ID 2."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:98
+msgid ""
+"Click on details to watch a screencast showing a basic request using a "
+"variable in Bruno."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/graphql.md:99
+#, no-wrap
+msgid "<video controls=\"controls\" src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:104
+msgid ""
+"To create or change data, replace the `query` by `mutation` in the request "
+"body."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/graphql.md:108
+msgid ""
+"The examples use variables for the different object types. Make sure to set "
+"it when using the examples."
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ticket\n"
+#| "\n"
+msgid ""
+"\n"
+"==== Ticket\n"
+"\n"
+msgstr ""
+"\n"
+"=== Ticket\n"
+"\n"
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/tickets/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/tickets/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/ticket-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/ticket-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== User\n"
+#| "\n"
+msgid ""
+"\n"
+"==== User\n"
+"\n"
+msgstr ""
+"\n"
+"=== Benutzer\n"
+"\n"
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/user-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/user-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/users/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/users/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Organization\n"
+#| "\n"
+msgid ""
+"\n"
+"==== Organization\n"
+"\n"
+msgstr ""
+"\n"
+"=== Organisation\n"
+"\n"
+
+#. type: Fenced div block (tabs|tabs)
+#: src/en/reference/graphql.md:109
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/organizations/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/organizations/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/graphql/organization-req.gql\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/graphql/organization-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/organizations/post-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/graphql.md:155
+#, no-wrap
+msgid "Appendix"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/graphql.md:157
+#, fuzzy, no-wrap
+#| msgid "Global Search"
+msgid "Global IDs"
+msgstr "Globale Suche"
+
+#. type: Fenced div block (info)
+#: src/en/reference/graphql.md:159
+#, no-wrap
+msgid ""
+"\n"
+"Replace the `{ID}` with a numeric value.\n"
+"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+msgid "`gid://zammad/Ticket/{ID}`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+msgid "`gid://zammad/User/{ID}`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/graphql.md:167
+msgid "`gid://zammad/Organization/{ID}`"
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/index.md:1
@@ -20065,12 +20486,6 @@ msgid ""
 msgstr ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
 "_(Third-Party; nur API-Client, keine \"gebrauchsfertige\" Anwendung)_"
-
-#. type: Title ##
-#: src/en/reference/rest-api/intro.md:31
-#, no-wrap
-msgid "Authentication"
-msgstr "Authentifizierung"
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:34
@@ -23228,13 +23643,13 @@ msgid ""
 "specific set of IDs. State types indicate how the state will work.\n"
 "\n"
 "As there's no endpoint for retrieving these, please use the\n"
-"[rails console](/en/reference/console).\n"
+"[Rails console](/en/reference/console).\n"
 msgstr ""
 "Der nachstehende Payload verwendet `state_type_id`, ein Instanz-spezifischer\n"
 "Satz von IDs. Die Statustypen geben an, wie der Status funktionieren wird.\n"
 "\n"
 "Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die\n"
-"[Rails Konsole](/de/reference/console).\n"
+"[Rails-Konsole](/de/reference/console).\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/states.md:54
@@ -25621,10 +26036,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:106
 msgid ""
-"In case you need a more exact search, you can turn it off via [rails console]"
+"In case you need a more exact search, you can turn it off via [Rails console]"
 "(/en/reference/console#disable-asciifold)."
 msgstr ""
-"Falls Sie eine genauere Suche benötigen, können Sie diese über [Rails "
+"Falls Sie eine genauere Suche benötigen, können Sie diese über [Rails-"
 "Konsole](/de/reference/console#asciifold-deaktivieren) deaktivieren."
 
 #. type: Fenced div block (tip)
@@ -25746,8 +26161,8 @@ msgstr "Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert is
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:161
-msgid "List installed elasticsearch plugins:"
-msgstr "Liste der installierten Elasticsearch-Plugins:"
+msgid "List installed Elasticsearch plugins:"
+msgstr "Auflisten der installierten Elasticsearch-Plugins:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:162
@@ -25790,7 +26205,7 @@ msgstr "Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und d
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:191
 msgid ""
-"Force Zammad to drop and rebuild the elasticsearch indexes, optionally with "
+"Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
 msgstr ""
 "Erzwingen, dass Zammad die Elasticsearch-Indizes löscht und neu aufbaut, "
@@ -25890,7 +26305,7 @@ msgstr "Docker Datei Handling Beispiele"
 #: src/en/tutorials/docker-file-handling.md:10
 msgid ""
 "If you're not sure how to handle the backup files and how to create the "
-"`restore` directory in the docker volume, you can find some examples below."
+"`restore` directory in the Docker volume, you can find some examples below."
 msgstr ""
 "Wenn Sie nicht sicher sind, wie Sie mit den Sicherungsdateien umgehen und "
 "wie Sie das Verzeichnis `restore` im Docker-Volume erstellen, finden Sie "
@@ -25949,7 +26364,7 @@ msgstr "**Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zamm
 #. type: Plain text
 #: src/en/tutorials/docker-file-handling.md:31
 msgid ""
-"To **obtain** your backup files from another docker compose deployment, one "
+"To **obtain** your backup files from another Docker Compose deployment, one "
 "way is to copy it to the host system with `docker compose cp`:"
 msgstr ""
 "Um Ihre Sicherungsdateien aus einer anderen Docker Compose Installation zu "
@@ -26165,7 +26580,7 @@ msgstr "Backup & Restore (Docker)"
 #: src/en/tutorials/docker-restore.md:9
 msgid ""
 "This section shows some basics about the backup and restore process for a "
-"docker compose based deployment of Zammad."
+"Docker Compose based deployment of Zammad."
 msgstr ""
 "Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und "
 "Wiederherstellungsprozess für eine auf Docker Compose basierte Installation "
@@ -26175,7 +26590,7 @@ msgstr ""
 #: src/en/tutorials/docker-restore.md:15
 msgid ""
 "If you are familiar with volume based backup and restore procedures in "
-"docker, and perhaps already use a different method or tool, then you can "
+"Docker, and perhaps already use a different method or tool, then you can "
 "keep using it. A backup would typically mean shutting down the stack to "
 "ensure all in-memory files get written to disk, then backing up the volume "
 "contents, and then starting the stack again. When using such method, you can "
@@ -26198,7 +26613,7 @@ msgstr ""
 #: src/en/tutorials/docker-restore.md:17
 msgid ""
 "The rest of this page describes the built-in backup and restore mechanism of "
-"Zammad's docker compose stack."
+"Zammad's Docker Compose stack."
 msgstr ""
 "Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess "
 "von Zammads Docker Compose Stack."
@@ -26206,10 +26621,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/docker-restore.md:21
 msgid ""
-"If you're familiar with docker, the sections below include the information "
-"you'll need. The [docker file handling](/en/tutorials/docker-file-handling) "
+"If you're familiar with Docker, the sections below include the information "
+"you'll need. The [Docker file handling](/en/tutorials/docker-file-handling) "
 "page covers some examples about how to handle the backup files and to copy "
-"it into a docker volume to restore it."
+"it into a Docker volume to restore it."
 msgstr ""
 "Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt unten die "
 "Informationen, die Sie benötigen. Die Seite [Docker Datei Handling](/de/"
@@ -26272,7 +26687,7 @@ msgid ""
 "Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
 "volume of the **zammad-backup** container. Be aware that the restore process "
 "always uses the latest backup according to the timestamp of the file name. "
-"Only backups from package and docker installations are supported by this "
+"Only backups from package and Docker installations are supported by this "
 "built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
 "they link to an unknown location for the restore process."
 msgstr ""
@@ -29685,12 +30100,6 @@ msgstr ""
 "sollten unbedingt wissen, was Sie tun. Andernfalls kann leicht eine Sicherheitslücke\n"
 "entstehen.\n"
 
-#. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:63
-#, no-wrap
-msgid "Getting Started"
-msgstr "Erste Schritte"
-
 #. type: Fenced div block (tip)
 #: src/en/tutorials/sso-kerberos.md:65
 #, no-wrap
@@ -30001,8 +30410,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:182
-msgid "Turn off nginx:"
-msgstr "Schalten Sie nginx aus:"
+msgid "Turn off Nginx:"
+msgstr "Nginx stoppen:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:183
@@ -31039,12 +31448,12 @@ msgstr "Webserver-Konfiguration"
 msgid ""
 "This guide is only relevant for package installations. During the "
 "installation, Zammad tries to automatically install a configuration file to "
-"your nginx.  You can find example configuration files for your webserver in "
+"your Nginx.  You can find example configuration files for your webserver in "
 "the `contrib/` directory of your Zammad installation."
 msgstr ""
 "Diese Anleitung ist nur für Paket-Installationen relevant. Während der "
 "Installation versucht Zammad, automatisch eine Konfigurationsdatei für Ihren "
-"nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren "
+"Nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren "
 "Webserver im Verzeichnis `contrib/` Ihrer Zammad-Installation."
 
 #. type: Plain text
@@ -31109,9 +31518,16 @@ msgstr "Let's Encrypt"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:38
+#, fuzzy
+#| msgid ""
+#| "There are two common tools to get certificates, to which your find a "
+#| "basic configuration below: [certbot](https://certbot.eff.org/instructions)"
+#| "{target=_blank} and [acme.sh](https://github.com/acmesh-official/acme.sh/"
+#| "wiki){target=_blank}.  Have a look at their documentation for further "
+#| "configuration details and other examples."
 msgid ""
 "There are two common tools to get certificates, to which your find a basic "
-"configuration below: [certbot](https://certbot.eff.org/instructions)"
+"configuration below: [Certbot](https://certbot.eff.org/instructions)"
 "{target=_blank} and [acme.sh](https://github.com/acmesh-official/acme.sh/"
 "wiki){target=_blank}.  Have a look at their documentation for further "
 "configuration details and other examples."
@@ -31124,15 +31540,71 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:39
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "===certbot\n"
+#| "\n"
+#| "If not happened automatically, you have to install the Nginx or Apache plugin\n"
+#| "for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
+#| "\n"
+#| "During the first certbot run it will request additional information once.\n"
+#| "Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
+#| "`nginx` to match your setup.\n"
+#| "\n"
+#| "```sh\n"
+#| "certbot --<webserver> -d zammad.example.com\n"
+#| "```\n"
+#| "\n"
+#| "Certbot will now attempt to issue a certificate for you. If successful,\n"
+#| "certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
+#| "automatically. You can choose to not redirect if you plan to use the sample\n"
+#| "configuration of Zammad.\n"
+#| "\n"
+#| "From now on, certbot will automatically renew your installed certificates if\n"
+#| "they’re valid for 30 days or less.\n"
+#| "\n"
+#| "===acme.sh\n"
+#| "\n"
+#| "Change the default certificate authority to Let's encrypt:\n"
+#| "\n"
+#| "```sh\n"
+#| "acme.sh --set-default-ca  --server letsencrypt\n"
+#| "```\n"
+#| "\n"
+#| "Issue your certificate and replace `<webserver>` in the following command\n"
+#| "with either `apache` or `nginx` or `standalone` for other webserver.\n"
+#| "\n"
+#| "```sh\n"
+#| "acme.sh --issue --<webserver> -d zammad.example.com\n"
+#| "```\n"
+#| "\n"
+#| "It is not recommended to use the stored certificates directly. You should\n"
+#| "install the certificate to a directory of your choice instead as you can see\n"
+#| "in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
+#| "but you can use any directory you like.\n"
+#| "\n"
+#| "Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
+#| "\n"
+#| "```sh\n"
+#| "acme.sh --install-cert -d zammad.example.com \\\n"
+#| "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
+#| "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
+#| "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
+#| "    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
+#| "```\n"
+#| "\n"
+#| "From now on, acme.sh will automatically renew your installed certificates if\n"
+#| "they’re valid for 30 days or less.\n"
+#| "\n"
 msgid ""
 "\n"
-"===certbot\n"
+"===Certbot\n"
 "\n"
-"If not happened automatically, you have to install the nginx or apache plugin\n"
-"for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
+"If not happened automatically, you have to install the Nginx or Apache plugin\n"
+"for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
 "\n"
-"During the first certbot run it will request additional information once.\n"
+"During the first Certbot run it will request additional information once.\n"
 "Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
 "`nginx` to match your setup.\n"
 "\n"
@@ -31141,16 +31613,16 @@ msgid ""
 "```\n"
 "\n"
 "Certbot will now attempt to issue a certificate for you. If successful,\n"
-"certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
+"Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
 "automatically. You can choose to not redirect if you plan to use the sample\n"
 "configuration of Zammad.\n"
 "\n"
-"From now on, certbot will automatically renew your installed certificates if\n"
+"From now on, Certbot will automatically renew your installed certificates if\n"
 "they’re valid for 30 days or less.\n"
 "\n"
 "===acme.sh\n"
 "\n"
-"Change the default certificate authority to Let's encrypt:\n"
+"Change the default certificate authority to Let's Encrypt:\n"
 "\n"
 "```sh\n"
 "acme.sh --set-default-ca  --server letsencrypt\n"
@@ -31185,11 +31657,11 @@ msgstr ""
 "\n"
 "===Certbot\n"
 "\n"
-"Falls nicht automatisch geschehen, müssen Sie das nginx- oder apache-Plugin für certbot\n"
+"Falls nicht automatisch geschehen, müssen Sie das Nginx- oder Apache-Plugin für Certbot\n"
 "installieren:\n"
 "`python3-certbot-nginx` oder `python3-certbot-apache`\n"
 "\n"
-"Während des ersten certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.\n"
+"Während des ersten Certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.\n"
 "Ersetzen Sie `<webserver>` im folgenden Befehl entweder durch `apache`, `httpd` oder\n"
 "`nginx`, je nach Ihrer Konfiguration.\n"
 "\n"
@@ -31198,10 +31670,10 @@ msgstr ""
 "```\n"
 "\n"
 "Certbot wird nun versuchen, ein Zertifikat für Sie auszustellen. Falls erfolgreich,\n"
-"wird certbot Sie fragen, ob Sie `[1] nicht umleiten` oder automatisch `[2] umleiten` wollen.\n"
+"wird Certbot Sie fragen, ob Sie `[1] nicht umleiten` oder automatisch `[2] umleiten` wollen.\n"
 "Sie können `nicht umleiten` wählen, wenn Sie unserem Beispiel folgen wollen.\n"
 "\n"
-"Von nun an erneuert certbot automatisch Ihre installierten Zertifikate, wenn\n"
+"Von nun an erneuert Certbot automatisch Ihre installierten Zertifikate, wenn\n"
 "sie noch 30 Tage oder kürzer gültig sind.\n"
 "\n"
 "===acme.sh\n"
@@ -31394,10 +31866,10 @@ msgstr "Schritt 4 - Speichern und neu laden"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:155
 msgid ""
-"Reload your nginx with `sudo systemctl reload nginx` to apply your "
+"Reload your Nginx with `sudo systemctl reload nginx` to apply your "
 "configuration changes."
 msgstr ""
-"Laden Sie Ihr nginx mit `sudo systemctl reload nginx` neu, um Ihre "
+"Laden Sie Nginx mit `sudo systemctl reload nginx` neu, um die "
 "Konfigurationsänderungen zu übernehmen."
 
 #. type: Plain text
@@ -31657,11 +32129,34 @@ msgstr "Schritt 6 - Speichern und neu laden"
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:282
 msgid ""
-"Reload your apache with `sudo systemctl reload apache2` to apply your "
+"Reload your Apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "  Self hosting Zammad users can connect Grafana to their Elasticsearch as well.\n"
+#~ msgstr "  Nutzer einer selbst gehosteten Instanz können Grafana ebenfalls mit Elasticsearch verbinden.\n"
+
+#~ msgid ""
+#~ "After the stack is ready, you can access Zammad via the configured docker "
+#~ "host and port, e.g. `http://localhost:8080/`."
+#~ msgstr ""
+#~ "Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten "
+#~ "Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`."
+
+#, no-wrap
+#~ msgid "docker-compose up -d\n"
+#~ msgstr "docker-compose up -d\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "  Hooking up Grafana to Elasticsearch is an possibility you can do on your\n"
+#~ "  on-premise installation as well.\n"
+#~ msgstr ""
+#~ "  Die Anbindung von Grafana an Elasticsearch ist eine Möglichkeit, die Sie\n"
+#~ "  auch in Ihrer Premise-Installation vornehmen können.\n"
 
 #~ msgid ""
 #~ "The following POST request fetches an existing summary, if there is one "
@@ -32617,36 +33112,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Um die folgenden Installationsschritte durchzuführen, müssen Sie "
 #~ "möglicherweise zusätzliche Tools wie curl, gnupg und andere installieren."
-
-#, no-wrap
-#~ msgid ""
-#~ "\n"
-#~ "=== Ticket\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "=== Ticket\n"
-#~ "\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "\n"
-#~ "=== User\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "=== Benutzer\n"
-#~ "\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "\n"
-#~ "=== Organization\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "=== Organisation\n"
-#~ "\n"
 
 #~ msgid "Suggested next steps (optional)"
 #~ msgstr "Vorgeschlagene nächste Schritte (optional)"

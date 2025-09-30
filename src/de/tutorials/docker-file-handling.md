@@ -5,8 +5,9 @@ title: 'Docker Datei Handling Beispiele'
 
 # Docker Datei Handling Beispiele
 
-If you're not sure how to handle the backup files and how to create the
-`restore` directory in the Docker volume, you can find some examples below.
+Wenn Sie nicht sicher sind, wie Sie mit den Sicherungsdateien umgehen und
+wie Sie das Verzeichnis `restore` im Docker-Volume erstellen, finden Sie
+unten einige Beispiele.
 
 ## Wiederherstellung innerhalb eines Stacks
 
@@ -28,8 +29,9 @@ Starten Sie nun den Stack, um den Wiederherstellungsprozess durchzuführen.
 
 **Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zammad-backup.
 
-To **obtain** your backup files from another Docker Compose deployment, one
-way is to copy it to the host system with `docker compose cp`:
+Um Ihre Sicherungsdateien aus einer anderen Docker Compose Installation zu
+**holen**, können Sie diese mit `docker compose cp` auf das Hostsystem
+kopieren:
 
 ``` sh
 docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/

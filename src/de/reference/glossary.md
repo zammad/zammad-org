@@ -126,9 +126,9 @@ Dialog
   Bildschirms auftaucht. Ein Beispiel dafür ist der Dialog, der Sie fragt, Ihre
   ungespeicherten Änderungen zu speichern oder zu verwerfen.
 
-Documentation
-: You probably have noticed already: you are reading a part of Zammad's
-  documentation. 😉
+Dokumentation
+: Sie haben es sicher schon gemerkt: Sie lesen gerade einen Teil der
+  Zammad-Dokumentation 😉 .
 
 Elasticsearch
 : Zammad bietet eine Elasticsearch-Integration (eine freie und offene Suchmaschine)
@@ -136,10 +136,10 @@ Elasticsearch
   können sogar ein Berichts-Tool wie Grafana mit Elasticsearch verbinden, um
   leistungsfähige Berichte und Statistiken zu erstellen.
 
-Escalation
-: An escalation is what happens after the deadline for a ticket has passed. You
-  can configure it within Zammad's SLA (Service Level Agreement) feature. An
-  escalated ticket is marked red in your taskbar and the overviews.
+Eskalation
+: Eine Eskalation ist das, was passiert, nachdem die Frist für ein Ticket abgelaufen ist. Sie
+  können sie innerhalb der SLA-Funktion (Service Level Agreement) von Zammad konfigurieren. Ein
+  eskaliertes Ticket wird in Ihrer Navigationsleiste und in Übersichten rot markiert.
 
 Exchange-Integration
 : Die Exchange-Integration ermöglicht Ihnen die Synchronisierung Ihrer Kontakte aus Ihrem
@@ -147,12 +147,12 @@ Exchange-Integration
   wird, wird dies in Zammad reflektiert. Dies gibt Ihnen direkten Zugriff auf alle Ihre Kontakte
   in Ihrem Zammad.
 
-External Authentication
-: External authentication is an easy, one-click option for your users to log
-  into Zammad. It has various benefits: not only is it faster but it also
-  means that your users will have to remember fewer passwords.
-  Zammad currently supports more than ten login providers, such as Facebook,
-  GitHub, GitLab, Google, or Microsoft.
+Externe Authentifizierung
+: Die externe Authentifizierung ist eine einfache Option für Ihre Benutzer, sich mit einem Klick
+  bei Zammad anzumelden. Sie hat verschiedene Vorteile: Sie ist nicht nur schneller, sondern bedeutet auch,
+  dass sich Ihre Benutzer weniger Passwörter merken müssen.
+  Zammad unterstützt derzeit mehr als zehn Login-Anbieter, wie z.B. Facebook,
+  GitHub, GitLab, Google, oder Microsoft.
 
 Feature
 : Ein Feature ist eine bestimmte Fähigkeit oder Funktionalität, die Zammad Ihnen zur Verfügung
@@ -172,17 +172,17 @@ Feature-Sponsoring
   es sponsert, d.h. die Entwicklungskosten übernimmt.
 
 GitHub
-: GitHub is a service for the version management of software development
-  projects. It uses Git, a software that tracks changes in file sets.
-  Here at Zammad, we use it to maintain and enhance our code.
+: GitHub ist ein Dienst für die Versionsverwaltung von Softwareentwicklungsprojekten.
+  Er verwendet Git, eine Software, die Änderungen in Dateien verfolgt.
+  Hier bei Zammad verwenden wir es, um unseren Code zu verwalten und zu erweitern.
 
-  As Zammad is an open-source project, many developers and tech-lovers from all
-  over the world contribute to it. GitHub is where we coordinate all of this.
-  Follow the link to find [our repositories](https://github.com/zammad){target=_blank}.
+  Da Zammad ein Open-Source-Projekt ist, tragen viele Entwickler und Technikbegeisterte aus der ganzen
+  aus der ganzen Welt dazu bei. GitHub ist der Ort, an dem wir all dies koordinieren.
+  Folgen Sie dem Link um einen Blick in [die Repositories](https://github.com/zammad){target=_blank} zu werfen.
 
-  Besides our own repos, Zammad also has an integration for GitHub.
-  Using it allows you to show all relevant information about your
-  issues directly in a sidebar tab, such as status or assignees.
+  Neben unseren eigenen Repos hat Zammad auch eine Integration für GitHub.
+  Damit können Sie alle relevanten Informationen über Ihre
+  Issues direkt in einem Seitenleisten-Tab anzeigen, wie z.B. den Status oder zugewiesene Personen.
 
 GitLab
 : GitLab ist ähnlich wie GitHub.
@@ -278,13 +278,13 @@ Monit
   eine starke Gemeinschaft dahintersteht. Sie können es in Zammad integrieren. Auf diese Weise
   wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.
 
-Navigation Bar
-: The navigation bar is the left sidebar in Zammad which contains navigation tabs,
-  the search, notifications and many more items, depending on your system.
+Navigationsleiste
+: Die Navigations-Seitenleiste ist die linke Seitenleiste in Zammad, die Navigations-Tabs,
+  die Suche, Benachrichtigungen und - abhängig von Ihrem System - viele weitere Elemente enthalten kann.
 
-Navigation Tab
-: One element of the navigation bar. You can have multiple tabs open and quickly
-  switch between them.
+Navigations-Tab
+: Ein Element der Navigations-Leiste. Sie können mehrere Tabs geöffnet haben und schnell
+  zwischen ihnen wechseln.
 
 Nagios
 : Nagios ist ein weiteres Überwachungstool, das IT-Teams benachrichtigt, wenn ein Vorfall
@@ -393,9 +393,9 @@ S/MIME
   signature checked.
 
 SSO
-: Single-sign-on (SSO) allows you to access all your systems and devices with
-  just one login. There are various providers that make this process easy and
-  secure. Zammad currently supports SSO via different providers.
+: Single-Sign-On (SSO) ermöglicht Ihnen den Zugriff auf alle Ihre Systeme und Geräte mit
+  nur einer Anmeldung. Es gibt verschiedene Anbieter, die diesen Prozess einfach und
+  sicher machen. Zammad unterstützt SSO mittels verschiedener Provider.
 
 Status
 : Jedes Ticket hat einen Status, der den aktuellen Fortschritt bei der Lösung des
@@ -435,10 +435,10 @@ Benutzer
   und Kunde sind.
 
 Webhooks
-: Webhooks are an easy way for systems to communicate with each
-  other and allow you to send data to any other application.
-  They allow you to inform a third-party system about new information in Zammad
-  (e.g. sending a notification for new and updated tickets to your Mattermost).
+: Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren
+  und erlauben es Ihnen, Daten an eine andere Anwendung zu senden.
+  Damit ist es möglich, ein Drittsystem über neue Informationen in Zammad zu informieren
+  (z.B. das Senden einer Benachrichtigung über neue und aktualisierte Tickets an Ihr Mattermost).
 
 Zammad : Zammad ist der beste Helpdesk der Welt. Punkt.
 

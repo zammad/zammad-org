@@ -5,25 +5,29 @@ title: 'Backup & Restore (Docker)'
 
 # Backup & Restore (Docker)
 
-This section shows some basics about the backup and restore process for a
-Docker Compose based deployment of Zammad.
+Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und
+Wiederherstellungsprozess für eine auf Docker Compose basierte Installation
+von Zammad.
 
-If you are familiar with volume based backup and restore procedures in
-Docker, and perhaps already use a different method or tool, then you can
-keep using it. A backup would typically mean shutting down the stack to
-ensure all in-memory files get written to disk, then backing up the volume
-contents, and then starting the stack again. When using such method, you can
-consider using the [disable-backup-service
-scenario](/en/reference/docker-compose-scenarios) so that the built-in
-backup and restore mechanism of Zammad is not activated.
+Wenn Sie mit Volume-basierten Backup- und Restore-Prozessen in Docker
+vertraut sind und vielleicht bereits eine andere Methode oder ein anderes
+Tool verwenden, können Sie diese weiterhin nutzen. Ein Backup würde
+typischerweise bedeuten, den Stack herunterzufahren, um sicherzustellen,
+dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben
+werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack
+wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in
+Erwägung ziehen, das Szenario [Backup-Dienst
+deaktivieren](/de/reference/docker-compose-scenarios) zu verwenden, damit
+der integrierte Backup- und Restore-Prozess von Zammad nicht aktiviert wird.
 
-The rest of this page describes the built-in backup and restore mechanism of
-Zammad's Docker Compose stack.
+Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess
+von Zammads Docker Compose Stack.
 
-If you're familiar with Docker, the sections below include the information
-you'll need. The [Docker file handling](/en/tutorials/docker-file-handling)
-page covers some examples about how to handle the backup files and to copy
-it into a Docker volume to restore it.
+Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt unten die
+Informationen, die Sie benötigen. Die Seite [Docker Datei
+Handling](/de/tutorials/docker-file-handling) enthält einige Beispiele für
+den Umgang mit Sicherungsdateien und das Kopieren in ein Docker-Volume, um
+es wiederherzustellen.
 
 ## Backup
 
@@ -41,13 +45,14 @@ unter `/var/tmp/zammad` gespeichert.
    `/opt/zammad/storage/` innerhalb des Volumes bereinigen. Der
    Wiederherstellungsprozess fügt dort nur Dateien hinzu bzw. überschreibt
    sie, es findet keine Bereinigung statt.
-4. Copy or move the backup files to `/var/tmp/zammad/restore/` inside the
-   volume of the **zammad-backup** container. Be aware that the restore
-   process always uses the latest backup according to the timestamp of the
-   file name. Only backups from package and Docker installations are
-   supported by this built-in backup method. Don't provide the
-   `latest_zammad_*.gz` files because they link to an unknown location for
-   the restore process.
+4. Kopieren oder verschieben Sie die Sicherungsdateien nach
+   `/var/tmp/zammad/restore/` innerhalb des Volumes des Containers
+   **zammad-backup**. Beachten Sie, dass der Wiederherstellungsprozess immer
+   die neueste Sicherung gemäß dem Zeitstempel des Dateinamens
+   verwendet. Nur Backups von Paket- und Docker-Installationen werden von
+   dieser eingebauten Backup-Methode unterstützt. Kopieren Sie nicht die
+   Dateien `latest_zammad_*.gz`, da sie auf einen für den
+   Wiederherstellungsprozess unbekannten Ort verweisen.
 5. Starten Sie den Stack. Der Wiederherstellungsprozess wird angestoßen,
    wenn das Verzeichnis `restore` erkannt wird und die Sicherungsdateien
    vorhanden sind.

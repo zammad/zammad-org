@@ -63,18 +63,18 @@ Zammad долази са подразумеваним алаткама помо�
 зависи од конфигурације ваше Zammad инстанце. Можете чак добити приступ и
 прилагођеним алаткама у случају да их је ваш администратор дефинисао.
 
-- **Expand draft into well-written section**: Uses your draft as a base and
-  tries to elaborate a proper text. It tries to add a structure and to
-  enhance clarity and conciseness and as well as removing misspellings and
-  grammar errors. You can even use it by providing only basic information
-  (e.g. via bullet points) and let the AI write the answer.
-- **Fix spelling and grammar**: Proofreads your text and removes spelling
-  and grammar mistakes.
-- **Summarize section to about half its current size**: Shrinks your text
-  while keeping the message and the tone of the text.
-- **Rewrite complex section and make it easy to understand**: Removes
-  unnecessary parts and rewrites your text in a clear and understandable
-  way.
+- **Препиши сложени одељак и учини га лаким за разумевање**: Користи ваш
+  нацрт као основу и покушава да га прошири у исполиран текст. Покушава да
+  одреди структуру и побољша јасноћу и прецизност као и да уклони грешке у
+  правопису и граматици. Могуће је искористити је прилагањем само основних
+  информација (нпр. путем листе са тачкама) и пуштањем вештачке
+  интелигенције да употпуни одговор.
+- **Исправи правопис и граматику**: Лекторише ваш текст и отклања грешке у
+  правопису и граматици.
+- **Сажми одељак на отприлике половину његове тренутне величине**: Скраћује
+  ваш текст уз задржавање поруке и тона оригиналног текста.
+- **Препиши сложени одељак и учини га лаким за разумевање**: Уклања
+  необавезне делове и преписује ваш текст у јасном и разумљивом стилу.
 
 ## AI агенти
 

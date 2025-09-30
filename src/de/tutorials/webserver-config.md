@@ -6,10 +6,10 @@ order: 3
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-This guide is only relevant for package installations. During the
-installation, Zammad tries to automatically install a configuration file to
-your Nginx.  You can find example configuration files for your webserver in
-the `contrib/` directory of your Zammad installation.
+Diese Anleitung ist nur für Paket-Installationen relevant. Während der
+Installation versucht Zammad, automatisch eine Konfigurationsdatei für Ihren
+Nginx zu installieren.  Sie finden Beispielkonfigurationsdateien für Ihren
+Webserver im Verzeichnis `contrib/` Ihrer Zammad-Installation.
 
 Für den Fall, dass dieser Standardansatz bei Ihnen nicht funktioniert,
 finden Sie hier einige Hinweise für Ihre Konfiguration. Sie können entweder
@@ -158,8 +158,8 @@ helfen sollte, Ihre Anforderungen zu erfüllen!
 
 #### Schritt 4 - Speichern und neu laden
 
-Reload your Nginx with `sudo systemctl reload nginx` to apply your
-configuration changes.
+Laden Sie Nginx mit `sudo systemctl reload nginx` neu, um die
+Konfigurationsänderungen zu übernehmen.
 
 Danach sollten Sie von unserem Einrichtungsassistenten begrüßt werden.
 Fahren Sie mit den [ersten Schritten in Zammad](/de/tutorials/first-steps)
@@ -291,8 +291,8 @@ ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 
 #### Schritt 6 - Speichern und neu laden
 
-Reload your Apache with `sudo systemctl reload apache2` to apply your
-configuration changes.
+Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre
+Konfigurationsänderungen zu übernehmen.
 
 Danach sollten Sie von unserem Einrichtungsassistenten begrüßt werden.
 Fahren Sie mit den [ersten Schritten in Zammad](/de/tutorials/first-steps)

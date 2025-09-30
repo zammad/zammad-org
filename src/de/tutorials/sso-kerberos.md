@@ -184,7 +184,7 @@ Dadurch ist Ihre Zammad-Instanz **offline**, bis Apache vollständig
 konfiguriert ist und läuft.
 :::
 
-Turn off Nginx:
+Nginx stoppen:
 
 ```sh
 sudo systemctl stop nginx
