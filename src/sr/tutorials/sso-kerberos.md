@@ -498,7 +498,7 @@ sudo systemctl restart apache2
 ## Корак 3: Укључите SSO пријаву за Zammad
 
 Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-_Settings > Security > Third-Party Applications_
+_Settings > Security > Third-party Applications_
 
 ::: tip
 On older versions of Zammad, visit `https://your.zammad.host/auth/sso`

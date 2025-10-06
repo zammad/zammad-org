@@ -10,7 +10,7 @@ This guide is about Grafana. If you want to use another tool, check if it
 supports Elasticsearch indexes. If yes, then you are good to go!
 :::
 
-Grafana is a third-party analytics/visualization application you can connect
+Grafana is a third party analytics/visualization application you can connect
 to Zammad (precisely: Elasticsearch). It can access the Elasticsearch
 index and visualize your Zammad data.
 

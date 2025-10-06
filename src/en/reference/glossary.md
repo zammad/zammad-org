@@ -25,7 +25,7 @@ Agent
 API
 : An API (Application Programming Interface) is a set of rules and protocols
   that allow different software applications to communicate with each other.
-  It allows you to connect third-party systems with your Zammad (e.g. social
+  It allows you to connect third party systems with your Zammad (e.g. social
   media, messengers, monitoring tools).
 
   You can learn more on our
@@ -444,7 +444,7 @@ User
 Webhooks
 : Webhooks are an easy way for systems to communicate with each
   other and allow you to send data to any other application.
-  They allow you to inform a third-party system about new information in Zammad
+  They allow you to inform a third party system about new information in Zammad
   (e.g. sending a notification for new and updated tickets to your Mattermost).
 
 Zammad

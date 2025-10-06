@@ -73,18 +73,19 @@ automatisch gelöscht.
 
 ## Externe Dienste
 
-Zammad nutzt für bestimmte Funktionen Webdienste Dritter, was bedeutet
-dass Benutzerdaten gelegentlich an Dritte gesendet oder offengelegt werden können.
-Diese Funktionen können im Admin-Bereich unter
-_Einstellungen > System > Services_ deaktiviert werden.
+Zammad utilizes third party web services for certain functions, meaning
+that user data may occasionally be sent or exposed to third parties.
+These functions can be individually disabled in the admin panel under
+_Settings > System > Services_.
 
 ::: info
-Standardmäßig sind die Services von Drittanbietern, auf die Zammad zurückgreift, meist
-von der Zammad Foundation selbst gehostet und verwaltet, aber Zammad
-kann angepasst werden, um stattdessen mit anderen Diensten zu kommunizieren.
+By default, the third party services that Zammad relies on are mostly
+ones hosted and managed by the Zammad Foundation itself, but Zammad
+can be extended to interface with other services instead.
 
-Der Quellcode für diese Integrationen der Drittanbieter-Services befindet
-sich in unserem [Repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+The source code for these third party service integrations can be
+found in
+[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
 ### Bilder

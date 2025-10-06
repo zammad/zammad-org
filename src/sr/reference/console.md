@@ -78,7 +78,7 @@ rails c
 
 ### Rails Console Safe Mode
 
-Normally, starting Rails console requires certain third-party services to be
+Normally, starting Rails console requires certain third party services to be
 up and running. You may receive errors and console will refuse to start in
 case they are not available.
 

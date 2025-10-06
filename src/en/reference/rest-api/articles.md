@@ -65,9 +65,9 @@ article type and e.g. recipient lists.
   twitter.
 
 `facebook feed post` & `facebook feed comment`
-: These articles types are used by Zammad's facebook channel. Technically
+: These articles types are used by Zammad's Facebook channel. Technically
   you can use these to automatically respond to existing requests via
-  facebook.
+  Facebook.
 
 `telegram personal-message`
 : Used by Zammad's Telegram channel. Technically you can use these to
