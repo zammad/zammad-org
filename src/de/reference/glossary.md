@@ -193,9 +193,9 @@ GitLab
   Zammads Tab in der Seitenleiste angezeigt werden.
 
 Grafana
-: Grafana is an open-source reporting tool. It Elasticsearch as data source.
-  Hosted customers with a Plus plan can use it to get detailed statistics of
-  their instance. Self hosting Zammad users can use Grafana as well.
+: Grafana ist ein Open-Source-Tool für Berichte. Es verwendet Elasticsearch als Datenquelle.
+  Gehostete Kunden mit einem Plus-Tarif können es nutzen, um detaillierte Statistiken über
+  ihre Instanz zu erhalten. Benutzer einer selbst gehosteten Instanz können Grafana ebenfalls nutzen.
 
 Gruppen
 : Gruppen sind ein Synonym für Abteilungen oder Bearbeitungsgruppen.
@@ -387,10 +387,10 @@ SLA
   eskaliert das Ticket.
 
 S/MIME
-: S/MIME is the most widely-supported method for secure email communication.
-  By activating and configuring this integration in Zammad, outgoing messages
-  can be signed and encrypted and incoming messages can be decrypted and their
-  signature checked.
+: S/MIME ist die am weitesten verbreitete Methode für die sichere Kommunikation per E-Mail.
+  Durch Aktivieren und Konfigurieren dieser Integration in Zammad können ausgehende Nachrichten
+  signiert und verschlüsselt werden und eingehende Nachrichten können entschlüsselt und ihre
+  Signatur geprüft werden.
 
 SSO
 : Single-Sign-On (SSO) ermöglicht Ihnen den Zugriff auf alle Ihre Systeme und Geräte mit

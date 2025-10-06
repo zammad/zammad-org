@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-30 09:44+0200\n"
-"PO-Revision-Date: 2025-09-30 11:59+0000\n"
+"POT-Creation-Date: 2025-09-30 12:08+0000\n"
+"PO-Revision-Date: 2025-10-01 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -217,6 +217,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -5926,19 +5938,18 @@ msgid ""
 "After creating the token, it gets displayed in a dialog only once. Make sure "
 "to copy it because there is no possibility to access it again."
 msgstr ""
+"Nachdem Sie das Token erstellt haben, wird es nur einmal in einem Dialogfeld "
+"angezeigt. Achten Sie darauf, es zu kopieren, da es keine Möglichkeit gibt, "
+"es erneut anzuzeigen."
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:104
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows user detail panel](/screenshots/cypress/user-"
-#| "profile.cy.js/user-menu-detail-panel.png)"
 msgid ""
 "![Screenshot shows side panel with created token and copy button](/"
 "screenshots/cypress/user-profile.cy.js/token-dialog.png)"
 msgstr ""
-"![Screenshot zeigt Benutzerinfo](/screenshots/cypress/user-profile.cy.js/"
-"user-menu-detail-panel.png)"
+"![Screenshot zeigt Seiten-Panel mit erstelltem Token und Kopierschaltfläche]"
+"(/screenshots/cypress/user-profile.cy.js/token-dialog.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:105
@@ -6045,10 +6056,6 @@ msgstr "Kalender"
 
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:140
-#, fuzzy
-#| msgid ""
-#| "Zammad allows you to subscribe to a calender feed (ical) to see tickets "
-#| "in your favorite calendar application."
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application."
@@ -7433,22 +7440,16 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:107
-#, fuzzy
-#| msgid ""
-#| "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
-#| "provides an easy [Letsencrypt](https://letsencrypt.org/) integration."
 msgid ""
 "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
 "provides an easy [Let's Encrypt](https://letsencrypt.org/) integration."
 msgstr ""
 "Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat eine "
-"grafische Benutzeroberfläche, die eine einfache [Letsencrypt](https://"
+"grafische Benutzeroberfläche, die eine einfache [Let's Encrypt](https://"
 "letsencrypt.org/)-Integration ermöglicht."
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/docker.md:107
-#, fuzzy
-#| msgid "Use a cloudflare tunnel, which provides SSL termination."
 msgid "Use a Cloudflare tunnel, which provides SSL termination."
 msgstr ""
 "Verwenden Sie einen Cloudflare-Tunnel, der eine SSL-Terminierung ermöglicht."
@@ -16678,11 +16679,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:200
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Grafana\n"
-#| ": Grafana is an open-source reporting tool. Hosted customers with a Plus plan\n"
-#| "  can use it to receive detailed metrics of their instance.\n"
+#, no-wrap
 msgid ""
 "Grafana\n"
 ": Grafana is an open-source reporting tool. It Elasticsearch as data source.\n"
@@ -16690,8 +16687,9 @@ msgid ""
 "  their instance. Self hosting Zammad users can use Grafana as well.\n"
 msgstr ""
 "Grafana\n"
-": Grafana ist ein Open-Source-Tool für Berichte. Hosting-Kunden mit einem Plus-Tarif\n"
-"  können es nutzen, um detaillierte Metriken ihrer Instanz zu erhalten.\n"
+": Grafana ist ein Open-Source-Tool für Berichte. Es verwendet Elasticsearch als Datenquelle.\n"
+"  Gehostete Kunden mit einem Plus-Tarif können es nutzen, um detaillierte Statistiken über\n"
+"  ihre Instanz zu erhalten. Benutzer einer selbst gehosteten Instanz können Grafana ebenfalls nutzen.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:209
@@ -17224,13 +17222,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:398
-#, fuzzy, no-wrap
-#| msgid ""
-#| "S/MIME\n"
-#| ": S/MIME is the most widely-supported method for secure email communication.\n"
-#| "  By activating and configuring this integration in Zammad, messages sent from\n"
-#| "  Zammad can be signed and encrypted, depending on the recipient and if the\n"
-#| "  agent made manual adjustments.\n"
+#, no-wrap
 msgid ""
 "S/MIME\n"
 ": S/MIME is the most widely-supported method for secure email communication.\n"
@@ -17240,9 +17232,9 @@ msgid ""
 msgstr ""
 "S/MIME\n"
 ": S/MIME ist die am weitesten verbreitete Methode für die sichere Kommunikation per E-Mail.\n"
-"  Durch Aktivieren und Konfigurieren dieser Integration in Zammad können die von\n"
-"  Zammad gesendeten Nachrichten signiert und verschlüsselt werden, abhängig vom Empfänger und ob der\n"
-"  Agent manuelle Einstellungen vorgenommen hat.\n"
+"  Durch Aktivieren und Konfigurieren dieser Integration in Zammad können ausgehende Nachrichten\n"
+"  signiert und verschlüsselt werden und eingehende Nachrichten können entschlüsselt und ihre\n"
+"  Signatur geprüft werden.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:403
@@ -17394,7 +17386,7 @@ msgstr "</VPGlossary>\n"
 #: src/en/reference/graphql.md:1 src/en/reference/graphql.md:6
 #, no-wrap
 msgid "GraphQL API"
-msgstr ""
+msgstr "GraphQL API"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:12
@@ -17403,6 +17395,9 @@ msgid ""
 "manipulate and create data via the powerful and open-source [GraphQL API]"
 "(https://graphql.org/) too."
 msgstr ""
+"Neben der [REST API](rest-api/intro) von Zammad können Sie Daten auch über "
+"die leistungsstarke und quelloffene [GraphQL API](https://graphql.org/) "
+"abrufen, bearbeiten und erstellen."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:16
@@ -17412,6 +17407,11 @@ msgid ""
 "manipulate data to build upon. For a comprehensive guide, have a look at "
 "[GraphQL's documentation](https://graphql.org/learn/)."
 msgstr ""
+"Diese Dokumentation ist nicht dazu gedacht, alles über GraphQL abzudecken. "
+"Sie soll Ihnen ein grundlegendes Verständnis dafür vermitteln, wie Sie Daten "
+"abrufen und erstellen/ändern können, um darauf aufzubauen. Eine umfassende "
+"Anleitung finden Sie in der [GraphQL-Dokumentation] (https://graphql.org/"
+"learn/)."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:20
@@ -17421,6 +17421,11 @@ msgid ""
 "request the data you require which minimizes unnecessary data transfers and "
 "searching the needle in a haystack."
 msgstr ""
+"GraphQL wird von vielen, auch großen, Webdiensten verwendet. Aufgrund seiner "
+"Effizienz und seiner Funktionen wurde es zu einer Art Industriestandard. Sie "
+"können genau die Daten anfordern, die Sie benötigen, wodurch unnötige "
+"Datenübertragungen und die Suche nach der Nadel im Heuhaufen minimiert "
+"werden."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:23
@@ -17429,6 +17434,9 @@ msgid ""
 "have an autocomplete feature and logic checks in your client while writing a "
 "request."
 msgstr ""
+"Das Abrufen des GraphQL-Schemas von Zammad (Introspection genannt) "
+"ermöglicht eine Autovervollständigung und Logikprüfung in Ihrem Client, "
+"während Sie eine Anfrage erstellen."
 
 #. type: Title ##
 #: src/en/reference/graphql.md:24 src/en/tutorials/sso-kerberos.md:63
@@ -17442,13 +17450,14 @@ msgid ""
 "Following the next steps enables you to successfully send a simple request "
 "and receive data from Zammad."
 msgstr ""
+"Wenn Sie die folgenden Schritte befolgen, können Sie erfolgreich eine "
+"einfache Anfrage senden und Daten von Zammad empfangen."
 
 #. type: Title ###
 #: src/en/reference/graphql.md:28
-#, fuzzy, no-wrap
-#| msgid "API clients"
+#, no-wrap
 msgid "Clients"
-msgstr "API-Clients"
+msgstr "Clients"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:33
@@ -17459,21 +17468,27 @@ msgid ""
 "system, you may have different options. Some examples for popular clients "
 "with GraphQL support are:"
 msgstr ""
+"Um Anfragen zu senden und Antworten zu erhalten, benötigen Sie einen API "
+"Client. Wenn Sie bereits mit APIs zu tun haben, können Sie diesen Abschnitt "
+"überspringen.  Wenn Sie neu auf dem Gebiet sind, suchen Sie nach einem "
+"Client, der Ihren Anforderungen entspricht. Je nach Betriebssystem haben Sie "
+"unterschiedliche Möglichkeiten. Einige Beispiele für beliebte Clients mit "
+"GraphQL-Unterstützung sind:"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:37
 msgid "[Bruno](https://www.usebruno.com/downloads)"
-msgstr ""
+msgstr "[Bruno](https://www.usebruno.com/downloads)"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:37
 msgid "[Insomnia](https://insomnia.rest/download)"
-msgstr ""
+msgstr "[Insomnia](https://insomnia.rest/download)"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:37
 msgid "[Postman](https://www.postman.com/downloads/)"
-msgstr ""
+msgstr "[Postman](https://www.postman.com/downloads/)"
 
 #. type: Title ##
 #: src/en/reference/graphql.md:38 src/en/reference/rest-api/intro.md:31
@@ -17488,6 +17503,10 @@ msgid ""
 "documentation/use/manage-profile#token-access) you want to use as API user. "
 "Depending what you want to achieve via API, set the permissions accordingly."
 msgstr ""
+"Falls noch nicht vorhanden, erstellen Sie ein [Token im Zammad-Profil](/de/"
+"documentation/use/manage-profile#token-zugriff), das Sie als API-Benutzer "
+"verwenden möchten. Je nachdem, worauf Sie per API zugreifen wollen, legen "
+"Sie die Berechtigungen entsprechend fest."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:45
@@ -17495,22 +17514,25 @@ msgid ""
 "Make sure to copy it before closing the dialog because you can't view it "
 "again. In case it went wrong, simply create a new token."
 msgstr ""
+"Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da "
+"Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben, "
+"erstellen Sie einfach ein neues Token."
 
 #. type: Title ###
 #: src/en/reference/graphql.md:46
 #, no-wrap
 msgid "Prepare your Client"
-msgstr ""
+msgstr "Client vorbereiten"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:49
 msgid "Open your API client and set it up."
-msgstr ""
+msgstr "Öffnen Sie Ihren API Client und richten Sie ihn ein."
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:53
 msgid "Add your token from Zammad as bearer token."
-msgstr ""
+msgstr "Fügen Sie Ihr Token von Zammad als Bearer-Token hinzu."
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:53
@@ -17518,11 +17540,15 @@ msgid ""
 "Create a request and add your Zammad domain with `/graphql` suffix, e.g. "
 "`https://fastlane.inc/graphql`."
 msgstr ""
+"Erstellen Sie einen Request und fügen Sie Ihre Zammad-Domain mit dem Suffix "
+"`/graphql` hinzu, z.B. `https://fastlane.inc/graphql`."
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:53
 msgid "Fetch Zammad's GraphQL schema from introspection or load it from file."
 msgstr ""
+"Rufen Sie das GraphQL-Schema von Zammad aus der Introspection ab oder laden "
+"Sie es aus einer Datei."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:55
@@ -17530,19 +17556,20 @@ msgid ""
 "Click on details to watch a screencast showing the basic steps using Bruno "
 "as client."
 msgstr ""
+"Klicken Sie auf Details, um einen Screencast zu sehen, der die grundlegenden "
+"Schritte mit dem Client Bruno zeigt."
 
 #. type: Fenced div block (details)
 #: src/en/reference/graphql.md:56
 #, no-wrap
 msgid "<video controls=\"controls\" src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
-msgstr ""
+msgstr "<video controls=\"controls\" src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
 
 #. type: Title ###
 #: src/en/reference/graphql.md:60
-#, fuzzy, no-wrap
-#| msgid "Create a new ticket"
+#, no-wrap
 msgid "Create a Request"
-msgstr "Erstellen eines neuen Tickets"
+msgstr "Einen Request erstellen"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:64
@@ -17550,6 +17577,9 @@ msgid ""
 "All requests and responses are in JSON format. This means all information "
 "must be encapsulated in brackets and have a hierarchical structure."
 msgstr ""
+"Alle Requests und Responses sind im JSON-Format. Das bedeutet, dass alle "
+"Informationen in Klammern gekapselt sein und eine hierarchische Struktur "
+"haben müssen."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:67
@@ -17558,11 +17588,15 @@ msgid ""
 "request starts with the string `query`, followed by an object you want to "
 "query."
 msgstr ""
+"Werfen wir einen Blick auf einen Request zum Abrufen von Informationen aus "
+"Zammad. Eine solche Anfrage beginnt mit der Zeichenkette `query`, gefolgt "
+"von dem Objekt, zu dem Sie Informationen abrufen möchten."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:69
 msgid "Basic example to fetch users with their first and last name:"
 msgstr ""
+"Einfaches Beispiel zum Abrufen von Benutzern mit ihrem Vor- und Nachnamen:"
 
 #. type: Fenced code block (gql :line-numbers)
 #: src/en/reference/graphql.md:70
@@ -17577,6 +17611,14 @@ msgid ""
 "  }\n"
 "}\n"
 msgstr ""
+"query userName (\n"
+"  $userId: ID!\n"
+"  ) {\n"
+"  user(userId: $userId) {\n"
+"    firstname\n"
+"    lastname\n"
+"  }\n"
+"}\n"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:83
@@ -17585,6 +17627,9 @@ msgid ""
 "variables section of your client, provide the value for it. In this example, "
 "the variables section looks like this:"
 msgstr ""
+"Die `$userId` aus Zeile 2 definiert eine Variable, die als ID verwendet "
+"wird. Geben Sie im Variablenabschnitt Ihres Clients den Wert für diese "
+"Variable an. In diesem Beispiel sieht der Variablen-Abschnitt wie folgt aus:"
 
 #. type: Fenced code block (json)
 #: src/en/reference/graphql.md:84
@@ -17594,6 +17639,9 @@ msgid ""
 "  \"userId\": \"gid://zammad/User/2\"\n"
 "}\n"
 msgstr ""
+"{\n"
+"  \"userId\": \"gid://zammad/User/2\"\n"
+"}\n"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:93
@@ -17603,6 +17651,10 @@ msgid ""
 "replace the `User` by another object like `Ticket`, `Organization`, `Group`, "
 "etc. Zammad expects a numeric value as ID."
 msgstr ""
+"Der obige Wert ist im Global ID-Format der GraphQL-Implementierung von "
+"Zammad. Je nachdem, mit welchem Objekttyp Sie arbeiten möchten, ersetzen Sie "
+"`User` durch ein anderes Objekt wie `Ticket`, `Organization`, `Group`, etc. "
+"Zammad erwartet einen numerischen Wert als ID."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:96
@@ -17611,6 +17663,9 @@ msgid ""
 "simple example just fetches the attributes `firstname` and `lastname` from "
 "the user with the ID 2."
 msgstr ""
+"Die eigentliche Anfrage beginnt mit Zeile 4 im obigen Codeblock. In diesem "
+"einfachen Beispiel werden lediglich die Attribute `firstname` und `lastname` "
+"von dem Benutzer mit der ID 2 abgerufen."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:98
@@ -17618,12 +17673,14 @@ msgid ""
 "Click on details to watch a screencast showing a basic request using a "
 "variable in Bruno."
 msgstr ""
+"Klicken Sie auf Details, um einen Screencast zu sehen, der einen einfachen "
+"Request unter Verwendung einer Variable in Bruno zeigt."
 
 #. type: Fenced div block (details)
 #: src/en/reference/graphql.md:99
 #, no-wrap
 msgid "<video controls=\"controls\" src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
-msgstr ""
+msgstr "<video controls=\"controls\" src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:104
@@ -17631,6 +17688,8 @@ msgid ""
 "To create or change data, replace the `query` by `mutation` in the request "
 "body."
 msgstr ""
+"Um Daten zu erstellen oder zu ändern, ersetzen Sie `query` durch `mutation` "
+"im Request."
 
 #. type: Plain text
 #: src/en/reference/graphql.md:108
@@ -17638,36 +17697,24 @@ msgid ""
 "The examples use variables for the different object types. Make sure to set "
 "it when using the examples."
 msgstr ""
+"Die Beispiele verwenden Variablen für die verschiedenen Objekttypen. Stellen "
+"Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen."
 
 #. type: Fenced div block (tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ticket\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "==== Ticket\n"
 "\n"
 msgstr ""
 "\n"
-"=== Ticket\n"
+"==== Ticket\n"
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Request\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/tickets/post-req.json\n"
-#| "\n"
-#| "=== Response\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/tickets/post-res.json\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Request\n"
@@ -17682,42 +17729,28 @@ msgstr ""
 "\n"
 "=== Request\n"
 "\n"
-"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"<<< @/fixtures/graphql/ticket-req.gql\n"
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"<<< @/fixtures/graphql/ticket-res.json\n"
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== User\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "==== User\n"
 "\n"
 msgstr ""
 "\n"
-"=== Benutzer\n"
+"==== User\n"
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Request\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/users/post-req.json\n"
-#| "\n"
-#| "=== Response\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/users/post-res.json\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Request\n"
@@ -17732,42 +17765,28 @@ msgstr ""
 "\n"
 "=== Request\n"
 "\n"
-"<<< @/fixtures/rest-api/users/post-req.json\n"
+"<<< @/fixtures/graphql/user-req.gql\n"
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/users/post-res.json\n"
+"<<< @/fixtures/graphql/user-res.json\n"
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Organization\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "==== Organization\n"
 "\n"
 msgstr ""
 "\n"
-"=== Organisation\n"
+"==== Organization\n"
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
 #: src/en/reference/graphql.md:109
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Request\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/organizations/post-req.json\n"
-#| "\n"
-#| "=== Response\n"
-#| "\n"
-#| "<<< @/fixtures/rest-api/organizations/post-res.json\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Request\n"
@@ -17782,25 +17801,24 @@ msgstr ""
 "\n"
 "=== Request\n"
 "\n"
-"<<< @/fixtures/rest-api/organizations/post-req.json\n"
+"<<< @/fixtures/graphql/organization-req.gql\n"
 "\n"
 "=== Response\n"
 "\n"
-"<<< @/fixtures/rest-api/organizations/post-res.json\n"
+"<<< @/fixtures/graphql/organization-res.json\n"
 "\n"
 
 #. type: Title ##
 #: src/en/reference/graphql.md:155
 #, no-wrap
 msgid "Appendix"
-msgstr ""
+msgstr "Anhang"
 
 #. type: Title ###
 #: src/en/reference/graphql.md:157
-#, fuzzy, no-wrap
-#| msgid "Global Search"
+#, no-wrap
 msgid "Global IDs"
-msgstr "Globale Suche"
+msgstr "Global IDs"
 
 #. type: Fenced div block (info)
 #: src/en/reference/graphql.md:159
@@ -17810,21 +17828,24 @@ msgid ""
 "Replace the `{ID}` with a numeric value.\n"
 "\n"
 msgstr ""
+"\n"
+"Ersetzen Sie `{ID}` durch einen numerischen Wert.\n"
+"\n"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:167
 msgid "`gid://zammad/Ticket/{ID}`"
-msgstr ""
+msgstr "`gid://zammad/Ticket/{ID}`"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:167
 msgid "`gid://zammad/User/{ID}`"
-msgstr ""
+msgstr "`gid://zammad/User/{ID}`"
 
 #. type: Bullet: '- '
 #: src/en/reference/graphql.md:167
 msgid "`gid://zammad/Organization/{ID}`"
-msgstr ""
+msgstr "`gid://zammad/Organization/{ID}`"
 
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/reference/index.md:1
@@ -23988,6 +24009,94 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24210,94 +24319,6 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -24838,18 +24859,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -31518,13 +31527,6 @@ msgstr "Let's Encrypt"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:38
-#, fuzzy
-#| msgid ""
-#| "There are two common tools to get certificates, to which your find a "
-#| "basic configuration below: [certbot](https://certbot.eff.org/instructions)"
-#| "{target=_blank} and [acme.sh](https://github.com/acmesh-official/acme.sh/"
-#| "wiki){target=_blank}.  Have a look at their documentation for further "
-#| "configuration details and other examples."
 msgid ""
 "There are two common tools to get certificates, to which your find a basic "
 "configuration below: [Certbot](https://certbot.eff.org/instructions)"
@@ -31533,70 +31535,14 @@ msgid ""
 "configuration details and other examples."
 msgstr ""
 "Es gibt zwei gängige Tools zum Abrufen von Zertifikaten, zu denen Sie unten "
-"eine Grundkonfiguration finden: [certbot](https://certbot.eff.org/"
+"eine Grundkonfiguration finden: [Certbot](https://certbot.eff.org/"
 "instructions){target=_blank} und [acme.sh](https://github.com/acmesh-"
 "official/acme.sh/wiki){target=_blank}. Schauen Sie sich die Dokumentation "
 "dieser Tools an, um weitere Konfigurationsdetails und Beispiele zu finden."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:39
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "===certbot\n"
-#| "\n"
-#| "If not happened automatically, you have to install the Nginx or Apache plugin\n"
-#| "for certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
-#| "\n"
-#| "During the first certbot run it will request additional information once.\n"
-#| "Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
-#| "`nginx` to match your setup.\n"
-#| "\n"
-#| "```sh\n"
-#| "certbot --<webserver> -d zammad.example.com\n"
-#| "```\n"
-#| "\n"
-#| "Certbot will now attempt to issue a certificate for you. If successful,\n"
-#| "certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
-#| "automatically. You can choose to not redirect if you plan to use the sample\n"
-#| "configuration of Zammad.\n"
-#| "\n"
-#| "From now on, certbot will automatically renew your installed certificates if\n"
-#| "they’re valid for 30 days or less.\n"
-#| "\n"
-#| "===acme.sh\n"
-#| "\n"
-#| "Change the default certificate authority to Let's encrypt:\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --set-default-ca  --server letsencrypt\n"
-#| "```\n"
-#| "\n"
-#| "Issue your certificate and replace `<webserver>` in the following command\n"
-#| "with either `apache` or `nginx` or `standalone` for other webserver.\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --issue --<webserver> -d zammad.example.com\n"
-#| "```\n"
-#| "\n"
-#| "It is not recommended to use the stored certificates directly. You should\n"
-#| "install the certificate to a directory of your choice instead as you can see\n"
-#| "in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
-#| "but you can use any directory you like.\n"
-#| "\n"
-#| "Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --install-cert -d zammad.example.com \\\n"
-#| "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
-#| "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
-#| "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-#| "    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
-#| "```\n"
-#| "\n"
-#| "From now on, acme.sh will automatically renew your installed certificates if\n"
-#| "they’re valid for 30 days or less.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "===Certbot\n"

@@ -7,36 +7,39 @@ title: 'GraphQL API'
 
 ## Einführung
 
-In addition to Zammad's [REST API](rest-api/intro), you can fetch,
-manipulate and create data via the powerful and open-source [GraphQL
-API](https://graphql.org/) too.
+Neben der [REST API](rest-api/intro) von Zammad können Sie Daten auch über
+die leistungsstarke und quelloffene [GraphQL API](https://graphql.org/)
+abrufen, bearbeiten und erstellen.
 
-This documentation isn't intended to cover everything about GraphQL. It
-should give you a basic understanding about how you can fetch and
-create/manipulate data to build upon. For a comprehensive guide, have a look
-at [GraphQL's documentation](https://graphql.org/learn/).
+Diese Dokumentation ist nicht dazu gedacht, alles über GraphQL
+abzudecken. Sie soll Ihnen ein grundlegendes Verständnis dafür vermitteln,
+wie Sie Daten abrufen und erstellen/ändern können, um darauf
+aufzubauen. Eine umfassende Anleitung finden Sie in der
+[GraphQL-Dokumentation] (https://graphql.org/learn/).
 
-GraphQL is used by many web services, even big ones. It became some kind of
-industry standard because of its efficiency and features. You can precisely
-request the data you require which minimizes unnecessary data transfers and
-searching the needle in a haystack.
+GraphQL wird von vielen, auch großen, Webdiensten verwendet. Aufgrund seiner
+Effizienz und seiner Funktionen wurde es zu einer Art Industriestandard. Sie
+können genau die Daten anfordern, die Sie benötigen, wodurch unnötige
+Datenübertragungen und die Suche nach der Nadel im Heuhaufen minimiert
+werden.
 
-Fetching the GraphQL schema of Zammad (called introspection) allows you to
-have an autocomplete feature and logic checks in your client while writing a
-request.
+Das Abrufen des GraphQL-Schemas von Zammad (Introspection genannt)
+ermöglicht eine Autovervollständigung und Logikprüfung in Ihrem Client,
+während Sie eine Anfrage erstellen.
 
 ## Erste Schritte
 
-Following the next steps enables you to successfully send a simple request
-and receive data from Zammad.
+Wenn Sie die folgenden Schritte befolgen, können Sie erfolgreich eine
+einfache Anfrage senden und Daten von Zammad empfangen.
 
 ### Clients
 
-To send request and receive responses, you need an API client. If you are
-already dealing with APIs, skip this section.  If you are new to the topic,
-search for a client which fits your needs. Depending on your operating
-system, you may have different options. Some examples for popular clients
-with GraphQL support are:
+Um Anfragen zu senden und Antworten zu erhalten, benötigen Sie einen API
+Client. Wenn Sie bereits mit APIs zu tun haben, können Sie diesen Abschnitt
+überspringen.  Wenn Sie neu auf dem Gebiet sind, suchen Sie nach einem
+Client, der Ihren Anforderungen entspricht. Je nach Betriebssystem haben Sie
+unterschiedliche Möglichkeiten. Einige Beispiele für beliebte Clients mit
+GraphQL-Unterstützung sind:
 
 - [Bruno](https://www.usebruno.com/downloads)
 - [Insomnia](https://insomnia.rest/download)
@@ -44,40 +47,43 @@ with GraphQL support are:
 
 ### Authentifizierung
 
-If not already present, create a [token in the Zammad
-profile](/en/documentation/use/manage-profile#token-access) you want to use
-as API user. Depending what you want to achieve via API, set the permissions
-accordingly.
+Falls noch nicht vorhanden, erstellen Sie ein [Token im
+Zammad-Profil](/de/documentation/use/manage-profile#token-zugriff), das Sie
+als API-Benutzer verwenden möchten. Je nachdem, worauf Sie per API zugreifen
+wollen, legen Sie die Berechtigungen entsprechend fest.
 
-Make sure to copy it before closing the dialog because you can't view it
-again. In case it went wrong, simply create a new token.
+Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da
+Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben,
+erstellen Sie einfach ein neues Token.
 
-### Prepare your Client
+### Client vorbereiten
 
-Open your API client and set it up.
+Öffnen Sie Ihren API Client und richten Sie ihn ein.
 
-- Add your token from Zammad as bearer token.
-- Create a request and add your Zammad domain with `/graphql` suffix,
-  e.g. `https://fastlane.inc/graphql`.
-- Fetch Zammad's GraphQL schema from introspection or load it from file.
+- Fügen Sie Ihr Token von Zammad als Bearer-Token hinzu.
+- Erstellen Sie einen Request und fügen Sie Ihre Zammad-Domain mit dem
+  Suffix `/graphql` hinzu, z.B. `https://fastlane.inc/graphql`.
+- Rufen Sie das GraphQL-Schema von Zammad aus der Introspection ab oder
+  laden Sie es aus einer Datei.
 
-Click on details to watch a screencast showing the basic steps using Bruno
-as client.
+Klicken Sie auf Details, um einen Screencast zu sehen, der die grundlegenden
+Schritte mit dem Client Bruno zeigt.
 
 ::: details
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Create a Request
+### Einen Request erstellen
 
-All requests and responses are in JSON format. This means all information
-must be encapsulated in brackets and have a hierarchical structure.
+Alle Requests und Responses sind im JSON-Format. Das bedeutet, dass alle
+Informationen in Klammern gekapselt sein und eine hierarchische Struktur
+haben müssen.
 
-Let's have a look at a request to fetch information from Zammad. Such a
-request starts with the string `query`, followed by an object you want to
-query.
+Werfen wir einen Blick auf einen Request zum Abrufen von Informationen aus
+Zammad. Eine solche Anfrage beginnt mit der Zeichenkette `query`, gefolgt
+von dem Objekt, zu dem Sie Informationen abrufen möchten.
 
-Basic example to fetch users with their first and last name:
+Einfaches Beispiel zum Abrufen von Benutzern mit ihrem Vor- und Nachnamen:
 
 ```gql :line-numbers
 query userName (
@@ -90,9 +96,9 @@ query userName (
 }
 ```
 
-The `$userId` from line 2 defines a variable which is used as an ID. In the
-variables section of your client, provide the value for it. In this example,
-the variables section looks like this:
+Die `$userId` aus Zeile 2 definiert eine Variable, die als ID verwendet
+wird. Geben Sie im Variablenabschnitt Ihres Clients den Wert für diese
+Variable an. In diesem Beispiel sieht der Variablen-Abschnitt wie folgt aus:
 
 ```json
 {
@@ -100,29 +106,29 @@ the variables section looks like this:
 }
 ```
 
-The value above is in the global ID format of Zammad's GraphQL
-implementation. Depending on which object type you want to deal with,
-replace the `User` by another object like `Ticket`, `Organization`, `Group`,
-etc. Zammad expects a numeric value as ID.
+Der obige Wert ist im Global ID-Format der GraphQL-Implementierung von
+Zammad. Je nachdem, mit welchem Objekttyp Sie arbeiten möchten, ersetzen Sie
+`User` durch ein anderes Objekt wie `Ticket`, `Organization`, `Group`,
+etc. Zammad erwartet einen numerischen Wert als ID.
 
-Starting with line 4 in the code block above is the actual request. This
-simple example just fetches the attributes `firstname` and `lastname` from
-the user with the ID 2.
+Die eigentliche Anfrage beginnt mit Zeile 4 im obigen Codeblock. In diesem
+einfachen Beispiel werden lediglich die Attribute `firstname` und `lastname`
+von dem Benutzer mit der ID 2 abgerufen.
 
-Click on details to watch a screencast showing a basic request using a
-variable in Bruno.
+Klicken Sie auf Details, um einen Screencast zu sehen, der einen einfachen
+Request unter Verwendung einer Variable in Bruno zeigt.
 
 ::: details
 <video controls="controls" src="/public/videos/graphql-user-request-variable.mp4" />
 :::
 
-To create or change data, replace the `query` by `mutation` in the request
-body.
+Um Daten zu erstellen oder zu ändern, ersetzen Sie `query` durch `mutation`
+im Request.
 
 ## Beispiele
 
-The examples use variables for the different object types. Make sure to set
-it when using the examples.
+Die Beispiele verwenden Variablen für die verschiedenen Objekttypen. Stellen
+Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ::::tabs
 
@@ -170,13 +176,13 @@ it when using the examples.
 
 ::::
 
-## Appendix
+## Anhang
 
 ### Global IDs
 
 :::info
 
-Replace the `{ID}` with a numeric value.
+Ersetzen Sie `{ID}` durch einen numerischen Wert.
 
 :::
 

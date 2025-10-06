@@ -32,68 +32,68 @@ Die Konfigurationsverzeichnisse sind normalerweise:
 
 ### Let's Encrypt
 
-There are two common tools to get certificates, to which your find a basic
-configuration below:
-[Certbot](https://certbot.eff.org/instructions){target=_blank} and
+Es gibt zwei gängige Tools zum Abrufen von Zertifikaten, zu denen Sie unten
+eine Grundkonfiguration finden:
+[Certbot](https://certbot.eff.org/instructions){target=_blank} und
 [acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
-Have a look at their documentation for further configuration details and
-other examples.
+Schauen Sie sich die Dokumentation dieser Tools an, um weitere
+Konfigurationsdetails und Beispiele zu finden.
 
 :::tabs
 
 ===Certbot
 
-If not happened automatically, you have to install the Nginx or Apache plugin
-for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`
+Falls nicht automatisch geschehen, müssen Sie das Nginx- oder Apache-Plugin für Certbot
+installieren:
+`python3-certbot-nginx` oder `python3-certbot-apache`
 
-During the first Certbot run it will request additional information once.
-Replace `<webserver>` in below command by either `apache`, `httpd` or
-`nginx` to match your setup.
+Während des ersten Certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.
+Ersetzen Sie `<webserver>` im folgenden Befehl entweder durch `apache`, `httpd` oder
+`nginx`, je nach Ihrer Konfiguration.
 
 ```sh
 certbot --<webserver> -d zammad.example.com
 ```
 
-Certbot will now attempt to issue a certificate for you. If successful,
-Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`
-automatically. You can choose to not redirect if you plan to use the sample
-configuration of Zammad.
+Certbot wird nun versuchen, ein Zertifikat für Sie auszustellen. Falls erfolgreich,
+wird Certbot Sie fragen, ob Sie `[1] nicht umleiten` oder automatisch `[2] umleiten` wollen.
+Sie können `nicht umleiten` wählen, wenn Sie unserem Beispiel folgen wollen.
 
-From now on, Certbot will automatically renew your installed certificates if
-they’re valid for 30 days or less.
+Von nun an erneuert Certbot automatisch Ihre installierten Zertifikate, wenn
+sie noch 30 Tage oder kürzer gültig sind.
 
 ===acme.sh
 
-Change the default certificate authority to Let's Encrypt:
+Ändern Sie die Standard-Zertifizierungsstelle in Let's encrypt:
 
 ```sh
-acme.sh --set-default-ca  --server letsencrypt
+acme.sh --set-default-ca --server letsencrypt
 ```
 
-Issue your certificate and replace `<webserver>` in the following command
-with either `apache` or `nginx` or `standalone` for other webserver.
+Stellen Sie Ihr Zertifikat aus und ersetzen Sie `<webserver>` in dem folgenden Befehl
+entweder durch `apache` oder `nginx` oder `standalone` für andere Webserver.
 
 ```sh
 acme.sh --issue --<webserver> -d zammad.example.com
 ```
 
-It is not recommended to use the stored certificates directly. You should
-install the certificate to a directory of your choice instead as you can see
-in the next command below. We’re using `/etc/ssl/private/` in this case,
-but you can use any directory you like.
+Es wird nicht empfohlen, die gespeicherten Zertifikate direkt zu verwenden. Sie sollten
+das Zertifikat stattdessen in ein Verzeichnis Ihrer Wahl installieren, wie Sie
+im nächsten Befehl unten sehen können. Wir verwenden in diesem Fall `/etc/ssl/private/`,
+aber Sie können jedes beliebige Verzeichnis verwenden.
 
-Replace `<webserver>` with `apache2`, `httpd` or `nginx`.
+Ersetzen Sie `<webserver>` durch `apache2`, `httpd` oder `nginx`.
 
 ```sh
 acme.sh --install-cert -d zammad.example.com \
-    --cert-file      /etc/ssl/private/zammad.example.com.pem  \
-    --key-file       /etc/ssl/private/zammad.example.com.key  \
+    --cert-datei /etc/ssl/private/zammad.example.com.pem \
+    --key-file /etc/ssl/private/zammad.example.com.key \
     --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \
-    --reloadcmd     "sudo systemctl force-reload <webserver>"
+    --reloadcmd "sudo systemctl force-reload <webserver>"
 ```
 
-From now on, acme.sh will automatically renew your installed certificates if
-they’re valid for 30 days or less.
+Von nun an erneuert acme.sh automatisch Ihre installierten Zertifikate, wenn
+sie noch 30 Tage oder kürzer gültig sind.
 
 :::
 
