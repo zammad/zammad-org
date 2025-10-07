@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-30 12:08+0000\n"
+"POT-Creation-Date: 2025-10-06 17:17+0200\n"
 "PO-Revision-Date: 2025-09-20 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -217,18 +217,6 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -8887,7 +8875,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/console.md:84
 msgid ""
-"Normally, starting Rails console requires certain third-party services to be "
+"Normally, starting Rails console requires certain third party services to be "
 "up and running. You may receive errors and console will refuse to start in "
 "case they are not available."
 msgstr ""
@@ -14441,7 +14429,7 @@ msgid ""
 "API\n"
 ": An API (Application Programming Interface) is a set of rules and protocols\n"
 "  that allow different software applications to communicate with each other.\n"
-"  It allows you to connect third-party systems with your Zammad (e.g. social\n"
+"  It allows you to connect third party systems with your Zammad (e.g. social\n"
 "  media, messengers, monitoring tools).\n"
 msgstr ""
 
@@ -15255,7 +15243,7 @@ msgid ""
 "Webhooks\n"
 ": Webhooks are an easy way for systems to communicate with each\n"
 "  other and allow you to send data to any other application.\n"
-"  They allow you to inform a third-party system about new information in Zammad\n"
+"  They allow you to inform a third party system about new information in Zammad\n"
 "  (e.g. sending a notification for new and updated tickets to your Mattermost).\n"
 msgstr ""
 
@@ -15820,7 +15808,7 @@ msgstr ""
 #: src/en/reference/privacy.md:78
 #, no-wrap
 msgid ""
-"Zammad utilizes third-party web services for certain functions, meaning\n"
+"Zammad utilizes third party web services for certain functions, meaning\n"
 "that user data may occasionally be sent or exposed to third parties.\n"
 "These functions can be individually disabled in the admin panel under\n"
 "_Settings > System > Services_.\n"
@@ -15830,11 +15818,11 @@ msgstr ""
 #: src/en/reference/privacy.md:79
 #, no-wrap
 msgid ""
-"By default, the third-party services that Zammad relies on are mostly\n"
+"By default, the third party services that Zammad relies on are mostly\n"
 "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
 "can be extended to interface with other services instead.\n"
 "\n"
-"The source code for these third-party service integrations can be\n"
+"The source code for these third party service integrations can be\n"
 "found in\n"
 "[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
 msgstr ""
@@ -16038,9 +16026,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "`facebook feed post` & `facebook feed comment`\n"
-": These articles types are used by Zammad's facebook channel. Technically\n"
+": These articles types are used by Zammad's Facebook channel. Technically\n"
 "  you can use these to automatically respond to existing requests via\n"
-"  facebook.\n"
+"  Facebook.\n"
 msgstr ""
 
 #. type: Plain text
@@ -17620,7 +17608,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
-"{target=_blank} _(official)_"
+"{target=_blank} (official)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -17629,7 +17617,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "[PHP Client](https://github.com/zammad/zammad-api-client-php){target=_blank} "
-"_(official)_"
+"(official)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -17637,8 +17625,8 @@ msgstr ""
 #: src/en/reference/rest-api/intro.md:30
 #, fuzzy
 msgid ""
-"[Python Client](https://pypi.org/project/zammad-py/){target=_blank} _(Third-"
-"Party)_"
+"[Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third "
+"party)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -17647,7 +17635,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
-"_(third-Party)_"
+"(third party)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -17656,7 +17644,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "[Android API-Client](https://github.com/KirkBushman/zammad-android)"
-"{target=_blank} _(third-Party)_"
+"{target=_blank} (third party)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -17665,7 +17653,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
-"_(third-Party; API client only, no \"ready to use\" app)_"
+"(third party; API client only, no \"ready to use\" app)"
 msgstr ""
 "https://github.com/zammad/zammad-admin-documentation (претходно издање)"
 
@@ -20375,76 +20363,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -20605,6 +20523,76 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21018,6 +21006,18 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
@@ -24300,7 +24300,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:16
 msgid ""
-"Grafana is a third-party analytics/visualization application you can connect "
+"Grafana is a third party analytics/visualization application you can connect "
 "to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index "
 "and visualize your Zammad data."
 msgstr ""
@@ -25675,7 +25675,7 @@ msgstr "Корак 3: Укључите SSO пријаву за Zammad"
 #, no-wrap
 msgid ""
 "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
-"_Settings > Security > Third-Party Applications_\n"
+"_Settings > Security > Third-party Applications_\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
