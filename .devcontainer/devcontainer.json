@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
+{
+	"name": "zammad-org-devcontainer",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:debian-12",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {},
+		"ghcr.io/devcontainers-extra/features/apt-get-packages": {
+      "packages": "libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb" // cypress dependencies
+    },
+		"./features/po4a": {},
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	"containerEnv": {
+		"LC_ALL" : "C.UTF-8",
+		"LANG": "C.UTF-8",
+		"LANGUAGE": "C.UTF-8",
+		"CYPRESS_BASE_URL": "http://host.docker.internal:8080"
+	},
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "/workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_create.sh",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
