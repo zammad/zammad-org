@@ -158,10 +158,9 @@ Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal a
 Die empfohlene Methode ist die Verwendung von [Elastics offizieller
 Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}.
 
-Alternativ können Sie [unserem
-Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 7
-folgen, das Sie auf einer anderen Seite finden, um die
-Installationsanweisungen so schlank wie möglich zu halten.
+Alternatively, you can follow [our example
+setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9, which is
+separated to keep the install instructions as lean as possible.
 
 ### Zammad-Repository hinzufügen
 
@@ -195,10 +194,9 @@ Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufüg
 :::
 
 ```sh
-
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 22.04
+Suites: 24.04
 Components: main
 Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
 sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
@@ -349,12 +347,10 @@ passen Sie den Befehl wie oben beschrieben an.
 
 ### Nächste Schritte
 
-- Zammad mit Elasticsearch verbinden ([Basis
-  Anleitung](/de/tutorials/connect-config-elasticsearch))
-- Passen Sie Ihre SELinux-Regeln und Ihre Firewall an ([Basis
-  Anleitung](/de/tutorials/firewall-selinux))
-- Konfigurieren Sie den Webserver ([Basis
-  Anleitung](/de/tutorials/webserver-config))
+- [Connect Zammad with
+  Elasticsearch](/en/tutorials/connect-config-elasticsearch)
+- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
+- [Configure the webserver](/en/tutorials/webserver-config)
 
 ## Abhängigkeiten
 

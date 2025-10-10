@@ -1,177 +1,158 @@
 ---
 order: 1
-title: 'Install Elasticsearch 7'
+title: 'Install Elasticsearch 9'
 ---
 
-# Install Elasticsearch 7
+# Install Elasticsearch 9
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Увод
-
-Elasticsearch is technically not required to run Zammad, but _highly_
-recommended.
-
-Elasticsearch offers different versions. Currently, the versions 7, 8 and 9
-are supported by Zammad. For installation instructions, you should first and
-foremost follow [Elastic's installation
+This guide shows a simple standard installation of Elasticsearch 9. The
+intention is to get you up and running quickly.  However, in case you need a
+more advanced configuration or face any issues, have a look at the [official
+Elasticsearch installation
 documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Use the dropdown in the top right corner to choose which version you want to
-install.
+Adapt it wherever needed in case your use-case differs.
 
-However, if you want go with Elasticsearch 7 (which is slightly easier to
-install), you can find the consolidated installation steps below. Be aware
-that the maintenance of version 7 might be stopped earlier than for later
-versions, which also come with some additional security features.
+## Инсталација
 
-:::info
-If you install Elasticsearch >= 8 and want to follow our
-[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure to copy/save the password which is
-shown during the installation of Elasticsearch.
+### Download and Add the Public Signing Key
+
+::: tabs key:distros
+
+=== Ubuntu/Debian
+
+Install required tools:
+
+```sh
+sudo apt-get install apt-transport-https
+```
+
+Add repo key:
+
+``` sh
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+```
+
+=== OpenSUSE/SLES
+
+``` sh
+rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+```
+
+=== CentOS/RHEL
+
+``` sh
+rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+```
+
 :::
 
-## Install Elasticsearch 7
+### Add the Repository
 
-:::::tabs
+::: tabs key:distros
 
-==== Ubuntu/Debian
+=== Ubuntu/Debian
 
-```sh
-sudo apt install apt-transport-https sudo wget curl gnupg
+``` sh
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list
 ```
 
+=== OpenSUSE/SLES
+
+Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:
+
 ```sh
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null
+[elasticsearch]
+name=Elasticsearch repository for 9.x packages
+baseurl=https://artifacts.elastic.co/packages/9.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=0
+autorefresh=1
+type=rpm-md
 ```
 
-::::tabs
+=== CentOS/RHEL
 
-=== Deb822 format
+Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:
 
-:::info
-In this tab, the repository is added by using the
-[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
-If you run a distribution which doesn't support it, use the legacy format instead.
+```sh
+[elasticsearch]
+name=Elasticsearch repository for 9.x packages
+baseurl=https://artifacts.elastic.co/packages/9.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=0
+type=rpm-md
+```
+
 :::
 
-```sh
-printf "Types: deb
-URIs: https://artifacts.elastic.co/packages/7.x/apt
-Suites: stable
-Components: main
-Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg" | \
-sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null
+### Elasticsearch инсталација
+
+::: tabs key:distros
+
+=== Ubuntu/Debian
+
+``` sh
+sudo apt-get update && sudo apt-get install elasticsearch
 ```
 
-=== Legacy format
+=== OpenSUSE/SLES
 
 ```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main"| \
-sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null
+sudo zypper modifyrepo --enable elasticsearch && \
+  sudo zypper install elasticsearch; \
+  sudo zypper modifyrepo --disable elasticsearch
 ```
 
-::::
+=== CentOS/RHEL
+
+CentOS and RHEL 7 or earlier:
 
 ```sh
-sudo apt update
+sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
+
+RHEL 8 and later:
 
 ```sh
-sudo apt install elasticsearch
+sudo dnf install --enablerepo=elasticsearch elasticsearch
 ```
 
-==== OpenSUSE
+:::
+
+:::tip
+Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by
+running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+:::
+
+## Configuration
+
+Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the
+following values:
+
+```yml
+network.host: 0.0.0.0
+transport.host: 0.0.0.0
+```
+
+Optional to increase the maximum context size to index:
+
+```yml
+http.max_content_length: 400mb
+```
+
+## Start and Enable Elasticsearch
 
 ```sh
-sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo systemctl enable elasticsearch.service --now
 ```
-
-```sh
-echo "[elasticsearch-7.x]
-name=Elasticsearch repository for 7.x packages
-baseurl=https://artifacts.elastic.co/packages/7.x/yum
-gpgcheck=1
-gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
-enabled=1
-autorefresh=1
-type=rpm-md"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo
-```
-
-```sh
-sudo zypper install elasticsearch
-```
-
-==== CentOS
-
-```sh
-sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
-```
-
-```sh
-echo "[elasticsearch-7.x]
-name=Elasticsearch repository for 7.x packages
-baseurl=https://artifacts.elastic.co/packages/7.x/yum
-gpgcheck=1
-gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
-enabled=1
-autorefresh=1
-type=rpm-md"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo
-```
-
-```sh
-sudo yum install -y elasticsearch
-```
-
-==== Direct Download
-
-Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the
-[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-for in-depth instructions.
-
-:::::
-
-Install the ingest-attachment plugin:
-:   ```sh
-    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
-    ```
-
-Increase Virtual Memory Map Limit:
-:   ```sh
-    sudo sysctl -w vm.max_map_count=262144
-    ```
-<!-- markdownlint-disable MD046 -->
-Adjust `/etc/elasticsearch/elasticsearch.yml`:
-:   ```
-    # /etc/elasticsearch/elasticsearch.yml
-
-    # Tickets above this size (articles + attachments + metadata)
-    # may fail to be properly indexed (Default: 100mb).
-    #
-    # When Zammad sends tickets to Elasticsearch for indexing,
-    # it bundles together all the data on each individual ticket
-    # and issues a single HTTP request for it.
-    # Payloads exceeding this threshold will be truncated.
-    #
-    # Performance may suffer if it is set too high.
-    http.max_content_length: 400mb
-
-    # Allows the engine to generate larger (more complex) search queries.
-    # Elasticsearch will raise an error or deprecation notice if this value is
-    # too low, but setting it too high can overload system
-    # resources (Default: 1024).
-    #
-    # Available in version 6.6+ only.
-    indices.query.bool.max_clause_count: 2000
-    ```
-<!-- markdownlint-enable MD046 -->
-
-Enable it by default and start it:
-:   ```sh
-    sudo systemctl enable elasticsearch --now
-    ```
 
 ## Следећи кораци
 
- Go on with
- [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).
+Go on with the [installation of
+Zammad](/en/get-started/installation/package#add-zammad-repository). After
+the installation of Zammad is completed, you can [connect Zammad with
+Elasticsearch](/en/tutorials/connect-config-elasticsearch).

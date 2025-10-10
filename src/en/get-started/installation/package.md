@@ -157,8 +157,8 @@ The recommended method is to use
 [Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 for installing Elasticsearch.
 
-Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 7, which we
-included in another page to keep the install instructions as lean as possible.
+Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9,
+which is separated to keep the install instructions as lean as possible.
 
 ### Add Zammad Repository
 
@@ -192,10 +192,9 @@ Starting with Ubuntu 24.04, we provide the command to add the repository in the
 :::
 
 ```sh
-
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 22.04
+Suites: 24.04
 Components: main
 Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
 sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
@@ -339,9 +338,9 @@ To stop or restart a service or to check its status, adjust the command as menti
 
 ### Next Steps
 
-- Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-config-elasticsearch))
-- Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-selinux))
-- Configure the Webserver ([basic guide](/en/tutorials/webserver-config))
+- [Connect Zammad with Elasticsearch](/en/tutorials/connect-config-elasticsearch)
+- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
+- [Configure the webserver](/en/tutorials/webserver-config)
 
 ## Dependencies
 

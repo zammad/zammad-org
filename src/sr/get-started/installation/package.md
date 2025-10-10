@@ -157,9 +157,9 @@ sudo localectl set-locale LANG=en_US.UTF-8
 водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 за инсталацију Elasticsearch.
 
-Алтернативно, можете погледати [наш
-пример](/sr/tutorials/install-elasticsearch.md) за Elasticsearch 7, који се
-налази на посебној страници да би упутство остало што прегледније.
+Alternatively, you can follow [our example
+setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9, which is
+separated to keep the install instructions as lean as possible.
 
 ### Додајте Zammad репозиториј
 
@@ -193,10 +193,9 @@ Starting with Ubuntu 24.04, we provide the command to add the repository in the
 :::
 
 ```sh
-
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 22.04
+Suites: 24.04
 Components: main
 Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
 sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
@@ -345,11 +344,10 @@ mentioned above.
 
 ### Следећи кораци
 
-- Повежите Zammad са Elasticsearch ([основни
-  водич](/sr/tutorials/connect-config-elasticsearch))
-- Подесите ваша SELinux правила и firewall ([основни
-  водич](/sr/tutorials/firewall-selinux))
-- Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))
+- [Connect Zammad with
+  Elasticsearch](/en/tutorials/connect-config-elasticsearch)
+- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
+- [Configure the webserver](/en/tutorials/webserver-config)
 
 ## Предуслови
 
