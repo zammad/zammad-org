@@ -65,9 +65,9 @@ stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
   Twitter zu antworten.
 
 `facebook feed post` & `facebook feed comment`
-: These articles types are used by Zammad's Facebook channel. Technically
-  you can use these to automatically respond to existing requests via
-  Facebook.
+: Diese Artikeltypen werden von Zammads Facebook-Kanal verwendet. Technisch gesehen
+  können Sie diese verwenden, um automatisch auf bestehende Anfragen über
+  Facebook zu antworten.
 
 `telegram personal-message`
 : Wird von Zammads Telegram-Kanal verwendet. Technisch können Sie diese verwenden, um

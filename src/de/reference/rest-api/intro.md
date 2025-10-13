@@ -18,10 +18,10 @@ möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 
 - [Ruby
   Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  (official)
+  (offiziell)
 - [PHP
   Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  (official)
+  (offiziell)
 - [Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third
   party)
 - [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
@@ -30,7 +30,7 @@ möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
   API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
   (third party)
 - [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  (third party; API client only, no "ready to use" app)
+  (third party; nur API-Client, keine "gebrauchsfertige" Anwendung)
 
 ## Authentifizierung
 

@@ -24,10 +24,10 @@ Agent
   Benutzerrechte, etc. ändern können (siehe oben).
 
 API
-: An API (Application Programming Interface) is a set of rules and protocols
-  that allow different software applications to communicate with each other.
-  It allows you to connect third party systems with your Zammad (e.g. social
-  media, messengers, monitoring tools).
+: Eine API (Application Programming Interface) ist ein Satz von Regeln und Protokollen
+  die es verschiedenen Softwareanwendungen ermöglichen, miteinander zu kommunizieren.
+  Es ermöglicht Ihnen, Systeme von Drittanbietern mit Ihrem Zammad zu verbinden (z.B. soziale
+  Medien, Messenger, Monitoring-Tools).
 
   Sie können mehr erfahren auf unserer
   [API-Landingpage](https://zammad.com/de/product/features/rest-api){target=_blank}
@@ -435,10 +435,10 @@ Benutzer
   und Kunde sind.
 
 Webhooks
-: Webhooks are an easy way for systems to communicate with each
-  other and allow you to send data to any other application.
-  They allow you to inform a third party system about new information in Zammad
-  (e.g. sending a notification for new and updated tickets to your Mattermost).
+: Webhooks sind eine einfache Möglichkeit für Systeme, miteinander zu kommunizieren
+  und erlauben es Ihnen, Daten an eine andere Anwendung zu senden.
+  Damit ist es möglich, ein Drittsystem über neue Informationen in Zammad zu informieren
+  (z.B. das Senden einer Benachrichtigung über neue und aktualisierte Tickets an Ihr Mattermost).
 
 Zammad : Zammad ist der beste Helpdesk der Welt. Punkt.
 

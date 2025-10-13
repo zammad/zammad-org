@@ -506,8 +506,8 @@ sudo systemctl restart apache2
 
 ## Schritt 3: Aktivieren Sie SSO in Zammad
 
-Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-_Settings > Security > Third-party Applications_
+Als Nächstes aktivieren Sie "Anmeldung über SSO" in Zammads Admin Bereich unter
+_Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 
 ::: tip
 Öffnen Sie bei älteren Versionen von Zammad `https://your.zammad.host/auth/sso`,

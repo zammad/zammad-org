@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-06 17:17+0200\n"
-"PO-Revision-Date: 2025-10-01 06:00+0000\n"
+"POT-Creation-Date: 2025-10-09 10:17+0200\n"
+"PO-Revision-Date: 2025-10-08 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -687,7 +687,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:137
-#: src/en/tutorials/connect-config-elasticsearch.md:107
+#: src/en/tutorials/connect-config-elasticsearch.md:108
 #: src/en/tutorials/sso-kerberos.md:553
 #, no-wrap
 msgid "Troubleshooting"
@@ -1651,7 +1651,7 @@ msgstr "/de/documentation/manage-zammad/general"
 msgid "Administrator Documentation"
 msgstr "Administrator Dokumentation"
 
-#. type: Title ##
+#. type: Title #
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
@@ -1659,7 +1659,6 @@ msgstr "Administrator Dokumentation"
 #: src/en/documentation/use/start-using-zammad.md:120
 #: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
 #: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
-#: src/en/tutorials/install-elasticsearch.md:10
 #, no-wrap
 msgid "Introduction"
 msgstr "Einführung"
@@ -7673,8 +7672,9 @@ msgstr ""
 msgid "\n"
 msgstr "\n"
 
-#. type: Yaml Front Matter Hash Value: title
+#. type: Title ##
 #: src/en/get-started/installation/index.md:1
+#: src/en/tutorials/install-elasticsearch.md:15
 #, no-wrap
 msgid "Installation"
 msgstr "Installation"
@@ -8042,6 +8042,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:154
+#: src/en/tutorials/install-elasticsearch.md:90
 #, no-wrap
 msgid "Install Elasticsearch"
 msgstr "Elasticsearch installieren"
@@ -8059,10 +8060,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:162
+#, fuzzy
+#| msgid ""
+#| "Alternatively, you can follow [our example setup](/en/tutorials/install-"
+#| "elasticsearch.md) of Elasticsearch 7, which we included in another page "
+#| "to keep the install instructions as lean as possible."
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
-"elasticsearch.md) of Elasticsearch 7, which we included in another page to "
-"keep the install instructions as lean as possible."
+"elasticsearch.md) of Elasticsearch 9, which is separated to keep the install "
+"instructions as lean as possible."
 msgstr ""
 "Alternativ können Sie [unserem Beispiel-Setup](/de/tutorials/install-"
 "elasticsearch.md) für Elasticsearch 7 folgen, das Sie auf einer anderen "
@@ -8139,14 +8145,42 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
 #: src/en/get-started/installation/package.md:170
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "```sh\n"
+#| "\n"
+#| "printf \"Types: deb\n"
+#| "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
+#| "Suites: 22.04\n"
+#| "Components: main\n"
+#| "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Debian 11\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Debian 12\n"
+#| "\n"
 msgid ""
 "\n"
 "```sh\n"
-"\n"
 "printf \"Types: deb\n"
 "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
-"Suites: 22.04\n"
+"Suites: 24.04\n"
 "Components: main\n"
 "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
 "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
@@ -8308,13 +8342,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:273
+#: src/en/get-started/installation/package.md:272
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Zammad installieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/installation/package.md:274
 #, no-wrap
 msgid ""
 "\n"
@@ -8406,13 +8440,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:320
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Zammad Services verwalten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:323
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
@@ -8422,12 +8456,12 @@ msgstr ""
 "wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:328
 msgid "zammad: includes the services below"
 msgstr "zammad: umfasst die folgenden Dienste"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:328
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
@@ -8435,7 +8469,7 @@ msgstr ""
 "Webanwendung)"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:328
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
@@ -8444,13 +8478,13 @@ msgstr ""
 "Aufgaben sowie Hintergrundaufgaben"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:328
 msgid "**zammad-websocket**: websocket server for session related information"
 msgstr ""
 "**zammad-websocket**: Websocket-Server für sitzungsbezogene Informationen"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:331
+#: src/en/get-started/installation/package.md:330
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
@@ -8459,19 +8493,19 @@ msgstr ""
 "`stop`, `status`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:333
+#: src/en/get-started/installation/package.md:332
 msgid "Example to start Zammad with all sub-services:"
 msgstr "Beispiel für den Start von Zammad mit allen Diensten:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/installation/package.md:333
 #: src/en/get-started/update.md:170 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
 msgstr "sudo systemctl start zammad\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:338
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
@@ -8480,46 +8514,56 @@ msgstr ""
 "passen Sie den Befehl wie oben beschrieben an."
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:339
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:170
+#: src/en/tutorials/install-elasticsearch.md:150
 #, no-wrap
 msgid "Next Steps"
 msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:344
+#, fuzzy
+#| msgid ""
+#| "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
+#| "config-elasticsearch))"
 msgid ""
-"Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
-"config-elasticsearch))"
+"[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
+"elasticsearch)"
 msgstr ""
 "Zammad mit Elasticsearch verbinden ([Basis Anleitung](/de/tutorials/connect-"
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:344
+#, fuzzy
+#| msgid ""
+#| "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/"
+#| "firewall-selinux))"
 msgid ""
-"Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/firewall-"
-"selinux))"
+"[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 "Passen Sie Ihre SELinux-Regeln und Ihre Firewall an ([Basis Anleitung](/de/"
 "tutorials/firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
-msgid "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
+#: src/en/get-started/installation/package.md:344
+#, fuzzy
+#| msgid ""
+#| "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
+msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr ""
 "Konfigurieren Sie den Webserver ([Basis Anleitung](/de/tutorials/webserver-"
 "config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:345
 #, no-wrap
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:351
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -8532,24 +8576,24 @@ msgstr ""
 "Elasticsearch, das nicht automatisch installiert wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:357
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:357
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:357
 #: src/en/reference/environment-variables.md:60
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:357
 #: src/en/reference/environment-variables.md:72
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -8557,20 +8601,20 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:358
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:382
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:358
 #, no-wrap
 msgid "Database Server"
 msgstr "Datenbank-Server"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:363
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
@@ -8583,7 +8627,7 @@ msgstr ""
 "automatisch während der Paketinstallation installiert."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:365
+#: src/en/get-started/installation/package.md:364
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -8597,28 +8641,28 @@ msgstr ""
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:371
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:374
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:377
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:377
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:381
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -8631,7 +8675,7 @@ msgstr ""
 "Tutorial](/de/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:387
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  The installation and "
@@ -8647,13 +8691,13 @@ msgstr ""
 "Hosting-Services in Betracht."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:389
+#: src/en/get-started/installation/package.md:388
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:395
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -8669,17 +8713,17 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:398
+#: src/en/get-started/installation/package.md:397
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:399
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Elasticsearch-Versionsverlauf für Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:400
 #, no-wrap
 msgid ""
 "\n"
@@ -8711,7 +8755,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:420
+#: src/en/get-started/installation/package.md:419
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -8722,13 +8766,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:421
+#: src/en/get-started/installation/package.md:420
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:424
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -8741,7 +8785,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:428
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -8756,7 +8800,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:432
+#: src/en/get-started/installation/package.md:431
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -8768,7 +8812,7 @@ msgstr ""
 "variables#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:434
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -8780,13 +8824,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:435
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:441
+#: src/en/get-started/installation/package.md:440
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -9298,27 +9342,27 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:157
-#: src/en/tutorials/connect-config-elasticsearch.md:54
+#: src/en/tutorials/connect-config-elasticsearch.md:55
 msgid "Without specifying CPU cores to use:"
 msgstr "Ohne Vorgabe der zu verwendenden CPU-Kerne:"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:158
-#: src/en/tutorials/connect-config-elasticsearch.md:55
+#: src/en/tutorials/connect-config-elasticsearch.md:56
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild\n"
 msgstr "zammad run rake zammad:searchindex:rebuild\n"
 
 #. type: Plain text
 #: src/en/get-started/update.md:163
-#: src/en/tutorials/connect-config-elasticsearch.md:60
+#: src/en/tutorials/connect-config-elasticsearch.md:61
 msgid "With specifying CPU cores to use (example 8):"
 msgstr "Mit Vorgabe der zu verwendenden CPU-Kerne (Beispiel 8):"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:164
-#: src/en/tutorials/connect-config-elasticsearch.md:61
-#: src/en/tutorials/connect-config-elasticsearch.md:192
+#: src/en/tutorials/connect-config-elasticsearch.md:62
+#: src/en/tutorials/connect-config-elasticsearch.md:164
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr "zammad run rake zammad:searchindex:rebuild[8]\n"
@@ -9998,11 +10042,6 @@ msgstr "Safe Mode der Rails-Konsole"
 
 #. type: Plain text
 #: src/en/reference/console.md:84
-#, fuzzy
-#| msgid ""
-#| "Normally, starting Rails console requires certain third-party services to "
-#| "be up and running. You may receive errors and console will refuse to "
-#| "start in case they are not available."
 msgid ""
 "Normally, starting Rails console requires certain third party services to be "
 "up and running. You may receive errors and console will refuse to start in "
@@ -16208,13 +16247,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:30
-#, fuzzy, no-wrap
-#| msgid ""
-#| "API\n"
-#| ": An API (Application Programming Interface) is a set of rules and protocols\n"
-#| "  that allow different software applications to communicate with each other.\n"
-#| "  It allows you to connect third-party systems with your Zammad (e.g. social\n"
-#| "  media, messengers, monitoring tools).\n"
+#, no-wrap
 msgid ""
 "API\n"
 ": An API (Application Programming Interface) is a set of rules and protocols\n"
@@ -17356,13 +17389,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:449
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Webhooks\n"
-#| ": Webhooks are an easy way for systems to communicate with each\n"
-#| "  other and allow you to send data to any other application.\n"
-#| "  They allow you to inform a third-party system about new information in Zammad\n"
-#| "  (e.g. sending a notification for new and updated tickets to your Mattermost).\n"
+#, no-wrap
 msgid ""
 "Webhooks\n"
 ": Webhooks are an easy way for systems to communicate with each\n"
@@ -18058,12 +18085,7 @@ msgstr "Externe Dienste"
 
 #. type: Plain text
 #: src/en/reference/privacy.md:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Zammad utilizes third-party web services for certain functions, meaning\n"
-#| "that user data may occasionally be sent or exposed to third parties.\n"
-#| "These functions can be individually disabled in the admin panel under\n"
-#| "_Settings > System > Services_.\n"
+#, no-wrap
 msgid ""
 "Zammad utilizes third party web services for certain functions, meaning\n"
 "that user data may occasionally be sent or exposed to third parties.\n"
@@ -18077,15 +18099,7 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/reference/privacy.md:79
-#, fuzzy, no-wrap
-#| msgid ""
-#| "By default, the third-party services that Zammad relies on are mostly\n"
-#| "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
-#| "can be extended to interface with other services instead.\n"
-#| "\n"
-#| "The source code for these third-party service integrations can be\n"
-#| "found in\n"
-#| "[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.\n"
+#, no-wrap
 msgid ""
 "By default, the third party services that Zammad relies on are mostly\n"
 "ones hosted and managed by the Zammad Foundation itself, but Zammad\n"
@@ -18358,12 +18372,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:71
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`facebook feed post` & `facebook feed comment`\n"
-#| ": These articles types are used by Zammad's facebook channel. Technically\n"
-#| "  you can use these to automatically respond to existing requests via\n"
-#| "  facebook.\n"
+#, no-wrap
 msgid ""
 "`facebook feed post` & `facebook feed comment`\n"
 ": These articles types are used by Zammad's Facebook channel. Technically\n"
@@ -20479,81 +20488,57 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
-#| "{target=_blank} _(official)_"
 msgid ""
 "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
 "{target=_blank} (official)"
 msgstr ""
 "[Ruby Client](https://github.com/zammad/zammad-api-client-ruby)"
-"{target=_blank} _(offiziell)_"
+"{target=_blank} (offiziell)"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[PHP Client](https://github.com/zammad/zammad-api-client-php)"
-#| "{target=_blank} _(official)_"
 msgid ""
 "[PHP Client](https://github.com/zammad/zammad-api-client-php){target=_blank} "
 "(official)"
 msgstr ""
 "[PHP Client](https://github.com/zammad/zammad-api-client-php){target=_blank} "
-"_(offiziell)_"
+"(offiziell)"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Python Client](https://pypi.org/project/zammad-py/){target=_blank} "
-#| "_(Third-Party)_"
 msgid ""
 "[Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third "
 "party)"
 msgstr ""
-"[Python Client](https://pypi.org/project/zammad-py/){target=_blank} _(Third-"
-"Party)_"
+"[Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third "
+"party)"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
-#| "_(third-Party)_"
 msgid ""
 "[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
 "(third party)"
 msgstr ""
 "[.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank} "
-"_(Third-Party)_"
+"(third party)"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Android API-Client](https://github.com/KirkBushman/zammad-android)"
-#| "{target=_blank} _(third-Party)_"
 msgid ""
 "[Android API-Client](https://github.com/KirkBushman/zammad-android)"
 "{target=_blank} (third party)"
 msgstr ""
 "[Android API-Client](https://github.com/KirkBushman/zammad-android)"
-"{target=_blank} _(Third-Party)_"
+"{target=_blank} (third party)"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:30
-#, fuzzy
-#| msgid ""
-#| "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
-#| "_(third-Party; API client only, no \"ready to use\" app)_"
 msgid ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
 "(third party; API client only, no \"ready to use\" app)"
 msgstr ""
 "[Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank} "
-"_(Third-Party; nur API-Client, keine \"gebrauchsfertige\" Anwendung)_"
+"(third party; nur API-Client, keine \"gebrauchsfertige\" Anwendung)"
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:34
@@ -25897,71 +25882,79 @@ msgstr ""
 msgid "Connect and Configure Elasticsearch"
 msgstr "Verbinden und konfigurieren von Elasticsearch"
 
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:11
+msgid ""
+"This guide shows you how to connect Zammad with Elasticsearch 8 or newer."
+msgstr ""
+
 #. type: Title ##
-#: src/en/tutorials/connect-config-elasticsearch.md:10
+#: src/en/tutorials/connect-config-elasticsearch.md:12
 #, no-wrap
 msgid "Connect Elasticsearch with Zammad"
 msgstr "Elasticsearch mit Zammad verbinden"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:12
+#: src/en/tutorials/connect-config-elasticsearch.md:14
 #, no-wrap
 msgid "Set the Elasticsearch URL"
 msgstr "Festlegen der Elasticsearch URL"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:15
+#: src/en/tutorials/connect-config-elasticsearch.md:17
 msgid "Set the Elasticsearch server address; adapt it to your scenario."
 msgstr ""
 "Legen Sie die Adresse des Elasticsearch-Servers fest; passen Sie diese an "
 "Ihr Szenario an."
 
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:17
-msgid "Elasticsearch 7 / without `https`:"
-msgstr "Elasticsearch 7 / ohne `https`:"
-
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:18
-#, no-wrap
-msgid "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
-msgstr "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:23
-#, no-wrap
-msgid "Elasticsearch >= 8 / with `https`:\n"
-msgstr "Elasticsearch >= 8 / mit `https`:\n"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:24
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
 msgstr "zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:28
-#, no-wrap
-msgid "Set the Elasticsearch User and Password <Badge type=\"warning\" text=\">= ES8\"/>"
-msgstr "Setzen des Elasticsearch-Benutzers und -Passworts <Badge type=\"warning\" text=\">= ES8\"/>"
+#: src/en/tutorials/connect-config-elasticsearch.md:22
+#, fuzzy, no-wrap
+#| msgid "Set the Elasticsearch URL"
+msgid "Set the Elasticsearch User and Password"
+msgstr "Festlegen der Elasticsearch URL"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:30
+#: src/en/tutorials/connect-config-elasticsearch.md:24
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
 msgstr "zammad run rails r \"Setting.set('es_user', 'elastic')\"\n"
 
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:30
+#, no-wrap
+msgid ""
+"Replace `<password>` with the one you got during the installation of Elasticsearch. In case you need to create a new\n"
+"password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.\n"
+msgstr ""
+
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:34
+#: src/en/tutorials/connect-config-elasticsearch.md:31
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 msgstr "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:38
-#, no-wrap
-msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\">= ES8\"/>"
-msgstr "Zertifikat zu Zammad hinzufügen <Badge type=\"warning\" text=\">= ES8\"/>"
+#: src/en/tutorials/connect-config-elasticsearch.md:35
+#, fuzzy, no-wrap
+#| msgid "Migrate to Zammad"
+msgid "Add Certificate to Zammad"
+msgstr "Zu Zammad migrieren"
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:40
+msgid ""
+"This step requires a running Zammad. If you are installing a new Zammad "
+"instance, [go on with the installation](/en/get-started/installation/"
+"package#add-zammad-repository) and come back here when you can access the "
+"admin settings in the browser."
+msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:43
@@ -25982,29 +25975,28 @@ msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
 msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:50
+#: src/en/tutorials/connect-config-elasticsearch.md:51
 #, no-wrap
 msgid ""
-"Go to the admin panel of Zammad and add your copied certificate under\n"
-"_Settings > Security > SSL Certificates_.\n"
+"To add it in Zammad, go to _Settings > Security > SSL Certificates_ in the admin settings and add your copied\n"
+"certificate. Either upload the certificate file or paste the content in the dialog.\n"
+"After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.\n"
 msgstr ""
-"Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes Zertifikat unter\n"
-"_Einstellungen > Sicherheit > SSL-Zertifikate_ ein.\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:51
+#: src/en/tutorials/connect-config-elasticsearch.md:52
 #, no-wrap
 msgid "Build/Rebuild the Searchindex"
 msgstr "Den Suchindex aufbauen/neu erstellen"
 
 #. type: Title ##
-#: src/en/tutorials/connect-config-elasticsearch.md:65
+#: src/en/tutorials/connect-config-elasticsearch.md:66
 #, no-wrap
 msgid "Optional Settings"
 msgstr "Optionale Einstellungen"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:70
+#: src/en/tutorials/connect-config-elasticsearch.md:71
 msgid ""
 "We collected some useful settings you may want to apply. For further "
 "information please have a look at [Elastic's documentation](https://"
@@ -26017,13 +26009,13 @@ msgstr ""
 "current/index.html){target=_blank}."
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:71
+#: src/en/tutorials/connect-config-elasticsearch.md:72
 #, no-wrap
 msgid "Index Namespacing"
 msgstr "Index Namespacing"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:75
+#: src/en/tutorials/connect-config-elasticsearch.md:76
 msgid ""
 "Useful when connecting multiple services or Zammad instances to a single "
 "Elasticsearch server (to prevent name collisions during indexing)."
@@ -26033,19 +26025,19 @@ msgstr ""
 "Indizierung zu vermeiden)."
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:76
+#: src/en/tutorials/connect-config-elasticsearch.md:77
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 msgstr "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:80
+#: src/en/tutorials/connect-config-elasticsearch.md:81
 #, no-wrap
 msgid "File-Attachment Indexing Rules"
 msgstr "Regeln für die Indizierung von Dateianhängen"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:85
+#: src/en/tutorials/connect-config-elasticsearch.md:86
 msgid ""
 "Zammad supports searching in file attachments, which means Elasticsearch has "
 "to index those, too. Limiting such indexing can help preserve system "
@@ -26056,12 +26048,12 @@ msgstr ""
 "Indizierung kann helfen, Systemressourcen zu schonen."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:87
+#: src/en/tutorials/connect-config-elasticsearch.md:88
 msgid "Files with these extensions will not be indexed:"
 msgstr "Dateien mit diesen Erweiterungen werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:88
+#: src/en/tutorials/connect-config-elasticsearch.md:89
 #, no-wrap
 msgid ""
 "zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
@@ -26071,25 +26063,25 @@ msgstr ""
 "[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )\"\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:94
+#: src/en/tutorials/connect-config-elasticsearch.md:95
 msgid "Files larger than this size (in MB) will not be indexed:"
 msgstr ""
 "Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:95
+#: src/en/tutorials/connect-config-elasticsearch.md:96
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:99
+#: src/en/tutorials/connect-config-elasticsearch.md:100
 #, no-wrap
 msgid "Asciifold"
 msgstr "Asciifold"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:104
+#: src/en/tutorials/connect-config-elasticsearch.md:105
 msgid ""
 "By default, the [Asciifold feature of Elasticsearch](https://www.elastic.co/"
 "docs/reference/text-analysis/analysis-asciifolding-tokenfilter)"
@@ -26102,7 +26094,7 @@ msgstr ""
 "Text arbeiten, der Diakritika und/oder Umlaute enthält."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:106
+#: src/en/tutorials/connect-config-elasticsearch.md:107
 msgid ""
 "In case you need a more exact search, you can turn it off via [Rails console]"
 "(/en/reference/console#disable-asciifold)."
@@ -26111,7 +26103,7 @@ msgstr ""
 "Konsole](/de/reference/console#asciifold-deaktivieren) deaktivieren."
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:109
+#: src/en/tutorials/connect-config-elasticsearch.md:110
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -26128,13 +26120,13 @@ msgstr ""
 "der Community](https://community.zammad.org){target=_blank} nachfragen.\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:118
+#: src/en/tutorials/connect-config-elasticsearch.md:119
 #, no-wrap
 msgid "Data Missing From the Web-UI / Search Data Missing or Incomplete"
 msgstr "Fehlende Daten in der Web-Benutzeroberfläche / Fehlende oder unvollständige Suchdaten"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:124
+#: src/en/tutorials/connect-config-elasticsearch.md:125
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
 "tickets, articles, users or anything else [indexed by Elasticsearch](/en/"
@@ -26147,7 +26139,7 @@ msgstr ""
 "fehlende oder unvollständige Indizes verursacht werden können."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:128
+#: src/en/tutorials/connect-config-elasticsearch.md:129
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
 "our [installation guide](/en/tutorials/install-elasticsearch), please follow "
@@ -26159,19 +26151,19 @@ msgstr ""
 "Elasticsearch korrekt funktioniert."
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:129
+#: src/en/tutorials/connect-config-elasticsearch.md:130
 #, no-wrap
 msgid "Step 1: Verify Elasticsearch is Running"
 msgstr "Schritt 1: Überprüfen Sie, ob Elasticsearch läuft"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:131
+#: src/en/tutorials/connect-config-elasticsearch.md:132
 #, no-wrap
 msgid "sudo systemctl status elasticsearch\n"
 msgstr "sudo systemctl status elasticsearch\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:137
+#: src/en/tutorials/connect-config-elasticsearch.md:138
 msgid ""
 "This should output something like the following, make sure it says `Active: "
 "active (running)`:"
@@ -26180,7 +26172,7 @@ msgstr ""
 "`Active: active (running)` steht:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:138
+#: src/en/tutorials/connect-config-elasticsearch.md:139
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -26196,21 +26188,20 @@ msgstr ""
 "   Main PID: 1790 (java)\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:147
+#: src/en/tutorials/connect-config-elasticsearch.md:148
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 "Andernfalls versuchen Sie, den Service neu zu starten und prüfen Sie dann "
 "erneut:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:148
-#: src/en/tutorials/connect-config-elasticsearch.md:179
+#: src/en/tutorials/connect-config-elasticsearch.md:149
 #, no-wrap
 msgid "sudo systemctl restart elasticsearch\n"
 msgstr "sudo systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:152
+#: src/en/tutorials/connect-config-elasticsearch.md:153
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -26222,56 +26213,14 @@ msgstr ""
 "unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschrieben.\n"
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:158
-#, no-wrap
-msgid "Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type=\"warning\" text=\"only ES7\" />"
-msgstr "Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist <Badge type=\"warning\" text=\"only ES7\" />"
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:161
-msgid "List installed Elasticsearch plugins:"
-msgstr "Auflisten der installierten Elasticsearch-Plugins:"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:162
-#: src/en/tutorials/connect-config-elasticsearch.md:183
-#, no-wrap
-msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
-msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:167
-msgid "The output should include `ingest-attachment`."
-msgstr "Die Ausgabe sollte `ingest-attachment` enthalten."
-
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:170
-msgid ""
-"Otherwise, try reinstalling the `ingest-attachment` plugin and check again:"
-msgstr ""
-"Versuchen Sie andernfalls, das Plugin `ingest-attachment` neu zu "
-"installieren, und prüfen Sie dann erneut:"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:171
-#, no-wrap
-msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
-msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:175
-#, no-wrap
-msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
-msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
-
-#. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:187
-#, no-wrap
-msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
+#: src/en/tutorials/connect-config-elasticsearch.md:159
+#, fuzzy, no-wrap
+#| msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
+msgid "Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
 msgstr "Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und die Indizes neu erstellen kann"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:191
+#: src/en/tutorials/connect-config-elasticsearch.md:163
 msgid ""
 "Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
@@ -26281,14 +26230,14 @@ msgstr ""
 "Neuindizierung verwendet werden sollen (Beispiel `[8]`):"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:197
+#: src/en/tutorials/connect-config-elasticsearch.md:169
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 "Dies sollte den Wiederaufbau der Indizes starten und den Fortschritt "
 "ausgeben:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:198
+#: src/en/tutorials/connect-config-elasticsearch.md:170
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -26316,7 +26265,7 @@ msgstr ""
 "[...]\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:215
+#: src/en/tutorials/connect-config-elasticsearch.md:187
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
 "while to complete. Please let this task finish completely and wait until it "
@@ -26327,7 +26276,7 @@ msgstr ""
 "die Konsole sind."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:220
+#: src/en/tutorials/connect-config-elasticsearch.md:192
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
 "your installation. Make sure you followed the complete Elasticsearch set up "
@@ -26341,7 +26290,7 @@ msgstr ""
 "install-elasticsearch) durchgeführt haben."
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:221
+#: src/en/tutorials/connect-config-elasticsearch.md:193
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -26353,7 +26302,7 @@ msgstr ""
 "`/var/log/elasticsearch/elasticsearch.log`.\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:228
+#: src/en/tutorials/connect-config-elasticsearch.md:200
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
@@ -27306,390 +27255,211 @@ msgstr ""
 msgid "Tutorials"
 msgstr "Tutorials"
 
-#. type: Title ##
+#. type: Title #
 #: src/en/tutorials/install-elasticsearch.md:1
 #: src/en/tutorials/install-elasticsearch.md:6
-#: src/en/tutorials/install-elasticsearch.md:29
-#, no-wrap
-msgid "Install Elasticsearch 7"
+#, fuzzy, no-wrap
+#| msgid "Install Elasticsearch 7"
+msgid "Install Elasticsearch 9"
 msgstr "Elasticsearch 7 installieren"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:13
+#: src/en/tutorials/install-elasticsearch.md:14
 msgid ""
-"Elasticsearch is technically not required to run Zammad, but _highly_ "
-"recommended."
+"This guide shows a simple standard installation of Elasticsearch 9. The "
+"intention is to get you up and running quickly.  However, in case you need a "
+"more advanced configuration or face any issues, have a look at the [official "
+"Elasticsearch installation documentation](https://www.elastic.co/docs/deploy-"
+"manage/deploy/self-managed/installing-elasticsearch){target=_blank}.  Adapt "
+"it wherever needed in case your use-case differs."
 msgstr ""
-"Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, wird "
-"aber _dringend_ empfohlen."
 
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:18
-msgid ""
-"Elasticsearch offers different versions. Currently, the versions 7, 8 and 9 "
-"are supported by Zammad. For installation instructions, you should first and "
-"foremost follow [Elastic's installation documentation](https://"
-"www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-"
-"elasticsearch){target=_blank}.  Use the dropdown in the top right corner to "
-"choose which version you want to install."
-msgstr ""
-"Elasticsearch bietet verschiedene Versionen an. Derzeit werden die Versionen "
-"7, 8 und 9 von Zammad unterstützt. Für die Installationsanweisungen sollten "
-"Sie in erster Linie der [Installations-Dokumentation](https://www.elastic.co/"
-"docs/deploy-manage/deploy/self-managed/installing-elasticsearch)"
-"{target=_blank} folgen.  Verwenden Sie das Dropdown-Menü in der oberen "
-"rechten Ecke, um die Version auszuwählen, die Sie installieren möchten."
-
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:22
-msgid ""
-"However, if you want go with Elasticsearch 7 (which is slightly easier to "
-"install), you can find the consolidated installation steps below. Be aware "
-"that the maintenance of version 7 might be stopped earlier than for later "
-"versions, which also come with some additional security features."
-msgstr ""
-"Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu "
-"installieren ist), finden Sie unten die konsolidierten "
-"Installationsschritte. Beachten Sie, dass die Wartung von Version 7 "
-"möglicherweise früher eingestellt wird als bei darauffolgenden Versionen, "
-"die außerdem einige zusätzliche Sicherheitsfunktionen enthalten."
-
-#. type: Fenced div block (info)
-#: src/en/tutorials/install-elasticsearch.md:23
+#. type: Title ###
+#: src/en/tutorials/install-elasticsearch.md:17
 #, no-wrap
-msgid ""
-"If you install Elasticsearch >= 8 and want to follow our\n"
-"[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure to copy/save the password which is\n"
-"shown during the installation of Elasticsearch.\n"
+msgid "Download and Add the Public Signing Key"
 msgstr ""
-"Wenn Sie Elasticsearch >= 8 installieren und unserer\n"
-"[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher, dass Sie das Passwort kopieren/speichern, das\n"
-"während der Installation von Elasticsearch angezeigt wird.\n"
 
-#. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:31
+#. type: Fenced div block (tabs key:distros)
+#: src/en/tutorials/install-elasticsearch.md:19
 #, no-wrap
 msgid ""
 "\n"
-"==== Ubuntu/Debian\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"Install required tools:\n"
 "\n"
 "```sh\n"
-"sudo apt install apt-transport-https sudo wget curl gnupg\n"
+"sudo apt-get install apt-transport-https\n"
 "```\n"
 "\n"
-"```sh\n"
-"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+"Add repo key:\n"
+"\n"
+"``` sh\n"
+"wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg\n"
 "```\n"
 "\n"
-msgstr ""
+"=== OpenSUSE/SLES\n"
 "\n"
-"==== Ubuntu/Debian\n"
-"\n"
-"```sh\n"
-"sudo apt install apt-transport-https sudo wget curl gnupg\n"
+"``` sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
-"```sh\n"
-"curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
-"```\n"
+"=== CentOS/RHEL\n"
 "\n"
-
-#. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:31
-#, no-wrap
-msgid ""
-"\n"
-"=== Deb822 format\n"
-"\n"
-msgstr ""
-"\n"
-"=== Deb822 Format\n"
-"\n"
-
-#. type: Fenced div block (tabs|tabs|info)
-#: src/en/tutorials/install-elasticsearch.md:31
-#, no-wrap
-msgid ""
-"In this tab, the repository is added by using the\n"
-"[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
-"If you run a distribution which doesn't support it, use the legacy format instead.\n"
-msgstr ""
-"In diesem Tab wird das Repository mit im\n"
-"[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html)\n"
-"hinzugefügt. Wenn Sie eine Distribution einsetzen, die dieses Format nicht unterstützt,\n"
-"verwenden Sie stattdessen das Legacy-Format.\n"
-
-#. type: Fenced div block (tabs|tabs)
-#: src/en/tutorials/install-elasticsearch.md:31
-#, no-wrap
-msgid ""
-"\n"
-"```sh\n"
-"printf \"Types: deb\n"
-"URIs: https://artifacts.elastic.co/packages/7.x/apt\n"
-"Suites: stable\n"
-"Components: main\n"
-"Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg\" | \\\n"
-"sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null\n"
-"```\n"
-"\n"
-"=== Legacy format\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
-"sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+"``` sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 msgstr ""
-"\n"
-"```sh\n"
-"printf \"Types: deb\n"
-"URIs: https://artifacts.elastic.co/packages/7.x/apt\n"
-"Suites: stable\n"
-"Components: main\n"
-"Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg\" | \\\n"
-"sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null\n"
-"```\n"
-"\n"
-"=== Legacy Format\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
-"sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
-"```\n"
-"\n"
 
-#. type: Fenced div block (tabs)
-#: src/en/tutorials/install-elasticsearch.md:31
+#. type: Title ###
+#: src/en/tutorials/install-elasticsearch.md:49
+#, fuzzy, no-wrap
+#| msgid "Add Zammad Repository"
+msgid "Add the Repository"
+msgstr "Zammad-Repository hinzufügen"
+
+#. type: Fenced div block (tabs key:distros)
+#: src/en/tutorials/install-elasticsearch.md:51
 #, no-wrap
 msgid ""
 "\n"
-"```sh\n"
-"sudo apt update\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"``` sh\n"
+"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
 "```\n"
 "\n"
-"```sh\n"
-"sudo apt install elasticsearch\n"
-"```\n"
+"=== OpenSUSE/SLES\n"
 "\n"
-"==== OpenSUSE\n"
+"Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:\n"
 "\n"
 "```sh\n"
-"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"[elasticsearch-7.x]\n"
-"name=Elasticsearch repository for 7.x packages\n"
-"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+"[elasticsearch]\n"
+"name=Elasticsearch repository for 9.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
 "gpgcheck=1\n"
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"enabled=1\n"
+"enabled=0\n"
 "autorefresh=1\n"
-"type=rpm-md\"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
+"type=rpm-md\n"
 "```\n"
 "\n"
-"```sh\n"
-"sudo zypper install elasticsearch\n"
-"```\n"
+"=== CentOS/RHEL\n"
 "\n"
-"==== CentOS\n"
+"Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:\n"
 "\n"
 "```sh\n"
-"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"[elasticsearch-7.x]\n"
-"name=Elasticsearch repository for 7.x packages\n"
-"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+"[elasticsearch]\n"
+"name=Elasticsearch repository for 9.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
 "gpgcheck=1\n"
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"enabled=1\n"
-"autorefresh=1\n"
-"type=rpm-md\"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
+"enabled=0\n"
+"type=rpm-md\n"
 "```\n"
-"\n"
-"```sh\n"
-"sudo yum install -y elasticsearch\n"
-"```\n"
-"\n"
-"==== Direct Download\n"
-"\n"
-"Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the\n"
-"[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n"
-"for in-depth instructions.\n"
 "\n"
 msgstr ""
-"\n"
-"```sh\n"
-"sudo apt update\n"
-"```\n"
-"\n"
-"```sh\n"
-"sudo apt install elasticsearch\n"
-"```\n"
-"\n"
-"==== OpenSUSE\n"
-"\n"
-"```sh\n"
-"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"[elasticsearch-7.x]\n"
-"name=Elasticsearch repository for 7.x packages\n"
-"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
-"gpgcheck=1\n"
-"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"enabled=1\n"
-"autorefresh=1\n"
-"type=rpm-md\"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
-"```\n"
-"\n"
-"```sh\n"
-"sudo zypper install elasticsearch\n"
-"```\n"
-"\n"
-"==== CentOS\n"
-"\n"
-"```sh\n"
-"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"```\n"
-"\n"
-"```sh\n"
-"echo \"[elasticsearch-7.x]\n"
-"name=Elasticsearch repository for 7.x packages\n"
-"baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
-"gpgcheck=1\n"
-"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-"enabled=1\n"
-"autorefresh=1\n"
-"type=rpm-md\"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
-"```\n"
-"\n"
-"```sh\n"
-"sudo yum install -y elasticsearch\n"
-"```\n"
-"\n"
-"==== Direkter Download\n"
-"\n"
-"Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine\n"
-"[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n"
-"für weitergehende Informationen.\n"
-"\n"
 
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:134
+#. type: Fenced div block (tabs key:distros)
+#: src/en/tutorials/install-elasticsearch.md:92
 #, no-wrap
 msgid ""
-"Install the ingest-attachment plugin:\n"
-":   ```sh\n"
-"    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
-"    ```\n"
+"\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"``` sh\n"
+"sudo apt-get update && sudo apt-get install elasticsearch\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"```sh\n"
+"sudo zypper modifyrepo --enable elasticsearch && \\\n"
+"  sudo zypper install elasticsearch; \\\n"
+"  sudo zypper modifyrepo --disable elasticsearch\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"CentOS and RHEL 7 or earlier:\n"
+"\n"
+"```sh\n"
+"sudo yum install --enablerepo=elasticsearch elasticsearch\n"
+"```\n"
+"\n"
+"RHEL 8 and later:\n"
+"\n"
+"```sh\n"
+"sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
+"```\n"
+"\n"
 msgstr ""
-"Installieren Sie das Plugin \"ingest-attachment\":\n"
-":   ```sh\n"
-"    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
-"    ```\n"
 
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:143
+#. type: Fenced div block (tip)
+#: src/en/tutorials/install-elasticsearch.md:124
 #, no-wrap
 msgid ""
-"Increase Virtual Memory Map Limit:\n"
-":   ```sh\n"
-"    sudo sysctl -w vm.max_map_count=262144\n"
-"    ```\n"
-"<!-- markdownlint-disable MD046 -->\n"
-"Adjust `/etc/elasticsearch/elasticsearch.yml`:\n"
-":   ```\n"
-"    # /etc/elasticsearch/elasticsearch.yml\n"
+"Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by\n"
+"running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.\n"
 msgstr ""
-"Erhöhen Sie das Virtual Memory Map Limit:\n"
-":   ```sh\n"
-"    sudo sysctl -w vm.max_map_count=262144\n"
-"    ```\n"
-"<!-- markdownlint-disable MD046 -->\n"
-"Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:\n"
-":   ```\n"
-"    # /etc/elasticsearch/elasticsearch.yml\n"
+
+#. type: Title ##
+#: src/en/tutorials/install-elasticsearch.md:129
+#, fuzzy, no-wrap
+#| msgid "Backup Configuration"
+msgid "Configuration"
+msgstr "Backup-Konfiguration"
+
+#. type: Plain text
+#: src/en/tutorials/install-elasticsearch.md:132
+msgid ""
+"Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the "
+"following values:"
+msgstr ""
+
+#. type: Fenced code block (yml)
+#: src/en/tutorials/install-elasticsearch.md:133
+#, no-wrap
+msgid ""
+"network.host: 0.0.0.0\n"
+"transport.host: 0.0.0.0\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/install-elasticsearch.md:139
+msgid "Optional to increase the maximum context size to index:"
+msgstr ""
+
+#. type: Fenced code block (yml)
+#: src/en/tutorials/install-elasticsearch.md:140
+#, no-wrap
+msgid "http.max_content_length: 400mb\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/install-elasticsearch.md:144
+#, fuzzy, no-wrap
+#| msgid "Connect and Configure Elasticsearch"
+msgid "Start and Enable Elasticsearch"
+msgstr "Verbinden und konfigurieren von Elasticsearch"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/install-elasticsearch.md:146
+#, fuzzy, no-wrap
+#| msgid "sudo systemctl restart elasticsearch\n"
+msgid "sudo systemctl enable elasticsearch.service --now\n"
+msgstr "sudo systemctl restart elasticsearch\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:154
-#, no-wrap
 msgid ""
-"    # Tickets above this size (articles + attachments + metadata)\n"
-"    # may fail to be properly indexed (Default: 100mb).\n"
-"    #\n"
-"    # When Zammad sends tickets to Elasticsearch for indexing,\n"
-"    # it bundles together all the data on each individual ticket\n"
-"    # and issues a single HTTP request for it.\n"
-"    # Payloads exceeding this threshold will be truncated.\n"
-"    #\n"
-"    # Performance may suffer if it is set too high.\n"
-"    http.max_content_length: 400mb\n"
+"Go on with the [installation of Zammad](/en/get-started/installation/"
+"package#add-zammad-repository). After the installation of Zammad is "
+"completed, you can [connect Zammad with Elasticsearch](/en/tutorials/connect-"
+"config-elasticsearch)."
 msgstr ""
-"    # Tickets above this size (articles + attachments + metadata)\n"
-"    # may fail to be properly indexed (Default: 100mb).\n"
-"    #\n"
-"    # When Zammad sends tickets to Elasticsearch for indexing,\n"
-"    # it bundles together all the data on each individual ticket\n"
-"    # and issues a single HTTP request for it.\n"
-"    # Payloads exceeding this threshold will be truncated.\n"
-"    #\n"
-"    # Performance may suffer if it is set too high.\n"
-"    http.max_content_length: 400mb\n"
-
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:164
-#, no-wrap
-msgid ""
-"    # Allows the engine to generate larger (more complex) search queries.\n"
-"    # Elasticsearch will raise an error or deprecation notice if this value is\n"
-"    # too low, but setting it too high can overload system\n"
-"    # resources (Default: 1024).\n"
-"    #\n"
-"    # Available in version 6.6+ only.\n"
-"    indices.query.bool.max_clause_count: 2000\n"
-"    ```\n"
-"<!-- markdownlint-enable MD046 -->\n"
-msgstr ""
-"    # Allows the engine to generate larger (more complex) search queries.\n"
-"    # Elasticsearch will raise an error or deprecation notice if this value is\n"
-"    # too low, but setting it too high can overload system\n"
-"    # resources (Default: 1024).\n"
-"    #\n"
-"    # Available in version 6.6+ only.\n"
-"    indices.query.bool.max_clause_count: 2000\n"
-"    ```\n"
-"<!-- markdownlint-enable MD046 -->\n"
-
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:169
-#, no-wrap
-msgid ""
-"Enable it by default and start it:\n"
-":   ```sh\n"
-"    sudo systemctl enable elasticsearch --now\n"
-"    ```\n"
-msgstr ""
-"Aktivieren Sie es standardmäßig und starten Sie es:\n"
-":   ```sh\n"
-"    sudo systemctl enable elasticsearch --now\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:173
-#, no-wrap
-msgid ""
-" Go on with\n"
-" [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).\n"
-msgstr ""
-" Fahren Sie fort indem Sie\n"
-" [Elasticsearch mit Zammad verbinden](/de/tutorials/connect-config-elasticsearch).\n"
 
 #. type: Title #
 #: src/en/tutorials/migrate-host.md:1 src/en/tutorials/migrate-host.md:6
@@ -29390,11 +29160,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:16
-#, fuzzy
-#| msgid ""
-#| "Grafana is a third-party analytics/visualization application you can "
-#| "connect to Zammad (precisely: Elasticsearch). It can access the "
-#| "Elasticsearch index and visualize your Zammad data."
 msgid ""
 "Grafana is a third party analytics/visualization application you can connect "
 "to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index "
@@ -31160,10 +30925,7 @@ msgstr "Schritt 3: Aktivieren Sie SSO in Zammad"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:503
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
-#| "_Settings > Security > Third-Party Applications_\n"
+#, no-wrap
 msgid ""
 "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
 "_Settings > Security > Third-party Applications_\n"
@@ -32147,6 +31909,410 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid "Elasticsearch 7 / without `https`:"
+#~ msgstr "Elasticsearch 7 / ohne `https`:"
+
+#, no-wrap
+#~ msgid "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
+#~ msgstr "zammad run rails r \"Setting.set('es_url', 'http://localhost:9200')\"\n"
+
+#, no-wrap
+#~ msgid "Elasticsearch >= 8 / with `https`:\n"
+#~ msgstr "Elasticsearch >= 8 / mit `https`:\n"
+
+#, no-wrap
+#~ msgid "Set the Elasticsearch User and Password <Badge type=\"warning\" text=\">= ES8\"/>"
+#~ msgstr "Setzen des Elasticsearch-Benutzers und -Passworts <Badge type=\"warning\" text=\">= ES8\"/>"
+
+#, no-wrap
+#~ msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\">= ES8\"/>"
+#~ msgstr "Zertifikat zu Zammad hinzufügen <Badge type=\"warning\" text=\">= ES8\"/>"
+
+#, no-wrap
+#~ msgid ""
+#~ "Go to the admin panel of Zammad and add your copied certificate under\n"
+#~ "_Settings > Security > SSL Certificates_.\n"
+#~ msgstr ""
+#~ "Gehen Sie in den Admin-Bereich von Zammad und fügen Sie Ihr kopiertes Zertifikat unter\n"
+#~ "_Einstellungen > Sicherheit > SSL-Zertifikate_ ein.\n"
+
+#, no-wrap
+#~ msgid "Step 2: Verify the Ingest-Attachment Plugin is Installed Correctly <Badge type=\"warning\" text=\"only ES7\" />"
+#~ msgstr "Schritt 2: Überprüfen Sie, ob das Ingest-Plugin korrekt installiert ist <Badge type=\"warning\" text=\"only ES7\" />"
+
+#~ msgid "List installed Elasticsearch plugins:"
+#~ msgstr "Auflisten der installierten Elasticsearch-Plugins:"
+
+#, no-wrap
+#~ msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
+#~ msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin list\n"
+
+#~ msgid "The output should include `ingest-attachment`."
+#~ msgstr "Die Ausgabe sollte `ingest-attachment` enthalten."
+
+#~ msgid ""
+#~ "Otherwise, try reinstalling the `ingest-attachment` plugin and check "
+#~ "again:"
+#~ msgstr ""
+#~ "Versuchen Sie andernfalls, das Plugin `ingest-attachment` neu zu "
+#~ "installieren, und prüfen Sie dann erneut:"
+
+#, no-wrap
+#~ msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
+#~ msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin remove ingest-attachment\n"
+
+#, no-wrap
+#~ msgid "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
+#~ msgstr "/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
+
+#~ msgid ""
+#~ "Elasticsearch is technically not required to run Zammad, but _highly_ "
+#~ "recommended."
+#~ msgstr ""
+#~ "Elasticsearch ist technisch nicht erforderlich, um Zammad auszuführen, "
+#~ "wird aber _dringend_ empfohlen."
+
+#~ msgid ""
+#~ "Elasticsearch offers different versions. Currently, the versions 7, 8 and "
+#~ "9 are supported by Zammad. For installation instructions, you should "
+#~ "first and foremost follow [Elastic's installation documentation](https://"
+#~ "www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-"
+#~ "elasticsearch){target=_blank}.  Use the dropdown in the top right corner "
+#~ "to choose which version you want to install."
+#~ msgstr ""
+#~ "Elasticsearch bietet verschiedene Versionen an. Derzeit werden die "
+#~ "Versionen 7, 8 und 9 von Zammad unterstützt. Für die "
+#~ "Installationsanweisungen sollten Sie in erster Linie der [Installations-"
+#~ "Dokumentation](https://www.elastic.co/docs/deploy-manage/deploy/self-"
+#~ "managed/installing-elasticsearch){target=_blank} folgen.  Verwenden Sie "
+#~ "das Dropdown-Menü in der oberen rechten Ecke, um die Version auszuwählen, "
+#~ "die Sie installieren möchten."
+
+#~ msgid ""
+#~ "However, if you want go with Elasticsearch 7 (which is slightly easier to "
+#~ "install), you can find the consolidated installation steps below. Be "
+#~ "aware that the maintenance of version 7 might be stopped earlier than for "
+#~ "later versions, which also come with some additional security features."
+#~ msgstr ""
+#~ "Wenn Sie jedoch Elasticsearch 7 verwenden möchten (das etwas einfacher zu "
+#~ "installieren ist), finden Sie unten die konsolidierten "
+#~ "Installationsschritte. Beachten Sie, dass die Wartung von Version 7 "
+#~ "möglicherweise früher eingestellt wird als bei darauffolgenden Versionen, "
+#~ "die außerdem einige zusätzliche Sicherheitsfunktionen enthalten."
+
+#, no-wrap
+#~ msgid ""
+#~ "If you install Elasticsearch >= 8 and want to follow our\n"
+#~ "[standard configuration](/en/tutorials/connect-config-elasticsearch), make sure to copy/save the password which is\n"
+#~ "shown during the installation of Elasticsearch.\n"
+#~ msgstr ""
+#~ "Wenn Sie Elasticsearch >= 8 installieren und unserer\n"
+#~ "[Standardkonfiguration](/de/tutorials/connect-config-elasticsearch) folgen wollen, stellen Sie sicher, dass Sie das Passwort kopieren/speichern, das\n"
+#~ "während der Installation von Elasticsearch angezeigt wird.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "==== Ubuntu/Debian\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt install apt-transport-https sudo wget curl gnupg\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "==== Ubuntu/Debian\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt install apt-transport-https sudo wget curl gnupg\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/elasticsearch.gpg> /dev/null\n"
+#~ "```\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "=== Deb822 format\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "=== Deb822 Format\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "In this tab, the repository is added by using the\n"
+#~ "[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
+#~ "If you run a distribution which doesn't support it, use the legacy format instead.\n"
+#~ msgstr ""
+#~ "In diesem Tab wird das Repository mit im\n"
+#~ "[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html)\n"
+#~ "hinzugefügt. Wenn Sie eine Distribution einsetzen, die dieses Format nicht unterstützt,\n"
+#~ "verwenden Sie stattdessen das Legacy-Format.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "```sh\n"
+#~ "printf \"Types: deb\n"
+#~ "URIs: https://artifacts.elastic.co/packages/7.x/apt\n"
+#~ "Suites: stable\n"
+#~ "Components: main\n"
+#~ "Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg\" | \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Legacy format\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
+#~ "sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "```sh\n"
+#~ "printf \"Types: deb\n"
+#~ "URIs: https://artifacts.elastic.co/packages/7.x/apt\n"
+#~ "Suites: stable\n"
+#~ "Components: main\n"
+#~ "Signed-By: /etc/apt/trusted.gpg.d/elasticsearch.gpg\" | \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/elastic-7.x.sources > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Legacy Format\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/trusted.gpg.d/elasticsearch.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main\"| \\\n"
+#~ "sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt update\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt install elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== OpenSUSE\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"[elasticsearch-7.x]\n"
+#~ "name=Elasticsearch repository for 7.x packages\n"
+#~ "baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+#~ "gpgcheck=1\n"
+#~ "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "enabled=1\n"
+#~ "autorefresh=1\n"
+#~ "type=rpm-md\"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo zypper install elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== CentOS\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"[elasticsearch-7.x]\n"
+#~ "name=Elasticsearch repository for 7.x packages\n"
+#~ "baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+#~ "gpgcheck=1\n"
+#~ "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "enabled=1\n"
+#~ "autorefresh=1\n"
+#~ "type=rpm-md\"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo yum install -y elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== Direct Download\n"
+#~ "\n"
+#~ "Find the latest release on the [downloads page](https://www.elastic.co/downloads/elasticsearch) or see the\n"
+#~ "[installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n"
+#~ "for in-depth instructions.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt update\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo apt install elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== OpenSUSE\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"[elasticsearch-7.x]\n"
+#~ "name=Elasticsearch repository for 7.x packages\n"
+#~ "baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+#~ "gpgcheck=1\n"
+#~ "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "enabled=1\n"
+#~ "autorefresh=1\n"
+#~ "type=rpm-md\"| sudo tee /etc/zypp/repos.d/elasticsearch-7.x.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo zypper install elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== CentOS\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"[elasticsearch-7.x]\n"
+#~ "name=Elasticsearch repository for 7.x packages\n"
+#~ "baseurl=https://artifacts.elastic.co/packages/7.x/yum\n"
+#~ "gpgcheck=1\n"
+#~ "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#~ "enabled=1\n"
+#~ "autorefresh=1\n"
+#~ "type=rpm-md\"| sudo tee /etc/yum.repos.d/elasticsearch-7.x.repo\n"
+#~ "```\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "sudo yum install -y elasticsearch\n"
+#~ "```\n"
+#~ "\n"
+#~ "==== Direkter Download\n"
+#~ "\n"
+#~ "Sie finden das neueste Release auf der [Download Seite](https://www.elastic.co/downloads/elasticsearch) und eine\n"
+#~ "[Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n"
+#~ "für weitergehende Informationen.\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Install the ingest-attachment plugin:\n"
+#~ ":   ```sh\n"
+#~ "    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
+#~ "    ```\n"
+#~ msgstr ""
+#~ "Installieren Sie das Plugin \"ingest-attachment\":\n"
+#~ ":   ```sh\n"
+#~ "    /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment\n"
+#~ "    ```\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Increase Virtual Memory Map Limit:\n"
+#~ ":   ```sh\n"
+#~ "    sudo sysctl -w vm.max_map_count=262144\n"
+#~ "    ```\n"
+#~ "<!-- markdownlint-disable MD046 -->\n"
+#~ "Adjust `/etc/elasticsearch/elasticsearch.yml`:\n"
+#~ ":   ```\n"
+#~ "    # /etc/elasticsearch/elasticsearch.yml\n"
+#~ msgstr ""
+#~ "Erhöhen Sie das Virtual Memory Map Limit:\n"
+#~ ":   ```sh\n"
+#~ "    sudo sysctl -w vm.max_map_count=262144\n"
+#~ "    ```\n"
+#~ "<!-- markdownlint-disable MD046 -->\n"
+#~ "Passen Sie `/etc/elasticsearch/elasticsearch.yml` an:\n"
+#~ ":   ```\n"
+#~ "    # /etc/elasticsearch/elasticsearch.yml\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "    # Tickets above this size (articles + attachments + metadata)\n"
+#~ "    # may fail to be properly indexed (Default: 100mb).\n"
+#~ "    #\n"
+#~ "    # When Zammad sends tickets to Elasticsearch for indexing,\n"
+#~ "    # it bundles together all the data on each individual ticket\n"
+#~ "    # and issues a single HTTP request for it.\n"
+#~ "    # Payloads exceeding this threshold will be truncated.\n"
+#~ "    #\n"
+#~ "    # Performance may suffer if it is set too high.\n"
+#~ "    http.max_content_length: 400mb\n"
+#~ msgstr ""
+#~ "    # Tickets above this size (articles + attachments + metadata)\n"
+#~ "    # may fail to be properly indexed (Default: 100mb).\n"
+#~ "    #\n"
+#~ "    # When Zammad sends tickets to Elasticsearch for indexing,\n"
+#~ "    # it bundles together all the data on each individual ticket\n"
+#~ "    # and issues a single HTTP request for it.\n"
+#~ "    # Payloads exceeding this threshold will be truncated.\n"
+#~ "    #\n"
+#~ "    # Performance may suffer if it is set too high.\n"
+#~ "    http.max_content_length: 400mb\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "    # Allows the engine to generate larger (more complex) search queries.\n"
+#~ "    # Elasticsearch will raise an error or deprecation notice if this value is\n"
+#~ "    # too low, but setting it too high can overload system\n"
+#~ "    # resources (Default: 1024).\n"
+#~ "    #\n"
+#~ "    # Available in version 6.6+ only.\n"
+#~ "    indices.query.bool.max_clause_count: 2000\n"
+#~ "    ```\n"
+#~ "<!-- markdownlint-enable MD046 -->\n"
+#~ msgstr ""
+#~ "    # Allows the engine to generate larger (more complex) search queries.\n"
+#~ "    # Elasticsearch will raise an error or deprecation notice if this value is\n"
+#~ "    # too low, but setting it too high can overload system\n"
+#~ "    # resources (Default: 1024).\n"
+#~ "    #\n"
+#~ "    # Available in version 6.6+ only.\n"
+#~ "    indices.query.bool.max_clause_count: 2000\n"
+#~ "    ```\n"
+#~ "<!-- markdownlint-enable MD046 -->\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Enable it by default and start it:\n"
+#~ ":   ```sh\n"
+#~ "    sudo systemctl enable elasticsearch --now\n"
+#~ "    ```\n"
+#~ msgstr ""
+#~ "Aktivieren Sie es standardmäßig und starten Sie es:\n"
+#~ ":   ```sh\n"
+#~ "    sudo systemctl enable elasticsearch --now\n"
+#~ "    ```\n"
+
+#, no-wrap
+#~ msgid ""
+#~ " Go on with\n"
+#~ " [connecting Elasticsearch with Zammad](/en/tutorials/connect-config-elasticsearch).\n"
+#~ msgstr ""
+#~ " Fahren Sie fort indem Sie\n"
+#~ " [Elasticsearch mit Zammad verbinden](/de/tutorials/connect-config-elasticsearch).\n"
 
 #, no-wrap
 #~ msgid "  Self hosting Zammad users can connect Grafana to their Elasticsearch as well.\n"
