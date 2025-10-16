@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 10
 title: 'Миграција на Zammad'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Firewall & SELinux
-order: 7
+order: 12
 ---
 
 # Firewall & SELinux

@@ -1,6 +1,6 @@
 ---
 title: Configure Database Server
-order: 8
+order: 6
 ---
 
 # Configure Database Server

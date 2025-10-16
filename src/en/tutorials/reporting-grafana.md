@@ -1,6 +1,6 @@
 ---
 title: Reporting with Grafana
-order: 12
+order: 5
 ---
 
 # Reporting with Grafana

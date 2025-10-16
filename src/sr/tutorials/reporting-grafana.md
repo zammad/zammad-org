@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 5
 title: 'Reporting with Grafana'
 ---
 

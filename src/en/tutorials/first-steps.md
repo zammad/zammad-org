@@ -1,6 +1,6 @@
 ---
 title: First Steps in Zammad
-order: 1
+order: 4
 ---
 
 # First Steps in Zammad

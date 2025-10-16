@@ -1,6 +1,6 @@
 ---
 title: GraphQL API
-order: 9
+order: 7
 ---
 
 # GraphQL API

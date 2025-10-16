@@ -1,6 +1,6 @@
 ---
 title: Docker Compose Scenarios
-order: 2
+order: 5
 ---
 
 # Docker Compose Scenarios

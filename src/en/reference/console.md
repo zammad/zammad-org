@@ -1,6 +1,6 @@
 ---
 title: Rails Commands
-order: 1
+order: 2
 ---
 
 # Rails Console

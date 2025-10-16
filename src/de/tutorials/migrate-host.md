@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 9
 title: 'Zammad zu einem neuen Host migrieren'
 ---
 

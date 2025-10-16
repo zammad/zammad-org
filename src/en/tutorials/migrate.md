@@ -1,6 +1,6 @@
 ---
 title: Migrate to Zammad
-order: 11
+order: 10
 ---
 
 # Migrate To Zammad

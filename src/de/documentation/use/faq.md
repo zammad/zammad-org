@@ -81,7 +81,7 @@ anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.
   Ihren Zammad-Administrator. Dies gilt auch, wenn Ihr Problem hier nicht
   aufgeführt ist.
 
-### Wie kann ich Tastaturkürzel verwenden? Ich möchte produktiver sein
+### How can I use keyboard shortcuts?
 
 Benutzen Sie sie einfach! Sie finden eine Übersicht der verfügbaren
 Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken oder die
@@ -112,7 +112,7 @@ der unteren linken Ecke öffnen und **Profileinstellungen** wählen. Dort
 können Sie ein Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über
 eine Kamera verfügt) oder bereits vorhandene Bilder löschen.
 
-### Ich möchte die Sprache der Benutzeroberfläche von Zammad ändern. Wie kann ich das tun?
+### How to change the language of the Zammad user interface?
 
 Gehen Sie in Ihren Profileinstellungen in den Bereich Sprache, indem Sie das
 Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie
@@ -125,10 +125,9 @@ Gehen Sie in Ihren Profileinstellungen in den Bereich
 in der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort
 können Sie einen anderen Agenten als Vertretung festlegen.
 
-### Kann ich die Reihenfolge der Übersichten anpassen?
+### How to adjust the order of the overviews?
 
-Ja! Lesen Sie in der
-[Übersichts-Anleitung](guides/overviews#ubersichten-neu-anordnen) weiter.
+Read on in the [overview guide](guides/overviews#reorder-overviews).
 
 ## Mit Tickets arbeiten
 

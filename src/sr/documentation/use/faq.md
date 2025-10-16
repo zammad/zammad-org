@@ -75,7 +75,7 @@ different. If in doubt, you should ask your admin.
 - Lost your 2FA recovery codes? Get in touch with your Zammad admin. This
   also applies if your problem is not mentioned here.
 
-### How can I use keyboard shortcuts? I want to be more productive
+### How can I use keyboard shortcuts?
 
 Just use them! You can find an overview of the available shortcuts by
 pressing [[?]] on your keyboard or open the overview from the avatar menu
@@ -103,7 +103,7 @@ opening the avatar menu in the bottom left corner and select **Profile
 settings**. There you can upload an image, capture a photo (if your device
 has a camera) or delete already present images.
 
-### I want to change the language of the Zammad user interface. How can I do that?
+### How to change the language of the Zammad user interface?
 
 Go to the language section in you profile settings by opening the avatar
 menu in the bottom left corner and select **Profile settings**.
@@ -114,9 +114,9 @@ Go to the [out of office section](manage-profile#out-of-office) in you
 profile settings by opening the avatar menu in the bottom left corner and
 select **Profile settings**. There you can define a replacement agent.
 
-### Can I adjust the order of the overviews?
+### How to adjust the order of the overviews?
 
-Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews).
+Read on in the [overview guide](guides/overviews#reorder-overviews).
 
 ## Рад на тикетима
 

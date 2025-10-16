@@ -1,6 +1,6 @@
 ---
 title: Migrate Zammad to New Host
-order: 12
+order: 9
 ---
 
 # Migrate Zammad to New Host
