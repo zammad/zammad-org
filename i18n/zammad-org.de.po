@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-09 10:17+0200\n"
-"PO-Revision-Date: 2025-10-08 06:00+0000\n"
+"POT-Creation-Date: 2025-10-15 11:53+0200\n"
+"PO-Revision-Date: 2025-10-16 08:28+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -3215,9 +3215,10 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:65
-#, no-wrap
-msgid "How can I use keyboard shortcuts? I want to be more productive"
-msgstr "Wie kann ich Tastaturkürzel verwenden? Ich möchte produktiver sein"
+#, fuzzy, no-wrap
+#| msgid "Use keyboard shortcuts"
+msgid "How can I use keyboard shortcuts?"
+msgstr "Verwenden Sie Tastaturkürzel"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:69
@@ -3298,8 +3299,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:89
-#, no-wrap
-msgid "I want to change the language of the Zammad user interface. How can I do that?"
+#, fuzzy, no-wrap
+#| msgid "I want to change the language of the Zammad user interface. How can I do that?"
+msgid "How to change the language of the Zammad user interface?"
 msgstr "Ich möchte die Sprache der Benutzeroberfläche von Zammad ändern. Wie kann ich das tun?"
 
 #. type: Plain text
@@ -3332,14 +3334,17 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:99
-#, no-wrap
-msgid "Can I adjust the order of the overviews?"
+#, fuzzy, no-wrap
+#| msgid "Can I adjust the order of the overviews?"
+msgid "How to adjust the order of the overviews?"
 msgstr "Kann ich die Reihenfolge der Übersichten anpassen?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:102
-msgid ""
-"Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
+#, fuzzy
+#| msgid ""
+#| "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
+msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
 "Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-"
 "anordnen) weiter."
@@ -8060,20 +8065,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:162
-#, fuzzy
-#| msgid ""
-#| "Alternatively, you can follow [our example setup](/en/tutorials/install-"
-#| "elasticsearch.md) of Elasticsearch 7, which we included in another page "
-#| "to keep the install instructions as lean as possible."
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
 "elasticsearch.md) of Elasticsearch 9, which is separated to keep the install "
 "instructions as lean as possible."
 msgstr ""
 "Alternativ können Sie [unserem Beispiel-Setup](/de/tutorials/install-"
-"elasticsearch.md) für Elasticsearch 7 folgen, das Sie auf einer anderen "
-"Seite finden, um die Installationsanweisungen so schlank wie möglich zu "
-"halten."
+"elasticsearch.md) für Elasticsearch 9 folgen, das Sie auf einer anderen "
+"Seite finden, um die Installationsanweisungen übersichtlich zu halten."
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:163
@@ -8145,36 +8144,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
 #: src/en/get-started/installation/package.md:170
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "```sh\n"
-#| "\n"
-#| "printf \"Types: deb\n"
-#| "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
-#| "Suites: 22.04\n"
-#| "Components: main\n"
-#| "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
-#| "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "=== Debian\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Debian 11\n"
-#| "\n"
-#| "```sh\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Debian 12\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "```sh\n"
@@ -8209,7 +8179,7 @@ msgstr ""
 "\n"
 "printf \"Types: deb\n"
 "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
-"Suites: 22.04\n"
+"Suites: 24.04\n"
 "Components: main\n"
 "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
 "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
@@ -8523,38 +8493,25 @@ msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:344
-#, fuzzy
-#| msgid ""
-#| "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
-#| "config-elasticsearch))"
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
 msgstr ""
-"Zammad mit Elasticsearch verbinden ([Basis Anleitung](/de/tutorials/connect-"
-"config-elasticsearch))"
+"[Zammad mit Elasticsearch verbinden](/de/tutorials/connect-config-"
+"elasticsearch)"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:344
-#, fuzzy
-#| msgid ""
-#| "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/"
-#| "firewall-selinux))"
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
-"Passen Sie Ihre SELinux-Regeln und Ihre Firewall an ([Basis Anleitung](/de/"
-"tutorials/firewall-selinux))"
+"[Passen Sie Ihre SELinux-Regeln und Ihre Firewall an](/de/tutorials/firewall-"
+"selinux)"
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:344
-#, fuzzy
-#| msgid ""
-#| "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
-msgstr ""
-"Konfigurieren Sie den Webserver ([Basis Anleitung](/de/tutorials/webserver-"
-"config))"
+msgstr "[Konfigurieren Sie den Webserver](/de/tutorials/webserver-config)"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:345
@@ -24905,6 +24862,155 @@ msgid "Name of site"
 msgstr "Name of site"
 
 #. type: Title #
+#: src/en/tutorials/backup-restore-docker.md:1
+#: src/en/tutorials/backup-restore-docker.md:6
+#, no-wrap
+msgid "Backup & Restore (Docker)"
+msgstr "Backup & Restore (Docker)"
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:9
+msgid ""
+"This section shows some basics about the backup and restore process for a "
+"Docker Compose based deployment of Zammad."
+msgstr ""
+"Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und "
+"Wiederherstellungsprozess für eine auf Docker Compose basierte Installation "
+"von Zammad."
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:15
+msgid ""
+"If you are familiar with volume based backup and restore procedures in "
+"Docker, and perhaps already use a different method or tool, then you can "
+"keep using it. A backup would typically mean shutting down the stack to "
+"ensure all in-memory files get written to disk, then backing up the volume "
+"contents, and then starting the stack again. When using such method, you can "
+"consider using the [disable-backup-service scenario](/en/reference/docker-"
+"compose-scenarios) so that the built-in backup and restore mechanism of "
+"Zammad is not activated."
+msgstr ""
+"Wenn Sie mit Volume-basierten Backup- und Restore-Prozessen in Docker "
+"vertraut sind und vielleicht bereits eine andere Methode oder ein anderes "
+"Tool verwenden, können Sie diese weiterhin nutzen. Ein Backup würde "
+"typischerweise bedeuten, den Stack herunterzufahren, um sicherzustellen, "
+"dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben "
+"werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack "
+"wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in "
+"Erwägung ziehen, das Szenario [Backup-Dienst deaktivieren](/de/reference/"
+"docker-compose-scenarios) zu verwenden, damit der integrierte Backup- und "
+"Restore-Prozess von Zammad nicht aktiviert wird."
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:17
+msgid ""
+"The rest of this page describes the built-in backup and restore mechanism of "
+"Zammad's Docker Compose stack."
+msgstr ""
+"Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess "
+"von Zammads Docker Compose Stack."
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:21
+msgid ""
+"If you're familiar with Docker, the sections below include the information "
+"you'll need. The [Docker file handling](/en/tutorials/docker-file-handling) "
+"page covers some examples about how to handle the backup files and to copy "
+"it into a Docker volume to restore it."
+msgstr ""
+"Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt unten die "
+"Informationen, die Sie benötigen. Die Seite [Docker Datei Handling](/de/"
+"tutorials/docker-file-handling) enthält einige Beispiele für den Umgang mit "
+"Sicherungsdateien und das Kopieren in ein Docker-Volume, um es "
+"wiederherzustellen."
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore-docker.md:22
+#, no-wrap
+msgid "Backup"
+msgstr "Backup"
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:26
+msgid ""
+"By default, a backup is created at each start of the stack as well as at 3 "
+"o'clock each night. The backup is stored in the volume of the **zammad-"
+"backup** container under `/var/tmp/zammad`."
+msgstr ""
+"Standardmäßig wird bei jedem Start des Stacks sowie nachts um 3 Uhr ein "
+"Backup erstellt. Das Backup wird im Volume des Containers **zammad-backup** "
+"unter `/var/tmp/zammad` gespeichert."
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore-docker.md:27
+#, no-wrap
+msgid "Restore"
+msgstr "Restore"
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid "Start the new stack at least once so a Zammad database is available."
+msgstr ""
+"Starten Sie den neuen Stack mindestens einmal, damit eine Zammad-Datenbank "
+"verfügbar ist."
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid "Stop the stack."
+msgstr "Stoppen Sie den Stack."
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"In case you restore to a production stack with activated file system "
+"storage, you should purge the content of the directory `/opt/zammad/storage/"
+"` inside the volume. The restore process only adds/overwrites files there, "
+"no cleanup will take place."
+msgstr ""
+"Falls Sie auf einen produktiven Stack mit aktiviertem Dateisystemspeicher "
+"wiederherstellen, sollten Sie den Inhalt des Verzeichnisses `/opt/zammad/"
+"storage/` innerhalb des Volumes bereinigen. Der Wiederherstellungsprozess "
+"fügt dort nur Dateien hinzu bzw. überschreibt sie, es findet keine "
+"Bereinigung statt."
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
+"volume of the **zammad-backup** container. Be aware that the restore process "
+"always uses the latest backup according to the timestamp of the file name. "
+"Only backups from package and Docker installations are supported by this "
+"built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
+"they link to an unknown location for the restore process."
+msgstr ""
+"Kopieren oder verschieben Sie die Sicherungsdateien nach `/var/tmp/zammad/"
+"restore/` innerhalb des Volumes des Containers **zammad-backup**. Beachten "
+"Sie, dass der Wiederherstellungsprozess immer die neueste Sicherung gemäß "
+"dem Zeitstempel des Dateinamens verwendet. Nur Backups von Paket- und Docker-"
+"Installationen werden von dieser eingebauten Backup-Methode unterstützt. "
+"Kopieren Sie nicht die Dateien `latest_zammad_*.gz`, da sie auf einen für "
+"den Wiederherstellungsprozess unbekannten Ort verweisen."
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"Start the stack. The restore process is triggered if the `restore` directory "
+"is detected and the backup files are in place."
+msgstr ""
+"Starten Sie den Stack. Der Wiederherstellungsprozess wird angestoßen, wenn "
+"das Verzeichnis `restore` erkannt wird und die Sicherungsdateien vorhanden "
+"sind."
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"After the restore process has finished, the `restore` directory got renamed. "
+"You can safely delete it now."
+msgstr ""
+"Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das "
+"Verzeichnis `restore` umbenannt. Sie können es jetzt löschen."
+
+#. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, no-wrap
 msgid "Backup & Restore (Package)"
@@ -25887,6 +25993,8 @@ msgstr "Verbinden und konfigurieren von Elasticsearch"
 msgid ""
 "This guide shows you how to connect Zammad with Elasticsearch 8 or newer."
 msgstr ""
+"Diese Anleitung zeigt Ihnen, wie Sie Zammad mit Elasticsearch 8 oder neuer "
+"verbinden können."
 
 #. type: Title ##
 #: src/en/tutorials/connect-config-elasticsearch.md:12
@@ -25915,10 +26023,9 @@ msgstr "zammad run rails r \"Setting.set('es_url', 'https://localhost:9200')\"\n
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:22
-#, fuzzy, no-wrap
-#| msgid "Set the Elasticsearch URL"
+#, no-wrap
 msgid "Set the Elasticsearch User and Password"
-msgstr "Festlegen der Elasticsearch URL"
+msgstr "Elasticsearch-Benutzer und -Passwort setzen"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:24
@@ -25933,6 +26040,8 @@ msgid ""
 "Replace `<password>` with the one you got during the installation of Elasticsearch. In case you need to create a new\n"
 "password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.\n"
 msgstr ""
+"Ersetzen Sie `<password>` durch das Passwort, das Ihnen bei der Installation von Elasticsearch ausgegeben wurde. Falls Sie ein\n"
+"neues Passwort erstellen müssen, führen Sie `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` aus.\n"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/connect-config-elasticsearch.md:31
@@ -25942,10 +26051,9 @@ msgstr "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:35
-#, fuzzy, no-wrap
-#| msgid "Migrate to Zammad"
+#, no-wrap
 msgid "Add Certificate to Zammad"
-msgstr "Zu Zammad migrieren"
+msgstr "Zertifikat zu Zammad hinzufügen"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:40
@@ -25955,6 +26063,11 @@ msgid ""
 "package#add-zammad-repository) and come back here when you can access the "
 "admin settings in the browser."
 msgstr ""
+"Dieser Schritt erfordert ein laufendes Zammad. Wenn Sie eine neue Zammad-"
+"Instanz installieren, [fahren Sie zunächst mit der Installation fort](/de/"
+"get-started/installation/package#zammad-repository-hinzufugen) und kommen "
+"Sie hierher zurück, wenn Sie die Admin-Einstellungen im Browser aufrufen "
+"können."
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:43
@@ -25982,6 +26095,9 @@ msgid ""
 "certificate. Either upload the certificate file or paste the content in the dialog.\n"
 "After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.\n"
 msgstr ""
+"Um es in Zammad hinzuzufügen, gehen Sie in den Admin-Einstellungen zu _Einstellungen > Sicherheit > SSL-Zertifikate_ und fügen Sie Ihr kopiertes\n"
+"Zertifikat hinzu. Entweder laden Sie die Zertifikatsdatei hoch oder fügen den Inhalt in den Dialog ein.\n"
+"Nach dem Speichern des Zertifikats ist Zammad nun in der Lage, sich mit dem Elasticsearch-Index zu verbinden und darauf zuzugreifen.\n"
 
 #. type: Title ###
 #: src/en/tutorials/connect-config-elasticsearch.md:52
@@ -26214,10 +26330,9 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:159
-#, fuzzy, no-wrap
-#| msgid "Step 3: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
+#, no-wrap
 msgid "Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
-msgstr "Schritt 3: Überprüfen Sie, ob Zammad auf Elasticsearch zugreifen und die Indizes neu erstellen kann"
+msgstr "Schritt 2: Prüfen Sie, ob Zammad auf Elasticsearch zugreifen und Indizes neu erstellen kann"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:163
@@ -26586,154 +26701,6 @@ msgid ""
 msgstr ""
 "Starten Sie nun den Stack, um den Wiederherstellungsprozess auszuführen. "
 "Danach können Sie den umbenannten Ordner löschen und Filebrowser beenden."
-
-#. type: Title #
-#: src/en/tutorials/docker-restore.md:1 src/en/tutorials/docker-restore.md:6
-#, no-wrap
-msgid "Backup & Restore (Docker)"
-msgstr "Backup & Restore (Docker)"
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:9
-msgid ""
-"This section shows some basics about the backup and restore process for a "
-"Docker Compose based deployment of Zammad."
-msgstr ""
-"Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und "
-"Wiederherstellungsprozess für eine auf Docker Compose basierte Installation "
-"von Zammad."
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:15
-msgid ""
-"If you are familiar with volume based backup and restore procedures in "
-"Docker, and perhaps already use a different method or tool, then you can "
-"keep using it. A backup would typically mean shutting down the stack to "
-"ensure all in-memory files get written to disk, then backing up the volume "
-"contents, and then starting the stack again. When using such method, you can "
-"consider using the [disable-backup-service scenario](/en/reference/docker-"
-"compose-scenarios) so that the built-in backup and restore mechanism of "
-"Zammad is not activated."
-msgstr ""
-"Wenn Sie mit Volume-basierten Backup- und Restore-Prozessen in Docker "
-"vertraut sind und vielleicht bereits eine andere Methode oder ein anderes "
-"Tool verwenden, können Sie diese weiterhin nutzen. Ein Backup würde "
-"typischerweise bedeuten, den Stack herunterzufahren, um sicherzustellen, "
-"dass alle Dateien aus dem Arbeitsspeicher auf die Festplatte geschrieben "
-"werden, dann den Inhalt des Volumes zu sichern und anschließend den Stack "
-"wieder zu starten. Wenn Sie eine solche Methode verwenden, können Sie in "
-"Erwägung ziehen, das Szenario [Backup-Dienst deaktivieren](/de/reference/"
-"docker-compose-scenarios) zu verwenden, damit der integrierte Backup- und "
-"Restore-Prozess von Zammad nicht aktiviert wird."
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:17
-msgid ""
-"The rest of this page describes the built-in backup and restore mechanism of "
-"Zammad's Docker Compose stack."
-msgstr ""
-"Der Rest dieser Seite beschreibt den eingebauten Backup- und Restore-Prozess "
-"von Zammads Docker Compose Stack."
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:21
-msgid ""
-"If you're familiar with Docker, the sections below include the information "
-"you'll need. The [Docker file handling](/en/tutorials/docker-file-handling) "
-"page covers some examples about how to handle the backup files and to copy "
-"it into a Docker volume to restore it."
-msgstr ""
-"Wenn Sie mit Docker vertraut sind, finden Sie im Abschnitt unten die "
-"Informationen, die Sie benötigen. Die Seite [Docker Datei Handling](/de/"
-"tutorials/docker-file-handling) enthält einige Beispiele für den Umgang mit "
-"Sicherungsdateien und das Kopieren in ein Docker-Volume, um es "
-"wiederherzustellen."
-
-#. type: Title ##
-#: src/en/tutorials/docker-restore.md:22
-#, no-wrap
-msgid "Backup"
-msgstr "Backup"
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:26
-msgid ""
-"By default, a backup is created at each start of the stack as well as at 3 "
-"o'clock each night. The backup is stored in the volume of the **zammad-"
-"backup** container under `/var/tmp/zammad`."
-msgstr ""
-"Standardmäßig wird bei jedem Start des Stacks sowie nachts um 3 Uhr ein "
-"Backup erstellt. Das Backup wird im Volume des Containers **zammad-backup** "
-"unter `/var/tmp/zammad` gespeichert."
-
-#. type: Title ##
-#: src/en/tutorials/docker-restore.md:27
-#, no-wrap
-msgid "Restore"
-msgstr "Restore"
-
-#. type: Bullet: '1. '
-#: src/en/tutorials/docker-restore.md:40
-msgid "Start the new stack at least once so a Zammad database is available."
-msgstr ""
-"Starten Sie den neuen Stack mindestens einmal, damit eine Zammad-Datenbank "
-"verfügbar ist."
-
-#. type: Bullet: '2. '
-#: src/en/tutorials/docker-restore.md:40
-msgid "Stop the stack."
-msgstr "Stoppen Sie den Stack."
-
-#. type: Bullet: '3. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"In case you restore to a production stack with activated file system "
-"storage, you should purge the content of the directory `/opt/zammad/storage/"
-"` inside the volume. The restore process only adds/overwrites files there, "
-"no cleanup will take place."
-msgstr ""
-"Falls Sie auf einen produktiven Stack mit aktiviertem Dateisystemspeicher "
-"wiederherstellen, sollten Sie den Inhalt des Verzeichnisses `/opt/zammad/"
-"storage/` innerhalb des Volumes bereinigen. Der Wiederherstellungsprozess "
-"fügt dort nur Dateien hinzu bzw. überschreibt sie, es findet keine "
-"Bereinigung statt."
-
-#. type: Bullet: '4. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
-"volume of the **zammad-backup** container. Be aware that the restore process "
-"always uses the latest backup according to the timestamp of the file name. "
-"Only backups from package and Docker installations are supported by this "
-"built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
-"they link to an unknown location for the restore process."
-msgstr ""
-"Kopieren oder verschieben Sie die Sicherungsdateien nach `/var/tmp/zammad/"
-"restore/` innerhalb des Volumes des Containers **zammad-backup**. Beachten "
-"Sie, dass der Wiederherstellungsprozess immer die neueste Sicherung gemäß "
-"dem Zeitstempel des Dateinamens verwendet. Nur Backups von Paket- und Docker-"
-"Installationen werden von dieser eingebauten Backup-Methode unterstützt. "
-"Kopieren Sie nicht die Dateien `latest_zammad_*.gz`, da sie auf einen für "
-"den Wiederherstellungsprozess unbekannten Ort verweisen."
-
-#. type: Bullet: '5. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"Start the stack. The restore process is triggered if the `restore` directory "
-"is detected and the backup files are in place."
-msgstr ""
-"Starten Sie den Stack. Der Wiederherstellungsprozess wird angestoßen, wenn "
-"das Verzeichnis `restore` erkannt wird und die Sicherungsdateien vorhanden "
-"sind."
-
-#. type: Bullet: '6. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"After the restore process has finished, the `restore` directory got renamed. "
-"You can safely delete it now."
-msgstr ""
-"Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das "
-"Verzeichnis `restore` umbenannt. Sie können es jetzt löschen."
 
 #. type: Title #
 #: src/en/tutorials/firewall-selinux.md:1
@@ -27243,7 +27210,7 @@ msgid ""
 "[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.\n"
 msgstr ""
 "\n"
-"**Wissen Sie immer noch nicht weiter?\n"
+"**Wissen Sie immer noch nicht weiter?**\n"
 "\n"
 "Wenn Sie Hilfe brauchen oder schneller in den Produktivbetrieg einsteigen wollen, können Sie auch\n"
 "Workshops mit einem unserer [Zammad Berater](https://zammad.com/en/company/contact){target=_blank}\n"
@@ -27258,10 +27225,9 @@ msgstr "Tutorials"
 #. type: Title #
 #: src/en/tutorials/install-elasticsearch.md:1
 #: src/en/tutorials/install-elasticsearch.md:6
-#, fuzzy, no-wrap
-#| msgid "Install Elasticsearch 7"
+#, no-wrap
 msgid "Install Elasticsearch 9"
-msgstr "Elasticsearch 7 installieren"
+msgstr "Elasticsearch 9 installieren"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:14
@@ -27273,12 +27239,19 @@ msgid ""
 "manage/deploy/self-managed/installing-elasticsearch){target=_blank}.  Adapt "
 "it wherever needed in case your use-case differs."
 msgstr ""
+"Diese Anleitung zeigt eine einfache Standardinstallation von Elasticsearch 9 "
+"mit dem Ziel, Sie unkompliziert ans Laufen zu bringen. Sollten Sie jedoch "
+"eine abweichende Konfiguration benötigen oder auf Probleme stoßen, werfen "
+"Sie einen Blick in die [offizielle Elasticsearch-Installationsanleitung]"
+"(https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-"
+"elasticsearch){target=_blank}.  Passen Sie die Schritte an, falls Ihr "
+"Anwendungsfall abweicht."
 
 #. type: Title ###
 #: src/en/tutorials/install-elasticsearch.md:17
 #, no-wrap
 msgid "Download and Add the Public Signing Key"
-msgstr ""
+msgstr "Abrufen und Hinzufügen des öffentlichen Signaturschlüssels"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:19
@@ -27312,13 +27285,39 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"Notwendige Tools installieren:\n"
+"\n"
+"```sh\n"
+"sudo apt-get install apt-transport-https\n"
+"```\n"
+"\n"
+"Repository-Schlüssel hinzufügen:\n"
+"\n"
+"``` sh\n"
+"wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"``` sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"``` sh\n"
+"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"```\n"
+"\n"
 
 #. type: Title ###
 #: src/en/tutorials/install-elasticsearch.md:49
-#, fuzzy, no-wrap
-#| msgid "Add Zammad Repository"
+#, no-wrap
 msgid "Add the Repository"
-msgstr "Zammad-Repository hinzufügen"
+msgstr "Repository hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:51
@@ -27361,6 +27360,42 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"``` sh\n"
+"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"Erstellen Sie die Datei `/etc/zypp/repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:\n"
+"\n"
+"```sh\n"
+"[elasticsearch]\n"
+"name=Elasticsearch repository for 9.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
+"gpgcheck=1\n"
+"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"enabled=0\n"
+"autorefresh=1\n"
+"type=rpm-md\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"Erstellen Sie die Datei `/etc/yum.repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:\n"
+"\n"
+"```sh\n"
+"[elasticsearch]\n"
+"name=Elasticsearch repository for 9.x packages\n"
+"baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
+"gpgcheck=1\n"
+"gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"enabled=0\n"
+"type=rpm-md\n"
+"```\n"
+"\n"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:92
@@ -27396,6 +27431,35 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu/Debian\n"
+"\n"
+"``` sh\n"
+"sudo apt-get update && sudo apt-get install elasticsearch\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"```sh\n"
+"sudo zypper modifyrepo --enable elasticsearch && \\\n"
+"  sudo zypper install elasticsearch; \\\n"
+"  sudo zypper modifyrepo --disable elasticsearch\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"CentOS und RHEL 7 oder älter:\n"
+"\n"
+"```sh\n"
+"sudo yum install --enablerepo=elasticsearch elasticsearch\n"
+"```\n"
+"\n"
+"RHEL 8 und neuer:\n"
+"\n"
+"```sh\n"
+"sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
+"```\n"
+"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/install-elasticsearch.md:124
@@ -27404,13 +27468,14 @@ msgid ""
 "Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by\n"
 "running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.\n"
 msgstr ""
+"Achten Sie darauf, die Ausgabe zu überprüfen und das Passwort des Superusers zu kopieren. Andernfalls müssen Sie es neu generieren, indem Sie\n"
+"`/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` ausführen.\n"
 
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:129
-#, fuzzy, no-wrap
-#| msgid "Backup Configuration"
+#, no-wrap
 msgid "Configuration"
-msgstr "Backup-Konfiguration"
+msgstr "Konfiguration"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:132
@@ -27418,6 +27483,9 @@ msgid ""
 "Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the "
 "following values:"
 msgstr ""
+"Öffnen Sie die Datei `/etc/elasticsearch/elasticsearch.yml` und nehmen Sie "
+"folgenden Anpassungen vor bzw. entfernen Sie die vorangestellten Kommentar-"
+"Zeichen:"
 
 #. type: Fenced code block (yml)
 #: src/en/tutorials/install-elasticsearch.md:133
@@ -27426,31 +27494,31 @@ msgid ""
 "network.host: 0.0.0.0\n"
 "transport.host: 0.0.0.0\n"
 msgstr ""
+"network.host: 0.0.0.0\n"
+"transport.host: 0.0.0.0\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:139
 msgid "Optional to increase the maximum context size to index:"
-msgstr ""
+msgstr "Optional, um die maximale Kontextgröße für den Index zu erhöhen:"
 
 #. type: Fenced code block (yml)
 #: src/en/tutorials/install-elasticsearch.md:140
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
-msgstr ""
+msgstr "http.max_content_length: 400mb\n"
 
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:144
-#, fuzzy, no-wrap
-#| msgid "Connect and Configure Elasticsearch"
+#, no-wrap
 msgid "Start and Enable Elasticsearch"
-msgstr "Verbinden und konfigurieren von Elasticsearch"
+msgstr "Starten und Aktivieren von Elasticsearch"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/install-elasticsearch.md:146
-#, fuzzy, no-wrap
-#| msgid "sudo systemctl restart elasticsearch\n"
+#, no-wrap
 msgid "sudo systemctl enable elasticsearch.service --now\n"
-msgstr "sudo systemctl restart elasticsearch\n"
+msgstr "sudo systemctl enable elasticsearch.service --now\n"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:154
@@ -27460,6 +27528,10 @@ msgid ""
 "completed, you can [connect Zammad with Elasticsearch](/en/tutorials/connect-"
 "config-elasticsearch)."
 msgstr ""
+"Fahren Sie mit der [Installation von Zammad](/de/get-started/installation/"
+"package#zammad-repository-hinzufugen) fort. Nachdem die Installation von "
+"Zammad abgeschlossen ist, können Sie [Zammad mit Elasticsearch verbinden](/"
+"de/tutorials/connect-config-elasticsearch)."
 
 #. type: Title #
 #: src/en/tutorials/migrate-host.md:1 src/en/tutorials/migrate-host.md:6
@@ -31909,6 +31981,10 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "How can I use keyboard shortcuts? I want to be more productive"
+#~ msgstr "Wie kann ich Tastaturkürzel verwenden? Ich möchte produktiver sein"
 
 #~ msgid "Elasticsearch 7 / without `https`:"
 #~ msgstr "Elasticsearch 7 / ohne `https`:"

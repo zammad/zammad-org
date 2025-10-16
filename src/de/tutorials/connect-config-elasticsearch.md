@@ -7,7 +7,8 @@ title: 'Verbinden und konfigurieren von Elasticsearch'
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch 8 or newer.
+Diese Anleitung zeigt Ihnen, wie Sie Zammad mit Elasticsearch 8 oder neuer
+verbinden können.
 
 ## Elasticsearch mit Zammad verbinden
 
@@ -20,25 +21,26 @@ Ihr Szenario an.
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch User and Password
+### Elasticsearch-Benutzer und -Passwort setzen
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
 ```
 
-Replace `<password>` with the one you got during the installation of Elasticsearch. In case you need to create a new
-password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Ersetzen Sie `<password>` durch das Passwort, das Ihnen bei der Installation von Elasticsearch ausgegeben wurde. Falls Sie ein
+neues Passwort erstellen müssen, führen Sie `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` aus.
 
 ```sh
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add Certificate to Zammad
+### Zertifikat zu Zammad hinzufügen
 
-This step requires a running Zammad. If you are installing a new Zammad
-instance, [go on with the
-installation](/en/get-started/installation/package#add-zammad-repository)
-and come back here when you can access the admin settings in the browser.
+Dieser Schritt erfordert ein laufendes Zammad. Wenn Sie eine neue
+Zammad-Instanz installieren, [fahren Sie zunächst mit der Installation
+fort](/de/get-started/installation/package#zammad-repository-hinzufugen) und
+kommen Sie hierher zurück, wenn Sie die Admin-Einstellungen im Browser
+aufrufen können.
 
 Zeigen und kopieren Sie das automatisch generierte Zertifikat von
 Elasticsearch und fügen Sie es zu Zammad hinzu. Achten Sie darauf, auch die
@@ -49,9 +51,9 @@ CERTIFICATE-----`).
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-To add it in Zammad, go to _Settings > Security > SSL Certificates_ in the admin settings and add your copied
-certificate. Either upload the certificate file or paste the content in the dialog.
-After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.
+Um es in Zammad hinzuzufügen, gehen Sie in den Admin-Einstellungen zu _Einstellungen > Sicherheit > SSL-Zertifikate_ und fügen Sie Ihr kopiertes
+Zertifikat hinzu. Entweder laden Sie die Zertifikatsdatei hoch oder fügen den Inhalt in den Dialog ein.
+Nach dem Speichern des Zertifikats ist Zammad nun in der Lage, sich mit dem Elasticsearch-Index zu verbinden und darauf zuzugreifen.
 
 ### Den Suchindex aufbauen/neu erstellen
 
@@ -164,7 +166,7 @@ Versuchen Sie, Elasticsearch vollständig zu bereinigen und neu zu installieren,
 unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschrieben.
 :::
 
-#### Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes
+#### Schritt 2: Prüfen Sie, ob Zammad auf Elasticsearch zugreifen und Indizes neu erstellen kann
 
 Erzwingen, dass Zammad die Elasticsearch-Indizes löscht und neu aufbaut,
 optional mit einer definierten Anzahl von CPU-Kernen, die für die

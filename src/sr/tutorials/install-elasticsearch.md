@@ -128,7 +128,7 @@ Make sure to check the output and to copy the password of the built-in superuser
 running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 :::
 
-## Configuration
+## Подешавања
 
 Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the
 following values:

@@ -158,9 +158,10 @@ Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal a
 Die empfohlene Methode ist die Verwendung von [Elastics offizieller
 Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}.
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9, which is
-separated to keep the install instructions as lean as possible.
+Alternativ können Sie [unserem
+Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 9
+folgen, das Sie auf einer anderen Seite finden, um die
+Installationsanweisungen übersichtlich zu halten.
 
 ### Zammad-Repository hinzufügen
 
@@ -194,6 +195,7 @@ Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufüg
 :::
 
 ```sh
+
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
 Suites: 24.04
@@ -347,10 +349,11 @@ passen Sie den Befehl wie oben beschrieben an.
 
 ### Nächste Schritte
 
-- [Connect Zammad with
-  Elasticsearch](/en/tutorials/connect-config-elasticsearch)
-- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
-- [Configure the webserver](/en/tutorials/webserver-config)
+- [Zammad mit Elasticsearch
+  verbinden](/de/tutorials/connect-config-elasticsearch)
+- [Passen Sie Ihre SELinux-Regeln und Ihre Firewall
+  an](/de/tutorials/firewall-selinux)
+- [Konfigurieren Sie den Webserver](/de/tutorials/webserver-config)
 
 ## Abhängigkeiten
 

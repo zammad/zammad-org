@@ -84,7 +84,7 @@ finden Sie in dieser Dokumentation.
 
 :::tip
 
-**Wissen Sie immer noch nicht weiter?
+**Wissen Sie immer noch nicht weiter?**
 
 Wenn Sie Hilfe brauchen oder schneller in den Produktivbetrieg einsteigen wollen, können Sie auch
 Workshops mit einem unserer [Zammad Berater](https://zammad.com/en/company/contact){target=_blank}

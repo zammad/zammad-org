@@ -1,34 +1,34 @@
 ---
 order: 1
-title: 'Install Elasticsearch 9'
+title: 'Elasticsearch 9 installieren'
 ---
 
-# Install Elasticsearch 9
+# Elasticsearch 9 installieren
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-This guide shows a simple standard installation of Elasticsearch 9. The
-intention is to get you up and running quickly.  However, in case you need a
-more advanced configuration or face any issues, have a look at the [official
-Elasticsearch installation
-documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Adapt it wherever needed in case your use-case differs.
+Diese Anleitung zeigt eine einfache Standardinstallation von Elasticsearch 9
+mit dem Ziel, Sie unkompliziert ans Laufen zu bringen. Sollten Sie jedoch
+eine abweichende Konfiguration benötigen oder auf Probleme stoßen, werfen
+Sie einen Blick in die [offizielle
+Elasticsearch-Installationsanleitung](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
+Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 ## Installation
 
-### Download and Add the Public Signing Key
+### Abrufen und Hinzufügen des öffentlichen Signaturschlüssels
 
 ::: tabs key:distros
 
 === Ubuntu/Debian
 
-Install required tools:
+Notwendige Tools installieren:
 
 ```sh
 sudo apt-get install apt-transport-https
 ```
 
-Add repo key:
+Repository-Schlüssel hinzufügen:
 
 ``` sh
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
@@ -48,7 +48,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add the Repository
+### Repository hinzufügen
 
 ::: tabs key:distros
 
@@ -60,7 +60,7 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 
 === OpenSUSE/SLES
 
-Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:
+Erstellen Sie die Datei `/etc/zypp/repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:
 
 ```sh
 [elasticsearch]
@@ -75,7 +75,7 @@ type=rpm-md
 
 === CentOS/RHEL
 
-Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:
+Erstellen Sie die Datei `/etc/yum.repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:
 
 ```sh
 [elasticsearch]
@@ -109,13 +109,13 @@ sudo zypper modifyrepo --enable elasticsearch && \
 
 === CentOS/RHEL
 
-CentOS and RHEL 7 or earlier:
+CentOS und RHEL 7 oder älter:
 
 ```sh
 sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
-RHEL 8 and later:
+RHEL 8 und neuer:
 
 ```sh
 sudo dnf install --enablerepo=elasticsearch elasticsearch
@@ -124,27 +124,28 @@ sudo dnf install --enablerepo=elasticsearch elasticsearch
 :::
 
 :::tip
-Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by
-running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Achten Sie darauf, die Ausgabe zu überprüfen und das Passwort des Superusers zu kopieren. Andernfalls müssen Sie es neu generieren, indem Sie
+`/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` ausführen.
 :::
 
-## Configuration
+## Konfiguration
 
-Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the
-following values:
+Öffnen Sie die Datei `/etc/elasticsearch/elasticsearch.yml` und nehmen Sie
+folgenden Anpassungen vor bzw. entfernen Sie die vorangestellten
+Kommentar-Zeichen:
 
 ```yml
 network.host: 0.0.0.0
 transport.host: 0.0.0.0
 ```
 
-Optional to increase the maximum context size to index:
+Optional, um die maximale Kontextgröße für den Index zu erhöhen:
 
 ```yml
 http.max_content_length: 400mb
 ```
 
-## Start and Enable Elasticsearch
+## Starten und Aktivieren von Elasticsearch
 
 ```sh
 sudo systemctl enable elasticsearch.service --now
@@ -152,7 +153,8 @@ sudo systemctl enable elasticsearch.service --now
 
 ## Nächste Schritte
 
-Go on with the [installation of
-Zammad](/en/get-started/installation/package#add-zammad-repository). After
-the installation of Zammad is completed, you can [connect Zammad with
-Elasticsearch](/en/tutorials/connect-config-elasticsearch).
+Fahren Sie mit der [Installation von
+Zammad](/de/get-started/installation/package#zammad-repository-hinzufugen)
+fort. Nachdem die Installation von Zammad abgeschlossen ist, können Sie
+[Zammad mit Elasticsearch
+verbinden](/de/tutorials/connect-config-elasticsearch).

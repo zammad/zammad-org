@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-09 10:17+0200\n"
-"PO-Revision-Date: 2025-09-20 06:00+0000\n"
+"POT-Creation-Date: 2025-10-15 11:53+0200\n"
+"PO-Revision-Date: 2025-10-14 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -3146,9 +3146,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:65
-#, no-wrap
-msgid "How can I use keyboard shortcuts? I want to be more productive"
-msgstr ""
+#, fuzzy, no-wrap
+msgid "How can I use keyboard shortcuts?"
+msgstr "Пречице на тастатури"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:69
@@ -3212,7 +3212,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/faq.md:89
 #, no-wrap
-msgid "I want to change the language of the Zammad user interface. How can I do that?"
+msgid "How to change the language of the Zammad user interface?"
 msgstr ""
 
 #. type: Plain text
@@ -3239,13 +3239,12 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/faq.md:99
 #, fuzzy, no-wrap
-msgid "Can I adjust the order of the overviews?"
+msgid "How to adjust the order of the overviews?"
 msgstr "Управљајте и користите прегледе тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:102
-msgid ""
-"Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
+msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
 
 #. type: Title ##
@@ -21035,6 +21034,114 @@ msgid "Name of site"
 msgstr "Назив сајта"
 
 #. type: Title #
+#: src/en/tutorials/backup-restore-docker.md:1
+#: src/en/tutorials/backup-restore-docker.md:6
+#, fuzzy, no-wrap
+msgid "Backup & Restore (Docker)"
+msgstr "Резервна копија и њено враћање"
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:9
+msgid ""
+"This section shows some basics about the backup and restore process for a "
+"Docker Compose based deployment of Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:15
+msgid ""
+"If you are familiar with volume based backup and restore procedures in "
+"Docker, and perhaps already use a different method or tool, then you can "
+"keep using it. A backup would typically mean shutting down the stack to "
+"ensure all in-memory files get written to disk, then backing up the volume "
+"contents, and then starting the stack again. When using such method, you can "
+"consider using the [disable-backup-service scenario](/en/reference/docker-"
+"compose-scenarios) so that the built-in backup and restore mechanism of "
+"Zammad is not activated."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:17
+msgid ""
+"The rest of this page describes the built-in backup and restore mechanism of "
+"Zammad's Docker Compose stack."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:21
+msgid ""
+"If you're familiar with Docker, the sections below include the information "
+"you'll need. The [Docker file handling](/en/tutorials/docker-file-handling) "
+"page covers some examples about how to handle the backup files and to copy "
+"it into a Docker volume to restore it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore-docker.md:22
+#, fuzzy, no-wrap
+msgid "Backup"
+msgstr "Zammad"
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:26
+msgid ""
+"By default, a backup is created at each start of the stack as well as at 3 "
+"o'clock each night. The backup is stored in the volume of the **zammad-"
+"backup** container under `/var/tmp/zammad`."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/backup-restore-docker.md:27
+#, fuzzy, no-wrap
+msgid "Restore"
+msgstr "Резервна копија и њено враћање"
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid "Start the new stack at least once so a Zammad database is available."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/backup-restore-docker.md:40
+#, fuzzy
+msgid "Stop the stack."
+msgstr "Корак 3: Покретање stack-а"
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"In case you restore to a production stack with activated file system "
+"storage, you should purge the content of the directory `/opt/zammad/storage/"
+"` inside the volume. The restore process only adds/overwrites files there, "
+"no cleanup will take place."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
+"volume of the **zammad-backup** container. Be aware that the restore process "
+"always uses the latest backup according to the timestamp of the file name. "
+"Only backups from package and Docker installations are supported by this "
+"built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
+"they link to an unknown location for the restore process."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"Start the stack. The restore process is triggered if the `restore` directory "
+"is detected and the backup files are in place."
+msgstr ""
+
+#. type: Bullet: '6. '
+#: src/en/tutorials/backup-restore-docker.md:40
+msgid ""
+"After the restore process has finished, the `restore` directory got renamed. "
+"You can safely delete it now."
+msgstr ""
+
+#. type: Title #
 #: src/en/tutorials/backup-restore.md:1 src/en/tutorials/backup-restore.md:6
 #, fuzzy, no-wrap
 msgid "Backup & Restore (Package)"
@@ -22352,113 +22459,6 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/tutorials/docker-restore.md:1 src/en/tutorials/docker-restore.md:6
-#, fuzzy, no-wrap
-msgid "Backup & Restore (Docker)"
-msgstr "Резервна копија и њено враћање"
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:9
-msgid ""
-"This section shows some basics about the backup and restore process for a "
-"Docker Compose based deployment of Zammad."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:15
-msgid ""
-"If you are familiar with volume based backup and restore procedures in "
-"Docker, and perhaps already use a different method or tool, then you can "
-"keep using it. A backup would typically mean shutting down the stack to "
-"ensure all in-memory files get written to disk, then backing up the volume "
-"contents, and then starting the stack again. When using such method, you can "
-"consider using the [disable-backup-service scenario](/en/reference/docker-"
-"compose-scenarios) so that the built-in backup and restore mechanism of "
-"Zammad is not activated."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:17
-msgid ""
-"The rest of this page describes the built-in backup and restore mechanism of "
-"Zammad's Docker Compose stack."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:21
-msgid ""
-"If you're familiar with Docker, the sections below include the information "
-"you'll need. The [Docker file handling](/en/tutorials/docker-file-handling) "
-"page covers some examples about how to handle the backup files and to copy "
-"it into a Docker volume to restore it."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/docker-restore.md:22
-#, fuzzy, no-wrap
-msgid "Backup"
-msgstr "Zammad"
-
-#. type: Plain text
-#: src/en/tutorials/docker-restore.md:26
-msgid ""
-"By default, a backup is created at each start of the stack as well as at 3 "
-"o'clock each night. The backup is stored in the volume of the **zammad-"
-"backup** container under `/var/tmp/zammad`."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/docker-restore.md:27
-#, fuzzy, no-wrap
-msgid "Restore"
-msgstr "Резервна копија и њено враћање"
-
-#. type: Bullet: '1. '
-#: src/en/tutorials/docker-restore.md:40
-msgid "Start the new stack at least once so a Zammad database is available."
-msgstr ""
-
-#. type: Bullet: '2. '
-#: src/en/tutorials/docker-restore.md:40
-#, fuzzy
-msgid "Stop the stack."
-msgstr "Корак 3: Покретање stack-а"
-
-#. type: Bullet: '3. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"In case you restore to a production stack with activated file system "
-"storage, you should purge the content of the directory `/opt/zammad/storage/"
-"` inside the volume. The restore process only adds/overwrites files there, "
-"no cleanup will take place."
-msgstr ""
-
-#. type: Bullet: '4. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
-"volume of the **zammad-backup** container. Be aware that the restore process "
-"always uses the latest backup according to the timestamp of the file name. "
-"Only backups from package and Docker installations are supported by this "
-"built-in backup method. Don't provide the `latest_zammad_*.gz` files because "
-"they link to an unknown location for the restore process."
-msgstr ""
-
-#. type: Bullet: '5. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"Start the stack. The restore process is triggered if the `restore` directory "
-"is detected and the backup files are in place."
-msgstr ""
-
-#. type: Bullet: '6. '
-#: src/en/tutorials/docker-restore.md:40
-msgid ""
-"After the restore process has finished, the `restore` directory got renamed. "
-"You can safely delete it now."
-msgstr ""
-
-#. type: Title #
 #: src/en/tutorials/firewall-selinux.md:1
 #: src/en/tutorials/firewall-selinux.md:6
 #, no-wrap
@@ -23005,9 +23005,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:129
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Configuration"
-msgstr "Администрација"
+msgstr "Подешавања"
 
 #. type: Plain text
 #: src/en/tutorials/install-elasticsearch.md:132
