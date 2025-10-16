@@ -34,20 +34,27 @@ zammad run rails r "Setting.set('es_password', '<password>')"
 
 ### Add Certificate to Zammad
 
-This step requires a running Zammad. If you are installing a new Zammad instance,
-[go on with the installation](/en/get-started/installation/package#add-zammad-repository) and come back here when
-you can access the admin settings in the browser.
+#### Add it via Rails Console
 
-Show and copy the auto-generated certificate from Elasticsearch and add it to Zammad. Make sure to copy/paste the
-delimiters (e.g. `-----BEGIN CERTIFICATE-----`) too.
+In case you are installing a new Zammad and didn't run through the getting started wizard already, add the certificate
+via console:
+
+```sh
+sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r "SSLCertificate.create!(certificate: STDIN.read)"
+```
+
+#### Add it via UI
+
+In case you already have a running and configured Zammad, you can add the certificate in Zammad's admin settings
+(_Settings > Security > SSL Certificates_) as an alternative. To show and copy the auto-generated certificate from
+Elasticsearch, run:
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-To add it in Zammad, go to _Settings > Security > SSL Certificates_ in the admin settings and add your copied
-certificate. Either upload the certificate file or paste the content in the dialog.
-After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.
+To add it in Zammad, either upload the certificate file or paste the content in the dialog. Make sure to copy/paste the
+delimiters (e.g. ``-----BEGIN CERTIFICATE-----``) too.
 
 ### Build/Rebuild the Searchindex
 
