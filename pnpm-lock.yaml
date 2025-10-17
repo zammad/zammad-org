@@ -14,7 +14,7 @@ importers:
     devDependencies:
       '@mdit/plugin-icon':
         specifier: ^0.22.0
-        version: 0.22.1
+        version: 0.22.2
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -332,8 +332,8 @@ packages:
       markdown-it:
         optional: true
 
-  '@mdit/plugin-icon@0.22.1':
-    resolution: {integrity: sha512-Ipjh5Lc1tXn57Pag2GUh0nfwf+sBR4SCZsWAp807E9wncT4/yecznlXotDdXWxDIisloEpu0n+LYHatABmgscA==}
+  '@mdit/plugin-icon@0.22.2':
+    resolution: {integrity: sha512-ODVJOhCz1p2zmeuwhJ6mA2z/6MyaD4EVibGmfhsKPlIVMF1PRvx8esbe+25HnL0/Wln+n9JsRUHcxrt7TPsqkA==}
     peerDependencies:
       markdown-it: ^14.1.0
     peerDependenciesMeta:
@@ -2003,7 +2003,7 @@ snapshots:
     dependencies:
       '@types/markdown-it': 14.1.2
 
-  '@mdit/plugin-icon@0.22.1':
+  '@mdit/plugin-icon@0.22.2':
     dependencies:
       '@mdit/helper': 0.22.1
       '@types/markdown-it': 14.1.2
