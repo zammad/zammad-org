@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-15 11:53+0200\n"
-"PO-Revision-Date: 2025-10-16 08:28+0000\n"
+"POT-Creation-Date: 2025-10-16 14:44+0200\n"
+"PO-Revision-Date: 2025-11-01 14:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -687,7 +687,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:137
-#: src/en/tutorials/connect-config-elasticsearch.md:108
+#: src/en/tutorials/connect-config-elasticsearch.md:115
 #: src/en/tutorials/sso-kerberos.md:553
 #, no-wrap
 msgid "Troubleshooting"
@@ -3215,10 +3215,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:65
-#, fuzzy, no-wrap
-#| msgid "Use keyboard shortcuts"
+#, no-wrap
 msgid "How can I use keyboard shortcuts?"
-msgstr "Verwenden Sie Tastaturkürzel"
+msgstr "Wie verwende ich Tastaturkürzel?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:69
@@ -3299,10 +3298,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:89
-#, fuzzy, no-wrap
-#| msgid "I want to change the language of the Zammad user interface. How can I do that?"
+#, no-wrap
 msgid "How to change the language of the Zammad user interface?"
-msgstr "Ich möchte die Sprache der Benutzeroberfläche von Zammad ändern. Wie kann ich das tun?"
+msgstr "Wie ändert man die Sprache der Benutzeroberfläche von Zammad?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:93
@@ -3334,19 +3332,15 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:99
-#, fuzzy, no-wrap
-#| msgid "Can I adjust the order of the overviews?"
+#, no-wrap
 msgid "How to adjust the order of the overviews?"
-msgstr "Kann ich die Reihenfolge der Übersichten anpassen?"
+msgstr "Wie lässt sich die Reihenfolge der Übersichten anpassen?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:102
-#, fuzzy
-#| msgid ""
-#| "Yes! Read on in [our Overviews guide](guides/overviews#reorder-overviews)."
 msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
-"Ja! Lesen Sie in der [Übersichts-Anleitung](guides/overviews#ubersichten-neu-"
+"Lesen Sie in der [Übersichten-Anleitung](guides/overviews#ubersichten-neu-"
 "anordnen) weiter."
 
 #. type: Title ##
@@ -9299,27 +9293,27 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/update.md:157
-#: src/en/tutorials/connect-config-elasticsearch.md:55
+#: src/en/tutorials/connect-config-elasticsearch.md:62
 msgid "Without specifying CPU cores to use:"
 msgstr "Ohne Vorgabe der zu verwendenden CPU-Kerne:"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:158
-#: src/en/tutorials/connect-config-elasticsearch.md:56
+#: src/en/tutorials/connect-config-elasticsearch.md:63
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild\n"
 msgstr "zammad run rake zammad:searchindex:rebuild\n"
 
 #. type: Plain text
 #: src/en/get-started/update.md:163
-#: src/en/tutorials/connect-config-elasticsearch.md:61
+#: src/en/tutorials/connect-config-elasticsearch.md:68
 msgid "With specifying CPU cores to use (example 8):"
 msgstr "Mit Vorgabe der zu verwendenden CPU-Kerne (Beispiel 8):"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:164
-#: src/en/tutorials/connect-config-elasticsearch.md:62
-#: src/en/tutorials/connect-config-elasticsearch.md:164
+#: src/en/tutorials/connect-config-elasticsearch.md:69
+#: src/en/tutorials/connect-config-elasticsearch.md:171
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr "zammad run rake zammad:searchindex:rebuild[8]\n"
@@ -17399,7 +17393,7 @@ msgstr ""
 "Diese Dokumentation ist nicht dazu gedacht, alles über GraphQL abzudecken. "
 "Sie soll Ihnen ein grundlegendes Verständnis dafür vermitteln, wie Sie Daten "
 "abrufen und erstellen/ändern können, um darauf aufzubauen. Eine umfassende "
-"Anleitung finden Sie in der [GraphQL-Dokumentation] (https://graphql.org/"
+"Anleitung finden Sie in der [GraphQL-Dokumentation](https://graphql.org/"
 "learn/)."
 
 #. type: Plain text
@@ -26055,64 +26049,81 @@ msgstr "zammad run rails r \"Setting.set('es_password', '<password>')\"\n"
 msgid "Add Certificate to Zammad"
 msgstr "Zertifikat zu Zammad hinzufügen"
 
-#. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:40
-msgid ""
-"This step requires a running Zammad. If you are installing a new Zammad "
-"instance, [go on with the installation](/en/get-started/installation/"
-"package#add-zammad-repository) and come back here when you can access the "
-"admin settings in the browser."
-msgstr ""
-"Dieser Schritt erfordert ein laufendes Zammad. Wenn Sie eine neue Zammad-"
-"Instanz installieren, [fahren Sie zunächst mit der Installation fort](/de/"
-"get-started/installation/package#zammad-repository-hinzufugen) und kommen "
-"Sie hierher zurück, wenn Sie die Admin-Einstellungen im Browser aufrufen "
-"können."
+#. type: Title ####
+#: src/en/tutorials/connect-config-elasticsearch.md:37
+#, no-wrap
+msgid "Add it via Rails Console"
+msgstr "Hinzufügen über die Rails-Konsole"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:43
+#: src/en/tutorials/connect-config-elasticsearch.md:41
 msgid ""
-"Show and copy the auto-generated certificate from Elasticsearch and add it "
-"to Zammad. Make sure to copy/paste the delimiters (e.g. `-----BEGIN "
-"CERTIFICATE-----`) too."
+"In case you are installing a new Zammad and didn't run through the getting "
+"started wizard already, add the certificate via console:"
 msgstr ""
-"Zeigen und kopieren Sie das automatisch generierte Zertifikat von "
-"Elasticsearch und fügen Sie es zu Zammad hinzu. Achten Sie darauf, auch die "
-"Begrenzungszeichen zu kopieren/einzufügen (z.B. `-----BEGIN CERTIFICATE-----"
-"`)."
+"Falls Sie Zammad neu installieren und den Einrichtungsassistenten noch nicht "
+"durchlaufen haben, fügen Sie das Zertifikat über die Konsole hinzu:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:44
+#: src/en/tutorials/connect-config-elasticsearch.md:42
 #, no-wrap
-msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
-msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
+msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r \"SSLCertificate.create!(certificate: STDIN.read)\"\n"
+msgstr ""
+"sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r "
+"\"SSLCertificate.create!(certificate: STDIN.read)\"\n"
+
+#. type: Title ####
+#: src/en/tutorials/connect-config-elasticsearch.md:46
+#, no-wrap
+msgid "Add it via UI"
+msgstr "Hinzufügen über UI"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:51
 #, no-wrap
 msgid ""
-"To add it in Zammad, go to _Settings > Security > SSL Certificates_ in the admin settings and add your copied\n"
-"certificate. Either upload the certificate file or paste the content in the dialog.\n"
-"After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.\n"
+"In case you already have a running and configured Zammad, you can add the certificate in Zammad's admin settings\n"
+"(_Settings > Security > SSL Certificates_) as an alternative. To show and copy the auto-generated certificate from\n"
+"Elasticsearch, run:\n"
 msgstr ""
-"Um es in Zammad hinzuzufügen, gehen Sie in den Admin-Einstellungen zu _Einstellungen > Sicherheit > SSL-Zertifikate_ und fügen Sie Ihr kopiertes\n"
-"Zertifikat hinzu. Entweder laden Sie die Zertifikatsdatei hoch oder fügen den Inhalt in den Dialog ein.\n"
-"Nach dem Speichern des Zertifikats ist Zammad nun in der Lage, sich mit dem Elasticsearch-Index zu verbinden und darauf zuzugreifen.\n"
+"Falls Sie bereits ein laufendes und konfiguriertes Zammad haben, können Sie "
+"das Zertifikat alternativ in den Admin-Einstellungen von Zammad\n"
+"(_Einstellungen > Sicherheit > SSL-Zertifikate_) hinzufügen. Führen Sie zum "
+"Anzeigen und Kopieren des automatisch generierten Zertifikats von\n"
+"Elasticsearch folgenden Befehl aus:\n"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/connect-config-elasticsearch.md:52
+#, no-wrap
+msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
+msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:58
+msgid ""
+"To add it in Zammad, either upload the certificate file or paste the content "
+"in the dialog. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN "
+"CERTIFICATE-----``) too."
+msgstr ""
+"Um es in Zammad hinzuzufügen, laden Sie entweder die Zertifikatsdatei hoch "
+"oder fügen Sie den Inhalt in das Dialogfeld ein. Achten Sie darauf, dass Sie "
+"auch die Trennzeichen (z.B. ``-----BEGIN CERTIFICATE-----``) kopieren/"
+"einfügen."
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:52
+#: src/en/tutorials/connect-config-elasticsearch.md:59
 #, no-wrap
 msgid "Build/Rebuild the Searchindex"
 msgstr "Den Suchindex aufbauen/neu erstellen"
 
 #. type: Title ##
-#: src/en/tutorials/connect-config-elasticsearch.md:66
+#: src/en/tutorials/connect-config-elasticsearch.md:73
 #, no-wrap
 msgid "Optional Settings"
 msgstr "Optionale Einstellungen"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:71
+#: src/en/tutorials/connect-config-elasticsearch.md:78
 msgid ""
 "We collected some useful settings you may want to apply. For further "
 "information please have a look at [Elastic's documentation](https://"
@@ -26125,13 +26136,13 @@ msgstr ""
 "current/index.html){target=_blank}."
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:72
+#: src/en/tutorials/connect-config-elasticsearch.md:79
 #, no-wrap
 msgid "Index Namespacing"
 msgstr "Index Namespacing"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:76
+#: src/en/tutorials/connect-config-elasticsearch.md:83
 msgid ""
 "Useful when connecting multiple services or Zammad instances to a single "
 "Elasticsearch server (to prevent name collisions during indexing)."
@@ -26141,19 +26152,19 @@ msgstr ""
 "Indizierung zu vermeiden)."
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:77
+#: src/en/tutorials/connect-config-elasticsearch.md:84
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 msgstr "zammad run rails r \"Setting.set('es_index', Socket.gethostname.downcase + '_zammad')\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:81
+#: src/en/tutorials/connect-config-elasticsearch.md:88
 #, no-wrap
 msgid "File-Attachment Indexing Rules"
 msgstr "Regeln für die Indizierung von Dateianhängen"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:86
+#: src/en/tutorials/connect-config-elasticsearch.md:93
 msgid ""
 "Zammad supports searching in file attachments, which means Elasticsearch has "
 "to index those, too. Limiting such indexing can help preserve system "
@@ -26164,12 +26175,12 @@ msgstr ""
 "Indizierung kann helfen, Systemressourcen zu schonen."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:88
+#: src/en/tutorials/connect-config-elasticsearch.md:95
 msgid "Files with these extensions will not be indexed:"
 msgstr "Dateien mit diesen Erweiterungen werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:89
+#: src/en/tutorials/connect-config-elasticsearch.md:96
 #, no-wrap
 msgid ""
 "zammad run rails r \"Setting.set('es_attachment_ignore',\\\n"
@@ -26179,25 +26190,25 @@ msgstr ""
 "[ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )\"\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:95
+#: src/en/tutorials/connect-config-elasticsearch.md:102
 msgid "Files larger than this size (in MB) will not be indexed:"
 msgstr ""
 "Dateien, die diese Größe (in MB) überschreiten, werden nicht indiziert:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:96
+#: src/en/tutorials/connect-config-elasticsearch.md:103
 #, no-wrap
 msgid "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 msgstr "zammad run rails r \"Setting.set('es_attachment_max_size_in_mb', 50)\"\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:100
+#: src/en/tutorials/connect-config-elasticsearch.md:107
 #, no-wrap
 msgid "Asciifold"
 msgstr "Asciifold"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:105
+#: src/en/tutorials/connect-config-elasticsearch.md:112
 msgid ""
 "By default, the [Asciifold feature of Elasticsearch](https://www.elastic.co/"
 "docs/reference/text-analysis/analysis-asciifolding-tokenfilter)"
@@ -26210,7 +26221,7 @@ msgstr ""
 "Text arbeiten, der Diakritika und/oder Umlaute enthält."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:107
+#: src/en/tutorials/connect-config-elasticsearch.md:114
 msgid ""
 "In case you need a more exact search, you can turn it off via [Rails console]"
 "(/en/reference/console#disable-asciifold)."
@@ -26219,7 +26230,7 @@ msgstr ""
 "Konsole](/de/reference/console#asciifold-deaktivieren) deaktivieren."
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:110
+#: src/en/tutorials/connect-config-elasticsearch.md:117
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -26236,13 +26247,13 @@ msgstr ""
 "der Community](https://community.zammad.org){target=_blank} nachfragen.\n"
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:119
+#: src/en/tutorials/connect-config-elasticsearch.md:126
 #, no-wrap
 msgid "Data Missing From the Web-UI / Search Data Missing or Incomplete"
 msgstr "Fehlende Daten in der Web-Benutzeroberfläche / Fehlende oder unvollständige Suchdaten"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:125
+#: src/en/tutorials/connect-config-elasticsearch.md:132
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
 "tickets, articles, users or anything else [indexed by Elasticsearch](/en/"
@@ -26255,7 +26266,7 @@ msgstr ""
 "fehlende oder unvollständige Indizes verursacht werden können."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:129
+#: src/en/tutorials/connect-config-elasticsearch.md:136
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
 "our [installation guide](/en/tutorials/install-elasticsearch), please follow "
@@ -26267,19 +26278,19 @@ msgstr ""
 "Elasticsearch korrekt funktioniert."
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:130
+#: src/en/tutorials/connect-config-elasticsearch.md:137
 #, no-wrap
 msgid "Step 1: Verify Elasticsearch is Running"
 msgstr "Schritt 1: Überprüfen Sie, ob Elasticsearch läuft"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:132
+#: src/en/tutorials/connect-config-elasticsearch.md:139
 #, no-wrap
 msgid "sudo systemctl status elasticsearch\n"
 msgstr "sudo systemctl status elasticsearch\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:138
+#: src/en/tutorials/connect-config-elasticsearch.md:145
 msgid ""
 "This should output something like the following, make sure it says `Active: "
 "active (running)`:"
@@ -26288,7 +26299,7 @@ msgstr ""
 "`Active: active (running)` steht:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:139
+#: src/en/tutorials/connect-config-elasticsearch.md:146
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -26304,20 +26315,20 @@ msgstr ""
 "   Main PID: 1790 (java)\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:148
+#: src/en/tutorials/connect-config-elasticsearch.md:155
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 "Andernfalls versuchen Sie, den Service neu zu starten und prüfen Sie dann "
 "erneut:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:149
+#: src/en/tutorials/connect-config-elasticsearch.md:156
 #, no-wrap
 msgid "sudo systemctl restart elasticsearch\n"
 msgstr "sudo systemctl restart elasticsearch\n"
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:153
+#: src/en/tutorials/connect-config-elasticsearch.md:160
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -26329,13 +26340,13 @@ msgstr ""
 "unserer [Installationsanleitung](/de/tutorials/install-elasticsearch) beschrieben.\n"
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:159
+#: src/en/tutorials/connect-config-elasticsearch.md:166
 #, no-wrap
 msgid "Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes"
 msgstr "Schritt 2: Prüfen Sie, ob Zammad auf Elasticsearch zugreifen und Indizes neu erstellen kann"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:163
+#: src/en/tutorials/connect-config-elasticsearch.md:170
 msgid ""
 "Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
@@ -26345,14 +26356,14 @@ msgstr ""
 "Neuindizierung verwendet werden sollen (Beispiel `[8]`):"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:169
+#: src/en/tutorials/connect-config-elasticsearch.md:176
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 "Dies sollte den Wiederaufbau der Indizes starten und den Fortschritt "
 "ausgeben:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:170
+#: src/en/tutorials/connect-config-elasticsearch.md:177
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -26380,7 +26391,7 @@ msgstr ""
 "[...]\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:187
+#: src/en/tutorials/connect-config-elasticsearch.md:194
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
 "while to complete. Please let this task finish completely and wait until it "
@@ -26391,7 +26402,7 @@ msgstr ""
 "die Konsole sind."
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:192
+#: src/en/tutorials/connect-config-elasticsearch.md:199
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
 "your installation. Make sure you followed the complete Elasticsearch set up "
@@ -26405,7 +26416,7 @@ msgstr ""
 "install-elasticsearch) durchgeführt haben."
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:193
+#: src/en/tutorials/connect-config-elasticsearch.md:200
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -26417,7 +26428,7 @@ msgstr ""
 "`/var/log/elasticsearch/elasticsearch.log`.\n"
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:200
+#: src/en/tutorials/connect-config-elasticsearch.md:207
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
@@ -31981,6 +31992,28 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid ""
+#~ "This step requires a running Zammad. If you are installing a new Zammad "
+#~ "instance, [go on with the installation](/en/get-started/installation/"
+#~ "package#add-zammad-repository) and come back here when you can access the "
+#~ "admin settings in the browser."
+#~ msgstr ""
+#~ "Dieser Schritt erfordert ein laufendes Zammad. Wenn Sie eine neue Zammad-"
+#~ "Instanz installieren, [fahren Sie zunächst mit der Installation fort](/de/"
+#~ "get-started/installation/package#zammad-repository-hinzufugen) und kommen "
+#~ "Sie hierher zurück, wenn Sie die Admin-Einstellungen im Browser aufrufen "
+#~ "können."
+
+#, no-wrap
+#~ msgid ""
+#~ "To add it in Zammad, go to _Settings > Security > SSL Certificates_ in the admin settings and add your copied\n"
+#~ "certificate. Either upload the certificate file or paste the content in the dialog.\n"
+#~ "After saving the certificate, Zammad is now able to connect to and access the Elasticsearch index.\n"
+#~ msgstr ""
+#~ "Um es in Zammad hinzuzufügen, gehen Sie in den Admin-Einstellungen zu _Einstellungen > Sicherheit > SSL-Zertifikate_ und fügen Sie Ihr kopiertes\n"
+#~ "Zertifikat hinzu. Entweder laden Sie die Zertifikatsdatei hoch oder fügen den Inhalt in den Dialog ein.\n"
+#~ "Nach dem Speichern des Zertifikats ist Zammad nun in der Lage, sich mit dem Elasticsearch-Index zu verbinden und darauf zuzugreifen.\n"
 
 #, no-wrap
 #~ msgid "How can I use keyboard shortcuts? I want to be more productive"

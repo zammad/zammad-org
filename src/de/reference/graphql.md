@@ -15,7 +15,7 @@ Diese Dokumentation ist nicht dazu gedacht, alles über GraphQL
 abzudecken. Sie soll Ihnen ein grundlegendes Verständnis dafür vermitteln,
 wie Sie Daten abrufen und erstellen/ändern können, um darauf
 aufzubauen. Eine umfassende Anleitung finden Sie in der
-[GraphQL-Dokumentation] (https://graphql.org/learn/).
+[GraphQL-Dokumentation](https://graphql.org/learn/).
 
 GraphQL wird von vielen, auch großen, Webdiensten verwendet. Aufgrund seiner
 Effizienz und seiner Funktionen wurde es zu einer Art Industriestandard. Sie
