@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-01 14:00+0000\n"
+"POT-Creation-Date: 2025-11-06 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7373,18 +7373,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:388
 #, markdown-text
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
-"socket. Zammad requires Redis 6 or newer.  The installation and "
-"configuration is out of scope of this documentation. Please follow the "
-"official guides and ensure to set it up in a secure way or consider another "
-"installation method or Zammad's hosting services."
+"socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
+"(package) or is included in the stack (Docker Compose) with a working "
+"configuration.  However, the installation and configuration is out of scope "
+"of this documentation. Please follow the official guides and ensure to set "
+"it up in a secure way."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:391
+#, markdown-text
+msgid ""
+"Available environment variables for standard and Sentinel setups are briefly "
+"mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:392
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -7392,7 +7401,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:399
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -7403,19 +7412,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:397
+#: src/en/get-started/installation/package.md:401
 #, markdown-text
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:403
 #, markdown-text
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:404
 #, no-wrap
 msgid ""
 "\n"
@@ -7434,7 +7443,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:419
+#: src/en/get-started/installation/package.md:423
 #, markdown-text
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
@@ -7443,13 +7452,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:420
+#: src/en/get-started/installation/package.md:424
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:424
+#: src/en/get-started/installation/package.md:428
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -7459,7 +7468,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:432
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -7470,7 +7479,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:431
+#: src/en/get-started/installation/package.md:435
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -7479,7 +7488,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:434
+#: src/en/get-started/installation/package.md:438
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -7488,13 +7497,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:439
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:444
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -11176,9 +11185,9 @@ msgid ""
 "|\n"
 "| REDIS_URL                                              |         | - "
 "Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own "
-"Redis instance if you already have one. Please note that this method "
-"currently does not allow authentication. The package installation fallback "
-"is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         "
+"Redis instance if you already have one. The package installation fallback is "
+"`/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) "
+"for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                              "
 "|\n"
 msgstr ""
 
@@ -16329,6 +16338,88 @@ msgid ""
 "database. Have a look at their [privacy "
 "policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for "
 "more information."
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/redis.md:1 src/en/reference/redis.md:6
+#, markdown-text, no-wrap
+msgid "Redis Variables"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:11
+#, markdown-text
+msgid ""
+"Zammad requires Redis to work. During package installation, it is installed "
+"automatically unless there is a Redis installation on the host already. In "
+"the Docker Compose stack, there is a Redis Service included. Both scenarios "
+"work out of the box and should not require adjustments unless your setup "
+"differs or you want to explicitly make adjustments."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:12
+#, markdown-text, no-wrap
+msgid "Standard Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:16
+#, markdown-text
+msgid ""
+"For a Redis standard deployment, you can provide one variable: "
+"``REDIS_URL``. This variable can include IP/URL, a port, a username and "
+"password. Examples:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+#, markdown-text
+msgid "`redis://redis.example.com:1234`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+#, markdown-text
+msgid "`redis://user:password@redis.example.com`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:20
+#, markdown-text, no-wrap
+msgid "Sentinel Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:24
+#, markdown-text
+msgid ""
+"The variables in the table don't have default values set. In case you want "
+"to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
+"variable is mandatory, the others are optional."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:33
+#, markdown-text, no-wrap
+msgid ""
+" Variable                    | Description                                                                                                                                      "
+"|\n"
+"-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+" `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma "
+"separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, "
+"`sentinel2.example.com` |\n"
+" `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to "
+"`mymaster` if not provided                                                                                   "
+"|\n"
+" `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            "
+"|\n"
+" `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            "
+"|\n"
+" `REDIS_USERNAME`            | Username for Redis                                                                                                                               "
+"|\n"
+" `REDIS_PASSWORD`            | Password for Redis                                                                                                                               "
+"|\n"
 msgstr ""
 
 #. type: Plain text

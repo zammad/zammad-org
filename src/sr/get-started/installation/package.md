@@ -391,10 +391,14 @@ guide](/en/tutorials/webserver-config).
 ### Redis
 
 [Redis](https://redis.io/) is required for realtime communication via web
-socket. Zammad requires Redis 6 or newer.  The installation and
-configuration is out of scope of this documentation. Please follow the
-official guides and ensure to set it up in a secure way or consider another
-installation method or Zammad's hosting services.
+socket. Zammad requires Redis 6 or newer.  It gets installed automatically
+(package) or is included in the stack (Docker Compose) with a working
+configuration.  However, the installation and configuration is out of scope
+of this documentation. Please follow the official guides and ensure to set
+it up in a secure way.
+
+Available environment variables for standard and Sentinel setups are briefly
+mentioned in the [Redis Variables](/en/reference/redis) page.
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
 
