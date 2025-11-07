@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-16 14:44+0200\n"
+"POT-Creation-Date: 2025-11-06 13:30+0000\n"
 "PO-Revision-Date: 2025-10-14 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -217,6 +217,18 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -7772,23 +7784,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:388
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
-"socket. Zammad requires Redis 6 or newer.  The installation and "
-"configuration is out of scope of this documentation. Please follow the "
-"official guides and ensure to set it up in a secure way or consider another "
-"installation method or Zammad's hosting services."
+"socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
+"(package) or is included in the stack (Docker Compose) with a working "
+"configuration.  However, the installation and configuration is out of scope "
+"of this documentation. Please follow the official guides and ensure to set "
+"it up in a secure way."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/package.md:391
+msgid ""
+"Available environment variables for standard and Sentinel setups are briefly "
+"mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:392
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:399
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -7798,18 +7818,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:397
+#: src/en/get-started/installation/package.md:401
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:403
 #, fuzzy
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Први кораци са Zammad-ом"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:404
 #, no-wrap
 msgid ""
 "\n"
@@ -7828,7 +7848,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:419
+#: src/en/get-started/installation/package.md:423
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -7836,13 +7856,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:420
+#: src/en/get-started/installation/package.md:424
 #, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:424
+#: src/en/get-started/installation/package.md:428
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -7851,7 +7871,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:432
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -7861,7 +7881,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:431
+#: src/en/get-started/installation/package.md:435
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -7869,7 +7889,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:434
+#: src/en/get-started/installation/package.md:438
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -7877,13 +7897,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:439
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:444
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -11305,7 +11325,7 @@ msgid ""
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
 "| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
+"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. The package installation fallback is `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                              |\n"
 msgstr ""
 
 #. type: Title ##
@@ -15916,6 +15936,75 @@ msgid ""
 "wiki/Privacy_Policy){target=_blank} for more information."
 msgstr ""
 
+#. type: Title #
+#: src/en/reference/redis.md:1 src/en/reference/redis.md:6
+#, fuzzy, no-wrap
+#| msgid "Environment Variables"
+msgid "Redis Variables"
+msgstr "Променљиве окружења"
+
+#. type: Plain text
+#: src/en/reference/redis.md:11
+msgid ""
+"Zammad requires Redis to work. During package installation, it is installed "
+"automatically unless there is a Redis installation on the host already. In "
+"the Docker Compose stack, there is a Redis Service included. Both scenarios "
+"work out of the box and should not require adjustments unless your setup "
+"differs or you want to explicitly make adjustments."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:12
+#, no-wrap
+msgid "Standard Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:16
+msgid ""
+"For a Redis standard deployment, you can provide one variable: "
+"``REDIS_URL``. This variable can include IP/URL, a port, a username and "
+"password. Examples:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+msgid "`redis://redis.example.com:1234`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+msgid "`redis://user:password@redis.example.com`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:20
+#, no-wrap
+msgid "Sentinel Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:24
+msgid ""
+"The variables in the table don't have default values set. In case you want "
+"to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
+"variable is mandatory, the others are optional."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:33
+#, no-wrap
+msgid ""
+" Variable                    | Description                                                                                                                                      |\n"
+"-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+" `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, `sentinel2.example.com` |\n"
+" `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to `mymaster` if not provided                                                                                   |\n"
+" `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            |\n"
+" `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |\n"
+" `REDIS_USERNAME`            | Username for Redis                                                                                                                               |\n"
+" `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |\n"
+msgstr ""
+
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:12
 msgid ""
@@ -20377,6 +20466,76 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -20537,76 +20696,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21020,18 +21109,6 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1

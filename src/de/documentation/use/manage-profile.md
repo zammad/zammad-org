@@ -93,7 +93,7 @@ Ihres Kontos zu erhöhen. Ihr Administrator muss mindestens eine 2FA-Methode
 aktiviert haben. Die Verwendung einer 2FA-Methode kann sogar von Ihrem
 Administrator erzwungen werden.
 
-Nachdem Sie die [2FA-Anleitung] (./guides/two-factor-auth) befolgt haben,
+Nachdem Sie die [2FA-Anleitung](./guides/two-factor-auth) befolgt haben,
 müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie Ihre
 konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an Ihren
 Administrator, der sie zurücksetzen kann.

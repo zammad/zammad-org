@@ -34,4 +34,3 @@ variable is mandatory, the others are optional.
  `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |
  `REDIS_USERNAME`            | Username for Redis                                                                                                                               |
  `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |
-

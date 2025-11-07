@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-16 14:44+0200\n"
-"PO-Revision-Date: 2025-11-01 14:00+0000\n"
+"POT-Creation-Date: 2025-11-06 13:30+0000\n"
+"PO-Revision-Date: 2025-11-04 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -217,6 +217,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -5877,7 +5889,7 @@ msgid ""
 "provide your second factor at the next login. If you can't provide your "
 "configured 2FA method, contact your admin who can reset it."
 msgstr ""
-"Nachdem Sie die [2FA-Anleitung] (./guides/two-factor-auth) befolgt haben, "
+"Nachdem Sie die [2FA-Anleitung](./guides/two-factor-auth) befolgt haben, "
 "müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie Ihre "
 "konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an Ihren "
 "Administrator, der sie zurücksetzen kann."
@@ -8626,13 +8638,21 @@ msgstr ""
 "Tutorial](/de/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:388
+#, fuzzy
+#| msgid ""
+#| "[Redis](https://redis.io/) is required for realtime communication via web "
+#| "socket. Zammad requires Redis 6 or newer.  The installation and "
+#| "configuration is out of scope of this documentation. Please follow the "
+#| "official guides and ensure to set it up in a secure way or consider "
+#| "another installation method or Zammad's hosting services."
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
-"socket. Zammad requires Redis 6 or newer.  The installation and "
-"configuration is out of scope of this documentation. Please follow the "
-"official guides and ensure to set it up in a secure way or consider another "
-"installation method or Zammad's hosting services."
+"socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
+"(package) or is included in the stack (Docker Compose) with a working "
+"configuration.  However, the installation and configuration is out of scope "
+"of this documentation. Please follow the official guides and ensure to set "
+"it up in a secure way."
 msgstr ""
 "[Redis](https://redis.io/) wird für die Echtzeitkommunikation per Websocket "
 "benötigt. Zammad benötigt Redis 6 oder eine neuere Version. Die Installation "
@@ -8641,14 +8661,21 @@ msgstr ""
 "sicher ist oder ziehen Sie eine andere Installationsmethode oder Zammads "
 "Hosting-Services in Betracht."
 
+#. type: Plain text
+#: src/en/get-started/installation/package.md:391
+msgid ""
+"Available environment variables for standard and Sentinel setups are briefly "
+"mentioned in the [Redis Variables](/en/reference/redis) page."
+msgstr ""
+
 #. type: Title ###
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:392
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:399
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -8664,17 +8691,17 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:397
+#: src/en/get-started/installation/package.md:401
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:403
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Elasticsearch-Versionsverlauf für Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:404
 #, no-wrap
 msgid ""
 "\n"
@@ -8706,7 +8733,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:419
+#: src/en/get-started/installation/package.md:423
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -8717,13 +8744,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:420
+#: src/en/get-started/installation/package.md:424
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:424
+#: src/en/get-started/installation/package.md:428
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -8736,7 +8763,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:432
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -8751,7 +8778,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:431
+#: src/en/get-started/installation/package.md:435
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -8763,7 +8790,7 @@ msgstr ""
 "variables#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:434
+#: src/en/get-started/installation/package.md:438
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -8775,13 +8802,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:439
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:444
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -12765,7 +12792,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:46
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
+#| "| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+#| "| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad Docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
+#| "| AUTOWIZARD_JSON                                        | ::d::   | unset                               | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
+#| "| ZAMMAD_HTTP_TYPE                                       |         | unset                               | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
+#| "| ZAMMAD_FQDN                                            |         | unset                               | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
+#| "| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in Docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
+#| "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
+#| "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
+#| "| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
+#| "| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
 msgid ""
 "| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
 "| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -12777,7 +12816,7 @@ msgid ""
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
 "| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
+"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. The package installation fallback is `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                              |\n"
 msgstr ""
 "| Variable                                               | Beschränkung | Standardwert                                                       | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\n"
 "| ------------------------------------------------------ | ------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n"
@@ -18167,6 +18206,94 @@ msgstr ""
 "OSM in der Datenbank von Zammad gespeichert. Weitere Informationen finden "
 "Sie in den [Datenschutzbestimmungen von OSM](https://osmfoundation.org/wiki/"
 "Privacy_Policy){target=_blank}."
+
+#. type: Title #
+#: src/en/reference/redis.md:1 src/en/reference/redis.md:6
+#, fuzzy, no-wrap
+#| msgid "Environment Variables"
+msgid "Redis Variables"
+msgstr "Umgebungsvariablen"
+
+#. type: Plain text
+#: src/en/reference/redis.md:11
+msgid ""
+"Zammad requires Redis to work. During package installation, it is installed "
+"automatically unless there is a Redis installation on the host already. In "
+"the Docker Compose stack, there is a Redis Service included. Both scenarios "
+"work out of the box and should not require adjustments unless your setup "
+"differs or you want to explicitly make adjustments."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:12
+#, no-wrap
+msgid "Standard Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:16
+msgid ""
+"For a Redis standard deployment, you can provide one variable: "
+"``REDIS_URL``. This variable can include IP/URL, a port, a username and "
+"password. Examples:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+msgid "`redis://redis.example.com:1234`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/redis.md:19
+msgid "`redis://user:password@redis.example.com`"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/redis.md:20
+#, no-wrap
+msgid "Sentinel Setup"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:24
+msgid ""
+"The variables in the table don't have default values set. In case you want "
+"to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
+"variable is mandatory, the others are optional."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/redis.md:33
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
+#| "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
+#| "| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
+#| "| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
+#| "| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
+#| "| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
+#| "| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
+#| "| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
+#| "| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
+msgid ""
+" Variable                    | Description                                                                                                                                      |\n"
+"-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+" `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, `sentinel2.example.com` |\n"
+" `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to `mymaster` if not provided                                                                                   |\n"
+" `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            |\n"
+" `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |\n"
+" `REDIS_USERNAME`            | Username for Redis                                                                                                                               |\n"
+" `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |\n"
+msgstr ""
+"| Variable             | Beschränkung | Standardwert        | Beschreibung                                                                                                                                      |\n"
+"| -------------------- | ------------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| POSTGRESQL_HOST      | ::d::        | `zammad-postgresql` | Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.                                                     |\n"
+"| POSTGRESQL_PORT      | ::d::        | `5432`              | Stellen Sie den Port Ihres PostgreSQL-Servers ein.                                                                                                |\n"
+"| POSTGRESQL_USER      | ::d::        | `zammad`            | Der Datenbank Benutzer für Zammad.                                                                                                                |\n"
+"| POSTGRESQL_PASS      | ::d::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
+"| POSTGRESQL_DB        | ::d::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
+"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche PostgreSQL-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
+"| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:12
@@ -23992,6 +24119,94 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24214,94 +24429,6 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -24842,18 +24969,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -26068,9 +26183,7 @@ msgstr ""
 #: src/en/tutorials/connect-config-elasticsearch.md:42
 #, no-wrap
 msgid "sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r \"SSLCertificate.create!(certificate: STDIN.read)\"\n"
-msgstr ""
-"sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r "
-"\"SSLCertificate.create!(certificate: STDIN.read)\"\n"
+msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r \"SSLCertificate.create!(certificate: STDIN.read)\"\n"
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:46
@@ -26086,10 +26199,8 @@ msgid ""
 "(_Settings > Security > SSL Certificates_) as an alternative. To show and copy the auto-generated certificate from\n"
 "Elasticsearch, run:\n"
 msgstr ""
-"Falls Sie bereits ein laufendes und konfiguriertes Zammad haben, können Sie "
-"das Zertifikat alternativ in den Admin-Einstellungen von Zammad\n"
-"(_Einstellungen > Sicherheit > SSL-Zertifikate_) hinzufügen. Führen Sie zum "
-"Anzeigen und Kopieren des automatisch generierten Zertifikats von\n"
+"Falls Sie bereits ein laufendes und konfiguriertes Zammad haben, können Sie das Zertifikat alternativ in den Admin-Einstellungen von Zammad\n"
+"(_Einstellungen > Sicherheit > SSL-Zertifikate_) hinzufügen. Führen Sie zum Anzeigen und Kopieren des automatisch generierten Zertifikats von\n"
 "Elasticsearch folgenden Befehl aus:\n"
 
 #. type: Fenced code block (sh)
