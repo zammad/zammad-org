@@ -25,25 +25,25 @@ You can find screenshots below to get an impression how the mobile view looks li
 
 | Login | Home |
 |:-------------------------:|:-------------------------:|
-|![Screenshot shows login screen of Zammad's mobile view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/mobile-view/home.png) |
+| ![Screenshot shows login screen of Zammad's mobile view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/mobile-view/home.png) |
 
 === Search & Overview
 
 | Search | Overview |
 |:-------------------------:|:-------------------------:|
-|![Screenshot shows search screen of Zammad's mobile view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |
+| ![Screenshot shows search screen of Zammad's mobile view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |
 
 === Ticket Details
 
 | Articles | Details |
 |:-------------------------:|:-------------------------:|
-|![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/mobile-view/ticket-details.png) |
+| ![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/mobile-view/ticket-details.png) |
 
 === Notifications & Account
 
 | Notifications | Account |
 |:-------------------------:|:-------------------------:|
-|![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/mobile-view/profile.png) |
+| ![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/mobile-view/profile.png) |
 
 :::
 

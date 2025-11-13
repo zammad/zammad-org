@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-06 13:30+0000\n"
+"POT-Creation-Date: 2025-11-13 09:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,18 +215,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -3731,7 +3719,7 @@ msgid ""
 "\n"
 "| Login | Home |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows login screen of Zammad's mobile "
+"| ![Screenshot shows login screen of Zammad's mobile "
 "view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen "
 "of Zammad's mobile view](/screenshots/mobile-view/home.png) |\n"
 "\n"
@@ -3739,7 +3727,7 @@ msgid ""
 "\n"
 "| Search | Overview |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows search screen of Zammad's mobile "
+"| ![Screenshot shows search screen of Zammad's mobile "
 "view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview "
 "screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |\n"
 "\n"
@@ -3747,7 +3735,7 @@ msgid ""
 "\n"
 "| Articles | Details |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows ticket screen of Zammad's mobile "
+"| ![Screenshot shows ticket screen of Zammad's mobile "
 "view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows "
 "ticket detail view of Zammad's mobile "
 "view](/screenshots/mobile-view/ticket-details.png) |\n"
@@ -3756,7 +3744,7 @@ msgid ""
 "\n"
 "| Notifications | Account |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows notifications screen of Zammad's mobile "
+"| ![Screenshot shows notifications screen of Zammad's mobile "
 "view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows "
 "account settings screen of Zammad's mobile "
 "view](/screenshots/mobile-view/profile.png) |\n"
@@ -16400,7 +16388,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/redis.md:33
+#: src/en/reference/redis.md:32
 #, markdown-text, no-wrap
 msgid ""
 " Variable                    | Description                                                                                                                                      "
@@ -21863,6 +21851,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
