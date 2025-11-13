@@ -305,3 +305,16 @@ features:
 
 To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
 rendered.
+
+#### Theme Specific Images
+
+To target specific image assets to a single theme, you can assign `.dark-only` or `.light-only` CSS class to the
+corresponding image:
+
+```md
+![Dark only image](/assets/logo-flat-dark.svg){.dark-only}
+![Light only image](/assets/logo-flat-light.svg){.light-only}
+```
+
+![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240}
+![Light only image](/assets/logo-flat-light.svg){.light-only width=240}
