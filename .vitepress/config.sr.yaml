@@ -40,6 +40,12 @@ themeConfig:
           target: _self
           text: 'Актуелно издање'
       text: 'Следеће издање'
+  notFound:
+    code: 404
+    linkLabel: 'go to home'
+    linkText: 'Take me home'
+    quote: "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
+    title: 'PAGE NOT FOUND'
   outline:
     label: 'На овој страни'
     level:

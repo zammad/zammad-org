@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-13 09:33+0100\n"
+"POT-Creation-Date: 2025-11-13 11:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,6 +132,38 @@ msgstr ""
 msgid "Current release"
 msgstr ""
 
+#. type: Hash Value: themeConfig notFound code
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "404"
+msgstr ""
+
+#. type: Hash Value: themeConfig notFound linkLabel
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "go to home"
+msgstr ""
+
+#. type: Hash Value: themeConfig notFound linkText
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Take me home"
+msgstr ""
+
+#. type: Hash Value: themeConfig notFound quote
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid ""
+"But if you don't change your direction, and if you keep looking, you may end "
+"up where you are heading."
+msgstr ""
+
+#. type: Hash Value: themeConfig notFound title
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "PAGE NOT FOUND"
+msgstr ""
+
 #. type: Hash Value: themeConfig outline label
 #: .vitepress/config.en.yaml:1
 #, no-wrap
@@ -215,6 +247,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1431,12 +1475,42 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:307
+#: src/en/contribute/style-guide.md:308
 #, markdown-text, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference "
 "`<VPDocFeatures />` at the point where it has to be\n"
 "rendered.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/contribute/style-guide.md:309
+#, markdown-text, no-wrap
+msgid "Theme Specific Images"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:313
+#, markdown-text
+msgid ""
+"To target specific image assets to a single theme, you can assign "
+"`.dark-only` or `.light-only` CSS class to the corresponding image:"
+msgstr ""
+
+#. type: Fenced code block (md)
+#: src/en/contribute/style-guide.md:314
+#, no-wrap
+msgid ""
+"![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
+"![Light only image](/assets/logo-flat-light.svg){.light-only}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:320
+#, markdown-text
+msgid ""
+"![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
+"only image](/assets/logo-flat-light.svg){.light-only width=240}"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details
@@ -21851,18 +21925,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #
