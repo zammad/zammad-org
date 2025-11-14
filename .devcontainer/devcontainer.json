@@ -1,35 +1,61 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-	"name": "zammad-org-devcontainer",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:debian-12",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+  "name": "zammad-org-devcontainer",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:debian-12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {},
-		"ghcr.io/devcontainers-extra/features/apt-get-packages": {
+    "ghcr.io/devcontainers-extra/features/apt-get-packages": {
       "packages": "libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb" // cypress dependencies
     },
-		"./features/po4a": {},
-	},
+    "./features/po4a": {}
+  },
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Controls what should happen when a port is auto-forwarded once you’ve connected to the container.
+  "portsAttributes": {
+    "4173": {
+      "label": "VitePress Preview Server"
+    },
+    "5173": {
+      "label": "VitePress Dev Server"
+    }
+  },
 
-	"containerEnv": {
-		"LC_ALL" : "C.UTF-8",
-		"LANG": "C.UTF-8",
-		"LANGUAGE": "C.UTF-8",
-		"CYPRESS_BASE_URL": "http://host.docker.internal:8080"
-	},
+  "mounts": [
+    // A named volume used to persist `node_modules` across container rebuilds
+    //   and allow for a parallel local setup.
+    {
+      "source": "zammad-org-devcontainer_node-modules",
+      "target": "/workspaces/${localWorkspaceFolderBasename}/node_modules",
+      "type": "volume"
+    },
+    // A named volume used to persist `.screenshots/node_modules` across container rebuilds
+    //   and allow for a parallel local setup.
+    {
+      "source": "zammad-org-devcontainer_screenshots-node-modules",
+      "target": "/workspaces/${localWorkspaceFolderBasename}/.screenshots/node_modules",
+      "type": "volume"
+    }
+  ],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_create.sh",
+  "containerEnv": {
+    "LC_ALL" : "C.UTF-8",
+    "LANG": "C.UTF-8",
+    "LANGUAGE": "C.UTF-8",
+    "CYPRESS_BASE_URL": "http://host.docker.internal:8080"
+  },
 
-	// Configure tool-specific properties.
-	// "customizations": {},
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "/workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_create.sh",
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "runArgs": [
+    "--name", "zammad-org-devcontainer",
+
+    // Disable IPv6 to workaround Vite issues in VSCode Docker 26+ containers.
+    //   https://github.com/vitejs/vite/issues/16522
+    "--sysctl", "net.ipv6.conf.all.disable_ipv6=1"
+  ]
 }
