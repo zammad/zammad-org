@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-13 11:56+0100\n"
+"POT-Creation-Date: 2025-11-24 11:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1556,7 +1544,7 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:120
+#: src/en/documentation/use/start-using-zammad.md:121
 #: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
 #: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #, markdown-text, no-wrap
@@ -2777,9 +2765,9 @@ msgid ""
 "If you **search for a specific ticket or content**, the search is the best "
 "way. You can find the search field in the top area of the navigation sidebar "
 "or activate it by using the keyboard shortcut [[s]]. The search even shows "
-"your last viewed items, maybe you can find what you are searching for "
-"already there. There is a separate [search page](./guides/search) for more "
-"information."
+"the tickets you recently closed from your taskbar, maybe you can already "
+"find what you are searching for there. There is a separate [search "
+"page](./guides/search) for more information."
 msgstr ""
 
 #. type: Plain text
@@ -4346,15 +4334,15 @@ msgid "User and organizations details (like notes, names, etc.)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:25
+#: src/en/documentation/use/guides/search.md:26
 #, markdown-text
 msgid ""
-"When the search field is active, you can see your last viewed items as well "
-"as your recent search queries."
+"When the search field gets activated, you can see the ticket which got "
+"recently closed from your taskbar as well as your recent search queries."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:29
+#: src/en/documentation/use/guides/search.md:30
 #, markdown-text
 msgid ""
 "After entering a search term, you immediately see a preview of the search "
@@ -4364,7 +4352,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:32
+#: src/en/documentation/use/guides/search.md:33
 #, markdown-text
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad displays a page "
@@ -4373,7 +4361,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:34
+#: src/en/documentation/use/guides/search.md:35
 #, markdown-text
 msgid ""
 "![Screenshot shows detailed "
@@ -4381,7 +4369,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:40
+#: src/en/documentation/use/guides/search.md:41
 #, markdown-text
 msgid ""
 "If you are still facing many results, try to narrow down your search by "
@@ -4395,13 +4383,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:41
+#: src/en/documentation/use/guides/search.md:42
 #, markdown-text, no-wrap
 msgid "Advanced"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:46
+#: src/en/documentation/use/guides/search.md:47
 #, markdown-text
 msgid ""
 "You can narrow down your search results to specific attributes, even in the "
@@ -4412,43 +4400,43 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:47
+#: src/en/documentation/use/guides/search.md:48
 #, markdown-text, no-wrap
 msgid "Syntax"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:50
+#: src/en/documentation/use/guides/search.md:51
 #, markdown-text
 msgid "Search for a ticket of a specific customer:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:51
+#: src/en/documentation/use/guides/search.md:52
 #, no-wrap
 msgid "customer.firstname: John\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:56
+#: src/en/documentation/use/guides/search.md:57
 #, markdown-text
 msgid "or:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:57
+#: src/en/documentation/use/guides/search.md:58
 #, no-wrap
 msgid "customer.lastname: Doe\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:61
+#: src/en/documentation/use/guides/search.md:62
 #, markdown-text, no-wrap
 msgid "Combining Search Phrases"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:65
+#: src/en/documentation/use/guides/search.md:66
 #, markdown-text
 msgid ""
 "You can combine search phrases by using `AND`, `OR` and `TO` and even "
@@ -4457,7 +4445,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:72
+#: src/en/documentation/use/guides/search.md:73
 #, markdown-text, no-wrap
 msgid ""
 "| Search phrase                                                                               "
@@ -4480,13 +4468,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:73
+#: src/en/documentation/use/guides/search.md:74
 #, markdown-text, no-wrap
 msgid "Additional Examples"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:83
+#: src/en/documentation/use/guides/search.md:84
 #, markdown-text, no-wrap
 msgid ""
 "| Attribute     | possible Values                       | Example                                                                                        "
@@ -5284,7 +5272,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:105
 #: src/en/documentation/use/start-using-zammad.md:68
-#: src/en/documentation/use/start-using-zammad.md:105
+#: src/en/documentation/use/start-using-zammad.md:106
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
@@ -5663,15 +5651,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:98
+#: src/en/documentation/use/start-using-zammad.md:99
 #, markdown-text
 msgid ""
-"After activating the search field, you can see your last viewed items as "
-"well as your last search queries."
+"After activating the search field, you can find the tickets you recently "
+"closed from your taskbar as well as your last search queries."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:102
+#: src/en/documentation/use/start-using-zammad.md:103
 #, markdown-text
 msgid ""
 "By entering a search term, you immediately see a preview of the search "
@@ -5681,13 +5669,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:104
+#: src/en/documentation/use/start-using-zammad.md:105
 #, markdown-text
 msgid "Have a look at the [search guide](guides/search) for more details."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:111
+#: src/en/documentation/use/start-using-zammad.md:112
 #, markdown-text
 msgid ""
 "Depending on the [notification "
@@ -5698,7 +5686,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:114
+#: src/en/documentation/use/start-using-zammad.md:115
 #, markdown-text
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
@@ -5707,7 +5695,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:117
+#: src/en/documentation/use/start-using-zammad.md:118
 #, markdown-text
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
@@ -5717,13 +5705,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:118
+#: src/en/documentation/use/start-using-zammad.md:119
 #, markdown-text, no-wrap
 msgid "Ticket Basics"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:124
+#: src/en/documentation/use/start-using-zammad.md:125
 #, markdown-text
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
@@ -5732,7 +5720,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
@@ -5740,7 +5728,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid ""
 "You and your colleagues can see who is working on which customer request "
@@ -5748,7 +5736,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid ""
 "The state of each request as well as the history (who did what?) is "
@@ -5756,13 +5744,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
@@ -5770,7 +5758,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 #, markdown-text
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
@@ -5778,7 +5766,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:134
+#: src/en/documentation/use/start-using-zammad.md:135
 #, markdown-text
 msgid ""
 "So, basically you can work with Zammad similar as with your email "
@@ -5787,7 +5775,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
@@ -5795,7 +5783,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
@@ -5803,7 +5791,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
@@ -5811,7 +5799,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
@@ -5820,7 +5808,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
@@ -5830,7 +5818,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**Owner**: This is the person who is currently responsible for the "
@@ -5842,7 +5830,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 #, markdown-text
 msgid ""
 "**Group**: This ticket attribute is useful for organizations with more than "
@@ -5851,13 +5839,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:152
+#: src/en/documentation/use/start-using-zammad.md:153
 #, markdown-text, no-wrap
 msgid "Ticket Detail View"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:156
 #, markdown-text
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
@@ -5865,7 +5853,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:162
+#: src/en/documentation/use/start-using-zammad.md:163
 #, markdown-text
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
@@ -5881,7 +5869,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:165
+#: src/en/documentation/use/start-using-zammad.md:166
 #, markdown-text
 msgid ""
 "Regardless of the customer's article type, you can always add internal "
@@ -5889,13 +5877,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:166
+#: src/en/documentation/use/start-using-zammad.md:167
 #, markdown-text, no-wrap
 msgid "Updating your Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:172
+#: src/en/documentation/use/start-using-zammad.md:173
 #, markdown-text
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
@@ -5906,13 +5894,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:173
+#: src/en/documentation/use/start-using-zammad.md:174
 #, markdown-text, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:178
+#: src/en/documentation/use/start-using-zammad.md:179
 #, markdown-text
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
@@ -21239,83 +21227,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -21482,6 +21393,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21925,6 +21913,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

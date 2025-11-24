@@ -112,8 +112,8 @@ sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie
 finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie
 entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]].
 
-Nachdem Sie das Suchfeld aktiviert haben, können Sie Ihre zuletzt
-angesehenen Elemente sowie Ihre letzten Suchanfragen sehen.
+After activating the search field, you can find the tickets you recently
+closed from your taskbar as well as your last search queries.
 
 Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der
 Suchergebnisse. Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche`

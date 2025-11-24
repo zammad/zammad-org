@@ -17,12 +17,12 @@ title: FAQs
 Das hängt von Ihrem Anwendungsfall ab. Zammad bietet mehrere Möglichkeiten,
 Tickets zu suchen und auf sie zuzugreifen.
 
-Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche
-der beste Weg. Sie finden das Suchfeld im oberen Bereich der
-Navigations-Seitenleiste oder können sie mit dem Tastaturkürzel [[s]
-aktivieren]. Die Suche zeigt sogar Ihre zuletzt angesehenen Elemente an,
-vielleicht finden Sie dort schon, was Sie suchen. Für weitere Informationen
-gibt es eine eigene [Suchseite](./guides/search).
+If you **search for a specific ticket or content**, the search is the best
+way. You can find the search field in the top area of the navigation sidebar
+or activate it by using the keyboard shortcut [[s]]. The search even shows
+the tickets you recently closed from your taskbar, maybe you can already
+find what you are searching for there. There is a separate [search
+page](./guides/search) for more information.
 
 Wenn Sie **mit der Arbeit an Tickets** beginnen wollen, werfen Sie einen
 Blick auf die [Übersichten](./guides/overviews), die im Grunde eine Liste

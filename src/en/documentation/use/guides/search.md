@@ -21,7 +21,8 @@ The search covers basically all information which is stored in Zammad and which 
 - Text in file attachments
 - User and organizations details (like notes, names, etc.)
 
-When the search field is active, you can see your last viewed items as well as your recent search queries.
+When the search field gets activated, you can see the ticket which got recently closed from your taskbar as well as your
+recent search queries.
 
 After entering a search term, you immediately see a preview of the search results. These results are separated by type
 to make sure you won't get lost in the results. Selecting one of those results will open a new navigation tab (if not

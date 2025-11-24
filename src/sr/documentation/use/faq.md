@@ -20,9 +20,9 @@ access tickets.
 If you **search for a specific ticket or content**, the search is the best
 way. You can find the search field in the top area of the navigation sidebar
 or activate it by using the keyboard shortcut [[s]]. The search even shows
-your last viewed items, maybe you can find what you are searching for
-already there. There is a separate [search page](./guides/search) for more
-information.
+the tickets you recently closed from your taskbar, maybe you can already
+find what you are searching for there. There is a separate [search
+page](./guides/search) for more information.
 
 If you want to **start working on tickets**, take a look at [the
 overviews](./guides/overviews), which are basically a list of current

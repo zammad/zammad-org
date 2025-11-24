@@ -105,8 +105,8 @@ visible in the overviews, you can use the search. You can find it in the top
 left corner in the navigation bar. Either select it via mouse or use the
 keyboard shortcut by simply pressing [[s]].
 
-After activating the search field, you can see your last viewed items as
-well as your last search queries.
+After activating the search field, you can find the tickets you recently
+closed from your taskbar as well as your last search queries.
 
 By entering a search term, you immediately see a preview of the search
 results. If you press [[enter]] or click on `detailed search`, Zammad

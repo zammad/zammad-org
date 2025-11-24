@@ -25,8 +25,8 @@ indiziert](/de/reference/es-indexed-attributes) wurden , wie z.B.:
 - Text in Dateianhängen
 - Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-Wenn das Suchfeld aktiv ist, können Sie Ihre zuletzt angesehenen Elemente
-sowie Ihre letzten Suchanfragen sehen.
+When the search field gets activated, you can see the ticket which got
+recently closed from your taskbar as well as your recent search queries.
 
 Nachdem Sie einen Suchbegriff eingegeben haben, sehen Sie sofort eine
 Vorschau der Suchergebnisse. Diese Ergebnisse sind nach Typ getrennt, damit
