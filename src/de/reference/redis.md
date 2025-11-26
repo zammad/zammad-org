@@ -1,36 +1,37 @@
 ---
 order: 9
-title: 'Redis Variables'
+title: 'Redis Variablen'
 ---
 
-# Redis Variables
+# Redis Variablen
 
-Zammad requires Redis to work. During package installation, it is installed
-automatically unless there is a Redis installation on the host already. In
-the Docker Compose stack, there is a Redis Service included. Both scenarios
-work out of the box and should not require adjustments unless your setup
-differs or you want to explicitly make adjustments.
+Zammad benötigt Redis, um zu funktionieren. Während der Paketinstallation
+wird es automatisch installiert, sofern nicht bereits eine
+Redis-Installation auf dem Host vorhanden ist. Im Docker Compose Stack ist
+ein Redis Service enthalten. Beide Szenarien funktionieren standardmäßig und
+sollten keine Anpassungen erfordern, es sei denn, Ihr Setup weicht davon ab
+oder Sie möchten explizit Anpassungen vornehmen.
 
 ## Standard Setup
 
-For a Redis standard deployment, you can provide one variable:
-``REDIS_URL``. This variable can include IP/URL, a port, a username and
-password. Examples:
+Für eine Redis-Standardinstallation können Sie eine Variable angeben:
+`REDIS_URL`. Diese Variable kann IP/URL, einen Port, einen Benutzernamen und
+ein Passwort enthalten. Beispiele:
 
 - `redis://redis.example.com:1234`
 - `redis://user:password@redis.example.com`
 
 ## Sentinel Setup
 
-The variables in the table don't have default values set. In case you want
-to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS``
-variable is mandatory, the others are optional.
+Für die Variablen in der Tabelle sind keine Standardwerte festgelegt. Falls
+Sie Zammad mit einem Redis Sentinel Cluster verbinden wollen, ist nur die
+Variable `REDIS_SENTINELS` erforderlich, die anderen sind optional.
 
- Variable                    | Description                                                                                                                                      |
+ Variable | Beschreibung |
 -----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
- `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, `sentinel2.example.com` |
- `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to `mymaster` if not provided                                                                                   |
- `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            |
- `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |
- `REDIS_USERNAME`            | Username for Redis                                                                                                                               |
- `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |
+ `REDIS_SENTINELS` | Erforderlich bei Verwendung eines Sentinel-Setups; IPs/URLs durch Komma getrennt; optionaler Port. Beispiele: `sentinel1.example.com:26380`, `sentinel2.example.com` |
+ `REDIS_SENTINEL_NAME` | Name des Sentinel-Setups; Fallback auf `mymaster`, wenn nicht angegeben |
+ `REDIS_SENTINEL_USERNAME` | Benutzername für Sentinel |
+ `REDIS_SENTINEL_PASSWORD` | Passwort für Sentinel |
+ `REDIS_USERNAME` | Benutzername für Redis |
+ `REDIS_PASSWORD` | Passwort für Redis |

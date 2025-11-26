@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-06 13:30+0000\n"
-"PO-Revision-Date: 2025-11-04 06:00+0000\n"
+"POT-Creation-Date: 2025-11-24 11:29+0100\n"
+"PO-Revision-Date: 2025-11-19 13:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -133,6 +133,36 @@ msgstr "https://zammad.org"
 msgid "Current release"
 msgstr "Aktuelle Version"
 
+#. type: Hash Value: themeConfig notFound code
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "404"
+msgstr "404"
+
+#. type: Hash Value: themeConfig notFound linkLabel
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "go to home"
+msgstr "zur Startseite gehen"
+
+#. type: Hash Value: themeConfig notFound linkText
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "Take me home"
+msgstr "Bring mich zur Startseite"
+
+#. type: Hash Value: themeConfig notFound quote
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
+msgstr "Sollten Sie Ihre Richtung nicht ändern und weiterhin suchen, könnten Sie genau dort landen, wohin Sie steuern."
+
+#. type: Hash Value: themeConfig notFound title
+#: .vitepress/config.en.yaml:1
+#, no-wrap
+msgid "PAGE NOT FOUND"
+msgstr "SEITE NICHT GEFUNDEN"
+
 #. type: Hash Value: themeConfig outline label
 #: .vitepress/config.en.yaml:1
 #, no-wrap
@@ -217,18 +247,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -1618,7 +1636,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:307
+#: src/en/contribute/style-guide.md:308
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1626,6 +1644,41 @@ msgid ""
 msgstr ""
 "Um sie innerhalb des Inhaltsbereichs zu platzieren, fügen Sie einfach den Verweis `<VPDocFeatures />` an der Stelle ein, an der sie dargestellt\n"
 "werden sollen.\n"
+
+#. type: Title ####
+#: src/en/contribute/style-guide.md:309
+#, no-wrap
+msgid "Theme Specific Images"
+msgstr "Von Theme abhängige Bilder"
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:313
+msgid ""
+"To target specific image assets to a single theme, you can assign `.dark-"
+"only` or `.light-only` CSS class to the corresponding image:"
+msgstr ""
+"Um bestimmte Bilder auf ein einzelnes Theme anzuwenden, können Sie dem "
+"entsprechenden Bild die CSS-Klasse `.dark-only` oder `.light-only` zuweisen:"
+
+#. type: Fenced code block (md)
+#: src/en/contribute/style-guide.md:314
+#, no-wrap
+msgid ""
+"![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
+"![Light only image](/assets/logo-flat-light.svg){.light-only}\n"
+msgstr ""
+"![Bild nur für dunkles Theme](/assets/logo-flat-dark.svg){.dark-only}\n"
+"![Bild nur für helles Theme](/assets/logo-flat-light.svg){.light-only}\n"
+
+#. type: Plain text
+#: src/en/contribute/style-guide.md:320
+msgid ""
+"![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
+"only image](/assets/logo-flat-light.svg){.light-only width=240}"
+msgstr ""
+"![Bild nur für dunkles Theme](/assets/logo-flat-dark.svg){.dark-only "
+"width=240} ![Bild nur für helles Theme](/assets/logo-flat-light.svg){.light-"
+"only width=240}"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
@@ -1668,7 +1721,7 @@ msgstr "Administrator Dokumentation"
 #: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:120
+#: src/en/documentation/use/start-using-zammad.md:121
 #: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
 #: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #, no-wrap
@@ -3067,13 +3120,21 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:23
+#, fuzzy
+#| msgid ""
+#| "If you **search for a specific ticket or content**, the search is the "
+#| "best way. You can find the search field in the top area of the navigation "
+#| "sidebar or activate it by using the keyboard shortcut [[s]]. The search "
+#| "even shows your last viewed items, maybe you can find what you are "
+#| "searching for already there. There is a separate [search page](./guides/"
+#| "search) for more information."
 msgid ""
 "If you **search for a specific ticket or content**, the search is the best "
 "way. You can find the search field in the top area of the navigation sidebar "
 "or activate it by using the keyboard shortcut [[s]]. The search even shows "
-"your last viewed items, maybe you can find what you are searching for "
-"already there. There is a separate [search page](./guides/search) for more "
-"information."
+"the tickets you recently closed from your taskbar, maybe you can already "
+"find what you are searching for there. There is a separate [search page](./"
+"guides/search) for more information."
 msgstr ""
 "Wenn Sie **nach einem bestimmten Ticket oder Inhalt** suchen, ist die Suche "
 "der beste Weg. Sie finden das Suchfeld im oberen Bereich der Navigations-"
@@ -4275,25 +4336,25 @@ msgid ""
 "\n"
 "| Login | Home |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows login screen of Zammad's mobile view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/mobile-view/home.png) |\n"
+"| ![Screenshot shows login screen of Zammad's mobile view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/mobile-view/home.png) |\n"
 "\n"
 "=== Search & Overview\n"
 "\n"
 "| Search | Overview |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows search screen of Zammad's mobile view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |\n"
+"| ![Screenshot shows search screen of Zammad's mobile view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |\n"
 "\n"
 "=== Ticket Details\n"
 "\n"
 "| Articles | Details |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/mobile-view/ticket-details.png) |\n"
+"| ![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/mobile-view/ticket-details.png) |\n"
 "\n"
 "=== Notifications & Account\n"
 "\n"
 "| Notifications | Account |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/mobile-view/profile.png) |\n"
+"| ![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/mobile-view/profile.png) |\n"
 "\n"
 msgstr ""
 "\n"
@@ -4301,25 +4362,25 @@ msgstr ""
 "\n"
 "| Login | Start |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt die Login-Ansicht von Zammads Mobilansicht](/screenshots/mobile-view/login.png) | ![Screenshot zeigt den Startbildschirm von Zammads Mobilansicht](/screenshots/mobile-view/home.png) |\n"
+"| ![Screenshot zeigt die Login-Ansicht von Zammads Mobilansicht](/screenshots/mobile-view/login.png) | ![Screenshot zeigt den Startbildschirm von Zammads Mobilansicht](/screenshots/mobile-view/home.png) |\n"
 "\n"
 "=== Suche & Übersichten\n"
 "\n"
 "| Suche | Übersichten |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Suchansicht von Zammads Mobilansicht](/screenshots/mobile-view/search.png) | ![Screenshot zeigt Übersichten in Zammads Mobilansicht](/screenshots/mobile-view/overview.png) |\n"
+"| ![Screenshot zeigt Suchansicht von Zammads Mobilansicht](/screenshots/mobile-view/search.png) | ![Screenshot zeigt Übersichten in Zammads Mobilansicht](/screenshots/mobile-view/overview.png) |\n"
 "\n"
 "=== Ticket-Details\n"
 "\n"
 "| Artikel | Details |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Ticketansicht in Zammads Mobilansicht](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot zeigt Ticket-Details in Zammad Mobilansicht](/screenshots/mobile-view/ticket-details.png) |\n"
+"| ![Screenshot zeigt Ticketansicht in Zammads Mobilansicht](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot zeigt Ticket-Details in Zammad Mobilansicht](/screenshots/mobile-view/ticket-details.png) |\n"
 "\n"
 "=== Benachrichtigungen & Konto\n"
 "\n"
 "| Benachrichtigungen | Konto |\n"
 "|:-------------------------:|:-------------------------:|\n"
-"|![Screenshot zeigt Benachrichtigungen in Zammads Mobilansicht](/screenshots/mobile-view/notifications.png) | ![Screenshot zeigt Kontoeinstellungen in Zammads Mobilansicht](/screenshots/mobile-view/profile.png) |\n"
+"| ![Screenshot zeigt Benachrichtigungen in Zammads Mobilansicht](/screenshots/mobile-view/notifications.png) | ![Screenshot zeigt Kontoeinstellungen in Zammads Mobilansicht](/screenshots/mobile-view/profile.png) |\n"
 "\n"
 
 #. type: Title ##
@@ -4879,16 +4940,20 @@ msgid "User and organizations details (like notes, names, etc.)"
 msgstr "Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:25
+#: src/en/documentation/use/guides/search.md:26
+#, fuzzy
+#| msgid ""
+#| "When the search field is active, you can see your last viewed items as "
+#| "well as your recent search queries."
 msgid ""
-"When the search field is active, you can see your last viewed items as well "
-"as your recent search queries."
+"When the search field gets activated, you can see the ticket which got "
+"recently closed from your taskbar as well as your recent search queries."
 msgstr ""
 "Wenn das Suchfeld aktiv ist, können Sie Ihre zuletzt angesehenen Elemente "
 "sowie Ihre letzten Suchanfragen sehen."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:29
+#: src/en/documentation/use/guides/search.md:30
 msgid ""
 "After entering a search term, you immediately see a preview of the search "
 "results. These results are separated by type to make sure you won't get lost "
@@ -4902,7 +4967,7 @@ msgstr ""
 "nicht bereits geöffnet)."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:32
+#: src/en/documentation/use/guides/search.md:33
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad displays a page "
 "with search results. There you can narrow down your search by selecting a "
@@ -4914,7 +4979,7 @@ msgstr ""
 "Objekttyp (z.B. Benutzer) auswählen."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:34
+#: src/en/documentation/use/guides/search.md:35
 msgid ""
 "![Screenshot shows detailed search](/screenshots/cypress/usage-guide-"
 "search.cy.js/search-detail.png)"
@@ -4923,7 +4988,7 @@ msgstr ""
 "search.cy.js/search-detail.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:40
+#: src/en/documentation/use/guides/search.md:41
 msgid ""
 "If you are still facing many results, try to narrow down your search by "
 "adding additional terms or use the sorting of the columns. To sort the "
@@ -4946,13 +5011,13 @@ msgstr ""
 "suchen können."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:41
+#: src/en/documentation/use/guides/search.md:42
 #, no-wrap
 msgid "Advanced"
 msgstr "Zusätzliche Funktionen"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:46
+#: src/en/documentation/use/guides/search.md:47
 msgid ""
 "You can narrow down your search results to specific attributes, even in the "
 "search field in the navigation bar. Read on for some examples and "
@@ -4967,41 +5032,41 @@ msgstr ""
 "attributes)."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:47
+#: src/en/documentation/use/guides/search.md:48
 #, no-wrap
 msgid "Syntax"
 msgstr "Syntax"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:50
+#: src/en/documentation/use/guides/search.md:51
 msgid "Search for a ticket of a specific customer:"
 msgstr "Suche nach einem Ticket eines bestimmten Kunden:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:51
+#: src/en/documentation/use/guides/search.md:52
 #, no-wrap
 msgid "customer.firstname: John\n"
 msgstr "customer.firstname: John\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:56
+#: src/en/documentation/use/guides/search.md:57
 msgid "or:"
 msgstr "oder:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:57
+#: src/en/documentation/use/guides/search.md:58
 #, no-wrap
 msgid "customer.lastname: Doe\n"
 msgstr "customer.lastname: Doe\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:61
+#: src/en/documentation/use/guides/search.md:62
 #, no-wrap
 msgid "Combining Search Phrases"
 msgstr "Suchbegriffe kombinieren"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:65
+#: src/en/documentation/use/guides/search.md:66
 msgid ""
 "You can combine search phrases by using `AND`, `OR` and `TO` and even "
 "separate them with `()`. If you want to exclude search results, you can use "
@@ -5012,7 +5077,7 @@ msgstr ""
 "die Negation `!` verwenden."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:72
+#: src/en/documentation/use/guides/search.md:73
 #, no-wrap
 msgid ""
 "| Search phrase                                                                               | Description                                                                                                       |\n"
@@ -5030,13 +5095,13 @@ msgstr ""
 "| status.name:pending\\* AND article_count:\\[1 TO 5\\] | Zeigt alles mit einem \"Warten auf...\"-Status und einer Artikelanzahl von 1 bis 5.                                            |\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:73
+#: src/en/documentation/use/guides/search.md:74
 #, no-wrap
 msgid "Additional Examples"
 msgstr "Zusätzliche Beispiele"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:83
+#: src/en/documentation/use/guides/search.md:84
 #, no-wrap
 msgid ""
 "| Attribute     | possible Values                       | Example                                                                                        | Description                                                                                                                                                                                                                                          |\n"
@@ -5952,7 +6017,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/manage-profile.md:105
 #: src/en/documentation/use/start-using-zammad.md:68
-#: src/en/documentation/use/start-using-zammad.md:105
+#: src/en/documentation/use/start-using-zammad.md:106
 #, no-wrap
 msgid "Notifications"
 msgstr "Benachrichtigungen"
@@ -6382,16 +6447,20 @@ msgstr ""
 "entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]]."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:98
+#: src/en/documentation/use/start-using-zammad.md:99
+#, fuzzy
+#| msgid ""
+#| "After activating the search field, you can see your last viewed items as "
+#| "well as your last search queries."
 msgid ""
-"After activating the search field, you can see your last viewed items as "
-"well as your last search queries."
+"After activating the search field, you can find the tickets you recently "
+"closed from your taskbar as well as your last search queries."
 msgstr ""
 "Nachdem Sie das Suchfeld aktiviert haben, können Sie Ihre zuletzt "
 "angesehenen Elemente sowie Ihre letzten Suchanfragen sehen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:102
+#: src/en/documentation/use/start-using-zammad.md:103
 msgid ""
 "By entering a search term, you immediately see a preview of the search "
 "results. If you press [[enter]] or click on `detailed search`, Zammad "
@@ -6404,13 +6473,13 @@ msgstr ""
 "Suche basierend auf dem Objekttyp (z.B. Benutzer) durchführen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:104
+#: src/en/documentation/use/start-using-zammad.md:105
 msgid "Have a look at the [search guide](guides/search) for more details."
 msgstr ""
 "Weitere Einzelheiten finden Sie in den [Details zur Suche](guides/search)."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:111
+#: src/en/documentation/use/start-using-zammad.md:112
 msgid ""
 "Depending on the [notification settings](/en/documentation/use/manage-"
 "profile#notifications) in your profile, you receive updates for different "
@@ -6424,7 +6493,7 @@ msgstr ""
 "dass keine wichtige Änderung an einem Ticket übersehen wird."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:114
+#: src/en/documentation/use/start-using-zammad.md:115
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
 "corner. If there is a badge with a counter, the counter shows the number of "
@@ -6435,7 +6504,7 @@ msgstr ""
 "zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:117
+#: src/en/documentation/use/start-using-zammad.md:118
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
 "owner) got updated. By clicking on the link in the notification, this ticket "
@@ -6448,13 +6517,13 @@ msgstr ""
 "Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird angezeigt."
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:118
+#: src/en/documentation/use/start-using-zammad.md:119
 #, no-wrap
 msgid "Ticket Basics"
 msgstr "Ticket-Grundlagen"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:124
+#: src/en/documentation/use/start-using-zammad.md:125
 msgid ""
 "If you're completely new to a ticket system and handled your customer "
 "requests with an email client so far, you might think that a ticket system "
@@ -6465,7 +6534,7 @@ msgstr ""
 "System kompliziert ist. Aber das Gegenteil ist der Fall:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid ""
 "All emails are now collected in Zammad (and requests from other channels "
 "might be as well)."
@@ -6474,7 +6543,7 @@ msgstr ""
 "Kanälen möglicherweise auch)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid ""
 "You and your colleagues can see who is working on which customer request "
 "(\"ticket\")."
@@ -6483,7 +6552,7 @@ msgstr ""
 "(\"Ticket\") arbeitet."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid ""
 "The state of each request as well as the history (who did what?) is "
 "transparent."
@@ -6492,12 +6561,12 @@ msgstr ""
 "transparent."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid "There is no duplicate work and nothing gets overlooked."
 msgstr "Es gibt keine doppelte Arbeit und nichts wird übersehen."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid ""
 "You can ask your colleagues directly in the ticket for help in difficult "
 "cases."
@@ -6506,7 +6575,7 @@ msgstr ""
 "bitten."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:131
+#: src/en/documentation/use/start-using-zammad.md:132
 msgid ""
 "With Zammad's intuitive UI, you can focus on what matters: to resolve "
 "customer issues and answer customer questions."
@@ -6516,7 +6585,7 @@ msgstr ""
 "Beantwortung von Kundenfragen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:134
+#: src/en/documentation/use/start-using-zammad.md:135
 msgid ""
 "So, basically you can work with Zammad similar as with your email client. "
 "Except that you have some additional attributes you can set in the _Ticket_ "
@@ -6527,7 +6596,7 @@ msgstr ""
 "Seitenleisten-Tab _Ticket_ einstellen können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**State**: reflects the current state of a ticket (mainly if a customer "
 "request is resolved or not). By default, there are the following states:"
@@ -6537,7 +6606,7 @@ msgstr ""
 "gibt es die folgenden Status:"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
 "a ticket the first time, it automatically switches to _open_."
@@ -6547,7 +6616,7 @@ msgstr ""
 "_offen_."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
 "be done."
@@ -6556,7 +6625,7 @@ msgstr ""
 "gearbeitet werden muss."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
 "don't want to close immediately. This state requires you to enter a date and "
@@ -6568,7 +6637,7 @@ msgstr ""
 "_geschlossen_ wechselt."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
 "to a certain date and time. Requires you to enter a date and time at which "
@@ -6582,7 +6651,7 @@ msgstr ""
 "hatten und sicherstellen möchten, dass dieses Problem nicht vergessen wird."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket. "
 "In case you need to have an information from another colleague, you can "
@@ -6599,7 +6668,7 @@ msgstr ""
 "Benachrichtigungen über Aktualisierungen von Tickets."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:151
+#: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Group**: This ticket attribute is useful for organizations with more than "
 "one team. Depending on the permissions, you might not see the ticket after "
@@ -6611,13 +6680,13 @@ msgstr ""
 "gespeichert haben."
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:152
+#: src/en/documentation/use/start-using-zammad.md:153
 #, no-wrap
 msgid "Ticket Detail View"
 msgstr "Ticket Detailansicht"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:155
+#: src/en/documentation/use/start-using-zammad.md:156
 msgid ""
 "Now that you are aware about some attributes, let's have a look at the "
 "ticket detail view."
@@ -6626,7 +6695,7 @@ msgstr ""
 "auf die Ticket Detailansicht werfen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:162
+#: src/en/documentation/use/start-using-zammad.md:163
 msgid ""
 "The ticket detail view provides all relevant information of a ticket. As its "
 "main part, all articles of the ticket are shown here. The oldest article "
@@ -6652,7 +6721,7 @@ msgstr ""
 "Sie im [Editor-Leitfaden](guides/editor) zusätzliche Informationen."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:165
+#: src/en/documentation/use/start-using-zammad.md:166
 msgid ""
 "Regardless of the customer's article type, you can always add internal "
 "notes. These are useful to add information to the ticket or ask a colleague."
@@ -6662,13 +6731,13 @@ msgstr ""
 "oder einen Kollegen zu fragen."
 
 #. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:166
+#: src/en/documentation/use/start-using-zammad.md:167
 #, no-wrap
 msgid "Updating your Ticket"
 msgstr "Aktualisierung Ihres Tickets"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:172
+#: src/en/documentation/use/start-using-zammad.md:173
 msgid ""
 "After you have done your changes like writing an answer to a customer and "
 "change the state of the ticket, you can see a highlighted `Update` button in "
@@ -6685,13 +6754,13 @@ msgstr ""
 "_geschlossen_ setzen."
 
 #. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:173
+#: src/en/documentation/use/start-using-zammad.md:174
 #, no-wrap
 msgid "Conclusion"
 msgstr "Abschluss"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:178
+#: src/en/documentation/use/start-using-zammad.md:179
 msgid ""
 "This was a brief introduction about how to work with Zammad if you are "
 "completely new to ticket systems. Knowing the basics of Zammad now, you can "
@@ -8639,13 +8708,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:388
-#, fuzzy
-#| msgid ""
-#| "[Redis](https://redis.io/) is required for realtime communication via web "
-#| "socket. Zammad requires Redis 6 or newer.  The installation and "
-#| "configuration is out of scope of this documentation. Please follow the "
-#| "official guides and ensure to set it up in a secure way or consider "
-#| "another installation method or Zammad's hosting services."
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
@@ -8654,12 +8716,13 @@ msgid ""
 "of this documentation. Please follow the official guides and ensure to set "
 "it up in a secure way."
 msgstr ""
-"[Redis](https://redis.io/) wird für die Echtzeitkommunikation per Websocket "
-"benötigt. Zammad benötigt Redis 6 oder eine neuere Version. Die Installation "
-"und Konfiguration ist nicht Gegenstand dieser Dokumentation. Bitte folgen "
-"Sie den offiziellen Anleitungen und stellen Sie sicher, dass die Einrichtung "
-"sicher ist oder ziehen Sie eine andere Installationsmethode oder Zammads "
-"Hosting-Services in Betracht."
+"[Redis](https://redis.io/) wird für die Echtzeitkommunikation über Websocket "
+"benötigt. Zammad benötigt Redis 6 oder neuer. Es wird automatisch "
+"installiert (Paket) oder ist im Stack (Docker Compose) enthalten mit einer "
+"funktionierenden Konfiguration.  Die Installation und Konfiguration ist "
+"allerdings nicht Gegenstand dieser Dokumentation. Bitte folgen Sie den "
+"offiziellen Anleitungen und stellen Sie sicher, dass Sie es auf sichere "
+"Weise einrichten."
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:391
@@ -8667,6 +8730,8 @@ msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
+"Die verfügbaren Umgebungsvariablen für Standard- und Sentinel-Setups sind "
+"auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt."
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:392
@@ -12792,19 +12857,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:46
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-#| "| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-#| "| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad Docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
-#| "| AUTOWIZARD_JSON                                        | ::d::   | unset                               | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
-#| "| ZAMMAD_HTTP_TYPE                                       |         | unset                               | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
-#| "| ZAMMAD_FQDN                                            |         | unset                               | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
-#| "| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in Docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
-#| "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
-#| "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
-#| "| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-#| "| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. Please note that this method currently does not allow authentication. The package installation fallback is `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                         |\n"
+#, no-wrap
 msgid ""
 "| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
 "| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -12828,7 +12881,7 @@ msgstr ""
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |              | nicht gesetzt                                                      | Wieviele AI-Worker-Instanzen sollen gleichzeitig laufen. AI-Workers wickeln Zammads KI-Anfragen ab und rufen die Antworten vom konfigurierten KI-Anbieter ab. Standardmäßig läuft ein Worker. Nutzer mit selbst gehosteter KI sollten vorsichtig mit einer Erhöung sein, der KI-Dienst kann zusammenbrechen. Für Nutzer einer KI-Cloud mit einer großen Zammad-Instanz kann eine Erhöung hingegeben Sinn machen um eine Art Parallelisierung zu erreichen. Die maximale Anzahl an Workern beträgt `16`.                                                                                                                                    |\n"
 "| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |              | `5`                                                                | Wieviele Threads sollen von **einem** KI-Worker bearbeitet werden (sofern Sie mehr als einen Worker haben, ist der Wert mit der Anzahl an Workern zu multiplizieren. Dies kann die KI-Verarbeitung beschleunigen. Seien Sie sich aber bewusst, dass ein Ruby-Worker ohnehin nur auf einem Core laufen kann. Die maximale Anzahl an Threads ist `16`.                                                                                                                                                                                                                                                                                       |\n"
 "| MEMCACHE_SERVERS                                       |              | - Docker: `zammad-memcached:11211`<br> - Paket: nicht gesetzt      | Legen Sie Ihre eigene Memcached-Instanz fest, sofern Sie eine haben. Der Fallback bei Paket-Installationen ist `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
-"| REDIS_URL                                              |              | - Docker: `redis://zammad-redis:6379`<br> - Paket: nicht gesetzt   | Legen Sie Ihre eigene Redis-Instanz fest, sofern Sie eine haben. Bitte beachten Sie, dass diese Methode aktuell keine Authentifizierung erlaubt. Der Fallback bei Paket-Installationen ist `/opt/zammad/tmp/websocket_*`.                                                                                                                                                                                                                                                                                                                                                                                                                  |\n"
+"| REDIS_URL                                              |              | - Docker: `redis://zammad-redis:6379`<br> - Paket: nicht gesetzt   | Legen Sie Ihre eigene Redis-Instanz fest, sofern Sie eine haben. Der Fallback bei Paket-Installationen ist `/opt/zammad/tmp/websocket_*`. Siehe [Redis-Variablen](/de/reference/redis) für eine Sentinel-Einrichtung.                                                                                                                                                                                                                                                                                                                                                                                                                  |\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:47
@@ -18209,10 +18262,9 @@ msgstr ""
 
 #. type: Title #
 #: src/en/reference/redis.md:1 src/en/reference/redis.md:6
-#, fuzzy, no-wrap
-#| msgid "Environment Variables"
+#, no-wrap
 msgid "Redis Variables"
-msgstr "Umgebungsvariablen"
+msgstr "Redis Variablen"
 
 #. type: Plain text
 #: src/en/reference/redis.md:11
@@ -18223,12 +18275,18 @@ msgid ""
 "work out of the box and should not require adjustments unless your setup "
 "differs or you want to explicitly make adjustments."
 msgstr ""
+"Zammad benötigt Redis, um zu funktionieren. Während der Paketinstallation "
+"wird es automatisch installiert, sofern nicht bereits eine Redis-"
+"Installation auf dem Host vorhanden ist. Im Docker Compose Stack ist ein "
+"Redis Service enthalten. Beide Szenarien funktionieren standardmäßig und "
+"sollten keine Anpassungen erfordern, es sei denn, Ihr Setup weicht davon ab "
+"oder Sie möchten explizit Anpassungen vornehmen."
 
 #. type: Title ##
 #: src/en/reference/redis.md:12
 #, no-wrap
 msgid "Standard Setup"
-msgstr ""
+msgstr "Standard Setup"
 
 #. type: Plain text
 #: src/en/reference/redis.md:16
@@ -18237,22 +18295,25 @@ msgid ""
 "``REDIS_URL``. This variable can include IP/URL, a port, a username and "
 "password. Examples:"
 msgstr ""
+"Für eine Redis-Standardinstallation können Sie eine Variable angeben: "
+"`REDIS_URL`. Diese Variable kann IP/URL, einen Port, einen Benutzernamen und "
+"ein Passwort enthalten. Beispiele:"
 
 #. type: Bullet: '- '
 #: src/en/reference/redis.md:19
 msgid "`redis://redis.example.com:1234`"
-msgstr ""
+msgstr "`redis://redis.example.com:1234`"
 
 #. type: Bullet: '- '
 #: src/en/reference/redis.md:19
 msgid "`redis://user:password@redis.example.com`"
-msgstr ""
+msgstr "`redis://user:password@redis.example.com`"
 
 #. type: Title ##
 #: src/en/reference/redis.md:20
 #, no-wrap
 msgid "Sentinel Setup"
-msgstr ""
+msgstr "Sentinel Setup"
 
 #. type: Plain text
 #: src/en/reference/redis.md:24
@@ -18261,20 +18322,13 @@ msgid ""
 "to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
 "variable is mandatory, the others are optional."
 msgstr ""
+"Für die Variablen in der Tabelle sind keine Standardwerte festgelegt. Falls "
+"Sie Zammad mit einem Redis Sentinel Cluster verbinden wollen, ist nur die "
+"Variable `REDIS_SENTINELS` erforderlich, die anderen sind optional."
 
 #. type: Plain text
-#: src/en/reference/redis.md:33
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
-#| "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
-#| "| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
-#| "| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
-#| "| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
-#| "| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
-#| "| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
-#| "| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
-#| "| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
+#: src/en/reference/redis.md:32
+#, no-wrap
 msgid ""
 " Variable                    | Description                                                                                                                                      |\n"
 "-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n"
@@ -18285,15 +18339,14 @@ msgid ""
 " `REDIS_USERNAME`            | Username for Redis                                                                                                                               |\n"
 " `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |\n"
 msgstr ""
-"| Variable             | Beschränkung | Standardwert        | Beschreibung                                                                                                                                      |\n"
-"| -------------------- | ------------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| POSTGRESQL_HOST      | ::d::        | `zammad-postgresql` | Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.                                                     |\n"
-"| POSTGRESQL_PORT      | ::d::        | `5432`              | Stellen Sie den Port Ihres PostgreSQL-Servers ein.                                                                                                |\n"
-"| POSTGRESQL_USER      | ::d::        | `zammad`            | Der Datenbank Benutzer für Zammad.                                                                                                                |\n"
-"| POSTGRESQL_PASS      | ::d::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
-"| POSTGRESQL_DB        | ::d::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
-"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche PostgreSQL-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
-"| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
+" Variable | Beschreibung |\n"
+"-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n"
+" `REDIS_SENTINELS` | Erforderlich bei Verwendung eines Sentinel-Setups; IPs/URLs durch Komma getrennt; optionaler Port. Beispiele: `sentinel1.example.com:26380`, `sentinel2.example.com` |\n"
+" `REDIS_SENTINEL_NAME` | Name des Sentinel-Setups; Fallback auf `mymaster`, wenn nicht angegeben |\n"
+" `REDIS_SENTINEL_USERNAME` | Benutzername für Sentinel |\n"
+" `REDIS_SENTINEL_PASSWORD` | Passwort für Sentinel |\n"
+" `REDIS_USERNAME` | Benutzername für Redis |\n"
+" `REDIS_PASSWORD` | Passwort für Redis |\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:12
@@ -24119,94 +24172,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24429,6 +24394,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+"Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von ``GET`` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -24969,6 +25022,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -36511,9 +36576,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "---\n"
 #~ msgstr "---\n"
-
-#~ msgid "layout: home"
-#~ msgstr "layout: home"
 
 #, no-wrap
 #~ msgid ""

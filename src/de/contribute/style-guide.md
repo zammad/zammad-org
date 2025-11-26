@@ -355,15 +355,16 @@ features:
 Um sie innerhalb des Inhaltsbereichs zu platzieren, fügen Sie einfach den Verweis `<VPDocFeatures />` an der Stelle ein, an der sie dargestellt
 werden sollen.
 
-#### Theme Specific Images
+#### Von Theme abhängige Bilder
 
-To target specific image assets to a single theme, you can assign
-`.dark-only` or `.light-only` CSS class to the corresponding image:
+Um bestimmte Bilder auf ein einzelnes Theme anzuwenden, können Sie dem
+entsprechenden Bild die CSS-Klasse `.dark-only` oder `.light-only` zuweisen:
 
 ```md
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only}
-![Light only image](/assets/logo-flat-light.svg){.light-only}
+![Bild nur für dunkles Theme](/assets/logo-flat-dark.svg){.dark-only}
+![Bild nur für helles Theme](/assets/logo-flat-light.svg){.light-only}
 ```
 
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light
-only image](/assets/logo-flat-light.svg){.light-only width=240}
+![Bild nur für dunkles Theme](/assets/logo-flat-dark.svg){.dark-only
+width=240} ![Bild nur für helles
+Theme](/assets/logo-flat-light.svg){.light-only width=240}

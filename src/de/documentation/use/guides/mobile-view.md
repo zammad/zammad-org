@@ -25,29 +25,29 @@ Mobilansicht aussieht.
 
 ::: tabs
 
-=== Login & Home
+=== Login & Start
 
-| Login | Home |
+| Login | Start |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows login screen of Zammad's mobile view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/mobile-view/home.png) |
+| ![Screenshot zeigt die Login-Ansicht von Zammads Mobilansicht](/screenshots/mobile-view/login.png) | ![Screenshot zeigt den Startbildschirm von Zammads Mobilansicht](/screenshots/mobile-view/home.png) |
 
-=== Search & Overview
+=== Suche & Übersichten
 
-| Search | Overview |
+| Suche | Übersichten |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows search screen of Zammad's mobile view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |
+| ![Screenshot zeigt Suchansicht von Zammads Mobilansicht](/screenshots/mobile-view/search.png) | ![Screenshot zeigt Übersichten in Zammads Mobilansicht](/screenshots/mobile-view/overview.png) |
 
-=== Ticket Details
+=== Ticket-Details
 
-| Articles | Details |
+| Artikel | Details |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/mobile-view/ticket-details.png) |
+| ![Screenshot zeigt Ticketansicht in Zammads Mobilansicht](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot zeigt Ticket-Details in Zammad Mobilansicht](/screenshots/mobile-view/ticket-details.png) |
 
-=== Notifications & Account
+=== Benachrichtigungen & Konto
 
-| Notifications | Account |
+| Benachrichtigungen | Konto |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/mobile-view/profile.png) |
+| ![Screenshot zeigt Benachrichtigungen in Zammads Mobilansicht](/screenshots/mobile-view/notifications.png) | ![Screenshot zeigt Kontoeinstellungen in Zammads Mobilansicht](/screenshots/mobile-view/profile.png) |
 
 :::
 
