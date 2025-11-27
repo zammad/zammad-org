@@ -15,7 +15,7 @@ unterstützt:
 | Distribution  | Version             |
 | ------------- | :-----------------  |
 | CentOS/RHEL   | 8 & 9               |
-| Debian        | 11 & 12             |
+| Debian        | 11, 12 & 13         |
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 22.04, 24.04        |
 
@@ -195,7 +195,6 @@ Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufüg
 :::
 
 ```sh
-
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
 Suites: 24.04
@@ -205,39 +204,48 @@ sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
 ```
 
 === Debian
-Install repository key:
+::: info
+Starting with Debian 13, the packages are hosted under a different URL and the signing key is saved to a different
+directory.
+:::
+
+Install Repository Key (Debian 11 & 12):
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
 gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
-Debian 11
+Install Repository Key (Debian 13):
+
+```sh
+curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
+gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null
+```
+
+Add Repository (Debian 11)
 
 ```sh
 echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
 sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Debian 12
-
-::: info
-Beginnend mit Debian 12 enthält diese Dokumentation den Befehl zum Hinzufügen des Repository im
-[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
-:::
+Add Repository (Debian 12)
 
 ```sh
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
+sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+```
 
-printf "Types: deb
-URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/debian
-Suites: 12
-Components: main
-Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
-sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
+Add Repository (Debian 13)
+
+```sh
+curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
 === OpenSUSE/SLES
-Repository Key hinzufügen:
+Install repository key:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -251,7 +259,7 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Repository Key hinzufügen:
+Install repository key:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
