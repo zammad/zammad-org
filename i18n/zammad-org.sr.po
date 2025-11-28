@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-24 11:29+0100\n"
+"POT-Creation-Date: 2025-11-27 14:01+0100\n"
 "PO-Revision-Date: 2025-10-14 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -7048,7 +7048,7 @@ msgid ""
 "| Distribution  | Version             |\n"
 "| ------------- | :-----------------  |\n"
 "| CentOS/RHEL   | 8 & 9               |\n"
-"| Debian        | 11 & 12             |\n"
+"| Debian        | 11, 12 & 13         |\n"
 "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
 "| Ubuntu        | 22.04, 24.04        |\n"
 msgstr ""
@@ -7424,45 +7424,142 @@ msgid ""
 "```\n"
 "\n"
 "=== Debian\n"
-"Install repository key:\n"
-"\n"
-"```sh\n"
-"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-"```\n"
-"\n"
-"Debian 11\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-"```\n"
-"\n"
-"Debian 12\n"
-"\n"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros|info)
 #: src/en/get-started/installation/package.md:170
 #, no-wrap
 msgid ""
-"Starting with Debian 12, we provide the command to add the repository in the\n"
-"[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
+"Starting with Debian 13, the packages are hosted under a different URL and the signing key is saved to a different\n"
+"directory.\n"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:170
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 20.04\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
+#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 22.04\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 24.04\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
+#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#| "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Debian 11\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Debian 12\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+#| "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#| "```\n"
+#| "\n"
+#| "OpenSUSE 15.x / SLES15\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+#| "```\n"
+#| "\n"
+#| "===CentOS/RHEL\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#| "```\n"
+#| "\n"
+#| "CentOS 8 / RHEL 8\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
+#| "```\n"
+#| "\n"
+#| "CentOS 9 / RHEL 9\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
-"```sh\n"
+"Install Repository Key (Debian 11 & 12):\n"
 "\n"
-"printf \"Types: deb\n"
-"URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/debian\n"
-"Suites: 12\n"
-"Components: main\n"
-"Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+"```sh\n"
+"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+"```\n"
+"\n"
+"Install Repository Key (Debian 13):\n"
+"\n"
+"```sh\n"
+"curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \\\n"
+"gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null\n"
+"```\n"
+"\n"
+"Add Repository (Debian 11)\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"Add Repository (Debian 12)\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"Add Repository (Debian 13)\n"
+"\n"
+"```sh\n"
+"curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \\\n"
+"-o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
@@ -7501,15 +7598,102 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu\n"
+"Инсталирајте кључ репозиторија:\n"
+"\n"
+"```sh\n"
+"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+"```\n"
+"\n"
+"Ubuntu 20.04\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
+"   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"Ubuntu 22.04\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+"   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"Ubuntu 24.04\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
+"   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"Инсталирајте кључ репозиторија:\n"
+"\n"
+"```sh\n"
+"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+"   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
+"```\n"
+"\n"
+"Debian 11\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+"   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"Debian 12\n"
+"\n"
+"```sh\n"
+"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+"   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"Инсталирајте кључ репозиторија:\n"
+"\n"
+"```sh\n"
+"sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+"```\n"
+"\n"
+"OpenSUSE 15.x / SLES15\n"
+"\n"
+"```sh\n"
+"sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
+"https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+"```\n"
+"\n"
+"===CentOS/RHEL\n"
+"Инсталирајте кључ репозиторија:\n"
+"\n"
+"```sh\n"
+"sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+"```\n"
+"\n"
+"CentOS 8 / RHEL 8\n"
+"\n"
+"```sh\n"
+"sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+"https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
+"```\n"
+"\n"
+"CentOS 9 / RHEL 9\n"
+"\n"
+"```sh\n"
+"sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+"https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+"```\n"
+"\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:272
+#: src/en/get-started/installation/package.md:281
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Инсталација Zammad-а"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:274
+#: src/en/get-started/installation/package.md:283
 #, no-wrap
 msgid ""
 "\n"
@@ -7601,13 +7785,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:329
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Управљање Zammad сервисима"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:323
+#: src/en/get-started/installation/package.md:332
 #, fuzzy
 #| msgid ""
 #| "Zammad uses three services. They can be (re)started & stopped with the "
@@ -7620,12 +7804,12 @@ msgstr ""
 "основним `zammad` процесом:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:328
+#: src/en/get-started/installation/package.md:337
 msgid "zammad: includes the services below"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:328
+#: src/en/get-started/installation/package.md:337
 #, fuzzy
 #| msgid "Only internal puma server (relevant for displaying the web app):"
 msgid ""
@@ -7633,7 +7817,7 @@ msgid ""
 msgstr "Само интерни puma сервис (одговоран за приказ веб апликације):"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:328
+#: src/en/get-started/installation/package.md:337
 #, fuzzy
 #| msgid ""
 #| "Only background worker - relevant for all delayed- and background jobs:"
@@ -7645,26 +7829,26 @@ msgstr ""
 "позадини:"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:328
+#: src/en/get-started/installation/package.md:337
 #, fuzzy
 #| msgid "Only websocket server for session related information:"
 msgid "**zammad-websocket**: websocket server for session related information"
 msgstr "Само websocker сервис за информације о сесији:"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:339
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:341
 msgid "Example to start Zammad with all sub-services:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/package.md:333
+#: src/en/get-started/installation/package.md:342
 #: src/en/get-started/update.md:170 src/en/tutorials/migrate-host.md:169
 #, fuzzy, no-wrap
 #| msgid "systemctl start zammad\n"
@@ -7672,14 +7856,14 @@ msgid "sudo systemctl start zammad\n"
 msgstr "systemctl start zammad\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:338
+#: src/en/get-started/installation/package.md:347
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:348
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:150
 #, no-wrap
@@ -7687,7 +7871,7 @@ msgid "Next Steps"
 msgstr "Следећи кораци"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:344
+#: src/en/get-started/installation/package.md:353
 #, fuzzy
 #| msgid ""
 #| "Connect Zammad with Elasticsearch ([basic guide](/en/tutorials/connect-"
@@ -7700,7 +7884,7 @@ msgstr ""
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:344
+#: src/en/get-started/installation/package.md:353
 #, fuzzy
 #| msgid ""
 #| "Adjust your SELinux rules and firewall ([basic guide](/en/tutorials/"
@@ -7712,7 +7896,7 @@ msgstr ""
 "firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:344
+#: src/en/get-started/installation/package.md:353
 #, fuzzy
 #| msgid ""
 #| "Configure the Webserver ([basic guide](/en/tutorials/webserver-config))"
@@ -7720,13 +7904,13 @@ msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr "Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:354
 #, no-wrap
 msgid "Dependencies"
 msgstr "Предуслови"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:360
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -7739,24 +7923,24 @@ msgstr ""
 "инсталиран."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:366
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:366
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:366
 #: src/en/reference/environment-variables.md:60
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:366
 #: src/en/reference/environment-variables.md:72
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -7764,20 +7948,20 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:357
-#: src/en/get-started/installation/package.md:382
+#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:391
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:367
 #, no-wrap
 msgid "Database Server"
 msgstr "Сервис базе података"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:363
+#: src/en/get-started/installation/package.md:372
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
@@ -7786,7 +7970,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:373
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -7800,28 +7984,28 @@ msgstr ""
 "подржан и може довести до грешака приликом миграције базе података.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:380
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Прокси приступа"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:374
+#: src/en/get-started/installation/package.md:383
 msgid "The following reverse proxies are supported:"
 msgstr "Следеће опције проксија приступа су подржане:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:386
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:386
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:381
+#: src/en/get-started/installation/package.md:390
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -7830,7 +8014,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:397
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
@@ -7841,20 +8025,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:400
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:392
+#: src/en/get-started/installation/package.md:401
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:408
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -7864,18 +8048,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:410
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:412
 #, fuzzy
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Први кораци са Zammad-ом"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:413
 #, no-wrap
 msgid ""
 "\n"
@@ -7894,7 +8078,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:423
+#: src/en/get-started/installation/package.md:432
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -7902,13 +8086,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:424
+#: src/en/get-started/installation/package.md:433
 #, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:437
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -7917,7 +8101,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:432
+#: src/en/get-started/installation/package.md:441
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -7927,7 +8111,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:444
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -7935,7 +8119,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:438
+#: src/en/get-started/installation/package.md:447
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -7943,13 +8127,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:448
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:444
+#: src/en/get-started/installation/package.md:453
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -26670,184 +26854,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Уколико још увек користите MySQL/MariaDB, требало би да мигрирате на "
 #~ "PosgreSQL. Подршка за MySQL/MariaDB ће бити избачена почевши са Zammad 7."
-
-#, no-wrap
-#~ msgid ""
-#~ "\n"
-#~ "=== Ubuntu\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 20.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 22.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 24.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== Debian\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 11\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 12\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== OpenSUSE/SLES\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "OpenSUSE 15.x / SLES15\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "===CentOS/RHEL\n"
-#~ "Install repository key:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 8 / RHEL 8\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 9 / RHEL 9\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "=== Ubuntu\n"
-#~ "Инсталирајте кључ репозиторија:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 20.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 22.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Ubuntu 24.04\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== Debian\n"
-#~ "Инсталирајте кључ репозиторија:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#~ "   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 11\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "Debian 12\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#~ "   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#~ "```\n"
-#~ "\n"
-#~ "=== OpenSUSE/SLES\n"
-#~ "Инсталирајте кључ репозиторија:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "OpenSUSE 15.x / SLES15\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "===CentOS/RHEL\n"
-#~ "Инсталирајте кључ репозиторија:\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 8 / RHEL 8\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#~ "```\n"
-#~ "\n"
-#~ "CentOS 9 / RHEL 9\n"
-#~ "\n"
-#~ "```sh\n"
-#~ "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#~ "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#~ "```\n"
-#~ "\n"
 
 #, fuzzy
 #~ msgid ""

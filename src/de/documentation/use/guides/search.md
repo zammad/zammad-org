@@ -25,8 +25,8 @@ indiziert](/de/reference/es-indexed-attributes) wurden , wie z.B.:
 - Text in Dateianhängen
 - Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-When the search field gets activated, you can see the ticket which got
-recently closed from your taskbar as well as your recent search queries.
+Wenn das Suchfeld aktiv ist können Sie ein kürzlich in der Taskleiste
+geschlossenes Ticket sehen sowie Ihre letzten Suchanfragen.
 
 Nachdem Sie einen Suchbegriff eingegeben haben, sehen Sie sofort eine
 Vorschau der Suchergebnisse. Diese Ergebnisse sind nach Typ getrennt, damit
