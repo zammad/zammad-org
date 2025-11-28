@@ -174,7 +174,8 @@ Install repository key:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \
+&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
 ```
 
 Ubuntu 22.04
@@ -210,14 +211,16 @@ Install Repository Key (Debian 11 & 12):
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \
+&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
 ```
 
 Install Repository Key (Debian 13):
 
 ```sh
 curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
-gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null
+gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null \
+&& sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
 Add Repository (Debian 11)

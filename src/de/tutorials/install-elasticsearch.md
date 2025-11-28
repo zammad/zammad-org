@@ -22,16 +22,18 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
-Notwendige Tools installieren:
+Install required tools:
 
 ```sh
 sudo apt-get install apt-transport-https
 ```
 
-Repository-Schlüssel hinzufügen:
+Add repo key:
 
 ``` sh
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
+gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
+&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
 === OpenSUSE/SLES

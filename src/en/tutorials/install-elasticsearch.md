@@ -29,7 +29,9 @@ sudo apt-get install apt-transport-https
 Add repo key:
 
 ``` sh
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
+gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
+&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
 === OpenSUSE/SLES
