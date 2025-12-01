@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-28 14:54+0100\n"
+"POT-Creation-Date: 2025-12-01 10:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10492,16 +10492,22 @@ msgid ""
 "Don't forget to stop Zammad before trying to drop the database!\n"
 msgstr ""
 
-#. type: Fenced code block (sh)
-#: src/en/reference/console.md:1002
-#, no-wrap
-msgid "rake db:drop\n"
+#. type: Plain text
+#: src/en/reference/console.md:1003
+#, markdown-text
+msgid "Truncate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1006
+#: src/en/reference/console.md:1004
 #, no-wrap
-msgid "rake db:create\n"
+msgid "rake zammad:db:truncate\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:1009
+#, markdown-text
+msgid "Migrate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
@@ -10510,10 +10516,42 @@ msgstr ""
 msgid "rake db:migrate\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/reference/console.md:1015
+#, markdown-text
+msgid "Load the seed data:"
+msgstr ""
+
 #. type: Fenced code block (sh)
-#: src/en/reference/console.md:1014
+#: src/en/reference/console.md:1016
 #, no-wrap
 msgid "rake db:seed\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/console.md:1021
+#, markdown-text
+msgid "Clear cache and reload the settings:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/console.md:1022
+#, no-wrap
+msgid "rake zammad:db:rebuild\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/console.md:1026
+#, no-wrap
+msgid ""
+"\n"
+"You can also use the `zammad:db:reset` command to reset your instance. This "
+"task\n"
+"will truncate the database, run the migrations, seed the database, clear "
+"the\n"
+"cache and reload the settings. However, it will not ask for your "
+"confirmation\n"
+"between each step, so you should use it with caution.\n"
 msgstr ""
 
 #. type: Title #

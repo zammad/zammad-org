@@ -1001,18 +1001,34 @@ development / testing only.
 Don't forget to stop Zammad before trying to drop the database!
 :::
 
-```sh
-rake db:drop
-```
+Truncate the database:
 
 ```sh
-rake db:create
+rake zammad:db:truncate
 ```
+
+Migrate the database:
 
 ```sh
 rake db:migrate
 ```
 
+Load the seed data:
+
 ```sh
 rake db:seed
 ```
+
+Clear cache and reload the settings:
+
+```sh
+rake zammad:db:rebuild
+```
+
+::: tip
+
+You can also use the `zammad:db:reset` command to reset your instance. This task
+will truncate the database, run the migrations, seed the database, clear the
+cache and reload the settings. However, it will not ask for your confirmation
+between each step, so you should use it with caution.
+:::
