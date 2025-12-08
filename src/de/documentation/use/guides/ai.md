@@ -84,13 +84,15 @@ Administrator welche hinzugefügt hat.
 
 ## KI-Agenten
 
-AI agents can be configured to work on certain types of routine tasks. In
-general, this feature operates behind the scenes but if configured, you may
-notice it in some situations (see examples below). In case your admin
-created a macro with an AI agent action, you can even run it manually. Ask
-your admin for details and have a look at the [macro
-description](/en/documentation/use/advanced-features#macros) in the advanced
-features page.
+KI-Agenten können so konfiguriert werden, dass sie bestimmte Arten von
+Routineaufgaben übernehmen. Im Allgemeinen arbeitet diese Funktion im
+Hintergrund, aber wenn sie konfiguriert ist, können Sie sie in einigen
+Situationen bemerken (siehe Beispiele unten). Falls Ihr Administrator ein
+Makro mit einer KI-Agent-Aktion erstellt hat, können Sie es auch manuell
+ausführen. Fragen Sie Ihren Administrator nach Einzelheiten und werfen Sie
+einen Blick auf die [Makro
+Erklärung](/de/documentation/use/advanced-features#makros) auf der Seite mit
+den erweiterten Funktionen.
 
 ### Ticket-Historie
 

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-01 10:54+0100\n"
+"POT-Creation-Date: 2025-12-08 10:06+0100\n"
 "PO-Revision-Date: 2025-10-14 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -2112,13 +2112,22 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:114
+#, fuzzy
+#| msgid ""
+#| "If you have many steps you do over and over again, you should use a macro "
+#| "for that. In such a macro, your admin can pre-define different ticket "
+#| "actions you can apply with just a click. As an example, Zammad ships a "
+#| "\"Close & Tag as Spam\" macro by default. If applied, the user who "
+#| "executes the macro is assigned as owner, a tag `spam` is added and the "
+#| "ticket is closed."
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
 "actions you can apply with just a click. As an example, Zammad ships a "
 "\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
 "the macro is assigned as owner, a tag `spam` is added and the ticket is "
-"closed."
+"closed. It is even possible to run an [AI agent](/en/documentation/use/"
+"guides/ai) within a macro on demand."
 msgstr ""
 "Уколико стално понављате велики број корака, размислите о употреби макроа за "
 "њих. У таквом макроу, ваш администратор може да дефинише одређене радње на "
@@ -2129,10 +2138,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:119
+#, fuzzy
+#| msgid ""
+#| "If your admin already created a macro, you can execute it in the ticket "
+#| "detail view by clicking the three dots button ::a:: in the right corner "
+#| "of the footer bar and select the macro you want to execute."
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
-"detail view by clicking the three dots button ::a:: in the right corner of "
-"the footer bar and select the macro you want to execute."
+"detail view by clicking the `^` section of the `Update` button in the right "
+"corner of the footer bar (see screenshot above) and select the macro you "
+"want to execute."
 msgstr ""
 "Уколико је ваш администратор већ додао макро, можете га извршити у детаљном "
 "приказу тикета кликом на дугме са три тачкице ::a:: у доњем десном углу и "
@@ -2435,7 +2450,7 @@ msgstr "Примена нацрта преиначиће ваше неснимљ
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:216
-#: src/en/documentation/use/guides/ai.md:84
+#: src/en/documentation/use/guides/ai.md:83
 #, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr "Откривање истовремене обраде"
@@ -3713,33 +3728,24 @@ msgid "AI Agents"
 msgstr "AI агенти"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:73
 msgid ""
-"This is no feature which allows any agent interaction. However, if the "
-"feature is configured, you may notice it at some points. This is why you can "
-"find an explanation here."
+"AI agents can be configured to work on certain types of routine tasks. In "
+"general, this feature operates behind the scenes but if configured, you may "
+"notice it in some situations (see examples below). In case your admin "
+"created a macro with an AI agent action, you can even run it manually. Ask "
+"your admin for details and have a look at the [macro description](/en/"
+"documentation/use/advanced-features#macros) in the advanced features page."
 msgstr ""
-"Ова функција не омогућава интеракцију оператера. Међутим, уколико је "
-"подесите, можете је приметити у акцији у неком тренутку. Из тог разлога наћи "
-"ћете објашњење овде."
-
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:74
-msgid ""
-"AI agents can be configured to work on certain types of routine tasks. You "
-"may notice the AI agents at different locations:"
-msgstr ""
-"AI агенти могу бити подешени да раде на одређеним врстама рутинских "
-"задатака. Можете приметити AI агенте на различитим местима:"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:75
+#: src/en/documentation/use/guides/ai.md:74
 #, fuzzy, no-wrap
 msgid "Ticket History"
 msgstr "Историјат тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:79
+#: src/en/documentation/use/guides/ai.md:78
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -3750,12 +3756,12 @@ msgstr ""
 "агента, обавестите о томе свог Zammad администратора."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:80
 msgid "Example of a history entry of an AI agent:"
 msgstr "Пример евиденције историјата AI агента:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:83
+#: src/en/documentation/use/guides/ai.md:82
 #, fuzzy
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-"
@@ -3765,7 +3771,7 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:89
+#: src/en/documentation/use/guides/ai.md:88
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
@@ -3778,12 +3784,12 @@ msgstr ""
 "сачекајте тренутак или пређите на други тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:90
 msgid "Avatar of AI agent:"
 msgstr "Сличица AI агента:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:92
 #, fuzzy
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
@@ -3792,13 +3798,13 @@ msgstr ""
 "screenshot-full-page.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:93
 #, fuzzy, no-wrap
 msgid "Overview Indicator"
 msgstr "Прегледи"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:97
+#: src/en/documentation/use/guides/ai.md:96
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
@@ -3807,7 +3813,7 @@ msgstr ""
 "стања ће бити приказан у плаво-љубичастом градијенту:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:98
+#: src/en/documentation/use/guides/ai.md:97
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
@@ -26729,6 +26735,22 @@ msgid ""
 "Reload your Apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""
+
+#~ msgid ""
+#~ "This is no feature which allows any agent interaction. However, if the "
+#~ "feature is configured, you may notice it at some points. This is why you "
+#~ "can find an explanation here."
+#~ msgstr ""
+#~ "Ова функција не омогућава интеракцију оператера. Међутим, уколико је "
+#~ "подесите, можете је приметити у акцији у неком тренутку. Из тог разлога "
+#~ "наћи ћете објашњење овде."
+
+#~ msgid ""
+#~ "AI agents can be configured to work on certain types of routine tasks. "
+#~ "You may notice the AI agents at different locations:"
+#~ msgstr ""
+#~ "AI агенти могу бити подешени да раде на одређеним врстама рутинских "
+#~ "задатака. Можете приметити AI агенте на различитим местима:"
 
 #, fuzzy, no-wrap
 #~ msgid "Add Certificate to Zammad <Badge type=\"warning\" text=\">= ES8\"/>"
