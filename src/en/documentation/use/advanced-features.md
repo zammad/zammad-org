@@ -110,12 +110,12 @@ you who has subscribed to the ticket and is therefore notified of updates.
 If you have many steps you do over and over again, you should use a macro for that. In such a macro, your admin can
 pre-define different ticket actions you can apply with just a click. As an example, Zammad ships a "Close & Tag as Spam"
 macro by default. If applied, the user who executes the macro is assigned as owner, a tag `spam` is added and the
-ticket is closed.
+ticket is closed. It is even possible to run an [AI agent](/en/documentation/use/guides/ai) within a macro on demand.
 
 **How?**
 
-If your admin already created a macro, you can execute it in the ticket detail view by clicking the three dots button
-::a:: in the right corner of the footer bar and select the macro you want to execute.
+If your admin already created a macro, you can execute it in the ticket detail view by clicking the `^` section of the
+`Update` button in the right corner of the footer bar (see screenshot above) and select the macro you want to execute.
 
 ::: warning
 The macro gets executed immediately and without an additional confirmation!

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-01 10:54+0100\n"
+"POT-Creation-Date: 2025-12-08 10:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1924,7 +1924,8 @@ msgid ""
 "actions you can apply with just a click. As an example, Zammad ships a "
 "\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
 "the macro is assigned as owner, a tag `spam` is added and the ticket is "
-"closed."
+"closed. It is even possible to run an [AI "
+"agent](/en/documentation/use/guides/ai) within a macro on demand."
 msgstr ""
 
 #. type: Plain text
@@ -1932,8 +1933,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
-"detail view by clicking the three dots button ::a:: in the right corner of "
-"the footer bar and select the macro you want to execute."
+"detail view by clicking the `^` section of the `Update` button in the right "
+"corner of the footer bar (see screenshot above) and select the macro you "
+"want to execute."
 msgstr ""
 
 #. type: Fenced div block (warning)
@@ -2209,7 +2211,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:216
-#: src/en/documentation/use/guides/ai.md:84
+#: src/en/documentation/use/guides/ai.md:83
 #, markdown-text, no-wrap
 msgid "Simultaneous Work Detection"
 msgstr ""
@@ -3396,30 +3398,26 @@ msgid "AI Agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:73
 #, markdown-text
 msgid ""
-"This is no feature which allows any agent interaction. However, if the "
-"feature is configured, you may notice it at some points. This is why you can "
-"find an explanation here."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/ai.md:74
-#, markdown-text
-msgid ""
-"AI agents can be configured to work on certain types of routine tasks. You "
-"may notice the AI agents at different locations:"
+"AI agents can be configured to work on certain types of routine tasks. In "
+"general, this feature operates behind the scenes but if configured, you may "
+"notice it in some situations (see examples below). In case your admin "
+"created a macro with an AI agent action, you can even run it manually. Ask "
+"your admin for details and have a look at the [macro "
+"description](/en/documentation/use/advanced-features#macros) in the advanced "
+"features page."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:75
+#: src/en/documentation/use/guides/ai.md:74
 #, markdown-text, no-wrap
 msgid "Ticket History"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:79
+#: src/en/documentation/use/guides/ai.md:78
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -3428,13 +3426,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:80
 #, markdown-text
 msgid "Example of a history entry of an AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:83
+#: src/en/documentation/use/guides/ai.md:82
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -3442,7 +3440,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:89
+#: src/en/documentation/use/guides/ai.md:88
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -3452,25 +3450,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:90
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:92
 #, markdown-text
 msgid "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:93
 #, markdown-text, no-wrap
 msgid "Overview Indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:97
+#: src/en/documentation/use/guides/ai.md:96
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -3478,7 +3476,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:98
+#: src/en/documentation/use/guides/ai.md:97
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "

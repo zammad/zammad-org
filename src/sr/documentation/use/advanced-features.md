@@ -130,18 +130,20 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-Уколико стално понављате велики број корака, размислите о употреби макроа за
-њих. У таквом макроу, ваш администратор може да дефинише одређене радње на
-тикетима које можете покренути једним кликом. На пример, Zammad
-подразумевано долази са макроом „Затвори и означи као непожељно”. По
-активацији, корисник који изврши макро ће постати власник тикета, ознака
-`spam` ће бити додата и тикет затворен.
+If you have many steps you do over and over again, you should use a macro
+for that. In such a macro, your admin can pre-define different ticket
+actions you can apply with just a click. As an example, Zammad ships a
+"Close & Tag as Spam" macro by default. If applied, the user who executes
+the macro is assigned as owner, a tag `spam` is added and the ticket is
+closed. It is even possible to run an [AI
+agent](/en/documentation/use/guides/ai) within a macro on demand.
 
 **Како?**
 
-Уколико је ваш администратор већ додао макро, можете га извршити у детаљном
-приказу тикета кликом на дугме са три тачкице ::a:: у доњем десном углу и
-одабиром макроа из листе.
+If your admin already created a macro, you can execute it in the ticket
+detail view by clicking the `^` section of the `Update` button in the right
+corner of the footer bar (see screenshot above) and select the macro you
+want to execute.
 
 ::: warning
 Макро ће бити моментално извршен без додатне потврде!

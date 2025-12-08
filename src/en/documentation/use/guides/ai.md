@@ -66,11 +66,10 @@ might even have additional custom tools in case your admin added them.
 
 ## AI Agents
 
-This is no feature which allows any agent interaction. However, if the feature is configured, you may notice it at some
-points. This is why you can find an explanation here.
-
-AI agents can be configured to work on certain types of routine tasks. You may notice the AI agents at different
-locations:
+AI agents can be configured to work on certain types of routine tasks. In general, this feature operates behind the
+scenes but if configured, you may notice it in some situations (see examples below). In case your admin created a macro
+with an AI agent action, you can even run it manually. Ask your admin for details and have a look at the
+[macro description](/en/documentation/use/advanced-features#macros) in the advanced features page.
 
 ### Ticket History
 

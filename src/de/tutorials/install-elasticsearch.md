@@ -22,13 +22,13 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
-Install required tools:
+Notwendige Tools installieren:
 
 ```sh
 sudo apt-get install apt-transport-https
 ```
 
-Add repo key:
+Repository-Schlüssel hinzufügen:
 
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \

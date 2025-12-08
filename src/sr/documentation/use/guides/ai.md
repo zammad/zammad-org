@@ -78,12 +78,13 @@ Zammad долази са подразумеваним алаткама помо�
 
 ## AI агенти
 
-Ова функција не омогућава интеракцију оператера. Међутим, уколико је
-подесите, можете је приметити у акцији у неком тренутку. Из тог разлога наћи
-ћете објашњење овде.
-
-AI агенти могу бити подешени да раде на одређеним врстама рутинских
-задатака. Можете приметити AI агенте на различитим местима:
+AI agents can be configured to work on certain types of routine tasks. In
+general, this feature operates behind the scenes but if configured, you may
+notice it in some situations (see examples below). In case your admin
+created a macro with an AI agent action, you can even run it manually. Ask
+your admin for details and have a look at the [macro
+description](/en/documentation/use/advanced-features#macros) in the advanced
+features page.
 
 ### Ticket History
 

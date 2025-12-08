@@ -1025,25 +1025,25 @@ die Entwicklung und zum Testen.
 Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!
 :::
 
-Truncate the database:
+Datenbank zurücksetzen:
 
 ```sh
 rake zammad:db:truncate
 ```
 
-Migrate the database:
+Migration der Datenbank ausführen:
 
 ```sh
 rake db:migrate
 ```
 
-Load the seed data:
+Datenbank-Seeds einspielen:
 
 ```sh
 rake db:seed
 ```
 
-Clear cache and reload the settings:
+Cache löschen und Einstellungen neu laden:
 
 ```sh
 rake zammad:db:rebuild
@@ -1051,8 +1051,8 @@ rake zammad:db:rebuild
 
 ::: tip
 
-You can also use the `zammad:db:reset` command to reset your instance. This task
-will truncate the database, run the migrations, seed the database, clear the
-cache and reload the settings. However, it will not ask for your confirmation
-between each step, so you should use it with caution.
+Sie können auch den Befehl `zammad:db:reset` verwenden, um Ihre Instanz zurückzusetzen. Dieser Befehl
+setzt die Datenbank zurück, führt die Migrationen aus, spielt die Datenbank-Seeds ein,
+löscht den Cache und lädt die Einstellungen neu. Allerdings wird zwischen den einzelnen Schritten
+nicht nach einer Bestätigung gefragt, daher sollten Sie den Befehl mit Vorsicht verwenden.
 :::
