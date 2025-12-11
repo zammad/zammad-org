@@ -143,9 +143,9 @@ attributes you can set in the _Ticket_ sidebar tab:
   - **Pending Reminder**: State for open tickets which you want to get reminded to a certain date and time. Requires
     you to enter a date and time at which you want to get notified. For example useful if you had a question to a third
     party and want to make sure that this issue won't be forgotten.
-- **Owner**: This is the person who is currently responsible for the ticket. In case you need to have an information
-  from another colleague, you can either change to owner to this person or mention the person in an article by
-  typing [[@]][[@]] and selecting the user. In the later case, the user gets notified and is automatically subscribed to
+- **Owner**: This is the person who is currently responsible for the ticket. In case you need information
+  from another colleague, you can either change the owner to this person or mention the person in an article by
+  typing [[@]][[@]] and selecting the user. In the latter case, the user gets notified and is automatically subscribed to
   receive notifications on ticket updates.
 - **Group**: This ticket attribute is useful for organizations with more than one team. Depending on the permissions,
   you might not see the ticket after changing the group and saving the changes.

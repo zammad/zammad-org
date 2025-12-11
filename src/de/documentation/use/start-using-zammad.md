@@ -184,12 +184,12 @@ Seitenleisten-Tab _Ticket_ einstellen können:
     benachrichtigt werden möchten. Dies ist z.B. nützlich, wenn Sie eine
     Frage an einen Dritten hatten und sicherstellen möchten, dass dieses
     Problem nicht vergessen wird.
-- **Besitzer**: Dies ist die Person, die derzeit für das Ticket
-  verantwortlich ist. Falls Sie eine Information von einem anderen Kollegen
-  benötigen, können Sie entweder den Besitzer auf diese Person ändern oder
-  sie in einem Artikel erwähnen, indem Sie [[@]][[@]] eingeben und den
-  Benutzer auswählen. Im letzteren Fall wird der Benutzer benachrichtigt und
-  erhält automatisch Benachrichtigungen über Aktualisierungen von Tickets.
+- **Owner**: This is the person who is currently responsible for the
+  ticket. In case you need information from another colleague, you can
+  either change the owner to this person or mention the person in an article
+  by typing [[@]][[@]] and selecting the user. In the latter case, the user
+  gets notified and is automatically subscribed to receive notifications on
+  ticket updates.
 - **Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit
   mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket
   möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
