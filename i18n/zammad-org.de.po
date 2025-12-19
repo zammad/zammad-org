@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-08 10:06+0100\n"
-"PO-Revision-Date: 2025-12-08 10:05+0000\n"
+"POT-Creation-Date: 2025-12-11 11:28+0100\n"
+"PO-Revision-Date: 2025-12-18 12:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -2181,8 +2181,8 @@ msgid ""
 msgstr ""
 "Wenn Ihr Administrator bereits ein Makro erstellt hat, können Sie es in der "
 "Ticket Detailansicht ausführen, indem Sie auf den Abschnitt `^` der "
-"Schaltfläche `Aktualisierung` in der rechten Ecke der Fußleiste klicken ("
-"siehe Screenshot oben) und das Makro auswählen, das Sie ausführen möchten."
+"Schaltfläche `Aktualisierung` in der rechten Ecke der Fußleiste klicken "
+"(siehe Screenshot oben) und das Makro auswählen, das Sie ausführen möchten."
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/advanced-features.md:120
@@ -4610,7 +4610,7 @@ msgstr "Nicht zugewiesene & offene Tickets"
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:23
 msgid "Pending reached tickets"
-msgstr "Meine \"Warten erreicht\" Tickets"
+msgstr "\"Warten erreicht\" Tickets"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:23
@@ -6640,18 +6640,17 @@ msgstr ""
 #: src/en/documentation/use/start-using-zammad.md:152
 msgid ""
 "**Owner**: This is the person who is currently responsible for the ticket. "
-"In case you need to have an information from another colleague, you can "
-"either change to owner to this person or mention the person in an article by "
-"typing [[@]][[@]] and selecting the user. In the later case, the user gets "
-"notified and is automatically subscribed to receive notifications on ticket "
-"updates."
+"In case you need information from another colleague, you can either change "
+"the owner to this person or mention the person in an article by typing [[@]]"
+"[[@]] and selecting the user. In the latter case, the user gets notified and "
+"is automatically subscribed to receive notifications on ticket updates."
 msgstr ""
 "**Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich "
-"ist. Falls Sie eine Information von einem anderen Kollegen benötigen, können "
-"Sie entweder den Besitzer auf diese Person ändern oder sie in einem Artikel "
-"erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. Im "
-"letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
-"Benachrichtigungen über Aktualisierungen von Tickets."
+"ist. Falls Sie Informationen von einem anderen Kollegen benötigen, können "
+"Sie entweder den Besitzer auf diese Person ändern oder die Person in einem "
+"Artikel erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. "
+"Im letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
+"Benachrichtigungen über Aktualisierungen des Tickets."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/start-using-zammad.md:152
