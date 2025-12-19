@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-18 12:00+0000\n"
+"POT-Creation-Date: 2025-12-19 11:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -7363,14 +7351,14 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:369
-#: src/en/reference/environment-variables.md:60
+#: src/en/reference/environment-variables.md:62
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:369
-#: src/en/reference/environment-variables.md:72
+#: src/en/reference/environment-variables.md:74
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
 msgid "Nginx"
@@ -11234,49 +11222,54 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:46
+#: src/en/reference/environment-variables.md:48
 #, markdown-text, no-wrap
 msgid ""
-"| Variable                                               | Limited | Default "
-"Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "
+"| Variable                                                                  "
+"| Limited | Default Value                                              | "
+"Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "
 "|\n"
-"| ------------------------------------------------------ | ------- | "
-"----------------------------------- | "
+"| ------------------------------------------------------------------------- "
+"| ------- | ---------------------------------------------------------- | "
 "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- "
 "|\n"
-"| VERSION                                                | ::d::   | current "
-"stable version of Zammad    | Allows customization of the Zammad image "
-"tag. Example: `6.3.1-54`. This default version may be increased when you "
-"update your Zammad Docker stack. Please see the [example env "
+"| VERSION                                                                   "
+"| ::d::   | current stable version of Zammad                           | "
+"Allows customization of the Zammad image tag. Example: `6.3.1-54`. This "
+"default version may be increased when you update your Zammad Docker "
+"stack. Please see the [example env "
 "template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for "
 "more details on this variable.                                                                                                                                                                                                                                                                                "
 "|\n"
-"| AUTOWIZARD_JSON                                        | ::d::   | unset                               "
-"| This variable allows you to provide initial configuration data for your "
+"| AUTOWIZARD_JSON                                                           "
+"| ::d::   | unset                                                      | "
+"This variable allows you to provide initial configuration data for your "
 "instance. Autowizard JSON is out of scope of this documentation, however "
 "[this example "
 "file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) "
 "should help.                                                                                                                                                                                                                                                                                                                  "
 "|\n"
-"| ZAMMAD_HTTP_TYPE                                       |         | unset                               "
-"| Set the http type for your instance. Possible values are `http` and "
-"`https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+"| ZAMMAD_HTTP_TYPE                                                          "
+"|         | unset                                                      | Set "
+"the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
 "|\n"
-"| ZAMMAD_FQDN                                            |         | unset                               "
-"| Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "
+"| ZAMMAD_FQDN                                                               "
+"|         | unset                                                      | Set "
+"the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "
 "|\n"
-"| RAILS_TRUSTED_PROXIES                                  |         | "
-"`127.0.0.1,::1`                     | This setting is important for the "
-"correct detection of client IP addresses and features based on it, like rate "
-"limiting. By default, Zammad trusts localhost proxies only. Any additional "
-"proxy servers will have to be added here, by IP address (if static) or by "
-"host name. Host names are resolved during the start of Zammad, so that a "
-"restart is required whenever the IP address of a proxy server changes. Note "
-"that in Docker context, Zammad may see the network gateway IP address "
-"instead of the actual proxy server IP address, if it is placed in another "
-"network. |\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               "
-"| How many instances of AI workers to run simultaneously. AI workers handle "
+"| RAILS_TRUSTED_PROXIES                                                     "
+"|         | `127.0.0.1,::1`                                            | "
+"This setting is important for the correct detection of client IP addresses "
+"and features based on it, like rate limiting. By default, Zammad trusts "
+"localhost proxies only. Any additional proxy servers will have to be added "
+"here, by IP address (if static) or by host name. Host names are resolved "
+"during the start of Zammad, so that a restart is required whenever the IP "
+"address of a proxy server changes. Note that in Docker context, Zammad may "
+"see the network gateway IP address instead of the actual proxy server IP "
+"address, if it is placed in another network. |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS                                "
+"|         | unset                                                      | How "
+"many instances of AI workers to run simultaneously. AI workers handle "
 "Zammad's AI requests and fetch the responses from the configured AI "
 "provider. By default, one worker is running. Self hosted AI users should be "
 "careful in increasing it, your AI service might collapse. For AI cloud "
@@ -11284,33 +11277,47 @@ msgid ""
 "to have some kind of parallelization. The maximum number of workers is "
 "`16`.                                                                                                                        "
 "|\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 "
-"| How many threads should be processed by **one** AI worker (if you have "
-"more than one worker, it is multiplied by the amount of workers). This may "
-"speed up the AI processing, but be aware that a Ruby worker can only span "
-"across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          "
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS                    "
+"|         | `5`                                                        | How "
+"many threads should be processed by **one** AI worker (if you have more than "
+"one worker, it is multiplied by the amount of workers). This may speed up "
+"the AI processing, but be aware that a Ruby worker can only span across 1 "
+"core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          "
 "|\n"
-"| MEMCACHE_SERVERS                                       |         | - "
-"Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own "
-"Memcached instance to Zammad if you already have one. The package "
-"installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       "
+"| ZAMMAD_PROCESS_DELAYED_<br>COMMUNICATION_INBOUND_<br>JOBS_WORKERS         "
+"|         | unset                                                      | "
+"Allows concurrent fetching of inbound communication channels. Useful if you "
+"have many channels and/or mailboxes added. `0` means it runs in the main "
+"process, `1` means one additional process, etc. The maximum number of "
+"workers is `16`.                                                                                                                                                                                                                                                                                                                                       "
 "|\n"
-"| REDIS_URL                                              |         | - "
-"Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own "
-"Redis instance if you already have one. The package installation fallback is "
-"`/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) "
-"for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                              "
+"| ZAMMAD_PROCESS_DELAYED_<br>COMMUNICATION_INBOUND_<br>JOBS_WORKER_THREADS  "
+"|         | `1`                                                        | "
+"Threads used for fetching inbound communication channels. How many threads "
+"should be used by inbound jobs workers. The maximum number of threads is "
+"`16`.                                                                                                                                                                                                                                                                                                                                                                                                                         "
+"|\n"
+"| MEMCACHE_SERVERS                                                          "
+"|         | - Docker: `zammad-memcached:11211`<br> - Package: unset    | "
+"Provide your own Memcached instance to Zammad if you already have one. The "
+"package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                                             "
+"|\n"
+"| REDIS_URL                                                                 "
+"|         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | "
+"Provide your own Redis instance if you already have one. The package "
+"installation fallback is `/opt/zammad/tmp/websocket_*`. See [Redis "
+"Variables](/en/reference/redis) for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                                                     "
 "|\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:47
+#: src/en/reference/environment-variables.md:49
 #, markdown-text, no-wrap
 msgid "Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:59
+#: src/en/reference/environment-variables.md:61
 #, markdown-text, no-wrap
 msgid ""
 "| Variable                 | Limited | Default Value          | Description                                                                                                                                                                                                   "
@@ -11350,7 +11357,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:71
+#: src/en/reference/environment-variables.md:73
 #, markdown-text, no-wrap
 msgid ""
 "| Variable             | Limited | Default Value       | Description                                                                                                               "
@@ -11382,7 +11389,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:86
+#: src/en/reference/environment-variables.md:88
 #, markdown-text, no-wrap
 msgid ""
 "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                             "
@@ -11426,13 +11433,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:87
+#: src/en/reference/environment-variables.md:89
 #, markdown-text, no-wrap
 msgid "Performance Tuning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:91
+#: src/en/reference/environment-variables.md:93
 #, markdown-text
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
@@ -11441,7 +11448,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:94
+#: src/en/reference/environment-variables.md:96
 #, markdown-text
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
@@ -11450,7 +11457,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:97
+#: src/en/reference/environment-variables.md:99
 #, markdown-text
 msgid ""
 "Below settings may consume all available database connections. Please "
@@ -11459,7 +11466,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:104
+#: src/en/reference/environment-variables.md:106
 #, markdown-text, no-wrap
 msgid ""
 "| Variable                                  | Limited | Default Value | "
@@ -11498,13 +11505,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:105
+#: src/en/reference/environment-variables.md:107
 #, markdown-text, no-wrap
 msgid "How to Set Environment Variables"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:110
+#: src/en/reference/environment-variables.md:112
 #, markdown-text
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
@@ -11515,55 +11522,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:112
+#: src/en/reference/environment-variables.md:114
 #, markdown-text
 msgid "Examples for package installations:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:114
+#: src/en/reference/environment-variables.md:116
 #, markdown-text
 msgid "Set OPTION to \"value\":"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:115
+#: src/en/reference/environment-variables.md:117
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:120
+#: src/en/reference/environment-variables.md:122
 #, markdown-text
 msgid "Get OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:121
+#: src/en/reference/environment-variables.md:123
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:126
+#: src/en/reference/environment-variables.md:128
 #, markdown-text
 msgid "Unset OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:127
+#: src/en/reference/environment-variables.md:129
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:132
+#: src/en/reference/environment-variables.md:134
 #, markdown-text
 msgid "Restart Zammad after changing settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:133
+#: src/en/reference/environment-variables.md:135
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr ""
@@ -21289,83 +21296,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -21532,6 +21462,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses ``POST`` because creating and fetching "
+"the summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using ``GET`` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21975,6 +21982,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
