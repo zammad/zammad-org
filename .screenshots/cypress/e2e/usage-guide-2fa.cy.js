@@ -20,7 +20,7 @@ describe('2FA usage guide', () => {
     cy.visit('/desktop/personal-setting/two-factor-auth')
     cy.get('main').should('exist')
     cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
-      cy.get('button').contains('Regenerate Recovery Codes').parent().parent().clip({ padding: 5 }).then((BottomClip) => {
+      cy.get('button').contains('Regenerate recovery codes').parent().parent().clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('2fa-methods-profile-overview', { clip })
         })
@@ -31,7 +31,7 @@ describe('2FA usage guide', () => {
     cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
         cy.mergeClips(PopoverClip, TopClip).then((MiddleClip) => {
-          cy.get('button').contains('Regenerate Recovery Codes').parent().parent().clip({ padding: 5 }).then((BottomClip) => {
+          cy.get('button').contains('Regenerate recovery codes').parent().parent().clip({ padding: 5 }).then((BottomClip) => {
             cy.mergeClips(MiddleClip, BottomClip).then((clip) => {
               cy.screenshot('2fa-methods-profile-action-menu', { clip })
             })

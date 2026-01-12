@@ -10,7 +10,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Mention user"]').highlight()
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-mention', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
-    cy.get('button').contains('Discard Changes').click()
+    cy.get('button').contains('Discard changes').click()
   })
 
   it('ticket article kba', () => {
@@ -21,10 +21,10 @@ describe('usage advanced features', () => {
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('??')
     cy.wait(1000)
-    cy.get('[aria-label="Insert text from Knowledge Base article"]').highlight()
+    cy.get('[aria-label="Insert text from knowledge base answer"]').highlight()
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-insert-kba', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
-    cy.get('button').contains('Discard Changes').click()
+    cy.get('button').contains('Discard changes').click()
   })
 
   it('ticket article text template', () => {
@@ -38,7 +38,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Insert text from text module"]').highlight()
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-text-template', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
-    cy.get('button').contains('Discard Changes').click()
+    cy.get('button').contains('Discard changes').click()
   })
 
   it('ticket subscribe', () => {
@@ -155,7 +155,7 @@ describe('usage advanced features', () => {
         })
       })
     })
-    cy.get('button').contains('Account Time').click()
+    cy.get('button').contains('Account time').click()
     cy.get('[id="ticket-time-accounting-header"]').parent().screenshot('time-accounting-overview', {padding: 5})
   })
 
@@ -165,7 +165,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.wait(300) // transition
-    cy.get('button').contains('Bulk Actions').click()
+    cy.get('button').contains('Bulk actions').click()
     cy.wait(300) // transition
     cy.get('[name="group_id"]').click({ force: true }).type('Infrastructure{downArrow}{enter}')
     cy.get('[name="owner_id"]').click({ force: true }).type('Jackson{downArrow}{enter}')
