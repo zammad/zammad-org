@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-19 11:26+0100\n"
+"POT-Creation-Date: 2026-01-14 09:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1654,7 +1654,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:322
 #: src/en/documentation/use/advanced-features.md:339
 #: src/en/documentation/use/advanced-features.md:368
-#: src/en/documentation/use/advanced-features.md:385
+#: src/en/documentation/use/advanced-features.md:388
+#: src/en/documentation/use/advanced-features.md:408
+#: src/en/documentation/use/advanced-features.md:426
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1686,7 +1688,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:327
 #: src/en/documentation/use/advanced-features.md:345
 #: src/en/documentation/use/advanced-features.md:373
-#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:399
+#: src/en/documentation/use/advanced-features.md:419
+#: src/en/documentation/use/advanced-features.md:432
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2667,16 +2671,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:376
+#: src/en/documentation/use/advanced-features.md:377
 #, markdown-text
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
-"sidebar in the ticket detail view."
+"sidebar in the ticket detail view. To see more details, click on the user "
+"avatar to open the [user detail page](#user-detail-page)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:378
+#: src/en/documentation/use/advanced-features.md:379
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
@@ -2684,7 +2689,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 #, markdown-text
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
@@ -2692,13 +2697,138 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:383
+#, markdown-text, no-wrap
+msgid "User Detail Page"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:386
+#, markdown-text
+msgid ""
+"![Screenshot shows user detail "
+"page](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:390
+#, markdown-text
+msgid ""
+"It allows you to see all relevant user information in one place. Examples "
+"what you can find and do there:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#, markdown-text
+msgid "See organization membership"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#, markdown-text
+msgid "See a graph of recent tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "Add or edit a note"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#, markdown-text
+msgid "Edit the customer (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "See a history of changes (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#, markdown-text
+msgid "Create a new ticket with this user as customer"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:402
+#, markdown-text
+msgid ""
+"Simply click on a user avatar (e.g. in the header of the ticket detail "
+"view). This opens a new tab with the customer detail page. In case you also "
+"have admin permissions, you can even create a deletion job for a user from "
+"the ::a:: menu."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:403
+#, markdown-text, no-wrap
+msgid "Organization Detail Page"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:406
+#, markdown-text
+msgid ""
+"![Screenshot shows organization detail "
+"page](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:410
+#, markdown-text
+msgid ""
+"It allows you to see all relevant organization information in one "
+"place. Examples what you can find and do there:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "See the members of the organization"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "See a graph of the recent tickets of the whole organization"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "Edit the organization (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+#, markdown-text
+msgid "Create a new user as a member of this organization"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:422
+#, markdown-text
+msgid ""
+"Simply click on an organization avatar (e.g. in the header of the ticket "
+"detail view next to the user avatar). This opens a new tab with the "
+"organization detail page."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:423
 #, markdown-text, no-wrap
 msgid "External Issues and Assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:389
+#: src/en/documentation/use/advanced-features.md:430
 #, markdown-text
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
@@ -2708,7 +2838,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:393
+#: src/en/documentation/use/advanced-features.md:434
 #, markdown-text
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" "
@@ -2716,7 +2846,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:438
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "

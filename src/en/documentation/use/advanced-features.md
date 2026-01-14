@@ -372,12 +372,53 @@ your task.
 **How?**
 
 You might have seen it already: simply hover your mouse over an avatar icon, no matter if it is in the header, footer,
-main content or the content sidebar in the ticket detail view.
+main content or the content sidebar in the ticket detail view. To see more details, click on the user avatar to open
+the [user detail page](#user-detail-page).
 
 ![Screenshot shows an avatar with opened user detail panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 By the way, the crown in the screenshot represents the customer's VIP state, which can be set in the customer detail
 view and the admin settings.
+
+## User Detail Page
+
+![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
+
+**Why?**
+
+It allows you to see all relevant user information in one place. Examples what you can find and do there:
+
+- See organization membership
+- See a graph of recent tickets
+- Add or edit a note
+- Edit the customer (via ::a:: menu)
+- See a history of changes (via ::a:: menu)
+- Create a new ticket with this user as customer
+
+**How?**
+
+Simply click on a user avatar (e.g. in the header of the ticket detail view). This opens a new tab with the customer
+detail page. In case you also have admin permissions, you can even create a deletion job for a user from the ::a:: menu.
+
+## Organization Detail Page
+
+![Screenshot shows organization detail page](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+
+**Why?**
+
+It allows you to see all relevant organization information in one place. Examples what you can find and do there:
+
+- See the members of the organization
+- See a graph of the recent tickets of the whole organization
+- Add or edit a note
+- Edit the organization (via ::a:: menu)
+- See a history of changes (via ::a:: menu)
+- Create a new user as a member of this organization
+
+**How?**
+
+Simply click on an organization avatar (e.g. in the header of the ticket detail view next to the user avatar). This
+opens a new tab with the organization detail page.
 
 ## External Issues and Assets
 

@@ -430,7 +430,7 @@ article = Ticket::Article.create(
   from:         "#{alexjensen.fullname} via <support@fastlane.inc>",
   body:         "Hi Thomas,
 
-I have never seen this error and our knowledgebase has no reference to it.
+I have never seen this error and our knowledge base has no reference to it.
 
 RMA? Or can we ask our engineering team for help?",
   content_type: 'text/plain',
@@ -463,12 +463,67 @@ article = Ticket::Article.create(
   subject:      'My battery is dead / order 110572',
   body:         "Hi Fast Lane Team,
 
-I just received my new mobile phone and the battery seems dead. It only lasts
-about 15 minutes after a full charge. What's the process now? This is unusable
-for me currently.
+I just received my new mobile phone and the battery seems dead. It only lasts about 15 minutes after a full charge. What's the process now?
+
+This is unusable for me currently.
 
 Mola
 ",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at,
+  updated_at:   created_at,
+)
+
+#another ticket for the user detail stats
+hannahtaylor = User.find_by(login: 'hannah@fastlane.inc')
+laurenbrooks = User.find_by(login: 'lauren@fastlane.inc')
+UserInfo.current_user_id = hannahtaylor.id
+created_at = Time.zone.now - 55.days
+ticket7 = Ticket.create(
+  title:      'Onboarding new colleague',
+  group:      Group.find_by(name: 'IT Internal'),
+  customer:   hannahtaylor,
+  owner_id:   laurenbrooks.id,
+  state:      Ticket::State.find_by(name: 'closed'),
+  priority:   Ticket::Priority.find_by(name: '2 normal'),
+  created_at: created_at,
+  updated_at: created_at,
+  close_at:   created_at + 1.days,
+)
+article = Ticket::Article.create(
+  ticket:       ticket7,
+  type:         Ticket::Article::Type.find_by(name: 'web'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{hannahtaylor.fullname} <#{hannahtaylor.email}>",
+  to:           'operations@fastlane.inc',
+  subject:      'My account is locked',
+  body:         "Hi Lauren,
+
+  it seems that I'm no longer able to sign in to our ERP. Can you please check and reset my account? Maybe related with the new security measures? Thanks!
+
+  Best,
+  Hannah
+  ",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at,
+  updated_at:   created_at,
+)
+
+article = Ticket::Article.create(
+  ticket:       ticket7,
+  type:         Ticket::Article::Type.find_by(name: 'note'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  body:         "Hi Hannah,
+
+  I checked your account and it seems that it got locked because of a missing
+  2FA method. I re-enabled your account. At the next login, you have to set up
+  a 2FA method. Feel free to get in touch again if you need further assistance!
+
+  Have a nice day,
+  Lauren
+  ",
   content_type: 'text/plain',
   internal:     false,
   created_at:   created_at,

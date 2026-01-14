@@ -208,4 +208,37 @@ describe('usage advanced features', () => {
       })
     })
   })
+
+  it('user detail page', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/users/10')
+    cy.wait(3000) // loading
+    cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
+    cy.wait(1000) // transition
+    // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
+    cy.get('div.flex.mx-auto.mt-3.pe-17.w-full.max-w-278.h-21').clip( { padding: 10 } ).then((TopClip) => {
+      cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').clip().then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('user-detail-page', { clip })
+        })
+      })
+    })
+  })
+
+  it('organization detail page', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/organizations/2')
+    cy.wait(3000) // loading
+    cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
+    cy.wait(1000) // transition
+    // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
+    cy.get('div.flex.mx-auto.mt-3.pe-17.w-full.max-w-278.h-21').clip( { padding: 10 } ).then((TopClip) => {
+      cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').clip().then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('organization-detail-page', { clip })
+        })
+      })
+    })
+  })
+
 })

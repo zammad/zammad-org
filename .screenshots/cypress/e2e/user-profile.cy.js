@@ -26,7 +26,7 @@ describe('user profile screenshot', () => {
     cy.get('label').contains('Agent tickets').click().wait(200)
     cy.get('button').contains('Create').click().wait(300)
     cy.get('[id="flyout-new-access-token-title"]').clip({ padding: 10 }).then((TopClip) => {
-      cy.get('button').contains('OK, I have copied my token').clip({ padding: 25 }).then((BottomClip) => {
+      cy.get('button').contains('Copy token').clip({ padding: 25 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('token-dialog', { clip })
       })
