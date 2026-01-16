@@ -31,9 +31,9 @@ Für ein Beispielszenario mit bis zu 40 Agenten könnte ein gute Basis sein:
 Je nach Installationsart gibt es einige Voraussetzungen. Diese sind in den
 jeweiligen Installationsanweisungen enthalten:
 
+- [Paket](package)
 - [Docker](docker)
 - [Kubernetes](kubernetes)
-- [Paket](package)
 
 ## Anforderungen an Clients
 

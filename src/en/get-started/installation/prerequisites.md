@@ -27,9 +27,9 @@ For an example scenario with up to 40 agents, a good starting point could be:
 
 Depending on the installation type, there are some prerequisites. They are included in the installation instructions:
 
+- [Package](package)
 - [Docker](docker)
 - [Kubernetes](kubernetes)
-- [Package](package)
 
 ## Client Requirements
 

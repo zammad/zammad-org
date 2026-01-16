@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-14 09:19+0100\n"
+"POT-Creation-Date: 2026-01-16 11:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7777,6 +7777,12 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:33
 #, markdown-text
+msgid "[Package](package)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:33
+#, markdown-text
 msgid "[Docker](docker)"
 msgstr ""
 
@@ -7784,12 +7790,6 @@ msgstr ""
 #: src/en/get-started/installation/prerequisites.md:33
 #, markdown-text
 msgid "[Kubernetes](kubernetes)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:33
-#, markdown-text
-msgid "[Package](package)"
 msgstr ""
 
 #. type: Title ##
