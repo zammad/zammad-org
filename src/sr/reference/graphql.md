@@ -21,9 +21,8 @@ industry standard because of its efficiency and features. You can precisely
 request the data you require which minimizes unnecessary data transfers and
 searching the needle in a haystack.
 
-Fetching the GraphQL schema of Zammad (called introspection) allows you to
-have an autocomplete feature and logic checks in your client while writing a
-request.
+Fetching the Zammad GraphQL schema (called introspection) enables
+autocomplete and client-side validation while writing requests.
 
 ## Getting Started
 
@@ -52,7 +51,7 @@ accordingly.
 Make sure to copy it before closing the dialog because you can't view it
 again. In case it went wrong, simply create a new token.
 
-### Prepare your Client
+### Prepare Your Client
 
 Open your API client and set it up.
 
@@ -60,6 +59,12 @@ Open your API client and set it up.
 - Create a request and add your Zammad domain with `/graphql` suffix,
   e.g. `https://fastlane.inc/graphql`.
 - Fetch Zammad's GraphQL schema from introspection or load it from file.
+
+::: warning
+The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the
+environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is
+**not recommended**.
+:::
 
 Click on details to watch a screencast showing the basic steps using Bruno
 as client.
