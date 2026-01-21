@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-11 11:28+0100\n"
+"POT-Creation-Date: 2026-01-19 11:53+0100\n"
 "PO-Revision-Date: 2025-12-13 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -1220,7 +1220,7 @@ msgstr ""
 "Резолуција снимака пуног екрана за _основни приказ_ je 1920x1080 пиксела."
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:105
+#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:111
 #, no-wrap
 msgid "Examples"
 msgstr "Примери"
@@ -1813,7 +1813,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:322
 #: src/en/documentation/use/advanced-features.md:339
 #: src/en/documentation/use/advanced-features.md:368
-#: src/en/documentation/use/advanced-features.md:385
+#: src/en/documentation/use/advanced-features.md:388
+#: src/en/documentation/use/advanced-features.md:408
+#: src/en/documentation/use/advanced-features.md:426
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Зашто?**\n"
@@ -1847,7 +1849,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:327
 #: src/en/documentation/use/advanced-features.md:345
 #: src/en/documentation/use/advanced-features.md:373
-#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:399
+#: src/en/documentation/use/advanced-features.md:419
+#: src/en/documentation/use/advanced-features.md:432
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Како?**\n"
@@ -2950,18 +2954,24 @@ msgstr ""
 "екрана вам омогућава да останете фокусирани на ваш задатак."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:376
+#: src/en/documentation/use/advanced-features.md:377
+#, fuzzy
+#| msgid ""
+#| "You might have seen it already: simply hover your mouse over an avatar "
+#| "icon, no matter if it is in the header, footer, main content or the "
+#| "content sidebar in the ticket detail view."
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
-"sidebar in the ticket detail view."
+"sidebar in the ticket detail view. To see more details, click on the user "
+"avatar to open the [user detail page](#user-detail-page)."
 msgstr ""
 "Можда сте већ приметили: једноставно пређите мишем преко сличице корисника, "
 "без обзира да ли се налази у заглављу, подножју, основном садржају или са "
 "бочне стране у детаљном прегледу тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:378
+#: src/en/documentation/use/advanced-features.md:379
 #, fuzzy
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
@@ -2971,7 +2981,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -2980,13 +2990,135 @@ msgstr ""
 "можете бити укључено у детаљном приказу клијента и администраторском панелу."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:383
+#, fuzzy, no-wrap
+msgid "User Detail Page"
+msgstr "Корисничка документација"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:386
+#, fuzzy
+msgid ""
+"![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-"
+"features.cy.js/user-detail-page.png)"
+msgstr ""
+"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
+"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:390
+msgid ""
+"It allows you to see all relevant user information in one place. Examples "
+"what you can find and do there:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#, fuzzy
+#| msgid "Organizations"
+msgid "See organization membership"
+msgstr "Организације"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+msgid "See a graph of recent tickets"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:417
+#, fuzzy
+#| msgid "Add a note"
+msgid "Add or edit a note"
+msgstr "Додавање напомене"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+msgid "Edit the customer (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:417
+msgid "See a history of changes (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:397
+msgid "Create a new ticket with this user as customer"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:402
+msgid ""
+"Simply click on a user avatar (e.g. in the header of the ticket detail "
+"view). This opens a new tab with the customer detail page. In case you also "
+"have admin permissions, you can even create a deletion job for a user from "
+"the ::a:: menu."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:403
+#, fuzzy, no-wrap
+#| msgid "Organization"
+msgid "Organization Detail Page"
+msgstr "Организација"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:406
+#, fuzzy
+msgid ""
+"![Screenshot shows organization detail page](/screenshots/cypress/usage-"
+"advanced-features.cy.js/organization-detail-page.png)"
+msgstr ""
+"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
+"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:410
+msgid ""
+"It allows you to see all relevant organization information in one place. "
+"Examples what you can find and do there:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+#, fuzzy
+#| msgid "Domain of the organization."
+msgid "See the members of the organization"
+msgstr "Домен организације."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+msgid "See a graph of the recent tickets of the whole organization"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+msgid "Edit the organization (via ::a:: menu)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:417
+msgid "Create a new user as a member of this organization"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:422
+msgid ""
+"Simply click on an organization avatar (e.g. in the header of the ticket "
+"detail view next to the user avatar). This opens a new tab with the "
+"organization detail page."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:423
 #, no-wrap
 msgid "External Issues and Assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:389
+#: src/en/documentation/use/advanced-features.md:430
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
 "Gitlab issues, you can link to these external systems to have all relevant "
@@ -2995,7 +3127,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:393
+#: src/en/documentation/use/advanced-features.md:434
 #, fuzzy
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
@@ -3005,7 +3137,7 @@ msgstr ""
 "advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:438
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon (see Gitlab example in screenshot above). Click the "
@@ -6907,7 +7039,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/get-started/installation/docker.md:128
-#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:109
+#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:115
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
@@ -7942,14 +8074,14 @@ msgstr "Node.js"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:369
-#: src/en/reference/environment-variables.md:60
+#: src/en/reference/environment-variables.md:62
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:369
-#: src/en/reference/environment-variables.md:72
+#: src/en/reference/environment-variables.md:74
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
 msgid "Nginx"
@@ -8219,6 +8351,11 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/get-started/installation/prerequisites.md:33
+msgid "[Package](package)"
+msgstr "[Пакет](package)"
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/prerequisites.md:33
 msgid "[Docker](docker)"
 msgstr "[Docker](docker)"
 
@@ -8226,11 +8363,6 @@ msgstr "[Docker](docker)"
 #: src/en/get-started/installation/prerequisites.md:33
 msgid "[Kubernetes](kubernetes)"
 msgstr "[Kubernetes](kubernetes)"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:33
-msgid "[Package](package)"
-msgstr "[Пакет](package)"
 
 #. type: Title ##
 #: src/en/get-started/installation/prerequisites.md:34
@@ -11583,30 +11715,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:46
+#: src/en/reference/environment-variables.md:48
 #, no-wrap
 msgid ""
-"| Variable                                               | Limited | Default Value                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-"| ------------------------------------------------------ | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| VERSION                                                | ::d::   | current stable version of Zammad    | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad Docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
-"| AUTOWIZARD_JSON                                        | ::d::   | unset                               | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
-"| ZAMMAD_HTTP_TYPE                                       |         | unset                               | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
-"| ZAMMAD_FQDN                                            |         | unset                               | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
-"| RAILS_TRUSTED_PROXIES                                  |         | `127.0.0.1,::1`                     | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in Docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS             |         | unset                               | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
-"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS |         | `5`                                 | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
-"| MEMCACHE_SERVERS                                       |         | - Docker: `zammad-memcached:11211`<br> - Package: unset   | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
-"| REDIS_URL                                              |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. The package installation fallback is `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                              |\n"
+"| Variable                                                                  | Limited | Default Value                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n"
+"| ------------------------------------------------------------------------- | ------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| VERSION                                                                   | ::d::   | current stable version of Zammad                           | Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you update your Zammad Docker stack. Please see the [example env template](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist)_for more details on this variable.                                                                                                                                                                                                                                                                                |\n"
+"| AUTOWIZARD_JSON                                                           | ::d::   | unset                                                      | This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of this documentation, however [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.                                                                                                                                                                                                                                                                                                                  |\n"
+"| ZAMMAD_HTTP_TYPE                                                          |         | unset                                                      | Set the http type for your instance. Possible values are `http` and `https`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n"
+"| ZAMMAD_FQDN                                                               |         | unset                                                      | Set the FQDN for your instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n"
+"| RAILS_TRUSTED_PROXIES                                                     |         | `127.0.0.1,::1`                                            | This setting is important for the correct detection of client IP addresses and features based on it, like rate limiting. By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here, by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is required whenever the IP address of a proxy server changes. Note that in Docker context, Zammad may see the network gateway IP address instead of the actual proxy server IP address, if it is placed in another network. |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS                                |         | unset                                                      | How many instances of AI workers to run simultaneously. AI workers handle Zammad's AI requests and fetch the responses from the configured AI provider. By default, one worker is running. Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users with a big Zammad instance, it could make sense to increase it to have some kind of parallelization. The maximum number of workers is `16`.                                                                                                                        |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>AI_JOBS_WORKERS_<br>THREADS                    |         | `5`                                                        | How many threads should be processed by **one** AI worker (if you have more than one worker, it is multiplied by the amount of workers). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                          |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>COMMUNICATION_INBOUND_<br>JOBS_WORKERS         |         | unset                                                      | Allows concurrent fetching of inbound communication channels. Useful if you have many channels and/or mailboxes added. `0` means it runs in the main process, `1` means one additional process, etc. The maximum number of workers is `16`.                                                                                                                                                                                                                                                                                                                                       |\n"
+"| ZAMMAD_PROCESS_DELAYED_<br>COMMUNICATION_INBOUND_<br>JOBS_WORKER_THREADS  |         | `1`                                                        | Threads used for fetching inbound communication channels. How many threads should be used by inbound jobs workers. The maximum number of threads is `16`.                                                                                                                                                                                                                                                                                                                                                                                                                         |\n"
+"| MEMCACHE_SERVERS                                                          |         | - Docker: `zammad-memcached:11211`<br> - Package: unset    | Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is `/opt/zammad/tmp/cache*`.                                                                                                                                                                                                                                                                                                                                                                                                                                             |\n"
+"| REDIS_URL                                                                 |         | - Docker: `redis://zammad-redis:6379`<br> - Package: unset | Provide your own Redis instance if you already have one. The package installation fallback is `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.                                                                                                                                                                                                                                                                                                                                                                                     |\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:47
+#: src/en/reference/environment-variables.md:49
 #, no-wrap
 msgid "Elasticsearch"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:59
+#: src/en/reference/environment-variables.md:61
 #, no-wrap
 msgid ""
 "| Variable                 | Limited | Default Value          | Description                                                                                                                                                                                                   |\n"
@@ -11622,7 +11756,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:71
+#: src/en/reference/environment-variables.md:73
 #, no-wrap
 msgid ""
 "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
@@ -11637,7 +11771,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:86
+#: src/en/reference/environment-variables.md:88
 #, no-wrap
 msgid ""
 "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                             |\n"
@@ -11655,13 +11789,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:87
+#: src/en/reference/environment-variables.md:89
 #, no-wrap
 msgid "Performance Tuning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:91
+#: src/en/reference/environment-variables.md:93
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "recommended values here; the optimal configuration depends on your system's "
@@ -11669,7 +11803,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:94
+#: src/en/reference/environment-variables.md:96
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
 "at which performance will begin to degrade rather than improve, or other "
@@ -11677,7 +11811,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:97
+#: src/en/reference/environment-variables.md:99
 msgid ""
 "Below settings may consume all available database connections. Please "
 "consider the [Configure Database Server](config-db-server) for more "
@@ -11685,7 +11819,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:104
+#: src/en/reference/environment-variables.md:106
 #, no-wrap
 msgid ""
 "| Variable                                  | Limited | Default Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n"
@@ -11697,13 +11831,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:105
+#: src/en/reference/environment-variables.md:107
 #, fuzzy, no-wrap
 msgid "How to Set Environment Variables"
 msgstr "Променљиве окружења"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:110
+#: src/en/reference/environment-variables.md:112
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -11713,51 +11847,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:112
+#: src/en/reference/environment-variables.md:114
 #, fuzzy
 msgid "Examples for package installations:"
 msgstr "Инсталација пакета"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:114
+#: src/en/reference/environment-variables.md:116
 msgid "Set OPTION to \"value\":"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:115
+#: src/en/reference/environment-variables.md:117
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:120
+#: src/en/reference/environment-variables.md:122
 msgid "Get OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:121
+#: src/en/reference/environment-variables.md:123
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:126
+#: src/en/reference/environment-variables.md:128
 msgid "Unset OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:127
+#: src/en/reference/environment-variables.md:129
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:132
+#: src/en/reference/environment-variables.md:134
 msgid "Restart Zammad after changing settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:133
+#: src/en/reference/environment-variables.md:135
 #, fuzzy, no-wrap
 #| msgid "systemctl start zammad\n"
 msgid "sudo systemctl restart zammad\n"
@@ -15598,9 +15732,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/graphql.md:23
 msgid ""
-"Fetching the GraphQL schema of Zammad (called introspection) allows you to "
-"have an autocomplete feature and logic checks in your client while writing a "
-"request."
+"Fetching the Zammad GraphQL schema (called introspection) enables "
+"autocomplete and client-side validation while writing requests."
 msgstr ""
 
 #. type: Title ##
@@ -15671,7 +15804,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/graphql.md:46
 #, no-wrap
-msgid "Prepare your Client"
+msgid "Prepare Your Client"
 msgstr ""
 
 #. type: Plain text
@@ -15696,35 +15829,44 @@ msgstr ""
 msgid "Fetch Zammad's GraphQL schema from introspection or load it from file."
 msgstr ""
 
+#. type: Fenced div block (warning)
+#: src/en/reference/graphql.md:54
+#, no-wrap
+msgid ""
+"The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the\n"
+"environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is\n"
+"**not recommended**.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/reference/graphql.md:55
+#: src/en/reference/graphql.md:61
 msgid ""
 "Click on details to watch a screencast showing the basic steps using Bruno "
 "as client."
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/graphql.md:56
+#: src/en/reference/graphql.md:62
 #, no-wrap
 msgid "<video controls=\"controls\" src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/graphql.md:60
+#: src/en/reference/graphql.md:66
 #, fuzzy, no-wrap
 #| msgid "Create a new ticket"
 msgid "Create a Request"
 msgstr "Отворите нови тикет"
 
 #. type: Plain text
-#: src/en/reference/graphql.md:64
+#: src/en/reference/graphql.md:70
 msgid ""
 "All requests and responses are in JSON format. This means all information "
 "must be encapsulated in brackets and have a hierarchical structure."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:67
+#: src/en/reference/graphql.md:73
 msgid ""
 "Let's have a look at a request to fetch information from Zammad. Such a "
 "request starts with the string `query`, followed by an object you want to "
@@ -15732,12 +15874,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:69
+#: src/en/reference/graphql.md:75
 msgid "Basic example to fetch users with their first and last name:"
 msgstr ""
 
 #. type: Fenced code block (gql :line-numbers)
-#: src/en/reference/graphql.md:70
+#: src/en/reference/graphql.md:76
 #, no-wrap
 msgid ""
 "query userName (\n"
@@ -15751,7 +15893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:83
+#: src/en/reference/graphql.md:89
 msgid ""
 "The `$userId` from line 2 defines a variable which is used as an ID. In the "
 "variables section of your client, provide the value for it. In this example, "
@@ -15759,7 +15901,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (json)
-#: src/en/reference/graphql.md:84
+#: src/en/reference/graphql.md:90
 #, no-wrap
 msgid ""
 "{\n"
@@ -15768,7 +15910,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:93
+#: src/en/reference/graphql.md:99
 msgid ""
 "The value above is in the global ID format of Zammad's GraphQL "
 "implementation. Depending on which object type you want to deal with, "
@@ -15777,7 +15919,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:96
+#: src/en/reference/graphql.md:102
 msgid ""
 "Starting with line 4 in the code block above is the actual request. This "
 "simple example just fetches the attributes `firstname` and `lastname` from "
@@ -15785,34 +15927,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:98
+#: src/en/reference/graphql.md:104
 msgid ""
 "Click on details to watch a screencast showing a basic request using a "
 "variable in Bruno."
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/graphql.md:99
+#: src/en/reference/graphql.md:105
 #, no-wrap
 msgid "<video controls=\"controls\" src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:104
+#: src/en/reference/graphql.md:110
 msgid ""
 "To create or change data, replace the `query` by `mutation` in the request "
 "body."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:108
+#: src/en/reference/graphql.md:114
 msgid ""
 "The examples use variables for the different object types. Make sure to set "
 "it when using the examples."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -15828,7 +15970,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -15843,7 +15985,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -15859,7 +16001,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -15874,7 +16016,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -15890,7 +16032,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:109
+#: src/en/reference/graphql.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -15905,19 +16047,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/graphql.md:155
+#: src/en/reference/graphql.md:161
 #, no-wrap
 msgid "Appendix"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/graphql.md:157
+#: src/en/reference/graphql.md:163
 #, fuzzy, no-wrap
 msgid "Global IDs"
 msgstr "Затвори претрагу"
 
 #. type: Fenced div block (info)
-#: src/en/reference/graphql.md:159
+#: src/en/reference/graphql.md:165
 #, no-wrap
 msgid ""
 "\n"
@@ -15926,17 +16068,17 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:167
+#: src/en/reference/graphql.md:173
 msgid "`gid://zammad/Ticket/{ID}`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:167
+#: src/en/reference/graphql.md:173
 msgid "`gid://zammad/User/{ID}`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:167
+#: src/en/reference/graphql.md:173
 msgid "`gid://zammad/Organization/{ID}`"
 msgstr ""
 

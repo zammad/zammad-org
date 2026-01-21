@@ -84,10 +84,10 @@ abgeschickte Antwort in einem Ticket.
 
 ## Tickets finden
 
-Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig vom
+Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig von Ihrem
 Anwendungsfall.
 
-### Über Übersichten
+### Per Übersichten
 
 Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie
 zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch
@@ -105,7 +105,7 @@ erscheint.
 Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 Übersichten](/de/documentation/use/guides/overviews).
 
-### Über die Suche
+### Per Suche
 
 Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten
 sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie

@@ -496,10 +496,11 @@ konzentrieren.
 
 **Wie?**
 
-You might have seen it already: simply hover your mouse over an avatar icon,
-no matter if it is in the header, footer, main content or the content
-sidebar in the ticket detail view. To see more details, click on the user
-avatar to open the [user detail page](#user-detail-page).
+Sie haben es vielleicht schon gesehen: Fahren Sie einfach mit der Maus über
+ein Avatar-Symbol, egal ob es sich im Header, in der Fußzeile, im
+Hauptinhalt oder in der Seitenleiste der Ticket-Detailansicht befindet. Um
+weitere Details zu sehen, klicken Sie auf den Avatar eines Benutzers, um die
+[Benutzer-Detailseite](#user-detail-page) zu öffnen.
 
 ![Screenshot zeigt einen Avatar mit geöffneter
 Benutzerinfo](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
@@ -508,52 +509,52 @@ Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
 kann.
 
-## User Detail Page
+## Benutzer-Detailseite
 
-![Screenshot shows user detail
-page](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
-
-**Warum?**
-
-It allows you to see all relevant user information in one place. Examples
-what you can find and do there:
-
-- See organization membership
-- See a graph of recent tickets
-- Add or edit a note
-- Edit the customer (via ::a:: menu)
-- See a history of changes (via ::a:: menu)
-- Create a new ticket with this user as customer
-
-**Wie?**
-
-Simply click on a user avatar (e.g. in the header of the ticket detail
-view). This opens a new tab with the customer detail page. In case you also
-have admin permissions, you can even create a deletion job for a user from
-the ::a:: menu.
-
-## Organization Detail Page
-
-![Screenshot shows organization detail
-page](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+![Screenshot zeigt
+Benutzer-Detailseite](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
 
 **Warum?**
 
-It allows you to see all relevant organization information in one
-place. Examples what you can find and do there:
+Sie können alle relevanten Benutzerinformationen an einem Ort
+einsehen. Beispiele dafür, was Sie dort finden und tun können:
 
-- See the members of the organization
-- See a graph of the recent tickets of the whole organization
-- Add or edit a note
-- Edit the organization (via ::a:: menu)
-- See a history of changes (via ::a:: menu)
-- Create a new user as a member of this organization
+- Mitgliedschaft in einer Organisation sehen
+- Diagramm der letzten Tickets sehen
+- Hinzufügen oder Bearbeiten einer Notiz
+- Kundeninformationen bearbeiten (über das ::a:: Menü)
+- Historie der Änderungen anzeigen (über das ::a:: Menü)
+- Ein neues Ticket mit diesem Benutzer als Kunden erstellen
 
 **Wie?**
 
-Simply click on an organization avatar (e.g. in the header of the ticket
-detail view next to the user avatar). This opens a new tab with the
-organization detail page.
+Klicken Sie einfach auf einen Benutzer-Avatar (z.B. in der Kopfzeile der
+Ticket-Detailansicht). Dadurch öffnet sich ein neuer Tab mit der
+Kunden-Detailseite. Falls Sie auch Admin-Rechte haben, können Sie über das
+::a:: Menü sogar eine Löschaufgabe für diesen Benutzer erstellen.
+
+## Organisations-Detailseite
+
+![Screenshot zeigt
+Organisations-Detailseite](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+
+**Warum?**
+
+Hier können Sie alle relevanten Informationen über eine Organisation an
+einem Ort einsehen. Beispiele dafür, was Sie dort finden und tun können:
+
+- Mitglieder der Organisation sehen
+- Ein Diagramm der letzten Tickets der gesamten Organisation sehen
+- Hinzufügen oder Bearbeiten einer Notiz
+- Die Organisation bearbeiten (über das ::a:: Menü)
+- Historie der Änderungen anzeigen (über das ::a:: Menü)
+- Einen neuen Benutzer als Mitglied dieser Organisation erstellen
+
+**Wie?**
+
+Klicken Sie einfach auf einen Organisationsavatar (z.B. in der Kopfzeile der
+Ticket-Detailansicht neben dem Benutzeravatar). Dies öffnet die
+Organisations-Detailseite als neuen Tab.
 
 ## Externe Issues und Inventar
 
