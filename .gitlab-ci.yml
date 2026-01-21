@@ -47,9 +47,7 @@ push translations update commit:
     - git status
     - git config user.email "noreply@weblate.org"
     - git config user.name "Weblate"
-    # TODO drop usage of dedicated access token when CI_JOB_TOKEN support for commit pushing was added to weblate
-    #   https://docs.gitlab.com/ee/ci/jobs/ci_job_token.html#git-push-to-your-project-repository
-    - git remote add gitlab_origin https://oauth2:${WEBLATE_ACCESS_TOKEN}@${CI_SERVER_FQDN}/${CI_PROJECT_PATH}.git
+    - git remote add gitlab_origin https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_FQDN}/${CI_PROJECT_PATH}.git
     - git add .
     - git status --porcelain | grep "^[MA]" || exit 0 # check if files were added/changed
     - 'git commit -m "Maintenance: Update translated files and catalog"'
