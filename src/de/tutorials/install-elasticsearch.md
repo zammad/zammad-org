@@ -132,20 +132,20 @@ Achten Sie darauf, die Ausgabe zu überprüfen und das Passwort des Superusers z
 
 ## Konfiguration
 
-Öffnen Sie die Datei `/etc/elasticsearch/elasticsearch.yml` und nehmen Sie
-folgenden Anpassungen vor bzw. entfernen Sie die vorangestellten
-Kommentar-Zeichen:
+Optionally, check and configure Elasticsearch’s configuration file which you
+can find under ``/etc/elasticsearch/elasticsearch.yml``.
 
-```yml
-network.host: 0.0.0.0
-transport.host: 0.0.0.0
-```
-
-Optional, um die maximale Kontextgröße für den Index zu erhöhen:
+We recommend to adjust the maximum context size which should get indexed by
+Elasticsearch. Adjust it to a reasonable size like in the example:
 
 ```yml
 http.max_content_length: 400mb
 ```
+
+Additional configuration is out of scope of this documentation. In case your
+scenario needs additional configuration, have a look at [Elastic’s
+configuration
+reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
 
 ## Starten und Aktivieren von Elasticsearch
 
