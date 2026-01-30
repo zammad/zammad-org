@@ -10,6 +10,11 @@ features:
     icon: 🧑‍🔧
     link: /sr/documentation/manage-zammad/general
     title: 'Администраторска документација'
+  - 
+    details: 'Learn about important terms and concepts used in Zammad.'
+    icon: 🗂️
+    link: /sr/reference/glossary
+    title: Речник
 order: 1
 title: Увод
 ---

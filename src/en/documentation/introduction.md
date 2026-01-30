@@ -10,6 +10,10 @@ features:
     title: Administrator Documentation
     details: Find out how to configure Zammad and connect it with remote systems.
     link: /en/documentation/manage-zammad/general
+  - icon: 🗂️
+    title: Glossary
+    details: Learn about important terms and concepts used in Zammad.
+    link: /en/reference/glossary
 ---
 
 # Welcome to the Zammad Documentation

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-29 15:08+0100\n"
+"POT-Creation-Date: 2026-01-30 10:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1422,7 +1422,7 @@ msgid "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:280 src/en/documentation/introduction.md:25
+#: src/en/contribute/style-guide.md:280 src/en/documentation/introduction.md:29
 #: src/en/documentation/use/general.md:40 src/en/get-started/get-zammad.md:32
 #, markdown-text, no-wrap
 msgid "<VPDocFeatures />\n"
@@ -1539,6 +1539,25 @@ msgstr ""
 msgid "Administrator Documentation"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Learn about important terms and concepts used in Zammad."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "/en/reference/glossary"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/introduction.md:1 src/en/reference/glossary.md:1
+#: src/en/reference/glossary.md:6
+#, markdown-text, no-wrap
+msgid "Glossary"
+msgstr ""
+
 #. type: Title #
 #: src/en/documentation/introduction.md:1
 #: src/en/documentation/use/guides/ai.md:8
@@ -1552,13 +1571,13 @@ msgid "Introduction"
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/introduction.md:15
+#: src/en/documentation/introduction.md:19
 #, markdown-text, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:20
+#: src/en/documentation/introduction.md:24
 #, markdown-text
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
@@ -1568,7 +1587,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:24
+#: src/en/documentation/introduction.md:28
 #, markdown-text
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
@@ -14933,12 +14952,6 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:1397
 #, markdown-text
 msgid "ID of the agent of the chat."
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/glossary.md:1 src/en/reference/glossary.md:6
-#, markdown-text, no-wrap
-msgid "Glossary"
 msgstr ""
 
 #. type: Plain text
