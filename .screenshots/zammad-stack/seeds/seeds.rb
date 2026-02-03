@@ -145,6 +145,8 @@ ticket2 = Ticket.create(
   created_at: created_at,
   updated_at: created_at,
   escalation_at: Time.zone.now - 40.minutes,
+  first_response_escalation_at: Time.zone.now - 40.minutes,
+  close_escalation_at: Time.zone.now + 200.minutes, 
 )
 article = Ticket::Article.create(
   ticket:       ticket2,
@@ -656,6 +658,10 @@ Cti::Log.create(
   },
   created_at:   Time.zone.now,
 )
+
+puts 'Enabling AI features...'
+
+# Enable AI features
 
 SeedHelpers.set_setting_without_validation(name: 'ai_provider', value: 'zammad_ai')
 SeedHelpers.set_setting_without_validation(name: 'ai_provider_config', value: { 'token' => 'foobar' }) # just a fake token to trigger the feature

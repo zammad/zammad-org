@@ -241,4 +241,18 @@ describe('usage advanced features', () => {
     })
   })
 
+    it('escalation-panel', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/3')
+    cy.wait(3000) // loading
+    cy.get('[aria-label="Show ticket escalation information"]').trigger('mouseenter').wait(1000)
+    cy.get('.popover*').should('be.visible')
+    cy.get('[aria-label="Show ticket escalation information"]').clip({ padding: 5 }).then((TopClip) => {
+      cy.get('.popover*').clip({ padding: 5 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('escalation-panel', { clip })
+        })
+      })
+    })
+  })
 })

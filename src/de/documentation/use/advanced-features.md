@@ -320,6 +320,41 @@ Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
   abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im
   Screenshot)
 
+## Monitoring Ticket Escalations
+
+**Warum?**
+
+Service Level Agreements (SLAs) ensure timely responses to customer
+requests. Your administrator sets such goals as responding to all inquiries
+within eight hours, with optional custom deadlines for specific
+customers. When such a deadline is passed, the ticket escalates.
+
+**Wie?**
+
+Zammad notifies you by default when tickets approach or exceed their
+deadlines. Configure these notifications in your [profile
+settings](/en/documentation/use/manage-profile#notifications). Zammad also
+ships a default overview called "Escalated Tickets". This overview includes
+already escalated tickets and tickets which are expected to escalate within
+the next 10 minutes.
+
+SLA-relevant tickets display a timestamp in the ticket detail header. Hover
+over this timestamp to see all escalation stages and deadlines in a
+popup. It shows all upcoming or reached escalation times based on your SLA
+configuration:
+
+![Screenshot shows escalation panel by hovering over escalation
+timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
+
+:::info
+The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
+ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.
+:::
+
+The SLA feature requires a configuration from your admin. In case you don’t
+see escalation timestamps, either the ticket is not SLA-relevant or the
+feature is not configured.
+
 ## Mehrfach-Aktionen
 
 ![Screenshot zeigt Seitenleiste mit
