@@ -163,32 +163,6 @@ Das Makro wird sofort und ohne zusätzliche Bestätigung ausgeführt!
 Sie können ein Makro auch auf mehrere Tickets auf einmal anwenden. Sehen Sie
 sich unter [Mehrfach-Aktionen](#mehrfach-aktionen) an, wie das geht.
 
-## Tags
-
-![Screenshot zeigt Tag-Bereich in der
-Ticket-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
-
-**Warum?**
-
-Tags sind eine Möglichkeit, ein Ticket zu kategorisieren. Sie können sich
-die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie
-z.B. in Triggern und Übersichten, verwendet werden und sie können auch
-automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.
-Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets,
-die mit dem Tag versehen sind.
-
-**Wie?**
-
-In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der
-Bezeichnung **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die
-Schaltfläche ::+:: klicken. Sie können vorhandene Tags auswählen und neue
-hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht
-deaktiviert hat).
-
-Entfernen Sie sie, indem Sie einfach auf die Schaltfläche ::x::
-klicken. Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen
-eines Tags aus einem Ticket gibt.
-
 ## Checklisten
 
 ![Screenshot zeigt eine Checkliste aus der
@@ -235,8 +209,8 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
   sie verweisen.
   ::: tip
-  Kopieren Sie den Ticket-Hook und die Ticket-Nummer, indem Sie zum gewünschten Ticket gehen und entweder die Kopierknopf in der Kopfzeile benutzen oder mit
-  ddem Tastaturkürzel [[.]]. Dann können Sie es in die Checkliste einfügen, in der Sie darauf verweisen möchten.
+  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or
+  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
   sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"
@@ -285,40 +259,6 @@ Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile.
 ::: warning
 Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!
 :::
-
-## Erkennung gleichzeitige Ticketbearbeitung
-
-![Screenshot zeigt andere Agenten, die das Ticket gerade
-sehen/bearbeiten](/screenshots/advanced-features/simultaneous-work-detection.png)
-
-**Warum?**
-
-Dinge, die man vermeiden sollte:
-
-- Überflüssige Arbeit
-- Widersprüchliche Antworten von verschiedenen Agenten
-- Überschriebene/zurückgenommene Änderungen durch verschiedene Agenten
-
-Deshalb können Sie sofort sehen, wer das aktuell angezeigte Ticket ansieht
-und bearbeitet.
-
-**Wie?**
-
-Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des
-Tickets. Wenn in diesem Live-Benutzer-Bereich ein Avatar eines anderen
-Agenten zu sehen ist (siehe Screenshot oben), sind Sie nicht der einzige
-Agent, der dieses Ticket betrachtet.
-
-Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:
-
-- Ein anderer Agent sieht sich das Ticket an (nicht abgedunkelter Avatar
-  ohne zusätzliches Icon)
-- Ein anderer Agent hat das Ticket geöffnet, ist aber momentan nicht aktiv
-  mit dem Ticket beschäftigt (abgedunkelter Avatar mit einem Schlummer-Icon,
-  siehe linker Avatar im Screenshot)
-- Ein anderer Agent arbeitet gerade aktiv an diesem Ticket (nicht
-  abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im
-  Screenshot)
 
 ## Monitoring Ticket Escalations
 

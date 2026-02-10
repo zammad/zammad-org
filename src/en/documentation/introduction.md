@@ -5,7 +5,7 @@ features:
   - icon: 🙋
     title: User Documentation
     details: Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need.
-    link: /en/documentation/use/general
+    link: /en/documentation/use/start
   - icon: 🧑‍🔧
     title: Administrator Documentation
     details: Find out how to configure Zammad and connect it with remote systems.

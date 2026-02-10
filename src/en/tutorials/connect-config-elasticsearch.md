@@ -54,7 +54,7 @@ sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
 To add it in Zammad, either upload the certificate file or paste the content in the dialog. Make sure to copy/paste the
-delimiters (e.g. ``-----BEGIN CERTIFICATE-----``) too.
+delimiters (e.g. `-----BEGIN CERTIFICATE-----`) too.
 
 ### Build/Rebuild the Searchindex
 

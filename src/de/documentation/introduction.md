@@ -3,7 +3,7 @@ features:
   - 
     details: 'Hier finden Sie alles, wie Sie täglich mit Zammad arbeiten, mit Tipps, Anleitungen und allem, was Sie sonst noch brauchen könnten.'
     icon: 🙋
-    link: /de/documentation/use/general
+    link: /en/documentation/use/start
     title: 'Benutzer Dokumentation'
   - 
     details: 'Erfahren Sie, wie Sie Zammad konfigurieren und mit anderen Systemen verbinden können.'

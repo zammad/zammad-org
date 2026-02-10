@@ -129,3 +129,12 @@ Cypress.Commands.add('highlight', { prevSubject: 'get' }, ($el, opts = {}) => {
 
   return cy.wrap($el)
 })
+
+Cypress.Commands.add('touchDeviceEmulation', (enabled) => {
+  Cypress.automation('remote:debugger:protocol', {
+    command: 'Emulation.setTouchEmulationEnabled',
+    params: {
+      enabled,
+    },
+  })
+})

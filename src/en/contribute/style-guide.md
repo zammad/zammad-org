@@ -138,6 +138,7 @@ Some important rules and customized ones are mentioned below.
 | Add button                | ::+::                         | `::+::`                         |
 | Delete button             | ::x::                         | `::x::`                         |
 | Action menu               | ::a::                         | `::a::`                         |
+| Copy to clipboard button  | ::c::                         | `::c::`                         |
 
 #### Heading Structure
 

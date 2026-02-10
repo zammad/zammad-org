@@ -11,7 +11,7 @@ out of the box and should not require adjustments unless your setup differs or y
 
 ## Standard Setup
 
-For a Redis standard deployment, you can provide one variable: ``REDIS_URL``. This variable can include IP/URL, a port,
+For a Redis standard deployment, you can provide one variable: `REDIS_URL`. This variable can include IP/URL, a port,
 a username and password. Examples:
 
 - `redis://redis.example.com:1234`
@@ -20,7 +20,7 @@ a username and password. Examples:
 ## Sentinel Setup
 
 The variables in the table don't have default values set. In case you want to connect Zammad to a Redis Sentinel
-cluster, only ``REDIS_SENTINELS`` variable is mandatory, the others are optional.
+cluster, only `REDIS_SENTINELS` variable is mandatory, the others are optional.
 
  Variable                    | Description                                                                                                                                      |
 -----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

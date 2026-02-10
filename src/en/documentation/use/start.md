@@ -1,11 +1,11 @@
 ---
 order: 1
-title: General
+title: Start
 features:
   - icon: 🙋
     title: Zammad Beginner
     details: If you are new to Zammad and ticketing software in general, first read the basics here.
-    link: /en/documentation/use/start-using-zammad
+    link: /en/documentation/use/basics/zammad-ui
   - icon: 🧑‍✈️
     title: Advanced User
     details: If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar.
@@ -16,7 +16,7 @@ features:
     link: /en/documentation/manage-zammad/general
 ---
 
-# Use Zammad
+# Welcome
 
 Welcome to the user documentation of Zammad. Here you can learn how to use Zammad to collaborate with your colleagues
 even better!

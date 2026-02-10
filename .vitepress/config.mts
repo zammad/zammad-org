@@ -98,6 +98,11 @@ export default defineConfig(
                   content = '✕'
                   ariaLabel = 'X'
                   break;
+                case 'c':
+                  className = 'copy-button'
+                  content = '<img src="/assets/copy.svg" alt="copy" />'
+                  ariaLabel = 'copy'
+                  break;
                 default:
                   className = content = ariaLabel = rawIcon
               }

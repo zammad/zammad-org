@@ -123,24 +123,6 @@ The macro gets executed immediately and without an additional confirmation!
 
 You can also apply a macro to several ticket at once. Have a loot at [bulk actions](#bulk-actions) how to do that.
 
-## Tags
-
-![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
-
-**Why?**
-
-Tags are one way to categorize a ticket. You can think of tags as some kind of labels. They can be used in conditions
-like in triggers and in overviews and they can also be assigned automatically by macros, schedulers and triggers.
-Of course you can search for the text of the tags and will find tickets which have the tag attached.
-
-**How?**
-
-In the ticket sidebar, you can find a section which is labeled as **Tags**. Add a tag by clicking on the ::+:: button. You
-can select existing tags and add new ones (if your admin didn't disable to add new tags).
-
-Remove them by simply click on the ::x:: button. Be aware that there is no confirmation dialog for deleting a tag from
-a ticket.
-
 ## Checklists
 
 ![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
@@ -173,8 +155,8 @@ There are two features, which are not directly visible:
 - You can refer to other tickets as a checklist item by using its hook and number in the item text (e.g.
   `Ticket#123456`). Such items can't be checked manually, they reflect the state of the referred ticket.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use
-  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
+  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or
+  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
   :::
 - Zammad automatically checks if all checklist items are completed. The check is performed when you set a ticket to
   "closed". If not all items are completed, Zammad will prompt you to either work on the remaining tasks and keep the
@@ -212,33 +194,6 @@ To **apply an already existing draft**, click on the `Draft Available` button on
 ::: warning
 Applying a draft overwrites your unsaved changes!
 :::
-
-## Simultaneous Work Detection
-
-![Screenshot shows other agents viewing/editing the ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
-
-**Why?**
-
-Things to avoid:
-
-- Superfluous work
-- Conflicting answers from different agents
-- Overwritten/undone changes by different agents
-
-This is why you can immediately see who views and edits the currently viewed ticket.
-
-**How?**
-
-Have a look at the footer bar in the ticket detail view. When there is an avatar from another agent in the live user
-section (see screenshot above), you are not the only one viewing this ticket.
-
-Depending on the additional icon and if the avatar icon is faded, it means:
-
-- Another agent is viewing the ticket (not faded avatar without additional icon)
-- Another agent opened the ticket but is currently not actively viewing this ticket (faded avatar icon with the
-  snooze icon, see left avatar in screenshot)
-- Another agent is currently actively working on this ticket (not faded avatar icon with a pencil icon, see right
-  avatar in screenshot)
 
 ## Monitoring Ticket Escalations
 

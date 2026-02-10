@@ -26,7 +26,7 @@ describe('AI screenshots', () => {
     })
     cy.visit('/desktop/tickets/2')
     cy.wait(3000) // loading
-    cy.get('[aria-label="Summary"]').click()
+    cy.get('[aria-label="AI summary"]').click()
     cy.get('#content-sidebar').highlight({ padding: -2 })
     cy.screenshot('ai-ticket-summary-sidebar')
   })
@@ -37,7 +37,7 @@ describe('AI screenshots', () => {
     cy.wait(3000) // loading
     cy.get('button').contains('Add reply').click().wait(500)
     cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
-    cy.get('[aria-label="Writing assistant tools"]').click().wait(200)
+    cy.get('[aria-label="AI writing assistant tools"]').click().wait(200)
     cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-writing-assistant-tools')
     cy.get('button').contains('Discard your unsaved changes').click() //removing draft to clean up
     cy.get('button').contains('Discard changes').click() //removing draft to clean up

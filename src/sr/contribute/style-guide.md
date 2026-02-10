@@ -171,6 +171,7 @@ changes. Otherwise, the build of the documentation will fail.
 | Add button                | ::+::                         | `::+::`                         |
 | Delete button             | ::x::                         | `::x::`                         |
 | Action menu               | ::a::                         | `::a::`                         |
+| Copy to clipboard button  | ::c::                         | `::c::`                         |
 
 #### Структура наслова
 

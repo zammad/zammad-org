@@ -55,10 +55,9 @@ Elasticsearch folgenden Befehl aus:
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-Um es in Zammad hinzuzufügen, laden Sie entweder die Zertifikatsdatei hoch
-oder fügen Sie den Inhalt in das Dialogfeld ein. Achten Sie darauf, dass Sie
-auch die Trennzeichen (z.B. ``-----BEGIN CERTIFICATE-----``)
-kopieren/einfügen.
+To add it in Zammad, either upload the certificate file or paste the content
+in the dialog. Make sure to copy/paste the delimiters (e.g. `-----BEGIN
+CERTIFICATE-----`) too.
 
 ### Den Suchindex aufbauen/neu erstellen
 

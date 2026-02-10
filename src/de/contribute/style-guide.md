@@ -173,15 +173,16 @@ aufgeführt.
 
 #### Text und UI
 
-| Typ                       | Hervorhebung in Dokumentation     | Markdown Syntax                     |
-|---------------------------|-----------------------------------|-------------------------------------|
-| Buttons                   | `Sign in`                         | `` `Sign in` ``                     |
-| Felder und UI-Elemente    | **Name**                          | `**Name**`                          |
-| Orte/Pfade                | _Einstellungen > Kanäle > Email_  | `_Einstellungen > Kanäle > Email_`  |
-| Tastaturkürzel            | [[x]]                             | `[[x]]`                             |
-| Hinzufügen Schaltfläche   | ::+::                             | `::+::`                             |
-| Löschen Schaltfläche      | ::x::                             | `::x::`                             |
-| Aktions-Schaltfläche      | ::a::                             | `::a::`                             |
+| Type                      | Highlighting in documentation | Markdown syntax                 |
+|-------------------------- |-------------------------------|---------------------------------|
+| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
+| Fields and UI elements    | **Name**                      | `**Name**`                      |
+| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
+| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
+| Add button                | ::+::                         | `::+::`                         |
+| Delete button             | ::x::                         | `::x::`                         |
+| Action menu               | ::a::                         | `::a::`                         |
+| Copy to clipboard button  | ::c::                         | `::c::`                         |
 
 #### Struktur der Überschrift
 

@@ -3,7 +3,7 @@ features:
   - 
     details: 'Сазнајте све о томе како да радите у Zammad-у на дневном нивоу, са саветима, упутствима и све остало што можете да замислите.'
     icon: 🙋
-    link: /sr/documentation/use/general
+    link: /en/documentation/use/start
     title: 'Корисничка документација'
   - 
     details: 'Сазнајте како да подесите Zammad и повежете га са удаљеним системима.'

@@ -131,7 +131,7 @@ running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 ## Configuration
 
 Optionally, check and configure Elasticsearch’s configuration file which you can find under
-``/etc/elasticsearch/elasticsearch.yml``.
+`/etc/elasticsearch/elasticsearch.yml`.
 
 We recommend to adjust the maximum context size which should get indexed by Elasticsearch. Adjust it to a reasonable
 size like in the example:

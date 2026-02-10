@@ -678,6 +678,13 @@
     }
   }
 
+  .copy-button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+
   .remove-button {
     color: var(--vp-c-white);
     background-color: #e9613a;
