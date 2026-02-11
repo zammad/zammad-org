@@ -135,17 +135,19 @@ Achten Sie darauf, die Ausgabe zu überprüfen und das Passwort des Superusers z
 Optionally, check and configure Elasticsearch’s configuration file which you
 can find under `/etc/elasticsearch/elasticsearch.yml`.
 
-We recommend to adjust the maximum context size which should get indexed by
-Elasticsearch. Adjust it to a reasonable size like in the example:
+Wir empfehlen, die maximale Kontextgröße, die von Elasticsearch indiziert
+werden soll, anzupassen. Passen Sie den Wert auf eine vernünftige Größe wie
+im Beispiel an:
 
 ```yml
 http.max_content_length: 400mb
 ```
 
-Additional configuration is out of scope of this documentation. In case your
-scenario needs additional configuration, have a look at [Elastic’s
-configuration
-reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
+Eine zusätzliche Konfiguration ist nicht Gegenstand dieser
+Dokumentation. Falls Ihr Szenario eine abweichende Konfiguration erfordert,
+schauen Sie sich bitte die [Konfigurations-Referenz von
+Elastic](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference)
+an.
 
 ## Starten und Aktivieren von Elasticsearch
 

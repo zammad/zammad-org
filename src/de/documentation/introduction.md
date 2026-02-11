@@ -11,7 +11,7 @@ features:
     link: /de/documentation/manage-zammad/general
     title: 'Administrator Dokumentation'
   - 
-    details: 'Learn about important terms and concepts used in Zammad.'
+    details: 'Erfahren Sie mehr über wichtige Begriffe und Konzepte in Zammad.'
     icon: 🗂️
     link: /de/reference/glossary
     title: Glossar

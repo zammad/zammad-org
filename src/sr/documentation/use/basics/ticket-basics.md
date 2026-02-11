@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Ticket Basics'
+title: 'Основе тикета'
 ---
 
-# Ticket Basics
+# Основе тикета
 
 ## Увод
 
@@ -19,17 +19,16 @@ If you're completely new to a ticket system and handled your customer
 requests with an email client so far, you might think that a ticket system
 is complicated. But the opposite is true:
 
-- All emails are now collected in Zammad (and requests from other channels
-  might be as well).
-- You and your colleagues can see who is working on which customer request
-  ("ticket").
-- The state of each request as well as the history (who did what?) is
-  transparent.
-- There is no duplicate work and nothing gets overlooked.
-- You can ask your colleagues directly in the ticket for help in difficult
-  cases.
-- With Zammad's intuitive UI, you can focus on what matters: to resolve
-  customer issues and answer customer questions.
+- Све имејл поруке се сада сливају у Zammad (као и остали захтеви са других
+  канала).
+- Ви и ваше колеге можете видети ко обрађује који захтев клијента („тикет”).
+- Стање сваког захтева као и историјат (ко је урадио шта?) је транспарентно.
+- Нема дуплиране обраде и ништа се не превиђа.
+- Можете питати колеге за помоћ око компликованих случајева директно у
+  тикету.
+- За Zammad-овим иновативним корисничким интерфејсом, можете се усредсредити
+  на оно најбитније: да решите проблеме клијената и одговорите на њихова
+  питања.
 
 This means you can work with Zammad in a similar way as with your email
 client. Except that a ticket has additional attributes. Read on to learn
@@ -61,8 +60,7 @@ towards completion. By default, there are the following states:
 
 - **New**: State for new tickets on which no one has worked on. When
   updating a ticket for the first time, it automatically switches to open.
-- **Open**: State for tickets which aren't resolved yet and some work needs
-  to be done.
+- **Отворено**: Стање за тикете који још нису решени и захтевају обраду.
 - **Pending Close**: State for tickets which are basically resolved but you
   don't want to close immediately. This state requires you to enter a date
   and time at which the ticket automatically switches to closed.

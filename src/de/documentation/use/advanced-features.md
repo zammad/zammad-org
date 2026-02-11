@@ -260,28 +260,31 @@ Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile.
 Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!
 :::
 
-## Monitoring Ticket Escalations
+## Überwachung von Ticket-Eskalationen
 
 **Warum?**
 
-Service Level Agreements (SLAs) ensure timely responses to customer
-requests. Your administrator sets such goals as responding to all inquiries
-within eight hours, with optional custom deadlines for specific
-customers. When such a deadline is passed, the ticket escalates.
+Service Level Agreements (SLAs) gewährleisten eine zeitnahe Beantwortung von
+Kundenanfragen. Ihr Administrator legt diese Ziele fest - z.B. die
+Beantwortung aller Anfragen innerhalb von acht Stunden - mit optionalen
+individuellen Fristen für bestimmte Kunden. Wenn eine solche Frist
+überschritten wird, eskaliert das Ticket.
 
 **Wie?**
 
-Zammad notifies you by default when tickets approach or exceed their
-deadlines. Configure these notifications in your [profile
-settings](/en/documentation/use/manage-profile#notifications). Zammad also
-ships a default overview called "Escalated Tickets". This overview includes
-already escalated tickets and tickets which are expected to escalate within
-the next 10 minutes.
+Zammad benachrichtigt Sie standardmäßig, wenn sich Tickets ihren Fristen
+nähern oder diese überschreiten. Konfigurieren Sie diese Benachrichtigungen
+in Ihren
+[Profileinstellungen](/de/documentation/use/manage-profile#notifications).
+Zammad liefert auch eine Standardübersicht namens "Eskalierte Tickets"
+aus. Diese Übersicht enthält bereits eskalierte Tickets und Tickets, bei
+denen eine Eskalation innerhalb der nächsten 10 Minuten zu erwarten ist.
 
-SLA-relevant tickets display a timestamp in the ticket detail header. Hover
-over this timestamp to see all escalation stages and deadlines in a
-popup. It shows all upcoming or reached escalation times based on your SLA
-configuration:
+SLA-relevante Tickets zeigen einen Zeitstempel in der Kopfzeile des Tickets
+an. Bewegen Sie den Mauszeiger über diesen Zeitstempel, um alle
+Eskalationsstufen und Fristen in einem Popup zu sehen. Es zeigt alle
+bevorstehenden oder überschrittenen Eskalationszeiten auf der Grundlage
+Ihrer SLA-Konfiguration an:
 
 ![Screenshot shows escalation panel by hovering over escalation
 timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)

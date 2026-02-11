@@ -23,8 +23,9 @@ können genau die Daten anfordern, die Sie benötigen, wodurch unnötige
 Datenübertragungen und die Suche nach der Nadel im Heuhaufen minimiert
 werden.
 
-Fetching the Zammad GraphQL schema (called introspection) enables
-autocomplete and client-side validation while writing requests.
+Das Abrufen des Zammad GraphQL-Schemas (Introspection genannt) ermöglicht
+eine automatische Vervollständigung und clientseitige Validierung beim
+Schreiben von Requests.
 
 ## Erste Schritte
 
@@ -55,7 +56,7 @@ Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da
 Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben,
 erstellen Sie einfach ein neues Token.
 
-### Prepare Your Client
+### Client vorbereiten
 
 Öffnen Sie Ihren API Client und richten Sie ihn ein.
 
@@ -66,9 +67,9 @@ erstellen Sie einfach ein neues Token.
   laden Sie es aus einer Datei.
 
 ::: warning
-The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the
-environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is
-**not recommended**.
+Die Schema-Introspection ist für Zammad in der Entwicklungsumgebung aktiviert. Um sie für Produktionssysteme zu aktivieren, setzen Sie die
+Umgebungsvariable `ZAMMAD_GRAPHQL_INTROSPECTION` auf `true`. Dies vergrößert die potentielle Angriffsfläche und wird
+**nicht empfohlen**.
 :::
 
 Klicken Sie auf Details, um einen Screencast zu sehen, der die grundlegenden

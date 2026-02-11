@@ -20,18 +20,18 @@ The search covers basically all information which is stored in Zammad and
 which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes),
 like:
 
-- Message subject and text
-- Names and email addresses
-- Text in file attachments
-- User and organizations details (like notes, names, etc.)
+- Предмет и садржај поруке
+- Имена и имејл адресе
+- Текст у датотекама прилога
+- Детаљи корисника и организација (као што су напомене, називи, итд)
 
 When the search field gets activated, you can see the ticket which got
 recently closed from your taskbar as well as your recent search queries.
 
-After entering a search term, you immediately see a preview of the search
-results. These results are separated by type to make sure you won't get lost
-in the results. Selecting one of those results will open a new navigation
-tab (if not already opened) with the item.
+По уносу кључне речи, моментално ћете видети приказ резултата претраге. Ови
+резултати су одвојени по врсти да се не бисте изгубили у њима. Клик на неки
+од резултата ће отворити нову страницу са објектом (уколико није већ
+отворена).
 
 If you press [[enter]] or click on `detailed search`, Zammad displays a page
 with search results. There you can narrow down your search by selecting a

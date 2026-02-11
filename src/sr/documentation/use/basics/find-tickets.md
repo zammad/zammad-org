@@ -5,9 +5,10 @@ title: 'Find Tickets'
 
 # Find Tickets
 
-There are different ways to find tickets, depending on your use case.
+Има више начина како да пронађете тикете, у зависности од вашег случаја
+коришћења.
 
-## Via Overviews
+## Преко прегледа
 
 If you search for new tickets to work on, your first look should be in the
 overview section. You can either open it by clicking the `Overviews` button
@@ -23,7 +24,7 @@ appears in which overview.
 For a detailed description, head over to the [overview usage
 guide](/en/documentation/use/guides/overviews).
 
-## Via Search
+## Преко претраге
 
 However, if you search for a specific ticket which might or might not be
 visible in the overviews, you can use the search. You can find it in the top

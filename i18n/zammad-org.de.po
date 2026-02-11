@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-19 11:53+0100\n"
-"PO-Revision-Date: 2026-01-20 06:00+0000\n"
-"Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
+"POT-Creation-Date: 2026-02-10 13:24+0100\n"
+"PO-Revision-Date: 2026-02-07 16:00+0000\n"
+"Last-Translator: iLocIT! <matthiasc@ilocit.de>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
 "Language: de\n"
@@ -501,6 +501,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:69
+#: src/en/documentation/use/basics/index.md:1
 #: src/en/documentation/use/guides/search.md:8
 #: src/en/get-started/installation/package.md:62
 #: src/en/tutorials/backup-restore.md:33
@@ -1259,8 +1260,18 @@ msgid "Text and UI"
 msgstr "Text und UI"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:141
-#, no-wrap
+#: src/en/contribute/style-guide.md:142
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
+#| "|-------------------------- |-------------------------------|---------------------------------|\n"
+#| "| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |\n"
+#| "| Fields and UI elements    | **Name**                      | `**Name**`                      |\n"
+#| "| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |\n"
+#| "| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |\n"
+#| "| Add button                | ::+::                         | `::+::`                         |\n"
+#| "| Delete button             | ::x::                         | `::x::`                         |\n"
+#| "| Action menu               | ::a::                         | `::a::`                         |\n"
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
 "|-------------------------- |-------------------------------|---------------------------------|\n"
@@ -1271,6 +1282,7 @@ msgid ""
 "| Add button                | ::+::                         | `::+::`                         |\n"
 "| Delete button             | ::x::                         | `::x::`                         |\n"
 "| Action menu               | ::a::                         | `::a::`                         |\n"
+"| Copy to clipboard button  | ::c::                         | `::c::`                         |\n"
 msgstr ""
 "| Typ                       | Hervorhebung in Dokumentation     | Markdown Syntax                     |\n"
 "|---------------------------|-----------------------------------|-------------------------------------|\n"
@@ -1283,13 +1295,13 @@ msgstr ""
 "| Aktions-Schaltfläche      | ::a::                             | `::a::`                             |\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:142
+#: src/en/contribute/style-guide.md:143
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Struktur der Überschrift"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:146
+#: src/en/contribute/style-guide.md:147
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
 "`# Title`). Levels below should always contain at least two sections. If "
@@ -1301,43 +1313,43 @@ msgstr ""
 "sollte er mit dem übergeordneten Inhalt zusammengelegt werden."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:148
+#: src/en/contribute/style-guide.md:149
 msgid "Example:"
 msgstr "Beispiel:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:150
+#: src/en/contribute/style-guide.md:151
 msgid "`# Title of page`"
 msgstr "`# Titel der Seite`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:152
+#: src/en/contribute/style-guide.md:153
 msgid "`## Section 1`"
 msgstr "`## Abschnitt 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:154
+#: src/en/contribute/style-guide.md:155
 msgid "`### Section 1.1`"
 msgstr "`### Abschnitt 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:156
+#: src/en/contribute/style-guide.md:157
 msgid "`### Section 1.2`"
 msgstr "`### Abschnitt 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:158
+#: src/en/contribute/style-guide.md:159
 msgid "`## Section 2`"
 msgstr "`## Abschnitt 2`"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:159
+#: src/en/contribute/style-guide.md:160
 #, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Überschrift mit Badge <Badge type=\"warning\" text=\"angepasster Text\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:164
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
 "badges available, see <https://vitepress.dev/reference/default-theme-"
@@ -1348,13 +1360,13 @@ msgstr ""
 "theme-badge#usage>."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:165 src/en/contribute/style-guide.md:264
+#: src/en/contribute/style-guide.md:166 src/en/contribute/style-guide.md:265
 #, no-wrap
 msgid "**Usage:**\n"
 msgstr "**Verwendung:**\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:166
+#: src/en/contribute/style-guide.md:167
 #, no-wrap
 msgid ""
 "\n"
@@ -1370,13 +1382,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:174
+#: src/en/contribute/style-guide.md:175
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Spezial-Boxen"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:176
+#: src/en/contribute/style-guide.md:177
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1390,8 +1402,8 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:176 src/en/contribute/style-guide.md:192
-#: src/en/contribute/style-guide.md:208 src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid ""
 "\n"
@@ -1401,14 +1413,14 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (info|details|info)
-#: src/en/contribute/style-guide.md:176
+#: src/en/contribute/style-guide.md:177
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Dies ist eine Infobox.\n"
 
 #. type: Fenced div block (danger|details)
-#: src/en/contribute/style-guide.md:176 src/en/contribute/style-guide.md:192
-#: src/en/contribute/style-guide.md:208 src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid ""
 "```\n"
@@ -1418,7 +1430,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:192
+#: src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1432,13 +1444,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip|details|tip)
-#: src/en/contribute/style-guide.md:192
+#: src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr "Dies ist eine Tipp-Box.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:208
+#: src/en/contribute/style-guide.md:209
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1452,13 +1464,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (warning|details|warning)
-#: src/en/contribute/style-guide.md:208
+#: src/en/contribute/style-guide.md:209
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr "Dies ist eine Warnungs-Box.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1472,13 +1484,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger|details|warning)
-#: src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Dies ist eine gefährliche Warnung.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1494,13 +1506,13 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (details|details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr "Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, no-wrap
 msgid ""
 "\n"
@@ -1512,13 +1524,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:254
+#: src/en/contribute/style-guide.md:255
 #, no-wrap
 msgid "Definition lists"
 msgstr "Definitionslisten"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:258
+#: src/en/contribute/style-guide.md:259
 #, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1528,7 +1540,7 @@ msgstr ""
 ": Dies ist die Definition des ersten Begriffs.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:262
+#: src/en/contribute/style-guide.md:263
 #, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1540,7 +1552,7 @@ msgstr ""
 ": Dies ist eine weitere Definition des zweiten Begriffs.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:265
+#: src/en/contribute/style-guide.md:266
 #, no-wrap
 msgid ""
 "\n"
@@ -1560,13 +1572,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:275
+#: src/en/contribute/style-guide.md:276
 #, no-wrap
 msgid "Highlighting with Boxes"
 msgstr "Hervorheben mit Kästen"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:278
+#: src/en/contribute/style-guide.md:279
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
@@ -1574,14 +1586,14 @@ msgstr ""
 "Kästen verwendet werden."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:280 src/en/documentation/introduction.md:25
-#: src/en/documentation/use/general.md:40 src/en/get-started/get-zammad.md:32
+#: src/en/contribute/style-guide.md:281 src/en/documentation/introduction.md:29
+#: src/en/documentation/use/start.md:40 src/en/get-started/get-zammad.md:32
 #, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:282
+#: src/en/contribute/style-guide.md:283
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
@@ -1590,7 +1602,7 @@ msgstr ""
 "(Beispiel von oben):"
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:283
+#: src/en/contribute/style-guide.md:284
 #, no-wrap
 msgid ""
 "\n"
@@ -1636,7 +1648,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:308
+#: src/en/contribute/style-guide.md:309
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1646,13 +1658,13 @@ msgstr ""
 "werden sollen.\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:309
+#: src/en/contribute/style-guide.md:310
 #, no-wrap
 msgid "Theme Specific Images"
 msgstr "Von Theme abhängige Bilder"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:313
+#: src/en/contribute/style-guide.md:314
 msgid ""
 "To target specific image assets to a single theme, you can assign `.dark-"
 "only` or `.light-only` CSS class to the corresponding image:"
@@ -1661,7 +1673,7 @@ msgstr ""
 "entsprechenden Bild die CSS-Klasse `.dark-only` oder `.light-only` zuweisen:"
 
 #. type: Fenced code block (md)
-#: src/en/contribute/style-guide.md:314
+#: src/en/contribute/style-guide.md:315
 #, no-wrap
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
@@ -1671,7 +1683,7 @@ msgstr ""
 "![Bild nur für helles Theme](/assets/logo-flat-light.svg){.light-only}\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:320
+#: src/en/contribute/style-guide.md:321
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
 "only image](/assets/logo-flat-light.svg){.light-only width=240}"
@@ -1688,8 +1700,9 @@ msgstr "Hier finden Sie alles, wie Sie täglich mit Zammad arbeiten, mit Tipps, 
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
-#, no-wrap
-msgid "/en/documentation/use/general"
+#, fuzzy, no-wrap
+#| msgid "/en/documentation/use/general"
+msgid "/en/documentation/use/start"
 msgstr "/de/documentation/use/general"
 
 #. type: Yaml Front Matter Hash Value: features title
@@ -1705,7 +1718,7 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr "Erfahren Sie, wie Sie Zammad konfigurieren und mit anderen Systemen verbinden können."
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1 src/en/documentation/use/general.md:1
+#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "/en/documentation/manage-zammad/general"
 msgstr "/de/documentation/manage-zammad/general"
@@ -1716,12 +1729,31 @@ msgstr "/de/documentation/manage-zammad/general"
 msgid "Administrator Documentation"
 msgstr "Administrator Dokumentation"
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Learn about important terms and concepts used in Zammad."
+msgstr "Erfahren Sie mehr über wichtige Begriffe und Konzepte in Zammad."
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "/en/reference/glossary"
+msgstr "/de/reference/glossary"
+
+#. type: Title #
+#: src/en/documentation/introduction.md:1 src/en/reference/glossary.md:1
+#: src/en/reference/glossary.md:6
+#, no-wrap
+msgid "Glossary"
+msgstr "Glossar"
+
 #. type: Title #
 #: src/en/documentation/introduction.md:1
+#: src/en/documentation/use/basics/ticket-basics.md:8
 #: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:121
 #: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
 #: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #, no-wrap
@@ -1729,13 +1761,13 @@ msgid "Introduction"
 msgstr "Einführung"
 
 #. type: Title #
-#: src/en/documentation/introduction.md:15
+#: src/en/documentation/introduction.md:19
 #, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr "Willkommen bei der Zammad-Dokumentation"
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:20
+#: src/en/documentation/introduction.md:24
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
 "out of your ticketing and helpdesk software.  Here, you'll find in-depth "
@@ -1749,7 +1781,7 @@ msgstr ""
 "Ihrem Team."
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:24
+#: src/en/documentation/introduction.md:28
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
 "designed to provide you with the knowledge and tools you need to succeed. "
@@ -1766,10 +1798,9 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/manage-zammad/general.md:1
 #: src/en/documentation/manage-zammad/general.md:6
-#: src/en/documentation/use/faq.md:13 src/en/documentation/use/general.md:1
-#: src/en/documentation/use/start-using-zammad.md:10
-#: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:92
-#: src/en/reference/rest-api/cti.md:244 src/en/reference/rest-api/cti.md:361
+#: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
+#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
+#: src/en/reference/rest-api/cti.md:361
 #, no-wrap
 msgid "General"
 msgstr "Allgemein"
@@ -1834,19 +1865,18 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:94
 #: src/en/documentation/use/advanced-features.md:109
 #: src/en/documentation/use/advanced-features.md:131
-#: src/en/documentation/use/advanced-features.md:149
-#: src/en/documentation/use/advanced-features.md:187
-#: src/en/documentation/use/advanced-features.md:199
-#: src/en/documentation/use/advanced-features.md:221
-#: src/en/documentation/use/advanced-features.md:248
-#: src/en/documentation/use/advanced-features.md:280
+#: src/en/documentation/use/advanced-features.md:169
+#: src/en/documentation/use/advanced-features.md:181
+#: src/en/documentation/use/advanced-features.md:201
+#: src/en/documentation/use/advanced-features.md:231
+#: src/en/documentation/use/advanced-features.md:263
+#: src/en/documentation/use/advanced-features.md:288
 #: src/en/documentation/use/advanced-features.md:305
 #: src/en/documentation/use/advanced-features.md:322
-#: src/en/documentation/use/advanced-features.md:339
-#: src/en/documentation/use/advanced-features.md:368
-#: src/en/documentation/use/advanced-features.md:388
-#: src/en/documentation/use/advanced-features.md:408
-#: src/en/documentation/use/advanced-features.md:426
+#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:409
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Warum?**\n"
@@ -1870,20 +1900,19 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:82
 #: src/en/documentation/use/advanced-features.md:99
 #: src/en/documentation/use/advanced-features.md:116
-#: src/en/documentation/use/advanced-features.md:137
-#: src/en/documentation/use/advanced-features.md:156
-#: src/en/documentation/use/advanced-features.md:192
+#: src/en/documentation/use/advanced-features.md:138
+#: src/en/documentation/use/advanced-features.md:174
+#: src/en/documentation/use/advanced-features.md:189
 #: src/en/documentation/use/advanced-features.md:207
-#: src/en/documentation/use/advanced-features.md:231
-#: src/en/documentation/use/advanced-features.md:252
-#: src/en/documentation/use/advanced-features.md:288
+#: src/en/documentation/use/advanced-features.md:235
+#: src/en/documentation/use/advanced-features.md:271
+#: src/en/documentation/use/advanced-features.md:293
 #: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:327
-#: src/en/documentation/use/advanced-features.md:345
-#: src/en/documentation/use/advanced-features.md:373
-#: src/en/documentation/use/advanced-features.md:399
-#: src/en/documentation/use/advanced-features.md:419
-#: src/en/documentation/use/advanced-features.md:432
+#: src/en/documentation/use/advanced-features.md:328
+#: src/en/documentation/use/advanced-features.md:356
+#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:415
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Wie?**\n"
@@ -2203,70 +2232,15 @@ msgstr ""
 "Sie können ein Makro auch auf mehrere Tickets auf einmal anwenden. Sehen Sie "
 "sich unter [Mehrfach-Aktionen](#mehrfach-aktionen) an, wie das geht."
 
-#. type: Title #
-#: src/en/documentation/use/advanced-features.md:126
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, no-wrap
-msgid "Tags"
-msgstr "Tags"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:129
-msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
-"advanced-features.cy.js/ticket-tags.png)"
-msgstr ""
-"![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
-"cypress/usage-advanced-features.cy.js/ticket-tags.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:135
-msgid ""
-"Tags are one way to categorize a ticket. You can think of tags as some kind "
-"of labels. They can be used in conditions like in triggers and in overviews "
-"and they can also be assigned automatically by macros, schedulers and "
-"triggers.  Of course you can search for the text of the tags and will find "
-"tickets which have the tag attached."
-msgstr ""
-"Tags sind eine Möglichkeit, ein Ticket zu kategorisieren. Sie können sich "
-"die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie "
-"z.B. in Triggern und Übersichten, verwendet werden und sie können auch "
-"automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.  "
-"Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets, "
-"die mit dem Tag versehen sind."
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:140
-msgid ""
-"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
-"Add a tag by clicking on the ::+:: button. You can select existing tags and "
-"add new ones (if your admin didn't disable to add new tags)."
-msgstr ""
-"In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der "
-"Bezeichnung **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die "
-"Schaltfläche ::+:: klicken. Sie können vorhandene Tags auswählen und neue "
-"hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht "
-"deaktiviert hat)."
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:143
-msgid ""
-"Remove them by simply click on the ::x:: button. Be aware that there is no "
-"confirmation dialog for deleting a tag from a ticket."
-msgstr ""
-"Entfernen Sie sie, indem Sie einfach auf die Schaltfläche ::x:: klicken. "
-"Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen eines Tags "
-"aus einem Ticket gibt."
-
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:144
+#: src/en/documentation/use/advanced-features.md:126
 #: src/en/reference/rest-api/checklist.md:19
 #, no-wrap
 msgid "Checklists"
 msgstr "Checklisten"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:147
+#: src/en/documentation/use/advanced-features.md:129
 msgid ""
 "![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
 "usage-advanced-features.cy.js/ticket-checklist.png)"
@@ -2275,27 +2249,27 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To keep track of tasks"
 msgstr "Um den Überblick über Ihre Aufgaben zu behalten"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To complete tasks in a structured way"
 msgstr "Um Aufgaben auf strukturierte Weise zu erledigen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make sure nothing gets forgotten"
 msgstr "Um sicherzustellen, dass nichts vergessen wird"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make the progress of work more visible"
 msgstr "Um den Fortschritt der Arbeiten besser sichtbar machen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:159
+#: src/en/documentation/use/advanced-features.md:141
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
@@ -2307,12 +2281,12 @@ msgstr ""
 "das Ticket zu bearbeiten."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:161
+#: src/en/documentation/use/advanced-features.md:143
 msgid "In the checklist sidebar, you can:"
 msgstr "In der Checklisten-Seitenleiste können Sie:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Add a checklist: either by creating a new one by clicking on `Add Empty "
 "Checklist` or from a template by using `Add From a Template` (if you don't "
@@ -2324,12 +2298,12 @@ msgstr ""
 "die Schaltfläche für die Vorlage nicht sehen, gibt es keine)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Edit the current checklist:"
 msgstr "Bearbeiten Sie die aktuelle Checkliste:"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
@@ -2338,14 +2312,14 @@ msgstr ""
 "Header der Seitenleiste verwenden."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Add checklist items by clicking the ::+:: button."
 msgstr ""
 "Fügen Sie Elemente der Checkliste hinzu, indem Sie auf die Schaltfläche ::"
 "+:: klicken."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
 "using the ::a:: menu next to the item."
@@ -2354,14 +2328,14 @@ msgstr ""
 "Anklicken oder über das ::a:: Menü neben dem Element."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "`Reorder` the items by clicking this button and drag & drop the items."
 msgstr ""
 "Ordnen Sie die Elemente neu an, indem Sie auf die Schaltfläche `Reihenfolge "
 "ändern` klicken und die Elemente per Drag & Drop verschieben."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
@@ -2369,12 +2343,12 @@ msgstr ""
 "Seitenleiste."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:172
+#: src/en/documentation/use/advanced-features.md:154
 msgid "There are two features, which are not directly visible:"
 msgstr "Es gibt zwei Funktionen, die nicht direkt sichtbar sind:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:175
+#: src/en/documentation/use/advanced-features.md:157
 msgid ""
 "You can refer to other tickets as a checklist item by using its hook and "
 "number in the item text (e.g.  `Ticket#123456`). Such items can't be checked "
@@ -2387,17 +2361,20 @@ msgstr ""
 "sie verweisen."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/advanced-features.md:175
-#, no-wrap
+#: src/en/documentation/use/advanced-features.md:157
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
+#| "  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgid ""
-"  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
-"  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
+"  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or\n"
+"  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgstr ""
 "  Kopieren Sie den Ticket-Hook und die Ticket-Nummer, indem Sie zum gewünschten Ticket gehen und entweder die Kopierknopf in der Kopfzeile benutzen oder mit\n"
 "  ddem Tastaturkürzel [[.]]. Dann können Sie es in die Checkliste einfügen, in der Sie darauf verweisen möchten.\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:183
+#: src/en/documentation/use/advanced-features.md:165
 msgid ""
 "Zammad automatically checks if all checklist items are completed. The check "
 "is performed when you set a ticket to \"closed\". If not all items are "
@@ -2415,13 +2392,13 @@ msgstr ""
 "geschlossen sind (mit einem grünen Kreis)."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:184
+#: src/en/documentation/use/advanced-features.md:166
 #, no-wrap
 msgid "Ticket Templates"
 msgstr "Ticket-Vorlagen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:190
+#: src/en/documentation/use/advanced-features.md:172
 msgid ""
 "Quickly create a ticket with pre-defined attributes like title, text, tags "
 "and more saves you time. This requires your admin to create a ticket "
@@ -2432,7 +2409,7 @@ msgstr ""
 "bereits eine Ticket-Vorlage erstellt haben."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:195
+#: src/en/documentation/use/advanced-features.md:177
 msgid ""
 "In the ticket create screen, you can find an `Apply Template ^` button in "
 "the footer bar, if a template is available.  Select the template you want to "
@@ -2444,7 +2421,7 @@ msgstr ""
 "Änderungen vor."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:196
+#: src/en/documentation/use/advanced-features.md:178
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, no-wrap
@@ -2452,7 +2429,7 @@ msgid "Shared Drafts"
 msgstr "Gemeinsame Entwürfe"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:203
+#: src/en/documentation/use/advanced-features.md:185
 msgid ""
 "To share a draft with other agents of your group, e.g. to reflect a QA "
 "process, instead of \"just\" adding an internal article. In such a draft you "
@@ -2466,7 +2443,7 @@ msgstr ""
 "Artikel mit einer Antwort an den Kunden aufnehmen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:205
+#: src/en/documentation/use/advanced-features.md:187
 msgid ""
 "This is an optional feature. If you can't see it, your admin has turned it "
 "off."
@@ -2475,7 +2452,7 @@ msgstr ""
 "Administrator sie ausgeschaltet."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:209
+#: src/en/documentation/use/advanced-features.md:191
 msgid ""
 "To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
@@ -2484,7 +2461,7 @@ msgstr ""
 "Fußzeile der Ticket-Detailansicht und wählen \"Als Entwurf speichern\"."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:211
+#: src/en/documentation/use/advanced-features.md:193
 msgid ""
 "To **apply an already existing draft**, click on the `Draft Available` "
 "button on the left side of the footer."
@@ -2493,114 +2470,101 @@ msgstr ""
 "Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:212
+#: src/en/documentation/use/advanced-features.md:194
 #, no-wrap
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!\n"
 
-#. type: Title ###
-#: src/en/documentation/use/advanced-features.md:216
-#: src/en/documentation/use/guides/ai.md:83
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:198
 #, no-wrap
-msgid "Simultaneous Work Detection"
-msgstr "Erkennung gleichzeitige Ticketbearbeitung"
+msgid "Monitoring Ticket Escalations"
+msgstr "Überwachung von Ticket-Eskalationen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:219
+#: src/en/documentation/use/advanced-features.md:205
 msgid ""
-"![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
-"advanced-features/simultaneous-work-detection.png)"
+"Service Level Agreements (SLAs) ensure timely responses to customer "
+"requests. Your administrator sets such goals as responding to all inquiries "
+"within eight hours, with optional custom deadlines for specific customers. "
+"When such a deadline is passed, the ticket escalates."
 msgstr ""
-"![Screenshot zeigt andere Agenten, die das Ticket gerade sehen/bearbeiten](/"
-"screenshots/advanced-features/simultaneous-work-detection.png)"
+"Service Level Agreements (SLAs) gewährleisten eine zeitnahe Beantwortung von "
+"Kundenanfragen. Ihr Administrator legt diese Ziele fest - z.B. die "
+"Beantwortung aller Anfragen innerhalb von acht Stunden - mit optionalen "
+"individuellen Fristen für bestimmte Kunden. Wenn eine solche Frist "
+"überschritten wird, eskaliert das Ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:223
-msgid "Things to avoid:"
-msgstr "Dinge, die man vermeiden sollte:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Superfluous work"
-msgstr "Überflüssige Arbeit"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Conflicting answers from different agents"
-msgstr "Widersprüchliche Antworten von verschiedenen Agenten"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Overwritten/undone changes by different agents"
-msgstr "Überschriebene/zurückgenommene Änderungen durch verschiedene Agenten"
+#: src/en/documentation/use/advanced-features.md:212
+msgid ""
+"Zammad notifies you by default when tickets approach or exceed their "
+"deadlines. Configure these notifications in your [profile settings](/en/"
+"documentation/use/manage-profile#notifications). Zammad also ships a default "
+"overview called \"Escalated Tickets\". This overview includes already "
+"escalated tickets and tickets which are expected to escalate within the next "
+"10 minutes."
+msgstr ""
+"Zammad benachrichtigt Sie standardmäßig, wenn sich Tickets ihren Fristen "
+"nähern oder diese überschreiten. Konfigurieren Sie diese Benachrichtigungen "
+"in Ihren [Profileinstellungen](/de/documentation/use/manage-"
+"profile#notifications). Zammad liefert auch eine Standardübersicht namens "
+"\"Eskalierte Tickets\" aus. Diese Übersicht enthält bereits eskalierte "
+"Tickets und Tickets, bei denen eine Eskalation innerhalb der nächsten 10 "
+"Minuten zu erwarten ist."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:229
+#: src/en/documentation/use/advanced-features.md:215
 msgid ""
-"This is why you can immediately see who views and edits the currently viewed "
-"ticket."
+"SLA-relevant tickets display a timestamp in the ticket detail header. Hover "
+"over this timestamp to see all escalation stages and deadlines in a popup. "
+"It shows all upcoming or reached escalation times based on your SLA "
+"configuration:"
 msgstr ""
-"Deshalb können Sie sofort sehen, wer das aktuell angezeigte Ticket ansieht "
-"und bearbeitet."
+"SLA-relevante Tickets zeigen einen Zeitstempel in der Kopfzeile des Tickets "
+"an. Bewegen Sie den Mauszeiger über diesen Zeitstempel, um alle "
+"Eskalationsstufen und Fristen in einem Popup zu sehen. Es zeigt alle "
+"bevorstehenden oder überschrittenen Eskalationszeiten auf der Grundlage "
+"Ihrer SLA-Konfiguration an:"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:234
+#: src/en/documentation/use/advanced-features.md:217
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
+#| "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgid ""
-"Have a look at the footer bar in the ticket detail view. When there is an "
-"avatar from another agent in the live user section (see screenshot above), "
-"you are not the only one viewing this ticket."
+"![Screenshot shows escalation panel by hovering over escalation timestamp](/"
+"screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)"
 msgstr ""
-"Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des Tickets. "
-"Wenn in diesem Live-Benutzer-Bereich ein Avatar eines anderen Agenten zu "
-"sehen ist (siehe Screenshot oben), sind Sie nicht der einzige Agent, der "
-"dieses Ticket betrachtet."
+"![Screenshot zeigt einen Avatar mit geöffneter Benutzerinfo](/screenshots/"
+"cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/advanced-features.md:218
+#, no-wrap
+msgid ""
+"The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a\n"
+"ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.\n"
+msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:236
+#: src/en/documentation/use/advanced-features.md:225
 msgid ""
-"Depending on the additional icon and if the avatar icon is faded, it means:"
+"The SLA feature requires a configuration from your admin. In case you don’t "
+"see escalation timestamps, either the ticket is not SLA-relevant or the "
+"feature is not configured."
 msgstr ""
-"Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent is viewing the ticket (not faded avatar without additional "
-"icon)"
-msgstr ""
-"Ein anderer Agent sieht sich das Ticket an (nicht abgedunkelter Avatar ohne "
-"zusätzliches Icon)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent opened the ticket but is currently not actively viewing this "
-"ticket (faded avatar icon with the snooze icon, see left avatar in "
-"screenshot)"
-msgstr ""
-"Ein anderer Agent hat das Ticket geöffnet, ist aber momentan nicht aktiv mit "
-"dem Ticket beschäftigt (abgedunkelter Avatar mit einem Schlummer-Icon, siehe "
-"linker Avatar im Screenshot)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent is currently actively working on this ticket (not faded avatar "
-"icon with a pencil icon, see right avatar in screenshot)"
-msgstr ""
-"Ein anderer Agent arbeitet gerade aktiv an diesem Ticket (nicht "
-"abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im "
-"Screenshot)"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:243
+#: src/en/documentation/use/advanced-features.md:226
 #: src/en/documentation/use/guides/overviews.md:81
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Mehrfach-Aktionen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:246
+#: src/en/documentation/use/advanced-features.md:229
 msgid ""
 "![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/bulk-side-panel-overviews.png)"
@@ -2609,7 +2573,7 @@ msgstr ""
 "usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:250
+#: src/en/documentation/use/advanced-features.md:233
 msgid ""
 "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
@@ -2617,17 +2581,17 @@ msgstr ""
 "Sie Zeit sparen!"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:254
+#: src/en/documentation/use/advanced-features.md:237
 msgid "There are 2 _places_ where you can perform bulk actions:"
 msgstr "Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:240
 msgid "Detail search page"
 msgstr "Erweiterte Suche"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:240
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
 #: src/en/documentation/use/manage-profile.md:128
@@ -2636,7 +2600,7 @@ msgid "Overviews"
 msgstr "Übersichten"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:259
+#: src/en/documentation/use/advanced-features.md:242
 msgid ""
 "Assuming you are in the overviews or in the detail search page, you can bulk "
 "edit tickets in 2 _ways_:"
@@ -2645,7 +2609,7 @@ msgstr ""
 "befinden, können Sie Tickets auf 2 _Arten_ bearbeiten:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:245
 msgid ""
 "Use the `Bulk Action` button in the top right corner and change/add "
 "attributes by using the fields in the side panel"
@@ -2655,7 +2619,7 @@ msgstr ""
 "Seitenleiste hinzu"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:245
 msgid ""
 "Drag the tickets with the mouse to invoke the bulk action overlay and drop "
 "them on the desired action"
@@ -2664,7 +2628,7 @@ msgstr ""
 "und legen Sie sie auf der gewünschten Aktion ab"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:265
+#: src/en/documentation/use/advanced-features.md:248
 msgid ""
 "To bulk edit tickets in either way, you have to select them before. Do so by "
 "clicking the checkbox on the left side of each row in the ticket table. "
@@ -2676,48 +2640,48 @@ msgstr ""
 "hervorgehoben."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:267
+#: src/en/documentation/use/advanced-features.md:250
 msgid "The available changes you can apply to tickets are:"
 msgstr "Folgende Änderungen können Sie an Tickets vornehmen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set group"
 msgstr "Gruppe festlegen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set owner"
 msgstr "Besitzer festlegen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set state"
 msgstr "Status festlegen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set priority"
 msgstr "Priorität festlegen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Add a note"
 msgstr "Eine Notiz hinzufügen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Execute a macro"
 msgstr "Ausführen eines Makros"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:275
+#: src/en/documentation/use/advanced-features.md:258
 #, no-wrap
 msgid "Merge Tickets"
 msgstr "Tickets zusammenfassen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:278
+#: src/en/documentation/use/advanced-features.md:261
 msgid ""
 "![Screenshot shows the ticket merge side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-merge.png)"
@@ -2726,7 +2690,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-merge.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:284
+#: src/en/documentation/use/advanced-features.md:267
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
 "those tickets into one. This might be the case if a customer sends you a new "
@@ -2742,7 +2706,7 @@ msgstr ""
 "bestehende Kommunikation zu antworten)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:286
+#: src/en/documentation/use/advanced-features.md:269
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
 "you select the merging into the selected one."
@@ -2752,7 +2716,7 @@ msgstr ""
 "Ticket übernommen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:292
+#: src/en/documentation/use/advanced-features.md:275
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
 "use the ::a:: menu and select `Merge`. This opens a side panel in which you "
@@ -2768,7 +2732,7 @@ msgstr ""
 "`Zusammenfassen` am unteren Rand."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:295
+#: src/en/documentation/use/advanced-features.md:278
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
 "which you executed the merge still exists with the following changes:"
@@ -2778,28 +2742,28 @@ msgstr ""
 "weiterhin mit den folgenden Änderungen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr "Die Artikel wurden mit dem Text \"zusammengefasst\" ersetzt"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The state has changed to \"merged\""
 msgstr "Der Status hat sich auf \"zusammengefasst\" geändert"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr "Das Ticket ist mit seinem \"Eltern\"-Ticket verknüpft"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:283
 #, no-wrap
 msgid "Split Tickets"
 msgstr "Tickets Abspalten"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:303
+#: src/en/documentation/use/advanced-features.md:286
 msgid ""
 "![Screenshot shows the article action split menu](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-split.png)"
@@ -2808,7 +2772,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-split.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:308
+#: src/en/documentation/use/advanced-features.md:291
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example, this might be the "
@@ -2820,7 +2784,7 @@ msgstr ""
 "eine Bestellung aufgeben möchte."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:312
+#: src/en/documentation/use/advanced-features.md:295
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
@@ -2829,7 +2793,7 @@ msgstr ""
 "wählen Sie `Abspalten`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:315
+#: src/en/documentation/use/advanced-features.md:298
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
 "the initial ticket. The content of the article is also included. You can "
@@ -2841,7 +2805,7 @@ msgstr ""
 "auf `Erstellen` klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:318
+#: src/en/documentation/use/advanced-features.md:301
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
 "ticket is linked in the split off ticket as parent."
@@ -2851,13 +2815,13 @@ msgstr ""
 "\"Eltern\"-Ticket verknüpft."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:302
 #, no-wrap
 msgid "Link Tickets"
 msgstr "Tickets verknüpfen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:325
+#: src/en/documentation/use/advanced-features.md:308
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2869,7 +2833,7 @@ msgstr ""
 "werden automatisch verknüpft."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:331
+#: src/en/documentation/use/advanced-features.md:314
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
@@ -2883,12 +2847,12 @@ msgstr ""
 "können Sie zwischen verschiedenen Link-Typen wählen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:318
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr "**Normal:** für verwandte Tickets, die keine Hierarchie haben."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:318
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
 "other is a subtask. This link type is used by default if a tickets gets "
@@ -2899,7 +2863,7 @@ msgstr ""
 "verwendet, wenn ein Ticket geteilt oder zusammengefasst wird."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:336
+#: src/en/documentation/use/advanced-features.md:319
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
@@ -2907,7 +2871,7 @@ msgid "Time Accounting"
 msgstr "Zeiterfassung"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:326
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
 "much time you spent on tickets. Based on the accounted times in the ticket, "
@@ -2921,7 +2885,7 @@ msgstr ""
 "Verfolgung von Support-Kontingenten verwendet werden."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:330
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
 "much time you spent on the ticket."
@@ -2931,7 +2895,7 @@ msgstr ""
 "Tickets gebraucht haben."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:349
+#: src/en/documentation/use/advanced-features.md:332
 msgid ""
 "![Screenshot shows the time accounting dialog](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-dialog.png)"
@@ -2940,7 +2904,7 @@ msgstr ""
 "advanced-features.cy.js/time-accounting-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:352
+#: src/en/documentation/use/advanced-features.md:335
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
 "ticket, your administrator hasn't enabled it yet or the rule for tickets to "
@@ -2952,7 +2916,7 @@ msgstr ""
 "nicht."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:355
+#: src/en/documentation/use/advanced-features.md:338
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
 "your administrator may decide to show an optional label next to the field to "
@@ -2965,7 +2929,7 @@ msgstr ""
 "in welcher Einheit die Zeit erwartet wird (siehe Screenshot)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:358
+#: src/en/documentation/use/advanced-features.md:341
 msgid ""
 "Activity types can be used to distinguish between different activities and "
 "for grouping the accounted times. If this optional feature is active, it "
@@ -2978,7 +2942,7 @@ msgstr ""
 "angezeigt, aus der Sie im Erfassungsdialog auswählen können."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:362
+#: src/en/documentation/use/advanced-features.md:345
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
@@ -2991,7 +2955,7 @@ msgstr ""
 "sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:364
+#: src/en/documentation/use/advanced-features.md:347
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-overview.png)"
@@ -3000,13 +2964,13 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:365
+#: src/en/documentation/use/advanced-features.md:348
 #, no-wrap
 msgid "User Detail Panel"
 msgstr "Benutzerinfo"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:354
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -3015,7 +2979,7 @@ msgstr ""
 "aktuelle Ansicht zu verlassen und können sich auf Ihre Aufgabe konzentrieren."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:377
+#: src/en/documentation/use/advanced-features.md:360
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -3029,7 +2993,7 @@ msgstr ""
 "[Benutzer-Detailseite](#user-detail-page) zu öffnen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:362
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
@@ -3038,7 +3002,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:365
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -3048,13 +3012,13 @@ msgstr ""
 "kann."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:383
+#: src/en/documentation/use/advanced-features.md:366
 #, no-wrap
 msgid "User Detail Page"
 msgstr "Benutzer-Detailseite"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:386
+#: src/en/documentation/use/advanced-features.md:369
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-"
 "features.cy.js/user-detail-page.png)"
@@ -3063,7 +3027,7 @@ msgstr ""
 "features.cy.js/user-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:373
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
@@ -3072,39 +3036,39 @@ msgstr ""
 "Beispiele dafür, was Sie dort finden und tun können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "See organization membership"
 msgstr "Mitgliedschaft in einer Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "See a graph of recent tickets"
 msgstr "Diagramm der letzten Tickets sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 msgid "Add or edit a note"
 msgstr "Hinzufügen oder Bearbeiten einer Notiz"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "Edit the customer (via ::a:: menu)"
 msgstr "Kundeninformationen bearbeiten (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 msgid "See a history of changes (via ::a:: menu)"
 msgstr "Historie der Änderungen anzeigen (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "Create a new ticket with this user as customer"
 msgstr "Ein neues Ticket mit diesem Benutzer als Kunden erstellen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:385
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
 "view). This opens a new tab with the customer detail page. In case you also "
@@ -3117,13 +3081,13 @@ msgstr ""
 "Menü sogar eine Löschaufgabe für diesen Benutzer erstellen."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:403
+#: src/en/documentation/use/advanced-features.md:386
 #, no-wrap
 msgid "Organization Detail Page"
 msgstr "Organisations-Detailseite"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:406
+#: src/en/documentation/use/advanced-features.md:389
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/usage-"
 "advanced-features.cy.js/organization-detail-page.png)"
@@ -3132,7 +3096,7 @@ msgstr ""
 "advanced-features.cy.js/organization-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:393
 msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
@@ -3141,27 +3105,27 @@ msgstr ""
 "einem Ort einsehen. Beispiele dafür, was Sie dort finden und tun können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "See the members of the organization"
 msgstr "Mitglieder der Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr "Ein Diagramm der letzten Tickets der gesamten Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "Edit the organization (via ::a:: menu)"
 msgstr "Die Organisation bearbeiten (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "Create a new user as a member of this organization"
 msgstr "Einen neuen Benutzer als Mitglied dieser Organisation erstellen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:405
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
 "detail view next to the user avatar). This opens a new tab with the "
@@ -3172,13 +3136,13 @@ msgstr ""
 "Organisations-Detailseite als neuen Tab."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:423
+#: src/en/documentation/use/advanced-features.md:406
 #, no-wrap
 msgid "External Issues and Assets"
 msgstr "Externe Issues und Inventar"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:413
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
 "Gitlab issues, you can link to these external systems to have all relevant "
@@ -3192,7 +3156,7 @@ msgstr ""
 "aktivieren und konfigurieren."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:417
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
 "screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)"
@@ -3202,7 +3166,7 @@ msgstr ""
 "sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:421
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon (see Gitlab example in screenshot above). Click the "
@@ -3218,6 +3182,1521 @@ msgstr ""
 "einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element "
 "mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken, "
 "werden Sie zu diesem im jeweiligen System weitergeleitet."
+
+#. type: Title #
+#: src/en/documentation/use/basics/create-tickets.md:1
+#: src/en/documentation/use/basics/create-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Merge Tickets"
+msgid "Create Tickets"
+msgstr "Tickets zusammenfassen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:11
+msgid ""
+"When a customer messages you over a channel which is fetched by Zammad, a "
+"ticket is created automatically (unless Zammad recognizes it as a follow-up, "
+"then it gets added as an article to an existing ticket). However, there "
+"might be cases where you need to create a ticket manually. Examples:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "A customer calls you by phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "You receive a paper letter from a customer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "A customer comes to a physical service desk."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "You proactively have to inform a customer by sending out a message."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:19
+msgid ""
+"In situations like these, you need to create a new ticket manually and click "
+"the ::+:: button at the bottom of the navigation bar. This shows a ticket "
+"create screen where you can add all needed information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:21
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-merge.png)"
+msgid ""
+"![Screenshot shows ticket create screen](/screenshots/cypress/usage-"
+"basics.cy.js/ticket-create.png)"
+msgstr ""
+"![Screenshot zeigt das Seiten-Panel zur Ticket-Zusammenführung](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-merge.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:22
+#, fuzzy, no-wrap
+#| msgid "Tree Select"
+msgid "Type Selector"
+msgstr "Einfach-Baumauswahl"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:25
+msgid ""
+"In the ticket create dialog, you can choose from different article types:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Received call: for issues initiated by a customer over the phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Outbound call: for issues initiated by an agent over the phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Send email: for issues initiated by an agent over email."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:31
+msgid ""
+"When choosing **Send Email**, the customer receives an email with the title "
+"as subject and the text as email content."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:32
+#, fuzzy, no-wrap
+#| msgid "`title`"
+msgid "Title"
+msgstr "`title`"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:37
+msgid ""
+"This is the title of a ticket which is shown in many places in Zammad. For "
+"example, this gets displayed in overviews.  It is also used as the subject "
+"for email communication. For emails, a ticket identifier is automatically "
+"appended (e.g. `Ticket#901234 - I need help!`)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:38
+#, fuzzy, no-wrap
+#| msgid "`Customer`"
+msgid "Customer"
+msgstr "`Customer`"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:44
+msgid ""
+"Enter a name or email address of a customer to search for existing accounts. "
+"You can even search for organizations and their members. Select an option "
+"from the dropdown menu or create a new customer by clicking the **+ Create "
+"new Customer** button on the right side of the field. This opens a dialog "
+"where you can provide all relevant information of the customer. A ticket can "
+"only have one customer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:47
+msgid ""
+"After setting a customer in the ticket create dialog, the customer sidebar "
+"automatically opens. You can see additional customer meta information "
+"including a hint about the currently opened tickets of the customer."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/create-tickets.md:48
+#: src/en/reference/rest-api/object.md:131
+#, no-wrap
+msgid "Text"
+msgstr "Text"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:53
+msgid ""
+"This is the content section where the currently known details of the issue "
+"gets written down. For the \"Send Email\" type, this is the content/message "
+"of the email. To learn more about the editor and its features, check the "
+"[editor documentation](/en/documentation/use/guides/editor)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:54
+#: src/en/documentation/use/basics/ticket-basics.md:29
+#, fuzzy, no-wrap
+#| msgid "Modify ticket attributes"
+msgid "Ticket Attributes"
+msgstr "Ändern von Ticketattributen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:58
+msgid ""
+"As you may know, there are additional ticket attributes such as group, "
+"priority and owner that you can set. If you haven't read the [ticket basics]"
+"(ticket-basics) yet, check it out to learn more."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:62
+msgid ""
+"After you provided the relevant information, finally create the ticket with "
+"a click on the **Create** button. Read on how to [find tickets](find-"
+"tickets) and [how to work with them](work-with-tickets)."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/find-tickets.md:1
+#: src/en/documentation/use/basics/find-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Finding Tickets"
+msgid "Find Tickets"
+msgstr "Tickets finden"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:9
+msgid "There are different ways to find tickets, depending on your use case."
+msgstr ""
+"Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig von Ihrem "
+"Anwendungsfall."
+
+#. type: Title ##
+#: src/en/documentation/use/basics/find-tickets.md:10
+#, no-wrap
+msgid "Via Overviews"
+msgstr "Per Übersichten"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:15
+msgid ""
+"If you search for new tickets to work on, your first look should be in the "
+"overview section. You can either open it by clicking the `Overviews` button "
+"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"overviews as a kind of ticket lists."
+msgstr ""
+"Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie "
+"zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch "
+"Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen "
+"oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine "
+"Art von Ticket-Listen betrachten."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:19
+#, fuzzy
+#| msgid ""
+#| "By default, there are some built in overviews, you can use. For example, "
+#| "there is an overview called \"Open Tickets\".  This might be a good "
+#| "starting point. Your Zammad admin may have created additional overviews. "
+#| "These are based on conditions, which are basically rules, to define which "
+#| "ticket appears in which overview."
+msgid ""
+"By default, there are some built-in overviews you can use. For example, "
+"there is an overview called \"Open Tickets\".  This might be a good starting "
+"point. Your Zammad admin may have created additional overviews. These are "
+"based on conditions, which are basically rules, to define which ticket "
+"appears in which overview."
+msgstr ""
+"Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden "
+"können. Zum Beispiel gibt es eine Übersicht namens \"Offene Tickets\". Dies "
+"könnte ein guter Ausgangspunkt sein. Ihr Zammad-Administrator hat "
+"möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf "
+"Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht "
+"erscheint."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:21
+msgid ""
+"For a detailed description, head over to the [overview usage guide](/en/"
+"documentation/use/guides/overviews)."
+msgstr ""
+"Eine detaillierte Erklärung finden Sie in der [Beschreibung der Übersichten]"
+"(/de/documentation/use/guides/overviews)."
+
+#. type: Title ##
+#: src/en/documentation/use/basics/find-tickets.md:22
+#, no-wrap
+msgid "Via Search"
+msgstr "Per Suche"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:27
+msgid ""
+"However, if you search for a specific ticket which might or might not be "
+"visible in the overviews, you can use the search. You can find it in the top "
+"left corner in the navigation bar. Either select it via mouse or use the "
+"keyboard shortcut by simply pressing [[s]]."
+msgstr ""
+"Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten "
+"sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie "
+"finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie "
+"entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]]."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:30
+msgid ""
+"After activating the search field, you can find the tickets you recently "
+"closed from your taskbar as well as your last search queries."
+msgstr ""
+"Nachdem Sie das Suchfeld aktiviert haben sehen Sie die kürzlich in der "
+"Taskleiste geschlossenen Tickets sowie Ihre letzten Suchanfragen."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:34
+#, fuzzy
+#| msgid ""
+#| "By entering a search term, you immediately see a preview of the search "
+#| "results. If you press [[enter]] or click on `detailed search`, Zammad "
+#| "displays a page with search results. There you can differentiate by "
+#| "object type (e.g.  customer), what you are searching."
+msgid ""
+"By entering a search term, you immediately see a preview of the search "
+"results. If you press [[enter]] or click on `detailed search`, Zammad "
+"displays a page with search results. There you can differentiate by object "
+"type (e.g.  user), what you are searching."
+msgstr ""
+"Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der "
+"Suchergebnisse. Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` "
+"klicken, zeigt Zammad eine Seite mit Suchergebnissen an. Dort können Sie die "
+"Suche basierend auf dem Objekttyp (z.B. Benutzer) durchführen."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:36
+#, fuzzy
+#| msgid "Have a look at the [search guide](guides/search) for more details."
+msgid ""
+"Have a look at the [search guide](/en/documentation/use/guides/search) for "
+"more details."
+msgstr ""
+"Weitere Einzelheiten finden Sie in den [Details zur Suche](guides/search)."
+
+#. type: Title ###
+#: src/en/documentation/use/basics/find-tickets.md:37
+#: src/en/documentation/use/manage-profile.md:105
+#, no-wrap
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:43
+#, fuzzy
+#| msgid ""
+#| "Depending on the [notification settings](/en/documentation/use/manage-"
+#| "profile#notifications) in your profile, you receive updates for different "
+#| "ticket based events like the creation or the update of a ticket. This "
+#| "ensures that no important change to a ticket is overlooked."
+msgid ""
+"Depending on the [notification settings](/en/documentation/use/manage-"
+"profile#notifications) in your profile, you receive updates for different "
+"ticket based events like the creation or the update of a ticket. This "
+"ensures that no important change to a ticket gets overlooked."
+msgstr ""
+"Abhängig von den [Benachrichtigungseinstellungen](/de/documentation/use/"
+"manage-profile#benachrichtigungen) in Ihrem Profil erhalten Sie "
+"Aktualisierungen für verschiedene ticketbasierte Ereignisse wie die "
+"Erstellung oder die Aktualisierung eines Tickets. So wird sichergestellt, "
+"dass keine wichtige Änderung an einem Ticket übersehen wird."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:46
+msgid ""
+"You can open them by clicking on the notification counter in the top left "
+"corner. If there is a badge with a counter, the counter shows the number of "
+"unread notifications."
+msgstr ""
+"Sie können sie öffnen, indem Sie auf den Benachrichtigungszähler in der "
+"oberen linken Ecke klicken. Wenn ein Label mit einem Zähler vorhanden ist, "
+"zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:48
+#, fuzzy
+#| msgid ""
+#| "By default, you get notified when one of your tickets (means you are the "
+#| "owner) got updated. By clicking on the link in the notification, this "
+#| "ticket gets opened in the navigation sidebar as tab and the ticket detail "
+#| "view is displayed."
+msgid ""
+"By default, you get notified when one of your tickets (means you are the "
+"owner) got updated. By clicking on the link in the notification, this ticket "
+"gets opened in the navigation sidebar as a tab and the ticket detail view is "
+"displayed."
+msgstr ""
+"Standardmäßig werden Sie benachrichtigt, wenn eines Ihrer Tickets (das "
+"heißt, Sie sind der Besitzer) aktualisiert wurde. Wenn Sie auf den Link in "
+"der Benachrichtigung klicken, wird dieses Ticket in der Navigations-"
+"Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird angezeigt."
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:1
+#: src/en/documentation/use/basics/ticket-basics.md:6
+#, no-wrap
+msgid "Ticket Basics"
+msgstr "Ticket-Grundlagen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:15
+msgid ""
+"In Zammad, **tickets** are used to track customer service requests. The "
+"first time a customer contacts you about something, Zammad creates a new "
+"ticket. Each message sent between you and the customer is added to that "
+"ticket until the issue is resolved, the customer is happy and the ticket is "
+"finally closed. Such a single message in a ticket is called an **article**. "
+"Basically, you can think of a **ticket** as a **conversation** between you "
+"and a customer about a single issue."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:18
+#, fuzzy
+#| msgid ""
+#| "If you're completely new to a ticket system and handled your customer "
+#| "requests with an email client so far, you might think that a ticket "
+#| "system is complicated. But the opposite is the case:"
+msgid ""
+"If you're completely new to a ticket system and handled your customer "
+"requests with an email client so far, you might think that a ticket system "
+"is complicated. But the opposite is true:"
+msgstr ""
+"Wenn Sie ganz neu in Ticket-Systemen sind und Ihre Kundenanfragen bisher mit "
+"einem E-Mail-Client bearbeitet haben, denken Sie vielleicht, dass ein Ticket-"
+"System kompliziert ist. Aber das Gegenteil ist der Fall:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"All emails are now collected in Zammad (and requests from other channels "
+"might be as well)."
+msgstr ""
+"Alle E-Mails werden nun in Zammad gesammelt (und Anfragen aus anderen "
+"Kanälen möglicherweise auch)."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"You and your colleagues can see who is working on which customer request "
+"(\"ticket\")."
+msgstr ""
+"Sie und Ihre Kollegen können sehen, wer an welcher Kundenanfrage "
+"(\"Ticket\") arbeitet."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"The state of each request as well as the history (who did what?) is "
+"transparent."
+msgstr ""
+"Der Status jeder Anfrage sowie die Historie (wer hat was getan?) sind "
+"transparent."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid "There is no duplicate work and nothing gets overlooked."
+msgstr "Es gibt keine doppelte Arbeit und nichts wird übersehen."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"You can ask your colleagues directly in the ticket for help in difficult "
+"cases."
+msgstr ""
+"In schwierigen Fällen können Sie Ihre Kollegen direkt im Ticket um Hilfe "
+"bitten."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"With Zammad's intuitive UI, you can focus on what matters: to resolve "
+"customer issues and answer customer questions."
+msgstr ""
+"Mit der intuitiven Benutzeroberfläche von Zammad können Sie sich auf das "
+"Wesentliche konzentrieren: die Lösung von Kundenproblemen und die "
+"Beantwortung von Kundenfragen."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:28
+#, fuzzy
+#| msgid ""
+#| "So, basically you can work with Zammad similar as with your email client. "
+#| "Except that you have some additional attributes you can set in the "
+#| "_Ticket_ sidebar tab:"
+msgid ""
+"This means you can work with Zammad in a similar way as with your email "
+"client. Except that a ticket has additional attributes. Read on to learn "
+"more."
+msgstr ""
+"Im Grunde können Sie mit Zammad also ähnlich wie mit Ihrem E-Mail Client "
+"arbeiten. Sie haben jedoch einige zusätzliche Attribute, die Sie im "
+"Seitenleisten-Tab _Ticket_ einstellen können:"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:33
+msgid ""
+"In addition to articles, tickets have some additional meta information which "
+"are called attributes. Use the **ticket sidebar** to view and change ticket "
+"attributes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:35
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-tags.png)"
+msgid ""
+"![Screenshot shows ticket sidebar](/screenshots/cypress/usage-basics.cy.js/"
+"ticket-sidebar.png)"
+msgstr ""
+"![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:38
+msgid ""
+"To hide the sidebar, click the collapse button with the arrow on the left "
+"side of the sidebar. Click on one of the tabs to bring it back. The "
+"available options depend on your privileges and the configuration of your "
+"system."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:41
+msgid ""
+"It is even possible to create custom fields for tickets (for groups, users "
+"and organizations too). You think such a custom field makes sense? Talk with "
+"your Zammad admin, it can be set up easily."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:42
+#, fuzzy, no-wrap
+#| msgid "States"
+msgid "State"
+msgstr "Status"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:46
+#, fuzzy
+#| msgid ""
+#| "**State**: reflects the current state of a ticket (mainly if a customer "
+#| "request is resolved or not). By default, there are the following states:"
+msgid ""
+"The state reflects the current status of a ticket (mainly if a customer "
+"request is resolved or not). Think of it as a representation of progress "
+"towards completion. By default, there are the following states:"
+msgstr ""
+"**Status**: spiegelt den aktuellen Status eines Tickets wider "
+"(hauptsächlich, ob eine Kundenanfrage gelöst ist oder nicht). Standardmäßig "
+"gibt es die folgenden Status:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+#, fuzzy
+#| msgid ""
+#| "**New**: State for new tickets on which no one has worked on. When "
+#| "updating a ticket the first time, it automatically switches to _open_."
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket for the first time, it automatically switches to open."
+msgstr ""
+"**Neu**: Status für neue Tickets, an denen noch niemand gearbeitet hat. Wenn "
+"ein Ticket zum ersten Mal aktualisiert wird, wechselt es automatisch zu "
+"_offen_."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr ""
+"**Offen**: Status für Tickets, die noch nicht gelöst sind und an denen noch "
+"gearbeitet werden muss."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+#, fuzzy
+#| msgid ""
+#| "**Pending Close**: State for tickets which are basically resolved but you "
+#| "don't want to close immediately. This state requires you to enter a date "
+#| "and time at which the ticket automatically switches to _closed_."
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to closed."
+msgstr ""
+"**Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst sind, "
+"die Sie aber nicht sofort schließen möchten. Für diesen Status müssen Sie "
+"ein Datum und eine Uhrzeit eingeben, zu der das Ticket automatisch auf "
+"_geschlossen_ wechselt."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+#, fuzzy
+#| msgid ""
+#| "**Pending Reminder**: State for open tickets which you want to get "
+#| "reminded to a certain date and time. Requires you to enter a date and "
+#| "time at which you want to get notified. For example useful if you had a "
+#| "question to a third party and want to make sure that this issue won't be "
+#| "forgotten."
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"about at a certain date and time. Requires you to enter a date and time at "
+"which you want to get notified. For example useful if you had a question to "
+"a third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+"**Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu einem "
+"bestimmten Datum und einer bestimmten Uhrzeit erinnert werden möchten. Hier "
+"müssen Sie ein Datum und eine Uhrzeit eingeben, zu der Sie benachrichtigt "
+"werden möchten. Dies ist z.B. nützlich, wenn Sie eine Frage an einen Dritten "
+"hatten und sicherstellen möchten, dass dieses Problem nicht vergessen wird."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**Merged**: State for a ticket which was merged into another ticket. Check "
+"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
+"to see the related ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:60
+msgid ""
+"Zammad's ticket states are color coded. This helps you to understanding the "
+"state of the ticket much faster in general - without having a look into "
+"details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:62
+#, fuzzy
+#| msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
+msgid ""
+"![Screenshot shows different color-coded states](/screenshots/overviews/"
+"states.png)"
+msgstr "![Screenshot zeigt Ticket Status](/screenshots/overviews/states.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:63
+#, fuzzy, no-wrap
+#| msgid "`priority`"
+msgid "Priority"
+msgstr "`priority`"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:67
+msgid ""
+"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
+"important it is. The three default priorities are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+#, fuzzy
+#| msgid "1 low: gray"
+msgid "1 low"
+msgstr "1 niedrig: grau"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+#, fuzzy
+#| msgid "2 normal: blue"
+msgid "2 normal"
+msgstr "2 normal: blau"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+#, fuzzy
+#| msgid "3 high: red"
+msgid "3 high"
+msgstr "3 hoch: rot"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:74
+msgid ""
+"In case these priorities aren't enough, ask your Zammad admin to create "
+"additional ones. The default priorities allow you to immediately recognize "
+"the importance of your tickets because they are color coded:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:76
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows ticket priorities](/screenshots/overviews/"
+#| "priorities.png)"
+msgid ""
+"![Screenshot shows different color-coded priorities](/screenshots/overviews/"
+"priorities.png)"
+msgstr ""
+"![Screenshot zeigt Ticket Prioritäten](/screenshots/overviews/priorities.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:79
+msgid ""
+"You might wonder what such a ticket priority is for. Out of the box, it "
+"doesn't actually do anything except the highlighting. However, Zammad "
+"administrators can set up all sorts of automation and analytics based on the "
+"priority."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:82
+msgid ""
+"Be aware that customers can't set a priority for their own tickets. "
+"Otherwise, some might set their tickets always to high and hope for an "
+"immediate escalation."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:83
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
+#, no-wrap
+msgid "Tags"
+msgstr "Tags"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:89
+#, fuzzy
+#| msgid ""
+#| "Tags are one way to categorize a ticket. You can think of tags as some "
+#| "kind of labels. They can be used in conditions like in triggers and in "
+#| "overviews and they can also be assigned automatically by macros, "
+#| "schedulers and triggers.  Of course you can search for the text of the "
+#| "tags and will find tickets which have the tag attached."
+msgid ""
+"Tags are custom labels that can be assigned to tickets to make it easier to "
+"find them in the future.  They can be used in conditions like in triggers "
+"and in overviews and they can also be assigned automatically by macros, "
+"schedulers and triggers. Of course you can search for the text of the tags "
+"and you will find the tickets which have the tag assigned."
+msgstr ""
+"Tags sind eine Möglichkeit, ein Ticket zu kategorisieren. Sie können sich "
+"die Tags als eine Art Etikett vorstellen. Sie können in Bedingungen, wie "
+"z.B. in Triggern und Übersichten, verwendet werden und sie können auch "
+"automatisch von Makros, Automatisierungen und Triggern zugewiesen werden.  "
+"Natürlich können Sie nach dem Text der Tags suchen und finden so Tickets, "
+"die mit dem Tag versehen sind."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid ""
+"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+"![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:96
+msgid ""
+"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
+"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
+"configuration, you can create new tags by simply type and confirm them with "
+"[[enter]] or [[tab]]. In any case, you can choose from already available "
+"tags. Start typing and you see a list with matching suggestions. To remove "
+"it, click the ::X:: button on the right side of the tab."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:97
+#: src/en/reference/es-indexed-attributes.md:1054
+#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
+#, no-wrap
+msgid "Group"
+msgstr "Gruppe"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:103
+msgid ""
+"This ticket attribute is useful for organizations with more than one team. A "
+"common way to use groups is to have one for each department of the company. "
+"Depending on the permissions, you might not see the ticket after changing "
+"the group and saving the changes. In case you can't see the group field, "
+"either there is only one group in your Zammad system or you don't have the "
+"permission to create a ticket in other groups."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:104
+#, fuzzy, no-wrap
+#| msgid "`owner`"
+msgid "Owner"
+msgstr "`owner`"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:110
+#, fuzzy
+#| msgid ""
+#| "**Owner**: This is the person who is currently responsible for the "
+#| "ticket. In case you need information from another colleague, you can "
+#| "either change the owner to this person or mention the person in an "
+#| "article by typing [[@]][[@]] and selecting the user. In the latter case, "
+#| "the user gets notified and is automatically subscribed to receive "
+#| "notifications on ticket updates."
+msgid ""
+"This is the person who is currently responsible for the ticket. In case you "
+"need information from another colleague, you can either change the owner to "
+"this person or mention the person in an article by typing [[@]][[@]] and "
+"selecting the user. In the latter case, the user gets notified and is "
+"automatically subscribed to receive notifications on ticket updates."
+msgstr ""
+"**Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich "
+"ist. Falls Sie Informationen von einem anderen Kollegen benötigen, können "
+"Sie entweder den Besitzer auf diese Person ändern oder die Person in einem "
+"Artikel erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. "
+"Im letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
+"Benachrichtigungen über Aktualisierungen des Tickets."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:112
+msgid ""
+"To change the owner to a person which has only access to another group's "
+"tickets, you first have to switch the group accordingly."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:116
+msgid "Now that you know the basics, head over to one of the following pages:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+#, fuzzy
+#| msgid "/en/documentation/use/advanced-features"
+msgid "[Find Tickets](/en/documentation/use/basics/find-tickets)"
+msgstr "/de/documentation/use/advanced-features"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+msgid "[Create tickets](/en/documentation/use/basics/create-tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+msgid "[Work with tickets](/en/documentation/use/basics/work-with-tickets)"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/work-with-tickets.md:1
+#: src/en/documentation/use/basics/work-with-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Work on Tickets"
+msgid "Work with Tickets"
+msgstr "Mit Tickets arbeiten"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:9
+msgid ""
+"You found your way into an existing ticket, congratulations! Now let's have "
+"a look what you can do and how to do it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:16
+msgid ""
+"Generally, working on existing tickets means keeping up with a customer "
+"correspondence in a thread/conversation in the ticket detail view. Any time "
+"you open a ticket, a new tab will appear in your navigation bar on the left "
+"side. To close a tab (in the sense of remove it from the navigation bar, not "
+"setting the ticket state to closed), just click the ::X:: button in the tab. "
+"Zammad automatically saves your changes in opened ticket tabs, no matter if "
+"you already applied the changes or just edited things and switched to "
+"somewhere else. This means it is no problem to create a new ticket while "
+"editing an existing one. Simply switch back to the other tab."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:19
+msgid ""
+"For the most changes (except tags or title renaming, for example), an "
+"explicit update of the ticket is needed. So make sure to click the "
+"**Update** button on the right side of the footer bar when you are happy "
+"with your changes."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:20
+#, fuzzy, no-wrap
+#| msgid "Modify ticket attributes"
+msgid "Changing Ticket Attributes"
+msgstr "Ändern von Ticketattributen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:24
+msgid ""
+"As you may know, there are additional ticket attributes such as group, "
+"priority and owner that you can set. If you haven't read [ticket-basics](/en/"
+"documentation/use/basics/ticket-basics) yet, check it out to learn more."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:25
+#, fuzzy, no-wrap
+#| msgid "Create a new ticket"
+msgid "Create a New Article"
+msgstr "Erstellen eines neuen Tickets"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:29
+msgid ""
+"No matter if you create a new article from scratch or respond to a customer "
+"article, you can choose from different article types:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Note**: Write a reminder for yourself and other agents, ask a colleague a "
+"question by mentioning a user or add new information to the ticket. The "
+"default visibility is \"internal\", which means the customer can't see the "
+"note."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Call**: Note down a summary of a phone call you had with the customer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Email**: Send an email to anyone about the ticket. The title of the ticket "
+"is used for the subject of the email."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:38
+msgid ""
+"To choose another article type, click the **Channel** dropdown and choose a "
+"different type. Click on the **Visibility** dropdown to change the article's "
+"visibility. Articles with \"internal\" visibility are displayed with a "
+"dashed blue border."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:40
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the article action split menu](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-split.png)"
+msgid ""
+"![Screenshot shows article type and visibility selector](/screenshots/"
+"cypress/usage-basics.cy.js/article-type-visibility.png)"
+msgstr ""
+"![Screenshot zeigt das Menü zur Abspaltung eines Artikels](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-split.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:44
+msgid ""
+"To write and edit text, make use of the powerful editor features. You can "
+"use the toolbar or keyboard shortcuts to format text and trigger special "
+"functions. Because of the amount of features and their importance, you can "
+"find more information on the separate [editor page](/en/documentation/use/"
+"guides/editor)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:47
+msgid ""
+"Every new article appears at the end of the conversation, which means below "
+"the existing articles. To see detailed information of an article, just click "
+"on an existing article which opens additional meta information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:51
+msgid ""
+"You might wonder now how to delete articles. The answer is you can only "
+"delete articles that you have created yourself and which are not older than "
+"10 minutes. To see the **Delete article** function in the ::a:: menu, "
+"articles of a communication type (emails, calls) must be changed to "
+"\"internal\" visibility first."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:52
+#, no-wrap
+msgid "Add an Article from Scratch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:58
+msgid ""
+"Click on one of the buttons at the bottom of the ticket detail view to add "
+"an article. Depending on what you choose, the article create screen gets pre-"
+"populated with the type and visibility. When choosing **Add reply**, the "
+"article gets sent out to the customer of the ticket. In case of an email "
+"based ticket, the email address of the customer is pre-populated."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:60
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows search results in navigation bar](/screenshots/cypress/"
+#| "usage-guide-search.cy.js/search-sidebar.png)"
+msgid ""
+"![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/"
+"usage-basics.cy.js/new-article.png)"
+msgstr ""
+"![Screenshot zeigt Suchergebnisse in der Navigationsleiste](/screenshots/"
+"cypress/usage-guide-search.cy.js/search-sidebar.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:61
+#, no-wrap
+msgid "Respond to an Article"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:65
+msgid ""
+"To forward or reply to an article, use one of the response buttons under an "
+"article or in the ::a:: menu. The behavior is similar to the behavior of an "
+"email client."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Reply**: Allows you to answer the article. The recipient is automatically "
+"pre-filled. The reply is sent via the same channel as the original message. "
+"This lets you easily send an answer to a customer or third party, if "
+"involved."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Reply all**: Same as above but uses all recipient addresses from the "
+"original message as recipients for your new article. Only available for "
+"email channels."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Forward**: This means you can forward the original message to a third "
+"party or anybody else. The original message and attachments are included in "
+"your new article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:74
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the article action split menu](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-split.png)"
+msgid ""
+"![Screenshot shows article reply actions](/screenshots/cypress/usage-"
+"basics.cy.js/article-reply.png)"
+msgstr ""
+"![Screenshot zeigt das Menü zur Abspaltung eines Artikels](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-split.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:83
+msgid ""
+"Zammad even allows you to **quote text** from an existing article. This is "
+"especially helpful if an answer refers to different parts of the original "
+"message or the text is pretty long. This feature is limited to communication "
+"type articles like email where the response buttons are available. To quote "
+"text, simply select the text you want to quote and use the **Reply** or "
+"**Reply all** function. This adds the selected text with a timestamp in your "
+"article editor where you can answer it. You can use the quoting even "
+"multiple times to quote different parts of the text. Just select another "
+"part of the text, click on the same response action as before and it gets "
+"added as another quote to your editor.  You can split quotations by using "
+"[[enter]] or [[shift]] + [[enter]] in the editor and disable quote format "
+"for your text."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:84
+#, fuzzy, no-wrap
+#| msgid "Open a Ticket"
+msgid "Rename a Ticket"
+msgstr "Ein Ticket öffnen"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:89
+msgid ""
+"To rename a ticket, simply click on the title in the header bar and start "
+"typing. This title is used as subject in email communication and shows up in "
+"several places like overviews. Confirm with [[enter]] or click the button on "
+"the right side."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:90
+#, fuzzy, no-wrap
+#| msgid "Ticket number."
+msgid "Copy Ticket Number"
+msgstr "Ticket-Nummer."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:96
+msgid ""
+"To copy the ticket number including a link to the ticket (e.g. to paste it "
+"in a third party chat app), use the ::c:: icon next to the ticket title. It "
+"copies the complete ticket number with the ticket identifier to your "
+"clipboard, e.g.  `Ticket#50071`. If pasting the content to a target which "
+"can handle HTML, a link to the ticket is included. If you just want to paste "
+"the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:99
+msgid ""
+"If you scrolled own in the ticket, hover over the collapsed header bar where "
+"you can find the button on the top left side."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:101
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
+#| "summary banner and summary sidebar](/screenshots/cypress/usage-guide-"
+#| "ai.cy.js/ai-ticket-summary-sidebar.png)"
+msgid ""
+"![Screenshot shows ticket header with highlighted ticket number copy button]"
+"(/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)"
+msgstr ""
+"![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner "
+"für die Ticket-Zusammenfassung und der Zusammenfassungs-Seitenleiste](/"
+"screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:104
+msgid ""
+"But wait, there is even a keyboard shortcut for that. Simply press [[.]] and "
+"the ticket number is copied to your clipboard. To include the ticket title "
+"as well, press [[.]] twice. Example: `Ticket#31004: Onboarding new "
+"colleague`."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:105
+#, fuzzy, no-wrap
+#| msgid "Simultaneous Work Detection"
+msgid "Simultaneous Ticket Processing"
+msgstr "Erkennung gleichzeitige Ticketbearbeitung"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:110
+msgid ""
+"It can happen that two or more agents open a ticket at the same time. To "
+"prevent edit conflicts and customers receiving contradictory answers, Zammad "
+"shows you who is viewing or editing the ticket currently. You can find this "
+"information in the bottom bar where avatars of all agents are displayed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:112
+msgid ""
+"![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
+"advanced-features/simultaneous-work-detection.png)"
+msgstr ""
+"![Screenshot zeigt andere Agenten, die das Ticket gerade sehen/bearbeiten](/"
+"screenshots/advanced-features/simultaneous-work-detection.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:115
+#, fuzzy
+#| msgid ""
+#| "Depending on the additional icon and if the avatar icon is faded, it "
+#| "means:"
+msgid ""
+"Make sure to communicate with your colleagues to prevent these problems "
+"before they arise. Depending on the additional icon and if the avatar icon "
+"is faded, it means:"
+msgstr ""
+"Je nach zusätzlichem Icon und ob der Avatar abgedunkelt ist, bedeutet dies:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+msgid "Avatar: Another agent is viewing the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+#, fuzzy
+#| msgid ""
+#| "Another agent opened the ticket but is currently not actively viewing "
+#| "this ticket (faded avatar icon with the snooze icon, see left avatar in "
+#| "screenshot)"
+msgid ""
+"Faded avatar: Another agent opened the ticket but is currently not actively "
+"viewing it."
+msgstr ""
+"Ein anderer Agent hat das Ticket geöffnet, ist aber momentan nicht aktiv mit "
+"dem Ticket beschäftigt (abgedunkelter Avatar mit einem Schlummer-Icon, siehe "
+"linker Avatar im Screenshot)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+msgid ""
+"Avatar with pencil icon: Another agent is currently actively working on this "
+"ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:122
+msgid ""
+"There are even more icons which represent additional states of the other "
+"agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover "
+"with the mouse if you are unsure what it means."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:123
+#, fuzzy, no-wrap
+#| msgid "Ticket tabs"
+msgid "Ticket Actions"
+msgstr "Ticket Tabs"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:126
+#, fuzzy
+#| msgid ""
+#| "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
+#| "header."
+msgid ""
+"Additional actions are available in the ::a:: menu in the ticket sidebar."
+msgstr ""
+"Benennen Sie sie um, indem Sie auf den Titel klicken oder das ::a:: Menü im "
+"Header der Seitenleiste verwenden."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:130
+#, no-wrap
+msgid ""
+"History\n"
+": See a comprehensive list of updates to the ticket, performed by any user, since its creation. Useful to check who did\n"
+"  what and when.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:134
+#, no-wrap
+msgid ""
+"Merge\n"
+": Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.\n"
+"  See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:137
+msgid "Change Customer : Reassign the ticket to another customer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:142
+msgid ""
+"You now know the basics and how to work with tickets in general. However, "
+"there are many more features in Zammad which can be very useful in your "
+"daily work. Read on in [Advanced Features](/en/documentation/use/advanced-"
+"features) to learn more."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/zammad-ui.md:1
+#: src/en/documentation/use/basics/zammad-ui.md:6
+#, fuzzy, no-wrap
+#| msgid "Zammad AI"
+msgid "Zammad UI"
+msgstr "Zammad KI"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:11
+#, fuzzy
+#| msgid ""
+#| "The user interface (UI) of Zammad is designed to provide an intuitive "
+#| "experience for users. It is built around the concept of simplicity, "
+#| "clarity, and accessibility."
+msgid ""
+"The user interface (UI) of Zammad is designed to provide an intuitive "
+"experience for users. It is built around the concept of simplicity, clarity, "
+"and accessibility and is based on common software design principles which "
+"should make the UI pretty self explanatory."
+msgstr ""
+"Die Benutzeroberfläche (User Interface, UI) von Zammad ist so konzipiert, "
+"dass Benutzer sie intuitiv nutzen können. Sie ist nach den Prinzipien "
+"Einfachheit, Klarheit und Zugänglichkeit aufgebaut."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:15
+#, fuzzy
+#| msgid ""
+#| "There are basic modular components for different features to keep the UI "
+#| "consistent. These components are described in the section [Main UI "
+#| "Elements](#main-ui-elements) as well as [Navigating](#navigating) below."
+msgid ""
+"There are basic modular components for different features to keep the UI "
+"consistent. These components are described in the sections below. Depending "
+"on the currently opened screen, there are interactive components, such as "
+"tooltips and a contextual help. Use them wherever needed."
+msgstr ""
+"Es gibt grundlegende modulare Komponenten für verschiedene Funktionen, um "
+"die Benutzeroberfläche konsistent zu halten. Diese Komponenten werden in den "
+"Abschnitten [Haupt-UI-Elemente](#haupt-ui-elemente) sowie [Navigieren]"
+"(#navigieren) unten beschrieben."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:17
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-"
+#| "ui.cy.js/zammad-ui-full.png)"
+msgid ""
+"![Screenshot shows the ticket detail view](/screenshots/cypress/zammad-"
+"ui.cy.js/zammad-ui-full.png)"
+msgstr ""
+"![Screenshot zeigt eine Ticket-Detailansicht](/screenshots/cypress/zammad-"
+"ui.cy.js/zammad-ui-full.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:18
+#, no-wrap
+msgid "Main UI Elements"
+msgstr "Haupt UI-Elemente"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:22
+msgid ""
+"The screenshot above shows a ticket detail view in Zammad. Read on for a "
+"description of the different main elements of Zammad."
+msgstr ""
+"Der Screenshot oben zeigt eine Ticket-Detailansicht in Zammad. Lesen Sie "
+"weiter, um eine Beschreibung der verschiedenen Elemente von Zammad zu "
+"erhalten."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:26
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Navigation sidebar\n"
+#| ": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
+#| "  create button.\n"
+msgid ""
+"Navigation Sidebar\n"
+": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
+"  create button.\n"
+msgstr ""
+"Navigations-Seitenleiste\n"
+": Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,\n"
+"  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:30
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Navigation tab\n"
+#| ": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
+#| "  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+msgid ""
+"Navigation Tab\n"
+": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
+"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+msgstr ""
+"Navigations-Tab\n"
+": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab sein (mit\n"
+"  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:34
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Ticket detail view\n"
+#| ": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
+#| "  selected in the navigation sidebar.\n"
+msgid ""
+"Ticket Detail View\n"
+": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
+"  selected in the navigation sidebar.\n"
+msgstr ""
+"Ticket-Detailansicht\n"
+": Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte\n"
+"  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:38
+#, no-wrap
+msgid ""
+"Sidebar\n"
+": This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and\n"
+"  displays the currently selected tab.\n"
+msgstr ""
+"Seitenleiste\n"
+": Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs\n"
+"  wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.\n"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:43
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Sidebar tabs\n"
+#| ": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
+#| "  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
+#| "  customer has an assigned organization).\n"
+msgid ""
+"Sidebar Tabs\n"
+": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
+"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
+"  customer has an assigned organization).\n"
+msgstr ""
+"Seitenleisten-Tabs\n"
+": Auf der rechten Seite der Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen\n"
+"  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,\n"
+"  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).\n"
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:44
+#, fuzzy, no-wrap
+#| msgid "Navigating"
+msgid "Navigation Sidebar"
+msgstr "Navigieren"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:49
+msgid ""
+"The navigation sidebar is your central place to access all main parts of "
+"Zammad. You might not see all of them because some depend on the "
+"configuration of your Zammad. The navigation sidebar is always visible. That "
+"means if you don’t know where you are, you can always go back to the "
+"dashboard, your overviews or an opened ticket, for example."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:54
+#, no-wrap
+msgid ""
+"Search and Notfication Area\n"
+": Includes the search where you can search for users, organizations, tickets and basically every in Zammad available\n"
+"  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge\n"
+"  with a count about how many notifications you got.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:57
+msgid ""
+"Navigation : Allows you to switch to different Zammad screens like the "
+"dashboard, overviews, knowledge base or phone screen."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:60
+msgid ""
+"Content Tabs : You can find tabs for your opened tickets, users and "
+"organizations."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:64
+#, no-wrap
+msgid ""
+"Bottom Bar\n"
+": Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and\n"
+"  a reporting button as well.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:67
+msgid ""
+"Zammad immediately saves your current work progress, so you can easily "
+"switch between the different areas of Zammad and you don't have to be afraid "
+"of losing any data like a not yet sent answer in a ticket."
+msgstr ""
+"Zammad speichert Ihren aktuellen Arbeitsfortschritt sofort, so dass Sie "
+"leicht zwischen den verschiedenen Bereichen von Zammad wechseln können und "
+"keine Angst haben müssen, Daten zu verlieren, z.B. eine noch nicht "
+"abgeschickte Antwort in einem Ticket."
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:68
+#, no-wrap
+msgid "Sidebar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:73
+msgid ""
+"The sidebar on the right side displays all ticket relevant information and "
+"includes additional functionality. The most important one is the ticket "
+"sidebar. Switch between the different sidebars by clicking the desired tab "
+"on the right side of the sidebar. The available tabs depend on the ticket "
+"and the configured features of your Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:75
+#, fuzzy, no-wrap
+#| msgid "<!-- markdownlint-disable MD041 -->\n"
+msgid "<!-- markdownlint-disable MD007 -->\n"
+msgstr "<!-- markdownlint-disable MD041 -->\n"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:79
+#, no-wrap
+msgid ""
+"Ticket Tab\n"
+": This tab shows the ticket information like owner, group, priority and state and lets you edit these values.\n"
+"  Additionally, the following actions are available when you click on the Ticket header:\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+msgid ""
+"History: shows a dialog with the history in the current ticket. This is "
+"where you can find when and what actions was performed and by whom."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+msgid ""
+"Merge: merge the ticket with another one in case a customer emailed you "
+"multiple times about the same issue."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+#, fuzzy
+#| msgid "What does the customer see in the ticket?"
+msgid "Change customer: set another customer for the ticket."
+msgstr "Was sieht ein Kunde im Ticket?"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:88
+#, no-wrap
+msgid ""
+"Customer Tab\n"
+": View customer details including a reference to the customer’s other tickets. You can change the ticket customer here\n"
+"  as well by clicking on the Customer header and choose Change customer.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:91
+#, no-wrap
+msgid ""
+"Organization Tab\n"
+": This tab is only shown if the customer is member of an organization. It shows the organization’s details including all\n"
+"  members. By clicking the Organization header, you can edit the name, the domain and the note of the organization.\n"
+msgstr ""
 
 #. type: Yaml Front Matter Array Element: outline
 #: src/en/documentation/use/faq.md:1
@@ -3675,114 +5154,6 @@ msgstr ""
 "konfiguriert ist. Wenn Sie dieses Verhalten ändern möchten, bitten Sie Ihren "
 "Administrator, dies zu tun."
 
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "If you are new to Zammad and ticketing software in general, first read the basics here."
-msgstr "Wenn Sie neu in Zammad und in der Ticket-Software im Allgemeinen sind, lesen Sie zunächst hier die Grundlagen."
-
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "/en/documentation/use/start-using-zammad"
-msgstr "/de/documentation/use/start-using-zammad"
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Zammad Beginner"
-msgstr "Zammad Anfänger"
-
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar."
-msgstr "Wenn Sie bereits mit den Grundlagen vertraut sind, lesen Sie hier weiter oder springen Sie direkt zu dem entsprechenden Abschnitt in der Navigations-Seitenleiste."
-
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "/en/documentation/use/advanced-features"
-msgstr "/de/documentation/use/advanced-features"
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Advanced User"
-msgstr "Fortgeschrittener Benutzer"
-
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "As an administrator, head over to the Manage Zammad section."
-msgstr "Schauen Sie sich als Administrator den Bereich \"Zammad verwalten\" an."
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Administrator"
-msgstr "Administrator"
-
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/general.md:19 src/en/documentation/use/index.md:1
-#, no-wrap
-msgid "Use Zammad"
-msgstr "Zammad verwenden"
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:23
-msgid ""
-"Welcome to the user documentation of Zammad. Here you can learn how to use "
-"Zammad to collaborate with your colleagues even better!"
-msgstr ""
-"Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie "
-"Sie Zammad nutzen können, um noch besser mit Ihren Kollegen "
-"zusammenzuarbeiten!"
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:26
-msgid ""
-"In general, Zammad should be pretty self explanatory. However, there are "
-"features that are not obvious at first glance.  These features are described "
-"in this documentation as well as some general explanations and tips."
-msgstr ""
-"Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt "
-"es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese "
-"Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige "
-"allgemeine Erklärungen und Tipps."
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:30
-msgid ""
-"This documentation is divided into different sections. Currently you are on "
-"the landing page of the user documentation.  Use the left sidebar to "
-"navigate to the desired section or use the search in the header or activate "
-"it by using its keyboard shortcut [[ctrl]] [[k]]."
-msgstr ""
-"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Sie befinden "
-"sich derzeit auf der Startseite der Benutzer-Dokumentation.  Benutzen Sie "
-"die linke Seitenleiste, um zu dem gewünschten Abschnitt zu navigieren, "
-"öffnen die Suche im Kopfbereich oder aktivieren Sie diese mit dem "
-"Tastaturkürzel [[strg]] [[k]]."
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/general.md:31
-#, no-wrap
-msgid ""
-"\n"
-"This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed\n"
-"by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside\n"
-"the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a\n"
-"page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
-"\n"
-msgstr ""
-"\n"
-"Diese Benutzer-Dokumentation ist Teil einer umfassenden Dokumentation von Zammad. Um sicherzustellen, dass Benutzer nicht mit für sie\n"
-"irrelevanten Informationen behelligt werden, ist die Suche auf den Inhalt dieses Bereichs beschränkt und die Navigations-Seitenleiste zeigt\n"
-"nur die Struktur des Bereichs. Um die gesamte Struktur zu sehen und/oder in der gesamten Dokumentation zu suchen, wechseln Sie einfach\n"
-"auf eine Seite außerhalb der Benutzerdokumentation (z.B. durch Klicken auf den **Zammad Hub** in der oberen linken Ecke).\n"
-"\n"
-
 #. type: Title #
 #: src/en/documentation/use/guides/ai.md:1
 #: src/en/documentation/use/guides/ai.md:6
@@ -4049,6 +5420,12 @@ msgid ""
 msgstr ""
 "![Eintrag eines KI-Agenten in die Ticket-Historie](/screenshots/ai/ai-agent-"
 "ticket-history.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:83
+#, no-wrap
+msgid "Simultaneous Work Detection"
+msgstr "Erkennung gleichzeitige Ticketbearbeitung"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:88
@@ -5821,6 +7198,12 @@ msgstr ""
 "**Entfernen**. In einem Dialog werden Sie aufgefordert, die Entfernung mit "
 "Ihrem aktuellen Passwort zu bestätigen."
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/index.md:1
+#, no-wrap
+msgid "Use Zammad"
+msgstr "Zammad verwenden"
+
 #. type: Title #
 #: src/en/documentation/use/manage-profile.md:6
 #, no-wrap
@@ -6134,14 +7517,6 @@ msgstr ""
 "![Screenshot zeigt Seiten-Panel mit erstelltem Token und Kopierschaltfläche]"
 "(/screenshots/cypress/user-profile.cy.js/token-dialog.png)"
 
-#. type: Title ###
-#: src/en/documentation/use/manage-profile.md:105
-#: src/en/documentation/use/start-using-zammad.md:68
-#: src/en/documentation/use/start-using-zammad.md:106
-#, no-wrap
-msgid "Notifications"
-msgstr "Benachrichtigungen"
-
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:108
 msgid "Adjust the notifications you get. You can adjust:"
@@ -6259,637 +7634,121 @@ msgstr ""
 "letzteren können Sie festlegen, welche Tickets basierend auf Ticketstatus "
 "und -zuweisung Sie einbeziehen möchten."
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "If you are new to Zammad and ticketing software in general, first read the basics here."
+msgstr "Wenn Sie neu in Zammad und in der Ticket-Software im Allgemeinen sind, lesen Sie zunächst hier die Grundlagen."
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "/en/documentation/use/start-using-zammad"
+msgid "/en/documentation/use/basics/zammad-ui"
+msgstr "/de/documentation/use/start-using-zammad"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Zammad Beginner"
+msgstr "Zammad Anfänger"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar."
+msgstr "Wenn Sie bereits mit den Grundlagen vertraut sind, lesen Sie hier weiter oder springen Sie direkt zu dem entsprechenden Abschnitt in der Navigations-Seitenleiste."
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "/en/documentation/use/advanced-features"
+msgstr "/de/documentation/use/advanced-features"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Advanced User"
+msgstr "Fortgeschrittener Benutzer"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "As an administrator, head over to the Manage Zammad section."
+msgstr "Schauen Sie sich als Administrator den Bereich \"Zammad verwalten\" an."
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Administrator"
+msgstr "Administrator"
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "Get Started"
+msgid "Start"
+msgstr "Loslegen"
+
 #. type: Title #
-#: src/en/documentation/use/start-using-zammad.md:1
-#: src/en/documentation/use/start-using-zammad.md:6
+#: src/en/documentation/use/start.md:19
 #, no-wrap
-msgid "Start with Zammad"
-msgstr "Mit Zammad starten"
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:8
-#, no-wrap
-msgid "User Interface"
-msgstr "Benutzeroberfläche"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:14
-msgid ""
-"The user interface (UI) of Zammad is designed to provide an intuitive "
-"experience for users. It is built around the concept of simplicity, clarity, "
-"and accessibility."
+msgid "Welcome"
 msgstr ""
-"Die Benutzeroberfläche (User Interface, UI) von Zammad ist so konzipiert, "
-"dass Benutzer sie intuitiv nutzen können. Sie ist nach den Prinzipien "
-"Einfachheit, Klarheit und Zugänglichkeit aufgebaut."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:17
+#: src/en/documentation/use/start.md:23
 msgid ""
-"There are basic modular components for different features to keep the UI "
-"consistent. These components are described in the section [Main UI Elements]"
-"(#main-ui-elements) as well as [Navigating](#navigating) below."
+"Welcome to the user documentation of Zammad. Here you can learn how to use "
+"Zammad to collaborate with your colleagues even better!"
 msgstr ""
-"Es gibt grundlegende modulare Komponenten für verschiedene Funktionen, um "
-"die Benutzeroberfläche konsistent zu halten. Diese Komponenten werden in den "
-"Abschnitten [Haupt-UI-Elemente](#haupt-ui-elemente) sowie [Navigieren]"
-"(#navigieren) unten beschrieben."
+"Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie "
+"Sie Zammad nutzen können, um noch besser mit Ihren Kollegen "
+"zusammenzuarbeiten!"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:20
+#: src/en/documentation/use/start.md:26
 msgid ""
-"Depending on the currently opened screen, there are interactive components, "
-"such as tooltips and a contextual help. Use them wherever needed."
+"In general, Zammad should be pretty self explanatory. However, there are "
+"features that are not obvious at first glance.  These features are described "
+"in this documentation as well as some general explanations and tips."
 msgstr ""
-"Abhängig von der aktuell geöffneten Ansicht gibt es interaktive Komponenten "
-"wie Tooltips und eine kontextbezogene Hilfe. Verwenden Sie diese bei Bedarf."
+"Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt "
+"es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese "
+"Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige "
+"allgemeine Erklärungen und Tipps."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:22
+#: src/en/documentation/use/start.md:30
 msgid ""
-"In any case, the UI is based on common software design principles and is "
-"mostly self explanatory."
+"This documentation is divided into different sections. Currently you are on "
+"the landing page of the user documentation.  Use the left sidebar to "
+"navigate to the desired section or use the search in the header or activate "
+"it by using its keyboard shortcut [[ctrl]] [[k]]."
 msgstr ""
-"In jedem Fall basiert die Benutzeroberfläche auf gängigen Software-Design-"
-"Prinzipien und ist weitgehend selbsterklärend."
+"Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Sie befinden "
+"sich derzeit auf der Startseite der Benutzer-Dokumentation.  Benutzen Sie "
+"die linke Seitenleiste, um zu dem gewünschten Abschnitt zu navigieren, "
+"öffnen die Suche im Kopfbereich oder aktivieren Sie diese mit dem "
+"Tastaturkürzel [[strg]] [[k]]."
 
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:23
-#, no-wrap
-msgid "Main UI Elements"
-msgstr "Haupt UI-Elemente"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:26
-msgid ""
-"![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-"
-"ui.cy.js/zammad-ui-full.png)"
-msgstr ""
-"![Screenshot zeigt eine Ticket-Detailansicht](/screenshots/cypress/zammad-"
-"ui.cy.js/zammad-ui-full.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:29
-msgid ""
-"The screenshot above shows a ticket detail view in Zammad. Read on for a "
-"description of the different main elements of Zammad."
-msgstr ""
-"Der Screenshot oben zeigt eine Ticket-Detailansicht in Zammad. Lesen Sie "
-"weiter, um eine Beschreibung der verschiedenen Elemente von Zammad zu "
-"erhalten."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:33
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/start.md:31
 #, no-wrap
 msgid ""
-"Navigation sidebar\n"
-": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
-"  create button.\n"
+"\n"
+"This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed\n"
+"by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside\n"
+"the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a\n"
+"page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
+"\n"
 msgstr ""
-"Navigations-Seitenleiste\n"
-": Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,\n"
-"  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:37
-#, no-wrap
-msgid ""
-"Navigation tab\n"
-": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
-"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
-msgstr ""
-"Navigations-Tab\n"
-": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab sein (mit\n"
-"  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:41
-#, no-wrap
-msgid ""
-"Ticket detail view\n"
-": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
-"  selected in the navigation sidebar.\n"
-msgstr ""
-"Ticket-Detailansicht\n"
-": Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte\n"
-"  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:45
-#, no-wrap
-msgid ""
-"Sidebar\n"
-": This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and\n"
-"  displays the currently selected tab.\n"
-msgstr ""
-"Seitenleiste\n"
-": Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs\n"
-"  wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:50
-#, no-wrap
-msgid ""
-"Sidebar tabs\n"
-": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
-"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
-"  customer has an assigned organization).\n"
-msgstr ""
-"Seitenleisten-Tabs\n"
-": Auf der rechten Seite der Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen\n"
-"  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,\n"
-"  Ihren Rechten und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).\n"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:54
-#, no-wrap
-msgid ""
-"Active sidebar\n"
-": The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization\n"
-"  sidebar, checklist sidebar and more.\n"
-msgstr ""
-"Aktive Seitenleiste\n"
-": Der ausgewählte Seitenleisten-Tab. Zeigt den Inhalt des Tabs an. Sie kann Dinge beinhalten\n"
-"  wie die Kunden-, Organisations- oder Checklisten-Seitenleiste und mehr.\n"
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:55
-#, no-wrap
-msgid "Navigating"
-msgstr "Navigieren"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:58
-msgid ""
-"The navigation sidebar is your central place to access all main parts of "
-"Zammad. It includes:"
-msgstr ""
-"Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen "
-"Bereiche von Zammad zuzugreifen. Sie umfasst:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Search bar"
-msgstr "Suchleiste"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Overview section"
-msgstr "Übersichten"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Chat (if activated)"
-msgstr "Chat (falls aktiviert)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Phone (if activated)"
-msgstr "Telefon (falls aktiviert)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Ticket tabs"
-msgstr "Ticket Tabs"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Avatar with menu"
-msgstr "Avatar mit Menü"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Settings (if you have permissions)"
-msgstr "Einstellungen (wenn Sie die entsprechenden Rechte haben)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Ticket create button"
-msgstr "Ticket erstellen Schaltfläche"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:71
-msgid ""
-"The main navigation in Zammad is done in this sidebar. It is always visible "
-"and you can switch between ticket, overviews and the search, for example."
-msgstr ""
-"Die Hauptnavigation in Zammad findet in dieser Seitenleiste statt. Sie ist "
-"immer sichtbar und Sie können z.B. zwischen Ticket, Übersichten und der "
-"Suche wechseln."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:74
-msgid ""
-"Zammad immediately saves your current work progress, so you can easily "
-"switch between the different areas of Zammad and you don't have to be afraid "
-"of losing any data like a not yet sent answer in a ticket."
-msgstr ""
-"Zammad speichert Ihren aktuellen Arbeitsfortschritt sofort, so dass Sie "
-"leicht zwischen den verschiedenen Bereichen von Zammad wechseln können und "
-"keine Angst haben müssen, Daten zu verlieren, z.B. eine noch nicht "
-"abgeschickte Antwort in einem Ticket."
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:75
-#, no-wrap
-msgid "Finding Tickets"
-msgstr "Tickets finden"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:78
-msgid "There are different ways to find tickets, depending on your use case."
-msgstr ""
-"Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig von Ihrem "
-"Anwendungsfall."
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:79
-#, no-wrap
-msgid "Via Overviews"
-msgstr "Per Übersichten"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:84
-msgid ""
-"If you search for new tickets to work on, your first look should be in the "
-"overview section. You can either open it by clicking the `Overviews` button "
-"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
-"overviews as a kind of ticket lists."
-msgstr ""
-"Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie "
-"zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch "
-"Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen "
-"oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine "
-"Art von Ticket-Listen betrachten."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:88
-msgid ""
-"By default, there are some built in overviews, you can use. For example, "
-"there is an overview called \"Open Tickets\".  This might be a good starting "
-"point. Your Zammad admin may have created additional overviews. These are "
-"based on conditions, which are basically rules, to define which ticket "
-"appears in which overview."
-msgstr ""
-"Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden "
-"können. Zum Beispiel gibt es eine Übersicht namens \"Offene Tickets\". Dies "
-"könnte ein guter Ausgangspunkt sein. Ihr Zammad-Administrator hat "
-"möglicherweise zusätzliche Übersichten erstellt. Diese basieren auf "
-"Bedingungen/Regeln, um festzulegen, welches Ticket in welcher Übersicht "
-"erscheint."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:90
-msgid ""
-"For a detailed description, head over to the [overview usage guide](/en/"
-"documentation/use/guides/overviews)."
-msgstr ""
-"Eine detaillierte Erklärung finden Sie in der [Beschreibung der Übersichten]"
-"(/de/documentation/use/guides/overviews)."
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:91
-#, no-wrap
-msgid "Via Search"
-msgstr "Per Suche"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:96
-msgid ""
-"However, if you search for a specific ticket which might or might not be "
-"visible in the overviews, you can use the search. You can find it in the top "
-"left corner in the navigation bar. Either select it via mouse or use the "
-"keyboard shortcut by simply pressing [[s]]."
-msgstr ""
-"Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten "
-"sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie "
-"finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie "
-"entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]]."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:99
-msgid ""
-"After activating the search field, you can find the tickets you recently "
-"closed from your taskbar as well as your last search queries."
-msgstr ""
-"Nachdem Sie das Suchfeld aktiviert haben sehen Sie die kürzlich in der "
-"Taskleiste geschlossenen Tickets sowie Ihre letzten Suchanfragen."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:103
-msgid ""
-"By entering a search term, you immediately see a preview of the search "
-"results. If you press [[enter]] or click on `detailed search`, Zammad "
-"displays a page with search results. There you can differentiate by object "
-"type (e.g.  customer), what you are searching."
-msgstr ""
-"Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der "
-"Suchergebnisse. Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` "
-"klicken, zeigt Zammad eine Seite mit Suchergebnissen an. Dort können Sie die "
-"Suche basierend auf dem Objekttyp (z.B. Benutzer) durchführen."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:105
-msgid "Have a look at the [search guide](guides/search) for more details."
-msgstr ""
-"Weitere Einzelheiten finden Sie in den [Details zur Suche](guides/search)."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:112
-msgid ""
-"Depending on the [notification settings](/en/documentation/use/manage-"
-"profile#notifications) in your profile, you receive updates for different "
-"ticket based events like the creation or the update of a ticket. This "
-"ensures that no important change to a ticket is overlooked."
-msgstr ""
-"Abhängig von den [Benachrichtigungseinstellungen](/de/documentation/use/"
-"manage-profile#benachrichtigungen) in Ihrem Profil erhalten Sie "
-"Aktualisierungen für verschiedene ticketbasierte Ereignisse wie die "
-"Erstellung oder die Aktualisierung eines Tickets. So wird sichergestellt, "
-"dass keine wichtige Änderung an einem Ticket übersehen wird."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:115
-msgid ""
-"You can open them by clicking on the notification counter in the top left "
-"corner. If there is a badge with a counter, the counter shows the number of "
-"unread notifications."
-msgstr ""
-"Sie können sie öffnen, indem Sie auf den Benachrichtigungszähler in der "
-"oberen linken Ecke klicken. Wenn ein Label mit einem Zähler vorhanden ist, "
-"zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:118
-msgid ""
-"By default, you get notified when one of your tickets (means you are the "
-"owner) got updated. By clicking on the link in the notification, this ticket "
-"gets opened in the navigation sidebar as tab and the ticket detail view is "
-"displayed."
-msgstr ""
-"Standardmäßig werden Sie benachrichtigt, wenn eines Ihrer Tickets (das "
-"heißt, Sie sind der Besitzer) aktualisiert wurde. Wenn Sie auf den Link in "
-"der Benachrichtigung klicken, wird dieses Ticket in der Navigations-"
-"Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird angezeigt."
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:119
-#, no-wrap
-msgid "Ticket Basics"
-msgstr "Ticket-Grundlagen"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:125
-msgid ""
-"If you're completely new to a ticket system and handled your customer "
-"requests with an email client so far, you might think that a ticket system "
-"is complicated. But the opposite is the case:"
-msgstr ""
-"Wenn Sie ganz neu in Ticket-Systemen sind und Ihre Kundenanfragen bisher mit "
-"einem E-Mail-Client bearbeitet haben, denken Sie vielleicht, dass ein Ticket-"
-"System kompliziert ist. Aber das Gegenteil ist der Fall:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"All emails are now collected in Zammad (and requests from other channels "
-"might be as well)."
-msgstr ""
-"Alle E-Mails werden nun in Zammad gesammelt (und Anfragen aus anderen "
-"Kanälen möglicherweise auch)."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"You and your colleagues can see who is working on which customer request "
-"(\"ticket\")."
-msgstr ""
-"Sie und Ihre Kollegen können sehen, wer an welcher Kundenanfrage "
-"(\"Ticket\") arbeitet."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"The state of each request as well as the history (who did what?) is "
-"transparent."
-msgstr ""
-"Der Status jeder Anfrage sowie die Historie (wer hat was getan?) sind "
-"transparent."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid "There is no duplicate work and nothing gets overlooked."
-msgstr "Es gibt keine doppelte Arbeit und nichts wird übersehen."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"You can ask your colleagues directly in the ticket for help in difficult "
-"cases."
-msgstr ""
-"In schwierigen Fällen können Sie Ihre Kollegen direkt im Ticket um Hilfe "
-"bitten."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"With Zammad's intuitive UI, you can focus on what matters: to resolve "
-"customer issues and answer customer questions."
-msgstr ""
-"Mit der intuitiven Benutzeroberfläche von Zammad können Sie sich auf das "
-"Wesentliche konzentrieren: die Lösung von Kundenproblemen und die "
-"Beantwortung von Kundenfragen."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:135
-msgid ""
-"So, basically you can work with Zammad similar as with your email client. "
-"Except that you have some additional attributes you can set in the _Ticket_ "
-"sidebar tab:"
-msgstr ""
-"Im Grunde können Sie mit Zammad also ähnlich wie mit Ihrem E-Mail Client "
-"arbeiten. Sie haben jedoch einige zusätzliche Attribute, die Sie im "
-"Seitenleisten-Tab _Ticket_ einstellen können:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**State**: reflects the current state of a ticket (mainly if a customer "
-"request is resolved or not). By default, there are the following states:"
-msgstr ""
-"**Status**: spiegelt den aktuellen Status eines Tickets wider "
-"(hauptsächlich, ob eine Kundenanfrage gelöst ist oder nicht). Standardmäßig "
-"gibt es die folgenden Status:"
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket the first time, it automatically switches to _open_."
-msgstr ""
-"**Neu**: Status für neue Tickets, an denen noch niemand gearbeitet hat. Wenn "
-"ein Ticket zum ersten Mal aktualisiert wird, wechselt es automatisch zu "
-"_offen_."
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Open**: State for tickets which aren't resolved yet and some work needs to "
-"be done."
-msgstr ""
-"**Offen**: Status für Tickets, die noch nicht gelöst sind und an denen noch "
-"gearbeitet werden muss."
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Pending Close**: State for tickets which are basically resolved but you "
-"don't want to close immediately. This state requires you to enter a date and "
-"time at which the ticket automatically switches to _closed_."
-msgstr ""
-"**Warten auf Schließen**: Status für Tickets, die grundsätzlich gelöst sind, "
-"die Sie aber nicht sofort schließen möchten. Für diesen Status müssen Sie "
-"ein Datum und eine Uhrzeit eingeben, zu der das Ticket automatisch auf "
-"_geschlossen_ wechselt."
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Pending Reminder**: State for open tickets which you want to get reminded "
-"to a certain date and time. Requires you to enter a date and time at which "
-"you want to get notified. For example useful if you had a question to a "
-"third party and want to make sure that this issue won't be forgotten."
-msgstr ""
-"**Warten auf Erinnerung**: Status für offene Tickets, an die Sie zu einem "
-"bestimmten Datum und einer bestimmten Uhrzeit erinnert werden möchten. Hier "
-"müssen Sie ein Datum und eine Uhrzeit eingeben, zu der Sie benachrichtigt "
-"werden möchten. Dies ist z.B. nützlich, wenn Sie eine Frage an einen Dritten "
-"hatten und sicherstellen möchten, dass dieses Problem nicht vergessen wird."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Owner**: This is the person who is currently responsible for the ticket. "
-"In case you need information from another colleague, you can either change "
-"the owner to this person or mention the person in an article by typing [[@]]"
-"[[@]] and selecting the user. In the latter case, the user gets notified and "
-"is automatically subscribed to receive notifications on ticket updates."
-msgstr ""
-"**Besitzer**: Dies ist die Person, die derzeit für das Ticket verantwortlich "
-"ist. Falls Sie Informationen von einem anderen Kollegen benötigen, können "
-"Sie entweder den Besitzer auf diese Person ändern oder die Person in einem "
-"Artikel erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. "
-"Im letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch "
-"Benachrichtigungen über Aktualisierungen des Tickets."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Group**: This ticket attribute is useful for organizations with more than "
-"one team. Depending on the permissions, you might not see the ticket after "
-"changing the group and saving the changes."
-msgstr ""
-"**Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit mehr "
-"als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket "
-"möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen "
-"gespeichert haben."
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:153
-#, no-wrap
-msgid "Ticket Detail View"
-msgstr "Ticket Detailansicht"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:156
-msgid ""
-"Now that you are aware about some attributes, let's have a look at the "
-"ticket detail view."
-msgstr ""
-"Da Sie nun über einige Attribute Bescheid wissen, lassen Sie uns einen Blick "
-"auf die Ticket Detailansicht werfen."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:163
-msgid ""
-"The ticket detail view provides all relevant information of a ticket. As its "
-"main part, all articles of the ticket are shown here. The oldest article "
-"(which created the ticket) at the top, the newest at the bottom. Depending "
-"on the article type, Zammad offers you different ways to react. For text "
-"communication based articles, you can directly create an answer by using the "
-"`reply` button below the article or use the `forward` feature. The "
-"integrated text editor is intuitive and includes buttons in the toolbar to "
-"format your text and insert objects like tables or images. If you want to "
-"learn more about the editor, the [editor guide](guides/editor) includes "
-"additional information."
-msgstr ""
-"Die Ticket Detailansicht liefert alle relevanten Informationen zu einem "
-"Ticket. Als Hauptbestandteil werden hier alle Artikel des Tickets angezeigt. "
-"Der älteste Artikel (der das Ticket erstellt hat) ganz oben, der neueste "
-"ganz unten. Je nach Art des Artikels bietet Ihnen Zammad verschiedene "
-"Reaktionsmöglichkeiten an. Bei Artikeln, die auf Textkommunikation basieren, "
-"können Sie direkt eine Antwort verfassen, indem Sie die Schaltfläche "
-"`Antwort` unterhalb des Artikels verwenden oder die Funktion `Weiterleiten` "
-"nutzen. Der integrierte Texteditor ist intuitiv und enthält Schaltflächen in "
-"der Symbolleiste, um Ihren Text zu formatieren und Objekte wie Tabellen oder "
-"Bilder einzufügen. Wenn Sie mehr über den Editor erfahren möchten, finden "
-"Sie im [Editor-Leitfaden](guides/editor) zusätzliche Informationen."
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:166
-msgid ""
-"Regardless of the customer's article type, you can always add internal "
-"notes. These are useful to add information to the ticket or ask a colleague."
-msgstr ""
-"Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen "
-"hinzufügen. Diese sind nützlich, um dem Ticket Informationen hinzuzufügen "
-"oder einen Kollegen zu fragen."
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:167
-#, no-wrap
-msgid "Updating your Ticket"
-msgstr "Aktualisierung Ihres Tickets"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:173
-msgid ""
-"After you have done your changes like writing an answer to a customer and "
-"change the state of the ticket, you can see a highlighted `Update` button in "
-"the right footer. By clicking it, your changes are applied and if you "
-"created an answer, it is now sent out to the customer. If you consider the "
-"issue as resolved, you should set the state to _closed_ now."
-msgstr ""
-"Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen "
-"Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie in "
-"der rechten Fußzeile eine hervorgehobene Schaltfläche `Aktualisieren`. Wenn "
-"Sie auf diese Schaltfläche klicken, werden Ihre Änderungen übernommen, und "
-"wenn Sie eine Antwort erstellt haben, wird diese nun an den Kunden gesendet. "
-"Wenn Sie das Problem als gelöst betrachten, sollten Sie den Status auf "
-"_geschlossen_ setzen."
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:174
-#, no-wrap
-msgid "Conclusion"
-msgstr "Abschluss"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:179
-msgid ""
-"This was a brief introduction about how to work with Zammad if you are "
-"completely new to ticket systems. Knowing the basics of Zammad now, you can "
-"either start working or have a look at the [advanced features section]"
-"(advanced-features)  to become even more productive and use the full "
-"potential of Zammad. The different sections in the navigation menu might "
-"also include interesting content. 🚀"
-msgstr ""
-"Dies war eine kurze Einführung in die Arbeit mit Zammad, wenn Sie völlig neu "
-"im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von Zammad "
-"kennen, können Sie entweder anfangen zu arbeiten oder einen Blick auf die "
-"[erweiterten Features](advanced-features) werfen, um noch produktiver zu "
-"werden und das volle Potential von Zammad zu nutzen. Die verschiedenen "
-"Bereiche im Navigationsmenü könnten ebenfalls interessant sein. 🚀"
+"\n"
+"Diese Benutzer-Dokumentation ist Teil einer umfassenden Dokumentation von Zammad. Um sicherzustellen, dass Benutzer nicht mit für sie\n"
+"irrelevanten Informationen behelligt werden, ist die Suche auf den Inhalt dieses Bereichs beschränkt und die Navigations-Seitenleiste zeigt\n"
+"nur die Struktur des Bereichs. Um die gesamte Struktur zu sehen und/oder in der gesamten Dokumentation zu suchen, wechseln Sie einfach\n"
+"auf eine Seite außerhalb der Benutzerdokumentation (z.B. durch Klicken auf den **Zammad Hub** in der oberen linken Ecke).\n"
+"\n"
 
 #. type: Plain text
 #: src/en/gdpr.md:9
@@ -15751,13 +16610,6 @@ msgstr "ID des Benutzers, der die Organisation aktualisiert hat."
 msgid "Defines if the organization has VIP status or not."
 msgstr "Legt fest, ob die Organisation VIP-Status hat oder nicht."
 
-#. type: Title #
-#: src/en/reference/es-indexed-attributes.md:1054
-#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
-#, no-wrap
-msgid "Group"
-msgstr "Gruppe"
-
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1057
 msgid "The following index contains below mentioned information: `*_group`"
@@ -16423,12 +17275,6 @@ msgstr "`user_id`"
 #: src/en/reference/es-indexed-attributes.md:1397
 msgid "ID of the agent of the chat."
 msgstr "ID des Agenten des Chats."
-
-#. type: Title #
-#: src/en/reference/glossary.md:1 src/en/reference/glossary.md:6
-#, no-wrap
-msgid "Glossary"
-msgstr "Glossar"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:10
@@ -17694,18 +18540,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/graphql.md:23
-#, fuzzy
-#| msgid ""
-#| "Fetching the GraphQL schema of Zammad (called introspection) allows you "
-#| "to have an autocomplete feature and logic checks in your client while "
-#| "writing a request."
 msgid ""
 "Fetching the Zammad GraphQL schema (called introspection) enables "
 "autocomplete and client-side validation while writing requests."
 msgstr ""
-"Das Abrufen des GraphQL-Schemas von Zammad (Introspection genannt) "
-"ermöglicht eine Autovervollständigung und Logikprüfung in Ihrem Client, "
-"während Sie eine Anfrage erstellen."
+"Das Abrufen des Zammad GraphQL-Schemas (Introspection genannt) ermöglicht "
+"eine automatische Vervollständigung und clientseitige Validierung beim "
+"Schreiben von Requests."
 
 #. type: Title ##
 #: src/en/reference/graphql.md:24 src/en/tutorials/sso-kerberos.md:63
@@ -17789,8 +18630,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/graphql.md:46
-#, fuzzy, no-wrap
-#| msgid "Prepare your Client"
+#, no-wrap
 msgid "Prepare Your Client"
 msgstr "Client vorbereiten"
 
@@ -17828,6 +18668,9 @@ msgid ""
 "environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is\n"
 "**not recommended**.\n"
 msgstr ""
+"Die Schema-Introspection ist für Zammad in der Entwicklungsumgebung aktiviert. Um sie für Produktionssysteme zu aktivieren, setzen Sie die\n"
+"Umgebungsvariable `ZAMMAD_GRAPHQL_INTROSPECTION` auf `true`. Dies vergrößert die potentielle Angriffsfläche und wird\n"
+"**nicht empfohlen**.\n"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:61
@@ -18494,10 +19337,14 @@ msgstr "Standard Setup"
 
 #. type: Plain text
 #: src/en/reference/redis.md:16
+#, fuzzy
+#| msgid ""
+#| "For a Redis standard deployment, you can provide one variable: "
+#| "``REDIS_URL``. This variable can include IP/URL, a port, a username and "
+#| "password. Examples:"
 msgid ""
-"For a Redis standard deployment, you can provide one variable: "
-"``REDIS_URL``. This variable can include IP/URL, a port, a username and "
-"password. Examples:"
+"For a Redis standard deployment, you can provide one variable: `REDIS_URL`. "
+"This variable can include IP/URL, a port, a username and password. Examples:"
 msgstr ""
 "Für eine Redis-Standardinstallation können Sie eine Variable angeben: "
 "`REDIS_URL`. Diese Variable kann IP/URL, einen Port, einen Benutzernamen und "
@@ -18521,9 +19368,14 @@ msgstr "Sentinel Setup"
 
 #. type: Plain text
 #: src/en/reference/redis.md:24
+#, fuzzy
+#| msgid ""
+#| "The variables in the table don't have default values set. In case you "
+#| "want to connect Zammad to a Redis Sentinel cluster, only "
+#| "``REDIS_SENTINELS`` variable is mandatory, the others are optional."
 msgid ""
 "The variables in the table don't have default values set. In case you want "
-"to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
+"to connect Zammad to a Redis Sentinel cluster, only `REDIS_SENTINELS` "
 "variable is mandatory, the others are optional."
 msgstr ""
 "Für die Variablen in der Tabelle sind keine Standardwerte festgelegt. Falls "
@@ -22982,12 +23834,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/object_manager_attributes/post-select-res.json\n"
 "\n"
 
-#. type: Title ###
-#: src/en/reference/rest-api/object.md:131
-#, no-wrap
-msgid "Text"
-msgstr "Text"
-
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/object.md:133
 #, no-wrap
@@ -24613,9 +25459,13 @@ msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:15
+#, fuzzy
+#| msgid ""
+#| "The ticket summarize endpoint uses ``POST`` because creating and fetching "
+#| "the summary happen in a single operation:"
 msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
 msgstr ""
 "Der Ticket-Endpunkt \"summarize\" verwendet ``POST``, da das Erstellen und "
 "Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
@@ -24636,8 +25486,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:22
+#, fuzzy
+#| msgid ""
+#| "Using ``GET`` would be incorrect since the call may also create data. If "
+#| "you want a summary to exist, call the endpoint; if it's not ready yet, "
+#| "retry after at least 30 seconds."
 msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
+"Using `GET` would be incorrect since the call may also create data. If you "
 "want a summary to exist, call the endpoint; if it's not ready yet, retry "
 "after at least 30 seconds."
 msgstr ""
@@ -26480,10 +27335,15 @@ msgstr "sudo cat /etc/elasticsearch/certs/http_ca.crt\n"
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:58
+#, fuzzy
+#| msgid ""
+#| "To add it in Zammad, either upload the certificate file or paste the "
+#| "content in the dialog. Make sure to copy/paste the delimiters (e.g. "
+#| "``-----BEGIN CERTIFICATE-----``) too."
 msgid ""
 "To add it in Zammad, either upload the certificate file or paste the content "
-"in the dialog. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN "
-"CERTIFICATE-----``) too."
+"in the dialog. Make sure to copy/paste the delimiters (e.g. `-----BEGIN "
+"CERTIFICATE-----`) too."
 msgstr ""
 "Um es in Zammad hinzuzufügen, laden Sie entweder die Zertifikatsdatei hoch "
 "oder fügen Sie den Inhalt in das Dialogfeld ein. Achten Sie darauf, dass Sie "
@@ -27873,35 +28733,46 @@ msgid "Configuration"
 msgstr "Konfiguration"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:134
-msgid ""
-"Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the "
-"following values:"
-msgstr ""
-"Öffnen Sie die Datei `/etc/elasticsearch/elasticsearch.yml` und nehmen Sie "
-"folgenden Anpassungen vor bzw. entfernen Sie die vorangestellten Kommentar-"
-"Zeichen:"
-
-#. type: Fenced code block (yml)
 #: src/en/tutorials/install-elasticsearch.md:135
-#, no-wrap
+#, fuzzy
+#| msgid ""
+#| "Optionally, check and configure Elasticsearch’s configuration file which "
+#| "you can find under ``/etc/elasticsearch/elasticsearch.yml``."
 msgid ""
-"network.host: 0.0.0.0\n"
-"transport.host: 0.0.0.0\n"
+"Optionally, check and configure Elasticsearch’s configuration file which you "
+"can find under `/etc/elasticsearch/elasticsearch.yml`."
 msgstr ""
-"network.host: 0.0.0.0\n"
-"transport.host: 0.0.0.0\n"
+"Optional können Sie die Konfigurationsdatei von Elasticsearch anpassen, die "
+"Sie unter ``/etc/elasticsearch/elasticsearch.yml`` finden."
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:141
-msgid "Optional to increase the maximum context size to index:"
-msgstr "Optional, um die maximale Kontextgröße für den Index zu erhöhen:"
+#: src/en/tutorials/install-elasticsearch.md:138
+msgid ""
+"We recommend to adjust the maximum context size which should get indexed by "
+"Elasticsearch. Adjust it to a reasonable size like in the example:"
+msgstr ""
+"Wir empfehlen, die maximale Kontextgröße, die von Elasticsearch indiziert "
+"werden soll, anzupassen. Passen Sie den Wert auf eine vernünftige Größe wie "
+"im Beispiel an:"
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:142
+#: src/en/tutorials/install-elasticsearch.md:139
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
 msgstr "http.max_content_length: 400mb\n"
+
+#. type: Plain text
+#: src/en/tutorials/install-elasticsearch.md:145
+msgid ""
+"Additional configuration is out of scope of this documentation. In case your "
+"scenario needs additional configuration, have a look at [Elastic’s "
+"configuration reference](https://www.elastic.co/docs/reference/elasticsearch/"
+"configuration-reference)."
+msgstr ""
+"Eine zusätzliche Konfiguration ist nicht Gegenstand dieser Dokumentation. "
+"Falls Ihr Szenario eine abweichende Konfiguration erfordert, schauen Sie "
+"sich bitte die [Konfigurations-Referenz von Elastic](https://www.elastic.co/"
+"docs/reference/elasticsearch/configuration-reference) an."
 
 #. type: Title ##
 #: src/en/tutorials/install-elasticsearch.md:146
@@ -32378,6 +33249,255 @@ msgstr ""
 "Konfigurationsänderungen zu übernehmen."
 
 #~ msgid ""
+#~ "In the ticket sidebar, you can find a section which is labeled as "
+#~ "**Tags**. Add a tag by clicking on the ::+:: button. You can select "
+#~ "existing tags and add new ones (if your admin didn't disable to add new "
+#~ "tags)."
+#~ msgstr ""
+#~ "In der Seitenleiste des Tickets finden Sie einen Abschnitt mit der "
+#~ "Bezeichnung **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die "
+#~ "Schaltfläche ::+:: klicken. Sie können vorhandene Tags auswählen und neue "
+#~ "hinzufügen (wenn Ihr Administrator das Hinzufügen neuer Tags nicht "
+#~ "deaktiviert hat)."
+
+#~ msgid ""
+#~ "Remove them by simply click on the ::x:: button. Be aware that there is "
+#~ "no confirmation dialog for deleting a tag from a ticket."
+#~ msgstr ""
+#~ "Entfernen Sie sie, indem Sie einfach auf die Schaltfläche ::x:: klicken. "
+#~ "Beachten Sie, dass es keinen Bestätigungsdialog für das Löschen eines "
+#~ "Tags aus einem Ticket gibt."
+
+#~ msgid "Things to avoid:"
+#~ msgstr "Dinge, die man vermeiden sollte:"
+
+#~ msgid "Superfluous work"
+#~ msgstr "Überflüssige Arbeit"
+
+#~ msgid "Conflicting answers from different agents"
+#~ msgstr "Widersprüchliche Antworten von verschiedenen Agenten"
+
+#~ msgid "Overwritten/undone changes by different agents"
+#~ msgstr ""
+#~ "Überschriebene/zurückgenommene Änderungen durch verschiedene Agenten"
+
+#~ msgid ""
+#~ "This is why you can immediately see who views and edits the currently "
+#~ "viewed ticket."
+#~ msgstr ""
+#~ "Deshalb können Sie sofort sehen, wer das aktuell angezeigte Ticket "
+#~ "ansieht und bearbeitet."
+
+#~ msgid ""
+#~ "Have a look at the footer bar in the ticket detail view. When there is an "
+#~ "avatar from another agent in the live user section (see screenshot "
+#~ "above), you are not the only one viewing this ticket."
+#~ msgstr ""
+#~ "Werfen Sie einen Blick auf die Fußleiste in der Detailansicht des "
+#~ "Tickets. Wenn in diesem Live-Benutzer-Bereich ein Avatar eines anderen "
+#~ "Agenten zu sehen ist (siehe Screenshot oben), sind Sie nicht der einzige "
+#~ "Agent, der dieses Ticket betrachtet."
+
+#~ msgid ""
+#~ "Another agent is viewing the ticket (not faded avatar without additional "
+#~ "icon)"
+#~ msgstr ""
+#~ "Ein anderer Agent sieht sich das Ticket an (nicht abgedunkelter Avatar "
+#~ "ohne zusätzliches Icon)"
+
+#~ msgid ""
+#~ "Another agent is currently actively working on this ticket (not faded "
+#~ "avatar icon with a pencil icon, see right avatar in screenshot)"
+#~ msgstr ""
+#~ "Ein anderer Agent arbeitet gerade aktiv an diesem Ticket (nicht "
+#~ "abgedunkelter Avatar mit einem Bleistift-Icon, siehe rechter Avatar im "
+#~ "Screenshot)"
+
+#, no-wrap
+#~ msgid "Start with Zammad"
+#~ msgstr "Mit Zammad starten"
+
+#, no-wrap
+#~ msgid "User Interface"
+#~ msgstr "Benutzeroberfläche"
+
+#~ msgid ""
+#~ "Depending on the currently opened screen, there are interactive "
+#~ "components, such as tooltips and a contextual help. Use them wherever "
+#~ "needed."
+#~ msgstr ""
+#~ "Abhängig von der aktuell geöffneten Ansicht gibt es interaktive "
+#~ "Komponenten wie Tooltips und eine kontextbezogene Hilfe. Verwenden Sie "
+#~ "diese bei Bedarf."
+
+#~ msgid ""
+#~ "In any case, the UI is based on common software design principles and is "
+#~ "mostly self explanatory."
+#~ msgstr ""
+#~ "In jedem Fall basiert die Benutzeroberfläche auf gängigen Software-Design-"
+#~ "Prinzipien und ist weitgehend selbsterklärend."
+
+#, no-wrap
+#~ msgid ""
+#~ "Active sidebar\n"
+#~ ": The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization\n"
+#~ "  sidebar, checklist sidebar and more.\n"
+#~ msgstr ""
+#~ "Aktive Seitenleiste\n"
+#~ ": Der ausgewählte Seitenleisten-Tab. Zeigt den Inhalt des Tabs an. Sie kann Dinge beinhalten\n"
+#~ "  wie die Kunden-, Organisations- oder Checklisten-Seitenleiste und mehr.\n"
+
+#~ msgid ""
+#~ "The navigation sidebar is your central place to access all main parts of "
+#~ "Zammad. It includes:"
+#~ msgstr ""
+#~ "Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen "
+#~ "Bereiche von Zammad zuzugreifen. Sie umfasst:"
+
+#~ msgid "Search bar"
+#~ msgstr "Suchleiste"
+
+#~ msgid "Overview section"
+#~ msgstr "Übersichten"
+
+#~ msgid "Chat (if activated)"
+#~ msgstr "Chat (falls aktiviert)"
+
+#~ msgid "Phone (if activated)"
+#~ msgstr "Telefon (falls aktiviert)"
+
+#~ msgid "Avatar with menu"
+#~ msgstr "Avatar mit Menü"
+
+#~ msgid "Settings (if you have permissions)"
+#~ msgstr "Einstellungen (wenn Sie die entsprechenden Rechte haben)"
+
+#~ msgid "Ticket create button"
+#~ msgstr "Ticket erstellen Schaltfläche"
+
+#~ msgid ""
+#~ "The main navigation in Zammad is done in this sidebar. It is always "
+#~ "visible and you can switch between ticket, overviews and the search, for "
+#~ "example."
+#~ msgstr ""
+#~ "Die Hauptnavigation in Zammad findet in dieser Seitenleiste statt. Sie "
+#~ "ist immer sichtbar und Sie können z.B. zwischen Ticket, Übersichten und "
+#~ "der Suche wechseln."
+
+#~ msgid ""
+#~ "**Group**: This ticket attribute is useful for organizations with more "
+#~ "than one team. Depending on the permissions, you might not see the ticket "
+#~ "after changing the group and saving the changes."
+#~ msgstr ""
+#~ "**Gruppe**: Dieses Ticket-Attribut ist nützlich für Organisationen mit "
+#~ "mehr als einem Team. Abhängig von den Berechtigungen sehen Sie das Ticket "
+#~ "möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen "
+#~ "gespeichert haben."
+
+#, no-wrap
+#~ msgid "Ticket Detail View"
+#~ msgstr "Ticket Detailansicht"
+
+#~ msgid ""
+#~ "Now that you are aware about some attributes, let's have a look at the "
+#~ "ticket detail view."
+#~ msgstr ""
+#~ "Da Sie nun über einige Attribute Bescheid wissen, lassen Sie uns einen "
+#~ "Blick auf die Ticket Detailansicht werfen."
+
+#~ msgid ""
+#~ "The ticket detail view provides all relevant information of a ticket. As "
+#~ "its main part, all articles of the ticket are shown here. The oldest "
+#~ "article (which created the ticket) at the top, the newest at the bottom. "
+#~ "Depending on the article type, Zammad offers you different ways to react. "
+#~ "For text communication based articles, you can directly create an answer "
+#~ "by using the `reply` button below the article or use the `forward` "
+#~ "feature. The integrated text editor is intuitive and includes buttons in "
+#~ "the toolbar to format your text and insert objects like tables or images. "
+#~ "If you want to learn more about the editor, the [editor guide](guides/"
+#~ "editor) includes additional information."
+#~ msgstr ""
+#~ "Die Ticket Detailansicht liefert alle relevanten Informationen zu einem "
+#~ "Ticket. Als Hauptbestandteil werden hier alle Artikel des Tickets "
+#~ "angezeigt. Der älteste Artikel (der das Ticket erstellt hat) ganz oben, "
+#~ "der neueste ganz unten. Je nach Art des Artikels bietet Ihnen Zammad "
+#~ "verschiedene Reaktionsmöglichkeiten an. Bei Artikeln, die auf "
+#~ "Textkommunikation basieren, können Sie direkt eine Antwort verfassen, "
+#~ "indem Sie die Schaltfläche `Antwort` unterhalb des Artikels verwenden "
+#~ "oder die Funktion `Weiterleiten` nutzen. Der integrierte Texteditor ist "
+#~ "intuitiv und enthält Schaltflächen in der Symbolleiste, um Ihren Text zu "
+#~ "formatieren und Objekte wie Tabellen oder Bilder einzufügen. Wenn Sie "
+#~ "mehr über den Editor erfahren möchten, finden Sie im [Editor-Leitfaden]"
+#~ "(guides/editor) zusätzliche Informationen."
+
+#~ msgid ""
+#~ "Regardless of the customer's article type, you can always add internal "
+#~ "notes. These are useful to add information to the ticket or ask a "
+#~ "colleague."
+#~ msgstr ""
+#~ "Unabhängig vom Artikeltyp des Kunden können Sie immer interne Notizen "
+#~ "hinzufügen. Diese sind nützlich, um dem Ticket Informationen hinzuzufügen "
+#~ "oder einen Kollegen zu fragen."
+
+#, no-wrap
+#~ msgid "Updating your Ticket"
+#~ msgstr "Aktualisierung Ihres Tickets"
+
+#~ msgid ""
+#~ "After you have done your changes like writing an answer to a customer and "
+#~ "change the state of the ticket, you can see a highlighted `Update` button "
+#~ "in the right footer. By clicking it, your changes are applied and if you "
+#~ "created an answer, it is now sent out to the customer. If you consider "
+#~ "the issue as resolved, you should set the state to _closed_ now."
+#~ msgstr ""
+#~ "Nachdem Sie Ihre Änderungen vorgenommen haben, z.B. eine Antwort an einen "
+#~ "Kunden geschrieben und den Status des Tickets geändert haben, sehen Sie "
+#~ "in der rechten Fußzeile eine hervorgehobene Schaltfläche `Aktualisieren`. "
+#~ "Wenn Sie auf diese Schaltfläche klicken, werden Ihre Änderungen "
+#~ "übernommen, und wenn Sie eine Antwort erstellt haben, wird diese nun an "
+#~ "den Kunden gesendet. Wenn Sie das Problem als gelöst betrachten, sollten "
+#~ "Sie den Status auf _geschlossen_ setzen."
+
+#, no-wrap
+#~ msgid "Conclusion"
+#~ msgstr "Abschluss"
+
+#~ msgid ""
+#~ "This was a brief introduction about how to work with Zammad if you are "
+#~ "completely new to ticket systems. Knowing the basics of Zammad now, you "
+#~ "can either start working or have a look at the [advanced features section]"
+#~ "(advanced-features)  to become even more productive and use the full "
+#~ "potential of Zammad. The different sections in the navigation menu might "
+#~ "also include interesting content. 🚀"
+#~ msgstr ""
+#~ "Dies war eine kurze Einführung in die Arbeit mit Zammad, wenn Sie völlig "
+#~ "neu im Umgang mit Ticketsystemen sind. Wenn Sie nun die Grundlagen von "
+#~ "Zammad kennen, können Sie entweder anfangen zu arbeiten oder einen Blick "
+#~ "auf die [erweiterten Features](advanced-features) werfen, um noch "
+#~ "produktiver zu werden und das volle Potential von Zammad zu nutzen. Die "
+#~ "verschiedenen Bereiche im Navigationsmenü könnten ebenfalls interessant "
+#~ "sein. 🚀"
+
+#~ msgid ""
+#~ "Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the "
+#~ "following values:"
+#~ msgstr ""
+#~ "Öffnen Sie die Datei `/etc/elasticsearch/elasticsearch.yml` und nehmen "
+#~ "Sie folgenden Anpassungen vor bzw. entfernen Sie die vorangestellten "
+#~ "Kommentar-Zeichen:"
+
+#, no-wrap
+#~ msgid ""
+#~ "network.host: 0.0.0.0\n"
+#~ "transport.host: 0.0.0.0\n"
+#~ msgstr ""
+#~ "network.host: 0.0.0.0\n"
+#~ "transport.host: 0.0.0.0\n"
+
+#~ msgid "Optional to increase the maximum context size to index:"
+#~ msgstr "Optional, um die maximale Kontextgröße für den Index zu erhöhen:"
+
+#~ msgid ""
 #~ "This is no feature which allows any agent interaction. However, if the "
 #~ "feature is configured, you may notice it at some points. This is why you "
 #~ "can find an explanation here."
@@ -36632,10 +37752,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "Style and content guide"
 #~ msgstr "Leitfaden für Stil und Inhalt"
-
-#, no-wrap
-#~ msgid "/en/reference/glossary"
-#~ msgstr "/de/reference/glossary"
 
 #, no-wrap
 #~ msgid "/en/reference/api-reference"

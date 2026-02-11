@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-19 11:53+0100\n"
-"PO-Revision-Date: 2025-12-13 06:00+0000\n"
+"POT-Creation-Date: 2026-02-10 13:24+0100\n"
+"PO-Revision-Date: 2026-02-04 06:00+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -493,6 +493,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:79 src/en/contribute/style-guide.md:69
+#: src/en/documentation/use/basics/index.md:1
 #: src/en/documentation/use/guides/search.md:8
 #: src/en/get-started/installation/package.md:62
 #: src/en/tutorials/backup-restore.md:33
@@ -1232,7 +1233,7 @@ msgid "Text and UI"
 msgstr "Текст и интерфејс"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:141
+#: src/en/contribute/style-guide.md:142
 #, fuzzy, no-wrap
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
@@ -1244,6 +1245,7 @@ msgid ""
 "| Add button                | ::+::                         | `::+::`                         |\n"
 "| Delete button             | ::x::                         | `::x::`                         |\n"
 "| Action menu               | ::a::                         | `::a::`                         |\n"
+"| Copy to clipboard button  | ::c::                         | `::c::`                         |\n"
 msgstr ""
 "| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
 "|----------------------|-------------------------------|---------------------------------|\n"
@@ -1256,13 +1258,13 @@ msgstr ""
 "| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:142
+#: src/en/contribute/style-guide.md:143
 #, no-wrap
 msgid "Heading Structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:146
+#: src/en/contribute/style-guide.md:147
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
 "`# Title`). Levels below should always contain at least two sections. If "
@@ -1273,43 +1275,43 @@ msgstr ""
 "само један одељак, размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:148
+#: src/en/contribute/style-guide.md:149
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:150
+#: src/en/contribute/style-guide.md:151
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:152
+#: src/en/contribute/style-guide.md:153
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:154
+#: src/en/contribute/style-guide.md:155
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:156
+#: src/en/contribute/style-guide.md:157
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:158
+#: src/en/contribute/style-guide.md:159
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:159
+#: src/en/contribute/style-guide.md:160
 #, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:164
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
 "badges available, see <https://vitepress.dev/reference/default-theme-"
@@ -1319,14 +1321,14 @@ msgstr ""
 "погледајте <https://vitepress.dev/reference/default-theme-badge#usage>."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:165 src/en/contribute/style-guide.md:264
+#: src/en/contribute/style-guide.md:166 src/en/contribute/style-guide.md:265
 #, fuzzy, no-wrap
 #| msgid "Usage"
 msgid "**Usage:**\n"
 msgstr "Употреба"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:166
+#: src/en/contribute/style-guide.md:167
 #, no-wrap
 msgid ""
 "\n"
@@ -1342,13 +1344,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:174
+#: src/en/contribute/style-guide.md:175
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:176
+#: src/en/contribute/style-guide.md:177
 #, fuzzy, no-wrap
 #| msgid ""
 #| "This is an info box.\n"
@@ -1363,8 +1365,8 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:176 src/en/contribute/style-guide.md:192
-#: src/en/contribute/style-guide.md:208 src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid ""
 "\n"
@@ -1374,14 +1376,14 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (info|details|info)
-#: src/en/contribute/style-guide.md:176
+#: src/en/contribute/style-guide.md:177
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Ово је информациони оквир.\n"
 
 #. type: Fenced div block (danger|details)
-#: src/en/contribute/style-guide.md:176 src/en/contribute/style-guide.md:192
-#: src/en/contribute/style-guide.md:208 src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid ""
 "```\n"
@@ -1391,7 +1393,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:192
+#: src/en/contribute/style-guide.md:193
 #, fuzzy, no-wrap
 #| msgid ""
 #| "This is a tip.\n"
@@ -1406,13 +1408,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip|details|tip)
-#: src/en/contribute/style-guide.md:192
+#: src/en/contribute/style-guide.md:193
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:208
+#: src/en/contribute/style-guide.md:209
 #, fuzzy, no-wrap
 #| msgid ""
 #| "This is a warning.\n"
@@ -1427,13 +1429,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (warning|details|warning)
-#: src/en/contribute/style-guide.md:208
+#: src/en/contribute/style-guide.md:209
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:225
 #, fuzzy, no-wrap
 #| msgid ""
 #| "This is a dangerous warning.\n"
@@ -1448,13 +1450,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger|details|warning)
-#: src/en/contribute/style-guide.md:224
+#: src/en/contribute/style-guide.md:225
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, fuzzy, no-wrap
 #| msgid ""
 #| "This is a details block.\n"
@@ -1478,13 +1480,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr "Овај садржај је приказан у проширеном стању.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:240
+#: src/en/contribute/style-guide.md:241
 #, no-wrap
 msgid ""
 "\n"
@@ -1496,13 +1498,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:254
+#: src/en/contribute/style-guide.md:255
 #, no-wrap
 msgid "Definition lists"
 msgstr "Листе дефиниција"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:258
+#: src/en/contribute/style-guide.md:259
 #, no-wrap
 msgid ""
 "First Term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1512,7 +1514,7 @@ msgstr ""
 ": Ово је дефиниција првог термина.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:262
+#: src/en/contribute/style-guide.md:263
 #, no-wrap
 msgid ""
 "Second Term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1524,7 +1526,7 @@ msgstr ""
 ": Ово је додатна дефиниција другог термина.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:265
+#: src/en/contribute/style-guide.md:266
 #, no-wrap
 msgid ""
 "\n"
@@ -1544,27 +1546,27 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:275
+#: src/en/contribute/style-guide.md:276
 #, no-wrap
 msgid "Highlighting with Boxes"
 msgstr "Наглашавање са кућицама"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:278
+#: src/en/contribute/style-guide.md:279
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 "За наглашавање различитих опција или варијанти, можете користити кућице."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:280 src/en/documentation/introduction.md:25
-#: src/en/documentation/use/general.md:40 src/en/get-started/get-zammad.md:32
+#: src/en/contribute/style-guide.md:281 src/en/documentation/introduction.md:29
+#: src/en/documentation/use/start.md:40 src/en/get-started/get-zammad.md:32
 #, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:282
+#: src/en/contribute/style-guide.md:283
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
@@ -1573,7 +1575,7 @@ msgstr ""
 "следећи пример (односи се на кућице изнад):"
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:283
+#: src/en/contribute/style-guide.md:284
 #, no-wrap
 msgid ""
 "\n"
@@ -1619,7 +1621,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:308
+#: src/en/contribute/style-guide.md:309
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1629,20 +1631,20 @@ msgstr ""
 "појави.\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:309
+#: src/en/contribute/style-guide.md:310
 #, no-wrap
 msgid "Theme Specific Images"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:313
+#: src/en/contribute/style-guide.md:314
 msgid ""
 "To target specific image assets to a single theme, you can assign `.dark-"
 "only` or `.light-only` CSS class to the corresponding image:"
 msgstr ""
 
 #. type: Fenced code block (md)
-#: src/en/contribute/style-guide.md:314
+#: src/en/contribute/style-guide.md:315
 #, no-wrap
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
@@ -1650,7 +1652,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:320
+#: src/en/contribute/style-guide.md:321
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
 "only image](/assets/logo-flat-light.svg){.light-only width=240}"
@@ -1664,8 +1666,9 @@ msgstr "Сазнајте све о томе како да радите у Zammad
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
-#, no-wrap
-msgid "/en/documentation/use/general"
+#, fuzzy, no-wrap
+#| msgid "/en/documentation/use/general"
+msgid "/en/documentation/use/start"
 msgstr "/sr/documentation/use/general"
 
 #. type: Yaml Front Matter Hash Value: features title
@@ -1681,7 +1684,7 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr "Сазнајте како да подесите Zammad и повежете га са удаљеним системима."
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1 src/en/documentation/use/general.md:1
+#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "/en/documentation/manage-zammad/general"
 msgstr "/sr/documentation/manage-zammad/general"
@@ -1692,12 +1695,31 @@ msgstr "/sr/documentation/manage-zammad/general"
 msgid "Administrator Documentation"
 msgstr "Администраторска документација"
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Learn about important terms and concepts used in Zammad."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "/en/reference/glossary"
+msgstr "/sr/reference/glossary"
+
+#. type: Title #
+#: src/en/documentation/introduction.md:1 src/en/reference/glossary.md:1
+#: src/en/reference/glossary.md:6
+#, no-wrap
+msgid "Glossary"
+msgstr "Речник"
+
 #. type: Title #
 #: src/en/documentation/introduction.md:1
+#: src/en/documentation/use/basics/ticket-basics.md:8
 #: src/en/documentation/use/guides/ai.md:8
 #: src/en/documentation/use/guides/overviews.md:10
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/start-using-zammad.md:121
 #: src/en/reference/graphql.md:8 src/en/reference/rest-api/cti.md:8
 #: src/en/reference/rest-api/intro.md:1 src/en/reference/rest-api/intro.md:6
 #, no-wrap
@@ -1705,13 +1727,13 @@ msgid "Introduction"
 msgstr "Увод"
 
 #. type: Title #
-#: src/en/documentation/introduction.md:15
+#: src/en/documentation/introduction.md:19
 #, no-wrap
 msgid "Welcome to the Zammad Documentation"
 msgstr "Добродошли на Zammad документацију"
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:20
+#: src/en/documentation/introduction.md:24
 msgid ""
 "This documentation serves as your comprehensive guide to getting the most "
 "out of your ticketing and helpdesk software.  Here, you'll find in-depth "
@@ -1724,7 +1746,7 @@ msgstr ""
 "пратите проблеме и сарађујете у оквиру вашег тима."
 
 #. type: Plain text
-#: src/en/documentation/introduction.md:24
+#: src/en/documentation/introduction.md:28
 msgid ""
 "Whether you're a new user or an experienced admin, our documentation is "
 "designed to provide you with the knowledge and tools you need to succeed. "
@@ -1739,10 +1761,9 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/manage-zammad/general.md:1
 #: src/en/documentation/manage-zammad/general.md:6
-#: src/en/documentation/use/faq.md:13 src/en/documentation/use/general.md:1
-#: src/en/documentation/use/start-using-zammad.md:10
-#: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:92
-#: src/en/reference/rest-api/cti.md:244 src/en/reference/rest-api/cti.md:361
+#: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
+#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
+#: src/en/reference/rest-api/cti.md:361
 #, no-wrap
 msgid "General"
 msgstr "Уопштено"
@@ -1803,19 +1824,18 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:94
 #: src/en/documentation/use/advanced-features.md:109
 #: src/en/documentation/use/advanced-features.md:131
-#: src/en/documentation/use/advanced-features.md:149
-#: src/en/documentation/use/advanced-features.md:187
-#: src/en/documentation/use/advanced-features.md:199
-#: src/en/documentation/use/advanced-features.md:221
-#: src/en/documentation/use/advanced-features.md:248
-#: src/en/documentation/use/advanced-features.md:280
+#: src/en/documentation/use/advanced-features.md:169
+#: src/en/documentation/use/advanced-features.md:181
+#: src/en/documentation/use/advanced-features.md:201
+#: src/en/documentation/use/advanced-features.md:231
+#: src/en/documentation/use/advanced-features.md:263
+#: src/en/documentation/use/advanced-features.md:288
 #: src/en/documentation/use/advanced-features.md:305
 #: src/en/documentation/use/advanced-features.md:322
-#: src/en/documentation/use/advanced-features.md:339
-#: src/en/documentation/use/advanced-features.md:368
-#: src/en/documentation/use/advanced-features.md:388
-#: src/en/documentation/use/advanced-features.md:408
-#: src/en/documentation/use/advanced-features.md:426
+#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:409
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Зашто?**\n"
@@ -1838,20 +1858,19 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:82
 #: src/en/documentation/use/advanced-features.md:99
 #: src/en/documentation/use/advanced-features.md:116
-#: src/en/documentation/use/advanced-features.md:137
-#: src/en/documentation/use/advanced-features.md:156
-#: src/en/documentation/use/advanced-features.md:192
+#: src/en/documentation/use/advanced-features.md:138
+#: src/en/documentation/use/advanced-features.md:174
+#: src/en/documentation/use/advanced-features.md:189
 #: src/en/documentation/use/advanced-features.md:207
-#: src/en/documentation/use/advanced-features.md:231
-#: src/en/documentation/use/advanced-features.md:252
-#: src/en/documentation/use/advanced-features.md:288
+#: src/en/documentation/use/advanced-features.md:235
+#: src/en/documentation/use/advanced-features.md:271
+#: src/en/documentation/use/advanced-features.md:293
 #: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:327
-#: src/en/documentation/use/advanced-features.md:345
-#: src/en/documentation/use/advanced-features.md:373
-#: src/en/documentation/use/advanced-features.md:399
-#: src/en/documentation/use/advanced-features.md:419
-#: src/en/documentation/use/advanced-features.md:432
+#: src/en/documentation/use/advanced-features.md:328
+#: src/en/documentation/use/advanced-features.md:356
+#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:415
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Како?**\n"
@@ -2172,66 +2191,15 @@ msgstr ""
 "Такође можете извршити макро над неколико тикета одједном. Погледајте "
 "[масовне радње](#масовне-радње) за упутство."
 
-#. type: Title #
-#: src/en/documentation/use/advanced-features.md:126
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, no-wrap
-msgid "Tags"
-msgstr "Ознаке"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:129
-msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
-"advanced-features.cy.js/ticket-tags.png)"
-msgstr ""
-"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:135
-msgid ""
-"Tags are one way to categorize a ticket. You can think of tags as some kind "
-"of labels. They can be used in conditions like in triggers and in overviews "
-"and they can also be assigned automatically by macros, schedulers and "
-"triggers.  Of course you can search for the text of the tags and will find "
-"tickets which have the tag attached."
-msgstr ""
-"Ознаке су један од начина категоризације тикета. О ознакама можете "
-"размишљати као о некој врсти тагова. Могу се користити у условима окидача и "
-"прегледа и могу бити додељени аутоматски од стране макроа, планера и "
-"окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете "
-"који имају додељену ознаку."
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:140
-msgid ""
-"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
-"Add a tag by clicking on the ::+:: button. You can select existing tags and "
-"add new ones (if your admin didn't disable to add new tags)."
-msgstr ""
-"У бочној траци тикета, можете пронаћи одељак под насловом **Ознаке**. "
-"Додајте ознаку кликом на дугме ::+::. Можете изабрати између постојећих и "
-"нових ознака (уколико ваш администратор није искључио додавање нових ознака)."
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:143
-msgid ""
-"Remove them by simply click on the ::x:: button. Be aware that there is no "
-"confirmation dialog for deleting a tag from a ticket."
-msgstr ""
-"Уклоните их једноставним кликом на дугме ::x::. Обратите пажњу да неће бити "
-"потврдног дијалога за брисање ознаке са тикета."
-
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:144
+#: src/en/documentation/use/advanced-features.md:126
 #: src/en/reference/rest-api/checklist.md:19
 #, no-wrap
 msgid "Checklists"
 msgstr "Спискови задатака"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:147
+#: src/en/documentation/use/advanced-features.md:129
 msgid ""
 "![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
 "usage-advanced-features.cy.js/ticket-checklist.png)"
@@ -2240,27 +2208,27 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-checklist.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To keep track of tasks"
 msgstr "Да пратите тренутне задатке"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To complete tasks in a structured way"
 msgstr "Да извршите задатке на структурисан начин"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make sure nothing gets forgotten"
 msgstr "Да ништа не заборавите"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:154
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make the progress of work more visible"
 msgstr "Да напредак у раду буде видљивији"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:159
+#: src/en/documentation/use/advanced-features.md:141
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
@@ -2271,12 +2239,12 @@ msgstr ""
 "уређивати само ако имате дозволу да освежавате тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:161
+#: src/en/documentation/use/advanced-features.md:143
 msgid "In the checklist sidebar, you can:"
 msgstr "У траци списка задатака можете:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Add a checklist: either by creating a new one by clicking on `Add Empty "
 "Checklist` or from a template by using `Add From a Template` (if you don't "
@@ -2287,12 +2255,12 @@ msgstr ""
 "за шаблон, не постоје)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Edit the current checklist:"
 msgstr "Уређивање постојећег списка:"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
@@ -2301,12 +2269,12 @@ msgstr ""
 "заглављу траке."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Add checklist items by clicking the ::+:: button."
 msgstr "Додајте задатке на списак кликом на дугме ::a::."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
 "using the ::a:: menu next to the item."
@@ -2315,14 +2283,14 @@ msgstr ""
 "менија ::a:: поред ставке."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid "`Reorder` the items by clicking this button and drag & drop the items."
 msgstr ""
 "Кликом на дугме `Измени редослед` можете превући и пустити ставке за жељени "
 "распоред."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:170
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
@@ -2330,12 +2298,12 @@ msgstr ""
 "заглављу траке."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:172
+#: src/en/documentation/use/advanced-features.md:154
 msgid "There are two features, which are not directly visible:"
 msgstr "Постоје две функције које нису директно видљиве:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:175
+#: src/en/documentation/use/advanced-features.md:157
 msgid ""
 "You can refer to other tickets as a checklist item by using its hook and "
 "number in the item text (e.g.  `Ticket#123456`). Such items can't be checked "
@@ -2346,17 +2314,20 @@ msgstr ""
 "означити, већ ће одражавати стање референцираног тикета."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/advanced-features.md:175
-#, no-wrap
+#: src/en/documentation/use/advanced-features.md:157
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
+#| "  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgid ""
-"  Fetch the ticket hook and number by going to the desired ticket and either use the copy button in the header or use\n"
-"  the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
+"  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or\n"
+"  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgstr ""
 "  Нађите прикључак тикета са бројем одласком у жељени тикет и или кликом на дугме за копирање у заглављу\n"
 "  или путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка.\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:183
+#: src/en/documentation/use/advanced-features.md:165
 msgid ""
 "Zammad automatically checks if all checklist items are completed. The check "
 "is performed when you set a ticket to \"closed\". If not all items are "
@@ -2372,13 +2343,13 @@ msgstr ""
 "само они који су затворени (са зеленим кругом) ће бити сматрани као обављени."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:184
+#: src/en/documentation/use/advanced-features.md:166
 #, no-wrap
 msgid "Ticket Templates"
 msgstr "Шаблони тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:190
+#: src/en/documentation/use/advanced-features.md:172
 msgid ""
 "Quickly create a ticket with pre-defined attributes like title, text, tags "
 "and more saves you time. This requires your admin to create a ticket "
@@ -2389,7 +2360,7 @@ msgstr ""
 "администратор дефинише шаблоне тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:195
+#: src/en/documentation/use/advanced-features.md:177
 msgid ""
 "In the ticket create screen, you can find an `Apply Template ^` button in "
 "the footer bar, if a template is available.  Select the template you want to "
@@ -2400,7 +2371,7 @@ msgstr ""
 "измене."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:196
+#: src/en/documentation/use/advanced-features.md:178
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, no-wrap
@@ -2408,7 +2379,7 @@ msgid "Shared Drafts"
 msgstr "Заједнички нацрти"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:203
+#: src/en/documentation/use/advanced-features.md:185
 msgid ""
 "To share a draft with other agents of your group, e.g. to reflect a QA "
 "process, instead of \"just\" adding an internal article. In such a draft you "
@@ -2421,7 +2392,7 @@ msgstr ""
 "атрибути као и чланак са одговором за клијента."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:205
+#: src/en/documentation/use/advanced-features.md:187
 msgid ""
 "This is an optional feature. If you can't see it, your admin has turned it "
 "off."
@@ -2429,7 +2400,7 @@ msgstr ""
 "Ово је опциона функција. Уколико је не видите, ваш администратор је искључио."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:209
+#: src/en/documentation/use/advanced-features.md:191
 msgid ""
 "To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
@@ -2438,7 +2409,7 @@ msgstr ""
 "прегледа тикета и одаберите „Сачувај нацрт”."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:211
+#: src/en/documentation/use/advanced-features.md:193
 msgid ""
 "To **apply an already existing draft**, click on the `Draft Available` "
 "button on the left side of the footer."
@@ -2447,111 +2418,81 @@ msgstr ""
 "на левој страни подножја."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:212
+#: src/en/documentation/use/advanced-features.md:194
 #, no-wrap
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "Примена нацрта преиначиће ваше неснимљене измене!\n"
 
-#. type: Title ###
-#: src/en/documentation/use/advanced-features.md:216
-#: src/en/documentation/use/guides/ai.md:83
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:198
 #, no-wrap
-msgid "Simultaneous Work Detection"
-msgstr "Откривање истовремене обраде"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:219
-msgid ""
-"![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
-"advanced-features/simultaneous-work-detection.png)"
+msgid "Monitoring Ticket Escalations"
 msgstr ""
-"![Снимак екрана приказује друге оператере како гледају/уређују тикет](/"
-"screenshots/advanced-features/simultaneous-work-detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:223
-msgid "Things to avoid:"
-msgstr "Ствари за избегавање:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Superfluous work"
-msgstr "Непотребан рад"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Conflicting answers from different agents"
-msgstr "Опречни одговори од других оператера"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:227
-msgid "Overwritten/undone changes by different agents"
-msgstr "Преиначене/поништене измене од других оператера"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:229
+#: src/en/documentation/use/advanced-features.md:205
 msgid ""
-"This is why you can immediately see who views and edits the currently viewed "
-"ticket."
+"Service Level Agreements (SLAs) ensure timely responses to customer "
+"requests. Your administrator sets such goals as responding to all inquiries "
+"within eight hours, with optional custom deadlines for specific customers. "
+"When such a deadline is passed, the ticket escalates."
 msgstr ""
-"Из овог разлога можете одмах да видите ко гледа и уређује тренутни тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:234
+#: src/en/documentation/use/advanced-features.md:212
+msgid ""
+"Zammad notifies you by default when tickets approach or exceed their "
+"deadlines. Configure these notifications in your [profile settings](/en/"
+"documentation/use/manage-profile#notifications). Zammad also ships a default "
+"overview called \"Escalated Tickets\". This overview includes already "
+"escalated tickets and tickets which are expected to escalate within the next "
+"10 minutes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:215
+msgid ""
+"SLA-relevant tickets display a timestamp in the ticket detail header. Hover "
+"over this timestamp to see all escalation stages and deadlines in a popup. "
+"It shows all upcoming or reached escalation times based on your SLA "
+"configuration:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:217
 #, fuzzy
 msgid ""
-"Have a look at the footer bar in the ticket detail view. When there is an "
-"avatar from another agent in the live user section (see screenshot above), "
-"you are not the only one viewing this ticket."
+"![Screenshot shows escalation panel by hovering over escalation timestamp](/"
+"screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)"
 msgstr ""
-"Погледајте траку у подножју прегледа тиекта. Када видите аватар сличицу "
-"другог оператера (погледајте снимак изнад), нисте једини који тренутно раде "
-"на тикету."
+"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
+"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/advanced-features.md:218
+#, no-wrap
+msgid ""
+"The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a\n"
+"ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.\n"
+msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:236
+#: src/en/documentation/use/advanced-features.md:225
 msgid ""
-"Depending on the additional icon and if the avatar icon is faded, it means:"
+"The SLA feature requires a configuration from your admin. In case you don’t "
+"see escalation timestamps, either the ticket is not SLA-relevant or the "
+"feature is not configured."
 msgstr ""
-"У зависности од одговарајуће иконица и да ли је аватар сличица изблеђена, "
-"пронађите додатно значење:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent is viewing the ticket (not faded avatar without additional "
-"icon)"
-msgstr ""
-"Други оператер гледа тикет (неизбледела аватар сличица без додатне иконице)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent opened the ticket but is currently not actively viewing this "
-"ticket (faded avatar icon with the snooze icon, see left avatar in "
-"screenshot)"
-msgstr ""
-"Други оператер има отворен тикет али га не гледа активно (избледела аватар "
-"сличица са иконицом „спавања”, погледајте леви аватар на снимку)"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
-msgid ""
-"Another agent is currently actively working on this ticket (not faded avatar "
-"icon with a pencil icon, see right avatar in screenshot)"
-msgstr ""
-"Други оператер тренутно активно ради на овом тикету (неизбледела аватар "
-"сличица са иконицом оловке, погледајте десни аватар на снимку)"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:243
+#: src/en/documentation/use/advanced-features.md:226
 #: src/en/documentation/use/guides/overviews.md:81
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Масовне радње"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:246
+#: src/en/documentation/use/advanced-features.md:229
 #, fuzzy
 msgid ""
 "![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
@@ -2561,7 +2502,7 @@ msgstr ""
 "usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:250
+#: src/en/documentation/use/advanced-features.md:233
 msgid ""
 "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
@@ -2569,17 +2510,17 @@ msgstr ""
 "време!"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:254
+#: src/en/documentation/use/advanced-features.md:237
 msgid "There are 2 _places_ where you can perform bulk actions:"
 msgstr "Постоје два _места_ одакле можете покренути масовне радње:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:240
 msgid "Detail search page"
 msgstr "Детаљни екран претраге"
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:240
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
 #: src/en/documentation/use/manage-profile.md:128
@@ -2588,7 +2529,7 @@ msgid "Overviews"
 msgstr "Прегледи"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:259
+#: src/en/documentation/use/advanced-features.md:242
 msgid ""
 "Assuming you are in the overviews or in the detail search page, you can bulk "
 "edit tickets in 2 _ways_:"
@@ -2597,7 +2538,7 @@ msgstr ""
 "претраге, можете да масовно уредите тикете на два _начина_:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:245
 #, fuzzy
 msgid ""
 "Use the `Bulk Action` button in the top right corner and change/add "
@@ -2607,7 +2548,7 @@ msgstr ""
 "атрибуте коришћењем поља у бочном панелу"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:245
 msgid ""
 "Drag the tickets with the mouse to invoke the bulk action overlay and drop "
 "them on the desired action"
@@ -2616,7 +2557,7 @@ msgstr ""
 "радњу"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:265
+#: src/en/documentation/use/advanced-features.md:248
 msgid ""
 "To bulk edit tickets in either way, you have to select them before. Do so by "
 "clicking the checkbox on the left side of each row in the ticket table. "
@@ -2628,48 +2569,48 @@ msgstr ""
 "за потврду."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:267
+#: src/en/documentation/use/advanced-features.md:250
 msgid "The available changes you can apply to tickets are:"
 msgstr "Доступне промене које можете применити на тикете су:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set group"
 msgstr "Промена групе"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set owner"
 msgstr "Промена власника"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set state"
 msgstr "Промена стања"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Set priority"
 msgstr "Промена приоритета"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Add a note"
 msgstr "Додавање напомене"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:257
 msgid "Execute a macro"
 msgstr "Покретање макроа"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:275
+#: src/en/documentation/use/advanced-features.md:258
 #, no-wrap
 msgid "Merge Tickets"
 msgstr "Спајање тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:278
+#: src/en/documentation/use/advanced-features.md:261
 msgid ""
 "![Screenshot shows the ticket merge side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-merge.png)"
@@ -2678,7 +2619,7 @@ msgstr ""
 "usage-advanced-features.cy.js/ticket-merge.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:284
+#: src/en/documentation/use/advanced-features.md:267
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
 "those tickets into one. This might be the case if a customer sends you a new "
@@ -2693,7 +2634,7 @@ msgstr ""
 "конверзацију)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:286
+#: src/en/documentation/use/advanced-features.md:269
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
 "you select the merging into the selected one."
@@ -2702,7 +2643,7 @@ msgstr ""
 "одабрани."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:292
+#: src/en/documentation/use/advanced-features.md:275
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
 "use the ::a:: menu and select `Merge`. This opens a side panel in which you "
@@ -2716,7 +2657,7 @@ msgstr ""
 "Када одаберете циљни тикет, потврдите дугметом `Споји` при дну."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:295
+#: src/en/documentation/use/advanced-features.md:278
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
 "which you executed the merge still exists with the following changes:"
@@ -2725,28 +2666,28 @@ msgstr ""
 "извршили радњу спајања и даље постоји са следећим изменама:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr "Сви чланци су замењени ознаком „спојено”"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The state has changed to \"merged\""
 msgstr "Стање је промењено у „спојено”"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:299
+#: src/en/documentation/use/advanced-features.md:282
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr "Тикет је повезан са својим „надређеним” тикетом"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:283
 #, no-wrap
 msgid "Split Tickets"
 msgstr "Раздели тикете"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:303
+#: src/en/documentation/use/advanced-features.md:286
 msgid ""
 "![Screenshot shows the article action split menu](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-split.png)"
@@ -2755,7 +2696,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:308
+#: src/en/documentation/use/advanced-features.md:291
 #, fuzzy
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
@@ -2767,7 +2708,7 @@ msgstr ""
 "клијент има техничко питање и жели да пошаље поруџбину."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:312
+#: src/en/documentation/use/advanced-features.md:295
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
@@ -2776,7 +2717,7 @@ msgstr ""
 "чланка."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:315
+#: src/en/documentation/use/advanced-features.md:298
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
 "the initial ticket. The content of the article is also included. You can "
@@ -2787,7 +2728,7 @@ msgstr ""
 "све атрибуте својим потребама и кликнути на `Додај`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:318
+#: src/en/documentation/use/advanced-features.md:301
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
 "ticket is linked in the split off ticket as parent."
@@ -2796,13 +2737,13 @@ msgstr ""
 "Оригинални тикет је повезан са раздељеним као надређени."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:302
 #, no-wrap
 msgid "Link Tickets"
 msgstr "Повезивање тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:325
+#: src/en/documentation/use/advanced-features.md:308
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2813,7 +2754,7 @@ msgstr ""
 "тикете) тикети ће бити аутоматски повезани."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:331
+#: src/en/documentation/use/advanced-features.md:314
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
@@ -2826,12 +2767,12 @@ msgstr ""
 "између различитих типова веза:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:318
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr "**Нормално:** за сродне тикете који немају хијерархију."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:318
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
 "other is a subtask. This link type is used by default if a tickets gets "
@@ -2842,7 +2783,7 @@ msgstr ""
 "спајања тикета."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:336
+#: src/en/documentation/use/advanced-features.md:319
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
@@ -2850,7 +2791,7 @@ msgid "Time Accounting"
 msgstr "Обрачун времена"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:326
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
 "much time you spent on tickets. Based on the accounted times in the ticket, "
@@ -2863,7 +2804,7 @@ msgstr ""
 "можете користити у вашој фирми за наплату или за вођење буџета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:330
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
 "much time you spent on the ticket."
@@ -2872,7 +2813,7 @@ msgstr ""
 "времена сте провели на тикету."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:349
+#: src/en/documentation/use/advanced-features.md:332
 msgid ""
 "![Screenshot shows the time accounting dialog](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-dialog.png)"
@@ -2881,7 +2822,7 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:352
+#: src/en/documentation/use/advanced-features.md:335
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
 "ticket, your administrator hasn't enabled it yet or the rule for tickets to "
@@ -2892,7 +2833,7 @@ msgstr ""
 "тикетима неиспуњен."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:355
+#: src/en/documentation/use/advanced-features.md:338
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
 "your administrator may decide to show an optional label next to the field to "
@@ -2905,7 +2846,7 @@ msgstr ""
 "(погледајте снимак екрана)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:358
+#: src/en/documentation/use/advanced-features.md:341
 msgid ""
 "Activity types can be used to distinguish between different activities and "
 "for grouping the accounted times. If this optional feature is active, it "
@@ -2917,7 +2858,7 @@ msgstr ""
 "листу активности из које их можете одабрати у дијалогу обрачуна времена."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:362
+#: src/en/documentation/use/advanced-features.md:345
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
@@ -2930,7 +2871,7 @@ msgstr ""
 "укупан збир обрачунатог времена за све врсте активности."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:364
+#: src/en/documentation/use/advanced-features.md:347
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-overview.png)"
@@ -2939,13 +2880,13 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:365
+#: src/en/documentation/use/advanced-features.md:348
 #, fuzzy, no-wrap
 msgid "User Detail Panel"
 msgstr "Корисничка документација"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:354
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -2954,7 +2895,7 @@ msgstr ""
 "екрана вам омогућава да останете фокусирани на ваш задатак."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:377
+#: src/en/documentation/use/advanced-features.md:360
 #, fuzzy
 #| msgid ""
 #| "You might have seen it already: simply hover your mouse over an avatar "
@@ -2971,7 +2912,7 @@ msgstr ""
 "бочне стране у детаљном прегледу тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:362
 #, fuzzy
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
@@ -2981,7 +2922,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:365
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -2990,13 +2931,13 @@ msgstr ""
 "можете бити укључено у детаљном приказу клијента и администраторском панелу."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:383
+#: src/en/documentation/use/advanced-features.md:366
 #, fuzzy, no-wrap
 msgid "User Detail Page"
 msgstr "Корисничка документација"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:386
+#: src/en/documentation/use/advanced-features.md:369
 #, fuzzy
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-"
@@ -3006,50 +2947,50 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:373
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 #, fuzzy
 #| msgid "Organizations"
 msgid "See organization membership"
 msgstr "Организације"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "See a graph of recent tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 #, fuzzy
 #| msgid "Add a note"
 msgid "Add or edit a note"
 msgstr "Додавање напомене"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "Edit the customer (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 msgid "See a history of changes (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:380
 msgid "Create a new ticket with this user as customer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:385
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
 "view). This opens a new tab with the customer detail page. In case you also "
@@ -3058,14 +2999,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:403
+#: src/en/documentation/use/advanced-features.md:386
 #, fuzzy, no-wrap
 #| msgid "Organization"
 msgid "Organization Detail Page"
 msgstr "Организација"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:406
+#: src/en/documentation/use/advanced-features.md:389
 #, fuzzy
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/usage-"
@@ -3075,36 +3016,36 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:393
 msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 #, fuzzy
 #| msgid "Domain of the organization."
 msgid "See the members of the organization"
 msgstr "Домен организације."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "Edit the organization (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:400
 msgid "Create a new user as a member of this organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:405
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
 "detail view next to the user avatar). This opens a new tab with the "
@@ -3112,13 +3053,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:423
+#: src/en/documentation/use/advanced-features.md:406
 #, no-wrap
 msgid "External Issues and Assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:413
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
 "Gitlab issues, you can link to these external systems to have all relevant "
@@ -3127,7 +3068,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:417
 #, fuzzy
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
@@ -3137,7 +3078,7 @@ msgstr ""
 "advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:421
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon (see Gitlab example in screenshot above). Click the "
@@ -3145,6 +3086,1311 @@ msgid ""
 "a select field (i-doit). Afterwards, you can see the linked item with "
 "additional metadata. By clicking on the linked item, you are redirected to "
 "it in the respective system."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/create-tickets.md:1
+#: src/en/documentation/use/basics/create-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Merge Tickets"
+msgid "Create Tickets"
+msgstr "Спајање тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:11
+msgid ""
+"When a customer messages you over a channel which is fetched by Zammad, a "
+"ticket is created automatically (unless Zammad recognizes it as a follow-up, "
+"then it gets added as an article to an existing ticket). However, there "
+"might be cases where you need to create a ticket manually. Examples:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "A customer calls you by phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "You receive a paper letter from a customer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "A customer comes to a physical service desk."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:16
+msgid "You proactively have to inform a customer by sending out a message."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:19
+msgid ""
+"In situations like these, you need to create a new ticket manually and click "
+"the ::+:: button at the bottom of the navigation bar. This shows a ticket "
+"create screen where you can add all needed information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:21
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-merge.png)"
+msgid ""
+"![Screenshot shows ticket create screen](/screenshots/cypress/usage-"
+"basics.cy.js/ticket-create.png)"
+msgstr ""
+"![Снимак екрана приказује бочну траку спајања тикета](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-merge.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:22
+#, fuzzy, no-wrap
+msgid "Type Selector"
+msgstr "за одабир"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:25
+msgid ""
+"In the ticket create dialog, you can choose from different article types:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Received call: for issues initiated by a customer over the phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Outbound call: for issues initiated by an agent over the phone."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/create-tickets.md:29
+msgid "Send email: for issues initiated by an agent over email."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:31
+msgid ""
+"When choosing **Send Email**, the customer receives an email with the title "
+"as subject and the text as email content."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:32
+#, no-wrap
+msgid "Title"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:37
+msgid ""
+"This is the title of a ticket which is shown in many places in Zammad. For "
+"example, this gets displayed in overviews.  It is also used as the subject "
+"for email communication. For emails, a ticket identifier is automatically "
+"appended (e.g. `Ticket#901234 - I need help!`)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:38
+#, fuzzy, no-wrap
+msgid "Customer"
+msgstr "Прилагођени оквири"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:44
+msgid ""
+"Enter a name or email address of a customer to search for existing accounts. "
+"You can even search for organizations and their members. Select an option "
+"from the dropdown menu or create a new customer by clicking the **+ Create "
+"new Customer** button on the right side of the field. This opens a dialog "
+"where you can provide all relevant information of the customer. A ticket can "
+"only have one customer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:47
+msgid ""
+"After setting a customer in the ticket create dialog, the customer sidebar "
+"automatically opens. You can see additional customer meta information "
+"including a hint about the currently opened tickets of the customer."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/create-tickets.md:48
+#: src/en/reference/rest-api/object.md:131
+#, no-wrap
+msgid "Text"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:53
+msgid ""
+"This is the content section where the currently known details of the issue "
+"gets written down. For the \"Send Email\" type, this is the content/message "
+"of the email. To learn more about the editor and its features, check the "
+"[editor documentation](/en/documentation/use/guides/editor)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/create-tickets.md:54
+#: src/en/documentation/use/basics/ticket-basics.md:29
+#, fuzzy, no-wrap
+msgid "Ticket Attributes"
+msgstr "Стање тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:58
+msgid ""
+"As you may know, there are additional ticket attributes such as group, "
+"priority and owner that you can set. If you haven't read the [ticket basics]"
+"(ticket-basics) yet, check it out to learn more."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/create-tickets.md:62
+msgid ""
+"After you provided the relevant information, finally create the ticket with "
+"a click on the **Create** button. Read on how to [find tickets](find-"
+"tickets) and [how to work with them](work-with-tickets)."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/find-tickets.md:1
+#: src/en/documentation/use/basics/find-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Finding Tickets"
+msgid "Find Tickets"
+msgstr "Проналажење тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:9
+msgid "There are different ways to find tickets, depending on your use case."
+msgstr ""
+"Има више начина како да пронађете тикете, у зависности од вашег случаја "
+"коришћења."
+
+#. type: Title ##
+#: src/en/documentation/use/basics/find-tickets.md:10
+#, no-wrap
+msgid "Via Overviews"
+msgstr "Преко прегледа"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:15
+msgid ""
+"If you search for new tickets to work on, your first look should be in the "
+"overview section. You can either open it by clicking the `Overviews` button "
+"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"overviews as a kind of ticket lists."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:19
+msgid ""
+"By default, there are some built-in overviews you can use. For example, "
+"there is an overview called \"Open Tickets\".  This might be a good starting "
+"point. Your Zammad admin may have created additional overviews. These are "
+"based on conditions, which are basically rules, to define which ticket "
+"appears in which overview."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:21
+msgid ""
+"For a detailed description, head over to the [overview usage guide](/en/"
+"documentation/use/guides/overviews)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/find-tickets.md:22
+#, no-wrap
+msgid "Via Search"
+msgstr "Преко претраге"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:27
+msgid ""
+"However, if you search for a specific ticket which might or might not be "
+"visible in the overviews, you can use the search. You can find it in the top "
+"left corner in the navigation bar. Either select it via mouse or use the "
+"keyboard shortcut by simply pressing [[s]]."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:30
+msgid ""
+"After activating the search field, you can find the tickets you recently "
+"closed from your taskbar as well as your last search queries."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:34
+msgid ""
+"By entering a search term, you immediately see a preview of the search "
+"results. If you press [[enter]] or click on `detailed search`, Zammad "
+"displays a page with search results. There you can differentiate by object "
+"type (e.g.  user), what you are searching."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:36
+msgid ""
+"Have a look at the [search guide](/en/documentation/use/guides/search) for "
+"more details."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/find-tickets.md:37
+#: src/en/documentation/use/manage-profile.md:105
+#, no-wrap
+msgid "Notifications"
+msgstr "Обавештења"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:43
+msgid ""
+"Depending on the [notification settings](/en/documentation/use/manage-"
+"profile#notifications) in your profile, you receive updates for different "
+"ticket based events like the creation or the update of a ticket. This "
+"ensures that no important change to a ticket gets overlooked."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:46
+msgid ""
+"You can open them by clicking on the notification counter in the top left "
+"corner. If there is a badge with a counter, the counter shows the number of "
+"unread notifications."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/find-tickets.md:48
+msgid ""
+"By default, you get notified when one of your tickets (means you are the "
+"owner) got updated. By clicking on the link in the notification, this ticket "
+"gets opened in the navigation sidebar as a tab and the ticket detail view is "
+"displayed."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:1
+#: src/en/documentation/use/basics/ticket-basics.md:6
+#, no-wrap
+msgid "Ticket Basics"
+msgstr "Основе тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:15
+msgid ""
+"In Zammad, **tickets** are used to track customer service requests. The "
+"first time a customer contacts you about something, Zammad creates a new "
+"ticket. Each message sent between you and the customer is added to that "
+"ticket until the issue is resolved, the customer is happy and the ticket is "
+"finally closed. Such a single message in a ticket is called an **article**. "
+"Basically, you can think of a **ticket** as a **conversation** between you "
+"and a customer about a single issue."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:18
+msgid ""
+"If you're completely new to a ticket system and handled your customer "
+"requests with an email client so far, you might think that a ticket system "
+"is complicated. But the opposite is true:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"All emails are now collected in Zammad (and requests from other channels "
+"might be as well)."
+msgstr ""
+"Све имејл поруке се сада сливају у Zammad (као и остали захтеви са других "
+"канала)."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"You and your colleagues can see who is working on which customer request "
+"(\"ticket\")."
+msgstr ""
+"Ви и ваше колеге можете видети ко обрађује који захтев клијента („тикет”)."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"The state of each request as well as the history (who did what?) is "
+"transparent."
+msgstr ""
+"Стање сваког захтева као и историјат (ко је урадио шта?) је транспарентно."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid "There is no duplicate work and nothing gets overlooked."
+msgstr "Нема дуплиране обраде и ништа се не превиђа."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"You can ask your colleagues directly in the ticket for help in difficult "
+"cases."
+msgstr ""
+"Можете питати колеге за помоћ око компликованих случајева директно у тикету."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:25
+msgid ""
+"With Zammad's intuitive UI, you can focus on what matters: to resolve "
+"customer issues and answer customer questions."
+msgstr ""
+"За Zammad-овим иновативним корисничким интерфејсом, можете се усредсредити "
+"на оно најбитније: да решите проблеме клијената и одговорите на њихова "
+"питања."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:28
+msgid ""
+"This means you can work with Zammad in a similar way as with your email "
+"client. Except that a ticket has additional attributes. Read on to learn "
+"more."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:33
+msgid ""
+"In addition to articles, tickets have some additional meta information which "
+"are called attributes. Use the **ticket sidebar** to view and change ticket "
+"attributes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:35
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-tags.png)"
+msgid ""
+"![Screenshot shows ticket sidebar](/screenshots/cypress/usage-basics.cy.js/"
+"ticket-sidebar.png)"
+msgstr ""
+"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:38
+msgid ""
+"To hide the sidebar, click the collapse button with the arrow on the left "
+"side of the sidebar. Click on one of the tabs to bring it back. The "
+"available options depend on your privileges and the configuration of your "
+"system."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:41
+msgid ""
+"It is even possible to create custom fields for tickets (for groups, users "
+"and organizations too). You think such a custom field makes sense? Talk with "
+"your Zammad admin, it can be set up easily."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:42
+#, fuzzy, no-wrap
+#| msgid "Set state"
+msgid "State"
+msgstr "Промена стања"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:46
+msgid ""
+"The state reflects the current status of a ticket (mainly if a customer "
+"request is resolved or not). Think of it as a representation of progress "
+"towards completion. By default, there are the following states:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket for the first time, it automatically switches to open."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr "**Отворено**: Стање за тикете који још нису решени и захтевају обраду."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to closed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+#, fuzzy
+#| msgid ""
+#| "**Pending Reminder**: State for open tickets which you want to get "
+#| "reminded to a certain date and time. Requires you to enter a date and "
+#| "time at which you want to get notified. For example useful if you had a "
+#| "question to a third party and want to make sure that this issue won't be "
+#| "forgotten."
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"about at a certain date and time. Requires you to enter a date and time at "
+"which you want to get notified. For example useful if you had a question to "
+"a third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+"**Чека на подсетник**: Стање за отворене тикете за које желите да вас "
+"подсетимо на одређен датум и време. Захтева да унесете датум и време када "
+"желите да будете обавештени. Нпр. корисно је уколико сте послали питање "
+"трећем лицу и желите да се осигурате да овај проблем неће бити заборављен."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:57
+msgid ""
+"**Merged**: State for a ticket which was merged into another ticket. Check "
+"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
+"to see the related ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:60
+msgid ""
+"Zammad's ticket states are color coded. This helps you to understanding the "
+"state of the ticket much faster in general - without having a look into "
+"details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:62
+#, fuzzy
+msgid ""
+"![Screenshot shows different color-coded states](/screenshots/overviews/"
+"states.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:63
+#, fuzzy, no-wrap
+msgid "Priority"
+msgstr "Приоритет тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:67
+msgid ""
+"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
+"important it is. The three default priorities are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+msgid "1 low"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+msgid "2 normal"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:71
+msgid "3 high"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:74
+msgid ""
+"In case these priorities aren't enough, ask your Zammad admin to create "
+"additional ones. The default priorities allow you to immediately recognize "
+"the importance of your tickets because they are color coded:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:76
+#, fuzzy
+msgid ""
+"![Screenshot shows different color-coded priorities](/screenshots/overviews/"
+"priorities.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:79
+msgid ""
+"You might wonder what such a ticket priority is for. Out of the box, it "
+"doesn't actually do anything except the highlighting. However, Zammad "
+"administrators can set up all sorts of automation and analytics based on the "
+"priority."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:82
+msgid ""
+"Be aware that customers can't set a priority for their own tickets. "
+"Otherwise, some might set their tickets always to high and hope for an "
+"immediate escalation."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:83
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
+#, no-wrap
+msgid "Tags"
+msgstr "Ознаке"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:89
+#, fuzzy
+#| msgid ""
+#| "Tags are one way to categorize a ticket. You can think of tags as some "
+#| "kind of labels. They can be used in conditions like in triggers and in "
+#| "overviews and they can also be assigned automatically by macros, "
+#| "schedulers and triggers.  Of course you can search for the text of the "
+#| "tags and will find tickets which have the tag attached."
+msgid ""
+"Tags are custom labels that can be assigned to tickets to make it easier to "
+"find them in the future.  They can be used in conditions like in triggers "
+"and in overviews and they can also be assigned automatically by macros, "
+"schedulers and triggers. Of course you can search for the text of the tags "
+"and you will find the tickets which have the tag assigned."
+msgstr ""
+"Ознаке су један од начина категоризације тикета. О ознакама можете "
+"размишљати као о некој врсти тагова. Могу се користити у условима окидача и "
+"прегледа и могу бити додељени аутоматски од стране макроа, планера и "
+"окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете "
+"који имају додељену ознаку."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid ""
+"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-"
+"advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:96
+msgid ""
+"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
+"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
+"configuration, you can create new tags by simply type and confirm them with "
+"[[enter]] or [[tab]]. In any case, you can choose from already available "
+"tags. Start typing and you see a list with matching suggestions. To remove "
+"it, click the ::X:: button on the right side of the tab."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:97
+#: src/en/reference/es-indexed-attributes.md:1054
+#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
+#, no-wrap
+msgid "Group"
+msgstr "Група"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:103
+msgid ""
+"This ticket attribute is useful for organizations with more than one team. A "
+"common way to use groups is to have one for each department of the company. "
+"Depending on the permissions, you might not see the ticket after changing "
+"the group and saving the changes. In case you can't see the group field, "
+"either there is only one group in your Zammad system or you don't have the "
+"permission to create a ticket in other groups."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:104
+#, no-wrap
+msgid "Owner"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:110
+msgid ""
+"This is the person who is currently responsible for the ticket. In case you "
+"need information from another colleague, you can either change the owner to "
+"this person or mention the person in an article by typing [[@]][[@]] and "
+"selecting the user. In the latter case, the user gets notified and is "
+"automatically subscribed to receive notifications on ticket updates."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:112
+msgid ""
+"To change the owner to a person which has only access to another group's "
+"tickets, you first have to switch the group accordingly."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:116
+msgid "Now that you know the basics, head over to one of the following pages:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+#, fuzzy
+#| msgid "/en/documentation/use/general"
+msgid "[Find Tickets](/en/documentation/use/basics/find-tickets)"
+msgstr "/sr/documentation/use/general"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+msgid "[Create tickets](/en/documentation/use/basics/create-tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:119
+msgid "[Work with tickets](/en/documentation/use/basics/work-with-tickets)"
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/work-with-tickets.md:1
+#: src/en/documentation/use/basics/work-with-tickets.md:6
+#, fuzzy, no-wrap
+#| msgid "Work on Tickets"
+msgid "Work with Tickets"
+msgstr "Рад на тикетима"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:9
+msgid ""
+"You found your way into an existing ticket, congratulations! Now let's have "
+"a look what you can do and how to do it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:16
+msgid ""
+"Generally, working on existing tickets means keeping up with a customer "
+"correspondence in a thread/conversation in the ticket detail view. Any time "
+"you open a ticket, a new tab will appear in your navigation bar on the left "
+"side. To close a tab (in the sense of remove it from the navigation bar, not "
+"setting the ticket state to closed), just click the ::X:: button in the tab. "
+"Zammad automatically saves your changes in opened ticket tabs, no matter if "
+"you already applied the changes or just edited things and switched to "
+"somewhere else. This means it is no problem to create a new ticket while "
+"editing an existing one. Simply switch back to the other tab."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:19
+msgid ""
+"For the most changes (except tags or title renaming, for example), an "
+"explicit update of the ticket is needed. So make sure to click the "
+"**Update** button on the right side of the footer bar when you are happy "
+"with your changes."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:20
+#, no-wrap
+msgid "Changing Ticket Attributes"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:24
+msgid ""
+"As you may know, there are additional ticket attributes such as group, "
+"priority and owner that you can set. If you haven't read [ticket-basics](/en/"
+"documentation/use/basics/ticket-basics) yet, check it out to learn more."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:25
+#, fuzzy, no-wrap
+#| msgid "Create a new ticket"
+msgid "Create a New Article"
+msgstr "Отворите нови тикет"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:29
+msgid ""
+"No matter if you create a new article from scratch or respond to a customer "
+"article, you can choose from different article types:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Note**: Write a reminder for yourself and other agents, ask a colleague a "
+"question by mentioning a user or add new information to the ticket. The "
+"default visibility is \"internal\", which means the customer can't see the "
+"note."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Call**: Note down a summary of a phone call you had with the customer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:34
+msgid ""
+"**Email**: Send an email to anyone about the ticket. The title of the ticket "
+"is used for the subject of the email."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:38
+msgid ""
+"To choose another article type, click the **Channel** dropdown and choose a "
+"different type. Click on the **Visibility** dropdown to change the article's "
+"visibility. Articles with \"internal\" visibility are displayed with a "
+"dashed blue border."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:40
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the article action split menu](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-split.png)"
+msgid ""
+"![Screenshot shows article type and visibility selector](/screenshots/"
+"cypress/usage-basics.cy.js/article-type-visibility.png)"
+msgstr ""
+"![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:44
+msgid ""
+"To write and edit text, make use of the powerful editor features. You can "
+"use the toolbar or keyboard shortcuts to format text and trigger special "
+"functions. Because of the amount of features and their importance, you can "
+"find more information on the separate [editor page](/en/documentation/use/"
+"guides/editor)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:47
+msgid ""
+"Every new article appears at the end of the conversation, which means below "
+"the existing articles. To see detailed information of an article, just click "
+"on an existing article which opens additional meta information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:51
+msgid ""
+"You might wonder now how to delete articles. The answer is you can only "
+"delete articles that you have created yourself and which are not older than "
+"10 minutes. To see the **Delete article** function in the ::a:: menu, "
+"articles of a communication type (emails, calls) must be changed to "
+"\"internal\" visibility first."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:52
+#, no-wrap
+msgid "Add an Article from Scratch"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:58
+msgid ""
+"Click on one of the buttons at the bottom of the ticket detail view to add "
+"an article. Depending on what you choose, the article create screen gets pre-"
+"populated with the type and visibility. When choosing **Add reply**, the "
+"article gets sent out to the customer of the ticket. In case of an email "
+"based ticket, the email address of the customer is pre-populated."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:60
+#, fuzzy
+msgid ""
+"![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/"
+"usage-basics.cy.js/new-article.png)"
+msgstr ""
+"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:61
+#, no-wrap
+msgid "Respond to an Article"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:65
+msgid ""
+"To forward or reply to an article, use one of the response buttons under an "
+"article or in the ::a:: menu. The behavior is similar to the behavior of an "
+"email client."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Reply**: Allows you to answer the article. The recipient is automatically "
+"pre-filled. The reply is sent via the same channel as the original message. "
+"This lets you easily send an answer to a customer or third party, if "
+"involved."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Reply all**: Same as above but uses all recipient addresses from the "
+"original message as recipients for your new article. Only available for "
+"email channels."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:72
+msgid ""
+"**Forward**: This means you can forward the original message to a third "
+"party or anybody else. The original message and attachments are included in "
+"your new article."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:74
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the article action split menu](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-split.png)"
+msgid ""
+"![Screenshot shows article reply actions](/screenshots/cypress/usage-"
+"basics.cy.js/article-reply.png)"
+msgstr ""
+"![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:83
+msgid ""
+"Zammad even allows you to **quote text** from an existing article. This is "
+"especially helpful if an answer refers to different parts of the original "
+"message or the text is pretty long. This feature is limited to communication "
+"type articles like email where the response buttons are available. To quote "
+"text, simply select the text you want to quote and use the **Reply** or "
+"**Reply all** function. This adds the selected text with a timestamp in your "
+"article editor where you can answer it. You can use the quoting even "
+"multiple times to quote different parts of the text. Just select another "
+"part of the text, click on the same response action as before and it gets "
+"added as another quote to your editor.  You can split quotations by using "
+"[[enter]] or [[shift]] + [[enter]] in the editor and disable quote format "
+"for your text."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:84
+#, fuzzy, no-wrap
+#| msgid "Open a Ticket"
+msgid "Rename a Ticket"
+msgstr "Отворите тикет"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:89
+msgid ""
+"To rename a ticket, simply click on the title in the header bar and start "
+"typing. This title is used as subject in email communication and shows up in "
+"several places like overviews. Confirm with [[enter]] or click the button on "
+"the right side."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:90
+#, fuzzy, no-wrap
+#| msgid "Ticket number."
+msgid "Copy Ticket Number"
+msgstr "Број тикета."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:96
+msgid ""
+"To copy the ticket number including a link to the ticket (e.g. to paste it "
+"in a third party chat app), use the ::c:: icon next to the ticket title. It "
+"copies the complete ticket number with the ticket identifier to your "
+"clipboard, e.g.  `Ticket#50071`. If pasting the content to a target which "
+"can handle HTML, a link to the ticket is included. If you just want to paste "
+"the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:99
+msgid ""
+"If you scrolled own in the ticket, hover over the collapsed header bar where "
+"you can find the button on the top left side."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:101
+#, fuzzy
+msgid ""
+"![Screenshot shows ticket header with highlighted ticket number copy button]"
+"(/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)"
+msgstr ""
+"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:104
+msgid ""
+"But wait, there is even a keyboard shortcut for that. Simply press [[.]] and "
+"the ticket number is copied to your clipboard. To include the ticket title "
+"as well, press [[.]] twice. Example: `Ticket#31004: Onboarding new "
+"colleague`."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:105
+#, fuzzy, no-wrap
+#| msgid "Simultaneous Work Detection"
+msgid "Simultaneous Ticket Processing"
+msgstr "Откривање истовремене обраде"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:110
+msgid ""
+"It can happen that two or more agents open a ticket at the same time. To "
+"prevent edit conflicts and customers receiving contradictory answers, Zammad "
+"shows you who is viewing or editing the ticket currently. You can find this "
+"information in the bottom bar where avatars of all agents are displayed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:112
+msgid ""
+"![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
+"advanced-features/simultaneous-work-detection.png)"
+msgstr ""
+"![Снимак екрана приказује друге оператере како гледају/уређују тикет](/"
+"screenshots/advanced-features/simultaneous-work-detection.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:115
+#, fuzzy
+#| msgid ""
+#| "Depending on the additional icon and if the avatar icon is faded, it "
+#| "means:"
+msgid ""
+"Make sure to communicate with your colleagues to prevent these problems "
+"before they arise. Depending on the additional icon and if the avatar icon "
+"is faded, it means:"
+msgstr ""
+"У зависности од одговарајуће иконица и да ли је аватар сличица изблеђена, "
+"пронађите додатно значење:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+msgid "Avatar: Another agent is viewing the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+#, fuzzy
+#| msgid ""
+#| "Another agent opened the ticket but is currently not actively viewing "
+#| "this ticket (faded avatar icon with the snooze icon, see left avatar in "
+#| "screenshot)"
+msgid ""
+"Faded avatar: Another agent opened the ticket but is currently not actively "
+"viewing it."
+msgstr ""
+"Други оператер има отворен тикет али га не гледа активно (избледела аватар "
+"сличица са иконицом „спавања”, погледајте леви аватар на снимку)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:119
+msgid ""
+"Avatar with pencil icon: Another agent is currently actively working on this "
+"ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:122
+msgid ""
+"There are even more icons which represent additional states of the other "
+"agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover "
+"with the mouse if you are unsure what it means."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:123
+#, fuzzy, no-wrap
+msgid "Ticket Actions"
+msgstr "Стање тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:126
+#, fuzzy
+#| msgid ""
+#| "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
+#| "header."
+msgid ""
+"Additional actions are available in the ::a:: menu in the ticket sidebar."
+msgstr ""
+"Промените назив кликом на наслов или коришћењем падајућег менија ::a:: у "
+"заглављу траке."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:130
+#, no-wrap
+msgid ""
+"History\n"
+": See a comprehensive list of updates to the ticket, performed by any user, since its creation. Useful to check who did\n"
+"  what and when.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:134
+#, no-wrap
+msgid ""
+"Merge\n"
+": Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.\n"
+"  See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:137
+msgid "Change Customer : Reassign the ticket to another customer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:142
+msgid ""
+"You now know the basics and how to work with tickets in general. However, "
+"there are many more features in Zammad which can be very useful in your "
+"daily work. Read on in [Advanced Features](/en/documentation/use/advanced-"
+"features) to learn more."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/zammad-ui.md:1
+#: src/en/documentation/use/basics/zammad-ui.md:6
+#, fuzzy, no-wrap
+#| msgid "Zammad AI"
+msgid "Zammad UI"
+msgstr "Zammad AI"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:11
+msgid ""
+"The user interface (UI) of Zammad is designed to provide an intuitive "
+"experience for users. It is built around the concept of simplicity, clarity, "
+"and accessibility and is based on common software design principles which "
+"should make the UI pretty self explanatory."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:15
+msgid ""
+"There are basic modular components for different features to keep the UI "
+"consistent. These components are described in the sections below. Depending "
+"on the currently opened screen, there are interactive components, such as "
+"tooltips and a contextual help. Use them wherever needed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:17
+#, fuzzy
+msgid ""
+"![Screenshot shows the ticket detail view](/screenshots/cypress/zammad-"
+"ui.cy.js/zammad-ui-full.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
+"screenshot-full-page.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:18
+#, no-wrap
+msgid "Main UI Elements"
+msgstr "Главни елементи корисничког интерфејса"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:22
+msgid ""
+"The screenshot above shows a ticket detail view in Zammad. Read on for a "
+"description of the different main elements of Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:26
+#, no-wrap
+msgid ""
+"Navigation Sidebar\n"
+": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
+"  create button.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:30
+#, no-wrap
+msgid ""
+"Navigation Tab\n"
+": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
+"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:34
+#, no-wrap
+msgid ""
+"Ticket Detail View\n"
+": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
+"  selected in the navigation sidebar.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:38
+#, no-wrap
+msgid ""
+"Sidebar\n"
+": This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and\n"
+"  displays the currently selected tab.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:43
+#, no-wrap
+msgid ""
+"Sidebar Tabs\n"
+": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
+"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
+"  customer has an assigned organization).\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:44
+#, no-wrap
+msgid "Navigation Sidebar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:49
+msgid ""
+"The navigation sidebar is your central place to access all main parts of "
+"Zammad. You might not see all of them because some depend on the "
+"configuration of your Zammad. The navigation sidebar is always visible. That "
+"means if you don’t know where you are, you can always go back to the "
+"dashboard, your overviews or an opened ticket, for example."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:54
+#, no-wrap
+msgid ""
+"Search and Notfication Area\n"
+": Includes the search where you can search for users, organizations, tickets and basically every in Zammad available\n"
+"  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge\n"
+"  with a count about how many notifications you got.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:57
+msgid ""
+"Navigation : Allows you to switch to different Zammad screens like the "
+"dashboard, overviews, knowledge base or phone screen."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:60
+msgid ""
+"Content Tabs : You can find tabs for your opened tickets, users and "
+"organizations."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:64
+#, no-wrap
+msgid ""
+"Bottom Bar\n"
+": Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and\n"
+"  a reporting button as well.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:67
+msgid ""
+"Zammad immediately saves your current work progress, so you can easily "
+"switch between the different areas of Zammad and you don't have to be afraid "
+"of losing any data like a not yet sent answer in a ticket."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/basics/zammad-ui.md:68
+#, no-wrap
+msgid "Sidebar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:73
+msgid ""
+"The sidebar on the right side displays all ticket relevant information and "
+"includes additional functionality. The most important one is the ticket "
+"sidebar. Switch between the different sidebars by clicking the desired tab "
+"on the right side of the sidebar. The available tabs depend on the ticket "
+"and the configured features of your Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:75
+#, no-wrap
+msgid "<!-- markdownlint-disable MD007 -->\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:79
+#, no-wrap
+msgid ""
+"Ticket Tab\n"
+": This tab shows the ticket information like owner, group, priority and state and lets you edit these values.\n"
+"  Additionally, the following actions are available when you click on the Ticket header:\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+msgid ""
+"History: shows a dialog with the history in the current ticket. This is "
+"where you can find when and what actions was performed and by whom."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+msgid ""
+"Merge: merge the ticket with another one in case a customer emailed you "
+"multiple times about the same issue."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/zammad-ui.md:84
+msgid "Change customer: set another customer for the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:88
+#, no-wrap
+msgid ""
+"Customer Tab\n"
+": View customer details including a reference to the customer’s other tickets. You can change the ticket customer here\n"
+"  as well by clicking on the Customer header and choose Change customer.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/zammad-ui.md:91
+#, no-wrap
+msgid ""
+"Organization Tab\n"
+": This tab is only shown if the customer is member of an organization. It shows the organization’s details including all\n"
+"  members. By clicking the Organization header, you can edit the name, the domain and the note of the organization.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Array Element: outline
@@ -3554,111 +4800,6 @@ msgid ""
 "If you want to apply changes to this behavior, ask your admin to change it."
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "If you are new to Zammad and ticketing software in general, first read the basics here."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "/en/documentation/manage-zammad/general"
-msgid "/en/documentation/use/start-using-zammad"
-msgstr "/sr/documentation/manage-zammad/general"
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Zammad Beginner"
-msgstr "Zammad почетник"
-
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "If you are already familiar with the basics of Zammad, you should have a look at the [advanced features](advanced-features) page."
-msgid "If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar."
-msgstr "Уколико су вам основе Zammad-а већ познате, погледајте [напредне функције](advanced-features)."
-
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/general.md:1
-#, fuzzy, no-wrap
-#| msgid "/en/documentation/use/general"
-msgid "/en/documentation/use/advanced-features"
-msgstr "/sr/documentation/use/general"
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Advanced User"
-msgstr "Напредни корисник"
-
-#. type: Yaml Front Matter Hash Value: features details
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "As an administrator, head over to the Manage Zammad section."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/use/general.md:1
-#, no-wrap
-msgid "Administrator"
-msgstr "Администратор"
-
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/general.md:19 src/en/documentation/use/index.md:1
-#, no-wrap
-msgid "Use Zammad"
-msgstr "Коришћење Zammad-а"
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:23
-msgid ""
-"Welcome to the user documentation of Zammad. Here you can learn how to use "
-"Zammad to collaborate with your colleagues even better!"
-msgstr ""
-"Добродошли на корисничку документацију Zammad-а. Овде можете научити како да "
-"користите Zammad да сарађујете са вашим колегама на вишем нивоу!"
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:26
-msgid ""
-"In general, Zammad should be pretty self explanatory. However, there are "
-"features that are not obvious at first glance.  These features are described "
-"in this documentation as well as some general explanations and tips."
-msgstr ""
-"Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције "
-"које нису очигледне на први поглед. Ове функције су описане у овој "
-"документацији као и нека општа објашњења и савети."
-
-#. type: Plain text
-#: src/en/documentation/use/general.md:30
-#, fuzzy
-msgid ""
-"This documentation is divided into different sections. Currently you are on "
-"the landing page of the user documentation.  Use the left sidebar to "
-"navigate to the desired section or use the search in the header or activate "
-"it by using its keyboard shortcut [[ctrl]] [[k]]."
-msgstr ""
-"Ова документације је подељена на различите одељке. Тренутно читате одељак "
-"_Уопштено_ у делу\n"
-"_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране "
-"за навигацију на жељене информације или претражите у\n"
-"заглављу. Можете чак покренути претрагу коришћењем пречице [[Ctrl]] [[k]] на "
-"тастатури.\n"
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/general.md:31
-#, no-wrap
-msgid ""
-"\n"
-"This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed\n"
-"by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside\n"
-"the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a\n"
-"page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
-"\n"
-msgstr ""
-
 #. type: Title #
 #: src/en/documentation/use/guides/ai.md:1
 #: src/en/documentation/use/guides/ai.md:6
@@ -3901,6 +5042,12 @@ msgid ""
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:83
+#, no-wrap
+msgid "Simultaneous Work Detection"
+msgstr "Откривање истовремене обраде"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:88
@@ -4718,22 +5865,22 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:23
 msgid "Message subject and text"
-msgstr ""
+msgstr "Предмет и садржај поруке"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:23
 msgid "Names and email addresses"
-msgstr ""
+msgstr "Имена и имејл адресе"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:23
 msgid "Text in file attachments"
-msgstr ""
+msgstr "Текст у датотекама прилога"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:23
 msgid "User and organizations details (like notes, names, etc.)"
-msgstr ""
+msgstr "Детаљи корисника и организација (као што су напомене, називи, итд)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:26
@@ -4750,6 +5897,10 @@ msgid ""
 "in the results. Selecting one of those results will open a new navigation "
 "tab (if not already opened) with the item."
 msgstr ""
+"По уносу кључне речи, моментално ћете видети приказ резултата претраге. Ови "
+"резултати су одвојени по врсти да се не бисте изгубили у њима. Клик на неки "
+"од резултата ће отворити нову страницу са објектом (уколико није већ "
+"отворена)."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:33
@@ -5356,6 +6507,12 @@ msgid ""
 "confirm the removal with your current password."
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/index.md:1
+#, no-wrap
+msgid "Use Zammad"
+msgstr "Коришћење Zammad-а"
+
 #. type: Title #
 #: src/en/documentation/use/manage-profile.md:6
 #, no-wrap
@@ -5613,14 +6770,6 @@ msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
 
-#. type: Title ###
-#: src/en/documentation/use/manage-profile.md:105
-#: src/en/documentation/use/start-using-zammad.md:68
-#: src/en/documentation/use/start-using-zammad.md:106
-#, no-wrap
-msgid "Notifications"
-msgstr "Обавештења"
-
 #. type: Plain text
 #: src/en/documentation/use/manage-profile.md:108
 msgid "Adjust the notifications you get. You can adjust:"
@@ -5707,487 +6856,116 @@ msgid ""
 "include."
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "If you are new to Zammad and ticketing software in general, first read the basics here."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "/en/documentation/manage-zammad/general"
+msgid "/en/documentation/use/basics/zammad-ui"
+msgstr "/sr/documentation/manage-zammad/general"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Zammad Beginner"
+msgstr "Zammad почетник"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "If you are already familiar with the basics of Zammad, you should have a look at the [advanced features](advanced-features) page."
+msgid "If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar."
+msgstr "Уколико су вам основе Zammad-а већ познате, погледајте [напредне функције](advanced-features)."
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "/en/documentation/use/general"
+msgid "/en/documentation/use/advanced-features"
+msgstr "/sr/documentation/use/general"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Advanced User"
+msgstr "Напредни корисник"
+
+#. type: Yaml Front Matter Hash Value: features details
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "As an administrator, head over to the Manage Zammad section."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Administrator"
+msgstr "Администратор"
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/use/start.md:1
+#, fuzzy, no-wrap
+#| msgid "Get Started"
+msgid "Start"
+msgstr "Први кораци"
+
 #. type: Title #
-#: src/en/documentation/use/start-using-zammad.md:1
-#: src/en/documentation/use/start-using-zammad.md:6
+#: src/en/documentation/use/start.md:19
 #, no-wrap
-msgid "Start with Zammad"
-msgstr "Започните Zammad авантуру"
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:8
-#, no-wrap
-msgid "User Interface"
-msgstr "Кориснички интерфејс"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:14
-msgid ""
-"The user interface (UI) of Zammad is designed to provide an intuitive "
-"experience for users. It is built around the concept of simplicity, clarity, "
-"and accessibility."
+msgid "Welcome"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:17
+#: src/en/documentation/use/start.md:23
 msgid ""
-"There are basic modular components for different features to keep the UI "
-"consistent. These components are described in the section [Main UI Elements]"
-"(#main-ui-elements) as well as [Navigating](#navigating) below."
+"Welcome to the user documentation of Zammad. Here you can learn how to use "
+"Zammad to collaborate with your colleagues even better!"
 msgstr ""
+"Добродошли на корисничку документацију Zammad-а. Овде можете научити како да "
+"користите Zammad да сарађујете са вашим колегама на вишем нивоу!"
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:20
+#: src/en/documentation/use/start.md:26
 msgid ""
-"Depending on the currently opened screen, there are interactive components, "
-"such as tooltips and a contextual help. Use them wherever needed."
+"In general, Zammad should be pretty self explanatory. However, there are "
+"features that are not obvious at first glance.  These features are described "
+"in this documentation as well as some general explanations and tips."
 msgstr ""
+"Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције "
+"које нису очигледне на први поглед. Ове функције су описане у овој "
+"документацији као и нека општа објашњења и савети."
 
 #. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:22
-msgid ""
-"In any case, the UI is based on common software design principles and is "
-"mostly self explanatory."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:23
-#, no-wrap
-msgid "Main UI Elements"
-msgstr "Главни елементи корисничког интерфејса"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:26
+#: src/en/documentation/use/start.md:30
 #, fuzzy
 msgid ""
-"![Screenshot shows a ticket detail view](/screenshots/cypress/zammad-"
-"ui.cy.js/zammad-ui-full.png)"
+"This documentation is divided into different sections. Currently you are on "
+"the landing page of the user documentation.  Use the left sidebar to "
+"navigate to the desired section or use the search in the header or activate "
+"it by using its keyboard shortcut [[ctrl]] [[k]]."
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
-"screenshot-full-page.png)"
+"Ова документације је подељена на различите одељке. Тренутно читате одељак "
+"_Уопштено_ у делу\n"
+"_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране "
+"за навигацију на жељене информације или претражите у\n"
+"заглављу. Можете чак покренути претрагу коришћењем пречице [[Ctrl]] [[k]] на "
+"тастатури.\n"
 
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:29
-msgid ""
-"The screenshot above shows a ticket detail view in Zammad. Read on for a "
-"description of the different main elements of Zammad."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:33
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/start.md:31
 #, no-wrap
 msgid ""
-"Navigation sidebar\n"
-": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
-"  create button.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:37
-#, no-wrap
-msgid ""
-"Navigation tab\n"
-": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
-"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:41
-#, no-wrap
-msgid ""
-"Ticket detail view\n"
-": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
-"  selected in the navigation sidebar.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:45
-#, no-wrap
-msgid ""
-"Sidebar\n"
-": This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and\n"
-"  displays the currently selected tab.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:50
-#, no-wrap
-msgid ""
-"Sidebar tabs\n"
-": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
-"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
-"  customer has an assigned organization).\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:54
-#, no-wrap
-msgid ""
-"Active sidebar\n"
-": The selected sidebar tab. Displays the content of the tab. It can show things like customer sidebar, organization\n"
-"  sidebar, checklist sidebar and more.\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:55
-#, no-wrap
-msgid "Navigating"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:58
-msgid ""
-"The navigation sidebar is your central place to access all main parts of "
-"Zammad. It includes:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Search bar"
-msgstr "Трака претраге"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-#, fuzzy
-msgid "Overview section"
-msgstr "Прегледи"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Chat (if activated)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Phone (if activated)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-#, fuzzy
-msgid "Ticket tabs"
-msgstr "Стање тикета"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Avatar with menu"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-msgid "Settings (if you have permissions)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:68
-#, fuzzy
-msgid "Ticket create button"
-msgstr "Стање тикета"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:71
-msgid ""
-"The main navigation in Zammad is done in this sidebar. It is always visible "
-"and you can switch between ticket, overviews and the search, for example."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:74
-msgid ""
-"Zammad immediately saves your current work progress, so you can easily "
-"switch between the different areas of Zammad and you don't have to be afraid "
-"of losing any data like a not yet sent answer in a ticket."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:75
-#, no-wrap
-msgid "Finding Tickets"
-msgstr "Проналажење тикета"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:78
-msgid "There are different ways to find tickets, depending on your use case."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:79
-#, fuzzy, no-wrap
-msgid "Via Overviews"
-msgstr "Прегледи"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:84
-msgid ""
-"If you search for new tickets to work on, your first look should be in the "
-"overview section. You can either open it by clicking the `Overviews` button "
-"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
-"overviews as a kind of ticket lists."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:88
-msgid ""
-"By default, there are some built in overviews, you can use. For example, "
-"there is an overview called \"Open Tickets\".  This might be a good starting "
-"point. Your Zammad admin may have created additional overviews. These are "
-"based on conditions, which are basically rules, to define which ticket "
-"appears in which overview."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:90
-msgid ""
-"For a detailed description, head over to the [overview usage guide](/en/"
-"documentation/use/guides/overviews)."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:91
-#, fuzzy, no-wrap
-msgid "Via Search"
-msgstr "Претрага"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:96
-msgid ""
-"However, if you search for a specific ticket which might or might not be "
-"visible in the overviews, you can use the search. You can find it in the top "
-"left corner in the navigation bar. Either select it via mouse or use the "
-"keyboard shortcut by simply pressing [[s]]."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:99
-msgid ""
-"After activating the search field, you can find the tickets you recently "
-"closed from your taskbar as well as your last search queries."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:103
-msgid ""
-"By entering a search term, you immediately see a preview of the search "
-"results. If you press [[enter]] or click on `detailed search`, Zammad "
-"displays a page with search results. There you can differentiate by object "
-"type (e.g.  customer), what you are searching."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:105
-msgid "Have a look at the [search guide](guides/search) for more details."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:112
-msgid ""
-"Depending on the [notification settings](/en/documentation/use/manage-"
-"profile#notifications) in your profile, you receive updates for different "
-"ticket based events like the creation or the update of a ticket. This "
-"ensures that no important change to a ticket is overlooked."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:115
-msgid ""
-"You can open them by clicking on the notification counter in the top left "
-"corner. If there is a badge with a counter, the counter shows the number of "
-"unread notifications."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:118
-msgid ""
-"By default, you get notified when one of your tickets (means you are the "
-"owner) got updated. By clicking on the link in the notification, this ticket "
-"gets opened in the navigation sidebar as tab and the ticket detail view is "
-"displayed."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:119
-#, fuzzy, no-wrap
-msgid "Ticket Basics"
-msgstr "Rails команде"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:125
-msgid ""
-"If you're completely new to a ticket system and handled your customer "
-"requests with an email client so far, you might think that a ticket system "
-"is complicated. But the opposite is the case:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"All emails are now collected in Zammad (and requests from other channels "
-"might be as well)."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"You and your colleagues can see who is working on which customer request "
-"(\"ticket\")."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"The state of each request as well as the history (who did what?) is "
-"transparent."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid "There is no duplicate work and nothing gets overlooked."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"You can ask your colleagues directly in the ticket for help in difficult "
-"cases."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:132
-msgid ""
-"With Zammad's intuitive UI, you can focus on what matters: to resolve "
-"customer issues and answer customer questions."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:135
-msgid ""
-"So, basically you can work with Zammad similar as with your email client. "
-"Except that you have some additional attributes you can set in the _Ticket_ "
-"sidebar tab:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**State**: reflects the current state of a ticket (mainly if a customer "
-"request is resolved or not). By default, there are the following states:"
-msgstr ""
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket the first time, it automatically switches to _open_."
-msgstr ""
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Open**: State for tickets which aren't resolved yet and some work needs to "
-"be done."
-msgstr ""
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Pending Close**: State for tickets which are basically resolved but you "
-"don't want to close immediately. This state requires you to enter a date and "
-"time at which the ticket automatically switches to _closed_."
-msgstr ""
-
-#. type: Bullet: '  - '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Pending Reminder**: State for open tickets which you want to get reminded "
-"to a certain date and time. Requires you to enter a date and time at which "
-"you want to get notified. For example useful if you had a question to a "
-"third party and want to make sure that this issue won't be forgotten."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Owner**: This is the person who is currently responsible for the ticket. "
-"In case you need information from another colleague, you can either change "
-"the owner to this person or mention the person in an article by typing [[@]]"
-"[[@]] and selecting the user. In the latter case, the user gets notified and "
-"is automatically subscribed to receive notifications on ticket updates."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/start-using-zammad.md:152
-msgid ""
-"**Group**: This ticket attribute is useful for organizations with more than "
-"one team. Depending on the permissions, you might not see the ticket after "
-"changing the group and saving the changes."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:153
-#, no-wrap
-msgid "Ticket Detail View"
-msgstr "Детаљни приказ тикета"
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:156
-msgid ""
-"Now that you are aware about some attributes, let's have a look at the "
-"ticket detail view."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:163
-msgid ""
-"The ticket detail view provides all relevant information of a ticket. As its "
-"main part, all articles of the ticket are shown here. The oldest article "
-"(which created the ticket) at the top, the newest at the bottom. Depending "
-"on the article type, Zammad offers you different ways to react. For text "
-"communication based articles, you can directly create an answer by using the "
-"`reply` button below the article or use the `forward` feature. The "
-"integrated text editor is intuitive and includes buttons in the toolbar to "
-"format your text and insert objects like tables or images. If you want to "
-"learn more about the editor, the [editor guide](guides/editor) includes "
-"additional information."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:166
-msgid ""
-"Regardless of the customer's article type, you can always add internal "
-"notes. These are useful to add information to the ticket or ask a colleague."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/start-using-zammad.md:167
-#, no-wrap
-msgid "Updating your Ticket"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:173
-msgid ""
-"After you have done your changes like writing an answer to a customer and "
-"change the state of the ticket, you can see a highlighted `Update` button in "
-"the right footer. By clicking it, your changes are applied and if you "
-"created an answer, it is now sent out to the customer. If you consider the "
-"issue as resolved, you should set the state to _closed_ now."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/start-using-zammad.md:174
-#, no-wrap
-msgid "Conclusion"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/start-using-zammad.md:179
-msgid ""
-"This was a brief introduction about how to work with Zammad if you are "
-"completely new to ticket systems. Knowing the basics of Zammad now, you can "
-"either start working or have a look at the [advanced features section]"
-"(advanced-features)  to become even more productive and use the full "
-"potential of Zammad. The different sections in the navigation menu might "
-"also include interesting content. 🚀"
+"\n"
+"This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed\n"
+"by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside\n"
+"the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a\n"
+"page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
+"\n"
 msgstr ""
 
 #. type: Plain text
@@ -14178,13 +14956,6 @@ msgstr ""
 msgid "Defines if the organization has VIP status or not."
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/es-indexed-attributes.md:1054
-#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
-#, no-wrap
-msgid "Group"
-msgstr "Група"
-
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1057
 msgid "The following index contains below mentioned information: `*_group`"
@@ -14819,12 +15590,6 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:1397
 msgid "ID of the agent of the chat."
 msgstr ""
-
-#. type: Title #
-#: src/en/reference/glossary.md:1 src/en/reference/glossary.md:6
-#, no-wrap
-msgid "Glossary"
-msgstr "Речник"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:10
@@ -16375,9 +17140,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/redis.md:16
 msgid ""
-"For a Redis standard deployment, you can provide one variable: "
-"``REDIS_URL``. This variable can include IP/URL, a port, a username and "
-"password. Examples:"
+"For a Redis standard deployment, you can provide one variable: `REDIS_URL`. "
+"This variable can include IP/URL, a port, a username and password. Examples:"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -16400,7 +17164,7 @@ msgstr ""
 #: src/en/reference/redis.md:24
 msgid ""
 "The variables in the table don't have default values set. In case you want "
-"to connect Zammad to a Redis Sentinel cluster, only ``REDIS_SENTINELS`` "
+"to connect Zammad to a Redis Sentinel cluster, only `REDIS_SENTINELS` "
 "variable is mandatory, the others are optional."
 msgstr ""
 
@@ -19834,12 +20598,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ###
-#: src/en/reference/rest-api/object.md:131
-#, no-wrap
-msgid "Text"
-msgstr ""
-
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/object.md:133
 #, no-wrap
@@ -21056,8 +21814,8 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:15
 msgid ""
-"The ticket summarize endpoint uses ``POST`` because creating and fetching "
-"the summary happen in a single operation:"
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -21075,7 +21833,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rest-api/ticket-summary.md:22
 msgid ""
-"Using ``GET`` would be incorrect since the call may also create data. If you "
+"Using `GET` would be incorrect since the call may also create data. If you "
 "want a summary to exist, call the endpoint; if it's not ready yet, retry "
 "after at least 30 seconds."
 msgstr ""
@@ -22509,8 +23267,8 @@ msgstr ""
 #: src/en/tutorials/connect-config-elasticsearch.md:58
 msgid ""
 "To add it in Zammad, either upload the certificate file or paste the content "
-"in the dialog. Make sure to copy/paste the delimiters (e.g. ``-----BEGIN "
-"CERTIFICATE-----``) too."
+"in the dialog. Make sure to copy/paste the delimiters (e.g. `-----BEGIN "
+"CERTIFICATE-----`) too."
 msgstr ""
 
 #. type: Title ###
@@ -23530,29 +24288,32 @@ msgid "Configuration"
 msgstr "Подешавања"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:134
-msgid ""
-"Open `/etc/elasticsearch/elasticsearch.yml` and adjust/uncomment the "
-"following values:"
-msgstr ""
-
-#. type: Fenced code block (yml)
 #: src/en/tutorials/install-elasticsearch.md:135
-#, no-wrap
 msgid ""
-"network.host: 0.0.0.0\n"
-"transport.host: 0.0.0.0\n"
+"Optionally, check and configure Elasticsearch’s configuration file which you "
+"can find under `/etc/elasticsearch/elasticsearch.yml`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:141
-msgid "Optional to increase the maximum context size to index:"
+#: src/en/tutorials/install-elasticsearch.md:138
+msgid ""
+"We recommend to adjust the maximum context size which should get indexed by "
+"Elasticsearch. Adjust it to a reasonable size like in the example:"
 msgstr ""
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:142
+#: src/en/tutorials/install-elasticsearch.md:139
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/install-elasticsearch.md:145
+msgid ""
+"Additional configuration is out of scope of this documentation. In case your "
+"scenario needs additional configuration, have a look at [Elastic’s "
+"configuration reference](https://www.elastic.co/docs/reference/elasticsearch/"
+"configuration-reference)."
 msgstr ""
 
 #. type: Title ##
@@ -26878,6 +27639,89 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
+#~ "In the ticket sidebar, you can find a section which is labeled as "
+#~ "**Tags**. Add a tag by clicking on the ::+:: button. You can select "
+#~ "existing tags and add new ones (if your admin didn't disable to add new "
+#~ "tags)."
+#~ msgstr ""
+#~ "У бочној траци тикета, можете пронаћи одељак под насловом **Ознаке**. "
+#~ "Додајте ознаку кликом на дугме ::+::. Можете изабрати између постојећих и "
+#~ "нових ознака (уколико ваш администратор није искључио додавање нових "
+#~ "ознака)."
+
+#~ msgid ""
+#~ "Remove them by simply click on the ::x:: button. Be aware that there is "
+#~ "no confirmation dialog for deleting a tag from a ticket."
+#~ msgstr ""
+#~ "Уклоните их једноставним кликом на дугме ::x::. Обратите пажњу да неће "
+#~ "бити потврдног дијалога за брисање ознаке са тикета."
+
+#~ msgid "Things to avoid:"
+#~ msgstr "Ствари за избегавање:"
+
+#~ msgid "Superfluous work"
+#~ msgstr "Непотребан рад"
+
+#~ msgid "Conflicting answers from different agents"
+#~ msgstr "Опречни одговори од других оператера"
+
+#~ msgid "Overwritten/undone changes by different agents"
+#~ msgstr "Преиначене/поништене измене од других оператера"
+
+#~ msgid ""
+#~ "This is why you can immediately see who views and edits the currently "
+#~ "viewed ticket."
+#~ msgstr ""
+#~ "Из овог разлога можете одмах да видите ко гледа и уређује тренутни тикет."
+
+#, fuzzy
+#~ msgid ""
+#~ "Have a look at the footer bar in the ticket detail view. When there is an "
+#~ "avatar from another agent in the live user section (see screenshot "
+#~ "above), you are not the only one viewing this ticket."
+#~ msgstr ""
+#~ "Погледајте траку у подножју прегледа тиекта. Када видите аватар сличицу "
+#~ "другог оператера (погледајте снимак изнад), нисте једини који тренутно "
+#~ "раде на тикету."
+
+#~ msgid ""
+#~ "Another agent is viewing the ticket (not faded avatar without additional "
+#~ "icon)"
+#~ msgstr ""
+#~ "Други оператер гледа тикет (неизбледела аватар сличица без додатне "
+#~ "иконице)"
+
+#~ msgid ""
+#~ "Another agent is currently actively working on this ticket (not faded "
+#~ "avatar icon with a pencil icon, see right avatar in screenshot)"
+#~ msgstr ""
+#~ "Други оператер тренутно активно ради на овом тикету (неизбледела аватар "
+#~ "сличица са иконицом оловке, погледајте десни аватар на снимку)"
+
+#, no-wrap
+#~ msgid "Start with Zammad"
+#~ msgstr "Започните Zammad авантуру"
+
+#, no-wrap
+#~ msgid "User Interface"
+#~ msgstr "Кориснички интерфејс"
+
+#~ msgid "Search bar"
+#~ msgstr "Трака претраге"
+
+#, fuzzy
+#~ msgid "Overview section"
+#~ msgstr "Прегледи"
+
+#, fuzzy
+#~ msgid "Ticket create button"
+#~ msgstr "Стање тикета"
+
+#, no-wrap
+#~ msgid "Ticket Detail View"
+#~ msgstr "Детаљни приказ тикета"
+
+#~ msgid ""
 #~ "This is no feature which allows any agent interaction. However, if the "
 #~ "feature is configured, you may notice it at some points. This is why you "
 #~ "can find an explanation here."
@@ -27522,10 +28366,6 @@ msgstr ""
 #, no-wrap
 #~ msgid "/en/contribute/style-guide"
 #~ msgstr "/sr/contribute/style-guide"
-
-#, no-wrap
-#~ msgid "/en/reference/glossary"
-#~ msgstr "/sr/reference/glossary"
 
 #, no-wrap
 #~ msgid "/en/reference/api-reference"
