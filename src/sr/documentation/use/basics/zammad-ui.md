@@ -83,7 +83,7 @@ and the configured features of your Zammad.
 
 Ticket Tab
 : This tab shows the ticket information like owner, group, priority and state and lets you edit these values.
-  Additionally, the following actions are available when you click on the Ticket header:
+  Additionally, the following actions are available when you click on the ::a:: button in the top section:
 
   - History: shows a dialog with the history in the current ticket. This is
     where you can find when and what actions was performed and by whom.
@@ -93,8 +93,8 @@ Ticket Tab
 
 Customer Tab
 : View customer details including a reference to the customer’s other tickets. You can change the ticket customer here
-  as well by clicking on the Customer header and choose Change customer.
+  as well by clicking on the ::a:: button in the top section.
 
 Organization Tab
 : This tab is only shown if the customer is member of an organization. It shows the organization’s details including all
-  members. By clicking the Organization header, you can edit the name, the domain and the note of the organization.
+  members. By clicking on the ::a:: button in the top section, you can edit the organization.
