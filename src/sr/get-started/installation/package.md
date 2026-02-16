@@ -13,7 +13,7 @@ title: Пакет
 
 | Distribution  | Version             |
 | ------------- | :-----------------  |
-| CentOS/RHEL   | 8 & 9               |
+| CentOS/RHEL   | 9                   |
 | Debian        | 11, 12 & 13         |
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 22.04, 24.04        |
