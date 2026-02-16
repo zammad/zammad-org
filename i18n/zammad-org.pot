@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 15:04+0100\n"
+"POT-Creation-Date: 2026-02-13 11:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1599,32 +1599,32 @@ msgid ""
 "deliver exceptional customer service and streamline your support operations."
 msgstr ""
 
-#. type: Title ###
-#: src/en/documentation/manage-zammad/general.md:1
-#: src/en/documentation/manage-zammad/general.md:6
-#: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
-#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
-#: src/en/reference/rest-api/cti.md:361
-#, markdown-text, no-wrap
-msgid "General"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/manage-zammad/index.md:1
 #, no-wrap
 msgid "Manage Zammad"
 msgstr ""
 
-#. type: Title #
-#: src/en/documentation/manage-zammad/manage-channels.md:5
-#, markdown-text, no-wrap
-msgid "Manage Channels"
+#. type: Yaml Front Matter Hash Value: title
+#: src/en/documentation/manage-zammad/start.md:1
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "Start"
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/manage-zammad/setup.md:5
+#: src/en/documentation/manage-zammad/start.md:6
+#: src/en/documentation/use/start.md:19
 #, markdown-text, no-wrap
-msgid "Setup a new system"
+msgid "Welcome"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/manage-zammad/start.md:9
+#, markdown-text
+msgid ""
+"This part of the documentation is currently empty. It will be created step "
+"by step and simultaneously to the development of Zammad's new admin UI."
 msgstr ""
 
 #. type: Title #
@@ -4161,6 +4161,14 @@ msgstr ""
 #: src/en/documentation/use/faq.md:12
 #, markdown-text
 msgid "[[TOC]]"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
+#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
+#: src/en/reference/rest-api/cti.md:361
+#, markdown-text, no-wrap
+msgid "General"
 msgstr ""
 
 #. type: Title ###
@@ -6744,18 +6752,6 @@ msgstr ""
 #: src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "Administrator"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/use/start.md:1
-#, no-wrap
-msgid "Start"
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/use/start.md:19
-#, markdown-text, no-wrap
-msgid "Welcome"
 msgstr ""
 
 #. type: Plain text

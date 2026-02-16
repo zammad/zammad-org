@@ -210,6 +210,14 @@
       "roles": ["Customer"]
     },
     {
+      "login": "christyler@pear.com",
+      "firstname": "Chris",
+      "lastname": "Tyler",
+      "email": "christyler@pear.com",
+      "mobile": "+1 666 123 4567",
+      "roles": ["Customer"]
+    },
+    {
       "login": "evely.smith@midlandbank.biz",
       "firstname": "Evelyn",
       "lastname": "Smith",
@@ -384,6 +392,10 @@
     {
       "name": "gitlab_integration",
       "value": true
+    },
+    {
+      "name": "language_detection_article",
+      "value": "cld"
     }
   ],
   "TextModuleLocale": {

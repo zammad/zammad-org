@@ -483,7 +483,7 @@ laurenbrooks = User.find_by(login: 'lauren@fastlane.inc')
 UserInfo.current_user_id = hannahtaylor.id
 created_at = Time.zone.now - 55.days
 ticket7 = Ticket.create(
-  title:      'Onboarding new colleague',
+  title:      'My account is locked',
   group:      Group.find_by(name: 'IT Internal'),
   customer:   hannahtaylor,
   owner_id:   laurenbrooks.id,
@@ -530,6 +530,211 @@ article = Ticket::Article.create(
   internal:     false,
   created_at:   created_at,
   updated_at:   created_at,
+)
+
+# Yet another B2C WhatsAppticket
+christyler = User.find_by(login: 'christyler@pear.com')
+emilywilson = User.find_by(login: 'emily@fastlane.inc')
+UserInfo.current_user_id = christyler.id
+created_at = Time.zone.now - 3.hours
+ticket8 = Ticket.create(
+  title:      'New WhatsApp message from Chris Tyler (+1 666 123 4567)',
+  group:      Group.find_by(name: 'Support::1st Level'),
+  customer:   christyler,
+  owner_id:   emilywilson.id,
+  state:      Ticket::State.find_by(name: 'open'),
+  priority:   Ticket::Priority.find_by(name: '2 normal'),
+  created_at: created_at,
+  updated_at: created_at,
+)
+
+UserInfo.current_user_id = christyler.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{christyler.fullname} <#{christyler.mobile}>",
+  subject:      'Delivery not received',
+  body:         "Hi, I ordered a power drill from your store last week, and it was supposed to be delivered yesterday, but I haven't received it yet. Can you help?",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at,
+  updated_at:   created_at,
+)
+
+UserInfo.current_user_id = emilywilson.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  from:         "#{emilywilson.fullname}",
+  body:         "Hello! I'm sorry to hear that your order hasn't arrived. I'd be happy to help. Could you please provide your order number?",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 5.minutes,
+  updated_at:   created_at + 5.minutes,
+)
+
+UserInfo.current_user_id = christyler.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{christyler.fullname} <#{christyler.mobile}>",
+  body:         "Sure, it's OD782491",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 12.minutes,
+  updated_at:   created_at + 12.minutes,
+)
+
+UserInfo.current_user_id = emilywilson.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  from:         "#{emilywilson.fullname}",
+  body:         "Thank you. Let me check the status of your order... It looks like the package was marked as delivered yesterday at 3:42 PM to the front porch of your address. Is there any chance someone else received it or it was misplaced?",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 26.minutes,
+  updated_at:   created_at + 26.minutes,
+)
+
+UserInfo.current_user_id = christyler.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{christyler.fullname} <#{christyler.mobile}>",
+  body:         "Hmm, I don't see it anywhere. Maybe it was stolen?",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 27.minutes,
+  updated_at:   created_at + 27.minutes,
+)
+
+UserInfo.current_user_id = emilywilson.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  from:         "#{emilywilson.fullname}",
+  body:         "I understand how frustrating that must be. We can initiate a missing package investigation with the courier. In the meantime, we can either reship your order or issue a full refund—whichever you prefer.",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 35.minutes,
+  updated_at:   created_at + 35.minutes,
+)
+
+UserInfo.current_user_id = christyler.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{christyler.fullname} <#{christyler.mobile}>",
+  body:         "I'd like to get the drill as soon as possible, so please reship it.",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 41.minutes,
+  updated_at:   created_at + 41.minutes,
+)
+
+UserInfo.current_user_id = emilywilson.id
+article = Ticket::Article.create(
+  ticket:       ticket8,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  from:         "#{emilywilson.fullname}",
+  body:         "Absolutely. We'll send out a replacement today with express shipping at no extra cost. You should receive it within 2 business days. I'll send you the new tracking details shortly.",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at + 55.minutes,
+  updated_at:   created_at + 55.minutes,
+)
+
+# Yet another B2B ticket
+amberwright = User.find_by(login: 'amber.wright@joes-carparts.com')
+morganreed = User.find_by(login: 'morgan@fastlane.inc')
+UserInfo.current_user_id = amberwright.id
+created_at = Time.zone.now - 42.minutes
+ticket9 = Ticket.create(
+  title:      'Inquiry about hardware procurement',
+  group:      Group.find_by(name: 'Sales'),
+  customer:   amberwright,
+  owner_id:   morganreed.id,
+  state:      Ticket::State.find_by(name: 'open'),
+  priority:   Ticket::Priority.find_by(name: '2 normal'),
+  created_at: created_at,
+  updated_at: created_at,
+)
+
+UserInfo.current_user_id = amberwright.id
+file = File.open("#{__dir__}/assets/joes-signature.jpg", 'rb')
+contents = Base64.strict_encode64(file.read)
+article = Ticket::Article.create(
+  ticket:       ticket9,
+  type:         Ticket::Article::Type.find_by(name: 'email'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{amberwright.fullname} <#{amberwright.email}>",
+  subject:      'Hardware Inquiry',
+  body:         "Dear Sales Team,
+<br/><br/>
+I'm reaching out on behalf of Joe's Car Parts, a growing car part seller with
+350 employees across three regional shops. We're expanding and centralizing IT
+infrastructure and are interested in establishing a partnership with a reliable
+hardware supplier.
+<br/><br/>
+The procurement consists of enterprise-grade computing equipment, including high-performance
+workstations, servers, networking gear, endpoint devices and peripherals. You can find the 
+detailed specifications and quantities in the attached document. 
+<br/><br/>
+Additionally, we would appreciate information about product availability and return
+policies.
+<br/><br/>
+We're looking to order the first batch until the end of next month and would
+welcome the opportunity to discuss how we might collaborate.
+<br/><br/>
+In case you have any questions or need further information, please don't hesitate
+to contact me. I look forward to your response and the possibility of working
+together.
+<br/><br/>
+Best regards,
+<br/> -----
+<br/>Amber Wright
+<br/>Sales Manager
+<br/>amber.wright@joes-carparts.com
+<br/>(555) 666-0123
+<br/>
+<br/>Joe's Car Parts
+<br/> <img src=\"data:image/jpeg;base64,#{contents}\" width=\"300\" >",
+  content_type: 'text/html',
+  internal:     false,
+  attachments:  [{
+      "filename": "inquiry_joes_car_parts.xlsx",
+      "data": "test",
+      "mime-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    },
+  ],
+  created_at:   created_at,
+  updated_at:   created_at,
+)
+
+UserInfo.current_user_id = morganreed.id
+article = Ticket::Article.create(
+  ticket:       ticket9,
+  type:         Ticket::Article::Type.find_by(name: 'whatsapp message'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Agent'),
+  from:         "#{morganreed.fullname}",
+  body:         "
+Amber also gave me a call. We had a good talk, and they'd be happy to see a solid offer from us.
+The offer needs to be in by the end of the next week at the latest so that procurement can happen
+on time.
+",
+  content_type: 'text/html',
+  internal:     true,
+  created_at:   created_at + 17.minutes,
+  updated_at:   created_at + 17.minutes,
 )
 
 puts 'Creating overviews...'
@@ -591,6 +796,7 @@ Taskbar.create!([
                   { user_id: lauren.id, last_contact: Time.zone.now - 10.minutes, key: "Ticket-#{ticket3.id}", callback: 'TicketZoom', state: { 'ticket' => { 'owner_id' => lauren.id }, 'article' => {} }, params: { 'ticket_id' => ticket3.id, 'shown' => true }, prio: 3, notify: false, active: false },
                   { user_id: lauren.id, last_contact: Time.zone.now - 10.minutes, key: "Ticket-#{ticket4.id}", callback: 'TicketZoom', state: { 'ticket' => { 'owner_id' => lauren.id }, 'article' => {} }, params: { 'ticket_id' => ticket4.id, 'shown' => true }, prio: 3, notify: false, active: false },
                   { user_id: lauren.id, last_contact: Time.zone.now - 10.minutes, key: "Ticket-#{ticket5.id}", callback: 'TicketZoom', state: { 'ticket' => { 'owner_id' => thomaslee.id }, 'article' => {} }, params: { 'ticket_id' => ticket5.id, 'shown' => true }, prio: 2, notify: true, active: true },
+                  { user_id: lauren.id, last_contact: Time.zone.now - 10.minutes, key: "Ticket-#{ticket8.id}", callback: 'TicketZoom', state: { 'ticket' => { 'owner_id' => emilywilson.id }, 'article' => {} }, params: { 'ticket_id' => ticket8.id, 'shown' => true }, prio: 2, notify: true, active: true },
                  ])
 
 # Product logo
@@ -667,6 +873,10 @@ SeedHelpers.set_setting_without_validation(name: 'ai_provider', value: 'zammad_a
 SeedHelpers.set_setting_without_validation(name: 'ai_provider_config', value: { 'token' => 'foobar' }) # just a fake token to trigger the feature
 Setting.set('ai_assistance_ticket_summary', true)
 Setting.set('ai_assistance_text_tools', true)
+
+# Enable ticket duplicate detection feature with 'customer_id' as the attribute to check for duplicates.
+SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection', value: true)
+SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection_attributes', value: ['customer_id'])
 
 # Disable import mode at the end of the seeding process so users can create new tickets.
 Setting.set('import_mode', false)

@@ -24,6 +24,6 @@ module SeedHelpers
     setting = Setting.find_by(name:)
     setting.state_current = { 'value' => value }
     setting.save!(validate: false)
-    Rails.logger.info("Setting.set('#{name}', #{value}")
+    Rails.logger.info("Setting.set('#{name}', #{value})")
   end
 end
