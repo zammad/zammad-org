@@ -261,11 +261,11 @@ describe('usage advanced features', () => {
     cy.visit('/desktop/tickets/create')
     cy.get('main').should('exist')
     cy.wait(2000)
-    cy.get('[name="customer_id"]').click().type('Nicole Braun').wait(1000).type('{downArrow}{enter}')
+    cy.get('[name="customer_id"]').click().type('Petra Parker').wait(1000).type('{downArrow}{enter}')
     cy.wait(500) // to ensure warning is present
     // unusual padding because otherwise it looked off due to being not centered
     cy.get('h1').contains('New ticket').clip({ padding: 0 }).then((TopClip) => {
-      cy.get('[aria-label="Nicole Braun"]').clip({ padding: 24 }).then((BottomClip) => {
+      cy.get('[aria-label="Petra Parker"]').clip({ padding: 24 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('duplicate-detection', { clip })
         })
