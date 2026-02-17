@@ -8,7 +8,7 @@ features:
   - 
     details: 'Erfahren Sie, wie Sie Zammad konfigurieren und mit anderen Systemen verbinden können.'
     icon: 🧑‍🔧
-    link: /de/documentation/manage-zammad/general
+    link: /en/documentation/manage-zammad/start
     title: 'Administrator Dokumentation'
   - 
     details: 'Erfahren Sie mehr über wichtige Begriffe und Konzepte in Zammad.'

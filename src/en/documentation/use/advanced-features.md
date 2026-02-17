@@ -316,6 +316,26 @@ you can choose between different link types:
 - **Parent/Child**: for related tickets where one is the main issue and the other is a subtask. This link type is used
   by default if a tickets gets split or merged.
 
+## Duplicate Detection
+
+![Screenshot shows duplicate ticket warning during ticket creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+
+**Why?**
+
+Sometimes, it happens that a customer reaches out to you (or colleagues) more than once about a single issue. To avoid
+creating duplicate tickets, Zammad can warn you when another ticket is already present. This feature has to be activated
+and configured by your admin.
+
+**How?**
+
+Just create a new ticket and provide some information. Your admin can configure which ticket attributes must match for
+the warning to show up (e.g. customer and title). In case of many unnecessary warnings or no warning at all, ask your
+admin to adjust the attributes to compare.
+
+When a duplicate is detected, a warning in the ticket shows up (see the example in screenshot above). This warning can
+contain a ticket number. Click on the ticket link to see what it is about. In case it is no duplicate, simply ignore it
+and continue with the ticket creation.
+
 ## Time Accounting
 
 **Why?**

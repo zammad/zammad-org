@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-16 15:24+0100\n"
+"POT-Creation-Date: 2026-02-17 10:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1531,9 +1531,9 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
+#: src/en/documentation/introduction.md:1
 #, no-wrap
-msgid "/en/documentation/manage-zammad/general"
+msgid "/en/documentation/manage-zammad/start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title
@@ -1672,11 +1672,12 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:263
 #: src/en/documentation/use/advanced-features.md:288
 #: src/en/documentation/use/advanced-features.md:305
-#: src/en/documentation/use/advanced-features.md:322
-#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:342
 #: src/en/documentation/use/advanced-features.md:371
 #: src/en/documentation/use/advanced-features.md:391
-#: src/en/documentation/use/advanced-features.md:409
+#: src/en/documentation/use/advanced-features.md:411
+#: src/en/documentation/use/advanced-features.md:429
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1705,11 +1706,12 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:271
 #: src/en/documentation/use/advanced-features.md:293
 #: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:328
-#: src/en/documentation/use/advanced-features.md:356
-#: src/en/documentation/use/advanced-features.md:382
+#: src/en/documentation/use/advanced-features.md:330
+#: src/en/documentation/use/advanced-features.md:348
+#: src/en/documentation/use/advanced-features.md:376
 #: src/en/documentation/use/advanced-features.md:402
-#: src/en/documentation/use/advanced-features.md:415
+#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:435
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2529,8 +2531,52 @@ msgid ""
 "split or merged."
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: src/en/documentation/use/advanced-features.md:319
+#, markdown-text, no-wrap
+msgid "Duplicate Detection"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:322
+#, markdown-text
+msgid ""
+"![Screenshot shows duplicate ticket warning during ticket "
+"creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:328
+#, markdown-text
+msgid ""
+"Sometimes, it happens that a customer reaches out to you (or colleagues) "
+"more than once about a single issue. To avoid creating duplicate tickets, "
+"Zammad can warn you when another ticket is already present. This feature has "
+"to be activated and configured by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:334
+#, markdown-text
+msgid ""
+"Just create a new ticket and provide some information. Your admin can "
+"configure which ticket attributes must match for the warning to show up "
+"(e.g. customer and title). In case of many unnecessary warnings or no "
+"warning at all, ask your admin to adjust the attributes to compare."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:338
+#, markdown-text
+msgid ""
+"When a duplicate is detected, a warning in the ticket shows up (see the "
+"example in screenshot above). This warning can contain a ticket "
+"number. Click on the ticket link to see what it is about. In case it is no "
+"duplicate, simply ignore it and continue with the ticket creation."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/advanced-features.md:339
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, markdown-text, no-wrap
@@ -2538,7 +2584,7 @@ msgid "Time Accounting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:326
+#: src/en/documentation/use/advanced-features.md:346
 #, markdown-text
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
@@ -2548,7 +2594,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:330
+#: src/en/documentation/use/advanced-features.md:350
 #, markdown-text
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
@@ -2556,7 +2602,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:332
+#: src/en/documentation/use/advanced-features.md:352
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2564,7 +2610,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:355
 #, markdown-text
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
@@ -2573,7 +2619,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:338
+#: src/en/documentation/use/advanced-features.md:358
 #, markdown-text
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
@@ -2583,7 +2629,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:341
+#: src/en/documentation/use/advanced-features.md:361
 #, markdown-text
 msgid ""
 "Activity types can be used to distinguish between different activities and "
@@ -2593,7 +2639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:345
+#: src/en/documentation/use/advanced-features.md:365
 #, markdown-text
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
@@ -2603,7 +2649,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:367
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2611,13 +2657,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:348
+#: src/en/documentation/use/advanced-features.md:368
 #, markdown-text, no-wrap
 msgid "User Detail Panel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:354
+#: src/en/documentation/use/advanced-features.md:374
 #, markdown-text
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
@@ -2625,7 +2671,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:360
+#: src/en/documentation/use/advanced-features.md:380
 #, markdown-text
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
@@ -2635,7 +2681,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:362
+#: src/en/documentation/use/advanced-features.md:382
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
@@ -2643,7 +2689,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:365
+#: src/en/documentation/use/advanced-features.md:385
 #, markdown-text
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
@@ -2651,13 +2697,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:366
+#: src/en/documentation/use/advanced-features.md:386
 #, markdown-text, no-wrap
 msgid "User Detail Page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:369
+#: src/en/documentation/use/advanced-features.md:389
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
@@ -2665,7 +2711,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:373
+#: src/en/documentation/use/advanced-features.md:393
 #, markdown-text
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
@@ -2673,45 +2719,45 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 #, markdown-text
 msgid "See organization membership"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 #, markdown-text
 msgid "See a graph of recent tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
 #: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "Add or edit a note"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 #, markdown-text
 msgid "Edit the customer (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
 #: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "See a history of changes (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:380
+#: src/en/documentation/use/advanced-features.md:400
 #, markdown-text
 msgid "Create a new ticket with this user as customer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:385
+#: src/en/documentation/use/advanced-features.md:405
 #, markdown-text
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
@@ -2721,13 +2767,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:386
+#: src/en/documentation/use/advanced-features.md:406
 #, markdown-text, no-wrap
 msgid "Organization Detail Page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:389
+#: src/en/documentation/use/advanced-features.md:409
 #, markdown-text
 msgid ""
 "![Screenshot shows organization detail "
@@ -2735,7 +2781,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:393
+#: src/en/documentation/use/advanced-features.md:413
 #, markdown-text
 msgid ""
 "It allows you to see all relevant organization information in one "
@@ -2743,31 +2789,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "See the members of the organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "Edit the organization (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid "Create a new user as a member of this organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:425
 #, markdown-text
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
@@ -2776,13 +2822,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:406
+#: src/en/documentation/use/advanced-features.md:426
 #, markdown-text, no-wrap
 msgid "External Issues and Assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:413
+#: src/en/documentation/use/advanced-features.md:433
 #, markdown-text
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
@@ -2792,7 +2838,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:417
+#: src/en/documentation/use/advanced-features.md:437
 #, markdown-text
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" "
@@ -2800,7 +2846,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:421
+#: src/en/documentation/use/advanced-features.md:441
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
@@ -6746,6 +6792,12 @@ msgstr ""
 #: src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "As an administrator, head over to the Manage Zammad section."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "/en/documentation/manage-zammad/general"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title

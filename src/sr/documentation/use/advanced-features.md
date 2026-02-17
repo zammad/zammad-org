@@ -387,6 +387,30 @@ case if a customer has a technical question and wants to place an order.
   је задатак. Ова врста везе се подразумевано користи приликом раздељивања
   или спајања тикета.
 
+## Duplicate Detection
+
+![Screenshot shows duplicate ticket warning during ticket
+creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+
+**Зашто?**
+
+Sometimes, it happens that a customer reaches out to you (or colleagues)
+more than once about a single issue. To avoid creating duplicate tickets,
+Zammad can warn you when another ticket is already present. This feature has
+to be activated and configured by your admin.
+
+**Како?**
+
+Just create a new ticket and provide some information. Your admin can
+configure which ticket attributes must match for the warning to show up
+(e.g. customer and title). In case of many unnecessary warnings or no
+warning at all, ask your admin to adjust the attributes to compare.
+
+When a duplicate is detected, a warning in the ticket shows up (see the
+example in screenshot above). This warning can contain a ticket
+number. Click on the ticket link to see what it is about. In case it is no
+duplicate, simply ignore it and continue with the ticket creation.
+
 ## Обрачун времена
 
 **Зашто?**
