@@ -13,7 +13,7 @@ features:
   - icon: 🧑‍🔧
     title: Administrator
     details: As an administrator, head over to the Manage Zammad section.
-    link: /en/documentation/manage-zammad/general
+    link: /en/documentation/manage-zammad/start
 ---
 
 # Welcome

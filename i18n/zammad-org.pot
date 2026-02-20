@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-17 10:36+0100\n"
+"POT-Creation-Date: 2026-02-19 13:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1531,7 +1531,7 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1
+#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "/en/documentation/manage-zammad/start"
 msgstr ""
@@ -6794,12 +6794,6 @@ msgstr ""
 msgid "As an administrator, head over to the Manage Zammad section."
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/start.md:1
-#, no-wrap
-msgid "/en/documentation/manage-zammad/general"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/use/start.md:1
 #, no-wrap
@@ -7209,6 +7203,119 @@ msgstr ""
 #: src/en/get-started/index.md:1
 #, no-wrap
 msgid "Get Started"
+msgstr ""
+
+#. type: Title #
+#: src/en/get-started/installation/agentic-installation.md:1
+#: src/en/get-started/installation/agentic-installation.md:6
+#, markdown-text, no-wrap
+msgid "Agentic Installation"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/get-started/installation/agentic-installation.md:8
+#, no-wrap
+msgid ""
+"Be aware that the setup steps for AI agents don't cover security, network "
+"and configuration topics (e.g. SSL\n"
+"certificates, hostname configuration, Elasticsearch settings). Instead, "
+"these steps are about a plain basic setup of\n"
+"Zammad. To use it in production, make sure to configure it in a proper way "
+"according to the other ressources in this\n"
+"documentation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/agentic-installation.md:17
+#, markdown-text
+msgid ""
+"If you want to install Zammad via LLM agent, do so by pointing your agent to "
+"one of the installation instruction files you can find below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/agentic-installation.md:18
+#, markdown-text, no-wrap
+msgid "Installation via Docker Compose"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/agentic-installation.md:22
+#, markdown-text
+msgid ""
+"This file covers an installation via Docker Compose by fetching the default "
+"[Docker Compose repository](https://github.com/zammad/zammad-docker-compose) "
+"of Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/agentic-installation.md:24
+#: src/en/get-started/installation/agentic-installation.md:39
+#, markdown-text
+msgid "Prerequisites:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/agentic-installation.md:27
+#, markdown-text
+msgid "Running Docker Compose setup"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/agentic-installation.md:27
+#, markdown-text
+msgid "Installed Git"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/agentic-installation.md:29
+#: src/en/get-started/installation/agentic-installation.md:45
+#, markdown-text
+msgid "Instruction file:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/get-started/installation/agentic-installation.md:30
+#, no-wrap
+msgid "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/agentic-installation.md:34
+#, markdown-text, no-wrap
+msgid "Installation via Package Manager"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/agentic-installation.md:37
+#, markdown-text
+msgid ""
+"This file covers an installation via package manager, including "
+"Elasticsearch."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/agentic-installation.md:43
+#, markdown-text
+msgid "Host operating system: Ubuntu (22.04 or 24.04) or Debian (12 or 13)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/agentic-installation.md:43
+#, markdown-text
+msgid "Installed curl, apt-transport-https and gnupg."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/agentic-installation.md:43
+#, markdown-text
+msgid "A locale with UTF-8 support."
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/get-started/installation/agentic-installation.md:46
+#, no-wrap
+msgid "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
