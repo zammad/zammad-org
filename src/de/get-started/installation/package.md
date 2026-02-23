@@ -173,11 +173,11 @@ dies bei der Durchführung der folgenden Schritte berücksichtigen.
 ::::tabs key:distros
 
 === Ubuntu
-Repository-Schlüssel hinzufügen:
+Install repository key:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \
 && sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
 ```
 
@@ -210,37 +210,37 @@ Ab Debian 13 werden die Pakete unter einer anderen URL gehostet und der Signing-
 Verzeichnis gespeichert.
 :::
 
-Repository-Key hinzufügen (Debian 11 & 12):
+Install Repository Key (Debian 11 & 12):
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \
-&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
+gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \
+&& sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 ```
 
-Repository-Key hinzufügen (Debian 13):
+Install Repository Key (Debian 13):
 
 ```sh
 curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
-gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null \
-&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
+gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \
+&& sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Repository hinzufügen (Debian 11):
+Add Repository (Debian 11)
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
 sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Repository hinzufügen (Debian 12):
+Add Repository (Debian 12)
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
 sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Repository hinzufügen (Debian 13):
+Add Repository (Debian 13)
 
 ```sh
 curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \
@@ -248,7 +248,7 @@ curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.l
 ```
 
 === OpenSUSE/SLES
-Repository-Key hinzufügen:
+Install repository key:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -262,7 +262,7 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Repository-Key hinzufügen:
+Install repository key:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
