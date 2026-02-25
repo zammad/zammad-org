@@ -13,8 +13,8 @@ importers:
         version: 13.17.0
     devDependencies:
       '@mdit/plugin-icon':
-        specifier: ^0.23.0
-        version: 0.23.1(markdown-it@14.1.0)
+        specifier: ^0.24.0
+        version: 0.24.0(markdown-it@14.1.0)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -331,17 +331,18 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.4':
     resolution: {integrity: sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw==}
 
-  '@mdit/helper@0.22.2':
-    resolution: {integrity: sha512-i0mmN0S/BwR7zAKs9TnT9knmMVq3WGDJ3wO9PiETs0vUAwtcXIq5J0k8GAtGgKKTb7WTQuc19yt8uVQGVYfr2Q==}
-    engines: {node: '>= 18'}
+  '@mdit/helper@0.23.0':
+    resolution: {integrity: sha512-+bVlBaddNeX3PDUYH2GbMFjr5pb9PVglF4GpjHp06a0INyFuHm1ktOvwpaqd/5pdav+KR/7+rN6ApOVePSJhEw==}
+    engines: {node: '>= 20'}
     peerDependencies:
       markdown-it: ^14.1.0
     peerDependenciesMeta:
       markdown-it:
         optional: true
 
-  '@mdit/plugin-icon@0.23.1':
-    resolution: {integrity: sha512-jR1Y9iuOw6ZKuq7kogjns5DWqUcuwWpl00O6ssWs0QytxOWdmwfLJsBrnRgK5lYGH1I+0TfE6igVOfs/J3J94Q==}
+  '@mdit/plugin-icon@0.24.0':
+    resolution: {integrity: sha512-hVV/cbkMBdlRgURuJhMPQk4rlvuUO2V7qEGX1PyJypl4r22biwZ/Ijlsekzcp7dcWJ+VBkF+aVRRK6T59LgPnw==}
+    engines: {node: '>= 20'}
     peerDependencies:
       markdown-it: ^14.1.0
     peerDependenciesMeta:
@@ -1019,6 +1020,7 @@ packages:
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   global-dirs@3.0.1:
@@ -2039,15 +2041,15 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.4': {}
 
-  '@mdit/helper@0.22.2(markdown-it@14.1.0)':
+  '@mdit/helper@0.23.0(markdown-it@14.1.0)':
     dependencies:
       '@types/markdown-it': 14.1.2
     optionalDependencies:
       markdown-it: 14.1.0
 
-  '@mdit/plugin-icon@0.23.1(markdown-it@14.1.0)':
+  '@mdit/plugin-icon@0.24.0(markdown-it@14.1.0)':
     dependencies:
-      '@mdit/helper': 0.22.2(markdown-it@14.1.0)
+      '@mdit/helper': 0.23.0(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
     optionalDependencies:
       markdown-it: 14.1.0
