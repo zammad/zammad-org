@@ -44,7 +44,7 @@ Erforderliche Berechtigung: `admin.object`
 `POST`-Anfrage gesendet: `/api/v1/ticket_states`
 
 ::: info
-Der nachstehende Payload verwendet `state_type_id`, ein Instanz-spezifischer
+Die nachstehende Nutzlast verwendet `state_type_id`, ein Instanz-spezifischer
 Satz von IDs. Die Statustypen geben an, wie der Status funktionieren wird.
 
 Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die

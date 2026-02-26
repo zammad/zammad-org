@@ -1,73 +1,85 @@
 ---
 order: 4
-title: 'Create Tickets'
+title: 'Tickets erstellen'
 ---
 
-# Create Tickets
+# Tickets erstellen
 
-When a customer messages you over a channel which is fetched by Zammad, a
-ticket is created automatically (unless Zammad recognizes it as a follow-up,
-then it gets added as an article to an existing ticket). However, there
-might be cases where you need to create a ticket manually. Examples:
+Wenn ein Kunde Ihnen eine Nachricht über einen Kanal sendet, der von Zammad
+abgerufen wird, wird automatisch ein Ticket erstellt (es sei denn, Zammad
+erkennt es als Nachfrage, dann wird es als Artikel zu einem bestehenden
+Ticket hinzugefügt). Es kann jedoch Fälle geben, in denen Sie ein Ticket
+manuell erstellen müssen. Beispiele:
 
-- A customer calls you by phone.
-- You receive a paper letter from a customer.
-- A customer comes to a physical service desk.
-- You proactively have to inform a customer by sending out a message.
+- Ein Kunde ruft Sie per Telefon an.
+- Sie erhalten einen Brief in Papierform von einem Kunden.
+- Ein Kunde kommt zu einem physischen Serviceschalter.
+- Sie müssen einen Kunden proaktiv informieren, indem Sie ihm eine Nachricht
+  schicken.
 
-In situations like these, you need to create a new ticket manually and click
-the ::+:: button at the bottom of the navigation bar. This shows a ticket
-create screen where you can add all needed information.
+In solchen Fällen müssen Sie manuell ein neues Ticket erstellen, indem Sie
+auf die Schaltfläche ::+:: am unteren Rand der Navigationsleiste
+klicken. Daraufhin wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie
+alle erforderlichen Informationen hinzufügen können.
 
-![Screenshot shows ticket create
-screen](/screenshots/cypress/usage-basics.cy.js/ticket-create.png)
+![Screenshot zeigt den
+Ticket-Erstellungsdialog](/screenshots/cypress/usage-basics.cy.js/ticket-create.png)
 
-## Type Selector
+## Typauswahl
 
-In the ticket create dialog, you can choose from different article types:
+Im Ticket-Erstellungsdialog können Sie zwischen verschiedenen Artikeltypen
+wählen:
 
-- Received call: for issues initiated by a customer over the phone.
-- Outbound call: for issues initiated by an agent over the phone.
-- Send email: for issues initiated by an agent over email.
+- Eingehender Anruf: für Probleme, die von einem Kunden per Telefon gemeldet
+  wurden.
+- Ausgehender Anruf: für Probleme, die initial von einem Agenten per Telefon
+  gemeldet werden.
+- E-Mail versenden: für Probleme, die initial von einem Agenten per E-Mail
+  gemeldet werden.
 
-When choosing **Send Email**, the customer receives an email with the title
-as subject and the text as email content.
+Wenn Sie **E-Mail versenden** wählen, erhält der Kunde eine E-Mail mit dem
+Titel als Betreff und dem Text als E-Mail-Inhalt.
 
-## Title
+## Titel
 
-This is the title of a ticket which is shown in many places in Zammad. For
-example, this gets displayed in overviews.  It is also used as the subject
-for email communication. For emails, a ticket identifier is automatically
-appended (e.g. `Ticket#901234 - I need help!`).
+Dies ist der Titel eines Tickets, der an vielen Stellen in Zammad angezeigt
+wird, zum Beispiel in Übersichten. Er wird auch als Betreff für die
+Kommunikation per E-Mail verwendet. Bei E-Mails wird automatisch eine
+Ticket-Identifikation angehängt (z.B. `Ticket#901234 - Ich brauche Hilfe!`).
 
-## Customer
+## Kunde
 
-Enter a name or email address of a customer to search for existing
-accounts. You can even search for organizations and their members. Select an
-option from the dropdown menu or create a new customer by clicking the **+
-Create new Customer** button on the right side of the field. This opens a
-dialog where you can provide all relevant information of the customer. A
-ticket can only have one customer.
+Geben Sie einen Namen oder die E-Mail-Adresse eines Kunden ein, um nach
+bestehenden Benutzern zu suchen. Sie können auch nach Organisationen und
+deren Mitgliedern suchen. Wählen Sie eine Option aus dem Dropdown-Menü oder
+legen Sie einen neuen Kunden an, indem Sie auf die Schaltfläche **+ Neuen
+Kunden erstellen** rechtes des Feldes klicken. Daraufhin öffnet sich ein
+Dialog, in dem Sie alle relevanten Informationen zum Kunden eingeben
+können. Ein Ticket kann nur einen Kunden haben.
 
-After setting a customer in the ticket create dialog, the customer sidebar
-automatically opens. You can see additional customer meta information
-including a hint about the currently opened tickets of the customer.
+Nach dem hinzufügen eines Kunden während der Ticketerstellung öffnet sich
+automatisch die Kunden-Seitenleiste. Hier sehen Sie zusätzliche
+Kunden-Meta-Informationen, einschließlich eines Hinweises auf die aktuell
+geöffneten Tickets des Kunden.
 
 ## Text
 
-This is the content section where the currently known details of the issue
-gets written down. For the "Send Email" type, this is the content/message of
-the email. To learn more about the editor and its features, check the
-[editor documentation](/en/documentation/use/guides/editor).
+Dies ist der Inhaltsbereich, in dem die derzeit bekannten Details des
+Sachverhalts festgehalten werden. Beim Typ "E-Mail versenden" ist dies der
+Inhalt/die Nachricht der E-Mail. Um mehr über den Editor und seine
+Funktionen zu erfahren, lesen Sie die
+[Editor-Dokumentation](/de/documentation/use/guides/editor).
 
-## Ticket Attributes
+## Ticket Attribute
 
-As you may know, there are additional ticket attributes such as group,
-priority and owner that you can set. If you haven't read the [ticket
-basics](ticket-basics) yet, check it out to learn more.
+Wie Sie vielleicht wissen, gibt es zusätzliche Ticket-Attribute wie Gruppe,
+Priorität und Besitzer, die Sie einstellen können. Falls Sie die
+[Ticket-Grundlagen](ticket-basics) noch nicht gelesen haben, lesen Sie dort
+weiter, um mehr zu erfahren.
 
 -----
 
-After you provided the relevant information, finally create the ticket with
-a click on the **Create** button. Read on how to [find
-tickets](find-tickets) and [how to work with them](work-with-tickets).
+Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie
+schließlich das Ticket mit einem Klick auf die Schaltfläche
+**Erstellen**. Lesen Sie, wie man [Tickets findet](find-tickets) und [wie
+man mit Tickets arbeitet](work-with-tickets).

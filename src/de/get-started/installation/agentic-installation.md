@@ -1,49 +1,50 @@
 ---
 order: 5
-title: 'Agentic Installation'
+title: 'Installation durch Agent'
 ---
 
-# Agentic Installation
+# Installation durch Agent
 
 ::: danger
-Be aware that the setup steps for AI agents don't cover security, network and configuration topics (e.g. SSL
-certificates, hostname configuration, Elasticsearch settings). Instead, these steps are about a plain basic setup of
-Zammad. To use it in production, make sure to configure it in a proper way according to the other ressources in this
-documentation.
+Beachten Sie, dass die Einrichtungsschritte für KI-Agenten keine Sicherheits-, Netzwerk- und Konfigurationsthemen abdecken (z.B. SSL-Zertifikate,
+Hostnamen-Konfiguration, Elasticsearch-Einstellungen). Stattdessen geht es in diesen Schritten um eine einfache Grundeinrichtung von
+Zammad. Um es in der Produktion zu verwenden, stellen Sie sicher, dass Sie es in Übereinstimmung mit den anderen Ressourcen in dieser
+Dokumentation konfigurieren.
 :::
 
-If you want to install Zammad via LLM agent, do so by pointing your agent to
-one of the installation instruction files you can find below.
+Wenn Sie Zammad durch einen LLM-Agenten installieren lassen möchten,
+verweisen Sie Ihren Agenten auf eine der Installationsanweisungen, die Sie
+unten finden.
 
 ## Installation via Docker Compose
 
-This file covers an installation via Docker Compose by fetching the default
-[Docker Compose repository](https://github.com/zammad/zammad-docker-compose)
-of Zammad.
+Diese Datei deckt eine Installation per Docker Compose ab, bei der [Zammads
+Standard Docker Compose
+Repository](https://github.com/zammad/zammad-docker-compose) abgerufen wird.
 
-Prerequisites:
+Voraussetzungen:
 
-- Running Docker Compose setup
-- Installed Git
+- Laufende Docker Compose-Umgebung
+- Installiertes Git
 
-Instruction file:
+Anleitungsdatei:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
 ```
 
-## Installation via Package Manager
+## Installation via Paketmanager
 
-This file covers an installation via package manager, including
-Elasticsearch.
+Diese Datei umfasst eine Installation von Zammad einschließlich
+Elasticsearch über den Paketmanager.
 
-Prerequisites:
+Voraussetzungen:
 
-- Host operating system: Ubuntu (22.04 or 24.04) or Debian (12 or 13).
-- Installed curl, apt-transport-https and gnupg.
-- A locale with UTF-8 support.
+- Host-Betriebssystem: Ubuntu (22.04 oder 24.04) oder Debian (12 oder 13).
+- Installiertes curl, apt-transport-https und gnupg.
+- Eine Sprache mit UTF-8-Unterstützung.
 
-Instruction file:
+Anleitungsdatei:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md

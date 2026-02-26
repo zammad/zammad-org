@@ -176,7 +176,7 @@ Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.
 ::::
 
 ::::info
-Bitte beachten Sie, dass sich die oben genannten Payloads auf Ticket-Objekte beziehen. Dies ist in
+Bitte beachten Sie, dass sich die oben genannten Nutzlasten auf Ticket-Objekte beziehen. Dies ist in
 den meisten Situationen in Ordnung, außer wenn es um die Standardobjekt-Berechtigungen
 geht. Deshalb führen wir diese hier separat auf.
 
@@ -212,8 +212,8 @@ Das Attribut `object` steuert, welcher Kontext verwendet wird:
 
 Erforderliche Berechtigung: `admin.object`
 
-Abgesehen von der Request-Methode sind die Payloads zum Aktualisieren und
-Erstellen von Objekten identisch. Für vollständige Payload-Beispiele
+Abgesehen von der Request-Methode sind die Nutzlasten zum Aktualisieren und
+Erstellen von Objekten identisch. Für vollständige Nutzlast-Beispiele
 scrollen Sie also bis zu `create_object`.
 
 Zammad gibt während der Aktualisierung zwei Attribute zurück: `data_option`

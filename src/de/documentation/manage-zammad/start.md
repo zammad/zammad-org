@@ -3,7 +3,8 @@ order: 1
 title: Start
 ---
 
-# Welcome
+# Willkommen
 
-This part of the documentation is currently empty. It will be created step
-by step and simultaneously to the development of Zammad's new admin UI.
+Dieser Teil der Dokumentation ist derzeit noch leer. Er wird schrittweise
+und parallel zur Entwicklung von Zammads neuer Admin-Benutzeroberfläche
+erstellt.

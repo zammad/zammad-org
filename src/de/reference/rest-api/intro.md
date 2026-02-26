@@ -88,11 +88,11 @@ andere Informationen hinzugefügt haben.
 
 ## Inhalts-Typ
 
-Zammad gibt JSON-Payloads zurück, wenn Sie Daten abrufen. Wenn Sie Daten
+Zammad gibt JSON-Nutzlast zurück, wenn Sie Daten abrufen. Wenn Sie Daten
 bereitstellen, unabhängig vom allgemeinen Anfragetyp, vergessen Sie nicht,
 auch den Inhaltstyp `application/json` anzugeben.
 
-## Antwort-Payloads (erweitern)
+## Antwort-Nutzlast (erweitern)
 
 Zammad gibt immer Informationen einschließlich Hinweisen zu allen
 Beziehungen zurück. Wenn Sie mehr Informationen benötigen (weil IDs
@@ -103,7 +103,7 @@ Dieser Schalter liefert noch mehr Informationen - zumindest benannte
 Beziehungen zusätzlich zu den ID-Beziehungen. Nachfolgend finden Sie zwei
 Beispiele, eines für ein Ticket und eines für einen Benutzer:
 
-**User-Payload:**
+**Benutzer Nutzlast:**
 
 :::: details
 :::tabs
@@ -119,7 +119,7 @@ Beispiele, eines für ein Ticket und eines für einen Benutzer:
 :::
 ::::
 
-**Tickets-Payload:**
+**Ticket Nutzlast:**
 
 :::: details
 :::tabs
@@ -288,7 +288,7 @@ Dies führt zu einer Ausgabe wie der folgenden:
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 
-Verwenden Sie dies als Payload in Ihrem `POST`-Request in einer
+Verwenden Sie dies als Nutzlast in Ihrem `POST`-Request in einer
 Endpunktsuche. Die Antwort enthält die gleichen Objekte wie der Trigger oder
 die Übersicht, die Sie erstellt haben.
 

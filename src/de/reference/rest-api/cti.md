@@ -133,7 +133,7 @@ von externer Seite an Sie sind `in`.
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.json
 
@@ -150,7 +150,7 @@ Beispiel curl Befehl:
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req
 
@@ -173,7 +173,7 @@ Beispiel curl Befehl:
 
 === JSON
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.json
 
@@ -187,7 +187,7 @@ Beispiel curl Befehl:
 
 === Form-Daten
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req
 
@@ -234,7 +234,7 @@ klingelnder Anruf.
 #### Festlegen einer bestimmten ID für ausgehende Anrufe
 
 Falls Ihre Instanz eine passende, überschreibende Caller ID konfiguriert
-hat, wird Zammad folgende Payload zurückgeben.
+hat, wird Zammad folgende Nutzlast zurückgeben.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json
 
@@ -292,7 +292,7 @@ Es gibt zwei Möglichkeiten, wie Sie die relevanten Daten an Zammad "posten"
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.json
 
@@ -309,7 +309,7 @@ Beispiel curl Befehl:
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req
 
@@ -332,7 +332,7 @@ Beispiel curl Befehl:
 
 === JSON
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.json
 
@@ -346,11 +346,11 @@ Beispiel curl Befehl:
 
 === Form-Daten
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req
 
-Rückgabe:
+Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
@@ -411,7 +411,7 @@ Beispiel curl Befehl:
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.json
 
@@ -428,11 +428,11 @@ Beispiel curl Befehl:
 `POST`-Request gesendet:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req
 
-Rückgabe:
+Response:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
@@ -451,7 +451,7 @@ Beispiel curl Befehl:
 
 === JSON
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.json
 
@@ -465,7 +465,7 @@ Beispiel curl Befehl:
 
 === Form-Daten
 
-Payload:
+Nutzlast:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req
 

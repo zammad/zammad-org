@@ -3,7 +3,7 @@ features:
   - 
     details: 'Wenn Sie neu in Zammad und in der Ticket-Software im Allgemeinen sind, lesen Sie zunächst hier die Grundlagen.'
     icon: 🙋
-    link: /en/documentation/use/basics/zammad-ui
+    link: /de/documentation/use/basics/zammad-ui
     title: 'Zammad Anfänger'
   - 
     details: 'Wenn Sie bereits mit den Grundlagen vertraut sind, lesen Sie hier weiter oder springen Sie direkt zu dem entsprechenden Abschnitt in der Navigations-Seitenleiste.'
@@ -13,13 +13,13 @@ features:
   - 
     details: 'Schauen Sie sich als Administrator den Bereich "Zammad verwalten" an.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage-zammad/start
+    link: /de/documentation/manage-zammad/start
     title: Administrator
 order: 1
 title: Start
 ---
 
-# Welcome
+# Willkommen
 
 Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie
 Sie Zammad nutzen können, um noch besser mit Ihren Kollegen

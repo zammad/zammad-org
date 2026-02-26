@@ -162,7 +162,7 @@ There are even more icons which represent additional states of the other
 agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover
 with the mouse if you are unsure what it means.
 
-## Ticket Actions
+## Радње тикета
 
 Additional actions are available in the ::a:: menu in the ticket sidebar.
 

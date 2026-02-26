@@ -40,7 +40,7 @@ example, this gets displayed in overviews.  It is also used as the subject
 for email communication. For emails, a ticket identifier is automatically
 appended (e.g. `Ticket#901234 - I need help!`).
 
-## Customer
+## Клијент
 
 Enter a name or email address of a customer to search for existing
 accounts. You can even search for organizations and their members. Select an

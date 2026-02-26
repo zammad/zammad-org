@@ -52,8 +52,8 @@ ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen
 
 **Erwähnungen sofort hinzufügen**
 
-Fügen Sie das Attribut `mentions` zu Ihrem Ticket Payload hinzu und übermitteln Sie ein
-Array von Benutzer IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
+Fügen Sie das Attribut `mentions` zu Ihrer Ticket-Nutzlast hinzu und übermitteln Sie ein
+Array von Benutzer-IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
 
 _Z.B.:_ `"mentions": [1, 5, 7, 8],`
 
@@ -108,7 +108,7 @@ hat keine Auswirkungen auf bestehende Artikel.
 ::: tip
 **Anhänge hinzufügen**
 
-Der Payload von Anhängen ist identisch mit dem `POST`-Request, es wird stattdessen
+Die Nutzlast von Anhängen ist identisch mit dem `POST`-Request, es wird stattdessen
 lediglich `PUT` verwendet.
 :::
 

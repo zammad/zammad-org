@@ -209,8 +209,8 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   gekennzeichnet werden, sie spiegeln den Status des Tickets wider, auf das
   sie verweisen.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or
-  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
+  Rufen Sie die Ticket-Kennung ab, indem Sie zum gewünschten Ticket gehen und entweder die Kopierschaltfläche ::c:: in der Kopfzeile oder
+  das Tastaturkürzel [[.]] verwenden. Dann können Sie den Wert in der Checkliste einfügen, die auf das Ticket verweisen soll.
   :::
 - Zammad prüft automatisch, ob alle Elemente der Checkliste abgeschlossen
   sind. Die Prüfung wird durchgeführt, wenn Sie ein Ticket auf "geschlossen"
@@ -286,17 +286,19 @@ Eskalationsstufen und Fristen in einem Popup zu sehen. Es zeigt alle
 bevorstehenden oder überschrittenen Eskalationszeiten auf der Grundlage
 Ihrer SLA-Konfiguration an:
 
-![Screenshot shows escalation panel by hovering over escalation
-timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
+![Screenshot zeigt Eskalationsberereich nach Überfahren des Zeitstempels mit
+der
+Maus](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
 
 :::info
-The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
-ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.
+Die Eskalationszeiten werden auf der Grundlage Ihrer Geschäftszeiten berechnet. Das heißt, wenn Ihre Geschäftszeiten um 9:00 Uhr beginnen,
+ein Ticket um 7:00 Uhr erstellt wird und Sie eine Frist von 1 Stunde haben, eskaliert es um 10:00 Uhr, sofern es nicht früher gelöst wird.
 :::
 
-The SLA feature requires a configuration from your admin. In case you don’t
-see escalation timestamps, either the ticket is not SLA-relevant or the
-feature is not configured.
+Die SLA-Funktion erfordert eine Konfiguration durch Ihren
+Administrator. Wenn Sie keine Zeitstempel für die Eskalation sehen, ist
+entweder das Ticket nicht SLA-relevant oder die Funktion ist nicht
+konfiguriert.
 
 ## Mehrfach-Aktionen
 
@@ -422,29 +424,33 @@ können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
   standardmäßig verwendet, wenn ein Ticket geteilt oder zusammengefasst
   wird.
 
-## Duplicate Detection
+## Duplikaterkennung
 
-![Screenshot shows duplicate ticket warning during ticket
-creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+![Screenshot zeigt Warnung der Duplikaterkennung bei der
+Ticketerstellung](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
 
 **Warum?**
 
-Sometimes, it happens that a customer reaches out to you (or colleagues)
-more than once about a single issue. To avoid creating duplicate tickets,
-Zammad can warn you when another ticket is already present. This feature has
-to be activated and configured by your admin.
+Manchmal kommt es vor, dass ein Kunde Sie (oder Kollegen) mehr als einmal
+wegen eines einzigen Problems kontaktiert. Um die Erstellung doppelter
+Tickets zu vermeiden, kann Zammad Sie warnen, wenn bereits ein anderes
+Ticket vorhanden ist. Diese Funktion muss von Ihrem Administrator aktiviert
+und konfiguriert werden.
 
 **Wie?**
 
-Just create a new ticket and provide some information. Your admin can
-configure which ticket attributes must match for the warning to show up
-(e.g. customer and title). In case of many unnecessary warnings or no
-warning at all, ask your admin to adjust the attributes to compare.
+Erstellen Sie einfach ein neues Ticket und geben Sie einige Informationen
+an. Ihr Administrator kann konfigurieren, welche Ticket-Attribute
+übereinstimmen müssen, damit die Warnung angezeigt wird (z.B. Kunde und
+Titel). Falls Sie viele unnötige Warnungen oder gar keine Warnung erhalten,
+bitten Sie Ihren Administrator, die zu berücksichtigenden Attribute
+anzupassen.
 
-When a duplicate is detected, a warning in the ticket shows up (see the
-example in screenshot above). This warning can contain a ticket
-number. Click on the ticket link to see what it is about. In case it is no
-duplicate, simply ignore it and continue with the ticket creation.
+Wenn ein Duplikat erkannt wird, wird eine Warnung im Ticket angezeigt (siehe
+Beispiel im Screenshot oben). Diese Warnung kann eine Ticket-Nummer
+enthalten. Klicken Sie auf den Link zum Ticket, um zu sehen, worum es sich
+handelt. Falls es sich nicht um ein Duplikat handelt, ignorieren Sie es
+einfach und fahren Sie mit der Erstellung des Tickets fort.
 
 ## Zeiterfassung
 

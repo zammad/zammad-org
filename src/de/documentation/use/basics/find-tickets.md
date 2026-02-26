@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Find Tickets'
+title: 'Tickets finden'
 ---
 
-# Find Tickets
+# Tickets finden
 
 Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig von Ihrem
 Anwendungsfall.
@@ -16,11 +16,11 @@ Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen
 oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine
 Art von Ticket-Listen betrachten.
 
-By default, there are some built-in overviews you can use. For example,
-there is an overview called "Open Tickets".  This might be a good starting
-point. Your Zammad admin may have created additional overviews. These are
-based on conditions, which are basically rules, to define which ticket
-appears in which overview.
+Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
+können, zum Beispiel "Offene Tickets". Das könnte ein guter Startpunkt
+sein. Ihr Zammad-Administrator hat möglicherweise zusätzliche Übersichten
+erstellt. Diese basieren auf Bedingungen/Regeln, um festzulegen, welches
+Ticket in welcher Übersicht erscheint.
 
 Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 Übersichten](/de/documentation/use/guides/overviews).
@@ -35,27 +35,29 @@ entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]].
 Nachdem Sie das Suchfeld aktiviert haben sehen Sie die kürzlich in der
 Taskleiste geschlossenen Tickets sowie Ihre letzten Suchanfragen.
 
-By entering a search term, you immediately see a preview of the search
-results. If you press [[enter]] or click on `detailed search`, Zammad
-displays a page with search results. There you can differentiate by object
-type (e.g.  user), what you are searching.
+Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der
+Suchergebnisse. Wenn Sie [[enter]] drücken oder auf `Erweiterte Suche`
+klicken, zeigt Zammad eine Seite mit Suchergebnissen an. Dort können Sie die
+Suche auf einen Objekttyp (z.B. Benutzer) eingrenzen.
 
-Have a look at the [search guide](/en/documentation/use/guides/search) for
-more details.
+Weitere Einzelheiten finden Sie in der [Anleitung zur
+Suche](/de/documentation/use/guides/search).
 
 ## Benachrichtigungen
 
-Depending on the [notification
-settings](/en/documentation/use/manage-profile#notifications) in your
-profile, you receive updates for different ticket based events like the
-creation or the update of a ticket. This ensures that no important change to
-a ticket gets overlooked.
+Abhängig von den
+[Benachrichtigungseinstellungen](/de/documentation/use/manage-profile#benachrichtigungen)
+in Ihrem Profil erhalten Sie Benachrichtigungen für verschiedene
+Ticket-Aktualisierungen wie die Erstellung oder die Aktualisierung eines
+Tickets. So wird sichergestellt, dass Sie keine wichtige Änderung an einem
+Ticket übersehen.
 
 Sie können sie öffnen, indem Sie auf den Benachrichtigungszähler in der
 oberen linken Ecke klicken. Wenn ein Label mit einem Zähler vorhanden ist,
 zeigt der Zähler die Anzahl der ungelesenen Benachrichtigungen an.
 
-By default, you get notified when one of your tickets (means you are the
-owner) got updated. By clicking on the link in the notification, this ticket
-gets opened in the navigation sidebar as a tab and the ticket detail view is
-displayed.
+Standardmäßig werden Sie benachrichtigt, wenn eines Ihrer Tickets (das
+heißt, Sie sind der Besitzer) aktualisiert wurde. Wenn Sie auf den Link in
+der Benachrichtigung klicken, wird dieses Ticket in der
+Navigations-Seitenleiste als Tab geöffnet und die Ticket-Detailansicht wird
+angezeigt.

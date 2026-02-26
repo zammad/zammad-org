@@ -132,8 +132,8 @@ Achten Sie darauf, die Ausgabe zu überprüfen und das Passwort des Superusers z
 
 ## Konfiguration
 
-Optionally, check and configure Elasticsearch’s configuration file which you
-can find under `/etc/elasticsearch/elasticsearch.yml`.
+Optional können Sie die Konfigurationsdatei von Elasticsearch anpassen, die
+Sie unter `/etc/elasticsearch/elasticsearch.yml` finden.
 
 Wir empfehlen, die maximale Kontextgröße, die von Elasticsearch indiziert
 werden soll, anzupassen. Passen Sie den Wert auf eine vernünftige Größe wie

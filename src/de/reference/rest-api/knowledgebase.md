@@ -397,7 +397,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 
 Anhang hinzufügen:
 
-`POST`-Request mit Payload gesendet: `/api/v1/knowledge_bases/{ID of your
+`POST`-Request mit Nutzlast gesendet: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}/attachments`
 
 ::: details

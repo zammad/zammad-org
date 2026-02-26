@@ -80,7 +80,7 @@ details.
 ![Screenshot shows different color-coded
 states](/screenshots/overviews/states.png)
 
-### Priority
+### Приоритет
 
 A ticket's priority is simply a ranking (from 1 to 3) of how urgent or
 important it is. The three default priorities are:
@@ -133,7 +133,7 @@ changing the group and saving the changes. In case you can't see the group
 field, either there is only one group in your Zammad system or you don't
 have the permission to create a ticket in other groups.
 
-### Owner
+### Власник
 
 This is the person who is currently responsible for the ticket. In case you
 need information from another colleague, you can either change the owner to
