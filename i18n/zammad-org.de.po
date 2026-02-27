@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-27 09:54+0100\n"
-"PO-Revision-Date: 2026-02-27 09:52+0000\n"
+"POT-Creation-Date: 2026-02-27 09:53+0000\n"
+"PO-Revision-Date: 2026-02-27 11:08+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -247,6 +247,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -2487,14 +2499,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:212
-#, fuzzy
-#| msgid ""
-#| "Zammad notifies you by default when tickets approach or exceed their "
-#| "deadlines. Configure these notifications in your [profile settings](/en/"
-#| "documentation/use/manage-profile#notifications). Zammad also ships a "
-#| "default overview called \"Escalated Tickets\". This overview includes "
-#| "already escalated tickets and tickets which are expected to escalate "
-#| "within the next 10 minutes."
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
 "deadlines. Configure these notifications in your [profile settings](/en/"
@@ -2505,11 +2509,11 @@ msgid ""
 msgstr ""
 "Zammad benachrichtigt Sie standardmäßig, wenn sich Tickets ihren Fristen "
 "nähern oder diese überschreiten. Konfigurieren Sie diese Benachrichtigungen "
-"in Ihren [Profileinstellungen](/de/documentation/use/manage-"
-"profile#notifications). Zammad liefert auch eine Standardübersicht namens "
-"\"Eskalierte Tickets\" aus. Diese Übersicht enthält bereits eskalierte "
-"Tickets und Tickets, bei denen eine Eskalation innerhalb der nächsten 10 "
-"Minuten zu erwarten ist."
+"in Ihren [Profileinstellungen](/de/documentation/use/user-"
+"profile#benachrichtigungen). Zammad liefert auch eine Standardübersicht "
+"namens \"Eskalierte Tickets\" aus. Diese Übersicht enthält bereits "
+"eskalierte Tickets und Tickets, bei denen eine Eskalation innerhalb der "
+"nächsten 10 Minuten zu erwarten ist."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:215
@@ -3573,23 +3577,17 @@ msgstr "Benachrichtigungen"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:43
-#, fuzzy
-#| msgid ""
-#| "Depending on the [notification settings](/en/documentation/use/manage-"
-#| "profile#notifications) in your profile, you receive updates for different "
-#| "ticket based events like the creation or the update of a ticket. This "
-#| "ensures that no important change to a ticket gets overlooked."
 msgid ""
 "Depending on the [notification settings](/en/documentation/use/user-"
 "profile#notifications) in your profile, you receive updates for different "
 "ticket based events like the creation or the update of a ticket. This "
 "ensures that no important change to a ticket gets overlooked."
 msgstr ""
-"Abhängig von den [Benachrichtigungseinstellungen](/de/documentation/use/"
-"manage-profile#benachrichtigungen) in Ihrem Profil erhalten Sie "
-"Benachrichtigungen für verschiedene Ticket-Aktualisierungen wie die "
-"Erstellung oder die Aktualisierung eines Tickets. So wird sichergestellt, "
-"dass Sie keine wichtige Änderung an einem Ticket übersehen."
+"Abhängig von den [Benachrichtigungseinstellungen](/de/documentation/use/user-"
+"profile#benachrichtigungen) in Ihrem Profil erhalten Sie Benachrichtigungen "
+"für verschiedene Ticket-Aktualisierungen wie die Erstellung oder die "
+"Aktualisierung eines Tickets. So wird sichergestellt, dass Sie keine "
+"wichtige Änderung an einem Ticket übersehen."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:46
@@ -4947,13 +4945,6 @@ msgstr "Wie kann ich über Ticket-Änderungen informiert werden?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:34
-#, fuzzy
-#| msgid ""
-#| "Adjust the [notification settings in your profile](manage-"
-#| "profile#notifications). You can distinguish between the action (e.g. "
-#| "ticket creation), the notification channel (email and/or browser), your "
-#| "relation to the ticket (e.g. if you are the owner) and limit the "
-#| "notifications to a specific group."
 msgid ""
 "Adjust the [notification settings in your profile](user-"
 "profile#notifications). You can distinguish between the action (e.g. ticket "
@@ -4961,7 +4952,7 @@ msgid ""
 "the ticket (e.g. if you are the owner) and limit the notifications to a "
 "specific group."
 msgstr ""
-"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil](manage-"
+"Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil](user-"
 "profile#benachrichtigungen) an. Sie können unterscheiden zwischen der Aktion "
 "(z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/oder "
 "Browser) und Ihrer Beziehung zum Ticket (z.B. ob Sie der Besitzer sind) "
@@ -5144,19 +5135,13 @@ msgstr "Wie kann ich mein Profil-/Avatarbild ändern?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:88
-#, fuzzy
-#| msgid ""
-#| "Go to the [avatar section in you profile settings](manage-profile#avatar) "
-#| "by opening the avatar menu in the bottom left corner and select **Profile "
-#| "settings**. There you can upload an image, capture a photo (if your "
-#| "device has a camera) or delete already present images."
 msgid ""
 "Go to the [avatar section in you profile settings](user-profile#avatar) by "
 "opening the avatar menu in the bottom left corner and select **Profile "
 "settings**. There you can upload an image, capture a photo (if your device "
 "has a camera) or delete already present images."
 msgstr ""
-"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-"
+"Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](user-"
 "profile#avatar), indem Sie das Avatar-Menü in der unteren linken Ecke öffnen "
 "und **Profileinstellungen** wählen. Dort können Sie ein Bild hochladen, ein "
 "Foto aufnehmen (sofern Ihr Gerät über eine Kamera verfügt) oder bereits "
@@ -5186,17 +5171,12 @@ msgstr "Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:98
-#, fuzzy
-#| msgid ""
-#| "Go to the [out of office section](manage-profile#out-of-office) in you "
-#| "profile settings by opening the avatar menu in the bottom left corner and "
-#| "select **Profile settings**. There you can define a replacement agent."
 msgid ""
 "Go to the [out of office section](user-profile#out-of-office) in you profile "
 "settings by opening the avatar menu in the bottom left corner and select "
 "**Profile settings**. There you can define a replacement agent."
 msgstr ""
-"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](manage-"
+"Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit](user-"
 "profile#abwesenheit), indem Sie das Avatar-Menü in der in der linken unteren "
 "Ecke öffnen und **Profileinstellungen** wählen. Dort können Sie einen "
 "anderen Agenten als Vertretung festlegen."
@@ -6543,14 +6523,6 @@ msgstr "Übersichten neu anordnen"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:93
-#, fuzzy
-#| msgid ""
-#| "If the order of the overviews doesn't reflect your working process or you "
-#| "just like to have a different order, you can re-arrange them for your "
-#| "account. Use the `reorder items` button at the very top of the second "
-#| "level navigation bar, which opens your [profile settings](/en/"
-#| "documentation/use/manage-profile#overviews) where you can define a custom "
-#| "order for your overviews."
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
@@ -6563,7 +6535,7 @@ msgstr ""
 "oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr "
 "Konto neu anordnen. Verwenden Sie die Schaltfläche \"Elemente neu anordnen\" "
 "ganz oben in der zweiten Navigationsleiste, die Ihre [Profileinstellungen](/"
-"de/documentation/use/manage-profile#ubersichten) öffnet, wo Sie eine "
+"de/documentation/use/user-profile#ubersichten) öffnet, wo Sie eine "
 "benutzerdefinierte Reihenfolge festlegen können."
 
 #. type: Plain text
@@ -6865,7 +6837,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:17
 #, no-wrap
 msgid "Setup"
-msgstr ""
+msgstr "Einrichtung"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:21
@@ -7511,21 +7483,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:11
-#, fuzzy
-#| msgid ""
-#| "In your profile settings, you can adjust things concerning your account "
-#| "and your personal settings. Some of the options may not be available for "
-#| "you, depending on how your system is configured and your permissions."
 msgid ""
 "Adjust your account and personal settings in your user profile. Some of the "
 "options may not be available, depending on how your system is configured and "
 "your permissions. Open it from the avatar menu in the sidebar. Read on for "
 "more details."
 msgstr ""
-"In Ihren Profileinstellungen können Sie Einstellungen zu Ihrem Konto und "
-"Ihren persönlichen Einstellungen vornehmen. Einige der Optionen stehen Ihnen "
-"möglicherweise nicht zur Verfügung, je nachdem, wie Ihr System konfiguriert "
-"ist und welche Rechte Sie haben."
+"Passen Sie Ihr Konto und Ihre persönlichen Einstellungen in Ihrem "
+"Benutzerprofil an. Einige der Optionen sind möglicherweise nicht verfügbar, "
+"je nachdem, wie Ihr System konfiguriert ist und welche Rechte Sie haben. "
+"Öffnen Sie es über das Avatar-Menü in der Seitenleiste. Lesen Sie weiter für "
+"weitere Details."
 
 #. type: Title ##
 #: src/en/documentation/use/user-profile.md:12
@@ -7535,37 +7503,27 @@ msgstr "Avatar-Menü"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:16
-#, fuzzy
-#| msgid ""
-#| "In the left navigation sidebar, you can find an avatar icon in the bottom "
-#| "left corner. This icon can display your profile picture or your initials."
 msgid ""
 "To open the avatar menu, click on your avatar icon in the bottom left corner "
 "in the sidebar. This icon either shows your initials or a profile picture."
 msgstr ""
-"In der linken Navigationsleiste finden Sie in der unteren linken Ecke ein "
-"Avatar-Symbol. Dieses Symbol kann Ihr Profilbild oder Ihre Initialen "
-"anzeigen."
+"Um das Avatar-Menü zu öffnen, klicken Sie auf Ihr Avatar-Symbol in der "
+"unteren linken Ecke der Seitenleiste. Dieses Symbol zeigt entweder Ihre "
+"Initialen oder ein Profilbild an."
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:18
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows user detail panel](/screenshots/cypress/user-"
-#| "profile.cy.js/user-menu-detail-panel.png)"
 msgid ""
 "![Screenshot shows user detail panel](/screenshots/cypress/user-"
 "profile.cy.js/avatar-menu.png)"
 msgstr ""
 "![Screenshot zeigt Benutzerinfo](/screenshots/cypress/user-profile.cy.js/"
-"user-menu-detail-panel.png)"
+"avatar-menu.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:20
-#, fuzzy
-#| msgid "We collect device information using the following technologies:"
 msgid "The menu contains the following entries:"
-msgstr "Wir erfassen Geräteinformationen mithilfe der folgenden Technologien:"
+msgstr "Das Menü enthält die folgenden Einträge:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:28
@@ -7573,6 +7531,8 @@ msgid ""
 "**Link(s) to documentation**: depending on your roles you can see one or "
 "more documentation links."
 msgstr ""
+"**Link(s) zur Dokumentation**: Abhängig von den zugewiesenen Rollen können "
+"Sie einen oder mehrere Links zur Dokumentation sehen."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:28
@@ -7580,21 +7540,19 @@ msgid ""
 "**Appearance**: switch between dark, light and automatic mode. The automatic "
 "mode displays Zammad according to your web browser's current preference."
 msgstr ""
+"**Aussehen**: Wechseln Sie zwischen dunklem, hellem und automatischem Modus. "
+"Im automatischen Modus wird Zammad entsprechend der aktuellen Einstellung "
+"Ihres Webbrowsers angezeigt."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:28
-#, fuzzy
-#| msgid ""
-#| "**Keyboard shortcuts**: opens a popup where you can see the available "
-#| "keyboard shortcuts. You can open this popup by pressing the [[?]] button "
-#| "on your keyboard as well."
 msgid ""
 "**Keyboard shortcuts**: opens a popup with the available keyboard shortcuts. "
 "Alternatively, press [[?]] on your keyboard to show it too."
 msgstr ""
-"**Tastaturkürzel**: öffnet ein Popup, in dem Sie die verfügbaren "
-"Tastaturkürzel sehen können. Sie können dieses Popup auch durch Drücken der "
-"Taste [[?]] auf Ihrer Tastatur öffnen."
+"**Tastaturkürzel**: öffnet ein Popup mit den verfügbaren Tastaturkürzeln. "
+"Alternativ können Sie auch [[?]] auf Ihrer Tastatur drücken, um es ebenfalls "
+"anzuzeigen."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:28
@@ -7645,37 +7603,26 @@ msgstr "Hell"
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:40
 msgid "Automatic mode"
-msgstr ""
+msgstr "Automatischer Modus"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:42
-#, fuzzy
-#| msgid ""
-#| "The last option tries to detect your browser's preference. It depends on "
-#| "your web browser. If it doesn't work, you can choose one of the other "
-#| "options."
 msgid ""
 "The last option tries to detect your browser's preference. It depends on "
 "your web browser if it works."
 msgstr ""
-"Die letzte Option versucht, die Einstellung Ihres Browsers zu erkennen. Ob "
-"das funktioniert hängt von Ihrem Webbrowser ab. Falls nicht können Sie eine "
-"der anderen Optionen wählen."
+"Mit der letzten Option wird versucht, die Einstellungen Ihres Browsers zu "
+"erkennen. Es hängt von Ihrem Webbrowser ab, ob dies funktioniert."
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/user-profile.md:43
-#, fuzzy, no-wrap
-#| msgid ""
-#| "If you want to switch quickly between dark and light mode, you can also use\n"
-#| "the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by\n"
-#| "simply pressing [[d]].\n"
+#, no-wrap
 msgid ""
 "If you want to switch quickly between dark and light mode, you can also use the toggle in the\n"
 "[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].\n"
 msgstr ""
-"Wenn Sie schnell zwischen dunklem und hellem Modus wechseln möchten, können Sie auch\n"
-"die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastaturkürzel dafür verwenden, indem Sie\n"
-"einfach [[d]] drücken.\n"
+"Wenn Sie schnell zwischen dunklem und hellem Modus umschalten möchten, können Sie auch die Umschaltfunktion im\n"
+"[Avatar-Menü](#avatar-menu) oder das Tastaturkürzel [[d]] verwenden.\n"
 
 #. type: Title ###
 #: src/en/documentation/use/user-profile.md:48
@@ -7687,6 +7634,8 @@ msgstr "Sprache"
 #: src/en/documentation/use/user-profile.md:51
 msgid "Choose the language in which Zammad's UI is displayed."
 msgstr ""
+"Wählen Sie die Sprache, in der die Benutzeroberfläche von Zammad angezeigt "
+"wird."
 
 #. type: Title ###
 #: src/en/documentation/use/user-profile.md:52
@@ -7696,20 +7645,15 @@ msgstr "Avatar"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:56
-#, fuzzy
-#| msgid ""
-#| "In this section, you can adjust your avatar image. By default, the "
-#| "initials of your user are displayed on a colored background. If you want "
-#| "to add an image, simply upload one or use your camera, if you have one."
 msgid ""
 "Adjust your avatar image. By default, the initials of your user are "
 "displayed on a colored background. If you want to add an image, simply "
 "upload one or use your camera, if you have one."
 msgstr ""
-"In diesem Bereich können Sie Ihr Avatarbild anpassen. Standardmäßig werden "
-"die Initialen Ihres Benutzers vor einem farbigen Hintergrund angezeigt. Wenn "
-"Sie ein Bild hinzufügen möchten, laden Sie einfach eines hoch oder verwenden "
-"Sie Ihre Kamera, wenn Sie eine haben."
+"Passen Sie Ihr Avatarbild an. Standardmäßig werden die Initialen Ihres "
+"Benutzers vor einem farbigen Hintergrund angezeigt. Wenn Sie ein Bild "
+"hinzufügen möchten, laden Sie einfach eines hoch oder verwenden Sie Ihre "
+"Kamera, falls Sie eine haben."
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:58
@@ -7729,10 +7673,6 @@ msgstr "Abwesenheit"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:62
-#, fuzzy
-#| msgid ""
-#| "Define absence periods (e.g. for your vacation), and designate a "
-#| "substitute to handle your tickets while you are away."
 msgid ""
 "Define absence periods (e.g. for your vacation) and designate a substitute "
 "to handle your tickets while you are away."
@@ -7742,12 +7682,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:66
-#, fuzzy
-#| msgid ""
-#| "Your designated substitute will receive updates on new tickets and "
-#| "changes to existing ones while you're away. Additionally, your custom "
-#| "overviews are available for this agent to keep track of your tickets. You "
-#| "receive notifications while you are absent, too."
 msgid ""
 "Your designated substitute will receive updates on new tickets and changes "
 "to existing ones while you're away.  Additionally, your custom overviews are "
@@ -7768,17 +7702,13 @@ msgstr "Passwort"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:71
-#, fuzzy
-#| msgid ""
-#| "Change the password of your account. Update it by entering your old "
-#| "password, the new password and confirm the new one by entering it again."
 msgid ""
 "Change the password of your account. To update it, provide your old "
 "password, the new password and confirm the new one by typing it again."
 msgstr ""
-"Ändern Sie das Passwort für Ihr Konto. Aktualisieren Sie es, indem Sie Ihr "
-"altes Passwort und das neue Passwort eingeben und das neue Passwort durch "
-"erneute Eingabe bestätigen."
+"Ändern Sie das Passwort für Ihr Konto. Um es zu aktualisieren, geben Sie Ihr "
+"altes Passwort und das neue Passwort ein und bestätigen Sie das neue, indem "
+"Sie es wiederholen."
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:76
@@ -7794,11 +7724,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:79
-#, fuzzy
-#| msgid ""
-#| "After following the [2FA guide](./guides/two-factor-auth), you have to "
-#| "provide your second factor at the next login. If you can't provide your "
-#| "configured 2FA method, contact your admin who can reset it."
 msgid ""
 "After following the [2FA guide](./guides/two-factor-auth), you have to "
 "provide your second factor at the next login.  If you can't provide your "
@@ -7817,20 +7742,16 @@ msgstr "Geräte"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:85
-#, fuzzy
-#| msgid ""
-#| "Here you can find a list of all devices logged into your Zammad account.  "
-#| "If necessary, you can revoke the access by clicking the delete icon in "
-#| "the \"Actions\" column."
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account. If "
 "necessary, you can revoke the access by clicking the delete icon in the "
 "\"Actions\" column. This ends the session on this device and requires a new "
 "login on this device."
 msgstr ""
-"Hier finden Sie eine Liste aller Geräte, die in Ihrem Zammad Konto "
-"angemeldet sind.  Falls nötig, können Sie den Zugriff widerrufen, indem Sie "
-"auf das Löschsymbol in der Spalte \"Aktionen\" klicken."
+"Hier finden Sie eine Liste aller Geräte, auf denen Ihr Zammad Konto "
+"angemeldet ist. Falls nötig, können Sie den Zugriff widerrufen, indem Sie "
+"auf das Löschsymbol in der Spalte \"Aktionen\" klicken. Dies beendet die "
+"Sitzung und verlangt eine neue Anmeldung auf dem Gerät."
 
 #. type: Title ###
 #: src/en/documentation/use/user-profile.md:86
@@ -7911,25 +7832,14 @@ msgstr "Für in welcher Gruppe befindliche Tickets Sie benachrichtigt werden"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:107
-#, fuzzy
-#| msgid ""
-#| "Additionally, you can select a notification sound or disable the sound."
 msgid "Additionally, you can select a notification sound or disable it."
 msgstr ""
-"Außerdem können Sie einen Benachrichtigungston auswählen oder den Ton "
+"Außerdem können Sie einen Benachrichtigungston auswählen oder ihn "
 "deaktivieren."
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/user-profile.md:108
-#, fuzzy, no-wrap
-#| msgid ""
-#| "To get notified via sound and notification on your operating system, you have\n"
-#| "to allow Zammad to send you notifications. This is requested when Zammad wants\n"
-#| "to send you a notification the first time.\n"
-#| "\n"
-#| "If you refused it and want to allow it now, it depends on your browser on how\n"
-#| "to do that. Usually there is an icon in the address bar where you can adjust\n"
-#| "the permissions of the site.\n"
+#, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.\n"
 "This is requested when Zammad tries to send you a notification the first time.\n"
@@ -7938,31 +7848,27 @@ msgid ""
 "the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have\n"
 "a look at your browser's settings.\n"
 msgstr ""
-"Um über Töne und Benachrichtigungen auf Ihrem Betriebssystem benachrichtigt zu werden, müssen Sie\n"
-"Zammad erlauben, Ihnen Benachrichtigungen zu senden. Dies ist erforderlich, wenn Zammad\n"
-"Ihnen zum ersten Mal eine Benachrichtigung senden möchte.\n"
+"Um auf Ihrem Betriebssystem per Ton und Benachrichtigung benachrichtigt zu werden, müssen Sie Zammad erlauben, Ihnen Benachrichtigungen zu senden.\n"
+"Diese Berechtigung wird angefordert, wenn Zammad das erste Mal versucht, Ihnen eine Benachrichtigung zu senden.\n"
 "\n"
-"Wenn Sie dies abgelehnt haben und es jetzt erlauben wollen, hängt es von Ihrem Browser ab,\n"
-"wie Sie das umstellen. Normalerweise gibt es ein Symbol in der Adressleiste, mit dem Sie die\n"
-"Berechtigungen der Website anpassen können.\n"
+"Falls Sie diese Berechtigung abgelehnt haben und es jetzt erlauben wollen, suchen Sie nach einem Symbol in der Adressleiste, wo Sie die Berechtigungen der\n"
+"Seite anpassen können. Es hängt von Ihrem Webbrowser ab, wie das genau funktioniert. Wenn Sie es nicht finden können, suchen Sie im Internet danach oder werfen Sie\n"
+"einen Blick in die Einstellungen Ihres Browsers.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:122
-#, fuzzy
-#| msgid ""
-#| "If your admin changes the order, your custom order remains. You can "
-#| "switch back to your admin's order by clicking the `Reset Overview Order` "
-#| "button."
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
 "clicking the handles on the left side.  If your admin changes the order, "
 "your custom order remains. You can switch back to your admin's order by "
 "clicking the `Reset Overview Order` button."
 msgstr ""
-"Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle "
-"Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres Administrators "
-"wechseln, indem Sie auf die Schaltfläche `Reihenfolge der Übersichten "
-"zurücksetzen` klicken."
+"Ändern Sie die Reihenfolge der Übersichten für Ihr Konto. Ziehen Sie sie "
+"einfach per Drag & Drop, indem Sie auf die Griffe auf der linken Seite "
+"klicken. Falls Ihr Administrator die Reihenfolge ändert, bleibt Ihre "
+"individuelle Reihenfolge erhalten. Sie können zur Reihenfolge Ihres "
+"Administrators zurückkehren, indem Sie auf die Schaltfläche `Reihenfolge der "
+"Übersichten zurücksetzen` klicken."
 
 #. type: Title #
 #: src/en/documentation/use/user-profile.md:123
@@ -7974,12 +7880,6 @@ msgstr "Kalender"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:128
-#, fuzzy
-#| msgid ""
-#| "Use either the upper \"Combined subscription URL\" to subscribe to all "
-#| "tickets or the lower \"Direct subscription URL\". With the later one, you "
-#| "can define which tickets based on ticket states and assignment you want "
-#| "to include."
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application.  Use either the upper **Combined "
@@ -7987,10 +7887,12 @@ msgid ""
 "subscription URL**.  By choosing the latter, you can define which tickets "
 "based on ticket you want to include based on the state and assignment status."
 msgstr ""
-"Verwenden Sie entweder die obere \"Kombinierte Abonnement-URL\", um alle "
-"Tickets zu abonnieren, oder die untere \"URL für Direktabonnement\". Mit der "
-"letzteren können Sie festlegen, welche Tickets basierend auf Ticketstatus "
-"und -zuweisung Sie einbeziehen möchten."
+"Zammad ermöglicht es Ihnen, einen Kalender-Feed (ical) zu abonnieren, um "
+"Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen.  Verwenden Sie "
+"entweder die obere **Kombinierte Abonnement-URL**, um alle Tickets zu "
+"abonnieren, oder die untere **URL für Direktabonnement**.  Wenn Sie "
+"Letzteres wählen, können Sie anhand des Status und des Zuweisungsstatus "
+"festlegen, welche Tickets Sie einbeziehen möchten."
 
 #. type: Plain text
 #: src/en/gdpr.md:9
@@ -9498,27 +9400,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:170
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \\\n"
-#| "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Ubuntu 22.04\n"
-#| "\n"
-#| "```sh\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Ubuntu 24.04\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -9546,7 +9428,7 @@ msgstr ""
 "\n"
 "```sh\n"
 "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \\\n"
+"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \\\n"
 "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
 "```\n"
 "\n"
@@ -9610,81 +9492,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:170
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "Install Repository Key (Debian 11 & 12):\n"
-#| "\n"
-#| "```sh\n"
-#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-#| "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \\\n"
-#| "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Install Repository Key (Debian 13):\n"
-#| "\n"
-#| "```sh\n"
-#| "curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \\\n"
-#| "gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null \\\n"
-#| "&& sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Add Repository (Debian 11)\n"
-#| "\n"
-#| "```sh\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Add Repository (Debian 12)\n"
-#| "\n"
-#| "```sh\n"
-#| "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-#| "```\n"
-#| "\n"
-#| "Add Repository (Debian 13)\n"
-#| "\n"
-#| "```sh\n"
-#| "curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \\\n"
-#| "-o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#| "```\n"
-#| "\n"
-#| "OpenSUSE 15.x / SLES15\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
-#| "```\n"
-#| "\n"
-#| "===CentOS/RHEL\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-#| "```\n"
-#| "\n"
-#| "CentOS 8 / RHEL 8\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-#| "```\n"
-#| "\n"
-#| "CentOS 9 / RHEL 9\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "Install Repository Key (Debian 11 & 12):\n"
@@ -9765,29 +9573,29 @@ msgstr ""
 "\n"
 "```sh\n"
 "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \\\n"
-"&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
+"gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \\\n"
+"&& sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
 "```\n"
 "\n"
 "Repository-Key hinzufügen (Debian 13):\n"
 "\n"
 "```sh\n"
 "curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \\\n"
-"gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null \\\n"
+"gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \\\n"
 "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
 "```\n"
 "\n"
 "Repository hinzufügen (Debian 11):\n"
 "\n"
 "```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
 "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
 "Repository hinzufügen (Debian 12):\n"
 "\n"
 "```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
 "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
 "```\n"
 "\n"
@@ -14441,20 +14249,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:88
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                             |\n"
-#| "| -------------------------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-#| "| NGINX_EXPOSE_PORT          | ::d::   | `8080`               | The port to be exposed for accessing the Zammad stack from outside. Change this to another value if you already have an existing service listening on this port.                                        |\n"
-#| "| NGINX_PORT                 | ::d::   | `8080`               | The internal port the Nginx service will listen on.                                                                                                                                                     |\n"
-#| "| NGINX_SERVER_NAME          | ::d::   | `_`                  | By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.                                                                                   |\n"
-#| "| NGINX_SERVER_SCHEME        | ::d::   | `\\$scheme`           | If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx) `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. |\n"
-#| "| NGINX_CLIENT_MAX_BODY_SIZE | ::d::   | unset                | Define the maximum size of data that a client can send to the server.                                                                                                                                   |\n"
-#| "| ZAMMAD_RAILSSERVER_HOST    | ::d::   | `zammad-railsserver` | Host name of the Rails server container.                                                                                                                                                                |\n"
-#| "| ZAMMAD_RAILSSERVER_PORT    | ::d::   | `3000`               | Port of Zammad's Rails server.                                                                                                                                                                          |\n"
-#| "| ZAMMAD_RAILS_PORT          | ::p::   | `3000`               | Port of Zammad's Rails server.                                                                                                                                                                          |\n"
-#| "| ZAMMAD_WEBSOCKET_HOST      | ::d::   | `zammad-websocket`   | Host name of Zammad's websocket server.                                                                                                                                                                 |\n"
-#| "| ZAMMAD_WEBSOCKET_PORT      | ::d::   | `6042`               | Port of Zammad's websocket server.                                                                                                                                                                      |\n"
+#, no-wrap
 msgid ""
 "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                                                                                             |\n"
 "| -------------------------- | ------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -14469,18 +14264,18 @@ msgid ""
 "| ZAMMAD_WEBSOCKET_HOST      | ::d::   | `zammad-websocket`   | Host name of Zammad's websocket server.                                                                                                                                                                                                                                 |\n"
 "| ZAMMAD_WEBSOCKET_PORT      | ::d::   | `6042`               | Port of Zammad's websocket server.                                                                                                                                                                                                                                      |\n"
 msgstr ""
-"| Variable                   | Beschränkung | Standardwert         | Beschreibung                                                                                                                                                                                                                      |\n"
-"| -------------------------- | ------------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| NGINX_EXPOSE_PORT          | ::d::        | `8080`               | Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern Sie diesen Wert, wenn Sie bereits einen bestehenden Dienst haben, der auf diesen Port hört.                                          |\n"
-"| NGINX_PORT                 | ::d::        | `8080`               | Der interne Port, an dem der Nginx-Dienst lauschen wird.                                                                                                                                                                          |\n"
-"| NGINX_SERVER_NAME          | ::d::        | `_`                  | Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das möchten.                                                                                           |\n"
-"| NGINX_SERVER_SCHEME        | ::d::        | `\\$scheme`           | Wenn der Nginx-Container für Zammad **nicht** der Upstream-Server ist (d.h. Sie verwenden einen anderen Proxy vor Nginx), kann `$scheme` falsch sein. Sie können das korrekte Schema `http` oder `https` einstellen, falls nötig. |\n"
-"| NGINX_CLIENT_MAX_BODY_SIZE | ::d::        | nicht gesetzt        | Definieren Sie die maximale Größe der Daten, die ein Client an den Server senden kann.                                                                                                                                            |\n"
-"| ZAMMAD_RAILSSERVER_HOST    | ::d::        | `zammad-railsserver` | Hostname des Rails-Server-Containers.                                                                                                                                                                                             |\n"
-"| ZAMMAD_RAILSSERVER_PORT    | ::d::        | `3000`               | Port des Rails-Servers von Zammad.                                                                                                                                                                                                |\n"
-"| ZAMMAD_RAILS_PORT          | ::p::        | `3000`               | Port des Rails-Servers von Zammad.                                                                                                                                                                                                |\n"
-"| ZAMMAD_WEBSOCKET_HOST      | ::d::        | `zammad-websocket`   | Hostname des Websocket-Servers von Zammad.                                                                                                                                                                                        |\n"
-"| ZAMMAD_WEBSOCKET_PORT      | ::d::        | `6042`               | Port des Websocket-Servers von Zammad.                                                                                                                                                                                            |\n"
+"| Variable                   | Beschränkung | Standardwert         | Beschreibung                                                                                                                                                                                                                                                                                                        |\n"
+"| -------------------------- | ------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
+"| NGINX_EXPOSE_PORT          | ::d::        | `8080`               | Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben werden soll. Ändern Sie diesen Wert, wenn Sie bereits einen bestehenden Dienst haben, der auf diesen Port hört.                                                                                                                            |\n"
+"| NGINX_PORT                 | ::d::        | `8080`               | Der interne Port, an dem der Nginx-Dienst lauschen wird.                                                                                                                                                                                                                                                            |\n"
+"| NGINX_SERVER_NAME          | ::d::        | `_`                  | Standardmäßig wird der Nginx-Container von Zammad auf alle Anfragen antworten. Sie können Ihre IP / FQDN angeben, wenn Sie das möchten.                                                                                                                                                                             |\n"
+"| NGINX_SERVER_SCHEME        | ::d::        | `\\$scheme`           | Wenn der Nginx-Container für Zammad **nicht** der Upstream-Server ist (d.h. Sie verwenden einen anderen Proxy vor Nginx), kann `$scheme` falsch sein. Sie können das korrekte Schema `http` oder `https` einstellen, falls nötig. Setzen Sie dies, wenn Sie einen `CSRF Token Verification Failed` Fehler erhalten. |\n"
+"| NGINX_CLIENT_MAX_BODY_SIZE | ::d::        | nicht gesetzt        | Definieren Sie die maximale Größe der Daten, die ein Client an den Server senden kann.                                                                                                                                                                                                                              |\n"
+"| ZAMMAD_RAILSSERVER_HOST    | ::d::        | `zammad-railsserver` | Hostname des Rails-Server-Containers.                                                                                                                                                                                                                                                                               |\n"
+"| ZAMMAD_RAILSSERVER_PORT    | ::d::        | `3000`               | Port des Rails-Servers von Zammad.                                                                                                                                                                                                                                                                                  |\n"
+"| ZAMMAD_RAILS_PORT          | ::p::        | `3000`               | Port des Rails-Servers von Zammad.                                                                                                                                                                                                                                                                                  |\n"
+"| ZAMMAD_WEBSOCKET_HOST      | ::d::        | `zammad-websocket`   | Hostname des Websocket-Servers von Zammad.                                                                                                                                                                                                                                                                          |\n"
+"| ZAMMAD_WEBSOCKET_PORT      | ::d::        | `6042`               | Port des Websocket-Servers von Zammad.                                                                                                                                                                                                                                                                              |\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:89
@@ -19072,19 +18867,13 @@ msgstr "Authentifizierung"
 
 #. type: Plain text
 #: src/en/reference/graphql.md:42
-#, fuzzy
-#| msgid ""
-#| "If not already present, create a [token in the Zammad profile](/en/"
-#| "documentation/use/manage-profile#token-access) you want to use as API "
-#| "user. Depending what you want to achieve via API, set the permissions "
-#| "accordingly."
 msgid ""
 "If not already present, create a [token in the Zammad profile](/en/"
 "documentation/use/user-profile#token-access) you want to use as API user. "
 "Depending what you want to achieve via API, set the permissions accordingly."
 msgstr ""
 "Falls noch nicht vorhanden, erstellen Sie ein [Token im Zammad-Profil](/de/"
-"documentation/use/manage-profile#token-zugriff), das Sie als API-Benutzer "
+"documentation/use/user-profile#token-zugriff), das Sie als API-Benutzer "
 "verwenden möchten. Je nachdem, worauf Sie per API zugreifen wollen, legen "
 "Sie die Berechtigungen entsprechend fest."
 
@@ -25682,6 +25471,94 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25904,94 +25781,6 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -26532,18 +26321,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -38506,3 +38283,247 @@ msgstr ""
 #~ "| Hinzufügen Schaltfläche   | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
 #~ "| Löschen Schaltfläche      | ::x::                         | \\:\\:x\\:\\:                       |\n"
 #~ "| Aktions-Schaltfläche      | ::a::                         | \\:\\:a\\:\\:                       |\n"
+
+#~ msgid ""
+#~ "Zammad notifies you by default when tickets approach or exceed their "
+#~ "deadlines. Configure these notifications in your [profile settings](/en/"
+#~ "documentation/use/manage-profile#notifications). Zammad also ships a "
+#~ "default overview called \"Escalated Tickets\". This overview includes "
+#~ "already escalated tickets and tickets which are expected to escalate "
+#~ "within the next 10 minutes."
+#~ msgstr ""
+#~ "Zammad benachrichtigt Sie standardmäßig, wenn sich Tickets ihren Fristen "
+#~ "nähern oder diese überschreiten. Konfigurieren Sie diese "
+#~ "Benachrichtigungen in Ihren [Profileinstellungen](/de/documentation/use/"
+#~ "manage-profile#notifications). Zammad liefert auch eine Standardübersicht "
+#~ "namens \"Eskalierte Tickets\" aus. Diese Übersicht enthält bereits "
+#~ "eskalierte Tickets und Tickets, bei denen eine Eskalation innerhalb der "
+#~ "nächsten 10 Minuten zu erwarten ist."
+
+#~ msgid ""
+#~ "Depending on the [notification settings](/en/documentation/use/manage-"
+#~ "profile#notifications) in your profile, you receive updates for different "
+#~ "ticket based events like the creation or the update of a ticket. This "
+#~ "ensures that no important change to a ticket gets overlooked."
+#~ msgstr ""
+#~ "Abhängig von den [Benachrichtigungseinstellungen](/de/documentation/use/"
+#~ "manage-profile#benachrichtigungen) in Ihrem Profil erhalten Sie "
+#~ "Benachrichtigungen für verschiedene Ticket-Aktualisierungen wie die "
+#~ "Erstellung oder die Aktualisierung eines Tickets. So wird sichergestellt, "
+#~ "dass Sie keine wichtige Änderung an einem Ticket übersehen."
+
+#~ msgid ""
+#~ "Adjust the [notification settings in your profile](manage-"
+#~ "profile#notifications). You can distinguish between the action (e.g. "
+#~ "ticket creation), the notification channel (email and/or browser), your "
+#~ "relation to the ticket (e.g. if you are the owner) and limit the "
+#~ "notifications to a specific group."
+#~ msgstr ""
+#~ "Passen Sie die [Benachrichtigungseinstellungen in Ihrem Profil](manage-"
+#~ "profile#benachrichtigungen) an. Sie können unterscheiden zwischen der "
+#~ "Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal (E-Mail und/"
+#~ "oder Browser) und Ihrer Beziehung zum Ticket (z.B. ob Sie der Besitzer "
+#~ "sind) sowie die Benachrichtigungen auf eine bestimmte Gruppe beschränken."
+
+#~ msgid ""
+#~ "Go to the [avatar section in you profile settings](manage-profile#avatar) "
+#~ "by opening the avatar menu in the bottom left corner and select **Profile "
+#~ "settings**. There you can upload an image, capture a photo (if your "
+#~ "device has a camera) or delete already present images."
+#~ msgstr ""
+#~ "Gehen Sie zum [Avatar-Bereich in Ihren Profileinstellungen](manage-"
+#~ "profile#avatar), indem Sie das Avatar-Menü in der unteren linken Ecke "
+#~ "öffnen und **Profileinstellungen** wählen. Dort können Sie ein Bild "
+#~ "hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine Kamera verfügt) "
+#~ "oder bereits vorhandene Bilder löschen."
+
+#~ msgid ""
+#~ "Go to the [out of office section](manage-profile#out-of-office) in you "
+#~ "profile settings by opening the avatar menu in the bottom left corner and "
+#~ "select **Profile settings**. There you can define a replacement agent."
+#~ msgstr ""
+#~ "Gehen Sie in Ihren Profileinstellungen in den Bereich [Abwesenheit]"
+#~ "(manage-profile#abwesenheit), indem Sie das Avatar-Menü in der in der "
+#~ "linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort "
+#~ "können Sie einen anderen Agenten als Vertretung festlegen."
+
+#~ msgid ""
+#~ "If the order of the overviews doesn't reflect your working process or you "
+#~ "just like to have a different order, you can re-arrange them for your "
+#~ "account. Use the `reorder items` button at the very top of the second "
+#~ "level navigation bar, which opens your [profile settings](/en/"
+#~ "documentation/use/manage-profile#overviews) where you can define a custom "
+#~ "order for your overviews."
+#~ msgstr ""
+#~ "Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht "
+#~ "oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr "
+#~ "Konto neu anordnen. Verwenden Sie die Schaltfläche \"Elemente neu "
+#~ "anordnen\" ganz oben in der zweiten Navigationsleiste, die Ihre "
+#~ "[Profileinstellungen](/de/documentation/use/manage-profile#ubersichten) "
+#~ "öffnet, wo Sie eine benutzerdefinierte Reihenfolge festlegen können."
+
+#~ msgid ""
+#~ "In the left navigation sidebar, you can find an avatar icon in the bottom "
+#~ "left corner. This icon can display your profile picture or your initials."
+#~ msgstr ""
+#~ "In der linken Navigationsleiste finden Sie in der unteren linken Ecke ein "
+#~ "Avatar-Symbol. Dieses Symbol kann Ihr Profilbild oder Ihre Initialen "
+#~ "anzeigen."
+
+#~ msgid ""
+#~ "![Screenshot shows user detail panel](/screenshots/cypress/user-"
+#~ "profile.cy.js/user-menu-detail-panel.png)"
+#~ msgstr ""
+#~ "![Screenshot zeigt Benutzerinfo](/screenshots/cypress/user-profile.cy.js/"
+#~ "user-menu-detail-panel.png)"
+
+#~ msgid ""
+#~ "**Keyboard shortcuts**: opens a popup where you can see the available "
+#~ "keyboard shortcuts. You can open this popup by pressing the [[?]] button "
+#~ "on your keyboard as well."
+#~ msgstr ""
+#~ "**Tastaturkürzel**: öffnet ein Popup, in dem Sie die verfügbaren "
+#~ "Tastaturkürzel sehen können. Sie können dieses Popup auch durch Drücken "
+#~ "der Taste [[?]] auf Ihrer Tastatur öffnen."
+
+#~ msgid ""
+#~ "In your profile settings, you can adjust things concerning your account "
+#~ "and your personal settings. Some of the options may not be available for "
+#~ "you, depending on how your system is configured and your permissions."
+#~ msgstr ""
+#~ "In Ihren Profileinstellungen können Sie Einstellungen zu Ihrem Konto und "
+#~ "Ihren persönlichen Einstellungen vornehmen. Einige der Optionen stehen "
+#~ "Ihnen möglicherweise nicht zur Verfügung, je nachdem, wie Ihr System "
+#~ "konfiguriert ist und welche Rechte Sie haben."
+
+#~ msgid ""
+#~ "The last option tries to detect your browser's preference. It depends on "
+#~ "your web browser. If it doesn't work, you can choose one of the other "
+#~ "options."
+#~ msgstr ""
+#~ "Die letzte Option versucht, die Einstellung Ihres Browsers zu erkennen. "
+#~ "Ob das funktioniert hängt von Ihrem Webbrowser ab. Falls nicht können Sie "
+#~ "eine der anderen Optionen wählen."
+
+#, no-wrap
+#~ msgid ""
+#~ "If you want to switch quickly between dark and light mode, you can also use\n"
+#~ "the toggle in the [avatar menu](#avatar-menu) or use the keyboard shortcut by\n"
+#~ "simply pressing [[d]].\n"
+#~ msgstr ""
+#~ "Wenn Sie schnell zwischen dunklem und hellem Modus wechseln möchten, können Sie auch\n"
+#~ "die Umschaltfunktion im [Avatar-Menü](#avatar-menu) verwenden oder das Tastaturkürzel dafür verwenden, indem Sie\n"
+#~ "einfach [[d]] drücken.\n"
+
+#~ msgid ""
+#~ "In this section, you can adjust your avatar image. By default, the "
+#~ "initials of your user are displayed on a colored background. If you want "
+#~ "to add an image, simply upload one or use your camera, if you have one."
+#~ msgstr ""
+#~ "In diesem Bereich können Sie Ihr Avatarbild anpassen. Standardmäßig "
+#~ "werden die Initialen Ihres Benutzers vor einem farbigen Hintergrund "
+#~ "angezeigt. Wenn Sie ein Bild hinzufügen möchten, laden Sie einfach eines "
+#~ "hoch oder verwenden Sie Ihre Kamera, wenn Sie eine haben."
+
+#~ msgid ""
+#~ "Define absence periods (e.g. for your vacation), and designate a "
+#~ "substitute to handle your tickets while you are away."
+#~ msgstr ""
+#~ "Definieren Sie Abwesenheitszeiten (z.B. für Ihren Urlaub) und bestimmen "
+#~ "Sie einen Vertreter, der Ihre Tickets während Ihrer Abwesenheit "
+#~ "bearbeitet."
+
+#~ msgid ""
+#~ "Your designated substitute will receive updates on new tickets and "
+#~ "changes to existing ones while you're away. Additionally, your custom "
+#~ "overviews are available for this agent to keep track of your tickets. You "
+#~ "receive notifications while you are absent, too."
+#~ msgstr ""
+#~ "Ihre ausgewählte Vertretung erhält während Ihrer Abwesenheit "
+#~ "Benachrichtigungen für neue Tickets und Änderungen an bestehenden "
+#~ "Tickets. Außerdem stehen diesem Agenten Ihre benutzerdefinierten "
+#~ "Übersichten zur Verfügung, damit er den Überblick über Ihre Tickets "
+#~ "behält. Sie erhalten auch Benachrichtigungen, wenn Sie abwesend sind."
+
+#~ msgid ""
+#~ "Change the password of your account. Update it by entering your old "
+#~ "password, the new password and confirm the new one by entering it again."
+#~ msgstr ""
+#~ "Ändern Sie das Passwort für Ihr Konto. Aktualisieren Sie es, indem Sie "
+#~ "Ihr altes Passwort und das neue Passwort eingeben und das neue Passwort "
+#~ "durch erneute Eingabe bestätigen."
+
+#~ msgid ""
+#~ "After following the [2FA guide](./guides/two-factor-auth), you have to "
+#~ "provide your second factor at the next login. If you can't provide your "
+#~ "configured 2FA method, contact your admin who can reset it."
+#~ msgstr ""
+#~ "Nachdem Sie die [2FA-Anleitung](./guides/two-factor-auth) befolgt haben, "
+#~ "müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie "
+#~ "Ihre konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an "
+#~ "Ihren Administrator, der sie zurücksetzen kann."
+
+#~ msgid ""
+#~ "Here you can find a list of all devices logged into your Zammad account.  "
+#~ "If necessary, you can revoke the access by clicking the delete icon in "
+#~ "the \"Actions\" column."
+#~ msgstr ""
+#~ "Hier finden Sie eine Liste aller Geräte, die in Ihrem Zammad Konto "
+#~ "angemeldet sind.  Falls nötig, können Sie den Zugriff widerrufen, indem "
+#~ "Sie auf das Löschsymbol in der Spalte \"Aktionen\" klicken."
+
+#~ msgid ""
+#~ "Additionally, you can select a notification sound or disable the sound."
+#~ msgstr ""
+#~ "Außerdem können Sie einen Benachrichtigungston auswählen oder den Ton "
+#~ "deaktivieren."
+
+#, no-wrap
+#~ msgid ""
+#~ "To get notified via sound and notification on your operating system, you have\n"
+#~ "to allow Zammad to send you notifications. This is requested when Zammad wants\n"
+#~ "to send you a notification the first time.\n"
+#~ "\n"
+#~ "If you refused it and want to allow it now, it depends on your browser on how\n"
+#~ "to do that. Usually there is an icon in the address bar where you can adjust\n"
+#~ "the permissions of the site.\n"
+#~ msgstr ""
+#~ "Um über Töne und Benachrichtigungen auf Ihrem Betriebssystem benachrichtigt zu werden, müssen Sie\n"
+#~ "Zammad erlauben, Ihnen Benachrichtigungen zu senden. Dies ist erforderlich, wenn Zammad\n"
+#~ "Ihnen zum ersten Mal eine Benachrichtigung senden möchte.\n"
+#~ "\n"
+#~ "Wenn Sie dies abgelehnt haben und es jetzt erlauben wollen, hängt es von Ihrem Browser ab,\n"
+#~ "wie Sie das umstellen. Normalerweise gibt es ein Symbol in der Adressleiste, mit dem Sie die\n"
+#~ "Berechtigungen der Website anpassen können.\n"
+
+#~ msgid ""
+#~ "If your admin changes the order, your custom order remains. You can "
+#~ "switch back to your admin's order by clicking the `Reset Overview Order` "
+#~ "button."
+#~ msgstr ""
+#~ "Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle "
+#~ "Reihenfolge erhalten. Sie können zurück zur Reihenfolge Ihres "
+#~ "Administrators wechseln, indem Sie auf die Schaltfläche `Reihenfolge der "
+#~ "Übersichten zurücksetzen` klicken."
+
+#~ msgid ""
+#~ "Use either the upper \"Combined subscription URL\" to subscribe to all "
+#~ "tickets or the lower \"Direct subscription URL\". With the later one, you "
+#~ "can define which tickets based on ticket states and assignment you want "
+#~ "to include."
+#~ msgstr ""
+#~ "Verwenden Sie entweder die obere \"Kombinierte Abonnement-URL\", um alle "
+#~ "Tickets zu abonnieren, oder die untere \"URL für Direktabonnement\". Mit "
+#~ "der letzteren können Sie festlegen, welche Tickets basierend auf "
+#~ "Ticketstatus und -zuweisung Sie einbeziehen möchten."
+
+#~ msgid ""
+#~ "If not already present, create a [token in the Zammad profile](/en/"
+#~ "documentation/use/manage-profile#token-access) you want to use as API "
+#~ "user. Depending what you want to achieve via API, set the permissions "
+#~ "accordingly."
+#~ msgstr ""
+#~ "Falls noch nicht vorhanden, erstellen Sie ein [Token im Zammad-Profil](/"
+#~ "de/documentation/use/manage-profile#token-zugriff), das Sie als API-"
+#~ "Benutzer verwenden möchten. Je nachdem, worauf Sie per API zugreifen "
+#~ "wollen, legen Sie die Berechtigungen entsprechend fest."

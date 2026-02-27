@@ -112,12 +112,12 @@ mit den erweiterten Funktionen.
 
 ### Übersichten neu anordnen
 
-If the order of the overviews doesn't reflect your working process or you
-just like to have a different order, you can re-arrange them for your
-account. Use the `reorder items` button at the very top of the second level
-navigation bar, which opens your [profile
-settings](/en/documentation/use/user-profile#overviews) where you can define
-a custom order for your overviews.
+Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht
+oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr
+Konto neu anordnen. Verwenden Sie die Schaltfläche "Elemente neu anordnen"
+ganz oben in der zweiten Navigationsleiste, die Ihre
+[Profileinstellungen](/de/documentation/use/user-profile#ubersichten)
+öffnet, wo Sie eine benutzerdefinierte Reihenfolge festlegen können.
 
 Um die Reihenfolge zu ändern, ziehen Sie die Übersichten einfach per Drag &
 Drop, indem Sie auf die Fläche auf der linken Seite klicken.

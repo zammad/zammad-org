@@ -34,11 +34,12 @@ und was derzeit keine Bearbeitung erfordert. Falls Sie Probleme mit diesen
 
 ### Wie kann ich über Ticket-Änderungen informiert werden?
 
-Adjust the [notification settings in your
-profile](user-profile#notifications). You can distinguish between the action
-(e.g. ticket creation), the notification channel (email and/or browser),
-your relation to the ticket (e.g. if you are the owner) and limit the
-notifications to a specific group.
+Passen Sie die [Benachrichtigungseinstellungen in Ihrem
+Profil](user-profile#benachrichtigungen) an. Sie können unterscheiden
+zwischen der Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal
+(E-Mail und/oder Browser) und Ihrer Beziehung zum Ticket (z.B. ob Sie der
+Besitzer sind) sowie die Benachrichtigungen auf eine bestimmte Gruppe
+beschränken.
 
 ### Warum ist das Ticket wieder offen? Ich habe es bereits geschlossen
 
@@ -106,10 +107,11 @@ verschiedenen Modi gewechselt.
 
 ### Wie kann ich mein Profil-/Avatarbild ändern?
 
-Go to the [avatar section in you profile settings](user-profile#avatar) by
-opening the avatar menu in the bottom left corner and select **Profile
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Gehen Sie zum [Avatar-Bereich in Ihren
+Profileinstellungen](user-profile#avatar), indem Sie das Avatar-Menü in der
+unteren linken Ecke öffnen und **Profileinstellungen** wählen. Dort können
+Sie ein Bild hochladen, ein Foto aufnehmen (sofern Ihr Gerät über eine
+Kamera verfügt) oder bereits vorhandene Bilder löschen.
 
 ### Wie ändert man die Sprache der Benutzeroberfläche von Zammad?
 
@@ -119,9 +121,10 @@ Avatar-Menü in der linken unteren Ecke öffnen und wählen Sie
 
 ### Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?
 
-Go to the [out of office section](user-profile#out-of-office) in you profile
-settings by opening the avatar menu in the bottom left corner and select
-**Profile settings**. There you can define a replacement agent.
+Gehen Sie in Ihren Profileinstellungen in den Bereich
+[Abwesenheit](user-profile#abwesenheit), indem Sie das Avatar-Menü in der in
+der linken unteren Ecke öffnen und **Profileinstellungen** wählen. Dort
+können Sie einen anderen Agenten als Vertretung festlegen.
 
 ### Wie lässt sich die Reihenfolge der Übersichten anpassen?
 

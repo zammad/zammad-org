@@ -5,28 +5,31 @@ title: Benutzerprofil
 
 # Benutzerprofil
 
-Adjust your account and personal settings in your user profile. Some of the
-options may not be available, depending on how your system is configured and
-your permissions. Open it from the avatar menu in the sidebar. Read on for
-more details.
+Passen Sie Ihr Konto und Ihre persönlichen Einstellungen in Ihrem
+Benutzerprofil an. Einige der Optionen sind möglicherweise nicht verfügbar,
+je nachdem, wie Ihr System konfiguriert ist und welche Rechte Sie
+haben. Öffnen Sie es über das Avatar-Menü in der Seitenleiste. Lesen Sie
+weiter für weitere Details.
 
 ## Avatar-Menü
 
-To open the avatar menu, click on your avatar icon in the bottom left corner
-in the sidebar. This icon either shows your initials or a profile picture.
+Um das Avatar-Menü zu öffnen, klicken Sie auf Ihr Avatar-Symbol in der
+unteren linken Ecke der Seitenleiste. Dieses Symbol zeigt entweder Ihre
+Initialen oder ein Profilbild an.
 
-![Screenshot shows user detail
-panel](/screenshots/cypress/user-profile.cy.js/avatar-menu.png)
+![Screenshot zeigt
+Benutzerinfo](/screenshots/cypress/user-profile.cy.js/avatar-menu.png)
 
-The menu contains the following entries:
+Das Menü enthält die folgenden Einträge:
 
-- **Link(s) to documentation**: depending on your roles you can see one or
-  more documentation links.
-- **Appearance**: switch between dark, light and automatic mode. The
-  automatic mode displays Zammad according to your web browser's current
-  preference.
-- **Keyboard shortcuts**: opens a popup with the available keyboard
-  shortcuts. Alternatively, press [[?]] on your keyboard to show it too.
+- **Link(s) zur Dokumentation**: Abhängig von den zugewiesenen Rollen können
+  Sie einen oder mehrere Links zur Dokumentation sehen.
+- **Aussehen**: Wechseln Sie zwischen dunklem, hellem und automatischem
+  Modus. Im automatischen Modus wird Zammad entsprechend der aktuellen
+  Einstellung Ihres Webbrowsers angezeigt.
+- **Tastaturkürzel**: öffnet ein Popup mit den verfügbaren
+  Tastaturkürzeln. Alternativ können Sie auch [[?]] auf Ihrer Tastatur
+  drücken, um es ebenfalls anzuzeigen.
 - **Profileinstellungen**: öffnet Ihre Profileinstellungen, wo Sie Ihren
   Avatar, Ihr Passwort, Ihre Benachrichtigungseinstellungen und vieles mehr
   anpassen können, siehe nächster Abschnitt.
@@ -42,25 +45,27 @@ Benutzerprofil-Einstellungen](/screenshots/cypress/user-profile.cy.js/user-profi
 
 - Dunkler Modus
 - Hell
-- Automatic mode
+- Automatischer Modus
 
-The last option tries to detect your browser's preference. It depends on
-your web browser if it works.
+Mit der letzten Option wird versucht, die Einstellungen Ihres Browsers zu
+erkennen. Es hängt von Ihrem Webbrowser ab, ob dies funktioniert.
 
 ::: tip
-If you want to switch quickly between dark and light mode, you can also use the toggle in the
-[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].
+Wenn Sie schnell zwischen dunklem und hellem Modus umschalten möchten, können Sie auch die Umschaltfunktion im
+[Avatar-Menü](#avatar-menu) oder das Tastaturkürzel [[d]] verwenden.
 :::
 
 ### Sprache
 
-Choose the language in which Zammad's UI is displayed.
+Wählen Sie die Sprache, in der die Benutzeroberfläche von Zammad angezeigt
+wird.
 
 ### Avatar
 
-Adjust your avatar image. By default, the initials of your user are
-displayed on a colored background. If you want to add an image, simply
-upload one or use your camera, if you have one.
+Passen Sie Ihr Avatarbild an. Standardmäßig werden die Initialen Ihres
+Benutzers vor einem farbigen Hintergrund angezeigt. Wenn Sie ein Bild
+hinzufügen möchten, laden Sie einfach eines hoch oder verwenden Sie Ihre
+Kamera, falls Sie eine haben.
 
 Nachdem Sie ein Bild aufgenommen oder hochgeladen haben, können Sie es
 zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten
@@ -68,18 +73,20 @@ Seiten-Panel.
 
 ### Abwesenheit
 
-Define absence periods (e.g. for your vacation) and designate a substitute
-to handle your tickets while you are away.
+Definieren Sie Abwesenheitszeiten (z.B. für Ihren Urlaub) und bestimmen Sie
+einen Vertreter, der Ihre Tickets während Ihrer Abwesenheit bearbeitet.
 
-Your designated substitute will receive updates on new tickets and changes
-to existing ones while you're away.  Additionally, your custom overviews are
-available for this agent to keep track of your tickets. You receive
-notifications while you are absent, too.
+Ihre ausgewählte Vertretung erhält während Ihrer Abwesenheit
+Benachrichtigungen für neue Tickets und Änderungen an bestehenden
+Tickets. Außerdem stehen diesem Agenten Ihre benutzerdefinierten Übersichten
+zur Verfügung, damit er den Überblick über Ihre Tickets behält. Sie erhalten
+auch Benachrichtigungen, wenn Sie abwesend sind.
 
 ### Passwort
 
-Change the password of your account. To update it, provide your old
-password, the new password and confirm the new one by typing it again.
+Ändern Sie das Passwort für Ihr Konto. Um es zu aktualisieren, geben Sie Ihr
+altes Passwort und das neue Passwort ein und bestätigen Sie das neue, indem
+Sie es wiederholen.
 
 ### Zwei-Faktor-Authentifizierung
 
@@ -88,16 +95,17 @@ Ihres Kontos zu erhöhen. Ihr Administrator muss mindestens eine 2FA-Methode
 aktiviert haben. Die Verwendung einer 2FA-Methode kann sogar von Ihrem
 Administrator erzwungen werden.
 
-After following the [2FA guide](./guides/two-factor-auth), you have to
-provide your second factor at the next login.  If you can't provide your
-configured 2FA method, contact your admin to reset it.
+Nachdem Sie die [2FA-Anleitung](./guides/two-factor-auth) befolgt haben,
+müssen Sie beim nächsten Login Ihren zweiten Faktor angeben. Wenn Sie Ihre
+konfigurierte 2FA-Methode nicht angeben können, wenden Sie sich an Ihren
+Administrator, der sie zurücksetzen kann.
 
 ### Geräte
 
-Here you can find a list of all devices logged into your Zammad account. If
-necessary, you can revoke the access by clicking the delete icon in the
-"Actions" column. This ends the session on this device and requires a new
-login on this device.
+Hier finden Sie eine Liste aller Geräte, auf denen Ihr Zammad Konto
+angemeldet ist. Falls nötig, können Sie den Zugriff widerrufen, indem Sie
+auf das Löschsymbol in der Spalte "Aktionen" klicken. Dies beendet die
+Sitzung und verlangt eine neue Anmeldung auf dem Gerät.
 
 ### Token-Zugriff
 
@@ -128,29 +136,32 @@ einstellen:
   per E-Mail)
 - Für in welcher Gruppe befindliche Tickets Sie benachrichtigt werden
 
-Additionally, you can select a notification sound or disable it.
+Außerdem können Sie einen Benachrichtigungston auswählen oder ihn
+deaktivieren.
 
 ::: tip
-To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.
-This is requested when Zammad tries to send you a notification the first time.
+Um auf Ihrem Betriebssystem per Ton und Benachrichtigung benachrichtigt zu werden, müssen Sie Zammad erlauben, Ihnen Benachrichtigungen zu senden.
+Diese Berechtigung wird angefordert, wenn Zammad das erste Mal versucht, Ihnen eine Benachrichtigung zu senden.
 
-If you refused it and want to allow it now, look for an icon in the address bar where you can adjust the permissions of
-the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have
-a look at your browser's settings.
+Falls Sie diese Berechtigung abgelehnt haben und es jetzt erlauben wollen, suchen Sie nach einem Symbol in der Adressleiste, wo Sie die Berechtigungen der
+Seite anpassen können. Es hängt von Ihrem Webbrowser ab, wie das genau funktioniert. Wenn Sie es nicht finden können, suchen Sie im Internet danach oder werfen Sie
+einen Blick in die Einstellungen Ihres Browsers.
 :::
 
 ### Übersichten
 
-Change the order of overviews for your account. Simply drag & drop them by
-clicking the handles on the left side.  If your admin changes the order,
-your custom order remains. You can switch back to your admin's order by
-clicking the `Reset Overview Order` button.
+Ändern Sie die Reihenfolge der Übersichten für Ihr Konto. Ziehen Sie sie
+einfach per Drag & Drop, indem Sie auf die Griffe auf der linken Seite
+klicken. Falls Ihr Administrator die Reihenfolge ändert, bleibt Ihre
+individuelle Reihenfolge erhalten. Sie können zur Reihenfolge Ihres
+Administrators zurückkehren, indem Sie auf die Schaltfläche `Reihenfolge der
+Übersichten zurücksetzen` klicken.
 
 ### Kalender
 
-Zammad allows you to subscribe to a calendar feed (ical) to see tickets in
-your favorite calendar application.  Use either the upper **Combined
-subscription URL** to subscribe to all tickets or the lower **Direct
-subscription URL**.  By choosing the latter, you can define which tickets
-based on ticket you want to include based on the state and assignment
-status.
+Zammad ermöglicht es Ihnen, einen Kalender-Feed (ical) zu abonnieren, um
+Tickets in Ihrer bevorzugten Kalenderanwendung zu sehen.  Verwenden Sie
+entweder die obere **Kombinierte Abonnement-URL**, um alle Tickets zu
+abonnieren, oder die untere **URL für Direktabonnement**.  Wenn Sie
+Letzteres wählen, können Sie anhand des Status und des Zuweisungsstatus
+festlegen, welche Tickets Sie einbeziehen möchten.
