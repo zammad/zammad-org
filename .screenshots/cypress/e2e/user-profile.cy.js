@@ -7,11 +7,12 @@ describe('user profile screenshot', () => {
     cy.screenshot('user-profile-settings-full')
   })
 
-  it('avatar menu screenshot', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+  it('avatar menu', () => {
+    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
     cy.get('button#user-menu').click()
-    cy.get('#user-menu-popover').should('exist').screenshot('user-menu-detail-panel')
-  })
+    // Using fixed dimensions because default clipping of avatar menu and bottom bar (with create ticket button) did not work
+    cy.get('[id="main-sidebar"]').wait(500).screenshot('avatar-menu', { clip: { x: 0, y: 790, width: 306, height: 290 } })
+    })
 
   it('token creation', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))

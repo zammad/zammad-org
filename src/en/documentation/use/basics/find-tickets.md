@@ -37,7 +37,7 @@ Have a look at the [search guide](/en/documentation/use/guides/search) for more 
 ## Notifications
 
 Depending on the
-[notification settings](/en/documentation/use/manage-profile#notifications) in your profile, you receive updates for
+[notification settings](/en/documentation/use/user-profile#notifications) in your profile, you receive updates for
 different ticket based events like the creation or the update of a ticket. This ensures that no important change
 to a ticket gets overlooked.
 

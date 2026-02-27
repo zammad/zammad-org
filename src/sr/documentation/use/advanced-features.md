@@ -253,7 +253,7 @@ customers. When such a deadline is passed, the ticket escalates.
 
 Zammad notifies you by default when tickets approach or exceed their
 deadlines. Configure these notifications in your [profile
-settings](/en/documentation/use/manage-profile#notifications). Zammad also
+settings](/en/documentation/use/user-profile#notifications). Zammad also
 ships a default overview called "Escalated Tickets". This overview includes
 already escalated tickets and tickets which are expected to escalate within
 the next 10 minutes.

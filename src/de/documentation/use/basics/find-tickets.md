@@ -45,12 +45,11 @@ Suche](/de/documentation/use/guides/search).
 
 ## Benachrichtigungen
 
-Abhängig von den
-[Benachrichtigungseinstellungen](/de/documentation/use/manage-profile#benachrichtigungen)
-in Ihrem Profil erhalten Sie Benachrichtigungen für verschiedene
-Ticket-Aktualisierungen wie die Erstellung oder die Aktualisierung eines
-Tickets. So wird sichergestellt, dass Sie keine wichtige Änderung an einem
-Ticket übersehen.
+Depending on the [notification
+settings](/en/documentation/use/user-profile#notifications) in your profile,
+you receive updates for different ticket based events like the creation or
+the update of a ticket. This ensures that no important change to a ticket
+gets overlooked.
 
 Sie können sie öffnen, indem Sie auf den Benachrichtigungszähler in der
 oberen linken Ecke klicken. Wenn ein Label mit einem Zähler vorhanden ist,

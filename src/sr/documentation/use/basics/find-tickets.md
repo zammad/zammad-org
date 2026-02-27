@@ -45,10 +45,10 @@ more details.
 ## Обавештења
 
 Depending on the [notification
-settings](/en/documentation/use/manage-profile#notifications) in your
-profile, you receive updates for different ticket based events like the
-creation or the update of a ticket. This ensures that no important change to
-a ticket gets overlooked.
+settings](/en/documentation/use/user-profile#notifications) in your profile,
+you receive updates for different ticket based events like the creation or
+the update of a ticket. This ensures that no important change to a ticket
+gets overlooked.
 
 You can open them by clicking on the notification counter in the top left
 corner. If there is a badge with a counter, the counter shows the number of

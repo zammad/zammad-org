@@ -105,8 +105,8 @@ If the order of the overviews doesn't reflect your working process or you
 just like to have a different order, you can re-arrange them for your
 account. Use the `reorder items` button at the very top of the second level
 navigation bar, which opens your [profile
-settings](/en/documentation/use/manage-profile#overviews) where you can
-define a custom order for your overviews.
+settings](/en/documentation/use/user-profile#overviews) where you can define
+a custom order for your overviews.
 
 To change the order, simply drag & drop them by clicking the handles on the
 left side.

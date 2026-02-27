@@ -28,7 +28,7 @@ your Zammad admin should be able to help.
 
 ### How to get notified for ticket changes?
 
-Adjust the [notification settings in your profile](manage-profile#notifications). You can distinguish between the
+Adjust the [notification settings in your profile](user-profile#notifications). You can distinguish between the
 action (e.g. ticket creation), the notification channel (email and/or browser), your relation to the ticket (e.g. if
 you are the owner) and limit the notifications to a specific group.
 
@@ -82,7 +82,7 @@ the different modes.
 
 ### How to change my profile/avatar image?
 
-Go to the [avatar section in you profile settings](manage-profile#avatar) by opening the avatar menu in the bottom
+Go to the [avatar section in you profile settings](user-profile#avatar) by opening the avatar menu in the bottom
 left corner and select **Profile settings**. There you can upload an image, capture a photo (if your device has a
 camera) or delete already present images.
 
@@ -93,7 +93,7 @@ Go to the language section in you profile settings by opening the avatar menu in
 
 ### What should I do before going on vacation?
 
-Go to the [out of office section](manage-profile#out-of-office) in you profile settings by opening the avatar menu in
+Go to the [out of office section](user-profile#out-of-office) in you profile settings by opening the avatar menu in
 the bottom left corner and select **Profile settings**. There you can define a replacement agent.
 
 ### How to adjust the order of the overviews?

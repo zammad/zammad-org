@@ -44,8 +44,8 @@ with GraphQL support are:
 ### Аутентификација
 
 If not already present, create a [token in the Zammad
-profile](/en/documentation/use/manage-profile#token-access) you want to use
-as API user. Depending what you want to achieve via API, set the permissions
+profile](/en/documentation/use/user-profile#token-access) you want to use as
+API user. Depending what you want to achieve via API, set the permissions
 accordingly.
 
 Make sure to copy it before closing the dialog because you can't view it

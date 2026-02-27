@@ -3,7 +3,7 @@ order: 9
 title: 'Двофакторска аутентификација'
 ---
 
-# Увод
+# Двофакторска аутентификација
 
 Двофакторска аутентификација (2FA) повишава безбедност вашег Zammad налога
 додавањем додатног слоја верификације поред лозинке. Захтева од вас да
@@ -17,7 +17,7 @@ activate it to be visible in your profile settings. The 2FA usage may be
 even enforced by your admin. In this case, you can't use Zammad unless you
 set up at least one 2FA method.
 
-## Поставка
+## Setup
 
 If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
 up. Depending on the enabled two-factor methods, you may see one or more options in the table.

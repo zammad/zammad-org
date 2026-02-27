@@ -3,7 +3,7 @@ order: 9
 title: Zwei-Faktor-Authentifizierung
 ---
 
-# Einführung
+# Zwei-Faktor-Authentifizierung
 
 Die Zwei-Faktor-Authentifizierung (2FA) erweitert die Sicherheit Ihres
 Zammad-Kontos, indem eine zusätzliche Prüfung neben Ihrem Passwort
@@ -18,7 +18,7 @@ Profileinstellungen sichtbar ist. Die 2FA-Verwendung kann sogar von Ihrem
 Administrator erzwungen werden. In diesem Fall können Sie Zammad nicht
 verwenden, wenn Sie nicht mindestens eine 2FA-Methode eingerichtet haben.
 
-## Einrichtung
+## Setup
 
 Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Profil-Einstellungen > Zwei-Faktor-Authentifizierung_
 einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.
