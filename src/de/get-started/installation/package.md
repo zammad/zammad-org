@@ -74,7 +74,7 @@ Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
 locale | grep "LANG="
 ```
 
-Wenn die Ausgabe nicht `<lang_code>.utf8` ist, können Sie dieses
+Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
 Problem wie folgt beheben:
 
 ```sh
@@ -89,8 +89,8 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=de_US.UTF-8" > sudo /etc/default/locale
 ```
 
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich war.
+Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
+`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
 
 === Debian
 Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
@@ -99,7 +99,7 @@ Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
 locale | grep "LANG="
 ```
 
-Wenn das obige Ergebnis nicht `<lang_code>.utf8` ist, können Sie dieses
+Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
 Problem wie folgt beheben:
 
 ```sh
@@ -114,8 +114,9 @@ sudo locale-gen en_US.UTF-8
 echo "LANG=de_US.UTF-8" > sudo /etc/default/locale
 ```
 
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich war.
+
+Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
+`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
 
 === OpenSUSE/SLES
 Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
@@ -123,16 +124,16 @@ Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
 ```sh
 localectl status | grep LANG
 ```
-
-Wenn das obige Ergebnis nicht `<lang_code>.utf8` ist, können Sie dieses
+Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
 Problem wie folgt beheben:
 
 ```sh
 sudo localectl set-locale LANG=de_US.UTF-8
 ```
 
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich war.
+
+Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
+`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
 
 ===CentOS/RHEL
 Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
@@ -141,15 +142,16 @@ Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
 locale | grep "LANG="
 ```
 
-Wenn das obige Ergebnis nicht `<lang_code>.utf8` ist, können Sie dieses
+Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
 Problem wie folgt beheben:
 
 ```sh
 sudo localectl set-locale LANG=de_US.UTF-8
 ```
 
-Nachdem Sie den Fehler behoben haben, überprüfen Sie die Ausgabe noch einmal auf
-`<lang_code>.utf8`. Ein Neustart kann helfen, wenn dies nicht erfolgreich war.
+
+Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
+`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
 
 :::
 
