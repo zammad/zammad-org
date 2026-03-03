@@ -5,10 +5,9 @@ title: 'Erweiterte Funktionen'
 
 # Erweiterte Funktionen
 
-Diese Seite deckt nützliche Funktionen ab, die auf einzelnen Seiten nicht
-sinnvoll wären. Lesen Sie einfach weiter, durchsuchen Sie die Seite oder
-navigieren Sie zu dem gewünschten Abschnitt im Inhaltsverzeichnis auf der
-rechten Seite.
+This page features a collection of various helpful tools that don't need
+their own separate pages. Just keep reading, search the page or navigate to
+the section you want using the table of contents on the right.
 
 ## Verhalten bei Ticket-Aktualisierung
 
@@ -17,10 +16,9 @@ Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavi
 
 **Warum?**
 
-Es ist möglich, einen Tab für ein Ticket in der Navigationsleiste
-automatisch zu schließen. Es hängt von Ihren Präferenzen ab, aber Sie können
-sich einen Klick nach der Aktualisierung oder der Aktualisierung auf den
-Status _geschlossen_ sparen.
+It is possible to automatically close a ticket tab in the navigation sidebar
+after updating a ticket.  This saves you a click after updating or updating
+a ticket to _closed_ state.
 
 **Wie?**
 
@@ -29,15 +27,14 @@ Klicken Sie in der Fußleiste der Ticket-Detailansicht auf die Schaltfläche
 Standardeinstellung noch vorhanden ist, andernfalls ist sie wie die anderen
 Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
 
-- **Tab beibehalten**: Standardoption. Sie müssen den Tab manuell schließen,
-  wenn Sie ihn aus Ihrer Navigationsseitenleiste entfernen möchten.
+- **Stay on tab**: Default option. You have to manually close the tab if you
+  want to remove it from your navigation sidebar.
 - **Tab schließen**: Mit dieser Option wird der Tab bei jeder Aktualisierung
   des Tickets geschlossen. Dies kann eine gute Option sein, wenn Sie mit
   vielen Tickets zu tun haben und/oder die Tickets viele Interaktionen
   erfordern.
-- **Tab schließen bei Ticket-Schließung**: Mit dieser Option wird der Tab
-  nur geschlossen, wenn das Ticket aktualisiert wird und der Status auf
-  _geschlossen_ gesetzt wird.
+- **Close tab on ticket close**: This option only closes the tab when the
+  ticket is updated to the _closed_ state.
 
 ::: tip
 Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten** lassen und die Tastenkombination
@@ -91,10 +88,10 @@ schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie
 nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen
 oder Wörter eingeben.
 
-## Erwähnen von Kollegen
+## Mention a User
 
-![Screenshot zeigt Erwähnung eines
-Kollegen](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a
+user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Warum?**
 
@@ -104,10 +101,9 @@ und dieses Ticket abonnieren.
 
 **Wie?**
 
-Verwenden Sie beim Schreiben eines Ticket-Artikels die Schaltfläche in der
-Symbolleiste des Editors oder geben Sie einfach [[@]][[@]] ein. Auf beiden
-Wegen können Sie nach dem Namen des Kollegen suchen, den Sie erwähnen
-möchten, indem Sie einige Buchstaben oder den vollständigen Namen eingeben.
+While writing a ticket article, use the button in the toolbar of the editor
+or simply type [[@]][[@]]. Both ways let you search for the name of the user
+you want to mention by typing some characters or the complete name.
 
 Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und

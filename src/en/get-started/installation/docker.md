@@ -19,11 +19,11 @@ the Zammad application.
 
 - A working Docker Compose environment
 - At least 4 GB of RAM to run the containers
-- Adjust your host's settings to run Elasticsearch properly:
+- Increase the memory limit for Elasticsearch on Linux hosts:
 
-    ```sh
-    sudo sysctl -w vm.max_map_count=262144
-    ```
+  ```sh
+  sudo sysctl -w vm.max_map_count=262144
+  ```
 
 ## Deployment with Portainer
 
@@ -35,7 +35,7 @@ installation instructions, check out
 ### Step 1: Add Stack
 
 In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and choose `Add stack` as you can see in
+target environment, select **Stacks** and click on `Add stack` as you can see in
 the screenshot below.
 
 ![Screenshot in the Stacks section and highlighted "Add stack".](/screenshots/installation/portainer-stacks.png)
@@ -49,9 +49,8 @@ Switch to **Repository** build method and provide the information below:
 - **Repository reference**: `refs/heads/master`
 - **Compose path**: `docker-compose.yml` (default)
 
-In some cases, our default environment is not what a Docker Compose user is
-looking for. You can customize the stack using pre-defined scenarios and
-adjust environment variables. Jump to the [customization section](#customizing-the-zammad-stack) below to find more
+In case our default environment is not what you are looking for, you can customize the stack using predefined scenarios
+and adjust environment variables. Jump to the [customization section](#customizing-the-zammad-stack) below to find more
 information.
 
 ![Stack creation with provided information in Repository screen](/screenshots/installation/portainer-stack-creation.png)
@@ -77,7 +76,7 @@ Make sure to run `git pull` frequently to fetch updates. Alternatively, you can 
 ### Step 2: Adjust Environment as Needed
 
 In some cases, our default environment is not what a Docker Compose user is looking for. You can customize the stack
-using pre-defined scenarios and adjust environment variables. Jump to the
+using predefined scenarios and adjust environment variables. Jump to the
 [Customizing the Zammad Stack](#customizing-the-zammad-stack) section below to find more information.
 
 ### Step 3: Start the Stack

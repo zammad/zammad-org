@@ -5,8 +5,8 @@ order: 4
 
 # Advanced Features
 
-This page covers useful features that would not make sense to cover on individual pages. Just keep reading, search the
-page or navigate to the desired section in the table of content on the right.
+This page features a collection of various helpful tools that don't need their own separate pages. Just keep reading,
+search the page or navigate to the section you want using the table of contents on the right.
 
 ## Ticket Update Behavior
 
@@ -14,20 +14,19 @@ page or navigate to the desired section in the table of content on the right.
 
 **Why?**
 
-It is possible to automatically close a ticket tab in the navigation sidebar. It depends on your preferences, but you
-can save a click after updating or updating a ticket to _closed_ state.
+It is possible to automatically close a ticket tab in the navigation sidebar after updating a ticket.
+This saves you a click after updating or updating a ticket to _closed_ state.
 
 **How?**
 
 In the footer bar of the ticket detail view, click on the `Stay on tab ^` button and select your desired option (if the
 default is still set, otherwise it is labeled as the other options below). You have different options:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you want to have it removed from your
+- **Stay on tab**: Default option. You have to manually close the tab if you want to remove it from your
   navigation sidebar.
 - **Close tab**: This option closes the tab on each update of the ticket. Might be a good option if you have to deal
   with many tickets and/or the tickets require many interactions.
-- **Close tab on ticket close**: This option only closes the tab when the ticket is updated and the state is set to
-  _closed_.
+- **Close tab on ticket close**: This option only closes the tab when the ticket is updated to the _closed_ state.
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
@@ -69,9 +68,9 @@ This saves you time because you don't have to switch to the knowledge base and c
 Use the button in the toolbar of the editor or simply write [[?]][[?]] in the editor. Both ways let you search for the
 desired knowledge base article by typing some characters or words.
 
-## Mention a Colleague
+## Mention a User
 
-![Screenshot shows mentioning a colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Why?**
 
@@ -81,7 +80,7 @@ ticket updates and are automatically subscribed to this ticket.
 **How?**
 
 While writing a ticket article, use the button in the toolbar of the editor or simply type [[@]][[@]]. Both ways let you
-search for the name of the colleague you want to mention by typing some characters or the complete name.
+search for the name of the user you want to mention by typing some characters or the complete name.
 
 Zammad displays a list with all possible matches where you can pick one by clicking on it or by using the up and down
 arrows followed by [[enter]] on your keyboard.

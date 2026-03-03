@@ -3,7 +3,7 @@ order: 2
 title: Rails-Befehle
 ---
 
-# Rails-Konsole
+# Rails-Befehle
 
 Zammad verwendet Ruby on Rails, so dass Sie die [Rails
 Konsole](http://guides.rubyonrails.org/command_line.html){target=_blank}

@@ -262,7 +262,7 @@ Required permission: `admin.object`
 ::: warning
 After executing the database migrations, a restart of Zammad is
 _mandatory_. If not deactivated via
-[auto shutdown setting](/en/reference/console#auto-shutdown-setting),
+[auto shutdown setting](/en/reference/rails-commands#auto-shutdown-setting),
 Zammad automatically restarts - expect a short downtime.
 :::
 

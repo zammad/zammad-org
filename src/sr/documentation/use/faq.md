@@ -78,9 +78,9 @@ different. If in doubt, you should ask your admin.
 ### How can I use keyboard shortcuts?
 
 Just use them! You can find an overview of the available shortcuts by
-pressing [[?]] on your keyboard or open the overview from the avatar menu
-(click on your avatar in the bottom left corner and select **Keyboard
-shortcuts**).
+pressing [[?]] on your keyboard or open the overview from the [avatar
+menu](user-profile#avatar-menu) (click on your avatar in the bottom left
+corner and select **Keyboard shortcuts**).
 
 Some of them depend on the location you are or action you perform
 (e.g. being in the editor or in the ticket detail view).
@@ -88,25 +88,25 @@ Some of them depend on the location you are or action you perform
 ### How to switch between dark and light mode for the user interface?
 
 You can switch between light, dark and automatic mode (tries to adapt to
-your browser) in the avatar menu. Open it by clicking your avatar in the
-bottom left corner and switch the toggle to the desired state.
-
-Another possibility is to use the keyboard shortcut [[d]]. If no input field
-is activated, pressing it cycles between the different modes.
+your browser) in the [avatar menu](user-profile#avatar-menu). Open it by
+clicking your avatar in the bottom left corner and switch the toggle to the
+desired state or use the keyboard shortcut [[d]]. If no input field is
+activated, it cycles between the different modes.
 
 ## Кориснички профил
 
 ### How to change my profile/avatar image?
 
-Go to the [avatar section in you profile settings](user-profile#avatar) by
+Go to the [avatar section](user-profile#avatar) in you profile settings by
 opening the avatar menu in the bottom left corner and select **Profile
 settings**. There you can upload an image, capture a photo (if your device
 has a camera) or delete already present images.
 
 ### How to change the language of the Zammad user interface?
 
-Go to the language section in you profile settings by opening the avatar
-menu in the bottom left corner and select **Profile settings**.
+Go to the [language section](user-profile#language) in you profile settings
+by opening the avatar menu in the bottom left corner and select **Profile
+settings**.
 
 ### What should I do before going on vacation?
 
@@ -134,11 +134,9 @@ by using [[@]][[@]] and raise your question.
 
 First of all, tickets can't be deleted by agents. This is done for the
 reason of transparency and to prevent deletion by accident and arbitrary
-deletion.
-
-However, if customers want their data to be deleted (e.g. due to a GDPR
-deletion request), this can be done in Zammad.  Contact your Zammad admin
-and ask to execute the deletion job.
+deletion. However, if customers want their data to be deleted (e.g. due to a
+GDPR deletion request), this can be done in Zammad. Contact your Zammad
+admin and ask to execute the deletion job.
 
 ### How to use text templates?
 

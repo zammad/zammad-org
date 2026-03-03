@@ -311,9 +311,9 @@ speichert.
 Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt
 wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann.
 
-Prüfen und passen Sie Ihre
-Einstellung zur Speicherung von Anhängen [über die Konsole](/de/reference/console#storage-provider-einstellungen)
-oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.
+Check and adjust your
+[storage settings via console](/en/reference/rails-commands#storage-provider-setting)
+or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Hilfsskript
 

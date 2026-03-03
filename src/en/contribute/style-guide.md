@@ -33,15 +33,15 @@ to get started.
 
 ## Audience Assumptions
 
-The documentation is written assuming that **users** have a basic understanding of web browser usage and common software
-design concepts. This means for example that features are described in detail, but not on a level of how to open a
-dropdown field.
+The documentation assumes that **users** have a basic understanding of how to use web browsers and are familiar with
+common software design concepts. This means, for example, that features are described in detail, but not to the level
+of explaining how to open a dropdown menu.
 
-The **Zammad administrator** additionally should have a basic technical understanding and should also know the workflows
-and communication processes in its company.
+The **Zammad administrator** should also have a basic technical understanding and be familiar with the workflows and
+communication processes within their company.
 
 For self-hosted instances, **system administrators** should also be familiar with Linux system administration basics.
-Access to the host system (e.g. via SSH) and administrative permissions are taken for granted for system administrators.
+Access to the host system (e.g. via SSH) and administrative permissions are taken for granted.
 
 ## Content
 
@@ -58,8 +58,8 @@ important steps should be included. The readers should achieve their goals as qu
 having to read a lot.
 
 Due to the fact that a documentation can't cover everything (otherwise it would be on a code-like detail level), the
-relevance has to be considered. If parts with a common use case are missing, it should be intended to include them in
-the documentation.
+relevance has to be considered too. If parts with a common use case are missing, it should be intended to include them
+in.
 
 ## Style and Rules
 

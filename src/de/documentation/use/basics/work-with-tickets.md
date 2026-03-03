@@ -149,10 +149,10 @@ Wenn Sie im Ticket nach unten gescrollt haben, fahren Sie mit dem Mauszeiger
 Kopieren der
 Ticket-Nummer](/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)
 
-Aber halt, dafür gibt es sogar ein Tastaturkürzel. Drücken Sie einfach [[.]]
-und die Ticket-Nummer wird in Ihre Zwischenablage kopiert. Um auch den Titel
-des Tickets zu übernehmen, drücken Sie zweimal [[.]]. Beispiel:
-`Ticket#31004: Einarbeitung eines neuen Kollegen`.
+But wait, there is even a keyboard shortcut for that! Simply press [[.]] in
+the ticket detail view and the ticket number is copied to your clipboard. To
+include the ticket title as well, press [[.]] twice.  Example:
+`Ticket#31004: Onboarding new colleague`.
 
 ## Gleichzeitige Ticketbearbeitung
 

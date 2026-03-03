@@ -50,14 +50,13 @@ You can format text in the editor in different ways:
 - Use [Markdown](https://www.markdownguide.org) syntax
 
 The editor **toolbar** includes buttons for common formatting tasks. Hovering over each button will display a tooltip
-explaining its function. As an alternative you can use **keyboard shortcuts** (see next two sections). For both
-variants you can activate a formatting option in advance and then add your text or select existing text and apply the
-formatting option afterwards.
+explaining its function. As an alternative you can use **keyboard shortcuts** (see next two sections). Either activate
+the formatting in advance or select the text after writing and use the formatting you want to apply.
 
 ### General Keyboard Shortcuts
 
-The editor also supports keyboard shortcuts to streamline your workflow. These shortcuts are common across
-many text processing tools. Important shortcuts are:
+The editor also supports keyboard shortcuts to streamline your workflow. These shortcuts are common across many text
+processing tools. Important shortcuts are:
 
  Shortcut/command              | Formatting
 -------------------------------|---------------
@@ -65,14 +64,18 @@ many text processing tools. Important shortcuts are:
 [[ctrl]] + [[i]]               | _Italics_
 [[ctrl]] + [[u]]               | <u>Underline</u>
 
-Have a look at the next section to use even more formatting via keyboard. Regardless if you are used to Markdown or not,
-some of them might still be helpful in your daily work.
+Have a look at the keyboard shortcuts in Zammad where you can find all shortcuts. Open it via the
+[avatar menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left corner or type [[?]].
+
+Have a look at the next section to use even more formatting via keyboard. Regardless if you are used to write Markdown
+or not, some of them might still be helpful in your daily work.
 
 ### Markdown Usage
 
-For users familiar with Markdown syntax, the editor provides support for formatting content with Markdown. When using
-Markdown syntax, it gets immediately replaced/executed so you can see the result directly in the editor. To go back to
-standard text, simply use the same limiter again or use [[enter]], depending on the option.
+For users familiar with Markdown syntax, the editor provides basic support for formatting content with Markdown. When
+using Markdown syntax, it gets immediately applied immediately or after the closing limiter so you can see the result
+directly in the editor. To go back to standard text, simply use the same limiter again or use [[enter]], depending on
+the option.
 
 It is not intended to support all Markdown features, but to help users getting things done more easily. Therefore, the
 most important things are supported like headings, lists, links, code blocks and more. Have a look at the non-exhaustive

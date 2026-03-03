@@ -16,7 +16,7 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 ## Installation
 
-### Abrufen und Hinzufügen des öffentlichen Signaturschlüssels
+### Add Repository Key
 
 ::: tabs key:distros
 
@@ -50,7 +50,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Repository hinzufügen
+### Add Repository
 
 ::: tabs key:distros
 

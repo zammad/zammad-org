@@ -150,11 +150,6 @@ auf [deren
 Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
 und folgen Sie den Anweisungen.
 
-Falls Sie Plugins für Elasticsearch verwenden, stellen Sie sicher, dass
-diese ebenfalls aktualisiert werden (Hinweis: Ab Elasticsearch 8 ist das
-Ingest-Attachment-Plugin nicht mehr notwendig, sondern ist Bestandteil von
-Elasticsearch selbst).
-
 ### Elasticsearch-Index erneuern <Badge type="tip" text="optional" />
 
 Wird nur benötigt, wenn Sie in den Release-Notes aufgefordert werden, den

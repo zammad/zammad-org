@@ -74,9 +74,7 @@ with an AI agent action, you can even run it manually. Ask your admin for detail
 ### Ticket History
 
 If an AI agent applied changes, you can see a ticket history entry telling you the name of the AI agent. If you notice
-ongoing issues with what the AI agent did, inform your Zammad admin.
-
-Example of a history entry of an AI agent:
+ongoing issues with what the AI agent did, inform your Zammad admin. Example of a history entry of an AI agent:
 
 ![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-ticket-history.png)
 

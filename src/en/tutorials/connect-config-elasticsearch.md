@@ -7,7 +7,7 @@ order: 2
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch 8 or newer.
+This guide shows you how to connect Zammad with Elasticsearch.
 
 ## Connect Elasticsearch with Zammad
 
@@ -110,7 +110,7 @@ By default, the
 [Asciifold feature of Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
 is enabled. This can be useful if you deal with text which includes diacritics and/or umlauts.
 
-In case you need a more exact search, you can turn it off via [Rails console](/en/reference/console#disable-asciifold).
+In case you need a more exact search, you can turn it off via [Rails console](/en/reference/rails-commands#disable-asciifold).
 
 ## Troubleshooting
 

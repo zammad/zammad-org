@@ -7,7 +7,7 @@ title: 'Connect and Configure Elasticsearch'
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch 8 or newer.
+This guide shows you how to connect Zammad with Elasticsearch.
 
 ## Connect Elasticsearch with Zammad
 
@@ -113,7 +113,7 @@ is enabled. This can be useful if you deal with text which includes
 diacritics and/or umlauts.
 
 In case you need a more exact search, you can turn it off via [Rails
-console](/en/reference/console#disable-asciifold).
+console](/en/reference/rails-commands#disable-asciifold).
 
 ## Решавање проблема
 

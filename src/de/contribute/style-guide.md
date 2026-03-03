@@ -40,20 +40,18 @@ fragen, um loszulegen.
 
 ## Annahmen zur Leserschaft
 
-Die Dokumentation geht davon aus, dass **Benutzer** ein grundlegendes
-Verständnis für die Verwendung von Webbrowsern und gängige
-Software-Design-Konzepte haben. Das bedeutet, dass Funktionen detailliert
-beschrieben werden, aber zum Beispiel nicht auf der Ebene, wie man ein
-Dropdown-Feld öffnet.
+The documentation assumes that **users** have a basic understanding of how
+to use web browsers and are familiar with common software design
+concepts. This means, for example, that features are described in detail,
+but not to the level of explaining how to open a dropdown menu.
 
-Der **Zammad-Administrator** sollte zudem über ein technisches
-Grundverständnis verfügen und auch die Arbeitsabläufe und
-Kommunikationsprozesse in seinem Unternehmen kennen.
+The **Zammad administrator** should also have a basic technical
+understanding and be familiar with the workflows and communication processes
+within their company.
 
-Bei selbst gehosteten Instanzen sollten **Systemadministratoren** auch mit
-den Grundlagen der Linux-Systemverwaltung vertraut sein. Der Zugang zum
-Host-System (z.B. über SSH) und administrative Rechte werden für
-Systemadministratoren vorausgesetzt.
+For self-hosted instances, **system administrators** should also be familiar
+with Linux system administration basics.  Access to the host system
+(e.g. via SSH) and administrative permissions are taken for granted.
 
 ## Inhalt
 
@@ -73,10 +71,10 @@ es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
 sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
 möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie auf einer
-codeähnlichen Detailebene), muss die Relevanz berücksichtigt werden. Wenn
-Teile mit einem gebräuchlichen Anwendungsfall fehlen, sollte beabsichtigt
-werden, diese in die Dokumentation aufzunehmen.
+Due to the fact that a documentation can't cover everything (otherwise it
+would be on a code-like detail level), the relevance has to be considered
+too. If parts with a common use case are missing, it should be intended to
+include them in.
 
 ## Stil und Regeln
 

@@ -1,9 +1,9 @@
 ---
+title: Rails Commands
 order: 2
-title: 'Rails Commands'
 ---
 
-# Rails Console
+# Rails Commands
 
 Zammad uses Ruby on Rails so you can make use of the [Rails
 console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
@@ -78,13 +78,13 @@ rails c
 
 ### Rails Console Safe Mode
 
-Normally, starting Rails console requires certain third party services to be
-up and running. You may receive errors and console will refuse to start in
-case they are not available.
+Normally, starting Rails console requires certain third party services
+to be up and running. You may receive errors and console will refuse to start
+in case they are not available.
 
-However, it's possible to start Rails console in safe mode by setting a
-special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
-ignored.
+However, it's possible to start Rails console in safe mode by setting
+a special environment variable. With `ZAMMAD_SAFE_MODE=1`
+set, these checks be ignored.
 
 ```sh
 ZAMMAD_SAFE_MODE=1 zammad run rails c
@@ -94,22 +94,23 @@ ZAMMAD_SAFE_MODE=1 zammad run rails c
 
 ### Get the RAW Email
 
-The following command will help you to check on received EML-files Zammad
-fetched. This comes in handy if you delete Mails upon fetching and you need
-to check the EML-file itself.
+The following command will help you to check on received EML-files
+Zammad fetched. This comes in handy if you delete Mails upon fetching
+and you need to check the EML-file itself.
 
-To get the first articles EML-file, you can use the following command.  In
-our example the ticket number in question is `101234`.
+To get the first articles EML-file, you can use the following command.
+In our example the ticket number in question is `101234`.
 
 ```ruby
 Ticket.find_by(number:'101234').articles.first.as_raw.content
 ```
 
-If needed, you can also get the raw content of later articles (you'll need
-to find the correct article though). Again, we expect `101234` to be our
-ticket number.
+If needed, you can also get the raw content of later articles (you'll
+need to find the correct article though). Again, we expect `101234` to
+be our ticket number.
 
-In the first step we get all article IDs of the ticket:
+In the first step we get all article IDs of the
+ticket:
 
 ```ruby
 Ticket.find_by(number:'101234').article_ids
@@ -161,8 +162,8 @@ Above will return both, the type ID and name - e.g.:
 
 ### Find User
 
-In order to work on user information or to check for specific information,
-you'll need to find it first.
+In order to work on user information or to check for specific
+information, you'll need to find it first.
 
 User ID already known:
 
@@ -193,8 +194,8 @@ wrong password multiple times. Depending on your maximum failing login
 count (<span class="title-ref">default: 10 times</span>), Zammad might
 lock the account.
 
-The user can't login any more (forever) if he doesn't change the password or
-you reset the counter.
+The user can't login any more (forever) if he doesn't change the
+password or you reset the counter.
 
 ```ruby
 u=User.find(**USERID**)
@@ -208,9 +209,9 @@ u.login_failed=0
 u.save!
 ```
 
-You can also double check if the account is locked by running the following
-command (result needs to be 1 above your limit, so 11 for the default of 10
-failing logins):
+You can also double check if the account is locked by running the
+following command (result needs to be 1 above your limit, so
+11 for the default of 10 failing logins):
 
 ```ruby
 User.find(**USERID**).login_failed
@@ -241,8 +242,8 @@ You need to find the user ID of the user first for this.
 
 ### Change / Update Login Name of User
 
-Change the user name of the user (e.g. if you want to login with a shorter
-username instead of a mail address)
+Change the user name of the user (e.g. if you want to login with a
+shorter username instead of a mail address)
 
 ```ruby
 u = User.find(**USERID**)
@@ -277,8 +278,8 @@ u.save!
 
 ### Set Password for User
 
-You or the user did forget his password? No problem! Simply reset it by hand
-if needed.
+You or the user did forget his password? No problem! Simply reset it by
+hand if needed.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
@@ -286,11 +287,11 @@ User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
 
 ### Remove Password for User
 
-If you added a second authentication method (e.g. LDAP) after launch, there
-still may be a password in Zammad's own user management. In cases like that
-users will be able to login with their (local) Zammad password in addition
-to the credentials stored on the external authentication provider. Simply
-remove the password stored by Zammad.
+If you added a second authentication method (e.g. LDAP) after launch,
+there still may be a password in Zammad's own user management. In cases
+like that users will be able to login with their (local) Zammad password
+in addition to the credentials stored on the external authentication
+provider. Simply remove the password stored by Zammad.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: nil)
@@ -308,8 +309,8 @@ Group.find_by(name: 'Users').follow_up_possible
 
 ### Remove IP Address Logs
 
-Use the following command to remove all IP address records from closed chats
-that haven't been updated in the last seven days:
+Use the following command to remove all IP address records
+from closed chats that haven't been updated in the last seven days:
 
 ```ruby
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
@@ -331,16 +332,16 @@ end
 
 ## Zammad Settings
 
-In this section, you can find some settings which you can set in the Zammad
-UI as well.
+In this section, you can find some settings which you can set in the Zammad UI
+as well.
 
 ### Auto Shutdown Setting
 
-Defines if an automatic shutdown of Zammad is performed when the the
-database has been changed (e.g. after custom attributes have been created in
-the object manager).  The underlying system (Systemd, Docker, Kubernetes)
-will then restart the processes/containers after this shutdown. The default
-setting is `true`.
+Defines if an automatic shutdown of Zammad is performed when the the database
+has been changed (e.g. after custom attributes have been created in the
+object manager).
+The underlying system (Systemd, Docker, Kubernetes) will then restart the
+processes/containers after this shutdown. The default setting is `true`.
 
 Setting this to `false` might only make sense in very rare cases and you
 have to restart the Zammad services then manually.
@@ -351,9 +352,9 @@ Setting.set('auto_shutdown', 'true')
 
 ### Ticket_hook Setting
 
-This will give you the ticket hook that you'll find inside the `[]` in front
-of the ticket number. By default this will be `Ticket#` - you shouldn't
-change this setting in a productive system.
+This will give you the ticket hook that you'll find inside the `[]` in
+front of the ticket number. By default this will be
+`Ticket#` - you shouldn't change this setting in a productive system.
 
 ```ruby
 Setting.get('ticket_hook')
@@ -374,7 +375,7 @@ Get current FQDN:
 Setting.get('fqdn')
 ```
 
-Подесите нови FQDN:
+Set a new FQDN:
 
 ```ruby
 Setting.set('fqdn', 'new.domain.tld')
@@ -426,12 +427,11 @@ Setting.set('storage_provider', 'DB')
 
 If you have already stored files and want to move them, you can use the
 following example. Please be aware that this operation should only be
-executed in non-productive environments. In case you have to perform it in
-production environments, you should specify a sleep delay - otherwise your
-Zammad can be unresponsive.
+executed in non-productive environments. In case you have to perform it
+in production environments, you should specify a sleep delay - otherwise
+your Zammad can be unresponsive.
 
-Move files from DB to File with a specified delay after each file in
-seconds:
+Move files from DB to File with a specified delay after each file in seconds:
 
 ```ruby
 Store::File.move('DB', 'File', delay_in_sec)
@@ -507,15 +507,13 @@ Setting.set('proxy_password', 'some pass')
 
 ### Disable Asciifold
 
-This feature is turned on by default. In case you need a more exact search,
-you can turn it off:
+This feature is turned on by default. In case you need a more exact search, you can turn it off:
 
 ```ruby
 Setting.set('es_asciifolding', false)
 ```
 
-After changing the setting, make sure to [rebuild the search
-index](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
+After changing the setting, make sure to [rebuild the search index](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
 
 ## Hidden Settings
 
@@ -525,9 +523,10 @@ behavior.
 
 ### Send All Outgoing EMails to a BCC-Mailbox
 
-This option allows you to send all outgoing emails (not notifications)  to a
-specific mailbox. Please note that this shouldn't be a mailbox you're
-importing already! This will apply to all groups and is a global setting.
+This option allows you to send all outgoing emails (not notifications)
+to a specific mailbox. Please note that this shouldn't be a mailbox
+you're importing already! This will apply to all groups and is a global
+setting.
 
 ```ruby
 Setting.set('system_bcc', 'alias@domain.tld')
@@ -584,8 +583,8 @@ Setting.get('ui_ticket_create_default_type')
 
 ### Adding a Warning to the Ticket Creation Process
 
-If you want to give your agent a note or warning during ticket **creation**,
-you can do so with the below command.
+If you want to give your agent a note or warning during ticket
+**creation**, you can do so with the below command.
 
 You can use three different warnings for:
 
@@ -654,8 +653,8 @@ Setting.get('ui_ticket_add_article_hint')
 
 ### Show Email Address of Customer on Customer Selection (Ticket Creation)
 
-By default, Zammad will not display the email addresses of customers.  The
-below option allows you to change this behavior.
+By default, Zammad will not display the email addresses of customers.
+The below option allows you to change this behavior.
 
 ```ruby
 Setting.set('ui_user_organization_selector_with_email', true)
@@ -717,8 +716,8 @@ Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')
 
 Zammad shows the customer profile dialog when a call of this customer is
 incoming and there is an existing ticket of this customer in this time
-period. The default time period is 30 days. If there is no ticket in this
-period, the customer dialog is not shown automatically.
+period. The default time period is 30 days. If there is no ticket in
+this period, the customer dialog is not shown automatically.
 
 Set the time period to 90 days:
 
@@ -729,9 +728,9 @@ Setting.set('cti_customer_last_activity', '90')
 ### Set Public "Notes" as SLA relevant
 
 Normally, notes aren't SLA relevant. Use the following command to include
-publicly-visible notes when tracking SLA compliance (internal notes _will
-never_ affect SLA calculations). Be aware that this setting will disable the
-option to delete public notes.
+publicly-visible notes when tracking SLA compliance (internal notes _will never_
+affect SLA calculations). Be aware that this setting will disable the option
+to delete public notes.
 
 :::info
 By default, customers are not notified when public notes are added to a
@@ -763,8 +762,8 @@ Setting.set('ui_ticket_priority_icons', true)
 
 ### Fetch Emails
 
-The below command will do a manual fetch of mail channels. This will also
-show errors that might appear within that process.
+The below command will do a manual fetch of mail channels. This will
+also show errors that might appear within that process.
 
 ```ruby
 Channel.fetch
@@ -772,13 +771,13 @@ Channel.fetch
 
 ### Reprocess Failed Emails
 
-When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a
-malformed message), it will store the email in the database and warn in the
-monitoring section about it.
+When Zammad fetches an email it cannot parse (e.g. due to a parser bug or
+a malformed message), it will store the email in the database and warn in
+the monitoring section about it.
 
-In case of a malformed message (e.g. an invalid email address in one of the
-header fields), you may need to manually edit the email before Zammad can
-process it. To do so, follow the steps below.
+In case of a malformed message (e.g. an invalid email address in one of
+the header fields), you may need to manually edit the email before Zammad
+can process it. To do so, follow the steps below.
 
 #### Export all Failed Emails to a Local Folder
 
@@ -786,15 +785,15 @@ process it. To do so, follow the steps below.
 rake zammad:email_parser:failed_email:export_all`
 ```
 
-You can find the location of the exported email in the output of your
-console.  Every time you perform an export of failed (unprocessable) emails,
-it creates one folder containing all failed emails at the time of execution.
+You can find the location of the exported email in the output of your console.
+Every time you perform an export of failed (unprocessable) emails, it creates
+one folder containing all failed emails at the time of execution.
 
 #### Edit the Email
 
-The email has been exported in the step above. Now you can have a look at it
-and try to repair it. Make sure to leave the file name untouched, as the
-import will otherwise fail.
+The email has been exported in the step above. Now you can have a look
+at it and try to repair it. Make sure to leave the file name untouched,
+as the import will otherwise fail.
 
 #### Import and Reprocess Locally Modified Email
 
@@ -804,10 +803,10 @@ After editing the email, run:
 rake zammad:email_parser:failed_email:import path/to/your/email.eml
 ```
 
-This will apply your changes from the file to the database. You can also
-pass the entire folder as argument, so all `.eml` files in it will we
-imported and reprocessed. If the reprocessing of the email was successful,
-the file(s) will be deleted, and the empty folder removed.
+This will apply your changes from the file to the database. You can also pass
+the entire folder as argument, so all `.eml` files in it will we imported
+and reprocessed. If the reprocessing of the email was successful, the
+file(s) will be deleted, and the empty folder removed.
 
 :::tip
 Make sure to run these commands only from the main Zammad folder
@@ -824,9 +823,9 @@ database after exporting them with the following command:
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
 
-If you pass the export folder as argument instead, all contained emails will
-be removed from the database, their files deleted and finally the empty
-folder removed.
+If you pass the export folder as argument instead, all contained emails
+will be removed from the database, their files deleted and finally the
+empty folder removed.
 
 ### Fill a Test System With Test Data
 
@@ -835,10 +834,10 @@ Don't run this in a productive environment! This can slow down Zammad
 and is hard to revert!
 :::
 
-The below command will add `50` agents, `1000` customers, `20` groups, `40`
-organizations, `5` new overviews and `100` tickets. You can always use `0`
-to not create specific items. Zammad will create random data which make no
-logical sense.
+The below command will add `50` agents, `1000` customers, `20` groups,
+`40` organizations, `5` new overviews and `100` tickets. You can always
+use `0` to not create specific items. Zammad will create random data
+which make no logical sense.
 
 ```ruby
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
@@ -976,8 +975,7 @@ Remove all entries from the Activity Stream (dashboard):
 ActivityStream.destroy_all
 ```
 
-Remove entries for all recently viewed objects(tickets, users,
-organizations):
+Remove entries for all recently viewed objects(tickets, users, organizations):
 
 ```ruby
 RecentView.destroy_all

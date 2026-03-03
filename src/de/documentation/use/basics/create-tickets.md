@@ -79,7 +79,6 @@ weiter, um mehr zu erfahren.
 
 -----
 
-Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie
-schließlich das Ticket mit einem Klick auf die Schaltfläche
-**Erstellen**. Lesen Sie, wie man [Tickets findet](find-tickets) und [wie
-man mit Tickets arbeitet](work-with-tickets).
+After you provided the relevant information, finally create the ticket with
+a click on the **Create** button. Read on [how to work with existing
+tickets](work-with-tickets).

@@ -5,9 +5,9 @@ title: 'Напредне функције'
 
 # Напредне функције
 
-This page covers useful features that would not make sense to cover on
-individual pages. Just keep reading, search the page or navigate to the
-desired section in the table of content on the right.
+This page features a collection of various helpful tools that don't need
+their own separate pages. Just keep reading, search the page or navigate to
+the section you want using the table of contents on the right.
 
 ## Понашање при освежавању тикета
 
@@ -16,9 +16,9 @@ desired section in the table of content on the right.
 
 **Зашто?**
 
-Могуће је аутоматски затворити прозор тикета у бочној траци
-навигације. Зависи од ваших подешавања, али можете уштедети клик након
-освежавања или освежавања тикета са стањем _затворено_.
+It is possible to automatically close a ticket tab in the navigation sidebar
+after updating a ticket.  This saves you a click after updating or updating
+a ticket to _closed_ state.
 
 **Како?**
 
@@ -27,13 +27,13 @@ desired section in the table of content on the right.
 супротном имаће један од назива опција испод). Имате неколико различитих
 опција:
 
-- **Остани у прозору**: Подразумевана опција. Мораћете ручно да затворите
-  прозор уколико желите да буде уклоњен из ваше бочне траке навигације.
+- **Stay on tab**: Default option. You have to manually close the tab if you
+  want to remove it from your navigation sidebar.
 - **Затвори прозор**: Ова опција затвара прозор по сваком освежавању
   тикета. Може бити добра опција ако обрађујете пуно тикета и/или тикети
   захтевају пуно интеракције.
-- **Затвори прозор по затварању тикета**: Ова опција затвара прозор само
-  када је тикет освежен и стање је постављено на _затворено_.
+- **Close tab on ticket close**: This option only closes the tab when the
+  ticket is updated to the _closed_ state.
 
 ::: tip
 If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
@@ -83,10 +83,10 @@ Use the button in the toolbar of the editor or simply write [[?]][[?]] in
 the editor. Both ways let you search for the desired knowledge base article
 by typing some characters or words.
 
-## Помените колегу
+## Mention a User
 
 ![Screenshot shows mentioning a
-colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Зашто?**
 
@@ -97,9 +97,8 @@ colleague](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-men
 **Како?**
 
 While writing a ticket article, use the button in the toolbar of the editor
-or simply type [[@]][[@]]. Both ways let you search for the name of the
-colleague you want to mention by typing some characters or the complete
-name.
+or simply type [[@]][[@]]. Both ways let you search for the name of the user
+you want to mention by typing some characters or the complete name.
 
 Zammad приказује листу свих корисника који одговарају вашем уносу и можете
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском

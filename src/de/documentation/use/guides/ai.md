@@ -96,12 +96,10 @@ den erweiterten Funktionen.
 
 ### Ticket-Historie
 
-Wenn ein KI-Agent Änderungen vorgenommen hat, sehen Sie einen Eintrag in der
-Ticket-Historie, der Ihnen den Namen des KI-Agenten nennt. Wenn Sie
-anhaltende Probleme mit der Arbeit des KI-Agenten feststellen, informieren
-Sie Ihren Zammad-Administrator.
-
-Beispiel für einen Eintrag in die Ticket-Historie eines KI Agenten:
+If an AI agent applied changes, you can see a ticket history entry telling
+you the name of the AI agent. If you notice ongoing issues with what the AI
+agent did, inform your Zammad admin. Example of a history entry of an AI
+agent:
 
 ![Eintrag eines KI-Agenten in die
 Ticket-Historie](/screenshots/ai/ai-agent-ticket-history.png)

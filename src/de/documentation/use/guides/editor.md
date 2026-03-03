@@ -66,14 +66,11 @@ Sie können den Text im Editor auf verschiedene Arten formatieren:
 - Verwenden Sie Tastaturkürzel
 - Verwenden Sie [Markdown](https://www.markdownguide.org)-Syntax
 
-Die **Werkzeugleiste** des Editors enthält Schaltflächen für gängige
-Formatierungsaufgaben. Wenn Sie den Mauszeiger über eine Schaltfläche
-bewegen, wird ein Tooltip angezeigt, der die Funktion der Schaltfläche
-erklärt. Alternativ können Sie **Tastaturkürzel** verwenden (siehe die
-nächsten beiden Abschnitte). Bei beiden Varianten können Sie eine
-Formatierungsoption im Voraus aktivieren und dann Ihren Text hinzufügen oder
-vorhandenen Text auswählen und die Formatierungsoption anschließend
-anwenden.
+The editor **toolbar** includes buttons for common formatting
+tasks. Hovering over each button will display a tooltip explaining its
+function. As an alternative you can use **keyboard shortcuts** (see next two
+sections). Either activate the formatting in advance or select the text
+after writing and use the formatting you want to apply.
 
 ### Allgemeine Tastaturkürzel
 
@@ -87,19 +84,22 @@ Textverarbeitungsprogrammen üblich. Wichtige Tastenkombinationen sind:
 [[strg]] + [[i]]        | _Kursiv_
 [[strg]] + [[u]]        | <u>Unterstrichen</u>
 
-Schauen Sie sich den nächsten Abschnitt an, um zusätzliche Formatierungen
-über die Tastatur zu verwenden. Unabhängig davon, ob Sie an Markdown kennen
-oder nicht, könnten einige davon für Ihre tägliche Arbeit dennoch hilfreich
-sein.
+Have a look at the keyboard shortcuts in Zammad where you can find all
+shortcuts. Open it via the [avatar
+menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left
+corner or type [[?]].
+
+Have a look at the next section to use even more formatting via
+keyboard. Regardless if you are used to write Markdown or not, some of them
+might still be helpful in your daily work.
 
 ### Markdown-Verwendung
 
-Für Benutzer, die mit Markdown vertraut sind, bietet der Editor
-Unterstützung für die Formatierung von Inhalten mit Markdown. Wenn Sie
-Markdown-Syntax verwenden, wird Ihr Text sofort ersetzt/formatiert, sodass
-Sie das Ergebnis direkt im Editor sehen können. Um zum Standardtext
-zurückzukehren, verwenden Sie einfach erneut denselben Auszeichungsbefehl
-als Abschluss oder drücken Sie je nach Option [[enter]].
+For users familiar with Markdown syntax, the editor provides basic support
+for formatting content with Markdown. When using Markdown syntax, it gets
+immediately applied immediately or after the closing limiter so you can see
+the result directly in the editor. To go back to standard text, simply use
+the same limiter again or use [[enter]], depending on the option.
 
 Es ist nicht beabsichtigt, alle Markdown-Funktionen zu unterstützen, sondern
 den Benutzern zu helfen, Dinge einfacher zu erledigen. Daher werden die

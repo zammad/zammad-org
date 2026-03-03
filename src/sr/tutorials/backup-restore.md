@@ -297,7 +297,7 @@ This warning will be shown once before creating an empty directory to allow
 the backup process to continue successfully.
 
 Check and adjust your
-[storage settings via console](/en/reference/console#storage-provider-setting)
+[storage settings via console](/en/reference/rails-commands#storage-provider-setting)
 or in Zammad's admin interface under _Settings > System > Storage_.
 
 ## Helper Script

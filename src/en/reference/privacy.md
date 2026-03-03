@@ -23,16 +23,14 @@ _Manage > Scheduler_.
 To **manually** delete users and all their associated tickets (e.g. in
 compliance with a "Right to Forget" request under the GDPR), you can use
 the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/console#deleting-records).
+or [use the console](/en/reference/rails-commands#deleting-records).
 
 ### Chat sessions
 
 Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later.
-
-IP address logs for chat sessions can be manually deleted by
-following the steps in the
-[chat section in the console](/en/reference/console#remove-ip-address-logs).
+automatic deletion 12 months later. IP address logs for chat sessions can be
+deleted manually by following the
+[steps from the rails console page](/en/reference/rails-commands#remove-ip-address-logs).
 
 ### CTI caller log
 

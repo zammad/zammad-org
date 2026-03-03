@@ -20,12 +20,11 @@ als Anwendung geleistet werden.
 
 - Eine funktionierende Docker Compose-Umgebung
 - Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Passen Sie die Einstellungen Ihres Hosts an, damit Elasticsearch
-  ordnungsgemäß läuft:
+- Increase the memory limit for Elasticsearch on Linux hosts:
 
-    ```sh
-    sudo sysctl -w vm.max_map_count=262144
-    ```
+  ```sh
+  sudo sysctl -w vm.max_map_count=262144
+  ```
 
 ## Installation mit Portainer
 
@@ -37,9 +36,9 @@ Dokumentation](https://docs.portainer.io/){target=_blank}.
 
 ### Schritt 1: Stack hinzufügen
 
-Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
-Zielumgebung aus, wählen Sie **Stacks** und wählen Sie `Add stack`, wie Sie
-im Screenshot unten sehen können.
+In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
+target environment, select **Stacks** and click on `Add stack` as you can
+see in the screenshot below.
 
 ![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in
 Portainer.](/screenshots/installation/portainer-stacks.png)
@@ -54,11 +53,10 @@ Informationen an:
 - **Repository reference**: `refs/heads/master`
 - **Compose path**: `docker-compose.yml` (default)
 
-In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von
-Docker Compose haben möchte. Sie können den Stack mit vordefinierten
-Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt
-[Anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere
-Informationen.
+In case our default environment is not what you are looking for, you can
+customize the stack using predefined scenarios and adjust environment
+variables. Jump to the [customization
+section](#customizing-the-zammad-stack) below to find more information.
 
 ![Stack-Erstellung mit Informationen aus der
 Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
@@ -87,11 +85,11 @@ herunterladen.
 
 ### Schritt 2: Umgebung nach Bedarf anpassen
 
-In manchen Fällen ist die Standardvariante nicht das, was ein Benutzer von
-Docker Compose haben möchte. Sie können den Stack mit vordefinierten
-Szenarien erstellen und Umgebungsvariablen verwenden. Springen Sie zum Punkt
-[anpassen des Zammad Stacks](#anpassen-des-zammad-stacks) unten für weitere
-Informationen.
+In some cases, our default environment is not what a Docker Compose user is
+looking for. You can customize the stack using predefined scenarios and
+adjust environment variables. Jump to the [Customizing the Zammad
+Stack](#customizing-the-zammad-stack) section below to find more
+information.
 
 ### Schritt 3: Starten des Stacks
 

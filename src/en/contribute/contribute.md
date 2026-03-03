@@ -19,15 +19,13 @@ Please have a look at our the sections below about how to contribute. All repos 
 ## Zammad Source Code
 
 The Zammad source code can be found on GitHub in the
-[Zammad repository](https://github.com/zammad/zammad){target=_blank}.
-
-Have a look at the
+[Zammad repository](https://github.com/zammad/zammad){target=_blank}. Have a look at the
 [developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
 to get started.
 
 ### Supported Branches / Versions
 
-The main [Zammad repository](https://github.com/zammad/zammad){target=_blank} at Github has several branches.
+Zammad's Github repository has several branches:
 
 #### `develop`
 
@@ -51,24 +49,21 @@ The main [Zammad repository](https://github.com/zammad/zammad){target=_blank} at
 
 ## Documentation
 
-Do you want to contribute to the Zammad documentation?
-
-Open a new GitHub pull request at <https://github.com/zammad/zammad-org> (targeting the `develop` branch) with your
-changes and make sure to follow the [style and content guide](style-guide). Consider to have a look at the
-[repo's README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank} too.
-
 The documentation you are reading is available on zammad.org and next.zammad.org and is built with Vitepress. The
 source files are written in Markdown. Make sure to change the English source files only which are placed under
 `/src/en/`. The translation is done via Weblate and will overwrite any changes in the language specific folders
 (except `/src/en/`).
 
+Open a new GitHub pull request at <https://github.com/zammad/zammad-org> (targeting the `develop` branch) with your
+changes and make sure to follow the [style and content guide](style-guide) and read the
+[repo's README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
+
 ## Translation
 
 If you want to help us with translation and improve the multi-language support of Zammad and/or the documentation, you
-are welcome to contribute as well! The translation of Zammad itself and the documentation is done by using Weblate,
-which is a service for the collaborative translation of projects.
-
-You just have to head over to Zammad's [Weblate instance](https://translations.zammad.org/){target=_blank}.
+are welcome to contribute as well! The translation of Zammad and the documentation is done via Weblate, which is a
+service for the collaborative translation of projects.  Just head over to Zammad's
+[Weblate instance](https://translations.zammad.org/){target=_blank}.
 You can either create an account (if you don't have one already) or even sign in with your Github account!
 
 We will cover some basic steps in the following sections to get you started with translating. However, if you want to
@@ -101,22 +96,18 @@ version.
 :::
 
 After selecting a project (Documentation or Zammad), you will see different sub-projects and their translation status
-summarized for all languages. These overviews may show a quite low translation rate, which is due to the amount of
-active languages.
+summarized for all languages. Here you can select one of the "components", which is more or less the same as different
+versions. After selecting one of them, you can see the status of translation for the different languages, as you can see
+in the following screenshot:
 
-Here you can select one of the "components", which is more or less the same as different versions. After selecting one
-of them, you can see the status of translation for the different languages, as you can see in the following screenshot
-with an example from _Documentation > User Documentation (latest)_:
-
-![Screenshot showing translation status of different languages for the user documentation](/screenshots/weblate-translations-user-docs.png)
+![Screenshot showing translation status of different languages for the user documentation](/screenshots/weblate-project-overview.png)
 
 ### Translating
 
 After selecting your language you want to translate to, a good starting point is to select "_Untranslated strings_"
 (or the same meaning in your language, depending on what you have set in your profile).
-
 After that, you will finally see the first untranslated string in the upper field and, in theory, you can start to
-translate. First a brief overview of the user interface of Weblate:
+translate. But let's first have a brief look at the user interface of Weblate:
 
 ![Screenshot of Weblate translation user interface](/screenshots/weblate-ui.png)
 
@@ -134,11 +125,11 @@ translate. First a brief overview of the user interface of Weblate:
     - **Other languages**: here you can get an overview, which languages are translated and you can also see the
       translated strings (could be useful for languages, which are similar).
 
-### Troubleshooting
+### Markup in Strings
 
-And finally some examples for "special" source strings, you might see in the documentation projects. You should also
-have a look at the [style guide](style-guide) where you can find more information about the syntax and the usage of
-Markdown/Vitepress features.
+Find some examples for special source strings with applied markup below. Depending on the string, it can be important to
+keep the markup and/or variables. Also have a look at the [style guide](style-guide) where you can find more
+information about the syntax and the usage of Markdown/Vitepress features.
 
 **\`example-string\`**
 : This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the

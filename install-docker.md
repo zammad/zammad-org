@@ -12,7 +12,7 @@ DONE WHEN: Zammad is running and accessible via web browser under hostname or IP
 
 - Docker Engine installed and usable via `docker`.
 - Docker Compose plugin (`docker compose`).
-- Git installed.
+- `Git` installed.
 - At least 4 GB of RAM.
 
 ## High-Level Steps

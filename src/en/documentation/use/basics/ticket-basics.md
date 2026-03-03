@@ -5,6 +5,10 @@ order: 2
 
 # Ticket Basics
 
+New to ticket systems? Then read on about the basics. This helps you to understand the main concepts and to get started
+with Zammad. If you are already familiar with ticket systems, you can jump directly to the next pages about finding,
+creating and working with tickets.
+
 ## Introduction
 
 In Zammad, **tickets** are used to track customer service requests. The first time a customer contacts you about

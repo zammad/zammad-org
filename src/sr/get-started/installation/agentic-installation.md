@@ -26,7 +26,7 @@ Prerequisites:
 - Running Docker Compose setup
 - Installed Git
 
-Instruction file:
+Instructions:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
@@ -40,10 +40,10 @@ Elasticsearch.
 Prerequisites:
 
 - Host operating system: Ubuntu (22.04 or 24.04) or Debian (12 or 13).
-- Installed curl, apt-transport-https and gnupg.
+- Installed `curl`, `apt-transport-https` and `gnupg`.
 - A locale with UTF-8 support.
 
-Instruction file:
+Instructions:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md

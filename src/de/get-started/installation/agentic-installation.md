@@ -27,7 +27,7 @@ Voraussetzungen:
 - Laufende Docker Compose-Umgebung
 - Installiertes Git
 
-Anleitungsdatei:
+Instructions:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
@@ -41,10 +41,10 @@ Elasticsearch über den Paketmanager.
 Voraussetzungen:
 
 - Host-Betriebssystem: Ubuntu (22.04 oder 24.04) oder Debian (12 oder 13).
-- Installiertes curl, apt-transport-https und gnupg.
+- Installed `curl`, `apt-transport-https` and `gnupg`.
 - Eine Sprache mit UTF-8-Unterstützung.
 
-Anleitungsdatei:
+Instructions:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md

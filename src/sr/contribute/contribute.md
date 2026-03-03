@@ -20,18 +20,15 @@ order: 1
 
 ## Zammad изворни кoд
 
-Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
-репозиторију](https://github.com/zammad/zammad){target=_blank}.
-
-Прочитајте [уџбеник за
-програмере](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-за почетак.
+The Zammad source code can be found on GitHub in the [Zammad
+repository](https://github.com/zammad/zammad){target=_blank}. Have a look at
+the [developer
+manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
+to get started.
 
 ### Подржани огранци/верзије
 
-Централни [Zammad
-репозиториј](https://github.com/zammad/zammad){target=_blank} на GitHub-у
-има неколико огранка.
+Zammad's Github repository has several branches:
 
 #### `develop`
 
@@ -60,14 +57,6 @@ order: 1
 
 ## Документација
 
-Да ли желите да допринесете Zammad документацији?
-
-Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org>
-(заснован на `develop` огранку) са вашим изменама и обавезно испратите
-[водич кроз стил и садржај](style-guide). Узмите у обзир и инструкције у
-[README датотеци
-репозиторија](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
-
 Документација коју читате је доступна под zammad.org и next.zammad.org и
 направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
 формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
@@ -75,17 +64,21 @@ order: 1
 апликације и преписаће све измене направљене под директоријумима специфичних
 језика (осим `/src/en/`).
 
+Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
+(targeting the `develop` branch) with your changes and make sure to follow
+the [style and content guide](style-guide) and read the [repo's
+README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
+
 ## Превод
 
-Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку
-у Zammad-у и/или документацији, ваш допринос је добродошао! Превод самог
-Zammad-а и документације обавља се преко Weblate апликације, која представља
-сервис за колаборацију на преводима пројеката.
-
-Све што је неопходно је да се упутите на Zammad [Weblate
-инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
-отворити налог (уколико га још немате) или да се пријавите путем вашег
-GitHub налога!
+If you want to help us with translation and improve the multi-language
+support of Zammad and/or the documentation, you are welcome to contribute as
+well! The translation of Zammad and the documentation is done via Weblate,
+which is a service for the collaborative translation of projects.  Just head
+over to Zammad's [Weblate
+instance](https://translations.zammad.org/){target=_blank}.  You can either
+create an account (if you don't have one already) or even sign in with your
+Github account!
 
 Представићемо неке основне кораке у следећим одељцима како бисте могли да
 започнете са превођењем. Међутим, уколико желите да користите напредне
@@ -118,27 +111,24 @@ Weblate функције и да дубље уђете у проблематик
 верзију.
 :::
 
-По одабиру пројекта (Documentation или Zammad), видећете различите
-под-пројекте и њихов статус превода разложен по свим језицима. Могуће је да
-ови прегледи прикажу ниску стопу превода, услед броја активних преводиоца за
-различите језике.
+After selecting a project (Documentation or Zammad), you will see different
+sub-projects and their translation status summarized for all languages. Here
+you can select one of the "components", which is more or less the same as
+different versions. After selecting one of them, you can see the status of
+translation for the different languages, as you can see in the following
+screenshot:
 
-Овде можете одабрати једну од „компонената”, које су мање или више идентичне различитим верзијама. По одабиру једне,
-можете видети статус превода по различитим језицима, по узору на следећи снимак екрана
-са примером из _Documentation > User Documentation (latest)_:
-
-![Снимак екрана који приказује статус первода по различитим језицима за
-корисничку документацију](/screenshots/weblate-translations-user-docs.png)
+![Screenshot showing translation status of different languages for the user
+documentation](/screenshots/weblate-project-overview.png)
 
 ### Превођење
 
-По одабиру вашег језика на који желите да преводите, добра почетна тачка је
-одабир „_Untranslated strings_” (или слично значење у вашем језику, у
-зависности шта сте подесили у свом профилу).
-
-Након овога, коначно ћете добити први непреведен низ текста у горњем пољу, и
-можете започети са преводом. Прво, кратак преглед корисничког интерфејса
-Weblate апликације:
+After selecting your language you want to translate to, a good starting
+point is to select "_Untranslated strings_" (or the same meaning in your
+language, depending on what you have set in your profile).  After that, you
+will finally see the first untranslated string in the upper field and, in
+theory, you can start to translate. But let's first have a brief look at the
+user interface of Weblate:
 
 ![Снимак екрана корисничког интерфејса превода у
 Weblate-у](/screenshots/weblate-ui.png)
@@ -159,12 +149,13 @@ Weblate-у](/screenshots/weblate-ui.png)
     - **Other languages**: овде можете добити преглед који језици већ садрже
       превод и саме преводе (може бити корисно за сличне језике).
 
-### Решавање проблема
+### Markup in Strings
 
-Коначно, ево пар примера за „специјалне” низове текста на које можете наићи
-у пројектима документације. Обавезно погледајте и [водич кроз
-стил](style-guide) где можете пронаћи више информација о синтакси и
-коришћењу Markdown/Vitepress функција.
+Find some examples for special source strings with applied markup
+below. Depending on the string, it can be important to keep the markup
+and/or variables. Also have a look at the [style guide](style-guide) where
+you can find more information about the syntax and the usage of
+Markdown/Vitepress features.
 
 **\`пример-текста\`**
 : Ово ће бити приказано као `пример-текста`. У зависности од контекста, ово се може превести или не.

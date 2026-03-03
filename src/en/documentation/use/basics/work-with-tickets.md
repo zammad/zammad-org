@@ -99,8 +99,9 @@ side.
 
 ![Screenshot shows ticket header with highlighted ticket number copy button](/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)
 
-But wait, there is even a keyboard shortcut for that. Simply press [[.]] and the ticket number is copied to your
-clipboard. To include the ticket title as well, press [[.]] twice. Example: `Ticket#31004: Onboarding new colleague`.
+But wait, there is even a keyboard shortcut for that! Simply press [[.]] in the ticket detail view and the ticket number
+is copied to your clipboard. To include the ticket title as well, press [[.]] twice.
+Example: `Ticket#31004: Onboarding new colleague`.
 
 ## Simultaneous Ticket Processing
 

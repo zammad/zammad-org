@@ -69,5 +69,5 @@ basics](ticket-basics) yet, check it out to learn more.
 -----
 
 After you provided the relevant information, finally create the ticket with
-a click on the **Create** button. Read on how to [find
-tickets](find-tickets) and [how to work with them](work-with-tickets).
+a click on the **Create** button. Read on [how to work with existing
+tickets](work-with-tickets).

@@ -88,11 +88,10 @@ features page.
 
 ### Ticket History
 
-Уколико AI агент освежи тикет, можете то и видети у евиденцији историјата
-тикета под називом AI агента. Уколико приметите проблеме са начином рада AI
-агента, обавестите о томе свог Zammad администратора.
-
-Пример евиденције историјата AI агента:
+If an AI agent applied changes, you can see a ticket history entry telling
+you the name of the AI agent. If you notice ongoing issues with what the AI
+agent did, inform your Zammad admin. Example of a history entry of an AI
+agent:
 
 ![Screenshot shows AI agent ticket history
 entry](/screenshots/ai/ai-agent-ticket-history.png)

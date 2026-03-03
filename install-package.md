@@ -63,26 +63,19 @@ Ubuntu & Debian 12:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null \
-   && sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
+   gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \
+   && sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 ```
 
 Debian 13:
 
 ```sh
 curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
-   gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg> /dev/null \
+   gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \
    && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
 ### Add Zammad Repository
-
-Debian 11:
-
-```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
-```
 
 Debian 12:
 
@@ -110,7 +103,7 @@ Ubuntu 24.04:
 ```sh
 printf "Types: deb
 URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 22.04
+Suites: 24.04
 Components: main
 Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
 sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
@@ -163,6 +156,6 @@ zammad run rake zammad:searchindex:rebuild
 
 ### Verify Zammad Is Running
 
-Open the `localhost` and make sure you can see Zammad's setup screen.
+Open `localhost` and make sure you can see Zammad's setup screen.
 
 EXECUTE NOW: Complete the above TODO list to achieve a successful installation of Zammad.

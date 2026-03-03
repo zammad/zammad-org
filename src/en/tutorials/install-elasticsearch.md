@@ -14,7 +14,7 @@ Adapt it wherever needed in case your use-case differs.
 
 ## Installation
 
-### Download and Add the Public Signing Key
+### Add Repository Key
 
 ::: tabs key:distros
 
@@ -48,7 +48,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add the Repository
+### Add Repository
 
 ::: tabs key:distros
 

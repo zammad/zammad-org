@@ -5,6 +5,11 @@ title: Ticket-Grundlagen
 
 # Ticket-Grundlagen
 
+New to ticket systems? Then read on about the basics. This helps you to
+understand the main concepts and to get started with Zammad. If you are
+already familiar with ticket systems, you can jump directly to the next
+pages about finding, creating and working with tickets.
+
 ## Einführung
 
 In Zammad werden **Tickets** verwendet, um Anfragen von Kunden zu bearbeiten

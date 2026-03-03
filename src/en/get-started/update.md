@@ -145,10 +145,6 @@ If you have to update Elasticsearch, please have a look at
 [their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
 and follow the instructions.
 
-In case your are using plugins for Elasticsearch, make sure they are updated
-as well (note: starting with Elasticsearch 8, the ingest-attachment is no
-longer a plugin, it’s now included in Elasticsearch).
-
 ### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
 
 Only needed if the release note tells you to rebuild the Elasticsearch index.

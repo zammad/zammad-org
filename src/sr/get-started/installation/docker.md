@@ -20,11 +20,11 @@ Docker front ends like
 
 - Радно Docker Compose окружење
 - Најмање 4 GB RAM за контејнере
-- Подесите ваш сервер да правилно извршава Elasticsearch сервис:
+- Increase the memory limit for Elasticsearch on Linux hosts:
 
-    ```sh
-    sudo sysctl -w vm.max_map_count=262144
-    ```
+  ```sh
+  sudo sysctl -w vm.max_map_count=262144
+  ```
 
 ## Покретање преко Portainer-а
 
@@ -35,9 +35,9 @@ documentation](https://docs.portainer.io/){target=_blank}.
 
 ### Корак 1: Додавање stack-а
 
-У графичком интерфејсу Portainer-а (нпр. `https://yourdomain.tld:9443`),
-идите на циљно окружење, одаберите **Stacks** и кликните на `Add stack` као
-на снимку екрана испод.
+In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
+target environment, select **Stacks** and click on `Add stack` as you can
+see in the screenshot below.
 
 ![Снимак екрана у одељку Stacks са наглашеним "Add stack"
 дугметом.](/screenshots/installation/portainer-stacks.png)
@@ -52,9 +52,9 @@ Switch to **Repository** build method and provide the information below:
 - **Repository reference**: `refs/heads/master`
 - **Compose path**: `docker-compose.yml` (default)
 
-In some cases, our default environment is not what a Docker Compose user is
-looking for. You can customize the stack using pre-defined scenarios and
-adjust environment variables. Jump to the [customization
+In case our default environment is not what you are looking for, you can
+customize the stack using predefined scenarios and adjust environment
+variables. Jump to the [customization
 section](#customizing-the-zammad-stack) below to find more information.
 
 ![Додавање stack-а са обезбеђеним подацима у Repository
@@ -83,7 +83,7 @@ page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 ### Корак 2: Подешавање окружења по потреби
 
 In some cases, our default environment is not what a Docker Compose user is
-looking for. You can customize the stack using pre-defined scenarios and
+looking for. You can customize the stack using predefined scenarios and
 adjust environment variables. Jump to the [Customizing the Zammad
 Stack](#customizing-the-zammad-stack) section below to find more
 information.

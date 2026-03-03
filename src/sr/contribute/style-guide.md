@@ -39,17 +39,18 @@ order: 2
 
 ## Претпоставке о публици
 
-Документација је написана у стилу који подразумева да наши **корисници**
-поседују основно знање о употреби претраживача и концептима софтверског
-дизајна. Ово на пример значи да су функције описане до детаља, али не на
-нивоу како приступити падајућем менију.
+The documentation assumes that **users** have a basic understanding of how
+to use web browsers and are familiar with common software design
+concepts. This means, for example, that features are described in detail,
+but not to the level of explaining how to open a dropdown menu.
 
-**Zammad администратор** треба додатно да поседује основно техничко
-разумевање радних токова и процеса комуникације у својој фирми.
+The **Zammad administrator** should also have a basic technical
+understanding and be familiar with the workflows and communication processes
+within their company.
 
-За инстанце које сами хостују, **администратори система** такође треба да
-буду упознати са основама администрације Linux система. Приступ систему који
-хостује (нпр. путем SSH) и администраторске дозволе се подразумевају.
+For self-hosted instances, **system administrators** should also be familiar
+with Linux system administration basics.  Access to the host system
+(e.g. via SSH) and administrative permissions are taken for granted.
 
 ## Садржај
 
@@ -69,10 +70,10 @@ order: 2
 укључени. Читаоци би требало да постигну своје циљеве што брже и
 једноставније без потребе да пуно читају.
 
-С обзиром да документација не може да покрије апсолутно све (иначе би
-садржала саме детаље кôда), неопходно је узети у обзир значајност
-информације. Уколико недостају делови који се односе на уобичајене случајеве
-коришћења, требало би их укључити у документацију.
+Due to the fact that a documentation can't cover everything (otherwise it
+would be on a code-like detail level), the relevance has to be considered
+too. If parts with a common use case are missing, it should be intended to
+include them in.
 
 ## Стил и правила
 
