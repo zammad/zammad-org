@@ -85,11 +85,10 @@ herunterladen.
 
 ### Schritt 2: Umgebung nach Bedarf anpassen
 
-In some cases, our default environment is not what a Docker Compose user is
-looking for. You can customize the stack using predefined scenarios and
-adjust environment variables. Jump to the [Customizing the Zammad
-Stack](#customizing-the-zammad-stack) section below to find more
-information.
+In case our default environment is not what you are looking for, you can
+customize the stack using predefined scenarios and adjust environment
+variables. Jump to the [customization
+section](#customizing-the-zammad-stack) below to find more information.
 
 ### Schritt 3: Starten des Stacks
 

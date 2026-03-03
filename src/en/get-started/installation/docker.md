@@ -75,9 +75,9 @@ Make sure to run `git pull` frequently to fetch updates. Alternatively, you can 
 
 ### Step 2: Adjust Environment as Needed
 
-In some cases, our default environment is not what a Docker Compose user is looking for. You can customize the stack
-using predefined scenarios and adjust environment variables. Jump to the
-[Customizing the Zammad Stack](#customizing-the-zammad-stack) section below to find more information.
+In case our default environment is not what you are looking for, you can customize the stack using predefined scenarios
+and adjust environment variables. Jump to the [customization section](#customizing-the-zammad-stack) below to find more
+information.
 
 ### Step 3: Start the Stack
 

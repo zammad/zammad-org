@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-03 08:12+0100\n"
+"POT-Creation-Date: 2026-03-03 17:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5796,7 +5796,7 @@ msgid ""
 "| `owner.email:bob@example.net AND state.name:(open OR new)`                                    "
 "| Show tickets with owner `bob@example.net` that are either open or new.                                            "
 "|\n"
-"| `state.name:pending* AND article_count:\\[1 TO 5\\]`                                            "
+"| `state.name:pending* AND article_count: [1 TO 5]`                                             "
 "| Show everything with any pending state and an article count of 1 to 5.                                            "
 "|\n"
 msgstr ""
@@ -5844,8 +5844,8 @@ msgid ""
 "name.                                                                                                                                                                           "
 "|\n"
 "| article.body  | `article.body:heat`, `article.body:heat~`, "
-"`article.body:/joh?n(ath\\[oa\\]n)/`                     | First example "
-"shows every ticket containing the word \"heat\" - you can also use the fuzzy "
+"`article.body:/joh?n(ath[oa]n)/`                       | First example shows "
+"every ticket containing the word \"heat\" - you can also use the fuzzy "
 "operator `~` to search for similar words like e.g. like \"head\". Zammad "
 "will also allow you to use regular expressions, where ever the attributes "
 "allows it. |\n"
@@ -7403,6 +7403,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:55
+#: src/en/get-started/installation/docker.md:81
 #, markdown-text
 msgid ""
 "In case our default environment is not what you are looking for, you can "
@@ -7473,17 +7474,6 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:76
 #, markdown-text, no-wrap
 msgid "Step 2: Adjust Environment as Needed"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:81
-#, markdown-text
-msgid ""
-"In some cases, our default environment is not what a Docker Compose user is "
-"looking for. You can customize the stack using predefined scenarios and "
-"adjust environment variables. Jump to the [Customizing the Zammad "
-"Stack](#customizing-the-zammad-stack) section below to find more "
-"information."
 msgstr ""
 
 #. type: Title ###
