@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-03 17:29+0100\n"
+"POT-Creation-Date: 2026-03-04 11:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4539,7 +4539,7 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:1
 #: src/en/documentation/use/guides/ai.md:6
 #, markdown-text, no-wrap
-msgid "Zammad AI"
+msgid "AI Features"
 msgstr ""
 
 #. type: Plain text

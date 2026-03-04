@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Zammad KI'
+title: 'AI Features'
 ---
 
-# Zammad KI
+# AI Features
 
 ## Einführung
 

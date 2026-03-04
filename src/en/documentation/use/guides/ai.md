@@ -1,9 +1,9 @@
 ---
 order: 4
-title: Zammad AI
+title: AI Features
 ---
 
-# Zammad AI
+# AI Features
 
 ## Introduction
 
