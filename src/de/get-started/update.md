@@ -206,3 +206,43 @@ docker compose pull
 ```sh
 docker compose up -d
 ```
+
+### Elasticsearch-Index erneuern <Badge type="tip" text="optional" />
+
+Wird nur benötigt, wenn Sie in den Release-Notes aufgefordert werden, den
+Elasticsearch-Index neu zu erstellen.
+
+:::tabs
+
+=== Docker Compose
+
+Without specifying CPU cores:
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
+```
+
+With specifying CPU cores to use (example 8):
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
+```
+
+=== Portainer GUI
+
+Open the [console via Portainer's GUI](installation/docker#how-to-run-commands-in-the-stack) with the standard
+entrypoint `/bin/bash` and run:
+
+Without specifying CPU cores to use:
+
+```sh
+bundle exec rake zammad:searchindex:rebuild
+```
+
+With specifying CPU cores to use (example 8):
+
+```sh
+bundle exec rake zammad:searchindex:rebuild[8]
+```
+
+:::

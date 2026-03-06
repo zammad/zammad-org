@@ -131,18 +131,16 @@ variables](/en/reference/environment-variables).
 
 ## How to Run Commands in the Stack
 
-The Docker entrypoint script sets up environment variables required by
-Zammad to function properly. That is why calling `rails` or `rake` on the
-console should be done via one of the following methods:
-
-Директно извршавање одговарајуће команде:
+Execute commands in your Docker stack by calling `rails` or `rake` via one
+of the following methods by using `bundle exec`.
 
 ::::tabs
 
 === Via Portainer GUI
 
 In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column and on the `Connect` button.
+on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+**Connect**.
 
 ![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
 

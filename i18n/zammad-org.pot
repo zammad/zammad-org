@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-06 09:39+0100\n"
+"POT-Creation-Date: 2026-03-06 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7589,22 +7589,15 @@ msgid "How to Run Commands in the Stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:123
 #, markdown-text
 msgid ""
-"The Docker entrypoint script sets up environment variables required by "
-"Zammad to function properly. That is why calling `rails` or `rake` on the "
-"console should be done via one of the following methods:"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:126
-#, markdown-text
-msgid "Directly execute a specific command:"
+"Execute commands in your Docker stack by calling `rails` or `rake` via one "
+"of the following methods by using `bundle exec`."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/installation/docker.md:127
+#: src/en/get-started/installation/docker.md:124
 #, no-wrap
 msgid ""
 "\n"
@@ -7612,8 +7605,9 @@ msgid ""
 "\n"
 "In your Portainer GUI, go to the container view and select the running Rails "
 "container from your Zammad stack. Click\n"
-"on the **Exec Console** icon in the \"Quick Actions\" column and on the "
-"`Connect` button.\n"
+"on the **Exec Console** icon in the \"Quick Actions\" column, select the "
+"standard `/bin/bash` entrypoint and click\n"
+"**Connect**.\n"
 "\n"
 "![Portainer console "
 "execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
@@ -7655,7 +7649,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/get-started/installation/docker.md:127
+#: src/en/get-started/installation/docker.md:124
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for "
@@ -7665,7 +7659,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/installation/docker.md:127
+#: src/en/get-started/installation/docker.md:124
 #: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:115
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
@@ -8932,13 +8926,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:148
+#: src/en/get-started/update.md:148 src/en/get-started/update.md:203
 #, markdown-text, no-wrap
 msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:151
+#: src/en/get-started/update.md:151 src/en/get-started/update.md:206
 #, markdown-text
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch "
@@ -9034,6 +9028,48 @@ msgstr ""
 #: src/en/get-started/update.md:195
 #, no-wrap
 msgid "docker compose pull\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/get-started/update.md:207
+#, no-wrap
+msgid ""
+"\n"
+"=== Docker Compose\n"
+"\n"
+"Without specifying CPU cores:\n"
+"\n"
+"```sh\n"
+"docker compose run --rm zammad-railsserver bundle exec rake "
+"zammad:searchindex:rebuild\n"
+"```\n"
+"\n"
+"With specifying CPU cores to use (example 8):\n"
+"\n"
+"```sh\n"
+"docker compose run --rm zammad-railsserver bundle exec rake "
+"zammad:searchindex:rebuild[8]\n"
+"```\n"
+"\n"
+"=== Portainer GUI\n"
+"\n"
+"Open the [console via Portainer's "
+"GUI](installation/docker#how-to-run-commands-in-the-stack) with the "
+"standard\n"
+"entrypoint `/bin/bash` and run:\n"
+"\n"
+"Without specifying CPU cores to use:\n"
+"\n"
+"```sh\n"
+"bundle exec rake zammad:searchindex:rebuild\n"
+"```\n"
+"\n"
+"With specifying CPU cores to use (example 8):\n"
+"\n"
+"```sh\n"
+"bundle exec rake zammad:searchindex:rebuild[8]\n"
+"```\n"
+"\n"
 msgstr ""
 
 #. type: Title ##

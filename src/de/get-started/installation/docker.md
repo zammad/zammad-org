@@ -139,43 +139,40 @@ Umgebungsvariablen](/de/reference/environment-variables).
 
 ## Ausführen von Befehlen im Stack
 
-Das Docker-Entrypoint-Skript richtet Umgebungsvariablen ein, die Zammad
-benötigt, um ordnungsgemäß zu funktionieren. Deshalb sollte der Aufruf von
-`rails` oder `rake` auf der Konsole über eine der folgenden Methoden
-erfolgen:
-
-Direktes Ausführen eines bestimmten Befehls:
+Execute commands in your Docker stack by calling `rails` or `rake` via one
+of the following methods by using `bundle exec`.
 
 ::::tabs
 
 === Via Portainer GUI
 
-Suchen Sie den laufenden Rails-Container In der Portainer GUI und klicken Sie auf das
-**Exec Console** Icon in der Spalte "Quick Actions" und auf den `Connect` Button.
+In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
+on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+**Connect**.
 
-![Portainer Ausführung Console](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
 
-Rufen Sie die interaktive Rails-Konsole auf, indem Sie folgenden Befehl ausführen:
+Run the interactive Rails console by executing:
 
 ```sh
 bundle exec rails c
 ```
 
-Führen Sie einen Befehl direkt aus:
+Directly execute a specific command:
 
 ```sh
-bundle exec rails r '...Ihren Rails-Befehl...'
+bundle exec rails r '...your rails command here...'
 ```
 
-=== Via Konsole
+=== Via console
 
-Führen Sie einen Befehl direkt aus:
+Directly execute a specific command:
 
 ```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
-Rufen Sie die interaktive Rails-Konsole auf um Rails-Befehle einzugeben:
+Run the interactive Rails console to manually enter Rails commands:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
@@ -184,7 +181,7 @@ docker compose run --rm zammad-railsserver bundle exec rails c
 Via `docker compose exec`:
 
 ```sh
-docker compose exec zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip
