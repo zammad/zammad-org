@@ -232,20 +232,22 @@ If you have to apply the same changes for many ticket, you can save time!
 
 **How?**
 
-There are 2 _places_ where you can perform bulk actions:
+There are 2 places where you can apply bulk actions:
 
-- Detail search page
-- Overviews
+- [Detailed search page](guides/search)
+- [Overviews](guides/overviews)
 
-Assuming you are in the overviews or in the detail search page, you can bulk edit tickets in 2 _ways_:
+To use bulk actions, first select the tickets you want to apply the changes to. Either select the tickets
+individually by clicking on the checkbox next to them or use the checkbox in the header to select all tickets of the
+current page. After selecting all tickets of the page, you can even select all tickets which match your current
+search query or overview condition by clicking on the **Select all XX results** label. The maximum number of tickets
+you can select for a bulk action is 2000.
 
-- Use the `Bulk Action` button in the top right corner and change/add attributes by using the fields in the side panel
-- Drag the tickets with the mouse to invoke the bulk action overlay and drop them on the desired action
+To select a section of consecutive tickets, click on the checkbox of the first ticket, then hold [[shift]] and click on
+the checkbox of the last ticket. This selects all tickets in between as well. It even works for unselecting tickets.
 
-To bulk edit tickets in either way, you have to select them before. Do so by clicking the checkbox on the left side of
-each row in the ticket table. Selected tickets are highlighted next to the checkbox.
-
-The available changes you can apply to tickets are:
+After selecting the tickets you want to apply changes to, click the `Bulk Action` button in the top right corner and
+change/add attributes by using the fields in the side panel. The available changes you can apply to tickets are:
 
 - Set group
 - Set owner
@@ -253,6 +255,10 @@ The available changes you can apply to tickets are:
 - Set priority
 - Add a note
 - Execute a macro
+
+Depending on the number of affected tickets, you might see a small notification informing you about the progress. The
+bulk action is performed in the background so you can work on other tickets. However, until the bulk action is finished,
+you are not able to start a new bulk action.
 
 ## Merge Tickets
 

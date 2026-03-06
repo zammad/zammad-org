@@ -166,7 +166,9 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.wait(300) // transition
     cy.get('button').contains('Bulk actions').click()
-    cy.wait(300) // transition
+    cy.wait(1000) // transition
+    //cy.get('[aria-label="Resize side panel"]').trigger('mousedown').trigger('mousemove', { clientX: 100, clientY: 0 } ).trigger('mouseup')
+    //tried to make the flyout smaller to decrease screenshot size
     cy.get('[name="group_id"]').click({ force: true }).type('Infrastructure{downArrow}{enter}')
     cy.get('[name="owner_id"]').click({ force: true }).type('Jackson{downArrow}{enter}')
     cy.get('label').contains('Note').click()

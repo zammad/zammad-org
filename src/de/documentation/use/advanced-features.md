@@ -308,26 +308,28 @@ Sie Zeit sparen!
 
 **Wie?**
 
-Es gibt 2 _Orte_, an denen Sie Mehrfach-Aktionen durchführen können:
+There are 2 places where you can apply bulk actions:
 
-- Erweiterte Suche
-- Übersichten
+- [Detailed search page](guides/search)
+- [Overviews](guides/overviews)
 
-Wenn Sie sich in den Übersichten oder auf der Seite für die erweiterte Suche
-befinden, können Sie Tickets auf 2 _Arten_ bearbeiten:
+To use bulk actions, first select the tickets you want to apply the changes
+to. Either select the tickets individually by clicking on the checkbox next
+to them or use the checkbox in the header to select all tickets of the
+current page. After selecting all tickets of the page, you can even select
+all tickets which match your current search query or overview condition by
+clicking on the **Select all XX results** label. The maximum number of
+tickets you can select for a bulk action is 2000.
 
-- Verwenden Sie die Schaltfläche `Mehrfach-Aktion` in der oberen rechten
-  Ecke und ändern Sie Attribute oder fügen Sie Werte über die Felder in der
-  Seitenleiste hinzu
-- Ziehen Sie die Tickets mit der Maus, um die Mehrfach-Aktion einzublenden,
-  und legen Sie sie auf der gewünschten Aktion ab
+To select a section of consecutive tickets, click on the checkbox of the
+first ticket, then hold [[shift]] and click on the checkbox of the last
+ticket. This selects all tickets in between as well. It even works for
+unselecting tickets.
 
-Um Tickets in beiden Fällen zu bearbeiten, müssen Sie sie vorher
-auswählen. Klicken Sie dazu auf das Kontrollkästchen auf der linken Seite
-einer Zeile in der Ticket-Tabelle. Ausgewählte Tickets werden neben dem
-Kontrollkästchen hervorgehoben.
-
-Folgende Änderungen können Sie an Tickets vornehmen:
+After selecting the tickets you want to apply changes to, click the `Bulk
+Action` button in the top right corner and change/add attributes by using
+the fields in the side panel. The available changes you can apply to tickets
+are:
 
 - Gruppe festlegen
 - Besitzer festlegen
@@ -335,6 +337,11 @@ Folgende Änderungen können Sie an Tickets vornehmen:
 - Priorität festlegen
 - Eine Notiz hinzufügen
 - Ausführen eines Makros
+
+Depending on the number of affected tickets, you might see a small
+notification informing you about the progress. The bulk action is performed
+in the background so you can work on other tickets. However, until the bulk
+action is finished, you are not able to start a new bulk action.
 
 ## Tickets zusammenfassen
 
