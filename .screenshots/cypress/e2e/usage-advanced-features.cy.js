@@ -186,15 +186,9 @@ describe('usage advanced features', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
-    cy.get('[aria-label="Avatar (Evelyn Smith) (VIP)"]').first().trigger('mouseenter').wait(1000)
-    cy.get('.popover*').should('be.visible')
-    cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
-      cy.get('.popover*').clip({ padding: 5 }).then((BottomClip) => {
-        cy.mergeClips(TopClip, BottomClip).then((clip) => {
-          cy.screenshot('user-detail-panel', { clip })
-        })
-      })
-    })
+    // changed screenshot to be created from article bubble avatar because it broke when done in ticket header. Can be revisited later.
+    cy.get('[aria-label="Avatar (Evelyn Smith) (VIP)"]').last().trigger('mouseenter').wait(1000)
+    cy.get('.popover*').screenshot('user-detail-panel', {padding:[ 57, 0, 5, 15 ]})
   })
 
   it('gitlab sidebar tab', () => {
