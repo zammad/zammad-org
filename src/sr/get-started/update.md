@@ -48,9 +48,40 @@ In such a case, you might want to exclude Zammad from updating temporarily as
 you can see in the commands below.
 :::
 
-:::tabs
+:::tabs key:distros
 
-=== Ubuntu/Debian
+=== Ubuntu
+Update package lists:
+
+```sh
+sudo apt update
+```
+
+Disable updates for Zammad:
+
+```sh
+sudo apt-mark hold zammad
+```
+
+Update all packages except Zammad:
+
+```sh
+sudo apt upgrade
+```
+
+Re-enable updates for Zammad:
+
+```sh
+sudo apt-mark unhold zammad
+```
+
+Update Zammad:
+
+```sh
+sudo apt upgrade
+```
+
+=== Debian
 Update package lists:
 
 ```sh
