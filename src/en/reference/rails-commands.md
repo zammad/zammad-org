@@ -760,6 +760,25 @@ Setting.set('ui_ticket_priority_icons', true)
 
 ## Other Useful Commands
 
+### Remove AI Feature
+
+Zammad's AI feature is completely optional and requires a configuration before any AI request is made. However, if you
+don't want to see the feature, you can do so by setting the permission to inactive.
+
+Disable any AI provider, in case you already configured it:
+
+```ruby
+Setting.set('ai_provider', false)
+```
+
+Disable permission to hide the settings from UI:
+
+```ruby
+Permission.where("name LIKE 'admin.ai%'").update!(active: false)
+```
+
+To re-enable it, set the `active` flag to `true`.
+
 ### Fetch Emails
 
 The below command will do a manual fetch of mail channels. This will
