@@ -117,7 +117,7 @@ aktiviert. Dies kann nützlich sein, wenn Sie mit Text arbeiten, der
 Diakritika und/oder Umlaute enthält.
 
 Falls Sie eine genauere Suche benötigen, können Sie dies per
-[Rails-Befehlen](de/reference/rails-commands#asciifold-deaktivieren)
+[Rails-Befehlen](/de/reference/rails-commands#asciifold-deaktivieren)
 deaktivieren.
 
 ## Fehlerbehebung

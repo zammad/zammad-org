@@ -312,7 +312,7 @@ Diese Warnung wird einmal angezeigt, bevor ein leeres Verzeichnis erstellt
 wird, damit der Sicherungsvorgang erfolgreich fortgesetzt werden kann.
 
 Prüfen und passen Sie Ihre
-Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](de/reference/rails-commands#storage-provider-einstellungen)
+Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](/de/reference/rails-commands#storage-provider-einstellungen)
 oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.
 
 ## Hilfsskript

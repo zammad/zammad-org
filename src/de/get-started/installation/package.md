@@ -9,7 +9,7 @@ title: Paket
 
 ## Unterstützte Betriebssysteme
 
-For package installation, the following Linux distributions are supported:
+Für Paketinstallationen werden die folgenden Linux-Distributionen unterstützt:
 <!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
 adjust it over there -->
 | Distribution  | Version             |

@@ -1,19 +1,19 @@
 ---
 order: 1
-title: 'Zammad UI'
+title: 'Zammad кориснички интерфејс'
 ---
 
-# Zammad UI
+# Zammad кориснички интерфејс
 
-The user interface (UI) of Zammad is designed to provide an intuitive
-experience for users. It is built around the concept of simplicity, clarity,
-and accessibility and is based on common software design principles which
-should make the UI pretty self explanatory.
+Кориснички интерфејс Zammad-а је дизајниран да пружи интуитивно искуство
+корисницима. Направљен је на основу концепта једноставности, јасноће и
+приступачности, и базиран је на основим принципима развоја софтвера који
+чине интерфејс самообјашњивим.
 
-There are basic modular components for different features to keep the UI
-consistent. These components are described in the sections below. Depending
-on the currently opened screen, there are interactive components, such as
-tooltips and a contextual help. Use them wherever needed.
+Различите функције се ослањају на основне модуларне компоненте које чине
+интерфејс конзистентним. Ове компоненте су објашњене у одељцима испод. У
+зависности од тренутног екрана, постоје интерактивне компоненте, као што су
+савети и контекстни описи. Користите их кад год је то неопходно.
 
 ![Screenshot shows the ticket detail
 view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
@@ -44,7 +44,7 @@ Sidebar Tabs
   these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket
   customer has an assigned organization).
 
-## Navigation Sidebar
+## Навигациона трака
 
 The navigation sidebar is your central place to access all main parts of
 Zammad. You might not see all of them because some depend on the
@@ -85,11 +85,12 @@ Ticket Tab
 : This tab shows the ticket information like owner, group, priority and state and lets you edit these values.
   Additionally, the following actions are available when you click on the ::a:: button in the top section:
 
-  - History: shows a dialog with the history in the current ticket. This is
-    where you can find when and what actions was performed and by whom.
-  - Merge: merge the ticket with another one in case a customer emailed you
-    multiple times about the same issue.
-  - Change customer: set another customer for the ticket.
+  - Историјат: приказује дијалог са историјатом тренутног тикета. Овде
+    можете пронаћи када сау и које радње извршене над тикетом и од стране
+    кога.
+  - Споји: спојите тикет са другим у случају да вас је клијент контактирао
+    више пута у вези истог проблема.
+  - Измени клијента: поставите другог клијента тикета.
 
 Customer Tab
 : View customer details including a reference to the customer’s other tickets. You can change the ticket customer here

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-11 14:33+0100\n"
-"PO-Revision-Date: 2026-03-10 16:00+0000\n"
+"POT-Creation-Date: 2026-03-16 08:56+0100\n"
+"PO-Revision-Date: 2026-03-16 08:50+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -6085,7 +6085,7 @@ msgstr "Ändern von Organisations-Attributen"
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:466
+#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
 #, no-wrap
 msgid "Limitations"
 msgstr "Einschränkungen"
@@ -8303,7 +8303,7 @@ msgstr ""
 #: src/en/get-started/host-upgrade.md:1 src/en/get-started/host-upgrade.md:6
 #, no-wrap
 msgid "Host Upgrade"
-msgstr ""
+msgstr "Host-Upgrade"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:9
@@ -8324,31 +8324,34 @@ msgid ""
 "to upgrade your host operating system, make sure to read the steps below. "
 "Some additional steps are required compared to just updating Zammad itself."
 msgstr ""
+"Wenn Sie Zammad über den [Paketmanager](installation/package) installiert "
+"haben und Ihr Host-Betriebssystem aktualisieren müssen, lesen Sie bitte die "
+"folgenden Schritte. Es sind einige zusätzliche Schritte im Vergleich zur "
+"Aktualisierung von Zammad selbst erforderlich."
 
 #. type: Fenced div block (warning)
 #: src/en/get-started/host-upgrade.md:13
-#, fuzzy, no-wrap
-#| msgid "Follow the [backup guide](/en/tutorials/backup-restore#) to create your backup."
+#, no-wrap
 msgid "Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.\n"
-msgstr "Folgen Sie der [Backup Anleitung](/de/tutorials/backup-restore#), um Ihre Sicherung zu erstellen."
+msgstr "Stellen Sie immer sicher, dass Sie eine [Sicherung](/de/tutorials/backup-restore) Ihrer Daten haben, bevor Sie ein Upgrade durchführen.\n"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:18
-#, fuzzy
-#| msgid "The following reverse proxies are supported:"
 msgid "The following operating systems are supported:"
-msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
+msgstr "Die folgenden Betriebssysteme werden unterstützt:"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:20
 #, no-wrap
 msgid "<!--@include: /installation/package.md{15,20}-->\n"
-msgstr ""
+msgstr "<!--@include: /installation/package.md{15,20}-->\n"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:24
 msgid "The general steps, no matter which operating system you are using, are:"
 msgstr ""
+"Die allgemeinen Schritte, unabhängig davon, welches Betriebssystem Sie "
+"verwenden, sind:"
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade.md:32 src/en/get-started/host-upgrade.md:35
@@ -8359,27 +8362,23 @@ msgstr "Zammad stoppen"
 
 #. type: Bullet: '1. '
 #: src/en/get-started/host-upgrade.md:32
-#, fuzzy
-#| msgid "Consider backup strategies for Zammad"
 msgid "Disable updates for Zammad"
-msgstr "Erwägen Sie Backup-Strategien für Zammad"
+msgstr "Aktualisierungen für Zammad deaktivieren"
 
 #. type: Bullet: '1. '
 #: src/en/get-started/host-upgrade.md:32
 msgid "Perform host upgrade"
-msgstr ""
+msgstr "Host-Upgrade durchführen"
 
 #. type: Bullet: '1. '
 #: src/en/get-started/host-upgrade.md:32
 msgid "Reboot host"
-msgstr ""
+msgstr "Host neu starten"
 
 #. type: Bullet: '1. '
 #: src/en/get-started/host-upgrade.md:32
-#, fuzzy
-#| msgid "Add Zammad Repository"
 msgid "Adjust package repository"
-msgstr "Zammad-Paketquelle hinzufügen"
+msgstr "Paketquelle anpassen"
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade.md:32 src/en/get-started/host-upgrade.md:131
@@ -8397,10 +8396,9 @@ msgstr "Zammad starten"
 
 #. type: Title ##
 #: src/en/get-started/host-upgrade.md:33
-#, fuzzy, no-wrap
-#| msgid "Next Steps"
+#, no-wrap
 msgid "Detailed Steps"
-msgstr "Nächste Schritte"
+msgstr "Detaillierte Schritte"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/host-upgrade.md:37 src/en/get-started/update.md:30
@@ -8411,36 +8409,13 @@ msgstr "sudo systemctl stop zammad\n"
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade.md:41
-#, fuzzy, no-wrap
-#| msgid "Update Zammad"
+#, no-wrap
 msgid "Disable Updates for Zammad"
-msgstr "Zammad aktualisieren"
+msgstr "Aktualisierungen für Zammad deaktivieren"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade.md:43
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Debian & Ubuntu\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo dpkg -r --force-depends zammad\n"
-#| "```\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install zammad\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE\n"
-#| "\n"
-#| "``` sh\n"
-#| "sudo zypper remove -R zammad\n"
-#| "```\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper install zammad\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8469,24 +8444,28 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"=== Debian & Ubuntu\n"
+"=== Ubuntu\n"
 "\n"
 "```sh\n"
-"sudo dpkg -r --force-depends zammad\n"
+"sudo apt-mark hold zammad\n"
 "```\n"
+"\n"
+"=== Debian\n"
 "\n"
 "```sh\n"
-"sudo apt install zammad\n"
+"sudo apt-mark hold zammad\n"
 "```\n"
 "\n"
-"=== OpenSUSE\n"
-"\n"
-"``` sh\n"
-"sudo zypper remove -R zammad\n"
-"```\n"
+"=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper install zammad\n"
+"sudo zypper addlock zammad\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"```sh\n"
+"sudo yum upgrade --exclude zammad\n"
 "```\n"
 "\n"
 
@@ -8494,7 +8473,7 @@ msgstr ""
 #: src/en/get-started/host-upgrade.md:71
 #, no-wrap
 msgid "Perform Host Upgrade"
-msgstr ""
+msgstr "Host-Upgrade durchführen"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:75
@@ -8503,12 +8482,16 @@ msgid ""
 "system. Because this is an advanced task, we don't provide detailed steps "
 "here. After upgrading your operating system, proceed with the next steps."
 msgstr ""
+"Führen Sie das Host-Upgrade gemäß der Dokumentation Ihres Betriebssystems "
+"durch. Da es sich hierbei um eine anspruchsvolle und umfangreiche Aufgabe "
+"handelt, gibt es dazu hier keine Anleitung. Nach dem Upgrade Ihres "
+"Betriebssystems fahren Sie mit den nächsten Schritten fort."
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade.md:76
 #, no-wrap
 msgid "Reboot Host"
-msgstr ""
+msgstr "Host neu starten"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:81
@@ -8518,20 +8501,22 @@ msgid ""
 "expected. In case Zammad starts automatically, stop it again before "
 "proceeding with the next steps."
 msgstr ""
+"Falls Sie Ihr System nach dem Upgrade nicht neu gestartet haben, müssen Sie "
+"es jetzt neu starten. Prüfen Sie anschließend, ob alles wie erwartet läuft. "
+"Falls Zammad automatisch startet, stoppen Sie es wieder, bevor Sie mit den "
+"nächsten Schritten fortfahren."
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade.md:82
-#, fuzzy, no-wrap
-#| msgid "Add Zammad Repository"
+#, no-wrap
 msgid "Adjust Package Repository"
-msgstr "Zammad-Paketquelle hinzufügen"
+msgstr "Paketquelle anpassen"
 
 #. type: Title ####
 #: src/en/get-started/host-upgrade.md:84
-#, fuzzy, no-wrap
-#| msgid "Add Repository"
+#, no-wrap
 msgid "Remove Old Repository"
-msgstr "Paketquelle hinzufügen"
+msgstr "Alte Paketquelle entfernen"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:87
@@ -8539,6 +8524,8 @@ msgid ""
 "Remove the old repository configuration file or disable/delete the old "
 "repository in your package manager."
 msgstr ""
+"Entfernen Sie die alte Konfigurationsdatei der Paketquelle oder deaktivieren/"
+"löschen Sie die alte Paketquelle in Ihrem Paketmanager."
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade.md:88
@@ -8578,13 +8565,45 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
+"\n"
+"=== Ubuntu\n"
+"\n"
+"Ubuntu 22.04:\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Ubuntu 20.04:\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/apt/sources.list.d/zammad.sources\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/zypp/repos.d/zammad.repo\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
 
 #. type: Title ####
 #: src/en/get-started/host-upgrade.md:124
-#, fuzzy, no-wrap
-#| msgid "Add Repository"
+#, no-wrap
 msgid "Add New Repository"
-msgstr "Paketquelle hinzufügen"
+msgstr "Neue Paketquelle hinzufügen"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:128
@@ -8594,12 +8613,16 @@ msgid ""
 "the new one. Otherwise, you can add the new repository configuration "
 "directly."
 msgstr ""
+"Wenn der Paketquellen-Schlüssel für die alte und die neue Version Ihrer "
+"Distribution unterschiedlich ist oder Ihre Distribution diesen an einem "
+"anderen Ort erwartet, fügen Sie den neuen Schlüssel hinzu. Andernfalls "
+"können Sie direkt die neue Konfiguration der Paketquelle hinzufügen."
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:130
 #, no-wrap
 msgid "<!--@include: /installation/package.md{171,283}-->\n"
-msgstr ""
+msgstr "<!--@include: /installation/package.md{171,283}-->\n"
 
 #. type: Fenced div block (tip)
 #: src/en/get-started/host-upgrade.md:133
@@ -8608,6 +8631,8 @@ msgid ""
 "If there is a new Zammad version available and you want to update to it, check the\n"
 "[release notes](https://zammad.com/en/product/releases) for any required additional steps.\n"
 msgstr ""
+"Wenn eine neue Version von Zammad verfügbar ist und Sie auf diese aktualisieren möchten, lesen Sie die\n"
+"[Release Notes](https://zammad.com/de/product/releases) für erforderliche zusätzliche Schritte.\n"
 
 #. type: Plain text
 #: src/en/get-started/host-upgrade.md:139
@@ -8615,95 +8640,12 @@ msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
 "available for your operating system."
 msgstr ""
+"Aktivieren Sie die Updates für Zammad wieder und aktualisieren Sie Zammad "
+"auf die neueste Version, die für Ihr Betriebssystem verfügbar ist."
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade.md:140
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu/Debian\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "\n"
-#| "Disable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt-mark hold zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt upgrade\n"
-#| "```\n"
-#| "\n"
-#| "Re-enable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt-mark unhold zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt upgrade\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper refresh\n"
-#| "```\n"
-#| "\n"
-#| "Disable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper addlock zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper update\n"
-#| "```\n"
-#| "\n"
-#| "Re-enable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper removelock zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper update\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum check-update\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum upgrade --exclude zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum upgrade\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8774,26 +8716,15 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"=== Ubuntu/Debian\n"
-"Paketlisten aktualisieren:\n"
+"=== Ubuntu\n"
+"\n"
+"Aktualisierung des Paketindexes:\n"
 "\n"
 "```sh\n"
 "sudo apt update\n"
 "```\n"
 "\n"
-"Aktualisierung für Zammad deaktiveren:\n"
-"\n"
-"```sh\n"
-"sudo apt-mark hold zammad\n"
-"```\n"
-"\n"
-"Alle Pakete außer Zammad aktualisieren:\n"
-"\n"
-"```sh\n"
-"sudo apt upgrade\n"
-"```\n"
-"\n"
-"Aktualisierungen für Zammad wieder aktivieren:\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
 "\n"
 "```sh\n"
 "sudo apt-mark unhold zammad\n"
@@ -8802,59 +8733,53 @@ msgstr ""
 "Zammad aktualisieren:\n"
 "\n"
 "```sh\n"
-"sudo apt upgrade\n"
+"sudo apt upgrade zammad\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"Aktualisierung des Paketindexes:\n"
+"\n"
+"```sh\n"
+"sudo apt update\n"
+"```\n"
+"\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
+"\n"
+"```sh\n"
+"sudo apt-mark unhold zammad\n"
+"```\n"
+"\n"
+"Zammad aktualisieren\n"
+"\n"
+"```sh\n"
+"sudo apt upgrade zammad\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Paketlisten aktualisieren:\n"
+"Aktualisierung des Paketindexes:\n"
 "\n"
 "```sh\n"
 "sudo zypper refresh\n"
 "```\n"
 "\n"
-"Aktualisierung für Zammad deaktiveren:\n"
-"\n"
-"```sh\n"
-"sudo zypper addlock zammad\n"
-"```\n"
-"\n"
-"Alle Pakete außer Zammad aktualisieren:\n"
-"\n"
-"```sh\n"
-"sudo zypper update\n"
-"```\n"
-"\n"
-"Aktualisierungen für Zammad wieder aktivieren:\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
 "\n"
 "```sh\n"
 "sudo zypper removelock zammad\n"
 "```\n"
 "\n"
-"Zammad aktualisieren:\n"
+"Zammad aktualisieren\n"
 "\n"
 "```sh\n"
-"sudo zypper update\n"
+"sudo zypper update zammad\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"Paketlisten aktualisieren:\n"
-"\n"
 "```sh\n"
-"sudo yum check-update\n"
-"```\n"
-"\n"
-"Alle Pakete außer Zammad aktualisieren:\n"
-"\n"
-"```sh\n"
-"sudo yum upgrade --exclude zammad\n"
-"```\n"
-"\n"
-"Zammad aktualisieren:\n"
-"\n"
-"```sh\n"
-"sudo yum upgrade\n"
+"sudo yum upgrade zammad\n"
 "```\n"
 "\n"
 
@@ -9026,7 +8951,7 @@ msgstr ""
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
 #: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:481
+#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
 #: src/en/tutorials/reporting-grafana.md:26
 #, no-wrap
 msgid "Prerequisites"
@@ -9499,7 +9424,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:499
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid "\n"
 msgstr "\n"
@@ -9566,14 +9491,7 @@ msgstr "Unterstützte Betriebssysteme"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:21
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Distribution  | Version             |\n"
-#| "| ------------- | :-----------------  |\n"
-#| "| CentOS/RHEL   | 9                   |\n"
-#| "| Debian        | 11, 12 & 13         |\n"
-#| "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
-#| "| Ubuntu        | 22.04, 24.04        |\n"
+#, no-wrap
 msgid ""
 "For package installation, the following Linux distributions are supported:\n"
 "<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or\n"
@@ -9585,6 +9503,9 @@ msgid ""
 "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
 "| Ubuntu        | 22.04, 24.04        |\n"
 msgstr ""
+"Für Paketinstallationen werden die folgenden Linux-Distributionen unterstützt:\n"
+"<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or\n"
+"adjust it over there -->\n"
 "| Distribution  | Version             |\n"
 "| ------------- | :-----------------  |\n"
 "| CentOS/RHEL   | 9                   |\n"
@@ -9917,6 +9838,8 @@ msgid ""
 "<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or\n"
 "adjust it over there -->\n"
 msgstr ""
+"<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or\n"
+"adjust it over there -->\n"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:172
@@ -10906,92 +10829,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/update.md:50
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu/Debian\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "\n"
-#| "Disable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt-mark hold zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt upgrade\n"
-#| "```\n"
-#| "\n"
-#| "Re-enable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt-mark unhold zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt upgrade\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper refresh\n"
-#| "```\n"
-#| "\n"
-#| "Disable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper addlock zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper update\n"
-#| "```\n"
-#| "\n"
-#| "Re-enable updates for Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper removelock zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper update\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "Update package lists:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum check-update\n"
-#| "```\n"
-#| "\n"
-#| "Update all packages except Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum upgrade --exclude zammad\n"
-#| "```\n"
-#| "\n"
-#| "Update Zammad:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo yum upgrade\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -11110,14 +10948,15 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"=== Ubuntu/Debian\n"
+"=== Ubuntu\n"
+"\n"
 "Paketlisten aktualisieren:\n"
 "\n"
 "```sh\n"
 "sudo apt update\n"
 "```\n"
 "\n"
-"Aktualisierung für Zammad deaktiveren:\n"
+"Aktualisierung für Zammad deaktivieren:\n"
 "\n"
 "```sh\n"
 "sudo apt-mark hold zammad\n"
@@ -11129,7 +10968,39 @@ msgstr ""
 "sudo apt upgrade\n"
 "```\n"
 "\n"
-"Aktualisierungen für Zammad wieder aktivieren:\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
+"\n"
+"```sh\n"
+"sudo apt-mark unhold zammad\n"
+"```\n"
+"\n"
+"Zammad aktualisieren:\n"
+"\n"
+"```sh\n"
+"sudo apt upgrade\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"Paketlisten aktualisieren:\n"
+"\n"
+"```sh\n"
+"sudo apt update\n"
+"```\n"
+"\n"
+"Aktualisierung für Zammad deaktivieren:\n"
+"\n"
+"```sh\n"
+"sudo apt-mark hold zammad\n"
+"```\n"
+"\n"
+"Alle Pakete außer Zammad aktualisieren:\n"
+"\n"
+"```sh\n"
+"sudo apt upgrade\n"
+"```\n"
+"\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
 "\n"
 "```sh\n"
 "sudo apt-mark unhold zammad\n"
@@ -11149,7 +11020,7 @@ msgstr ""
 "sudo zypper refresh\n"
 "```\n"
 "\n"
-"Aktualisierung für Zammad deaktiveren:\n"
+"Aktualisierung für Zammad deaktivieren:\n"
 "\n"
 "```sh\n"
 "sudo zypper addlock zammad\n"
@@ -11161,7 +11032,7 @@ msgstr ""
 "sudo zypper update\n"
 "```\n"
 "\n"
-"Aktualisierungen für Zammad wieder aktivieren:\n"
+"Aktivieren der Aktualisierung für Zammad:\n"
 "\n"
 "```sh\n"
 "sudo zypper removelock zammad\n"
@@ -19626,10 +19497,9 @@ msgstr "Andere nützliche Befehle"
 
 #. type: Title ###
 #: src/en/reference/rails-commands.md:763
-#, fuzzy, no-wrap
-#| msgid "AI Features"
+#, no-wrap
 msgid "Remove AI Feature"
-msgstr "KI-Features"
+msgstr "KI-Funktion entfernen"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:767
@@ -19638,34 +19508,39 @@ msgid ""
 "before any AI request is made. However, if you don't want to see the "
 "feature, you can do so by setting the permission to inactive."
 msgstr ""
+"Die KI-Funktion von Zammad ist völlig optional und erfordert eine "
+"Konfiguration, bevor irgendeine KI-Anfrage gestellt wird. Wenn Sie die "
+"Funktion jedoch nicht sehen möchten, können Sie die Berechtigung auf inaktiv "
+"setzen."
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:769
 msgid "Disable any AI provider, in case you already configured it:"
-msgstr ""
+msgstr "Deaktivieren Sie jeglichen KI-Anbieter, falls bereits konfiguriert:"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:770
-#, fuzzy, no-wrap
-#| msgid "Setting.set('import_mode', false)\n"
+#, no-wrap
 msgid "Setting.set('ai_provider', false)\n"
-msgstr "Setting.set('import_mode', false)\n"
+msgstr "Setting.set('ai_provider', false)\n"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:775
 msgid "Disable permission to hide the settings from UI:"
 msgstr ""
+"Deaktivieren Sie die Berechtigung, um die Einstellungen aus der "
+"Benutzeroberfläche auszublenden:"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:776
 #, no-wrap
 msgid "Permission.where(\"name LIKE 'admin.ai%'\").update!(active: false)\n"
-msgstr ""
+msgstr "Permission.where(\"name LIKE 'admin.ai%'\").update!(active: false)\n"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:781
 msgid "To re-enable it, set the `active` flag to `true`."
-msgstr ""
+msgstr "Um sie wieder zu aktivieren, setzen Sie das `active`-Flag auf `true`."
 
 #. type: Title ###
 #: src/en/reference/rails-commands.md:782
@@ -27999,7 +27874,7 @@ msgid ""
 "or in Zammad's admin interface under _Settings > System > Storage_.\n"
 msgstr ""
 "Prüfen und passen Sie Ihre\n"
-"Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](de/reference/rails-commands#storage-provider-einstellungen)\n"
+"Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](/de/reference/rails-commands#storage-provider-einstellungen)\n"
 "oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.\n"
 
 #. type: Title ##
@@ -28389,7 +28264,7 @@ msgid ""
 "(/en/reference/rails-commands#disable-asciifold)."
 msgstr ""
 "Falls Sie eine genauere Suche benötigen, können Sie dies per [Rails-Befehlen]"
-"(de/reference/rails-commands#asciifold-deaktivieren) deaktivieren."
+"(/de/reference/rails-commands#asciifold-deaktivieren) deaktivieren."
 
 #. type: Title ##
 #: src/en/tutorials/connect-config-elasticsearch.md:115
@@ -30345,7 +30220,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
 "a test import before to learn how long the migration will take."
@@ -30405,7 +30280,7 @@ msgstr ""
 "Ihre Freshdesk-Subdomain und Ihren API-Schlüssel anfordern."
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:488
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -30416,14 +30291,14 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
-#: src/en/tutorials/migrate.md:389 src/en/tutorials/migrate.md:493
+#: src/en/tutorials/migrate.md:400 src/en/tutorials/migrate.md:504
 #, no-wrap
 msgid "Import"
 msgstr "Import"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
-#: src/en/tutorials/migrate.md:498
+#: src/en/tutorials/migrate.md:509
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
 "fairly big instance with a lot of data, you may want to consider using the "
@@ -30585,7 +30460,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"
@@ -30614,40 +30489,40 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
-#: src/en/tutorials/migrate.md:448 src/en/tutorials/migrate.md:589
+#: src/en/tutorials/migrate.md:459 src/en/tutorials/migrate.md:600
 #, no-wrap
 msgid "After Migration"
 msgstr "Nach der Migration"
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
-#: src/en/tutorials/migrate.md:451 src/en/tutorials/migrate.md:592
+#: src/en/tutorials/migrate.md:462 src/en/tutorials/migrate.md:603
 msgid "Run the following commands:"
 msgstr "Führen Sie die folgenden Befehle aus:"
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:452 src/en/tutorials/migrate.md:593
+#: src/en/tutorials/migrate.md:463 src/en/tutorials/migrate.md:604
 #, no-wrap
 msgid "Setting.set('import_mode', false)\n"
 msgstr "Setting.set('import_mode', false)\n"
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
-#: src/en/tutorials/migrate.md:456 src/en/tutorials/migrate.md:597
+#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
 #, no-wrap
 msgid "Setting.set('system_init_done', true)\n"
 msgstr "Setting.set('system_init_done', true)\n"
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
-#: src/en/tutorials/migrate.md:460 src/en/tutorials/migrate.md:601
+#: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:612
 #, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr "Rails.cache.clear\n"
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:607
+#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:618
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
 "address and API token provided during the migration to login."
@@ -30658,7 +30533,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
-#: src/en/tutorials/migrate.md:609
+#: src/en/tutorials/migrate.md:620
 msgid ""
 "All other users will have to use the password reset function or login "
 "methods like LDAP or one click logins."
@@ -30951,7 +30826,7 @@ msgid "OTRS"
 msgstr "OTRS"
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:469
+#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:480
 msgid "Additional limitations to the general one:"
 msgstr "Zusätzliche Einschränkungen zu den allgemeinen:"
 
@@ -31082,8 +30957,34 @@ msgid ""
 "errors.\n"
 msgstr "In einigen Fällen kann ein Neustart des Webservers helfen, interne Serverfehler zu beheben.\n"
 
+#. type: Title ###
+#: src/en/tutorials/migrate.md:389
+#, no-wrap
+msgid "Timeout Adjustments"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:394
+msgid ""
+"If your import runs in a timeout or you already know that this could be an "
+"issue, you can adjust timeouts via environment variables. To do so, set the "
+"environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and "
+"`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not "
+"set, the defaults apply:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:399
+#, no-wrap
+msgid ""
+"|                                    | Zammad < 7.0 | Zammad ≥ 7.0  |\n"
+"|------------------------------------|--------------|---------------|\n"
+"| `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT`  | 120          | 600           |\n"
+"| `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` | 360          | 1200          |\n"
+msgstr ""
+
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:391
+#: src/en/tutorials/migrate.md:402
 #, no-wrap
 msgid ""
 "\n"
@@ -31198,13 +31099,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:464
+#: src/en/tutorials/migrate.md:475
 #, no-wrap
 msgid "Zendesk"
 msgstr "Zendesk"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
 "plan (API rate limits apply)."
@@ -31213,7 +31114,7 @@ msgstr ""
 "Ihrem Zendesk-Tarif abhängt (es gelten API-Beschränkungen)."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
 "available plans."
@@ -31222,7 +31123,7 @@ msgstr ""
 "nicht in allen Tarifen der Fall."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on the login page."
@@ -31231,7 +31132,7 @@ msgstr ""
 "Link zum Zurücksetzen des Passworts auf der Anmeldeseite verwenden."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
 "before starting the migration."
@@ -31240,7 +31141,7 @@ msgstr ""
 "sicher, dass Sie sie umbenennen, bevor Sie die Migration starten."
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:487
+#: src/en/tutorials/migrate.md:498
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API key]"
 "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
@@ -31253,7 +31154,7 @@ msgstr ""
 "wird Ihre Zendesk-URL, Ihre E-Mail-Adresse und Ihren API-Schlüssel abfragen."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"

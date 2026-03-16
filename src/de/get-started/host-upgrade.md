@@ -1,38 +1,39 @@
 ---
 order: 4
-title: 'Host Upgrade'
+title: Host-Upgrade
 ---
 
-# Host Upgrade
+# Host-Upgrade
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-If you installed Zammad via [package manager](installation/package) and need
-to upgrade your host operating system, make sure to read the steps
-below. Some additional steps are required compared to just updating Zammad
-itself.
+Wenn Sie Zammad über den [Paketmanager](installation/package) installiert
+haben und Ihr Host-Betriebssystem aktualisieren müssen, lesen Sie bitte die
+folgenden Schritte. Es sind einige zusätzliche Schritte im Vergleich zur
+Aktualisierung von Zammad selbst erforderlich.
 
 :::warning
-Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
+Stellen Sie immer sicher, dass Sie eine [Sicherung](/de/tutorials/backup-restore) Ihrer Daten haben, bevor Sie ein Upgrade durchführen.
 :::
 
-The following operating systems are supported:
+Die folgenden Betriebssysteme werden unterstützt:
 
 <!--@include: /installation/package.md{15,20}-->
 
 ## Allgemein
 
-The general steps, no matter which operating system you are using, are:
+Die allgemeinen Schritte, unabhängig davon, welches Betriebssystem Sie
+verwenden, sind:
 
 1. Zammad stoppen
-1. Disable updates for Zammad
-1. Perform host upgrade
-1. Reboot host
-1. Adjust package repository
+1. Aktualisierungen für Zammad deaktivieren
+1. Host-Upgrade durchführen
+1. Host neu starten
+1. Paketquelle anpassen
 1. Zammad aktualisieren
 1. Zammad starten
 
-## Detailed Steps
+## Detaillierte Schritte
 
 ### Zammad stoppen
 
@@ -40,7 +41,7 @@ The general steps, no matter which operating system you are using, are:
 sudo systemctl stop zammad
 ```
 
-### Disable Updates for Zammad
+### Aktualisierungen für Zammad deaktivieren
 
 :::tabs key:distros
 
@@ -70,25 +71,26 @@ sudo yum upgrade --exclude zammad
 
 :::
 
-### Perform Host Upgrade
+### Host-Upgrade durchführen
 
-Perform the host upgrade according to the documentation of your operating
-system. Because this is an advanced task, we don't provide detailed steps
-here. After upgrading your operating system, proceed with the next steps.
+Führen Sie das Host-Upgrade gemäß der Dokumentation Ihres Betriebssystems
+durch. Da es sich hierbei um eine anspruchsvolle und umfangreiche Aufgabe
+handelt, gibt es dazu hier keine Anleitung. Nach dem Upgrade Ihres
+Betriebssystems fahren Sie mit den nächsten Schritten fort.
 
-### Reboot Host
+### Host neu starten
 
-In case you did not reboot your system after the upgrade, make sure to
-reboot your system now. Afterwards, check if everything is running as
-expected. In case Zammad starts automatically, stop it again before
-proceeding with the next steps.
+Falls Sie Ihr System nach dem Upgrade nicht neu gestartet haben, müssen Sie
+es jetzt neu starten. Prüfen Sie anschließend, ob alles wie erwartet
+läuft. Falls Zammad automatisch startet, stoppen Sie es wieder, bevor Sie
+mit den nächsten Schritten fortfahren.
 
-### Adjust Package Repository
+### Paketquelle anpassen
 
-#### Remove Old Repository
+#### Alte Paketquelle entfernen
 
-Remove the old repository configuration file or disable/delete the old
-repository in your package manager.
+Entfernen Sie die alte Konfigurationsdatei der Paketquelle oder
+deaktivieren/löschen Sie die alte Paketquelle in Ihrem Paketmanager.
 
 :::tabs key:distros
 
@@ -126,42 +128,42 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-#### Add New Repository
+#### Neue Paketquelle hinzufügen
 
-If the repository key is different for the old and new version your
-distribution or your distribution expects it in a different location, add
-the new one. Otherwise, you can add the new repository configuration
-directly.
+Wenn der Paketquellen-Schlüssel für die alte und die neue Version Ihrer
+Distribution unterschiedlich ist oder Ihre Distribution diesen an einem
+anderen Ort erwartet, fügen Sie den neuen Schlüssel hinzu. Andernfalls
+können Sie direkt die neue Konfiguration der Paketquelle hinzufügen.
 
 <!--@include: /installation/package.md{171,283}-->
 
 ### Zammad aktualisieren
 
 :::tip
-If there is a new Zammad version available and you want to update to it, check the
-[release notes](https://zammad.com/en/product/releases) for any required additional steps.
+Wenn eine neue Version von Zammad verfügbar ist und Sie auf diese aktualisieren möchten, lesen Sie die
+[Release Notes](https://zammad.com/de/product/releases) für erforderliche zusätzliche Schritte.
 :::
 
-Re-enable updates for Zammad and update Zammad to the latest version
-available for your operating system.
+Aktivieren Sie die Updates für Zammad wieder und aktualisieren Sie Zammad
+auf die neueste Version, die für Ihr Betriebssystem verfügbar ist.
 
 :::tabs key:distros
 
 === Ubuntu
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade zammad
@@ -169,19 +171,19 @@ sudo apt upgrade zammad
 
 === Debian
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren
 
 ```sh
 sudo apt upgrade zammad
@@ -189,19 +191,19 @@ sudo apt upgrade zammad
 
 === OpenSUSE/SLES
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo zypper refresh
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren
 
 ```sh
 sudo zypper update zammad

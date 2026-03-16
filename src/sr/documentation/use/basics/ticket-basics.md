@@ -20,9 +20,9 @@ finally closed. Such a single message in a ticket is called an
 **article**. Basically, you can think of a **ticket** as a **conversation**
 between you and a customer about a single issue.
 
-If you're completely new to a ticket system and handled your customer
-requests with an email client so far, you might think that a ticket system
-is complicated. But the opposite is true:
+Уколико сте потпуно нови у водама тикетинг система и до сада сте решавали
+захтеве клијента уз помоћ имејл клијента, можете помислити да је тикет
+систем компликован. Али супротно је тачно:
 
 - Све имејл поруке се сада сливају у Zammad (као и остали захтеви са других
   канала).
@@ -35,15 +35,15 @@ is complicated. But the opposite is true:
   на оно најбитније: да решите проблеме клијената и одговорите на њихова
   питања.
 
-This means you can work with Zammad in a similar way as with your email
-client. Except that a ticket has additional attributes. Read on to learn
-more.
+Ово значи да можете наставити рад са Zammad-ом на сличан начин као у вашем
+имејл клијенту. Осим што тикет има додатне атрибуте. Читајте даље да сазнате
+више.
 
 ## Ticket Attributes
 
-In addition to articles, tickets have some additional meta information which
-are called attributes. Use the **ticket sidebar** to view and change ticket
-attributes.
+Поред чланака, тикети поседују и неке додатне мета податке који се зову
+атрибути. Користите **бочну траку тикета** за преглед и измену атрибута
+тикета.
 
 ![Screenshot shows ticket
 sidebar](/screenshots/cypress/usage-basics.cy.js/ticket-sidebar.png)
@@ -57,11 +57,11 @@ It is even possible to create custom fields for tickets (for groups, users
 and organizations too). You think such a custom field makes sense? Talk with
 your Zammad admin, it can be set up easily.
 
-### State
+### Стање
 
-The state reflects the current status of a ticket (mainly if a customer
-request is resolved or not). Think of it as a representation of progress
-towards completion. By default, there are the following states:
+Стање одражава тренутни статус тикета (углавном да ли је клијентов захтев
+решен или не). Можете га сматрати репрезентацијом прогреса на путу
+решења. Подразумевано, доступна су следећа стања:
 
 - **New**: State for new tickets on which no one has worked on. When
   updating a ticket for the first time, it automatically switches to open.
@@ -87,12 +87,12 @@ states](/screenshots/overviews/states.png)
 
 ### Приоритет
 
-A ticket's priority is simply a ranking (from 1 to 3) of how urgent or
-important it is. The three default priorities are:
+Приоритет тикета је једноставно рангирање (од 1 до 3) колико је хитан или
+важан. Три подразумевана приоритета су:
 
 - 1 low
-- 2 normal
-- 3 high
+- 2 нормалан
+- 3 висок
 
 In case these priorities aren't enough, ask your Zammad admin to create
 additional ones. The default priorities allow you to immediately recognize
@@ -101,10 +101,9 @@ the importance of your tickets because they are color coded:
 ![Screenshot shows different color-coded
 priorities](/screenshots/overviews/priorities.png)
 
-You might wonder what such a ticket priority is for. Out of the box, it
-doesn't actually do anything except the highlighting. However, Zammad
-administrators can set up all sorts of automation and analytics based on the
-priority.
+Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не
+чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне
+врсте аутоматизаиција и статистика на основу приоритета.
 
 Be aware that customers can't set a priority for their own
 tickets. Otherwise, some might set their tickets always to high and hope for
@@ -131,12 +130,12 @@ tab.
 
 ### Група
 
-This ticket attribute is useful for organizations with more than one team. A
-common way to use groups is to have one for each department of the
-company. Depending on the permissions, you might not see the ticket after
-changing the group and saving the changes. In case you can't see the group
-field, either there is only one group in your Zammad system or you don't
-have the permission to create a ticket in other groups.
+Овај атрибут тикета је користан за организација са више од једног
+тима. Стандардан начин за коришћење група је да имате по једну за свако
+одељење ваше фирме. У зависности од дозвола, можда нећете видети тикет након
+промене групе и снимања измена. У случају да не видите поље групе, или
+постој исамо једна у вашем Zammad систему или немате дозволу за отварање
+тикета у другим групама.
 
 ### Власник
 
@@ -146,8 +145,8 @@ this person or mention the person in an article by typing [[@]][[@]] and
 selecting the user. In the latter case, the user gets notified and is
 automatically subscribed to receive notifications on ticket updates.
 
-To change the owner to a person which has only access to another group's
-tickets, you first have to switch the group accordingly.
+За промену власника на особу која има приступ само некој другој групи
+тикета, морате прво променити групу.
 
 -----
 

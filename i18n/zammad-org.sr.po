@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-11 14:33+0100\n"
-"PO-Revision-Date: 2026-03-10 16:00+0000\n"
+"POT-Creation-Date: 2026-03-16 08:56+0100\n"
+"PO-Revision-Date: 2026-03-14 12:19+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -3191,7 +3191,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/create-tickets.md:16
 msgid "A customer calls you by phone."
-msgstr ""
+msgstr "Клијент вас позове телефоном."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/create-tickets.md:16
@@ -3201,12 +3201,12 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/create-tickets.md:16
 msgid "A customer comes to a physical service desk."
-msgstr ""
+msgstr "Клијент посети вашу физичку локацију."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/create-tickets.md:16
 msgid "You proactively have to inform a customer by sending out a message."
-msgstr ""
+msgstr "Желите да проактивно обавестите клијента слањем поруке."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:19
@@ -3262,12 +3262,14 @@ msgid ""
 "When choosing **Send Email**, the customer receives an email with the title "
 "as subject and the text as email content."
 msgstr ""
+"Када одаберете **Пошаљи имејл поруку**, клијент ће примити имејл поруку са "
+"одговарајућим насловом и текстом као садржај."
 
 #. type: Title ##
 #: src/en/documentation/use/basics/create-tickets.md:32
 #, no-wrap
 msgid "Title"
-msgstr ""
+msgstr "Наслов"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:37
@@ -3345,10 +3347,9 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/basics/find-tickets.md:1
 #: src/en/documentation/use/basics/find-tickets.md:6
-#, fuzzy, no-wrap
-#| msgid "Finding Tickets"
+#, no-wrap
 msgid "Find Tickets"
-msgstr "Проналажење тикета"
+msgstr "Пронађи тикете"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:9
@@ -3495,6 +3496,9 @@ msgid ""
 "requests with an email client so far, you might think that a ticket system "
 "is complicated. But the opposite is true:"
 msgstr ""
+"Уколико сте потпуно нови у водама тикетинг система и до сада сте решавали "
+"захтеве клијента уз помоћ имејл клијента, можете помислити да је тикет "
+"систем компликован. Али супротно је тачно:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:29
@@ -3551,6 +3555,9 @@ msgid ""
 "client. Except that a ticket has additional attributes. Read on to learn "
 "more."
 msgstr ""
+"Ово значи да можете наставити рад са Zammad-ом на сличан начин као у вашем "
+"имејл клијенту. Осим што тикет има додатне атрибуте. Читајте даље да сазнате "
+"више."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:37
@@ -3559,6 +3566,9 @@ msgid ""
 "are called attributes. Use the **ticket sidebar** to view and change ticket "
 "attributes."
 msgstr ""
+"Поред чланака, тикети поседују и неке додатне мета податке који се зову "
+"атрибути. Користите **бочну траку тикета** за преглед и измену атрибута "
+"тикета."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:39
@@ -3592,10 +3602,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/basics/ticket-basics.md:46
-#, fuzzy, no-wrap
-#| msgid "Set state"
+#, no-wrap
 msgid "State"
-msgstr "Промена стања"
+msgstr "Стање"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:50
@@ -3604,6 +3613,9 @@ msgid ""
 "request is resolved or not). Think of it as a representation of progress "
 "towards completion. By default, there are the following states:"
 msgstr ""
+"Стање одражава тренутни статус тикета (углавном да ли је клијентов захтев "
+"решен или не). Можете га сматрати репрезентацијом прогреса на путу решења. "
+"Подразумевано, доступна су следећа стања:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:61
@@ -3685,6 +3697,8 @@ msgid ""
 "A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
 "important it is. The three default priorities are:"
 msgstr ""
+"Приоритет тикета је једноставно рангирање (од 1 до 3) колико је хитан или "
+"важан. Три подразумевана приоритета су:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:75
@@ -3694,12 +3708,12 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:75
 msgid "2 normal"
-msgstr ""
+msgstr "2 нормалан"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:75
 msgid "3 high"
-msgstr ""
+msgstr "3 висок"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:78
@@ -3727,6 +3741,9 @@ msgid ""
 "administrators can set up all sorts of automation and analytics based on the "
 "priority."
 msgstr ""
+"Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не "
+"чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне "
+"врсте аутоматизаиција и статистика на основу приоритета."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:86
@@ -3803,6 +3820,12 @@ msgid ""
 "either there is only one group in your Zammad system or you don't have the "
 "permission to create a ticket in other groups."
 msgstr ""
+"Овај атрибут тикета је користан за организација са више од једног тима. "
+"Стандардан начин за коришћење група је да имате по једну за свако одељење "
+"ваше фирме. У зависности од дозвола, можда нећете видети тикет након промене "
+"групе и снимања измена. У случају да не видите поље групе, или постој исамо "
+"једна у вашем Zammad систему или немате дозволу за отварање тикета у другим "
+"групама."
 
 #. type: Title ###
 #: src/en/documentation/use/basics/ticket-basics.md:108
@@ -3826,6 +3849,8 @@ msgid ""
 "To change the owner to a person which has only access to another group's "
 "tickets, you first have to switch the group accordingly."
 msgstr ""
+"За промену власника на особу која има приступ само некој другој групи "
+"тикета, морате прво променити групу."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:120
@@ -3852,10 +3877,9 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/basics/work-with-tickets.md:1
 #: src/en/documentation/use/basics/work-with-tickets.md:6
-#, fuzzy, no-wrap
-#| msgid "Work on Tickets"
+#, no-wrap
 msgid "Work with Tickets"
-msgstr "Рад на тикетима"
+msgstr "Обрада тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:9
@@ -3863,6 +3887,8 @@ msgid ""
 "You found your way into an existing ticket, congratulations! Now let's have "
 "a look what you can do and how to do it."
 msgstr ""
+"Честитамо, пронашли сте пут до постојећег тикета! Хајде сада да видимо шта и "
+"како можете урадити са њим."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:16
@@ -3914,6 +3940,8 @@ msgid ""
 "No matter if you create a new article from scratch or respond to a customer "
 "article, you can choose from different article types:"
 msgstr ""
+"Без обзира да ли додајете нови чланак од нуле или одговарате на постојећи "
+"чланак клијента, можете изабрати између различитих врста чланака:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:34
@@ -3923,12 +3951,17 @@ msgid ""
 "default visibility is \"internal\", which means the customer can't see the "
 "note."
 msgstr ""
+"**Напомена**: Додајте подсетних за себе и друге оператере, поставите питање "
+"колеги помињањем корисника или унесите нове информације у тикет. "
+"Подразумевана видљивост је „интерна”, што значи да клијенти неће видети "
+"напомену."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:34
 msgid ""
 "**Call**: Note down a summary of a phone call you had with the customer."
 msgstr ""
+"**Позив**: Забележите резиме телефонског позива који сте имали са клијентом."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:34
@@ -3991,7 +4024,7 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:52
 #, no-wrap
 msgid "Add an Article from Scratch"
-msgstr ""
+msgstr "Додавање чланка од нуле"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:58
@@ -4272,10 +4305,9 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/basics/zammad-ui.md:1
 #: src/en/documentation/use/basics/zammad-ui.md:6
-#, fuzzy, no-wrap
-#| msgid "Zammad AI"
+#, no-wrap
 msgid "Zammad UI"
-msgstr "Zammad AI"
+msgstr "Zammad кориснички интерфејс"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:11
@@ -4285,6 +4317,10 @@ msgid ""
 "and accessibility and is based on common software design principles which "
 "should make the UI pretty self explanatory."
 msgstr ""
+"Кориснички интерфејс Zammad-а је дизајниран да пружи интуитивно искуство "
+"корисницима. Направљен је на основу концепта једноставности, јасноће и "
+"приступачности, и базиран је на основим принципима развоја софтвера који "
+"чине интерфејс самообјашњивим."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:15
@@ -4294,6 +4330,10 @@ msgid ""
 "on the currently opened screen, there are interactive components, such as "
 "tooltips and a contextual help. Use them wherever needed."
 msgstr ""
+"Различите функције се ослањају на основне модуларне компоненте које чине "
+"интерфејс конзистентним. Ове компоненте су објашњене у одељцима испод. У "
+"зависности од тренутног екрана, постоје интерактивне компоненте, као што су "
+"савети и контекстни описи. Користите их кад год је то неопходно."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:17
@@ -4368,7 +4408,7 @@ msgstr ""
 #: src/en/documentation/use/basics/zammad-ui.md:44
 #, no-wrap
 msgid "Navigation Sidebar"
-msgstr ""
+msgstr "Навигациона трака"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:49
@@ -4458,6 +4498,8 @@ msgid ""
 "History: shows a dialog with the history in the current ticket. This is "
 "where you can find when and what actions was performed and by whom."
 msgstr ""
+"Историјат: приказује дијалог са историјатом тренутног тикета. Овде можете "
+"пронаћи када сау и које радње извршене над тикетом и од стране кога."
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/basics/zammad-ui.md:84
@@ -4465,11 +4507,13 @@ msgid ""
 "Merge: merge the ticket with another one in case a customer emailed you "
 "multiple times about the same issue."
 msgstr ""
+"Споји: спојите тикет са другим у случају да вас је клијент контактирао више "
+"пута у вези истог проблема."
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/basics/zammad-ui.md:84
 msgid "Change customer: set another customer for the ticket."
-msgstr ""
+msgstr "Измени клијента: поставите другог клијента тикета."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:88
@@ -5555,7 +5599,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:466
+#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
 #, no-wrap
 msgid "Limitations"
 msgstr "Ограничења"
@@ -7986,7 +8030,7 @@ msgstr ""
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
 #: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:481
+#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
 #: src/en/tutorials/reporting-grafana.md:26
 #, no-wrap
 msgid "Prerequisites"
@@ -8408,7 +8452,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:499
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid "\n"
 msgstr "\n"
@@ -25424,7 +25468,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
 "a test import before to learn how long the migration will take."
@@ -25468,7 +25512,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:488
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -25477,14 +25521,14 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
-#: src/en/tutorials/migrate.md:389 src/en/tutorials/migrate.md:493
+#: src/en/tutorials/migrate.md:400 src/en/tutorials/migrate.md:504
 #, no-wrap
 msgid "Import"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
-#: src/en/tutorials/migrate.md:498
+#: src/en/tutorials/migrate.md:509
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
 "fairly big instance with a lot of data, you may want to consider using the "
@@ -25570,7 +25614,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"
@@ -25588,40 +25632,40 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
-#: src/en/tutorials/migrate.md:448 src/en/tutorials/migrate.md:589
+#: src/en/tutorials/migrate.md:459 src/en/tutorials/migrate.md:600
 #, no-wrap
 msgid "After Migration"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
-#: src/en/tutorials/migrate.md:451 src/en/tutorials/migrate.md:592
+#: src/en/tutorials/migrate.md:462 src/en/tutorials/migrate.md:603
 msgid "Run the following commands:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:452 src/en/tutorials/migrate.md:593
+#: src/en/tutorials/migrate.md:463 src/en/tutorials/migrate.md:604
 #, no-wrap
 msgid "Setting.set('import_mode', false)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
-#: src/en/tutorials/migrate.md:456 src/en/tutorials/migrate.md:597
+#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
 #, no-wrap
 msgid "Setting.set('system_init_done', true)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
-#: src/en/tutorials/migrate.md:460 src/en/tutorials/migrate.md:601
+#: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:612
 #, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:607
+#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:618
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
 "address and API token provided during the migration to login."
@@ -25629,7 +25673,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
-#: src/en/tutorials/migrate.md:609
+#: src/en/tutorials/migrate.md:620
 msgid ""
 "All other users will have to use the password reset function or login "
 "methods like LDAP or one click logins."
@@ -25816,7 +25860,7 @@ msgid "OTRS"
 msgstr "Са OTRS"
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:469
+#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:480
 msgid "Additional limitations to the general one:"
 msgstr ""
 
@@ -25925,8 +25969,34 @@ msgid ""
 "errors.\n"
 msgstr ""
 
+#. type: Title ###
+#: src/en/tutorials/migrate.md:389
+#, no-wrap
+msgid "Timeout Adjustments"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:394
+msgid ""
+"If your import runs in a timeout or you already know that this could be an "
+"issue, you can adjust timeouts via environment variables. To do so, set the "
+"environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and "
+"`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not "
+"set, the defaults apply:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:399
+#, no-wrap
+msgid ""
+"|                                    | Zammad < 7.0 | Zammad ≥ 7.0  |\n"
+"|------------------------------------|--------------|---------------|\n"
+"| `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT`  | 120          | 600           |\n"
+"| `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` | 360          | 1200          |\n"
+msgstr ""
+
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:391
+#: src/en/tutorials/migrate.md:402
 #, no-wrap
 msgid ""
 "\n"
@@ -25986,41 +26056,41 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:464
+#: src/en/tutorials/migrate.md:475
 #, no-wrap
 msgid "Zendesk"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on the login page."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
 "before starting the migration."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:487
+#: src/en/tutorials/migrate.md:498
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API key]"
 "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
@@ -26029,7 +26099,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"

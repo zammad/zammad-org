@@ -778,25 +778,27 @@ Setting.set('ui_ticket_priority_icons', true)
 
 ## Andere nützliche Befehle
 
-### Remove AI Feature
+### KI-Funktion entfernen
 
-Zammad's AI feature is completely optional and requires a configuration
-before any AI request is made. However, if you don't want to see the
-feature, you can do so by setting the permission to inactive.
+Die KI-Funktion von Zammad ist völlig optional und erfordert eine
+Konfiguration, bevor irgendeine KI-Anfrage gestellt wird. Wenn Sie die
+Funktion jedoch nicht sehen möchten, können Sie die Berechtigung auf inaktiv
+setzen.
 
-Disable any AI provider, in case you already configured it:
+Deaktivieren Sie jeglichen KI-Anbieter, falls bereits konfiguriert:
 
 ```ruby
 Setting.set('ai_provider', false)
 ```
 
-Disable permission to hide the settings from UI:
+Deaktivieren Sie die Berechtigung, um die Einstellungen aus der
+Benutzeroberfläche auszublenden:
 
 ```ruby
 Permission.where("name LIKE 'admin.ai%'").update!(active: false)
 ```
 
-To re-enable it, set the `active` flag to `true`.
+Um sie wieder zu aktivieren, setzen Sie das `active`-Flag auf `true`.
 
 ### E-Mails abrufen
 

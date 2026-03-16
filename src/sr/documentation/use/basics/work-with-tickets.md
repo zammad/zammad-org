@@ -1,12 +1,12 @@
 ---
 order: 5
-title: 'Work with Tickets'
+title: 'Обрада тикета'
 ---
 
-# Work with Tickets
+# Обрада тикета
 
-You found your way into an existing ticket, congratulations! Now let's have
-a look what you can do and how to do it.
+Честитамо, пронашли сте пут до постојећег тикета! Хајде сада да видимо шта и
+како можете урадити са њим.
 
 Generally, working on existing tickets means keeping up with a customer
 correspondence in a thread/conversation in the ticket detail view. Any time
@@ -32,14 +32,15 @@ out to learn more.
 
 ## Create a New Article
 
-No matter if you create a new article from scratch or respond to a customer
-article, you can choose from different article types:
+Без обзира да ли додајете нови чланак од нуле или одговарате на постојећи
+чланак клијента, можете изабрати између различитих врста чланака:
 
-- **Note**: Write a reminder for yourself and other agents, ask a colleague
-  a question by mentioning a user or add new information to the ticket. The
-  default visibility is "internal", which means the customer can't see the
-  note.
-- **Call**: Note down a summary of a phone call you had with the customer.
+- **Напомена**: Додајте подсетних за себе и друге оператере, поставите
+  питање колеги помињањем корисника или унесите нове информације у
+  тикет. Подразумевана видљивост је „интерна”, што значи да клијенти неће
+  видети напомену.
+- **Позив**: Забележите резиме телефонског позива који сте имали са
+  клијентом.
 - **Email**: Send an email to anyone about the ticket. The title of the
   ticket is used for the subject of the email.
 
@@ -67,7 +68,7 @@ delete articles that you have created yourself and which are not older than
 articles of a communication type (emails, calls) must be changed to
 "internal" visibility first.
 
-### Add an Article from Scratch
+### Додавање чланка од нуле
 
 Click on one of the buttons at the bottom of the ticket detail view to add
 an article. Depending on what you choose, the article create screen gets

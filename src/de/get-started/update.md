@@ -53,62 +53,64 @@ in den folgenden Befehlen zu sehen.
 :::tabs key:distros
 
 === Ubuntu
-Update package lists:
+
+Paketlisten aktualisieren:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
 === Debian
-Update package lists:
+
+Paketlisten aktualisieren:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
@@ -116,31 +118,31 @@ sudo apt upgrade
 
 === OpenSUSE/SLES
 
-Update package lists:
+Paketlisten aktualisieren:
 
 ```sh
 sudo zypper refresh
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo zypper addlock zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo zypper update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo zypper update
@@ -148,19 +150,19 @@ sudo zypper update
 
 === CentOS/RHEL
 
-Update package lists:
+Paketlisten aktualisieren:
 
 ```sh
 sudo yum check-update
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo yum upgrade --exclude zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo yum upgrade

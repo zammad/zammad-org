@@ -10,10 +10,10 @@ ticket is created automatically (unless Zammad recognizes it as a follow-up,
 then it gets added as an article to an existing ticket). However, there
 might be cases where you need to create a ticket manually. Examples:
 
-- A customer calls you by phone.
+- Клијент вас позове телефоном.
 - You receive a paper letter from a customer.
-- A customer comes to a physical service desk.
-- You proactively have to inform a customer by sending out a message.
+- Клијент посети вашу физичку локацију.
+- Желите да проактивно обавестите клијента слањем поруке.
 
 In situations like these, you need to create a new ticket manually and click
 the ::+:: button at the bottom of the navigation bar. This shows a ticket
@@ -30,10 +30,10 @@ In the ticket create dialog, you can choose from different article types:
 - Outbound call: for issues initiated by an agent over the phone.
 - Send email: for issues initiated by an agent over email.
 
-When choosing **Send Email**, the customer receives an email with the title
-as subject and the text as email content.
+Када одаберете **Пошаљи имејл поруку**, клијент ће примити имејл поруку са
+одговарајућим насловом и текстом као садржај.
 
-## Title
+## Наслов
 
 This is the title of a ticket which is shown in many places in Zammad. For
 example, this gets displayed in overviews.  It is also used as the subject
