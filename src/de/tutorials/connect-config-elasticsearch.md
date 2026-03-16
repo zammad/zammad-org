@@ -7,7 +7,8 @@ title: 'Verbinden und konfigurieren von Elasticsearch'
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch.
+Diese Anleitung zeigt Ihnen, wie Sie Zammad mit Elasticsearch verbinden
+können.
 
 ## Elasticsearch mit Zammad verbinden
 
@@ -115,8 +116,9 @@ Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asci
 aktiviert. Dies kann nützlich sein, wenn Sie mit Text arbeiten, der
 Diakritika und/oder Umlaute enthält.
 
-In case you need a more exact search, you can turn it off via [Rails
-console](/en/reference/rails-commands#disable-asciifold).
+Falls Sie eine genauere Suche benötigen, können Sie dies per
+[Rails-Befehlen](de/reference/rails-commands#asciifold-deaktivieren)
+deaktivieren.
 
 ## Fehlerbehebung
 

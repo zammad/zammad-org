@@ -165,7 +165,7 @@ Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 9
 folgen, das Sie auf einer anderen Seite finden, um die
 Installationsanweisungen übersichtlich zu halten.
 
-### Zammad-Repository hinzufügen
+### Zammad-Paketquelle hinzufügen
 
 ::: info
 Es kann sein, dass Packager.io aus reinen IPv6-Umgebungen nicht erreichbar ist, daher sollten Sie
@@ -176,7 +176,7 @@ adjust it over there -->
 ::::tabs key:distros
 
 === Ubuntu
-Repository-Schlüssel hinzufügen:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -194,7 +194,7 @@ sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 Ubuntu 24.04
 
 ::: info
-Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen des Repository im
+Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen der Paketquelle im
 [deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
 :::
 
@@ -213,7 +213,7 @@ Ab Debian 13 werden die Pakete unter einer anderen URL gehostet und der Signing-
 Verzeichnis gespeichert.
 :::
 
-Repository-Key hinzufügen (Debian 11 & 12):
+Paketquellen-Schlüssel hinzufügen (Debian 11 & 12):
 
 ```sh
 curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
@@ -221,7 +221,7 @@ gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \
 && sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 ```
 
-Repository-Key hinzufügen (Debian 13):
+Paketquellen-Schlüssel hinzufügen (Debian 13):
 
 ```sh
 curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
@@ -229,21 +229,21 @@ gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \
 && sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
 ```
 
-Repository hinzufügen (Debian 11):
+Paketquelle hinzufügen (Debian 11):
 
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
 sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Repository hinzufügen (Debian 12):
+Paketquelle hinzufügen (Debian 12):
 
 ```sh
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
 sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Repository hinzufügen (Debian 13):
+Paketquelle hinzufügen (Debian 13):
 
 ```sh
 curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \
@@ -251,7 +251,7 @@ curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.l
 ```
 
 === OpenSUSE/SLES
-Repository-Key hinzufügen:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
@@ -265,7 +265,7 @@ https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Repository-Key hinzufügen:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key

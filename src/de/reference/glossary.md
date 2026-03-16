@@ -249,8 +249,9 @@ Knowledge Base
   (z.B. gut für Informationen zu ihrem Produkt oder Service) oder
   innerhalb Ihres Teams halten (für interne Prozesse oder Informationen für Teams).
 
-Ein LDAP-Server (Lightweight Directory Access Protocol) stellt zusätzliche Informationen
-: über Ihre Benutzer in Zammad zur Verfügung. Eine Authentifizierung gegen den LDAP und
+LDAP
+: Ein LDAP-Server (Lightweight Directory Access Protocol) stellt zusätzliche Informationen
+  über Ihre Benutzer in Zammad zur Verfügung. Eine Authentifizierung gegen den LDAP und
   die Zuordnung von LDAP-Rollen zu Zammad-Rollen ist ebenfalls möglich.
 
 Makro

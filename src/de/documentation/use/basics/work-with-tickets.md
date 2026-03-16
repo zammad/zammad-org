@@ -41,7 +41,7 @@ Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
 - **Notiz**: Schreiben Sie eine Erinnerung für sich und andere Agenten,
   stellen Sie einem Kollegen eine Frage, indem Sie einen Benutzer erwähnen,
   oder fügen Sie dem Ticket neue Informationen hinzu. Die
-  Standardsichtbarkeit ist "intern", was bedeutet, dass ihr Kunde die Notiz
+  Standardsichtbarkeit ist "intern", was bedeutet, dass Ihr Kunde die Notiz
   nicht sehen kann.
 - **Anruf**: Notieren Sie eine Zusammenfassung eines Telefonats, das Sie mit
   dem Kunden geführt haben.
@@ -73,7 +73,7 @@ Sie fragen sich jetzt vielleicht, wie Sie Artikel löschen können. Die
 Antwort ist, dass Sie nur Artikel löschen können, die Sie selbst erstellt
 haben und die nicht älter als 10 Minuten sind. Um die Funktion **Artikel
 löschen** für Kommunikations-Artikel (E-Mails, Anrufe) im ::a:: Menü zu
-sehen, müssen Sie diese zunächst auf "interne" Sichtbarkeit umstellen.
+sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
 ### Leeren Artikel hinzufügen
 
@@ -140,7 +140,7 @@ neben dem Titel des Tickets. Es kopiert die komplette Ticket-Nummer mit der
 Ticket-Kennung in die Zwischenablage, z.B. `Ticket#50071`. Wenn Sie den
 Inhalt in ein Ziel einfügen, das HTML verarbeiten kann, wird zusätzlich ein
 Link zum Ticket eingefügt. Wenn Sie nur die Ticket-Nummer einfügen möchten,
-verwenden Sie ein unformatiertes Einfügen per [[ctrl]] [[shift]] [[v]]..
+verwenden Sie ein unformatiertes Einfügen per [[ctrl]] [[shift]] [[v]].
 
 Wenn Sie im Ticket nach unten gescrollt haben, fahren Sie mit dem Mauszeiger
 über die eingeklappte Kopfleiste, wo Sie die Schaltfläche oben links finden.
@@ -149,10 +149,11 @@ Wenn Sie im Ticket nach unten gescrollt haben, fahren Sie mit dem Mauszeiger
 Kopieren der
 Ticket-Nummer](/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)
 
-But wait, there is even a keyboard shortcut for that! Simply press [[.]] in
-the ticket detail view and the ticket number is copied to your clipboard. To
-include the ticket title as well, press [[.]] twice.  Example:
-`Ticket#31004: Onboarding new colleague`.
+Aber halt, es gibt sogar ein Tastaturkürzel dafür! Drücken Sie einfach [[.]]
+in der Ticket-Detailansicht und die Ticket-Nummer wird in Ihre
+Zwischenablage kopiert. Um auch den Titel des Tickets zu übernehmen, drücken
+Sie zweimal [[.]].  Beispiel: `Ticket#31004: Einarbeitung eines neuen
+Kollegen`.
 
 ## Gleichzeitige Ticketbearbeitung
 

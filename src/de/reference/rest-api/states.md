@@ -44,11 +44,11 @@ Erforderliche Berechtigung: `admin.object`
 `POST`-Anfrage gesendet: `/api/v1/ticket_states`
 
 ::: info
-Below payload makes use of `state_type_id` which is a instance
-specific set of IDs. State types indicate how the state will work.
+Die nachstehende Nutzlast verwendet `state_type_id`, ein Instanz-spezifischer
+Satz von IDs. Die Statustypen geben an, wie der Status funktionieren wird.
 
-As there's no endpoint for retrieving these, please use the
-[Rails console](/en/reference/rails-commands).
+Da es keinen Endpunkt gibt, um diese abzurufen, verwenden Sie bitte die
+[Rails-Befehle](/de/reference/rails-commands).
 :::
 
 :::: details

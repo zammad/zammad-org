@@ -17,10 +17,10 @@ manuell erstellen müssen. Beispiele:
 - Sie müssen einen Kunden proaktiv informieren, indem Sie ihm eine Nachricht
   schicken.
 
-In solchen Fällen müssen Sie manuell ein neues Ticket erstellen, indem Sie
-auf die Schaltfläche ::+:: am unteren Rand der Navigationsleiste
-klicken. Daraufhin wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie
-alle erforderlichen Informationen hinzufügen können.
+In solchen Fällen erstellen Sie manuell ein neues Ticket, indem Sie auf die
+Schaltfläche ::+:: am unteren Rand der Navigationsleiste klicken. Daraufhin
+wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie alle erforderlichen
+Informationen hinzufügen können.
 
 ![Screenshot zeigt den
 Ticket-Erstellungsdialog](/screenshots/cypress/usage-basics.cy.js/ticket-create.png)
@@ -79,6 +79,7 @@ weiter, um mehr zu erfahren.
 
 -----
 
-After you provided the relevant information, finally create the ticket with
-a click on the **Create** button. Read on [how to work with existing
-tickets](work-with-tickets).
+Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie
+schließlich das Ticket mit einem Klick auf die Schaltfläche
+**Erstellen**. Lesen Sie weiter, [wie man mit Tickets
+arbeitet](work-with-tickets).

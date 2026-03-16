@@ -40,18 +40,20 @@ fragen, um loszulegen.
 
 ## Annahmen zur Leserschaft
 
-The documentation assumes that **users** have a basic understanding of how
-to use web browsers and are familiar with common software design
-concepts. This means, for example, that features are described in detail,
-but not to the level of explaining how to open a dropdown menu.
+In der Dokumentation wird davon ausgegangen, dass **Benutzer** ein
+grundlegendes Verständnis für die Verwendung von Webbrowsern haben und mit
+gängigen Konzepten der Softwaregestaltung vertraut sind. Das bedeutet, dass
+Funktionen detailliert beschrieben werden, aber zum Beispiel nicht auf dem
+Level wie man ein Dropdown-Menü öffnet.
 
-The **Zammad administrator** should also have a basic technical
-understanding and be familiar with the workflows and communication processes
-within their company.
+Der **Zammad-Administrator** sollte außerdem über ein technisches
+Grundverständnis verfügen und mit den Arbeitsabläufen und
+Kommunikationsprozessen innerhalb seiner Firma vertraut sein.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.  Access to the host system
-(e.g. via SSH) and administrative permissions are taken for granted.
+Bei selbst gehosteten Instanzen sollten **Systemadministratoren** auch mit
+den Grundlagen der Linux-Systemverwaltung vertraut sein.  Der Zugriff auf
+das Host-System (z.B. über SSH) und administrative Rechte werden als gegeben
+vorausgesetzt.
 
 ## Inhalt
 
@@ -71,10 +73,10 @@ es nicht notwendig, jeden Klick im Detail zu beschreiben. Wichtige Schritte
 sollten jedoch enthalten sein. Die Leser sollen so schnell und einfach wie
 möglich ihr Ziel erreichen, ohne viel lesen zu müssen.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be on a code-like detail level), the relevance has to be considered
-too. If parts with a common use case are missing, it should be intended to
-include them in.
+Da eine Dokumentation nicht alles abdecken kann (sonst wäre sie auf einer
+codeähnlichen Detailebene), muss auch die Relevanz berücksichtigt
+werden. Wenn Bereiche mit einem gängigen Anwendungsfall fehlen, sollte
+beabsichtigt werden, diese zu ergänzen.
 
 ## Stil und Regeln
 
@@ -111,7 +113,7 @@ strukturieren können.
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
 - Falls vorhanden, verwenden Sie Icons für wichtige UI-Buttons wie ::+:: und
   ::x:: (siehe [Beispiele](#text-and-ui) unten).
-- Verwenden Sie die eine Auszeichnung wie [[strg]] und [[x]], um einen
+- Verwenden Sie die eine Auszeichnung wie [[ctrl]] und [[x]], um einen
   Tastenanschlag darzustellen (siehe [Beispiele](#text-und-ui) unten).
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
   von Zammad hinzuzufügen, ist, sie automatisch [mit

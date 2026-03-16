@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-11 14:33+0100\n"
+"POT-Creation-Date: 2026-03-16 08:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5208,7 +5208,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/documentation/use/guides/mobile-view.md:62
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:466
+#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
 #, markdown-text, no-wrap
 msgid "Limitations"
 msgstr ""
@@ -7665,7 +7665,7 @@ msgstr ""
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
 #: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:481
+#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
 #: src/en/tutorials/reporting-grafana.md:26
 #, markdown-text, no-wrap
 msgid "Prerequisites"
@@ -8076,7 +8076,7 @@ msgstr ""
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:499
+#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -26154,7 +26154,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 #, markdown-text
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
@@ -26204,7 +26204,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:488
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:499
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -26213,14 +26213,14 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
-#: src/en/tutorials/migrate.md:389 src/en/tutorials/migrate.md:493
+#: src/en/tutorials/migrate.md:400 src/en/tutorials/migrate.md:504
 #, markdown-text, no-wrap
 msgid "Import"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
-#: src/en/tutorials/migrate.md:498
+#: src/en/tutorials/migrate.md:509
 #, markdown-text
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
@@ -26311,7 +26311,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"
@@ -26329,41 +26329,41 @@ msgstr ""
 
 #. type: Title ####
 #: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
-#: src/en/tutorials/migrate.md:448 src/en/tutorials/migrate.md:589
+#: src/en/tutorials/migrate.md:459 src/en/tutorials/migrate.md:600
 #, markdown-text, no-wrap
 msgid "After Migration"
 msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
-#: src/en/tutorials/migrate.md:451 src/en/tutorials/migrate.md:592
+#: src/en/tutorials/migrate.md:462 src/en/tutorials/migrate.md:603
 #, markdown-text
 msgid "Run the following commands:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:452 src/en/tutorials/migrate.md:593
+#: src/en/tutorials/migrate.md:463 src/en/tutorials/migrate.md:604
 #, no-wrap
 msgid "Setting.set('import_mode', false)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
-#: src/en/tutorials/migrate.md:456 src/en/tutorials/migrate.md:597
+#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
 #, no-wrap
 msgid "Setting.set('system_init_done', true)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
-#: src/en/tutorials/migrate.md:460 src/en/tutorials/migrate.md:601
+#: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:612
 #, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:607
+#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:618
 #, markdown-text
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
@@ -26372,7 +26372,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
-#: src/en/tutorials/migrate.md:609
+#: src/en/tutorials/migrate.md:620
 #, markdown-text
 msgid ""
 "All other users will have to use the password reset function or login "
@@ -26572,7 +26572,7 @@ msgid "OTRS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:469
+#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:480
 #, markdown-text
 msgid "Additional limitations to the general one:"
 msgstr ""
@@ -26697,8 +26697,35 @@ msgid ""
 "errors.\n"
 msgstr ""
 
+#. type: Title ###
+#: src/en/tutorials/migrate.md:389
+#, markdown-text, no-wrap
+msgid "Timeout Adjustments"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:394
+#, markdown-text
+msgid ""
+"If your import runs in a timeout or you already know that this could be an "
+"issue, you can adjust timeouts via environment variables. To do so, set the "
+"environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and "
+"`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not "
+"set, the defaults apply:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/migrate.md:399
+#, markdown-text, no-wrap
+msgid ""
+"|                                    | Zammad < 7.0 | Zammad ≥ 7.0  |\n"
+"|------------------------------------|--------------|---------------|\n"
+"| `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT`  | 120          | 600           |\n"
+"| `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` | 360          | 1200          |\n"
+msgstr ""
+
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:391
+#: src/en/tutorials/migrate.md:402
 #, no-wrap
 msgid ""
 "\n"
@@ -26762,13 +26789,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:464
+#: src/en/tutorials/migrate.md:475
 #, markdown-text, no-wrap
 msgid "Zendesk"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 #, markdown-text
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
@@ -26776,7 +26803,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 #, markdown-text
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
@@ -26784,7 +26811,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 #, markdown-text
 msgid ""
 "User passwords are not migrated and will require the user to use the "
@@ -26792,7 +26819,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:491
 #, markdown-text
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
@@ -26800,7 +26827,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:487
+#: src/en/tutorials/migrate.md:498
 #, markdown-text
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API "
@@ -26810,7 +26837,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:510
 #, no-wrap
 msgid ""
 "\n"

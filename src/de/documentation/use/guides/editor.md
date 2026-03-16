@@ -21,7 +21,7 @@ diese auf der linken Seite der Symbolleiste des Editors. Da sie bereits an
 anderer Stelle beschrieben sind, verweisen wir hier nur darauf, um doppelten
 Inhalt zu vermeiden.
 
-- [KI-Assistent Text-Werkzeuge](ai#ki-assistent-text-werkzeuge)
+- [KI-Assistent Text-Werkzeuge](ai#schreibassistent-werkzeuge)
 - [Benutzer erwähnen](../advanced-features#erwahnen-von-kollegen)
 - [Textbausteine einfügen](../advanced-features#textbausteine)
 - [Knowledge Base-Artikel
@@ -33,10 +33,10 @@ Beim Einfügen von Inhalten aus anderen Quellen, insbesondere von Dokumenten,
 die Tabellen, komplexe Formatierungen oder Bilder enthalten, ist zu
 beachten, dass die Darstellung in Zammad abweichen kann. Der Editor
 versucht, Ihre Formatierung nach Möglichkeit beizubehalten, aber es kann zu
-Unstimmigkeiten kommen. Wenn Sie mit einer solchen Situation konfrontiert
-werden, versuchen Sie, den Inhalt einzeln zu kopieren/einzufügen oder fügen
-Sie reinen Text ein und wenden Sie die Formatierung im Editor an (siehe
-Abschnitt [Formatierung](#formatierung-anwenden) unten).
+Unstimmigkeiten kommen. Wenn Sie in einer solchen Situation sind, versuchen
+Sie, den Inhalt einzeln zu kopieren/einzufügen oder fügen Sie reinen Text
+ein und wenden Sie die Formatierung im Editor an (siehe Abschnitt
+[Formatierung](#formatierung-anwenden) unten).
 
 ## Absätze
 
@@ -66,11 +66,13 @@ Sie können den Text im Editor auf verschiedene Arten formatieren:
 - Verwenden Sie Tastaturkürzel
 - Verwenden Sie [Markdown](https://www.markdownguide.org)-Syntax
 
-The editor **toolbar** includes buttons for common formatting
-tasks. Hovering over each button will display a tooltip explaining its
-function. As an alternative you can use **keyboard shortcuts** (see next two
-sections). Either activate the formatting in advance or select the text
-after writing and use the formatting you want to apply.
+Die **Werkzeugleiste** des Editors enthält Schaltflächen für gängige
+Formatierungsaufgaben. Wenn Sie den Mauszeiger über eine Schaltfläche
+bewegen, wird ein Tooltip angezeigt, der die Funktion der Schaltfläche
+erklärt. Alternativ können Sie **Tastaturkürzel** verwenden (siehe die
+nächsten beiden Abschnitte). Aktivieren Sie die Formatierung entweder im
+Voraus oder markieren Sie den Text nach dem Schreiben und verwenden Sie die
+Formatierung, die Sie anwenden möchten.
 
 ### Allgemeine Tastaturkürzel
 
@@ -80,26 +82,28 @@ Textverarbeitungsprogrammen üblich. Wichtige Tastenkombinationen sind:
 
  Kürzel/Befehl          | Formatierung
 ------------------------|----------------------
-[[strg]] + [[b]]        | **Fett**
-[[strg]] + [[i]]        | _Kursiv_
-[[strg]] + [[u]]        | <u>Unterstrichen</u>
+[[ctrl]] + [[b]]        | **Fett**
+[[ctrl]] + [[i]]        | _Kursiv_
+[[ctrl]] + [[u]]        | <u>Unterstrichen</u>
 
-Have a look at the keyboard shortcuts in Zammad where you can find all
-shortcuts. Open it via the [avatar
-menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left
-corner or type [[?]].
+Werfen Sie einen Blick auf die Tastaturkürzel-Übersicht in Zammad, wo Sie
+alle Tastenkürzel finden können. Öffnen Sie diese über das
+[Avatar-Menü](/de/documentation/use/user-profile#avatar-menu) in der unteren
+linken Ecke oder drücken Sie [[?]].
 
-Have a look at the next section to use even more formatting via
-keyboard. Regardless if you are used to write Markdown or not, some of them
-might still be helpful in your daily work.
+Schauen Sie sich den nächsten Abschnitt an, wo Sie weitere
+Formatierungsoptionen per Tastatur finden können. Unabhängig davon, ob Sie
+es gewohnt sind, Markdown zu schreiben oder nicht, könnten einige davon für
+Ihre tägliche Arbeit hilfreich sein.
 
 ### Markdown-Verwendung
 
-For users familiar with Markdown syntax, the editor provides basic support
-for formatting content with Markdown. When using Markdown syntax, it gets
-immediately applied immediately or after the closing limiter so you can see
-the result directly in the editor. To go back to standard text, simply use
-the same limiter again or use [[enter]], depending on the option.
+Für Benutzer, die mit der Markdown-Syntax vertraut sind, bietet der Editor
+grundlegende Markdown-Formatierungsoptionen. Wenn Sie die Markdown-Syntax
+verwenden, wird sie sofort oder nach dem schließenden Begrenzer angewendet,
+sodass Sie das Ergebnis direkt im Editor sehen können. Um zum Standardtext
+zurückzukehren, verwenden Sie einfach denselben Begrenzer erneut oder
+drücken Sie [[enter]], je nach Option.
 
 Es ist nicht beabsichtigt, alle Markdown-Funktionen zu unterstützen, sondern
 den Benutzern zu helfen, Dinge einfacher zu erledigen. Daher werden die

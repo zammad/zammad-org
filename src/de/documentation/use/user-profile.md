@@ -47,8 +47,8 @@ Benutzerprofil-Einstellungen](/screenshots/cypress/user-profile.cy.js/user-profi
 - Hell
 - Automatischer Modus
 
-Mit der letzten Option wird versucht, die Einstellungen Ihres Browsers zu
-erkennen. Es hängt von Ihrem Webbrowser ab, ob dies funktioniert.
+Die letzte Option versucht, die Einstellungen Ihres Browsers zu erkennen. Es
+hängt von Ihrem Webbrowser ab, ob dies funktioniert.
 
 ::: tip
 Wenn Sie schnell zwischen dunklem und hellem Modus umschalten möchten, können Sie auch die Umschaltfunktion im

@@ -20,17 +20,19 @@ Um die **automatische** Löschung von Tickets nach einem bestimmten Intervall zu
 verwenden Sie die Automatisierung von Zammad. Sie können sie in Zammads Admin-Oberfläche konfigurieren unter
 _Verwalten > Automatisierung_.
 
-To **manually** delete users and all their associated tickets (e.g. in
-compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/rails-commands#deleting-records).
+Um Benutzer und alle mit ihnen verbundenen Tickets **manuell** zu löschen (z.B.
+auf Grund eines Lösch-Wunschs gemäß DSGVO) können Sie
+die Datenschutzfunktionen im Admin-Bereich unter _System > Datenschutz_
+nutzen oder [per Konsole löschen](/de/reference/rails-commands#daten-loschen).
 
 ### Chat-Sitzungen
 
-Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later. IP address logs for chat sessions can be
-deleted manually by following the [steps from the rails console
-page](/en/reference/rails-commands#remove-ip-address-logs).
+Sobald eine Chatsitzung als **geschlossen** markiert wurde, ist sie für eine
+automatische Löschung nach 12 Monaten vorgesehen. IP-Adressprotokolle für
+Chatsitzungen können manuell gelöscht werden, indem Sie die [Schritte auf
+der
+Rails-Befehlsseite](/de/reference/rails-commands#protokolle-der-ip-adressen-entfernen)
+ausführen.
 
 ### CTI-Anruferprotokoll
 

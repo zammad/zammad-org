@@ -16,7 +16,7 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 ## Installation
 
-### Add Repository Key
+### Paketquellen-Schlüssel hinzufügen
 
 ::: tabs key:distros
 
@@ -50,7 +50,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add Repository
+### Paketquelle hinzufügen
 
 ::: tabs key:distros
 
@@ -158,7 +158,7 @@ sudo systemctl enable elasticsearch.service --now
 ## Nächste Schritte
 
 Fahren Sie mit der [Installation von
-Zammad](/de/get-started/installation/package#zammad-repository-hinzufugen)
+Zammad](/de/get-started/installation/package#zammad-paketquelle-hinzufugen)
 fort. Nachdem die Installation von Zammad abgeschlossen ist, können Sie
 [Zammad mit Elasticsearch
 verbinden](/de/tutorials/connect-config-elasticsearch).

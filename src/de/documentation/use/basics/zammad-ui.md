@@ -50,8 +50,8 @@ Seitenleisten-Tabs
 ## Navigations-Seitenleiste
 
 Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen
-Bereiche von Zammad zuzugreifen. Möglicherweise sehen Sie nicht alle, da
-einige von der Konfiguration Ihres Zammads abhängen. Die
+Bereiche von Zammad zuzugreifen. Möglicherweise sehen Sie nicht alles davon,
+da manches von der Konfiguration Ihres Zammads abhängt. Die
 Navigations-Seitenleiste ist immer sichtbar. Das heißt, wenn Sie nicht
 wissen, wo Sie sich befinden, können Sie z.B. jederzeit zum Dashboard, zu
 Ihren Übersichten oder zu einem geöffneten Ticket zurückkehren.
@@ -61,12 +61,12 @@ Such- und Benachrichtigungsbereich
   Informationen suchen können. Neben der Suche finden Sie das Zammad-Logo. Falls es eine Benachrichtigung gibt, zeigt es Ihnen
   in einem Zähler an, wie viele Benachrichtigungen vorhanden sind.
 
-Navigation: Ermöglicht Ihnen den Wechsel zu verschiedenen Zammad-Ansichten
-wie dem Dashboard, den Übersichten, der Knowledge Base oder der
-Telefonansicht.
+Navigation
+: Ermöglicht Ihnen den Wechsel zu verschiedenen Zammad-Ansichten wie dem
+Dashboard, den Übersichten, der Knowledge Base oder der Telefonansicht.
 
-Inhalts-Tabs: Sie können Tabs für Ihre geöffneten Tickets, Benutzer und
-Organisationen finden.
+Inhalts-Tabs
+: Es gibt Tabs für Ihre geöffneten Tickets, Benutzer und Organisationen.
 
 Untere Leiste
 : Profileinstellungen und Schaltfläche "Neues Ticket" innerhalb der Navigations-Seitenleiste. Falls Sie über entsprechende Berechtigungen verfügen, gibt es zusätzlich die Schaltflächen Einstellungen und

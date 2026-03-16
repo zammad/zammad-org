@@ -38,7 +38,7 @@ docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/
 ```
 
 Falls Sie Ihre Sicherungsdateien aus einer Paketinstallation suchen, finden
-Sie auf der Seite[Backup & Restore (Paket)](/de/tutorials/backup-restore)
+Sie auf der Seite [Backup & Restore (Paket)](/de/tutorials/backup-restore)
 weitere Informationen. Sie brauchen keinen vollständigen Dump, um Ihre
 Sicherung wiederherzustellen.
 

@@ -78,22 +78,22 @@ based ticket, the email address of the customer is pre-populated.
 ![Screenshot shows new article buttons in bottom
 bar](/screenshots/cypress/usage-basics.cy.js/new-article.png)
 
-### Respond to an Article
+### Одговори на чланак
 
 To forward or reply to an article, use one of the response buttons under an
 article or in the ::a:: menu. The behavior is similar to the behavior of an
 email client.
 
-- **Reply**: Allows you to answer the article. The recipient is
-  automatically pre-filled. The reply is sent via the same channel as the
-  original message. This lets you easily send an answer to a customer or
-  third party, if involved.
-- **Reply all**: Same as above but uses all recipient addresses from the
-  original message as recipients for your new article. Only available for
-  email channels.
-- **Forward**: This means you can forward the original message to a third
-  party or anybody else. The original message and attachments are included
-  in your new article.
+- **Одговори**: Омогућава одговор на чланак. Прималац ће бити аутоматски
+  унешен. Одговор се шаље на истом каналу као и долазна порука. Ово вам
+  омогућава да једноставно пошаљете одговор клијенту или лицу треће стране,
+  уколико је укључено у конверзацију.
+- **Одговори свима**: Исто као изнад, али понавља све адресе примаоца
+  оригиналне поруке као примаоце вашег одговора. Доступно само на имејл
+  каналима.
+- **Проследи**: Омогућава прослеђивање оригиналне поруке лицима треће стране
+  или било коме. Оригинална порука и прилози ће бити укључени у ваш нови
+  чланак.
 
 ![Screenshot shows article reply
 actions](/screenshots/cypress/usage-basics.cy.js/article-reply.png)
@@ -111,14 +111,14 @@ added as another quote to your editor.  You can split quotations by using
 [[enter]] or [[shift]] + [[enter]] in the editor and disable quote format
 for your text.
 
-## Rename a Ticket
+## Промена наслова тикета
 
 To rename a ticket, simply click on the title in the header bar and start
 typing. This title is used as subject in email communication and shows up in
 several places like overviews. Confirm with [[enter]] or click the button on
 the right side.
 
-## Copy Ticket Number
+## Копирање броја тикета
 
 To copy the ticket number including a link to the ticket (e.g. to paste it
 in a third party chat app), use the ::c:: icon next to the ticket title. It
@@ -138,7 +138,7 @@ the ticket detail view and the ticket number is copied to your clipboard. To
 include the ticket title as well, press [[.]] twice.  Example:
 `Ticket#31004: Onboarding new colleague`.
 
-## Simultaneous Ticket Processing
+## Симултана обрада тикета
 
 It can happen that two or more agents open a ticket at the same time. To
 prevent edit conflicts and customers receiving contradictory answers, Zammad
@@ -152,11 +152,11 @@ Make sure to communicate with your colleagues to prevent these problems
 before they arise. Depending on the additional icon and if the avatar icon
 is faded, it means:
 
-- Avatar: Another agent is viewing the ticket.
-- Faded avatar: Another agent opened the ticket but is currently not
-  actively viewing it.
-- Avatar with pencil icon: Another agent is currently actively working on
-  this ticket.
+- Аватар сличица: други оператер гледа тикет.
+- Избледела аватар сличица: други оператер има отворен тикет али га тренутно
+  не гледа активно.
+- Аватар сличица са иконицом оловке: други оператер тренутно активно ради на
+  овом тикету.
 
 There are even more icons which represent additional states of the other
 agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover

@@ -20,7 +20,7 @@ als Anwendung geleistet werden.
 
 - Eine funktionierende Docker Compose-Umgebung
 - Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Increase the memory limit for Elasticsearch on Linux hosts:
+- Erhöhen Sie das Speicherlimit für Elasticsearch auf Linux-Hosts:
 
   ```sh
   sudo sysctl -w vm.max_map_count=262144
@@ -36,9 +36,9 @@ Dokumentation](https://docs.portainer.io/){target=_blank}.
 
 ### Schritt 1: Stack hinzufügen
 
-In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and click on `Add stack` as you can
-see in the screenshot below.
+Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
+Zielumgebung aus, wählen Sie **Stacks** und klicken Sie auf `Add stack`, wie
+Sie im Screenshot unten sehen können.
 
 ![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in
 Portainer.](/screenshots/installation/portainer-stacks.png)
@@ -53,10 +53,10 @@ Informationen an:
 - **Repository reference**: `refs/heads/master`
 - **Compose path**: `docker-compose.yml` (default)
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Falls unsere Standardumgebung nicht Ihren Vorstellungen entspricht, können
+Sie den Stack mithilfe von vordefinierten Szenarien anpassen und
+Umgebungsvariablen verwenden. Weitere Informationen finden Sie im Abschnitt
+[Anpassung](#anpassen-des-zammad-stacks) weiter unten.
 
 ![Stack-Erstellung mit Informationen aus der
 Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
@@ -85,10 +85,10 @@ herunterladen.
 
 ### Schritt 2: Umgebung nach Bedarf anpassen
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Falls unsere Standardumgebung nicht Ihren Vorstellungen entspricht, können
+Sie den Stack mithilfe von vordefinierten Szenarien anpassen und
+Umgebungsvariablen verwenden. Weitere Informationen finden Sie im Abschnitt
+[Anpassung](#anpassen-des-zammad-stacks) weiter unten.
 
 ### Schritt 3: Starten des Stacks
 
@@ -111,7 +111,7 @@ Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
 Um einen Zammad-Stack im Internet zu veröffentlichen, muss er über das
 HTTPS-Protokoll gesichert werden. Um dies zu erreichen, ohne den
-Zammad-Stack zu verändern, können Sie:
+Zammad-Stack zu verändern, haben Sie folgende Möglichkeiten:
 
 - Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat
   eine grafische Benutzeroberfläche, die eine einfache [Let's
@@ -139,40 +139,40 @@ Umgebungsvariablen](/de/reference/environment-variables).
 
 ## Ausführen von Befehlen im Stack
 
-Execute commands in your Docker stack by calling `rails` or `rake` via one
-of the following methods by using `bundle exec`.
+Führen Sie Befehle in Ihrem Docker Stack aus, indem Sie `rails` oder `rake`
+über eine der folgenden Methoden mit Hilfe von `bundle exec` aufrufen.
 
 ::::tabs
 
 === Via Portainer GUI
 
-In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
-**Connect**.
+Suchen Sie den laufenden Rails-Container In der Portainer GUI und klicken Sie auf das
+**Exec Console** Icon in der Spalte "Quick Actions", wählen Sie den Standard-Entrypoint `/bin/bash`
+und klicken **Connect**.
 
-![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer Ausführung Console](/screenshots/installation/portainer-exec-console.png){width=80%}
 
-Run the interactive Rails console by executing:
+Rufen Sie die interaktive Rails-Konsole auf, indem Sie folgenden Befehl ausführen:
 
 ```sh
 bundle exec rails c
 ```
 
-Directly execute a specific command:
+Führen Sie einen Befehl direkt aus:
 
 ```sh
-bundle exec rails r '...your rails command here...'
+bundle exec rails r '...Ihren Rails-Befehl...'
 ```
 
-=== Via console
+=== Via Konsole
 
-Directly execute a specific command:
+Führen Sie einen Befehl direkt aus:
 
 ```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
 ```
 
-Run the interactive Rails console to manually enter Rails commands:
+Rufen Sie die interaktive Rails-Konsole auf um Rails-Befehle einzugeben:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
@@ -181,7 +181,7 @@ docker compose run --rm zammad-railsserver bundle exec rails c
 Via `docker compose exec`:
 
 ```sh
-docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
+docker compose exec zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
 ```
 
 ::: tip

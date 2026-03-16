@@ -5,10 +5,11 @@ title: Ticket-Grundlagen
 
 # Ticket-Grundlagen
 
-New to ticket systems? Then read on about the basics. This helps you to
-understand the main concepts and to get started with Zammad. If you are
-already familiar with ticket systems, you can jump directly to the next
-pages about finding, creating and working with tickets.
+Neu bei Ticket-Systemen? Dann lesen Sie weiter über die Grundlagen. Dies
+hilft Ihnen, die wichtigsten Konzepte zu verstehen und mit Zammad
+loszulegen. Wenn Sie bereits mit Ticketsystemen vertraut sind, können Sie
+direkt zu den nächsten Seiten über das Finden, Erstellen und Arbeiten mit
+Tickets in Zammad springen.
 
 ## Einführung
 

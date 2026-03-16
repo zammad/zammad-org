@@ -5,9 +5,10 @@ title: 'Erweiterte Funktionen'
 
 # Erweiterte Funktionen
 
-This page features a collection of various helpful tools that don't need
-their own separate pages. Just keep reading, search the page or navigate to
-the section you want using the table of contents on the right.
+Dies Seite ist eine Sammlung verschiedener hilfreicher Tools, für die keine
+eigene Seite erforderlich ist. Lesen Sie einfach weiter, durchsuchen Sie die
+Seite oder navigieren Sie mit Hilfe des Inhaltsverzeichnisses auf der
+rechten Seite zu dem von Ihnen gewünschten Abschnitt.
 
 ## Verhalten bei Ticket-Aktualisierung
 
@@ -16,9 +17,10 @@ Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavi
 
 **Warum?**
 
-It is possible to automatically close a ticket tab in the navigation sidebar
-after updating a ticket.  This saves you a click after updating or updating
-a ticket to _closed_ state.
+Es ist möglich, einen Tab in der Navigations-Seitenleiste automatisch zu
+schließen, nachdem ein Ticket aktualisiert wurde.  Dies erspart Ihnen einen
+Klick nach der Aktualisierung oder dem Aktualisieren eines Tickets auf den
+Status _geschlossen_.
 
 **Wie?**
 
@@ -27,18 +29,20 @@ Klicken Sie in der Fußleiste der Ticket-Detailansicht auf die Schaltfläche
 Standardeinstellung noch vorhanden ist, andernfalls ist sie wie die anderen
 Optionen unten beschriftet). Sie haben verschiedene Möglichkeiten:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you
-  want to remove it from your navigation sidebar.
+- **Tab beibehalten**: Standard-Option. Sie müssen den Tab manuell
+  schließen, wenn Sie ihn aus Ihrer Navigations-Seitenleiste entfernen
+  möchten.
 - **Tab schließen**: Mit dieser Option wird der Tab bei jeder Aktualisierung
   des Tickets geschlossen. Dies kann eine gute Option sein, wenn Sie mit
   vielen Tickets zu tun haben und/oder die Tickets viele Interaktionen
   erfordern.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated to the _closed_ state.
+- **Tab schließen nach Ticket-Schließung**: Mit dieser Option wird der Tab
+  nur geschlossen, wenn das Ticket aktualisiert wird und der Status auf
+  _geschlossen_ gesetzt wird.
 
 ::: tip
 Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab beibehalten** lassen und die Tastenkombination
-[[umschalt]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.
+[[shift]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.
 :::
 
 ## Textbausteine
@@ -88,10 +92,10 @@ schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie
 nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen
 oder Wörter eingeben.
 
-## Mention a User
+## Einen Benutzer erwähnen
 
-![Screenshot shows mentioning a
-user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot zeigt Erwähnung eines
+Benutzers](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Warum?**
 
@@ -101,13 +105,14 @@ und dieses Ticket abonnieren.
 
 **Wie?**
 
-While writing a ticket article, use the button in the toolbar of the editor
-or simply type [[@]][[@]]. Both ways let you search for the name of the user
-you want to mention by typing some characters or the complete name.
+Verwenden Sie beim Schreiben eines Ticket-Artikels die Schaltfläche in der
+Symbolleiste des Editors oder geben Sie einfach [[@]][[@]] ein. Auf beiden
+Wegen können Sie nach dem Namen des Benutzers suchen, den Sie erwähnen
+möchten, indem Sie einige Buchstaben oder den vollständigen Namen eingeben.
 
 Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und
-Ab-Pfeiltasten gefolgt von [[Enter]] auf Ihrer Tastatur verwenden.
+Ab-Pfeiltasten gefolgt von [[enter]] auf Ihrer Tastatur verwenden.
 
 ## Ein Ticket abonnieren
 
@@ -308,28 +313,31 @@ Sie Zeit sparen!
 
 **Wie?**
 
-There are 2 places where you can apply bulk actions:
+Es gibt 2 Stellen, an denen Sie Mehrfach-Aktionen durchführen können:
 
-- [Detailed search page](guides/search)
-- [Overviews](guides/overviews)
+- [Erweiterte Suche](guides/search)
+- [Übersichten](guides/overviews)
 
-To use bulk actions, first select the tickets you want to apply the changes
-to. Either select the tickets individually by clicking on the checkbox next
-to them or use the checkbox in the header to select all tickets of the
-current page. After selecting all tickets of the page, you can even select
-all tickets which match your current search query or overview condition by
-clicking on the **Select all XX results** label. The maximum number of
-tickets you can select for a bulk action is 2000.
+Um Mehrfach-Aktionen zu verwenden, wählen Sie zunächst die Tickets aus, auf
+die Sie die Änderungen anwenden möchten. Wählen Sie entweder die Tickets
+einzeln aus, indem Sie auf die Box daneben klicken, oder verwenden Sie die
+Box in der Kopfzeile, um alle Tickets der aktuellen Seite
+auszuwählen. Nachdem Sie alle Tickets der Seite ausgewählt haben, können Sie
+sogar alle Tickets, die Ihrer aktuellen Suchanfrage oder den
+Übersichtsbedingung entsprechen, auswählen, indem Sie auf das Label **Alle
+XX Ergebnisse auswählen** klicken. Die maximale Anzahl von Tickets, die Sie
+für eine Mehrfach-Aktion auswählen können, beträgt 2000.
 
-To select a section of consecutive tickets, click on the checkbox of the
-first ticket, then hold [[shift]] and click on the checkbox of the last
-ticket. This selects all tickets in between as well. It even works for
-unselecting tickets.
+Um einen Bereich von aufeinander folgenden Tickets auszuwählen, klicken Sie
+auf die Box des ersten Tickets, halten Sie dann [[shift]] gedrückt und
+klicken Sie auf das Kontrollkästchen des letzten Tickets. Dadurch werden
+auch alle Tickets dazwischen ausgewählt. Sie können damit sogar auch Tickets
+wieder abwählen.
 
-After selecting the tickets you want to apply changes to, click the `Bulk
-Action` button in the top right corner and change/add attributes by using
-the fields in the side panel. The available changes you can apply to tickets
-are:
+Nachdem Sie die Tickets ausgewählt haben, für die Sie Änderungen vornehmen
+möchten, klicken Sie auf die Schaltfläche "Mehrfach-Aktion" in der oberen
+rechten Ecke und ändern/fügen Sie Attribute über die Felder im Seiten-Panel
+hinzu. Folgende Änderungen können Sie auf Tickets anwenden:
 
 - Gruppe festlegen
 - Besitzer festlegen
@@ -338,10 +346,11 @@ are:
 - Eine Notiz hinzufügen
 - Ausführen eines Makros
 
-Depending on the number of affected tickets, you might see a small
-notification informing you about the progress. The bulk action is performed
-in the background so you can work on other tickets. However, until the bulk
-action is finished, you are not able to start a new bulk action.
+Je nach Anzahl der betroffenen Tickets sehen Sie eine kleine
+Benachrichtigung, die Sie über den Fortschritt informiert. Die
+Mehrfach-Aktion wird im Hintergrund ausgeführt, damit Sie an anderen Tickets
+arbeiten können. Solange die Mehrfach-Aktion nicht abgeschlossen ist, können
+Sie jedoch keine neue Mehrfach-Aktion starten.
 
 ## Tickets zusammenfassen
 
@@ -378,7 +387,7 @@ weiterhin mit den folgenden Änderungen:
 - Der Status hat sich auf "zusammengefasst" geändert
 - Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
 
-## Tickets Abspalten
+## Tickets abspalten
 
 ![Screenshot zeigt das Menü zur Abspaltung eines
 Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)

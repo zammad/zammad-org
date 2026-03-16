@@ -34,7 +34,7 @@ Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Sie befinden
 sich derzeit auf der Startseite der Benutzer-Dokumentation.  Benutzen Sie
 die linke Seitenleiste, um zu dem gewünschten Abschnitt zu navigieren,
 öffnen die Suche im Kopfbereich oder aktivieren Sie diese mit dem
-Tastaturkürzel [[strg]] [[k]].
+Tastaturkürzel [[ctrl]] [[k]].
 
 :::tip
 

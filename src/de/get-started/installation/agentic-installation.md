@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Installation durch Agent'
+title: 'Agentenbasierte Installation'
 ---
 
-# Installation durch Agent
+# Agentenbasierte Installation
 
 ::: danger
 Beachten Sie, dass die Einrichtungsschritte für KI-Agenten keine Sicherheits-, Netzwerk- und Konfigurationsthemen abdecken (z.B. SSL-Zertifikate,
@@ -27,7 +27,7 @@ Voraussetzungen:
 - Laufende Docker Compose-Umgebung
 - Installiertes Git
 
-Instructions:
+Anweisungen:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
@@ -41,10 +41,10 @@ Elasticsearch über den Paketmanager.
 Voraussetzungen:
 
 - Host-Betriebssystem: Ubuntu (22.04 oder 24.04) oder Debian (12 oder 13).
-- Installed `curl`, `apt-transport-https` and `gnupg`.
+- `curl`, `apt-transport-https` und `gnupg` installiert.
 - Eine Sprache mit UTF-8-Unterstützung.
 
-Instructions:
+Anweisungen:
 
 ```plain
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md

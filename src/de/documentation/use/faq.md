@@ -84,36 +84,39 @@ anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.
 
 ### Wie verwende ich Tastaturkürzel?
 
-Just use them! You can find an overview of the available shortcuts by
-pressing [[?]] on your keyboard or open the overview from the [avatar
-menu](user-profile#avatar-menu) (click on your avatar in the bottom left
-corner and select **Keyboard shortcuts**).
+Benutzen Sie diese einfach! Sie finden eine Übersicht der verfügbaren
+Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken oder die
+Übersicht über das [Avatar-Menü](user-profile#avatar-Menu) öffnen (klicken
+Sie auf Ihren Avatar in der unteren linken Ecke und wählen Sie
+**Tastaturkürzel**).
 
 Einige davon hängen davon ab, wo Sie sich befinden oder welche Aktion Sie
 durchführen (z.B. im Editor oder in der Ticket Detailansicht).
 
 ### Wie schaltet man die Benutzeroberfläche zwischen Dunkel- und Hellmodus um?
 
-You can switch between light, dark and automatic mode (tries to adapt to
-your browser) in the [avatar menu](user-profile#avatar-menu). Open it by
-clicking your avatar in the bottom left corner and switch the toggle to the
-desired state or use the keyboard shortcut [[d]]. If no input field is
-activated, it cycles between the different modes.
+Sie können im [Avatar-Menü](user-profile#avatar-menu) zwischen hellem,
+dunklem und automatischem Modus (versucht, sich an Ihren Browser anzupassen)
+umschalten. Öffnen Sie es, indem Sie auf Ihren Avatar in der linken unteren
+Ecke klicken und den Schalter auf den gewünschten Modus stellen oder das
+Tastaturkürzel [[d]] verwenden. Wenn kein Eingabefeld aktiviert ist,
+wechselt es zwischen den verschiedenen Modi.
 
 ## Benutzerprofil
 
 ### Wie kann ich mein Profil-/Avatarbild ändern?
 
-Go to the [avatar section](user-profile#avatar) in you profile settings by
-opening the avatar menu in the bottom left corner and select **Profile
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Gehen Sie in Ihren Profileinstellungen zum Abschnitt
+[Avatar](user-profile#avatar), indem Sie das Avatar-Menü unten links öffnen
+und **Profil-Einstellungen** wählen. Dort können Sie ein Bild hochladen, ein
+Foto aufnehmen (wenn Ihr Gerät über eine Kamera verfügt) oder bereits
+vorhandene Bilder löschen.
 
 ### Wie ändert man die Sprache der Benutzeroberfläche von Zammad?
 
-Go to the [language section](user-profile#language) in you profile settings
-by opening the avatar menu in the bottom left corner and select **Profile
-settings**.
+Gehen Sie in Ihren Profileinstellungen zum Abschnitt
+[Sprache](user-profile#sprache), indem Sie das Avatar-Menü unten links
+öffnen und **Profil-Einstellungen** wählen.
 
 ### Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?
 
@@ -143,11 +146,12 @@ verwenden und Ihre Frage stellen.
 
 ### Wie löscht man ein Ticket?
 
-First of all, tickets can't be deleted by agents. This is done for the
-reason of transparency and to prevent deletion by accident and arbitrary
-deletion. However, if customers want their data to be deleted (e.g. due to a
-GDPR deletion request), this can be done in Zammad. Contact your Zammad
-admin and ask to execute the deletion job.
+Zunächst einmal können Tickets nicht von Agenten gelöscht werden. Dies
+geschieht aus Gründen der Transparenz und um versehentliches und
+willkürliches Löschen zu verhindern. Wenn Kunden jedoch möchten, dass ihre
+Daten gelöscht werden (z.B. aufgrund einer DSGVO-Anfrage), kann dies in
+Zammad durchgeführt werden. Wenden Sie sich an Ihren Zammad-Administrator
+und bitten Sie ihn, eine Löschaufgabe zu starten.
 
 ### Wie verwendet man Textbausteine?
 

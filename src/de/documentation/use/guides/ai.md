@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'AI Features'
+title: KI-Features
 ---
 
-# AI Features
+# KI-Features
 
 ## Einführung
 
@@ -55,7 +55,7 @@ Schreibassistent-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-ass
 :::warning
 
 - Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind
-  können Sie die Rückgängig-Funktion verwenden, indem Sie [[strg]] + [[z]] drücken.
+  können Sie die Rückgängig-Funktion verwenden, indem Sie [[ctrl]] + [[z]] drücken.
 - Prüfen Sie die Antwort immer gegen. Obwohl die Funktion sorgfältig entwickelt wurde, kann es in Einzelfällen zu kleineren Fehlern kommen,
   die in der Natur neuronaler Netze liegen.
 
@@ -96,10 +96,11 @@ den erweiterten Funktionen.
 
 ### Ticket-Historie
 
-If an AI agent applied changes, you can see a ticket history entry telling
-you the name of the AI agent. If you notice ongoing issues with what the AI
-agent did, inform your Zammad admin. Example of a history entry of an AI
-agent:
+Wenn ein KI-Agent Änderungen vorgenommen hat, sehen Sie einen Eintrag in der
+Ticket Historie, der Ihnen den Namen des KI-Agenten nennt. Wenn Sie
+feststellen, dass der KI-Agent häufig falsch liegt, informieren Sie Ihren
+Zammad-Administrator. Beispiel für einen Eintrag in der Historie eines
+KI-Agenten:
 
 ![Eintrag eines KI-Agenten in die
 Ticket-Historie](/screenshots/ai/ai-agent-ticket-history.png)

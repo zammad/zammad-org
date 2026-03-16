@@ -25,8 +25,8 @@ indiziert](/de/reference/es-indexed-attributes) wurden , wie z.B.:
 - Text in Dateianhängen
 - Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-When the search field gets activated, you can see the tickets which got
-recently closed from your taskbar as well as your recent search queries.
+Wenn das Suchfeld aktiviert ist sehen Sie die Tickets, die Sie kürzlich
+geschlossen haben, sowie Ihre letzten Suchanfragen.
 
 Nachdem Sie einen Suchbegriff eingegeben haben, sehen Sie sofort eine
 Vorschau der Suchergebnisse. Diese Ergebnisse sind nach Typ getrennt, damit
@@ -34,7 +34,7 @@ Sie nicht den Überblick verlieren. Wenn Sie eines dieser Ergebnisse
 auswählen, wird ein neuer Tab mit dem entsprechenden Element geöffnet (falls
 nicht bereits geöffnet).
 
-Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, zeigt Zammad
+Wenn Sie [[enter]] drücken oder auf `Erweiterte Suche` klicken, zeigt Zammad
 eine Seite mit Suchergebnissen an. Dort können Sie Ihre Suche eingrenzen,
 indem Sie in der Tab-Leiste unterhalb der Suchleiste einen bestimmten
 Objekttyp (z.B. Benutzer) auswählen.
@@ -81,21 +81,21 @@ Sie können Suchbegriffe mit `AND`, `OR` und `TO` kombinieren und sie sogar
 mit `()` trennen. Wenn Sie Suchergebnisse ausschließen wollen, können Sie
 die Negation `!` verwenden.
 
-| Search phrase                                                                                 | Description                                                                                                       |
-|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)`                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_)` | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad".|
-| `owner.email:bob@example.net AND state.name:(open OR new)`                                    | Show tickets with owner `bob@example.net` that are either open or new.                                            |
-| `state.name:pending* AND article_count: [1 TO 5]`                                             | Show everything with any pending state and an article count of 1 to 5.                                            |
+| Suchbegriff                                                                                   | Beschreibung                                                                                                                    |
+|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)`                 | Zeigt jedes Ticket, dessen Status entweder geschlossen oder offen ist und das die Priorität normal oder den Tag "feedback" hat. |
+| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_)` | Dies liefert das gleiche Ergebnis wie oben, nur dass keine Tickets im Ergebnis enthalten sein sollen, die "Zammad" enthalten.   |
+| `owner.email:bob@example.net AND state.name:(open OR new)`                                    | Zeigt Tickets mit dem Besitzer `bob@example.net`, die entweder offen oder neu sind.                                             |
+| `state.name:pending* AND article_count:[1 TO 5]`                                              | Zeigt Tickets mit einem "Warten auf..."-Status und einer Artikelanzahl von 1 bis 5.                                             |
 
 ### Zusätzliche Beispiele
 
-| Attribute     | Examples                                                                                          | Description                                                                                                                                                                                                                                          |
-|---------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | `number:1118566`, `number:11185*`                                                                 | Search for a specific ticket number.                                                                                                                                                                                                                 |
-| title         | `title:"some title"`, `title:Printer`, `title: "some ti*"`                                        | If you need to use a space in the search phrase, use quotes. Zammad combines the search terms with an AND operator. You can also use a single keyword without quotation.                                                                             |
-| created_at    | `created_at:2018-11-18`, `created_at:[2018-11-15 TO 2018-11-18]`, `created_at:>now-1h`            | You can either use a simple date, a date-range or `>now-xh`. Please note that the date format needs to be `YYYY-MM-DD`.                                                                                                                              |
-| state.name    | `state.name: new`, `state.name:new OR open`, `state.name:closed`                                  | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the English names for states, unless you have custom ticket states defined in your instance.                                          |
-| article_count | `article_count:5`, `article_count: [5 TO 10]`, `article_count:[5 TO *]`, `article_count:[* TO 5]` | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or up to 5 articles, if needed).                                                                                           |
-| article.from  | `article.from:*bob*`                                                                              | Show all tickets that contain articles from a user with "bob" in its name.                                                                                                                                                                           |
-| article.body  | `article.body:heat`, `article.body:heat~`, `article.body:/joh?n(ath[oa]n)/`                       | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator `~` to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
+| Attribut      | Beispiele                                                                                        | Beschreibung                                                                                                                                                                                                                                                         |
+|---------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| number        | `number:1118566`, `number:11185*`                                                                | Suche nach einer Ticketnummer.                                                                                                                                                                                                                                       |
+| title         | `title:"some title"`, `title:Printer`, `title: "some ti*"`                                       | Falls Sie Leerzeichen in dem Suchtext haben, benutzen Sie Anführungszeichen. Zammad führt sonst eine AND-Suche aus. Sie können einzelne Wörter auch ohne Anführungzeichen verwenden.                                                                                 |
+| created_at    | `created_at:2018-11-18`, `created_at:[2018-11-15 TO 2018-11-18]`, `created_at:>now-1h`           | Sie können ein einfaches Datum, einen Datumsbereich oder `>now-xh` verwenden. Das Datum muss im Format `YYYY-MM-DD` eingegeben werden.                                                                                                                               |
+| state.name    | `state.name: new`, `state.name:new OR open`, `state.name:closed`                                 | Sie können nach einzelnen Ticket-Status filtern (und diese sogar mit OR kombinieren). Beachten Sie, dass Sie die englischen Namen für Status verwenden müssen, sofern Sie keine selbst erstellten Status haben.                                                      |
+| article_count | `article_count:5`, `article_count: [5 TO 10]`, `article_count:[5 TO *]`, `article_count:[* TO 5]`| Sie können nach Tickets mit einer konkreten Anzahl an Artikeln suchen (Sie können sogar nach allem mit mehr als 5 Artikel oder bis zu 5 Artikel suchen).                                                                                                             |
+| article.from  | `article.from:*bob*`                                                                             | Alle Tickets anzeigen, die von einem Benutzer erstellt wurden, der `bob` im Namen enthält.                                                                                                                                                                           |
+| article.body  | `article.body:heat`, `article.body:heat~`, `article.body:/joh?n(ath[oa]n)/`                      | Das erste Beispiel zeigt alle Tickets, die "heat" enthalten - Sie können sogar einen Fuzzy-Operator "~" verwenden, um nach ähnlichen Wörtern wie z.B. "head" zu suchen. Zammad erlaubt sogar die Verwendung regulärer Ausrücke, sofern das Attribut es unterstützt.  |

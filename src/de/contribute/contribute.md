@@ -21,15 +21,15 @@ können. Alle Repos können auf
 
 ## Zammad Quellcode
 
-The Zammad source code can be found on GitHub in the [Zammad
-repository](https://github.com/zammad/zammad){target=_blank}. Have a look at
-the [developer
-manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-to get started.
+Der Quellcode von Zammad ist auf GitHub im
+[Zammad-Repository](https://github.com/zammad/zammad){target=_blank} zu
+finden. Werfen Sie einen Blick in das [Developer
+Manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank},
+um loszulegen.
 
 ### Unterstützte Branches / Versionen
 
-Zammad's Github repository has several branches:
+Zammads Repository auf Github hat mehrere Branches:
 
 #### `develop`
 
@@ -67,21 +67,23 @@ englischen Quelldateien ändern, die sich unter `/src/en/` befinden. Die
 Übersetzung erfolgt mit Weblate und überschreibt alle Änderungen in den
 sprachspezifischen Ordnern (außer `/src/en/`).
 
-Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
-(targeting the `develop` branch) with your changes and make sure to follow
-the [style and content guide](style-guide) and read the [repo's
-README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
+Öffnen Sie einen neuen GitHub-Pull-Request unter
+<https://github.com/zammad/zammad-org> (mit `develop` Branch als Ziel) mit
+Ihren Änderungen und stellen Sie sicher, dass Sie den [Stil- und
+Inhaltsleitfaden](style-guide) befolgen. Werfen Sie auch einen Blick in die
+[README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}
+des Repos.
 
 ## Übersetzung
 
-If you want to help us with translation and improve the multi-language
-support of Zammad and/or the documentation, you are welcome to contribute as
-well! The translation of Zammad and the documentation is done via Weblate,
-which is a service for the collaborative translation of projects.  Just head
-over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Wenn Sie uns bei der Übersetzung helfen und die Mehrsprachigkeit von Zammad
+und/oder der Dokumentation verbessern wollen, sind Sie ebenfalls herzlich
+willkommen! Die Übersetzung von Zammad und der Dokumentation erfolgt über
+Weblate, einen Dienst für die gemeinschaftliche Übersetzung von Projekten.
+Gehen Sie einfach zu Zammads
+[Weblate-Instanz](https://translations.zammad.org/){target=_blank}.  Sie
+können entweder ein Konto erstellen (falls Sie noch keins haben) oder sich
+sogar mit Ihrem Github-Konto anmelden!
 
 In den folgenden Abschnitten werden wir einige grundlegende Schritte
 behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch
@@ -115,24 +117,24 @@ Branches erkennt, werden sie für alle anderen verwendet und müssen nur einmal 
 Version.
 :::
 
-After selecting a project (Documentation or Zammad), you will see different
-sub-projects and their translation status summarized for all languages. Here
-you can select one of the "components", which is more or less the same as
-different versions. After selecting one of them, you can see the status of
-translation for the different languages, as you can see in the following
-screenshot:
+Nachdem Sie ein Projekt (Dokumentation oder Zammad) ausgewählt haben, sehen
+Sie verschiedene Unterprojekte und deren Übersetzungsstatus für alle
+Sprachen zusammengefasst. Hier können Sie eine der "Komponenten" auswählen,
+die mehr oder weniger dasselbe sind wie verschiedene Versionen. Nachdem Sie
+eine davon ausgewählt haben, können Sie den Übersetzungsstatus für die
+verschiedenen Sprachen sehen, wie auf folgendem Screenshot zu sehen:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/weblate-project-overview.png)
+![Screenshot zeigt Übersetzungsstand der verschiedenen Sprachen für die
+Benutzer Dokumentation](/screenshots/weblate-project-overview.png)
 
 ### Übersetzen
 
-After selecting your language you want to translate to, a good starting
-point is to select "_Untranslated strings_" (or the same meaning in your
-language, depending on what you have set in your profile).  After that, you
-will finally see the first untranslated string in the upper field and, in
-theory, you can start to translate. But let's first have a brief look at the
-user interface of Weblate:
+Nachdem Sie die Sprache ausgewählt haben, in die Sie übersetzen möchten,
+sollten Sie zunächst "_Unvollständig_" auswählen (oder die gleiche Bedeutung
+in Ihrer Sprache, je nachdem, was Sie in Ihrem Profil eingestellt haben).
+Danach sehen Sie die erste unübersetzte Zeichenkette im oberen Feld und
+können theoretisch mit der Übersetzung beginnen. Doch werfen wir zunächst
+einen kurzen Blick auf die Benutzeroberfläche von Weblate:
 
 ![Screenshot des Weblate User-Interface](/screenshots/weblate-ui.png)
 
@@ -158,13 +160,13 @@ user interface of Weblate:
       Zeichenketten sehen (könnte für Sprachen nützlich sein, die ähnlich
       sind).
 
-### Markup in Strings
+### Zeichenketten mit Auszeichnung
 
-Find some examples for special source strings with applied markup
-below. Depending on the string, it can be important to keep the markup
-and/or variables. Also have a look at the [style guide](style-guide) where
-you can find more information about the syntax and the usage of
-Markdown/Vitepress features.
+Nachfolgend finden Sie einige Beispiele für spezielle Zeichenketten mit
+angewandtem Markup. Je nach Zeichenkette kann es wichtig sein, das Markup
+und/oder die Variablen beizubehalten. Werfen Sie auch einen Blick in den
+[Stil- und Inhaltsleitfaden](style-guide), wo Sie weitere Informationen über
+Syntax und die Verwendung von Markdown/Vitepress-Funktionen finden.
 
 **\`Beispiel-Zeichenkette\`**
 : Dies wird als `Beispiel-Zeichenkette` ausgegeben. Je nach Kontext kann diese übersetzt werden oder nicht. Verwenden Sie in jedem Fall das

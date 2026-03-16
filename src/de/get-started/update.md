@@ -35,9 +35,9 @@ sudo systemctl stop zammad
 
 ### Backup von Zammad
 
-Erstellen Sie ein Backup. Sie können das [Backup
-Script](/de/tutorials/backup-restore) verwenden, das mit dem Zammad-Paket
-ausgeliefert wird.
+Erstellen Sie ein Backup. Sie können das
+[Backup-Skript](/de/tutorials/backup-restore) verwenden, das mit dem
+Zammad-Paket ausgeliefert wird.
 
 ### Zammad aktualisieren
 
@@ -247,13 +247,13 @@ Elasticsearch-Index neu zu erstellen.
 
 === Docker Compose
 
-Without specifying CPU cores:
+Ohne Angabe von CPU-Kernen:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe von CPU-Kernen (Beispiel 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
@@ -264,13 +264,13 @@ docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:r
 Open the [console via Portainer's GUI](installation/docker#how-to-run-commands-in-the-stack) with the standard
 entrypoint `/bin/bash` and run:
 
-Without specifying CPU cores to use:
+Ohne Angabe von CPU-Kernen:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe von CPU-Kernen (Beispiel 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]

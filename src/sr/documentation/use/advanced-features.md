@@ -239,7 +239,7 @@ QA процес, уместо додавања интерног чланка. У
 Примена нацрта преиначиће ваше неснимљене измене!
 :::
 
-## Monitoring Ticket Escalations
+## Надгледање ескалација тикета
 
 **Зашто?**
 
@@ -257,10 +257,10 @@ ships a default overview called "Escalated Tickets". This overview includes
 already escalated tickets and tickets which are expected to escalate within
 the next 10 minutes.
 
-SLA-relevant tickets display a timestamp in the ticket detail header. Hover
-over this timestamp to see all escalation stages and deadlines in a
-popup. It shows all upcoming or reached escalation times based on your SLA
-configuration:
+Тикети са додељеним SLA приказују временску ознаку у свом заглављу. Пређите
+курсором преко ове ознаке да видите све етапе и рокове ескалација у
+прозору. Приказани су сва предстојећа и достигнута времена ескалација на
+основу ваше SLA конфигурације:
 
 ![Screenshot shows escalation panel by hovering over escalation
 timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
