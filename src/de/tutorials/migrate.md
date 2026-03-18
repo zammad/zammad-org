@@ -405,13 +405,14 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 In einigen Fällen kann ein Neustart des Webservers helfen, interne Serverfehler zu beheben.
 :::
 
-### Timeout Adjustments
+### Timeout-Einstellungen
 
-If your import runs in a timeout or you already know that this could be an
-issue, you can adjust timeouts via environment variables. To do so, set the
-environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and
-`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not
-set, the defaults apply:
+Wenn Ihr Import in einen Timeout läuft oder Sie bereits wissen, dass dies
+ein Problem sein könnte, können Sie die Timeouts über Umgebungsvariablen
+anpassen. Setzen Sie dazu die Umgebungsvariablen
+`ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` und `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` auf
+einen höheren Timeout in Sekunden. Wenn nicht gesetzt, gelten die
+Standardwerte:
 
 |                                    | Zammad < 7.0 | Zammad ≥ 7.0  |
 |------------------------------------|--------------|---------------|
