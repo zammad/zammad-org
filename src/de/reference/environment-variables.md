@@ -62,15 +62,25 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 
 ## PostgreSQL
 
+:::tip
+Variables for Docker and package installation are partially different. Check the _Limited_ column and make sure to pick
+the right one. The both variables at the end of the table are valid for both installation types.
+:::
+
 | Variable             | Limited | Default Value       | Description                                                                                                               |
 | -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| POSTGRESQL_HOST      | ::p::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |
+| POSTGRESQL_PORT      | ::p::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |
+| POSTGRESQL_USER      | ::p::   | `zammad`            | The database user for Zammad.                                                                                             |
+| POSTGRESQL_PASS      | ::p::   | `zammad`            | The password of Zammad's database user.                                                                                   |
+| POSTGRESQL_DB        | ::p::   | `zammad_production` | Zammad's database to use.                                                                                                 |
 | POSTGRES_HOST        | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |
 | POSTGRES_PORT        | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |
 | POSTGRES_USER        | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |
 | POSTGRES_PASS        | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |
 | POSTGRES_DB          | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |
-| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |
-| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |
+| POSTGRESQL_OPTIONS   |         | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |
+| POSTGRESQL_DB_CREATE |         | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |
 
 ## Nginx
 

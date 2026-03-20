@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-18 13:56+0100\n"
+"POT-Creation-Date: 2026-03-20 11:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8685,7 +8685,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:371
-#: src/en/reference/environment-variables.md:74
+#: src/en/reference/environment-variables.md:84
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
 msgid "Nginx"
@@ -10639,14 +10639,39 @@ msgid ""
 "|\n"
 msgstr ""
 
+#. type: Fenced div block (tip)
+#: src/en/reference/environment-variables.md:64
+#, no-wrap
+msgid ""
+"Variables for Docker and package installation are partially different. Check "
+"the _Limited_ column and make sure to pick\n"
+"the right one. The both variables at the end of the table are valid for both "
+"installation types.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/reference/environment-variables.md:73
+#: src/en/reference/environment-variables.md:83
 #, markdown-text, no-wrap
 msgid ""
 "| Variable             | Limited | Default Value       | Description                                                                                                               "
 "|\n"
 "| -------------------- | ------- | ------------------- | "
 "------------------------------------------------------------------------------------------------------------------------- "
+"|\n"
+"| POSTGRESQL_HOST      | ::p::   | `zammad-postgresql` | Host name of your "
+"PostgreSQL server. Use your own if you already have one.                                                "
+"|\n"
+"| POSTGRESQL_PORT      | ::p::   | `5432`              | Adjust the Port of "
+"your PostgreSQL server.                                                                                "
+"|\n"
+"| POSTGRESQL_USER      | ::p::   | `zammad`            | The database user "
+"for Zammad.                                                                                             "
+"|\n"
+"| POSTGRESQL_PASS      | ::p::   | `zammad`            | The password of "
+"Zammad's database user.                                                                                   "
+"|\n"
+"| POSTGRESQL_DB        | ::p::   | `zammad_production` | Zammad's database "
+"to use.                                                                                                 "
 "|\n"
 "| POSTGRES_HOST        | ::d::   | `zammad-postgresql` | Host name of your "
 "PostgreSQL server. Use your own if you already have one.                                                "
@@ -10663,16 +10688,16 @@ msgid ""
 "| POSTGRES_DB          | ::d::   | `zammad_production` | Zammad's database "
 "to use.                                                                                                 "
 "|\n"
-"| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional "
+"| POSTGRESQL_OPTIONS   |         | `?pool=50`          | Additional "
 "PostgreSQL params to be appended to the database URI.                                                          "
 "|\n"
-"| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad "
+"| POSTGRESQL_DB_CREATE |         | `true`              | By default, Zammad "
 "creates the required database. On already existing database servers, the "
 "default might be troublesome. |\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:88
+#: src/en/reference/environment-variables.md:98
 #, markdown-text, no-wrap
 msgid ""
 "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                                                                                             "
@@ -10718,13 +10743,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:89
+#: src/en/reference/environment-variables.md:99
 #, markdown-text, no-wrap
 msgid "Performance Tuning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:93
+#: src/en/reference/environment-variables.md:103
 #, markdown-text
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
@@ -10733,7 +10758,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:96
+#: src/en/reference/environment-variables.md:106
 #, markdown-text
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
@@ -10742,7 +10767,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:99
+#: src/en/reference/environment-variables.md:109
 #, markdown-text
 msgid ""
 "Below settings may consume all available database connections. Please "
@@ -10751,7 +10776,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:106
+#: src/en/reference/environment-variables.md:116
 #, markdown-text, no-wrap
 msgid ""
 "| Variable                                  | Limited | Default Value | "
@@ -10790,13 +10815,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:107
+#: src/en/reference/environment-variables.md:117
 #, markdown-text, no-wrap
 msgid "How to Set Environment Variables"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:112
+#: src/en/reference/environment-variables.md:122
 #, markdown-text
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
@@ -10807,55 +10832,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:114
+#: src/en/reference/environment-variables.md:124
 #, markdown-text
 msgid "Examples for package installations:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:116
+#: src/en/reference/environment-variables.md:126
 #, markdown-text
 msgid "Set OPTION to \"value\":"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:117
+#: src/en/reference/environment-variables.md:127
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:122
+#: src/en/reference/environment-variables.md:132
 #, markdown-text
 msgid "Get OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:123
+#: src/en/reference/environment-variables.md:133
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:128
+#: src/en/reference/environment-variables.md:138
 #, markdown-text
 msgid "Unset OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:129
+#: src/en/reference/environment-variables.md:139
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:134
+#: src/en/reference/environment-variables.md:144
 #, markdown-text
 msgid "Restart Zammad after changing settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:135
+#: src/en/reference/environment-variables.md:145
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr ""
