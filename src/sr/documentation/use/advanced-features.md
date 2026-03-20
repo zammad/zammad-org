@@ -543,3 +543,24 @@ button to link to an issue by entering the URL of it or select the item from
 a select field (i-doit). Afterwards, you can see the linked item with
 additional metadata. By clicking on the linked item, you are redirected to
 it in the respective system.
+
+## Highlight Text
+
+**Зашто?**
+
+It allows you to give your colleagues a hint about important aspects of the
+ticket and to make sure important parts aren't getting overlooked. Be aware
+that this feature is not about text highlighting for new articles, it is
+about highlighting text in existing articles for you and other agents.
+
+**Како?**
+
+![Screenshot shows highlight menu from ticket detail
+view](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)
+
+Use the highlighting tool with the pencil icon in the upper right corner in
+the ticket detail view. To highlight text, either select text first and then
+click the button. As an alternative, you can click the highlighting button
+first and then select text. You can choose a different color by using the
+down arrow on the right side of the button. To remove the highlighting,
+simply choose the rubber icon from the color menu.

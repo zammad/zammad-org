@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-20 11:30+0100\n"
+"POT-Creation-Date: 2026-03-20 15:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1636,6 +1636,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:396
 #: src/en/documentation/use/advanced-features.md:416
 #: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1670,6 +1671,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:407
 #: src/en/documentation/use/advanced-features.md:427
 #: src/en/documentation/use/advanced-features.md:440
+#: src/en/documentation/use/advanced-features.md:457
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2804,7 +2806,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:446
+#: src/en/documentation/use/advanced-features.md:447
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
@@ -2813,6 +2815,42 @@ msgid ""
 "a select field (i-doit). Afterwards, you can see the linked item with "
 "additional metadata. By clicking on the linked item, you are redirected to "
 "it in the respective system."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:448
+#, markdown-text, no-wrap
+msgid "Highlight Text"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:455
+#, markdown-text
+msgid ""
+"It allows you to give your colleagues a hint about important aspects of the "
+"ticket and to make sure important parts aren't getting overlooked. Be aware "
+"that this feature is not about text highlighting for new articles, it is "
+"about highlighting text in existing articles for you and other agents."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:459
+#, markdown-text
+msgid ""
+"![Screenshot shows highlight menu from ticket detail "
+"view](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:463
+#, markdown-text
+msgid ""
+"Use the highlighting tool with the pencil icon in the upper right corner in "
+"the ticket detail view. To highlight text, either select text first and then "
+"click the button. As an alternative, you can click the highlighting button "
+"first and then select text. You can choose a different color by using the "
+"down arrow on the right side of the button. To remove the highlighting, "
+"simply choose the rubber icon from the color menu."
 msgstr ""
 
 #. type: Title #

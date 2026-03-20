@@ -269,4 +269,19 @@ describe('usage advanced features', () => {
     })
   })
 
+    it('text highlighting', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/4')
+    cy.wait(3000) // loading
+    // tried different approaches to actually highlight text (incl. adding real mouse events) but nothing worked.
+    cy.get('[aria-label="Highlight options"]').last().click()
+    cy.get('[aria-label="Highlight options"]').last().clip({ padding: 5 }).then((TopClip) => {
+      cy.get('#highlight-menu-popover').clip({ padding: 5 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('text-highlighting', { clip })
+        })
+      })
+    })
+  })
+
 })
