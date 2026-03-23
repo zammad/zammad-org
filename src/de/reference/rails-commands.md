@@ -880,7 +880,6 @@ use the following rake command:
 rake zammad:data_privacy:failed:show
 ```
 
-
 To retry failed data privacy jobs, you can use the following
 command. However, without changing the underlying issue that caused the
 failure, the job will fail again. So make sure to check the logs for the

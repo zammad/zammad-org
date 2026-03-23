@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-16 08:50+0000\n"
+"POT-Creation-Date: 2026-03-20 16:40+0100\n"
 "PO-Revision-Date: 2026-03-17 06:00+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -247,18 +247,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -1843,6 +1831,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:396
 #: src/en/documentation/use/advanced-features.md:416
 #: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:451
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Warum?**\n"
@@ -1880,6 +1869,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:407
 #: src/en/documentation/use/advanced-features.md:427
 #: src/en/documentation/use/advanced-features.md:440
+#: src/en/documentation/use/advanced-features.md:457
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Wie?**\n"
@@ -3203,7 +3193,7 @@ msgstr ""
 "sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:446
+#: src/en/documentation/use/advanced-features.md:447
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon (see Gitlab example in screenshot above). Click the "
@@ -3219,6 +3209,46 @@ msgstr ""
 "einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element "
 "mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken, "
 "werden Sie zu diesem im jeweiligen System weitergeleitet."
+
+#. type: Title ##
+#: src/en/documentation/use/advanced-features.md:448
+#, fuzzy, no-wrap
+#| msgid "Cite Text"
+msgid "Highlight Text"
+msgstr "Text zitieren"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:455
+msgid ""
+"It allows you to give your colleagues a hint about important aspects of the "
+"ticket and to make sure important parts aren't getting overlooked. Be aware "
+"that this feature is not about text highlighting for new articles, it is "
+"about highlighting text in existing articles for you and other agents."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:459
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
+#| "usage-advanced-features.cy.js/ticket-tags.png)"
+msgid ""
+"![Screenshot shows highlight menu from ticket detail view](/screenshots/"
+"cypress/usage-advanced-features.cy.js/text-highlighting.png)"
+msgstr ""
+"![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
+"cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:463
+msgid ""
+"Use the highlighting tool with the pencil icon in the upper right corner in "
+"the ticket detail view. To highlight text, either select text first and then "
+"click the button. As an alternative, you can click the highlighting button "
+"first and then select text. You can choose a different color by using the "
+"down arrow on the right side of the button. To remove the highlighting, "
+"simply choose the rubber icon from the color menu."
+msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/basics/create-tickets.md:1
@@ -10330,7 +10360,7 @@ msgstr "PostgreSQL"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:371
-#: src/en/reference/environment-variables.md:74
+#: src/en/reference/environment-variables.md:84
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
 msgid "Nginx"
@@ -12512,19 +12542,42 @@ msgstr ""
 "| ELASTICSEARCH_SSL_VERIFY | ::d::        | `true`                 | Erlaubt Ihnen, dass die Compose-Skripte bei Bedarf selbstsignierte SSL-Zertifikate für Ihre Elasticsearch-Installation ignorieren.                                                                                                                |\n"
 "| ELASTICSEARCH_HEAP_SIZE  | ::d::        | `1G`                   | Legt den verfügbaren Speicher für Elasticsearch fest. Wenn Sie Probleme mit ES und seiner Leistung haben, sollten Sie diesen Wert auf eine angemessene Größe erhöhen.                                                                             |\n"
 
-#. type: Plain text
-#: src/en/reference/environment-variables.md:73
+#. type: Fenced div block (tip)
+#: src/en/reference/environment-variables.md:64
 #, no-wrap
+msgid ""
+"Variables for Docker and package installation are partially different. Check the _Limited_ column and make sure to pick\n"
+"the right one. The both variables at the end of the table are valid for both installation types.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:83
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
+#| "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
+#| "| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
+#| "| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
+#| "| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
+#| "| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
+#| "| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
+#| "| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
+#| "| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
 msgid ""
 "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
 "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
-"| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
-"| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
-"| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
-"| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
-"| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
-"| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
-"| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
+"| POSTGRESQL_HOST      | ::p::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
+"| POSTGRESQL_PORT      | ::p::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
+"| POSTGRESQL_USER      | ::p::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
+"| POSTGRESQL_PASS      | ::p::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
+"| POSTGRESQL_DB        | ::p::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
+"| POSTGRES_HOST        | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
+"| POSTGRES_PORT        | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
+"| POSTGRES_USER        | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
+"| POSTGRES_PASS        | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
+"| POSTGRES_DB          | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
+"| POSTGRESQL_OPTIONS   |         | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
+"| POSTGRESQL_DB_CREATE |         | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
 msgstr ""
 "| Variable             | Beschränkung | Standardwert        | Beschreibung                                                                                                                                      |\n"
 "| -------------------- | ------------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -12537,7 +12590,7 @@ msgstr ""
 "| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:88
+#: src/en/reference/environment-variables.md:98
 #, no-wrap
 msgid ""
 "| Variable                   | Limited | Default Value        | Description                                                                                                                                                                                                                                                             |\n"
@@ -12567,13 +12620,13 @@ msgstr ""
 "| ZAMMAD_WEBSOCKET_PORT      | ::d::        | `6042`               | Port des Websocket-Servers von Zammad.                                                                                                                                                                                                                                                                              |\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:89
+#: src/en/reference/environment-variables.md:99
 #, no-wrap
 msgid "Performance Tuning"
 msgstr "Leistungsoptimierung"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:93
+#: src/en/reference/environment-variables.md:103
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "recommended values here; the optimal configuration depends on your system's "
@@ -12584,7 +12637,7 @@ msgstr ""
 "hängt von den Ressourcen Ihres Systems und der typischen Anwendungslast ab."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:96
+#: src/en/reference/environment-variables.md:106
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
 "at which performance will begin to degrade rather than improve, or other "
@@ -12595,7 +12648,7 @@ msgstr ""
 "verbessert, oder andere Probleme auftreten."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:99
+#: src/en/reference/environment-variables.md:109
 msgid ""
 "Below settings may consume all available database connections. Please "
 "consider the [Configure Database Server](config-db-server) for more "
@@ -12606,7 +12659,7 @@ msgstr ""
 "Konfiguration](config-db-server) für weitere Informationen."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:106
+#: src/en/reference/environment-variables.md:116
 #, no-wrap
 msgid ""
 "| Variable                                  | Limited | Default Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n"
@@ -12624,13 +12677,13 @@ msgstr ""
 "| ZAMMAD_PROCESS_DELAYED_<br>JOBS_WORKERS   |              | nicht gesetzt | Erlaubt das Erstellen von `n` Delayed-Jobs Workern, um den Druck von Zammads Hintergrundworker zu nehmen. Falls Sie [Hardware-Begrenzungen für Docker](docker-compose-scenarios#ressourcen-begrenzen) angewendet haben, sollte die Zammad-Scheduler CPU-Einstellung der Summe aller Worker-Einstellungen entsprechen.                                                                                                                                                                                                                                                                                                                             |\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:107
+#: src/en/reference/environment-variables.md:117
 #, no-wrap
 msgid "How to Set Environment Variables"
 msgstr "Umgebungsvariablen setzen"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:112
+#: src/en/reference/environment-variables.md:122
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -12646,50 +12699,50 @@ msgstr ""
 "Variablen für eine Docker-Installation zu setzen."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:114
+#: src/en/reference/environment-variables.md:124
 msgid "Examples for package installations:"
 msgstr "Beispiele für Paketinstallationen:"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:116
+#: src/en/reference/environment-variables.md:126
 msgid "Set OPTION to \"value\":"
 msgstr "Setzen Sie OPTION auf \"wert\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:117
+#: src/en/reference/environment-variables.md:127
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr "zammad config:set OPTION=wert\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:122
+#: src/en/reference/environment-variables.md:132
 msgid "Get OPTION:"
 msgstr "OPTION abfragen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:123
+#: src/en/reference/environment-variables.md:133
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr "zammad config:get OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:128
+#: src/en/reference/environment-variables.md:138
 msgid "Unset OPTION:"
 msgstr "OPTION entfernen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:129
+#: src/en/reference/environment-variables.md:139
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr "zammad config:unset OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:134
+#: src/en/reference/environment-variables.md:144
 msgid "Restart Zammad after changing settings:"
 msgstr "Starten Sie Zammad nach der Änderung der Einstellungen neu:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:135
+#: src/en/reference/environment-variables.md:145
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr "sudo systemctl restart zammad\n"
@@ -19724,11 +19777,47 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/rails-commands.md:849
 #, no-wrap
+msgid "Show and Retry Failed Data Privacy Jobs"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rails-commands.md:853
+msgid ""
+"In rare cases, Zammad's data privacy jobs might fail. To show them, you can "
+"use the following rake command:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/rails-commands.md:854
+#, fuzzy, no-wrap
+#| msgid "rake zammad:db:truncate\n"
+msgid "rake zammad:data_privacy:failed:show\n"
+msgstr "rake zammad:db:truncate\n"
+
+#. type: Plain text
+#: src/en/reference/rails-commands.md:863
+msgid ""
+"To retry failed data privacy jobs, you can use the following command. "
+"However, without changing the underlying issue that caused the failure, the "
+"job will fail again. So make sure to check the logs for the root cause of "
+"the failure and fix it before retrying the job."
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/rails-commands.md:864
+#, fuzzy, no-wrap
+#| msgid "rake zammad:email_parser:failed_email:export_all`\n"
+msgid "rake zammad:data_privacy:failed:retry\n"
+msgstr "rake zammad:email_parser:failed_email:export_all`\n"
+
+#. type: Title ###
+#: src/en/reference/rails-commands.md:868
+#, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr "Befüllen eines Testsystems mit Testdaten"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:851
+#: src/en/reference/rails-commands.md:870
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -19738,7 +19827,7 @@ msgstr ""
 "und ist schwer rückgängig zu machen!\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:860
+#: src/en/reference/rails-commands.md:879
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
 "organizations, `5` new overviews and `100` tickets. You can always use `0` "
@@ -19752,19 +19841,19 @@ msgstr ""
 "ergeben."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:861
+#: src/en/reference/rails-commands.md:880
 #, no-wrap
 msgid "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 msgstr "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:865
+#: src/en/reference/rails-commands.md:884
 #, no-wrap
 msgid "Deleting Records"
 msgstr "Daten löschen"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:867
+#: src/en/reference/rails-commands.md:886
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -19776,60 +19865,60 @@ msgstr ""
 "[ein Backup haben](/de/tutorials/backup-restore)!\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:873
+#: src/en/reference/rails-commands.md:892
 #, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr "Entfernen von Tickets (und ihren Artikeln)"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:876
+#: src/en/reference/rails-commands.md:895
 msgid "Delete a ticket (specified by database ID):"
 msgstr "Löschen eines Tickets (angegeben durch die Datenbank ID):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:877
+#: src/en/reference/rails-commands.md:896
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr "Ticket.find(4).destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:882
+#: src/en/reference/rails-commands.md:901
 msgid "Delete all tickets:"
 msgstr "Alle Tickets löschen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:883
+#: src/en/reference/rails-commands.md:902
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr "Ticket.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:888
+#: src/en/reference/rails-commands.md:907
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 "Behalten Sie einige Tickets (angegeben durch die Datenbank ID); löschen Sie "
 "den Rest:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:889
+#: src/en/reference/rails-commands.md:908
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr "tickets_to_keep = [1, 2, 3]\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:893
+#: src/en/reference/rails-commands.md:912
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:897
+#: src/en/reference/rails-commands.md:916
 #, no-wrap
 msgid "Removing Users"
 msgstr "Entfernen von Benutzern"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:899
+#: src/en/reference/rails-commands.md:918
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -19847,7 +19936,7 @@ msgstr ""
 "Befehle löschen ohne weitere Warnungen.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:908
+#: src/en/reference/rails-commands.md:927
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -19861,30 +19950,30 @@ msgstr ""
 "_System > Datenschutz_.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:916
+#: src/en/reference/rails-commands.md:935
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 "Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und "
 "mehrere auf einmal."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:918
+#: src/en/reference/rails-commands.md:937
 msgid "Remove a single user:"
 msgstr "Entfernen Sie einen einzelnen Benutzer:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:919
+#: src/en/reference/rails-commands.md:938
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr "User.find_by(email: '<email address>').destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:924
+#: src/en/reference/rails-commands.md:943
 msgid "Remove several users:"
 msgstr "Mehrere Benutzer entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:925
+#: src/en/reference/rails-commands.md:944
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -19896,76 +19985,76 @@ msgstr ""
 "   ).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:931
+#: src/en/reference/rails-commands.md:950
 #, no-wrap
 msgid "Removing Organizations"
 msgstr "Entfernen von Organisationen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:933
+#: src/en/reference/rails-commands.md:952
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr "Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelöscht.\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:937
+#: src/en/reference/rails-commands.md:956
 #, no-wrap
 msgid "Step 1: Select organizations"
 msgstr "Schritt 1: Organisationen auswählen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:940
+#: src/en/reference/rails-commands.md:959
 msgid "By \"active\" status:"
 msgstr "Nach dem Status \"aktiv\":"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:941
+#: src/en/reference/rails-commands.md:960
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr "organizations = Organization.where(active: false)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:946
+#: src/en/reference/rails-commands.md:965
 msgid "By name:"
 msgstr "Nach dem Namen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:947
+#: src/en/reference/rails-commands.md:966
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr "organizations = Organization.where(name: 'Acme')\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:952
+#: src/en/reference/rails-commands.md:971
 msgid "By partial match on notes:"
 msgstr "Bei teilweiser Übereinstimmung mit den Notizen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:953
+#: src/en/reference/rails-commands.md:972
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:957
+#: src/en/reference/rails-commands.md:976
 #, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr "Schritt 2: Vorschau der betroffenen Organisationen"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:959
+#: src/en/reference/rails-commands.md:978
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 msgstr "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:963
+#: src/en/reference/rails-commands.md:982
 #, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr "Schritt 3: Mit der Löschung fortfahren"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:965
+#: src/en/reference/rails-commands.md:984
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -19975,7 +20064,7 @@ msgstr ""
 "    puts %{Preparing deletion of organization \"#{org.name}\"...}\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:970
+#: src/en/reference/rails-commands.md:989
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -19989,7 +20078,7 @@ msgstr ""
 "end\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:977
+#: src/en/reference/rails-commands.md:996
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -20001,35 +20090,35 @@ msgstr ""
 "   end\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:983
+#: src/en/reference/rails-commands.md:1002
 #, no-wrap
 msgid "Removing System Records"
 msgstr "Entfernen von Systemdaten"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:986
+#: src/en/reference/rails-commands.md:1005
 msgid "Remove all online notifications:"
 msgstr "Löschen aller Online-Benachrichtigungen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:987
+#: src/en/reference/rails-commands.md:1006
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr "OnlineNotification.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:992
+#: src/en/reference/rails-commands.md:1011
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr "Entfernen Sie alle Einträge aus dem Aktivitätsverlauf (Dashboard):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:993
+#: src/en/reference/rails-commands.md:1012
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr "ActivityStream.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:998
+#: src/en/reference/rails-commands.md:1017
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
 "organizations):"
@@ -20038,13 +20127,13 @@ msgstr ""
 "Organisationen) entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:999
+#: src/en/reference/rails-commands.md:1018
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr "RecentView.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1005
+#: src/en/reference/rails-commands.md:1024
 msgid ""
 "Remove all history information from tickets, users and organizations "
 "(dangerous!):"
@@ -20053,19 +20142,19 @@ msgstr ""
 "Organisationen (gefährlich!):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1006
+#: src/en/reference/rails-commands.md:1025
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr "History.destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1010
+#: src/en/reference/rails-commands.md:1029
 #, no-wrap
 msgid "Reset Zammad Installation"
 msgstr "Zammad Installation zurücksetzen"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:1012
+#: src/en/reference/rails-commands.md:1031
 #, no-wrap
 msgid ""
 "\n"
@@ -20083,51 +20172,51 @@ msgstr ""
 "Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1022
+#: src/en/reference/rails-commands.md:1041
 msgid "Truncate the database:"
 msgstr "Datenbank zurücksetzen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1023
+#: src/en/reference/rails-commands.md:1042
 #, no-wrap
 msgid "rake zammad:db:truncate\n"
 msgstr "rake zammad:db:truncate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1028
+#: src/en/reference/rails-commands.md:1047
 msgid "Migrate the database:"
 msgstr "Migration der Datenbank ausführen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1029
+#: src/en/reference/rails-commands.md:1048
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr "rake db:migrate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1034
+#: src/en/reference/rails-commands.md:1053
 msgid "Load the seed data:"
 msgstr "Datenbank-Seeds einspielen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1035
+#: src/en/reference/rails-commands.md:1054
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr "rake db:seed\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1040
+#: src/en/reference/rails-commands.md:1059
 msgid "Clear cache and reload the settings:"
 msgstr "Cache löschen und Einstellungen neu laden:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1041
+#: src/en/reference/rails-commands.md:1060
 #, no-wrap
 msgid "rake zammad:db:rebuild\n"
 msgstr "rake zammad:db:rebuild\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:1045
+#: src/en/reference/rails-commands.md:1064
 #, no-wrap
 msgid ""
 "\n"
@@ -26047,94 +26136,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -26357,6 +26358,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -26897,6 +26986,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-20 16:40+0100\n"
+"POT-Creation-Date: 2026-03-23 10:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,6 +247,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -17551,7 +17563,7 @@ msgid "rake zammad:data_privacy:failed:show\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:863
+#: src/en/reference/rails-commands.md:862
 #, markdown-text
 msgid ""
 "To retry failed data privacy jobs, you can use the following "
@@ -17561,19 +17573,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:864
+#: src/en/reference/rails-commands.md:863
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:retry\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:868
+#: src/en/reference/rails-commands.md:867
 #, markdown-text, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:870
+#: src/en/reference/rails-commands.md:869
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -17581,7 +17593,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:879
+#: src/en/reference/rails-commands.md:878
 #, markdown-text
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
@@ -17591,7 +17603,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:880
+#: src/en/reference/rails-commands.md:879
 #, no-wrap
 msgid ""
 "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
@@ -17599,13 +17611,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:884
+#: src/en/reference/rails-commands.md:883
 #, markdown-text, no-wrap
 msgid "Deleting Records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:886
+#: src/en/reference/rails-commands.md:885
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -17614,61 +17626,61 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:892
+#: src/en/reference/rails-commands.md:891
 #, markdown-text, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:895
+#: src/en/reference/rails-commands.md:894
 #, markdown-text
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:896
+#: src/en/reference/rails-commands.md:895
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:901
+#: src/en/reference/rails-commands.md:900
 #, markdown-text
 msgid "Delete all tickets:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:902
+#: src/en/reference/rails-commands.md:901
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:907
+#: src/en/reference/rails-commands.md:906
 #, markdown-text
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:908
+#: src/en/reference/rails-commands.md:907
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:912
+#: src/en/reference/rails-commands.md:911
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:916
+#: src/en/reference/rails-commands.md:915
 #, markdown-text, no-wrap
 msgid "Removing Users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:918
+#: src/en/reference/rails-commands.md:917
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -17680,7 +17692,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:927
+#: src/en/reference/rails-commands.md:926
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -17691,31 +17703,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:935
+#: src/en/reference/rails-commands.md:934
 #, markdown-text
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:937
+#: src/en/reference/rails-commands.md:936
 #, markdown-text
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:938
+#: src/en/reference/rails-commands.md:937
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:943
+#: src/en/reference/rails-commands.md:942
 #, markdown-text
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:944
+#: src/en/reference/rails-commands.md:943
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -17724,67 +17736,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:950
+#: src/en/reference/rails-commands.md:949
 #, markdown-text, no-wrap
 msgid "Removing Organizations"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:952
+#: src/en/reference/rails-commands.md:951
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:956
+#: src/en/reference/rails-commands.md:955
 #, markdown-text, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:959
+#: src/en/reference/rails-commands.md:958
 #, markdown-text
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:960
+#: src/en/reference/rails-commands.md:959
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:965
+#: src/en/reference/rails-commands.md:964
 #, markdown-text
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:966
+#: src/en/reference/rails-commands.md:965
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:971
+#: src/en/reference/rails-commands.md:970
 #, markdown-text
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:972
+#: src/en/reference/rails-commands.md:971
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:976
+#: src/en/reference/rails-commands.md:975
 #, markdown-text, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:978
+#: src/en/reference/rails-commands.md:977
 #, no-wrap
 msgid ""
 "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
@@ -17792,13 +17804,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:982
+#: src/en/reference/rails-commands.md:981
 #, markdown-text, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:984
+#: src/en/reference/rails-commands.md:983
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -17806,7 +17818,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:989
+#: src/en/reference/rails-commands.md:988
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -17816,7 +17828,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:996
+#: src/en/reference/rails-commands.md:995
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -17825,37 +17837,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1002
+#: src/en/reference/rails-commands.md:1001
 #, markdown-text, no-wrap
 msgid "Removing System Records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1005
+#: src/en/reference/rails-commands.md:1004
 #, markdown-text
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1006
+#: src/en/reference/rails-commands.md:1005
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1011
+#: src/en/reference/rails-commands.md:1010
 #, markdown-text
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1012
+#: src/en/reference/rails-commands.md:1011
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1017
+#: src/en/reference/rails-commands.md:1016
 #, markdown-text
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
@@ -17863,13 +17875,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1018
+#: src/en/reference/rails-commands.md:1017
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1024
+#: src/en/reference/rails-commands.md:1023
 #, markdown-text
 msgid ""
 "Remove all history information from tickets, users and organizations "
@@ -17877,19 +17889,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1025
+#: src/en/reference/rails-commands.md:1024
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1029
+#: src/en/reference/rails-commands.md:1028
 #, markdown-text, no-wrap
 msgid "Reset Zammad Installation"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:1031
+#: src/en/reference/rails-commands.md:1030
 #, no-wrap
 msgid ""
 "\n"
@@ -17901,55 +17913,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1041
+#: src/en/reference/rails-commands.md:1040
 #, markdown-text
 msgid "Truncate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1042
+#: src/en/reference/rails-commands.md:1041
 #, no-wrap
 msgid "rake zammad:db:truncate\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1047
+#: src/en/reference/rails-commands.md:1046
 #, markdown-text
 msgid "Migrate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1048
+#: src/en/reference/rails-commands.md:1047
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1053
+#: src/en/reference/rails-commands.md:1052
 #, markdown-text
 msgid "Load the seed data:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1054
+#: src/en/reference/rails-commands.md:1053
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1059
+#: src/en/reference/rails-commands.md:1058
 #, markdown-text
 msgid "Clear cache and reload the settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1060
+#: src/en/reference/rails-commands.md:1059
 #, no-wrap
 msgid "rake zammad:db:rebuild\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:1064
+#: src/en/reference/rails-commands.md:1063
 #, no-wrap
 msgid ""
 "\n"
@@ -22794,6 +22806,83 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -22960,83 +23049,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23480,18 +23492,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #
