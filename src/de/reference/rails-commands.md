@@ -871,6 +871,25 @@ Wenn Sie stattdessen den Exportordner als Argument übergeben, werden alle
 enthaltenen E-Mails aus der Datenbank entfernt, ihre Dateien gelöscht und
 schließlich der leere Ordner entfernt.
 
+### Show and Retry Failed Data Privacy Jobs
+
+In rare cases, Zammad's data privacy jobs might fail. To show them, you can
+use the following rake command:
+
+```sh
+rake zammad:data_privacy:failed:show
+```
+
+
+To retry failed data privacy jobs, you can use the following
+command. However, without changing the underlying issue that caused the
+failure, the job will fail again. So make sure to check the logs for the
+root cause of the failure and fix it before retrying the job.
+
+```sh
+rake zammad:data_privacy:failed:retry
+```
+
 ### Befüllen eines Testsystems mit Testdaten
 
 :::danger
