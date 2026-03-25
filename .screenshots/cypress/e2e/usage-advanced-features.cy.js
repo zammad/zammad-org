@@ -276,7 +276,7 @@ describe('usage advanced features', () => {
     // tried different approaches to actually highlight text (incl. adding real mouse events) but nothing worked.
     cy.get('[aria-label="Highlight options"]').last().click()
     cy.get('[aria-label="Highlight options"]').last().clip({ padding: 5 }).then((TopClip) => {
-      cy.get('#highlight-menu-popover').clip({ padding: 5 }).then((BottomClip) => {
+      cy.get('[data-id="highlight-menu-popover"]').clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('text-highlighting', { clip })
         })
