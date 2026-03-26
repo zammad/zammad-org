@@ -17,6 +17,11 @@ means, for example, your upgrade path from version `2.4` to `5.1` (assuming
 this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
 `latest stable (5.1)`
 
+::: info
+This page describes how to update Zammad only. In case you want to update your host operating system too, have a look
+at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.
+:::
+
 ## Update Package Installation
 
 ### Check Dependencies
@@ -146,22 +151,16 @@ sudo zypper update
 
 === CentOS/RHEL
 
-Update package lists:
-
-```sh
-sudo yum check-update
-```
-
 Update all packages except Zammad:
 
 ```sh
-sudo yum upgrade --exclude zammad
+sudo dnf upgrade --exclude zammad
 ```
 
 Update Zammad:
 
 ```sh
-sudo yum upgrade
+sudo dnf upgrade
 ```
 
 :::

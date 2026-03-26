@@ -1,14 +1,20 @@
 ---
-title: Host Upgrade
+title: Host Upgrade and Repository Migration
 order: 4
 ---
 
-# Host Upgrade
+# Host Upgrade and Repository Migration
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-If you installed Zammad via [package manager](installation/package) and need to upgrade your host operating
-system, make sure to read the steps below. Some additional steps are required compared to just updating Zammad itself.
+This page covers the required steps for a host upgrade and to switch to Zammad's new package repositories. If you just
+want to update Zammad itself, please refer to [Updating Zammad](update). To just switch to the new repositories without
+a host upgrade, skip the host upgrade steps.
+
+Starting with Zammad 7, packages are being built using a new toolchain and hosted under another URL. The packages are
+being built via old toolchain as well (except for Debian 13) for some time, but we encourage you to switch to the new
+repositories in a timely manner. This means you need to add a new repository key and change your repository
+configuration.
 
 :::warning
 Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
@@ -18,25 +24,13 @@ The following operating systems are supported:
 
 <!--@include: /installation/package.md{15,20}-->
 
-## General
-
-The general steps, no matter which operating system you are using, are:
-
-1. Stop Zammad
-1. Disable updates for Zammad
-1. Perform host upgrade
-1. Reboot host
-1. Adjust package repository
-1. Update Zammad
-1. Start Zammad
-
-## Detailed Steps
-
-### Stop Zammad
+## Stop Zammad
 
 ```sh
 sudo systemctl stop zammad
 ```
+
+## Host Upgrade Steps
 
 ### Disable Updates for Zammad
 
@@ -63,7 +57,7 @@ sudo zypper addlock zammad
 === CentOS/RHEL
 
 ```sh
-sudo yum upgrade --exclude zammad
+sudo dnf upgrade --exclude zammad
 ```
 
 :::
@@ -79,9 +73,9 @@ In case you did not reboot your system after the upgrade, make sure to reboot yo
 everything is running as expected. In case Zammad starts automatically, stop it again before proceeding with the
 next steps.
 
-### Adjust Package Repository
+## Adjust Package Repository
 
-#### Remove Old Repository
+### Remove Old Repository
 
 Remove the old repository configuration file or disable/delete the old repository in your package manager.
 
@@ -92,13 +86,13 @@ Remove the old repository configuration file or disable/delete the old repositor
 Ubuntu 22.04:
 
 ```sh
-sudo rm /etc/apt/sources.list.d/zammad.list
+sudo rm /etc/apt/sources.list.d/zammad.sources
 ```
 
-Ubuntu 20.04:
+Ubuntu 24.04:
 
 ```sh
-sudo rm /etc/apt/sources.list.d/zammad.sources
+sudo rm /etc/apt/sources.list.d/zammad.list
 ```
 
 === Debian
@@ -121,12 +115,61 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-#### Add New Repository
+### Remove Old Repository Key
+
+Remove the old repository key from your system. Depending on your operating system and version, the location or method
+differs.
+
+:::tabs key:distros
+
+=== Ubuntu
+
+```sh
+sudo rm /etc/apt/keyrings/pkgr-zammad.gpg
+```
+
+=== Debian
+
+```sh
+sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
+```
+
+=== OpenSUSE/SLES
+
+List the keys of your system:
+
+```sh
+rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+```
+
+Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+
+```sh
+sudo rpm -e <key-name>
+```
+
+=== CentOS/RHEL
+
+List the keys of your system:
+
+```sh
+rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+```
+
+Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+
+```sh
+sudo rpm -e <key-name>
+```
+
+:::
+
+### Add New Repository
 
 If the repository key is different for the old and new version your distribution or your distribution expects it in a
 different location, add the new one. Otherwise, you can add the new repository configuration directly.
 
-<!--@include: /installation/package.md{171,283}-->
+<!--@include: /installation/package.md{172,296}-->
 
 ### Update Zammad
 
@@ -202,7 +245,7 @@ sudo zypper update zammad
 === CentOS/RHEL
 
 ```sh
-sudo yum upgrade zammad
+sudo dnf upgrade zammad
 ```
 
 :::

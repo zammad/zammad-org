@@ -143,7 +143,7 @@ the following, you absolutely have to run above to fix your
 installation.
 
 ``` sh
-root@zammad:/# apt-get update && apt install zammad
+root@zammad:/# apt update && apt install zammad
   Reading package lists... Done
   Building dependency tree
   Reading state information... Done

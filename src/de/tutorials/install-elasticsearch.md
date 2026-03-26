@@ -22,18 +22,18 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
-Notwendige Tools installieren:
+Install required tools:
 
 ```sh
-sudo apt-get install apt-transport-https
+sudo apt install curl apt-transport-https
 ```
 
-Repository-Schlüssel hinzufügen:
+Add repo key:
 
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
-&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
+  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
+  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
 === OpenSUSE/SLES
@@ -98,7 +98,7 @@ type=rpm-md
 === Ubuntu/Debian
 
 ``` sh
-sudo apt-get update && sudo apt-get install elasticsearch
+sudo apt update && sudo apt install elasticsearch
 ```
 
 === OpenSUSE/SLES
@@ -111,13 +111,13 @@ sudo zypper modifyrepo --enable elasticsearch && \
 
 === CentOS/RHEL
 
-CentOS und RHEL 7 oder älter:
+CentOS and RHEL 7 or earlier:
 
 ```sh
 sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
-RHEL 8 und neuer:
+RHEL 8 and later:
 
 ```sh
 sudo dnf install --enablerepo=elasticsearch elasticsearch

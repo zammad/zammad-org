@@ -46,7 +46,7 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 ### Install Elasticsearch
 
 ```sh
-sudo apt-get update && sudo apt-get install elasticsearch
+sudo apt update && sudo apt install elasticsearch
 ```
 
 Make sure to remember or save the password which gets shown during installation.
@@ -59,15 +59,7 @@ sudo systemctl enable elasticsearch.service --now
 
 ### Add Zammad Repository Key
 
-Ubuntu & Debian 12:
-
-```sh
-curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-   gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \
-   && sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
-```
-
-Debian 13:
+Ubuntu & Debian:
 
 ```sh
 curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
@@ -80,33 +72,29 @@ curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
 Debian 12:
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 Debian 13:
 
 ```sh
-curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \
-   -o /etc/apt/sources.list.d/zammad.list
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 Ubuntu 22.04:
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 Ubuntu 24.04:
 
 ```sh
-printf "Types: deb
-URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 24.04
-Components: main
-Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
-sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 ### Install Zammad

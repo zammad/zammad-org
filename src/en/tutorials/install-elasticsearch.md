@@ -23,15 +23,15 @@ Adapt it wherever needed in case your use-case differs.
 Install required tools:
 
 ```sh
-sudo apt-get install apt-transport-https
+sudo apt install curl apt-transport-https
 ```
 
 Add repo key:
 
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
-gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
-&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
+  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
+  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
 === OpenSUSE/SLES
@@ -96,7 +96,7 @@ type=rpm-md
 === Ubuntu/Debian
 
 ``` sh
-sudo apt-get update && sudo apt-get install elasticsearch
+sudo apt update && sudo apt install elasticsearch
 ```
 
 === OpenSUSE/SLES

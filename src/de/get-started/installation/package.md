@@ -43,7 +43,9 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Nur SLES - Nicht erforderlich für OpenSUSE:
+OpenSUSE doesn't require any additional steps here!
+
+SLES 15 requires additional repositories to be activated. To do so, run the following commands.
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -56,7 +58,7 @@ sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(u
 === CentOS/RHEL
 
 ```sh
-sudo yum install wget epel-release
+sudo dnf install curl epel-release
 ```
 
 :::
@@ -176,113 +178,78 @@ adjust it over there -->
 ::::tabs key:distros
 
 === Ubuntu
-Paketquellen-Schlüssel hinzufügen:
+Install repository key:
 
 ```sh
-curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \
-&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Ubuntu 22.04
+Add repository (Ubuntu 22.04):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
-sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Ubuntu 24.04
-
-::: info
-Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen der Paketquelle im
-[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).
-:::
+Add repository (Ubuntu 24.04):
 
 ```sh
-printf "Types: deb
-URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu
-Suites: 24.04
-Components: main
-Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg" | \
-sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 === Debian
-::: info
-Ab Debian 13 werden die Pakete unter einer anderen URL gehostet und der Signing-Key wird in einem anderen
-Verzeichnis gespeichert.
-:::
 
-Paketquellen-Schlüssel hinzufügen (Debian 11 & 12):
+Install repository key:
 
 ```sh
-curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \
-&& sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Paketquellen-Schlüssel hinzufügen (Debian 13):
+Add repository (Debian 11):
 
 ```sh
-curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \
-gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \
-&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Paketquelle hinzufügen (Debian 11):
+Add repository (Debian 12):
 
 ```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
-sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Paketquelle hinzufügen (Debian 12):
+Add repository (Debian 13):
 
 ```sh
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
-sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
-```
-
-Paketquelle hinzufügen (Debian 13):
-
-```sh
-curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \
--o /etc/apt/sources.list.d/zammad.list
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 === OpenSUSE/SLES
-Paketquellen-Schlüssel hinzufügen:
+
+Add repository:
 
 ```sh
-sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
-```
-
-OpenSUSE 15.x / SLES15
-
-```sh
-sudo wget -O /etc/zypp/repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
 ```
 
 ===CentOS/RHEL
-Paketquellen-Schlüssel hinzufügen:
+Add repository key:
 
 ```sh
-sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
+sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-CentOS 8 / RHEL 8
+Add repository:
 
 ```sh
-sudo wget -O /etc/yum.repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
-```
-
-CentOS 9 / RHEL 9
-
-```sh
-sudo wget -O /etc/yum.repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
+  -o /etc/yum.repos.d/zammad.repo
 ```
 
 ::::
@@ -314,7 +281,7 @@ sudo apt install zammad
 === OpenSUSE/SLES
 
 ```sh
-sudo zypper ref
+sudo zypper refresh
 ```
 
 ```sh
@@ -324,13 +291,7 @@ sudo zypper install zammad
 ===CentOS/RHEL
 
 ```sh
-sudo yum install zammad
-```
-
-Aufgrund eines Problems mit packager.io müssen Sie die Dateiberechtigungen für öffentliche Dateien unter CentOS korrigieren:
-
-```sh
-sudo chmod -R 755 /opt/zammad/public/
+sudo dnf install zammad
 ```
 
 :::
