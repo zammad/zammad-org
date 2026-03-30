@@ -599,23 +599,26 @@ einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element
 mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken,
 werden Sie zu diesem im jeweiligen System weitergeleitet.
 
-## Highlight Text
+## Text hervorheben
 
 **Warum?**
 
-It allows you to give your colleagues a hint about important aspects of the
-ticket and to make sure important parts aren't getting overlooked. Be aware
-that this feature is not about text highlighting for new articles, it is
-about highlighting text in existing articles for you and other agents.
+Damit können Sie Ihren Kollegen einen Hinweis auf wichtige Aspekte des
+Tickets geben und sicherstellen, dass wichtige Teile nicht übersehen
+werden. Beachten Sie, dass es bei dieser Funktion nicht um die Hervorhebung
+von Text in neuen Artikeln geht, sondern um die Hervorhebung von Text in
+bestehenden Artikeln für Sie und andere Agenten.
 
 **Wie?**
 
-![Screenshot shows highlight menu from ticket detail
-view](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)
+![Screenshot zeigt Hervorhebungsmenü in der
+Ticket-Detailansicht](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)
 
-Use the highlighting tool with the pencil icon in the upper right corner in
-the ticket detail view. To highlight text, either select text first and then
-click the button. As an alternative, you can click the highlighting button
-first and then select text. You can choose a different color by using the
-down arrow on the right side of the button. To remove the highlighting,
-simply choose the rubber icon from the color menu.
+Verwenden Sie das Hervorhebungswerkzeug mit dem Stiftsymbol in der oberen
+rechten Ecke in der Ticket-Detailansicht. Um Text zu markieren, wählen Sie
+entweder zuerst den Text aus und klicken dann auf die
+Schaltfläche. Alternativ können Sie auch zuerst auf die
+Hervorhebungsschaltfläche klicken und dann den Text auswählen. Mit dem
+Abwärtspfeil auf der rechten Seite der Schaltfläche können Sie eine andere
+Farbe auswählen. Um die Hervorhebung zu entfernen, wählen Sie einfach das
+Radiersymbol aus dem Farbmenü.

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-23 10:59+0000\n"
-"PO-Revision-Date: 2026-03-17 06:00+0000\n"
+"POT-Creation-Date: 2026-03-26 10:16+0100\n"
+"PO-Revision-Date: 2026-03-26 09:01+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -248,18 +248,6 @@ msgstr "Keine Ergebnisse für"
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -493,7 +481,7 @@ msgstr ""
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
 #: src/en/documentation/use/guides/search.md:8
-#: src/en/get-started/installation/package.md:63
+#: src/en/get-started/installation/package.md:65
 #: src/en/tutorials/backup-restore.md:33
 #, no-wrap
 msgid "Basics"
@@ -3224,10 +3212,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:448
-#, fuzzy, no-wrap
-#| msgid "Cite Text"
+#, no-wrap
 msgid "Highlight Text"
-msgstr "Text zitieren"
+msgstr "Text hervorheben"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:455
@@ -3237,19 +3224,20 @@ msgid ""
 "that this feature is not about text highlighting for new articles, it is "
 "about highlighting text in existing articles for you and other agents."
 msgstr ""
+"Damit können Sie Ihren Kollegen einen Hinweis auf wichtige Aspekte des "
+"Tickets geben und sicherstellen, dass wichtige Teile nicht übersehen werden. "
+"Beachten Sie, dass es bei dieser Funktion nicht um die Hervorhebung von Text "
+"in neuen Artikeln geht, sondern um die Hervorhebung von Text in bestehenden "
+"Artikeln für Sie und andere Agenten."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:459
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
-#| "usage-advanced-features.cy.js/ticket-tags.png)"
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
 "cypress/usage-advanced-features.cy.js/text-highlighting.png)"
 msgstr ""
-"![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
-"cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+"![Screenshot zeigt Hervorhebungsmenü in der Ticket-Detailansicht](/"
+"screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:463
@@ -3261,6 +3249,13 @@ msgid ""
 "down arrow on the right side of the button. To remove the highlighting, "
 "simply choose the rubber icon from the color menu."
 msgstr ""
+"Verwenden Sie das Hervorhebungswerkzeug mit dem Stiftsymbol in der oberen "
+"rechten Ecke in der Ticket-Detailansicht. Um Text zu markieren, wählen Sie "
+"entweder zuerst den Text aus und klicken dann auf die Schaltfläche. "
+"Alternativ können Sie auch zuerst auf die Hervorhebungsschaltfläche klicken "
+"und dann den Text auswählen. Mit dem Abwärtspfeil auf der rechten Seite der "
+"Schaltfläche können Sie eine andere Farbe auswählen. Um die Hervorhebung zu "
+"entfernen, wählen Sie einfach das Radiersymbol aus dem Farbmenü."
 
 #. type: Title #
 #: src/en/documentation/use/basics/create-tickets.md:1
@@ -4912,9 +4907,9 @@ msgid "[[TOC]]"
 msgstr "[[TOC]]"
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:13 src/en/get-started/host-upgrade.md:21
-#: src/en/reference/rest-api/articles.md:8 src/en/reference/rest-api/cti.md:92
-#: src/en/reference/rest-api/cti.md:244 src/en/reference/rest-api/cti.md:361
+#: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
+#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
+#: src/en/reference/rest-api/cti.md:361
 #, no-wrap
 msgid "General"
 msgstr "Allgemein"
@@ -8354,13 +8349,14 @@ msgstr ""
 "[Nachricht](https://zammad.com/de/company/contact){target=_blank}."
 
 #. type: Title #
-#: src/en/get-started/host-upgrade.md:1 src/en/get-started/host-upgrade.md:6
+#: src/en/get-started/host-upgrade-repo-migration.md:1
+#: src/en/get-started/host-upgrade-repo-migration.md:6
 #, no-wrap
-msgid "Host Upgrade"
-msgstr "Host-Upgrade"
+msgid "Host Upgrade and Repository Migration"
+msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:9
+#: src/en/get-started/host-upgrade-repo-migration.md:9
 #: src/en/get-started/installation/package.md:9
 #: src/en/get-started/installation/prerequisites.md:9
 #: src/en/get-started/update.md:9
@@ -8372,104 +8368,97 @@ msgid "<!--@include: @/en/modules/zammad-services-hint.md-->\n"
 msgstr "<!--@include: @/de/modules/zammad-services-hint.md-->\n"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:12
+#: src/en/get-started/host-upgrade-repo-migration.md:13
 msgid ""
-"If you installed Zammad via [package manager](installation/package) and need "
-"to upgrade your host operating system, make sure to read the steps below. "
-"Some additional steps are required compared to just updating Zammad itself."
+"This page covers the required steps for a host upgrade and to switch to "
+"Zammad's new package repositories. If you just want to update Zammad itself, "
+"please refer to [Updating Zammad](update). To just switch to the new "
+"repositories without a host upgrade, skip the host upgrade steps."
 msgstr ""
-"Wenn Sie Zammad über den [Paketmanager](installation/package) installiert "
-"haben und Ihr Host-Betriebssystem aktualisieren müssen, lesen Sie bitte die "
-"folgenden Schritte. Es sind einige zusätzliche Schritte im Vergleich zur "
-"Aktualisierung von Zammad selbst erforderlich."
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:18
+msgid ""
+"Starting with Zammad 7, packages are being built using a new toolchain and "
+"hosted under another URL. The packages are being built via old toolchain as "
+"well (except for Debian 13) for some time, but we encourage you to switch to "
+"the new repositories in a timely manner. This means you need to add a new "
+"repository key and change your repository configuration."
+msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/host-upgrade.md:13
+#: src/en/get-started/host-upgrade-repo-migration.md:19
 #, no-wrap
 msgid "Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.\n"
 msgstr "Stellen Sie immer sicher, dass Sie eine [Sicherung](/de/tutorials/backup-restore) Ihrer Daten haben, bevor Sie ein Upgrade durchführen.\n"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:18
+#: src/en/get-started/host-upgrade-repo-migration.md:24
 msgid "The following operating systems are supported:"
 msgstr "Die folgenden Betriebssysteme werden unterstützt:"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:20
+#: src/en/get-started/host-upgrade-repo-migration.md:26
 #, no-wrap
 msgid "<!--@include: /installation/package.md{15,20}-->\n"
 msgstr "<!--@include: /installation/package.md{15,20}-->\n"
 
-#. type: Plain text
-#: src/en/get-started/host-upgrade.md:24
-msgid "The general steps, no matter which operating system you are using, are:"
-msgstr ""
-"Die allgemeinen Schritte, unabhängig davon, welches Betriebssystem Sie "
-"verwenden, sind:"
-
 #. type: Title ###
-#: src/en/get-started/host-upgrade.md:32 src/en/get-started/host-upgrade.md:35
-#: src/en/get-started/update.md:28
+#: src/en/get-started/host-upgrade-repo-migration.md:27
+#: src/en/get-started/update.md:33
 #, no-wrap
 msgid "Stop Zammad"
 msgstr "Zammad stoppen"
 
-#. type: Bullet: '1. '
-#: src/en/get-started/host-upgrade.md:32
-msgid "Disable updates for Zammad"
-msgstr "Aktualisierungen für Zammad deaktivieren"
-
-#. type: Bullet: '1. '
-#: src/en/get-started/host-upgrade.md:32
-msgid "Perform host upgrade"
-msgstr "Host-Upgrade durchführen"
-
-#. type: Bullet: '1. '
-#: src/en/get-started/host-upgrade.md:32
-msgid "Reboot host"
-msgstr "Host neu starten"
-
-#. type: Bullet: '1. '
-#: src/en/get-started/host-upgrade.md:32
-msgid "Adjust package repository"
-msgstr "Paketquelle anpassen"
-
-#. type: Title ###
-#: src/en/get-started/host-upgrade.md:32 src/en/get-started/host-upgrade.md:131
-#: src/en/get-started/update.md:39
-#, no-wrap
-msgid "Update Zammad"
-msgstr "Zammad aktualisieren"
-
-#. type: Title ###
-#: src/en/get-started/host-upgrade.md:32 src/en/get-started/host-upgrade.md:210
-#: src/en/get-started/update.md:195
-#, no-wrap
-msgid "Start Zammad"
-msgstr "Zammad starten"
-
-#. type: Title ##
-#: src/en/get-started/host-upgrade.md:33
-#, no-wrap
-msgid "Detailed Steps"
-msgstr "Detaillierte Schritte"
-
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade.md:37 src/en/get-started/update.md:30
-#: src/en/tutorials/migrate-host.md:54
+#: src/en/get-started/host-upgrade-repo-migration.md:29
+#: src/en/get-started/update.md:35 src/en/tutorials/migrate-host.md:54
 #, no-wrap
 msgid "sudo systemctl stop zammad\n"
 msgstr "sudo systemctl stop zammad\n"
 
+#. type: Title ##
+#: src/en/get-started/host-upgrade-repo-migration.md:33
+#, fuzzy, no-wrap
+#| msgid "Host Upgrade"
+msgid "Host Upgrade Steps"
+msgstr "Host-Upgrade"
+
 #. type: Title ###
-#: src/en/get-started/host-upgrade.md:41
+#: src/en/get-started/host-upgrade-repo-migration.md:35
 #, no-wrap
 msgid "Disable Updates for Zammad"
 msgstr "Aktualisierungen für Zammad deaktivieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade.md:43
-#, no-wrap
+#: src/en/get-started/host-upgrade-repo-migration.md:37
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark hold zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark hold zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper addlock zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum upgrade --exclude zammad\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8493,7 +8482,7 @@ msgid ""
 "=== CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum upgrade --exclude zammad\n"
+"sudo dnf upgrade --exclude zammad\n"
 "```\n"
 "\n"
 msgstr ""
@@ -8524,13 +8513,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade.md:71
+#: src/en/get-started/host-upgrade-repo-migration.md:65
 #, no-wrap
 msgid "Perform Host Upgrade"
 msgstr "Host-Upgrade durchführen"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:75
+#: src/en/get-started/host-upgrade-repo-migration.md:69
 msgid ""
 "Perform the host upgrade according to the documentation of your operating "
 "system. Because this is an advanced task, we don't provide detailed steps "
@@ -8542,13 +8531,13 @@ msgstr ""
 "Betriebssystems fahren Sie mit den nächsten Schritten fort."
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade.md:76
+#: src/en/get-started/host-upgrade-repo-migration.md:70
 #, no-wrap
 msgid "Reboot Host"
 msgstr "Host neu starten"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:81
+#: src/en/get-started/host-upgrade-repo-migration.md:75
 msgid ""
 "In case you did not reboot your system after the upgrade, make sure to "
 "reboot your system now. Afterwards, check if everything is running as "
@@ -8560,20 +8549,20 @@ msgstr ""
 "Falls Zammad automatisch startet, stoppen Sie es wieder, bevor Sie mit den "
 "nächsten Schritten fortfahren."
 
-#. type: Title ###
-#: src/en/get-started/host-upgrade.md:82
+#. type: Title ##
+#: src/en/get-started/host-upgrade-repo-migration.md:76
 #, no-wrap
 msgid "Adjust Package Repository"
 msgstr "Paketquelle anpassen"
 
-#. type: Title ####
-#: src/en/get-started/host-upgrade.md:84
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:78
 #, no-wrap
 msgid "Remove Old Repository"
 msgstr "Alte Paketquelle entfernen"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:87
+#: src/en/get-started/host-upgrade-repo-migration.md:81
 msgid ""
 "Remove the old repository configuration file or disable/delete the old "
 "repository in your package manager."
@@ -8582,8 +8571,42 @@ msgstr ""
 "löschen Sie die alte Paketquelle in Ihrem Paketmanager."
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade.md:88
-#, no-wrap
+#: src/en/get-started/host-upgrade-repo-migration.md:82
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "Ubuntu 22.04:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Ubuntu 20.04:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/apt/sources.list.d/zammad.sources\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/zypp/repos.d/zammad.repo\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/yum.repos.d/zammad.repo\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8591,13 +8614,13 @@ msgid ""
 "Ubuntu 22.04:\n"
 "\n"
 "```sh\n"
-"sudo rm /etc/apt/sources.list.d/zammad.list\n"
+"sudo rm /etc/apt/sources.list.d/zammad.sources\n"
 "```\n"
 "\n"
-"Ubuntu 20.04:\n"
+"Ubuntu 24.04:\n"
 "\n"
 "```sh\n"
-"sudo rm /etc/apt/sources.list.d/zammad.sources\n"
+"sudo rm /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== Debian\n"
@@ -8653,14 +8676,75 @@ msgstr ""
 "```\n"
 "\n"
 
-#. type: Title ####
-#: src/en/get-started/host-upgrade.md:124
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:118
+#, fuzzy, no-wrap
+#| msgid "Remove Old Repository"
+msgid "Remove Old Repository Key"
+msgstr "Alte Paketquelle entfernen"
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:122
+msgid ""
+"Remove the old repository key from your system. Depending on your operating "
+"system and version, the location or method differs."
+msgstr ""
+
+#. type: Fenced div block (tabs key:distros)
+#: src/en/get-started/host-upgrade-repo-migration.md:123
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/apt/keyrings/pkgr-zammad.gpg\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"```sh\n"
+"sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"List the keys of your system:\n"
+"\n"
+"```sh\n"
+"rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
+"```\n"
+"\n"
+"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"\n"
+"```sh\n"
+"sudo rpm -e <key-name>\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"List the keys of your system:\n"
+"\n"
+"```sh\n"
+"rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
+"```\n"
+"\n"
+"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"\n"
+"```sh\n"
+"sudo rpm -e <key-name>\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:167
 #, no-wrap
 msgid "Add New Repository"
 msgstr "Neue Paketquelle hinzufügen"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:128
+#: src/en/get-started/host-upgrade-repo-migration.md:171
 msgid ""
 "If the repository key is different for the old and new version your "
 "distribution or your distribution expects it in a different location, add "
@@ -8673,13 +8757,21 @@ msgstr ""
 "können Sie direkt die neue Konfiguration der Paketquelle hinzufügen."
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:130
-#, no-wrap
-msgid "<!--@include: /installation/package.md{171,283}-->\n"
+#: src/en/get-started/host-upgrade-repo-migration.md:173
+#, fuzzy, no-wrap
+#| msgid "<!--@include: /installation/package.md{171,283}-->\n"
+msgid "<!--@include: /installation/package.md{172,296}-->\n"
 msgstr "<!--@include: /installation/package.md{171,283}-->\n"
 
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:174
+#: src/en/get-started/update.md:44
+#, no-wrap
+msgid "Update Zammad"
+msgstr "Zammad aktualisieren"
+
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade.md:133
+#: src/en/get-started/host-upgrade-repo-migration.md:176
 #, no-wrap
 msgid ""
 "If there is a new Zammad version available and you want to update to it, check the\n"
@@ -8689,7 +8781,7 @@ msgstr ""
 "[Release Notes](https://zammad.com/de/product/releases) für erforderliche zusätzliche Schritte.\n"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade.md:139
+#: src/en/get-started/host-upgrade-repo-migration.md:182
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
 "available for your operating system."
@@ -8698,8 +8790,76 @@ msgstr ""
 "auf die neueste Version, die für Ihr Betriebssystem verfügbar ist."
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade.md:140
-#, no-wrap
+#: src/en/get-started/host-upgrade-repo-migration.md:183
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "Update package index:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark unhold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "Update package index:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark unhold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Update package index:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper refresh\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper removelock zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper update zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum upgrade zammad\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8765,7 +8925,7 @@ msgid ""
 "=== CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum upgrade zammad\n"
+"sudo dnf upgrade zammad\n"
 "```\n"
 "\n"
 msgstr ""
@@ -8837,10 +8997,17 @@ msgstr ""
 "```\n"
 "\n"
 
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:253
+#: src/en/get-started/update.md:194
+#, no-wrap
+msgid "Start Zammad"
+msgstr "Zammad starten"
+
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade.md:212
-#: src/en/get-started/installation/package.md:347
-#: src/en/get-started/update.md:197 src/en/tutorials/migrate-host.md:169
+#: src/en/get-started/host-upgrade-repo-migration.md:255
+#: src/en/get-started/installation/package.md:308
+#: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
 msgstr "sudo systemctl start zammad\n"
@@ -9203,14 +9370,14 @@ msgstr "Schritt 3: Starten des Stacks"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:218
+#: src/en/get-started/update.md:217
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr "cd zammad-docker-compose\n"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:230
+#: src/en/get-started/update.md:229
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr "docker compose up -d\n"
@@ -9590,7 +9757,39 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:29
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt install curl apt-transport-https gnupg\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt install curl apt-transport-https gnupg\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Only SLES - Not required for OpenSUSE:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
+#| "```\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum install wget epel-release\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -9607,7 +9806,9 @@ msgid ""
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Only SLES - Not required for OpenSUSE:\n"
+"OpenSUSE doesn't require any additional steps here!\n"
+"\n"
+"SLES 15 requires additional repositories to be activated. To do so, run the following commands.\n"
 "\n"
 "```sh\n"
 "sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
@@ -9620,7 +9821,7 @@ msgid ""
 "=== CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum install wget epel-release\n"
+"sudo dnf install curl epel-release\n"
 "```\n"
 "\n"
 msgstr ""
@@ -9657,13 +9858,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:65
+#: src/en/get-started/installation/package.md:67
 #, no-wrap
 msgid "Ensure Correct Locale"
 msgstr "Korrekte Sprache/Gebietsschema sicherstellen"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:67
+#: src/en/get-started/installation/package.md:69
 #, no-wrap
 msgid ""
 "\n"
@@ -9841,14 +10042,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:155
+#: src/en/get-started/installation/package.md:157
 #: src/en/tutorials/install-elasticsearch.md:92
 #, no-wrap
 msgid "Install Elasticsearch"
 msgstr "Elasticsearch installieren"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:160
+#: src/en/get-started/installation/package.md:162
 msgid ""
 "The recommended method is to use [Elastic's official guide](https://"
 "www.elastic.co/guide/en/elasticsearch/reference/current/install-"
@@ -9859,7 +10060,7 @@ msgstr ""
 "reference/current/install-elasticsearch.html){target=_blank}."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:163
+#: src/en/get-started/installation/package.md:165
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
 "elasticsearch.md) of Elasticsearch 9, which is separated to keep the install "
@@ -9870,13 +10071,13 @@ msgstr ""
 "Seite finden, um die Installationsanweisungen übersichtlich zu halten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:164
+#: src/en/get-started/installation/package.md:166
 #, no-wrap
 msgid "Add Zammad Repository"
 msgstr "Zammad-Paketquelle hinzufügen"
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:166
+#: src/en/get-started/installation/package.md:168
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make sure\n"
@@ -9886,7 +10087,7 @@ msgstr ""
 "dies bei der Durchführung der folgenden Schritte berücksichtigen.\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:172
+#: src/en/get-started/installation/package.md:174
 #, no-wrap
 msgid ""
 "<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or\n"
@@ -9896,172 +10097,157 @@ msgstr ""
 "adjust it over there -->\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:172
-#, no-wrap
+#: src/en/get-started/installation/package.md:174
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "Install Repository Key (Debian 11 & 12):\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#| "gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \\\n"
+#| "&& sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Install Repository Key (Debian 13):\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \\\n"
+#| "gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \\\n"
+#| "&& sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Add Repository (Debian 11)\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Add Repository (Debian 12)\n"
+#| "\n"
+#| "```sh\n"
+#| "echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
+#| "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#| "```\n"
+#| "\n"
+#| "Add Repository (Debian 13)\n"
+#| "\n"
+#| "```sh\n"
+#| "curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \\\n"
+#| "-o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#| "```\n"
+#| "\n"
+#| "OpenSUSE 15.x / SLES15\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+#| "```\n"
+#| "\n"
+#| "===CentOS/RHEL\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+#| "```\n"
+#| "\n"
+#| "CentOS 8 / RHEL 8\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
+#| "```\n"
+#| "\n"
+#| "CentOS 9 / RHEL 9\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
+#| "https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
 "Install repository key:\n"
 "\n"
 "```sh\n"
-"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \\\n"
-"&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
-"Ubuntu 22.04\n"
+"Add repository (Ubuntu 22.04):\n"
 "\n"
 "```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
-"Ubuntu 24.04\n"
-"\n"
-msgstr ""
-"\n"
-"=== Ubuntu\n"
-"Paketquellen-Schlüssel hinzufügen:\n"
+"Add repository (Ubuntu 24.04):\n"
 "\n"
 "```sh\n"
-"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \\\n"
-"&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
-"```\n"
-"\n"
-"Ubuntu 22.04\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-"```\n"
-"\n"
-"Ubuntu 24.04\n"
-"\n"
-
-#. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:172
-#, no-wrap
-msgid ""
-"Starting with Ubuntu 24.04, we provide the command to add the repository in the\n"
-"[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
-msgstr ""
-"Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen der Paketquelle im\n"
-"[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
-
-#. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:172
-#, no-wrap
-msgid ""
-"\n"
-"```sh\n"
-"printf \"Types: deb\n"
-"URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
-"Suites: 24.04\n"
-"Components: main\n"
-"Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== Debian\n"
-msgstr ""
+"\n"
+"Install repository key:\n"
 "\n"
 "```sh\n"
-"printf \"Types: deb\n"
-"URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
-"Suites: 24.04\n"
-"Components: main\n"
-"Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
-"=== Debian\n"
-
-#. type: Fenced div block (tabs key:distros|info)
-#: src/en/get-started/installation/package.md:172
-#, no-wrap
-msgid ""
-"Starting with Debian 13, the packages are hosted under a different URL and the signing key is saved to a different\n"
-"directory.\n"
-msgstr ""
-"Ab Debian 13 werden die Pakete unter einer anderen URL gehostet und der Signing-Key wird in einem anderen\n"
-"Verzeichnis gespeichert.\n"
-
-#. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:172
-#, no-wrap
-msgid ""
-"\n"
-"Install Repository Key (Debian 11 & 12):\n"
+"Add repository (Debian 11):\n"
 "\n"
 "```sh\n"
-"curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
-"gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/pkgr-zammad.gpg > /dev/null \\\n"
-"&& sudo chmod 644 /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
-"Install Repository Key (Debian 13):\n"
+"Add repository (Debian 12):\n"
 "\n"
 "```sh\n"
-"curl -fsSL https://go.packager.io/srv/deb/zammad/zammad/gpg-key.asc | \\\n"
-"gpg --dearmor | sudo tee /usr/share/keyrings/zammad.gpg > /dev/null \\\n"
-"&& sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
-"Add Repository (Debian 11)\n"
+"Add repository (Debian 13):\n"
 "\n"
 "```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-"```\n"
-"\n"
-"Add Repository (Debian 12)\n"
-"\n"
-"```sh\n"
-"echo \"deb [signed-by=/etc/apt/trusted.gpg.d/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main\"| \\\n"
-"sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
-"```\n"
-"\n"
-"Add Repository (Debian 13)\n"
-"\n"
-"```sh\n"
-"curl -fsSL https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list \\\n"
-"-o /etc/apt/sources.list.d/zammad.list\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
-"Install repository key:\n"
+"\n"
+"Add repository:\n"
 "\n"
 "```sh\n"
-"sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
-"```\n"
-"\n"
-"OpenSUSE 15.x / SLES15\n"
-"\n"
-"```sh\n"
-"sudo wget -O /etc/zypp/repos.d/zammad.repo \\\n"
-"https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
 "```\n"
 "\n"
 "===CentOS/RHEL\n"
-"Install repository key:\n"
+"Add repository key:\n"
 "\n"
 "```sh\n"
-"sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key\n"
+"sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
 "```\n"
 "\n"
-"CentOS 8 / RHEL 8\n"
+"Add repository:\n"
 "\n"
 "```sh\n"
-"sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-"https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo\n"
-"```\n"
-"\n"
-"CentOS 9 / RHEL 9\n"
-"\n"
-"```sh\n"
-"sudo wget -O /etc/yum.repos.d/zammad.repo \\\n"
-"https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
 "```\n"
 "\n"
 msgstr ""
@@ -10140,14 +10326,58 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:286
+#: src/en/get-started/installation/package.md:253
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Zammad installieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:288
-#, no-wrap
+#: src/en/get-started/installation/package.md:255
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt install zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt install zammad\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper ref\n"
+#| "```\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper install zammad\n"
+#| "```\n"
+#| "\n"
+#| "===CentOS/RHEL\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum install zammad\n"
+#| "```\n"
+#| "\n"
+#| "Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo chmod -R 755 /opt/zammad/public/\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -10173,7 +10403,7 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper ref\n"
+"sudo zypper refresh\n"
 "```\n"
 "\n"
 "```sh\n"
@@ -10183,13 +10413,7 @@ msgid ""
 "===CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum install zammad\n"
-"```\n"
-"\n"
-"Due to an issue with packager.io, you'll need to correct file permissions for public files on CentOS:\n"
-"\n"
-"```sh\n"
-"sudo chmod -R 755 /opt/zammad/public/\n"
+"sudo dnf install zammad\n"
 "```\n"
 "\n"
 msgstr ""
@@ -10238,13 +10462,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/installation/package.md:295
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Zammad Services verwalten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:337
+#: src/en/get-started/installation/package.md:298
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
@@ -10254,12 +10478,12 @@ msgstr ""
 "wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:303
 msgid "zammad: includes the services below"
 msgstr "zammad: umfasst die folgenden Dienste"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:303
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
@@ -10267,7 +10491,7 @@ msgstr ""
 "Webanwendung)"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:303
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
@@ -10276,13 +10500,13 @@ msgstr ""
 "Aufgaben sowie Hintergrundaufgaben"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:303
 msgid "**zammad-websocket**: websocket server for session related information"
 msgstr ""
 "**zammad-websocket**: Websocket-Server für sitzungsbezogene Informationen"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:344
+#: src/en/get-started/installation/package.md:305
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
@@ -10291,12 +10515,12 @@ msgstr ""
 "`stop`, `status`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:307
 msgid "Example to start Zammad with all sub-services:"
 msgstr "Beispiel für den Start von Zammad mit allen Diensten:"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:313
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
@@ -10305,7 +10529,7 @@ msgstr ""
 "passen Sie den Befehl wie oben beschrieben an."
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:314
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:152
 #, no-wrap
@@ -10313,7 +10537,7 @@ msgid "Next Steps"
 msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:319
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
@@ -10322,7 +10546,7 @@ msgstr ""
 "elasticsearch)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:319
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
@@ -10330,18 +10554,18 @@ msgstr ""
 "selinux)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:319
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr "[Konfigurieren Sie den Webserver](/de/tutorials/webserver-config)"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:320
 #, no-wrap
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:365
+#: src/en/get-started/installation/package.md:326
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -10354,24 +10578,24 @@ msgstr ""
 "Elasticsearch, das nicht automatisch installiert wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:332
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:332
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:332
 #: src/en/reference/environment-variables.md:62
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:332
 #: src/en/reference/environment-variables.md:84
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -10379,20 +10603,20 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:371
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:357
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:333
 #, no-wrap
 msgid "Database Server"
 msgstr "Datenbank-Server"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:338
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
@@ -10405,7 +10629,7 @@ msgstr ""
 "automatisch während der Paketinstallation installiert."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:339
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -10419,28 +10643,28 @@ msgstr ""
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:385
+#: src/en/get-started/installation/package.md:346
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:349
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:352
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:352
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:356
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -10453,7 +10677,7 @@ msgstr ""
 "Tutorial](/de/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:402
+#: src/en/get-started/installation/package.md:363
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
@@ -10471,7 +10695,7 @@ msgstr ""
 "Weise einrichten."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:366
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
@@ -10480,13 +10704,13 @@ msgstr ""
 "auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:406
+#: src/en/get-started/installation/package.md:367
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:413
+#: src/en/get-started/installation/package.md:374
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -10502,17 +10726,17 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:415
+#: src/en/get-started/installation/package.md:376
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:417
+#: src/en/get-started/installation/package.md:378
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Elasticsearch-Versionsverlauf für Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:418
+#: src/en/get-started/installation/package.md:379
 #, no-wrap
 msgid ""
 "\n"
@@ -10544,7 +10768,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:437
+#: src/en/get-started/installation/package.md:398
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -10555,13 +10779,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:438
+#: src/en/get-started/installation/package.md:399
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:442
+#: src/en/get-started/installation/package.md:403
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -10574,7 +10798,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:446
+#: src/en/get-started/installation/package.md:407
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -10589,7 +10813,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:449
+#: src/en/get-started/installation/package.md:410
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -10601,7 +10825,7 @@ msgstr ""
 "variables#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:452
+#: src/en/get-started/installation/package.md:413
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -10613,13 +10837,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:453
+#: src/en/get-started/installation/package.md:414
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:458
+#: src/en/get-started/installation/package.md:419
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -10825,20 +11049,28 @@ msgstr ""
 "stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` → `4.0` → "
 "`5.0` → `letzte stabile Version (5.1)`"
 
-#. type: Title ##
+#. type: Fenced div block (info)
 #: src/en/get-started/update.md:20
+#, no-wrap
+msgid ""
+"This page describes how to update Zammad only. In case you want to update your host operating system too, have a look\n"
+"at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/update.md:25
 #, no-wrap
 msgid "Update Package Installation"
 msgstr "Paket-Installation aktualisieren"
 
 #. type: Title ###
-#: src/en/get-started/update.md:22
+#: src/en/get-started/update.md:27
 #, no-wrap
 msgid "Check Dependencies"
 msgstr "Abhängigkeiten prüfen"
 
 #. type: Plain text
-#: src/en/get-started/update.md:27
+#: src/en/get-started/update.md:32
 msgid ""
 "Before proceeding, double-check that your system environment matches "
 "Zammad's requirements (see [Prerequisites](installation/prerequisites) and "
@@ -10849,13 +11081,13 @@ msgstr ""
 "prerequisites) und [Paketinstallation](installation/package))."
 
 #. type: Title ###
-#: src/en/get-started/update.md:34
+#: src/en/get-started/update.md:39
 #, no-wrap
 msgid "Backup Zammad"
 msgstr "Backup von Zammad"
 
 #. type: Plain text
-#: src/en/get-started/update.md:38
+#: src/en/get-started/update.md:43
 msgid ""
 "Create a backup. You can use the [backup script](/en/tutorials/backup-"
 "restore) which is shipped with the Zammad package."
@@ -10864,7 +11096,7 @@ msgstr ""
 "backup-restore) verwenden, das mit dem Zammad-Paket ausgeliefert wird."
 
 #. type: Fenced div block (info)
-#: src/en/get-started/update.md:41
+#: src/en/get-started/update.md:46
 #, no-wrap
 msgid ""
 "If you update your complete system and there are updates for Zammad **and** your\n"
@@ -10882,8 +11114,124 @@ msgstr ""
 "in den folgenden Befehlen zu sehen.\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/update.md:50
-#, no-wrap
+#: src/en/get-started/update.md:55
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "Update package lists:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "Disable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark hold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update all packages except Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark unhold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "Update package lists:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt update\n"
+#| "```\n"
+#| "\n"
+#| "Disable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark hold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update all packages except Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-mark unhold zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt upgrade\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Update package lists:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper refresh\n"
+#| "```\n"
+#| "\n"
+#| "Disable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper addlock zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update all packages except Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper update\n"
+#| "```\n"
+#| "\n"
+#| "Re-enable updates for Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper removelock zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper update\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "Update package lists:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum check-update\n"
+#| "```\n"
+#| "\n"
+#| "Update all packages except Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum upgrade --exclude zammad\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum upgrade\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -10982,22 +11330,16 @@ msgid ""
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"Update package lists:\n"
-"\n"
-"```sh\n"
-"sudo yum check-update\n"
-"```\n"
-"\n"
 "Update all packages except Zammad:\n"
 "\n"
 "```sh\n"
-"sudo yum upgrade --exclude zammad\n"
+"sudo dnf upgrade --exclude zammad\n"
 "```\n"
 "\n"
 "Update Zammad:\n"
 "\n"
 "```sh\n"
-"sudo yum upgrade\n"
+"sudo dnf upgrade\n"
 "```\n"
 "\n"
 msgstr ""
@@ -11120,13 +11462,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/update.md:168 src/en/tutorials/backup-restore.md:217
+#: src/en/get-started/update.md:167 src/en/tutorials/backup-restore.md:217
 #, no-wrap
 msgid "Additional Steps"
 msgstr "Zusätzliche Schritte"
 
 #. type: Plain text
-#: src/en/get-started/update.md:174
+#: src/en/get-started/update.md:173
 msgid ""
 "Updating Elasticsearch may be relevant, too. Make sure to have a supported "
 "version of Elasticsearch installed (see [package installation](/en/get-"
@@ -11138,7 +11480,7 @@ msgstr ""
 "package#elasticsearch) für unterstützte Versionen)."
 
 #. type: Plain text
-#: src/en/get-started/update.md:178
+#: src/en/get-started/update.md:177
 msgid ""
 "If you have to update Elasticsearch, please have a look at [their "
 "documentation](https://www.elastic.co/guide/en/elasticsearch/reference/"
@@ -11150,13 +11492,13 @@ msgstr ""
 "Anweisungen."
 
 #. type: Title ###
-#: src/en/get-started/update.md:179 src/en/get-started/update.md:234
+#: src/en/get-started/update.md:178 src/en/get-started/update.md:233
 #, no-wrap
 msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr "Elasticsearch-Index erneuern <Badge type=\"tip\" text=\"optional\" />"
 
 #. type: Plain text
-#: src/en/get-started/update.md:182 src/en/get-started/update.md:237
+#: src/en/get-started/update.md:181 src/en/get-started/update.md:236
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch index."
 msgstr ""
@@ -11164,26 +11506,26 @@ msgstr ""
 "Elasticsearch-Index neu zu erstellen."
 
 #. type: Plain text
-#: src/en/get-started/update.md:184
+#: src/en/get-started/update.md:183
 #: src/en/tutorials/connect-config-elasticsearch.md:62
 msgid "Without specifying CPU cores to use:"
 msgstr "Ohne Vorgabe der zu verwendenden CPU-Kerne:"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:185
+#: src/en/get-started/update.md:184
 #: src/en/tutorials/connect-config-elasticsearch.md:63
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild\n"
 msgstr "zammad run rake zammad:searchindex:rebuild\n"
 
 #. type: Plain text
-#: src/en/get-started/update.md:190
+#: src/en/get-started/update.md:189
 #: src/en/tutorials/connect-config-elasticsearch.md:68
 msgid "With specifying CPU cores to use (example 8):"
 msgstr "Mit Vorgabe der zu verwendenden CPU-Kerne (Beispiel 8):"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:191
+#: src/en/get-started/update.md:190
 #: src/en/tutorials/connect-config-elasticsearch.md:69
 #: src/en/tutorials/connect-config-elasticsearch.md:171
 #, no-wrap
@@ -11191,13 +11533,13 @@ msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr "zammad run rake zammad:searchindex:rebuild[8]\n"
 
 #. type: Title ##
-#: src/en/get-started/update.md:201
+#: src/en/get-started/update.md:200
 #, no-wrap
 msgid "Update Docker Installation"
 msgstr "Docker-Installation aktualisieren"
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/update.md:203
+#: src/en/get-started/update.md:202
 #, no-wrap
 msgid ""
 "Docker Compose stack updates may require extra steps or introduce breaking\n"
@@ -11209,13 +11551,13 @@ msgstr ""
 "auf Hinweise für die Aktualisierungen.\n"
 
 #. type: Title ###
-#: src/en/get-started/update.md:209
+#: src/en/get-started/update.md:208
 #, no-wrap
 msgid "Updating Portainer Based Installations"
 msgstr "Portainer-basierte Installation aktualisieren"
 
 #. type: Plain text
-#: src/en/get-started/update.md:213
+#: src/en/get-started/update.md:212
 msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
 "and redeploy** and click on `Update`."
@@ -11224,7 +11566,7 @@ msgstr ""
 "**Re-pull image and redeploy** und klicken Sie auf `Update`."
 
 #. type: Plain text
-#: src/en/get-started/update.md:215
+#: src/en/get-started/update.md:214
 msgid ""
 "![Highlighted stack update in Portainer](/screenshots/installation/portainer-"
 "stack-update.png)"
@@ -11233,25 +11575,25 @@ msgstr ""
 "installation/portainer-stack-update.png)"
 
 #. type: Title ###
-#: src/en/get-started/update.md:216
+#: src/en/get-started/update.md:215
 #, no-wrap
 msgid "Updating Docker Compose Based Installations"
 msgstr "Docker Compose-basierten Installation aktualisieren"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:222
+#: src/en/get-started/update.md:221
 #, no-wrap
 msgid "git pull\n"
 msgstr "git pull\n"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:226
+#: src/en/get-started/update.md:225
 #, no-wrap
 msgid "docker compose pull\n"
 msgstr "docker compose pull\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/update.md:238
+#: src/en/get-started/update.md:237
 #, no-wrap
 msgid ""
 "\n"
@@ -12561,20 +12903,12 @@ msgid ""
 "Variables for Docker and package installation are partially different. Check the _Limited_ column and make sure to pick\n"
 "the right one. The both variables at the end of the table are valid for both installation types.\n"
 msgstr ""
+"Die Variablen für Docker- und Paketinstallationen sind teilweise unterschiedlich. Prüfen Sie die Spalte _Beschränkung_ und stellen Sie sicher, dass Sie die\n"
+"richtige Variable verwenden. Die beiden Variablen am Ende der Tabelle sind für beide Installationstypen gültig.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:83
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
-#| "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
-#| "| POSTGRESQL_HOST      | ::d::   | `zammad-postgresql` | Host name of your PostgreSQL server. Use your own if you already have one.                                                |\n"
-#| "| POSTGRESQL_PORT      | ::d::   | `5432`              | Adjust the Port of your PostgreSQL server.                                                                                |\n"
-#| "| POSTGRESQL_USER      | ::d::   | `zammad`            | The database user for Zammad.                                                                                             |\n"
-#| "| POSTGRESQL_PASS      | ::d::   | `zammad`            | The password of Zammad's database user.                                                                                   |\n"
-#| "| POSTGRESQL_DB        | ::d::   | `zammad_production` | Zammad's database to use.                                                                                                 |\n"
-#| "| POSTGRESQL_OPTIONS   | ::d::   | `?pool=50`          | Additional PostgreSQL params to be appended to the database URI.                                                          |\n"
-#| "| POSTGRESQL_DB_CREATE | ::d::   | `true`              | By default, Zammad creates the required database. On already existing database servers, the default might be troublesome. |\n"
+#, no-wrap
 msgid ""
 "| Variable             | Limited | Default Value       | Description                                                                                                               |\n"
 "| -------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
@@ -12593,13 +12927,18 @@ msgid ""
 msgstr ""
 "| Variable             | Beschränkung | Standardwert        | Beschreibung                                                                                                                                      |\n"
 "| -------------------- | ------------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |\n"
-"| POSTGRESQL_HOST      | ::d::        | `zammad-postgresql` | Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.                                                     |\n"
-"| POSTGRESQL_PORT      | ::d::        | `5432`              | Stellen Sie den Port Ihres PostgreSQL-Servers ein.                                                                                                |\n"
-"| POSTGRESQL_USER      | ::d::        | `zammad`            | Der Datenbank Benutzer für Zammad.                                                                                                                |\n"
-"| POSTGRESQL_PASS      | ::d::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
-"| POSTGRESQL_DB        | ::d::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
-"| POSTGRESQL_OPTIONS   | ::d::        | `?pool=50`          | Zusätzliche PostgreSQL-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
-"| POSTGRESQL_DB_CREATE | ::d::        | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
+"| POSTGRESQL_HOST      | ::p::        | `zammad-postgresql` | Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.                                                     |\n"
+"| POSTGRESQL_PORT      | ::p::        | `5432`              | Stellen Sie den Port Ihres PostgreSQL-Servers ein.                                                                                                |\n"
+"| POSTGRESQL_USER      | ::p::        | `zammad`            | Der Datenbank Benutzer für Zammad.                                                                                                                |\n"
+"| POSTGRESQL_PASS      | ::p::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
+"| POSTGRESQL_DB        | ::p::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
+"| POSTGRES_HOST        | ::d::        | `zammad-postgresql` | Hostname Ihres PostgreSQL-Servers. Verwenden Sie Ihren eigenen, wenn Sie bereits einen haben.                                                     |\n"
+"| POSTGRES_PORT        | ::d::        | `5432`              | Stellen Sie den Port Ihres PostgreSQL-Servers ein.                                                                                                |\n"
+"| POSTGRES_USER        | ::d::        | `zammad`            | Der Datenbank-Benutzer für Zammad.                                                                                                                |\n"
+"| POSTGRES_PASS        | ::d::        | `zammad`            | Das Passwort des Datenbank-Benutzers von Zammad.                                                                                                  |\n"
+"| POSTGRES_DB          | ::d::        | `zammad_production` | Zammads zu verwendende Datenbank.                                                                                                                 |\n"
+"| POSTGRESQL_OPTIONS   |              | `?pool=50`          | Zusätzliche PostgreSQL-Parameter, die an den Datenbank-URI angehängt werden.                                                                      |\n"
+"| POSTGRESQL_DB_CREATE |              | `true`              | Standardmäßig erstellt Zammad die erforderliche Datenbank. Auf bereits existierenden Datenbankservern kann die Voreinstellung problematisch sein. |\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:98
@@ -19790,7 +20129,7 @@ msgstr ""
 #: src/en/reference/rails-commands.md:849
 #, no-wrap
 msgid "Show and Retry Failed Data Privacy Jobs"
-msgstr ""
+msgstr "Fehlgeschlagene Datenschutzaufgaben anzeigen und erneut ausführen"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:853
@@ -19798,13 +20137,14 @@ msgid ""
 "In rare cases, Zammad's data privacy jobs might fail. To show them, you can "
 "use the following rake command:"
 msgstr ""
+"In seltenen Fällen können Zammads Datenschutzaufgaben fehlschlagen. Um diese "
+"anzuzeigen, können Sie den folgenden Rake-Befehl verwenden:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/rails-commands.md:854
-#, fuzzy, no-wrap
-#| msgid "rake zammad:db:truncate\n"
+#, no-wrap
 msgid "rake zammad:data_privacy:failed:show\n"
-msgstr "rake zammad:db:truncate\n"
+msgstr "rake zammad:data_privacy:failed:show\n"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:862
@@ -19814,13 +20154,17 @@ msgid ""
 "job will fail again. So make sure to check the logs for the root cause of "
 "the failure and fix it before retrying the job."
 msgstr ""
+"Um fehlgeschlagene Datenschutzaufgaben zu wiederholen, können Sie den "
+"folgenden Befehl verwenden. Allerdings wird die Aufgabe erneut fehlschlagen, "
+"wenn die Ursache des Fehlers nicht behoben wird. Prüfen Sie daher die "
+"Protokolle auf die Ursache des Fehlers und beheben Sie diese, bevor Sie die "
+"Aufgabe erneut ausführen."
 
 #. type: Fenced code block (sh)
 #: src/en/reference/rails-commands.md:863
-#, fuzzy, no-wrap
-#| msgid "rake zammad:email_parser:failed_email:export_all`\n"
+#, no-wrap
 msgid "rake zammad:data_privacy:failed:retry\n"
-msgstr "rake zammad:email_parser:failed_email:export_all`\n"
+msgstr "rake zammad:data_privacy:failed:retry\n"
 
 #. type: Title ###
 #: src/en/reference/rails-commands.md:867
@@ -26148,94 +26492,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -26458,6 +26714,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -26998,6 +27342,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -29411,7 +29767,37 @@ msgstr "Paketquellen-Schlüssel hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:19
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu/Debian\n"
+#| "\n"
+#| "Install required tools:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt-get install apt-transport-https\n"
+#| "```\n"
+#| "\n"
+#| "Add repo key:\n"
+#| "\n"
+#| "``` sh\n"
+#| "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+#| "gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
+#| "&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "``` sh\n"
+#| "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "``` sh\n"
+#| "rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
@@ -29419,15 +29805,15 @@ msgid ""
 "Install required tools:\n"
 "\n"
 "```sh\n"
-"sudo apt-get install apt-transport-https\n"
+"sudo apt install curl apt-transport-https\n"
 "```\n"
 "\n"
 "Add repo key:\n"
 "\n"
 "``` sh\n"
 "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-"gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
-"&& sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
+"  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
+"  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
@@ -29559,13 +29945,43 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:94
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu/Debian\n"
+#| "\n"
+#| "``` sh\n"
+#| "sudo apt-get update && sudo apt-get install elasticsearch\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo zypper modifyrepo --enable elasticsearch && \\\n"
+#| "  sudo zypper install elasticsearch; \\\n"
+#| "  sudo zypper modifyrepo --disable elasticsearch\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "CentOS and RHEL 7 or earlier:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo yum install --enablerepo=elasticsearch elasticsearch\n"
+#| "```\n"
+#| "\n"
+#| "RHEL 8 and later:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
 "\n"
 "``` sh\n"
-"sudo apt-get update && sudo apt-get install elasticsearch\n"
+"sudo apt update && sudo apt install elasticsearch\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
@@ -30031,7 +30447,22 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/migrate-host.md:138
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "You're unsure if above is really required and a mere reinstall would be\n"
+#| "enough? If you run a dedicated install command on for Zammad and receive\n"
+#| "the following, you absolutely have to run above to fix your\n"
+#| "installation.\n"
+#| "\n"
+#| "``` sh\n"
+#| "root@zammad:/# apt-get update && apt install zammad\n"
+#| "  Reading package lists... Done\n"
+#| "  Building dependency tree\n"
+#| "  Reading state information... Done\n"
+#| "  zammad is already the newest version (x.x.x-xxxxxx.xxxxxx.xxx).\n"
+#| "  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "You're unsure if above is really required and a mere reinstall would be\n"
 "enough? If you run a dedicated install command on for Zammad and receive\n"
@@ -30039,7 +30470,7 @@ msgid ""
 "installation.\n"
 "\n"
 "``` sh\n"
-"root@zammad:/# apt-get update && apt install zammad\n"
+"root@zammad:/# apt update && apt install zammad\n"
 "  Reading package lists... Done\n"
 "  Building dependency tree\n"
 "  Reading state information... Done\n"
@@ -34184,6 +34615,123 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#~ msgid ""
+#~ "If you installed Zammad via [package manager](installation/package) and "
+#~ "need to upgrade your host operating system, make sure to read the steps "
+#~ "below. Some additional steps are required compared to just updating "
+#~ "Zammad itself."
+#~ msgstr ""
+#~ "Wenn Sie Zammad über den [Paketmanager](installation/package) installiert "
+#~ "haben und Ihr Host-Betriebssystem aktualisieren müssen, lesen Sie bitte "
+#~ "die folgenden Schritte. Es sind einige zusätzliche Schritte im Vergleich "
+#~ "zur Aktualisierung von Zammad selbst erforderlich."
+
+#~ msgid ""
+#~ "The general steps, no matter which operating system you are using, are:"
+#~ msgstr ""
+#~ "Die allgemeinen Schritte, unabhängig davon, welches Betriebssystem Sie "
+#~ "verwenden, sind:"
+
+#~ msgid "Disable updates for Zammad"
+#~ msgstr "Aktualisierungen für Zammad deaktivieren"
+
+#~ msgid "Perform host upgrade"
+#~ msgstr "Host-Upgrade durchführen"
+
+#~ msgid "Reboot host"
+#~ msgstr "Host neu starten"
+
+#~ msgid "Adjust package repository"
+#~ msgstr "Paketquelle anpassen"
+
+#, no-wrap
+#~ msgid "Detailed Steps"
+#~ msgstr "Detaillierte Schritte"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "=== Ubuntu\n"
+#~ "Install repository key:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \\\n"
+#~ "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 22.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 24.04\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "=== Ubuntu\n"
+#~ "Paketquellen-Schlüssel hinzufügen:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \\\n"
+#~ "gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg > /dev/null \\\n"
+#~ "&& sudo chmod 644 /etc/apt/keyrings/pkgr-zammad.gpg\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 22.04\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "echo \"deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main\"| \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "Ubuntu 24.04\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Starting with Ubuntu 24.04, we provide the command to add the repository in the\n"
+#~ "[deb822 format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
+#~ msgstr ""
+#~ "Beginnend mit Ubuntu 24.04 enthält diese Dokumentation den Befehl zum Hinzufügen der Paketquelle im\n"
+#~ "[deb822-Format](https://repolib.readthedocs.io/en/latest/deb822-format.html).\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "```sh\n"
+#~ "printf \"Types: deb\n"
+#~ "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
+#~ "Suites: 24.04\n"
+#~ "Components: main\n"
+#~ "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Debian\n"
+#~ msgstr ""
+#~ "\n"
+#~ "```sh\n"
+#~ "printf \"Types: deb\n"
+#~ "URIs: https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu\n"
+#~ "Suites: 24.04\n"
+#~ "Components: main\n"
+#~ "Signed-By: /etc/apt/keyrings/pkgr-zammad.gpg\" | \\\n"
+#~ "sudo tee /etc/apt/sources.list.d/zammad.sources > /dev/null\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== Debian\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Starting with Debian 13, the packages are hosted under a different URL and the signing key is saved to a different\n"
+#~ "directory.\n"
+#~ msgstr ""
+#~ "Ab Debian 13 werden die Pakete unter einer anderen URL gehostet und der Signing-Key wird in einem anderen\n"
+#~ "Verzeichnis gespeichert.\n"
 
 #~ msgid ""
 #~ "For package installation, the following Linux distributions are supported:"

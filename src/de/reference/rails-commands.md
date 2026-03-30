@@ -871,19 +871,20 @@ Wenn Sie stattdessen den Exportordner als Argument übergeben, werden alle
 enthaltenen E-Mails aus der Datenbank entfernt, ihre Dateien gelöscht und
 schließlich der leere Ordner entfernt.
 
-### Show and Retry Failed Data Privacy Jobs
+### Fehlgeschlagene Datenschutzaufgaben anzeigen und erneut ausführen
 
-In rare cases, Zammad's data privacy jobs might fail. To show them, you can
-use the following rake command:
+In seltenen Fällen können Zammads Datenschutzaufgaben fehlschlagen. Um diese
+anzuzeigen, können Sie den folgenden Rake-Befehl verwenden:
 
 ```sh
 rake zammad:data_privacy:failed:show
 ```
 
-To retry failed data privacy jobs, you can use the following
-command. However, without changing the underlying issue that caused the
-failure, the job will fail again. So make sure to check the logs for the
-root cause of the failure and fix it before retrying the job.
+Um fehlgeschlagene Datenschutzaufgaben zu wiederholen, können Sie den
+folgenden Befehl verwenden. Allerdings wird die Aufgabe erneut fehlschlagen,
+wenn die Ursache des Fehlers nicht behoben wird. Prüfen Sie daher die
+Protokolle auf die Ursache des Fehlers und beheben Sie diese, bevor Sie die
+Aufgabe erneut ausführen.
 
 ```sh
 rake zammad:data_privacy:failed:retry
