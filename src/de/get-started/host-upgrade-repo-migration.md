@@ -1,22 +1,24 @@
 ---
 order: 4
-title: 'Host Upgrade and Repository Migration'
+title: 'Host-Upgrade und Paketquellenmigration'
 ---
 
-# Host Upgrade and Repository Migration
+# Host-Upgrade und Paketquellenmigration
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-This page covers the required steps for a host upgrade and to switch to
-Zammad's new package repositories. If you just want to update Zammad itself,
-please refer to [Updating Zammad](update). To just switch to the new
-repositories without a host upgrade, skip the host upgrade steps.
+Diese Seite beinhaltet die erforderlichen Schritte für ein Host-Upgrade und
+den Wechsel zu Zammads neuen Paketquellen. Wenn Sie nur Zammad selbst
+aktualisieren möchten, schauen Sie sich Sie bitte die [Aktualisierung von
+Zammad](update) an. Um nur zu den neuen Paketquellen zu wechseln ohne ein
+Host-Upgrade durchzuführen, überspringen Sie die Host-Upgrade-Schritte.
 
-Starting with Zammad 7, packages are being built using a new toolchain and
-hosted under another URL. The packages are being built via old toolchain as
-well (except for Debian 13) for some time, but we encourage you to switch to
-the new repositories in a timely manner. This means you need to add a new
-repository key and change your repository configuration.
+Ab Zammad 7 werden Pakete mit einer neuen Toolchain erstellt und unter einer
+anderen URL gehostet. Die Pakete werden für eine Zeit lang zwar weiterhin
+mit der alten Toolchain erstellt (mit Ausnahme von Debian 13), aber wir
+empfehlen Ihnen, die neuen Paketquellen zeitnah zu verwenden. Dies bedeutet,
+dass Sie einen neuen Paketquellen-Schlüssel hinzufügen und Ihre
+Paketquellen-Konfiguration ändern müssen.
 
 :::warning
 Stellen Sie immer sicher, dass Sie eine [Sicherung](/de/tutorials/backup-restore) Ihrer Daten haben, bevor Sie ein Upgrade durchführen.
@@ -32,7 +34,7 @@ Die folgenden Betriebssysteme werden unterstützt:
 sudo systemctl stop zammad
 ```
 
-## Host Upgrade Steps
+## Host-Upgrade-Schritte
 
 ### Aktualisierungen für Zammad deaktivieren
 
@@ -121,10 +123,10 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-### Remove Old Repository Key
+### Alten Paketquellen-Schlüssel entfernen
 
-Remove the old repository key from your system. Depending on your operating
-system and version, the location or method differs.
+Entfernen Sie den alten Paketquellen-Schlüssel von Ihrem System. Je nach
+Betriebssystem und Version ist der Ort bzw. die Methode unterschiedlich.
 
 :::tabs key:distros
 
@@ -142,13 +144,13 @@ sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 
 === OpenSUSE/SLES
 
-List the keys of your system:
+Zeigen Sie die Schlüssel auf Ihrem System an:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:
 
 ```sh
 sudo rpm -e <key-name>
@@ -156,13 +158,13 @@ sudo rpm -e <key-name>
 
 === CentOS/RHEL
 
-List the keys of your system:
+Zeigen Sie die Schlüssel auf Ihrem System an:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:
 
 ```sh
 sudo rpm -e <key-name>
@@ -193,19 +195,19 @@ auf die neueste Version, die für Ihr Betriebssystem verfügbar ist.
 
 === Ubuntu
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade zammad
@@ -213,19 +215,19 @@ sudo apt upgrade zammad
 
 === Debian
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren
 
 ```sh
 sudo apt upgrade zammad
@@ -233,19 +235,19 @@ sudo apt upgrade zammad
 
 === OpenSUSE/SLES
 
-Update package index:
+Aktualisierung des Paketindexes:
 
 ```sh
 sudo zypper refresh
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren
 
 ```sh
 sudo zypper update zammad

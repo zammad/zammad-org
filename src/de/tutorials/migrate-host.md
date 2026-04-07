@@ -148,10 +148,10 @@ sudo zypper install zammad
 :::
 
 ::: tip
-You're unsure if above is really required and a mere reinstall would be
-enough? If you run a dedicated install command on for Zammad and receive
-the following, you absolutely have to run above to fix your
-installation.
+Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich erforderlich sind oder eine einfache Neuinstallation
+ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und
+die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl ausführen, um Ihre
+Installation zu reparieren.
 
 ``` sh
 root@zammad:/# apt update && apt install zammad

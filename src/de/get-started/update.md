@@ -19,8 +19,8 @@ aktuelle stabile Version ist) folgendermaßen aussehen würde: `2.4` → `3.0` �
 `4.0` → `5.0` → `letzte stabile Version (5.1)`
 
 ::: info
-This page describes how to update Zammad only. In case you want to update your host operating system too, have a look
-at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.
+Diese Seite beinhaltet ausschließlich die Aktualisierung von Zammad. Wenn Sie Ihr Host-Betriebssystem ebenfalls aktualisieren möchten,
+sehen Sie sich die Seite [Host-Upgrade und Paketquellen-Migration](host-upgrade-repo-migration) an.
 :::
 
 ## Paket-Installation aktualisieren
@@ -58,62 +58,64 @@ in den folgenden Befehlen zu sehen.
 :::tabs key:distros
 
 === Ubuntu
-Update package lists:
+
+Paketlisten aktualisieren:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
 === Debian
-Update package lists:
+
+Paketlisten aktualisieren:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo apt upgrade
@@ -121,31 +123,31 @@ sudo apt upgrade
 
 === OpenSUSE/SLES
 
-Update package lists:
+Paketlisten aktualisieren:
 
 ```sh
 sudo zypper refresh
 ```
 
-Disable updates for Zammad:
+Aktualisierung für Zammad deaktivieren:
 
 ```sh
 sudo zypper addlock zammad
 ```
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo zypper update
 ```
 
-Re-enable updates for Zammad:
+Aktivieren der Aktualisierung für Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo zypper update
@@ -153,13 +155,13 @@ sudo zypper update
 
 === CentOS/RHEL
 
-Update all packages except Zammad:
+Alle Pakete außer Zammad aktualisieren:
 
 ```sh
 sudo dnf upgrade --exclude zammad
 ```
 
-Update Zammad:
+Zammad aktualisieren:
 
 ```sh
 sudo dnf upgrade

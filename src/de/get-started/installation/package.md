@@ -43,9 +43,9 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-OpenSUSE doesn't require any additional steps here!
+OpenSUSE benötigt hier keine zusätzlichen Schritte!
 
-SLES 15 requires additional repositories to be activated. To do so, run the following commands.
+Für SLES 15 müssen zusätzliche Paketquellen aktiviert werden. Verwenden Sie dazu den folgenden Befehl:
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -178,21 +178,21 @@ adjust it over there -->
 ::::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Paketquellen-Schlüssel installieren:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
   -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Ubuntu 22.04):
+Paketquelle hinzufügen (Ubuntu 22.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Ubuntu 24.04):
+Paketquelle hinzufügen (Ubuntu 24.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
@@ -201,28 +201,28 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubunt
 
 === Debian
 
-Install repository key:
+Paketquellen-Schlüssel installieren:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
   -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Debian 11):
+Paketquelle hinzufügen (Debian 11):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 12):
+Paketquelle hinzufügen (Debian 12):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 13):
+Paketquelle hinzufügen (Debian 13):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
@@ -231,7 +231,7 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debia
 
 === OpenSUSE/SLES
 
-Add repository:
+Paketquelle hinzufügen:
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
@@ -239,13 +239,13 @@ sudo curl -o /etc/zypp/repos.d/zammad.repo \
 ```
 
 ===CentOS/RHEL
-Add repository key:
+Paketquellen-Schlüssel installieren:
 
 ```sh
 sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-Add repository:
+Paketquelle hinzufügen:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
