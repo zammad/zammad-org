@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-03 05:02+0000\n"
+"POT-Creation-Date: 2026-04-07 15:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -8125,8 +8113,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:68
 #: src/en/reference/rest-api/checklist.md:115
 #: src/en/reference/rest-api/checklist.md:136
-#: src/en/reference/rest-api/checklist.md:184
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:196
+#: src/en/reference/rest-api/checklist.md:218
 #: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
@@ -9090,7 +9078,7 @@ msgstr ""
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
 #: src/en/reference/rest-api/checklist.md:62
 #: src/en/reference/rest-api/checklist.md:130
-#: src/en/reference/rest-api/checklist.md:199
+#: src/en/reference/rest-api/checklist.md:211
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
@@ -18578,7 +18566,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:36
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
-#: src/en/reference/rest-api/checklist.md:178
+#: src/en/reference/rest-api/checklist.md:190
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -18727,6 +18715,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:12
+#: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:17
 #: src/en/reference/rest-api/mentions.md:14
 #: src/en/reference/rest-api/notification.md:15
@@ -18772,7 +18761,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:24
 #: src/en/reference/rest-api/checklist.md:25
 #: src/en/reference/rest-api/checklist.md:97
-#: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/checklist.md:177
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -18852,7 +18841,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:78
 #: src/en/reference/rest-api/checklist.md:83
 #: src/en/reference/rest-api/checklist.md:151
-#: src/en/reference/rest-api/checklist.md:221
+#: src/en/reference/rest-api/checklist.md:233
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
@@ -19131,18 +19120,43 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
+#: src/en/reference/rest-api/checklist.md:193
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:236
+#, markdown-text
+msgid "Required permission: `admin.checklists`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:170
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/checklist_templates`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/checklist.md:171
+#, no-wrap
+msgid ""
+"\n"
+"<<< "
+"@/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:180
 #, markdown-text
 msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:171
+#: src/en/reference/rest-api/checklist.md:183
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:172
+#: src/en/reference/rest-api/checklist.md:184
 #, no-wrap
 msgid ""
 "\n"
@@ -19152,21 +19166,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:181
-#: src/en/reference/rest-api/checklist.md:202
-#: src/en/reference/rest-api/checklist.md:224
-#, markdown-text
-msgid "Required permission: `admin.checklists`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:183
+#: src/en/reference/rest-api/checklist.md:195
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:184
+#: src/en/reference/rest-api/checklist.md:196
 #, no-wrap
 msgid ""
 "\n"
@@ -19181,13 +19187,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:205
+#: src/en/reference/rest-api/checklist.md:217
 #, markdown-text
 msgid "`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:218
 #, no-wrap
 msgid ""
 "\n"
@@ -19204,13 +19210,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:227
+#: src/en/reference/rest-api/checklist.md:239
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:228
+#: src/en/reference/rest-api/checklist.md:240
 #, no-wrap
 msgid ""
 "\n"
@@ -23063,83 +23069,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23306,6 +23235,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23749,6 +23755,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

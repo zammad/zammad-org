@@ -162,6 +162,18 @@ Required permission: `ticket.agent`
 
 ## Checklist Templates
 
+### List
+
+Required permission: `admin.checklists`
+
+`GET`-Request sent: `/api/v1/checklist_templates`
+
+::: details
+
+<<< @/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json
+
+:::
+
 ### Show
 
 Required permission: `admin.checklists` or `ticket.agent`

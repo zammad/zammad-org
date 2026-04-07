@@ -162,6 +162,18 @@ Erforderliche Berechtigung: `ticket.agent`
 
 ## Checklisten-Vorlagen
 
+### Auflisten
+
+Erforderliche Berechtigung: `admin.checklists`
+
+`GET`-Request sent: `/api/v1/checklist_templates`
+
+::: details
+
+<<< @/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json
+
+:::
+
 ### Anzeigen
 
 Erforderliche Berechtigung: `admin.checklists` oder `ticket.agent`

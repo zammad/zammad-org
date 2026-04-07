@@ -1,3 +1,5 @@
+// HTTP-Code 200 OK
+
 {
   "name": "My changed checklist template name",
   "active": true,
