@@ -55,7 +55,7 @@ user's ID or want to create the user in question
 Add the `mentions` attribute to your ticket payload and provide an
 array of user ids to directly subscribe them during ticket creation.
 
-_E.g.:_ `"mentions": [1, 5, 7, 8],`
+E.g.: `"mentions": [1, 5, 7, 8],`
 
 :::
 

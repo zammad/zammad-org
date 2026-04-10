@@ -42,20 +42,20 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 `POST`-Anfrage gesendet: `/api/v1/tickets`
 
 ::: tip
-**Im Namen anderer Benutzer**
+**On behalf of users**
 
-Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie das
-Attribut `customer_id`. Das Attribut `ticket.agent` ist dabei zwingend erforderlich. Verwenden Sie
-`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu speichern, wenn Sie die
-ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen
-(`customer_id: "guess:jane@doe.com"`).
+If you want to create tickets on behalf of other users, use the
+`customer_id` attribute. `ticket.agent` is mandatory for this. Use
+`guess:{email address}` to save an API call if you don't know the
+user's ID or want to create the user in question
+(`"customer_id": "guess:jane@doe.com"`).
 
-**Erwähnungen sofort hinzufügen**
+**Add mention subscription right away**:
 
-Fügen Sie das Attribut `mentions` zu Ihrer Ticket-Nutzlast hinzu und übermitteln Sie ein
-Array von Benutzer-IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
+Add the `mentions` attribute to your ticket payload and provide an
+array of user ids to directly subscribe them during ticket creation.
 
-_Z.B.:_ `"mentions": [1, 5, 7, 8],`
+E.g.: `"mentions": [1, 5, 7, 8],`
 
 :::
 

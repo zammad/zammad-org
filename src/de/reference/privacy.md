@@ -104,10 +104,10 @@ von Organisationen werden 30 Tage lang zwischengespeichert.
 Es werden keine Benutzerinformationen auf geo.zammad.com gespeichert oder
 zwischengespeichert.
 
-Als Teil seiner Service-Level-Agreement (SLA)-Funktionalität benötigt Zammad
-detaillierte, lokalisierte Kalenderinformationen (z.B. um die Zeitzone
-festzulegen und nationale Feiertage und Zeitzonen zu berücksichtigen). Der
-Geo-Kalendar-Dienst wird verwendet, um diese Informationen abzurufen.
+As part of its service-level agreement (SLA) functionality, Zammad requires
+detailed, localized calendar information (e.g. to set the time zone and
+accommodate national holidays and daylight savings time).  The GeoCalendar
+service is used to retrieve this information.
 
 ### Geo-IP
 

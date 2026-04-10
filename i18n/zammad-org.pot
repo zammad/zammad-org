@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-07 15:24+0200\n"
+"POT-Creation-Date: 2026-04-10 08:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16014,7 +16014,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "As part of its service-level agreement (SLA) functionality, Zammad requires "
-"detailed, localized calendar information (_e.g.,_ to set the time zone and "
+"detailed, localized calendar information (e.g. to set the time zone and "
 "accommodate national holidays and daylight savings time).  The GeoCalendar "
 "service is used to retrieve this information."
 msgstr ""
@@ -23131,7 +23131,7 @@ msgid ""
 "Add the `mentions` attribute to your ticket payload and provide an\n"
 "array of user ids to directly subscribe them during ticket creation.\n"
 "\n"
-"_E.g.:_ `\"mentions\": [1, 5, 7, 8],`\n"
+"E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 msgstr ""
 
@@ -29315,7 +29315,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:218
 #, markdown-text
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
@@ -29325,7 +29324,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
 #, markdown-text
-msgid "`ssl_certificate` (your ssl certificate)"
+msgid "`ssl_certificate` (your SSL certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -29370,7 +29369,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
-"may not fit your needs. Mozilla has a great [ssl-config "
+"may not fit your needs. Mozilla has a great [SSL-config "
 "generator](https://ssl-config.mozilla.org/){target=_blank} that should help "
 "you to meet your requirements!"
 msgstr ""
@@ -29503,16 +29502,24 @@ msgid ""
 "your Zammad instance."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:218
 #, markdown-text
-msgid "`SSLCertificateFile` (your ssl certificate)"
+msgid ""
+"Now you'll need to adjust the path and file names for your SSL certificates "
+"you obtained. Adjust the following directives to match your setup:"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:222
 #, markdown-text
-msgid "`SSLCertificateKeyFile`(the certificates private key)"
+msgid "`SSLCertificateFile` (your SSL certificate)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:222
+#, markdown-text
+msgid "`SSLCertificateKeyFile`(the certificate's private key)"
 msgstr ""
 
 #. type: Bullet: '- '

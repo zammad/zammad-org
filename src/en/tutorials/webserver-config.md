@@ -128,7 +128,7 @@ domain of your Zammad instance.
 Now you'll need to adjust the path and file names for your ssl certificates
 you obtained. Adjust the following directives to match your setup:
 
-- `ssl_certificate` (your ssl certificate)
+- `ssl_certificate` (your SSL certificate)
 - `ssl_certificate_key` (the certificates private key)
 - `ssl_trusted_certificate` (the public CA certificate)
 
@@ -145,7 +145,7 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 Our default configuration aims for a broad support of end user devices. This
 may not fit your needs. Mozilla has a great
-[ssl-config generator](https://ssl-config.mozilla.org/){target=_blank} that
+[SSL-config generator](https://ssl-config.mozilla.org/){target=_blank} that
 should help you to meet your requirements!
 
 #### Step 4 - Save & Reload
@@ -213,11 +213,11 @@ Adjust the just copied file with a text editor of your choice (e.g. vi or nano).
 Locate any `ServerName` directive and adjust `example.com` to the domain
 of your Zammad instance.
 
-Now you'll need to adjust the path and file names for your ssl certificates
+Now you'll need to adjust the path and file names for your SSL certificates
 you obtained. Adjust the following directives to match your setup:
 
-- `SSLCertificateFile` (your ssl certificate)
-- `SSLCertificateKeyFile`(the certificates private key)
+- `SSLCertificateFile` (your SSL certificate)
+- `SSLCertificateKeyFile`(the certificate's private key)
 - `SSLCertificateChainFile` (the public CA certificate)
 
 If you don't have a `dhparam.pem` file yet, you can easily adapt the example
@@ -233,7 +233,7 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 Our default configuration aims for a broad support of end user devices. This
 may not fit your needs. Mozilla has a great
-[ssl-config generator](https://ssl-config.mozilla.org/){target=_blank} that
+[SSL-config generator](https://ssl-config.mozilla.org/){target=_blank} that
 should help you to meet your requirements!
 
 #### Step 5 - Enable the Site

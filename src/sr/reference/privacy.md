@@ -99,7 +99,7 @@ days; organization logos are cached for 30 days.
 No user information is stored or cached on geo.zammad.com.
 
 As part of its service-level agreement (SLA) functionality, Zammad requires
-detailed, localized calendar information (_e.g.,_ to set the time zone and
+detailed, localized calendar information (e.g. to set the time zone and
 accommodate national holidays and daylight savings time).  The GeoCalendar
 service is used to retrieve this information.
 
