@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-13 11:32+0200\n"
+"POT-Creation-Date: 2026-04-13 14:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8653,7 +8653,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/get-started/installation/package.md:314
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:152
+#: src/en/tutorials/install-elasticsearch.md:150
 #, markdown-text, no-wrap
 msgid "Next Steps"
 msgstr ""
@@ -25854,13 +25854,13 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 msgstr ""
@@ -25929,20 +25929,19 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper modifyrepo --enable elasticsearch && \\\n"
-"  sudo zypper install elasticsearch; \\\n"
-"  sudo zypper modifyrepo --disable elasticsearch\n"
+"sudo zypper modifyrepo --enable elasticsearch && sudo zypper install "
+"elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"CentOS and RHEL 7 or earlier:\n"
+"RHEL 7 or earlier:\n"
 "\n"
 "```sh\n"
 "sudo yum install --enablerepo=elasticsearch elasticsearch\n"
 "```\n"
 "\n"
-"RHEL 8 and later:\n"
+"CentOS and RHEL 8 and later:\n"
 "\n"
 "```sh\n"
 "sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
@@ -25951,7 +25950,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/install-elasticsearch.md:126
+#: src/en/tutorials/install-elasticsearch.md:124
 #, no-wrap
 msgid ""
 "Make sure to check the output and to copy the password of the built-in "
@@ -25961,13 +25960,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:131
+#: src/en/tutorials/install-elasticsearch.md:129
 #, markdown-text, no-wrap
 msgid "Configuration"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:135
+#: src/en/tutorials/install-elasticsearch.md:133
 #, markdown-text
 msgid ""
 "Optionally, check and configure Elasticsearch’s configuration file which you "
@@ -25975,7 +25974,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:138
+#: src/en/tutorials/install-elasticsearch.md:136
 #, markdown-text
 msgid ""
 "We recommend to adjust the maximum context size which should get indexed by "
@@ -25983,13 +25982,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:139
+#: src/en/tutorials/install-elasticsearch.md:137
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:145
+#: src/en/tutorials/install-elasticsearch.md:143
 #, markdown-text
 msgid ""
 "Additional configuration is out of scope of this documentation. In case your "
@@ -25999,19 +25998,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:146
+#: src/en/tutorials/install-elasticsearch.md:144
 #, markdown-text, no-wrap
 msgid "Start and Enable Elasticsearch"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/install-elasticsearch.md:148
+#: src/en/tutorials/install-elasticsearch.md:146
 #, no-wrap
 msgid "sudo systemctl enable elasticsearch.service --now\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:156
+#: src/en/tutorials/install-elasticsearch.md:154
 #, markdown-text
 msgid ""
 "Go on with the [installation of "

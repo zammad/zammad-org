@@ -39,13 +39,13 @@ curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
 === OpenSUSE/SLES
 
 ``` sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 === CentOS/RHEL
 
 ``` sh
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 :::
@@ -104,20 +104,18 @@ sudo apt update && sudo apt install elasticsearch
 === OpenSUSE/SLES
 
 ```sh
-sudo zypper modifyrepo --enable elasticsearch && \
-  sudo zypper install elasticsearch; \
-  sudo zypper modifyrepo --disable elasticsearch
+sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsearch
 ```
 
 === CentOS/RHEL
 
-CentOS and RHEL 7 or earlier:
+RHEL 7 or earlier:
 
 ```sh
 sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
-RHEL 8 and later:
+CentOS and RHEL 8 and later:
 
 ```sh
 sudo dnf install --enablerepo=elasticsearch elasticsearch
