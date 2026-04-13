@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 08:28+0200\n"
+"POT-Creation-Date: 2026-04-13 11:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7936,14 +7936,14 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:217
+#: src/en/get-started/update.md:223
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:229
+#: src/en/get-started/update.md:235
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr ""
@@ -9322,13 +9322,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:178 src/en/get-started/update.md:233
+#: src/en/get-started/update.md:178 src/en/get-started/update.md:239
 #, markdown-text, no-wrap
 msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:181 src/en/get-started/update.md:236
+#: src/en/get-started/update.md:181 src/en/get-started/update.md:242
 #, markdown-text
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch "
@@ -9380,14 +9380,25 @@ msgid ""
 "for update instructions first.\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Fenced div block (tip)
 #: src/en/get-started/update.md:208
+#, no-wrap
+msgid ""
+"If you want to update Zammad to a specific version, use the `VERSION` "
+"environment variable\n"
+"([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) "
+"with further explanation) and specify\n"
+"the version number.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:214
 #, markdown-text, no-wrap
 msgid "Updating Portainer Based Installations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:212
+#: src/en/get-started/update.md:218
 #, markdown-text
 msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
@@ -9395,7 +9406,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:214
+#: src/en/get-started/update.md:220
 #, markdown-text
 msgid ""
 "![Highlighted stack update in "
@@ -9403,25 +9414,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:215
+#: src/en/get-started/update.md:221
 #, markdown-text, no-wrap
 msgid "Updating Docker Compose Based Installations"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:221
+#: src/en/get-started/update.md:227
 #, no-wrap
 msgid "git pull\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:225
+#: src/en/get-started/update.md:231
 #, no-wrap
 msgid "docker compose pull\n"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/update.md:237
+#: src/en/get-started/update.md:243
 #, no-wrap
 msgid ""
 "\n"

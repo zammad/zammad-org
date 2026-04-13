@@ -207,6 +207,12 @@ changes. Always check the [Docker Compose release notes](https://github.com/zamm
 for update instructions first.
 :::
 
+::: tip
+If you want to update Zammad to a specific version, use the `VERSION` environment variable
+([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) with further explanation) and specify
+the version number.
+:::
+
 ### Updating Portainer Based Installations
 
 У вашем Zammad stack-у, кликните на Pull and redeploy`, укључите **Re-pull
