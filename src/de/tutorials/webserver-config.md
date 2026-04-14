@@ -134,7 +134,7 @@ Domain Ihrer Zammad-Instanz an.
 Nun müssen Sie die Pfad- und Dateinamen für die SSL-Zertifikate anpassen,
 die Sie erhalten haben. Passen Sie die folgenden Parameter an Ihr Setup an:
 
-- `ssl_certificate` (your SSL certificate)
+- `ssl_certificate` (Ihr SSL-Zertifikat)
 - `ssl_certificate_key` (der private Schlüssel des Zertifikats)
 - `ssl_trusted_certificate` (das öffentliche CA-Zertifikat)
 
@@ -150,10 +150,11 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Schritt 3 - Anpassen der HTTPS-Konfiguration
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [SSL-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
+Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
+Anforderungen. Mozilla hat einen großartigen
+[SSL-Konfigurations-Generator](https://ssl-config.mozilla.org/){target=_blank},
+der Ihnen helfen sollte, Ihre Anforderungen zu erfüllen!
 
 #### Schritt 4 - Speichern und neu laden
 
@@ -224,11 +225,12 @@ Passen Sie die soeben kopierte Datei mit einem Texteditor Ihrer Wahl
 Suchen Sie einen `ServerName`-Parameter und passen Sie `example.com` an die
 Domain Ihrer Zammad-Instanz an.
 
-Now you'll need to adjust the path and file names for your SSL certificates
-you obtained. Adjust the following directives to match your setup:
+Nun müssen Sie die Pfad- und Dateinamen für die SSL-Zertifikate anpassen,
+die Sie erhalten haben. Passen Sie die folgenden Parameter an Ihre Umgebung
+an:
 
-- `SSLCertificateFile` (your SSL certificate)
-- `SSLCertificateKeyFile`(the certificate's private key)
+- `SSLCertificateFile` (Ihr SSL-Zertifikat)
+- `SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)
 - `SSLCertificateChainFile` (das öffentliche CA-Zertifikat)
 
 Wenn Sie noch keine `dhparam.pem`-Datei haben, können Sie das folgende
@@ -243,10 +245,11 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Schritt 4 - Anpassen der HTTPS-Konfiguration
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [SSL-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+Unsere Standardkonfiguration zielt auf eine breite Unterstützung von
+Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren
+Anforderungen. Mozilla hat einen großartigen
+[SSL-Konfigurations-Generator](https://ssl-config.mozilla.org/){target=_blank},
+der Ihnen helfen sollte, Ihre Anforderungen zu erfüllen!
 
 #### Schritt 5 - Aktivieren der Website
 
@@ -257,7 +260,7 @@ nur die `sites-available`-Ordner betreffen.
 
 === Ubuntu, Debian, OpenSUSE
 
-Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/apache2/apache2.conf``)
+Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (`/etc/apache2/apache2.conf`)
 vorhanden ist:
 
 ```
@@ -272,7 +275,7 @@ a2ensite zammad
 
 === CentOS
 
-Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/httpd/conf/httpd.conf``)
+Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (`/etc/httpd/conf/httpd.conf`)
 vorhanden ist:
 
 ```

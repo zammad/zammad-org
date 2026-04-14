@@ -175,7 +175,7 @@ Beispiel: `"2025-02-24T16:17:27.210Z"`
 
 ### `created_by`
 
-Angaben zu dem Benutzer, der das Ticket erstellt hat. Weitere Informationen
+Details zum Benutzer, welcher das Ticket erstellt hat. Weitere Informationen
 finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details
@@ -192,7 +192,7 @@ Beispiel: `3`
 
 ### `customer`
 
-Angaben zum Kunden des Tickets. Weitere Informationen finden Sie im
+Details zum Kunden des Tickets. Weitere Informationen finden Sie im
 Abschnitt [Benutzer](#benutzer).
 
 ### `customer_id`
@@ -231,7 +231,7 @@ Beispiele: `null`, `11`
 ### `group`
 
 Details zur Gruppe des Tickets. Weitere Informationen finden Sie im
-Abschnitt [Gruppe](#gruppe).
+Abschnitt [Gruppe](#gruppe-1).
 
 ::: details
 
@@ -298,7 +298,7 @@ Beispiele: `1010138`, `202006231010138`
 ### `organization`
 
 Details der Organisation des Kunden des Tickets. Weitere Informationen
-finden Sie im Abschnitt [Organisation](#organisation).
+finden Sie im Abschnitt [Organisation](#organisation-2).
 
 ::: details
 
@@ -314,8 +314,8 @@ Beispiele: `null`, `2`
 
 ### `owner`
 
-Details zum Benutzer, der Besitzer des Tickets ist. Weitere Informationen
-finden Sie im Abschnitt [Benutzer](#benutzer).
+Details zum Benutzer, welcher Besitzer des Tickets ist. Weitere
+Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details
 
@@ -1067,7 +1067,7 @@ Beispiel: `"2025-02-22T12:47:54.807Z"`
 
 ### `updated_by`
 
-Angaben zu dem Benutzer, der die Organisation aktualisiert hat. Weitere
+Details zum Benutzer, welcher die Organisation aktualisiert hat. Weitere
 Informationen finden Sie im Abschnitt [Benutzer](#benutzer).
 
 ::: details

@@ -214,9 +214,9 @@ auf Hinweise für die Aktualisierungen.
 :::
 
 ::: tip
-If you want to update Zammad to a specific version, use the `VERSION` environment variable
-([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) with further explanation) and specify
-the version number.
+Wenn Sie Zammad auf eine bestimmte Version aktualisieren möchten, verwenden Sie die Umgebungsvariable
+`VERSION` ([Beispiel](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) mit weiteren Details)
+und geben die gewünscht Version an.
 :::
 
 ### Portainer-basierte Installation aktualisieren

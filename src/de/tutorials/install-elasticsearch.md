@@ -22,13 +22,13 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
-Install required tools:
+Installation benötigter Tools:
 
 ```sh
 sudo apt install curl apt-transport-https
 ```
 
-Add repo key:
+Paketquellen-Schlüssel hinzufügen:
 
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
@@ -109,13 +109,13 @@ sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsear
 
 === CentOS/RHEL
 
-RHEL 7 or earlier:
+RHEL 7 oder älter:
 
 ```sh
 sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
-CentOS and RHEL 8 and later:
+CentOS und RHEL 8 und neuer:
 
 ```sh
 sudo dnf install --enablerepo=elasticsearch elasticsearch

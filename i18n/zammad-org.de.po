@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-31 14:23+0200\n"
-"PO-Revision-Date: 2026-04-03 05:02+0000\n"
+"POT-Creation-Date: 2026-04-14 15:43+0200\n"
+"PO-Revision-Date: 2026-04-14 14:09+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -737,8 +737,8 @@ msgid ""
 "  markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
 msgstr ""
 "**\\*\\*Beispiel Zeichenkette\\*\\***\n"
-": Formatierung für Text (z.B. fett, kursiv). Alternativ: \\Beispiel Zeichenkette\\_. Diese Zeichenketten können übersetzt werden, aber die\n"
-"  Formatierung (z.B. `**` oder `_`) sollte sinngetreu übernommen werden.\n"
+": Formatierung für Text (z.B. fett, kursiv). Alternativ: \\_Beispiel Zeichenkette\\_. Diese Zeichenketten können übersetzt werden, aber die\n"
+"  Formatierung (z.B. `**` oder `_`) sollte sinngemäß übernommen werden.\n"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/contribute/style-guide.md:1
@@ -1037,8 +1037,8 @@ msgid ""
 "Use key markup like [[ctrl]] and [[x]] to highlight a key press (see "
 "[examples](#text-and-ui) below)."
 msgstr ""
-"Verwenden Sie die eine Auszeichnung wie [[ctrl]] und [[x]], um einen "
-"Tastenanschlag darzustellen (siehe [Beispiele](#text-und-ui) unten)."
+"Verwenden Sie eine Auszeichnung wie [[ctrl]] und [[x]], um einen Tastendruck "
+"darzustellen (siehe [Beispiele](#text-und-ui) unten)."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:101
@@ -2142,12 +2142,21 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:113
+#, fuzzy
+#| msgid ""
+#| "If you have many steps you do over and over again, you should use a macro "
+#| "for that. In such a macro, your admin can pre-define different ticket "
+#| "actions you can apply with just a click. As an example, Zammad ships a "
+#| "\"Close & Tag as Spam\" macro by default. If applied, the user who "
+#| "executes the macro is assigned as owner, a tag `spam` is added and the "
+#| "ticket is closed. It is even possible to run an [AI agent](/en/"
+#| "documentation/use/guides/ai) within a macro on demand."
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
 "actions you can apply with just a click. As an example, Zammad ships a "
 "\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
-"the macro is assigned as owner, a tag `spam` is added and the ticket is "
+"the macro is assigned as owner, a tag **spam** is added and the ticket is "
 "closed. It is even possible to run an [AI agent](/en/documentation/use/"
 "guides/ai) within a macro on demand."
 msgstr ""
@@ -2595,7 +2604,7 @@ msgid ""
 "are:"
 msgstr ""
 "Nachdem Sie die Tickets ausgewählt haben, für die Sie Änderungen vornehmen "
-"möchten, klicken Sie auf die Schaltfläche \"Mehrfach-Aktion\" in der oberen "
+"möchten, klicken Sie auf die Schaltfläche **Mehrfach-Aktion** in der oberen "
 "rechten Ecke und ändern/fügen Sie Attribute über die Felder im Seiten-Panel "
 "hinzu. Folgende Änderungen können Sie auf Tickets anwenden:"
 
@@ -3392,11 +3401,19 @@ msgstr "Kunde"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:44
+#, fuzzy
+#| msgid ""
+#| "Enter a name or email address of a customer to search for existing "
+#| "accounts. You can even search for organizations and their members. Select "
+#| "an option from the dropdown menu or create a new customer by clicking the "
+#| "**+ Create new Customer** button on the right side of the field. This "
+#| "opens a dialog where you can provide all relevant information of the "
+#| "customer. A ticket can only have one customer."
 msgid ""
 "Enter a name or email address of a customer to search for existing accounts. "
 "You can even search for organizations and their members. Select an option "
-"from the dropdown menu or create a new customer by clicking the **+ Create "
-"new Customer** button on the right side of the field. This opens a dialog "
+"from the dropdown menu or create a new customer by clicking the `+ Create "
+"new Customer` button on the right side of the field. This opens a dialog "
 "where you can provide all relevant information of the customer. A ticket can "
 "only have one customer."
 msgstr ""
@@ -3462,9 +3479,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:62
+#, fuzzy
+#| msgid ""
+#| "After you provided the relevant information, finally create the ticket "
+#| "with a click on the **Create** button. Read on [how to work with existing "
+#| "tickets](work-with-tickets)."
 msgid ""
 "After you provided the relevant information, finally create the ticket with "
-"a click on the **Create** button. Read on [how to work with existing tickets]"
+"a click on the `Create` button. Read on [how to work with existing tickets]"
 "(work-with-tickets)."
 msgstr ""
 "Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie "
@@ -4126,11 +4148,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:19
+#, fuzzy
+#| msgid ""
+#| "For the most changes (except tags or title renaming, for example), an "
+#| "explicit update of the ticket is needed. So make sure to click the "
+#| "**Update** button on the right side of the footer bar when you are happy "
+#| "with your changes."
 msgid ""
 "For the most changes (except tags or title renaming, for example), an "
-"explicit update of the ticket is needed. So make sure to click the "
-"**Update** button on the right side of the footer bar when you are happy "
-"with your changes."
+"explicit update of the ticket is needed. So make sure to click the `Update` "
+"button on the right side of the footer bar when you are happy with your "
+"changes."
 msgstr ""
 "Für die meisten Änderungen (außer z.B. Tags oder Titel umbenennen) ist eine "
 "explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die "
@@ -5452,11 +5480,19 @@ msgstr "Schreibassistent-Werkzeuge"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:43
+#, fuzzy
+#| msgid ""
+#| "The AI-powered writing assistant tools are designed to simplify and "
+#| "enhance your ticket response workflow while you create an article.  To "
+#| "use such a tool, you first have to select text you want to apply the "
+#| "changes to. After that, click the **Writing Assistant Tools** button at "
+#| "the left side of the editor toolbar and choose one of the following "
+#| "tools, depending on what you want to perform."
 msgid ""
 "The AI-powered writing assistant tools are designed to simplify and enhance "
 "your ticket response workflow while you create an article.  To use such a "
 "tool, you first have to select text you want to apply the changes to. After "
-"that, click the **Writing Assistant Tools** button at the left side of the "
+"that, click the `Writing Assistant Tools` button at the left side of the "
 "editor toolbar and choose one of the following tools, depending on what you "
 "want to perform."
 msgstr ""
@@ -8643,7 +8679,49 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade-repo-migration.md:123
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/apt/keyrings/pkgr-zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "List the keys of your system:\n"
+#| "\n"
+#| "```sh\n"
+#| "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
+#| "```\n"
+#| "\n"
+#| "Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm -e <key-name>\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "List the keys of your system:\n"
+#| "\n"
+#| "```sh\n"
+#| "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
+#| "```\n"
+#| "\n"
+#| "Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm -e <key-name>\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8666,7 +8744,7 @@ msgid ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -8680,7 +8758,7 @@ msgid ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -8708,8 +8786,7 @@ msgstr ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), "
-"ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:\n"
+"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -8723,8 +8800,7 @@ msgstr ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), "
-"ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:\n"
+"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -9295,14 +9371,14 @@ msgstr "Schritt 3: Starten des Stacks"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:217
+#: src/en/get-started/update.md:223
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr "cd zammad-docker-compose\n"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:229
+#: src/en/get-started/update.md:235
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr "docker compose up -d\n"
@@ -9524,8 +9600,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:68
 #: src/en/reference/rest-api/checklist.md:115
 #: src/en/reference/rest-api/checklist.md:136
-#: src/en/reference/rest-api/checklist.md:184
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:196
+#: src/en/reference/rest-api/checklist.md:218
 #: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
@@ -9735,17 +9811,14 @@ msgstr ""
 "\n"
 "OpenSUSE benötigt hier keine zusätzlichen Schritte!\n"
 "\n"
-"Für SLES 15 müssen zusätzliche Paketquellen aktiviert werden. Verwenden Sie "
-"dazu den folgenden Befehl:\n"
+"Für SLES 15 müssen zusätzliche Paketquellen aktiviert werden. Verwenden Sie dazu den folgenden Befehl:\n"
 "\n"
 "```sh\n"
-"sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-"
-"release; echo $VERSION_ID)/$(uname -i)\n"
+"sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
 "```\n"
 "\n"
 "```sh\n"
-"sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/"
-"$(uname -i)\n"
+"sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
@@ -10080,25 +10153,21 @@ msgstr ""
 "Paketquellen-Schlüssel installieren:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
-"zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 22.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"ubuntu/22.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 24.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"ubuntu/24.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
@@ -10107,33 +10176,28 @@ msgstr ""
 "Paketquellen-Schlüssel installieren:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
-"zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 11):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/11.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 12):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/12.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 13):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/13.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
@@ -10143,8 +10207,7 @@ msgstr ""
 "\n"
 "```sh\n"
 "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/"
-"15.repo\"\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
 "```\n"
 "\n"
 "===CentOS/RHEL\n"
@@ -10157,8 +10220,7 @@ msgstr ""
 "Paketquelle hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"el/9.repo\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
 "  -o /etc/yum.repos.d/zammad.repo\n"
 "```\n"
 "\n"
@@ -10319,7 +10381,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/get-started/installation/package.md:314
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:152
+#: src/en/tutorials/install-elasticsearch.md:150
 #, no-wrap
 msgid "Next Steps"
 msgstr "Nächste Schritte"
@@ -10788,7 +10850,7 @@ msgstr ""
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
 #: src/en/reference/rest-api/checklist.md:62
 #: src/en/reference/rest-api/checklist.md:130
-#: src/en/reference/rest-api/checklist.md:199
+#: src/en/reference/rest-api/checklist.md:211
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
@@ -10844,10 +10906,8 @@ msgid ""
 "This page describes how to update Zammad only. In case you want to update your host operating system too, have a look\n"
 "at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.\n"
 msgstr ""
-"Diese Seite beinhaltet ausschließlich die Aktualisierung von Zammad. Wenn "
-"Sie Ihr Host-Betriebssystem ebenfalls aktualisieren möchten,\n"
-"sehen Sie sich die Seite [Host-Upgrade und Paketquellen-Migration](host-"
-"upgrade-repo-migration) an.\n"
+"Diese Seite beinhaltet ausschließlich die Aktualisierung von Zammad. Wenn Sie Ihr Host-Betriebssystem ebenfalls aktualisieren möchten,\n"
+"sehen Sie sich die Seite [Host-Upgrade und Paketquellen-Migration](host-upgrade-repo-migration) an.\n"
 
 #. type: Title ##
 #: src/en/get-started/update.md:25
@@ -11162,13 +11222,13 @@ msgstr ""
 "Anweisungen."
 
 #. type: Title ###
-#: src/en/get-started/update.md:178 src/en/get-started/update.md:233
+#: src/en/get-started/update.md:178 src/en/get-started/update.md:239
 #, no-wrap
 msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr "Elasticsearch-Index erneuern <Badge type=\"tip\" text=\"optional\" />"
 
 #. type: Plain text
-#: src/en/get-started/update.md:181 src/en/get-started/update.md:236
+#: src/en/get-started/update.md:181 src/en/get-started/update.md:242
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch index."
 msgstr ""
@@ -11220,14 +11280,26 @@ msgstr ""
 "oder Breaking Changes beinhalten. Prüfen Sie immer zuerst die [Docker Compose Release-Notes](https://github.com/zammad/zammad-docker-compose/releases)\n"
 "auf Hinweise für die Aktualisierungen.\n"
 
-#. type: Title ###
+#. type: Fenced div block (tip)
 #: src/en/get-started/update.md:208
+#, no-wrap
+msgid ""
+"If you want to update Zammad to a specific version, use the `VERSION` environment variable\n"
+"([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) with further explanation) and specify\n"
+"the version number.\n"
+msgstr ""
+"Wenn Sie Zammad auf eine bestimmte Version aktualisieren möchten, verwenden Sie die Umgebungsvariable\n"
+"`VERSION` ([Beispiel](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) mit weiteren Details)\n"
+"und geben die gewünscht Version an.\n"
+
+#. type: Title ###
+#: src/en/get-started/update.md:214
 #, no-wrap
 msgid "Updating Portainer Based Installations"
 msgstr "Portainer-basierte Installation aktualisieren"
 
 #. type: Plain text
-#: src/en/get-started/update.md:212
+#: src/en/get-started/update.md:218
 msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
 "and redeploy** and click on `Update`."
@@ -11236,7 +11308,7 @@ msgstr ""
 "**Re-pull image and redeploy** und klicken Sie auf `Update`."
 
 #. type: Plain text
-#: src/en/get-started/update.md:214
+#: src/en/get-started/update.md:220
 msgid ""
 "![Highlighted stack update in Portainer](/screenshots/installation/portainer-"
 "stack-update.png)"
@@ -11245,25 +11317,25 @@ msgstr ""
 "installation/portainer-stack-update.png)"
 
 #. type: Title ###
-#: src/en/get-started/update.md:215
+#: src/en/get-started/update.md:221
 #, no-wrap
 msgid "Updating Docker Compose Based Installations"
 msgstr "Docker Compose-basierten Installation aktualisieren"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:221
+#: src/en/get-started/update.md:227
 #, no-wrap
 msgid "git pull\n"
 msgstr "git pull\n"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:225
+#: src/en/get-started/update.md:231
 #, no-wrap
 msgid "docker compose pull\n"
 msgstr "docker compose pull\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/update.md:237
+#: src/en/get-started/update.md:243
 #, no-wrap
 msgid ""
 "\n"
@@ -12103,7 +12175,7 @@ msgid ""
 "`ZAMMAD_NGINX_EXTERNAL_NETWORK`"
 msgstr ""
 "Geben Sie den Namen Ihres externen Netzes mit Hilfe der Umgebungsvariablen "
-"\"ZAMMAD_NGINX_EXTERNAL_NETWORK\" an"
+"`ZAMMAD_NGINX_EXTERNAL_NETWORK` an"
 
 #. type: Title ##
 #: src/en/reference/docker-compose-scenarios.md:97
@@ -12442,11 +12514,9 @@ msgid ""
 "applicable. The variables for Docker and package based installations can be different in some cases. You can find\n"
 "another badge appended to variable names with the following meaning:\n"
 msgstr ""
-"Unten finden Sie die wichtigsten Umgebungsvariablen mit Standardwerten (als "
-"<Badge type=\"tip\" text=\"badge\" />), falls zutreffend. Die Variablen für "
-"Docker- und Paketinstallationen können in einigen Fällen unterschiedlich "
-"sein. Sie können dazu ein weiteres Badge an Variablennamen finden, das die "
-"folgende Bedeutung hat:\n"
+"Unten finden Sie die wichtigsten Umgebungsvariablen mit Standardwerten (als <Badge type=\"tip\" text=\"badge\" />), falls zutreffend.\n"
+"Die Variablen für Docker- und Paketinstallationen können in einigen Fällen unterschiedlich sein. Sie können dazu ein weiteres\n"
+"Badge an Variablennamen finden, das die folgende Bedeutung hat:\n"
 
 #. type: Bullet: '- '
 #: src/en/reference/environment-variables.md:15
@@ -12492,8 +12562,7 @@ msgid ""
 "  installation differs from the standard installation.\n"
 msgstr ""
 "`GPG_PATH` ::p::\n"
-": Legen Sie den Pfad zu Ihrer GPG-Installation fest. Nur erforderlich, wenn "
-"Sie unterschiedliche Versionen von PGP verwenden möchten\n"
+": Legen Sie den Pfad zu Ihrer GPG-Installation fest. Nur erforderlich, wenn Sie unterschiedliche Versionen von PGP verwenden möchten\n"
 "  oder Ihre PGP-Installation von der Standardinstallation abweicht.\n"
 
 #. type: Plain text
@@ -12505,10 +12574,8 @@ msgid ""
 "  until the next update. Use `true` to turn it on permanently.\n"
 msgstr ""
 "`RAILS_LOG_TO_STDOUT` ::p::\n"
-": Diese Einstellung kann während einer Aktualisierung bei "
-"Paketinstallationen überschrieben werden. Verwenden Sie `enabled`,\n"
-"  um diese Option nur bis zur nächsten Aktualisierung zu aktivieren. "
-"Verwenden Sie `true`, um sie dauerhaft zu aktivieren.\n"
+": Diese Einstellung kann während einer Aktualisierung bei Paketinstallationen überschrieben werden. Verwenden Sie `enabled`,\n"
+"  um diese Option nur bis zur nächsten Aktualisierung zu aktivieren. Verwenden Sie `true`, um sie dauerhaft zu aktivieren.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:36
@@ -12519,10 +12586,8 @@ msgid ""
 "  certain commands, it has a potential to break regular Zammad operations.\n"
 msgstr ""
 "`ZAMMAD_SAFE_MODE` ::p::\n"
-": Vorsicht beim Ausführen von Zammad-Befehlen im Safe-Mode. Obwohl dieser "
-"möglicherweise einen Ausweg für bestimmte\n"
-"  Befehle bietet, kann die normale Ausführung von Zammad beeinträchtigt "
-"werden.\n"
+": Vorsicht beim Ausführen von Zammad-Befehlen im Safe-Mode. Obwohl dieser möglicherweise einen Ausweg für bestimmte\n"
+"  Befehle bietet, kann die normale Ausführung von Zammad beeinträchtigt werden.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:39
@@ -12543,10 +12608,8 @@ msgid ""
 "  `https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true`\n"
 msgstr ""
 "`S3_URL` ::p::\n"
-": Ermöglicht Ihnen die Angabe Ihrer S3-Speicheranbieter-Konfiguration. "
-"Beispiel für einen Wert:\n"
-"  `https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-"
-"bucket?region=eu-central-1&force_path_style=true`\n"
+": Ermöglicht Ihnen die Angabe Ihrer S3-Speicheranbieter-Konfiguration. Beispiel für einen Wert:\n"
+"  `https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true`\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:51
@@ -12558,13 +12621,10 @@ msgid ""
 "  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on this\n"
 "  variable.\n"
 msgstr ""
-"`VERSION` ::d:: <Badge type=\"tip\" text=\"aktuelle stabile Version von "
-"Zammad\" />\n"
-": Ermöglicht die Anpassung des Image-Tags. Beispiel: `6.3.1-54`. Diese "
-"Standardversion kann erhöht werden, wenn Sie Ihren Zammad-Docker-Stack "
-"aktualisieren.\n"
-"  Weitere Details dazu finden Sie in der [Beispiel-env-Datei](https://"
-"github.com/zammad/zammad-docker-compose/blob/master/.env.dist).\n"
+"`VERSION` ::d:: <Badge type=\"tip\" text=\"aktuelle stabile Version von Zammad\" />\n"
+": Ermöglicht die Anpassung des Image-Tags. Beispiel: `6.3.1-54`. Diese Standardversion kann erhöht werden,\n"
+"  wenn Sie Ihren Zammad-Docker-Stack aktualisieren. Weitere Informationen zu der Variablen finden Sie in der\n"
+"  [Beispiel-env-Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:56
@@ -12576,11 +12636,9 @@ msgid ""
 "  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.\n"
 msgstr ""
 "`AUTOWIZARD_JSON` ::d::\n"
-": Diese Variable ermöglicht es Ihnen, eine initiale Konfiguration für Ihre "
-"Instanz bereitzustellen. Autowizard JSON ist nicht Bestandteil dieser "
-"Dokumentation,\n"
-"  Sie können jedoch einen Blick in eine [Beispiel-Datei](https://github.com/"
-"zammad/zammad/blob/stable/contrib/auto_wizard_example.json) werfen.\n"
+": Diese Variable ermöglicht es Ihnen, eine initiale Konfiguration für Ihre Instanz bereitzustellen. Autowizard JSON ist\n"
+"  nicht Bestandteil dieser Dokumentation, Sie können jedoch einen Blick in die\n"
+"  [Beispiel-Datei](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) werfen.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:59
@@ -12606,8 +12664,7 @@ msgid ""
 "  limiting.\n"
 msgstr ""
 "`RAILS_TRUSTED_PROXIES` <Badge type=\"tip\" text=\"127.0.0.1,::1\" />\n"
-": Diese Einstellung ist wichtig für die korrekte Erkennung von Client-IP-"
-"Adressen und Funktionen, die darauf basieren,\n"
+": Diese Einstellung ist wichtig für die korrekte Erkennung von Client-IP-Adressen und Funktionen, die darauf basieren,\n"
 "  wie z.B. Rate-Limiting.\n"
 
 #. type: Plain text
@@ -12618,12 +12675,9 @@ msgid ""
 "  by IP address (if static) or by host name. Host names are resolved during the start of Zammad, so that a restart is\n"
 "  required whenever the IP address of a proxy server changes.\n"
 msgstr ""
-"  Standardmäßig vertraut Zammad nur localhost-Proxys. Zusätzliche "
-"Proxyserver müssen hier hinzugefügt werden,\n"
-"  entweder per IP-Adresse (wenn statisch) oder mit Hostnamen. Hostnamen "
-"werden beim Start von Zammad aufgelöst, sodass ein\n"
-"  Neustart erforderlich ist, wenn sich die IP-Adresse eines Proxyservers "
-"ändert.\n"
+"  Standardmäßig vertraut Zammad nur localhost-Proxys. Zusätzliche Proxyserver müssen hier hinzugefügt werden,\n"
+"  entweder per IP-Adresse (wenn statisch) oder mit Hostnamen. Hostnamen werden beim Start von Zammad aufgelöst, sodass ein\n"
+"  Neustart erforderlich ist, wenn sich die IP-Adresse eines Proxyservers ändert.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:73
@@ -12632,10 +12686,8 @@ msgid ""
 "  Note that in Docker context, Zammad may see the network   gateway IP address instead of the actual proxy server\n"
 "  IP address, if it is placed in another network.\n"
 msgstr ""
-"  Beachten Sie, dass Zammad im Docker-Kontext die IP-Adresse des Netzwerk-"
-"Gateways anstelle der tatsächlichen\n"
-"  IP-Adresse des Proxyservers sehen kann, wenn es sich in einem anderen "
-"Netzwerk befindet.\n"
+"  Beachten Sie, dass Zammad im Docker-Kontext die IP-Adresse des Netzwerk-Gateways anstelle der tatsächlichen\n"
+"  IP-Adresse des Proxyservers sehen kann, wenn es sich in einem anderen Netzwerk befindet.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:77
@@ -12646,8 +12698,7 @@ msgid ""
 "  it: `1`.\n"
 msgstr ""
 "`ZAMMAD_MANAGE_SESSIONS_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
-": Ermöglicht das Abspalten des Jobs, der die Session-Jobs an die Worker "
-"verteilt, in einen Kindprozess. Erlaubter Wert\n"
+": Ermöglicht das Abspalten des Jobs, der die Session-Jobs an die Worker verteilt, in einen Kindprozess. Erlaubter Wert\n"
 "  zur Aktivierung: `1`.\n"
 
 #. type: Plain text
@@ -12661,12 +12712,9 @@ msgid ""
 "  `ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS`.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
-": Ein solcher Worker bearbeitet Zammads KI-Anfragen und holt die Antworten "
-"vom konfigurierten KI-Anbieter ab. Diese Variable\n"
-"  erlaubt Ihnen, die Anzahl der gleichzeitig ausgeführten Worker anzugeben. "
-"`0` bedeutet, dass ein Thread im Hauptprozess verwendet wird, `1`\n"
-"  bedeutet, dass ein separater Worker gestartet wird usw. Die maximale "
-"Anzahl von Workern beträgt `16`. Siehe auch\n"
+": Ein solcher Worker bearbeitet Zammads KI-Anfragen und holt die Antworten vom konfigurierten KI-Anbieter ab. Diese Variable\n"
+"  erlaubt Ihnen, die Anzahl der gleichzeitig ausgeführten Worker anzugeben. `0` bedeutet, dass ein Thread im Hauptprozess verwendet wird, `1`\n"
+"  bedeutet, dass ein separater Worker gestartet wird usw. Die maximale Anzahl von Workern beträgt `16`. Siehe auch\n"
 "  `ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS`.\n"
 
 #. type: Plain text
@@ -12676,10 +12724,8 @@ msgid ""
 "  Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users\n"
 "  with a big Zammad instance, it could make sense to increase it to have some kind of parallelization.\n"
 msgstr ""
-"  Selbst hostende KI-Nutzer sollten bei der Erhöhung vorsichtig sein, da ihr "
-"KI-Dienst zusammenbrechen könnte.\n"
-"  Für KI-Cloud-Dienst-Nutzer mit einer großen Zammad-Instanz kann eine "
-"Erhöhung sinnvoll sein, um eine Art Parallelisierung zu erreichen.\n"
+"  Selbst hostende KI-Nutzer sollten bei der Erhöhung vorsichtig sein, da ihr KI-Dienst zusammenbrechen könnte.\n"
+"  Für KI-Cloud-Dienst-Nutzer mit einer großen Zammad-Instanz kann eine Erhöhung sinnvoll sein, um eine Art Parallelisierung zu erreichen.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:91
@@ -12690,13 +12736,9 @@ msgid ""
 "  multiplied). This may speed up the AI processing, but be aware that a Ruby worker can only span across 1 core anyway.\n"
 "  The maximum number of threads is `16`.\n"
 msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"tip\" "
-"text=\"5\" />\n"
-": Wie viele Threads von einem **einzelnen** KI-Worker verarbeitet werden "
-"sollen (falls Sie mehrere Worker-Prozesse ausführen, wird diese Zahl "
-"multipliziert).\n"
-"  Dies kann die KI-Verarbeitung beschleunigen, aber beachten Sie, dass ein "
-"Ruby-Worker ohnehin nicht mehr als einen Kern nutzen kann.\n"
+"`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"tip\" text=\"5\" />\n"
+": Wie viele Threads von einem **einzelnen** KI-Worker verarbeitet werden sollen (falls Sie mehrere Worker-Prozesse ausführen, wird diese Zahl multipliziert).\n"
+"  Dies kann die KI-Verarbeitung beschleunigen, aber beachten Sie, dass ein Ruby-Worker ohnehin nicht mehr als einen Kern nutzen kann.\n"
 "  Die maximale Anzahl an Threads beträgt `16`.\n"
 
 #. type: Plain text
@@ -12708,13 +12750,9 @@ msgid ""
 "  `0` means a thread in the main process is used, `1` means a separate worker gets spawned, etc. The maximum number of\n"
 "  workers is `16`.\n"
 msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER` <Badge "
-"type=\"tip\" text=\"0\" />\n"
-": Ermöglicht das gleichzeitige Abrufen eingehender Kommunikationskanäle. "
-"Nützlich, wenn Sie viele Kanäle und/oder Postfächer hinzugefügt haben.\n"
-"  `0` bedeutet, dass ein Thread im Hauptprozess verwendet wird, `1` "
-"bedeutet, dass ein separater Worker gestartet wird usw. Die maximale Anzahl "
-"an\n"
+"`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER` <Badge type=\"tip\" text=\"0\" />\n"
+": Ermöglicht das gleichzeitige Abrufen eingehender Kommunikationskanäle. Nützlich, wenn Sie viele Kanäle und/oder Postfächer hinzugefügt haben.\n"
+"  `0` bedeutet, dass ein Thread im Hauptprozess verwendet wird, `1` bedeutet, dass ein separater Worker gestartet wird usw. Die maximale Anzahl an\n"
 "  Workern beträgt `16`.\n"
 
 #. type: Plain text
@@ -12725,13 +12763,9 @@ msgid ""
 ": Threads used for fetching inbound communication channels. How many threads should be processed by a **single** inbound\n"
 "  jobs worker (if you run more than one worker process, it gets multiplied). The maximum number of threads is `16`.\n"
 msgstr ""
-"`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER_THREADS` <Badge "
-"type=\"tip\" text=\"1\" />\n"
-": Threads, die zum Abrufen eingehender Kommunikationskanäle verwendet "
-"werden. Wie viele Threads sollen von einem **einzelnen** Inbound-Jobs-"
-"Worker\n"
-"  verarbeitet werden (falls Sie mehrere Worker-Prozesse ausführen, wird dies "
-"multipliziert). Die maximale Anzahl an Threads beträgt `16`.\n"
+"`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER_THREADS` <Badge type=\"tip\" text=\"1\" />\n"
+": Threads, die zum Abrufen eingehender Kommunikationskanäle verwendet werden. Wie viele Threads sollen von einem **einzelnen** Inbound-Jobs-Worker\n"
+"  verarbeitet werden (falls Sie mehrere Worker-Prozesse ausführen, wird dies multipliziert). Die maximale Anzahl an Threads beträgt `16`.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:104
@@ -12741,10 +12775,8 @@ msgid ""
 ": Provide your own Memcached instance to Zammad if you already have one. The package installation fallback is\n"
 "  `/opt/zammad/tmp/cache*`.\n"
 msgstr ""
-"`MEMCACHE_SERVERS` <Badge type=\"tip\" text=\"Docker: zammad-"
-"memcached:11211\" /> <Badge type=\"tip\" text=\"Package: nicht gesetzt\" />\n"
-": Stellen Sie Ihrem eigenen Memcached-Dienst zur Verfügung, falls Sie "
-"bereits einen haben. Der Fallback bei Paketinstallationen ist\n"
+"`MEMCACHE_SERVERS` <Badge type=\"tip\" text=\"Docker: zammad-memcached:11211\" /> <Badge type=\"tip\" text=\"Package: nicht gesetzt\" />\n"
+": Stellen Sie Ihrem eigenen Memcached-Dienst zur Verfügung, falls Sie bereits einen haben. Der Fallback bei Paketinstallationen ist\n"
 "  `/opt/zammad/tmp/cache*`.\n"
 
 #. type: Plain text
@@ -12755,12 +12787,9 @@ msgid ""
 ": Provide your own Redis instance if you already have one. The package installation fallback is\n"
 "  `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.\n"
 msgstr ""
-"`REDIS_URL` <Badge type=\"tip\" text=\"Docker: redis://zammad-"
-"redis:6379\" /> <Badge type=\"tip\" text=\"Package: nicht gesetzt\" />\n"
-": Geben Sie Ihre eigene Redis-Instanz an, falls Sie bereits eine haben. Der "
-"Fallback bei Paketinstallationen ist\n"
-"  `/opt/zammad/tmp/websocket_*`. Informationen zur Sentinel-Konfiguration "
-"finden Sie unter [Redis-Variablen](/de/reference/redis).\n"
+"`REDIS_URL` <Badge type=\"tip\" text=\"Docker: redis://zammad-redis:6379\" /> <Badge type=\"tip\" text=\"Package: nicht gesetzt\" />\n"
+": Geben Sie Ihre eigene Redis-Instanz an, falls Sie bereits eine haben. Der Fallback bei Paketinstallationen ist\n"
+"  `/opt/zammad/tmp/websocket_*`. Informationen zur Sentinel-Konfiguration finden Sie unter [Redis-Variablen](/de/reference/redis).\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:109
@@ -12777,8 +12806,7 @@ msgid ""
 "  advise **against** doing so.\n"
 msgstr ""
 "`ELASTICSEARCH_ENABLED` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
-": Das Setzen dieser Variablen auf `false` ermöglicht es Ihnen, Zammad ohne "
-"Elasticsearch zu betreiben. Bitte beachten Sie,\n"
+": Das Setzen dieser Variablen auf `false` ermöglicht es Ihnen, Zammad ohne Elasticsearch zu betreiben. Bitte beachten Sie,\n"
 "  dass wir **dringend davon abraten**.\n"
 
 #. type: Plain text
@@ -12788,10 +12816,8 @@ msgid ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
 ": Provide a host name or address to your external Elasticsearch cluster.\n"
 msgstr ""
-"`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
-"elasticsearch\" />\n"
-": Geben Sie einen Hostnamen oder eine Adresse Ihres externen Elasticsearch-"
-"Clusters an.\n"
+"`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
+": Geben Sie einen Hostnamen oder eine Adresse Ihres externen Elasticsearch-Clusters an.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:120
@@ -12811,8 +12837,7 @@ msgid ""
 ": Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
 msgstr ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
-": Ändern Sie es in `https`, falls Ihr Elasticsearch-Cluster für die "
-"Verwendung mit SSL konfiguriert ist.\n"
+": Ändern Sie es in `https`, falls Ihr Elasticsearch-Cluster für die Verwendung mit SSL konfiguriert ist.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:126
@@ -12822,8 +12847,7 @@ msgid ""
 ": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
 msgstr ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. "
-"Ändern Sie dies, wenn Sie externe Cluster verwenden.\n"
+": Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie dies, wenn Sie externe Cluster verwenden.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:130
@@ -12834,10 +12858,8 @@ msgid ""
 "  manually, either set this variable to `true` or run the reindex command via Docker manually.\n"
 msgstr ""
 "`ELASTICSEARCH_REINDEX` ::d::\n"
-": Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden "
-"werden kann. Wenn Sie den Suchindex\n"
-"  manuell neu aufbauen müssen, setzen Sie diese Variable auf `true` oder "
-"führen Sie den Reindex-Befehl manuell per Docker aus.\n"
+": Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden kann. Wenn Sie den Suchindex\n"
+"  manuell neu aufbauen müssen, setzen Sie diese Variable auf `true` oder führen Sie den Reindex-Befehl manuell per Docker aus.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:134
@@ -12848,8 +12870,7 @@ msgid ""
 "  needed.\n"
 msgstr ""
 "`ELASTICSEARCH_SSL_VERIFY` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
-": Ermöglicht, dass selbst signierte Zertifikate durch die Compose-Skripte "
-"ignoriert werden,\n"
+": Ermöglicht, dass selbst signierte Zertifikate durch die Compose-Skripte ignoriert werden,\n"
 "  falls erforderlich.\n"
 
 #. type: Plain text
@@ -12861,8 +12882,7 @@ msgid ""
 "  value to a reasonable size.\n"
 msgstr ""
 "`ELASTICSEARCH_HEAP_SIZE` ::d:: <Badge type=\"tip\" text=\"1G\" />\n"
-": Legen Sie die verfügbare Speichermenge für Elasticsearch fest. Wenn Sie "
-"Probleme mit ES und dessen Leistung haben,\n"
+": Legen Sie die verfügbare Speichermenge für Elasticsearch fest. Wenn Sie Probleme mit ES und dessen Leistung haben,\n"
 "  sollten Sie diesen Wert auf eine angemessene Größe erhöhen.\n"
 
 #. type: Fenced div block (tip)
@@ -12872,11 +12892,8 @@ msgid ""
 "Variables for Docker and package installation are partially different. Check the limitation badge and make sure to pick\n"
 "the right one. The both variables at the end of the list are valid for both installation types.\n"
 msgstr ""
-"Variablen für Docker- und Paketinstallationen sind teilweise "
-"unterschiedlich. Überprüfen Sie die entsprechende Kennzeichnung und stellen "
-"Sie sicher,\n"
-"dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs "
-"sind für beide Installationstypen gültig.\n"
+"Variablen für Docker- und Paketinstallationen sind teilweise unterschiedlich. Überprüfen Sie die entsprechende Kennzeichnung und stellen Sie sicher,\n"
+"dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind für beide Installationstypen gültig.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:149
@@ -12887,9 +12904,8 @@ msgid ""
 "  brackets (e.g. `[2001:db8::2]`).\n"
 msgstr ""
 "`POSTGRESQL_HOST` ::p:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
-": Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Falls Sie eine IPv6-"
-"Adresse verwenden, setzen Sie diese in eckige Klammern (z.B. `[2001:db8::2]`)"
-".\n"
+": Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Falls Sie eine IPv6-Adresse verwenden, setzen Sie diese in\n"
+"  eckige Klammern (z.B. `[2001:db8::2]`).\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:152
@@ -12940,8 +12956,8 @@ msgid ""
 "brackets (e.g. `[2001:db8::2]`).\n"
 msgstr ""
 "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
-": Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Verwenden Sie im Falle "
-"einer IPv6-Adresse eckige Klammern (z. B. `[2001:db8::2]`).\n"
+": Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Verwenden Sie im Falle einer IPv6-Adresse\n"
+"  eckige Klammern (z. B. `[2001:db8::2]`).\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:168
@@ -13002,8 +13018,7 @@ msgid ""
 "  troublesome.\n"
 msgstr ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"tip\" text=\"true\" />\n"
-": Standardmäßig erstellt Zammad die benötigte Datenbank. Auf bereits "
-"existierenden Datenbankservern kann dies jedoch\n"
+": Standardmäßig erstellt Zammad die benötigte Datenbank. Auf bereits existierenden Datenbankservern kann dies jedoch\n"
 "  problematisch sein.\n"
 
 #. type: Plain text
@@ -13015,8 +13030,7 @@ msgid ""
 "  an existing service listening on this port.\n"
 msgstr ""
 "`NGINX_EXPOSE_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
-": Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben "
-"wird. Ändern Sie diesen Wert, wenn bereits\n"
+": Der Port, der für den Zugriff auf den Zammad-Stack von außen freigegeben wird. Ändern Sie diesen Wert, wenn bereits\n"
 "  ein Dienst auf diesem Port läuft.\n"
 
 #. type: Plain text
@@ -13037,8 +13051,7 @@ msgid ""
 ": By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
 msgstr ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
-": Standardmäßig antwortet der Nginx-Container von Zammad auf alle Anfragen. "
-"Sie können Ihre IP / FQDN angeben, wenn Sie möchten.\n"
+": Standardmäßig antwortet der Nginx-Container von Zammad auf alle Anfragen. Sie können Ihre IP / FQDN angeben, wenn Sie möchten.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:201
@@ -13050,10 +13063,8 @@ msgid ""
 "  `CSRF Token Verification Failed` error.\n"
 msgstr ""
 "`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"\\$scheme\" />\n"
-": Wenn der Nginx-Container für Zammad **nicht** der vorgelagerte Server ist "
-"(d.h. Sie verwenden einen anderen Proxy vor Nginx),\n"
-"  könnte `$scheme` falsch sein. Sie können das korrekte Schema `http` oder "
-"`https` festlegen, falls erforderlich. Setzen Sie dies, wenn Sie eine\n"
+": Wenn der Nginx-Container für Zammad **nicht** der vorgelagerte Server ist (d.h. Sie verwenden einen anderen Proxy vor Nginx),\n"
+"  könnte `$scheme` falsch sein. Sie können das korrekte Schema `http` oder `https` festlegen, falls erforderlich. Setzen Sie dies, wenn Sie eine\n"
 "  `CSRF Token Verification Failed` Fehlermeldung erhalten.\n"
 
 #. type: Plain text
@@ -13073,8 +13084,7 @@ msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
 ": Host name of the Rails server container.\n"
 msgstr ""
-"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
-"railsserver\" />\n"
+"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
 ": Hostname des Rails-Server-Containers.\n"
 
 #. type: Plain text
@@ -13104,8 +13114,7 @@ msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ": Host name of Zammad's websocket server.\n"
 msgstr ""
-"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
-"websocket\" />\n"
+"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ": Hostname des Zammad-Websocket-Servers.\n"
 
 #. type: Plain text
@@ -13167,11 +13176,8 @@ msgid ""
 "  should match the value from this variable.\n"
 msgstr ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
-": Ermöglicht das Starten von `n` Workern, um mehr gleichzeitige Verbindungen "
-"für Zammads Web-Oberfläche zu ermöglichen. Falls Sie\n"
-"  [Ressourcenbegrenzung für Docker](docker-compose-scenarios#ressourcen-"
-"begrenzen) angewendet haben, sollte die CPU-Einstellung des zammad-"
-"railsservers\n"
+": Ermöglicht das Starten von `n` Workern, um mehr gleichzeitige Verbindungen für Zammads Web-Oberfläche zu ermöglichen. Falls Sie\n"
+"  [Ressourcenbegrenzung für Docker](docker-compose-scenarios#ressourcen-begrenzen) angewendet haben, sollte die CPU-Einstellung des zammad-railsservers\n"
 "  dem Wert dieser Variablen entsprechen.\n"
 
 #. type: Plain text
@@ -13184,13 +13190,9 @@ msgid ""
 "  less than 40 active users at a time. Increasing the amount of these processes can consume a lot of resources!\n"
 msgstr ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
-": Wie viele Prozesse des Session-Workers gleichzeitig ausgeführt werden "
-"sollen. Das Erhöhen dieses Wertes kann\n"
-"  Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele "
-"Benutzer gleichzeitig Zammad nutzen. Es ist jedoch nicht sinnvoll,\n"
-"  diese Einstellung anzupassen, wenn Sie weniger als 40 aktive Benutzer "
-"gleichzeitig haben. Das Erhöhen der Anzahl dieser Prozesse kann viele "
-"Ressourcen verbrauchen!\n"
+": Wie viele Prozesse des Session-Workers gleichzeitig ausgeführt werden sollen. Das Erhöhen dieses Wertes kann\n"
+"  Hintergrundaufgaben (wie die Automatisierung) beschleunigen, wenn viele Benutzer gleichzeitig Zammad nutzen. Es ist jedoch nicht sinnvoll,\n"
+"  diese Einstellung anzupassen, wenn Sie weniger als 40 aktive Benutzer gleichzeitig haben. Das Erhöhen der Anzahl dieser Prozesse kann viele Ressourcen verbrauchen!\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:243
@@ -13201,10 +13203,8 @@ msgid ""
 "  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler\n"
 "  CPU setting should match the sum of all worker settings variables.\n"
 msgstr ""
-"  Falls Sie [Ressourcenbegrenzung für Docker](docker-compose-"
-"scenarios#ressourcen-begrenzen) angewendet haben, sollte die\n"
-"  CPU-Einstellung von zammad-scheduler mit der Summe aller Worker-Variablen "
-"übereinstimmen.\n"
+"  Falls Sie [Ressourcenbegrenzung für Docker](docker-compose-scenarios#ressourcen-begrenzen) angewendet haben, sollte die\n"
+"  CPU-Einstellung von zammad-scheduler mit der Summe aller Worker-Variablen übereinstimmen.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:247
@@ -13215,8 +13215,7 @@ msgid ""
 "  number of workers: `1`.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKER`\n"
-": Ermöglicht das Starten von `1` unabhängigem Aufgaben-Worker für geplante "
-"Jobs, um den Background-Worker zu entlasten.\n"
+": Ermöglicht das Starten von `1` unabhängigem Aufgaben-Worker für geplante Jobs, um den Background-Worker zu entlasten.\n"
 "  Maximale Anzahl an Workern: `1`.\n"
 
 #. type: Plain text
@@ -13228,10 +13227,8 @@ msgid ""
 "  main process is used, `1` means a separate worker gets spawned, etc. The maximum number of workers is `16`.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
-": Ermöglicht das Starten von `n` Worker-Prozessen zur Entlastung des "
-"Hintergrund-Workers von Zammad. `0` bedeutet,\n"
-"  dass ein Thread im Hauptprozess verwendet wird, `1` bedeutet, dass ein "
-"separater Worker gestartet wird usw.\n"
+": Ermöglicht das Starten von `n` Worker-Prozessen zur Entlastung des Hintergrund-Workers von Zammad. `0` bedeutet,\n"
+"  dass ein Thread im Hauptprozess verwendet wird, `1` bedeutet, dass ein separater Worker gestartet wird usw.\n"
 "  Die maximale Anzahl von Workern beträgt `16`.\n"
 
 #. type: Plain text
@@ -13243,10 +13240,8 @@ msgid ""
 "  their amount). The maximum number of threads is `16`.\n"
 msgstr ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`\n"
-": Threads, die von einem \"Delayed Jobs Worker\" verwendet werden (falls Sie "
-"mehr als einen Worker-Prozess haben,\n"
-"  wird dies mit deren Anzahl multipliziert). Die maximale Anzahl von Threads "
-"beträgt `16`.\n"
+": Threads, die von **einem** \"Delayed Jobs Worker\" verwendet werden (falls Sie mehr als einen Worker-Prozess haben,\n"
+"  wird dies mit deren Anzahl multipliziert). Die maximale Anzahl von Threads beträgt `16`.\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:262
@@ -13774,7 +13769,7 @@ msgid ""
 "Details of the user who created the ticket. Have a look at the [user section]"
 "(#user) for more information."
 msgstr ""
-"Angaben zu dem Benutzer, der das Ticket erstellt hat. Weitere Informationen "
+"Details zum Benutzer, welcher das Ticket erstellt hat. Weitere Informationen "
 "finden Sie im Abschnitt [Benutzer](#benutzer)."
 
 #. type: Fenced div block (details)
@@ -13831,7 +13826,7 @@ msgid ""
 "Details of the customer of the ticket. Have a look at the [user section]"
 "(#user) for more information."
 msgstr ""
-"Angaben zum Kunden des Tickets. Weitere Informationen finden Sie im "
+"Details zum Kunden des Tickets. Weitere Informationen finden Sie im "
 "Abschnitt [Benutzer](#benutzer)."
 
 #. type: Title ###
@@ -13941,7 +13936,7 @@ msgid ""
 "(#group-1) for more information."
 msgstr ""
 "Details zur Gruppe des Tickets. Weitere Informationen finden Sie im "
-"Abschnitt [Gruppe](#gruppe)."
+"Abschnitt [Gruppe](#gruppe-1)."
 
 #. type: Fenced div block (details)
 #: src/en/reference/es-indexed-attributes.md:222
@@ -14119,7 +14114,7 @@ msgid ""
 "[organization section](#organization-2) for more information."
 msgstr ""
 "Details der Organisation des Kunden des Tickets. Weitere Informationen "
-"finden Sie im Abschnitt [Organisation](#organisation)."
+"finden Sie im Abschnitt [Organisation](#organisation-2)."
 
 #. type: Fenced div block (details)
 #: src/en/reference/es-indexed-attributes.md:287
@@ -14163,8 +14158,8 @@ msgid ""
 "Details of the user who is owner of the ticket. Have a look at the [user "
 "section](#user) for more information."
 msgstr ""
-"Details zum Benutzer, der Besitzer des Tickets ist. Weitere Informationen "
-"finden Sie im Abschnitt [Benutzer](#benutzer)."
+"Details zum Benutzer, welcher Besitzer des Tickets ist. Weitere "
+"Informationen finden Sie im Abschnitt [Benutzer](#benutzer)."
 
 #. type: Fenced div block (details)
 #: src/en/reference/es-indexed-attributes.md:303
@@ -15770,7 +15765,7 @@ msgid ""
 "Details of the user who updated the organization. Have a look at the [user "
 "section](#user) for more information."
 msgstr ""
-"Angaben zu dem Benutzer, der die Organisation aktualisiert hat. Weitere "
+"Details zum Benutzer, welcher die Organisation aktualisiert hat. Weitere "
 "Informationen finden Sie im Abschnitt [Benutzer](#benutzer)."
 
 #. type: Plain text
@@ -18422,14 +18417,14 @@ msgstr ""
 #: src/en/reference/privacy.md:106
 msgid ""
 "As part of its service-level agreement (SLA) functionality, Zammad requires "
-"detailed, localized calendar information (_e.g.,_ to set the time zone and "
+"detailed, localized calendar information (e.g. to set the time zone and "
 "accommodate national holidays and daylight savings time).  The GeoCalendar "
 "service is used to retrieve this information."
 msgstr ""
 "Als Teil seiner Service-Level-Agreement (SLA)-Funktionalität benötigt Zammad "
-"detaillierte, lokalisierte Kalenderinformationen (z.B. um die Zeitzone "
-"festzulegen und nationale Feiertage und Zeitzonen zu berücksichtigen). Der "
-"Geo-Kalendar-Dienst wird verwendet, um diese Informationen abzurufen."
+"detaillierte, lokale Kalenderinformationen (z.B. um die Zeitzone festzulegen "
+"und nationale Feiertage und Zeitzonen zu berücksichtigen). Der Geo-Kalendar-"
+"Dienst wird verwendet, um diese Informationen abzurufen."
 
 #. type: Title ###
 #: src/en/reference/privacy.md:107
@@ -18695,7 +18690,7 @@ msgid ""
 msgstr ""
 "Um die EML-Datei des ersten Artikels zu erhalten, können Sie den folgenden "
 "Befehl verwenden.  In unserem Beispiel handelt es sich um das Ticket mit der "
-"Nummer \"101234\"."
+"Nummer `101234`."
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:104
@@ -18712,7 +18707,7 @@ msgid ""
 msgstr ""
 "Bei Bedarf können Sie auch den Raw-Inhalt späterer Artikel abrufen (Sie "
 "müssen allerdings den richtigen Artikel finden). Auch hier ist unsere Ticket-"
-"Nummer \"101234\"."
+"Nummer `101234`."
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:114
@@ -18956,7 +18951,7 @@ msgid ""
 "Please note that the login attribute is not affected by this and\n"
 "Zammad thus might show different information within the UI.\n"
 msgstr ""
-"Bitte beachten Sie, dass das Attribut `login` hiervon nicht betroffen ist und\n"
+"Bitte beachten Sie, dass das `login` Attribut hiervon nicht betroffen ist und\n"
 "Zammad daher möglicherweise andere Informationen in der Benutzeroberfläche anzeigt.\n"
 
 #. type: Fenced code block (ruby)
@@ -19335,9 +19330,9 @@ msgid ""
 "approach."
 msgstr ""
 "Die Einstellung des Storage Providers ist bei Standardinstallationen auf "
-"\"DB\" eingestellt.  Wenn Sie jedoch viele Anhänge erhalten oder eine stark "
-"ausgelastete Installation haben, ist die Verwendung der Datenbank zum "
-"Speichern von Anhängen nicht die empfohlene Lösung."
+"`DB` eingestellt. Falls viele Anhänge erhalten oder eine stark ausgelastete "
+"Installation haben, ist die Verwendung der Datenbank zum Speichern von "
+"Anhängen nicht die empfohlene Lösung."
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:417
@@ -19727,9 +19722,9 @@ msgid ""
 "If you want to give your agent a note or warning during ticket **creation**, "
 "you can do so with the below command."
 msgstr ""
-"Wenn Sie Ihren Agenten während der Erstellung eines Tickets einen Hinweis "
-"oder eine Warnung anzeigen möchten, können Sie dies mit dem folgenden Befehl "
-"tun."
+"Wenn Sie Ihren Agenten während der **Erstellung** eines Tickets einen "
+"Hinweis oder eine Warnung anzeigen möchten, können Sie dies mit dem "
+"folgenden Befehl tun."
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:590
@@ -21203,7 +21198,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:36
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
-#: src/en/reference/rest-api/checklist.md:178
+#: src/en/reference/rest-api/checklist.md:190
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -21383,6 +21378,7 @@ msgstr "Kalender gehören zu [Zammads SLA-Berechnung](/de/reference/rest-api/sla
 
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:12
+#: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:17
 #: src/en/reference/rest-api/mentions.md:14
 #: src/en/reference/rest-api/notification.md:15
@@ -21429,7 +21425,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:24
 #: src/en/reference/rest-api/checklist.md:25
 #: src/en/reference/rest-api/checklist.md:97
-#: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/checklist.md:177
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -21527,7 +21523,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:78
 #: src/en/reference/rest-api/checklist.md:83
 #: src/en/reference/rest-api/checklist.md:151
-#: src/en/reference/rest-api/checklist.md:221
+#: src/en/reference/rest-api/checklist.md:233
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
@@ -21625,7 +21621,7 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:21
 #, no-wrap
 msgid "To add checklist items, use the [checklist items endpoint](#checklist-items).\n"
-msgstr "Um Elemente der Checkliste hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).\n"
+msgstr "Um der Checkliste Elemente hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:28
@@ -21850,45 +21846,63 @@ msgstr "Checklisten-Vorlagen"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
+#: src/en/reference/rest-api/checklist.md:193
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:236
+msgid "Required permission: `admin.checklists`"
+msgstr "Erforderliche Berechtigung: `admin.checklists`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:170
+msgid "`GET`-Request sent: `/api/v1/checklist_templates`"
+msgstr "`GET`-Request gesendet: `/api/v1/checklist_templates`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/checklist.md:171
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:180
 msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgstr "Erforderliche Berechtigung: `admin.checklists` oder `ticket.agent`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:171
+#: src/en/reference/rest-api/checklist.md:183
 msgid ""
 "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 "`GET`-Anfrage gesendet: `/api/v1/checklist_templates/{checklist template id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:172
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:181
-#: src/en/reference/rest-api/checklist.md:202
-#: src/en/reference/rest-api/checklist.md:224
-msgid "Required permission: `admin.checklists`"
-msgstr "Erforderliche Berechtigung: `admin.checklists`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:183
-msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
-msgstr "`POST`-Anfrage gesendet: `/api/v1/checklist_templates`"
-
-#. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/checklist.md:184
 #, no-wrap
 msgid ""
 "\n"
+"<<< @/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:195
+msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
+msgstr "`POST`-Anfrage gesendet: `/api/v1/checklist_templates`"
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/checklist.md:196
+#, no-wrap
+msgid ""
+"\n"
 "=== Request\n"
 "\n"
 "<<< @/fixtures/rest-api/checklist_templates/post-req.json\n"
@@ -21909,7 +21923,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:205
+#: src/en/reference/rest-api/checklist.md:217
 msgid ""
 "`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
@@ -21917,7 +21931,7 @@ msgstr ""
 "id}`"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:218
 #, no-wrap
 msgid ""
 "\n"
@@ -21941,7 +21955,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:227
+#: src/en/reference/rest-api/checklist.md:239
 msgid ""
 "`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
@@ -21949,7 +21963,7 @@ msgstr ""
 "id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:228
+#: src/en/reference/rest-api/checklist.md:240
 #, no-wrap
 msgid ""
 "\n"
@@ -23887,7 +23901,7 @@ msgid ""
 "e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`\n"
 msgstr ""
 "In der Regel werden Sie beide Parameter in Ihrer Suche kombinieren wollen,\n"
-"z.B.: ?query={Suchstring}&sort_by={Zeilenname}&order_by={Richtung}`\n"
+"z.B.: `?query={suchstring}&sort_by={row name}&order_by={direction}`\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/intro.md:305
@@ -26781,7 +26795,7 @@ msgid ""
 "Add the `mentions` attribute to your ticket payload and provide an\n"
 "array of user ids to directly subscribe them during ticket creation.\n"
 "\n"
-"_E.g.:_ `\"mentions\": [1, 5, 7, 8],`\n"
+"E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 msgstr ""
 "**Im Namen anderer Benutzer**\n"
@@ -26797,7 +26811,7 @@ msgstr ""
 "Fügen Sie das Attribut `mentions` zu Ihrer Ticket-Nutzlast hinzu und übermitteln Sie ein\n"
 "Array von Benutzer-IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.\n"
 "\n"
-"_Z.B.:_ `\"mentions\": [1, 5, 7, 8],`\n"
+"Z.B.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
@@ -28984,7 +28998,7 @@ msgid ""
 msgstr ""
 "Ein häufig berichtetes Problem sind fehlende Daten in der Web-UI. Dabei kann "
 "es sich um Tickets, Artikel, Benutzer oder andere [von Elasticsearch "
-"indizierte] Daten handeln (/de/reference/es-indexed-attributes), die durch "
+"indizierte Daten](/de/reference/es-indexed-attributes) handeln, die durch "
 "fehlende oder unvollständige Indizes verursacht werden können."
 
 #. type: Plain text
@@ -29407,9 +29421,13 @@ msgstr ""
 
 #. type: Bullet: '5. '
 #: src/en/tutorials/docker-file-handling.md:101
+#, fuzzy
+#| msgid ""
+#| "Create a **New folder** by using the button on the left side. Name it "
+#| "`restore`."
 msgid ""
-"Create a **New folder** by using the button on the left side. Name it "
-"`restore`."
+"Create a `New folder` by using the button on the left side. Name it "
+"**restore**."
 msgstr ""
 "Erstellen Sie einen neuen Ordner, indem Sie die Schaltfläche auf der linken "
 "Seite verwenden. Nennen Sie ihn `restore`."
@@ -30010,26 +30028,26 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 msgstr ""
 "\n"
 "=== Ubuntu/Debian\n"
 "\n"
-"Install required tools:\n"
+"Installation benötigter Tools:\n"
 "\n"
 "```sh\n"
 "sudo apt install curl apt-transport-https\n"
 "```\n"
 "\n"
-"Add repo key:\n"
+"Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "``` sh\n"
 "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
@@ -30040,13 +30058,13 @@ msgstr ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 
@@ -30148,20 +30166,18 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper modifyrepo --enable elasticsearch && \\\n"
-"  sudo zypper install elasticsearch; \\\n"
-"  sudo zypper modifyrepo --disable elasticsearch\n"
+"sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"CentOS and RHEL 7 or earlier:\n"
+"RHEL 7 or earlier:\n"
 "\n"
 "```sh\n"
 "sudo yum install --enablerepo=elasticsearch elasticsearch\n"
 "```\n"
 "\n"
-"RHEL 8 and later:\n"
+"CentOS and RHEL 8 and later:\n"
 "\n"
 "```sh\n"
 "sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
@@ -30178,20 +30194,18 @@ msgstr ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper modifyrepo --enable elasticsearch && \\\n"
-"  sudo zypper install elasticsearch; \\\n"
-"  sudo zypper modifyrepo --disable elasticsearch\n"
+"sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"CentOS and RHEL 7 or earlier:\n"
+"RHEL 7 oder älter:\n"
 "\n"
 "```sh\n"
 "sudo yum install --enablerepo=elasticsearch elasticsearch\n"
 "```\n"
 "\n"
-"RHEL 8 and later:\n"
+"CentOS und RHEL 8 und neuer:\n"
 "\n"
 "```sh\n"
 "sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
@@ -30199,7 +30213,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/install-elasticsearch.md:126
+#: src/en/tutorials/install-elasticsearch.md:124
 #, no-wrap
 msgid ""
 "Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by\n"
@@ -30209,13 +30223,13 @@ msgstr ""
 "`/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` ausführen.\n"
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:131
+#: src/en/tutorials/install-elasticsearch.md:129
 #, no-wrap
 msgid "Configuration"
 msgstr "Konfiguration"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:135
+#: src/en/tutorials/install-elasticsearch.md:133
 msgid ""
 "Optionally, check and configure Elasticsearch’s configuration file which you "
 "can find under `/etc/elasticsearch/elasticsearch.yml`."
@@ -30224,7 +30238,7 @@ msgstr ""
 "Sie unter `/etc/elasticsearch/elasticsearch.yml` finden."
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:138
+#: src/en/tutorials/install-elasticsearch.md:136
 msgid ""
 "We recommend to adjust the maximum context size which should get indexed by "
 "Elasticsearch. Adjust it to a reasonable size like in the example:"
@@ -30234,13 +30248,13 @@ msgstr ""
 "im Beispiel an:"
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:139
+#: src/en/tutorials/install-elasticsearch.md:137
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
 msgstr "http.max_content_length: 400mb\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:145
+#: src/en/tutorials/install-elasticsearch.md:143
 msgid ""
 "Additional configuration is out of scope of this documentation. In case your "
 "scenario needs additional configuration, have a look at [Elastic’s "
@@ -30253,19 +30267,19 @@ msgstr ""
 "docs/reference/elasticsearch/configuration-reference) an."
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:146
+#: src/en/tutorials/install-elasticsearch.md:144
 #, no-wrap
 msgid "Start and Enable Elasticsearch"
 msgstr "Starten und Aktivieren von Elasticsearch"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/install-elasticsearch.md:148
+#: src/en/tutorials/install-elasticsearch.md:146
 #, no-wrap
 msgid "sudo systemctl enable elasticsearch.service --now\n"
 msgstr "sudo systemctl enable elasticsearch.service --now\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:156
+#: src/en/tutorials/install-elasticsearch.md:154
 msgid ""
 "Go on with the [installation of Zammad](/en/get-started/installation/"
 "package#add-zammad-repository). After the installation of Zammad is "
@@ -30323,7 +30337,7 @@ msgid ""
 msgstr ""
 "Migration von Zammad SaaS? Springen Sie zu\n"
 "[Schritt 7](#schritt-7-transfer-der-backup-dateien). Zur Wiederherstellung haben Sie\n"
-"einen Anhang-Dump erhalten!\n"
+"einen Anhangs-Dump erhalten!\n"
 
 #. type: Title ##
 #: src/en/tutorials/migrate-host.md:25
@@ -30625,11 +30639,9 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
-"Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich "
-"erforderlich sind oder eine einfache Neuinstallation\n"
+"Sie sind sich nicht sicher, ob die oben genannten Maßnahmen wirklich erforderlich sind oder eine einfache Neuinstallation\n"
 "ausreicht? Wenn Sie einen Installationsbefehl für Zammad ausführen und\n"
-"die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl "
-"ausführen, um Ihre\n"
+"die folgende Meldung erhalten, müssen Sie unbedingt den obigen Befehl ausführen, um Ihre\n"
 "Installation zu reparieren.\n"
 "\n"
 "``` sh\n"
@@ -31390,8 +31402,8 @@ msgstr ""
 "\n"
 "Abhängig von den vorhandenen Benutzern, Tickets und des Kayako-Tarifs kann dies eine Weile dauern.\n"
 "\n"
-"Erscheint die Meldunge \"*Interrupted by scheduler restart. Please restart manually\n"
-"or wait till next execution time.*\"?\n"
+"Erscheint die Meldunge \"Interrupted by scheduler restart. Please restart manually\n"
+"or wait till next execution time.\"?\n"
 "\n"
 "Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben haben, haben Sie\n"
 "bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.\n"
@@ -31401,7 +31413,7 @@ msgstr ""
 "\n"
 "=== Per Konsole\n"
 "\n"
-"Konsole öffnen:\n"
+"Rails Konsole öffnen:\n"
 "\n"
 "```sh\n"
 "zammad run rails c\n"
@@ -31935,7 +31947,7 @@ msgstr ""
 "\n"
 "=== Per Konsole\n"
 "\n"
-"Öffnen Sie die Konsole:\n"
+"Rails Konsole öffnen:\n"
 "\n"
 "```sh\n"
 "zammad run rails c\n"
@@ -34419,7 +34431,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:218
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
 "you obtained. Adjust the following directives to match your setup:"
@@ -34429,7 +34440,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
-msgid "`ssl_certificate` (your ssl certificate)"
+msgid "`ssl_certificate` (your SSL certificate)"
 msgstr "`ssl_certificate` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
@@ -34476,15 +34487,15 @@ msgstr "Schritt 3 - Anpassen der HTTPS-Konfiguration"
 #: src/en/tutorials/webserver-config.md:238
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
-"may not fit your needs. Mozilla has a great [ssl-config generator](https://"
+"may not fit your needs. Mozilla has a great [SSL-config generator](https://"
 "ssl-config.mozilla.org/){target=_blank} that should help you to meet your "
 "requirements!"
 msgstr ""
 "Unsere Standardkonfiguration zielt auf eine breite Unterstützung von "
 "Endbenutzer-Geräten ab. Dies entspricht möglicherweise nicht Ihren "
-"Anforderungen. Mozilla hat einen großartigen [SSL-Generator](https://ssl-"
-"config.mozilla.org/){target=_blank}, der Ihnen helfen sollte, Ihre "
-"Anforderungen zu erfüllen!"
+"Anforderungen. Mozilla hat einen großartigen [SSL-Konfigurations-Generator]"
+"(https://ssl-config.mozilla.org/){target=_blank}, der Ihnen helfen sollte, "
+"Ihre Anforderungen zu erfüllen!"
 
 #. type: Title ####
 #: src/en/tutorials/webserver-config.md:151
@@ -34633,14 +34644,24 @@ msgstr ""
 "Suchen Sie einen `ServerName`-Parameter und passen Sie `example.com` an die "
 "Domain Ihrer Zammad-Instanz an."
 
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:218
+msgid ""
+"Now you'll need to adjust the path and file names for your SSL certificates "
+"you obtained. Adjust the following directives to match your setup:"
+msgstr ""
+"Nun müssen Sie die Pfad- und Dateinamen für die SSL-Zertifikate anpassen, "
+"die Sie erhalten haben. Passen Sie die folgenden Parameter an Ihre Umgebung "
+"an:"
+
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:222
-msgid "`SSLCertificateFile` (your ssl certificate)"
+msgid "`SSLCertificateFile` (your SSL certificate)"
 msgstr "`SSLCertificateFile` (Ihr SSL-Zertifikat)"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:222
-msgid "`SSLCertificateKeyFile`(the certificates private key)"
+msgid "`SSLCertificateKeyFile`(the certificate's private key)"
 msgstr "`SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)"
 
 #. type: Bullet: '- '
@@ -34720,7 +34741,7 @@ msgstr ""
 "\n"
 "=== Ubuntu, Debian, OpenSUSE\n"
 "\n"
-"Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/apache2/apache2.conf``)\n"
+"Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (`/etc/apache2/apache2.conf`)\n"
 "vorhanden ist:\n"
 "\n"
 "```\n"
@@ -34735,7 +34756,7 @@ msgstr ""
 "\n"
 "=== CentOS\n"
 "\n"
-"Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (``/etc/httpd/conf/httpd.conf``)\n"
+"Stellen Sie sicher, dass die folgende Zeile in Ihrer Apache-Konfiguration (`/etc/httpd/conf/httpd.conf`)\n"
 "vorhanden ist:\n"
 "\n"
 "```\n"

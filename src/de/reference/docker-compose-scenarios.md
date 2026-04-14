@@ -113,7 +113,7 @@ der nicht zum Netzwerk des Zammad-Stacks gehört, darauf zugreifen zu können.
 - Verwenden Sie die Szenariodatei
   `scenarios/add-external-network-to-nginx.yml` in Ihrem Stack
 - Geben Sie den Namen Ihres externen Netzes mit Hilfe der Umgebungsvariablen
-  "ZAMMAD_NGINX_EXTERNAL_NETWORK" an
+  `ZAMMAD_NGINX_EXTERNAL_NETWORK` an
 
 ## Externe Dienste verwenden
 

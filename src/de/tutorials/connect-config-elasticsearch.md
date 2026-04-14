@@ -134,7 +134,7 @@ der Community](https://community.zammad.org){target=_blank} nachfragen.
 
 Ein häufig berichtetes Problem sind fehlende Daten in der Web-UI. Dabei kann
 es sich um Tickets, Artikel, Benutzer oder andere [von Elasticsearch
-indizierte] Daten handeln (/de/reference/es-indexed-attributes), die durch
+indizierte Daten](/de/reference/es-indexed-attributes) handeln, die durch
 fehlende oder unvollständige Indizes verursacht werden können.
 
 Wenn Sie dieses Problem haben und Elasticsearch gemäß unserer

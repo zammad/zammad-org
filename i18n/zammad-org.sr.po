@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-31 14:23+0200\n"
-"PO-Revision-Date: 2026-03-20 11:00+0000\n"
+"POT-Creation-Date: 2026-04-14 15:43+0200\n"
+"PO-Revision-Date: 2026-04-08 06:02+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -2185,7 +2185,7 @@ msgid ""
 "for that. In such a macro, your admin can pre-define different ticket "
 "actions you can apply with just a click. As an example, Zammad ships a "
 "\"Close & Tag as Spam\" macro by default. If applied, the user who executes "
-"the macro is assigned as owner, a tag `spam` is added and the ticket is "
+"the macro is assigned as owner, a tag **spam** is added and the ticket is "
 "closed. It is even possible to run an [AI agent](/en/documentation/use/"
 "guides/ai) within a macro on demand."
 msgstr ""
@@ -3215,10 +3215,9 @@ msgstr ""
 #. type: Title #
 #: src/en/documentation/use/basics/create-tickets.md:1
 #: src/en/documentation/use/basics/create-tickets.md:6
-#, fuzzy, no-wrap
-#| msgid "Merge Tickets"
+#, no-wrap
 msgid "Create Tickets"
-msgstr "Спајање тикета"
+msgstr "Отварање тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:11
@@ -3332,8 +3331,8 @@ msgstr "Клијент"
 msgid ""
 "Enter a name or email address of a customer to search for existing accounts. "
 "You can even search for organizations and their members. Select an option "
-"from the dropdown menu or create a new customer by clicking the **+ Create "
-"new Customer** button on the right side of the field. This opens a dialog "
+"from the dropdown menu or create a new customer by clicking the `+ Create "
+"new Customer` button on the right side of the field. This opens a dialog "
 "where you can provide all relevant information of the customer. A ticket can "
 "only have one customer."
 msgstr ""
@@ -3365,9 +3364,9 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/basics/create-tickets.md:54
 #: src/en/documentation/use/basics/ticket-basics.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Ticket Attributes"
-msgstr "Стање тикета"
+msgstr "Атрибути тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:58
@@ -3381,7 +3380,7 @@ msgstr ""
 #: src/en/documentation/use/basics/create-tickets.md:62
 msgid ""
 "After you provided the relevant information, finally create the ticket with "
-"a click on the **Create** button. Read on [how to work with existing tickets]"
+"a click on the `Create` button. Read on [how to work with existing tickets]"
 "(work-with-tickets)."
 msgstr ""
 
@@ -3949,9 +3948,9 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:19
 msgid ""
 "For the most changes (except tags or title renaming, for example), an "
-"explicit update of the ticket is needed. So make sure to click the "
-"**Update** button on the right side of the footer bar when you are happy "
-"with your changes."
+"explicit update of the ticket is needed. So make sure to click the `Update` "
+"button on the right side of the footer bar when you are happy with your "
+"changes."
 msgstr ""
 
 #. type: Title ##
@@ -5090,7 +5089,7 @@ msgid ""
 "The AI-powered writing assistant tools are designed to simplify and enhance "
 "your ticket response workflow while you create an article.  To use such a "
 "tool, you first have to select text you want to apply the changes to. After "
-"that, click the **Writing Assistant Tools** button at the left side of the "
+"that, click the `Writing Assistant Tools` button at the left side of the "
 "editor toolbar and choose one of the following tools, depending on what you "
 "want to perform."
 msgstr ""
@@ -7797,7 +7796,7 @@ msgid ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -7811,7 +7810,7 @@ msgid ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
+"Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -8322,14 +8321,14 @@ msgstr "Корак 3: Покретање stack-а"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:217
+#: src/en/get-started/update.md:223
 #, no-wrap
 msgid "cd zammad-docker-compose\n"
 msgstr "cd zammad-docker-compose\n"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:229
+#: src/en/get-started/update.md:235
 #, no-wrap
 msgid "docker compose up -d\n"
 msgstr "docker compose up -d\n"
@@ -8491,8 +8490,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:68
 #: src/en/reference/rest-api/checklist.md:115
 #: src/en/reference/rest-api/checklist.md:136
-#: src/en/reference/rest-api/checklist.md:184
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:196
+#: src/en/reference/rest-api/checklist.md:218
 #: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
 #: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
 #: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
@@ -9449,7 +9448,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/get-started/installation/package.md:314
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:152
+#: src/en/tutorials/install-elasticsearch.md:150
 #, no-wrap
 msgid "Next Steps"
 msgstr "Следећи кораци"
@@ -9874,7 +9873,7 @@ msgstr ""
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
 #: src/en/reference/rest-api/checklist.md:62
 #: src/en/reference/rest-api/checklist.md:130
-#: src/en/reference/rest-api/checklist.md:199
+#: src/en/reference/rest-api/checklist.md:211
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
@@ -10106,13 +10105,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:178 src/en/get-started/update.md:233
+#: src/en/get-started/update.md:178 src/en/get-started/update.md:239
 #, fuzzy, no-wrap
 msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/get-started/update.md:181 src/en/get-started/update.md:236
+#: src/en/get-started/update.md:181 src/en/get-started/update.md:242
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch index."
 msgstr ""
@@ -10159,14 +10158,23 @@ msgid ""
 "for update instructions first.\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Fenced div block (tip)
 #: src/en/get-started/update.md:208
+#, no-wrap
+msgid ""
+"If you want to update Zammad to a specific version, use the `VERSION` environment variable\n"
+"([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) with further explanation) and specify\n"
+"the version number.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/update.md:214
 #, no-wrap
 msgid "Updating Portainer Based Installations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:212
+#: src/en/get-started/update.md:218
 msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
 "and redeploy** and click on `Update`."
@@ -10175,33 +10183,33 @@ msgstr ""
 "image and redeploy** и кликните на `Update`."
 
 #. type: Plain text
-#: src/en/get-started/update.md:214
+#: src/en/get-started/update.md:220
 msgid ""
 "![Highlighted stack update in Portainer](/screenshots/installation/portainer-"
 "stack-update.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/update.md:215
+#: src/en/get-started/update.md:221
 #, no-wrap
 msgid "Updating Docker Compose Based Installations"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:221
+#: src/en/get-started/update.md:227
 #, no-wrap
 msgid "git pull\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/update.md:225
+#: src/en/get-started/update.md:231
 #, fuzzy, no-wrap
 #| msgid "docker compose up -d\n"
 msgid "docker compose pull\n"
 msgstr "docker compose up -d\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/get-started/update.md:237
+#: src/en/get-started/update.md:243
 #, no-wrap
 msgid ""
 "\n"
@@ -16226,7 +16234,7 @@ msgstr ""
 #: src/en/reference/privacy.md:106
 msgid ""
 "As part of its service-level agreement (SLA) functionality, Zammad requires "
-"detailed, localized calendar information (_e.g.,_ to set the time zone and "
+"detailed, localized calendar information (e.g. to set the time zone and "
 "accommodate national holidays and daylight savings time).  The GeoCalendar "
 "service is used to retrieve this information."
 msgstr ""
@@ -18605,7 +18613,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:36
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
-#: src/en/reference/rest-api/checklist.md:178
+#: src/en/reference/rest-api/checklist.md:190
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -18747,6 +18755,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/calendar.md:12
+#: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:17
 #: src/en/reference/rest-api/mentions.md:14
 #: src/en/reference/rest-api/notification.md:15
@@ -18790,7 +18799,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:24
 #: src/en/reference/rest-api/checklist.md:25
 #: src/en/reference/rest-api/checklist.md:97
-#: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/checklist.md:177
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -18867,7 +18876,7 @@ msgstr ""
 #: src/en/reference/rest-api/calendar.md:78
 #: src/en/reference/rest-api/checklist.md:83
 #: src/en/reference/rest-api/checklist.md:151
-#: src/en/reference/rest-api/checklist.md:221
+#: src/en/reference/rest-api/checklist.md:233
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
@@ -19127,17 +19136,39 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
+#: src/en/reference/rest-api/checklist.md:193
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:236
+msgid "Required permission: `admin.checklists`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:170
+msgid "`GET`-Request sent: `/api/v1/checklist_templates`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/checklist.md:171
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/checklist_templates/list-checklist-templates-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:180
 msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:171
+#: src/en/reference/rest-api/checklist.md:183
 msgid ""
 "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:172
+#: src/en/reference/rest-api/checklist.md:184
 #, no-wrap
 msgid ""
 "\n"
@@ -19146,19 +19177,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:181
-#: src/en/reference/rest-api/checklist.md:202
-#: src/en/reference/rest-api/checklist.md:224
-msgid "Required permission: `admin.checklists`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/checklist.md:183
+#: src/en/reference/rest-api/checklist.md:195
 msgid "`POST`-Request sent: `/api/v1/checklist_templates`"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:184
+#: src/en/reference/rest-api/checklist.md:196
 #, no-wrap
 msgid ""
 "\n"
@@ -19173,13 +19197,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:205
+#: src/en/reference/rest-api/checklist.md:217
 msgid ""
 "`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/checklist.md:206
+#: src/en/reference/rest-api/checklist.md:218
 #, no-wrap
 msgid ""
 "\n"
@@ -19194,13 +19218,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:227
+#: src/en/reference/rest-api/checklist.md:239
 msgid ""
 "`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/checklist.md:228
+#: src/en/reference/rest-api/checklist.md:240
 #, no-wrap
 msgid ""
 "\n"
@@ -22869,7 +22893,7 @@ msgid ""
 "Add the `mentions` attribute to your ticket payload and provide an\n"
 "array of user ids to directly subscribe them during ticket creation.\n"
 "\n"
-"_E.g.:_ `\"mentions\": [1, 5, 7, 8],`\n"
+"E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 msgstr ""
 
@@ -24894,8 +24918,8 @@ msgstr ""
 #. type: Bullet: '5. '
 #: src/en/tutorials/docker-file-handling.md:101
 msgid ""
-"Create a **New folder** by using the button on the left side. Name it "
-"`restore`."
+"Create a `New folder` by using the button on the left side. Name it "
+"**restore**."
 msgstr ""
 
 #. type: Bullet: '6. '
@@ -25358,13 +25382,13 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
 "``` sh\n"
-"rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+"sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 msgstr ""
@@ -25432,20 +25456,18 @@ msgid ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper modifyrepo --enable elasticsearch && \\\n"
-"  sudo zypper install elasticsearch; \\\n"
-"  sudo zypper modifyrepo --disable elasticsearch\n"
+"sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"CentOS and RHEL 7 or earlier:\n"
+"RHEL 7 or earlier:\n"
 "\n"
 "```sh\n"
 "sudo yum install --enablerepo=elasticsearch elasticsearch\n"
 "```\n"
 "\n"
-"RHEL 8 and later:\n"
+"CentOS and RHEL 8 and later:\n"
 "\n"
 "```sh\n"
 "sudo dnf install --enablerepo=elasticsearch elasticsearch\n"
@@ -25454,7 +25476,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/install-elasticsearch.md:126
+#: src/en/tutorials/install-elasticsearch.md:124
 #, no-wrap
 msgid ""
 "Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by\n"
@@ -25462,33 +25484,33 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:131
+#: src/en/tutorials/install-elasticsearch.md:129
 #, no-wrap
 msgid "Configuration"
 msgstr "Подешавања"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:135
+#: src/en/tutorials/install-elasticsearch.md:133
 msgid ""
 "Optionally, check and configure Elasticsearch’s configuration file which you "
 "can find under `/etc/elasticsearch/elasticsearch.yml`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:138
+#: src/en/tutorials/install-elasticsearch.md:136
 msgid ""
 "We recommend to adjust the maximum context size which should get indexed by "
 "Elasticsearch. Adjust it to a reasonable size like in the example:"
 msgstr ""
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:139
+#: src/en/tutorials/install-elasticsearch.md:137
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:145
+#: src/en/tutorials/install-elasticsearch.md:143
 msgid ""
 "Additional configuration is out of scope of this documentation. In case your "
 "scenario needs additional configuration, have a look at [Elastic’s "
@@ -25497,21 +25519,21 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:146
+#: src/en/tutorials/install-elasticsearch.md:144
 #, fuzzy, no-wrap
 #| msgid "Install Elasticsearch"
 msgid "Start and Enable Elasticsearch"
 msgstr "Elasticsearch инсталација"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/install-elasticsearch.md:148
+#: src/en/tutorials/install-elasticsearch.md:146
 #, fuzzy, no-wrap
 #| msgid "systemctl restart elasticsearch\n"
 msgid "sudo systemctl enable elasticsearch.service --now\n"
 msgstr "systemctl restart elasticsearch\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:156
+#: src/en/tutorials/install-elasticsearch.md:154
 msgid ""
 "Go on with the [installation of Zammad](/en/get-started/installation/"
 "package#add-zammad-repository). After the installation of Zammad is "
@@ -28579,7 +28601,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:130
-#: src/en/tutorials/webserver-config.md:218
 msgid ""
 "Now you'll need to adjust the path and file names for your ssl certificates "
 "you obtained. Adjust the following directives to match your setup:"
@@ -28587,7 +28608,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:134
-msgid "`ssl_certificate` (your ssl certificate)"
+msgid "`ssl_certificate` (your SSL certificate)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -28628,7 +28649,7 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:238
 msgid ""
 "Our default configuration aims for a broad support of end user devices. This "
-"may not fit your needs. Mozilla has a great [ssl-config generator](https://"
+"may not fit your needs. Mozilla has a great [SSL-config generator](https://"
 "ssl-config.mozilla.org/){target=_blank} that should help you to meet your "
 "requirements!"
 msgstr ""
@@ -28752,14 +28773,21 @@ msgid ""
 "your Zammad instance."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-msgid "`SSLCertificateFile` (your ssl certificate)"
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:218
+msgid ""
+"Now you'll need to adjust the path and file names for your SSL certificates "
+"you obtained. Adjust the following directives to match your setup:"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/tutorials/webserver-config.md:222
-msgid "`SSLCertificateKeyFile`(the certificates private key)"
+msgid "`SSLCertificateFile` (your SSL certificate)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/webserver-config.md:222
+msgid "`SSLCertificateKeyFile`(the certificate's private key)"
 msgstr ""
 
 #. type: Bullet: '- '

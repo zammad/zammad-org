@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Create Tickets'
+title: 'Отварање тикета'
 ---
 
-# Create Tickets
+# Отварање тикета
 
 When a customer messages you over a channel which is fetched by Zammad, a
 ticket is created automatically (unless Zammad recognizes it as a follow-up,
@@ -60,7 +60,7 @@ gets written down. For the "Send Email" type, this is the content/message of
 the email. To learn more about the editor and its features, check the
 [editor documentation](/en/documentation/use/guides/editor).
 
-## Ticket Attributes
+## Атрибути тикета
 
 As you may know, there are additional ticket attributes such as group,
 priority and owner that you can set. If you haven't read the [ticket

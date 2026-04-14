@@ -333,7 +333,7 @@ auch alle Tickets dazwischen ausgewählt. Sie können damit sogar auch Tickets
 wieder abwählen.
 
 Nachdem Sie die Tickets ausgewählt haben, für die Sie Änderungen vornehmen
-möchten, klicken Sie auf die Schaltfläche "Mehrfach-Aktion" in der oberen
+möchten, klicken Sie auf die Schaltfläche **Mehrfach-Aktion** in der oberen
 rechten Ecke und ändern/fügen Sie Attribute über die Felder im Seiten-Panel
 hinzu. Folgende Änderungen können Sie auf Tickets anwenden:
 

@@ -23,7 +23,7 @@ entsprechenden Stellen.
 ::: tip
 Migration von Zammad SaaS? Springen Sie zu
 [Schritt 7](#schritt-7-transfer-der-backup-dateien). Zur Wiederherstellung haben Sie
-einen Anhang-Dump erhalten!
+einen Anhangs-Dump erhalten!
 :::
 
 ## Schritt 1: Notieren Sie Ihre Umgebungseinstellungen

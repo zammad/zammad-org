@@ -5,7 +5,9 @@ title: Umgebungsvariablen
 
 # Umgebungsvariablen
 
-Unten finden Sie die wichtigsten Umgebungsvariablen mit Standardwerten (als <Badge type="tip" text="badge" />), falls zutreffend. Die Variablen für Docker- und Paketinstallationen können in einigen Fällen unterschiedlich sein. Sie können dazu ein weiteres Badge an Variablennamen finden, das die folgende Bedeutung hat:
+Unten finden Sie die wichtigsten Umgebungsvariablen mit Standardwerten (als <Badge type="tip" text="badge" />), falls zutreffend.
+Die Variablen für Docker- und Paketinstallationen können in einigen Fällen unterschiedlich sein. Sie können dazu ein weiteres
+Badge an Variablennamen finden, das die folgende Bedeutung hat:
 
 - Nur für Docker-Installationen verfügbar: ::d::
 - Nur für Paketinstallationen verfügbar: ::p::
@@ -42,12 +44,14 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 ## Zammad
 
 `VERSION` ::d:: <Badge type="tip" text="aktuelle stabile Version von Zammad" />
-: Ermöglicht die Anpassung des Image-Tags. Beispiel: `6.3.1-54`. Diese Standardversion kann erhöht werden, wenn Sie Ihren Zammad-Docker-Stack aktualisieren.
-  Weitere Details dazu finden Sie in der [Beispiel-env-Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
+: Ermöglicht die Anpassung des Image-Tags. Beispiel: `6.3.1-54`. Diese Standardversion kann erhöht werden,
+  wenn Sie Ihren Zammad-Docker-Stack aktualisieren. Weitere Informationen zu der Variablen finden Sie in der
+  [Beispiel-env-Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist).
 
 `AUTOWIZARD_JSON` ::d::
-: Diese Variable ermöglicht es Ihnen, eine initiale Konfiguration für Ihre Instanz bereitzustellen. Autowizard JSON ist nicht Bestandteil dieser Dokumentation,
-  Sie können jedoch einen Blick in eine [Beispiel-Datei](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) werfen.
+: Diese Variable ermöglicht es Ihnen, eine initiale Konfiguration für Ihre Instanz bereitzustellen. Autowizard JSON ist
+  nicht Bestandteil dieser Dokumentation, Sie können jedoch einen Blick in die
+  [Beispiel-Datei](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) werfen.
 
 `ZAMMAD_HTTP_TYPE`
 : Legen Sie den HTTP-Typ für Ihre Instanz fest. Mögliche Werte sind `http`
@@ -139,7 +143,8 @@ dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind f
 :::
 
 `POSTGRESQL_HOST` ::p:: <Badge type="tip" text="zammad-postgresql" />
-: Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Falls Sie eine IPv6-Adresse verwenden, setzen Sie diese in eckige Klammern (z.B. `[2001:db8::2]`).
+: Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Falls Sie eine IPv6-Adresse verwenden, setzen Sie diese in
+  eckige Klammern (z.B. `[2001:db8::2]`).
 
 `POSTGRESQL_PORT` ::p:: <Badge type="tip" text="5432" />
 : Passen Sie den Port Ihres PostgreSQL-Servers an.
@@ -154,7 +159,8 @@ dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind f
 : Die von Zammad verwendete Datenbank.
 
 `POSTGRES_HOST` ::d:: <Badge type="tip" text="zammad-postgresql" />
-: Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Verwenden Sie im Falle einer IPv6-Adresse eckige Klammern (z. B. `[2001:db8::2]`).
+: Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Verwenden Sie im Falle einer IPv6-Adresse
+  eckige Klammern (z. B. `[2001:db8::2]`).
 
 `POSTGRES_PORT` ::d:: <Badge type="tip" text="5432" />
 : Passen Sie den Port Ihres PostgreSQL-Servers an.
@@ -254,7 +260,7 @@ Datenbank-Verbindungen verwenden. Bitte beachten Sie die
   CPU-Einstellung von zammad-scheduler mit der Summe aller Worker-Variablen übereinstimmen.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`
-: Threads, die von einem "Delayed Jobs Worker" verwendet werden (falls Sie mehr als einen Worker-Prozess haben,
+: Threads, die von **einem** "Delayed Jobs Worker" verwendet werden (falls Sie mehr als einen Worker-Prozess haben,
   wird dies mit deren Anzahl multipliziert). Die maximale Anzahl von Threads beträgt `16`.
 
 ## Umgebungsvariablen setzen

@@ -19,7 +19,7 @@ _Standard-Checkliste_ einen eigenen Endpunkt für Elemente hat.
 ## Checklisten
 
 :::info
-Um Elemente der Checkliste hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).
+Um der Checkliste Elemente hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).
 :::
 
 ### Anzeigen
@@ -166,7 +166,7 @@ Erforderliche Berechtigung: `ticket.agent`
 
 Erforderliche Berechtigung: `admin.checklists`
 
-`GET`-Request sent: `/api/v1/checklist_templates`
+`GET`-Request gesendet: `/api/v1/checklist_templates`
 
 ::: details
 

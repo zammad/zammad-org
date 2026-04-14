@@ -179,5 +179,5 @@ Syntax und die Verwendung von Markdown/Vitepress-Funktionen finden.
   Sprachwechsel-Menü). Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen.
 
 **\*\*Beispiel Zeichenkette\*\***
-: Formatierung für Text (z.B. fett, kursiv). Alternativ: \Beispiel Zeichenkette\_. Diese Zeichenketten können übersetzt werden, aber die
-  Formatierung (z.B. `**` oder `_`) sollte sinngetreu übernommen werden.
+: Formatierung für Text (z.B. fett, kursiv). Alternativ: \_Beispiel Zeichenkette\_. Diese Zeichenketten können übersetzt werden, aber die
+  Formatierung (z.B. `**` oder `_`) sollte sinngemäß übernommen werden.

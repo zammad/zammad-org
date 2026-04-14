@@ -311,7 +311,7 @@ Die Richtungen sind: `asc` und `desc`.
 
 :::tip
 In der Regel werden Sie beide Parameter in Ihrer Suche kombinieren wollen,
-z.B.: ?query={Suchstring}&sort_by={Zeilenname}&order_by={Richtung}`
+z.B.: `?query={suchstring}&sort_by={row name}&order_by={direction}`
 :::
 
 ## Handlungen im Namen anderer Benutzer

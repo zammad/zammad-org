@@ -101,7 +101,7 @@ löschen und die EML-Datei selbst überprüfen müssen.
 
 Um die EML-Datei des ersten Artikels zu erhalten, können Sie den folgenden
 Befehl verwenden.  In unserem Beispiel handelt es sich um das Ticket mit der
-Nummer "101234".
+Nummer `101234`.
 
 ```ruby
 Ticket.find_by(number:'101234').articles.first.as_raw.content
@@ -109,7 +109,7 @@ Ticket.find_by(number:'101234').articles.first.as_raw.content
 
 Bei Bedarf können Sie auch den Raw-Inhalt späterer Artikel abrufen (Sie
 müssen allerdings den richtigen Artikel finden). Auch hier ist unsere
-Ticket-Nummer "101234".
+Ticket-Nummer `101234`.
 
 Im ersten Schritt erhalten wir alle Artikel IDs des Tickets:
 
@@ -224,7 +224,7 @@ User.find(**USERID**).login_failed
 Bei Bedarf können Sie die E-Mail-Adresse des Benutzers ändern.
 
 :::info
-Bitte beachten Sie, dass das Attribut `login` hiervon nicht betroffen ist und
+Bitte beachten Sie, dass das `login` Attribut hiervon nicht betroffen ist und
 Zammad daher möglicherweise andere Informationen in der Benutzeroberfläche anzeigt.
 :::
 
@@ -415,9 +415,9 @@ Setting.set('http_type', 'https')
 ### Storage Provider Einstellungen
 
 Die Einstellung des Storage Providers ist bei Standardinstallationen auf
-"DB" eingestellt.  Wenn Sie jedoch viele Anhänge erhalten oder eine stark
-ausgelastete Installation haben, ist die Verwendung der Datenbank zum
-Speichern von Anhängen nicht die empfohlene Lösung.
+`DB` eingestellt. Falls viele Anhänge erhalten oder eine stark ausgelastete
+Installation haben, ist die Verwendung der Datenbank zum Speichern von
+Anhängen nicht die empfohlene Lösung.
 
 Abrufen der aktuellen Speichermethode für Anhänge:
 
@@ -597,9 +597,9 @@ Setting.get('ui_ticket_create_default_type')
 
 ### Hinzufügen einer Warnung bei der Ticket-Erstellung
 
-Wenn Sie Ihren Agenten während der Erstellung eines Tickets einen Hinweis
-oder eine Warnung anzeigen möchten, können Sie dies mit dem folgenden Befehl
-tun.
+Wenn Sie Ihren Agenten während der **Erstellung** eines Tickets einen
+Hinweis oder eine Warnung anzeigen möchten, können Sie dies mit dem
+folgenden Befehl tun.
 
 Sie können drei verschiedene Warnungen dafür verwenden:
 

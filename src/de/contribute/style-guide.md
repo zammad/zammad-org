@@ -113,8 +113,8 @@ strukturieren können.
   für alle Leser relevant ist oder den Lesefluss unterbrechen könnte.
 - Falls vorhanden, verwenden Sie Icons für wichtige UI-Buttons wie ::+:: und
   ::x:: (siehe [Beispiele](#text-and-ui) unten).
-- Verwenden Sie die eine Auszeichnung wie [[ctrl]] und [[x]], um einen
-  Tastenanschlag darzustellen (siehe [Beispiele](#text-und-ui) unten).
+- Verwenden Sie eine Auszeichnung wie [[ctrl]] und [[x]], um einen
+  Tastendruck darzustellen (siehe [Beispiele](#text-und-ui) unten).
 - Fügen Sie, wenn nötig, Screenshots ein. Die bevorzugte Art, Screenshots
   von Zammad hinzuzufügen, ist, sie automatisch [mit
   Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}

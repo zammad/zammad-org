@@ -254,8 +254,8 @@ Sie können diesen unten im Login Screen finden, indem Sie
 
 Abhängig von den vorhandenen Benutzern, Tickets und des Kayako-Tarifs kann dies eine Weile dauern.
 
-Erscheint die Meldunge "*Interrupted by scheduler restart. Please restart manually
-or wait till next execution time.*"?
+Erscheint die Meldunge "Interrupted by scheduler restart. Please restart manually
+or wait till next execution time."?
 
 Falls diese Meldung erscheint, nachdem Sie Ihre Zugangsdaten eingegeben haben, haben Sie
 bitte ein wenig Geduld. Die Migration sollte innerhalb von 5 Minuten starten.
@@ -265,7 +265,7 @@ Sie die Migration per Konsole versuchen und Ihre Installation zurücksetzen.
 
 === Per Konsole
 
-Konsole öffnen:
+Rails Konsole öffnen:
 
 ```sh
 zammad run rails c
@@ -546,7 +546,7 @@ eine Weile dauern.
 
 === Per Konsole
 
-Öffnen Sie die Konsole:
+Rails Konsole öffnen:
 
 ```sh
 zammad run rails c
