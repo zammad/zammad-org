@@ -49,13 +49,12 @@ Ticket-Identifikation angehängt (z.B. `Ticket#901234 - Ich brauche Hilfe!`).
 
 ## Kunde
 
-Geben Sie einen Namen oder die E-Mail-Adresse eines Kunden ein, um nach
-bestehenden Benutzern zu suchen. Sie können auch nach Organisationen und
-deren Mitgliedern suchen. Wählen Sie eine Option aus dem Dropdown-Menü oder
-legen Sie einen neuen Kunden an, indem Sie auf die Schaltfläche **+ Neuen
-Kunden erstellen** rechtes des Feldes klicken. Daraufhin öffnet sich ein
-Dialog, in dem Sie alle relevanten Informationen zum Kunden eingeben
-können. Ein Ticket kann nur einen Kunden haben.
+Enter a name or email address of a customer to search for existing
+accounts. You can even search for organizations and their members. Select an
+option from the dropdown menu or create a new customer by clicking the `+
+Create new Customer` button on the right side of the field. This opens a
+dialog where you can provide all relevant information of the customer. A
+ticket can only have one customer.
 
 Nach dem hinzufügen eines Kunden während der Ticketerstellung öffnet sich
 automatisch die Kunden-Seitenleiste. Hier sehen Sie zusätzliche
@@ -79,7 +78,6 @@ weiter, um mehr zu erfahren.
 
 -----
 
-Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie
-schließlich das Ticket mit einem Klick auf die Schaltfläche
-**Erstellen**. Lesen Sie weiter, [wie man mit Tickets
-arbeitet](work-with-tickets).
+After you provided the relevant information, finally create the ticket with
+a click on the `Create` button. Read on [how to work with existing
+tickets](work-with-tickets).

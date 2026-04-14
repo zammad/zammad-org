@@ -95,7 +95,7 @@ download the files, stop and remove the filebrowser container and redeploy it, f
 2. After the container is started, go to the web interface by using the IP address and the port you defined.
 3. Log in with the default credentials `admin` / `admin`.
 4. You should now see at least 2 .gz files including a timestamp.
-5. Create a **New folder** by using the button on the left side. Name it `restore`.
+5. Create a `New folder` by using the button on the left side. Name it **restore**.
 6. Enter this folder and upload your backup files (on the top right corner with the up arrow). If the upload fails, it
    might be required to change the permissions of the files (e.g. readable for everyone).
 

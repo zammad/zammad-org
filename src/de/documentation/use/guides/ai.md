@@ -41,13 +41,12 @@ Zusammenfassung die folgenden Abschnitte:
 
 ## Schreibassistent-Werkzeuge
 
-Die KI-gestützten Schreibassistent-Werkzeuge wurden entwickelt, um Ihren
-Workflow bei der Erstellung eines Artikels beim Beantworten von Ticket zu
-vereinfachen. Um ein solches Werkzeug zu verwenden, markieren Sie zunächst
-den Text, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf
-die Schaltfläche **Schreibassist-Werkzeuge** auf der linken Seite der
-Symbolleiste des Editors und wählen Sie eines der Werkzeuge aus, je nachdem,
-was Sie durchführen möchten.
+The AI-powered writing assistant tools are designed to simplify and enhance
+your ticket response workflow while you create an article.  To use such a
+tool, you first have to select text you want to apply the changes to. After
+that, click the `Writing Assistant Tools` button at the left side of the
+editor toolbar and choose one of the following tools, depending on what you
+want to perform.
 
 ![Screenshot zeigt Zammads
 Schreibassistent-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)

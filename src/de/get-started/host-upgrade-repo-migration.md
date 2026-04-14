@@ -144,13 +144,13 @@ sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 
 === OpenSUSE/SLES
 
-Zeigen Sie die Schlüssel auf Ihrem System an:
+List the keys of your system:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:
+Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
 
 ```sh
 sudo rpm -e <key-name>
@@ -158,13 +158,13 @@ sudo rpm -e <key-name>
 
 === CentOS/RHEL
 
-Zeigen Sie die Schlüssel auf Ihrem System an:
+List the keys of your system:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:
+Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
 
 ```sh
 sudo rpm -e <key-name>

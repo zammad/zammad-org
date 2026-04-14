@@ -140,15 +140,13 @@ Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-features.cy.js/ticket-ma
 
 **Warum?**
 
-Wenn Sie viele Schritte immer wieder durchführen müssen, sollten Sie dafür
-ein Makro verwenden. In einem solchen Makro kann Ihr Administrator
-verschiedene Ticket-Aktionen vordefinieren, die Sie mit nur einem Klick
-anwenden können. Zammad liefert zum Beispiel standardmäßig ein Makro
-"Schließen & als Spam markieren". Wenn es angewendet wird, wird der
-Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag `spam`
-wird hinzugefügt und das Ticket wird geschlossen. Es ist sogar möglich, bei
-Bedarf einen [KI-Agent](/de/documentation/use/guides/ai) per Makro
-auszuführen.
+If you have many steps you do over and over again, you should use a macro
+for that. In such a macro, your admin can pre-define different ticket
+actions you can apply with just a click. As an example, Zammad ships a
+"Close & Tag as Spam" macro by default. If applied, the user who executes
+the macro is assigned as owner, a tag **spam** is added and the ticket is
+closed. It is even possible to run an [AI
+agent](/en/documentation/use/guides/ai) within a macro on demand.
 
 **Wie?**
 

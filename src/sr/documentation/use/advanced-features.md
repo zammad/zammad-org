@@ -133,7 +133,7 @@ If you have many steps you do over and over again, you should use a macro
 for that. In such a macro, your admin can pre-define different ticket
 actions you can apply with just a click. As an example, Zammad ships a
 "Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag `spam` is added and the ticket is
+the macro is assigned as owner, a tag **spam** is added and the ticket is
 closed. It is even possible to run an [AI
 agent](/en/documentation/use/guides/ai) within a macro on demand.
 

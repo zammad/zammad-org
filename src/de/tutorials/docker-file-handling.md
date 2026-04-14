@@ -110,8 +110,8 @@ die Dateien herunterladen, den Filebrowser-Container stoppen, entfernen und ihn 
 3. Melden Sie sich mit den Standard-Zugangsdaten `admin` / `admin` an.
 4. Sie sollten nun mindestens 2 .gz-Dateien sehen, deren Namen einen
    Zeitstempel beinhaltet.
-5. Erstellen Sie einen neuen Ordner, indem Sie die Schaltfläche auf der
-   linken Seite verwenden. Nennen Sie ihn `restore`.
+5. Create a `New folder` by using the button on the left side. Name it
+   **restore**.
 6. Öffnen Sie diesen Ordner und laden Sie Ihre Sicherungsdateien hoch (oben
    rechts mit dem Pfeil nach oben). Wenn der Upload fehlschlägt, müssen Sie
    möglicherweise die Berechtigungen der Dateien ändern (z.B. auf lesbar für

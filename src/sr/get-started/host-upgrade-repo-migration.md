@@ -147,7 +147,7 @@ List the keys of your system:
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
 
 ```sh
 sudo rpm -e <key-name>
@@ -161,7 +161,7 @@ List the keys of your system:
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:
+Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
 
 ```sh
 sudo rpm -e <key-name>

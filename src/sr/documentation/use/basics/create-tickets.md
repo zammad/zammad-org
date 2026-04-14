@@ -44,8 +44,8 @@ appended (e.g. `Ticket#901234 - I need help!`).
 
 Enter a name or email address of a customer to search for existing
 accounts. You can even search for organizations and their members. Select an
-option from the dropdown menu or create a new customer by clicking the **+
-Create new Customer** button on the right side of the field. This opens a
+option from the dropdown menu or create a new customer by clicking the `+
+Create new Customer` button on the right side of the field. This opens a
 dialog where you can provide all relevant information of the customer. A
 ticket can only have one customer.
 
@@ -69,5 +69,5 @@ basics](ticket-basics) yet, check it out to learn more.
 -----
 
 After you provided the relevant information, finally create the ticket with
-a click on the **Create** button. Read on [how to work with existing
+a click on the `Create` button. Read on [how to work with existing
 tickets](work-with-tickets).

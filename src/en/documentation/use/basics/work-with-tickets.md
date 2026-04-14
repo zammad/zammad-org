@@ -15,7 +15,7 @@ changes or just edited things and switched to somewhere else. This means it is n
 editing an existing one. Simply switch back to the other tab.
 
 For the most changes (except tags or title renaming, for example), an explicit update of the ticket is needed. So make
-sure to click the **Update** button on the right side of the footer bar when you are happy with your changes.
+sure to click the `Update` button on the right side of the footer bar when you are happy with your changes.
 
 ## Changing Ticket Attributes
 

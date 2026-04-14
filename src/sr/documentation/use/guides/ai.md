@@ -43,7 +43,7 @@ sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png
 The AI-powered writing assistant tools are designed to simplify and enhance
 your ticket response workflow while you create an article.  To use such a
 tool, you first have to select text you want to apply the changes to. After
-that, click the **Writing Assistant Tools** button at the left side of the
+that, click the `Writing Assistant Tools` button at the left side of the
 editor toolbar and choose one of the following tools, depending on what you
 want to perform.
 

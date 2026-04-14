@@ -21,10 +21,10 @@ deshalb kein Problem, ein neues Ticket zu erstellen, während Sie an einem
 bestehenden Ticket arbeiten. Wechseln Sie anschließend einfach zurück in den
 anderen Tab.
 
-Für die meisten Änderungen (außer z.B. Tags oder Titel umbenennen) ist eine
-explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die
-Schaltfläche **Aktualisieren** auf der rechten Seite der Fußleiste, wenn Sie
-mit Ihren Änderungen zufrieden sind.
+For the most changes (except tags or title renaming, for example), an
+explicit update of the ticket is needed. So make sure to click the `Update`
+button on the right side of the footer bar when you are happy with your
+changes.
 
 ## Ticket-Attribute ändern
 
