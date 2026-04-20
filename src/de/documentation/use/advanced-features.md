@@ -301,9 +301,6 @@ konfiguriert.
 
 ## Mehrfach-Aktionen
 
-![Screenshot zeigt Seitenleiste mit
-Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
-
 **Warum?**
 
 Wenn Sie die gleichen Änderungen für viele Tickets vornehmen müssen, können
@@ -313,29 +310,41 @@ Sie Zeit sparen!
 
 Es gibt 2 Stellen, an denen Sie Mehrfach-Aktionen durchführen können:
 
-- [Erweiterte Suche](guides/search)
-- [Übersichten](guides/overviews)
+- In the ticket tab in the [detailed search page](guides/search)
+- In [Overviews](guides/overviews)
 
-Um Mehrfach-Aktionen zu verwenden, wählen Sie zunächst die Tickets aus, auf
-die Sie die Änderungen anwenden möchten. Wählen Sie entweder die Tickets
-einzeln aus, indem Sie auf die Box daneben klicken, oder verwenden Sie die
-Box in der Kopfzeile, um alle Tickets der aktuellen Seite
-auszuwählen. Nachdem Sie alle Tickets der Seite ausgewählt haben, können Sie
-sogar alle Tickets, die Ihrer aktuellen Suchanfrage oder den
-Übersichtsbedingung entsprechen, auswählen, indem Sie auf das Label **Alle
-XX Ergebnisse auswählen** klicken. Die maximale Anzahl von Tickets, die Sie
-für eine Mehrfach-Aktion auswählen können, beträgt 2000.
+In both places, you can apply bulk actions in different ways:
 
-Um einen Bereich von aufeinander folgenden Tickets auszuwählen, klicken Sie
-auf die Box des ersten Tickets, halten Sie dann [[shift]] gedrückt und
-klicken Sie auf das Kontrollkästchen des letzten Tickets. Dadurch werden
-auch alle Tickets dazwischen ausgewählt. Sie können damit sogar auch Tickets
-wieder abwählen.
+- By using the side panel
+- By using the drag & drop overlay
 
-Nachdem Sie die Tickets ausgewählt haben, für die Sie Änderungen vornehmen
-möchten, klicken Sie auf die Schaltfläche **Mehrfach-Aktion** in der oberen
-rechten Ecke und ändern/fügen Sie Attribute über die Felder im Seiten-Panel
-hinzu. Folgende Änderungen können Sie auf Tickets anwenden:
+To use bulk actions, first select the tickets you want to apply the changes
+to. Either select the tickets individually by clicking on the checkbox next
+to them or use the checkbox in the header to select all tickets of the
+current page. After selecting all tickets of the page, you can even select
+all tickets which match your current search query or overview condition by
+clicking on the **Select all XX results** label. The maximum number of
+selectable tickets for a bulk action is 2000.
+
+To select a section of consecutive tickets, click on the checkbox of the
+first ticket, then hold [[shift]] and click on the checkbox of the last
+ticket. This selects all tickets in between as well. This also works for
+unselecting tickets.
+
+Depending on the number of affected tickets, you might see a small
+notification after triggering a bulk action, informing you about the
+progress. The bulk action is performed in the background so you can work on
+other tickets.  However, until the bulk action is finished, you are not able
+to start a new bulk action.
+
+**Side panel:**
+
+![Screenshot zeigt Seitenleiste mit
+Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+
+After you selected tickets, click the `Bulk Action` button in the top right
+corner and change/add attributes by using the fields in the right side
+panel. The available changes you can apply to tickets are:
 
 - Gruppe festlegen
 - Besitzer festlegen
@@ -344,11 +353,26 @@ hinzu. Folgende Änderungen können Sie auf Tickets anwenden:
 - Eine Notiz hinzufügen
 - Ausführen eines Makros
 
-Je nach Anzahl der betroffenen Tickets sehen Sie eine kleine
-Benachrichtigung, die Sie über den Fortschritt informiert. Die
-Mehrfach-Aktion wird im Hintergrund ausgeführt, damit Sie an anderen Tickets
-arbeiten können. Solange die Mehrfach-Aktion nicht abgeschlossen ist, können
-Sie jedoch keine neue Mehrfach-Aktion starten.
+**Drag & drop with bulk overlay:**
+
+![Screenshot shows the bulk action via drag and
+drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
+
+After you selected tickets, drag them by pressing and holding the mouse
+button and drop them on the desired action in the bulk action overlay. You
+can always skip this by dropping the tickets in the middle of the page. The
+available actions you can apply to tickets are:
+
+- Gruppe festlegen
+- Besitzer festlegen
+- Unassign owner
+- Unassign owner and set group
+- Run macro
+
+Start your drag and drop action from one of the already selected tickets in
+case you selected all relevant ones.  To include another unselected ticket,
+start dragging from there and so it is also included in the batch
+processing.
 
 ## Tickets zusammenfassen
 

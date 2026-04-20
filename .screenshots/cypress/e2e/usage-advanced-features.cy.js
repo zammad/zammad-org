@@ -159,7 +159,7 @@ describe('usage advanced features', () => {
     cy.get('[id="ticket-time-accounting-header"]').parent().screenshot('time-accounting-overview', {padding: 5})
   })
 
-  it('overview bulk action', () => {
+  it('bulk action overview side panel', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/view/open-group')
     cy.get('[aria-label="Select this entry"]').first().click()
@@ -180,6 +180,20 @@ describe('usage advanced features', () => {
         })
       })
     })
+  })
+
+  it('bulk action overview drag and drop ', () => {
+    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.visit('/desktop/tickets/view/open-group')
+    cy.get('[aria-label="Select this entry"]').first().click()
+    cy.get('[aria-label="Select this entry"]').first().click().wait(300)
+    cy.get('[href="/desktop/tickets/8"]').trigger('pointerdown', { button: 0, buttons: 1, isPrimary: true, force: true })
+    cy.wait(1000)
+    // RSC: didn't get the "Assign tickets" overlay to show up, so decided to stick with the initial overlay screenshot for now
+    cy.document().trigger('pointermove', { clientX: 0, clientY: 0, buttons: 1, isPrimary: true })
+    cy.document().trigger('pointermove', { clientX: 960, clientY: 500, buttons: 1, isPrimary: true })
+    cy.wait(500)
+    cy.screenshot('bulk-action-drag-and-drop')
   })
 
   it('user popover', () => {

@@ -224,8 +224,6 @@ is not SLA-relevant or the feature is not configured.
 
 ## Bulk Actions
 
-![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
-
 **Why?**
 
 If you have to apply the same changes for many ticket, you can save time!
@@ -234,20 +232,33 @@ If you have to apply the same changes for many ticket, you can save time!
 
 There are 2 places where you can apply bulk actions:
 
-- [Detailed search page](guides/search)
-- [Overviews](guides/overviews)
+- In the ticket tab in the [detailed search page](guides/search)
+- In [Overviews](guides/overviews)
+
+In both places, you can apply bulk actions in different ways:
+
+- By using the side panel
+- By using the drag & drop overlay
 
 To use bulk actions, first select the tickets you want to apply the changes to. Either select the tickets
 individually by clicking on the checkbox next to them or use the checkbox in the header to select all tickets of the
 current page. After selecting all tickets of the page, you can even select all tickets which match your current
-search query or overview condition by clicking on the **Select all XX results** label. The maximum number of tickets
-you can select for a bulk action is 2000.
+search query or overview condition by clicking on the **Select all XX results** label. The maximum number of selectable
+tickets for a bulk action is 2000.
 
 To select a section of consecutive tickets, click on the checkbox of the first ticket, then hold [[shift]] and click on
-the checkbox of the last ticket. This selects all tickets in between as well. It even works for unselecting tickets.
+the checkbox of the last ticket. This selects all tickets in between as well. This also works for unselecting tickets.
 
-After selecting the tickets you want to apply changes to, click the `Bulk Action` button in the top right corner and
-change/add attributes by using the fields in the side panel. The available changes you can apply to tickets are:
+Depending on the number of affected tickets, you might see a small notification after triggering a bulk action,
+informing you about the progress. The bulk action is performed in the background so you can work on other tickets.
+However, until the bulk action is finished, you are not able to start a new bulk action.
+
+**Side panel:**
+
+![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+
+After you selected tickets, click the `Bulk Action` button in the top right corner and change/add attributes by using
+the fields in the right side panel. The available changes you can apply to tickets are:
 
 - Set group
 - Set owner
@@ -256,9 +267,22 @@ change/add attributes by using the fields in the side panel. The available chang
 - Add a note
 - Execute a macro
 
-Depending on the number of affected tickets, you might see a small notification informing you about the progress. The
-bulk action is performed in the background so you can work on other tickets. However, until the bulk action is finished,
-you are not able to start a new bulk action.
+**Drag & drop with bulk overlay:**
+
+![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
+
+After you selected tickets, drag them by pressing and holding the mouse button and drop them on the desired action in
+the bulk action overlay. You can always skip this by dropping the tickets in the middle of the page. The available
+actions you can apply to tickets are:
+
+- Set group
+- Set owner
+- Unassign owner
+- Unassign owner and set group
+- Run macro
+
+Start your drag and drop action from one of the already selected tickets in case you selected all relevant ones.
+To include another unselected ticket, start dragging from there and so it is also included in the batch processing.
 
 ## Merge Tickets
 

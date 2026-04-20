@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-14 14:09+0000\n"
+"POT-Creation-Date: 2026-04-20 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1638,17 +1626,17 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:168
 #: src/en/documentation/use/advanced-features.md:180
 #: src/en/documentation/use/advanced-features.md:200
-#: src/en/documentation/use/advanced-features.md:230
-#: src/en/documentation/use/advanced-features.md:268
-#: src/en/documentation/use/advanced-features.md:293
-#: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:329
-#: src/en/documentation/use/advanced-features.md:347
-#: src/en/documentation/use/advanced-features.md:376
-#: src/en/documentation/use/advanced-features.md:396
-#: src/en/documentation/use/advanced-features.md:416
-#: src/en/documentation/use/advanced-features.md:434
-#: src/en/documentation/use/advanced-features.md:451
+#: src/en/documentation/use/advanced-features.md:228
+#: src/en/documentation/use/advanced-features.md:292
+#: src/en/documentation/use/advanced-features.md:317
+#: src/en/documentation/use/advanced-features.md:334
+#: src/en/documentation/use/advanced-features.md:353
+#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
+#: src/en/documentation/use/advanced-features.md:440
+#: src/en/documentation/use/advanced-features.md:458
+#: src/en/documentation/use/advanced-features.md:475
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1673,17 +1661,17 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:173
 #: src/en/documentation/use/advanced-features.md:188
 #: src/en/documentation/use/advanced-features.md:206
-#: src/en/documentation/use/advanced-features.md:234
-#: src/en/documentation/use/advanced-features.md:276
-#: src/en/documentation/use/advanced-features.md:298
-#: src/en/documentation/use/advanced-features.md:315
-#: src/en/documentation/use/advanced-features.md:335
-#: src/en/documentation/use/advanced-features.md:353
-#: src/en/documentation/use/advanced-features.md:381
-#: src/en/documentation/use/advanced-features.md:407
-#: src/en/documentation/use/advanced-features.md:427
-#: src/en/documentation/use/advanced-features.md:440
-#: src/en/documentation/use/advanced-features.md:457
+#: src/en/documentation/use/advanced-features.md:232
+#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:322
+#: src/en/documentation/use/advanced-features.md:339
+#: src/en/documentation/use/advanced-features.md:359
+#: src/en/documentation/use/advanced-features.md:377
+#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
+#: src/en/documentation/use/advanced-features.md:464
+#: src/en/documentation/use/advanced-features.md:481
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2235,39 +2223,49 @@ msgid "Bulk Actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:228
-#, markdown-text
-msgid ""
-"![Screenshot shows the bulk action side "
-"panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:232
+#: src/en/documentation/use/advanced-features.md:230
 #, markdown-text
 msgid "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:236
+#: src/en/documentation/use/advanced-features.md:234
 #, markdown-text
 msgid "There are 2 places where you can apply bulk actions:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:239
+#: src/en/documentation/use/advanced-features.md:237
 #, markdown-text
-msgid "[Detailed search page](guides/search)"
+msgid "In the ticket tab in the [detailed search page](guides/search)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:239
+#: src/en/documentation/use/advanced-features.md:237
 #, markdown-text
-msgid "[Overviews](guides/overviews)"
+msgid "In [Overviews](guides/overviews)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:245
+#: src/en/documentation/use/advanced-features.md:239
+#, markdown-text
+msgid "In both places, you can apply bulk actions in different ways:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:242
+#, markdown-text
+msgid "By using the side panel"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:242
+#, markdown-text
+msgid "By using the drag & drop overlay"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:248
 #, markdown-text
 msgid ""
 "To use bulk actions, first select the tickets you want to apply the changes "
@@ -2276,83 +2274,151 @@ msgid ""
 "current page. After selecting all tickets of the page, you can even select "
 "all tickets which match your current search query or overview condition by "
 "clicking on the **Select all XX results** label. The maximum number of "
-"tickets you can select for a bulk action is 2000."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:248
-#, markdown-text
-msgid ""
-"To select a section of consecutive tickets, click on the checkbox of the "
-"first ticket, then hold [[shift]] and click on the checkbox of the last "
-"ticket. This selects all tickets in between as well. It even works for "
-"unselecting tickets."
+"selectable tickets for a bulk action is 2000."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:251
 #, markdown-text
 msgid ""
-"After selecting the tickets you want to apply changes to, click the `Bulk "
-"Action` button in the top right corner and change/add attributes by using "
-"the fields in the side panel. The available changes you can apply to tickets "
-"are:"
+"To select a section of consecutive tickets, click on the checkbox of the "
+"first ticket, then hold [[shift]] and click on the checkbox of the last "
+"ticket. This selects all tickets in between as well. This also works for "
+"unselecting tickets."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:255
 #, markdown-text
-msgid "Set group"
+msgid ""
+"Depending on the number of affected tickets, you might see a small "
+"notification after triggering a bulk action, informing you about the "
+"progress. The bulk action is performed in the background so you can work on "
+"other tickets.  However, until the bulk action is finished, you are not able "
+"to start a new bulk action."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-#, markdown-text
-msgid "Set owner"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:257
+#, markdown-text, no-wrap
+msgid "**Side panel:**\n"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:259
 #, markdown-text
-msgid "Set state"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-#, markdown-text
-msgid "Set priority"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-#, markdown-text
-msgid "Add a note"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-#, markdown-text
-msgid "Execute a macro"
+msgid ""
+"![Screenshot shows the bulk action side "
+"panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:262
 #, markdown-text
 msgid ""
-"Depending on the number of affected tickets, you might see a small "
-"notification informing you about the progress. The bulk action is performed "
-"in the background so you can work on other tickets. However, until the bulk "
-"action is finished, you are not able to start a new bulk action."
+"After you selected tickets, click the `Bulk Action` button in the top right "
+"corner and change/add attributes by using the fields in the right side "
+"panel. The available changes you can apply to tickets are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:283
+#, markdown-text
+msgid "Set group"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:283
+#, markdown-text
+msgid "Set owner"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#, markdown-text
+msgid "Set state"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#, markdown-text
+msgid "Set priority"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#, markdown-text
+msgid "Add a note"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#, markdown-text
+msgid "Execute a macro"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:271
+#, markdown-text, no-wrap
+msgid "**Drag & drop with bulk overlay:**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:273
+#, markdown-text
+msgid ""
+"![Screenshot shows the bulk action via drag and "
+"drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:277
+#, markdown-text
+msgid ""
+"After you selected tickets, drag them by pressing and holding the mouse "
+"button and drop them on the desired action in the bulk action overlay. You "
+"can always skip this by dropping the tickets in the middle of the page. The "
+"available actions you can apply to tickets are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+#, markdown-text
+msgid "Unassign owner"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+#, markdown-text
+msgid "Unassign owner and set group"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+#, markdown-text
+msgid "Run macro"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:286
+#, markdown-text
+msgid ""
+"Start your drag and drop action from one of the already selected tickets in "
+"case you selected all relevant ones.  To include another unselected ticket, "
+"start dragging from there and so it is also included in the batch "
+"processing."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:263
+#: src/en/documentation/use/advanced-features.md:287
 #, markdown-text, no-wrap
 msgid "Merge Tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:266
+#: src/en/documentation/use/advanced-features.md:290
 #, markdown-text
 msgid ""
 "![Screenshot shows the ticket merge side "
@@ -2360,7 +2426,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:272
+#: src/en/documentation/use/advanced-features.md:296
 #, markdown-text
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
@@ -2371,7 +2437,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:298
 #, markdown-text
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
@@ -2379,7 +2445,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:280
+#: src/en/documentation/use/advanced-features.md:304
 #, markdown-text
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
@@ -2390,7 +2456,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:307
 #, markdown-text
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
@@ -2398,31 +2464,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 #, markdown-text
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 #, markdown-text
 msgid "The state has changed to \"merged\""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 #, markdown-text
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:288
+#: src/en/documentation/use/advanced-features.md:312
 #, markdown-text, no-wrap
 msgid "Split Tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:291
+#: src/en/documentation/use/advanced-features.md:315
 #, markdown-text
 msgid ""
 "![Screenshot shows the article action split "
@@ -2430,7 +2496,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:296
+#: src/en/documentation/use/advanced-features.md:320
 #, markdown-text
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
@@ -2439,7 +2505,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:324
 #, markdown-text
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
@@ -2447,7 +2513,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:303
+#: src/en/documentation/use/advanced-features.md:327
 #, markdown-text
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
@@ -2456,7 +2522,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:306
+#: src/en/documentation/use/advanced-features.md:330
 #, markdown-text
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
@@ -2464,13 +2530,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:307
+#: src/en/documentation/use/advanced-features.md:331
 #, markdown-text, no-wrap
 msgid "Link Tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:313
+#: src/en/documentation/use/advanced-features.md:337
 #, markdown-text
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
@@ -2479,7 +2545,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:343
 #, markdown-text
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
@@ -2489,13 +2555,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:347
 #, markdown-text
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:347
 #, markdown-text
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
@@ -2504,13 +2570,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:348
 #, markdown-text, no-wrap
 msgid "Duplicate Detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:327
+#: src/en/documentation/use/advanced-features.md:351
 #, markdown-text
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket "
@@ -2518,7 +2584,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:333
+#: src/en/documentation/use/advanced-features.md:357
 #, markdown-text
 msgid ""
 "Sometimes, it happens that a customer reaches out to you (or colleagues) "
@@ -2528,7 +2594,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:339
+#: src/en/documentation/use/advanced-features.md:363
 #, markdown-text
 msgid ""
 "Just create a new ticket and provide some information. Your admin can "
@@ -2538,7 +2604,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:367
 #, markdown-text
 msgid ""
 "When a duplicate is detected, a warning in the ticket shows up (see the "
@@ -2548,7 +2614,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:344
+#: src/en/documentation/use/advanced-features.md:368
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, markdown-text, no-wrap
@@ -2556,7 +2622,7 @@ msgid "Time Accounting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:375
 #, markdown-text
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
@@ -2566,7 +2632,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:355
+#: src/en/documentation/use/advanced-features.md:379
 #, markdown-text
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
@@ -2574,7 +2640,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:357
+#: src/en/documentation/use/advanced-features.md:381
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2582,7 +2648,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:360
+#: src/en/documentation/use/advanced-features.md:384
 #, markdown-text
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
@@ -2591,7 +2657,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:363
+#: src/en/documentation/use/advanced-features.md:387
 #, markdown-text
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
@@ -2601,7 +2667,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:366
+#: src/en/documentation/use/advanced-features.md:390
 #, markdown-text
 msgid ""
 "Activity types can be used to distinguish between different activities and "
@@ -2611,7 +2677,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:370
+#: src/en/documentation/use/advanced-features.md:394
 #, markdown-text
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
@@ -2621,7 +2687,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:372
+#: src/en/documentation/use/advanced-features.md:396
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2629,13 +2695,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:373
+#: src/en/documentation/use/advanced-features.md:397
 #, markdown-text, no-wrap
 msgid "User Detail Panel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:403
 #, markdown-text
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
@@ -2643,7 +2709,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:385
+#: src/en/documentation/use/advanced-features.md:409
 #, markdown-text
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
@@ -2653,7 +2719,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:387
+#: src/en/documentation/use/advanced-features.md:411
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
@@ -2661,7 +2727,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:414
 #, markdown-text
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
@@ -2669,13 +2735,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:415
 #, markdown-text, no-wrap
 msgid "User Detail Page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:394
+#: src/en/documentation/use/advanced-features.md:418
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
@@ -2683,7 +2749,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:398
+#: src/en/documentation/use/advanced-features.md:422
 #, markdown-text
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
@@ -2691,45 +2757,45 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 #, markdown-text
 msgid "See organization membership"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 #, markdown-text
 msgid "See a graph of recent tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "Add or edit a note"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 #, markdown-text
 msgid "Edit the customer (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "See a history of changes (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 #, markdown-text
 msgid "Create a new ticket with this user as customer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:434
 #, markdown-text
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
@@ -2739,13 +2805,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:411
+#: src/en/documentation/use/advanced-features.md:435
 #, markdown-text, no-wrap
 msgid "Organization Detail Page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:414
+#: src/en/documentation/use/advanced-features.md:438
 #, markdown-text
 msgid ""
 "![Screenshot shows organization detail "
@@ -2753,7 +2819,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:418
+#: src/en/documentation/use/advanced-features.md:442
 #, markdown-text
 msgid ""
 "It allows you to see all relevant organization information in one "
@@ -2761,31 +2827,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "See the members of the organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "Edit the organization (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 #, markdown-text
 msgid "Create a new user as a member of this organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:454
 #, markdown-text
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
@@ -2794,13 +2860,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:455
 #, markdown-text, no-wrap
 msgid "External Issues and Assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:462
 #, markdown-text
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
@@ -2810,7 +2876,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:466
 #, markdown-text
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" "
@@ -2818,7 +2884,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:447
+#: src/en/documentation/use/advanced-features.md:471
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
@@ -2830,13 +2896,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:448
+#: src/en/documentation/use/advanced-features.md:472
 #, markdown-text, no-wrap
 msgid "Highlight Text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:479
 #, markdown-text
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
@@ -2846,7 +2912,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:459
+#: src/en/documentation/use/advanced-features.md:483
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
@@ -2854,7 +2920,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:463
+#: src/en/documentation/use/advanced-features.md:487
 #, markdown-text
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
@@ -23092,83 +23158,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23335,6 +23324,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23778,6 +23844,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
