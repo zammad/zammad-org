@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-23 13:44+0200\n"
+"POT-Creation-Date: 2026-04-23 14:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11199,11 +11199,45 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/environment-variables.md:262
 #, markdown-text, no-wrap
+msgid "HTTP Client Settings"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:266
+#, markdown-text
+msgid ""
+"Global HTTP timeout settings. These variables control the default timeout "
+"behavior for Zammad's internal HTTP client when connecting to external "
+"services (e.g. OAuth providers, webhooks, or integrations)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:270
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
+": Defines the maximum time in seconds to wait for a connection to be\n"
+"  established with a remote server (e.g. if you have a slow connection).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:274
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
+": Defines the maximum time in seconds to wait for a response after a "
+"connection has been established (e.g. if you have\n"
+"  a slow connection or slow response times on external side).\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/environment-variables.md:275
+#, markdown-text, no-wrap
 msgid "How to Set Environment Variables"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:267
+#: src/en/reference/environment-variables.md:280
 #, markdown-text
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
@@ -11214,55 +11248,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:269
+#: src/en/reference/environment-variables.md:282
 #, markdown-text
 msgid "Examples for package installations:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:271
+#: src/en/reference/environment-variables.md:284
 #, markdown-text
 msgid "Set OPTION to \"value\":"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:272
+#: src/en/reference/environment-variables.md:285
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:277
+#: src/en/reference/environment-variables.md:290
 #, markdown-text
 msgid "Get OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:278
+#: src/en/reference/environment-variables.md:291
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:283
+#: src/en/reference/environment-variables.md:296
 #, markdown-text
 msgid "Unset OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:284
+#: src/en/reference/environment-variables.md:297
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:289
+#: src/en/reference/environment-variables.md:302
 #, markdown-text
 msgid "Restart Zammad after changing settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:290
+#: src/en/reference/environment-variables.md:303
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr ""

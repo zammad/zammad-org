@@ -261,6 +261,20 @@ information.
 : Threads used by **one** delayed jobs worker process (if you have more than one worker process, it is multiplied by
   their amount). The maximum number of threads is `16`.
 
+## HTTP Client Settings
+
+Global HTTP timeout settings. These variables control the default timeout
+behavior for Zammad's internal HTTP client when connecting to external
+services (e.g. OAuth providers, webhooks, or integrations).
+
+`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type="tip" text="30" />
+: Defines the maximum time in seconds to wait for a connection to be
+  established with a remote server (e.g. if you have a slow connection).
+
+`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type="tip" text="60" />
+: Defines the maximum time in seconds to wait for a response after a connection has been established (e.g. if you have
+  a slow connection or slow response times on external side).
+
 ## How to Set Environment Variables
 
 It depends on how you installed Zammad (package, Docker). Either set it via
