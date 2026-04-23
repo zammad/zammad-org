@@ -22,14 +22,6 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
-Installation benötigter Tools:
-
-```sh
-sudo apt install curl apt-transport-https
-```
-
-Paketquellen-Schlüssel hinzufügen:
-
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
@@ -62,9 +54,8 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 
 === OpenSUSE/SLES
 
-Erstellen Sie die Datei `/etc/zypp/repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:
-
 ```sh
+sudo cat << EOF > /etc/zypp/repos.d/elasticsearch.repo
 [elasticsearch]
 name=Elasticsearch repository for 9.x packages
 baseurl=https://artifacts.elastic.co/packages/9.x/yum
@@ -73,13 +64,13 @@ gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=0
 autorefresh=1
 type=rpm-md
+EOF
 ```
 
 === CentOS/RHEL
 
-Erstellen Sie die Datei `/etc/yum.repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:
-
 ```sh
+sudo cat << EOF > /etc/yum.repos.d/elasticsearch.repo
 [elasticsearch]
 name=Elasticsearch repository for 9.x packages
 baseurl=https://artifacts.elastic.co/packages/9.x/yum
@@ -87,6 +78,7 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=0
 type=rpm-md
+EOF
 ```
 
 :::

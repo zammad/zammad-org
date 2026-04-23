@@ -20,14 +20,6 @@ Adapt it wherever needed in case your use-case differs.
 
 === Ubuntu/Debian
 
-Install required tools:
-
-```sh
-sudo apt install curl apt-transport-https
-```
-
-Add repo key:
-
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \
@@ -60,9 +52,8 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 
 === OpenSUSE/SLES
 
-Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:
-
 ```sh
+sudo cat << EOF > /etc/zypp/repos.d/elasticsearch.repo
 [elasticsearch]
 name=Elasticsearch repository for 9.x packages
 baseurl=https://artifacts.elastic.co/packages/9.x/yum
@@ -71,13 +62,13 @@ gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=0
 autorefresh=1
 type=rpm-md
+EOF
 ```
 
 === CentOS/RHEL
 
-Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:
-
 ```sh
+sudo cat << EOF > /etc/yum.repos.d/elasticsearch.repo
 [elasticsearch]
 name=Elasticsearch repository for 9.x packages
 baseurl=https://artifacts.elastic.co/packages/9.x/yum
@@ -85,6 +76,7 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=0
 type=rpm-md
+EOF
 ```
 
 :::

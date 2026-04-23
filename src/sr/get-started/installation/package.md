@@ -175,7 +175,7 @@ adjust it over there -->
 ::::tabs key:distros
 
 === Ubuntu
-Install repository key:
+Add repository key:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
@@ -198,7 +198,7 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubunt
 
 === Debian
 
-Install repository key:
+Add repository key:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
@@ -227,8 +227,6 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debia
 ```
 
 === OpenSUSE/SLES
-
-Add repository:
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
