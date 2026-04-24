@@ -4,7 +4,7 @@ themeConfig:
     next: 'Vorige Seite'
     prev: 'Nächste Seite'
   footer:
-    copyright: 'Copyright © 2012-jetzt <a href="https://zammad-foundation.org"> Zammad Foundation</a>'
+    copyright: 'Copyright © 2012-heute <a href="https://zammad-foundation.org">Zammad Foundation</a>'
     items:
       - 
         link: /de/imprint

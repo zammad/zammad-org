@@ -140,13 +140,15 @@ Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-features.cy.js/ticket-ma
 
 **Warum?**
 
-If you have many steps you do over and over again, you should use a macro
-for that. In such a macro, your admin can pre-define different ticket
-actions you can apply with just a click. As an example, Zammad ships a
-"Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag **spam** is added and the ticket is
-closed. It is even possible to run an [AI
-agent](/en/documentation/use/guides/ai) within a macro on demand.
+Wenn Sie viele Schritte immer wieder durchführen müssen, sollten Sie dafür
+ein Makro verwenden. In einem solchen Makro kann Ihr Administrator
+verschiedene Ticket-Aktionen vordefinieren, die Sie mit nur einem Klick
+anwenden können. Zammad liefert zum Beispiel standardmäßig ein Makro
+"Schließen & als Spam markieren". Wenn es angewendet wird, wird der
+Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag **spam**
+wird hinzugefügt und das Ticket wird geschlossen. Es ist sogar möglich, bei
+Bedarf einen [KI-Agenten](/de/documentation/use/guides/ai) per Makro
+auszuführen.
 
 **Wie?**
 
@@ -310,41 +312,46 @@ Sie Zeit sparen!
 
 Es gibt 2 Stellen, an denen Sie Mehrfach-Aktionen durchführen können:
 
-- In the ticket tab in the [detailed search page](guides/search)
-- In [Overviews](guides/overviews)
+- Im Ticket Tab der [erweiterten Suche](guides/search)
+- In [Übersichten](guides/overviews)
 
-In both places, you can apply bulk actions in different ways:
+An beiden Stellen können Sie Mehrfach-Aktionen auf unterschiedliche Weise
+ausführen:
 
-- By using the side panel
-- By using the drag & drop overlay
+- Durch die Verwendung des Seiten-Panels
+- Durch die Verwendung der Drag-and-Drop-Einblendung
 
-To use bulk actions, first select the tickets you want to apply the changes
-to. Either select the tickets individually by clicking on the checkbox next
-to them or use the checkbox in the header to select all tickets of the
-current page. After selecting all tickets of the page, you can even select
-all tickets which match your current search query or overview condition by
-clicking on the **Select all XX results** label. The maximum number of
-selectable tickets for a bulk action is 2000.
+Um Mehrfach-Aktionen zu verwenden, wählen Sie zunächst die Tickets aus, auf
+die Sie die Änderungen anwenden möchten. Wählen Sie entweder die Tickets
+einzeln aus, indem Sie auf die Box daneben klicken, oder verwenden Sie die
+Box in der Kopfzeile, um alle Tickets der aktuellen Seite
+auszuwählen. Nachdem Sie alle Tickets der Seite ausgewählt haben, können Sie
+sogar alle Tickets, die Ihrer aktuellen Suchanfrage oder den
+Übersichtsbedingung entsprechen, auswählen, indem Sie auf das Label **Alle
+XX Ergebnisse auswählen** klicken. Die maximale Anzahl an auswählbaren
+Tickets für eine Mehrfach-Aktion beträgt 2000.
 
-To select a section of consecutive tickets, click on the checkbox of the
-first ticket, then hold [[shift]] and click on the checkbox of the last
-ticket. This selects all tickets in between as well. This also works for
-unselecting tickets.
+Um einen Bereich von aufeinander folgenden Tickets auszuwählen, klicken Sie
+auf das Kästchen des ersten Tickets, halten Sie dann [[shift]] gedrückt und
+klicken Sie auf das Kontrollkästchen des letzten Tickets. Dadurch werden
+auch alle Tickets dazwischen ausgewählt. Das funktioniert auch für die
+Aufhebung der Auswahl.
 
-Depending on the number of affected tickets, you might see a small
-notification after triggering a bulk action, informing you about the
-progress. The bulk action is performed in the background so you can work on
-other tickets.  However, until the bulk action is finished, you are not able
-to start a new bulk action.
+Je nach Anzahl der betroffenen Tickets sehen Sie nach dem Auslösen einer
+Mehrfach-Aktion eine kleine Benachrichtigung, die Sie über den Fortschritt
+informiert. Die Mehrfach-Aktion wird im Hintergrund ausgeführt, damit Sie an
+anderen Tickets arbeiten können. Solange die Mehrfach-Aktion nicht
+abgeschlossen ist, können Sie jedoch keine neue Mehrfach-Aktion starten.
 
-**Side panel:**
+**Seiten-Panel:**
 
 ![Screenshot zeigt Seitenleiste mit
 Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-After you selected tickets, click the `Bulk Action` button in the top right
-corner and change/add attributes by using the fields in the right side
-panel. The available changes you can apply to tickets are:
+Nachdem Sie Tickets ausgewählt haben, klicken Sie auf die Schaltfläche
+`Mehrfach-Aktion` in der oberen rechten Ecke und ändern bzw. fügen Sie
+Attribute mithilfe der Felder im rechten Bereich hinzu. Die möglichen
+Änderungen, die Sie auf Tickets anwenden können, sind:
 
 - Gruppe festlegen
 - Besitzer festlegen
@@ -353,26 +360,28 @@ panel. The available changes you can apply to tickets are:
 - Eine Notiz hinzufügen
 - Ausführen eines Makros
 
-**Drag & drop with bulk overlay:**
+**Drag & Drop mit Einblendung der Mehrfach-Aktion:**
 
-![Screenshot shows the bulk action via drag and
+![Screenshot zeigt die Mehrfach-Aktion per drag &
 drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
-After you selected tickets, drag them by pressing and holding the mouse
-button and drop them on the desired action in the bulk action overlay. You
-can always skip this by dropping the tickets in the middle of the page. The
-available actions you can apply to tickets are:
+Nachdem Sie Tickets ausgewählt haben, ziehen Sie sie mit gedrückter
+Maustaste auf die gewünschte Aktion in der Mehrfach-Aktion-Einblendung. Sie
+können dies jederzeit abbrechen, indem Sie die Maus zurück zur Mitte der
+Seite bewergen. Die verfügbaren Aktionen, die Sie auf Tickets anwenden
+können, sind:
 
 - Gruppe festlegen
 - Besitzer festlegen
-- Unassign owner
-- Unassign owner and set group
-- Run macro
+- Besitzerzuordnung aufheben
+- Besitzerzuordnung aufheben und Gruppe festlegen
+- Makro ausführen
 
-Start your drag and drop action from one of the already selected tickets in
-case you selected all relevant ones.  To include another unselected ticket,
-start dragging from there and so it is also included in the batch
-processing.
+Beginnen Sie mit der drag & drop Aktion auf einem der bereits ausgewählten
+Tickets, falls Sie bereits alle relevanten Tickets ausgewählt haben.  Wenn
+Sie ein anderes, nicht ausgewähltes Ticket einbeziehen möchten, beginnen Sie
+mit dem Ziehen von dort aus, damit auch dieses Ticket in der Mehrfach-Aktion
+berücksichtigt wird.
 
 ## Tickets zusammenfassen
 

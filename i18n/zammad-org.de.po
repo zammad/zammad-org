@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-14 14:09+0000\n"
-"PO-Revision-Date: 2026-04-14 14:09+0000\n"
+"POT-Creation-Date: 2026-04-23 14:43+0200\n"
+"PO-Revision-Date: 2026-04-24 04:56+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -35,7 +35,7 @@ msgstr "Nächste Seite"
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Copyright © 2012-present <a href=\"https://zammad-foundation.org\">Zammad Foundation</a>"
-msgstr "Copyright © 2012-jetzt <a href=\"https://zammad-foundation.org\"> Zammad Foundation</a>"
+msgstr "Copyright © 2012-heute <a href=\"https://zammad-foundation.org\">Zammad Foundation</a>"
 
 #. type: Hash Value: themeConfig footer items link
 #: .vitepress/config.en.yaml:1
@@ -247,18 +247,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -1833,17 +1821,17 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:168
 #: src/en/documentation/use/advanced-features.md:180
 #: src/en/documentation/use/advanced-features.md:200
-#: src/en/documentation/use/advanced-features.md:230
-#: src/en/documentation/use/advanced-features.md:268
-#: src/en/documentation/use/advanced-features.md:293
-#: src/en/documentation/use/advanced-features.md:310
-#: src/en/documentation/use/advanced-features.md:329
-#: src/en/documentation/use/advanced-features.md:347
-#: src/en/documentation/use/advanced-features.md:376
-#: src/en/documentation/use/advanced-features.md:396
-#: src/en/documentation/use/advanced-features.md:416
-#: src/en/documentation/use/advanced-features.md:434
-#: src/en/documentation/use/advanced-features.md:451
+#: src/en/documentation/use/advanced-features.md:228
+#: src/en/documentation/use/advanced-features.md:292
+#: src/en/documentation/use/advanced-features.md:317
+#: src/en/documentation/use/advanced-features.md:334
+#: src/en/documentation/use/advanced-features.md:353
+#: src/en/documentation/use/advanced-features.md:371
+#: src/en/documentation/use/advanced-features.md:400
+#: src/en/documentation/use/advanced-features.md:420
+#: src/en/documentation/use/advanced-features.md:440
+#: src/en/documentation/use/advanced-features.md:458
+#: src/en/documentation/use/advanced-features.md:475
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Warum?**\n"
@@ -1871,17 +1859,17 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:173
 #: src/en/documentation/use/advanced-features.md:188
 #: src/en/documentation/use/advanced-features.md:206
-#: src/en/documentation/use/advanced-features.md:234
-#: src/en/documentation/use/advanced-features.md:276
-#: src/en/documentation/use/advanced-features.md:298
-#: src/en/documentation/use/advanced-features.md:315
-#: src/en/documentation/use/advanced-features.md:335
-#: src/en/documentation/use/advanced-features.md:353
-#: src/en/documentation/use/advanced-features.md:381
-#: src/en/documentation/use/advanced-features.md:407
-#: src/en/documentation/use/advanced-features.md:427
-#: src/en/documentation/use/advanced-features.md:440
-#: src/en/documentation/use/advanced-features.md:457
+#: src/en/documentation/use/advanced-features.md:232
+#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:322
+#: src/en/documentation/use/advanced-features.md:339
+#: src/en/documentation/use/advanced-features.md:359
+#: src/en/documentation/use/advanced-features.md:377
+#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
+#: src/en/documentation/use/advanced-features.md:464
+#: src/en/documentation/use/advanced-features.md:481
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Wie?**\n"
@@ -2154,15 +2142,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:113
-#, fuzzy
-#| msgid ""
-#| "If you have many steps you do over and over again, you should use a macro "
-#| "for that. In such a macro, your admin can pre-define different ticket "
-#| "actions you can apply with just a click. As an example, Zammad ships a "
-#| "\"Close & Tag as Spam\" macro by default. If applied, the user who "
-#| "executes the macro is assigned as owner, a tag `spam` is added and the "
-#| "ticket is closed. It is even possible to run an [AI agent](/en/"
-#| "documentation/use/guides/ai) within a macro on demand."
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
@@ -2177,9 +2156,9 @@ msgstr ""
 "verschiedene Ticket-Aktionen vordefinieren, die Sie mit nur einem Klick "
 "anwenden können. Zammad liefert zum Beispiel standardmäßig ein Makro "
 "\"Schließen & als Spam markieren\". Wenn es angewendet wird, wird der "
-"Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag `spam` "
+"Benutzer, der das Makro ausführt, als Besitzer zugewiesen, ein Tag **spam** "
 "wird hinzugefügt und das Ticket wird geschlossen. Es ist sogar möglich, bei "
-"Bedarf einen [KI-Agent](/de/documentation/use/guides/ai) per Makro "
+"Bedarf einen [KI-Agenten](/de/documentation/use/guides/ai) per Makro "
 "auszuführen."
 
 #. type: Plain text
@@ -2541,16 +2520,7 @@ msgid "Bulk Actions"
 msgstr "Mehrfach-Aktionen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:228
-msgid ""
-"![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
-"advanced-features.cy.js/bulk-side-panel-overviews.png)"
-msgstr ""
-"![Screenshot zeigt Seitenleiste mit Mehrfach-Aktionen](/screenshots/cypress/"
-"usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:232
+#: src/en/documentation/use/advanced-features.md:230
 msgid ""
 "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
@@ -2558,22 +2528,39 @@ msgstr ""
 "Sie Zeit sparen!"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:236
+#: src/en/documentation/use/advanced-features.md:234
 msgid "There are 2 places where you can apply bulk actions:"
 msgstr "Es gibt 2 Stellen, an denen Sie Mehrfach-Aktionen durchführen können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:239
-msgid "[Detailed search page](guides/search)"
-msgstr "[Erweiterte Suche](guides/search)"
+#: src/en/documentation/use/advanced-features.md:237
+msgid "In the ticket tab in the [detailed search page](guides/search)"
+msgstr "Im Ticket Tab der [erweiterten Suche](guides/search)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:239
-msgid "[Overviews](guides/overviews)"
-msgstr "[Übersichten](guides/overviews)"
+#: src/en/documentation/use/advanced-features.md:237
+msgid "In [Overviews](guides/overviews)"
+msgstr "In [Übersichten](guides/overviews)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:245
+#: src/en/documentation/use/advanced-features.md:239
+msgid "In both places, you can apply bulk actions in different ways:"
+msgstr ""
+"An beiden Stellen können Sie Mehrfach-Aktionen auf unterschiedliche Weise "
+"ausführen:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:242
+msgid "By using the side panel"
+msgstr "Durch die Verwendung des Seiten-Panels"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:242
+msgid "By using the drag & drop overlay"
+msgstr "Durch die Verwendung der Drag-and-Drop-Einblendung"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:248
 msgid ""
 "To use bulk actions, first select the tickets you want to apply the changes "
 "to. Either select the tickets individually by clicking on the checkbox next "
@@ -2581,7 +2568,7 @@ msgid ""
 "current page. After selecting all tickets of the page, you can even select "
 "all tickets which match your current search query or overview condition by "
 "clicking on the **Select all XX results** label. The maximum number of "
-"tickets you can select for a bulk action is 2000."
+"selectable tickets for a bulk action is 2000."
 msgstr ""
 "Um Mehrfach-Aktionen zu verwenden, wählen Sie zunächst die Tickets aus, auf "
 "die Sie die Änderungen anwenden möchten. Wählen Sie entweder die Tickets "
@@ -2590,88 +2577,162 @@ msgstr ""
 "Nachdem Sie alle Tickets der Seite ausgewählt haben, können Sie sogar alle "
 "Tickets, die Ihrer aktuellen Suchanfrage oder den Übersichtsbedingung "
 "entsprechen, auswählen, indem Sie auf das Label **Alle XX Ergebnisse "
-"auswählen** klicken. Die maximale Anzahl von Tickets, die Sie für eine "
-"Mehrfach-Aktion auswählen können, beträgt 2000."
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:248
-msgid ""
-"To select a section of consecutive tickets, click on the checkbox of the "
-"first ticket, then hold [[shift]] and click on the checkbox of the last "
-"ticket. This selects all tickets in between as well. It even works for "
-"unselecting tickets."
-msgstr ""
-"Um einen Bereich von aufeinander folgenden Tickets auszuwählen, klicken Sie "
-"auf die Box des ersten Tickets, halten Sie dann [[shift]] gedrückt und "
-"klicken Sie auf das Kontrollkästchen des letzten Tickets. Dadurch werden "
-"auch alle Tickets dazwischen ausgewählt. Sie können damit sogar auch Tickets "
-"wieder abwählen."
+"auswählen** klicken. Die maximale Anzahl an auswählbaren Tickets für eine "
+"Mehrfach-Aktion beträgt 2000."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:251
 msgid ""
-"After selecting the tickets you want to apply changes to, click the `Bulk "
-"Action` button in the top right corner and change/add attributes by using "
-"the fields in the side panel. The available changes you can apply to tickets "
-"are:"
+"To select a section of consecutive tickets, click on the checkbox of the "
+"first ticket, then hold [[shift]] and click on the checkbox of the last "
+"ticket. This selects all tickets in between as well. This also works for "
+"unselecting tickets."
 msgstr ""
-"Nachdem Sie die Tickets ausgewählt haben, für die Sie Änderungen vornehmen "
-"möchten, klicken Sie auf die Schaltfläche **Mehrfach-Aktion** in der oberen "
-"rechten Ecke und ändern/fügen Sie Attribute über die Felder im Seiten-Panel "
-"hinzu. Folgende Änderungen können Sie auf Tickets anwenden:"
+"Um einen Bereich von aufeinander folgenden Tickets auszuwählen, klicken Sie "
+"auf das Kästchen des ersten Tickets, halten Sie dann [[shift]] gedrückt und "
+"klicken Sie auf das Kontrollkästchen des letzten Tickets. Dadurch werden "
+"auch alle Tickets dazwischen ausgewählt. Das funktioniert auch für die "
+"Aufhebung der Auswahl."
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Set group"
-msgstr "Gruppe festlegen"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:255
+msgid ""
+"Depending on the number of affected tickets, you might see a small "
+"notification after triggering a bulk action, informing you about the "
+"progress. The bulk action is performed in the background so you can work on "
+"other tickets.  However, until the bulk action is finished, you are not able "
+"to start a new bulk action."
+msgstr ""
+"Je nach Anzahl der betroffenen Tickets sehen Sie nach dem Auslösen einer "
+"Mehrfach-Aktion eine kleine Benachrichtigung, die Sie über den Fortschritt "
+"informiert. Die Mehrfach-Aktion wird im Hintergrund ausgeführt, damit Sie an "
+"anderen Tickets arbeiten können. Solange die Mehrfach-Aktion nicht "
+"abgeschlossen ist, können Sie jedoch keine neue Mehrfach-Aktion starten."
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Set owner"
-msgstr "Besitzer festlegen"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:257
+#, no-wrap
+msgid "**Side panel:**\n"
+msgstr "**Seiten-Panel:**\n"
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Set state"
-msgstr "Status festlegen"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Set priority"
-msgstr "Priorität festlegen"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Add a note"
-msgstr "Eine Notiz hinzufügen"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:258
-msgid "Execute a macro"
-msgstr "Ausführen eines Makros"
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:259
+msgid ""
+"![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
+"advanced-features.cy.js/bulk-side-panel-overviews.png)"
+msgstr ""
+"![Screenshot zeigt Seitenleiste mit Mehrfach-Aktionen](/screenshots/cypress/"
+"usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:262
 msgid ""
-"Depending on the number of affected tickets, you might see a small "
-"notification informing you about the progress. The bulk action is performed "
-"in the background so you can work on other tickets. However, until the bulk "
-"action is finished, you are not able to start a new bulk action."
+"After you selected tickets, click the `Bulk Action` button in the top right "
+"corner and change/add attributes by using the fields in the right side "
+"panel. The available changes you can apply to tickets are:"
 msgstr ""
-"Je nach Anzahl der betroffenen Tickets sehen Sie eine kleine "
-"Benachrichtigung, die Sie über den Fortschritt informiert. Die Mehrfach-"
-"Aktion wird im Hintergrund ausgeführt, damit Sie an anderen Tickets arbeiten "
-"können. Solange die Mehrfach-Aktion nicht abgeschlossen ist, können Sie "
-"jedoch keine neue Mehrfach-Aktion starten."
+"Nachdem Sie Tickets ausgewählt haben, klicken Sie auf die Schaltfläche "
+"`Mehrfach-Aktion` in der oberen rechten Ecke und ändern bzw. fügen Sie "
+"Attribute mithilfe der Felder im rechten Bereich hinzu. Die möglichen "
+"Änderungen, die Sie auf Tickets anwenden können, sind:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:283
+msgid "Set group"
+msgstr "Gruppe festlegen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:283
+msgid "Set owner"
+msgstr "Besitzer festlegen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+msgid "Set state"
+msgstr "Status festlegen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+msgid "Set priority"
+msgstr "Priorität festlegen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+msgid "Add a note"
+msgstr "Eine Notiz hinzufügen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:269
+msgid "Execute a macro"
+msgstr "Ausführen eines Makros"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:271
+#, no-wrap
+msgid "**Drag & drop with bulk overlay:**\n"
+msgstr "**Drag & Drop mit Einblendung der Mehrfach-Aktion:**\n"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:273
+msgid ""
+"![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/"
+"usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+msgstr ""
+"![Screenshot zeigt die Mehrfach-Aktion per drag & drop](/screenshots/cypress/"
+"usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:277
+msgid ""
+"After you selected tickets, drag them by pressing and holding the mouse "
+"button and drop them on the desired action in the bulk action overlay. You "
+"can always skip this by dropping the tickets in the middle of the page. The "
+"available actions you can apply to tickets are:"
+msgstr ""
+"Nachdem Sie Tickets ausgewählt haben, ziehen Sie sie mit gedrückter "
+"Maustaste auf die gewünschte Aktion in der Mehrfach-Aktion-Einblendung. Sie "
+"können dies jederzeit abbrechen, indem Sie die Maus zurück zur Mitte der "
+"Seite bewergen. Die verfügbaren Aktionen, die Sie auf Tickets anwenden "
+"können, sind:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+msgid "Unassign owner"
+msgstr "Besitzerzuordnung aufheben"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+msgid "Unassign owner and set group"
+msgstr "Besitzerzuordnung aufheben und Gruppe festlegen"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/advanced-features.md:283
+msgid "Run macro"
+msgstr "Makro ausführen"
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:286
+msgid ""
+"Start your drag and drop action from one of the already selected tickets in "
+"case you selected all relevant ones.  To include another unselected ticket, "
+"start dragging from there and so it is also included in the batch processing."
+msgstr ""
+"Beginnen Sie mit der drag & drop Aktion auf einem der bereits ausgewählten "
+"Tickets, falls Sie bereits alle relevanten Tickets ausgewählt haben.  Wenn "
+"Sie ein anderes, nicht ausgewähltes Ticket einbeziehen möchten, beginnen Sie "
+"mit dem Ziehen von dort aus, damit auch dieses Ticket in der Mehrfach-Aktion "
+"berücksichtigt wird."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:263
+#: src/en/documentation/use/advanced-features.md:287
 #, no-wrap
 msgid "Merge Tickets"
 msgstr "Tickets zusammenfassen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:266
+#: src/en/documentation/use/advanced-features.md:290
 msgid ""
 "![Screenshot shows the ticket merge side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-merge.png)"
@@ -2680,7 +2741,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-merge.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:272
+#: src/en/documentation/use/advanced-features.md:296
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
 "those tickets into one. This might be the case if a customer sends you a new "
@@ -2696,7 +2757,7 @@ msgstr ""
 "bestehende Kommunikation zu antworten)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:274
+#: src/en/documentation/use/advanced-features.md:298
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
 "you select the merging into the selected one."
@@ -2706,7 +2767,7 @@ msgstr ""
 "Ticket übernommen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:280
+#: src/en/documentation/use/advanced-features.md:304
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
 "use the ::a:: menu and select `Merge`. This opens a side panel in which you "
@@ -2722,7 +2783,7 @@ msgstr ""
 "`Zusammenfassen` am unteren Rand."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:307
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
 "which you executed the merge still exists with the following changes:"
@@ -2732,28 +2793,28 @@ msgstr ""
 "weiterhin mit den folgenden Änderungen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr "Die Artikel wurden mit dem Text \"zusammengefasst\" ersetzt"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 msgid "The state has changed to \"merged\""
 msgstr "Der Status hat sich auf \"zusammengefasst\" geändert"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:311
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr "Das Ticket ist mit seinem \"Eltern\"-Ticket verknüpft"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:288
+#: src/en/documentation/use/advanced-features.md:312
 #, no-wrap
 msgid "Split Tickets"
 msgstr "Tickets abspalten"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:291
+#: src/en/documentation/use/advanced-features.md:315
 msgid ""
 "![Screenshot shows the article action split menu](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-split.png)"
@@ -2762,7 +2823,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/ticket-split.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:296
+#: src/en/documentation/use/advanced-features.md:320
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example, this might be the "
@@ -2774,7 +2835,7 @@ msgstr ""
 "eine Bestellung aufgeben möchte."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:300
+#: src/en/documentation/use/advanced-features.md:324
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
@@ -2783,7 +2844,7 @@ msgstr ""
 "wählen Sie `Abspalten`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:303
+#: src/en/documentation/use/advanced-features.md:327
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
 "the initial ticket. The content of the article is also included. You can "
@@ -2795,7 +2856,7 @@ msgstr ""
 "auf `Erstellen` klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:306
+#: src/en/documentation/use/advanced-features.md:330
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
 "ticket is linked in the split off ticket as parent."
@@ -2805,13 +2866,13 @@ msgstr ""
 "\"Eltern\"-Ticket verknüpft."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:307
+#: src/en/documentation/use/advanced-features.md:331
 #, no-wrap
 msgid "Link Tickets"
 msgstr "Tickets verknüpfen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:313
+#: src/en/documentation/use/advanced-features.md:337
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2823,7 +2884,7 @@ msgstr ""
 "werden automatisch verknüpft."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:319
+#: src/en/documentation/use/advanced-features.md:343
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the \"Links\" section. This opens a side panel in which you can "
@@ -2837,12 +2898,12 @@ msgstr ""
 "können Sie zwischen verschiedenen Link-Typen wählen:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:347
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr "**Normal:** für verwandte Tickets, die keine Hierarchie haben."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:347
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
 "other is a subtask. This link type is used by default if a tickets gets "
@@ -2853,13 +2914,13 @@ msgstr ""
 "verwendet, wenn ein Ticket geteilt oder zusammengefasst wird."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:348
 #, no-wrap
 msgid "Duplicate Detection"
 msgstr "Duplikaterkennung"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:327
+#: src/en/documentation/use/advanced-features.md:351
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket creation](/"
 "screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
@@ -2868,7 +2929,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:333
+#: src/en/documentation/use/advanced-features.md:357
 msgid ""
 "Sometimes, it happens that a customer reaches out to you (or colleagues) "
 "more than once about a single issue. To avoid creating duplicate tickets, "
@@ -2882,7 +2943,7 @@ msgstr ""
 "und konfiguriert werden."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:339
+#: src/en/documentation/use/advanced-features.md:363
 msgid ""
 "Just create a new ticket and provide some information. Your admin can "
 "configure which ticket attributes must match for the warning to show up "
@@ -2897,7 +2958,7 @@ msgstr ""
 "anzupassen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:367
 msgid ""
 "When a duplicate is detected, a warning in the ticket shows up (see the "
 "example in screenshot above). This warning can contain a ticket number. "
@@ -2911,7 +2972,7 @@ msgstr ""
 "einfach und fahren Sie mit der Erstellung des Tickets fort."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:344
+#: src/en/documentation/use/advanced-features.md:368
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
@@ -2919,7 +2980,7 @@ msgid "Time Accounting"
 msgstr "Zeiterfassung"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:375
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
 "much time you spent on tickets. Based on the accounted times in the ticket, "
@@ -2933,7 +2994,7 @@ msgstr ""
 "Verfolgung von Support-Kontingenten verwendet werden."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:355
+#: src/en/documentation/use/advanced-features.md:379
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
 "much time you spent on the ticket."
@@ -2943,7 +3004,7 @@ msgstr ""
 "Tickets gebraucht haben."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:357
+#: src/en/documentation/use/advanced-features.md:381
 msgid ""
 "![Screenshot shows the time accounting dialog](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-dialog.png)"
@@ -2952,7 +3013,7 @@ msgstr ""
 "advanced-features.cy.js/time-accounting-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:360
+#: src/en/documentation/use/advanced-features.md:384
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
 "ticket, your administrator hasn't enabled it yet or the rule for tickets to "
@@ -2964,7 +3025,7 @@ msgstr ""
 "nicht."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:363
+#: src/en/documentation/use/advanced-features.md:387
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
 "your administrator may decide to show an optional label next to the field to "
@@ -2977,7 +3038,7 @@ msgstr ""
 "in welcher Einheit die Zeit erwartet wird (siehe Screenshot)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:366
+#: src/en/documentation/use/advanced-features.md:390
 msgid ""
 "Activity types can be used to distinguish between different activities and "
 "for grouping the accounted times. If this optional feature is active, it "
@@ -2990,7 +3051,7 @@ msgstr ""
 "angezeigt, aus der Sie im Erfassungsdialog auswählen können."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:370
+#: src/en/documentation/use/advanced-features.md:394
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
@@ -3003,7 +3064,7 @@ msgstr ""
 "sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:372
+#: src/en/documentation/use/advanced-features.md:396
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/usage-"
 "advanced-features.cy.js/time-accounting-overview.png)"
@@ -3012,13 +3073,13 @@ msgstr ""
 "usage-advanced-features.cy.js/time-accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:373
+#: src/en/documentation/use/advanced-features.md:397
 #, no-wrap
 msgid "User Detail Panel"
 msgstr "Benutzerinfo"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:403
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -3027,7 +3088,7 @@ msgstr ""
 "aktuelle Ansicht zu verlassen und können sich auf Ihre Aufgabe konzentrieren."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:385
+#: src/en/documentation/use/advanced-features.md:409
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -3041,7 +3102,7 @@ msgstr ""
 "[Benutzer-Detailseite](#user-detail-page) zu öffnen."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:387
+#: src/en/documentation/use/advanced-features.md:411
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
@@ -3050,7 +3111,7 @@ msgstr ""
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:414
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -3060,13 +3121,13 @@ msgstr ""
 "kann."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:391
+#: src/en/documentation/use/advanced-features.md:415
 #, no-wrap
 msgid "User Detail Page"
 msgstr "Benutzer-Detailseite"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:394
+#: src/en/documentation/use/advanced-features.md:418
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-"
 "features.cy.js/user-detail-page.png)"
@@ -3075,7 +3136,7 @@ msgstr ""
 "features.cy.js/user-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:398
+#: src/en/documentation/use/advanced-features.md:422
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
@@ -3084,39 +3145,39 @@ msgstr ""
 "Beispiele dafür, was Sie dort finden und tun können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 msgid "See organization membership"
 msgstr "Mitgliedschaft in einer Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 msgid "See a graph of recent tickets"
 msgstr "Diagramm der letzten Tickets sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:449
 msgid "Add or edit a note"
 msgstr "Hinzufügen oder Bearbeiten einer Notiz"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 msgid "Edit the customer (via ::a:: menu)"
 msgstr "Kundeninformationen bearbeiten (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:449
 msgid "See a history of changes (via ::a:: menu)"
 msgstr "Historie der Änderungen anzeigen (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:405
+#: src/en/documentation/use/advanced-features.md:429
 msgid "Create a new ticket with this user as customer"
 msgstr "Ein neues Ticket mit diesem Benutzer als Kunden erstellen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:434
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
 "view). This opens a new tab with the customer detail page. In case you also "
@@ -3129,13 +3190,13 @@ msgstr ""
 "Menü sogar eine Löschaufgabe für diesen Benutzer erstellen."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:411
+#: src/en/documentation/use/advanced-features.md:435
 #, no-wrap
 msgid "Organization Detail Page"
 msgstr "Organisations-Detailseite"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:414
+#: src/en/documentation/use/advanced-features.md:438
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/usage-"
 "advanced-features.cy.js/organization-detail-page.png)"
@@ -3144,7 +3205,7 @@ msgstr ""
 "advanced-features.cy.js/organization-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:418
+#: src/en/documentation/use/advanced-features.md:442
 msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
@@ -3153,27 +3214,27 @@ msgstr ""
 "einem Ort einsehen. Beispiele dafür, was Sie dort finden und tun können:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 msgid "See the members of the organization"
 msgstr "Mitglieder der Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr "Ein Diagramm der letzten Tickets der gesamten Organisation sehen"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 msgid "Edit the organization (via ::a:: menu)"
 msgstr "Die Organisation bearbeiten (über das ::a:: Menü)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:425
+#: src/en/documentation/use/advanced-features.md:449
 msgid "Create a new user as a member of this organization"
 msgstr "Einen neuen Benutzer als Mitglied dieser Organisation erstellen"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:454
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
 "detail view next to the user avatar). This opens a new tab with the "
@@ -3184,13 +3245,13 @@ msgstr ""
 "Organisations-Detailseite als neuen Tab."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:455
 #, no-wrap
 msgid "External Issues and Assets"
 msgstr "Externe Issues und Inventar"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:462
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with Github or "
 "Gitlab issues, you can link to these external systems to have all relevant "
@@ -3204,7 +3265,7 @@ msgstr ""
 "aktivieren und konfigurieren."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:466
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
 "screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)"
@@ -3214,7 +3275,7 @@ msgstr ""
 "sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:447
+#: src/en/documentation/use/advanced-features.md:471
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon (see Gitlab example in screenshot above). Click the "
@@ -3232,13 +3293,13 @@ msgstr ""
 "werden Sie zu diesem im jeweiligen System weitergeleitet."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:448
+#: src/en/documentation/use/advanced-features.md:472
 #, no-wrap
 msgid "Highlight Text"
 msgstr "Text hervorheben"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:479
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
 "ticket and to make sure important parts aren't getting overlooked. Be aware "
@@ -3252,7 +3313,7 @@ msgstr ""
 "Artikeln für Sie und andere Agenten."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:459
+#: src/en/documentation/use/advanced-features.md:483
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
 "cypress/usage-advanced-features.cy.js/text-highlighting.png)"
@@ -3261,7 +3322,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:463
+#: src/en/documentation/use/advanced-features.md:487
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
 "the ticket detail view. To highlight text, either select text first and then "
@@ -3413,14 +3474,6 @@ msgstr "Kunde"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:44
-#, fuzzy
-#| msgid ""
-#| "Enter a name or email address of a customer to search for existing "
-#| "accounts. You can even search for organizations and their members. Select "
-#| "an option from the dropdown menu or create a new customer by clicking the "
-#| "**+ Create new Customer** button on the right side of the field. This "
-#| "opens a dialog where you can provide all relevant information of the "
-#| "customer. A ticket can only have one customer."
 msgid ""
 "Enter a name or email address of a customer to search for existing accounts. "
 "You can even search for organizations and their members. Select an option "
@@ -3432,8 +3485,8 @@ msgstr ""
 "Geben Sie einen Namen oder die E-Mail-Adresse eines Kunden ein, um nach "
 "bestehenden Benutzern zu suchen. Sie können auch nach Organisationen und "
 "deren Mitgliedern suchen. Wählen Sie eine Option aus dem Dropdown-Menü oder "
-"legen Sie einen neuen Kunden an, indem Sie auf die Schaltfläche **+ Neuen "
-"Kunden erstellen** rechtes des Feldes klicken. Daraufhin öffnet sich ein "
+"legen Sie einen neuen Kunden an, indem Sie auf die Schaltfläche `+ Neuen "
+"Kunden erstellen` rechts neben dem Feld klicken. Daraufhin öffnet sich ein "
 "Dialog, in dem Sie alle relevanten Informationen zum Kunden eingeben können. "
 "Ein Ticket kann nur einen Kunden haben."
 
@@ -3491,18 +3544,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:62
-#, fuzzy
-#| msgid ""
-#| "After you provided the relevant information, finally create the ticket "
-#| "with a click on the **Create** button. Read on [how to work with existing "
-#| "tickets](work-with-tickets)."
 msgid ""
 "After you provided the relevant information, finally create the ticket with "
 "a click on the `Create` button. Read on [how to work with existing tickets]"
 "(work-with-tickets)."
 msgstr ""
 "Nachdem Sie die relevanten Informationen eingegeben haben, erstellen Sie "
-"schließlich das Ticket mit einem Klick auf die Schaltfläche **Erstellen**. "
+"schließlich das Ticket mit einem Klick auf die Schaltfläche `Erstellen`. "
 "Lesen Sie weiter, [wie man mit Tickets arbeitet](work-with-tickets)."
 
 #. type: Title #
@@ -4160,12 +4208,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:19
-#, fuzzy
-#| msgid ""
-#| "For the most changes (except tags or title renaming, for example), an "
-#| "explicit update of the ticket is needed. So make sure to click the "
-#| "**Update** button on the right side of the footer bar when you are happy "
-#| "with your changes."
 msgid ""
 "For the most changes (except tags or title renaming, for example), an "
 "explicit update of the ticket is needed. So make sure to click the `Update` "
@@ -4174,7 +4216,7 @@ msgid ""
 msgstr ""
 "Für die meisten Änderungen (außer z.B. Tags oder Titel umbenennen) ist eine "
 "explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die "
-"Schaltfläche **Aktualisieren** auf der rechten Seite der Fußleiste, wenn Sie "
+"Schaltfläche `Aktualisieren` auf der rechten Seite der Fußleiste, wenn Sie "
 "mit Ihren Änderungen zufrieden sind."
 
 #. type: Title ##
@@ -5492,14 +5534,6 @@ msgstr "Schreibassistent-Werkzeuge"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:43
-#, fuzzy
-#| msgid ""
-#| "The AI-powered writing assistant tools are designed to simplify and "
-#| "enhance your ticket response workflow while you create an article.  To "
-#| "use such a tool, you first have to select text you want to apply the "
-#| "changes to. After that, click the **Writing Assistant Tools** button at "
-#| "the left side of the editor toolbar and choose one of the following "
-#| "tools, depending on what you want to perform."
 msgid ""
 "The AI-powered writing assistant tools are designed to simplify and enhance "
 "your ticket response workflow while you create an article.  To use such a "
@@ -5512,9 +5546,9 @@ msgstr ""
 "Workflow bei der Erstellung eines Artikels beim Beantworten von Ticket zu "
 "vereinfachen. Um ein solches Werkzeug zu verwenden, markieren Sie zunächst "
 "den Text, auf den Sie die Änderungen anwenden möchten. Klicken Sie dann auf "
-"die Schaltfläche **Schreibassist-Werkzeuge** auf der linken Seite der "
-"Symbolleiste des Editors und wählen Sie eines der Werkzeuge aus, je nachdem, "
-"was Sie durchführen möchten."
+"die Schaltfläche `Schreibassistent-Werkzeuge` auf der linken Seite der "
+"Symbolleiste des Editors und wählen Sie abhängig von Ihrem Anwendungsfall "
+"eines der Werkzeuge aus."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:45
@@ -8691,49 +8725,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade-repo-migration.md:123
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rm /etc/apt/keyrings/pkgr-zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "=== Debian\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "List the keys of your system:\n"
-#| "\n"
-#| "```sh\n"
-#| "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
-#| "```\n"
-#| "\n"
-#| "Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm -e <key-name>\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "List the keys of your system:\n"
-#| "\n"
-#| "```sh\n"
-#| "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
-#| "```\n"
-#| "\n"
-#| "Delete the key(s) related to Zammad (and only those!), replace ``<key-name>`` with the actual key ID:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm -e <key-name>\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -8798,7 +8790,7 @@ msgstr ""
 "rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\\n'\n"
 "```\n"
 "\n"
-"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie ``<key-name>`` mit der tatsächlichen Schlüssel- ID:\n"
+"Löschen Sie den/die Zammad-relevanten Schlüssel (und nur diese(n)!), ersetzen Sie `<key-name>` mit der tatsächlichen Schlüssel- ID:\n"
 "\n"
 "```sh\n"
 "sudo rpm -e <key-name>\n"
@@ -9019,7 +9011,7 @@ msgstr "Zammad starten"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/host-upgrade-repo-migration.md:255
-#: src/en/get-started/installation/package.md:308
+#: src/en/get-started/installation/package.md:306
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -10026,7 +10018,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:157
-#: src/en/tutorials/install-elasticsearch.md:92
+#: src/en/tutorials/install-elasticsearch.md:84
 #, no-wrap
 msgid "Install Elasticsearch"
 msgstr "Elasticsearch installieren"
@@ -10081,11 +10073,88 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:174
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Ubuntu 22.04):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Ubuntu 24.04):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "Install repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 11):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 12):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 13):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Add repository:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+#| "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
+#| "```\n"
+#| "\n"
+#| "===CentOS/RHEL\n"
+#| "Add repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
+#| "```\n"
+#| "\n"
+#| "Add repository:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+#| "  -o /etc/yum.repos.d/zammad.repo\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
-"Install repository key:\n"
+"Add repository key:\n"
 "\n"
 "```sh\n"
 "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
@@ -10108,7 +10177,7 @@ msgid ""
 "\n"
 "=== Debian\n"
 "\n"
-"Install repository key:\n"
+"Add repository key:\n"
 "\n"
 "```sh\n"
 "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
@@ -10137,8 +10206,6 @@ msgid ""
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
-"\n"
-"Add repository:\n"
 "\n"
 "```sh\n"
 "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
@@ -10238,13 +10305,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:253
+#: src/en/get-started/installation/package.md:251
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Zammad installieren"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:255
+#: src/en/get-started/installation/package.md:253
 #, no-wrap
 msgid ""
 "\n"
@@ -10324,13 +10391,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:295
+#: src/en/get-started/installation/package.md:293
 #, no-wrap
 msgid "Manage Services of Zammad"
 msgstr "Zammad Services verwalten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:298
+#: src/en/get-started/installation/package.md:296
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
@@ -10340,12 +10407,12 @@ msgstr ""
 "wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:301
 msgid "zammad: includes the services below"
 msgstr "zammad: umfasst die folgenden Dienste"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:301
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
@@ -10353,7 +10420,7 @@ msgstr ""
 "Webanwendung)"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:301
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
@@ -10362,13 +10429,13 @@ msgstr ""
 "Aufgaben sowie Hintergrundaufgaben"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:303
+#: src/en/get-started/installation/package.md:301
 msgid "**zammad-websocket**: websocket server for session related information"
 msgstr ""
 "**zammad-websocket**: Websocket-Server für sitzungsbezogene Informationen"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:305
+#: src/en/get-started/installation/package.md:303
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
@@ -10377,12 +10444,12 @@ msgstr ""
 "`stop`, `status`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:307
+#: src/en/get-started/installation/package.md:305
 msgid "Example to start Zammad with all sub-services:"
 msgstr "Beispiel für den Start von Zammad mit allen Diensten:"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:313
+#: src/en/get-started/installation/package.md:311
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
@@ -10391,15 +10458,15 @@ msgstr ""
 "passen Sie den Befehl wie oben beschrieben an."
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:314
+#: src/en/get-started/installation/package.md:312
 #: src/en/tutorials/first-steps.md:57
-#: src/en/tutorials/install-elasticsearch.md:150
+#: src/en/tutorials/install-elasticsearch.md:142
 #, no-wrap
 msgid "Next Steps"
 msgstr "Nächste Schritte"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:317
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
@@ -10408,7 +10475,7 @@ msgstr ""
 "elasticsearch)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:317
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
@@ -10416,18 +10483,18 @@ msgstr ""
 "selinux)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:317
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr "[Konfigurieren Sie den Webserver](/de/tutorials/webserver-config)"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:318
 #, no-wrap
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:324
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -10440,24 +10507,24 @@ msgstr ""
 "Elasticsearch, das nicht automatisch installiert wird."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:330
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:330
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:330
 #: src/en/reference/environment-variables.md:139
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:330
 #: src/en/reference/environment-variables.md:185
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -10465,20 +10532,20 @@ msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:332
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:355
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:333
+#: src/en/get-started/installation/package.md:331
 #, no-wrap
 msgid "Database Server"
 msgstr "Datenbank-Server"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:338
+#: src/en/get-started/installation/package.md:336
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
@@ -10491,7 +10558,7 @@ msgstr ""
 "automatisch während der Paketinstallation installiert."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:337
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -10505,28 +10572,28 @@ msgstr ""
 "nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:344
 #, no-wrap
 msgid "Reverse Proxy"
 msgstr "Reverse Proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:349
+#: src/en/get-started/installation/package.md:347
 msgid "The following reverse proxies are supported:"
 msgstr "Die folgenden Reverse-Proxys werden unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:350
 msgid "Nginx 1.3+"
 msgstr "Nginx 1.3+"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:350
 msgid "Apache 2.2+"
 msgstr "Apache 2.2+"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:356
+#: src/en/get-started/installation/package.md:354
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -10539,7 +10606,7 @@ msgstr ""
 "Tutorial](/de/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:363
+#: src/en/get-started/installation/package.md:361
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
 "socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
@@ -10557,7 +10624,7 @@ msgstr ""
 "Weise einrichten."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:366
+#: src/en/get-started/installation/package.md:364
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
@@ -10566,13 +10633,13 @@ msgstr ""
 "auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:367
+#: src/en/get-started/installation/package.md:365
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"dringend empfohlen\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:374
+#: src/en/get-started/installation/package.md:372
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -10588,17 +10655,17 @@ msgstr ""
 "unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:376
+#: src/en/get-started/installation/package.md:374
 msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
 msgstr "Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:376
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Elasticsearch-Versionsverlauf für Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:377
 #, no-wrap
 msgid ""
 "\n"
@@ -10630,7 +10697,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:398
+#: src/en/get-started/installation/package.md:396
 msgid ""
 "The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
 "older to index the contents of email attachments. Starting with "
@@ -10641,13 +10708,13 @@ msgstr ""
 "8 ist es standardmäßig in der Installation enthalten."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:397
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:401
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -10660,7 +10727,7 @@ msgstr ""
 "Zammad auf demselben Dateisystem laufen!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:405
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -10675,7 +10742,7 @@ msgstr ""
 "stellen.  Die Docker- und Kubernetes-Stacks enthalten diesen Dienst bereits."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:410
+#: src/en/get-started/installation/package.md:408
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -10687,7 +10754,7 @@ msgstr ""
 "variables#leistungsoptimierung) werfen."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:413
+#: src/en/get-started/installation/package.md:411
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -10699,13 +10766,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:414
+#: src/en/get-started/installation/package.md:412
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:419
+#: src/en/get-started/installation/package.md:417
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -13257,12 +13324,45 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:262
+#, fuzzy, no-wrap
+#| msgid "Hidden Settings"
+msgid "HTTP Client Settings"
+msgstr "Versteckte Einstellungen"
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:266
+msgid ""
+"Global HTTP timeout settings. These variables control the default timeout "
+"behavior for Zammad's internal HTTP client when connecting to external "
+"services (e.g. OAuth providers, webhooks, or integrations)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:270
+#, no-wrap
+msgid ""
+"`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
+": Defines the maximum time in seconds to wait for a connection to be\n"
+"  established with a remote server (e.g. if you have a slow connection).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:274
+#, no-wrap
+msgid ""
+"`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
+": Defines the maximum time in seconds to wait for a response after a connection has been established (e.g. if you have\n"
+"  a slow connection or slow response times on external side).\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/environment-variables.md:275
 #, no-wrap
 msgid "How to Set Environment Variables"
 msgstr "Umgebungsvariablen setzen"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:267
+#: src/en/reference/environment-variables.md:280
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -13278,50 +13378,50 @@ msgstr ""
 "Variablen für eine Docker-Installation zu setzen."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:269
+#: src/en/reference/environment-variables.md:282
 msgid "Examples for package installations:"
 msgstr "Beispiele für Paketinstallationen:"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:271
+#: src/en/reference/environment-variables.md:284
 msgid "Set OPTION to \"value\":"
 msgstr "Setzen Sie OPTION auf \"wert\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:272
+#: src/en/reference/environment-variables.md:285
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr "zammad config:set OPTION=wert\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:277
+#: src/en/reference/environment-variables.md:290
 msgid "Get OPTION:"
 msgstr "OPTION abfragen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:278
+#: src/en/reference/environment-variables.md:291
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr "zammad config:get OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:283
+#: src/en/reference/environment-variables.md:296
 msgid "Unset OPTION:"
 msgstr "OPTION entfernen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:284
+#: src/en/reference/environment-variables.md:297
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr "zammad config:unset OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:289
+#: src/en/reference/environment-variables.md:302
 msgid "Restart Zammad after changing settings:"
 msgstr "Starten Sie Zammad nach der Änderung der Einstellungen neu:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:290
+#: src/en/reference/environment-variables.md:303
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr "sudo systemctl restart zammad\n"
@@ -26739,94 +26839,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -27049,6 +27061,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -27589,6 +27689,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -29421,16 +29533,12 @@ msgstr ""
 
 #. type: Bullet: '5. '
 #: src/en/tutorials/docker-file-handling.md:101
-#, fuzzy
-#| msgid ""
-#| "Create a **New folder** by using the button on the left side. Name it "
-#| "`restore`."
 msgid ""
 "Create a `New folder` by using the button on the left side. Name it "
 "**restore**."
 msgstr ""
 "Erstellen Sie einen neuen Ordner, indem Sie die Schaltfläche auf der linken "
-"Seite verwenden. Nennen Sie ihn `restore`."
+"Seite verwenden. Nennen Sie ihn **restore**."
 
 #. type: Bullet: '6. '
 #: src/en/tutorials/docker-file-handling.md:101
@@ -30006,18 +30114,40 @@ msgstr "Paketquellen-Schlüssel hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:19
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu/Debian\n"
+#| "\n"
+#| "Install required tools:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo apt install curl apt-transport-https\n"
+#| "```\n"
+#| "\n"
+#| "Add repo key:\n"
+#| "\n"
+#| "``` sh\n"
+#| "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
+#| "  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
+#| "  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "``` sh\n"
+#| "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "``` sh\n"
+#| "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
-"\n"
-"Install required tools:\n"
-"\n"
-"```sh\n"
-"sudo apt install curl apt-transport-https\n"
-"```\n"
-"\n"
-"Add repo key:\n"
 "\n"
 "``` sh\n"
 "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
@@ -30069,14 +30199,51 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/tutorials/install-elasticsearch.md:51
+#: src/en/tutorials/install-elasticsearch.md:43
 #, no-wrap
 msgid "Add Repository"
 msgstr "Paketquelle hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/tutorials/install-elasticsearch.md:53
-#, no-wrap
+#: src/en/tutorials/install-elasticsearch.md:45
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu/Debian\n"
+#| "\n"
+#| "``` sh\n"
+#| "echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:\n"
+#| "\n"
+#| "```sh\n"
+#| "[elasticsearch]\n"
+#| "name=Elasticsearch repository for 9.x packages\n"
+#| "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
+#| "gpgcheck=1\n"
+#| "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "enabled=0\n"
+#| "autorefresh=1\n"
+#| "type=rpm-md\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS/RHEL\n"
+#| "\n"
+#| "Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:\n"
+#| "\n"
+#| "```sh\n"
+#| "[elasticsearch]\n"
+#| "name=Elasticsearch repository for 9.x packages\n"
+#| "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
+#| "gpgcheck=1\n"
+#| "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+#| "enabled=0\n"
+#| "type=rpm-md\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
@@ -30087,9 +30254,8 @@ msgid ""
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:\n"
-"\n"
 "```sh\n"
+"sudo cat << EOF > /etc/zypp/repos.d/elasticsearch.repo\n"
 "[elasticsearch]\n"
 "name=Elasticsearch repository for 9.x packages\n"
 "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
@@ -30098,13 +30264,13 @@ msgid ""
 "enabled=0\n"
 "autorefresh=1\n"
 "type=rpm-md\n"
+"EOF\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:\n"
-"\n"
 "```sh\n"
+"sudo cat << EOF > /etc/yum.repos.d/elasticsearch.repo\n"
 "[elasticsearch]\n"
 "name=Elasticsearch repository for 9.x packages\n"
 "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
@@ -30112,6 +30278,7 @@ msgid ""
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "enabled=0\n"
 "type=rpm-md\n"
+"EOF\n"
 "```\n"
 "\n"
 msgstr ""
@@ -30153,7 +30320,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/tutorials/install-elasticsearch.md:94
+#: src/en/tutorials/install-elasticsearch.md:86
 #, no-wrap
 msgid ""
 "\n"
@@ -30213,7 +30380,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/install-elasticsearch.md:124
+#: src/en/tutorials/install-elasticsearch.md:116
 #, no-wrap
 msgid ""
 "Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by\n"
@@ -30223,13 +30390,13 @@ msgstr ""
 "`/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic` ausführen.\n"
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:129
+#: src/en/tutorials/install-elasticsearch.md:121
 #, no-wrap
 msgid "Configuration"
 msgstr "Konfiguration"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:133
+#: src/en/tutorials/install-elasticsearch.md:125
 msgid ""
 "Optionally, check and configure Elasticsearch’s configuration file which you "
 "can find under `/etc/elasticsearch/elasticsearch.yml`."
@@ -30238,7 +30405,7 @@ msgstr ""
 "Sie unter `/etc/elasticsearch/elasticsearch.yml` finden."
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:136
+#: src/en/tutorials/install-elasticsearch.md:128
 msgid ""
 "We recommend to adjust the maximum context size which should get indexed by "
 "Elasticsearch. Adjust it to a reasonable size like in the example:"
@@ -30248,13 +30415,13 @@ msgstr ""
 "im Beispiel an:"
 
 #. type: Fenced code block (yml)
-#: src/en/tutorials/install-elasticsearch.md:137
+#: src/en/tutorials/install-elasticsearch.md:129
 #, no-wrap
 msgid "http.max_content_length: 400mb\n"
 msgstr "http.max_content_length: 400mb\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:143
+#: src/en/tutorials/install-elasticsearch.md:135
 msgid ""
 "Additional configuration is out of scope of this documentation. In case your "
 "scenario needs additional configuration, have a look at [Elastic’s "
@@ -30267,19 +30434,19 @@ msgstr ""
 "docs/reference/elasticsearch/configuration-reference) an."
 
 #. type: Title ##
-#: src/en/tutorials/install-elasticsearch.md:144
+#: src/en/tutorials/install-elasticsearch.md:136
 #, no-wrap
 msgid "Start and Enable Elasticsearch"
 msgstr "Starten und Aktivieren von Elasticsearch"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/install-elasticsearch.md:146
+#: src/en/tutorials/install-elasticsearch.md:138
 #, no-wrap
 msgid "sudo systemctl enable elasticsearch.service --now\n"
 msgstr "sudo systemctl enable elasticsearch.service --now\n"
 
 #. type: Plain text
-#: src/en/tutorials/install-elasticsearch.md:154
+#: src/en/tutorials/install-elasticsearch.md:146
 msgid ""
 "Go on with the [installation of Zammad](/en/get-started/installation/"
 "package#add-zammad-repository). After the installation of Zammad is "

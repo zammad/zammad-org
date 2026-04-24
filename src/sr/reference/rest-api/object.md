@@ -94,7 +94,7 @@ Required permission: `admin.object`
 :::
 ::::
 
-### Integer
+### Целобројно поље
 
 :::: details
 
