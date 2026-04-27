@@ -22,6 +22,8 @@ Passen Sie die Schritte an, falls Ihr Anwendungsfall abweicht.
 
 === Ubuntu/Debian
 
+Paketquellen-Schlüssel hinzufügen:
+
 ``` sh
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \

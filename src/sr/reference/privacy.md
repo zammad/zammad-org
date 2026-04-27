@@ -66,7 +66,7 @@ browser, time of original login, and time of last visit.
 Each entry in the data privacy task list is automatically deleted after 12
 months.
 
-## External Services
+## Удаљени сервиси
 
 Zammad utilizes third party web services for certain functions, meaning
 that user data may occasionally be sent or exposed to third parties.

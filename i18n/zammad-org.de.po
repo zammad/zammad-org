@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-23 14:43+0200\n"
-"PO-Revision-Date: 2026-04-24 04:56+0000\n"
+"POT-Creation-Date: 2026-04-24 04:58+0000\n"
+"PO-Revision-Date: 2026-04-25 12:02+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -247,6 +247,18 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -10073,84 +10085,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:174
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Ubuntu 22.04):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Ubuntu 24.04):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "=== Debian\n"
-#| "\n"
-#| "Install repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 11):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 12):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 13):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "Add repository:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-#| "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
-#| "```\n"
-#| "\n"
-#| "===CentOS/RHEL\n"
-#| "Add repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
-#| "```\n"
-#| "\n"
-#| "Add repository:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
-#| "  -o /etc/yum.repos.d/zammad.repo\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -10229,68 +10164,76 @@ msgid ""
 msgstr ""
 "\n"
 "=== Ubuntu\n"
-"Paketquellen-Schlüssel installieren:\n"
+"Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
+"zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 22.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"ubuntu/22.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 24.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"ubuntu/24.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== Debian\n"
 "\n"
-"Paketquellen-Schlüssel installieren:\n"
+"Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
+"zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 11):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"debian/11.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 12):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"debian/12.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 13):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"debian/13.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Paketquelle hinzufügen:\n"
-"\n"
 "```sh\n"
 "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/"
+"15.repo\"\n"
 "```\n"
 "\n"
 "===CentOS/RHEL\n"
-"Paketquellen-Schlüssel installieren:\n"
+"Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "```sh\n"
 "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
@@ -10299,7 +10242,8 @@ msgstr ""
 "Paketquelle hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
+"el/9.repo\" \\\n"
 "  -o /etc/yum.repos.d/zammad.repo\n"
 "```\n"
 "\n"
@@ -13324,10 +13268,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:262
-#, fuzzy, no-wrap
-#| msgid "Hidden Settings"
+#, no-wrap
 msgid "HTTP Client Settings"
-msgstr "Versteckte Einstellungen"
+msgstr "HTTP Client Einstellungen"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:266
@@ -13336,6 +13279,9 @@ msgid ""
 "behavior for Zammad's internal HTTP client when connecting to external "
 "services (e.g. OAuth providers, webhooks, or integrations)."
 msgstr ""
+"Globale HTTP-Timeout-Einstellungen. Diese Variablen steuern das Standard-"
+"Timeout-Verhalten für den internen HTTP-Client von Zammad bei der Verbindung "
+"mit externen Diensten (z.B. OAuth-Anbietern, Webhooks oder Integrationen)."
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:270
@@ -13345,6 +13291,11 @@ msgid ""
 ": Defines the maximum time in seconds to wait for a connection to be\n"
 "  established with a remote server (e.g. if you have a slow connection).\n"
 msgstr ""
+"`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
+": Legt die maximale Zeit in Sekunden fest, die gewartet wird, bis eine "
+"Verbindung\n"
+"  zu einem externen Server hergestellt wird (z.B. falls Sie eine langsame "
+"Verbindung haben).\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:274
@@ -13354,6 +13305,11 @@ msgid ""
 ": Defines the maximum time in seconds to wait for a response after a connection has been established (e.g. if you have\n"
 "  a slow connection or slow response times on external side).\n"
 msgstr ""
+"`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
+": Legt die maximale Zeit in Sekunden fest, die nach dem Aufbau einer "
+"Verbindung auf eine Antwort gewartet wird\n"
+"   (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf "
+"externer Seite haben).\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:275
@@ -26839,6 +26795,94 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -27061,94 +27105,6 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -27689,18 +27645,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -30114,37 +30058,7 @@ msgstr "Paketquellen-Schlüssel hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:19
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu/Debian\n"
-#| "\n"
-#| "Install required tools:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install curl apt-transport-https\n"
-#| "```\n"
-#| "\n"
-#| "Add repo key:\n"
-#| "\n"
-#| "``` sh\n"
-#| "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
-#| "  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
-#| "  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "``` sh\n"
-#| "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "``` sh\n"
-#| "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
@@ -30170,12 +30084,6 @@ msgid ""
 msgstr ""
 "\n"
 "=== Ubuntu/Debian\n"
-"\n"
-"Installation benötigter Tools:\n"
-"\n"
-"```sh\n"
-"sudo apt install curl apt-transport-https\n"
-"```\n"
 "\n"
 "Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
@@ -30206,44 +30114,7 @@ msgstr "Paketquelle hinzufügen"
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/tutorials/install-elasticsearch.md:45
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu/Debian\n"
-#| "\n"
-#| "``` sh\n"
-#| "echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "Create the file `/etc/zypp/repos.d/elasticsearch.repo` and add:\n"
-#| "\n"
-#| "```sh\n"
-#| "[elasticsearch]\n"
-#| "name=Elasticsearch repository for 9.x packages\n"
-#| "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
-#| "gpgcheck=1\n"
-#| "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-#| "enabled=0\n"
-#| "autorefresh=1\n"
-#| "type=rpm-md\n"
-#| "```\n"
-#| "\n"
-#| "=== CentOS/RHEL\n"
-#| "\n"
-#| "Create the file `/etc/yum.repos.d/elasticsearch.repo` and add:\n"
-#| "\n"
-#| "```sh\n"
-#| "[elasticsearch]\n"
-#| "name=Elasticsearch repository for 9.x packages\n"
-#| "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
-#| "gpgcheck=1\n"
-#| "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-#| "enabled=0\n"
-#| "type=rpm-md\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu/Debian\n"
@@ -30286,14 +30157,15 @@ msgstr ""
 "=== Ubuntu/Debian\n"
 "\n"
 "``` sh\n"
-"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
+"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://"
+"artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/"
+"sources.list.d/elastic-9.x.list\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Erstellen Sie die Datei `/etc/zypp/repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:\n"
-"\n"
 "```sh\n"
+"sudo cat << EOF > /etc/zypp/repos.d/elasticsearch.repo\n"
 "[elasticsearch]\n"
 "name=Elasticsearch repository for 9.x packages\n"
 "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
@@ -30302,13 +30174,13 @@ msgstr ""
 "enabled=0\n"
 "autorefresh=1\n"
 "type=rpm-md\n"
+"EOF\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"Erstellen Sie die Datei `/etc/yum.repos.d/elasticsearch.repo` und fügen Sie folgenden Inhalt ein:\n"
-"\n"
 "```sh\n"
+"sudo cat << EOF > /etc/yum.repos.d/elasticsearch.repo\n"
 "[elasticsearch]\n"
 "name=Elasticsearch repository for 9.x packages\n"
 "baseurl=https://artifacts.elastic.co/packages/9.x/yum\n"
@@ -30316,6 +30188,7 @@ msgstr ""
 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "enabled=0\n"
 "type=rpm-md\n"
+"EOF\n"
 "```\n"
 "\n"
 

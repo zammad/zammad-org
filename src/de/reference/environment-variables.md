@@ -263,19 +263,20 @@ Datenbank-Verbindungen verwenden. Bitte beachten Sie die
 : Threads, die von **einem** "Delayed Jobs Worker" verwendet werden (falls Sie mehr als einen Worker-Prozess haben,
   wird dies mit deren Anzahl multipliziert). Die maximale Anzahl von Threads beträgt `16`.
 
-## HTTP Client Settings
+## HTTP Client Einstellungen
 
-Global HTTP timeout settings. These variables control the default timeout
-behavior for Zammad's internal HTTP client when connecting to external
-services (e.g. OAuth providers, webhooks, or integrations).
+Globale HTTP-Timeout-Einstellungen. Diese Variablen steuern das
+Standard-Timeout-Verhalten für den internen HTTP-Client von Zammad bei der
+Verbindung mit externen Diensten (z.B. OAuth-Anbietern, Webhooks oder
+Integrationen).
 
 `ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type="tip" text="30" />
-: Defines the maximum time in seconds to wait for a connection to be
-  established with a remote server (e.g. if you have a slow connection).
+: Legt die maximale Zeit in Sekunden fest, die gewartet wird, bis eine Verbindung
+  zu einem externen Server hergestellt wird (z.B. falls Sie eine langsame Verbindung haben).
 
 `ZAMMAD_HTTP_READ_TIMEOUT` <Badge type="tip" text="60" />
-: Defines the maximum time in seconds to wait for a response after a connection has been established (e.g. if you have
-  a slow connection or slow response times on external side).
+: Legt die maximale Zeit in Sekunden fest, die nach dem Aufbau einer Verbindung auf eine Antwort gewartet wird
+   (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf externer Seite haben).
 
 ## Umgebungsvariablen setzen
 
