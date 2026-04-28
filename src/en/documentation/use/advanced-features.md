@@ -337,9 +337,9 @@ When tickets about related issues arise, they can be linked to each other for ea
 
 **How?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+:: button in the "Links" section. This opens a
-side panel in which you can select a ticket by clicking on it or enter a ticket number in search field. Additionally,
-you can choose between different link types:
+In the ticket sidebar, add a link to another ticket by clicking the ::+:: button in the **Related tickets** section.
+This opens a side panel in which you can select a ticket by clicking on it or enter a ticket number in search field.
+Additionally, you can choose between different link types:
 
 - **Normal:** for related ticket which have no hierarchy.
 - **Parent/Child**: for related tickets where one is the main issue and the other is a subtask. This link type is used

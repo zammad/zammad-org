@@ -412,10 +412,10 @@ case if a customer has a technical question and wants to place an order.
 
 **Како?**
 
-У траци тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку
-`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом
-на исти или уносом броја тикета у поље за претрагу. Додатно, можете изабрати
-између различитих типова веза:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the **Related tickets** section.  This opens a side panel in which
+you can select a ticket by clicking on it or enter a ticket number in search
+field.  Additionally, you can choose between different link types:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други
