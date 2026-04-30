@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-24 04:58+0000\n"
+"POT-Creation-Date: 2026-04-30 15:14+0200\n"
 "PO-Revision-Date: 2026-04-25 12:02+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
@@ -245,18 +245,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -2338,9 +2326,9 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:343
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-"button in the \"Links\" section. This opens a side panel in which you can "
-"select a ticket by clicking on it or enter a ticket number in search field. "
-"Additionally, you can choose between different link types:"
+"button in the **Related tickets** section.  This opens a side panel in which "
+"you can select a ticket by clicking on it or enter a ticket number in search "
+"field.  Additionally, you can choose between different link types:"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -14643,6 +14631,184 @@ msgid ""
 msgstr ""
 
 #. type: Title #
+#: src/en/reference/proxy-connections.md:1
+#: src/en/reference/proxy-connections.md:6
+#, no-wrap
+msgid "Proxy and Connections"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:8
+#, no-wrap
+msgid "Proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:12
+msgid ""
+"This section covers the proxy configuration via environment variables. As an "
+"alternative, the proxy configuration is also possible via Zammad UI. You can "
+"find more information about that in the network section of the admin "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:19
+#, no-wrap
+msgid ""
+"|                                             | GUI configuration | Environment variable       |\n"
+"|---------------------------------------------|-------------------|----------------------------|\n"
+"|  Host OS access required                    |  No               |  Yes                       |\n"
+"|  Automatically excluded loopback addresses  |  Yes              |  No                        |\n"
+"|  Configuration check                        |  Yes              |  Manually via test script  |\n"
+"|  Exceptions                                 |  Yes              |  No                        |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:22
+msgid ""
+"The following environment variables can be used to configure proxy settings. "
+"Adjust the values according to your environment."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:25
+msgid ""
+"`HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:26
+#, no-wrap
+msgid "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:32
+msgid ""
+"`HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:33
+#, no-wrap
+msgid "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:42
+#, no-wrap
+msgid ""
+"`NO_PROXY`\n"
+": Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses\n"
+"  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match\n"
+"  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via\n"
+"  proxy. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:43
+#, no-wrap
+msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:51
+#, no-wrap
+msgid ""
+"`ES_JAVA_OPTS`\n"
+": Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems\n"
+"  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin\n"
+"  for Elasticsearch versions below 8. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:52
+#, no-wrap
+msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/proxy-connections.md:56
+#, no-wrap
+msgid ""
+"Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
+"both variants by additionally specifying them with the values of the upper case variants, for example:\n"
+"\n"
+"```console\n"
+"export http_proxy=$HTTP_PROXY\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:66
+#, fuzzy, no-wrap
+#| msgid "External Services"
+msgid "External Connections"
+msgstr "Servizi Esterni"
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:71
+msgid ""
+"During installation and operation of Zammad, some connections to online "
+"services are required. Depending on your installation method and Zammad "
+"configuration, a connection to the following services is made (maybe also "
+"helpful for firewall configuration):"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:81
+#, no-wrap
+msgid ""
+"| Address                      | Comment                                               |\n"
+"|------------------------------|-------------------------------------------------------|\n"
+"| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |\n"
+"| dl.packager.io               | Download of OS package (package installation)         |\n"
+"| go.packager.io               | As above; new package hosting service                 |\n"
+"| geo.zammad.com               | Used for geo data                                     |\n"
+"| google.com                   | Download of feast days for the calendar               |\n"
+"| index.rubygems.org           | Download of gems for ruby                             |\n"
+"| registry.npmjs.org           | Download of js dependencies                           |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:85
+msgid ""
+"You can use a script to check the connection state of your system. It tries "
+"to connect to the services mentioned above and shows the result. If every "
+"connection was successful, it displays a checkmark for each contacted "
+"service. Run it either by fetching it from the Zammad repository or by "
+"executing the local version on your Zammad machine."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:87
+#, no-wrap
+msgid "**Fetch script from remote:**\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:88
+#, no-wrap
+msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:93
+#, no-wrap
+msgid "**Use local script:**\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:94
+#, no-wrap
+msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/rails-commands.md:1 src/en/reference/rails-commands.md:6
 #, no-wrap
 msgid "Rails Commands"
@@ -21180,76 +21346,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -21410,6 +21506,76 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -21822,6 +21988,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

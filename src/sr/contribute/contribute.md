@@ -20,15 +20,15 @@ order: 1
 
 ## Zammad изворни кoд
 
-The Zammad source code can be found on GitHub in the [Zammad
-repository](https://github.com/zammad/zammad){target=_blank}. Have a look at
-the [developer
-manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-to get started.
+Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
+репозиторијуму](https://github.com/zammad/zammad){target=_blank}. Прочитајте
+[уџбеник за
+програмере](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
+за почетак.
 
 ### Подржани огранци/верзије
 
-Zammad's Github repository has several branches:
+GitHub репозиторијум Zammad-а има неколико огранака:
 
 #### `develop`
 
@@ -64,21 +64,21 @@ Zammad's Github repository has several branches:
 апликације и преписаће све измене направљене под директоријумима специфичних
 језика (осим `/src/en/`).
 
-Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
-(targeting the `develop` branch) with your changes and make sure to follow
-the [style and content guide](style-guide) and read the [repo's
-README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
+Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org>
+(заснован на `develop` огранку) са вашим изменама и обавезно испратите
+[водич кроз стил и садржај](style-guide). Узмите у обзир и инструкције у
+[README.md датотеци
+репозиторија](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
 
 ## Превод
 
-If you want to help us with translation and improve the multi-language
-support of Zammad and/or the documentation, you are welcome to contribute as
-well! The translation of Zammad and the documentation is done via Weblate,
-which is a service for the collaborative translation of projects.  Just head
-over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку
+у Zammad-у и/или документацији, ваш допринос је добродошао! Превод самог
+Zammad-а и документације обавља се преко Weblate апликације, која представља
+сервис за колаборацију на преводима пројеката.  Једноставно посетите
+Zammad-ову [Weblate
+инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
+отворити налог (ако га већ немате) или се пријавити својим Github налогом!
 
 Представићемо неке основне кораке у следећим одељцима како бисте могли да
 започнете са превођењем. Међутим, уколико желите да користите напредне
@@ -111,24 +111,23 @@ Weblate функције и да дубље уђете у проблематик
 верзију.
 :::
 
-After selecting a project (Documentation or Zammad), you will see different
-sub-projects and their translation status summarized for all languages. Here
-you can select one of the "components", which is more or less the same as
-different versions. After selecting one of them, you can see the status of
-translation for the different languages, as you can see in the following
-screenshot:
+По одабиру пројекта (Documentation или Zammad), видећете више подпројеката и
+њихов сажети статус превода по свим језицима. Овде можете одабрати једну од
+„компонената”, које су мање или више идентичне различитим верзијама. По
+одабиру једне од њих, можете видети статус превода по различитим језицима,
+по узору на следећи снимак екрана:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/weblate-project-overview.png)
+![Снимак екрана који приказује статус превода за корисничку документацију по
+различитим језицима](/screenshots/weblate-project-overview.png)
 
 ### Превођење
 
-After selecting your language you want to translate to, a good starting
-point is to select "_Untranslated strings_" (or the same meaning in your
-language, depending on what you have set in your profile).  After that, you
-will finally see the first untranslated string in the upper field and, in
-theory, you can start to translate. But let's first have a brief look at the
-user interface of Weblate:
+По одабиру вашег језика на који желите да преводите, добра почетна тачка је
+одабир „_Untranslated strings_” (или слично значење у вашем језику, у
+зависности који језик сте подесили у свом профилу).  Након тога, коначно
+ћете видети први непреведени текст у горњем пољу и, теоретски, можете
+започети превод. Али хајде да прво погледамо на кратко кориснички интерфејс
+Weblate-а:
 
 ![Снимак екрана корисничког интерфејса превода у
 Weblate-у](/screenshots/weblate-ui.png)
@@ -149,13 +148,12 @@ Weblate-у](/screenshots/weblate-ui.png)
     - **Other languages**: овде можете добити преглед који језици већ садрже
       превод и саме преводе (може бити корисно за сличне језике).
 
-### Markup in Strings
+### Ознаке у тексту
 
-Find some examples for special source strings with applied markup
-below. Depending on the string, it can be important to keep the markup
-and/or variables. Also have a look at the [style guide](style-guide) where
-you can find more information about the syntax and the usage of
-Markdown/Vitepress features.
+Испод можете пронаћи пар примера за специјалан текст са примењеним
+ознакама. У зависности од текста, некад је важно задржати ознаке и/или
+променљиве. Погледајте и [водич кроз стил](style-guide) где можете пронаћи
+више информација о синтакси и коришћењу Markdown/Vitepress функција.
 
 **\`пример-текста\`**
 : Ово ће бити приказано као `пример-текста`. У зависности од контекста, ово се може превести или не.

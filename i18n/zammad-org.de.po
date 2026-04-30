@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-24 04:58+0000\n"
-"PO-Revision-Date: 2026-04-25 12:02+0000\n"
+"POT-Creation-Date: 2026-04-30 15:14+0200\n"
+"PO-Revision-Date: 2026-04-30 13:02+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -247,18 +247,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -2899,15 +2887,16 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:343
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-"button in the \"Links\" section. This opens a side panel in which you can "
-"select a ticket by clicking on it or enter a ticket number in search field. "
-"Additionally, you can choose between different link types:"
+"button in the **Related tickets** section.  This opens a side panel in which "
+"you can select a ticket by clicking on it or enter a ticket number in search "
+"field.  Additionally, you can choose between different link types:"
 msgstr ""
 "Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket "
-"hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt \"Links\" klicken. "
-"Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein Ticket durch Anklicken "
-"auswählen oder eine Ticketnummer in das Suchfeld eingeben können. Außerdem "
-"können Sie zwischen verschiedenen Link-Typen wählen:"
+"hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt \"Verbundene "
+"Tickets\" klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein "
+"Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld "
+"eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen "
+"wählen:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:347
@@ -10167,25 +10156,21 @@ msgstr ""
 "Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
-"zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 22.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"ubuntu/22.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Ubuntu 24.04):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"ubuntu/24.04.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
@@ -10194,33 +10179,28 @@ msgstr ""
 "Paketquellen-Schlüssel hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/"
-"zammad.gpg\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 11):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/11.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 12):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/12.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Paketquelle hinzufügen (Debian 13):\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"debian/13.list\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
@@ -10228,8 +10208,7 @@ msgstr ""
 "\n"
 "```sh\n"
 "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/"
-"15.repo\"\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
 "```\n"
 "\n"
 "===CentOS/RHEL\n"
@@ -10242,8 +10221,7 @@ msgstr ""
 "Paketquelle hinzufügen:\n"
 "\n"
 "```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/"
-"el/9.repo\" \\\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
 "  -o /etc/yum.repos.d/zammad.repo\n"
 "```\n"
 "\n"
@@ -13292,10 +13270,8 @@ msgid ""
 "  established with a remote server (e.g. if you have a slow connection).\n"
 msgstr ""
 "`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
-": Legt die maximale Zeit in Sekunden fest, die gewartet wird, bis eine "
-"Verbindung\n"
-"  zu einem externen Server hergestellt wird (z.B. falls Sie eine langsame "
-"Verbindung haben).\n"
+": Legt die maximale Zeit in Sekunden fest, die gewartet wird, bis eine Verbindung\n"
+"  zu einem externen Server hergestellt wird (z.B. falls Sie eine langsame Verbindung haben).\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:274
@@ -13306,10 +13282,8 @@ msgid ""
 "  a slow connection or slow response times on external side).\n"
 msgstr ""
 "`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
-": Legt die maximale Zeit in Sekunden fest, die nach dem Aufbau einer "
-"Verbindung auf eine Antwort gewartet wird\n"
-"   (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf "
-"externer Seite haben).\n"
+": Legt die maximale Zeit in Sekunden fest, die nach dem Aufbau einer Verbindung auf eine Antwort gewartet wird\n"
+"   (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf externer Seite haben).\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:275
@@ -18537,6 +18511,186 @@ msgstr ""
 "OSM in der Datenbank von Zammad gespeichert. Weitere Informationen finden "
 "Sie in den [Datenschutzbestimmungen von OSM](https://osmfoundation.org/wiki/"
 "Privacy_Policy){target=_blank}."
+
+#. type: Title #
+#: src/en/reference/proxy-connections.md:1
+#: src/en/reference/proxy-connections.md:6
+#, no-wrap
+msgid "Proxy and Connections"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:8
+#, no-wrap
+msgid "Proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:12
+msgid ""
+"This section covers the proxy configuration via environment variables. As an "
+"alternative, the proxy configuration is also possible via Zammad UI. You can "
+"find more information about that in the network section of the admin "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:19
+#, no-wrap
+msgid ""
+"|                                             | GUI configuration | Environment variable       |\n"
+"|---------------------------------------------|-------------------|----------------------------|\n"
+"|  Host OS access required                    |  No               |  Yes                       |\n"
+"|  Automatically excluded loopback addresses  |  Yes              |  No                        |\n"
+"|  Configuration check                        |  Yes              |  Manually via test script  |\n"
+"|  Exceptions                                 |  Yes              |  No                        |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:22
+msgid ""
+"The following environment variables can be used to configure proxy settings. "
+"Adjust the values according to your environment."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:25
+msgid ""
+"`HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:26
+#, no-wrap
+msgid "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:32
+msgid ""
+"`HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:33
+#, no-wrap
+msgid "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:42
+#, no-wrap
+msgid ""
+"`NO_PROXY`\n"
+": Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses\n"
+"  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match\n"
+"  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via\n"
+"  proxy. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:43
+#, no-wrap
+msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:51
+#, no-wrap
+msgid ""
+"`ES_JAVA_OPTS`\n"
+": Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems\n"
+"  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin\n"
+"  for Elasticsearch versions below 8. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:52
+#, no-wrap
+msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/proxy-connections.md:56
+#, no-wrap
+msgid ""
+"Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
+"both variants by additionally specifying them with the values of the upper case variants, for example:\n"
+"\n"
+"```console\n"
+"export http_proxy=$HTTP_PROXY\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:66
+#, fuzzy, no-wrap
+#| msgid "External Services"
+msgid "External Connections"
+msgstr "Externe Dienste"
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:71
+msgid ""
+"During installation and operation of Zammad, some connections to online "
+"services are required. Depending on your installation method and Zammad "
+"configuration, a connection to the following services is made (maybe also "
+"helpful for firewall configuration):"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:81
+#, no-wrap
+msgid ""
+"| Address                      | Comment                                               |\n"
+"|------------------------------|-------------------------------------------------------|\n"
+"| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |\n"
+"| dl.packager.io               | Download of OS package (package installation)         |\n"
+"| go.packager.io               | As above; new package hosting service                 |\n"
+"| geo.zammad.com               | Used for geo data                                     |\n"
+"| google.com                   | Download of feast days for the calendar               |\n"
+"| index.rubygems.org           | Download of gems for ruby                             |\n"
+"| registry.npmjs.org           | Download of js dependencies                           |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:85
+msgid ""
+"You can use a script to check the connection state of your system. It tries "
+"to connect to the services mentioned above and shows the result. If every "
+"connection was successful, it displays a checkmark for each contacted "
+"service. Run it either by fetching it from the Zammad repository or by "
+"executing the local version on your Zammad machine."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:87
+#, no-wrap
+msgid "**Fetch script from remote:**\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:88
+#, fuzzy, no-wrap
+#| msgid "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md\n"
+msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
+msgstr "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md\n"
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:93
+#, fuzzy, no-wrap
+#| msgid "**User payload:**\n"
+msgid "**Use local script:**\n"
+msgstr "**Benutzer Nutzlast:**\n"
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:94
+#, no-wrap
+msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
+msgstr ""
 
 #. type: Title #
 #: src/en/reference/rails-commands.md:1 src/en/reference/rails-commands.md:6
@@ -26795,94 +26949,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -27105,6 +27171,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -27645,6 +27799,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -30157,9 +30323,7 @@ msgstr ""
 "=== Ubuntu/Debian\n"
 "\n"
 "``` sh\n"
-"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://"
-"artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/"
-"sources.list.d/elastic-9.x.list\n"
+"echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list\n"
 "```\n"
 "\n"
 "=== OpenSUSE/SLES\n"

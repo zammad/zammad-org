@@ -39,18 +39,17 @@ order: 2
 
 ## Претпоставке о публици
 
-The documentation assumes that **users** have a basic understanding of how
-to use web browsers and are familiar with common software design
-concepts. This means, for example, that features are described in detail,
-but not to the level of explaining how to open a dropdown menu.
+Документација подразумева да наши **корисници** поседују основно знање о
+употреби претраживача и концептима софтверског дизајна. Ово на пример значи
+да су функције описане до детаља, али не на нивоу како приступити падајућем
+менију.
 
-The **Zammad administrator** should also have a basic technical
-understanding and be familiar with the workflows and communication processes
-within their company.
+**Zammad администратор** треба додатно да поседује основно техничко
+разумевање радних токова и процеса комуникације у својој фирми.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.  Access to the host system
-(e.g. via SSH) and administrative permissions are taken for granted.
+За инстанце које сами хостују, **администратори система** такође треба да
+буду упознати са основама администрације Linux система.  Приступ систему
+који хостује (нпр. путем SSH) и администраторске дозволе се подразумевају.
 
 ## Садржај
 
@@ -70,10 +69,10 @@ with Linux system administration basics.  Access to the host system
 укључени. Читаоци би требало да постигну своје циљеве што брже и
 једноставније без потребе да пуно читају.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be on a code-like detail level), the relevance has to be considered
-too. If parts with a common use case are missing, it should be intended to
-include them in.
+С обзиром да документација не може да покрије апсолутно све (иначе би
+садржала саме детаље кôда), неопходно је узети у обзир значајност
+информације. Уколико недостају делови који се односе на уобичајене случајеве
+коришћења, требало би их укључити у документацију.
 
 ## Стил и правила
 
@@ -110,8 +109,8 @@ include them in.
 - Уколико је могуће, користите иконице за важне елементе корисничког
   интерфејса као што су ::+:: и ::x:: (погледајте
   [примере](#текст-и-интерфејс) испод).
-- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see
-  [examples](#text-and-ui) below).
+- Користите ознаке тастера као што су [[ctrl]] и [[x]] да означите притисак
+  на тастатури (погледајте [примере](#text-and-ui) испод).
 - Убаците снимке екрана по потреби. Пожељан начин додавања снимака екрана из
   Zammad-а је њиховим аутоматским креирањем [коришћењем Cypress
   апликације](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
@@ -129,12 +128,12 @@ include them in.
 
 ### Конвенције
 
-The documentation stack includes automated checks (linting) to ensure
-compliance with the style guide and common rules for Markdown files. To
-check if your changes are compliant, run `pnpm lint` to perform the
-check. Some of the recognized problems can be even fixed automatically by
-running `pnpm lint:fix`. Make sure to run the check before committing your
-changes. Otherwise, the build of the documentation will fail.
+Алати за прављење документације укључују аутоматске провере (linting) да би
+осигурали усклађеност са водичем кроз стил и основним правилима за Markdown
+садржај. Да бисте проверили усклађеност, покрените `pnpm lint` за
+проверу. Неки уобичајени проблеми се чак могу и аутоматски поправити
+покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања
+ваших измена. У супротном, генерисање документације неће бити успешно.
 
 Провере користе нека уобичајена правила која можете пронаћи у [званичном
 репозиторију](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
@@ -163,16 +162,16 @@ changes. Otherwise, the build of the documentation will fail.
 
 #### Текст и интерфејс
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
-| Fields and UI elements    | **Name**                      | `**Name**`                      |
-| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
-| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
-| Add button                | ::+::                         | `::+::`                         |
-| Delete button             | ::x::                         | `::x::`                         |
-| Action menu               | ::a::                         | `::a::`                         |
-| Copy to clipboard button  | ::c::                         | `::c::`                         |
+| Тип                        | Истицање у документацији.     | Markdown синтакса               |
+|----------------------------|-------------------------------|---------------------------------|
+| Наслови дугмића            | `Пријава`                     | `` `Пријава` ``                 |
+| Поља и елементи интерфејса | **Назив**                     | `**Назив**`                     |
+| Локације/путање            | _Подешавања > Канали > Имејл_ | `_Подешавања > Канали > Имејл_` |
+| Пречице на тастатури       | [[x]]                         | `[[x]]`                         |
+| Дугме за додавање          | ::+::                         | `::+::`                         |
+| Дугме за брисање           | ::x::                         | `::x::`                         |
+| Дугме за мени радњи        | ::a::                         | `::a::`                         |
+| Дугме за копирање текста   | ::c::                         | `::c::`                         |
 
 #### Структура наслова
 
@@ -197,7 +196,7 @@ changes. Otherwise, the build of the documentation will fail.
 Наслов овог одељка користи значку „упозорења”. Доступне су и остале значке,
 погледајте <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-**Usage:**
+**Начин коришћења:**
 
 ::: details
 
@@ -210,9 +209,9 @@ changes. Otherwise, the build of the documentation will fail.
 #### Прилагођени оквири
 
 ::::: info
-This is an info box.
+Ово је информациони оквир.
 
-**Usage:**
+**Начин коришћења:**
 
 :::: details
 
@@ -226,9 +225,9 @@ This is an info box.
 :::::
 
 ::::: tip
-This is a tip.
+Ово је савет.
 
-**Usage:**
+**Начин коришћења:**
 
 :::: details
 
@@ -242,9 +241,9 @@ This is a tip.
 :::::
 
 ::::: warning
-This is a warning.
+Ово је упозорење.
 
-**Usage:**
+**Начин коришћења:**
 
 :::: details
 
@@ -258,9 +257,9 @@ This is a warning.
 :::::
 
 ::::: danger
-This is a dangerous warning.
+Ово је упозорење на опасност.
 
-**Usage:**
+**Начин коришћења:**
 
 :::: details
 
@@ -274,9 +273,9 @@ This is a dangerous warning.
 :::::
 
 :::: details
-This is a details block.
+Ово је одељак са детаљима.
 
-**Usage:**
+**Начин коришћења:**
 
 ```md
 ::: details
@@ -296,7 +295,7 @@ This is a details block.
 : Ово је дефиниција другог термина.
 : Ово је додатна дефиниција другог термина.
 
-**Usage:**
+**Начин коришћења:**
 
 ::: details
 

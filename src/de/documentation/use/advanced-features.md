@@ -455,10 +455,12 @@ werden. [Zusammengefasste](#tickets-zusammenfassen) und
 
 **Wie?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+::
-button in the **Related tickets** section.  This opens a side panel in which
-you can select a ticket by clicking on it or enter a ticket number in search
-field.  Additionally, you can choose between different link types:
+Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
+hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt "Verbundene
+Tickets" klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
+Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
+eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen
+wählen:
 
 - **Normal:** für verwandte Tickets, die keine Hierarchie haben.
 - **Eltern/Kinder**: für verwandte Tickets, von denen eines das Hauptthema

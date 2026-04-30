@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-24 04:58+0000\n"
-"PO-Revision-Date: 2026-04-25 12:02+0000\n"
+"POT-Creation-Date: 2026-04-30 15:14+0200\n"
+"PO-Revision-Date: 2026-04-29 06:02+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -137,31 +137,31 @@ msgstr "Актуелно издање"
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #. type: Hash Value: themeConfig notFound linkLabel
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "go to home"
-msgstr ""
+msgstr "иди на почетну страницу"
 
 #. type: Hash Value: themeConfig notFound linkText
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "Take me home"
-msgstr ""
+msgstr "Одведи ме на почетну страницу"
 
 #. type: Hash Value: themeConfig notFound quote
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
-msgstr ""
+msgstr "Али ако не промениш смер и наставиш да гледаш, можеш завршити тамо где се упућујеш."
 
 #. type: Hash Value: themeConfig notFound title
 #: .vitepress/config.en.yaml:1
 #, no-wrap
 msgid "PAGE NOT FOUND"
-msgstr ""
+msgstr "СТРАНИЦА НИЈЕ ПРОНАЂЕНА"
 
 #. type: Hash Value: themeConfig outline label
 #: .vitepress/config.en.yaml:1
@@ -248,18 +248,6 @@ msgstr "Без резултата за"
 msgid "Reset search"
 msgstr "Поништи претрагу"
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -317,15 +305,16 @@ msgstr "Zammad изворни кoд"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:25
-#, fuzzy
 msgid ""
 "The Zammad source code can be found on GitHub in the [Zammad repository]"
 "(https://github.com/zammad/zammad){target=_blank}. Have a look at the "
 "[developer manual](https://github.com/zammad/zammad/blob/develop/doc/"
 "developer_manual/index.md){target=_blank} to get started."
 msgstr ""
-"Прочитајте [уџбеник за програмере](https://github.com/zammad/zammad/blob/"
-"develop/doc/developer_manual/index.md){target=_blank} за почетак."
+"Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad репозиторијуму]"
+"(https://github.com/zammad/zammad){target=_blank}. Прочитајте [уџбеник за "
+"програмере](https://github.com/zammad/zammad/blob/develop/doc/"
+"developer_manual/index.md){target=_blank} за почетак."
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:26
@@ -336,7 +325,7 @@ msgstr "Подржани огранци/верзије"
 #. type: Plain text
 #: src/en/contribute/contribute.md:29
 msgid "Zammad's Github repository has several branches:"
-msgstr ""
+msgstr "GitHub репозиторијум Zammad-а има неколико огранака:"
 
 #. type: Title ####
 #: src/en/contribute/contribute.md:30
@@ -429,7 +418,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:60
-#, fuzzy
 msgid ""
 "Open a new GitHub pull request at <https://github.com/zammad/zammad-org> "
 "(targeting the `develop` branch) with your changes and make sure to follow "
@@ -440,7 +428,7 @@ msgstr ""
 "Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org> "
 "(заснован на `develop` огранку) са вашим изменама и обавезно испратите "
 "[водич кроз стил и садржај](style-guide). Узмите у обзир и инструкције у "
-"[README датотеци репозиторија](https://github.com/zammad/zammad-org?"
+"[README.md датотеци репозиторија](https://github.com/zammad/zammad-org?"
 "tab=readme-ov-file#zammad-hub){target=_blank}."
 
 #. type: Title ##
@@ -451,7 +439,6 @@ msgstr "Превод"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:68
-#, fuzzy
 msgid ""
 "If you want to help us with translation and improve the multi-language "
 "support of Zammad and/or the documentation, you are welcome to contribute as "
@@ -464,7 +451,10 @@ msgstr ""
 "Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку "
 "у Zammad-у и/или документацији, ваш допринос је добродошао! Превод самог "
 "Zammad-а и документације обавља се преко Weblate апликације, која представља "
-"сервис за колаборацију на преводима пројеката."
+"сервис за колаборацију на преводима пројеката.  Једноставно посетите Zammad-"
+"ову [Weblate инстанцу](https://translations.zammad.org/){target=_blank}.  "
+"Можете или отворити налог (ако га већ немате) или се пријавити својим Github "
+"налогом!"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:73
@@ -563,7 +553,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:102
-#, fuzzy
 msgid ""
 "After selecting a project (Documentation or Zammad), you will see different "
 "sub-projects and their translation status summarized for all languages. Here "
@@ -572,21 +561,20 @@ msgid ""
 "translation for the different languages, as you can see in the following "
 "screenshot:"
 msgstr ""
-"Овде можете одабрати једну од „компонената”, које су мање или више идентичне "
-"различитим верзијама. По одабиру једне,\n"
-"можете видети статус превода по различитим језицима, по узору на следећи "
-"снимак екрана\n"
-"са примером из _Documentation > User Documentation (latest)_:\n"
+"По одабиру пројекта (Documentation или Zammad), видећете више подпројеката и "
+"њихов сажети статус превода по свим језицима. Овде можете одабрати једну од "
+"„компонената”, које су мање или више идентичне различитим верзијама. По "
+"одабиру једне од њих, можете видети статус превода по различитим језицима, "
+"по узору на следећи снимак екрана:"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:104
-#, fuzzy
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
 "documentation](/screenshots/weblate-project-overview.png)"
 msgstr ""
-"![Снимак екрана који приказује статус первода по различитим језицима за "
-"корисничку документацију](/screenshots/weblate-translations-user-docs.png)"
+"![Снимак екрана који приказује статус превода за корисничку документацију по "
+"различитим језицима](/screenshots/weblate-project-overview.png)"
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:105
@@ -596,7 +584,6 @@ msgstr "Превођење"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:111
-#, fuzzy
 msgid ""
 "After selecting your language you want to translate to, a good starting "
 "point is to select \"_Untranslated strings_\" (or the same meaning in your "
@@ -607,7 +594,10 @@ msgid ""
 msgstr ""
 "По одабиру вашег језика на који желите да преводите, добра почетна тачка је "
 "одабир „_Untranslated strings_” (или слично значење у вашем језику, у "
-"зависности шта сте подесили у свом профилу)."
+"зависности који језик сте подесили у свом профилу).  Након тога, коначно "
+"ћете видети први непреведени текст у горњем пољу и, теоретски, можете "
+"започети превод. Али хајде да прво погледамо на кратко кориснички интерфејс "
+"Weblate-а:"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:113
@@ -682,11 +672,10 @@ msgstr ""
 #: src/en/contribute/contribute.md:128
 #, no-wrap
 msgid "Markup in Strings"
-msgstr ""
+msgstr "Ознаке у тексту"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:133
-#, fuzzy
 msgid ""
 "Find some examples for special source strings with applied markup below. "
 "Depending on the string, it can be important to keep the markup and/or "
@@ -694,10 +683,10 @@ msgid ""
 "find more information about the syntax and the usage of Markdown/Vitepress "
 "features."
 msgstr ""
-"Коначно, ево пар примера за „специјалне” низове текста на које можете наићи "
-"у пројектима документације. Обавезно погледајте и [водич кроз стил](style-"
-"guide) где можете пронаћи више информација о синтакси и коришћењу Markdown/"
-"Vitepress функција."
+"Испод можете пронаћи пар примера за специјалан текст са примењеним ознакама. "
+"У зависности од текста, некад је важно задржати ознаке и/или променљиве. "
+"Погледајте и [водич кроз стил](style-guide) где можете пронаћи више "
+"информација о синтакси и коришћењу Markdown/Vitepress функција."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:137
@@ -809,21 +798,19 @@ msgstr "Претпоставке о публици"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:39
-#, fuzzy
 msgid ""
 "The documentation assumes that **users** have a basic understanding of how "
 "to use web browsers and are familiar with common software design concepts. "
 "This means, for example, that features are described in detail, but not to "
 "the level of explaining how to open a dropdown menu."
 msgstr ""
-"Документација је написана у стилу који подразумева да наши **корисници** "
-"поседују основно знање о употреби претраживача и концептима софтверског "
-"дизајна. Ово на пример значи да су функције описане до детаља, али не на "
-"нивоу како приступити падајућем менију."
+"Документација подразумева да наши **корисници** поседују основно знање о "
+"употреби претраживача и концептима софтверског дизајна. Ово на пример значи "
+"да су функције описане до детаља, али не на нивоу како приступити падајућем "
+"менију."
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:42
-#, fuzzy
 msgid ""
 "The **Zammad administrator** should also have a basic technical "
 "understanding and be familiar with the workflows and communication processes "
@@ -834,15 +821,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:45
-#, fuzzy
 msgid ""
 "For self-hosted instances, **system administrators** should also be familiar "
 "with Linux system administration basics.  Access to the host system (e.g. "
 "via SSH) and administrative permissions are taken for granted."
 msgstr ""
 "За инстанце које сами хостују, **администратори система** такође треба да "
-"буду упознати са основама администрације Linux система. Приступ систему који "
-"хостује (нпр. путем SSH) и администраторске дозволе се подразумевају."
+"буду упознати са основама администрације Linux система.  Приступ систему "
+"који хостује (нпр. путем SSH) и администраторске дозволе се подразумевају."
 
 #. type: Title ##
 #: src/en/contribute/style-guide.md:46
@@ -902,7 +888,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:63
-#, fuzzy
 msgid ""
 "Due to the fact that a documentation can't cover everything (otherwise it "
 "would be on a code-like detail level), the relevance has to be considered "
@@ -1036,6 +1021,8 @@ msgid ""
 "Use key markup like [[ctrl]] and [[x]] to highlight a key press (see "
 "[examples](#text-and-ui) below)."
 msgstr ""
+"Користите ознаке тастера као што су [[ctrl]] и [[x]] да означите притисак на "
+"тастатури (погледајте [примере](#text-and-ui) испод)."
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:101
@@ -1095,7 +1082,6 @@ msgstr "Конвенције"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:108
-#, fuzzy
 msgid ""
 "The documentation stack includes automated checks (linting) to ensure "
 "compliance with the style guide and common rules for Markdown files. To "
@@ -1106,10 +1092,10 @@ msgid ""
 msgstr ""
 "Алати за прављење документације укључују аутоматске провере (linting) да би "
 "осигурали усклађеност са водичем кроз стил и основним правилима за Markdown "
-"садржај. Да бисте проверили усклађеност, покрените `pnpm lint` за покретање "
-"провере. Неки уобичајени проблеми се чак могу и аутоматски поправити "
-"покретањем `pnpm lint:fix`. Обратите пажњу да покренете проверу пре слања "
-"ваших измена. У супротном, генерисање документације неће успети."
+"садржај. Да бисте проверили усклађеност, покрените `pnpm lint` за проверу. "
+"Неки уобичајени проблеми се чак могу и аутоматски поправити покретањем `pnpm "
+"lint:fix`. Обратите пажњу да покренете проверу пре слања ваших измена. У "
+"супротном, генерисање документације неће бити успешно."
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:112
@@ -1213,7 +1199,7 @@ msgstr "Текст и интерфејс"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:142
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
 "|-------------------------- |-------------------------------|---------------------------------|\n"
@@ -1226,15 +1212,16 @@ msgid ""
 "| Action menu               | ::a::                         | `::a::`                         |\n"
 "| Copy to clipboard button  | ::c::                         | `::c::`                         |\n"
 msgstr ""
-"| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
-"|----------------------|-------------------------------|---------------------------------|\n"
-"| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
-"| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
-"| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
-"| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-"| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-"| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
-"| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
+"| Тип                        | Истицање у документацији.     | Markdown синтакса               |\n"
+"|----------------------------|-------------------------------|---------------------------------|\n"
+"| Наслови дугмића            | `Пријава`                     | `` `Пријава` ``                 |\n"
+"| Поља и елементи интерфејса | **Назив**                     | `**Назив**`                     |\n"
+"| Локације/путање            | _Подешавања > Канали > Имејл_ | `_Подешавања > Канали > Имејл_` |\n"
+"| Пречице на тастатури       | [[x]]                         | `[[x]]`                         |\n"
+"| Дугме за додавање          | ::+::                         | `::+::`                         |\n"
+"| Дугме за брисање           | ::x::                         | `::x::`                         |\n"
+"| Дугме за мени радњи        | ::a::                         | `::a::`                         |\n"
+"| Дугме за копирање текста   | ::c::                         | `::c::`                         |\n"
 
 #. type: Title ####
 #: src/en/contribute/style-guide.md:143
@@ -1301,9 +1288,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:166 src/en/contribute/style-guide.md:265
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "**Usage:**\n"
-msgstr "Употреба"
+msgstr "**Начин коришћења:**\n"
 
 #. type: Fenced div block (details)
 #: src/en/contribute/style-guide.md:167
@@ -1329,7 +1316,7 @@ msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
 #: src/en/contribute/style-guide.md:177
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "This is an info box.\n"
 "\n"
@@ -1337,6 +1324,8 @@ msgid ""
 "\n"
 msgstr ""
 "Ово је информациони оквир.\n"
+"\n"
+"**Начин коришћења:**\n"
 "\n"
 
 #. type: Fenced div block (danger)
@@ -1369,7 +1358,7 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/contribute/style-guide.md:193
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "This is a tip.\n"
 "\n"
@@ -1377,6 +1366,8 @@ msgid ""
 "\n"
 msgstr ""
 "Ово је савет.\n"
+"\n"
+"**Начин коришћења:**\n"
 "\n"
 
 #. type: Fenced div block (tip|details|tip)
@@ -1387,7 +1378,7 @@ msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
 #: src/en/contribute/style-guide.md:209
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "This is a warning.\n"
 "\n"
@@ -1395,6 +1386,8 @@ msgid ""
 "\n"
 msgstr ""
 "Ово је упозорење.\n"
+"\n"
+"**Начин коришћења:**\n"
 "\n"
 
 #. type: Fenced div block (warning|details|warning)
@@ -1405,7 +1398,7 @@ msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
 #: src/en/contribute/style-guide.md:225
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
 "\n"
@@ -1413,6 +1406,8 @@ msgid ""
 "\n"
 msgstr ""
 "Ово је упозорење на опасност.\n"
+"\n"
+"**Начин коришћења:**\n"
 "\n"
 
 #. type: Fenced div block (danger|details|warning)
@@ -1423,7 +1418,7 @@ msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
 #: src/en/contribute/style-guide.md:241
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "This is a details block.\n"
 "\n"
@@ -1433,10 +1428,9 @@ msgid ""
 msgstr ""
 "Ово је одељак са детаљима.\n"
 "\n"
-"Начин коришћења:\n"
+"**Начин коришћења:**\n"
 "\n"
 "```md\n"
-"\n"
 
 #. type: Fenced div block (details|details)
 #: src/en/contribute/style-guide.md:241
@@ -2778,11 +2772,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:343
+#, fuzzy
+#| msgid ""
+#| "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
+#| "button in the \"Links\" section. This opens a side panel in which you can "
+#| "select a ticket by clicking on it or enter a ticket number in search "
+#| "field. Additionally, you can choose between different link types:"
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-"button in the \"Links\" section. This opens a side panel in which you can "
-"select a ticket by clicking on it or enter a ticket number in search field. "
-"Additionally, you can choose between different link types:"
+"button in the **Related tickets** section.  This opens a side panel in which "
+"you can select a ticket by clicking on it or enter a ticket number in search "
+"field.  Additionally, you can choose between different link types:"
 msgstr ""
 "У траци тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку "
 "`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом "
@@ -15984,6 +15984,184 @@ msgid ""
 msgstr ""
 
 #. type: Title #
+#: src/en/reference/proxy-connections.md:1
+#: src/en/reference/proxy-connections.md:6
+#, no-wrap
+msgid "Proxy and Connections"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:8
+#, no-wrap
+msgid "Proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:12
+msgid ""
+"This section covers the proxy configuration via environment variables. As an "
+"alternative, the proxy configuration is also possible via Zammad UI. You can "
+"find more information about that in the network section of the admin "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:19
+#, no-wrap
+msgid ""
+"|                                             | GUI configuration | Environment variable       |\n"
+"|---------------------------------------------|-------------------|----------------------------|\n"
+"|  Host OS access required                    |  No               |  Yes                       |\n"
+"|  Automatically excluded loopback addresses  |  Yes              |  No                        |\n"
+"|  Configuration check                        |  Yes              |  Manually via test script  |\n"
+"|  Exceptions                                 |  Yes              |  No                        |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:22
+msgid ""
+"The following environment variables can be used to configure proxy settings. "
+"Adjust the values according to your environment."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:25
+msgid ""
+"`HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:26
+#, no-wrap
+msgid "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:32
+msgid ""
+"`HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your "
+"proxy server, including the port. Example:"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:33
+#, no-wrap
+msgid "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:42
+#, no-wrap
+msgid ""
+"`NO_PROXY`\n"
+": Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses\n"
+"  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match\n"
+"  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via\n"
+"  proxy. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:43
+#, no-wrap
+msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:51
+#, no-wrap
+msgid ""
+"`ES_JAVA_OPTS`\n"
+": Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems\n"
+"  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin\n"
+"  for Elasticsearch versions below 8. Example:\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:52
+#, no-wrap
+msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/proxy-connections.md:56
+#, no-wrap
+msgid ""
+"Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
+"both variants by additionally specifying them with the values of the upper case variants, for example:\n"
+"\n"
+"```console\n"
+"export http_proxy=$HTTP_PROXY\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:66
+#, fuzzy, no-wrap
+#| msgid "External Services"
+msgid "External Connections"
+msgstr "Удаљени сервиси"
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:71
+msgid ""
+"During installation and operation of Zammad, some connections to online "
+"services are required. Depending on your installation method and Zammad "
+"configuration, a connection to the following services is made (maybe also "
+"helpful for firewall configuration):"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:81
+#, no-wrap
+msgid ""
+"| Address                      | Comment                                               |\n"
+"|------------------------------|-------------------------------------------------------|\n"
+"| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |\n"
+"| dl.packager.io               | Download of OS package (package installation)         |\n"
+"| go.packager.io               | As above; new package hosting service                 |\n"
+"| geo.zammad.com               | Used for geo data                                     |\n"
+"| google.com                   | Download of feast days for the calendar               |\n"
+"| index.rubygems.org           | Download of gems for ruby                             |\n"
+"| registry.npmjs.org           | Download of js dependencies                           |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:85
+msgid ""
+"You can use a script to check the connection state of your system. It tries "
+"to connect to the services mentioned above and shows the result. If every "
+"connection was successful, it displays a checkmark for each contacted "
+"service. Run it either by fetching it from the Zammad repository or by "
+"executing the local version on your Zammad machine."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:87
+#, no-wrap
+msgid "**Fetch script from remote:**\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:88
+#, fuzzy, no-wrap
+msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
+msgstr "https://github.com/zammad/zammad-org/issues"
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:93
+#, no-wrap
+msgid "**Use local script:**\n"
+msgstr ""
+
+#. type: Fenced code block (console)
+#: src/en/reference/proxy-connections.md:94
+#, no-wrap
+msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/rails-commands.md:1 src/en/reference/rails-commands.md:6
 #, fuzzy, no-wrap
 msgid "Rails Commands"
@@ -22543,76 +22721,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -22773,6 +22881,76 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23186,6 +23364,18 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1

@@ -42,10 +42,10 @@ themeConfig:
       text: 'Следеће издање'
   notFound:
     code: 404
-    linkLabel: 'go to home'
-    linkText: 'Take me home'
-    quote: "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
-    title: 'PAGE NOT FOUND'
+    linkLabel: 'иди на почетну страницу'
+    linkText: 'Одведи ме на почетну страницу'
+    quote: 'Али ако не промениш смер и наставиш да гледаш, можеш завршити тамо где се упућујеш.'
+    title: 'СТРАНИЦА НИЈЕ ПРОНАЂЕНА'
   outline:
     label: 'На овој страни'
     level:
