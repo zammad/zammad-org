@@ -25,14 +25,14 @@ settings. Adjust the values according to your environment.
 `HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your
 proxy server, including the port. Example:
 
-  ```console
+  ```sh
   export HTTP_PROXY="http://127.0.0.1:8080"
   ```
 
 `HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your
 proxy server, including the port. Example:
 
-  ```console
+  ```sh
   export HTTPS_PROXY="http://127.0.0.1:8080"
   ```
 
@@ -42,7 +42,7 @@ proxy server, including the port. Example:
   example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via
   proxy. Example:
 
-  ```console
+  ```sh
   export NO_PROXY="localhost,127.0.0.1,.example.com"
   ```
 
@@ -51,7 +51,7 @@ proxy server, including the port. Example:
   during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin
   for Elasticsearch versions below 8. Example:
 
-  ```console
+  ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
   ```
 
@@ -59,7 +59,7 @@ proxy server, including the port. Example:
 Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set
 both variants by additionally specifying them with the values of the upper case variants, for example:
 
-```console
+```sh
 export http_proxy=$HTTP_PROXY
 ```
 
@@ -90,12 +90,12 @@ executing the local version on your Zammad machine.
 
 **Fetch script from remote:**
 
-```console
+```sh
 curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh
 ```
 
 **Use local script:**
 
-```console
+```sh
 /opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh
 ```
