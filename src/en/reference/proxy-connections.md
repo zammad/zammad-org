@@ -12,10 +12,10 @@ also possible via Zammad UI. You can find more information about that in the net
 
 |                                             | GUI configuration | Environment variable       |
 |---------------------------------------------|-------------------|----------------------------|
-|  Host OS access required                    |  No               |  Yes                       |
-|  Automatically excluded loopback addresses  |  Yes              |  No                        |
-|  Configuration check                        |  Yes              |  Manually via test script  |
-|  Exceptions                                 |  Yes              |  No                        |
+| Host OS access required                     | No                | Yes                        |
+| Automatically excluded loopback addresses   | Yes               | No                         |
+| Configuration check                         | Yes               | Manually via test script   |
+| Exceptions                                  | Yes               | No                         |
 
 The following environment variables can be used to configure proxy settings. Adjust the values according to your
 environment.
@@ -36,7 +36,7 @@ environment.
 
 `NO_PROXY`
 : Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses
-  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match
+  and supports wildcards. Use a leading `.` as wildcard for subdomains, e.g. `.example.com` would match
   example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via
   proxy. Example:
 
