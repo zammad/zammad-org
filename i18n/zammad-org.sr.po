@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-30 15:14+0200\n"
-"PO-Revision-Date: 2026-04-29 06:02+0000\n"
+"POT-Creation-Date: 2026-05-04 12:50+0200\n"
+"PO-Revision-Date: 2026-05-05 06:02+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -1587,7 +1587,7 @@ msgstr ""
 #: src/en/contribute/style-guide.md:310
 #, no-wrap
 msgid "Theme Specific Images"
-msgstr ""
+msgstr "Слике специфичне за тему"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:314
@@ -1595,6 +1595,8 @@ msgid ""
 "To target specific image assets to a single theme, you can assign `.dark-"
 "only` or `.light-only` CSS class to the corresponding image:"
 msgstr ""
+"Да бисте ограничили одређене слике на једну тему, можете доделити CSS класу "
+"`.dark-only` или `.light-only` одговарајућој слици:"
 
 #. type: Fenced code block (md)
 #: src/en/contribute/style-guide.md:315
@@ -1603,6 +1605,8 @@ msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
 "![Light only image](/assets/logo-flat-light.svg){.light-only}\n"
 msgstr ""
+"![Само за тамну изглед](/assets/logo-flat-dark.svg){.dark-only}\n"
+"![Само за светли изглед](/assets/logo-flat-light.svg){.light-only}\n"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:321
@@ -1610,6 +1614,8 @@ msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
 "only image](/assets/logo-flat-light.svg){.light-only width=240}"
 msgstr ""
+"![Само за тамни изглед](/assets/logo-flat-dark.svg){.dark-only width=240} !"
+"[Само за светли изглед](/assets/logo-flat-light.svg){.light-only width=240}"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
@@ -1619,9 +1625,9 @@ msgstr "Сазнајте све о томе како да радите у Zammad
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "/en/documentation/use/start"
-msgstr "/sr/documentation/use/general"
+msgstr "/sr/documentation/use/start"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/introduction.md:1
@@ -1637,9 +1643,9 @@ msgstr "Сазнајте како да подесите Zammad и повежет
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "/en/documentation/manage-zammad/start"
-msgstr "/sr/documentation/manage-zammad/general"
+msgstr "/sr/documentation/manage-zammad/start"
 
 #. type: Yaml Front Matter Hash Value: features title
 #: src/en/documentation/introduction.md:1
@@ -1651,7 +1657,7 @@ msgstr "Администраторска документација"
 #: src/en/documentation/introduction.md:1
 #, no-wrap
 msgid "Learn about important terms and concepts used in Zammad."
-msgstr ""
+msgstr "Сазнајте о важној терминологији и концептима који се користе у Zammad-у."
 
 #. type: Yaml Front Matter Hash Value: features link
 #: src/en/documentation/introduction.md:1
@@ -1718,16 +1724,16 @@ msgstr "Управљање Zammad-ом"
 #. type: Yaml Front Matter Hash Value: title
 #: src/en/documentation/manage-zammad/start.md:1
 #: src/en/documentation/use/start.md:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Start"
-msgstr "Први кораци"
+msgstr "Почетак"
 
 #. type: Title #
 #: src/en/documentation/manage-zammad/start.md:6
 #: src/en/documentation/use/start.md:19
 #, no-wrap
 msgid "Welcome"
-msgstr ""
+msgstr "Добродошли"
 
 #. type: Plain text
 #: src/en/documentation/manage-zammad/start.md:9
@@ -1735,6 +1741,9 @@ msgid ""
 "This part of the documentation is currently empty. It will be created step "
 "by step and simultaneously to the development of Zammad's new admin UI."
 msgstr ""
+"Овај део документације је тренутно празан. Биће написан корак по корак и "
+"истовремено са развојем новог администраторског корисничког интерфејса "
+"Zammad-а."
 
 #. type: Title #
 #: src/en/documentation/use/advanced-features.md:1
@@ -1750,6 +1759,9 @@ msgid ""
 "their own separate pages. Just keep reading, search the page or navigate to "
 "the section you want using the table of contents on the right."
 msgstr ""
+"Ова страница садржи збирку различитих корисних алата који не изискују "
+"посебне странице. Само наставите да читате, претражите страницу или идите на "
+"жељени одељак помоћу садржаја са десне стране."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:11
@@ -1794,15 +1806,14 @@ msgstr "**Зашто?**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:19
-#, fuzzy
 msgid ""
 "It is possible to automatically close a ticket tab in the navigation sidebar "
 "after updating a ticket.  This saves you a click after updating or updating "
 "a ticket to _closed_ state."
 msgstr ""
-"Могуће је аутоматски затворити прозор тикета у бочној траци навигације. "
-"Зависи од ваших подешавања, али можете уштедети клик након освежавања или "
-"освежавања тикета са стањем _затворено_."
+"Могуће је аутоматски затворити прозор тикета у бочној траци навигације након "
+"освежавања.  Овим можете уштедети клик након освежавања или _затварања_ "
+"тикета."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:21
@@ -1845,13 +1856,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:30
-#, fuzzy
 msgid ""
 "**Stay on tab**: Default option. You have to manually close the tab if you "
 "want to remove it from your navigation sidebar."
 msgstr ""
 "**Остани у прозору**: Подразумевана опција. Мораћете ручно да затворите "
-"прозор уколико желите да буде уклоњен из ваше бочне траке навигације."
+"прозор уколико желите да буде уклоњен из ваше навигационе траке."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:30
@@ -1866,23 +1876,22 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:30
-#, fuzzy
 msgid ""
 "**Close tab on ticket close**: This option only closes the tab when the "
 "ticket is updated to the _closed_ state."
 msgstr ""
 "**Затвори прозор по затварању тикета**: Ова опција затвара прозор само када "
-"је тикет освежен и стање је постављено на _затворено_."
+"је тикет освежен у _затвореном_ стању."
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/advanced-features.md:31
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut\n"
 "[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.\n"
 msgstr ""
-"Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору**\n"
-"и користити пречицу на тастатури [[Shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.\n"
+"Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору** и користити пречицу на тастатури\n"
+"[[shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.\n"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:36
@@ -1901,7 +1910,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:45
-#, fuzzy
 msgid ""
 "If you have to answer the same question again and again, ask your Zammad "
 "admin to create such a text module for you.  They can even include variables "
@@ -1909,9 +1917,10 @@ msgid ""
 "using it in a ticket. The usage of text modules has benefits like:"
 msgstr ""
 "Уколико ухватите себе да стално одговарате на идентично питање, замолите "
-"вашег Zammad администратора да дода текстуални исечак за вас. Исечци могу "
-"укључивати и променљиве као што су име клијента или било који други атрибут, "
-"које ће бити замењене кад их користите у тикету."
+"вашег Zammad администратора да дода текстуални исечак за вас.  Исечци могу "
+"чак укључивати и променљиве као што су име клијента или било који други "
+"доступан атрибут, које ће бити замењене кад их користите у тикету. "
+"Коришћењем текстуалних исечака стичете следеће предности:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:48
@@ -1929,42 +1938,40 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:53
-#, fuzzy
 msgid ""
 "Use the button in the toolbar of the editor or simply write [[:]][[:]] in "
 "the editor. Both ways let you search for the desired text module by typing "
 "some characters or words of the text or keywords of the text module."
 msgstr ""
-"Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова "
-"из имена колеге кога желите да поменете."
+"Користите дугме на траци са алаткама уредника текста или једноставно унесите "
+"[[:]][[:]] у текст. Оба начина вам омогућавају да претражите жељени "
+"текстуални исечак куцањем неких знакова или речи текста или кључних речи."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:56
-#, fuzzy
 msgid ""
 "You can pick one by clicking on it or by using the up and down arrows "
 "followed by [[enter]] on your keyboard. There are some text modules in "
 "Zammad which are shipped by default."
 msgstr ""
 "Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле "
-"а затим притиском на [[Enter]] на вашој тастатури. Zammad долази са неким "
+"а затим притиском на [[enter]] на вашој тастатури. Zammad долази са неким "
 "подразумеваним текстуалним исечцима."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:57
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Insert Knowledge Base Article"
-msgstr "База знања"
+msgstr "Убацивање чланка базе знања"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:60
-#, fuzzy
 msgid ""
 "![Screenshot shows inserting knowledge base article](/screenshots/cypress/"
 "usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
 msgstr ""
-"![Снимак екрана приказује функцију помињања](/screenshots/cypress/usage-"
-"advanced-features.cy.js/ticket-article-mention.png)"
+"![Снимак екрана приказује убацивање чланка базе знања](/screenshots/cypress/"
+"usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:65
@@ -1973,32 +1980,34 @@ msgid ""
 "of which a knowledge base article exists.  This saves you time because you "
 "don't have to switch to the knowledge base and copy/paste content."
 msgstr ""
+"Уколико често добијате исте или веома сличне захтеве клијената у вези са "
+"проблемом за који већ постоји чланак у бази знања.  Ово вам штеди време јер "
+"не морате да прелазите у базу знања и копирате/налепљујете садржај."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:70
-#, fuzzy
 msgid ""
 "Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
 "the editor. Both ways let you search for the desired knowledge base article "
 "by typing some characters or words."
 msgstr ""
-"Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова "
-"из имена колеге кога желите да поменете."
+"Користите дугме на траци са алаткама уредника текста или једноставно унесите "
+"[[?]][[?]] у текст. Оба начина вам омогућавају да претражите жељени чланак "
+"базе знања куцањем неких знакова или речи."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Mention a User"
-msgstr "Помињања"
+msgstr "Помињање корисника"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:74
-#, fuzzy
 msgid ""
 "![Screenshot shows mentioning a user](/screenshots/cypress/usage-advanced-"
 "features.cy.js/ticket-article-mention.png)"
 msgstr ""
-"![Снимак екрана приказује функцију помињања](/screenshots/cypress/usage-"
+"![Снимак екрана приказује помињање корисника](/screenshots/cypress/usage-"
 "advanced-features.cy.js/ticket-article-mention.png)"
 
 #. type: Plain text
@@ -2014,14 +2023,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:84
-#, fuzzy
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
 "or simply type [[@]][[@]]. Both ways let you search for the name of the user "
 "you want to mention by typing some characters or the complete name."
 msgstr ""
-"Док пишете чланак тикета, једноставно унесите `@@` а затим и првих пар слова "
-"из имена колеге кога желите да поменете."
+"Док пишете чланак тикета, користите дугме на траци са алаткама уредника "
+"текста или једноставно унесите [[@]][[@]]. Оба начина вам омогућавају да "
+"претражите жељеног корисника кога желите поменути куцањем неких знакова или "
+"комплетног имена."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:87
@@ -2092,7 +2102,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:113
-#, fuzzy
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
@@ -2104,14 +2113,14 @@ msgid ""
 msgstr ""
 "Уколико стално понављате велики број корака, размислите о употреби макроа за "
 "њих. У таквом макроу, ваш администратор може да дефинише одређене радње на "
-"тикетима које можете покренути једним кликом. На пример, Zammad "
+"тикетима које можете покренути једним кликом. Као пример, Zammad "
 "подразумевано долази са макроом „Затвори и означи као непожељно”. По "
-"активацији, корисник који изврши макро ће постати власник тикета, ознака "
-"`spam` ће бити додата и тикет затворен."
+"покретању, корисник који изврши макро ће постати власник тикета, ознака "
+"**spam** ће бити додата и тикет затворен. Чак је могуће покренути и [AI "
+"агента](/en/documentation/use/guides/ai) преко макроа по потреби."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:118
-#, fuzzy
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
 "detail view by clicking the `^` section of the `Update` button in the right "
@@ -2119,8 +2128,8 @@ msgid ""
 "want to execute."
 msgstr ""
 "Уколико је ваш администратор већ додао макро, можете га извршити у детаљном "
-"приказу тикета кликом на дугме са три тачкице ::a:: у доњем десном углу и "
-"одабиром макроа из листе."
+"приказу тикета кликом на `^` у оквиру дугмета `Освежи` у доњем десном углу "
+"(видите снимак екрана изнад) и одабиром макроа из листе."
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/advanced-features.md:119
@@ -2261,13 +2270,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/documentation/use/advanced-features.md:156
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or\n"
 "  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.\n"
 msgstr ""
-"  Нађите прикључак тикета са бројем одласком у жељени тикет и или кликом на дугме за копирање у заглављу\n"
-"  или путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка.\n"
+"  Нађите прикључак тикета са бројем одласком у жељени тикет и или кликом или на дугме за копирање ::c:: у заглављу или\n"
+"  путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка или где желите да га искористите.\n"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:164
@@ -2380,6 +2389,10 @@ msgid ""
 "within eight hours, with optional custom deadlines for specific customers. "
 "When such a deadline is passed, the ticket escalates."
 msgstr ""
+"Споразуми о нивоу услуга (SLA) омогућавају праворемене одговоре на захтеве "
+"клијента. Ваш администратор подешава циљеве као што су одговор на све упите "
+"у року од 8 часова, са опционим прилагођеним роковима за одређене клијенте. "
+"Када се ови рокови пробију, тикет ће ескалирати."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:211
@@ -2391,6 +2404,12 @@ msgid ""
 "escalated tickets and tickets which are expected to escalate within the next "
 "10 minutes."
 msgstr ""
+"Zammad вас подразумевано обавештава када се тикет приближава или пробија "
+"рокове. Подесите ова обавештења у вашем [корисничким подешавањима](/en/"
+"documentation/use/user-profile#notifications). Zammad такође долази и са "
+"подразумеваним прегледом под називом „Ескалирани тикети”. Овај преглед "
+"укључује све већ ескалиране тикете и тикете за које се очекује да ће "
+"ескалирати у наредних 10 минута."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:214
@@ -2407,13 +2426,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:216
-#, fuzzy
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation timestamp](/"
 "screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)"
 msgstr ""
-"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
-"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Снимак екрана приказује панел ескалација превлачењем курсора преко датума "
+"ескалације](/screenshots/cypress/usage-advanced-features.cy.js/escalation-"
+"panel.png)"
 
 #. type: Fenced div block (info)
 #: src/en/documentation/use/advanced-features.md:217
@@ -2422,6 +2441,8 @@ msgid ""
 "The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a\n"
 "ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.\n"
 msgstr ""
+"Времена ескалација се рачунају на основу вашег радног времена. Ово значи да ако ваше радно време почиње у 9:00,\n"
+"тикет је отворен у 7:00 и имате рок од 1 сата, ескалираће у 10:00, осим ако се не затвори раније.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:224
@@ -2430,6 +2451,9 @@ msgid ""
 "see escalation timestamps, either the ticket is not SLA-relevant or the "
 "feature is not configured."
 msgstr ""
+"SLA функција захтева подешавање од стране вашег администратора. Уколико не "
+"видите датуме ескалације, или тикет није покривен са SLA или функција није "
+"укључена."
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:225
@@ -2448,36 +2472,33 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:234
-#, fuzzy
 msgid "There are 2 places where you can apply bulk actions:"
-msgstr "Постоје два _места_ одакле можете покренути масовне радње:"
+msgstr "Постоје два места одакле можете покренути масовне радње:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:237
-#, fuzzy
 msgid "In the ticket tab in the [detailed search page](guides/search)"
-msgstr "Детаљни екран претраге"
+msgstr "У прозору тикета на [детаљној страници претраге](guides/search)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:237
 msgid "In [Overviews](guides/overviews)"
-msgstr ""
+msgstr "У [прегледима](guides/overviews)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:239
-#, fuzzy
 msgid "In both places, you can apply bulk actions in different ways:"
-msgstr "Постоје два _места_ одакле можете покренути масовне радње:"
+msgstr "На оба места можете покренути масовне радње на различите начине:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
 msgid "By using the side panel"
-msgstr ""
+msgstr "Коришћењем панела са стране"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
 msgid "By using the drag & drop overlay"
-msgstr ""
+msgstr "Коришћењем механизма превуци и пусти"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:248
@@ -2490,6 +2511,12 @@ msgid ""
 "clicking on the **Select all XX results** label. The maximum number of "
 "selectable tickets for a bulk action is 2000."
 msgstr ""
+"За коришћење масовне радње, прво одаберите тикете које желите да измените. "
+"Или их одаберите ручно кликом на кућицу поред њих или користите кућицу у "
+"заглављу да одабир свих тикета тренутне странице. По одабиру свих тикета "
+"странице, можете чак и проширити избор на све тикете који се подударају са "
+"тренутном претрагом или условима прегледа кликом на линк **Означи свих ## "
+"уноса**. Горња граница тикета које можете одабрати за масовну радњу је 2000."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:251
@@ -2499,6 +2526,10 @@ msgid ""
 "ticket. This selects all tickets in between as well. This also works for "
 "unselecting tickets."
 msgstr ""
+"За одабир више узастопних тикета, кликните на кућицу поред првог тикета, "
+"онда држите [[shift]] и кликните на кућицу поред последњег тикета. Овим ћете "
+"одабрати и све тикете између њих. Ово такође функционише и за уклањање "
+"избора."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:255
@@ -2509,33 +2540,37 @@ msgid ""
 "other tickets.  However, until the bulk action is finished, you are not able "
 "to start a new bulk action."
 msgstr ""
+"У зависности од броја захваћеих тикета, може вам се приказати мало "
+"обавештење након поретања масовне радње, које вас информише о прогресу. "
+"Масовна радња се извршава у позадини тако да можете наставити обраду других "
+"тикета.  Међутим, док се масовна радња не заврши, нећете бити у могућности "
+"да покренете нову масовну радњу."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:257
 #, no-wrap
 msgid "**Side panel:**\n"
-msgstr ""
+msgstr "**Бочни панел:**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:259
-#, fuzzy
 msgid ""
 "![Screenshot shows the bulk action side panel](/screenshots/cypress/usage-"
 "advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Снимак екрана приказује бочни панел масовне радње](/screenshots/cypress/"
-"usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
+"usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:262
-#, fuzzy
 msgid ""
 "After you selected tickets, click the `Bulk Action` button in the top right "
 "corner and change/add attributes by using the fields in the right side "
 "panel. The available changes you can apply to tickets are:"
 msgstr ""
-"Користите дугме **Mасовна радње** у горњем десном углу и промените/додајте "
-"атрибуте коришћењем поља у бочном панелу"
+"По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и "
+"промените/додајте атрибуте коришћењем поља у бочном панелу са десне стране. "
+"Доступни атрибути тикета које можете изменити су:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:269
@@ -2573,44 +2608,45 @@ msgstr "Покретање макроа"
 #: src/en/documentation/use/advanced-features.md:271
 #, no-wrap
 msgid "**Drag & drop with bulk overlay:**\n"
-msgstr ""
+msgstr "**Механизам превуци препусти за масовну радњу:**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:273
-#, fuzzy
 msgid ""
 "![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/"
 "usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)"
 msgstr ""
-"![Снимак екрана приказује бочни панел масовне радње](/screenshots/cypress/"
-"usage-advanced-features.cy.js/bulk-flyout-overviews.png)"
+"![Снимак екрана приказује масовну радњу преко механизма превуци и пусти](/"
+"screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-"
+"drop.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:277
-#, fuzzy
 msgid ""
 "After you selected tickets, drag them by pressing and holding the mouse "
 "button and drop them on the desired action in the bulk action overlay. You "
 "can always skip this by dropping the tickets in the middle of the page. The "
 "available actions you can apply to tickets are:"
 msgstr ""
-"Користите дугме **Mасовна радње** у горњем десном углу и промените/додајте "
-"атрибуте коришћењем поља у бочном панелу"
+"По одабиру тикета, превуците их притиском и држањем дугмета на мишу и "
+"пустите их над жељеном радњом у панелу масовне радње. Од радње увек можете "
+"одустати пуштањем тикета над средином странице. Доступне радње које можете "
+"извршити над тикетима на овај начин су:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:283
 msgid "Unassign owner"
-msgstr ""
+msgstr "Скидање доделе власника"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:283
 msgid "Unassign owner and set group"
-msgstr ""
+msgstr "Скидање доделе власника и пребацивање у групу"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:283
 msgid "Run macro"
-msgstr ""
+msgstr "Покретање макроа"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:286
@@ -2619,6 +2655,9 @@ msgid ""
 "case you selected all relevant ones.  To include another unselected ticket, "
 "start dragging from there and so it is also included in the batch processing."
 msgstr ""
+"Започните радњу превлачења и пуштања над једном од већ одабраних тикета у "
+"случају да сте одабрали све релевантне.  За укључивање још неког неодабраног "
+"тикета, започните превлачење изнад њега и биће укључен у масовну радњу."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:287
@@ -2714,15 +2753,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:320
-#, fuzzy
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example, this might be the "
 "case if a customer has a technical question and wants to place an order."
 msgstr ""
 "Уколико имате тикет са више од једног проблема, можда ћете хтети да га "
-"разделите на два или више различитих ткета. На пример до овога може доћи ако "
-"клијент има техничко питање и жели да пошаље поруџбину."
+"разделите на два или више различитих ткета.  На пример до овога може доћи "
+"ако клијент има техничко питање и у исто време жели да пошаље поруџбину."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:324
@@ -2772,22 +2810,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:343
-#, fuzzy
-#| msgid ""
-#| "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-#| "button in the \"Links\" section. This opens a side panel in which you can "
-#| "select a ticket by clicking on it or enter a ticket number in search "
-#| "field. Additionally, you can choose between different link types:"
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the **Related tickets** section.  This opens a side panel in which "
 "you can select a ticket by clicking on it or enter a ticket number in search "
 "field.  Additionally, you can choose between different link types:"
 msgstr ""
-"У траци тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку "
-"`Везе`. Ово ће отворити траку са стране у којој можете одабрати тикет кликом "
-"на исти или уносом броја тикета у поље за претрагу. Додатно, можете изабрати "
-"између различитих типова веза:"
+"У панелу тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку "
+"**Повезани тикети**.  Ово ће отворити траку са стране у којој можете "
+"одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.  "
+"Додатно, можете изабрати између различитих типова веза:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:347
@@ -2807,19 +2839,18 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:348
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Duplicate Detection"
-msgstr "Чување података"
+msgstr "Откривање дупликата"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:351
-#, fuzzy
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket creation](/"
 "screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
 msgstr ""
-"![Снимак екрана приказује бочну траку спајања тикета](/screenshots/cypress/"
-"usage-advanced-features.cy.js/ticket-merge.png)"
+"![Снимак екрана приказује упозорење на дупликат приликом отварања тикета](/"
+"screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:357
@@ -2829,6 +2860,10 @@ msgid ""
 "Zammad can warn you when another ticket is already present. This feature has "
 "to be activated and configured by your admin."
 msgstr ""
+"Понекад се деси да вас клијент (или ваше колеге) контактира више пута у вези "
+"истог проблема. Да бисте избегли отварање дупликата тикета, Zammad вас може "
+"упозорити када већ постоји други тикет. Ову функцију мора да укључи и подеси "
+"ваш администратор."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:363
@@ -2838,6 +2873,11 @@ msgid ""
 "(e.g. customer and title). In case of many unnecessary warnings or no "
 "warning at all, ask your admin to adjust the attributes to compare."
 msgstr ""
+"Само отворите нови тикет и унесите неке информације. Ваш администратор може "
+"подесити који атрибути тикета морају да се подударају да би се приказало "
+"упозорење (нпр. клијент и наслов). У случају превише непотребних упозорења "
+"или неприказивања упозорења, питајте вашег администратора да прилагоди "
+"атрибуте упоређивања."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:367
@@ -2847,6 +2887,10 @@ msgid ""
 "Click on the ticket link to see what it is about. In case it is no "
 "duplicate, simply ignore it and continue with the ticket creation."
 msgstr ""
+"Када се открије дупликат, биће приказано упозорење у тикету (видите пример "
+"на снимку екрана изнад). Ово упозорење може садржати и број тикета. Кликните "
+"на линк тикета да видите о чему се ради. У случају да није дупликат, "
+"једноставно игноришите упозорење и наставите са отварањем тикета."
 
 #. type: Title #
 #: src/en/documentation/use/advanced-features.md:368
@@ -2947,9 +2991,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:397
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "User Detail Panel"
-msgstr "Корисничка документација"
+msgstr "Панел са детаљима корисника"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:403
@@ -2962,7 +3006,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:409
-#, fuzzy
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -2970,18 +3013,19 @@ msgid ""
 "avatar to open the [user detail page](#user-detail-page)."
 msgstr ""
 "Можда сте већ приметили: једноставно пређите мишем преко сличице корисника, "
-"без обзира да ли се налази у заглављу, подножју, основном садржају или са "
-"бочне стране у детаљном прегледу тикета."
+"без обзира да ли се налази у заглављу, подножју, основном садржају или у "
+"бочној траци детаљног приказа тикета. За више детаља, кликните на аватар "
+"сличицу за отварање [странице са детаљима корисника](#user-detail-page)."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:411
-#, fuzzy
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
-"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
-"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Снимак екрана приказује аватар сличицу са отвореним панелом детаља "
+"корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-"
+"panel.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:414
@@ -2994,19 +3038,18 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:415
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "User Detail Page"
-msgstr "Корисничка документација"
+msgstr "Страница са детаљима корисника"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:418
-#, fuzzy
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/usage-advanced-"
 "features.cy.js/user-detail-page.png)"
 msgstr ""
-"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
-"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Снимак екрана који приказује страницу са детаљима корисника](/screenshots/"
+"cypress/usage-advanced-features.cy.js/user-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:422
@@ -3014,29 +3057,29 @@ msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
 msgstr ""
+"Омогућава вам увид у све релевантне информације о кориснику на једном месту. "
+"Примери тога шта овде можете пронаћи и одрадити:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:429
-#, fuzzy
 msgid "See organization membership"
-msgstr "Организације"
+msgstr "Видите чланство у организацијама"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:429
 msgid "See a graph of recent tickets"
-msgstr ""
+msgstr "Видите график недавних тикета"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:429
 #: src/en/documentation/use/advanced-features.md:449
-#, fuzzy
 msgid "Add or edit a note"
-msgstr "Додавање напомене"
+msgstr "Додајте или уредите напомену"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:429
 msgid "Edit the customer (via ::a:: menu)"
-msgstr ""
+msgstr "Уредите корисника (путем менија ::a::)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:429
@@ -3066,13 +3109,12 @@ msgstr "Организација"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:438
-#, fuzzy
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/usage-"
 "advanced-features.cy.js/organization-detail-page.png)"
 msgstr ""
-"![Снимак екрана приказује сличицу са отвореним детаљима корисника](/"
-"screenshots/cypress/usage-advanced-features.cy.js/user-popover.png)"
+"![Снимак екрана приказује страницу са детаљима организације](/screenshots/"
+"cypress/usage-advanced-features.cy.js/organization-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:442
@@ -3080,27 +3122,28 @@ msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
 msgstr ""
+"Омогућа вам да остварите увид у све релевантне информације о организацији на "
+"једном месту. Примери тога шта овде можете да пронађете и одрадите:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:449
-#, fuzzy
 msgid "See the members of the organization"
-msgstr "Домен организације."
+msgstr "Видите све чланове организације"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:449
 msgid "See a graph of the recent tickets of the whole organization"
-msgstr ""
+msgstr "Видите график недавних тикета целе организације"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:449
 msgid "Edit the organization (via ::a:: menu)"
-msgstr ""
+msgstr "Уредите организацију (преко менија ::a::)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:449
 msgid "Create a new user as a member of this organization"
-msgstr ""
+msgstr "Додате новог корисника као члана ове организације"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:454
@@ -3109,12 +3152,15 @@ msgid ""
 "detail view next to the user avatar). This opens a new tab with the "
 "organization detail page."
 msgstr ""
+"Једноставно кликните на аватар сличицу организације (нпр. у заглављу "
+"детаљног приказа тикета поред аватар сличице корисника). Ово ће отворити "
+"нови прозор са страницом са детаљима организације."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:455
 #, no-wrap
 msgid "External Issues and Assets"
-msgstr ""
+msgstr "Екстерни проблеми и средства"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:462
@@ -3124,6 +3170,10 @@ msgid ""
 "information in one place. Your Zammad admin has to activate and configure "
 "these features in Zammad's settings."
 msgstr ""
+"Уколико користите i-doit и Zammad за IT подршку или обрађујете Github или "
+"Gitlab проблеме, можете се повезати са овим екстерним системима да бисте "
+"имали све важне информације на једном месту. Ваш Zammad администратор мора "
+"прво да укључи и подеси ове функције."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:466
@@ -16007,15 +16057,34 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:19
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
+#| "|-------------------------- |-------------------------------|---------------------------------|\n"
+#| "| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
+#| "| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+#| "| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
+#| "| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+#| "| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+#| "| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
+#| "| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
 msgid ""
 "|                                             | GUI configuration | Environment variable       |\n"
 "|---------------------------------------------|-------------------|----------------------------|\n"
-"|  Host OS access required                    |  No               |  Yes                       |\n"
-"|  Automatically excluded loopback addresses  |  Yes              |  No                        |\n"
-"|  Configuration check                        |  Yes              |  Manually via test script  |\n"
-"|  Exceptions                                 |  Yes              |  No                        |\n"
+"| Host OS access required                     | No                | Yes                        |\n"
+"| Automatically excluded loopback addresses   | Yes               | No                         |\n"
+"| Configuration check                         | Yes               | Manually via test script   |\n"
+"| Exceptions                                  | Yes               | No                         |\n"
 msgstr ""
+"| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
+"|----------------------|-------------------------------|---------------------------------|\n"
+"| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
+"| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
+"| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
+"| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+"| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+"| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
+"| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:22
@@ -16031,7 +16100,7 @@ msgid ""
 "proxy server, including the port. Example:"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:26
 #, no-wrap
 msgid "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
@@ -16044,7 +16113,7 @@ msgid ""
 "proxy server, including the port. Example:"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:33
 #, no-wrap
 msgid "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
@@ -16056,12 +16125,12 @@ msgstr ""
 msgid ""
 "`NO_PROXY`\n"
 ": Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses\n"
-"  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match\n"
+"  and supports wildcards. Use a leading `.` as wildcard for subdomains, e.g. `.example.com` would match\n"
 "  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via\n"
 "  proxy. Example:\n"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:43
 #, no-wrap
 msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
@@ -16077,7 +16146,7 @@ msgid ""
 "  for Elasticsearch versions below 8. Example:\n"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:52
 #, no-wrap
 msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
@@ -16090,7 +16159,7 @@ msgid ""
 "Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
 "both variants by additionally specifying them with the values of the upper case variants, for example:\n"
 "\n"
-"```console\n"
+"```sh\n"
 "export http_proxy=$HTTP_PROXY\n"
 "```\n"
 "\n"
@@ -16143,7 +16212,7 @@ msgstr ""
 msgid "**Fetch script from remote:**\n"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:88
 #, fuzzy, no-wrap
 msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
@@ -16155,7 +16224,7 @@ msgstr "https://github.com/zammad/zammad-org/issues"
 msgid "**Use local script:**\n"
 msgstr ""
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
@@ -29700,25 +29769,3 @@ msgstr ""
 #, no-wrap
 #~ msgid "../logo.png"
 #~ msgstr "../logo.png"
-
-#, no-wrap
-#~ msgid ""
-#~ "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
-#~ "|-------------------------- |-------------------------------|---------------------------------|\n"
-#~ "| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
-#~ "| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
-#~ "| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
-#~ "| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-#~ "| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-#~ "| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
-#~ "| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
-#~ msgstr ""
-#~ "| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
-#~ "|----------------------|-------------------------------|---------------------------------|\n"
-#~ "| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
-#~ "| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
-#~ "| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
-#~ "| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-#~ "| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-#~ "| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
-#~ "| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"

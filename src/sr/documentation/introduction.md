@@ -3,15 +3,15 @@ features:
   - 
     details: 'Сазнајте све о томе како да радите у Zammad-у на дневном нивоу, са саветима, упутствима и све остало што можете да замислите.'
     icon: 🙋
-    link: /en/documentation/use/start
+    link: /sr/documentation/use/start
     title: 'Корисничка документација'
   - 
     details: 'Сазнајте како да подесите Zammad и повежете га са удаљеним системима.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage-zammad/start
+    link: /sr/documentation/manage-zammad/start
     title: 'Администраторска документација'
   - 
-    details: 'Learn about important terms and concepts used in Zammad.'
+    details: 'Сазнајте о важној терминологији и концептима који се користе у Zammad-у.'
     icon: 🗂️
     link: /sr/reference/glossary
     title: Речник

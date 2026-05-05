@@ -5,9 +5,9 @@ title: 'Напредне функције'
 
 # Напредне функције
 
-This page features a collection of various helpful tools that don't need
-their own separate pages. Just keep reading, search the page or navigate to
-the section you want using the table of contents on the right.
+Ова страница садржи збирку различитих корисних алата који не изискују
+посебне странице. Само наставите да читате, претражите страницу или идите на
+жељени одељак помоћу садржаја са десне стране.
 
 ## Понашање при освежавању тикета
 
@@ -16,9 +16,9 @@ the section you want using the table of contents on the right.
 
 **Зашто?**
 
-It is possible to automatically close a ticket tab in the navigation sidebar
-after updating a ticket.  This saves you a click after updating or updating
-a ticket to _closed_ state.
+Могуће је аутоматски затворити прозор тикета у бочној траци навигације након
+освежавања.  Овим можете уштедети клик након освежавања или _затварања_
+тикета.
 
 **Како?**
 
@@ -27,17 +27,17 @@ a ticket to _closed_ state.
 супротном имаће један од назива опција испод). Имате неколико различитих
 опција:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you
-  want to remove it from your navigation sidebar.
+- **Остани у прозору**: Подразумевана опција. Мораћете ручно да затворите
+  прозор уколико желите да буде уклоњен из ваше навигационе траке.
 - **Затвори прозор**: Ова опција затвара прозор по сваком освежавању
   тикета. Може бити добра опција ако обрађујете пуно тикета и/или тикети
   захтевају пуно интеракције.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated to the _closed_ state.
+- **Затвори прозор по затварању тикета**: Ова опција затвара прозор само
+  када је тикет освежен у _затвореном_ стању.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
-[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
+Уколико се ваша ситуација разликује од тикета до тикета, можете оставити **Остани у прозору** и користити пречицу на тастатури
+[[shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.
 :::
 
 ## Текстуални исечци
@@ -47,10 +47,11 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 
 **Зашто?**
 
-If you have to answer the same question again and again, ask your Zammad
-admin to create such a text module for you.  They can even include variables
-like customer name or any other available attribute which get replaced while
-using it in a ticket. The usage of text modules has benefits like:
+Уколико ухватите себе да стално одговарате на идентично питање, замолите
+вашег Zammad администратора да дода текстуални исечак за вас.  Исечци могу
+чак укључивати и променљиве као што су име клијента или било који други
+доступан атрибут, које ће бити замењене кад их користите у
+тикету. Коришћењем текстуалних исечака стичете следеће предности:
 
 - Штедите време приликом одговарања на тикете
 - Ваши и одговори ваших колега се поклапају јер користите идентичан текст за
@@ -58,35 +59,35 @@ using it in a ticket. The usage of text modules has benefits like:
 
 **Како?**
 
-Use the button in the toolbar of the editor or simply write [[:]][[:]] in
-the editor. Both ways let you search for the desired text module by typing
-some characters or words of the text or keywords of the text module.
+Користите дугме на траци са алаткама уредника текста или једноставно унесите
+[[:]][[:]] у текст. Оба начина вам омогућавају да претражите жељени
+текстуални исечак куцањем неких знакова или речи текста или кључних речи.
 
-You can pick one by clicking on it or by using the up and down arrows
-followed by [[enter]] on your keyboard. There are some text modules in
-Zammad which are shipped by default.
+Можете одабрати исечак кликом на њега или коришћењем стрелица на горе и доле
+а затим притиском на [[enter]] на вашој тастатури. Zammad долази са неким
+подразумеваним текстуалним исечцима.
 
-## Insert Knowledge Base Article
+## Убацивање чланка базе знања
 
-![Screenshot shows inserting knowledge base
-article](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
+![Снимак екрана приказује убацивање чланка базе
+знања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
 
 **Зашто?**
 
-If you often have the same or very similar customer requests about an issue
-of which a knowledge base article exists.  This saves you time because you
-don't have to switch to the knowledge base and copy/paste content.
+Уколико често добијате исте или веома сличне захтеве клијената у вези са
+проблемом за који већ постоји чланак у бази знања.  Ово вам штеди време јер
+не морате да прелазите у базу знања и копирате/налепљујете садржај.
 
 **Како?**
 
-Use the button in the toolbar of the editor or simply write [[?]][[?]] in
-the editor. Both ways let you search for the desired knowledge base article
-by typing some characters or words.
+Користите дугме на траци са алаткама уредника текста или једноставно унесите
+[[?]][[?]] у текст. Оба начина вам омогућавају да претражите жељени чланак
+базе знања куцањем неких знакова или речи.
 
-## Mention a User
+## Помињање корисника
 
-![Screenshot shows mentioning a
-user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Снимак екрана приказује помињање
+корисника](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
 
 **Зашто?**
 
@@ -96,9 +97,10 @@ user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.
 
 **Како?**
 
-While writing a ticket article, use the button in the toolbar of the editor
-or simply type [[@]][[@]]. Both ways let you search for the name of the user
-you want to mention by typing some characters or the complete name.
+Док пишете чланак тикета, користите дугме на траци са алаткама уредника
+текста или једноставно унесите [[@]][[@]]. Оба начина вам омогућавају да
+претражите жељеног корисника кога желите поменути куцањем неких знакова или
+комплетног имена.
 
 Zammad приказује листу свих корисника који одговарају вашем уносу и можете
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
@@ -129,20 +131,19 @@ Zammad приказује листу свих корисника који одг
 
 **Зашто?**
 
-If you have many steps you do over and over again, you should use a macro
-for that. In such a macro, your admin can pre-define different ticket
-actions you can apply with just a click. As an example, Zammad ships a
-"Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag **spam** is added and the ticket is
-closed. It is even possible to run an [AI
-agent](/en/documentation/use/guides/ai) within a macro on demand.
+Уколико стално понављате велики број корака, размислите о употреби макроа за
+њих. У таквом макроу, ваш администратор може да дефинише одређене радње на
+тикетима које можете покренути једним кликом. Као пример, Zammad
+подразумевано долази са макроом „Затвори и означи као непожељно”. По
+покретању, корисник који изврши макро ће постати власник тикета, ознака
+**spam** ће бити додата и тикет затворен. Чак је могуће покренути и [AI
+агента](/en/documentation/use/guides/ai) преко макроа по потреби.
 
 **Како?**
 
-If your admin already created a macro, you can execute it in the ticket
-detail view by clicking the `^` section of the `Update` button in the right
-corner of the footer bar (see screenshot above) and select the macro you
-want to execute.
+Уколико је ваш администратор већ додао макро, можете га извршити у детаљном
+приказу тикета кликом на `^` у оквиру дугмета `Освежи` у доњем десном углу
+(видите снимак екрана изнад) и одабиром макроа из листе.
 
 ::: warning
 Макро ће бити моментално извршен без додатне потврде!
@@ -191,8 +192,8 @@ Zammad администратор га је искључио. Списак за�
   броја у тексту задатка (нпр. `Ticket#123456`). Ове ставке се не могу ручно
   означити, већ ће одражавати стање референцираног тикета.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or
-  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
+  Нађите прикључак тикета са бројем одласком у жељени тикет и или кликом или на дугме за копирање ::c:: у заглављу или
+  путем пречице на тастатури [[.]]. Онда га можете налепити у текст новог задатка или где желите да га искористите.
   :::
 - Zammad врши аутоматску проверу да ли су сви задаци са списка
   обављени. Провера се врши приликом затварања тикета. Уколико нису сви
@@ -243,36 +244,36 @@ QA процес, уместо додавања интерног чланка. У
 
 **Зашто?**
 
-Service Level Agreements (SLAs) ensure timely responses to customer
-requests. Your administrator sets such goals as responding to all inquiries
-within eight hours, with optional custom deadlines for specific
-customers. When such a deadline is passed, the ticket escalates.
+Споразуми о нивоу услуга (SLA) омогућавају праворемене одговоре на захтеве
+клијента. Ваш администратор подешава циљеве као што су одговор на све упите
+у року од 8 часова, са опционим прилагођеним роковима за одређене
+клијенте. Када се ови рокови пробију, тикет ће ескалирати.
 
 **Како?**
 
-Zammad notifies you by default when tickets approach or exceed their
-deadlines. Configure these notifications in your [profile
-settings](/en/documentation/use/user-profile#notifications). Zammad also
-ships a default overview called "Escalated Tickets". This overview includes
-already escalated tickets and tickets which are expected to escalate within
-the next 10 minutes.
+Zammad вас подразумевано обавештава када се тикет приближава или пробија
+рокове. Подесите ова обавештења у вашем [корисничким
+подешавањима](/en/documentation/use/user-profile#notifications). Zammad
+такође долази и са подразумеваним прегледом под називом „Ескалирани
+тикети”. Овај преглед укључује све већ ескалиране тикете и тикете за које се
+очекује да ће ескалирати у наредних 10 минута.
 
 Тикети са додељеним SLA приказују временску ознаку у свом заглављу. Пређите
 курсором преко ове ознаке да видите све етапе и рокове ескалација у
 прозору. Приказани су сва предстојећа и достигнута времена ескалација на
 основу ваше SLA конфигурације:
 
-![Screenshot shows escalation panel by hovering over escalation
-timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
+![Снимак екрана приказује панел ескалација превлачењем курсора преко датума
+ескалације](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
 
 :::info
-The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
-ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.
+Времена ескалација се рачунају на основу вашег радног времена. Ово значи да ако ваше радно време почиње у 9:00,
+тикет је отворен у 7:00 и имате рок од 1 сата, ескалираће у 10:00, осим ако се не затвори раније.
 :::
 
-The SLA feature requires a configuration from your admin. In case you don’t
-see escalation timestamps, either the ticket is not SLA-relevant or the
-feature is not configured.
+SLA функција захтева подешавање од стране вашег администратора. Уколико не
+видите датуме ескалације, или тикет није покривен са SLA или функција није
+укључена.
 
 ## Масовне радње
 
@@ -283,43 +284,43 @@ feature is not configured.
 
 **Како?**
 
-There are 2 places where you can apply bulk actions:
+Постоје два места одакле можете покренути масовне радње:
 
-- In the ticket tab in the [detailed search page](guides/search)
-- In [Overviews](guides/overviews)
+- У прозору тикета на [детаљној страници претраге](guides/search)
+- У [прегледима](guides/overviews)
 
-In both places, you can apply bulk actions in different ways:
+На оба места можете покренути масовне радње на различите начине:
 
-- By using the side panel
-- By using the drag & drop overlay
+- Коришћењем панела са стране
+- Коришћењем механизма превуци и пусти
 
-To use bulk actions, first select the tickets you want to apply the changes
-to. Either select the tickets individually by clicking on the checkbox next
-to them or use the checkbox in the header to select all tickets of the
-current page. After selecting all tickets of the page, you can even select
-all tickets which match your current search query or overview condition by
-clicking on the **Select all XX results** label. The maximum number of
-selectable tickets for a bulk action is 2000.
+За коришћење масовне радње, прво одаберите тикете које желите да
+измените. Или их одаберите ручно кликом на кућицу поред њих или користите
+кућицу у заглављу да одабир свих тикета тренутне странице. По одабиру свих
+тикета странице, можете чак и проширити избор на све тикете који се
+подударају са тренутном претрагом или условима прегледа кликом на линк
+**Означи свих ## уноса**. Горња граница тикета које можете одабрати за
+масовну радњу је 2000.
 
-To select a section of consecutive tickets, click on the checkbox of the
-first ticket, then hold [[shift]] and click on the checkbox of the last
-ticket. This selects all tickets in between as well. This also works for
-unselecting tickets.
+За одабир више узастопних тикета, кликните на кућицу поред првог тикета,
+онда држите [[shift]] и кликните на кућицу поред последњег тикета. Овим ћете
+одабрати и све тикете између њих. Ово такође функционише и за уклањање
+избора.
 
-Depending on the number of affected tickets, you might see a small
-notification after triggering a bulk action, informing you about the
-progress. The bulk action is performed in the background so you can work on
-other tickets.  However, until the bulk action is finished, you are not able
-to start a new bulk action.
+У зависности од броја захваћеих тикета, може вам се приказати мало
+обавештење након поретања масовне радње, које вас информише о
+прогресу. Масовна радња се извршава у позадини тако да можете наставити
+обраду других тикета.  Међутим, док се масовна радња не заврши, нећете бити
+у могућности да покренете нову масовну радњу.
 
-**Side panel:**
+**Бочни панел:**
 
-![Screenshot shows the bulk action side
-panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Снимак екрана приказује бочни панел масовне
+радње](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-After you selected tickets, click the `Bulk Action` button in the top right
-corner and change/add attributes by using the fields in the right side
-panel. The available changes you can apply to tickets are:
+По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и
+промените/додајте атрибуте коришћењем поља у бочном панелу са десне
+стране. Доступни атрибути тикета које можете изменити су:
 
 - Промена групе
 - Промена власника
@@ -328,26 +329,25 @@ panel. The available changes you can apply to tickets are:
 - Додавање напомене
 - Покретање макроа
 
-**Drag & drop with bulk overlay:**
+**Механизам превуци препусти за масовну радњу:**
 
-![Screenshot shows the bulk action via drag and
-drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Снимак екрана приказује масовну радњу преко механизма превуци и
+пусти](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
-After you selected tickets, drag them by pressing and holding the mouse
-button and drop them on the desired action in the bulk action overlay. You
-can always skip this by dropping the tickets in the middle of the page. The
-available actions you can apply to tickets are:
+По одабиру тикета, превуците их притиском и држањем дугмета на мишу и
+пустите их над жељеном радњом у панелу масовне радње. Од радње увек можете
+одустати пуштањем тикета над средином странице. Доступне радње које можете
+извршити над тикетима на овај начин су:
 
 - Промена групе
 - Промена власника
-- Unassign owner
-- Unassign owner and set group
-- Run macro
+- Скидање доделе власника
+- Скидање доделе власника и пребацивање у групу
+- Покретање макроа
 
-Start your drag and drop action from one of the already selected tickets in
-case you selected all relevant ones.  To include another unselected ticket,
-start dragging from there and so it is also included in the batch
-processing.
+Започните радњу превлачења и пуштања над једном од већ одабраних тикета у
+случају да сте одабрали све релевантне.  За укључивање још неког неодабраног
+тикета, започните превлачење изнад њега и биће укључен у масовну радњу.
 
 ## Спајање тикета
 
@@ -386,9 +386,9 @@ processing.
 
 **Зашто?**
 
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets.  For example, this might be the
-case if a customer has a technical question and wants to place an order.
+Уколико имате тикет са више од једног проблема, можда ћете хтети да га
+разделите на два или више различитих ткета.  На пример до овога може доћи
+ако клијент има техничко питање и у исто време жели да пошаље поруџбину.
 
 **Како?**
 
@@ -412,39 +412,40 @@ case if a customer has a technical question and wants to place an order.
 
 **Како?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+::
-button in the **Related tickets** section.  This opens a side panel in which
-you can select a ticket by clicking on it or enter a ticket number in search
-field.  Additionally, you can choose between different link types:
+У панелу тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку
+**Повезани тикети**.  Ово ће отворити траку са стране у којој можете
+одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.
+Додатно, можете изабрати између различитих типова веза:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други
   је задатак. Ова врста везе се подразумевано користи приликом раздељивања
   или спајања тикета.
 
-## Duplicate Detection
+## Откривање дупликата
 
-![Screenshot shows duplicate ticket warning during ticket
-creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+![Снимак екрана приказује упозорење на дупликат приликом отварања
+тикета](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
 
 **Зашто?**
 
-Sometimes, it happens that a customer reaches out to you (or colleagues)
-more than once about a single issue. To avoid creating duplicate tickets,
-Zammad can warn you when another ticket is already present. This feature has
-to be activated and configured by your admin.
+Понекад се деси да вас клијент (или ваше колеге) контактира више пута у вези
+истог проблема. Да бисте избегли отварање дупликата тикета, Zammad вас може
+упозорити када већ постоји други тикет. Ову функцију мора да укључи и подеси
+ваш администратор.
 
 **Како?**
 
-Just create a new ticket and provide some information. Your admin can
-configure which ticket attributes must match for the warning to show up
-(e.g. customer and title). In case of many unnecessary warnings or no
-warning at all, ask your admin to adjust the attributes to compare.
+Само отворите нови тикет и унесите неке информације. Ваш администратор може
+подесити који атрибути тикета морају да се подударају да би се приказало
+упозорење (нпр. клијент и наслов). У случају превише непотребних упозорења
+или неприказивања упозорења, питајте вашег администратора да прилагоди
+атрибуте упоређивања.
 
-When a duplicate is detected, a warning in the ticket shows up (see the
-example in screenshot above). This warning can contain a ticket
-number. Click on the ticket link to see what it is about. In case it is no
-duplicate, simply ignore it and continue with the ticket creation.
+Када се открије дупликат, биће приказано упозорење у тикету (видите пример
+на снимку екрана изнад). Ово упозорење може садржати и број тикета. Кликните
+на линк тикета да видите о чему се ради. У случају да није дупликат,
+једноставно игноришите упозорење и наставите са отварањем тикета.
 
 ## Обрачун времена
 
@@ -484,7 +485,7 @@ duplicate, simply ignore it and continue with the ticket creation.
 ![Снимак екрана приказује приказ обрачуна
 времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
 
-## User Detail Panel
+## Панел са детаљима корисника
 
 **Зашто?**
 
@@ -493,31 +494,31 @@ duplicate, simply ignore it and continue with the ticket creation.
 
 **Како?**
 
-You might have seen it already: simply hover your mouse over an avatar icon,
-no matter if it is in the header, footer, main content or the content
-sidebar in the ticket detail view. To see more details, click on the user
-avatar to open the [user detail page](#user-detail-page).
+Можда сте већ приметили: једноставно пређите мишем преко сличице корисника,
+без обзира да ли се налази у заглављу, подножју, основном садржају или у
+бочној траци детаљног приказа тикета. За више детаља, кликните на аватар
+сличицу за отварање [странице са детаљима корисника](#user-detail-page).
 
-![Screenshot shows an avatar with opened user detail
-panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
+![Снимак екрана приказује аватар сличицу са отвореним панелом детаља
+корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
 
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
 
-## User Detail Page
+## Страница са детаљима корисника
 
-![Screenshot shows user detail
-page](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
+![Снимак екрана који приказује страницу са детаљима
+корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
 
 **Зашто?**
 
-It allows you to see all relevant user information in one place. Examples
-what you can find and do there:
+Омогућава вам увид у све релевантне информације о кориснику на једном
+месту. Примери тога шта овде можете пронаћи и одрадити:
 
-- See organization membership
-- See a graph of recent tickets
-- Add or edit a note
-- Edit the customer (via ::a:: menu)
+- Видите чланство у организацијама
+- Видите график недавних тикета
+- Додајте или уредите напомену
+- Уредите корисника (путем менија ::a::)
 - See a history of changes (via ::a:: menu)
 - Create a new ticket with this user as customer
 
@@ -530,35 +531,35 @@ the ::a:: menu.
 
 ## Organization Detail Page
 
-![Screenshot shows organization detail
-page](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+![Снимак екрана приказује страницу са детаљима
+организације](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
 
 **Зашто?**
 
-It allows you to see all relevant organization information in one
-place. Examples what you can find and do there:
+Омогућа вам да остварите увид у све релевантне информације о организацији на
+једном месту. Примери тога шта овде можете да пронађете и одрадите:
 
-- See the members of the organization
-- See a graph of the recent tickets of the whole organization
-- Add or edit a note
-- Edit the organization (via ::a:: menu)
+- Видите све чланове организације
+- Видите график недавних тикета целе организације
+- Додајте или уредите напомену
+- Уредите организацију (преко менија ::a::)
 - See a history of changes (via ::a:: menu)
-- Create a new user as a member of this organization
+- Додате новог корисника као члана ове организације
 
 **Како?**
 
-Simply click on an organization avatar (e.g. in the header of the ticket
-detail view next to the user avatar). This opens a new tab with the
-organization detail page.
+Једноставно кликните на аватар сличицу организације (нпр. у заглављу
+детаљног приказа тикета поред аватар сличице корисника). Ово ће отворити
+нови прозор са страницом са детаљима организације.
 
-## External Issues and Assets
+## Екстерни проблеми и средства
 
 **Зашто?**
 
-If you use i-doit and Zammad for IT support or you deal with Github or
-Gitlab issues, you can link to these external systems to have all relevant
-information in one place. Your Zammad admin has to activate and configure
-these features in Zammad's settings.
+Уколико користите i-doit и Zammad за IT подршку или обрађујете Github или
+Gitlab проблеме, можете се повезати са овим екстерним системима да бисте
+имали све важне информације на једном месту. Ваш Zammad администратор мора
+прво да укључи и подеси ове функције.
 
 **Како?**
 

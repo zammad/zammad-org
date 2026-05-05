@@ -1,63 +1,64 @@
 ---
 order: 10
-title: 'Proxy and Connections'
+title: 'Proxy und Verbindungen'
 ---
 
-# Proxy and Connections
+# Proxy und Verbindungen
 
 ## Proxy
 
-This section covers the proxy configuration via environment variables. As an
-alternative, the proxy configuration is also possible via Zammad UI. You can
-find more information about that in the network section of the admin
-documentation.
+Dieser Abschnitt beinhaltet die Proxy-Konfiguration mittels
+Umgebungsvariablen. Alternativ ist die Proxy-Konfiguration auch über die
+Zammad-Benutzeroberfläche möglich. Weitere Informationen dazu finden Sie im
+Netzwerk-Abschnitt der Admin-Dokumentation.
 
-|                                             | GUI configuration | Environment variable       |
-|---------------------------------------------|-------------------|----------------------------|
-| Host OS access required                     | No                | Yes                        |
-| Automatically excluded loopback addresses   | Yes               | No                         |
-| Configuration check                         | Yes               | Manually via test script   |
-| Exceptions                                  | Yes               | No                         |
+|                                              | GUI Konfiguration | Umgebungsvariable         |
+|----------------------------------------------|-------------------|---------------------------|
+| Zugriff auf Host-OS erforderlich             | Nein              | Ja                        |
+| Automatische Ausnahme von Loopback-Adressen  | Ja                | Nein                      |
+| Konfigurationsprüfung                        | Ja                | Manuell per Test-Skript   |
+| Ausnahmen                                    | Ja                | Nein                      |
 
-The following environment variables can be used to configure proxy
-settings. Adjust the values according to your environment.
+Die folgenden Umgebungsvariablen können zur Konfiguration der
+Proxy-Einstellungen verwendet werden. Passen Sie die Werte entsprechend
+Ihrer Umgebung an.
 
-`HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your
-proxy server, including the port. Example:
+`HTTP_PROXY`: Variable für HTTP-Verkehr. Setzen Sie sie auf die Adresse
+Ihres Proxy-Servers, einschließlich des Ports. Beispiel:
 
   ```sh
   export HTTP_PROXY="http://127.0.0.1:8080"
   ```
 
-`HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your
-proxy server, including the port. Example:
+`HTTPS_PROXY`: Variable für HTTPS-Verkehr. Setzen Sie sie auf die Adresse
+Ihres Proxy-Servers, einschließlich des Ports. Beispiel:
 
   ```sh
   export HTTPS_PROXY="http://127.0.0.1:8080"
   ```
 
 `NO_PROXY`
-: Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses
-  and supports wildcards. Use a leading `.` as wildcard for subdomains, e.g. `.example.com` would match
-  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via
-  proxy. Example:
+: Variable für Adressen, auf die direkt und ohne Proxy zugegriffen werden soll. Erwartet eine kommagetrennte Liste von Adressen
+  und unterstützt Wildcards. Verwenden Sie einen führenden `.` als Platzhalter für Subdomains. Das Beispiel `.example.com`
+  schließt example.com und alle seine Subdomains ein. Achten Sie darauf, dass Sie Loopback-Adressen einschließen, damit sie nicht über den
+  Proxy geleitet werden. Beispiel:
 
   ```sh
   export NO_PROXY="localhost,127.0.0.1,.example.com"
   ```
 
 `ES_JAVA_OPTS`
-: Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
-  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin
-  for Elasticsearch versions below 8. Example:
+: Variable für die Einstellung eines Proxys für Elasticsearch. Standardmäßig kommuniziert Elasticsearch nicht mit externen Systemen
+  während des Betriebs. Es kann jedoch Fälle geben, in denen dies erforderlich ist, zum Beispiel beim Herunterladen des Ingest-Plugins
+  für Elasticsearch-Versionen unter 8. Beispiel:
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
   ```
 
 :::tip
-Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set
-both variants by additionally specifying them with the values of the upper case variants, for example:
+Je nach Ihrer Umgebung benötigen Sie vielleicht auch die klein geschriebene Variante der Variablen. Im Zweifelsfall setzen Sie
+beide Varianten, indem Sie sie zusätzlich mit den Werten der großgeschriebenen Varianten angeben:
 
 ```sh
 export http_proxy=$HTTP_PROXY
@@ -65,36 +66,38 @@ export http_proxy=$HTTP_PROXY
 
 :::
 
-## External Connections
+## Externe Verbindungen
 
-During installation and operation of Zammad, some connections to online
-services are required. Depending on your installation method and Zammad
-configuration, a connection to the following services is made (maybe also
-helpful for firewall configuration):
+Während der Installation und des Betriebs von Zammad sind einige
+Verbindungen zu Online-Diensten erforderlich. Abhängig von Ihrer
+Installationsmethode und der Konfiguration von Zammad wird eine Verbindung
+zu den folgenden Diensten hergestellt (vielleicht auch hilfreich für die
+Firewall-Konfiguration):
 
-| Address                      | Comment                                               |
+| Addresse                     | Kommentar                                             |
 |------------------------------|-------------------------------------------------------|
-| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |
-| dl.packager.io               | Download of OS package (package installation)         |
-| go.packager.io               | As above; new package hosting service                 |
-| geo.zammad.com               | Used for geo data                                     |
-| google.com                   | Download of feast days for the calendar               |
-| index.rubygems.org           | Download of gems for ruby                             |
-| registry.npmjs.org           | Download of js dependencies                           |
+| artifacts.elastic.co         | Download des Ingest-Plugins (nur für ES < 8)          |
+| dl.packager.io               | Download des OS-Pakets (Paketinstallation)            |
+| go.packager.io               | Wie oben; neuer Paket-Hosting-Dienst                  |
+| geo.zammad.com               | Wird für Geodaten verwendet                            |
+| google.com                   | Download von Feiertagen für den Kalender              |
+| index.rubygems.org           | Download von Gems für Ruby                             |
+| registry.npmjs.org           | Download von JS-Abhängigkeiten                         |
 
-You can use a script to check the connection state of your system. It tries
-to connect to the services mentioned above and shows the result. If every
-connection was successful, it displays a checkmark for each contacted
-service. Run it either by fetching it from the Zammad repository or by
-executing the local version on your Zammad machine.
+Sie können ein Skript verwenden, um den Verbindungsstatus Ihres Systems zu
+überprüfen. Es versucht, eine Verbindung zu den oben genannten Diensten
+herzustellen und zeigt das Ergebnis an. Wenn alle Verbindungen erfolgreich
+waren, zeigt es für jeden kontaktierten Dienst ein Häkchen an. Führen Sie es
+aus, indem Sie es entweder aus der Paketquelle von Zammad abrufen oder die
+lokale Version auf Ihrem Zammad-Server ausführen.
 
-**Fetch script from remote:**
+**Skript online abrufen:**
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh
 ```
 
-**Use local script:**
+**Lokales Skript verwenden:**
 
 ```sh
 /opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh

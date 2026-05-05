@@ -1,9 +1,10 @@
 ---
 order: 1
-title: Start
+title: Почетак
 ---
 
-# Welcome
+# Добродошли
 
-This part of the documentation is currently empty. It will be created step
-by step and simultaneously to the development of Zammad's new admin UI.
+Овај део документације је тренутно празан. Биће написан корак по корак и
+истовремено са развојем новог администраторског корисничког интерфејса
+Zammad-а.

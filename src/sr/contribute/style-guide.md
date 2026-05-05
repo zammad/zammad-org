@@ -342,15 +342,15 @@ features:
 За уметање унутар садржаја стране, једноставно унесите `<VPDocFeatures />` референцу где желите да се
 појави.
 
-#### Theme Specific Images
+#### Слике специфичне за тему
 
-To target specific image assets to a single theme, you can assign
-`.dark-only` or `.light-only` CSS class to the corresponding image:
+Да бисте ограничили одређене слике на једну тему, можете доделити CSS класу
+`.dark-only` или `.light-only` одговарајућој слици:
 
 ```md
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only}
-![Light only image](/assets/logo-flat-light.svg){.light-only}
+![Само за тамну изглед](/assets/logo-flat-dark.svg){.dark-only}
+![Само за светли изглед](/assets/logo-flat-light.svg){.light-only}
 ```
 
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light
-only image](/assets/logo-flat-light.svg){.light-only width=240}
+![Само за тамни изглед](/assets/logo-flat-dark.svg){.dark-only width=240}
+![Само за светли изглед](/assets/logo-flat-light.svg){.light-only width=240}

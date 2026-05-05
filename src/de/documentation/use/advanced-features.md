@@ -456,8 +456,8 @@ werden. [Zusammengefasste](#tickets-zusammenfassen) und
 **Wie?**
 
 Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
-hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt "Verbundene
-Tickets" klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
+hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt **Verwandte
+Tickets** klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
 Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
 eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen
 wählen:

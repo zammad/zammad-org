@@ -13,13 +13,13 @@ features:
   - 
     details: 'As an administrator, head over to the Manage Zammad section.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage-zammad/start
+    link: /sr/documentation/manage-zammad/start
     title: Администратор
 order: 1
-title: Start
+title: Почетак
 ---
 
-# Welcome
+# Добродошли
 
 Добродошли на корисничку документацију Zammad-а. Овде можете научити како да
 користите Zammad да сарађујете са вашим колегама на вишем нивоу!

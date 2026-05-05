@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-30 15:14+0200\n"
-"PO-Revision-Date: 2026-04-30 13:02+0000\n"
+"POT-Creation-Date: 2026-05-04 12:50+0200\n"
+"PO-Revision-Date: 2026-05-05 13:32+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -2892,8 +2892,8 @@ msgid ""
 "field.  Additionally, you can choose between different link types:"
 msgstr ""
 "Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket "
-"hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt \"Verbundene "
-"Tickets\" klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein "
+"hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt **Verwandte "
+"Tickets** klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein "
 "Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld "
 "eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen "
 "wählen:"
@@ -18517,13 +18517,13 @@ msgstr ""
 #: src/en/reference/proxy-connections.md:6
 #, no-wrap
 msgid "Proxy and Connections"
-msgstr ""
+msgstr "Proxy und Verbindungen"
 
 #. type: Title ##
 #: src/en/reference/proxy-connections.md:8
 #, no-wrap
 msgid "Proxy"
-msgstr ""
+msgstr "Proxy"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:12
@@ -18533,6 +18533,10 @@ msgid ""
 "find more information about that in the network section of the admin "
 "documentation."
 msgstr ""
+"Dieser Abschnitt beinhaltet die Proxy-Konfiguration mittels "
+"Umgebungsvariablen. Alternativ ist die Proxy-Konfiguration auch über die "
+"Zammad-Benutzeroberfläche möglich. Weitere Informationen dazu finden Sie im "
+"Netzwerk-Abschnitt der Admin-Dokumentation."
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:19
@@ -18540,11 +18544,23 @@ msgstr ""
 msgid ""
 "|                                             | GUI configuration | Environment variable       |\n"
 "|---------------------------------------------|-------------------|----------------------------|\n"
-"|  Host OS access required                    |  No               |  Yes                       |\n"
-"|  Automatically excluded loopback addresses  |  Yes              |  No                        |\n"
-"|  Configuration check                        |  Yes              |  Manually via test script  |\n"
-"|  Exceptions                                 |  Yes              |  No                        |\n"
+"| Host OS access required                     | No                | Yes                        |\n"
+"| Automatically excluded loopback addresses   | Yes               | No                         |\n"
+"| Configuration check                         | Yes               | Manually via test script   |\n"
+"| Exceptions                                  | Yes               | No                         |\n"
 msgstr ""
+"|                                              | GUI Konfiguration | "
+"Umgebungsvariable         |\n"
+"|----------------------------------------------|-------------------"
+"|---------------------------|\n"
+"| Zugriff auf Host-OS erforderlich             | Nein              | Ja"
+"                        |\n"
+"| Automatische Ausnahme von Loopback-Adressen  | Ja                | Nein"
+"                      |\n"
+"| Konfigurationsprüfung                        | Ja                | Manuell "
+"per Test-Skript   |\n"
+"| Ausnahmen                                    | Ja                | Nein"
+"                      |\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:22
@@ -18552,6 +18568,9 @@ msgid ""
 "The following environment variables can be used to configure proxy settings. "
 "Adjust the values according to your environment."
 msgstr ""
+"Die folgenden Umgebungsvariablen können zur Konfiguration der Proxy-"
+"Einstellungen verwendet werden. Passen Sie die Werte entsprechend Ihrer "
+"Umgebung an."
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:25
@@ -18559,12 +18578,14 @@ msgid ""
 "`HTTP_PROXY` : Variable for HTTP traffic. Set it to the address of your "
 "proxy server, including the port. Example:"
 msgstr ""
+"`HTTP_PROXY`: Variable für HTTP-Verkehr. Setzen Sie sie auf die Adresse "
+"Ihres Proxy-Servers, einschließlich des Ports. Beispiel:"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:26
 #, no-wrap
 msgid "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
-msgstr ""
+msgstr "  export HTTP_PROXY=\"http://127.0.0.1:8080\"\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:32
@@ -18572,12 +18593,14 @@ msgid ""
 "`HTTPS_PROXY` : Variable for HTTPS traffic. Set it to the address of your "
 "proxy server, including the port. Example:"
 msgstr ""
+"`HTTPS_PROXY`: Variable für HTTPS-Verkehr. Setzen Sie sie auf die Adresse "
+"Ihres Proxy-Servers, einschließlich des Ports. Beispiel:"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:33
 #, no-wrap
 msgid "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
-msgstr ""
+msgstr "  export HTTPS_PROXY=\"http://127.0.0.1:8080\"\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:42
@@ -18585,16 +18608,24 @@ msgstr ""
 msgid ""
 "`NO_PROXY`\n"
 ": Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses\n"
-"  and supports wildcards. Use a leading ``.`` as wildcard for subdomains, e.g. ``.example.com`` would match\n"
+"  and supports wildcards. Use a leading `.` as wildcard for subdomains, e.g. `.example.com` would match\n"
 "  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via\n"
 "  proxy. Example:\n"
 msgstr ""
+"`NO_PROXY`\n"
+": Variable für Adressen, auf die direkt und ohne Proxy zugegriffen werden "
+"soll. Erwartet eine kommagetrennte Liste von Adressen\n"
+"  und unterstützt Wildcards. Verwenden Sie einen führenden `.` als "
+"Platzhalter für Subdomains. Das Beispiel `.example.com`\n"
+"  schließt example.com und alle seine Subdomains ein. Achten Sie darauf, "
+"dass Sie Loopback-Adressen einschließen, damit sie nicht über den\n"
+"  Proxy geleitet werden. Beispiel:\n"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:43
 #, no-wrap
 msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
-msgstr ""
+msgstr "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:51
@@ -18605,12 +18636,16 @@ msgid ""
 "  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin\n"
 "  for Elasticsearch versions below 8. Example:\n"
 msgstr ""
+"`ES_JAVA_OPTS`\n"
+": Variable für die Einstellung eines Proxys für Elasticsearch. Standardmäßig kommuniziert Elasticsearch nicht mit externen Systemen\n"
+"  während des Betriebs. Es kann jedoch Fälle geben, in denen dies erforderlich ist, zum Beispiel beim Herunterladen des Ingest-Plugins\n"
+"  für Elasticsearch-Versionen unter 8. Beispiel:\n"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:52
 #, no-wrap
 msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
-msgstr ""
+msgstr "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/proxy-connections.md:56
@@ -18619,18 +18654,24 @@ msgid ""
 "Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
 "both variants by additionally specifying them with the values of the upper case variants, for example:\n"
 "\n"
-"```console\n"
+"```sh\n"
 "export http_proxy=$HTTP_PROXY\n"
 "```\n"
 "\n"
 msgstr ""
+"Je nach Ihrer Umgebung benötigen Sie vielleicht auch die klein geschriebene Variante der Variablen. Im Zweifelsfall setzen Sie\n"
+"beide Varianten, indem Sie sie zusätzlich mit den Werten der großgeschriebenen Varianten angeben:\n"
+"\n"
+"```sh\n"
+"export http_proxy=$HTTP_PROXY\n"
+"```\n"
+"\n"
 
 #. type: Title ##
 #: src/en/reference/proxy-connections.md:66
-#, fuzzy, no-wrap
-#| msgid "External Services"
+#, no-wrap
 msgid "External Connections"
-msgstr "Externe Dienste"
+msgstr "Externe Verbindungen"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:71
@@ -18640,6 +18681,11 @@ msgid ""
 "configuration, a connection to the following services is made (maybe also "
 "helpful for firewall configuration):"
 msgstr ""
+"Während der Installation und des Betriebs von Zammad sind einige "
+"Verbindungen zu Online-Diensten erforderlich. Abhängig von Ihrer "
+"Installationsmethode und der Konfiguration von Zammad wird eine Verbindung "
+"zu den folgenden Diensten hergestellt (vielleicht auch hilfreich für die "
+"Firewall-Konfiguration):"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:81
@@ -18655,6 +18701,15 @@ msgid ""
 "| index.rubygems.org           | Download of gems for ruby                             |\n"
 "| registry.npmjs.org           | Download of js dependencies                           |\n"
 msgstr ""
+"| Addresse                     | Kommentar                                             |\n"
+"|------------------------------|-------------------------------------------------------|\n"
+"| artifacts.elastic.co         | Download des Ingest-Plugins (nur für ES < 8)          |\n"
+"| dl.packager.io               | Download des OS-Pakets (Paketinstallation)            |\n"
+"| go.packager.io               | Wie oben; neuer Paket-Hosting-Dienst                  |\n"
+"| geo.zammad.com               | Wird für Geodaten verwendet                            |\n"
+"| google.com                   | Download von Feiertagen für den Kalender              |\n"
+"| index.rubygems.org           | Download von Gems für Ruby                             |\n"
+"| registry.npmjs.org           | Download von JS-Abhängigkeiten                         |\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:85
@@ -18665,32 +18720,36 @@ msgid ""
 "service. Run it either by fetching it from the Zammad repository or by "
 "executing the local version on your Zammad machine."
 msgstr ""
+"Sie können ein Skript verwenden, um den Verbindungsstatus Ihres Systems zu "
+"überprüfen. Es versucht, eine Verbindung zu den oben genannten Diensten "
+"herzustellen und zeigt das Ergebnis an. Wenn alle Verbindungen erfolgreich "
+"waren, zeigt es für jeden kontaktierten Dienst ein Häkchen an. Führen Sie es "
+"aus, indem Sie es entweder aus der Paketquelle von Zammad abrufen oder die "
+"lokale Version auf Ihrem Zammad-Server ausführen."
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:87
 #, no-wrap
 msgid "**Fetch script from remote:**\n"
-msgstr ""
+msgstr "**Skript online abrufen:**\n"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:88
-#, fuzzy, no-wrap
-#| msgid "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md\n"
+#, no-wrap
 msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
-msgstr "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-package.md\n"
+msgstr "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:93
-#, fuzzy, no-wrap
-#| msgid "**User payload:**\n"
+#, no-wrap
 msgid "**Use local script:**\n"
-msgstr "**Benutzer Nutzlast:**\n"
+msgstr "**Lokales Skript verwenden:**\n"
 
-#. type: Fenced code block (console)
+#. type: Fenced code block (sh)
 #: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
-msgstr ""
+msgstr "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
 
 #. type: Title #
 #: src/en/reference/rails-commands.md:1 src/en/reference/rails-commands.md:6
@@ -30251,9 +30310,7 @@ msgstr ""
 "\n"
 "=== Ubuntu/Debian\n"
 "\n"
-"Paketquellen-Schlüssel hinzufügen:\n"
-"\n"
-"``` sh\n"
+"```sh\n"
 "curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \\\n"
 "  gpg --dearmor | sudo tee /usr/share/keyrings/elasticsearch-keyring.gpg \\\n"
 "  && sudo chmod 644 /usr/share/keyrings/elasticsearch-keyring.gpg\n"
@@ -30261,13 +30318,13 @@ msgstr ""
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"``` sh\n"
+"```sh\n"
 "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
 "=== CentOS/RHEL\n"
 "\n"
-"``` sh\n"
+"```sh\n"
 "sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
 "```\n"
 "\n"
