@@ -47,7 +47,7 @@ describe('ticket sidebar', () => {
     cy.get('main').should('exist')
     cy.wait(2000)
     cy.get('button').contains('Add internal note').parent().clip({ padding: 5 }).then((TopClip) => {
-      cy.get('button').contains('Add reply').parent().clip({ padding: 5 }).then((BottomClip) => {
+      cy.get('button').contains('Reply to customer').parent().clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('new-article', { clip })
         })
