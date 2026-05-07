@@ -91,8 +91,8 @@ Zammads Status sind farbkodiert. Das hilft Ihnen den Zustand eines Tickets
 viel schneller zu verstehen - ohne einen detaillierten Blick hinein werfen
 zu müssen.
 
-![Screenshot zeigt verschiedene farbkodierte
-Status](/screenshots/overviews/states.png)
+![Screenshot shows different color-coded
+states](/screenshots/documentation/use/overviews/states.png)
 
 ### Priorität
 
@@ -108,8 +108,8 @@ Zammad-Administrator, zusätzliche Prioritäten zu erstellen. Die
 Standardprioritäten ermöglichen es Ihnen, die Wichtigkeit Ihrer Tickets
 sofort zu erkennen, da sie farblich gekennzeichnet sind:
 
-![Screenshot zeigt farbkodierte
-Prioritäten](/screenshots/overviews/priorities.png)
+![Screenshot shows different color-coded
+priorities](/screenshots/documentation/use/overviews/priorities.png)
 
 Sie fragen sich vielleicht, was eine solche Priorität macht. Von Haus aus
 passiert damit eigentlich nichts, außer der

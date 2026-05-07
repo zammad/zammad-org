@@ -42,7 +42,7 @@ Below the "Compose path" field, click on the `Add file` button. This opens the "
 can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
 `{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
 
-![Portainer additional paths configuration](/screenshots/installation/portainer-additional-paths.png)
+![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 === Docker Compose
 

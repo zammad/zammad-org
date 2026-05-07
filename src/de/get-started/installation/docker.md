@@ -40,8 +40,8 @@ Wählen Sie in der Portainer-GUI (z.B. `https://yourdomain.tld:9443`) Ihre
 Zielumgebung aus, wählen Sie **Stacks** und klicken Sie auf `Add stack`, wie
 Sie im Screenshot unten sehen können.
 
-![Screenshot mit Abschnitt Stack und markiertem "Add Stack" in
-Portainer.](/screenshots/installation/portainer-stacks.png)
+![Screenshot in the Stacks section and highlighted "Add
+stack".](/screenshots/get-started/installation/portainer-stacks.png)
 
 ### Schritt 2: Aus dem Repository erstellen
 
@@ -58,8 +58,8 @@ Sie den Stack mithilfe von vordefinierten Szenarien anpassen und
 Umgebungsvariablen verwenden. Weitere Informationen finden Sie im Abschnitt
 [Anpassung](#anpassen-des-zammad-stacks) weiter unten.
 
-![Stack-Erstellung mit Informationen aus der
-Repository-Ansicht](/screenshots/installation/portainer-stack-creation.png)
+![Stack creation with provided information in Repository
+screen](/screenshots/get-started/installation/portainer-stack-creation.png)
 
 ### Schritt 3: Starten des Stacks
 
@@ -146,33 +146,33 @@ Führen Sie Befehle in Ihrem Docker Stack aus, indem Sie `rails` oder `rake`
 
 === Via Portainer GUI
 
-Suchen Sie den laufenden Rails-Container In der Portainer GUI und klicken Sie auf das
-**Exec Console** Icon in der Spalte "Quick Actions", wählen Sie den Standard-Entrypoint `/bin/bash`
-und klicken **Connect**.
+In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
+on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+**Connect**.
 
-![Portainer Ausführung Console](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
-Rufen Sie die interaktive Rails-Konsole auf, indem Sie folgenden Befehl ausführen:
+Run the interactive Rails console by executing:
 
 ```sh
 bundle exec rails c
 ```
 
-Führen Sie einen Befehl direkt aus:
+Directly execute a specific command:
 
 ```sh
-bundle exec rails r '...Ihren Rails-Befehl...'
+bundle exec rails r '...your rails command here...'
 ```
 
-=== Via Konsole
+=== Via console
 
-Führen Sie einen Befehl direkt aus:
+Directly execute a specific command:
 
 ```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
-Rufen Sie die interaktive Rails-Konsole auf um Rails-Befehle einzugeben:
+Run the interactive Rails console to manually enter Rails commands:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
@@ -181,7 +181,7 @@ docker compose run --rm zammad-railsserver bundle exec rails c
 Via `docker compose exec`:
 
 ```sh
-docker compose exec zammad-railsserver bundle exec rails r '...Ihren Rails-Befehl...'
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip

@@ -216,7 +216,7 @@ the version number.
 In your Zammad stack, click on `Pull and redeploy`, activate
 **Re-pull image and redeploy** and click on `Update`.
 
-![Highlighted stack update in Portainer](/screenshots/installation/portainer-stack-update.png)
+![Highlighted stack update in Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
 ### Updating Docker Compose Based Installations
 

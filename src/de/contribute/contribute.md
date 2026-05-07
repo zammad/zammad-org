@@ -97,8 +97,8 @@ ein guter Ausgangspunkt.
 Die Übersetzung von **Zammad** und die Übersetzung der **Dokumentation** sind in Weblate in verschiedene Projekte aufgeteilt.
 Wenn Sie im oberen Menü auf _Projekte > Alle Projekte durchsuchen_ klicken, finden Sie eine Übersicht der Projekte:
 
-![Screenshot mit Übersetzungsprojekten in Weblate und
-Menü](/screenshots/weblate-overview-docs.png)
+![Screenshot showing translation projects in Weblate and
+menu](/screenshots/contribute/weblate-overview-docs.png)
 
 Struktur von Übersetzungsprojekten in Weblate:
 
@@ -124,8 +124,8 @@ die mehr oder weniger dasselbe sind wie verschiedene Versionen. Nachdem Sie
 eine davon ausgewählt haben, können Sie den Übersetzungsstatus für die
 verschiedenen Sprachen sehen, wie auf folgendem Screenshot zu sehen:
 
-![Screenshot zeigt Übersetzungsstand der verschiedenen Sprachen für die
-Benutzer Dokumentation](/screenshots/weblate-project-overview.png)
+![Screenshot showing translation status of different languages for the user
+documentation](/screenshots/contribute/weblate-project-overview.png)
 
 ### Übersetzen
 
@@ -136,7 +136,8 @@ Danach sehen Sie die erste unübersetzte Zeichenkette im oberen Feld und
 können theoretisch mit der Übersetzung beginnen. Doch werfen wir zunächst
 einen kurzen Blick auf die Benutzeroberfläche von Weblate:
 
-![Screenshot des Weblate User-Interface](/screenshots/weblate-ui.png)
+![Screenshot of Weblate translation user
+interface](/screenshots/contribute/weblate-ui.png)
 
 1. **Pfad** zum aktuellen Projekt und zur aktuellen Sprache
 2. **Übersetzungsbereich** selbst. Sie finden die Zeichenkette der Quelle

@@ -76,7 +76,7 @@ with an AI agent action, you can even run it manually. Ask your admin for detail
 If an AI agent applied changes, you can see a ticket history entry telling you the name of the AI agent. If you notice
 ongoing issues with what the AI agent did, inform your Zammad admin. Example of a history entry of an AI agent:
 
-![Screenshot shows AI agent ticket history entry](/screenshots/ai/ai-agent-ticket-history.png)
+![Screenshot shows AI agent ticket history entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Simultaneous Work Detection
 
@@ -86,10 +86,10 @@ for a moment or head over to another ticket.
 
 Avatar of AI agent:
 
-![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)
+![Screenshot shows avatar of an AI agent](/screenshots/documentation/use/ai/ai-live-user.png)
 
 ### Overview Indicator
 
 A running AI agent is indicated in the status column in overviews. The status circle changes to a blue/pink gradient circle:
 
-![Screenshot shows a status circle in overviews indicating an AI agent is currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)
+![Screenshot shows a status circle in overviews indicating an AI agent is currently working on it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)

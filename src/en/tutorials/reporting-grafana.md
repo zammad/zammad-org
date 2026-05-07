@@ -155,7 +155,7 @@ names above, you can simply search for the same name.
 
 ### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
 
-![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)
+![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
 
 #### Dashboard Graphs
 
@@ -187,7 +187,7 @@ names above, you can simply search for the same name.
 
 ### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
 
-![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)
+![Grafana Chat Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
 
 #### Dashboard Graphs
 
@@ -211,7 +211,7 @@ Chat session creations.
 
 ### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
 
-![Grafana Call Dashboard](/screenshots/reporting/calls.png)
+![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
 
 #### Dashboard Graphs
 

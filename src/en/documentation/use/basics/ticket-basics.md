@@ -62,7 +62,7 @@ representation of progress towards completion. By default, there are the followi
 Zammad's ticket states are color coded. This helps you to understanding the state of the ticket much faster in general -
 without having a look into details.
 
-![Screenshot shows different color-coded states](/screenshots/overviews/states.png)
+![Screenshot shows different color-coded states](/screenshots/documentation/use/overviews/states.png)
 
 ### Priority
 
@@ -76,7 +76,7 @@ are:
 In case these priorities aren't enough, ask your Zammad admin to create additional ones. The default priorities allow
 you to immediately recognize the importance of your tickets because they are color coded:
 
-![Screenshot shows different color-coded priorities](/screenshots/overviews/priorities.png)
+![Screenshot shows different color-coded priorities](/screenshots/documentation/use/overviews/priorities.png)
 
 You might wonder what such a ticket priority is for. Out of the box, it doesn't actually do anything except the
 highlighting. However, Zammad administrators can set up all sorts of automation and analytics based on the priority.

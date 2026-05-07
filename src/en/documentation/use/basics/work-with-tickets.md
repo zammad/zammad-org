@@ -109,7 +109,7 @@ It can happen that two or more agents open a ticket at the same time. To prevent
 contradictory answers, Zammad shows you who is viewing or editing the ticket currently. You can find this information
 in the bottom bar where avatars of all agents are displayed.
 
-![Screenshot shows other agents viewing/editing the ticket](/screenshots/advanced-features/simultaneous-work-detection.png)
+![Screenshot shows other agents viewing/editing the ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
 Make sure to communicate with your colleagues to prevent these problems before they arise. Depending on the additional
 icon and if the avatar icon is faded, it means:

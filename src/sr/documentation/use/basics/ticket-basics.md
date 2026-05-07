@@ -83,7 +83,7 @@ state of the ticket much faster in general - without having a look into
 details.
 
 ![Screenshot shows different color-coded
-states](/screenshots/overviews/states.png)
+states](/screenshots/documentation/use/overviews/states.png)
 
 ### Приоритет
 
@@ -99,7 +99,7 @@ additional ones. The default priorities allow you to immediately recognize
 the importance of your tickets because they are color coded:
 
 ![Screenshot shows different color-coded
-priorities](/screenshots/overviews/priorities.png)
+priorities](/screenshots/documentation/use/overviews/priorities.png)
 
 Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не
 чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне

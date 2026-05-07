@@ -94,7 +94,7 @@ agent did, inform your Zammad admin. Example of a history entry of an AI
 agent:
 
 ![Screenshot shows AI agent ticket history
-entry](/screenshots/ai/ai-agent-ticket-history.png)
+entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Откривање истовремене обраде
 
@@ -105,7 +105,8 @@ AI агенти који тренутно раде на тикету су при
 
 Сличица AI агента:
 
-![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)
+![Screenshot shows avatar of an AI
+agent](/screenshots/documentation/use/ai/ai-live-user.png)
 
 ### Overview Indicator
 
@@ -113,4 +114,5 @@ AI агент који се извршава има индикатор у кол
 стања ће бити приказан у плаво-љубичастом градијенту:
 
 ![Screenshot shows a status circle in overviews indicating an AI agent is
-currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)
+currently working on
+it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)

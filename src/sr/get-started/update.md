@@ -219,7 +219,7 @@ the version number.
 image and redeploy** и кликните на `Update`.
 
 ![Highlighted stack update in
-Portainer](/screenshots/installation/portainer-stack-update.png)
+Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
 ### Updating Docker Compose Based Installations
 

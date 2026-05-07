@@ -51,7 +51,7 @@ To visualize different ticket states and priorities, the entries in the table ar
 
 The icon next to the ticket title mainly represents the need for action:
 
-![Screenshot shows ticket states](/screenshots/overviews/states.png)
+![Screenshot shows ticket states](/screenshots/documentation/use/overviews/states.png)
 
 - Yellow circle: action needed (e.g. new, open, pending reached)
 - Grey circle: paused, no action needed right now (e.g. pending)
@@ -63,7 +63,7 @@ the ticket.
 
 The **priority** is represented by the color of the ticket title:
 
-![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)
+![Screenshot shows ticket priorities](/screenshots/documentation/use/overviews/priorities.png)
 
 - 1 low: gray
 - 2 normal: blue

@@ -146,8 +146,8 @@ prevent edit conflicts and customers receiving contradictory answers, Zammad
 shows you who is viewing or editing the ticket currently. You can find this
 information in the bottom bar where avatars of all agents are displayed.
 
-![Снимак екрана приказује друге оператере како гледају/уређују
-тикет](/screenshots/advanced-features/simultaneous-work-detection.png)
+![Screenshot shows other agents viewing/editing the
+ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
 Make sure to communicate with your colleagues to prevent these problems
 before they arise. Depending on the additional icon and if the avatar icon

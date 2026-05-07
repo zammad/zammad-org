@@ -76,7 +76,7 @@ is a good starting point.
 The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
 When you click in the top menu under "_Projects > Browse all projects_", you can find the overview of the projects:
 
-![Screenshot showing translation projects in Weblate and menu](/screenshots/weblate-overview-docs.png)
+![Screenshot showing translation projects in Weblate and menu](/screenshots/contribute/weblate-overview-docs.png)
 
 Structure of translation projects in Weblate:
 
@@ -100,7 +100,7 @@ summarized for all languages. Here you can select one of the "components", which
 versions. After selecting one of them, you can see the status of translation for the different languages, as you can see
 in the following screenshot:
 
-![Screenshot showing translation status of different languages for the user documentation](/screenshots/weblate-project-overview.png)
+![Screenshot showing translation status of different languages for the user documentation](/screenshots/contribute/weblate-project-overview.png)
 
 ### Translating
 
@@ -109,7 +109,7 @@ After selecting your language you want to translate to, a good starting point is
 After that, you will finally see the first untranslated string in the upper field and, in theory, you can start to
 translate. But let's first have a brief look at the user interface of Weblate:
 
-![Screenshot of Weblate translation user interface](/screenshots/weblate-ui.png)
+![Screenshot of Weblate translation user interface](/screenshots/contribute/weblate-ui.png)
 
 1. **Breadcrumbs with path** to the current project and language
 2. **Translation area** itself. You can find the source string (_"English (United States)"_) at the top and the field

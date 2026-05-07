@@ -163,8 +163,8 @@ widersprüchliche Antworten erhalten, zeigt Ihnen Zammad an, wer das Ticket
 gerade anschaut oder bearbeitet. Sie finden diese Information in der unteren
 Leiste, wo die Avatare aller Agenten angezeigt werden.
 
-![Screenshot zeigt andere Agenten, die das Ticket gerade
-sehen/bearbeiten](/screenshots/advanced-features/simultaneous-work-detection.png)
+![Screenshot shows other agents viewing/editing the
+ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
 Achten Sie darauf, mit Ihren Kollegen zu kommunizieren, um diese Probleme zu
 vermeiden, bevor sie entstehen. Abhängig von einem zusätzlichen Symbol oder

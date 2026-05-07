@@ -224,8 +224,8 @@ und geben die gewünscht Version an.
 Klicken Sie in Ihrem Zammad-Stack auf `Pull and redeploy`, aktivieren Sie
 **Re-pull image and redeploy** und klicken Sie auf `Update`.
 
-![Hervorhebung der Stack-Aktualisierung in
-Portainer](/screenshots/installation/portainer-stack-update.png)
+![Highlighted stack update in
+Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
 ### Docker Compose-basierten Installation aktualisieren
 

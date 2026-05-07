@@ -101,7 +101,7 @@ These directions have been confirmed on Windows Server 2016.
 You may use an existing service account if you have one. Admin
 privileges are not required; a normal user account will do.
 
-![Screenshot Active Directory service account settings](/screenshots/sso-kerberos/active-directory-service-account-settings.png)
+![Screenshot Active Directory service account settings](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
 ### 1b. Reset Password
 

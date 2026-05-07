@@ -38,7 +38,7 @@ In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
 target environment, select **Stacks** and click on `Add stack` as you can see in
 the screenshot below.
 
-![Screenshot in the Stacks section and highlighted "Add stack".](/screenshots/installation/portainer-stacks.png)
+![Screenshot in the Stacks section and highlighted "Add stack".](/screenshots/get-started/installation/portainer-stacks.png)
 
 ### Step 2: Build From Repository
 
@@ -53,7 +53,7 @@ In case our default environment is not what you are looking for, you can customi
 and adjust environment variables. Jump to the [customization section](#customizing-the-zammad-stack) below to find more
 information.
 
-![Stack creation with provided information in Repository screen](/screenshots/installation/portainer-stack-creation.png)
+![Stack creation with provided information in Repository screen](/screenshots/get-started/installation/portainer-stack-creation.png)
 
 ### Step 3: Deploy the Stack
 
@@ -129,7 +129,7 @@ In your Portainer GUI, go to the container view and select the running Rails con
 on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
 **Connect**.
 
-![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
 Run the interactive Rails console by executing:
 

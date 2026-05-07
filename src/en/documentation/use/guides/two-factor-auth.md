@@ -34,7 +34,7 @@ The authenticator app method is a type of two-factor authentication that uses a 
 codes for account verification. After setting up the authenticator app on your device, you will link it to your Zammad
 account.
 
-![Screenshot shows app authentication configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
+![Screenshot shows app authentication configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
 
 First, make sure you have installed an authenticator app on your mobile device. Recommended apps are:
 
@@ -64,7 +64,7 @@ they can be used during the sign-in process.
 
 Initially, you will be presented with an empty side panel instructing you to **Set Up** your first key.
 
-![Screenshot shows security key authentication configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
+![Screenshot shows security key authentication configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
 
 Then, enter a descriptive **Name for this security key** you will be registering with your account, so you could later
 identify it in the list. Then, click on **Next**.
@@ -72,7 +72,7 @@ identify it in the list. Then, click on **Next**.
 Next, depending you your browser, you will be presented with different options. Select one that refers to your chosen
 security key and follow the instructions on the screen.
 
-![Screenshot shows security key authentication configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
+![Screenshot shows security key authentication configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)
 
 You may be asked by the browser to interact with a key or a device so you can prove you are in physical possession of
 it (e.g. enter its PIN to unlock it).
@@ -103,13 +103,13 @@ another one, provided you have set it up previously.
 Look for **Try another method** link below the sign in box. In case you don't see this link, you probably have no other
 available two-factor methods set up, or your admin has disabled this feature.
 
-![Log in screen with link to "Try another method"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)
+![Log in screen with link to "Try another method"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-method.png)
 
 Alternatively, you can also use one of your recovery codes, which are auto-generated for your account during the initial
 setup of the two-factor authentication. Click on **Or use one of your recovery codes**, enter one of your unused codes
 and click on **Sign in**.
 
-![Log in screen with recovery codes link](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
+![Log in screen with recovery codes link](/screenshots/documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
 You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended
@@ -127,7 +127,7 @@ initial two-factor authentication method.
 You will be asked to print out or save the generated recovery codes in a safe place. Once used, a recovery code cannot
 be reused.
 
-![Screenshot shows output of recovery codes during 2FA setup](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
+![Screenshot shows output of recovery codes during 2FA setup](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
 You also have an option to regenerate your recovery codes at any time, which invalidates already existing recovery
 codes and provides you with a list of fresh codes. You can do this by clicking on `Regenerate recovery codes` button

@@ -39,8 +39,8 @@ In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
 target environment, select **Stacks** and click on `Add stack` as you can
 see in the screenshot below.
 
-![Снимак екрана у одељку Stacks са наглашеним "Add stack"
-дугметом.](/screenshots/installation/portainer-stacks.png)
+![Screenshot in the Stacks section and highlighted "Add
+stack".](/screenshots/get-started/installation/portainer-stacks.png)
 
 ### Корак 2: Инсталација из репозиторија
 
@@ -57,8 +57,8 @@ customize the stack using predefined scenarios and adjust environment
 variables. Jump to the [customization
 section](#customizing-the-zammad-stack) below to find more information.
 
-![Додавање stack-а са обезбеђеним подацима у Repository
-екрану](/screenshots/installation/portainer-stack-creation.png)
+![Stack creation with provided information in Repository
+screen](/screenshots/get-started/installation/portainer-stack-creation.png)
 
 ### Корак 3: Покретање stack-а
 
@@ -142,7 +142,7 @@ In your Portainer GUI, go to the container view and select the running Rails con
 on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
 **Connect**.
 
-![Portainer console execution](/screenshots/installation/portainer-exec-console.png){width=80%}
+![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
 Run the interactive Rails console by executing:
 

@@ -91,8 +91,8 @@ Weblate функције и да дубље уђете у проблематик
 Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у Weblate апликацији.
 Преглед пројеката можете пронаћи кликом на мени при врху под „_Projects > Browse all projects_”:
 
-![Снимак екрана који приказује пројекте превода у Weblate
-менију](/screenshots/weblate-overview-docs.png)
+![Screenshot showing translation projects in Weblate and
+menu](/screenshots/contribute/weblate-overview-docs.png)
 
 Структура пројекта превода у Weblate-у:
 
@@ -117,8 +117,8 @@ Weblate функције и да дубље уђете у проблематик
 одабиру једне од њих, можете видети статус превода по различитим језицима,
 по узору на следећи снимак екрана:
 
-![Снимак екрана који приказује статус превода за корисничку документацију по
-различитим језицима](/screenshots/weblate-project-overview.png)
+![Screenshot showing translation status of different languages for the user
+documentation](/screenshots/contribute/weblate-project-overview.png)
 
 ### Превођење
 
@@ -129,8 +129,8 @@ Weblate функције и да дубље уђете у проблематик
 започети превод. Али хајде да прво погледамо на кратко кориснички интерфејс
 Weblate-а:
 
-![Снимак екрана корисничког интерфејса превода у
-Weblate-у](/screenshots/weblate-ui.png)
+![Screenshot of Weblate translation user
+interface](/screenshots/contribute/weblate-ui.png)
 
 1. **Путања навигације** на тренутни пројекат и језик превода
 2. Сам **Translation** одељак. Можете видети изворни низ текста (_„English

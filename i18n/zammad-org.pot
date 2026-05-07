@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-07 13:06+0000\n"
+"POT-Creation-Date: 2026-05-07 16:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,18 +249,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -491,7 +479,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot showing translation projects in Weblate and "
-"menu](/screenshots/weblate-overview-docs.png)"
+"menu](/screenshots/contribute/weblate-overview-docs.png)"
 msgstr ""
 
 #. type: Plain text
@@ -566,7 +554,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
-"documentation](/screenshots/weblate-project-overview.png)"
+"documentation](/screenshots/contribute/weblate-project-overview.png)"
 msgstr ""
 
 #. type: Title ###
@@ -592,7 +580,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot of Weblate translation user "
-"interface](/screenshots/weblate-ui.png)"
+"interface](/screenshots/contribute/weblate-ui.png)"
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -1570,27 +1558,25 @@ msgid ""
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/manage-zammad/index.md:1
+#: src/en/documentation/manage/index.md:1
 #, no-wrap
 msgid "Manage Zammad"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
-#: src/en/documentation/manage-zammad/start.md:1
-#: src/en/documentation/use/start.md:1
+#: src/en/documentation/manage/start.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "Start"
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/manage-zammad/start.md:6
-#: src/en/documentation/use/start.md:19
+#: src/en/documentation/manage/start.md:6 src/en/documentation/use/start.md:19
 #, markdown-text, no-wrap
 msgid "Welcome"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/manage-zammad/start.md:9
+#: src/en/documentation/manage/start.md:9
 #, markdown-text
 msgid ""
 "This part of the documentation is currently empty. It will be created step "
@@ -3454,7 +3440,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows different color-coded "
-"states](/screenshots/overviews/states.png)"
+"states](/screenshots/documentation/use/overviews/states.png)"
 msgstr ""
 
 #. type: Title ###
@@ -3503,7 +3489,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows different color-coded "
-"priorities](/screenshots/overviews/priorities.png)"
+"priorities](/screenshots/documentation/use/overviews/priorities.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3951,7 +3937,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows other agents viewing/editing the "
-"ticket](/screenshots/advanced-features/simultaneous-work-detection.png)"
+"ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)"
 msgstr ""
 
 #. type: Plain text
@@ -4886,7 +4872,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
-"entry](/screenshots/ai/ai-agent-ticket-history.png)"
+"entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)"
 msgstr ""
 
 #. type: Title ###
@@ -4914,7 +4900,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:90
 #, markdown-text
-msgid "![Screenshot shows avatar of an AI agent](/screenshots/ai/ai-live-user.png)"
+msgid ""
+"![Screenshot shows avatar of an AI "
+"agent](/screenshots/documentation/use/ai/ai-live-user.png)"
 msgstr ""
 
 #. type: Title ###
@@ -4936,7 +4924,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
-"currently working on it](/screenshots/ai/overview-ai-agent-indicator.png)"
+"currently working on "
+"it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)"
 msgstr ""
 
 #. type: Title #
@@ -5245,34 +5234,36 @@ msgid ""
 "| Login | Home |\n"
 "|:-------------------------:|:-------------------------:|\n"
 "| ![Screenshot shows login screen of Zammad's mobile "
-"view](/screenshots/mobile-view/login.png) | ![Screenshot shows home screen "
-"of Zammad's mobile view](/screenshots/mobile-view/home.png) |\n"
+"view](/screenshots/documentation/use/mobile-view/login.png) | ![Screenshot "
+"shows home screen of Zammad's mobile "
+"view](/screenshots/documentation/use/mobile-view/home.png) |\n"
 "\n"
 "=== Search & Overview\n"
 "\n"
 "| Search | Overview |\n"
 "|:-------------------------:|:-------------------------:|\n"
 "| ![Screenshot shows search screen of Zammad's mobile "
-"view](/screenshots/mobile-view/search.png) | ![Screenshot shows overview "
-"screen of Zammad's mobile view](/screenshots/mobile-view/overview.png) |\n"
+"view](/screenshots/documentation/use/mobile-view/search.png) | ![Screenshot "
+"shows overview screen of Zammad's mobile "
+"view](/screenshots/documentation/use/mobile-view/overview.png) |\n"
 "\n"
 "=== Ticket Details\n"
 "\n"
 "| Articles | Details |\n"
 "|:-------------------------:|:-------------------------:|\n"
 "| ![Screenshot shows ticket screen of Zammad's mobile "
-"view](/screenshots/mobile-view/ticket-articles.png) | ![Screenshot shows "
-"ticket detail view of Zammad's mobile "
-"view](/screenshots/mobile-view/ticket-details.png) |\n"
+"view](/screenshots/documentation/use/mobile-view/ticket-articles.png) | "
+"![Screenshot shows ticket detail view of Zammad's mobile "
+"view](/screenshots/documentation/use/mobile-view/ticket-details.png) |\n"
 "\n"
 "=== Notifications & Account\n"
 "\n"
 "| Notifications | Account |\n"
 "|:-------------------------:|:-------------------------:|\n"
 "| ![Screenshot shows notifications screen of Zammad's mobile "
-"view](/screenshots/mobile-view/notifications.png) | ![Screenshot shows "
-"account settings screen of Zammad's mobile "
-"view](/screenshots/mobile-view/profile.png) |\n"
+"view](/screenshots/documentation/use/mobile-view/notifications.png) | "
+"![Screenshot shows account settings screen of Zammad's mobile "
+"view](/screenshots/documentation/use/mobile-view/profile.png) |\n"
 "\n"
 msgstr ""
 
@@ -5614,7 +5605,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:55
 #, markdown-text
-msgid "![Screenshot shows ticket states](/screenshots/overviews/states.png)"
+msgid ""
+"![Screenshot shows ticket "
+"states](/screenshots/documentation/use/overviews/states.png)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -5660,7 +5653,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:67
 #, markdown-text
-msgid "![Screenshot shows ticket priorities](/screenshots/overviews/priorities.png)"
+msgid ""
+"![Screenshot shows ticket "
+"priorities](/screenshots/documentation/use/overviews/priorities.png)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -6085,7 +6080,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows app authentication "
-"configuration](/screenshots/two-factor-auth-usage/2fa-app-setup.png)"
+"configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6181,7 +6176,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
-"configuration](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)"
+"configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6207,7 +6202,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
-"configuration](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)"
+"configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6295,7 +6290,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Log in screen with link to \"Try another "
-"method\"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)"
+"method\"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-method.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6313,7 +6308,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Log in screen with recovery codes "
-"link](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)"
+"link](/screenshots/documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)"
 msgstr ""
 
 #. type: Fenced div block (warning)
@@ -6362,7 +6357,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA "
-"setup](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
+"setup](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
 msgstr ""
 
 #. type: Plain text
@@ -7904,7 +7899,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot in the Stacks section and highlighted \"Add "
-"stack\".](/screenshots/installation/portainer-stacks.png)"
+"stack\".](/screenshots/get-started/installation/portainer-stacks.png)"
 msgstr ""
 
 #. type: Title ###
@@ -7959,7 +7954,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Stack creation with provided information in Repository "
-"screen](/screenshots/installation/portainer-stack-creation.png)"
+"screen](/screenshots/get-started/installation/portainer-stack-creation.png)"
 msgstr ""
 
 #. type: Title ###
@@ -8143,7 +8138,7 @@ msgid ""
 "**Connect**.\n"
 "\n"
 "![Portainer console "
-"execution](/screenshots/installation/portainer-exec-console.png){width=80%}\n"
+"execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}\n"
 "\n"
 "Run the interactive Rails console by executing:\n"
 "\n"
@@ -9498,7 +9493,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Highlighted stack update in "
-"Portainer](/screenshots/installation/portainer-stack-update.png)"
+"Portainer](/screenshots/get-started/installation/portainer-stack-update.png)"
 msgstr ""
 
 #. type: Title ###
@@ -10116,7 +10111,7 @@ msgid ""
 "combine the scenarios by adding additional paths.\n"
 "\n"
 "![Portainer additional paths "
-"configuration](/screenshots/installation/portainer-additional-paths.png)\n"
+"configuration](/screenshots/get-started/installation/portainer-additional-paths.png)\n"
 "\n"
 "=== Docker Compose\n"
 "\n"
@@ -23386,83 +23381,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23629,6 +23547,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24072,6 +24067,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -27894,7 +27901,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:159
 #, markdown-text
-msgid "![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)"
+msgid "![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)"
 msgstr ""
 
 #. type: Title ####
@@ -28044,7 +28051,9 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:191
 #, markdown-text
-msgid "![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)"
+msgid ""
+"![Grafana Chat "
+"Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)"
 msgstr ""
 
 #. type: Plain text
@@ -28123,7 +28132,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:215
 #, markdown-text
-msgid "![Grafana Call Dashboard](/screenshots/reporting/calls.png)"
+msgid "![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)"
 msgstr ""
 
 #. type: Plain text
@@ -28427,7 +28436,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot Active Directory service account "
-"settings](/screenshots/sso-kerberos/active-directory-service-account-settings.png)"
+"settings](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)"
 msgstr ""
 
 #. type: Title ###

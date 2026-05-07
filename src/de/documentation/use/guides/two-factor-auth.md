@@ -45,8 +45,8 @@ Zwei-Faktor-Authentifizierung, bei der eine mobile App
 werden. Nachdem Sie eine Authentifizierungs-App auf Ihrem Gerät eingerichtet
 haben, können Sie diese mit Ihrem Zammad-Konto verknüpfen.
 
-![Screenshot zeigt die Konfiguration der
-Authentifizierungs-App](/screenshots/two-factor-auth-usage/2fa-app-setup.png)
+![Screenshot shows app authentication
+configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
 
 Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf
 Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:
@@ -85,8 +85,8 @@ hinterlegen und für die Anmeldung nutzen.
 Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie
 aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten.
 
-![Screenshots zeigt die Konfiguration der
-Sicherheits-Schlüssel-Authentifizierung](/screenshots/two-factor-auth-usage/2fa-security-key-panel.png)
+![Screenshot shows security key authentication
+configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
 
 Geben Sie als erstes einen **Name für diesen Sicherheitsschlüssel** im
 entsprechenden Feld ein, damit Sie diesen später in einer Übersicht
@@ -96,8 +96,8 @@ Abhängig von Ihrem Browser können Ihnen verschiedene Optionen angeboten
 werden. Wählen Sie die, die der Ihres angegebenen Sicherheits-Schlüssels
 entspricht und folgen den weiteren Anweisungen.
 
-![Screenshot zeigt die Konfiguration der
-Sicherheits-Schlüssel-Authentifizierung](/screenshots/two-factor-auth-usage/2fa-passkey-auth.png)
+![Screenshot shows security key authentication
+configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)
 
 Ihr Browser bittet Sie daraufhin, mit Ihrem Sicherheitsschlüssel oder Gerät
 zu interagieren (z.B. PIN-Eingabe zur Entsperrung), um zu prüfen, ob Sie in
@@ -139,8 +139,8 @@ Anmeldefeldes. Falls Sie diesen Link nicht sehen, haben Sie vermutlich keine
 andere Zwei-Faktor-Methode eingerichtet oder Ihr Administrator hat diese
 Funktion deaktiviert.
 
-![Anmeldebildschirm mit Link zu "Versuchen Sie eine andere
-Methode"](/screenshots/two-factor-auth-usage/2fa-link-another-method.png)
+![Log in screen with link to "Try another
+method"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-method.png)
 
 Alternativ können Sie auch einen Ihrer Wiederherstellungscodes verwenden,
 die bei der Ersteinrichtung der Zwei-Faktor-Authentifizierung automatisch
@@ -148,8 +148,8 @@ für Ihr Konto generiert werden. Klicken Sie auf **Oder verwenden Sie einen
 Ihrer Wiederherstellungs-Codes.**, geben Sie einen Ihrer nicht verwendeten
 Codes ein und klicken Sie auf **Anmelden**.
 
-![Anmelde-Screen mit Link zur Nutzung von
-Wiederherstellungs-Codes](/screenshots/two-factor-auth-usage/2fa-login-recovery-codes.png)
+![Log in screen with recovery codes
+link](/screenshots/documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
 Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls Sie alle Codes Ihrer Liste aufgebraucht haben,
@@ -171,8 +171,8 @@ Sie werden gebeten, die Wiederherstellungs-Codes zu speichern oder zu
 drucken und an einem sicheren Ort aufzubewahren. Ein bereits genutzter
 Wiederherstellungs-Code kann nicht mehr genutzt werden.
 
-![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der
-2FA-Einrichtung](/screenshots/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
+![Screenshot shows output of recovery codes during 2FA
+setup](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
 Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu
 zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig

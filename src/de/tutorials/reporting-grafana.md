@@ -158,7 +158,7 @@ Sie einfach nach demselben Namen suchen.
 
 ### Ticket-Statistik Dashboard <Badge type="tip" text="14222"/>
 
-![Grafana Ticket Dashboard](/screenshots/reporting/tickets.png)
+![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
 
 #### Dashboard-Grafiken
 
@@ -190,7 +190,8 @@ Sie einfach nach demselben Namen suchen.
 
 ### Chat-Sitzungsstatistik Dashboard <Badge type="tip" text="14224"/>
 
-![Grafana Chat Dashboard](/screenshots/reporting/chat-sessions.png)
+![Grafana Chat
+Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
 
 #### Dashboard-Grafiken
 
@@ -214,7 +215,7 @@ Erstellung von Chatsitzungen.
 
 ### CTI-Log Statistik Dashboard <Badge type="tip" text="14223"/>
 
-![Grafana Call Dashboard](/screenshots/reporting/calls.png)
+![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
 
 #### Dashboard-Grafiken
 

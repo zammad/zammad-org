@@ -102,8 +102,8 @@ feststellen, dass der KI-Agent häufig falsch liegt, informieren Sie Ihren
 Zammad-Administrator. Beispiel für einen Eintrag in der Historie eines
 KI-Agenten:
 
-![Eintrag eines KI-Agenten in die
-Ticket-Historie](/screenshots/ai/ai-agent-ticket-history.png)
+![Screenshot shows AI agent ticket history
+entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Erkennung gleichzeitige Ticketbearbeitung
 
@@ -115,8 +115,8 @@ Moment oder wechseln Sie zu einem anderen Ticket.
 
 Avatar eines KI Agenten:
 
-![Screenshot zeigt Avatar eines
-KI-Agenten](/screenshots/ai/ai-live-user.png)
+![Screenshot shows avatar of an AI
+agent](/screenshots/documentation/use/ai/ai-live-user.png)
 
 ### Indikator in Übersichten
 
@@ -124,6 +124,6 @@ Ein laufender KI-Agent wird in der Statusspalte in den Übersichten
 angezeigt. Die Farbe des Kreises ändert sich zu einem blau/pinken
 Farbverlauf:
 
-![Screenshot zeigt einen Statuskreis in Übersichten, der anzeigt, dass ein
-KI-Agent gerade daran
-arbeitet](/screenshots/ai/overview-ai-agent-indicator.png)
+![Screenshot shows a status circle in overviews indicating an AI agent is
+currently working on
+it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)
