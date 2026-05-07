@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-05 13:33+0000\n"
+"POT-Creation-Date: 2026-05-07 10:33+0200\n"
 "PO-Revision-Date: 2026-05-05 13:32+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
@@ -247,18 +247,6 @@ msgstr "Keine Ergebnisse für"
 #, no-wrap
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/de/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Name of site"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -19997,38 +19985,39 @@ msgstr "Setting.get('ui_ticket_create_default_type')\n"
 #. type: Title ###
 #: src/en/reference/rails-commands.md:584
 #, no-wrap
-msgid "Adding a Warning to the Ticket Creation Process"
-msgstr "Hinzufügen einer Warnung bei der Ticket-Erstellung"
-
-#. type: Plain text
-#: src/en/reference/rails-commands.md:588
-msgid ""
-"If you want to give your agent a note or warning during ticket **creation**, "
-"you can do so with the below command."
+msgid "Show a Note During Article Creation"
 msgstr ""
-"Wenn Sie Ihren Agenten während der **Erstellung** eines Tickets einen "
-"Hinweis oder eine Warnung anzeigen möchten, können Sie dies mit dem "
-"folgenden Befehl tun."
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:590
-msgid "You can use three different warnings for:"
-msgstr "Sie können drei verschiedene Warnungen dafür verwenden:"
+msgid ""
+"If you need to show your agents a note with important information during the "
+"article creation, you can create such a static note for different article "
+"types. Be aware that there are two settings: one for ticket creation and the "
+"other for article creation in an existing ticket. Adjust the commands below "
+"to use it for the desired article types and replace the text with yours. In "
+"case you don't want a note for all article types, simply omit these types."
+msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:594
-msgid "Incoming Calls `:\"phone-in\"=>\"`"
-msgstr "Eingehende Anrufe `:\"phone-in\"=>\"`"
+#. type: Plain text
+#: src/en/reference/rails-commands.md:592
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows article reply actions](/screenshots/cypress/usage-"
+#| "basics.cy.js/article-reply.png)"
+msgid ""
+"![Screenshot shows a note during article creation](/screenshots/cypress/"
+"reference-rails-commands.cy.js/article-creation-note.png)"
+msgstr ""
+"![Screenshot zeigt Antwortaktionen für einen Artikel](/screenshots/cypress/"
+"usage-basics.cy.js/article-reply.png)"
 
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:594
-msgid "Outgoing Calls `:\"phone-out\"=>\"`"
-msgstr "Ausgehende Anrufe `:\"phone-out\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:594
-msgid "Outgoing emails `:\"email-out\"=>\"`"
-msgstr "Ausgehende E-Mails `:\"email-out\"=>\"`"
+#. type: Title ####
+#: src/en/reference/rails-commands.md:593
+#, fuzzy, no-wrap
+#| msgid "Ticket Actions"
+msgid "Ticket Creation"
+msgstr "Ticket-Aktionen"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:595
@@ -20046,86 +20035,14 @@ msgstr ""
 "      : \"email-out\" => \"Sie sind im Begriff, eine E-Mail zu versenden.\"\n"
 "   })\n"
 
-#. type: Fenced div block (info)
+#. type: Title ####
 #: src/en/reference/rails-commands.md:603
 #, no-wrap
-msgid ""
-"You can use those three sub-settings independently, if you e.g. don't\n"
-"need a warning on incoming calls, simply leave out `:\"phone-in\"=>\"`\n"
-"out of the setting. The setting itself is done within an array ( `{}` ).\n"
+msgid "New Article in Existing Tickets"
 msgstr ""
-"Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine\n"
-"Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: \"phone-in\"=>\"`\n"
-"aus dem Befehl. Die Einstellung selbst wird in einem Hash (`{}`) vorgenommen.\n"
-
-#. type: Plain text
-#: src/en/reference/rails-commands.md:610
-#: src/en/reference/rails-commands.md:649
-msgid "To check what's currently set, you can use:"
-msgstr "Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:611
-#, no-wrap
-msgid "Setting.get('ui_ticket_create_notes')\n"
-msgstr "Setting.get('ui_ticket_create_notes')\n"
-
-#. type: Title ###
-#: src/en/reference/rails-commands.md:615
-#, no-wrap
-msgid "Adding a Warning to the Article Reply Process"
-msgstr "Hinzufügen einer Warnung für den Artikel-Antwortprozess"
-
-#. type: Plain text
-#: src/en/reference/rails-commands.md:619
-msgid ""
-"If you want to give your agent a warning during the ticket article "
-"**reply**, you can do that with the command below."
-msgstr ""
-"Wenn Sie Ihren Agenten während der **Antwort** auf einen Ticket-Artikel eine "
-"Warnung ausgeben möchten, können Sie dies mit dem unten stehenden Befehl tun."
-
-#. type: Plain text
-#: src/en/reference/rails-commands.md:622
-msgid ""
-"You can provide different warnings for different channels and article "
-"visibility:"
-msgstr ""
-"Sie können unterschiedliche Warnungen für verschiedene Kanäle Sichtbarkeiten "
-"von Artikeln vorsehen:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Internal notes `:\"note-internal\"=>\"`"
-msgstr "Interne Notizen `: \"note-internal\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Public notes `:\"note-public\"=>\"`"
-msgstr "Öffentliche Notizen `:\"note-public\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Internal calls `:\"phone-internal\"=>\"`"
-msgstr "Interne Anrufe `:\"phone-internal\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Public calls `:\"phone-public\"=>\"`"
-msgstr "Öffentliche Anrufe `: \"phone-public\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Internal emails `:\"email-internal\"=>\"`"
-msgstr "Interne E-Mails `: \"email-intern\"=>\"`"
-
-#. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:629
-msgid "Public emails `:\"email-public\"=>\"`"
-msgstr "Öffentliche E-Mails `: \"email-public\"=>\"`"
-
-#. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:630
+#: src/en/reference/rails-commands.md:605
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
@@ -20146,34 +20063,80 @@ msgstr ""
 "      : \"email-public\"   => \"Sie schreiben eine |öffentliche E-Mail|.\"\n"
 "   })\n"
 
-#. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:641
-#, no-wrap
-msgid ""
-"You can use example sub-settings above independently, if you e.g.\n"
-"don't need a warning on internal calls, simply leave out\n"
-"`:\"phone-internal\"=>\"\"` out of the setting. The setting itself is in a\n"
-"form of an array ( `{}` ).\n"
-msgstr ""
-"Sie können die obigen Beispieleinstellungen unabhängig voneinander verwenden, wenn Sie z.B.\n"
-"keine Warnung bei internen Anrufen benötigen, entfernen Sie einfach\n"
-"`: \"phone-internal\"=>\"\"` in dem Befehl. Die Einstellung selbst ist in der\n"
-"Form eines Arrays ( `{}` ).\n"
+#. type: Title ####
+#: src/en/reference/rails-commands.md:616
+#, fuzzy, no-wrap
+#| msgid "Backup Configuration"
+msgid "Check Current Configuration"
+msgstr "Backup-Konfiguration"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:650
+#: src/en/reference/rails-commands.md:618
+#, no-wrap
+msgid "Setting.get('ui_ticket_create_notes')\n"
+msgstr "Setting.get('ui_ticket_create_notes')\n"
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rails-commands.md:622
 #, no-wrap
 msgid "Setting.get('ui_ticket_add_article_hint')\n"
 msgstr "Setting.get('ui_ticket_add_article_hint')\n"
 
+#. type: Title ####
+#: src/en/reference/rails-commands.md:626
+#, fuzzy, no-wrap
+#| msgid "Markup in Strings"
+msgid "Markup Options"
+msgstr "Zeichenketten mit Auszeichnung"
+
+#. type: Plain text
+#: src/en/reference/rails-commands.md:629
+msgid "To apply text formatting, use the following markup:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``||italic||``"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``|bold|``"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``_underline_``"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``//strikethrough//``"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``§key§`` (renders a keyboard key like [[key]])"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``¶`` (newline)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rails-commands.md:637
+msgid "``[link text](/example.com)``"
+msgstr ""
+
 #. type: Title ###
-#: src/en/reference/rails-commands.md:654
+#: src/en/reference/rails-commands.md:638
 #, no-wrap
 msgid "Show Email Address of Customer on Customer Selection (Ticket Creation)"
 msgstr "E-Mail-Adresse des Kunden bei der Kundenauswahl anzeigen (Ticket-Erstellung)"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:658
+#: src/en/reference/rails-commands.md:642
 msgid ""
 "By default, Zammad will not display the email addresses of customers.  The "
 "below option allows you to change this behavior."
@@ -20182,31 +20145,31 @@ msgstr ""
 "folgenden Option können Sie dieses Verhalten ändern."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:659
+#: src/en/reference/rails-commands.md:643
 #, no-wrap
 msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
 msgstr "Setting.set('ui_user_organization_selector_with_email', true)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:664
-#: src/en/reference/rails-commands.md:684
+#: src/en/reference/rails-commands.md:648
+#: src/en/reference/rails-commands.md:668
 msgid "Get the current state of this setting with:"
 msgstr "Abfrage des aktuellen Status dieser Einstellung mit:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:665
+#: src/en/reference/rails-commands.md:649
 #, no-wrap
 msgid "Setting.get('ui_user_organization_selector_with_email')\n"
 msgstr "Setting.get('ui_user_organization_selector_with_email')\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:669
+#: src/en/reference/rails-commands.md:653
 #, no-wrap
 msgid "Change Font Settings for Outgoing HTML Emails"
 msgstr "Schriftarteneinstellungen für ausgehende HTML-E-Mails ändern"
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:671
+#: src/en/reference/rails-commands.md:655
 #, no-wrap
 msgid ""
 "Some clients (like Outlook) might fallback to other settings while it\n"
@@ -20216,7 +20179,7 @@ msgstr ""
 "während es bei anderen funktioniert.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:678
+#: src/en/reference/rails-commands.md:662
 msgid ""
 "The below setting allows you to adjust Zammad's email font setting. This "
 "setting does not require a service restart."
@@ -20225,25 +20188,25 @@ msgstr ""
 "anpassen. Diese Einstellung erfordert keinen Neustart des Dienstes."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:679
+#: src/en/reference/rails-commands.md:663
 #, no-wrap
 msgid "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;\")\n"
 msgstr "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;\")\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:685
+#: src/en/reference/rails-commands.md:669
 #, no-wrap
 msgid "Setting.get('html_email_css_font')\n"
 msgstr "Setting.get('html_email_css_font')\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:689
+#: src/en/reference/rails-commands.md:673
 #, no-wrap
 msgid "Highlight Customer's Open Ticket Count"
 msgstr "Anzahl der offenen Tickets des Kunden hervorheben"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:693
+#: src/en/reference/rails-commands.md:677
 msgid ""
 "This option enhances the selected customer's open tickets count. It "
 "highlights the count in different colors if they hit a threshold."
@@ -20253,13 +20216,13 @@ msgstr ""
 "Schwellenwert erreicht wird."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:694
+#: src/en/reference/rails-commands.md:678
 #, no-wrap
 msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 msgstr "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:700
+#: src/en/reference/rails-commands.md:684
 msgid ""
 "Above settings has specific thresholds as follows. You **cannot** adjust "
 "these thresholds."
@@ -20268,7 +20231,7 @@ msgstr ""
 "diese Werte **nicht** ändern."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:705
+#: src/en/reference/rails-commands.md:689
 #, no-wrap
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) |\n"
@@ -20282,13 +20245,13 @@ msgstr ""
 "| **Ticket Neu-Erstellung** | 0             | 1                | \\>= 2        |\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:706
+#: src/en/reference/rails-commands.md:690
 #, no-wrap
 msgid "Activate Attachment Tab in Sidebar"
 msgstr "Tab \"Anhang\" in der Seitenleiste aktivieren"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:710
+#: src/en/reference/rails-commands.md:694
 msgid ""
 "This option activates a new tab in the right sidebar in the ticket view "
 "which shows all attachments of the currently viewed ticket."
@@ -20297,19 +20260,19 @@ msgstr ""
 "Ticketansicht, der alle Anhänge des aktuell angezeigten Tickets anzeigt."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:711
+#: src/en/reference/rails-commands.md:695
 #, no-wrap
 msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 msgstr "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:715
+#: src/en/reference/rails-commands.md:699
 #, no-wrap
 msgid "Time Period for Showing Customer Profile on New Calls"
 msgstr "Zeitspanne für die Anzeige des Kundenprofils bei neuen Anrufen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:721
+#: src/en/reference/rails-commands.md:705
 msgid ""
 "Zammad shows the customer profile dialog when a call of this customer is "
 "incoming and there is an existing ticket of this customer in this time "
@@ -20322,24 +20285,24 @@ msgstr ""
 "nicht automatisch angezeigt."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:723
+#: src/en/reference/rails-commands.md:707
 msgid "Set the time period to 90 days:"
 msgstr "Setzen Sie den Zeitraum auf 90 Tage:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:724
+#: src/en/reference/rails-commands.md:708
 #, no-wrap
 msgid "Setting.set('cti_customer_last_activity', '90')\n"
 msgstr "Setting.set('cti_customer_last_activity', '90')\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:728
+#: src/en/reference/rails-commands.md:712
 #, no-wrap
 msgid "Set Public \"Notes\" as SLA relevant"
 msgstr "Öffentliche \"Notizen\" als SLA-relevant einstellen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:734
+#: src/en/reference/rails-commands.md:718
 msgid ""
 "Normally, notes aren't SLA relevant. Use the following command to include "
 "publicly-visible notes when tracking SLA compliance (internal notes _will "
@@ -20353,7 +20316,7 @@ msgstr ""
 "Löschen öffentlicher Notizen deaktiviert wird."
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:735
+#: src/en/reference/rails-commands.md:719
 #, no-wrap
 msgid ""
 "By default, customers are not notified when public notes are added to a\n"
@@ -20363,35 +20326,35 @@ msgstr ""
 "Richten Sie einen Trigger ein, wenn Sie dieses Verhalten ändern möchten.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:741
+#: src/en/reference/rails-commands.md:725
 msgid "Enable SLA to count notes as communication:"
 msgstr "Aktivieren Sie SLA, um Notizen als Kommunikation zu zählen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:742
+#: src/en/reference/rails-commands.md:726
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 msgstr "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:747
+#: src/en/reference/rails-commands.md:731
 msgid "Enable SLA to ignore notes as communication:"
 msgstr "Aktivieren Sie SLA, um Notizen als Kommunikation zu ignorieren:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:748
+#: src/en/reference/rails-commands.md:732
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:752
+#: src/en/reference/rails-commands.md:736
 #, no-wrap
 msgid "Activate Priority Icon"
 msgstr "Prioritätssymbol aktivieren"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:756
+#: src/en/reference/rails-commands.md:740
 msgid ""
 "To activate additional icons which represent the priority, use the command "
 "below:"
@@ -20400,25 +20363,25 @@ msgstr ""
 "folgenden Befehl:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:757
+#: src/en/reference/rails-commands.md:741
 #, no-wrap
 msgid "Setting.set('ui_ticket_priority_icons', true)\n"
 msgstr "Setting.set('ui_ticket_priority_icons', true)\n"
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:761
+#: src/en/reference/rails-commands.md:745
 #, no-wrap
 msgid "Other Useful Commands"
 msgstr "Andere nützliche Befehle"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:763
+#: src/en/reference/rails-commands.md:747
 #, no-wrap
 msgid "Remove AI Feature"
 msgstr "KI-Funktion entfernen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:767
+#: src/en/reference/rails-commands.md:751
 msgid ""
 "Zammad's AI feature is completely optional and requires a configuration "
 "before any AI request is made. However, if you don't want to see the "
@@ -20430,42 +20393,42 @@ msgstr ""
 "setzen."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:769
+#: src/en/reference/rails-commands.md:753
 msgid "Disable any AI provider, in case you already configured it:"
 msgstr "Deaktivieren Sie jeglichen KI-Anbieter, falls bereits konfiguriert:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:770
+#: src/en/reference/rails-commands.md:754
 #, no-wrap
 msgid "Setting.set('ai_provider', false)\n"
 msgstr "Setting.set('ai_provider', false)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:775
+#: src/en/reference/rails-commands.md:759
 msgid "Disable permission to hide the settings from UI:"
 msgstr ""
 "Deaktivieren Sie die Berechtigung, um die Einstellungen aus der "
 "Benutzeroberfläche auszublenden:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:776
+#: src/en/reference/rails-commands.md:760
 #, no-wrap
 msgid "Permission.where(\"name LIKE 'admin.ai%'\").update!(active: false)\n"
 msgstr "Permission.where(\"name LIKE 'admin.ai%'\").update!(active: false)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:781
+#: src/en/reference/rails-commands.md:765
 msgid "To re-enable it, set the `active` flag to `true`."
 msgstr "Um sie wieder zu aktivieren, setzen Sie das `active`-Flag auf `true`."
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:782
+#: src/en/reference/rails-commands.md:766
 #, no-wrap
 msgid "Fetch Emails"
 msgstr "E-Mails abrufen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:786
+#: src/en/reference/rails-commands.md:770
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
 "show errors that might appear within that process."
@@ -20475,19 +20438,19 @@ msgstr ""
 "auftreten können."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:787
+#: src/en/reference/rails-commands.md:771
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr "Channel.fetch\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:791
+#: src/en/reference/rails-commands.md:775
 #, no-wrap
 msgid "Reprocess Failed Emails"
 msgstr "Fehlgeschlagene E-Mails erneut verarbeiten"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:796
+#: src/en/reference/rails-commands.md:780
 msgid ""
 "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
 "malformed message), it will store the email in the database and warn in the "
@@ -20498,7 +20461,7 @@ msgstr ""
 "Mail in der Datenbank und warnt im Überwachungsbereich darüber."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:800
+#: src/en/reference/rails-commands.md:784
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
 "header fields), you may need to manually edit the email before Zammad can "
@@ -20510,19 +20473,19 @@ msgstr ""
 "Schritte aus."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:801
+#: src/en/reference/rails-commands.md:785
 #, no-wrap
 msgid "Export all Failed Emails to a Local Folder"
 msgstr "Alle fehlgeschlagenen E-Mails in einen lokalen Ordner exportieren"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:803
+#: src/en/reference/rails-commands.md:787
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr "rake zammad:email_parser:failed_email:export_all`\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:810
+#: src/en/reference/rails-commands.md:794
 msgid ""
 "You can find the location of the exported email in the output of your "
 "console.  Every time you perform an export of failed (unprocessable) emails, "
@@ -20534,13 +20497,13 @@ msgstr ""
 "alle fehlgeschlagenen E-Mails zum Zeitpunkt der Ausführung enthält."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:811
+#: src/en/reference/rails-commands.md:795
 #, no-wrap
 msgid "Edit the Email"
 msgstr "Bearbeiten Sie die E-Mail"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:816
+#: src/en/reference/rails-commands.md:800
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
 "and try to repair it. Make sure to leave the file name untouched, as the "
@@ -20551,24 +20514,24 @@ msgstr ""
 "Dateiname nicht verändert wird, da der Import sonst fehlschlägt."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:817
+#: src/en/reference/rails-commands.md:801
 #, no-wrap
 msgid "Import and Reprocess Locally Modified Email"
 msgstr "Importieren und erneutes Verarbeiten lokal geänderter E-Mails"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:820
+#: src/en/reference/rails-commands.md:804
 msgid "After editing the email, run:"
 msgstr "Nachdem Sie die E-Mail bearbeitet haben, führen Sie sie folgendes aus:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:821
+#: src/en/reference/rails-commands.md:805
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:829
+#: src/en/reference/rails-commands.md:813
 msgid ""
 "This will apply your changes from the file to the database. You can also "
 "pass the entire folder as argument, so all `.eml` files in it will we "
@@ -20582,7 +20545,7 @@ msgstr ""
 "werden die Dateien gelöscht und der leere Ordner entfernt."
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:830
+#: src/en/reference/rails-commands.md:814
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -20594,13 +20557,13 @@ msgstr ""
 "erzeugten Unterordner auszuführen.\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:836
+#: src/en/reference/rails-commands.md:820
 #, no-wrap
 msgid "Delete Unwanted Emails"
 msgstr "Unerwünschte E-Mails löschen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:840
+#: src/en/reference/rails-commands.md:824
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
 "database after exporting them with the following command:"
@@ -20609,13 +20572,13 @@ msgstr ""
 "folgenden Befehl aus der Datenbank löschen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:841
+#: src/en/reference/rails-commands.md:825
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:848
+#: src/en/reference/rails-commands.md:832
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
 "be removed from the database, their files deleted and finally the empty "
@@ -20626,13 +20589,13 @@ msgstr ""
 "schließlich der leere Ordner entfernt."
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:849
+#: src/en/reference/rails-commands.md:833
 #, no-wrap
 msgid "Show and Retry Failed Data Privacy Jobs"
 msgstr "Fehlgeschlagene Datenschutzaufgaben anzeigen und erneut ausführen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:853
+#: src/en/reference/rails-commands.md:837
 msgid ""
 "In rare cases, Zammad's data privacy jobs might fail. To show them, you can "
 "use the following rake command:"
@@ -20641,13 +20604,13 @@ msgstr ""
 "anzuzeigen, können Sie den folgenden Rake-Befehl verwenden:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:854
+#: src/en/reference/rails-commands.md:838
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:show\n"
 msgstr "rake zammad:data_privacy:failed:show\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:862
+#: src/en/reference/rails-commands.md:846
 msgid ""
 "To retry failed data privacy jobs, you can use the following command. "
 "However, without changing the underlying issue that caused the failure, the "
@@ -20661,19 +20624,19 @@ msgstr ""
 "Aufgabe erneut ausführen."
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:863
+#: src/en/reference/rails-commands.md:847
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:retry\n"
 msgstr "rake zammad:data_privacy:failed:retry\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:867
+#: src/en/reference/rails-commands.md:851
 #, no-wrap
 msgid "Fill a Test System With Test Data"
 msgstr "Befüllen eines Testsystems mit Testdaten"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:869
+#: src/en/reference/rails-commands.md:853
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -20683,7 +20646,7 @@ msgstr ""
 "und ist schwer rückgängig zu machen!\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:878
+#: src/en/reference/rails-commands.md:862
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
 "organizations, `5` new overviews and `100` tickets. You can always use `0` "
@@ -20697,19 +20660,19 @@ msgstr ""
 "ergeben."
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:879
+#: src/en/reference/rails-commands.md:863
 #, no-wrap
 msgid "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 msgstr "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:883
+#: src/en/reference/rails-commands.md:867
 #, no-wrap
 msgid "Deleting Records"
 msgstr "Daten löschen"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:885
+#: src/en/reference/rails-commands.md:869
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -20721,60 +20684,60 @@ msgstr ""
 "[ein Backup haben](/de/tutorials/backup-restore)!\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:891
+#: src/en/reference/rails-commands.md:875
 #, no-wrap
 msgid "Removing Tickets (And Their Articles)"
 msgstr "Entfernen von Tickets (und ihren Artikeln)"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:894
+#: src/en/reference/rails-commands.md:878
 msgid "Delete a ticket (specified by database ID):"
 msgstr "Löschen eines Tickets (angegeben durch die Datenbank ID):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:895
+#: src/en/reference/rails-commands.md:879
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr "Ticket.find(4).destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:900
+#: src/en/reference/rails-commands.md:884
 msgid "Delete all tickets:"
 msgstr "Alle Tickets löschen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:901
+#: src/en/reference/rails-commands.md:885
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr "Ticket.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:906
+#: src/en/reference/rails-commands.md:890
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 "Behalten Sie einige Tickets (angegeben durch die Datenbank ID); löschen Sie "
 "den Rest:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:907
+#: src/en/reference/rails-commands.md:891
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr "tickets_to_keep = [1, 2, 3]\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:911
+#: src/en/reference/rails-commands.md:895
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:915
+#: src/en/reference/rails-commands.md:899
 #, no-wrap
 msgid "Removing Users"
 msgstr "Entfernen von Benutzern"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:917
+#: src/en/reference/rails-commands.md:901
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -20792,7 +20755,7 @@ msgstr ""
 "Befehle löschen ohne weitere Warnungen.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:926
+#: src/en/reference/rails-commands.md:910
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -20806,30 +20769,30 @@ msgstr ""
 "_System > Datenschutz_.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:934
+#: src/en/reference/rails-commands.md:918
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 "Das Entfernen von Benutzern ist auf 2 Arten möglich: Einzelne Benutzer und "
 "mehrere auf einmal."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:936
+#: src/en/reference/rails-commands.md:920
 msgid "Remove a single user:"
 msgstr "Entfernen Sie einen einzelnen Benutzer:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:937
+#: src/en/reference/rails-commands.md:921
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr "User.find_by(email: '<email address>').destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:942
+#: src/en/reference/rails-commands.md:926
 msgid "Remove several users:"
 msgstr "Mehrere Benutzer entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:943
+#: src/en/reference/rails-commands.md:927
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -20841,76 +20804,76 @@ msgstr ""
 "   ).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:949
+#: src/en/reference/rails-commands.md:933
 #, no-wrap
 msgid "Removing Organizations"
 msgstr "Entfernen von Organisationen"
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:951
+#: src/en/reference/rails-commands.md:935
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr "Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelöscht.\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:955
+#: src/en/reference/rails-commands.md:939
 #, no-wrap
 msgid "Step 1: Select organizations"
 msgstr "Schritt 1: Organisationen auswählen"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:958
+#: src/en/reference/rails-commands.md:942
 msgid "By \"active\" status:"
 msgstr "Nach dem Status \"aktiv\":"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:959
+#: src/en/reference/rails-commands.md:943
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr "organizations = Organization.where(active: false)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:964
+#: src/en/reference/rails-commands.md:948
 msgid "By name:"
 msgstr "Nach dem Namen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:965
+#: src/en/reference/rails-commands.md:949
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr "organizations = Organization.where(name: 'Acme')\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:970
+#: src/en/reference/rails-commands.md:954
 msgid "By partial match on notes:"
 msgstr "Bei teilweiser Übereinstimmung mit den Notizen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:971
+#: src/en/reference/rails-commands.md:955
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:975
+#: src/en/reference/rails-commands.md:959
 #, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr "Schritt 2: Vorschau der betroffenen Organisationen"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:977
+#: src/en/reference/rails-commands.md:961
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 msgstr "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:981
+#: src/en/reference/rails-commands.md:965
 #, no-wrap
 msgid "Step 3: Proceed with Deletion"
 msgstr "Schritt 3: Mit der Löschung fortfahren"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:983
+#: src/en/reference/rails-commands.md:967
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -20920,7 +20883,7 @@ msgstr ""
 "    puts %{Preparing deletion of organization \"#{org.name}\"...}\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:988
+#: src/en/reference/rails-commands.md:972
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -20934,7 +20897,7 @@ msgstr ""
 "end\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:995
+#: src/en/reference/rails-commands.md:979
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -20946,35 +20909,35 @@ msgstr ""
 "   end\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1001
+#: src/en/reference/rails-commands.md:985
 #, no-wrap
 msgid "Removing System Records"
 msgstr "Entfernen von Systemdaten"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1004
+#: src/en/reference/rails-commands.md:988
 msgid "Remove all online notifications:"
 msgstr "Löschen aller Online-Benachrichtigungen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1005
+#: src/en/reference/rails-commands.md:989
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr "OnlineNotification.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1010
+#: src/en/reference/rails-commands.md:994
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr "Entfernen Sie alle Einträge aus dem Aktivitätsverlauf (Dashboard):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1011
+#: src/en/reference/rails-commands.md:995
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr "ActivityStream.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1016
+#: src/en/reference/rails-commands.md:1000
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
 "organizations):"
@@ -20983,13 +20946,13 @@ msgstr ""
 "Organisationen) entfernen:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1017
+#: src/en/reference/rails-commands.md:1001
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr "RecentView.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1023
+#: src/en/reference/rails-commands.md:1007
 msgid ""
 "Remove all history information from tickets, users and organizations "
 "(dangerous!):"
@@ -20998,19 +20961,19 @@ msgstr ""
 "Organisationen (gefährlich!):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1024
+#: src/en/reference/rails-commands.md:1008
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr "History.destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1028
+#: src/en/reference/rails-commands.md:1012
 #, no-wrap
 msgid "Reset Zammad Installation"
 msgstr "Zammad Installation zurücksetzen"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:1030
+#: src/en/reference/rails-commands.md:1014
 #, no-wrap
 msgid ""
 "\n"
@@ -21028,51 +20991,51 @@ msgstr ""
 "Vergessen Sie nicht, Zammad zu stoppen, bevor Sie die Datenbank löschen!\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1040
+#: src/en/reference/rails-commands.md:1024
 msgid "Truncate the database:"
 msgstr "Datenbank zurücksetzen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1041
+#: src/en/reference/rails-commands.md:1025
 #, no-wrap
 msgid "rake zammad:db:truncate\n"
 msgstr "rake zammad:db:truncate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1046
+#: src/en/reference/rails-commands.md:1030
 msgid "Migrate the database:"
 msgstr "Migration der Datenbank ausführen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1047
+#: src/en/reference/rails-commands.md:1031
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr "rake db:migrate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1052
+#: src/en/reference/rails-commands.md:1036
 msgid "Load the seed data:"
 msgstr "Datenbank-Seeds einspielen:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1053
+#: src/en/reference/rails-commands.md:1037
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr "rake db:seed\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1058
+#: src/en/reference/rails-commands.md:1042
 msgid "Clear cache and reload the settings:"
 msgstr "Cache löschen und Einstellungen neu laden:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1059
+#: src/en/reference/rails-commands.md:1043
 #, no-wrap
 msgid "rake zammad:db:rebuild\n"
 msgstr "rake zammad:db:rebuild\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:1063
+#: src/en/reference/rails-commands.md:1047
 #, no-wrap
 msgid ""
 "\n"
@@ -27011,94 +26974,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr "Anzeigen/Generieren"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
-"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
-"angestoßen (asynchrone Aufgabe)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
-"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
-"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
-"versuchen Sie es nach mindestens 30 Sekunden erneut."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
-"durch die Anfrage ausgelöst wurde:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
-"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -27321,6 +27196,94 @@ msgstr ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr "Anzeigen/Generieren"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-Request gesendet: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Der \"Ticket summarize\" Endpunkt verwendet `POST`, da das Erstellen und "
+"Abrufen der Zusammenfassung in einem einzigen Vorgang erfolgt:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr "Wenn eine Zusammenfassung existiert, wird sie ausgegeben."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Wenn keine Zusammenfassung vorhanden ist, wird die Erstellung im Hintergrund "
+"angestoßen (asynchrone Aufgabe)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Die Verwendung von `GET` wäre falsch, da der Aufruf auch Daten erzeugen "
+"kann. Wenn Sie möchten, dass eine Zusammenfassung vorhanden ist, rufen Sie "
+"den Endpunkt auf; wenn die Zusammenfassung noch nicht verfügbar ist, "
+"versuchen Sie es nach mindestens 30 Sekunden erneut."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Beispielantwort, wenn die Erstellung einer neuen Zusammenfassung gerade "
+"durch die Anfrage ausgelöst wurde:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Beispielantwort für eine bestehende Zusammenfassung (z.B. für dasselbe "
+"Ticket wie oben nachdem die Zusammenfassung erstellt wurde):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -27861,6 +27824,18 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/de/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Name of site"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
@@ -35036,6 +35011,93 @@ msgid ""
 msgstr ""
 "Laden Sie Ihren Apache mit `sudo systemctl reload apache2` neu, um Ihre "
 "Konfigurationsänderungen zu übernehmen."
+
+#, no-wrap
+#~ msgid "Adding a Warning to the Ticket Creation Process"
+#~ msgstr "Hinzufügen einer Warnung bei der Ticket-Erstellung"
+
+#~ msgid ""
+#~ "If you want to give your agent a note or warning during ticket "
+#~ "**creation**, you can do so with the below command."
+#~ msgstr ""
+#~ "Wenn Sie Ihren Agenten während der **Erstellung** eines Tickets einen "
+#~ "Hinweis oder eine Warnung anzeigen möchten, können Sie dies mit dem "
+#~ "folgenden Befehl tun."
+
+#~ msgid "You can use three different warnings for:"
+#~ msgstr "Sie können drei verschiedene Warnungen dafür verwenden:"
+
+#~ msgid "Incoming Calls `:\"phone-in\"=>\"`"
+#~ msgstr "Eingehende Anrufe `:\"phone-in\"=>\"`"
+
+#~ msgid "Outgoing Calls `:\"phone-out\"=>\"`"
+#~ msgstr "Ausgehende Anrufe `:\"phone-out\"=>\"`"
+
+#~ msgid "Outgoing emails `:\"email-out\"=>\"`"
+#~ msgstr "Ausgehende E-Mails `:\"email-out\"=>\"`"
+
+#, no-wrap
+#~ msgid ""
+#~ "You can use those three sub-settings independently, if you e.g. don't\n"
+#~ "need a warning on incoming calls, simply leave out `:\"phone-in\"=>\"`\n"
+#~ "out of the setting. The setting itself is done within an array ( `{}` ).\n"
+#~ msgstr ""
+#~ "Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine\n"
+#~ "Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: \"phone-in\"=>\"`\n"
+#~ "aus dem Befehl. Die Einstellung selbst wird in einem Hash (`{}`) vorgenommen.\n"
+
+#~ msgid "To check what's currently set, you can use:"
+#~ msgstr ""
+#~ "Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:"
+
+#, no-wrap
+#~ msgid "Adding a Warning to the Article Reply Process"
+#~ msgstr "Hinzufügen einer Warnung für den Artikel-Antwortprozess"
+
+#~ msgid ""
+#~ "If you want to give your agent a warning during the ticket article "
+#~ "**reply**, you can do that with the command below."
+#~ msgstr ""
+#~ "Wenn Sie Ihren Agenten während der **Antwort** auf einen Ticket-Artikel "
+#~ "eine Warnung ausgeben möchten, können Sie dies mit dem unten stehenden "
+#~ "Befehl tun."
+
+#~ msgid ""
+#~ "You can provide different warnings for different channels and article "
+#~ "visibility:"
+#~ msgstr ""
+#~ "Sie können unterschiedliche Warnungen für verschiedene Kanäle "
+#~ "Sichtbarkeiten von Artikeln vorsehen:"
+
+#~ msgid "Internal notes `:\"note-internal\"=>\"`"
+#~ msgstr "Interne Notizen `: \"note-internal\"=>\"`"
+
+#~ msgid "Public notes `:\"note-public\"=>\"`"
+#~ msgstr "Öffentliche Notizen `:\"note-public\"=>\"`"
+
+#~ msgid "Internal calls `:\"phone-internal\"=>\"`"
+#~ msgstr "Interne Anrufe `:\"phone-internal\"=>\"`"
+
+#~ msgid "Public calls `:\"phone-public\"=>\"`"
+#~ msgstr "Öffentliche Anrufe `: \"phone-public\"=>\"`"
+
+#~ msgid "Internal emails `:\"email-internal\"=>\"`"
+#~ msgstr "Interne E-Mails `: \"email-intern\"=>\"`"
+
+#~ msgid "Public emails `:\"email-public\"=>\"`"
+#~ msgstr "Öffentliche E-Mails `: \"email-public\"=>\"`"
+
+#, no-wrap
+#~ msgid ""
+#~ "You can use example sub-settings above independently, if you e.g.\n"
+#~ "don't need a warning on internal calls, simply leave out\n"
+#~ "`:\"phone-internal\"=>\"\"` out of the setting. The setting itself is in a\n"
+#~ "form of an array ( `{}` ).\n"
+#~ msgstr ""
+#~ "Sie können die obigen Beispieleinstellungen unabhängig voneinander verwenden, wenn Sie z.B.\n"
+#~ "keine Warnung bei internen Anrufen benötigen, entfernen Sie einfach\n"
+#~ "`: \"phone-internal\"=>\"\"` in dem Befehl. Die Einstellung selbst ist in der\n"
+#~ "Form eines Arrays ( `{}` ).\n"
 
 #, no-wrap
 #~ msgid ""
