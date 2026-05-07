@@ -878,6 +878,11 @@ Setting.set('ai_assistance_text_tools', true)
 SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection', value: true)
 SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection_attributes', value: ['customer_id'])
 
+# Add a article creation note for one type for a screenshot
+Setting.set('ui_ticket_add_article_hint', {
+      :"note-public"    => "You are writing a |public note|.",
+   })
+
 # Disable import mode at the end of the seeding process so users can create new tickets.
 Setting.set('import_mode', false)
 

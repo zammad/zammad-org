@@ -595,17 +595,19 @@ Um die aktuelle Einstellung abzurufen, führen Sie den folgenden Befehl aus:
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Hinzufügen einer Warnung bei der Ticket-Erstellung
+### Show a Note During Article Creation
 
-Wenn Sie Ihren Agenten während der **Erstellung** eines Tickets einen
-Hinweis oder eine Warnung anzeigen möchten, können Sie dies mit dem
-folgenden Befehl tun.
+If you need to show your agents a note with important information during the
+article creation, you can create such a static note for different article
+types. Be aware that there are two settings: one for ticket creation and the
+other for article creation in an existing ticket. Adjust the commands below
+to use it for the desired article types and replace the text with yours. In
+case you don't want a note for all article types, simply omit these types.
 
-Sie können drei verschiedene Warnungen dafür verwenden:
+![Screenshot shows a note during article
+creation](/screenshots/cypress/reference-rails-commands.cy.js/article-creation-note.png)
 
-- Eingehende Anrufe `:"phone-in"=>"`
-- Ausgehende Anrufe `:"phone-out"=>"`
-- Ausgehende E-Mails `:"email-out"=>"`
+#### Ticket Creation
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
@@ -615,33 +617,7 @@ Setting.set('ui_ticket_create_notes', {
    })
 ```
 
-:::info
-Sie können diese drei Untereinstellungen unabhängig voneinander verwenden, wenn Sie z.B. keine
-Warnung bei eingehenden Anrufen benötigen, entfernen Sie einfach `: "phone-in"=>"`
-aus dem Befehl. Die Einstellung selbst wird in einem Hash (`{}`) vorgenommen.
-:::
-
-Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
-
-```ruby
-Setting.get('ui_ticket_create_notes')
-```
-
-### Hinzufügen einer Warnung für den Artikel-Antwortprozess
-
-Wenn Sie Ihren Agenten während der **Antwort** auf einen Ticket-Artikel eine
-Warnung ausgeben möchten, können Sie dies mit dem unten stehenden Befehl
-tun.
-
-Sie können unterschiedliche Warnungen für verschiedene Kanäle Sichtbarkeiten
-von Artikeln vorsehen:
-
-- Interne Notizen `: "note-internal"=>"`
-- Öffentliche Notizen `:"note-public"=>"`
-- Interne Anrufe `:"phone-internal"=>"`
-- Öffentliche Anrufe `: "phone-public"=>"`
-- Interne E-Mails `: "email-intern"=>"`
-- Öffentliche E-Mails `: "email-public"=>"`
+#### New Article in Existing Tickets
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -654,18 +630,27 @@ Setting.set('ui_ticket_add_article_hint', {
    })
 ```
 
-:::info
-Sie können die obigen Beispieleinstellungen unabhängig voneinander verwenden, wenn Sie z.B.
-keine Warnung bei internen Anrufen benötigen, entfernen Sie einfach
-`: "phone-internal"=>""` in dem Befehl. Die Einstellung selbst ist in der
-Form eines Arrays ( `{}` ).
-:::
+#### Check Current Configuration
 
-Um zu überprüfen, was derzeit eingestellt ist, können Sie verwenden:
+```ruby
+Setting.get('ui_ticket_create_notes')
+```
 
 ```ruby
 Setting.get('ui_ticket_add_article_hint')
 ```
+
+#### Markup Options
+
+To apply text formatting, use the following markup:
+
+- ``||italic||``
+- ``|bold|``
+- ``_underline_``
+- ``//strikethrough//``
+- ``§key§`` (renders a keyboard key like [[key]])
+- ``¶`` (newline)
+- ``[link text](/example.com)``
 
 ### E-Mail-Adresse des Kunden bei der Kundenauswahl anzeigen (Ticket-Erstellung)
 

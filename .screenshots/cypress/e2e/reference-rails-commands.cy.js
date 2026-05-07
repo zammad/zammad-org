@@ -1,0 +1,16 @@
+describe('Rails commands screenshots', () => {
+      it('article creation note', () => {
+      cy.visit('/desktop/login')
+      cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+      cy.visit('/desktop/tickets/5')
+      cy.get('main').should('exist')
+      cy.get('button').contains('Add internal note').click()
+      cy.wait(1000)
+      cy.get('[aria-label="Internal"]').click().wait(200)
+      cy.get('[aria-label="Public"]').click().wait(200)
+      cy.get('[role="textbox"]').type('This is an article text...')
+      cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('article-creation-note')
+      cy.get('button').contains('Discard your unsaved changes').click()
+      cy.get('button').contains('Discard changes').click()
+      })
+    })

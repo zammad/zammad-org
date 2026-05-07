@@ -581,16 +581,16 @@ To check what setting is set currently, simply run:
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Adding a Warning to the Ticket Creation Process
+### Show a Note During Article Creation
 
-If you want to give your agent a note or warning during ticket
-**creation**, you can do so with the below command.
+If you need to show your agents a note with important information during the article creation, you can create
+such a static note for different article types. Be aware that there are two settings: one for ticket creation and the
+other for article creation in an existing ticket. Adjust the commands below to use it for the desired article types and
+replace the text with yours. In case you don't want a note for all article types, simply omit these types.
 
-You can use three different warnings for:
+![Screenshot shows a note during article creation](/screenshots/cypress/reference-rails-commands.cy.js/article-creation-note.png)
 
-- Incoming Calls `:"phone-in"=>"`
-- Outgoing Calls `:"phone-out"=>"`
-- Outgoing emails `:"email-out"=>"`
+#### Ticket Creation
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
@@ -600,32 +600,7 @@ Setting.set('ui_ticket_create_notes', {
    })
 ```
 
-:::info
-You can use those three sub-settings independently, if you e.g. don't
-need a warning on incoming calls, simply leave out `:"phone-in"=>"`
-out of the setting. The setting itself is done within an array ( `{}` ).
-:::
-
-To check what's currently set, you can use:
-
-```ruby
-Setting.get('ui_ticket_create_notes')
-```
-
-### Adding a Warning to the Article Reply Process
-
-If you want to give your agent a warning during the ticket article
-**reply**, you can do that with the command below.
-
-You can provide different warnings for different channels and article
-visibility:
-
-- Internal notes `:"note-internal"=>"`
-- Public notes `:"note-public"=>"`
-- Internal calls `:"phone-internal"=>"`
-- Public calls `:"phone-public"=>"`
-- Internal emails `:"email-internal"=>"`
-- Public emails `:"email-public"=>"`
+#### New Article in Existing Tickets
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -638,18 +613,27 @@ Setting.set('ui_ticket_add_article_hint', {
    })
 ```
 
-:::info
-You can use example sub-settings above independently, if you e.g.
-don't need a warning on internal calls, simply leave out
-`:"phone-internal"=>""` out of the setting. The setting itself is in a
-form of an array ( `{}` ).
-:::
+#### Check Current Configuration
 
-To check what's currently set, you can use:
+```ruby
+Setting.get('ui_ticket_create_notes')
+```
 
 ```ruby
 Setting.get('ui_ticket_add_article_hint')
 ```
+
+#### Markup Options
+
+To apply text formatting, use the following markup:
+
+- ``||italic||``
+- ``|bold|``
+- ``_underline_``
+- ``//strikethrough//``
+- ``§key§`` (renders a keyboard key like [[key]])
+- ``¶`` (newline)
+- ``[link text](/example.com)``
 
 ### Show Email Address of Customer on Customer Selection (Ticket Creation)
 
