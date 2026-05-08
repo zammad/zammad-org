@@ -17,8 +17,8 @@ folgenden Abschnitten beschrieben. Abhängig von der aktuell geöffneten
 Ansicht gibt es interaktive Komponenten wie Tooltips und eine
 kontextbezogene Hilfe. Verwenden Sie diese, wo immer Sie diese benötigen.
 
-![Screenshot zeigt die
-Ticket-Detailansicht](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
+![Screenshot shows the ticket detail
+view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
 ## Haupt UI-Elemente
 

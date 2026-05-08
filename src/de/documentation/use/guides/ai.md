@@ -26,9 +26,9 @@ generiert wenn das Ticket aktualisiert wurde und Sie es entweder öffnen oder
 den Seitenleisten-Tab für die Zusammenfassung des Tickets anklicken,
 abhängig von der Konfiguration.
 
-![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
-für die Ticket-Zusammenfassung und der
-Zusammenfassungs-Seitenleiste](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Screenshot shows Zammad's ticket detail view with highlighted ticket
+summary banner and summary
+sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
 Abhängig von der Konfiguration Ihrer Zammad-Instanz enthält die
 Zusammenfassung die folgenden Abschnitte:
@@ -49,8 +49,8 @@ die Schaltfläche `Schreibassistent-Werkzeuge` auf der linken Seite der
 Symbolleiste des Editors und wählen Sie abhängig von Ihrem Anwendungsfall
 eines der Werkzeuge aus.
 
-![Screenshot zeigt Zammads
-Schreibassistent-Menü](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Screenshot shows Zammad's smart editor
+menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 

@@ -13,8 +13,8 @@ Navigationsleiste. Wählen Sie sie entweder mit der Maus aus oder benutzen
 Sie das Tastaturkürzel [[s]]. Zammad gibt alle passenden Elemente zurück,
 für die Sie mindestens Ansichts- oder Leserechte haben.
 
-![Screenshot zeigt Suchergebnisse in der
-Navigationsleiste](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in navigation
+bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 Die Suche deckt grundsätzlich alle Informationen ab, die in Zammad
 gespeichert bzw. von [Elasticsearch
@@ -39,8 +39,8 @@ eine Seite mit Suchergebnissen an. Dort können Sie Ihre Suche eingrenzen,
 indem Sie in der Tab-Leiste unterhalb der Suchleiste einen bestimmten
 Objekttyp (z.B. Benutzer) auswählen.
 
-![Screenshot zeigt die Erweiterte
-Suche](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
+![Screenshot shows detailed
+search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
 Wenn Sie immer noch viele Ergebnisse erhalten, versuchen Sie, Ihre Suche
 einzugrenzen, indem Sie weitere Begriffe hinzufügen oder die Sortierung der

@@ -16,7 +16,7 @@ To open the avatar menu, click on your avatar icon in the bottom left corner
 in the sidebar. This icon either shows your initials or a profile picture.
 
 ![Screenshot shows user detail
-panel](/screenshots/cypress/user-profile.cy.js/avatar-menu.png)
+panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
 The menu contains the following entries:
 
@@ -34,7 +34,7 @@ The menu contains the following entries:
 ## Подешавање профила
 
 ![Screenshot shows user profile
-settings](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)
+settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Изглед
 
@@ -107,7 +107,7 @@ After creating the token, it gets displayed in a dialog only once. Make sure
 to copy it because there is no possibility to access it again.
 
 ![Screenshot shows side panel with created token and copy
-button](/screenshots/cypress/user-profile.cy.js/token-dialog.png)
+button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Обавештења
 

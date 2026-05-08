@@ -36,7 +36,7 @@ To choose another article type, click the **Channel** dropdown and choose a diff
 dropdown to change the article's visibility. Articles with "internal" visibility are displayed with a dashed blue
 border.
 
-![Screenshot shows article type and visibility selector](/screenshots/cypress/usage-basics.cy.js/article-type-visibility.png)
+![Screenshot shows article type and visibility selector](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
 To write and edit text, make use of the powerful editor features. You can use the toolbar or keyboard shortcuts to
 format text and trigger special functions. Because of the amount of features and their importance, you can find more
@@ -56,7 +56,7 @@ the article create screen gets pre-populated with the type and visibility. When 
 gets sent out to the customer of the ticket. In case of an email based ticket, the email address of the customer is
 pre-populated.
 
-![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/usage-basics.cy.js/new-article.png)
+![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Respond to an Article
 
@@ -70,7 +70,7 @@ is similar to the behavior of an email client.
 - **Forward**: This means you can forward the original message to a third party or anybody else. The original message
   and attachments are included in your new article.
 
-![Screenshot shows article reply actions](/screenshots/cypress/usage-basics.cy.js/article-reply.png)
+![Screenshot shows article reply actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
 
 Zammad even allows you to **quote text** from an existing article. This is especially helpful if an answer refers to
 different parts of the original message or the text is pretty long. This feature is limited to communication type
@@ -97,7 +97,7 @@ want to paste the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] 
 If you scrolled own in the ticket, hover over the collapsed header bar where you can find the button on the top left
 side.
 
-![Screenshot shows ticket header with highlighted ticket number copy button](/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)
+![Screenshot shows ticket header with highlighted ticket number copy button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
 
 But wait, there is even a keyboard shortcut for that! Simply press [[.]] in the ticket detail view and the ticket number
 is copied to your clipboard. To include the ticket title as well, press [[.]] twice.

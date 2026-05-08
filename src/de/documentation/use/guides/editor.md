@@ -11,8 +11,8 @@ sein. Wegen der Bedeutung dieses zentralen Elements in Zammad werden auf
 dieser Seite einige Funktionen behandelt, die vielleicht nicht auf den
 ersten Blick sichtbar sind.
 
-![Screenshot zeigt Zammads
-Editor](/screenshots/cypress/usage-guide-editor.cy.js/editor-overview.png)
+![Screenshot shows Zammad's
+editor](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
 
 ## Spezialfunktionen
 

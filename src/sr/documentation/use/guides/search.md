@@ -14,7 +14,7 @@ returns all fitting items for which you have at least view or read
 permissions.
 
 ![Screenshot shows search results in navigation
-bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
+bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 The search covers basically all information which is stored in Zammad and
 which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes),
@@ -38,7 +38,7 @@ with search results. There you can narrow down your search by selecting a
 specific object type (e.g. customer) in the tab bar below the search bar.
 
 ![Screenshot shows detailed
-search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
+search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
 If you are still facing many results, try to narrow down your search by
 adding additional terms or use the sorting of the columns. To sort the

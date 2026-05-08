@@ -27,7 +27,7 @@ and/or many hand-overs between agents.
 
 ![Screenshot shows Zammad's ticket detail view with highlighted ticket
 summary banner and summary
-sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
 У зависности од ваше Zammad конфигурације, сажети опис може садржати следеће
 одељке:
@@ -48,7 +48,7 @@ editor toolbar and choose one of the following tools, depending on what you
 want to perform.
 
 ![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)
+menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 

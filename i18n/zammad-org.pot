@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-07 16:01+0200\n"
+"POT-Creation-Date: 2026-05-08 08:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1610,7 +1610,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows behavior after update "
-"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)"
+"menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1730,7 +1730,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows text modules "
-"feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)"
+"feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1786,7 +1786,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows inserting knowledge base "
-"article](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)"
+"article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1818,7 +1818,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows mentioning a "
-"user](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)"
+"user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1859,7 +1859,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows subscribe "
-"feature](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)"
+"feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1894,7 +1894,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows macro action "
-"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)"
+"menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)"
 msgstr ""
 
 #. type: Plain text
@@ -1948,7 +1948,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows a checklist from checklist "
-"sidebar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)"
+"sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -2191,7 +2191,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation "
-"timestamp](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)"
+"timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)"
 msgstr ""
 
 #. type: Fenced div block (info)
@@ -2307,7 +2307,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the bulk action side "
-"panel](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)"
+"panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2368,7 +2368,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the bulk action via drag and "
-"drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+"drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2420,7 +2420,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the ticket merge side "
-"panel](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)"
+"panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2490,7 +2490,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the article action split "
-"menu](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
+"menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2578,7 +2578,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket "
-"creation](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)"
+"creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2642,7 +2642,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
-"dialog](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)"
+"dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2689,7 +2689,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
-"overview](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)"
+"overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
 msgstr ""
 
 #. type: Title ##
@@ -2721,7 +2721,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
-"panel](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)"
+"panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2743,7 +2743,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
-"page](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)"
+"page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2813,7 +2813,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows organization detail "
-"page](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)"
+"page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2878,7 +2878,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows Gitlab content sidebar with \"Link Issue\" "
-"button](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)"
+"button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2914,7 +2914,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
-"view](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)"
+"view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2984,7 +2984,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket create "
-"screen](/screenshots/cypress/usage-basics.cy.js/ticket-create.png)"
+"screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)"
 msgstr ""
 
 #. type: Title ##
@@ -3345,7 +3345,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket "
-"sidebar](/screenshots/cypress/usage-basics.cy.js/ticket-sidebar.png)"
+"sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3534,7 +3534,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows tag area in ticket side "
-"bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+"bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3728,7 +3728,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows article type and visibility "
-"selector](/screenshots/cypress/usage-basics.cy.js/article-type-visibility.png)"
+"selector](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3784,7 +3784,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows new article buttons in bottom "
-"bar](/screenshots/cypress/usage-basics.cy.js/new-article.png)"
+"bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
 msgstr ""
 
 #. type: Title ###
@@ -3835,7 +3835,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows article reply "
-"actions](/screenshots/cypress/usage-basics.cy.js/article-reply.png)"
+"actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)"
 msgstr ""
 
 #. type: Plain text
@@ -3903,7 +3903,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy "
-"button](/screenshots/cypress/usage-basics.cy.js/copy-ticket-number-button.png)"
+"button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)"
 msgstr ""
 
 #. type: Plain text
@@ -4061,7 +4061,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the ticket detail "
-"view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)"
+"view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
 msgstr ""
 
 #. type: Title ##
@@ -4707,7 +4707,7 @@ msgstr ""
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
 "summary banner and summary "
-"sidebar](/screenshots/cypress/usage-guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
+"sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
 msgstr ""
 
 #. type: Plain text
@@ -4771,7 +4771,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's smart editor "
-"menu](/screenshots/cypress/usage-guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
 msgstr ""
 
 #. type: Fenced div block (warning)
@@ -4950,7 +4950,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's "
-"editor](/screenshots/cypress/usage-guide-editor.cy.js/editor-overview.png)"
+"editor](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)"
 msgstr ""
 
 #. type: Title ##
@@ -5468,7 +5468,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows opened overview "
-"section](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)"
+"section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)"
 msgstr ""
 
 #. type: Plain text
@@ -5763,7 +5763,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows search results in navigation "
-"bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)"
+"bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
 msgstr ""
 
 #. type: Plain text
@@ -5831,7 +5831,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows detailed "
-"search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)"
+"search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6040,7 +6040,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows 2FA methods in user profile "
-"settings](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)"
+"settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6398,7 +6398,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows list of 2FA methods and default "
-"method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)"
+"method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6421,7 +6421,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the action menu for an already set up 2FA "
-"method](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-menu.png)"
+"method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6588,7 +6588,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
-"panel](/screenshots/cypress/user-profile.cy.js/avatar-menu.png)"
+"panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
 msgstr ""
 
 #. type: Plain text
@@ -6640,7 +6640,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows user profile "
-"settings](/screenshots/cypress/user-profile.cy.js/user-profile-settings-full.png)"
+"settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
 msgstr ""
 
 #. type: Title ###
@@ -6826,7 +6826,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows side panel with created token and copy "
-"button](/screenshots/cypress/user-profile.cy.js/token-dialog.png)"
+"button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 msgstr ""
 
 #. type: Plain text
@@ -17561,7 +17561,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows a note during article "
-"creation](/screenshots/cypress/reference-rails-commands.cy.js/article-creation-note.png)"
+"creation](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)"
 msgstr ""
 
 #. type: Title ####

@@ -46,7 +46,7 @@ between you and a customer about a single issue.
 тикета.
 
 ![Screenshot shows ticket
-sidebar](/screenshots/cypress/usage-basics.cy.js/ticket-sidebar.png)
+sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
 To hide the sidebar, click the collapse button with the arrow on the left
 side of the sidebar. Click on one of the tabs to bring it back. The
@@ -117,8 +117,8 @@ and in overviews and they can also be assigned automatically by macros,
 schedulers and triggers. Of course you can search for the text of the tags
 and you will find the tickets which have the tag assigned.
 
-![Снимак екрана приказује одељак ознака у траци тикета са
-стране](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
+![Screenshot shows tag area in ticket side
+bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
 In the ticket sidebar, you can find a section which is labeled as
 **Tags**. Add a tag by clicking on the ::+:: button.  Depending on your

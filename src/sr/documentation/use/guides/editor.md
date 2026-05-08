@@ -11,7 +11,7 @@ importance of this central element in Zammad, this page covers some features
 which may not be visible at the first glance.
 
 ![Screenshot shows Zammad's
-editor](/screenshots/cypress/usage-guide-editor.cy.js/editor-overview.png)
+editor](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
 
 ## Special Functions
 

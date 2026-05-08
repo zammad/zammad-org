@@ -11,7 +11,7 @@ If you search for tickets, user and organizations, you can use the search. It is
 primary navigation bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all fitting items
 for which you have at least view or read permissions.
 
-![Screenshot shows search results in navigation bar](/screenshots/cypress/usage-guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in navigation bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 The search covers basically all information which is stored in Zammad and which got
 [indexed by Elasticsearch](/en/reference/es-indexed-attributes), like:
@@ -31,7 +31,7 @@ already opened) with the item.
 If you press [[enter]] or click on `detailed search`, Zammad displays a page with search results. There you can narrow
 down your search by selecting a specific object type (e.g. customer) in the tab bar below the search bar.
 
-![Screenshot shows detailed search](/screenshots/cypress/usage-guide-search.cy.js/search-detail.png)
+![Screenshot shows detailed search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
 If you are still facing many results, try to narrow down your search by adding additional terms or use the sorting of
 the columns. To sort the results based on the column's values, click on a column header. The sorting is indicated by an

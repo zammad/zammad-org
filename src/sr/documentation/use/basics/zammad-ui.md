@@ -16,7 +16,7 @@ title: 'Zammad кориснички интерфејс'
 савети и контекстни описи. Користите их кад год је то неопходно.
 
 ![Screenshot shows the ticket detail
-view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
+view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
 ## Главни елементи корисничког интерфејса
 

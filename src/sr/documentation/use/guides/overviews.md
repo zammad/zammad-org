@@ -5,8 +5,8 @@ title: Прегледи
 
 # Прегледи
 
-![Снимак екрана који приказује отворен
-преглед](/screenshots/cypress/usage-guide-overview.cy.js/overview-full.png)
+![Screenshot shows opened overview
+section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
 
 ## Увод
 

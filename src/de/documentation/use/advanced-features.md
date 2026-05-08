@@ -12,8 +12,8 @@ rechten Seite zu dem von Ihnen gewünschten Abschnitt.
 
 ## Verhalten bei Ticket-Aktualisierung
 
-![Screenshot zeigt Menü bzgl. Verhalten nach
-Aktualisierung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
+![Screenshot shows behavior after update
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
 
 **Warum?**
 
@@ -47,8 +47,8 @@ Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab b
 
 ## Textbausteine
 
-![Screenshot zeigt
-Textbausteine-Funktion](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules
+feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
 
 **Warum?**
 
@@ -75,8 +75,8 @@ gibt einige Textbausteine in Zammad, die standardmäßig mitgeliefert werden.
 
 ## Knowledge Base Artikel einfügen
 
-![Screenshot zeigt Einfügen eines Knowledge Base
-Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
+![Screenshot shows inserting knowledge base
+article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
 
 **Warum?**
 
@@ -94,8 +94,8 @@ oder Wörter eingeben.
 
 ## Einen Benutzer erwähnen
 
-![Screenshot zeigt Erwähnung eines
-Benutzers](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a
+user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
 
 **Warum?**
 
@@ -116,8 +116,8 @@ Ab-Pfeiltasten gefolgt von [[enter]] auf Ihrer Tastatur verwenden.
 
 ## Ein Ticket abonnieren
 
-![Screenshot zeigt die Funktion Ticket
-abonnieren](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
+![Screenshot shows subscribe
+feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
 
 **Warum?**
 
@@ -135,8 +135,8 @@ Ticket abonniert hat und somit über Aktualisierungen benachrichtigt wird.
 
 ## Makros
 
-![Screenshot zeigt
-Makro-Aktionsmenü](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
+![Screenshot shows macro action
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
 
 **Warum?**
 
@@ -166,8 +166,8 @@ sich unter [Mehrfach-Aktionen](#mehrfach-aktionen) an, wie das geht.
 
 ## Checklisten
 
-![Screenshot zeigt eine Checkliste aus der
-Checklisten-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
+![Screenshot shows a checklist from checklist
+sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
 
 **Warum?**
 
@@ -287,9 +287,8 @@ Eskalationsstufen und Fristen in einem Popup zu sehen. Es zeigt alle
 bevorstehenden oder überschrittenen Eskalationszeiten auf der Grundlage
 Ihrer SLA-Konfiguration an:
 
-![Screenshot zeigt Eskalationsberereich nach Überfahren des Zeitstempels mit
-der
-Maus](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
+![Screenshot shows escalation panel by hovering over escalation
+timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
 :::info
 Die Eskalationszeiten werden auf der Grundlage Ihrer Geschäftszeiten berechnet. Das heißt, wenn Ihre Geschäftszeiten um 9:00 Uhr beginnen,
@@ -345,8 +344,8 @@ abgeschlossen ist, können Sie jedoch keine neue Mehrfach-Aktion starten.
 
 **Seiten-Panel:**
 
-![Screenshot zeigt Seitenleiste mit
-Mehrfach-Aktionen](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action side
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 Nachdem Sie Tickets ausgewählt haben, klicken Sie auf die Schaltfläche
 `Mehrfach-Aktion` in der oberen rechten Ecke und ändern bzw. fügen Sie
@@ -362,8 +361,8 @@ Attribute mithilfe der Felder im rechten Bereich hinzu. Die möglichen
 
 **Drag & Drop mit Einblendung der Mehrfach-Aktion:**
 
-![Screenshot zeigt die Mehrfach-Aktion per drag &
-drop](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Screenshot shows the bulk action via drag and
+drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
 Nachdem Sie Tickets ausgewählt haben, ziehen Sie sie mit gedrückter
 Maustaste auf die gewünschte Aktion in der Mehrfach-Aktion-Einblendung. Sie
@@ -385,8 +384,8 @@ berücksichtigt wird.
 
 ## Tickets zusammenfassen
 
-![Screenshot zeigt das Seiten-Panel zur
-Ticket-Zusammenführung](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge side
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Warum?**
 
@@ -420,8 +419,8 @@ weiterhin mit den folgenden Änderungen:
 
 ## Tickets abspalten
 
-![Screenshot zeigt das Menü zur Abspaltung eines
-Artikels](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
+![Screenshot shows the article action split
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
 
 **Warum?**
 
@@ -470,8 +469,8 @@ wählen:
 
 ## Duplikaterkennung
 
-![Screenshot zeigt Warnung der Duplikaterkennung bei der
-Ticketerstellung](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+![Screenshot shows duplicate ticket warning during ticket
+creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
 
 **Warum?**
 
@@ -512,8 +511,8 @@ Nach der Aktualisierung eines Tickets wird ein Dialog zur Zeiterfassung
 angezeigt. Geben Sie ein, wie viel Zeit Sie für diese Bearbeitung des
 Tickets gebraucht haben.
 
-![Screenshot zeigt Dialog zur
-Zeiterfassung](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+![Screenshot shows the time accounting
+dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
 
 Die Funktion ist **optional**. Wenn Sie das nach einer Ticketaktualisierung
 nicht sehen, hat Ihr Administrator die Funktion noch nicht aktiviert oder
@@ -535,8 +534,8 @@ Detailansicht in der rechten Seitenleiste unten. Hier finden Sie die
 berechneten Summen der einzelnen Aktivitäts-Typen (sofern konfiguriert),
 sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 
-![Screenshot zeigt eine Übersicht über erfasste
-Zeiten](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
+![Screenshot shows the time accounting
+overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
 ## Benutzerinfo
 
@@ -554,8 +553,8 @@ Hauptinhalt oder in der Seitenleiste der Ticket-Detailansicht befindet. Um
 weitere Details zu sehen, klicken Sie auf den Avatar eines Benutzers, um die
 [Benutzer-Detailseite](#user-detail-page) zu öffnen.
 
-![Screenshot zeigt einen Avatar mit geöffneter
-Benutzerinfo](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
+![Screenshot shows an avatar with opened user detail
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
 
 Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
@@ -563,8 +562,8 @@ kann.
 
 ## Benutzer-Detailseite
 
-![Screenshot zeigt
-Benutzer-Detailseite](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
+![Screenshot shows user detail
+page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
 
 **Warum?**
 
@@ -587,8 +586,8 @@ Kunden-Detailseite. Falls Sie auch Admin-Rechte haben, können Sie über das
 
 ## Organisations-Detailseite
 
-![Screenshot zeigt
-Organisations-Detailseite](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+![Screenshot shows organization detail
+page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
 
 **Warum?**
 
@@ -620,8 +619,8 @@ aktivieren und konfigurieren.
 
 **Wie?**
 
-![Screenshot zeigt Gitlab Seitenleiste mit "Issue verknüpfen"
-Schaltfläche](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot shows Gitlab content sidebar with "Link Issue"
+button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
 Falls aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den rechten
 Seitenleisten-Tab mit dem entsprechenden Symbol (siehe Gitlab-Beispiel im
@@ -643,8 +642,8 @@ bestehenden Artikeln für Sie und andere Agenten.
 
 **Wie?**
 
-![Screenshot zeigt Hervorhebungsmenü in der
-Ticket-Detailansicht](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)
+![Screenshot shows highlight menu from ticket detail
+view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
 
 Verwenden Sie das Hervorhebungswerkzeug mit dem Stiftsymbol in der oberen
 rechten Ecke in der Ticket-Detailansicht. Um Text zu markieren, wählen Sie

@@ -11,8 +11,8 @@ title: 'Напредне функције'
 
 ## Понашање при освежавању тикета
 
-![Снимак екрана приказује мени понашања након
-освежавања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-behavior-update.png)
+![Screenshot shows behavior after update
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
 
 **Зашто?**
 
@@ -42,8 +42,8 @@ title: 'Напредне функције'
 
 ## Текстуални исечци
 
-![Снимак екрана приказује функцију текстуалних
-исечака](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules
+feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
 
 **Зашто?**
 
@@ -69,8 +69,8 @@ title: 'Напредне функције'
 
 ## Убацивање чланка базе знања
 
-![Снимак екрана приказује убацивање чланка базе
-знања](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-insert-kba.png)
+![Screenshot shows inserting knowledge base
+article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
 
 **Зашто?**
 
@@ -86,8 +86,8 @@ title: 'Напредне функције'
 
 ## Помињање корисника
 
-![Снимак екрана приказује помињање
-корисника](/screenshots/cypress/usage-advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a
+user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
 
 **Зашто?**
 
@@ -108,8 +108,8 @@ Zammad приказује листу свих корисника који одг
 
 ## Претплатите се на тикет
 
-![Снимак екрана приказује функцију
-претплате](/screenshots/cypress/usage-advanced-features.cy.js/ticket-subscribe.png)
+![Screenshot shows subscribe
+feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
 
 **Зашто?**
 
@@ -126,8 +126,8 @@ Zammad приказује листу свих корисника који одг
 
 ## Макрои
 
-![Снимак екрана који приказује мени радњи
-макроа](/screenshots/cypress/usage-advanced-features.cy.js/ticket-macro.png)
+![Screenshot shows macro action
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
 
 **Зашто?**
 
@@ -154,8 +154,8 @@ Zammad приказује листу свих корисника који одг
 
 ## Спискови задатака
 
-![Снимак екрана приказује списак задатака у бочној
-траци](/screenshots/cypress/usage-advanced-features.cy.js/ticket-checklist.png)
+![Screenshot shows a checklist from checklist
+sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
 
 **Зашто?**
 
@@ -263,8 +263,8 @@ Zammad вас подразумевано обавештава када се ти
 прозору. Приказани су сва предстојећа и достигнута времена ескалација на
 основу ваше SLA конфигурације:
 
-![Снимак екрана приказује панел ескалација превлачењем курсора преко датума
-ескалације](/screenshots/cypress/usage-advanced-features.cy.js/escalation-panel.png)
+![Screenshot shows escalation panel by hovering over escalation
+timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
 :::info
 Времена ескалација се рачунају на основу вашег радног времена. Ово значи да ако ваше радно време почиње у 9:00,
@@ -315,8 +315,8 @@ SLA функција захтева подешавање од стране ва�
 
 **Бочни панел:**
 
-![Снимак екрана приказује бочни панел масовне
-радње](/screenshots/cypress/usage-advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action side
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и
 промените/додајте атрибуте коришћењем поља у бочном панелу са десне
@@ -331,8 +331,8 @@ SLA функција захтева подешавање од стране ва�
 
 **Механизам превуци препусти за масовну радњу:**
 
-![Снимак екрана приказује масовну радњу преко механизма превуци и
-пусти](/screenshots/cypress/usage-advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Screenshot shows the bulk action via drag and
+drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
 По одабиру тикета, превуците их притиском и држањем дугмета на мишу и
 пустите их над жељеном радњом у панелу масовне радње. Од радње увек можете
@@ -351,8 +351,8 @@ SLA функција захтева подешавање од стране ва�
 
 ## Спајање тикета
 
-![Снимак екрана приказује бочну траку спајања
-тикета](/screenshots/cypress/usage-advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge side
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Зашто?**
 
@@ -381,8 +381,8 @@ SLA функција захтева подешавање од стране ва�
 
 ## Раздели тикете
 
-![Снимак екрана приказује радњу чланка за раздељивање у падајућем
-менију](/screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)
+![Screenshot shows the article action split
+menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
 
 **Зашто?**
 
@@ -424,8 +424,8 @@ SLA функција захтева подешавање од стране ва�
 
 ## Откривање дупликата
 
-![Снимак екрана приказује упозорење на дупликат приликом отварања
-тикета](/screenshots/cypress/usage-advanced-features.cy.js/duplicate-detection.png)
+![Screenshot shows duplicate ticket warning during ticket
+creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
 
 **Зашто?**
 
@@ -461,8 +461,8 @@ SLA функција захтева подешавање од стране ва�
 По освежавању тикета, биће приказан дијалог обрачуна времена. Унесите колико
 времена сте провели на тикету.
 
-![Снимак екрана приказује дијалог обрачуна
-времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-dialog.png)
+![Screenshot shows the time accounting
+dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
 
 Ова функција је **опциона**. Уколико је не видите по сваком освежавању
 тикета, ваш администратор је још није укључио или је услов за приказ на
@@ -482,8 +482,8 @@ SLA функција захтева подешавање од стране ва�
 обрачунате збирове за сваку врсту активности (уколико су подешене) као и
 укупан збир обрачунатог времена за све врсте активности.
 
-![Снимак екрана приказује приказ обрачуна
-времена](/screenshots/cypress/usage-advanced-features.cy.js/time-accounting-overview.png)
+![Screenshot shows the time accounting
+overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
 ## Панел са детаљима корисника
 
@@ -499,16 +499,16 @@ SLA функција захтева подешавање од стране ва�
 бочној траци детаљног приказа тикета. За више детаља, кликните на аватар
 сличицу за отварање [странице са детаљима корисника](#user-detail-page).
 
-![Снимак екрана приказује аватар сличицу са отвореним панелом детаља
-корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-panel.png)
+![Screenshot shows an avatar with opened user detail
+panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
 
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
 
 ## Страница са детаљима корисника
 
-![Снимак екрана који приказује страницу са детаљима
-корисника](/screenshots/cypress/usage-advanced-features.cy.js/user-detail-page.png)
+![Screenshot shows user detail
+page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
 
 **Зашто?**
 
@@ -531,8 +531,8 @@ the ::a:: menu.
 
 ## Organization Detail Page
 
-![Снимак екрана приказује страницу са детаљима
-организације](/screenshots/cypress/usage-advanced-features.cy.js/organization-detail-page.png)
+![Screenshot shows organization detail
+page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
 
 **Зашто?**
 
@@ -564,7 +564,7 @@ Gitlab проблеме, можете се повезати са овим екс
 **Како?**
 
 ![Screenshot shows Gitlab content sidebar with "Link Issue"
-button](/screenshots/cypress/usage-advanced-features.cy.js/gitlab-content-sidebar.png)
+button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
 If activated, simply open a ticket and choose the right content sidebar tab
 with the respective icon (see Gitlab example in screenshot above). Click the
@@ -585,7 +585,7 @@ about highlighting text in existing articles for you and other agents.
 **Како?**
 
 ![Screenshot shows highlight menu from ticket detail
-view](/screenshots/cypress/usage-advanced-features.cy.js/text-highlighting.png)
+view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
 
 Use the highlighting tool with the pencil icon in the upper right corner in
 the ticket detail view. To highlight text, either select text first and then

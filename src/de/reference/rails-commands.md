@@ -605,7 +605,7 @@ to use it for the desired article types and replace the text with yours. In
 case you don't want a note for all article types, simply omit these types.
 
 ![Screenshot shows a note during article
-creation](/screenshots/cypress/reference-rails-commands.cy.js/article-creation-note.png)
+creation](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
 
 #### Ticket Creation
 

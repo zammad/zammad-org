@@ -26,8 +26,8 @@ einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere
 Um eine Zwei-Faktor-Methode einzurichten, klicken Sie auf die ::+::
 Schaltfläche und folgenden Sie den Schritten.
 
-![Screenshot zeigt 2FA-Methoden in den Einstellungen des
-Benutzerprofils](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Screenshot shows 2FA methods in user profile
+settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
 bestätigen.
@@ -189,8 +189,8 @@ verwenden Sie das Aktionsmenü ::a:: neben der Methode in den
 Ein kleines, blaues Label ("Standard") zeigt Ihnen an, welche Methode für
 Ihr Konto als Standard festgelegt ist.
 
-![Screenshot zeigt Liste der 2FA-Methoden und
-Standardmethode](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-overview.png)
+![Screenshot shows list of 2FA methods and default
+method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)
 
 Die Standard Zwei-Faktor-Methode bedeutet, dass dies Ihre bevorzugte Methode
 beim Anmelden ist. Sie können beim Anmelden immer auf eine andere Methode
@@ -198,8 +198,8 @@ wechseln.
 
 ## Bearbeiten einer 2FA-Methode
 
-![Screenshot zeigt 2FA-Methoden in den Einstellungen des
-Benutzerprofils](/screenshots/cypress/usage-guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
+![Screenshot shows the action menu for an already set up 2FA
+method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
 
 Um eine bereits eingerichtete Zwei-Faktor-Methode zu bearbeiten, verwenden
 Sie das Menü Aktionsmenü ::a:: neben der Methode und wählen Sie

@@ -13,7 +13,7 @@ There are basic modular components for different features to keep the UI consist
 the sections below. Depending on the currently opened screen, there are interactive components, such as tooltips and a
 contextual help. Use them wherever needed.
 
-![Screenshot shows the ticket detail view](/screenshots/cypress/zammad-ui.cy.js/zammad-ui-full.png)
+![Screenshot shows the ticket detail view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
 ## Main UI Elements
 

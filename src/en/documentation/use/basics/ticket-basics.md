@@ -35,7 +35,7 @@ attributes. Read on to learn more.
 In addition to articles, tickets have some additional meta information which are called attributes. Use the
 **ticket sidebar** to view and change ticket attributes.
 
-![Screenshot shows ticket sidebar](/screenshots/cypress/usage-basics.cy.js/ticket-sidebar.png)
+![Screenshot shows ticket sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
 To hide the sidebar, click the collapse button with the arrow on the left side of the sidebar. Click on one of the tabs
 to bring it back. The available options depend on your privileges and the configuration of your system.
@@ -91,7 +91,7 @@ They can be used in conditions like in triggers and in overviews and they can al
 schedulers and triggers. Of course you can search for the text of the tags and you will find the tickets which have the
 tag assigned.
 
-![Screenshot shows tag area in ticket side bar](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
+![Screenshot shows tag area in ticket side bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
 In the ticket sidebar, you can find a section which is labeled as **Tags**. Add a tag by clicking on the ::+:: button.
 Depending on your Zammad's configuration, you can create new tags by simply type and confirm them with [[enter]] or

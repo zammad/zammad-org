@@ -47,8 +47,8 @@ Zusätzlich zu den Artikeln verfügen Tickets über einige zusätzliche
 Metainformationen, die als Attribute bezeichnet werden. Verwenden Sie die
 **Ticket-Seitenleiste**, um Ticket-Attribute anzuzeigen und zu ändern.
 
-![Screenshot zeit
-Ticket-Seitenleiste](/screenshots/cypress/usage-basics.cy.js/ticket-sidebar.png)
+![Screenshot shows ticket
+sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
 Um die Seitenleiste auszublenden, klicken Sie auf die Schaltfläche mit dem
 Pfeil auf der linken Seite der Seitenleiste. Klicken Sie auf einen der Tabs,
@@ -129,8 +129,8 @@ von Makros, Automatisierungen und Triggern zugewiesen werden. Natürlich
 können Sie auch nach dem Text der Tags suchen und die Tickets finden, denen
 das Tag zugewiesen wurde.
 
-![Screenshot zeigt Tag-Bereich in der
-Ticket-Seitenleiste](/screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)
+![Screenshot shows tag area in ticket side
+bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
 In der Ticket-Seitenleiste finden Sie einen Abschnitt mit der Bezeichnung
 **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die Schaltfläche ::+::
