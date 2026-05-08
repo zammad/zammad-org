@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-08 08:14+0200\n"
+"POT-Creation-Date: 2026-05-08 10:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17637,43 +17637,43 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``||italic||``"
+msgid "`||italic||`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``|bold|``"
+msgid "`|bold|`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``_underline_``"
+msgid "`_underline_`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``//strikethrough//``"
+msgid "`//strikethrough//`"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``§key§`` (renders a keyboard key like [[key]])"
+msgid "`§key§` (renders a keyboard key like [[key]])"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``¶`` (newline)"
+msgid "`¶` (newline)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/reference/rails-commands.md:637
 #, markdown-text
-msgid "``[link text](/example.com)``"
+msgid "`[link text](/example.com)`"
 msgstr ""
 
 #. type: Title ###

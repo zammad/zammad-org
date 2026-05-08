@@ -631,13 +631,13 @@ Setting.get('ui_ticket_add_article_hint')
 
 To apply text formatting, use the following markup:
 
-- ``||italic||``
-- ``|bold|``
-- ``_underline_``
-- ``//strikethrough//``
-- ``§key§`` (renders a keyboard key like [[key]])
-- ``¶`` (newline)
-- ``[link text](/example.com)``
+- `||italic||`
+- `|bold|`
+- `_underline_`
+- `//strikethrough//`
+- `§key§` (renders a keyboard key like [[key]])
+- `¶` (newline)
+- `[link text](/example.com)`
 
 ### Show Email Address of Customer on Customer Selection (Ticket Creation)
 
