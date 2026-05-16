@@ -11,7 +11,6 @@
     "ghcr.io/devcontainers/features/node:2": {
       "installYarnUsingApt": "false"
     },
-    "ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {},
     "ghcr.io/devcontainers-extra/features/apt-get-packages": {
       "packages": "libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb" // cypress dependencies
     },
@@ -34,6 +33,13 @@
     {
       "source": "zammad-org-devcontainer_node-modules",
       "target": "/workspaces/${localWorkspaceFolderBasename}/node_modules",
+      "type": "volume"
+    },
+    // A named volume used to persist `pnpm-store` across container rebuilds
+    //   and allow for a parallel local setup.
+    {
+      "source": "zammad-org-devcontainer_pnpm-store",
+      "target": "/workspaces/${localWorkspaceFolderBasename}/.pnpm-store",
       "type": "volume"
     },
     // A named volume used to persist `.screenshots/node_modules` across container rebuilds

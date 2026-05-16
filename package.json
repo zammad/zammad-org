@@ -29,14 +29,12 @@
     "screenshots:stop-stack": ".screenshots/zammad-stack/stop.sh",
     "prepare": "husky"
   },
-  "packageManager": "pnpm@10.33.4+sha512.1c67b3b359b2d408119ba1ed289f34b8fc3c6873412bec6fd264fbdc82489e510fcbecb9ce9d22dae7f3b76269d8441046014bdca53b9979cd7a561ad631b800",
-  "pnpm": {
-    "neverBuiltDependencies": []
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
   },
+  "packageManager": "pnpm@11.0.8",
   "lint-staged": {
     "./src/en/**/*.md": "pnpm lint:cmd"
-  },
-  "dependencies": {
-    "cypress": "^13.17.0"
   }
 }
