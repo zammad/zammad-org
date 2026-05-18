@@ -23,15 +23,17 @@ Die folgenden Umgebungsvariablen können zur Konfiguration der
 Proxy-Einstellungen verwendet werden. Passen Sie die Werte entsprechend
 Ihrer Umgebung an.
 
-`HTTP_PROXY`: Variable für HTTP-Verkehr. Setzen Sie sie auf die Adresse
-Ihres Proxy-Servers, einschließlich des Ports. Beispiel:
+`HTTP_PROXY`
+: Variable for HTTP traffic. Set it to the address of your proxy server, including the port. Does not work in Docker
+  context. Example:
 
   ```sh
   export HTTP_PROXY="http://127.0.0.1:8080"
   ```
 
-`HTTPS_PROXY`: Variable für HTTPS-Verkehr. Setzen Sie sie auf die Adresse
-Ihres Proxy-Servers, einschließlich des Ports. Beispiel:
+`HTTPS_PROXY`
+: Variable for HTTPS traffic. Set it to the address of your proxy server, including the port. Does not work in Docker
+  context. Example:
 
   ```sh
   export HTTPS_PROXY="http://127.0.0.1:8080"
