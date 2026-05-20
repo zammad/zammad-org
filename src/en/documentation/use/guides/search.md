@@ -5,80 +5,137 @@ title: Search
 
 # Search
 
-## Basics
-
-If you search for tickets, user and organizations, you can use the search. It is located in the top left corner in the
-primary navigation bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad returns all fitting items
-for which you have at least view or read permissions.
-
-![Screenshot shows search results in navigation bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
-
-The search covers basically all information which is stored in Zammad and which got
-[indexed by Elasticsearch](/en/reference/es-indexed-attributes), like:
+In Zammad, you can search for basically all available information like:
 
 - Message subject and text
 - Names and email addresses
 - Text in file attachments
 - User and organizations details (like notes, names, etc.)
 
-When the search field gets activated, you can see the tickets which got recently closed from your taskbar as well as your
-recent search queries.
+Depending on what you are searching for and the amount of data in your Zammad instance, you can search in different
+ways. Read on to learn about the search basics, followed by the detailed search and the usage of Elasticsearch syntax.
 
-After entering a search term, you immediately see a preview of the search results. These results are separated by type
-to make sure you won't get lost in the results. Selecting one of those results will open a new navigation tab (if not
-already opened) with the item.
+## Basic Search
 
-If you press [[enter]] or click on `detailed search`, Zammad displays a page with search results. There you can narrow
-down your search by selecting a specific object type (e.g. customer) in the tab bar below the search bar.
+The search is located in the top left corner in the primary navigation bar. Either select it via mouse or use the
+keyboard shortcut [[s]]. After activation, you can see the tickets which got recently closed from your taskbar as well
+as your recent search queries. To search, simply type a term. The search then displays all matching items for which you
+have at least view or read permissions, grouped by type like users and tickets. Selecting one of those results opens the
+item as tab in the primary navigation.
+
+![Screenshot shows search results in navigation bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+
+If you press [[enter]] or click on `detailed search`, Zammad opens the detailed search as a tab in the primary
+navigation. There you can narrow down your search by selecting a specific object type (e.g. organization), use advanced
+filters or even use Elasticsearch syntax. Read on for more information.
+
+## Detailed Search
+
+Sometimes, a simple search term may not give you the results you are looking for. Zammad provides different options to
+narrow down the search in the detailed search page.
 
 ![Screenshot shows detailed search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-If you are still facing many results, try to narrow down your search by adding additional terms or use the sorting of
-the columns. To sort the results based on the column's values, click on a column header. The sorting is indicated by an
-arrow. Click on the column again to change the sorting from ascending to descending and back. If you still can't find
-what you are looking for, have a look at the next section where you can learn how to search for specific attributes like
-creation date or the ticket owner's email address.
+### Sort the Results
 
-## Advanced
+To sort the results based on the column's values, click on a column header. The sorting is indicated by an
+arrow. Click on the column again to change the sorting from ascending to descending and back.
 
-You can narrow down your search results to specific attributes, even in the search field in the navigation bar. Read on
-for some examples and explanations. For a more detailed list of available attributes, please take a look at the
-[indexed attributes by Elasticsearch](/en/reference/es-indexed-attributes).
+### Limit Search to Object Type
 
-### Syntax
+Limit the search to an object type by using the **Search entity** tab selector below the search field (e.g. user or
+ticket). This limits the search to the selected object type and its related data. For example, when you select
+**Ticket**, the search also returns tickets where the owner or customer matches the search term.
 
-Search for a ticket of a specific customer:
+### Use Advanced Filters
+<!--Screenshot skipped for now. Will be added after more attributes are available-->
+In comparison to the search field, you can filter the search results based on specific attributes and their values.
+To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
+conditions based on specific attributes and their values. Choose an attribute and enter or select a value which the
+search results have to match. Each attribute is available only once. When using more than one filter, be aware that
+they all have to be met because they are logically connected by an AND operator. This also applies to the search term
+in the main search field.
+
+Remove a single filter by clicking the ::x:: next to the value field. To remove all filters, click the `x` in the
+main search bar at the top next to the `x filter(s)` label.
+
+In case you want to store or share your filter, you can do so by copying the URL. It includes the complete filter. Be
+aware that the search results may be different for other users due to divergent permissions.
+
+If you still haven't found what you are looking for, you can benefit from the search being powered by Elasticsearch.
+You can find some examples in the next section.
+
+## Using Elasticsearch Syntax
+
+This topic has its own section because it is an advanced topic for power users. By using Elasticsearch syntax, you can
+exactly filter your data for specific attribute values. Basically, all indexed attributes are supported. Read on to find
+examples how to use it or head over to the
+[indexed attributes by Elasticsearch page](/en/reference/es-indexed-attributes) where you can find a list with
+additional attributes.
+
+### Important Information
+
+- Make sure to select the relevant object in the **Search entity** switcher. For example `customer.lastname` is
+  available for tickets, but not for users.
+- When combining an Elasticsearch query with advanced filters, be aware that all of the advanced filter conditions and
+  the search syntax are logically connected by AND, so only results which match all of the advanced filter conditions
+  and your search term will be displayed.
+- To provide values containing a space, wrap them in `"`, e.g. `priority.name:"2 normal"`.
+
+### Logic Operators and Ranges
+
+You can combine conditions by using `AND` & `OR` as logical operators. Use `TO` to specify ranges for values with an
+order (e.g. integer or date). Include a limit of the specified range by using square brackets. Exclude it by using curly
+brackets. You can even combine those brackets, e.g. to include the lower limit and to exclude the upper limit. Nested
+terms can be achieved by separating them with parentheses `()`.
+
+`AND` & `OR` with parentheses:
 
 ```plain
-customer.firstname: John
+owner.lastname:brooks AND tags:(internal OR onboarding)
 ```
 
-or:
+`TO` with asterisk wildcard:
 
 ```plain
-customer.lastname: Doe
+state.name:open AND article_count: [5 TO *]
 ```
 
-### Combining Search Phrases
+`TO` with excluding one limit of a range:
 
-You can combine search phrases by using `AND`, `OR` and `TO` and even separate them with `()`. If you want to exclude
-search results, you can use negation `!`.
+```plain
+article.created_at:[2025-03-21 TO 2026-05-19}
+```
 
-| Search phrase                                                                                 | Description                                                                                                       |
-|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback)`                 | Show every ticket that state is either closed or open and has priority normal or the tag feedback.                |
-| `state.name:(closed OR open) AND (priority.name:"2 normal" OR tags:feedback) AND !(_Zammad_)` | This gets the same result as above, expect that we don't want the ticket to contain anything matching to "Zammad".|
-| `owner.email:bob@example.net AND state.name:(open OR new)`                                    | Show tickets with owner `bob@example.net` that are either open or new.                                            |
-| `state.name:pending* AND article_count: [1 TO 5]`                                             | Show everything with any pending state and an article count of 1 to 5.                                            |
+### Fuzzy Search
 
-### Additional Examples
+If you are not sure about the exact spelling of a value, use the tilde (`~`) as suffix to perform a fuzzy search.
 
-| Attribute     | Examples                                                                                          | Description                                                                                                                                                                                                                                          |
-|---------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| number        | `number:1118566`, `number:11185*`                                                                 | Search for a specific ticket number.                                                                                                                                                                                                                 |
-| title         | `title:"some title"`, `title:Printer`, `title: "some ti*"`                                        | If you need to use a space in the search phrase, use quotes. Zammad combines the search terms with an AND operator. You can also use a single keyword without quotation.                                                                             |
-| created_at    | `created_at:2018-11-18`, `created_at:[2018-11-15 TO 2018-11-18]`, `created_at:>now-1h`            | You can either use a simple date, a date-range or `>now-xh`. Please note that the date format needs to be `YYYY-MM-DD`.                                                                                                                              |
-| state.name    | `state.name: new`, `state.name:new OR open`, `state.name:closed`                                  | You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the English names for states, unless you have custom ticket states defined in your instance.                                          |
-| article_count | `article_count:5`, `article_count: [5 TO 10]`, `article_count:[5 TO *]`, `article_count:[* TO 5]` | You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or up to 5 articles, if needed).                                                                                           |
-| article.from  | `article.from:*bob*`                                                                              | Show all tickets that contain articles from a user with "bob" in its name.                                                                                                                                                                           |
-| article.body  | `article.body:heat`, `article.body:heat~`, `article.body:/joh?n(ath[oa]n)/`                       | First example shows every ticket containing the word "heat" - you can also use the fuzzy operator `~` to search for similar words like e.g. like "head". Zammad will also allow you to use regular expressions, where ever the attributes allows it. |
+```plain
+owner.firstname:lawren~
+```
+
+### Negating Search
+
+If you want to exclude specified values, you can use negation `!`. To negate more than one term, use parentheses for all
+of them.
+
+Exclude owner with last name "brooks":
+
+```plain
+!owner.lastname:brooks
+```
+
+Exclude multiple conditions:
+
+```plain
+owner.lastname:brooks AND !(tags:internal OR tags:onboarding)
+```
+
+### Regex
+
+You can even use regex to search. Wrap the regex term in `/`.
+
+```plain
+customer.lastname:/(bra?.n|doe)/
+```

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 13:51+0200\n"
+"POT-Creation-Date: 2026-05-20 10:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -457,7 +457,6 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
-#: src/en/documentation/use/guides/search.md:8
 #: src/en/get-started/installation/package.md:65
 #: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
@@ -5748,18 +5747,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:13
+#: src/en/documentation/use/guides/search.md:9
 #, markdown-text
-msgid ""
-"If you search for tickets, user and organizations, you can use the "
-"search. It is located in the top left corner in the primary navigation "
-"bar. Either select it via mouse or use the keyboard shortcut [[s]]. Zammad "
-"returns all fitting items for which you have at least view or read "
-"permissions."
+msgid "In Zammad, you can search for basically all available information like:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:14
+#, markdown-text
+msgid "Message subject and text"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:14
+#, markdown-text
+msgid "Names and email addresses"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:14
+#, markdown-text
+msgid "Text in file attachments"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:14
+#, markdown-text
+msgid "User and organizations details (like notes, names, etc.)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:15
+#: src/en/documentation/use/guides/search.md:17
+#, markdown-text
+msgid ""
+"Depending on what you are searching for and the amount of data in your "
+"Zammad instance, you can search in different ways. Read on to learn about "
+"the search basics, followed by the detailed search and the usage of "
+"Elasticsearch syntax."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/search.md:18
+#, markdown-text, no-wrap
+msgid "Basic Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:25
+#, markdown-text
+msgid ""
+"The search is located in the top left corner in the primary navigation "
+"bar. Either select it via mouse or use the keyboard shortcut [[s]]. After "
+"activation, you can see the tickets which got recently closed from your "
+"taskbar as well as your recent search queries. To search, simply type a "
+"term. The search then displays all matching items for which you have at "
+"least view or read permissions, grouped by type like users and "
+"tickets. Selecting one of those results opens the item as tab in the primary "
+"navigation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:27
 #, markdown-text
 msgid ""
 "![Screenshot shows search results in navigation "
@@ -5767,220 +5815,305 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:18
+#: src/en/documentation/use/guides/search.md:31
 #, markdown-text
 msgid ""
-"The search covers basically all information which is stored in Zammad and "
-"which got [indexed by Elasticsearch](/en/reference/es-indexed-attributes), "
-"like:"
+"If you press [[enter]] or click on `detailed search`, Zammad opens the "
+"detailed search as a tab in the primary navigation. There you can narrow "
+"down your search by selecting a specific object type (e.g. organization), "
+"use advanced filters or even use Elasticsearch syntax. Read on for more "
+"information."
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:23
-#, markdown-text
-msgid "Message subject and text"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:23
-#, markdown-text
-msgid "Names and email addresses"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:23
-#, markdown-text
-msgid "Text in file attachments"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:23
-#, markdown-text
-msgid "User and organizations details (like notes, names, etc.)"
+#. type: Title ##
+#: src/en/documentation/use/guides/search.md:32
+#, markdown-text, no-wrap
+msgid "Detailed Search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:26
+#: src/en/documentation/use/guides/search.md:36
 #, markdown-text
 msgid ""
-"When the search field gets activated, you can see the tickets which got "
-"recently closed from your taskbar as well as your recent search queries."
+"Sometimes, a simple search term may not give you the results you are looking "
+"for. Zammad provides different options to narrow down the search in the "
+"detailed search page."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:30
-#, markdown-text
-msgid ""
-"After entering a search term, you immediately see a preview of the search "
-"results. These results are separated by type to make sure you won't get lost "
-"in the results. Selecting one of those results will open a new navigation "
-"tab (if not already opened) with the item."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:33
-#, markdown-text
-msgid ""
-"If you press [[enter]] or click on `detailed search`, Zammad displays a page "
-"with search results. There you can narrow down your search by selecting a "
-"specific object type (e.g. customer) in the tab bar below the search bar."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:35
+#: src/en/documentation/use/guides/search.md:38
 #, markdown-text
 msgid ""
 "![Screenshot shows detailed "
 "search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)"
 msgstr ""
 
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:39
+#, markdown-text, no-wrap
+msgid "Sort the Results"
+msgstr ""
+
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:41
+#: src/en/documentation/use/guides/search.md:43
 #, markdown-text
 msgid ""
-"If you are still facing many results, try to narrow down your search by "
-"adding additional terms or use the sorting of the columns. To sort the "
-"results based on the column's values, click on a column header. The sorting "
-"is indicated by an arrow. Click on the column again to change the sorting "
-"from ascending to descending and back. If you still can't find what you are "
-"looking for, have a look at the next section where you can learn how to "
-"search for specific attributes like creation date or the ticket owner's "
-"email address."
+"To sort the results based on the column's values, click on a column "
+"header. The sorting is indicated by an arrow. Click on the column again to "
+"change the sorting from ascending to descending and back."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:44
+#, markdown-text, no-wrap
+msgid "Limit Search to Object Type"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:49
+#, markdown-text
+msgid ""
+"Limit the search to an object type by using the **Search entity** tab "
+"selector below the search field (e.g. user or ticket). This limits the "
+"search to the selected object type and its related data. For example, when "
+"you select **Ticket**, the search also returns tickets where the owner or "
+"customer matches the search term."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:50
+#, markdown-text, no-wrap
+msgid "Use Advanced Filters"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:58
+#, markdown-text, no-wrap
+msgid ""
+"<!--Screenshot skipped for now. Will be added after more attributes are "
+"available-->\n"
+"In comparison to the search field, you can filter the search results based "
+"on specific attributes and their values.\n"
+"To do so, click on the `Advanced filters` button on the right side, which "
+"opens an area where you can specify additional\n"
+"conditions based on specific attributes and their values. Choose an "
+"attribute and enter or select a value which the\n"
+"search results have to match. Each attribute is available only once. When "
+"using more than one filter, be aware that\n"
+"they all have to be met because they are logically connected by an AND "
+"operator. This also applies to the search term\n"
+"in the main search field.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:61
+#, markdown-text
+msgid ""
+"Remove a single filter by clicking the ::x:: next to the value field. To "
+"remove all filters, click the `x` in the main search bar at the top next to "
+"the `x filter(s)` label."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:64
+#, markdown-text
+msgid ""
+"In case you want to store or share your filter, you can do so by copying the "
+"URL. It includes the complete filter. Be aware that the search results may "
+"be different for other users due to divergent permissions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:67
+#, markdown-text
+msgid ""
+"If you still haven't found what you are looking for, you can benefit from "
+"the search being powered by Elasticsearch.  You can find some examples in "
+"the next section."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:42
+#: src/en/documentation/use/guides/search.md:68
 #, markdown-text, no-wrap
-msgid "Advanced"
+msgid "Using Elasticsearch Syntax"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:47
+#: src/en/documentation/use/guides/search.md:75
 #, markdown-text
 msgid ""
-"You can narrow down your search results to specific attributes, even in the "
-"search field in the navigation bar. Read on for some examples and "
-"explanations. For a more detailed list of available attributes, please take "
-"a look at the [indexed attributes by "
-"Elasticsearch](/en/reference/es-indexed-attributes)."
+"This topic has its own section because it is an advanced topic for power "
+"users. By using Elasticsearch syntax, you can exactly filter your data for "
+"specific attribute values. Basically, all indexed attributes are "
+"supported. Read on to find examples how to use it or head over to the "
+"[indexed attributes by Elasticsearch "
+"page](/en/reference/es-indexed-attributes) where you can find a list with "
+"additional attributes."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:48
+#: src/en/documentation/use/guides/search.md:76
+#: src/en/tutorials/backup-restore.md:87
 #, markdown-text, no-wrap
-msgid "Syntax"
+msgid "Important Information"
 msgstr ""
 
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:51
-#, markdown-text
-msgid "Search for a ticket of a specific customer:"
-msgstr ""
-
-#. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:52
-#, no-wrap
-msgid "customer.firstname: John\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:57
-#, markdown-text
-msgid "or:"
-msgstr ""
-
-#. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:58
-#, no-wrap
-msgid "customer.lastname: Doe\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/guides/search.md:62
-#, markdown-text, no-wrap
-msgid "Combining Search Phrases"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:66
-#, markdown-text
-msgid ""
-"You can combine search phrases by using `AND`, `OR` and `TO` and even "
-"separate them with `()`. If you want to exclude search results, you can use "
-"negation `!`."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/search.md:73
-#, markdown-text, no-wrap
-msgid ""
-"| Search phrase                                                                                 "
-"| Description                                                                                                       "
-"|\n"
-"|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|\n"
-"| `state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
-"tags:feedback)`                 | Show every ticket that state is either "
-"closed or open and has priority normal or the tag feedback.                "
-"|\n"
-"| `state.name:(closed OR open) AND (priority.name:\"2 normal\" OR "
-"tags:feedback) AND !(_Zammad_)` | This gets the same result as above, expect "
-"that we don't want the ticket to contain anything matching to \"Zammad\".|\n"
-"| `owner.email:bob@example.net AND state.name:(open OR new)`                                    "
-"| Show tickets with owner `bob@example.net` that are either open or new.                                            "
-"|\n"
-"| `state.name:pending* AND article_count: [1 TO 5]`                                             "
-"| Show everything with any pending state and an article count of 1 to 5.                                            "
-"|\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/guides/search.md:74
-#, markdown-text, no-wrap
-msgid "Additional Examples"
-msgstr ""
-
-#. type: Plain text
+#. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:84
-#, markdown-text, no-wrap
+#, markdown-text
 msgid ""
-"| Attribute     | Examples                                                                                          "
-"| Description                                                                                                                                                                                                                                          "
-"|\n"
-"|---------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n"
-"| number        | `number:1118566`, `number:11185*`                                                                 "
-"| Search for a specific ticket number.                                                                                                                                                                                                                 "
-"|\n"
-"| title         | `title:\"some title\"`, `title:Printer`, `title: \"some "
-"ti*\"`                                        | If you need to use a space "
-"in the search phrase, use quotes. Zammad combines the search terms with an "
-"AND operator. You can also use a single keyword without quotation.                                                                             "
-"|\n"
-"| created_at    | `created_at:2018-11-18`, `created_at:[2018-11-15 TO "
-"2018-11-18]`, `created_at:>now-1h`            | You can either use a simple "
-"date, a date-range or `>now-xh`. Please note that the date format needs to "
-"be `YYYY-MM-DD`.                                                                                                                              "
-"|\n"
-"| state.name    | `state.name: new`, `state.name:new OR open`, "
-"`state.name:closed`                                  | You can filter for "
-"specific ticket states (and even combine them with an OR). Please note that "
-"you need to use the English names for states, unless you have custom ticket "
-"states defined in your instance.                                          "
-"|\n"
-"| article_count | `article_count:5`, `article_count: [5 TO 10]`, "
-"`article_count:[5 TO *]`, `article_count:[* TO 5]` | You can search for "
-"Tickets with a specific number of articles (you can even search for "
-"everything with 5 or more articles or up to 5 articles, if needed).                                                                                           "
-"|\n"
-"| article.from  | `article.from:*bob*`                                                                              "
-"| Show all tickets that contain articles from a user with \"bob\" in its "
-"name.                                                                                                                                                                           "
-"|\n"
-"| article.body  | `article.body:heat`, `article.body:heat~`, "
-"`article.body:/joh?n(ath[oa]n)/`                       | First example shows "
-"every ticket containing the word \"heat\" - you can also use the fuzzy "
-"operator `~` to search for similar words like e.g. like \"head\". Zammad "
-"will also allow you to use regular expressions, where ever the attributes "
-"allows it. |\n"
+"Make sure to select the relevant object in the **Search entity** "
+"switcher. For example `customer.lastname` is available for tickets, but not "
+"for users."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:84
+#, markdown-text
+msgid ""
+"When combining an Elasticsearch query with advanced filters, be aware that "
+"all of the advanced filter conditions and the search syntax are logically "
+"connected by AND, so only results which match all of the advanced filter "
+"conditions and your search term will be displayed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:84
+#, markdown-text
+msgid ""
+"To provide values containing a space, wrap them in `\"`, "
+"e.g. `priority.name:\"2 normal\"`."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:85
+#, markdown-text, no-wrap
+msgid "Logic Operators and Ranges"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:91
+#, markdown-text
+msgid ""
+"You can combine conditions by using `AND` & `OR` as logical operators. Use "
+"`TO` to specify ranges for values with an order (e.g. integer or "
+"date). Include a limit of the specified range by using square "
+"brackets. Exclude it by using curly brackets. You can even combine those "
+"brackets, e.g. to include the lower limit and to exclude the upper "
+"limit. Nested terms can be achieved by separating them with parentheses "
+"`()`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:93
+#, markdown-text
+msgid "`AND` & `OR` with parentheses:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:94
+#, no-wrap
+msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:99
+#, markdown-text
+msgid "`TO` with asterisk wildcard:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:100
+#, no-wrap
+msgid "state.name:open AND article_count: [5 TO *]\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:105
+#, markdown-text
+msgid "`TO` with excluding one limit of a range:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:106
+#, no-wrap
+msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:110
+#, markdown-text, no-wrap
+msgid "Fuzzy Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:113
+#, markdown-text
+msgid ""
+"If you are not sure about the exact spelling of a value, use the tilde (`~`) "
+"as suffix to perform a fuzzy search."
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:114
+#, no-wrap
+msgid "owner.firstname:lawren~\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:118
+#, markdown-text, no-wrap
+msgid "Negating Search"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:122
+#, markdown-text
+msgid ""
+"If you want to exclude specified values, you can use negation `!`. To negate "
+"more than one term, use parentheses for all of them."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:124
+#, markdown-text
+msgid "Exclude owner with last name \"brooks\":"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:125
+#, no-wrap
+msgid "!owner.lastname:brooks\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:130
+#, markdown-text
+msgid "Exclude multiple conditions:"
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:131
+#, no-wrap
+msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/search.md:135
+#, markdown-text, no-wrap
+msgid "Regex"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:138
+#, markdown-text
+msgid "You can even use regex to search. Wrap the regex term in `/`."
+msgstr ""
+
+#. type: Fenced code block (plain)
+#: src/en/documentation/use/guides/search.md:139
+#, no-wrap
+msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr ""
 
 #. type: Title ###
@@ -24439,12 +24572,6 @@ msgstr ""
 #: src/en/tutorials/backup-restore.md:85
 #, markdown-text, no-wrap
 msgid "Restore Backups"
-msgstr ""
-
-#. type: Title ###
-#: src/en/tutorials/backup-restore.md:87
-#, markdown-text, no-wrap
-msgid "Important Information"
 msgstr ""
 
 #. type: Plain text
