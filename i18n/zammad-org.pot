@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-20 10:18+0200\n"
+"POT-Creation-Date: 2026-05-21 09:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,7 +261,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "We are happy to see you contribute to Zammad! You can do this in several "
-"ways. Contributions are mainly done by forking one of our repos on GitHub "
+"ways. Contributions are mainly done by cloning one of our repos on GitHub "
 "and creating a pull request with your changes (except for translations, see "
 "below). 🚀"
 msgstr ""
@@ -434,9 +434,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If you want to help us with translation and improve the multi-language "
-"support of Zammad and/or the documentation, you are welcome to contribute as "
+"support of Zammad or the documentation, you are welcome to contribute as "
 "well! The translation of Zammad and the documentation is done via Weblate, "
-"which is a service for the collaborative translation of projects.  Just head "
+"which is a service for the collaborative translation of projects. Just head "
 "over to Zammad's [Weblate "
 "instance](https://translations.zammad.org/){target=_blank}.  You can either "
 "create an account (if you don't have one already) or even sign in with your "
@@ -469,8 +469,8 @@ msgstr ""
 msgid ""
 "The translation of **Zammad** and the translation of the **documentation** "
 "are split into different projects in Weblate.\n"
-"When you click in the top menu under \"_Projects > Browse all projects_\", "
-"you can find the overview of the projects:\n"
+"When you click in the top menu under _Projects > Browse all projects_, you "
+"can find the overview of the projects:\n"
 msgstr ""
 
 #. type: Plain text
@@ -521,61 +521,56 @@ msgstr ""
 #. type: Bullet: '  - '
 #: src/en/contribute/contribute.md:90
 #, markdown-text
-msgid "_Some more which aren't relevant here_"
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/contribute/contribute.md:91
-#, no-wrap
-msgid ""
-"\n"
-"It should be no big difference which branch you choose to translate. When "
-"Weblate detects the same strings in different\n"
-"branches, they will be used for all branches and only have to be translated "
-"once. If in doubt, choose the `develop`\n"
-"version.\n"
+msgid "Some more which aren't relevant here"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:102
+#: src/en/contribute/contribute.md:94
 #, markdown-text
 msgid ""
-"After selecting a project (Documentation or Zammad), you will see different "
-"sub-projects and their translation status summarized for all languages. Here "
-"you can select one of the \"components\", which is more or less the same as "
-"different versions. After selecting one of them, you can see the status of "
-"translation for the different languages, as you can see in the following "
-"screenshot:"
+"Select a project (documentation or Zammad) and switch to the **Components** "
+"tab. Select the one you want to translate.  After that, you can see the "
+"status of translation for the different languages, as you can see in the "
+"following screenshot:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:104
+#: src/en/contribute/contribute.md:96
 #, markdown-text
 msgid ""
 "![Screenshot showing translation status of different languages for the user "
 "documentation](/screenshots/contribute/weblate-project-overview.png)"
 msgstr ""
 
+#. type: Fenced div block (tip)
+#: src/en/contribute/contribute.md:97
+#, no-wrap
+msgid ""
+"It should be no big difference which component/branch you choose to "
+"translate. When Weblate detects the same strings in\n"
+"different components, they will be used for all branches and only have to be "
+"translated once. If in doubt, choose\n"
+"`develop`.\n"
+msgstr ""
+
 #. type: Title ###
-#: src/en/contribute/contribute.md:105
+#: src/en/contribute/contribute.md:103
 #, markdown-text, no-wrap
 msgid "Translating"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:111
+#: src/en/contribute/contribute.md:107
 #, markdown-text
 msgid ""
-"After selecting your language you want to translate to, a good starting "
-"point is to select \"_Untranslated strings_\" (or the same meaning in your "
-"language, depending on what you have set in your profile).  After that, you "
-"will finally see the first untranslated string in the upper field and, in "
-"theory, you can start to translate. But let's first have a brief look at the "
-"user interface of Weblate:"
+"Now check the \"Unfinished\" column of your language and click on the number "
+"there. This opens the first untranslated string and, in theory, you can "
+"start translating. But let's first have a brief look at the user interface "
+"of Weblate:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:113
+#: src/en/contribute/contribute.md:109
 #, markdown-text
 msgid ""
 "![Screenshot of Weblate translation user "
@@ -583,92 +578,106 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
-msgid "**Breadcrumbs with path** to the current project and language"
+msgid "**Breadcrumbs with path** to the current project, component and language"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid ""
-"**Translation area** itself. You can find the source string (_\"English "
-"(United States)\"_) at the top and the field for your translation "
-"(_\"French\"_ in this example)."
+"**Translation area** itself. You can find the source string at the top and "
+"the field for your translation below."
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid ""
-"**Glossary**: here you can find common translations in Zammad context. The "
-"terms from the glossary are highlighted in the source strings, as well."
+"**Glossary**: when a string or parts of it is detected as being present in "
+"the glossary, you can find additional information there. It is also "
+"highlighted in the source strings."
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid "**Some useful tabs**:"
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid "**Nearby strings**: shows you the context of the word or string"
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid ""
 "**Automatic suggestions**: here you can find automatic suggestions from "
 "DeepL and suggestions from similar strings, which are already "
-"translated. Use the \"_Clone to translation_\" button to insert it in the "
-"translation field to apply changes. Use the \"_Accept_\" button to accept "
-"the suggested translation and automatically switch to the next string."
+"translated. Use the `Clone to translation` button to insert it in the "
+"translation field to apply changes. Use the `Accept` button to accept the "
+"suggested translation and automatically switch to the next string."
 msgstr ""
 
 #. type: Bullet: '    - '
-#: src/en/contribute/contribute.md:127
+#: src/en/contribute/contribute.md:122
 #, markdown-text
 msgid ""
-"**Other languages**: here you can get an overview, which languages are "
-"translated and you can also see the translated strings (could be useful for "
-"languages, which are similar)."
+"**Other languages**: here you see an list if and how the string is "
+"translated into other languages (could be useful for languages, which are "
+"similar)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/contribute/contribute.md:128
+#: src/en/contribute/contribute.md:123
 #, markdown-text, no-wrap
 msgid "Markup in Strings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:133
+#: src/en/contribute/contribute.md:130
 #, markdown-text
 msgid ""
-"Find some examples for special source strings with applied markup "
-"below. Depending on the string, it can be important to keep the markup "
-"and/or variables. Also have a look at the [style guide](style-guide) where "
-"you can find more information about the syntax and the usage of "
-"Markdown/Vitepress features."
+"Find some examples for special source strings below with a badge indicating "
+"where such a string can be found. Try to keep the (adjusted) markup and make "
+"sure to keep the variables. The **Source string location** section in "
+"Weblate (on the right side) gives you a hint where to search for the "
+"context. Also have a look at the [style guide of the "
+"documentation](style-guide) where you can find more information about the "
+"syntax and the usage of Markdown/Vitepress features."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:137
+#: src/en/contribute/contribute.md:134
 #, markdown-text, no-wrap
 msgid ""
-"**\\`example-string\\`**\n"
-": This is rendered as `example-string`. Depending on the context, it can be "
-"translated or not. In any case, use the\n"
-"  \\` before and after the string in your translation.\n"
+"`%s created ticket |%s|` <Badge type=\"tip\" text=\"Zammad\" />\n"
+": The string contains variables (`%s`) and markup (`||`). Make sure that the "
+"variable and markup is included in the\n"
+"  translation. The position may vary depending on the translation.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:143
+#: src/en/contribute/contribute.md:138
 #, markdown-text, no-wrap
 msgid ""
-"**\\[example\\](/en/path/to/document-or-website\\)**\n"
+"`` `example-string` `` <Badge type=\"tip\" text=\"Documentation\" />\n"
+": This is rendered as inline code (`example-string`). Depending on the "
+"context, it can be translated or not. In any\n"
+"  case, use a backtick (`` ` ``) before and after the string in your "
+"translation as well.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/contribute/contribute.md:144
+#, markdown-text, no-wrap
+msgid ""
+"`[example](/en/path/to/document-or-website)` <Badge type=\"tip\" "
+"text=\"Documentation\" />\n"
 ": This is a link to another page, including the language code. The above "
 "\"example\" is the text, which is shown as\n"
 "  link text. This part can be translated. For the path, only the `en` may be "
@@ -680,13 +689,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/contribute.md:146
+#: src/en/contribute/contribute.md:147
 #, markdown-text, no-wrap
 msgid ""
-"**\\*\\*example string\\*\\***\n"
-": Markup for text (e.g. bold, italics). Alternative: \\_example "
-"string\\_. These strings can be translated, but the\n"
-"  markup (e.g. `**` or `_`) should be adopted true to meaning.\n"
+"`**example string**` <Badge type=\"tip\" text=\"Documentation\" />\n"
+": Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try "
+"to keep the markup in general but adjust\n"
+"  it to keep the meaning.\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details

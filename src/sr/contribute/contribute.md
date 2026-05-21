@@ -4,10 +4,10 @@ order: 1
 
 # Учествујте
 
-Драго нам је да видимо да доприносите Zammad-у! Можете помоћи на неколико
-начина. Доприноси се углавном обављају тако што се један од наших
-репозиторија на GitHub-у форкује и направи pull request са вашим изменама
-(осим за преводе, погледајте испод за детаље). 🚀
+We are happy to see you contribute to Zammad! You can do this in several
+ways. Contributions are mainly done by cloning one of our repos on GitHub
+and creating a pull request with your changes (except for translations, see
+below). 🚀
 
 Можете допринети:
 
@@ -72,13 +72,14 @@ GitHub репозиторијум Zammad-а има неколико ограна
 
 ## Превод
 
-Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку
-у Zammad-у и/или документацији, ваш допринос је добродошао! Превод самог
-Zammad-а и документације обавља се преко Weblate апликације, која представља
-сервис за колаборацију на преводима пројеката.  Једноставно посетите
-Zammad-ову [Weblate
-инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
-отворити налог (ако га већ немате) или се пријавити својим Github налогом!
+If you want to help us with translation and improve the multi-language
+support of Zammad or the documentation, you are welcome to contribute as
+well! The translation of Zammad and the documentation is done via Weblate,
+which is a service for the collaborative translation of projects. Just head
+over to Zammad's [Weblate
+instance](https://translations.zammad.org/){target=_blank}.  You can either
+create an account (if you don't have one already) or even sign in with your
+Github account!
 
 Представићемо неке основне кораке у следећим одељцима како бисте могли да
 започнете са превођењем. Међутим, уколико желите да користите напредне
@@ -88,8 +89,8 @@ Weblate функције и да дубље уђете у проблематик
 
 ### Основе
 
-Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у Weblate апликацији.
-Преглед пројеката можете пронаћи кликом на мени при врху под „_Projects > Browse all projects_”:
+The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
+When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:
 
 ![Screenshot showing translation projects in Weblate and
 menu](/screenshots/contribute/weblate-overview-docs.png)
@@ -102,69 +103,73 @@ menu](/screenshots/contribute/weblate-overview-docs.png)
 - Zammad
   - Zammad (`develop`, развојна верзија)
   - Zammad (`stable` верзија)
-  - _Додатне верзије које овде нису релевантне_
+  - Some more which aren't relevant here
 
-::: tip
-
-Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate детектује идентичне низове текста у различитим
-огранцима, користиће исти превод за све огранке и тиме се преводи само једном. Уколико нисте сигурни, одаберите `develop`
-верзију.
-:::
-
-По одабиру пројекта (Documentation или Zammad), видећете више подпројеката и
-њихов сажети статус превода по свим језицима. Овде можете одабрати једну од
-„компонената”, које су мање или више идентичне различитим верзијама. По
-одабиру једне од њих, можете видети статус превода по различитим језицима,
-по узору на следећи снимак екрана:
+Select a project (documentation or Zammad) and switch to the **Components**
+tab. Select the one you want to translate.  After that, you can see the
+status of translation for the different languages, as you can see in the
+following screenshot:
 
 ![Screenshot showing translation status of different languages for the user
 documentation](/screenshots/contribute/weblate-project-overview.png)
 
+::: tip
+It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in
+different components, they will be used for all branches and only have to be translated once. If in doubt, choose
+`develop`.
+:::
+
 ### Превођење
 
-По одабиру вашег језика на који желите да преводите, добра почетна тачка је
-одабир „_Untranslated strings_” (или слично значење у вашем језику, у
-зависности који језик сте подесили у свом профилу).  Након тога, коначно
-ћете видети први непреведени текст у горњем пољу и, теоретски, можете
-започети превод. Али хајде да прво погледамо на кратко кориснички интерфејс
-Weblate-а:
+Now check the "Unfinished" column of your language and click on the number
+there. This opens the first untranslated string and, in theory, you can
+start translating. But let's first have a brief look at the user interface
+of Weblate:
 
 ![Screenshot of Weblate translation user
 interface](/screenshots/contribute/weblate-ui.png)
 
-1. **Путања навигације** на тренутни пројекат и језик превода
-2. Сам **Translation** одељак. Можете видети изворни низ текста (_„English
-   (United States)”_) при врху и поље за унос вашег превода (_„French”_ у
-   овом примеру).
-3. **Glossary**: овде можете пронаћи уобичајене у контексту
-   Zammad-а. Термини из речника ће бити наглашени у изворном тексту такође.
+1. **Breadcrumbs with path** to the current project, component and language
+2. **Translation area** itself. You can find the source string at the top
+   and the field for your translation below.
+3. **Glossary**: when a string or parts of it is detected as being present
+   in the glossary, you can find additional information there. It is also
+   highlighted in the source strings.
 4. **Неке корисне картице**:
     - **Nearby strings**: вам приказује контекст речи или низа текста
-    - **Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге
-      од DeepL сервиса и предлоге на основу сличног текста, који је већ
-      преведен. Користите дугме „_Clone to translation_” да убаците текст у
-      поље превода и снимите измене. Користите дугме „_Accept_” да
-      прихватите предложен предлог и одмах пређене на следећи низ текста.
-    - **Other languages**: овде можете добити преглед који језици већ садрже
-      превод и саме преводе (може бити корисно за сличне језике).
+    - **Automatic suggestions**: here you can find automatic suggestions
+      from DeepL and suggestions from similar strings, which are already
+      translated. Use the `Clone to translation` button to insert it in the
+      translation field to apply changes. Use the `Accept` button to accept
+      the suggested translation and automatically switch to the next string.
+    - **Other languages**: here you see an list if and how the string is
+      translated into other languages (could be useful for languages, which
+      are similar).
 
 ### Ознаке у тексту
 
-Испод можете пронаћи пар примера за специјалан текст са примењеним
-ознакама. У зависности од текста, некад је важно задржати ознаке и/или
-променљиве. Погледајте и [водич кроз стил](style-guide) где можете пронаћи
-више информација о синтакси и коришћењу Markdown/Vitepress функција.
+Find some examples for special source strings below with a badge indicating
+where such a string can be found. Try to keep the (adjusted) markup and make
+sure to keep the variables. The **Source string location** section in
+Weblate (on the right side) gives you a hint where to search for the
+context. Also have a look at the [style guide of the
+documentation](style-guide) where you can find more information about the
+syntax and the usage of Markdown/Vitepress features.
 
-**\`пример-текста\`**
-: Ово ће бити приказано као `пример-текста`. У зависности од контекста, ово се може превести или не.
-  У сваком случају, користите \` пре и после низа текста у вашем преводу.
+`%s created ticket |%s|` <Badge type="tip" text="Zammad" />
+: The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the
+  translation. The position may vary depending on the translation.
 
-**\[пример\](/en/path/to/document-or-website\)**
-: Ово је линк на другу страницу, укључујучи и код језика Текст „пример” изнад биће приказан као
-  текст линка. Овај део можете превести. Што се тиче путање, само замените `en` са кодом језика на који
-  преводите. Обратите пажњу да ли је ваш језик већ омогућен на zammad.org (проверите преко избора
-  језика). У супротном обратите нам се уколико желите да омогућимо ваш језик.
+`` `example-string` `` <Badge type="tip" text="Documentation" />
+: This is rendered as inline code (`example-string`). Depending on the context, it can be translated or not. In any
+  case, use a backtick (`` ` ``) before and after the string in your translation as well.
 
-**\*\*пример текста\*\***
-: Ознака текста (нпр. подебљано, курзив). Алтернатива: \_пример текста\_. Ови низови текста се могу преводити, али
-  ознаке (нпр. `**` ili `_`) би требало прилагодити правом значењу.
+`[example](/en/path/to/document-or-website)` <Badge type="tip" text="Documentation" />
+: This is a link to another page, including the language code. The above "example" is the text, which is shown as
+  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
+  translating in. Make sure that your language is already present on zammad.org (check it by using the language
+  switcher). Otherwise contact us if you want to have your language activated.
+
+`**example string**` <Badge type="tip" text="Documentation" />
+: Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try to keep the markup in general but adjust
+  it to keep the meaning.

@@ -4,7 +4,7 @@ order: 1
 
 # Contribute
 
-We are happy to see you contribute to Zammad! You can do this in several ways. Contributions are mainly done by forking
+We are happy to see you contribute to Zammad! You can do this in several ways. Contributions are mainly done by cloning
 one of our repos on GitHub and creating a pull request with your changes (except for translations, see below). 🚀
 
 You can contribute to:
@@ -60,9 +60,9 @@ changes and make sure to follow the [style and content guide](style-guide) and r
 
 ## Translation
 
-If you want to help us with translation and improve the multi-language support of Zammad and/or the documentation, you
+If you want to help us with translation and improve the multi-language support of Zammad or the documentation, you
 are welcome to contribute as well! The translation of Zammad and the documentation is done via Weblate, which is a
-service for the collaborative translation of projects.  Just head over to Zammad's
+service for the collaborative translation of projects. Just head over to Zammad's
 [Weblate instance](https://translations.zammad.org/){target=_blank}.
 You can either create an account (if you don't have one already) or even sign in with your Github account!
 
@@ -74,7 +74,7 @@ is a good starting point.
 ### Basics
 
 The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
-When you click in the top menu under "_Projects > Browse all projects_", you can find the overview of the projects:
+When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:
 
 ![Screenshot showing translation projects in Weblate and menu](/screenshots/contribute/weblate-overview-docs.png)
 
@@ -86,61 +86,62 @@ Structure of translation projects in Weblate:
 - Zammad
   - Zammad (`develop`, development version)
   - Zammad (`stable` version)
-  - _Some more which aren't relevant here_
+  - Some more which aren't relevant here
 
-::: tip
-
-It should be no big difference which branch you choose to translate. When Weblate detects the same strings in different
-branches, they will be used for all branches and only have to be translated once. If in doubt, choose the `develop`
-version.
-:::
-
-After selecting a project (Documentation or Zammad), you will see different sub-projects and their translation status
-summarized for all languages. Here you can select one of the "components", which is more or less the same as different
-versions. After selecting one of them, you can see the status of translation for the different languages, as you can see
-in the following screenshot:
+Select a project (documentation or Zammad) and switch to the **Components** tab. Select the one you want to translate.
+After that, you can see the status of translation for the different languages, as you can see in the following
+screenshot:
 
 ![Screenshot showing translation status of different languages for the user documentation](/screenshots/contribute/weblate-project-overview.png)
 
+::: tip
+It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in
+different components, they will be used for all branches and only have to be translated once. If in doubt, choose
+`develop`.
+:::
+
 ### Translating
 
-After selecting your language you want to translate to, a good starting point is to select "_Untranslated strings_"
-(or the same meaning in your language, depending on what you have set in your profile).
-After that, you will finally see the first untranslated string in the upper field and, in theory, you can start to
-translate. But let's first have a brief look at the user interface of Weblate:
+Now check the "Unfinished" column of your language and click on the number there. This opens the first untranslated
+string and, in theory, you can start translating. But let's first have a brief look at the user interface of Weblate:
 
 ![Screenshot of Weblate translation user interface](/screenshots/contribute/weblate-ui.png)
 
-1. **Breadcrumbs with path** to the current project and language
-2. **Translation area** itself. You can find the source string (_"English (United States)"_) at the top and the field
-   for your translation (_"French"_ in this example).
-3. **Glossary**: here you can find common translations in Zammad context. The terms from the glossary are highlighted
-   in the source strings, as well.
+1. **Breadcrumbs with path** to the current project, component and language
+2. **Translation area** itself. You can find the source string at the top and the field for your translation below.
+3. **Glossary**: when a string or parts of it is detected as being present in the glossary, you can find additional
+   information there. It is also highlighted in the source strings.
 4. **Some useful tabs**:
     - **Nearby strings**: shows you the context of the word or string
     - **Automatic suggestions**: here you can find automatic suggestions from DeepL and suggestions from similar
-      strings, which are already translated. Use the "_Clone to translation_" button to insert it in the translation
-      field to apply changes. Use the "_Accept_" button to accept the suggested translation and automatically switch
+      strings, which are already translated. Use the `Clone to translation` button to insert it in the translation
+      field to apply changes. Use the `Accept` button to accept the suggested translation and automatically switch
       to the next string.
-    - **Other languages**: here you can get an overview, which languages are translated and you can also see the
-      translated strings (could be useful for languages, which are similar).
+    - **Other languages**: here you see an list if and how the string is translated into other languages (could be
+      useful for languages, which are similar).
 
 ### Markup in Strings
 
-Find some examples for special source strings with applied markup below. Depending on the string, it can be important to
-keep the markup and/or variables. Also have a look at the [style guide](style-guide) where you can find more
-information about the syntax and the usage of Markdown/Vitepress features.
+Find some examples for special source strings below with a badge indicating where such a string can be found. Try to
+keep the (adjusted) markup and make sure to keep the variables. The **Source string location** section in Weblate
+(on the right side) gives you a hint where to search for the context. Also have a look at the
+[style guide of the documentation](style-guide) where you can find more information about the syntax and the usage of
+Markdown/Vitepress features.
 
-**\`example-string\`**
-: This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the
-  \` before and after the string in your translation.
+`%s created ticket |%s|` <Badge type="tip" text="Zammad" />
+: The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the
+  translation. The position may vary depending on the translation.
 
-**\[example\](/en/path/to/document-or-website\)**
+`` `example-string` `` <Badge type="tip" text="Documentation" />
+: This is rendered as inline code (`example-string`). Depending on the context, it can be translated or not. In any
+  case, use a backtick (`` ` ``) before and after the string in your translation as well.
+
+`[example](/en/path/to/document-or-website)` <Badge type="tip" text="Documentation" />
 : This is a link to another page, including the language code. The above "example" is the text, which is shown as
   link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
   translating in. Make sure that your language is already present on zammad.org (check it by using the language
   switcher). Otherwise contact us if you want to have your language activated.
 
-**\*\*example string\*\***
-: Markup for text (e.g. bold, italics). Alternative: \_example string\_. These strings can be translated, but the
-  markup (e.g. `**` or `_`) should be adopted true to meaning.
+`**example string**` <Badge type="tip" text="Documentation" />
+: Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try to keep the markup in general but adjust
+  it to keep the meaning.
