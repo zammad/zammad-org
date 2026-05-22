@@ -1,2 +1,5 @@
 allowBuilds:
   cypress: true
+
+# Restore old default behavior like in pnpm v10.
+verifyDepsBeforeRun: false
