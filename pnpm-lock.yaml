@@ -34,7 +34,7 @@ importers:
         version: 0.9.0(vitepress@1.6.4(@algolia/client-search@5.35.0)(postcss@8.5.6)(search-insights@2.17.2))(vue@3.5.18)
       vitepress-sidebar:
         specifier: ^1.31.1
-        version: 1.33.2
+        version: 1.36.1
       yaml:
         specifier: ^2.7.0
         version: 2.9.0
@@ -609,8 +609,8 @@ packages:
   birpc@2.5.0:
     resolution: {integrity: sha512-VSWO/W6nNQdyP520F1mhf+Lc2f8pjGQOtoHHm7Ze8Go1kX7akpVIrtTa0fn+HB0QJEDVacl6aO08YE0PgXfdnQ==}
 
-  brace-expansion@5.0.5:
-    resolution: {integrity: sha512-VZznLgtwhn+Mact9tfiwx64fA9erHH/MCXEUfB/0bX/6Fz6ny5EGTXYltMocqg4xFAQZtnO3DHWWXi8RiuN7cQ==}
+  brace-expansion@5.0.6:
+    resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
     engines: {node: 18 || 20 || >=22}
 
   ccount@2.0.1:
@@ -738,8 +738,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  linkify-it@5.0.0:
-    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+  linkify-it@5.0.1:
+    resolution: {integrity: sha512-wVoTjP4Q6R0NW5hiZkVJaFZPWgtXfoGF+6LucL3/FtiNjmcHhYjEr5f1Kqjirc1nBW07J/ZuRFumqr2oqccEWg==}
 
   lint-staged@17.0.5:
     resolution: {integrity: sha512-d12yC+/e8RhBjZtaxZn71FyrgU/P5e+uAPifhCLwdosQZP/zamSdKRWDC30ocVIbzDKiFG1McHc/LUgB92GIPw==}
@@ -754,8 +754,8 @@ packages:
     resolution: {integrity: sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==}
     engines: {node: '>=18'}
 
-  lru-cache@11.3.6:
-    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+  lru-cache@11.5.0:
+    resolution: {integrity: sha512-5YgH9UJd7wVb9hIouI2adWpgqrrICkt070Dnj8EUY1+B4B2P9eRLPAkAAo6NICA7CEhOIeBHl46u9zSNpNu7zA==}
     engines: {node: 20 || >=22}
 
   magic-string@0.30.17:
@@ -859,8 +859,8 @@ packages:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
     engines: {node: '>=6'}
 
-  qsu@1.12.0:
-    resolution: {integrity: sha512-kcB2A7XS+ApkxAIc63yOqF2mmvqyA4AezObM1RxAhOB6O0bRA8xCzm6PLwU70CVW9R+0Rozqd0pgOFskNtX2eQ==}
+  qsu@1.12.1:
+    resolution: {integrity: sha512-ZEIuX5ZDovCNrkIen1+Zx6/P31pHtkzX5cFp2yRwM6CRAa1cj726wSwtaqpFomKZGEcsdJoDeJ2LSNNlSj+4Rw==}
     engines: {node: '>=18.0.0'}
 
   regex-recursion@6.0.2:
@@ -1018,8 +1018,8 @@ packages:
       vitepress: ^1.0.0 || ^2.0.0-alpha.17
       vue: ^3.5.0
 
-  vitepress-sidebar@1.33.2:
-    resolution: {integrity: sha512-1fRCaR1UfiTvtQcqN3R+BGLsUVCexxRj64pw3WMhRYBUv0kBSSa7Zr4txLjrt7ReL4Lnt5yszSU8Ea8UWB9GWA==}
+  vitepress-sidebar@1.36.1:
+    resolution: {integrity: sha512-Y2/GX49/4ypHAKXKh2OgYx7d6Qp/kkkIEbahjDPU7llZS5Huq35hbE0+rUL99NzyFHTDpHV52e9rvwgPmAOtUA==}
     engines: {node: '>=20.0.0'}
 
   vitepress@1.6.4:
@@ -1563,7 +1563,7 @@ snapshots:
 
   birpc@2.5.0: {}
 
-  brace-expansion@5.0.5:
+  brace-expansion@5.0.6:
     dependencies:
       balanced-match: 4.0.4
 
@@ -1701,7 +1701,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  linkify-it@5.0.0:
+  linkify-it@5.0.1:
     dependencies:
       uc.micro: 2.1.0
 
@@ -1730,7 +1730,7 @@ snapshots:
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
 
-  lru-cache@11.3.6: {}
+  lru-cache@11.5.0: {}
 
   magic-string@0.30.17:
     dependencies:
@@ -1750,7 +1750,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
       entities: 4.5.0
-      linkify-it: 5.0.0
+      linkify-it: 5.0.1
       mdurl: 2.0.0
       punycode.js: 2.3.1
       uc.micro: 2.1.0
@@ -1790,7 +1790,7 @@ snapshots:
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.5
+      brace-expansion: 5.0.6
 
   minipass@7.1.3: {}
 
@@ -1812,7 +1812,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.3.6
+      lru-cache: 11.5.0
       minipass: 7.1.3
 
   perfect-debounce@1.0.0: {}
@@ -1833,7 +1833,7 @@ snapshots:
 
   punycode.js@2.3.1: {}
 
-  qsu@1.12.0: {}
+  qsu@1.12.1: {}
 
   regex-recursion@6.0.2:
     dependencies:
@@ -1998,11 +1998,11 @@ snapshots:
       vitepress: 1.6.4(@algolia/client-search@5.35.0)(postcss@8.5.6)(search-insights@2.17.2)
       vue: 3.5.18
 
-  vitepress-sidebar@1.33.2:
+  vitepress-sidebar@1.36.1:
     dependencies:
       glob: 13.0.6
       gray-matter: 4.0.3
-      qsu: 1.12.0
+      qsu: 1.12.1
 
   vitepress@1.6.4(@algolia/client-search@5.35.0)(postcss@8.5.6)(search-insights@2.17.2):
     dependencies:
