@@ -275,6 +275,11 @@ services (e.g. OAuth providers, webhooks, or integrations).
 : Defines the maximum time in seconds to wait for a response after a connection has been established (e.g. if you have
   a slow connection or slow response times on external side).
 
+`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
+: Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
+  response read. This is an additional hard ceiling on top of ``ZAMMAD_HTTP_OPEN_TIMEOUT`` and
+  ``ZAMMAD_HTTP_READ_TIMEOUT``.
+
 ## How to Set Environment Variables
 
 It depends on how you installed Zammad (package, Docker). Either set it via

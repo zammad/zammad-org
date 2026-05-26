@@ -278,6 +278,11 @@ Integrationen).
 : Legt die maximale Zeit in Sekunden fest, die nach dem Aufbau einer Verbindung auf eine Antwort gewartet wird
    (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf externer Seite haben).
 
+`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
+: Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
+  response read. This is an additional hard ceiling on top of ``ZAMMAD_HTTP_OPEN_TIMEOUT`` and
+  ``ZAMMAD_HTTP_READ_TIMEOUT``.
+
 ## Umgebungsvariablen setzen
 
 Es hängt davon ab, wie Sie Zammad installiert haben (Paket,
