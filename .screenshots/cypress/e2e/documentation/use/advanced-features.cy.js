@@ -57,10 +57,10 @@ describe('usage advanced features', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/7')
     cy.wait(3000) // loading
-    cy.get('[aria-label="Additional ticket edit actions"]').click()
+    cy.get('[aria-label="Drafts & macros"]').click()
     cy.wait(500) //transition
     cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
-      cy.get('[aria-label="Additional ticket edit actions"]').clip({ padding: 5 }).then((ButtonClip) => {
+      cy.get('[aria-label="Drafts & macros"]').clip({ padding: 5 }).then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
           cy.screenshot('ticket-macro', { clip })
         })
@@ -226,7 +226,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
     cy.wait(1000) // transition
     // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
-    cy.get('div.flex.mx-auto.mt-3.pe-17.w-full.max-w-278.h-21').clip( { padding: 10 } ).then((TopClip) => {
+    cy.get('div.mx-auto.mt-3.flex.w-full.max-w-278').clip( { padding: 10 } ).then((TopClip) => {
       cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').clip().then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('user-detail-page', { clip })
@@ -242,7 +242,7 @@ describe('usage advanced features', () => {
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
     cy.wait(1000) // transition
     // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
-    cy.get('div.flex.mx-auto.mt-3.pe-17.w-full.max-w-278.h-21').clip( { padding: 10 } ).then((TopClip) => {
+    cy.get('div.mx-auto.mt-3.flex.w-full.max-w-278').clip( { padding: 10 } ).then((TopClip) => {
       cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').clip().then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('organization-detail-page', { clip })

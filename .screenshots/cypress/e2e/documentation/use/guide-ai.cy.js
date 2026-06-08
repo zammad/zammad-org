@@ -35,7 +35,7 @@ describe('AI screenshots', () => {
     cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
-    cy.get('button').contains('Reply to customer').click().wait(500)
+    cy.get('button').contains('Reply').click().wait(500)
     cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
     cy.get('[aria-label="AI writing assistant tools"]').click().wait(200)
     cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-writing-assistant-tools')

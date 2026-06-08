@@ -60,8 +60,8 @@ docker compose exec -u root zammad-nginx sh -c "rm -rf /opt/zammad/zammad-org/.s
 if [ -n "$CI" ]
 then
   # Install Node & cypress dependencies
-  docker compose exec -u root -e CI=true zammad-nginx sh -c "curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && apt-get -q -y install nodejs && npm -g install yarn pnpm"
-  docker compose exec -u root -e CI=true zammad-nginx sh -c "apt-get -q -y install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb"
+  docker compose exec -u root -e CI=true zammad-nginx sh -c "curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && apt-get -q -y install nodejs && npm -g install pnpm"
+  docker compose exec -u root -e CI=true zammad-nginx sh -c "apt-get -q -y install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb unzip"
 fi
 
 # Wait for the application to be initialized.
