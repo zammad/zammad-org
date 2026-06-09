@@ -12,12 +12,12 @@ order: 2
 For package installation, the following Linux distributions are supported:
 <!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
 adjust it over there -->
-| Distribution  | Version             |
-| ------------- | :-----------------  |
-| CentOS/RHEL   | 9, 10               |
-| Debian        | 11, 12 & 13         |
-| OpenSUSE/SLES | Leap 15.x / 15      |
-| Ubuntu        | 22.04, 24.04        |
+| Distribution  | Version              |
+| ------------- | :------------------- |
+| CentOS/RHEL   | 9, 10                |
+| Debian        | 11, 12 & 13          |
+| OpenSUSE/SLES | Leap 15.x / 15       |
+| Ubuntu        | 22.04, 24.04 & 26.04 |
 
 If your distribution is not supported, feel free to use a different installation
 method or consider using
@@ -192,6 +192,13 @@ Add repository (Ubuntu 24.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Ubuntu 26.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
