@@ -12,12 +12,12 @@ title: Paket
 For package installation, the following Linux distributions are supported:
 <!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
 adjust it over there -->
-| Distribution  | Version              |
-| ------------- | :------------------- |
-| CentOS/RHEL   | 9, 10                |
-| Debian        | 11, 12 & 13          |
-| OpenSUSE/SLES | Leap 15.x / 15       |
-| Ubuntu        | 22.04, 24.04 & 26.04 |
+| Distribution         | Version              |
+| -------------------- | :------------------- |
+| CentOS/RHEL          | 9, 10                |
+| Debian               | 11, 12 & 13          |
+| OpenSUSE Leap / SLES | 15 & 16              |
+| Ubuntu               | 22.04, 24.04 & 26.04 |
 
 Wenn Ihre Distribution nicht unterstützt wird, können Sie eine andere
 Installationsmethode verwenden oder [Zammads Cloud
@@ -238,9 +238,18 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debia
 
 === OpenSUSE/SLES
 
+Add repository (OpenSUSE/SLES 15):
+
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
   "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
+```
+
+Add repository (OpenSUSE/SLES 16):
+
+```sh
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
 ```
 
 ===CentOS/RHEL
