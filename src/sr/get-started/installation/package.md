@@ -14,7 +14,7 @@ For package installation, the following Linux distributions are supported:
 adjust it over there -->
 | Distribution  | Version             |
 | ------------- | :-----------------  |
-| CentOS/RHEL   | 9                   |
+| CentOS/RHEL   | 9, 10               |
 | Debian        | 11, 12 & 13         |
 | OpenSUSE/SLES | Leap 15.x / 15      |
 | Ubuntu        | 22.04, 24.04        |
@@ -240,10 +240,17 @@ Add repository key:
 sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-Add repository:
+Add repository (CentOS/RHEL 9):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
+  -o /etc/yum.repos.d/zammad.repo
+```
+
+Add repository (CentOS/RHEL 10):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
   -o /etc/yum.repos.d/zammad.repo
 ```
 
@@ -372,6 +379,11 @@ it up in a secure way.
 
 Available environment variables for standard and Sentinel setups are briefly
 mentioned in the [Redis Variables](/en/reference/redis) page.
+
+:::info
+CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation
+on those distros, it gets installed automatically as a dependency.
+:::
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
 
