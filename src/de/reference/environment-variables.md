@@ -279,9 +279,9 @@ Integrationen).
    (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf externer Seite haben).
 
 `ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
-: Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
-  response read. This is an additional hard ceiling on top of ``ZAMMAD_HTTP_OPEN_TIMEOUT`` and
-  ``ZAMMAD_HTTP_READ_TIMEOUT``.
+: Definiert die maximale Gesamtzeit in Sekunden für die komplette HTTP-Anfrage, einschließlich Verbindungsaufbau und
+  Lesen der Antwort. Dies ist eine zusätzliche harte Obergrenze zusätzlich zu `ZAMMAD_HTTP_OPEN_TIMEOUT` und
+ `ZAMMAD_HTTP_READ_TIMEOUT`.
 
 ## Umgebungsvariablen setzen
 

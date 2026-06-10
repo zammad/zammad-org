@@ -5,8 +5,8 @@ title: Übersichten
 
 # Übersichten
 
-![Screenshot shows opened overview
-section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
+![Screenshot zeigt geöffneten
+Übersichten-Bereich](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
 
 ## Einführung
 
@@ -67,8 +67,8 @@ sind die Einträge in der Tabelle farblich gekennzeichnet.
 Das Symbol neben dem Titel des Tickets zeigt vor allem den Handlungsbedarf
 an:
 
-![Screenshot shows ticket
-states](/screenshots/documentation/use/overviews/states.png)
+![Screenshot zeigt Ticket
+Status](/screenshots/documentation/use/overviews/states.png)
 
 - Gelber Kreis: Handlungsbedarf (z.B. neu, offen, warten erreicht)
 - Grauer Kreis: pausiert, im Moment keine Aktion erforderlich (z.B. warten
@@ -83,8 +83,8 @@ dass ein [KI-Agent](ai#ai-agents) gerade an dem Ticket arbeitet.
 
 Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:
 
-![Screenshot shows ticket
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Screenshot zeigt Ticket
+Prioritäten](/screenshots/documentation/use/overviews/priorities.png)
 
 - 1 niedrig: grau
 - 2 normal: blau

@@ -41,25 +41,25 @@ Sie finden die Dateien im
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Folgen Sie der [allgemeinen Einrichtung](/de/get-started/installation/docker) und nehmen Sie die folgenden Änderungen vor.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Unter dem Feld "Compose path" klicken Sie auf die Schaltfläche `Add file`. Dadurch wird der Abschnitt "Additional paths" geöffnet, in dem Sie
+das gewünschte Szenario angeben können. Fügen Sie `scenarios/{Szenario, das Sie verwenden möchten}.yml` hinzu und ersetzen Sie den letzten Teil in
+`{}`-Klammern durch den Namen einer der Szenariodateien. Sie können die Szenarien sogar kombinieren, indem Sie zusätzliche Pfade hinzufügen.
 
-![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
+![Portainer-Zusatzpfade-Konfiguration](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 === Docker Compose
 
-Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with
-one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:
+Befolgen Sie die ersten 2 Schritte der [allgemeinen Einrichtung](/de/get-started/installation/docker). Zum Starten des Stacks mit
+einem oder mehreren zusätzlichen Szenarien verwenden Sie stattdessen den folgenden Befehl für Schritt 3 im geklonten Repository-Ordner:
 
-``` sh
+```sh
 docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d
 ```
 
-Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios
-by adding additional files according to the example above.
+Ersetzen Sie den Teil in `{}`-Klammern durch den Dateinamen einer der Szenario-Dateien. Sie können die Szenarien auch kombinieren,
+indem Sie zusätzliche Dateien entsprechend dem obigen Beispiel hinzufügen.
 
 :::
 

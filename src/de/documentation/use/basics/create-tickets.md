@@ -22,8 +22,8 @@ Schaltfläche ::+:: am unteren Rand der Navigationsleiste klicken. Daraufhin
 wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie alle erforderlichen
 Informationen hinzufügen können.
 
-![Screenshot shows ticket create
-screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
+![Screenshot zeigt den
+Ticket-Erstellungsdialog](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
 ## Typauswahl
 

@@ -17,8 +17,8 @@ Um das Avatar-Menü zu öffnen, klicken Sie auf Ihr Avatar-Symbol in der
 unteren linken Ecke der Seitenleiste. Dieses Symbol zeigt entweder Ihre
 Initialen oder ein Profilbild an.
 
-![Screenshot shows user detail
-panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Screenshot zeigt
+Benutzerinfo](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
 Das Menü enthält die folgenden Einträge:
 
@@ -36,8 +36,8 @@ Das Menü enthält die folgenden Einträge:
 
 ## Profil-Einstellungen
 
-![Screenshot shows user profile
-settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot zeigt
+Benutzerprofil-Einstellungen](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Aussehen
 
@@ -119,8 +119,8 @@ Nachdem Sie das Token erstellt haben, wird es nur einmal in einem Dialogfeld
 angezeigt. Achten Sie darauf, es zu kopieren, da es keine Möglichkeit gibt,
 es erneut anzuzeigen.
 
-![Screenshot shows side panel with created token and copy
-button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
+![Screenshot zeigt Seiten-Panel mit erstelltem Token und
+Kopierschaltfläche](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Benachrichtigungen
 

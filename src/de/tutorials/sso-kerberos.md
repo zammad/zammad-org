@@ -103,8 +103,8 @@ Sie können ein bestehendes Konto verwenden, wenn Sie eines
 haben. Admin-Rechte sind nicht erforderlich; ein normales Benutzerkonto ist
 ausreichend.
 
-![Screenshot Active Directory service account
-settings](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
+![Screenshot Active Directory Service Account
+Einstellungen](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
 ### 1b. Passwort zurücksetzen
 

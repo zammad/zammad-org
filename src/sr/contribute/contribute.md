@@ -92,8 +92,8 @@ Weblate функције и да дубље уђете у проблематик
 The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
 When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:
 
-![Screenshot showing translation projects in Weblate and
-menu](/screenshots/contribute/weblate-overview-docs.png)
+![Снимак екрана који приказује пројекте превода у Weblate
+менију](/screenshots/contribute/weblate-overview-docs.png)
 
 Структура пројекта превода у Weblate-у:
 
@@ -110,8 +110,8 @@ tab. Select the one you want to translate.  After that, you can see the
 status of translation for the different languages, as you can see in the
 following screenshot:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/contribute/weblate-project-overview.png)
+![Снимак екрана који приказује статус превода за корисничку документацију по
+различитим језицима](/screenshots/contribute/weblate-project-overview.png)
 
 ::: tip
 It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in
@@ -126,8 +126,8 @@ there. This opens the first untranslated string and, in theory, you can
 start translating. But let's first have a brief look at the user interface
 of Weblate:
 
-![Screenshot of Weblate translation user
-interface](/screenshots/contribute/weblate-ui.png)
+![Снимак екрана корисничког интерфејса превода у
+Weblate-у](/screenshots/contribute/weblate-ui.png)
 
 1. **Breadcrumbs with path** to the current project, component and language
 2. **Translation area** itself. You can find the source string at the top

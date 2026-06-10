@@ -26,9 +26,9 @@ generiert wenn das Ticket aktualisiert wurde und Sie es entweder öffnen oder
 den Seitenleisten-Tab für die Zusammenfassung des Tickets anklicken,
 abhängig von der Konfiguration.
 
-![Screenshot shows Zammad's ticket detail view with highlighted ticket
-summary banner and summary
-sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner
+für die Ticket-Zusammenfassung und der
+Zusammenfassungs-Seitenleiste](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
 Abhängig von der Konfiguration Ihrer Zammad-Instanz enthält die
 Zusammenfassung die folgenden Abschnitte:
@@ -49,8 +49,8 @@ die Schaltfläche `Schreibassistent-Werkzeuge` auf der linken Seite der
 Symbolleiste des Editors und wählen Sie abhängig von Ihrem Anwendungsfall
 eines der Werkzeuge aus.
 
-![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Screenshot zeigt Zammads
+Schreibassistent-Menü](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
@@ -102,8 +102,8 @@ feststellen, dass der KI-Agent häufig falsch liegt, informieren Sie Ihren
 Zammad-Administrator. Beispiel für einen Eintrag in der Historie eines
 KI-Agenten:
 
-![Screenshot shows AI agent ticket history
-entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
+![Eintrag eines KI-Agenten in die
+Ticket-Historie](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Erkennung gleichzeitige Ticketbearbeitung
 
@@ -115,8 +115,8 @@ Moment oder wechseln Sie zu einem anderen Ticket.
 
 Avatar eines KI Agenten:
 
-![Screenshot shows avatar of an AI
-agent](/screenshots/documentation/use/ai/ai-live-user.png)
+![Screenshot zeigt Avatar eines
+KI-Agenten](/screenshots/documentation/use/ai/ai-live-user.png)
 
 ### Indikator in Übersichten
 
@@ -124,6 +124,6 @@ Ein laufender KI-Agent wird in der Statusspalte in den Übersichten
 angezeigt. Die Farbe des Kreises ändert sich zu einem blau/pinken
 Farbverlauf:
 
-![Screenshot shows a status circle in overviews indicating an AI agent is
-currently working on
-it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)
+![Screenshot zeigt einen Statuskreis in Übersichten, der anzeigt, dass ein
+KI-Agent gerade daran
+arbeitet](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)

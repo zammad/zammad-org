@@ -11,8 +11,8 @@ title: 'Напредне функције'
 
 ## Понашање при освежавању тикета
 
-![Screenshot shows behavior after update
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
+![Снимак екрана приказује мени понашања након
+освежавања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
 
 **Зашто?**
 
@@ -42,8 +42,8 @@ menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-beha
 
 ## Текстуални исечци
 
-![Screenshot shows text modules
-feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
+![Снимак екрана приказује функцију текстуалних
+исечака](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
 
 **Зашто?**
 
@@ -69,8 +69,8 @@ feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-a
 
 ## Убацивање чланка базе знања
 
-![Screenshot shows inserting knowledge base
-article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
+![Снимак екрана приказује убацивање чланка базе
+знања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
 
 **Зашто?**
 
@@ -86,8 +86,8 @@ article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-a
 
 ## Помињање корисника
 
-![Screenshot shows mentioning a
-user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
+![Снимак екрана приказује помињање
+корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
 
 **Зашто?**
 
@@ -108,8 +108,8 @@ Zammad приказује листу свих корисника који одг
 
 ## Претплатите се на тикет
 
-![Screenshot shows subscribe
-feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
+![Снимак екрана приказује функцију
+претплате](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
 
 **Зашто?**
 
@@ -126,8 +126,8 @@ feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-s
 
 ## Макрои
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
+![Снимак екрана који приказује мени радњи
+макроа](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
 
 **Зашто?**
 
@@ -154,8 +154,8 @@ menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macr
 
 ## Спискови задатака
 
-![Screenshot shows a checklist from checklist
-sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
+![Снимак екрана приказује списак задатака у бочној
+траци](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
 
 **Зашто?**
 
@@ -263,8 +263,8 @@ Zammad вас подразумевано обавештава када се ти
 прозору. Приказани су сва предстојећа и достигнута времена ескалација на
 основу ваше SLA конфигурације:
 
-![Screenshot shows escalation panel by hovering over escalation
-timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
+![Снимак екрана приказује панел ескалација превлачењем курсора преко датума
+ескалације](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
 :::info
 Времена ескалација се рачунају на основу вашег радног времена. Ово значи да ако ваше радно време почиње у 9:00,
@@ -315,8 +315,8 @@ SLA функција захтева подешавање од стране ва�
 
 **Бочни панел:**
 
-![Screenshot shows the bulk action side
-panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Снимак екрана приказује бочни панел масовне
+радње](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и
 промените/додајте атрибуте коришћењем поља у бочном панелу са десне
@@ -331,8 +331,8 @@ panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-
 
 **Механизам превуци препусти за масовну радњу:**
 
-![Screenshot shows the bulk action via drag and
-drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Снимак екрана приказује масовну радњу преко механизма превуци и
+пусти](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
 По одабиру тикета, превуците их притиском и држањем дугмета на мишу и
 пустите их над жељеном радњом у панелу масовне радње. Од радње увек можете
@@ -351,8 +351,8 @@ drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action
 
 ## Спајање тикета
 
-![Screenshot shows the ticket merge side
-panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Снимак екрана приказује бочну траку спајања
+тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Зашто?**
 
@@ -381,8 +381,8 @@ panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-mer
 
 ## Раздели тикете
 
-![Screenshot shows the article action split
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
 
 **Зашто?**
 
@@ -424,8 +424,8 @@ menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-spli
 
 ## Откривање дупликата
 
-![Screenshot shows duplicate ticket warning during ticket
-creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
+![Снимак екрана приказује упозорење на дупликат приликом отварања
+тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
 
 **Зашто?**
 
@@ -461,8 +461,8 @@ creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplica
 По освежавању тикета, биће приказан дијалог обрачуна времена. Унесите колико
 времена сте провели на тикету.
 
-![Screenshot shows the time accounting
-dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
+![Снимак екрана приказује дијалог обрачуна
+времена](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
 
 Ова функција је **опциона**. Уколико је не видите по сваком освежавању
 тикета, ваш администратор је још није укључио или је услов за приказ на
@@ -482,8 +482,8 @@ dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-acco
 обрачунате збирове за сваку врсту активности (уколико су подешене) као и
 укупан збир обрачунатог времена за све врсте активности.
 
-![Screenshot shows the time accounting
-overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
+![Снимак екрана приказује приказ обрачуна
+времена](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
 ## Панел са детаљима корисника
 
@@ -499,16 +499,16 @@ overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-ac
 бочној траци детаљног приказа тикета. За више детаља, кликните на аватар
 сличицу за отварање [странице са детаљима корисника](#user-detail-page).
 
-![Screenshot shows an avatar with opened user detail
-panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
+![Снимак екрана приказује аватар сличицу са отвореним панелом детаља
+корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
 
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
 
 ## Страница са детаљима корисника
 
-![Screenshot shows user detail
-page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
+![Снимак екрана који приказује страницу са детаљима
+корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
 
 **Зашто?**
 

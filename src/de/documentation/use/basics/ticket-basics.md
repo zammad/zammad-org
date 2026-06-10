@@ -47,8 +47,8 @@ Zusätzlich zu den Artikeln verfügen Tickets über einige zusätzliche
 Metainformationen, die als Attribute bezeichnet werden. Verwenden Sie die
 **Ticket-Seitenleiste**, um Ticket-Attribute anzuzeigen und zu ändern.
 
-![Screenshot shows ticket
-sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
+![Screenshot zeit
+Ticket-Seitenleiste](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
 Um die Seitenleiste auszublenden, klicken Sie auf die Schaltfläche mit dem
 Pfeil auf der linken Seite der Seitenleiste. Klicken Sie auf einen der Tabs,
@@ -91,8 +91,8 @@ Zammads Status sind farbkodiert. Das hilft Ihnen den Zustand eines Tickets
 viel schneller zu verstehen - ohne einen detaillierten Blick hinein werfen
 zu müssen.
 
-![Screenshot shows different color-coded
-states](/screenshots/documentation/use/overviews/states.png)
+![Screenshot zeigt verschiedene farbkodierte
+Status](/screenshots/documentation/use/overviews/states.png)
 
 ### Priorität
 
@@ -108,8 +108,8 @@ Zammad-Administrator, zusätzliche Prioritäten zu erstellen. Die
 Standardprioritäten ermöglichen es Ihnen, die Wichtigkeit Ihrer Tickets
 sofort zu erkennen, da sie farblich gekennzeichnet sind:
 
-![Screenshot shows different color-coded
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Screenshot zeigt farbkodierte
+Prioritäten](/screenshots/documentation/use/overviews/priorities.png)
 
 Sie fragen sich vielleicht, was eine solche Priorität macht. Von Haus aus
 passiert damit eigentlich nichts, außer der
@@ -129,8 +129,8 @@ von Makros, Automatisierungen und Triggern zugewiesen werden. Natürlich
 können Sie auch nach dem Text der Tags suchen und die Tickets finden, denen
 das Tag zugewiesen wurde.
 
-![Screenshot shows tag area in ticket side
-bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
+![Screenshot zeigt Tag-Bereich in der
+Ticket-Seitenleiste](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
 In der Ticket-Seitenleiste finden Sie einen Abschnitt mit der Bezeichnung
 **Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die Schaltfläche ::+::

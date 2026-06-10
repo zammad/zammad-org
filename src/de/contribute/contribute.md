@@ -4,10 +4,10 @@ order: 1
 
 # Beitragen
 
-We are happy to see you contribute to Zammad! You can do this in several
-ways. Contributions are mainly done by cloning one of our repos on GitHub
-and creating a pull request with your changes (except for translations, see
-below). 🚀
+Wir freuen uns, wenn Sie zu Zammad beitragen! Sie können dies auf
+verschiedene Arten tun. Sie können beitragen, indem Sie eines unserer Repos
+auf GitHub klonen und einen Pull Request mit Ihren Änderungen erstellen
+(außer für Übersetzungen, siehe unten). 🚀
 
 Sie können zu folgendem beitragen:
 
@@ -76,14 +76,14 @@ des Repos.
 
 ## Übersetzung
 
-If you want to help us with translation and improve the multi-language
-support of Zammad or the documentation, you are welcome to contribute as
-well! The translation of Zammad and the documentation is done via Weblate,
-which is a service for the collaborative translation of projects. Just head
-over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Wenn Sie uns bei der Übersetzung helfen und die Mehrsprachigkeit von Zammad
+oder der Dokumentation verbessern wollen, sind Sie ebenfalls herzlich
+willkommen! Die Übersetzung von Zammad und der Dokumentation erfolgt über
+Weblate, einen Dienst für die gemeinschaftliche Übersetzung von
+Projekten. Gehen Sie einfach zu Zammads
+[Weblate-Instanz](https://translations.zammad.org/){target=_blank}. Sie
+können entweder ein Konto erstellen (falls Sie noch keins haben) oder sich
+sogar mit Ihrem Github-Konto anmelden!
 
 In den folgenden Abschnitten werden wir einige grundlegende Schritte
 behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch
@@ -94,11 +94,11 @@ ein guter Ausgangspunkt.
 
 ### Grundlagen
 
-The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
-When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:
+Die Übersetzung von **Zammad** und die Übersetzung der **Dokumentation** sind in Weblate in verschiedene Projekte aufgeteilt.
+Wenn Sie im oberen Menü auf _Projekte > Alle Projekte durchsuchen_ klicken, finden Sie eine Übersicht der Projekte:
 
-![Screenshot showing translation projects in Weblate and
-menu](/screenshots/contribute/weblate-overview-docs.png)
+![Screenshot mit Übersetzungsprojekten in Weblate und
+Menü](/screenshots/contribute/weblate-overview-docs.png)
 
 Struktur von Übersetzungsprojekten in Weblate:
 
@@ -108,74 +108,82 @@ Struktur von Übersetzungsprojekten in Weblate:
 - Zammad
   - Zammad (`develop`, Entwicklungsversion)
   - Zammad (`stable` Version)
-  - Some more which aren't relevant here
+  - Einige weitere, die hier nicht relevant sind
 
-Select a project (documentation or Zammad) and switch to the **Components**
-tab. Select the one you want to translate.  After that, you can see the
-status of translation for the different languages, as you can see in the
-following screenshot:
+Wählen Sie ein Projekt (Dokumentation oder Zammad) und wechseln Sie auf den
+Tab **Komponenten**. Wählen Sie die Komponente aus, die Sie übersetzen
+möchten. Danach können Sie den Status der Übersetzung für die verschiedenen
+Sprachen sehen, wie zum Beispiel im folgenden Screenshot:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/contribute/weblate-project-overview.png)
+![Screenshot zeigt Übersetzungsstand der verschiedenen Sprachen für die
+Benutzer
+Dokumentation](/screenshots/contribute/weblate-project-overview.png)
 
 ::: tip
-It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in
-different components, they will be used for all branches and only have to be translated once. If in doubt, choose
-`develop`.
+Es macht keinen großen Unterschied, welche Komponente/Branch Sie für die Übersetzung wählen. Wenn Weblate die gleichen Zeichenketten in verschiedenen
+Komponenten erkennt, werden sie für alle anderen verwendet und müssen nur einmal übersetzt werden. Im Zweifelsfall wählen Sie die `develop`
+Version.
 :::
 
 ### Übersetzen
 
-Now check the "Unfinished" column of your language and click on the number
-there. This opens the first untranslated string and, in theory, you can
-start translating. But let's first have a brief look at the user interface
-of Weblate:
+Prüfen Sie nun die Spalte "Unvollständig" Ihrer Sprache und klicken Sie auf
+die darin stehende Zahl. Dadurch wird die erste unübersetzte Zeichenkette
+geöffnet und Sie können theoretisch mit der Übersetzung beginnen. Aber
+lassen Sie uns zunächst einen kurzen Blick auf die Benutzeroberfläche von
+Weblate werfen:
 
-![Screenshot of Weblate translation user
-interface](/screenshots/contribute/weblate-ui.png)
+![Screenshot des Weblate
+User-Interface](/screenshots/contribute/weblate-ui.png)
 
-1. **Breadcrumbs with path** to the current project, component and language
-2. **Translation area** itself. You can find the source string at the top
-   and the field for your translation below.
-3. **Glossary**: when a string or parts of it is detected as being present
-   in the glossary, you can find additional information there. It is also
-   highlighted in the source strings.
+1. **Breadcrumbs mit Pfad** zum aktuellen Projekt, zur Komponente und zur
+   Sprache
+2. **Übersetzungsbereich** selbst. Die Zeichenkette der Quelle finden Sie
+   oben, das Feld für Ihre Übersetzung darunter.
+3. **Glossar**: Wenn eine Zeichenkette oder Teile davon als im Glossar
+   vorhanden erkannt werden, können Sie dort zusätzliche Informationen
+   finden. Entsprechende begriffe werden auch in den Quell-Zeichenketten
+   hervorgehoben.
 4. **Weitere nützliche Tabs**:
     - **Benachbarte Zeichenketten**: zeigt Ihnen den Kontext des Wortes oder
       der Zeichenkette an
-    - **Automatic suggestions**: here you can find automatic suggestions
-      from DeepL and suggestions from similar strings, which are already
-      translated. Use the `Clone to translation` button to insert it in the
-      translation field to apply changes. Use the `Accept` button to accept
-      the suggested translation and automatically switch to the next string.
-    - **Other languages**: here you see an list if and how the string is
-      translated into other languages (could be useful for languages, which
-      are similar).
+    - **Automatische Vorschläge**: hier finden Sie automatische Vorschläge
+      von DeepL und Vorschläge von ähnlichen Zeichenketten, die bereits
+      übersetzt sind. Verwenden Sie die Schaltfläche In `Übersetzung
+      kopieren`, um sie in das Übersetzungsfeld einzufügen und die
+      Änderungen zu übernehmen. Verwenden Sie die Schaltfläche `Annehmen`,
+      um die vorgeschlagene Übersetzung zu akzeptieren und automatisch zur
+      nächsten Zeichenkette zu wechseln.
+    - **Andere Sprachen**: Hier können Sie sich eine Übersicht verschaffen,
+      welche Sprachen übersetzt wurden, und Sie können auch die übersetzten
+      Zeichenketten sehen (könnte für Sprachen nützlich sein, die ähnlich
+      sind).
 
 ### Zeichenketten mit Auszeichnung
 
-Find some examples for special source strings below with a badge indicating
-where such a string can be found. Try to keep the (adjusted) markup and make
-sure to keep the variables. The **Source string location** section in
-Weblate (on the right side) gives you a hint where to search for the
-context. Also have a look at the [style guide of the
-documentation](style-guide) where you can find more information about the
-syntax and the usage of Markdown/Vitepress features.
+Unten finden Sie einige Beispiele für spezielle Zeichenketten mit einem
+Hinweis darauf, wo eine solche Zeichenkette zu finden ist. Versuchen Sie,
+das (angepasste) Markup beizubehalten und achten Sie darauf, die Variablen
+beizubehalten. Der Abschnitt **Ort der Ausgangszeichenkette** in Weblate
+(auf der rechten Seite) gibt Ihnen einen Hinweis, wo Sie nach dem Kontext
+suchen können. Werfen Sie auch einen Blick in den [Styleguide der
+Dokumentation](style-guide), wo Sie weitere Informationen über die Syntax
+und die Verwendung der Markdown/Vitepress-Funktionen finden.
 
 `%s created ticket |%s|` <Badge type="tip" text="Zammad" />
-: The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the
-  translation. The position may vary depending on the translation.
+: Die Zeichenkette enthält Variablen (`%s`) und Markup (`||`). Stellen Sie sicher, dass die Variablen und das Markup in der
+  Übersetzung enthalten sind. Die Position kann je nach Übersetzung variieren.
 
-`` `example-string` `` <Badge type="tip" text="Documentation" />
-: This is rendered as inline code (`example-string`). Depending on the context, it can be translated or not. In any
-  case, use a backtick (`` ` ``) before and after the string in your translation as well.
+`` `example-string` `` <Badge type="tip" text="Dokumentation" />
+: Dies wird als Inline-Code wiedergegeben (`example-string`). Je nach Kontext kann er übersetzt werden oder nicht.
+  Auf jeden Fall muss ein Backtick (`` ` ``) vor und nach der Zeichenkette in Ihrer Übersetzung vorhanden sein.
 
-`[example](/en/path/to/document-or-website)` <Badge type="tip" text="Documentation" />
-: This is a link to another page, including the language code. The above "example" is the text, which is shown as
-  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
-  translating in. Make sure that your language is already present on zammad.org (check it by using the language
-  switcher). Otherwise contact us if you want to have your language activated.
+`[example](/en/path/to/document-or-website)` <Badge type="tip" text="Dokumentation" />
+: Dies ist ein Link zu einer anderen Seite, einschließlich des Sprachcodes. Das obige "example" ist der Text, der als Linktext angezeigt wird.
+  Dieser Teil kann übersetzt werden. Für den Pfad darf nur das `en` durch den Sprachcode ersetzt werden, in dessen Sprache Sie
+  übersetzen. Vergewissern Sie sich, dass Ihre Sprache bereits auf zammad.org vorhanden ist (überprüfen Sie dies im
+  Sprachwechsel-Menü). Andernfalls kontaktieren Sie uns, wenn Sie Ihre Sprache aktivieren lassen wollen.
 
-`**example string**` <Badge type="tip" text="Documentation" />
-: Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try to keep the markup in general but adjust
-  it to keep the meaning.
+`**example string**` <Badge type="tip" text="Dokumentation" />
+: Markup für Text (z.B. fett, kursiv). Alternative: `_example string_`. Versuchen Sie, das Markup im Allgemeinen beizubehalten,
+  aber passen Sie es ggf. an, um die Bedeutung zu erhalten.

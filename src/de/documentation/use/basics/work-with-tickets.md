@@ -54,8 +54,8 @@ Dropdown-Menü **Sichtbarkeit**, um die Sichtbarkeit des Artikels zu
 ändern. Artikel mit "interner" Sichtbarkeit werden mit einem gestrichelten
 blauen Rahmen angezeigt.
 
-![Screenshot shows article type and visibility
-selector](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Screenshot die Auswahl des Artikeltyps und der
+Sichtbarkeit](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
 Um Text zu schreiben und zu bearbeiten, nutzen Sie die umfangreichen
 Editor-Funktionen. Um Text zu formatieren und spezielle Funktionen
@@ -84,8 +84,8 @@ Sichtbarkeit vorausgefüllt. Wenn Sie **Antwort hinzufügen** wählen, wird
 eine Antwort an den Kunden des Tickets gesendet. Bei einer E-Mail-basierten
 Kommunikation wird die E-Mail-Adresse des Kunden vorausgefüllt.
 
-![Screenshot shows new article buttons in bottom
-bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot zeigt Schaltflächen für einen neuen Artikel in der
+Fußleiste](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Auf einen Artikel antworten
 
@@ -105,8 +105,8 @@ Antwort-Schaltflächen unter dem Artikel oder im ::a:: Menü. Das Verhalten
   beliebigen Empfänger weiterleiten. Die ursprüngliche Nachricht und die
   Anhänge sind in Ihrem neuen Artikel enthalten.
 
-![Screenshot shows article reply
-actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
+![Screenshot zeigt Antwortaktionen für einen
+Artikel](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
 
 Zammad ermöglicht es Ihnen sogar, aus einem bestehenden Artikel **Text zu
 zitieren**. Dies ist besonders hilfreich, wenn sich eine Antwort auf
@@ -145,8 +145,9 @@ verwenden Sie ein unformatiertes Einfügen per [[ctrl]] [[shift]] [[v]].
 Wenn Sie im Ticket nach unten gescrollt haben, fahren Sie mit dem Mauszeiger
 über die eingeklappte Kopfleiste, wo Sie die Schaltfläche oben links finden.
 
-![Screenshot shows ticket header with highlighted ticket number copy
-button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
+![Screenshot zeigt Ticket Kopfleiste mit hervorgehobener Schaltfläche zum
+Kopieren der
+Ticket-Nummer](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
 
 Aber halt, es gibt sogar ein Tastaturkürzel dafür! Drücken Sie einfach [[.]]
 in der Ticket-Detailansicht und die Ticket-Nummer wird in Ihre
@@ -162,8 +163,8 @@ widersprüchliche Antworten erhalten, zeigt Ihnen Zammad an, wer das Ticket
 gerade anschaut oder bearbeitet. Sie finden diese Information in der unteren
 Leiste, wo die Avatare aller Agenten angezeigt werden.
 
-![Screenshot shows other agents viewing/editing the
-ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
+![Screenshot zeigt andere Agenten, die das Ticket gerade
+sehen/bearbeiten](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
 Achten Sie darauf, mit Ihren Kollegen zu kommunizieren, um diese Probleme zu
 vermeiden, bevor sie entstehen. Abhängig von einem zusätzlichen Symbol oder

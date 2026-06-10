@@ -5,153 +5,163 @@ title: Suche
 
 # Suche
 
-In Zammad, you can search for basically all available information like:
+In Zammad können Sie grundsätzlich nach allen verfügbaren Informationen
+suchen:
 
 - Betreff und Text der Nachricht
 - Namen und E-Mail-Adressen
 - Text in Dateianhängen
 - Benutzer- und Organisationsdetails (wie Notizen, Namen, etc.)
 
-Depending on what you are searching for and the amount of data in your
-Zammad instance, you can search in different ways. Read on to learn about
-the search basics, followed by the detailed search and the usage of
-Elasticsearch syntax.
+Je nachdem, wonach Sie suchen und wie groß die Datenmenge in Ihrer
+Zammad-Instanz ist, können Sie auf unterschiedliche Weise suchen. Lesen Sie
+weiter, um mehr über die Grundlagen der Suche zu erfahren, gefolgt von der
+Erweiterten Suche und der Verwendung von Elasticsearch-Syntax.
 
-## Basic Search
+## Einfache Suche
 
-The search is located in the top left corner in the primary navigation
-bar. Either select it via mouse or use the keyboard shortcut [[s]]. After
-activation, you can see the tickets which got recently closed from your
-taskbar as well as your recent search queries. To search, simply type a
-term. The search then displays all matching items for which you have at
-least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the primary
-navigation.
+Die Suche befindet sich in der oberen linken Ecke in der
+Navigations-Seitenleiste. Wählen Sie sie entweder mit der Maus aus oder
+verwenden Sie das Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in
+Ihrer Navigations-Seitenleiste die Tickets, die kürzlich dort geschlossen
+wurden, sowie Ihre letzten Suchanfragen. Um zu suchen, geben Sie einfach
+einen Begriff ein. Die Suche zeigt dann alle übereinstimmenden Elemente an,
+für die Sie mindestens über Ansichts- oder Leserechte verfügen, gruppiert
+nach Typ wie Benutzer und Tickets. Wenn Sie eines dieser Ergebnisse
+auswählen, wird das Element als Tab in der Navigations-Seitenleiste
+geöffnet.
 
-![Screenshot shows search results in navigation
-bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot zeigt Suchergebnisse in der
+Navigationsleiste](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
-If you press [[enter]] or click on `detailed search`, Zammad opens the
-detailed search as a tab in the primary navigation. There you can narrow
-down your search by selecting a specific object type (e.g. organization),
-use advanced filters or even use Elasticsearch syntax. Read on for more
-information.
+Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, öffnet
+Zammad die Erweiterte Suche als Tab in der Navigations-Seitenleiste. Dort
+können Sie Ihre Suche eingrenzen, indem Sie einen bestimmten Objekttyp
+(z.B. Organisation) auswählen, erweiterte Filter verwenden oder sogar die
+Elasticsearch-Syntax nutzen. Lesen Sie weiter für weitere Informationen.
 
-## Detailed Search
+## Erweiterte Suche
 
-Sometimes, a simple search term may not give you the results you are looking
-for. Zammad provides different options to narrow down the search in the
-detailed search page.
+Manchmal liefert Ihnen ein einfacher Suchbegriff nicht die gewünschten
+Ergebnisse. Zammad bietet Ihnen auf der Seite Erweiterte Suche verschiedene
+Möglichkeiten, die Suche einzugrenzen.
 
-![Screenshot shows detailed
-search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
+![Screenshot zeigt die Erweiterte
+Suche](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Sort the Results
+### Sortierung der Ergebnisse
 
-To sort the results based on the column's values, click on a column
-header. The sorting is indicated by an arrow. Click on the column again to
-change the sorting from ascending to descending and back.
+Um die Ergebnisse nach den Werten einer Spalte zu sortieren, klicken Sie auf
+eine Spaltenüberschrift. Die Sortierung wird durch einen Pfeil
+angezeigt. Klicken Sie erneut auf die Spalte, um die Sortierung von
+aufsteigend zu absteigend und zurück zu ändern.
 
-### Limit Search to Object Type
+### Suche auf Objekttyp beschränken
 
-Limit the search to an object type by using the **Search entity** tab
-selector below the search field (e.g. user or ticket). This limits the
-search to the selected object type and its related data. For example, when
-you select **Ticket**, the search also returns tickets where the owner or
-customer matches the search term.
+Schränken Sie die Suche auf einen Objekttyp ein, indem Sie den Tab-Selektor
+**Suchobjekt** unterhalb des Suchfeldes verwenden (z.B. Benutzer oder
+Ticket). Dadurch wird die Suche auf den ausgewählten Objekttyp und die damit
+verbundenen Daten beschränkt. Wenn Sie z.B. **Ticket** wählen, gibt die
+Suche auch Tickets aus, bei denen der Besitzer oder Kunde mit dem
+Suchbegriff übereinstimmt.
 
-### Use Advanced Filters
+### Erweiterte Filter verwenden
 <!--Screenshot skipped for now. Will be added after more attributes are available-->
-In comparison to the search field, you can filter the search results based on specific attributes and their values.
-To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
-conditions based on specific attributes and their values. Choose an attribute and enter or select a value which the
-search results have to match. Each attribute is available only once. When using more than one filter, be aware that
-they all have to be met because they are logically connected by an AND operator. This also applies to the search term
-in the main search field.
+Im Vergleich zum Suchfeld können Sie die Suchergebnisse auf der Grundlage bestimmter Attribute und deren Werten filtern.
+Klicken Sie dazu auf die Schaltfläche `Erweiterte Filter` auf der rechten Seite, die einen Bereich für zusätzliche
+Bedingungen auf Basis bestimmter Attribute und deren Werte öffnet. Wählen Sie ein Attribut und geben Sie einen Wert ein oder wählen Sie einen Wert, mit dem die
+Suchergebnisse übereinstimmen müssen. Jedes Attribut ist nur einmal verfügbar. Wenn Sie mehr als einen Filter verwenden, beachten Sie bitte, dass
+sie alle erfüllt sein müssen, da sie logisch durch einen AND-Operator verbunden sind. Dies gilt auch für den Suchbegriff
+im Hauptsuchfeld.
 
-Remove a single filter by clicking the ::x:: next to the value field. To
-remove all filters, click the `x` in the main search bar at the top next to
-the `x filter(s)` label.
+Entfernen Sie einen einzelnen Filter, indem Sie auf das ::x:: neben dem Wert
+klicken. Um alle Filter zu entfernen, klicken Sie auf `x` in der
+Hauptsuchleiste oben neben dem Label `x Filter`.
 
-In case you want to store or share your filter, you can do so by copying the
-URL. It includes the complete filter. Be aware that the search results may
-be different for other users due to divergent permissions.
+Falls Sie Ihren Filter speichern oder weitergeben möchten, können Sie dies
+tun, indem Sie die URL kopieren. Sie enthält den vollständigen
+Filter. Beachten Sie, dass die Suchergebnisse für andere Benutzer aufgrund
+abweichender Berechtigungen unterschiedlich ausfallen können.
 
-If you still haven't found what you are looking for, you can benefit from
-the search being powered by Elasticsearch.  You can find some examples in
-the next section.
+Wenn Sie immer noch nicht gefunden haben, was Sie suchen, können Sie von der
+Elasticsearch-gestützten Suche profitieren.  Im nächsten Abschnitt finden
+Sie einige Beispiele.
 
-## Using Elasticsearch Syntax
+## Elasticsearch-Syntax verwenden
 
-This topic has its own section because it is an advanced topic for power
-users. By using Elasticsearch syntax, you can exactly filter your data for
-specific attribute values. Basically, all indexed attributes are
-supported. Read on to find examples how to use it or head over to the
-[indexed attributes by Elasticsearch
-page](/en/reference/es-indexed-attributes) where you can find a list with
-additional attributes.
+Dieses Thema hat einen eigenen Abschnitt, da es sich um ein
+fortgeschrittenes Thema für erfahrene Benutzer handelt. Mit der
+Elasticsearch-Syntax können Sie Ihre Daten genau nach bestimmten
+Attributwerten filtern. Im Grunde werden alle indizierten Attribute
+unterstützt. Lesen Sie weiter, um Beispiele für die Verwendung zu finden,
+oder gehen Sie auf die Seite [Elasticsearch indizierte
+Attribute](/de/reference/es-indexed-attributes), wo Sie eine Liste mit
+weiteren Attributen finden können.
 
 ### Wichtige Informationen
 
-- Make sure to select the relevant object in the **Search entity**
-  switcher. For example `customer.lastname` is available for tickets, but
-  not for users.
-- When combining an Elasticsearch query with advanced filters, be aware that
-  all of the advanced filter conditions and the search syntax are logically
-  connected by AND, so only results which match all of the advanced filter
-  conditions and your search term will be displayed.
-- To provide values containing a space, wrap them in `"`,
-  e.g. `priority.name:"2 normal"`.
+- Vergewissern Sie sich, dass Sie das relevante Objekt in der Tab-Auswahl
+  **Suchobjekt** auswählen. Zum Beispiel ist `customer.lastname` für Tickets
+  verfügbar, jedoch nicht für Benutzer.
+- Wenn Sie eine Elasticsearch-Abfrage mit erweiterten Filtern kombinieren,
+  beachten Sie, dass alle erweiterten Filterbedingungen und die Suchsyntax
+  logisch mit AND verknüpft sind. Es werden also nur Ergebnisse angezeigt,
+  die allen erweiterten Filterbedingungen und Ihrem Suchbegriff entsprechen.
+- Wenn Sie Werte mit einem Leerzeichen angeben möchten, umschließen Sie
+  diese mit `"`, z.B. `priority.name: "2 normal"`.
 
-### Logic Operators and Ranges
+### Logische Operatoren und Bereiche
 
-You can combine conditions by using `AND` & `OR` as logical operators. Use
-`TO` to specify ranges for values with an order (e.g. integer or
-date). Include a limit of the specified range by using square
-brackets. Exclude it by using curly brackets. You can even combine those
-brackets, e.g. to include the lower limit and to exclude the upper
-limit. Nested terms can be achieved by separating them with parentheses
-`()`.
+Sie können Bedingungen kombinieren, indem Sie `AND` & `OR` als logische
+Operatoren verwenden. Verwenden Sie `TO`, um Bereiche für Werte mit einer
+Reihenfolge anzugeben (z.B. Ganzzahl oder Datum). Schließen Sie eine Grenze
+des angegebenen Bereichs ein, indem Sie eckige Klammern verwenden. Schließen
+Sie sie aus, indem Sie geschweifte Klammern verwenden. Sie können diese
+Klammern sogar kombinieren, z.B. um die untere Grenze ein- und die obere
+Grenze auszuschließen. Verschachtelte Begriffe lassen sich durch die
+Trennung mit Klammern `()` erreichen.
 
-`AND` & `OR` with parentheses:
+`AND` & `OR` mit Klammern:
 
 ```plain
 owner.lastname:brooks AND tags:(internal OR onboarding)
 ```
 
-`TO` with asterisk wildcard:
+`TO` mit Sternchen als Platzhalter:
 
 ```plain
 state.name:open AND article_count: [5 TO *]
 ```
 
-`TO` with excluding one limit of a range:
+`TO` mit Ausschluss eines Grenzwerts eines Bereichs:
 
 ```plain
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Fuzzy Search
+### Unscharfe Suche
 
-If you are not sure about the exact spelling of a value, use the tilde (`~`)
-as suffix to perform a fuzzy search.
+Wenn Sie sich über die genaue Schreibweise eines Wertes nicht sicher sind,
+verwenden Sie die Tilde (`~`) als Suffix, um eine unscharfe (*fuzzy*) Suche
+durchzuführen.
 
 ```plain
 owner.firstname:lawren~
 ```
 
-### Negating Search
+### Suche negieren
 
-If you want to exclude specified values, you can use negation `!`. To negate
-more than one term, use parentheses for all of them.
+Wenn Sie bestimmte Werte ausschließen möchten, können Sie die Negation `!`
+verwenden. Um mehr als einen Bereich zu negieren, verwenden Sie Klammern für
+um den gewünschten Bereich.
 
-Exclude owner with last name "brooks":
+Schließen Sie Besitzer mit dem Nachnamen "brooks" aus:
 
 ```plain
 !owner.lastname:brooks
 ```
 
-Exclude multiple conditions:
+Schließen Sie mehrere Bedingungen aus:
 
 ```plain
 owner.lastname:brooks AND !(tags:internal OR tags:onboarding)
@@ -159,7 +169,8 @@ owner.lastname:brooks AND !(tags:internal OR tags:onboarding)
 
 ### Regex
 
-You can even use regex to search. Wrap the regex term in `/`.
+Sie können sogar Regex für die Suche verwenden. Schließen Sie den
+Regex-Begriff in `/` ein.
 
 ```plain
 customer.lastname:/(bra?.n|doe)/

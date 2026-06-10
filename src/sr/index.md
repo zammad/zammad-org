@@ -1,9 +1,9 @@
 ---
 features:
   - 
-    details: "Discover how Zammad's professional services can help you succeed."
+    details: 'Откријте како вам професионалне услуге Zammad-а могу помоћи да успете.'
     link: https://zammad.com/en/services/professional-services
-    title: 'Professional Services'
+    title: 'Професионалне услуге'
   - 
     details: 'Zammad има пуно кул функција! Сазнајте више овде!'
     link: https://zammad.com/en/product/features

@@ -595,19 +595,21 @@ Um die aktuelle Einstellung abzurufen, führen Sie den folgenden Befehl aus:
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Show a Note During Article Creation
+### Notiz während der Artikelerstellung anzeigen
 
-If you need to show your agents a note with important information during the
-article creation, you can create such a static note for different article
-types. Be aware that there are two settings: one for ticket creation and the
-other for article creation in an existing ticket. Adjust the commands below
-to use it for the desired article types and replace the text with yours. In
-case you don't want a note for all article types, simply omit these types.
+Wenn Sie Ihren Agenten bei der Artikelerstellung eine Notiz mit wichtigen
+Informationen anzeigen lassen wollen, können Sie eine solche statische Notiz
+für verschiedene Artikeltypen erstellen. Beachten Sie, dass es zwei
+Einstellungen gibt: eine für die Ticketerstellung und die andere für die
+Artikelerstellung in einem bestehenden Ticket. Passen Sie die Befehle unten
+an, um sie für die gewünschten Artikeltypen zu verwenden, und ersetzen Sie
+den Text durch Ihren eigenen. Falls Sie nicht für alle Artikeltypen eine
+Notiz wünschen, lassen Sie diese Typen einfach weg.
 
-![Screenshot shows a note during article
-creation](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
+![Screenshot zeigt eine Notiz bei der
+Artikelerstellung](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
 
-#### Ticket Creation
+#### Ticketerstellung
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
@@ -617,7 +619,7 @@ Setting.set('ui_ticket_create_notes', {
    })
 ```
 
-#### New Article in Existing Tickets
+#### Neuer Artikel in bestehenden Tickets
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -630,7 +632,7 @@ Setting.set('ui_ticket_add_article_hint', {
    })
 ```
 
-#### Check Current Configuration
+#### Aktuelle Konfiguration prüfen
 
 ```ruby
 Setting.get('ui_ticket_create_notes')
@@ -640,17 +642,18 @@ Setting.get('ui_ticket_create_notes')
 Setting.get('ui_ticket_add_article_hint')
 ```
 
-#### Markup Options
+#### Auszeichnungsoptionen
 
-To apply text formatting, use the following markup:
+Um eine Textformatierung anzuwenden, verwenden Sie die folgende
+Auszeichnung:
 
-- `||italic||`
-- `|bold|`
-- `_underline_`
-- `//strikethrough//`
-- `§key§` (renders a keyboard key like [[key]])
-- `¶` (newline)
-- `[link text](/example.com)`
+- `||kursiv||`
+- `|fett|`
+- `_unterstrichen_`
+- `//durchgestrichen//`
+- `§taste§` (wird als Taste gerendert wie [[taste]])
+- `¶` (neue Zeile)
+- `[Link Text](/example.com)`
 
 ### E-Mail-Adresse des Kunden bei der Kundenauswahl anzeigen (Ticket-Erstellung)
 
