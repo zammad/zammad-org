@@ -9,7 +9,7 @@ title: Paket
 
 ## Unterstützte Betriebssysteme
 
-For package installation, the following Linux distributions are supported:
+Für Paketinstallationen werden die folgenden Linux-Distributionen unterstützt:
 <!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
 adjust it over there -->
 | Distribution         | Version              |
@@ -178,28 +178,28 @@ adjust it over there -->
 ::::tabs key:distros
 
 === Ubuntu
-Add repository key:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
   -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Ubuntu 22.04):
+Paketquelle hinzufügen (Ubuntu 22.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Ubuntu 24.04):
+Paketquelle hinzufügen (Ubuntu 24.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Ubuntu 26.04):
+Paketquelle hinzufügen (Ubuntu 26.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
@@ -208,28 +208,28 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubunt
 
 === Debian
 
-Add repository key:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
   -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Debian 11):
+Paketquelle hinzufügen (Debian 11):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 12):
+Paketquelle hinzufügen (Debian 12):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
   -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 13):
+Paketquelle hinzufügen (Debian 13):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
@@ -238,14 +238,14 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debia
 
 === OpenSUSE/SLES
 
-Add repository (OpenSUSE/SLES 15):
+Paketquelle hinzufügen (OpenSUSE/SLES 15):
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
   "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
 ```
 
-Add repository (OpenSUSE/SLES 16):
+Paketquelle hinzufügen (OpenSUSE/SLES 16):
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
@@ -253,20 +253,20 @@ sudo curl -o /etc/zypp/repos.d/zammad.repo \
 ```
 
 ===CentOS/RHEL
-Add repository key:
+Paketquellen-Schlüssel hinzufügen:
 
 ```sh
 sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-Add repository (CentOS/RHEL 9):
+Paketquelle hinzufügen (CentOS/RHEL 9):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
   -o /etc/yum.repos.d/zammad.repo
 ```
 
-Add repository (CentOS/RHEL 10):
+Paketquelle hinzufügen (CentOS/RHEL 10):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
@@ -404,8 +404,8 @@ Die verfügbaren Umgebungsvariablen für Standard- und Sentinel-Setups sind
 auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt.
 
 :::info
-CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation
-on those distros, it gets installed automatically as a dependency.
+CentOS und RHEL 10 verwenden [Valkey](https://valkey.io/) als Drop-In-Ersatz für Redis. Während der Zammad-Installation
+wird es auf diesen Distributionen automatisch als Abhängigkeit installiert.
 :::
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>

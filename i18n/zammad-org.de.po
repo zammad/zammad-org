@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-09 13:17+0200\n"
-"PO-Revision-Date: 2026-06-01 14:17+0000\n"
+"POT-Creation-Date: 2026-06-12 17:06+0200\n"
+"PO-Revision-Date: 2026-06-12 12:02+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -4300,12 +4300,18 @@ msgstr ""
 "Ticket. Der Titel des Tickets wird als Betreff der E-Mail verwendet."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:38
+#: src/en/documentation/use/basics/work-with-tickets.md:37
+#, fuzzy
+#| msgid ""
+#| "To choose another article type, click the **Channel** dropdown and choose "
+#| "a different type. Click on the **Visibility** dropdown to change the "
+#| "article's visibility. Articles with \"internal\" visibility are displayed "
+#| "with a dashed blue border."
 msgid ""
-"To choose another article type, click the **Channel** dropdown and choose a "
-"different type. Click on the **Visibility** dropdown to change the article's "
-"visibility. Articles with \"internal\" visibility are displayed with a "
-"dashed blue border."
+"To choose another article type, use the **Channel** tab switcher and choose "
+"a different type. Click on the lock toggle to change the article's "
+"visibility. Articles with internal visibility are displayed with a dashed "
+"blue border."
 msgstr ""
 "Um einen anderen Artikeltyp zu wählen, klicken Sie auf das Dropdown-Menü "
 "**Kanal** und wählen Sie einen anderen Typ. Klicken Sie auf das Dropdown-"
@@ -4314,16 +4320,20 @@ msgstr ""
 "angezeigt."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:40
+#: src/en/documentation/use/basics/work-with-tickets.md:39
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows article type and visibility selector](/screenshots/"
+#| "cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
 msgid ""
-"![Screenshot shows article type and visibility selector](/screenshots/"
+"![Screenshot shows article type selector and visibility toggle](/screenshots/"
 "cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
 msgstr ""
 "![Screenshot die Auswahl des Artikeltyps und der Sichtbarkeit](/screenshots/"
 "cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:44
+#: src/en/documentation/use/basics/work-with-tickets.md:43
 msgid ""
 "To write and edit text, make use of the powerful editor features. You can "
 "use the toolbar or keyboard shortcuts to format text and trigger special "
@@ -4339,7 +4349,7 @@ msgstr ""
 "guides/editor)."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:47
+#: src/en/documentation/use/basics/work-with-tickets.md:46
 msgid ""
 "Every new article appears at the end of the conversation, which means below "
 "the existing articles. To see detailed information of an article, just click "
@@ -4351,7 +4361,7 @@ msgstr ""
 "Metainformationen öffnet."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:51
+#: src/en/documentation/use/basics/work-with-tickets.md:50
 msgid ""
 "You might wonder now how to delete articles. The answer is you can only "
 "delete articles that you have created yourself and which are not older than "
@@ -4366,13 +4376,13 @@ msgstr ""
 "sehen, müssen Sie deren Sichtbarkeit zunächst auf \"intern\" umstellen."
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:52
+#: src/en/documentation/use/basics/work-with-tickets.md:51
 #, no-wrap
 msgid "Add an Article from Scratch"
 msgstr "Leeren Artikel hinzufügen"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:58
+#: src/en/documentation/use/basics/work-with-tickets.md:57
 msgid ""
 "Click on one of the buttons at the bottom of the ticket detail view to add "
 "an article. Depending on what you choose, the article create screen gets pre-"
@@ -4388,7 +4398,7 @@ msgstr ""
 "Kommunikation wird die E-Mail-Adresse des Kunden vorausgefüllt."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:60
+#: src/en/documentation/use/basics/work-with-tickets.md:59
 msgid ""
 "![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/"
 "documentation/use/basics.cy.js/new-article.png)"
@@ -4397,13 +4407,13 @@ msgstr ""
 "screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:61
+#: src/en/documentation/use/basics/work-with-tickets.md:60
 #, no-wrap
 msgid "Respond to an Article"
 msgstr "Auf einen Artikel antworten"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:65
+#: src/en/documentation/use/basics/work-with-tickets.md:64
 msgid ""
 "To forward or reply to an article, use one of the response buttons under an "
 "article or in the ::a:: menu. The behavior is similar to the behavior of an "
@@ -4414,7 +4424,7 @@ msgstr ""
 "ähnelt dem Verhalten eines E-Mail-Clients."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Reply**: Allows you to answer the article. The recipient is automatically "
 "pre-filled. The reply is sent via the same channel as the original message. "
@@ -4428,7 +4438,7 @@ msgstr ""
 "sind."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Reply all**: Same as above but uses all recipient addresses from the "
 "original message as recipients for your new article. Only available for "
@@ -4439,7 +4449,7 @@ msgstr ""
 "Nur für E-Mail-Kanäle verfügbar."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Forward**: This means you can forward the original message to a third "
 "party or anybody else. The original message and attachments are included in "
@@ -4450,7 +4460,7 @@ msgstr ""
 "Anhänge sind in Ihrem neuen Artikel enthalten."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:74
+#: src/en/documentation/use/basics/work-with-tickets.md:73
 msgid ""
 "![Screenshot shows article reply actions](/screenshots/cypress/documentation/"
 "use/basics.cy.js/article-reply.png)"
@@ -4459,7 +4469,7 @@ msgstr ""
 "documentation/use/basics.cy.js/article-reply.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:83
+#: src/en/documentation/use/basics/work-with-tickets.md:82
 msgid ""
 "Zammad even allows you to **quote text** from an existing article. This is "
 "especially helpful if an answer refers to different parts of the original "
@@ -4491,13 +4501,13 @@ msgstr ""
 "Text deaktivieren."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:84
+#: src/en/documentation/use/basics/work-with-tickets.md:83
 #, no-wrap
 msgid "Rename a Ticket"
 msgstr "Ein Ticket umbenennen"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:89
+#: src/en/documentation/use/basics/work-with-tickets.md:88
 msgid ""
 "To rename a ticket, simply click on the title in the header bar and start "
 "typing. This title is used as subject in email communication and shows up in "
@@ -4511,13 +4521,13 @@ msgstr ""
 "Schaltfläche auf der rechten Seite."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:90
+#: src/en/documentation/use/basics/work-with-tickets.md:89
 #, no-wrap
 msgid "Copy Ticket Number"
 msgstr "Ticket-Nummer kopieren"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:96
+#: src/en/documentation/use/basics/work-with-tickets.md:95
 msgid ""
 "To copy the ticket number including a link to the ticket (e.g. to paste it "
 "in a third party chat app), use the ::c:: icon next to the ticket title. It "
@@ -4535,7 +4545,7 @@ msgstr ""
 "Sie ein unformatiertes Einfügen per [[ctrl]] [[shift]] [[v]]."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:99
+#: src/en/documentation/use/basics/work-with-tickets.md:98
 msgid ""
 "If you scrolled own in the ticket, hover over the collapsed header bar where "
 "you can find the button on the top left side."
@@ -4544,7 +4554,7 @@ msgstr ""
 "über die eingeklappte Kopfleiste, wo Sie die Schaltfläche oben links finden."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:101
+#: src/en/documentation/use/basics/work-with-tickets.md:100
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy button]"
 "(/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-"
@@ -4555,7 +4565,7 @@ msgstr ""
 "basics.cy.js/copy-ticket-number-button.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:105
+#: src/en/documentation/use/basics/work-with-tickets.md:104
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
 "the ticket detail view and the ticket number is copied to your clipboard. To "
@@ -4569,13 +4579,13 @@ msgstr ""
 "Kollegen`."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:106
+#: src/en/documentation/use/basics/work-with-tickets.md:105
 #, no-wrap
 msgid "Simultaneous Ticket Processing"
 msgstr "Gleichzeitige Ticketbearbeitung"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:111
+#: src/en/documentation/use/basics/work-with-tickets.md:110
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
 "prevent edit conflicts and customers receiving contradictory answers, Zammad "
@@ -4589,7 +4599,7 @@ msgstr ""
 "Leiste, wo die Avatare aller Agenten angezeigt werden."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:113
+#: src/en/documentation/use/basics/work-with-tickets.md:112
 msgid ""
 "![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
 "documentation/use/advanced-features/simultaneous-work-detection.png)"
@@ -4599,7 +4609,7 @@ msgstr ""
 "detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:116
+#: src/en/documentation/use/basics/work-with-tickets.md:115
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
 "before they arise. Depending on the additional icon and if the avatar icon "
@@ -4610,12 +4620,12 @@ msgstr ""
 "der Abdunklung eines Avatars unterscheidet sich die Bedeutung:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr "Avatar: Ein anderer Agent sieht sich das Ticket an."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
 "viewing it."
@@ -4624,7 +4634,7 @@ msgstr ""
 "aber gerade nicht aktiv an."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
 "ticket."
@@ -4633,7 +4643,7 @@ msgstr ""
 "Ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:123
+#: src/en/documentation/use/basics/work-with-tickets.md:122
 msgid ""
 "There are even more icons which represent additional states of the other "
 "agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover "
@@ -4645,13 +4655,13 @@ msgstr ""
 "nicht sicher sind, was es bedeutet."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:124
+#: src/en/documentation/use/basics/work-with-tickets.md:123
 #, no-wrap
 msgid "Ticket Actions"
 msgstr "Ticket-Aktionen"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:127
+#: src/en/documentation/use/basics/work-with-tickets.md:126
 msgid ""
 "Additional actions are available in the ::a:: menu in the ticket sidebar."
 msgstr ""
@@ -4659,7 +4669,7 @@ msgstr ""
 "verfügbar."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:131
+#: src/en/documentation/use/basics/work-with-tickets.md:130
 #, no-wrap
 msgid ""
 "History\n"
@@ -4671,7 +4681,7 @@ msgstr ""
 "  was und wann getan hat.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:135
+#: src/en/documentation/use/basics/work-with-tickets.md:134
 #, no-wrap
 msgid ""
 "Merge\n"
@@ -4683,12 +4693,12 @@ msgstr ""
 "  Siehe [Tickets zusammenfassen](/de/documentation/use/advanced-features#tickets-zusammenfassen) für weitere Informationen.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:138
+#: src/en/documentation/use/basics/work-with-tickets.md:137
 msgid "Change Customer : Reassign the ticket to another customer."
 msgstr "Kunden ändern: Weisen Sie das Ticket einem anderen Kunden zu."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:143
+#: src/en/documentation/use/basics/work-with-tickets.md:142
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
 "there are many more features in Zammad which can be very useful in your "
@@ -9934,17 +9944,7 @@ msgstr "Unterstützte Betriebssysteme"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:21
-#, fuzzy, no-wrap
-#| msgid ""
-#| "For package installation, the following Linux distributions are supported:\n"
-#| "<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or\n"
-#| "adjust it over there -->\n"
-#| "| Distribution  | Version             |\n"
-#| "| ------------- | :-----------------  |\n"
-#| "| CentOS/RHEL   | 9                   |\n"
-#| "| Debian        | 11, 12 & 13         |\n"
-#| "| OpenSUSE/SLES | Leap 15.x / 15      |\n"
-#| "| Ubuntu        | 22.04, 24.04        |\n"
+#, no-wrap
 msgid ""
 "For package installation, the following Linux distributions are supported:\n"
 "<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or\n"
@@ -9959,12 +9959,12 @@ msgstr ""
 "Für Paketinstallationen werden die folgenden Linux-Distributionen unterstützt:\n"
 "<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or\n"
 "adjust it over there -->\n"
-"| Distribution  | Version             |\n"
-"| ------------- | :-----------------  |\n"
-"| CentOS/RHEL   | 9                   |\n"
-"| Debian        | 11, 12 & 13         |\n"
-"| OpenSUSE/SLES | Leap 15.x / 15      |\n"
-"| Ubuntu        | 22.04, 24.04        |\n"
+"| Distribution         | Version              |\n"
+"| -------------------- | :------------------- |\n"
+"| CentOS/RHEL          | 9, 10                |\n"
+"| Debian               | 11, 12 & 13          |\n"
+"| OpenSUSE Leap / SLES | 15 & 16              |\n"
+"| Ubuntu               | 22.04, 24.04 & 26.04 |\n"
 
 #. type: Plain text
 #: src/en/get-started/installation/package.md:25
@@ -10300,82 +10300,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/installation/package.md:174
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "Add repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Ubuntu 22.04):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Ubuntu 24.04):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "=== Debian\n"
-#| "\n"
-#| "Add repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
-#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 11):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 12):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "Add repository (Debian 13):\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
-#| "  -o /etc/apt/sources.list.d/zammad.list\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-#| "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
-#| "```\n"
-#| "\n"
-#| "===CentOS/RHEL\n"
-#| "Add repository key:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
-#| "```\n"
-#| "\n"
-#| "Add repository:\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
-#| "  -o /etc/yum.repos.d/zammad.repo\n"
-#| "```\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -10498,6 +10423,13 @@ msgstr ""
 "  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
+"Paketquelle hinzufügen (Ubuntu 26.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
 "=== Debian\n"
 "\n"
 "Paketquellen-Schlüssel hinzufügen:\n"
@@ -10530,9 +10462,18 @@ msgstr ""
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
+"Paketquelle hinzufügen (OpenSUSE/SLES 15):\n"
+"\n"
 "```sh\n"
 "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
 "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
+"```\n"
+"\n"
+"Paketquelle hinzufügen (OpenSUSE/SLES 16):\n"
+"\n"
+"```sh\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo\"\n"
 "```\n"
 "\n"
 "===CentOS/RHEL\n"
@@ -10542,10 +10483,17 @@ msgstr ""
 "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
 "```\n"
 "\n"
-"Paketquelle hinzufügen:\n"
+"Paketquelle hinzufügen (CentOS/RHEL 9):\n"
 "\n"
 "```sh\n"
 "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+"Paketquelle hinzufügen (CentOS/RHEL 10):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo\" \\\n"
 "  -o /etc/yum.repos.d/zammad.repo\n"
 "```\n"
 "\n"
@@ -10885,6 +10833,8 @@ msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation\n"
 "on those distros, it gets installed automatically as a dependency.\n"
 msgstr ""
+"CentOS und RHEL 10 verwenden [Valkey](https://valkey.io/) als Drop-In-Ersatz für Redis. Während der Zammad-Installation\n"
+"wird es auf diesen Distributionen automatisch als Abhängigkeit installiert.\n"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:393

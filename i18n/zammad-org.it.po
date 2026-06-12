@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-09 13:17+0200\n"
+"POT-Creation-Date: 2026-06-12 17:06+0200\n"
 "PO-Revision-Date: 2026-06-01 14:25+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
@@ -3382,23 +3382,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:38
+#: src/en/documentation/use/basics/work-with-tickets.md:37
 msgid ""
-"To choose another article type, click the **Channel** dropdown and choose a "
-"different type. Click on the **Visibility** dropdown to change the article's "
-"visibility. Articles with \"internal\" visibility are displayed with a "
-"dashed blue border."
+"To choose another article type, use the **Channel** tab switcher and choose "
+"a different type. Click on the lock toggle to change the article's "
+"visibility. Articles with internal visibility are displayed with a dashed "
+"blue border."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:40
+#: src/en/documentation/use/basics/work-with-tickets.md:39
 msgid ""
-"![Screenshot shows article type and visibility selector](/screenshots/"
+"![Screenshot shows article type selector and visibility toggle](/screenshots/"
 "cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:44
+#: src/en/documentation/use/basics/work-with-tickets.md:43
 msgid ""
 "To write and edit text, make use of the powerful editor features. You can "
 "use the toolbar or keyboard shortcuts to format text and trigger special "
@@ -3408,7 +3408,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:47
+#: src/en/documentation/use/basics/work-with-tickets.md:46
 msgid ""
 "Every new article appears at the end of the conversation, which means below "
 "the existing articles. To see detailed information of an article, just click "
@@ -3416,7 +3416,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:51
+#: src/en/documentation/use/basics/work-with-tickets.md:50
 msgid ""
 "You might wonder now how to delete articles. The answer is you can only "
 "delete articles that you have created yourself and which are not older than "
@@ -3426,13 +3426,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:52
+#: src/en/documentation/use/basics/work-with-tickets.md:51
 #, no-wrap
 msgid "Add an Article from Scratch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:58
+#: src/en/documentation/use/basics/work-with-tickets.md:57
 msgid ""
 "Click on one of the buttons at the bottom of the ticket detail view to add "
 "an article. Depending on what you choose, the article create screen gets pre-"
@@ -3442,20 +3442,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:60
+#: src/en/documentation/use/basics/work-with-tickets.md:59
 msgid ""
 "![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/"
 "documentation/use/basics.cy.js/new-article.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:61
+#: src/en/documentation/use/basics/work-with-tickets.md:60
 #, no-wrap
 msgid "Respond to an Article"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:65
+#: src/en/documentation/use/basics/work-with-tickets.md:64
 msgid ""
 "To forward or reply to an article, use one of the response buttons under an "
 "article or in the ::a:: menu. The behavior is similar to the behavior of an "
@@ -3463,7 +3463,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Reply**: Allows you to answer the article. The recipient is automatically "
 "pre-filled. The reply is sent via the same channel as the original message. "
@@ -3472,7 +3472,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Reply all**: Same as above but uses all recipient addresses from the "
 "original message as recipients for your new article. Only available for "
@@ -3480,7 +3480,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:72
+#: src/en/documentation/use/basics/work-with-tickets.md:71
 msgid ""
 "**Forward**: This means you can forward the original message to a third "
 "party or anybody else. The original message and attachments are included in "
@@ -3488,14 +3488,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:74
+#: src/en/documentation/use/basics/work-with-tickets.md:73
 msgid ""
 "![Screenshot shows article reply actions](/screenshots/cypress/documentation/"
 "use/basics.cy.js/article-reply.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:83
+#: src/en/documentation/use/basics/work-with-tickets.md:82
 msgid ""
 "Zammad even allows you to **quote text** from an existing article. This is "
 "especially helpful if an answer refers to different parts of the original "
@@ -3512,13 +3512,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:84
+#: src/en/documentation/use/basics/work-with-tickets.md:83
 #, no-wrap
 msgid "Rename a Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:89
+#: src/en/documentation/use/basics/work-with-tickets.md:88
 msgid ""
 "To rename a ticket, simply click on the title in the header bar and start "
 "typing. This title is used as subject in email communication and shows up in "
@@ -3527,13 +3527,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:90
+#: src/en/documentation/use/basics/work-with-tickets.md:89
 #, no-wrap
 msgid "Copy Ticket Number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:96
+#: src/en/documentation/use/basics/work-with-tickets.md:95
 msgid ""
 "To copy the ticket number including a link to the ticket (e.g. to paste it "
 "in a third party chat app), use the ::c:: icon next to the ticket title. It "
@@ -3544,14 +3544,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:99
+#: src/en/documentation/use/basics/work-with-tickets.md:98
 msgid ""
 "If you scrolled own in the ticket, hover over the collapsed header bar where "
 "you can find the button on the top left side."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:101
+#: src/en/documentation/use/basics/work-with-tickets.md:100
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy button]"
 "(/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-"
@@ -3559,7 +3559,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:105
+#: src/en/documentation/use/basics/work-with-tickets.md:104
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
 "the ticket detail view and the ticket number is copied to your clipboard. To "
@@ -3568,13 +3568,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:106
+#: src/en/documentation/use/basics/work-with-tickets.md:105
 #, no-wrap
 msgid "Simultaneous Ticket Processing"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:111
+#: src/en/documentation/use/basics/work-with-tickets.md:110
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
 "prevent edit conflicts and customers receiving contradictory answers, Zammad "
@@ -3583,14 +3583,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:113
+#: src/en/documentation/use/basics/work-with-tickets.md:112
 msgid ""
 "![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
 "documentation/use/advanced-features/simultaneous-work-detection.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:116
+#: src/en/documentation/use/basics/work-with-tickets.md:115
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
 "before they arise. Depending on the additional icon and if the avatar icon "
@@ -3598,26 +3598,26 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
 "viewing it."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:120
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
 "ticket."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:123
+#: src/en/documentation/use/basics/work-with-tickets.md:122
 msgid ""
 "There are even more icons which represent additional states of the other "
 "agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover "
@@ -3625,19 +3625,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:124
+#: src/en/documentation/use/basics/work-with-tickets.md:123
 #, no-wrap
 msgid "Ticket Actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:127
+#: src/en/documentation/use/basics/work-with-tickets.md:126
 msgid ""
 "Additional actions are available in the ::a:: menu in the ticket sidebar."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:131
+#: src/en/documentation/use/basics/work-with-tickets.md:130
 #, no-wrap
 msgid ""
 "History\n"
@@ -3646,7 +3646,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:135
+#: src/en/documentation/use/basics/work-with-tickets.md:134
 #, no-wrap
 msgid ""
 "Merge\n"
@@ -3655,12 +3655,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:138
+#: src/en/documentation/use/basics/work-with-tickets.md:137
 msgid "Change Customer : Reassign the ticket to another customer."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:143
+#: src/en/documentation/use/basics/work-with-tickets.md:142
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
 "there are many more features in Zammad which can be very useful in your "
