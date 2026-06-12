@@ -30,13 +30,7 @@ describe('ticket sidebar', () => {
     cy.wait(2000)
     cy.get('button').contains('Add internal note').click()
     cy.wait(1000)
-    cy.get('[id="article-reply-form-title"]').clip({ padding: 5 }).then((TopClip) => {
-      cy.get('[name="internal"]').clip({ padding: 5 }).then((BottomClip) => {
-        cy.mergeClips(TopClip, BottomClip).then((clip) => {
-          cy.screenshot('article-type-visibility', { clip })
-        })
-      })
-    })
+    cy.get('[id="ticketArticleReplyForm"]').screenshot('article-type-visibility')
     cy.get('button').contains('Discard your unsaved changes').click()
     cy.get('button').contains('Discard changes').click()
   })

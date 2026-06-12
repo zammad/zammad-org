@@ -44,13 +44,13 @@ out to learn more.
 - **Email**: Send an email to anyone about the ticket. The title of the
   ticket is used for the subject of the email.
 
-To choose another article type, click the **Channel** dropdown and choose a
-different type. Click on the **Visibility** dropdown to change the article's
-visibility. Articles with "internal" visibility are displayed with a dashed
+To choose another article type, use the **Channel** tab switcher and choose
+a different type. Click on the lock toggle to change the article's
+visibility. Articles with internal visibility are displayed with a dashed
 blue border.
 
-![Screenshot shows article type and visibility
-selector](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Screenshot shows article type selector and visibility
+toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
 To write and edit text, make use of the powerful editor features. You can
 use the toolbar or keyboard shortcuts to format text and trigger special
