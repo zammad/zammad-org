@@ -8,5 +8,5 @@
     "build": "cypress run",
     "build:ci": "cypress run --config '{\"e2e\":{\"screenshotsFolder\":\"dist/cypress\"}}'"
   },
-  "packageManager": "pnpm@11.6.0"
+  "packageManager": "pnpm@11.8.0"
 }
