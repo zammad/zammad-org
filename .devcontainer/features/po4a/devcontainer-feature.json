@@ -6,7 +6,7 @@
   "dependsOn": {
     "ghcr.io/devcontainers-extra/features/apt-get-packages": {
       "packages": "libmodule-build-perl libosp5 libpod-parser-perl libsgmls-perl libsyntax-keyword-try-perl libtext-wrapi18n-perl libunicode-linebreak-perl libxs-parse-keyword-perl libyaml-tiny-perl libterm-readkey-perl libxml2-utils opensp sgml-base xsltproc"
-    },
+    }
   },
   "privileged": true
 }

@@ -1,6 +1,8 @@
 describe('search screenshots', () => {
   it('search', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/1')
     cy.wait(1000) // transition
     cy.get('[aria-label="Search…"]').click().type('hannah')
@@ -15,7 +17,9 @@ describe('search screenshots', () => {
   })
 
   it('detailed search', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/search/supp?entity=Ticket')
     cy.get('[id="group_id-header"]').click()
     cy.wait(300) //transition

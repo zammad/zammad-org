@@ -1,7 +1,9 @@
 describe('2FA usage guide', () => {
   it('2FA methods profile setup', () => {
     cy.visit('/desktop/login')
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/personal-setting/two-factor-auth')
     cy.get('main').should('exist')
     cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
@@ -16,7 +18,9 @@ describe('2FA usage guide', () => {
   // NB: Will work only once per stack, because the recovery codes are one-time usage only.
   it('2FA methods profile overview', () => {
     cy.visit('/desktop/login')
-    cy.loginDesktopView(Cypress.env('AGENT2_LOGIN'), Cypress.env('AGENT2_PASS'), '7f80b91f6bcd7b60')
+    cy.env(['AGENT2_LOGIN', 'AGENT2_PASS']).then(({ AGENT2_LOGIN, AGENT2_PASS }) => {
+      cy.loginDesktopView(AGENT2_LOGIN, AGENT2_PASS, '7f80b91f6bcd7b60')
+    })
     cy.visit('/desktop/personal-setting/two-factor-auth')
     cy.get('main').should('exist')
     cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {

@@ -1,7 +1,9 @@
 describe('editor', () => {
   it('editor overview', () => {
     cy.visit('/desktop/login')
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/5')
     cy.get('main').should('exist')
     cy.wait(1000)

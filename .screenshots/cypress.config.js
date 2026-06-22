@@ -3,6 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl: process.env.CYPRESS_BASE_URL || 'http://localhost:8080',
+    allowCypressEnv: false,
     env: {
       ADMIN_LOGIN: 'lauren@fastlane.inc',
       ADMIN_PASS: 'lauren4711',

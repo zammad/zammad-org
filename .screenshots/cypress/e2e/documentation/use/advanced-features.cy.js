@@ -1,6 +1,8 @@
 describe('usage advanced features', () => {
   it('ticket article mention', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('button').contains('note').click()
@@ -14,7 +16,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket article kba', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('button').contains('note').click()
@@ -28,7 +32,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket article text template', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('button').contains('note').click()
@@ -42,7 +48,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket subscribe', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('#ticket-attributes-header').click()
@@ -54,13 +62,15 @@ describe('usage advanced features', () => {
   })
 
   it('ticket macro', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(3000) // loading
     cy.get('[aria-label="Drafts & macros"]').click()
     cy.wait(500) //transition
-    cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
-      cy.get('[aria-label="Drafts & macros"]').clip({ padding: 5 }).then((ButtonClip) => {
+    cy.get('div.popover.fixed').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
+      cy.get('[aria-label="Drafts & macros"]').should('be.visible').clip({ padding: 5 }).then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
           cy.screenshot('ticket-macro', { clip })
         })
@@ -69,13 +79,15 @@ describe('usage advanced features', () => {
   })
 
   it('ticket behavior update', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(3000) // loading
     cy.get('button').contains('Stay on tab').click()
     cy.wait(500) //transition
-    cy.get('div.popover.fixed').clip({ padding: 5 }).then((PopoverClip) => {
-      cy.get('button').contains('Stay on tab').parent().clip({ padding: 5 }).then((ButtonClip) => {
+    cy.get('div.popover.fixed').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
+      cy.get('button').contains('Stay on tab').parent().should('be.visible').clip({ padding: 5 }).then((ButtonClip) => {
         cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
           cy.screenshot('ticket-behavior-update', { clip })
         })
@@ -84,7 +96,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket tags', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/6')
     cy.wait(3000) // transition
     cy.get('[aria-label="Remove this tag"').first().invoke('show') //should show a delete button but doesn't work; also not for "trigger.('mouseover')"
@@ -92,7 +106,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket checklist', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/4')
     cy.wait(2000) // transition
     cy.get('[aria-label="Checklist"').click()
@@ -108,7 +124,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket merge', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/5')
     cy.wait(1000) // transition
     cy.get('#content-sidebar').find('[id^=action-menu-]').click()
@@ -116,8 +134,8 @@ describe('usage advanced features', () => {
     cy.get('button').contains('Merge').click()
     cy.wait(3000) // waiting on ticket to show up in side panel
     //cy.get('[id=flyout-ticket-merge]').screenshot('ticket-merge') //alternative with complete sidebar
-    cy.get('[id="flyout-ticket-merge"]').find('header').clip().then((TopClip) => {
-      cy.get('table').clip().then((BottomClip) => {
+    cy.get('[id="flyout-ticket-merge"]').find('header').should('be.visible').clip().then((TopClip) => {
+      cy.get('table').should('be.visible').clip().then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('ticket-merge', { clip })
         })
@@ -126,17 +144,27 @@ describe('usage advanced features', () => {
   })
 
   it('ticket split', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/5')
     cy.wait(2000) // transition
     cy.get('main').find('[id^=action-menu-]').click()
     cy.wait(300) // transition
     // cy.get('#icon-split').trigger('mouseover') doesn't work
-    cy.get('[id^="popover-"]').screenshot('ticket-split')
+    cy.get('[id^="popover-"]').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
+      cy.get('main').find('[id^=action-menu-]').should('be.visible').clip({ padding: 5 }).then((ButtonClip) => {
+        cy.mergeClips(PopoverClip, ButtonClip).then((clip) => {
+          cy.screenshot('ticket-split', { clip })
+        })
+      })
+    })
   })
 
   it('time accounting', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('button').contains('note').click()
@@ -160,17 +188,18 @@ describe('usage advanced features', () => {
   })
 
   it('bulk action overview side panel', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/view/open-group')
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.wait(300) // transition
     cy.get('button').contains('Bulk actions').click()
     cy.wait(1000) // transition
-    //cy.get('[aria-label="Resize side panel"]').trigger('mousedown').trigger('mousemove', { clientX: 100, clientY: 0 } ).trigger('mouseup')
-    //tried to make the flyout smaller to decrease screenshot size
-    cy.get('[name="group_id"]').click({ force: true }).type('Infrastructure{downArrow}{enter}')
-    cy.get('[name="owner_id"]').click({ force: true }).type('Jackson{downArrow}{enter}')
+    cy.get('[aria-label="Resize side panel"]').focus().type('{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}{rightArrow}').wait(300) // make the flyout smaller to decrease screenshot size
+    cy.get('label').contains('Group').click({ force: true }).wait(300).type('Infrastructure').wait(300).type('{downArrow}{enter}').wait(300)
+    cy.get('label').contains('Owner').click({ force: true }).wait(300).type('Jackson').wait(300).type('{downArrow}{enter}').wait(300)
     cy.get('label').contains('Note').click()
     cy.get('[name="body"]').click().type('Hi Jackson, can you please take care of these tickets? Thanks!')
     cy.get('[id="flyout-tickets-bulk-edit"]').find('header').clip().then((TopClip) => {
@@ -183,44 +212,56 @@ describe('usage advanced features', () => {
   })
 
   it('bulk action overview drag and drop ', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/view/open-group')
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.get('[aria-label="Select this entry"]').first().click().wait(300)
-    cy.get('[href="/desktop/tickets/8"]').trigger('pointerdown', { button: 0, buttons: 1, isPrimary: true, force: true })
-    cy.wait(1000)
-    // RSC: didn't get the "Assign tickets" overlay to show up, so decided to stick with the initial overlay screenshot for now
-    cy.document().trigger('pointermove', { clientX: 0, clientY: 0, buttons: 1, isPrimary: true })
-    cy.document().trigger('pointermove', { clientX: 960, clientY: 500, buttons: 1, isPrimary: true })
-    cy.wait(500)
+    cy.get('[href="/desktop/tickets/8"]').trigger('mousedown', { button: 0, buttons: 1, isPrimary: true, force: true })
+    cy.wait(300)
+    cy.document().trigger('mousemove', { clientX: 0, clientY: 0, buttons: 1, isPrimary: true })
+    cy.document().trigger('mousemove', { clientX: 960, clientY: 750, buttons: 1, isPrimary: true })
+    cy.wait(2000)
     cy.screenshot('bulk-action-drag-and-drop')
   })
 
   it('user popover', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     // changed screenshot to be created from article bubble avatar because it broke when done in ticket header. Can be revisited later.
     cy.get('[aria-label="Avatar (Evelyn Smith) (VIP)"]').last().trigger('mouseenter').wait(1000)
-    cy.get('.popover*').screenshot('user-detail-panel', {padding:[ 57, 0, 5, 15 ]})
+    cy.get('.popover*').should('be.visible').screenshot('user-detail-panel', {padding:[ 57, 0, 5, 15 ]})
   })
 
   it('gitlab sidebar tab', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/6')
     cy.wait(3000) // loading
-    cy.get('[aria-label="GitLab"]').click().wait(500)
-    cy.get('div.p-3:nth-child(1)').clip({ padding: 0 }).then((TopClip) => {
-      cy.get('[aria-label="Checklist"]').clip({ padding: 5 }).then((BottomClip) => {
-        cy.mergeClips(TopClip, BottomClip).then((clip) => {
-          cy.screenshot('gitlab-content-sidebar', { clip })
+    cy.get('[aria-label="GitLab"]').click()
+    cy.wait(2000)
+    cy.get('h2').contains('GitLab').should('be.visible').clip({ padding: 5 }).then((TopClip) => {
+      cy.contains('Link issue').should('be.visible').clip({ padding: 5 }).then((ButtonClip) => {
+        cy.mergeClips(TopClip, ButtonClip).then((mergedClip) => {
+          cy.get('[aria-label="Checklist"]').should('be.visible').clip({ padding: 5 }).then((ChecklistClip) => {
+            cy.mergeClips(mergedClip, ChecklistClip).then((clip) => {
+              cy.screenshot('gitlab-content-sidebar', { clip })
+            })
+          })
         })
       })
     })
   })
 
   it('user detail page', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/users/10')
     cy.wait(3000) // loading
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
@@ -236,7 +277,9 @@ describe('usage advanced features', () => {
   })
 
   it('organization detail page', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/organizations/2')
     cy.wait(3000) // loading
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
@@ -251,8 +294,10 @@ describe('usage advanced features', () => {
     })
   })
 
-    it('escalation-panel', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+  it('escalation-panel', () => {
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     cy.get('[aria-label="Show ticket escalation information"]').trigger('mouseenter').wait(1000)
@@ -267,15 +312,20 @@ describe('usage advanced features', () => {
   })
 
   it('duplicate detection', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
-    cy.visit('/desktop/tickets/create')
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
+    // FIXME: The autocomplete field handling below is unstable when running in conjunction with other test examples.
+    //   While the search box does get expanded, the typing sometimes results in no meaningful input.
+    //   Therefore, for the time being, we pre-populate the customer selection via URL query param.
+    cy.visit('/desktop/tickets/create?customer_id=16') // Petra Parker (ID=16)
     cy.get('main').should('exist')
     cy.wait(2000)
-    cy.get('[name="customer_id"]').click().type('Petra Parker').wait(1000).type('{downArrow}{enter}')
-    cy.wait(500) // to ensure warning is present
-    // unusual padding because otherwise it looked off due to being not centered
-    cy.get('h1').contains('New ticket').clip({ padding: 0 }).then((TopClip) => {
-      cy.get('[aria-label="Petra Parker"]').clip({ padding: 24 }).then((BottomClip) => {
+    // cy.get('label').contains('Customer').click().wait(500) // expand
+    // cy.focused().type('Petra Parker').wait(1000).type('{downArrow}{enter}') // search and select
+    // cy.wait(2000) // to ensure warning is present
+    cy.get('h1').contains('New ticket').clip({ padding: 12 }).then((TopClip) => {
+      cy.get('label').contains('Customer').parentsUntil('.formkit-outer').clip({ padding: 12 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('duplicate-detection', { clip })
         })
@@ -283,19 +333,20 @@ describe('usage advanced features', () => {
     })
   })
 
-    it('text highlighting', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+  it('text highlighting', () => {
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/4')
     cy.wait(3000) // loading
     // tried different approaches to actually highlight text (incl. adding real mouse events) but nothing worked.
     cy.get('[aria-label="Highlight options"]').last().click()
-    cy.get('[aria-label="Highlight options"]').last().clip({ padding: 5 }).then((TopClip) => {
-      cy.get('[data-id="highlight-menu-popover"]').clip({ padding: 5 }).then((BottomClip) => {
+    cy.get('[aria-label="Highlight options"]').last().should('be.visible').clip({ padding: 5 }).then((TopClip) => {
+      cy.get('[data-id="highlight-menu-popover"]').should('be.visible').clip({ padding: 5 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('text-highlighting', { clip })
         })
       })
     })
   })
-
 })

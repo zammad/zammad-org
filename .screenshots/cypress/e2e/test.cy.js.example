@@ -18,7 +18,9 @@ describe('testing screenshots', () => {
   })
 
   it('highlight link issue button', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
+    })
     cy.visit('/desktop/tickets/create')
     cy.wait(2000)
     cy.get('button').contains('Link Issue').parent('button').highlight()

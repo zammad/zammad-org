@@ -1,6 +1,8 @@
 describe('AI screenshots', () => {
   it('AI ticket summary', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.intercept('POST', '/graphql', (req) => {
       if (req.body.operationName === 'ticketAIAssistanceSummarize') {
         req.reply({
@@ -32,13 +34,21 @@ describe('AI screenshots', () => {
   })
 
   it('AI writing assistant tools', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     cy.get('button').contains('Reply').click().wait(500)
-    cy.get('[role="textbox"]').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
-    cy.get('[aria-label="AI writing assistant tools"]').click().wait(200)
-    cy.get('[aria-label="Discard unsaved reply"]').parent().parent().screenshot('ai-writing-assistant-tools')
+    cy.get('[role="textbox"]').should('be.visible').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
+    cy.get('[aria-label="AI writing assistant tools"]').click().wait(1000)
+    cy.get('div.editor-action-popover').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
+      cy.get('[id="ticketArticleReplyForm"]').should('be.visible').clip({ padding: 5 }).then((EditorClip) => {
+        cy.mergeClips(PopoverClip, EditorClip).then((clip) => {
+          cy.screenshot('ai-writing-assistant-tools', { clip })
+        })
+      })
+    })
     cy.get('button').contains('Discard your unsaved changes').click() //removing draft to clean up
     cy.get('button').contains('Discard changes').click() //removing draft to clean up
   })

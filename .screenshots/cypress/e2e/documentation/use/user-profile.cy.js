@@ -1,6 +1,8 @@
 describe('user profile screenshot', () => {
   it('full page screenshot', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/personal-setting/appearance')
     cy.get('main').should('exist')
     cy.wait(1000)
@@ -8,14 +10,28 @@ describe('user profile screenshot', () => {
   })
 
   it('avatar menu', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
-    cy.get('button#user-menu').click()
-    // Using fixed dimensions because default clipping of avatar menu and bottom bar (with create ticket button) did not work
-    cy.get('[id="primary-sidebar"]').wait(500).screenshot('avatar-menu', { clip: { x: 0, y: 790, width: 306, height: 290 } })
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
     })
+    cy.get('button#user-menu').click()
+    cy.wait(500)
+    cy.get('[id="user-menu-popover"]').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
+      cy.get('button#user-menu').should('be.visible').clip({ padding: 5 }).then((AvatarClip) => {
+        cy.mergeClips(PopoverClip, AvatarClip).then((mergedClip) => {
+          cy.get('[aria-label="New ticket"]').should('be.visible').clip({ padding: 5 }).then((NewTicketClip) => {
+            cy.mergeClips(mergedClip, NewTicketClip).then((clip) => {
+              cy.screenshot('avatar-menu', { clip })
+            })
+          })
+        })
+      })
+    })
+  })
 
   it('token creation', () => {
-    cy.loginDesktopView(Cypress.env('ADMIN_LOGIN'), Cypress.env('ADMIN_PASS'))
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
+    })
     cy.visit('/desktop/personal-setting/token-access')
     cy.get('main').should('exist')
     cy.wait(1000)
@@ -30,8 +46,8 @@ describe('user profile screenshot', () => {
       cy.get('button').contains('Copy token').clip({ padding: 25 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
           cy.screenshot('token-dialog', { clip })
+        })
       })
     })
   })
-})
 })

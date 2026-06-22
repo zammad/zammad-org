@@ -1,6 +1,8 @@
 describe('testing element screenshots', () => {
   it('ticket article sender tabs', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
+    })
     cy.intercept('/graphql').as('gql')
     cy.visit('/desktop/tickets/create')
     cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')
@@ -9,7 +11,9 @@ describe('testing element screenshots', () => {
   })
 
   it('treeselect field with highlighted option', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
+    })
     cy.intercept('/graphql').as('gql')
     cy.visit('/desktop/tickets/create')
     cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')
@@ -28,7 +32,9 @@ describe('testing element screenshots', () => {
   })
 
   it('highlight create button', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
+    })
     cy.intercept('/graphql').as('gql')
     cy.visit('/desktop/tickets/create')
     cy.waitForGqlResponse('@gql', 'autocompleteSearchTag')

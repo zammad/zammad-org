@@ -1,6 +1,8 @@
 describe('testing dialog screenshots', () => {
   it('discarding unsaved article changes', () => {
-    cy.loginDesktopView(Cypress.env('AGENT1_LOGIN'), Cypress.env('AGENT1_PASS'))
+    cy.env(['AGENT1_LOGIN', 'AGENT1_PASS']).then(({ AGENT1_LOGIN, AGENT1_PASS }) => {
+      cy.loginDesktopView(AGENT1_LOGIN, AGENT1_PASS)
+    })
     cy.intercept('/graphql').as('gql')
     cy.visit('/desktop/tickets/2')
     cy.waitForGqlResponse('@gql', 'macros')

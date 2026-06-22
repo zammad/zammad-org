@@ -14,8 +14,13 @@
     "ghcr.io/devcontainers-extra/features/apt-get-packages": {
       "packages": "libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb" // cypress dependencies
     },
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "noPassword"
+    },
     "./features/po4a": {}
   },
+
+  "forwardPorts": [5901, 6080],
 
   // Controls what should happen when a port is auto-forwarded once you’ve connected to the container.
   "portsAttributes": {
@@ -24,6 +29,16 @@
     },
     "5173": {
       "label": "VitePress Dev Server"
+    },
+    "5891": {
+      "label": "Desktop VNC Server"
+    },
+    "6800": {
+      "label": "Desktop noVNC Client"
+    },
+    "8080": {
+      "label": "Zammad Screenshots Stack Web Server",
+      "onAutoForward": "ignore"
     }
   },
 
