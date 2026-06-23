@@ -9,22 +9,26 @@ import { icon } from '@mdit/plugin-icon'
 import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
+import configIT from './config.it.yaml.json'
 import searchEN from './search.en.yaml.json'
 import searchDE from './search.de.yaml.json'
 import searchSR from './search.sr.yaml.json'
+import searchIT from './search.it.yaml.json'
 
-const supportedLocales = ['en', 'de', 'sr']
+const supportedLocales = ['en', 'de', 'sr', 'it']
 
 const configByLocale = {
   en: configEN,
   de: configDE,
   sr: configSR,
+  it: configIT,
 }
 
 const searchConfigByLocale = {
   en: searchEN,
   de: searchDE,
   sr: searchSR,
+  it: searchIT,
 }
 
 const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
@@ -129,6 +133,7 @@ export default defineConfig(
       root: { label: 'English', link: '/en/', ...configEN },
       de: { label: 'Deutsch', ...configDE },
       sr: { label: 'српски', ...configSR },
+      it: { label: 'Italiano', ...configIT },
     },
     vite: {
       resolve: {
