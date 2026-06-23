@@ -1,9 +1,10 @@
 ---
 order: 1
-title: Start
+title: Inizia
 ---
 
-# Welcome
+# Benvenuto
 
-This part of the documentation is currently empty. It will be created step
-by step and simultaneously to the development of Zammad's new admin UI.
+Questa parte della documentazione è attualmente vuota. Verrà creata passo
+dopo passo, parallelamente allo sviluppo della nuova interfaccia di
+amministrazione di Zammad.

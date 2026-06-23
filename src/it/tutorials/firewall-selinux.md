@@ -1,18 +1,18 @@
 ---
 order: 12
-title: 'Firewall & SELinux'
+title: 'Firewall e SELinux'
 ---
 
-# Firewall & SELinux
+# Firewall e SELinux
 
-This is just a collection of snippets which might be useful for you. Feel
-free to skip parts and/or adapt it to your needs.
+Questa è solo una raccolta di snippet che potrebbero esserti utili. Salta
+pure le parti.
 
 ## SELinux
 
 ::: info
-The following commands only work on Ubuntu, Debian and CentOS. If you use a
-different distribution, please have a look at their documentation.
+I seguenti comandi funzionano solo su Ubuntu, Debian e CentOS. Se usi una
+distribuzione diversa.
 :::
 
 ```sh
@@ -37,13 +37,11 @@ sudo chmod -R a+r /opt/zammad/public/
 
 ## Firewall
 
-Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you
-need. Below you can find a few examples for different distributions. If you
-are using a different distribution, please have a look at their
-documentation.
+Assicurati di aprire le porte `80` e `443` (TCP e UDP) oltre alle porte di
+cui hai bisogno.
 
-Please note that the examples below only cover the distribution’s default
-firewall. It may not cover your case.
+Tieni presente che gli esempi seguenti coprono solo il firewall predefinito
+della distribuzione.
 
 ::::tabs
 
@@ -58,69 +56,14 @@ sudo ufw allow 443
 ```
 
 ```sh
-sudo ufw reload
-```
-
-===Debian
+sudo ufw relo
 
 ::: info
-We’re covering `nftables` in this part - `iptables` is discouraged
-starting from Debian 10 (Buster). Our example uses the `input` chain, yours
-may be a different one!
+Trattiamo `nftables` in questa parte - `iptables` è sconsigliato
+a partire da Debian 10.
 :::
 
-Add the following lines to `/etc/nftables.conf` or your specific rule file.
-Ensure to add these lines to your input-chain.
-
-```sh
-sudo tcp dport { http, https } accept
-```
-
-```sh
-sudo udp dport { http, https } accept
-```
-
-The result can look like the following. Keep in mind that your environment
-could require different / more rules.
-
-```sh
-table inet filter {
-   chain input {
-      type filter hook input priority 0; policy drop;
-      ct state established,related accept
-      tcp dport ssh log accept
-      tcp dport { http, https } accept
-      udp dport { http, https } accept
-   }
-
-   chain forward {
-      type filter hook forward priority 0; policy accept;
-   }
-
-   chain output {
-      type filter hook output priority 0; policy accept;
-   }
-}
-```
-
-To load the rules, run:
-
-```sh
-sudo systemctl reload nftables
-```
-
-===CenOS, RHEL, OpenSUSE, SLES
-
-```sh
-sudo firewall-cmd --zone=public --add-service=http --permanent
-```
-
-```sh
-sudo firewall-cmd --zone=public --add-service=https --permanent
-```
-
-```sh
-sudo firewall-cmd --reload
-```
+Aggiungi le seguenti righe a `/etc/nftables.conf` o al tuo specifico file di regole.
+Assicurati di aggiungere.
 
 ::::

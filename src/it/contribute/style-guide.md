@@ -6,215 +6,221 @@ features:
     link: https://zammad.com
     linkText: 'This is a link'
     target: _blank
-    title: 'Simple and minimal, always'
+    title: 'Semplice e minimale, sempre'
   - 
     details: 'Lorem ipsum...'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
-    title: 'Another cool feature'
+    title: "Un'altra funzionalità interessante"
   - 
     details: 'Lorem ipsum...'
     icon:
       dark: /assets/logo-flat-dark.svg
       light: /assets/logo-flat-light.svg
     link: https://zammad.com
-    title: 'Another cool feature'
+    title: "Un'altra funzionalità interessante"
 order: 2
 ---
 
-# Style and Content Guide
+# Guida allo stile e ai contenuti
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation, as well as formatting and style guidelines to
-ensure clarity and readability.
+Questa guida fornisce una panoramica dei contenuti da includere nella
+documentazione di Zammad, nonché le linee guida di formattazione e stile per
+garantire chiarezza e leggibilità.
 
-The first sections are about general information and rules. A [section with
-examples](#examples) follows at the end.
+Le prime sezioni riguardano informazioni e regole generali. Segue alla fine
+una [sezione con esempi](#examples).
 
-If you have questions, feel free to ask in our community. If you want to
-contribute, you may also want to have a look at our [contribution
-page](contribute) or [ask in an
-issue](https://github.com/zammad/zammad-org/issues){target=_blank} to get
-started.
+Se hai domande, chiedi pure nella nostra community. Se vuoi contribuire, dai
+un'occhiata alla nostra [pagina dei contributi](contribute) o [apri una
+issue](https://github.com/zammad/zammad-org/issues){target=_blank} per
+iniziare.
 
-## Audience Assumptions
+## Presupposti sul pubblico
 
-The documentation assumes that **users** have a basic understanding of how
-to use web browsers and are familiar with common software design
-concepts. This means, for example, that features are described in detail,
-but not to the level of explaining how to open a dropdown menu.
+La documentazione presuppone che gli **utenti** abbiano una comprensione di
+base dell'uso dei browser web e familiarità con i concetti comuni del design
+del software. Ciò significa, ad esempio, che le funzionalità sono descritte
+in dettaglio, ma non fino al punto di spiegare come aprire un menu a
+tendina.
 
-The **Zammad administrator** should also have a basic technical
-understanding and be familiar with the workflows and communication processes
-within their company.
+Anche l'**amministratore di Zammad** dovrebbe avere una comprensione tecnica
+di base e familiarità con i flussi di lavoro e i processi di comunicazione
+della propria azienda.
 
-For self-hosted instances, **system administrators** should also be familiar
-with Linux system administration basics.  Access to the host system
-(e.g. via SSH) and administrative permissions are taken for granted.
+Per le istanze self-hosted, gli **amministratori di sistema** dovrebbero
+avere familiarità con le basi dell'amministrazione di sistemi
+Linux. L'accesso al sistema host (ad esempio tramite SSH) e i permessi
+amministrativi sono dati per scontati.
 
-## Content
+## Contenuto
 
-The documentation aims to include information about:
+La documentazione mira a includere informazioni su:
 
-- How to use Zammad
-- How to manage Zammad as an admin (e.g. setting it up after installation,
-  adjust settings, configure features)
-- Different ways how to install Zammad
-- Additional guides if (host) system configuration and/or configuration of
-  third party systems is needed.
+- Come usare Zammad
+- Come gestire Zammad come amministratore (ad esempio configurarlo dopo
+  l'installazione, regolare le impostazioni, configurare le funzionalità)
+- I diversi modi per installare Zammad
+- Guide aggiuntive quando è necessaria la configurazione del sistema (host)
+  e/o di sistemi di terze parti.
 
-Regarding the **level of detail**, the [audience
-assumptions](#audience-assumptions) should be considered. Because one of the
-goals of Zammad is to be intuitive and user friendly, there is no need to
-describe each click in detail. However, important steps should be
-included. The readers should achieve their goals as quickly and easily as
-possible without having to read a lot.
+Per quanto riguarda il **livello di dettaglio**, vanno considerate le
+[presupposizioni sul pubblico](#audience-assumptions). Poiché uno degli
+obiettivi di Zammad è essere intuitivo e user-friendly, non è necessario
+descrivere ogni clic in dettaglio. Tuttavia, i passaggi importanti devono
+essere inclusi.
 
-Due to the fact that a documentation can't cover everything (otherwise it
-would be on a code-like detail level), the relevance has to be considered
-too. If parts with a common use case are missing, it should be intended to
-include them in.
+Dato che una documentazione non può coprire tutto, va considerata anche la
+rilevanza. Se mancano parti con un caso d'uso comune, è opportuno
+includerle.
 
-## Style and Rules
+## Stile e regole
 
-The next sections cover general things to consider writing the
-documentation. After these you can find a section with some
-[examples](#examples) about how to format and structure the content.
+Le sezioni seguenti trattano gli aspetti generali da considerare nella
+scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
+[esempi](#examples) su come formattare e strutturare il contenuto.
 
-### Basics
+### Nozioni di base
 
-- The documentation is written in the Markdown markup language. The source
-  files have the extension `.md`.
-- The system uses [Vitepress](https://vitepress.dev/){target=_blank} to
-  build the website.
-- The language of the source files is American English.
-- The translation of the documentation is done via Weblate, see [translation
-  section](contribute#translation) in the contribute page for more details.
+- La documentazione è scritta nel linguaggio di markup Markdown. I file
+  sorgente hanno l'estensione `.md`.
+- Il sistema usa [Vitepress](https://vitepress.dev/){target=_blank} per
+  costruire il sito web.
+- La lingua dei file sorgente è l'inglese americano.
+- La traduzione della documentazione avviene tramite Weblate, vedi la
+  [sezione traduzione](contribute#translation) nella pagina dei contributi
+  per ulteriori dettagli.
 
-### Style
+### Stile
 
-- Use short and clear sentences and prioritize information over complexity.
-- Page title and headings: capitalize the first letter of all words except
-  minor words (see [title
-  case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
-- Use breadcrumb separation for paths and locations with `>` as separator
-  and format path in italics, e.g.  _Settings > Channels > Chat_.
-- Use code highlighting to emphasize programming snippets.
-- Use [info, tip, warning and danger boxes](#custom-boxes) when needed.
-- Use a [detail box](#custom-boxes) when content may not be relevant for all
-  the readers or may break the reading flow otherwise.
-- If available, use icons for important UI buttons like ::+:: and ::x:: (see
-  [examples](#text-and-ui) below).
-- Use key markup like [[ctrl]] and [[x]] to highlight a key press (see
-  [examples](#text-and-ui) below).
-- Include screenshots when necessary. The preferred way of adding
-  screenshots of Zammad is by creating them automatically [using
+- Usa frasi brevi e chiare e dai priorità alle informazioni rispetto alla
+  complessità.
+- Titolo e intestazioni di pagina: la prima lettera di tutte le parole, ad
+  eccezione di quelle di minore importanza, deve essere maiuscola (vedi
+  [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+- Usa la separazione breadcrumb per percorsi e posizioni con `>` come
+  separatore e formatta il percorso in corsivo, ad esempio _Impostazioni >
+  Canali > Chat_.
+- Usa l'evidenziazione del codice per enfatizzare i frammenti di
+  programmazione.
+- Usa i [riquadri info, suggerimento, avviso e pericolo](#custom-boxes)
+  quando necessario.
+- Usa un [riquadro dettagli](#custom-boxes) quando il contenuto potrebbe non
+  essere rilevante per tutti i lettori o potrebbe interrompere il flusso di
+  lettura.
+- Se disponibili, usa le icone per i pulsanti importanti dell'interfaccia
+  utente come ::+:: e ::x:: (vedi gli [esempi](#text-and-ui) di seguito).
+- Usa il markup per i tasti come [[ctrl]] e [[x]] per evidenziare la
+  pressione di un tasto (vedi gli [esempi](#text-and-ui) di seguito).
+- Includere screenshot quando necessario. Il metodo preferito per aggiungere
+  screenshot di Zammad è crearli automaticamente [utilizzando
   Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
-  This supports the maintainability of the documentation because the
-  screenshots are re-generated each time the build pipeline runs. Please
-  note that the usage of Cypress is not part of this documentation.
-- Provide step-by-step instructions with clear explanations.
-- Use examples or scenarios to illustrate concepts.
-- Include relevant images or diagrams when necessary.
-- Spell abbreviations full the first time they are used or include them in
-  the glossary and link to them. Broadly used and common abbreviations may
-  be excluded from this rule.
-- If in doubt, align it to the existing documentation.
+  Questo supporta la manutenibilità della documentazione poiché gli
+  screenshot vengono rigenerati ogni volta che viene eseguita la pipeline di
+  build. Si prega di notare che l'utilizzo di Cypress non fa parte di questa
+  documentazione.
+- Fornisci istruzioni passo passo con spiegazioni chiare.
+- Usa esempi o scenari per illustrare i concetti.
+- Includi immagini o diagrammi pertinenti quando necessario.
+- Scrivi le abbreviazioni per esteso la prima volta che vengono usate,
+  oppure includile nel glossario con un link.
+- In caso di dubbio, allineati alla documentazione esistente.
 
-### Conventions
+### Convenzioni
 
-The documentation stack includes automated checks (linting) to ensure
-compliance with the style guide and common rules for Markdown files. To
-check if your changes are compliant, run `pnpm lint` to perform the
-check. Some of the recognized problems can be even fixed automatically by
-running `pnpm lint:fix`. Make sure to run the check before committing your
-changes. Otherwise, the build of the documentation will fail.
+Lo stack della documentazione include controlli automatici (linting) per
+garantire la conformità alla guida allo stile e alle regole comuni per i
+file Markdown. Per verificare se le tue modifiche sono conformi, esegui
+`pnpm lint`. Alcuni dei problemi rilevati possono essere corretti
+automaticamente eseguendo `pnpm lint:fix`.
 
-The used linting has some built in rules which you can find in [the official
-repository](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
-Some important rules and customized ones are mentioned below.
+Il sistema di linting utilizzato ha alcune regole integrate che puoi trovare
+nel [repository
+ufficiale](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases){target=_blank}.
+Alcune regole importanti e personalizzate sono menzionate di seguito.
 
-- Line length of 120 characters in the source file may not be exceeded for
-  standard text. Make sure to use a line break before reaching this limit. A
-  visual indicator in your editor may be helpful. This does not apply for
-  special content like paths to screenshots and long links.
-- Multiple consecutive empty lines are not allowed.
-- Empty lines before and after headings and fenced code blocks are required.
-- Use `` ``` `` (backticks) for fenced code blocks, followed by a mandatory
-  language tag, e.g. `ruby` or `sh`. If no language is applicable, use
-  `plain`.
-- Use `-` for bullet point lists (unordered lists) like this one.
-- To easily distinguish between **bold** and _italics_, use `_` around the
-  text for italics and `**` for bold (e.g.  `_italic_` vs. `**bold**`).
-- Multiple headings with the same content are not allowed.
-- Each document must have exactly one `h1` heading as title.
-- Resolution of manual full page screenshots for _mobile view_ is 400x867
-  pixels.
-- Resolution of manual full page screenshots for _desktop view_ is 1920x1080
-  pixels.
+- La lunghezza della riga di 120 caratteri nel file sorgente non deve essere
+  superata per il testo standard. Assicurati di andare a capo prima di
+  raggiungere questo limite. Questo non si applica a contenuti speciali come
+  percorsi di screenshot e link lunghi.
+- Non sono consentite più righe vuote consecutive.
+- Le righe vuote prima e dopo le intestazioni e i blocchi di codice sono
+  obbligatorie.
+- Usa `` ``` `` (backtick) per i blocchi di codice, seguiti da un tag lingua
+  obbligatorio, ad esempio `ruby` o `sh`. Se non si applica nessuna lingua,
+  usa `plain`.
+- Usa `-` per gli elenchi puntati (non ordinati) come questo.
+- Per distinguere facilmente tra **grassetto** e _corsivo_, usa `_` intorno
+  al testo per il corsivo e `**` per il grassetto.
+- Non sono consentite più intestazioni con lo stesso contenuto.
+- Ogni documento deve avere esattamente un'intestazione `h1` come titolo.
+- La risoluzione degli screenshot manuali a pagina intera per la
+  _visualizzazione mobile_ è di 400x867 pixel.
+- La risoluzione degli screenshot manuali a pagina intera per la
+  _visualizzazione desktop_ è di 1920x1080 pixel.
 
-### Examples
+### Esempi
 
-#### Text and UI
+#### Testo e interfaccia utente
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
-| Fields and UI elements    | **Name**                      | `**Name**`                      |
-| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
-| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
-| Add button                | ::+::                         | `::+::`                         |
-| Delete button             | ::x::                         | `::x::`                         |
-| Action menu               | ::a::                         | `::a::`                         |
-| Copy to clipboard button  | ::c::                         | `::c::`                         |
+| Tipo                      | Evidenziazione nella documentazione | Sintassi Markdown               |
+|---------------------------|-------------------------------------|---------------------------------|
+| Pulsanti con etichetta    | `Accedi`                            | `` `Accedi` ``                  |
+| Campi ed elementi UI      | **Nome**                            | `**Nome**`                      |
+| Posizioni/percorsi        | _Impostazioni > Canali > Email_     | `_Impostazioni > Canali > Email_` |
+| Scorciatoie tastiera      | [[x]]                               | `[[x]]`                         |
+| Pulsante aggiungi         | ::+::                               | `::+::`                         |
+| Pulsante elimina          | ::x::                               | `::x::`                         |
+| Menu azioni               | ::a::                               | `::a::`                         |
+| Pulsante copia appunti    | ::c::                               | `::c::`                         |
 
-#### Heading Structure
+#### Struttura delle intestazioni
 
-Every documentation file must include exactly one title on top level (like
-`# Title`). Levels below should always contain at least two sections. If
-only one section exists, consider merging it with the higher-level content.
+Ogni file della documentazione deve includere esattamente un titolo al
+livello superiore (come `# Titolo`). I livelli inferiori devono contenere
+sempre almeno due sezioni.
 
-Example:
+Esempio:
 
-`# Title of page`
+`# Titolo della pagina`
 
-`## Section 1`
+`## Sezione 1`
 
-`### Section 1.1`
+`### Sezione 1.1`
 
-`### Section 1.2`
+`### Sezione 1.2`
 
-`## Section 2`
+`## Sezione 2`
 
-#### Section with Badge <Badge type="warning" text="custom text" />
+#### Sezione con badge <Badge type="warning" text="testo personalizzato" />
 
-This section title uses a badge of the type "warning". There are other
-badges available, see
+Il titolo di questa sezione utilizza un badge del tipo "avviso". Sono
+disponibili altri badge, vedere
 <https://vitepress.dev/reference/default-theme-badge#usage>.
 
-**Usage:**
+**Utilizzo:**
 
 ::: details
 
 ```md
-Text/title to add a badge <Badge type="warning" text="custom text" />
+Testo/titolo per aggiungere un badge <Badge type="warning" text="testo personalizzato" />
 ```
 
 :::
 
-#### Custom boxes
+#### Riquadri personalizzati
 
 ::::: info
-This is an info box.
+Questo è un riquadro informativo.
 
-**Usage:**
+**Utilizzo:**
 
 :::: details
 
 ```md
 ::: info
-This is an info box.
+Questo è un riquadro informativo.
 :::
 ```
 
@@ -222,15 +228,15 @@ This is an info box.
 :::::
 
 ::::: tip
-This is a tip.
+Questo è un suggerimento.
 
-**Usage:**
+**Utilizzo:**
 
 :::: details
 
 ```md
 ::: tip
-This is a tip box.
+Questo è un riquadro suggerimento.
 :::
 ```
 
@@ -238,15 +244,15 @@ This is a tip box.
 :::::
 
 ::::: warning
-This is a warning.
+Questo è un avviso.
 
-**Usage:**
+**Utilizzo:**
 
 :::: details
 
 ```md
 ::: warning
-This is a warning box.
+Questo è un riquadro avviso.
 :::
 ```
 
@@ -254,15 +260,15 @@ This is a warning box.
 :::::
 
 ::::: danger
-This is a dangerous warning.
+Questo è un avviso pericoloso.
 
-**Usage:**
+**Utilizzo:**
 
 :::: details
 
 ```md
 ::: warning
-This is a dangerous warning.
+Questo è un avviso pericoloso.
 :::
 ```
 
@@ -270,84 +276,86 @@ This is a dangerous warning.
 :::::
 
 :::: details
-This is a details block.
+Questo è un blocco dettagli.
 
-**Usage:**
+**Utilizzo:**
 
 ```md
 ::: details
-This is the content shown in the expanded state.
+Questo è il contenuto mostrato nello stato espanso.
 :::
 
 ```
 
 ::::
 
-#### Definition lists
+#### Elenchi di definizioni
 
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+Primo termine <Badge type="info" text="tag1" />
+: Questa è la definizione del primo termine.
 
-Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: This is one definition of the second term.
-: This is another definition of the second term.
+Secondo termine <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: Questa è una definizione del secondo termine.
+: Questa è un'altra definizione del secondo termine.
 
-**Usage:**
+**Utilizzo:**
 
 ::: details
 
 ```md
-First Term <Badge type="info" text="tag1" />
-: This is the definition of the first term
-  with another line.
+Primo termine <Badge type="info" text="tag1" />
+: Questa è la definizione del primo termine
+  con un'altra riga.
 ```
 
 :::
 
-#### Highlighting with Boxes
+#### Evidenziazione con riquadri
 
-To highlight different options or variants, clickable boxes can be used.
+Per evidenziare opzioni o varianti diverse, è possibile usare riquadri
+cliccabili.
 
 <VPDocFeatures />
 
-The definition of the content is done via frontmatter, see following example
-(reflects the boxes above):
+La definizione del contenuto avviene tramite frontmatter, vedi il seguente
+esempio (rispecchia i riquadri sopra):
 
 ```yml
 
 features:
   - icon: 🛠️
-    title: Simple and minimal, always
+    title: Semplice e minimale, sempre
     details: Lorem ipsum...
     link: https://zammad.com
-    linkText: This is a link
+    linkText: Questo è un link
     target: _blank
   - icon:
       src: /assets/logo.svg
-    title: Another cool feature
+    title: Un'altra funzionalità interessante
     details: Lorem ipsum...
     link: https://zammad.com
   - icon:
       dark: /assets/logo-flat-dark.svg
       light: /assets/logo-flat-light.svg
-    title: Another cool feature
+    title: Un'altra funzionalità interessante
     details: Lorem ipsum...
     link: https://zammad.com
 
 ```
 
-To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
-rendered.
+Per posizionarlo nell'area del contenuto, inserisci semplicemente il riferimento `<VPDocFeatures />` nel punto in cui deve essere
+renderizzato.
 
-#### Theme Specific Images
+#### Immagini specifiche per tema
 
-To target specific image assets to a single theme, you can assign
-`.dark-only` or `.light-only` CSS class to the corresponding image:
+Per destinare risorse immagine specifiche a un singolo tema, puoi assegnare
+la classe CSS `.dark-only` o `.light-only` all'immagine corrispondente:
 
 ```md
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only}
-![Light only image](/assets/logo-flat-light.svg){.light-only}
+![Immagine solo tema scuro](/assets/logo-flat-dark.svg){.dark-only}
+![Immagine solo tema chiaro](/assets/logo-flat-light.svg){.light-only}
 ```
 
-![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light
-only image](/assets/logo-flat-light.svg){.light-only width=240}
+![Immagine solo tema scuro](/assets/logo-flat-dark.svg){.dark-only
+width=240} ![Immagine solo tema
+chiaro](/assets/logo-flat-light.svg){.light-only width=240}

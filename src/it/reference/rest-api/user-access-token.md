@@ -1,15 +1,15 @@
 ---
 order: 21
-title: 'User Access Token'
+title: 'Token di accesso utente'
 ---
 
-# User Access Token
+# Token di accesso utente
 
-## List
+## Elenca
 
-Required permission: `user_preferences.access_token`
+Permesso richiesto: `user_preferences.access_token`
 
-`GET`-Request sent: `/api/v1/user_access_token`
+Richiesta `GET` inviata: `/api/v1/user_access_token`
 
 ::: details
 
@@ -17,41 +17,41 @@ Required permission: `user_preferences.access_token`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `user_preferences.access_token`
+Permesso richiesto: `user_preferences.access_token`
 
-`POST`-Request sent: `/api/v1/user_access_token`
+Richiesta `POST` inviata: `/api/v1/user_access_token`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/user_access_token/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/user_access_token/post-res.json
 
 ::: info
-Above returned `token` is the API token. This value is provided once
-after creation and can't be retrieved after.
+Il `token` restituito sopra è il token API. Questo valore viene fornito una volta
+dopo la creazione e può.
 :::
 
 ::::
 :::::
 
-## Delete
+## Elimina
 
-Required permission: `user_preferences.access_token`
+Permesso richiesto: `user_preferences.access_token`
 
-`DELETE`-Request sent: `/api/v1/user_access_token/{id}`
+Richiesta `DELETE` inviata: `/api/v1/user_access_token/{id}`
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/user_access_token/delete-id-res.json
 

@@ -1,30 +1,36 @@
 ---
 order: 2
-title: Package
+title: Pacchetto
 ---
 
-# Package Installation
+# Installazione del pacchetto
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Supported Operating Systems
+## Sistemi operativi supportati
 
-For package installation, the following Linux distributions are supported:
-<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
-adjust it over there -->
-| Distribution         | Version              |
-| -------------------- | :------------------- |
-| CentOS/RHEL          | 9, 10                |
-| Debian               | 11, 12 & 13          |
-| OpenSUSE Leap / SLES | 15 & 16              |
-| Ubuntu               | 22.04, 24.04 & 26.04 |
+Per l'installazione del pacchetto, sono supportate le seguenti distribuzioni Linux:
+<!-- tabella inclusa in host-upgrade.md; a cui si fa riferimento alle righe 15-20. Assicurarsi di mantenerla o
+modificarla lì -->
+| Distribuzione | Versione |
 
-If your distribution is not supported, feel free to use a different
-installation method or consider using [Zammad's cloud
-service](https://zammad.com/en/pricing){target=_blank}.
+-------------------- | :------------------- |
 
-To follow the installation steps below, tools like curl, gnupg and others
-are required. If they are not present on your system, install them:
+| CentOS/RHEL | 9, 10 |
+
+| Debian | 11, 12 e 13 |
+
+| OpenSUSE Leap / SLES | 15 e 16 |
+
+| Ubuntu | 22.04, 24.04 e 26.04 |
+
+Se la tua distribuzione non è supportata, puoi utilizzare un metodo di
+installazione diverso o valutare l'utilizzo del [servizio cloud di
+Zammad](https://zammad.com/en/pricing){target=_blank}.
+
+Per seguire i passaggi di installazione descritti di seguito, sono necessari
+strumenti come curl, gnupg e altri. Se non sono presenti sul sistema,
+installateli:
 
 :::tabs key:distros
 
@@ -42,9 +48,9 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-OpenSUSE doesn't require any additional steps here!
+OpenSUSE non richiede passaggi aggiuntivi!
 
-SLES 15 requires additional repositories to be activated. To do so, run the following commands.
+SLES 15 richiede l'attivazione di repository aggiuntivi. Per farlo, eseguire i seguenti comandi.
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -62,217 +68,176 @@ sudo dnf install curl epel-release
 
 :::
 
-## Basics
+## Nozioni di base
 
-### Ensure Correct Locale
+### Assicurati della localizzazione corretta
 
 :::tabs key:distros
 
 === Ubuntu
-List your current locale settings:
 
 ```sh
-locale | grep "LANG="
+sudo apt install curl apt-transport-https gnupg
 ```
-
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
-
-```sh
-sudo apt install locales
-```
-
-```sh
-sudo locale-gen en_US.UTF-8
-```
-
-```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
-```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
-List your current locale settings:
 
 ```sh
-locale | grep "LANG="
+sudo apt install curl apt-transport-https gnupg
 ```
-
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
-
-```sh
-sudo apt install locales
-```
-
-```sh
-sudo locale-gen en_US.UTF-8
-```
-
-```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
-```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-List your current locale settings:
+
+OpenSUSE non richiede passaggi aggiuntivi!
+
+SLES 15 richiede l'attivazione di repository aggiuntivi. Per farlo, eseguire i seguenti comandi.
 
 ```sh
-localectl status | grep LANG
+sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
-
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
 
 ```sh
-sudo localectl set-locale LANG=en_US.UTF-8
+sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
 ```
 
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
-
-===CentOS/RHEL
-List your current locale settings:
+=== CentOS/RHEL
 
 ```sh
-locale | grep "LANG="
+sudo dnf install curl epel-release
 ```
-
-If above does not return `<lang_code>.utf8`, you can correct this
-issue as follows:
-
-```sh
-sudo localectl set-locale LANG=en_US.UTF-8
-```
-
-After fixing it, make sure to check the output again for including
-`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
-### Install Elasticsearch
+### Installa Elasticsearch
 
-The recommended method is to use [Elastic's official
-guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
-for installing Elasticsearch.
+Il metodo consigliato è quello di utilizzare la [guida ufficiale di
+Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
+per installare Elasticsearch.
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9, which is
-separated to keep the install instructions as lean as possible.
+In alternativa, puoi seguire [la nostra procedura di installazione di
+esempio](/it/tutorials/install-elasticsearch.md) di Elasticsearch 9, che è
+stata separata per mantenere le istruzioni di installazione il più snelle
+possibile.
 
-### Add Zammad Repository
+### Aggiungi il repository Zammad
 
 ::: info
-Packager.io may not be accessible from IPv6-only environments, so make sure
-to consider this when performing the steps below.
+Packager.io potrebbe non essere accessibile da ambienti solo IPv6, quindi assicurati
+di considerare questo aspetto.
 :::
-<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
-adjust it over there -->
+<!-- istruzioni del repository incluse in host-upgrade.md; a cui si fa riferimento alle righe 171-283. Assicurati di mantenerle o
+modificarle lì -->
 ::::tabs key:distros
 
 === Ubuntu
-Add repository key:
+Aggiungi la chiave del repository:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+
+-o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Ubuntu 22.04):
+Aggiungi il repository (Ubuntu 22.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Ubuntu 24.04):
+Aggiungi il repository (Ubuntu 24.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Ubuntu 26.04):
+Aggiungi repository (Ubuntu 26.04):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
 === Debian
 
-Add repository key:
+Aggiungi chiave repository:
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+
+-o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Add repository (Debian 11):
+Aggiungi repository (Debian 11):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 12):
+Aggiungi repository (Debian 12):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
-Add repository (Debian 13):
+Aggiungi repository (Debian 13):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+
+-o /etc/apt/sources.list.d/zammad.list
 ```
 
 === OpenSUSE/SLES
 
-Add repository (OpenSUSE/SLES 15):
+Aggiungi repository (OpenSUSE/SLES 15):
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
+"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
 ```
 
-Add repository (OpenSUSE/SLES 16):
+Aggiungi repository (OpenSUSE/SLES 16):
 
 ```sh
 sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
+
+"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
 ```
 
 ===CentOS/RHEL
-Add repository key:
+Aggiungi la chiave del repository:
 
 ```sh
 sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-Add repository (CentOS/RHEL 9):
+Aggiungi il repository (CentOS/RHEL 9):
 
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+
+-o /etc/yum.repos.d/zammad.repo
 ```
 
-Add repository (CentOS/RHEL 10):
+Aggiungi il repository (CentOS/RHEL 10):
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \ 
+-o /etc/yum.repos.d/zammad.repo
 ```
 
 ::::
 
-### Install Zammad
+### Installa Zammad
 
 :::tabs key:distros
 
@@ -306,7 +271,7 @@ sudo zypper refresh
 sudo zypper install zammad
 ```
 
-===CentOS/RHEL
+=== CentOS/RHEL
 
 ```sh
 sudo dnf install zammad
@@ -314,43 +279,45 @@ sudo dnf install zammad
 
 :::
 
-### Manage Services of Zammad
+### Gestisci i servizi di Zammad
 
-Zammad uses three services. These services can be managed individually or
-all at once by using the parent **zammad**.
+Zammad utilizza tre servizi. Questi servizi possono essere gestiti
+singolarmente o tutti insieme tramite il servizio principale **zammad**.
 
-- zammad: includes the services below
-  - **zammad-web**: internal puma server (relevant for displaying the web
+- zammad: include i servizi seguenti
+  - **zammad-web**: server puma interno (rilevante per visualizzare la web
     app)
-  - **zammad-worker**: background worker - relevant for all delayed- and
-    background jobs
-  - **zammad-websocket**: websocket server for session related information
+  - **zammad-worker**: worker in background - rilevante per tutti i job
+    ritardati e in background
+  - **zammad-websocket**: server websocket per informazioni relative alla
+    sessione
 
-Manage the services with `systemctl`'s commands `start`, `restart`, `stop`,
+Gestisci i servizi con i comandi `systemctl` `start`, `restart`, `stop`,
 `status`.
 
-Example to start Zammad with all sub-services:
+Esempio per avviare Zammad con tutti i sotto-servizi:
 
 ```sh
 sudo systemctl start zammad
 ```
 
-To stop or restart a service or to check its status, adjust the command as
-mentioned above.
+Per fermare o riavviare un servizio o controllare il suo stato, regola il
+comando come indicato sopra.
 
-### Next Steps
+### Prossimi passi
 
-- [Connect Zammad with
-  Elasticsearch](/en/tutorials/connect-config-elasticsearch)
-- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
-- [Configure the webserver](/en/tutorials/webserver-config)
+- [Collega Zammad con
+  Elasticsearch](/it/tutorials/connect-config-elasticsearch)
+- [Regola le tue regole SELinux e il
+  firewall](/it/tutorials/firewall-selinux)
+- [Configura il server web](/it/tutorials/webserver-config)
 
-## Dependencies
+## Dipendenze
 
-Assuming a vanilla system, the following dependencies will automatically be
-installed during the Zammad package installation. Additionally, you can find
-some information about Elasticsearch below, which is not automatically
-installed.
+Supponendo un sistema standard, le seguenti dipendenze verranno installate
+automaticamente durante l'installazione del pacchetto Zammad. Inoltre, di
+seguito sono riportate alcune informazioni su Elasticsearch, che non viene
+installato automaticamente.
 
 - imlib2
 - Node.js
@@ -358,60 +325,59 @@ installed.
 - Nginx
 - Redis
 
-### Database Server
+### Server database
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no
-PostgreSQL server could be detected, it will be installed automatically
-during the package installation.
+Zammad memorizza i suoi contenuti in un database. Il sistema di database
+supportato è [PostgreSQL](https://www.postgresql.org/){target=_blank}
+versione 13 o successiva. Se non viene rilevato alcun server PostgreSQL,
+verrà installato automaticamente durante l'installazione del pacchetto.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to
-use a pooling mode that is fully compatible with PostgreSQL. Typically this is
-called “session connection pooling”. Transaction-based connection pooling is
-not supported and may lead to errors during database migrations.
+Se utilizzi un software di pooling delle connessioni al database come PgBouncer, assicurati di utilizzare una modalità di pooling completamente compatibile con PostgreSQL. In genere, questa modalità viene chiamata "session connection pooling". Il connection pooling basato sulle transazioni non è supportato e potrebbe causare errori durante le migrazioni del database.
 :::
 
-### Reverse Proxy
+### Reverse proxy
 
-The following reverse proxies are supported:
+I seguenti reverse proxy sono supportati:
 
 - Nginx 1.3+
 - Apache 2.2+
 
-The installation script tries to detect a Apache or Nginx during the
-installation. In case none is found, Nginx is automatically installed.  You
-can find a basic example in [our Webserver configuration
-guide](/en/tutorials/webserver-config).
+Lo script di installazione tenta di rilevare Apache o Nginx durante
+l'installazione. Se non ne trova nessuno, Nginx viene installato
+automaticamente. Puoi trovare un esempio di base nella [nostra guida alla
+configurazione del server web](/it/tutorials/webserver-config).
 
 ### Redis
 
-[Redis](https://redis.io/) is required for realtime communication via web
-socket. Zammad requires Redis 6 or newer.  It gets installed automatically
-(package) or is included in the stack (Docker Compose) with a working
-configuration.  However, the installation and configuration is out of scope
-of this documentation. Please follow the official guides and ensure to set
-it up in a secure way.
+[Redis](https://redis.io/) è necessario per la comunicazione in tempo reale
+tramite WebSocket. Zammad richiede Redis 6 o versioni successive. Viene
+installato automaticamente (tramite pacchetto) oppure è incluso nello stack
+(Docker Compose) con una configurazione funzionante. Tuttavia,
+l'installazione e la configurazione esulano dall'ambito di questa
+documentazione. Si prega di seguire le guide ufficiali e di assicurarsi di
+configurarlo in modo sicuro.
 
-Available environment variables for standard and Sentinel setups are briefly
-mentioned in the [Redis Variables](/en/reference/redis) page.
+Le variabili d'ambiente disponibili per le configurazioni standard e
+Sentinel sono brevemente menzionate nella pagina [Variabili
+Redis](/it/reference/redis).
 
 :::info
-CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation
-on those distros, it gets installed automatically as a dependency.
+CentOS e RHEL 10 utilizzano [Valkey](https://valkey.io/) come sostituto diretto di Redis. Durante l'installazione di Zammad su queste distribuzioni, viene installato automaticamente come dipendenza.
 :::
 
-### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
+### Elasticsearch <Badge type="info" text="opzionale"/> <Badge type="danger" text="altamente consigliato"/>
 
-Elasticsearch is not automatically installed. Because it is crucial for a
-proper Zammad setup, it is included in the installation instructions
-above. If you want to connect Zammad to an already existing Elasticsearch
-instance, make sure to use a supported version and have a look at our
-[config example](/en/tutorials/connect-config-elasticsearch).
+Elasticsearch non viene installato automaticamente. Poiché è fondamentale
+per una corretta configurazione di Zammad, è incluso nelle istruzioni di
+installazione sopra riportate. Se si desidera connettere Zammad a un'istanza
+di Elasticsearch già esistente, assicurarsi di utilizzare una versione
+supportata e consultare il nostro [esempio di
+configurazione](/it/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `7.8` - `9.x`.
+Le versioni di Elasticsearch supportate sono `7.8` - `9.x`.
 
-Elasticsearch version history for Zammad:
+Cronologia versioni di Elasticsearch per Zammad:
 
 :::details
 
@@ -429,34 +395,35 @@ Elasticsearch version history for Zammad:
 
 :::
 
-The Elasticsearch plugin `ingest-attachment` is required for version 7 or
-older to index the contents of email attachments. Starting with
-Elasticsearch 8, it is included by default.
+Il plugin Elasticsearch `ingest-attachment` è richiesto per la versione 7 o
+precedente per indicizzare gli allegati.
 
 ### Memcached
 
-Zammad heavily relies on caching to improve performance. This cache can be
-stored in the file system without relying on externals services. However,
-this is only possible if all services of Zammad are running on the same file
-system!
+Zammad fa ampio ricorso alla cache per migliorare le prestazioni. Questa
+cache può essere memorizzata nel file system senza dipendere da servizi
+esterni. Tuttavia, ciò è possibile solo se tutti i servizi di Zammad sono in
+esecuzione sullo stesso file system!
 
-In all other cases like deploying Zammad via containers (Docker or
-Kubernetes) or on separate cluster nodes, a
-[Memcached](https://memcached.org/){target=_blank} service is required to
-store the cache and serve it to all Zammad instances.  The Docker and
-Kubernetes stacks already include this service.
+In tutti gli altri casi, come la distribuzione di Zammad tramite container
+(Docker o Kubernetes) o su nodi cluster separati, è necessario un servizio
+[Memcached](https://memcached.org/){target=_blank} per memorizzare la cache
+e fornirla a tutte le istanze di Zammad. Gli stack Docker e Kubernetes
+includono già questo servizio.
 
-However, even local file system installations may benefit from Memcached's
-performance improvements. You might want to have a look at our [performance
-tuning](/en/reference/environment-variables#performance-tuning) section too.
+Tuttavia, anche le installazioni su file system locali possono beneficiare
+dei miglioramenti prestazionali di Memcached. Potresti voler dare
+un'occhiata anche alla nostra sezione [ottimizzazione delle
+prestazioni](/it/reference/environment-variables#performance-tuning).
 
-The installation and configuration is out of scope of this documentation. In
-case you have to install Memcached manually, please follow the [official
-documentation of Memcached](https://docs.memcached.org/){target=_blank}.
+L'installazione e la configurazione non rientrano nell'ambito di questa
+documentazione. Qualora fosse necessario installare Memcached manualmente,
+si prega di consultare la [documentazione ufficiale di
+Memcached](https://docs.memcached.org/){target=_blank}.
 
-### GnuPG <Badge type="info" text="optional"/>
+### GnuPG <Badge type="info" text="opzionale"/>
 
-If you want to use the PGP integration for sending and receiving signed and
-encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG
-website](https://www.gnupg.org/index.html){target=_blank}.
+Se desideri utilizzare l'integrazione PGP per inviare e ricevere email
+firmate e crittografate, devi installare GnuPG-Tool. Consulta il sito
+ufficiale di GnuPG all'indirizzo
+[https://www.gnupg.org/index.html]{target=_blank}.

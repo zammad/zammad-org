@@ -1,15 +1,15 @@
 ---
 order: 14
-title: Role
+title: Ruolo
 ---
 
-# Roles
+# Ruoli
 
-## List
+## Elenca
 
-Required permission: `admin.role`
+Permesso richiesto: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles`
+Richiesta `GET` inviata: `/api/v1/roles`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `admin.role`
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `admin.role`
+Permesso richiesto: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles/{id}`
+Richiesta `GET` inviata: `/api/v1/roles/{id}`
 
 ::: details
 
@@ -29,42 +29,42 @@ Required permission: `admin.role`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.role`
+Permesso richiesto: `admin.role`
 
-`POST` -Request sent: `/api/v1/roles`
+Richiesta `POST` inviata: `/api/v1/roles`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/roles/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/roles/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.role`
+Permesso richiesto: `admin.role`
 
-`PUT` -Request sent: `/api/v1/roles/{id}`
+Richiesta `PUT` inviata: `/api/v1/roles/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/roles/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/roles/put-id-res.json
 

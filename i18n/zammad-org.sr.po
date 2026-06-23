@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-12 17:06+0200\n"
-"PO-Revision-Date: 2026-05-14 16:02+0000\n"
+"POT-Creation-Date: 2026-06-12 15:16+0000\n"
+"PO-Revision-Date: 2026-06-17 08:02+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -248,6 +248,18 @@ msgstr "Без резултата за"
 msgid "Reset search"
 msgstr "Поништи претрагу"
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -257,12 +269,6 @@ msgstr "Учествујте"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:9
-#, fuzzy
-#| msgid ""
-#| "We are happy to see you contribute to Zammad! You can do this in several "
-#| "ways. Contributions are mainly done by forking one of our repos on GitHub "
-#| "and creating a pull request with your changes (except for translations, "
-#| "see below). 🚀"
 msgid ""
 "We are happy to see you contribute to Zammad! You can do this in several "
 "ways. Contributions are mainly done by cloning one of our repos on GitHub "
@@ -270,9 +276,9 @@ msgid ""
 "below). 🚀"
 msgstr ""
 "Драго нам је да видимо да доприносите Zammad-у! Можете помоћи на неколико "
-"начина. Доприноси се углавном обављају тако што се један од наших "
-"репозиторија на GitHub-у форкује и направи pull request са вашим изменама "
-"(осим за преводе, погледајте испод за детаље). 🚀"
+"начина. Доприноси се углавном обављају тако што се направи fork једног од "
+"наших репозиторија на GitHub-у и отвори pull request са вашим изменама (осим "
+"за преводе, погледајте испод за детаље). 🚀"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:11
@@ -445,16 +451,6 @@ msgstr "Превод"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:68
-#, fuzzy
-#| msgid ""
-#| "If you want to help us with translation and improve the multi-language "
-#| "support of Zammad and/or the documentation, you are welcome to contribute "
-#| "as well! The translation of Zammad and the documentation is done via "
-#| "Weblate, which is a service for the collaborative translation of "
-#| "projects.  Just head over to Zammad's [Weblate instance](https://"
-#| "translations.zammad.org/){target=_blank}.  You can either create an "
-#| "account (if you don't have one already) or even sign in with your Github "
-#| "account!"
 msgid ""
 "If you want to help us with translation and improve the multi-language "
 "support of Zammad or the documentation, you are welcome to contribute as "
@@ -465,9 +461,9 @@ msgid ""
 "already) or even sign in with your Github account!"
 msgstr ""
 "Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку "
-"у Zammad-у и/или документацији, ваш допринос је добродошао! Превод самог "
+"у Zammad-у или документацији, ваш допринос је добродошао! Превод самог "
 "Zammad-а и документације обавља се преко Weblate апликације, која представља "
-"сервис за колаборацију на преводима пројеката.  Једноставно посетите Zammad-"
+"сервис за колаборацију на преводима пројеката. Једноставно посетите Zammad-"
 "ову [Weblate инстанцу](https://translations.zammad.org/){target=_blank}.  "
 "Можете или отворити налог (ако га већ немате) или се пријавити својим Github "
 "налогом!"
@@ -498,16 +494,15 @@ msgstr "Основе"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.\n"
-#| "When you click in the top menu under \"_Projects > Browse all projects_\", you can find the overview of the projects:\n"
+#, no-wrap
 msgid ""
 "The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.\n"
 "When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:\n"
 msgstr ""
-"Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у Weblate апликацији.\n"
-"Преглед пројеката можете пронаћи кликом на мени при врху под „_Projects > Browse all projects_”:\n"
+"Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у "
+"Weblate апликацији.\n"
+"Преглед пројеката можете пронаћи кликом на мени при врху под _Projects > "
+"Browse all projects_:\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:80
@@ -552,32 +547,21 @@ msgstr "Zammad (`stable` верзија)"
 
 #. type: Bullet: '  - '
 #: src/en/contribute/contribute.md:90
-#, fuzzy
-#| msgid "_Some more which aren't relevant here_"
 msgid "Some more which aren't relevant here"
-msgstr "_Додатне верзије које овде нису релевантне_"
+msgstr "Додатне верзије које овде нису релевантне"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:94
-#, fuzzy
-#| msgid ""
-#| "After selecting a project (Documentation or Zammad), you will see "
-#| "different sub-projects and their translation status summarized for all "
-#| "languages. Here you can select one of the \"components\", which is more "
-#| "or less the same as different versions. After selecting one of them, you "
-#| "can see the status of translation for the different languages, as you can "
-#| "see in the following screenshot:"
 msgid ""
 "Select a project (documentation or Zammad) and switch to the **Components** "
 "tab. Select the one you want to translate.  After that, you can see the "
 "status of translation for the different languages, as you can see in the "
 "following screenshot:"
 msgstr ""
-"По одабиру пројекта (Documentation или Zammad), видећете више подпројеката и "
-"њихов сажети статус превода по свим језицима. Овде можете одабрати једну од "
-"„компонената”, које су мање или више идентичне различитим верзијама. По "
-"одабиру једне од њих, можете видети статус превода по различитим језицима, "
-"по узору на следећи снимак екрана:"
+"Одаберите пројекат (документације или Zammad-а) и пређите на језичак "
+"**Components**. Одаберите ону коју желите да преведете.  Након тога, можете "
+"видети статус превода по различитим језицима, по узору на следећи снимак "
+"екрана:"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:96
@@ -590,21 +574,17 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/contribute/contribute.md:97
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "It should be no big difference which branch you choose to translate. When Weblate detects the same strings in different\n"
-#| "branches, they will be used for all branches and only have to be translated once. If in doubt, choose the `develop`\n"
-#| "version.\n"
+#, no-wrap
 msgid ""
 "It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in\n"
 "different components, they will be used for all branches and only have to be translated once. If in doubt, choose\n"
 "`develop`.\n"
 msgstr ""
-"\n"
-"Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate детектује идентичне низове текста у различитим\n"
-"огранцима, користиће исти превод за све огранке и тиме се преводи само једном. Уколико нисте сигурни, одаберите `develop`\n"
-"верзију.\n"
+"Одлука у ком огранку желите да преводите не прави велику разлику. Када "
+"Weblate детектује идентичне низове текста у\n"
+"различитим компонентама користиће исти превод за све огранке и тиме се "
+"преводи само једном. Уколико нисте сигурни, одаберите\n"
+"`develop` верзију.\n"
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:103
@@ -614,20 +594,15 @@ msgstr "Превођење"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:107
-#, fuzzy
-#| msgid ""
-#| "After that, you will finally see the first untranslated string in the "
-#| "upper field and, in theory, you can start to translate. First a brief "
-#| "overview of the user interface of Weblate:"
 msgid ""
 "Now check the \"Unfinished\" column of your language and click on the number "
 "there. This opens the first untranslated string and, in theory, you can "
 "start translating. But let's first have a brief look at the user interface "
 "of Weblate:"
 msgstr ""
-"Након овога, коначно ћете добити први непреведен низ текста у горњем пољу, и "
-"можете започети са преводом. Прво, кратак преглед корисничког интерфејса "
-"Weblate апликације:"
+"Сада проверите „Unfinished” колону вашег језика и кликните на број из ње. "
+"Ово ће отворити први непреведен низ текста, и можете започети са преводом. "
+"Али прво, кратак преглед корисничког интерфејса Weblate апликације:"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:109
@@ -640,26 +615,18 @@ msgstr ""
 
 #. type: Bullet: '1. '
 #: src/en/contribute/contribute.md:122
-#, fuzzy
-#| msgid "**Breadcrumbs with path** to the current project and language"
 msgid ""
 "**Breadcrumbs with path** to the current project, component and language"
-msgstr "**Путања навигације** на тренутни пројекат и језик превода"
+msgstr "**Путања навигације** на тренутни пројекат, компоненту и језик превода"
 
 #. type: Bullet: '2. '
 #: src/en/contribute/contribute.md:122
-#, fuzzy
-#| msgid ""
-#| "**Translation area** itself. You can find the source string (_\"English "
-#| "(United States)\"_) at the top and the field for your translation "
-#| "(_\"French\"_ in this example)."
 msgid ""
 "**Translation area** itself. You can find the source string at the top and "
 "the field for your translation below."
 msgstr ""
-"Сам **Translation** одељак. Можете видети изворни низ текста (_„English "
-"(United States)”_) при врху и поље за унос вашег превода (_„French”_ у овом "
-"примеру)."
+"Сам **Translation** одељак. Можете видети изворни низ текста при врху и поље "
+"за унос вашег превода испод њега."
 
 #. type: Bullet: '3. '
 #: src/en/contribute/contribute.md:122
@@ -668,6 +635,9 @@ msgid ""
 "the glossary, you can find additional information there. It is also "
 "highlighted in the source strings."
 msgstr ""
+"**Glossary**: када се у низу текста или његовим деловима детектује нешто из "
+"речника, овде можете пронаћи додатне информације. Такође, биће назначено у "
+"изворном низу текста."
 
 #. type: Bullet: '4. '
 #: src/en/contribute/contribute.md:122
@@ -681,13 +651,6 @@ msgstr "**Nearby strings**: вам приказује контекст речи 
 
 #. type: Bullet: '    - '
 #: src/en/contribute/contribute.md:122
-#, fuzzy
-#| msgid ""
-#| "**Automatic suggestions**: here you can find automatic suggestions from "
-#| "DeepL and suggestions from similar strings, which are already translated. "
-#| "Use the \"_Clone to translation_\" button to insert it in the translation "
-#| "field to apply changes. Use the \"_Accept_\" button to accept the "
-#| "suggested translation and automatically switch to the next string."
 msgid ""
 "**Automatic suggestions**: here you can find automatic suggestions from "
 "DeepL and suggestions from similar strings, which are already translated. "
@@ -697,24 +660,19 @@ msgid ""
 msgstr ""
 "**Automatic suggestions**: овде можете пронаћи аутоматизоване предлоге од "
 "DeepL сервиса и предлоге на основу сличног текста, који је већ преведен. "
-"Користите дугме „_Clone to translation_” да убаците текст у поље превода и "
-"снимите измене. Користите дугме „_Accept_” да прихватите предложен предлог и "
-"одмах пређене на следећи низ текста."
+"Користите дугме `Clone to translation` да убаците текст у поље превода и "
+"снимите измене. Користите дугме `Accept` да прихватите предложен превод и "
+"одмах пређете на следећи низ текста."
 
 #. type: Bullet: '    - '
 #: src/en/contribute/contribute.md:122
-#, fuzzy
-#| msgid ""
-#| "**Other languages**: here you can get an overview, which languages are "
-#| "translated and you can also see the translated strings (could be useful "
-#| "for languages, which are similar)."
 msgid ""
 "**Other languages**: here you see an list if and how the string is "
 "translated into other languages (could be useful for languages, which are "
 "similar)."
 msgstr ""
-"**Other languages**: овде можете добити преглед који језици већ садрже "
-"превод и саме преводе (може бити корисно за сличне језике)."
+"**Other languages**: овде можете добити листу где и како је низ текста "
+"преведен на другим језицима (може бити корисно за сличне језике)."
 
 #. type: Title ###
 #: src/en/contribute/contribute.md:123
@@ -724,13 +682,6 @@ msgstr "Ознаке у тексту"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:130
-#, fuzzy
-#| msgid ""
-#| "Find some examples for special source strings with applied markup below. "
-#| "Depending on the string, it can be important to keep the markup and/or "
-#| "variables. Also have a look at the [style guide](style-guide) where you "
-#| "can find more information about the syntax and the usage of Markdown/"
-#| "Vitepress features."
 msgid ""
 "Find some examples for special source strings below with a badge indicating "
 "where such a string can be found. Try to keep the (adjusted) markup and make "
@@ -740,10 +691,12 @@ msgid ""
 "guide) where you can find more information about the syntax and the usage of "
 "Markdown/Vitepress features."
 msgstr ""
-"Испод можете пронаћи пар примера за специјалан текст са примењеним ознакама. "
-"У зависности од текста, некад је важно задржати ознаке и/или променљиве. "
-"Погледајте и [водич кроз стил](style-guide) где можете пронаћи више "
-"информација о синтакси и коришћењу Markdown/Vitepress функција."
+"Испод можете пронаћи пар примера за специјалне низове текста са ознаком која "
+"индикује где се може пронаћи. Покушајте да задржите (прилагођене) ознаке и "
+"променљиве. Одељак **Source string location** у Weblate апликацији (са десне "
+"стране) даје вам увид у контекст. Такође, погледајте и [водич кроз стил "
+"документације](style-guide) где можете пронаћи више информација о синтакси и "
+"коришћењу Markdown/Vitepress функцијама."
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:134
@@ -753,22 +706,24 @@ msgid ""
 ": The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the\n"
 "  translation. The position may vary depending on the translation.\n"
 msgstr ""
+"`%s created ticket |%s|` <Badge type=\"tip\" text=\"Zammad\" />\n"
+": Текст садржи променљиве (`%s`) и ознаке (`||`). Обратите пажњу да се "
+"променљива и ознаке нађу у\n"
+"  преводу. Тачна позиција може зависити од превода.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:138
-#, fuzzy, no-wrap
-#| msgid ""
-#| "**\\`example-string\\`**\n"
-#| ": This is rendered as `example-string`. Depending on the context, it can be translated or not. In any case, use the\n"
-#| "  \\` before and after the string in your translation.\n"
+#, no-wrap
 msgid ""
 "`` `example-string` `` <Badge type=\"tip\" text=\"Documentation\" />\n"
 ": This is rendered as inline code (`example-string`). Depending on the context, it can be translated or not. In any\n"
 "  case, use a backtick (`` ` ``) before and after the string in your translation as well.\n"
 msgstr ""
-"**\\`пример-текста\\`**\n"
-": Ово ће бити приказано као `пример-текста`. У зависности од контекста, ово се може превести или не.\n"
-"  У сваком случају, користите \\` пре и после низа текста у вашем преводу.\n"
+"`` `example-string` `` <Badge type=\"tip\" text=\"Documentation\" />\n"
+": Ово ће бити приказано као линијски кôд (`example-string`). У зависности од "
+"контекста, ово се може превести или не. У сваком\n"
+"  случају, користите задње наводнике (`` ` ``) пре и после низа текста у "
+"вашем преводу.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:144
@@ -2819,7 +2774,7 @@ msgstr "Тикет је повезан са својим „надређеним
 #: src/en/documentation/use/advanced-features.md:312
 #, no-wrap
 msgid "Split Tickets"
-msgstr "Раздели тикете"
+msgstr "Раздељивање тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:315
@@ -6767,6 +6722,9 @@ msgid ""
 "authentication method, you can switch to another one, provided you have set "
 "it up previously."
 msgstr ""
+"У случају да приликом пријављивања имате проблема са својим жељени методом "
+"двофакторске аутентификације, можете се пребацити на други, под условом да "
+"сте га претходно подесили."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:105
@@ -23105,6 +23063,76 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23265,76 +23293,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23748,18 +23706,6 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1

@@ -1,21 +1,20 @@
 ---
 order: 22
-title: User
+title: Utente
 ---
 
-# User
+# Utente
 
 ::: info
-Please note that below samples were provided with `admin` and
-`ticket.agent` permissions. Some attributes / information may not be
-available in specific situations.
+Tieni presente che gli esempi seguenti sono stati forniti con i permessi `admin` e
+`ticket.agent`.
 :::
 
-## Me - Current User
+## Io - Utente corrente
 
-Required permission: any
+Permesso richiesto: qualsiasi
 
-`GET`-Request sent: `/api/v1/users/me`
+Richiesta `GET` inviata: `/api/v1/users/me`
 
 ::: details
 
@@ -23,11 +22,11 @@ Required permission: any
 
 :::
 
-## List
+## Elenca
 
-Required permission: `ticket.agent` **or** `admin.user`
+Permesso richiesto: `ticket.agent` **o** `admin.user`
 
-`GET`-Request sent: `/api/v1/users`
+Richiesta `GET` inviata: `/api/v1/users`
 
 ::: details
 
@@ -35,16 +34,16 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `ticket.agent` **or** `admin.user` **or**
-`ticket.customer` (shared organization)
+Permesso richiesto: `ticket.agent` **o** `admin.user` **o**
+`ticket.customer` (condiviso o
 
 ::: info
-Technically, any listings will return user's own information only.
+Tecnicamente, qualsiasi elenco restituirà solo le informazioni proprie dell'utente.
 :::
 
-`GET`-Request sent: `/api/v1/users/{id}`
+Richiesta `GET` inviata: `/api/v1/users/{id}`
 
 ::: details
 
@@ -52,115 +51,102 @@ Technically, any listings will return user's own information only.
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.user` **or** `ticket.agent`
+Permesso richiesto: `admin.user` **o** `ticket.agent`
 
-`POST`-Request sent: `/api/v1/users`
+Richiesta `POST` inviata: `/api/v1/users`
 
 ::: tip
-**This depends on permissions**
+**Questo dipende dai permessi**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
-
-Technically, unauthenticated user creation is possible if you manage
-to provide the required CSRF token (out of scope of this
-documentation). If you don't want that, consider
-disabling user registration under _Settings > Security > Base_ by setting
-**New user accounts** to no.
+Gli agenti non possono impostare password utente, ruoli o permessi di gruppo.
 :::
 
 ::: tip
-Unsure which attributes you can use or set? Run a GET query on any
-fitting user existing in your instance already.
+Non sei sicuro di quali attributi puoi usare o impostare? Esegui una query GET su qualsiasi
+utente esistente adatto.
 :::
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/users/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/users/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.user` **or** `ticket.agent`
+Permesso richiesto: `admin.user` **o** `ticket.agent`
 
-`PUT`-Request sent: `/api/v1/users/{id}`
+Richiesta `PUT` inviata: `/api/v1/users/{id}`
 
 ::: tip
-**This depends on permissions**
+**Questo dipende dai permessi**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Gli agenti non possono impostare password utente, ruoli o permessi di gruppo.
 :::
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/users/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/users/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
 ::: danger
-**This is a permanent removal**
+**Questa è una rimozione permanente**
 
-Please note that removing users cannot be undone. Zammad will also
-remove references - thus potentially tickets!
+Tieni presente che rimuovere utenti non può essere annullato. Zammad.
 :::
 
-Technically, you can delete users via `/api/v1/users/{id}`. However, we
-strongly encourage you to use the data privacy in Zammad's UI or the data
-privacy endpoint instead (see section below). Using one of them makes sure
-that related information like tickets are deleted as well.
+Tecnicamente, puoi eliminare utenti tramite `/api/v1/users/{id}`. Tuttavia,
+raccomandiamo vivamente.
 
-### Via Data Privacy Endpoint
+### Tramite endpoint privacy dati
 
-Required permission: `admin.data_privacy`
+Permesso richiesto: `admin.data_privacy`
 
-`POST`-Request sent: `/api/v1/data_privacy_task`
+Richiesta `POST` inviata: `/api/v1/data_privacy_task`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/users/post-privacy-task-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/users/post-privacy-task-res.json
 
 :::
 ::::
 
-### Via User Endpoint <Badge type="danger" text="not recommended" />
+### Tramite endpoint utente <Badge type="danger" text="non consigliato" />
 
-Required permission: `admin.user`
+Permesso richiesto: `admin.user`
 
-`DELETE`-Request sent: `/api/v1/users/{id}`
+Richiesta `DELETE` inviata: `/api/v1/users/{id}`
 
 ::: details
 

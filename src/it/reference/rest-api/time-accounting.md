@@ -1,15 +1,15 @@
 ---
 order: 20
-title: 'Time Accounting'
+title: 'Contabilità del tempo'
 ---
 
-# Time Accounting
+# Contabilità del tempo
 
-## List
+## Elenca
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permesso richiesto: `ticket.agent` **o** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+Richiesta `GET` inviata: `/api/v1/tickets/{ticket id}/time_accountings`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permesso richiesto: `ticket.agent` **o** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket
+Richiesta `GET` inviata: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details
@@ -30,59 +30,59 @@ id}/time_accountings/{timeaccounting id}`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permesso richiesto: `ticket.agent` **o** `admin.time_accounting`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+Richiesta `POST` inviata: `/api/v1/tickets/{ticket id}/time_accountings`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.time_accounting`
+Permesso richiesto: `admin.time_accounting`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket
+Richiesta `PUT` inviata: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-res.json
 
 :::
 ::::
 
-## Remove
+## Rimuovi
 
-Required permission: `admin.time_accounting`
+Permesso richiesto: `admin.time_accounting`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket
+Richiesta `DELETE` inviata: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/tickets/time_accountings/delete-ticket-id-timaccounting-id-res.json
 

@@ -1,105 +1,95 @@
 ---
 order: 1
-title: Introduction
+title: Introduzione
 ---
 
-# Introduction
+# Introduzione
 
-Zammad provides a powerful REST-API[^1] which allows all operations that are
-available via UI as well.
+Zammad fornisce una potente REST-API[^1] che permette tutte le operazioni
+disponibili tramite.
 
-This page gives you a first impression for things that generally count for
-all endpoints and how to adapt.
+Questa pagina ti dà una prima impressione delle cose che generalmente
+valgono per tutti gli endpoint.
 
-## API clients
+## Client API
 
-There are API clients available. Please note that these clients may not
-provide access to all available endpoints listed here.
+Sono disponibili client API. Tieni presente che questi client potrebbero non
+fornire accesso a.
 
-- [Ruby
-  Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  (official)
-- [PHP
-  Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  (official)
-- [Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third
-  party)
-- [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
-  (third party)
-- [Android
-  API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
-  (third party)
-- [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  (third party; API client only, no "ready to use" app)
+- [Client
+  Ruby](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
+  (ufficiale)
+- [Client
+  PHP](https://github.com/zammad/zammad-api-client-php){target=_blank}
+  (ufficiale)
+- [Client Python](https://pypi.org/project/zammad-py/){target=_blank} (terze
+  parti)
+- [Client .NET](https://github.com/Asesjix/Zammad-Client){target=_blank}
+  (terze parti)
+- [Client API
+  Android](https://github.com/KirkBushman/zammad-android){target=_blank}
+  (terze
+- [Client Go](https://github.com/AlessandroSechi/zammad-go){target=_blank}
+  (terze parti; API
 
-## Authentication
+## Autenticazione
 
-Zammad supports three different authentication methods for its API.
+Zammad supporta tre diversi metodi di autenticazione per la sua API.
 
-### HTTP Basic Authentication (username/password)
+### Autenticazione HTTP di base (nome utente/password)
 
-The username / password must be provided as HTTP header in the HTTP call.
-This authentication method can be disabled and may not be available in your
-system.
+Il nome utente / password deve essere fornito come intestazione HTTP nella
+chiamata HTTP. Questa autenticazione.
 
 ```sh
 curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
 :::warning
-We strongly suggest against using basic authentication. Use access
-tokens when ever possible!
+Sconsigliamo vivamente di usare l'autenticazione di base. Usa i token
+di accesso ogni volta che possibile.
 :::
 
-### HTTP Token Authentication (access token)
+### Autenticazione token HTTP (token di accesso)
 
-The access token must be provided as HTTP header in the HTTP call.  Each
-user can create several access tokens in their user preferences.  This
-authentication method can be disabled and may not be available in your
-system.
+Il token di accesso deve essere fornito come intestazione HTTP nella
+chiamata HTTP. Ogni utente può creare.
 
 ```sh
 curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
-### OAuth2 (token access)
+### OAuth2 (accesso token)
 
-The token must be provided as HTTP header in your calls.  This allows 3rd
-party applications to authenticate against Zammad.
+Il token deve essere fornito come intestazione HTTP nelle tue
+chiamate. Questo permette ad applicazioni di terze parti.
 
 ```sh
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoints and Example Data
+## Endpoint e dati di esempio
 
-For simplicity we'll not provide specific commands on the next pages, but
-instead tell the possible call method (e.g. `GET`) and the endpoint to use
-(e.g. `/api/v1/users`). In case Zammad expects information within these
-endpoint urls, we'll put them into curly braces like so:
-`/api/v1/users/{user id}`
+Per semplicità non forniremo comandi specifici nelle pagine successive, ma
+diremo invece.
 
-The response format will be a complete JSON response from a default Zammad
-instance. Please keep in mind that you may see more fields or general
-information in case you added objects or other information.
+Il formato della risposta sarà una risposta JSON completa da un'istanza
+Zammad predefinita.
 
-## Content Type
+## Tipo di contenuto
 
-Zammad returns JSON payloads whenever you retrieve data. If you're going to
-provide data, no matter of the general request type, don't forget to provide
-the content type `application/json` as well.
+Zammad restituisce payload JSON ogni volta che recuperi dati. Se intendi
+fornire dati,.
 
-## Response Payloads (Expand)
+## Payload di risposta (espandi)
 
-Zammad always returns information including hints to all relations. If you
-need more information than that (because IDs may not be enough) you can also
-extend your endpoint calls with `?expand=true`.
+Zammad restituisce sempre informazioni inclusi suggerimenti a tutte le
+relazioni. Se hai bisogno di maggiori informazioni.
 
-This switch will provide even more information - at least named relations on
-top of the ID ones. Below you can find two examples, one for ticket and one
-for user:
+Questo switch fornirà ancora più informazioni - almeno relazioni con nome
+oltre agli ID.
 
-**User payload:**
+**Payload utente:**
 
 :::: details
 :::tabs
@@ -115,7 +105,7 @@ for user:
 :::
 ::::
 
-**Ticket payload:**
+**Payload ticket:**
 
 :::: details
 :::tabs
@@ -132,138 +122,122 @@ for user:
 ::::
 
 :::tip
-Please note that Core Workflows may restrict access to attributes or
-values.
+Tieni presente che i Flussi di lavoro principali potrebbero limitare l'accesso ad attributi o
+valori.
 :::
 
-## Pagination
+## Paginazione
 
-As Zammad limits the number of returned objects for performance reasons, you
-may have to use pagination at some points.
+Poiché Zammad limita il numero di oggetti restituiti per motivi di
+prestazioni, potresti dover.
 
 :::info
-**Number of returned objects:** Zammad has hard limits for the
-maximum returned objects. You can't raise these limits.
-
-**Number of total to return objects:** Zammad does not provide a total count of
-objects available for your query, unless you explicitly request it. To include
-the amount of search results, use the `with_total_count` or `only_total_count`
-parameter.
+**Numero di oggetti restituiti:** Zammad ha limiti rigidi per il
+numero massimo di oggetti restituiti.
 :::
 
-In order to use pagination you'll need two get options: `per_page` and
-`page`. Combine them to receive 5 results from the first result page:
-`?page=1&per_page=5` - increase page count to get more results.
+Per usare la paginazione avrai bisogno di due opzioni get: `per_page` e
+`page`. Combina.
 
-## Search via API
+## Ricerca tramite API
 
-### Endpoint Search
+### Ricerca endpoint
 
-Some endpoints support a search query. These are:
+Alcuni endpoint supportano una query di ricerca. Questi sono:
 
-- `Groups <group>`
-- `Organizations <organization>`
-- `Roles <role>`
-- `Tickets <ticket>`
-- `Users <user>`
+- `Gruppi <group>`
+- `Organizzazioni <organization>`
+- `Ruoli <role>`
+- `Ticket <ticket>`
+- `Utenti <user>`
 
-The following endpoints support a search query as well, but they are not
-explicitly covered in this documentation:
+I seguenti endpoint supportano anche una query di ricerca, ma non sono
+esplicitamente trattati.
 
-- Chat Sessions
-- Knowledge base
-- Macros
-- Overview
-- Templates
-- Text module
+- Sessioni chat
+- Base di conoscenza
+- Macro
+- Panoramica
+- Modelli
+- Modulo di testo
 
-#### Search Example
+#### Esempio di ricerca
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome`
+Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Expand Parameter
+#### Parametro Expand
 
-If you want to have additional related information, you can use the `expand`
-parameter. Using it resolves the IDs and outputs values/names in addition.
+Se vuoi avere informazioni correlate aggiuntive, puoi usare il parametro
+`expand`. Usa.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`
+Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome&expand=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Full Parameter
+#### Parametro Full
 
-You can even extend the response by using the `full` parameter. Be aware
-that this response can be huge. It outputs all assets including related
-attributes and a `total_count` of search results as well.
+Puoi anche estendere la risposta usando il parametro `full`. Tieni presente
+che questa risposta.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`
+Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome&full=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### With Total Count Parameter
+#### Con parametro conteggio totale
 
-Using this parameter will additionally output the amount of search results.
-It can be combined with `full` and `expand`.
+Usando questo parametro verrà anche emessa la quantità di risultati di
+ricerca. Può essere combinato.
 
-`GET`-Request sent:
+Richiesta `GET` inviata:
 `/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Only Total Count Parameter
+#### Solo parametro conteggio totale
 
-Using this `only_total_count` parameter will output only the amount of
-search results.
+Usando questo parametro `only_total_count` verrà emessa solo la quantità di
+risultati di ricerca.
 
-`GET`-Request sent:
+Richiesta `GET` inviata:
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Global Search
+### Ricerca globale
 
-If you need to search not only in a specific object type, you can do so by
-using the global search without specifying an object. The response may
-include users, tickets, organizations, knowledge base articles and answers
-and chats, depending on your system and content. This global search behaves
-like the search in Zammad's UI in the left task bar. The available
-parameters are different to the ones for the endpoint search.
+Se hai bisogno di cercare non solo in un tipo di oggetto specifico, puoi
+farlo usando la ricerca globale.
 
-`GET`-Request sent: `/api/v1/search?query=welcome`
+Richiesta `GET` inviata: `/api/v1/search?query=welcome`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Condition Based Search
+### Ricerca basata su condizioni
 
-You can even use conditions like for triggers and schedulers to search via
-API. If you don't want to build such conditions manually, you can find a
-hint below how to quickly build a condition structure via UI and fetch it
-for your API request.
+Puoi anche usare condizioni come per trigger e scheduler per cercare tramite
+API. Se non.
 
-So, how do I build such a condition based request?
+Quindi, come costruisco una tale richiesta basata su condizioni?
 
-- In Zammad, go to the admin interface and create a condition, e.g. by
-  creating a new overview or trigger. It can be inactive so you won't have
-  any unwanted actions or changes.
-- Go to the `Rails console </admin/console>`, either by using `rails c` /
-  `zammad run rails c` or adding the prefix `rails r` / `zammad run rails r`
-  in front of the commands below, depending on your setup.
-- Search for the created condition, adjust the following examples to your
-  needs:
+- In Zammad, vai all'interfaccia di amministrazione e crea una condizione,
+  ad esempio creando una nuova panoramica.
+- Vai alla `console Rails </admin/console>`, usando `rails c` / `zammad run
+  rails.
+- Cerca la condizione creata, regola i seguenti esempi alle tue esigenze:
 
 ``` ruby
 puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json
@@ -273,60 +247,60 @@ puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to
 puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json
 ```
 
-This leads to an output like the following:
+Questo porta a un output come il seguente:
 
 ::: details
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 
-Use this as payload in your `POST`-Request in an endpoint search. The
-response includes the same objects as the trigger or overview you created.
+Usa questo come payload nella tua richiesta `POST` in una ricerca
+endpoint. La risposta include.
 
-## Sorting Search Results
+## Ordinamento risultati di ricerca
 
-Zammad allows you to sort your search results by field if needed.
+Zammad ti permette di ordinare i tuoi risultati di ricerca per campo se
+necessario.
 
 ### `sort_by`
 
-Append `?sort_by={row name}` to your query to sort by a specific row that
-appears in the search result.
+Aggiungi `?sort_by={row name}` alla tua query per ordinare per una riga
+specifica che appare nella.
 
 ### `order_by`
 
-Append `?order_by={direction}` to your query to switch in between ascending
-and descending order.
+Aggiungi `?order_by={direction}` alla tua query per passare tra crescente e
+decrescente.
 
-Directions are: `asc` and `desc`.
+Le direzioni sono: `asc` e `desc`.
 
 :::tip
-Usually you'll want to combine both parameters in your searches -
-e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`
+Solitamente vorrai combinare entrambi i parametri nelle tue ricerche -
+ad esempio: `?query={search st
 :::
 
-## Actions On Behalf of Other Users
+## Azioni per conto di altri utenti
 
-**Requirement:** the user used for running the query on behalf requires
-`admin.user` permission.
+**Requisito:** l'utente usato per eseguire la query per conto richiede
+il permesso `admin.user`.
 
-Running API queries on behalf of other users allows you to e.g. create
-tickets by a different user.
+Eseguire query API per conto di altri utenti ti permette ad esempio di
+creare ticket da un diverso.
 
-To do so, add a new HTTP header named `From` to your request. The value of
-this header can be one of the following:
+Per farlo, aggiungi una nuova intestazione HTTP chiamata `From` alla tua
+richiesta. Il valore di questa intestazione può essere.
 
-- user ID
-- user login
-- user email
+- ID utente
+- login utente
+- email utente
 
-`From` is available for all endpoints.
+`From` è disponibile per tutti gli endpoint.
 
-## Encoding
+## Codifica
 
-The API expects UTF-8 encoding. Keep in mind that especially when using URLs
-with get options (e.g. `?query=this`) you may need to encode your URL
-accordingly.
+L'API si aspetta la codifica UTF-8. Tieni presente che specialmente quando
+usi URL con opzioni get.
 
-If you want to learn more about URL encoding, [this Wikipedia
-article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
+Se vuoi saperne di più sulla codifica URL, [questo articolo di
+Wikipedia](https://en.wikipedi
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**n

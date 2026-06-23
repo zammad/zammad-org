@@ -1,29 +1,28 @@
 ---
 order: 20
-title: 'Ticket Summary'
+title: 'Riepilogo del Ticket'
 ---
 
-# Ticket Summary
+# Riepilogo del Ticket
 
-## Show/Trigger
+## Mostra/Attiva
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`
+Richiesta `POST` inviata: `/api/v1/tickets/{ticket id}/summarize`
 
-The ticket summarize endpoint uses `POST` because creating and fetching the
-summary happen in a single operation:
+L'endpoint di riepilogo ticket usa `POST` perché creare e recuperare il
+riepilogo avviene.
 
-- If a summary exists, it is returned.
-- If a summary does not exist, creation is triggered in the background
-  (async job).
+- Se esiste un riepilogo, viene restituito.
+- Se non esiste un riepilogo, la creazione viene attivata in background (job
+  asincrono).
 
-Using `GET` would be incorrect since the call may also create data. If you
-want a summary to exist, call the endpoint; if it's not ready yet, retry
-after at least 30 seconds.
+Usare `GET` sarebbe scorretto poiché la chiamata può anche creare dati. Se
+vuoi un riepilogo.
 
-Sample response if the generation of a new summary was just triggered by the
-request:
+Risposta di esempio se la generazione di un nuovo riepilogo è stata appena
+attivata dalla richiesta:
 
 ::: details
 
@@ -31,8 +30,8 @@ request:
 
 :::
 
-Sample response for an existing summary (e.g. for the same ticket like above
-after waiting until creation has finished):
+Risposta di esempio per un riepilogo esistente (ad esempio per lo stesso
+ticket sopra dopo aver atteso.
 
 ::: details
 

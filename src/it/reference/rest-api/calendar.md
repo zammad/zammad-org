@@ -1,19 +1,19 @@
 ---
 order: 3
-title: Calendar
+title: Calendario
 ---
 
-# Calendar
+# Calendario
 
 :::tip
-Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).
+I calendari appartengono al [calcolo SLA](/it/reference/rest-api/sla) di Zammad.
 :::
 
-## List
+## Elenca
 
-Required permission: `admin.calendar`
+Permesso richiesto: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars`
+Richiesta `GET` inviata: `/api/v1/calendars`
 
 ::: details
 
@@ -21,11 +21,11 @@ Required permission: `admin.calendar`
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `admin.calendar`
+Permesso richiesto: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars/{id}`
+Richiesta `GET` inviata: `/api/v1/calendars/{id}`
 
 ::: details
 
@@ -33,63 +33,59 @@ Required permission: `admin.calendar`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.calendar`
+Permesso richiesto: `admin.calendar`
 
-`POST`-Request sent: `/api/v1/calendars`
+Richiesta `POST` inviata: `/api/v1/calendars`
 
 :::: details
 
 ::: tabs key:req-res
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/calendars/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/calendars/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.calendar`
+Permesso richiesto: `admin.calendar`
 
-`PUT`-Request sent: `/api/v1/calendars/{id}`
+Richiesta `PUT` inviata: `/api/v1/calendars/{id}`
 
 :::: details
 
 ::: tabs key:req-res
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/calendars/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/calendars/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
-Required permission: `admin.calendar`
+Permesso richiesto: `admin.calendar`
 
-`DELETE`-Request sent: `/api/v1/calendars/{id}`
+Richiesta `DELETE` inviata: `/api/v1/calendars/{id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Questa è una rimozione permanente**:
 
-Please note that removing Calendar configurations cannot be undone.
-
-Removing calendars with references in SLA configurations is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Tieni presente che rimuovere configurazioni Calendario non può essere annullato.
 :::
 
 ::: details

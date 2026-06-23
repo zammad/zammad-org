@@ -1,41 +1,37 @@
 ---
 order: 5
-title: 'Docker Compose Scenarios'
+title: 'Scenari Docker Compose'
 ---
 
-# Docker Compose Scenarios
+# Scenari Docker Compose
 
-## Overview
+## Panoramica
 
-If the "vanilla" Zammad stack doesn't cover your use-case, you can use one
-of the pre-defined scenarios. We don't recommend to change the Compose files
-locally, because it will be hard to keep track of upstream changes for the
-stack then. This is why you should either use Portainer's repository build
-method or clone the repository and update it regularly, when using Docker
-Compose.
+Se lo stack Zammad "vanilla" non copre il tuo caso d'uso, puoi usare uno
+degli scenari predefiniti.
 
-The following scenarios are supported and explained further below:
+I seguenti scenari sono supportati e spiegati più avanti:
 
-- [Making the stack available via
+- [Rendere lo stack disponibile tramite
   HTTPS](#making-the-stack-available-via-https)
-  - Add a Cloudflare tunnel service to the stack
-  - Add a Nginx Proxy Manager (NPM) to the stack
-  - Add an external Docker network to Nginx
-- [Using external services](#using-external-services)
-  - Disable Elasticsearch service
-- [Making services externally
-  available](#making-services-externally-available)
-  - Add an external Docker network to Elasticsearch
-  - Add an host port to Elasticsearch
-- [Additional scenarios](#additional-scenarios)
-  - Disable the backup service
-  - Add an Ollama instance to the stack
-  - Limit hardware resources of the stack
+  - Aggiungi un servizio tunnel Cloudflare allo stack
+  - Aggiungi un Nginx Proxy Manager (NPM) allo stack
+  - Aggiungi una rete Docker esterna a Nginx
+- [Usare servizi esterni](#using-external-services)
+  - Disabilita il servizio Elasticsearch
+- [Rendere i servizi disponibili
+  esternamente](#making-services-externally-available)
+  - Aggiungi una rete Docker esterna a Elasticsearch
+  - Aggiungi una porta host a Elasticsearch
+- [Scenari aggiuntivi](#additional-scenarios)
+  - Disabilita il servizio di backup
+  - Aggiungi un'istanza Ollama allo stack
+  - Limita le risorse hardware dello stack
 
-You can find the files in the [Zammad-Docker-Compose
-repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
+Puoi trovare i file nel [repository
+Zammad-Docker-Compose](https://github.com/zammad
 
-## General Usage
+## Utilizzo generale
 
 ::: tabs
 
@@ -63,159 +59,139 @@ by adding additional files according to the example above.
 
 :::
 
-## Making the Stack Available via HTTPS
+## Rendere lo stack disponibile tramite HTTPS
 
-If you set up Zammad for production use, it needs to be secured by using an
-HTTPS connection. There are different scenarios for achieving this:
+Se configuri Zammad per l'uso in produzione, deve essere protetto usando una
+connessione HTTPS.
 
-### Add Cloudflare Tunnel
+### Aggiungi un tunnel Cloudflare
 
-If you want to publish Zammad in a very convenient way, you can use a
-[Cloudflare](https://www.cloudflare.com/) tunnel.
+Se vuoi pubblicare Zammad in modo molto comodo, puoi usare un tunnel
+[Cloudflare](https:/
 
-- Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment
-- Add a sub-domain to an already existing domain in your Cloudflare
-  dashboard
-- Create a tunnel for this subdomain and configure it to forward traffic to
-  your zammad-nginx service with `http://zammad-nginx:8080`
-- Provide your Cloudflare tunnel token to the Zammad stack by using the
-  environment variable `CLOUDFLARE_TUNNEL_TOKEN`
+- Usa il file di scenario `scenarios/add-cloudflare-tunnel.yml` per la
+  distribuzione
+- Aggiungi un sotto-dominio a un dominio già esistente nella tua dashboard
+  Cloudflare
+- Crea un tunnel per questo sottodominio e configuralo per inoltrare il
+  traffico al tuo zammad-ngin
+- Fornisci il tuo token tunnel Cloudflare allo stack Zammad usando la
+  variabile d'ambiente
 
-### Add Nginx Proxy Manager
+### Aggiungi Nginx Proxy Manager
 
-A very common setup of publishing web services is to use a reverse proxy,
-which handles the SSL termination. One common tool is the Nginx Proxy
-Manager (NPM), which can be configured via UI quite simply. If you don't
-have a reverse proxy already, this might be a useful scenario for you. If
-you already have a running reverse proxy, head over to the next section.
+Una configurazione molto comune per pubblicare servizi web è usare un
+reverse proxy.
 
-- Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for
-  deployment
-- Provide your FQDN for Zammad by using the environment variable
+- Usa il file di scenario `scenarios/add-nginx-proxy-manager.yml` per la
+  distribuzione
+- Fornisci il tuo FQDN per Zammad usando la variabile d'ambiente
   `ZAMMAD_FQDN`
-- Configure your DNS. The chosen Zammad FQDN should point to the IP address
-  of the NPM host
-- Configure a new proxy host in your NPM and follow the steps to get an SSL
-  certificate
+- Configura il tuo DNS. Il FQDN di Zammad scelto dovrebbe puntare
+  all'indirizzo IP dell'host NPM.
+- Configura un nuovo host proxy nel tuo NPM e segui i passaggi per ottenere
+  un certificato SSL
 
-### Add External Docker Network to Nginx
+### Aggiungi una rete Docker esterna a Nginx
 
-If you already have a reverse proxy which takes care about the SSL
-termination, this scenario is helpful. It adds an external Docker network to
-Zammad's included Nginx service to be able to access it from a reverse proxy
-that is not part of the Zammad stack's network.
+Se hai già un reverse proxy che si occupa della terminazione SSL, questo
+scenario fa per te.
 
-- Use the scenario file `scenarios/add-external-network-to-nginx.yml` for
-  deployment
-- Provide the name of your external network by using the environment
-  variable `ZAMMAD_NGINX_EXTERNAL_NETWORK`
+- Usa il file di scenario `scenarios/add-external-network-to-nginx.yml` per
+  la distribuzione
+- Fornisci il nome della tua rete esterna usando la variabile d'ambiente
+  `ZAMMAD_NGINX_
 
-## Using External Services
+## Usare servizi esterni
 
-### Disable Elasticsearch Service
+### Disabilita il servizio Elasticsearch
 
-Do you have an Elasticsearch instance already running and want to use it for
-Zammad, too? Then you can disable the Elasticsearch service in the Zammad
-stack to save resources.
+Hai già un'istanza Elasticsearch in esecuzione e vuoi usarla anche per
+Zammad?
 
-- Use the scenario file `scenarios/disable-elasticsearch-service.yml` for
-  deployment - this will turn off the built-in service for Elasticsearch
-- Use the following environment variables to provide information about the
-  connection to your existing Elasticsearch instance:
+- Usa il file di scenario `scenarios/disable-elasticsearch-service.yml` per
+  la distribuzione - questo
+- Usa le seguenti variabili d'ambiente per fornire informazioni sulla
+  connessione alla tua istanza:
   - `ELASTICSEARCH_SCHEMA`
   - `ELASTICSEARCH_HOST`
   - `ELASTICSEARCH_PORT`
   - `ELASTICSEARCH_USER`
   - `ELASTICSEARCH_PASS`
 
-## Making Services Externally Available
+## Rendere i servizi disponibili esternamente
 
-These scenarios are meant to connect from external applications to Zammad
-services. Depending on where your external service is hosted, you can use
-one of the following scenarios.
+Questi scenari servono a collegare applicazioni esterne ai servizi di
+Zammad. A seconda
 
 ::: danger
 
-When exposing Elasticsearch outside the stack, make sure to set the variable `ELASTICSEARCH_PASS` to a custom value
-first! Otherwise this is a big security issue because the Elasticsearch index contains most of Zammad's data.
+Quando esponi Elasticsearch fuori dallo stack, assicurati di impostare la variabile `ELASTICSEAR
 
 :::
 
 ::: tip
 
-If you want to use TLS, you have to connect to Elasticsearch via reverse proxy.
+Se vuoi usare TLS, devi connetterti a Elasticsearch tramite reverse proxy.
 
 :::
 
-### Add External Docker Network to Elasticsearch
+### Aggiungi una rete Docker esterna a Elasticsearch
 
-A common use case for this is to use a reporting/visualization tool like
-Grafana on the same host in another stack.  Because such tools need to
-access the Elasticsearch index, the network of the other stack has to be
-added to Zammad's Elasticsearch container.
+Un caso d'uso comune per questo è usare uno strumento di
+reporting/visualizzazione come Grafana sulla stessa rete.
 
-- Use the scenario file
-  `scenarios/add-external-network-to-elasticsearch.yml` for deployment
-- Provide the name of your external network by using the environment
-  variable `ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`
+- Usa il file di scenario
+  `scenarios/add-external-network-to-elasticsearch.yml` per la distribuzione
+- Fornisci il nome della tua rete esterna usando la variabile d'ambiente
+  `ZAMMAD_ELASTI
 
-### Add Host Port to Elasticsearch
+### Aggiungi una porta host a Elasticsearch
 
-In case you want to expose the Elasticsearch service of the Zammad stack in
-the network, you can assign a host port to the container. This is useful if
-you need to access the Elasticsearch container from a different host.
+Nel caso tu voglia esporre il servizio Elasticsearch dello stack Zammad
+nella rete.
 
-- Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for
-  deployment
-- The default port for Elasticsearch is `9200`. Change it to another port by
-  using the environment variable `ELASTICSEARCH_EXPOSE_HTTP_PORT`
+- Usa il file di scenario `scenarios/add-hostport-to-elasticsearch.yml` per
+  la distribuzione
+- La porta predefinita per Elasticsearch è `9200`. Cambiala con un'altra
+  porta usando la variabile d'ambiente.
 
-## Additional Scenarios
+## Scenari aggiuntivi
 
-### Disable Backup Service
+### Disabilita il servizio di backup
 
-In case you want to handle backups in a different way, you can disable the
-built in backup service in the stack to save resources.
+Nel caso tu voglia gestire i backup in modo diverso, puoi disabilitare il
+servizio di backup integrato.
 
-You can do so by just using the scenario file
-`scenarios/disable-backup-service.yml` for deployment.
+Puoi farlo semplicemente usando il file di scenario
+`scenarios/disable-backup-service.yml`.
 
-### Add Ollama
+### Aggiungi Ollama
 
-You can spin up an additional [Ollama](https://ollama.com/) container to use
-Zammad's AI features on your machine.
+Puoi avviare un container [Ollama](https://ollama.com/) aggiuntivo per usare
+le funzionalità AI di Zammad.
 
 ::: info
-This is intended for development or testing purposes as running a productive LLM stack is complex.
+Questo è pensato per scopi di sviluppo o test, poiché eseguire uno stack LLM produttivo è.
 :::
 
-To deploy an Ollama container inside the Zammad stack, use the scenario file
-`scenarios/add-ollama.yml`. This creates an Ollama container which
-automatically pulls and serves `Llama3.2` to be ready to use/test AI
-features out of the box.
+Per distribuire un container Ollama all'interno dello stack Zammad, usa il
+file di scenario `scenarios/ad`.
 
-To use it in Zammad, add the service name and port (`http://ollama:11434`)
-to the provider configuration.
+Per usarlo in Zammad, aggiungi il nome del servizio e la porta
+(`http://ollama:11434`) al provider.
 
-### Limit Resources
+### Limita le risorse
 
-If you want to limit the hardware resources the Zammad stack is allowed to
-use, use the `scenarios/apply-resource-limits.yml` scenario. Default values
-for CPU and memory usage for each container in the stack are applied
-then. You can find these default values in the `.env.dist` file. Provide the
-changed variables you want to use as environment variables and deploy the
-stack.
+Se vuoi limitare le risorse hardware che lo stack Zammad può usare, usa il
+file `s`.
 
-### Other Use Cases
+### Altri casi d'uso
 
-Your scenario is not covered yet? Feel free to suggest your use case. We
-plan to add more common use cases to the stack in future.
+Il tuo scenario non è ancora coperto? Suggerisci pure il tuo caso
+d'uso. Prevediamo di aggiungerne altri.
 
-## Customize the Stack Locally
+## Personalizza lo stack localmente
 
-Sometimes it's necessary to apply local changes to the Zammad Docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker
-Compose will [automatically load this file and merge its changes into your
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+A volte è necessario applicare modifiche locali allo stack Docker di Zammad,
+ad esempio per includere.

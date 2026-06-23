@@ -5,28 +5,27 @@ title: Checklist
 
 # Checklist
 
-Zammad has different checklist endpoints:
+Zammad ha diversi endpoint per le checklist:
 
-- [Checklists](#checklists)
-- [Checklist items](#checklist-items)
-- [Checklist templates](#checklist-templates)
-
-:::info
-_Checklist templates_ include their items whereas the _standard
-checklist_ has a separate item endpoint.
-:::
-
-## Checklists
+- [Checklist](#checklists)
+- [Elementi checklist](#checklist-items)
+- [Modelli checklist](#checklist-templates)
 
 :::info
-To add checklist items, use the [checklist items endpoint](#checklist-items).
+I _modelli checklist_ includono i loro elementi mentre la _checklist standard_ ha un endpoint separato.
 :::
 
-### Show
+## Checklist
 
-Required permission: `ticket.agent`
+:::info
+Per aggiungere elementi alla checklist, usa l'[endpoint elementi checklist](#checklist-items).
+:::
 
-`GET`-Request sent: `/api/v1/checklists/{checklist id}`
+### Mostra
+
+Permesso richiesto: `ticket.agent`
+
+Richiesta `GET` inviata: `/api/v1/checklists/{checklist id}`
 
 ::: details
 
@@ -35,56 +34,56 @@ Required permission: `ticket.agent`
 :::
 
 ::: tip
-You can find the `checklist_id` attribute of a ticket by sending a `GET` request to `/api/v1/tickets/{ticket id}`.
+Puoi trovare l'attributo `checklist_id` di un ticket inviando una richiesta `GET` a `/api/
 :::
 
-### Create
+### Crea
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklists`
+Richiesta `POST` inviata: `/api/v1/checklists`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklists/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklists/post-res.json
 
 :::
 ::::
 
-### Update
+### Aggiornamento
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklists/{checklist id}`
+Richiesta `PATCH` inviata: `/api/v1/checklists/{checklist id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklists/patch-checklist-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklists/patch-checklist-id-res.json
 
 :::
 ::::
 
-### Delete
+### Elimina
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklists/{checklist id}`
+Richiesta `DELETE` inviata: `/api/v1/checklists/{checklist id}`
 
 ::: details
 
@@ -92,13 +91,13 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Items
+## Elementi checklist
 
-### Show
+### Mostra
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+Richiesta `GET` inviata: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details
 
@@ -106,53 +105,53 @@ Required permission: `ticket.agent`
 
 :::
 
-### Create
+### Crea
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklist_items`
+Richiesta `POST` inviata: `/api/v1/checklist_items`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklist_items/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklist_items/post-res.json
 
 :::
 ::::
 
-### Update
+### Aggiornamento
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+Richiesta `PATCH` inviata: `/api/v1/checklist_items/{checklist item id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklist_items/patch-checklist-item-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklist_items/patch-checklist-item-id-res.json
 
 :::
 ::::
 
-### Delete
+### Elimina
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+Richiesta `DELETE` inviata: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details
 
@@ -160,13 +159,13 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Templates
+## Modelli checklist
 
-### List
+### Elenca
 
-Required permission: `admin.checklists`
+Permesso richiesto: `admin.checklists`
 
-`GET`-Request sent: `/api/v1/checklist_templates`
+Richiesta `GET` inviata: `/api/v1/checklist_templates`
 
 ::: details
 
@@ -174,11 +173,12 @@ Required permission: `admin.checklists`
 
 :::
 
-### Show
+### Mostra
 
-Required permission: `admin.checklists` or `ticket.agent`
+Permesso richiesto: `admin.checklists` o `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+Richiesta `GET` inviata: `/api/v1/checklist_templates/{checklist template
+id}`
 
 ::: details
 
@@ -186,53 +186,55 @@ Required permission: `admin.checklists` or `ticket.agent`
 
 :::
 
-### Create
+### Crea
 
-Required permission: `admin.checklists`
+Permesso richiesto: `admin.checklists`
 
-`POST`-Request sent: `/api/v1/checklist_templates`
+Richiesta `POST` inviata: `/api/v1/checklist_templates`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklist_templates/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklist_templates/post-res.json
 
 :::
 ::::
 
-### Update
+### Aggiornamento
 
-Required permission: `admin.checklists`
+Permesso richiesto: `admin.checklists`
 
-`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+Richiesta `PATCH` inviata: `/api/v1/checklist_templates/{checklist template
+id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/checklist_templates/patch-checklist-template-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/checklist_templates/patch-checklist-template-id-res.json
 
 :::
 ::::
 
-### Delete
+### Elimina
 
-Required permission: `admin.checklists`
+Permesso richiesto: `admin.checklists`
 
-`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+Richiesta `DELETE` inviata: `/api/v1/checklist_templates/{checklist template
+id}`
 
 ::: details
 

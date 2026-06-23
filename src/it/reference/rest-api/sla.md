@@ -3,31 +3,31 @@ order: 16
 title: SLA
 ---
 
-# Service-Level Agreements (SLA)
+# Accordi sul livello di servizio (SLA)
 
 ::: tip
-SLAs depend on [Zammad's calendars](/en/reference/rest-api/calendar).
+Gli SLA dipendono dai [calendari di Zammad](/it/reference/rest-api/calendar).
 :::
 
-## List
+## Elenca
 
-Required permission: `admin.sla`
+Permesso richiesto: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas`
+Richiesta `GET` inviata: `/api/v1/slas`
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/slas/get-res.json
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `admin.sla`
+Permesso richiesto: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas/{id}`
+Richiesta `GET` inviata: `/api/v1/slas/{id}`
 
 ::: details
 
@@ -35,63 +35,63 @@ Required permission: `admin.sla`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.sla`
+Permesso richiesto: `admin.sla`
 
-`POST`-Request sent: `/api/v1/slas`
+Richiesta `POST` inviata: `/api/v1/slas`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/slas/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/slas/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.sla`
+Permesso richiesto: `admin.sla`
 
-`PUT`-Request sent: `/api/v1/slas/{id}`
+Richiesta `PUT` inviata: `/api/v1/slas/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/slas/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/slas/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
-Required permission: `admin.sla`
+Permesso richiesto: `admin.sla`
 
-`DELETE`-Request sent: `/api/v1/slas/{id}`
+Richiesta `DELETE` inviata: `/api/v1/slas/{id}`
 
 ::: danger
-**This is a permanent removal!**
+**Questa è una rimozione permanente!**
 
-Please note that removing SLA configurations cannot be undone.
+Tieni presente che rimuovere configurazioni SLA non può essere annullato.
 :::
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/slas/delete-id-res.json
 

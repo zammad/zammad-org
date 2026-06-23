@@ -1,118 +1,125 @@
 ---
 order: 1
-title: Overviews
+title: Panoramiche
 ---
 
-# Overviews
+# Panoramiche
 
-![Screenshot shows opened overview
-section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
+![Screenshot che mostra la sezione panoramiche
+aperta](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
 
-## Introduction
+## Introduzione
 
-Overviews are a core component of Zammad. Open them by clicking the
-`Overviews` button in the navigation bar or use the keyboard shortcut
-[[o]]. You can think of overviews as a kind of email inbox with different
-folders. Use them to find new tickets that you want to process and to keep
-track of tickets that have not yet been completed.
+Le panoramiche sono un componente fondamentale di Zammad. Aprile facendo
+clic sul pulsante `Panoramiche` nella barra di navigazione o usa la
+scorciatoia da tastiera [[o]]. Puoi pensare alle panoramiche come a un tipo
+di casella di posta elettronica con cartelle diverse. Usale per trovare
+nuovi ticket da elaborare e per tenere traccia dei ticket non ancora
+completati.
 
-Depending on your system configuration and what your Zammad admin set up,
-you can find different overviews there, for example:
+A seconda della configurazione del sistema e di cosa ha impostato il tuo
+amministratore Zammad, puoi trovare lì diverse panoramiche, ad esempio:
 
-- Your assigned tickets
-- Unassigned and open tickets
-- Pending reached tickets
-- Escalated tickets
+- I tuoi ticket assegnati
+- Ticket non assegnati e aperti
+- Ticket con promemoria raggiunto
+- Ticket escalati
 
-Selecting an overview in the second level navigation shows you a table which
-includes matching tickets.
+Selezionare una panoramica nella navigazione di secondo livello mostra una
+tabella che include i ticket corrispondenti.
 
-## Usage and Features
+## Utilizzo e funzionalità
 
-Overviews can be defined by admins based on rules and conditions. That means
-if a ticket has been changed and the condition of the overview isn't
-matching anymore, the ticket is no longer visible in this overview.
+Le panoramiche possono essere definite dagli amministratori in base a regole
+e condizioni. Ciò significa che se un ticket è stato modificato e la
+condizione della panoramica non corrisponde più, il ticket non è più
+visibile in questa panoramica.
 
-Overviews are updated automatically. You don't have to reload your browser
-to observe changes. You can adjust the order temporarily by clicking on one
-of the column headers as well as change their width by dragging the column
-dividers.  The order is only preserved until you switch to another overview
-or reload the page.
+Le panoramiche vengono aggiornate automaticamente. Non devi ricaricare il
+browser per osservare le modifiche. Puoi regolare l'ordine temporaneamente
+facendo clic su una delle intestazioni di colonna nonché modificare la
+larghezza trascinando i divisori di colonna. L'ordine viene preservato solo
+finché non passi a un'altra panoramica o ricarichi la pagina.
 
-For each overview, you can find a badge attached. The number in this badge
-tells you how many tickets are in each overview.
+Per ogni panoramica, puoi trovare un badge allegato. Il numero in questo
+badge ti dice quanti ticket ci sono in ogni panoramica.
 
-The ticket lists in overviews can also be grouped by a specific attribute
-(e.g. customer, organization, owner). This has to be adjusted by your Zammad
-admin. If a grouping is activated, you can find a badge with a counter of
-the included tickets there as well.
+Gli elenchi di ticket nelle panoramiche possono anche essere raggruppati per
+un attributo specifico (ad esempio cliente, organizzazione,
+proprietario). Questo deve essere regolato dal tuo amministratore Zammad. Se
+un raggruppamento è attivato, puoi trovare lì anche un badge con un
+contatore dei ticket inclusi.
 
-Depending on what you are searching for, select a fitting overview and start
-working on a ticket.
+A seconda di cosa stai cercando, seleziona una panoramica adatta e inizia a
+lavorare su un ticket.
 
 ::: tip
-If you miss an overview or want to have different settings, let your Zammad admin know!
+Se ti manca una panoramica o vuoi avere impostazioni diverse, fai sapere al tuo amministratore Zammad!
 :::
 
-### Color Coded State and Priority
+### Stato e priorità codificati per colore
 
-To visualize different ticket states and priorities, the entries in the
-table are color coded.
+Per visualizzare diversi stati e priorità dei ticket, le voci nella tabella
+sono codificate per colore.
 
-The icon next to the ticket title mainly represents the need for action:
+L'icona accanto al titolo del ticket rappresenta principalmente la necessità
+di azione:
 
-![Screenshot shows ticket
-states](/screenshots/documentation/use/overviews/states.png)
+![Screenshot che mostra gli stati dei
+ticket](/screenshots/documentation/use/overviews/states.png)
 
-- Yellow circle: action needed (e.g. new, open, pending reached)
-- Grey circle: paused, no action needed right now (e.g. pending)
-- Green circle: no action needed any more (e.g. closed, merged)
-- Red triangle: immediate action needed (ticket escalated due to an SLA
-  violation)
+- Cerchio giallo: azione necessaria (ad esempio nuovo, aperto, promemoria
+  raggiunto)
+- Cerchio grigio: in pausa, nessuna azione necessaria ora (ad esempio in
+  attesa)
+- Cerchio verde: nessuna azione più necessaria (ad esempio chiuso, unito)
+- Triangolo rosso: azione immediata necessaria (ticket escalato a causa di
+  una violazione SLA)
 
-If you spot a circle with a blue/pink gradient, it indicates that an [AI
-agent](ai#ai-agents) is currently working on the ticket.
+Se vedi un cerchio con un gradiente blu/rosa, indica che un [agente
+AI](ai#ai-agents) sta attualmente lavorando sul ticket.
 
-The **priority** is represented by the color of the ticket title:
+La **priorità** è rappresentata dal colore del titolo del ticket:
 
-![Screenshot shows ticket
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Screenshot che mostra le priorità dei
+ticket](/screenshots/documentation/use/overviews/priorities.png)
 
-- 1 low: gray
-- 2 normal: blue
-- 3 high: red
+- 1 bassa: grigio
+- 2 normale: blu
+- 3 alta: rosso
 
-### Open a Ticket
+### Apri un ticket
 
-Open a ticket by simply clicking on the line. This opens the ticket as a tab
-in the left navigation bar and shows you the ticket detail view. If this
-ticket is already present in your navigation bar, it activates this tab
-instead of opening a duplicate tab.
+Apri un ticket semplicemente facendo clic sulla riga. Questo apre il ticket
+come scheda nella barra di navigazione sinistra e ti mostra la
+visualizzazione dettagli ticket. Se questo ticket è già presente nella tua
+barra di navigazione, attiva questa scheda invece di aprire una scheda
+duplicata.
 
-If an overview contains more than one ticket and you open one of the
-tickets, you can find arrows in the ticket detail view header to switch to
-the next/previous ticket of this overview.
+Se una panoramica contiene più di un ticket e ne apri uno, puoi trovare
+frecce nell'intestazione della visualizzazione dettagli ticket per passare
+al ticket successivo/precedente di questa panoramica.
 
-### Bulk Actions
+### Azioni bulk
 
-Perform bulk actions by selecting multiple tickets and either use the
-drop-down fields or drag them with the mouse to invoke the bulk action
-overlay. You can find more information about that in the [Bulk
-Actions](../advanced-features#bulk-actions) section in the advanced features
-page.
+Esegui azioni bulk selezionando più ticket e usa i campi a tendina o
+trascinali con il mouse per invocare l'overlay dell'azione bulk. Puoi
+trovare maggiori informazioni al riguardo nella sezione [Azioni
+bulk](../advanced-features#bulk-actions) nella pagina delle funzionalità
+avanzate.
 
-### Reorder Overviews
+### Riordina panoramiche
 
-If the order of the overviews doesn't reflect your working process or you
-just like to have a different order, you can re-arrange them for your
-account. Use the `reorder items` button at the very top of the second level
-navigation bar, which opens your [profile
-settings](/en/documentation/use/user-profile#overviews) where you can define
-a custom order for your overviews.
+Se l'ordine delle panoramiche non riflette il tuo processo di lavoro o vuoi
+semplicemente avere un ordine diverso, puoi riorganizzarle per il tuo
+account. Usa il pulsante `riordina elementi` in cima alla barra di
+navigazione di secondo livello, che apre le tue [impostazioni del
+profilo](/it/documentation/use/user-profile#overviews) dove puoi definire un
+ordine personalizzato per le tue panoramiche.
 
-To change the order, simply drag & drop them by clicking the handles on the
-left side.
+Per cambiare l'ordine, trascina e rilascia semplicemente facendo clic sulle
+maniglie sul lato sinistro.
 
-If your admin changes the order, your custom order is preserved. You can
-switch back to your admin's order by clicking the `Reset Overview Order`
-button.
+Se il tuo amministratore cambia l'ordine, il tuo ordine personalizzato viene
+preservato. Puoi tornare all'ordine del tuo amministratore facendo clic sul
+pulsante `Reimposta ordine panoramiche`.

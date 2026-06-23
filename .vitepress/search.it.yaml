@@ -4,16 +4,16 @@ translations:
     buttonAriaLabel: Cerca
     buttonText: Cerca
   modal:
-    backButtonTitle: 'Close search'
-    displayDetails: 'Display detailed list'
+    backButtonTitle: 'Chiudi ricerca'
+    displayDetails: 'Mostra elenco dettagliato'
     footer:
-      closeKeyAriaLabel: escape
-      closeText: 'to close'
-      navigateDownKeyAriaLabel: 'down arrow'
-      navigateText: 'to navigate'
-      navigateUpKeyAriaLabel: 'up arrow'
-      selectKeyAriaLabel: enter
-      selectText: 'to select'
-    noResultsText: 'No results for'
-    resetButtonTitle: 'Reset search'
+      closeKeyAriaLabel: Esc
+      closeText: 'per chiudere'
+      navigateDownKeyAriaLabel: 'freccia giù'
+      navigateText: 'per navigare'
+      navigateUpKeyAriaLabel: 'freccia su'
+      selectKeyAriaLabel: invio
+      selectText: 'per selezionare'
+    noResultsText: 'Nessun risultato per'
+    resetButtonTitle: 'Azzera ricerca'
   user: 'Use Zammad'

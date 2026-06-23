@@ -1,4 +1,4 @@
 ---
 order: 3
-title: 'Manage Zammad'
+title: 'Gestisci Zammad'
 ---

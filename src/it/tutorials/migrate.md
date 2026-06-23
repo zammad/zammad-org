@@ -1,183 +1,103 @@
 ---
 order: 10
-title: 'Migrate to Zammad'
+title: 'Migra a Zammad'
 ---
 
-# Migrate To Zammad
+# Migra a Zammad
 
-You can migrate the following data from another ticketing system to Zammad:
+Puoi migrare i seguenti dati da un altro sistema di ticketing a Zammad:
 
-- Tickets and their Articles
-- Groups / Queues
-- Organizations
-- Agents and Customers (if applicable)
+- Ticket e i loro articoli
+- Gruppi / Code
+- Organizzazioni
+- Agenti e clienti (se applicabile)
 
-After migrating to Zammad, you should first adjust your FQDN settings and HTTP
-type in Zammad's admin interface under _Settings > System > Base_.
-This is important because the getting started wizard is skipped by the
-migration.
+Dopo la migrazione a Zammad, dovresti prima regolare le impostazioni FQDN e il tipo HTTP
+in Zam
 
 After that, you may want to continue with the [First
 Steps](/en/tutorials/first-steps) to configure Zammad. This has to be done
 after migration.
 
-## General Limitations
+## Limitazioni generali
 
-There are some general limitations which you can find below. There could
-also be limitations, depending from which system you are coming. These are
-covered in the specific sections.
+Ci sono alcune limitazioni generali che trovi di seguito. Potrebbero esserci
+anche limitazioni.
 
-General limitations for all migrations:
+Limitazioni generali per tutte le migrazioni:
 
-- Migrations are only possible on new instances.
-- Migrations are only possible from one source. Several migration sources on
-  one instance are not supported.
-- Zammad can't migrate object types it doesn't know, migrations will fail.
-- Zammad migrates all or nothing. This means that you can't deselect
-  specific information specific groups, tickets or users.
+- Le migrazioni sono possibili solo su nuove istanze.
+- Le migrazioni sono possibili solo da una sorgente. Più sorgenti di
+  migrazione su un'istanza non sono.
+- Zammad non può migrare tipi di oggetto che non conosce, le migrazioni
+  falliranno.
+- Zammad migra tutto o niente. Ciò significa che non puoi deselezionare
+  informazioni specifiche.
 
-## Specific Migration Guides
+## Guide di migrazione specifiche
 
 :::info
 
-**Missing a migration source?**
+**Manca una sorgente di migrazione?**
 
-If your system it not mentioned yet, you'll have two options. You can either
-use Zammad's powerful API or drop our
-[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
-development or even migrator sponsoring.
-
-Migrations are available for hosted setups too! Contact support for further
-information!
+Se il tuo sistema non è ancora menzionato, hai due opzioni.
 :::
 
 ### Freshdesk
 
-#### Limitations
+#### Limitazioni
 
-Please note Freshdesk specific limitations below. These are additional
-limitations to the general ones listed.
+Tieni presente le limitazioni specifiche di Freshdesk di seguito. Queste
+sono limitazioni aggiuntive a quelle.
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Important: Please note that migration speed highly depends on your
-  Freshdesk plan (API rate limits apply).
-- Due to API limitations, Zammad will not show the total number of objects
-  to import, but instead correct them in steps of 100.
-- Your Freshdesk plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on Zammad's login page.
+- Le migrazioni differenziali non sono supportate! Il suggerimento generale
+  è eseguire un'importazione di test.
+- Importante: tieni presente che la velocità di migrazione dipende
+  fortemente dal tuo piano Freshdesk (limiti API.
+- A causa delle limitazioni API, Zammad non mostrerà il numero totale di
+  oggetti da importare, ma in.
+- Il tuo piano Freshdesk deve fornire supporto API. Questo potrebbe non
+  applicarsi a tutti i piani disponibili.
+- Le password utente non vengono migrate e richiederanno all'utente di usare
+  il link di reimpostazione password o.
 
-#### Prerequisites
+#### Prerequisiti
 
-Zammad requires API access which is why you'll need to [create an API
-key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
-for the migration. The migrator will request your Freshdesk subdomain and
-API key.
+Zammad richiede accesso API, motivo per cui dovrai [creare una chiave
+API](https://support
 
 :::warning
-Ensure to retrieve the API key with a full administrator account. Less
-privileged users will end in a broken migration.
+Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
+privilegi.
 :::
 
-#### Import
+#### Importazione
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
+piuttosto grande.
 
 ::::tabs
 
-=== Via Browser
+=== Tramite browser
 
-After installing Zammad and
-[configuring your webserver](./webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
-
-Depending on the number of users, tickets and Freshdesk plan this may take a
-while.
-
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
-
-If you receive above message after the migration begun, please consider using
-the console approach instead and reset the installation.
-
-=== Via Console
-
-Open console:
-
-```sh
-zammad run rails c
-```
-
-Set variables, replace the values in `{}` with your own:
-
-```ruby
-subdomain = '{freshdesk subdomain}.freshdesk.com'
-```
-
-```ruby
-token = '{freshdesk token}'
-```
-
-Update Zammad settings for freshdesk import:
-
-```ruby
-Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
-```
-
-```ruby
-Setting.set('import_freshdesk_endpoint_key', token)
-```
-
-```ruby
-Setting.set('import_backend', 'freshdesk')
-```
-
-```ruby
-Setting.set('import_mode', true)
-```
-
-Check your configuration in a dry run:
-
-```ruby
-Sequencer.process('Import::Freshdesk::ConnectionTest')
-```
-
-Run the migration:
-
-```ruby
-job = ImportJob.create(name: 'Import::Freshdesk')
-```
-
-```ruby
-AsyncImportJob.perform_later(job)
-```
+Dopo aver installato Zammad e
+[configurato il tuo server web](./webserver-con
 
 :::tip
 
-Want to see the progress of the migration?
+Vuoi vedere il progresso della migrazione?
 
-Use
+Usa
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Freshdesk')
-```
-
-which gives you an output of the current state of the job.
+pp ImportJob.find_by(name: 'Impo
 
 :::
 ::::
 
-#### After Migration
+#### Dopo la migrazione
 
-Run the following commands:
+Esegui i seguenti comandi:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -191,47 +111,46 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose API token you provided. Use the admins email
-address and API token provided during the migration to login.
+Accedi con l'utente di cui hai fornito il token API. Usa l'indirizzo email
+dell'amministratore e il token API.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Tutti gli altri utenti dovranno usare la funzione di reimpostazione password
+o metodi di accesso come LDAP o.
 
 ### Kayako
 
-Please note Freshdesk specific limitations below. These are additional
-limitations to the general ones listed.
+Tieni presente le limitazioni specifiche di Freshdesk di seguito. Queste
+sono limitazioni aggiuntive a quelle.
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Selfhosted installations (Kayako classic) are not supported.
-- The following ticket field customizations are being ignored (affects
-  “Scale” plan):
-  - Custom ticket states
-  - Custom ticket priorities
-  - Custom ticket types
-- Important: Please note that migration speed highly depends on your Kayako
-  plan (API rate limits apply).
-- Your Kayako plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on Zammad's login page.
+- Le migrazioni differenziali non sono supportate! Il suggerimento generale
+  è eseguire un'importazione di test.
+- Le installazioni self-hosted (Kayako classic) non sono supportate.
+- Le seguenti personalizzazioni dei campi ticket vengono ignorate (riguarda
+  il piano "Scale"):
+  - Stati ticket personalizzati
+  - Priorità ticket personalizzate
+  - Tipi ticket personalizzati
+- Importante: tieni presente che la velocità di migrazione dipende
+  fortemente dal tuo piano Kayako (limiti tasso API.
+- Il tuo piano Kayako deve fornire supporto API. Questo potrebbe non
+  applicarsi a tutti i piani disponibili.
+- Le password utente non vengono migrate e richiederanno all'utente di usare
+  il link di reimpostazione password o.
 
-#### Prerequisites
+#### Prerequisiti
 
-Zammad requires API access which is why the migrator will request your
-Kayako-URL, email address and password.
+Zammad richiede accesso API, motivo per cui il migratore richiederà il tuo
+URL Kayako, email e.
 
 :::warning
-Ensure to provide an user account with full administrative permissions. Less
-privileged users will end in a broken migration.
+Assicurati di fornire un account utente con permessi amministrativi completi. Utenti con meno
+privilegi.
 :::
 
-#### Import
+#### Importazione
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
+piuttosto grande.
 
 ::::tabs
 
@@ -316,22 +235,19 @@ AsyncImportJob.perform_later(job)
 
 :::tip
 
-Want to see the progress of the migration?
+Vuoi vedere il progresso della migrazione?
 
-Use
+Usa
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Kayako')
-```
-
-which gives you an output of the current state of the job.
+pp ImportJob.find_by(name: 'Impo
 
 :::
 ::::
 
-#### After Migration
+#### Dopo la migrazione
 
-Run the following commands:
+Esegui i seguenti comandi:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -345,29 +261,29 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose login credentials you provided. Use the admins
-email address and password provided during the migration to login.
+Accedi con l'utente di cui hai fornito le credenziali di accesso. Usa
+l'indirizzo email dell'amministratore e.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Tutti gli altri utenti dovranno usare la funzione di reimpostazione password
+o metodi di accesso come LDAP o.
 
 ### OTRS
 
-#### Limitations
+#### Limitazioni
 
-Additional limitations to the general one:
+Limitazioni aggiuntive a quella generale:
 
-- Supported OTRS versions are: 3.1 - 6.x
-- Password migration works for OTRS >= 3.3 only (on older instances a
-  password reset within Zammad will be required)
-- If you plan to import a differential migration after the main one, do not
-  change any data in Zammad!
-- Only customers of tickets are imported
-- Zammad expects your OTRS timestamps to be UTC and won't adjust them
+- Le versioni OTRS supportate sono: 3.1 - 6.x
+- La migrazione della password funziona solo per OTRS >= 3.3 (su istanze più
+  vecchie è necessaria una reimpostazione password).
+- Se prevedi di importare una migrazione differenziale dopo quella
+  principale, non modificare nessun dato.
+- Vengono importati solo i clienti dei ticket
+- Zammad si aspetta che i tuoi timestamp OTRS siano UTC e non li regolerà
 
-#### Prerequisites
+#### Prerequisiti
 
-**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**
+**Installa Znuny4OTRS-Repo che corrisponde alla tua versione OTRS (dipendenza del plugin di migrazione OTRS):**
 
 - [OTRS
   6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
@@ -378,36 +294,31 @@ Additional limitations to the general one:
 - [OTRS
   3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
 
-**Install OTRS migration plugin that matches your OTRS version:**
+**Installa il plugin di migrazione OTRS che corrisponde alla tua versione OTRS:**
 
 - [OTRS
   6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
 - [OTRS
   5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm)
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm)
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm
 
 ::: tip
-In some cases restarting your webserver may help to solve internal server
-errors.
+In alcuni casi riavviare il tuo server web può aiutare a risolvere errori interni del
+server.
 :::
 
-### Timeout Adjustments
+### Regolazioni timeout
 
-If your import runs in a timeout or you already know that this could be an
-issue, you can adjust timeouts via environment variables. To do so, set the
-environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and
-`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not
-set, the defaults apply:
+Se la tua importazione va in timeout o sai già che questo potrebbe essere un
+problema, puoi.
 
 |                                    | Zammad < 7.0 | Zammad ≥ 7.0  |
-|------------------------------------|--------------|---------------|
-| `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT`  | 120          | 600           |
-| `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` | 360          | 1200          |
+|-------------------
 
-#### Import
+#### Importazione
 
 :::tabs
 
@@ -466,9 +377,9 @@ Import::OTRS.diff_worker
 
 :::
 
-#### After Migration
+#### Dopo la migrazione
 
-Run the following commands:
+Esegui i seguenti comandi:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -484,38 +395,35 @@ Rails.cache.clear
 
 ### Zendesk
 
-#### Limitations
+#### Limitazioni
 
-Additional limitations to the general one:
+Limitazioni aggiuntive a quella generale:
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Important: Please note that migration speed highly depends on your Zendesk
-  plan (API rate limits apply).
-- Your Zendesk plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on the login page.
-- Objects with cyrillic strings can't be migrated. Make sure to rename them
-  before starting the migration.
+- Le migrazioni differenziali non sono supportate! Il suggerimento generale
+  è eseguire un'importazione di test.
+- Importante: tieni presente che la velocità di migrazione dipende
+  fortemente dal tuo piano Zendesk (limiti tasso API.
+- Il tuo piano Zendesk deve fornire supporto API. Questo potrebbe non
+  applicarsi a tutti i piani disponibili.
+- Le password utente non vengono migrate e richiederanno all'utente di usare
+  il link di reimpostazione password o.
+- Gli oggetti con stringhe cirilliche non possono essere migrati. Assicurati
+  di rinominarli prima di iniziare.
 
-#### Prerequisites
+#### Prerequisiti
 
-Zammad requires API access which is why you’ll need to [create an API
-key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
-for the migration. The migrator will request your Zendesk-URL, email address
-and API key.
+Zammad richiede accesso API, motivo per cui dovrai [creare una chiave
+API](https://support
 
 :::warning
-Ensure to retrieve the API key with a full administrator account. Less
-privileged users will end in a broken migration.
+Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
+privilegi.
 :::
 
-#### Import
+#### Importazione
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
+piuttosto grande.
 
 ::::tabs
 
@@ -593,23 +501,20 @@ AsyncImportJob.perform_later(job)
 
 :::tip
 
-Want to see the progress of the migration?
+Vuoi vedere il progresso della migrazione?
 
-Use
+Usa
 
 ```ruby
-pp ImportJob.find_by(name: 'Import::Freshdesk')
-```
-
-which gives you an output of the current state of the job.
+pp ImportJob.find_by(name: 'Impo
 
 :::
 
 ::::
 
-#### After Migration
+#### Dopo la migrazione
 
-Run the following commands:
+Esegui i seguenti comandi:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -623,8 +528,8 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose API token you provided. Use the admins email
-address and API token provided during the migration to login.
+Accedi con l'utente di cui hai fornito il token API. Usa l'indirizzo email
+dell'amministratore e il token API.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Tutti gli altri utenti dovranno usare la funzione di reimpostazione password
+o metodi di accesso come LDAP o.

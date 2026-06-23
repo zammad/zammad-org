@@ -1,100 +1,101 @@
 ---
 order: 1
-title: 'Zammad UI'
+title: 'Interfaccia utente di Zammad'
 ---
 
-# Zammad UI
+# Interfaccia utente di Zammad
 
-The user interface (UI) of Zammad is designed to provide an intuitive
-experience for users. It is built around the concept of simplicity, clarity,
-and accessibility and is based on common software design principles which
-should make the UI pretty self explanatory.
+L'interfaccia utente (UI) di Zammad è progettata per fornire un'esperienza
+intuitiva agli utenti. Si basa sul concetto di semplicità, chiarezza e
+accessibilità ed è basata su principi comuni di progettazione del software
+che dovrebbero rendere l'interfaccia utente piuttosto autoesplicativa.
 
-There are basic modular components for different features to keep the UI
-consistent. These components are described in the sections below. Depending
-on the currently opened screen, there are interactive components, such as
-tooltips and a contextual help. Use them wherever needed.
+Ci sono componenti modulari di base per diverse funzionalità per mantenere
+l'interfaccia utente coerente. Questi componenti sono descritti nelle
+sezioni seguenti. A seconda della schermata attualmente aperta, ci sono
+componenti interattivi, come tooltip e un aiuto contestuale. Usali dove
+necessario.
 
-![Screenshot shows the ticket detail
-view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
+![Screenshot che mostra la visualizzazione dettagli
+ticket](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
-## Main UI Elements
+## Elementi principali dell'interfaccia utente
 
-The screenshot above shows a ticket detail view in Zammad. Read on for a
-description of the different main elements of Zammad.
+Lo screenshot sopra mostra una visualizzazione dettagli ticket in
+Zammad. Continua a leggere per una descrizione dei diversi elementi
+principali di Zammad.
 
-Navigation Sidebar
-: This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket
-  create button.
+Barra laterale di navigazione
+: Questa è la barra laterale sinistra che include la ricerca, le notifiche, le panoramiche, le schede dei ticket, il tuo avatar e  
+     ilpulsante per creare un ticket.
 
-Navigation Tab
-: Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with
-  the ticket detail view) or the overview tab which opens the list of available overviews.
+Scheda di navigazione
+: Ogni elemento della barra laterale di navigazione è chiamato scheda di navigazione. A seconda del contenuto, può essere una 
+     scheda ticket (con la visualizzazione dei dettagli del ticket) o una scheda panoramica che apre l'elenco delle panoramiche disponibili.
 
-Ticket Detail View
-: This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is
-  selected in the navigation sidebar.
+Visualizzazione dettagli ticket
+: Qui puoi gestire le richieste dei tuoi clienti. Si trova al centro dello schermo se è selezionata una scheda ticket nella barra 
+     laterale di navigazione.
 
-Sidebar
-: This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and
-  displays the currently selected tab.
+Barra laterale
+: Questa è la barra laterale destra nella visualizzazione dettagli ticket. Contiene schede della barra laterale come clienti e checklist e visualizza la scheda attualmente selezionata.
 
-Sidebar Tabs
-: On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of
-  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket
-  customer has an assigned organization).
+Schede della barra laterale
+: Sul lato destro della barra laterale, sono presenti delle piccole icone per passare da una scheda all'altra. La disponibilità di
+queste schede dipende dalla configurazione del sistema, dalle autorizzazioni e dagli attributi del ticket (ad esempio, se al cliente del ticket
+è assegnata un'organizzazione).
 
-## Navigation Sidebar
+## Barra laterale di navigazione
 
-The navigation sidebar is your central place to access all main parts of
-Zammad. You might not see all of them because some depend on the
-configuration of your Zammad. The navigation sidebar is always visible. That
-means if you don’t know where you are, you can always go back to the
-dashboard, your overviews or an opened ticket, for example.
+La barra laterale di navigazione è il tuo posto centrale per accedere a
+tutte le parti principali di Zammad. Potresti non vedere tutte perché alcune
+dipendono dalla configurazione del tuo Zammad. La barra laterale di
+navigazione è sempre visibile.
 
-Search and Notfication Area
-: Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
-  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
-  with a count about how many notifications you got.
+Area di ricerca e notifiche
+: Include la funzione di ricerca che permette di cercare utenti, organizzazioni, ticket e praticamente qualsiasi informazione disponibile su Zammad.
+Accanto alla barra di ricerca è presente il logo di Zammad. In caso di notifiche, viene visualizzato un badge
+con un contatore delle notifiche ricevute.
 
-Navigation : Allows you to switch to different Zammad screens like the
-dashboard, overviews, knowledge base or phone screen.
+Navigazione : Ti permette di passare a diverse schermate di Zammad come la
+dashboard, le panoramiche, la base di conoscenza o la schermata telefono.
 
-Content Tabs : You can find tabs for your opened tickets, users and
-organizations.
+Schede contenuto : Qui trovi le schede per i tuoi ticket aperti, utenti e
+organizzazioni.
 
-Bottom Bar
-: Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and
-  a reporting button as well.
+Barra inferiore
+: Impostazioni del profilo e pulsante per creare un nuovo ticket. Se hai permessi aggiuntivi, potrebbe esserci anche un pulsante delle impostazioni e uno dei rapporti.
 
-Zammad immediately saves your current work progress, so you can easily
-switch between the different areas of Zammad and you don't have to be afraid
-of losing any data like a not yet sent answer in a ticket.
+Zammad salva immediatamente il progresso del tuo lavoro corrente, quindi
+puoi passare facilmente tra le diverse aree di Zammad senza dover aver paura
+di perdere dati come una risposta non ancora inviata in un ticket.
 
-## Sidebar
+## Barra laterale
 
-The sidebar on the right side displays all ticket relevant information and
-includes additional functionality. The most important one is the ticket
-sidebar. Switch between the different sidebars by clicking the desired tab
-on the right side of the sidebar. The available tabs depend on the ticket
-and the configured features of your Zammad.
+La barra laterale sul lato destro mostra tutte le informazioni rilevanti del
+ticket e include funzionalità aggiuntive. La più importante è la barra
+laterale del ticket. Passa tra le diverse barre laterali facendo clic sulla
+scheda desiderata sul lato destro della barra laterale. Le schede
+disponibili dipendono dal ticket e dalle funzionalità configurate del tuo
+Zammad.
 
 <!-- markdownlint-disable MD007 -->
 
-Ticket Tab
-: This tab shows the ticket information like owner, group, priority and state and lets you edit these values.
-  Additionally, the following actions are available when you click on the ::a:: button in the top section:
+Scheda ticket
+: Questa scheda mostra le informazioni del ticket come proprietario, gruppo, priorità e stato e ti permette di modificare questi valori.
+  Inoltre, le seguenti azioni sono disponibili quando fai clic sul pulsante ::a:: nella sezione superiore:
 
-  - History: shows a dialog with the history in the current ticket. This is
-    where you can find when and what actions was performed and by whom.
-  - Merge: merge the ticket with another one in case a customer emailed you
-    multiple times about the same issue.
-  - Change customer: set another customer for the ticket.
+  - Cronologia: mostra una finestra di dialogo con la cronologia nel ticket
+    corrente. Qui puoi trovare quando e quali azioni sono state eseguite e
+    da chi.
+  - Unisci: unisce il ticket con un altro nel caso in cui un cliente ti
+    abbia inviato più email sullo stesso problema.
+  - Cambia cliente: imposta un altro cliente per il ticket.
 
-Customer Tab
-: View customer details including a reference to the customer’s other tickets. You can change the ticket customer here
-  as well by clicking on the ::a:: button in the top section.
+Scheda cliente
+: Visualizza i dettagli del cliente incluso un riferimento agli altri ticket del cliente. Puoi anche cambiare il cliente del ticket qui
+  facendo clic sul pulsante ::a:: nella sezione superiore.
 
-Organization Tab
-: This tab is only shown if the customer is member of an organization. It shows the organization’s details including all
-  members. By clicking on the ::a:: button in the top section, you can edit the organization.
+Scheda organizzazione
+: Questa scheda viene mostrata solo se il cliente è membro di un'organizzazione. Mostra i dettagli dell'organizzazione inclusi tutti
+  i membri. Facendo clic sul pulsante ::a:: nella sezione superiore, puoi modificare l'organizzazione.

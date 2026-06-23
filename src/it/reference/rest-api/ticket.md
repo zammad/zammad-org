@@ -6,16 +6,15 @@ title: Ticket
 # Ticket
 
 :::warning
-Ticket endpoints depend on group permissions and if the user you're
-using is an **agent**. Because of this tickets may or may not be
-available.
+Gli endpoint ticket dipendono dai permessi del gruppo e se l'utente che stai
+usando è un **agente**.
 :::
 
-## List
+## Elenca
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets`
+Richiesta `GET` inviata: `/api/v1/tickets`
 
 ::: details
 
@@ -23,11 +22,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}`
+Richiesta `GET` inviata: `/api/v1/tickets/{ticket id}`
 
 ::: details
 
@@ -35,27 +34,17 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/tickets`
+Richiesta `POST` inviata: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**Per conto di utenti**
 
-If you want to create tickets on behalf of other users, use the
-`customer_id` attribute. `ticket.agent` is mandatory for this. Use
-`guess:{email address}` to save an API call if you don't know the
-user's ID or want to create the user in question
-(`"customer_id": "guess:jane@doe.com"`).
-
-**Add mention subscription right away**:
-
-Add the `mentions` attribute to your ticket payload and provide an
-array of user ids to directly subscribe them during ticket creation.
-
-E.g.: `"mentions": [1, 5, 7, 8],`
+Se vuoi creare ticket per conto di altri utenti, usa il
+`c
 
 :::
 
@@ -63,11 +52,11 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/post-res.json
 
@@ -75,30 +64,30 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-For more article attributes and options have a look into
-[articles](/en/reference/rest-api/articles).
+Per maggiori attributi e opzioni degli articoli dai un'occhiata a
+[articoli](/it/reference/rest-api/articles).
 :::
 
-## Update
+## Aggiornamento
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}`
+Richiesta `PUT` inviata: `/api/v1/tickets/{ticket id}`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Above example provides an article. This article is a _new article_ and
-does not affect any existing ones.
+L'esempio sopra fornisce un articolo. Questo articolo è un _nuovo articolo_ e
+non influisce su nessun.
 :::
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/put-ticket-id-res.json
 
@@ -106,29 +95,27 @@ does not affect any existing ones.
 :::::
 
 ::: tip
-**Adding attachments**
+**Aggiunta di allegati**
 
-Attachment payloads are identical to the `POST` method, just use `PUT`
-instead.
+I payload degli allegati sono identici al metodo `POST`, usa semplicemente.
 :::
 
-## Delete
+## Elimina
 
-Required permission: `admin`
+Permesso richiesto: `admin`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`
+Richiesta `DELETE` inviata: `/api/v1/tickets/{ticket id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Questa è una rimozione permanente**:
 
-Please note that removing tickets cannot be undone. All data (e.g.
-articles & attachments) will be lost.
+Tieni presente che rimuovere ticket non può essere annullato.
 :::
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json
 

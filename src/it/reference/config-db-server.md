@@ -1,24 +1,19 @@
 ---
 order: 6
-title: 'Configure Database Server'
+title: 'Configura il server database'
 ---
 
-# Configure Database Server
+# Configura il server database
 
-This page should only enlighten the relevant parts for Zammad and is not
-meant to be a complete guide. It is only relevant for you if you are running
-an existing PostgreSQL server and want to run Zammad's database there as
-well.
+Questa pagina dovrebbe illustrare solo le parti rilevanti per Zammad e non
+vuole essere una guida completa.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully
-compatible with PostgreSQL. Typically this is called "session connection pooling". Transaction-based connection pooling
-is not supported and may lead to errors during database migrations.
+Se usi software di pooling delle connessioni database come PgBouncer, assicurati di usare una modalità di pooling.
 :::
 
-Below you can the locations of the relevant PostgreSQL configuration files
-to adjust. Keep in mind that versions may differ from your setup - adapt
-where needed.
+Di seguito puoi trovare le posizioni dei file di configurazione PostgreSQL
+rilevanti da regolare.
 
 ::: tabs
 
@@ -28,73 +23,55 @@ where needed.
 /etc/postgresql/{your version}/main/postgresql.conf
 ```
 
-=== CentOS & OpenSUSE
-
-```ansi
-/var/lib/pgsql/data/postgresql.conf
-```
-
-=== Others
-
-Can't find your configuration files? You can run the following command to get the path:
-
-``` sh
-sudo -u postgres psql -c 'SHOW config_file'
-```
+===
 
 :::
 
-## Adjust Pool Size
+## Regola la dimensione del pool
 
-Within `database.yml` (`config/` directory) you can define the allowed pool
-size. By default each Zammad process takes up to `50` connections (`pool:
-50`).
+All'interno di `database.yml` (directory `config/`) puoi definire la
+dimensione del pool consentita.
 
-This should be fairly enough for _every_ use case. If you experience
-database connection timeouts or similar pool errors, this usually indicates
-to other issues that are relevant to your PostgreSQL.
+Questo dovrebbe essere sufficiente per _ogni_ caso d'uso. Se riscontri
+timeout di connessione database.
 
-## Adjust `max_connections` (mandatory)
+## Regola `max_connections` (obbligatorio)
 
-Zammad uses up to 200 connections by default. Depending on your setup and
-load, you may want to change this value.
+Zammad usa fino a 200 connessioni per impostazione predefinita. A seconda
+della tua configurazione e carico.
 
-### Determine Value
+### Determina il valore
 
-To help you determine a number, Zammad ships a function to calculate a
-suggestion. If executed, it asks you to input some integer values and
-additionally uses internally known values for the calculation. Be aware that
-the suggestion is instance specific. That means you must run the calculation
-on the system you want to adjust the `max_connection` value.
+Per aiutarti a determinare un numero, Zammad include una funzione per
+calcolare un suggerimento.
 
-Run it by using the command:
+Eseguilo usando il comando:
 
 ``` sh
 rake zammad:db:max_connections
 ```
 
-### Adjust Value
+### Regola il valore
 
-Raise maximum allowed number of connections:
+Aumenta il numero massimo di connessioni consentite:
 
 ``` sh
 sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Applica le modifiche riavviando PostgreSQL e Zammad (in questo ordine):
 
 ```sh
 sudo systemctl restart postgresql zammad
 ```
 
-## Adjust PostgreSQL for bigger instances (optional)
+## Regola PostgreSQL per istanze più grandi (opzionale)
 
 ::: warning
-Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found
-to be useful, everything else is out of scope of this documentation!
+Controlla prima le impostazioni seguenti e assicurati che il tuo sistema sia in grado di fornire i requisiti.
 :::
 
-Some caching improvements:
+Alcuni miglioramenti della cache:
 
 ``` sh
 sed -i "/shared_buffers/c\shared_buffers = 2GB" <postgresql-configuration-file>
@@ -112,7 +89,7 @@ sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
 sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Applica le modifiche riavviando PostgreSQL e Zammad (in questo ordine):
 
 ```sh
 sudo systemctl restart postgresql zammad

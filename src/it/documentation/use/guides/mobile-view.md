@@ -1,102 +1,107 @@
 ---
 order: 5
-title: 'Use Mobile View'
+title: 'Usa la visualizzazione mobile'
 ---
 
-# Use Mobile View
+# Usa la visualizzazione mobile
 
-## Intro
+## Introduzione
 
-The development of a dedicated mobile view for Zammad was driven by the
-increasing need for access while on the move.  The desktop application
-offers responsive functionality for smaller screens, but it was determined
-to be too complex for optimal mobile use. This mobile view focuses on
-presenting the most critical information in a touch-friendly and modern
-design, prioritizing a streamlined user experience.
+Lo sviluppo di una visualizzazione mobile dedicata per Zammad è stato
+guidato dalla crescente necessità di accesso durante gli
+spostamenti. L'applicazione desktop offre funzionalità responsive per
+schermi più piccoli, ma è risultata troppo complessa per un uso mobile
+ottimale. Questa visualizzazione mobile si concentra sulla presentazione
+delle informazioni più critiche in un design touch-friendly e moderno, dando
+priorità a un'esperienza utente semplificata.
 
 ::: info
-We intentionally do not provide specific instructions and comprehensive documentation for the mobile view! The overall
-UX should be intuitive and self-explanatory in most cases.
+Non forniamo intenzionalmente istruzioni specifiche e documentazione completa per la visualizzazione mobile! L'esperienza 
+
+utente complessiva dovrebbe essere intuitiva e autoesplicativa nella maggior parte dei casi.
 :::
 
-You can find screenshots below to get an impression how the mobile view
-looks like.
+Di seguito trovi screenshot per avere un'idea di come appare la
+visualizzazione mobile.
 
 ::: tabs
 
-=== Login & Home
+=== Login e Home
 
 | Login | Home |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows login screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/home.png) |
+| ![Screenshot che mostra la schermata di accesso della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/login.png) | ![Screenshot che mostra la schermata home della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/home.png) |
 
-=== Search & Overview
+=== Ricerca e Panoramica
 
-| Search | Overview |
+| Ricerca | Panoramica |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows search screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/overview.png) |
+| ![Screenshot che mostra la schermata di ricerca della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/search.png) | ![Screenshot che mostra la schermata panoramica della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/overview.png) |
 
-=== Ticket Details
+=== Dettagli ticket
 
-| Articles | Details |
+| Articoli | Dettagli |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/documentation/use/mobile-view/ticket-details.png) |
+| ![Screenshot che mostra la schermata ticket della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/ticket-articles.png) | ![Screenshot che mostra la visualizzazione dettagli ticket della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/ticket-details.png) |
 
-=== Notifications & Account
+=== Notifiche e Account
 
-| Notifications | Account |
+| Notifiche | Account |
 |:-------------------------:|:-------------------------:|
-| ![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/profile.png) |
+| ![Screenshot che mostra la schermata notifiche della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/notifications.png) | ![Screenshot che mostra la schermata impostazioni account della visualizzazione mobile di Zammad](/screenshots/documentation/use/mobile-view/profile.png) |
 
 :::
 
-## Features
+## Funzionalità
 
-Mobile view provides you with a way to do your common Zammad daily tasks
-while on the go:
+La visualizzazione mobile ti fornisce un modo per eseguire le tue attività
+quotidiane comuni di Zammad in mobilità:
 
-- Manage & use your ticket overviews
-- Search for existing records
-- Create a new ticket
-- Reply in an already existing ticket
-- Modify ticket attributes
-- Modify customer attributes
-- Modify organization attributes
+- Gestisci e usa le panoramiche dei tuoi ticket
+- Cerca record esistenti
+- Crea un nuovo ticket
+- Rispondi in un ticket già esistente
+- Modifica gli attributi del ticket
+- Modifica gli attributi del cliente
+- Modifica gli attributi dell'organizzazione
 
-## Limitations
+## Limitazioni
 
-Mobile view is also currently missing some features which are provided by
-the desktop view:
+La visualizzazione mobile manca attualmente anche di alcune funzionalità
+fornite dalla visualizzazione desktop:
 
-- Time accounting
-- Split article
-- Link tickets and see linked tickets
-- Execution of macros
-- Ticket history
-- Template creation & shared drafts
+- Contabilità del tempo
+- Dividi articolo
+- Collega ticket e visualizza i ticket collegati
+- Esecuzione di macro
+- Cronologia ticket
+- Creazione modelli e bozze condivise
 
-Additionally, certain features were intentionally omitted in order to
-improve the focus on important information:
+Inoltre, alcune funzionalità sono state intenzionalmente omesse per
+migliorare la concentrazione sulle informazioni importanti:
 
-- Most management features (except ticket user and organization management)
-- Most knowledge base features (except ticket integration)
-- Most user profile functions (except avatar and language preferences)
-- Reports
-- Caller log
-- Live chat
+- La maggior parte delle funzionalità di gestione (ad eccezione della
+  gestione degli utenti ticket e delle organizzazioni)
+- La maggior parte delle funzionalità della base di conoscenza (ad eccezione
+  dell'integrazione dei ticket)
+- La maggior parte delle funzioni del profilo utente (ad eccezione delle
+  preferenze di avatar e lingua)
+- Rapporti
+- Registro chiamate
+- Chat in tempo reale
 
-## Switch the Views
+## Cambia visualizzazione
 
-Zammad implements a mobile device detection, which results in automatic
-redirection to mobile view. Even with this mechanism in place, it's possible
-to explicitly switch between the views by using app links.
+Zammad implementa un rilevamento del dispositivo mobile, che risulta in un
+reindirizzamento automatico alla visualizzazione mobile. Anche con questo
+meccanismo attivo, è possibile passare esplicitamente tra le visualizzazioni
+usando i link dell'app.
 
-In both desktop and mobile view login screens, you can find a link below the
-`Sign in` button to explicitly switch to the other view (see login
-screenshot from above as an example).
+Nelle schermate di accesso sia della visualizzazione desktop che mobile,
+puoi trovare un link sotto il pulsante `Accedi` per passare esplicitamente
+all'altra visualizzazione.
 
-While you are signed in and want to switch from the mobile to the desktop
-view, go to your profile by selecting your avatar at the bottom and select
-**Continue to desktop** (see account screenshot from above as an
-example). The other way round is similar: in the avatar menu, you can find
-an entry to switch to the mobile view.
+Mentre sei connesso e vuoi passare dalla visualizzazione mobile a quella
+desktop, vai al tuo profilo selezionando il tuo avatar in basso e seleziona
+**Continua al desktop**. Il contrario è simile: nel menu avatar, puoi
+trovare una voce per passare alla visualizzazione mobile.

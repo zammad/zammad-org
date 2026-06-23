@@ -3,123 +3,107 @@ order: 5
 title: CTI
 ---
 
-# Generic CTI
+# CTI generico
 
-## Introduction
+## Introduzione
 
-This page describes the generic CTI API scopes and functionalities.
+Questa pagina descrive gli ambiti e le funzionalità generiche dell'API CTI.
 
 ::: warning
 
-- Authentication on this endpoint works fundamentally different compared to
-  the rest of the API.
-- API clients _do not_ work with the CTI endpoints unless explicitly stated
-  by the client vendor!
-- The CTI endpoints are relevant for PBX systems only.
+- L'autenticazione su questo endpoint funziona in modo fondamentalmente diverso rispetto
+  al resto.
 :::
 
-## Features
+## Funzionalità
 
-Here's a small condensed list of the possibilities this CTI API provides.
+Ecco un piccolo elenco condensato delle possibilità che questa API CTI
+fornisce.
 
-### Inbound
+### In entrata
 
-- Caller log functions for your agents.
-- Blocking of caller IDs during signaling.
+- Funzioni del registro chiamante per i tuoi agenti.
+- Blocco degli ID chiamante durante la segnalazione.
 
-### Outbound
+### In uscita
 
-- Caller log functions for your agents.
-- Set outbound caller IDs depending on the caller ID target.
+- Funzioni del registro chiamante per i tuoi agenti.
+- Imposta gli ID chiamante in uscita a seconda dell'ID chiamante di
+  destinazione.
 
 ### Endpoint
 
-The endpoint can be found in the generic CTI integration and contains a
-unique token which acts as authentication. Make sure to keep this endpoint
-URL safe.
+L'endpoint si trova nell'integrazione CTI generica e contiene un token
+univoco che.
 
 ::: info
-Generic CTI configuration and the correct endpoint can be found in your
-Zammad in the admin interface under _System > Integrations > CTI (generic)_.
-
-Please also note the there listed requirements and limitations.
-All options that require returns (e.g. blocking, manipulating outgoing
-caller IDs) rely on configurations within the Zammad CTI integration
-page.
+La configurazione CTI generica e l'endpoint corretto si trovano nel tuo
+Zammad nell'amministrazione.
 :::
 
 ::: tip
-There are two options how to `POST` the relevant data to Zammad:
+Ci sono due opzioni su come inviare con `POST` i dati rilevanti a Zammad:
 
-- JSON (recommended)
-- Form-data
+- JSON (consigliato)
+- F
 :::
 
-### Events
+### Eventi
 
-There are several events in terms of an ongoing call. These actions always
-come from your PBX system and may be:
+Ci sono diversi eventi in termini di una chiamata in corso. Queste azioni
+provengono sempre dal tuo.
 
-- "newCall" event (initiation of a call)
-- "hangup" event (call ending)
-- "answer" event (aka picking up the phone)
+- Evento "newCall" (inizio di una chiamata)
+- Evento "hangup" (fine chiamata)
+- Evento "answer" (ovvero rispondere al telefono)
 
-In some situations Zammad may provide a return on your PBX calls (e.g. a
-reject) if you blocked a specific caller. Zammad will never initiate
-specific actions with your PBX. Zammad is a passive component in all
-described cases.
+In alcune situazioni Zammad potrebbe fornire una risposta sulle tue chiamate
+PBX (ad esempio un rifiuto) se blocchi.
 
-### Used Examples
+### Esempi usati
 
-**Example:**
-Below calls have been sent with the following configuration. This is
-important for you to understand the responses we are showing here.
+**Esempio:**
+Le chiamate seguenti sono state inviate con la seguente configurazione. Questo è importante.
 
-**Outbound:**
+**In uscita:**
 
-- Destination caller ID `4989*` set outbound caller ID `498999998145` with
-  note "All from munich"
-- Destination caller ID `4930*` set outbound caller ID `493023125877` "All
-  from Berlin"
+- ID chiamante destinazione `4989*` imposta ID chiamante in uscita
+  `498999998145` con nota "Tutto da mu
+- ID chiamante destinazione `4930*` imposta ID chiamante in uscita
+  `493023125877` "Tutto da Berlino"
 
-**Other settings:**
+**Altre impostazioni:**
 
-- Default caller ID for outbound calls `496990009111`
+- ID chiamante predefinito per chiamate in uscita `496990009111`
 
-## New Call Event
+## Evento nuova chiamata
 
-### General
+### Generale
 
-Available `attributes` and <Badge type="info" text="sample data" />:
+`attributes` disponibili e <Badge type="info" text="dati di esempio" />:
 
 `event` <Badge type="info" text="newCall"/>
-: Tell Zammad there is a new call.
+: Dice a Zammad che c'è una nuova chiamata.
 
 `from` <Badge type="info" text="4930555716000"/>
-: Number that initiated the call. Can be `anonymous` as well.
+: Numero che ha avviato la chiamata. Può essere.
 
 `to` <Badge type="info" text="4930555716000"/>
-: Number that is being called.
+: Numero che viene chiamato.
 
 `direction` <Badge type="info" text="in"/>
-: The call direction. If your agent initiates a call, this will be `out`. Calls
-from external side to you are `in`.
+: La direzione della chiamata. Se il tuo agente avvia.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070"/>
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: Un ID univoco.
 
 `user` <Badge type="info" text="John Doe"/>
-: The user(s) real name involved. You may have to provide array style (`[]`)
-  params depending on the call method you choose. If the direction is `out`,
-  this is the name of the calling person(s). If the direction is `in`, this
-  is the name of the called person(s).
+: Il nome reale dell'utente coinvolto. Potresti avere.
 
 `queue` <Badge type="info" text="support"/>
-: An optional queue name, this option is relevant for the caller log filter.
-  This value is optional.
+: Un nome di coda opzionale, questa opzione è rilevante.
 
-### Outbound
+### In uscita
 
 ::::details
 
@@ -162,7 +146,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### In entrata
 
 ::::details
 
@@ -199,83 +183,73 @@ Sample curl command:
 :::
 ::::
 
-### Situation Specific Responses
+### Risposte specifiche per situazione
 
-Depending on the chosen call direction, Zammad will return either a
-(optionally) configured call ID or (optionally) block a caller. If your
-Zammad hasn't configured one or both options, the return will be empty.
+A seconda della direzione di chiamata scelta, Zammad restituirà un
+(opzionalmente) configurato.
 
 :::info
-This has to be supported by your PBX in order to work.
+Questo deve essere supportato dal tuo PBX per funzionare.
 :::
 
-#### Reject blocked caller IDs
+#### Rifiuta ID chiamante bloccati
 
-If an incoming new call matches a to block number, Zammad will return the
-following.
+Se una nuova chiamata in entrata corrisponde a un numero da bloccare, Zammad
+restituirà quanto segue.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-blocked-res.json
 
-If no to block number matches, Zammad will return the following.
+Se nessun numero da bloccare corrisponde, Zammad restituirà quanto segue.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 :::warning
-Your PBX still needs to end the call (hangup event). Other wise the
-call will not just appear within Zammad's caller log but also appear as
-ringing call.
+Il tuo PBX deve comunque terminare la chiamata (evento hangup). Altrimenti la
+chiamata non apparirà semplicemente.
 :::
 
-#### Set specific outgoing caller ID
+#### Imposta ID chiamante in uscita specifico
 
-In case your instance has a matching overwriting caller ID configured,
-Zammad will return the following payload.
+Nel caso la tua istanza abbia un ID chiamante di sovrascrittura
+corrispondente configurato, Zammad restituirà.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json
 
-If no overwrite match is found or you haven't configured anything, Zammad
-will return the following.
+Se non viene trovata nessuna corrispondenza di sovrascrittura o non hai
+configurato nulla, Zammad restituirà.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-## Call Answer Event
+## Evento risposta chiamata
 
-### General
+### Generale
 
-Available `attributes` and <Badge type="info" text="sample data" />:
+`attributes` disponibili e <Badge type="info" text="dati di esempio" />:
 
 `event` <Badge type="info" text="answer" />:
-: Tell Zammad that someone answered the call.
+: Dice a Zammad che qualcuno ha risposto alla chiamata.
 
 `from` <Badge type="info" text="493055571600" />:
-: Number that initiated the call.
+: Numero che ha avviato la chiamata.
 
 `to` <Badge type="info" text="493055571600" />:
-: Number that is being called.
+: Numero che viene chiamato.
 
 `direction` <Badge type="info" text="in" />:
-: The call direction - if your agent initiates a call, this will be `out`.
+: La direzione della chiamata - se il tuo agente avvia.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: Un ID univoco.
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
-      - `user.phone`
-      - `user.login`
-      - `user.if`
-    This value is optional.
+:   Zammad cercherà un.
 
 `user` <Badge type="info" text="John Doe" />:
-: The user(s) real name involved. You may have to provide array style (`[]`)
-  params depending on the call method you choose. If the direction is `out`,
-  this is the name of the calling person(s). If the direction is `in`, this is
-  the name of the called person(s). This value is optional.
+: Il nome reale dell'utente coinvolto. Potresti avere.
 
-There are two options on how to `POST` the relevant data to Zammad.
+Ci sono due opzioni su come inviare con `POST` i dati rilevanti a Zammad.
 
-### Outbound
+### In uscita
 
 ::::details
 
@@ -318,7 +292,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### In entrata
 
 ::::details
 
@@ -355,45 +329,32 @@ Sample curl command:
 :::
 ::::
 
-## Call Hangup
+## Fine chiamata
 
-### General
+### Generale
 
 `event` <Badge type="info" text="hangup" />:
-: Tell Zammad that someone answered the call.
+: Dice a Zammad che qualcuno ha risposto alla chiamata.
 
 `from` <Badge type="info" text="493055571600" />:
-: Number that initiated the call.
+: Numero che ha avviato la chiamata.
 
 `to` <Badge type="info" text="493055571600" />:
-: Number that is being called.
+: Numero che viene chiamato.
 
 `direction` <Badge type="info" text="in" />:
-: The call direction - if your agent initiates a call, this will be `out`.
+: La direzione della chiamata - se il tuo agente avvia.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: Un ID univoco.
 
 `cause`
-:   This defines the reason of the hangup. Zammad evaluates the cause and indicates
-    e.g. missed calls accordingly in the caller log. Possible values are:
-    - `normalClearing` (one of the parties hung up after the call was established)
-    - `busy` (the called party was busy)
-    - `cancel` (the caller hung up before the called party picked up)
-    - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
-    - `congestion` (the called party could not be reached)
-    - `notFound` (the called number does not exist or called party is offline)
-    - `forwarded` (the call was forwarded to a different party)
+:   Definisce il motivo della fine chiamata. Zammad valuta la causa e indica.
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
-    - `user.phone`
-    - `user.login`
-    - `user.if`
-    This value is optional.
+:   Zammad cercherà un.
 
-### Outbound
+### In uscita
 
 ::::details
 
@@ -436,7 +397,7 @@ Sample curl command:
 :::
 ::::
 
-### Inbound
+### In entrata
 
 ::::details
 

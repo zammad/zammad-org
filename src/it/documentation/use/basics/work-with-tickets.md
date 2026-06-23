@@ -1,184 +1,192 @@
 ---
 order: 5
-title: 'Work with Tickets'
+title: 'Lavora con i ticket'
 ---
 
-# Work with Tickets
+# Lavora con i ticket
 
-You found your way into an existing ticket, congratulations! Now let's have
-a look what you can do and how to do it.
+Hai trovato la strada verso un ticket esistente, congratulazioni! Ora
+vediamo cosa puoi fare e come farlo.
 
-Generally, working on existing tickets means keeping up with a customer
-correspondence in a thread/conversation in the ticket detail view. Any time
-you open a ticket, a new tab will appear in your navigation bar on the left
-side. To close a tab (in the sense of remove it from the navigation bar, not
-setting the ticket state to closed), just click the ::X:: button in the
-tab. Zammad automatically saves your changes in opened ticket tabs, no
-matter if you already applied the changes or just edited things and switched
-to somewhere else. This means it is no problem to create a new ticket while
-editing an existing one. Simply switch back to the other tab.
+In generale, lavorare su ticket esistenti significa seguire la
+corrispondenza con un cliente in un thread/conversazione nella
+visualizzazione dettagli ticket. Ogni volta che apri un ticket, apparirà una
+nuova scheda nella tua barra di navigazione sul lato sinistro. Per chiudere
+una scheda (nel senso di rimuoverla dalla barra di navigazione, non
+impostare lo stato del ticket su chiuso), fai clic sul pulsante ::X:: nella
+scheda. Zammad salva automaticamente le tue modifiche nelle schede ticket
+aperte. Ciò significa che non è un problema creare un nuovo ticket mentre si
+modifica uno esistente. Torna semplicemente all'altra scheda.
 
-For the most changes (except tags or title renaming, for example), an
-explicit update of the ticket is needed. So make sure to click the `Update`
-button on the right side of the footer bar when you are happy with your
-changes.
+Per la maggior parte delle modifiche (tranne tag o rinomina del titolo, ad
+esempio), è necessario un aggiornamento esplicito del ticket. Quindi
+assicurati di fare clic sul pulsante `Aggiorna` sul lato destro della barra
+inferiore quando sei soddisfatto delle tue modifiche.
 
-## Changing Ticket Attributes
+## Modifica degli attributi del ticket
 
-As you may know, there are additional ticket attributes such as group,
-priority and owner that you can set. If you haven't read
-[ticket-basics](/en/documentation/use/basics/ticket-basics) yet, check it
-out to learn more.
+Come sai, ci sono attributi ticket aggiuntivi come gruppo, priorità e
+proprietario che puoi impostare. Se non hai ancora letto le [nozioni di base
+sui ticket](/it/documentation/use/basics/ticket-basics), consultale per
+saperne di più.
 
-## Create a New Article
+## Crea un nuovo articolo
 
-No matter if you create a new article from scratch or respond to a customer
-article, you can choose from different article types:
+Che tu crei un nuovo articolo da zero o risponda a un articolo del cliente,
+puoi scegliere tra diversi tipi di articolo:
 
-- **Note**: Write a reminder for yourself and other agents, ask a colleague
-  a question by mentioning a user or add new information to the ticket. The
-  default visibility is "internal", which means the customer can't see the
-  note.
-- **Call**: Note down a summary of a phone call you had with the customer.
-- **Email**: Send an email to anyone about the ticket. The title of the
-  ticket is used for the subject of the email.
+- **Nota**: Scrivi un promemoria per te stesso e altri agenti, fai una
+  domanda a un collega menzionando un utente o aggiungi nuove informazioni
+  al ticket. La visibilità predefinita è "interna", il che significa che il
+  cliente non può vedere la nota.
+- **Chiamata**: Annota un riepilogo di una telefonata che hai avuto con il
+  cliente.
+- **Email**: Invia un'email a chiunque riguardo al ticket. Il titolo del
+  ticket viene usato come oggetto dell'email.
 
-To choose another article type, use the **Channel** tab switcher and choose
-a different type. Click on the lock toggle to change the article's
-visibility. Articles with internal visibility are displayed with a dashed
-blue border.
+Per scegliere un altro tipo di articolo, usa il selettore di schede
+**Canale** e scegli un tipo diverso. Fai clic sul pulsante lucchetto per
+modificare la visibilità dell'articolo. Gli articoli con visibilità interna
+vengono visualizzati con un bordo blu tratteggiato.
 
-![Screenshot shows article type selector and visibility
-toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Screenshot che mostra il selettore del tipo di articolo e il pulsante di
+visibilità](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
-To write and edit text, make use of the powerful editor features. You can
-use the toolbar or keyboard shortcuts to format text and trigger special
-functions. Because of the amount of features and their importance, you can
-find more information on the separate [editor
-page](/en/documentation/use/guides/editor).
+Per scrivere e modificare testo, usa le potenti funzionalità
+dell'editor. Puoi usare la barra degli strumenti o le scorciatoie da
+tastiera per formattare il testo e attivare funzioni speciali. Puoi trovare
+maggiori informazioni nella [pagina
+dell'editor](/it/documentation/use/guides/editor) separata.
 
-Every new article appears at the end of the conversation, which means below
-the existing articles. To see detailed information of an article, just click
-on an existing article which opens additional meta information.
+Ogni nuovo articolo appare alla fine della conversazione, ovvero sotto gli
+articoli esistenti. Per vedere informazioni dettagliate di un articolo, fai
+semplicemente clic su un articolo esistente che apre informazioni meta
+aggiuntive.
 
-You might wonder now how to delete articles. The answer is you can only
-delete articles that you have created yourself and which are not older than
-10 minutes. To see the **Delete article** function in the ::a:: menu,
-articles of a communication type (emails, calls) must be changed to
-"internal" visibility first.
+Potresti chiederti ora come eliminare gli articoli. La risposta è che puoi
+eliminare solo gli articoli che hai creato tu stesso e che non hanno più di
+10 minuti. Per vedere la funzione **Elimina articolo** nel menu ::a::, gli
+articoli di tipo comunicazione (email, chiamate) devono essere prima
+modificati in visibilità "interna".
 
-### Add an Article from Scratch
+### Aggiungi un articolo da zero
 
-Click on one of the buttons at the bottom of the ticket detail view to add
-an article. Depending on what you choose, the article create screen gets
-pre-populated with the type and visibility. When choosing **Add reply**, the
-article gets sent out to the customer of the ticket. In case of an email
-based ticket, the email address of the customer is pre-populated.
+Fai clic su uno dei pulsanti in fondo alla visualizzazione dettagli ticket
+per aggiungere un articolo. A seconda di cosa scegli, la schermata di
+creazione articolo viene pre-compilata con il tipo e la visibilità. Quando
+si sceglie **Aggiungi risposta**, l'articolo viene inviato al cliente del
+ticket. Nel caso di un ticket basato su email, l'indirizzo email del cliente
+viene pre-compilato.
 
-![Screenshot shows new article buttons in bottom
-bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot che mostra i pulsanti per il nuovo articolo nella barra
+inferiore](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Respond to an Article
+### Rispondi a un articolo
 
-To forward or reply to an article, use one of the response buttons under an
-article or in the ::a:: menu. The behavior is similar to the behavior of an
-email client.
+Per inoltrare o rispondere a un articolo, usa uno dei pulsanti di risposta
+sotto un articolo o nel menu ::a::. Il comportamento è simile a quello di un
+client email.
 
-- **Reply**: Allows you to answer the article. The recipient is
-  automatically pre-filled. The reply is sent via the same channel as the
-  original message. This lets you easily send an answer to a customer or
-  third party, if involved.
-- **Reply all**: Same as above but uses all recipient addresses from the
-  original message as recipients for your new article. Only available for
-  email channels.
-- **Forward**: This means you can forward the original message to a third
-  party or anybody else. The original message and attachments are included
-  in your new article.
+- **Rispondi**: Ti permette di rispondere all'articolo. Il destinatario
+  viene automaticamente pre-compilato. La risposta viene inviata tramite lo
+  stesso canale del messaggio originale. Questo ti permette di inviare
+  facilmente una risposta a un cliente o a terze parti, se coinvolte.
+- **Rispondi a tutti**: Come sopra ma usa tutti gli indirizzi dei
+  destinatari del messaggio originale come destinatari per il tuo nuovo
+  articolo. Disponibile solo per i canali email.
+- **Inoltra**: Ciò significa che puoi inoltrare il messaggio originale a una
+  terza parte o chiunque altro. Il messaggio originale e gli allegati sono
+  inclusi nel tuo nuovo articolo.
 
-![Screenshot shows article reply
-actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
+![Screenshot che mostra le azioni di risposta
+all'articolo](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
 
-Zammad even allows you to **quote text** from an existing article. This is
-especially helpful if an answer refers to different parts of the original
-message or the text is pretty long. This feature is limited to communication
-type articles like email where the response buttons are available. To quote
-text, simply select the text you want to quote and use the **Reply** or
-**Reply all** function. This adds the selected text with a timestamp in your
-article editor where you can answer it. You can use the quoting even
-multiple times to quote different parts of the text. Just select another
-part of the text, click on the same response action as before and it gets
-added as another quote to your editor.  You can split quotations by using
-[[enter]] or [[shift]] + [[enter]] in the editor and disable quote format
-for your text.
+Zammad ti permette anche di **citare testo** da un articolo
+esistente. Questo è particolarmente utile se una risposta fa riferimento a
+parti diverse del messaggio originale o il testo è piuttosto lungo. Questa
+funzionalità è limitata agli articoli di tipo comunicazione come le email
+dove sono disponibili i pulsanti di risposta. Per citare il testo, seleziona
+semplicemente il testo che vuoi citare e usa la funzione **Rispondi** o
+**Rispondi a tutti**. Questo aggiunge il testo selezionato con un timestamp
+nel tuo editor di articoli dove puoi rispondergli. Puoi usare la citazione
+anche più volte per citare parti diverse del testo. Puoi dividere le
+citazioni usando [[enter]] o [[shift]] + [[enter]] nell'editor e
+disabilitare il formato citazione per il tuo testo.
 
-## Rename a Ticket
+## Rinomina un ticket
 
-To rename a ticket, simply click on the title in the header bar and start
-typing. This title is used as subject in email communication and shows up in
-several places like overviews. Confirm with [[enter]] or click the button on
-the right side.
+Per rinominare un ticket, fai semplicemente clic sul titolo nella barra
+dell'intestazione e inizia a digitare. Questo titolo viene usato come
+oggetto nella comunicazione email e appare in diversi posti come le
+panoramiche. Conferma con [[enter]] o fai clic sul pulsante sul lato destro.
 
-## Copy Ticket Number
+## Copia numero ticket
 
-To copy the ticket number including a link to the ticket (e.g. to paste it
-in a third party chat app), use the ::c:: icon next to the ticket title. It
-copies the complete ticket number with the ticket identifier to your
-clipboard, e.g.  `Ticket#50071`. If pasting the content to a target which
-can handle HTML, a link to the ticket is included. If you just want to paste
-the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead.
+Per copiare il numero del ticket incluso un link al ticket (ad esempio per
+incollarlo in un'app di chat di terze parti), usa l'icona ::c:: accanto al
+titolo del ticket. Copia il numero completo del ticket con l'identificatore
+del ticket negli appunti, ad esempio `Ticket#50071`. Se incolli il contenuto
+in una destinazione che può gestire HTML, viene incluso un link al
+ticket. Se vuoi incollare solo il numero del ticket, usa invece l'incolla
+normale tramite [[ctrl]] [[shift]] [[v]].
 
-If you scrolled own in the ticket, hover over the collapsed header bar where
-you can find the button on the top left side.
+Se hai scrollato nel ticket, passa il mouse sulla barra dell'intestazione
+compressa dove puoi trovare il pulsante in alto a sinistra.
 
-![Screenshot shows ticket header with highlighted ticket number copy
-button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
+![Screenshot che mostra l'intestazione del ticket con il pulsante di copia
+del numero ticket
+evidenziato](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
 
-But wait, there is even a keyboard shortcut for that! Simply press [[.]] in
-the ticket detail view and the ticket number is copied to your clipboard. To
-include the ticket title as well, press [[.]] twice.  Example:
-`Ticket#31004: Onboarding new colleague`.
+Ma aspetta, c'è anche una scorciatoia da tastiera per questo! Premi
+semplicemente [[.]] nella visualizzazione dettagli ticket e il numero del
+ticket viene copiato negli appunti. Per includere anche il titolo del
+ticket, premi [[.]] due volte. Esempio: `Ticket#31004: Onboarding nuovo
+collega`.
 
-## Simultaneous Ticket Processing
+## Elaborazione simultanea dei ticket
 
-It can happen that two or more agents open a ticket at the same time. To
-prevent edit conflicts and customers receiving contradictory answers, Zammad
-shows you who is viewing or editing the ticket currently. You can find this
-information in the bottom bar where avatars of all agents are displayed.
+Può accadere che due o più agenti aprano un ticket allo stesso tempo. Per
+prevenire conflitti di modifica e risposte contraddittorie ai clienti,
+Zammad mostra chi sta visualizzando o modificando il ticket
+attualmente. Puoi trovare questa informazione nella barra inferiore dove
+vengono visualizzati gli avatar di tutti gli agenti.
 
-![Screenshot shows other agents viewing/editing the
+![Screenshot che mostra altri agenti che visualizzano/modificano il
 ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
-Make sure to communicate with your colleagues to prevent these problems
-before they arise. Depending on the additional icon and if the avatar icon
-is faded, it means:
+Assicurati di comunicare con i tuoi colleghi per prevenire questi problemi
+prima che sorgano. A seconda dell'icona aggiuntiva e se l'icona dell'avatar
+è sbiadita, significa:
 
-- Avatar: Another agent is viewing the ticket.
-- Faded avatar: Another agent opened the ticket but is currently not
-  actively viewing it.
-- Avatar with pencil icon: Another agent is currently actively working on
-  this ticket.
+- Avatar: Un altro agente sta visualizzando il ticket.
+- Avatar sbiadito: Un altro agente ha aperto il ticket ma al momento non lo
+  sta visualizzando attivamente.
+- Avatar con icona matita: Un altro agente sta attualmente lavorando
+  attivamente su questo ticket.
 
-There are even more icons which represent additional states of the other
-agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover
-with the mouse if you are unsure what it means.
+Ci sono ancora più icone che rappresentano stati aggiuntivi degli altri
+agenti (ad esempio visualizzazione ticket tramite UI mobile o fuori
+ufficio). Passa semplicemente il mouse se non sei sicuro di cosa significhi.
 
-## Ticket Actions
+## Azioni del ticket
 
-Additional actions are available in the ::a:: menu in the ticket sidebar.
+Azioni aggiuntive sono disponibili nel menu ::a:: nella barra laterale del
+ticket.
 
-History
-: See a comprehensive list of updates to the ticket, performed by any user, since its creation. Useful to check who did
-  what and when.
+Cronologia
+: Visualizza un elenco completo degli aggiornamenti al ticket, effettuati da qualsiasi utente, dalla sua creazione. Utile per
+    verificare chi ha fatto cosa e quando.
 
-Merge
-: Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.
-  See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.
+Unisci
+: Migra tutti i messaggi/note a un altro ticket. Utile se hai più di un ticket su un singolo problema del cliente.
+  Vedi [Unisci ticket](/it/documentation/use/advanced-features#merge-tickets) per i dettagli.
 
-Change Customer : Reassign the ticket to another customer.
+Cambia cliente : Riassegna il ticket a un altro cliente.
 
 -----
 
-You now know the basics and how to work with tickets in general. However,
-there are many more features in Zammad which can be very useful in your
-daily work. Read on in [Advanced
-Features](/en/documentation/use/advanced-features) to learn more.
+Ora conosci le nozioni di base e come lavorare con i ticket in
+generale. Tuttavia, ci sono molte altre funzionalità in Zammad che possono
+essere molto utili nel tuo lavoro quotidiano. Continua a leggere in
+[Funzionalità avanzate](/it/documentation/use/advanced-features) per saperne
+di più.

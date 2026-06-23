@@ -8,7 +8,7 @@ themeConfig:
     items:
       - 
         link: /en/imprint
-        text: Imprint
+        text: 'Note legali'
       - 
         link: /it/gdpr
         text: 'Informativa sulla privacy'
@@ -24,7 +24,7 @@ themeConfig:
       text: Zammad.com
     - 
       link: https://community.zammad.org/
-      text: 'Community forum'
+      text: 'Forum della community'
     - 
       activeMatch: .*
       items:
@@ -33,17 +33,17 @@ themeConfig:
           link: /
           noIcon: true
           target: _self
-          text: 'Next release'
+          text: 'Prossima versione'
         - 
           link: https://zammad.org
           noIcon: true
           target: _self
           text: 'Versione attuale'
-      text: 'Next release'
+      text: 'Prossima versione'
   notFound:
     code: 404
     linkLabel: 'vai alla homepage'
-    linkText: 'Take me home'
+    linkText: 'Portami alla pagina iniziale'
     quote: 'Ma se non cambi direzione, e se continui a cercare, potresti finire esattamente dove stai andando.'
     title: 'PAGINA NON TROVATA'
   outline:

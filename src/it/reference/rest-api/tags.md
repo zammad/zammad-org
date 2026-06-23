@@ -1,17 +1,17 @@
 ---
 order: 18
-title: Tags
+title: Tag
 ---
 
-# Tags
+# Tag
 
-## Ticket Scope
+## Ambito ticket
 
-### List
+### Elenca
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permesso richiesto: `ticket.agent` **o** `admin.tag`
 
-`GET`-Request sent: `/api/v1/tags?object=Ticket&o_id={ticket id}`
+Richiesta `GET` inviata: `/api/v1/tags?object=Ticket&o_id={ticket id}`
 
 ::: details
 
@@ -19,60 +19,60 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 :::
 
-### Add
+### Aggiungi
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permesso richiesto: `ticket.agent` **o** `admin.tag`
 
-`POST`-Request sent: `/api/v1/tags/add`
+Richiesta `POST` inviata: `/api/v1/tags/add`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tags/add/post-req.json
 
 ::: info
-This will create the tag if it doesn't exist and the user has permission
-to do so.
+Questo creerà il tag se non esiste e l'utente ha il permesso
+per farlo.
 :::
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tags/add/post-res.json
 
 ::::
 :::::
 
-### Remove
+### Rimuovi
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permesso richiesto: `ticket.agent` **o** `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tags/remove`
+Richiesta `DELETE` inviata: `/api/v1/tags/remove`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tags/remove/delete-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tags/remove/delete-res.json
 
 :::
 ::::
 
-## Administration Scope
+## Ambito amministrazione
 
-### Admin - List
+### Admin - Elenco
 
-Required permission: `admin.tag`
+Permesso richiesto: `admin.tag`
 
-`GET`-Request sent: `/api/v1/tag_list`
+Richiesta `GET` inviata: `/api/v1/tag_list`
 
 ::: details
 
@@ -80,57 +80,57 @@ Required permission: `admin.tag`
 
 :::
 
-### Admin - Create
+### Admin - Crea
 
-Required permission: `admin.tag`
+Permesso richiesto: `admin.tag`
 
-`POST`-Request sent: `/api/v1/tag_list`
+Richiesta `POST` inviata: `/api/v1/tag_list`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tag_list/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tag_list/post-res.json
 
 :::
 ::::
 
-### Admin - Rename
+### Admin - Rinomina
 
-Required permission: `admin.tag`
+Permesso richiesto: `admin.tag`
 
-`PUT`-Request sent: `/api/v1/tag_list/{tag id}`
+Richiesta `PUT` inviata: `/api/v1/tag_list/{tag id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tag_list/put-tag-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tag_list/put-tag-id-res.json
 
 :::
 ::::
 
-### Admin - Delete
+### Admin - Elimina
 
-Required permission: `admin.tag`
+Permesso richiesto: `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`
+Richiesta `DELETE` inviata: `/api/v1/tag_list/{tag id}`
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json
 

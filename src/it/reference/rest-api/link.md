@@ -1,73 +1,72 @@
 ---
 order: 8
-title: 'Linking Tickets'
+title: 'Collegamento ticket'
 ---
 
-# Linking Tickets
+# Collegamento ticket
 
-## Get
+## Ottieni
 
-Required permission: `ticket.agent` **or** `admin`
+Permesso richiesto: `ticket.agent` **o** `admin`
 
-`GET`-Request sent: `/api/v1/links`
+Richiesta `GET` inviata: `/api/v1/links`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/links/get-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/links/get-res.json
 
 :::
 ::::
 
-## Add
+## Aggiungi
 
-Required permission: `ticket.agent` **or** `admin`
+Permesso richiesto: `ticket.agent` **o** `admin`
 
-`POST`-Request sent: `/api/v1/links/add`
+Richiesta `POST` inviata: `/api/v1/links/add`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/links/post-req.json
 
 :::info
-The value for `link_object_target` has to be the _ticket ID_. The
-value for the `link_object_source_number` has to be the _ticket
-number_.
+Il valore per `link_object_target` deve essere l'_ID ticket_. Il
+valore per `link_obje
 :::
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/links/post-res.json
 
 ::::
 :::::
 
-## Delete
+## Elimina
 
-Required permission: `ticket.agent` **or** `admin`
+Permesso richiesto: `ticket.agent` **o** `admin`
 
-`DELETE`-Request sent: `/api/v1/links/remove`
+Richiesta `DELETE` inviata: `/api/v1/links/remove`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/links/remove/delete-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/links/remove/delete-res.json
 

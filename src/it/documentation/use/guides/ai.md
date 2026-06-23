@@ -1,118 +1,124 @@
 ---
 order: 4
-title: 'AI Features'
+title: 'Funzionalità AI'
 ---
 
-# AI Features
+# Funzionalità AI
 
-## Introduction
+## Introduzione
 
-Zammad is getting even smarter! We are expanding Zammad's AI capabilities to
-help you manage support tickets even more efficiently. ✨🚀
+Zammad sta diventando ancora più intelligente! Stiamo espandendo le capacità
+AI di Zammad per aiutarti a gestire i ticket di supporto in modo ancora più
+efficiente. ✨🚀
 
 ::: info
-The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.
-More information about how to configure and activate it can be found in the admin section.
+Le funzionalità AI devono essere configurate e attivate dal tuo amministratore. Se non riesci a vederle, non sono configurate.
+Ulteriori informazioni su come configurarle e attivarle sono disponibili nella sezione amministratore.
 :::
 
-## Ticket Summary
+## Riepilogo del Ticket
 
-The ticket summary feature does what it says: it summarizes the ticket's
-content. This can be a huge time saver when dealing with large tickets
-and/or many hand-overs between agents.
+La funzionalità di riepilogo ticket fa esattamente quello che dice:
+riepiloga il contenuto del ticket. Questo può far risparmiare molto tempo
+quando si tratta di ticket grandi e/o molti passaggi di consegna tra agenti.
 
-If the feature is activated, a summary of the ticket is generated when the
-ticket got updated and you either open the ticket or open the summary
-sidebar tab of the ticket, depending on the configuration.
+Se la funzionalità è attivata, viene generato un riepilogo del ticket quando
+il ticket viene aggiornato e tu apri il ticket o apri la scheda della barra
+laterale del riepilogo del ticket, a seconda della configurazione.
 
-![Screenshot shows Zammad's ticket detail view with highlighted ticket
-summary banner and summary
-sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Screenshot che mostra la visualizzazione dettagli ticket di Zammad con il
+banner di riepilogo ticket evidenziato e la barra laterale del
+riepilogo](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
-Depending on the configuration of your Zammad instance, the summary includes
-the following sections:
+A seconda della configurazione della tua istanza Zammad, il riepilogo
+include le seguenti sezioni:
 
-- Customer intent
-- Conversation summary
-- Open questions (optional)
-- Upcoming events (optional)
-- Customer sentiment (optional)
+- Intento del cliente
+- Riepilogo della conversazione
+- Domande aperte (opzionale)
+- Prossimi eventi (opzionale)
+- Sentiment del cliente (opzionale)
 
-## Writing Assistant Tools
+## Strumenti dell'assistente di scrittura
 
-The AI-powered writing assistant tools are designed to simplify and enhance
-your ticket response workflow while you create an article.  To use such a
-tool, you first have to select text you want to apply the changes to. After
-that, click the `Writing Assistant Tools` button at the left side of the
-editor toolbar and choose one of the following tools, depending on what you
-want to perform.
+Gli strumenti dell'assistente di scrittura basati sull'AI sono progettati
+per semplificare e migliorare il flusso di lavoro delle risposte ai ticket
+durante la creazione di un articolo. Per usare tale strumento, devi prima
+selezionare il testo a cui vuoi applicare le modifiche. Dopodiché, fai clic
+sul pulsante `Strumenti dell'assistente di scrittura` sul lato sinistro
+della barra degli strumenti dell'editor e scegli uno dei seguenti strumenti.
 
-![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Screenshot che mostra il menu dell'editor intelligente di
+Zammad](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 :::warning
 
-- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[ctrl]] + [[z]].
-- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
-  individual cases due to the nature of neural networks.
+- Tieni presente che il tuo testo viene sostituito quando selezioni uno degli strumenti di testo. Se non sei soddisfatto del risultato,
+  prova a usare la funzione annulla premendo [[ctrl]] + [[z]].
+- Controlla sempre la risposta. Sebbene la funzionalità sia stata sviluppata con cura, potrebbero ancora esserci problemi minori in
+  singoli casi a causa della natura delle reti neurali.
 
 :::
 
-Zammad ships default writing assistant tools. The availability depends on
-the configuration of your Zammad instance. You might even have additional
-custom tools in case your admin added them.
+Zammad include strumenti predefiniti dell'assistente di scrittura. La
+disponibilità dipende dalla configurazione della tua istanza
+Zammad. Potresti anche avere strumenti personalizzati aggiuntivi nel caso in
+cui il tuo amministratore li abbia aggiunti.
 
-- **Expand draft into well-written section**: Uses your draft as a base and
-  tries to elaborate a proper text. It tries to add a structure and to
-  enhance clarity and conciseness and as well as removing misspellings and
-  grammar errors. You can even use it by providing only basic information
-  (e.g. via bullet points) and let the AI write the answer.
-- **Fix spelling and grammar**: Proofreads your text and removes spelling
-  and grammar mistakes.
-- **Summarize section to about half its current size**: Shrinks your text
-  while keeping the message and the tone of the text.
-- **Rewrite complex section and make it easy to understand**: Removes
-  unnecessary parts and rewrites your text in a clear and understandable
-  way.
+- **Espandi bozza in sezione ben scritta**: Usa la tua bozza come base e
+  cerca di elaborare un testo adeguato. Cerca di aggiungere una struttura e
+  migliorare la chiarezza e la concisione, nonché rimuovere errori di
+  ortografia e grammatica. Puoi usarlo anche fornendo solo informazioni di
+  base (ad esempio tramite punti elenco) e lasciando che l'AI scriva la
+  risposta.
+- **Correggi ortografia e grammatica**: Corregge le bozze del tuo testo e
+  rimuove errori di ortografia e grammatica.
+- **Riepiloga la sezione a circa la metà delle dimensioni correnti**: Riduce
+  il tuo testo mantenendo il messaggio e il tono del testo.
+- **Riscrivi la sezione complessa e rendila facile da capire**: Rimuove le
+  parti non necessarie e riscrive il tuo testo in modo chiaro e
+  comprensibile.
 
-## AI Agents
+## Agenti AI
 
-AI agents can be configured to work on certain types of routine tasks. In
-general, this feature operates behind the scenes but if configured, you may
-notice it in some situations (see examples below). In case your admin
-created a macro with an AI agent action, you can even run it manually. Ask
-your admin for details and have a look at the [macro
-description](/en/documentation/use/advanced-features#macros) in the advanced
-features page.
+Gli agenti AI possono essere configurati per lavorare su certi tipi di
+attività di routine. In generale, questa funzionalità opera in background,
+ma se configurata, potresti notarla in alcune situazioni (vedi esempi
+sotto). Nel caso in cui il tuo amministratore abbia creato una macro con
+un'azione dell'agente AI, puoi anche eseguirla manualmente. Chiedi al tuo
+amministratore i dettagli e dai un'occhiata alla [descrizione delle
+macro](/it/documentation/use/advanced-features#macros) nella pagina delle
+funzionalità avanzate.
 
-### Ticket History
+### Cronologia ticket
 
-If an AI agent applied changes, you can see a ticket history entry telling
-you the name of the AI agent. If you notice ongoing issues with what the AI
-agent did, inform your Zammad admin. Example of a history entry of an AI
-agent:
+Se un agente AI ha applicato modifiche, puoi vedere una voce della
+cronologia ticket che ti indica il nome dell'agente AI. Se noti problemi
+continui con ciò che ha fatto l'agente AI, informa il tuo amministratore
+Zammad. Esempio di una voce della cronologia di un agente AI:
 
-![Screenshot shows AI agent ticket history
-entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
+![Screenshot che mostra la voce della cronologia ticket dell'agente
+AI](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Simultaneous Work Detection
+### Rilevamento del lavoro simultaneo
 
-AI agents which are currently working on a ticket are displayed like other
-agents in the live user section in the bottom bar. This helps to avoid
-duplicate work as well as losing unsaved changes. If you see an AI agent
-avatar, wait for a moment or head over to another ticket.
+Gli agenti AI che stanno attualmente lavorando su un ticket vengono
+visualizzati come altri agenti nella sezione utenti live nella barra
+inferiore. Questo aiuta a evitare lavoro duplicato e la perdita di modifiche
+non salvate. Se vedi un avatar di agente AI, aspetta un momento o passa a un
+altro ticket.
 
-Avatar of AI agent:
+Avatar dell'agente AI:
 
-![Screenshot shows avatar of an AI
-agent](/screenshots/documentation/use/ai/ai-live-user.png)
+![Screenshot che mostra l'avatar di un agente
+AI](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Overview Indicator
+### Indicatore panoramica
 
-A running AI agent is indicated in the status column in overviews. The
-status circle changes to a blue/pink gradient circle:
+Un agente AI in esecuzione è indicato nella colonna dello stato nelle
+panoramiche. Il cerchio dello stato cambia in un cerchio con gradiente
+blu/rosa:
 
-![Screenshot shows a status circle in overviews indicating an AI agent is
-currently working on
-it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)
+![Screenshot che mostra un cerchio di stato nelle panoramiche che indica che
+un agente AI sta attualmente lavorando su di
+esso](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)

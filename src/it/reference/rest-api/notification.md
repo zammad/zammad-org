@@ -1,26 +1,23 @@
 ---
 order: 10
-title: Notification
+title: Notifica
 ---
 
-# Online Notification
+# Notifica online
 
 :::info
-The availability of notification highly depends on the users
-permission and chosen notification settings.
-
-Please note that the best results are always achieved with _Agents_.
+La disponibilità della notifica dipende fortemente dai permessi dell'utente e dalle notifiche scelte.
 :::
 
-## List
+## Elenca
 
-Required permission: `any`
+Permesso richiesto: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications?expand=true`
+Richiesta `GET` inviata: `/api/v1/online_notifications?expand=true`
 
 ::: tip
-Use the expand request to know the affected objects. Otherwise you'll
-need to find out what ID stands for which object type.
+Usa la richiesta expand per conoscere gli oggetti interessati. Altrimenti dovrai
+scoprire cosa.
 :::
 
 ::: details
@@ -29,11 +26,11 @@ need to find out what ID stands for which object type.
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `any`
+Permesso richiesto: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications/{id}`
+Richiesta `GET` inviata: `/api/v1/online_notifications/{id}`
 
 ::: details
 
@@ -41,32 +38,32 @@ Required permission: `any`
 
 :::
 
-## Update
+## Aggiornamento
 
-Required permission: `any`
+Permesso richiesto: `any`
 
-`PUT`-Request sent: `/api/v1/online_notifications/{id}`
+Richiesta `PUT` inviata: `/api/v1/online_notifications/{id}`
 
 ::::details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/online_notifications/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/online_notifications/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
-Required permission: `any`
+Permesso richiesto: `any`
 
-`DELETE`-Request sent: `/api/v1/online_notifications/{id}`
+Richiesta `DELETE` inviata: `/api/v1/online_notifications/{id}`
 
 ::: details
 
@@ -74,11 +71,11 @@ Required permission: `any`
 
 :::
 
-## Mark All as Read
+## Segna tutto come letto
 
-Required permission: `any`
+Permesso richiesto: `any`
 
-`POST`-Request sent: `/api/v1/online_notifications/mark_all_as_read`
+Richiesta `POST` inviata: `/api/v1/online_notifications/mark_all_as_read`
 
 ::: details
 

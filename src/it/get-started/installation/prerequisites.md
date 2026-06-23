@@ -1,53 +1,50 @@
 ---
 order: 1
-title: Prerequisites
+title: Prerequisiti
 ---
 
-# Prerequisites
+# Prerequisiti
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Server Hardware
+## Hardware server
 
-The hardware requirements vary depending on the scenario. This makes it hard
-to come up with specific CPU and memory numbers which are fitting for all
-use cases. In any case, more and better hardware ensures that Zammad runs
-smoothly and the maintenance breaks for updates should be shorter as well.
+I requisiti hardware variano a seconda dello scenario. Questo rende
+difficile fornire un'indicazione generale.
 
-As an absolute minimum for basic usage with a PostgreSQL server, we
-consider:
+Come minimo assoluto per l'uso di base con un server PostgreSQL,
+consideriamo:
 
-- 2 CPU cores
-- 6 GB RAM (+4 GB for Elasticsearch)
+- 2 core CPU
+- 6 GB di RAM (+4 GB per Elasticsearch)
 
-For an example scenario with up to 40 agents, a good starting point could
-be:
+Per uno scenario di esempio con fino a 40 agenti, un buon punto di partenza
+potrebbe essere:
 
-- 6 CPU cores
-- 6 GB RAM (+6 GB for Elasticsearch)
+- 6 core CPU
+- 6 GB di RAM (+6 GB per Elasticsearch)
 
-## Server Software
+## Software server
 
-Depending on the installation type, there are some prerequisites. They are
-included in the installation instructions:
+A seconda del tipo di installazione, ci sono alcuni prerequisiti. Sono
+inclusi nelle pagine seguenti:
 
-- [Package](package)
+- [Pacchetto](package)
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Client Requirements
+## Requisiti client
 
-Because Zammad is a web application, only an up-to-date browser is
-needed. The following browsers are supported in their latest stable version:
+Poiché Zammad è un'applicazione web, è necessario solo un browser
+aggiornato. I seguenti browser sono supportati:
 
 - Firefox
-- Chrome (and Chromium-based)
+- Chrome (e basati su Chromium)
 - Opera
 - Safari
 
-This does not mean that Zammad will not work with other browsers or older
-versions, just that we do not test against or provide support for them.
+Questo non significa che Zammad non funzioni con altri browser o versioni
+più vecchie, solo che non sono ufficialmente supportati.
 
-The communication between client and server is based on web sockets. Some
-firewalls may filter these connections. This may lead to decreased browser
-performance.
+La comunicazione tra client e server si basa su web socket. Alcuni firewall
+potrebbero bloccare questo traffico.

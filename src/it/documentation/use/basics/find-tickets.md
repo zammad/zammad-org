@@ -1,59 +1,60 @@
 ---
 order: 3
-title: 'Find Tickets'
+title: 'Trova ticket'
 ---
 
-# Find Tickets
+# Trova ticket
 
-There are different ways to find tickets, depending on your use case.
+Ci sono diversi modi per trovare i ticket, a seconda del tuo caso d'uso.
 
-## Via Overviews
+## Tramite panoramiche
 
-If you search for new tickets to work on, your first look should be in the
-overview section. You can either open it by clicking the `Overviews` button
-in the navigation bar or use the keyboard shortcut [[o]]. You can see
-overviews as a kind of ticket lists.
+Se cerchi nuovi ticket su cui lavorare, il tuo primo sguardo dovrebbe essere
+nella sezione panoramiche. Puoi aprirla facendo clic sul pulsante
+`Panoramiche` nella barra di navigazione o usando la scorciatoia da tastiera
+[[o]]. Puoi vedere le panoramiche come un tipo di elenchi di ticket.
 
-By default, there are some built-in overviews you can use. For example,
-there is an overview called "Open Tickets".  This might be a good starting
-point. Your Zammad admin may have created additional overviews. These are
-based on conditions, which are basically rules, to define which ticket
-appears in which overview.
+Per impostazione predefinita, ci sono alcune panoramiche integrate che puoi
+usare. Ad esempio, c'è una panoramica chiamata "Ticket aperti". Il tuo
+amministratore Zammad potrebbe aver creato panoramiche aggiuntive. Queste si
+basano su condizioni, che sono essenzialmente regole, per definire quale
+ticket appare in quale panoramica.
 
-For a detailed description, head over to the [overview usage
-guide](/en/documentation/use/guides/overviews).
+Per una descrizione dettagliata, vai alla [guida all'uso delle
+panoramiche](/it/documentation/use/guides/overviews).
 
-## Via Search
+## Tramite ricerca
 
-However, if you search for a specific ticket which might or might not be
-visible in the overviews, you can use the search. You can find it in the top
-left corner in the navigation bar. Either select it via mouse or use the
-keyboard shortcut by simply pressing [[s]].
+Tuttavia, se cerchi un ticket specifico che potrebbe o meno essere visibile
+nelle panoramiche, puoi usare la ricerca. La trovi nell'angolo in alto a
+sinistra nella barra di navigazione. Selezionala tramite mouse o usa la
+scorciatoia da tastiera premendo semplicemente [[s]].
 
-After activating the search field, you can find the tickets you recently
-closed from your taskbar as well as your last search queries.
+Dopo aver attivato il campo di ricerca, puoi trovare i ticket che hai chiuso
+di recente dalla tua taskbar nonché le tue ultime query di ricerca.
 
-By entering a search term, you immediately see a preview of the search
-results. If you press [[enter]] or click on `detailed search`, Zammad
-displays a page with search results. There you can differentiate by object
-type (e.g.  user), what you are searching.
+Inserendo un termine di ricerca, vedi immediatamente un'anteprima dei
+risultati della ricerca. Se premi [[enter]] o fai clic su `ricerca
+dettagliata`, Zammad visualizza una pagina con i risultati della ricerca. Lì
+puoi differenziare per tipo di oggetto (ad esempio utente) cosa stai
+cercando.
 
-Have a look at the [search guide](/en/documentation/use/guides/search) for
-more details.
+Dai un'occhiata alla [guida alla
+ricerca](/it/documentation/use/guides/search) per ulteriori dettagli.
 
-## Notifications
+## Notifiche
 
-Depending on the [notification
-settings](/en/documentation/use/user-profile#notifications) in your profile,
-you receive updates for different ticket based events like the creation or
-the update of a ticket. This ensures that no important change to a ticket
-gets overlooked.
+A seconda delle [impostazioni di
+notifica](/it/documentation/use/user-profile#notifications) nel tuo profilo,
+ricevi aggiornamenti per diversi eventi basati sui ticket come la creazione
+o l'aggiornamento di un ticket. Questo garantisce che nessuna modifica
+importante a un ticket venga trascurata.
 
-You can open them by clicking on the notification counter in the top left
-corner. If there is a badge with a counter, the counter shows the number of
-unread notifications.
+Puoi aprirle facendo clic sul contatore delle notifiche nell'angolo in alto
+a sinistra. Se c'è un badge con un contatore, il contatore mostra il numero
+di notifiche non lette.
 
-By default, you get notified when one of your tickets (means you are the
-owner) got updated. By clicking on the link in the notification, this ticket
-gets opened in the navigation sidebar as a tab and the ticket detail view is
-displayed.
+Per impostazione predefinita, ricevi una notifica quando uno dei tuoi ticket
+(ovvero sei il proprietario) viene aggiornato. Facendo clic sul link nella
+notifica, questo ticket viene aperto nella barra laterale di navigazione
+come scheda e viene visualizzata la visualizzazione dettagli ticket.

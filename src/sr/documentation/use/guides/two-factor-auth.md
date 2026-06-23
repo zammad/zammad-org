@@ -123,9 +123,9 @@ the next sign-in you will be asked to provide the same two-factor method
 after entering correct username and password. Depending on the chosen
 two-factor method, this may be a security code, hardware key, etc.
 
-In case you are having issues during sign-in with your preferred two-factor
-authentication method, you can switch to another one, provided you have set
-it up previously.
+У случају да приликом пријављивања имате проблема са својим жељени методом
+двофакторске аутентификације, можете се пребацити на други, под условом да
+сте га претходно подесили.
 
 Потражите линк **Покушајте други метод** испод прозора за пријаву. У случају
 да не видите овај линк, вероватно немате подешене друге доступне методе

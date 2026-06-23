@@ -1,35 +1,31 @@
 ---
 order: 7
-title: 'GraphQL API'
+title: 'API GraphQL'
 ---
 
-# GraphQL API
+# API GraphQL
 
-## Introduction
+## Introduzione
 
 In addition to Zammad's [REST API](rest-api/intro), you can fetch,
 manipulate and create data via the powerful and open-source [GraphQL
 API](https://graphql.org/) too.
 
-This documentation isn't intended to cover everything about GraphQL. It
-should give you a basic understanding about how you can fetch and
-create/manipulate data to build upon. For a comprehensive guide, have a look
-at [GraphQL's documentation](https://graphql.org/learn/).
+Questa documentazione non intende coprire tutto su GraphQL. Dovrebbe darti
+una.
 
-GraphQL is used by many web services, even big ones. It became some kind of
-industry standard because of its efficiency and features. You can precisely
-request the data you require which minimizes unnecessary data transfers and
-searching the needle in a haystack.
+GraphQL è usato da molti servizi web, anche grandi. È diventato una sorta di
+standard del settore.
 
-Fetching the Zammad GraphQL schema (called introspection) enables
-autocomplete and client-side validation while writing requests.
+Recuperare lo schema GraphQL di Zammad (chiamato introspezione) abilita
+l'autocompletamento e la convalida lato client.
 
-## Getting Started
+## Per iniziare
 
-Following the next steps enables you to successfully send a simple request
-and receive data from Zammad.
+Seguendo i passaggi successivi sarai in grado di inviare con successo una
+semplice richiesta e ricevere dati.
 
-### Clients
+### Client
 
 To send request and receive responses, you need an API client. If you are
 already dealing with APIs, skip this section.  If you are new to the topic,
@@ -41,24 +37,25 @@ with GraphQL support are:
 - [Insomnia](https://insomnia.rest/download)
 - [Postman](https://www.postman.com/downloads/)
 
-### Authentication
+### Autenticazione
 
 If not already present, create a [token in the Zammad
 profile](/en/documentation/use/user-profile#token-access) you want to use as
 API user. Depending what you want to achieve via API, set the permissions
 accordingly.
 
-Make sure to copy it before closing the dialog because you can't view it
-again. In case it went wrong, simply create a new token.
+Assicurati di copiarlo prima di chiudere la finestra di dialogo perché non
+potrai visualizzarlo di nuovo.
 
-### Prepare Your Client
+### Prepara il tuo client
 
-Open your API client and set it up.
+Apri il tuo client API e configuralo.
 
-- Add your token from Zammad as bearer token.
-- Create a request and add your Zammad domain with `/graphql` suffix,
-  e.g. `https://fastlane.inc/graphql`.
-- Fetch Zammad's GraphQL schema from introspection or load it from file.
+- Aggiungi il tuo token da Zammad come bearer token.
+- Crea una richiesta e aggiungi il tuo dominio Zammad con il suffisso
+  `/graphql`, ad esempio `https://fastlane.inc/graphql`.
+- Recupera lo schema GraphQL di Zammad dall'introspezione o caricalo da
+  file.
 
 ::: warning
 The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the
@@ -66,23 +63,22 @@ environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increase
 **not recommended**.
 :::
 
-Click on details to watch a screencast showing the basic steps using Bruno
-as client.
+Fai clic su dettagli per guardare uno screencast che mostra i passaggi di
+base usando Bruno come client.
 
 ::: details
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Create a Request
+### Crea una richiesta
 
-All requests and responses are in JSON format. This means all information
-must be encapsulated in brackets and have a hierarchical structure.
+Tutte le richieste e risposte sono in formato JSON. Ciò significa che tutte
+le informazioni devono essere incapsulate.
 
-Let's have a look at a request to fetch information from Zammad. Such a
-request starts with the string `query`, followed by an object you want to
-query.
+Diamo un'occhiata a una richiesta per recuperare informazioni da
+Zammad. Tale richiesta inizia con.
 
-Basic example to fetch users with their first and last name:
+Esempio di base per recuperare gli utenti con il loro nome e cognome:
 
 ```gql :line-numbers
 query userName (
@@ -91,13 +87,10 @@ query userName (
   user(userId: $userId) {
     firstname
     lastname
-  }
-}
 ```
 
-The `$userId` from line 2 defines a variable which is used as an ID. In the
-variables section of your client, provide the value for it. In this example,
-the variables section looks like this:
+Il `$userId` dalla riga 2 definisce una variabile usata come ID. Nella
+sezione delle variabili.
 
 ```json
 {
@@ -110,24 +103,23 @@ implementation. Depending on which object type you want to deal with,
 replace the `User` by another object like `Ticket`, `Organization`, `Group`,
 etc. Zammad expects a numeric value as ID.
 
-Starting with line 4 in the code block above is the actual request. This
-simple example just fetches the attributes `firstname` and `lastname` from
-the user with the ID 2.
+A partire dalla riga 4 nel blocco di codice sopra c'è la richiesta vera e
+propria. Questo semplice esempio.
 
-Click on details to watch a screencast showing a basic request using a
-variable in Bruno.
+Fai clic su dettagli per guardare uno screencast che mostra una richiesta di
+base usando una variabile in Bruno.
 
 ::: details
 <video controls="controls" src="/public/videos/graphql-user-request-variable.mp4" />
 :::
 
-To create or change data, replace the `query` by `mutation` in the request
-body.
+Per creare o modificare dati, sostituisci `query` con `mutation` nel corpo
+della richiesta.
 
-## Examples
+## Esempi
 
-The examples use variables for the different object types. Make sure to set
-it when using the examples.
+Gli esempi usano variabili per i diversi tipi di oggetto. Assicurati di
+impostarla quando usi.
 
 ::::tabs
 
@@ -135,39 +127,39 @@ it when using the examples.
 
 :::tabs
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/graphql/ticket-req.gql
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/graphql/ticket-res.json
 
 :::
 
-==== User
+==== Utente
 
 :::tabs
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/graphql/user-req.gql
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/graphql/user-res.json
 
 :::
 
-==== Organization
+==== Organizzazione
 
 :::tabs
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/graphql/organization-req.gql
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/graphql/organization-res.json
 
@@ -175,13 +167,13 @@ it when using the examples.
 
 ::::
 
-## Appendix
+## Appendice
 
-### Global IDs
+### ID globali
 
 :::info
 
-Replace the `{ID}` with a numeric value.
+Sostituisci `{ID}` con un valore numerico.
 
 :::
 

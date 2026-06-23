@@ -1,160 +1,169 @@
 ---
 order: 2
-title: 'Ticket Basics'
+title: 'Nozioni di base sui ticket'
 ---
 
-# Ticket Basics
+# Nozioni di base sui ticket
 
-New to ticket systems? Then read on about the basics. This helps you to
-understand the main concepts and to get started with Zammad. If you are
-already familiar with ticket systems, you can jump directly to the next
-pages about finding, creating and working with tickets.
+Sei nuovo ai sistemi di ticketing? Allora continua a leggere le nozioni di
+base. Questo ti aiuta a comprendere i concetti principali e a iniziare con
+Zammad. Se hai già familiarità con i sistemi di ticketing, puoi passare
+direttamente alle pagine successive su come trovare, creare e lavorare con i
+ticket.
 
-## Introduction
+## Introduzione
 
-In Zammad, **tickets** are used to track customer service requests. The
-first time a customer contacts you about something, Zammad creates a new
-ticket. Each message sent between you and the customer is added to that
-ticket until the issue is resolved, the customer is happy and the ticket is
-finally closed. Such a single message in a ticket is called an
-**article**. Basically, you can think of a **ticket** as a **conversation**
-between you and a customer about a single issue.
+In Zammad, i **ticket** vengono usati per monitorare le richieste di
+servizio clienti. La prima volta che un cliente ti contatta per qualcosa,
+Zammad crea un nuovo ticket. Ogni messaggio inviato tra te e il cliente
+viene aggiunto a quel ticket fino a quando il problema non viene risolto, il
+cliente è soddisfatto e il ticket viene infine chiuso. Tale singolo
+messaggio in un ticket è chiamato **articolo**. Fondamentalmente, puoi
+pensare a un **ticket** come a una **conversazione** tra te e un cliente su
+un singolo problema.
 
-If you're completely new to a ticket system and handled your customer
-requests with an email client so far, you might think that a ticket system
-is complicated. But the opposite is true:
+Se sei completamente nuovo a un sistema di ticketing e hai gestito finora le
+richieste dei clienti con un client email, potresti pensare che un sistema
+di ticketing sia complicato. Ma è vero il contrario:
 
-- All emails are now collected in Zammad (and requests from other channels
-  might be as well).
-- You and your colleagues can see who is working on which customer request
-  ("ticket").
-- The state of each request as well as the history (who did what?) is
-  transparent.
-- There is no duplicate work and nothing gets overlooked.
-- You can ask your colleagues directly in the ticket for help in difficult
-  cases.
-- With Zammad's intuitive UI, you can focus on what matters: to resolve
-  customer issues and answer customer questions.
+- Tutte le email vengono ora raccolte in Zammad (e anche le richieste da
+  altri canali potrebbero esserlo).
+- Tu e i tuoi colleghi potete vedere chi sta lavorando su quale richiesta
+  del cliente ("ticket").
+- Lo stato di ogni richiesta nonché la cronologia (chi ha fatto cosa?) è
+  trasparente.
+- Non c'è lavoro duplicato e nulla viene trascurato.
+- Puoi chiedere ai tuoi colleghi direttamente nel ticket aiuto nei casi
+  difficili.
+- Con l'interfaccia utente intuitiva di Zammad, puoi concentrarti su ciò che
+  conta: risolvere i problemi dei clienti e rispondere alle domande dei
+  clienti.
 
-This means you can work with Zammad in a similar way as with your email
-client. Except that a ticket has additional attributes. Read on to learn
-more.
+Ciò significa che puoi lavorare con Zammad in modo simile al tuo client
+email. Tranne che un ticket ha attributi aggiuntivi. Continua a leggere per
+saperne di più.
 
-## Ticket Attributes
+## Attributi del ticket
 
-In addition to articles, tickets have some additional meta information which
-are called attributes. Use the **ticket sidebar** to view and change ticket
-attributes.
+Oltre agli articoli, i ticket hanno alcune informazioni meta aggiuntive
+chiamate attributi. Usa la **barra laterale del ticket** per visualizzare e
+modificare gli attributi del ticket.
 
-![Screenshot shows ticket
-sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
+![Screenshot che mostra la barra laterale del
+ticket](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
-To hide the sidebar, click the collapse button with the arrow on the left
-side of the sidebar. Click on one of the tabs to bring it back. The
-available options depend on your privileges and the configuration of your
-system.
+Per nascondere la barra laterale, fai clic sul pulsante di compressione con
+la freccia sul lato sinistro della barra laterale. Fai clic su una delle
+schede per riportarla. Le opzioni disponibili dipendono dai tuoi privilegi e
+dalla configurazione del sistema.
 
-It is even possible to create custom fields for tickets (for groups, users
-and organizations too). You think such a custom field makes sense? Talk with
-your Zammad admin, it can be set up easily.
+È anche possibile creare campi personalizzati per i ticket (anche per
+gruppi, utenti e organizzazioni). Pensi che tale campo personalizzato abbia
+senso? Parla con il tuo amministratore Zammad, può essere configurato
+facilmente.
 
-### State
+### Stato
 
-The state reflects the current status of a ticket (mainly if a customer
-request is resolved or not). Think of it as a representation of progress
-towards completion. By default, there are the following states:
+Lo stato riflette lo stato corrente di un ticket (principalmente se una
+richiesta del cliente è risolta o meno). Pensalo come una rappresentazione
+del progresso verso il completamento. Per impostazione predefinita, ci sono
+i seguenti stati:
 
-- **New**: State for new tickets on which no one has worked on. When
-  updating a ticket for the first time, it automatically switches to open.
-- **Open**: State for tickets which aren't resolved yet and some work needs
-  to be done.
-- **Pending Close**: State for tickets which are basically resolved but you
-  don't want to close immediately. This state requires you to enter a date
-  and time at which the ticket automatically switches to closed.
-- **Pending Reminder**: State for open tickets which you want to get
-  reminded about at a certain date and time. Requires you to enter a date
-  and time at which you want to get notified. For example useful if you had
-  a question to a third party and want to make sure that this issue won't be
-  forgotten.
-- **Merged**: State for a ticket which was merged into another ticket. Check
-  the [linked tickets](/en/documentation/use/advanced-features#link-tickets)
-  to see the related ticket.
+- **Nuovo**: Stato per i nuovi ticket su cui nessuno ha ancora
+  lavorato. Quando si aggiorna un ticket per la prima volta, passa
+  automaticamente ad aperto.
+- **Aperto**: Stato per i ticket che non sono ancora risolti e su cui è
+  necessario lavorare.
+- **In attesa di chiusura**: Stato per i ticket che sono sostanzialmente
+  risolti ma che non vuoi chiudere immediatamente. Questo stato richiede di
+  inserire una data e un'ora in cui il ticket passa automaticamente a
+  chiuso.
+- **Promemoria in attesa**: Stato per i ticket aperti di cui vuoi essere
+  ricordato a una certa data e ora. Richiede di inserire una data e un'ora a
+  cui vuoi essere notificato. Ad esempio utile se hai una domanda a una
+  terza parte e vuoi assicurarti che questo problema non venga dimenticato.
+- **Unito**: Stato per un ticket che è stato unito a un altro
+  ticket. Controlla i [ticket
+  collegati](/it/documentation/use/advanced-features#link-tickets) per
+  vedere il ticket correlato.
 
-Zammad's ticket states are color coded. This helps you to understanding the
-state of the ticket much faster in general - without having a look into
-details.
+Gli stati dei ticket di Zammad sono codificati per colore. Questo ti aiuta a
+capire lo stato del ticket molto più velocemente in generale - senza dover
+guardare i dettagli.
 
-![Screenshot shows different color-coded
-states](/screenshots/documentation/use/overviews/states.png)
+![Screenshot che mostra i diversi stati codificati per
+colore](/screenshots/documentation/use/overviews/states.png)
 
-### Priority
+### Priorità
 
-A ticket's priority is simply a ranking (from 1 to 3) of how urgent or
-important it is. The three default priorities are:
+La priorità di un ticket è semplicemente una classifica (da 1 a 3) di quanto
+sia urgente o importante. Le tre priorità predefinite sono:
 
-- 1 low
-- 2 normal
-- 3 high
+- 1 bassa
+- 2 normale
+- 3 alta
 
-In case these priorities aren't enough, ask your Zammad admin to create
-additional ones. The default priorities allow you to immediately recognize
-the importance of your tickets because they are color coded:
+Se queste priorità non sono sufficienti, chiedi al tuo amministratore Zammad
+di crearne di aggiuntive. Le priorità predefinite ti permettono di
+riconoscere immediatamente l'importanza dei tuoi ticket perché sono
+codificate per colore:
 
-![Screenshot shows different color-coded
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Screenshot che mostra le diverse priorità codificate per
+colore](/screenshots/documentation/use/overviews/priorities.png)
 
-You might wonder what such a ticket priority is for. Out of the box, it
-doesn't actually do anything except the highlighting. However, Zammad
-administrators can set up all sorts of automation and analytics based on the
-priority.
+Potresti chiederti a cosa serve tale priorità del ticket. Di default, non fa
+nulla eccetto l'evidenziazione. Tuttavia, gli amministratori di Zammad
+possono configurare ogni tipo di automazione e analisi basate sulla
+priorità.
 
-Be aware that customers can't set a priority for their own
-tickets. Otherwise, some might set their tickets always to high and hope for
-an immediate escalation.
+Tieni presente che i clienti non possono impostare una priorità per i propri
+ticket. Altrimenti, alcuni potrebbero impostare sempre i loro ticket su alta
+sperando in un'escalation immediata.
 
-### Tags
+### Tag
 
-Tags are custom labels that can be assigned to tickets to make it easier to
-find them in the future.  They can be used in conditions like in triggers
-and in overviews and they can also be assigned automatically by macros,
-schedulers and triggers. Of course you can search for the text of the tags
-and you will find the tickets which have the tag assigned.
+I tag sono etichette personalizzate che possono essere assegnate ai ticket
+per renderli più facili da trovare in futuro. Possono essere usati in
+condizioni come nei trigger e nelle panoramiche e possono anche essere
+assegnati automaticamente da macro, scheduler e trigger. Naturalmente puoi
+cercare il testo dei tag e troverai i ticket a cui è stato assegnato il tag.
 
-![Screenshot shows tag area in ticket side
-bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
+![Screenshot che mostra l'area tag nella barra laterale del
+ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
-In the ticket sidebar, you can find a section which is labeled as
-**Tags**. Add a tag by clicking on the ::+:: button.  Depending on your
-Zammad's configuration, you can create new tags by simply type and confirm
-them with [[enter]] or [[tab]]. In any case, you can choose from already
-available tags. Start typing and you see a list with matching
-suggestions. To remove it, click the ::X:: button on the right side of the
-tab.
+Nella barra laterale del ticket, puoi trovare una sezione etichettata come
+**Tag**. Aggiungi un tag facendo clic sul pulsante ::+::. A seconda della
+configurazione di Zammad, puoi creare nuovi tag semplicemente digitandoli e
+confermandoli con [[enter]] o [[tab]]. In ogni caso, puoi scegliere tra i
+tag già disponibili. Inizia a digitare e vedi un elenco con i suggerimenti
+corrispondenti. Per rimuoverlo, fai clic sul pulsante ::X:: sul lato destro
+della scheda.
 
-### Group
+### Gruppo
 
-This ticket attribute is useful for organizations with more than one team. A
-common way to use groups is to have one for each department of the
-company. Depending on the permissions, you might not see the ticket after
-changing the group and saving the changes. In case you can't see the group
-field, either there is only one group in your Zammad system or you don't
-have the permission to create a ticket in other groups.
+Questo attributo del ticket è utile per le organizzazioni con più di un
+team. Un modo comune di usare i gruppi è averne uno per ogni dipartimento
+dell'azienda. A seconda dei permessi, potresti non vedere il ticket dopo
+aver cambiato il gruppo e salvato le modifiche. Se non riesci a vedere il
+campo gruppo, o c'è solo un gruppo nel tuo sistema Zammad o non hai il
+permesso di creare un ticket in altri gruppi.
 
-### Owner
+### Proprietario
 
-This is the person who is currently responsible for the ticket. In case you
-need information from another colleague, you can either change the owner to
-this person or mention the person in an article by typing [[@]][[@]] and
-selecting the user. In the latter case, the user gets notified and is
-automatically subscribed to receive notifications on ticket updates.
+Questa è la persona attualmente responsabile del ticket. Se hai bisogno di
+informazioni da un altro collega, puoi cambiare il proprietario a quella
+persona o menzionare la persona in un articolo digitando [[@]][[@]] e
+selezionando l'utente. In quest'ultimo caso, l'utente viene notificato e
+viene automaticamente iscritto per ricevere notifiche sugli aggiornamenti
+del ticket.
 
-To change the owner to a person which has only access to another group's
-tickets, you first have to switch the group accordingly.
+Per cambiare il proprietario a una persona che ha accesso solo ai ticket di
+un altro gruppo, devi prima cambiare il gruppo di conseguenza.
 
 -----
 
-Now that you know the basics, head over to one of the following pages:
+Ora che conosci le nozioni di base, vai a una delle seguenti pagine:
 
-- [Find Tickets](/en/documentation/use/basics/find-tickets)
-- [Create tickets](/en/documentation/use/basics/create-tickets)
-- [Work with tickets](/en/documentation/use/basics/work-with-tickets)
+- [Trova ticket](/it/documentation/use/basics/find-tickets)
+- [Crea ticket](/it/documentation/use/basics/create-tickets)
+- [Lavora con i ticket](/it/documentation/use/basics/work-with-tickets)

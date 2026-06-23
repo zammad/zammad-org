@@ -1,21 +1,20 @@
 ---
 order: 9
-title: Mentions
+title: Menzioni
 ---
 
-# Mentions
+# Menzioni
 
 ::: warning
-The mention endpoint depends on the group permissions and if the user
-you're using is an **agent**. Because of this tickets may or may not
-be available.
+L'endpoint delle menzioni dipende dai permessi del gruppo e se l'utente
+che stai usando è un.
 :::
 
-## List
+## Elenca
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/mentions`
+Richiesta `GET` inviata: `/api/v1/mentions`
 
 ::: details
 
@@ -23,40 +22,39 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Crea
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/mentions`
+Richiesta `POST` inviata: `/api/v1/mentions`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/mentions/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/mentions/post-res.json
 
 :::
 ::::
 
-The mention will be created for the user of the current session.
+La menzione verrà creata per l'utente della sessione corrente.
 
 ::: tip
-If you want to mention/subscribe other users, you can do so by sending
-an additional `From`-header in your request. You can either
-provide the user ID or the user email address as value.
+Se vuoi menzionare/iscrivere altri utenti, puoi farlo inviando
+un'intestazione `From` aggiuntiva.
 :::
 
-## Delete
+## Elimina
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/mentions/{id}`
+Richiesta `DELETE` inviata: `/api/v1/mentions/{id}`
 
 ::: details
 

@@ -1,27 +1,24 @@
 ---
 order: 7
-title: 'Knowledge Base'
+title: 'Base di conoscenza'
 ---
 
-# Knowledge Base
+# Base di conoscenza
 
-Zammad has multiple knowledge base related endpoints. The most important -
-but not all - are covered in this documentation. You can find the general
-ones about the knowledge base itself below, followed by the sub-endpoints
-for [answers](#answers) and [categories](#categories).
+Zammad ha molteplici endpoint relativi alla base di conoscenza. I più
+importanti - ma non tutti - sono.
 
-## Knowledge Base General
+## Base di conoscenza generale
 
 ::: info
-The request and response examples include the knowledge base ID `1`. Your ID may be different, for example if you
-created a knowledge base before, dropped it and created a new one.
+Gli esempi di richiesta e risposta includono l'ID della base di conoscenza `1`. Il tuo ID potrebbe essere diverso.
 :::
 
-### Overview
+### Panoramica
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/init`
+Richiesta `POST` inviata: `/api/v1/knowledge_bases/init`
 
 ::: details
 
@@ -29,11 +26,11 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Show
+### Mostra
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.reader` o `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}`
+Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your KB}`
 
 ::: details
 
@@ -41,32 +38,33 @@ Required permission: `knowledge_base.reader` or `knowledge_base.editor`
 
 :::
 
-### Change Settings
+### Cambia impostazioni
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/manage/{ID of your KB}`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/manage/{ID of your KB}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-manage.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-manage-response.json
 
 :::
 ::::
 
-### Show Permissions
+### Mostra permessi
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/permissions`
 
 ::: details
 
@@ -74,84 +72,85 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Change Permissions
+### Cambia permessi
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+Richiesta `PUT` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/permissions`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/put-permissions.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/put-permissions-response.json
 
 :::
 ::::
 
-## Categories
+## Categorie
 
-### Reorder Sub-Categories
+### Riordina sotto-categorie
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
-KB}/categories/{ID of category}/reorder_categories`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-response.json
 
 :::
 ::::
 
-### Reorder Root Categories
+### Riordina categorie radice
 
 ::: info
-You have to provide the order of all top level categories, i.e.
-categories with no category as parent (parent: `>> Homepage <<`).
+Devi fornire l'ordine di tutte le categorie di primo livello, ovvero
+categorie senza categoria.
 :::
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
-KB}/categories/reorder_root_categories`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/reorder_root_cat
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-root.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-root-response.json
 
 :::
 ::::
 
-### Show
+### Mostra
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.reader` o `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}`
+Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}`
 
 ::: details
 
@@ -159,55 +158,56 @@ of category}`
 
 :::
 
-### Create
+### Crea
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories`
+Richiesta `POST` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/post-categories.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/post-categories-response.json
 
 :::
 ::::
 
-### Change
+### Modifica
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
-KB}/categories/{ID of category}`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-response.json
 
 :::
 ::::
 
-### Delete
+### Elimina
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your
-KB}/categories/{ID of category}`
+Richiesta `DELETE` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category
 
 ::: details
 
@@ -215,12 +215,12 @@ KB}/categories/{ID of category}`
 
 :::
 
-### Show Permissions
+### Mostra permessi
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}/permissions`
+Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}/p
 
 ::: details
 
@@ -228,62 +228,61 @@ of category}/permissions`
 
 :::
 
-### Change Permissions
+### Cambia permessi
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
-of category}/permissions`
+Richiesta `PUT` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}/p
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/put-categories-permissions.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json
 
 :::
 ::::
 
-## Answers
+## Risposte
 
-### Reorder Answers
+### Riordina risposte
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
-KB}/categories/{ID of category}/reorder_answers`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/categories/{ID of category}
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers-response.json
 
 :::
 ::::
 
-### Show
+### Mostra
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.reader` o `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of
-answer}`
+Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}`
 
 ::: tip
-If you want to get the content of an answer, add the parameters `?full=1&include_contents=1` to the query URL. The
-request for the following response included the parameters.
+Se vuoi ottenere il contenuto di una risposta, aggiungi i parametri `?full=1&include_contents=
 :::
 
 :::: details
@@ -292,55 +291,55 @@ request for the following response included the parameters.
 
 :::
 
-### Create
+### Crea
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers`
+Richiesta `POST` inviata: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
 ::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/post-answers.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/post-answers-response.json
 
 :::
 ::::
 
-### Change
+### Modifica
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}`
+Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-answers.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/knowledgebase/patch-answers-response.json
 
 :::
 ::::
 
-### Delete
+### Elimina
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}`
+Richiesta `DELETE` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}`
 
 ::: details
 
@@ -348,50 +347,34 @@ of answer}`
 
 :::
 
-### Manage Publication Status
+### Gestisci stato di pubblicazione
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
 ::: info
-Responses are omitted here. You can expect to get a response like for showing an answer with a populated value for
-`archived_at`, `published_at` or `internal_at`, depending on which request you execute.
+Le risposte sono omesse qui. Puoi aspettarti di ottenere una risposta come per mostrare una risposta con.
 :::
 
 :::: details
 
 ::: tabs
 
-=== Publish internally
+=== Pubblica internamente
 
-`POST`-Request sent:
-`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/internal`
-
-=== Publish publicly
-
-`POST`-Request sent:
-`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/publish`
-
-=== Archive
-
-`POST`-Request sent:
-`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/archive`
-
-=== Unarchive
-
-`POST`-Request sent:
-`/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/unarchive`
+Richiesta `POST` inviata:
+`/api/v1/knowledge_bases/{ID of your KB}/ans
 
 :::
 ::::
 
-### Manage Attachments
+### Gestisci allegati
 
-Required permission: `knowledge_base.editor`
+Permesso richiesto: `knowledge_base.editor`
 
-Add attachment:
+Aggiungi allegato:
 
-`POST`-Request with payload sent: `/api/v1/knowledge_bases/{ID of your
-KB}/answers/{ID of answer}/attachments`
+Richiesta `POST` con payload inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of
 
 ::: details
 
@@ -399,10 +382,10 @@ KB}/answers/{ID of answer}/attachments`
 
 :::
 
-Delete attachment:
+Elimina allegato:
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
-of answer}/attachments/{ID of attachment}`
+Richiesta `DELETE` inviata: `/api/v1/knowledge_bases/{ID of your
+KB}/answers/{ID of answer}/att
 
 ::: details
 

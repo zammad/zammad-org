@@ -1,15 +1,15 @@
 ---
 order: 15
-title: 'Shared Drafts'
+title: 'Bozze condivise'
 ---
 
-# Shared Drafts
+# Bozze condivise
 
-## Show
+## Mostra
 
-Required permission: `ticket.agent`.
+Permesso richiesto: `ticket.agent`.
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Richiesta `GET` inviata: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 
@@ -17,53 +17,53 @@ Required permission: `ticket.agent`.
 
 :::
 
-## Create
+## Crea
 
-Required permission: `ticket.agent`.
+Permesso richiesto: `ticket.agent`.
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Richiesta `PUT` inviata: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Richiesta `PATCH` inviata: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-res.json
 
 :::
 ::::
 
-## Remove
+## Rimuovi
 
-Required permission: `ticket.agent`
+Permesso richiesto: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Richiesta `DELETE` inviata: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 

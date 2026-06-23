@@ -1,16 +1,16 @@
 ---
 order: 13
-title: Priorities
+title: Priorità
 ---
 
-# Priorities
+# Priorità
 
-## List
+## Elenca
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Permesso richiesto: `admin.object` **o** `ticket.agent` **o**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities`
+Richiesta `GET` inviata: `/api/v1/ticket_priorities`
 
 ::: details
 
@@ -18,12 +18,12 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Permesso richiesto: `admin.object` **o** `ticket.agent` **o**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities/{id}`
+Richiesta `GET` inviata: `/api/v1/ticket_priorities/{id}`
 
 ::: details
 
@@ -31,70 +31,65 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.object`
+Permesso richiesto: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_priorities`
+Richiesta `POST` inviata: `/api/v1/ticket_priorities`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/ticket_priorities/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/ticket_priorities/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.object`
+Permesso richiesto: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_priorities/{id}`
+Richiesta `PUT` inviata: `/api/v1/ticket_priorities/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/ticket_priorities/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/ticket_priorities/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
-Required permission: `admin.object`
+Permesso richiesto: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
+Richiesta `DELETE` inviata: `/api/v1/ticket_priorities/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Questa è una rimozione permanente**
 
-Please note that removing priorities cannot be undone.
+Tieni presente che rimuovere priorità non può essere annullato.
 
-Removing ticket priorities with references in tickets is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
-
-Consider either setting said priority to `active: false` or adjust all
-tickets with the to remove priority to another priority.
+R
 :::
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json
 

@@ -1,19 +1,19 @@
 ---
 order: 12
-title: Organization
+title: Organizzazione
 ---
 
-# Organization
+# Organizzazione
 
-## List
+## Elenca
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Permesso richiesto: `ticket.agent` **o** `admin.organization`
 
 ::: info
-Technically, customers can only see their own organization if applicable.
+Tecnicamente, i clienti possono vedere solo la propria organizzazione, se applicabile.
 :::
 
-`GET`-Request sent: `/api/v1/organizations`
+Richiesta `GET` inviata: `/api/v1/organizations`
 
 ::: details
 
@@ -21,14 +21,14 @@ Technically, customers can only see their own organization if applicable.
 
 :::
 
-## Show
+## Mostra
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Permesso richiesto: `ticket.agent` **o** `admin.organization`
 
-`GET`-Request sent: `/api/v1/organizations/{id}`
+Richiesta `GET` inviata: `/api/v1/organizations/{id}`
 
 ::: info
-Technically, any users in question can only see their own organization.
+Tecnicamente, qualsiasi utente in questione può vedere solo la propria organizzazione.
 :::
 
 ::: details
@@ -37,70 +37,63 @@ Technically, any users in question can only see their own organization.
 
 :::
 
-## Create
+## Crea
 
-Required permission: `admin.organization`
+Permesso richiesto: `admin.organization`
 
-`POST`-Request sent: `/api/v1/organizations`
+Richiesta `POST` inviata: `/api/v1/organizations`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/organizations/post-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/organizations/post-res.json
 
 :::
 ::::
 
-## Update
+## Aggiornamento
 
-Required permission: `admin.organization`
+Permesso richiesto: `admin.organization`
 
-`PUT`-Request sent: `/api/v1/organizations/{id}`
+Richiesta `PUT` inviata: `/api/v1/organizations/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Richiesta
 
 <<< @/fixtures/rest-api/organizations/put-id-req.json
 
-=== Response
+=== Risposta
 
 <<< @/fixtures/rest-api/organizations/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Elimina
 
-Required permission: `admin.organization`
+Permesso richiesto: `admin.organization`
 
-`DELETE`-Request sent: `/api/v1/organizations/{id}`
+Richiesta `DELETE` inviata: `/api/v1/organizations/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Questa è una rimozione permanente**
 
-Please note that removing organizations cannot be undone.
-
-Removing organizations with references in e.g. activity streams or users
-is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
-
-Consider using Zammad's Data Privacy feature via UI for
-more control instead.
+Tieni presente che rimuovere organizzazioni non può essere annullato.
 :::
 
 ::: details
 
-Response:
+Risposta:
 
 <<< @/fixtures/rest-api/organizations/delete-id-res.json
 

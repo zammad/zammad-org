@@ -48,13 +48,15 @@ Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
 - **E-Mail**: Senden Sie eine E-Mail an eine beliebige Person zu diesem
   Ticket. Der Titel des Tickets wird als Betreff der E-Mail verwendet.
 
-To choose another article type, use the **Channel** tab switcher and choose
-a different type. Click on the lock toggle to change the article's
-visibility. Articles with internal visibility are displayed with a dashed
-blue border.
+Um einen anderen Artikeltyp auszuwählen, verwenden Sie den **Kanal**
+Tab-Umschalter und wählen Sie einen anderen Typ aus. Klicken Sie auf das
+Schloss-Symbol, um die Sichtbarkeit des Artikels zu ändern. Artikel mit
+interner Sichtbarkeit werden mit einem gestrichelten blauen Rahmen
+angezeigt.
 
-![Screenshot shows article type selector and visibility
-toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Der Screenshot zeigt die Auswahl für den Artikeltyp und den Schalter für
+die
+Sichtbarkeit](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
 Um Text zu schreiben und zu bearbeiten, nutzen Sie die umfangreichen
 Editor-Funktionen. Um Text zu formatieren und spezielle Funktionen
