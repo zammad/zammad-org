@@ -52,7 +52,7 @@ Passa al metodo di build **Repository** e fornisci le informazioni seguenti:
 Nel caso in cui l'ambiente predefinito non sia quello che stai cercando,
 puoi personalizzare lo stack utilizzando scenari predefiniti e regolando le
 variabili d'ambiente. Vai alla [sezione di
-personalizzazione](#customizing-the-zammad-stack) qui sotto per trovare
+personalizzazione](#personalizzare-lo-stack-Zammad) qui sotto per trovare
 maggiori informazioni.
 
 ![Creazione dello stack con le informazioni fornite nella schermata
@@ -83,7 +83,7 @@ release](https://github.com/zammad/zammad-docker-compose/releases){target=_blank
 Nel caso in cui l'ambiente predefinito non sia quello che stai cercando,
 puoi personalizzare lo stack utilizzando scenari predefiniti e regolando le
 variabili d'ambiente. Vai alla [sezione di
-personalizzazione](#customizing-the-zammad-stack) qui sotto per trovare
+personalizzazione](#personalizzare-lo-stack-Zammad) qui sotto per trovare
 maggiori informazioni.
 
 ### Passo 3: Avvia lo stack
@@ -98,7 +98,7 @@ docker compose up -d
 
 Opzionale: utilizzare un file `.yml` aggiuntivo per utilizzare uno scenario
 predefinito. Per ulteriori informazioni, consultare la sezione
-[Personalizzazione dello stack Zammad](#customizing-the-zammad-stack).
+[Personalizzazione dello stack Zammad](#personalizzare-lo-stack-zammad).
 
 Una volta che lo stack è pronto, è possibile accedere a Zammad tramite
 l'host e la porta Docker configurati, ad esempio `http://localhost:8080/`.

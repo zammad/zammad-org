@@ -23,9 +23,9 @@ evitare contenuti duplicati.
 
 - [AI assistant text tools](ai#writing-assistant-tools )
 - [Mention users](../advanced-features#mention-a-user)
-- [Inserisci moduli di testo](../advanced-features#text-modules)
+- [Inserisci moduli di testo](../advanced-features#moduli-di-testo)
 - [Inserisci articoli dalla base di
-  conoscenza](../advanced-features#insert-knowledge-base-article)
+  conoscenza](../advanced-features#inserisci-articolo-dalla-base-di-conoscenza)
 
 ## Incollare contenuto complesso
 
@@ -35,7 +35,7 @@ Zammad potrebbe essere diverso. L'editor cerca di preservare la
 formattazione se possibile, ma possono verificarsi incoerenze. Se ti trovi
 in tale situazione, prova a copiare/incollare il contenuto uno alla volta o
 incolla testo normale e applica la formattazione nell'editor (vedi la
-[sezione formattazione](#apply-formatting) di seguito).
+[sezione formattazione](#applica-formattazione) di seguito).
 
 ## Paragrafi
 
@@ -83,7 +83,7 @@ testi. Le scorciatoie importanti sono:
 
 Dai un'occhiata alle scorciatoie da tastiera in Zammad dove puoi trovare
 tutte le scorciatoie. Aprile tramite il [menu
-avatar](/it/documentation/use/user-profile#avatar-menu) nell'angolo in basso
+avatar](/it/documentation/use/user-profile#menu-avatar) nell'angolo in basso
 a sinistra o digita [[?]].
 
 Dai un'occhiata alla sezione successiva per usare ancora più formattazione

@@ -45,7 +45,7 @@ ricerca](/it/documentation/use/guides/search) per ulteriori dettagli.
 ## Notifiche
 
 A seconda delle [impostazioni di
-notifica](/it/documentation/use/user-profile#notifications) nel tuo profilo,
+notifica](/it/documentation/use/user-profile#notifiche) nel tuo profilo,
 ricevi aggiornamenti per diversi eventi basati sui ticket come la creazione
 o l'aggiornamento di un ticket. Questo garantisce che nessuna modifica
 importante a un ticket venga trascurata.

@@ -20,13 +20,17 @@ o utenti.
 Per abilitare l'eliminazione **automatica** dei ticket dopo un dato intervallo,
 usa lo scheduler di Zammad.
 
-Per eliminare **manualmente** utenti e tutti i loro ticket associati (ad esempio in
-conformità con una richiesta.
+To **manually** delete users and all their associated tickets (e.g. in
+compliance with a "Right to Forget" request under the GDPR), you can use
+the data privacy functions in the admin panel under _System > Data Privacy_
+or [use the console](/en/reference/rails-commands#deleting-records).
 
 ### Sessioni chat
 
-Una volta che una sessione chat è stata contrassegnata come **chiusa**, è
-programmata per l'eliminazione automatica dopo 12.
+Once a chat session has been marked **closed**, it is scheduled for
+automatic deletion 12 months later. IP address logs for chat sessions can be
+deleted manually by following the [steps from the rails console
+page](/en/reference/rails-commands#remove-ip-address-logs).
 
 ### Registro chiamante CTI
 
@@ -65,8 +69,13 @@ Zammad utilizza servizi web di terze parti per determinate funzioni, il che sign
 che i dati utente possono.
 
 ::: info
-Per impostazione predefinita, i servizi di terze parti su cui si basa Zammad sono per lo più
-ospitati e gestiti.
+By default, the third party services that Zammad relies on are mostly
+ones hosted and managed by the Zammad Foundation itself, but Zammad
+can be extended to interface with other services instead.
+
+The source code for these third party service integrations can be
+found in
+[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
 ### Immagini
@@ -95,5 +104,9 @@ in base al browser e.
 
 ### Geolocalizzazione
 
-Il servizio di geolocalizzazione di Zammad si basa su OpenStreetMap (OSM) a
-meno che tu non l'abbia disattivato.
+Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned
+it off. If you provide an address (or parts of an address) in a user object,
+there is a lookup of coordinates from OSM which are stored in Zammad's
+database. Have a look at their [privacy
+policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for
+more information.

@@ -77,7 +77,7 @@ ticket](/screenshots/documentation/use/overviews/states.png)
   una violazione SLA)
 
 Se vedi un cerchio con un gradiente blu/rosa, indica che un [agente
-AI](ai#ai-agents) sta attualmente lavorando sul ticket.
+AI](ai#agenti-ai) sta attualmente lavorando sul ticket.
 
 La **priorità** è rappresentata dal colore del titolo del ticket:
 
@@ -105,7 +105,7 @@ al ticket successivo/precedente di questa panoramica.
 Esegui azioni bulk selezionando più ticket e usa i campi a tendina o
 trascinali con il mouse per invocare l'overlay dell'azione bulk. Puoi
 trovare maggiori informazioni al riguardo nella sezione [Azioni
-bulk](../advanced-features#bulk-actions) nella pagina delle funzionalità
+bulk](../advanced-features#azioni-bulk) nella pagina delle funzionalità
 avanzate.
 
 ### Riordina panoramiche
@@ -114,8 +114,8 @@ Se l'ordine delle panoramiche non riflette il tuo processo di lavoro o vuoi
 semplicemente avere un ordine diverso, puoi riorganizzarle per il tuo
 account. Usa il pulsante `riordina elementi` in cima alla barra di
 navigazione di secondo livello, che apre le tue [impostazioni del
-profilo](/it/documentation/use/user-profile#overviews) dove puoi definire un
-ordine personalizzato per le tue panoramiche.
+profilo](/it/documentation/use/user-profile#panoramiche) dove puoi definire
+un ordine personalizzato per le tue panoramiche.
 
 Per cambiare l'ordine, trascina e rilascia semplicemente facendo clic sulle
 maniglie sul lato sinistro.

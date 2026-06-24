@@ -28,9 +28,9 @@ fornire accesso a.
   (terze parti)
 - [Client API
   Android](https://github.com/KirkBushman/zammad-android){target=_blank}
-  (terze
-- [Client Go](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  (terze parti; API
+  (terze parti)
+- [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
+  (third party; API client only, no "ready to use" app)
 
 ## Autenticazione
 
@@ -300,7 +300,7 @@ richiesta. Il valore di questa intestazione può essere.
 L'API si aspetta la codifica UTF-8. Tieni presente che specialmente quando
 usi URL con opzioni get.
 
-Se vuoi saperne di più sulla codifica URL, [questo articolo di
-Wikipedia](https://en.wikipedi
+If you want to learn more about URL encoding, [this Wikipedia
+article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**n

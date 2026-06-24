@@ -21,8 +21,8 @@ diese auf der linken Seite der Symbolleiste des Editors. Da sie bereits an
 anderer Stelle beschrieben sind, verweisen wir hier nur darauf, um doppelten
 Inhalt zu vermeiden.
 
-- [AI assistant text tools](ai#writing-assistant-tools )
-- [Mention users](../advanced-features#mention-a-user)
+- [KI-Assistent Text-Werkzeuge](ai#schreibassistent-werkzeuge)
+- [Benutzer erwähnen](../advanced-features#erwahnen-von-benutzern)
 - [Textbausteine einfügen](../advanced-features#textbausteine)
 - [Knowledge Base-Artikel
   einfügen](../advanced-features#knowledge-base-artikel-einfugen)

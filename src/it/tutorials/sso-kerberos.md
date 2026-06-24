@@ -41,9 +41,11 @@ In linea di principio, sì.
 ## Per iniziare
 
 ::: tip
-**Troppo occupato per gestirlo da solo?**
+**Too busy to handle it on your own?**
 
-Ci pensiamo noi. I nostri esperti offrono soluzioni su misura.
+We've got you covered. Our experts offer custom-tailored workshops to
+get your team up and running fast and with confidence.
+[Just drop us a line](https://zammad.com/contact){target=_blank}!
 :::
 
 Avrai bisogno di:
@@ -75,7 +77,7 @@ Puoi usare un account di servizio esistente se ne hai uno. Non sono
 richiesti privilegi amministrativi.
 
 ![Screenshot impostazioni account di servizio Active
-Directory](/screenshots/tutorials/sso-kerbero
+Directory](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
 ### 1b. Reimposta password
 
@@ -174,8 +176,9 @@ su
 
 ### 2b. Pre-configura Apache
 
-Questa documentazione si aspetta una configurazione Apache già
-funzionante. Dovresti dare un'occhiata.
+This documentation expects an already working Apache configuration.  You
+should have a look at the [webserver configuration
+guide](/en/tutorials/webserver-config) before continuing.
 
 ### 2c. Installa ulteriori dipendenze Apache
 
@@ -228,7 +231,31 @@ Sostituisci i seguenti segnaposto nella configurazione di esempio sotto:
 [libdefaults]
    default_realm = <DOMAIN>
 
-   default_tkt_enctypes = aes
+   default_tkt_enctypes = aes256-cts-hmac-sha1-96
+   default_tgs_enctypes = aes256-cts-hmac-sha1-96
+   permitted_enctypes = aes256-cts-hmac-sha1-96
+
+   kdc_timesync = 1
+   ccache_type = 4
+   forwardable = false
+   proxiable = false
+   fcc-mit-ticketflags = false
+
+[realms]
+         # multiple KDCs ok (one `kdc = ...` definition per line)
+         <DOMAIN> = {
+                  kdc = <domain-controller>
+                  admin_server = <master-domain-controller>
+                  default_domain = <domain>
+
+                  # below is only for GSSAPI
+                  auth_to_local = RULE:[1:$1@$0](.*@<domain>)s/@<domain>$//
+                  auth_to_local = DEFAULT
+         }
+
+[domain_realm]
+         .<domain> = <DOMAIN>
+         <domain> = <DOMAIN>
 ```
 
 ### 2f. Genera Keytab
@@ -386,8 +413,9 @@ Aggiungi `LogLevel debug` al tuo virtual host.
 Il tuo account di servizio Active Directory ha abilitata la **crittografia
 Kerberos AES a 256 bit**?
 
-Se per qualche motivo il tuo server non supporta la crittografia AES a 256
-bit, il Wiki LDAP ha.
+If for some reason your server does not support AES 256-bit encryption, the
+LDAP Wiki has [more information about Kerberos encryption
+types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
 #### Impossibile verificare le credenziali krb5: la versione della chiave non è disponibile
 

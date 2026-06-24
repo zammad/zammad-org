@@ -34,10 +34,10 @@ il tuo amministratore Zammad dovrebbe essere in grado di aiutare.
 ### Come ricevere notifiche per le modifiche ai ticket?
 
 Regola le [impostazioni di notifica nel tuo
-profilo](user-profile#notifications). Puoi distinguere tra l'azione (ad
-esempio la creazione del ticket), il canale di notifica (email e/o browser),
-la tua relazione con il ticket (ad esempio se sei il proprietario) e
-limitare le notifiche a un gruppo specifico.
+profilo](user-profile#notifiche). Puoi distinguere tra l'azione (ad esempio
+la creazione del ticket), il canale di notifica (email e/o browser), la tua
+relazione con il ticket (ad esempio se sei il proprietario) e limitare le
+notifiche a un gruppo specifico.
 
 ### Perché il ticket è di nuovo aperto? L'ho già chiuso
 
@@ -82,7 +82,7 @@ diversa. In caso di dubbio, dovresti chiedere al tuo amministratore.
 
 Usale e basta! Puoi trovare una panoramica delle scorciatoie disponibili
 premendo [[?]] sulla tastiera o aprire la panoramica dal [menu
-avatar](user-profile#avatar-menu) (fai clic sul tuo avatar nell'angolo in
+avatar](user-profile#menu-avatar) (fai clic sul tuo avatar nell'angolo in
 basso a sinistra e seleziona **Scorciatoie da tastiera**).
 
 Alcune di esse dipendono dalla posizione in cui ti trovi o dall'azione che
@@ -92,7 +92,7 @@ ticket).
 ### Come passare dalla modalità scura a quella chiara per l'interfaccia utente?
 
 Puoi passare tra modalità chiara, scura e automatica (cerca di adattarsi al
-tuo browser) nel [menu avatar](user-profile#avatar-menu). Aprilo facendo
+tuo browser) nel [menu avatar](user-profile#menu-avatar). Aprilo facendo
 clic sul tuo avatar nell'angolo in basso a sinistra e cambia il pulsante
 allo stato desiderato o usa la scorciatoia da tastiera [[d]]. Se nessun
 campo di input è attivato, scorre tra le diverse modalità.
@@ -109,13 +109,13 @@ immagini già presenti.
 
 ### Come cambiare la lingua dell'interfaccia utente di Zammad?
 
-Vai alla [sezione lingua](user-profile#language) nelle impostazioni del
+Vai alla [sezione lingua](user-profile#lingua) nelle impostazioni del
 profilo aprendo il menu avatar nell'angolo in basso a sinistra e
 selezionando **Impostazioni profilo**.
 
 ### Cosa dovrei fare prima di andare in vacanza?
 
-Vai alla [sezione fuori ufficio](user-profile#out-of-office) nelle
+Vai alla [sezione fuori ufficio](user-profile#fuori-ufficio) nelle
 impostazioni del profilo aprendo il menu avatar nell'angolo in basso a
 sinistra e selezionando **Impostazioni profilo**. Lì puoi definire un agente
 sostituto.
@@ -123,7 +123,7 @@ sostituto.
 ### Come regolare l'ordine delle panoramiche?
 
 Continua a leggere nella [guida alle
-panoramiche](guides/overviews#reorder-overviews).
+panoramiche](guides/overviews#riordina-panoramiche).
 
 ## Lavora sui ticket
 
@@ -148,9 +148,9 @@ Zammad e chiedi di eseguire il job di eliminazione.
 
 ### Come usare i modelli di testo?
 
-Usa i [moduli di testo](advanced-features#text-modules) di Zammad digitando
-[[:]][[:]] nell'editor degli articoli o sceglilo dalla barra degli strumenti
-dell'editor. Se hai bisogno di moduli aggiuntivi, chiedi al tuo
+Usa i [moduli di testo](advanced-features#moduli-di-testo) di Zammad
+digitando [[:]][[:]] nell'editor degli articoli o sceglilo dalla barra degli
+strumenti dell'editor. Se hai bisogno di moduli aggiuntivi, chiedi al tuo
 amministratore Zammad di aggiungerli per te.
 
 ### Come chiedere aiuto a un collega nel ticket?

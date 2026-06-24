@@ -6,7 +6,7 @@ title: 'Comandi Rails'
 # Comandi Rails
 
 Zammad usa Ruby on Rails quindi puoi usare la [console
-Rails](http://guides.rubyonr
+Rails](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
 :::warning
 Controlla attentamente i tuoi comandi prima di eseguirli, poiché alcuni di questi
@@ -462,7 +462,8 @@ Setting.set('es_asciifolding', false)
 ```
 
 Dopo aver modificato l'impostazione, assicurati di [ricostruire l'indice di
-ricerca](/it/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
+ricerca](/it/tutorials/connect-config-elasticsearch#costruisci-ricostruisci-
+l-indice-di-ricerca).
 
 ## Impostazioni nascoste
 
@@ -535,7 +536,7 @@ Se devi mostrare ai tuoi agenti una nota con informazioni importanti durante
 la creazione dell'articolo.
 
 ![Screenshot che mostra una nota durante la creazione
-dell'articolo](/screenshots/cypress/reference/rails-co
+dell'articolo](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
 
 #### Creazione ticket
 

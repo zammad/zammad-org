@@ -43,8 +43,11 @@ Permesso richiesto: `admin.object`
 Richiesta `POST` inviata: `/api/v1/ticket_states`
 
 ::: info
-Il payload seguente fa uso di `state_type_id` che è un set di ID
-specifico dell'istanza. Stato
+Below payload makes use of `state_type_id` which is a instance
+specific set of IDs. State types indicate how the state will work.
+
+As there's no endpoint for retrieving these, please use the
+[Rails console](/en/reference/rails-commands).
 :::
 
 :::: details

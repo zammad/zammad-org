@@ -34,8 +34,8 @@ password attuale.
 
 A seconda del metodo a due fattori scelto, sarai guidato attraverso il
 processo di configurazione, che include passaggi specifici. Continua usando
-un'[App di autenticazione](#authentication-app) o una [Chiave di
-sicurezza](#security-key).
+un'[App di autenticazione](#app-di-autenticazione) o una [Chiave di
+sicurezza](#chiave-di-sicurezza).
 
 ### App di autenticazione
 
@@ -70,8 +70,8 @@ accanto ad essa insieme a un timer.
 
 Tornando in Zammad, inserisci il codice fornito nel campo **Codice di
 sicurezza** e fai clic su **Configura**. Procedi configurando un altro
-metodo 2FA ([chiave di sicurezza](#security-key)) o controlla come [accedere
-con 2FA](#sign-in).
+metodo 2FA ([chiave di sicurezza](#chiave-di-sicurezza)) o controlla come
+[accedere con 2FA](#accesso).
 
 ### Chiave di sicurezza
 

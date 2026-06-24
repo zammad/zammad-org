@@ -84,7 +84,7 @@ i seguenti stati:
   terza parte e vuoi assicurarti che questo problema non venga dimenticato.
 - **Unito**: Stato per un ticket che è stato unito a un altro
   ticket. Controlla i [ticket
-  collegati](/it/documentation/use/advanced-features#link-tickets) per
+  collegati](/it/documentation/use/advanced-features#collegare-i-ticket) per
   vedere il ticket correlato.
 
 Gli stati dei ticket di Zammad sono codificati per colore. Questo ti aiuta a

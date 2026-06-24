@@ -50,7 +50,7 @@ dal tuo browser se funziona.
 
 ::: tip
 Se vuoi passare rapidamente tra la modalità scura e quella chiara, puoi anche usare il pulsante nel
-[menu avatar](#avatar-menu) o usare la scorciatoia da tastiera premendo semplicemente [[d]].
+[menu avatar](#menu-avatar) o usare la scorciatoia da tastiera premendo semplicemente [[d]].
 :::
 
 ### Lingua

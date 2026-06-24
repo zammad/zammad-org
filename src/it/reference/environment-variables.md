@@ -5,7 +5,9 @@ title: "Variabili d'ambiente"
 
 # Variabili d'ambiente
 
-Trova le variabili d'ambiente più importanti qui sotto con i valori predefiniti (come badge).
+Find the most important environment variables below with default values (as <Badge type="tip" text="badge" />), if
+applicable. The variables for Docker and package based installations can be different in some cases. You can find
+another badge appended to variable names with the following meaning:
 
 - Disponibile solo per installazioni Docker: ::d::
 - Disponibile solo per installazioni tramite pacchetto: ::p::
@@ -36,11 +38,16 @@ Se vuoi usare un file `.env` nelle distribuzioni Docker Compose, puoi usare quel
 
 ## Zammad
 
-`VERSION` ::d:: <Badge type="tip" text="versione stabile corrente di Zammad" />
-: Permette di personalizzare.
+`VERSION` ::d:: <Badge type="tip" text="current stable version of Zammad" />
+: Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you
+  update your Zammad Docker stack. Please see the
+  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on this
+  variable.
 
 `AUTOWIZARD_JSON` ::d::
-: Questa variabile ti permette di fornire dati di configurazione iniziali.
+: This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of
+  this documentation, however
+  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.
 
 `ZAMMAD_HTTP_TYPE` : Imposta il tipo http per la tua istanza. I valori
 possibili sono `http` e `
@@ -71,7 +78,9 @@ possibili sono `http` e `
 
 `MEMCACHE_SERVERS` <Badge type="tip" text="Docker: zammad-memcached:11211" /> <Badge type=
 
-`REDIS_URL` <Badge type="tip" text="Docker: redis://zammad-redis:6379" /> <Badge type="tip
+`REDIS_URL` <Badge type="tip" text="Docker: redis://zammad-redis:6379" /> <Badge type="tip" text="Package: unset" />
+: Provide your own Redis instance if you already have one. The package installation fallback is
+  `/opt/zammad/tmp/websocket_*`. See [Redis Variables](/en/reference/redis) for a Sentinel setup.
 
 ## Elasticsearch
 
@@ -139,7 +148,8 @@ Le variabili per l'installazione Docker e tramite pacchetto sono parzialmente di
 : Parametri PostgreSQL aggiuntivi da.
 
 `POSTGRESQL_DB_CREATE` <Badge type="tip" text="true" />
-: Per impostazione predefinita, Zammad crea il.
+: By default, Zammad creates the required database. On already existing database servers, the default might be
+  troublesome.
 
 ## Nginx
 
@@ -181,26 +191,32 @@ valori consigliati qui.
 Procedi con cautela; quando regoli una di queste impostazioni, c'è un punto
 in cui le prestazioni.
 
-Le impostazioni seguenti potrebbero consumare tutte le connessioni database
-disponibili. Considera la configurazione.
+Below settings may consume all available database connections. Please
+consider the [Configure Database Server](config-db-server) for more
+information.
 
 `ZAMMAD_WEB_CONCURRENCY`
-: Permette di generare `n` worker per consentire più connessioni simultanee.
+: Allows spawning `n` workers to allow more simultaneous connections for Zammad's web UI. In case you applied
+  [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-railsserver's CPU setting
+  should match the value from this variable.
 
 `ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`
 : Quanti processi del worker di sessione eseguire.
 
-  Nel caso tu abbia applicato i [limiti di risorse hardware Docker](docker-compose-scenarios#limit-res.
+  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler
+  CPU setting should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`
 : Permette di generare `1` worker indipendente per i job pianificati.
 
-  Nel caso tu abbia applicato i [limiti di risorse hardware Docker](docker-compose-scenarios#limit-res.
+  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler
+  CPU setting should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`
 : Permette di generare `n` processi worker per rilasciare.
 
-  Nel caso tu abbia applicato i [limiti di risorse hardware Docker](docker-compose-scenarios#limit-res.
+  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler
+  CPU setting should match the sum of all worker settings variables.
 
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`
 : Thread usati da **un** worker dei job ritardati.

@@ -13,8 +13,10 @@ supporta Elastic.
 Grafana è un'applicazione di analisi/visualizzazione di terze parti che puoi
 collegare a Zammad (pr
 
-Questa guida ti fornirà alcuni passaggi per iniziare. Per una visione più
-approfondita dovresti consultare.
+This guide will provide you some steps to get started. For a deeper insight
+you should consider having a look at [Elasticsearch's indexed
+attributes](/en/reference/es-indexed-attributes) and to read the
+[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
 
 Questa guida si aspetta che tutti i requisiti siano operativi. Non
 tratteremo la configurazione di base.
@@ -44,10 +46,54 @@ Sostituisci `zammad_production_` con il tuo prefisso adatto.
 Fai clic su dettagli per vedere come interrogare.
 
 ::: details
-Regola il seguente comando al tuo ambiente:
+Adjust the following command to your environment:
 
 ```sh
-curl http://localhost:9200/_alias
+curl http://localhost:9200/_aliases?pretty=true
+```
+
+This will return an output like the following:
+
+```json
+{
+  "zammad_production_knowledge_base_translation" : {
+    "aliases" : { }
+  },
+  "zammad_production_ticket_priority" : {
+    "aliases" : { }
+  },
+  "zammad_production_stats_store" : {
+    "aliases" : { }
+  },
+  "zammad_production_organization" : {
+    "aliases" : { }
+  },
+  "zammad_production_cti_log" : {
+    "aliases" : { }
+  },
+  "zammad_production_group" : {
+    "aliases" : { }
+  },
+  "zammad_production_knowledge_base_answer_translation" : {
+    "aliases" : { }
+  },
+  "zammad_production_ticket" : {
+    "aliases" : { }
+  },
+  "zammad_production_ticket_state" : {
+    "aliases" : { }
+  },
+  "zammad_production_chat_session" : {
+    "aliases" : { }
+  },
+  "zammad_production_user" : {
+    "aliases" : { }
+  },
+  "zammad_production_knowledge_base_category_translation" : {
+    "aliases" : { }
+  }
+}
+```
 
 :::
 ::::
@@ -87,8 +133,9 @@ per iniziare a costruire la tua.
 
 ## Avvio rapido con modello dashboard
 
-Se vuoi trarre ispirazione, puoi usare le nostre dashboard di esempio come
-menzionato di seguito. Queste.
+If you want to get inspired, you can use our sample dashboards as mentioned
+below. These dashboards can also be found on
+[GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
 ### Importare una dashboard
 

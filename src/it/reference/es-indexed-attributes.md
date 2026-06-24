@@ -167,7 +167,7 @@ Esempio: `"2025-02-24T16:17:27.210Z"`
 ### `created_by`
 
 Dettagli dell'utente che ha creato il ticket. Consulta la [sezione
-utente](#user) per maggiori informazioni.
+utente](#utente) per maggiori informazioni.
 
 ::: details
 
@@ -183,7 +183,7 @@ Esempio: `3`
 
 ### `customer`
 
-Dettagli del cliente del ticket. Consulta la [sezione utente](#user) per
+Dettagli del cliente del ticket. Consulta la [sezione utente](#utente) per
 maggiori informazioni.
 
 ### `customer_id`
@@ -287,8 +287,8 @@ Esempi: `1010138`, `202006231010138`
 
 ### `organization`
 
-Dettagli dell'organizzazione cliente del ticket. Consulta la [sezione
-organizzazione](#organization-secti
+Details of the customer organization of the ticket. Have a look at the
+[organization section](#organization-2) for more information.
 
 ::: details
 
@@ -305,7 +305,7 @@ Esempi: `null`, `2`
 ### `owner`
 
 Dettagli dell'utente proprietario del ticket. Consulta la [sezione
-utente](#user) per maggiori informazioni.
+utente](#utente) per maggiori informazioni.
 
 ::: details
 
@@ -333,8 +333,8 @@ nel tuo sistema.
 
 ### `priority`
 
-Dettagli dello stato di priorità del ticket. Consulta la [sezione
-priorità](#ticket
+Details of the priority state of the ticket. Have a look at the [priority
+section](#ticket-priority) for more information.
 
 ::: details
 
@@ -350,8 +350,8 @@ Esempio: `2`
 
 ### `state`
 
-Dettagli dello stato del ticket. Consulta la [sezione stato](#ticket-state)
-per maggiori informazioni.
+Dettagli dello stato del ticket. Consulta la [sezione
+stato](#stato-del-ticket) per maggiori informazioni.
 
 ::: details
 
@@ -417,7 +417,7 @@ Esempio: `"2025-02-24T16:28:38.303Z"`
 ### `updated_by`
 
 Dettagli dell'utente che ha aggiornato il ticket. Consulta la [sezione
-utente](#user) per maggiori informazioni.
+utente](#utente) per maggiori informazioni.
 
 ::: details
 
@@ -851,8 +851,8 @@ Esempi: `""`, `"Some text."`
 
 ### `organization`
 
-Dettagli dell'organizzazione di cui l'utente è membro. Consulta la [sezione
-organizzazione](#organization-secti
+Details of the organization, the user is member of. Have a look at the
+[organization section](#organization-2) for more information.
 
 ::: details
 
@@ -986,7 +986,7 @@ Esempio: `"2025-02-22T12:47:54.807Z"`
 ### `created_by`
 
 Dettagli dell'utente che ha creato l'organizzazione. Consulta la [sezione
-utente](#user).
+utente](#utente).
 
 ::: details
 
@@ -1021,8 +1021,8 @@ Esempio: `1`
 
 ### `members`
 
-Array con i dettagli di ogni utente membro dell'organizzazione. Consulta la
-[sezione utente](#u
+Array with details of each user who is a member of the organization. Have a
+look at the [user section](#user) for more information.
 
 ::: details
 
@@ -1057,7 +1057,7 @@ Esempio: `"2025-02-22T12:47:54.807Z"`
 ### `updated_by`
 
 Dettagli dell'utente che ha aggiornato l'organizzazione. Consulta la
-[sezione utente](#user).
+[sezione utente](#utente).
 
 ::: details
 
@@ -1413,7 +1413,7 @@ Esempi: `null`, `3`
 
 ### `user`
 
-Dettagli dell'agente della chat. Consulta la [sezione utente](#user) per
+Dettagli dell'agente della chat. Consulta la [sezione utente](#utente) per
 maggiori informazioni.
 
 ::: details

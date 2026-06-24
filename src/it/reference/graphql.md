@@ -11,8 +11,10 @@ In addition to Zammad's [REST API](rest-api/intro), you can fetch,
 manipulate and create data via the powerful and open-source [GraphQL
 API](https://graphql.org/) too.
 
-Questa documentazione non intende coprire tutto su GraphQL. Dovrebbe darti
-una.
+This documentation isn't intended to cover everything about GraphQL. It
+should give you a basic understanding about how you can fetch and
+create/manipulate data to build upon. For a comprehensive guide, have a look
+at [GraphQL's documentation](https://graphql.org/learn/).
 
 GraphQL è usato da molti servizi web, anche grandi. È diventato una sorta di
 standard del settore.

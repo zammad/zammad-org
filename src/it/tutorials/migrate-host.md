@@ -5,16 +5,20 @@ title: 'Migra Zammad a un nuovo host'
 
 # Migra Zammad a un nuovo host
 
-Questa è solo una descrizione dei passaggi di base per eseguire una
-migrazione a un nuovo host. Il tuo ambiente.
+This is just a description of basic steps to perform a migration to a new
+host. Your environment may be different so you should consider this as a
+reference point only. If anything goes wrong, please consult the [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider [paid support
+options](https://zammad.com/en/services/professional-services){target=_blank}.
 
-The steps described on this page are an addition to the [backup and restore
-guide](/en/tutorials/backup-restore). They're not meant to stand alone -
-we'll link and note this in the relevant parts.
+I passaggi descritti in questa pagina sono un'aggiunta alla [guida di backup
+e ripristino](/it/tutorials/backup-restore).
 
 ::: tip
-Stai migrando da Zammad SaaS? Salta al
-[Passo 7](#step-7-transfer-your-backup-files). Per il resto.
+Migrating from Zammad SaaS? Skip to
+[Step 7](#step-7-transfer-your-backup-files). For restoration, you've
+received an attachment dump!
 :::
 
 ## Passo 1: Annota le tue regolazioni ambientali
@@ -62,13 +66,16 @@ tuoi dati.
 
 ## Passo 7: Trasferisci i tuoi file di backup
 
-Salva i tuoi file di backup in una cartella e fornisci il percorso al file
-`config`. Sotto [ba
+Save your backup files in a directory and provide the path to the `config`
+file. Under [backup
+configuration](/en/tutorials/backup-restore#backup-configuration) you can
+find how to adjust the config file to your needs.
 
 ## Passo 8: Ripristina il tuo backup
 
-Follow the [restoration guide](/en/tutorials/backup-restore#restore-backups)
-up to and including "Run the Restore" to restore the backup on the new host.
+Segui la [guida al
+ripristino](/it/tutorials/backup-restore#ripristina-backup) fino a e
+incluso.
 
 Assicurati di fermare Zammad dopo che il ripristino è terminato.
 
@@ -140,7 +147,9 @@ Assicurati che le tue notifiche email.
 
 ## Passo 10: Applica le impostazioni ambientali mancanti
 
-Se hai impostato impostazioni ambientali, riapplicale ora. Le hai fatte.
+If you've set any environmental settings please re-apply your settings now.
+You backed them up in [Step
+1](#step-1-note-down-your-environmental-adjustments).
 
 If not already done, please [install
 Elasticsearch](/en/tutorials/install-elasticsearch) now and perform the

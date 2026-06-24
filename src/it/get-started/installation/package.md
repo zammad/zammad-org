@@ -413,7 +413,7 @@ includono già questo servizio.
 Tuttavia, anche le installazioni su file system locali possono beneficiare
 dei miglioramenti prestazionali di Memcached. Potresti voler dare
 un'occhiata anche alla nostra sezione [ottimizzazione delle
-prestazioni](/it/reference/environment-variables#performance-tuning).
+prestazioni](/it/reference/environment-variables#ottimizzazione-delle-prestazioni).
 
 L'installazione e la configurazione non rientrano nell'ambito di questa
 documentazione. Qualora fosse necessario installare Memcached manualmente,

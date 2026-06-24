@@ -5,8 +5,10 @@ title: 'Base di conoscenza'
 
 # Base di conoscenza
 
-Zammad ha molteplici endpoint relativi alla base di conoscenza. I più
-importanti - ma non tutti - sono.
+Zammad has multiple knowledge base related endpoints. The most important -
+but not all - are covered in this documentation. You can find the general
+ones about the knowledge base itself below, followed by the sub-endpoints
+for [answers](#answers) and [categories](#categories).
 
 ## Base di conoscenza generale
 

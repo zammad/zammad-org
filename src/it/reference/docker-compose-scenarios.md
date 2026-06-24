@@ -13,23 +13,23 @@ degli scenari predefiniti.
 I seguenti scenari sono supportati e spiegati più avanti:
 
 - [Rendere lo stack disponibile tramite
-  HTTPS](#making-the-stack-available-via-https)
+  HTTPS](#rendere-lo-stack-disponibile-tramite-https)
   - Aggiungi un servizio tunnel Cloudflare allo stack
   - Aggiungi un Nginx Proxy Manager (NPM) allo stack
   - Aggiungi una rete Docker esterna a Nginx
-- [Usare servizi esterni](#using-external-services)
+- [Usare servizi esterni](#usare-servizi-esterni)
   - Disabilita il servizio Elasticsearch
 - [Rendere i servizi disponibili
-  esternamente](#making-services-externally-available)
+  esternamente](#rendere-i-servizi-disponibili-esternamente)
   - Aggiungi una rete Docker esterna a Elasticsearch
   - Aggiungi una porta host a Elasticsearch
-- [Scenari aggiuntivi](#additional-scenarios)
+- [Scenari aggiuntivi](#scenari-aggiuntivi)
   - Disabilita il servizio di backup
   - Aggiungi un'istanza Ollama allo stack
   - Limita le risorse hardware dello stack
 
 Puoi trovare i file nel [repository
-Zammad-Docker-Compose](https://github.com/zammad
+Zammad-Docker-Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ## Utilizzo generale
 
@@ -67,7 +67,7 @@ connessione HTTPS.
 ### Aggiungi un tunnel Cloudflare
 
 Se vuoi pubblicare Zammad in modo molto comodo, puoi usare un tunnel
-[Cloudflare](https:/
+[Cloudflare](https://www.cloudflare.com/).
 
 - Usa il file di scenario `scenarios/add-cloudflare-tunnel.yml` per la
   distribuzione
@@ -193,5 +193,9 @@ d'uso. Prevediamo di aggiungerne altri.
 
 ## Personalizza lo stack localmente
 
-A volte è necessario applicare modifiche locali allo stack Docker di Zammad,
-ad esempio per includere.
+Sometimes it's necessary to apply local changes to the Zammad Docker stack,
+e.g. to include additional services. If you plan to do so, we recommend that
+you do not change the `docker-compose.yml` file, but instead create a local
+`docker-compose.override.yml` that includes all your modifications. Docker
+Compose will [automatically load this file and merge its changes into your
+stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

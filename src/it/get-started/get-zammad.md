@@ -50,4 +50,5 @@ Puoi anche ospitare Zammad da solo. Leggi le nostre [istruzioni di
 installazione](/it/get-started/installation/prerequisites).
 
 Se utilizzi un servizio self-hosted e desideri assistenza immediata, il
-nostro team di vendita sarà lieto di contattarti. Lascia loro un messaggio.
+nostro team di vendita sarà lieto di contattarti. Lascia loro [un
+messaggio](https://zammad.com/en/company/contact){target=_blank}.

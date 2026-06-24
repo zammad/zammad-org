@@ -13,7 +13,7 @@ Puoi contribuire a:
 
 - [Codice sorgente](contribute#zammad-source-code)
 - [Documentazione](contribute#documentation)
-- [Traduzione](contribute#translation)
+- [Traduzione](contribute#traduzione)
 
 Consulta le sezioni seguenti su come contribuire. Tutti i repository sono
 disponibili su [Github](https://github.com/zammad){target=_blank}.

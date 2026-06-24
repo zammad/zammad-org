@@ -69,8 +69,9 @@ zammad run rake zammad:searchindex:rebuild[8]
 
 ## Impostazioni opzionali
 
-Abbiamo raccolto alcune impostazioni utili che potresti voler applicare. Per
-ulteriori informazioni dai.
+We collected some useful settings you may want to apply. For further
+information please have a look at [Elastic's
+documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
 ### Namespacing dell'indice
 
@@ -101,27 +102,35 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 
 ### Asciifold
 
-Per impostazione predefinita, la [funzionalità Asciifold di
-Elasticsearch](https://www.elastic.co/docs/reference
+By default, the [Asciifold feature of
+Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
+is enabled. This can be useful if you deal with text which includes
+diacritics and/or umlauts.
 
-In case you need a more exact search, you can turn it off via [Rails
-console](/en/reference/rails-commands#disable-asciifold).
+Nel caso tu abbia bisogno di una ricerca più precisa, puoi disattivarla
+tramite [console Rails](/it/reference/rails-commands#disabilita-asciifold).
 
 ## Risoluzione problemi
 
 :::tip
-Risoluzione dei problemi senza successo o problema non descritto?
+Troubleshooting unsuccessful or issue not described?
 
-Se non riesci a risolvere il tuo problema usando.
+If you can't solve your issue using the provided troubleshooting steps
+or can't find your particular issue described here, feel free to
+[ask the community](https://community.zammad.org){target=_blank} for technical
+assistance.
 :::
 
 ### Dati mancanti dall'interfaccia web / Dati di ricerca mancanti o incompleti
 
-Un problema comunemente segnalato sono i dati mancanti dall'interfaccia
-web. Potrebbero essere ticket, articoli.
+A commonly reported issue is data missing from the Web-UI. This could be
+tickets, articles, users or anything else [indexed by
+Elasticsearch](/en/reference/es-indexed-attributes)  and can be caused by
+missing or incomplete indexes.
 
-Se riscontri questo problema e hai installato Elasticsearch secondo le
-nostre [istruzioni di installazione].
+If you are experiencing this issue and installed Elasticsearch according to
+our [installation guide](/en/tutorials/install-elasticsearch), please follow
+these steps to make sure Elasticsearch is working correctly.
 
 #### Passo 1: Verifica che Elasticsearch sia in esecuzione
 
@@ -144,8 +153,9 @@ sudo systemctl restart elasticsearch
 ```
 
 ::: warning
-Se questo fallisce, la tua installazione di Elasticsearch è probabilmente corrotta.
-Prova a eliminare completamente.
+If this fails, your Elasticsearch installation is probably broken.
+Try completely purging and reinstalling Elasticsearch according to
+our [installation guide](/en/tutorials/install-elasticsearch).
 :::
 
 #### Passo 2: Verifica che Zammad possa accedere a Elasticsearch e ricostruisci gli indici
@@ -170,8 +180,10 @@ Creating pi
 A seconda delle prestazioni del sistema e della quantità di dati, questo può
 richiedere del tempo per completarsi.
 
-Se questo fallisce o genera un errore, potrebbe esserci qualcos'altro che
-non va nella tua installazione.
+If this fails or throws an error, there might be something else wrong with
+your installation. Make sure you followed the complete Elasticsearch set up
+and integration procedure according to our [installation
+guide](/en/tutorials/install-elasticsearch).
 
 ::: tip
 In molte situazioni in cui non hai successo con i passaggi sopra, potresti

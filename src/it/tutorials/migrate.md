@@ -38,9 +38,15 @@ Limitazioni generali per tutte le migrazioni:
 
 :::info
 
-**Manca una sorgente di migrazione?**
+**Missing a migration source?**
 
-Se il tuo sistema non è ancora menzionato, hai due opzioni.
+If your system it not mentioned yet, you'll have two options. You can either
+use Zammad's powerful API or drop our
+[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
+development or even migrator sponsoring.
+
+Migrations are available for hosted setups too! Contact support for further
+information!
 :::
 
 ### Freshdesk
@@ -63,8 +69,10 @@ sono limitazioni aggiuntive a quelle.
 
 #### Prerequisiti
 
-Zammad richiede accesso API, motivo per cui dovrai [creare una chiave
-API](https://support
+Zammad requires API access which is why you'll need to [create an API
+key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
+for the migration. The migrator will request your Freshdesk subdomain and
+API key.
 
 :::warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
@@ -78,10 +86,76 @@ piuttosto grande.
 
 ::::tabs
 
-=== Tramite browser
+=== Via Browser
 
-Dopo aver installato Zammad e
-[configurato il tuo server web](./webserver-con
+After installing Zammad and
+[configuring your webserver](./webserver-config), navigate to your
+Zammads FQDN in your browser and follow the migration wizard. You can find
+it in the log in screen by clicking the "Or migrate from another system"
+link at the bottom.
+
+Depending on the number of users, tickets and Freshdesk plan this may take a
+while.
+
+Seeing the message "_Interrupted by scheduler restart. Please restart manually
+or wait till next execution time._"?
+If this message appears after providing your credentials, please be patient.
+The migration should start within 5 minutes.
+
+If you receive above message after the migration begun, please consider using
+the console approach instead and reset the installation.
+
+=== Via Console
+
+Open console:
+
+```sh
+zammad run rails c
+```
+
+Set variables, replace the values in `{}` with your own:
+
+```ruby
+subdomain = '{freshdesk subdomain}.freshdesk.com'
+```
+
+```ruby
+token = '{freshdesk token}'
+```
+
+Update Zammad settings for freshdesk import:
+
+```ruby
+Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
+```
+
+```ruby
+Setting.set('import_freshdesk_endpoint_key', token)
+```
+
+```ruby
+Setting.set('import_backend', 'freshdesk')
+```
+
+```ruby
+Setting.set('import_mode', true)
+```
+
+Check your configuration in a dry run:
+
+```ruby
+Sequencer.process('Import::Freshdesk::ConnectionTest')
+```
+
+Run the migration:
+
+```ruby
+job = ImportJob.create(name: 'Import::Freshdesk')
+```
+
+```ruby
+AsyncImportJob.perform_later(job)
+```
 
 :::tip
 
@@ -412,8 +486,10 @@ Limitazioni aggiuntive a quella generale:
 
 #### Prerequisiti
 
-Zammad richiede accesso API, motivo per cui dovrai [creare una chiave
-API](https://support
+Zammad requires API access which is why you’ll need to [create an API
+key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
+for the migration. The migrator will request your Zendesk-URL, email address
+and API key.
 
 :::warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno

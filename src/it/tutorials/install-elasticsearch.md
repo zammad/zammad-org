@@ -7,8 +7,12 @@ title: 'Installa Elasticsearch 9'
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-Questa guida mostra una semplice installazione standard di Elasticsearch
-9. L'intenzione è di farti.
+This guide shows a simple standard installation of Elasticsearch 9. The
+intention is to get you up and running quickly.  However, in case you need a
+more advanced configuration or face any issues, have a look at the [official
+Elasticsearch installation
+documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
+Adapt it wherever needed in case your use-case differs.
 
 ## Installazione
 
@@ -64,8 +68,10 @@ essere indicizzata da Elasticsearch.
 http.max_content_length: 400mb
 ```
 
-Una configurazione aggiuntiva esula dall'ambito di questa
-documentazione. Nel caso il tuo scenario richieda.
+Additional configuration is out of scope of this documentation. In case your
+scenario needs additional configuration, have a look at [Elastic’s
+configuration
+reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
 
 ## Avvia e abilita Elasticsearch
 

@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-12 15:16+0000\n"
-"PO-Revision-Date: 2026-06-17 08:02+0000\n"
-"Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
+"POT-Creation-Date: 2026-06-23 17:26+0200\n"
+"PO-Revision-Date: 2026-06-24 05:30+0000\n"
+"Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
 "Language: sr\n"
@@ -247,18 +247,6 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -499,10 +487,8 @@ msgid ""
 "The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.\n"
 "When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:\n"
 msgstr ""
-"Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у "
-"Weblate апликацији.\n"
-"Преглед пројеката можете пронаћи кликом на мени при врху под _Projects > "
-"Browse all projects_:\n"
+"Превод **Zammad-а** и **документације** су раздвојени у различите пројекте у Weblate апликацији.\n"
+"Преглед пројеката можете пронаћи кликом на мени при врху под _Projects > Browse all projects_:\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:80
@@ -580,10 +566,8 @@ msgid ""
 "different components, they will be used for all branches and only have to be translated once. If in doubt, choose\n"
 "`develop`.\n"
 msgstr ""
-"Одлука у ком огранку желите да преводите не прави велику разлику. Када "
-"Weblate детектује идентичне низове текста у\n"
-"различитим компонентама користиће исти превод за све огранке и тиме се "
-"преводи само једном. Уколико нисте сигурни, одаберите\n"
+"Одлука у ком огранку желите да преводите не прави велику разлику. Када Weblate детектује идентичне низове текста у\n"
+"различитим компонентама користиће исти превод за све огранке и тиме се преводи само једном. Уколико нисте сигурни, одаберите\n"
 "`develop` верзију.\n"
 
 #. type: Title ###
@@ -707,8 +691,7 @@ msgid ""
 "  translation. The position may vary depending on the translation.\n"
 msgstr ""
 "`%s created ticket |%s|` <Badge type=\"tip\" text=\"Zammad\" />\n"
-": Текст садржи променљиве (`%s`) и ознаке (`||`). Обратите пажњу да се "
-"променљива и ознаке нађу у\n"
+": Текст садржи променљиве (`%s`) и ознаке (`||`). Обратите пажњу да се променљива и ознаке нађу у\n"
 "  преводу. Тачна позиција може зависити од превода.\n"
 
 #. type: Plain text
@@ -720,10 +703,8 @@ msgid ""
 "  case, use a backtick (`` ` ``) before and after the string in your translation as well.\n"
 msgstr ""
 "`` `example-string` `` <Badge type=\"tip\" text=\"Documentation\" />\n"
-": Ово ће бити приказано као линијски кôд (`example-string`). У зависности од "
-"контекста, ово се може превести или не. У сваком\n"
-"  случају, користите задње наводнике (`` ` ``) пре и после низа текста у "
-"вашем преводу.\n"
+": Ово ће бити приказано као линијски кôд (`example-string`). У зависности од контекста, ово се може превести или не. У сваком\n"
+"  случају, користите задње наводнике (`` ` ``) пре и после низа текста у вашем преводу.\n"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:144
@@ -4946,8 +4927,8 @@ msgstr ""
 #: src/en/documentation/use/faq.md:112
 msgid ""
 "If you only have a question or need some information, you could also just "
-"[mention a colleague](advanced-features#mention-a-colleague) in an article "
-"by using [[@]][[@]] and raise your question."
+"[mention a colleague](advanced-features#mention-a-user) in an article by "
+"using [[@]][[@]] and raise your question."
 msgstr ""
 
 #. type: Title ###
@@ -4990,9 +4971,9 @@ msgstr ""
 #: src/en/documentation/use/faq.md:129
 msgid ""
 "The best way to do this is to [mention a colleague](advanced-"
-"features#mention-a-colleague) in an article by using [[@]][[@]] and raise "
-"your question. This triggers a notification for your colleague. Depending on "
-"your internal processes, switching the owner of the ticket could also be a "
+"features#mention-a-user) in an article by using [[@]][[@]] and raise your "
+"question. This triggers a notification for your colleague. Depending on your "
+"internal processes, switching the owner of the ticket could also be a "
 "possible option."
 msgstr ""
 
@@ -5358,12 +5339,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
-msgid "[AI assistant text tools](ai#ai-assistant-text-tools)"
+msgid "[AI assistant text tools](ai#writing-assistant-tools )"
 msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/editor.md:23
-msgid "[Mention users](../advanced-features#mention-a-colleague)"
+msgid "[Mention users](../advanced-features#mention-a-user)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -9102,7 +9083,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
-"elasticsearch.md) of Elasticsearch 9, which is separated to keep the install "
+"elasticsearch) of Elasticsearch 9, which is separated to keep the install "
 "instructions as lean as possible."
 msgstr ""
 "Алтернативно, можете погледати [наш пример](/sr/tutorials/install-"
@@ -23063,76 +23044,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23293,6 +23204,76 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -23706,6 +23687,18 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1

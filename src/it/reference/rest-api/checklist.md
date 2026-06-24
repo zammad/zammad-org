@@ -8,8 +8,8 @@ title: Checklist
 Zammad ha diversi endpoint per le checklist:
 
 - [Checklist](#checklists)
-- [Elementi checklist](#checklist-items)
-- [Modelli checklist](#checklist-templates)
+- [Elementi checklist](#elementi-checklist)
+- [Modelli checklist](#modelli-checklist)
 
 :::info
 I _modelli checklist_ includono i loro elementi mentre la _checklist standard_ ha un endpoint separato.
@@ -18,7 +18,7 @@ I _modelli checklist_ includono i loro elementi mentre la _checklist standard_ h
 ## Checklist
 
 :::info
-Per aggiungere elementi alla checklist, usa l'[endpoint elementi checklist](#checklist-items).
+Per aggiungere elementi alla checklist, usa l'[endpoint elementi checklist](#elementi-checklist).
 :::
 
 ### Mostra

@@ -40,8 +40,8 @@ Per eseguire un backup basato sulla configurazione predefinita, segui i
 passaggi seguenti:
 
 1. Copia il file `config.dist` in `config`.
-1. Cambia i parametri predefiniti nel file di configurazione se
-   necessario. Vedi [Configurazione backup](#backup
+1. Change default parameters in the config file if needed. See [Backup
+   Configuration](#backup-configuration) for details.
 1. Ferma Zammad `systemctl stop zammad`
 1. Esegui `/opt/zammad/contrib/backup/zammad_backup.sh` (come utente `root`
    o `zammad`)
@@ -81,8 +81,9 @@ di seguito.
 Leggi attentamente le seguenti informazioni prima di iniziare a ripristinare
 i tuoi dati.
 
-- Questa sezione **non** riguarda la **migrazione da un host a un
-  altro**. Puoi trovare istruzioni.
+- This section is **not** about **migrating from one host to another**. You
+  can find instructions about this topic on the [Migrate Zammad
+  page](migrate-host).
 - Questa guida si aspetta una versione di Zammad completamente installata
 - Si aspetta anche che tu ripristini Zammad sullo stesso host e versione
   Zammad
@@ -94,8 +95,10 @@ i tuoi dati.
   sottoposta a backup di spazio libero.
 
 :::tip
-Se il tuo scenario è diverso da quello descritto sopra, consulta la
-[Community Zammad](ht
+If your scenario is different as described above, please consult the
+[Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+or consider
+[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
 :::
 
 ### Copia i file di backup in una posizione adatta
@@ -123,8 +126,9 @@ ripristino.
 
 ### Configura lo script di backup
 
-Per una nuova installazione, questo è richiesto. Devi almeno fornire una
-cartella dove.
+For a new installation, this is required. At least you have to provide a
+directory where your backups are stored. See [Backup
+Configuration](#backup-configuration) for more information.
 
 ### Pulisci la cartella di archiviazione
 
@@ -176,8 +180,10 @@ Il ripristino eliminerà il tuo attuale.
 
 ## Risoluzione problemi backup e ripristino
 
-Puoi trovare alcuni problemi comuni di seguito. Se il tuo problema non è
-elencato, consulta.
+You can find some common problems below. If your issue is not listed, feel
+free to consult the [Zammad
+Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+for technical assistance.
 
 ### Codici di uscita
 
@@ -221,8 +227,9 @@ Solitamente, l'autenticazione può essere consentita così:
 host    all             all
 ```
 
-Consulta la [documentazione ufficiale
-PostgreSQL](https://www.postgresql.org/docs/){t
+Please consult the official [PostgreSQL
+documentation](https://www.postgresql.org/docs/){target=_blank} for this, as
+this is out of our documentation scope.
 
 #### AVVISO: Sembra che tu non abbia allegati nel filesystem
 

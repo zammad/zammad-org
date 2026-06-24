@@ -30,7 +30,7 @@ documentazione di Zammad, nonché le linee guida di formattazione e stile per
 garantire chiarezza e leggibilità.
 
 Le prime sezioni riguardano informazioni e regole generali. Segue alla fine
-una [sezione con esempi](#examples).
+una [sezione con esempi](#esempi).
 
 Se hai domande, chiedi pure nella nostra community. Se vuoi contribuire, dai
 un'occhiata alla nostra [pagina dei contributi](contribute) o [apri una
@@ -66,7 +66,7 @@ La documentazione mira a includere informazioni su:
   e/o di sistemi di terze parti.
 
 Per quanto riguarda il **livello di dettaglio**, vanno considerate le
-[presupposizioni sul pubblico](#audience-assumptions). Poiché uno degli
+[presupposizioni sul pubblico](#presupposti-sul-pubblico). Poiché uno degli
 obiettivi di Zammad è essere intuitivo e user-friendly, non è necessario
 descrivere ogni clic in dettaglio. Tuttavia, i passaggi importanti devono
 essere inclusi.
@@ -79,7 +79,7 @@ includerle.
 
 Le sezioni seguenti trattano gli aspetti generali da considerare nella
 scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
-[esempi](#examples) su come formattare e strutturare il contenuto.
+[esempi](#esempi) su come formattare e strutturare il contenuto.
 
 ### Nozioni di base
 
@@ -89,7 +89,7 @@ scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
   costruire il sito web.
 - La lingua dei file sorgente è l'inglese americano.
 - La traduzione della documentazione avviene tramite Weblate, vedi la
-  [sezione traduzione](contribute#translation) nella pagina dei contributi
+  [sezione traduzione](contribute#traduzione) nella pagina dei contributi
   per ulteriori dettagli.
 
 ### Stile
@@ -104,15 +104,17 @@ scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
   Canali > Chat_.
 - Usa l'evidenziazione del codice per enfatizzare i frammenti di
   programmazione.
-- Usa i [riquadri info, suggerimento, avviso e pericolo](#custom-boxes)
-  quando necessario.
-- Usa un [riquadro dettagli](#custom-boxes) quando il contenuto potrebbe non
-  essere rilevante per tutti i lettori o potrebbe interrompere il flusso di
-  lettura.
+- Usa i [riquadri info, suggerimento, avviso e
+  pericolo](#riquadri-personalizzati) quando necessario.
+- Usa un [riquadro dettagli](#riquadri-personalizzati) quando il contenuto
+  potrebbe non essere rilevante per tutti i lettori o potrebbe interrompere
+  il flusso di lettura.
 - Se disponibili, usa le icone per i pulsanti importanti dell'interfaccia
-  utente come ::+:: e ::x:: (vedi gli [esempi](#text-and-ui) di seguito).
+  utente come ::+:: e ::x:: (vedi gli [esempi](#testo-e-interfaccia-utente)
+  di seguito).
 - Usa il markup per i tasti come [[ctrl]] e [[x]] per evidenziare la
-  pressione di un tasto (vedi gli [esempi](#text-and-ui) di seguito).
+  pressione di un tasto (vedi gli [esempi](#testo-e-interfaccia-utente) di
+  seguito).
 - Includere screenshot quando necessario. Il metodo preferito per aggiungere
   screenshot di Zammad è crearli automaticamente [utilizzando
   Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.

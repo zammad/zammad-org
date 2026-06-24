@@ -138,7 +138,7 @@ La macro viene eseguita immediatamente e senza ulteriore conferma!
 :::
 
 È anche possibile applicare una macro a più ticket contemporaneamente. Dai
-un'occhiata a [azioni di massa](#bulk-actions) per scoprire come fare.
+un'occhiata a [azioni di massa](#azioni-bulk) per scoprire come fare.
 
 ## Checklist
 
@@ -226,7 +226,7 @@ alle richieste dei clienti.
 
 Zammad ti invia automaticamente una notifica quando i ticket si avvicinano o
 superano la scadenza. Puoi configurare queste notifiche nelle [impostazioni
-del tuo profilo](/it/documentation/use/user-profile#notifications). Zammad
+del tuo profilo](/it/documentation/use/user-profile#notifiche). Zammad
 include anche una panoramica predefinita chiamata "Ticket in stato di
 escalation". Questa panoramica comprende i ticket già in stato di escalation
 e quelli che si prevede vengano escalati entro i prossimi 10 minuti.
@@ -372,7 +372,7 @@ Il ticket appena creato è collegato in quello originale come figlio.
 
 Quando si presentano ticket relativi a problemi correlati, è possibile
 collegarli tra loro per una consultazione più agevole. I ticket
-[Uniti](#merge-tickets) e [separati](#split-tickets) vengono collegati
+[Uniti](#unire-i-ticket) e [separati](#dividere-i-ticket) vengono collegati
 automaticamente.
 
 **Come?**
@@ -465,7 +465,7 @@ Potresti averlo già visto: passa semplicemente il mouse su un'icona avatar,
 sia nell'intestazione, nel piè di pagina, nel contenuto principale o nella
 barra laterale del contenuto nella visualizzazione dettagli ticket. Per
 vedere più dettagli, fai clic sull'avatar dell'utente per aprire la [pagina
-dei dettagli utente](#user-detail-page).
+dei dettagli utente](#pagina-dei-dettagli-utente).
 
 ![Screenshot che mostra un avatar con il pannello dettagli utente
 aperto](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)

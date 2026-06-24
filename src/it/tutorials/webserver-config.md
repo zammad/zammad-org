@@ -26,8 +26,12 @@ Le cartelle di configurazione sono solitamente:
 
 ### Let's Encrypt
 
-Ci sono due strumenti comuni per ottenere certificati, per cui trovi una
-configurazione di base sotto.
+There are two common tools to get certificates, to which your find a basic
+configuration below:
+[Certbot](https://certbot.eff.org/instructions){target=_blank} and
+[acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
+Have a look at their documentation for further configuration details and
+other examples.
 
 :::tabs
 
@@ -84,16 +88,18 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Passo 3 - Regola la configurazione HTTPS
 
-La nostra configurazione predefinita mira a un ampio supporto dei
-dispositivi degli utenti finali. Questo potrebbe non adattarsi.
+Our default configuration aims for a broad support of end user devices. This
+may not fit your needs. Mozilla has a great [SSL-config
+generator](https://ssl-config.mozilla.org/){target=_blank} that should help
+you to meet your requirements!
 
 #### Passo 4 - Salva e ricarica
 
 Ricarica il tuo Nginx con `sudo systemctl reload nginx` per applicare le
 modifiche alla configurazione.
 
-Dopo di che, dovresti essere accolto dalla nostra procedura guidata Per
-iniziare. Continua con i [primi pass
+After that, you should be greeted by our getting started wizard.  Go on with
+the [first steps in Zammad](/en/tutorials/first-steps).
 
 ### Apache
 
@@ -161,8 +167,10 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Passo 4 - Regola la configurazione HTTPS
 
-La nostra configurazione predefinita mira a un ampio supporto dei
-dispositivi degli utenti finali. Questo potrebbe non adattarsi.
+Our default configuration aims for a broad support of end user devices. This
+may not fit your needs. Mozilla has a great [SSL-config
+generator](https://ssl-config.mozilla.org/){target=_blank} that should help
+you to meet your requirements!
 
 #### Passo 5 - Abilita il sito
 
@@ -182,5 +190,5 @@ Assicurati che la seguente riga sia presente nella tua configurazione Apache.
 Ricarica il tuo Apache con `sudo systemctl reload apache2` per applicare le
 modifiche alla configurazione.
 
-Dopo di che, dovresti essere accolto dalla nostra procedura guidata Per
-iniziare. Continua con i [primi pass
+After that, you should be greeted by our getting started wizard.  Go on with
+the [first steps in Zammad](/en/tutorials/first-steps).

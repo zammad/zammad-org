@@ -22,8 +22,9 @@ API
 : Un'API (Application Programming Interface) è un insieme di regole e protocolli
   che permettono.
 
-  Puoi saperne di più sulla nostra
-  [pagina API](https://zammad.com/en/product/features/re
+  You can learn more on our
+  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
+  as well as in our [API reference](/en/reference/rest-api/intro).
 
 Articolo
 : Ogni elemento all'interno di un ticket è chiamato articolo. Gli articoli del ticket
@@ -33,8 +34,11 @@ Automazione
 : Ci sono molti processi che possono essere automatizzati con Zammad.
   Questo significa che
 
-Salvataggio automatico
-: La funzione di salvataggio automatico di Zammad assicura che nessun lavoro venga perso. Quindi se il tuo browser
+Autosave
+: Zammad's autosave feature makes sure that no work is lost. So if your browser
+  crashes, simply log in again and resume where you were before.
+  Learn more on our
+  [Autosave landing page](https://zammad.com/en/product/features/autosave){target=_blank}.
 
 Branding
 : Ogni azienda ha un'identità diversa. Per questo Zammad ti permette di aggiungere la tua
@@ -42,8 +46,8 @@ Branding
 Changelog
 : Con ogni nuovo rilascio arriva un nuovo changelog. È fondamentalmente un elenco di tutte
 
-  Puoi trovarli tutti sul nostro
-  [GitHub](https://github.com/zammad/zammad/blob/stable/CHA
+  You can find them all on our
+  [GitHub](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
 : Checkmk è un potente strumento di monitoraggio IT che può inviare avvisi di stato
@@ -100,8 +104,12 @@ Funzionalità
 : Una funzionalità è una capacità o funzione specifica che Zammad fornisce a
   te
 
-Richiesta di funzionalità
-: Puoi farci sapere se ti manca una particolare funzionalità in Zammad.
+Feature Request
+: You can let us know if you are missing a particular feature in Zammad.
+  We collect all of your wishes in our community forum in the
+  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  If a request comes in regularly and we think that it would be a
+  great addition, we'll put it on our roadmap and start working on it.
 
 Sponsorizzazione funzionalità
 : Se un'organizzazione richiede urgentemente una delle funzionalità nell'elenco,
@@ -110,8 +118,9 @@ GitHub
 : GitHub è un servizio per la gestione delle versioni dei progetti di sviluppo
   software
 
-  Poiché Zammad è un progetto open-source, molti sviluppatori e appassionati di tecnologia da
-  tutto il mondo
+  As Zammad is an open-source project, many developers and tech-lovers from all
+  over the world contribute to it. GitHub is where we coordinate all of this.
+  Follow the link to find [our repositories](https://github.com/zammad){target=_blank}.
 
   Oltre ai nostri repository, Zammad ha anche un'integrazione per GitHub.
   Usarla ti permette
@@ -221,8 +230,9 @@ Rilascio
 : Ogni pochi mesi, rilasciamo una nuova versione di Zammad chiamata
   rilascio
 
-  Nelle nostre [note di rilascio](https://zammad.com/en/releases){target=_blank} puoi
-  trovare cosa
+  In our [release notes](https://zammad.com/en/releases){target=_blank} you can
+  find what features are included in new versions and also important information
+  about what to consider before updating Zammad.
 
 Ruolo
 : Ogni utente ha un ruolo assegnato. Per impostazione predefinita ci sono tre ruoli:
@@ -279,8 +289,8 @@ Modulo di testo
 : Se ti accorgi di inviare le stesse risposte ripetutamente,
   puoi salvarle
 
-  Ad esempio, qui in Zammad, abbiamo un modulo di testo con la scorciatoia
-  `::ilff`, che
+  For example, here at Zammad, we have a text module with the shortcut
+  `::ilff`, which turns into `I look forward to your feedback`.
 
 (Modello di) ticket
 : Se crei molti ticket simili, puoi creare un modello per essi
