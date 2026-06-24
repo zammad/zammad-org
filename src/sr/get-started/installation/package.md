@@ -161,7 +161,7 @@ sudo localectl set-locale LANG=en_US.UTF-8
 за инсталацију Elasticsearch.
 
 Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9, which is
+setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
 separated to keep the install instructions as lean as possible.
 
 ### Додајте Zammad репозиториј

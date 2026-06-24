@@ -139,10 +139,9 @@ gewünschte Person aus den verfügbaren Agenten aus und stellen Sie sicher,
 dass Sie eine interne
 Notiz hinterlassen, damit der andere Agent weiß, worum es geht.
 
-Wenn Sie nur eine Frage haben oder eine Information benötigen, können Sie
-auch einfach einen Kollegen in einem Artikel
-[erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie [[@]][[@]]
-verwenden und Ihre Frage stellen.
+If you only have a question or need some information, you could also just
+[mention a colleague](advanced-features#mention-a-user) in an article by
+using [[@]][[@]] and raise your question.
 
 ### Wie löscht man ein Ticket?
 
@@ -162,11 +161,11 @@ hinzuzufügen.
 
 ### Wie kann man einen Kollegen im Ticket um Hilfe bitten?
 
-Das geht am besten, indem Sie in einem Artikel einen [Kollegen
-erwähnen](advanced-features#erwahnen-von-kollegen), indem Sie [[@]][[@]]
-verwenden und Ihre Frage stellen. Dies löst eine Benachrichtigung an Ihren
-Kollegen aus. Abhängig von Ihren internen Abläufen könnte auch ein Wechsel
-des Besitzers des Tickets eine Möglichkeit sein.
+The best way to do this is to [mention a
+colleague](advanced-features#mention-a-user) in an article by using
+[[@]][[@]] and raise your question. This triggers a notification for your
+colleague. Depending on your internal processes, switching the owner of the
+ticket could also be a possible option.
 
 ### Wie zitiert man die E-Mail des Kunden oder Teile davon?
 

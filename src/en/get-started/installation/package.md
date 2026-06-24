@@ -160,7 +160,7 @@ The recommended method is to use
 [Elastic's official guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 for installing Elasticsearch.
 
-Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch.md) of Elasticsearch 9,
+Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9,
 which is separated to keep the install instructions as lean as possible.
 
 ### Add Zammad Repository

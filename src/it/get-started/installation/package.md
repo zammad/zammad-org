@@ -114,10 +114,9 @@ Il metodo consigliato è quello di utilizzare la [guida ufficiale di
 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 per installare Elasticsearch.
 
-In alternativa, puoi seguire [la nostra procedura di installazione di
-esempio](/it/tutorials/install-elasticsearch.md) di Elasticsearch 9, che è
-stata separata per mantenere le istruzioni di installazione il più snelle
-possibile.
+Alternatively, you can follow [our example
+setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
+separated to keep the install instructions as lean as possible.
 
 ### Aggiungi il repository Zammad
 

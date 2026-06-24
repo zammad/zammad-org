@@ -162,10 +162,9 @@ Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal a
 Die empfohlene Methode ist die Verwendung von [Elastics offizieller
 Installationsanleitung](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}.
 
-Alternativ können Sie [unserem
-Beispiel-Setup](/de/tutorials/install-elasticsearch.md) für Elasticsearch 9
-folgen, das Sie auf einer anderen Seite finden, um die
-Installationsanweisungen übersichtlich zu halten.
+Alternatively, you can follow [our example
+setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
+separated to keep the install instructions as lean as possible.
 
 ### Zammad-Paketquelle hinzufügen
 

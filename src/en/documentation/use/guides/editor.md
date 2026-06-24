@@ -16,8 +16,8 @@ be visible at the first glance.
 Zammad's editor includes some smart features. You can find them on the left side of the toolbar in the editor. Because
 they are already described somewhere else, we only refer to these places here to avoid duplicate content.
 
-- [AI assistant text tools](ai#ai-assistant-text-tools)
-- [Mention users](../advanced-features#mention-a-colleague)
+- [AI assistant text tools](ai#writing-assistant-tools )
+- [Mention users](../advanced-features#mention-a-user)
 - [Insert text modules](../advanced-features#text-modules)
 - [Insert knowledge base articles](../advanced-features#insert-knowledge-base-article)
 

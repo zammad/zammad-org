@@ -127,8 +127,8 @@ offered agents and make sure to leave an internal note so the other agent
 knows what it is about.
 
 If you only have a question or need some information, you could also just
-[mention a colleague](advanced-features#mention-a-colleague) in an article
-by using [[@]][[@]] and raise your question.
+[mention a colleague](advanced-features#mention-a-user) in an article by
+using [[@]][[@]] and raise your question.
 
 ### How to delete a ticket?
 
@@ -148,7 +148,7 @@ you.
 ### How to ask a colleague for help in the ticket?
 
 The best way to do this is to [mention a
-colleague](advanced-features#mention-a-colleague) in an article by using
+colleague](advanced-features#mention-a-user) in an article by using
 [[@]][[@]] and raise your question. This triggers a notification for your
 colleague. Depending on your internal processes, switching the owner of the
 ticket could also be a possible option.
