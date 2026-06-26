@@ -50,9 +50,8 @@ Ihrer Umgebung an.
   ```
 
 `ES_JAVA_OPTS`
-: Variable für die Einstellung eines Proxys für Elasticsearch. Standardmäßig kommuniziert Elasticsearch nicht mit externen Systemen
-  während des Betriebs. Es kann jedoch Fälle geben, in denen dies erforderlich ist, zum Beispiel beim Herunterladen des Ingest-Plugins
-  für Elasticsearch-Versionen unter 8. Beispiel:
+: Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
+  during the operation. However, there can be cases where this is needed. Example:
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
@@ -76,15 +75,14 @@ Installationsmethode und der Konfiguration von Zammad wird eine Verbindung
 zu den folgenden Diensten hergestellt (vielleicht auch hilfreich für die
 Firewall-Konfiguration):
 
-| Addresse                     | Kommentar                                             |
+| Address                      | Comment                                               |
 |------------------------------|-------------------------------------------------------|
-| artifacts.elastic.co         | Download des Ingest-Plugins (nur für ES < 8)          |
-| dl.packager.io               | Download des OS-Pakets (Paketinstallation)            |
-| go.packager.io               | Wie oben; neuer Paket-Hosting-Dienst                  |
-| geo.zammad.com               | Wird für Geodaten verwendet                            |
-| google.com                   | Download von Feiertagen für den Kalender              |
-| index.rubygems.org           | Download von Gems für Ruby                             |
-| registry.npmjs.org           | Download von JS-Abhängigkeiten                         |
+| dl.packager.io               | Download of OS package (package installation)         |
+| go.packager.io               | As above; new package hosting service                 |
+| geo.zammad.com               | Used for geo data                                     |
+| google.com                   | Download of feast days for the calendar               |
+| index.rubygems.org           | Download of gems for ruby                             |
+| registry.npmjs.org           | Download of js dependencies                           |
 
 Sie können ein Skript verwenden, um den Verbindungsstatus Ihres Systems zu
 überprüfen. Es versucht, eine Verbindung zu den oben genannten Diensten

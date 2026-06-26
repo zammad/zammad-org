@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-25 11:56+0200\n"
+"POT-Creation-Date: 2026-06-26 08:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9095,7 +9095,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/get-started/installation/package.md:402
 #, markdown-text
-msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
+msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
@@ -9111,7 +9111,8 @@ msgid ""
 "\n"
 "| Zammad        | Elasticsearch  |\n"
 "| ------------- | :------------- |\n"
-"| 7+            | >= 7.8, <10    |\n"
+"| 7.2+          | >= 8.11, <10   |\n"
+"| 7.0-7.1       | >= 7.8, <10    |\n"
 "| 5.2-6.5       | >= 7.8, <9     |\n"
 "| 5.0-5.1       | >= 7.8, <8     |\n"
 "| 4.0-4.1       | >= 6.5, <=7.12 |\n"
@@ -9123,23 +9124,14 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:424
-#, markdown-text
-msgid ""
-"The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
-"older to index the contents of email attachments. Starting with "
-"Elasticsearch 8, it is included by default."
-msgstr ""
-
 #. type: Title ###
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:422
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:426
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -9149,7 +9141,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:430
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -9160,7 +9152,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:433
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -9169,7 +9161,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:436
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -9178,13 +9170,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:437
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:445
+#: src/en/get-started/installation/package.md:442
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -16474,19 +16466,18 @@ msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:53
+#: src/en/reference/proxy-connections.md:52
 #, markdown-text, no-wrap
 msgid ""
 "`ES_JAVA_OPTS`\n"
 ": Variable for setting a proxy for Elasticsearch. By default, Elasticsearch "
 "does not communicate to external systems\n"
-"  during the operation. However, there can be cases where this is needed, "
-"for example when downloading the ingest plugin\n"
-"  for Elasticsearch versions below 8. Example:\n"
+"  during the operation. However, there can be cases where this is "
+"needed. Example:\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:54
+#: src/en/reference/proxy-connections.md:53
 #, no-wrap
 msgid ""
 "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 "
@@ -16494,7 +16485,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/proxy-connections.md:58
+#: src/en/reference/proxy-connections.md:57
 #, no-wrap
 msgid ""
 "Depending on your environment, you might want to use the lower case variants "
@@ -16509,13 +16500,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/proxy-connections.md:68
+#: src/en/reference/proxy-connections.md:67
 #, markdown-text, no-wrap
 msgid "External Connections"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:73
+#: src/en/reference/proxy-connections.md:72
 #, markdown-text
 msgid ""
 "During installation and operation of Zammad, some connections to online "
@@ -16525,14 +16516,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:83
+#: src/en/reference/proxy-connections.md:81
 #, markdown-text, no-wrap
 msgid ""
 "| Address                      | Comment                                               "
 "|\n"
 "|------------------------------|-------------------------------------------------------|\n"
-"| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           "
-"|\n"
 "| dl.packager.io               | Download of OS package (package "
 "installation)         |\n"
 "| go.packager.io               | As above; new package hosting service                 "
@@ -16548,7 +16537,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:87
+#: src/en/reference/proxy-connections.md:85
 #, markdown-text
 msgid ""
 "You can use a script to check the connection state of your system. It tries "
@@ -16559,13 +16548,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:89
+#: src/en/reference/proxy-connections.md:87
 #, markdown-text, no-wrap
 msgid "**Fetch script from remote:**\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:90
+#: src/en/reference/proxy-connections.md:88
 #, no-wrap
 msgid ""
 "curl -fsSL "
@@ -16574,13 +16563,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:95
+#: src/en/reference/proxy-connections.md:93
 #, markdown-text, no-wrap
 msgid "**Use local script:**\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:96
+#: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
 msgstr ""

@@ -37,7 +37,8 @@ impostazioni proxy. Regola il valore.
   ```
 
 `ES_JAVA_OPTS`
-: Variabile per impostare un proxy per Elasticsearch. Per impostazione predefinita, Elasticsearch.
+: Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
+  during the operation. However, there can be cases where this is needed. Example:
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=
@@ -53,8 +54,14 @@ A seconda del tuo ambiente, potresti voler usare le varianti minuscole delle var
 Durante l'installazione e il funzionamento di Zammad, sono necessarie alcune
 connessioni a servizi online.
 
-| Indirizzo                    | Commento                                               |
-|
+| Address                      | Comment                                               |
+|------------------------------|-------------------------------------------------------|
+| dl.packager.io               | Download of OS package (package installation)         |
+| go.packager.io               | As above; new package hosting service                 |
+| geo.zammad.com               | Used for geo data                                     |
+| google.com                   | Download of feast days for the calendar               |
+| index.rubygems.org           | Download of gems for ruby                             |
+| registry.npmjs.org           | Download of js dependencies                           |
 
 Puoi usare uno script per controllare lo stato di connessione del tuo
 sistema. Cerca di connettersi a.

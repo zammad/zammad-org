@@ -374,7 +374,7 @@ di Elasticsearch già esistente, assicurarsi di utilizzare una versione
 supportata e consultare il nostro [esempio di
 configurazione](/it/tutorials/connect-config-elasticsearch).
 
-Le versioni di Elasticsearch supportate sono `7.8` - `9.x`.
+Supported Elasticsearch versions are `8.11` - `9.x`.
 
 Cronologia versioni di Elasticsearch per Zammad:
 
@@ -382,7 +382,8 @@ Cronologia versioni di Elasticsearch per Zammad:
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 7+            | >= 7.8, <10    |
+| 7.2+          | >= 8.11, <10   |
+| 7.0-7.1       | >= 7.8, <10    |
 | 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
 | 4.0-4.1       | >= 6.5, <=7.12 |
@@ -393,9 +394,6 @@ Cronologia versioni di Elasticsearch per Zammad:
 | 2.0-3.0       | >= 2.4, <=5.6  |
 
 :::
-
-Il plugin Elasticsearch `ingest-attachment` è richiesto per la versione 7 o
-precedente per indicizzare gli allegati.
 
 ### Memcached
 

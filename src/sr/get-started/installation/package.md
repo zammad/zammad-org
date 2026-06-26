@@ -409,7 +409,7 @@ above. If you want to connect Zammad to an already existing Elasticsearch
 instance, make sure to use a supported version and have a look at our
 [config example](/en/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `7.8` - `9.x`.
+Supported Elasticsearch versions are `8.11` - `9.x`.
 
 Elasticsearch version history for Zammad:
 
@@ -417,7 +417,8 @@ Elasticsearch version history for Zammad:
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 7+            | >= 7.8, <10    |
+| 7.2+          | >= 8.11, <10   |
+| 7.0-7.1       | >= 7.8, <10    |
 | 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
 | 4.0-4.1       | >= 6.5, <=7.12 |
@@ -428,10 +429,6 @@ Elasticsearch version history for Zammad:
 | 2.0-3.0       | >= 2.4, <=5.6  |
 
 :::
-
-The Elasticsearch plugin `ingest-attachment` is required for version 7 or
-older to index the contents of email attachments. Starting with
-Elasticsearch 8, it is included by default.
 
 ### Memcached
 

@@ -417,7 +417,7 @@ existierenden Elasticsearch-Instanz verbinden wollen, stellen Sie sicher,
 dass Sie eine unterstützte Version verwenden und werfen Sie einen Blick auf
 unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
-Unterstützte Elasticsearch-Versionen sind `7.8` - `9.x`.
+Supported Elasticsearch versions are `8.11` - `9.x`.
 
 Elasticsearch-Versionsverlauf für Zammad:
 
@@ -425,7 +425,8 @@ Elasticsearch-Versionsverlauf für Zammad:
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 7+            | >= 7.8, <10    |
+| 7.2+          | >= 8.11, <10   |
+| 7.0-7.1       | >= 7.8, <10    |
 | 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
 | 4.0-4.1       | >= 6.5, <=7.12 |
@@ -436,10 +437,6 @@ Elasticsearch-Versionsverlauf für Zammad:
 | 2.0-3.0       | >= 2.4, <=5.6  |
 
 :::
-
-Das Elasticsearch-Plugin `ingest-attachment` wird für Version 7 oder älter
-benötigt, um den Inhalt von E-Mail-Anhängen zu indizieren. Ab Elasticsearch
-8 ist es standardmäßig in der Installation enthalten.
 
 ### Memcached
 

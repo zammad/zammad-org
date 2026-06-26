@@ -48,8 +48,7 @@ environment.
 
 `ES_JAVA_OPTS`
 : Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
-  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin
-  for Elasticsearch versions below 8. Example:
+  during the operation. However, there can be cases where this is needed. Example:
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
@@ -73,7 +72,6 @@ firewall configuration):
 
 | Address                      | Comment                                               |
 |------------------------------|-------------------------------------------------------|
-| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |
 | dl.packager.io               | Download of OS package (package installation)         |
 | go.packager.io               | As above; new package hosting service                 |
 | geo.zammad.com               | Used for geo data                                     |
