@@ -5,7 +5,7 @@ describe('overview screenshots', () => {
       cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
     })
     cy.visit('/desktop/tickets/view/open-group')
-    //cy.wait(3000)
+    cy.wait(3000)
     cy.get('table').should('exist')
     cy.screenshot('overview-full')
   })

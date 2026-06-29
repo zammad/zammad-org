@@ -4,7 +4,7 @@ describe('editor', () => {
     cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
       cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
     })
-    cy.visit('/desktop/tickets/5')
+    cy.visit('/desktop/tickets/7')
     cy.get('main').should('exist')
     cy.wait(3000)
     cy.touchDeviceEmulation(true) // fix for not being able to click the "reply" button directly
@@ -16,7 +16,7 @@ describe('editor', () => {
     cy.wait(500)
     cy.get('button[aria-label="Format as bold"]').click().wait(300)
     cy.get('[role="textbox"]').should('be.visible').type('XYZ9999 Ultimate.').wait(1000)
-    cy.get('[role="textbox"]').should('be.visible').screenshot('editor-overview', { padding: 10 })
+    cy.get('[id="ticketArticleReplyForm"]').screenshot('editor-overview', { padding: 10 })
     cy.get('button').contains('Discard your unsaved changes').click()
     cy.get('button').contains('Discard changes').click()
   })
