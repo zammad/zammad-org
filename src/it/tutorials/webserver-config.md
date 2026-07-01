@@ -26,12 +26,12 @@ Le cartelle di configurazione sono solitamente:
 
 ### Let's Encrypt
 
-There are two common tools to get certificates, to which your find a basic
-configuration below:
-[Certbot](https://certbot.eff.org/instructions){target=_blank} and
+Esistono due strumenti comuni per ottenere certificati, di cui trovate una
+configurazione di base qui sotto:
+[Certbot](https://certbot.eff.org/instructions){target=_blank} e
 [acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.
-Have a look at their documentation for further configuration details and
-other examples.
+Consultate la loro documentazione per ulteriori dettagli di configurazione e
+altri esempi.
 
 :::tabs
 
@@ -88,18 +88,19 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Passo 3 - Regola la configurazione HTTPS
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [SSL-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+La nostra configurazione predefinita mira a supportare un'ampia gamma di
+dispositivi degli utenti finali. Potrebbe non essere adatta alle tue
+esigenze. Mozilla offre un ottimo [generatore di configurazione
+SSL](https://ssl-config.mozilla.org/){target=_blank} che dovrebbe aiutarti a
+soddisfare i tuoi requisiti!
 
 #### Passo 4 - Salva e ricarica
 
 Ricarica il tuo Nginx con `sudo systemctl reload nginx` per applicare le
 modifiche alla configurazione.
 
-After that, you should be greeted by our getting started wizard.  Go on with
-the [first steps in Zammad](/en/tutorials/first-steps).
+Dopodiché, dovresti essere accolto dalla nostra procedura guidata di avvio
+rapido. Continua con i [primi passi in Zammad](/en/tutorials/first-steps).
 
 ### Apache
 
@@ -167,10 +168,11 @@ openssl dhparam -out <path>/dhparam.pem 4096
 
 #### Passo 4 - Regola la configurazione HTTPS
 
-Our default configuration aims for a broad support of end user devices. This
-may not fit your needs. Mozilla has a great [SSL-config
-generator](https://ssl-config.mozilla.org/){target=_blank} that should help
-you to meet your requirements!
+La nostra configurazione predefinita mira a supportare un'ampia gamma di
+dispositivi degli utenti finali. Potrebbe non essere adatta alle tue
+esigenze. Mozilla offre un ottimo [generatore di configurazione
+SSL](https://ssl-config.mozilla.org/){target=_blank} che dovrebbe aiutarti a
+soddisfare i tuoi requisiti!
 
 #### Passo 5 - Abilita il sito
 
@@ -190,5 +192,5 @@ Assicurati che la seguente riga sia presente nella tua configurazione Apache.
 Ricarica il tuo Apache con `sudo systemctl reload apache2` per applicare le
 modifiche alla configurazione.
 
-After that, you should be greeted by our getting started wizard.  Go on with
-the [first steps in Zammad](/en/tutorials/first-steps).
+Dopodiché, dovresti essere accolto dalla nostra procedura guidata di avvio
+rapido. Continua con i [primi passi in Zammad](/en/tutorials/first-steps).

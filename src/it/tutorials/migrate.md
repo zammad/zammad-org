@@ -15,9 +15,9 @@ Puoi migrare i seguenti dati da un altro sistema di ticketing a Zammad:
 Dopo la migrazione a Zammad, dovresti prima regolare le impostazioni FQDN e il tipo HTTP
 in Zam
 
-After that, you may want to continue with the [First
-Steps](/en/tutorials/first-steps) to configure Zammad. This has to be done
-after migration.
+Dopodiché, potresti voler continuare con i [Primi
+Passi](/en/tutorials/first-steps) per configurare Zammad. Questo deve essere
+fatto dopo la migrazione.
 
 ## Limitazioni generali
 
@@ -38,15 +38,15 @@ Limitazioni generali per tutte le migrazioni:
 
 :::info
 
-**Missing a migration source?**
+**Ti manca una sorgente di migrazione?**
 
-If your system it not mentioned yet, you'll have two options. You can either
-use Zammad's powerful API or drop our
-[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
-development or even migrator sponsoring.
+Se il tuo sistema non è ancora menzionato, hai due opzioni. Puoi
+utilizzare la potente API di Zammad oppure inviare un messaggio al nostro
+[team di vendita](https://zammad.com/en/company/contact){target=_blank} per uno sviluppo
+personalizzato o anche per sponsorizzare un migratore.
 
-Migrations are available for hosted setups too! Contact support for further
-information!
+Le migrazioni sono disponibili anche per installazioni hosted! Contatta il supporto per ulteriori 
+ informazioni!
 :::
 
 ### Freshdesk
@@ -69,10 +69,10 @@ sono limitazioni aggiuntive a quelle.
 
 #### Prerequisiti
 
-Zammad requires API access which is why you'll need to [create an API
+Zammad richiede l’accesso API, motivo per cui dovrai [creare una API
 key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
-for the migration. The migrator will request your Freshdesk subdomain and
-API key.
+per la migrazione. Il migratore richiederà il tuo sottodominio Freshdesk e
+la tua API key.
 
 :::warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
@@ -86,34 +86,32 @@ piuttosto grande.
 
 ::::tabs
 
-=== Via Browser
+=== Tramite browser
 
-After installing Zammad and
-[configuring your webserver](./webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Dopo aver installato Zammad e
+[configurato il server web](./webserver-config), accedi al tuo FQDN di Zammad tramite browser e segui la procedura guidata di migrazione. Puoi trovarla nella schermata di accesso cliccando sul link "O migra da un altro sistema"
+in basso.
 
-Depending on the number of users, tickets and Freshdesk plan this may take a
-while.
+A seconda del numero di utenti, ticket e del piano Freshdesk, la procedura potrebbe richiedere del tempo.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Visualizza il messaggio "_Interrotto dal riavvio dello scheduler. Riavvia manualmente
+o attendi la prossima esecuzione._"?
 
-If you receive above message after the migration begun, please consider using
-the console approach instead and reset the installation.
+Se questo messaggio viene visualizzato dopo aver inserito le credenziali, si prega di attendere.
+La migrazione dovrebbe iniziare entro 5 minuti.
 
-=== Via Console
+Se ricevi il messaggio precedente dopo l'avvio della migrazione, valuta la possibilità di utilizzare
+la procedura da console e ripristinare l'installazione.
 
-Open console:
+=== Tramite console
+
+Apri la console:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Imposta le variabili, sostituisci i valori tra `{}` con i tuoi:
 
 ```ruby
 subdomain = '{freshdesk subdomain}.freshdesk.com'
@@ -123,7 +121,7 @@ subdomain = '{freshdesk subdomain}.freshdesk.com'
 token = '{freshdesk token}'
 ```
 
-Update Zammad settings for freshdesk import:
+Aggiorna le impostazioni di Zammad per l'importazione di Freshdesk:
 
 ```ruby
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
@@ -138,16 +136,16 @@ Setting.set('import_backend', 'freshdesk')
 ```
 
 ```ruby
-Setting.set('import_mode', true)
+Setting.set('import_mode', vero)
 ```
 
-Check your configuration in a dry run:
+Verifica la configurazione con una simulazione:
 
 ```ruby
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
-Run the migration:
+Esegui la migrazione:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Freshdesk')
@@ -228,34 +226,31 @@ piuttosto grande.
 
 ::::tabs
 
-=== Via Browser
+=== Tramite browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Dopo aver installato Zammad e
+[configurato il server web](/en/tutorials/webserver-config), accedi al tuo FQDN di Zammad tramite browser e segui la procedura guidata di migrazione. Puoi trovarla nella schermata di accesso cliccando sul link "Oppure migra da un altro sistema"
+in basso.
 
-Depending on the number of users, tickets and Kayako plan this may take a while.
+A seconda del numero di utenti, ticket e del piano Kayako, l'operazione potrebbe richiedere del tempo.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
+Visualizza il messaggio "_Interrotto dal riavvio dello scheduler. Riavvia manualmente
+o attendi la prossima esecuzione._"?
 
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Se questo messaggio viene visualizzato dopo aver inserito le credenziali, si prega di attendere.
+La migrazione dovrebbe iniziare entro 5 minuti.
 
-If you receive above message after the migration begun, please consider
-using the console approach instead and reset the installation.
+Se ricevi il messaggio sopra indicato dopo l'avvio della migrazione, valuta la possibilità di utilizzare la procedura da console e ripristinare l'installazione.
 
-=== Via Console
+=== Tramite console
 
-Open console:
+Apri la console:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Imposta le variabili, sostituendo i valori tra `{}` con i tuoi:
 
 ```ruby
 subdomain = '{kayako subdomain}.kayako.com'
@@ -269,7 +264,7 @@ email = '{kayako admin email address}'
 password = '{kayako admin password}'
 ```
 
-Update Zammad settings for Kayako import:
+Aggiorna le impostazioni di Zammad per l'importazione di Kayako:
 
 ```ruby
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
@@ -291,13 +286,13 @@ Setting.set('import_backend', 'kayako')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Verifica la configurazione con una simulazione:
 
 ```ruby
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
 
-Run the migration:
+Esegui la migrazione:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Kayako')
@@ -398,25 +393,25 @@ problema, puoi.
 
 === Via Browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Dopo aver installato Zammad e
+[la configurazione del server web](/en/tutorials/webserver-config), navigare verso il tuo
+Zammads FQDN nel tuo browser e segui la procedura guidata di migrazione. Puoi trovarlo
+nella schermata di accesso, fai clic sul link "Oppure migra da un altro sistema"
+in basso.
 
-Depending on the size of your OTRS installation this may take a while. In such
-a case, consider using the command line version of this feature. This also
-applies if you experience timeouts during the migration.
+A seconda delle dimensioni dell'installazione OTRS, potrebbe volerci un po' di tempo. In tal caso,
+si consiglia di utilizzare la versione a riga di comando di questa funzionalità. Ciò vale anche nel caso
+in cui si verifichino timeout durante la migrazione.
 
 === Via Console
 
-Open console:
+Aprire console:
 
 ```ruby
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Imposta le variabili, sostituisci i valori in `{}` con le tue:
 
 ```ruby
 Setting.set('import_otrs_endpoint', 'https://{domain}/otrs/public.pl?Action=ZammadMigrator')
@@ -436,10 +431,10 @@ Run a full migration:
 Import::OTRS.start
 ```
 
-Run a differential migration (only possible after finishing an earlier full
-migration):
+Eseguire una migrazione differenziale (possibile solo dopo aver completato una completa)
+migrazione):
 
-All steps from "Set variables" +
+Tutti i passaggi da "Set variables" +
 
 ```ruby
 Setting.set('system_init_done', false)
@@ -486,10 +481,10 @@ Limitazioni aggiuntive a quella generale:
 
 #### Prerequisiti
 
-Zammad requires API access which is why you’ll need to [create an API
-key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
-for the migration. The migrator will request your Zendesk-URL, email address
-and API key.
+Zammad richiede l'accesso all'API, motivo per cui dovrai [creare una chiave
+API](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
+per la migrazione. Lo strumento di migrazione richiederà il tuo URL Zendesk,
+l'indirizzo email e la chiave API.
 
 :::warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
@@ -503,41 +498,40 @@ piuttosto grande.
 
 ::::tabs
 
-=== Via Browser
+===== Tramite browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Dopo aver installato Zammad e
+[configurato il server web](/en/tutorials/webserver-config), accedi al tuo FQDN di Zammad tramite browser e segui la procedura guidata di migrazione. Puoi trovarla nella schermata di accesso cliccando sul link "Oppure migra da un altro sistema"
+in basso.
 
-Depending on the the number of users, tickets and Zendesk plan, this may take a
-while.
+A seconda del numero di utenti, ticket e del piano Zendesk, la procedura potrebbe richiedere del tempo.
 
-=== Via Console
 
-Open console:
+
+=== Tramite console
+
+Apri la console:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Imposta le variabili, sostituisci i valori tra `{}` con i tuoi:
 
 ```ruby
-subdomain = '{zendesk url}'
+subdomain = '{URL di Zendesk}'
 ```
 
 ```ruby
-email = '{zendesk admin email address}'
+email = '{indirizzo email dell'amministratore di Zendesk}'
 ```
 
 ```ruby
-token = '{zendesk token}'
+token = '{token di Zendesk}'
 
 ```
 
-Update Zammad settings:
+Aggiorna le impostazioni di Zammad:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -559,13 +553,13 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Verifica la configurazione con una simulazione:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Run the migration:
+Esegui la migrazione:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Zendesk')

@@ -3,17 +3,17 @@ features:
   - 
     details: 'Trova tutto su come lavorare con Zammad quotidianamente, con suggerimenti, tutorial e tutto ciò di cui potresti aver bisogno.'
     icon: 🙋
-    link: /it/documentazione/utilizzo/introduzione
+    link: /it/documentation/use/start
     title: 'Documentazione utente'
   - 
     details: 'Scopri come configurare Zammad e collegarlo a sistemi remoti.'
     icon: 🧑‍🔧
-    link: '/it/documentazione/gestire Zammad/inizio'
+    link: /it/documentation/manage-zammad/start
     title: 'Documentazione amministratore'
   - 
     details: 'Scopri i termini e i concetti importanti usati in Zammad.'
     icon: 🗂️
-    link: /it/riferimenti/glossario
+    link: /it/reference/glossary
     title: Glossario
 order: 1
 title: Introduzione

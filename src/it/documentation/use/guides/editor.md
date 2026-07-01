@@ -21,8 +21,9 @@ sul lato sinistro della barra degli strumenti nell'editor. Poiché sono già
 descritte altrove, qui ci limitiamo a fare riferimento a quei posti per
 evitare contenuti duplicati.
 
-- [AI assistant text tools](ai#writing-assistant-tools )
-- [Mention users](../advanced-features#mention-a-user)
+- [Strumenti di testo con assistente
+  IA](ai#strumenti-di-scrittura-assistiti)
+- [Menziona utenti](../advanced-features#mention-a-user)
 - [Inserisci moduli di testo](../advanced-features#moduli-di-testo)
 - [Inserisci articoli dalla base di
   conoscenza](../advanced-features#inserisci-articolo-dalla-base-di-conoscenza)

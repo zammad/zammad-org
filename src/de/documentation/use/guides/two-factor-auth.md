@@ -130,9 +130,9 @@ korrekten Benutzernamens und Passworts die gleiche Zwei-Faktor-Methode
 anzugeben. Je nach gewählter Zwei-Faktor-Methode kann dies ein
 Sicherheits-Code, ein Hardware-Schlüssel, etc. sein.
 
-Sollten Sie bei der Anmeldung Probleme mit Ihrer bevorzugten
-Zwei-Faktor-Authentifizierungsmethode haben, können Sie zu einer anderen
-Methode wechseln, sofern Sie diese zuvor eingerichtet haben.
+Falls Sie Probleme beim Login mit Ihrer bevorzugten Zwei-Faktor-Methode
+haben, können Sie eine andere auswählen, sofern Sie diese zuvor eingerichtet
+haben.
 
 Suchen Sie nach dem Link **Eine andere Methode verwenden** unterhalb des
 Anmeldefeldes. Falls Sie diesen Link nicht sehen, haben Sie vermutlich keine

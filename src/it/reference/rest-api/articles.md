@@ -187,6 +187,6 @@ id}/{attachment id}`
 Risposta: `{image file}`
 
 ::: tip
-If you're not sure which articles a ticket contains, please
-[list](#list-articles-by-ticket) affected articles first.
+Se non sei sicuro di quali articoli contenga un ticket, per favore
+[elenca](#list-articles-by-ticket) prima gli articoli interessati.
 :::

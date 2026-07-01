@@ -40,8 +40,9 @@ Per eseguire un backup basato sulla configurazione predefinita, segui i
 passaggi seguenti:
 
 1. Copia il file `config.dist` in `config`.
-1. Change default parameters in the config file if needed. See [Backup
-   Configuration](#backup-configuration) for details.
+1. Modifica i parametri predefiniti nel file di configurazione se
+   necessario. Vedi [Backup Configuration](#backup-configuration) per i
+   dettagli.
 1. Ferma Zammad `systemctl stop zammad`
 1. Esegui `/opt/zammad/contrib/backup/zammad_backup.sh` (come utente `root`
    o `zammad`)
@@ -81,9 +82,9 @@ di seguito.
 Leggi attentamente le seguenti informazioni prima di iniziare a ripristinare
 i tuoi dati.
 
-- This section is **not** about **migrating from one host to another**. You
-  can find instructions about this topic on the [Migrate Zammad
-  page](migrate-host).
+- Questa sezione **non** riguarda la **migrazione da un host a un
+  altro**. Puoi trovare istruzioni su questo argomento nella pagina [Migrate
+  Zammad](migrate-host).
 - Questa guida si aspetta una versione di Zammad completamente installata
 - Si aspetta anche che tu ripristini Zammad sullo stesso host e versione
   Zammad
@@ -95,7 +96,7 @@ i tuoi dati.
   sottoposta a backup di spazio libero.
 
 :::tip
-If your scenario is different as described above, please consult the
+If your scenario is different from the one described above, please consult the
 [Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
 or consider
 [paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
@@ -126,9 +127,9 @@ ripristino.
 
 ### Configura lo script di backup
 
-For a new installation, this is required. At least you have to provide a
-directory where your backups are stored. See [Backup
-Configuration](#backup-configuration) for more information.
+Per una nuova installazione, questo è necessario. Devi almeno fornire una
+directory in cui verranno archiviati i tuoi backup. Consulta [Backup
+Configuration](#backup-configuration) per maggiori informazioni.
 
 ### Pulisci la cartella di archiviazione
 
@@ -173,17 +174,18 @@ Il ripristino eliminerà il tuo attuale.
 - Se hai impostato impostazioni ambientali, riapplicale ora.
 - Se non già fatto, [installa
   Elasticsearch](/it/tutorials/install-elasticsearch) ora.
-- [Connect Elasticsearch with Zammad and rebuild its search
-  index](/en/tutorials/connect-config-elasticsearch). The rebuild can safely
-  run during your work, but will cause a degraded search performance and may
-  lead to temporarily not found data.
+- [Collega Elasticsearch a Zammad e ricostruisci il suo indice di
+  ricerca](/en/tutorials/connect-config-elasticsearch). La ricostruzione può
+  essere eseguita in sicurezza durante il tuo lavoro, ma causerà prestazioni
+  di ricerca degradate e potrebbe portare a dati temporaneamente non
+  trovati.
 
 ## Risoluzione problemi backup e ripristino
 
-You can find some common problems below. If your issue is not listed, feel
-free to consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-for technical assistance.
+Di seguito sono elencati alcuni problemi comuni. Se il tuo problema non è
+presente nell'elenco, non esitare a consultare la [Community di
+Zammad](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+per assistenza tecnica.
 
 ### Codici di uscita
 
@@ -227,9 +229,9 @@ Solitamente, l'autenticazione può essere consentita così:
 host    all             all
 ```
 
-Please consult the official [PostgreSQL
-documentation](https://www.postgresql.org/docs/){target=_blank} for this, as
-this is out of our documentation scope.
+Per questo, consulta la documentazione ufficiale di
+[PostgreSQL](https://www.postgresql.org/docs/){target=_blank}, poiché è al
+di fuori dell’ambito della nostra documentazione.
 
 #### AVVISO: Sembra che tu non abbia allegati nel filesystem
 
@@ -239,9 +241,9 @@ filesystem.
 Questo avviso verrà mostrato una volta prima di creare una cartella vuota
 per permettere al processo di backup.
 
-Check and adjust your
-[storage settings via console](/en/reference/rails-commands#storage-provider-setting)
-or in Zammad's admin interface under _Settings > System > Storage_.
+Controlla e modifica le tue
+[impostazioni di archiviazione tramite console](/en/reference/rails-commands#storage-provider-setting)
+o nell’interfaccia di amministrazione di Zammad sotto _Settings > System > Storage_.
 
 ## Script di aiuto
 

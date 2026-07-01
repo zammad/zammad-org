@@ -111,7 +111,7 @@ Le chiamate seguenti sono state inviate con la seguente configurazione. Questo Ã
 
 === JSON
 
-`POST`-Request sent:
+`POST`-Request inviato:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
@@ -122,24 +122,24 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.sh
 
 === Form-data
 
-`POST`-Request sent:
+`POST`-Request inviata:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req
 
-Returns:
+Restituisce:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req.sh
 
@@ -162,7 +162,7 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.sh
 
@@ -172,11 +172,11 @@ Payload:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req
 
-Returns:
+Restituisce:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req.sh
 
@@ -257,7 +257,7 @@ Ci sono due opzioni su come inviare con `POST` i dati rilevanti a Zammad.
 
 === JSON
 
-`POST`-Request sent:
+`POST`-Request inviato:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
@@ -268,24 +268,24 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.sh
 
 === Form-data
 
-`POST`-Request sent:
+`POST`-Request inviato:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req
 
-Returns:
+Restituisce:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req.sh
 
@@ -308,7 +308,7 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.sh
 
@@ -318,11 +318,11 @@ Payload:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req
 
-Returns:
+Restituisce:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req.sh
 
@@ -362,7 +362,7 @@ Sample curl command:
 
 === JSON
 
-`POST`-Request send:
+`POST`-Request inviato:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
@@ -373,24 +373,24 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.sh
 
 === Form-data
 
-`POST`-Request sent:
+`POST`-Request inviato:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req
 
-Returns:
+Restituisce:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh
 
@@ -413,7 +413,7 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.sh
 
@@ -427,7 +427,7 @@ Response:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Comando curl di esempio:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh
 

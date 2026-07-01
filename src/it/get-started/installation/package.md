@@ -12,17 +12,13 @@ title: Pacchetto
 Per l'installazione del pacchetto, sono supportate le seguenti distribuzioni Linux:
 <!-- tabella inclusa in host-upgrade.md; a cui si fa riferimento alle righe 15-20. Assicurarsi di mantenerla o
 modificarla lì -->
-| Distribuzione | Versione |
 
--------------------- | :------------------- |
-
-| CentOS/RHEL | 9, 10 |
-
-| Debian | 11, 12 e 13 |
-
-| OpenSUSE Leap / SLES | 15 e 16 |
-
-| Ubuntu | 22.04, 24.04 e 26.04 |
+| Distribuzione         | Versione             |
+| --------------------- | :------------------- |
+| CentOS/RHEL           | 9, 10                |
+| Debian                | 11, 12 & 13          |
+| OpenSUSE Leap / SLES  | 15 & 16              |
+| Ubuntu                | 22.04, 24.04 & 26.04 |
 
 Se la tua distribuzione non è supportata, puoi utilizzare un metodo di
 installazione diverso o valutare l'utilizzo del [servizio cloud di
@@ -114,9 +110,10 @@ Il metodo consigliato è quello di utilizzare la [guida ufficiale di
 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 per installare Elasticsearch.
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
-separated to keep the install instructions as lean as possible.
+In alternativa, puoi seguire [la nostra procedura di installazione di
+esempio](/it/tutorials/install-elasticsearch) di Elasticsearch 9, che è
+stata separata per mantenere le istruzioni di installazione il più snelle
+possibile.
 
 ### Aggiungi il repository Zammad
 
@@ -374,7 +371,7 @@ di Elasticsearch già esistente, assicurarsi di utilizzare una versione
 supportata e consultare il nostro [esempio di
 configurazione](/it/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `8.11` - `9.x`.
+Le versioni di Elasticsearch supportate sono `8.11` - `9.x`.
 
 Cronologia versioni di Elasticsearch per Zammad:
 

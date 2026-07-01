@@ -383,7 +383,7 @@ Sie ein anderes, nicht ausgewähltes Ticket einbeziehen möchten, beginnen Sie
 mit dem Ziehen von dort aus, damit auch dieses Ticket in der Mehrfach-Aktion
 berücksichtigt wird.
 
-## Tickets zusammenfassen
+## Ticket zusammenfassen
 
 ![Screenshot zeigt den Bereich für die
 Ticket-Zusammenfassung](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)

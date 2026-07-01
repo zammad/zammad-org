@@ -243,10 +243,9 @@ Richiesta `DELETE` inviata: `/api/v1/object_manager_attributes/{id}`
 Permesso richiesto: `admin.object`
 
 ::: warning
-After executing the database migrations, a restart of Zammad is
-_mandatory_. If not deactivated via
-[auto shutdown setting](/en/reference/rails-commands#auto-shutdown-setting),
-Zammad automatically restarts - expect a short downtime.
+Dopo aver eseguito le migrazioni del database, è _obbligatorio_ riavviare Zammad. Se non è stato disattivato tramite
+[l’impostazione di spegnimento automatico](/en/reference/rails-commands#auto-shutdown-setting),
+Zammad si riavvia automaticamente – prevedi un breve periodo di inattività.
 :::
 
 Richiesta `POST` inviata:

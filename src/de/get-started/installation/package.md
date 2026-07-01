@@ -417,7 +417,7 @@ existierenden Elasticsearch-Instanz verbinden wollen, stellen Sie sicher,
 dass Sie eine unterstützte Version verwenden und werfen Sie einen Blick auf
 unser [Beispiel-Konfiguration](/de/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `8.11` - `9.x`.
+Unterstützte Elasticsearch-Versionen sind `8.11` – `9.x`.
 
 Elasticsearch-Versionsverlauf für Zammad:
 

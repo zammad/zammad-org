@@ -32,10 +32,10 @@ Compose, un modo è copiarli.
 docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/
 ```
 
-In case you are searching for your backup files from a package installation,
-have a look at the [Backup & Restore
-(Package)](/en/tutorials/backup-restore) section. You don't need a full dump
-for restoring your backup.
+Se stai cercando i tuoi file di backup da un’installazione tramite
+pacchetto, dai un’occhiata alla sezione [Backup & Restore
+(Package)](/en/tutorials/backup-restore). Non hai bisogno di un dump
+completo per ripristinare il tuo backup.
 
 Per **ripristinare** il backup, posiziona i tuoi file in una cartella
 chiamata `restore` sul sistema host.

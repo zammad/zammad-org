@@ -37,25 +37,21 @@ Zammad-Docker-Compose](https://github.com/zammad/zammad-docker-compose){{target=
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Segui la [guida generale di deployment](/en/get-started/installation/docker) e applica le seguenti modifiche.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Sotto il campo "Compose path", fai clic sul pulsante `Add file`. Questo apre la sezione "Additional paths" dove puoi
+specificare lo scenario che vuoi utilizzare. Aggiungi `scenarios/{scenario you want to use}.yml` e sostituisci l’ultima parte tra
+le parentesi `{}` con il nome di uno dei file scenario. Puoi anche combinare più scenari aggiungendo ulteriori percorsi.
 
 ![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 === Docker Compose
 
-Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with
-one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:
+Segui i primi 2 passaggi della [guida generale di deployment](/en/get-started/installation/docker). Per avviare lo stack con
+uno o più scenari aggiuntivi, usa invece il seguente comando per il passaggio 3 nella cartella del repository clonato:
 
 ``` sh
 docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d
-```
-
-Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios
-by adding additional files according to the example above.
 
 :::
 
@@ -193,9 +189,10 @@ d'uso. Prevediamo di aggiungerne altri.
 
 ## Personalizza lo stack localmente
 
-Sometimes it's necessary to apply local changes to the Zammad Docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker
-Compose will [automatically load this file and merge its changes into your
+A volte è necessario applicare modifiche locali allo stack Docker di Zammad,
+ad esempio per includere servizi aggiuntivi. Se prevedi di farlo, ti
+consigliamo di non modificare il file `docker-compose.yml`, ma di creare
+invece un file locale `docker-compose.override.yml` che includa tutte le tue
+modifiche. Docker Compose [caricherà automaticamente questo file e unirà le
+sue modifiche allo
 stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

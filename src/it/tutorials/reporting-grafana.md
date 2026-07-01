@@ -13,10 +13,11 @@ supporta Elastic.
 Grafana è un'applicazione di analisi/visualizzazione di terze parti che puoi
 collegare a Zammad (pr
 
-This guide will provide you some steps to get started. For a deeper insight
-you should consider having a look at [Elasticsearch's indexed
-attributes](/en/reference/es-indexed-attributes) and to read the
-[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
+Questa guida ti fornirà alcuni passaggi per iniziare. Per una comprensione
+più approfondita, ti consigliamo di dare un'occhiata agli [attributi
+indicizzati di Elasticsearch](/en/reference/es-indexed-attributes) e di
+leggere la [documentazione di
+Grafana](https://grafana.com/docs/){target=_blank}.
 
 Questa guida si aspetta che tutti i requisiti siano operativi. Non
 tratteremo la configurazione di base.
@@ -46,13 +47,13 @@ Sostituisci `zammad_production_` con il tuo prefisso adatto.
 Fai clic su dettagli per vedere come interrogare.
 
 ::: details
-Adjust the following command to your environment:
+Adatta il seguente comando al tuo ambiente:
 
 ```sh
 curl http://localhost:9200/_aliases?pretty=true
 ```
 
-This will return an output like the following:
+Questo restituirà un output simile al seguente:
 
 ```json
 {
@@ -133,9 +134,9 @@ per iniziare a costruire la tua.
 
 ## Avvio rapido con modello dashboard
 
-If you want to get inspired, you can use our sample dashboards as mentioned
-below. These dashboards can also be found on
-[GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
+Se desideri trarre ispirazione, puoi utilizzare le nostre dashboard di
+esempio, come indicato di seguito. Queste dashboard sono disponibili anche
+su [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
 ### Importare una dashboard
 

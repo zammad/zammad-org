@@ -74,9 +74,9 @@ dovresti adattarlo al tuo.
 
 :::tip
 
-**Are you still lost?**
+**Sei ancora in difficoltà?**
 
-If you need help or you'll need to get in production a lot faster, you can also
-book workshops with one of our
-[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.
+Se hai bisogno di aiuto o devi andare in produzione molto più rapidamente, puoi anche
+prenotare workshop con uno dei nostri
+[consulenti Zammad](https://zammad.com/en/company/contact){target=_blank}.
 :::

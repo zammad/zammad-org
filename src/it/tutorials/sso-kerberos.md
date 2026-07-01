@@ -41,11 +41,11 @@ In linea di principio, sì.
 ## Per iniziare
 
 ::: tip
-**Too busy to handle it on your own?**
+**Troppo impegnato per occupartene da solo?**
 
-We've got you covered. Our experts offer custom-tailored workshops to
-get your team up and running fast and with confidence.
-[Just drop us a line](https://zammad.com/contact){target=_blank}!
+Ci pensiamo noi. I nostri esperti offrono workshop personalizzati per
+ aiutare il tuo team a essere operativo in modo rapido e sicuro.
+[Scrivici un messaggio](https://zammad.com/contact){target=_blank}!
 :::
 
 Avrai bisogno di:
@@ -176,9 +176,9 @@ su
 
 ### 2b. Pre-configura Apache
 
-This documentation expects an already working Apache configuration.  You
-should have a look at the [webserver configuration
-guide](/en/tutorials/webserver-config) before continuing.
+Questa documentazione presuppone una configurazione Apache già
+funzionante. Prima di continuare, si consiglia di consultare la [guida alla
+configurazione del server web](/en/tutorials/webserver-config).
 
 ### 2c. Installa ulteriori dipendenze Apache
 
@@ -413,9 +413,10 @@ Aggiungi `LogLevel debug` al tuo virtual host.
 Il tuo account di servizio Active Directory ha abilitata la **crittografia
 Kerberos AES a 256 bit**?
 
-If for some reason your server does not support AES 256-bit encryption, the
-LDAP Wiki has [more information about Kerberos encryption
-types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
+Se per qualche motivo il tuo server non supporta la crittografia AES a 256
+bit, la wiki di LDAP contiene [ulteriori informazioni sui tipi di
+crittografia
+Kerberos](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
 #### Impossibile verificare le credenziali krb5: la versione della chiave non è disponibile
 

@@ -1,10 +1,8 @@
 <!-- markdownlint-disable MD041 -->
 
 ::: tip
-Are you tired of complex setup, configuration, backup and update tasks? Let us
-handle this stuff for you! 🚀
+Sei stanco di complesse attività di configurazione, setup, backup e aggiornamento? Lascia che ce ne occupiamo noi! 🚀
 
-The easiest and often most cost-effective way to operate Zammad is our
-[cloud service](https://zammad.com/en/pricing){target=_blank}. Give it a try
-with a free trial instance!
+Il modo più semplice e spesso più conveniente per utilizzare Zammad è il nostro
+[servizio cloud](https://zammad.com/en/pricing){target=_blank}. Provalo con una istanza di prova gratuita!
 :::

@@ -5,20 +5,21 @@ title: 'Migra Zammad a un nuovo host'
 
 # Migra Zammad a un nuovo host
 
-This is just a description of basic steps to perform a migration to a new
-host. Your environment may be different so you should consider this as a
-reference point only. If anything goes wrong, please consult the [Zammad
+Questa è solo una descrizione dei passaggi di base per eseguire una
+migrazione verso un nuovo host. Il tuo ambiente potrebbe essere diverso,
+quindi dovresti considerarla solo come punto di riferimento. Se qualcosa va
+storto, consulta la [Zammad
 Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-or consider [paid support
-options](https://zammad.com/en/services/professional-services){target=_blank}.
+o considera le [opzioni di supporto a
+pagamento](https://zammad.com/en/services/professional-services){target=_blank}.
 
 I passaggi descritti in questa pagina sono un'aggiunta alla [guida di backup
 e ripristino](/it/tutorials/backup-restore).
 
 ::: tip
-Migrating from Zammad SaaS? Skip to
-[Step 7](#step-7-transfer-your-backup-files). For restoration, you've
-received an attachment dump!
+Stai migrando da Zammad SaaS? Passa direttamente allo
+[Step 7](#step-7-transfer-your-backup-files). Per il ripristino,
+hai ricevuto un dump come allegato!
 :::
 
 ## Passo 1: Annota le tue regolazioni ambientali
@@ -66,10 +67,10 @@ tuoi dati.
 
 ## Passo 7: Trasferisci i tuoi file di backup
 
-Save your backup files in a directory and provide the path to the `config`
-file. Under [backup
-configuration](/en/tutorials/backup-restore#backup-configuration) you can
-find how to adjust the config file to your needs.
+Salva i tuoi file di backup in una directory e fornisci il percorso al file
+`config`. Nella sezione [backup
+configuration](/en/tutorials/backup-restore#backup-configuration) puoi
+trovare come adattare il file di configurazione alle tue esigenze.
 
 ## Passo 8: Ripristina il tuo backup
 
@@ -147,15 +148,15 @@ Assicurati che le tue notifiche email.
 
 ## Passo 10: Applica le impostazioni ambientali mancanti
 
-If you've set any environmental settings please re-apply your settings now.
-You backed them up in [Step
+Se hai impostato delle variabili d’ambiente, riapplica ora le tue
+impostazioni. Le hai salvate nello [Step
 1](#step-1-note-down-your-environmental-adjustments).
 
-If not already done, please [install
-Elasticsearch](/en/tutorials/install-elasticsearch) now and perform the
-steps to [connect to and configure
-Elasticsearch](/en/tutorials/connect-config-elasticsearch) after
-installation.
+Se non l’hai già fatto, [installa
+Elasticsearch](/en/tutorials/install-elasticsearch) ora ed esegui i passaggi
+per [connettere e configurare
+Elasticsearch](/en/tutorials/connect-config-elasticsearch) dopo
+l’installazione.
 
 ## Passo 11: Riattiva i canali e disattiva la modalità manutenzione
 

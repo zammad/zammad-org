@@ -133,9 +133,9 @@ Nella scheda della barra laterale del ticket, puoi trovare un campo
 **Proprietario**. Scegli tra gli agenti offerti e assicurati di lasciare una
 nota interna in modo che l'altro agente sappia di cosa si tratta.
 
-If you only have a question or need some information, you could also just
-[mention a colleague](advanced-features#mention-a-user) in an article by
-using [[@]][[@]] and raise your question.
+Se hai solo una domanda o hai bisogno di informazioni, puoi anche
+[menzionare un collega](funzionalità avanzate#menzionare un utente) in un
+articolo usando [[@]][[@]] e porre la tua domanda.
 
 ### Come eliminare un ticket?
 
@@ -155,11 +155,11 @@ amministratore Zammad di aggiungerli per te.
 
 ### Come chiedere aiuto a un collega nel ticket?
 
-The best way to do this is to [mention a
-colleague](advanced-features#mention-a-user) in an article by using
-[[@]][[@]] and raise your question. This triggers a notification for your
-colleague. Depending on your internal processes, switching the owner of the
-ticket could also be a possible option.
+Il modo migliore per farlo è [menzionare un collega](funzionalità
+avanzate#menzionare-un-utente) in un articolo usando [[@]][[@]] e porre la
+tua domanda. Questo attiverà una notifica per il tuo collega. A seconda dei
+tuoi processi interni, cambiare il responsabile del ticket potrebbe anche
+essere un'opzione possibile.
 
 ### Come citare l'email del cliente o parti di essa?
 

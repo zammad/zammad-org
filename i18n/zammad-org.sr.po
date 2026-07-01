@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-23 17:26+0200\n"
+"POT-Creation-Date: 2026-07-01 14:40+0200\n"
 "PO-Revision-Date: 2026-06-24 05:30+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -8699,7 +8699,7 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
 #: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
-#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/ticket.md:101
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -9530,6 +9530,7 @@ msgstr "PostgreSQL"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:374
 #: src/en/reference/environment-variables.md:185
 #: src/en/tutorials/webserver-config.md:110
 #, no-wrap
@@ -9538,7 +9539,7 @@ msgstr "Nginx"
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:353
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:379
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
@@ -9553,7 +9554,7 @@ msgstr "Сервис базе података"
 #: src/en/get-started/installation/package.md:359
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
-"[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
+"[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no "
 "PostgreSQL server could be detected, it will be installed automatically "
 "during the package installation."
 msgstr ""
@@ -9579,22 +9580,23 @@ msgid "Reverse Proxy"
 msgstr "Прокси приступа"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:370
-msgid "The following reverse proxies are supported:"
+#: src/en/get-started/installation/package.md:371
+#, fuzzy
+#| msgid "The following reverse proxies are supported:"
+msgid ""
+"The following reverse proxies are supported in their currently maintained "
+"versions:"
 msgstr "Следеће опције проксија приступа су подржане:"
 
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:373
-msgid "Nginx 1.3+"
-msgstr "Nginx 1.3+"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:373
-msgid "Apache 2.2+"
-msgstr "Apache 2.2+"
+#. type: Title ###
+#: src/en/get-started/installation/package.md:374
+#: src/en/tutorials/webserver-config.md:159
+#, no-wrap
+msgid "Apache"
+msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:378
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -9603,10 +9605,10 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:384
+#: src/en/get-started/installation/package.md:385
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
-"socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
+"socket. Zammad requires Redis 7 or newer.  It gets installed automatically "
 "(package) or is included in the stack (Docker Compose) with a working "
 "configuration.  However, the installation and configuration is out of scope "
 "of this documentation. Please follow the official guides and ensure to set "
@@ -9614,14 +9616,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:388
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:389
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation\n"
@@ -9629,13 +9631,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:393
+#: src/en/get-started/installation/package.md:394
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:401
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -9645,24 +9647,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:402
-msgid "Supported Elasticsearch versions are `7.8` - `9.x`."
+#: src/en/get-started/installation/package.md:403
+msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:405
 #, fuzzy
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Први кораци са Zammad-ом"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:406
 #, no-wrap
 msgid ""
 "\n"
 "| Zammad        | Elasticsearch  |\n"
 "| ------------- | :------------- |\n"
-"| 7+            | >= 7.8, <10    |\n"
+"| 7.2+          | >= 8.11, <10   |\n"
+"| 7.0-7.1       | >= 7.8, <10    |\n"
 "| 5.2-6.5       | >= 7.8, <9     |\n"
 "| 5.0-5.1       | >= 7.8, <8     |\n"
 "| 4.0-4.1       | >= 6.5, <=7.12 |\n"
@@ -9674,22 +9677,14 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:424
-msgid ""
-"The Elasticsearch plugin `ingest-attachment` is required for version 7 or "
-"older to index the contents of email attachments. Starting with "
-"Elasticsearch 8, it is included by default."
-msgstr ""
-
 #. type: Title ###
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:423
 #, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:427
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -9698,7 +9693,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:431
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -9708,7 +9703,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:434
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -9716,7 +9711,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:437
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -9724,13 +9719,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:438
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:445
+#: src/en/get-started/installation/package.md:443
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -16405,23 +16400,22 @@ msgid "  export NO_PROXY=\"localhost,127.0.0.1,.example.com\"\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:53
+#: src/en/reference/proxy-connections.md:52
 #, no-wrap
 msgid ""
 "`ES_JAVA_OPTS`\n"
 ": Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems\n"
-"  during the operation. However, there can be cases where this is needed, for example when downloading the ingest plugin\n"
-"  for Elasticsearch versions below 8. Example:\n"
+"  during the operation. However, there can be cases where this is needed. Example:\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:54
+#: src/en/reference/proxy-connections.md:53
 #, no-wrap
 msgid "  export ES_JAVA_OPTS=\"-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080\"\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/proxy-connections.md:58
+#: src/en/reference/proxy-connections.md:57
 #, no-wrap
 msgid ""
 "Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set\n"
@@ -16434,14 +16428,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/proxy-connections.md:68
+#: src/en/reference/proxy-connections.md:67
 #, fuzzy, no-wrap
 #| msgid "External Services"
 msgid "External Connections"
 msgstr "Удаљени сервиси"
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:73
+#: src/en/reference/proxy-connections.md:72
 msgid ""
 "During installation and operation of Zammad, some connections to online "
 "services are required. Depending on your installation method and Zammad "
@@ -16450,12 +16444,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:83
-#, no-wrap
+#: src/en/reference/proxy-connections.md:81
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Type                      | Highlighting in documentation | Markdown syntax                 |\n"
+#| "|-------------------------- |-------------------------------|---------------------------------|\n"
+#| "| Labeled buttons           | `Sign in`                     | \\`Sign in\\`                     |\n"
+#| "| Fields and UI elements    | **Name**                      | \\*\\*Name\\*\\*                    |\n"
+#| "| Locations/paths           | _Settings > Channels > Email_ | \\_Settings > Channels > Email\\_ |\n"
+#| "| Keyboard shortcuts        | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+#| "| Add button                | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+#| "| Delete button             | ::x::                         | \\:\\:x\\:\\:                       |\n"
+#| "| Action menu               | ::a::                         | \\:\\:a\\:\\:                       |\n"
 msgid ""
 "| Address                      | Comment                                               |\n"
 "|------------------------------|-------------------------------------------------------|\n"
-"| artifacts.elastic.co         | Download of the ingest plugin (only ES < 8)           |\n"
 "| dl.packager.io               | Download of OS package (package installation)         |\n"
 "| go.packager.io               | As above; new package hosting service                 |\n"
 "| geo.zammad.com               | Used for geo data                                     |\n"
@@ -16463,9 +16466,18 @@ msgid ""
 "| index.rubygems.org           | Download of gems for ruby                             |\n"
 "| registry.npmjs.org           | Download of js dependencies                           |\n"
 msgstr ""
+"| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
+"|----------------------|-------------------------------|---------------------------------|\n"
+"| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
+"| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
+"| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
+"| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
+"| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
+"| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
+"| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:87
+#: src/en/reference/proxy-connections.md:85
 msgid ""
 "You can use a script to check the connection state of your system. It tries "
 "to connect to the services mentioned above and shows the result. If every "
@@ -16475,25 +16487,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:89
+#: src/en/reference/proxy-connections.md:87
 #, no-wrap
 msgid "**Fetch script from remote:**\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:90
+#: src/en/reference/proxy-connections.md:88
 #, fuzzy, no-wrap
 msgid "curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh\n"
 msgstr "https://github.com/zammad/zammad-org/issues"
 
 #. type: Plain text
-#: src/en/reference/proxy-connections.md:95
+#: src/en/reference/proxy-connections.md:93
 #, no-wrap
 msgid "**Use local script:**\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/proxy-connections.md:96
+#: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
 msgstr ""
@@ -19097,7 +19109,7 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:115
+#: src/en/reference/rest-api/ticket.md:128
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:124
 #, no-wrap
@@ -23135,8 +23147,24 @@ msgstr ""
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
-#. type: Fenced div block (details)
+#. type: Fenced div block (tip)
 #: src/en/reference/rest-api/ticket.md:88
+#, no-wrap
+msgid ""
+"**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the\n"
+"following HTTP header to your request:\n"
+"\n"
+"```plain\n"
+"X-Zammad-Suppress-Notifications: true\n"
+"```\n"
+"\n"
+"This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The\n"
+"header only affects admin and agent accounts and is ignored for customers. It also works for the\n"
+"`POST /api/v1/ticket_articles` endpoint.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket.md:101
 #, no-wrap
 msgid ""
 "\n"
@@ -23147,7 +23175,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/ticket.md:101
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -23155,7 +23183,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/ticket.md:101
 #, no-wrap
 msgid ""
 "\n"
@@ -23166,7 +23194,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:108
+#: src/en/reference/rest-api/ticket.md:121
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -23176,17 +23204,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:118
+#: src/en/reference/rest-api/ticket.md:131
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:120
+#: src/en/reference/rest-api/ticket.md:133
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:121
+#: src/en/reference/rest-api/ticket.md:134
 #, no-wrap
 msgid ""
 "\n"
@@ -23197,7 +23225,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:129
+#: src/en/reference/rest-api/ticket.md:142
 #, no-wrap
 msgid ""
 "\n"
@@ -23797,12 +23825,25 @@ msgstr ""
 #. type: Bullet: '5. '
 #: src/en/tutorials/backup-restore-docker.md:40
 msgid ""
-"Start the stack. The restore process is triggered if the `restore` directory "
-"is detected and the backup files are in place."
+"Start the stack. The restore process is triggered in the ``zammad-backup`` "
+"service if the ``restore`` directory is detected and the backup files are in "
+"place."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/backup-restore-docker.md:41
+#, no-wrap
+msgid ""
+"   As a part of this process, the cache will be cleared and any pre-existing\n"
+"   Elasticsearch indexes will be dropped.\n"
+"   All other containers will be waiting for the restore to finish. When that is the case,\n"
+"   they will resume their normal operations, which includes an automatic Elasticsearch\n"
+"   reindexing (depending on the ENV variables). You can check the container logs for\n"
+"   details.\n"
 msgstr ""
 
 #. type: Bullet: '6. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:50
 msgid ""
 "After the restore process has finished, the `restore` directory got renamed. "
 "You can safely delete it now."
@@ -28864,12 +28905,6 @@ msgid ""
 "the [first steps in Zammad](/en/tutorials/first-steps)."
 msgstr ""
 
-#. type: Title ###
-#: src/en/tutorials/webserver-config.md:159
-#, no-wrap
-msgid "Apache"
-msgstr ""
-
 #. type: Title ####
 #: src/en/tutorials/webserver-config.md:161
 #, no-wrap
@@ -29060,6 +29095,12 @@ msgid ""
 "Reload your Apache with `sudo systemctl reload apache2` to apply your "
 "configuration changes."
 msgstr ""
+
+#~ msgid "Nginx 1.3+"
+#~ msgstr "Nginx 1.3+"
+
+#~ msgid "Apache 2.2+"
+#~ msgstr "Apache 2.2+"
 
 #~ msgid ""
 #~ "After selecting your language you want to translate to, a good starting "

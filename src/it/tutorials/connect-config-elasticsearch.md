@@ -69,9 +69,9 @@ zammad run rake zammad:searchindex:rebuild[8]
 
 ## Impostazioni opzionali
 
-We collected some useful settings you may want to apply. For further
-information please have a look at [Elastic's
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
+Abbiamo raccolto alcune impostazioni utili che potresti voler applicare. Per
+ulteriori informazioni, consulta la [documentazione di
+Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
 ### Namespacing dell'indice
 
@@ -102,10 +102,10 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 
 ### Asciifold
 
-By default, the [Asciifold feature of
+Per impostazione predefinita, la [funzionalità Asciifold di
 Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
-is enabled. This can be useful if you deal with text which includes
-diacritics and/or umlauts.
+è abilitata. Questo può essere utile se lavori con testo che include
+diacritici e/o umlaut.
 
 Nel caso tu abbia bisogno di una ricerca più precisa, puoi disattivarla
 tramite [console Rails](/it/reference/rails-commands#disabilita-asciifold).
@@ -113,24 +113,24 @@ tramite [console Rails](/it/reference/rails-commands#disabilita-asciifold).
 ## Risoluzione problemi
 
 :::tip
-Troubleshooting unsuccessful or issue not described?
+Risoluzione dei problemi non riuscita o problema non descritto?
 
-If you can't solve your issue using the provided troubleshooting steps
-or can't find your particular issue described here, feel free to
-[ask the community](https://community.zammad.org){target=_blank} for technical
-assistance.
+Se non riesci a risolvere il tuo problema utilizzando i passaggi di troubleshooting forniti
+o non trovi il tuo problema specifico descritto qui, sentiti libero di
+[chiedere alla community](https://community.zammad.org){target=_blank} assistenza tecnica.
 :::
 
 ### Dati mancanti dall'interfaccia web / Dati di ricerca mancanti o incompleti
 
-A commonly reported issue is data missing from the Web-UI. This could be
-tickets, articles, users or anything else [indexed by
-Elasticsearch](/en/reference/es-indexed-attributes)  and can be caused by
-missing or incomplete indexes.
+Un problema comunemente segnalato è la mancanza di dati nella Web-UI. Questo
+può riguardare ticket, articoli, utenti o qualsiasi altra cosa [indicizzata
+da Elasticsearch](/en/reference/es-indexed-attributes) e può essere causato
+da indici mancanti o incompleti.
 
-If you are experiencing this issue and installed Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch), please follow
-these steps to make sure Elasticsearch is working correctly.
+Se stai riscontrando questo problema e hai installato Elasticsearch seguendo
+la nostra [guida di installazione](/en/tutorials/install-elasticsearch),
+segui questi passaggi per assicurarti che Elasticsearch funzioni
+correttamente.
 
 #### Passo 1: Verifica che Elasticsearch sia in esecuzione
 
@@ -153,9 +153,9 @@ sudo systemctl restart elasticsearch
 ```
 
 ::: warning
-If this fails, your Elasticsearch installation is probably broken.
-Try completely purging and reinstalling Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch).
+Se questo fallisce, è probabile che la tua installazione di Elasticsearch sia danneggiata.
+Prova a eliminare completamente e reinstallare Elasticsearch seguendo
+la nostra [guida di installazione](/en/tutorials/install-elasticsearch).
 :::
 
 #### Passo 2: Verifica che Zammad possa accedere a Elasticsearch e ricostruisci gli indici
@@ -180,10 +180,10 @@ Creating pi
 A seconda delle prestazioni del sistema e della quantità di dati, questo può
 richiedere del tempo per completarsi.
 
-If this fails or throws an error, there might be something else wrong with
-your installation. Make sure you followed the complete Elasticsearch set up
-and integration procedure according to our [installation
-guide](/en/tutorials/install-elasticsearch).
+Se questo fallisce o genera un errore, potrebbe esserci qualcos’altro che
+non va nella tua installazione. Assicurati di aver seguito l’intera
+procedura di configurazione e integrazione di Elasticsearch secondo la
+nostra [guida di installazione](/en/tutorials/install-elasticsearch).
 
 ::: tip
 In molte situazioni in cui non hai successo con i passaggi sopra, potresti

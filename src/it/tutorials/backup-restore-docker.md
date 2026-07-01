@@ -8,22 +8,22 @@ title: 'Backup e ripristino (Docker)'
 Questa sezione mostra alcune nozioni di base sul processo di backup e
 ripristino per una distribuzione Docker Compose.
 
-If you are familiar with volume based backup and restore procedures in
-Docker, and perhaps already use a different method or tool, then you can
-keep using it. A backup would typically mean shutting down the stack to
-ensure all in-memory files get written to disk, then backing up the volume
-contents, and then starting the stack again. When using such method, you can
-consider using the [disable-backup-service
-scenario](/en/reference/docker-compose-scenarios) so that the built-in
-backup and restore mechanism of Zammad is not activated.
+Se hai familiarità con le procedure di backup e ripristino basate su volumi
+in Docker, e magari utilizzi già un metodo o uno strumento diverso, puoi
+continuare a usarlo. Un backup in genere significa spegnere lo stack per
+assicurarsi che tutti i file in memoria vengano scritti su disco, quindi
+eseguire il backup dei contenuti del volume e infine riavviare lo
+stack. Quando utilizzi questo metodo, puoi considerare l’uso dello scenario
+[disable-backup-service](/en/reference/docker-compose-scenarios) in modo che
+il meccanismo integrato di backup e ripristino di Zammad non venga attivato.
 
 Il resto di questa pagina descrive il meccanismo di backup e ripristino
 integrato dello stack Docker di Zammad.
 
-If you're familiar with Docker, the sections below include the information
-you'll need. The [Docker file handling](/en/tutorials/docker-file-handling)
-page covers some examples about how to handle the backup files and to copy
-it into a Docker volume to restore it.
+Se hai familiarità con Docker, le sezioni seguenti includono le informazioni
+di cui avrai bisogno. La pagina [Docker file
+handling](/en/tutorials/docker-file-handling) copre alcuni esempi su come
+gestire i file di backup e copiarli in un volume Docker per ripristinarli.
 
 ## Backup
 

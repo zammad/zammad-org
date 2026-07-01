@@ -37,8 +37,8 @@ impostazioni proxy. Regola il valore.
   ```
 
 `ES_JAVA_OPTS`
-: Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
-  during the operation. However, there can be cases where this is needed. Example:
+: Variabile per impostare un proxy per Elasticsearch. Per impostazione predefinita, Elasticsearch non comunica con sistemi esterni
+  durante il funzionamento. Tuttavia, possono esserci casi in cui ciò è necessario. Esempio:
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=
@@ -54,14 +54,14 @@ A seconda del tuo ambiente, potresti voler usare le varianti minuscole delle var
 Durante l'installazione e il funzionamento di Zammad, sono necessarie alcune
 connessioni a servizi online.
 
-| Address                      | Comment                                               |
+| [Address]                                        | Comment                                               |
 |------------------------------|-------------------------------------------------------|
-| dl.packager.io               | Download of OS package (package installation)         |
-| go.packager.io               | As above; new package hosting service                 |
-| geo.zammad.com               | Used for geo data                                     |
-| google.com                   | Download of feast days for the calendar               |
-| index.rubygems.org           | Download of gems for ruby                             |
-| registry.npmjs.org           | Download of js dependencies                           |
+| dl.packager.io               | Download del pacchetto OS (installazione del pacchetto) |
+| go.packager.io               | Come sopra; nuovo servizio di hosting dei pacchetti     |
+| geo.zammad.com               | Utilizzato per i dati geografici                        |
+| google.com                   | Download dei giorni festivi per il calendario           |
+| index.rubygems.org           | Download delle gem per Ruby                             |
+| registry.npmjs.org           | Download delle dipendenze JS                            |
 
 Puoi usare uno script per controllare lo stato di connessione del tuo
 sistema. Cerca di connettersi a.

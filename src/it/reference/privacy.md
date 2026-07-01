@@ -20,17 +20,18 @@ o utenti.
 Per abilitare l'eliminazione **automatica** dei ticket dopo un dato intervallo,
 usa lo scheduler di Zammad.
 
-To **manually** delete users and all their associated tickets (e.g. in
-compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/rails-commands#deleting-records).
+Per eliminare **manualmente** gli utenti e tutti i ticket a loro associati (ad esempio in
+conformità con una richiesta di “Diritto all’oblio” ai sensi del GDPR), puoi utilizzare
+le funzioni per la privacy dei dati nel pannello di amministrazione sotto _Sistema > Privacy dei dati_
+oppure [utilizzare la console](/en/reference/rails-commands#deleting-records).
 
 ### Sessioni chat
 
-Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later. IP address logs for chat sessions can be
-deleted manually by following the [steps from the rails console
-page](/en/reference/rails-commands#remove-ip-address-logs).
+Una volta che una sessione di chat è stata contrassegnata come **chiusa**,
+viene programmata per l’eliminazione automatica dopo 12 mesi. I log degli
+indirizzi IP delle sessioni di chat possono essere eliminati manualmente
+seguendo i [passaggi indicati nella pagina della console
+Rails](/en/reference/rails-commands#remove-ip-address-logs).
 
 ### Registro chiamante CTI
 
@@ -69,13 +70,13 @@ Zammad utilizza servizi web di terze parti per determinate funzioni, il che sign
 che i dati utente possono.
 
 ::: info
-By default, the third party services that Zammad relies on are mostly
-ones hosted and managed by the Zammad Foundation itself, but Zammad
-can be extended to interface with other services instead.
+Per impostazione predefinita, i servizi di terze parti su cui Zammad si basa sono per lo più
+quelli ospitati e gestiti direttamente dalla Zammad Foundation, ma Zammad
+può essere esteso per interfacciarsi con altri servizi.
 
-The source code for these third party service integrations can be
-found in
-[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+Il codice sorgente per queste integrazioni con servizi di terze parti si trova
+nel
+[nostro repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
 ### Immagini
@@ -104,9 +105,10 @@ in base al browser e.
 
 ### Geolocalizzazione
 
-Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned
-it off. If you provide an address (or parts of an address) in a user object,
-there is a lookup of coordinates from OSM which are stored in Zammad's
-database. Have a look at their [privacy
-policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for
-more information.
+Il servizio di geolocalizzazione di Zammad si basa su OpenStreetMap (OSM) a
+meno che tu non lo abbia disattivato. Se fornisci un indirizzo (o parti di
+un indirizzo) in un oggetto utente, viene effettuata una ricerca delle
+coordinate tramite OSM che vengono memorizzate nel database di Zammad. Dai
+un’occhiata alla loro [informativa sulla
+privacy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} per
+maggiori informazioni.

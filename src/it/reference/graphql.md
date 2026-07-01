@@ -7,14 +7,14 @@ title: 'API GraphQL'
 
 ## Introduzione
 
-In addition to Zammad's [REST API](rest-api/intro), you can fetch,
-manipulate and create data via the powerful and open-source [GraphQL
-API](https://graphql.org/) too.
+Oltre alla [REST API](rest-api/intro) di Zammad, puoi anche recuperare,
+manipolare e creare dati tramite la potente e open‑source [GraphQL
+API](https://graphql.org/).
 
-This documentation isn't intended to cover everything about GraphQL. It
-should give you a basic understanding about how you can fetch and
-create/manipulate data to build upon. For a comprehensive guide, have a look
-at [GraphQL's documentation](https://graphql.org/learn/).
+Questa documentazione non ha lo scopo di coprire tutto ciò che riguarda
+GraphQL. Dovrebbe darti una comprensione di base su come puoi recuperare e
+creare/manipolare dati su cui costruire. Per una guida completa, dai
+un’occhiata alla [documentazione di GraphQL](https://graphql.org/learn/).
 
 GraphQL è usato da molti servizi web, anche grandi. È diventato una sorta di
 standard del settore.
@@ -29,11 +29,11 @@ semplice richiesta e ricevere dati.
 
 ### Client
 
-To send request and receive responses, you need an API client. If you are
-already dealing with APIs, skip this section.  If you are new to the topic,
-search for a client which fits your needs. Depending on your operating
-system, you may have different options. Some examples for popular clients
-with GraphQL support are:
+Per inviare richieste e ricevere risposte, hai bisogno di un client API. Se
+già lavori con le API, puoi saltare questa sezione.
+  Se sei nuovo sull’argomento, cerca un client che si adatti alle tue
+esigenze. A seconda del tuo sistema operativo, potresti avere diverse
+opzioni. Alcuni esempi di client popolari con supporto GraphQL sono:
 
 - [Bruno](https://www.usebruno.com/downloads)
 - [Insomnia](https://insomnia.rest/download)
@@ -41,10 +41,10 @@ with GraphQL support are:
 
 ### Autenticazione
 
-If not already present, create a [token in the Zammad
-profile](/en/documentation/use/user-profile#token-access) you want to use as
-API user. Depending what you want to achieve via API, set the permissions
-accordingly.
+Se non già presente, crea un [token nel profilo
+Zammad](/en/documentation/use/user-profile#token-access) che vuoi utilizzare
+come utente API. A seconda di ciò che vuoi ottenere tramite API, imposta le
+autorizzazioni di conseguenza.
 
 Assicurati di copiarlo prima di chiudere la finestra di dialogo perché non
 potrai visualizzarlo di nuovo.
@@ -60,9 +60,9 @@ Apri il tuo client API e configuralo.
   file.
 
 ::: warning
-The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the
-environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is
-**not recommended**.
+L’introspezione dello schema è abilitata per Zammad nell’ambiente di sviluppo. Per abilitarla nei sistemi di produzione, imposta la variabile
+d’ambiente `ZAMMAD_GRAPHQL_INTROSPECTION` su `true`. Farlo aumenta la potenziale superficie di attacco ed è
+**sconsigliato**.
 :::
 
 Fai clic su dettagli per guardare uno screencast che mostra i passaggi di
@@ -100,10 +100,10 @@ sezione delle variabili.
 }
 ```
 
-The value above is in the global ID format of Zammad's GraphQL
-implementation. Depending on which object type you want to deal with,
-replace the `User` by another object like `Ticket`, `Organization`, `Group`,
-etc. Zammad expects a numeric value as ID.
+Il valore sopra è nel formato ID globale dell’implementazione GraphQL di
+Zammad. A seconda del tipo di oggetto con cui vuoi lavorare, sostituisci
+`User` con un altro oggetto come `Ticket`, `Organization`, `Group`,
+ecc. Zammad si aspetta un valore numerico come ID.
 
 A partire dalla riga 4 nel blocco di codice sopra c'è la richiesta vera e
 propria. Questo semplice esempio.

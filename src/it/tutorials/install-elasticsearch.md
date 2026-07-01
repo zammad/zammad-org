@@ -7,12 +7,12 @@ title: 'Installa Elasticsearch 9'
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-This guide shows a simple standard installation of Elasticsearch 9. The
-intention is to get you up and running quickly.  However, in case you need a
-more advanced configuration or face any issues, have a look at the [official
-Elasticsearch installation
-documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Adapt it wherever needed in case your use-case differs.
+Questa guida mostra una semplice installazione standard di Elasticsearch
+9. L’intenzione è quella di permetterti di iniziare rapidamente. Tuttavia,
+nel caso tu abbia bisogno di una configurazione più avanzata o riscontri
+problemi, dai un’occhiata alla [documentazione ufficiale di installazione di
+Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
+Adattala dove necessario nel caso il tuo caso d’uso sia diverso.
 
 ## Installazione
 
@@ -68,10 +68,10 @@ essere indicizzata da Elasticsearch.
 http.max_content_length: 400mb
 ```
 
-Additional configuration is out of scope of this documentation. In case your
-scenario needs additional configuration, have a look at [Elastic’s
-configuration
-reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
+Una configurazione aggiuntiva è al di fuori dell’ambito di questa
+documentazione. Nel caso il tuo scenario richieda una configurazione
+aggiuntiva, consulta il [reference di configurazione di
+Elastic](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
 
 ## Avvia e abilita Elasticsearch
 
@@ -81,7 +81,7 @@ sudo systemctl enable elasticsearch.service --now
 
 ## Prossimi passi
 
-Go on with the [installation of
-Zammad](/en/get-started/installation/package#add-zammad-repository). After
-the installation of Zammad is completed, you can [connect Zammad with
+Procedi con l’[installazione di
+Zammad](/en/get-started/installation/package#add-zammad-repository). Dopo
+che l'installazione di Zammad è stata completata, puoi [collegare Zammad con
 Elasticsearch](/en/tutorials/connect-config-elasticsearch).

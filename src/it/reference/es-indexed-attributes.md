@@ -287,8 +287,8 @@ Esempi: `1010138`, `202006231010138`
 
 ### `organization`
 
-Details of the customer organization of the ticket. Have a look at the
-[organization section](#organization-2) for more information.
+Dettagli dell’organizzazione del cliente del ticket. Dai un’occhiata alla
+[sezione sull’organizzazione](#organization-2) per maggiori informazioni.
 
 ::: details
 
@@ -333,8 +333,8 @@ nel tuo sistema.
 
 ### `priority`
 
-Details of the priority state of the ticket. Have a look at the [priority
-section](#ticket-priority) for more information.
+Dettagli dello stato di priorità del ticket. Dai un’occhiata alla [sezione
+sulla priorità](#ticket-priority) per maggiori informazioni.
 
 ::: details
 
@@ -851,8 +851,8 @@ Esempi: `""`, `"Some text."`
 
 ### `organization`
 
-Details of the organization, the user is member of. Have a look at the
-[organization section](#organization-2) for more information.
+Dettagli dell’organizzazione di cui l’utente è membro. Dai un’occhiata alla
+[sezione sull’organizzazione](#organization-2) per maggiori informazioni.
 
 ::: details
 
@@ -1021,8 +1021,8 @@ Esempio: `1`
 
 ### `members`
 
-Array with details of each user who is a member of the organization. Have a
-look at the [user section](#user) for more information.
+Array con i dettagli di ogni utente che è membro dell’organizzazione. Dai
+un’occhiata alla [sezione utente](#user) per maggiori informazioni.
 
 ::: details
 
