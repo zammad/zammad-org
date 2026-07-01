@@ -366,10 +366,10 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad speichert seinen Inhalt in einer Datenbank. Das unterstützte
-Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
-13 oder neuer. Wenn kein PostgreSQL-Server gefunden wird, wird er
-automatisch während der Paketinstallation installiert.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
+PostgreSQL server could be detected, it will be installed automatically
+during the package installation.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
@@ -380,10 +380,11 @@ nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 
 ### Reverse Proxy
 
-Die folgenden Reverse-Proxys werden unterstützt:
+The following reverse proxies are supported in their currently maintained
+versions:
 
-- Nginx 1.3+
-- Apache 2.2+
+- Nginx
+- Apache
 
 Das Installationsskript versucht, während der Installation einen Apache oder
 Nginx zu erkennen. Falls keiner gefunden wird, wird automatisch Nginx
@@ -392,13 +393,12 @@ installiert.  Eine Grundkonfiguration finden Sie in unserem
 
 ### Redis
 
-[Redis](https://redis.io/) wird für die Echtzeitkommunikation über Websocket
-benötigt. Zammad benötigt Redis 6 oder neuer. Es wird automatisch
-installiert (Paket) oder ist im Stack (Docker Compose) enthalten mit einer
-funktionierenden Konfiguration.  Die Installation und Konfiguration ist
-allerdings nicht Gegenstand dieser Dokumentation. Bitte folgen Sie den
-offiziellen Anleitungen und stellen Sie sicher, dass Sie es auf sichere
-Weise einrichten.
+[Redis](https://redis.io/) is required for realtime communication via web
+socket. Zammad requires Redis 7 or newer.  It gets installed automatically
+(package) or is included in the stack (Docker Compose) with a working
+configuration.  However, the installation and configuration is out of scope
+of this documentation. Please follow the official guides and ensure to set
+it up in a secure way.
 
 Die verfügbaren Umgebungsvariablen für Standard- und Sentinel-Setups sind
 auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt.

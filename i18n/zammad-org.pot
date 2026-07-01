@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-01 07:34+0200\n"
+"POT-Creation-Date: 2026-07-01 14:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8968,6 +8968,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:374
 #: src/en/reference/environment-variables.md:185
 #: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
@@ -8976,7 +8977,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:353
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:379
 #, markdown-text, no-wrap
 msgid "Redis"
 msgstr ""
@@ -8992,7 +8993,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
-"[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no "
+"[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no "
 "PostgreSQL server could be detected, it will be installed automatically "
 "during the package installation."
 msgstr ""
@@ -9017,25 +9018,22 @@ msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:370
+#: src/en/get-started/installation/package.md:371
 #, markdown-text
-msgid "The following reverse proxies are supported:"
+msgid ""
+"The following reverse proxies are supported in their currently maintained "
+"versions:"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:373
-#, markdown-text
-msgid "Nginx 1.3+"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:373
-#, markdown-text
-msgid "Apache 2.2+"
+#. type: Title ###
+#: src/en/get-started/installation/package.md:374
+#: src/en/tutorials/webserver-config.md:159
+#, markdown-text, no-wrap
+msgid "Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:377
+#: src/en/get-started/installation/package.md:378
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -9045,11 +9043,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:384
+#: src/en/get-started/installation/package.md:385
 #, markdown-text
 msgid ""
 "[Redis](https://redis.io/) is required for realtime communication via web "
-"socket. Zammad requires Redis 6 or newer.  It gets installed automatically "
+"socket. Zammad requires Redis 7 or newer.  It gets installed automatically "
 "(package) or is included in the stack (Docker Compose) with a working "
 "configuration.  However, the installation and configuration is out of scope "
 "of this documentation. Please follow the official guides and ensure to set "
@@ -9057,7 +9055,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:388
 #, markdown-text
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
@@ -9065,7 +9063,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:388
+#: src/en/get-started/installation/package.md:389
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement "
@@ -9074,7 +9072,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:393
+#: src/en/get-started/installation/package.md:394
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -9082,7 +9080,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:401
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -9093,19 +9091,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:402
+#: src/en/get-started/installation/package.md:403
 #, markdown-text
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:405
 #, markdown-text
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:406
 #, no-wrap
 msgid ""
 "\n"
@@ -9125,13 +9123,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:422
+#: src/en/get-started/installation/package.md:423
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:426
+#: src/en/get-started/installation/package.md:427
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -9141,7 +9139,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:430
+#: src/en/get-started/installation/package.md:431
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -9152,7 +9150,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:434
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -9161,7 +9159,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:437
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -9170,13 +9168,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:437
+#: src/en/get-started/installation/package.md:438
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:442
+#: src/en/get-started/installation/package.md:443
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -29914,12 +29912,6 @@ msgstr ""
 msgid ""
 "After that, you should be greeted by our getting started wizard.  Go on with "
 "the [first steps in Zammad](/en/tutorials/first-steps)."
-msgstr ""
-
-#. type: Title ###
-#: src/en/tutorials/webserver-config.md:159
-#, markdown-text, no-wrap
-msgid "Apache"
 msgstr ""
 
 #. type: Title ####

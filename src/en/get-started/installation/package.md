@@ -354,7 +354,7 @@ installed.
 ### Database Server
 
 Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 13 or newer. If no PostgreSQL server could be detected, it
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no PostgreSQL server could be detected, it
 will be installed automatically during the package installation.
 
 ::: warning
@@ -366,10 +366,11 @@ not supported and may lead to errors during database migrations.
 
 ### Reverse Proxy
 
-The following reverse proxies are supported:
+The following reverse proxies are supported in their currently maintained
+versions:
 
-- Nginx 1.3+
-- Apache 2.2+
+- Nginx
+- Apache
 
 The installation script tries to detect a Apache or Nginx during the
 installation. In case none is found, Nginx is automatically installed.
@@ -377,7 +378,7 @@ You can find a basic example in [our Webserver configuration guide](/en/tutorial
 
 ### Redis
 
-[Redis](https://redis.io/) is required for realtime communication via web socket. Zammad requires Redis 6 or newer.
+[Redis](https://redis.io/) is required for realtime communication via web socket. Zammad requires Redis 7 or newer.
 It gets installed automatically (package) or is included in the stack (Docker Compose) with a working configuration.
 However, the installation and configuration is out of scope of this documentation. Please follow the official guides
 and ensure to set it up in a secure way.

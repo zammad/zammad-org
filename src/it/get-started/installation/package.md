@@ -326,10 +326,10 @@ installato automaticamente.
 
 ### Server database
 
-Zammad memorizza i suoi contenuti in un database. Il sistema di database
-supportato è [PostgreSQL](https://www.postgresql.org/){target=_blank}
-versione 13 o successiva. Se non viene rilevato alcun server PostgreSQL,
-verrà installato automaticamente durante l'installazione del pacchetto.
+Zammad stores its content in a database. The supported database system is
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
+PostgreSQL server could be detected, it will be installed automatically
+during the package installation.
 
 ::: warning
 Se utilizzi un software di pooling delle connessioni al database come PgBouncer, assicurati di utilizzare una modalità di pooling completamente compatibile con PostgreSQL. In genere, questa modalità viene chiamata "session connection pooling". Il connection pooling basato sulle transazioni non è supportato e potrebbe causare errori durante le migrazioni del database.
@@ -337,10 +337,11 @@ Se utilizzi un software di pooling delle connessioni al database come PgBouncer,
 
 ### Reverse proxy
 
-I seguenti reverse proxy sono supportati:
+The following reverse proxies are supported in their currently maintained
+versions:
 
-- Nginx 1.3+
-- Apache 2.2+
+- Nginx
+- Apache
 
 Lo script di installazione tenta di rilevare Apache o Nginx durante
 l'installazione. Se non ne trova nessuno, Nginx viene installato
@@ -349,13 +350,12 @@ configurazione del server web](/it/tutorials/webserver-config).
 
 ### Redis
 
-[Redis](https://redis.io/) è necessario per la comunicazione in tempo reale
-tramite WebSocket. Zammad richiede Redis 6 o versioni successive. Viene
-installato automaticamente (tramite pacchetto) oppure è incluso nello stack
-(Docker Compose) con una configurazione funzionante. Tuttavia,
-l'installazione e la configurazione esulano dall'ambito di questa
-documentazione. Si prega di seguire le guide ufficiali e di assicurarsi di
-configurarlo in modo sicuro.
+[Redis](https://redis.io/) is required for realtime communication via web
+socket. Zammad requires Redis 7 or newer.  It gets installed automatically
+(package) or is included in the stack (Docker Compose) with a working
+configuration.  However, the installation and configuration is out of scope
+of this documentation. Please follow the official guides and ensure to set
+it up in a secure way.
 
 Le variabili d'ambiente disponibili per le configurazioni standard e
 Sentinel sono brevemente menzionate nella pagina [Variabili
