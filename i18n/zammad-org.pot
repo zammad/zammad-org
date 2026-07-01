@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-26 08:27+0200\n"
+"POT-Creation-Date: 2026-07-01 07:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24390,12 +24390,29 @@ msgstr ""
 #: src/en/tutorials/backup-restore-docker.md:40
 #, markdown-text
 msgid ""
-"Start the stack. The restore process is triggered if the `restore` directory "
-"is detected and the backup files are in place."
+"Start the stack. The restore process is triggered in the ``zammad-backup`` "
+"service if the ``restore`` directory is detected and the backup files are in "
+"place."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/backup-restore-docker.md:41
+#, no-wrap
+msgid ""
+"   As a part of this process, the cache will be cleared and any "
+"pre-existing\n"
+"   Elasticsearch indexes will be dropped.\n"
+"   All other containers will be waiting for the restore to finish. When that "
+"is the case,\n"
+"   they will resume their normal operations, which includes an automatic "
+"Elasticsearch\n"
+"   reindexing (depending on the ENV variables). You can check the container "
+"logs for\n"
+"   details.\n"
 msgstr ""
 
 #. type: Bullet: '6. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:50
 #, markdown-text
 msgid ""
 "After the restore process has finished, the `restore` directory got "

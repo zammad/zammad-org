@@ -39,7 +39,18 @@ stack nonché alle 3 di ogni notte.
    filesystem attivata, dovresti.
 4. Copia o sposta i file di backup in `/var/tmp/zammad/restore/` all'interno
    del volume del container **zam
-5. Avvia lo stack. Il processo di ripristino viene attivato se la cartella
-   `restore` viene rilevata e.
+5. Start the stack. The restore process is triggered in the
+   ``zammad-backup`` service if the ``restore`` directory is detected and
+   the backup files are in place.
+
+   ::: info
+   As a part of this process, the cache will be cleared and any pre-existing
+   Elasticsearch indexes will be dropped.
+   All other containers will be waiting for the restore to finish. When that is the case,
+   they will resume their normal operations, which includes an automatic Elasticsearch
+   reindexing (depending on the ENV variables). You can check the container logs for
+   details.
+   :::
+
 6. Dopo che il processo di ripristino è terminato, la cartella `restore` è
    stata rinominata. Puoi tranquillamente.

@@ -53,8 +53,18 @@ unter `/var/tmp/zammad` gespeichert.
    dieser eingebauten Backup-Methode unterstützt. Kopieren Sie nicht die
    Dateien `latest_zammad_*.gz`, da sie auf einen für den
    Wiederherstellungsprozess unbekannten Ort verweisen.
-5. Starten Sie den Stack. Der Wiederherstellungsprozess wird angestoßen,
-   wenn das Verzeichnis `restore` erkannt wird und die Sicherungsdateien
-   vorhanden sind.
+5. Start the stack. The restore process is triggered in the
+   ``zammad-backup`` service if the ``restore`` directory is detected and
+   the backup files are in place.
+
+   ::: info
+   As a part of this process, the cache will be cleared and any pre-existing
+   Elasticsearch indexes will be dropped.
+   All other containers will be waiting for the restore to finish. When that is the case,
+   they will resume their normal operations, which includes an automatic Elasticsearch
+   reindexing (depending on the ENV variables). You can check the container logs for
+   details.
+   :::
+
 6. Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das
    Verzeichnis `restore` umbenannt. Sie können es jetzt löschen.
