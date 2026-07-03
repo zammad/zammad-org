@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mdit/plugin-icon':
-        specifier: ^0.24.0
-        version: 0.24.2(markdown-it@14.1.0)
+        specifier: ^1.0.0
+        version: 1.0.1(markdown-it@14.1.0)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -304,20 +304,20 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
-  '@mdit/helper@0.23.2':
-    resolution: {integrity: sha512-w4oja7kZYnkSiodfn4Neg1gmlIkvQtmCBJTLvLFOaET7xt8KomDNPQeumpGobQ9dWkXFqBKHlxjTYgroPH+CvA==}
-    engines: {node: '>= 20'}
+  '@mdit/helper@1.0.1':
+    resolution: {integrity: sha512-zAzShsRZmkqjuoOFg6/zTCYVpvghj9a30Cl/eOGkE0xzRJJJG8T18eqb2lgceQhjVLWHK02HNVkzyfNHc429lQ==}
+    engines: {node: '>=22'}
     peerDependencies:
-      markdown-it: ^14.1.0
+      markdown-it: ^14.2.0
     peerDependenciesMeta:
       markdown-it:
         optional: true
 
-  '@mdit/plugin-icon@0.24.2':
-    resolution: {integrity: sha512-20VVIIEH9RItrIaNfTruIbrWL/qDoeEdcDxzFHFULJFjdDpdDOUdfTiC5/u6T7FmbngMLfe1M7PoVW1apet1Gw==}
-    engines: {node: '>= 20'}
+  '@mdit/plugin-icon@1.0.1':
+    resolution: {integrity: sha512-As0tCXUJbO1j/f2I2czlko8WQjZGQDyFKY6aR+eHB01Sye/gXL0YVuTKoKt7qTsZQCt7u52C8l55zQiqdOsKzg==}
+    engines: {node: '>=22'}
     peerDependencies:
-      markdown-it: ^14.1.0
+      markdown-it: ^14.2.0
     peerDependenciesMeta:
       markdown-it:
         optional: true
@@ -1295,15 +1295,15 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@mdit/helper@0.23.2(markdown-it@14.1.0)':
+  '@mdit/helper@1.0.1(markdown-it@14.1.0)':
     dependencies:
       '@types/markdown-it': 14.1.2
     optionalDependencies:
       markdown-it: 14.1.0
 
-  '@mdit/plugin-icon@0.24.2(markdown-it@14.1.0)':
+  '@mdit/plugin-icon@1.0.1(markdown-it@14.1.0)':
     dependencies:
-      '@mdit/helper': 0.23.2(markdown-it@14.1.0)
+      '@mdit/helper': 1.0.1(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
     optionalDependencies:
       markdown-it: 14.1.0
