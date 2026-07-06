@@ -475,6 +475,39 @@ Mola
   internal:     false,
   created_at:   created_at,
   updated_at:   created_at,
+  preferences:  {
+    'security' => {
+      'type' => 'PGP',
+      'sign' => { 'success' => true, 'comment' => 'Successfully signed and verified.' },
+      'encryption' => { 'success' => true, 'comment' => 'Successfully encrypted.' },
+    }
+  },
+)
+
+# Second article on the demo ticket with security error states — captures
+# the ArticleBubbleSecurityWarning banner and fail-state icons for the
+# secure-email documentation screenshots.
+UserInfo.current_user_id = mola.id
+created_at = Time.zone.now - 30.minutes
+article = Ticket::Article.create(
+  ticket:       ticket6,
+  type:         Ticket::Article::Type.find_by(name: 'email'),
+  sender:       Ticket::Article::Sender.find_by(name: 'Customer'),
+  from:         "#{mola.fullname} <#{mola.email}>",
+  to:           'support@fastlane.inc',
+  subject:      'Re: My battery is dead / order 110572',
+  body:         "Any update on this?\n",
+  content_type: 'text/plain',
+  internal:     false,
+  created_at:   created_at,
+  updated_at:   created_at,
+  preferences:  {
+    'security' => {
+      'type' => 'PGP',
+      'sign' => { 'success' => false, 'comment' => 'Unable to find certificate for validation' },
+      'encryption' => { 'success' => false, 'comment' => 'Unable to find private key to decrypt' },
+    }
+  },
 )
 
 #another ticket for the user detail stats
@@ -882,6 +915,27 @@ SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection_att
 Setting.set('ui_ticket_add_article_hint', {
       :"note-public"    => "You are writing a |public note|.",
    })
+
+puts 'Enabling PGP integration for secure email screenshots...'
+
+# Enable PGP so the Encrypt/Sign buttons show up in the reply editor and the
+# security status badges show up on ticket articles. Dummy keys below are for
+# documentation screenshots only, never use them for anything else.
+Setting.set('pgp_integration', true)
+
+UserInfo.current_user_id = 1
+
+# Private key for the support group (ticket 7's group email), so agent replies
+# can be signed and the "Sign" button is available.
+PGPKey.create!(
+  key: File.read("#{__dir__}/assets/pgp/support-fastlane-inc.asc"),
+)
+
+# Public key for the customer on ticket 7, so agent replies can be encrypted
+# and the "Encrypt" button is available.
+PGPKey.create!(
+  key: File.read("#{__dir__}/assets/pgp/mola-babangida-xz.pub.asc"),
+)
 
 # Disable import mode at the end of the seeding process so users can create new tickets.
 Setting.set('import_mode', false)

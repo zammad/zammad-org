@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-01 14:03+0000\n"
+"POT-Creation-Date: 2026-07-06 11:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -1510,7 +1498,7 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
+#: src/en/documentation/introduction.md:1
 #, no-wrap
 msgid "/en/documentation/manage-zammad/start"
 msgstr ""
@@ -6137,6 +6125,336 @@ msgstr ""
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr ""
 
+#. type: Title #
+#: src/en/documentation/use/guides/secure-email.md:1
+#: src/en/documentation/use/guides/secure-email.md:6
+#, markdown-text, no-wrap
+msgid "Secure Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:9
+#, markdown-text
+msgid "Zammad supports two systems for secure email communication:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/secure-email.md:12
+#, markdown-text
+msgid "**PGP** (Pretty Good Privacy)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/secure-email.md:12
+#, markdown-text
+msgid "**S/MIME** (Secure/Multipurpose Internet Mail Extensions)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:14
+#, markdown-text
+msgid ""
+"Both systems allow you to exchange **signed** and **encrypted** messages "
+"with others."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/secure-email.md:15
+#: src/en/get-started/installation/docker.md:18
+#: src/en/get-started/installation/prerequisites.md:1
+#: src/en/get-started/installation/prerequisites.md:6
+#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
+#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
+#: src/en/tutorials/reporting-grafana.md:26
+#, markdown-text, no-wrap
+msgid "Prerequisites"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/secure-email.md:21
+#, markdown-text
+msgid ""
+"Both features are optional. If you don't see the ``Encrypt`` and ``Sign`` "
+"buttons in the email article editor, your administrator has not activated "
+"them yet."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/secure-email.md:21
+#, markdown-text
+msgid "PGP and S/MIME only work if the other party is using them too."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/secure-email.md:21
+#, markdown-text
+msgid ""
+"Your administrator is responsible for adding all necessary certificates and "
+"keys in Zammad's admin settings."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:27
+#, markdown-text
+msgid ""
+"If these requirements are met, the feature should work out of the box and "
+"Zammad encrypts, decrypts, signs and verifies signatures of emails if "
+"possible. Your admin can define a default behavior for each group. However, "
+"you can override the default for each outgoing email article on your own by "
+"switching encryption and signing on or off (see example in screenshot below "
+"with turned off encryption and activated signing). Read on to learn more "
+"about it and to find common errors."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:29
+#, markdown-text
+msgid ""
+"![Screenshot showing outgoing email which just gets signed and not "
+"encrypted](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/secure-email.md:30
+#, markdown-text, no-wrap
+msgid "Signing & Encryption"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:35
+#, markdown-text, no-wrap
+msgid ""
+"Signing\n"
+": Signing is a proof that a message has not been manipulated on its way. It "
+"guarantees message **integrity** and\n"
+"  **authenticity**.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:39
+#, markdown-text, no-wrap
+msgid ""
+"Encryption\n"
+": Encryption scrambles a message so that it can only be unscrambled by the "
+"intended recipient. It guarantees message\n"
+"  **privacy** and **data security**.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/secure-email.md:40
+#, markdown-text, no-wrap
+msgid "Incoming Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:44
+#, markdown-text
+msgid ""
+"The lock and check icons at the top of a message indicate its encryption and "
+"signing status. Click on an incoming message article to expand its "
+"details. In the details, you can hover over the security status to see more "
+"information."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:46
+#, markdown-text
+msgid ""
+"![Screenshot showing Encrypted and Signed status icons on an incoming email "
+"article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:47
+#, markdown-text, no-wrap
+msgid "Status Icons for Incoming Emails"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:55
+#, markdown-text, no-wrap
+msgid ""
+"| Icon | Meaning |\n"
+"|---|---|\n"
+"| ![Encrypted "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) "
+"| **Encrypted for you.** Even if intercepted by a third party, they will not "
+"be able to read it. |\n"
+"| ![Not encrypted "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) "
+"| **Cannot be decrypted.** Zammad lacks the required key to decrypt this "
+"message. |\n"
+"| ![Signed "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) "
+"| **Successfully verified.** You can be confident it is authentic and the "
+"content has not been modified. |\n"
+"| ![Not signed "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) "
+"| **Signature verification failed.** Hover over the icon for more "
+"information. |\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/secure-email.md:56
+#, markdown-text, no-wrap
+msgid "Outgoing Email"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:60
+#, markdown-text
+msgid ""
+"Use the ``Encrypt`` and ``Sign`` buttons to turn on encryption and signing "
+"for outgoing emails. They are available for new tickets and replies. Hover "
+"over the buttons to show details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:62
+#, markdown-text
+msgid ""
+"![Screenshot showing the Encrypt and Sign toggle buttons in the email reply "
+"editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/secure-email.md:63
+#, no-wrap
+msgid "Outgoing emails can only be encrypted for a single recipient.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:67
+#, markdown-text, no-wrap
+msgid "Status Icons for Outgoing Emails"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:75
+#, markdown-text, no-wrap
+msgid ""
+"| Icon | Meaning |\n"
+"|---|---|\n"
+"| ![Encrypted "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) "
+"| **Will be encrypted.** Even if intercepted by a third party, they will not "
+"be able to read it. |\n"
+"| ![Not encrypted "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) "
+"| **Will not be encrypted.** |\n"
+"| ![Signed "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) "
+"| **Will be signed.** Recipients can verify that it came from you and that "
+"the content has not been modified. |\n"
+"| ![Not signed "
+"icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) "
+"| **Will not be signed.** |\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/secure-email.md:76
+#: src/en/tutorials/connect-config-elasticsearch.md:115
+#: src/en/tutorials/sso-kerberos.md:553
+#, markdown-text, no-wrap
+msgid "Troubleshooting"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:78
+#, markdown-text, no-wrap
+msgid "Sign: Unable to find certificate for validation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:81
+#, markdown-text
+msgid ""
+"![Screenshot showing Security error warning banner on an "
+"article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:84
+#, markdown-text
+msgid ""
+"Without the sender's certificate, Zammad cannot verify the message "
+"signature. Ask your administrator to add the sender's certificate to "
+"Zammad's certificate store."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/secure-email.md:85
+#, no-wrap
+msgid ""
+"Always verify certificates in-person or over the phone! The whole point of "
+"signature verification is to alert you when\n"
+"someone is trying to pretend to be someone they are not. Never accept a "
+"certificate from someone online without\n"
+"verifying it first.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:91
+#, markdown-text, no-wrap
+msgid "Encryption: Unable to find private key to decrypt"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:98
+#, markdown-text
+msgid ""
+"This message was encrypted with a certificate that does not match any on "
+"file.  Without a matching private key, Zammad cannot decrypt the message.  "
+"Ask your administrator to verify your organization's private key in Zammad's "
+"certificate store, and ask the sender to double-check the public key they "
+"used to encrypt the message."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:99
+#, markdown-text, no-wrap
+msgid "The ``Encrypt`` button is disabled"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:102
+#, markdown-text
+msgid ""
+"Ask your administrator to add the recipient's certificate to Zammad's "
+"certificate store."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:103
+#, markdown-text, no-wrap
+msgid "The ``Sign`` button is disabled"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:106
+#, markdown-text
+msgid ""
+"Ask your administrator to verify your organization's private key in Zammad's "
+"certificate store."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/secure-email.md:107
+#, markdown-text, no-wrap
+msgid "Multiple Security Types configured"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/secure-email.md:113
+#, markdown-text
+msgid ""
+"You might see both ``PGP`` and ``S/MIME`` buttons. This happens when both "
+"systems are configured in your system and a customer is using both as "
+"well. In this case, you have an additional button to switch between PGP and "
+"S/MIME security types. Just pick one, make sure encryption and signing is "
+"enabled and send your email."
+msgstr ""
+
 #. type: Title ###
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #: src/en/documentation/use/guides/two-factor-auth.md:6
@@ -6662,6 +6980,12 @@ msgstr ""
 #: src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "As an administrator, head over to the Manage Zammad section."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features link
+#: src/en/documentation/use/start.md:1
+#, no-wrap
+msgid "/en/documentation/manage/start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title
@@ -7980,17 +8304,6 @@ msgid ""
 "problems. If you choose to run Zammad via Docker, support is only provided "
 "for\n"
 "the Zammad application.\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/get-started/installation/docker.md:18
-#: src/en/get-started/installation/prerequisites.md:1
-#: src/en/get-started/installation/prerequisites.md:6
-#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
-#: src/en/tutorials/reporting-grafana.md:26
-#, markdown-text, no-wrap
-msgid "Prerequisites"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -23575,83 +23888,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -23837,6 +24073,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24280,6 +24593,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -25476,13 +25801,6 @@ msgstr ""
 msgid ""
 "In case you need a more exact search, you can turn it off via [Rails "
 "console](/en/reference/rails-commands#disable-asciifold)."
-msgstr ""
-
-#. type: Title ##
-#: src/en/tutorials/connect-config-elasticsearch.md:115
-#: src/en/tutorials/sso-kerberos.md:553
-#, markdown-text, no-wrap
-msgid "Troubleshooting"
 msgstr ""
 
 #. type: Fenced div block (tip)

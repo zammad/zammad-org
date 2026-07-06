@@ -13,7 +13,7 @@ features:
   - 
     details: 'Schauen Sie sich als Administrator den Bereich "Zammad verwalten" an.'
     icon: 🧑‍🔧
-    link: /de/documentation/manage-zammad/start
+    link: /en/documentation/manage/start
     title: Administrator
 order: 1
 title: Start

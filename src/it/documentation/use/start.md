@@ -13,7 +13,7 @@ features:
   - 
     details: 'Come amministratore, vai alla sezione Gestisci Zammad.'
     icon: 🧑‍🔧
-    link: /it/documentation/manage-zammad/start
+    link: /en/documentation/manage/start
     title: Amministratore
 order: 1
 title: Inizia
