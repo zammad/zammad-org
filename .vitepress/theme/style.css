@@ -327,6 +327,24 @@
 }
 
 /**
+ * Scroll margin for hash-anchor targets
+ * Prevents the fixed header from covering the section heading.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-scroll-margin-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 12px);
+}
+
+/**
+ * Apply scroll margin to all anchorable elements in the doc content.
+ * This prevents the fixed header bar from covering e.g. #basics.
+ * -------------------------------------------------------------------------- */
+
+.vp-doc [id] {
+  scroll-margin-top: var(--vp-scroll-margin-top);
+}
+
+/**
  * Component: Header Anchor
  * -------------------------------------------------------------------------- */
 
