@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 11:24+0200\n"
+"POT-Creation-Date: 2026-07-07 09:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1498,9 +1498,9 @@ msgid "Find out how to configure Zammad and connect it with remote systems."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/introduction.md:1
+#: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
-msgid "/en/documentation/manage-zammad/start"
+msgid "/en/documentation/manage/start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title
@@ -6980,12 +6980,6 @@ msgstr ""
 #: src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "As an administrator, head over to the Manage Zammad section."
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features link
-#: src/en/documentation/use/start.md:1
-#, no-wrap
-msgid "/en/documentation/manage/start"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features title

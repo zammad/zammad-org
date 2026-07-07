@@ -8,7 +8,7 @@ features:
   - 
     details: 'Сазнајте како да подесите Zammad и повежете га са удаљеним системима.'
     icon: 🧑‍🔧
-    link: /sr/documentation/manage-zammad/start
+    link: /en/documentation/manage/start
     title: 'Администраторска документација'
   - 
     details: 'Сазнајте о важној терминологији и концептима који се користе у Zammad-у.'

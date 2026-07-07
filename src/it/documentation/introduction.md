@@ -8,7 +8,7 @@ features:
   - 
     details: 'Scopri come configurare Zammad e collegarlo a sistemi remoti.'
     icon: 🧑‍🔧
-    link: /it/documentation/manage-zammad/start
+    link: /en/documentation/manage/start
     title: 'Documentazione amministratore'
   - 
     details: 'Scopri i termini e i concetti importanti usati in Zammad.'
