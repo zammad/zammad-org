@@ -47,7 +47,7 @@ und ist möglicherweise in Ihrem System nicht verfügbar.
 curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
-:::warning
+::: warning
 Wir raten dringend von der Verwendung der Basisauthentifizierung ab. Verwenden Sie
 Zugangs-Token, wann immer möglich!
 :::
@@ -106,7 +106,7 @@ Beispiele, eines für ein Ticket und eines für einen Benutzer:
 **Benutzer Nutzlast:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -122,7 +122,7 @@ Beispiele, eines für ein Ticket und eines für einen Benutzer:
 **Ticket Nutzlast:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -135,7 +135,7 @@ Beispiele, eines für ein Ticket und eines für einen Benutzer:
 :::
 ::::
 
-:::tip
+::: tip
 Bitte beachten Sie, dass Core Workflows den Zugriff auf Attribute oder
 Werte beschränken können.
 :::
@@ -145,7 +145,7 @@ Werte beschränken können.
 Da Zammad die Anzahl der zurückgegebenen Objekte aus Leistungsgründen
 begrenzt, müssen Sie an einigen Stellen eine Paginierung verwenden.
 
-:::info
+::: info
 **Anzahl der zurückgegebenen Objekte:** Zammad hat eine fest programmierte Grenze für die
 maximal zurückgegebenen Objekte. Sie können diese Grenze nicht überschreiten.
 
@@ -309,7 +309,7 @@ aufsteigender und absteigender Reihenfolge zu wechseln.
 
 Die Richtungen sind: `asc` und `desc`.
 
-:::tip
+::: tip
 In der Regel werden Sie beide Parameter in Ihrer Suche kombinieren wollen,
 z.B.: `?query={suchstring}&sort_by={row name}&order_by={direction}`
 :::
@@ -337,8 +337,8 @@ Die API erwartet eine UTF-8-Kodierung. Beachten Sie, dass Sie insbesondere
 bei der Verwendung von URLs mit Get-Optionen (z. B. `?query=this`) Ihre URL
 entsprechend kodieren müssen.
 
-Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
-Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding) hilfreich
-sein
+If you want to learn more about URL encoding, [this Wikipedia
+article](https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may
+be of help
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

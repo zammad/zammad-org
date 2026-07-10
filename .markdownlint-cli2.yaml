@@ -1,0 +1,15 @@
+# Configuration for markdownlint-cli2 (the wrapper around markdownlint).
+#
+# This file is loaded in addition to `.markdownlint.yaml`, which configures
+# the underlying markdownlint rule set. We use this file only for
+# `customRules`, since that key is not part of the markdownlint schema
+# but is a markdownlint-cli2 option.
+#
+# See: https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2yaml
+
+# Glob passed by `pnpm lint` / `pnpm lint:cmd` / the CI job — no globs
+# here so command-line arguments are honored as-is.
+globs: []
+
+customRules:
+  - .markdownlint/rules.cjs

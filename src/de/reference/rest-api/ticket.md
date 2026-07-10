@@ -5,7 +5,7 @@ title: Ticket
 
 # Ticket
 
-:::warning
+::: warning
 Ticket-Endpunkte hängen von den Gruppenberechtigungen ab und ob der Benutzer, den Sie
 verwenden, ein **Agent** ist. Aus diesem Grund können Tickets unter Umständen nicht
 verfügbar sein.

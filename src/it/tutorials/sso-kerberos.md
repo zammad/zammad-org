@@ -67,7 +67,7 @@ che il tuo Active Directory e Zammad.
 Nello schema di autenticazione Kerberos, il **server di autenticazione**
 (Active Directory) deve.
 
-:::info
+::: info
 Queste istruzioni sono state confermate su Windows Server 2016.
 :::
 

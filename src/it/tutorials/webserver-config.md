@@ -33,7 +33,7 @@ configurazione di base qui sotto:
 Consultate la loro documentazione per ulteriori dettagli di configurazione e
 altri esempi.
 
-:::tabs
+::: tabs
 
 ===Certbot
 
@@ -48,7 +48,7 @@ ufficiale diversa.
 
 ## Regolazione della configurazione del server web
 
-:::warning
+::: warning
 Assicurati di non usare mai connessioni HTTP - ti incoraggiamo a usare HTTPS!
 :::
 
@@ -125,7 +125,7 @@ sudo systemctl restart apache2
 
 Fai clic per aprire i dettagli per la configurazione CentOS:
 
-:::details
+::: details
 Aggiungi/decommenta le istruzioni `LoadModule` appropriate nella tua configurazione Apache
 in `/etc/httpd
 
@@ -179,7 +179,7 @@ soddisfare i tuoi requisiti!
 Questo passaggio dipende principalmente dalle cartelle selezionate e
 dovrebbe riguardare solo `sites-available`.
 
-:::tabs
+::: tabs
 
 === Ubuntu, Debian, OpenSUSE
 

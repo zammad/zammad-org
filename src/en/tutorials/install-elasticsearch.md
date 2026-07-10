@@ -113,7 +113,7 @@ sudo dnf install --enablerepo=elasticsearch elasticsearch
 
 :::
 
-:::tip
+::: tip
 Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by
 running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 :::
@@ -131,7 +131,7 @@ http.max_content_length: 400mb
 ```
 
 Additional configuration is out of scope of this documentation. In case your scenario needs additional configuration,
-have a look at [Elastic’s configuration reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
+have a look at [Elastic’s configuration reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
 
 ## Start and Enable Elasticsearch
 

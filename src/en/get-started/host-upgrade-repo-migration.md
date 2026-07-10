@@ -16,7 +16,7 @@ being built via old toolchain as well (except for Debian 13) for some time, but 
 repositories in a timely manner. This means you need to add a new repository key and change your repository
 configuration.
 
-:::warning
+::: warning
 Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
 :::
 
@@ -34,7 +34,7 @@ sudo systemctl stop zammad
 
 ### Disable Updates for Zammad
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -79,7 +79,7 @@ next steps.
 
 Remove the old repository configuration file or disable/delete the old repository in your package manager.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -120,7 +120,7 @@ sudo rm /etc/yum.repos.d/zammad.repo
 Remove the old repository key from your system. Depending on your operating system and version, the location or method
 differs.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -173,14 +173,14 @@ different location, add the new one. Otherwise, you can add the new repository c
 
 ### Update Zammad
 
-:::tip
+::: tip
 If there is a new Zammad version available and you want to update to it, check the
-[release notes](https://zammad.com/en/product/releases) for any required additional steps.
+[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
 :::
 
 Re-enable updates for Zammad and update Zammad to the latest version available for your operating system.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 

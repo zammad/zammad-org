@@ -135,7 +135,7 @@ Richiesta `POST` inviata: `/api/v1/object_manager_attributes`
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json
 
-:::tip
+::: tip
 
 I campi di input di Zammad possono avere 4 tipi diversi:
 
@@ -169,7 +169,7 @@ I campi di input di Zammad possono avere 4 tipi diversi:
 :::
 ::::
 
-::::info
+:::: info
 Tieni presente che i payload sopra coprono oggetti ticket. Questo va bene nella
 maggior parte delle situazioni, tranne.
 

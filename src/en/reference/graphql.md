@@ -8,11 +8,11 @@ order: 7
 ## Introduction
 
 In addition to Zammad's [REST API](rest-api/intro), you can fetch, manipulate and create data via
-the powerful and open-source [GraphQL API](https://graphql.org/) too.
+the powerful and open-source [GraphQL API](https://graphql.org/){target=_blank} too.
 
 This documentation isn't intended to cover everything about GraphQL. It should give you a basic understanding about how
 you can fetch and create/manipulate data to build upon. For a comprehensive guide, have a look at
-[GraphQL's documentation](https://graphql.org/learn/).
+[GraphQL's documentation](https://graphql.org/learn/){target=_blank}.
 
 GraphQL is used by many web services, even big ones. It became some kind of industry standard because of its efficiency
 and features. You can precisely request the data you require which minimizes unnecessary data transfers and searching
@@ -31,9 +31,9 @@ To send request and receive responses, you need an API client. If you are alread
 If you are new to the topic, search for a client which fits your needs. Depending on your operating system, you may
 have different options. Some examples for popular clients with GraphQL support are:
 
-- [Bruno](https://www.usebruno.com/downloads)
-- [Insomnia](https://insomnia.rest/download)
-- [Postman](https://www.postman.com/downloads/)
+- [Bruno](https://www.usebruno.com/downloads){target=_blank}
+- [Insomnia](https://insomnia.rest/download){target=_blank}
+- [Postman](https://www.postman.com/downloads/){target=_blank}
 
 ### Authentication
 
@@ -112,11 +112,11 @@ To create or change data, replace the `query` by `mutation` in the request body.
 
 The examples use variables for the different object types. Make sure to set it when using the examples.
 
-::::tabs
+:::: tabs
 
 ==== Ticket
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -130,7 +130,7 @@ The examples use variables for the different object types. Make sure to set it w
 
 ==== User
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -144,7 +144,7 @@ The examples use variables for the different object types. Make sure to set it w
 
 ==== Organization
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -162,7 +162,7 @@ The examples use variables for the different object types. Make sure to set it w
 
 ### Global IDs
 
-:::info
+::: info
 
 Replace the `{ID}` with a numeric value.
 

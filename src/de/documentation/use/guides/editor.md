@@ -64,7 +64,7 @@ Sie können den Text im Editor auf verschiedene Arten formatieren:
 
 - Verwenden Sie die integrierte Werkzeugleiste
 - Verwenden Sie Tastaturkürzel
-- Verwenden Sie [Markdown](https://www.markdownguide.org)-Syntax
+- Use [Markdown](https://www.markdownguide.org){target=_blank} syntax
 
 Die **Werkzeugleiste** des Editors enthält Schaltflächen für gängige
 Formatierungsaufgaben. Wenn Sie den Mauszeiger über eine Schaltfläche

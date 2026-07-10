@@ -52,7 +52,7 @@ eines der Werkzeuge aus.
 ![Screenshot zeigt Zammads
 Schreibassistent-Menü](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
-:::warning
+::: warning
 
 - Beachten Sie, dass Ihr Text ersetzt wird, wenn Sie eines der Textwerkzeuge auswählen. Wenn Sie mit dem Ergebnis nicht zufrieden sind
   können Sie die Rückgängig-Funktion verwenden, indem Sie [[ctrl]] + [[z]] drücken.

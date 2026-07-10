@@ -35,7 +35,7 @@ the volume of the **zammad-backup** container under `/var/tmp/zammad`.
    aware that the restore process always uses the latest backup according to the timestamp of the file name. Only
    backups from package and Docker installations are supported by this built-in backup method. Don't provide the
    `latest_zammad_*.gz` files because they link to an unknown location for the restore process.
-5. Start the stack. The restore process is triggered in the ``zammad-backup`` service if the ``restore`` directory is
+5. Start the stack. The restore process is triggered in the `zammad-backup` service if the `restore` directory is
    detected and the backup files are in place.
 
    ::: info

@@ -45,7 +45,7 @@ chiamata HTTP. Questa autenticazione.
 curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
-:::warning
+::: warning
 Sconsigliamo vivamente di usare l'autenticazione di base. Usa i token
 di accesso ogni volta che possibile.
 :::
@@ -92,7 +92,7 @@ oltre agli ID.
 **Payload utente:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -108,7 +108,7 @@ oltre agli ID.
 **Payload ticket:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -121,7 +121,7 @@ oltre agli ID.
 :::
 ::::
 
-:::tip
+::: tip
 Tieni presente che i Flussi di lavoro principali potrebbero limitare l'accesso ad attributi o
 valori.
 :::
@@ -131,7 +131,7 @@ valori.
 Poiché Zammad limita il numero di oggetti restituiti per motivi di
 prestazioni, potresti dover.
 
-:::info
+::: info
 **Numero di oggetti restituiti:** Zammad ha limiti rigidi per il
 numero massimo di oggetti restituiti.
 :::
@@ -273,7 +273,7 @@ decrescente.
 
 Le direzioni sono: `asc` e `desc`.
 
-:::tip
+::: tip
 Solitamente vorrai combinare entrambi i parametri nelle tue ricerche -
 ad esempio: `?query={search st
 :::
@@ -300,7 +300,8 @@ richiesta. Il valore di questa intestazione può essere.
 L'API si aspetta la codifica UTF-8. Tieni presente che specialmente quando
 usi URL con opzioni get.
 
-Se vuoi saperne di più sulla codifica degli URL, [questo articolo di
-Wikipedia](https://en.wikipedia.org/wiki/Percent-encoding) può esserti utile
+If you want to learn more about URL encoding, [this Wikipedia
+article](https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may
+be of help
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**n

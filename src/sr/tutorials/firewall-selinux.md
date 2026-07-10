@@ -45,7 +45,7 @@ documentation.
 Please note that the examples below only cover the distribution’s default
 firewall. It may not cover your case.
 
-::::tabs
+:::: tabs
 
 ===Ubuntu
 

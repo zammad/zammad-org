@@ -61,7 +61,7 @@ Puoi formattare il testo nell'editor in diversi modi:
 
 - Usa la barra degli strumenti integrata
 - Usa le scorciatoie da tastiera
-- Usa la sintassi [Markdown](https://www.markdownguide.org)
+- Use [Markdown](https://www.markdownguide.org){target=_blank} syntax
 
 La **barra degli strumenti** dell'editor include pulsanti per le attività di
 formattazione comuni. Passando il mouse su ciascun pulsante viene

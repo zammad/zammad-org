@@ -114,7 +114,7 @@ In case you need a more exact search, you can turn it off via [Rails console](/e
 
 ## Troubleshooting
 
-:::tip
+::: tip
 Troubleshooting unsuccessful or issue not described?
 
 If you can't solve your issue using the provided troubleshooting steps

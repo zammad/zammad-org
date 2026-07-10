@@ -124,7 +124,7 @@ von externer Seite an Sie sind `in`.
 
 ### Ausgehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -167,7 +167,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -209,7 +209,7 @@ konfigurierte Call ID zurück oder blockiert einen Anrufer (optional) . Wenn
 Ihr Zammad eine oder beide Optionen nicht konfiguriert hat, ist der
 Rückgabewert leer.
 
-:::info
+::: info
 Dies muss von Ihrer Telefonanlage unterstützt werden, damit es funktioniert.
 :::
 
@@ -225,7 +225,7 @@ folgendes zurück.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-:::warning
+::: warning
 Ihre Telefonanlage muss den Anruf noch beenden (hangup-Ereignis). Andernfalls wird der
 Anruf nicht nur in der Anruferliste von Zammad erscheinen, sondern auch als
 klingelnder Anruf.
@@ -283,7 +283,7 @@ Es gibt zwei Möglichkeiten, wie Sie die relevanten Daten an Zammad "posten"
 
 ### Ausgehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -326,7 +326,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -402,7 +402,7 @@ Beispiel curl Befehl:
 
 ### Ausgehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -445,7 +445,7 @@ Beispiel curl Befehl:
 
 ### Eingehend
 
-::::details
+:::: details
 
 ::: tabs key:cti
 

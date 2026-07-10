@@ -2,6 +2,9 @@
 # Default state for all rules
 default: true
 
+# MD001/heading-increment : Heading levels should only increment by one level at a time
+MD001: true
+
 # MD004/ul-style : Unordered list style : https://github.com/DavidAnson/markdownlint/blob/main/doc/md004.md
 MD004:
   # List style

@@ -46,9 +46,9 @@ o'clock each night. The backup is stored in the volume of the
    supported by this built-in backup method. Don't provide the
    `latest_zammad_*.gz` files because they link to an unknown location for
    the restore process.
-5. Start the stack. The restore process is triggered in the
-   ``zammad-backup`` service if the ``restore`` directory is detected and
-   the backup files are in place.
+5. Start the stack. The restore process is triggered in the `zammad-backup`
+   service if the `restore` directory is detected and the backup files are
+   in place.
 
    ::: info
    As a part of this process, the cache will be cleared and any pre-existing

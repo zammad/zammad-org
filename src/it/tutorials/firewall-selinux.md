@@ -43,7 +43,7 @@ cui hai bisogno.
 Tieni presente che gli esempi seguenti coprono solo il firewall predefinito
 della distribuzione.
 
-::::tabs
+:::: tabs
 
 ===Ubuntu
 

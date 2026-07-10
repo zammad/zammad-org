@@ -33,7 +33,7 @@ the landing page of the user documentation.  Use the left sidebar to
 navigate to the desired section or use the search in the header or activate
 it by using its keyboard shortcut [[ctrl]] [[k]].
 
-:::tip
+::: tip
 
 This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed
 by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside

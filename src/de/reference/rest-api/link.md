@@ -40,7 +40,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin`
 
 <<< @/fixtures/rest-api/links/post-req.json
 
-:::info
+::: info
 Der Wert für `link_object_target` muss die _Ticket ID_ sein. Der
 Wert für `link_object_source_number` muss die _Ticket
 Nummer_ sein.

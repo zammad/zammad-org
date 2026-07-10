@@ -61,11 +61,10 @@ Starten Sie nun den Stack, um den Wiederherstellungsprozess durchzuführen.
 Dies kann nützlich sein, wenn Sie Portainer zur Bereitstellung von Zammad
 verwenden und nur begrenzten Zugriff auf das Hostsystem haben.
 
-Unser Beispiel verwendet das Tool [filebrowser](https://filebrowser.org/),
-aber jedes ähnliche Tool sollte ebenfalls funktionieren. Wenn Sie ein
-solches Tool dauerhaft verwenden möchten, stellen Sie sicher, dass Sie
-zusätzliche Volumes für die Persistenz bereitstellen (z.B. für deren
-Datenbank).
+Our example uses the tool
+[filebrowser](https://filebrowser.org/){target=_blank}, but any similar tool
+should work too. If you'd like to use such a tool permanently, make sure to
+provide additional volumes for persistence (e.g. for their database).
 
 ::: info
 

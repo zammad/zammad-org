@@ -36,7 +36,7 @@ Limitazioni generali per tutte le migrazioni:
 
 ## Guide di migrazione specifiche
 
-:::info
+::: info
 
 **Ti manca una sorgente di migrazione?**
 
@@ -74,7 +74,7 @@ key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find
 per la migrazione. Il migratore richiederà il tuo sottodominio Freshdesk e
 la tua API key.
 
-:::warning
+::: warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
 privilegi.
 :::
@@ -84,7 +84,7 @@ privilegi.
 In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
 piuttosto grande.
 
-::::tabs
+:::: tabs
 
 === Tramite browser
 
@@ -155,7 +155,7 @@ job = ImportJob.create(name: 'Import::Freshdesk')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Vuoi vedere il progresso della migrazione?
 
@@ -214,7 +214,7 @@ sono limitazioni aggiuntive a quelle.
 Zammad richiede accesso API, motivo per cui il migratore richiederà il tuo
 URL Kayako, email e.
 
-:::warning
+::: warning
 Assicurati di fornire un account utente con permessi amministrativi completi. Utenti con meno
 privilegi.
 :::
@@ -224,7 +224,7 @@ privilegi.
 In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
 piuttosto grande.
 
-::::tabs
+:::: tabs
 
 === Tramite browser
 
@@ -302,7 +302,7 @@ job = ImportJob.create(name: 'Import::Kayako')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Vuoi vedere il progresso della migrazione?
 
@@ -355,24 +355,24 @@ Limitazioni aggiuntive a quella generale:
 **Installa Znuny4OTRS-Repo che corrisponde alla tua versione OTRS (dipendenza del plugin di migrazione OTRS):**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm){target=_blank}
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm)
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm){target=_blank}
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm)
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm){target=_blank}
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm){target=_blank}
 
 **Installa il plugin di migrazione OTRS che corrisponde alla tua versione OTRS:**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm){target=_blank}
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm){target=_blank}
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm){target=_blank}
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm){target=_blank}
 
 ::: tip
 In alcuni casi riavviare il tuo server web può aiutare a risolvere errori interni del
@@ -389,7 +389,7 @@ problema, puoi.
 
 #### Importazione
 
-:::tabs
+::: tabs
 
 === Via Browser
 
@@ -486,7 +486,7 @@ API](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-ne
 per la migrazione. Lo strumento di migrazione richiederà il tuo URL Zendesk,
 l'indirizzo email e la chiave API.
 
-:::warning
+::: warning
 Assicurati di recuperare la chiave API con un account amministratore completo. Utenti con meno
 privilegi.
 :::
@@ -496,7 +496,7 @@ privilegi.
 In generale, hai due opzioni su come migrare i dati. Se hai un'istanza
 piuttosto grande.
 
-::::tabs
+:::: tabs
 
 ===== Tramite browser
 
@@ -569,7 +569,7 @@ job = ImportJob.create(name: 'Import::Zendesk')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Vuoi vedere il progresso della migrazione?
 

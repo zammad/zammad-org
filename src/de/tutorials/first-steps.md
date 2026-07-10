@@ -52,7 +52,7 @@ kann hier fehlschlagen - Sie können diesen Schritt mit der Auswahl von sendmail
 Wenn Sie sofort loslegen wollen, können Sie Ihr E-Mail Konto bereits
 verbinden.
 
-:::danger
+::: danger
 Standardmäßig reagiert Zammad auf abgeholte E-Mails (z.B. löscht sie und sendet
 automatisch generierte Antworten). Wenn Sie das nicht wollen, überspringen Sie diesen Schritt
 fürs Erste.
@@ -82,7 +82,7 @@ finden Sie in dieser Dokumentation.
 - Konten für Agenten hinzufügen
 - Erwägen Sie Backup-Strategien für Zammad
 
-:::tip
+::: tip
 
 **Wissen Sie immer noch nicht weiter?**
 

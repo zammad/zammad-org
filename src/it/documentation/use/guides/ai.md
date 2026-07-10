@@ -51,7 +51,7 @@ della barra degli strumenti dell'editor e scegli uno dei seguenti strumenti.
 ![Screenshot che mostra il menu dell'editor intelligente di
 Zammad](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
-:::warning
+::: warning
 
 - Tieni presente che il tuo testo viene sostituito quando selezioni uno degli strumenti di testo. Se non sei soddisfatto del risultato,
   prova a usare la funzione annulla premendo [[ctrl]] + [[z]].

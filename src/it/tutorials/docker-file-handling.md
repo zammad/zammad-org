@@ -53,8 +53,10 @@ Ora avvia lo stack per eseguire il processo di ripristino.
 Questo può essere utile se usi Portainer per distribuire Zammad e hai
 accesso limitato all'host.
 
-Il nostro esempio usa lo strumento [filebrowser](https://filebrowser.org/),
-ma qualsiasi strumento simile dovrebbe.
+Our example uses the tool
+[filebrowser](https://filebrowser.org/){target=_blank}, but any similar tool
+should work too. If you'd like to use such a tool permanently, make sure to
+provide additional volumes for persistence (e.g. for their database).
 
 ::: info
 

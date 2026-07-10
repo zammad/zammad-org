@@ -138,7 +138,7 @@ Erforderliche Berechtigung: `admin.object`
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json
 
-:::tip
+::: tip
 
 Zammad-Eingabefelder können 4 verschiedene Typen haben:
 
@@ -175,7 +175,7 @@ Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.
 :::
 ::::
 
-::::info
+:::: info
 Bitte beachten Sie, dass sich die oben genannten Nutzlasten auf Ticket-Objekte beziehen. Dies ist in
 den meisten Situationen in Ordnung, außer wenn es um die Standardobjekt-Berechtigungen
 geht. Deshalb führen wir diese hier separat auf.

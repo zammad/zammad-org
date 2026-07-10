@@ -65,7 +65,8 @@ scenarios for achieving this:
 
 ### Add Cloudflare Tunnel
 
-If you want to publish Zammad in a very convenient way, you can use a [Cloudflare](https://www.cloudflare.com/) tunnel.
+If you want to publish Zammad in a very convenient way, you can use a
+[Cloudflare](https://www.cloudflare.com/){target=_blank} tunnel.
 
 - Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment
 - Add a sub-domain to an already existing domain in your Cloudflare dashboard
@@ -158,7 +159,8 @@ You can do so by just using the scenario file `scenarios/disable-backup-service.
 
 ### Add Ollama
 
-You can spin up an additional [Ollama](https://ollama.com/) container to use Zammad's AI features on your machine.
+You can spin up an additional [Ollama](https://ollama.com/){target=_blank} container to use Zammad's AI
+features on your machine.
 
 ::: info
 This is intended for development or testing purposes as running a productive LLM stack is complex.
@@ -187,4 +189,4 @@ in future.
 Sometimes it's necessary to apply local changes to the Zammad Docker stack, e.g. to include additional services. If you
 plan to do so, we recommend that you do not change the `docker-compose.yml` file, but instead create a local
 `docker-compose.override.yml` that includes all your modifications. Docker Compose will
-[automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+[automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.

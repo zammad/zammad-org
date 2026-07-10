@@ -5,7 +5,7 @@ title: Calendar
 
 # Calendar
 
-:::tip
+::: tip
 Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).
 :::
 

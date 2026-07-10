@@ -7,14 +7,14 @@ title: 'API GraphQL'
 
 ## Introduzione
 
-Oltre alla [REST API](rest-api/intro) di Zammad, puoi anche recuperare,
-manipolare e creare dati tramite la potente e open‑source [GraphQL
-API](https://graphql.org/).
+In addition to Zammad's [REST API](rest-api/intro), you can fetch,
+manipulate and create data via the powerful and open-source [GraphQL
+API](https://graphql.org/){target=_blank} too.
 
-Questa documentazione non ha lo scopo di coprire tutto ciò che riguarda
-GraphQL. Dovrebbe darti una comprensione di base su come puoi recuperare e
-creare/manipolare dati su cui costruire. Per una guida completa, dai
-un’occhiata alla [documentazione di GraphQL](https://graphql.org/learn/).
+This documentation isn't intended to cover everything about GraphQL. It
+should give you a basic understanding about how you can fetch and
+create/manipulate data to build upon. For a comprehensive guide, have a look
+at [GraphQL's documentation](https://graphql.org/learn/){target=_blank}.
 
 GraphQL è usato da molti servizi web, anche grandi. È diventato una sorta di
 standard del settore.
@@ -35,9 +35,9 @@ già lavori con le API, puoi saltare questa sezione.
 esigenze. A seconda del tuo sistema operativo, potresti avere diverse
 opzioni. Alcuni esempi di client popolari con supporto GraphQL sono:
 
-- [Bruno](https://www.usebruno.com/downloads)
-- [Insomnia](https://insomnia.rest/download)
-- [Postman](https://www.postman.com/downloads/)
+- [Bruno](https://www.usebruno.com/downloads){target=_blank}
+- [Insomnia](https://insomnia.rest/download){target=_blank}
+- [Postman](https://www.postman.com/downloads/){target=_blank}
 
 ### Autenticazione
 
@@ -123,11 +123,11 @@ della richiesta.
 Gli esempi usano variabili per i diversi tipi di oggetto. Assicurati di
 impostarla quando usi.
 
-::::tabs
+:::: tabs
 
 ==== Ticket
 
-:::tabs
+::: tabs
 
 === Richiesta
 
@@ -141,7 +141,7 @@ impostarla quando usi.
 
 ==== Utente
 
-:::tabs
+::: tabs
 
 === Richiesta
 
@@ -155,7 +155,7 @@ impostarla quando usi.
 
 ==== Organizzazione
 
-:::tabs
+::: tabs
 
 === Richiesta
 
@@ -173,7 +173,7 @@ impostarla quando usi.
 
 ### ID globali
 
-:::info
+::: info
 
 Sostituisci `{ID}` con un valore numerico.
 

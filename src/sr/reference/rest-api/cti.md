@@ -121,7 +121,7 @@ from external side to you are `in`.
 
 ### Одлазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -164,7 +164,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -205,7 +205,7 @@ Depending on the chosen call direction, Zammad will return either a
 (optionally) configured call ID or (optionally) block a caller. If your
 Zammad hasn't configured one or both options, the return will be empty.
 
-:::info
+::: info
 This has to be supported by your PBX in order to work.
 :::
 
@@ -220,7 +220,7 @@ If no to block number matches, Zammad will return the following.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-:::warning
+::: warning
 Your PBX still needs to end the call (hangup event). Other wise the
 call will not just appear within Zammad's caller log but also appear as
 ringing call.
@@ -277,7 +277,7 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 ### Одлазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -320,7 +320,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -395,7 +395,7 @@ Sample curl command:
 
 ### Одлазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -438,7 +438,7 @@ Sample curl command:
 
 ### Долазнo
 
-::::details
+:::: details
 
 ::: tabs key:cti
 

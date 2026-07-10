@@ -51,10 +51,11 @@ Authentifizierungs-App](/screenshots/documentation/use/two-factor-auth-usage/2fa
 Stellen Sie bitte zunächst sicher, dass Sie eine Authentifizierungs-App auf
 Ihrem Mobilgerät installiert haben. Empfohlene Apps sind:
 
-- [Google Authenticator](https://support.google.com/accounts/answer/1066447)
-- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
+- [Google
+  Authenticator](https://support.google.com/accounts/answer/1066447){target=_blank}
+- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/){target=_blank}
 - [Microsoft
-  Authenticator](https://support.microsoft.com/de-de/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
+  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a){target=_blank}
 
 Öffnen Sie die Authentifizierungs-App auf Ihrem Mobilgerät und wählen Sie
 die Funktion **QR-Code scannen** (oder ähnlich bezeichnet). Richten Sie dann

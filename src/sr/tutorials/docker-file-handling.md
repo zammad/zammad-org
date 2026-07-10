@@ -56,10 +56,10 @@ Now start the stack to execute the restore process.
 This can be useful if you use Portainer to deploy Zammad and have limited
 access to the host system.
 
-Our example uses the tool [filebrowser](https://filebrowser.org/), but any
-similar tool should work too. If you'd like to use such a tool permanently,
-make sure to provide additional volumes for persistence (e.g. for their
-database).
+Our example uses the tool
+[filebrowser](https://filebrowser.org/){target=_blank}, but any similar tool
+should work too. If you'd like to use such a tool permanently, make sure to
+provide additional volumes for persistence (e.g. for their database).
 
 ::: info
 

@@ -38,7 +38,7 @@ General limitations for all migrations:
 
 ## Specific Migration Guides
 
-:::info
+::: info
 
 **Missing a migration source?**
 
@@ -76,7 +76,7 @@ Zammad requires API access which is why you'll need to
 for the migration. The migrator will request your Freshdesk subdomain and API
 key.
 
-:::warning
+::: warning
 Ensure to retrieve the API key with a full administrator account. Less
 privileged users will end in a broken migration.
 :::
@@ -87,7 +87,7 @@ In general, you have two options on how to migrate data. If you have a fairly
 big instance with a lot of data, you may want to consider using the console
 over the browser version.
 
-::::tabs
+:::: tabs
 
 === Via Browser
 
@@ -160,7 +160,7 @@ job = ImportJob.create(name: 'Import::Freshdesk')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Want to see the progress of the migration?
 
@@ -222,7 +222,7 @@ limitations to the general ones listed.
 Zammad requires API access which is why the migrator will request your
 Kayako-URL, email address and password.
 
-:::warning
+::: warning
 Ensure to provide an user account with full administrative permissions. Less
 privileged users will end in a broken migration.
 :::
@@ -233,7 +233,7 @@ In general, you have two options on how to migrate data. If you have a fairly
 big instance with a lot of data, you may want to consider using the console
 over the browser version.
 
-::::tabs
+:::: tabs
 
 === Via Browser
 
@@ -314,7 +314,7 @@ job = ImportJob.create(name: 'Import::Kayako')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Want to see the progress of the migration?
 
@@ -369,17 +369,17 @@ Additional limitations to the general one:
 
 **Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**
 
-- [OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
-- [OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm)
-- [OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm)
-- [OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
+- [OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm){target=_blank}
+- [OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm){target=_blank}
+- [OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm){target=_blank}
+- [OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm){target=_blank}
 
 **Install OTRS migration plugin that matches your OTRS version:**
 
-- [OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
-- [OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
-- [OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm)
-- [OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm)
+- [OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm){target=_blank}
+- [OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm){target=_blank}
+- [OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm){target=_blank}
+- [OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm){target=_blank}
 
 ::: tip
 In some cases restarting your webserver may help to solve internal server
@@ -399,7 +399,7 @@ environment variables. To do so, set the environment variables `ZAMMAD_OTRS_IMPO
 
 #### Import
 
-:::tabs
+::: tabs
 
 === Via Browser
 
@@ -496,7 +496,7 @@ Zammad requires API access which is why you’ll need to
 for the migration. The migrator will request your Zendesk-URL, email address
 and API key.
 
-:::warning
+::: warning
 Ensure to retrieve the API key with a full administrator account. Less
 privileged users will end in a broken migration.
 :::
@@ -507,7 +507,7 @@ In general, you have two options on how to migrate data. If you have a fairly
 big instance with a lot of data, you may want to consider using the console
 over the browser version.
 
-::::tabs
+:::: tabs
 
 === Via Browser
 
@@ -581,7 +581,7 @@ job = ImportJob.create(name: 'Import::Zendesk')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Want to see the progress of the migration?
 

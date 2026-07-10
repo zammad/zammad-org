@@ -39,9 +39,9 @@ stack nonché alle 3 di ogni notte.
    filesystem attivata, dovresti.
 4. Copia o sposta i file di backup in `/var/tmp/zammad/restore/` all'interno
    del volume del container **zam
-5. Start the stack. The restore process is triggered in the
-   ``zammad-backup`` service if the ``restore`` directory is detected and
-   the backup files are in place.
+5. Start the stack. The restore process is triggered in the `zammad-backup`
+   service if the `restore` directory is detected and the backup files are
+   in place.
 
    ::: info
    As a part of this process, the cache will be cleared and any pre-existing

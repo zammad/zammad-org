@@ -14,7 +14,7 @@ Both systems allow you to exchange **signed** and **encrypted** messages with ot
 
 ## Prerequisites
 
-- Both features are optional. If you don't see the ``Encrypt`` and ``Sign`` buttons in the email article editor, your
+- Both features are optional. If you don't see the `Encrypt` and `Sign` buttons in the email article editor, your
   administrator has not activated them yet.
 - PGP and S/MIME only work if the other party is using them too.
 - Your administrator is responsible for adding all necessary certificates and keys in Zammad's admin settings.
@@ -55,7 +55,7 @@ message article to expand its details. In the details, you can hover over the se
 
 ## Outgoing Email
 
-Use the ``Encrypt`` and ``Sign`` buttons to turn on encryption and signing for outgoing emails. They are available for
+Use the `Encrypt` and `Sign` buttons to turn on encryption and signing for outgoing emails. They are available for
 new tickets and replies. Hover over the buttons to show details.
 
 ![Screenshot showing the Encrypt and Sign toggle buttons in the email reply editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)
@@ -96,17 +96,17 @@ Ask your administrator to verify your organization's private key in Zammad's
 certificate store, and ask the sender to double-check the public key they used
 to encrypt the message.
 
-### The ``Encrypt`` button is disabled
+### The `Encrypt` button is disabled
 
 Ask your administrator to add the recipient's certificate to Zammad's certificate store.
 
-### The ``Sign`` button is disabled
+### The `Sign` button is disabled
 
 Ask your administrator to verify your organization's private key in Zammad's certificate store.
 
 ### Multiple Security Types configured
 
-You might see both ``PGP`` and ``S/MIME`` buttons. This happens when both systems
+You might see both `PGP` and `S/MIME` buttons. This happens when both systems
 are configured in your system and a customer is using both as well. In this
 case, you have an additional button to switch between PGP and S/MIME security
 types. Just pick one, make sure encryption and signing is enabled and send your

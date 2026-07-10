@@ -20,7 +20,7 @@ empfehlen Ihnen, die neuen Paketquellen zeitnah zu verwenden. Dies bedeutet,
 dass Sie einen neuen Paketquellen-Schlüssel hinzufügen und Ihre
 Paketquellen-Konfiguration ändern müssen.
 
-:::warning
+::: warning
 Stellen Sie immer sicher, dass Sie eine [Sicherung](/de/tutorials/backup-restore) Ihrer Daten haben, bevor Sie ein Upgrade durchführen.
 :::
 
@@ -38,7 +38,7 @@ sudo systemctl stop zammad
 
 ### Aktualisierungen für Zammad deaktivieren
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -87,7 +87,7 @@ mit den nächsten Schritten fortfahren.
 Entfernen Sie die alte Konfigurationsdatei der Paketquelle oder
 deaktivieren/löschen Sie die alte Paketquelle in Ihrem Paketmanager.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -128,7 +128,7 @@ sudo rm /etc/yum.repos.d/zammad.repo
 Entfernen Sie den alten Paketquellen-Schlüssel von Ihrem System. Je nach
 Betriebssystem und Version ist der Ort bzw. die Methode unterschiedlich.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -183,15 +183,15 @@ können Sie direkt die neue Konfiguration der Paketquelle hinzufügen.
 
 ### Zammad aktualisieren
 
-:::tip
-Wenn eine neue Version von Zammad verfügbar ist und Sie auf diese aktualisieren möchten, lesen Sie die
-[Release Notes](https://zammad.com/de/product/releases) für erforderliche zusätzliche Schritte.
+::: tip
+If there is a new Zammad version available and you want to update to it, check the
+[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
 :::
 
 Aktivieren Sie die Updates für Zammad wieder und aktualisieren Sie Zammad
 auf die neueste Version, die für Ihr Betriebssystem verfügbar ist.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 

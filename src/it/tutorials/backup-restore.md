@@ -8,7 +8,7 @@ title: 'Backup e ripristino (Pacchetto)'
 Zammad include script nelle installazioni tramite pacchetto per backup e
 ripristino che puoi usare.
 
-:::warning
+::: warning
 Questi script non sono coperti da alcuna garanzia e potrebbero non funzionare nel tuo specifico
 caso d'uso.
 :::
@@ -70,7 +70,7 @@ di seguito.
 
 `DEBUG` <Badge type="info" text="no"/>
 : Impostare questa opzione su `yes` produrrà output di debug utili.
-  :::warning
+  ::: warning
   Questa opzione potrebbe restituire informazioni sensibili sull'output standard! Non
   usarla.
   :::
@@ -95,7 +95,7 @@ i tuoi dati.
 - È richiesto almeno il doppio della dimensione dell'istanza Zammad
   sottoposta a backup di spazio libero.
 
-:::tip
+::: tip
 If your scenario is different from the one described above, please consult the
 [Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
 or consider
@@ -144,7 +144,7 @@ verificarlo.
 Il ripristino funziona in due modi possibili, a seconda di quanto vuoi
 essere interattivo:
 
-::::tabs
+:::: tabs
 
 === Ripristino interattivo (consigliato)
 Esegui lo script:
@@ -152,7 +152,7 @@ Esegui lo script:
 ```sh
 /opt/zammad/contrib/backup/z
 
-:::warning
+::: warning
 Usa l'opzione seguente solo se sai cosa stai facendo! Il comando
 seguente sovrascriverà.
 :::

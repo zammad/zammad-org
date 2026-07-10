@@ -5,7 +5,7 @@ title: Ticket
 
 # Ticket
 
-:::warning
+::: warning
 Gli endpoint ticket dipendono dai permessi del gruppo e se l'utente che stai
 usando è un **agente**.
 :::

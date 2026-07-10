@@ -38,7 +38,7 @@ configuration below:
 Have a look at their documentation for further configuration details and
 other examples.
 
-:::tabs
+::: tabs
 
 ===Certbot
 
@@ -105,7 +105,7 @@ with adjusting the webserver configuration.
 
 ## Adjusting the Webserver Configuration
 
-:::warning
+::: warning
 Make sure to never use HTTP connections - we encourage you to use HTTPS!
 :::
 
@@ -183,7 +183,7 @@ sudo systemctl restart apache2
 
 Click to open details for CentOS config:
 
-:::details
+::: details
 Add/uncomment the appropriate `LoadModule` statements in your Apache config
 in `/etc/httpd/conf/httpd.conf`:
 
@@ -246,7 +246,7 @@ you to meet your requirements!
 This step mostly depends on your selected folders and should only affect
 `sites-available` folders.
 
-:::tabs
+::: tabs
 
 === Ubuntu, Debian, OpenSUSE
 

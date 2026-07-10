@@ -39,7 +39,7 @@ eine Grundkonfiguration finden:
 Schauen Sie sich die Dokumentation dieser Tools an, um weitere
 Konfigurationsdetails und Beispiele zu finden.
 
-:::tabs
+::: tabs
 
 ===Certbot
 
@@ -107,7 +107,7 @@ Webserver-Konfiguration fort.
 
 ## Anpassen der Webserver-Konfiguration
 
-:::warning
+::: warning
 Stellen Sie sicher, dass Sie niemals HTTP-Verbindungen verwenden - wir empfehlen Ihnen die Verwendung von HTTPS!
 :::
 
@@ -189,7 +189,7 @@ sudo systemctl restart apache2
 
 Klicken Sie auf Details, um Infos der CentOS-Konfiguration zu öffnen:
 
-:::details
+::: details
 Fügen Sie die entsprechenden `LoadModule`-Anweisungen in Ihrer Apache-Konfiguration hinzu bzw. entfernen Sie die Kommentare
 in `/etc/httpd/conf/httpd.conf`:
 
@@ -256,7 +256,7 @@ der Ihnen helfen sollte, Ihre Anforderungen zu erfüllen!
 Dieser Schritt hängt größtenteils von den ausgewählten Ordnern ab und sollte
 nur die `sites-available`-Ordner betreffen.
 
-:::tabs
+::: tabs
 
 === Ubuntu, Debian, OpenSUSE
 

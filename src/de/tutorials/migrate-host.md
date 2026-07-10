@@ -182,7 +182,7 @@ Wenn Zammad nicht läuft, führen Sie aus:
 sudo systemctl start zammad
 ```
 
-:::tip
+::: tip
 Von Zammad SaaS migriert oder den Anbieter gewechselt?
 
 Bitte stellen Sie sicher, dass Ihr E-Mail-Benachrichtigungskanal und Ihre

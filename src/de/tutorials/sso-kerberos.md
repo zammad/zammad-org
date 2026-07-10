@@ -93,7 +93,7 @@ Im Kerberos-Authentifizierungsschema muss der **Authentifizierungsserver**
 verwalten. Um dies zu ermöglichen, müssen wir einen **service principal
 name** (SPN) für Zammad im Active Directory registrieren.
 
-:::info
+::: info
 Diese Anweisungen wurden für Windows Server 2016 bestätigt.
 :::
 

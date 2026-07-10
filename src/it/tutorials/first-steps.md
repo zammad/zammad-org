@@ -44,7 +44,7 @@ potrebbero fallire - tu.
 
 Se vuoi iniziare subito, puoi già collegare il tuo account email.
 
-:::danger
+::: danger
 Per impostazione predefinita, Zammad reagisce alle email recuperate (ad esempio le elimina e invia
 automaticamente generati.
 :::
@@ -72,7 +72,7 @@ dovresti adattarlo al tuo.
 - Aggiungi account agente
 - Considera strategie di backup per Zammad
 
-:::tip
+::: tip
 
 **Sei ancora in difficoltà?**
 

@@ -47,7 +47,7 @@ You can format text in the editor in different ways:
 
 - Use the integrated toolbar
 - Use keyboard shortcuts
-- Use [Markdown](https://www.markdownguide.org) syntax
+- Use [Markdown](https://www.markdownguide.org){target=_blank} syntax
 
 The editor **toolbar** includes buttons for common formatting tasks. Hovering over each button will display a tooltip
 explaining its function. As an alternative you can use **keyboard shortcuts** (see next two sections). Either activate

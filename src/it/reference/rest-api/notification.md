@@ -5,7 +5,7 @@ title: Notifica
 
 # Notifica online
 
-:::info
+::: info
 La disponibilità della notifica dipende fortemente dai permessi dell'utente e dalle notifiche scelte.
 :::
 
@@ -44,7 +44,7 @@ Permesso richiesto: `any`
 
 Richiesta `PUT` inviata: `/api/v1/online_notifications/{id}`
 
-::::details
+:::: details
 
 ::: tabs key:reqres
 

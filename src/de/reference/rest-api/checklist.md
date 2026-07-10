@@ -11,14 +11,14 @@ Zammad hat verschiedene Endpunkte für Checklisten:
 - [Checklisten-Elemente](#checklisten-elemente)
 - [Checklisten-Vorlagen](#checklisten-vorlagen)
 
-:::info
+::: info
 _Checklisten-Vorlagen_ enthalten ihre Elemente, während die
 _Standard-Checkliste_ einen eigenen Endpunkt für Elemente hat.
 :::
 
 ## Checklisten
 
-:::info
+::: info
 Um der Checkliste Elemente hinzuzufügen, verwenden Sie den Endpunkt [Checklisten-Elemente](#checklisten-elemente).
 :::
 

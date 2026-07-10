@@ -40,7 +40,7 @@ Richiesta `POST` inviata: `/api/v1/links/add`
 
 <<< @/fixtures/rest-api/links/post-req.json
 
-:::info
+::: info
 Il valore per `link_object_target` deve essere l'_ID ticket_. Il
 valore per `link_obje
 :::

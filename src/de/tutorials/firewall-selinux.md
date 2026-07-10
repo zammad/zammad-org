@@ -47,7 +47,7 @@ Bitte beachten Sie, dass die folgenden Beispiele nur die Standard-Firewall
 der Distributionen abdecken. Sie passen möglicherweise nicht zu Ihrem
 Szenario ab.
 
-::::tabs
+:::: tabs
 
 ===Ubuntu
 

@@ -7,15 +7,14 @@ title: 'GraphQL API'
 
 ## Einführung
 
-Neben der [REST API](rest-api/intro) von Zammad können Sie Daten auch über
-die leistungsstarke und quelloffene [GraphQL API](https://graphql.org/)
-abrufen, bearbeiten und erstellen.
+In addition to Zammad's [REST API](rest-api/intro), you can fetch,
+manipulate and create data via the powerful and open-source [GraphQL
+API](https://graphql.org/){target=_blank} too.
 
-Diese Dokumentation ist nicht dazu gedacht, alles über GraphQL
-abzudecken. Sie soll Ihnen ein grundlegendes Verständnis dafür vermitteln,
-wie Sie Daten abrufen und erstellen/ändern können, um darauf
-aufzubauen. Eine umfassende Anleitung finden Sie in der
-[GraphQL-Dokumentation](https://graphql.org/learn/).
+This documentation isn't intended to cover everything about GraphQL. It
+should give you a basic understanding about how you can fetch and
+create/manipulate data to build upon. For a comprehensive guide, have a look
+at [GraphQL's documentation](https://graphql.org/learn/){target=_blank}.
 
 GraphQL wird von vielen, auch großen, Webdiensten verwendet. Aufgrund seiner
 Effizienz und seiner Funktionen wurde es zu einer Art Industriestandard. Sie
@@ -41,9 +40,9 @@ Client, der Ihren Anforderungen entspricht. Je nach Betriebssystem haben Sie
 unterschiedliche Möglichkeiten. Einige Beispiele für beliebte Clients mit
 GraphQL-Unterstützung sind:
 
-- [Bruno](https://www.usebruno.com/downloads)
-- [Insomnia](https://insomnia.rest/download)
-- [Postman](https://www.postman.com/downloads/)
+- [Bruno](https://www.usebruno.com/downloads){target=_blank}
+- [Insomnia](https://insomnia.rest/download){target=_blank}
+- [Postman](https://www.postman.com/downloads/){target=_blank}
 
 ### Authentifizierung
 
@@ -136,11 +135,11 @@ im Request.
 Die Beispiele verwenden Variablen für die verschiedenen Objekttypen. Stellen
 Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
-::::tabs
+:::: tabs
 
 ==== Ticket
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -154,7 +153,7 @@ Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ==== User
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -168,7 +167,7 @@ Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ==== Organization
 
-:::tabs
+::: tabs
 
 === Request
 
@@ -186,7 +185,7 @@ Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ### Global IDs
 
-:::info
+::: info
 
 Ersetzen Sie `{ID}` durch einen numerischen Wert.
 

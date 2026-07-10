@@ -105,7 +105,7 @@ Le chiamate seguenti sono state inviate con la seguente configurazione. Questo �
 
 ### In uscita
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -148,7 +148,7 @@ Comando curl di esempio:
 
 ### In entrata
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -188,7 +188,7 @@ Comando curl di esempio:
 A seconda della direzione di chiamata scelta, Zammad restituirà un
 (opzionalmente) configurato.
 
-:::info
+::: info
 Questo deve essere supportato dal tuo PBX per funzionare.
 :::
 
@@ -203,7 +203,7 @@ Se nessun numero da bloccare corrisponde, Zammad restituirà quanto segue.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-:::warning
+::: warning
 Il tuo PBX deve comunque terminare la chiamata (evento hangup). Altrimenti la
 chiamata non apparirà semplicemente.
 :::
@@ -251,7 +251,7 @@ Ci sono due opzioni su come inviare con `POST` i dati rilevanti a Zammad.
 
 ### In uscita
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -294,7 +294,7 @@ Comando curl di esempio:
 
 ### In entrata
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -356,7 +356,7 @@ Comando curl di esempio:
 
 ### In uscita
 
-::::details
+:::: details
 
 ::: tabs key:cti
 
@@ -399,7 +399,7 @@ Comando curl di esempio:
 
 ### In entrata
 
-::::details
+:::: details
 
 ::: tabs key:cti
 

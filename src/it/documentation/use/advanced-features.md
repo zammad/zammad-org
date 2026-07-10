@@ -241,7 +241,7 @@ o già raggiunti in base alla configurazione dell'SLA.
 timestamp di
 escalation](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
-:::info
+::: info
 I tempi di escalation vengono calcolati in base al tuo orario di lavoro. Ciò significa che se il tuo orario di lavoro inizia alle 9:00, un ticket viene creato alle 7:00 e hai un termine di 1 ora, verrà inoltrato alle 10:00, a meno che non venga risolto prima.
 :::
 

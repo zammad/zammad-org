@@ -44,7 +44,7 @@ impostazioni proxy. Regola il valore.
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=
   ```
 
-:::tip
+::: tip
 A seconda del tuo ambiente, potresti voler usare le varianti minuscole delle variabili.
 
 :::

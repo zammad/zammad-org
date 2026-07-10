@@ -113,9 +113,9 @@ Um einen Zammad-Stack im Internet zu veröffentlichen, muss er über das
 HTTPS-Protokoll gesichert werden. Um dies zu erreichen, ohne den
 Zammad-Stack zu verändern, haben Sie folgende Möglichkeiten:
 
-- Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat
-  eine grafische Benutzeroberfläche, die eine einfache [Let's
-  Encrypt](https://letsencrypt.org/)-Integration ermöglicht.
+- Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that
+  provides an easy [Let's Encrypt](https://letsencrypt.org/){target=_blank}
+  integration.
 - Verwenden Sie einen Cloudflare-Tunnel, der eine SSL-Terminierung
   ermöglicht.
 
@@ -142,7 +142,7 @@ Umgebungsvariablen](/de/reference/environment-variables).
 Führen Sie Befehle in Ihrem Docker Stack aus, indem Sie `rails` oder `rake`
 über eine der folgenden Methoden mit Hilfe von `bundle exec` aufrufen.
 
-::::tabs
+:::: tabs
 
 === Via Portainer GUI
 

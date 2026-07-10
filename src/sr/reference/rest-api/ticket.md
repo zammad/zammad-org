@@ -5,7 +5,7 @@ title: Тикет
 
 # Тикет
 
-:::warning
+::: warning
 Ticket endpoints depend on group permissions and if the user you're
 using is an **agent**. Because of this tickets may or may not be
 available.

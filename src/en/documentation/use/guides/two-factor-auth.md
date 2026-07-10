@@ -38,9 +38,9 @@ account.
 
 First, make sure you have installed an authenticator app on your mobile device. Recommended apps are:
 
-- [Google Authenticator](https://support.google.com/accounts/answer/1066447)
-- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
-- [Microsoft Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
+- [Google Authenticator](https://support.google.com/accounts/answer/1066447){target=_blank}
+- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/){target=_blank}
+- [Microsoft Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a){target=_blank}
 
 Next, open the authenticator app on your device and find a **Scan QR Code** action, or similar. Point your camera to
 the Zammad screen and scan the shown QR code in the middle.

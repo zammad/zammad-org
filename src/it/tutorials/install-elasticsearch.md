@@ -52,7 +52,7 @@ sudo apt update && sudo apt install elasticsearch
 
 :::
 
-:::tip
+::: tip
 Assicurati di controllare l'output e copiare la password del superuser integrato. Altrimenti.
 :::
 
@@ -68,10 +68,10 @@ essere indicizzata da Elasticsearch.
 http.max_content_length: 400mb
 ```
 
-Una configurazione aggiuntiva è al di fuori dell’ambito di questa
-documentazione. Nel caso il tuo scenario richieda una configurazione
-aggiuntiva, consulta il [reference di configurazione di
-Elastic](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
+Additional configuration is out of scope of this documentation. In case your
+scenario needs additional configuration, have a look at [Elastic’s
+configuration
+reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
 
 ## Avvia e abilita Elasticsearch
 

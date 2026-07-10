@@ -138,7 +138,7 @@ Required permission: `admin.object`
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json
 
-:::tip
+::: tip
 
 Zammad input fields can have 4 different types:
 
@@ -175,7 +175,7 @@ data. E.g.: email demands an email address to be provided.
 :::
 ::::
 
-::::info
+:::: info
 Please note that above payloads cover ticket objects. This is fine in
 most situations, except if you're looking at the default object
 permissions. This is why we're listing these separate for you to view.

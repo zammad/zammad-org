@@ -16,7 +16,7 @@ all'aggiornamento dell'host.
 A partire da Zammad 7, i pacchetti vengono creati usando una nuova toolchain
 e ospitati con un altro URL.
 
-:::warning
+::: warning
 Assicurati sempre di avere un [backup](/it/tutorials/backup-restore) dei tuoi dati prima di eseguire un aggiornamento.
 :::
 
@@ -34,7 +34,7 @@ sudo systemctl stop zammad
 
 ### Disabilita gli aggiornamenti per Zammad
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -79,7 +79,7 @@ assicurati di riavviarlo ora.
 Rimuovi il vecchio file di configurazione del repository o
 disabilita/elimina il vecchio repository nel tuo gestore pacchetti.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -120,7 +120,7 @@ sudo rm /etc/yum.repos.d/zammad.repo
 Rimuovi la vecchia chiave del repository dal tuo sistema. A seconda del tuo
 sistema operativo e versione.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -173,14 +173,15 @@ tua distribuzione potrebbe richiedere passaggi aggiuntivi.
 
 ### Aggiorna Zammad
 
-:::tip
-Se è disponibile una nuova versione di Zammad e desideri aggiornarla, consulta le [note di rilascio](https://zammad.com/en/product/releases) per eventuali passaggi aggiuntivi necessari.
+::: tip
+If there is a new Zammad version available and you want to update to it, check the
+[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
 :::
 
 Riattiva gli aggiornamenti per Zammad e aggiornalo all'ultima versione
 disponibile per il tuo sistema operativo.
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 

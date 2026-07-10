@@ -46,13 +46,14 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
 `VERSION` ::d:: <Badge type="tip" text="current stable version of Zammad" />
 : Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you
   update your Zammad Docker stack. Please see the
-  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) for more details on this
-  variable.
+  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
+  for more details on this variable.
 
 `AUTOWIZARD_JSON` ::d::
 : This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of
   this documentation, however
-  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) should help.
+  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json){target=_blank}
+  should help.
 
 `ZAMMAD_HTTP_TYPE`
 : Set the http type for your instance. Possible values are `http` and `https`.
@@ -138,7 +139,7 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
 
 ## PostgreSQL
 
-:::tip
+::: tip
 Variables for Docker and package installation are partially different. Check the limitation badge and make sure to pick
 the right one. The both variables at the end of the list are valid for both installation types.
 :::
@@ -274,8 +275,8 @@ when connecting to external services (e.g. OAuth providers, webhooks, or integra
 
 `ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
 : Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
-  response read. This is an additional hard ceiling on top of ``ZAMMAD_HTTP_OPEN_TIMEOUT`` and
-  ``ZAMMAD_HTTP_READ_TIMEOUT``.
+  response read. This is an additional hard ceiling on top of `ZAMMAD_HTTP_OPEN_TIMEOUT` and
+  `ZAMMAD_HTTP_READ_TIMEOUT`.
 
 ## How to Set Environment Variables
 

@@ -291,7 +291,7 @@ Ihrer SLA-Konfiguration an:
 Eskalations-Zeitstempel bewegt
 wurde](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
-:::info
+::: info
 Die Eskalationszeiten werden auf der Grundlage Ihrer Geschäftszeiten berechnet. Das heißt, wenn Ihre Geschäftszeiten um 9:00 Uhr beginnen,
 ein Ticket um 7:00 Uhr erstellt wird und Sie eine Frist von 1 Stunde haben, eskaliert es um 10:00 Uhr, sofern es nicht früher gelöst wird.
 :::

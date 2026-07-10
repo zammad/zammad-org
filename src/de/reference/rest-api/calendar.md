@@ -5,7 +5,7 @@ title: Kalender
 
 # Kalender
 
-:::tip
+::: tip
 Kalender gehören zu [Zammads SLA-Berechnung](/de/reference/rest-api/sla).
 :::
 

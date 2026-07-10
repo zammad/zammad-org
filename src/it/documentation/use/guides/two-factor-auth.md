@@ -50,10 +50,11 @@ app](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
 Prima di tutto, assicurati di aver installato un'app di autenticazione sul
 tuo dispositivo mobile. Le app consigliate sono:
 
-- [Google Authenticator](https://support.google.com/accounts/answer/1066447)
-- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
+- [Google
+  Authenticator](https://support.google.com/accounts/answer/1066447){target=_blank}
+- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/){target=_blank}
 - [Microsoft
-  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
+  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a){target=_blank}
 
 Quindi, apri l'app di autenticazione sul tuo dispositivo e trova un'azione
 **Scansiona codice QR** o simile. Punta la fotocamera verso lo schermo di

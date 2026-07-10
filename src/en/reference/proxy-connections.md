@@ -54,7 +54,7 @@ environment.
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
   ```
 
-:::tip
+::: tip
 Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set
 both variants by additionally specifying them with the values of the upper case variants, for example:
 

@@ -45,7 +45,7 @@ might fail - you can skip this step with choosing sendmail and adjust it later!
 
 If you want to start right away, you can connect your email account already.
 
-:::danger
+::: danger
 By default, Zammad reacts to fetched emails (e.g. deletes them and sends
 automatically generated answers) If that’s not what you want, skip this step
 for now.
@@ -73,7 +73,7 @@ documentation.
 - Add agent accounts
 - Consider backup strategies for Zammad
 
-:::tip
+::: tip
 
 **Are you still lost?**
 

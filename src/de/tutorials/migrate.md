@@ -39,7 +39,7 @@ Allgemeine Einschränkungen für alle Migrationen:
 
 ## Spezifische Migrationsanleitungen
 
-:::info
+::: info
 
 **Fehlt eine Migrationsquelle?**
 
@@ -80,7 +80,7 @@ Zammad erfordert API-Zugriff, weshalb Sie für die Migration einen
 erstellen müssen. Der Migrator wird Ihre Freshdesk-Subdomain und Ihren
 API-Schlüssel anfordern.
 
-:::warning
+::: warning
 Stellen Sie sicher, dass Sie den API-Schlüssel mit einem vollständigen Administratorkonto abrufen. Weniger
 privilegierte Benutzer führen zu einer fehlerhaften Migration.
 :::
@@ -91,7 +91,7 @@ Im Allgemeinen haben Sie zwei Möglichkeiten, wie Sie Daten migrieren
 können. Wenn Sie eine ziemlich große Instanz mit vielen Daten haben, sollten
 Sie die Konsole der Browser-Version vorziehen.
 
-::::tabs
+:::: tabs
 
 === Per Browser
 
@@ -165,7 +165,7 @@ job = ImportJob.create(name: 'Import::Freshdesk')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Möchten Sie den Fortschritt der Migration verfolgen?
 
@@ -231,7 +231,7 @@ aufgeführten.
 Zammad benötigt API-Zugang, weshalb der Migrator Ihre Kayako-URL, Ihre
 E-Mail-Adresse und Ihr Passwort abfragt.
 
-:::warning
+::: warning
 Stellen Sie sicher, dass Sie ein Benutzerkonto mit vollen administrativen Rechten zur Verfügung stellen. Weniger
 privilegierte Benutzer führen zu einer fehlerhaften Migration.
 :::
@@ -242,7 +242,7 @@ Im Allgemeinen haben Sie zwei Möglichkeiten, wie Sie Daten migrieren
 können. Wenn Sie eine ziemlich große Instanz mit vielen Daten haben, sollten
 Sie die Konsole der Browser-Version vorziehen.
 
-::::tabs
+:::: tabs
 
 === Per Browser
 
@@ -324,7 +324,7 @@ job = ImportJob.create(name: 'Import::Kayako')
 AsyncImportJob.perform_later(job)
 ```
 
-:::tip
+::: tip
 
 Möchten Sie den Fortschritt der Migration verfolgen?
 
@@ -382,24 +382,24 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 **Installieren Sie das Znuny4OTRS-Repo, das zu Ihrer OTRS-Version passt (Dependency des OTRS-Migrations-Plugins):**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm){target=_blank}
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm)
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm){target=_blank}
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm)
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm){target=_blank}
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm){target=_blank}
 
 **Installieren Sie das zu Ihrer OTRS Version passende OTRS Migrations-Plugin:**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm){target=_blank}
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm){target=_blank}
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm)
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm){target=_blank}
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm)
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm){target=_blank}
 
 ::: tip
 In einigen Fällen kann ein Neustart des Webservers helfen, interne Serverfehler zu beheben.
@@ -421,7 +421,7 @@ Standardwerte:
 
 #### Import
 
-:::tabs
+::: tabs
 
 === Per Browser
 
@@ -520,7 +520,7 @@ Zammad erfordert einen API-Zugang, weshalb Sie für die Migration einen
 erstellen müssen. Die Migration wird Ihre Zendesk-URL, Ihre E-Mail-Adresse
 und Ihren API-Schlüssel abfragen.
 
-:::warning
+::: warning
 Stellen Sie sicher, dass Sie den API-Schlüssel mit einem vollständigen Administratorkonto abrufen. Weniger
 privilegierte Benutzer führen zu einer fehlerhaften Migration.
 :::
@@ -531,7 +531,7 @@ Im Allgemeinen haben Sie zwei Möglichkeiten, wie Sie Daten migrieren
 können. Wenn Sie eine ziemlich große Instanz mit vielen Daten haben, sollten
 Sie die Konsole der Browser-Version vorziehen.
 
-::::tabs
+:::: tabs
 
 === Per Browser
 
@@ -605,7 +605,7 @@ Aufgabe = ImportJob.create(Name: 'Import::Zendesk')
 AsyncImportJob.perform_later(aufgabe)
 ```
 
-:::tip
+::: tip
 
 Möchten Sie den Fortschritt der Migration verfolgen?
 

@@ -214,7 +214,7 @@ stages and deadlines in a popup. It shows all upcoming or reached escalation tim
 
 ![Screenshot shows escalation panel by hovering over escalation timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
-:::info
+::: info
 The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
 ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.
 :::

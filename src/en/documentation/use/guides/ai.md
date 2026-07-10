@@ -43,7 +43,7 @@ tools, depending on what you want to perform.
 
 ![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
-:::warning
+::: warning
 
 - Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
   try using the undo feature by pressing [[ctrl]] + [[z]].

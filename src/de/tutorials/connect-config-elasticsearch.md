@@ -122,7 +122,7 @@ deaktivieren.
 
 ## Fehlerbehebung
 
-:::tip
+::: tip
 Fehlersuche erfolglos oder Problem nicht beschrieben?
 
 Wenn Sie Ihr Problem nicht anhand der angegebenen Schritte zur Fehlerbehebung lösen können

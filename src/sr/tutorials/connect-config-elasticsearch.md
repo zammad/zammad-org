@@ -117,7 +117,7 @@ console](/en/reference/rails-commands#disable-asciifold).
 
 ## Решавање проблема
 
-:::tip
+::: tip
 Troubleshooting unsuccessful or issue not described?
 
 If you can't solve your issue using the provided troubleshooting steps

@@ -14,9 +14,10 @@ agente a una delle pagine di installazione.
 
 ## Installazione tramite Docker Compose
 
-Questo file copre un'installazione tramite Docker Compose recuperando il
-[repository Docker Compose](https://github.com/zammad/zammad-docker-compose)
-predefinito.
+This file covers an installation via Docker Compose by fetching the default
+[Docker Compose
+repository](https://github.com/zammad/zammad-docker-compose){target=_blank}
+of Zammad.
 
 Prerequisiti:
 

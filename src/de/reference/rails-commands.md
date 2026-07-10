@@ -9,7 +9,7 @@ Zammad verwendet Ruby on Rails, so dass Sie die [Rails
 Konsole](http://guides.rubyonrails.org/command_line.html){target=_blank}
 nutzen können.
 
-:::warning
+::: warning
 Bitte überprüfen Sie Ihre Befehle vor der Ausführung, da einige dieser
 Befehle zu Datenverlusten oder beschädigten Tickets führen können! Wenn
 Sie sich unsicher sind, **testen Sie es zuerst auf einem Testsystem**!
@@ -19,17 +19,17 @@ Sie sich unsicher sind, **testen Sie es zuerst auf einem Testsystem**!
 
 ### Ausführen eines einzelnen Befehls
 
-:::info
+::: info
 Ersetzen Sie `{COMMAND}` durch den Befehl, den Sie ausführen möchten.
 :::
 
-:::tip
+::: tip
 Wenn Sie ein `p` vor Ihrem Befehl voranstellen (z.B. 
 `rails r 'p Delayed::Job.count'`), erhalten Sie eine 
 Ausgabe im Terminal (ohne sehen Sie nichts!).
 :::
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Docker-Installation
 
@@ -54,7 +54,7 @@ rails r '{BEFEHL}'
 
 ### Interaktive Rails-Konsole ausführen
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Docker-Installation
 
@@ -130,14 +130,14 @@ abrufen:
 Ticket::Article.find(3).as_raw.content
 ```
 
-:::info
+::: info
 Wenn Sie nur `Ticket::Article.find(3)` verwenden, können Sie weitere
 Informationen sehen (z.B. wer die Mail geschickt hat, wann sie abgerufen wurde, ...).
 :::
 
 ### Aktualisierung aller Tickets eines bestimmten Kunden
 
-:::warning
+::: warning
 Bitte beachten Sie, dass diese Aktion ressourcenintensiv sein kann. Wenn Sie
 viele Tickets haben, kann dies Zammad verlangsamen.
 :::
@@ -188,7 +188,7 @@ User.find_by(login: 'john.doe')
 
 ### Gesperrte Benutzerkonten entsperren
 
-:::tip
+::: tip
 Das Entsperren eines gesperrten Benutzerkontos wird auch von Zammads UI unterstützt!
 :::
 
@@ -223,7 +223,7 @@ User.find(**USERID**).login_failed
 
 Bei Bedarf können Sie die E-Mail-Adresse des Benutzers ändern.
 
-:::info
+::: info
 Bitte beachten Sie, dass das `login` Attribut hiervon nicht betroffen ist und
 Zammad daher möglicherweise andere Informationen in der Benutzeroberfläche anzeigt.
 :::
@@ -369,7 +369,7 @@ Setting.get('ticket_hook')
 Ermitteln Sie die aktuelle FQDN-Einstellung von Zammad und passen Sie sie
 bei Bedarf an.
 
-:::info
+::: info
 Diese Einstellung hat keine Auswirkungen auf SSL-Zertifikate oder Webserver
 Konfigurationen.
 :::
@@ -392,7 +392,7 @@ Diese Einstellung gehört indirekt zu Ihrer FQDN-Einstellung und ist relevant
 für variablenbasierte URLs (z.B. in Benachrichtigungen), die Zammad
 generiert.
 
-:::warning
+::: warning
 Diese Einstellung wirkt sich auch auf das CSRF-Token-Verhalten von Zammad aus. Wenn Sie
 z.B. auf HTTPs setzen, Sie aber HTTP verwenden, wird die Anmeldung
 fehlschlagen!
@@ -672,7 +672,7 @@ Setting.get('ui_user_organization_selector_with_email')
 
 ### Schriftarteneinstellungen für ausgehende HTML-E-Mails ändern
 
-:::info
+::: info
 Einige Clients (wie Outlook) greifen möglicherweise auf andere Einstellungen zurück, 
 während es bei anderen funktioniert.
 :::
@@ -738,7 +738,7 @@ einzubeziehen (interne Notizen haben _nie_ Auswirkungen auf die
 SLA-Berechnungen). Beachten Sie, dass mit dieser Einstellung die Option zum
 Löschen öffentlicher Notizen deaktiviert wird.
 
-:::info
+::: info
 Standardmäßig werden Kunden nicht benachrichtigt, wenn einem Ticket öffentliche Notizen hinzugefügt werden.
 Richten Sie einen Trigger ein, wenn Sie dieses Verhalten ändern möchten.
 :::
@@ -840,7 +840,7 @@ befindlichen `.eml`-Dateien importiert und erneut verarbeitet werden. Wenn
 die erneute Verarbeitung der E-Mail erfolgreich war, wird die Datei
 bzw. werden die Dateien gelöscht und der leere Ordner entfernt.
 
-:::tip
+::: tip
 Stellen Sie sicher, dass Sie diese Befehle nur vom Zammad-Hauptverzeichnis `/opt/zammad` aus ausführen.
 Es kann Probleme geben, wenn Sie versuchen, sie aus dem
 erzeugten Unterordner auszuführen.
@@ -880,7 +880,7 @@ rake zammad:data_privacy:failed:retry
 
 ### Befüllen eines Testsystems mit Testdaten
 
-:::danger
+::: danger
 Führen Sie dies nicht in einer produktiven Umgebung aus! Dies kann Zammad verlangsamen
 und ist schwer rückgängig zu machen!
 :::
@@ -897,7 +897,7 @@ FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5
 
 ## Daten löschen
 
-:::danger
+::: danger
 ☠️ Die hier aufgeführten Befehle führen zu **nicht wiederherstellbarem Datenverlust**! Nur
 fortfahren, wenn Sie wissen, was Sie tun und
 [ein Backup haben](/de/tutorials/backup-restore)!
@@ -930,7 +930,7 @@ Ticket.where.not(id: tickets_to_keep).destroy_all
 
 ### Entfernen von Benutzern
 
-:::warning
+::: warning
 Kunden **dürfen nicht** gelöscht werden, solange sie noch Tickets im
 System haben.
 
@@ -939,7 +939,7 @@ Kunden, sondern auch **alle mit ihnen verbundenen Tickets** gelöscht. Untensteh
 Befehle löschen ohne weitere Warnungen.
 :::
 
-:::tip
+::: tip
 Wenn Sie nicht sicher sind, was Sie tun sollen und mehr darüber erfahren möchten, was Zammad
 beim Entfernen von Benutzern tut, sollten Sie stattdessen die UI-Optionen von Zammad
 verwenden. Sie finden die Datenschutzfunktion in Zammads Verwaltungsoberfläche unter
@@ -965,7 +965,7 @@ User.where(
 
 ### Entfernen von Organisationen
 
-:::info
+::: info
 Beim Entfernen einer Organisation werden **nicht** die zugehörigen Kunden gelöscht.
 :::
 

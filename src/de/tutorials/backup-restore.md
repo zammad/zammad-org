@@ -8,7 +8,7 @@ title: 'Backup & Restore (Paket)'
 Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
 Paket-Installationen mit, die Sie verwenden können.
 
-:::warning
+::: warning
 Diese Skripte sind ohne jegliche Garantie und funktionieren möglicherweise nicht in Ihrem speziellen
 Anwendungsfall. Dies hängt von der Konfiguration und dem Installationstyp Ihrer
 Instanz ab.
@@ -81,7 +81,7 @@ weiter unten.
 
 `DEBUG` <Badge type="info" text="no"/>
 : Wenn Sie diese Option auf `yes` setzen, werden nützliche Debug-Meldungen ausgegeben.
-  :::warning
+  ::: warning
   Diese Option gibt potenziell sensible Informationen über die Standardausgabe aus! Verwenden Sie
   diese Option nicht in Produktivumgebungen oder schalten Sie sie nach dem
   testen wieder ab.
@@ -109,7 +109,7 @@ der Wiederherstellung Ihrer Daten beginnen.
   Speicherplatz erforderlich. Wenn Sie nur den Dump haben, könnte der Faktor
   3 eine gute Zahl sein.
 
-:::tip
+::: tip
 Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
 [Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank} oder erwägen Sie
 [bezahlte Support-Optionen](https://zammad.com/de/services/professional-services){target=_blank}.
@@ -163,7 +163,7 @@ Originalversion **vor dem Wiederherstellen** sichern.
 Die Wiederherstellung kann auf zwei Arten erfolgen, je nachdem, wie
 interaktiv Sie vorgehen möchten:
 
-::::tabs
+:::: tabs
 
 === Interaktive Wiederherstellung (empfohlen)
 Führen Sie das Skript aus:
@@ -178,7 +178,7 @@ kann dies einige Zeit dauern.
 
 === Nicht-interaktive Wiederherstellung
 
-:::warning
+::: warning
 Verwenden Sie die folgende Option nur, wenn Sie wissen, was Sie tun! Der folgende
 Befehl überschreibt vorhandene Daten ohne weitere Rückfragen!
 :::

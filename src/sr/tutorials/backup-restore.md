@@ -8,7 +8,7 @@ title: 'Backup & Restore (Package)'
 Zammad ships scripts in package installations for backup & restore which you
 can use.
 
-:::warning
+::: warning
 These scripts do not come with any warranty and may not work in your specific
 use case. This depends on the configuration and installation type of your
 instance.
@@ -78,7 +78,7 @@ below.
 
 `DEBUG` <Badge type="info" text="no"/>
 : Setting this option to `yes` will output useful debug messages.
-  :::warning
+  ::: warning
   This option potentially returns sensitive information to standard output! Do
   not use this option in production environments or ensure to turn it off after
   testing.
@@ -102,7 +102,7 @@ your data.
 - At least twice the backed up Zammad instance size of free storage is
   required. If you have the dump only, factor 3 could be a good number.
 
-:::tip
+::: tip
 If your scenario is different as described above, please consult the
 [Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
 or consider
@@ -155,7 +155,7 @@ original version **before restoring**.
 The restore works in two possible ways, depending on how interactive you
 want to go:
 
-::::tabs
+:::: tabs
 
 === Interactive restore (recommended)
 Run the script:
@@ -170,7 +170,7 @@ this may take some time.
 
 === Non-interactive restore
 
-:::warning
+::: warning
 Only use the following option if you know what you're doing! The following
 command will overwrite existing data without further prompts!
 :::

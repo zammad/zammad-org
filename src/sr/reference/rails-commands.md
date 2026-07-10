@@ -8,7 +8,7 @@ title: 'Rails Commands'
 Zammad uses Ruby on Rails so you can make use of the [Rails
 console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
-:::warning
+::: warning
 Please double check your commands before running, as some of those
 commands might cause data loss or damaged tickets! If you're unsure,
 **use a test system first**!
@@ -18,17 +18,17 @@ commands might cause data loss or damaged tickets! If you're unsure,
 
 ### Execute a Single Command
 
-:::info
+::: info
 Replace `{COMMAND}` with your command you want to run.
 :::
 
-:::tip
+::: tip
 If you enter a `p` in front of your command (e.g. like
 `rails r 'p Delayed::Job.count'`), you'll actually receive a printed
 output (without you won't!).
 :::
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Docker Installation
 
@@ -53,7 +53,7 @@ rails r '{COMMAND}'
 
 ### Run Interactive Rails Console
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Docker Installation
 
@@ -127,14 +127,14 @@ From the list we get, we can then get the articles content:
 Ticket::Article.find(3).as_raw.content
 ```
 
-:::info
+::: info
 If you just use `Ticket::Article.find(3)` you can see further
 information (like who sent the mail, when we fetched it, ...).
 :::
 
 ### Update All Tickets of a Specific Customer
 
-:::warning
+::: warning
 Please note that this action can be expensive resource wise, if you
 have many tickets, this might slow down Zammad.
 :::
@@ -184,7 +184,7 @@ User.find_by(login: 'john.doe')
 
 ### Unlock a Locked User Account
 
-:::tip
+::: tip
 Unlocking a locked user account is also supported by Zammad's web UI!
 :::
 
@@ -220,7 +220,7 @@ User.find(**USERID**).login_failed
 
 If needed, you can simply change the email address of the user.
 
-:::info
+::: info
 Please note that the login attribute is not affected by this and
 Zammad thus might show different information within the UI.
 :::
@@ -363,7 +363,7 @@ Setting.get('ticket_hook')
 
 Get the current FQDN setting of Zammad and, if needed, adjust it.
 
-:::info
+::: info
 This setting has no effect on SSL certificates or any web server
 configurations.
 :::
@@ -385,7 +385,7 @@ Setting.set('fqdn', 'new.domain.tld')
 This setting indirectly belongs to your FQDN setting and is relevant for
 variable based URLs (e.g. in notifications) Zammad generated.
 
-:::warning
+::: warning
 This setting also affects Zammad's CSRF token behavior. If you set
 this to e.g. HTTPs but you're using HTTP, logging in will
 fail!
@@ -656,7 +656,7 @@ Setting.get('ui_user_organization_selector_with_email')
 
 ### Change Font Settings for Outgoing HTML Emails
 
-:::info
+::: info
 Some clients (like Outlook) might fallback to other settings while it
 might work for other clients.
 :::
@@ -720,7 +720,7 @@ publicly-visible notes when tracking SLA compliance (internal notes _will
 never_ affect SLA calculations). Be aware that this setting will disable the
 option to delete public notes.
 
-:::info
+::: info
 By default, customers are not notified when public notes are added to a
 ticket. Set up a trigger if you wish to change this behavior.
 :::
@@ -816,7 +816,7 @@ pass the entire folder as argument, so all `.eml` files in it will we
 imported and reprocessed. If the reprocessing of the email was successful,
 the file(s) will be deleted, and the empty folder removed.
 
-:::tip
+::: tip
 Make sure to run these commands only from the main Zammad folder
 `/opt/zammad`. There may be problems if you try to run it from within
 the generated subfolder.
@@ -855,7 +855,7 @@ rake zammad:data_privacy:failed:retry
 
 ### Fill a Test System With Test Data
 
-:::danger
+::: danger
 Don't run this in a productive environment! This can slow down Zammad
 and is hard to revert!
 :::
@@ -871,7 +871,7 @@ FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5
 
 ## Deleting Records
 
-:::danger
+::: danger
 ☠️ The commands listed here cause **irrecoverable data loss**! Only
 proceed if you know what you're doing and you
 [have a backup](/en/tutorials/backup-restore)!
@@ -903,7 +903,7 @@ Ticket.where.not(id: tickets_to_keep).destroy_all
 
 ### Removing Users
 
-:::warning
+::: warning
 Customers **may not** be deleted while they have tickets remaining in
 the system.
 
@@ -912,7 +912,7 @@ customers, but **all tickets associated with them**, as well. Below
 commands delete without any further warnings.
 :::
 
-:::tip
+::: tip
 If you're not sure what to do and need to learn more about what Zammad
 does upon removing users, please consider using Zammad's UI options instead.
 You can find the data privacy feature in Zammad's admin interface under
@@ -937,7 +937,7 @@ User.where(
 
 ### Removing Organizations
 
-:::info
+::: info
 Removing an organization does **not** delete associated customers.
 :::
 

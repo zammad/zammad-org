@@ -5,7 +5,7 @@ order: 10
 
 # Online Notification
 
-:::info
+::: info
 The availability of notification highly depends on the users
 permission and chosen notification settings.
 
@@ -47,7 +47,7 @@ Required permission: `any`
 
 `PUT`-Request sent: `/api/v1/online_notifications/{id}`
 
-::::details
+:::: details
 
 ::: tabs key:reqres
 

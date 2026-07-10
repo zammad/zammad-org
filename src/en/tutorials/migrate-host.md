@@ -170,7 +170,7 @@ If Zammad is not running, run:
 sudo systemctl start zammad
 ```
 
-:::tip
+::: tip
 Migrated from Zammad SaaS or switching provider?
 
 Please make sure that your email notification channel and

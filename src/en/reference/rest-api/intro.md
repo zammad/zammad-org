@@ -43,7 +43,7 @@ your system.
 curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
-:::warning
+::: warning
 We strongly suggest against using basic authentication. Use access
 tokens when ever possible!
 :::
@@ -99,7 +99,7 @@ ticket and one for user:
 **User payload:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -115,7 +115,7 @@ ticket and one for user:
 **Ticket payload:**
 
 :::: details
-:::tabs
+::: tabs
 
 === expand=true
 
@@ -128,7 +128,7 @@ ticket and one for user:
 :::
 ::::
 
-:::tip
+::: tip
 Please note that Core Workflows may restrict access to attributes or
 values.
 :::
@@ -138,7 +138,7 @@ values.
 As Zammad limits the number of returned objects for performance reasons,
 you may have to use pagination at some points.
 
-:::info
+::: info
 **Number of returned objects:** Zammad has hard limits for the
 maximum returned objects. You can't raise these limits.
 
@@ -297,7 +297,7 @@ ascending and descending order.
 
 Directions are: `asc` and `desc`.
 
-:::tip
+::: tip
 Usually you'll want to combine both parameters in your searches -
 e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`
 :::
@@ -326,6 +326,6 @@ URLs with get options (e.g. `?query=this`) you may need to encode your
 URL accordingly.
 
 If you want to learn more about URL encoding, [this Wikipedia
-article](https://en.wikipedia.org/wiki/Percent-encoding) may be of help
+article](https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may be of help
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

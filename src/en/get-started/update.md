@@ -43,7 +43,7 @@ Create a backup. You can use the
 
 ### Update Zammad
 
-:::info
+::: info
 If you update your complete system and there are updates for Zammad **and** your
 database server, this could lead to errors because your database may not be
 online again when Zammad is updated.
@@ -52,7 +52,7 @@ In such a case, you might want to exclude Zammad from updating temporarily as
 you can see in the commands below.
 :::
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 Update package lists:
@@ -201,14 +201,14 @@ sudo systemctl start zammad
 
 ::: warning
 Docker Compose stack updates may require extra steps or introduce breaking
-changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases)
+changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
 for update instructions first.
 :::
 
 ::: tip
 If you want to update Zammad to a specific version, use the `VERSION` environment variable
-([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) with further explanation) and specify
-the version number.
+([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
+with further explanation) and specify the version number.
 :::
 
 ### Updating Portainer Based Installations
@@ -240,7 +240,7 @@ docker compose up -d
 
 Only needed if the release note tells you to rebuild the Elasticsearch index.
 
-:::tabs
+::: tabs
 
 === Docker Compose
 

@@ -112,7 +112,7 @@ tramite [console Rails](/it/reference/rails-commands#disabilita-asciifold).
 
 ## Risoluzione problemi
 
-:::tip
+::: tip
 Risoluzione dei problemi non riuscita o problema non descritto?
 
 Se non riesci a risolvere il tuo problema utilizzando i passaggi di troubleshooting forniti

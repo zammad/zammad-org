@@ -5,7 +5,7 @@ title: Benachrichtigung
 
 # Online-Benachrichtigung
 
-:::info
+::: info
 Die Verfügbarkeit von Benachrichtigungen hängt stark von der Berechtigung
 des Benutzers und den gewählten Benachrichtigungseinstellungen ab.
 
@@ -47,7 +47,7 @@ Erforderliche Erlaubnis: `any`
 
 `PUT`-Anfrage gesendet: `/api/v1/online_notifications/{id}`
 
-::::details
+:::: details
 
 ::: tabs key:reqres
 

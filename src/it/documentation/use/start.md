@@ -35,7 +35,7 @@ sinistra per navigare alla sezione desiderata o usa la ricerca
 nell'intestazione o attivala usando la sua scorciatoia da tastiera [[ctrl]]
 [[k]].
 
-:::tip
+::: tip
 
 Questa documentazione utente è incorporata in una documentazione completa di Zammad. Per assicurarsi che gli utenti non vengano
 sopraffatti da contenuti tecnici, la ricerca è limitata a questa sezione e la barra laterale di navigazione mostra solo la struttura all'interno

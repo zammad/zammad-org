@@ -36,7 +36,7 @@ die linke Seitenleiste, um zu dem gewünschten Abschnitt zu navigieren,
 öffnen die Suche im Kopfbereich oder aktivieren Sie diese mit dem
 Tastaturkürzel [[ctrl]] [[k]].
 
-:::tip
+::: tip
 
 Diese Benutzer-Dokumentation ist Teil einer umfassenden Dokumentation von Zammad. Um sicherzustellen, dass Benutzer nicht mit für sie
 irrelevanten Informationen behelligt werden, ist die Suche auf den Inhalt dieses Bereichs beschränkt und die Navigations-Seitenleiste zeigt

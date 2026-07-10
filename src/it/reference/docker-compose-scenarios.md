@@ -62,8 +62,8 @@ connessione HTTPS.
 
 ### Aggiungi un tunnel Cloudflare
 
-Se vuoi pubblicare Zammad in modo molto comodo, puoi usare un tunnel
-[Cloudflare](https://www.cloudflare.com/).
+If you want to publish Zammad in a very convenient way, you can use a
+[Cloudflare](https://www.cloudflare.com/){target=_blank} tunnel.
 
 - Usa il file di scenario `scenarios/add-cloudflare-tunnel.yml` per la
   distribuzione
@@ -164,8 +164,8 @@ Puoi farlo semplicemente usando il file di scenario
 
 ### Aggiungi Ollama
 
-Puoi avviare un container [Ollama](https://ollama.com/) aggiuntivo per usare
-le funzionalità AI di Zammad.
+You can spin up an additional [Ollama](https://ollama.com/){target=_blank}
+container to use Zammad's AI features on your machine.
 
 ::: info
 Questo è pensato per scopi di sviluppo o test, poiché eseguire uno stack LLM produttivo è.
@@ -189,10 +189,9 @@ d'uso. Prevediamo di aggiungerne altri.
 
 ## Personalizza lo stack localmente
 
-A volte è necessario applicare modifiche locali allo stack Docker di Zammad,
-ad esempio per includere servizi aggiuntivi. Se prevedi di farlo, ti
-consigliamo di non modificare il file `docker-compose.yml`, ma di creare
-invece un file locale `docker-compose.override.yml` che includa tutte le tue
-modifiche. Docker Compose [caricherà automaticamente questo file e unirà le
-sue modifiche allo
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/).
+Sometimes it's necessary to apply local changes to the Zammad Docker stack,
+e.g. to include additional services. If you plan to do so, we recommend that
+you do not change the `docker-compose.yml` file, but instead create a local
+`docker-compose.override.yml` that includes all your modifications. Docker
+Compose will [automatically load this file and merge its changes into your
+stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.

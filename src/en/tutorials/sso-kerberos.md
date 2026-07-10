@@ -92,7 +92,7 @@ In the Kerberos authentication scheme, the **authentication server**
 (Zammad). To make this possible, we need to register a **service
 principal name** (SPN) for Zammad on Active Directory.
 
-:::info
+::: info
 These directions have been confirmed on Windows Server 2016.
 :::
 

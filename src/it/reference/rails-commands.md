@@ -8,7 +8,7 @@ title: 'Comandi Rails'
 Zammad usa Ruby on Rails quindi puoi usare la [console
 Rails](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
-:::warning
+::: warning
 Controlla attentamente i tuoi comandi prima di eseguirli, poiché alcuni di questi
 comandi potrebbero causare danni.
 :::
@@ -17,16 +17,16 @@ comandi potrebbero causare danni.
 
 ### Esegui un singolo comando
 
-:::info
+::: info
 Sostituisci `{COMMAND}` con il comando che vuoi eseguire.
 :::
 
-:::tip
+::: tip
 Se inserisci una `p` davanti al tuo comando (ad esempio come
 `rails r 'p Delayed::Job.count'`),
 :::
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Installazione Docker
 
@@ -37,7 +37,7 @@ docker compose run --rm zammad-railsserver bundle exec rai
 
 ### Esegui la console Rails interattiva
 
-:::tabs key:installmethod
+::: tabs key:installmethod
 
 === Installazione Docker
 
@@ -93,14 +93,14 @@ Dall'elenco ottenuto, possiamo quindi ottenere il contenuto degli articoli:
 Ticket::Article.find(3).as_raw.content
 ```
 
-:::info
+::: info
 Se usi semplicemente `Ticket::Article.find(3)` puoi vedere ulteriori
 informazioni (come chi ha inviato).
 :::
 
 ### Aggiorna tutti i ticket di un cliente specifico
 
-:::warning
+::: warning
 Tieni presente che questa azione può essere costosa in termini di risorse, se
 hai molti ticket, questa.
 :::
@@ -151,7 +151,7 @@ User.find_by(login: 'john.doe')
 
 ### Sblocca un account utente bloccato
 
-:::tip
+::: tip
 Sbloccare un account utente bloccato è supportato anche dall'interfaccia web di Zammad!
 :::
 
@@ -184,7 +184,7 @@ User.find(**USERID**).login_failed
 
 Se necessario, puoi semplicemente cambiare l'indirizzo email dell'utente.
 
-:::info
+::: info
 Tieni presente che l'attributo login non viene influenzato da questo e
 Zammad potrebbe quindi mostrare informazioni diverse.
 :::
@@ -319,7 +319,7 @@ Setting.get('ticket_hook')
 
 Ottieni l'impostazione FQDN corrente di Zammad e, se necessario, regolala.
 
-:::info
+::: info
 Questa impostazione non ha effetto sui certificati SSL o su qualsiasi configurazione del server web.
 :::
 
@@ -340,7 +340,7 @@ Setting.set('fqdn', 'new.domain.tld')
 Questa impostazione appartiene indirettamente alla tua impostazione FQDN ed
 è rilevante per gli URL basati su variabili.
 
-:::warning
+::: warning
 Questa impostazione influisce anche sul comportamento del token CSRF di Zammad. Se imposti
 questo su HTTPs ma.
 :::
@@ -591,7 +591,7 @@ Setting.get('ui_user_organization_selector_with_email')
 
 ### Cambia le impostazioni del font per le email HTML in uscita
 
-:::info
+::: info
 Alcuni client (come Outlook) potrebbero passare ad altre impostazioni mentre potrebbe funzionare per altri.
 :::
 
@@ -648,7 +648,7 @@ Setting.set('cti_customer_last_activity', '90')
 Normalmente, le note non sono rilevanti per SLA. Usa il seguente comando per
 includere quelle visibili pubblicamente.
 
-:::info
+::: info
 Per impostazione predefinita, i clienti non vengono notificati quando vengono aggiunte note pubbliche a un
 ticket.
 :::
@@ -737,7 +737,7 @@ rake zammad:email_parser:failed_email:import path/to/your/email.eml
 Questo applicherà le tue modifiche dal file al database. Puoi anche passare
 l'intera cartella.
 
-:::tip
+::: tip
 Assicurati di eseguire questi comandi solo dalla cartella principale di Zammad
 `/opt/zammad`. Potrebbero esserci.
 :::
@@ -772,7 +772,7 @@ rake zammad:data_privacy:failed:retry
 
 ### Riempi un sistema di test con dati di test
 
-:::danger
+::: danger
 Non eseguire questo in un ambiente di produzione! Questo può rallentare Zammad
 ed è difficile da annullare.
 :::
@@ -786,7 +786,7 @@ FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5
 
 ## Eliminazione record
 
-:::danger
+::: danger
 ☠️ I comandi elencati qui causano una **perdita di dati irrecuperabile**! Procedi solo
 se sai cosa stai facendo.
 :::
@@ -817,14 +817,14 @@ Ticket.where.not(id: tickets_to_keep).destroy_all
 
 ### Rimozione utenti
 
-:::warning
+::: warning
 I clienti **non possono** essere eliminati mentre hanno ticket rimanenti nel
 sistema.
 
 Comè tale
 :::
 
-:::tip
+::: tip
 Se non sei sicuro di cosa fare e devi saperne di più su cosa fa Zammad
 quando rimuove.
 :::
@@ -847,7 +847,7 @@ User.where(
 
 ### Rimozione organizzazioni
 
-:::info
+::: info
 Rimuovere un'organizzazione **non** elimina i clienti associati.
 :::
 

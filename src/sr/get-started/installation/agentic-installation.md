@@ -18,7 +18,8 @@ one of the installation instruction files you can find below.
 ## Installation via Docker Compose
 
 This file covers an installation via Docker Compose by fetching the default
-[Docker Compose repository](https://github.com/zammad/zammad-docker-compose)
+[Docker Compose
+repository](https://github.com/zammad/zammad-docker-compose){target=_blank}
 of Zammad.
 
 Prerequisites:

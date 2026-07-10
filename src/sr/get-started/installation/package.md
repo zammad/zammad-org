@@ -26,7 +26,7 @@ adjust it over there -->
 To follow the installation steps below, tools like curl, gnupg and others
 are required. If they are not present on your system, install them:
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -66,7 +66,7 @@ sudo dnf install curl epel-release
 
 ### Обезбедите исправан locale
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 Излистајте ваша тренутна locale подешавања:
@@ -172,7 +172,7 @@ Packager.io можда није доступан из окружења са ис
 :::
 <!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
 adjust it over there -->
-::::tabs key:distros
+:::: tabs key:distros
 
 === Ubuntu
 Add repository key:
@@ -274,7 +274,7 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10
 
 ### Инсталација Zammad-а
 
-:::tabs key:distros
+::: tabs key:distros
 
 === Ubuntu
 
@@ -387,19 +387,19 @@ guide](/en/tutorials/webserver-config).
 
 ### Redis
 
-[Redis](https://redis.io/) is required for realtime communication via web
-socket. Zammad requires Redis 7 or newer.  It gets installed automatically
-(package) or is included in the stack (Docker Compose) with a working
-configuration.  However, the installation and configuration is out of scope
-of this documentation. Please follow the official guides and ensure to set
-it up in a secure way.
+[Redis](https://redis.io/){target=_blank} is required for realtime
+communication via web socket.  Zammad requires Redis 7 or newer.  It gets
+installed automatically (package) or is included in the stack (Docker
+Compose) with a working configuration.  However, the installation and
+configuration is out of scope of this documentation. Please follow the
+official guides and ensure to set it up in a secure way.
 
 Available environment variables for standard and Sentinel setups are briefly
 mentioned in the [Redis Variables](/en/reference/redis) page.
 
-:::info
-CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation
-on those distros, it gets installed automatically as a dependency.
+::: info
+CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a drop-in-replacement for Redis.
+During the Zammad installation on those distros, it gets installed automatically as a dependency.
 :::
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
@@ -414,7 +414,7 @@ Supported Elasticsearch versions are `8.11` - `9.x`.
 
 Elasticsearch version history for Zammad:
 
-:::details
+::: details
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |

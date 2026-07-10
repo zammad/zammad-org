@@ -5,7 +5,7 @@ title: Calendario
 
 # Calendario
 
-:::tip
+::: tip
 I calendari appartengono al [calcolo SLA](/it/reference/rest-api/sla) di Zammad.
 :::
 

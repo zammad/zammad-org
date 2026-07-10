@@ -39,14 +39,16 @@ Se vuoi usare un file `.env` nelle distribuzioni Docker Compose, puoi usare quel
 ## Zammad
 
 `VERSION` ::d:: <Badge type="tip" text="current stable version of Zammad" />
-: Consente di personalizzare il tag dell’immagine di Zammad. Esempio: `6.3.1-54`. Questa versione predefinita può essere aggiornata quando
-  aggiorni il tuo stack Docker di Zammad. Consulta il
-  [file di esempio env](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist) per maggiori dettagli su questa
-  variabile.
+: Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you
+  update your Zammad Docker stack. Please see the
+  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
+  for more details on this variable.
 
 `AUTOWIZARD_JSON` ::d::
-: Questa variabile consente di fornire dati di configurazione iniziale per la tua istanza. L’Autowizard JSON è fuori dall’ambito di questa documentazione, tuttavia
-  [questo file di esempio](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) dovrebbe essere d’aiuto.
+: This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of
+  this documentation, however
+  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json){target=_blank}
+  should help.
 
 `ZAMMAD_HTTP_TYPE` : Imposta il tipo http per la tua istanza. I valori
 possibili sono `http` e `
@@ -109,7 +111,7 @@ possibili sono `http` e `
 
 ## PostgreSQL
 
-:::tip
+::: tip
 Le variabili per l'installazione Docker e tramite pacchetto sono parzialmente diverse. Controlla le limitazioni.
 :::
 
@@ -232,7 +234,9 @@ comportamento di timeout predefinito.
 : Definisce il tempo massimo in secondi.
 
 `ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
-: Definisce il tempo totale massimo.
+: Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
+  response read. This is an additional hard ceiling on top of `ZAMMAD_HTTP_OPEN_TIMEOUT` and
+  `ZAMMAD_HTTP_READ_TIMEOUT`.
 
 ## Come impostare le variabili d'ambiente
 

@@ -140,7 +140,7 @@ Se Zammad non è in esecuzione, esegui:
 sudo systemctl start zammad
 ```
 
-:::tip
+::: tip
 Migrato da Zammad SaaS o cambio di provider?
 
 Assicurati che le tue notifiche email.
