@@ -367,5 +367,5 @@ entsprechenden Bild die CSS-Klasse `.dark-only` oder `.light-only` zuweisen:
 ```
 
 ![Bild nur für dunkles Theme](/assets/logo-flat-dark.svg){.dark-only
-width=240} ![Bild nur für helles
+width=240} ![Bild nur für helles
 Theme](/assets/logo-flat-light.svg){.light-only width=240}

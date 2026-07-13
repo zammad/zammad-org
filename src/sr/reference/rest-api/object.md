@@ -128,7 +128,7 @@ Required permission: `admin.object`
 :::
 ::::
 
-### Text
+### Текст
 
 ::::: details
 

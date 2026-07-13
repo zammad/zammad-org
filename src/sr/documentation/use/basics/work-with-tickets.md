@@ -23,7 +23,7 @@ explicit update of the ticket is needed. So make sure to click the `Update`
 button on the right side of the footer bar when you are happy with your
 changes.
 
-## Changing Ticket Attributes
+## Измена атрибута тикета
 
 As you may know, there are additional ticket attributes such as group,
 priority and owner that you can set. If you haven't read

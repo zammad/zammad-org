@@ -5,8 +5,8 @@ title: Речник
 
 # Речник
 
-Ever wondered what we mean by a specific term? We've been collecting the
-most relevant terms below for your insight.
+Да ли сте се икада запитали шта подразумевамо под одређеним термином?
+Прикупили смо најрелевантније термине у наставку за ваш увид.
 
 <VPGlossary>
 

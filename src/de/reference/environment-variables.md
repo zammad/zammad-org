@@ -43,17 +43,15 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 
 ## Zammad
 
-`VERSION` ::d:: <Badge type="tip" text="current stable version of Zammad" />
-: Allows customization of the Zammad image tag. Example: `6.3.1-54`. This default version may be increased when you
-  update your Zammad Docker stack. Please see the
-  [example env file](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
-  for more details on this variable.
+`VERSION` ::d:: <Badge type="tip" text="aktuelle stabile Version von Zammad" />
+: Ermöglicht die Anpassung des Image-Tags. Beispiel: `6.3.1-54`. Diese Standardversion kann erhöht werden,
+  wenn Sie Ihren Zammad-Docker-Stack aktualisieren. Weitere Informationen zu der Variablen finden Sie in der
+  [Beispiel-env-Datei](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}.
 
 `AUTOWIZARD_JSON` ::d::
-: This variable allows you to provide initial configuration data for your instance. Autowizard JSON is out of scope of
-  this documentation, however
-  [this example file](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json){target=_blank}
-  should help.
+: Diese Variable ermöglicht es Ihnen, eine initiale Konfiguration für Ihre Instanz bereitzustellen. Autowizard JSON ist
+  nicht Bestandteil dieser Dokumentation, Sie können jedoch einen Blick in die
+  [Beispiel-Datei](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json){target=_blank} werfen.
 
 `ZAMMAD_HTTP_TYPE`
 : Legen Sie den HTTP-Typ für Ihre Instanz fest. Mögliche Werte sind `http`
@@ -281,9 +279,9 @@ Integrationen).
    (z.B. falls Sie eine langsame Verbindung oder langsame Antwortzeiten auf externer Seite haben).
 
 `ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type="tip" text="60" />
-: Defines the maximum total time in seconds for the complete HTTP request, wrapping connection establishment and
-  response read. This is an additional hard ceiling on top of `ZAMMAD_HTTP_OPEN_TIMEOUT` and
-  `ZAMMAD_HTTP_READ_TIMEOUT`.
+: Definiert die maximale Gesamtzeit in Sekunden für die komplette HTTP-Anfrage, einschließlich Verbindungsaufbau und
+  Lesen der Antwort. Dies ist eine zusätzliche harte Obergrenze zusätzlich zu `ZAMMAD_HTTP_OPEN_TIMEOUT` und
+ `ZAMMAD_HTTP_READ_TIMEOUT`.
 
 ## Umgebungsvariablen setzen
 

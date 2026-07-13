@@ -44,12 +44,12 @@ stack nonché alle 3 di ogni notte.
    in place.
 
    ::: info
-   As a part of this process, the cache will be cleared and any pre-existing
-   Elasticsearch indexes will be dropped.
-   All other containers will be waiting for the restore to finish. When that is the case,
-   they will resume their normal operations, which includes an automatic Elasticsearch
-   reindexing (depending on the ENV variables). You can check the container logs for
-   details.
+   Come parte di questo processo, si procederà allo svuotamento della cache e all'eliminazione
+degli indiciElasticsearch preesistenti.
+Tutti gli altri container rimarranno in attesa del completamento del ripristino. Al termine
+le normali attività riprenderanno, inclusa la reindicizzazione automatica di Elasticsearch
+(in base alle variabili ENV). Verificare i log dei container per ulteriori
+dettagli.
    :::
 
 6. Dopo che il processo di ripristino è terminato, la cartella `restore` è

@@ -53,9 +53,9 @@ unter `/var/tmp/zammad` gespeichert.
    dieser eingebauten Backup-Methode unterstützt. Kopieren Sie nicht die
    Dateien `latest_zammad_*.gz`, da sie auf einen für den
    Wiederherstellungsprozess unbekannten Ort verweisen.
-5. Start the stack. The restore process is triggered in the `zammad-backup`
-   service if the `restore` directory is detected and the backup files are
-   in place.
+5. Starten Sie den Stack. Der Wiederherstellungsprozess wird im Dienst
+   `zammad-backup` ausgelöst, wenn das Verzeichnis `restore` erkannt wird
+   und die Sicherungsdateien vorhanden sind.
 
    ::: info
    Im Rahmen dieses Vorgangs wird der Cache geleert und alle bereits vorhandenen

@@ -66,9 +66,9 @@ your Zammad admin, it can be set up easily.
 - **New**: State for new tickets on which no one has worked on. When
   updating a ticket for the first time, it automatically switches to open.
 - **Отворено**: Стање за тикете који још нису решени и захтевају обраду.
-- **Pending Close**: State for tickets which are basically resolved but you
-  don't want to close immediately. This state requires you to enter a date
-  and time at which the ticket automatically switches to closed.
+- **Чека на затварање**: Стање за тикете који су практично решени али не
+  желите одмах да их затворите. Ово стање захтева да унесете датум и време
+  када ће тикет бити аутоматски затворен.
 - **Pending Reminder**: State for open tickets which you want to get
   reminded about at a certain date and time. Requires you to enter a date
   and time at which you want to get notified. For example useful if you had
@@ -90,7 +90,7 @@ states](/screenshots/documentation/use/overviews/states.png)
 Приоритет тикета је једноставно рангирање (од 1 до 3) колико је хитан или
 важан. Три подразумевана приоритета су:
 
-- 1 low
+- 1 низак
 - 2 нормалан
 - 3 висок
 

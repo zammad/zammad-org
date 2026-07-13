@@ -359,5 +359,5 @@ la classe CSS `.dark-only` o `.light-only` all'immagine corrispondente:
 ```
 
 ![Immagine solo tema scuro](/assets/logo-flat-dark.svg){.dark-only
-width=240} ![Immagine solo tema
+width=240} ![Immagine solo tema
 chiaro](/assets/logo-flat-light.svg){.light-only width=240}

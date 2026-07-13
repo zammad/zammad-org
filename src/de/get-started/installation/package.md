@@ -366,10 +366,10 @@ Elasticsearch, das nicht automatisch installiert wird.
 
 ### Datenbank-Server
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
-PostgreSQL server could be detected, it will be installed automatically
-during the package installation.
+Zammad speichert seinen Inhalt in einer Datenbank. Das unterstützte
+Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
+15 oder neuer. Wenn kein PostgreSQL-Server gefunden wird, wird er
+automatisch während der Paketinstallation installiert.
 
 ::: warning
 Wenn Sie Software für das Pooling von Datenbankverbindungen wie PgBouncer verwenden, stellen Sie sicher, dass Sie
@@ -380,8 +380,8 @@ nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 
 ### Reverse Proxy
 
-The following reverse proxies are supported in their currently maintained
-versions:
+Die folgenden Reverse-Proxys werden in ihren aktuell gepflegten Versionen
+unterstützt:
 
 - Nginx
 - Apache
@@ -393,19 +393,20 @@ installiert.  Eine Grundkonfiguration finden Sie in unserem
 
 ### Redis
 
-[Redis](https://redis.io/){target=_blank} is required for realtime
-communication via web socket.  Zammad requires Redis 7 or newer.  It gets
-installed automatically (package) or is included in the stack (Docker
-Compose) with a working configuration.  However, the installation and
-configuration is out of scope of this documentation. Please follow the
-official guides and ensure to set it up in a secure way.
+[Redis](https://redis.io/){target=_blank} wird für die Echtzeitkommunikation
+über Websocket benötigt. Zammad benötigt Redis 7 oder neuer. Es wird
+automatisch installiert (Paket) oder ist im Stack (Docker Compose) enthalten
+mit einer funktionierenden Konfiguration. Die Installation und Konfiguration
+ist allerdings nicht Gegenstand dieser Dokumentation. Bitte folgen Sie den
+offiziellen Anleitungen und stellen Sie sicher, dass Sie es auf sichere
+Weise einrichten.
 
 Die verfügbaren Umgebungsvariablen für Standard- und Sentinel-Setups sind
 auf der Seite [Redis Variablen](/de/reference/redis) aufgeführt.
 
 ::: info
-CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a drop-in-replacement for Redis.
-During the Zammad installation on those distros, it gets installed automatically as a dependency.
+CentOS und RHEL 10 verwenden [Valkey](https://valkey.io/){target=_blank} als Drop-In-Ersatz für Redis.
+Während der Zammad-Installation wird es auf diesen Distributionen automatisch als Abhängigkeit installiert.
 :::
 
 ### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="dringend empfohlen"/>

@@ -71,7 +71,7 @@ Zammad immediately saves your current work progress, so you can easily
 switch between the different areas of Zammad and you don't have to be afraid
 of losing any data like a not yet sent answer in a ticket.
 
-## Sidebar
+## Трака са стране
 
 The sidebar on the right side displays all ticket relevant information and
 includes additional functionality. The most important one is the ticket

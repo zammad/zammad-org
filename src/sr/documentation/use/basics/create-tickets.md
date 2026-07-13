@@ -11,7 +11,7 @@ then it gets added as an article to an existing ticket). However, there
 might be cases where you need to create a ticket manually. Examples:
 
 - Клијент вас позове телефоном.
-- You receive a paper letter from a customer.
+- Примите папирно писмо од клијента.
 - Клијент посети вашу физичку локацију.
 - Желите да проактивно обавестите клијента слањем поруке.
 
@@ -24,7 +24,7 @@ screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
 ## Type Selector
 
-In the ticket create dialog, you can choose from different article types:
+У екрану отварања тикета, можете одабрати различите врсте чланака:
 
 - Received call: for issues initiated by a customer over the phone.
 - Outbound call: for issues initiated by an agent over the phone.
@@ -53,7 +53,7 @@ After setting a customer in the ticket create dialog, the customer sidebar
 automatically opens. You can see additional customer meta information
 including a hint about the currently opened tickets of the customer.
 
-## Text
+## Текст
 
 This is the content section where the currently known details of the issue
 gets written down. For the "Send Email" type, this is the content/message of

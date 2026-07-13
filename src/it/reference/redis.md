@@ -21,4 +21,11 @@ Per una distribuzione Redis standard, puoi fornire una variabile:
 Le variabili nella tabella non hanno valori predefiniti impostati. Nel caso
 tu voglia connettere Zammad.
 
- Variabile                    | Descrizione
+ Variable                    | Description                                                                                                                                      |
+-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+ `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, `sentinel2.example.com` |
+ `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to `mymaster` if not provided                                                                                   |
+ `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            |
+ `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |
+ `REDIS_USERNAME`            | Username for Redis                                                                                                                               |
+ `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |

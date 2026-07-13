@@ -184,8 +184,8 @@ können Sie direkt die neue Konfiguration der Paketquelle hinzufügen.
 ### Zammad aktualisieren
 
 ::: tip
-If there is a new Zammad version available and you want to update to it, check the
-[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
+Wenn eine neue Version von Zammad verfügbar ist und Sie auf diese aktualisieren möchten, lesen Sie die
+[Release Notes](https://zammad.com/de/product/releases){target=_blank} für erforderliche zusätzliche Schritte.
 :::
 
 Aktivieren Sie die Updates für Zammad wieder und aktualisieren Sie Zammad

@@ -337,8 +337,8 @@ Die API erwartet eine UTF-8-Kodierung. Beachten Sie, dass Sie insbesondere
 bei der Verwendung von URLs mit Get-Optionen (z. B. `?query=this`) Ihre URL
 entsprechend kodieren müssen.
 
-If you want to learn more about URL encoding, [this Wikipedia
-article](https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may
-be of help
+Wenn Sie mehr über die Kodierung von URLs erfahren möchten, könnte [dieser
+Wikipedia-Artikel](https://de.wikipedia.org/wiki/URL-Encoding){target=_blank}
+hilfreich sein
 
 [^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)

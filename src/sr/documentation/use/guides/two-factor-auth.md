@@ -36,10 +36,10 @@ Key](#security-key).
 
 ### Апликација за аутентификацију
 
-The authenticator app method is a type of two-factor authentication that
-uses a mobile application to generate one-time codes for account
-verification. After setting up the authenticator app on your device, you
-will link it to your Zammad account.
+Метод апликација за аутентификацију је врста двофакторске аутентификације
+која користи мобилну апликацију за генерисање једнократних кодова за
+верификацију налога. Након подешавања апликације за аутентификацију на свом
+уређају, повезаћете је са својим Zammad налогом.
 
 ![Screenshot shows app authentication
 configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
@@ -95,9 +95,9 @@ list. Then, click on **Next**.
 ![Screenshot shows security key authentication
 configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)
 
-You may be asked by the browser to interact with a key or a device so you
-can prove you are in physical possession of it (e.g. enter its PIN to unlock
-it).
+Претраживач може од вас тражити да ступите у интеракцију са кључем или
+уређајем како бисте могли да докажете да га физички поседујете (нпр. да
+унесете његов PIN да бисте га откључали).
 
 ::: warning
 You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you

@@ -17,9 +17,9 @@ More information about how to configure and activate it can be found in the admi
 
 ## Сажети опис тикета
 
-The ticket summary feature does what it says: it summarizes the ticket's
-content. This can be a huge time saver when dealing with large tickets
-and/or many hand-overs between agents.
+Функција сажетог описа тикета се понаша у складу са својим именом: резимира
+садржај тикета. Ово може бити велика уштеда времена при великих тикета и/или
+пуно примопредаја између оператера.
 
 Уколико је функција укључена, сажети опис тикета ће бити припремљен при
 освежавању тикета и или отварањем детаљног прегледа тикета или бочне траке

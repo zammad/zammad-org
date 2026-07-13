@@ -323,10 +323,10 @@ installato automaticamente.
 
 ### Server database
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
-PostgreSQL server could be detected, it will be installed automatically
-during the package installation.
+Zammad memorizza i suoi contenuti in un database. Il sistema di database
+supportato è [PostgreSQL](https://www.postgresql.org/){target=_blank}
+versione 15 o successiva. Se non viene rilevato alcun server PostgreSQL,
+verrà installato automaticamente durante l'installazione del pacchetto.
 
 ::: warning
 Se utilizzi un software di pooling delle connessioni al database come PgBouncer, assicurati di utilizzare una modalità di pooling completamente compatibile con PostgreSQL. In genere, questa modalità viene chiamata "session connection pooling". Il connection pooling basato sulle transazioni non è supportato e potrebbe causare errori durante le migrazioni del database.
@@ -334,8 +334,8 @@ Se utilizzi un software di pooling delle connessioni al database come PgBouncer,
 
 ### Reverse proxy
 
-The following reverse proxies are supported in their currently maintained
-versions:
+I seguenti proxy inversi sono supportati nelle versioni attualmente
+mantenute:
 
 - Nginx
 - Apache
