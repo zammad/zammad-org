@@ -113,6 +113,36 @@ anche più volte per citare parti diverse del testo. Puoi dividere le
 citazioni usando [[enter]] o [[shift]] + [[enter]] nell'editor e
 disabilitare il formato citazione per il tuo testo.
 
+If the ticket has a long article history, see [Handling of Large
+Tickets](#handling-of-large-tickets) for the conveniences Zammad provides.
+
+### Handling of Large Tickets
+
+When working on tickets with long article histories - like long email
+threads where you need to refer back to earlier messages - Zammad provides
+two conveniences:
+
+- A floating ticket actions toolbar on the bottom right corner of the
+  article list shows quick actions, depending on your scroll position and
+  the ticket state. It contains buttons with icons for the following
+  actions:
+  - **Add internal note**: opens the article reply form to write a note.
+  - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
+    the article list. The end button also doubles as **Scroll to unread
+    article** when there are unread articles.
+  - The toolbar appears whenever the article list is taller than your screen
+    so that crucial actions stay accessible.
+- A **pinned reply form** so the editor stays visible while you scroll
+  through the articles. To pin or unpin the reply form, click the pin icon
+  in the header of the article reply form. The pinned form sticks to the
+  bottom of the ticket detail view. Resize the height by dragging the line
+  on the top edge of the pinned reply form. The pin state as well as the
+  panel size are saved in your browser.
+
+![Screenshot shows the article reply form pinned to the bottom of the ticket
+detail
+view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
+
 ## Rinomina un ticket
 
 Per rinominare un ticket, fai semplicemente clic sul titolo nella barra

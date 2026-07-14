@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-13 14:05+0000\n"
+"POT-Creation-Date: 2026-07-14 10:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -3876,14 +3864,90 @@ msgid ""
 "for your text."
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:85
+#, markdown-text
+msgid ""
+"If the ticket has a long article history, see [Handling of Large "
+"Tickets](#handling-of-large-tickets) for the conveniences Zammad provides."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:86
+#, markdown-text, no-wrap
+msgid "Handling of Large Tickets"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:90
+#, markdown-text
+msgid ""
+"When working on tickets with long article histories - like long email "
+"threads where you need to refer back to earlier messages - Zammad provides "
+"two conveniences:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+#, markdown-text
+msgid ""
+"A floating ticket actions toolbar on the bottom right corner of the article "
+"list shows quick actions, depending on your scroll position and the ticket "
+"state. It contains buttons with icons for the following actions:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+#, markdown-text
+msgid "**Add internal note**: opens the article reply form to write a note."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+#, markdown-text
+msgid ""
+"**Scroll to start** and **Scroll to end**: jump to the top or bottom of the "
+"article list. The end button also doubles as **Scroll to unread article** "
+"when there are unread articles."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+#, markdown-text
+msgid ""
+"The toolbar appears whenever the article list is taller than your screen so "
+"that crucial actions stay accessible."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+#, markdown-text
+msgid ""
+"A **pinned reply form** so the editor stays visible while you scroll through "
+"the articles. To pin or unpin the reply form, click the pin icon in the "
+"header of the article reply form. The pinned form sticks to the bottom of "
+"the ticket detail view. Resize the height by dragging the line on the top "
+"edge of the pinned reply form. The pin state as well as the panel size are "
+"saved in your browser."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:104
+#, markdown-text
+msgid ""
+"![Screenshot shows the article reply form pinned to the bottom of the ticket "
+"detail "
+"view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)"
+msgstr ""
+
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:83
+#: src/en/documentation/use/basics/work-with-tickets.md:105
 #, markdown-text, no-wrap
 msgid "Rename a Ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:88
+#: src/en/documentation/use/basics/work-with-tickets.md:110
 #, markdown-text
 msgid ""
 "To rename a ticket, simply click on the title in the header bar and start "
@@ -3893,13 +3957,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:89
+#: src/en/documentation/use/basics/work-with-tickets.md:111
 #, markdown-text, no-wrap
 msgid "Copy Ticket Number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:95
+#: src/en/documentation/use/basics/work-with-tickets.md:117
 #, markdown-text
 msgid ""
 "To copy the ticket number including a link to the ticket (e.g. to paste it "
@@ -3911,7 +3975,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:98
+#: src/en/documentation/use/basics/work-with-tickets.md:120
 #, markdown-text
 msgid ""
 "If you scrolled own in the ticket, hover over the collapsed header bar where "
@@ -3919,7 +3983,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:100
+#: src/en/documentation/use/basics/work-with-tickets.md:122
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy "
@@ -3927,7 +3991,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:104
+#: src/en/documentation/use/basics/work-with-tickets.md:126
 #, markdown-text
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
@@ -3937,13 +4001,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:105
+#: src/en/documentation/use/basics/work-with-tickets.md:127
 #, markdown-text, no-wrap
 msgid "Simultaneous Ticket Processing"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:110
+#: src/en/documentation/use/basics/work-with-tickets.md:132
 #, markdown-text
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
@@ -3953,7 +4017,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:112
+#: src/en/documentation/use/basics/work-with-tickets.md:134
 #, markdown-text
 msgid ""
 "![Screenshot shows other agents viewing/editing the "
@@ -3961,7 +4025,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:115
+#: src/en/documentation/use/basics/work-with-tickets.md:137
 #, markdown-text
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
@@ -3970,13 +4034,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:141
 #, markdown-text
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:141
 #, markdown-text
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
@@ -3984,7 +4048,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:141
 #, markdown-text
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
@@ -3992,7 +4056,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:122
+#: src/en/documentation/use/basics/work-with-tickets.md:144
 #, markdown-text
 msgid ""
 "There are even more icons which represent additional states of the other "
@@ -4001,19 +4065,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:123
+#: src/en/documentation/use/basics/work-with-tickets.md:145
 #, markdown-text, no-wrap
 msgid "Ticket Actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:126
+#: src/en/documentation/use/basics/work-with-tickets.md:148
 #, markdown-text
 msgid "Additional actions are available in the ::a:: menu in the ticket sidebar."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:130
+#: src/en/documentation/use/basics/work-with-tickets.md:152
 #, markdown-text, no-wrap
 msgid ""
 "History\n"
@@ -4023,7 +4087,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:134
+#: src/en/documentation/use/basics/work-with-tickets.md:156
 #, markdown-text, no-wrap
 msgid ""
 "Merge\n"
@@ -4034,13 +4098,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:137
+#: src/en/documentation/use/basics/work-with-tickets.md:159
 #, markdown-text
 msgid "Change Customer : Reassign the ticket to another customer."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:142
+#: src/en/documentation/use/basics/work-with-tickets.md:164
 #, markdown-text
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
@@ -23898,83 +23962,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24160,6 +24147,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24603,6 +24667,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
