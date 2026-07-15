@@ -71,15 +71,14 @@ modificati in visibilità "interna".
 
 ### Aggiungi un articolo da zero
 
-Fai clic su uno dei pulsanti in fondo alla visualizzazione dettagli ticket
-per aggiungere un articolo. A seconda di cosa scegli, la schermata di
-creazione articolo viene pre-compilata con il tipo e la visibilità. Quando
-si sceglie **Aggiungi risposta**, l'articolo viene inviato al cliente del
-ticket. Nel caso di un ticket basato su email, l'indirizzo email del cliente
-viene pre-compilato.
+Click on the `Add internal note` button below the ticket's articles. This
+opens the editor with activated **Note** type and internal visibility. You
+can change the type or visibility if you like. To answer the customer
+directly or to forward a specific article, use the corresponding buttons
+under an article. Read the next section for more information.
 
-![Screenshot che mostra i pulsanti per il nuovo articolo nella barra
-inferiore](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the Add internal note button below the ticket's
+articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Rispondi a un articolo
 
@@ -159,9 +158,6 @@ del ticket negli appunti, ad esempio `Ticket#50071`. Se incolli il contenuto
 in una destinazione che può gestire HTML, viene incluso un link al
 ticket. Se vuoi incollare solo il numero del ticket, usa invece l'incolla
 normale tramite [[ctrl]] [[shift]] [[v]].
-
-Se hai scrollato nel ticket, passa il mouse sulla barra dell'intestazione
-compressa dove puoi trovare il pulsante in alto a sinistra.
 
 ![Screenshot che mostra l'intestazione del ticket con il pulsante di copia
 del numero ticket

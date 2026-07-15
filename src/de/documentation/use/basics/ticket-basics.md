@@ -132,14 +132,13 @@ das Tag zugewiesen wurde.
 ![Screenshot zeigt Tag-Bereich in der
 Ticket-Seitenleiste](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
-In der Ticket-Seitenleiste finden Sie einen Abschnitt mit der Bezeichnung
-**Tags**. Fügen Sie einen Tag hinzu, indem Sie auf die Schaltfläche ::+::
-klicken.  Je nach Zammad-Konfiguration können Sie neue Tags erstellen, indem
-Sie sie einfach eintippen und mit [[enter]] oder [[tab]] bestätigen. In
-jedem Fall können Sie aus bereits vorhandenen Tags wählen. Sobald Sie
-anfangen zu tippen sehen Sie eine Liste mit passenden Vorschlägen. Um ein
-Tag zu entfernen, klicken Sie auf die Schaltfläche ::X:: auf der rechten
-Seite des Tabs.
+In the ticket sidebar, you can find a section which is labeled as
+**Tags**. Add a tag by clicking on the ::+:: button.  Depending on your
+Zammad's configuration, you can create new tags by simply type and confirm
+them with [[enter]] or [[tab]]. In any case, you can choose from already
+available tags. Start typing and you see a list with matching
+suggestions. To remove it, click the ::x:: button on the right side of the
+tag. This button only shows up when you move the mouse over the tag.
 
 ### Gruppe
 

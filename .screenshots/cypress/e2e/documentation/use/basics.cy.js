@@ -164,7 +164,18 @@ describe('ticket sidebar', () => {
     cy.visit('/desktop/tickets/4')
     cy.get('main').should('exist')
     cy.wait(2000)
-    cy.get('[aria-label="Copy ticket number"]').should('be.visible').highlight().wait(300)
+    // Scope the highlight to the full top-bar variant. Without this scope the
+    // first matched element is the off-viewport button and the highlighting
+    // ends up outside the clipped breadcrumb area.
+    //
+    // We scope via [aria-label="Breadcrumb navigation"] because the
+    // CommonBreadcrumb (and its aria-label) only renders in the full
+    // variant — the compact variant puts the ticket number in a bare <h1>
+    // without a breadcrumb wrapper.
+    cy.get('[aria-label="Breadcrumb navigation"] [aria-label="Copy ticket number"]')
+      .should('be.visible')
+      .highlight()
+      .wait(300)
     cy.get('[aria-label="Breadcrumb navigation"]').should('be.visible').clip({ padding: 10 }).then((TopClip) => {
       cy.get('[aria-label="Open checklist"]').should('be.visible').clip({ padding: 10 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {

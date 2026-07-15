@@ -125,8 +125,8 @@ In the ticket sidebar, you can find a section which is labeled as
 Zammad's configuration, you can create new tags by simply type and confirm
 them with [[enter]] or [[tab]]. In any case, you can choose from already
 available tags. Start typing and you see a list with matching
-suggestions. To remove it, click the ::X:: button on the right side of the
-tab.
+suggestions. To remove it, click the ::x:: button on the right side of the
+tag. This button only shows up when you move the mouse over the tag.
 
 ### Група
 

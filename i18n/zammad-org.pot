@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-14 10:04+0200\n"
+"POT-Creation-Date: 2026-07-15 10:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3546,7 +3546,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:100
+#: src/en/documentation/use/basics/ticket-basics.md:101
 #, markdown-text
 msgid ""
 "In the ticket sidebar, you can find a section which is labeled as "
@@ -3554,12 +3554,12 @@ msgid ""
 "Zammad's configuration, you can create new tags by simply type and confirm "
 "them with [[enter]] or [[tab]]. In any case, you can choose from already "
 "available tags. Start typing and you see a list with matching "
-"suggestions. To remove it, click the ::X:: button on the right side of the "
-"tab."
+"suggestions. To remove it, click the ::x:: button on the right side of the "
+"tag. This button only shows up when you move the mouse over the tag."
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:101
+#: src/en/documentation/use/basics/ticket-basics.md:102
 #: src/en/reference/es-indexed-attributes.md:1054
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, markdown-text, no-wrap
@@ -3567,7 +3567,7 @@ msgid "Group"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:107
+#: src/en/documentation/use/basics/ticket-basics.md:108
 #, markdown-text
 msgid ""
 "This ticket attribute is useful for organizations with more than one team. A "
@@ -3579,13 +3579,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:108
+#: src/en/documentation/use/basics/ticket-basics.md:109
 #, markdown-text, no-wrap
 msgid "Owner"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:114
+#: src/en/documentation/use/basics/ticket-basics.md:115
 #, markdown-text
 msgid ""
 "This is the person who is currently responsible for the ticket. In case you "
@@ -3596,7 +3596,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:116
+#: src/en/documentation/use/basics/ticket-basics.md:117
 #, markdown-text
 msgid ""
 "To change the owner to a person which has only access to another group's "
@@ -3604,25 +3604,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:120
+#: src/en/documentation/use/basics/ticket-basics.md:121
 #, markdown-text
 msgid "Now that you know the basics, head over to one of the following pages:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, markdown-text
 msgid "[Find Tickets](/en/documentation/use/basics/find-tickets)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, markdown-text
 msgid "[Create tickets](/en/documentation/use/basics/create-tickets)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, markdown-text
 msgid "[Work with tickets](/en/documentation/use/basics/work-with-tickets)"
 msgstr ""
@@ -3780,19 +3780,19 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:57
 #, markdown-text
 msgid ""
-"Click on one of the buttons at the bottom of the ticket detail view to add "
-"an article. Depending on what you choose, the article create screen gets "
-"pre-populated with the type and visibility. When choosing **Add reply**, the "
-"article gets sent out to the customer of the ticket. In case of an email "
-"based ticket, the email address of the customer is pre-populated."
+"Click on the `Add internal note` button below the ticket's articles. This "
+"opens the editor with activated **Note** type and internal visibility. You "
+"can change the type or visibility if you like. To answer the customer "
+"directly or to forward a specific article, use the corresponding buttons "
+"under an article. Read the next section for more information."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:59
 #, markdown-text
 msgid ""
-"![Screenshot shows new article buttons in bottom "
-"bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
+"![Screenshot shows the Add internal note button below the ticket's "
+"articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
 msgstr ""
 
 #. type: Title ###
@@ -3975,15 +3975,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:120
-#, markdown-text
-msgid ""
-"If you scrolled own in the ticket, hover over the collapsed header bar where "
-"you can find the button on the top left side."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:122
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy "
@@ -3991,7 +3983,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:126
+#: src/en/documentation/use/basics/work-with-tickets.md:123
 #, markdown-text
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
@@ -4001,13 +3993,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:127
+#: src/en/documentation/use/basics/work-with-tickets.md:124
 #, markdown-text, no-wrap
 msgid "Simultaneous Ticket Processing"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:132
+#: src/en/documentation/use/basics/work-with-tickets.md:129
 #, markdown-text
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
@@ -4017,7 +4009,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:134
+#: src/en/documentation/use/basics/work-with-tickets.md:131
 #, markdown-text
 msgid ""
 "![Screenshot shows other agents viewing/editing the "
@@ -4025,7 +4017,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:137
+#: src/en/documentation/use/basics/work-with-tickets.md:134
 #, markdown-text
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
@@ -4034,13 +4026,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:141
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 #, markdown-text
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:141
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 #, markdown-text
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
@@ -4048,7 +4040,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:141
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 #, markdown-text
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
@@ -4056,7 +4048,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:144
+#: src/en/documentation/use/basics/work-with-tickets.md:141
 #, markdown-text
 msgid ""
 "There are even more icons which represent additional states of the other "
@@ -4065,19 +4057,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:145
+#: src/en/documentation/use/basics/work-with-tickets.md:142
 #, markdown-text, no-wrap
 msgid "Ticket Actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:148
+#: src/en/documentation/use/basics/work-with-tickets.md:145
 #, markdown-text
 msgid "Additional actions are available in the ::a:: menu in the ticket sidebar."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:152
+#: src/en/documentation/use/basics/work-with-tickets.md:149
 #, markdown-text, no-wrap
 msgid ""
 "History\n"
@@ -4087,7 +4079,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:156
+#: src/en/documentation/use/basics/work-with-tickets.md:153
 #, markdown-text, no-wrap
 msgid ""
 "Merge\n"
@@ -4098,13 +4090,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:159
+#: src/en/documentation/use/basics/work-with-tickets.md:156
 #, markdown-text
 msgid "Change Customer : Reassign the ticket to another customer."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:164
+#: src/en/documentation/use/basics/work-with-tickets.md:161
 #, markdown-text
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "

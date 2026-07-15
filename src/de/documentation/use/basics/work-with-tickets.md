@@ -78,15 +78,14 @@ sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
 ### Leeren Artikel hinzufügen
 
-Klicken Sie auf eine der Schaltflächen am unteren Rand der
-Ticket-Detailansicht, um einen Artikel hinzuzufügen. Je nachdem, was Sie
-wählen, ist die Ansicht zum Erstellen eines Artikels mit einem Typ und der
-Sichtbarkeit vorausgefüllt. Wenn Sie **Antwort hinzufügen** wählen, wird
-eine Antwort an den Kunden des Tickets gesendet. Bei einer E-Mail-basierten
-Kommunikation wird die E-Mail-Adresse des Kunden vorausgefüllt.
+Click on the `Add internal note` button below the ticket's articles. This
+opens the editor with activated **Note** type and internal visibility. You
+can change the type or visibility if you like. To answer the customer
+directly or to forward a specific article, use the corresponding buttons
+under an article. Read the next section for more information.
 
-![Screenshot zeigt Schaltflächen für einen neuen Artikel in der
-Fußleiste](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the Add internal note button below the ticket's
+articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Auf einen Artikel antworten
 
@@ -172,9 +171,6 @@ Ticket-Kennung in die Zwischenablage, z.B. `Ticket#50071`. Wenn Sie den
 Inhalt in ein Ziel einfügen, das HTML verarbeiten kann, wird zusätzlich ein
 Link zum Ticket eingefügt. Wenn Sie nur die Ticket-Nummer einfügen möchten,
 verwenden Sie ein unformatiertes Einfügen per [[ctrl]] [[shift]] [[v]].
-
-Wenn Sie im Ticket nach unten gescrollt haben, fahren Sie mit dem Mauszeiger
-über die eingeklappte Kopfleiste, wo Sie die Schaltfläche oben links finden.
 
 ![Screenshot zeigt Ticket Kopfleiste mit hervorgehobener Schaltfläche zum
 Kopieren der

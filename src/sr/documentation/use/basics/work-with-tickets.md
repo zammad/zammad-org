@@ -70,14 +70,14 @@ articles of a communication type (emails, calls) must be changed to
 
 ### Додавање чланка од нуле
 
-Click on one of the buttons at the bottom of the ticket detail view to add
-an article. Depending on what you choose, the article create screen gets
-pre-populated with the type and visibility. When choosing **Add reply**, the
-article gets sent out to the customer of the ticket. In case of an email
-based ticket, the email address of the customer is pre-populated.
+Click on the `Add internal note` button below the ticket's articles. This
+opens the editor with activated **Note** type and internal visibility. You
+can change the type or visibility if you like. To answer the customer
+directly or to forward a specific article, use the corresponding buttons
+under an article. Read the next section for more information.
 
-![Screenshot shows new article buttons in bottom
-bar](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the Add internal note button below the ticket's
+articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Одговори на чланак
 
@@ -157,9 +157,6 @@ copies the complete ticket number with the ticket identifier to your
 clipboard, e.g.  `Ticket#50071`. If pasting the content to a target which
 can handle HTML, a link to the ticket is included. If you just want to paste
 the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead.
-
-If you scrolled own in the ticket, hover over the collapsed header bar where
-you can find the button on the top left side.
 
 ![Screenshot shows ticket header with highlighted ticket number copy
 button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
