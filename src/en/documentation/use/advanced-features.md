@@ -96,7 +96,7 @@ receive notifications for each update.
 
 **How?**
 
-Activate the "Subscribe me" toggle in the ticket side panel to get notifications. If you have been mentioned in a
+Activate the **Subscribe me** toggle in the ticket sidebar to get notifications. If you have been mentioned in a
 ticket, you are automatically subscribed. Switch the toggle off to stop the notification. The avatars displayed show
 you who has subscribed to the ticket and is therefore notified of updates.
 
@@ -237,7 +237,7 @@ There are 2 places where you can apply bulk actions:
 
 In both places, you can apply bulk actions in different ways:
 
-- By using the side panel
+- By using the flyout
 - By using the drag & drop overlay
 
 To use bulk actions, first select the tickets you want to apply the changes to. Either select the tickets
@@ -253,12 +253,12 @@ Depending on the number of affected tickets, you might see a small notification 
 informing you about the progress. The bulk action is performed in the background so you can work on other tickets.
 However, until the bulk action is finished, you are not able to start a new bulk action.
 
-**Side panel:**
+**Flyout:**
 
-![Screenshot shows the bulk action side panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
 After you selected tickets, click the `Bulk Action` button in the top right corner and change/add attributes by using
-the fields in the right side panel. The available changes you can apply to tickets are:
+the fields in the right flyout. The available changes you can apply to tickets are:
 
 - Set group
 - Set owner
@@ -286,7 +286,7 @@ To include another unselected ticket, start dragging from there and so it is als
 
 ## Merge Tickets
 
-![Screenshot shows the ticket merge side panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Why?**
 
@@ -299,7 +299,7 @@ Merging a ticket migrates all messages and notes of the ticket from where you se
 **How?**
 
 Go to the ticket you want to merge into another one. In the ticket sidebar, use the ::a:: menu and select `Merge`. This
-opens a side panel in which you can select a ticket by clicking on it or enter a ticket number in search field.
+opens a flyout in which you can select a ticket by clicking on it or enter a ticket number in search field.
 When you selected a target ticket, confirm by using the `Merge` button at the bottom.
 
 As result, the articles are moved into the chosen ticket. The ticket in which you executed the merge still exists with
@@ -338,7 +338,7 @@ When tickets about related issues arise, they can be linked to each other for ea
 **How?**
 
 In the ticket sidebar, add a link to another ticket by clicking the ::+:: button in the **Related tickets** section.
-This opens a side panel in which you can select a ticket by clicking on it or enter a ticket number in search field.
+This opens a flyout in which you can select a ticket by clicking on it or enter a ticket number in search field.
 Additionally, you can choose between different link types:
 
 - **Normal:** for related ticket which have no hierarchy.

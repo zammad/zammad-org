@@ -62,7 +62,7 @@ The security keys method is a type of a two-factor authentication that uses Web 
 verifying your identity. You may register multiple hardware or software security keys with your Zammad account and then
 they can be used during the sign-in process.
 
-Initially, you will be presented with an empty side panel instructing you to **Set Up** your first key.
+Initially, you will be presented with an empty flyout instructing you to **Set Up** your first key.
 
 ![Screenshot shows security key authentication configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
 
