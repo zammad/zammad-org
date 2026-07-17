@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-17 09:35+0200\n"
+"POT-Creation-Date: 2026-07-17 14:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6424,6 +6424,7 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:76
 #: src/en/tutorials/connect-config-elasticsearch.md:115
 #: src/en/tutorials/sso-kerberos.md:553
+#: src/en/tutorials/webserver-config.md:293
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
 msgstr ""
@@ -8779,6 +8780,7 @@ msgstr ""
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
 #: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
+#: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
 msgstr ""
@@ -9358,11 +9360,10 @@ msgstr ""
 msgid "PostgreSQL"
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/get-started/installation/package.md:353
 #: src/en/get-started/installation/package.md:374
 #: src/en/reference/environment-variables.md:186
-#: src/en/tutorials/webserver-config.md:110
 #, markdown-text, no-wrap
 msgid "Nginx"
 msgstr ""
@@ -9417,10 +9418,9 @@ msgid ""
 "versions:"
 msgstr ""
 
-#. type: Title ###
+#. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:374
-#: src/en/tutorials/webserver-config.md:159
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "Apache"
 msgstr ""
 
@@ -29729,7 +29729,6 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
-#: src/en/tutorials/webserver-config.md:176
 #, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr ""
@@ -30047,346 +30046,236 @@ msgstr ""
 #: src/en/tutorials/webserver-config.md:13
 #, markdown-text
 msgid ""
-"This guide is only relevant for package installations. During the "
-"installation, Zammad tries to automatically install a configuration file to "
-"your Nginx.  You can find example configuration files for your webserver in "
-"the `contrib/` directory of your Zammad installation."
+"Configure your webserver to reverse-proxy the Zammad application server.  "
+"This guide covers obtaining an SSL certificate, adjusting the sample "
+"configuration for Nginx and Apache 2 and reloading the webserver to apply "
+"the changes."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:17
+#: src/en/tutorials/webserver-config.md:22
 #, markdown-text
 msgid ""
-"In case this out-of-the-box approach doesn't work for you, you can find some "
-"hints for your configuration. You can use either Nginx or Apache 2 (only "
-"referred to as Apache in the following text)."
+"You can find sample configuration files for your webserver within the "
+"`contrib/` directory of your Zammad installation. There are two example "
+"files per webserver: `zammad.conf` (plain HTTP) and `zammad_ssl.conf` "
+"(HTTPS). The non-SSL file is intended for local testing only and must not be "
+"used in production. During a package installation of Zammad, the package "
+"automatically copies the non-SSL `zammad.conf` to your webserver's config "
+"directory. For production use, replace it with `zammad_ssl.conf` and follow "
+"the steps on this page."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/webserver-config.md:23
+#, no-wrap
+msgid ""
+"**Docker Compose / Kubernetes users:**\n"
+"\n"
+"Skip this page. Configure the webserver port, hostname and scheme via the\n"
+"`NGINX_*` and `ZAMMAD_RAILSSERVER_*` variables on the\n"
+"[environment variables page](/en/reference/environment-variables).\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/webserver-config.md:18
+#: src/en/tutorials/webserver-config.md:31
 #, markdown-text, no-wrap
-msgid "Get a SSL Certificate"
+msgid "Obtain an SSL Certificate"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:24
+#: src/en/tutorials/webserver-config.md:35
 #, markdown-text
 msgid ""
-"You have to use a named configuration which is not configured by default. To "
-"fix this, open the `zammad.conf` in your webserver's config directory and "
-"replace the `server_name localhost` (Nginx) or `ServerName localhost` "
-"(Apache)  with your Zammad domain."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:26
-#, markdown-text
-msgid "The config directories are usually:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:29
-#, markdown-text
-msgid ""
-"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, "
-"`/etc/nginx/sites-available/`"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:29
-#, markdown-text
-msgid ""
-"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, "
-"`/etc/apache2/sites-available/`"
+"Zammad requires HTTPS in production. Use one of the options below to obtain "
+"a certificate before continuing with the webserver configuration."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/webserver-config.md:30
+#: src/en/tutorials/webserver-config.md:36
+#, markdown-text, no-wrap
+msgid "Commercial Certificate Authority"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:45
+#, markdown-text
+msgid ""
+"Buy an annual certificate from any trusted public CA. A few common options "
+"are [Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank}, "
+"[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} or "
+"[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Install the "
+"resulting certificate, key and chain on your server as you would for any "
+"HTTPS service, then continue with the webserver configuration below."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:46
 #, markdown-text, no-wrap
 msgid "Let's Encrypt"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:38
+#: src/en/tutorials/webserver-config.md:50
 #, markdown-text
 msgid ""
-"There are two common tools to get certificates, to which your find a basic "
-"configuration below: "
-"[Certbot](https://certbot.eff.org/instructions){target=_blank} and "
-"[acme.sh](https://github.com/acmesh-official/acme.sh/wiki){target=_blank}.  "
-"Have a look at their documentation for further configuration details and "
-"other examples."
+"Let's Encrypt issues free, automatically renewable certificates. Two clients "
+"are commonly used."
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:39
+#: src/en/tutorials/webserver-config.md:51
 #, no-wrap
 msgid ""
 "\n"
-"===Certbot\n"
+"=== Certbot\n"
 "\n"
-"If not happened automatically, you have to install the Nginx or Apache "
-"plugin\n"
-"for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
-"\n"
-"During the first Certbot run it will request additional information once.\n"
-"Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
-"`nginx` to match your setup.\n"
-"\n"
-"```sh\n"
-"certbot --<webserver> -d zammad.example.com\n"
-"```\n"
-"\n"
-"Certbot will now attempt to issue a certificate for you. If successful,\n"
-"Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
-"automatically. You can choose to not redirect if you plan to use the "
-"sample\n"
-"configuration of Zammad.\n"
-"\n"
-"From now on, Certbot will automatically renew your installed certificates "
-"if\n"
-"they’re valid for 30 days or less.\n"
-"\n"
-"===acme.sh\n"
-"\n"
-"Change the default certificate authority to Let's Encrypt:\n"
+"Certbot is the most widely used ACME client. Follow the upstream\n"
+"[Certbot installation "
+"instructions](https://certbot.eff.org/instructions){target=_blank},\n"
+"select your distribution and the matching webserver plugin in the\n"
+"selector and complete the install. Once installed, request a certificate\n"
+"by replacing `<webserver>` with `nginx` or `apache` and\n"
+"`zammad.example.com` with your subdomain:\n"
 "\n"
 "```sh\n"
-"acme.sh --set-default-ca  --server letsencrypt\n"
+"sudo certbot --<webserver> -d zammad.example.com\n"
 "```\n"
 "\n"
-"Issue your certificate and replace `<webserver>` in the following command\n"
-"with either `apache` or `nginx` or `standalone` for other webserver.\n"
+"Certbot will issue the certificate, ask whether to redirect HTTP to HTTPS\n"
+"(choose `[1] not redirect` if you plan to use the Zammad sample\n"
+"configuration, which already handles the redirect, otherwise choose\n"
+"`[2] redirect`) and arrange automatic renewal once the certificate has\n"
+"less than 30 days of validity remaining.\n"
+"\n"
+"=== acme.sh\n"
+"\n"
+"[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} is\n"
+"a lightweight shell-based ACME client and an alternative to Certbot, but\n"
+"it no longer uses Let's Encrypt by default. Set the default CA to Let's\n"
+"Encrypt before issuing a certificate:\n"
 "\n"
 "```sh\n"
-"acme.sh --issue --<webserver> -d zammad.example.com\n"
+"acme.sh --set-default-ca --server letsencrypt\n"
 "```\n"
 "\n"
-"It is not recommended to use the stored certificates directly. You should\n"
-"install the certificate to a directory of your choice instead as you can "
-"see\n"
-"in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
-"but you can use any directory you like.\n"
+"Issue the certificate by replacing `<webserver-plugin>` with `nginx`,\n"
+"`apache` or `standalone` and `zammad.example.com` with your subdomain:\n"
 "\n"
-"Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
+"```sh\n"
+"acme.sh --issue --<webserver-plugin> -d zammad.example.com\n"
+"```\n"
+"\n"
+"Install the certificate to a directory of your choice (e.g.\n"
+"`/etc/ssl/private/`) and reload the webserver after each renewal.\n"
+"Replace `<webserver-service>` in the command below with the matching\n"
+"systemd service name (`nginx`, `apache2` or `httpd`):\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
 "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
 "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
 "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-"    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
+"    --reloadcmd     \"sudo systemctl force-reload <webserver-service>\"\n"
 "```\n"
 "\n"
-"From now on, acme.sh will automatically renew your installed certificates "
-"if\n"
-"they’re valid for 30 days or less.\n"
+"See the\n"
+"[acme.sh "
+"documentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}\n"
+"for further use cases.\n"
 "\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/tutorials/webserver-config.md:97
-#, markdown-text, no-wrap
-msgid "Commercial CA"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:103
-#, markdown-text
-msgid ""
-"If you prefer to use certificates from a different official Certificate "
-"Authority (CA) than Let's Encrypt, you can do so as well. Just get your "
-"certificate bundle, install it according to their documentation and continue "
-"with adjusting the webserver configuration."
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/webserver-config.md:104
+#: src/en/tutorials/webserver-config.md:109
 #, markdown-text, no-wrap
-msgid "Adjusting the Webserver Configuration"
+msgid "Adjust the Webserver Configuration"
 msgstr ""
 
-#. type: Fenced div block (warning)
-#: src/en/tutorials/webserver-config.md:106
-#, no-wrap
-msgid "Make sure to never use HTTP connections - we encourage you to use HTTPS!\n"
-msgstr ""
-
-#. type: Title ####
+#. type: Plain text
 #: src/en/tutorials/webserver-config.md:112
 #, markdown-text, no-wrap
-msgid "Step 1 - Get a Current Config File"
+msgid "<!-- markdownlint-disable MD036 -->\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:116
-#, markdown-text
-msgid ""
-"Copy & overwrite the default `zammad.conf`. Adjust your Nginx config "
-"directory according to your setup:"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:117
+#. type: Fenced div block (tabs)
+#: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid ""
-"cp /opt/zammad/contrib/nginx/zammad_ssl.conf "
-"/etc/nginx/sites-available/zammad.conf\n"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:121
-#, markdown-text, no-wrap
-msgid "Step 2 - Adjust the Config File"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:212
-#, markdown-text
-msgid ""
-"Adjust the just copied file with a text editor of your choice (e.g. vi or "
-"nano)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:127
-#, markdown-text
-msgid ""
-"Locate any `server_name` directive and adjust `example.com` to the domain of "
-"your Zammad instance."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:130
-#, markdown-text
-msgid ""
-"Now you'll need to adjust the path and file names for your ssl certificates "
-"you obtained. Adjust the following directives to match your setup:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, markdown-text
-msgid "`ssl_certificate` (your SSL certificate)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, markdown-text
-msgid "`ssl_certificate_key` (the certificates private key)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, markdown-text
-msgid "`ssl_trusted_certificate` (the public CA certificate)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:138
-#, markdown-text
-msgid ""
-"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
-"below to generate this file. You can find the correct path in your webserver "
-"config. Search for `ssl_dhparam`."
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:227
-#, no-wrap
-msgid ""
-"openssl dhparam -out <path>/dhparam.pem 4096\n"
 "\n"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:144
-#, markdown-text, no-wrap
-msgid "Step 3 - Adjust HTTPS Configuration"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:238
-#, markdown-text
-msgid ""
-"Our default configuration aims for a broad support of end user devices. This "
-"may not fit your needs. Mozilla has a great [SSL-config "
-"generator](https://ssl-config.mozilla.org/){target=_blank} that should help "
-"you to meet your requirements!"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:151
-#, markdown-text, no-wrap
-msgid "Step 4 - Save & Reload"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:155
-#, markdown-text
-msgid ""
-"Reload your Nginx with `sudo systemctl reload nginx` to apply your "
-"configuration changes."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:284
-#, markdown-text
-msgid ""
-"After that, you should be greeted by our getting started wizard.  Go on with "
-"the [first steps in Zammad](/en/tutorials/first-steps)."
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:161
-#, markdown-text, no-wrap
-msgid "Step 1 - Enable Module"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:165
-#, markdown-text
-msgid ""
-"Zammad requires a module (`a2enmod`) which is not enabled by default. CentOS "
-"users have to adjust a config file because this module is not available "
-"there."
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:166
-#, no-wrap
-msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:171
-#, markdown-text
-msgid "If you want to run Zammad under HTTP/2, you will also need:"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:172
-#, no-wrap
-msgid "a2enmod h2 proxy_http2 mpm_event\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:181
-#, markdown-text
-msgid "Click to open details for CentOS config:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/tutorials/webserver-config.md:182
-#, no-wrap
-msgid ""
-"Add/uncomment the appropriate `LoadModule` statements in your Apache "
-"config\n"
-"in `/etc/httpd/conf/httpd.conf`:\n"
+"=== Nginx (default)\n"
+"\n"
+"**Get the sample config into place**\n"
+"\n"
+"Copy the SSL sample configuration to your Nginx config directory:\n"
+"\n"
+"```sh\n"
+"sudo cp /opt/zammad/contrib/nginx/zammad_ssl.conf \\\n"
+"    /etc/nginx/sites-available/zammad.conf\n"
+"```\n"
+"\n"
+"Most common Nginx config directories:\n"
+"\n"
+"- `/etc/nginx/conf.d/`\n"
+"- `/etc/nginx/vhosts.d/`\n"
+"- `/etc/nginx/sites-available/`\n"
+"\n"
+"**Adjust server name and certificate paths**\n"
+"\n"
+"Adjust the just copied file with a text editor of your choice (e.g.\n"
+"vi or nano). Locate both `server_name` directives (one in the HTTP\n"
+"server block on port 80, one in the HTTPS server block on port 443)\n"
+"and adjust `example.com` to the subdomain you have chosen for your\n"
+"Zammad instance.\n"
+"\n"
+"Now you'll need to adjust the path and file names for your SSL\n"
+"certificates you obtained on the prior steps. Adjust the following\n"
+"directives to match your setup:\n"
+"\n"
+"- `ssl_certificate` (your SSL certificate)\n"
+"- `ssl_certificate_key` (the certificate's private key)\n"
+"- `ssl_trusted_certificate` (the public CA certificate)\n"
+"\n"
+"To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+"file and point `ssl_dhparam` at it:\n"
+"\n"
+"```sh\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+"```\n"
+"\n"
+"**Reload and verify**\n"
+"\n"
+"Verify the configuration:\n"
+"\n"
+"```sh\n"
+"sudo nginx -t\n"
+"```\n"
+"\n"
+"Reload Nginx:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload nginx\n"
+"```\n"
+"\n"
+"=== Apache 2\n"
+"\n"
+"**Enable the required modules**\n"
+"\n"
+"Zammad requires modules that are not enabled by default. On Ubuntu,\n"
+"Debian and openSUSE use `a2enmod`:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+"```\n"
+"\n"
+"For HTTP/2 support also enable:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod h2 proxy_http2 mpm_event\n"
+"```\n"
+"\n"
+"On CentOS / RHEL add the matching `LoadModule` lines to\n"
+"`/etc/httpd/conf/httpd.conf` instead:\n"
 "\n"
 "```apache\n"
 "LoadModule headers_module modules/mod_headers.so\n"
@@ -30396,152 +30285,190 @@ msgid ""
 "LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
 "```\n"
 "\n"
-"Restart your webserver after saving the configuration.\n"
+"Restart Apache after enabling the modules:\n"
+"\n"
+"```sh\n"
+"sudo systemctl restart apache2\n"
+"```\n"
+"\n"
+"**Get the sample config into place**\n"
+"\n"
+"Copy the SSL sample configuration to your Apache config directory:\n"
+"\n"
+"```sh\n"
+"sudo cp /opt/zammad/contrib/apache2/zammad_ssl.conf \\\n"
+"    /etc/apache2/sites-available/zammad.conf\n"
+"```\n"
+"\n"
+"Most common Apache config directories:\n"
+"\n"
+"- `/etc/apache2/conf.d/`\n"
+"- `/etc/httpd/vhosts.d/`\n"
+"- `/etc/apache2/sites-available/`\n"
+"\n"
+"The package installation attempts to copy this file for you. Do not\n"
+"rename it.\n"
+"\n"
+"**Adjust server name and certificate paths**\n"
+"\n"
+"Adjust the just copied file with a text editor of your choice (e.g.\n"
+"vi or nano). Locate any `ServerName` directive and adjust `example.com`\n"
+"to the subdomain you have chosen for your Zammad instance. The first\n"
+"`ServerName` (in the HTTP VirtualHost) defaults to `example.com` and\n"
+"the second (in the HTTPS VirtualHost) to `localhost`.\n"
+"\n"
+"Now you'll need to adjust the path and file names for your SSL\n"
+"certificates you obtained on the prior steps. Adjust the following\n"
+"directives to match your setup:\n"
+"\n"
+"- `SSLCertificateFile` (your SSL certificate)\n"
+"- `SSLCertificateKeyFile` (the certificate's private key)\n"
+"- `SSLCertificateChainFile` (the public CA certificate)\n"
+"\n"
+"To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+"file and point `SSLOpenSSLConfCmd DHParameters` at it:\n"
+"\n"
+"```sh\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+"```\n"
+"\n"
+"**Enable the site**\n"
+"\n"
+"On Ubuntu, Debian and openSUSE:\n"
+"\n"
+"```sh\n"
+"sudo a2ensite zammad\n"
+"```\n"
+"\n"
+"On CentOS / RHEL:\n"
+"\n"
+"```sh\n"
+"sudo ln -s /etc/httpd/sites-available/zammad_ssl.conf "
+"/etc/httpd/sites-enabled/\n"
+"```\n"
+"\n"
+"Make sure `IncludeOptional sites-enabled/*.conf` is present in\n"
+"`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) or\n"
+"`/etc/httpd/conf/httpd.conf` (CentOS / RHEL).\n"
+"\n"
+"**Reload and verify**\n"
+"\n"
+"Reload Apache and verify the configuration:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload apache2\n"
+"```\n"
+"\n"
+"=== Local testing or other proxy servers\n"
+"\n"
+"Zammad's main application listens on port `3000` and the websocket\n"
+"server on port `6042`. If you put your own reverse proxy in front of\n"
+"Zammad, forward both.\n"
+"\n"
+"If the default ports conflict with other applications on your host, see\n"
+"the [environment variables page](/en/reference/environment-variables) to\n"
+"change them.\n"
 "\n"
 msgstr ""
 
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:198
-#, markdown-text, no-wrap
-msgid "Step 2 - Get a Current Config File"
+#. type: Fenced div block (tabs|warning)
+#: src/en/tutorials/webserver-config.md:113
+#, no-wrap
+msgid ""
+"Do not expose Zammad directly to the internet. Zammad only provides\n"
+"plain HTTP and would be reachable without authentication.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:202
+#: src/en/tutorials/webserver-config.md:288
+#, markdown-text, no-wrap
+msgid "<!-- markdownlint-enable MD036 -->\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:292
 #, markdown-text
 msgid ""
-"The package installation copied a `zammad.conf` file to your webserver "
-"config directory. Check if it is present and do not rename this file!"
+"Now visit your configured Zammad domain in a browser to reach the Zammad "
+"UI. If you don't see Zammad's setup wizard or Zammad UI at all, check the "
+"[Troubleshooting section](#troubleshooting) below."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:295
+#, markdown-text, no-wrap
+msgid "Default Landing Page Instead of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:204
+#: src/en/tutorials/webserver-config.md:301
 #, markdown-text
-msgid "Adjust your Apache config directory according to your setup:"
+msgid ""
+"If you reach the webserver's default landing page rather than Zammad, your "
+"`zammad.conf` may be overruled by another config file. Check the vhost "
+"directory for `000-default.conf` or `default.conf` and disable it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:302
+#, markdown-text, no-wrap
+msgid "DNS Not Resolving"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:308
+#, markdown-text
+msgid ""
+"If the subdomain does not resolve, double-check the DNS records for your "
+"domain and wait for them to propagate. Replace the `zammad.example.com` in "
+"the following command with your configured domain of Zammad and check if the "
+"domain points to the right server:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:205
+#: src/en/tutorials/webserver-config.md:309
 #, no-wrap
-msgid "ls /etc/apache2/sites-available\n"
+msgid "host zammad.example.com\n"
 msgstr ""
 
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:209
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:313
 #, markdown-text, no-wrap
-msgid "Step 3 - Adjust the Config File"
+msgid "CSRF Token Errors"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:215
+#: src/en/tutorials/webserver-config.md:318
 #, markdown-text
 msgid ""
-"Locate any `ServerName` directive and adjust `example.com` to the domain of "
-"your Zammad instance."
+"If users cannot log in because of CSRF token errors, your webserver chain "
+"may not pass the original connection type to Zammad. Tell the proxy directly "
+"that the connection is HTTPS."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:218
-#, markdown-text
-msgid ""
-"Now you'll need to adjust the path and file names for your SSL certificates "
-"you obtained. Adjust the following directives to match your setup:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, markdown-text
-msgid "`SSLCertificateFile` (your SSL certificate)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, markdown-text
-msgid "`SSLCertificateKeyFile`(the certificate's private key)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, markdown-text
-msgid "`SSLCertificateChainFile` (the public CA certificate)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:226
-#, markdown-text
-msgid ""
-"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
-"below to generate this file. You can find the correct path in your webserver "
-"config. Search for `SSLOpenSSLConfCmd DHParameters`."
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:232
+#: src/en/tutorials/webserver-config.md:323
 #, markdown-text, no-wrap
-msgid "Step 4 - Adjust HTTPS Configuration"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:239
-#, markdown-text, no-wrap
-msgid "Step 5 - Enable the Site"
+msgid ""
+"Nginx\n"
+": Within your virtual host configuration, locate\n"
+"  `proxy_set_header X-Forwarded-Proto` and replace `$scheme` with\n"
+"  `https`.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:243
-#, markdown-text
+#: src/en/tutorials/webserver-config.md:327
+#, markdown-text, no-wrap
 msgid ""
-"This step mostly depends on your selected folders and should only affect "
-"`sites-available` folders."
+"Apache 2\n"
+": Within your virtual host configuration, just above the first\n"
+"  `ProxyPass` directive, insert:\n"
 msgstr ""
 
-#. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:244
+#. type: Fenced code block (apache)
+#: src/en/tutorials/webserver-config.md:328
 #, no-wrap
 msgid ""
-"\n"
-"=== Ubuntu, Debian, OpenSUSE\n"
-"\n"
-"Make sure the following line is present in your Apache config\n"
-"(`/etc/apache2/apache2.conf`):\n"
-"\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
-"\n"
-"Enable it:\n"
-"\n"
-"```sh\n"
-"a2ensite zammad\n"
-"```\n"
-"\n"
-"=== CentOS\n"
-"\n"
-"Make sure the following line is present in your Apache config\n"
-"(`/etc/httpd/conf/httpd.conf`):\n"
-"\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
-"\n"
-"Enable it:\n"
-"\n"
-"```sh\n"
-"ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
-"```\n"
-"\n"
-msgstr ""
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:278
-#, markdown-text, no-wrap
-msgid "Step 6 - Save & Reload"
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:282
-#, markdown-text
-msgid ""
-"Reload your Apache with `sudo systemctl reload apache2` to apply your "
-"configuration changes."
+"  RequestHeader set X_FORWARDED_PROTO 'https'\n"
+"  RequestHeader set X-Forwarded-Ssl on\n"
 msgstr ""
