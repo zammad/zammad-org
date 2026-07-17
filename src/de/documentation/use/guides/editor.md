@@ -22,7 +22,7 @@ anderer Stelle beschrieben sind, verweisen wir hier nur darauf, um doppelten
 Inhalt zu vermeiden.
 
 - [KI-Assistent Text-Werkzeuge](ai#schreibassistent-werkzeuge)
-- [Benutzer erwähnen](../advanced-features#erwahnen-von-benutzern)
+- [Benutzer erwähnen](../advanced-features#einen-benutzer-erwahnen)
 - [Textbausteine einfügen](../advanced-features#textbausteine)
 - [Knowledge Base-Artikel
   einfügen](../advanced-features#knowledge-base-artikel-einfugen)

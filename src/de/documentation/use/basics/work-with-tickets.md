@@ -78,14 +78,16 @@ sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
 ### Leeren Artikel hinzufügen
 
-Click on the `Add internal note` button below the ticket's articles. This
-opens the editor with activated **Note** type and internal visibility. You
-can change the type or visibility if you like. To answer the customer
-directly or to forward a specific article, use the corresponding buttons
-under an article. Read the next section for more information.
+Klicken Sie auf die Schaltfläche `Interne Notiz hinzufügen` unter den
+Artikeln des Tickets. Dadurch wird der Editor mit aktiviertem **Notiz**-Typ
+und interner Sichtbarkeit geöffnet. Sie können den Typ oder die Sichtbarkeit
+bei Bedarf ändern. Um den Kunden direkt zu antworten oder einen bestimmten
+Artikel weiterzuleiten, verwenden Sie die entsprechenden Schaltflächen unter
+einem Artikel. Lesen Sie den nächsten Abschnitt für weitere Informationen.
 
-![Screenshot shows the Add internal note button below the ticket's
-articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot zeigt die Schaltfläche Interne Notiz hinzufügen unter den
+Artikeln des
+Tickets](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Auf einen Artikel antworten
 
@@ -124,35 +126,40 @@ weiteres Zitat zu Ihrem Editor hinzugefügt.  Sie können Zitate aufteilen,
 indem Sie [[enter]] oder [[shift]] + [[enter]] im Editor drücken und das
 Zitat-Format für Ihren Text deaktivieren.
 
-If the ticket has a long article history, see [Handling of Large
-Tickets](#handling-of-large-tickets) for the conveniences Zammad provides.
+Wenn das Ticket eine lange Artikelhistorie hat, lesen Sie in [Bearbeitung
+großer Tickets](#bearbeitung-großer-tickets) weiter, um mehr über die von
+Zammad bereitgestellten Komfortfunktionen zu erfahren.
 
-### Handling of Large Tickets
+### Bearbeitung großer Tickets
 
-When working on tickets with long article histories - like long email
-threads where you need to refer back to earlier messages - Zammad provides
-two conveniences:
+Bei der Bearbeitung von Tickets mit umfangreicher Artikelhistorie – wie
+beispielsweise bei langen E-Mail-Verläufen, bei denen Sie auf frühere
+Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
 
-- A floating ticket actions toolbar on the bottom right corner of the
-  article list shows quick actions, depending on your scroll position and
-  the ticket state. It contains buttons with icons for the following
-  actions:
-  - **Add internal note**: opens the article reply form to write a note.
+- Eine schwebende Aktionsleiste für Tickets in der unteren rechten Ecke der
+  Artikelliste zeigt je nach Scrollposition und dem Status des Tickets
+  Schnellaktionen an. Sie enthält Schaltflächen mit Symbolen für die
+  folgenden Aktionen:
+  - **Interne Notiz hinzufügen**: Öffnet das Antwortformular, in dem Sie
+    eine Notiz verfassen können.
   - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
     the article list. If there are unread articles, the **Scroll to end
     button** displays a badge and changes to **Scroll to unread article**.
-  - The toolbar appears whenever the article list is taller than your screen
-    so that crucial actions stay accessible.
-- A **pinned reply form** so the editor stays visible while you scroll
-  through the articles. To pin or unpin the reply form, click the pin icon
-  in the header of the article reply form. The pinned form sticks to the
-  bottom of the ticket detail view. Resize the height by dragging the line
-  on the top edge of the pinned reply form. The pin state as well as the
-  panel size are saved in your browser.
+  - Die Symbolleiste wird angezeigt, sobald die Liste der Artikel größer ist
+    als Ihre Ansicht, damit wichtige Funktionen weiterhin zugänglich
+    bleiben.
+- Ein **angeheftetes Antwortformular**, sodass der Editor sichtbar bleibt,
+  während Sie durch die Artikelliste scrollen. Um das Antwortformular
+  anzuheften oder abzulösen, klicken Sie auf das Stecknadel-Symbol in der
+  Kopfzeile des Artikel-Antwortformulars. Das angeheftete Formular bleibt am
+  unteren Rand der Ticket-Detailansicht angezeigt. Passen Sie die Höhe an,
+  indem Sie die Linie am oberen Rand des angehefteten Antwortformulars
+  ziehen. Der Anheftstatus sowie die Größe des angehefteten Bereichs werden
+  in Ihrem Browser gespeichert.
 
-![Screenshot shows the article reply form pinned to the bottom of the ticket
-detail
-view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
+![Der Screenshot zeigt das Antwortformular für Artikel, das am unteren Rand
+der Ticket-Detailansicht angeheftet
+ist](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
 ## Ein Ticket umbenennen
 
