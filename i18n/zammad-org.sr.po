@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-10 14:07+0200\n"
+"POT-Creation-Date: 2026-07-17 14:35+0200\n"
 "PO-Revision-Date: 2026-07-10 14:34+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -2087,8 +2087,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:102
+#, fuzzy
+#| msgid ""
+#| "Activate the \"Subscribe me\" toggle in the ticket side panel to get "
+#| "notifications. If you have been mentioned in a ticket, you are "
+#| "automatically subscribed. Switch the toggle off to stop the notification. "
+#| "The avatars displayed show you who has subscribed to the ticket and is "
+#| "therefore notified of updates."
 msgid ""
-"Activate the \"Subscribe me\" toggle in the ticket side panel to get "
+"Activate the **Subscribe me** toggle in the ticket sidebar to get "
 "notifications. If you have been mentioned in a ticket, you are automatically "
 "subscribed. Switch the toggle off to stop the notification. The avatars "
 "displayed show you who has subscribed to the ticket and is therefore "
@@ -2508,7 +2515,9 @@ msgstr "На оба места можете покренути масовне р
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
-msgid "By using the side panel"
+#, fuzzy
+#| msgid "By using the side panel"
+msgid "By using the flyout"
 msgstr "Коришћењем панела са стране"
 
 #. type: Bullet: '- '
@@ -2564,14 +2573,18 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:257
-#, no-wrap
-msgid "**Side panel:**\n"
-msgstr "**Бочни панел:**\n"
+#, fuzzy, no-wrap
+msgid "**Flyout:**\n"
+msgstr "**Odlazni:**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:259
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the bulk action side panel](/screenshots/cypress/"
+#| "documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgid ""
-"![Screenshot shows the bulk action side panel](/screenshots/cypress/"
+"![Screenshot shows the bulk action flyout](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Снимак екрана приказује бочни панел масовне радње](/screenshots/cypress/"
@@ -2579,10 +2592,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:262
+#, fuzzy
+#| msgid ""
+#| "After you selected tickets, click the `Bulk Action` button in the top "
+#| "right corner and change/add attributes by using the fields in the right "
+#| "side panel. The available changes you can apply to tickets are:"
 msgid ""
 "After you selected tickets, click the `Bulk Action` button in the top right "
-"corner and change/add attributes by using the fields in the right side "
-"panel. The available changes you can apply to tickets are:"
+"corner and change/add attributes by using the fields in the right flyout. "
+"The available changes you can apply to tickets are:"
 msgstr ""
 "По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и "
 "промените/додајте атрибуте коришћењем поља у бочном панелу са десне стране. "
@@ -2683,8 +2701,12 @@ msgstr "Спајање тикета"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:290
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
+#| "documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgid ""
-"![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
+"![Screenshot shows the ticket merge flyout](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgstr ""
 "![Снимак екрана приказује бочну траку спајања тикета](/screenshots/cypress/"
@@ -2716,12 +2738,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:304
+#, fuzzy
+#| msgid ""
+#| "Go to the ticket you want to merge into another one. In the ticket "
+#| "sidebar, use the ::a:: menu and select `Merge`. This opens a side panel "
+#| "in which you can select a ticket by clicking on it or enter a ticket "
+#| "number in search field.  When you selected a target ticket, confirm by "
+#| "using the `Merge` button at the bottom."
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
-"use the ::a:: menu and select `Merge`. This opens a side panel in which you "
-"can select a ticket by clicking on it or enter a ticket number in search "
-"field.  When you selected a target ticket, confirm by using the `Merge` "
-"button at the bottom."
+"use the ::a:: menu and select `Merge`. This opens a flyout in which you can "
+"select a ticket by clicking on it or enter a ticket number in search field.  "
+"When you selected a target ticket, confirm by using the `Merge` button at "
+"the bottom."
 msgstr ""
 "Идите на тикет који желите да спојите са другим. У траци тикета, одаберите "
 "`Споји` у падајућем менију ::a::. Ово ће отворити бочни панел у коме можете "
@@ -2827,10 +2856,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:343
+#, fuzzy
+#| msgid ""
+#| "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
+#| "button in the **Related tickets** section.  This opens a side panel in "
+#| "which you can select a ticket by clicking on it or enter a ticket number "
+#| "in search field.  Additionally, you can choose between different link "
+#| "types:"
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-"button in the **Related tickets** section.  This opens a side panel in which "
-"you can select a ticket by clicking on it or enter a ticket number in search "
+"button in the **Related tickets** section.  This opens a flyout in which you "
+"can select a ticket by clicking on it or enter a ticket number in search "
 "field.  Additionally, you can choose between different link types:"
 msgstr ""
 "У панелу тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку "
@@ -4012,7 +4048,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:100
+#: src/en/documentation/use/basics/ticket-basics.md:101
 #, fuzzy
 msgid ""
 "In the ticket sidebar, you can find a section which is labeled as **Tags**. "
@@ -4020,7 +4056,8 @@ msgid ""
 "configuration, you can create new tags by simply type and confirm them with "
 "[[enter]] or [[tab]]. In any case, you can choose from already available "
 "tags. Start typing and you see a list with matching suggestions. To remove "
-"it, click the ::X:: button on the right side of the tab."
+"it, click the ::x:: button on the right side of the tag. This button only "
+"shows up when you move the mouse over the tag."
 msgstr ""
 "U bočnoj traci zahteva možete pronaći sekciju koja je označena kao "
 "**Tagovi**. Dodajte tag klikom na dugme ::+::. Zavisno od konfiguracije "
@@ -4031,7 +4068,7 @@ msgstr ""
 "desnoj strani taga."
 
 #. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:101
+#: src/en/documentation/use/basics/ticket-basics.md:102
 #: src/en/reference/es-indexed-attributes.md:1054
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, no-wrap
@@ -4039,7 +4076,7 @@ msgid "Group"
 msgstr "Група"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:107
+#: src/en/documentation/use/basics/ticket-basics.md:108
 msgid ""
 "This ticket attribute is useful for organizations with more than one team. A "
 "common way to use groups is to have one for each department of the company. "
@@ -4056,13 +4093,13 @@ msgstr ""
 "групама."
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:108
+#: src/en/documentation/use/basics/ticket-basics.md:109
 #, no-wrap
 msgid "Owner"
 msgstr "Власник"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:114
+#: src/en/documentation/use/basics/ticket-basics.md:115
 #, fuzzy
 msgid ""
 "This is the person who is currently responsible for the ticket. In case you "
@@ -4078,7 +4115,7 @@ msgstr ""
 "pretplaćen na dobijanje obaveštenja o ažuriranjima zahteva."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:116
+#: src/en/documentation/use/basics/ticket-basics.md:117
 msgid ""
 "To change the owner to a person which has only access to another group's "
 "tickets, you first have to switch the group accordingly."
@@ -4087,25 +4124,25 @@ msgstr ""
 "тикета, морате прво променити групу."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:120
+#: src/en/documentation/use/basics/ticket-basics.md:121
 #, fuzzy
 msgid "Now that you know the basics, head over to one of the following pages:"
 msgstr "Sada kada znate osnove, pređite na jednu od narednih stranica:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, fuzzy
 msgid "[Find Tickets](/en/documentation/use/basics/find-tickets)"
 msgstr "/sr/documentation/use/general"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, fuzzy
 msgid "[Create tickets](/en/documentation/use/basics/create-tickets)"
 msgstr "[Kreiraj zahteve](/en/documentation/use/basics/create-tickets)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:123
+#: src/en/documentation/use/basics/ticket-basics.md:124
 #, fuzzy
 msgid "[Work with tickets](/en/documentation/use/basics/work-with-tickets)"
 msgstr "[Rad sa zahtevima](/en/documentation/use/basics/work-with-tickets)"
@@ -4302,21 +4339,20 @@ msgstr "Додавање чланка од нуле"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:57
-#, fuzzy
 msgid ""
-"Click on one of the buttons at the bottom of the ticket detail view to add "
-"an article. Depending on what you choose, the article create screen gets pre-"
-"populated with the type and visibility. When choosing **Add reply**, the "
-"article gets sent out to the customer of the ticket. In case of an email "
-"based ticket, the email address of the customer is pre-populated."
-msgstr ","
+"Click on the `Add internal note` button below the ticket's articles. This "
+"opens the editor with activated **Note** type and internal visibility. You "
+"can change the type or visibility if you like. To answer the customer "
+"directly or to forward a specific article, use the corresponding buttons "
+"under an article. Read the next section for more information."
+msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:59
 #, fuzzy
 msgid ""
-"![Screenshot shows new article buttons in bottom bar](/screenshots/cypress/"
-"documentation/use/basics.cy.js/new-article.png)"
+"![Screenshot shows the Add internal note button below the ticket's articles]"
+"(/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
@@ -4399,14 +4435,86 @@ msgid ""
 "for your text."
 msgstr ","
 
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:85
+msgid ""
+"If the ticket has a long article history, see [Handling of Large Tickets]"
+"(#handling-of-large-tickets) for the conveniences Zammad provides."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/work-with-tickets.md:86
+#, fuzzy, no-wrap
+#| msgid "Pending reached tickets"
+msgid "Handling of Large Tickets"
+msgstr "По достигнутим подсетницима тикета"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:90
+msgid ""
+"When working on tickets with long article histories - like long email "
+"threads where you need to refer back to earlier messages - Zammad provides "
+"two conveniences:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+msgid ""
+"A floating ticket actions toolbar on the bottom right corner of the article "
+"list shows quick actions, depending on your scroll position and the ticket "
+"state. It contains buttons with icons for the following actions:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+msgid "**Add internal note**: opens the article reply form to write a note."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+msgid ""
+"**Scroll to start** and **Scroll to end**: jump to the top or bottom of the "
+"article list. If there are unread articles, the **Scroll to end button** "
+"displays a badge and changes to **Scroll to unread article**."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+msgid ""
+"The toolbar appears whenever the article list is taller than your screen so "
+"that crucial actions stay accessible."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:102
+msgid ""
+"A **pinned reply form** so the editor stays visible while you scroll through "
+"the articles. To pin or unpin the reply form, click the pin icon in the "
+"header of the article reply form. The pinned form sticks to the bottom of "
+"the ticket detail view. Resize the height by dragging the line on the top "
+"edge of the pinned reply form. The pin state as well as the panel size are "
+"saved in your browser."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:104
+#, fuzzy
+msgid ""
+"![Screenshot shows the article reply form pinned to the bottom of the ticket "
+"detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-"
+"reply-pinned.png)"
+msgstr ""
+"![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
+"screenshots/cypress/usage-advanced-features.cy.js/ticket-split.png)"
+
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:83
+#: src/en/documentation/use/basics/work-with-tickets.md:105
 #, no-wrap
 msgid "Rename a Ticket"
 msgstr "Промена наслова тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:88
+#: src/en/documentation/use/basics/work-with-tickets.md:110
 #, fuzzy
 msgid ""
 "To rename a ticket, simply click on the title in the header bar and start "
@@ -4416,13 +4524,13 @@ msgid ""
 msgstr ","
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:89
+#: src/en/documentation/use/basics/work-with-tickets.md:111
 #, no-wrap
 msgid "Copy Ticket Number"
 msgstr "Копирање броја тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:95
+#: src/en/documentation/use/basics/work-with-tickets.md:117
 #, fuzzy
 msgid ""
 "To copy the ticket number including a link to the ticket (e.g. to paste it "
@@ -4434,15 +4542,7 @@ msgid ""
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:98
-#, fuzzy
-msgid ""
-"If you scrolled own in the ticket, hover over the collapsed header bar where "
-"you can find the button on the top left side."
-msgstr ","
-
-#. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:100
+#: src/en/documentation/use/basics/work-with-tickets.md:119
 #, fuzzy
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy button]"
@@ -4453,7 +4553,7 @@ msgstr ""
 "screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:104
+#: src/en/documentation/use/basics/work-with-tickets.md:123
 #, fuzzy
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
@@ -4463,13 +4563,13 @@ msgid ""
 msgstr ","
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:105
+#: src/en/documentation/use/basics/work-with-tickets.md:124
 #, no-wrap
 msgid "Simultaneous Ticket Processing"
 msgstr "Симултана обрада тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:110
+#: src/en/documentation/use/basics/work-with-tickets.md:129
 #, fuzzy
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
@@ -4479,7 +4579,7 @@ msgid ""
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:112
+#: src/en/documentation/use/basics/work-with-tickets.md:131
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows other agents viewing/editing the ticket](/screenshots/"
@@ -4492,7 +4592,7 @@ msgstr ""
 "screenshots/advanced-features/simultaneous-work-detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:115
+#: src/en/documentation/use/basics/work-with-tickets.md:134
 #, fuzzy
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
@@ -4503,12 +4603,12 @@ msgstr ""
 "пронађите додатно значење:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr "Аватар сличица: други оператер гледа тикет."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
 "viewing it."
@@ -4517,7 +4617,7 @@ msgstr ""
 "не гледа активно."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:138
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
 "ticket."
@@ -4526,7 +4626,7 @@ msgstr ""
 "овом тикету."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:122
+#: src/en/documentation/use/basics/work-with-tickets.md:141
 #, fuzzy
 msgid ""
 "There are even more icons which represent additional states of the other "
@@ -4535,13 +4635,13 @@ msgid ""
 msgstr ","
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:123
+#: src/en/documentation/use/basics/work-with-tickets.md:142
 #, no-wrap
 msgid "Ticket Actions"
 msgstr "Радње тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:126
+#: src/en/documentation/use/basics/work-with-tickets.md:145
 #, fuzzy
 msgid ""
 "Additional actions are available in the ::a:: menu in the ticket sidebar."
@@ -4550,7 +4650,7 @@ msgstr ""
 "заглављу траке."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:130
+#: src/en/documentation/use/basics/work-with-tickets.md:149
 #, fuzzy, no-wrap
 msgid ""
 "History\n"
@@ -4559,7 +4659,7 @@ msgid ""
 msgstr ",\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:134
+#: src/en/documentation/use/basics/work-with-tickets.md:153
 #, fuzzy, no-wrap
 msgid ""
 "Merge\n"
@@ -4568,13 +4668,13 @@ msgid ""
 msgstr ",\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:137
+#: src/en/documentation/use/basics/work-with-tickets.md:156
 #, fuzzy
 msgid "Change Customer : Reassign the ticket to another customer."
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:142
+#: src/en/documentation/use/basics/work-with-tickets.md:161
 #, fuzzy
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
@@ -4663,8 +4763,8 @@ msgstr ",\n"
 #, fuzzy, no-wrap
 msgid ""
 "Ticket Detail View\n"
-": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
-"  selected in the navigation sidebar.\n"
+": This is where you handle your customer requests. It appears in the main\n"
+"  content when a ticket tab is selected in the navigation sidebar.\n"
 msgstr ",\n"
 
 #. type: Plain text
@@ -4699,7 +4799,7 @@ msgid ""
 "The navigation sidebar is your central place to access all main parts of "
 "Zammad. You might not see all of them because some depend on the "
 "configuration of your Zammad. The navigation sidebar is always visible. That "
-"means if you don’t know where you are, you can always go back to the "
+"means if you don't know where you are, you can always go back to the "
 "dashboard, your overviews or an opened ticket, for example."
 msgstr ","
 
@@ -4707,7 +4807,7 @@ msgstr ","
 #: src/en/documentation/use/basics/zammad-ui.md:54
 #, fuzzy, no-wrap
 msgid ""
-"Search and Notfication Area\n"
+"Search and Notification Area\n"
 ": Includes the search where you can search for users, organizations, tickets and basically every in Zammad available\n"
 "  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge\n"
 "  with a count about how many notifications you got.\n"
@@ -4722,15 +4822,16 @@ msgid ""
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:60
-#, fuzzy
+#: src/en/documentation/use/basics/zammad-ui.md:61
+#, fuzzy, no-wrap
 msgid ""
-"Content Tabs : You can find tabs for your opened tickets, users and "
-"organizations."
+"Taskbar Tabs\n"
+": You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation\n"
+"  sidebar.\n"
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:64
+#: src/en/documentation/use/basics/zammad-ui.md:65
 #, fuzzy, no-wrap
 msgid ""
 "Bottom Bar\n"
@@ -4739,7 +4840,7 @@ msgid ""
 msgstr ",\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:67
+#: src/en/documentation/use/basics/zammad-ui.md:68
 #, fuzzy
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
@@ -4748,13 +4849,13 @@ msgid ""
 msgstr ","
 
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:68
+#: src/en/documentation/use/basics/zammad-ui.md:69
 #, no-wrap
 msgid "Sidebar"
 msgstr "Трака са стране"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:73
+#: src/en/documentation/use/basics/zammad-ui.md:74
 #, fuzzy
 msgid ""
 "The sidebar on the right side displays all ticket relevant information and "
@@ -4765,13 +4866,13 @@ msgid ""
 msgstr ","
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:75
+#: src/en/documentation/use/basics/zammad-ui.md:76
 #, fuzzy, no-wrap
 msgid "<!-- markdownlint-disable MD007 -->\n"
 msgstr ",\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:79
+#: src/en/documentation/use/basics/zammad-ui.md:80
 #, fuzzy, no-wrap
 msgid ""
 "Ticket Tab\n"
@@ -4780,7 +4881,7 @@ msgid ""
 msgstr ",\n"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 msgid ""
 "History: shows a dialog with the history in the current ticket. This is "
 "where you can find when and what actions was performed and by whom."
@@ -4789,7 +4890,7 @@ msgstr ""
 "пронаћи када сау и које радње извршене над тикетом и од стране кога."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 msgid ""
 "Merge: merge the ticket with another one in case a customer emailed you "
 "multiple times about the same issue."
@@ -4798,25 +4899,25 @@ msgstr ""
 "пута у вези истог проблема."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 msgid "Change customer: set another customer for the ticket."
 msgstr "Измени клијента: поставите другог клијента тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:88
+#: src/en/documentation/use/basics/zammad-ui.md:89
 #, fuzzy, no-wrap
 msgid ""
 "Customer Tab\n"
-": View customer details including a reference to the customer’s other tickets. You can change the ticket customer here\n"
+": View customer details including a reference to the customer's other tickets. You can change the ticket customer here\n"
 "  as well by clicking on the ::a:: button in the top section.\n"
 msgstr ",\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:91
+#: src/en/documentation/use/basics/zammad-ui.md:92
 #, fuzzy, no-wrap
 msgid ""
 "Organization Tab\n"
-": This tab is only shown if the customer is member of an organization. It shows the organization’s details including all\n"
+": This tab is only shown if the customer is member of an organization. It shows the organization's details including all\n"
 "  members. By clicking on the ::a:: button in the top section, you can edit the organization.\n"
 msgstr ",\n"
 
@@ -7272,6 +7373,7 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:76
 #: src/en/tutorials/connect-config-elasticsearch.md:115
 #: src/en/tutorials/sso-kerberos.md:553
+#: src/en/tutorials/webserver-config.md:293
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "Решавање проблема"
@@ -7627,7 +7729,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:66
 #, fuzzy
 msgid ""
-"Initially, you will be presented with an empty side panel instructing you to "
+"Initially, you will be presented with an empty flyout instructing you to "
 "**Set Up** your first key."
 msgstr ""
 "U početku ćete videti prazan bočni panel koji vas upućuje da **Podesite** "
@@ -8289,7 +8391,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "After capturing or uploading an image, you can crop it. Have a look at the "
-"preview at the top of the right side panel."
+"preview at the top of the right flyout."
 msgstr ""
 "Nakon fotografisanja ili otpremanja slike, možete je iseći. Pogledajte "
 "pregled na vrhu desnog bočnog panela."
@@ -8417,8 +8519,8 @@ msgstr ""
 #: src/en/documentation/use/user-profile.md:95
 #, fuzzy
 msgid ""
-"![Screenshot shows side panel with created token and copy button](/"
-"screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+"![Screenshot shows flyout with created token and copy button](/screenshots/"
+"cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 msgstr ""
 "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/test-"
 "screenshot-full-page.png)"
@@ -10192,6 +10294,7 @@ msgstr ""
 #: src/en/reference/rest-api/user-access-token.md:26
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
 #: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
+#: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
 msgstr "\n"
@@ -11028,11 +11131,10 @@ msgstr "Node.js"
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/get-started/installation/package.md:353
 #: src/en/get-started/installation/package.md:374
 #: src/en/reference/environment-variables.md:186
-#: src/en/tutorials/webserver-config.md:110
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
@@ -11093,10 +11195,9 @@ msgid ""
 "versions:"
 msgstr "Следеће опције проксија приступа су подржане:"
 
-#. type: Title ###
+#. type: Bullet: '- '
 #: src/en/get-started/installation/package.md:374
-#: src/en/tutorials/webserver-config.md:159
-#, fuzzy, no-wrap
+#, fuzzy
 msgid "Apache"
 msgstr "Apache"
 
@@ -18123,6 +18224,26 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:272
+#, no-wrap
+msgid ""
+"Main Content\n"
+": The middle section of the Zammad layout. Depending on the view you have\n"
+"  selected, it shows the dashboard, overviews, the ticket detail view, the\n"
+"  create-ticket form or other screens.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:277
+#, no-wrap
+msgid ""
+"Main Content Footer\n"
+": The action row at the bottom of the Main Content area. It holds the primary\n"
+"  actions of the currently active view, such as `Create`, `Apply Template` or\n"
+"  `Discard Changes` on the create-ticket form.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:282
 #, fuzzy, no-wrap
 msgid ""
 "Mentions\n"
@@ -18136,7 +18257,7 @@ msgstr ""
 "  i pratiće tike od sada pa nadalje.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:278
+#: src/en/reference/glossary.md:288
 #, fuzzy, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -18152,7 +18273,7 @@ msgstr ""
 "  podataka.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:283
+#: src/en/reference/glossary.md:293
 #, fuzzy, no-wrap
 msgid ""
 "Monit\n"
@@ -18166,7 +18287,7 @@ msgstr ""
 "  tike se kreira svaki put kada primite email u Monit-u.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:287
+#: src/en/reference/glossary.md:297
 #, fuzzy, no-wrap
 msgid ""
 "Navigation Bar\n"
@@ -18178,7 +18299,7 @@ msgstr ""
 "  pretragu, obaveštenja i mnogo više stavki, u zavisnosti od vašeg sistema.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:291
+#: src/en/reference/glossary.md:301
 #, fuzzy, no-wrap
 msgid ""
 "Navigation Tab\n"
@@ -18190,7 +18311,7 @@ msgstr ""
 "  prebacivati između njih.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:296
+#: src/en/reference/glossary.md:306
 #, fuzzy, no-wrap
 msgid ""
 "Nagios\n"
@@ -18204,7 +18325,7 @@ msgstr ""
 "  slučaju alarmiranja.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:301
+#: src/en/reference/glossary.md:311
 #, fuzzy, no-wrap
 msgid ""
 "On-Premise\n"
@@ -18218,7 +18339,7 @@ msgstr ""
 "  kupac Zammada. Samostalno hostovanje znači isto.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:307
+#: src/en/reference/glossary.md:317
 #, fuzzy, no-wrap
 msgid ""
 "Organization\n"
@@ -18234,7 +18355,7 @@ msgstr ""
 "  organizacije.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:313
+#: src/en/reference/glossary.md:323
 #, fuzzy, no-wrap
 msgid ""
 "Owner\n"
@@ -18250,7 +18371,7 @@ msgstr ""
 "  da novi vlasnik zna šta treba da uradi.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:319
+#: src/en/reference/glossary.md:329
 #, fuzzy, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -18266,7 +18387,7 @@ msgstr ""
 "  Usput: na isti način, možete i spojiti dva tiketa u jedan.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:325
+#: src/en/reference/glossary.md:335
 #, fuzzy, no-wrap
 msgid ""
 "Placetel\n"
@@ -18282,7 +18403,7 @@ msgstr ""
 "  u Zammad-u.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:330
+#: src/en/reference/glossary.md:340
 #, fuzzy, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call log,\n"
@@ -18296,7 +18417,7 @@ msgstr ""
 "  štedi agentima mnogo vremena pri dodeljivanju pozivaoca.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:335
+#: src/en/reference/glossary.md:345
 #, fuzzy, no-wrap
 msgid ""
 "Priority\n"
@@ -18310,7 +18431,7 @@ msgstr ""
 "  dodati više prioriteta u vaš Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:343
+#: src/en/reference/glossary.md:353
 #, fuzzy, no-wrap
 msgid ""
 "Release\n"
@@ -18330,7 +18451,7 @@ msgstr ""
 "  manja ažuriranja.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:347
+#: src/en/reference/glossary.md:357
 #, fuzzy, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases){target=_blank} you can\n"
@@ -18342,7 +18463,7 @@ msgstr ""
 "  o tome šta treba uzeti u obzir pre ažuriranja Zammada.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:351
+#: src/en/reference/glossary.md:361
 #, fuzzy, no-wrap
 msgid ""
 "Role\n"
@@ -18354,7 +18475,7 @@ msgstr ""
 "  admin, agent i kupac.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:358
+#: src/en/reference/glossary.md:368
 #, fuzzy, no-wrap
 msgid ""
 "  _Admins_ have the most rights: they can define roles, permissions,\n"
@@ -18372,16 +18493,16 @@ msgstr ""
 "  korisničkom interfejsu.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:360
+#: src/en/reference/glossary.md:370
 #, fuzzy, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr "  Možete čak dodati i nove uloge na svoj Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:364
+#: src/en/reference/glossary.md:374
 #, fuzzy, no-wrap
 msgid ""
-"Second Level Navigation\n"
+"Secondary Navigation\n"
 ": Refers to an additional menu next to the navigation (e.g. when opening profile\n"
 "  settings).\n"
 msgstr ""
@@ -18390,19 +18511,16 @@ msgstr ""
 "  profila).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:368
-#, fuzzy, no-wrap
+#: src/en/reference/glossary.md:378
+#, no-wrap
 msgid ""
-"Side(Panel)\n"
-": This is the panel which is flying in on the right side for actions like ticket\n"
-"  linking or ticket merging.\n"
+"Flyout\n"
+": The panel that slides in from the right side of the screen for actions such\n"
+"  as linking or merging tickets, bulk actions, and the subscription toggle.\n"
 msgstr ""
-"Bočna traka (Panel)\n"
-": Ovo je panel koji se prikazuje sa desne strane za radnje kao što su povezivanje\n"
-"  karata ili spajanje karata.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:373
+#: src/en/reference/glossary.md:383
 #, fuzzy, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -18416,13 +18534,13 @@ msgstr ""
 "  nazivaju karticama bočne trake.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:375
+#: src/en/reference/glossary.md:385
 #, fuzzy, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr "  Aktivna kartica bočne trake je trenutno otvorena kartica bočne trake.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:381
+#: src/en/reference/glossary.md:391
 #, fuzzy, no-wrap
 msgid ""
 "Sipgate\n"
@@ -18438,7 +18556,7 @@ msgstr ""
 "  agentom, evidencija poziva će vam pokazati da li je ovaj kolega trenutno dostupan.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:388
+#: src/en/reference/glossary.md:398
 #, fuzzy, no-wrap
 msgid ""
 "SLA\n"
@@ -18456,7 +18574,7 @@ msgstr ""
 "  njihovih obećanja.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:392
+#: src/en/reference/glossary.md:402
 #, fuzzy, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the time\n"
@@ -18467,7 +18585,7 @@ msgstr ""
 "  za prvi odgovor, ažuriranje i rešenje. Čim istekne rok, karta će biti eskalirana.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:398
+#: src/en/reference/glossary.md:408
 #, fuzzy, no-wrap
 msgid ""
 "S/MIME\n"
@@ -18483,7 +18601,7 @@ msgstr ""
 "  potpisa.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:403
+#: src/en/reference/glossary.md:413
 #, fuzzy, no-wrap
 msgid ""
 "SSO\n"
@@ -18497,7 +18615,7 @@ msgstr ""
 "  čine ga bezbednim. Zammad trenutno podržava SSO putem različitih pružalaca.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:410
+#: src/en/reference/glossary.md:420
 #, fuzzy, no-wrap
 msgid ""
 "State\n"
@@ -18515,7 +18633,25 @@ msgstr ""
 "  svoj Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:418
+#: src/en/reference/glossary.md:424
+#, no-wrap
+msgid ""
+"Taskbar\n"
+": The section of the navigation sidebar which contains the taskbar tabs (one\n"
+"  for each opened ticket, user or organization or the detailed search).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:428
+#, no-wrap
+msgid ""
+"Taskbar Tab\n"
+": A single tab in the taskbar. Clicking the tab brings the corresponding\n"
+"  ticket, user, organization or search into the main content area.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:436
 #, fuzzy, no-wrap
 msgid ""
 "Tags\n"
@@ -18535,7 +18671,7 @@ msgstr ""
 "  isporukom, pritužba.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:421
+#: src/en/reference/glossary.md:439
 #, fuzzy, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and assigned\n"
@@ -18545,7 +18681,7 @@ msgstr ""
 "  automatski, na primer na osnovu ključnih reči u naslovu karte.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:429
+#: src/en/reference/glossary.md:447
 #, fuzzy, no-wrap
 msgid ""
 "Text Module\n"
@@ -18565,7 +18701,7 @@ msgstr ""
 "  ključnih reči ili sadržaja nakon [[:]][[:]].\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:432
+#: src/en/reference/glossary.md:450
 #, fuzzy, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -18575,7 +18711,7 @@ msgstr ""
 "  `::ilff`, koji se pretvara u `Veselim se vašem odzivu`.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:437
+#: src/en/reference/glossary.md:455
 #, fuzzy, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -18589,7 +18725,7 @@ msgstr ""
 "  ponude.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:443
+#: src/en/reference/glossary.md:461
 #, fuzzy, no-wrap
 msgid ""
 "User\n"
@@ -18605,7 +18741,7 @@ msgstr ""
 "  i kupac.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:449
+#: src/en/reference/glossary.md:467
 #, fuzzy, no-wrap
 msgid ""
 "Webhooks\n"
@@ -18621,13 +18757,13 @@ msgstr ""
 "  (npr. slanje notifikacije za nove i ažurirane karte na vaš Mattermost).\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:452
+#: src/en/reference/glossary.md:470
 #, fuzzy
 msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr "Zammad : Zammad je najbolji helpdesk na svetu. Tačka."
 
 #. type: Plain text
-#: src/en/reference/glossary.md:453
+#: src/en/reference/glossary.md:471
 #, no-wrap
 msgid "</VPGlossary>\n"
 msgstr "</VPGlossary>\n"
@@ -35055,7 +35191,6 @@ msgstr "2g. Restartujte Apache da primenite promene"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/sso-kerberos.md:495
-#: src/en/tutorials/webserver-config.md:176
 #, fuzzy, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr "systemctl restart apache2\n"
@@ -35438,156 +35573,138 @@ msgstr "Konfiguracija web servera"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:13
-#, fuzzy
 msgid ""
-"This guide is only relevant for package installations. During the "
-"installation, Zammad tries to automatically install a configuration file to "
-"your Nginx.  You can find example configuration files for your webserver in "
-"the `contrib/` directory of your Zammad installation."
+"Configure your webserver to reverse-proxy the Zammad application server.  "
+"This guide covers obtaining an SSL certificate, adjusting the sample "
+"configuration for Nginx and Apache 2 and reloading the webserver to apply "
+"the changes."
 msgstr ""
-"Ovaj vodič je relevantan samo za instalacije paketima. Tokom instalacije, "
-"Zammad pokušava automatski da instalira konfiguracioni fajl na vaš Nginx.  "
-"Primer konfiguracionih fajlova za vaš web server možete pronaći u `contrib/` "
-"direktorijumu vaše Zammad instalacije."
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:17
-#, fuzzy
+#: src/en/tutorials/webserver-config.md:22
 msgid ""
-"In case this out-of-the-box approach doesn't work for you, you can find some "
-"hints for your configuration. You can use either Nginx or Apache 2 (only "
-"referred to as Apache in the following text)."
+"You can find sample configuration files for your webserver within the "
+"`contrib/` directory of your Zammad installation. There are two example "
+"files per webserver: `zammad.conf` (plain HTTP) and `zammad_ssl.conf` "
+"(HTTPS). The non-SSL file is intended for local testing only and must not be "
+"used in production. During a package installation of Zammad, the package "
+"automatically copies the non-SSL `zammad.conf` to your webserver's config "
+"directory. For production use, replace it with `zammad_ssl.conf` and follow "
+"the steps on this page."
 msgstr ""
-"U slučaju da ovaj unapred podešen pristup ne radi za vas, možete pronaći "
-"neke smernice za svoju konfiguraciju. Možete koristiti ili Nginx ili Apache "
-"2 (u daljem tekstu samo naveden kao Apache)."
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/webserver-config.md:23
+#, no-wrap
+msgid ""
+"**Docker Compose / Kubernetes users:**\n"
+"\n"
+"Skip this page. Configure the webserver port, hostname and scheme via the\n"
+"`NGINX_*` and `ZAMMAD_RAILSSERVER_*` variables on the\n"
+"[environment variables page](/en/reference/environment-variables).\n"
+msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/webserver-config.md:18
+#: src/en/tutorials/webserver-config.md:31
 #, fuzzy, no-wrap
-msgid "Get a SSL Certificate"
+msgid "Obtain an SSL Certificate"
 msgstr "Nabavite SSL sertifikat"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:24
-#, fuzzy
+#: src/en/tutorials/webserver-config.md:35
 msgid ""
-"You have to use a named configuration which is not configured by default. To "
-"fix this, open the `zammad.conf` in your webserver's config directory and "
-"replace the `server_name localhost` (Nginx) or `ServerName localhost` "
-"(Apache)  with your Zammad domain."
+"Zammad requires HTTPS in production. Use one of the options below to obtain "
+"a certificate before continuing with the webserver configuration."
 msgstr ""
-"Morate koristiti konfiguraciju sa nazivom koja nije podrazumevana. Da biste "
-"ovo ispravili, otvorite `zammad.conf` u direktorijumu za konfiguraciju vašeg "
-"web servera i zamenite `server_name localhost` (Nginx) ili `ServerName "
-"localhost` (Apache) sa domenom vašeg Zammad-a."
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:26
-#, fuzzy
-msgid "The config directories are usually:"
-msgstr "Konfiguracioni direktoriji su obično:"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:29
-#, fuzzy
-msgid ""
-"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
-"available/`"
-msgstr ""
-"Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
-"available/`"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:29
-#, fuzzy
-msgid ""
-"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/sites-"
-"available/`"
-msgstr ""
-"Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/sites-"
-"available/`"
 
 #. type: Title ###
-#: src/en/tutorials/webserver-config.md:30
+#: src/en/tutorials/webserver-config.md:36
+#, no-wrap
+msgid "Commercial Certificate Authority"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:45
+msgid ""
+"Buy an annual certificate from any trusted public CA. A few common options "
+"are [Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank}, "
+"[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} or "
+"[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Install the "
+"resulting certificate, key and chain on your server as you would for any "
+"HTTPS service, then continue with the webserver configuration below."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:46
 #, fuzzy, no-wrap
 msgid "Let's Encrypt"
 msgstr "Let's Encrypt"
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:38
-#, fuzzy
+#: src/en/tutorials/webserver-config.md:50
 msgid ""
-"There are two common tools to get certificates, to which your find a basic "
-"configuration below: [Certbot](https://certbot.eff.org/instructions)"
-"{target=_blank} and [acme.sh](https://github.com/acmesh-official/acme.sh/"
-"wiki){target=_blank}.  Have a look at their documentation for further "
-"configuration details and other examples."
+"Let's Encrypt issues free, automatically renewable certificates. Two clients "
+"are commonly used."
 msgstr ""
-"Postoje dva uobičajena alata za nabavku sertifikata, za koje možete pronaći "
-"osnovnu konfiguraciju ispod: [Certbot](https://certbot.eff.org/instructions)"
-"{target=_blank} i [acme.sh](https://github.com/acmesh-official/acme.sh/wiki)"
-"{target=_blank}.  Pogledajte njihovu dokumentaciju za dodatne detalje o "
-"konfiguraciji i druge primere."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:39
+#: src/en/tutorials/webserver-config.md:51
 #, fuzzy, no-wrap
 msgid ""
 "\n"
-"===Certbot\n"
+"=== Certbot\n"
 "\n"
-"If not happened automatically, you have to install the Nginx or Apache plugin\n"
-"for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
-"\n"
-"During the first Certbot run it will request additional information once.\n"
-"Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
-"`nginx` to match your setup.\n"
-"\n"
-"```sh\n"
-"certbot --<webserver> -d zammad.example.com\n"
-"```\n"
-"\n"
-"Certbot will now attempt to issue a certificate for you. If successful,\n"
-"Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
-"automatically. You can choose to not redirect if you plan to use the sample\n"
-"configuration of Zammad.\n"
-"\n"
-"From now on, Certbot will automatically renew your installed certificates if\n"
-"they’re valid for 30 days or less.\n"
-"\n"
-"===acme.sh\n"
-"\n"
-"Change the default certificate authority to Let's Encrypt:\n"
+"Certbot is the most widely used ACME client. Follow the upstream\n"
+"[Certbot installation instructions](https://certbot.eff.org/instructions){target=_blank},\n"
+"select your distribution and the matching webserver plugin in the\n"
+"selector and complete the install. Once installed, request a certificate\n"
+"by replacing `<webserver>` with `nginx` or `apache` and\n"
+"`zammad.example.com` with your subdomain:\n"
 "\n"
 "```sh\n"
-"acme.sh --set-default-ca  --server letsencrypt\n"
+"sudo certbot --<webserver> -d zammad.example.com\n"
 "```\n"
 "\n"
-"Issue your certificate and replace `<webserver>` in the following command\n"
-"with either `apache` or `nginx` or `standalone` for other webserver.\n"
+"Certbot will issue the certificate, ask whether to redirect HTTP to HTTPS\n"
+"(choose `[1] not redirect` if you plan to use the Zammad sample\n"
+"configuration, which already handles the redirect, otherwise choose\n"
+"`[2] redirect`) and arrange automatic renewal once the certificate has\n"
+"less than 30 days of validity remaining.\n"
+"\n"
+"=== acme.sh\n"
+"\n"
+"[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} is\n"
+"a lightweight shell-based ACME client and an alternative to Certbot, but\n"
+"it no longer uses Let's Encrypt by default. Set the default CA to Let's\n"
+"Encrypt before issuing a certificate:\n"
 "\n"
 "```sh\n"
-"acme.sh --issue --<webserver> -d zammad.example.com\n"
+"acme.sh --set-default-ca --server letsencrypt\n"
 "```\n"
 "\n"
-"It is not recommended to use the stored certificates directly. You should\n"
-"install the certificate to a directory of your choice instead as you can see\n"
-"in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
-"but you can use any directory you like.\n"
+"Issue the certificate by replacing `<webserver-plugin>` with `nginx`,\n"
+"`apache` or `standalone` and `zammad.example.com` with your subdomain:\n"
 "\n"
-"Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
+"```sh\n"
+"acme.sh --issue --<webserver-plugin> -d zammad.example.com\n"
+"```\n"
+"\n"
+"Install the certificate to a directory of your choice (e.g.\n"
+"`/etc/ssl/private/`) and reload the webserver after each renewal.\n"
+"Replace `<webserver-service>` in the command below with the matching\n"
+"systemd service name (`nginx`, `apache2` or `httpd`):\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
 "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
 "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
 "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-"    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
+"    --reloadcmd     \"sudo systemctl force-reload <webserver-service>\"\n"
 "```\n"
 "\n"
-"From now on, acme.sh will automatically renew your installed certificates if\n"
-"they’re valid for 30 days or less.\n"
+"See the\n"
+"[acme.sh documentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}\n"
+"for further use cases.\n"
 "\n"
 msgstr ""
 "\n"
@@ -35646,453 +35763,738 @@ msgstr ""
 "su važeći 30 dana ili manje.\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/webserver-config.md:97
-#, fuzzy, no-wrap
-msgid "Commercial CA"
-msgstr "Komercijalna CA"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:103
-#, fuzzy
-msgid ""
-"If you prefer to use certificates from a different official Certificate "
-"Authority (CA) than Let's Encrypt, you can do so as well. Just get your "
-"certificate bundle, install it according to their documentation and continue "
-"with adjusting the webserver configuration."
-msgstr ""
-"Ako preferirate da koristite sertifikate od druge zvanične Sertifikatne "
-"Autoritete (CA) od Let's Encrypt-a, možete to uraditi takođe. Samo nabavite "
-"svoj bundle sertifikata, instalirajte ga prema njihovoj dokumentaciji i "
-"nastavite sa prilagođavanjem konfiguracije web servera."
-
 #. type: Title ##
-#: src/en/tutorials/webserver-config.md:104
+#: src/en/tutorials/webserver-config.md:109
 #, fuzzy, no-wrap
-msgid "Adjusting the Webserver Configuration"
+msgid "Adjust the Webserver Configuration"
 msgstr "Prilagođavanje konfiguracije web servera"
 
-#. type: Fenced div block (warning)
-#: src/en/tutorials/webserver-config.md:106
-#, fuzzy, no-wrap
-msgid "Make sure to never use HTTP connections - we encourage you to use HTTPS!\n"
-msgstr "Pazite da nikada ne koristite HTTP veze - ohrabrujemo vas da koristite HTTPS!\n"
-
-#. type: Title ####
+#. type: Plain text
 #: src/en/tutorials/webserver-config.md:112
 #, fuzzy, no-wrap
-msgid "Step 1 - Get a Current Config File"
-msgstr "Korak 1 - Nabavite aktuelni konfiguracioni fajl"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:116
-#, fuzzy
-msgid ""
-"Copy & overwrite the default `zammad.conf`. Adjust your Nginx config "
-"directory according to your setup:"
-msgstr ""
-"Kopirajte i prepišite podrazumevani `zammad.conf`. Prilagodite direktorijum "
-"za konfiguraciju vašeg Nginxa prema svom podešavanju:"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:117
-#, fuzzy, no-wrap
-msgid "cp /opt/zammad/contrib/nginx/zammad_ssl.conf /etc/nginx/sites-available/zammad.conf\n"
-msgstr "cp /opt/zammad/contrib/nginx/zammad_ssl.conf /etc/nginx/sites-available/zammad.conf\n"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:121
-#, fuzzy, no-wrap
-msgid "Step 2 - Adjust the Config File"
-msgstr "Korak 2 - Prilagodite konfiguracioni fajl"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:124
-#: src/en/tutorials/webserver-config.md:212
-#, fuzzy
-msgid ""
-"Adjust the just copied file with a text editor of your choice (e.g. vi or "
-"nano)."
-msgstr ""
-"Prilagodite tek kopirani fajl tekstualnim editorom po vašem izboru (npr. vi "
-"ili nano)."
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:127
-#, fuzzy
-msgid ""
-"Locate any `server_name` directive and adjust `example.com` to the domain of "
-"your Zammad instance."
-msgstr ""
-"Pronađite bilo koju `server_name` direktivu i prilagodite `example.com` "
-"domenu vaše Zammad instance."
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:130
-#, fuzzy
-msgid ""
-"Now you'll need to adjust the path and file names for your ssl certificates "
-"you obtained. Adjust the following directives to match your setup:"
-msgstr ""
-"Sada ćete morati da prilagodite putanju i imena fajlova za SSL sertifikate "
-"koje ste nabavili. Prilagodite sledeće direktive tako da odgovaraju vašem "
-"podešavanju:"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, fuzzy
-msgid "`ssl_certificate` (your SSL certificate)"
-msgstr "`ssl_certificate` (vaš SSL sertifikat)"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, fuzzy
-msgid "`ssl_certificate_key` (the certificates private key)"
-msgstr "`ssl_certificate_key` (privatni ključ sertifikata)"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:134
-#, fuzzy
-msgid "`ssl_trusted_certificate` (the public CA certificate)"
-msgstr "`ssl_trusted_certificate` (javni sertifikat CA)"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:138
-#, fuzzy
-msgid ""
-"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
-"below to generate this file. You can find the correct path in your webserver "
-"config. Search for `ssl_dhparam`."
-msgstr ""
-"Ako još nemate `dhparam.pem` fajl, možete lako prilagoditi donji primer za "
-"generisanje ovog fajla. Tačnu putanju možete pronaći u konfiguraciji svog "
-"web servera. Pretražite za `ssl_dhparam`."
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:139
-#: src/en/tutorials/webserver-config.md:227
-#, fuzzy, no-wrap
-msgid ""
-"openssl dhparam -out <path>/dhparam.pem 4096\n"
-"\n"
-msgstr ""
-"openssl dhparam -out <path>/dhparam.pem 4096\n"
-"\n"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:144
-#, fuzzy, no-wrap
-msgid "Step 3 - Adjust HTTPS Configuration"
-msgstr "Korak 3 - Prilagodite HTTPS konfiguraciju"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:150
-#: src/en/tutorials/webserver-config.md:238
-#, fuzzy
-msgid ""
-"Our default configuration aims for a broad support of end user devices. This "
-"may not fit your needs. Mozilla has a great [SSL-config generator](https://"
-"ssl-config.mozilla.org/){target=_blank} that should help you to meet your "
-"requirements!"
-msgstr ""
-"Naša podrazumevana konfiguracija cilja na široku podršku za uređaje krajnjih "
-"korisnika. Ovo možda neće odgovarati vašim potrebama. Mozilla ima odličan "
-"[SSL-config generator](https://ssl-config.mozilla.org/){target=_blank} koji "
-"bi trebalo da vam pomogne da ispunite vaše zahteve!"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:151
-#, fuzzy, no-wrap
-msgid "Step 4 - Save & Reload"
-msgstr "Korak 4 - Sačuvajte i ponovo učitajte"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:155
-#, fuzzy
-msgid ""
-"Reload your Nginx with `sudo systemctl reload nginx` to apply your "
-"configuration changes."
-msgstr ""
-"Ponovo učitajte svoj Nginx sa `sudo systemctl reload nginx` da primenite "
-"promene konfiguracije."
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:158
-#: src/en/tutorials/webserver-config.md:284
-#, fuzzy
-msgid ""
-"After that, you should be greeted by our getting started wizard.  Go on with "
-"the [first steps in Zammad](/en/tutorials/first-steps)."
-msgstr ""
-"Nakon toga, trebalo bi da vas dočeka čarobnjak za prve korake.  Nastavite sa "
-"[prvim koracima u Zammadu](/en/tutorials/first-steps)."
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:161
-#, fuzzy, no-wrap
-msgid "Step 1 - Enable Module"
-msgstr "Korak 1 - Omogućite modul"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:165
-#, fuzzy
-msgid ""
-"Zammad requires a module (`a2enmod`) which is not enabled by default. CentOS "
-"users have to adjust a config file because this module is not available "
-"there."
-msgstr ""
-"Zammad zahteva modul (`a2enmod`) koji nije omogućen podrazumevano. Korisnici "
-"CentOSA moraju da prilagode konfiguracioni fajl jer ovaj modul tamo nije "
-"dostupan."
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:166
-#, fuzzy, no-wrap
-msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
-msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:171
-#, fuzzy
-msgid "If you want to run Zammad under HTTP/2, you will also need:"
-msgstr "Ako želite da pokrenete Zammad pod HTTP/2, takođe će vam trebati:"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:172
-#, fuzzy, no-wrap
-msgid "a2enmod h2 proxy_http2 mpm_event\n"
-msgstr "a2enmod h2 proxy_http2 mpm_event\n"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:181
-#, fuzzy
-msgid "Click to open details for CentOS config:"
-msgstr "Kliknite da otvorite detalje za CentOS konfiguraciju:"
-
-#. type: Fenced div block (details)
-#: src/en/tutorials/webserver-config.md:182
-#, fuzzy, no-wrap
-msgid ""
-"Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
-"in `/etc/httpd/conf/httpd.conf`:\n"
-"\n"
-"```apache\n"
-"LoadModule headers_module modules/mod_headers.so\n"
-"LoadModule proxy_module modules/mod_proxy.so\n"
-"LoadModule proxy_html_module modules/mod_proxy_html.so\n"
-"LoadModule proxy_http_module modules/mod_proxy_http.so\n"
-"LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
-"```\n"
-"\n"
-"Restart your webserver after saving the configuration.\n"
-"\n"
-msgstr ""
-"Dodajte ili otkomentarišite odgovarajuće `LoadModule` izjave u vašoj Apache konfiguraciji\n"
-"u `/etc/httpd/conf/httpd.conf`:\n"
-"\n"
-"```apache\n"
-"LoadModule headers_module modules/mod_headers.so\n"
-"LoadModule proxy_module modules/mod_proxy.so\n"
-"LoadModule proxy_html_module modules/mod_proxy_html.so\n"
-"LoadModule proxy_http_module modules/mod_proxy_http.so\n"
-"LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
-"```\n"
-"\n"
-"Restartujte web server nakon čuvanja konfiguracije.\n"
-"\n"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:198
-#, fuzzy, no-wrap
-msgid "Step 2 - Get a Current Config File"
-msgstr "Korak 2 - Nabavite trenutnu konfiguracionu datoteku"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:202
-#, fuzzy
-msgid ""
-"The package installation copied a `zammad.conf` file to your webserver "
-"config directory. Check if it is present and do not rename this file!"
-msgstr ""
-"Instalacija paketa kopirala je datoteku `zammad.conf` u direktorijum za "
-"konfiguraciju vašeg web servera. Proverite da li je prisutna i nemojte "
-"menjati ime ove datoteke!"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:204
-#, fuzzy
-msgid "Adjust your Apache config directory according to your setup:"
-msgstr ""
-"Prilagodite direktorijum vaše Apache konfiguracije prema vašim postavkama:"
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:205
-#, fuzzy, no-wrap
-msgid "ls /etc/apache2/sites-available\n"
-msgstr "ls /etc/apache2/sites-available\n"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:209
-#, fuzzy, no-wrap
-msgid "Step 3 - Adjust the Config File"
-msgstr "Korak 3 - Prilagodite konfiguracionu datoteku"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:215
-#, fuzzy
-msgid ""
-"Locate any `ServerName` directive and adjust `example.com` to the domain of "
-"your Zammad instance."
-msgstr ""
-"Pronađite bilo koju `ServerName` direktivu i prilagodite `example.com` "
-"domenu vaše Zammad instance."
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:218
-#, fuzzy
-msgid ""
-"Now you'll need to adjust the path and file names for your SSL certificates "
-"you obtained. Adjust the following directives to match your setup:"
-msgstr ""
-"Sada ćete morati da prilagodite putanje i imena datoteka za vaše SSL "
-"sertifikate koje ste dobili. Prilagodite sledeće direktive tako da "
-"odgovaraju vašem okruženju:"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, fuzzy
-msgid "`SSLCertificateFile` (your SSL certificate)"
-msgstr "`SSLCertificateFile` (vaš SSL sertifikat)"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, fuzzy
-msgid "`SSLCertificateKeyFile`(the certificate's private key)"
-msgstr "`SSLCertificateKeyFile`(privatni ključ sertifikata)"
-
-#. type: Bullet: '- '
-#: src/en/tutorials/webserver-config.md:222
-#, fuzzy
-msgid "`SSLCertificateChainFile` (the public CA certificate)"
-msgstr "`SSLCertificateChainFile` (javni CA sertifikat)"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:226
-#, fuzzy
-msgid ""
-"If you don't have a `dhparam.pem` file yet, you can easily adapt the example "
-"below to generate this file. You can find the correct path in your webserver "
-"config. Search for `SSLOpenSSLConfCmd DHParameters`."
-msgstr ""
-"Ako još uvek nemate `dhparam.pem` datoteku, lako možete prilagoditi primer "
-"ispod da je generišete. Tačnu putanju možete pronaći u konfiguraciji vašeg "
-"web servera. Potražite `SSLOpenSSLConfCmd DHParameters`."
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:232
-#, fuzzy, no-wrap
-msgid "Step 4 - Adjust HTTPS Configuration"
-msgstr "Korak 4 - Prilagodite HTTPS konfiguraciju"
-
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:239
-#, fuzzy, no-wrap
-msgid "Step 5 - Enable the Site"
-msgstr "Korak 5 - Omogućite sajt"
-
-#. type: Plain text
-#: src/en/tutorials/webserver-config.md:243
-#, fuzzy
-msgid ""
-"This step mostly depends on your selected folders and should only affect "
-"`sites-available` folders."
-msgstr ""
-"Ovaj korak najviše zavisi od vaših izabranih foldera i treba da obuhvati "
-"samo `sites-available` foldere."
+msgid "<!-- markdownlint-disable MD036 -->\n"
+msgstr ",\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/webserver-config.md:244
-#, fuzzy, no-wrap
+#: src/en/tutorials/webserver-config.md:113
+#, no-wrap
 msgid ""
 "\n"
-"=== Ubuntu, Debian, OpenSUSE\n"
+"=== Nginx (default)\n"
 "\n"
-"Make sure the following line is present in your Apache config\n"
-"(`/etc/apache2/apache2.conf`):\n"
+"**Get the sample config into place**\n"
 "\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
-"\n"
-"Enable it:\n"
+"Copy the SSL sample configuration to your Nginx config directory:\n"
 "\n"
 "```sh\n"
-"a2ensite zammad\n"
+"sudo cp /opt/zammad/contrib/nginx/zammad_ssl.conf \\\n"
+"    /etc/nginx/sites-available/zammad.conf\n"
 "```\n"
 "\n"
-"=== CentOS\n"
+"Most common Nginx config directories:\n"
 "\n"
-"Make sure the following line is present in your Apache config\n"
-"(`/etc/httpd/conf/httpd.conf`):\n"
+"- `/etc/nginx/conf.d/`\n"
+"- `/etc/nginx/vhosts.d/`\n"
+"- `/etc/nginx/sites-available/`\n"
 "\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
+"**Adjust server name and certificate paths**\n"
 "\n"
-"Enable it:\n"
+"Adjust the just copied file with a text editor of your choice (e.g.\n"
+"vi or nano). Locate both `server_name` directives (one in the HTTP\n"
+"server block on port 80, one in the HTTPS server block on port 443)\n"
+"and adjust `example.com` to the subdomain you have chosen for your\n"
+"Zammad instance.\n"
+"\n"
+"Now you'll need to adjust the path and file names for your SSL\n"
+"certificates you obtained on the prior steps. Adjust the following\n"
+"directives to match your setup:\n"
+"\n"
+"- `ssl_certificate` (your SSL certificate)\n"
+"- `ssl_certificate_key` (the certificate's private key)\n"
+"- `ssl_trusted_certificate` (the public CA certificate)\n"
+"\n"
+"To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+"file and point `ssl_dhparam` at it:\n"
 "\n"
 "```sh\n"
-"ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
 "```\n"
+"\n"
+"**Reload and verify**\n"
+"\n"
+"Verify the configuration:\n"
+"\n"
+"```sh\n"
+"sudo nginx -t\n"
+"```\n"
+"\n"
+"Reload Nginx:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload nginx\n"
+"```\n"
+"\n"
+"=== Apache 2\n"
+"\n"
+"**Enable the required modules**\n"
+"\n"
+"Zammad requires modules that are not enabled by default. On Ubuntu,\n"
+"Debian and openSUSE use `a2enmod`:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+"```\n"
+"\n"
+"For HTTP/2 support also enable:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod h2 proxy_http2 mpm_event\n"
+"```\n"
+"\n"
+"On CentOS / RHEL add the matching `LoadModule` lines to\n"
+"`/etc/httpd/conf/httpd.conf` instead:\n"
+"\n"
+"```apache\n"
+"LoadModule headers_module modules/mod_headers.so\n"
+"LoadModule proxy_module modules/mod_proxy.so\n"
+"LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+"LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+"LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+"```\n"
+"\n"
+"Restart Apache after enabling the modules:\n"
+"\n"
+"```sh\n"
+"sudo systemctl restart apache2\n"
+"```\n"
+"\n"
+"**Get the sample config into place**\n"
+"\n"
+"Copy the SSL sample configuration to your Apache config directory:\n"
+"\n"
+"```sh\n"
+"sudo cp /opt/zammad/contrib/apache2/zammad_ssl.conf \\\n"
+"    /etc/apache2/sites-available/zammad.conf\n"
+"```\n"
+"\n"
+"Most common Apache config directories:\n"
+"\n"
+"- `/etc/apache2/conf.d/`\n"
+"- `/etc/httpd/vhosts.d/`\n"
+"- `/etc/apache2/sites-available/`\n"
+"\n"
+"The package installation attempts to copy this file for you. Do not\n"
+"rename it.\n"
+"\n"
+"**Adjust server name and certificate paths**\n"
+"\n"
+"Adjust the just copied file with a text editor of your choice (e.g.\n"
+"vi or nano). Locate any `ServerName` directive and adjust `example.com`\n"
+"to the subdomain you have chosen for your Zammad instance. The first\n"
+"`ServerName` (in the HTTP VirtualHost) defaults to `example.com` and\n"
+"the second (in the HTTPS VirtualHost) to `localhost`.\n"
+"\n"
+"Now you'll need to adjust the path and file names for your SSL\n"
+"certificates you obtained on the prior steps. Adjust the following\n"
+"directives to match your setup:\n"
+"\n"
+"- `SSLCertificateFile` (your SSL certificate)\n"
+"- `SSLCertificateKeyFile` (the certificate's private key)\n"
+"- `SSLCertificateChainFile` (the public CA certificate)\n"
+"\n"
+"To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+"file and point `SSLOpenSSLConfCmd DHParameters` at it:\n"
+"\n"
+"```sh\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+"```\n"
+"\n"
+"**Enable the site**\n"
+"\n"
+"On Ubuntu, Debian and openSUSE:\n"
+"\n"
+"```sh\n"
+"sudo a2ensite zammad\n"
+"```\n"
+"\n"
+"On CentOS / RHEL:\n"
+"\n"
+"```sh\n"
+"sudo ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+"```\n"
+"\n"
+"Make sure `IncludeOptional sites-enabled/*.conf` is present in\n"
+"`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) or\n"
+"`/etc/httpd/conf/httpd.conf` (CentOS / RHEL).\n"
+"\n"
+"**Reload and verify**\n"
+"\n"
+"Reload Apache and verify the configuration:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload apache2\n"
+"```\n"
+"\n"
+"=== Local testing or other proxy servers\n"
+"\n"
+"Zammad's main application listens on port `3000` and the websocket\n"
+"server on port `6042`. If you put your own reverse proxy in front of\n"
+"Zammad, forward both.\n"
+"\n"
+"If the default ports conflict with other applications on your host, see\n"
+"the [environment variables page](/en/reference/environment-variables) to\n"
+"change them.\n"
 "\n"
 msgstr ""
-"\n"
-"=== Ubuntu, Debian, OpenSUSE\n"
-"\n"
-"Uverite se da je sledeća linija prisutna u vašoj Apache konfiguraciji\n"
-"(`/etc/apache2/apache2.conf`):\n"
-"\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
-"\n"
-"Omogućite ga:\n"
-"\n"
-"```sh\n"
-"a2ensite zammad\n"
-"```\n"
-"\n"
-"=== CentOS\n"
-"\n"
-"Uverite se da je sledeća linija prisutna u vašoj Apache konfiguraciji\n"
-"(`/etc/httpd/conf/httpd.conf`):\n"
-"\n"
-"```apache\n"
-"IncludeOptional sites-enabled/*.conf\n"
-"```\n"
-"\n"
-"Omogućite ga:\n"
-"\n"
-"```sh\n"
-"ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
-"```\n"
-"\n"
 
-#. type: Title ####
-#: src/en/tutorials/webserver-config.md:278
-#, fuzzy, no-wrap
-msgid "Step 6 - Save & Reload"
-msgstr "Korak 6 - Sačuvajte i ponovo učitate"
+#. type: Fenced div block (tabs|warning)
+#: src/en/tutorials/webserver-config.md:113
+#, no-wrap
+msgid ""
+"Do not expose Zammad directly to the internet. Zammad only provides\n"
+"plain HTTP and would be reachable without authentication.\n"
+msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:282
-#, fuzzy
+#: src/en/tutorials/webserver-config.md:288
+#, fuzzy, no-wrap
+msgid "<!-- markdownlint-enable MD036 -->\n"
+msgstr ",\n"
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:292
 msgid ""
-"Reload your Apache with `sudo systemctl reload apache2` to apply your "
-"configuration changes."
+"Now visit your configured Zammad domain in a browser to reach the Zammad UI. "
+"If you don't see Zammad's setup wizard or Zammad UI at all, check the "
+"[Troubleshooting section](#troubleshooting) below."
 msgstr ""
-"Ponovo učitajte Apache sa `sudo systemctl reload apache2` da biste primenili "
-"izmene u konfiguraciji."
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:295
+#, no-wrap
+msgid "Default Landing Page Instead of Zammad"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:301
+msgid ""
+"If you reach the webserver's default landing page rather than Zammad, your "
+"`zammad.conf` may be overruled by another config file. Check the vhost "
+"directory for `000-default.conf` or `default.conf` and disable it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:302
+#, no-wrap
+msgid "DNS Not Resolving"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:308
+msgid ""
+"If the subdomain does not resolve, double-check the DNS records for your "
+"domain and wait for them to propagate. Replace the `zammad.example.com` in "
+"the following command with your configured domain of Zammad and check if the "
+"domain points to the right server:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/webserver-config.md:309
+#, no-wrap
+msgid "host zammad.example.com\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:313
+#, no-wrap
+msgid "CSRF Token Errors"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:318
+msgid ""
+"If users cannot log in because of CSRF token errors, your webserver chain "
+"may not pass the original connection type to Zammad. Tell the proxy directly "
+"that the connection is HTTPS."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:323
+#, no-wrap
+msgid ""
+"Nginx\n"
+": Within your virtual host configuration, locate\n"
+"  `proxy_set_header X-Forwarded-Proto` and replace `$scheme` with\n"
+"  `https`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:327
+#, no-wrap
+msgid ""
+"Apache 2\n"
+": Within your virtual host configuration, just above the first\n"
+"  `ProxyPass` directive, insert:\n"
+msgstr ""
+
+#. type: Fenced code block (apache)
+#: src/en/tutorials/webserver-config.md:328
+#, no-wrap
+msgid ""
+"  RequestHeader set X_FORWARDED_PROTO 'https'\n"
+"  RequestHeader set X-Forwarded-Ssl on\n"
+msgstr ""
+
+#, no-wrap
+#~ msgid "**Side panel:**\n"
+#~ msgstr "**Бочни панел:**\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Side(Panel)\n"
+#~ ": This is the panel which is flying in on the right side for actions like ticket\n"
+#~ "  linking or ticket merging.\n"
+#~ msgstr ""
+#~ "Bočna traka (Panel)\n"
+#~ ": Ovo je panel koji se prikazuje sa desne strane za radnje kao što su povezivanje\n"
+#~ "  karata ili spajanje karata.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "This guide is only relevant for package installations. During the "
+#~ "installation, Zammad tries to automatically install a configuration file "
+#~ "to your Nginx.  You can find example configuration files for your "
+#~ "webserver in the `contrib/` directory of your Zammad installation."
+#~ msgstr ""
+#~ "Ovaj vodič je relevantan samo za instalacije paketima. Tokom instalacije, "
+#~ "Zammad pokušava automatski da instalira konfiguracioni fajl na vaš "
+#~ "Nginx.  Primer konfiguracionih fajlova za vaš web server možete pronaći u "
+#~ "`contrib/` direktorijumu vaše Zammad instalacije."
+
+#, fuzzy
+#~ msgid ""
+#~ "In case this out-of-the-box approach doesn't work for you, you can find "
+#~ "some hints for your configuration. You can use either Nginx or Apache 2 "
+#~ "(only referred to as Apache in the following text)."
+#~ msgstr ""
+#~ "U slučaju da ovaj unapred podešen pristup ne radi za vas, možete pronaći "
+#~ "neke smernice za svoju konfiguraciju. Možete koristiti ili Nginx ili "
+#~ "Apache 2 (u daljem tekstu samo naveden kao Apache)."
+
+#, fuzzy
+#~ msgid ""
+#~ "You have to use a named configuration which is not configured by default. "
+#~ "To fix this, open the `zammad.conf` in your webserver's config directory "
+#~ "and replace the `server_name localhost` (Nginx) or `ServerName localhost` "
+#~ "(Apache)  with your Zammad domain."
+#~ msgstr ""
+#~ "Morate koristiti konfiguraciju sa nazivom koja nije podrazumevana. Da "
+#~ "biste ovo ispravili, otvorite `zammad.conf` u direktorijumu za "
+#~ "konfiguraciju vašeg web servera i zamenite `server_name localhost` "
+#~ "(Nginx) ili `ServerName localhost` (Apache) sa domenom vašeg Zammad-a."
+
+#, fuzzy
+#~ msgid "The config directories are usually:"
+#~ msgstr "Konfiguracioni direktoriji su obično:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
+#~ "available/`"
+#~ msgstr ""
+#~ "Nginx: `/etc/nginx/conf.d/`, `/etc/nginx/vhosts.d/`, `/etc/nginx/sites-"
+#~ "available/`"
+
+#, fuzzy
+#~ msgid ""
+#~ "Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/"
+#~ "sites-available/`"
+#~ msgstr ""
+#~ "Apache: `/etc/apache2/conf.d/`, `/etc/httpd/vhosts.d/`, `/etc/apache2/"
+#~ "sites-available/`"
+
+#, fuzzy
+#~ msgid ""
+#~ "There are two common tools to get certificates, to which your find a "
+#~ "basic configuration below: [Certbot](https://certbot.eff.org/instructions)"
+#~ "{target=_blank} and [acme.sh](https://github.com/acmesh-official/acme.sh/"
+#~ "wiki){target=_blank}.  Have a look at their documentation for further "
+#~ "configuration details and other examples."
+#~ msgstr ""
+#~ "Postoje dva uobičajena alata za nabavku sertifikata, za koje možete "
+#~ "pronaći osnovnu konfiguraciju ispod: [Certbot](https://certbot.eff.org/"
+#~ "instructions){target=_blank} i [acme.sh](https://github.com/acmesh-"
+#~ "official/acme.sh/wiki){target=_blank}.  Pogledajte njihovu dokumentaciju "
+#~ "za dodatne detalje o konfiguraciji i druge primere."
+
+#, fuzzy, no-wrap
+#~ msgid "Commercial CA"
+#~ msgstr "Komercijalna CA"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you prefer to use certificates from a different official Certificate "
+#~ "Authority (CA) than Let's Encrypt, you can do so as well. Just get your "
+#~ "certificate bundle, install it according to their documentation and "
+#~ "continue with adjusting the webserver configuration."
+#~ msgstr ""
+#~ "Ako preferirate da koristite sertifikate od druge zvanične Sertifikatne "
+#~ "Autoritete (CA) od Let's Encrypt-a, možete to uraditi takođe. Samo "
+#~ "nabavite svoj bundle sertifikata, instalirajte ga prema njihovoj "
+#~ "dokumentaciji i nastavite sa prilagođavanjem konfiguracije web servera."
+
+#, fuzzy, no-wrap
+#~ msgid "Make sure to never use HTTP connections - we encourage you to use HTTPS!\n"
+#~ msgstr "Pazite da nikada ne koristite HTTP veze - ohrabrujemo vas da koristite HTTPS!\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 1 - Get a Current Config File"
+#~ msgstr "Korak 1 - Nabavite aktuelni konfiguracioni fajl"
+
+#, fuzzy
+#~ msgid ""
+#~ "Copy & overwrite the default `zammad.conf`. Adjust your Nginx config "
+#~ "directory according to your setup:"
+#~ msgstr ""
+#~ "Kopirajte i prepišite podrazumevani `zammad.conf`. Prilagodite "
+#~ "direktorijum za konfiguraciju vašeg Nginxa prema svom podešavanju:"
+
+#, fuzzy, no-wrap
+#~ msgid "cp /opt/zammad/contrib/nginx/zammad_ssl.conf /etc/nginx/sites-available/zammad.conf\n"
+#~ msgstr "cp /opt/zammad/contrib/nginx/zammad_ssl.conf /etc/nginx/sites-available/zammad.conf\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 2 - Adjust the Config File"
+#~ msgstr "Korak 2 - Prilagodite konfiguracioni fajl"
+
+#, fuzzy
+#~ msgid ""
+#~ "Adjust the just copied file with a text editor of your choice (e.g. vi or "
+#~ "nano)."
+#~ msgstr ""
+#~ "Prilagodite tek kopirani fajl tekstualnim editorom po vašem izboru (npr. "
+#~ "vi ili nano)."
+
+#, fuzzy
+#~ msgid ""
+#~ "Locate any `server_name` directive and adjust `example.com` to the domain "
+#~ "of your Zammad instance."
+#~ msgstr ""
+#~ "Pronađite bilo koju `server_name` direktivu i prilagodite `example.com` "
+#~ "domenu vaše Zammad instance."
+
+#, fuzzy
+#~ msgid ""
+#~ "Now you'll need to adjust the path and file names for your ssl "
+#~ "certificates you obtained. Adjust the following directives to match your "
+#~ "setup:"
+#~ msgstr ""
+#~ "Sada ćete morati da prilagodite putanju i imena fajlova za SSL "
+#~ "sertifikate koje ste nabavili. Prilagodite sledeće direktive tako da "
+#~ "odgovaraju vašem podešavanju:"
+
+#, fuzzy
+#~ msgid "`ssl_certificate` (your SSL certificate)"
+#~ msgstr "`ssl_certificate` (vaš SSL sertifikat)"
+
+#, fuzzy
+#~ msgid "`ssl_certificate_key` (the certificates private key)"
+#~ msgstr "`ssl_certificate_key` (privatni ključ sertifikata)"
+
+#, fuzzy
+#~ msgid "`ssl_trusted_certificate` (the public CA certificate)"
+#~ msgstr "`ssl_trusted_certificate` (javni sertifikat CA)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you don't have a `dhparam.pem` file yet, you can easily adapt the "
+#~ "example below to generate this file. You can find the correct path in "
+#~ "your webserver config. Search for `ssl_dhparam`."
+#~ msgstr ""
+#~ "Ako još nemate `dhparam.pem` fajl, možete lako prilagoditi donji primer "
+#~ "za generisanje ovog fajla. Tačnu putanju možete pronaći u konfiguraciji "
+#~ "svog web servera. Pretražite za `ssl_dhparam`."
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "openssl dhparam -out <path>/dhparam.pem 4096\n"
+#~ "\n"
+#~ msgstr ""
+#~ "openssl dhparam -out <path>/dhparam.pem 4096\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 3 - Adjust HTTPS Configuration"
+#~ msgstr "Korak 3 - Prilagodite HTTPS konfiguraciju"
+
+#, fuzzy
+#~ msgid ""
+#~ "Our default configuration aims for a broad support of end user devices. "
+#~ "This may not fit your needs. Mozilla has a great [SSL-config generator]"
+#~ "(https://ssl-config.mozilla.org/){target=_blank} that should help you to "
+#~ "meet your requirements!"
+#~ msgstr ""
+#~ "Naša podrazumevana konfiguracija cilja na široku podršku za uređaje "
+#~ "krajnjih korisnika. Ovo možda neće odgovarati vašim potrebama. Mozilla "
+#~ "ima odličan [SSL-config generator](https://ssl-config.mozilla.org/)"
+#~ "{target=_blank} koji bi trebalo da vam pomogne da ispunite vaše zahteve!"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 4 - Save & Reload"
+#~ msgstr "Korak 4 - Sačuvajte i ponovo učitajte"
+
+#, fuzzy
+#~ msgid ""
+#~ "Reload your Nginx with `sudo systemctl reload nginx` to apply your "
+#~ "configuration changes."
+#~ msgstr ""
+#~ "Ponovo učitajte svoj Nginx sa `sudo systemctl reload nginx` da primenite "
+#~ "promene konfiguracije."
+
+#, fuzzy
+#~ msgid ""
+#~ "After that, you should be greeted by our getting started wizard.  Go on "
+#~ "with the [first steps in Zammad](/en/tutorials/first-steps)."
+#~ msgstr ""
+#~ "Nakon toga, trebalo bi da vas dočeka čarobnjak za prve korake.  Nastavite "
+#~ "sa [prvim koracima u Zammadu](/en/tutorials/first-steps)."
+
+#, fuzzy, no-wrap
+#~ msgid "Step 1 - Enable Module"
+#~ msgstr "Korak 1 - Omogućite modul"
+
+#, fuzzy
+#~ msgid ""
+#~ "Zammad requires a module (`a2enmod`) which is not enabled by default. "
+#~ "CentOS users have to adjust a config file because this module is not "
+#~ "available there."
+#~ msgstr ""
+#~ "Zammad zahteva modul (`a2enmod`) koji nije omogućen podrazumevano. "
+#~ "Korisnici CentOSA moraju da prilagode konfiguracioni fajl jer ovaj modul "
+#~ "tamo nije dostupan."
+
+#, fuzzy, no-wrap
+#~ msgid "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+#~ msgstr "a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+
+#, fuzzy
+#~ msgid "If you want to run Zammad under HTTP/2, you will also need:"
+#~ msgstr "Ako želite da pokrenete Zammad pod HTTP/2, takođe će vam trebati:"
+
+#, fuzzy, no-wrap
+#~ msgid "a2enmod h2 proxy_http2 mpm_event\n"
+#~ msgstr "a2enmod h2 proxy_http2 mpm_event\n"
+
+#, fuzzy
+#~ msgid "Click to open details for CentOS config:"
+#~ msgstr "Kliknite da otvorite detalje za CentOS konfiguraciju:"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Add/uncomment the appropriate `LoadModule` statements in your Apache config\n"
+#~ "in `/etc/httpd/conf/httpd.conf`:\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "LoadModule headers_module modules/mod_headers.so\n"
+#~ "LoadModule proxy_module modules/mod_proxy.so\n"
+#~ "LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+#~ "LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+#~ "LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+#~ "```\n"
+#~ "\n"
+#~ "Restart your webserver after saving the configuration.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Dodajte ili otkomentarišite odgovarajuće `LoadModule` izjave u vašoj Apache konfiguraciji\n"
+#~ "u `/etc/httpd/conf/httpd.conf`:\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "LoadModule headers_module modules/mod_headers.so\n"
+#~ "LoadModule proxy_module modules/mod_proxy.so\n"
+#~ "LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+#~ "LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+#~ "LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+#~ "```\n"
+#~ "\n"
+#~ "Restartujte web server nakon čuvanja konfiguracije.\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 2 - Get a Current Config File"
+#~ msgstr "Korak 2 - Nabavite trenutnu konfiguracionu datoteku"
+
+#, fuzzy
+#~ msgid ""
+#~ "The package installation copied a `zammad.conf` file to your webserver "
+#~ "config directory. Check if it is present and do not rename this file!"
+#~ msgstr ""
+#~ "Instalacija paketa kopirala je datoteku `zammad.conf` u direktorijum za "
+#~ "konfiguraciju vašeg web servera. Proverite da li je prisutna i nemojte "
+#~ "menjati ime ove datoteke!"
+
+#, fuzzy
+#~ msgid "Adjust your Apache config directory according to your setup:"
+#~ msgstr ""
+#~ "Prilagodite direktorijum vaše Apache konfiguracije prema vašim postavkama:"
+
+#, fuzzy, no-wrap
+#~ msgid "ls /etc/apache2/sites-available\n"
+#~ msgstr "ls /etc/apache2/sites-available\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 3 - Adjust the Config File"
+#~ msgstr "Korak 3 - Prilagodite konfiguracionu datoteku"
+
+#, fuzzy
+#~ msgid ""
+#~ "Locate any `ServerName` directive and adjust `example.com` to the domain "
+#~ "of your Zammad instance."
+#~ msgstr ""
+#~ "Pronađite bilo koju `ServerName` direktivu i prilagodite `example.com` "
+#~ "domenu vaše Zammad instance."
+
+#, fuzzy
+#~ msgid ""
+#~ "Now you'll need to adjust the path and file names for your SSL "
+#~ "certificates you obtained. Adjust the following directives to match your "
+#~ "setup:"
+#~ msgstr ""
+#~ "Sada ćete morati da prilagodite putanje i imena datoteka za vaše SSL "
+#~ "sertifikate koje ste dobili. Prilagodite sledeće direktive tako da "
+#~ "odgovaraju vašem okruženju:"
+
+#, fuzzy
+#~ msgid "`SSLCertificateFile` (your SSL certificate)"
+#~ msgstr "`SSLCertificateFile` (vaš SSL sertifikat)"
+
+#, fuzzy
+#~ msgid "`SSLCertificateKeyFile`(the certificate's private key)"
+#~ msgstr "`SSLCertificateKeyFile`(privatni ključ sertifikata)"
+
+#, fuzzy
+#~ msgid "`SSLCertificateChainFile` (the public CA certificate)"
+#~ msgstr "`SSLCertificateChainFile` (javni CA sertifikat)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you don't have a `dhparam.pem` file yet, you can easily adapt the "
+#~ "example below to generate this file. You can find the correct path in "
+#~ "your webserver config. Search for `SSLOpenSSLConfCmd DHParameters`."
+#~ msgstr ""
+#~ "Ako još uvek nemate `dhparam.pem` datoteku, lako možete prilagoditi "
+#~ "primer ispod da je generišete. Tačnu putanju možete pronaći u "
+#~ "konfiguraciji vašeg web servera. Potražite `SSLOpenSSLConfCmd "
+#~ "DHParameters`."
+
+#, fuzzy, no-wrap
+#~ msgid "Step 4 - Adjust HTTPS Configuration"
+#~ msgstr "Korak 4 - Prilagodite HTTPS konfiguraciju"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 5 - Enable the Site"
+#~ msgstr "Korak 5 - Omogućite sajt"
+
+#, fuzzy
+#~ msgid ""
+#~ "This step mostly depends on your selected folders and should only affect "
+#~ "`sites-available` folders."
+#~ msgstr ""
+#~ "Ovaj korak najviše zavisi od vaših izabranih foldera i treba da obuhvati "
+#~ "samo `sites-available` foldere."
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "\n"
+#~ "=== Ubuntu, Debian, OpenSUSE\n"
+#~ "\n"
+#~ "Make sure the following line is present in your Apache config\n"
+#~ "(`/etc/apache2/apache2.conf`):\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "IncludeOptional sites-enabled/*.conf\n"
+#~ "```\n"
+#~ "\n"
+#~ "Enable it:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "a2ensite zammad\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== CentOS\n"
+#~ "\n"
+#~ "Make sure the following line is present in your Apache config\n"
+#~ "(`/etc/httpd/conf/httpd.conf`):\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "IncludeOptional sites-enabled/*.conf\n"
+#~ "```\n"
+#~ "\n"
+#~ "Enable it:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+#~ "```\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "=== Ubuntu, Debian, OpenSUSE\n"
+#~ "\n"
+#~ "Uverite se da je sledeća linija prisutna u vašoj Apache konfiguraciji\n"
+#~ "(`/etc/apache2/apache2.conf`):\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "IncludeOptional sites-enabled/*.conf\n"
+#~ "```\n"
+#~ "\n"
+#~ "Omogućite ga:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "a2ensite zammad\n"
+#~ "```\n"
+#~ "\n"
+#~ "=== CentOS\n"
+#~ "\n"
+#~ "Uverite se da je sledeća linija prisutna u vašoj Apache konfiguraciji\n"
+#~ "(`/etc/httpd/conf/httpd.conf`):\n"
+#~ "\n"
+#~ "```apache\n"
+#~ "IncludeOptional sites-enabled/*.conf\n"
+#~ "```\n"
+#~ "\n"
+#~ "Omogućite ga:\n"
+#~ "\n"
+#~ "```sh\n"
+#~ "ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+#~ "```\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Step 6 - Save & Reload"
+#~ msgstr "Korak 6 - Sačuvajte i ponovo učitate"
+
+#, fuzzy
+#~ msgid ""
+#~ "Reload your Apache with `sudo systemctl reload apache2` to apply your "
+#~ "configuration changes."
+#~ msgstr ""
+#~ "Ponovo učitajte Apache sa `sudo systemctl reload apache2` da biste "
+#~ "primenili izmene u konfiguraciji."
+
+#, fuzzy
+#~ msgid ""
+#~ "Click on one of the buttons at the bottom of the ticket detail view to "
+#~ "add an article. Depending on what you choose, the article create screen "
+#~ "gets pre-populated with the type and visibility. When choosing **Add "
+#~ "reply**, the article gets sent out to the customer of the ticket. In case "
+#~ "of an email based ticket, the email address of the customer is pre-"
+#~ "populated."
+#~ msgstr ","
+
+#, fuzzy
+#~ msgid ""
+#~ "If you scrolled own in the ticket, hover over the collapsed header bar "
+#~ "where you can find the button on the top left side."
+#~ msgstr ","
 
 #, no-wrap
 #~ msgid "/en/documentation/manage-zammad/start"
