@@ -181,6 +181,16 @@ Macro
   Puoi definire le tue macro ed eseguire azioni basate su tutti gli attributi
   disponibili in
 
+Main Content
+: The middle section of the Zammad layout. Depending on the view you have
+  selected, it shows the dashboard, overviews, the ticket detail view, the
+  create-ticket form or other screens.
+
+Main Content Footer
+: The action row at the bottom of the Main Content area. It holds the primary
+  actions of the currently active view, such as `Create`, `Apply Template` or
+  `Discard Changes` on the create-ticket form.
+
 Menzioni
 : Le menzioni sono una funzionalità di Zammad che ti permette di taggare un altro agente in un
   ticket
@@ -243,11 +253,13 @@ Ruolo
 
   Puoi persino aggiungere nuovi ruoli al tuo Zammad.
 
-Navigazione di secondo livello
-: Si riferisce a un menu aggiuntivo accanto alla navigazione (ad esempio quando
+Secondary Navigation
+: Refers to an additional menu next to the navigation (e.g. when opening profile
+  settings).
 
-Pannello laterale
-: Questo è il pannello che scorre dal lato destro per azioni come ticket
+Flyout
+: The panel that slides in from the right side of the screen for actions such
+  as linking or merging tickets, bulk actions, and the subscription toggle.
 
 Scheda barra laterale
 : Nella barra laterale del contenuto, ci sono diverse schede come "Cliente",
@@ -277,6 +289,14 @@ SSO
 Stato
 : Ogni ticket ha uno stato che riflette il progresso attuale della risoluzione del
   problema
+
+Taskbar
+: The section of the navigation sidebar which contains the taskbar tabs (one
+  for each opened ticket, user or organization or the detailed search).
+
+Taskbar Tab
+: A single tab in the taskbar. Clicking the tab brings the corresponding
+  ticket, user, organization or search into the main content area.
 
 Tag
 : I tag ti aiutano a categorizzare i ticket. Puoi definirli in base al tuo caso

@@ -67,9 +67,8 @@ Benutzers vor einem farbigen Hintergrund angezeigt. Wenn Sie ein Bild
 hinzufügen möchten, laden Sie einfach eines hoch oder verwenden Sie Ihre
 Kamera, falls Sie eine haben.
 
-Nachdem Sie ein Bild aufgenommen oder hochgeladen haben, können Sie es
-zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten
-Seiten-Panel.
+After capturing or uploading an image, you can crop it. Have a look at the
+preview at the top of the right flyout.
 
 ### Abwesenheit
 
@@ -119,8 +118,8 @@ Nachdem Sie das Token erstellt haben, wird es nur einmal in einem Dialogfeld
 angezeigt. Achten Sie darauf, es zu kopieren, da es keine Möglichkeit gibt,
 es erneut anzuzeigen.
 
-![Screenshot zeigt Seiten-Panel mit erstelltem Token und
-Kopierschaltfläche](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
+![Screenshot shows flyout with created token and copy
+button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Benachrichtigungen
 

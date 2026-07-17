@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-15 10:50+0200\n"
+"POT-Creation-Date: 2026-07-17 09:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1883,7 +1883,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:102
 #, markdown-text
 msgid ""
-"Activate the \"Subscribe me\" toggle in the ticket side panel to get "
+"Activate the **Subscribe me** toggle in the ticket sidebar to get "
 "notifications. If you have been mentioned in a ticket, you are automatically "
 "subscribed. Switch the toggle off to stop the notification. The avatars "
 "displayed show you who has subscribed to the ticket and is therefore "
@@ -2261,7 +2261,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
 #, markdown-text
-msgid "By using the side panel"
+msgid "By using the flyout"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -2307,15 +2307,15 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:257
 #, markdown-text, no-wrap
-msgid "**Side panel:**\n"
+msgid "**Flyout:**\n"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:259
 #, markdown-text
 msgid ""
-"![Screenshot shows the bulk action side "
-"panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
+"![Screenshot shows the bulk action "
+"flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2323,8 +2323,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "After you selected tickets, click the `Bulk Action` button in the top right "
-"corner and change/add attributes by using the fields in the right side "
-"panel. The available changes you can apply to tickets are:"
+"corner and change/add attributes by using the fields in the right "
+"flyout. The available changes you can apply to tickets are:"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -2427,8 +2427,8 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:290
 #, markdown-text
 msgid ""
-"![Screenshot shows the ticket merge side "
-"panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)"
+"![Screenshot shows the ticket merge "
+"flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgstr ""
 
 #. type: Plain text
@@ -2455,10 +2455,10 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
-"use the ::a:: menu and select `Merge`. This opens a side panel in which you "
-"can select a ticket by clicking on it or enter a ticket number in search "
-"field.  When you selected a target ticket, confirm by using the `Merge` "
-"button at the bottom."
+"use the ::a:: menu and select `Merge`. This opens a flyout in which you can "
+"select a ticket by clicking on it or enter a ticket number in search field.  "
+"When you selected a target ticket, confirm by using the `Merge` button at "
+"the bottom."
 msgstr ""
 
 #. type: Plain text
@@ -2555,8 +2555,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-"button in the **Related tickets** section.  This opens a side panel in which "
-"you can select a ticket by clicking on it or enter a ticket number in search "
+"button in the **Related tickets** section.  This opens a flyout in which you "
+"can select a ticket by clicking on it or enter a ticket number in search "
 "field.  Additionally, you can choose between different link types:"
 msgstr ""
 
@@ -3907,8 +3907,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "**Scroll to start** and **Scroll to end**: jump to the top or bottom of the "
-"article list. The end button also doubles as **Scroll to unread article** "
-"when there are unread articles."
+"article list. If there are unread articles, the **Scroll to end button** "
+"displays a badge and changes to **Scroll to unread article**."
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -4180,9 +4180,8 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid ""
 "Ticket Detail View\n"
-": This is where you handle your customer requests. It is located in the "
-"middle of the screen if a ticket tab is\n"
-"  selected in the navigation sidebar.\n"
+": This is where you handle your customer requests. It appears in the main\n"
+"  content when a ticket tab is selected in the navigation sidebar.\n"
 msgstr ""
 
 #. type: Plain text
@@ -4220,7 +4219,7 @@ msgid ""
 "The navigation sidebar is your central place to access all main parts of "
 "Zammad. You might not see all of them because some depend on the "
 "configuration of your Zammad. The navigation sidebar is always visible. That "
-"means if you don’t know where you are, you can always go back to the "
+"means if you don't know where you are, you can always go back to the "
 "dashboard, your overviews or an opened ticket, for example."
 msgstr ""
 
@@ -4228,7 +4227,7 @@ msgstr ""
 #: src/en/documentation/use/basics/zammad-ui.md:54
 #, markdown-text, no-wrap
 msgid ""
-"Search and Notfication Area\n"
+"Search and Notification Area\n"
 ": Includes the search where you can search for users, organizations, tickets "
 "and basically every in Zammad available\n"
 "  information. Next to the search you can find the Zammad logo. In case "
@@ -4245,15 +4244,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:60
-#, markdown-text
+#: src/en/documentation/use/basics/zammad-ui.md:61
+#, markdown-text, no-wrap
 msgid ""
-"Content Tabs : You can find tabs for your opened tickets, users and "
-"organizations."
+"Taskbar Tabs\n"
+": You can find tabs for your opened tickets, users and organizations in the "
+"taskbar which is a part of the navigation\n"
+"  sidebar.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:64
+#: src/en/documentation/use/basics/zammad-ui.md:65
 #, markdown-text, no-wrap
 msgid ""
 "Bottom Bar\n"
@@ -4263,7 +4264,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:67
+#: src/en/documentation/use/basics/zammad-ui.md:68
 #, markdown-text
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
@@ -4272,13 +4273,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:68
+#: src/en/documentation/use/basics/zammad-ui.md:69
 #, markdown-text, no-wrap
 msgid "Sidebar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:73
+#: src/en/documentation/use/basics/zammad-ui.md:74
 #, markdown-text
 msgid ""
 "The sidebar on the right side displays all ticket relevant information and "
@@ -4289,13 +4290,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:75
+#: src/en/documentation/use/basics/zammad-ui.md:76
 #, markdown-text, no-wrap
 msgid "<!-- markdownlint-disable MD007 -->\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:79
+#: src/en/documentation/use/basics/zammad-ui.md:80
 #, markdown-text, no-wrap
 msgid ""
 "Ticket Tab\n"
@@ -4306,7 +4307,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 #, markdown-text
 msgid ""
 "History: shows a dialog with the history in the current ticket. This is "
@@ -4314,7 +4315,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 #, markdown-text
 msgid ""
 "Merge: merge the ticket with another one in case a customer emailed you "
@@ -4322,28 +4323,28 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:84
+#: src/en/documentation/use/basics/zammad-ui.md:85
 #, markdown-text
 msgid "Change customer: set another customer for the ticket."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:88
+#: src/en/documentation/use/basics/zammad-ui.md:89
 #, markdown-text, no-wrap
 msgid ""
 "Customer Tab\n"
-": View customer details including a reference to the customer’s other "
+": View customer details including a reference to the customer's other "
 "tickets. You can change the ticket customer here\n"
 "  as well by clicking on the ::a:: button in the top section.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:91
+#: src/en/documentation/use/basics/zammad-ui.md:92
 #, markdown-text, no-wrap
 msgid ""
 "Organization Tab\n"
 ": This tab is only shown if the customer is member of an organization. It "
-"shows the organization’s details including all\n"
+"shows the organization's details including all\n"
 "  members. By clicking on the ::a:: button in the top section, you can edit "
 "the organization.\n"
 msgstr ""
@@ -6709,7 +6710,7 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:66
 #, markdown-text
 msgid ""
-"Initially, you will be presented with an empty side panel instructing you to "
+"Initially, you will be presented with an empty flyout instructing you to "
 "**Set Up** your first key."
 msgstr ""
 
@@ -7265,7 +7266,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "After capturing or uploading an image, you can crop it. Have a look at the "
-"preview at the top of the right side panel."
+"preview at the top of the right flyout."
 msgstr ""
 
 #. type: Title ###
@@ -7367,7 +7368,7 @@ msgstr ""
 #: src/en/documentation/use/user-profile.md:95
 #, markdown-text
 msgid ""
-"![Screenshot shows side panel with created token and copy "
+"![Screenshot shows flyout with created token and copy "
 "button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 msgstr ""
 
@@ -15665,6 +15666,28 @@ msgstr ""
 #: src/en/reference/glossary.md:272
 #, markdown-text, no-wrap
 msgid ""
+"Main Content\n"
+": The middle section of the Zammad layout. Depending on the view you have\n"
+"  selected, it shows the dashboard, overviews, the ticket detail view, the\n"
+"  create-ticket form or other screens.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:277
+#, markdown-text, no-wrap
+msgid ""
+"Main Content Footer\n"
+": The action row at the bottom of the Main Content area. It holds the "
+"primary\n"
+"  actions of the currently active view, such as `Create`, `Apply Template` "
+"or\n"
+"  `Discard Changes` on the create-ticket form.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:282
+#, markdown-text, no-wrap
+msgid ""
 "Mentions\n"
 ": Mentions are a Zammad feature that allows you to tag another agent in a\n"
 "  ticket. Just type [[@]][[@]] and the name. The selected person will be "
@@ -15673,7 +15696,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:278
+#: src/en/reference/glossary.md:288
 #, markdown-text, no-wrap
 msgid ""
 "Migrator / Migration Wizard\n"
@@ -15685,7 +15708,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:283
+#: src/en/reference/glossary.md:293
 #, markdown-text, no-wrap
 msgid ""
 "Monit\n"
@@ -15696,7 +15719,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:287
+#: src/en/reference/glossary.md:297
 #, markdown-text, no-wrap
 msgid ""
 "Navigation Bar\n"
@@ -15706,7 +15729,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:291
+#: src/en/reference/glossary.md:301
 #, markdown-text, no-wrap
 msgid ""
 "Navigation Tab\n"
@@ -15716,7 +15739,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:296
+#: src/en/reference/glossary.md:306
 #, markdown-text, no-wrap
 msgid ""
 "Nagios\n"
@@ -15726,7 +15749,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:301
+#: src/en/reference/glossary.md:311
 #, markdown-text, no-wrap
 msgid ""
 "On-Premise\n"
@@ -15736,7 +15759,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:307
+#: src/en/reference/glossary.md:317
 #, markdown-text, no-wrap
 msgid ""
 "Organization\n"
@@ -15748,7 +15771,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:313
+#: src/en/reference/glossary.md:323
 #, markdown-text, no-wrap
 msgid ""
 "Owner\n"
@@ -15760,7 +15783,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:319
+#: src/en/reference/glossary.md:329
 #, markdown-text, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -15772,7 +15795,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:325
+#: src/en/reference/glossary.md:335
 #, markdown-text, no-wrap
 msgid ""
 "Placetel\n"
@@ -15785,7 +15808,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:330
+#: src/en/reference/glossary.md:340
 #, markdown-text, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call "
@@ -15796,7 +15819,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:335
+#: src/en/reference/glossary.md:345
 #, markdown-text, no-wrap
 msgid ""
 "Priority\n"
@@ -15807,7 +15830,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:343
+#: src/en/reference/glossary.md:353
 #, markdown-text, no-wrap
 msgid ""
 "Release\n"
@@ -15822,7 +15845,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:347
+#: src/en/reference/glossary.md:357
 #, markdown-text, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases){target=_blank} you "
@@ -15833,7 +15856,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:351
+#: src/en/reference/glossary.md:361
 #, markdown-text, no-wrap
 msgid ""
 "Role\n"
@@ -15842,7 +15865,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:358
+#: src/en/reference/glossary.md:368
 #, markdown-text, no-wrap
 msgid ""
 "  _Admins_ have the most rights: they can define roles, permissions,\n"
@@ -15855,33 +15878,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:360
+#: src/en/reference/glossary.md:370
 #, markdown-text, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:364
+#: src/en/reference/glossary.md:374
 #, markdown-text, no-wrap
 msgid ""
-"Second Level Navigation\n"
+"Secondary Navigation\n"
 ": Refers to an additional menu next to the navigation (e.g. when opening "
 "profile\n"
 "  settings).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:368
+#: src/en/reference/glossary.md:378
 #, markdown-text, no-wrap
 msgid ""
-"Side(Panel)\n"
-": This is the panel which is flying in on the right side for actions like "
-"ticket\n"
-"  linking or ticket merging.\n"
+"Flyout\n"
+": The panel that slides in from the right side of the screen for actions "
+"such\n"
+"  as linking or merging tickets, bulk actions, and the subscription "
+"toggle.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:373
+#: src/en/reference/glossary.md:383
 #, markdown-text, no-wrap
 msgid ""
 "Sidebar Tab\n"
@@ -15892,13 +15916,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:375
+#: src/en/reference/glossary.md:385
 #, markdown-text, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:381
+#: src/en/reference/glossary.md:391
 #, markdown-text, no-wrap
 msgid ""
 "Sipgate\n"
@@ -15911,7 +15935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:388
+#: src/en/reference/glossary.md:398
 #, markdown-text, no-wrap
 msgid ""
 "SLA\n"
@@ -15924,7 +15948,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:392
+#: src/en/reference/glossary.md:402
 #, markdown-text, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the "
@@ -15935,7 +15959,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:398
+#: src/en/reference/glossary.md:408
 #, markdown-text, no-wrap
 msgid ""
 "S/MIME\n"
@@ -15949,7 +15973,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:403
+#: src/en/reference/glossary.md:413
 #, markdown-text, no-wrap
 msgid ""
 "SSO\n"
@@ -15961,7 +15985,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:410
+#: src/en/reference/glossary.md:420
 #, markdown-text, no-wrap
 msgid ""
 "State\n"
@@ -15977,7 +16001,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:418
+#: src/en/reference/glossary.md:424
+#, markdown-text, no-wrap
+msgid ""
+"Taskbar\n"
+": The section of the navigation sidebar which contains the taskbar tabs "
+"(one\n"
+"  for each opened ticket, user or organization or the detailed search).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:428
+#, markdown-text, no-wrap
+msgid ""
+"Taskbar Tab\n"
+": A single tab in the taskbar. Clicking the tab brings the corresponding\n"
+"  ticket, user, organization or search into the main content area.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/glossary.md:436
 #, markdown-text, no-wrap
 msgid ""
 "Tags\n"
@@ -15994,7 +16037,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:421
+#: src/en/reference/glossary.md:439
 #, markdown-text, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and assigned\n"
@@ -16002,7 +16045,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:429
+#: src/en/reference/glossary.md:447
 #, markdown-text, no-wrap
 msgid ""
 "Text Module\n"
@@ -16018,7 +16061,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:432
+#: src/en/reference/glossary.md:450
 #, markdown-text, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -16026,7 +16069,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:437
+#: src/en/reference/glossary.md:455
 #, markdown-text, no-wrap
 msgid ""
 "(Ticket) Template\n"
@@ -16038,7 +16081,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:443
+#: src/en/reference/glossary.md:461
 #, markdown-text, no-wrap
 msgid ""
 "User\n"
@@ -16050,7 +16093,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:449
+#: src/en/reference/glossary.md:467
 #, markdown-text, no-wrap
 msgid ""
 "Webhooks\n"
@@ -16063,13 +16106,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:452
+#: src/en/reference/glossary.md:470
 #, markdown-text
 msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:453
+#: src/en/reference/glossary.md:471
 #, markdown-text, no-wrap
 msgid "</VPGlossary>\n"
 msgstr ""

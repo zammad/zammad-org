@@ -107,8 +107,11 @@ proprietario, puoi iscriverti.
 
 **Come?**
 
-Attiva il pulsante "Iscrivimi" nel pannello laterale del ticket per ricevere
-notifiche.
+Activate the **Subscribe me** toggle in the ticket sidebar to get
+notifications. If you have been mentioned in a ticket, you are automatically
+subscribed. Switch the toggle off to stop the notification. The avatars
+displayed show you who has subscribed to the ticket and is therefore
+notified of updates.
 
 ## Macro
 
@@ -264,7 +267,7 @@ Ci sono 2 posti dove puoi applicare azioni bulk:
 
 In entrambi i posti puoi applicare azioni bulk in diversi modi:
 
-- Usando il pannello laterale
+- By using the flyout
 - Usando l'overlay drag & drop
 
 Per utilizzare le azioni di massa, seleziona innanzitutto i ticket a cui
@@ -283,15 +286,14 @@ del primo ticket, poi tieni premuto [[shift]] e fai clic sull'ultimo.
 A seconda del numero di ticket interessati, potresti vedere una piccola
 notifica.
 
-**Pannello laterale:**
+**Flyout:**
 
-![Screenshot che mostra il pannello laterale per le azioni
-bulk](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-Dopo aver selezionato i ticket, fai clic sul pulsante "Azioni di massa"
-nell'angolo in alto a destra e modifica/aggiungi attributi utilizzando i
-campi nel pannello laterale destro. Le modifiche che puoi applicare ai
-ticket sono:
+After you selected tickets, click the `Bulk Action` button in the top right
+corner and change/add attributes by using the fields in the right
+flyout. The available changes you can apply to tickets are:
 
 - Imposta gruppo
 - Imposta proprietario
@@ -321,8 +323,8 @@ Avvia l'azione drag and drop da uno dei ticket già selezionati.
 
 ## Unire i ticket
 
-![Screenshot che mostra il pannello laterale per l'unione dei
-ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Perché?**
 
@@ -334,8 +336,11 @@ selezionato.
 
 **Come?**
 
-Vai al ticket che vuoi unire a un altro. Nella barra laterale del ticket,
-usa il menu ::a:: e seleziona `Unisci`.
+Go to the ticket you want to merge into another one. In the ticket sidebar,
+use the ::a:: menu and select `Merge`. This opens a flyout in which you can
+select a ticket by clicking on it or enter a ticket number in search field.
+When you selected a target ticket, confirm by using the `Merge` button at
+the bottom.
 
 Di conseguenza, gli articoli vengono spostati nel ticket selezionato. Il
 ticket in cui è stata eseguita l'unione rimane attivo con le seguenti
@@ -377,11 +382,10 @@ automaticamente.
 
 **Come?**
 
-Nella barra laterale del ticket, aggiungi un collegamento a un altro ticket
-facendo clic sul pulsante ::+:: nella sezione **Ticket correlati**. Si
-aprirà un pannello laterale in cui potrai selezionare un ticket facendo clic
-su di esso oppure inserendo il numero del ticket nel campo di
-ricerca. Inoltre, puoi scegliere tra diversi tipi di collegamento:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the **Related tickets** section.  This opens a flyout in which you
+can select a ticket by clicking on it or enter a ticket number in search
+field.  Additionally, you can choose between different link types:
 
 - **Normale:** per ticket correlati senza gerarchia.
 - **Genitore/Figlio**: per ticket correlati dove uno è il problema

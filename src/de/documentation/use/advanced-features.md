@@ -127,11 +127,11 @@ bei jeder Aktualisierung eine Benachrichtigung erhalten.
 
 **Wie?**
 
-Aktivieren Sie den Schalter "Abonnieren" im seitlichen Bereich des Tickets,
-um Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt wurden,
-werden Sie automatisch benachrichtigt. Deaktivieren Sie den Schalter, um die
-Benachrichtigung zu stoppen. Die angezeigten Avatare zeigen Ihnen, wer das
-Ticket abonniert hat und somit über Aktualisierungen benachrichtigt wird.
+Activate the **Subscribe me** toggle in the ticket sidebar to get
+notifications. If you have been mentioned in a ticket, you are automatically
+subscribed. Switch the toggle off to stop the notification. The avatars
+displayed show you who has subscribed to the ticket and is therefore
+notified of updates.
 
 ## Makros
 
@@ -318,7 +318,7 @@ Es gibt 2 Stellen, an denen Sie Mehrfach-Aktionen durchführen können:
 An beiden Stellen können Sie Mehrfach-Aktionen auf unterschiedliche Weise
 ausführen:
 
-- Durch die Verwendung des Seiten-Panels
+- By using the flyout
 - Durch die Verwendung der Drag-and-Drop-Einblendung
 
 Um Mehrfach-Aktionen zu verwenden, wählen Sie zunächst die Tickets aus, auf
@@ -343,15 +343,14 @@ informiert. Die Mehrfach-Aktion wird im Hintergrund ausgeführt, damit Sie an
 anderen Tickets arbeiten können. Solange die Mehrfach-Aktion nicht
 abgeschlossen ist, können Sie jedoch keine neue Mehrfach-Aktion starten.
 
-**Seiten-Panel:**
+**Flyout:**
 
-![Screenshot zeigt das Seiten-Panel für
-Mehrfach-Aktionen](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-Nachdem Sie Tickets ausgewählt haben, klicken Sie auf die Schaltfläche
-`Mehrfach-Aktion` in der oberen rechten Ecke und ändern bzw. fügen Sie
-Attribute mithilfe der Felder im rechten Bereich hinzu. Die möglichen
-Änderungen, die Sie auf Tickets anwenden können, sind:
+After you selected tickets, click the `Bulk Action` button in the top right
+corner and change/add attributes by using the fields in the right
+flyout. The available changes you can apply to tickets are:
 
 - Gruppe festlegen
 - Besitzer festlegen
@@ -385,8 +384,8 @@ berücksichtigt wird.
 
 ## Ticket zusammenfassen
 
-![Screenshot zeigt den Bereich für die
-Ticket-Zusammenfassung](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Warum?**
 
@@ -403,12 +402,11 @@ Ticket übernommen.
 
 **Wie?**
 
-Gehen Sie zu dem Ticket, das Sie mit einem anderen zusammenführen
-möchten. Wählen Sie in der Seitenleiste des Tickets im ::a:: Menü
-`Zusammenfassen`. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
-Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
-eingeben können.  Wenn Sie ein Ticket ausgewählt haben, bestätigen Sie es
-mit der Schaltfläche `Zusammenfassen` am unteren Rand.
+Go to the ticket you want to merge into another one. In the ticket sidebar,
+use the ::a:: menu and select `Merge`. This opens a flyout in which you can
+select a ticket by clicking on it or enter a ticket number in search field.
+When you selected a target ticket, confirm by using the `Merge` button at
+the bottom.
 
 Als Ergebnis werden die Artikel in das gewählte Ticket verschoben. Das
 Ticket, in dem Sie die Zusammenfassung durchgeführt haben, existiert
@@ -455,12 +453,10 @@ werden. [Zusammengefasste](#tickets-zusammenfassen) und
 
 **Wie?**
 
-Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket
-hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt **Verwandte
-Tickets** klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein
-Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld
-eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen
-wählen:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the **Related tickets** section.  This opens a flyout in which you
+can select a ticket by clicking on it or enter a ticket number in search
+field.  Additionally, you can choose between different link types:
 
 - **Normal:** für verwandte Tickets, die keine Hierarchie haben.
 - **Eltern/Kinder**: für verwandte Tickets, von denen eines das Hauptthema

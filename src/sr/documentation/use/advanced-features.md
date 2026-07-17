@@ -119,10 +119,11 @@ Zammad приказује листу свих корисника који одг
 
 **Како?**
 
-Укључите прекидач „Претплати се” у траци тикета са стране за добијање
-обавештења. Уколико сте већ поменути у тикету, већ сте
-претплаћени. Искључите прекидач за заустављање обавештења. Сличице испод вам
-приказују ко је претплаћен на тикет и ко је обавештен о освежавањима.
+Activate the **Subscribe me** toggle in the ticket sidebar to get
+notifications. If you have been mentioned in a ticket, you are automatically
+subscribed. Switch the toggle off to stop the notification. The avatars
+displayed show you who has subscribed to the ticket and is therefore
+notified of updates.
 
 ## Макрои
 
@@ -291,7 +292,7 @@ SLA функција захтева подешавање од стране ва�
 
 На оба места можете покренути масовне радње на различите начине:
 
-- Коришћењем панела са стране
+- By using the flyout
 - Коришћењем механизма превуци и пусти
 
 За коришћење масовне радње, прво одаберите тикете које желите да
@@ -313,14 +314,14 @@ SLA функција захтева подешавање од стране ва�
 обраду других тикета.  Међутим, док се масовна радња не заврши, нећете бити
 у могућности да покренете нову масовну радњу.
 
-**Бочни панел:**
+**Flyout:**
 
-![Снимак екрана приказује бочни панел масовне
-радње](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и
-промените/додајте атрибуте коришћењем поља у бочном панелу са десне
-стране. Доступни атрибути тикета које можете изменити су:
+After you selected tickets, click the `Bulk Action` button in the top right
+corner and change/add attributes by using the fields in the right
+flyout. The available changes you can apply to tickets are:
 
 - Промена групе
 - Промена власника
@@ -351,8 +352,8 @@ SLA функција захтева подешавање од стране ва�
 
 ## Спајање тикета
 
-![Снимак екрана приказује бочну траку спајања
-тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge
+flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Зашто?**
 
@@ -367,10 +368,11 @@ SLA функција захтева подешавање од стране ва�
 
 **Како?**
 
-Идите на тикет који желите да спојите са другим. У траци тикета, одаберите
-`Споји` у падајућем менију ::a::. Ово ће отворити бочни панел у коме можете
-одабрати тикет кликом на исти или уносом броја тикета у поље за
-претрагу. Када одаберете циљни тикет, потврдите дугметом `Споји` при дну.
+Go to the ticket you want to merge into another one. In the ticket sidebar,
+use the ::a:: menu and select `Merge`. This opens a flyout in which you can
+select a ticket by clicking on it or enter a ticket number in search field.
+When you selected a target ticket, confirm by using the `Merge` button at
+the bottom.
 
 На крају, чланци ће бити пребачени у одабрани тикет. Тикет на коме сте
 извршили радњу спајања и даље постоји са следећим изменама:
@@ -412,10 +414,10 @@ SLA функција захтева подешавање од стране ва�
 
 **Како?**
 
-У панелу тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку
-**Повезани тикети**.  Ово ће отворити траку са стране у којој можете
-одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.
-Додатно, можете изабрати између различитих типова веза:
+In the ticket sidebar, add a link to another ticket by clicking the ::+::
+button in the **Related tickets** section.  This opens a flyout in which you
+can select a ticket by clicking on it or enter a ticket number in search
+field.  Additionally, you can choose between different link types:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други

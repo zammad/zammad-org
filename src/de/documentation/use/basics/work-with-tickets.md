@@ -139,8 +139,8 @@ two conveniences:
   actions:
   - **Add internal note**: opens the article reply form to write a note.
   - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
-    the article list. The end button also doubles as **Scroll to unread
-    article** when there are unread articles.
+    the article list. If there are unread articles, the **Scroll to end
+    button** displays a badge and changes to **Scroll to unread article**.
   - The toolbar appears whenever the article list is taller than your screen
     so that crucial actions stay accessible.
 - A **pinned reply form** so the editor stays visible while you scroll

@@ -78,7 +78,7 @@ click on **Set Up**. Go on either by setting up another 2FA method
 безбедносних кључева са својим Zammad налогом, а затим их можете користити
 током процеса пријављивања.
 
-Initially, you will be presented with an empty side panel instructing you to
+Initially, you will be presented with an empty flyout instructing you to
 **Set Up** your first key.
 
 ![Screenshot shows security key authentication

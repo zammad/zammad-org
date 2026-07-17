@@ -82,8 +82,8 @@ tua identità. Puoi registrare più chiavi di sicurezza hardware o software
 con il tuo account Zammad e poi possono essere usate durante il processo di
 accesso.
 
-Inizialmente, ti verrà presentato un pannello laterale vuoto che ti
-istruisce a **Configurare** la tua prima chiave.
+Initially, you will be presented with an empty flyout instructing you to
+**Set Up** your first key.
 
 ![Screenshot che mostra la configurazione dell'autenticazione con chiave di
 sicurezza](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)

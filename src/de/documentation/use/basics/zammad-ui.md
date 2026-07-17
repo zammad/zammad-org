@@ -34,9 +34,9 @@ Navigations-Tab
 : Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab (mit
   der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.
 
-Ticket-Detailansicht
-: Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte
-  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.
+Ticket Detail View
+: This is where you handle your customer requests. It appears in the main
+  content when a ticket tab is selected in the navigation sidebar.
 
 Seitenleiste
 : Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs
@@ -49,24 +49,24 @@ Seitenleisten-Tabs
 
 ## Navigations-Seitenleiste
 
-Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen
-Bereiche von Zammad zuzugreifen. Möglicherweise sehen Sie nicht alles davon,
-da manches von der Konfiguration Ihres Zammads abhängt. Die
-Navigations-Seitenleiste ist immer sichtbar. Das heißt, wenn Sie nicht
-wissen, wo Sie sich befinden, können Sie z.B. jederzeit zum Dashboard, zu
-Ihren Übersichten oder zu einem geöffneten Ticket zurückkehren.
+The navigation sidebar is your central place to access all main parts of
+Zammad. You might not see all of them because some depend on the
+configuration of your Zammad. The navigation sidebar is always visible. That
+means if you don't know where you are, you can always go back to the
+dashboard, your overviews or an opened ticket, for example.
 
-Such- und Benachrichtigungsbereich
-: Beinhaltet die Suche, in der Sie nach Benutzern, Organisationen, Tickets und grundsätzlich allen in Zammad verfügbaren
-  Informationen suchen können. Neben der Suche finden Sie das Zammad-Logo. Falls es eine Benachrichtigung gibt, zeigt es Ihnen
-  in einem Zähler an, wie viele Benachrichtigungen vorhanden sind.
+Search and Notification Area
+: Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
+  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
+  with a count about how many notifications you got.
 
 Navigation
 : Ermöglicht Ihnen den Wechsel zu verschiedenen Zammad-Ansichten wie dem
 Dashboard, den Übersichten, der Knowledge Base oder der Telefonansicht.
 
-Inhalts-Tabs
-: Es gibt Tabs für Ihre geöffneten Tickets, Benutzer und Organisationen.
+Taskbar Tabs
+: You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation
+  sidebar.
 
 Untere Leiste
 : Profileinstellungen und Schaltfläche "Neues Ticket" innerhalb der Navigations-Seitenleiste. Falls Sie über entsprechende Berechtigungen verfügen, gibt es zusätzlich die Schaltflächen Einstellungen und
@@ -98,10 +98,10 @@ Ticket Tab
     ein Kunde Sie mehrfach wegen desselben Problems kontaktiert hat.
   - Kunden ändern: Ändern Sie den Kunden für das Ticket.
 
-Kunden Tab
-: Anzeige der Kundendetails einschließlich eines Verweises auf dessen andere Tickets. Sie können den Kunden des Tickets hier ändern,
-  indem Sie auf die ::a:: Schaltfläche klicken und "Kunden ändern" auswählen.
+Customer Tab
+: View customer details including a reference to the customer's other tickets. You can change the ticket customer here
+  as well by clicking on the ::a:: button in the top section.
 
-Organisations Tab
-: Dieser Tab wird nur angezeigt, wenn der Kunde Mitglied einer Organisation ist. Sie zeigt die Details der Organisation einschließlich aller
-  Mitglieder. Bearbeiten Sie die Organisation, indem Sie die ::a:: Schaltfläche im oberen Bereich klicken.
+Organization Tab
+: This tab is only shown if the customer is member of an organization. It shows the organization's details including all
+  members. By clicking on the ::a:: button in the top section, you can edit the organization.

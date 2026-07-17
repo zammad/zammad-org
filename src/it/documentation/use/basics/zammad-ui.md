@@ -33,9 +33,9 @@ Scheda di navigazione
 : Ogni elemento della barra laterale di navigazione è chiamato scheda di navigazione. A seconda del contenuto, può essere una 
      scheda ticket (con la visualizzazione dei dettagli del ticket) o una scheda panoramica che apre l'elenco delle panoramiche disponibili.
 
-Visualizzazione dettagli ticket
-: Qui puoi gestire le richieste dei tuoi clienti. Si trova al centro dello schermo se è selezionata una scheda ticket nella barra 
-     laterale di navigazione.
+Ticket Detail View
+: This is where you handle your customer requests. It appears in the main
+  content when a ticket tab is selected in the navigation sidebar.
 
 Barra laterale
 : Questa è la barra laterale destra nella visualizzazione dettagli ticket. Contiene schede della barra laterale come clienti e checklist e visualizza la scheda attualmente selezionata.
@@ -47,21 +47,23 @@ queste schede dipende dalla configurazione del sistema, dalle autorizzazioni e d
 
 ## Barra laterale di navigazione
 
-La barra laterale di navigazione è il tuo posto centrale per accedere a
-tutte le parti principali di Zammad. Potresti non vedere tutte perché alcune
-dipendono dalla configurazione del tuo Zammad. La barra laterale di
-navigazione è sempre visibile.
+The navigation sidebar is your central place to access all main parts of
+Zammad. You might not see all of them because some depend on the
+configuration of your Zammad. The navigation sidebar is always visible. That
+means if you don't know where you are, you can always go back to the
+dashboard, your overviews or an opened ticket, for example.
 
-Area di ricerca e notifiche
-: Include la funzione di ricerca che permette di cercare utenti, organizzazioni, ticket e praticamente qualsiasi informazione disponibile su Zammad.
-Accanto alla barra di ricerca è presente il logo di Zammad. In caso di notifiche, viene visualizzato un badge
-con un contatore delle notifiche ricevute.
+Search and Notification Area
+: Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
+  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
+  with a count about how many notifications you got.
 
 Navigazione : Ti permette di passare a diverse schermate di Zammad come la
 dashboard, le panoramiche, la base di conoscenza o la schermata telefono.
 
-Schede contenuto : Qui trovi le schede per i tuoi ticket aperti, utenti e
-organizzazioni.
+Taskbar Tabs
+: You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation
+  sidebar.
 
 Barra inferiore
 : Impostazioni del profilo e pulsante per creare un nuovo ticket. Se hai permessi aggiuntivi, potrebbe esserci anche un pulsante delle impostazioni e uno dei rapporti.
@@ -92,10 +94,10 @@ Scheda ticket
     abbia inviato più email sullo stesso problema.
   - Cambia cliente: imposta un altro cliente per il ticket.
 
-Scheda cliente
-: Visualizza i dettagli del cliente incluso un riferimento agli altri ticket del cliente. Puoi anche cambiare il cliente del ticket qui
-  facendo clic sul pulsante ::a:: nella sezione superiore.
+Customer Tab
+: View customer details including a reference to the customer's other tickets. You can change the ticket customer here
+  as well by clicking on the ::a:: button in the top section.
 
-Scheda organizzazione
-: Questa scheda viene mostrata solo se il cliente è membro di un'organizzazione. Mostra i dettagli dell'organizzazione inclusi tutti
-  i membri. Facendo clic sul pulsante ::a:: nella sezione superiore, puoi modificare l'organizzazione.
+Organization Tab
+: This tab is only shown if the customer is member of an organization. It shows the organization's details including all
+  members. By clicking on the ::a:: button in the top section, you can edit the organization.

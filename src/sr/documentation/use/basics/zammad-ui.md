@@ -32,8 +32,8 @@ Navigation Tab
   the ticket detail view) or the overview tab which opens the list of available overviews.
 
 Ticket Detail View
-: This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is
-  selected in the navigation sidebar.
+: This is where you handle your customer requests. It appears in the main
+  content when a ticket tab is selected in the navigation sidebar.
 
 Sidebar
 : This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and
@@ -49,10 +49,10 @@ Sidebar Tabs
 The navigation sidebar is your central place to access all main parts of
 Zammad. You might not see all of them because some depend on the
 configuration of your Zammad. The navigation sidebar is always visible. That
-means if you don’t know where you are, you can always go back to the
+means if you don't know where you are, you can always go back to the
 dashboard, your overviews or an opened ticket, for example.
 
-Search and Notfication Area
+Search and Notification Area
 : Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
   information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
   with a count about how many notifications you got.
@@ -60,8 +60,9 @@ Search and Notfication Area
 Navigation : Allows you to switch to different Zammad screens like the
 dashboard, overviews, knowledge base or phone screen.
 
-Content Tabs : You can find tabs for your opened tickets, users and
-organizations.
+Taskbar Tabs
+: You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation
+  sidebar.
 
 Bottom Bar
 : Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and
@@ -93,9 +94,9 @@ Ticket Tab
   - Измени клијента: поставите другог клијента тикета.
 
 Customer Tab
-: View customer details including a reference to the customer’s other tickets. You can change the ticket customer here
+: View customer details including a reference to the customer's other tickets. You can change the ticket customer here
   as well by clicking on the ::a:: button in the top section.
 
 Organization Tab
-: This tab is only shown if the customer is member of an organization. It shows the organization’s details including all
+: This tab is only shown if the customer is member of an organization. It shows the organization's details including all
   members. By clicking on the ::a:: button in the top section, you can edit the organization.

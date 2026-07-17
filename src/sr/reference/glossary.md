@@ -265,6 +265,16 @@ Macro
   You can define your own macros and perform actions based on all available
   attributes in the ticket.
 
+Main Content
+: The middle section of the Zammad layout. Depending on the view you have
+  selected, it shows the dashboard, overviews, the ticket detail view, the
+  create-ticket form or other screens.
+
+Main Content Footer
+: The action row at the bottom of the Main Content area. It holds the primary
+  actions of the currently active view, such as `Create`, `Apply Template` or
+  `Discard Changes` on the create-ticket form.
+
 Mentions
 : Mentions are a Zammad feature that allows you to tag another agent in a
   ticket. Just type [[@]][[@]] and the name. The selected person will be notified
@@ -358,13 +368,13 @@ Role
 
   You can even add new roles to your Zammad.
 
-Second Level Navigation
+Secondary Navigation
 : Refers to an additional menu next to the navigation (e.g. when opening profile
   settings).
 
-Side(Panel)
-: This is the panel which is flying in on the right side for actions like ticket
-  linking or ticket merging.
+Flyout
+: The panel that slides in from the right side of the screen for actions such
+  as linking or merging tickets, bulk actions, and the subscription toggle.
 
 Sidebar Tab
 : In the content sidebar, there are different tabs like "Customer",
@@ -407,6 +417,14 @@ State
   on automation or SLA. Each state has a state types. There are four state types
   by default and they are color-coded. You can even add additional states to
   your Zammad.
+
+Taskbar
+: The section of the navigation sidebar which contains the taskbar tabs (one
+  for each opened ticket, user or organization or the detailed search).
+
+Taskbar Tab
+: A single tab in the taskbar. Clicking the tab brings the corresponding
+  ticket, user, organization or search into the main content area.
 
 Tags
 : Tags help you to categorize tickets. You can define them based on your use

@@ -64,8 +64,8 @@ tuo utente vengono visualizzate su uno sfondo colorato. Se vuoi aggiungere
 un'immagine, caricane semplicemente una o usa la tua fotocamera, se ne hai
 una.
 
-Dopo aver acquisito o caricato un'immagine, puoi ritagliarla. Dai
-un'occhiata all'anteprima in cima al pannello laterale destro.
+After capturing or uploading an image, you can crop it. Have a look at the
+preview at the top of the right flyout.
 
 ### Fuori ufficio
 
@@ -111,9 +111,8 @@ Dopo aver creato il token, viene visualizzato in una finestra di dialogo
 solo una volta. Assicurati di copiarlo perché non c'è la possibilità di
 accedervi di nuovo.
 
-![Screenshot che mostra il pannello laterale con il token creato e il
-pulsante di
-copia](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
+![Screenshot shows flyout with created token and copy
+button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Notifiche
 

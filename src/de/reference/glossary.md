@@ -263,6 +263,16 @@ Makro
   Sie können Ihre eigenen Makros definieren und Aktionen basierend auf allen verfügbaren
   Attributen im Ticket durchführen.
 
+Main Content
+: The middle section of the Zammad layout. Depending on the view you have
+  selected, it shows the dashboard, overviews, the ticket detail view, the
+  create-ticket form or other screens.
+
+Main Content Footer
+: The action row at the bottom of the Main Content area. It holds the primary
+  actions of the currently active view, such as `Create`, `Apply Template` or
+  `Discard Changes` on the create-ticket form.
+
 Erwähnungen
 : Erwähnungen sind eine Funktion von Zammad, mit der Sie einen anderen Agenten in einem
   Ticket markieren können. Geben Sie einfach [[@]][[@]] und den Namen ein. Die ausgewählte Person
@@ -355,13 +365,13 @@ Rolle
 
   Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
 
-Zweite Navigationsebene
-: Bezieht sich auf ein zusätzliches Menü neben der Navigation (z.B. beim Öffnen der
-  Profil-Einstellungen).
+Secondary Navigation
+: Refers to an additional menu next to the navigation (e.g. when opening profile
+  settings).
 
-Seiten(Leiste)
-: Dies ist der Bereich, der von der rechten Seite aus für Aktionen wie
-  Ticket-Verknüpfung oder Zusammenführung von Tickets ins Bild schwebt.
+Flyout
+: The panel that slides in from the right side of the screen for actions such
+  as linking or merging tickets, bulk actions, and the subscription toggle.
 
 Seitenleisten-Tab
 : In der Seitenleiste gibt es verschiedene Tabs wie "Kunde",
@@ -403,6 +413,14 @@ Status
   Problems widerspiegelt. Der Status eines Tickets kann manuell oder automatisch auf der Grundlage von
   Automatisierungen oder SLA gesetzt werden. Jeder Status hat einen Statustyp. Es gibt vier Statustypen
   und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.
+
+Taskbar
+: The section of the navigation sidebar which contains the taskbar tabs (one
+  for each opened ticket, user or organization or the detailed search).
+
+Taskbar Tab
+: A single tab in the taskbar. Clicking the tab brings the corresponding
+  ticket, user, organization or search into the main content area.
 
 Tags
 : Tags helfen Ihnen, Tickets zu kategorisieren. Sie können sie auf der Grundlage Ihres Anwendungsfalls

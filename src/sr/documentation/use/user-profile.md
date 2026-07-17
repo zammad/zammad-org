@@ -63,7 +63,7 @@ displayed on a colored background. If you want to add an image, simply
 upload one or use your camera, if you have one.
 
 After capturing or uploading an image, you can crop it. Have a look at the
-preview at the top of the right side panel.
+preview at the top of the right flyout.
 
 ### Ван канцеларије
 
@@ -106,7 +106,7 @@ set a name, an expiration date and configure the permissions for this token.
 After creating the token, it gets displayed in a dialog only once. Make sure
 to copy it because there is no possibility to access it again.
 
-![Screenshot shows side panel with created token and copy
+![Screenshot shows flyout with created token and copy
 button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Обавештења
