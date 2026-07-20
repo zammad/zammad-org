@@ -10,12 +10,11 @@ aperta](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-ful
 
 ## Introduzione
 
-Le panoramiche sono un componente fondamentale di Zammad. Aprile facendo
-clic sul pulsante `Panoramiche` nella barra di navigazione o usa la
-scorciatoia da tastiera [[o]]. Puoi pensare alle panoramiche come a un tipo
-di casella di posta elettronica con cartelle diverse. Usale per trovare
-nuovi ticket da elaborare e per tenere traccia dei ticket non ancora
-completati.
+Overviews are a core component of Zammad. Open them by clicking the
+`Overviews` button in the primary navigation or use the keyboard shortcut
+[[o]]. You can think of overviews as a kind of email inbox with different
+folders. Use them to find new tickets that you want to process and to keep
+track of tickets that have not yet been completed.
 
 A seconda della configurazione del sistema e di cosa ha impostato il tuo
 amministratore Zammad, puoi trovare lì diverse panoramiche, ad esempio:
@@ -90,11 +89,10 @@ ticket](/screenshots/documentation/use/overviews/priorities.png)
 
 ### Apri un ticket
 
-Apri un ticket semplicemente facendo clic sulla riga. Questo apre il ticket
-come scheda nella barra di navigazione sinistra e ti mostra la
-visualizzazione dettagli ticket. Se questo ticket è già presente nella tua
-barra di navigazione, attiva questa scheda invece di aprire una scheda
-duplicata.
+Open a ticket by simply clicking on the row. This opens the ticket as a tab
+in your taskbar and shows you the ticket detail view. If this ticket is
+already present in your taskbar, it activates this tab instead of opening a
+duplicate tab.
 
 Se una panoramica contiene più di un ticket e ne apri uno, puoi trovare
 frecce nell'intestazione della visualizzazione dettagli ticket per passare
@@ -102,23 +100,21 @@ al ticket successivo/precedente di questa panoramica.
 
 ### Azioni bulk
 
-Esegui azioni bulk selezionando più ticket e usa i campi a tendina o
-trascinali con il mouse per invocare l'overlay dell'azione bulk. Puoi
-trovare maggiori informazioni al riguardo nella sezione [Azioni
-bulk](../advanced-features#azioni-bulk) nella pagina delle funzionalità
-avanzate.
+Perform bulk actions by selecting multiple tickets and either use the bulk
+action flyout or drag them with the mouse to invoke the bulk action
+overlay. You can find more information about that in the [Bulk
+Actions](../advanced-features#bulk-actions) section in the advanced features
+page.
 
 ### Riordina panoramiche
 
-Se l'ordine delle panoramiche non riflette il tuo processo di lavoro o vuoi
-semplicemente avere un ordine diverso, puoi riorganizzarle per il tuo
-account. Usa il pulsante `riordina elementi` in cima alla barra di
-navigazione di secondo livello, che apre le tue [impostazioni del
-profilo](/it/documentation/use/user-profile#panoramiche) dove puoi definire
-un ordine personalizzato per le tue panoramiche.
-
-Per cambiare l'ordine, trascina e rilascia semplicemente facendo clic sulle
-maniglie sul lato sinistro.
+If the order of the overviews doesn't reflect your working process or you
+just like to have a different order, you can re-arrange them for your
+account. Use the `reorder items` button at the very top of the second level
+navigation, which opens your [profile
+settings](/en/documentation/use/user-profile#overviews) where you can define
+a custom order for your overviews. To change the order, simply drag & drop
+them by clicking the handles on the left side.
 
 Se il tuo amministratore cambia l'ordine, il tuo ordine personalizzato viene
 preservato. Puoi tornare all'ordine del tuo amministratore facendo clic sul

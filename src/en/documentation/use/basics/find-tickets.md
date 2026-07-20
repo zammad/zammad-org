@@ -10,7 +10,7 @@ There are different ways to find tickets, depending on your use case.
 ## Via Overviews
 
 If you search for new tickets to work on, your first look should be in the overview section. You can either open it by
-clicking the `Overviews` button in the navigation bar or use the keyboard shortcut [[o]]. You can see overviews as a
+clicking the `Overviews` button in the primary navigation or use the keyboard shortcut [[o]]. You can see overviews as a
 kind of ticket lists.
 
 By default, there are some built-in overviews you can use. For example, there is an overview called "Open Tickets".
@@ -22,8 +22,8 @@ For a detailed description, head over to the [overview usage guide](/en/document
 ## Via Search
 
 However, if you search for a specific ticket which might or might not be visible in the overviews, you can use the
-search. You can find it in the top left corner in the navigation bar. Either select it via mouse or use the keyboard
-shortcut by simply pressing [[s]].
+search. You can find it in the top left corner of the primary navigation. Either select it via mouse or use the
+keyboard shortcut by simply pressing [[s]].
 
 After activating the search field, you can find the tickets you recently closed from your taskbar as well as your last
 search queries.

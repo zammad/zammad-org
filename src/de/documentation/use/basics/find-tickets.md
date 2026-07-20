@@ -10,11 +10,10 @@ Anwendungsfall.
 
 ## Per Übersichten
 
-Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie
-zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch
-Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen
-oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine
-Art von Ticket-Listen betrachten.
+If you search for new tickets to work on, your first look should be in the
+overview section. You can either open it by clicking the `Overviews` button
+in the primary navigation or use the keyboard shortcut [[o]]. You can see
+overviews as a kind of ticket lists.
 
 Standardmäßig gibt es einige integrierte Übersichten, die Sie verwenden
 können, zum Beispiel "Offene Tickets". Das könnte ein guter Startpunkt
@@ -27,10 +26,10 @@ Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 
 ## Per Suche
 
-Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten
-sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie
-finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie
-entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]].
+However, if you search for a specific ticket which might or might not be
+visible in the overviews, you can use the search. You can find it in the top
+left corner of the primary navigation. Either select it via mouse or use the
+keyboard shortcut by simply pressing [[s]].
 
 Nachdem Sie das Suchfeld aktiviert haben sehen Sie die kürzlich in der
 Taskleiste geschlossenen Tickets sowie Ihre letzten Suchanfragen.

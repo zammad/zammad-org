@@ -289,13 +289,8 @@ Monit
   eine starke Gemeinschaft dahintersteht. Sie können es in Zammad integrieren. Auf diese Weise
   wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.
 
-Navigationsleiste
-: Die Navigations-Seitenleiste ist die linke Seitenleiste in Zammad, die Navigations-Tabs,
-  die Suche, Benachrichtigungen und - abhängig von Ihrem System - viele weitere Elemente enthalten kann.
-
-Navigations-Tab
-: Ein Element der Navigations-Leiste. Sie können mehrere Tabs geöffnet haben und schnell
-  zwischen ihnen wechseln.
+Navigation Tab : One element of the primary navigation like **Overviews** or
+**Knowledge Base**.
 
 Nagios
 : Nagios ist ein weiteres Überwachungstool, das IT-Teams benachrichtigt, wenn ein Vorfall
@@ -335,6 +330,11 @@ Placetel
   Anrufer werden direkt über ihre Caller ID identifiziert - eine Schlüsselfunktion, die
   den Agenten viel Zeit bei der Zuweisung von Anrufern spart.
 
+Primary Navigation
+: The primary navigation is the left sidebar in Zammad which contains the
+  taskbar, the search, notifications, knowledge base and eventually more,
+  depending on your system.
+
 Priorität
 : Jedem Ticket wird eine Priorität zugewiesen. Standard ist die Priorität 2 (normal).
   Zusätzlich gibt es die Prioritäten 1 (niedrig) und 3 (hoch). Sie können sogar
@@ -371,7 +371,7 @@ Secondary Navigation
 
 Flyout
 : The panel that slides in from the right side of the screen for actions such
-  as linking or merging tickets, bulk actions, and the subscription toggle.
+  as linking or merging tickets and bulk actions.
 
 Seitenleisten-Tab
 : In der Seitenleiste gibt es verschiedene Tabs wie "Kunde",
@@ -408,15 +408,16 @@ SSO
   nur einer Anmeldung. Es gibt verschiedene Anbieter, die diesen Prozess einfach und
   sicher machen. Zammad unterstützt SSO mittels verschiedener Provider.
 
-Status
-: Jedes Ticket hat einen Status, der den aktuellen Fortschritt bei der Lösung des
-  Problems widerspiegelt. Der Status eines Tickets kann manuell oder automatisch auf der Grundlage von
-  Automatisierungen oder SLA gesetzt werden. Jeder Status hat einen Statustyp. Es gibt vier Statustypen
-  und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.
+State
+: Every ticket has a state which reflects the current progress of resolving the
+  issue. The state of a ticket can be changed manually or automatically based
+  on automation or SLA. Each state has a state type. There are four state types
+  by default and they are color-coded. You can even add additional states to
+  your Zammad.
 
 Taskbar
-: The section of the navigation sidebar which contains the taskbar tabs (one
-  for each opened ticket, user or organization or the detailed search).
+: The section of the primary navigation which contains the taskbar tabs for
+  your opened tickets, users, organizations and the detailed search.
 
 Taskbar Tab
 : A single tab in the taskbar. Clicking the tab brings the corresponding

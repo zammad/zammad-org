@@ -9,10 +9,10 @@ Ci sono diversi modi per trovare i ticket, a seconda del tuo caso d'uso.
 
 ## Tramite panoramiche
 
-Se cerchi nuovi ticket su cui lavorare, il tuo primo sguardo dovrebbe essere
-nella sezione panoramiche. Puoi aprirla facendo clic sul pulsante
-`Panoramiche` nella barra di navigazione o usando la scorciatoia da tastiera
-[[o]]. Puoi vedere le panoramiche come un tipo di elenchi di ticket.
+If you search for new tickets to work on, your first look should be in the
+overview section. You can either open it by clicking the `Overviews` button
+in the primary navigation or use the keyboard shortcut [[o]]. You can see
+overviews as a kind of ticket lists.
 
 Per impostazione predefinita, ci sono alcune panoramiche integrate che puoi
 usare. Ad esempio, c'è una panoramica chiamata "Ticket aperti". Il tuo
@@ -25,10 +25,10 @@ panoramiche](/it/documentation/use/guides/overviews).
 
 ## Tramite ricerca
 
-Tuttavia, se cerchi un ticket specifico che potrebbe o meno essere visibile
-nelle panoramiche, puoi usare la ricerca. La trovi nell'angolo in alto a
-sinistra nella barra di navigazione. Selezionala tramite mouse o usa la
-scorciatoia da tastiera premendo semplicemente [[s]].
+However, if you search for a specific ticket which might or might not be
+visible in the overviews, you can use the search. You can find it in the top
+left corner of the primary navigation. Either select it via mouse or use the
+keyboard shortcut by simply pressing [[s]].
 
 Dopo aver attivato il campo di ricerca, puoi trovare i ticket che hai chiuso
 di recente dalla tua taskbar nonché le tue ultime query di ricerca.

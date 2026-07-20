@@ -26,31 +26,22 @@ Der Screenshot oben zeigt eine Ticket-Detailansicht in Zammad. Lesen Sie
 weiter, um eine Beschreibung der verschiedenen Elemente von Zammad zu
 erhalten.
 
-Navigations-Seitenleiste
-: Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,
-  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.
-
-Navigations-Tab
-: Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab (mit
-  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.
+Primary Navigation
+: This is the whole left sidebar which includes the search, notifications, overviews, the taskbar, your avatar, the
+  ticket create button and maybe more, depending on your system (see next section).
 
 Ticket Detail View
-: This is where you handle your customer requests. It appears in the main
-  content when a ticket tab is selected in the navigation sidebar.
+: This is where you handle your customer requests. It appears in the main content in the middle of the screen when a
+  ticket tab is selected in the navigation sidebar.
 
 Seitenleiste
 : Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs
   wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.
 
-Seitenleisten-Tabs
-: Auf der rechten Seite der (rechten) Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen
-  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,
-  Ihren Berechtigungen und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).
+## Primary Navigation
 
-## Navigations-Seitenleiste
-
-The navigation sidebar is your central place to access all main parts of
-Zammad. You might not see all of them because some depend on the
+The primary navigation sidebar is your central place to access all main
+parts of Zammad. You might not see all of them because some depend on the
 configuration of your Zammad. The navigation sidebar is always visible. That
 means if you don't know where you are, you can always go back to the
 dashboard, your overviews or an opened ticket, for example.
@@ -60,13 +51,13 @@ Search and Notification Area
   information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
   with a count about how many notifications you got.
 
-Navigation
-: Ermöglicht Ihnen den Wechsel zu verschiedenen Zammad-Ansichten wie dem
-Dashboard, den Übersichten, der Knowledge Base oder der Telefonansicht.
+Navigation Tabs
+: Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen
+  depending on your system.
 
 Taskbar Tabs
-: You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation
-  sidebar.
+: You can find tabs for your opened tickets, users, organizations and the detailed search in the taskbar. So if you
+  read about a user tab, this means an opened user tab in your sidebar.
 
 Untere Leiste
 : Profileinstellungen und Schaltfläche "Neues Ticket" innerhalb der Navigations-Seitenleiste. Falls Sie über entsprechende Berechtigungen verfügen, gibt es zusätzlich die Schaltflächen Einstellungen und
@@ -79,12 +70,11 @@ abgeschickte Antwort in einem Ticket.
 
 ## Seitenleiste
 
-Die Seitenleiste auf der rechten Seite zeigt alle ticketrelevanten
-Informationen an und enthält zusätzliche Funktionen. Die wichtigste davon
-ist die Ticket-Seitenleiste. Wechseln Sie zwischen den verschiedenen
-Seitenleisten, indem Sie auf den gewünschten Tab auf der rechten Seite der
-Seitenleiste klicken. Die verfügbaren Tabs hängen vom Ticket und den
-konfigurierten Funktionen Ihres Zammads ab.
+The right sidebar in the ticket detail view holds different sidebar tabs
+like **Ticket**, **Customer** and **Checklist**, depending on the state of
+the ticket, the customer and the configuration of your Zammad.  Switch
+between these sidebar tabs by clicking the corresponding icon on the right
+side of the sidebar.
 
 <!-- markdownlint-disable MD007 -->
 

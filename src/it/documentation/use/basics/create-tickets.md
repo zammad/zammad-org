@@ -16,10 +16,9 @@ creare un ticket manualmente. Esempi:
 - Un cliente si presenta allo sportello di assistenza fisico.
 - È necessario informare proattivamente il cliente inviandogli un messaggio.
 
-In situazioni come queste, devi creare manualmente un nuovo ticket e fare
-clic sul pulsante ::+:: in fondo alla barra di navigazione. Viene
-visualizzata una schermata di creazione ticket dove puoi aggiungere tutte le
-informazioni necessarie.
+In situations like these, you need to create a new ticket manually and click
+the ::+:: button at the bottom of the primary navigation. This shows a
+ticket create screen where you can add all needed information.
 
 ![Screenshot che mostra la schermata di creazione
 ticket](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)

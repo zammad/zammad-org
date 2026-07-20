@@ -16,8 +16,8 @@ might be cases where you need to create a ticket manually. Examples:
 - Желите да проактивно обавестите клијента слањем поруке.
 
 In situations like these, you need to create a new ticket manually and click
-the ::+:: button at the bottom of the navigation bar. This shows a ticket
-create screen where you can add all needed information.
+the ::+:: button at the bottom of the primary navigation. This shows a
+ticket create screen where you can add all needed information.
 
 ![Screenshot shows ticket create
 screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)

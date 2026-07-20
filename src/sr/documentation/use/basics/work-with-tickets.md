@@ -10,13 +10,13 @@ title: 'Обрада тикета'
 
 Generally, working on existing tickets means keeping up with a customer
 correspondence in a thread/conversation in the ticket detail view. Any time
-you open a ticket, a new tab will appear in your navigation bar on the left
-side. To close a tab (in the sense of remove it from the navigation bar, not
-setting the ticket state to closed), just click the ::X:: button in the
-tab. Zammad automatically saves your changes in opened ticket tabs, no
-matter if you already applied the changes or just edited things and switched
-to somewhere else. This means it is no problem to create a new ticket while
-editing an existing one. Simply switch back to the other tab.
+you open a ticket, a new tab will appear in your taskbar. To close a tab (in
+the sense of remove it from the taskbar, not setting the ticket state to
+closed), just click the ::X:: button in the tab. Zammad automatically saves
+your changes in opened ticket tabs, no matter if you already applied the
+changes or just edited things and switched to somewhere else. This means it
+is no problem to create a new ticket while editing an existing one. Simply
+switch back to the other tab.
 
 For the most changes (except tags or title renaming, for example), an
 explicit update of the ticket is needed. So make sure to click the `Update`

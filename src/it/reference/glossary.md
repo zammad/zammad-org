@@ -202,11 +202,8 @@ Monit
 : Monit è uno strumento di monitoraggio open-source che si basa su una configurazione semplice e
   un forte
 
-Barra di navigazione
-: La barra di navigazione è la barra laterale sinistra in Zammad che contiene la navigazione
-
-Scheda di navigazione
-: Un elemento della barra di navigazione. Puoi avere più schede aperte e passare rapidamente
+Navigation Tab : One element of the primary navigation like **Overviews** or
+**Knowledge Base**.
 
 Nagios
 : Nagios è un altro strumento di monitoraggio che avvisa i team IT quando si verifica un incidente
@@ -232,6 +229,11 @@ Placetel
 
   Integrare un account Placetel con Zammad fornisce agli utenti un registro chiamate,
   rendendo
+
+Primary Navigation
+: The primary navigation is the left sidebar in Zammad which contains the
+  taskbar, the search, notifications, knowledge base and eventually more,
+  depending on your system.
 
 Priorità
 : Ad ogni ticket viene assegnata una priorità. Per impostazione predefinita, la priorità è 2 (normale).
@@ -259,7 +261,7 @@ Secondary Navigation
 
 Flyout
 : The panel that slides in from the right side of the screen for actions such
-  as linking or merging tickets, bulk actions, and the subscription toggle.
+  as linking or merging tickets and bulk actions.
 
 Scheda barra laterale
 : Nella barra laterale del contenuto, ci sono diverse schede come "Cliente",
@@ -286,13 +288,16 @@ SSO
 : Il Single-sign-on (SSO) ti permette di accedere a tutti i tuoi sistemi e dispositivi con
   un solo
 
-Stato
-: Ogni ticket ha uno stato che riflette il progresso attuale della risoluzione del
-  problema
+State
+: Every ticket has a state which reflects the current progress of resolving the
+  issue. The state of a ticket can be changed manually or automatically based
+  on automation or SLA. Each state has a state type. There are four state types
+  by default and they are color-coded. You can even add additional states to
+  your Zammad.
 
 Taskbar
-: The section of the navigation sidebar which contains the taskbar tabs (one
-  for each opened ticket, user or organization or the detailed search).
+: The section of the primary navigation which contains the taskbar tabs for
+  your opened tickets, users, organizations and the detailed search.
 
 Taskbar Tab
 : A single tab in the taskbar. Clicking the tab brings the corresponding

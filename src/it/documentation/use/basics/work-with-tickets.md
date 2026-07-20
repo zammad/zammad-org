@@ -8,15 +8,15 @@ title: 'Lavora con i ticket'
 Hai trovato la strada verso un ticket esistente, congratulazioni! Ora
 vediamo cosa puoi fare e come farlo.
 
-In generale, lavorare su ticket esistenti significa seguire la
-corrispondenza con un cliente in un thread/conversazione nella
-visualizzazione dettagli ticket. Ogni volta che apri un ticket, apparirà una
-nuova scheda nella tua barra di navigazione sul lato sinistro. Per chiudere
-una scheda (nel senso di rimuoverla dalla barra di navigazione, non
-impostare lo stato del ticket su chiuso), fai clic sul pulsante ::X:: nella
-scheda. Zammad salva automaticamente le tue modifiche nelle schede ticket
-aperte. Ciò significa che non è un problema creare un nuovo ticket mentre si
-modifica uno esistente. Torna semplicemente all'altra scheda.
+Generally, working on existing tickets means keeping up with a customer
+correspondence in a thread/conversation in the ticket detail view. Any time
+you open a ticket, a new tab will appear in your taskbar. To close a tab (in
+the sense of remove it from the taskbar, not setting the ticket state to
+closed), just click the ::X:: button in the tab. Zammad automatically saves
+your changes in opened ticket tabs, no matter if you already applied the
+changes or just edited things and switched to somewhere else. This means it
+is no problem to create a new ticket while editing an existing one. Simply
+switch back to the other tab.
 
 Per la maggior parte delle modifiche (tranne tag o rinomina del titolo, ad
 esempio), è necessario un aggiornamento esplicito del ticket. Quindi

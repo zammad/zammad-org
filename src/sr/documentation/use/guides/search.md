@@ -19,17 +19,17 @@ Elasticsearch syntax.
 
 ## Basic Search
 
-The search is located in the top left corner in the primary navigation
-bar. Either select it via mouse or use the keyboard shortcut [[s]]. After
-activation, you can see the tickets which got recently closed from your
-taskbar as well as your recent search queries. To search, simply type a
-term. The search then displays all matching items for which you have at
-least view or read permissions, grouped by type like users and
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets which got recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays all matching items for which you have
+at least view or read permissions, grouped by type like users and
 tickets. Selecting one of those results opens the item as tab in the primary
 navigation.
 
-![Screenshot shows search results in navigation
-bar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in primary
+navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 If you press [[enter]] or click on `detailed search`, Zammad opens the
 detailed search as a tab in the primary navigation. There you can narrow

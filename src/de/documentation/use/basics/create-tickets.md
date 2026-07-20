@@ -17,10 +17,9 @@ manuell erstellen müssen. Beispiele:
 - Sie müssen einen Kunden proaktiv informieren, indem Sie ihm eine Nachricht
   schicken.
 
-In solchen Fällen erstellen Sie manuell ein neues Ticket, indem Sie auf die
-Schaltfläche ::+:: am unteren Rand der Navigationsleiste klicken. Daraufhin
-wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie alle erforderlichen
-Informationen hinzufügen können.
+In situations like these, you need to create a new ticket manually and click
+the ::+:: button at the bottom of the primary navigation. This shows a
+ticket create screen where you can add all needed information.
 
 ![Screenshot zeigt den
 Ticket-Erstellungsdialog](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)

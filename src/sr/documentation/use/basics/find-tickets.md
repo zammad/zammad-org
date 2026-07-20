@@ -12,7 +12,7 @@ title: 'Пронађи тикете'
 
 If you search for new tickets to work on, your first look should be in the
 overview section. You can either open it by clicking the `Overviews` button
-in the navigation bar or use the keyboard shortcut [[o]]. You can see
+in the primary navigation or use the keyboard shortcut [[o]]. You can see
 overviews as a kind of ticket lists.
 
 By default, there are some built-in overviews you can use. For example,
@@ -28,7 +28,7 @@ guide](/en/documentation/use/guides/overviews).
 
 However, if you search for a specific ticket which might or might not be
 visible in the overviews, you can use the search. You can find it in the top
-left corner in the navigation bar. Either select it via mouse or use the
+left corner of the primary navigation. Either select it via mouse or use the
 keyboard shortcut by simply pressing [[s]].
 
 After activating the search field, you can find the tickets you recently

@@ -20,19 +20,17 @@ Erweiterten Suche und der Verwendung von Elasticsearch-Syntax.
 
 ## Einfache Suche
 
-Die Suche befindet sich in der oberen linken Ecke in der
-Navigations-Seitenleiste. Wählen Sie sie entweder mit der Maus aus oder
-verwenden Sie das Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in
-Ihrer Navigations-Seitenleiste die Tickets, die kürzlich dort geschlossen
-wurden, sowie Ihre letzten Suchanfragen. Um zu suchen, geben Sie einfach
-einen Begriff ein. Die Suche zeigt dann alle übereinstimmenden Elemente an,
-für die Sie mindestens über Ansichts- oder Leserechte verfügen, gruppiert
-nach Typ wie Benutzer und Tickets. Wenn Sie eines dieser Ergebnisse
-auswählen, wird das Element als Tab in der Navigations-Seitenleiste
-geöffnet.
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets which got recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays all matching items for which you have
+at least view or read permissions, grouped by type like users and
+tickets. Selecting one of those results opens the item as tab in the primary
+navigation.
 
-![Screenshot zeigt Suchergebnisse in der
-Navigationsleiste](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in primary
+navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, öffnet
 Zammad die Erweiterte Suche als Tab in der Navigations-Seitenleiste. Dort

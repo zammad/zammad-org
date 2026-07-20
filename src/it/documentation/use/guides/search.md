@@ -19,18 +19,17 @@ sintassi Elasticsearch.
 
 ## Ricerca di base
 
-La ricerca si trova nell'angolo in alto a sinistra nella barra di
-navigazione principale. Selezionala tramite mouse o usa la scorciatoia da
-tastiera [[s]]. Dopo l'attivazione, puoi vedere i ticket che sono stati
-chiusi di recente dalla tua taskbar nonché le tue ultime query di
-ricerca. Per cercare, digita semplicemente un termine. La ricerca visualizza
-quindi tutti gli elementi corrispondenti per i quali hai almeno i permessi
-di visualizzazione o lettura, raggruppati per tipo come utenti e
-ticket. Selezionando uno di quei risultati si apre l'elemento come scheda
-nella navigazione principale.
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets which got recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays all matching items for which you have
+at least view or read permissions, grouped by type like users and
+tickets. Selecting one of those results opens the item as tab in the primary
+navigation.
 
-![Screenshot che mostra i risultati della ricerca nella barra di
-navigazione](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in primary
+navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 Se premi [[enter]] o fai clic su `ricerca dettagliata`, Zammad apre la
 ricerca dettagliata come scheda nella navigazione principale. Lì puoi

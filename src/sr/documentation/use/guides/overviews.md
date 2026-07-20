@@ -10,11 +10,11 @@ section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-fu
 
 ## Увод
 
-Прегледи представљају кључну компоненту Zammad-а. Отворите их кликом на
-дугме `Прегледи` у навигационој траци или користите пречицу на тастатури
-[[o]]. На прегледе можете гледати као врсту поштанских сандучића са
-различитим фолдерима. Користите их да пронађете нове тикете које желите да
-обрадите и пратите тикете који још нису затворени.
+Overviews are a core component of Zammad. Open them by clicking the
+`Overviews` button in the primary navigation or use the keyboard shortcut
+[[o]]. You can think of overviews as a kind of email inbox with different
+folders. Use them to find new tickets that you want to process and to keep
+track of tickets that have not yet been completed.
 
 У зависности од ваше системске конфигурације и шта је ваш Zammad
 администратор подесио, овде можете видети различите прегледе, нпр:
@@ -84,10 +84,10 @@ priorities](/screenshots/documentation/use/overviews/priorities.png)
 
 ### Отворите тикет
 
-Open a ticket by simply clicking on the line. This opens the ticket as a tab
-in the left navigation bar and shows you the ticket detail view. If this
-ticket is already present in your navigation bar, it activates this tab
-instead of opening a duplicate tab.
+Open a ticket by simply clicking on the row. This opens the ticket as a tab
+in your taskbar and shows you the ticket detail view. If this ticket is
+already present in your taskbar, it activates this tab instead of opening a
+duplicate tab.
 
 If an overview contains more than one ticket and you open one of the
 tickets, you can find arrows in the ticket detail view header to switch to
@@ -95,8 +95,8 @@ the next/previous ticket of this overview.
 
 ### Масовне радње
 
-Perform bulk actions by selecting multiple tickets and either use the
-drop-down fields or drag them with the mouse to invoke the bulk action
+Perform bulk actions by selecting multiple tickets and either use the bulk
+action flyout or drag them with the mouse to invoke the bulk action
 overlay. You can find more information about that in the [Bulk
 Actions](../advanced-features#bulk-actions) section in the advanced features
 page.
@@ -106,12 +106,10 @@ page.
 If the order of the overviews doesn't reflect your working process or you
 just like to have a different order, you can re-arrange them for your
 account. Use the `reorder items` button at the very top of the second level
-navigation bar, which opens your [profile
+navigation, which opens your [profile
 settings](/en/documentation/use/user-profile#overviews) where you can define
-a custom order for your overviews.
-
-To change the order, simply drag & drop them by clicking the handles on the
-left side.
+a custom order for your overviews. To change the order, simply drag & drop
+them by clicking the handles on the left side.
 
 If your admin changes the order, your custom order is preserved. You can
 switch back to your admin's order by clicking the `Reset Overview Order`
