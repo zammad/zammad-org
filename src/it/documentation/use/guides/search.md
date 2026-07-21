@@ -25,8 +25,8 @@ navigation. Either select it via mouse or use the keyboard shortcut
 from your taskbar as well as your recent search queries. To search, simply
 type a term. The search then displays all matching items for which you have
 at least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the primary
-navigation.
+tickets. Selecting one of those results opens the item as tab in the
+taskbar.
 
 ![Screenshot shows search results in primary
 navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)

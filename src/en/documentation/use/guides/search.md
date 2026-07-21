@@ -21,7 +21,7 @@ The search is located in the top left corner of the primary navigation. Either s
 keyboard shortcut [[s]]. After activation, you can see the tickets which got recently closed from your taskbar as well
 as your recent search queries. To search, simply type a term. The search then displays all matching items for which you
 have at least view or read permissions, grouped by type like users and tickets. Selecting one of those results opens the
-item as tab in the primary navigation.
+item as tab in the taskbar.
 
 ![Screenshot shows search results in primary navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
