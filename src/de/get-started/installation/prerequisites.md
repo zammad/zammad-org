@@ -37,6 +37,8 @@ jeweiligen Installationsanweisungen enthalten:
 
 ## Anforderungen an Clients
 
+### Browser
+
 Da Zammad eine Webanwendung ist, wird nur ein aktueller Browser
 benötigt. Die folgenden Browser werden in der jeweils neuesten stabilen
 Version unterstützt:
@@ -49,6 +51,21 @@ Version unterstützt:
 Das bedeutet nicht, dass Zammad mit anderen Browsern oder älteren Versionen
 nicht funktioniert, sondern nur, dass wir sie nicht testen und supporten.
 
-Die Kommunikation zwischen Client und Server erfolgt über
-Web-Sockets. Einige Firewalls können diese Verbindungen filtern. Dies kann
-zu einer reduzierten Browserleistung führen.
+### Network
+
+Be aware that communication between client and server uses WebSockets. Some
+firewalls and proxies may filter these connections. This could reduce
+performance or prevent real-time updates.
+
+### Display
+
+Zammad adapts its layout to different screen sizes. For the best experience,
+we recommend using a display with sufficient screen size and
+resolution. When using small screens, Zammad collapses elements like the
+sidebar to maintain usability. If these measures are not sufficient, a toast
+warning shows up at the top of the screen. You can hide it by clicking the
+corresponding button.
+
+The standard desktop interface is intended for screens at least 640 px
+wide. On narrower screens, use the [mobile
+view](/en/documentation/use/guides/mobile-view).

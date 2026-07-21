@@ -320,7 +320,7 @@ Zammad uses three services. These services can be managed individually or all at
 - zammad: includes the services below
   - **zammad-web**: internal puma server (relevant for displaying the web app)
   - **zammad-worker**: background worker - relevant for all delayed- and background jobs
-  - **zammad-websocket**: websocket server for session related information
+  - **zammad-websocket**: WebSocket server for session related information
 
 Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, `status`.
 

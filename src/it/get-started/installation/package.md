@@ -285,8 +285,7 @@ singolarmente o tutti insieme tramite il servizio principale **zammad**.
     app)
   - **zammad-worker**: worker in background - rilevante per tutti i job
     ritardati e in background
-  - **zammad-websocket**: server websocket per informazioni relative alla
-    sessione
+  - **zammad-websocket**: WebSocket server for session related information
 
 Gestisci i servizi con i comandi `systemctl` `start`, `restart`, `stop`,
 `status`.

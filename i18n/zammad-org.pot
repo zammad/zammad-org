@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-21 13:38+0200\n"
+"POT-Creation-Date: 2026-07-21 16:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9246,7 +9246,7 @@ msgstr ""
 #. type: Bullet: '  - '
 #: src/en/get-started/installation/package.md:324
 #, markdown-text
-msgid "**zammad-websocket**: websocket server for session related information"
+msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 
 #. type: Plain text
@@ -9644,8 +9644,14 @@ msgstr ""
 msgid "Client Requirements"
 msgstr ""
 
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:36
+#, markdown-text, no-wrap
+msgid "Browser"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:38
+#: src/en/get-started/installation/prerequisites.md:40
 #, markdown-text
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is "
@@ -9653,44 +9659,77 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 #, markdown-text
 msgid "Firefox"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 #, markdown-text
 msgid "Chrome (and Chromium-based)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 #, markdown-text
 msgid "Opera"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 #, markdown-text
 msgid "Safari"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:46
-#, markdown-text
-msgid ""
-"This does not mean that Zammad will not work with other browsers or older "
-"versions, just that we do not test against or provide support for them."
 msgstr ""
 
 #. type: Plain text
 #: src/en/get-started/installation/prerequisites.md:48
 #, markdown-text
 msgid ""
-"The communication between client and server is based on web sockets. Some "
-"firewalls may filter these connections. This may lead to decreased browser "
-"performance."
+"This does not mean that Zammad will not work with other browsers or older "
+"versions, just that we do not test against or provide support for them."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:49
+#, markdown-text, no-wrap
+msgid "Network"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:53
+#, markdown-text
+msgid ""
+"Be aware that communication between client and server uses WebSockets. Some "
+"firewalls and proxies may filter these connections. This could reduce "
+"performance or prevent real-time updates."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:54
+#, markdown-text, no-wrap
+msgid "Display"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:60
+#, markdown-text
+msgid ""
+"Zammad adapts its layout to different screen sizes. For the best experience, "
+"we recommend using a display with sufficient screen size and "
+"resolution. When using small screens, Zammad collapses elements like the "
+"sidebar to maintain usability. If these measures are not sufficient, a toast "
+"warning shows up at the top of the screen. You can hide it by clicking the "
+"corresponding button."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:62
+#, markdown-text
+msgid ""
+"The standard desktop interface is intended for screens at least 640 px "
+"wide. On narrower screens, use the [mobile "
+"view](/en/documentation/use/guides/mobile-view)."
 msgstr ""
 
 #. type: Title ##
@@ -11625,7 +11664,7 @@ msgstr ""
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" "
 "/>\n"
-": Host name of Zammad's websocket server.\n"
+": Host name of Zammad's WebSocket server.\n"
 msgstr ""
 
 #. type: Plain text
@@ -11633,7 +11672,7 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-": Port of Zammad's websocket server.\n"
+": Port of Zammad's WebSocket server.\n"
 msgstr ""
 
 #. type: Title ##
@@ -30332,7 +30371,7 @@ msgid ""
 "\n"
 "=== Local testing or other proxy servers\n"
 "\n"
-"Zammad's main application listens on port `3000` and the websocket\n"
+"Zammad's main application listens on port `3000` and the WebSocket\n"
 "server on port `6042`. If you put your own reverse proxy in front of\n"
 "Zammad, forward both.\n"
 "\n"

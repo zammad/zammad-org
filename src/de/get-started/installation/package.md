@@ -328,8 +328,7 @@ wird.
     Webanwendung)
   - **zammad-worker**: Hintergrund-Worker - relevant für alle verzögerten
     Aufgaben sowie Hintergrundaufgaben
-  - **zammad-websocket**: Websocket-Server für sitzungsbezogene
-    Informationen
+  - **zammad-websocket**: WebSocket server for session related information
 
 Verwalten Sie die Dienste mit den `systemctl`-Befehlen `start`, `restart`,
 `stop`, `status`.

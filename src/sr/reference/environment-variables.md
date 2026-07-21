@@ -212,10 +212,10 @@ client can send to the server.
 : Port of Zammad's Rails server.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
-: Host name of Zammad's websocket server.
+: Host name of Zammad's WebSocket server.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
-: Port of Zammad's websocket server.
+: Port of Zammad's WebSocket server.
 
 ## Performance Tuning
 

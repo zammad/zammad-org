@@ -179,10 +179,10 @@ dati che un client può inviare.
 : Porta del server Rails di Zammad.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
-: Nome host di.
+: Host name of Zammad's WebSocket server.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
-: Porta del websocket di Zammad.
+: Port of Zammad's WebSocket server.
 
 ## Ottimizzazione delle prestazioni
 

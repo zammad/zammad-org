@@ -324,7 +324,7 @@ all at once by using the parent **zammad**.
     app)
   - **zammad-worker**: background worker - relevant for all delayed- and
     background jobs
-  - **zammad-websocket**: websocket server for session related information
+  - **zammad-websocket**: WebSocket server for session related information
 
 Manage the services with `systemctl`'s commands `start`, `restart`, `stop`,
 `status`.

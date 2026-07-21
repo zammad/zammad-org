@@ -269,7 +269,7 @@ sudo systemctl reload apache2
 
 === Local testing or other proxy servers
 
-Zammad's main application listens on port `3000` and the websocket
+Zammad's main application listens on port `3000` and the WebSocket
 server on port `6042`. If you put your own reverse proxy in front of
 Zammad, forward both.
 
