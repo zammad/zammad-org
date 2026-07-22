@@ -53,17 +53,15 @@ unter `/var/tmp/zammad` gespeichert.
    dieser eingebauten Backup-Methode unterstützt. Kopieren Sie nicht die
    Dateien `latest_zammad_*.gz`, da sie auf einen für den
    Wiederherstellungsprozess unbekannten Ort verweisen.
-5. Starten Sie den Stack. Der Wiederherstellungsprozess wird im Dienst
-   `zammad-backup` ausgelöst, wenn das Verzeichnis `restore` erkannt wird
-   und die Sicherungsdateien vorhanden sind.
-
-   ::: info
-   Im Rahmen dieses Vorgangs wird der Cache geleert und alle bereits vorhandenen
-   Elasticsearch-Indizes werden gelöscht.
-   Alle anderen Container warten, bis die Wiederherstellung abgeschlossen ist. Sobald dies der Fall ist,
-   nehmen sie ihren normalen Betrieb wieder auf, wozu auch eine automatische Neuindizierung von Elasticsearch
-   gehört (abhängig von den ENV-Variablen). Details finden Sie in den Container-Logs.
-   :::
-
+5. Start the stack. The restore process is triggered in the `zammad-backup`
+   service if the `restore` directory is detected and the backup files are
+   in place. As a part of this process, the Rails cache will be cleared.
+   All other containers wait for the restore to finish before they resume
+   their normal operations.
 6. Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das
    Verzeichnis `restore` umbenannt. Sie können es jetzt löschen.
+7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
+   running, but search performance is degraded and some data may be
+   temporarily unavailable in search results.
+
+<!--@include: ../get-started/update.md{243,276}-->

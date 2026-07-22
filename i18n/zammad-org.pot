@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-22 06:57+0000\n"
+"POT-Creation-Date: 2026-07-22 15:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -9998,7 +9986,7 @@ msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:181 src/en/get-started/update.md:242
+#: src/en/get-started/update.md:181
 #, markdown-text
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch "
@@ -10100,6 +10088,16 @@ msgstr ""
 msgid "docker compose pull\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/update.md:243
+#, markdown-text, no-wrap
+msgid ""
+"Only needed if the release note tells you to rebuild the Elasticsearch "
+"index.\n"
+"<!--referenced in tutorials/backup-restore-docker.md {243,276}. If content "
+"moves, adjust line numbers over there-->\n"
+msgstr ""
+
 #. type: Fenced div block (tabs)
 #: src/en/get-started/update.md:243
 #, no-wrap
@@ -10124,9 +10122,9 @@ msgid ""
 "=== Portainer GUI\n"
 "\n"
 "Open the [console via Portainer's "
-"GUI](installation/docker#how-to-run-commands-in-the-stack) with the "
-"standard\n"
-"entrypoint `/bin/bash` and run:\n"
+"GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) "
+"with the\n"
+"standard entrypoint `/bin/bash` and run:\n"
 "\n"
 "Without specifying CPU cores to use:\n"
 "\n"
@@ -24019,83 +24017,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24281,6 +24202,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24726,6 +24724,18 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
 #: src/en/tutorials/backup-restore-docker.md:6
@@ -24795,19 +24805,19 @@ msgid "Restore"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid "Start the new stack at least once so a Zammad database is available."
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid "Stop the stack."
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid ""
 "In case you restore to a production stack with activated file system "
@@ -24817,7 +24827,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid ""
 "Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
@@ -24829,36 +24839,37 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '5. '
-#: src/en/tutorials/backup-restore-docker.md:40
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid ""
 "Start the stack. The restore process is triggered in the `zammad-backup` "
 "service if the `restore` directory is detected and the backup files are in "
-"place."
-msgstr ""
-
-#. type: Fenced div block (info)
-#: src/en/tutorials/backup-restore-docker.md:41
-#, no-wrap
-msgid ""
-"   As a part of this process, the cache will be cleared and any "
-"pre-existing\n"
-"   Elasticsearch indexes will be dropped.\n"
-"   All other containers will be waiting for the restore to finish. When that "
-"is the case,\n"
-"   they will resume their normal operations, which includes an automatic "
-"Elasticsearch\n"
-"   reindexing (depending on the ENV variables). You can check the container "
-"logs for\n"
-"   details.\n"
+"place. As a part of this process, the Rails cache will be cleared.  All "
+"other containers wait for the restore to finish before they resume their "
+"normal operations."
 msgstr ""
 
 #. type: Bullet: '6. '
-#: src/en/tutorials/backup-restore-docker.md:50
+#: src/en/tutorials/backup-restore-docker.md:44
 #, markdown-text
 msgid ""
 "After the restore process has finished, the `restore` directory got "
 "renamed. You can safely delete it now."
+msgstr ""
+
+#. type: Bullet: '7. '
+#: src/en/tutorials/backup-restore-docker.md:44
+#, markdown-text
+msgid ""
+"Rebuild the Elasticsearch index. You can use Zammad while the rebuild is "
+"running, but search performance is degraded and some data may be temporarily "
+"unavailable in search results."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/backup-restore-docker.md:45
+#, markdown-text, no-wrap
+msgid "<!--@include: ../get-started/update.md{243,276}-->\n"
 msgstr ""
 
 #. type: Title #

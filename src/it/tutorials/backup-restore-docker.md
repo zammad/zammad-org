@@ -41,16 +41,13 @@ stack nonché alle 3 di ogni notte.
    del volume del container **zam
 5. Start the stack. The restore process is triggered in the `zammad-backup`
    service if the `restore` directory is detected and the backup files are
-   in place.
-
-   ::: info
-   Come parte di questo processo, si procederà allo svuotamento della cache e all'eliminazione
-degli indiciElasticsearch preesistenti.
-Tutti gli altri container rimarranno in attesa del completamento del ripristino. Al termine
-le normali attività riprenderanno, inclusa la reindicizzazione automatica di Elasticsearch
-(in base alle variabili ENV). Verificare i log dei container per ulteriori
-dettagli.
-   :::
-
+   in place. As a part of this process, the Rails cache will be cleared.
+   All other containers wait for the restore to finish before they resume
+   their normal operations.
 6. Dopo che il processo di ripristino è terminato, la cartella `restore` è
    stata rinominata. Puoi tranquillamente.
+7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
+   running, but search performance is degraded and some data may be
+   temporarily unavailable in search results.
+
+<!--@include: ../get-started/update.md{243,276}-->

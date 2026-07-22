@@ -48,16 +48,13 @@ o'clock each night. The backup is stored in the volume of the
    the restore process.
 5. Start the stack. The restore process is triggered in the `zammad-backup`
    service if the `restore` directory is detected and the backup files are
-   in place.
-
-   ::: info
-   As a part of this process, the cache will be cleared and any pre-existing
-   Elasticsearch indexes will be dropped.
-   All other containers will be waiting for the restore to finish. When that is the case,
-   they will resume their normal operations, which includes an automatic Elasticsearch
-   reindexing (depending on the ENV variables). You can check the container logs for
-   details.
-   :::
-
+   in place. As a part of this process, the Rails cache will be cleared.
+   All other containers wait for the restore to finish before they resume
+   their normal operations.
 6. After the restore process has finished, the `restore` directory got
    renamed. You can safely delete it now.
+7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
+   running, but search performance is degraded and some data may be
+   temporarily unavailable in search results.
+
+<!--@include: ../get-started/update.md{243,276}-->

@@ -241,9 +241,8 @@ docker compose up -d
 
 ### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
 
-Only needed if the release note tells you to rebuild the Elasticsearch
-index.
-
+Only needed if the release note tells you to rebuild the Elasticsearch index.
+<!--referenced in tutorials/backup-restore-docker.md {243,276}. If content moves, adjust line numbers over there-->
 ::: tabs
 
 === Docker Compose
@@ -262,8 +261,8 @@ docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:r
 
 === Portainer GUI
 
-Open the [console via Portainer's GUI](installation/docker#how-to-run-commands-in-the-stack) with the standard
-entrypoint `/bin/bash` and run:
+Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
+standard entrypoint `/bin/bash` and run:
 
 Without specifying CPU cores to use:
 

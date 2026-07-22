@@ -238,37 +238,36 @@ docker compose up -d
 
 ### Ricostruisci l'indice Elasticsearch <Badge type="tip" text="opzionale" />
 
-Necessario solo se le note di rilascio ti dicono di ricostruire l'indice
-Elasticsearch.
-
+Only needed if the release note tells you to rebuild the Elasticsearch index.
+<!--referenced in tutorials/backup-restore-docker.md {243,276}. If content moves, adjust line numbers over there-->
 ::: tabs
 
 === Docker Compose
 
-Senza specificare i core della CPU:
+Without specifying CPU cores:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-Con la specifica dei core della CPU da utilizzare (esempio 8):
+With specifying CPU cores to use (example 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
 ```
 
-=== Interfaccia grafica di Portainer
+=== Portainer GUI
 
-Apri la [console tramite l'interfaccia grafica di Portainer](installation/docker#come-eseguire-comandi-nello-stack) con il punto di ingresso standard
-`/bin/bash` ed esegui:
+Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
+standard entrypoint `/bin/bash` and run:
 
-Senza specificare i core della CPU da utilizzare:
+Without specifying CPU cores to use:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-Con la specifica dei core della CPU da utilizzare (esempio 8):
+With specifying CPU cores to use (example 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]
