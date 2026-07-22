@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-17 14:35+0200\n"
+"POT-Creation-Date: 2026-07-21 16:15+0200\n"
 "PO-Revision-Date: 2026-07-07 06:07+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
@@ -2451,7 +2451,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:225
-#: src/en/documentation/use/guides/overviews.md:81
+#: src/en/documentation/use/guides/overviews.md:82
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Azioni bulk"
@@ -3326,10 +3326,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:19
+#, fuzzy
+#| msgid ""
+#| "In situations like these, you need to create a new ticket manually and "
+#| "click the ::+:: button at the bottom of the navigation bar. This shows a "
+#| "ticket create screen where you can add all needed information."
 msgid ""
 "In situations like these, you need to create a new ticket manually and click "
-"the ::+:: button at the bottom of the navigation bar. This shows a ticket "
-"create screen where you can add all needed information."
+"the ::+:: button at the bottom of the primary navigation. This shows a "
+"ticket create screen where you can add all needed information."
 msgstr ""
 "In situazioni come queste, devi creare manualmente un nuovo ticket e fare "
 "clic sul pulsante ::+:: in fondo alla barra di navigazione. Viene "
@@ -3509,10 +3514,16 @@ msgstr "Tramite panoramiche"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:15
+#, fuzzy
+#| msgid ""
+#| "If you search for new tickets to work on, your first look should be in "
+#| "the overview section. You can either open it by clicking the `Overviews` "
+#| "button in the navigation bar or use the keyboard shortcut [[o]]. You can "
+#| "see overviews as a kind of ticket lists."
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
 "overview section. You can either open it by clicking the `Overviews` button "
-"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"in the primary navigation or use the keyboard shortcut [[o]]. You can see "
 "overviews as a kind of ticket lists."
 msgstr ""
 "Se cerchi nuovi ticket su cui lavorare, il tuo primo sguardo dovrebbe essere "
@@ -3552,10 +3563,16 @@ msgstr "Tramite ricerca"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:27
+#, fuzzy
+#| msgid ""
+#| "However, if you search for a specific ticket which might or might not be "
+#| "visible in the overviews, you can use the search. You can find it in the "
+#| "top left corner in the navigation bar. Either select it via mouse or use "
+#| "the keyboard shortcut by simply pressing [[s]]."
 msgid ""
 "However, if you search for a specific ticket which might or might not be "
 "visible in the overviews, you can use the search. You can find it in the top "
-"left corner in the navigation bar. Either select it via mouse or use the "
+"left corner of the primary navigation. Either select it via mouse or use the "
 "keyboard shortcut by simply pressing [[s]]."
 msgstr ""
 "Tuttavia, se cerchi un ticket specifico che potrebbe o meno essere visibile "
@@ -4118,16 +4135,28 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:16
+#, fuzzy
+#| msgid ""
+#| "Generally, working on existing tickets means keeping up with a customer "
+#| "correspondence in a thread/conversation in the ticket detail view. Any "
+#| "time you open a ticket, a new tab will appear in your navigation bar on "
+#| "the left side. To close a tab (in the sense of remove it from the "
+#| "navigation bar, not setting the ticket state to closed), just click "
+#| "the ::X:: button in the tab. Zammad automatically saves your changes in "
+#| "opened ticket tabs, no matter if you already applied the changes or just "
+#| "edited things and switched to somewhere else. This means it is no problem "
+#| "to create a new ticket while editing an existing one. Simply switch back "
+#| "to the other tab."
 msgid ""
 "Generally, working on existing tickets means keeping up with a customer "
 "correspondence in a thread/conversation in the ticket detail view. Any time "
-"you open a ticket, a new tab will appear in your navigation bar on the left "
-"side. To close a tab (in the sense of remove it from the navigation bar, not "
-"setting the ticket state to closed), just click the ::X:: button in the tab. "
-"Zammad automatically saves your changes in opened ticket tabs, no matter if "
-"you already applied the changes or just edited things and switched to "
-"somewhere else. This means it is no problem to create a new ticket while "
-"editing an existing one. Simply switch back to the other tab."
+"you open a ticket, a new tab will appear in your taskbar. To close a tab (in "
+"the sense of remove it from the taskbar, not setting the ticket state to "
+"closed), just click the ::X:: button in the tab. Zammad automatically saves "
+"your changes in opened ticket tabs, no matter if you already applied the "
+"changes or just edited things and switched to somewhere else. This means it "
+"is no problem to create a new ticket while editing an existing one. Simply "
+"switch back to the other tab."
 msgstr ""
 "In generale, lavorare su ticket esistenti significa seguire la "
 "corrispondenza con un cliente in un thread/conversazione nella "
@@ -4734,11 +4763,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:26
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Navigation Sidebar\n"
+#| ": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
+#| "  create button.\n"
 msgid ""
-"Navigation Sidebar\n"
-": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
-"  create button.\n"
+"Primary Navigation\n"
+": This is the whole left sidebar which includes the search, notifications, overviews, the taskbar, your avatar, the\n"
+"  ticket create button and maybe more, depending on your system (see next section).\n"
 msgstr ""
 "Barra laterale di navigazione\n"
 ": Questa è la barra laterale sinistra che include la ricerca, le notifiche, le panoramiche, le schede dei ticket, il tuo avatar e  \n"
@@ -4746,18 +4779,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:30
-#, no-wrap
-msgid ""
-"Navigation Tab\n"
-": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
-"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
-msgstr ""
-"Scheda di navigazione\n"
-": Ogni elemento della barra laterale di navigazione è chiamato scheda di navigazione. A seconda del contenuto, può essere una \n"
-"     scheda ticket (con la visualizzazione dei dettagli del ticket) o una scheda panoramica che apre l'elenco delle panoramiche disponibili.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:34
 #, fuzzy, no-wrap
 #| msgid ""
 #| "Ticket Detail View\n"
@@ -4765,15 +4786,15 @@ msgstr ""
 #| "  selected in the navigation sidebar.\n"
 msgid ""
 "Ticket Detail View\n"
-": This is where you handle your customer requests. It appears in the main\n"
-"  content when a ticket tab is selected in the navigation sidebar.\n"
+": This is where you handle your customer requests. It appears in the main content in the middle of the screen when a\n"
+"  ticket tab is selected in the navigation sidebar.\n"
 msgstr ""
 "Visualizzazione dettagli ticket\n"
 ": Qui puoi gestire le richieste dei tuoi clienti. Si trova al centro dello schermo se è selezionata una scheda ticket nella barra \n"
 "     laterale di navigazione.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:38
+#: src/en/documentation/use/basics/zammad-ui.md:34
 #, no-wrap
 msgid ""
 "Sidebar\n"
@@ -4783,28 +4804,14 @@ msgstr ""
 "Barra laterale\n"
 ": Questa è la barra laterale destra nella visualizzazione dettagli ticket. Contiene schede della barra laterale come clienti e checklist e visualizza la scheda attualmente selezionata.\n"
 
-#. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:43
-#, no-wrap
-msgid ""
-"Sidebar Tabs\n"
-": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
-"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
-"  customer has an assigned organization).\n"
-msgstr ""
-"Schede della barra laterale\n"
-": Sul lato destro della barra laterale, sono presenti delle piccole icone per passare da una scheda all'altra. La disponibilità di\n"
-"queste schede dipende dalla configurazione del sistema, dalle autorizzazioni e dagli attributi del ticket (ad esempio, se al cliente del ticket\n"
-"è assegnata un'organizzazione).\n"
-
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:44
+#: src/en/documentation/use/basics/zammad-ui.md:35
 #, no-wrap
-msgid "Navigation Sidebar"
-msgstr "Barra laterale di navigazione"
+msgid "Primary Navigation"
+msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:49
+#: src/en/documentation/use/basics/zammad-ui.md:40
 #, fuzzy
 #| msgid ""
 #| "The navigation sidebar is your central place to access all main parts of "
@@ -4813,8 +4820,8 @@ msgstr "Barra laterale di navigazione"
 #| "That means if you don’t know where you are, you can always go back to the "
 #| "dashboard, your overviews or an opened ticket, for example."
 msgid ""
-"The navigation sidebar is your central place to access all main parts of "
-"Zammad. You might not see all of them because some depend on the "
+"The primary navigation sidebar is your central place to access all main "
+"parts of Zammad. You might not see all of them because some depend on the "
 "configuration of your Zammad. The navigation sidebar is always visible. That "
 "means if you don't know where you are, you can always go back to the "
 "dashboard, your overviews or an opened ticket, for example."
@@ -4825,7 +4832,7 @@ msgstr ""
 "navigazione è sempre visibile."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:54
+#: src/en/documentation/use/basics/zammad-ui.md:45
 #, fuzzy, no-wrap
 #| msgid ""
 #| "Search and Notfication Area\n"
@@ -4844,26 +4851,27 @@ msgstr ""
 "con un contatore delle notifiche ricevute.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:57
+#: src/en/documentation/use/basics/zammad-ui.md:49
+#, fuzzy, no-wrap
+#| msgid "Navigation : Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen."
 msgid ""
-"Navigation : Allows you to switch to different Zammad screens like the "
-"dashboard, overviews, knowledge base or phone screen."
-msgstr ""
-"Navigazione : Ti permette di passare a diverse schermate di Zammad come la "
-"dashboard, le panoramiche, la base di conoscenza o la schermata telefono."
+"Navigation Tabs\n"
+": Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen\n"
+"  depending on your system.\n"
+msgstr "Navigazione : Ti permette di passare a diverse schermate di Zammad come la dashboard, le panoramiche, la base di conoscenza o la schermata telefono."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:61
+#: src/en/documentation/use/basics/zammad-ui.md:53
 #, fuzzy, no-wrap
 #| msgid "Content Tabs : You can find tabs for your opened tickets, users and organizations."
 msgid ""
 "Taskbar Tabs\n"
-": You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation\n"
-"  sidebar.\n"
+": You can find tabs for your opened tickets, users, organizations and the detailed search in the taskbar. So if you\n"
+"  read about a user tab, this means an opened user tab in your sidebar.\n"
 msgstr "Schede contenuto : Qui trovi le schede per i tuoi ticket aperti, utenti e organizzazioni."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:65
+#: src/en/documentation/use/basics/zammad-ui.md:57
 #, no-wrap
 msgid ""
 "Bottom Bar\n"
@@ -4874,7 +4882,7 @@ msgstr ""
 ": Impostazioni del profilo e pulsante per creare un nuovo ticket. Se hai permessi aggiuntivi, potrebbe esserci anche un pulsante delle impostazioni e uno dei rapporti.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:68
+#: src/en/documentation/use/basics/zammad-ui.md:60
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
 "switch between the different areas of Zammad and you don't have to be afraid "
@@ -4885,35 +4893,29 @@ msgstr ""
 "di perdere dati come una risposta non ancora inviata in un ticket."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:69
+#: src/en/documentation/use/basics/zammad-ui.md:61
 #, no-wrap
 msgid "Sidebar"
 msgstr "Barra laterale"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:74
+#: src/en/documentation/use/basics/zammad-ui.md:66
 msgid ""
-"The sidebar on the right side displays all ticket relevant information and "
-"includes additional functionality. The most important one is the ticket "
-"sidebar. Switch between the different sidebars by clicking the desired tab "
-"on the right side of the sidebar. The available tabs depend on the ticket "
-"and the configured features of your Zammad."
+"The right sidebar in the ticket detail view holds different sidebar tabs "
+"like **Ticket**, **Customer** and **Checklist**, depending on the state of "
+"the ticket, the customer and the configuration of your Zammad.  Switch "
+"between these sidebar tabs by clicking the corresponding icon on the right "
+"side of the sidebar."
 msgstr ""
-"La barra laterale sul lato destro mostra tutte le informazioni rilevanti del "
-"ticket e include funzionalità aggiuntive. La più importante è la barra "
-"laterale del ticket. Passa tra le diverse barre laterali facendo clic sulla "
-"scheda desiderata sul lato destro della barra laterale. Le schede "
-"disponibili dipendono dal ticket e dalle funzionalità configurate del tuo "
-"Zammad."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:76
+#: src/en/documentation/use/basics/zammad-ui.md:68
 #, no-wrap
 msgid "<!-- markdownlint-disable MD007 -->\n"
 msgstr "<!-- markdownlint-disable MD007 -->\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:80
+#: src/en/documentation/use/basics/zammad-ui.md:72
 #, no-wrap
 msgid ""
 "Ticket Tab\n"
@@ -4925,7 +4927,7 @@ msgstr ""
 "  Inoltre, le seguenti azioni sono disponibili quando fai clic sul pulsante ::a:: nella sezione superiore:\n"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid ""
 "History: shows a dialog with the history in the current ticket. This is "
 "where you can find when and what actions was performed and by whom."
@@ -4935,7 +4937,7 @@ msgstr ""
 "chi."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid ""
 "Merge: merge the ticket with another one in case a customer emailed you "
 "multiple times about the same issue."
@@ -4944,12 +4946,12 @@ msgstr ""
 "inviato più email sullo stesso problema."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid "Change customer: set another customer for the ticket."
 msgstr "Cambia cliente: imposta un altro cliente per il ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:89
+#: src/en/documentation/use/basics/zammad-ui.md:81
 #, fuzzy, no-wrap
 #| msgid ""
 #| "Customer Tab\n"
@@ -4965,7 +4967,7 @@ msgstr ""
 "  facendo clic sul pulsante ::a:: nella sezione superiore.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:92
+#: src/en/documentation/use/basics/zammad-ui.md:84
 #, fuzzy, no-wrap
 #| msgid ""
 #| "Organization Tab\n"
@@ -6368,13 +6370,20 @@ msgstr ""
 "documentation/use/guide-overview.cy.js/overview-full.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:15
+#: src/en/documentation/use/guides/overviews.md:16
+#, fuzzy
+#| msgid ""
+#| "Overviews are a core component of Zammad. Open them by clicking the "
+#| "`Overviews` button in the navigation bar or use the keyboard shortcut "
+#| "[[o]]. You can think of overviews as a kind of email inbox with different "
+#| "folders. Use them to find new tickets that you want to process and to "
+#| "keep track of tickets that have not yet been completed."
 msgid ""
 "Overviews are a core component of Zammad. Open them by clicking the "
-"`Overviews` button in the navigation bar or use the keyboard shortcut [[o]]. "
-"You can think of overviews as a kind of email inbox with different folders. "
-"Use them to find new tickets that you want to process and to keep track of "
-"tickets that have not yet been completed."
+"`Overviews` button in the primary navigation or use the keyboard shortcut "
+"[[o]]. You can think of overviews as a kind of email inbox with different "
+"folders. Use them to find new tickets that you want to process and to keep "
+"track of tickets that have not yet been completed."
 msgstr ""
 "Le panoramiche sono un componente fondamentale di Zammad. Aprile facendo "
 "clic sul pulsante `Panoramiche` nella barra di navigazione o usa la "
@@ -6384,7 +6393,7 @@ msgstr ""
 "completati."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:18
+#: src/en/documentation/use/guides/overviews.md:19
 msgid ""
 "Depending on your system configuration and what your Zammad admin set up, "
 "you can find different overviews there, for example:"
@@ -6393,27 +6402,27 @@ msgstr ""
 "amministratore Zammad, puoi trovare lì diverse panoramiche, ad esempio:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Your assigned tickets"
 msgstr "I tuoi ticket assegnati"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Unassigned and open tickets"
 msgstr "Ticket non assegnati e aperti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Pending reached tickets"
 msgstr "Ticket con promemoria raggiunto"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Escalated tickets"
 msgstr "Ticket escalati"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:26
 msgid ""
 "Selecting an overview in the second level navigation shows you a table which "
 "includes matching tickets."
@@ -6422,13 +6431,13 @@ msgstr ""
 "tabella che include i ticket corrispondenti."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/overviews.md:26
+#: src/en/documentation/use/guides/overviews.md:27
 #, no-wrap
 msgid "Usage and Features"
 msgstr "Utilizzo e funzionalità"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:30
+#: src/en/documentation/use/guides/overviews.md:31
 msgid ""
 "Overviews can be defined by admins based on rules and conditions. That means "
 "if a ticket has been changed and the condition of the overview isn't "
@@ -6440,7 +6449,7 @@ msgstr ""
 "visibile in questa panoramica."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:34
+#: src/en/documentation/use/guides/overviews.md:35
 msgid ""
 "Overviews are updated automatically. You don't have to reload your browser "
 "to observe changes. You can adjust the order temporarily by clicking on one "
@@ -6455,7 +6464,7 @@ msgstr ""
 "finché non passi a un'altra panoramica o ricarichi la pagina."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:37
+#: src/en/documentation/use/guides/overviews.md:38
 msgid ""
 "For each overview, you can find a badge attached. The number in this badge "
 "tells you how many tickets are in each overview."
@@ -6464,7 +6473,7 @@ msgstr ""
 "badge ti dice quanti ticket ci sono in ogni panoramica."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:41
+#: src/en/documentation/use/guides/overviews.md:42
 msgid ""
 "The ticket lists in overviews can also be grouped by a specific attribute "
 "(e.g. customer, organization, owner). This has to be adjusted by your Zammad "
@@ -6478,7 +6487,7 @@ msgstr ""
 "dei ticket inclusi."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:43
+#: src/en/documentation/use/guides/overviews.md:44
 msgid ""
 "Depending on what you are searching for, select a fitting overview and start "
 "working on a ticket."
@@ -6487,19 +6496,19 @@ msgstr ""
 "lavorare su un ticket."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/overviews.md:44
+#: src/en/documentation/use/guides/overviews.md:45
 #, no-wrap
 msgid "If you miss an overview or want to have different settings, let your Zammad admin know!\n"
 msgstr "Se ti manca una panoramica o vuoi avere impostazioni diverse, fai sapere al tuo amministratore Zammad!\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:48
+#: src/en/documentation/use/guides/overviews.md:49
 #, no-wrap
 msgid "Color Coded State and Priority"
 msgstr "Stato e priorità codificati per colore"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:51
+#: src/en/documentation/use/guides/overviews.md:52
 msgid ""
 "To visualize different ticket states and priorities, the entries in the "
 "table are color coded."
@@ -6508,7 +6517,7 @@ msgstr ""
 "sono codificate per colore."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:53
+#: src/en/documentation/use/guides/overviews.md:54
 msgid ""
 "The icon next to the ticket title mainly represents the need for action:"
 msgstr ""
@@ -6516,7 +6525,7 @@ msgstr ""
 "di azione:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:55
+#: src/en/documentation/use/guides/overviews.md:56
 msgid ""
 "![Screenshot shows ticket states](/screenshots/documentation/use/overviews/"
 "states.png)"
@@ -6525,27 +6534,27 @@ msgstr ""
 "overviews/states.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Yellow circle: action needed (e.g. new, open, pending reached)"
 msgstr ""
 "Cerchio giallo: azione necessaria (ad esempio nuovo, aperto, promemoria "
 "raggiunto)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Grey circle: paused, no action needed right now (e.g. pending)"
 msgstr ""
 "Cerchio grigio: in pausa, nessuna azione necessaria ora (ad esempio in "
 "attesa)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Green circle: no action needed any more (e.g. closed, merged)"
 msgstr ""
 "Cerchio verde: nessuna azione più necessaria (ad esempio chiuso, unito)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid ""
 "Red triangle: immediate action needed (ticket escalated due to an SLA "
 "violation)"
@@ -6554,7 +6563,7 @@ msgstr ""
 "violazione SLA)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:63
+#: src/en/documentation/use/guides/overviews.md:64
 msgid ""
 "If you spot a circle with a blue/pink gradient, it indicates that an [AI "
 "agent](ai#ai-agents) is currently working on the ticket."
@@ -6563,12 +6572,12 @@ msgstr ""
 "(ai#agenti-ai) sta attualmente lavorando sul ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:65
+#: src/en/documentation/use/guides/overviews.md:66
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr "La **priorità** è rappresentata dal colore del titolo del ticket:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:67
+#: src/en/documentation/use/guides/overviews.md:68
 msgid ""
 "![Screenshot shows ticket priorities](/screenshots/documentation/use/"
 "overviews/priorities.png)"
@@ -6577,33 +6586,39 @@ msgstr ""
 "use/overviews/priorities.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "1 low: gray"
 msgstr "1 bassa: grigio"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "2 normal: blue"
 msgstr "2 normale: blu"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "3 high: red"
 msgstr "3 alta: rosso"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:72
+#: src/en/documentation/use/guides/overviews.md:73
 #, no-wrap
 msgid "Open a Ticket"
 msgstr "Apri un ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:77
+#: src/en/documentation/use/guides/overviews.md:78
+#, fuzzy
+#| msgid ""
+#| "Open a ticket by simply clicking on the line. This opens the ticket as a "
+#| "tab in the left navigation bar and shows you the ticket detail view. If "
+#| "this ticket is already present in your navigation bar, it activates this "
+#| "tab instead of opening a duplicate tab."
 msgid ""
-"Open a ticket by simply clicking on the line. This opens the ticket as a tab "
-"in the left navigation bar and shows you the ticket detail view. If this "
-"ticket is already present in your navigation bar, it activates this tab "
-"instead of opening a duplicate tab."
+"Open a ticket by simply clicking on the row. This opens the ticket as a tab "
+"in your taskbar and shows you the ticket detail view. If this ticket is "
+"already present in your taskbar, it activates this tab instead of opening a "
+"duplicate tab."
 msgstr ""
 "Apri un ticket semplicemente facendo clic sulla riga. Questo apre il ticket "
 "come scheda nella barra di navigazione sinistra e ti mostra la "
@@ -6612,7 +6627,7 @@ msgstr ""
 "duplicata."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:80
+#: src/en/documentation/use/guides/overviews.md:81
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
 "tickets, you can find arrows in the ticket detail view header to switch to "
@@ -6623,10 +6638,16 @@ msgstr ""
 "al ticket successivo/precedente di questa panoramica."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:86
+#: src/en/documentation/use/guides/overviews.md:87
+#, fuzzy
+#| msgid ""
+#| "Perform bulk actions by selecting multiple tickets and either use the "
+#| "drop-down fields or drag them with the mouse to invoke the bulk action "
+#| "overlay. You can find more information about that in the [Bulk Actions]"
+#| "(../advanced-features#bulk-actions) section in the advanced features page."
 msgid ""
-"Perform bulk actions by selecting multiple tickets and either use the drop-"
-"down fields or drag them with the mouse to invoke the bulk action overlay. "
+"Perform bulk actions by selecting multiple tickets and either use the bulk "
+"action flyout or drag them with the mouse to invoke the bulk action overlay. "
 "You can find more information about that in the [Bulk Actions](../advanced-"
 "features#bulk-actions) section in the advanced features page."
 msgstr ""
@@ -6636,20 +6657,29 @@ msgstr ""
 "advanced-features#azioni-bulk) nella pagina delle funzionalità avanzate."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:87
+#: src/en/documentation/use/guides/overviews.md:88
 #, no-wrap
 msgid "Reorder Overviews"
 msgstr "Riordina panoramiche"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:93
+#: src/en/documentation/use/guides/overviews.md:94
+#, fuzzy
+#| msgid ""
+#| "If the order of the overviews doesn't reflect your working process or you "
+#| "just like to have a different order, you can re-arrange them for your "
+#| "account. Use the `reorder items` button at the very top of the second "
+#| "level navigation bar, which opens your [profile settings](/en/"
+#| "documentation/use/user-profile#overviews) where you can define a custom "
+#| "order for your overviews."
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
-"navigation bar, which opens your [profile settings](/en/documentation/use/"
-"user-profile#overviews) where you can define a custom order for your "
-"overviews."
+"navigation, which opens your [profile settings](/en/documentation/use/user-"
+"profile#overviews) where you can define a custom order for your overviews. "
+"To change the order, simply drag & drop them by clicking the handles on the "
+"left side."
 msgstr ""
 "Se l'ordine delle panoramiche non riflette il tuo processo di lavoro o vuoi "
 "semplicemente avere un ordine diverso, puoi riorganizzarle per il tuo "
@@ -6659,16 +6689,7 @@ msgstr ""
 "personalizzato per le tue panoramiche."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:95
-msgid ""
-"To change the order, simply drag & drop them by clicking the handles on the "
-"left side."
-msgstr ""
-"Per cambiare l'ordine, trascina e rilascia semplicemente facendo clic sulle "
-"maniglie sul lato sinistro."
-
-#. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:97
+#: src/en/documentation/use/guides/overviews.md:96
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
 "switch back to your admin's order by clicking the `Reset Overview Order` "
@@ -6725,15 +6746,24 @@ msgstr "Ricerca di base"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:25
+#, fuzzy
+#| msgid ""
+#| "The search is located in the top left corner in the primary navigation "
+#| "bar. Either select it via mouse or use the keyboard shortcut [[s]]. After "
+#| "activation, you can see the tickets which got recently closed from your "
+#| "taskbar as well as your recent search queries. To search, simply type a "
+#| "term. The search then displays all matching items for which you have at "
+#| "least view or read permissions, grouped by type like users and tickets. "
+#| "Selecting one of those results opens the item as tab in the primary "
+#| "navigation."
 msgid ""
-"The search is located in the top left corner in the primary navigation bar. "
+"The search is located in the top left corner of the primary navigation. "
 "Either select it via mouse or use the keyboard shortcut [[s]]. After "
 "activation, you can see the tickets which got recently closed from your "
 "taskbar as well as your recent search queries. To search, simply type a "
 "term. The search then displays all matching items for which you have at "
 "least view or read permissions, grouped by type like users and tickets. "
-"Selecting one of those results opens the item as tab in the primary "
-"navigation."
+"Selecting one of those results opens the item as tab in the taskbar."
 msgstr ""
 "La ricerca si trova nell'angolo in alto a sinistra nella barra di "
 "navigazione principale. Selezionala tramite mouse o usa la scorciatoia da "
@@ -6747,9 +6777,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:27
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows search results in navigation bar](/screenshots/cypress/"
+#| "documentation/use/guide-search.cy.js/search-sidebar.png)"
 msgid ""
-"![Screenshot shows search results in navigation bar](/screenshots/cypress/"
-"documentation/use/guide-search.cy.js/search-sidebar.png)"
+"![Screenshot shows search results in primary navigation](/screenshots/"
+"cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
 msgstr ""
 "![Screenshot che mostra i risultati della ricerca nella barra di navigazione]"
 "(/screenshots/cypress/documentation/use/guide-search.cy.js/search-"
@@ -10824,7 +10858,10 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/get-started/installation/package.md:324
-msgid "**zammad-websocket**: websocket server for session related information"
+#, fuzzy
+#| msgid ""
+#| "**zammad-websocket**: websocket server for session related information"
+msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 "**zammad-websocket**: server websocket per informazioni relative alla "
 "sessione"
@@ -11273,8 +11310,14 @@ msgstr "[Kubernetes](kubernetes)"
 msgid "Client Requirements"
 msgstr "Requisiti client"
 
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:36
+#, no-wrap
+msgid "Browser"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:38
+#: src/en/get-started/installation/prerequisites.md:40
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is needed. "
 "The following browsers are supported in their latest stable version:"
@@ -11283,27 +11326,27 @@ msgstr ""
 "aggiornato. I seguenti browser sono supportati:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Firefox"
 msgstr "Firefox"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Chrome (and Chromium-based)"
 msgstr "Chrome (e basati su Chromium)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Opera"
 msgstr "Opera"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Safari"
 msgstr "Safari"
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:46
+#: src/en/get-started/installation/prerequisites.md:48
 msgid ""
 "This does not mean that Zammad will not work with other browsers or older "
 "versions, just that we do not test against or provide support for them."
@@ -11311,15 +11354,51 @@ msgstr ""
 "Questo non significa che Zammad non funzioni con altri browser o versioni "
 "più vecchie, solo che non sono ufficialmente supportati."
 
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:49
+#, no-wrap
+msgid "Network"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:48
+#: src/en/get-started/installation/prerequisites.md:53
+#, fuzzy
+#| msgid ""
+#| "The communication between client and server is based on web sockets. Some "
+#| "firewalls may filter these connections. This may lead to decreased "
+#| "browser performance."
 msgid ""
-"The communication between client and server is based on web sockets. Some "
-"firewalls may filter these connections. This may lead to decreased browser "
-"performance."
+"Be aware that communication between client and server uses WebSockets. Some "
+"firewalls and proxies may filter these connections. This could reduce "
+"performance or prevent real-time updates."
 msgstr ""
 "La comunicazione tra client e server si basa su web socket. Alcuni firewall "
 "potrebbero bloccare questo traffico."
+
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:54
+#, no-wrap
+msgid "Display"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:60
+msgid ""
+"Zammad adapts its layout to different screen sizes. For the best experience, "
+"we recommend using a display with sufficient screen size and resolution. "
+"When using small screens, Zammad collapses elements like the sidebar to "
+"maintain usability. If these measures are not sufficient, a toast warning "
+"shows up at the top of the screen. You can hide it by clicking the "
+"corresponding button."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:62
+msgid ""
+"The standard desktop interface is intended for screens at least 640 px wide. "
+"On narrower screens, use the [mobile view](/en/documentation/use/guides/"
+"mobile-view)."
+msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
@@ -13506,20 +13585,26 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:217
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
+#| ": Host name of Zammad's websocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
-": Host name of Zammad's websocket server.\n"
+": Host name of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ": Nome host di.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:220
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
+#| ": Port of Zammad's websocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-": Port of Zammad's websocket server.\n"
+": Port of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
 ": Porta del websocket di Zammad.\n"
@@ -17560,29 +17645,14 @@ msgstr ""
 "  un forte\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:297
-#, no-wrap
+#: src/en/reference/glossary.md:296
 msgid ""
-"Navigation Bar\n"
-": The navigation bar is the left sidebar in Zammad which contains navigation tabs,\n"
-"  the search, notifications and many more items, depending on your system.\n"
+"Navigation Tab : One element of the primary navigation like **Overviews** or "
+"**Knowledge Base**."
 msgstr ""
-"Barra di navigazione\n"
-": La barra di navigazione è la barra laterale sinistra in Zammad che contiene la navigazione\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:301
-#, no-wrap
-msgid ""
-"Navigation Tab\n"
-": One element of the navigation bar. You can have multiple tabs open and quickly\n"
-"  switch between them.\n"
-msgstr ""
-"Scheda di navigazione\n"
-": Un elemento della barra di navigazione. Puoi avere più schede aperte e passare rapidamente\n"
-
-#. type: Plain text
-#: src/en/reference/glossary.md:306
 #, no-wrap
 msgid ""
 "Nagios\n"
@@ -17594,7 +17664,7 @@ msgstr ""
 ": Nagios è un altro strumento di monitoraggio che avvisa i team IT quando si verifica un incidente\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:311
+#: src/en/reference/glossary.md:306
 #, no-wrap
 msgid ""
 "On-Premise\n"
@@ -17607,7 +17677,7 @@ msgstr ""
 "  azienda\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:317
+#: src/en/reference/glossary.md:312
 #, no-wrap
 msgid ""
 "Organization\n"
@@ -17621,7 +17691,7 @@ msgstr ""
 "  azienda\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:323
+#: src/en/reference/glossary.md:318
 #, no-wrap
 msgid ""
 "Owner\n"
@@ -17635,7 +17705,7 @@ msgstr ""
 "  Il proprietario\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:329
+#: src/en/reference/glossary.md:324
 #, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -17648,7 +17718,7 @@ msgstr ""
 ": Se un ticket genera altre sottoattività (o corrispondenza aggiuntiva)\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:335
+#: src/en/reference/glossary.md:330
 #, no-wrap
 msgid ""
 "Placetel\n"
@@ -17662,7 +17732,7 @@ msgstr ""
 "  tramite\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:340
+#: src/en/reference/glossary.md:335
 #, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call log,\n"
@@ -17672,6 +17742,22 @@ msgid ""
 msgstr ""
 "  Integrare un account Placetel con Zammad fornisce agli utenti un registro chiamate,\n"
 "  rendendo\n"
+
+#. type: Plain text
+#: src/en/reference/glossary.md:340
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Navigation Bar\n"
+#| ": The navigation bar is the left sidebar in Zammad which contains navigation tabs,\n"
+#| "  the search, notifications and many more items, depending on your system.\n"
+msgid ""
+"Primary Navigation\n"
+": The primary navigation is the left sidebar in Zammad which contains the\n"
+"  taskbar, the search, notifications, knowledge base and eventually more,\n"
+"  depending on your system.\n"
+msgstr ""
+"Barra di navigazione\n"
+": La barra di navigazione è la barra laterale sinistra in Zammad che contiene la navigazione\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:345
@@ -17762,12 +17848,18 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:378
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Side(Panel)\n"
+#| ": This is the panel which is flying in on the right side for actions like ticket\n"
+#| "  linking or ticket merging.\n"
 msgid ""
 "Flyout\n"
 ": The panel that slides in from the right side of the screen for actions such\n"
-"  as linking or merging tickets, bulk actions, and the subscription toggle.\n"
+"  as linking or merging tickets and bulk actions.\n"
 msgstr ""
+"Pannello laterale\n"
+": Questo è il pannello che scorre dal lato destro per azioni come ticket\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:383
@@ -17857,12 +17949,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:420
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "State\n"
+#| ": Every ticket has a state which reflects the current progress of resolving the\n"
+#| "  issue. The state of a ticket can be changed manually or automatically based\n"
+#| "  on automation or SLA. Each state has a state types. There are four state types\n"
+#| "  by default and they are color-coded. You can even add additional states to\n"
+#| "  your Zammad.\n"
 msgid ""
 "State\n"
 ": Every ticket has a state which reflects the current progress of resolving the\n"
 "  issue. The state of a ticket can be changed manually or automatically based\n"
-"  on automation or SLA. Each state has a state types. There are four state types\n"
+"  on automation or SLA. Each state has a state type. There are four state types\n"
 "  by default and they are color-coded. You can even add additional states to\n"
 "  your Zammad.\n"
 msgstr ""
@@ -17875,8 +17974,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Taskbar\n"
-": The section of the navigation sidebar which contains the taskbar tabs (one\n"
-"  for each opened ticket, user or organization or the detailed search).\n"
+": The section of the primary navigation which contains the taskbar tabs for\n"
+"  your opened tickets, users, organizations and the detailed search.\n"
 msgstr ""
 
 #. type: Plain text
@@ -34178,7 +34277,7 @@ msgid ""
 "\n"
 "=== Local testing or other proxy servers\n"
 "\n"
-"Zammad's main application listens on port `3000` and the websocket\n"
+"Zammad's main application listens on port `3000` and the WebSocket\n"
 "server on port `6042`. If you put your own reverse proxy in front of\n"
 "Zammad, forward both.\n"
 "\n"
@@ -34288,17 +34387,64 @@ msgid ""
 msgstr ""
 
 #, no-wrap
-#~ msgid "**Side panel:**\n"
-#~ msgstr "**Pannello laterale:**\n"
+#~ msgid ""
+#~ "Navigation Tab\n"
+#~ ": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
+#~ "  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+#~ msgstr ""
+#~ "Scheda di navigazione\n"
+#~ ": Ogni elemento della barra laterale di navigazione è chiamato scheda di navigazione. A seconda del contenuto, può essere una \n"
+#~ "     scheda ticket (con la visualizzazione dei dettagli del ticket) o una scheda panoramica che apre l'elenco delle panoramiche disponibili.\n"
 
 #, no-wrap
 #~ msgid ""
-#~ "Side(Panel)\n"
-#~ ": This is the panel which is flying in on the right side for actions like ticket\n"
-#~ "  linking or ticket merging.\n"
+#~ "Sidebar Tabs\n"
+#~ ": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
+#~ "  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
+#~ "  customer has an assigned organization).\n"
 #~ msgstr ""
-#~ "Pannello laterale\n"
-#~ ": Questo è il pannello che scorre dal lato destro per azioni come ticket\n"
+#~ "Schede della barra laterale\n"
+#~ ": Sul lato destro della barra laterale, sono presenti delle piccole icone per passare da una scheda all'altra. La disponibilità di\n"
+#~ "queste schede dipende dalla configurazione del sistema, dalle autorizzazioni e dagli attributi del ticket (ad esempio, se al cliente del ticket\n"
+#~ "è assegnata un'organizzazione).\n"
+
+#, no-wrap
+#~ msgid "Navigation Sidebar"
+#~ msgstr "Barra laterale di navigazione"
+
+#~ msgid ""
+#~ "The sidebar on the right side displays all ticket relevant information "
+#~ "and includes additional functionality. The most important one is the "
+#~ "ticket sidebar. Switch between the different sidebars by clicking the "
+#~ "desired tab on the right side of the sidebar. The available tabs depend "
+#~ "on the ticket and the configured features of your Zammad."
+#~ msgstr ""
+#~ "La barra laterale sul lato destro mostra tutte le informazioni rilevanti "
+#~ "del ticket e include funzionalità aggiuntive. La più importante è la "
+#~ "barra laterale del ticket. Passa tra le diverse barre laterali facendo "
+#~ "clic sulla scheda desiderata sul lato destro della barra laterale. Le "
+#~ "schede disponibili dipendono dal ticket e dalle funzionalità configurate "
+#~ "del tuo Zammad."
+
+#~ msgid ""
+#~ "To change the order, simply drag & drop them by clicking the handles on "
+#~ "the left side."
+#~ msgstr ""
+#~ "Per cambiare l'ordine, trascina e rilascia semplicemente facendo clic "
+#~ "sulle maniglie sul lato sinistro."
+
+#, no-wrap
+#~ msgid ""
+#~ "Navigation Tab\n"
+#~ ": One element of the navigation bar. You can have multiple tabs open and quickly\n"
+#~ "  switch between them.\n"
+#~ msgstr ""
+#~ "Scheda di navigazione\n"
+#~ ": Un elemento della barra di navigazione. Puoi avere più schede aperte e passare rapidamente\n"
+
+#, no-wrap
+#~ msgid "**Side panel:**\n"
+#~ msgstr "**Pannello laterale:**\n"
 
 #~ msgid ""
 #~ "This guide is only relevant for package installations. During the "

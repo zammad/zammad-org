@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-17 14:35+0200\n"
-"PO-Revision-Date: 2026-07-17 13:35+0000\n"
+"POT-Creation-Date: 2026-07-21 16:15+0200\n"
+"PO-Revision-Date: 2026-07-22 06:10+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -2119,13 +2119,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:102
-#, fuzzy
-#| msgid ""
-#| "Activate the \"Subscribe me\" toggle in the ticket side panel to get "
-#| "notifications. If you have been mentioned in a ticket, you are "
-#| "automatically subscribed. Switch the toggle off to stop the notification. "
-#| "The avatars displayed show you who has subscribed to the ticket and is "
-#| "therefore notified of updates."
 msgid ""
 "Activate the **Subscribe me** toggle in the ticket sidebar to get "
 "notifications. If you have been mentioned in a ticket, you are automatically "
@@ -2133,12 +2126,11 @@ msgid ""
 "displayed show you who has subscribed to the ticket and is therefore "
 "notified of updates."
 msgstr ""
-"Aktivieren Sie den Schalter \"Abonnieren\" im seitlichen Bereich des "
-"Tickets, um Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt "
-"wurden, werden Sie automatisch benachrichtigt. Deaktivieren Sie den "
-"Schalter, um die Benachrichtigung zu stoppen. Die angezeigten Avatare zeigen "
-"Ihnen, wer das Ticket abonniert hat und somit über Aktualisierungen "
-"benachrichtigt wird."
+"Aktivieren Sie den **Abonnieren**-Schalter in der Ticket-Seitenleiste, um "
+"Benachrichtigungen zu erhalten. Wenn Sie in einem Ticket erwähnt wurden, "
+"sind Sie automatisch abonniert. Deaktivieren Sie den Schalter, um die "
+"Benachrichtigung zu stoppen. Die angezeigten Avatare zeigen Ihnen, wer das "
+"Ticket abonniert hat und über Aktualisierungen informiert wird."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:103
@@ -2532,7 +2524,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:225
-#: src/en/documentation/use/guides/overviews.md:81
+#: src/en/documentation/use/guides/overviews.md:82
 #, no-wrap
 msgid "Bulk Actions"
 msgstr "Mehrfach-Aktionen"
@@ -2569,10 +2561,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
-#, fuzzy
-#| msgid "By using the side panel"
 msgid "By using the flyout"
-msgstr "Durch die Verwendung des Seiten-Panels"
+msgstr "Durch Verwendung der Seitenleiste"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:242
@@ -2631,32 +2621,22 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:257
-#, fuzzy, no-wrap
-#| msgid "**Outbound:**\n"
+#, no-wrap
 msgid "**Flyout:**\n"
-msgstr "**Ausgehend:**\n"
+msgstr "**Seitenleiste:**\n"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:259
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows the bulk action side panel](/screenshots/cypress/"
-#| "documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgid ""
 "![Screenshot shows the bulk action flyout](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
 msgstr ""
-"![Screenshot zeigt das Seiten-Panel für Mehrfach-Aktionen](/screenshots/"
+"![Screenshot zeigt die Seitenleiste einer Mehrfachaktion](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-"
 "overviews.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:262
-#, fuzzy
-#| msgid ""
-#| "After you selected tickets, click the `Bulk Action` button in the top "
-#| "right corner and change/add attributes by using the fields in the right "
-#| "side panel. The available changes you can apply to tickets are:"
 msgid ""
 "After you selected tickets, click the `Bulk Action` button in the top right "
 "corner and change/add attributes by using the fields in the right flyout. "
@@ -2664,8 +2644,8 @@ msgid ""
 msgstr ""
 "Nachdem Sie Tickets ausgewählt haben, klicken Sie auf die Schaltfläche "
 "`Mehrfach-Aktion` in der oberen rechten Ecke und ändern bzw. fügen Sie "
-"Attribute mithilfe der Felder im rechten Bereich hinzu. Die möglichen "
-"Änderungen, die Sie auf Tickets anwenden können, sind:"
+"Attribute mithilfe der Felder im Seitenmenü hinzu. Die möglichen Änderungen, "
+"die Sie auf Tickets anwenden können, sind:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:269
@@ -2764,16 +2744,13 @@ msgstr "Ticket zusammenfassen"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:290
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
-#| "documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgid ""
 "![Screenshot shows the ticket merge flyout](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/ticket-merge.png)"
 msgstr ""
-"![Screenshot zeigt den Bereich für die Ticket-Zusammenfassung](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)"
+"![Screenshot zeigt das Seitenmenü zum Zusammenfassen von Tickets](/"
+"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"merge.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:296
@@ -2803,13 +2780,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:304
-#, fuzzy
-#| msgid ""
-#| "Go to the ticket you want to merge into another one. In the ticket "
-#| "sidebar, use the ::a:: menu and select `Merge`. This opens a side panel "
-#| "in which you can select a ticket by clicking on it or enter a ticket "
-#| "number in search field.  When you selected a target ticket, confirm by "
-#| "using the `Merge` button at the bottom."
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
 "use the ::a:: menu and select `Merge`. This opens a flyout in which you can "
@@ -2819,7 +2789,7 @@ msgid ""
 msgstr ""
 "Gehen Sie zu dem Ticket, das Sie mit einem anderen zusammenführen möchten. "
 "Wählen Sie in der Seitenleiste des Tickets im ::a:: Menü `Zusammenfassen`. "
-"Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein Ticket durch Anklicken "
+"Dadurch öffnet sich ein Seitenmenü, in dem Sie ein Ticket durch Anklicken "
 "auswählen oder eine Ticketnummer in das Suchfeld eingeben können.  Wenn Sie "
 "ein Ticket ausgewählt haben, bestätigen Sie es mit der Schaltfläche "
 "`Zusammenfassen` am unteren Rand."
@@ -2927,13 +2897,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:343
-#, fuzzy
-#| msgid ""
-#| "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
-#| "button in the **Related tickets** section.  This opens a side panel in "
-#| "which you can select a ticket by clicking on it or enter a ticket number "
-#| "in search field.  Additionally, you can choose between different link "
-#| "types:"
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
 "button in the **Related tickets** section.  This opens a flyout in which you "
@@ -2942,10 +2905,9 @@ msgid ""
 msgstr ""
 "Fügen Sie in der Ticket-Seitenleiste einen Link zu einem anderen Ticket "
 "hinzu, indem Sie auf die Schaltfläche ::+:: im Abschnitt **Verwandte "
-"Tickets** klicken. Dadurch öffnet sich ein Seiten-Panel, in dem Sie ein "
-"Ticket durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld "
-"eingeben können. Außerdem können Sie zwischen verschiedenen Link-Typen "
-"wählen:"
+"Tickets** klicken. Dadurch öffnet sich ein Seitenmenü, in dem Sie ein Ticket "
+"durch Anklicken auswählen oder eine Ticketnummer in das Suchfeld eingeben "
+"können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:347
@@ -3440,13 +3402,13 @@ msgstr ""
 #: src/en/documentation/use/basics/create-tickets.md:19
 msgid ""
 "In situations like these, you need to create a new ticket manually and click "
-"the ::+:: button at the bottom of the navigation bar. This shows a ticket "
-"create screen where you can add all needed information."
+"the ::+:: button at the bottom of the primary navigation. This shows a "
+"ticket create screen where you can add all needed information."
 msgstr ""
-"In solchen Fällen erstellen Sie manuell ein neues Ticket, indem Sie auf die "
-"Schaltfläche ::+:: am unteren Rand der Navigationsleiste klicken. Daraufhin "
-"wird ein Ticket-Erstellungsdialog angezeigt, in dem Sie alle erforderlichen "
-"Informationen hinzufügen können."
+"In solchen Fällen müssen Sie manuell ein neues Ticket erstellen und auf die "
+"Schaltfläche ::+:: am unteren Rand der primären Navigation klicken. "
+"Daraufhin wird eine Ansicht zur Ticketerstellung angezeigt, auf der Sie alle "
+"erforderlichen Informationen eingeben können."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:21
@@ -3632,14 +3594,14 @@ msgstr "Per Übersichten"
 msgid ""
 "If you search for new tickets to work on, your first look should be in the "
 "overview section. You can either open it by clicking the `Overviews` button "
-"in the navigation bar or use the keyboard shortcut [[o]]. You can see "
+"in the primary navigation or use the keyboard shortcut [[o]]. You can see "
 "overviews as a kind of ticket lists."
 msgstr ""
-"Wenn Sie nach neuen Tickets suchen, die Sie bearbeiten möchten, sollten Sie "
-"zuerst im Bereich Übersichten nachsehen. Sie können ihn entweder durch "
-"Klicken auf die Schaltfläche `Übersichten` in der Navigationsleiste öffnen "
-"oder das Tastaturkürzel [[o]] verwenden. Sie können die Übersichten als eine "
-"Art von Ticket-Listen betrachten."
+"Wenn Sie nach neuen Tickets suchen, an denen Sie arbeiten möchten, sollten "
+"Sie zunächst einen Blick in die Übersichten werfen. Sie können den Bereich "
+"entweder durch Klicken auf die Schaltfläche `Übersichten` in der primären "
+"Navigation öffnen oder das Tastaturkürzel [[o]] verwenden. Übersichten "
+"können Sie sich als eine Art Ticketliste vorstellen."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:19
@@ -3676,13 +3638,14 @@ msgstr "Per Suche"
 msgid ""
 "However, if you search for a specific ticket which might or might not be "
 "visible in the overviews, you can use the search. You can find it in the top "
-"left corner in the navigation bar. Either select it via mouse or use the "
+"left corner of the primary navigation. Either select it via mouse or use the "
 "keyboard shortcut by simply pressing [[s]]."
 msgstr ""
-"Wenn Sie jedoch ein bestimmtes Ticket suchen, das in den Übersichten "
-"sichtbar sein könnte oder auch nicht, sollten Sie die Suche verwenden. Sie "
-"finden diese in der linken oberen Ecke der Navigationsleiste. Wählen Sie sie "
-"entweder mit der Maus aus oder benutzen Sie das Tastaturkürzel [[s]]."
+"Sollten Sie jedoch nach einem bestimmten Ticket suchen, das vielleicht in "
+"den Übersichten angezeigt wird oder auch nicht, können Sie die Suchfunktion "
+"nutzen. Diese finden Sie in der oberen linken Ecke der primären Navigation. "
+"Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das "
+"Tastaturkürzel, indem Sie einfach die Taste [[s]] drücken."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:30
@@ -4241,24 +4204,24 @@ msgstr ""
 msgid ""
 "Generally, working on existing tickets means keeping up with a customer "
 "correspondence in a thread/conversation in the ticket detail view. Any time "
-"you open a ticket, a new tab will appear in your navigation bar on the left "
-"side. To close a tab (in the sense of remove it from the navigation bar, not "
-"setting the ticket state to closed), just click the ::X:: button in the tab. "
-"Zammad automatically saves your changes in opened ticket tabs, no matter if "
-"you already applied the changes or just edited things and switched to "
-"somewhere else. This means it is no problem to create a new ticket while "
-"editing an existing one. Simply switch back to the other tab."
+"you open a ticket, a new tab will appear in your taskbar. To close a tab (in "
+"the sense of remove it from the taskbar, not setting the ticket state to "
+"closed), just click the ::X:: button in the tab. Zammad automatically saves "
+"your changes in opened ticket tabs, no matter if you already applied the "
+"changes or just edited things and switched to somewhere else. This means it "
+"is no problem to create a new ticket while editing an existing one. Simply "
+"switch back to the other tab."
 msgstr ""
 "Im Allgemeinen bedeutet die Bearbeitung bestehender Tickets, dass Sie die "
 "Kundenkorrespondenz in Form eines Verlaufs in der Ticket-Detailansicht "
 "führen. Jedes Mal, wenn Sie ein Ticket öffnen, erscheint ein neuer Tab in "
-"Ihrer Navigationsleiste auf der linken Seite. Um einen Tab zu schließen (im "
-"Sinne von aus der Navigationsleiste entfernen, nicht den Status des Tickets "
-"auf geschlossen setzen), klicken Sie einfach auf die ::X:: Schaltfläche im "
-"Tab. Zammad speichert automatisch Ihre Änderungen in geöffneten Tabs, "
-"unabhängig davon, ob Sie die Änderungen bereits angewendet haben oder nur "
-"etwas bearbeitet haben und zu einem anderen Tab gewechselt sind. Es ist "
-"deshalb kein Problem, ein neues Ticket zu erstellen, während Sie an einem "
+"Ihrer Taskleiste auf der linken Seite. Um einen Tab zu schließen (im Sinne "
+"von aus der Navigationsleiste entfernen, nicht den Status des Tickets auf "
+"geschlossen setzen), klicken Sie einfach auf die ::X:: Schaltfläche im Tab. "
+"Zammad speichert automatisch Ihre Änderungen in geöffneten Tabs, unabhängig "
+"davon, ob Sie die Änderungen bereits angewendet haben oder nur etwas "
+"bearbeitet haben und zu einem anderen Tab gewechselt sind. Es ist deshalb "
+"kein Problem, ein neues Ticket zu erstellen, während Sie an einem "
 "bestehenden Ticket arbeiten. Wechseln Sie anschließend einfach zurück in den "
 "anderen Tab."
 
@@ -4578,11 +4541,6 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/documentation/use/basics/work-with-tickets.md:102
-#, fuzzy
-#| msgid ""
-#| "**Scroll to start** and **Scroll to end**: jump to the top or bottom of "
-#| "the article list. The end button also doubles as **Scroll to unread "
-#| "article** when there are unread articles."
 msgid ""
 "**Scroll to start** and **Scroll to end**: jump to the top or bottom of the "
 "article list. If there are unread articles, the **Scroll to end button** "
@@ -4896,46 +4854,34 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:26
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Navigation Sidebar\n"
+#| ": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
+#| "  create button.\n"
 msgid ""
-"Navigation Sidebar\n"
-": This is the left sidebar which includes the search, notifications, overviews, ticket tabs, your avatar and the ticket\n"
-"  create button.\n"
+"Primary Navigation\n"
+": This is the whole left sidebar which includes the search, notifications, overviews, the taskbar, your avatar, the\n"
+"  ticket create button and maybe more, depending on your system (see next section).\n"
 msgstr ""
-"Navigations-Seitenleiste\n"
-": Dies ist die linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten,\n"
-"  Tabs für Tickets, Ihren Avatar und die Schaltfläche zum Erstellen von Tickets enthält.\n"
+"Primäre Navigation\n"
+": Hierbei handelt es sich um die gesamte linke Seitenleiste, die die Suche, Benachrichtigungen, Übersichten, die Taskleiste, Ihren Avatar, die\n"
+"  Schaltfläche zum Erstellen eines Tickets und je nach Ihrem System möglicherweise weitere Elemente enthält (siehe nächster Abschnitt).\n"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:30
 #, no-wrap
 msgid ""
-"Navigation Tab\n"
-": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
-"  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+"Ticket Detail View\n"
+": This is where you handle your customer requests. It appears in the main content in the middle of the screen when a\n"
+"  ticket tab is selected in the navigation sidebar.\n"
 msgstr ""
-"Navigations-Tab\n"
-": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab (mit\n"
-"  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
+"Ticket-Detailansicht\n"
+": Hier bearbeiten Sie Ihre Kundenanfragen. Sie wird im Hauptinhaltsbereich in der Mitte des Bildschirms angezeigt,\n"
+"  wenn in der Navigations-Seitenleiste ein Ticket-Tab ausgewählt ist.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:34
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Ticket Detail View\n"
-#| ": This is where you handle your customer requests. It is located in the middle of the screen if a ticket tab is\n"
-#| "  selected in the navigation sidebar.\n"
-msgid ""
-"Ticket Detail View\n"
-": This is where you handle your customer requests. It appears in the main\n"
-"  content when a ticket tab is selected in the navigation sidebar.\n"
-msgstr ""
-"Ticket-Detailansicht\n"
-": Hier bearbeiten Sie Ihre Kundenanfragen. Sie befindet sich in der Mitte\n"
-"  des Bildschirms, wenn ein Ticket-Tab in der Navigations-Seitenleiste ausgewählt ist.\n"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:38
 #, no-wrap
 msgid ""
 "Sidebar\n"
@@ -4946,57 +4892,31 @@ msgstr ""
 ": Dies ist die rechte Seitenleiste in der Ticket-Detailansicht. Sie enthält Seitenleisten- Tabs\n"
 "  wie Kunde und Checkliste und zeigt den aktuell ausgewählten Tab an.\n"
 
-#. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:43
-#, no-wrap
-msgid ""
-"Sidebar Tabs\n"
-": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
-"  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
-"  customer has an assigned organization).\n"
-msgstr ""
-"Seitenleisten-Tabs\n"
-": Auf der rechten Seite der (rechten) Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen\n"
-"  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,\n"
-"  Ihren Berechtigungen und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).\n"
-
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:44
+#: src/en/documentation/use/basics/zammad-ui.md:35
 #, no-wrap
-msgid "Navigation Sidebar"
-msgstr "Navigations-Seitenleiste"
+msgid "Primary Navigation"
+msgstr "Primäre Navigation"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:49
-#, fuzzy
-#| msgid ""
-#| "The navigation sidebar is your central place to access all main parts of "
-#| "Zammad. You might not see all of them because some depend on the "
-#| "configuration of your Zammad. The navigation sidebar is always visible. "
-#| "That means if you don’t know where you are, you can always go back to the "
-#| "dashboard, your overviews or an opened ticket, for example."
+#: src/en/documentation/use/basics/zammad-ui.md:40
 msgid ""
-"The navigation sidebar is your central place to access all main parts of "
-"Zammad. You might not see all of them because some depend on the "
+"The primary navigation sidebar is your central place to access all main "
+"parts of Zammad. You might not see all of them because some depend on the "
 "configuration of your Zammad. The navigation sidebar is always visible. That "
 "means if you don't know where you are, you can always go back to the "
 "dashboard, your overviews or an opened ticket, for example."
 msgstr ""
-"Die Navigations-Seitenleiste ist Ihr zentraler Ort, um auf alle wichtigen "
-"Bereiche von Zammad zuzugreifen. Möglicherweise sehen Sie nicht alles davon, "
-"da manches von der Konfiguration Ihres Zammads abhängt. Die Navigations-"
+"Die primäre Navigation ist Ihr zentraler Ort, um auf alle wichtigen Bereiche "
+"von Zammad zuzugreifen. Möglicherweise sehen Sie nicht alles davon, da "
+"manches von der Konfiguration Ihres Zammads abhängt. Die Navigations-"
 "Seitenleiste ist immer sichtbar. Das heißt, wenn Sie nicht wissen, wo Sie "
 "sich befinden, können Sie z.B. jederzeit zum Dashboard, zu Ihren Übersichten "
 "oder zu einem geöffneten Ticket zurückkehren."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:54
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Search and Notfication Area\n"
-#| ": Includes the search where you can search for users, organizations, tickets and basically every in Zammad available\n"
-#| "  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge\n"
-#| "  with a count about how many notifications you got.\n"
+#: src/en/documentation/use/basics/zammad-ui.md:45
+#, no-wrap
 msgid ""
 "Search and Notification Area\n"
 ": Includes the search where you can search for users, organizations, tickets and basically every in Zammad available\n"
@@ -5009,29 +4929,31 @@ msgstr ""
 "  in einem Zähler an, wie viele Benachrichtigungen vorhanden sind.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:57
+#: src/en/documentation/use/basics/zammad-ui.md:49
+#, no-wrap
 msgid ""
-"Navigation : Allows you to switch to different Zammad screens like the "
-"dashboard, overviews, knowledge base or phone screen."
+"Navigation Tabs\n"
+": Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen\n"
+"  depending on your system.\n"
 msgstr ""
-"Navigation\n"
-": Ermöglicht Ihnen den Wechsel zu verschiedenen Zammad-Ansichten wie dem "
-"Dashboard, den Übersichten, der Knowledge Base oder der Telefonansicht."
+"Navigations-Tabs\n"
+": Ermöglichen es Ihnen, zu verschiedenen Zammad-Ansichten wie dem Dashboard, den Übersichten, der Knowledge Base oder der Telefonansicht zu wechseln,\n"
+"  abhängig von Ihrem System.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:61
-#, fuzzy, no-wrap
-#| msgid "Content Tabs : You can find tabs for your opened tickets, users and organizations."
+#: src/en/documentation/use/basics/zammad-ui.md:53
+#, no-wrap
 msgid ""
 "Taskbar Tabs\n"
-": You can find tabs for your opened tickets, users and organizations in the taskbar which is a part of the navigation\n"
-"  sidebar.\n"
+": You can find tabs for your opened tickets, users, organizations and the detailed search in the taskbar. So if you\n"
+"  read about a user tab, this means an opened user tab in your sidebar.\n"
 msgstr ""
-"Inhalts-Tabs\n"
-": Es gibt Tabs für Ihre geöffneten Tickets, Benutzer und Organisationen."
+"Taskleisten-Tabs\n"
+": In der Taskleiste finden Sie Registerkarten für Ihre geöffneten Tickets, Benutzer, Organisationen sowie die erweiterte Suche. Wenn also\n"
+"  von einem Benutzer-Tab die Rede ist, ist damit ein geöffneter Benutzer-Tab in Ihrer Seitenleiste gemeint.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:65
+#: src/en/documentation/use/basics/zammad-ui.md:57
 #, no-wrap
 msgid ""
 "Bottom Bar\n"
@@ -5043,7 +4965,7 @@ msgstr ""
 "  Berichte.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:68
+#: src/en/documentation/use/basics/zammad-ui.md:60
 msgid ""
 "Zammad immediately saves your current work progress, so you can easily "
 "switch between the different areas of Zammad and you don't have to be afraid "
@@ -5055,35 +4977,34 @@ msgstr ""
 "abgeschickte Antwort in einem Ticket."
 
 #. type: Title ##
-#: src/en/documentation/use/basics/zammad-ui.md:69
+#: src/en/documentation/use/basics/zammad-ui.md:61
 #, no-wrap
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:74
+#: src/en/documentation/use/basics/zammad-ui.md:66
 msgid ""
-"The sidebar on the right side displays all ticket relevant information and "
-"includes additional functionality. The most important one is the ticket "
-"sidebar. Switch between the different sidebars by clicking the desired tab "
-"on the right side of the sidebar. The available tabs depend on the ticket "
-"and the configured features of your Zammad."
+"The right sidebar in the ticket detail view holds different sidebar tabs "
+"like **Ticket**, **Customer** and **Checklist**, depending on the state of "
+"the ticket, the customer and the configuration of your Zammad.  Switch "
+"between these sidebar tabs by clicking the corresponding icon on the right "
+"side of the sidebar."
 msgstr ""
-"Die Seitenleiste auf der rechten Seite zeigt alle ticketrelevanten "
-"Informationen an und enthält zusätzliche Funktionen. Die wichtigste davon "
-"ist die Ticket-Seitenleiste. Wechseln Sie zwischen den verschiedenen "
-"Seitenleisten, indem Sie auf den gewünschten Tab auf der rechten Seite der "
-"Seitenleiste klicken. Die verfügbaren Tabs hängen vom Ticket und den "
-"konfigurierten Funktionen Ihres Zammads ab."
+"Die rechte Seitenleiste in der Ticket-Detailansicht enthält verschiedene "
+"Seitenleisten-Tabs wie **Ticket**, **Kunde** und **Checkliste**, abhängig "
+"vom Status des Tickets, des Kunden und der Konfiguration Ihres Zammad. Sie "
+"können zwischen diesen Seitenleisten-Tabs wechseln, indem Sie auf das "
+"entsprechende Symbol auf der rechten Seite der Seitenleiste klicken."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:76
+#: src/en/documentation/use/basics/zammad-ui.md:68
 #, no-wrap
 msgid "<!-- markdownlint-disable MD007 -->\n"
 msgstr "<!-- markdownlint-disable MD007 -->\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:80
+#: src/en/documentation/use/basics/zammad-ui.md:72
 #, no-wrap
 msgid ""
 "Ticket Tab\n"
@@ -5095,7 +5016,7 @@ msgstr ""
 "  Wenn Sie auf die ::a:: Schaltfläche oben klicken, können Sie außerdem die folgenden Aktionen ausführen:\n"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid ""
 "History: shows a dialog with the history in the current ticket. This is "
 "where you can find when and what actions was performed and by whom."
@@ -5104,7 +5025,7 @@ msgstr ""
 "können Sie sehen, wer wann welche Änderungen durchgeführt hat."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid ""
 "Merge: merge the ticket with another one in case a customer emailed you "
 "multiple times about the same issue."
@@ -5113,39 +5034,31 @@ msgstr ""
 "Kunde Sie mehrfach wegen desselben Problems kontaktiert hat."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/zammad-ui.md:85
+#: src/en/documentation/use/basics/zammad-ui.md:77
 msgid "Change customer: set another customer for the ticket."
 msgstr "Kunden ändern: Ändern Sie den Kunden für das Ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:89
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Customer Tab\n"
-#| ": View customer details including a reference to the customer’s other tickets. You can change the ticket customer here\n"
-#| "  as well by clicking on the ::a:: button in the top section.\n"
+#: src/en/documentation/use/basics/zammad-ui.md:81
+#, no-wrap
 msgid ""
 "Customer Tab\n"
 ": View customer details including a reference to the customer's other tickets. You can change the ticket customer here\n"
 "  as well by clicking on the ::a:: button in the top section.\n"
 msgstr ""
-"Kunden Tab\n"
+"Kunden-Tab\n"
 ": Anzeige der Kundendetails einschließlich eines Verweises auf dessen andere Tickets. Sie können den Kunden des Tickets hier ändern,\n"
-"  indem Sie auf die ::a:: Schaltfläche klicken und \"Kunden ändern\" auswählen.\n"
+"  indem Sie auf die ::a:: Schaltfläche klicken.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/zammad-ui.md:92
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Organization Tab\n"
-#| ": This tab is only shown if the customer is member of an organization. It shows the organization’s details including all\n"
-#| "  members. By clicking on the ::a:: button in the top section, you can edit the organization.\n"
+#: src/en/documentation/use/basics/zammad-ui.md:84
+#, no-wrap
 msgid ""
 "Organization Tab\n"
 ": This tab is only shown if the customer is member of an organization. It shows the organization's details including all\n"
 "  members. By clicking on the ::a:: button in the top section, you can edit the organization.\n"
 msgstr ""
-"Organisations Tab\n"
+"Organisations-Tab\n"
 ": Dieser Tab wird nur angezeigt, wenn der Kunde Mitglied einer Organisation ist. Sie zeigt die Details der Organisation einschließlich aller\n"
 "  Mitglieder. Bearbeiten Sie die Organisation, indem Sie die ::a:: Schaltfläche im oberen Bereich klicken.\n"
 
@@ -6549,16 +6462,16 @@ msgstr ""
 "documentation/use/guide-overview.cy.js/overview-full.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:15
+#: src/en/documentation/use/guides/overviews.md:16
 msgid ""
 "Overviews are a core component of Zammad. Open them by clicking the "
-"`Overviews` button in the navigation bar or use the keyboard shortcut [[o]]. "
-"You can think of overviews as a kind of email inbox with different folders. "
-"Use them to find new tickets that you want to process and to keep track of "
-"tickets that have not yet been completed."
+"`Overviews` button in the primary navigation or use the keyboard shortcut "
+"[[o]]. You can think of overviews as a kind of email inbox with different "
+"folders. Use them to find new tickets that you want to process and to keep "
+"track of tickets that have not yet been completed."
 msgstr ""
 "Übersichten sind eine Kernkomponente von Zammad. Sie können sie öffnen, "
-"indem Sie auf die Schaltfläche `Übersichten` in der Navigationsleiste "
+"indem Sie auf die Schaltfläche `Übersichten` in der primären Navigation "
 "klicken oder das Tastaturkürzel [[o]] verwenden. Sie können sich die "
 "Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen Ordnern "
 "vorstellen. Verwenden Sie sie, um neue Tickets zu finden, die Sie bearbeiten "
@@ -6566,7 +6479,7 @@ msgstr ""
 "abgeschlossen sind."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:18
+#: src/en/documentation/use/guides/overviews.md:19
 msgid ""
 "Depending on your system configuration and what your Zammad admin set up, "
 "you can find different overviews there, for example:"
@@ -6575,27 +6488,27 @@ msgstr ""
 "eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Your assigned tickets"
 msgstr "Meine zugewiesenen Tickets"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Unassigned and open tickets"
 msgstr "Nicht zugewiesene & offene Tickets"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Pending reached tickets"
 msgstr "Ausstehende Tickets"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:23
+#: src/en/documentation/use/guides/overviews.md:24
 msgid "Escalated tickets"
 msgstr "Eskalierte Tickets"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:25
+#: src/en/documentation/use/guides/overviews.md:26
 msgid ""
 "Selecting an overview in the second level navigation shows you a table which "
 "includes matching tickets."
@@ -6604,13 +6517,13 @@ msgstr ""
 "eine Tabelle mit den entsprechenden Tickets."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/overviews.md:26
+#: src/en/documentation/use/guides/overviews.md:27
 #, no-wrap
 msgid "Usage and Features"
 msgstr "Verwendung und Features"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:30
+#: src/en/documentation/use/guides/overviews.md:31
 msgid ""
 "Overviews can be defined by admins based on rules and conditions. That means "
 "if a ticket has been changed and the condition of the overview isn't "
@@ -6622,7 +6535,7 @@ msgstr ""
 "dieser Übersicht."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:34
+#: src/en/documentation/use/guides/overviews.md:35
 msgid ""
 "Overviews are updated automatically. You don't have to reload your browser "
 "to observe changes. You can adjust the order temporarily by clicking on one "
@@ -6638,7 +6551,7 @@ msgstr ""
 "wechseln oder die Seite neu laden."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:37
+#: src/en/documentation/use/guides/overviews.md:38
 msgid ""
 "For each overview, you can find a badge attached. The number in this badge "
 "tells you how many tickets are in each overview."
@@ -6648,7 +6561,7 @@ msgstr ""
 "befinden."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:41
+#: src/en/documentation/use/guides/overviews.md:42
 msgid ""
 "The ticket lists in overviews can also be grouped by a specific attribute "
 "(e.g. customer, organization, owner). This has to be adjusted by your Zammad "
@@ -6661,7 +6574,7 @@ msgstr ""
 "ist, finden Sie dort auch einen Zähler der enthaltenen Tickets."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:43
+#: src/en/documentation/use/guides/overviews.md:44
 msgid ""
 "Depending on what you are searching for, select a fitting overview and start "
 "working on a ticket."
@@ -6670,19 +6583,19 @@ msgstr ""
 "mit der Bearbeitung eines Tickets."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/overviews.md:44
+#: src/en/documentation/use/guides/overviews.md:45
 #, no-wrap
 msgid "If you miss an overview or want to have different settings, let your Zammad admin know!\n"
 msgstr "Wenn Sie eine Übersicht vermissen oder andere Einstellungen wünschen, lassen Sie es Ihren Zammad-Administrator wissen!\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:48
+#: src/en/documentation/use/guides/overviews.md:49
 #, no-wrap
 msgid "Color Coded State and Priority"
 msgstr "Farbcodierter Status und Priorität"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:51
+#: src/en/documentation/use/guides/overviews.md:52
 msgid ""
 "To visualize different ticket states and priorities, the entries in the "
 "table are color coded."
@@ -6691,7 +6604,7 @@ msgstr ""
 "sind die Einträge in der Tabelle farblich gekennzeichnet."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:53
+#: src/en/documentation/use/guides/overviews.md:54
 msgid ""
 "The icon next to the ticket title mainly represents the need for action:"
 msgstr ""
@@ -6699,7 +6612,7 @@ msgstr ""
 "an:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:55
+#: src/en/documentation/use/guides/overviews.md:56
 msgid ""
 "![Screenshot shows ticket states](/screenshots/documentation/use/overviews/"
 "states.png)"
@@ -6708,26 +6621,26 @@ msgstr ""
 "states.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Yellow circle: action needed (e.g. new, open, pending reached)"
 msgstr "Gelber Kreis: Handlungsbedarf (z.B. neu, offen, warten erreicht)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Grey circle: paused, no action needed right now (e.g. pending)"
 msgstr ""
 "Grauer Kreis: pausiert, im Moment keine Aktion erforderlich (z.B. warten "
 "auf...)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid "Green circle: no action needed any more (e.g. closed, merged)"
 msgstr ""
 "Grüner Kreis: keine Aktion mehr erforderlich (z.B. geschlossen, "
 "zusammengefasst)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:60
+#: src/en/documentation/use/guides/overviews.md:61
 msgid ""
 "Red triangle: immediate action needed (ticket escalated due to an SLA "
 "violation)"
@@ -6736,7 +6649,7 @@ msgstr ""
 "SLA-Verletzung)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:63
+#: src/en/documentation/use/guides/overviews.md:64
 msgid ""
 "If you spot a circle with a blue/pink gradient, it indicates that an [AI "
 "agent](ai#ai-agents) is currently working on the ticket."
@@ -6745,12 +6658,12 @@ msgstr ""
 "dass ein [KI-Agent](ai#ai-agents) gerade an dem Ticket arbeitet."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:65
+#: src/en/documentation/use/guides/overviews.md:66
 msgid "The **priority** is represented by the color of the ticket title:"
 msgstr "Die **Priorität** wird durch die Farbe des Ticket-Titels dargestellt:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:67
+#: src/en/documentation/use/guides/overviews.md:68
 msgid ""
 "![Screenshot shows ticket priorities](/screenshots/documentation/use/"
 "overviews/priorities.png)"
@@ -6759,42 +6672,41 @@ msgstr ""
 "overviews/priorities.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "1 low: gray"
 msgstr "1 niedrig: grau"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "2 normal: blue"
 msgstr "2 normal: blau"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/overviews.md:71
+#: src/en/documentation/use/guides/overviews.md:72
 msgid "3 high: red"
 msgstr "3 hoch: rot"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:72
+#: src/en/documentation/use/guides/overviews.md:73
 #, no-wrap
 msgid "Open a Ticket"
 msgstr "Ein Ticket öffnen"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:77
+#: src/en/documentation/use/guides/overviews.md:78
 msgid ""
-"Open a ticket by simply clicking on the line. This opens the ticket as a tab "
-"in the left navigation bar and shows you the ticket detail view. If this "
-"ticket is already present in your navigation bar, it activates this tab "
-"instead of opening a duplicate tab."
+"Open a ticket by simply clicking on the row. This opens the ticket as a tab "
+"in your taskbar and shows you the ticket detail view. If this ticket is "
+"already present in your taskbar, it activates this tab instead of opening a "
+"duplicate tab."
 msgstr ""
 "Öffnen Sie ein Ticket, indem Sie einfach auf die Zeile klicken. Dadurch "
-"öffnet sich das Ticket als Tab in der linken Navigationsleiste und zeigt "
-"Ihnen die Ticket Detailansicht. Wenn dieses Ticket bereits in Ihrer "
-"Navigationsleiste vorhanden ist, wird dieser Tab aktiviert, anstatt einen "
-"doppelten Tab zu öffnen."
+"öffnet sich das Ticket als Tab in der Taskleiste und zeigt Ihnen die Ticket "
+"Detailansicht. Wenn dieses Ticket bereits in Ihrer Taskleiste vorhanden ist, "
+"wird der entsprechende Tab aktiviert, anstatt einen doppelten Tab zu öffnen."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:80
+#: src/en/documentation/use/guides/overviews.md:81
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
 "tickets, you can find arrows in the ticket detail view header to switch to "
@@ -6805,53 +6717,45 @@ msgstr ""
 "nächsten/vorherigen Ticket dieser Übersicht zu wechseln."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:86
+#: src/en/documentation/use/guides/overviews.md:87
 msgid ""
-"Perform bulk actions by selecting multiple tickets and either use the drop-"
-"down fields or drag them with the mouse to invoke the bulk action overlay. "
+"Perform bulk actions by selecting multiple tickets and either use the bulk "
+"action flyout or drag them with the mouse to invoke the bulk action overlay. "
 "You can find more information about that in the [Bulk Actions](../advanced-"
 "features#bulk-actions) section in the advanced features page."
 msgstr ""
 "Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und "
-"entweder die Dropdown-Felder verwenden oder sie mit der Maus ziehen, um die "
-"Einblendung für die Mehrfach-Aktion aufzurufen. Weitere Informationen dazu "
-"finden Sie im Abschnitt [Mehrfach-Aktionen](../advanced-features#mehrfach-"
-"aktionen) auf der Seite mit den erweiterten Funktionen."
+"entweder das Seitenmenü verwenden oder die Tickets mit der Maus ziehen, um "
+"die Einblendung für die Mehrfach-Aktion aufzurufen. Weitere Informationen "
+"dazu finden Sie im Abschnitt [Mehrfach-Aktionen](../advanced-"
+"features#mehrfach-aktionen) auf der Seite mit den erweiterten Funktionen."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:87
+#: src/en/documentation/use/guides/overviews.md:88
 #, no-wrap
 msgid "Reorder Overviews"
 msgstr "Übersichten neu anordnen"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:93
+#: src/en/documentation/use/guides/overviews.md:94
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
-"navigation bar, which opens your [profile settings](/en/documentation/use/"
-"user-profile#overviews) where you can define a custom order for your "
-"overviews."
-msgstr ""
-"Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht "
-"oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr "
-"Konto neu anordnen. Verwenden Sie die Schaltfläche \"Elemente neu anordnen\" "
-"ganz oben in der zweiten Navigationsleiste, die Ihre [Profileinstellungen](/"
-"de/documentation/use/user-profile#ubersichten) öffnet, wo Sie eine "
-"benutzerdefinierte Reihenfolge festlegen können."
-
-#. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:95
-msgid ""
+"navigation, which opens your [profile settings](/en/documentation/use/user-"
+"profile#overviews) where you can define a custom order for your overviews. "
 "To change the order, simply drag & drop them by clicking the handles on the "
 "left side."
 msgstr ""
-"Um die Reihenfolge zu ändern, ziehen Sie die Übersichten einfach per Drag & "
-"Drop, indem Sie auf die Fläche auf der linken Seite klicken."
+"Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht "
+"oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr "
+"Konto neu anordnen. Verwenden Sie die Schaltfläche `Elemente neu anordnen` "
+"ganz oben in der sekundären Navigation, die Ihre [Profileinstellungen](/de/"
+"documentation/use/user-profile#ubersichten) öffnet, wo Sie eine "
+"benutzerdefinierte Reihenfolge festlegen können."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:97
+#: src/en/documentation/use/guides/overviews.md:96
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
 "switch back to your admin's order by clicking the `Reset Overview Order` "
@@ -6910,33 +6814,42 @@ msgstr "Einfache Suche"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:25
+#, fuzzy
+#| msgid ""
+#| "The search is located in the top left corner of the primary navigation. "
+#| "Either select it via mouse or use the keyboard shortcut [[s]]. After "
+#| "activation, you can see the tickets which got recently closed from your "
+#| "taskbar as well as your recent search queries. To search, simply type a "
+#| "term. The search then displays all matching items for which you have at "
+#| "least view or read permissions, grouped by type like users and tickets. "
+#| "Selecting one of those results opens the item as tab in the primary "
+#| "navigation."
 msgid ""
-"The search is located in the top left corner in the primary navigation bar. "
+"The search is located in the top left corner of the primary navigation. "
 "Either select it via mouse or use the keyboard shortcut [[s]]. After "
 "activation, you can see the tickets which got recently closed from your "
 "taskbar as well as your recent search queries. To search, simply type a "
 "term. The search then displays all matching items for which you have at "
 "least view or read permissions, grouped by type like users and tickets. "
-"Selecting one of those results opens the item as tab in the primary "
-"navigation."
+"Selecting one of those results opens the item as tab in the taskbar."
 msgstr ""
-"Die Suche befindet sich in der oberen linken Ecke in der Navigations-"
-"Seitenleiste. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie "
-"das Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in Ihrer "
-"Navigations-Seitenleiste die Tickets, die kürzlich dort geschlossen wurden, "
-"sowie Ihre letzten Suchanfragen. Um zu suchen, geben Sie einfach einen "
-"Begriff ein. Die Suche zeigt dann alle übereinstimmenden Elemente an, für "
-"die Sie mindestens über Ansichts- oder Leserechte verfügen, gruppiert nach "
-"Typ wie Benutzer und Tickets. Wenn Sie eines dieser Ergebnisse auswählen, "
-"wird das Element als Tab in der Navigations-Seitenleiste geöffnet."
+"Die Suche befindet sich in der oberen linken Ecke in der primären "
+"Navigation. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das "
+"Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in Ihrer Taskleiste die "
+"Tickets, die kürzlich dort geschlossen wurden sowie Ihre letzten "
+"Suchanfragen. Um zu suchen, geben Sie einfach einen Begriff ein. Die Suche "
+"zeigt dann alle übereinstimmenden Elemente an, für die Sie mindestens über "
+"Ansichts- bzw. Leserechte verfügen, gruppiert nach Typ wie Benutzer und "
+"Tickets. Wenn Sie eines dieser Ergebnisse auswählen, wird das Element als "
+"Tab in der Taskleiste geöffnet."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:27
 msgid ""
-"![Screenshot shows search results in navigation bar](/screenshots/cypress/"
-"documentation/use/guide-search.cy.js/search-sidebar.png)"
+"![Screenshot shows search results in primary navigation](/screenshots/"
+"cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
 msgstr ""
-"![Screenshot zeigt Suchergebnisse in der Navigationsleiste](/screenshots/"
+"![Screenshot zeigt Suchergebnisse in der primären Navigation](/screenshots/"
 "cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
 
 #. type: Plain text
@@ -7876,16 +7789,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:66
-#, fuzzy
-#| msgid ""
-#| "Initially, you will be presented with an empty side panel instructing you "
-#| "to **Set Up** your first key."
 msgid ""
 "Initially, you will be presented with an empty flyout instructing you to "
 "**Set Up** your first key."
 msgstr ""
-"Zunächst wird Ihnen ein leeres Seiten-Panel angezeigt, in dem Sie "
-"aufgefordert werden, das **Einrichten** Ihres ersten Schlüssel zu starten."
+"Zunächst wird Ihnen ein leeres Seitenmenü angezeigt, in dem Sie aufgefordert "
+"werden, das **Einrichten** Ihres ersten Schlüssel zu starten."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:68
@@ -8525,17 +8434,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:58
-#, fuzzy
-#| msgid ""
-#| "After capturing or uploading an image, you can crop it. Have a look at "
-#| "the preview at the top of the right side panel."
 msgid ""
 "After capturing or uploading an image, you can crop it. Have a look at the "
 "preview at the top of the right flyout."
 msgstr ""
 "Nachdem Sie ein Bild aufgenommen oder hochgeladen haben, können Sie es "
-"zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten Seiten-"
-"Panel."
+"zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten "
+"Seitenmenü."
 
 #. type: Title ###
 #: src/en/documentation/use/user-profile.md:59
@@ -8656,16 +8561,12 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:95
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows side panel with created token and copy button](/"
-#| "screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 msgid ""
 "![Screenshot shows flyout with created token and copy button](/screenshots/"
 "cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 msgstr ""
-"![Screenshot zeigt Seiten-Panel mit erstelltem Token und Kopierschaltfläche]"
-"(/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+"![Screenshot zeigt Seitenmenü mit erstelltem Token und Kopierschaltfläche](/"
+"screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:99
@@ -11151,7 +11052,10 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #: src/en/get-started/installation/package.md:324
-msgid "**zammad-websocket**: websocket server for session related information"
+#, fuzzy
+#| msgid ""
+#| "**zammad-websocket**: websocket server for session related information"
+msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 "**zammad-websocket**: Websocket-Server für sitzungsbezogene Informationen"
 
@@ -11596,8 +11500,14 @@ msgstr "[Kubernetes](kubernetes)"
 msgid "Client Requirements"
 msgstr "Anforderungen an Clients"
 
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:36
+#, no-wrap
+msgid "Browser"
+msgstr ""
+
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:38
+#: src/en/get-started/installation/prerequisites.md:40
 msgid ""
 "Because Zammad is a web application, only an up-to-date browser is needed. "
 "The following browsers are supported in their latest stable version:"
@@ -11607,27 +11517,27 @@ msgstr ""
 "unterstützt:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Firefox"
 msgstr "Firefox"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Chrome (and Chromium-based)"
 msgstr "Chrome (und Chromium-basiert)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Opera"
 msgstr "Opera"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/prerequisites.md:43
+#: src/en/get-started/installation/prerequisites.md:45
 msgid "Safari"
 msgstr "Safari"
 
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:46
+#: src/en/get-started/installation/prerequisites.md:48
 msgid ""
 "This does not mean that Zammad will not work with other browsers or older "
 "versions, just that we do not test against or provide support for them."
@@ -11635,16 +11545,53 @@ msgstr ""
 "Das bedeutet nicht, dass Zammad mit anderen Browsern oder älteren Versionen "
 "nicht funktioniert, sondern nur, dass wir sie nicht testen und supporten."
 
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:49
+#, fuzzy, no-wrap
+#| msgid "Network Options"
+msgid "Network"
+msgstr "Netzwerk-Optionen"
+
 #. type: Plain text
-#: src/en/get-started/installation/prerequisites.md:48
+#: src/en/get-started/installation/prerequisites.md:53
+#, fuzzy
+#| msgid ""
+#| "The communication between client and server is based on web sockets. Some "
+#| "firewalls may filter these connections. This may lead to decreased "
+#| "browser performance."
 msgid ""
-"The communication between client and server is based on web sockets. Some "
-"firewalls may filter these connections. This may lead to decreased browser "
-"performance."
+"Be aware that communication between client and server uses WebSockets. Some "
+"firewalls and proxies may filter these connections. This could reduce "
+"performance or prevent real-time updates."
 msgstr ""
 "Die Kommunikation zwischen Client und Server erfolgt über Web-Sockets. "
 "Einige Firewalls können diese Verbindungen filtern. Dies kann zu einer "
 "reduzierten Browserleistung führen."
+
+#. type: Title ###
+#: src/en/get-started/installation/prerequisites.md:54
+#, no-wrap
+msgid "Display"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:60
+msgid ""
+"Zammad adapts its layout to different screen sizes. For the best experience, "
+"we recommend using a display with sufficient screen size and resolution. "
+"When using small screens, Zammad collapses elements like the sidebar to "
+"maintain usability. If these measures are not sufficient, a toast warning "
+"shows up at the top of the screen. You can hide it by clicking the "
+"corresponding button."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/prerequisites.md:62
+msgid ""
+"The standard desktop interface is intended for screens at least 640 px wide. "
+"On narrower screens, use the [mobile view](/en/documentation/use/guides/"
+"mobile-view)."
+msgstr ""
 
 #. type: Title ##
 #: src/en/get-started/update.md:1 src/en/reference/rest-api/calendar.md:57
@@ -13913,20 +13860,26 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:217
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
+#| ": Host name of Zammad's websocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
-": Host name of Zammad's websocket server.\n"
+": Host name of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ": Hostname des Zammad-Websocket-Servers.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:220
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
+#| ": Port of Zammad's websocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-": Port of Zammad's websocket server.\n"
+": Port of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
 ": Port des Websocket-Servers von Zammad.\n"
@@ -18023,6 +17976,10 @@ msgid ""
 "  selected, it shows the dashboard, overviews, the ticket detail view, the\n"
 "  create-ticket form or other screens.\n"
 msgstr ""
+"Hauptinhalt\n"
+": Der mittlere Bereich von Zammad. Je nachdem, welche Ansicht Sie\n"
+"  ausgewählt haben, werden hier das Dashboard, Übersichten, die Ticket-Detailansicht, das\n"
+"  Formular zum Erstellen eines Tickets oder andere Ansichten angezeigt.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:277
@@ -18033,6 +17990,10 @@ msgid ""
 "  actions of the currently active view, such as `Create`, `Apply Template` or\n"
 "  `Discard Changes` on the create-ticket form.\n"
 msgstr ""
+"Fußzeile Hauptinhalt\n"
+": Die Aktionsleiste am unteren Rand des Hauptinhaltsbereichs. Sie enthält die primären Aktionen der\n"
+"  aktuell aktiven Ansicht, wie z. B. `Erstellen`, `Vorlage anwenden` oder `Abbrechen & zurück` im\n"
+"  Ticket-Erstellungsformular.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:282
@@ -18079,31 +18040,16 @@ msgstr ""
 "  wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:297
-#, no-wrap
+#: src/en/reference/glossary.md:296
 msgid ""
-"Navigation Bar\n"
-": The navigation bar is the left sidebar in Zammad which contains navigation tabs,\n"
-"  the search, notifications and many more items, depending on your system.\n"
+"Navigation Tab : One element of the primary navigation like **Overviews** or "
+"**Knowledge Base**."
 msgstr ""
-"Navigationsleiste\n"
-": Die Navigations-Seitenleiste ist die linke Seitenleiste in Zammad, die Navigations-Tabs,\n"
-"  die Suche, Benachrichtigungen und - abhängig von Ihrem System - viele weitere Elemente enthalten kann.\n"
+"Navigations-Tab: Ein Element der primären Navigation, wie beispielsweise "
+"**Übersichten** oder **Knowledge Base**."
 
 #. type: Plain text
 #: src/en/reference/glossary.md:301
-#, no-wrap
-msgid ""
-"Navigation Tab\n"
-": One element of the navigation bar. You can have multiple tabs open and quickly\n"
-"  switch between them.\n"
-msgstr ""
-"Navigations-Tab\n"
-": Ein Element der Navigations-Leiste. Sie können mehrere Tabs geöffnet haben und schnell\n"
-"  zwischen ihnen wechseln.\n"
-
-#. type: Plain text
-#: src/en/reference/glossary.md:306
 #, no-wrap
 msgid ""
 "Nagios\n"
@@ -18117,7 +18063,7 @@ msgstr ""
 "  erstellt wird.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:311
+#: src/en/reference/glossary.md:306
 #, no-wrap
 msgid ""
 "On-Premise\n"
@@ -18131,7 +18077,7 @@ msgstr ""
 "  Kunden von Zammad kontrolliert wird. Self-Hosting bedeutet das Gleiche.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:317
+#: src/en/reference/glossary.md:312
 #, no-wrap
 msgid ""
 "Organization\n"
@@ -18147,7 +18093,7 @@ msgstr ""
 "  Organisation.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:323
+#: src/en/reference/glossary.md:318
 #, no-wrap
 msgid ""
 "Owner\n"
@@ -18163,7 +18109,7 @@ msgstr ""
 "  der neue Besitzer weiß, was zu tun ist.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:329
+#: src/en/reference/glossary.md:324
 #, no-wrap
 msgid ""
 "Parent/Child Relationship\n"
@@ -18179,7 +18125,7 @@ msgstr ""
 "  Übrigens: Auf die gleiche Weise können Sie auch zwei Tickets zu einem zusammenführen.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:335
+#: src/en/reference/glossary.md:330
 #, no-wrap
 msgid ""
 "Placetel\n"
@@ -18194,7 +18140,7 @@ msgstr ""
 "  Kommunikation an einem Ort in Zammad haben.\n"
 
 #. type: Plain text
-#: src/en/reference/glossary.md:340
+#: src/en/reference/glossary.md:335
 #, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call log,\n"
@@ -18206,6 +18152,20 @@ msgstr ""
 "  wodurch die Historie ihrer Korrespondenz noch genauer wird.\n"
 "  Anrufer werden direkt über ihre Caller ID identifiziert - eine Schlüsselfunktion, die\n"
 "  den Agenten viel Zeit bei der Zuweisung von Anrufern spart.\n"
+
+#. type: Plain text
+#: src/en/reference/glossary.md:340
+#, no-wrap
+msgid ""
+"Primary Navigation\n"
+": The primary navigation is the left sidebar in Zammad which contains the\n"
+"  taskbar, the search, notifications, knowledge base and eventually more,\n"
+"  depending on your system.\n"
+msgstr ""
+"Primäre Navigation\n"
+": Die primäre Navigation ist die linke Seitenleiste in Zammad, die die\n"
+"  Taskleiste, die Suche, Benachrichtigungen, die Knowledge Base und gegebenenfalls weitere Elemente enthält,\n"
+"  abhängig von Ihrem System.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:345
@@ -18291,19 +18251,15 @@ msgstr "  Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:374
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Second Level Navigation\n"
-#| ": Refers to an additional menu next to the navigation (e.g. when opening profile\n"
-#| "  settings).\n"
+#, no-wrap
 msgid ""
 "Secondary Navigation\n"
 ": Refers to an additional menu next to the navigation (e.g. when opening profile\n"
 "  settings).\n"
 msgstr ""
-"Zweite Navigationsebene\n"
-": Bezieht sich auf ein zusätzliches Menü neben der Navigation (z.B. beim Öffnen der\n"
-"  Profil-Einstellungen).\n"
+"Sekundäre Navigation\n"
+": Bezeichnet ein zusätzliches Menü neben der Haupt-Navigation (z.B. beim geöffneten\n"
+"  Profileinstellungen).\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:378
@@ -18311,8 +18267,11 @@ msgstr ""
 msgid ""
 "Flyout\n"
 ": The panel that slides in from the right side of the screen for actions such\n"
-"  as linking or merging tickets, bulk actions, and the subscription toggle.\n"
+"  as linking or merging tickets and bulk actions.\n"
 msgstr ""
+"Seitenmenü\n"
+": Der Bereich, der von der rechten Seite des Bildschirms eingeblendet wird und Aktionen wie\n"
+"  das Verknüpfen oder Zusammenfasse von Tickets sowie Mehrfach-Aktionen ermöglicht.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:383
@@ -18417,7 +18376,7 @@ msgid ""
 "State\n"
 ": Every ticket has a state which reflects the current progress of resolving the\n"
 "  issue. The state of a ticket can be changed manually or automatically based\n"
-"  on automation or SLA. Each state has a state types. There are four state types\n"
+"  on automation or SLA. Each state has a state type. There are four state types\n"
 "  by default and they are color-coded. You can even add additional states to\n"
 "  your Zammad.\n"
 msgstr ""
@@ -18432,9 +18391,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Taskbar\n"
-": The section of the navigation sidebar which contains the taskbar tabs (one\n"
-"  for each opened ticket, user or organization or the detailed search).\n"
+": The section of the primary navigation which contains the taskbar tabs for\n"
+"  your opened tickets, users, organizations and the detailed search.\n"
 msgstr ""
+"Taskleiste\n"
+": Der Bereich der primären Navigation, der die Tabs für\n"
+"  Ihre geöffneten Tickets, Benutzer, Organisationen und die erweiterte Suche enthält.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:428
@@ -18444,6 +18406,9 @@ msgid ""
 ": A single tab in the taskbar. Clicking the tab brings the corresponding\n"
 "  ticket, user, organization or search into the main content area.\n"
 msgstr ""
+"Taskleisten-Tab\n"
+": Eine einzelner Tab in der Taskleiste. Durch Klicken auf den Tab wird das entsprechende Element wie\n"
+"  ein Ticket, ein Benutzer, eine Organisation oder die erweiterte Suche im Hauptinhaltsbereich angezeigt.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:436
@@ -35278,6 +35243,11 @@ msgid ""
 "configuration for Nginx and Apache 2 and reloading the webserver to apply "
 "the changes."
 msgstr ""
+"Konfigurieren Sie Ihren Webserver so, dass er als Reverse-Proxy für den "
+"Zammad-Application-Server fungiert. Diese Anleitung behandelt die "
+"Beschaffung eines SSL-Zertifikats, die Anpassung der Beispielkonfiguration "
+"für Nginx und Apache 2 sowie das Neuladen des Webservers, um die Änderungen "
+"zu übernehmen."
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:22
@@ -35291,6 +35261,15 @@ msgid ""
 "directory. For production use, replace it with `zammad_ssl.conf` and follow "
 "the steps on this page."
 msgstr ""
+"Beispielkonfigurationsdateien für Ihren Webserver finden Sie im Verzeichnis "
+"`contrib/` Ihrer Zammad-Installation. Pro Webserver sind zwei "
+"Beispieldateien vorhanden: `zammad.conf` (plain HTTP) und `zammad_ssl.conf` "
+"(HTTPS). Die Nicht-SSL-Datei ist ausschließlich für lokale Testzwecke "
+"vorgesehen und darf nicht in Produktivumgebungen verwendet werden. Bei einer "
+"Paketinstallation von Zammad kopiert das Paket automatisch die Nicht-SSL-"
+"Datei `zammad.conf` in das Konfigurationsverzeichnis Ihres Webservers. Für "
+"den produktiven Einsatz ersetzen Sie diese bitte durch `zammad_ssl.conf` und "
+"befolgen Sie die Schritte auf dieser Seite."
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/webserver-config.md:23
@@ -35302,13 +35281,17 @@ msgid ""
 "`NGINX_*` and `ZAMMAD_RAILSSERVER_*` variables on the\n"
 "[environment variables page](/en/reference/environment-variables).\n"
 msgstr ""
+"**Benutzer von Docker Compose / Kubernetes:**\n"
+"\n"
+"Überspringen Sie diese Seite. Konfigurieren Sie den Webserver-Port, den Hostnamen und das Schema über die\n"
+"Variablen `NGINX_*` und `ZAMMAD_RAILSSERVER_*`, die Sie auf der Seite der\n"
+"[Umgebungsvariablen](/de/reference/environment-variables) finden können.\n"
 
 #. type: Title ##
 #: src/en/tutorials/webserver-config.md:31
-#, fuzzy, no-wrap
-#| msgid "Get a SSL Certificate"
+#, no-wrap
 msgid "Obtain an SSL Certificate"
-msgstr "SSL-Zertifikat anfordern"
+msgstr "Beziehen Sie ein SSL-Zertifikat"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:35
@@ -35316,12 +35299,15 @@ msgid ""
 "Zammad requires HTTPS in production. Use one of the options below to obtain "
 "a certificate before continuing with the webserver configuration."
 msgstr ""
+"Zammad erfordert in HTTPS in einer produktiven Umgebung. Nutzen Sie eine der "
+"unten aufgeführten Optionen, um ein Zertifikat zu beziehen, bevor Sie mit "
+"der Konfiguration des Webservers fortfahren."
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:36
 #, no-wrap
 msgid "Commercial Certificate Authority"
-msgstr ""
+msgstr "Kommerzielle Zertifizierungsstelle"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:45
@@ -35333,6 +35319,15 @@ msgid ""
 "resulting certificate, key and chain on your server as you would for any "
 "HTTPS service, then continue with the webserver configuration below."
 msgstr ""
+"Erwerben Sie ein Jahreszertifikat bei einer beliebigen vertrauenswürdigen "
+"öffentlichen Zertifizierungsstelle (kurz CA, *Certificate Authority*). Zu "
+"den gängigen Anbietern zählen [Sectigo](https://sectigo.com/ssl-certificates-"
+"tls){target=_blank}, [GlobalSign](https://www.globalsign.com/en/managed-ssl)"
+"{target=_blank} oder [DigiCert](https://www.digicert.com/tls-ssl/)"
+"{target=_blank}. Installieren Sie das resultierende Zertifikat, den "
+"Schlüssel und die Zertifikatskette auf Ihrem Server wie bei jedem anderen "
+"HTTPS-Dienst und fahren Sie anschließend mit der unten beschriebenen "
+"Webserver-Konfiguration fort."
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:46
@@ -35346,66 +35341,12 @@ msgid ""
 "Let's Encrypt issues free, automatically renewable certificates. Two clients "
 "are commonly used."
 msgstr ""
+"Let’s Encrypt stellt kostenlose, automatisch verlängerbare Zertifikate aus. "
+"Zwei Clients werden dafür häufig verwendet."
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:51
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "===Certbot\n"
-#| "\n"
-#| "If not happened automatically, you have to install the Nginx or Apache plugin\n"
-#| "for Certbot: `python3-certbot-nginx` or `python3-certbot-apache`\n"
-#| "\n"
-#| "During the first Certbot run it will request additional information once.\n"
-#| "Replace `<webserver>` in below command by either `apache`, `httpd` or\n"
-#| "`nginx` to match your setup.\n"
-#| "\n"
-#| "```sh\n"
-#| "certbot --<webserver> -d zammad.example.com\n"
-#| "```\n"
-#| "\n"
-#| "Certbot will now attempt to issue a certificate for you. If successful,\n"
-#| "Certbot will ask you if you want to `[1] not redirect` or `[2] redirect`\n"
-#| "automatically. You can choose to not redirect if you plan to use the sample\n"
-#| "configuration of Zammad.\n"
-#| "\n"
-#| "From now on, Certbot will automatically renew your installed certificates if\n"
-#| "they’re valid for 30 days or less.\n"
-#| "\n"
-#| "===acme.sh\n"
-#| "\n"
-#| "Change the default certificate authority to Let's Encrypt:\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --set-default-ca  --server letsencrypt\n"
-#| "```\n"
-#| "\n"
-#| "Issue your certificate and replace `<webserver>` in the following command\n"
-#| "with either `apache` or `nginx` or `standalone` for other webserver.\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --issue --<webserver> -d zammad.example.com\n"
-#| "```\n"
-#| "\n"
-#| "It is not recommended to use the stored certificates directly. You should\n"
-#| "install the certificate to a directory of your choice instead as you can see\n"
-#| "in the next command below. We’re using `/etc/ssl/private/` in this case,\n"
-#| "but you can use any directory you like.\n"
-#| "\n"
-#| "Replace `<webserver>` with `apache2`, `httpd` or `nginx`.\n"
-#| "\n"
-#| "```sh\n"
-#| "acme.sh --install-cert -d zammad.example.com \\\n"
-#| "    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
-#| "    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
-#| "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-#| "    --reloadcmd     \"sudo systemctl force-reload <webserver>\"\n"
-#| "```\n"
-#| "\n"
-#| "From now on, acme.sh will automatically renew your installed certificates if\n"
-#| "they’re valid for 30 days or less.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "=== Certbot\n"
@@ -35464,78 +35405,242 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"===Certbot\n"
+"=== Certbot\n"
 "\n"
-"Falls nicht automatisch geschehen, müssen Sie das Nginx- oder Apache-Plugin für Certbot\n"
-"installieren:\n"
-"`python3-certbot-nginx` oder `python3-certbot-apache`\n"
-"\n"
-"Während des ersten Certbot-Laufs werden einmalig zusätzliche Informationen abgefragt.\n"
-"Ersetzen Sie `<webserver>` im folgenden Befehl entweder durch `apache`, `httpd` oder\n"
-"`nginx`, je nach Ihrer Konfiguration.\n"
+"Certbot ist der am häufigsten verwendete ACME-Client. Befolgen Sie die\n"
+"[Certbot-Installationsanleitung](https://certbot.eff.org/instructions){target=_blank},\n"
+"wählen Sie Ihre Distribution und das passende Webserver-Plugin in der\n"
+"Auswahl aus und schließen Sie die Installation ab. Nach der Installation fordern Sie ein Zertifikat an,\n"
+"indem Sie `<WEBSERVER>` durch `nginx` oder `apache` und\n"
+"`zammad.example.com` durch Ihre Subdomain ersetzen:\n"
 "\n"
 "```sh\n"
-"certbot --<webserver> -d zammad.example.com\n"
+"sudo certbot --<WEBSERVER> -d zammad.example.com\n"
 "```\n"
 "\n"
-"Certbot wird nun versuchen, ein Zertifikat für Sie auszustellen. Falls erfolgreich,\n"
-"wird Certbot Sie fragen, ob Sie `[1] nicht umleiten` oder automatisch `[2] umleiten` wollen.\n"
-"Sie können `nicht umleiten` wählen, wenn Sie unserem Beispiel folgen wollen.\n"
+"Certbot stellt das Zertifikat aus und fragt, ob HTTP auf HTTPS umgeleitet werden soll\n"
+"(wählen Sie `[1] not redirect`, wenn Sie die Zammad-Beispielkonfiguration\n"
+"verwenden möchten, die die Umleitung bereits übernimmt; andernfalls wählen Sie\n"
+"`[2] redirect`) und richten Sie die automatische Verlängerung ein, sobald das Zertifikat\n"
+"weniger als 30 Tage gültig ist.\n"
 "\n"
-"Von nun an erneuert Certbot automatisch Ihre installierten Zertifikate, wenn\n"
-"sie noch 30 Tage oder kürzer gültig sind.\n"
+"=== acme.sh\n"
 "\n"
-"===acme.sh\n"
-"\n"
-"Ändern Sie die Standard-Zertifizierungsstelle in Let's encrypt:\n"
+"[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} ist\n"
+"ein schlanker, shellbasierter ACME-Client und eine Alternative zu Certbot,\n"
+"verwendet jedoch standardmäßig nicht mehr Let’s Encrypt. Legen Sie die Standard-Zertifizierungsstelle auf Let’s\n"
+"Encrypt fest:\n"
 "\n"
 "```sh\n"
 "acme.sh --set-default-ca --server letsencrypt\n"
 "```\n"
 "\n"
-"Stellen Sie Ihr Zertifikat aus und ersetzen Sie `<webserver>` in dem folgenden Befehl\n"
-"entweder durch `apache` oder `nginx` oder `standalone` für andere Webserver.\n"
+"Stellen Sie das Zertifikat aus, indem Sie `<WEBSERVER-plugin>` durch `nginx`,\n"
+"`apache` oder `standalone` sowie `zammad.example.com` durch Ihre Subdomain ersetzen:\n"
 "\n"
 "```sh\n"
-"acme.sh --issue --<webserver> -d zammad.example.com\n"
+"acme.sh --issue --<WEBSERVER-plugin> -d zammad.example.com\n"
 "```\n"
 "\n"
-"Es wird nicht empfohlen, die gespeicherten Zertifikate direkt zu verwenden. Sie sollten\n"
-"das Zertifikat stattdessen in ein Verzeichnis Ihrer Wahl installieren, wie Sie\n"
-"im nächsten Befehl unten sehen können. Wir verwenden in diesem Fall `/etc/ssl/private/`,\n"
-"aber Sie können jedes beliebige Verzeichnis verwenden.\n"
-"\n"
-"Ersetzen Sie `<webserver>` durch `apache2`, `httpd` oder `nginx`.\n"
+"Installieren Sie das Zertifikat in einem Verzeichnis Ihrer Wahl (z.B.\n"
+"`/etc/ssl/private/`) und starten Sie den Webserver nach jeder Erneuerung neu.\n"
+"Ersetzen Sie `<WEBSERVER-service>` im folgenden Befehl durch den entsprechenden\n"
+"systemd-Dienstnamen (`nginx`, `apache2` oder `httpd`):\n"
 "\n"
 "```sh\n"
 "acme.sh --install-cert -d zammad.example.com \\\n"
-"    --cert-datei /etc/ssl/private/zammad.example.com.pem \\\n"
-"    --key-file /etc/ssl/private/zammad.example.com.key \\\n"
+"    --cert-file      /etc/ssl/private/zammad.example.com.pem  \\\n"
+"    --key-file       /etc/ssl/private/zammad.example.com.key  \\\n"
 "    --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \\\n"
-"    --reloadcmd \"sudo systemctl force-reload <webserver>\"\n"
+"    --reloadcmd     \"sudo systemctl force-reload <WEBSERVER-service>\"\n"
 "```\n"
 "\n"
-"Von nun an erneuert acme.sh automatisch Ihre installierten Zertifikate, wenn\n"
-"sie noch 30 Tage oder kürzer gültig sind.\n"
+"Weitere Anwendungsbeispiele finden Sie in der\n"
+"[acme.sh-Dokumentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}.\n"
 "\n"
 
 #. type: Title ##
 #: src/en/tutorials/webserver-config.md:109
-#, fuzzy, no-wrap
-#| msgid "Adjusting the Webserver Configuration"
+#, no-wrap
 msgid "Adjust the Webserver Configuration"
 msgstr "Anpassen der Webserver-Konfiguration"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:112
-#, fuzzy, no-wrap
-#| msgid "<!-- markdownlint-disable MD007 -->\n"
+#, no-wrap
 msgid "<!-- markdownlint-disable MD036 -->\n"
-msgstr "<!-- markdownlint-disable MD007 -->\n"
+msgstr "<!-- markdownlint-disable MD036 -->\n"
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/webserver-config.md:113
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Nginx (default)\n"
+#| "\n"
+#| "**Get the sample config into place**\n"
+#| "\n"
+#| "Copy the SSL sample configuration to your Nginx config directory:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo cp /opt/zammad/contrib/nginx/zammad_ssl.conf \\\n"
+#| "    /etc/nginx/sites-available/zammad.conf\n"
+#| "```\n"
+#| "\n"
+#| "Most common Nginx config directories:\n"
+#| "\n"
+#| "- `/etc/nginx/conf.d/`\n"
+#| "- `/etc/nginx/vhosts.d/`\n"
+#| "- `/etc/nginx/sites-available/`\n"
+#| "\n"
+#| "**Adjust server name and certificate paths**\n"
+#| "\n"
+#| "Adjust the just copied file with a text editor of your choice (e.g.\n"
+#| "vi or nano). Locate both `server_name` directives (one in the HTTP\n"
+#| "server block on port 80, one in the HTTPS server block on port 443)\n"
+#| "and adjust `example.com` to the subdomain you have chosen for your\n"
+#| "Zammad instance.\n"
+#| "\n"
+#| "Now you'll need to adjust the path and file names for your SSL\n"
+#| "certificates you obtained on the prior steps. Adjust the following\n"
+#| "directives to match your setup:\n"
+#| "\n"
+#| "- `ssl_certificate` (your SSL certificate)\n"
+#| "- `ssl_certificate_key` (the certificate's private key)\n"
+#| "- `ssl_trusted_certificate` (the public CA certificate)\n"
+#| "\n"
+#| "To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+#| "file and point `ssl_dhparam` at it:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+#| "```\n"
+#| "\n"
+#| "**Reload and verify**\n"
+#| "\n"
+#| "Verify the configuration:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo nginx -t\n"
+#| "```\n"
+#| "\n"
+#| "Reload Nginx:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo systemctl reload nginx\n"
+#| "```\n"
+#| "\n"
+#| "=== Apache 2\n"
+#| "\n"
+#| "**Enable the required modules**\n"
+#| "\n"
+#| "Zammad requires modules that are not enabled by default. On Ubuntu,\n"
+#| "Debian and openSUSE use `a2enmod`:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl\n"
+#| "```\n"
+#| "\n"
+#| "For HTTP/2 support also enable:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo a2enmod h2 proxy_http2 mpm_event\n"
+#| "```\n"
+#| "\n"
+#| "On CentOS / RHEL add the matching `LoadModule` lines to\n"
+#| "`/etc/httpd/conf/httpd.conf` instead:\n"
+#| "\n"
+#| "```apache\n"
+#| "LoadModule headers_module modules/mod_headers.so\n"
+#| "LoadModule proxy_module modules/mod_proxy.so\n"
+#| "LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+#| "LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+#| "LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+#| "```\n"
+#| "\n"
+#| "Restart Apache after enabling the modules:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo systemctl restart apache2\n"
+#| "```\n"
+#| "\n"
+#| "**Get the sample config into place**\n"
+#| "\n"
+#| "Copy the SSL sample configuration to your Apache config directory:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo cp /opt/zammad/contrib/apache2/zammad_ssl.conf \\\n"
+#| "    /etc/apache2/sites-available/zammad.conf\n"
+#| "```\n"
+#| "\n"
+#| "Most common Apache config directories:\n"
+#| "\n"
+#| "- `/etc/apache2/conf.d/`\n"
+#| "- `/etc/httpd/vhosts.d/`\n"
+#| "- `/etc/apache2/sites-available/`\n"
+#| "\n"
+#| "The package installation attempts to copy this file for you. Do not\n"
+#| "rename it.\n"
+#| "\n"
+#| "**Adjust server name and certificate paths**\n"
+#| "\n"
+#| "Adjust the just copied file with a text editor of your choice (e.g.\n"
+#| "vi or nano). Locate any `ServerName` directive and adjust `example.com`\n"
+#| "to the subdomain you have chosen for your Zammad instance. The first\n"
+#| "`ServerName` (in the HTTP VirtualHost) defaults to `example.com` and\n"
+#| "the second (in the HTTPS VirtualHost) to `localhost`.\n"
+#| "\n"
+#| "Now you'll need to adjust the path and file names for your SSL\n"
+#| "certificates you obtained on the prior steps. Adjust the following\n"
+#| "directives to match your setup:\n"
+#| "\n"
+#| "- `SSLCertificateFile` (your SSL certificate)\n"
+#| "- `SSLCertificateKeyFile` (the certificate's private key)\n"
+#| "- `SSLCertificateChainFile` (the public CA certificate)\n"
+#| "\n"
+#| "To improve HTTPS security, also configure a Diffie-Hellman parameter\n"
+#| "file and point `SSLOpenSSLConfCmd DHParameters` at it:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+#| "```\n"
+#| "\n"
+#| "**Enable the site**\n"
+#| "\n"
+#| "On Ubuntu, Debian and openSUSE:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo a2ensite zammad\n"
+#| "```\n"
+#| "\n"
+#| "On CentOS / RHEL:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+#| "```\n"
+#| "\n"
+#| "Make sure `IncludeOptional sites-enabled/*.conf` is present in\n"
+#| "`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) or\n"
+#| "`/etc/httpd/conf/httpd.conf` (CentOS / RHEL).\n"
+#| "\n"
+#| "**Reload and verify**\n"
+#| "\n"
+#| "Reload Apache and verify the configuration:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo systemctl reload apache2\n"
+#| "```\n"
+#| "\n"
+#| "=== Local testing or other proxy servers\n"
+#| "\n"
+#| "Zammad's main application listens on port `3000` and the websocket\n"
+#| "server on port `6042`. If you put your own reverse proxy in front of\n"
+#| "Zammad, forward both.\n"
+#| "\n"
+#| "If the default ports conflict with other applications on your host, see\n"
+#| "the [environment variables page](/en/reference/environment-variables) to\n"
+#| "change them.\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Nginx (default)\n"
@@ -35695,7 +35800,7 @@ msgid ""
 "\n"
 "=== Local testing or other proxy servers\n"
 "\n"
-"Zammad's main application listens on port `3000` and the websocket\n"
+"Zammad's main application listens on port `3000` and the WebSocket\n"
 "server on port `6042`. If you put your own reverse proxy in front of\n"
 "Zammad, forward both.\n"
 "\n"
@@ -35704,6 +35809,171 @@ msgid ""
 "change them.\n"
 "\n"
 msgstr ""
+"\n"
+"=== Nginx (Standard)\n"
+"\n"
+"**Platzieren Sie die Beispielkonfiguration**\n"
+"\n"
+"Kopieren Sie die SSL-Beispielkonfiguration in Ihr Nginx-Konfigurationsverzeichnis:\n"
+"\n"
+"```sh\n"
+"sudo cp /opt/zammad/contrib/nginx/zammad_ssl.conf \\\n"
+"    /etc/nginx/sites-available/zammad.conf\n"
+"```\n"
+"\n"
+"Die gängigsten Nginx-Konfigurationsverzeichnisse:\n"
+"\n"
+"- `/etc/nginx/conf.d/`\n"
+"- `/etc/nginx/vhosts.d/`\n"
+"- `/etc/nginx/sites-available/`\n"
+"\n"
+"**Passen Sie den Servernamen und die Zertifikatspfade an**\n"
+"\n"
+"Bearbeiten Sie die soeben kopierte Datei mit einem Texteditor Ihrer Wahl (z.B.\n"
+"vi oder nano). Suchen Sie die beiden `server_name` Direktiven (eine im HTTP-\n"
+"Serverblock auf Port 80, eine im HTTPS-Serverblock auf Port 443)\n"
+"und passen Sie `example.com` an die von Ihnen gewählte Subdomain an.\n"
+"\n"
+"Nun müssen Sie den Pfad und die Dateinamen für Ihre SSL-Zertifikate anpassen,\n"
+"die Sie in den vorherigen Schritten erhalten haben. Passen Sie die folgenden\n"
+"Anweisungen entsprechend Ihrer Konfiguration an:\n"
+"\n"
+"- `ssl_certificate` (Ihr SSL-Zertifikat)\n"
+"- `ssl_certificate_key` (der private Schlüssel des Zertifikats)\n"
+"- `ssl_trusted_certificate` (das öffentliche CA-Zertifikat)\n"
+"\n"
+"Um die SSL-Sicherheit zu verbessern, konfigurieren Sie außerdem eine Diffie-Hellman-Parameterdatei\n"
+"und verweisen Sie `ssl_dhparam` darauf:\n"
+"\n"
+"```sh\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+"```\n"
+"\n"
+"**Neu laden und prüfen**\n"
+"\n"
+"Überprüfen Sie die Konfiguration:\n"
+"\n"
+"```sh\n"
+"sudo nginx -t\n"
+"```\n"
+"\n"
+"Laden Sie Nginx neu:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload nginx\n"
+"```\n"
+"\n"
+"=== Apache 2\n"
+"\n"
+"**Aktivieren Sie die erforderlichen Module**\n"
+"\n"
+"Zammad benötigt Module, die standardmäßig nicht aktiviert sind. Unter Ubuntu,\n"
+"Debian und openSUSE verwenden Sie `a2enmod`:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod proxy proxy_html proxy_http proxy_wstunnel headers SSL\n"
+"```\n"
+"\n"
+"Für die HTTP/2-Unterstützung aktivieren Sie außerdem:\n"
+"\n"
+"```sh\n"
+"sudo a2enmod h2 proxy_http2 mpm_event\n"
+"```\n"
+"\n"
+"Unter CentOS / RHEL fügen Sie stattdessen die entsprechenden Zeilen `LoadModule` Zeilen in die Dateien\n"
+"`/etc/httpd/conf/httpd.conf` ein:\n"
+"\n"
+"```apache\n"
+"LoadModule headers_module modules/mod_headers.so\n"
+"LoadModule proxy_module modules/mod_proxy.so\n"
+"LoadModule proxy_html_module modules/mod_proxy_html.so\n"
+"LoadModule proxy_http_module modules/mod_proxy_http.so\n"
+"LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so\n"
+"```\n"
+"\n"
+"Starten Sie Apache nach der Aktivierung der Module neu:\n"
+"\n"
+"``````sh\n"
+"sudo systemctl restart apache2\n"
+"```\n"
+"\n"
+"**Platzieren Sie die Beispielkonfiguration**\n"
+"\n"
+"Kopieren Sie die SSL-Beispielkonfiguration in Ihr Apache-Konfigurationsverzeichnis:\n"
+"\n"
+"```sh\n"
+"sudo cp /opt/zammad/contrib/apache2/zammad_ssl.conf \\\n"
+"    /etc/apache2/sites-available/zammad.conf\n"
+"```\n"
+"\n"
+"Die gängigsten Apache-Konfigurationsverzeichnisse:\n"
+"\n"
+"- `/etc/apache2/conf.d/`\n"
+"- `/etc/httpd/vhosts.d/`\n"
+"- `/etc/apache2/sites-available/`\n"
+"\n"
+"Die Paketinstallation versucht, diese Datei für Sie zu kopieren. Benennen Sie sie nicht\n"
+"um.\n"
+"\n"
+"**Passen Sie den Servernamen und die Zertifikatspfade an**\n"
+"\n"
+"Bearbeiten Sie die soeben kopierte Datei mit einem Texteditor Ihrer Wahl (z.B.\n"
+"vi oder nano). Suchen Sie alle `ServerName` Direktiven und passen Sie `example.com`\n"
+"an die gewählte Subdomain an. Die erste\n"
+"`ServerName` Direktive (im HTTP-VirtualHost) ist standardmäßig auf `example.com` gesetzt und\n"
+"die zweite (im HTTPS-VirtualHost) auf `localhost`.\n"
+"\n"
+"Nun müssen Sie den Pfad und die Dateinamen für Ihre SSL-Zertifikate anpassen,\n"
+"die Sie in den vorherigen Schritten erhalten haben. Passen Sie die folgenden\n"
+"Direktiven entsprechend Ihrer Konfiguration an:\n"
+"\n"
+"- `SSLCertificateFile` (Ihr SSL-Zertifikat)\n"
+"- `SSLCertificateKeyFile` (der private Schlüssel des Zertifikats)\n"
+"- `SSLCertificateChainFile` (das öffentliche CA-Zertifikat)\n"
+"\n"
+"Um die HTTPS-Sicherheit zu verbessern, konfigurieren Sie außerdem eine Diffie-Hellman-Parameterdatei\n"
+"und verweisen Sie `SSLOpenSSLConfCmd DHParameters` darauf:\n"
+"\n"
+"```sh\n"
+"sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096\n"
+"```\n"
+"\n"
+"**Aktivieren Sie die Seite**\n"
+"\n"
+"Unter Ubuntu, Debian und openSUSE:\n"
+"\n"
+"```sh\n"
+"sudo a2ensite Zammad\n"
+"```\n"
+"\n"
+"Unter CentOS / RHEL:\n"
+"\n"
+"```sh\n"
+"sudo ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/\n"
+"```\n"
+"\n"
+"Stellen Sie sicher, dass die Zeile `IncludeOptional sites-enabled/*.conf` in der Datei\n"
+"`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) oder\n"
+"`/etc/httpd/conf/httpd.conf` (CentOS / RHEL) vorhanden ist.\n"
+"\n"
+"**Neu laden und prüfen**\n"
+"\n"
+"Laden Sie Apache neu und überprüfen Sie die Konfiguration:\n"
+"\n"
+"```sh\n"
+"sudo systemctl reload apache2\n"
+"```\n"
+"\n"
+"=== Lokales Testen oder andere Proxy-Server\n"
+"\n"
+"Die Hauptanwendung von Zammad lauscht auf Port `3000` und der WebSocket-\n"
+"Server auf Port `6042`. Wenn Sie einen eigenen Reverse-Proxy vor\n"
+"Zammad schalten, leiten Sie beide weiter.\n"
+"\n"
+"Sollten die Standardports mit anderen Anwendungen auf Ihrem Host in Konflikt stehen, finden Sie auf\n"
+"der [Seite zu den Umgebungsvariablen](/de/reference/environment-variables) Informationen dazu, wie Sie\n"
+"diese ändern können.\n"
+"\n"
 
 #. type: Fenced div block (tabs|warning)
 #: src/en/tutorials/webserver-config.md:113
@@ -35712,13 +35982,14 @@ msgid ""
 "Do not expose Zammad directly to the internet. Zammad only provides\n"
 "plain HTTP and would be reachable without authentication.\n"
 msgstr ""
+"Machen Sie Zammad nicht direkt erreichbar aus dem Internet. Zammad unterstützt lediglich\n"
+"plain HTTP und wäre ohne Authentifizierung erreichbar.\n"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:288
-#, fuzzy, no-wrap
-#| msgid "<!-- markdownlint-disable MD007 -->\n"
+#, no-wrap
 msgid "<!-- markdownlint-enable MD036 -->\n"
-msgstr "<!-- markdownlint-disable MD007 -->\n"
+msgstr "<!-- markdownlint-enable MD036 -->\n"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:292
@@ -35727,12 +35998,17 @@ msgid ""
 "If you don't see Zammad's setup wizard or Zammad UI at all, check the "
 "[Troubleshooting section](#troubleshooting) below."
 msgstr ""
+"Rufen Sie nun Ihre konfigurierte Zammad-Domain in einem Browser auf, um zur "
+"Zammad-Benutzeroberfläche zu gelangen. Falls der Zammad-"
+"Einrichtungsassistent oder die Zammad-Benutzeroberfläche überhaupt nicht "
+"angezeigt wird, lesen Sie bitte den Abschnitt [Fehlerbehebung]"
+"(#fehlerbehebung) weiter unten."
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:295
 #, no-wrap
 msgid "Default Landing Page Instead of Zammad"
-msgstr ""
+msgstr "Standard Landing-Page anstelle von Zammad"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:301
@@ -35741,12 +36017,17 @@ msgid ""
 "`zammad.conf` may be overruled by another config file. Check the vhost "
 "directory for `000-default.conf` or `default.conf` and disable it."
 msgstr ""
+"Falls Sie statt Zammad die Standard-Startseite des Webservers sehen, wird "
+"Ihre `zammad.conf` Datei möglicherweise durch eine andere "
+"Konfigurationsdatei überschrieben. Überprüfen Sie das vhust-Verzeichnis auf "
+"die Dateien `000-default.conf` oder `default.conf` und deaktivieren Sie "
+"diese."
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:302
 #, no-wrap
 msgid "DNS Not Resolving"
-msgstr ""
+msgstr "DNS-Auflösung fehlgeschlagen"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:308
@@ -35756,18 +36037,23 @@ msgid ""
 "the following command with your configured domain of Zammad and check if the "
 "domain points to the right server:"
 msgstr ""
+"Sollte die Subdomain nicht aufgelöst werden, überprüfen Sie bitte noch "
+"einmal die DNS-Einträge Ihrer Domain und warten Sie, bis diese übernommen "
+"wurden. Ersetzen Sie im folgenden Befehl die Angaben `zammad.example.com` "
+"durch Ihre konfigurierte Zammad-Domain und überprüfen Sie, ob die Domain auf "
+"den richtigen Server verweist:"
 
 #. type: Fenced code block (sh)
 #: src/en/tutorials/webserver-config.md:309
 #, no-wrap
 msgid "host zammad.example.com\n"
-msgstr ""
+msgstr "host zammad.example.com\n"
 
 #. type: Title ###
 #: src/en/tutorials/webserver-config.md:313
 #, no-wrap
 msgid "CSRF Token Errors"
-msgstr ""
+msgstr "Fehler CSRF-Token"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:318
@@ -35776,6 +36062,10 @@ msgid ""
 "may not pass the original connection type to Zammad. Tell the proxy directly "
 "that the connection is HTTPS."
 msgstr ""
+"Falls sich Benutzer aufgrund von CSRF-Token-Fehlern nicht anmelden können, "
+"gibt Ihre Webserver-Kette den ursprünglichen Verbindungstyp möglicherweise "
+"nicht an Zammad weiter. Weisen Sie den Proxy an, dass es sich um eine HTTPS-"
+"Verbindung handelt."
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:323
@@ -35786,6 +36076,10 @@ msgid ""
 "  `proxy_set_header X-Forwarded-Proto` and replace `$scheme` with\n"
 "  `https`.\n"
 msgstr ""
+"Nginx\n"
+": Suchen Sie in Ihrer Virtual-Host-Konfiguration die Zeile\n"
+" ` proxy_set_header X-Forwarded-Proto` und ersetzen Sie `$scheme` durch\n"
+" ` https`.\n"
 
 #. type: Plain text
 #: src/en/tutorials/webserver-config.md:327
@@ -35795,6 +36089,9 @@ msgid ""
 ": Within your virtual host configuration, just above the first\n"
 "  `ProxyPass` directive, insert:\n"
 msgstr ""
+"Apache 2\n"
+": Fügen Sie in Ihrer Virtual-Host-Konfiguration direkt über der ersten\n"
+"  `ProxyPass`-Direktive folgendes ein:\n"
 
 #. type: Fenced code block (apache)
 #: src/en/tutorials/webserver-config.md:328
@@ -35803,20 +36100,69 @@ msgid ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
 msgstr ""
+"  RequestHeader set X_FORWARDED_PROTO 'https'\n"
+"  RequestHeader set X-Forwarded-Ssl on\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Navigation Tab\n"
+#~ ": Each item of the navigation sidebar is called navigation tab. Depending on the content, it can be a ticket tab (with\n"
+#~ "  the ticket detail view) or the overview tab which opens the list of available overviews.\n"
+#~ msgstr ""
+#~ "Navigations-Tab\n"
+#~ ": Jedes Element der Navigations-Seitenleiste wird als Navigations-Tab bezeichnet. Je nach Inhalt kann es z.B. ein Ticket-Tab (mit\n"
+#~ "  der Ticket-Detailansicht) oder ein Übersichten-Tab sein, der die Liste der verfügbaren Übersichten öffnet.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "Sidebar Tabs\n"
+#~ ": On the right side of the sidebar, you can find small icons to switch between the different tabs. The availability of\n"
+#~ "  these tabs depends on your system configuration, your permissions and the ticket attributes (e.g. if the ticket\n"
+#~ "  customer has an assigned organization).\n"
+#~ msgstr ""
+#~ "Seitenleisten-Tabs\n"
+#~ ": Auf der rechten Seite der (rechten) Seitenleiste finden Sie kleine Icons, mit denen Sie zwischen\n"
+#~ "  den verschiedenen Tabs wechseln können. Die Verfügbarkeit dieser Tabs hängt von Ihrer System-Konfiguration,\n"
+#~ "  Ihren Berechtigungen und den Ticket-Attributen ab (z.B. ob der Kunde des Tickets einer Organisation angehört).\n"
+
+#, no-wrap
+#~ msgid "Navigation Sidebar"
+#~ msgstr "Navigations-Seitenleiste"
+
+#~ msgid ""
+#~ "The sidebar on the right side displays all ticket relevant information "
+#~ "and includes additional functionality. The most important one is the "
+#~ "ticket sidebar. Switch between the different sidebars by clicking the "
+#~ "desired tab on the right side of the sidebar. The available tabs depend "
+#~ "on the ticket and the configured features of your Zammad."
+#~ msgstr ""
+#~ "Die Seitenleiste auf der rechten Seite zeigt alle ticketrelevanten "
+#~ "Informationen an und enthält zusätzliche Funktionen. Die wichtigste davon "
+#~ "ist die Ticket-Seitenleiste. Wechseln Sie zwischen den verschiedenen "
+#~ "Seitenleisten, indem Sie auf den gewünschten Tab auf der rechten Seite "
+#~ "der Seitenleiste klicken. Die verfügbaren Tabs hängen vom Ticket und den "
+#~ "konfigurierten Funktionen Ihres Zammads ab."
+
+#~ msgid ""
+#~ "To change the order, simply drag & drop them by clicking the handles on "
+#~ "the left side."
+#~ msgstr ""
+#~ "Um die Reihenfolge zu ändern, ziehen Sie die Übersichten einfach per Drag "
+#~ "& Drop, indem Sie auf die Fläche auf der linken Seite klicken."
+
+#, no-wrap
+#~ msgid ""
+#~ "Navigation Tab\n"
+#~ ": One element of the navigation bar. You can have multiple tabs open and quickly\n"
+#~ "  switch between them.\n"
+#~ msgstr ""
+#~ "Navigations-Tab\n"
+#~ ": Ein Element der Navigations-Leiste. Sie können mehrere Tabs geöffnet haben und schnell\n"
+#~ "  zwischen ihnen wechseln.\n"
 
 #, no-wrap
 #~ msgid "**Side panel:**\n"
 #~ msgstr "**Seiten-Panel:**\n"
-
-#, no-wrap
-#~ msgid ""
-#~ "Side(Panel)\n"
-#~ ": This is the panel which is flying in on the right side for actions like ticket\n"
-#~ "  linking or ticket merging.\n"
-#~ msgstr ""
-#~ "Seiten(Leiste)\n"
-#~ ": Dies ist der Bereich, der von der rechten Seite aus für Aktionen wie\n"
-#~ "  Ticket-Verknüpfung oder Zusammenführung von Tickets ins Bild schwebt.\n"
 
 #~ msgid ""
 #~ "This guide is only relevant for package installations. During the "
@@ -38212,10 +38558,6 @@ msgstr ""
 #~ msgid ""
 #~ "`ZAMMAD_FQDN` : Defines the fully qualified domain name of the system."
 #~ msgstr "`ZAMMAD_FQDN`: Legt den FQDN/Domainnamen des Systems fest."
-
-#, no-wrap
-#~ msgid "Network Options"
-#~ msgstr "Netzwerk-Optionen"
 
 #, no-wrap
 #~ msgid ""
