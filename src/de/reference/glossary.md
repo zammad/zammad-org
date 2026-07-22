@@ -263,15 +263,15 @@ Makro
   Sie können Ihre eigenen Makros definieren und Aktionen basierend auf allen verfügbaren
   Attributen im Ticket durchführen.
 
-Main Content
-: The middle section of the Zammad layout. Depending on the view you have
-  selected, it shows the dashboard, overviews, the ticket detail view, the
-  create-ticket form or other screens.
+Hauptinhalt
+: Der mittlere Bereich von Zammad. Je nachdem, welche Ansicht Sie
+  ausgewählt haben, werden hier das Dashboard, Übersichten, die Ticket-Detailansicht, das
+  Formular zum Erstellen eines Tickets oder andere Ansichten angezeigt.
 
-Main Content Footer
-: The action row at the bottom of the Main Content area. It holds the primary
-  actions of the currently active view, such as `Create`, `Apply Template` or
-  `Discard Changes` on the create-ticket form.
+Fußzeile Hauptinhalt
+: Die Aktionsleiste am unteren Rand des Hauptinhaltsbereichs. Sie enthält die primären Aktionen der
+  aktuell aktiven Ansicht, wie z. B. `Erstellen`, `Vorlage anwenden` oder `Abbrechen & zurück` im
+  Ticket-Erstellungsformular.
 
 Erwähnungen
 : Erwähnungen sind eine Funktion von Zammad, mit der Sie einen anderen Agenten in einem
@@ -289,8 +289,8 @@ Monit
   eine starke Gemeinschaft dahintersteht. Sie können es in Zammad integrieren. Auf diese Weise
   wird jedes Mal ein Ticket erstellt, wenn Sie eine E-Mail in Monit erhalten.
 
-Navigation Tab : One element of the primary navigation like **Overviews** or
-**Knowledge Base**.
+Navigations-Tab: Ein Element der primären Navigation, wie beispielsweise
+**Übersichten** oder **Knowledge Base**.
 
 Nagios
 : Nagios ist ein weiteres Überwachungstool, das IT-Teams benachrichtigt, wenn ein Vorfall
@@ -330,10 +330,10 @@ Placetel
   Anrufer werden direkt über ihre Caller ID identifiziert - eine Schlüsselfunktion, die
   den Agenten viel Zeit bei der Zuweisung von Anrufern spart.
 
-Primary Navigation
-: The primary navigation is the left sidebar in Zammad which contains the
-  taskbar, the search, notifications, knowledge base and eventually more,
-  depending on your system.
+Primäre Navigation
+: Die primäre Navigation ist die linke Seitenleiste in Zammad, die die
+  Taskleiste, die Suche, Benachrichtigungen, die Knowledge Base und gegebenenfalls weitere Elemente enthält,
+  abhängig von Ihrem System.
 
 Priorität
 : Jedem Ticket wird eine Priorität zugewiesen. Standard ist die Priorität 2 (normal).
@@ -365,13 +365,13 @@ Rolle
 
   Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
 
-Secondary Navigation
-: Refers to an additional menu next to the navigation (e.g. when opening profile
-  settings).
+Sekundäre Navigation
+: Bezeichnet ein zusätzliches Menü neben der Haupt-Navigation (z.B. beim geöffneten
+  Profileinstellungen).
 
-Flyout
-: The panel that slides in from the right side of the screen for actions such
-  as linking or merging tickets and bulk actions.
+Seitenmenü
+: Der Bereich, der von der rechten Seite des Bildschirms eingeblendet wird und Aktionen wie
+  das Verknüpfen oder Zusammenfasse von Tickets sowie Mehrfach-Aktionen ermöglicht.
 
 Seitenleisten-Tab
 : In der Seitenleiste gibt es verschiedene Tabs wie "Kunde",
@@ -408,20 +408,19 @@ SSO
   nur einer Anmeldung. Es gibt verschiedene Anbieter, die diesen Prozess einfach und
   sicher machen. Zammad unterstützt SSO mittels verschiedener Provider.
 
-State
-: Every ticket has a state which reflects the current progress of resolving the
-  issue. The state of a ticket can be changed manually or automatically based
-  on automation or SLA. Each state has a state type. There are four state types
-  by default and they are color-coded. You can even add additional states to
-  your Zammad.
+Status
+: Jedes Ticket hat einen Status, der den aktuellen Fortschritt bei der Lösung des
+  Problems widerspiegelt. Der Status eines Tickets kann manuell oder automatisch auf der Grundlage von
+  Automatisierungen oder SLA gesetzt werden. Jeder Status hat einen Statustyp. Es gibt vier Statustypen
+  und sie sind farblich kodiert. Sie können sogar zusätzliche Status zu Ihrem Zammad hinzufügen.
 
-Taskbar
-: The section of the primary navigation which contains the taskbar tabs for
-  your opened tickets, users, organizations and the detailed search.
+Taskleiste
+: Der Bereich der primären Navigation, der die Tabs für
+  Ihre geöffneten Tickets, Benutzer, Organisationen und die erweiterte Suche enthält.
 
-Taskbar Tab
-: A single tab in the taskbar. Clicking the tab brings the corresponding
-  ticket, user, organization or search into the main content area.
+Taskleisten-Tab
+: Eine einzelner Tab in der Taskleiste. Durch Klicken auf den Tab wird das entsprechende Element wie
+  ein Ticket, ein Benutzer, eine Organisation oder die erweiterte Suche im Hauptinhaltsbereich angezeigt.
 
 Tags
 : Tags helfen Ihnen, Tickets zu kategorisieren. Sie können sie auf der Grundlage Ihres Anwendungsfalls

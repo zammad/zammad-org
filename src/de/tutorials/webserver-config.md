@@ -6,106 +6,111 @@ order: 3
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-Configure your webserver to reverse-proxy the Zammad application server.
-This guide covers obtaining an SSL certificate, adjusting the sample
-configuration for Nginx and Apache 2 and reloading the webserver to apply
-the changes.
+Konfigurieren Sie Ihren Webserver so, dass er als Reverse-Proxy für den
+Zammad-Application-Server fungiert. Diese Anleitung behandelt die
+Beschaffung eines SSL-Zertifikats, die Anpassung der Beispielkonfiguration
+für Nginx und Apache 2 sowie das Neuladen des Webservers, um die Änderungen
+zu übernehmen.
 
-You can find sample configuration files for your webserver within the
-`contrib/` directory of your Zammad installation. There are two example
-files per webserver: `zammad.conf` (plain HTTP) and `zammad_ssl.conf`
-(HTTPS). The non-SSL file is intended for local testing only and must not be
-used in production. During a package installation of Zammad, the package
-automatically copies the non-SSL `zammad.conf` to your webserver's config
-directory. For production use, replace it with `zammad_ssl.conf` and follow
-the steps on this page.
+Beispielkonfigurationsdateien für Ihren Webserver finden Sie im Verzeichnis
+`contrib/` Ihrer Zammad-Installation. Pro Webserver sind zwei
+Beispieldateien vorhanden: `zammad.conf` (plain HTTP) und `zammad_ssl.conf`
+(HTTPS). Die Nicht-SSL-Datei ist ausschließlich für lokale Testzwecke
+vorgesehen und darf nicht in Produktivumgebungen verwendet werden. Bei einer
+Paketinstallation von Zammad kopiert das Paket automatisch die
+Nicht-SSL-Datei `zammad.conf` in das Konfigurationsverzeichnis Ihres
+Webservers. Für den produktiven Einsatz ersetzen Sie diese bitte durch
+`zammad_ssl.conf` und befolgen Sie die Schritte auf dieser Seite.
 
 ::: info
-**Docker Compose / Kubernetes users:**
+**Benutzer von Docker Compose / Kubernetes:**
 
-Skip this page. Configure the webserver port, hostname and scheme via the
-`NGINX_*` and `ZAMMAD_RAILSSERVER_*` variables on the
-[environment variables page](/en/reference/environment-variables).
+Überspringen Sie diese Seite. Konfigurieren Sie den Webserver-Port, den Hostnamen und das Schema über die
+Variablen `NGINX_*` und `ZAMMAD_RAILSSERVER_*`, die Sie auf der Seite der
+[Umgebungsvariablen](/de/reference/environment-variables) finden können.
 :::
 
-## Obtain an SSL Certificate
+## Beziehen Sie ein SSL-Zertifikat
 
-Zammad requires HTTPS in production. Use one of the options below to obtain
-a certificate before continuing with the webserver configuration.
+Zammad erfordert in HTTPS in einer produktiven Umgebung. Nutzen Sie eine der
+unten aufgeführten Optionen, um ein Zertifikat zu beziehen, bevor Sie mit
+der Konfiguration des Webservers fortfahren.
 
-### Commercial Certificate Authority
+### Kommerzielle Zertifizierungsstelle
 
-Buy an annual certificate from any trusted public CA. A few common options
-are [Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank},
-[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} or
-[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Install the
-resulting certificate, key and chain on your server as you would for any
-HTTPS service, then continue with the webserver configuration below.
+Erwerben Sie ein Jahreszertifikat bei einer beliebigen vertrauenswürdigen
+öffentlichen Zertifizierungsstelle (kurz CA, *Certificate Authority*). Zu
+den gängigen Anbietern zählen
+[Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank},
+[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} oder
+[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Installieren
+Sie das resultierende Zertifikat, den Schlüssel und die Zertifikatskette auf
+Ihrem Server wie bei jedem anderen HTTPS-Dienst und fahren Sie anschließend
+mit der unten beschriebenen Webserver-Konfiguration fort.
 
 ### Let's Encrypt
 
-Let's Encrypt issues free, automatically renewable certificates. Two clients
-are commonly used.
+Let’s Encrypt stellt kostenlose, automatisch verlängerbare Zertifikate
+aus. Zwei Clients werden dafür häufig verwendet.
 
 ::: tabs
 
 === Certbot
 
-Certbot is the most widely used ACME client. Follow the upstream
-[Certbot installation instructions](https://certbot.eff.org/instructions){target=_blank},
-select your distribution and the matching webserver plugin in the
-selector and complete the install. Once installed, request a certificate
-by replacing `<webserver>` with `nginx` or `apache` and
-`zammad.example.com` with your subdomain:
+Certbot ist der am häufigsten verwendete ACME-Client. Befolgen Sie die
+[Certbot-Installationsanleitung](https://certbot.eff.org/instructions){target=_blank},
+wählen Sie Ihre Distribution und das passende Webserver-Plugin in der
+Auswahl aus und schließen Sie die Installation ab. Nach der Installation fordern Sie ein Zertifikat an,
+indem Sie `<WEBSERVER>` durch `nginx` oder `apache` und
+`zammad.example.com` durch Ihre Subdomain ersetzen:
 
 ```sh
-sudo certbot --<webserver> -d zammad.example.com
+sudo certbot --<WEBSERVER> -d zammad.example.com
 ```
 
-Certbot will issue the certificate, ask whether to redirect HTTP to HTTPS
-(choose `[1] not redirect` if you plan to use the Zammad sample
-configuration, which already handles the redirect, otherwise choose
-`[2] redirect`) and arrange automatic renewal once the certificate has
-less than 30 days of validity remaining.
+Certbot stellt das Zertifikat aus und fragt, ob HTTP auf HTTPS umgeleitet werden soll
+(wählen Sie `[1] not redirect`, wenn Sie die Zammad-Beispielkonfiguration
+verwenden möchten, die die Umleitung bereits übernimmt; andernfalls wählen Sie
+`[2] redirect`) und richten Sie die automatische Verlängerung ein, sobald das Zertifikat
+weniger als 30 Tage gültig ist.
 
 === acme.sh
 
-[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} is
-a lightweight shell-based ACME client and an alternative to Certbot, but
-it no longer uses Let's Encrypt by default. Set the default CA to Let's
-Encrypt before issuing a certificate:
+[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} ist
+ein schlanker, shellbasierter ACME-Client und eine Alternative zu Certbot,
+verwendet jedoch standardmäßig nicht mehr Let’s Encrypt. Legen Sie die Standard-Zertifizierungsstelle auf Let’s
+Encrypt fest:
 
 ```sh
 acme.sh --set-default-ca --server letsencrypt
 ```
 
-Issue the certificate by replacing `<webserver-plugin>` with `nginx`,
-`apache` or `standalone` and `zammad.example.com` with your subdomain:
+Stellen Sie das Zertifikat aus, indem Sie `<WEBSERVER-plugin>` durch `nginx`,
+`apache` oder `standalone` sowie `zammad.example.com` durch Ihre Subdomain ersetzen:
 
 ```sh
-acme.sh --issue --<webserver-plugin> -d zammad.example.com
+acme.sh --issue --<WEBSERVER-plugin> -d zammad.example.com
 ```
 
-Install the certificate to a directory of your choice (e.g.
-`/etc/ssl/private/`) and reload the webserver after each renewal.
-Replace `<webserver-service>` in the command below with the matching
-systemd service name (`nginx`, `apache2` or `httpd`):
+Installieren Sie das Zertifikat in einem Verzeichnis Ihrer Wahl (z.B.
+`/etc/ssl/private/`) und starten Sie den Webserver nach jeder Erneuerung neu.
+Ersetzen Sie `<WEBSERVER-service>` im folgenden Befehl durch den entsprechenden
+systemd-Dienstnamen (`nginx`, `apache2` oder `httpd`):
 
 ```sh
 acme.sh --install-cert -d zammad.example.com \
     --cert-file      /etc/ssl/private/zammad.example.com.pem  \
     --key-file       /etc/ssl/private/zammad.example.com.key  \
     --fullchain-file /etc/ssl/private/zammad.example.com.full.pem \
-    --reloadcmd     "sudo systemctl force-reload <webserver-service>"
+    --reloadcmd     "sudo systemctl force-reload <WEBSERVER-service>"
 ```
 
-See the
-[acme.sh documentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}
-for further use cases.
+Weitere Anwendungsbeispiele finden Sie in der
+[acme.sh-Dokumentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}.
 
 :::
 
-## Adjust the Webserver Configuration
+## Anpassen der Webserver-Konfiguration
 
 <!-- markdownlint-disable MD036 -->
 
@@ -277,51 +282,57 @@ the [environment variables page](/en/reference/environment-variables) to
 change them.
 
 ::: warning
-Do not expose Zammad directly to the internet. Zammad only provides
-plain HTTP and would be reachable without authentication.
+Machen Sie Zammad nicht direkt erreichbar aus dem Internet. Zammad unterstützt lediglich
+plain HTTP und wäre ohne Authentifizierung erreichbar.
 :::
 
 ::::
 
 <!-- markdownlint-enable MD036 -->
 
-Now visit your configured Zammad domain in a browser to reach the Zammad
-UI. If you don't see Zammad's setup wizard or Zammad UI at all, check the
-[Troubleshooting section](#troubleshooting) below.
+Rufen Sie nun Ihre konfigurierte Zammad-Domain in einem Browser auf, um zur
+Zammad-Benutzeroberfläche zu gelangen. Falls der
+Zammad-Einrichtungsassistent oder die Zammad-Benutzeroberfläche überhaupt
+nicht angezeigt wird, lesen Sie bitte den Abschnitt
+[Fehlerbehebung](#fehlerbehebung) weiter unten.
 
 ## Fehlerbehebung
 
-### Default Landing Page Instead of Zammad
+### Standard Landing-Page anstelle von Zammad
 
-If you reach the webserver's default landing page rather than Zammad, your
-`zammad.conf` may be overruled by another config file. Check the vhost
-directory for `000-default.conf` or `default.conf` and disable it.
+Falls Sie statt Zammad die Standard-Startseite des Webservers sehen, wird
+Ihre `zammad.conf` Datei möglicherweise durch eine andere
+Konfigurationsdatei überschrieben. Überprüfen Sie das vhust-Verzeichnis auf
+die Dateien `000-default.conf` oder `default.conf` und deaktivieren Sie
+diese.
 
-### DNS Not Resolving
+### DNS-Auflösung fehlgeschlagen
 
-If the subdomain does not resolve, double-check the DNS records for your
-domain and wait for them to propagate. Replace the `zammad.example.com` in
-the following command with your configured domain of Zammad and check if the
-domain points to the right server:
+Sollte die Subdomain nicht aufgelöst werden, überprüfen Sie bitte noch
+einmal die DNS-Einträge Ihrer Domain und warten Sie, bis diese übernommen
+wurden. Ersetzen Sie im folgenden Befehl die Angaben `zammad.example.com`
+durch Ihre konfigurierte Zammad-Domain und überprüfen Sie, ob die Domain auf
+den richtigen Server verweist:
 
 ```sh
 host zammad.example.com
 ```
 
-### CSRF Token Errors
+### Fehler CSRF-Token
 
-If users cannot log in because of CSRF token errors, your webserver chain
-may not pass the original connection type to Zammad. Tell the proxy directly
-that the connection is HTTPS.
+Falls sich Benutzer aufgrund von CSRF-Token-Fehlern nicht anmelden können,
+gibt Ihre Webserver-Kette den ursprünglichen Verbindungstyp möglicherweise
+nicht an Zammad weiter. Weisen Sie den Proxy an, dass es sich um eine
+HTTPS-Verbindung handelt.
 
 Nginx
-: Within your virtual host configuration, locate
-  `proxy_set_header X-Forwarded-Proto` and replace `$scheme` with
-  `https`.
+: Suchen Sie in Ihrer Virtual-Host-Konfiguration die Zeile
+ ` proxy_set_header X-Forwarded-Proto` und ersetzen Sie `$scheme` durch
+ ` https`.
 
 Apache 2
-: Within your virtual host configuration, just above the first
-  `ProxyPass` directive, insert:
+: Fügen Sie in Ihrer Virtual-Host-Konfiguration direkt über der ersten
+  `ProxyPass`-Direktive folgendes ein:
 
   ```apache
   RequestHeader set X_FORWARDED_PROTO 'https'

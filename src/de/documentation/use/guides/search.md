@@ -29,8 +29,8 @@ at least view or read permissions, grouped by type like users and
 tickets. Selecting one of those results opens the item as tab in the
 taskbar.
 
-![Screenshot shows search results in primary
-navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot zeigt Suchergebnisse in der primären
+Navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
 Wenn Sie [[Enter]] drücken oder auf `Erweiterte Suche` klicken, öffnet
 Zammad die Erweiterte Suche als Tab in der Navigations-Seitenleiste. Dort

@@ -10,11 +10,13 @@ title: Übersichten
 
 ## Einführung
 
-Overviews are a core component of Zammad. Open them by clicking the
-`Overviews` button in the primary navigation or use the keyboard shortcut
-[[o]]. You can think of overviews as a kind of email inbox with different
-folders. Use them to find new tickets that you want to process and to keep
-track of tickets that have not yet been completed.
+Übersichten sind eine Kernkomponente von Zammad. Sie können sie öffnen,
+indem Sie auf die Schaltfläche `Übersichten` in der primären Navigation
+klicken oder das Tastaturkürzel [[o]] verwenden. Sie können sich die
+Übersichten wie eine Art E-Mail-Posteingang mit verschiedenen Ordnern
+vorstellen. Verwenden Sie sie, um neue Tickets zu finden, die Sie bearbeiten
+möchten, und um den Überblick über Tickets zu behalten, die noch nicht
+abgeschlossen sind.
 
 Je nachdem, wie Ihr System konfiguriert ist und was Ihr Zammad-Administrator
 eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:
@@ -90,10 +92,10 @@ Prioritäten](/screenshots/documentation/use/overviews/priorities.png)
 
 ### Ein Ticket öffnen
 
-Open a ticket by simply clicking on the row. This opens the ticket as a tab
-in your taskbar and shows you the ticket detail view. If this ticket is
-already present in your taskbar, it activates this tab instead of opening a
-duplicate tab.
+Öffnen Sie ein Ticket, indem Sie einfach auf die Zeile klicken. Dadurch
+öffnet sich das Ticket als Tab in der Taskleiste und zeigt Ihnen die Ticket
+Detailansicht. Wenn dieses Ticket bereits in Ihrer Taskleiste vorhanden ist,
+wird der entsprechende Tab aktiviert, anstatt einen doppelten Tab zu öffnen.
 
 Wenn eine Übersicht mehr als ein Ticket enthält und Sie eines der Tickets
 öffnen, finden Sie im Header der Ticket Detailansicht Pfeile, um zum
@@ -101,21 +103,21 @@ nächsten/vorherigen Ticket dieser Übersicht zu wechseln.
 
 ### Mehrfach-Aktionen
 
-Perform bulk actions by selecting multiple tickets and either use the bulk
-action flyout or drag them with the mouse to invoke the bulk action
-overlay. You can find more information about that in the [Bulk
-Actions](../advanced-features#bulk-actions) section in the advanced features
-page.
+Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und
+entweder das Seitenmenü verwenden oder die Tickets mit der Maus ziehen, um
+die Einblendung für die Mehrfach-Aktion aufzurufen. Weitere Informationen
+dazu finden Sie im Abschnitt
+[Mehrfach-Aktionen](../advanced-features#mehrfach-aktionen) auf der Seite
+mit den erweiterten Funktionen.
 
 ### Übersichten neu anordnen
 
-If the order of the overviews doesn't reflect your working process or you
-just like to have a different order, you can re-arrange them for your
-account. Use the `reorder items` button at the very top of the second level
-navigation, which opens your [profile
-settings](/en/documentation/use/user-profile#overviews) where you can define
-a custom order for your overviews. To change the order, simply drag & drop
-them by clicking the handles on the left side.
+Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht
+oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr
+Konto neu anordnen. Verwenden Sie die Schaltfläche `Elemente neu anordnen`
+ganz oben in der sekundären Navigation, die Ihre
+[Profileinstellungen](/de/documentation/use/user-profile#ubersichten)
+öffnet, wo Sie eine benutzerdefinierte Reihenfolge festlegen können.
 
 Wenn Ihr Administrator die Reihenfolge ändert, bleibt Ihre individuelle
 Reihenfolge erhalten. Sie können wieder zur Reihenfolge Ihres Administrators

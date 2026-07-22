@@ -8,15 +8,18 @@ title: 'Arbeiten an Tickets'
 Sie haben den Weg zu einem existierenden Ticket gefunden, herzlichen
 Glückwunsch! Schauen wir uns nun an, was Sie alles tun können.
 
-Generally, working on existing tickets means keeping up with a customer
-correspondence in a thread/conversation in the ticket detail view. Any time
-you open a ticket, a new tab will appear in your taskbar. To close a tab (in
-the sense of remove it from the taskbar, not setting the ticket state to
-closed), just click the ::X:: button in the tab. Zammad automatically saves
-your changes in opened ticket tabs, no matter if you already applied the
-changes or just edited things and switched to somewhere else. This means it
-is no problem to create a new ticket while editing an existing one. Simply
-switch back to the other tab.
+Im Allgemeinen bedeutet die Bearbeitung bestehender Tickets, dass Sie die
+Kundenkorrespondenz in Form eines Verlaufs in der Ticket-Detailansicht
+führen. Jedes Mal, wenn Sie ein Ticket öffnen, erscheint ein neuer Tab in
+Ihrer Taskleiste auf der linken Seite. Um einen Tab zu schließen (im Sinne
+von aus der Navigationsleiste entfernen, nicht den Status des Tickets auf
+geschlossen setzen), klicken Sie einfach auf die ::X:: Schaltfläche im
+Tab. Zammad speichert automatisch Ihre Änderungen in geöffneten Tabs,
+unabhängig davon, ob Sie die Änderungen bereits angewendet haben oder nur
+etwas bearbeitet haben und zu einem anderen Tab gewechselt sind. Es ist
+deshalb kein Problem, ein neues Ticket zu erstellen, während Sie an einem
+bestehenden Ticket arbeiten. Wechseln Sie anschließend einfach zurück in den
+anderen Tab.
 
 Für die meisten Änderungen (außer z.B. Tags oder Titel umbenennen) ist eine
 explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die
@@ -139,9 +142,10 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
   folgenden Aktionen:
   - **Interne Notiz hinzufügen**: Öffnet das Antwortformular, in dem Sie
     eine Notiz verfassen können.
-  - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
-    the article list. If there are unread articles, the **Scroll to end
-    button** displays a badge and changes to **Scroll to unread article**.
+  - **Zum Start scrollen** und **Zum Ende scrollen**: Springen Sie zum
+    Anfang oder zum Ende der Artikel-Liste. Falls ungelesene Artikel
+    vorhanden sind, zeigt die **Zum Ende scrollen**-Schaltfläche einen
+    Zähler an und ändert sich zu **Zu ungelesenem Artikel scrollen**.
   - Die Symbolleiste wird angezeigt, sobald die Liste der Artikel größer ist
     als Ihre Ansicht, damit wichtige Funktionen weiterhin zugänglich
     bleiben.

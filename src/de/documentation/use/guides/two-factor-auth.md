@@ -83,8 +83,8 @@ Authentication API im Browser, um Ihre Identität zu bestätigen. Sie können
 mehrere Hardware- oder Software-Sicherheits-Schlüssel in Ihrem Zammad-Konto
 hinterlegen und für die Anmeldung nutzen.
 
-Initially, you will be presented with an empty flyout instructing you to
-**Set Up** your first key.
+Zunächst wird Ihnen ein leeres Seitenmenü angezeigt, in dem Sie aufgefordert
+werden, das **Einrichten** Ihres ersten Schlüssel zu starten.
 
 ![Screenshots zeigt die Konfiguration der
 Sicherheits-Schlüssel-Authentifizierung](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
