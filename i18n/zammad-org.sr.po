@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-21 16:15+0200\n"
+"POT-Creation-Date: 2026-07-22 06:57+0000\n"
 "PO-Revision-Date: 2026-07-10 14:34+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
@@ -247,6 +247,18 @@ msgstr "Без резултата за"
 #, no-wrap
 msgid "Reset search"
 msgstr "Поништи претрагу"
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr "/sr/link/to/site"
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr "Назив сајта"
 
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
@@ -28327,6 +28339,98 @@ msgstr ""
 "<<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json\n"
 "\n"
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, fuzzy, no-wrap
+msgid "Show/Trigger"
+msgstr "Prikaži/Pokreni"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, fuzzy
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr "`POST`-zahtev poslat: `/api/v1/tickets/{ticket id}/summarize`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, fuzzy
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+"Endpoint za sažimanje karata koristi `POST` jer se kreiranje i dohvaćanje "
+"sažetka odvijaju u jednoj operaciji:"
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, fuzzy
+msgid "If a summary exists, it is returned."
+msgstr "Ako sažetak postoji, vraća se."
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, fuzzy
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+"Ako sažetak ne postoji, kreiranje je pokrenuto u pozadini (async zadatak)."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, fuzzy
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+"Korišćenje `GET` bi bilo neispravno jer poziv takođe može kreirati podatke. "
+"Ako želite da sažetak postoji, pozovite endpoint; ako još nije spreman, "
+"pokušajte ponovo nakon najmanje 30 sekundi."
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, fuzzy
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+"Primer odgovora ako je generisanje novog sažetka upravo pokrenuto zahtevom:"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, fuzzy, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<</@/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, fuzzy
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+"Primer odgovora za postojeći sažetak (npr. za istu kartu kao iznad nakon "
+"čekanja da se kreiranje završi):"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, fuzzy, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<</@/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, fuzzy, no-wrap
@@ -28581,98 +28685,6 @@ msgstr ""
 "Odgovor:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, fuzzy, no-wrap
-msgid "Show/Trigger"
-msgstr "Prikaži/Pokreni"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, fuzzy
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr "`POST`-zahtev poslat: `/api/v1/tickets/{ticket id}/summarize`"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, fuzzy
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-"Endpoint za sažimanje karata koristi `POST` jer se kreiranje i dohvaćanje "
-"sažetka odvijaju u jednoj operaciji:"
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, fuzzy
-msgid "If a summary exists, it is returned."
-msgstr "Ako sažetak postoji, vraća se."
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, fuzzy
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-"Ako sažetak ne postoji, kreiranje je pokrenuto u pozadini (async zadatak)."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, fuzzy
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-"Korišćenje `GET` bi bilo neispravno jer poziv takođe može kreirati podatke. "
-"Ako želite da sažetak postoji, pozovite endpoint; ako još nije spreman, "
-"pokušajte ponovo nakon najmanje 30 sekundi."
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, fuzzy
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-"Primer odgovora ako je generisanje novog sažetka upravo pokrenuto zahtevom:"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, fuzzy, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<</@/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, fuzzy
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-"Primer odgovora za postojeći sažetak (npr. za istu kartu kao iznad nakon "
-"čekanja da se kreiranje završi):"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, fuzzy, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<</@/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 
 #. type: Plain text
@@ -29171,18 +29183,6 @@ msgid ""
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr "/sr/link/to/site"
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr "Назив сајта"
 
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
