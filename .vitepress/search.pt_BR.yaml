@@ -1,19 +1,19 @@
 ---
 translations:
   button:
-    buttonAriaLabel: Search
-    buttonText: Search
+    buttonAriaLabel: Pesquisar
+    buttonText: Pesquisar
   modal:
-    backButtonTitle: 'Close search'
-    displayDetails: 'Display detailed list'
+    backButtonTitle: 'Fechar pesquisa'
+    displayDetails: 'Exibir lista detalhada'
     footer:
-      closeKeyAriaLabel: escape
-      closeText: 'to close'
-      navigateDownKeyAriaLabel: 'down arrow'
-      navigateText: 'to navigate'
-      navigateUpKeyAriaLabel: 'up arrow'
+      closeKeyAriaLabel: esc
+      closeText: 'para fechar'
+      navigateDownKeyAriaLabel: 'seta para baixo'
+      navigateText: 'para navegar'
+      navigateUpKeyAriaLabel: 'seta para cima'
       selectKeyAriaLabel: enter
-      selectText: 'to select'
-    noResultsText: 'No results for'
-    resetButtonTitle: 'Reset search'
+      selectText: 'para selecionar'
+    noResultsText: 'Nenhum resultado para'
+    resetButtonTitle: 'Redefinir pesquisa'
   user: 'Use Zammad'

@@ -1,36 +1,36 @@
 ---
 features:
   - 
-    details: "Discover how Zammad's professional services can help you succeed."
+    details: 'Descubra como os serviços profissionais do Zammad podem ajudá-lo a ter sucesso.'
     link: https://zammad.com/en/services/professional-services
-    title: 'Professional Services'
+    title: 'Serviços profissionais'
   - 
-    details: 'Zammad comes with a lot of cool features! Check them out here!'
+    details: 'O Zammad vem com muitos recursos legais! Confira-os aqui!'
     link: https://zammad.com/en/product/features
-    title: 'Features Overview'
+    title: 'Visão geral de recursos'
   - 
-    details: 'Get to know the team and our passion behind creating Zammad.'
+    details: 'Conheça a equipe e nossa paixão por trás da criação do Zammad.'
     link: https://zammad.com/en/company
-    title: 'About Us'
+    title: 'Sobre nós'
 hero:
   actions:
     - 
-      link: /en/get-started/get-zammad
-      text: 'Getting started'
+      link: /pt_BR/get-started/get-zammad
+      text: Começando
       theme: brand
     - 
-      link: /en/documentation/introduction
-      text: Documentation
+      link: /pt_BR/documentation/introduction
+      text: Documentação
       theme: alt
     - 
-      link: /en/contribute/contribute
-      text: Contribute
+      link: /pt_BR/contribute/contribute
+      text: Contribuir
       theme: alt
   image:
-    alt: 'Zammad logo'
+    alt: 'Logo do Zammad'
     src: /assets/logo.svg
   name: 'Zammad Hub'
-  tagline: 'Setup, manage and use Zammad.'
-  text: 'For Users and Administrators'
+  tagline: 'Configure, gerencie e use o Zammad.'
+  text: 'Para usuários e administradores'
 layout: home
 ---

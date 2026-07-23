@@ -12,154 +12,162 @@ title: FAQs
 
 ## Geral
 
-### How to find tickets?
+### Como encontrar tickets?
 
-It depends on your use case. Zammad offers many possibilities to search and
-access tickets.
+Depende do seu caso de uso. O Zammad oferece muitas possibilidades para
+pesquisar e acessar tickets.
 
-If you **search for a specific ticket or content**, the search is the best
-way. You can find the search field in the top area of the navigation sidebar
-or activate it by using the keyboard shortcut [[s]]. The search even shows
-the tickets you recently closed from your taskbar, maybe you can already
-find what you are searching for there. There is a separate [search
-page](./guides/search) for more information.
+Se você **pesquisa por um ticket ou conteúdo específico**, a pesquisa é a
+melhor forma. Você encontra o campo de pesquisa na área superior da barra
+lateral de navegação ou o ativa usando o atalho de teclado [[s]]. A pesquisa
+até mostra os tickets que você fechou recentemente na sua barra de tarefas;
+talvez você já encontre o que procura ali. Há uma [página de
+pesquisa](./guides/search) separada com mais informações.
 
-If you want to **start working on tickets**, take a look at [the
-overviews](./guides/overviews), which are basically a list of current
-tickets. These overviews should put you in a position where you can easily
-distinguish between what needs to be done, what is in progress and what is
-currently on hold. In case you face issues with these overviews, your Zammad
-admin should be able to help.
+Se você quer **começar a trabalhar em tickets**, dê uma olhada nas [visões
+gerais](./guides/overviews), que basicamente são uma lista dos tickets
+atuais. Essas visões gerais devem colocá-lo em uma posição onde você pode
+facilmente distinguir entre o que precisa ser feito, o que está em andamento
+e o que está atualmente pausado. Caso você tenha problemas com essas visões
+gerais, seu administrador do Zammad deve conseguir ajudar.
 
-### How to get notified for ticket changes?
+### Como ser notificado sobre alterações de ticket?
 
-Adjust the [notification settings in your
-profile](user-profile#notifications). You can distinguish between the action
-(e.g. ticket creation), the notification channel (email and/or browser),
-your relation to the ticket (e.g. if you are the owner) and limit the
-notifications to a specific group.
+Ajuste as [configurações de notificação no seu
+perfil](user-profile#notifications). Você pode diferenciar entre a ação (por
+exemplo, criação de ticket), o canal de notificação (email e/ou navegador),
+sua relação com o ticket (por exemplo, se você é o responsável) e limitar as
+notificações a um grupo específico.
 
-### Why is the ticket open again? I closed it already
+### Por que o ticket está aberto de novo? Eu já o fechei
 
-Depending on the settings of your Zammad instance, the reasons can
-differ. But usually the reason is that a customer replied to the ticket
-after it was set to closed. Another reason could be that a colleague
-re-opened it. If you can't see an article which fits to the description, you
-can take a look at the ticket history to find out more. Do so by opening the
-::a:: menu in the ticket sidebar tab and select **History**.
+Dependendo das configurações da sua instância do Zammad, os motivos podem
+variar. Mas geralmente o motivo é que um cliente respondeu ao ticket depois
+que ele foi definido como fechado. Outro motivo pode ser que um colega o
+reabriu. Se você não conseguir ver um artigo que corresponda a essa
+descrição, pode dar uma olhada no histórico do ticket para descobrir
+mais. Faça isso abrindo o menu ::a:: na aba da barra lateral do ticket e
+selecionando **History**.
 
-Your Zammad admin can adjust what should happen when a customer replies
-after a ticket got closed.
+Seu administrador do Zammad pode ajustar o que deve acontecer quando um
+cliente responde depois que um ticket foi fechado.
 
-### What does the customer see in the ticket?
+### O que o cliente vê no ticket?
 
-By default, customers only have a reduced interface. They can create
-tickets, view their own tickets (and maybe their colleague's too, depending
-on the setting) and access their profile settings. Even the ticket detail
-view only includes relevant elements for the customer. Elements, which have
-an internal purpose (like group, priority, internal notes, are not visible
-to the customer.
+Por padrão, os clientes só têm uma interface reduzida. Eles podem criar
+tickets, ver seus próprios tickets (e talvez os de seus colegas também,
+dependendo da configuração) e acessar as configurações do perfil. Mesmo a
+visualização de detalhes do ticket inclui apenas elementos relevantes para o
+cliente. Elementos que têm um propósito interno (como grupo, prioridade,
+notas internas) não são visíveis para o cliente.
 
 ::: warning
-The explanation above is based on the default Zammad settings. Be aware that the configuration of your system might be
-different. If in doubt, you should ask your admin.
+A explicação acima é baseada nas configurações padrão do Zammad. Esteja ciente de que a configuração do seu sistema pode ser
+diferente. Em caso de dúvida, você deve perguntar ao seu administrador.
 :::
 
-### I can't log in. What can I do?
+### Não consigo fazer login. O que posso fazer?
 
-- Forgot your password? Try resetting it in the login screen under the
-  **Forgot password?** link by providing your email address.
-- Lost the possibility to provide your 2nd factor for
-  2-factor-authentication (2FA)? Use a recovery code and set up a new 2FA
-  method. See [2FA page](./guides/two-factor-auth) for more information.
-- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This
-  also applies if your problem is not mentioned here.
+- Esqueceu sua senha? Tente redefini-la na tela de login, no link **Forgot
+  password?**, informando seu endereço de email.
+- Perdeu a possibilidade de fornecer seu segundo fator para autenticação de
+  dois fatores (2FA)? Use um código de recuperação e configure um novo
+  método de 2FA. Veja a [página de 2FA](./guides/two-factor-auth) para mais
+  informações.
+- Perdeu seus códigos de recuperação de 2FA? Entre em contato com seu
+  administrador do Zammad. Isso também se aplica se seu problema não estiver
+  mencionado aqui.
 
-### How can I use keyboard shortcuts?
+### Como usar atalhos de teclado?
 
-Just use them! You can find an overview of the available shortcuts by
-pressing [[?]] on your keyboard or open the overview from the [avatar
-menu](user-profile#avatar-menu) (click on your avatar in the bottom left
-corner and select **Keyboard shortcuts**).
+Basta usá-los! Você pode encontrar uma visão geral dos atalhos disponíveis
+pressionando [[?]] no seu teclado ou abrir a visão geral no [menu do
+avatar](user-profile#avatar-menu) (clique no seu avatar no canto inferior
+esquerdo e selecione **Keyboard shortcuts**).
 
-Some of them depend on the location you are or action you perform
-(e.g. being in the editor or in the ticket detail view).
-
-### How to switch between dark and light mode for the user interface?
-
-You can switch between light, dark and automatic mode (tries to adapt to
-your browser) in the [avatar menu](user-profile#avatar-menu). Open it by
-clicking your avatar in the bottom left corner and switch the toggle to the
-desired state or use the keyboard shortcut [[d]]. If no input field is
-activated, it cycles between the different modes.
-
-## User Profile
-
-### How to change my profile/avatar image?
-
-Go to the [avatar section](user-profile#avatar) in you profile settings by
-opening the avatar menu in the bottom left corner and select **Profile
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
-
-### How to change the language of the Zammad user interface?
-
-Go to the [language section](user-profile#language) in you profile settings
-by opening the avatar menu in the bottom left corner and select **Profile
-settings**.
-
-### What should I do before going on vacation?
-
-Go to the [out of office section](user-profile#out-of-office) in you profile
-settings by opening the avatar menu in the bottom left corner and select
-**Profile settings**. There you can define a replacement agent.
-
-### How to adjust the order of the overviews?
-
-Read on in the [overview guide](guides/overviews#reorder-overviews).
-
-## Work on Tickets
-
-### How to assign somebody to a ticket?
-
-In the ticket sidebar tab, you can find an **Owner** field. Choose from the
-offered agents and make sure to leave an internal note so the other agent
-knows what it is about.
-
-If you only have a question or need some information, you could also just
-[mention a colleague](advanced-features#mention-a-user) in an article by
-using [[@]][[@]] and raise your question.
-
-### How to delete a ticket?
-
-First of all, tickets can't be deleted by agents. This is done for the
-reason of transparency and to prevent deletion by accident and arbitrary
-deletion. However, if customers want their data to be deleted (e.g. due to a
-GDPR deletion request), this can be done in Zammad. Contact your Zammad
-admin and ask to execute the deletion job.
-
-### How to use text templates?
-
-Use Zammad's [text modules](advanced-features#text-modules) by typing
-[[:]][[:]] in the article editor or choose it from the editor toolbar. If
-you need to have additional modules, ask your Zammad admin to add it for
-you.
-
-### How to ask a colleague for help in the ticket?
-
-The best way to do this is to [mention a
-colleague](advanced-features#mention-a-user) in an article by using
-[[@]][[@]] and raise your question. This triggers a notification for your
-colleague. Depending on your internal processes, switching the owner of the
-ticket could also be a possible option.
-
-### How to cite the customer's email or parts of it?
-
-To partially or selective cite the article or parts of it, mark the text,
-you want to cite, and click on the `Reply` button next to the article. This
-can be done even multiple times (e.g. to answer different parts of the
+Alguns deles dependem do local em que você está ou da ação que está
+realizando (por exemplo, estar no editor ou na visualização de detalhes do
 ticket).
 
-The citation of the whole article depends on how your Zammad is
-configured. If you want to apply changes to this behavior, ask your admin to
-change it.
+### Como alternar entre o modo escuro e claro para a interface do usuário?
+
+Você pode alternar entre os modos claro, escuro e automático (tenta se
+adaptar ao seu navegador) no [menu do
+avatar](user-profile#avatar-menu). Abra-o clicando no seu avatar no canto
+inferior esquerdo e mude a chave para o estado desejado, ou use o atalho de
+teclado [[d]]. Se nenhum campo de entrada estiver ativado, ele alterna entre
+os diferentes modos.
+
+## Perfil do usuário
+
+### Como alterar minha imagem de perfil/avatar?
+
+Vá até a [seção do avatar](user-profile#avatar) nas configurações do seu
+perfil, abrindo o menu do avatar no canto inferior esquerdo e selecionando
+**Profile settings**. Ali você pode enviar uma imagem, capturar uma foto (se
+seu dispositivo tiver câmera) ou excluir imagens já presentes.
+
+### Como alterar o idioma da interface do usuário do Zammad?
+
+Vá até a [seção de idioma](user-profile#language) nas configurações do seu
+perfil, abrindo o menu do avatar no canto inferior esquerdo e selecionando
+**Profile settings**.
+
+### O que devo fazer antes de sair de férias?
+
+Vá até a [seção de fora do escritório](user-profile#out-of-office) nas
+configurações do seu perfil, abrindo o menu do avatar no canto inferior
+esquerdo e selecionando **Profile settings**. Ali você pode definir um
+agente substituto.
+
+### Como ajustar a ordem das visões gerais?
+
+Continue lendo no [guia de visões
+gerais](guides/overviews#reorder-overviews).
+
+## Trabalhar em tickets
+
+### Como atribuir alguém a um ticket?
+
+Na aba da barra lateral do ticket, você encontra um campo **Owner**. Escolha
+entre os agentes oferecidos e certifique-se de deixar uma nota interna para
+que o outro agente saiba do que se trata.
+
+Se você só tem uma pergunta ou precisa de alguma informação, também pode
+simplesmente [mencionar um colega](advanced-features#mention-a-user) em um
+artigo usando [[@]][[@]] e fazer sua pergunta.
+
+### Como excluir um ticket?
+
+Antes de tudo, os tickets não podem ser excluídos por agentes. Isso é feito
+por motivos de transparência e para evitar exclusão acidental e
+arbitrária. No entanto, se os clientes quiserem que seus dados sejam
+excluídos (por exemplo, devido a uma solicitação de exclusão da LGPD/GDPR),
+isso pode ser feito no Zammad. Entre em contato com seu administrador do
+Zammad e peça para executar a tarefa de exclusão.
+
+### Como usar modelos de texto?
+
+Use os [módulos de texto](advanced-features#text-modules) do Zammad
+digitando [[:]][[:]] no editor de artigo ou escolhendo-o na barra de
+ferramentas do editor. Se precisar de módulos adicionais, peça ao seu
+administrador do Zammad para adicioná-los para você.
+
+### Como pedir ajuda a um colega no ticket?
+
+A melhor forma de fazer isso é [mencionar um
+colega](advanced-features#mention-a-user) em um artigo usando [[@]][[@]] e
+fazer sua pergunta. Isso aciona uma notificação para seu colega. Dependendo
+dos seus processos internos, alternar o responsável do ticket também pode
+ser uma opção possível.
+
+### Como citar o email do cliente ou partes dele?
+
+Para citar parcial ou seletivamente o artigo ou partes dele, marque o texto
+que deseja citar e clique no botão `Reply` ao lado do artigo. Isso pode ser
+feito até várias vezes (por exemplo, para responder a diferentes partes do
+ticket).
+
+A citação do artigo inteiro depende de como seu Zammad está configurado. Se
+você quiser aplicar alterações a esse comportamento, peça ao administrador
+para alterá-lo.

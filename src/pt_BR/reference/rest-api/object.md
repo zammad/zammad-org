@@ -6,18 +6,18 @@ title: Objeto
 # Objeto
 
 ::: danger
-Adjusting objects via API can cause serious issues with your instance.
-Proceed with absolute caution and ensure to adjust any of Zammad's
-default fields.
+Ajustar objetos via API pode causar problemas sérios na sua instância.
+Prossiga com extrema cautela e certifique-se de ajustar quaisquer
+campos padrão do Zammad.
 
-If you want to hide fields, consider Zammad's core workflows instead!
+Se você quiser ocultar campos, considere usar os core workflows do Zammad em vez disso!
 :::
 
-## List
+## Listar
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes`
+Solicitação `GET` enviada: `/api/v1/object_manager_attributes`
 
 ::: details
 
@@ -25,11 +25,11 @@ Required permission: `admin.object`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes/{id}`
+Solicitação `GET` enviada: `/api/v1/object_manager_attributes/{id}`
 
 ::: details
 
@@ -37,11 +37,11 @@ Required permission: `admin.object`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`POST`-Request sent: `/api/v1/object_manager_attributes`
+Solicitação `POST` enviada: `/api/v1/object_manager_attributes`
 
 ### Boolean
 
@@ -128,7 +128,7 @@ Required permission: `admin.object`
 :::
 ::::
 
-### Text
+### Texto
 
 ::::: details
 
@@ -140,15 +140,15 @@ Required permission: `admin.object`
 
 ::: tip
 
-Zammad input fields can have 4 different types:
+Os campos de entrada do Zammad podem ter 4 tipos diferentes:
 
 - `email`
 - `tel`
 - `text`
-- `url` (does not support link-templates)
+- `url` (não suporta templates de link)
 
-Depending on the chosen input type, Zammad expects different formats of
-data. E.g.: email demands an email address to be provided.
+Dependendo do tipo de entrada escolhido, o Zammad espera formatos diferentes de
+dados. Por exemplo: email exige que um endereço de email seja fornecido.
 :::
 
 === Response
@@ -176,11 +176,11 @@ data. E.g.: email demands an email address to be provided.
 ::::
 
 :::: info
-Please note that above payloads cover ticket objects. This is fine in
-most situations, except if you're looking at the default object
-permissions. This is why we're listing these separate for you to view.
+Observe que os payloads acima cobrem objetos de ticket. Isso está correto na
+maioria das situações, exceto se você estiver olhando para as permissões
+padrão de objeto. É por isso que estamos listando-as separadamente para você visualizar.
 
-The attribute `object` controls which context is being used:
+O atributo `object` controla qual contexto está sendo usado:
 
 - `Ticket`
 - `User`
@@ -208,19 +208,20 @@ The attribute `object` controls which context is being used:
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-Except on the request method, payloads or updating and creating objects are
-identical. For full payload samples thus scroll up to `create_object`.
+Exceto pelo método de solicitação, os payloads para atualizar e criar
+objetos são idênticos. Para exemplos completos de payload, role para cima
+até `create_object`.
 
-Zammad will return two attributes during update: `data_option` and
-`data_option_new`. The first attribute contains the current active values
-and the second one the new to be values (they'll become active after
-executing the database migrations).
+O Zammad retornará dois atributos durante a atualização: `data_option` e
+`data_option_new`. O primeiro atributo contém os valores atualmente ativos,
+e o segundo, os novos valores que serão ativados (eles se tornarão ativos
+após executar as migrações do banco de dados).
 
-`PUT`-Request sent: `/api/v1/object_manager_attributes/{id}`
+Solicitação `PUT` enviada: `/api/v1/object_manager_attributes/{id}`
 
 ::::: details
 
@@ -231,9 +232,9 @@ executing the database migrations).
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Ensure to provide `data_option`. Zammad is very picky if you leave out
-this attribute. Please note that changing the object type _after_
-creation is not possible.
+Certifique-se de fornecer `data_option`. O Zammad é bastante exigente se você omitir
+esse atributo. Observe que alterar o tipo de objeto _após_
+a criação não é possível.
 :::
 
 === Response
@@ -245,9 +246,9 @@ creation is not possible.
 
 ## Excluir
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`
+Solicitação `DELETE` enviada: `/api/v1/object_manager_attributes/{id}`
 
 ::: details
 
@@ -255,18 +256,19 @@ Required permission: `admin.object`
 
 :::
 
-## Execute Database Migrations
+## Executar migrações do banco de dados
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
 ::: warning
-After executing the database migrations, a restart of Zammad is
-_mandatory_. If not deactivated via
-[auto shutdown setting](/en/reference/rails-commands#auto-shutdown-setting),
-Zammad automatically restarts - expect a short downtime.
+Após executar as migrações do banco de dados, um reinício do Zammad é
+_obrigatório_. Se não desativado via
+[configuração de desligamento automático](/pt_BR/reference/rails-commands#auto-shutdown-setting),
+o Zammad reinicia automaticamente - espere uma pequena indisponibilidade.
 :::
 
-`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`
+Solicitação `POST` enviada:
+`/api/v1/object_manager_attributes_execute_migrations`
 
 ::: details
 

@@ -7,102 +7,104 @@ title: Article
 
 ## Geral
 
-Some attributes of articles might not be straight forward or come with
-fairly many options - below list hopefully helps you on this journey.
+Alguns atributos de artigos podem não ser óbvios ou vir com bastantes opções
+- a lista abaixo esperamos que ajude você nessa jornada.
 
 ### `content_type`
 
-Zammad supports `text/html` for HTML formatted text or `text/plain` for
-plain text. This allows you to have better formatting options if you need
-them.
+O Zammad suporta `text/html` para texto formatado em HTML ou `text/plain`
+para texto simples. Isso permite ter melhores opções de formatação, se
+necessário.
 
-Zammad web UI usually uses `text/html`.
+A interface web do Zammad geralmente usa `text/html`.
 
 ### `type`
 
-Zammad supports a huge number of article types. Below list may be incomplete
-depending on your instance and possibly installed add-ons / custom changes.
+O Zammad suporta um grande número de tipos de artigo. A lista abaixo pode
+estar incompleta, dependendo da sua instância e possíveis add-ons/alterações
+personalizadas instaladas.
 
-If not stated otherwise, all article types below are **communication
-articles** and thus affecting SLA calculation in Zammad defaults.
+Se não indicado de outra forma, todos os tipos de artigo abaixo são
+**artigos de comunicação** e, portanto, afetam o cálculo de SLA nos padrões
+do Zammad.
 
-The difference is that communication articles provide the option to reply
-automatically. Which actions exactly are available depends on the article
-type and e.g. recipient lists.
+A diferença é que artigos de comunicação oferecem a opção de responder
+automaticamente. Quais ações exatamente estão disponíveis depende do tipo de
+artigo e, por exemplo, das listas de destinatários.
 
 `email`
-: This allows you to create incoming or outgoing email articles.
-  However, this highly depends on the chosen `sender`.
+: isso permite criar artigos de email de entrada ou saída.
+  No entanto, isso depende muito do `sender` escolhido.
 
-`phone` : Indicates phone notes.
+`phone` : indica notas de telefone.
 
 `web`
-: Usually used by customers only. This type is being used when ever your
-  customer uses the web UI to create articles.
+: geralmente usado apenas por clientes. Este tipo é usado sempre que o
+  seu cliente usa a interface web para criar artigos.
 
 `note`
-: When ever a communication does not fit (e.g.: internal notes) choose
-  note. Zammad also uses this article type as default fall back.
+: sempre que uma comunicação não se encaixa (por exemplo: notas internas), escolha
+  note. O Zammad também usa esse tipo de artigo como fallback padrão.
 
-  This is **not a communication article**.
+  Este **não é um artigo de comunicação**.
 
-`sms` : This type is being used for Zammad's SMS integration.
+`sms` : este tipo é usado para a integração de SMS do Zammad.
 
 `chat`
-: This article type is technically a place holder and is only available
+: este tipo de artigo é tecnicamente um placeholder e só está disponível
   via API.
 
 `fax`
-: This article type is technically a place holder and is only available
+: este tipo de artigo é tecnicamente um placeholder e só está disponível
   via API.
 
-`twitter status` & `twitter direct-message`
-: These articles types are used by Zammad's twitter channel. Technically
-  you can use these to automatically respond to existing requests via
-  twitter.
+`twitter status` e `twitter direct-message`
+: esses tipos de artigo são usados pelo canal do Twitter do Zammad. Tecnicamente,
+  você pode usá-los para responder automaticamente a solicitações existentes via
+  Twitter.
 
-`facebook feed post` & `facebook feed comment`
-: These articles types are used by Zammad's Facebook channel. Technically
-  you can use these to automatically respond to existing requests via
+`facebook feed post` e `facebook feed comment`
+: esses tipos de artigo são usados pelo canal do Facebook do Zammad. Tecnicamente,
+  você pode usá-los para responder automaticamente a solicitações existentes via
   Facebook.
 
 `telegram personal-message`
-: Used by Zammad's Telegram channel. Technically you can use these to
-  automatically respond to existing requests via Telegram.
+: usado pelo canal do Telegram do Zammad. Tecnicamente, você pode usá-los para
+  responder automaticamente a solicitações existentes via Telegram.
 
 ### `internal`
 
-This attribute allows you to set the visibility of your articles. For
-internal visible only use `true`, for visibly for your customers as well use
-`false`.
+Este atributo permite definir a visibilidade dos seus artigos. Para
+visibilidade apenas interna, use `true`; para visibilidade também para seus
+clientes, use `false`.
 
 ::: warning
-**Visibility: internal doesn't mean it's silent**
+**Visibilidade: interno não significa que seja silencioso**
 
-If you set an article to `internal: true` but choose to send an email,
-please be aware that said email is still being sent out!
+Se você definir um artigo como `internal: true`, mas optar por enviar um email,
+tenha ciência de que esse email ainda será enviado!
 :::
 
 ### `sender`
 
-Indicates which use did create the article. You can choose from:
+Indica qual usuário criou o artigo. Você pode escolher entre:
 
 - `Agent`
 - `Customer`
 - `System`
 
 ::: warning
-Depending of above selection, some article types may not be available
-or behave different. Please be aware that `System` causes users not
-being able to read the bodies (this works similar to Zammads trigger
-displaying in tickets).
+Dependendo da seleção acima, alguns tipos de artigo podem não estar
+disponíveis ou se comportar de forma diferente. Esteja ciente de que `System` faz com que os usuários não
+consigam ler o corpo (isso funciona de forma semelhante à exibição dos gatilhos do Zammad
+nos tickets).
 :::
 
-## List Articles by Ticket
+## Listar artigos por ticket
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/by_ticket/{ticket id}`
+Solicitação `GET` enviada: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
 ::: details
 
@@ -110,11 +112,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## List Specific Article
+## Listar artigo específico
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/{article id}`
+Solicitação `GET` enviada: `/api/v1/ticket_articles/{article id}`
 
 ::: details
 
@@ -122,19 +124,19 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/ticket_articles`
+Solicitação `POST` enviada: `/api/v1/ticket_articles`
 
 ::: tip
-If you want to create articles on behalf of other users (e.g. for a
-phone note), use the `origin_by_id` attribute. `ticket.agent`
-permission is mandatory for this.
+Se você quiser criar artigos em nome de outros usuários (por exemplo, para uma
+nota de telefone), use o atributo `origin_by_id`. A permissão `ticket.agent`
+é obrigatória para isso.
 :::
 
-### Plain Article
+### Artigo simples
 
 :::: details
 
@@ -151,7 +153,7 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Attached Files
+### Artigo com arquivos anexados
 
 :::: details
 
@@ -168,9 +170,9 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Inline Images
+### Artigo com imagens inline
 
-Inline images can be used by providing data URIs in your HTML markup.
+Imagens inline podem ser usadas fornecendo data URIs na sua marcação HTML.
 
 :::: details
 
@@ -187,17 +189,17 @@ Inline images can be used by providing data URIs in your HTML markup.
 :::
 ::::
 
-## Receive Attachments
+## Receber anexos
 
-Now that you have all those fancy attachments within your tickets, you may
-want to download specific ones.
+Agora que você tem todos esses anexos chiques dentro dos seus tickets, você
+pode querer baixar alguns específicos.
 
-`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article
+Solicitação `GET` enviada: `/api/v1/ticket_attachment/{ticket id}/{article
 id}/{attachment id}`
 
-Response: `{image file}`
+Resposta: `{image file}`
 
 ::: tip
-If you're not sure which articles a ticket contains, please
-[list](#list-articles-by-ticket) affected articles first.
+Se você não tem certeza de quais artigos um ticket contém, por favor
+[liste](#list-articles-by-ticket) os artigos afetados primeiro.
 :::

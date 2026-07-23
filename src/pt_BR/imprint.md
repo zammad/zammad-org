@@ -2,29 +2,29 @@
 layout: home
 ---
 
-# Imprint
+# Aviso legal
 
 ## Zammad.org
 
-Zammad.org is a service provided by:
+O Zammad.org é um serviço fornecido por:
 
-Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Germany
+Zammad GmbH \ Marienstraße 18 \ 10117 Berlin \ Alemanha
 
-Phone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
+Telefone: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
 <enjoy@zammad.com>
 
-Managing Director: Martin Edenhofer \ Commercial Register Charlottenburg,
-No. HRB 163946 B \ Head Office: Berlin (Mitte) \ Sales Tax Identification
-No.: DE298516802
+Diretor administrativo: Martin Edenhofer \ Registro Comercial de
+Charlottenburg, Nº HRB 163946 B \ Sede: Berlim (Mitte) \ Número de
+identificação fiscal: DE298516802
 
-## Source Code
+## Código-fonte
 
-Source code owner (including zammad.org) is:
+O proprietário do código-fonte (incluindo o zammad.org) é:
 
-Zammad Foundation \ Berlin, Germany
+Zammad Foundation \ Berlim, Alemanha
 
-## Disclaimer
+## Aviso legal
 
-Despite careful control of the contents, we do not assume any liability for
-the contents of external links. The operators of the linked pages are solely
-responsible for the content of their pages.
+Apesar do controle cuidadoso do conteúdo, não assumimos qualquer
+responsabilidade pelo conteúdo de links externos. Os operadores das páginas
+vinculadas são exclusivamente responsáveis pelo conteúdo de suas páginas.

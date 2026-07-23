@@ -1,117 +1,118 @@
 ---
 order: 3
-title: 'Tempo de atualização'
+title: Atualização
 ---
 
-# Updating Zammad
+# Atualizando o Zammad
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-Before updating Zammad, we strongly recommend to take a look at our [release
-notes](https://zammad.com/en/releases){target=_blank}. You can find
-information about features and fixes as well as technical remarks and
-breaking changes.
+Antes de atualizar o Zammad, recomendamos fortemente dar uma olhada nas
+nossas [notas de
+lançamento](https://zammad.com/en/releases){target=_blank}. Você pode
+encontrar informações sobre recursos e correções, assim como observações
+técnicas e alterações que quebram compatibilidade.
 
-Be aware that you should not skip major Zammad versions while updating. That
-means, for example, your upgrade path from version `2.4` to `5.1` (assuming
-this is the current stable) would be: `2.4` → `3.0` → `4.0` → `5.0` →
-`latest stable (5.1)`
+Esteja ciente de que você não deve pular versões principais do Zammad ao
+atualizar. Isso significa que, por exemplo, seu caminho de atualização da
+versão `2.4` para `5.1` (assumindo que essa é a atual estável) seria: `2.4`
+→ `3.0` → `4.0` → `5.0` → `latest stable (5.1)`
 
 ::: info
-This page describes how to update Zammad only. In case you want to update your host operating system too, have a look
-at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.
+Esta página descreve apenas como atualizar o Zammad. Caso você também queira atualizar seu sistema operacional hospedeiro, dê uma olhada
+nas instruções de [Atualização de host e migração de repositório](host-upgrade-repo-migration).
 :::
 
-## Update Package Installation
+## Atualização via instalação por pacote
 
-### Check Dependencies
+### Verificar dependências
 
-Before proceeding, double-check that your system environment matches
-Zammad's requirements (see [Prerequisites](installation/prerequisites) and
-[Package Installation](installation/package)).
+Antes de prosseguir, verifique novamente se o ambiente do seu sistema
+corresponde aos requisitos do Zammad (veja
+[Pré-requisitos](installation/prerequisites) e [Instalação via
+pacote](installation/package)).
 
-### Stop Zammad
+### Parar o Zammad
 
 ```sh
 sudo systemctl stop zammad
 ```
 
-### Backup Zammad
+### Fazer backup do Zammad
 
-Create a backup. You can use the [backup
-script](/en/tutorials/backup-restore) which is shipped with the Zammad
-package.
+Crie um backup. Você pode usar o [script de
+backup](/pt_BR/tutorials/backup-restore) que vem com o pacote do Zammad.
 
-### Update Zammad
+### Atualizar o Zammad
 
 ::: info
-If you update your complete system and there are updates for Zammad **and** your
-database server, this could lead to errors because your database may not be
-online again when Zammad is updated.
+Se você atualizar todo o seu sistema e houver atualizações tanto para o Zammad **quanto** para o seu
+servidor de banco de dados, isso pode levar a erros, porque seu banco de dados pode não estar
+de volta online quando o Zammad for atualizado.
 
-In such a case, you might want to exclude Zammad from updating temporarily as
-you can see in the commands below.
+Nesse caso, você pode querer excluir o Zammad da atualização temporariamente,
+como você pode ver nos comandos abaixo.
 :::
 
 ::: tabs key:distros
 
 === Ubuntu
-Update package lists:
+Atualizar listas de pacotes:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Desativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Atualizar todos os pacotes exceto o Zammad:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo apt upgrade
 ```
 
 === Debian
-Update package lists:
+Atualizar listas de pacotes:
 
 ```sh
 sudo apt update
 ```
 
-Disable updates for Zammad:
+Desativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark hold zammad
 ```
 
-Update all packages except Zammad:
+Atualizar todos os pacotes exceto o Zammad:
 
 ```sh
 sudo apt upgrade
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo apt upgrade
@@ -119,31 +120,31 @@ sudo apt upgrade
 
 === OpenSUSE/SLES
 
-Update package lists:
+Atualizar listas de pacotes:
 
 ```sh
 sudo zypper refresh
 ```
 
-Disable updates for Zammad:
+Desativar atualizações para o Zammad:
 
 ```sh
 sudo zypper addlock zammad
 ```
 
-Update all packages except Zammad:
+Atualizar todos os pacotes exceto o Zammad:
 
 ```sh
 sudo zypper update
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo zypper update
@@ -151,13 +152,13 @@ sudo zypper update
 
 === CentOS/RHEL
 
-Update all packages except Zammad:
+Atualizar todos os pacotes exceto o Zammad:
 
 ```sh
 sudo dnf upgrade --exclude zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo dnf upgrade
@@ -165,63 +166,63 @@ sudo dnf upgrade
 
 :::
 
-### Additional Steps
+### Etapas adicionais
 
-Updating Elasticsearch may be relevant, too. Make sure to have a supported
-version of Elasticsearch installed (see [package
-installation](/en/get-started/installation/package#elasticsearch)  for
-supported versions).
+Atualizar o Elasticsearch também pode ser relevante. Certifique-se de ter
+uma versão suportada do Elasticsearch instalada (veja [instalação via
+pacote](/pt_BR/get-started/installation/package#elasticsearch) para versões
+suportadas).
 
-If you have to update Elasticsearch, please have a look at [their
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
-and follow the instructions.
+Se você precisar atualizar o Elasticsearch, dê uma olhada na [documentação
+deles](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
+e siga as instruções.
 
-### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
+### Reconstruir o índice do Elasticsearch <Badge type="tip" text="optional" />
 
-Only needed if the release note tells you to rebuild the Elasticsearch
-index.
+Necessário apenas se a nota de lançamento pedir para reconstruir o índice do
+Elasticsearch.
 
-Without specifying CPU cores to use:
+Sem especificar núcleos de CPU a usar:
 
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-### Start Zammad
+### Iniciar o Zammad
 
 ```sh
 sudo systemctl start zammad
 ```
 
-## Update Docker Installation
+## Atualizando instalação via Docker
 
 ::: warning
-Docker Compose stack updates may require extra steps or introduce breaking
-changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
-for update instructions first.
+Atualizações da stack do Docker Compose podem exigir etapas extras ou introduzir alterações que quebram
+compatibilidade. Sempre verifique primeiro as [notas de lançamento do Docker Compose](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
+para instruções de atualização.
 :::
 
 ::: tip
-If you want to update Zammad to a specific version, use the `VERSION` environment variable
-([example](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
-with further explanation) and specify the version number.
+Se você quiser atualizar o Zammad para uma versão específica, use a variável de ambiente `VERSION`
+([exemplo](https://github.com/zammad/zammad-docker-compose/blob/master/.env.dist){target=_blank}
+com explicação adicional) e especifique o número da versão.
 :::
 
-### Updating Portainer Based Installations
+### Atualizando instalações baseadas no Portainer
 
-In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image
-and redeploy** and click on `Update`.
+Na sua stack do Zammad, clique em `Pull and redeploy`, ative **Re-pull image
+and redeploy** e clique em `Update`.
 
-![Highlighted stack update in
+![Atualização de stack destacada no
 Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
-### Updating Docker Compose Based Installations
+### Atualizando instalações baseadas em Docker Compose
 
 ```sh
 cd zammad-docker-compose
@@ -239,21 +240,21 @@ docker compose pull
 docker compose up -d
 ```
 
-### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
+### Reconstruir o índice do Elasticsearch <Badge type="tip" text="optional" />
 
-Only needed if the release note tells you to rebuild the Elasticsearch index.
+Necessário apenas se a nota de lançamento pedir para reconstruir o índice do Elasticsearch.
 <!--referenced in tutorials/backup-restore-docker.md {243,276}. If content moves, adjust line numbers over there-->
 ::: tabs
 
 === Docker Compose
 
-Without specifying CPU cores:
+Sem especificar núcleos de CPU:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
@@ -261,16 +262,16 @@ docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:r
 
 === Portainer GUI
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
-standard entrypoint `/bin/bash` and run:
+Abra o [console via interface gráfica do Portainer](/pt_BR/get-started/installation/docker#how-to-run-commands-in-the-stack) com o
+ponto de entrada padrão `/bin/bash` e execute:
 
-Without specifying CPU cores to use:
+Sem especificar núcleos de CPU a usar:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]

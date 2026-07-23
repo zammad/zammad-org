@@ -1,40 +1,42 @@
 ---
 order: 4
-title: 'Host Upgrade and Repository Migration'
+title: 'Atualização de host e migração de repositório'
 ---
 
-# Host Upgrade and Repository Migration
+# Atualização de host e migração de repositório
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-This page covers the required steps for a host upgrade and to switch to
-Zammad's new package repositories. If you just want to update Zammad itself,
-please refer to [Updating Zammad](update). To just switch to the new
-repositories without a host upgrade, skip the host upgrade steps.
+Esta página cobre as etapas necessárias para uma atualização de host e para
+mudar para os novos repositórios de pacotes do Zammad. Se você só quer
+atualizar o próprio Zammad, consulte [Atualizando o Zammad](update). Para
+apenas mudar para os novos repositórios sem uma atualização de host, pule as
+etapas de atualização de host.
 
-Starting with Zammad 7, packages are being built using a new toolchain and
-hosted under another URL. The packages are being built via old toolchain as
-well (except for Debian 13) for some time, but we encourage you to switch to
-the new repositories in a timely manner. This means you need to add a new
-repository key and change your repository configuration.
+A partir do Zammad 7, os pacotes estão sendo construídos usando uma nova
+cadeia de ferramentas e hospedados em outra URL. Os pacotes também continuam
+sendo construídos pela cadeia de ferramentas antiga (exceto para Debian 13)
+por algum tempo, mas recomendamos que você mude para os novos repositórios
+em tempo hábil. Isso significa que você precisa adicionar uma nova chave de
+repositório e alterar a configuração do seu repositório.
 
 ::: warning
-Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
+Sempre se certifique de ter um [backup](/pt_BR/tutorials/backup-restore) dos seus dados antes de realizar uma atualização.
 :::
 
-The following operating systems are supported:
+Os seguintes sistemas operacionais são suportados:
 
 <!--@include: /installation/package.md{15,20}-->
 
-## Stop Zammad
+## Parar o Zammad
 
 ```sh
 sudo systemctl stop zammad
 ```
 
-## Host Upgrade Steps
+## Etapas de atualização de host
 
-### Disable Updates for Zammad
+### Desativar atualizações para o Zammad
 
 ::: tabs key:distros
 
@@ -64,25 +66,26 @@ sudo dnf upgrade --exclude zammad
 
 :::
 
-### Perform Host Upgrade
+### Realizar a atualização de host
 
-Perform the host upgrade according to the documentation of your operating
-system. Because this is an advanced task, we don't provide detailed steps
-here. After upgrading your operating system, proceed with the next steps.
+Realize a atualização de host de acordo com a documentação do seu sistema
+operacional. Como esta é uma tarefa avançada, não fornecemos etapas
+detalhadas aqui. Depois de atualizar seu sistema operacional, prossiga com
+as próximas etapas.
 
-### Reboot Host
+### Reiniciar o host
 
-In case you did not reboot your system after the upgrade, make sure to
-reboot your system now. Afterwards, check if everything is running as
-expected. In case Zammad starts automatically, stop it again before
-proceeding with the next steps.
+Caso você não tenha reiniciado seu sistema após a atualização, certifique-se
+de reiniciá-lo agora. Depois, verifique se tudo está funcionando como
+esperado. Caso o Zammad inicie automaticamente, pare-o novamente antes de
+prosseguir com as próximas etapas.
 
-## Adjust Package Repository
+## Ajustar o repositório de pacotes
 
-### Remove Old Repository
+### Remover repositório antigo
 
-Remove the old repository configuration file or disable/delete the old
-repository in your package manager.
+Remova o arquivo de configuração do repositório antigo ou desative/exclua o
+repositório antigo no seu gerenciador de pacotes.
 
 ::: tabs key:distros
 
@@ -120,10 +123,10 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-### Remove Old Repository Key
+### Remover chave de repositório antiga
 
-Remove the old repository key from your system. Depending on your operating
-system and version, the location or method differs.
+Remova a chave de repositório antiga do seu sistema. Dependendo do seu
+sistema operacional e versão, o local ou método é diferente.
 
 ::: tabs key:distros
 
@@ -141,13 +144,13 @@ sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 
 === OpenSUSE/SLES
 
-List the keys of your system:
+Liste as chaves do seu sistema:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
+Exclua a(s) chave(s) relacionada(s) ao Zammad (e somente essas!), substituindo `<key-name>` pelo ID real da chave:
 
 ```sh
 sudo rpm -e <key-name>
@@ -155,13 +158,13 @@ sudo rpm -e <key-name>
 
 === CentOS/RHEL
 
-List the keys of your system:
+Liste as chaves do seu sistema:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
+Exclua a(s) chave(s) relacionada(s) ao Zammad (e somente essas!), substituindo `<key-name>` pelo ID real da chave:
 
 ```sh
 sudo rpm -e <key-name>
@@ -169,42 +172,42 @@ sudo rpm -e <key-name>
 
 :::
 
-### Add New Repository
+### Adicionar novo repositório
 
-If the repository key is different for the old and new version your
-distribution or your distribution expects it in a different location, add
-the new one. Otherwise, you can add the new repository configuration
-directly.
+Se a chave de repositório for diferente para a versão antiga e nova, ou se
+sua distribuição espera que ela esteja em outro local, adicione a nova. Caso
+contrário, você pode adicionar a nova configuração de repositório
+diretamente.
 
 <!--@include: /installation/package.md{172,296}-->
 
-### Update Zammad
+### Atualizar o Zammad
 
 ::: tip
-If there is a new Zammad version available and you want to update to it, check the
-[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
+Se houver uma nova versão do Zammad disponível e você quiser atualizá-la, verifique as
+[notas de lançamento](https://zammad.com/en/product/releases){target=_blank} para quaisquer etapas adicionais necessárias.
 :::
 
-Re-enable updates for Zammad and update Zammad to the latest version
-available for your operating system.
+Reative as atualizações do Zammad e atualize-o para a versão mais recente
+disponível para o seu sistema operacional.
 
 ::: tabs key:distros
 
 === Ubuntu
 
-Update package index:
+Atualizar índice de pacotes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo apt upgrade zammad
@@ -212,19 +215,19 @@ sudo apt upgrade zammad
 
 === Debian
 
-Update package index:
+Atualizar índice de pacotes:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo apt upgrade zammad
@@ -232,19 +235,19 @@ sudo apt upgrade zammad
 
 === OpenSUSE/SLES
 
-Update package index:
+Atualizar índice de pacotes:
 
 ```sh
 sudo zypper refresh
 ```
 
-Re-enable updates for Zammad:
+Reativar atualizações para o Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Atualizar o Zammad:
 
 ```sh
 sudo zypper update zammad
@@ -258,7 +261,7 @@ sudo dnf upgrade zammad
 
 :::
 
-### Start Zammad
+### Iniciar o Zammad
 
 ```sh
 sudo systemctl start zammad

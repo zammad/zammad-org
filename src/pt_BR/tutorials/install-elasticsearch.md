@@ -1,22 +1,22 @@
 ---
 order: 1
-title: 'Install Elasticsearch 9'
+title: 'Instalar o Elasticsearch 9'
 ---
 
-# Install Elasticsearch 9
+# Instalar o Elasticsearch 9
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-This guide shows a simple standard installation of Elasticsearch 9. The
-intention is to get you up and running quickly.  However, in case you need a
-more advanced configuration or face any issues, have a look at the [official
-Elasticsearch installation
-documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Adapt it wherever needed in case your use-case differs.
+Este guia mostra uma instalação padrão simples do Elasticsearch 9. A
+intenção é colocá-lo em funcionamento rapidamente. No entanto, caso você
+precise de uma configuração mais avançada ou enfrente algum problema, dê uma
+olhada na [documentação oficial de instalação do
+Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
+Adapte-a onde necessário, caso seu caso de uso seja diferente.
 
-## Installation
+## Instalação
 
-### Add Repository Key
+### Adicionar chave do repositório
 
 ::: tabs key:distros
 
@@ -42,7 +42,7 @@ sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add Repository
+### Adicionar repositório
 
 ::: tabs key:distros
 
@@ -83,7 +83,7 @@ EOF
 
 :::
 
-### Install Elasticsearch
+### Instalar o Elasticsearch
 
 ::: tabs key:distros
 
@@ -116,36 +116,37 @@ sudo dnf install --enablerepo=elasticsearch elasticsearch
 :::
 
 ::: tip
-Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by
-running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Certifique-se de verificar a saída e copiar a senha do superusuário integrado. Caso contrário, você terá que recriá-la
+executando `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 :::
 
 ## Configuração
 
-Optionally, check and configure Elasticsearch’s configuration file which you
-can find under `/etc/elasticsearch/elasticsearch.yml`.
+Opcionalmente, verifique e configure o arquivo de configuração do
+Elasticsearch, que você pode encontrar em
+`/etc/elasticsearch/elasticsearch.yml`.
 
-We recommend to adjust the maximum context size which should get indexed by
-Elasticsearch. Adjust it to a reasonable size like in the example:
+Recomendamos ajustar o tamanho máximo de contexto que deve ser indexado pelo
+Elasticsearch. Ajuste-o para um tamanho razoável, como no exemplo:
 
 ```yml
 http.max_content_length: 400mb
 ```
 
-Additional configuration is out of scope of this documentation. In case your
-scenario needs additional configuration, have a look at [Elastic’s
-configuration
-reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
+Configuração adicional está fora do escopo desta documentação. Caso seu
+cenário precise de configuração adicional, dê uma olhada na [referência de
+configuração da
+Elastic](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
 
-## Start and Enable Elasticsearch
+## Iniciar e habilitar o Elasticsearch
 
 ```sh
 sudo systemctl enable elasticsearch.service --now
 ```
 
-## Next Steps
+## Próximas etapas
 
-Go on with the [installation of
-Zammad](/en/get-started/installation/package#add-zammad-repository). After
-the installation of Zammad is completed, you can [connect Zammad with
-Elasticsearch](/en/tutorials/connect-config-elasticsearch).
+Continue com a [instalação do
+Zammad](/pt_BR/get-started/installation/package#add-zammad-repository).
+Depois que a instalação do Zammad estiver concluída, você pode [conectar o
+Zammad ao Elasticsearch](/pt_BR/tutorials/connect-config-elasticsearch).

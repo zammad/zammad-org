@@ -5,13 +5,13 @@ title: Tags
 
 # Tags
 
-## Ticket Scope
+## Escopo de ticket
 
-### List
+### Listar
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permissão necessária: `ticket.agent` **ou** `admin.tag`
 
-`GET`-Request sent: `/api/v1/tags?object=Ticket&o_id={ticket id}`
+Solicitação `GET` enviada: `/api/v1/tags?object=Ticket&o_id={ticket id}`
 
 ::: details
 
@@ -19,11 +19,11 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 :::
 
-### Add
+### Adicionar
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permissão necessária: `ticket.agent` **ou** `admin.tag`
 
-`POST`-Request sent: `/api/v1/tags/add`
+Solicitação `POST` enviada: `/api/v1/tags/add`
 
 ::::: details
 
@@ -34,8 +34,8 @@ Required permission: `ticket.agent` **or** `admin.tag`
 <<< @/fixtures/rest-api/tags/add/post-req.json
 
 ::: info
-This will create the tag if it doesn't exist and the user has permission
-to do so.
+Isso criará a tag se ela não existir e o usuário tiver permissão
+para isso.
 :::
 
 === Response
@@ -45,11 +45,11 @@ to do so.
 ::::
 :::::
 
-### Remove
+### Remover
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Permissão necessária: `ticket.agent` **ou** `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tags/remove`
+Solicitação `DELETE` enviada: `/api/v1/tags/remove`
 
 :::: details
 
@@ -66,13 +66,13 @@ Required permission: `ticket.agent` **or** `admin.tag`
 :::
 ::::
 
-## Administration Scope
+## Escopo de administração
 
-### Admin - List
+### Admin - Listar
 
-Required permission: `admin.tag`
+Permissão necessária: `admin.tag`
 
-`GET`-Request sent: `/api/v1/tag_list`
+Solicitação `GET` enviada: `/api/v1/tag_list`
 
 ::: details
 
@@ -80,11 +80,11 @@ Required permission: `admin.tag`
 
 :::
 
-### Admin - Create
+### Admin - Criar
 
-Required permission: `admin.tag`
+Permissão necessária: `admin.tag`
 
-`POST`-Request sent: `/api/v1/tag_list`
+Solicitação `POST` enviada: `/api/v1/tag_list`
 
 :::: details
 
@@ -101,11 +101,11 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Rename
+### Admin - Renomear
 
-Required permission: `admin.tag`
+Permissão necessária: `admin.tag`
 
-`PUT`-Request sent: `/api/v1/tag_list/{tag id}`
+Solicitação `PUT` enviada: `/api/v1/tag_list/{tag id}`
 
 :::: details
 
@@ -122,11 +122,11 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Delete
+### Admin - Excluir
 
-Required permission: `admin.tag`
+Permissão necessária: `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`
+Solicitação `DELETE` enviada: `/api/v1/tag_list/{tag id}`
 
 ::: details
 

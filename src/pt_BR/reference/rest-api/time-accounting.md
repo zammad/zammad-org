@@ -1,15 +1,15 @@
 ---
 order: 20
-title: 'Time Accounting'
+title: 'Contabilização de tempo'
 ---
 
-# Time Accounting
+# Contabilização de tempo
 
-## List
+## Listar
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permissão necessária: `ticket.agent` **ou** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+Solicitação `GET` enviada: `/api/v1/tickets/{ticket id}/time_accountings`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permissão necessária: `ticket.agent` **ou** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket
+Solicitação `GET` enviada: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details
@@ -30,11 +30,11 @@ id}/time_accountings/{timeaccounting id}`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Permissão necessária: `ticket.agent` **ou** `admin.time_accounting`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+Solicitação `POST` enviada: `/api/v1/tickets/{ticket id}/time_accountings`
 
 :::: details
 
@@ -51,11 +51,11 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.time_accounting`
+Permissão necessária: `admin.time_accounting`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket
+Solicitação `PUT` enviada: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 :::: details
@@ -73,11 +73,11 @@ id}/time_accountings/{timeaccounting id}`
 :::
 ::::
 
-## Remove
+## Remover
 
-Required permission: `admin.time_accounting`
+Permissão necessária: `admin.time_accounting`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket
+Solicitação `DELETE` enviada: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details

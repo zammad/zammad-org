@@ -1,82 +1,85 @@
 ---
 order: 8
-title: 'Docker File Handling Examples'
+title: 'Exemplos de manuseio de arquivos no Docker'
 ---
 
-# Docker File Handling Examples
+# Exemplos de manuseio de arquivos no Docker
 
-If you're not sure how to handle the backup files and how to create the
-`restore` directory in the Docker volume, you can find some examples below.
+Se você não tem certeza de como lidar com os arquivos de backup e como criar
+o diretório `restore` no volume Docker, você pode encontrar alguns exemplos
+abaixo.
 
-## Restore Inside the Same Stack
+## Restaurar dentro da mesma stack
 
-**Requires:** console access to the zammad-backup container.
+**Requer:** acesso ao console do container zammad-backup.
 
-If you want to restore a backup from the same stack, you just have to create
-the directory and copy/move the files into it. The following example starts
-the **zammad-backup** container and copies _all_ .gz files from the backup
-directory into the restore directory:
+Se você quiser restaurar um backup da mesma stack, basta criar o diretório e
+copiar/mover os arquivos para ele. O exemplo a seguir inicia o container
+**zammad-backup** e copia _todos_ os arquivos .gz do diretório de backup
+para o diretório de restauração:
 
 ``` sh
 docker compose run --rm zammad-backup bash -c "mkdir /var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v"
 ```
 
-Now start the stack to execute the restore process.
+Agora inicie a stack para executar o processo de restauração.
 
-## Restore from Another Installation
+## Restaurar de outra instalação
 
-**Requires:** console access to the host system and the zammad-backup container.
+**Requer:** acesso ao console do sistema hospedeiro e ao container zammad-backup.
 
-To **obtain** your backup files from another Docker Compose deployment, one
-way is to copy it to the host system with `docker compose cp`:
+Para **obter** seus arquivos de backup de outra implantação Docker Compose,
+uma forma é copiá-los para o sistema hospedeiro com `docker compose cp`:
 
 ``` sh
 docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/
 ```
 
-In case you are searching for your backup files from a package installation,
-have a look at the [Backup & Restore
-(Package)](/en/tutorials/backup-restore) section. You don't need a full dump
-for restoring your backup.
+Caso você esteja procurando seus arquivos de backup de uma instalação via
+pacote, dê uma olhada na seção [Backup e restauração
+(Pacote)](/pt_BR/tutorials/backup-restore). Você não precisa de um dump
+completo para restaurar seu backup.
 
-To **restore** the backup, place your files in a folder called `restore` on
-the host system. This folder is mounted temporarily to `/restore` in the
-backup container. The directory then gets copied to the actual directory:
+Para **restaurar** o backup, coloque seus arquivos em uma pasta chamada
+`restore` no sistema hospedeiro. Essa pasta é montada temporariamente em
+`/restore` no container de backup. O diretório então é copiado para o
+diretório real:
 
 ``` sh
 docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup bash -c "cp -rv /restore /var/tmp/zammad/"
 ```
 
-Now start the stack to execute the restore process.
+Agora inicie a stack para executar o processo de restauração.
 
-## Use a Web GUI
+## Usar uma interface web
 
-**Requires:** console access to the host system or Portainer access with the permission to deploy a container.
+**Requer:** acesso ao console do sistema hospedeiro, ou acesso ao Portainer com permissão para implantar um container.
 
-This can be useful if you use Portainer to deploy Zammad and have limited
-access to the host system.
+Isso pode ser útil se você usa o Portainer para implantar o Zammad e tem
+acesso limitado ao sistema hospedeiro.
 
-Our example uses the tool
-[filebrowser](https://filebrowser.org/){target=_blank}, but any similar tool
-should work too. If you'd like to use such a tool permanently, make sure to
-provide additional volumes for persistence (e.g. for their database).
+Nosso exemplo usa a ferramenta
+[filebrowser](https://filebrowser.org/){target=_blank}, mas qualquer
+ferramenta semelhante deve funcionar também. Se você quiser usar essa
+ferramenta permanentemente, certifique-se de fornecer volumes adicionais
+para persistência (por exemplo, para o banco de dados dela).
 
 ::: info
 
-The steps below cover the restore process by uploading files. To get your backup files in the same way from another
-stack, you can follow steps 1-4 below and simply map the **zammad-backup** volume of your _old_ stack. Then you can
-download the files, stop and remove the filebrowser container and redeploy it, following the steps below.
+As etapas abaixo cobrem o processo de restauração enviando arquivos. Para obter seus arquivos de backup da mesma forma de outra
+stack, você pode seguir as etapas 1-4 abaixo e simplesmente mapear o volume **zammad-backup** da sua stack _antiga_. Depois você pode
+baixar os arquivos, parar e remover o container filebrowser e reimplantá-lo, seguindo as etapas abaixo.
 
 :::
 
-1. Deploy filebrowser
+1. Implantar o filebrowser
 
    ::: tabs
 
    === Via console
 
-   Deploy the container and provide the volume of **zammad-backup** and
-   a port under which you want to access the web UI:
+   Implante o container e forneça o volume de **zammad-backup** e
+   uma porta sob a qual você quer acessar a interface web:
 
    ``` sh
    docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 filebrowser/filebrowser
@@ -84,30 +87,31 @@ download the files, stop and remove the filebrowser container and redeploy it, f
 
    === Via Portainer
 
-   In your Portainer web UI, go to **Containers** in the left menu and
-   click the `Add container` button.
+   Na sua interface web do Portainer, vá até **Containers** no menu esquerdo e
+   clique no botão `Add container`.
 
-   Add the following information:
+   Adicione as seguintes informações:
 
-   - Name: enter a name which is not already in use.
+   - Name: informe um nome que ainda não esteja em uso.
    - Image: `filebrowser/filebrowser`
-   - Map additional port: choose a port and map it to port `80` in the container.
+   - Map additional port: escolha uma porta e mapeie-a para a porta `80` no container.
    - Advanced container settings:
-     - Switch to **Volumes** and click the `map additional volume` button.
-     - Enter `/srv` in the container section and select the volume containing `zammad-backup`
-   - Finally, click on **Deploy the container**.
+     - Mude para **Volumes** e clique no botão `map additional volume`.
+     - Informe `/srv` na seção do container e selecione o volume contendo `zammad-backup`
+   - Por fim, clique em **Deploy the container**.
 
    :::
 
-2. After the container is started, go to the web interface by using the IP
-   address and the port you defined.
-3. Log in with the default credentials `admin` / `admin`.
-4. You should now see at least 2 .gz files including a timestamp.
-5. Create a `New folder` by using the button on the left side. Name it
+2. Depois que o container for iniciado, acesse a interface web usando o
+   endereço IP e a porta que você definiu.
+3. Faça login com as credenciais padrão `admin`/`admin`.
+4. Agora você deve ver pelo menos 2 arquivos .gz, incluindo um carimbo de
+   data/hora.
+5. Crie uma `New folder` usando o botão no lado esquerdo. Nomeie-a como
    **restore**.
-6. Enter this folder and upload your backup files (on the top right corner
-   with the up arrow). If the upload fails, it might be required to change
-   the permissions of the files (e.g. readable for everyone).
+6. Entre nessa pasta e envie seus arquivos de backup (no canto superior
+   direito, com a seta para cima). Se o envio falhar, pode ser necessário
+   alterar as permissões dos arquivos (por exemplo, legível para todos).
 
-Now start the stack to execute the restore process. After that, you can
-safely delete the renamed folder and stop the filebrowser.
+Agora inicie a stack para executar o processo de restauração. Depois disso,
+você pode excluir com segurança a pasta renomeada e parar o filebrowser.

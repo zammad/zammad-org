@@ -1,116 +1,124 @@
 ---
 order: 1
-title: Overviews
+title: 'Visões gerais'
 ---
 
-# Overviews
+# Visões gerais
 
-![Screenshot shows opened overview
-section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
+![Captura de tela mostra a seção de visão geral
+aberta](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
 
-## Introduction
+## Introdução
 
-Overviews are a core component of Zammad. Open them by clicking the
-`Overviews` button in the primary navigation or use the keyboard shortcut
-[[o]]. You can think of overviews as a kind of email inbox with different
-folders. Use them to find new tickets that you want to process and to keep
-track of tickets that have not yet been completed.
+As visões gerais são um componente central do Zammad. Abra-as clicando no
+botão `Overviews` na navegação principal ou use o atalho de teclado
+[[o]]. Você pode pensar nas visões gerais como um tipo de caixa de entrada
+de email com diferentes pastas. Use-as para encontrar novos tickets que você
+deseja processar e para acompanhar os tickets que ainda não foram
+concluídos.
 
-Depending on your system configuration and what your Zammad admin set up,
-you can find different overviews there, for example:
+Dependendo da configuração do seu sistema e do que seu administrador do
+Zammad configurou, você pode encontrar diferentes visões gerais ali, por
+exemplo:
 
-- Your assigned tickets
-- Unassigned and open tickets
+- Seus tickets atribuídos
+- Tickets não atribuídos e abertos
 - Tickets com tempo pendente atingido
-- Escalated tickets
+- Tickets escalonados
 
-Selecting an overview in the second level navigation shows you a table which
-includes matching tickets.
+Selecionar uma visão geral na navegação de segundo nível mostra uma tabela
+que inclui os tickets correspondentes.
 
-## Usage and Features
+## Uso e recursos
 
-Overviews can be defined by admins based on rules and conditions. That means
-if a ticket has been changed and the condition of the overview isn't
-matching anymore, the ticket is no longer visible in this overview.
+As visões gerais podem ser definidas pelos administradores com base em
+regras e condições. Isso significa que, se um ticket foi alterado e a
+condição da visão geral não corresponde mais, o ticket não fica mais visível
+nessa visão geral.
 
-Overviews are updated automatically. You don't have to reload your browser
-to observe changes. You can adjust the order temporarily by clicking on one
-of the column headers as well as change their width by dragging the column
-dividers.  The order is only preserved until you switch to another overview
-or reload the page.
+As visões gerais são atualizadas automaticamente. Você não precisa
+recarregar seu navegador para observar as alterações. Você pode ajustar a
+ordem temporariamente clicando em um dos cabeçalhos de coluna, assim como
+alterar sua largura arrastando os divisores de coluna. A ordem só é
+preservada até você mudar para outra visão geral ou recarregar a página.
 
-For each overview, you can find a badge attached. The number in this badge
-tells you how many tickets are in each overview.
+Para cada visão geral, você encontra um selo anexado. O número nesse selo
+informa quantos tickets há em cada visão geral.
 
-The ticket lists in overviews can also be grouped by a specific attribute
-(e.g. customer, organization, owner). This has to be adjusted by your Zammad
-admin. If a grouping is activated, you can find a badge with a counter of
-the included tickets there as well.
+As listas de tickets nas visões gerais também podem ser agrupadas por um
+atributo específico (por exemplo, cliente, organização, responsável). Isso
+precisa ser ajustado pelo seu administrador do Zammad. Se um agrupamento
+estiver ativado, você também encontra um selo com um contador dos tickets
+incluídos ali.
 
-Depending on what you are searching for, select a fitting overview and start
-working on a ticket.
+Dependendo do que você está procurando, selecione uma visão geral adequada e
+comece a trabalhar em um ticket.
 
 ::: tip
-If you miss an overview or want to have different settings, let your Zammad admin know!
+Se você sentir falta de uma visão geral ou quiser configurações diferentes, avise seu administrador do Zammad!
 :::
 
-### Color Coded State and Priority
+### Estado e prioridade com código de cores
 
-To visualize different ticket states and priorities, the entries in the
-table are color coded.
+Para visualizar diferentes estados e prioridades de ticket, as entradas na
+tabela têm código de cores.
 
-The icon next to the ticket title mainly represents the need for action:
+O ícone ao lado do título do ticket representa principalmente a necessidade
+de ação:
 
-![Screenshot shows ticket
-states](/screenshots/documentation/use/overviews/states.png)
+![Captura de tela mostra os estados de
+ticket](/screenshots/documentation/use/overviews/states.png)
 
-- Yellow circle: action needed (e.g. new, open, pending reached)
-- Grey circle: paused, no action needed right now (e.g. pending)
-- Green circle: no action needed any more (e.g. closed, merged)
-- Red triangle: immediate action needed (ticket escalated due to an SLA
-  violation)
+- Círculo amarelo: ação necessária (por exemplo, novo, aberto, pendência
+  atingida)
+- Círculo cinza: pausado, nenhuma ação necessária no momento (por exemplo,
+  pendente)
+- Círculo verde: nenhuma ação mais necessária (por exemplo, fechado,
+  mesclado)
+- Triângulo vermelho: ação imediata necessária (ticket escalonado devido a
+  uma violação de SLA)
 
-If you spot a circle with a blue/pink gradient, it indicates that an [AI
-agent](ai#ai-agents) is currently working on the ticket.
+Se você notar um círculo com gradiente azul/rosa, isso indica que um [agente
+de IA](ai#ai-agents) está atualmente trabalhando no ticket.
 
-The **priority** is represented by the color of the ticket title:
+A **prioridade** é representada pela cor do título do ticket:
 
-![Screenshot shows ticket
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Captura de tela mostra prioridades de
+ticket](/screenshots/documentation/use/overviews/priorities.png)
 
-- 1 low: gray
-- 2 normal: blue
-- 3 high: red
+- 1 baixa: cinza
+- 2 normal: azul
+- 3 alta: vermelho
 
-### Open a Ticket
+### Abrir um ticket
 
-Open a ticket by simply clicking on the row. This opens the ticket as a tab
-in your taskbar and shows you the ticket detail view. If this ticket is
-already present in your taskbar, it activates this tab instead of opening a
-duplicate tab.
+Abra um ticket simplesmente clicando na linha. Isso abre o ticket como uma
+aba na sua barra de tarefas e mostra a visualização de detalhes do
+ticket. Se esse ticket já estiver presente na sua barra de tarefas, ele
+ativa essa aba em vez de abrir uma aba duplicada.
 
-If an overview contains more than one ticket and you open one of the
-tickets, you can find arrows in the ticket detail view header to switch to
-the next/previous ticket of this overview.
+Se uma visão geral contém mais de um ticket e você abre um dos tickets, você
+encontra setas no cabeçalho da visualização de detalhes do ticket para
+alternar para o próximo/anterior ticket dessa visão geral.
 
-### Bulk Actions
+### Ações em massa
 
-Perform bulk actions by selecting multiple tickets and either use the bulk
-action flyout or drag them with the mouse to invoke the bulk action
-overlay. You can find more information about that in the [Bulk
-Actions](../advanced-features#bulk-actions) section in the advanced features
-page.
+Execute ações em massa selecionando vários tickets e usando o painel
+flutuante de ação em massa ou arrastando-os com o mouse para acionar a
+sobreposição de ação em massa. Você encontra mais informações sobre isso na
+seção [Ações em massa](../advanced-features#bulk-actions) na página de
+recursos avançados.
 
-### Reorder Overviews
+### Reordenar visões gerais
 
-If the order of the overviews doesn't reflect your working process or you
-just like to have a different order, you can re-arrange them for your
-account. Use the `reorder items` button at the very top of the second level
-navigation, which opens your [profile
-settings](/en/documentation/use/user-profile#overviews) where you can define
-a custom order for your overviews. To change the order, simply drag & drop
-them by clicking the handles on the left side.
+Se a ordem das visões gerais não refletir seu processo de trabalho, ou você
+simplesmente prefira uma ordem diferente, você pode reorganizá-las para sua
+conta. Use o botão `reorder items` bem no topo da navegação de segundo
+nível, que abre as [configurações do seu
+perfil](/pt_BR/documentation/use/user-profile#overviews), onde você pode
+definir uma ordem personalizada para suas visões gerais. Para alterar a
+ordem, basta arrastar e soltar usando as alças no lado esquerdo.
 
-If your admin changes the order, your custom order is preserved. You can
-switch back to your admin's order by clicking the `Reset Overview Order`
-button.
+Se o seu administrador alterar a ordem, sua ordem personalizada é
+preservada. Você pode voltar à ordem do administrador clicando no botão
+`Reset Overview Order`.

@@ -2,173 +2,177 @@
 order: 1
 ---
 
-# Contribute
+# Contribuir
 
-We are happy to see you contribute to Zammad! You can do this in several
-ways. Contributions are mainly done by cloning one of our repos on GitHub
-and creating a pull request with your changes (except for translations, see
-below). 🚀
+Ficamos felizes em ver você contribuir com o Zammad! Você pode fazer isso de
+várias formas. As contribuições geralmente são feitas clonando um dos nossos
+repositórios no GitHub e criando um pull request com suas alterações (exceto
+para traduções, veja abaixo). 🚀
 
-You can contribute to:
+Você pode contribuir com:
 
-- [Source-code](contribute#zammad-source-code)
-- [Documentation](contribute#documentation)
-- [Translation](contribute#translation)
+- [Código-fonte](contribute#zammad-source-code)
+- [Documentação](contribute#documentation)
+- [Tradução](contribute#translation)
 
-Please have a look at our the sections below about how to contribute. All
-repos can be found on [Github](https://github.com/zammad){target=_blank}.
+Dê uma olhada nas seções abaixo sobre como contribuir. Todos os repositórios
+podem ser encontrados no [Github](https://github.com/zammad){target=_blank}.
 
-## Zammad Source Code
+## Código-fonte do Zammad
 
-The Zammad source code can be found on GitHub in the [Zammad
-repository](https://github.com/zammad/zammad){target=_blank}. Have a look at
-the [developer
-manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
-to get started.
+O código-fonte do Zammad pode ser encontrado no GitHub, no [repositório do
+Zammad](https://github.com/zammad/zammad){target=_blank}. Consulte o [manual
+do
+desenvolvedor](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
+para começar.
 
-### Supported Branches / Versions
+### Branches/versões suportadas
 
-Zammad's Github repository has several branches:
+O repositório do Zammad no Github tem várias branches:
 
 #### `develop`
 
-- This is the current (unreleased) development state of next major release
-  (this will become the new `stable` branch).
-- Don't use it for production!
-- This branch is actively supported and receives regular bug fixes as well
-  as security updates (see [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
-  for more details).
+- Este é o estado de desenvolvimento atual (ainda não lançado) do próximo
+  lançamento principal (que se tornará a nova branch `stable`).
+- Não use isso em produção!
+- Esta branch é suportada ativamente e recebe correções de bugs regulares,
+  além de atualizações de segurança (consulte a [Política de
+  Segurança](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  para mais detalhes).
 
 #### `stable`
 
-- This is the current stable release, e.g. Zammad 5.2.
-- Use this branch for production installations.
-- This branch is actively supported and receives regular bug fixes as well
-  as security updates (see [Security
-  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
-  for more details).
+- Este é o lançamento estável atual, por exemplo, Zammad 5.2.
+- Use esta branch para instalações de produção.
+- Esta branch é suportada ativamente e recebe correções de bugs regulares,
+  além de atualizações de segurança (consulte a [Política de
+  Segurança](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  para mais detalhes).
 
 #### `stable-x.y`
 
-- These are the branches of old versions of Zammad like `stable-5.1` for
-  Zammad 5.1.
-- Don't use it for production!
-- Bug fixes and security updates are not applied to these branches.
+- Estas são as branches de versões antigas do Zammad, como `stable-5.1` para
+  o Zammad 5.1.
+- Não use isso em produção!
+- Correções de bugs e atualizações de segurança não são aplicadas a essas
+  branches.
 
-## Documentation
+## Documentação
 
-The documentation you are reading is available on zammad.org and
-next.zammad.org and is built with Vitepress. The source files are written in
-Markdown. Make sure to change the English source files only which are placed
-under `/src/en/`. The translation is done via Weblate and will overwrite any
-changes in the language specific folders (except `/src/en/`).
+A documentação que você está lendo está disponível em zammad.org e
+next.zammad.org e é construída com o Vitepress. Os arquivos-fonte são
+escritos em Markdown. Certifique-se de alterar apenas os arquivos-fonte em
+inglês, localizados em `/src/en/`. A tradução é feita via Weblate e
+sobrescreverá quaisquer alterações nas pastas específicas de idioma (exceto
+`/src/en/`).
 
-Open a new GitHub pull request at <https://github.com/zammad/zammad-org>
-(targeting the `develop` branch) with your changes and make sure to follow
-the [style and content guide](style-guide) and read the [repo's
-README.md](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
+Abra um novo pull request no GitHub em
+<https://github.com/zammad/zammad-org> (visando a branch `develop`) com suas
+alterações e certifique-se de seguir o [guia de estilo e
+conteúdo](style-guide) e ler o [README.md do
+repositório](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){target=_blank}.
 
-## Translation
+## Tradução
 
-If you want to help us with translation and improve the multi-language
-support of Zammad or the documentation, you are welcome to contribute as
-well! The translation of Zammad and the documentation is done via Weblate,
-which is a service for the collaborative translation of projects. Just head
-over to Zammad's [Weblate
-instance](https://translations.zammad.org/){target=_blank}.  You can either
-create an account (if you don't have one already) or even sign in with your
-Github account!
+Se você quiser nos ajudar com a tradução e melhorar o suporte multilíngue do
+Zammad ou da documentação, você é bem-vindo para contribuir também! A
+tradução do Zammad e da documentação é feita via Weblate, um serviço para
+tradução colaborativa de projetos. Basta acessar a [instância
+Weblate](https://translations.zammad.org/){target=_blank} do Zammad. Você
+pode criar uma conta (se ainda não tiver uma) ou até entrar com sua conta do
+Github!
 
-We will cover some basic steps in the following sections to get you started
-with translating. However, if you want to use some additional features of
-Weblate and want to dive deeper into it, their [translation
-documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
-is a good starting point.
+Vamos cobrir alguns passos básicos nas seções a seguir para você começar a
+traduzir. No entanto, se você quiser usar alguns recursos adicionais do
+Weblate e se aprofundar mais, a [documentação de
+tradução](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
+deles é um bom ponto de partida.
 
-### Basics
+### Fundamentos
 
-The translation of **Zammad** and the translation of the **documentation** are split into different projects in Weblate.
-When you click in the top menu under _Projects > Browse all projects_, you can find the overview of the projects:
+A tradução do **Zammad** e a tradução da **documentação** são divididas em projetos diferentes no Weblate.
+Quando você clica no menu superior em _Projects > Browse all projects_, você encontra a visão geral dos projetos:
 
-![Screenshot showing translation projects in Weblate and
+![Captura de tela mostrando os projetos de tradução no Weblate e o
 menu](/screenshots/contribute/weblate-overview-docs.png)
 
-Structure of translation projects in Weblate:
+Estrutura dos projetos de tradução no Weblate:
 
-- Documentation
-  - New Documentation at next.zammad.org
-  - New Documentation at zammad.org
+- Documentação
+  - Nova documentação em next.zammad.org
+  - Nova documentação em zammad.org
 - Zammad
-  - Zammad (`develop`, development version)
-  - Zammad (`stable` version)
-  - Some more which aren't relevant here
+  - Zammad (`develop`, versão de desenvolvimento)
+  - Zammad (versão `stable`)
+  - Alguns outros que não são relevantes aqui
 
-Select a project (documentation or Zammad) and switch to the **Components**
-tab. Select the one you want to translate.  After that, you can see the
-status of translation for the different languages, as you can see in the
-following screenshot:
+Selecione um projeto (documentação ou Zammad) e mude para a aba
+**Components**. Selecione o que deseja traduzir. Depois disso, você pode ver
+o status da tradução para os diferentes idiomas, como visto na captura de
+tela a seguir:
 
-![Screenshot showing translation status of different languages for the user
-documentation](/screenshots/contribute/weblate-project-overview.png)
+![Captura de tela mostrando o status de tradução de diferentes idiomas para
+a documentação do
+usuário](/screenshots/contribute/weblate-project-overview.png)
 
 ::: tip
-It should be no big difference which component/branch you choose to translate. When Weblate detects the same strings in
-different components, they will be used for all branches and only have to be translated once. If in doubt, choose
+Não deve fazer muita diferença qual componente/branch você escolhe para traduzir. Quando o Weblate detecta as mesmas strings em
+diferentes componentes, elas serão usadas para todas as branches e só precisam ser traduzidas uma vez. Em caso de dúvida, escolha
 `develop`.
 :::
 
-### Translating
+### Traduzindo
 
-Now check the "Unfinished" column of your language and click on the number
-there. This opens the first untranslated string and, in theory, you can
-start translating. But let's first have a brief look at the user interface
-of Weblate:
+Agora verifique a coluna "Unfinished" do seu idioma e clique no número
+ali. Isso abre a primeira string não traduzida e, em teoria, você pode
+começar a traduzir. Mas primeiro vamos dar uma breve olhada na interface do
+usuário do Weblate:
 
-![Screenshot of Weblate translation user
-interface](/screenshots/contribute/weblate-ui.png)
+![Captura de tela da interface de tradução do
+Weblate](/screenshots/contribute/weblate-ui.png)
 
-1. **Breadcrumbs with path** to the current project, component and language
-2. **Translation area** itself. You can find the source string at the top
-   and the field for your translation below.
-3. **Glossary**: when a string or parts of it is detected as being present
-   in the glossary, you can find additional information there. It is also
-   highlighted in the source strings.
-4. **Some useful tabs**:
-    - **Nearby strings**: shows you the context of the word or string
-    - **Automatic suggestions**: here you can find automatic suggestions
-      from DeepL and suggestions from similar strings, which are already
-      translated. Use the `Clone to translation` button to insert it in the
-      translation field to apply changes. Use the `Accept` button to accept
-      the suggested translation and automatically switch to the next string.
-    - **Other languages**: here you see an list if and how the string is
-      translated into other languages (could be useful for languages, which
-      are similar).
+1. **Trilha de navegação (breadcrumbs)** com o caminho até o projeto,
+   componente e idioma atuais
+2. A **área de tradução** em si. Você encontra a string de origem no topo e
+   o campo para sua tradução abaixo.
+3. **Glossário**: quando uma string ou parte dela é detectada como presente
+   no glossário, você encontra informações adicionais ali. Também é
+   destacada nas strings de origem.
+4. **Algumas abas úteis**:
+    - **Strings próximas**: mostra o contexto da palavra ou string
+    - **Sugestões automáticas**: aqui você encontra sugestões automáticas do
+      DeepL e sugestões de strings semelhantes que já foram traduzidas. Use
+      o botão `Clone to translation` para inseri-las no campo de tradução e
+      aplicar as alterações. Use o botão `Accept` para aceitar a tradução
+      sugerida e passar automaticamente para a próxima string.
+    - **Outros idiomas**: aqui você vê uma lista se e como a string foi
+      traduzida para outros idiomas (pode ser útil para idiomas
+      semelhantes).
 
-### Markup in Strings
+### Marcação nas strings
 
-Find some examples for special source strings below with a badge indicating
-where such a string can be found. Try to keep the (adjusted) markup and make
-sure to keep the variables. The **Source string location** section in
-Weblate (on the right side) gives you a hint where to search for the
-context. Also have a look at the [style guide of the
-documentation](style-guide) where you can find more information about the
-syntax and the usage of Markdown/Vitepress features.
+Encontre abaixo alguns exemplos de strings de origem especiais, com um selo
+indicando onde essa string pode ser encontrada. Tente manter a marcação
+(ajustada) e certifique-se de manter as variáveis. A seção **Source string
+location** no Weblate (no lado direito) oferece uma dica de onde procurar o
+contexto. Consulte também o [guia de estilo da documentação](style-guide)
+para mais informações sobre a sintaxe e o uso dos recursos do
+Markdown/Vitepress.
 
 `%s created ticket |%s|` <Badge type="tip" text="Zammad" />
-: The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the
-  translation. The position may vary depending on the translation.
+: A string contém variáveis (`%s`) e marcação (`||`). Certifique-se de que a variável e a marcação estejam incluídas na
+  tradução. A posição pode variar dependendo da tradução.
 
 `` `example-string` `` <Badge type="tip" text="Documentation" />
-: This is rendered as inline code (`example-string`). Depending on the context, it can be translated or not. In any
-  case, use a backtick (`` ` ``) before and after the string in your translation as well.
+: Isso é renderizado como código inline (`example-string`). Dependendo do contexto, pode ser traduzido ou não. Em qualquer
+  caso, use um crase (`` ` ``) antes e depois da string na sua tradução também.
 
 `[example](/en/path/to/document-or-website)` <Badge type="tip" text="Documentation" />
-: This is a link to another page, including the language code. The above "example" is the text, which is shown as
-  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
-  translating in. Make sure that your language is already present on zammad.org (check it by using the language
-  switcher). Otherwise contact us if you want to have your language activated.
+: Este é um link para outra página, incluindo o código do idioma. O "example" acima é o texto exibido como texto do
+  link. Esta parte pode ser traduzida. Para o caminho, apenas o `en` pode ser substituído pelo código do idioma para o qual você está
+  traduzindo. Certifique-se de que seu idioma já está presente no zammad.org (verifique usando o seletor de idioma).
+  Caso contrário, entre em contato conosco se quiser que seu idioma seja ativado.
 
 `**example string**` <Badge type="tip" text="Documentation" />
-: Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try to keep the markup in general but adjust
-  it to keep the meaning.
+: Marcação para texto (por exemplo, negrito, itálico). Alternativa: `_example string_`. Tente manter a marcação em geral, mas ajuste-a
+  para manter o sentido.

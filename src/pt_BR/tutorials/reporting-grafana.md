@@ -1,63 +1,63 @@
 ---
 order: 5
-title: 'Reporting with Grafana'
+title: 'Relatórios com o Grafana'
 ---
 
-# Reporting with Grafana
+# Relatórios com o Grafana
 
 ::: info
-This guide is about Grafana. If you want to use another tool, check if it
-supports Elasticsearch indexes. If yes, then you are good to go!
+Este guia é sobre o Grafana. Se você quiser usar outra ferramenta, verifique se ela
+suporta índices do Elasticsearch. Se sim, você está pronto para começar!
 :::
 
-Grafana is a third party analytics/visualization application you can connect
-to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index
-and visualize your Zammad data.
+O Grafana é uma aplicação de análise/visualização de terceiros que você pode
+conectar ao Zammad (precisamente: ao Elasticsearch). Ele pode acessar o
+índice do Elasticsearch e visualizar seus dados do Zammad.
 
-This guide will provide you some steps to get started. For a deeper insight
-you should consider having a look at [Elasticsearch's indexed
-attributes](/en/reference/es-indexed-attributes) and to read the
-[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
+Este guia lhe dará algumas etapas para começar. Para um entendimento mais
+profundo, você deve considerar dar uma olhada nos [atributos indexados pelo
+Elasticsearch](/pt_BR/reference/es-indexed-attributes) e ler a [documentação
+do Grafana](https://grafana.com/docs/){target=_blank}.
 
-This guide expects all requirements to be up and running. We will not cover
-core configurations of each tool. Please also note that we can't support you
-with configuration of your specific third party tool.
+Este guia espera que todos os requisitos estejam funcionando. Não cobriremos
+configurações principais de cada ferramenta. Observe também que não podemos
+ajudá-lo com a configuração da sua ferramenta específica de terceiros.
 
-## Prerequisites
+## Pré-requisitos
 
-You need:
+Você precisa de:
 
-- A running instance of Grafana (hosted or self-hosted) in version 10.3 or
-  higher
-- Read access to your Elasticsearch index
-- A Zammad instance in version 4 or higher
+- Uma instância em execução do Grafana (hospedada ou auto-hospedada) na
+  versão 10.3 ou superior
+- Acesso de leitura ao seu índice do Elasticsearch
+- Uma instância do Zammad na versão 4 ou superior
 
 ::: warning
-Never expose Elasticsearch to the public if you're not sure how
-to do it. Especially **never** without authentication! Zammad
-stores **very sensitive** information within the Elasticsearch
-Index.
+Nunca exponha o Elasticsearch publicamente se você não tiver certeza de como
+fazer isso. Especialmente **nunca** sem autenticação! O Zammad
+armazena informações **muito sensíveis** dentro do índice do
+Elasticsearch.
 :::
 
-## Setting up Required Data Sources
+## Configurando as fontes de dados necessárias
 
-**Before we start:** The data sources always follow the same scheme. We
-reduced below information to `name`, `time field name` and `index name`.
-Everything else relies on your environment and is out of our scope.
+**Antes de começarmos:** as fontes de dados sempre seguem o mesmo esquema. Reduzimos
+as informações abaixo a `name`, `time field name` e `index name`.
+Tudo o mais depende do seu ambiente e está fora do nosso escopo.
 
 :::: tip
-Replace `zammad_production_` with your fitting prefix.
+Substitua `zammad_production_` pelo prefixo adequado ao seu caso.
 
-Click on details to see how to query the index.
+Clique em detalhes para ver como consultar o índice.
 
 ::: details
-Adjust the following command to your environment:
+Ajuste o seguinte comando ao seu ambiente:
 
 ```sh
 curl http://localhost:9200/_aliases?pretty=true
 ```
 
-This will return an output like the following:
+Isso retornará uma saída como a seguinte:
 
 ```json
 {
@@ -103,140 +103,142 @@ This will return an output like the following:
 :::
 ::::
 
-### ES - Chat Sessions
+### ES - Sessões de chat
 
-- Index name: `zammad_production_chat_session`
-- Time field name: `created_at`
+- Nome do índice: `zammad_production_chat_session`
+- Nome do campo de tempo: `created_at`
 
-### ES - CTI Log
+### ES - Registro CTI
 
-- Index name: `zammad_production_cti_log`
-- Time field name: `start_at`
+- Nome do índice: `zammad_production_cti_log`
+- Nome do campo de tempo: `start_at`
 
-### ES - Ticket Articles
+### ES - Artigos de ticket
 
-- Index name: `zammad_production_ticket`
-- Time field name: `article.created_at`
+- Nome do índice: `zammad_production_ticket`
+- Nome do campo de tempo: `article.created_at`
 
-### ES - Tickets by closed_at
+### ES - Tickets por closed_at
 
-- Index name: `zammad_production_ticket`
-- Time field name: `close_at`
+- Nome do índice: `zammad_production_ticket`
+- Nome do campo de tempo: `close_at`
 
-### ES - Tickets by created_at
+### ES - Tickets por created_at
 
-- Index name: `zammad_production_ticket`
-- Time field name: `created_at`
+- Nome do índice: `zammad_production_ticket`
+- Nome do campo de tempo: `created_at`
 
-### ES - Tickets by first_response_at
+### ES - Tickets por first_response_at
 
-- Index name: `zammad_production_ticket`
-- Time field name: `first_response_at`
+- Nome do índice: `zammad_production_ticket`
+- Nome do campo de tempo: `first_response_at`
 
-With above data sources you basically have everything you need to start
-building your own dashboards.
+Com as fontes de dados acima, você basicamente tem tudo o que precisa para
+começar a construir seus próprios painéis.
 
-## Quick Start with Dashboard Template
+## Início rápido com modelo de painel
 
-If you want to get inspired, you can use our sample dashboards as mentioned
-below. These dashboards can also be found on
+Se você quiser se inspirar, pode usar nossos painéis de exemplo mencionados
+abaixo. Esses painéis também podem ser encontrados no
 [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
-### Importing a Dashboard
+### Importando um painel
 
-In Grafana, select _➕ > Import_ (or any other place which offers you to import
-a dashboard) and either upload the json file you
-downloaded from Github or use the grafana.com ID, provided as badge
-like <Badge type="tip" text="12345"/> attached to the next sections titles.
+No Grafana, selecione _➕ > Import_ (ou qualquer outro lugar que ofereça importar
+um painel) e envie o arquivo json que você baixou do Github, ou use o ID do grafana.com,
+fornecido como um selo, como <Badge type="tip" text="12345"/> anexado aos títulos
+das próximas seções.
 
-During importing you can provide a dashboard name and folder. You'll also be
-asked to map the data sources to your environment. If you used our data
-source names above, you can simply search for the same name.
+Durante a importação, você pode fornecer um nome de painel e uma pasta. Você
+também será solicitado a mapear as fontes de dados para o seu ambiente. Se
+você usou nossos nomes de fonte de dados acima, pode simplesmente pesquisar
+pelo mesmo nome.
 
-### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
+### Painel de estatísticas de tickets <Badge type="tip" text="14222"/>
 
-![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
+![Painel de tickets do
+Grafana](/screenshots/tutorials/reporting/tickets.png)
 
-#### Dashboard Graphs
+#### Gráficos do painel
 
-- ticket opening and closing[^1]
-- created articles
-- ticket SLA (in time _and_ violation) per type[^1][^2]
+- abertura e fechamento de tickets[^1]
+- artigos criados
+- SLA de ticket (no prazo _e_ violação) por tipo[^1][^2]
 
-#### Ticket and Article Meta Information
+#### Metainformação de ticket e artigo
 
-- ticket group distribution
-- sender ratio (e.g. Customer / Agent)[^3]
-- article type ratio (e.g. email, phone)[^3]
-- article content type
-- escalation ratios[^1]
-- average first response, update time and close time[^2]
-- top 10 of:
-  - organization of ticket customer[^1]
-  - ticket customers[^1]
-  - ticket owners[^1]
-  - average accounted time on ticket
-  - ticket tags[^1]
-- last 10 escalated tickets
+- distribuição de tickets por grupo
+- proporção de remetentes (por exemplo, Cliente/Agente)[^3]
+- proporção de tipo de artigo (por exemplo, email, telefone)[^3]
+- tipo de conteúdo do artigo
+- proporções de escalonamento[^1]
+- média de primeira resposta, tempo de atualização e tempo de fechamento[^2]
+- top 10 de:
+  - organização do cliente do ticket[^1]
+  - clientes de ticket[^1]
+  - responsáveis por ticket[^1]
+  - tempo médio contabilizado no ticket
+  - tags de ticket[^1]
+- últimos 10 tickets escalonados
 
-#### Required Data Sources
+#### Fontes de dados necessárias
 
 - `ES - Ticket Articles`
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
+### Painel de estatísticas de sessão de chat <Badge type="tip" text="14224"/>
 
-![Grafana Chat
-Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
+![Painel de chat do
+Grafana](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Dashboard Graphs
+#### Gráficos do painel
 
-Chat session creations.
+Criações de sessão de chat.
 
-#### Chat Session Meta Information
+#### Metainformação de sessão de chat
 
-- top 10 of:
-  - chat tags
-  - chat agents
-  - chat exit pages
-  - city origins
-- chat topic ratio
-- average number of messages within chat-sessions
-- average chatting time
-- world map with chat origin countries
+- top 10 de:
+  - tags de chat
+  - agentes de chat
+  - páginas de saída de chat
+  - origens por cidade
+- proporção de tópico de chat
+- número médio de mensagens dentro de sessões de chat
+- tempo médio de chat
+- mapa-múndi com países de origem do chat
 
-#### Required Data Sources
+#### Fontes de dados necessárias
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
+### Painel de estatísticas de registro CTI <Badge type="tip" text="14223"/>
 
-![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
+![Painel de chamadas do Grafana](/screenshots/tutorials/reporting/calls.png)
 
-#### Dashboard Graphs
+#### Gráficos do painel
 
-Number of calls per direction (in / out).
+Número de chamadas por direção (entrada/saída).
 
-#### Chat Session Meta Information
+#### Metainformação de sessão de chat
 
-- call ratio (in / out)
-- average waiting time
-- average talking time
-- top 10 of:
-  - callers (in)
-  - call answerers (in)
+- proporção de chamadas (entrada/saída)
+- tempo médio de espera
+- tempo médio de conversa
+- top 10 de:
+  - chamadores (entrada)
+  - atendentes de chamada (entrada)
 
-#### Required Data Sources
+#### Fontes de dados necessárias
 
 - `ES - CTI Log`
 
-[^1]: Some values are not available as time series information. This
-    means we can only display the _last_ value of the field in question.
+[^1]: Alguns valores não estão disponíveis como informação de série temporal. Isso
+    significa que só podemos exibir o _último_ valor do campo em questão.
 
-[^2]: Requires SLA function to be active. Negative values indicate SLA
-    violations.
+[^2]: Requer que a função de SLA esteja ativa. Valores negativos indicam
+    violações de SLA.
 
-[^3]: Specific reference IDs are not the same on every instance and thus
-    the panel may not work or show incorrect data. Check the panels
-    description on how to find our the relations on your system.
+[^3]: IDs de referência específicos não são os mesmos em cada instância, e portanto
+    o painel pode não funcionar ou mostrar dados incorretos. Verifique a
+    descrição dos painéis sobre como encontrar as relações no seu sistema.

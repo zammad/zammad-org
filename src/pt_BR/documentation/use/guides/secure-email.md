@@ -1,128 +1,133 @@
 ---
 order: 3
-title: 'Secure Email'
+title: 'Email seguro'
 ---
 
-# Secure Email
+# Email seguro
 
-Zammad supports two systems for secure email communication:
+O Zammad oferece suporte a dois sistemas para comunicação segura por email:
 
 - **PGP** (Pretty Good Privacy)
 - **S/MIME** (Secure/Multipurpose Internet Mail Extensions)
 
-Both systems allow you to exchange **signed** and **encrypted** messages
-with others.
+Ambos os sistemas permitem que você troque mensagens **assinadas** e
+**criptografadas** com outras pessoas.
 
-## Prerequisites
+## Pré-requisitos
 
-- Both features are optional. If you don't see the `Encrypt` and `Sign`
-  buttons in the email article editor, your administrator has not activated
-  them yet.
-- PGP and S/MIME only work if the other party is using them too.
-- Your administrator is responsible for adding all necessary certificates
-  and keys in Zammad's admin settings.
+- Ambos os recursos são opcionais. Se você não vir os botões `Encrypt` e
+  `Sign` no editor de artigo de email, seu administrador ainda não os
+  ativou.
+- PGP e S/MIME só funcionam se a outra parte também os estiver usando.
+- Seu administrador é responsável por adicionar todos os certificados e
+  chaves necessários nas configurações de administração do Zammad.
 
-If these requirements are met, the feature should work out of the box and
-Zammad encrypts, decrypts, signs and verifies signatures of emails if
-possible. Your admin can define a default behavior for each group. However,
-you can override the default for each outgoing email article on your own by
-switching encryption and signing on or off (see example in screenshot below
-with turned off encryption and activated signing). Read on to learn more
-about it and to find common errors.
+Se esses requisitos forem atendidos, o recurso deve funcionar imediatamente,
+e o Zammad criptografa, descriptografa, assina e verifica assinaturas de
+emails quando possível. Seu administrador pode definir um comportamento
+padrão para cada grupo. No entanto, você pode substituir o padrão para cada
+artigo de email de saída por conta própria, ativando ou desativando a
+criptografia e a assinatura (veja o exemplo na captura de tela abaixo, com
+criptografia desativada e assinatura ativada). Continue lendo para saber
+mais sobre isso e encontrar erros comuns.
 
-![Screenshot showing outgoing email which just gets signed and not
-encrypted](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
+![Captura de tela mostrando email de saída que é apenas assinado e não
+criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Signing & Encryption
+## Assinatura e criptografia
 
 Signing
-: Signing is a proof that a message has not been manipulated on its way. It guarantees message **integrity** and
-  **authenticity**.
+: assinar é uma prova de que uma mensagem não foi manipulada em seu caminho. Garante a **integridade** e a
+  **autenticidade** da mensagem.
 
 Encryption
-: Encryption scrambles a message so that it can only be unscrambled by the intended recipient. It guarantees message
-  **privacy** and **data security**.
+: a criptografia embaralha uma mensagem para que ela só possa ser desembaralhada pelo destinatário pretendido. Garante a
+  **privacidade** e a **segurança dos dados** da mensagem.
 
-## Incoming Email
+## Email de entrada
 
-The lock and check icons at the top of a message indicate its encryption and
-signing status. Click on an incoming message article to expand its
-details. In the details, you can hover over the security status to see more
-information.
+Os ícones de cadeado e verificação no topo de uma mensagem indicam seu
+estado de criptografia e assinatura. Clique em um artigo de email recebido
+para expandir seus detalhes. Nos detalhes, você pode passar o mouse sobre o
+status de segurança para ver mais informações.
 
-![Screenshot showing Encrypted and Signed status icons on an incoming email
-article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
+![Captura de tela mostrando ícones de status Criptografado e Assinado em um
+artigo de email
+recebido](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Status Icons for Incoming Emails
+### Ícones de status para emails recebidos
 
 | Icon | Meaning |
 |---|---|
-| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |
-| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |
-| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |
-| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |
+| ![Ícone criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Criptografado para você.** Mesmo se interceptado por terceiros, eles não conseguirão lê-lo. |
+| ![Ícone não criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Não pode ser descriptografado.** O Zammad não tem a chave necessária para descriptografar esta mensagem. |
+| ![Ícone assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Verificado com sucesso.** Você pode ter confiança de que é autêntico e o conteúdo não foi modificado. |
+| ![Ícone não assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Falha na verificação da assinatura.** Passe o mouse sobre o ícone para mais informações. |
 
-## Outgoing Email
+## Email de saída
 
-Use the `Encrypt` and `Sign` buttons to turn on encryption and signing for
-outgoing emails. They are available for new tickets and replies. Hover over
-the buttons to show details.
+Use os botões `Encrypt` e `Sign` para ativar a criptografia e a assinatura
+para emails de saída. Eles estão disponíveis para novos tickets e
+respostas. Passe o mouse sobre os botões para ver detalhes.
 
-![Screenshot showing the Encrypt and Sign toggle buttons in the email reply
-editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)
+![Captura de tela mostrando os botões de alternância Encrypt e Sign no
+editor de resposta de
+email](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)
 
 ::: info
-Outgoing emails can only be encrypted for a single recipient.
+Emails de saída só podem ser criptografados para um único destinatário.
 :::
 
-### Status Icons for Outgoing Emails
+### Ícones de status para emails de saída
 
 | Icon | Meaning |
 |---|---|
-| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |
-| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Will not be encrypted.** |
-| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |
-| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Will not be signed.** |
+| ![Ícone criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Será criptografado.** Mesmo se interceptado por terceiros, eles não conseguirão lê-lo. |
+| ![Ícone não criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Não será criptografado.** |
+| ![Ícone assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Será assinado.** Os destinatários podem verificar que veio de você e que o conteúdo não foi modificado. |
+| ![Ícone não assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Não será assinado.** |
 
-## Troubleshooting
+## Solução de problemas
 
-### Sign: Unable to find certificate for validation
+### Sign: não é possível encontrar o certificado para validação
 
-![Screenshot showing Security error warning banner on an
-article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)
+![Captura de tela mostrando o banner de aviso de erro de segurança em um
+artigo](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)
 
-Without the sender's certificate, Zammad cannot verify the message
-signature. Ask your administrator to add the sender's certificate to
-Zammad's certificate store.
+Sem o certificado do remetente, o Zammad não pode verificar a assinatura da
+mensagem. Peça ao seu administrador para adicionar o certificado do
+remetente ao armazenamento de certificados do Zammad.
 
 ::: warning
-Always verify certificates in-person or over the phone! The whole point of signature verification is to alert you when
-someone is trying to pretend to be someone they are not. Never accept a certificate from someone online without
-verifying it first.
+Sempre verifique certificados pessoalmente ou por telefone! Todo o propósito da verificação de assinatura é alertá-lo quando
+alguém está tentando se passar por outra pessoa. Nunca aceite um certificado de alguém online sem
+verificá-lo primeiro.
 :::
 
-### Encryption: Unable to find private key to decrypt
+### Encryption: não é possível encontrar a chave privada para descriptografar
 
-This message was encrypted with a certificate that does not match any on
-file.  Without a matching private key, Zammad cannot decrypt the message.
-Ask your administrator to verify your organization's private key in Zammad's
-certificate store, and ask the sender to double-check the public key they
-used to encrypt the message.
+Esta mensagem foi criptografada com um certificado que não corresponde a
+nenhum registrado. Sem uma chave privada correspondente, o Zammad não
+consegue descriptografar a mensagem. Peça ao seu administrador para
+verificar a chave privada da sua organização no armazenamento de
+certificados do Zammad, e peça ao remetente para verificar novamente a chave
+pública que usou para criptografar a mensagem.
 
-### The `Encrypt` button is disabled
+### O botão `Encrypt` está desativado
 
-Ask your administrator to add the recipient's certificate to Zammad's
-certificate store.
+Peça ao seu administrador para adicionar o certificado do destinatário ao
+armazenamento de certificados do Zammad.
 
-### The `Sign` button is disabled
+### O botão `Sign` está desativado
 
-Ask your administrator to verify your organization's private key in Zammad's
-certificate store.
+Peça ao seu administrador para verificar a chave privada da sua organização
+no armazenamento de certificados do Zammad.
 
-### Multiple Security Types configured
+### Múltiplos tipos de segurança configurados
 
-You might see both `PGP` and `S/MIME` buttons. This happens when both
-systems are configured in your system and a customer is using both as
-well. In this case, you have an additional button to switch between PGP and
-S/MIME security types. Just pick one, make sure encryption and signing is
-enabled and send your email.
+Você pode ver os botões `PGP` e `S/MIME` ao mesmo tempo. Isso acontece
+quando ambos os sistemas estão configurados no seu sistema e um cliente
+também está usando ambos. Nesse caso, você tem um botão adicional para
+alternar entre os tipos de segurança PGP e S/MIME. Basta escolher um,
+garantir que a criptografia e a assinatura estejam habilitadas, e enviar seu
+email.

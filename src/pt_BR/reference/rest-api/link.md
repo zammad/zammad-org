@@ -1,15 +1,15 @@
 ---
 order: 8
-title: 'Linking Tickets'
+title: 'Vinculando tickets'
 ---
 
-# Linking Tickets
+# Vinculando tickets
 
-## Get
+## Obter
 
-Required permission: `ticket.agent` **or** `admin`
+Permissão necessária: `ticket.agent` **ou** `admin`
 
-`GET`-Request sent: `/api/v1/links`
+Solicitação `GET` enviada: `/api/v1/links`
 
 :::: details
 
@@ -26,11 +26,11 @@ Required permission: `ticket.agent` **or** `admin`
 :::
 ::::
 
-## Add
+## Adicionar
 
-Required permission: `ticket.agent` **or** `admin`
+Permissão necessária: `ticket.agent` **ou** `admin`
 
-`POST`-Request sent: `/api/v1/links/add`
+Solicitação `POST` enviada: `/api/v1/links/add`
 
 ::::: details
 
@@ -41,9 +41,9 @@ Required permission: `ticket.agent` **or** `admin`
 <<< @/fixtures/rest-api/links/post-req.json
 
 ::: info
-The value for `link_object_target` has to be the _ticket ID_. The
-value for the `link_object_source_number` has to be the _ticket
-number_.
+O valor para `link_object_target` precisa ser o _ID do ticket_. O
+valor para `link_object_source_number` precisa ser o _número do
+ticket_.
 :::
 
 === Response
@@ -55,9 +55,9 @@ number_.
 
 ## Excluir
 
-Required permission: `ticket.agent` **or** `admin`
+Permissão necessária: `ticket.agent` **ou** `admin`
 
-`DELETE`-Request sent: `/api/v1/links/remove`
+Solicitação `DELETE` enviada: `/api/v1/links/remove`
 
 :::: details
 

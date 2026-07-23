@@ -1,29 +1,29 @@
 ---
 order: 20
-title: 'Ticket Summary'
+title: 'Resumo do ticket'
 ---
 
-# Ticket Summary
+# Resumo do ticket
 
-## Show/Trigger
+## Mostrar/Acionar
 
-Required permission: `ticket.agent`
+Permissão necessária: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`
+Solicitação `POST` enviada: `/api/v1/tickets/{ticket id}/summarize`
 
-The ticket summarize endpoint uses `POST` because creating and fetching the
-summary happen in a single operation:
+O endpoint de resumo de ticket usa `POST` porque criar e buscar o resumo
+acontecem em uma única operação:
 
-- If a summary exists, it is returned.
-- If a summary does not exist, creation is triggered in the background
-  (async job).
+- Se um resumo existe, ele é retornado.
+- Se um resumo não existe, a criação é acionada em segundo plano (tarefa
+  assíncrona).
 
-Using `GET` would be incorrect since the call may also create data. If you
-want a summary to exist, call the endpoint; if it's not ready yet, retry
-after at least 30 seconds.
+Usar `GET` seria incorreto, já que a chamada também pode criar dados. Se
+você quiser que um resumo exista, chame o endpoint; se ele ainda não estiver
+pronto, tente novamente após pelo menos 30 segundos.
 
-Sample response if the generation of a new summary was just triggered by the
-request:
+Exemplo de resposta se a geração de um novo resumo acabou de ser acionada
+pela solicitação:
 
 ::: details
 
@@ -31,8 +31,8 @@ request:
 
 :::
 
-Sample response for an existing summary (e.g. for the same ticket like above
-after waiting until creation has finished):
+Exemplo de resposta para um resumo existente (por exemplo, para o mesmo
+ticket acima, depois de esperar até que a criação tenha terminado):
 
 ::: details
 

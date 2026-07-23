@@ -3,90 +3,92 @@ order: 3
 title: Docker
 ---
 
-# Docker Installation
+# Instalação via Docker
 
-Zammad can be deployed using Docker Compose. You can even use graphical
-Docker front ends like
+O Zammad pode ser implantado usando o Docker Compose. Você pode até usar
+interfaces gráficas do Docker, como o
 [Portainer](https://www.portainer.io/){target=_blank}.
 
 ::: info
 
-We do not provide support in terms of Docker (-Compose) or Portainer specific
-problems. If you choose to run Zammad via Docker, support is only provided for
-the Zammad application.
+Não fornecemos suporte para problemas específicos do Docker (Compose) ou Portainer.
+Se você optar por executar o Zammad via Docker, o suporte é fornecido apenas para
+a aplicação Zammad.
 :::
 
-## Prerequisites
+## Pré-requisitos
 
-- A working Docker Compose environment
-- At least 4 GB of RAM to run the containers
-- Increase the memory limit for Elasticsearch on Linux hosts:
+- Um ambiente Docker Compose funcional
+- Pelo menos 4 GB de RAM para executar os containers
+- Aumente o limite de memória para o Elasticsearch em hosts Linux:
 
   ```sh
   sudo sysctl -w vm.max_map_count=262144
   ```
 
-## Deployment with Portainer
+## Implantação com Portainer
 
-The easiest way to get Zammad running is via a graphical Docker UI. We
-recommend [Portainer](https://www.portainer.io/){target=_blank}. For
-installation instructions, check out [Portainer's
-documentation](https://docs.portainer.io/){target=_blank}.
+A forma mais fácil de colocar o Zammad em execução é via uma interface
+gráfica do Docker. Recomendamos o
+[Portainer](https://www.portainer.io/){target=_blank}. Para instruções de
+instalação, consulte a [documentação do
+Portainer](https://docs.portainer.io/){target=_blank}.
 
-### Step 1: Add Stack
+### Etapa 1: adicionar stack
 
-In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and click on `Add stack` as you can
-see in the screenshot below.
+Na interface gráfica do Portainer (por exemplo,
+`https://yourdomain.tld:9443`), escolha seu ambiente de destino, selecione
+**Stacks** e clique em `Add stack`, como você pode ver na captura de tela
+abaixo.
 
-![Screenshot in the Stacks section and highlighted "Add
-stack".](/screenshots/get-started/installation/portainer-stacks.png)
+![Captura de tela na seção Stacks com "Add stack"
+destacado.](/screenshots/get-started/installation/portainer-stacks.png)
 
-### Step 2: Build From Repository
+### Etapa 2: construir a partir do repositório
 
-Switch to **Repository** build method and provide the information below:
+Mude para o método de build **Repository** e forneça as informações abaixo:
 
-- **Name**: enter a desired name of the stack
+- **Name**: informe um nome desejado para a stack
 - **Repository URL**: `https://github.com/zammad/zammad-docker-compose`
 - **Repository reference**: `refs/heads/master`
-- **Compose path**: `docker-compose.yml` (default)
+- **Compose path**: `docker-compose.yml` (padrão)
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Caso nosso ambiente padrão não seja o que você procura, você pode
+personalizar a stack usando cenários predefinidos e ajustar variáveis de
+ambiente. Vá até a [seção de personalização](#customizing-the-zammad-stack)
+abaixo para mais informações.
 
-![Stack creation with provided information in Repository
-screen](/screenshots/get-started/installation/portainer-stack-creation.png)
+![Criação de stack com as informações fornecidas na tela
+Repository](/screenshots/get-started/installation/portainer-stack-creation.png)
 
-### Step 3: Deploy the Stack
+### Etapa 3: implantar a stack
 
-Finally, click `Deploy the stack` button. The first time, it may take some
-time until the Docker images are fetched.
+Por fim, clique no botão `Deploy the stack`. Na primeira vez, pode levar
+algum tempo até que as imagens do Docker sejam baixadas.
 
-After the stack is ready, you can access Zammad via the configured Docker
-host and port, e.g. `http://localhost:8080/`.
+Depois que a stack estiver pronta, você pode acessar o Zammad pelo host e
+porta Docker configurados, por exemplo, `http://localhost:8080/`.
 
-## Deployment with Docker Compose
+## Implantação com Docker Compose
 
-### Step 1: Clone the GitHub Repo
+### Etapa 1: clonar o repositório do GitHub
 
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 
-Make sure to run `git pull` frequently to fetch updates. Alternatively, you
-can download the files from the [releases
-page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
+Certifique-se de executar `git pull` frequentemente para buscar
+atualizações. Como alternativa, você pode baixar os arquivos da [página de
+releases](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 
-### Step 2: Adjust Environment as Needed
+### Etapa 2: ajustar o ambiente conforme necessário
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Caso nosso ambiente padrão não seja o que você procura, você pode
+personalizar a stack usando cenários predefinidos e ajustar variáveis de
+ambiente. Vá até a [seção de personalização](#customizing-the-zammad-stack)
+abaixo para mais informações.
 
-### Step 3: Start the Stack
+### Etapa 3: iniciar a stack
 
 ```sh
 cd zammad-docker-compose
@@ -96,75 +98,77 @@ cd zammad-docker-compose
 docker compose up -d
 ```
 
-Optional: Use an additional `.yml` file to use a pre-defines scenario. Read
-on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
-section.
+Opcional: use um arquivo `.yml` adicional para usar um cenário
+predefinido. Continue lendo na seção [Personalizando a stack do
+Zammad](#customizing-the-zammad-stack).
 
-After the stack is ready, you can access Zammad via the configured Docker
-host and port, e.g. `http://localhost:8080/`.
+Depois que a stack estiver pronta, você pode acessar o Zammad pelo host e
+porta Docker configurados, por exemplo, `http://localhost:8080/`.
 
-## Exposing the Stack via HTTPS
+## Expondo a stack via HTTPS
 
-To publish a Zammad stack on the internet, it needs be secured via the HTTPS
-protocol. To achieve that without modifying the Zammad stack, you can:
+Para publicar uma stack do Zammad na internet, ela precisa ser protegida via
+protocolo HTTPS. Para conseguir isso sem modificar a stack do Zammad, você
+pode:
 
-- Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that
-  provides an easy [Let's Encrypt](https://letsencrypt.org/){target=_blank}
-  integration.
-- Use a Cloudflare tunnel, which provides SSL termination.
+- Usar um proxy reverso como o Nginx Proxy Manager (NPM). Ele tem uma
+  interface gráfica que oferece uma integração fácil com o [Let's
+  Encrypt](https://letsencrypt.org/){target=_blank}.
+- Usar um túnel do Cloudflare, que oferece terminação SSL.
 
-Both scenarios are covered in the separate [Docker Compose
-Scenarios](/en/reference/docker-compose-scenarios) page.
+Ambos os cenários são cobertos na página separada [Cenários do Docker
+Compose](/pt_BR/reference/docker-compose-scenarios).
 
-## Customizing the Zammad Stack
+## Personalizando a stack do Zammad
 
-The Zammad stack can be customized by loading additional scenario files for
-common use cases. For example, you can deploy the stack with an included
-Nginx Proxy Manager (NPM) or with disabled PostgreSQL or Elasticsearch
-services, in case you already have these services running.
+A stack do Zammad pode ser personalizada carregando arquivos de cenário
+adicionais para casos de uso comuns. Por exemplo, você pode implantar a
+stack com um Nginx Proxy Manager (NPM) incluído, ou com os serviços
+PostgreSQL ou Elasticsearch desativados, caso você já tenha esses serviços
+em execução.
 
-Please see the [Docker Compose scenarios
-page](/en/reference/docker-compose-scenarios).
+Consulte a [página de cenários do Docker
+Compose](/pt_BR/reference/docker-compose-scenarios).
 
-To adjust the stack and settings, use [Docker specific environment
-variables](/en/reference/environment-variables).
+Para ajustar a stack e as configurações, use [variáveis de ambiente
+específicas do Docker](/pt_BR/reference/environment-variables).
 
-## How to Run Commands in the Stack
+## Como executar comandos na stack
 
-Execute commands in your Docker stack by calling `rails` or `rake` via one
-of the following methods by using `bundle exec`.
+Execute comandos na sua stack do Docker chamando `rails` ou `rake` por um
+dos seguintes métodos, usando `bundle exec`.
 
 :::: tabs
 
 === Via Portainer GUI
 
-In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
-**Connect**.
+Na sua interface gráfica do Portainer, vá até a visualização de containers e selecione o container Rails em execução da sua stack do Zammad. Clique
+no ícone **Exec Console** na coluna "Quick Actions", selecione o ponto de entrada padrão `/bin/bash` e clique
+em **Connect**.
 
-![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
+![Execução do console do Portainer](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
-Run the interactive Rails console by executing:
+Execute o console interativo do Rails executando:
 
 ```sh
 bundle exec rails c
 ```
 
-Directly execute a specific command:
+Execute diretamente um comando específico:
 
 ```sh
-bundle exec rails r '...your rails command here...'
+bundle exec rails r '...seu comando rails aqui...'
 ```
 
 === Via console
 
-Directly execute a specific command:
+Execute diretamente um comando específico:
 
 ```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
+docker compose run --rm zammad-railsserver bundle exec rails r '...seu comando rails aqui...'
 ```
 
-Run the interactive Rails console to manually enter Rails commands:
+Execute o console interativo do Rails para inserir comandos Rails manualmente:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
@@ -173,13 +177,13 @@ docker compose run --rm zammad-railsserver bundle exec rails c
 Via `docker compose exec`:
 
 ```sh
-docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
+docker compose exec zammad-railsserver bundle exec rails r '...seu comando rails aqui...'
 ```
 
 ::: tip
-If you need to retrieve information from the Rails server, you can, for example,
-place `pp` (pretty print) in front of your Rails command. This leads to an
-output in your terminal.
+Se você precisar recuperar informações do servidor Rails, você pode, por exemplo,
+colocar `pp` (pretty print) antes do seu comando Rails. Isso resulta em
+uma saída no seu terminal.
 :::
 
 ::::

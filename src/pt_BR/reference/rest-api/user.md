@@ -6,16 +6,16 @@ title: User
 # User
 
 ::: info
-Please note that below samples were provided with `admin` and
-`ticket.agent` permissions. Some attributes / information may not be
-available in specific situations.
+Observe que os exemplos abaixo foram fornecidos com permissões `admin` e
+`ticket.agent`. Alguns atributos/informações podem não estar
+disponíveis em situações específicas.
 :::
 
-## Me - Current User
+## Eu - usuário atual
 
-Required permission: any
+Permissão necessária: any
 
-`GET`-Request sent: `/api/v1/users/me`
+Solicitação `GET` enviada: `/api/v1/users/me`
 
 ::: details
 
@@ -23,11 +23,11 @@ Required permission: any
 
 :::
 
-## List
+## Listar
 
-Required permission: `ticket.agent` **or** `admin.user`
+Permissão necessária: `ticket.agent` **ou** `admin.user`
 
-`GET`-Request sent: `/api/v1/users`
+Solicitação `GET` enviada: `/api/v1/users`
 
 ::: details
 
@@ -35,16 +35,16 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `ticket.agent` **or** `admin.user` **or**
-`ticket.customer` (shared organization)
+Permissão necessária: `ticket.agent` **ou** `admin.user` **ou**
+`ticket.customer` (organização compartilhada)
 
 ::: info
-Technically, any listings will return user's own information only.
+Tecnicamente, quaisquer listagens retornarão apenas as informações do próprio usuário.
 :::
 
-`GET`-Request sent: `/api/v1/users/{id}`
+Solicitação `GET` enviada: `/api/v1/users/{id}`
 
 ::: details
 
@@ -52,29 +52,29 @@ Technically, any listings will return user's own information only.
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.user` **or** `ticket.agent`
+Permissão necessária: `admin.user` **ou** `ticket.agent`
 
-`POST`-Request sent: `/api/v1/users`
+Solicitação `POST` enviada: `/api/v1/users`
 
 ::: tip
-**This depends on permissions**
+**Isso depende das permissões**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Agentes não podem definir senhas, funções ou permissões de grupo de usuário. Em vez disso,
+o Zammad aplicará a função padrão de cadastro. Verifique a interface de administração do Zammad
+em _Manage > Roles_ e veja qual está selecionada como **Default at signup**.
 
-Technically, unauthenticated user creation is possible if you manage
-to provide the required CSRF token (out of scope of this
-documentation). If you don't want that, consider
-disabling user registration under _Settings > Security > Base_ by setting
-**New user accounts** to no.
+Tecnicamente, a criação de usuário não autenticada é possível, se você conseguir
+fornecer o token CSRF necessário (fora do escopo desta
+documentação). Se você não quiser isso, considere
+desativar o registro de usuários em _Settings > Security > Base_, definindo
+**New user accounts** como no.
 :::
 
 ::: tip
-Unsure which attributes you can use or set? Run a GET query on any
-fitting user existing in your instance already.
+Não tem certeza de quais atributos você pode usar ou definir? Execute uma consulta GET em
+qualquer usuário adequado já existente na sua instância.
 :::
 
 :::: details
@@ -92,18 +92,18 @@ fitting user existing in your instance already.
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.user` **or** `ticket.agent`
+Permissão necessária: `admin.user` **ou** `ticket.agent`
 
-`PUT`-Request sent: `/api/v1/users/{id}`
+Solicitação `PUT` enviada: `/api/v1/users/{id}`
 
 ::: tip
-**This depends on permissions**
+**Isso depende das permissões**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Agentes não podem definir senhas, funções ou permissões de grupo de usuário. Em vez disso,
+o Zammad aplicará a função padrão de cadastro. Verifique a interface de administração do Zammad
+em _Manage > Roles_ e veja qual está selecionada como **Default at signup**.
 :::
 
 :::: details
@@ -124,22 +124,23 @@ under _Manage > Roles_ and check which is selected as **Default at signup**.
 ## Excluir
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing users cannot be undone. Zammad will also
-remove references - thus potentially tickets!
+Observe que remover usuários não pode ser desfeito. O Zammad também
+removerá referências - portanto, possivelmente tickets!
 :::
 
-Technically, you can delete users via `/api/v1/users/{id}`. However, we
-strongly encourage you to use the data privacy in Zammad's UI or the data
-privacy endpoint instead (see section below). Using one of them makes sure
-that related information like tickets are deleted as well.
+Tecnicamente, você pode excluir usuários via `/api/v1/users/{id}`. No
+entanto, recomendamos fortemente que você use a privacidade de dados na
+interface do Zammad ou o endpoint de privacidade de dados em vez disso (veja
+a seção abaixo). Usar um deles garante que informações relacionadas, como
+tickets, também sejam excluídas.
 
-### Via Data Privacy Endpoint
+### Via endpoint de privacidade de dados
 
-Required permission: `admin.data_privacy`
+Permissão necessária: `admin.data_privacy`
 
-`POST`-Request sent: `/api/v1/data_privacy_task`
+Solicitação `POST` enviada: `/api/v1/data_privacy_task`
 
 :::: details
 
@@ -156,11 +157,11 @@ Required permission: `admin.data_privacy`
 :::
 ::::
 
-### Via User Endpoint <Badge type="danger" text="not recommended" />
+### Via endpoint de usuário <Badge type="danger" text="not recommended" />
 
-Required permission: `admin.user`
+Permissão necessária: `admin.user`
 
-`DELETE`-Request sent: `/api/v1/users/{id}`
+Solicitação `DELETE` enviada: `/api/v1/users/{id}`
 
 ::: details
 

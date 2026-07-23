@@ -1,595 +1,618 @@
 ---
 order: 4
-title: 'Advanced Features'
+title: 'Recursos avançados'
 ---
 
-# Advanced Features
+# Recursos avançados
 
-This page features a collection of various helpful tools that don't need
-their own separate pages. Just keep reading, search the page or navigate to
-the section you want using the table of contents on the right.
+Esta página apresenta uma coleção de várias ferramentas úteis que não
+precisam de páginas próprias separadas. Continue lendo, pesquise na página
+ou navegue até a seção desejada usando o sumário à direita.
 
-## Ticket Update Behavior
+## Comportamento de atualização do ticket
 
-![Screenshot shows behavior after update
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
+![Captura de tela mostra o comportamento após o menu de
+atualização](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
 
-**Why?**
+**Por quê?**
 
-It is possible to automatically close a ticket tab in the navigation sidebar
-after updating a ticket.  This saves you a click after updating or updating
-a ticket to _closed_ state.
+É possível fechar automaticamente uma aba de ticket na barra lateral de
+navegação após atualizar um ticket. Isso economiza um clique após atualizar
+um ticket ou atualizá-lo para o estado _fechado_.
 
-**How?**
+**Como?**
 
-In the footer bar of the ticket detail view, click on the `Stay on tab ^`
-button and select your desired option (if the default is still set,
-otherwise it is labeled as the other options below). You have different
-options:
+Na barra de rodapé da visualização de detalhes do ticket, clique no botão
+`Stay on tab ^` e selecione a opção desejada (se o padrão ainda estiver
+definido, caso contrário, é rotulado como as outras opções abaixo). Você tem
+diferentes opções:
 
-- **Stay on tab**: Default option. You have to manually close the tab if you
-  want to remove it from your navigation sidebar.
-- **Close tab**: This option closes the tab on each update of the
-  ticket. Might be a good option if you have to deal with many tickets
-  and/or the tickets require many interactions.
-- **Close tab on ticket close**: This option only closes the tab when the
-  ticket is updated to the _closed_ state.
+- **Stay on tab**: opção padrão. Você precisa fechar manualmente a aba se
+  quiser removê-la da sua barra lateral de navegação.
+- **Close tab**: essa opção fecha a aba a cada atualização do ticket. Pode
+  ser uma boa opção se você tiver que lidar com muitos tickets e/ou os
+  tickets exigirem muitas interações.
+- **Close tab on ticket close**: essa opção só fecha a aba quando o ticket é
+  atualizado para o estado _fechado_.
 
 ::: tip
-If your situation differs from ticket to ticket, you can leave **Stay on tab** and use the keyboard shortcut
-[[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
+Se a sua situação varia de ticket para ticket, você pode deixar **Stay on tab** e usar o atalho de teclado
+[[shift]] [[c]] para mudar o estado do ticket para fechado e fechar a aba do ticket.
 :::
 
-## Text Modules
+## Módulos de texto
 
-![Screenshot shows text modules
-feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
+![Captura de tela mostra o recurso de módulos de
+texto](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
 
-**Why?**
+**Por quê?**
 
-If you have to answer the same question again and again, ask your Zammad
-admin to create such a text module for you.  They can even include variables
-like customer name or any other available attribute which get replaced while
-using it in a ticket. The usage of text modules has benefits like:
+Se você tiver que responder à mesma pergunta repetidamente, peça ao seu
+administrador do Zammad para criar um módulo de texto para você. Eles podem
+até incluir variáveis, como o nome do cliente ou qualquer outro atributo
+disponível, que são substituídas ao usá-lo em um ticket. O uso de módulos de
+texto tem benefícios como:
 
-- You save time while answering tickets
-- Answers from you and your colleagues are aligned because you use the same
-  text for answers
+- Você economiza tempo ao responder tickets
+- As respostas suas e dos seus colegas ficam alinhadas porque vocês usam o
+  mesmo texto para as respostas
 
-**How?**
+**Como?**
 
-Use the button in the toolbar of the editor or simply write [[:]][[:]] in
-the editor. Both ways let you search for the desired text module by typing
-some characters or words of the text or keywords of the text module.
+Use o botão na barra de ferramentas do editor ou simplesmente escreva
+[[:]][[:]] no editor. Ambas as formas permitem pesquisar o módulo de texto
+desejado digitando alguns caracteres ou palavras do texto ou palavras-chave
+do módulo de texto.
 
-You can pick one by clicking on it or by using the up and down arrows
-followed by [[enter]] on your keyboard. There are some text modules in
-Zammad which are shipped by default.
+Você pode escolher um clicando nele ou usando as setas para cima e para
+baixo seguidas de [[enter]] no seu teclado. Existem alguns módulos de texto
+no Zammad que vêm por padrão.
 
-## Insert Knowledge Base Article
+## Inserir artigo da base de conhecimento
 
-![Screenshot shows inserting knowledge base
-article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
+![Captura de tela mostra a inserção de artigo da base de
+conhecimento](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
 
-**Why?**
+**Por quê?**
 
-If you often have the same or very similar customer requests about an issue
-of which a knowledge base article exists.  This saves you time because you
-don't have to switch to the knowledge base and copy/paste content.
+Se você frequentemente tem as mesmas ou solicitações de clientes muito
+semelhantes sobre um assunto para o qual já existe um artigo da base de
+conhecimento. Isso economiza tempo porque você não precisa alternar para a
+base de conhecimento e copiar/colar conteúdo.
 
-**How?**
+**Como?**
 
-Use the button in the toolbar of the editor or simply write [[?]][[?]] in
-the editor. Both ways let you search for the desired knowledge base article
-by typing some characters or words.
+Use o botão na barra de ferramentas do editor ou simplesmente escreva
+[[?]][[?]] no editor. Ambas as formas permitem pesquisar o artigo de base de
+conhecimento desejado digitando alguns caracteres ou palavras.
 
-## Mention a User
+## Mencionar um usuário
 
-![Screenshot shows mentioning a
-user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
+![Captura de tela mostra a menção a um
+usuário](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
 
-**Why?**
+**Por quê?**
 
-Ask or request information from your colleagues or mention them in important
-tickets so they receive notifications for ticket updates and are
-automatically subscribed to this ticket.
+Peça ou solicite informações aos seus colegas ou mencione-os em tickets
+importantes para que recebam notificações de atualizações do ticket e sejam
+automaticamente inscritos nele.
 
-**How?**
+**Como?**
 
-While writing a ticket article, use the button in the toolbar of the editor
-or simply type [[@]][[@]]. Both ways let you search for the name of the user
-you want to mention by typing some characters or the complete name.
+Ao escrever um artigo de ticket, use o botão na barra de ferramentas do
+editor ou simplesmente digite [[@]][[@]]. Ambas as formas permitem pesquisar
+o nome do usuário que você deseja mencionar digitando alguns caracteres ou o
+nome completo.
 
-Zammad displays a list with all possible matches where you can pick one by
-clicking on it or by using the up and down arrows followed by [[enter]] on
-your keyboard.
+O Zammad exibe uma lista com todas as correspondências possíveis, onde você
+pode escolher uma clicando nela ou usando as setas para cima e para baixo
+seguidas de [[enter]] no seu teclado.
 
-## Subscribe to a Ticket
+## Inscrever-se em um ticket
 
-![Screenshot shows subscribe
-feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
+![Captura de tela mostra o recurso de
+inscrição](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
 
-**Why?**
+**Por quê?**
 
-If you are interested in the progress of a ticket, you are not the owner,
-you can subscribe to it. This means you will receive notifications for each
-update.
+Se você está interessado no progresso de um ticket e não é o responsável,
+você pode se inscrever nele. Isso significa que você receberá notificações a
+cada atualização.
 
-**How?**
+**Como?**
 
-Activate the **Subscribe me** toggle in the ticket sidebar to get
-notifications. If you have been mentioned in a ticket, you are automatically
-subscribed. Switch the toggle off to stop the notification. The avatars
-displayed show you who has subscribed to the ticket and is therefore
-notified of updates.
+Ative a chave **Subscribe me** na barra lateral do ticket para receber
+notificações. Se você foi mencionado em um ticket, você é automaticamente
+inscrito. Desative a chave para parar a notificação. Os avatares exibidos
+mostram quem está inscrito no ticket e, portanto, é notificado das
+atualizações.
 
 ## Macros
 
-![Screenshot shows macro action
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
+![Captura de tela mostra o menu de ações de
+macro](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
 
-**Why?**
+**Por quê?**
 
-If you have many steps you do over and over again, you should use a macro
-for that. In such a macro, your admin can pre-define different ticket
-actions you can apply with just a click. As an example, Zammad ships a
-"Close & Tag as Spam" macro by default. If applied, the user who executes
-the macro is assigned as owner, a tag **spam** is added and the ticket is
-closed. It is even possible to run an [AI
-agent](/en/documentation/use/guides/ai) within a macro on demand.
+Se você tem muitas etapas que repete várias vezes, deve usar uma macro para
+isso. Nessa macro, seu administrador pode predefinir diferentes ações de
+ticket que você pode aplicar com apenas um clique. Como exemplo, o Zammad
+vem com uma macro "Close & Tag as Spam" por padrão. Se aplicada, o usuário
+que executa a macro é definido como responsável, uma tag **spam** é
+adicionada e o ticket é fechado. É até possível executar um [agente de
+IA](/pt_BR/documentation/use/guides/ai) dentro de uma macro sob demanda.
 
-**How?**
+**Como?**
 
-If your admin already created a macro, you can execute it in the ticket
-detail view by clicking the `^` section of the `Update` button in the right
-corner of the footer bar (see screenshot above) and select the macro you
-want to execute.
+Se seu administrador já criou uma macro, você pode executá-la na
+visualização de detalhes do ticket clicando na seção `^` do botão `Update`
+no canto direito da barra de rodapé (veja a captura de tela acima) e
+selecionando a macro que deseja executar.
 
 ::: warning
-The macro gets executed immediately and without an additional confirmation!
+A macro é executada imediatamente e sem confirmação adicional!
 :::
 
-You can also apply a macro to several ticket at once. Have a loot at [bulk
-actions](#bulk-actions) how to do that.
+Você também pode aplicar uma macro a vários tickets de uma vez. Dê uma
+olhada em [ações em massa](#bulk-actions) para saber como fazer isso.
 
 ## Checklists
 
-![Screenshot shows a checklist from checklist
-sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
+![Captura de tela mostra uma checklist a partir da barra lateral de
+checklist](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
 
-**Why?**
+**Por quê?**
 
-- To keep track of tasks
-- To complete tasks in a structured way
-- To make sure nothing gets forgotten
-- To make the progress of work more visible
+- Para acompanhar tarefas
+- Para concluir tarefas de forma estruturada
+- Para garantir que nada seja esquecido
+- Para tornar o progresso do trabalho mais visível
 
-**How?**
+**Como?**
 
-Select the **Checklist** tab in the sidebar. If you can't see it, your
-Zammad admin disabled it. You can only add or edit a checklist, if you have
-the permission to edit the ticket.
+Selecione a aba **Checklist** na barra lateral. Se você não conseguir vê-la,
+o administrador do Zammad a desativou. Você só pode adicionar ou editar uma
+checklist se tiver permissão para editar o ticket.
 
-In the checklist sidebar, you can:
+Na barra lateral de checklist, você pode:
 
-- Add a checklist: either by creating a new one by clicking on `Add Empty
-  Checklist` or from a template by using `Add From a Template` (if you don't
-  see the template button, there is none).
-- Edit the current checklist:
-  - Rename it by clicking on the title or using the ::a:: menu in the
-    sidebar header.
-  - Add checklist items by clicking the ::+:: button.
-  - Change the text of the checklist items, either by just clicking on it or
-    using the ::a:: menu next to the item.
-  - `Reorder` the items by clicking this button and drag & drop the items.
-- Delete the complete checklist by using the ::a:: menu in the sidebar
-  header.
+- Adicionar uma checklist: seja criando uma nova clicando em `Add Empty
+  Checklist`, seja a partir de um modelo usando `Add From a Template` (se
+  você não vir o botão de modelo, não há nenhum).
+- Editar a checklist atual:
+  - Renomeá-la clicando no título ou usando o menu ::a:: no cabeçalho da
+    barra lateral.
+  - Adicionar itens à checklist clicando no botão ::+::.
+  - Alterar o texto dos itens da checklist, seja clicando neles diretamente,
+    seja usando o menu ::a:: ao lado do item.
+  - `Reorder` os itens clicando neste botão e arrastando e soltando os
+    itens.
+- Excluir a checklist completa usando o menu ::a:: no cabeçalho da barra
+  lateral.
 
-There are two features, which are not directly visible:
+Há dois recursos que não são diretamente visíveis:
 
-- You can refer to other tickets as a checklist item by using its hook and
-  number in the item text (e.g.  `Ticket#123456`). Such items can't be
-  checked manually, they reflect the state of the referred ticket.
+- Você pode fazer referência a outros tickets como um item de checklist
+  usando seu gancho e número no texto do item (por exemplo,
+  `Ticket#123456`). Esses itens não podem ser marcados manualmente; eles
+  refletem o estado do ticket referenciado.
   ::: tip
-  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or
-  use the keyboard shortcut [[.]]. Then you can paste it in the checklist you want to have it included.
+  Obtenha o gancho e o número do ticket indo até o ticket desejado e usando o botão de copiar ::c:: no cabeçalho ou
+  o atalho de teclado [[.]]. Depois você pode colá-lo na checklist onde deseja incluí-lo.
   :::
-- Zammad automatically checks if all checklist items are completed. The
-  check is performed when you set a ticket to "closed". If not all items are
-  completed, Zammad will prompt you to either work on the remaining tasks
-  and keep the ticket open or to close it anyway. When referencing other
-  tickets in your checklist, only those which are closed (with a green
-  circle) are considered as completed.
+- O Zammad verifica automaticamente se todos os itens da checklist foram
+  concluídos. A verificação é feita quando você define um ticket como
+  "fechado". Se nem todos os itens estiverem concluídos, o Zammad solicitará
+  que você trabalhe nas tarefas restantes e mantenha o ticket aberto, ou que
+  o feche mesmo assim. Ao referenciar outros tickets na sua checklist,
+  apenas aqueles que estão fechados (com um círculo verde) são considerados
+  concluídos.
 
-## Ticket Templates
+## Modelos de ticket
 
-**Why?**
+**Por quê?**
 
-Quickly create a ticket with pre-defined attributes like title, text, tags
-and more saves you time. This requires your admin to create a ticket
-template.
+Criar rapidamente um ticket com atributos predefinidos, como título, texto,
+tags e mais, economiza seu tempo. Isso requer que seu administrador crie um
+modelo de ticket.
 
-**How?**
+**Como?**
 
-In the ticket create screen, you can find an `Apply Template ^` button in
-the footer bar, if a template is available.  Select the template you want to
-apply and apply changes if desired.
+Na tela de criação de ticket, você encontra um botão `Apply Template ^` na
+barra de rodapé, se um modelo estiver disponível. Selecione o modelo que
+deseja aplicar e aplique as alterações desejadas.
 
-## Shared Drafts
+## Rascunhos compartilhados
 
-**Why?**
+**Por quê?**
 
-To share a draft with other agents of your group, e.g. to reflect a QA
-process, instead of "just" adding an internal article. In such a draft you
-can even include changed ticket attributes like priority, state and custom
-attributes as well as an article with an answer to the customer.
+Para compartilhar um rascunho com outros agentes do seu grupo, por exemplo,
+para refletir um processo de QA, em vez de "apenas" adicionar um artigo
+interno. Em tal rascunho, você pode até incluir atributos de ticket
+alterados, como prioridade, estado e atributos personalizados, assim como um
+artigo com uma resposta ao cliente.
 
-This is an optional feature. If you can't see it, your admin has turned it
-off.
+Este é um recurso opcional. Se você não conseguir vê-lo, seu administrador o
+desativou.
 
-**How?**
+**Como?**
 
-To **save a draft**, use the ::a:: menu in the footer of the ticket details
-view and select "Save as draft".
+Para **salvar um rascunho**, use o menu ::a:: no rodapé da visualização de
+detalhes do ticket e selecione "Save as draft".
 
-To **apply an already existing draft**, click on the `Draft Available`
-button on the left side of the footer.
+Para **aplicar um rascunho já existente**, clique no botão `Draft Available`
+no lado esquerdo do rodapé.
 
 ::: warning
-Applying a draft overwrites your unsaved changes!
+Aplicar um rascunho sobrescreve suas alterações não salvas!
 :::
 
-## Monitoring Ticket Escalations
+## Monitorando escalonamentos de ticket
 
-**Why?**
+**Por quê?**
 
-Service Level Agreements (SLAs) ensure timely responses to customer
-requests. Your administrator sets such goals as responding to all inquiries
-within eight hours, with optional custom deadlines for specific
-customers. When such a deadline is passed, the ticket escalates.
+Acordos de Nível de Serviço (SLAs) garantem respostas oportunas às
+solicitações dos clientes. Seu administrador define metas como responder a
+todas as consultas em até oito horas, com prazos personalizados opcionais
+para clientes específicos. Quando esse prazo é ultrapassado, o ticket
+escalona.
 
-**How?**
+**Como?**
 
-Zammad notifies you by default when tickets approach or exceed their
-deadlines. Configure these notifications in your [profile
-settings](/en/documentation/use/user-profile#notifications). Zammad also
-ships a default overview called "Escalated Tickets". This overview includes
-already escalated tickets and tickets which are expected to escalate within
-the next 10 minutes.
+O Zammad notifica você por padrão quando os tickets se aproximam ou
+ultrapassam seus prazos. Configure essas notificações nas [configurações do
+seu perfil](/pt_BR/documentation/use/user-profile#notifications). O Zammad
+também vem com uma visão geral padrão chamada "Escalated Tickets". Essa
+visão geral inclui tickets já escalonados e tickets que devem escalonar nos
+próximos 10 minutos.
 
-SLA-relevant tickets display a timestamp in the ticket detail header. Hover
-over this timestamp to see all escalation stages and deadlines in a
-popup. It shows all upcoming or reached escalation times based on your SLA
-configuration:
+Tickets relevantes para SLA exibem um carimbo de hora no cabeçalho da
+visualização de detalhes. Passe o mouse sobre esse carimbo de hora para ver
+todas as etapas e prazos de escalonamento em um popup. Ele mostra todos os
+horários de escalonamento futuros ou atingidos com base na configuração do
+seu SLA:
 
-![Screenshot shows escalation panel by hovering over escalation
-timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
+![Captura de tela mostra o painel de escalonamento ao passar o mouse sobre o
+carimbo de hora de
+escalonamento](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
 
 ::: info
-The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
-ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 10:00, unless resolved earlier.
+Os horários de escalonamento são calculados com base no seu horário comercial. Isso significa que, quando seu horário comercial começa às 9:00, um
+ticket é criado às 7:00 e você tem um prazo de 1 hora, ele escalonará às 10:00, a menos que seja resolvido antes.
 :::
 
-The SLA feature requires a configuration from your admin. In case you don’t
-see escalation timestamps, either the ticket is not SLA-relevant or the
-feature is not configured.
+O recurso de SLA requer uma configuração do seu administrador. Caso você não
+veja carimbos de hora de escalonamento, o ticket não é relevante para SLA ou
+o recurso não está configurado.
 
-## Bulk Actions
+## Ações em massa
 
-**Why?**
+**Por quê?**
 
-If you have to apply the same changes for many ticket, you can save time!
+Se você precisar aplicar as mesmas alterações a vários tickets, pode
+economizar tempo!
 
-**How?**
+**Como?**
 
-There are 2 places where you can apply bulk actions:
+Há 2 lugares onde você pode aplicar ações em massa:
 
-- In the ticket tab in the [detailed search page](guides/search)
-- In [Overviews](guides/overviews)
+- Na aba de tickets na [página de pesquisa detalhada](guides/search)
+- Nas [Visões gerais](guides/overviews)
 
-In both places, you can apply bulk actions in different ways:
+Em ambos os lugares, você pode aplicar ações em massa de diferentes formas:
 
-- By using the flyout
-- By using the drag & drop overlay
+- Usando o painel flutuante (flyout)
+- Usando a sobreposição de arrastar e soltar
 
-To use bulk actions, first select the tickets you want to apply the changes
-to. Either select the tickets individually by clicking on the checkbox next
-to them or use the checkbox in the header to select all tickets of the
-current page. After selecting all tickets of the page, you can even select
-all tickets which match your current search query or overview condition by
-clicking on the **Select all XX results** label. The maximum number of
-selectable tickets for a bulk action is 2000.
+Para usar ações em massa, primeiro selecione os tickets aos quais deseja
+aplicar as alterações. Selecione os tickets individualmente clicando na
+caixa de seleção ao lado deles, ou use a caixa de seleção no cabeçalho para
+selecionar todos os tickets da página atual. Depois de selecionar todos os
+tickets da página, você pode até selecionar todos os tickets que
+correspondem à sua consulta de pesquisa ou condição de visão geral atual
+clicando no rótulo **Select all XX results**. O número máximo de tickets
+selecionáveis para uma ação em massa é 2000.
 
-To select a section of consecutive tickets, click on the checkbox of the
-first ticket, then hold [[shift]] and click on the checkbox of the last
-ticket. This selects all tickets in between as well. This also works for
-unselecting tickets.
+Para selecionar uma seção de tickets consecutivos, clique na caixa de
+seleção do primeiro ticket, depois segure [[shift]] e clique na caixa de
+seleção do último ticket. Isso seleciona também todos os tickets entre
+eles. Isso também funciona para desmarcar tickets.
 
-Depending on the number of affected tickets, you might see a small
-notification after triggering a bulk action, informing you about the
-progress. The bulk action is performed in the background so you can work on
-other tickets.  However, until the bulk action is finished, you are not able
-to start a new bulk action.
+Dependendo do número de tickets afetados, você pode ver uma pequena
+notificação após acionar uma ação em massa, informando sobre o progresso. A
+ação em massa é executada em segundo plano, então você pode trabalhar em
+outros tickets. No entanto, até que a ação em massa seja concluída, você não
+pode iniciar uma nova ação em massa.
 
-**Flyout:**
+**Painel flutuante:**
 
-![Screenshot shows the bulk action
-flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Captura de tela mostra o painel flutuante de ação em
+massa](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-After you selected tickets, click the `Bulk Action` button in the top right
-corner and change/add attributes by using the fields in the right
-flyout. The available changes you can apply to tickets are:
+Depois de selecionar os tickets, clique no botão `Bulk Action` no canto
+superior direito e altere/adicione atributos usando os campos no painel
+flutuante à direita. As alterações disponíveis que você pode aplicar aos
+tickets são:
 
-- Set group
-- Set owner
-- Set state
-- Set priority
-- Add a note
-- Execute a macro
+- Definir grupo
+- Definir responsável
+- Definir estado
+- Definir prioridade
+- Adicionar uma nota
+- Executar uma macro
 
-**Drag & drop with bulk overlay:**
+**Arrastar e soltar com sobreposição em massa:**
 
-![Screenshot shows the bulk action via drag and
-drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Captura de tela mostra a ação em massa via arrastar e
+soltar](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
 
-After you selected tickets, drag them by pressing and holding the mouse
-button and drop them on the desired action in the bulk action overlay. You
-can always skip this by dropping the tickets in the middle of the page. The
-available actions you can apply to tickets are:
+Depois de selecionar os tickets, arraste-os pressionando e segurando o botão
+do mouse e solte-os na ação desejada na sobreposição de ação em massa. Você
+sempre pode ignorar isso soltando os tickets no meio da página. As ações
+disponíveis que você pode aplicar aos tickets são:
 
-- Set group
-- Set owner
-- Unassign owner
-- Unassign owner and set group
-- Run macro
+- Definir grupo
+- Definir responsável
+- Remover atribuição de responsável
+- Remover atribuição de responsável e definir grupo
+- Executar macro
 
-Start your drag and drop action from one of the already selected tickets in
-case you selected all relevant ones.  To include another unselected ticket,
-start dragging from there and so it is also included in the batch
-processing.
+Inicie sua ação de arrastar e soltar a partir de um dos tickets já
+selecionados, caso você tenha selecionado todos os relevantes. Para incluir
+outro ticket não selecionado, comece a arrastar a partir dele, e ele também
+será incluído no processamento em lote.
 
-## Merge Tickets
+## Mesclar tickets
 
-![Screenshot shows the ticket merge
-flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Captura de tela mostra o painel flutuante de mesclagem de
+ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
-**Why?**
+**Por quê?**
 
-If you have two or more tickets about the same issue, you may want to merge
-those tickets into one. This might be the case if a customer sends you a new
-email which can't be assigned to the existing ticket (e.g. the ticket
-reference is missing because the customer sends you a completely new email
-instead of answering in the existing thread).
+Se você tem dois ou mais tickets sobre o mesmo assunto, pode querer mesclar
+esses tickets em um só. Isso pode acontecer se um cliente enviar um novo
+email que não pode ser atribuído ao ticket existente (por exemplo, a
+referência do ticket está ausente porque o cliente envia um email
+completamente novo em vez de responder na thread existente).
 
-Merging a ticket migrates all messages and notes of the ticket from where
-you select the merging into the selected one.
+Mesclar um ticket migra todas as mensagens e notas do ticket de onde você
+seleciona a mesclagem para o ticket selecionado.
 
-**How?**
+**Como?**
 
-Go to the ticket you want to merge into another one. In the ticket sidebar,
-use the ::a:: menu and select `Merge`. This opens a flyout in which you can
-select a ticket by clicking on it or enter a ticket number in search field.
-When you selected a target ticket, confirm by using the `Merge` button at
-the bottom.
+Vá até o ticket que deseja mesclar em outro. Na barra lateral do ticket, use
+o menu ::a:: e selecione `Merge`. Isso abre um painel flutuante no qual você
+pode selecionar um ticket clicando nele ou digitando um número de ticket no
+campo de pesquisa. Ao selecionar um ticket de destino, confirme usando o
+botão `Merge` na parte inferior.
 
-As result, the articles are moved into the chosen ticket. The ticket in
-which you executed the merge still exists with the following changes:
+Como resultado, os artigos são movidos para o ticket escolhido. O ticket no
+qual você executou a mesclagem ainda existe, com as seguintes alterações:
 
-- The articles have been replaced by a "merged" label
-- The state has changed to "merged"
-- The ticket is linked to its "parent" ticket
+- Os artigos foram substituídos por um rótulo "merged"
+- O estado mudou para "merged"
+- O ticket é vinculado ao seu ticket "pai"
 
-## Split Tickets
+## Dividir tickets
 
-![Screenshot shows the article action split
-menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
+![Captura de tela mostra o menu de ação de divisão do
+artigo](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
 
-**Why?**
+**Por quê?**
 
-If you have a ticket which is about more than one issue, you might want to
-split it in two or more separate tickets.  For example, this might be the
-case if a customer has a technical question and wants to place an order.
+Se você tem um ticket que trata de mais de um assunto, pode querer dividi-lo
+em dois ou mais tickets separados. Por exemplo, isso pode acontecer se um
+cliente tem uma pergunta técnica e quer fazer um pedido.
 
-**How?**
+**Como?**
 
-To split an article off, use the ::a:: menu next to an article and select
+Para dividir um artigo, use o menu ::a:: ao lado de um artigo e selecione
 `Split`.
 
-This results in a ticket create screen with the same attributes set as in
-the initial ticket. The content of the article is also included. You can
-change everything to your needs and then click on `Create`.
+Isso resulta em uma tela de criação de ticket com os mesmos atributos
+definidos no ticket inicial. O conteúdo do artigo também é incluído. Você
+pode alterar tudo conforme suas necessidades e depois clicar em `Create`.
 
-The just created ticket is linked in the original one as child. The original
-ticket is linked in the split off ticket as parent.
+O ticket recém-criado é vinculado ao original como filho. O ticket original
+é vinculado ao ticket dividido como pai.
 
-## Link Tickets
+## Vincular tickets
 
-**Why?**
+**Por quê?**
 
-When tickets about related issues arise, they can be linked to each other
-for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets)
-tickets are automatically linked.
+Quando surgem tickets sobre assuntos relacionados, eles podem ser vinculados
+entre si para facilitar a referência. Tickets [mesclados](#merge-tickets) e
+[divididos](#split-tickets) são vinculados automaticamente.
 
-**How?**
+**Como?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+::
-button in the **Related tickets** section.  This opens a flyout in which you
-can select a ticket by clicking on it or enter a ticket number in search
-field.  Additionally, you can choose between different link types:
+Na barra lateral do ticket, adicione um link para outro ticket clicando no
+botão ::+:: na seção **Related tickets**. Isso abre um painel flutuante no
+qual você pode selecionar um ticket clicando nele ou digitando um número de
+ticket no campo de pesquisa. Além disso, você pode escolher entre diferentes
+tipos de vínculo:
 
-- **Normal:** for related ticket which have no hierarchy.
-- **Parent/Child**: for related tickets where one is the main issue and the
-  other is a subtask. This link type is used by default if a tickets gets
-  split or merged.
+- **Normal:** para tickets relacionados que não têm hierarquia.
+- **Parent/Child**: para tickets relacionados em que um é o assunto
+  principal e o outro é uma subtarefa. Esse tipo de vínculo é usado por
+  padrão quando um ticket é dividido ou mesclado.
 
 ## Detecção de duplicados
 
-![Screenshot shows duplicate ticket warning during ticket
-creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
+![Captura de tela mostra o aviso de ticket duplicado durante a criação de
+ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
 
-**Why?**
+**Por quê?**
 
-Sometimes, it happens that a customer reaches out to you (or colleagues)
-more than once about a single issue. To avoid creating duplicate tickets,
-Zammad can warn you when another ticket is already present. This feature has
-to be activated and configured by your admin.
+Às vezes, acontece de um cliente entrar em contato com você (ou colegas)
+mais de uma vez sobre um único assunto. Para evitar a criação de tickets
+duplicados, o Zammad pode avisá-lo quando outro ticket já estiver
+presente. Esse recurso precisa ser ativado e configurado pelo seu
+administrador.
 
-**How?**
+**Como?**
 
-Just create a new ticket and provide some information. Your admin can
-configure which ticket attributes must match for the warning to show up
-(e.g. customer and title). In case of many unnecessary warnings or no
-warning at all, ask your admin to adjust the attributes to compare.
+Basta criar um novo ticket e fornecer algumas informações. Seu administrador
+pode configurar quais atributos de ticket devem corresponder para que o
+aviso apareça (por exemplo, cliente e título). Em caso de muitos avisos
+desnecessários ou nenhum aviso, peça ao administrador para ajustar os
+atributos a comparar.
 
-When a duplicate is detected, a warning in the ticket shows up (see the
-example in screenshot above). This warning can contain a ticket
-number. Click on the ticket link to see what it is about. In case it is no
-duplicate, simply ignore it and continue with the ticket creation.
+Quando um duplicado é detectado, um aviso aparece no ticket (veja o exemplo
+na captura de tela acima). Esse aviso pode conter um número de
+ticket. Clique no link do ticket para ver do que se trata. Caso não seja um
+duplicado, simplesmente ignore-o e continue com a criação do ticket.
 
-## Time Accounting
+## Contabilização de tempo
 
-**Why?**
+**Por quê?**
 
-With Zammad's integrated time accounting, you can help to keep track of how
-much time you spent on tickets. Based on the accounted times in the ticket,
-it is automatically assigned to customers and organizations. This might be
-used in your company for billing or to keep track of support budgets.
+Com a contabilização de tempo integrada do Zammad, você pode ajudar a
+acompanhar quanto tempo dedicou aos tickets. Com base nos tempos
+contabilizados no ticket, isso é atribuído automaticamente a clientes e
+organizações. Isso pode ser usado na sua empresa para faturamento ou para
+acompanhar orçamentos de suporte.
 
-**How?**
+**Como?**
 
-After updating a ticket, a time accounting dialog will appear. Enter how
-much time you spent on the ticket.
+Depois de atualizar um ticket, aparece um diálogo de contabilização de
+tempo. Informe quanto tempo você dedicou ao ticket.
 
-![Screenshot shows the time accounting
-dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
+![Captura de tela mostra o diálogo de contabilização de
+tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
 
-The feature is **optional**. If you don't see it whenever you update a
-ticket, your administrator hasn't enabled it yet or the rule for tickets to
-be taken into consideration doesn't match.
+O recurso é **opcional**. Se você não o vir sempre que atualizar um ticket,
+seu administrador ainda não o ativou, ou a regra para os tickets a serem
+considerados não corresponde.
 
-The accounted time is always recorded and stored without a unit. However,
-your administrator may decide to show an optional label next to the field to
-hint you and your colleagues in which unit the time is expected (see
-screenshot).
+O tempo contabilizado é sempre registrado e armazenado sem unidade. Porém, o
+administrador pode optar por exibir um rótulo opcional ao lado do campo para
+indicar a você e seus colegas em qual unidade o tempo é esperado (veja a
+captura de tela).
 
-Activity types can be used to distinguish between different activities and
-for grouping the accounted times. If this optional feature is active, it
-shows a list of activities from which you can select in the time accounting
-dialog.
+Os tipos de atividade podem ser usados para diferenciar entre atividades
+diferentes e para agrupar os tempos contabilizados. Se esse recurso opcional
+estiver ativo, ele mostra uma lista de atividades das quais você pode
+selecionar no diálogo de contabilização de tempo.
 
-If a ticket already has accounted time(s), you can see it in the ticket
-sidebar on the right side in the ticket detail view at the bottom. You can
-find the calculated sums of each activity type (if configured) as well as
-the total sum of accounted times for all activity types.
+Se um ticket já tem tempo(s) contabilizado(s), você pode vê-lo na barra
+lateral do ticket, no lado direito da visualização de detalhes do ticket, na
+parte inferior. Você encontra as somas calculadas de cada tipo de atividade
+(se configurado), assim como a soma total dos tempos contabilizados de todos
+os tipos de atividade.
 
-![Screenshot shows the time accounting
-overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
+![Captura de tela mostra a visão geral de contabilização de
+tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## User Detail Panel
+## Painel de detalhes do usuário
 
-**Why?**
+**Por quê?**
 
-Viewing important customer/user information at a glance without leaving your
-current view allows you to stay focused on your task.
+Visualizar informações importantes de clientes/usuários rapidamente, sem
+sair da sua visualização atual, permite que você permaneça focado na sua
+tarefa.
 
-**How?**
+**Como?**
 
-You might have seen it already: simply hover your mouse over an avatar icon,
-no matter if it is in the header, footer, main content or the content
-sidebar in the ticket detail view. To see more details, click on the user
-avatar to open the [user detail page](#user-detail-page).
+Você já deve ter visto: basta passar o mouse sobre um ícone de avatar, seja
+no cabeçalho, rodapé, conteúdo principal ou na barra lateral de conteúdo na
+visualização de detalhes do ticket. Para ver mais detalhes, clique no avatar
+do usuário para abrir a [página de detalhes do usuário](#user-detail-page).
 
-![Screenshot shows an avatar with opened user detail
-panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
+![Captura de tela mostra um avatar com o painel de detalhes do usuário
+aberto](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
 
-By the way, the crown in the screenshot represents the customer's VIP state,
-which can be set in the customer detail view and the admin settings.
+A propósito, a coroa na captura de tela representa o estado VIP do cliente,
+que pode ser definido na visualização de detalhes do cliente e nas
+configurações de administração.
 
-## User Detail Page
+## Página de detalhes do usuário
 
-![Screenshot shows user detail
-page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
+![Captura de tela mostra a página de detalhes do
+usuário](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
 
-**Why?**
+**Por quê?**
 
-It allows you to see all relevant user information in one place. Examples
-what you can find and do there:
+Ela permite que você veja todas as informações relevantes do usuário em um
+só lugar. Exemplos do que você pode encontrar e fazer ali:
 
-- See organization membership
-- See a graph of recent tickets
-- Add or edit a note
-- Edit the customer (via ::a:: menu)
-- See a history of changes (via ::a:: menu)
-- Create a new ticket with this user as customer
+- Ver a associação a organizações
+- Ver um gráfico dos tickets recentes
+- Adicionar ou editar uma nota
+- Editar o cliente (via menu ::a::)
+- Ver um histórico de alterações (via menu ::a::)
+- Criar um novo ticket com este usuário como cliente
 
-**How?**
+**Como?**
 
-Simply click on a user avatar (e.g. in the header of the ticket detail
-view). This opens a new tab with the customer detail page. In case you also
-have admin permissions, you can even create a deletion job for a user from
-the ::a:: menu.
+Basta clicar no avatar de um usuário (por exemplo, no cabeçalho da
+visualização de detalhes do ticket). Isso abre uma nova aba com a página de
+detalhes do cliente. Caso você também tenha permissões de administrador,
+você pode até criar uma tarefa de exclusão para um usuário a partir do menu
+::a::.
 
-## Organization Detail Page
+## Página de detalhes da organização
 
-![Screenshot shows organization detail
-page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
+![Captura de tela mostra a página de detalhes da
+organização](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
 
-**Why?**
+**Por quê?**
 
-It allows you to see all relevant organization information in one
-place. Examples what you can find and do there:
+Ela permite que você veja todas as informações relevantes da organização em
+um só lugar. Exemplos do que você pode encontrar e fazer ali:
 
-- See the members of the organization
-- See a graph of the recent tickets of the whole organization
-- Add or edit a note
-- Edit the organization (via ::a:: menu)
-- See a history of changes (via ::a:: menu)
-- Create a new user as a member of this organization
+- Ver os membros da organização
+- Ver um gráfico dos tickets recentes de toda a organização
+- Adicionar ou editar uma nota
+- Editar a organização (via menu ::a::)
+- Ver um histórico de alterações (via menu ::a::)
+- Criar um novo usuário como membro dessa organização
 
-**How?**
+**Como?**
 
-Simply click on an organization avatar (e.g. in the header of the ticket
-detail view next to the user avatar). This opens a new tab with the
-organization detail page.
+Basta clicar em um avatar de organização (por exemplo, no cabeçalho da
+visualização de detalhes do ticket, ao lado do avatar do usuário). Isso abre
+uma nova aba com a página de detalhes da organização.
 
-## External Issues and Assets
+## Issues e ativos externos
 
-**Why?**
+**Por quê?**
 
-If you use i-doit and Zammad for IT support or you deal with Github or
-Gitlab issues, you can link to these external systems to have all relevant
-information in one place. Your Zammad admin has to activate and configure
-these features in Zammad's settings.
+Se você usa o i-doit e o Zammad para suporte de TI, ou lida com issues do
+Github ou Gitlab, você pode vincular a esses sistemas externos para ter
+todas as informações relevantes em um só lugar. Seu administrador do Zammad
+precisa ativar e configurar esses recursos nas configurações do Zammad.
 
-**How?**
+**Como?**
 
-![Screenshot shows Gitlab content sidebar with "Link Issue"
-button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Captura de tela mostra a barra lateral de conteúdo do Gitlab com o botão
+"Link
+Issue"](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-If activated, simply open a ticket and choose the right content sidebar tab
-with the respective icon (see Gitlab example in screenshot above). Click the
-button to link to an issue by entering the URL of it or select the item from
-a select field (i-doit). Afterwards, you can see the linked item with
-additional metadata. By clicking on the linked item, you are redirected to
-it in the respective system.
+Se ativado, basta abrir um ticket e escolher a aba de conteúdo da barra
+lateral correta com o ícone correspondente (veja o exemplo do Gitlab na
+captura de tela acima). Clique no botão para vincular a uma issue informando
+a URL dela ou selecionando o item em um campo de seleção (i-doit). Depois,
+você pode ver o item vinculado com metadados adicionais. Ao clicar no item
+vinculado, você é redirecionado a ele no respectivo sistema.
 
-## Highlight Text
+## Destacar texto
 
-**Why?**
+**Por quê?**
 
-It allows you to give your colleagues a hint about important aspects of the
-ticket and to make sure important parts aren't getting overlooked. Be aware
-that this feature is not about text highlighting for new articles, it is
-about highlighting text in existing articles for you and other agents.
+Isso permite dar aos seus colegas uma dica sobre aspectos importantes do
+ticket e garantir que partes importantes não passem despercebidas. Esteja
+ciente de que esse recurso não é sobre destacar texto em novos artigos; é
+sobre destacar texto em artigos existentes para você e outros agentes.
 
-**How?**
+**Como?**
 
-![Screenshot shows highlight menu from ticket detail
-view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
+![Captura de tela mostra o menu de destaque da visualização de detalhes do
+ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
 
-Use the highlighting tool with the pencil icon in the upper right corner in
-the ticket detail view. To highlight text, either select text first and then
-click the button. As an alternative, you can click the highlighting button
-first and then select text. You can choose a different color by using the
-down arrow on the right side of the button. To remove the highlighting,
-simply choose the rubber icon from the color menu.
+Use a ferramenta de destaque com o ícone de lápis no canto superior direito
+da visualização de detalhes do ticket. Para destacar texto, primeiro
+selecione o texto e depois clique no botão, ou, como alternativa, clique no
+botão de destaque primeiro e depois selecione o texto. Você pode escolher
+uma cor diferente usando a seta para baixo no lado direito do botão. Para
+remover o destaque, basta escolher o ícone de borracha no menu de cores.

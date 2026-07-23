@@ -1,52 +1,53 @@
 ---
 order: 9
-title: 'Migrate Zammad to New Host'
+title: 'Migrar o Zammad para um novo host'
 ---
 
-# Migrate Zammad to New Host
+# Migrar o Zammad para um novo host
 
-This is just a description of basic steps to perform a migration to a new
-host. Your environment may be different so you should consider this as a
-reference point only. If anything goes wrong, please consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-or consider [paid support
-options](https://zammad.com/en/services/professional-services){target=_blank}.
+Esta é apenas uma descrição das etapas básicas para realizar uma migração
+para um novo host. Seu ambiente pode ser diferente, então você deve
+considerar isso apenas como um ponto de referência. Se algo der errado,
+consulte a [Comunidade
+Zammad](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank},
+ou considere [opções de suporte
+pago](https://zammad.com/en/services/professional-services){target=_blank}.
 
-The steps described on this page are an addition to the [backup and restore
-guide](/en/tutorials/backup-restore). They're not meant to stand alone -
-we'll link and note this in the relevant parts.
+As etapas descritas nesta página são um complemento ao [guia de backup e
+restauração](/pt_BR/tutorials/backup-restore). Elas não pretendem ser
+autossuficientes - vamos vincular e observar isso nas partes relevantes.
 
 ::: tip
-Migrating from Zammad SaaS? Skip to
-[Step 7](#step-7-transfer-your-backup-files). For restoration, you've
-received an attachment dump!
+Migrando do Zammad SaaS? Vá direto para o
+[Passo 7](#step-7-transfer-your-backup-files). Para a restauração, você recebeu
+um dump de anexos!
 :::
 
-## Step 1: Note Down Your Environmental Adjustments
+## Passo 1: anote seus ajustes ambientais
 
-If you have set any environment variables or similar, make sure to backup
-them.
+Se você definiu quaisquer variáveis de ambiente ou similares, certifique-se
+de fazer backup delas.
 
-## Step 2: Install Zammad on the Destination Host
+## Passo 2: instalar o Zammad no host de destino
 
-For the easiest restoration path possible, please install the same version
-like your origin instance. You could also consider updating the old instance
-before migrating. The following guide assumes that you have the same version
-of Zammad on your old and new host.
+Para o caminho de restauração mais fácil possível, instale a mesma versão da
+sua instância de origem. Você também pode considerar atualizar a instância
+antiga antes de migrar. O guia a seguir assume que você tem a mesma versão
+do Zammad no seu host antigo e novo.
 
-## Step 3: Activate Maintenance Mode
+## Passo 3: ativar o modo de manutenção
 
-This ends all agent and customer sessions. Activate it in Zammad's admin
-interface under _System > Maintenance_.
+Isso encerra todas as sessões de agentes e clientes. Ative-o na interface de administração do Zammad,
+em _System > Maintenance_.
 
-## Step 4: Disable Your Communication Channels
+## Passo 4: desativar seus canais de comunicação
 
-The restore script starts Zammad automatically, this may help to avoid data
-loss and inconsistencies.
+O script de restauração inicia o Zammad automaticamente; isso pode ajudar a
+evitar perda de dados e inconsistências.
 
-## Step 5: Stop and Disable Zammad
+## Passo 5: parar e desativar o Zammad
 
-Make sure that no data will be changed _before_ backing up.
+Certifique-se de que nenhum dado será alterado _antes_ do backup.
 
 ```sh
 sudo systemctl disable zammad
@@ -56,61 +57,63 @@ sudo systemctl disable zammad
 sudo systemctl stop zammad
 ```
 
-## Step 6: Backup
+## Passo 6: backup
 
-Follow the [backup guide](/en/tutorials/backup-restore#) to create your
+Siga o [guia de backup](/pt_BR/tutorials/backup-restore#) para criar seu
 backup.
 
-Remember if you've created a full filesystem dump or only backed up your
-data. This will be important for the restoration.
+Lembre-se se você criou um dump completo do sistema de arquivos ou apenas
+fez backup dos seus dados. Isso será importante para a restauração.
 
-If you want to go the easiest way, consider only dumping your data.
+Se você quiser seguir pelo caminho mais fácil, considere fazer o dump apenas
+dos seus dados.
 
-## Step 7: Transfer Your Backup Files
+## Passo 7: transferir seus arquivos de backup
 
-Save your backup files in a directory and provide the path to the `config`
-file. Under [backup
-configuration](/en/tutorials/backup-restore#backup-configuration) you can
-find how to adjust the config file to your needs.
+Salve seus arquivos de backup em um diretório e forneça o caminho para o
+arquivo `config`. Em [configuração de
+backup](/pt_BR/tutorials/backup-restore#backup-configuration) você encontra
+como ajustar o arquivo de configuração às suas necessidades.
 
-## Step 8: Restore Your Backup
+## Passo 8: restaurar seu backup
 
-Follow the [restoration guide](/en/tutorials/backup-restore#restore-backups)
-up to and including "Run the Restore" to restore the backup on the new host.
+Siga o [guia de
+restauração](/pt_BR/tutorials/backup-restore#restore-backups) até e
+incluindo "Executar a restauração", para restaurar o backup no novo host.
 
-Make sure to stop Zammad after the restoration has finished.
+Certifique-se de parar o Zammad depois que a restauração terminar.
 
-## Step 9: Run Required Maintenance Tasks After Restoring
+## Passo 9: executar tarefas de manutenção necessárias após a restauração
 
-After successful restoration, please continue below depending if you've only
-backed up your data or have a full filesystem dump.
+Após a restauração bem-sucedida, continue abaixo dependendo se você fez
+backup apenas dos seus dados ou tem um dump completo do sistema de arquivos.
 
-### Data Dump
+### Dump de dados
 
-#### Step 9.1: Clear the cache
+#### Passo 9.1: limpar o cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-### Full Filesystem Dump
+### Dump completo do sistema de arquivos
 
 ::: info
-This step is only needed, if one of the following points is met:
+Esta etapa só é necessária se um dos seguintes pontos for atendido:
 
-- The source and destination Zammad versions are not the same
-- The Zammad installation is not a source code installation
-- The Zammad backup is not an export from our hosted setup
+- As versões de origem e destino do Zammad não são as mesmas
+- A instalação do Zammad não é uma instalação de código-fonte
+- O backup do Zammad não é uma exportação da nossa configuração hospedada
 
-Full dumps for source code installations are not covered, however,
-basically the same below applies to you: You have to ensure that the
-environments and application files are overwritten with the new /
-correct version.
+Dumps completos para instalações de código-fonte não são cobertos; no entanto,
+basicamente o mesmo abaixo se aplica a você: você deve garantir que os
+ambientes e arquivos da aplicação sejam sobrescritos com a versão nova/
+correta.
 
-Zammad files are distribution and version specific!
+Os arquivos do Zammad são específicos de distribuição e versão!
 :::
 
-#### Step 9.1: Uninstall and Reinstall Zammad Without Resolving Dependencies
+#### Passo 9.1: desinstalar e reinstalar o Zammad sem resolver dependências
 
 ::: tabs
 
@@ -137,10 +140,10 @@ sudo zypper install zammad
 :::
 
 ::: tip
-You're unsure if above is really required and a mere reinstall would be
-enough? If you run a dedicated install command on for Zammad and receive
-the following, you absolutely have to run above to fix your
-installation.
+Você não tem certeza se o acima é realmente necessário e uma simples reinstalação seria
+suficiente? Se você executar um comando de instalação dedicado para o Zammad e receber
+o seguinte, você absolutamente precisa executar o acima para corrigir sua
+instalação.
 
 ``` sh
 root@zammad:/# apt update && apt install zammad
@@ -153,47 +156,48 @@ root@zammad:/# apt update && apt install zammad
 
 :::
 
-#### Step 9.2: Clear the Cache
+#### Passo 9.2: limpar o cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-#### Step 9.3: Ensure Zammad is Running
+#### Passo 9.3: garantir que o Zammad esteja em execução
 
 ``` sh
 sudo systemctl status zammad
 ```
 
-If Zammad is not running, run:
+Se o Zammad não estiver em execução, execute:
 
 ```sh
 sudo systemctl start zammad
 ```
 
 ::: tip
-Migrated from Zammad SaaS or switching provider?
+Migrou do Zammad SaaS ou está trocando de provedor?
 
-Please make sure that your email notification channel and
-FQDN configuration is correct.
+Certifique-se de que seu canal de notificação por email e a
+configuração de FQDN estejam corretos.
 :::
 
-## Step 10: Apply Missing Environmental Settings
+## Passo 10: aplicar configurações ambientais ausentes
 
-If you've set any environmental settings please re-apply your settings now.
-You backed them up in [Step
+Se você definiu quaisquer configurações ambientais, reaplique-as agora. Você
+as fez backup no [Passo
 1](#step-1-note-down-your-environmental-adjustments).
 
-If not already done, please [install
-Elasticsearch](/en/tutorials/install-elasticsearch) now and perform the
-steps to [connect to and configure
-Elasticsearch](/en/tutorials/connect-config-elasticsearch) after
-installation.
+Se ainda não fez isso, [instale o
+Elasticsearch](/pt_BR/tutorials/install-elasticsearch) agora e realize as
+etapas para [conectar e configurar o
+Elasticsearch](/pt_BR/tutorials/connect-config-elasticsearch) após a
+instalação.
 
-## Step 11: Re-enable Channels and Deactivate Maintenance Mode
+## Passo 11: reativar canais e desativar o modo de manutenção
 
-Set the previous deactivated channels back to active if you're sure
-everything was successful. At this point Zammad will start to _change data_!
+Defina os canais previamente desativados de volta como ativos, se tiver
+certeza de que tudo deu certo. Neste ponto, o Zammad começará a _alterar
+dados_!
 
-After verifying the functionality of your channels, allow your agents and
-customers to log in again by disabling the maintenance mode.
+Depois de verificar a funcionalidade dos seus canais, permita que seus
+agentes e clientes façam login novamente, desativando o modo de manutenção.

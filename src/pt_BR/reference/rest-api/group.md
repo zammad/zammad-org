@@ -1,24 +1,24 @@
 ---
 order: 6
-title: Group
+title: Grupo
 ---
 
-# Group
+# Grupo
 
 ::: info
 
-- Please note that `follow_up_possible` may not work as expected. The
-  possible values are `yes` or `new_ticket`!
-- If you want to create or update **subgroups**, use `::` as delimiter
-  for the names. You also have to name the complete hierarchy in the
-  name. Example: `Sales::Europe::South`
+- Observe que `follow_up_possible` pode não funcionar como esperado. Os
+  valores possíveis são `yes` ou `new_ticket`!
+- Se você quiser criar ou atualizar **subgrupos**, use `::` como delimitador
+  para os nomes. Você também precisa nomear a hierarquia completa no
+  nome. Exemplo: `Sales::Europe::South`
 :::
 
-## List
+## Listar
 
-Required permission: `admin.group`
+Permissão necessária: `admin.group`
 
-`GET`-Request sent: `/api/v1/groups`
+Solicitação `GET` enviada: `/api/v1/groups`
 
 ::: details
 
@@ -26,11 +26,11 @@ Required permission: `admin.group`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `admin.group`
+Permissão necessária: `admin.group`
 
-`GET`-Request sent: `/api/v1/groups/{id}`
+Solicitação `GET` enviada: `/api/v1/groups/{id}`
 
 ::: details
 
@@ -38,11 +38,11 @@ Required permission: `admin.group`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.group`
+Permissão necessária: `admin.group`
 
-`POST`-Request sent: `/api/v1/groups`
+Solicitação `POST` enviada: `/api/v1/groups`
 
 :::: details
 
@@ -59,11 +59,11 @@ Required permission: `admin.group`
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.group`
+Permissão necessária: `admin.group`
 
-`PUT`-Request sent: `/api/v1/groups/{id}`
+Solicitação `PUT` enviada: `/api/v1/groups/{id}`
 
 :::: details
 
@@ -82,22 +82,22 @@ Required permission: `admin.group`
 
 ## Excluir
 
-Required permission: `admin.group`
+Permissão necessária: `admin.group`
 
-`DELETE`-Request sent: `/api/v1/groups/{id}`
+Solicitação `DELETE` enviada: `/api/v1/groups/{id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Esta é uma remoção permanente**:
 
-Please note that removing groups cannot be undone.
+Observe que remover grupos não pode ser desfeito.
 
-Removing organizations with references in e.g. activity streams or
-tickets is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Remover organizações com referências, por exemplo, em feeds de atividade ou
+tickets, não é possível via API - isso será indicado por
+`"error": "Can't delete, object has references."`. Isso _não_ é um bug.
 
-Consider setting affected groups to inactive instead or ensure to move
-all existing tickets to new groups.
+Considere definir os grupos afetados como inativos, ou garanta mover
+todos os tickets existentes para novos grupos.
 
 :::
 

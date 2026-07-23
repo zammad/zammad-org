@@ -1,148 +1,153 @@
 ---
 order: 7
-title: 'User Profile'
+title: 'Perfil do usuário'
 ---
 
-# User Profile
+# Perfil do usuário
 
-Adjust your account and personal settings in your user profile. Some of the
-options may not be available, depending on how your system is configured and
-your permissions. Open it from the avatar menu in the sidebar. Read on for
-more details.
+Ajuste sua conta e configurações pessoais no seu perfil de usuário. Algumas
+das opções podem não estar disponíveis, dependendo de como seu sistema está
+configurado e de suas permissões. Abra-o pelo menu do avatar na barra
+lateral. Continue lendo para mais detalhes.
 
-## Avatar Menu
+## Menu do avatar
 
-To open the avatar menu, click on your avatar icon in the bottom left corner
-in the sidebar. This icon either shows your initials or a profile picture.
+Para abrir o menu do avatar, clique no ícone do seu avatar no canto inferior
+esquerdo na barra lateral. Esse ícone mostra suas iniciais ou uma foto de
+perfil.
 
-![Screenshot shows user detail
-panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Captura de tela mostra o painel de detalhes do
+usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
-The menu contains the following entries:
+O menu contém as seguintes entradas:
 
-- **Link(s) to documentation**: depending on your roles you can see one or
-  more documentation links.
-- **Appearance**: switch between dark, light and automatic mode. The
-  automatic mode displays Zammad according to your web browser's current
-  preference.
-- **Keyboard shortcuts**: opens a popup with the available keyboard
-  shortcuts. Alternatively, press [[?]] on your keyboard to show it too.
-- **Profile settings**: opens your profile settings where you can adjust
-  your avatar, password, notification settings and much more, see next
-  section.
+- **Link(s) to documentation**: dependendo das suas funções, você pode ver
+  um ou mais links de documentação.
+- **Appearance**: alterne entre os modos escuro, claro e automático. O modo
+  automático exibe o Zammad de acordo com a preferência atual do seu
+  navegador.
+- **Keyboard shortcuts**: abre um popup com os atalhos de teclado
+  disponíveis. Como alternativa, pressione [[?]] no seu teclado para
+  exibi-lo também.
+- **Profile settings**: abre as configurações do seu perfil, onde você pode
+  ajustar seu avatar, senha, configurações de notificação e muito mais; veja
+  a próxima seção.
 
-## Profile Settings
+## Configurações de perfil
 
-![Screenshot shows user profile
-settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Captura de tela mostra as configurações de perfil do
+usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
-### Appearance
+### Aparência
 
-Change the appearance of Zammad. Available options:
+Altere a aparência do Zammad. Opções disponíveis:
 
-- Dark mode
-- Light mode
-- Automatic mode
+- Modo escuro
+- Modo claro
+- Modo automático
 
-The last option tries to detect your browser's preference. It depends on
-your web browser if it works.
+A última opção tenta detectar a preferência do seu navegador. Depende do seu
+navegador se isso funciona.
 
 ::: tip
-If you want to switch quickly between dark and light mode, you can also use the toggle in the
-[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].
+Se você quiser alternar rapidamente entre o modo escuro e claro, também pode usar a chave no
+[menu do avatar](#avatar-menu) ou usar o atalho de teclado simplesmente pressionando [[d]].
 :::
 
-### Language
+### Idioma
 
-Choose the language in which Zammad's UI is displayed.
+Escolha o idioma no qual a interface do Zammad é exibida.
 
 ### Avatar
 
-Adjust your avatar image. By default, the initials of your user are
-displayed on a colored background. If you want to add an image, simply
-upload one or use your camera, if you have one.
+Ajuste sua imagem de avatar. Por padrão, as iniciais do seu usuário são
+exibidas em um fundo colorido. Se você quiser adicionar uma imagem, basta
+enviar uma ou usar sua câmera, se tiver uma.
 
-After capturing or uploading an image, you can crop it. Have a look at the
-preview at the top of the right flyout.
+Depois de capturar ou enviar uma imagem, você pode recortá-la. Dê uma olhada
+na pré-visualização no topo do painel flutuante à direita.
 
-### Out of Office
+### Fora do escritório
 
-Define absence periods (e.g. for your vacation) and designate a substitute
-to handle your tickets while you are away.
+Defina períodos de ausência (por exemplo, para suas férias) e designe um
+substituto para lidar com seus tickets enquanto você estiver fora.
 
-Your designated substitute will receive updates on new tickets and changes
-to existing ones while you're away.  Additionally, your custom overviews are
-available for this agent to keep track of your tickets. You receive
-notifications while you are absent, too.
+Seu substituto designado receberá atualizações sobre novos tickets e
+alterações nos existentes enquanto você estiver fora. Além disso, suas
+visões gerais personalizadas ficam disponíveis para esse agente acompanhar
+seus tickets. Você também recebe notificações enquanto estiver ausente.
 
 ### Senha
 
-Change the password of your account. To update it, provide your old
-password, the new password and confirm the new one by typing it again.
+Altere a senha da sua conta. Para atualizá-la, informe sua senha antiga, a
+nova senha e confirme a nova digitando-a novamente.
 
-### Two-Factor Authentication
+### Autenticação de dois fatores
 
-Set up a two-factor authentication (2FA) to increase the security of your
-account. Your admin must have activated at least one 2FA method. It may be
-even enforced to use a 2FA method by your admin.
+Configure uma autenticação de dois fatores (2FA) para aumentar a segurança
+da sua conta. Seu administrador precisa ter ativado pelo menos um método de
+2FA. Pode até ser obrigatório usar um método de 2FA, definido pelo seu
+administrador.
 
-After following the [2FA guide](./guides/two-factor-auth), you have to
-provide your second factor at the next login.  If you can't provide your
-configured 2FA method, contact your admin to reset it.
+Depois de seguir o [guia de 2FA](./guides/two-factor-auth), você precisa
+fornecer seu segundo fator no próximo login. Se você não conseguir fornecer
+seu método de 2FA configurado, entre em contato com seu administrador para
+redefini-lo.
 
-### Devices
+### Dispositivos
 
-Here you can find a list of all devices logged into your Zammad account. If
-necessary, you can revoke the access by clicking the delete icon in the
-"Actions" column. This ends the session on this device and requires a new
-login on this device.
+Aqui você encontra uma lista de todos os dispositivos conectados à sua conta
+do Zammad. Se necessário, você pode revogar o acesso clicando no ícone de
+exclusão na coluna "Actions". Isso encerra a sessão nesse dispositivo e
+exige um novo login nele.
 
-### Token Access
+### Acesso por token
 
-Generate a personal access token for a third party application to access the
-Zammad API. After clicking the `New Personal Access Token` button, you can
-set a name, an expiration date and configure the permissions for this token.
+Gere um token de acesso pessoal para que um aplicativo de terceiros acesse a
+API do Zammad. Depois de clicar no botão `New Personal Access Token`, você
+pode definir um nome, uma data de expiração e configurar as permissões desse
+token.
 
-After creating the token, it gets displayed in a dialog only once. Make sure
-to copy it because there is no possibility to access it again.
+Depois de criar o token, ele é exibido em uma caixa de diálogo apenas uma
+vez. Certifique-se de copiá-lo, pois não há como acessá-lo novamente.
 
-![Screenshot shows flyout with created token and copy
-button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
+![Captura de tela mostra o painel flutuante com o token criado e o botão de
+copiar](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
-### Notifications
+### Notificações
 
-Adjust the notifications you get. You can adjust:
+Ajuste as notificações que você recebe. Você pode ajustar:
 
-- For which ticket actions you get notified (e.g. for new tickets, for
-  escalated tickets)
-- For which ticket you get notified based on the assignment and your
-  relation to it (e.g. only yours, not assigned, subscribed tickets)
-- On which way you get notified (only in browser or additionally via email)
-- For tickets in which group you get notified
+- Para quais ações de ticket você é notificado (por exemplo, novos tickets,
+  tickets escalonados)
+- Para quais tickets você é notificado com base na atribuição e sua relação
+  com eles (por exemplo, só os seus, não atribuídos, tickets inscritos)
+- De que forma você é notificado (apenas no navegador ou também por email)
+- Para tickets em qual grupo você é notificado
 
-Additionally, you can select a notification sound or disable it.
+Além disso, você pode selecionar um som de notificação ou desativá-lo.
 
 ::: tip
-To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.
-This is requested when Zammad tries to send you a notification the first time.
+Para ser notificado por som e notificação no seu sistema operacional, você precisa permitir que o Zammad envie notificações.
+Isso é solicitado quando o Zammad tenta enviar uma notificação pela primeira vez.
 
-If you refused it and want to allow it now, look for an icon in the address bar where you can adjust the permissions of
-the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have
-a look at your browser's settings.
+Se você recusou e quer permitir agora, procure um ícone na barra de endereço onde você pode ajustar as permissões do
+site. Depende do seu navegador como fazer isso exatamente. Se você não conseguir encontrar, pesquise na web ou dê
+uma olhada nas configurações do seu navegador.
 :::
 
-### Overviews
+### Visões gerais
 
-Change the order of overviews for your account. Simply drag & drop them by
-clicking the handles on the left side.  If your admin changes the order,
-your custom order remains. You can switch back to your admin's order by
-clicking the `Reset Overview Order` button.
+Altere a ordem das visões gerais da sua conta. Basta arrastar e soltar
+clicando nas alças no lado esquerdo. Se seu administrador alterar a ordem,
+sua ordem personalizada permanece. Você pode voltar à ordem do administrador
+clicando no botão `Reset Overview Order`.
 
-### Calendar
+### Calendário
 
-Zammad allows you to subscribe to a calendar feed (ical) to see tickets in
-your favorite calendar application.  Use either the upper **Combined
-subscription URL** to subscribe to all tickets or the lower **Direct
-subscription URL**.  By choosing the latter, you can define which tickets
-based on ticket you want to include based on the state and assignment
-status.
+O Zammad permite que você se inscreva em um feed de calendário (ical) para
+ver tickets no seu aplicativo de calendário favorito. Use a **Combined
+subscription URL** superior para se inscrever em todos os tickets, ou a
+**Direct subscription URL** inferior. Ao escolher esta última, você pode
+definir quais tickets deseja incluir com base no estado e status de
+atribuição.

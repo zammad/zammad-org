@@ -1,15 +1,15 @@
 ---
 order: 14
-title: Role
+title: 'Função (Role)'
 ---
 
 # Papéis
 
-## List
+## Listar
 
-Required permission: `admin.role`
+Permissão necessária: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles`
+Solicitação `GET` enviada: `/api/v1/roles`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `admin.role`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `admin.role`
+Permissão necessária: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles/{id}`
+Solicitação `GET` enviada: `/api/v1/roles/{id}`
 
 ::: details
 
@@ -29,11 +29,11 @@ Required permission: `admin.role`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.role`
+Permissão necessária: `admin.role`
 
-`POST` -Request sent: `/api/v1/roles`
+Solicitação `POST` enviada: `/api/v1/roles`
 
 :::: details
 
@@ -50,11 +50,11 @@ Required permission: `admin.role`
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.role`
+Permissão necessária: `admin.role`
 
-`PUT` -Request sent: `/api/v1/roles/{id}`
+Solicitação `PUT` enviada: `/api/v1/roles/{id}`
 
 :::: details
 

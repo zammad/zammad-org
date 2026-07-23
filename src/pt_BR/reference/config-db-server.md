@@ -1,31 +1,31 @@
 ---
 order: 6
-title: 'Configure Database Server'
+title: 'Configurar servidor de banco de dados'
 ---
 
-# Configure Database Server
+# Configurar servidor de banco de dados
 
-This page should only enlighten the relevant parts for Zammad and is not
-meant to be a complete guide. It is only relevant for you if you are running
-an existing PostgreSQL server and want to run Zammad's database there as
-well.
+Esta página deve apenas esclarecer as partes relevantes para o Zammad e não
+pretende ser um guia completo. Ela só é relevante para você se estiver
+executando um servidor PostgreSQL existente e quiser executar o banco de
+dados do Zammad ali também.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully
-compatible with PostgreSQL. Typically this is called "session connection pooling". Transaction-based connection pooling
-is not supported and may lead to errors during database migrations.
+Se você usa um software de pooling de conexão de banco de dados como o PgBouncer, certifique-se de usar um modo de pooling totalmente
+compatível com o PostgreSQL. Normalmente, isso é chamado de "session connection pooling". O pooling de conexão baseado em transação
+não é suportado e pode levar a erros durante as migrações de banco de dados.
 :::
 
-Below you can the locations of the relevant PostgreSQL configuration files
-to adjust. Keep in mind that versions may differ from your setup - adapt
-where needed.
+Abaixo você encontra os locais dos arquivos de configuração relevantes do
+PostgreSQL a ajustar. Tenha em mente que as versões podem diferir do seu
+ambiente - adapte onde for necessário.
 
 ::: tabs
 
 === Debian & Ubuntu
 
 ```ansi
-/etc/postgresql/{your version}/main/postgresql.conf
+/etc/postgresql/{sua versão}/main/postgresql.conf
 ```
 
 === CentOS & OpenSUSE
@@ -34,9 +34,9 @@ where needed.
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Others
+=== Outros
 
-Can't find your configuration files? You can run the following command to get the path:
+Não consegue encontrar seus arquivos de configuração? Você pode executar o seguinte comando para obter o caminho:
 
 ``` sh
 sudo -u postgres psql -c 'SHOW config_file'
@@ -44,57 +44,59 @@ sudo -u postgres psql -c 'SHOW config_file'
 
 :::
 
-## Adjust Pool Size
+## Ajustar tamanho do pool
 
-Within `database.yml` (`config/` directory) you can define the allowed pool
-size. By default each Zammad process takes up to `50` connections (`pool:
-50`).
+Dentro de `database.yml` (diretório `config/`), você pode definir o tamanho
+do pool permitido. Por padrão, cada processo do Zammad usa até `50` conexões
+(`pool: 50`).
 
-This should be fairly enough for _every_ use case. If you experience
-database connection timeouts or similar pool errors, this usually indicates
-to other issues that are relevant to your PostgreSQL.
+Isso deve ser bastante suficiente para _todos_ os casos de uso. Se você
+tiver tempos limite de conexão de banco de dados ou erros de pool
+semelhantes, isso geralmente indica outros problemas relevantes para o seu
+PostgreSQL.
 
-## Adjust `max_connections` (mandatory)
+## Ajustar `max_connections` (obrigatório)
 
-Zammad uses up to 200 connections by default. Depending on your setup and
-load, you may want to change this value.
+O Zammad usa até 200 conexões por padrão. Dependendo da sua configuração e
+carga, você pode querer alterar esse valor.
 
-### Determine Value
+### Determinar valor
 
-To help you determine a number, Zammad ships a function to calculate a
-suggestion. If executed, it asks you to input some integer values and
-additionally uses internally known values for the calculation. Be aware that
-the suggestion is instance specific. That means you must run the calculation
-on the system you want to adjust the `max_connection` value.
+Para ajudá-lo a determinar um número, o Zammad vem com uma função para
+calcular uma sugestão. Se executada, ela pede que você informe alguns
+valores inteiros e também usa valores conhecidos internamente para o
+cálculo. Esteja ciente de que a sugestão é específica da instância. Isso
+significa que você deve executar o cálculo no sistema no qual deseja ajustar
+o valor `max_connection`.
 
-Run it by using the command:
+Execute-o usando o comando:
 
 ``` sh
 rake zammad:db:max_connections
 ```
 
-### Adjust Value
+### Ajustar valor
 
-Raise maximum allowed number of connections:
+Aumentar o número máximo de conexões permitidas:
 
 ``` sh
 sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Aplique as alterações reiniciando o PostgreSQL e o Zammad (nesta ordem):
 
 ```sh
 sudo systemctl restart postgresql zammad
 ```
 
-## Adjust PostgreSQL for bigger instances (optional)
+## Ajustar o PostgreSQL para instâncias maiores (opcional)
 
 ::: warning
-Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found
-to be useful, everything else is out of scope of this documentation!
+Verifique as configurações abaixo primeiro e garanta que seu sistema seja capaz de atender aos requisitos! As configurações abaixo são o que consideramos
+útil; qualquer outra coisa está fora do escopo desta documentação!
 :::
 
-Some caching improvements:
+Algumas melhorias de cache:
 
 ``` sh
 sed -i "/shared_buffers/c\shared_buffers = 2GB" <postgresql-configuration-file>
@@ -112,7 +114,7 @@ sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
 sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Aplique as alterações reiniciando o PostgreSQL e o Zammad (nesta ordem):
 
 ```sh
 sudo systemctl restart postgresql zammad

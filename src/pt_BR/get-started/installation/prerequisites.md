@@ -1,70 +1,72 @@
 ---
 order: 1
-title: Prerequisites
+title: Pré-requisitos
 ---
 
-# Prerequisites
+# Pré-requisitos
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Server Hardware
+## Hardware do servidor
 
-The hardware requirements vary depending on the scenario. This makes it hard
-to come up with specific CPU and memory numbers which are fitting for all
-use cases. In any case, more and better hardware ensures that Zammad runs
-smoothly and the maintenance breaks for updates should be shorter as well.
+Os requisitos de hardware variam dependendo do cenário. Isso torna difícil
+apresentar números específicos de CPU e memória que se encaixem em todos os
+casos de uso. Em qualquer caso, mais e melhor hardware garante que o Zammad
+funcione sem problemas, e as janelas de manutenção para atualizações também
+devem ser mais curtas.
 
-As an absolute minimum for basic usage with a PostgreSQL server, we
-consider:
+Como mínimo absoluto para uso básico com um servidor PostgreSQL,
+consideramos:
 
-- 2 CPU cores
-- 6 GB RAM (+4 GB for Elasticsearch)
+- 2 núcleos de CPU
+- 6 GB de RAM (+4 GB para o Elasticsearch)
 
-For an example scenario with up to 40 agents, a good starting point could
-be:
+Para um cenário de exemplo com até 40 agentes, um bom ponto de partida
+poderia ser:
 
-- 6 CPU cores
-- 6 GB RAM (+6 GB for Elasticsearch)
+- 6 núcleos de CPU
+- 6 GB de RAM (+6 GB para o Elasticsearch)
 
-## Server Software
+## Software do servidor
 
-Depending on the installation type, there are some prerequisites. They are
-included in the installation instructions:
+Dependendo do tipo de instalação, há alguns pré-requisitos. Eles estão
+incluídos nas instruções de instalação:
 
-- [Package](package)
+- [Pacote](package)
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Client Requirements
+## Requisitos do cliente
 
 ### Navegador
 
-Because Zammad is a web application, only an up-to-date browser is
-needed. The following browsers are supported in their latest stable version:
+Como o Zammad é uma aplicação web, basta ter um navegador atualizado. Os
+seguintes navegadores são suportados em sua versão estável mais recente:
 
 - Firefox
-- Chrome (and Chromium-based)
+- Chrome (e baseados em Chromium)
 - Opera
 - Safari
 
-This does not mean that Zammad will not work with other browsers or older
-versions, just that we do not test against or provide support for them.
+Isso não significa que o Zammad não funcionará com outros navegadores ou
+versões mais antigas, apenas que não testamos ou fornecemos suporte para
+eles.
 
 ### Rede
 
-Be aware that communication between client and server uses WebSockets. Some
-firewalls and proxies may filter these connections. This could reduce
-performance or prevent real-time updates.
+Esteja ciente de que a comunicação entre cliente e servidor usa
+WebSockets. Alguns firewalls e proxies podem filtrar essas conexões. Isso
+pode reduzir o desempenho ou impedir atualizações em tempo real.
 
-### Display
+### Tela
 
-Zammad adapts its layout to different screen sizes. For the best experience,
-we recommend using a display with sufficient screen size and
-resolution. When using small screens, Zammad collapses elements like the
-sidebar to maintain usability. If these measures are not sufficient, a toast
-warning shows up at the top of the screen. You can hide it by clicking the
-corresponding button.
+O Zammad adapta seu layout a diferentes tamanhos de tela. Para a melhor
+experiência, recomendamos usar uma tela com tamanho e resolução
+suficientes. Ao usar telas pequenas, o Zammad recolhe elementos como a barra
+lateral para manter a usabilidade. Se essas medidas não forem suficientes,
+um aviso toast aparece no topo da tela. Você pode ocultá-lo clicando no
+botão correspondente.
 
-The standard desktop interface is intended for screens at least 640 px
-wide. On narrower screens, use the [mobile
-view](/en/documentation/use/guides/mobile-view).
+A interface desktop padrão é destinada a telas com pelo menos 640 px de
+largura. Em telas mais estreitas, use a [visualização
+mobile](/pt_BR/documentation/use/guides/mobile-view).

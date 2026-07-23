@@ -6,16 +6,16 @@ title: Ticket
 # Ticket
 
 ::: warning
-Ticket endpoints depend on group permissions and if the user you're
-using is an **agent**. Because of this tickets may or may not be
-available.
+Os endpoints de ticket dependem das permissões de grupo e se o usuário
+que você está usando é um **agente**. Por causa disso, os tickets podem
+ou não estar disponíveis.
 :::
 
-## List
+## Listar
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets`
+Solicitação `GET` enviada: `/api/v1/tickets`
 
 ::: details
 
@@ -23,11 +23,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}`
+Solicitação `GET` enviada: `/api/v1/tickets/{ticket id}`
 
 ::: details
 
@@ -35,27 +35,27 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Criar
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/tickets`
+Solicitação `POST` enviada: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**Em nome de usuários**
 
-If you want to create tickets on behalf of other users, use the
-`customer_id` attribute. `ticket.agent` is mandatory for this. Use
-`guess:{email address}` to save an API call if you don't know the
-user's ID or want to create the user in question
+Se você quiser criar tickets em nome de outros usuários, use o
+atributo `customer_id`. `ticket.agent` é obrigatório para isso. Use
+`guess:{email address}` para economizar uma chamada de API se você não souber
+o ID do usuário ou quiser criar o usuário em questão
 (`"customer_id": "guess:jane@doe.com"`).
 
-**Add mention subscription right away**:
+**Adicionar inscrição de menção imediatamente**:
 
-Add the `mentions` attribute to your ticket payload and provide an
-array of user ids to directly subscribe them during ticket creation.
+Adicione o atributo `mentions` ao payload do seu ticket e forneça um
+array de IDs de usuário para inscrevê-los diretamente durante a criação do ticket.
 
-E.g.: `"mentions": [1, 5, 7, 8],`
+Exemplo: `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -75,27 +75,27 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-For more article attributes and options have a look into
-[articles](/en/reference/rest-api/articles).
+Para mais atributos e opções de artigo, dê uma olhada em
+[artigos](/pt_BR/reference/rest-api/articles).
 :::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}`
+Solicitação `PUT` enviada: `/api/v1/tickets/{ticket id}`
 
 ::: tip
-**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the
-following HTTP header to your request:
+**Suprimir notificações:** Para atualizar um ticket sem acionar notificações de agente (email e no app), adicione o
+seguinte cabeçalho HTTP à sua solicitação:
 
 ```plain
 X-Zammad-Suppress-Notifications: true
 ```
 
-This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers. It also works for the
-`POST /api/v1/ticket_articles` endpoint.
+Isso é útil para integrações automatizadas que atualizam tickets via webhooks ou gatilhos, para evitar loops de notificação. O
+cabeçalho afeta apenas contas de admin e agente, e é ignorado para clientes. Também funciona para o
+endpoint `POST /api/v1/ticket_articles`.
 :::
 
 ::::: details
@@ -107,8 +107,8 @@ header only affects admin and agent accounts and is ignored for customers. It al
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Above example provides an article. This article is a _new article_ and
-does not affect any existing ones.
+O exemplo acima fornece um artigo. Este artigo é um _novo artigo_ e
+não afeta nenhum existente.
 :::
 
 === Response
@@ -119,24 +119,24 @@ does not affect any existing ones.
 :::::
 
 ::: tip
-**Adding attachments**
+**Adicionando anexos**
 
-Attachment payloads are identical to the `POST` method, just use `PUT`
-instead.
+Os payloads de anexo são idênticos ao método `POST`, apenas use `PUT`
+em vez disso.
 :::
 
 ## Excluir
 
-Required permission: `admin`
+Permissão necessária: `admin`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`
+Solicitação `DELETE` enviada: `/api/v1/tickets/{ticket id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Esta é uma remoção permanente**:
 
-Please note that removing tickets cannot be undone. All data (e.g.
-articles & attachments) will be lost.
+Observe que remover tickets não pode ser desfeito. Todos os dados (por exemplo,
+artigos e anexos) serão perdidos.
 :::
 
 ::: details

@@ -1,16 +1,16 @@
 ---
 order: 13
-title: Priorities
+title: Prioridades
 ---
 
-# Priorities
+# Prioridades
 
-## List
+## Listar
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Permissão necessária: `admin.object` **ou** `ticket.agent` **ou**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities`
+Solicitação `GET` enviada: `/api/v1/ticket_priorities`
 
 ::: details
 
@@ -18,12 +18,12 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Permissão necessária: `admin.object` **ou** `ticket.agent` **ou**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities/{id}`
+Solicitação `GET` enviada: `/api/v1/ticket_priorities/{id}`
 
 ::: details
 
@@ -31,11 +31,11 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_priorities`
+Solicitação `POST` enviada: `/api/v1/ticket_priorities`
 
 :::: details
 
@@ -52,11 +52,11 @@ Required permission: `admin.object`
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_priorities/{id}`
+Solicitação `PUT` enviada: `/api/v1/ticket_priorities/{id}`
 
 :::: details
 
@@ -75,21 +75,21 @@ Required permission: `admin.object`
 
 ## Excluir
 
-Required permission: `admin.object`
+Permissão necessária: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
+Solicitação `DELETE` enviada: `/api/v1/ticket_priorities/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing priorities cannot be undone.
+Observe que remover prioridades não pode ser desfeito.
 
-Removing ticket priorities with references in tickets is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Remover prioridades de ticket com referências em tickets não é possível
+via API - isso será indicado por
+`"error": "Can't delete, object has references."`. Isso _não_ é um bug.
 
-Consider either setting said priority to `active: false` or adjust all
-tickets with the to remove priority to another priority.
+Considere definir essa prioridade como `active: false`, ou ajustar todos os
+tickets com a prioridade a remover para outra prioridade.
 :::
 
 ::: details

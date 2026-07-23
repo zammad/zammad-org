@@ -1,44 +1,44 @@
 ---
 features:
   - 
-    details: 'If you are new to Zammad and ticketing software in general, first read the basics here.'
+    details: 'Se você é novo no Zammad e em software de tickets em geral, leia primeiro os fundamentos aqui.'
     icon: 🙋
-    link: /en/documentation/use/basics/zammad-ui
-    title: 'Zammad Beginner'
+    link: /pt_BR/documentation/use/basics/zammad-ui
+    title: 'Iniciante no Zammad'
   - 
-    details: 'If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar.'
+    details: 'Se você já está familiarizado com os fundamentos, continue lendo aqui ou vá direto para a seção relevante na barra lateral de navegação.'
     icon: 🧑‍✈️
-    link: /en/documentation/use/advanced-features
-    title: 'Advanced User'
+    link: /pt_BR/documentation/use/advanced-features
+    title: 'Usuário avançado'
   - 
-    details: 'As an administrator, head over to the Manage Zammad section.'
+    details: 'Como administrador, acesse a seção Gerenciar o Zammad.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage/start
-    title: Administrator
+    link: /pt_BR/documentation/manage/start
+    title: Administrador
 order: 1
-title: Start
+title: Início
 ---
 
-# Welcome
+# Bem-vindo
 
-Welcome to the user documentation of Zammad. Here you can learn how to use
-Zammad to collaborate with your colleagues even better!
+Bem-vindo à documentação do usuário do Zammad. Aqui você pode aprender como
+usar o Zammad para colaborar ainda melhor com seus colegas!
 
-In general, Zammad should be pretty self explanatory. However, there are
-features that are not obvious at first glance.  These features are described
-in this documentation as well as some general explanations and tips.
+Em geral, o Zammad deve ser bastante autoexplicativo. No entanto, há
+recursos que não são óbvios à primeira vista. Esses recursos são descritos
+nesta documentação, assim como algumas explicações gerais e dicas.
 
-This documentation is divided into different sections. Currently you are on
-the landing page of the user documentation.  Use the left sidebar to
-navigate to the desired section or use the search in the header or activate
-it by using its keyboard shortcut [[ctrl]] [[k]].
+Esta documentação está dividida em diferentes seções. Atualmente, você está
+na página inicial da documentação do usuário. Use a barra lateral esquerda
+para navegar até a seção desejada, ou use a pesquisa no cabeçalho, ou
+ative-a usando o atalho de teclado [[ctrl]] [[k]].
 
 ::: tip
 
-This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed
-by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside
-the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a
-page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).
+Esta documentação do usuário está incorporada em uma documentação abrangente do Zammad. Para garantir que os usuários não sejam sobrecarregados
+por conteúdo técnico, a pesquisa é limitada a esta seção, e a barra lateral de navegação mostra apenas a estrutura dentro
+da seção. Para ver a estrutura completa da documentação e/ou pesquisar em toda a documentação, basta mudar para uma
+página fora da seção de documentação do usuário (por exemplo, clicando em **Zammad Hub** no canto superior esquerdo).
 
 :::
 

@@ -1,15 +1,15 @@
 ---
 order: 15
-title: 'Shared Drafts'
+title: 'Rascunhos compartilhados'
 ---
 
-# Shared Drafts
+# Rascunhos compartilhados
 
-## Show
+## Mostrar
 
-Required permission: `ticket.agent`.
+Permissão necessária: `ticket.agent`.
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Solicitação `GET` enviada: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `ticket.agent`.
 
 :::
 
-## Create
+## Criar
 
-Required permission: `ticket.agent`.
+Permissão necessária: `ticket.agent`.
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Solicitação `PUT` enviada: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
@@ -38,11 +38,11 @@ Required permission: `ticket.agent`.
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `ticket.agent`
+Permissão necessária: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Solicitação `PATCH` enviada: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
@@ -59,11 +59,11 @@ Required permission: `ticket.agent`
 :::
 ::::
 
-## Remove
+## Remover
 
-Required permission: `ticket.agent`
+Permissão necessária: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+Solicitação `DELETE` enviada: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 

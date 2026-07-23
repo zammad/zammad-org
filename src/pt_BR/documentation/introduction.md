@@ -1,34 +1,36 @@
 ---
 features:
   - 
-    details: 'Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need.'
+    details: 'Encontre tudo sobre como trabalhar com o Zammad no dia a dia, com dicas, tutoriais e tudo mais que você possa precisar.'
     icon: 🙋
-    link: /en/documentation/use/start
-    title: 'User Documentation'
+    link: /pt_BR/documentation/use/start
+    title: 'Documentação do usuário'
   - 
-    details: 'Find out how to configure Zammad and connect it with remote systems.'
+    details: 'Descubra como configurar o Zammad e conectá-lo a sistemas remotos.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage/start
-    title: 'Administrator Documentation'
+    link: /pt_BR/documentation/manage/start
+    title: 'Documentação do administrador'
   - 
-    details: 'Learn about important terms and concepts used in Zammad.'
+    details: 'Aprenda sobre termos e conceitos importantes usados no Zammad.'
     icon: 🗂️
-    link: /en/reference/glossary
-    title: Glossary
+    link: /pt_BR/reference/glossary
+    title: Glossário
 order: 1
-title: Introduction
+title: Introdução
 ---
 
-# Welcome to the Zammad Documentation
+# Bem-vindo à documentação do Zammad
 
-This documentation serves as your comprehensive guide to getting the most
-out of your ticketing and helpdesk software.  Here, you'll find in-depth
-tutorials, user manuals and guides on how to effectively manage customer
-support requests, track issues, and collaborate with your team.
+Esta documentação serve como seu guia abrangente para aproveitar ao máximo
+seu software de tickets e helpdesk. Aqui você encontra tutoriais
+aprofundados, manuais do usuário e guias sobre como gerenciar efetivamente
+solicitações de suporte ao cliente, rastrear problemas e colaborar com sua
+equipe.
 
-Whether you're a new user or an experienced admin, our documentation is
-designed to provide you with the knowledge and tools you need to
-succeed. Browse through our resources, and discover how Zammad can help you
-deliver exceptional customer service and streamline your support operations.
+Seja você um usuário novo ou um administrador experiente, nossa documentação
+foi projetada para fornecer o conhecimento e as ferramentas necessárias para
+o seu sucesso. Navegue pelos nossos recursos e descubra como o Zammad pode
+ajudá-lo a oferecer um atendimento excepcional ao cliente e otimizar suas
+operações de suporte.
 
 <VPDocFeatures />

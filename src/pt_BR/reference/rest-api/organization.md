@@ -5,15 +5,15 @@ title: Organization
 
 # Organization
 
-## List
+## Listar
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Permissão necessária: `ticket.agent` **ou** `admin.organization`
 
 ::: info
-Technically, customers can only see their own organization if applicable.
+Tecnicamente, os clientes só podem ver sua própria organização, se aplicável.
 :::
 
-`GET`-Request sent: `/api/v1/organizations`
+Solicitação `GET` enviada: `/api/v1/organizations`
 
 ::: details
 
@@ -21,14 +21,14 @@ Technically, customers can only see their own organization if applicable.
 
 :::
 
-## Show
+## Mostrar
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Permissão necessária: `ticket.agent` **ou** `admin.organization`
 
-`GET`-Request sent: `/api/v1/organizations/{id}`
+Solicitação `GET` enviada: `/api/v1/organizations/{id}`
 
 ::: info
-Technically, any users in question can only see their own organization.
+Tecnicamente, quaisquer usuários em questão só podem ver sua própria organização.
 :::
 
 ::: details
@@ -37,11 +37,11 @@ Technically, any users in question can only see their own organization.
 
 :::
 
-## Create
+## Criar
 
-Required permission: `admin.organization`
+Permissão necessária: `admin.organization`
 
-`POST`-Request sent: `/api/v1/organizations`
+Solicitação `POST` enviada: `/api/v1/organizations`
 
 :::: details
 
@@ -58,11 +58,11 @@ Required permission: `admin.organization`
 :::
 ::::
 
-## Tempo de atualização
+## Atualização
 
-Required permission: `admin.organization`
+Permissão necessária: `admin.organization`
 
-`PUT`-Request sent: `/api/v1/organizations/{id}`
+Solicitação `PUT` enviada: `/api/v1/organizations/{id}`
 
 :::: details
 
@@ -81,21 +81,21 @@ Required permission: `admin.organization`
 
 ## Excluir
 
-Required permission: `admin.organization`
+Permissão necessária: `admin.organization`
 
-`DELETE`-Request sent: `/api/v1/organizations/{id}`
+Solicitação `DELETE` enviada: `/api/v1/organizations/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing organizations cannot be undone.
+Observe que remover organizações não pode ser desfeito.
 
-Removing organizations with references in e.g. activity streams or users
-is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Remover organizações com referências, por exemplo, em feeds de atividade ou usuários,
+não é possível via API - isso será indicado por
+`"error": "Can't delete, object has references."`. Isso _não_ é um bug.
 
-Consider using Zammad's Data Privacy feature via UI for
-more control instead.
+Considere usar o recurso de Privacidade de Dados do Zammad via interface para
+mais controle em vez disso.
 :::
 
 ::: details

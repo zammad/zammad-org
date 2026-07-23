@@ -1,4 +1,4 @@
 ---
 order: 1
-title: Modules
+title: Módulos
 ---

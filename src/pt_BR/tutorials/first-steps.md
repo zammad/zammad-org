@@ -1,84 +1,86 @@
 ---
 order: 4
-title: 'First Steps in Zammad'
+title: 'Primeiros passos no Zammad'
 ---
 
-# First Steps in Zammad
+# Primeiros passos no Zammad
 
-Congratulations, it seems you successfully installed Zammad. To start with
-your fresh installed Zammad, head over to the next section. Alternatively,
-you have other options:
+Parabéns, parece que você instalou o Zammad com sucesso. Para começar com
+seu Zammad recém-instalado, vá para a próxima seção. Como alternativa, você
+tem outras opções:
 
-- [Migrate from another supported ticketing system](/en/tutorials/migrate)
-- [Restore Zammad from an existing backup](/en/tutorials/backup-restore)
+- [Migrar de outro sistema de tickets suportado](/pt_BR/tutorials/migrate)
+- [Restaurar o Zammad a partir de um backup
+  existente](/pt_BR/tutorials/backup-restore)
 
-## Getting Started Wizard
+## Assistente de primeiros passos
 
-If you visit Zammad's web page the first time, you'll be greeted by its
-Getting Started Wizard. It will guide you through the first most important
-things.
+Se você visitar a página web do Zammad pela primeira vez, será recebido pelo
+Assistente de Primeiros Passos. Ele o guiará pelas primeiras e mais
+importantes coisas.
 
-### Step 1: Create Your First Administrator Account
+### Etapa 1: criar sua primeira conta de administrador
 
-Fill in the required information in the dialog. Your email address and
-password are important. These are your credentials to log in.
+Preencha as informações necessárias na caixa de diálogo. Seu endereço de
+email e senha são importantes. Essas são suas credenciais para fazer login.
 
-Zammad applies the following password policy by default:
+O Zammad aplica a seguinte política de senhas por padrão:
 
-- 10 characters or more
-- At least 2 UPPER and 2 lower characters
-- One or more digits
+- 10 caracteres ou mais
+- Pelo menos 2 caracteres maiúsculos e 2 minúsculos
+- Um ou mais dígitos
 
-### Step 2: Provide Company Information
+### Etapa 2: fornecer informações da empresa
 
-You can upload a custom logo of your company here. The instance address is
-detected automatically and only requires adjustment in case it is detected
-wrong. If you skip it, you can adjust these things later too.
+Você pode enviar um logo personalizado da sua empresa aqui. O endereço da
+instância é detectado automaticamente e só requer ajuste caso seja detectado
+incorretamente. Se você pular esta etapa, também pode ajustar essas coisas
+depois.
 
-### Step 3: Email Notification Channel
+### Etapa 3: canal de notificação por email
 
-By default, Zammad uses sendmail. This can be changed to SMTP here.
+Por padrão, o Zammad usa o sendmail. Isso pode ser alterado para SMTP aqui.
 
-Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP setups
-might fail - you can skip this step with choosing sendmail and adjust it later!
+O Zammad usa `noreply@<your-fqdn>` como endereço de remetente por padrão. Configurações SMTP
+podem falhar - você pode pular esta etapa escolhendo sendmail e ajustar depois!
 
-### Step 4: Your First Email Channel <Badge type="info" text="optional" />
+### Etapa 4: seu primeiro canal de email <Badge type="info" text="optional" />
 
-If you want to start right away, you can connect your email account already.
+Se você quiser começar imediatamente, já pode conectar sua conta de email.
 
 ::: danger
-By default, Zammad reacts to fetched emails (e.g. deletes them and sends
-automatically generated answers) If that’s not what you want, skip this step
-for now.
+Por padrão, o Zammad reage a emails buscados (por exemplo, exclui-os e envia
+respostas geradas automaticamente). Se não é isso que você quer, pule esta etapa
+por enquanto.
 :::
 
-After finishing the wizard you are automatically logged in to the just
-created account.
+Depois de concluir o assistente, você é conectado automaticamente na conta
+recém-criada.
 
-## Next Steps
+## Próximas etapas
 
-The list below might help you to find the right way. However, you should
-adapt it to your needs. You can find additional information across this
-documentation.
+A lista abaixo pode ajudá-lo a encontrar o caminho certo. No entanto, você
+deve adaptá-la às suas necessidades. Você pode encontrar informações
+adicionais ao longo desta documentação.
 
-- Configure your required groups
-- Adjust triggers as needed
-- Add postmaster filters if needed
-- Configure SLAs if needed
-- Add email / social media channels & signatures
-- Go back to group settings to add outgoing email addresses
-- Add Text Modules
-- Add Organizations
-- Configure roles if needed
-- Consider third party logins or LDAP integration for easier logins
-- Add agent accounts
-- Consider backup strategies for Zammad
+- Configure seus grupos necessários
+- Ajuste os gatilhos conforme necessário
+- Adicione filtros de postmaster, se necessário
+- Configure SLAs, se necessário
+- Adicione canais de email/redes sociais e assinaturas
+- Volte às configurações de grupo para adicionar endereços de email de saída
+- Adicione módulos de texto
+- Adicione organizações
+- Configure funções, se necessário
+- Considere logins de terceiros ou integração LDAP para logins mais fáceis
+- Adicione contas de agente
+- Considere estratégias de backup para o Zammad
 
 ::: tip
 
-**Are you still lost?**
+**Ainda perdido?**
 
-If you need help or you'll need to get in production a lot faster, you can also
-book workshops with one of our
-[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.
+Se você precisar de ajuda ou precisar entrar em produção muito mais rápido, também pode
+agendar workshops com um dos nossos
+[consultores do Zammad](https://zammad.com/en/company/contact){target=_blank}.
 :::

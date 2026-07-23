@@ -1,73 +1,77 @@
 ---
 order: 4
-title: 'Create Tickets'
+title: 'Criar tickets'
 ---
 
-# Create Tickets
+# Criar tickets
 
-When a customer messages you over a channel which is fetched by Zammad, a
-ticket is created automatically (unless Zammad recognizes it as a follow-up,
-then it gets added as an article to an existing ticket). However, there
-might be cases where you need to create a ticket manually. Examples:
+Quando um cliente envia uma mensagem por um canal que o Zammad busca
+automaticamente, um ticket é criado automaticamente (a menos que o Zammad o
+reconheça como um acompanhamento, e então ele é adicionado como um artigo a
+um ticket existente). No entanto, pode haver casos em que você precisa criar
+um ticket manualmente. Exemplos:
 
-- A customer calls you by phone.
-- You receive a paper letter from a customer.
-- A customer comes to a physical service desk.
-- You proactively have to inform a customer by sending out a message.
+- Um cliente liga para você por telefone.
+- Você recebe uma carta em papel de um cliente.
+- Um cliente vai até um balcão de atendimento físico.
+- Você precisa informar proativamente um cliente enviando uma mensagem.
 
-In situations like these, you need to create a new ticket manually and click
-the ::+:: button at the bottom of the primary navigation. This shows a
-ticket create screen where you can add all needed information.
+Em situações como essas, você precisa criar um novo ticket manualmente e
+clicar no botão ::+:: na parte inferior da navegação principal. Isso mostra
+uma tela de criação de ticket onde você pode adicionar todas as informações
+necessárias.
 
-![Screenshot shows ticket create
-screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
+![Captura de tela mostra a tela de criação de
+ticket](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
-## Type Selector
+## Seletor de tipo
 
-In the ticket create dialog, you can choose from different article types:
+Na caixa de diálogo de criação de ticket, você pode escolher entre
+diferentes tipos de artigo:
 
-- Received call: for issues initiated by a customer over the phone.
-- Outbound call: for issues initiated by an agent over the phone.
-- Send email: for issues initiated by an agent over email.
+- Chamada recebida: para assuntos iniciados por um cliente por telefone.
+- Chamada realizada: para assuntos iniciados por um agente por telefone.
+- Enviar email: para assuntos iniciados por um agente por email.
 
-When choosing **Send Email**, the customer receives an email with the title
-as subject and the text as email content.
+Ao escolher **Send Email**, o cliente recebe um email com o título como
+assunto e o texto como conteúdo do email.
 
-## Title
+## Título
 
-This is the title of a ticket which is shown in many places in Zammad. For
-example, this gets displayed in overviews.  It is also used as the subject
-for email communication. For emails, a ticket identifier is automatically
-appended (e.g. `Ticket#901234 - I need help!`).
+Este é o título de um ticket, que é exibido em muitos lugares no Zammad. Por
+exemplo, ele é exibido nas visões gerais. Também é usado como assunto para
+comunicação por email. Para emails, um identificador de ticket é
+automaticamente adicionado (por exemplo, `Ticket#901234 - I need help!`).
 
-## Customer
+## Cliente
 
-Enter a name or email address of a customer to search for existing
-accounts. You can even search for organizations and their members. Select an
-option from the dropdown menu or create a new customer by clicking the `+
-Create new Customer` button on the right side of the field. This opens a
-dialog where you can provide all relevant information of the customer. A
-ticket can only have one customer.
+Informe um nome ou endereço de email de um cliente para pesquisar contas
+existentes. Você pode até pesquisar organizações e seus membros. Selecione
+uma opção no menu suspenso ou crie um novo cliente clicando no botão `+
+Create new Customer` no lado direito do campo. Isso abre uma caixa de
+diálogo onde você pode fornecer todas as informações relevantes do
+cliente. Um ticket só pode ter um cliente.
 
-After setting a customer in the ticket create dialog, the customer sidebar
-automatically opens. You can see additional customer meta information
-including a hint about the currently opened tickets of the customer.
+Depois de definir um cliente na caixa de diálogo de criação de ticket, a
+barra lateral do cliente abre automaticamente. Você pode ver metainformações
+adicionais do cliente, incluindo uma dica sobre os tickets atualmente
+abertos do cliente.
 
-## Text
+## Texto
 
-This is the content section where the currently known details of the issue
-gets written down. For the "Send Email" type, this is the content/message of
-the email. To learn more about the editor and its features, check the
-[editor documentation](/en/documentation/use/guides/editor).
+Esta é a seção de conteúdo onde os detalhes atualmente conhecidos do assunto
+são registrados. Para o tipo "Send Email", este é o conteúdo/mensagem do
+email. Para saber mais sobre o editor e seus recursos, consulte a
+[documentação do editor](/pt_BR/documentation/use/guides/editor).
 
-## Ticket Attributes
+## Atributos do ticket
 
-As you may know, there are additional ticket attributes such as group,
-priority and owner that you can set. If you haven't read the [ticket
-basics](ticket-basics) yet, check it out to learn more.
+Como você já deve saber, há atributos de ticket adicionais, como grupo,
+prioridade e responsável, que você pode definir. Se você ainda não leu os
+[fundamentos de tickets](ticket-basics), confira para saber mais.
 
 -----
 
-After you provided the relevant information, finally create the ticket with
-a click on the `Create` button. Read on [how to work with existing
-tickets](work-with-tickets).
+Depois de fornecer as informações relevantes, finalmente crie o ticket
+clicando no botão `Create`. Continue lendo [como trabalhar com tickets
+existentes](work-with-tickets).

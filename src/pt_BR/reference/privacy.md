@@ -1,123 +1,129 @@
 ---
 order: 99
-title: 'Data Retention and External Services'
+title: 'Retenção de dados e serviços externos'
 ---
 
-# Data Retention and External Services
+# Retenção de dados e serviços externos
 
-How long does Zammad store user data? How can I manage its user data
-retention behavior? To which services connects Zammad?
+Por quanto tempo o Zammad armazena dados de usuário? Como posso gerenciar o
+comportamento de retenção de dados de usuário? A quais serviços o Zammad se
+conecta?
 
-## Data Retention
+## Retenção de dados
 
-The following data is stored locally on the production system:
+Os seguintes dados são armazenados localmente no sistema de produção:
 
-### Tickets and Users
+### Tickets e usuários
 
-By default, Zammad never automatically deletes tickets or users.
+Por padrão, o Zammad nunca exclui automaticamente tickets ou usuários.
 
-To enable **automatic** deletion of tickets after a given interval,
-use Zammad's scheduler. You can configure it in Zammad's admin interface under
+Para ativar a exclusão **automática** de tickets após um intervalo definido,
+use o agendador do Zammad. Você pode configurá-lo na interface de administração do Zammad em
 _Manage > Scheduler_.
 
-To **manually** delete users and all their associated tickets (e.g. in
-compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/rails-commands#deleting-records).
+Para excluir **manualmente** usuários e todos os seus tickets associados (por exemplo, em
+conformidade com uma solicitação de "Direito ao Esquecimento" sob a LGPD/GDPR), você pode usar
+as funções de privacidade de dados no painel de administração em _System > Data Privacy_
+ou [usar o console](/pt_BR/reference/rails-commands#deleting-records).
 
-### Chat sessions
+### Sessões de chat
 
-Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later. IP address logs for chat sessions can be
-deleted manually by following the [steps from the rails console
-page](/en/reference/rails-commands#remove-ip-address-logs).
+Assim que uma sessão de chat for marcada como **fechada**, ela é agendada
+para exclusão automática 12 meses depois. Registros de endereço IP para
+sessões de chat podem ser excluídos manualmente seguindo as [etapas da
+página do console
+rails](/pt_BR/reference/rails-commands#remove-ip-address-logs).
 
-### CTI caller log
+### Registro de chamadas CTI
 
-The caller log shows only the 60 most recent entries. Each entry in the
-caller log is automatically deleted after 12 months.
+O registro de chamadas mostra apenas as 60 entradas mais recentes. Cada
+entrada no registro de chamadas é excluída automaticamente após 12 meses.
 
-### Log files
+### Arquivos de log
 
-Zammad writes log files to disk (typically under `/opt/zammad/log/`).
+O Zammad grava arquivos de log em disco (normalmente em `/opt/zammad/log/`).
 
-Package installations will set up a separate system utility called
-`logrotate` to rename and archive (or _rotate_) log files on a nightly basis
-and remove old logs after 14 days.
+Instalações via pacote configuram um utilitário de sistema separado chamado
+`logrotate` para renomear e arquivar (ou _rotacionar_) arquivos de log
+diariamente e remover logs antigos após 14 dias.
 
-If installing from source, it is strongly recommended to configure
-`logrotate` or a similar log management utility; Zammad will not purge old
-logs on its own.
+Se instalado a partir do código-fonte, é fortemente recomendado configurar o
+`logrotate` ou um utilitário de gerenciamento de logs semelhante; o Zammad
+não excluirá logs antigos por conta própria.
 
-### User sessions
+### Sessões de usuário
 
-Zammad maintains session information about every user currently logged in.
+O Zammad mantém informações de sessão sobre cada usuário atualmente
+conectado.
 
-This information is automatically purged when a user logs out, and can
-be viewed or manually deleted via the admin panel (under _System >
-Sessions_). Users may also delete their own session information via the
-user preferences menu, under _Devices_.
+Essa informação é excluída automaticamente quando um usuário faz logout, e pode
+ser visualizada ou excluída manualmente via o painel de administração (em _System >
+Sessions_). Os usuários também podem excluir suas próprias informações de sessão via o
+menu de preferências do usuário, em _Devices_.
 
-Session information includes IP address (and possibly geographic location),
-browser, time of original login, and time of last visit.
+As informações de sessão incluem endereço IP (e possivelmente localização
+geográfica), navegador, hora do login original e hora da última visita.
 
-### Data Privacy Tasks
+### Tarefas de privacidade de dados
 
-Each entry in the data privacy task list is automatically deleted after 12
-months.
+Cada entrada na lista de tarefas de privacidade de dados é excluída
+automaticamente após 12 meses.
 
 ## Configuração
 
-Zammad utilizes third party web services for certain functions, meaning
-that user data may occasionally be sent or exposed to third parties.
-These functions can be individually disabled in the admin panel under
+O Zammad utiliza serviços web de terceiros para certas funções, o que significa
+que dados de usuário podem ocasionalmente ser enviados ou expostos a terceiros.
+Essas funções podem ser desativadas individualmente no painel de administração em
 _Settings > System > Services_.
 
 ::: info
-By default, the third party services that Zammad relies on are mostly
-ones hosted and managed by the Zammad Foundation itself, but Zammad
-can be extended to interface with other services instead.
+Por padrão, os serviços de terceiros dos quais o Zammad depende são majoritariamente
+hospedados e gerenciados pela própria Zammad Foundation, mas o Zammad
+pode ser estendido para se conectar a outros serviços em vez disso.
 
-The source code for these third party service integrations can be
-found in
-[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+O código-fonte dessas integrações de serviços de terceiros pode ser
+encontrado em
+[nosso repositório](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
-### Images
+### Imagens
 
-No private images or personally-identifying information are stored on
-images.zammad.com.
+Nenhuma imagem privada ou informação de identificação pessoal é armazenada
+em images.zammad.com.
 
-The Images service caches publicly-available images from sources like
-Gravatar and serves them to the Zammad application as user avatars and
-organization logos. These images are discovered using MD5 digests of user
-email addresses and organization domain names. User avatars are cached for 7
-days; organization logos are cached for 30 days.
+O serviço Images armazena em cache imagens publicamente disponíveis de
+fontes como o Gravatar e as fornece à aplicação Zammad como avatares de
+usuário e logos de organização. Essas imagens são localizadas usando digests
+MD5 de endereços de email de usuário e nomes de domínio de
+organização. Avatares de usuário ficam em cache por 7 dias; logos de
+organização ficam em cache por 30 dias.
 
 ### GeoCalendar
 
-No user information is stored or cached on geo.zammad.com.
+Nenhuma informação de usuário é armazenada ou colocada em cache em
+geo.zammad.com.
 
-As part of its service-level agreement (SLA) functionality, Zammad requires
-detailed, localized calendar information (e.g. to set the time zone and
-accommodate national holidays and daylight savings time).  The GeoCalendar
-service is used to retrieve this information.
+Como parte de sua funcionalidade de acordo de nível de serviço (SLA), o
+Zammad requer informações detalhadas e localizadas de calendário (por
+exemplo, para definir o fuso horário e acomodar feriados nacionais e horário
+de verão). O serviço GeoCalendar é usado para obter essa informação.
 
 ### GeoIP
 
-No user information is stored or cached on geo.zammad.com.
+Nenhuma informação de usuário é armazenada ou colocada em cache em
+geo.zammad.com.
 
-One of Zammad's security features is to track user sessions based on the
-user's browser and country of origin. Suspicious login activity from a
-different browser or country may trigger Zammad to dispatch an alert email
-to the affected user. The GeoIP service is used to associate IP addresses to
-a geographic origin.
+Um dos recursos de segurança do Zammad é rastrear sessões de usuário com
+base no navegador e país de origem do usuário. Atividade de login suspeita a
+partir de um navegador ou país diferente pode fazer com que o Zammad envie
+um email de alerta ao usuário afetado. O serviço GeoIP é usado para associar
+endereços IP a uma origem geográfica.
 
-### Geolocation
+### Geolocalização
 
-Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned
-it off. If you provide an address (or parts of an address) in a user object,
-there is a lookup of coordinates from OSM which are stored in Zammad's
-database. Have a look at their [privacy
-policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for
-more information.
+O serviço de geolocalização do Zammad depende do OpenStreetMap (OSM), a
+menos que você o desative. Se você fornecer um endereço (ou partes de um
+endereço) em um objeto de usuário, há uma busca de coordenadas do OSM, que
+são armazenadas no banco de dados do Zammad. Dê uma olhada na [política de
+privacidade](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank}
+deles para mais informações.

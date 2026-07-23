@@ -1,105 +1,105 @@
 ---
 order: 2
-title: 'Connect and Configure Elasticsearch'
+title: 'Conectar e configurar o Elasticsearch'
 ---
 
-# Connect and Configure Elasticsearch
+# Conectar e configurar o Elasticsearch
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch.
+Este guia mostra como conectar o Zammad ao Elasticsearch.
 
-## Connect Elasticsearch with Zammad
+## Conectar o Elasticsearch ao Zammad
 
-### Set the Elasticsearch URL
+### Definir a URL do Elasticsearch
 
-Set the Elasticsearch server address; adapt it to your scenario.
+Defina o endereço do servidor Elasticsearch; adapte ao seu cenário.
 
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch User and Password
+### Definir o usuário e senha do Elasticsearch
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
 ```
 
-Replace `<password>` with the one you got during the installation of Elasticsearch. In case you need to create a new
-password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Substitua `<password>` pela senha que você obteve durante a instalação do Elasticsearch. Caso precise criar uma nova
+senha, execute `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 
 ```sh
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add Certificate to Zammad
+### Adicionar certificado ao Zammad
 
-#### Add it via Rails Console
+#### Adicionar via console Rails
 
-In case you are installing a new Zammad and didn't run through the getting
-started wizard already, add the certificate via console:
+Caso você esteja instalando um novo Zammad e ainda não tenha passado pelo
+assistente de configuração inicial, adicione o certificado via console:
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r "SSLCertificate.create!(certificate: STDIN.read)"
 ```
 
-#### Add it via UI
+#### Adicionar via interface
 
-In case you already have a running and configured Zammad, you can add the certificate in Zammad's admin settings
-(_Settings > Security > SSL Certificates_) as an alternative. To show and copy the auto-generated certificate from
-Elasticsearch, run:
+Caso você já tenha um Zammad em execução e configurado, pode adicionar o certificado nas configurações de administração do Zammad
+(_Settings > Security > SSL Certificates_) como alternativa. Para mostrar e copiar o certificado gerado automaticamente pelo
+Elasticsearch, execute:
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-To add it in Zammad, either upload the certificate file or paste the content
-in the dialog. Make sure to copy/paste the delimiters (e.g. `-----BEGIN
-CERTIFICATE-----`) too.
+Para adicioná-lo no Zammad, envie o arquivo de certificado ou cole o
+conteúdo na caixa de diálogo. Certifique-se de copiar/colar os delimitadores
+(por exemplo, `-----BEGIN CERTIFICATE-----`) também.
 
-### Build/Rebuild the Searchindex
+### Construir/reconstruir o índice de pesquisa
 
-Without specifying CPU cores to use:
+Sem especificar núcleos de CPU a usar:
 
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-## Optional Settings
+## Configurações opcionais
 
-We collected some useful settings you may want to apply. For further
-information please have a look at [Elastic's
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
+Reunimos algumas configurações úteis que você pode querer aplicar. Para mais
+informações, consulte a [documentação da
+Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
-### Index Namespacing
+### Namespacing de índice
 
-Useful when connecting multiple services or Zammad instances to a single
-Elasticsearch server (to prevent name collisions during indexing).
+Útil ao conectar múltiplos serviços ou instâncias do Zammad a um único
+servidor Elasticsearch (para evitar colisões de nomes durante a indexação).
 
 ```sh
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
 
-### File-Attachment Indexing Rules
+### Regras de indexação de anexos de arquivo
 
-Zammad supports searching in file attachments, which means Elasticsearch has
-to index those, too. Limiting such indexing can help preserve system
-resources.
+O Zammad suporta pesquisa em anexos de arquivo, o que significa que o
+Elasticsearch precisa indexá-los também. Limitar essa indexação pode ajudar
+a preservar recursos do sistema.
 
-Files with these extensions will not be indexed:
+Arquivos com essas extensões não serão indexados:
 
 ```sh
 zammad run rails r "Setting.set('es_attachment_ignore',\
 [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )"
 ```
 
-Files larger than this size (in MB) will not be indexed:
+Arquivos maiores que este tamanho (em MB) não serão indexados:
 
 ```sh
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
@@ -107,43 +107,44 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 
 ### Asciifold
 
-By default, the [Asciifold feature of
+Por padrão, o [recurso Asciifold do
 Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
-is enabled. This can be useful if you deal with text which includes
-diacritics and/or umlauts.
+está habilitado. Isso pode ser útil se você lida com texto que inclui
+diacríticos e/ou trema.
 
-In case you need a more exact search, you can turn it off via [Rails
-console](/en/reference/rails-commands#disable-asciifold).
+Caso você precise de uma pesquisa mais exata, pode desativá-lo via [console
+Rails](/pt_BR/reference/rails-commands#disable-asciifold).
 
-## Troubleshooting
+## Solução de problemas
 
 ::: tip
-Troubleshooting unsuccessful or issue not described?
+Solução de problemas sem sucesso ou problema não descrito?
 
-If you can't solve your issue using the provided troubleshooting steps
-or can't find your particular issue described here, feel free to
-[ask the community](https://community.zammad.org){target=_blank} for technical
-assistance.
+Se você não conseguir resolver seu problema usando as etapas de solução de problemas
+fornecidas, ou não encontrar seu problema específico descrito aqui, sinta-se à vontade para
+[perguntar à comunidade](https://community.zammad.org){target=_blank} para assistência
+técnica.
 :::
 
-### Data Missing From the Web-UI / Search Data Missing or Incomplete
+### Dados ausentes na interface web / dados de pesquisa ausentes ou incompletos
 
-A commonly reported issue is data missing from the Web-UI. This could be
-tickets, articles, users or anything else [indexed by
-Elasticsearch](/en/reference/es-indexed-attributes)  and can be caused by
-missing or incomplete indexes.
+Um problema comumente relatado é a falta de dados na interface web. Isso
+pode ser tickets, artigos, usuários ou qualquer outra coisa [indexada pelo
+Elasticsearch](/pt_BR/reference/es-indexed-attributes), e pode ser causado
+por índices ausentes ou incompletos.
 
-If you are experiencing this issue and installed Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch), please follow
-these steps to make sure Elasticsearch is working correctly.
+Se você está enfrentando esse problema e instalou o Elasticsearch de acordo
+com o nosso [guia de instalação](/pt_BR/tutorials/install-elasticsearch),
+siga estas etapas para garantir que o Elasticsearch esteja funcionando
+corretamente.
 
-#### Step 1: Verify Elasticsearch is Running
+#### Etapa 1: verificar se o Elasticsearch está em execução
 
 ```sh
 sudo systemctl status elasticsearch
 ```
 
-This should output something like the following, make sure it says `Active:
+Isso deve exibir algo como o seguinte; certifique-se de que diga `Active:
 active (running)`:
 
 ```sh
@@ -154,28 +155,29 @@ active (running)`:
    Main PID: 1790 (java)
 ```
 
-Otherwise, try restarting it and check again:
+Caso contrário, tente reiniciá-lo e verifique novamente:
 
 ```sh
 sudo systemctl restart elasticsearch
 ```
 
 ::: warning
-If this fails, your Elasticsearch installation is probably broken.
-Try completely purging and reinstalling Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch).
+Se isso falhar, sua instalação do Elasticsearch provavelmente está corrompida.
+Tente limpar completamente e reinstalar o Elasticsearch de acordo com o
+nosso [guia de instalação](/pt_BR/tutorials/install-elasticsearch).
 :::
 
-#### Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes
+#### Etapa 2: verificar se o Zammad pode acessar o Elasticsearch e reconstruir os índices
 
-Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with
-a specified number of CPU cores to use for re-indexing (example `[8]`):
+Force o Zammad a descartar e reconstruir os índices do Elasticsearch,
+opcionalmente com um número específico de núcleos de CPU a usar para a
+reindexação (exemplo `[8]`):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-This should start rebuilding the indexes and output its progress:
+Isso deve começar a reconstruir os índices e exibir seu progresso:
 
 ```sh
 Dropping indexes... done.
@@ -191,20 +193,20 @@ Reloading data...
 [...]
 ```
 
-Depending on the system performance and amount of data, this can take a
-while to complete. Please let this task finish completely and wait until it
-drops you back to the console.
+Dependendo do desempenho do sistema e da quantidade de dados, isso pode
+levar algum tempo para concluir. Deixe essa tarefa terminar completamente e
+aguarde até que ela volte ao console.
 
-If this fails or throws an error, there might be something else wrong with
-your installation. Make sure you followed the complete Elasticsearch set up
-and integration procedure according to our [installation
-guide](/en/tutorials/install-elasticsearch).
+Se isso falhar ou gerar um erro, pode haver algo mais errado com sua
+instalação. Certifique-se de ter seguido o procedimento completo de
+configuração e integração do Elasticsearch, de acordo com nosso [guia de
+instalação](/pt_BR/tutorials/install-elasticsearch).
 
 ::: tip
-In many situations where you're not successful with above steps, you
-may want to check Elasticsearch's log file:
+Em muitas situações onde você não obtém sucesso com as etapas acima,
+você pode querer verificar o arquivo de log do Elasticsearch:
 `/var/log/elasticsearch/elasticsearch.log`.
 :::
 
-After completing these steps, you should have verified your Elasticsearch
-installation is running and rebuilt the indexes.
+Depois de concluir essas etapas, você deve ter verificado que sua instalação
+do Elasticsearch está em execução e reconstruído os índices.
