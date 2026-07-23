@@ -10,18 +10,21 @@ import configEN from './config.en.yaml.json'
 import configDE from './config.de.yaml.json'
 import configSR from './config.sr.yaml.json'
 import configIT from './config.it.yaml.json'
+import configPTBR from './config.pt_BR.yaml.json'
 import searchEN from './search.en.yaml.json'
 import searchDE from './search.de.yaml.json'
 import searchSR from './search.sr.yaml.json'
 import searchIT from './search.it.yaml.json'
+import searchPTBR from './search.pt_BR.yaml.json'
 
-const supportedLocales = ['en', 'de', 'sr', 'it']
+const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
 
 const configByLocale = {
   en: configEN,
   de: configDE,
   sr: configSR,
   it: configIT,
+  pt_BR: configPTBR,
 }
 
 const searchConfigByLocale = {
@@ -29,6 +32,7 @@ const searchConfigByLocale = {
   de: searchDE,
   sr: searchSR,
   it: searchIT,
+  pt_BR: searchPTBR,
 }
 
 const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
@@ -134,6 +138,7 @@ export default defineConfig(
       de: { label: 'Deutsch', ...configDE },
       sr: { label: 'српски', ...configSR },
       it: { label: 'Italiano', ...configIT },
+      pt_BR: { label: 'Português (Brasil)', ...configPTBR },
     },
     vite: {
       resolve: {

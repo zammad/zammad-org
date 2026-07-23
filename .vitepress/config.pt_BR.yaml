@@ -1,0 +1,59 @@
+---
+themeConfig:
+  docFooter:
+    next: 'Next page'
+    prev: 'Previous page'
+  footer:
+    copyright: 'Copyright © 2012-present <a href="https://zammad-foundation.org">Zammad Foundation</a>'
+    items:
+      - 
+        link: /en/imprint
+        text: Imprint
+      - 
+        link: /en/gdpr
+        text: 'Privacy policy'
+    message: 'Zammad Hub'
+  header:
+    link: https://github.com/zammad/zammad-org/issues
+    text: '🛠️ This documentation is still under construction, please report any issues.'
+  lastUpdated:
+    text: 'Updated at'
+  nav:
+    - 
+      link: https://www.zammad.com
+      text: Zammad.com
+    - 
+      link: https://community.zammad.org/
+      text: 'Community forum'
+    - 
+      activeMatch: .*
+      items:
+        - 
+          activeMatch: .*
+          link: /
+          noIcon: true
+          target: _self
+          text: 'Next release'
+        - 
+          link: https://zammad.org
+          noIcon: true
+          target: _self
+          text: 'Current release'
+      text: 'Next release'
+  notFound:
+    code: 404
+    linkLabel: 'go to home'
+    linkText: 'Take me home'
+    quote: "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
+    title: 'PAGE NOT FOUND'
+  outline:
+    label: 'On this page'
+    level:
+      - '2'
+      - '4'
+  socialLinks:
+    - 
+      icon: github
+      link: https://github.com/zammad
+  user:
+    rootGroupText: 'Use Zammad'
