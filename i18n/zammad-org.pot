@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-23 08:23+0000\n"
+"POT-Creation-Date: 2026-07-24 08:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,18 +247,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -10110,7 +10098,7 @@ msgid ""
 "moves, adjust line numbers over there-->\n"
 msgstr ""
 
-#. type: Fenced div block (tabs)
+#. type: Fenced div block (tabs key:docker-portainer)
 #: src/en/get-started/update.md:243
 #, no-wrap
 msgid ""
@@ -10131,7 +10119,7 @@ msgid ""
 "zammad:searchindex:rebuild[8]\n"
 "```\n"
 "\n"
-"=== Portainer GUI\n"
+"=== Portainer\n"
 "\n"
 "Open the [console via Portainer's "
 "GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) "
@@ -24029,83 +24017,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24291,6 +24202,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24736,6 +24724,18 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Title #
 #: src/en/tutorials/backup-restore-docker.md:1
 #: src/en/tutorials/backup-restore-docker.md:6
@@ -24790,34 +24790,62 @@ msgid "Backup"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore-docker.md:26
+#: src/en/tutorials/backup-restore-docker.md:27
 #, markdown-text
 msgid ""
-"By default, a backup is created at each start of the stack as well as at 3 "
-"o'clock each night. The backup is stored in the volume of the "
-"**zammad-backup** container under `/var/tmp/zammad`."
+"By default, a backup is created at 3 o'clock each night. The backup is "
+"stored in the volume of the **zammad-backup** container under "
+"`/var/tmp/zammad`. To trigger a one-time backup manually, use one of the "
+"commands below, depending on your deployment method."
+msgstr ""
+
+#. type: Fenced div block (tabs key:docker-portainer)
+#: src/en/tutorials/backup-restore-docker.md:28
+#, no-wrap
+msgid ""
+"\n"
+"=== Docker Compose\n"
+"\n"
+"In your Docker Compose directory, run:\n"
+"\n"
+"```sh\n"
+"docker compose run --rm --env BACKUP_ONCE=true zammad-backup\n"
+"```\n"
+"\n"
+"=== Portainer\n"
+"\n"
+"Open the [console via Portainer's "
+"GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) "
+"for the\n"
+"**zammad-backup** container with the standard entrypoint `/bin/bash` and "
+"run:\n"
+"\n"
+"```sh\n"
+"BACKUP_ONCE=true bin/docker-entrypoint zammad-backup\n"
+"```\n"
+"\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/backup-restore-docker.md:27
+#: src/en/tutorials/backup-restore-docker.md:49
 #, markdown-text, no-wrap
 msgid "Restore"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid "Start the new stack at least once so a Zammad database is available."
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid "Stop the stack."
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid ""
 "In case you restore to a production stack with activated file system "
@@ -24827,7 +24855,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid ""
 "Copy or move the backup files to `/var/tmp/zammad/restore/` inside the "
@@ -24839,7 +24867,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '5. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid ""
 "Start the stack. The restore process is triggered in the `zammad-backup` "
@@ -24850,7 +24878,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '6. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid ""
 "After the restore process has finished, the `restore` directory got "
@@ -24858,16 +24886,17 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '7. '
-#: src/en/tutorials/backup-restore-docker.md:44
+#: src/en/tutorials/backup-restore-docker.md:67
 #, markdown-text
 msgid ""
 "Rebuild the Elasticsearch index. You can use Zammad while the rebuild is "
 "running, but search performance is degraded and some data may be temporarily "
-"unavailable in search results."
+"unavailable in search results. Use one of the commands below, depending on "
+"your deployment method."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/backup-restore-docker.md:45
+#: src/en/tutorials/backup-restore-docker.md:68
 #, markdown-text, no-wrap
 msgid "<!--@include: ../get-started/update.md{243,276}-->\n"
 msgstr ""

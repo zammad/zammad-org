@@ -29,9 +29,31 @@ restaurá-los.
 
 ## Backup
 
-Por padrão, um backup é criado a cada início da stack, assim como às 3 horas
-todas as noites. O backup é armazenado no volume do container
-**zammad-backup**, em `/var/tmp/zammad`.
+By default, a backup is created at 3 o'clock each night. The backup is
+stored in the volume of the **zammad-backup** container under
+`/var/tmp/zammad`. To trigger a one-time backup manually, use one of the
+commands below, depending on your deployment method.
+
+::: tabs key:docker-portainer
+
+=== Docker Compose
+
+In your Docker Compose directory, run:
+
+```sh
+docker compose run --rm --env BACKUP_ONCE=true zammad-backup
+```
+
+=== Portainer
+
+Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) for the
+**zammad-backup** container with the standard entrypoint `/bin/bash` and run:
+
+```sh
+BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
+```
+
+:::
 
 ## Restauração
 
@@ -56,9 +78,9 @@ todas as noites. O backup é armazenado no volume do container
    antes de retomar suas operações normais.
 6. Depois que o processo de restauração terminar, o diretório `restore` terá
    sido renomeado. Você pode excluí-lo com segurança agora.
-7. Reconstrua o índice do Elasticsearch. Você pode usar o Zammad enquanto a
-   reconstrução está em andamento, mas o desempenho da pesquisa fica
-   degradado e alguns dados podem ficar temporariamente indisponíveis nos
-   resultados de pesquisa.
+7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
+   running, but search performance is degraded and some data may be
+   temporarily unavailable in search results. Use one of the commands below,
+   depending on your deployment method.
 
 <!--@include: ../get-started/update.md{243,276}-->

@@ -244,34 +244,34 @@ docker compose up -d
 
 Necessário apenas se a nota de lançamento pedir para reconstruir o índice do Elasticsearch.
 <!--referenced in tutorials/backup-restore-docker.md {243,276}. If content moves, adjust line numbers over there-->
-::: tabs
+::: tabs key:docker-portainer
 
 === Docker Compose
 
-Sem especificar núcleos de CPU:
+Without specifying CPU cores:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-Especificando núcleos de CPU a usar (exemplo 8):
+With specifying CPU cores to use (example 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
 ```
 
-=== Portainer GUI
+=== Portainer
 
-Abra o [console via interface gráfica do Portainer](/pt_BR/get-started/installation/docker#how-to-run-commands-in-the-stack) com o
-ponto de entrada padrão `/bin/bash` e execute:
+Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
+standard entrypoint `/bin/bash` and run:
 
-Sem especificar núcleos de CPU a usar:
+Without specifying CPU cores to use:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-Especificando núcleos de CPU a usar (exemplo 8):
+With specifying CPU cores to use (example 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]
