@@ -3,7 +3,7 @@ title: Migrate to Zammad
 order: 10
 ---
 
-# Migrate To Zammad
+# Migrate to Zammad
 
 You can migrate the following data from another ticketing system to Zammad:
 
@@ -21,7 +21,7 @@ After that, you may want to continue with the
 [First Steps](/en/tutorials/first-steps) to configure Zammad. This has to be
 done after migration.
 
-## General Limitations
+## General limitations
 
 There are some general limitations which you can find below. There could also
 be limitations, depending from which system you are coming. These are covered
@@ -36,7 +36,7 @@ General limitations for all migrations:
 - Zammad migrates all or nothing. This means that you can't deselect
   specific information specific groups, tickets or users.
 
-## Specific Migration Guides
+## Specific migration guides
 
 ::: info
 
@@ -175,7 +175,7 @@ which gives you an output of the current state of the job.
 :::
 ::::
 
-#### After Migration
+#### After migration
 
 Run the following commands:
 
@@ -329,7 +329,7 @@ which gives you an output of the current state of the job.
 :::
 ::::
 
-#### After Migration
+#### After migration
 
 Run the following commands:
 
@@ -386,7 +386,7 @@ In some cases restarting your webserver may help to solve internal server
 errors.
 :::
 
-### Timeout Adjustments
+### Timeout adjustments
 
 If your import runs in a timeout or you already know that this could be an issue, you can adjust timeouts via
 environment variables. To do so, set the environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and
@@ -456,7 +456,7 @@ Import::OTRS.diff_worker
 
 :::
 
-#### After Migration
+#### After migration
 
 Run the following commands:
 
@@ -597,7 +597,7 @@ which gives you an output of the current state of the job.
 
 ::::
 
-#### After Migration
+#### After migration
 
 Run the following commands:
 

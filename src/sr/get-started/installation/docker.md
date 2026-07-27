@@ -3,7 +3,7 @@ order: 3
 title: Docker
 ---
 
-# Docker Installation
+# Docker installation
 
 Zammad can be deployed using Docker Compose. You can even use graphical
 Docker front ends like
@@ -33,7 +33,7 @@ recommend [Portainer](https://www.portainer.io/){target=_blank}. For
 installation instructions, check out [Portainer's
 documentation](https://docs.portainer.io/){target=_blank}.
 
-### Корак 1: Додавање stack-а
+### Step 1: Add stack
 
 In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
 target environment, select **Stacks** and click on `Add stack` as you can
@@ -42,7 +42,7 @@ see in the screenshot below.
 ![Screenshot in the Stacks section and highlighted "Add
 stack".](/screenshots/get-started/installation/portainer-stacks.png)
 
-### Корак 2: Инсталација из репозиторија
+### Step 2: Build from repository
 
 Switch to **Repository** build method and provide the information below:
 
@@ -60,7 +60,7 @@ section](#customizing-the-zammad-stack) below to find more information.
 ![Stack creation with provided information in Repository
 screen](/screenshots/get-started/installation/portainer-stack-creation.png)
 
-### Корак 3: Покретање stack-а
+### Step 3: Deploy the stack
 
 Finally, click `Deploy the stack` button. The first time, it may take some
 time until the Docker images are fetched.
@@ -70,7 +70,7 @@ host and port, e.g. `http://localhost:8080/`.
 
 ## Deployment with Docker Compose
 
-### Корак 1: Клонирање GitHub репозиторија
+### Step 1: Clone the GitHub repo
 
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
@@ -80,14 +80,14 @@ Make sure to run `git pull` frequently to fetch updates. Alternatively, you
 can download the files from the [releases
 page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 
-### Корак 2: Подешавање окружења по потреби
+### Step 2: Adjust environment as needed
 
 In case our default environment is not what you are looking for, you can
 customize the stack using predefined scenarios and adjust environment
 variables. Jump to the [customization
 section](#customizing-the-zammad-stack) below to find more information.
 
-### Корак 3: Покретање stack-а
+### Step 3: Start the stack
 
 ```sh
 cd zammad-docker-compose
@@ -104,7 +104,7 @@ section.
 After the stack is ready, you can access Zammad via the configured Docker
 host and port, e.g. `http://localhost:8080/`.
 
-## Exposing the Stack via HTTPS
+## Exposing the stack via HTTPS
 
 To publish a Zammad stack on the internet, it needs be secured via the HTTPS
 protocol. To achieve that without modifying the Zammad stack, you can:
@@ -117,7 +117,7 @@ protocol. To achieve that without modifying the Zammad stack, you can:
 Both scenarios are covered in the separate [Docker Compose
 Scenarios](/en/reference/docker-compose-scenarios) page.
 
-## Прилагођавање Zammad stack-а
+## Customizing the Zammad stack
 
 The Zammad stack can be customized by loading additional scenario files for
 common use cases. For example, you can deploy the stack with an included
@@ -130,7 +130,7 @@ page](/en/reference/docker-compose-scenarios).
 To adjust the stack and settings, use [Docker specific environment
 variables](/en/reference/environment-variables).
 
-## How to Run Commands in the Stack
+## How to run commands in the stack
 
 Execute commands in your Docker stack by calling `rails` or `rake` via one
 of the following methods by using `bundle exec`.

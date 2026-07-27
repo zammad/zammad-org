@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Use Mobile View'
+title: 'Use mobile view'
 ---
 
-# Use Mobile View
+# Use mobile view
 
 ## Intro
 
@@ -85,7 +85,7 @@ looks like.
 - Caller log
 - Live chat
 
-## Switch the Views
+## Switch the views
 
 Zammad implements a mobile device detection, which results in automatic
 redirection to mobile view. Even with this mechanism in place, it's possible

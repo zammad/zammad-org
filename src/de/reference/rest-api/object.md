@@ -77,7 +77,7 @@ Erforderliche Berechtigung: `admin.object`
 :::
 ::::
 
-### Datum & Zeit
+### Date time
 
 :::: details
 
@@ -158,7 +158,7 @@ Daten. Z.B.: verlangt E-Mail die Angabe einer E-Mail-Adresse.
 ::::
 :::::
 
-### Einfach-Baumauswahl
+### Tree select
 
 :::: details
 
@@ -256,7 +256,7 @@ Erforderliche Berechtigung: `admin.object`
 
 :::
 
-## Ausführen von Datenbank-Migrationen
+## Execute database migrations
 
 Erforderliche Berechtigung: `admin.object`
 

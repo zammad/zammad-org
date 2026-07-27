@@ -1,14 +1,14 @@
 ---
 order: 13
-title: 'Single Sign-on with Kerberos'
+title: 'Single sign-on with Kerberos'
 ---
 
-# Single Sign-On for Kerberos <Badge type="warning" text="on-premise only"/>
+# Single sign-on for Kerberos <Badge type="warning" text="on-premise only"/>
 
 This guide will discuss how to set up single sign-on using Microsoft Active
 Directory.
 
-## Conceptual Overview
+## Conceptual overview
 
 Like every other web application out there, Zammad has its own logic for
 signing users up, storing their passwords, authenticating them, and managing
@@ -25,7 +25,7 @@ If you don't have this IT infrastructure but still want one-click
 login, you can use alternatives like Github, Google, Facebook and more.
 :::
 
-## Како то уствари функционише?
+## How does it work?
 
 Once enabled, single sign-on activates an endpoint at
 `https://your.zammad.host/auth/sso`. When the Zammad server receives a GET
@@ -60,7 +60,7 @@ don't know what you're doing, you're going to end up with a _massive_
 security hole.
 :::
 
-## Getting Started
+## Први кораци
 
 ::: tip
 **Too busy to handle it on your own?**
@@ -85,7 +85,7 @@ your Active Directory and Zammad user accounts are always in sync. You
 can find it in Zammad's admin interface under
 _Settings > Security > Third-party Applications_.
 
-## Step 1: Configure Active Directory
+## Step 1: Configure active directory
 
 In the Kerberos authentication scheme, the **authentication server** (Active
 Directory) needs to maintain shared secrets with the **service**
@@ -104,7 +104,7 @@ are not required; a normal user account will do.
 ![Screenshot Active Directory service account
 settings](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Reset Password
+### 1b. Reset password
 
 Reset service account password after enabling the "This account supports
 Kerberos AES 256 bit encryption".
@@ -158,7 +158,7 @@ On the last line, take note of:
 - the secret key in parentheses at the end (**0x5ee827...**)
 - the secret key version number preceded by `vno` (**3**)
 
-## Step 2: Remove NGINX, Set up Apache + Kerberos
+## Step 2: Remove NGINX, set up Apache + Kerberos
 
 Next, the Zammad host must be configured to support Kerberos (and to accept
 auth credentials provided by the Active Directory server).
@@ -171,7 +171,7 @@ which offers Kerberos support through a plug-in module instead.
 All commands in this section must be run as root (or with `sudo`).
 :::
 
-### 2a. Turn Off NGINX
+### 2a. Turn off NGINX
 
 ::: warning
 This will take your Zammad instance **offline** until Apache is fully
@@ -217,13 +217,13 @@ sudo systemctl start nginx
 
 :::
 
-### 2b. Pre-Configure Apache
+### 2b. Pre-configure Apache
 
 This documentation expects an already working Apache configuration.  You
 should have a look at the [webserver configuration
 guide](/en/tutorials/webserver-config) before continuing.
 
-### 2c. Install Further Apache Dependencies
+### 2c. Install further Apache dependencies
 
 ::: tabs
 
@@ -255,7 +255,7 @@ sudo zypper install krb5-client apache2-mod_auth_kerb
 
 :::
 
-### 2d. Enable Apache Modules
+### 2d. Enable Apache modules
 
 SSO requires modules that are not enabled by default. By default you can use
 `a2enmod` to do so.
@@ -341,7 +341,7 @@ Replace the following placeholders in the sample config below:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Generate Keytab
+### 2f. Generate keytab
 
 Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets
 with the domain controller.
@@ -489,7 +489,7 @@ The configuration for CentOS and OpenSUSE below contains two
 
 :::
 
-### 2g. Restart Apache to Apply Changes
+### 2g. Restart Apache to apply changes
 
 ```sh
 sudo systemctl restart apache2
@@ -505,7 +505,7 @@ On older versions of Zammad, visit `https://your.zammad.host/auth/sso`
 to sign in.
 :::
 
-## Step 4: Configure Client System (Windows Only)
+## Step 4: Configure client system (Windows only)
 
 For the full SSO experience (i.e. for passwordless one-click sign-in),
 Zammad users must:
@@ -557,7 +557,7 @@ browser rather than Windows Settings.
   synchronized within five minutes of each other? Kerberos is a
   time-sensitive protocol!
 
-### Errors in Apache Logs
+### Errors in Apache logs
 
 ::: tip
 **Try raising your Apache log level temporarily.**
@@ -582,7 +582,7 @@ when `generating your keytab <sso-generate-keytab>`?
 
 Try generating it again, just to be sure.
 
-#### Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)
+#### Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)
 
 Does the **service name** you provided to `setspn` exactly match the one
 you used when `generating your keytab <sso-generate-keytab>`?
@@ -596,7 +596,7 @@ match the **service name** you provided to `setspn`?
 
 This setting is case-sensitive.
 
-#### Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
+#### Warning: Received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
 
 Is your Zammad host accessible at an FQDN? This error may indicate that you
 configured your Zammad host as a numeric IP address instead.

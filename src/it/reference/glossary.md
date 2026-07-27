@@ -57,21 +57,35 @@ Clearbit
 : Clearbit è un servizio progettato per raccogliere informazioni sui tuoi
   contatti. Così,
 
-Avviso di conflitto
-: Quando due agenti modificano lo stesso ticket contemporaneamente, molte cose possono andare male
+Conflict warning
+: When two agents edit the same ticket at the same time, a lot can go wrong -
+  from duplicate replies to overwritten messages. Zammad helps you to avoid
+  this with its integrated conflict warning. So if you see another agent's
+  avatar and a little pen at the bottom of your ticket, it means the other agent
+  is currently editing it.
 
-Barra laterale contenuto
-: Barra laterale destra nella visualizzazione ticket che include le schede della barra laterale
+Content sidebar
+: Right sidebar in the ticket view which includes the sidebar tabs and the
+  active sidebar (if opened).
 
-Flussi di lavoro principali
-: Questa funzionalità ti permette di configurare campi dinamici e maschere ticket in base
+Core workflows
+: This feature allows you to configure dynamic fields and ticket masks based on
+  attribute available in Zammad. For example you can disable or hide fields,
+  make them visible based on other fields or attributes, make them mandatory and
+  much more!
 
 CTI
 : CTI sta per Computer Telephony Integration e ti permette di raccogliere
   informazioni dettagliate
 
-Sviluppo personalizzato (CD)
-: Lavoriamo costantemente per migliorare Zammad, e continuiamo ad aggiungere
+Custom development (CD)
+: We are constantly working on improving Zammad, and we keep adding new
+  features with every single release. However, sometimes our customers might
+  require a very specific new feature, addition, or adjustment that is either
+  very urgent or very particular to their individual use case.
+  This is when a custom development can take place: We offer the customer to
+  develop the desired feature at a price that we agree upon previously
+  (which is based on the expected hours needed for completion).
 
 Cliente
 : Un cliente è una persona con cui comunichi tramite Zammad.
@@ -94,25 +108,34 @@ Elasticsearch
 Escalation
 : Un'escalation è ciò che accade dopo che è scaduto il termine per un ticket.
 
-Integrazione Exchange
-: L'integrazione Exchange ti permette di sincronizzare i tuoi contatti dal tuo
+Exchange integration
+: The Exchange integration allows you to sync your contacts from your
+  Exchange address book to Zammad. Every time a contact is updated
+  in Exchange, it will be reflected in Zammad. This gives you direct
+  access to all your contacts in your Zammad.
 
-Autenticazione esterna
-: L'autenticazione esterna è un'opzione facile e con un solo clic per i tuoi utenti
+External authentication
+: External authentication is an easy, one-click option for your users to log
+  into Zammad. It has various benefits: not only is it faster but it also
+  means that your users will have to remember fewer passwords.
+  Zammad currently supports more than ten login providers, such as Facebook,
+  GitHub, GitLab, Google, or Microsoft.
 
 Funzionalità
 : Una funzionalità è una capacità o funzione specifica che Zammad fornisce a
   te
 
-Feature Request
-: Puoi farci sapere se ti manca una funzionalità specifica in Zammad.
-  Raccogliamo tutti i tuoi desideri nel nostro forum della community, nella
-  [categoria delle richieste di funzionalità](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
-  Se una richiesta arriva regolarmente e riteniamo che sarebbe
-  un’ottima aggiunta, la inseriremo nella nostra roadmap e inizieremo a lavorarci.
+Feature request
+: You can let us know if you are missing a particular feature in Zammad.
+  We collect all of your wishes in our community forum in the
+  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  If a request comes in regularly and we think that it would be a
+  great addition, we'll put it on our roadmap and start working on it.
 
-Sponsorizzazione funzionalità
-: Se un'organizzazione richiede urgentemente una delle funzionalità nell'elenco,
+Feature sponsoring
+: If an organization urgently requires one of the features on the list,
+  they can fast-forward the development and put it on top of the list by
+  sponsoring it, which means that they cover the costs for the development.
 
 GitHub
 : GitHub è un servizio per la gestione delle versioni dei progetti di sviluppo
@@ -151,8 +174,9 @@ i-doit
 : i-doit è un CMDB (Configuration Management Data Base).
   Ti aiuta a tenere traccia
 
-Sistema di issue tracking
-: I tracker di issue sono di solito sistemi che tracciano processi tecnici
+Issue-tracking system
+: Issue trackers are usually systems that track processes on a technical level.
+  Two of the best-known examples are GitHub and GitLab.
 
   Zammad viene spesso indicato anche come sistema di issue tracking.
   Tuttavia, come helpdesk,
@@ -163,9 +187,10 @@ Kibana <Badge type="info" text="solo on-premise" />
   Kibana può essere integrato con Zammad, permettendo di mappare i dati dell'helpdesk
   nei report
 
-Base di conoscenza
-: Pensa a un set molto esteso di FAQ - è esattamente questo che la
-  base di conoscenza di Zammad
+Knowledge base
+: Think of a very extensive set of FAQs - that's exactly what the
+  Zammad knowledge base is. It collects all important information:
+  definitions, processes, how-tos, organizational charts, etc.
 
   Gli articoli della base di conoscenza possono essere interni o esterni, quindi puoi
   decidere se mostrarli
@@ -181,12 +206,12 @@ Macro
   Puoi definire le tue macro ed eseguire azioni basate su tutti gli attributi
   disponibili in
 
-Main Content
+Main content
 : The middle section of the Zammad layout. Depending on the view you have
   selected, it shows the dashboard, overviews, the ticket detail view, the
   create-ticket form or other screens.
 
-Main Content Footer
+Main content footer
 : The action row at the bottom of the Main Content area. It holds the primary
   actions of the currently active view, such as `Create`, `Apply Template` or
   `Discard Changes` on the create-ticket form.
@@ -195,14 +220,17 @@ Menzioni
 : Le menzioni sono una funzionalità di Zammad che ti permette di taggare un altro agente in un
   ticket
 
-Migratore / Procedura guidata di migrazione
-: Se un'azienda vuole passare da un altro software helpdesk
+Migrator / migration wizard
+: If a company wants to switch from another helpdesk software to Zammad,
+  they often have one concern: What about their existing data?
+  That's why we have built our migration wizards that help with migrating all
+  data.
 
 Monit
 : Monit è uno strumento di monitoraggio open-source che si basa su una configurazione semplice e
   un forte
 
-Navigation Tab : One element of the primary navigation like **Overviews** or
+Navigation tab : One element of the primary navigation like **Overviews** or
 **Knowledge Base**.
 
 Nagios
@@ -220,8 +248,11 @@ Proprietario
 : Il proprietario di un ticket è la persona responsabile e che ci lavora.
   Il proprietario
 
-Relazione genitore/figlio
-: Se un ticket genera altre sottoattività (o corrispondenza aggiuntiva)
+Parent/child relationship
+: If one ticket results in other subtasks (or additional correspondences),
+  you can split it into several tickets. The main one will then be the parent
+  ticket and the tickets with related subtopics are children.
+  By the way: in the same way, you can also merge two tickets into one.
 
 Placetel
 : Placetel è un sistema telefonico cloud che permette agli utenti di effettuare chiamate
@@ -230,7 +261,7 @@ Placetel
   Integrare un account Placetel con Zammad fornisce agli utenti un registro chiamate,
   rendendo
 
-Primary Navigation
+Primary navigation
 : The primary navigation is the left sidebar in Zammad which contains the
   taskbar, the search, notifications, knowledge base and eventually more,
   depending on your system.
@@ -255,7 +286,7 @@ Ruolo
 
   Puoi persino aggiungere nuovi ruoli al tuo Zammad.
 
-Secondary Navigation
+Secondary navigation
 : Refers to an additional menu next to the navigation (e.g. when opening profile
   settings).
 
@@ -263,9 +294,10 @@ Flyout
 : The panel that slides in from the right side of the screen for actions such
   as linking or merging tickets and bulk actions.
 
-Scheda barra laterale
-: Nella barra laterale del contenuto, ci sono diverse schede come "Cliente",
-  "Organizzazione
+Sidebar tab
+: In the content sidebar, there are different tabs like "Customer",
+  "Organization" and "Ticket", depending on your system and ticket. These are
+  called sidebar tabs.
 
   Una scheda della barra laterale attiva è la scheda attualmente aperta.
 
@@ -299,7 +331,7 @@ Taskbar
 : The section of the primary navigation which contains the taskbar tabs for
   your opened tickets, users, organizations and the detailed search.
 
-Taskbar Tab
+Taskbar tab
 : A single tab in the taskbar. Clicking the tab brings the corresponding
   ticket, user, organization or search into the main content area.
 
@@ -310,15 +342,21 @@ Tag
   I tag possono essere interrogati in condizioni di un'automazione e assegnati
   automaticamente, ad esempio
 
-Modulo di testo
-: Se ti accorgi di inviare le stesse risposte ripetutamente,
-  puoi salvarle
+Text module
+: If you find that you send the same answers over and over again,
+  you can save yourself a lot of work and create a text module.
+  This way, you just need to type the [[:]][[:]] shortcut in an article and all
+  available text modules are shown from which you can select the desired one.
+  You can limit the search results by adding parts of the text module's name,
+  keywords or content after the [[:]][[:]].
 
   Ad esempio, qui in Zammad abbiamo un modulo di testo con la scorciatoia
   `::ilff`, che si trasforma in `I look forward to your feedback`.
 
-(Modello di) ticket
-: Se crei molti ticket simili, puoi creare un modello per essi
+(Ticket) template
+: If you create many similar tickets, you can create a template for them. This
+  is helpful for introductions to your product/service or for drawing up an
+  offer.
 
 Utente
 : Un utente è qualsiasi utente del sistema di ticketing. Ogni utente ha permessi assegnati,

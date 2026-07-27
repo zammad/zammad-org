@@ -36,7 +36,7 @@ fornecer acesso a todos os endpoints disponíveis listados aqui.
 
 O Zammad suporta três métodos diferentes de autenticação para sua API.
 
-### Autenticação HTTP Basic (usuário/senha)
+### HTTP basic authentication (username/password)
 
 O usuário/senha deve ser fornecido como cabeçalho HTTP na chamada HTTP. Esse
 método de autenticação pode ser desativado e pode não estar disponível no
@@ -51,7 +51,7 @@ Recomendamos fortemente contra o uso de autenticação básica. Use tokens
 de acesso sempre que possível!
 :::
 
-### Autenticação HTTP Token (token de acesso)
+### HTTP token authentication (access token)
 
 O token de acesso deve ser fornecido como cabeçalho HTTP na chamada
 HTTP. Cada usuário pode criar vários tokens de acesso em suas preferências
@@ -71,7 +71,7 @@ permite que aplicações de terceiros se autentiquem no Zammad.
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoints e dados de exemplo
+## Endpoints and example data
 
 Para simplificar, não forneceremos comandos específicos nas próximas
 páginas, mas em vez disso indicaremos o método de chamada possível (por
@@ -83,13 +83,13 @@ O formato de resposta será uma resposta JSON completa de uma instância
 padrão do Zammad. Tenha em mente que você pode ver mais campos ou
 informações gerais caso tenha adicionado objetos ou outras informações.
 
-## Tipo de conteúdo
+## Content type
 
 O Zammad retorna payloads JSON sempre que você recupera dados. Se você for
 fornecer dados, independentemente do tipo geral de solicitação, não esqueça
 de fornecer também o tipo de conteúdo `application/json`.
 
-## Payloads de resposta (expandir)
+## Response payloads (expand)
 
 O Zammad sempre retorna informações incluindo dicas para todas as
 relações. Se você precisar de mais informações que isso (porque os IDs podem
@@ -159,7 +159,7 @@ mais resultados.
 
 ## Pesquisar via API
 
-### Pesquisa de endpoint
+### Endpoint search
 
 Alguns endpoints suportam uma consulta de pesquisa. São eles:
 
@@ -179,7 +179,7 @@ explicitamente cobertos nesta documentação:
 - Modelos
 - Módulo de texto
 
-#### Exemplo de pesquisa
+#### Search example
 
 Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome`
 
@@ -187,7 +187,7 @@ Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome`
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Parâmetro Expand
+#### Expand parameter
 
 Se você quiser ter informações relacionadas adicionais, pode usar o
 parâmetro `expand`. Usá-lo resolve os IDs e exibe valores/nomes
@@ -200,7 +200,7 @@ Solicitação `GET` enviada:
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Parâmetro Full
+#### Full parameter
 
 Você pode até estender a resposta usando o parâmetro `full`. Esteja ciente
 de que essa resposta pode ser enorme. Ela exibe todos os ativos, incluindo
@@ -212,7 +212,7 @@ Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome&full=true`
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### Parâmetro With Total Count
+#### With total count parameter
 
 Usar esse parâmetro exibirá adicionalmente a quantidade de resultados da
 pesquisa. Pode ser combinado com `full` e `expand`.
@@ -224,7 +224,7 @@ Solicitação `GET` enviada:
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Parâmetro Only Total Count
+#### Only total count parameter
 
 Usar esse parâmetro `only_total_count` exibirá apenas a quantidade de
 resultados da pesquisa.
@@ -236,7 +236,7 @@ Solicitação `GET` enviada:
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Pesquisa global
+### Global search
 
 Se você precisar pesquisar não apenas em um tipo de objeto específico, pode
 fazer isso usando a pesquisa global sem especificar um objeto. A resposta
@@ -252,7 +252,7 @@ Solicitação `GET` enviada: `/api/v1/search?query=welcome`
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Pesquisa baseada em condição
+### Condition based search
 
 Você pode até usar condições, como para gatilhos e agendadores, para
 pesquisar via API. Se você não quiser construir tais condições manualmente,
@@ -288,7 +288,7 @@ Use isso como payload na sua solicitação `POST` em uma pesquisa de
 endpoint. A resposta inclui os mesmos objetos que o gatilho ou visão geral
 que você criou.
 
-## Ordenando resultados de pesquisa
+## Sorting search results
 
 O Zammad permite ordenar seus resultados de pesquisa por campo, se
 necessário.
@@ -310,7 +310,7 @@ Geralmente você vai querer combinar ambos os parâmetros nas suas pesquisas -
 por exemplo: `?query={search string}&sort_by={row name}&order_by={direction}`
 :::
 
-## Ações em nome de outros usuários
+## Actions on behalf of other users
 
 **Requisito:** o usuário usado para executar a consulta em nome de outro precisa
 da permissão `admin.user`.

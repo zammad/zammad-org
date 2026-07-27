@@ -3,10 +3,10 @@ order: 4
 outline:
   - 2
   - 2
-title: 'Attributi indicizzati da Elasticsearch'
+title: 'Elasticsearch indexed attributes'
 ---
 
-# Attributi indicizzati da Elasticsearch
+# Elasticsearch indexed attributes
 
 Di seguito trovi un elenco dei principali attributi degli oggetti
 indicizzati da Elasticsearch (ES).
@@ -431,7 +431,7 @@ ID dell'utente che ha aggiornato il ticket.
 
 Esempi: `1`, `3`
 
-## Priorità del ticket
+## Ticket priority
 
 Il seguente indice contiene le informazioni menzionate di seguito:
 `*_ticket_priority`
@@ -503,7 +503,7 @@ ID dell'utente che ha eseguito l'ultimo aggiornamento.
 
 Esempio: `1`
 
-## Stato del ticket
+## Ticket state
 
 Il seguente indice contiene le informazioni menzionate di seguito:
 `*_ticket_state`
@@ -1180,7 +1180,7 @@ ID dell'utente che ha aggiornato il gruppo.
 
 Esempio: `3`
 
-## Registro CTI
+## CTI log
 
 Il seguente indice contiene le informazioni menzionate di seguito:
 `*_cti_log`
@@ -1316,7 +1316,7 @@ Ultimo aggiornamento della voce.
 
 Esempio: `"2025-02-25T08:49:40.647Z"`
 
-## Sessione chat
+## Chat session
 
 Il seguente indice contiene le informazioni menzionate di seguito:
 `*_chat_session`

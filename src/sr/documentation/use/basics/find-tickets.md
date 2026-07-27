@@ -1,14 +1,14 @@
 ---
 order: 3
-title: 'Пронађи тикете'
+title: 'Find tickets'
 ---
 
-# Пронађи тикете
+# Find tickets
 
 Има више начина како да пронађете тикете, у зависности од вашег случаја
 коришћења.
 
-## Преко прегледа
+## Via overviews
 
 If you search for new tickets to work on, your first look should be in the
 overview section. You can either open it by clicking the `Overviews` button
@@ -24,7 +24,7 @@ appears in which overview.
 For a detailed description, head over to the [overview usage
 guide](/en/documentation/use/guides/overviews).
 
-## Преко претраге
+## Via search
 
 However, if you search for a specific ticket which might or might not be
 visible in the overviews, you can use the search. You can find it in the top

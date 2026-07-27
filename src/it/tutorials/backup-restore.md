@@ -1,9 +1,9 @@
 ---
 order: 7
-title: 'Backup e ripristino (Pacchetto)'
+title: 'Backup & restore (package)'
 ---
 
-# Backup e ripristino (Pacchetto)
+# Backup & restore (package)
 
 Zammad include script nelle installazioni tramite pacchetto per backup e
 ripristino che puoi usare.
@@ -47,7 +47,7 @@ passaggi seguenti:
 1. Esegui `/opt/zammad/contrib/backup/zammad_backup.sh` (come utente `root`
    o `zammad`)
 
-## Configurazione backup
+## Backup configuration
 
 Puoi trovare dettagli sui parametri di configurazione con valori predefiniti
 di seguito.
@@ -75,9 +75,9 @@ di seguito.
   usarla.
   :::
 
-## Ripristina backup
+## Restore backups
 
-### Informazioni Importanti
+### Important information
 
 Leggi attentamente le seguenti informazioni prima di iniziare a ripristinare
 i tuoi dati.
@@ -102,7 +102,7 @@ or consider
 [paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
 :::
 
-### Copia i file di backup in una posizione adatta
+### Copy backup files to a fitting location
 
 Assicurati che l'utente che stai usando per il ripristino sia autorizzato a
 leggere i file di backup e.
@@ -125,18 +125,18 @@ latest_zammad_files.tar.gz
 Copiali in una posizione adatta accessibile per l'utente che esegue il
 ripristino.
 
-### Configura lo script di backup
+### Configure backup script
 
 Per una nuova installazione, questo è necessario. Devi almeno fornire una
 directory in cui verranno archiviati i tuoi backup. Consulta [Backup
 Configuration](#backup-configuration) per maggiori informazioni.
 
-### Pulisci la cartella di archiviazione
+### Clean up the storage folder
 
 Nel caso tu ripristini su un ambiente di produzione con archiviazione
 filesystem attivata, dovresti.
 
-### Esegui il ripristino
+### Run the restore
 
 Tieni presente che il ripristino dei backup può sovrascrivere il tuo `database.yml`. Puoi
 verificarlo.
@@ -169,7 +169,7 @@ Il risultato dovrebbe assomigliare a questo:
 Il ripristino eliminerà il tuo attuale.
 ```
 
-### Passaggi aggiuntivi
+### Additional steps
 
 - Se hai impostato impostazioni ambientali, riapplicale ora.
 - Se non già fatto, [installa
@@ -180,14 +180,14 @@ Il ripristino eliminerà il tuo attuale.
   di ricerca degradate e potrebbe portare a dati temporaneamente non
   trovati.
 
-## Risoluzione problemi backup e ripristino
+## Troubleshooting backup & restore
 
 Di seguito sono elencati alcuni problemi comuni. Se il tuo problema non è
 presente nell'elenco, non esitare a consultare la [Community di
 Zammad](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
 per assistenza tecnica.
 
-### Codici di uscita
+### Exit codes
 
 I nostri script di backup e ripristino includono codici di uscita per
 aiutarti a trovare una soluzione.
@@ -197,9 +197,9 @@ standard output.
 
 | Codice | Descrizione / Situazione
 
-### Problemi comuni
+### Common problems
 
-#### Autenticazione password fallita / Autenticazione peer fallita
+#### Password authentication failed / peer authentication failed
 
 Questo indica che la password del tuo utente database Zammad è diversa dal
 tuo `dat
@@ -212,7 +212,7 @@ alla connessione socket.
 Assicurati che le credenziali utente fornite siano corrette. Puoi anche
 considerare di usare `r
 
-#### Autenticazione ident fallita per l'utente
+#### Ident authentication failed for user
 
 Questo indica che il tuo server database richiede l'autenticazione
 `ident`. Quel tipo di autenticazione.
@@ -233,7 +233,7 @@ Per questo, consulta la documentazione ufficiale di
 [PostgreSQL](https://www.postgresql.org/docs/){target=_blank}, poiché è al
 di fuori dell’ambito della nostra documentazione.
 
-#### AVVISO: Sembra che tu non abbia allegati nel filesystem
+#### WARNING: You don't seem to have any attachments in the file system
 
 Questo indica che la tua istanza attualmente non salva gli allegati nel
 filesystem.
@@ -245,7 +245,7 @@ Controlla e modifica le tue
 [impostazioni di archiviazione tramite console](/en/reference/rails-commands#storage-provider-setting)
 o nell’interfaccia di amministrazione di Zammad sotto _Settings > System > Storage_.
 
-## Script di aiuto
+## Helper script
 
 ### Avviso
 
@@ -254,7 +254,7 @@ eseguire script di cui non conosci l'ambito.
 
 Tieni presente che esegui questi script a tuo rischio.
 
-### Aiuto database: (Re)imposta password
+### Database helper: (Re)set password
 
 #### Limitazioni
 

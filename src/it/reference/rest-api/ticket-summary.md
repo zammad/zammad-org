@@ -1,9 +1,9 @@
 ---
 order: 20
-title: 'Riepilogo del Ticket'
+title: 'Ticket summary'
 ---
 
-# Riepilogo del Ticket
+# Ticket summary
 
 ## Mostra/Attiva
 

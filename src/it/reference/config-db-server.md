@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Configura il server database'
+title: 'Configure database server'
 ---
 
-# Configura il server database
+# Configure database server
 
 Questa pagina dovrebbe illustrare solo le parti rilevanti per Zammad e non
 vuole essere una guida completa.
@@ -27,7 +27,7 @@ rilevanti da regolare.
 
 :::
 
-## Regola la dimensione del pool
+## Adjust pool size
 
 All'interno di `database.yml` (directory `config/`) puoi definire la
 dimensione del pool consentita.
@@ -40,7 +40,7 @@ timeout di connessione database.
 Zammad usa fino a 200 connessioni per impostazione predefinita. A seconda
 della tua configurazione e carico.
 
-### Determina il valore
+### Determine value
 
 Per aiutarti a determinare un numero, Zammad include una funzione per
 calcolare un suggerimento.
@@ -51,7 +51,7 @@ Eseguilo usando il comando:
 rake zammad:db:max_connections
 ```
 
-### Regola il valore
+### Adjust value
 
 Aumenta il numero massimo di connessioni consentite:
 

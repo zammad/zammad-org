@@ -1,9 +1,9 @@
 ---
 order: 15
-title: 'Gemeinsame Entwürfe'
+title: 'Shared drafts'
 ---
 
-# Gemeinsame Entwürfe
+# Shared drafts
 
 ## Anzeigen
 

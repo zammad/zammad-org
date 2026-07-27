@@ -1,9 +1,9 @@
 ---
 order: 4
-title: KI-Features
+title: 'AI features'
 ---
 
-# KI-Features
+# AI features
 
 ## Einführung
 
@@ -15,7 +15,7 @@ Die KI-Funktionen müssen von Ihrem Administrator konfiguriert und aktiviert wer
 Weitere Informationen über die Konfiguration und Aktivierung finden Sie im Admin-Bereich.
 :::
 
-## Ticket Zusammenfassung
+## Ticket summary
 
 Die Ticket-Zusammenfassung tut, was der Name sagt: Sie fasst den Inhalt des
 Tickets zusammen. Dies kann bei großen Tickets und/oder vielen Wechseln
@@ -39,7 +39,7 @@ Zusammenfassung die folgenden Abschnitte:
 - Anstehende Ereignisse (optional)
 - Stimmung des Kunden (optional)
 
-## Schreibassistent-Werkzeuge
+## Writing assistant tools
 
 Die KI-gestützten Schreibassistent-Werkzeuge wurden entwickelt, um Ihren
 Workflow bei der Erstellung eines Artikels beim Beantworten von Ticket zu
@@ -82,7 +82,7 @@ Administrator welche hinzugefügt hat.
   Entfernt überflüssige Teile und schreibt Ihren Text in einer klaren und
   verständlichen Weise um.
 
-## KI-Agenten
+## AI agents
 
 KI-Agenten können so konfiguriert werden, dass sie bestimmte Arten von
 Routineaufgaben übernehmen. Im Allgemeinen arbeitet diese Funktion im
@@ -105,7 +105,7 @@ KI-Agenten:
 ![Eintrag eines KI-Agenten in die
 Ticket-Historie](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Erkennung gleichzeitige Ticketbearbeitung
+### Simultaneous work detection
 
 KI-Agenten, die gerade an einem Ticket arbeiten, werden wie andere Agenten
 im Live-Benutzer-Bereich in der unteren Leiste angezeigt. Dies hilft,
@@ -118,7 +118,7 @@ Avatar eines KI Agenten:
 ![Screenshot zeigt Avatar eines
 KI-Agenten](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Indikator in Übersichten
+### Overview indicator
 
 Ein laufender KI-Agent wird in der Statusspalte in den Übersichten
 angezeigt. Die Farbe des Kreises ändert sich zu einem blau/pinken

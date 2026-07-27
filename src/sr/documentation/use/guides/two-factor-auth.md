@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Двофакторска аутентификација'
+title: 'Two-factor authentication'
 ---
 
-# Двофакторска аутентификација
+# Two-factor authentication
 
 Двофакторска аутентификација (2FA) повишава безбедност вашег Zammad налога
 додавањем додатног слоја верификације поред лозинке. Захтева од вас да
@@ -34,7 +34,7 @@ setup process, which includes specific steps.  Continue with using an
 [Authentication App](#authentication-app) or a [Security
 Key](#security-key).
 
-### Апликација за аутентификацију
+### Authentication app
 
 Метод апликација за аутентификацију је врста двофакторске аутентификације
 која користи мобилну апликацију за генерисање једнократних кодова за
@@ -70,7 +70,7 @@ Back in Zammad, enter the provided code to the **Security Code** field and
 click on **Set Up**. Go on either by setting up another 2FA method
 ([security key](#security-key)) or check how to [log in with 2FA](#sign-in).
 
-### Безбедносни кључ
+### Security key
 
 Метод безбедносних кључева је врста двофакторске аутентификације која
 користи Web Authentication API претраживача за верификацију вашег
@@ -149,7 +149,7 @@ You can use a single recovery code only once! In case you exhaust the list of yo
 you regenerate them for your account.
 :::
 
-## Генерисање шифри за опоравак
+## Generate recovery codes
 
 Шифре за опоравак су једнократни безбедносни кодови који се могу користити
 за пријављивање ако изгубите приступ другим методама двофакторске
@@ -170,7 +170,7 @@ invalidates already existing recovery codes and provides you with a list of
 fresh codes. You can do this by clicking on `Regenerate recovery codes`
 button in your profile's 2FA settings.
 
-## Постављање подразумеваног метода двофакторске аутентификације
+## Set a default 2FA method
 
 To set an already set up two-factor method as default, use the ::a:: actions
 menu next to it in your profile's 2FA settings and choose **Set as
@@ -186,7 +186,7 @@ A default two-factor authentication method is just your preferred method
 during the sign-in process. You will always have an option to try signing in
 using another method.
 
-## Edit a 2FA Method
+## Edit a 2FA method
 
 ![Screenshot shows the action menu for an already set up 2FA
 method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
@@ -200,7 +200,7 @@ your current password.
 обновити и заменити старију поставку, али неке методе подржавају и напредне
 функције (нпр. додавање више безбедносних кључева).
 
-## Уклањање метода двофакторске аутентификације
+## Remove a 2FA method
 
 To remove an already set up two-factor method, use the ::a:: actions menu
 next to it and choose **Remove**. In a modal dialog, you will be asked to

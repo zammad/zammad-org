@@ -27,7 +27,7 @@ amministratore Zammad, puoi trovare lì diverse panoramiche, ad esempio:
 Selezionare una panoramica nella navigazione di secondo livello mostra una
 tabella che include i ticket corrispondenti.
 
-## Utilizzo e funzionalità
+## Usage and features
 
 Le panoramiche possono essere definite dagli amministratori in base a regole
 e condizioni. Ciò significa che se un ticket è stato modificato e la
@@ -56,7 +56,7 @@ lavorare su un ticket.
 Se ti manca una panoramica o vuoi avere impostazioni diverse, fai sapere al tuo amministratore Zammad!
 :::
 
-### Stato e priorità codificati per colore
+### Color coded state and priority
 
 Per visualizzare diversi stati e priorità dei ticket, le voci nella tabella
 sono codificate per colore.
@@ -87,7 +87,7 @@ ticket](/screenshots/documentation/use/overviews/priorities.png)
 - 2 normale: blu
 - 3 alta: rosso
 
-### Apri un ticket
+### Open a ticket
 
 Open a ticket by simply clicking on the row. This opens the ticket as a tab
 in your taskbar and shows you the ticket detail view. If this ticket is
@@ -98,7 +98,7 @@ Se una panoramica contiene più di un ticket e ne apri uno, puoi trovare
 frecce nell'intestazione della visualizzazione dettagli ticket per passare
 al ticket successivo/precedente di questa panoramica.
 
-### Azioni bulk
+### Bulk actions
 
 Perform bulk actions by selecting multiple tickets and either use the bulk
 action flyout or drag them with the mouse to invoke the bulk action
@@ -106,7 +106,7 @@ overlay. You can find more information about that in the [Bulk
 Actions](../advanced-features#bulk-actions) section in the advanced features
 page.
 
-### Riordina panoramiche
+### Reorder overviews
 
 If the order of the overviews doesn't reflect your working process or you
 just like to have a different order, you can re-arrange them for your

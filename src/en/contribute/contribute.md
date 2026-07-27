@@ -16,14 +16,14 @@ You can contribute to:
 Please have a look at our the sections below about how to contribute. All repos can be found on
 [Github](https://github.com/zammad){target=_blank}.
 
-## Zammad Source Code
+## Zammad source code
 
 The Zammad source code can be found on GitHub in the
 [Zammad repository](https://github.com/zammad/zammad){target=_blank}. Have a look at the
 [developer manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
 to get started.
 
-### Supported Branches / Versions
+### Supported branches / versions
 
 Zammad's Github repository has several branches:
 
@@ -120,7 +120,7 @@ string and, in theory, you can start translating. But let's first have a brief l
     - **Other languages**: here you see an list if and how the string is translated into other languages (could be
       useful for languages, which are similar).
 
-### Markup in Strings
+### Markup in strings
 
 Find some examples for special source strings below with a badge indicating where such a string can be found. Try to
 keep the (adjusted) markup and make sure to keep the variables. The **Source string location** section in Weblate

@@ -4,12 +4,12 @@ features:
     details: 'Wenn Sie neu in Zammad und in der Ticket-Software im Allgemeinen sind, lesen Sie zunächst hier die Grundlagen.'
     icon: 🙋
     link: /de/documentation/use/basics/zammad-ui
-    title: 'Zammad Anfänger'
+    title: 'Zammad beginner'
   - 
     details: 'Wenn Sie bereits mit den Grundlagen vertraut sind, lesen Sie hier weiter oder springen Sie direkt zu dem entsprechenden Abschnitt in der Navigations-Seitenleiste.'
     icon: 🧑‍✈️
     link: /de/documentation/use/advanced-features
-    title: 'Fortgeschrittener Benutzer'
+    title: 'Advanced user'
   - 
     details: 'Schauen Sie sich als Administrator den Bereich "Zammad verwalten" an.'
     icon: 🧑‍🔧

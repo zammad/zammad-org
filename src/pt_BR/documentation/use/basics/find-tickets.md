@@ -1,13 +1,13 @@
 ---
 order: 3
-title: 'Encontrar tickets'
+title: 'Find tickets'
 ---
 
-# Encontrar tickets
+# Find tickets
 
 Há diferentes formas de encontrar tickets, dependendo do seu caso de uso.
 
-## Via visões gerais
+## Via overviews
 
 Se você está procurando novos tickets para trabalhar, seu primeiro lugar
 para olhar deve ser a seção de visões gerais. Você pode abri-la clicando no
@@ -23,7 +23,7 @@ definir qual ticket aparece em qual visão geral.
 Para uma descrição detalhada, acesse o [guia de uso de visões
 gerais](/pt_BR/documentation/use/guides/overviews).
 
-## Via pesquisa
+## Via search
 
 No entanto, se você está procurando um ticket específico que pode ou não
 estar visível nas visões gerais, você pode usar a pesquisa. Você a encontra

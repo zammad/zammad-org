@@ -2,7 +2,7 @@
 order: 3
 ---
 
-# Webserver Configuration
+# Webserver configuration
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
@@ -28,12 +28,12 @@ Skip this page. Configure the webserver port, hostname and scheme via the
 [environment variables page](/en/reference/environment-variables).
 :::
 
-## Obtain an SSL Certificate
+## Obtain an SSL certificate
 
 Zammad requires HTTPS in production. Use one of the options below to obtain
 a certificate before continuing with the webserver configuration.
 
-### Commercial Certificate Authority
+### Commercial certificate authority
 
 Buy an annual certificate from any trusted public CA. A few common options
 are [Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank},
@@ -105,7 +105,7 @@ for further use cases.
 
 :::
 
-## Adjust the Webserver Configuration
+## Adjust the webserver configuration
 
 <!-- markdownlint-disable MD036 -->
 
@@ -291,13 +291,13 @@ UI. If you don't see Zammad's setup wizard or Zammad UI at all, check the
 
 ## Решавање проблема
 
-### Default Landing Page Instead of Zammad
+### Default landing page instead of Zammad
 
 If you reach the webserver's default landing page rather than Zammad, your
 `zammad.conf` may be overruled by another config file. Check the vhost
 directory for `000-default.conf` or `default.conf` and disable it.
 
-### DNS Not Resolving
+### DNS not resolving
 
 If the subdomain does not resolve, double-check the DNS records for your
 domain and wait for them to propagate. Replace the `zammad.example.com` in
@@ -308,7 +308,7 @@ domain points to the right server:
 host zammad.example.com
 ```
 
-### CSRF Token Errors
+### CSRF token errors
 
 If users cannot log in because of CSRF token errors, your webserver chain
 may not pass the original connection type to Zammad. Tell the proxy directly

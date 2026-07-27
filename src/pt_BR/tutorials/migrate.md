@@ -22,7 +22,7 @@ Depois disso, você pode querer continuar com os [Primeiros
 Passos](/pt_BR/tutorials/first-steps) para configurar o Zammad. Isso deve
 ser feito após a migração.
 
-## Limitações gerais
+## General limitations
 
 Há algumas limitações gerais que você pode encontrar abaixo. Também pode
 haver limitações dependendo de qual sistema você está vindo. Elas são
@@ -39,7 +39,7 @@ Limitações gerais para todas as migrações:
   selecionar informações específicas, como grupos, tickets ou usuários
   específicos.
 
-## Guias específicos de migração
+## Specific migration guides
 
 ::: info
 
@@ -178,7 +178,7 @@ o que lhe dá uma saída do estado atual da tarefa.
 :::
 ::::
 
-#### Após a migração
+#### After migration
 
 Execute os seguintes comandos:
 
@@ -333,7 +333,7 @@ o que lhe dá uma saída do estado atual da tarefa.
 :::
 ::::
 
-#### Após a migração
+#### After migration
 
 Execute os seguintes comandos:
 
@@ -400,7 +400,7 @@ Em alguns casos, reiniciar seu servidor web pode ajudar a resolver erros interno
 servidor.
 :::
 
-### Ajustes de timeout
+### Timeout adjustments
 
 Se sua importação sofrer timeout, ou você já sabe que isso pode ser um
 problema, você pode ajustar os timeouts via variáveis de ambiente. Para
@@ -472,7 +472,7 @@ Import::OTRS.diff_worker
 
 :::
 
-#### Após a migração
+#### After migration
 
 Execute os seguintes comandos:
 
@@ -613,7 +613,7 @@ o que lhe dá uma saída do estado atual da tarefa.
 
 ::::
 
-#### Após a migração
+#### After migration
 
 Execute os seguintes comandos:
 

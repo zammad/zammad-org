@@ -3,7 +3,7 @@ order: 4
 title: Kubernetes
 ---
 
-# Instalação via Kubernetes
+# Kubernetes installation
 
 Você pode encontrar instruções de instalação na [documentação do nosso helm
 chart](https://github.com/zammad/zammad-helm/blob/main/zammad/README.md){target=_blank}.

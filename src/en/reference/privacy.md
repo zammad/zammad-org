@@ -1,18 +1,18 @@
 ---
-title: Data Retention and External Services
+title: Data retention and external services
 order: 99
 ---
 
-# Data Retention and External Services
+# Data retention and external services
 
 How long does Zammad store user data? How can I manage its user data
 retention behavior? To which services connects Zammad?
 
-## Data Retention
+## Data retention
 
 The following data is stored locally on the production system:
 
-### Tickets and Users
+### Tickets and users
 
 By default, Zammad never automatically deletes tickets or users.
 
@@ -62,12 +62,12 @@ user preferences menu, under _Devices_.
 Session information includes IP address (and possibly geographic
 location), browser, time of original login, and time of last visit.
 
-### Data Privacy Tasks
+### Data privacy tasks
 
 Each entry in the data privacy task list is automatically deleted after
 12 months.
 
-## External Services
+## External services
 
 Zammad utilizes third party web services for certain functions, meaning
 that user data may occasionally be sent or exposed to third parties.

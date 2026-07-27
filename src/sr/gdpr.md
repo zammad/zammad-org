@@ -6,7 +6,7 @@ layout: home
 
 > Општа правила о заштити података
 
-## Zammad GmbH полиса приватности
+## Zammad GmbH privacy policy
 
 This privacy policy describes how your personal information is collected,
 used and shared when you visit <https://www.zammad.org> (the "site").

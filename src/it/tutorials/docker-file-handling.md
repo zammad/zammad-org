@@ -1,14 +1,14 @@
 ---
 order: 8
-title: 'Esempi di gestione file Docker'
+title: 'Docker file handling examples'
 ---
 
-# Esempi di gestione file Docker
+# Docker file handling examples
 
 Se non sei sicuro di come gestire i file di backup e come creare la cartella
 `restore`.
 
-## Ripristina all'interno dello stesso stack
+## Restore inside the same stack
 
 **Richiede:** accesso console al container zammad-backup.
 
@@ -21,7 +21,7 @@ docker compose run --rm zammad-backup bash -c "mkdir /var/tmp/zammad/restore; cp
 
 Ora avvia lo stack per eseguire il processo di ripristino.
 
-## Ripristina da un'altra installazione
+## Restore from another installation
 
 **Richiede:** accesso console al sistema host e al container zammad-backup.
 
@@ -46,7 +46,7 @@ docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup b
 
 Ora avvia lo stack per eseguire il processo di ripristino.
 
-## Usa un'interfaccia web
+## Use a web GUI
 
 **Richiede:** accesso console al sistema host o accesso Portainer con il permesso di.
 

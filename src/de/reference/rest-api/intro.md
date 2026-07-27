@@ -37,7 +37,7 @@ möglicherweise nicht Zugang zu allen hier aufgeführten Endpunkten bieten.
 Zammad unterstützt drei verschiedene Authentifizierungsmethoden für seine
 API.
 
-### HTTP-Basisauthentifizierung (Benutzername/Kennwort)
+### HTTP basic authentication (username/password)
 
 Der Benutzername / das Passwort muss als HTTP Header im HTTP-Aufruf
 angegeben werden.  Diese Authentifizierungsmethode kann deaktiviert werden
@@ -52,7 +52,7 @@ Wir raten dringend von der Verwendung der Basisauthentifizierung ab. Verwenden S
 Zugangs-Token, wann immer möglich!
 :::
 
-### HTTP-Token-Authentifizierung (Zugangs-Token)
+### HTTP token authentication (access token)
 
 Das Zugangs-Token muss als HTTP Header im HTTP-Aufruf angegeben werden.
 Jeder Benutzer kann in seinen Benutzereinstellungen mehrere Zugangs-Token
@@ -73,7 +73,7 @@ authentifizieren.
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpunkte und Beispieldaten
+## Endpoints and example data
 
 Der Einfachheit halber werden wir auf den nächsten Seiten keine spezifischen
 Befehle angeben, sondern stattdessen die mögliche Aufrufmethode (z.B. `GET`)
@@ -86,13 +86,13 @@ Standardinstanz von Zammad. Bitte denken Sie daran, dass Sie möglicherweise
 weitere Felder oder allgemeine Informationen sehen, falls Sie Objekte oder
 andere Informationen hinzugefügt haben.
 
-## Inhalts-Typ
+## Content type
 
 Zammad gibt JSON-Nutzlast zurück, wenn Sie Daten abrufen. Wenn Sie Daten
 bereitstellen, unabhängig vom allgemeinen Anfragetyp, vergessen Sie nicht,
 auch den Inhaltstyp `application/json` anzugeben.
 
-## Antwort-Nutzlast (erweitern)
+## Response payloads (expand)
 
 Zammad gibt immer Informationen einschließlich Hinweisen zu allen
 Beziehungen zurück. Wenn Sie mehr Informationen benötigen (weil IDs
@@ -161,7 +161,7 @@ um mehr Ergebnisse zu erhalten.
 
 ## Suche per API
 
-### Endpunkt Suche
+### Endpoint search
 
 Einige Endpunkte unterstützen eine Suchanfrage. Diese sind:
 
@@ -181,7 +181,7 @@ in dieser Dokumentation nicht explizit behandelt:
 - Vorlagen
 - Textbaustein
 
-#### Beispiel für eine Suche
+#### Search example
 
 `GET`-Request gesendet: `/api/v1/tickets/search?query=welcome`
 
@@ -189,7 +189,7 @@ in dieser Dokumentation nicht explizit behandelt:
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Expand Parameter
+#### Expand parameter
 
 Wenn Sie zusätzliche erweiterte Informationen wünschen, können Sie den
 Parameter `expand` verwenden. Mit ihm werden die IDs aufgelöst und
@@ -201,7 +201,7 @@ zusätzlich Werte/Namen ausgegeben.
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Full Parameter
+#### Full parameter
 
 Sie können die Antwort sogar noch erweitern, indem Sie den Parameter `full`
 verwenden. Seien Sie sich bewusst, dass diese Antwort sehr umfangreich sein
@@ -214,7 +214,7 @@ einer `total_count` genannten Gesamtzahl der Suchergebnisse.
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### With Total Count Parameter
+#### With total count parameter
 
 Mit diesem Parameter wird zusätzlich die Anzahl der Suchergebnisse
 ausgegeben.  Er kann mit `full` und `expand` kombiniert werden.
@@ -226,7 +226,7 @@ ausgegeben.  Er kann mit `full` und `expand` kombiniert werden.
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Only Total Count Parameter
+#### Only total count parameter
 
 Mit dem Parameter `only_total_count` wird nur die Anzahl der Suchergebnisse
 ausgegeben.
@@ -238,7 +238,7 @@ ausgegeben.
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Globale Suche
+### Global search
 
 Wenn Sie nicht nur in einem bestimmten Objekttyp suchen möchten, können Sie
 dies mit der globalen Suche ohne Angabe eines Objekts tun. Die Antwort kann
@@ -253,7 +253,7 @@ Parameter unterscheiden sich von denen der Endpunktsuche.
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Bedingungsabhängige Suche
+### Condition based search
 
 Sie können sogar Bedingungen wie in Triggern und Automatisierungen
 verwenden, um über die API zu suchen. Wenn Sie solche Bedingungen nicht
@@ -292,7 +292,7 @@ Verwenden Sie dies als Nutzlast in Ihrem `POST`-Request in einer
 Endpunktsuche. Die Antwort enthält die gleichen Objekte wie der Trigger oder
 die Übersicht, die Sie erstellt haben.
 
-## Sortierung der Suchergebnisse
+## Sorting search results
 
 Zammad ermöglicht es Ihnen, Ihre Suchergebnisse bei Bedarf nach Feldern zu
 sortieren.
@@ -314,7 +314,7 @@ In der Regel werden Sie beide Parameter in Ihrer Suche kombinieren wollen,
 z.B.: `?query={suchstring}&sort_by={row name}&order_by={direction}`
 :::
 
-## Handlungen im Namen anderer Benutzer
+## Actions on behalf of other users
 
 **Voraussetzung:** Der Benutzer, der die Abfrage ausführt, benötigt
 die Berechtigung `admin.user`.

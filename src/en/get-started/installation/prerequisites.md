@@ -7,7 +7,7 @@ order: 1
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Server Hardware
+## Server hardware
 
 The hardware requirements vary depending on the scenario. This makes it hard to come up with specific CPU and memory
 numbers which are fitting for all use cases. In any case, more and better hardware ensures that Zammad runs smoothly
@@ -23,7 +23,7 @@ For an example scenario with up to 40 agents, a good starting point could be:
 - 6 CPU cores
 - 6 GB RAM (+6 GB for Elasticsearch)
 
-## Server Software
+## Server software
 
 Depending on the installation type, there are some prerequisites. They are included in the installation instructions:
 
@@ -31,7 +31,7 @@ Depending on the installation type, there are some prerequisites. They are inclu
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Client Requirements
+## Client requirements
 
 ### Browser
 

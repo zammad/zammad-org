@@ -19,7 +19,7 @@ Bitte werfen Sie einen Blick auf die nächsten Abschnitte, wie Sie beitragen
 können. Alle Repos können auf
 [Github](https://github.com/zammad){target=_blank} gefunden werden.
 
-## Zammad Quellcode
+## Zammad source code
 
 Der Quellcode von Zammad ist auf GitHub im
 [Zammad-Repository](https://github.com/zammad/zammad){target=_blank} zu
@@ -27,7 +27,7 @@ finden. Werfen Sie einen Blick in das [Developer
 Manual](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank},
 um loszulegen.
 
-### Unterstützte Branches / Versionen
+### Supported branches / versions
 
 Zammads Repository auf Github hat mehrere Branches:
 
@@ -159,7 +159,7 @@ User-Interface](/screenshots/contribute/weblate-ui.png)
       Zeichenketten sehen (könnte für Sprachen nützlich sein, die ähnlich
       sind).
 
-### Zeichenketten mit Auszeichnung
+### Markup in strings
 
 Unten finden Sie einige Beispiele für spezielle Zeichenketten mit einem
 Hinweis darauf, wo eine solche Zeichenkette zu finden ist. Versuchen Sie,

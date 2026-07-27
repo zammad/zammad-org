@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Conectar e configurar o Elasticsearch'
+title: 'Connect and configure Elasticsearch'
 ---
 
-# Conectar e configurar o Elasticsearch
+# Connect and configure Elasticsearch
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
@@ -19,7 +19,7 @@ Defina o endereço do servidor Elasticsearch; adapte ao seu cenário.
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Definir o usuário e senha do Elasticsearch
+### Set the Elasticsearch user and password
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
@@ -32,9 +32,9 @@ senha, execute `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u ela
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Adicionar certificado ao Zammad
+### Add certificate to Zammad
 
-#### Adicionar via console Rails
+#### Add it via rails console
 
 Caso você esteja instalando um novo Zammad e ainda não tenha passado pelo
 assistente de configuração inicial, adicione o certificado via console:
@@ -57,7 +57,7 @@ Para adicioná-lo no Zammad, envie o arquivo de certificado ou cole o
 conteúdo na caixa de diálogo. Certifique-se de copiar/colar os delimitadores
 (por exemplo, `-----BEGIN CERTIFICATE-----`) também.
 
-### Construir/reconstruir o índice de pesquisa
+### Build/rebuild the searchindex
 
 Sem especificar núcleos de CPU a usar:
 
@@ -71,13 +71,13 @@ Especificando núcleos de CPU a usar (exemplo 8):
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-## Configurações opcionais
+## Optional settings
 
 Reunimos algumas configurações úteis que você pode querer aplicar. Para mais
 informações, consulte a [documentação da
 Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
-### Namespacing de índice
+### Index namespacing
 
 Útil ao conectar múltiplos serviços ou instâncias do Zammad a um único
 servidor Elasticsearch (para evitar colisões de nomes durante a indexação).
@@ -86,7 +86,7 @@ servidor Elasticsearch (para evitar colisões de nomes durante a indexação).
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
 
-### Regras de indexação de anexos de arquivo
+### File-attachment indexing rules
 
 O Zammad suporta pesquisa em anexos de arquivo, o que significa que o
 Elasticsearch precisa indexá-los também. Limitar essa indexação pode ajudar
@@ -126,7 +126,7 @@ fornecidas, ou não encontrar seu problema específico descrito aqui, sinta-se �
 técnica.
 :::
 
-### Dados ausentes na interface web / dados de pesquisa ausentes ou incompletos
+### Data missing from the web-UI / search data missing or incomplete
 
 Um problema comumente relatado é a falta de dados na interface web. Isso
 pode ser tickets, artigos, usuários ou qualquer outra coisa [indexada pelo
@@ -138,7 +138,7 @@ com o nosso [guia de instalação](/pt_BR/tutorials/install-elasticsearch),
 siga estas etapas para garantir que o Elasticsearch esteja funcionando
 corretamente.
 
-#### Etapa 1: verificar se o Elasticsearch está em execução
+#### Step 1: Verify Elasticsearch is running
 
 ```sh
 sudo systemctl status elasticsearch
@@ -167,7 +167,7 @@ Tente limpar completamente e reinstalar o Elasticsearch de acordo com o
 nosso [guia de instalação](/pt_BR/tutorials/install-elasticsearch).
 :::
 
-#### Etapa 2: verificar se o Zammad pode acessar o Elasticsearch e reconstruir os índices
+#### Step 2: Verify Zammad can access Elasticsearch and rebuild the indexes
 
 Force o Zammad a descartar e reconstruir os índices do Elasticsearch,
 opcionalmente com um número específico de núcleos de CPU a usar para a

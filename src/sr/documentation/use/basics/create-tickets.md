@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Отварање тикета'
+title: 'Create tickets'
 ---
 
-# Отварање тикета
+# Create tickets
 
 When a customer messages you over a channel which is fetched by Zammad, a
 ticket is created automatically (unless Zammad recognizes it as a follow-up,
@@ -22,7 +22,7 @@ ticket create screen where you can add all needed information.
 ![Screenshot shows ticket create
 screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
-## Type Selector
+## Type selector
 
 У екрану отварања тикета, можете одабрати различите врсте чланака:
 
@@ -60,7 +60,7 @@ gets written down. For the "Send Email" type, this is the content/message of
 the email. To learn more about the editor and its features, check the
 [editor documentation](/en/documentation/use/guides/editor).
 
-## Атрибути тикета
+## Ticket attributes
 
 As you may know, there are additional ticket attributes such as group,
 priority and owner that you can set. If you haven't read the [ticket

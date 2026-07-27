@@ -49,7 +49,7 @@ autorizzazioni di conseguenza.
 Assicurati di copiarlo prima di chiudere la finestra di dialogo perché non
 potrai visualizzarlo di nuovo.
 
-### Prepara il tuo client
+### Prepare your client
 
 Apri il tuo client API e configuralo.
 
@@ -72,7 +72,7 @@ base usando Bruno come client.
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Crea una richiesta
+### Create a request
 
 Tutte le richieste e risposte sono in formato JSON. Ciò significa che tutte
 le informazioni devono essere incapsulate.
@@ -171,7 +171,7 @@ impostarla quando usi.
 
 ## Appendice
 
-### ID globali
+### Global ids
 
 ::: info
 

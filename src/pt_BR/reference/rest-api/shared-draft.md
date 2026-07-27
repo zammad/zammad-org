@@ -1,9 +1,9 @@
 ---
 order: 15
-title: 'Rascunhos compartilhados'
+title: 'Shared drafts'
 ---
 
-# Rascunhos compartilhados
+# Shared drafts
 
 ## Mostrar
 

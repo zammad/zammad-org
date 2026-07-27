@@ -87,7 +87,7 @@ A seconda della selezione sopra, alcuni tipi di articolo potrebbero non essere d
 o comportarsi diversamente.
 :::
 
-## Elenca articoli per ticket
+## List articles by ticket
 
 Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
@@ -99,7 +99,7 @@ Richiesta `GET` inviata: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
 :::
 
-## Elenca articolo specifico
+## List specific article
 
 Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
@@ -122,7 +122,7 @@ Se vuoi creare articoli per conto di altri utenti (ad esempio per una
 nota telefonica), usa il.
 :::
 
-### Articolo semplice
+### Plain article
 
 :::: details
 
@@ -139,7 +139,7 @@ nota telefonica), usa il.
 :::
 ::::
 
-### Articolo con file allegati
+### Article with attached files
 
 :::: details
 
@@ -156,7 +156,7 @@ nota telefonica), usa il.
 :::
 ::::
 
-### Articolo con immagini inline
+### Article with inline images
 
 Le immagini inline possono essere usate fornendo data URI nel tuo markup
 HTML.
@@ -176,7 +176,7 @@ HTML.
 :::
 ::::
 
-## Ricevi allegati
+## Receive attachments
 
 Ora che hai tutti quei fantastici allegati nei tuoi ticket, potresti voler
 scaricarli.

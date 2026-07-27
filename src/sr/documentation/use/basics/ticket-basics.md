@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Основе тикета'
+title: 'Ticket basics'
 ---
 
-# Основе тикета
+# Ticket basics
 
 New to ticket systems? Then read on about the basics. This helps you to
 understand the main concepts and to get started with Zammad. If you are
@@ -39,7 +39,7 @@ between you and a customer about a single issue.
 имејл клијенту. Осим што тикет има додатне атрибуте. Читајте даље да сазнате
 више.
 
-## Атрибути тикета
+## Ticket attributes
 
 Поред чланака, тикети поседују и неке додатне мета податке који се зову
 атрибути. Користите **бочну траку тикета** за преглед и измену атрибута

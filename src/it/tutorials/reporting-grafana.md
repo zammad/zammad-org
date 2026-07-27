@@ -36,7 +36,7 @@ Non esporre mai Elasticsearch al pubblico se non sei sicuro di
 come farlo. In particolare **mai.
 :::
 
-## Configurazione delle origini dati richieste
+## Setting up required data sources
 
 **Prima di iniziare:** Le origini dati seguono sempre lo stesso schema. Abbiamo
 ridotto le informazioni sotto.
@@ -99,32 +99,32 @@ Questo restituirà un output simile al seguente:
 :::
 ::::
 
-### ES - Sessioni chat
+### ES - chat sessions
 
 - Nome indice: `zammad_production_chat_session`
 - Nome campo orario: `created_at`
 
-### ES - Registro CTI
+### ES - CTI log
 
 - Nome indice: `zammad_production_cti_log`
 - Nome campo orario: `start_at`
 
-### ES - Articoli ticket
+### ES - ticket articles
 
 - Nome indice: `zammad_production_ticket`
 - Nome campo orario: `article.created_at`
 
-### ES - Ticket per closed_at
+### ES - tickets by closed_at
 
 - Nome indice: `zammad_production_ticket`
 - Nome campo orario: `close_at`
 
-### ES - Ticket per created_at
+### ES - tickets by created_at
 
 - Nome indice: `zammad_production_ticket`
 - Nome campo orario: `created_at`
 
-### ES - Ticket per first_response_at
+### ES - tickets by first_response_at
 
 - Nome indice: `zammad_production_ticket`
 - Nome campo orario: `first_response_at`
@@ -132,13 +132,13 @@ Questo restituirà un output simile al seguente:
 Con le origini dati sopra hai fondamentalmente tutto ciò di cui hai bisogno
 per iniziare a costruire la tua.
 
-## Avvio rapido con modello dashboard
+## Quick start with dashboard template
 
 Se desideri trarre ispirazione, puoi utilizzare le nostre dashboard di
 esempio, come indicato di seguito. Queste dashboard sono disponibili anche
 su [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
-### Importare una dashboard
+### Importing a dashboard
 
 In Grafana, seleziona _➕ > Importa_ (o qualsiasi altro posto che ti offre di importare
 una dashboard.
@@ -146,17 +146,17 @@ una dashboard.
 Durante l'importazione puoi fornire un nome dashboard e una cartella. Ti
 verrà anche chiesto di mappare.
 
-### Dashboard statistiche ticket <Badge type="tip" text="14222"/>
+### Ticket statistics dashboard <Badge type="tip" text="14222"/>
 
 ![Dashboard ticket Grafana](/screenshots/tutorials/reporting/tickets.png)
 
-#### Grafici dashboard
+#### Dashboard graphs
 
 - apertura e chiusura ticket[^1]
 - articoli creati
 - SLA ticket (in tempo _e_ violazione) per tipo[^1][^2]
 
-#### Meta informazioni ticket e articoli
+#### Ticket and article meta information
 
 - distribuzione gruppi ticket
 - rapporto mittenti (ad esempio Cliente / Agente)[^3]
@@ -172,22 +172,22 @@ verrà anche chiesto di mappare.
   - tag ticket[^1]
 - ultimi 10 ticket escalati
 
-#### Origini dati richieste
+#### Required data sources
 
 - `ES - Articoli ticket`
 - `ES - Ticket per created_at`
 - `ES - Ticket per closed_at`
 
-### Dashboard statistiche sessioni chat <Badge type="tip" text="14224"/>
+### Chat-session statistics dashboard <Badge type="tip" text="14224"/>
 
 ![Dashboard chat
 Grafana](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Grafici dashboard
+#### Dashboard graphs
 
 Creazioni sessioni chat.
 
-#### Meta informazioni sessione chat
+#### Chat session meta information
 
 - top 10 di:
   - tag chat
@@ -199,19 +199,19 @@ Creazioni sessioni chat.
 - tempo medio chat
 - mappa mondiale con paesi di origine chat
 
-#### Origini dati richieste
+#### Required data sources
 
 - `ES - Sessioni chat`
 
-### Dashboard statistiche registro CTI <Badge type="tip" text="14223"/>
+### CTI-log statistics dashboard <Badge type="tip" text="14223"/>
 
 ![Dashboard chiamate Grafana](/screenshots/tutorials/reporting/calls.png)
 
-#### Grafici dashboard
+#### Dashboard graphs
 
 Numero di chiamate per direzione (in entrata / in uscita).
 
-#### Meta informazioni sessione chat
+#### Chat session meta information
 
 - rapporto chiamate (in entrata / in uscita)
 - tempo medio di attesa
@@ -220,7 +220,7 @@ Numero di chiamate per direzione (in entrata / in uscita).
   - chiamanti (in entrata)
   - risponditori chiamate (in entrata)
 
-#### Origini dati richieste
+#### Required data sources
 
 - `ES - Registro CTI`
 

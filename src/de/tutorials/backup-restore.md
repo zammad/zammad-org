@@ -1,9 +1,9 @@
 ---
 order: 7
-title: 'Backup & Restore (Paket)'
+title: 'Backup & restore (package)'
 ---
 
-# Backup & Restore (Paket)
+# Backup & restore (package)
 
 Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
 Paket-Installationen mit, die Sie verwenden können.
@@ -53,7 +53,7 @@ Standardkonfiguration durchzuführen:
 1. Ausführen von `/opt/zammad/contrib/backup/zammad_backup.sh` (als `root`
    oder `zammad` Benutzer)
 
-## Backup-Konfiguration
+## Backup configuration
 
 Einzelheiten zu den Konfigurationsparametern mit Standardwerten finden Sie
 weiter unten.
@@ -87,9 +87,9 @@ weiter unten.
   testen wieder ab.
   :::
 
-## Sicherungen wiederherstellen
+## Restore backups
 
-### Wichtige Informationen
+### Important information
 
 Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit
 der Wiederherstellung Ihrer Daten beginnen.
@@ -115,7 +115,7 @@ Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
 [bezahlte Support-Optionen](https://zammad.com/de/services/professional-services){target=_blank}.
 :::
 
-### Kopieren von Sicherungsdateien an einen passenden Ort
+### Copy backup files to a fitting location
 
 Stellen Sie sicher, dass der Benutzer, den Sie für die Wiederherstellung
 verwenden, berechtigt ist, die Sicherungsdateien zu lesen und in
@@ -139,13 +139,13 @@ latest_zammad_files.tar.gz
 Kopieren Sie diese an einen passenden Ort, der für den Benutzer, der das
 Wiederherstellungsskript ausführt, zugänglich ist.
 
-### Backup-Skript konfigurieren
+### Configure backup script
 
 Bei einer Neuinstallation ist dies erforderlich. Sie müssen mindestens ein
 Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe
 [Backup-Konfiguration](#backup-konfiguration) für weitere Informationen.
 
-### Aufräumen des Speicherordners
+### Clean up the storage folder
 
 Falls Sie in einer Produktivumgebung mit aktivierte
 Dateisystem-Speichermethode wiederherstellen, sollten Sie den Inhalt des
@@ -153,7 +153,7 @@ Verzeichnisses `/opt/zammad/storage/` innerhalb des Volumes bereinigen. Der
 Wiederherstellungsprozess fügt dort nur Dateien hinzu bzw. überschreibt sie,
 es findet keine Bereinigung statt.
 
-### Die Wiederherstellung ausführen
+### Run the restore
 
 Beachten Sie, dass das Wiederherstellen von Sicherungskopien Ihre `database.yml` überschreiben kann. Sie können
 dies überprüfen, indem Sie in die Datei `[...]_zammad_files.tar.gz` schauen. Wenn es
@@ -228,7 +228,7 @@ CREATE DATABASE
 # Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!
 ```
 
-### Zusätzliche Schritte
+### Additional steps
 
 - Falls Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden
   Sie diese jetzt an.
@@ -240,14 +240,14 @@ CREATE DATABASE
   verminderten Suchleistung und kann zu vorübergehend nicht gefundenen Daten
   führen.
 
-## Fehlerbehebung Sicherung & Wiederherstellung
+## Troubleshooting backup & restore
 
 Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
 nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad
 Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank},
 um nach Unterstützung zu fragen.
 
-### Exit Codes
+### Exit codes
 
 Unsere Sicherungs- und Wiederherstellungsskripte enthalten Exit-Codes, die
 Ihnen helfen, eine Lösung zu finden. Eine vollständiges Handling aller
@@ -263,9 +263,9 @@ ausgegeben werden.
 | `2` | Es gab einen Fehler im Zusammenhang mit der Datenbank. Dies geschieht in der Regel entweder, wenn Ihr Datenbankserver die Anforderungen des Skripts nicht erfüllt, wenn die Anmeldedaten ungültig sind oder wenn Datenbank-Dumps "kaputt" sind. |
 | `3` | Es gab Probleme mit Datei-/Ordnerberechtigungen.                                                                                                                                      |
 
-### Häufige Probleme
+### Common problems
 
-#### Password Authentication Failed / Peer Authentication Failed
+#### Password authentication failed / peer authentication failed
 
 Dies deutet darauf hin, dass das Passwort Ihres Zammad DB Benutzers entweder
 nicht mit Ihrer `database.yml` übereinstimmt oder der falsche
@@ -280,7 +280,7 @@ Vergewissern Sie sich, dass die angegebenen Zugangsdaten des Benutzers
 korrekt sind. Sie können auch das Skript `reset_db_password` verwenden, das
 Sie im Backup-Verzeichnis finden.
 
-#### Ident Authentication Failed for User
+#### Ident authentication failed for user
 
 Dies bedeutet, dass Ihr Datenbankserver eine `ident`-Authentifizierung
 erfordert.  Diese Authentifizierungsmethode wird von unseren Skripten nicht
@@ -303,7 +303,7 @@ Bitte konsultieren Sie dazu die offizielle
 [PostgreSQL-Dokumentation](https://www.postgresql.org/docs/){target=_blank},
 da dies nicht Gegenstand dieser Dokumentation ist.
 
-#### WARNING: You don't Seem to Have Any Attachments in the File System
+#### WARNING: You don't seem to have any attachments in the file system
 
 Dies bedeutet, dass Ihre Instanz derzeit keine Anhänge im Dateisystem
 speichert.
@@ -315,7 +315,7 @@ Prüfen und passen Sie Ihre
 Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](/de/reference/rails-commands#storage-provider-einstellungen)
 oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.
 
-## Hilfsskript
+## Helper script
 
 ### Warnung
 
@@ -324,7 +324,7 @@ Skripte ausführen, deren Anwendungsbereich Sie nicht verstehen.
 
 Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen.
 
-### Datenbank Hilfsskript: Passwort (neu) setzen
+### Database helper: (Re)set password
 
 #### Einschränkungen
 

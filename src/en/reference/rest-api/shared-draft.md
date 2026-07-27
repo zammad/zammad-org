@@ -1,9 +1,9 @@
 ---
 order: 15
-title: Shared Drafts
+title: Shared drafts
 ---
 
-# Shared Drafts
+# Shared drafts
 
 ## Show
 

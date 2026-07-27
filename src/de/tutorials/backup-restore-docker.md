@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Backup & Restore (Docker)'
+title: 'Backup & restore (Docker)'
 ---
 
-# Backup & Restore (Docker)
+# Backup & restore (Docker)
 
 Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und
 Wiederherstellungsprozess für eine auf Docker Compose basierte Installation

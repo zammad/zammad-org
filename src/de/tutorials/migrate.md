@@ -21,7 +21,7 @@ Danach können Sie mit den [Ersten Schritten](/de/tutorials/first-steps)
 fortfahren, um Zammad zu konfigurieren. Dies muss nach der Migration
 durchgeführt werden.
 
-## Allgemeine Einschränkungen
+## General limitations
 
 Es gibt einige allgemeine Einschränkungen, die Sie unten finden. Je nachdem,
 von welchem System Sie kommen, kann es auch spezifische Einschränkungen
@@ -37,7 +37,7 @@ Allgemeine Einschränkungen für alle Migrationen:
 - Zammad migriert alles oder nichts. Das bedeutet, dass Sie bestimmte
   Informationen aus Gruppen, Tickets oder Benutzer nicht abwählen können.
 
-## Spezifische Migrationsanleitungen
+## Specific migration guides
 
 ::: info
 
@@ -180,7 +180,7 @@ Damit erhalten Sie eine Ausgabe des aktuellen Stands der Aufgabe.
 :::
 ::::
 
-#### Nach der Migration
+#### After migration
 
 Führen Sie die folgenden Befehle aus:
 
@@ -339,7 +339,7 @@ Damit erhalten Sie eine Ausgabe des aktuellen Status der Aufgabe.
 :::
 ::::
 
-#### Nach der Migration
+#### After migration
 
 Führen Sie die folgenden Befehle aus:
 
@@ -405,7 +405,7 @@ Zusätzliche Einschränkungen zu den allgemeinen:
 In einigen Fällen kann ein Neustart des Webservers helfen, interne Serverfehler zu beheben.
 :::
 
-### Timeout-Einstellungen
+### Timeout adjustments
 
 Wenn Ihr Import in einen Timeout läuft oder Sie bereits wissen, dass dies
 ein Problem sein könnte, können Sie die Timeouts über Umgebungsvariablen
@@ -479,7 +479,7 @@ Import::OTRS.diff_worker
 
 :::
 
-#### Nach der Migration
+#### After migration
 
 Führen Sie die folgenden Befehle aus:
 
@@ -621,7 +621,7 @@ Damit erhalten Sie eine Ausgabe des aktuellen Stands der Aufgabe.
 
 ::::
 
-#### Nach der Migration
+#### After migration
 
 Führen Sie die folgenden Befehle aus:
 

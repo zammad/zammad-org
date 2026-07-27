@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Criar tickets'
+title: 'Create tickets'
 ---
 
-# Criar tickets
+# Create tickets
 
 Quando um cliente envia uma mensagem por um canal que o Zammad busca
 automaticamente, um ticket é criado automaticamente (a menos que o Zammad o
@@ -24,7 +24,7 @@ necessárias.
 ![Captura de tela mostra a tela de criação de
 ticket](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
-## Seletor de tipo
+## Type selector
 
 Na caixa de diálogo de criação de ticket, você pode escolher entre
 diferentes tipos de artigo:
@@ -64,7 +64,7 @@ são registrados. Para o tipo "Send Email", este é o conteúdo/mensagem do
 email. Para saber mais sobre o editor e seus recursos, consulte a
 [documentação do editor](/pt_BR/documentation/use/guides/editor).
 
-## Atributos do ticket
+## Ticket attributes
 
 Como você já deve saber, há atributos de ticket adicionais, como grupo,
 prioridade e responsável, que você pode definir. Se você ainda não leu os

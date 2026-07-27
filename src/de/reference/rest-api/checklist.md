@@ -92,7 +92,7 @@ Erforderliche Berechtigung: `ticket.agent`
 
 :::
 
-## Checklisten-Elemente
+## Checklist items
 
 ### Anzeigen
 
@@ -160,7 +160,7 @@ Erforderliche Berechtigung: `ticket.agent`
 
 :::
 
-## Checklisten-Vorlagen
+## Checklist templates
 
 ### Auflisten
 

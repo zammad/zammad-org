@@ -24,7 +24,7 @@ searching the needle in a haystack.
 Fetching the Zammad GraphQL schema (called introspection) enables
 autocomplete and client-side validation while writing requests.
 
-## Getting Started
+## Први кораци
 
 Following the next steps enables you to successfully send a simple request
 and receive data from Zammad.
@@ -51,7 +51,7 @@ accordingly.
 Make sure to copy it before closing the dialog because you can't view it
 again. In case it went wrong, simply create a new token.
 
-### Prepare Your Client
+### Prepare your client
 
 Open your API client and set it up.
 
@@ -73,7 +73,7 @@ as client.
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Create a Request
+### Create a request
 
 All requests and responses are in JSON format. This means all information
 must be encapsulated in brackets and have a hierarchical structure.
@@ -177,7 +177,7 @@ it when using the examples.
 
 ## Appendix
 
-### Global IDs
+### Global ids
 
 ::: info
 

@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Безбедна пошта'
+title: 'Secure email'
 ---
 
-# Безбедна пошта
+# Secure email
 
 Zammad подржава два система безбедне имејл комуникације:
 
@@ -34,7 +34,7 @@ Zammad подржава два система безбедне имејл ком
 ![Screenshot showing outgoing email which just gets signed and not
 encrypted](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Потписивање и шифровање
+## Signing & encryption
 
 Signing
 : Signing is a proof that a message has not been manipulated on its way. It guarantees message **integrity** and
@@ -44,7 +44,7 @@ Encryption
 : Encryption scrambles a message so that it can only be unscrambled by the intended recipient. It guarantees message
   **privacy** and **data security**.
 
-## Долазна имејл порука
+## Incoming email
 
 Иконице катанца и штикле при врху поруке служе као индикатори статуса
 шифровања и потписивања. Кликните на чланак долазне поруке да бисте
@@ -54,7 +54,7 @@ Encryption
 ![Screenshot showing Encrypted and Signed status icons on an incoming email
 article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Иконице статуса долазних имејл порука
+### Status icons for incoming emails
 
 | Icon | Meaning |
 |---|---|
@@ -63,7 +63,7 @@ article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-
 | ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |
 | ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |
 
-## Одлазна имејл порука
+## Outgoing email
 
 Use the `Encrypt` and `Sign` buttons to turn on encryption and signing for
 outgoing emails. They are available for new tickets and replies. Hover over
@@ -76,7 +76,7 @@ editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-e
 Outgoing emails can only be encrypted for a single recipient.
 :::
 
-### Иконице статуса одлазних имејл порука
+### Status icons for outgoing emails
 
 | Icon | Meaning |
 |---|---|
@@ -120,7 +120,7 @@ used to encrypt the message.
 Замолите свог администратора да потврди приватни кључ ваше организације у
 Zammad-овом складишту сертификата.
 
-### Multiple Security Types configured
+### Multiple security types configured
 
 You might see both `PGP` and `S/MIME` buttons. This happens when both
 systems are configured in your system and a customer is using both as

@@ -3,10 +3,10 @@ order: 4
 outline:
   - 2
   - 2
-title: 'Elasticsearch Indexed Attributes'
+title: 'Elasticsearch indexed attributes'
 ---
 
-# Elasticsearch Indexed Attributes
+# Elasticsearch indexed attributes
 
 You can find a list of the main object attributes indexed by Elasticsearch
 (ES) below. In other words, if you wish to find a ticket, article, or user
@@ -435,7 +435,7 @@ ID of user who updated the ticket.
 
 Примери: `1`, `3`
 
-## Приоритет тикета
+## Ticket priority
 
 The following index contains below mentioned information:
 `*_ticket_priority`
@@ -506,7 +506,7 @@ ID of the user who performed the last update.
 
 Пример: `1`
 
-## Стање тикета
+## Ticket state
 
 The following index contains below mentioned information: `*_ticket_state`
 
@@ -1174,7 +1174,7 @@ ID of the user who updated the group.
 
 Пример: `3`
 
-## CTI Log
+## CTI log
 
 The following index contains below mentioned information: `*_cti_log`
 
@@ -1308,7 +1308,7 @@ Last update of entry.
 
 Example: `"2025-02-25T08:49:40.647Z"`
 
-## Chat Session
+## Chat session
 
 The following index contains below mentioned information: `*_chat_session`
 

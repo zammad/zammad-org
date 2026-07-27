@@ -5,14 +5,14 @@ features:
     icon: 🧪
     link: https://zammad.com/it/inizia-a-usare
     target: _blank
-    title: 'Prova gratuita'
+    title: 'Free trial'
   - 
     details: 'Ottieni qui il tuo Zammad basato su cloud. Nessuna installazione, nessun problema, ci occupiamo di tutto noi!'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
     target: _blank
-    title: 'Servizi ospitati Zammad'
+    title: 'Zammad hosted services'
   - 
     details: 'Puoi anche ospitare Zammad da solo. Trova le istruzioni di installazione qui.'
     icon: 🖥️
@@ -39,12 +39,12 @@ informazioni utili e aiuto.
 Siamo sicuri che ti piacerà Zammad! Il modo più semplice per testarlo è
 usare un'[istanza di prova gratuita](https://zammad.com).
 
-## Usa il servizio ospitato di Zammad
+## Use Zammad's hosted service
 
 Per usare Zammad in produzione, vai sul nostro sito gemello
 [zammad.com](https://zammad.com/en/pricing).
 
-## Installazione self-hosted
+## Self hosted installation
 
 Puoi anche ospitare Zammad da solo. Leggi le nostre [istruzioni di
 installazione](/it/get-started/installation/prerequisites).

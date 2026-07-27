@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Installazione agentica'
+title: 'Agentic installation'
 ---
 
-# Installazione agentica
+# Agentic installation
 
 ::: danger
 Tieni presente che le fasi di configurazione per gli agenti AI non trattano argomenti relativi a sicurezza, rete e configurazione (ad esempio, certificati SSL, configurazione del nome host, impostazioni di Elasticsearch). Queste fasi riguardano invece una semplice configurazione di base di Zammad. Per utilizzarlo in produzione, assicurati di configurarlo correttamente seguendo le altre risorse presenti in questa documentazione.
@@ -30,7 +30,7 @@ Istruzioni:
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
 ```
 
-## Installazione tramite gestore pacchetti
+## Installation via package manager
 
 Questo file copre un'installazione tramite gestore pacchetti, incluso
 Elasticsearch.

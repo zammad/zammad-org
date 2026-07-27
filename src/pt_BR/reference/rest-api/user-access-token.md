@@ -1,9 +1,9 @@
 ---
 order: 21
-title: 'Token de acesso do usuário'
+title: 'User access token'
 ---
 
-# Token de acesso do usuário
+# User access token
 
 ## Listar
 

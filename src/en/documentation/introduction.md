@@ -3,11 +3,11 @@ title: Introduction
 order: 1
 features:
   - icon: 🙋
-    title: User Documentation
+    title: User documentation
     details: Find everything about how to work with Zammad on daily basis, with tips, tutorials and everything else you may need.
     link: /en/documentation/use/start
   - icon: 🧑‍🔧
-    title: Administrator Documentation
+    title: Administrator documentation
     details: Find out how to configure Zammad and connect it with remote systems.
     link: /en/documentation/manage/start
   - icon: 🗂️
@@ -16,7 +16,7 @@ features:
     link: /en/reference/glossary
 ---
 
-# Welcome to the Zammad Documentation
+# Welcome to the Zammad documentation
 
 This documentation serves as your comprehensive guide to getting the most out of your ticketing and helpdesk software.
 Here, you'll find in-depth tutorials, user manuals and guides on how to effectively manage customer support requests,

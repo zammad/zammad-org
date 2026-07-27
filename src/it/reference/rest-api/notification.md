@@ -3,7 +3,7 @@ order: 10
 title: Notifica
 ---
 
-# Notifica online
+# Online notification
 
 ::: info
 La disponibilità della notifica dipende fortemente dai permessi dell'utente e dalle notifiche scelte.
@@ -71,7 +71,7 @@ Richiesta `DELETE` inviata: `/api/v1/online_notifications/{id}`
 
 :::
 
-## Segna tutto come letto
+## Mark all as read
 
 Permesso richiesto: `any`
 

@@ -29,7 +29,7 @@ eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:
 Wenn Sie eine Übersicht in der zweiten Navigationsebene auswählen, sehen Sie
 eine Tabelle mit den entsprechenden Tickets.
 
-## Verwendung und Features
+## Usage and features
 
 Übersichten können von Administratoren anhand von Regeln und Bedingungen
 definiert werden. Das heißt, wenn ein Ticket geändert wurde und die
@@ -59,7 +59,7 @@ mit der Bearbeitung eines Tickets.
 Wenn Sie eine Übersicht vermissen oder andere Einstellungen wünschen, lassen Sie es Ihren Zammad-Administrator wissen!
 :::
 
-### Farbcodierter Status und Priorität
+### Color coded state and priority
 
 Um die verschiedenen Status und Prioritäten von Tickets zu visualisieren,
 sind die Einträge in der Tabelle farblich gekennzeichnet.
@@ -90,7 +90,7 @@ Prioritäten](/screenshots/documentation/use/overviews/priorities.png)
 - 2 normal: blau
 - 3 hoch: rot
 
-### Ein Ticket öffnen
+### Open a ticket
 
 Öffnen Sie ein Ticket, indem Sie einfach auf die Zeile klicken. Dadurch
 öffnet sich das Ticket als Tab in der Taskleiste und zeigt Ihnen die Ticket
@@ -101,7 +101,7 @@ Wenn eine Übersicht mehr als ein Ticket enthält und Sie eines der Tickets
 öffnen, finden Sie im Header der Ticket Detailansicht Pfeile, um zum
 nächsten/vorherigen Ticket dieser Übersicht zu wechseln.
 
-### Mehrfach-Aktionen
+### Bulk actions
 
 Führen Sie Mehrfach-Aktionen durch, indem Sie mehrere Tickets auswählen und
 entweder das Seitenmenü verwenden oder die Tickets mit der Maus ziehen, um
@@ -110,7 +110,7 @@ dazu finden Sie im Abschnitt
 [Mehrfach-Aktionen](../advanced-features#mehrfach-aktionen) auf der Seite
 mit den erweiterten Funktionen.
 
-### Übersichten neu anordnen
+### Reorder overviews
 
 Wenn die Reihenfolge der Übersichten nicht Ihrem Arbeitsablauf entspricht
 oder Sie einfach eine andere Reihenfolge wünschen, können Sie sie für Ihr

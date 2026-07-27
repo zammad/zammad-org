@@ -1,9 +1,9 @@
 ---
-title: Ticket Summary
+title: Ticket summary
 order: 20
 ---
 
-# Ticket Summary
+# Ticket summary
 
 ## Show/Trigger
 

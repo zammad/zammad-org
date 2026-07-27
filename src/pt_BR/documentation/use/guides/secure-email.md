@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Email seguro'
+title: 'Secure email'
 ---
 
-# Email seguro
+# Secure email
 
 O Zammad oferece suporte a dois sistemas para comunicação segura por email:
 
@@ -34,7 +34,7 @@ mais sobre isso e encontrar erros comuns.
 ![Captura de tela mostrando email de saída que é apenas assinado e não
 criptografado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Assinatura e criptografia
+## Signing & encryption
 
 Signing
 : assinar é uma prova de que uma mensagem não foi manipulada em seu caminho. Garante a **integridade** e a
@@ -44,7 +44,7 @@ Encryption
 : a criptografia embaralha uma mensagem para que ela só possa ser desembaralhada pelo destinatário pretendido. Garante a
   **privacidade** e a **segurança dos dados** da mensagem.
 
-## Email de entrada
+## Incoming email
 
 Os ícones de cadeado e verificação no topo de uma mensagem indicam seu
 estado de criptografia e assinatura. Clique em um artigo de email recebido
@@ -55,7 +55,7 @@ status de segurança para ver mais informações.
 artigo de email
 recebido](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Ícones de status para emails recebidos
+### Status icons for incoming emails
 
 | Icon | Meaning |
 |---|---|
@@ -64,7 +64,7 @@ recebido](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure
 | ![Ícone assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Verificado com sucesso.** Você pode ter confiança de que é autêntico e o conteúdo não foi modificado. |
 | ![Ícone não assinado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Falha na verificação da assinatura.** Passe o mouse sobre o ícone para mais informações. |
 
-## Email de saída
+## Outgoing email
 
 Use os botões `Encrypt` e `Sign` para ativar a criptografia e a assinatura
 para emails de saída. Eles estão disponíveis para novos tickets e
@@ -78,7 +78,7 @@ email](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-em
 Emails de saída só podem ser criptografados para um único destinatário.
 :::
 
-### Ícones de status para emails de saída
+### Status icons for outgoing emails
 
 | Icon | Meaning |
 |---|---|
@@ -123,7 +123,7 @@ armazenamento de certificados do Zammad.
 Peça ao seu administrador para verificar a chave privada da sua organização
 no armazenamento de certificados do Zammad.
 
-### Múltiplos tipos de segurança configurados
+### Multiple security types configured
 
 Você pode ver os botões `PGP` e `S/MIME` ao mesmo tempo. Isso acontece
 quando ambos os sistemas estão configurados no seu sistema e um cliente

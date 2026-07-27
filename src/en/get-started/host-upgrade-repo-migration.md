@@ -1,9 +1,9 @@
 ---
-title: Host Upgrade and Repository Migration
+title: Host upgrade and repository migration
 order: 4
 ---
 
-# Host Upgrade and Repository Migration
+# Host upgrade and repository migration
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
@@ -35,9 +35,9 @@ The following operating systems are supported:
 sudo systemctl stop zammad
 ```
 
-## Host Upgrade Steps
+## Host upgrade steps
 
-### Disable Updates for Zammad
+### Disable updates for Zammad
 
 ::: tabs key:distros
 
@@ -67,20 +67,20 @@ sudo dnf upgrade --exclude zammad
 
 :::
 
-### Perform Host Upgrade
+### Perform host upgrade
 
 Perform the host upgrade according to the documentation of your operating system. Because this is an advanced task, we
 don't provide detailed steps here. After upgrading your operating system, proceed with the next steps.
 
-### Reboot Host
+### Reboot host
 
 In case you did not reboot your system after the upgrade, make sure to reboot your system now. Afterwards, check if
 everything is running as expected. In case Zammad starts automatically, stop it again before proceeding with the
 next steps.
 
-## Adjust Package Repository
+## Adjust package repository
 
-### Remove Old Repository
+### Remove old repository
 
 Remove the old repository configuration file or disable/delete the old repository in your package manager.
 
@@ -120,7 +120,7 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-### Remove Old Repository Key
+### Remove old repository key
 
 Remove the old repository key from your system. Depending on your operating system and version, the location or method
 differs.
@@ -169,7 +169,7 @@ sudo rpm -e <key-name>
 
 :::
 
-### Add New Repository
+### Add new repository
 
 If the repository key is different for the old and new version your distribution or your distribution expects it in a
 different location, add the new one. Otherwise, you can add the new repository configuration directly.

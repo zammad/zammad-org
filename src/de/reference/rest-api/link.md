@@ -1,9 +1,9 @@
 ---
 order: 8
-title: 'Tickets verknüpfen'
+title: 'Linking tickets'
 ---
 
-# Tickets verknüpfen
+# Linking tickets
 
 ## Abrufen
 

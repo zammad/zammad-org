@@ -93,7 +93,7 @@ clicking your avatar in the bottom left corner and switch the toggle to the
 desired state or use the keyboard shortcut [[d]]. If no input field is
 activated, it cycles between the different modes.
 
-## Кориснички профил
+## User profile
 
 ### How to change my profile/avatar image?
 
@@ -118,7 +118,7 @@ settings by opening the avatar menu in the bottom left corner and select
 
 Read on in the [overview guide](guides/overviews#reorder-overviews).
 
-## Рад на тикетима
+## Work on tickets
 
 ### How to assign somebody to a ticket?
 

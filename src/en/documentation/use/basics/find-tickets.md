@@ -1,13 +1,13 @@
 ---
-title: Find Tickets
+title: Find tickets
 order: 3
 ---
 
-# Find Tickets
+# Find tickets
 
 There are different ways to find tickets, depending on your use case.
 
-## Via Overviews
+## Via overviews
 
 If you search for new tickets to work on, your first look should be in the overview section. You can either open it by
 clicking the `Overviews` button in the primary navigation or use the keyboard shortcut [[o]]. You can see overviews as a
@@ -19,7 +19,7 @@ conditions, which are basically rules, to define which ticket appears in which o
 
 For a detailed description, head over to the [overview usage guide](/en/documentation/use/guides/overviews).
 
-## Via Search
+## Via search
 
 However, if you search for a specific ticket which might or might not be visible in the overviews, you can use the
 search. You can find it in the top left corner of the primary navigation. Either select it via mouse or use the

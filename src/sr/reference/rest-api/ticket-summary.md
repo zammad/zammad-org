@@ -1,9 +1,9 @@
 ---
 order: 20
-title: 'Сажети опис тикета'
+title: 'Ticket summary'
 ---
 
-# Сажети опис тикета
+# Ticket summary
 
 ## Show/Trigger
 

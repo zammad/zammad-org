@@ -7,7 +7,7 @@ title: Voraussetzungen
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Server-Hardware
+## Server hardware
 
 Die Hardwareanforderungen variieren je nach Szenario. Das macht es schwer,
 spezifische CPU- und Speicherangaben zu nennen, die für alle Anwendungsfälle
@@ -26,7 +26,7 @@ Für ein Beispielszenario mit bis zu 40 Agenten könnte ein gute Basis sein:
 - 6 CPU-Kerne
 - 6 GB RAM (+6 GB für Elasticsearch)
 
-## Server Software
+## Server software
 
 Je nach Installationsart gibt es einige Voraussetzungen. Diese sind in den
 jeweiligen Installationsanweisungen enthalten:
@@ -35,7 +35,7 @@ jeweiligen Installationsanweisungen enthalten:
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Anforderungen an Clients
+## Client requirements
 
 ### Browser
 

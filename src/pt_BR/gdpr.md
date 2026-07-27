@@ -6,7 +6,7 @@ layout: home
 
 > Regulamento Geral de Proteção de Dados
 
-## Política de privacidade da Zammad GmbH
+## Zammad GmbH privacy policy
 
 Esta política de privacidade descreve como suas informações pessoais são
 coletadas, usadas e compartilhadas quando você visita

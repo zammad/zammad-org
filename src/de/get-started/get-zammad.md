@@ -5,19 +5,19 @@ features:
     icon: 🧪
     link: https://zammad.com/de/getting-started
     target: _blank
-    title: 'Kostenlose Testversion'
+    title: 'Free trial'
   - 
     details: 'Holen Sie sich Ihr Cloud-basiertes Zammad hier. Keine Installation, kein Ärger, wir kümmern uns um alles!'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
     target: _blank
-    title: 'Zammad Hosting-Services'
+    title: 'Zammad hosted services'
   - 
     details: 'Sie können Zammad sogar selbst hosten. Eine Installationsanleitung finden Sie hier.'
     icon: 🖥️
     link: /de/get-started/installation/prerequisites
-    title: Self-Hosting
+    title: 'Self hosting'
 order: 1
 ---
 
@@ -42,13 +42,13 @@ können damit herumspielen und dann zu einer offiziellen Instanz wechseln,
 wobei Sie entweder Ihre Daten behalten oder mit einem leeren System neu
 beginnen können.
 
-## Nutzen Sie Zammads Hosting-Service
+## Use Zammad's hosted service
 
 Wenn Sie Zammad produktiv einsetzen möchten, besuchen Sie unsere andere
 Seite [zammad.com](https://zammad.com/de/pricing){target=_blank}, wo Sie die
 Preise für Hosting Services von Zammad finden können.
 
-## Selbst gehostete Installation
+## Self hosted installation
 
 Sie können Zammad auch selbst hosten. Lesen Sie unsere
 [Installationsanleitung](/de/get-started/installation/prerequisites) und

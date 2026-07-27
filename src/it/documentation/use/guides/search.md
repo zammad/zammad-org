@@ -17,7 +17,7 @@ Zammad, puoi cercare in diversi modi. Continua a leggere per conoscere le
 basi della ricerca, seguite dalla ricerca dettagliata e dall'uso della
 sintassi Elasticsearch.
 
-## Ricerca di base
+## Basic search
 
 The search is located in the top left corner of the primary
 navigation. Either select it via mouse or use the keyboard shortcut
@@ -37,7 +37,7 @@ restringere la ricerca selezionando un tipo di oggetto specifico (ad esempio
 organizzazione), usare filtri avanzati o persino usare la sintassi
 Elasticsearch. Continua a leggere per maggiori informazioni.
 
-## Ricerca dettagliata
+## Detailed search
 
 A volte un semplice termine di ricerca potrebbe non darti i risultati che
 stai cercando. Zammad fornisce diverse opzioni per restringere la ricerca
@@ -46,14 +46,14 @@ nella pagina di ricerca dettagliata.
 ![Screenshot che mostra la ricerca
 dettagliata](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Ordina i risultati
+### Sort the results
 
 Per ordinare i risultati in base ai valori della colonna, fai clic su
 un'intestazione di colonna. L'ordinamento è indicato da una freccia. Fai
 clic di nuovo sulla colonna per cambiare l'ordinamento da crescente a
 decrescente e viceversa.
 
-### Limita la ricerca al tipo di oggetto
+### Limit search to object type
 
 Limita la ricerca a un tipo di oggetto usando il selettore di schede
 **Entità di ricerca** sotto il campo di ricerca (ad esempio utente o
@@ -62,7 +62,7 @@ correlati. Ad esempio, quando selezioni **Ticket**, la ricerca restituisce
 anche ticket dove il proprietario o il cliente corrisponde al termine di
 ricerca.
 
-### Usa filtri avanzati
+### Use advanced filters
 <!--Screenshot saltato per ora. Verrà aggiunto dopo che saranno disponibili più attributi-->
 A differenza del campo di ricerca, puoi filtrare i risultati della ricerca in base ad attributi specifici e ai loro valori.
 Per farlo, fai clic sul pulsante `Filtri avanzati` sul lato destro, che apre un'area dove puoi specificare condizioni aggiuntive
@@ -84,7 +84,7 @@ Se non hai ancora trovato quello che stai cercando, puoi beneficiare della
 ricerca alimentata da Elasticsearch. Puoi trovare alcuni esempi nella
 sezione successiva.
 
-## Uso della sintassi Elasticsearch
+## Using Elasticsearch syntax
 
 Questo argomento ha una propria sezione perché è un argomento avanzato per
 utenti esperti. Usando la sintassi Elasticsearch, puoi filtrare esattamente
@@ -94,7 +94,7 @@ su come usarlo o vai alla [pagina degli attributi indicizzati da
 Elasticsearch](/it/reference/es-indexed-attributes) dove puoi trovare un
 elenco con attributi aggiuntivi.
 
-### Informazioni Importanti
+### Important information
 
 - Assicurati di selezionare l'oggetto rilevante nel selettore **Entità di
   ricerca**. Ad esempio `customer.lastname` è disponibile per i ticket, ma
@@ -107,7 +107,7 @@ elenco con attributi aggiuntivi.
 - Per fornire valori contenenti uno spazio, racchiudili in `"`, ad esempio
   `priority.name:"2 normale"`.
 
-### Operatori logici e intervalli
+### Logic operators and ranges
 
 Puoi combinare condizioni usando `AND` e `OR` come operatori logici. Usa
 `TO` per specificare intervalli per valori con un ordine (ad esempio intero
@@ -135,7 +135,7 @@ state.name:open AND article_count: [5 TO *]
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Ricerca fuzzy
+### Fuzzy search
 
 Se non sei sicuro dell'ortografia esatta di un valore, usa la tilde (`~`)
 come suffisso per eseguire una ricerca fuzzy.
@@ -144,7 +144,7 @@ come suffisso per eseguire una ricerca fuzzy.
 owner.firstname:lawren~
 ```
 
-### Negazione della ricerca
+### Negating search
 
 Se vuoi escludere valori specificati, puoi usare la negazione `!`. Per
 negare più di un termine, usa le parentesi per tutti.

@@ -1,9 +1,9 @@
 ---
 order: 20
-title: 'Обрачун времена'
+title: 'Time accounting'
 ---
 
-# Обрачун времена
+# Time accounting
 
 ## List
 

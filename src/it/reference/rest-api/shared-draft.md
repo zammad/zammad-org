@@ -1,9 +1,9 @@
 ---
 order: 15
-title: 'Bozze condivise'
+title: 'Shared drafts'
 ---
 
-# Bozze condivise
+# Shared drafts
 
 ## Mostra
 

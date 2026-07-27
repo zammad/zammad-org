@@ -1,9 +1,9 @@
 ---
 order: 3
-title: "Variabili d'ambiente"
+title: 'Environment variables'
 ---
 
-# Variabili d'ambiente
+# Environment variables
 
 Trova di seguito le variabili d’ambiente più importanti con i valori predefiniti (come <Badge type="tip" text="badge" />), se
 applicabile. Le variabili per le installazioni basate su Docker e pacchetti possono essere diverse in alcuni casi. Puoi trovare
@@ -184,7 +184,7 @@ dati che un client può inviare.
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
 : Port of Zammad's WebSocket server.
 
-## Ottimizzazione delle prestazioni
+## Performance tuning
 
 Ognuna delle impostazioni seguenti comporta dei compromessi. Non ci sono
 valori consigliati qui.
@@ -222,7 +222,7 @@ Server](config-db-server) per maggiori informazioni.
 `ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`
 : Thread usati da **un** worker dei job ritardati.
 
-## Impostazioni client HTTP
+## HTTP client settings
 
 Impostazioni globali di timeout HTTP. Queste variabili controllano il
 comportamento di timeout predefinito.
@@ -238,7 +238,7 @@ comportamento di timeout predefinito.
   response read. This is an additional hard ceiling on top of `ZAMMAD_HTTP_OPEN_TIMEOUT` and
   `ZAMMAD_HTTP_READ_TIMEOUT`.
 
-## Come impostare le variabili d'ambiente
+## How to set environment variables
 
 Dipende da come hai installato Zammad (pacchetto, Docker). Impostala tramite
 `zammad config`.

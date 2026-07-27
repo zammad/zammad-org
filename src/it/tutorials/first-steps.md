@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Primi passi in Zammad'
+title: 'First steps in Zammad'
 ---
 
-# Primi passi in Zammad
+# First steps in Zammad
 
 Congratulazioni, sembra che tu abbia installato Zammad con successo. Per
 iniziare con la tua nuova installazione.
@@ -11,12 +11,12 @@ iniziare con la tua nuova installazione.
 - [Migra da un altro sistema di ticketing supportato](/it/tutorials/migrate)
 - [Ripristina Zammad da un backup esistente](/it/tutorials/backup-restore)
 
-## Procedura guidata Per iniziare
+## Getting started wizard
 
 Se visiti la pagina web di Zammad per la prima volta, verrai accolto dalla
 sua Procedura guidata Per iniziare.
 
-### Passo 1: Crea il tuo primo account amministratore
+### Step 1: Create your first administrator account
 
 Compila le informazioni richieste nella finestra di dialogo. Il tuo
 indirizzo email e la password sono importanti.
@@ -27,12 +27,12 @@ Zammad applica la seguente politica password per impostazione predefinita:
 - Almeno 2 caratteri MAIUSCOLI e 2 minuscoli
 - Una o più cifre
 
-### Passo 2: Fornisci informazioni sull'azienda
+### Step 2: Provide company information
 
 Puoi caricare qui un logo personalizzato della tua azienda. L'indirizzo
 dell'istanza viene rilevato automaticamente.
 
-### Passo 3: Canale notifiche email
+### Step 3: Email notification channel
 
 Per impostazione predefinita, Zammad usa sendmail. Questo può essere
 cambiato in SMTP qui.
@@ -40,7 +40,7 @@ cambiato in SMTP qui.
 Zammad usa `noreply@<your-fqdn>` come indirizzo mittente predefinito. Le configurazioni SMTP
 potrebbero fallire - tu.
 
-### Passo 4: Il tuo primo canale email <Badge type="info" text="opzionale" />
+### Step 4: Your first email channel <Badge type="info" text="optional" />
 
 Se vuoi iniziare subito, puoi già collegare il tuo account email.
 
@@ -52,7 +52,7 @@ automaticamente generati.
 Dopo aver completato la procedura guidata, accedi automaticamente
 all'account appena creato.
 
-## Prossimi passi
+## Next steps
 
 L'elenco seguente potrebbe aiutarti a trovare la strada giusta. Tuttavia,
 dovresti adattarlo al tuo.

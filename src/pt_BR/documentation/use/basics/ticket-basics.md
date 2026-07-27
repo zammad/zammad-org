@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Fundamentos de tickets'
+title: 'Ticket basics'
 ---
 
-# Fundamentos de tickets
+# Ticket basics
 
 Novo em sistemas de tickets? Então continue lendo sobre os fundamentos. Isso
 ajuda você a entender os principais conceitos e a começar com o Zammad. Se
@@ -40,7 +40,7 @@ Isso significa que você pode trabalhar com o Zammad de forma semelhante ao
 seu cliente de email. Exceto que um ticket tem atributos
 adicionais. Continue lendo para saber mais.
 
-## Atributos do ticket
+## Ticket attributes
 
 Além dos artigos, os tickets têm algumas metainformações adicionais chamadas
 atributos. Use a **barra lateral do ticket** para visualizar e alterar os

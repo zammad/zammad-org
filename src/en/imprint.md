@@ -23,7 +23,7 @@ Commercial Register Charlottenburg, No. HRB 163946 B \
 Head Office: Berlin (Mitte) \
 Sales Tax Identification No.: DE298516802
 
-## Source Code
+## Source code
 
 Source code owner (including zammad.org) is:
 

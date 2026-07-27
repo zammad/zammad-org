@@ -11,7 +11,7 @@ Please note that below samples were provided with `admin` and
 available in specific situations.
 :::
 
-## Me - Current User
+## Me - current user
 
 Required permission: any
 
@@ -135,7 +135,7 @@ strongly encourage you to use the data privacy in Zammad's UI or the data
 privacy endpoint instead (see section below). Using one of them makes sure that
 related information like tickets are deleted as well.
 
-### Via Data Privacy Endpoint
+### Via data privacy endpoint
 
 Required permission: `admin.data_privacy`
 
@@ -156,7 +156,7 @@ Required permission: `admin.data_privacy`
 :::
 ::::
 
-### Via User Endpoint <Badge type="danger" text="not recommended" />
+### Via user endpoint <Badge type="danger" text="not recommended" />
 
 Required permission: `admin.user`
 

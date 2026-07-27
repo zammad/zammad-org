@@ -36,7 +36,7 @@ provide access to all available endpoints listed here.
 
 Zammad supports three different authentication methods for its API.
 
-### HTTP Basic Authentication (username/password)
+### HTTP basic authentication (username/password)
 
 The username / password must be provided as HTTP header in the HTTP call.
 This authentication method can be disabled and may not be available in your
@@ -51,7 +51,7 @@ We strongly suggest against using basic authentication. Use access
 tokens when ever possible!
 :::
 
-### HTTP Token Authentication (access token)
+### HTTP token authentication (access token)
 
 The access token must be provided as HTTP header in the HTTP call.  Each
 user can create several access tokens in their user preferences.  This
@@ -71,7 +71,7 @@ party applications to authenticate against Zammad.
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoints and Example Data
+## Endpoints and example data
 
 For simplicity we'll not provide specific commands on the next pages, but
 instead tell the possible call method (e.g. `GET`) and the endpoint to use
@@ -83,13 +83,13 @@ The response format will be a complete JSON response from a default Zammad
 instance. Please keep in mind that you may see more fields or general
 information in case you added objects or other information.
 
-## Content Type
+## Content type
 
 Zammad returns JSON payloads whenever you retrieve data. If you're going to
 provide data, no matter of the general request type, don't forget to provide
 the content type `application/json` as well.
 
-## Response Payloads (Expand)
+## Response payloads (expand)
 
 Zammad always returns information including hints to all relations. If you
 need more information than that (because IDs may not be enough) you can also
@@ -157,7 +157,7 @@ In order to use pagination you'll need two get options: `per_page` and
 
 ## Search via API
 
-### Endpoint Search
+### Endpoint search
 
 Some endpoints support a search query. These are:
 
@@ -177,7 +177,7 @@ explicitly covered in this documentation:
 - Шаблони
 - Текстуални исечак
 
-#### Пример претраге
+#### Search example
 
 `GET`-Request sent: `/api/v1/tickets/search?query=welcome`
 
@@ -185,7 +185,7 @@ explicitly covered in this documentation:
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Expand Parameter
+#### Expand parameter
 
 If you want to have additional related information, you can use the `expand`
 parameter. Using it resolves the IDs and outputs values/names in addition.
@@ -196,7 +196,7 @@ parameter. Using it resolves the IDs and outputs values/names in addition.
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Full Parameter
+#### Full parameter
 
 You can even extend the response by using the `full` parameter. Be aware
 that this response can be huge. It outputs all assets including related
@@ -208,7 +208,7 @@ attributes and a `total_count` of search results as well.
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### With Total Count Parameter
+#### With total count parameter
 
 Using this parameter will additionally output the amount of search results.
 It can be combined with `full` and `expand`.
@@ -220,7 +220,7 @@ It can be combined with `full` and `expand`.
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Only Total Count Parameter
+#### Only total count parameter
 
 Using this `only_total_count` parameter will output only the amount of
 search results.
@@ -232,7 +232,7 @@ search results.
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Global Search
+### Global search
 
 If you need to search not only in a specific object type, you can do so by
 using the global search without specifying an object. The response may
@@ -247,7 +247,7 @@ parameters are different to the ones for the endpoint search.
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Condition Based Search
+### Condition based search
 
 You can even use conditions like for triggers and schedulers to search via
 API. If you don't want to build such conditions manually, you can find a
@@ -282,7 +282,7 @@ This leads to an output like the following:
 Use this as payload in your `POST`-Request in an endpoint search. The
 response includes the same objects as the trigger or overview you created.
 
-## Sorting Search Results
+## Sorting search results
 
 Zammad allows you to sort your search results by field if needed.
 
@@ -303,7 +303,7 @@ Usually you'll want to combine both parameters in your searches -
 e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`
 :::
 
-## Actions On Behalf of Other Users
+## Actions on behalf of other users
 
 **Requirement:** the user used for running the query on behalf requires
 `admin.user` permission.

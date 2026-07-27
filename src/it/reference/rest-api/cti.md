@@ -60,7 +60,7 @@ provengono sempre dal tuo.
 In alcune situazioni Zammad potrebbe fornire una risposta sulle tue chiamate
 PBX (ad esempio un rifiuto) se blocchi.
 
-### Esempi usati
+### Used examples
 
 **Esempio:**
 Le chiamate seguenti sono state inviate con la seguente configurazione. Questo è importante.
@@ -76,7 +76,7 @@ Le chiamate seguenti sono state inviate con la seguente configurazione. Questo �
 
 - ID chiamante predefinito per chiamate in uscita `496990009111`
 
-## Evento nuova chiamata
+## New call event
 
 ### Generale
 
@@ -183,7 +183,7 @@ Comando curl di esempio:
 :::
 ::::
 
-### Risposte specifiche per situazione
+### Situation specific responses
 
 A seconda della direzione di chiamata scelta, Zammad restituirà un
 (opzionalmente) configurato.
@@ -192,7 +192,7 @@ A seconda della direzione di chiamata scelta, Zammad restituirà un
 Questo deve essere supportato dal tuo PBX per funzionare.
 :::
 
-#### Rifiuta ID chiamante bloccati
+#### Reject blocked caller ids
 
 Se una nuova chiamata in entrata corrisponde a un numero da bloccare, Zammad
 restituirà quanto segue.
@@ -220,7 +220,7 @@ configurato nulla, Zammad restituirà.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-## Evento risposta chiamata
+## Call answer event
 
 ### Generale
 
@@ -329,7 +329,7 @@ Comando curl di esempio:
 :::
 ::::
 
-## Fine chiamata
+## Call hangup
 
 ### Generale
 

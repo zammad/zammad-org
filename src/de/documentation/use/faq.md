@@ -102,7 +102,7 @@ Ecke klicken und den Schalter auf den gewünschten Modus stellen oder das
 Tastaturkürzel [[d]] verwenden. Wenn kein Eingabefeld aktiviert ist,
 wechselt es zwischen den verschiedenen Modi.
 
-## Benutzerprofil
+## User profile
 
 ### Wie kann ich mein Profil-/Avatarbild ändern?
 
@@ -130,7 +130,7 @@ können Sie einen anderen Agenten als Vertretung festlegen.
 Lesen Sie in der
 [Übersichten-Anleitung](guides/overviews#ubersichten-neu-anordnen) weiter.
 
-## Mit Tickets arbeiten
+## Work on tickets
 
 ### Wie weise ich einem Ticket eine Person zu?
 

@@ -1,12 +1,12 @@
 ---
-title: Elasticsearch Indexed Attributes
+title: Elasticsearch indexed attributes
 order: 4
 outline:
   - 2
   - 2
 ---
 
-# Elasticsearch Indexed Attributes
+# Elasticsearch indexed attributes
 
 You can find a list of the main object attributes indexed by Elasticsearch (ES) below. In other words, if you wish to
 find a ticket, article, or user via the Zammad search box, ES can search in any of the fields below.
@@ -419,7 +419,7 @@ ID of user who updated the ticket.
 
 Examples: `1`, `3`
 
-## Ticket Priority
+## Ticket priority
 
 The following index contains below mentioned information: `*_ticket_priority`
 
@@ -489,7 +489,7 @@ ID of the user who performed the last update.
 
 Example: `1`
 
-## Ticket State
+## Ticket state
 
 The following index contains below mentioned information: `*_ticket_state`
 
@@ -1153,7 +1153,7 @@ ID of the user who updated the group.
 
 Example: `3`
 
-## CTI Log
+## CTI log
 
 The following index contains below mentioned information: `*_cti_log`
 
@@ -1287,7 +1287,7 @@ Last update of entry.
 
 Example: `"2025-02-25T08:49:40.647Z"`
 
-## Chat Session
+## Chat session
 
 The following index contains below mentioned information: `*_chat_session`
 

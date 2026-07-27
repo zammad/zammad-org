@@ -24,7 +24,7 @@ example:
 
 Selecting an overview in the second level navigation shows you a table which includes matching tickets.
 
-## Usage and Features
+## Usage and features
 
 Overviews can be defined by admins based on rules and conditions. That means if a ticket has been changed and the
 condition of the overview isn't matching anymore, the ticket is no longer visible in this overview.
@@ -46,7 +46,7 @@ Depending on what you are searching for, select a fitting overview and start wor
 If you miss an overview or want to have different settings, let your Zammad admin know!
 :::
 
-### Color Coded State and Priority
+### Color coded state and priority
 
 To visualize different ticket states and priorities, the entries in the table are color coded.
 
@@ -70,7 +70,7 @@ The **priority** is represented by the color of the ticket title:
 - 2 normal: blue
 - 3 high: red
 
-### Open a Ticket
+### Open a ticket
 
 Open a ticket by simply clicking on the row. This opens the ticket as a tab in your taskbar and shows you the
 ticket detail view. If this ticket is already present in your taskbar, it activates this tab instead of opening a
@@ -79,13 +79,13 @@ duplicate tab.
 If an overview contains more than one ticket and you open one of the tickets, you can find arrows in the ticket detail
 view header to switch to the next/previous ticket of this overview.
 
-### Bulk Actions
+### Bulk actions
 
 Perform bulk actions by selecting multiple tickets and either use the bulk action flyout or drag them with the mouse to
 invoke the bulk action overlay. You can find more information about that in the
 [Bulk Actions](../advanced-features#bulk-actions) section in the advanced features page.
 
-### Reorder Overviews
+### Reorder overviews
 
 If the order of the overviews doesn't reflect your working process or you just like to have a different order, you can
 re-arrange them for your account. Use the `reorder items` button at the very top of the second level navigation,

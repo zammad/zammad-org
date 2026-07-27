@@ -92,7 +92,7 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Items
+## Checklist items
 
 ### Show
 
@@ -160,7 +160,7 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist Templates
+## Checklist templates
 
 ### List
 

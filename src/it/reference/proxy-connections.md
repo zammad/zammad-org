@@ -1,9 +1,9 @@
 ---
 order: 10
-title: 'Proxy e connessioni'
+title: 'Proxy and connections'
 ---
 
-# Proxy e connessioni
+# Proxy and connections
 
 ## Proxy
 
@@ -49,7 +49,7 @@ A seconda del tuo ambiente, potresti voler usare le varianti minuscole delle var
 
 :::
 
-## Connessioni esterne
+## External connections
 
 Durante l'installazione e il funzionamento di Zammad, sono necessarie alcune
 connessioni a servizi online.

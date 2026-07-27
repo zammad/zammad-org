@@ -1,9 +1,9 @@
 ---
-title: Create Tickets
+title: Create tickets
 order: 4
 ---
 
-# Create Tickets
+# Create tickets
 
 When a customer messages you over a channel which is fetched by Zammad, a ticket is created automatically (unless
 Zammad recognizes it as a follow-up, then it gets added as an article to an existing ticket). However, there might be
@@ -19,7 +19,7 @@ primary navigation. This shows a ticket create screen where you can add all need
 
 ![Screenshot shows ticket create screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
-## Type Selector
+## Type selector
 
 In the ticket create dialog, you can choose from different article types:
 
@@ -51,7 +51,7 @@ This is the content section where the currently known details of the issue gets 
 this is the content/message of the email. To learn more about the editor and its features, check the
 [editor documentation](/en/documentation/use/guides/editor).
 
-## Ticket Attributes
+## Ticket attributes
 
 As you may know, there are additional ticket attributes such as group, priority and owner that you can set. If you
 haven't read the [ticket basics](ticket-basics) yet, check it out to learn more.

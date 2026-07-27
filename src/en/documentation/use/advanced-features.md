@@ -1,14 +1,14 @@
 ---
-title: Advanced Features
+title: Advanced features
 order: 4
 ---
 
-# Advanced Features
+# Advanced features
 
 This page features a collection of various helpful tools that don't need their own separate pages. Just keep reading,
 search the page or navigate to the section you want using the table of contents on the right.
 
-## Ticket Update Behavior
+## Ticket update behavior
 
 ![Screenshot shows behavior after update menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
 
@@ -33,7 +33,7 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 [[shift]] [[c]] for changing the ticket state to closed and close the ticket tab.
 :::
 
-## Text Modules
+## Text modules
 
 ![Screenshot shows text modules feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
 
@@ -54,7 +54,7 @@ desired text module by typing some characters or words of the text or keywords o
 You can pick one by clicking on it or by using the up and down arrows followed by [[enter]] on your keyboard. There are
 some text modules in Zammad which are shipped by default.
 
-## Insert Knowledge Base Article
+## Insert knowledge base article
 
 ![Screenshot shows inserting knowledge base article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
 
@@ -68,7 +68,7 @@ This saves you time because you don't have to switch to the knowledge base and c
 Use the button in the toolbar of the editor or simply write [[?]][[?]] in the editor. Both ways let you search for the
 desired knowledge base article by typing some characters or words.
 
-## Mention a User
+## Mention a user
 
 ![Screenshot shows mentioning a user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
 
@@ -85,7 +85,7 @@ search for the name of the user you want to mention by typing some characters or
 Zammad displays a list with all possible matches where you can pick one by clicking on it or by using the up and down
 arrows followed by [[enter]] on your keyboard.
 
-## Subscribe to a Ticket
+## Subscribe to a ticket
 
 ![Screenshot shows subscribe feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
 
@@ -162,7 +162,7 @@ There are two features, which are not directly visible:
   ticket open or to close it anyway. When referencing other tickets in your checklist, only those which are closed
   (with a green circle) are considered as completed.
 
-## Ticket Templates
+## Ticket templates
 
 **Why?**
 
@@ -174,7 +174,7 @@ admin to create a ticket template.
 In the ticket create screen, you can find an `Apply Template ^` button in the footer bar, if a template is available.
 Select the template you want to apply and apply changes if desired.
 
-## Shared Drafts
+## Shared drafts
 
 **Why?**
 
@@ -194,7 +194,7 @@ To **apply an already existing draft**, click on the `Draft Available` button on
 Applying a draft overwrites your unsaved changes!
 :::
 
-## Monitoring Ticket Escalations
+## Monitoring ticket escalations
 
 **Why?**
 
@@ -222,7 +222,7 @@ ticket is created at 7:00 and you have an 1-hour deadline, it will escalate at 1
 The SLA feature requires a configuration from your admin. In case you don’t see escalation timestamps, either the ticket
 is not SLA-relevant or the feature is not configured.
 
-## Bulk Actions
+## Bulk actions
 
 **Why?**
 
@@ -284,7 +284,7 @@ actions you can apply to tickets are:
 Start your drag and drop action from one of the already selected tickets in case you selected all relevant ones.
 To include another unselected ticket, start dragging from there and so it is also included in the batch processing.
 
-## Merge Tickets
+## Merge tickets
 
 ![Screenshot shows the ticket merge flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
@@ -309,7 +309,7 @@ the following changes:
 - The state has changed to "merged"
 - The ticket is linked to its "parent" ticket
 
-## Split Tickets
+## Split tickets
 
 ![Screenshot shows the article action split menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
 
@@ -328,7 +328,7 @@ article is also included. You can change everything to your needs and then click
 The just created ticket is linked in the original one as child. The original ticket is linked in the split off ticket
 as parent.
 
-## Link Tickets
+## Link tickets
 
 **Why?**
 
@@ -345,7 +345,7 @@ Additionally, you can choose between different link types:
 - **Parent/Child**: for related tickets where one is the main issue and the other is a subtask. This link type is used
   by default if a tickets gets split or merged.
 
-## Duplicate Detection
+## Duplicate detection
 
 ![Screenshot shows duplicate ticket warning during ticket creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
 
@@ -365,7 +365,7 @@ When a duplicate is detected, a warning in the ticket shows up (see the example 
 contain a ticket number. Click on the ticket link to see what it is about. In case it is no duplicate, simply ignore it
 and continue with the ticket creation.
 
-## Time Accounting
+## Time accounting
 
 **Why?**
 
@@ -394,7 +394,7 @@ of accounted times for all activity types.
 
 ![Screenshot shows the time accounting overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## User Detail Panel
+## User detail panel
 
 **Why?**
 
@@ -412,7 +412,7 @@ the [user detail page](#user-detail-page).
 By the way, the crown in the screenshot represents the customer's VIP state, which can be set in the customer detail
 view and the admin settings.
 
-## User Detail Page
+## User detail page
 
 ![Screenshot shows user detail page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
 
@@ -432,7 +432,7 @@ It allows you to see all relevant user information in one place. Examples what y
 Simply click on a user avatar (e.g. in the header of the ticket detail view). This opens a new tab with the customer
 detail page. In case you also have admin permissions, you can even create a deletion job for a user from the ::a:: menu.
 
-## Organization Detail Page
+## Organization detail page
 
 ![Screenshot shows organization detail page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
 
@@ -452,7 +452,7 @@ It allows you to see all relevant organization information in one place. Example
 Simply click on an organization avatar (e.g. in the header of the ticket detail view next to the user avatar). This
 opens a new tab with the organization detail page.
 
-## External Issues and Assets
+## External issues and assets
 
 **Why?**
 
@@ -469,7 +469,7 @@ in screenshot above). Click the button to link to an issue by entering the URL o
 select field (i-doit). Afterwards, you can see the linked item with additional metadata. By clicking on the linked
 item, you are redirected to it in the respective system.
 
-## Highlight Text
+## Highlight text
 
 **Why?**
 

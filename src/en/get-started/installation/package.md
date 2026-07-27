@@ -3,11 +3,11 @@ title: Package
 order: 2
 ---
 
-# Package Installation
+# Package installation
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Supported Operating Systems
+## Supported operating systems
 
 For package installation, the following Linux distributions are supported:
 
@@ -63,7 +63,7 @@ sudo dnf install curl epel-release
 
 ## Basics
 
-### Ensure Correct Locale
+### Ensure correct locale
 
 ::: tabs key:distros
 
@@ -162,7 +162,7 @@ for installing Elasticsearch.
 Alternatively, you can follow [our example setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9,
 which is separated to keep the install instructions as lean as possible.
 
-### Add Zammad Repository
+### Add Zammad repository
 
 ::: info
 Packager.io may not be accessible from IPv6-only environments, so make sure
@@ -310,7 +310,7 @@ sudo dnf install zammad
 
 :::
 
-### Manage Services of Zammad
+### Manage services of Zammad
 
 Zammad uses three services. These services can be managed individually or all at once by using the parent **zammad**.
 
@@ -329,7 +329,7 @@ sudo systemctl start zammad
 
 To stop or restart a service or to check its status, adjust the command as mentioned above.
 
-### Next Steps
+### Next steps
 
 - [Connect Zammad with Elasticsearch](/en/tutorials/connect-config-elasticsearch)
 - [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
@@ -348,7 +348,7 @@ installed.
 - Nginx
 - Redis
 
-### Database Server
+### Database server
 
 Zammad stores its content in a database. The supported database system is
 [PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no PostgreSQL server could be detected, it
@@ -361,7 +361,7 @@ called “session connection pooling”. Transaction-based connection pooling is
 not supported and may lead to errors during database migrations.
 :::
 
-### Reverse Proxy
+### Reverse proxy
 
 The following reverse proxies are supported in their currently maintained
 versions:

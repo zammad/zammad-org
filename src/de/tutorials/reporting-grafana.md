@@ -41,7 +41,7 @@ speichert **sehr sensible** Informationen innerhalb des Elasticsearch
 Index.
 :::
 
-## Einrichten der erforderlichen Datenquellen
+## Setting up required data sources
 
 **Vor dem Start:** Die Datenquellen folgen immer dem gleichen Schema. Wir
 haben die folgenden Informationen auf `name`, `time field name` und `index name` reduziert.
@@ -104,32 +104,32 @@ Daraufhin erhalten Sie eine Ausgabe wie die folgende:
 :::
 ::::
 
-### ES - Chat-Sitzungen
+### ES - chat sessions
 
 - Indexname: `zammad_production_chat_session`
 - Zeitfeldname: `created_at`
 
-### ES - CTI-Protokoll
+### ES - CTI log
 
 - Indexname: `zammad_production_cti_log`
 - Zeitfeldname: `start_at`
 
-### ES - Ticket Artikel
+### ES - ticket articles
 
 - Indexname: `zammad_production_ticket`
 - Zeitfeldname: `article.created_at`
 
-### ES - Tickets closed_at
+### ES - tickets by closed_at
 
 - Indexname: `zammad_production_ticket`
 - Zeitfeldname: `close_at`
 
-### ES - Tickets created_at
+### ES - tickets by created_at
 
 - Indexname: `zammad_production_ticket`
 - Zeitfeldname: `created_at`
 
-### ES - Tickets first_response_at
+### ES - tickets by first_response_at
 
 - Indexname: `zammad_production_ticket`
 - Zeitfeldname: `first_response_at`
@@ -137,14 +137,14 @@ Daraufhin erhalten Sie eine Ausgabe wie die folgende:
 Mit den oben genannten Datenquellen haben Sie im Grunde alles, was Sie
 brauchen, um mit der Erstellung Ihrer eigenen Dashboards zu beginnen.
 
-## Schnellstart mit Dashboard-Vorlage
+## Quick start with dashboard template
 
 Wenn Sie sich inspirieren lassen möchten, können Sie unsere unten
 aufgeführten Beispiel-Dashboards verwenden. Diese Dashboards sind auch auf
 [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank} zu
 finden.
 
-### Importieren eines Dashboards
+### Importing a dashboard
 
 Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import
 eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
@@ -156,17 +156,17 @@ angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung
 zuzuordnen. Wenn Sie unsere Datenquellennamen oben verwendet haben, können
 Sie einfach nach demselben Namen suchen.
 
-### Ticket-Statistik Dashboard <Badge type="tip" text="14222"/>
+### Ticket statistics dashboard <Badge type="tip" text="14222"/>
 
 ![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
 
-#### Dashboard-Grafiken
+#### Dashboard graphs
 
 - Ticket öffnen und schließen[^1]
 - Erstellte Artikel
 - Ticket SLA (in Zeit _und_ Verletzung) pro Typ[^1][^2]
 
-#### Ticket und Artikel Meta-Informationen
+#### Ticket and article meta information
 
 - Verteilung der Tickets nach Gruppe
 - Absenderverhältnis (z.B. Kunde / Agent)[^3]
@@ -182,22 +182,22 @@ Sie einfach nach demselben Namen suchen.
   - Ticket-Tags[^1]
 - die letzten 10 eskalierten Tickets
 
-#### Erforderliche Datenquellen
+#### Required data sources
 
 - `ES - Ticket Articles`
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Sitzungsstatistik Dashboard <Badge type="tip" text="14224"/>
+### Chat-session statistics dashboard <Badge type="tip" text="14224"/>
 
 ![Grafana Chat
 Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Dashboard-Grafiken
+#### Dashboard graphs
 
 Erstellung von Chatsitzungen.
 
-#### Meta-Informationen zur Chat-Sitzung
+#### Chat session meta information
 
 - Top 10 von:
   - Chat-Tags
@@ -209,19 +209,19 @@ Erstellung von Chatsitzungen.
 - Durchschnittliche Chatdauer
 - Weltkarte mit Chat-Ursprungsländern
 
-#### Erforderliche Datenquellen
+#### Required data sources
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistik Dashboard <Badge type="tip" text="14223"/>
+### CTI-log statistics dashboard <Badge type="tip" text="14223"/>
 
 ![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
 
-#### Dashboard-Grafiken
+#### Dashboard graphs
 
 Anzahl der Anrufe pro Richtung (ein-/ausgehend).
 
-#### Meta-Informationen zur Chat-Sitzung
+#### Chat session meta information
 
 - Gesprächsverhältnis (ein-/ausgehend)
 - Durchschnittliche Wartezeit
@@ -230,7 +230,7 @@ Anzahl der Anrufe pro Richtung (ein-/ausgehend).
   - Anrufer (eingehend)
   - Abnehmer der Anrufe (eingehend)
 
-#### Erforderliche Datenquellen
+#### Required data sources
 
 - `ES - CTI Log`
 

@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Migrate Zammad to New Host'
+title: 'Migrate Zammad to new host'
 ---
 
-# Migrate Zammad to New Host
+# Migrate Zammad to new host
 
 This is just a description of basic steps to perform a migration to a new
 host. Your environment may be different so you should consider this as a
@@ -22,29 +22,29 @@ Migrating from Zammad SaaS? Skip to
 received an attachment dump!
 :::
 
-## Step 1: Note Down Your Environmental Adjustments
+## Step 1: Note down your environmental adjustments
 
 If you have set any environment variables or similar, make sure to backup
 them.
 
-## Step 2: Install Zammad on the Destination Host
+## Step 2: Install Zammad on the destination host
 
 For the easiest restoration path possible, please install the same version
 like your origin instance. You could also consider updating the old instance
 before migrating. The following guide assumes that you have the same version
 of Zammad on your old and new host.
 
-## Step 3: Activate Maintenance Mode
+## Step 3: Activate maintenance mode
 
 This ends all agent and customer sessions. Activate it in Zammad's admin
 interface under _System > Maintenance_.
 
-## Step 4: Disable Your Communication Channels
+## Step 4: Disable your communication channels
 
 The restore script starts Zammad automatically, this may help to avoid data
 loss and inconsistencies.
 
-## Корак 5: Зауставите и искључите Zammad
+## Step 5: Stop and disable Zammad
 
 Make sure that no data will be changed _before_ backing up.
 
@@ -66,26 +66,26 @@ data. This will be important for the restoration.
 
 If you want to go the easiest way, consider only dumping your data.
 
-## Step 7: Transfer Your Backup Files
+## Step 7: Transfer your backup files
 
 Save your backup files in a directory and provide the path to the `config`
 file. Under [backup
 configuration](/en/tutorials/backup-restore#backup-configuration) you can
 find how to adjust the config file to your needs.
 
-## Step 8: Restore Your Backup
+## Step 8: Restore your backup
 
 Follow the [restoration guide](/en/tutorials/backup-restore#restore-backups)
 up to and including "Run the Restore" to restore the backup on the new host.
 
 Make sure to stop Zammad after the restoration has finished.
 
-## Step 9: Run Required Maintenance Tasks After Restoring
+## Step 9: Run required maintenance tasks after restoring
 
 After successful restoration, please continue below depending if you've only
 backed up your data or have a full filesystem dump.
 
-### Data Dump
+### Data dump
 
 #### Step 9.1: Clear the cache
 
@@ -93,7 +93,7 @@ backed up your data or have a full filesystem dump.
 zammad run rails r "Rails.cache.clear"
 ```
 
-### Full Filesystem Dump
+### Full filesystem dump
 
 ::: info
 This step is only needed, if one of the following points is met:
@@ -110,7 +110,7 @@ correct version.
 Zammad files are distribution and version specific!
 :::
 
-#### Step 9.1: Uninstall and Reinstall Zammad Without Resolving Dependencies
+#### Step 9.1: Uninstall and reinstall Zammad without resolving dependencies
 
 ::: tabs
 
@@ -153,13 +153,13 @@ root@zammad:/# apt update && apt install zammad
 
 :::
 
-#### Step 9.2: Clear the Cache
+#### Step 9.2: Clear the cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-#### Step 9.3: Ensure Zammad is Running
+#### Step 9.3: Ensure Zammad is running
 
 ``` sh
 sudo systemctl status zammad
@@ -178,7 +178,7 @@ Please make sure that your email notification channel and
 FQDN configuration is correct.
 :::
 
-## Step 10: Apply Missing Environmental Settings
+## Step 10: Apply missing environmental settings
 
 If you've set any environmental settings please re-apply your settings now.
 You backed them up in [Step
@@ -190,7 +190,7 @@ steps to [connect to and configure
 Elasticsearch](/en/tutorials/connect-config-elasticsearch) after
 installation.
 
-## Step 11: Re-enable Channels and Deactivate Maintenance Mode
+## Step 11: Re-enable channels and deactivate maintenance mode
 
 Set the previous deactivated channels back to active if you're sure
 everything was successful. At this point Zammad will start to _change data_!

@@ -1,9 +1,9 @@
 ---
 order: 15
-title: 'Заједнички нацрти'
+title: 'Shared drafts'
 ---
 
-# Заједнички нацрти
+# Shared drafts
 
 ## Show
 

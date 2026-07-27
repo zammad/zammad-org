@@ -1,9 +1,9 @@
 ---
 order: 8
-title: Linking Tickets
+title: Linking tickets
 ---
 
-# Linking Tickets
+# Linking tickets
 
 ## Get
 

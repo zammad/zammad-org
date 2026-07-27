@@ -78,7 +78,7 @@ You can switch between light, dark and automatic mode (tries to adapt to your br
 to the desired state or use the keyboard shortcut [[d]]. If no input field is activated, it cycles between the
 different modes.
 
-## User Profile
+## User profile
 
 ### How to change my profile/avatar image?
 
@@ -100,7 +100,7 @@ the bottom left corner and select **Profile settings**. There you can define a r
 
 Read on in the [overview guide](guides/overviews#reorder-overviews).
 
-## Work on Tickets
+## Work on tickets
 
 ### How to assign somebody to a ticket?
 

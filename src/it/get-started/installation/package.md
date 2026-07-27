@@ -3,11 +3,11 @@ order: 2
 title: Pacchetto
 ---
 
-# Installazione del pacchetto
+# Package installation
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Sistemi operativi supportati
+## Supported operating systems
 
 For package installation, the following Linux distributions are supported:
 
@@ -64,7 +64,7 @@ sudo dnf install curl epel-release
 
 ## Nozioni di base
 
-### Assicurati della localizzazione corretta
+### Ensure correct locale
 
 ::: tabs key:distros
 
@@ -113,7 +113,7 @@ esempio](/it/tutorials/install-elasticsearch) di Elasticsearch 9, che è
 stata separata per mantenere le istruzioni di installazione il più snelle
 possibile.
 
-### Aggiungi il repository Zammad
+### Add Zammad repository
 
 ::: info
 Packager.io potrebbe non essere accessibile da ambienti solo IPv6, quindi assicurati
@@ -271,7 +271,7 @@ sudo dnf install zammad
 
 :::
 
-### Gestisci i servizi di Zammad
+### Manage services of Zammad
 
 Zammad utilizza tre servizi. Questi servizi possono essere gestiti
 singolarmente o tutti insieme tramite il servizio principale **zammad**.
@@ -295,7 +295,7 @@ sudo systemctl start zammad
 Per fermare o riavviare un servizio o controllare il suo stato, regola il
 comando come indicato sopra.
 
-### Prossimi passi
+### Next steps
 
 - [Collega Zammad con
   Elasticsearch](/it/tutorials/connect-config-elasticsearch)
@@ -316,7 +316,7 @@ installato automaticamente.
 - Nginx
 - Redis
 
-### Server database
+### Database server
 
 Zammad memorizza i suoi contenuti in un database. Il sistema di database
 supportato è [PostgreSQL](https://www.postgresql.org/){target=_blank}

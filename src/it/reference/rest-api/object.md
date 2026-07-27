@@ -74,7 +74,7 @@ Richiesta `POST` inviata: `/api/v1/object_manager_attributes`
 :::
 ::::
 
-### Data e ora
+### Date time
 
 :::: details
 
@@ -152,7 +152,7 @@ I campi di input di Zammad possono avere 4 tipi diversi:
 ::::
 :::::
 
-### Selezione ad albero
+### Tree select
 
 :::: details
 
@@ -238,7 +238,7 @@ Richiesta `DELETE` inviata: `/api/v1/object_manager_attributes/{id}`
 
 :::
 
-## Esegui migrazioni database
+## Execute database migrations
 
 Permesso richiesto: `admin.object`
 

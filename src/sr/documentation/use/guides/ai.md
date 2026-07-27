@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'AI Features'
+title: 'AI features'
 ---
 
-# AI Features
+# AI features
 
 ## Увод
 
@@ -15,7 +15,7 @@ The AI features have to be configured and activated by your administrator. If yo
 More information about how to configure and activate it can be found in the admin section.
 :::
 
-## Сажети опис тикета
+## Ticket summary
 
 Функција сажетог описа тикета се понаша у складу са својим именом: резимира
 садржај тикета. Ово може бити велика уштеда времена при великих тикета и/или
@@ -38,7 +38,7 @@ sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary
 - Предстојећи догађаји (опционо)
 - Расположење клијента (опционо)
 
-## Алатке помоћника писања
+## Writing assistant tools
 
 The AI-powered writing assistant tools are designed to simplify and enhance
 your ticket response workflow while you create an article.  To use such a
@@ -76,7 +76,7 @@ Zammad долази са подразумеваним алаткама помо�
 - **Препиши сложени одељак и учини га лаким за разумевање**: Уклања
   необавезне делове и преписује ваш текст у јасном и разумљивом стилу.
 
-## AI агенти
+## AI agents
 
 AI agents can be configured to work on certain types of routine tasks. In
 general, this feature operates behind the scenes but if configured, you may
@@ -86,7 +86,7 @@ your admin for details and have a look at the [macro
 description](/en/documentation/use/advanced-features#macros) in the advanced
 features page.
 
-### Ticket History
+### Историјат тикета
 
 If an AI agent applied changes, you can see a ticket history entry telling
 you the name of the AI agent. If you notice ongoing issues with what the AI
@@ -96,7 +96,7 @@ agent:
 ![Screenshot shows AI agent ticket history
 entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Откривање истовремене обраде
+### Simultaneous work detection
 
 AI агенти који тренутно раде на тикету су приказани као и други оператери у
 доњој траци присутних корисника. Ово ће вам помоћи да избегнете истовремени
@@ -108,7 +108,7 @@ AI агенти који тренутно раде на тикету су при
 ![Screenshot shows avatar of an AI
 agent](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Overview Indicator
+### Overview indicator
 
 AI агент који се извршава има индикатор у колони стања у прегледима. Кружић
 стања ће бити приказан у плаво-љубичастом градијенту:

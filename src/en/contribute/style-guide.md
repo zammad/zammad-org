@@ -20,7 +20,7 @@ features:
     link: https://zammad.com
 ---
 
-# Style and Content Guide
+# Style and content guide
 
 This guide provides an overview of the content that should be included in the Zammad documentation, as well as
 formatting and style guidelines to ensure clarity and readability.
@@ -31,7 +31,7 @@ If you have questions, feel free to ask in our community. If you want to contrib
 our [contribution page](contribute) or [ask in an issue](https://github.com/zammad/zammad-org/issues){target=_blank}
 to get started.
 
-## Audience Assumptions
+## Audience assumptions
 
 The documentation assumes that **users** have a basic understanding of how to use web browsers and are familiar with
 common software design concepts. This means, for example, that features are described in detail, but not to the level
@@ -61,7 +61,7 @@ Due to the fact that a documentation can't cover everything (otherwise it would 
 relevance has to be considered too. If parts with a common use case are missing, it should be intended to include them
 in.
 
-## Style and Rules
+## Style and rules
 
 The next sections cover general things to consider writing the documentation. After these you can find a section
 with some [examples](#examples) about how to format and structure the content.
@@ -77,8 +77,8 @@ with some [examples](#examples) about how to format and structure the content.
 ### Style
 
 - Use short and clear sentences and prioritize information over complexity.
-- Page title and headings: capitalize the first letter of all words except minor words
-  (see [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+- Use sentence case for page titles and headings. Capitalize the first word and the first letter of any proper noun
+  (e.g. Zammad, Elasticsearch, Docker, GitLab) and acronym (SLA, SSO, API, JSON, etc.).
 - Use breadcrumb separation for paths and locations with `>` as separator and format path in italics, e.g.
   _Settings > Channels > Chat_.
 - Use code highlighting to emphasize programming snippets.
@@ -140,7 +140,7 @@ Some important rules and customized ones are mentioned below.
 | Action menu               | ::a::                         | `::a::`                         |
 | Copy to clipboard button  | ::c::                         | `::c::`                         |
 
-#### Heading Structure
+#### Heading structure
 
 Every documentation file must include exactly one title on top level (like `# Title`). Levels below should always
 contain at least two sections. If only one section exists, consider merging it with the higher-level content.
@@ -254,10 +254,10 @@ This is the content shown in the expanded state.
 
 #### Definition lists
 
-First Term <Badge type="info" text="tag1" />
+First term <Badge type="info" text="tag1" />
 : This is the definition of the first term.
 
-Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : This is one definition of the second term.
 : This is another definition of the second term.
 
@@ -266,14 +266,14 @@ Second Term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 ::: details
 
 ```md
-First Term <Badge type="info" text="tag1" />
+First term <Badge type="info" text="tag1" />
 : This is the definition of the first term
   with another line.
 ```
 
 :::
 
-#### Highlighting with Boxes
+#### Highlighting with boxes
 
 To highlight different options or variants, clickable boxes can be used.
 
@@ -307,7 +307,7 @@ features:
 To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be
 rendered.
 
-#### Theme Specific Images
+#### Theme specific images
 
 To target specific image assets to a single theme, you can assign `.dark-only` or `.light-only` CSS class to the
 corresponding image:

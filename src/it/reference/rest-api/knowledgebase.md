@@ -10,7 +10,7 @@ importanti – ma non tutti – sono trattati in questa documentazione. Puoi
 trovare quelli generali sulla knowledge base stessa qui sotto, seguiti dai
 sotto-endpoint per le [risposte](#answers) e le [categorie](#categories).
 
-## Base di conoscenza generale
+## Knowledge base general
 
 ::: info
 Gli esempi di richiesta e risposta includono l'ID della base di conoscenza `1`. Il tuo ID potrebbe essere diverso.
@@ -40,7 +40,7 @@ Richiesta `GET` inviata: `/api/v1/knowledge_bases/{ID of your KB}`
 
 :::
 
-### Cambia impostazioni
+### Change settings
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -61,7 +61,7 @@ Richiesta `PATCH` inviata: `/api/v1/knowledge_bases/manage/{ID of your KB}`
 :::
 ::::
 
-### Mostra permessi
+### Show permissions
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -74,7 +74,7 @@ KB}/permissions`
 
 :::
 
-### Cambia permessi
+### Change permissions
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -98,7 +98,7 @@ KB}/permissions`
 
 ## Categorie
 
-### Riordina sotto-categorie
+### Reorder sub-categories
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -120,7 +120,7 @@ KB}/categories/{ID of category}
 :::
 ::::
 
-### Riordina categorie radice
+### Reorder root categories
 
 ::: info
 Devi fornire l'ordine di tutte le categorie di primo livello, ovvero
@@ -217,7 +217,7 @@ KB}/categories/{ID of category
 
 :::
 
-### Mostra permessi
+### Show permissions
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -230,7 +230,7 @@ KB}/categories/{ID of category}/p
 
 :::
 
-### Cambia permessi
+### Change permissions
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -254,7 +254,7 @@ KB}/categories/{ID of category}/p
 
 ## Risposte
 
-### Riordina risposte
+### Reorder answers
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -349,7 +349,7 @@ KB}/answers/{ID of answer}`
 
 :::
 
-### Gestisci stato di pubblicazione
+### Manage publication status
 
 Permesso richiesto: `knowledge_base.editor`
 
@@ -369,7 +369,7 @@ Richiesta `POST` inviata:
 :::
 ::::
 
-### Gestisci allegati
+### Manage attachments
 
 Permesso richiesto: `knowledge_base.editor`
 

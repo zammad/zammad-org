@@ -3,11 +3,11 @@ order: 2
 title: Paket
 ---
 
-# Paket-Installation
+# Package installation
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Unterstützte Betriebssysteme
+## Supported operating systems
 
 Für die Paket-Installation werden die folgenden Linux-Distributionen
 unterstützt:
@@ -65,7 +65,7 @@ sudo dnf install curl epel-release
 
 ## Grundlagen
 
-### Korrekte Sprache/Gebietsschema sicherstellen
+### Ensure correct locale
 
 ::: tabs key:distros
 
@@ -167,7 +167,7 @@ Beispiel-Setup](/de/tutorials/install-elasticsearch) für Elasticsearch 9
 folgen, das Sie auf einer anderen Seite finden, um die
 Installationsanweisungen übersichtlich zu halten.
 
-### Zammad-Paketquelle hinzufügen
+### Add Zammad repository
 
 ::: info
 Es kann sein, dass Packager.io aus reinen IPv6-Umgebungen nicht erreichbar ist, daher sollten Sie
@@ -315,7 +315,7 @@ sudo dnf install zammad
 
 :::
 
-### Zammad Services verwalten
+### Manage services of Zammad
 
 Zammad verwendet drei Dienste. Diese Dienste können einzeln oder alle auf
 einmal verwaltet werden, indem der übergeordnete Dienst **zammad** verwendet
@@ -340,7 +340,7 @@ sudo systemctl start zammad
 Um einen Dienst anzuhalten, neu zu starten oder dessen Status zu prüfen,
 passen Sie den Befehl wie oben beschrieben an.
 
-### Nächste Schritte
+### Next steps
 
 - [Zammad mit Elasticsearch
   verbinden](/de/tutorials/connect-config-elasticsearch)
@@ -361,7 +361,7 @@ Elasticsearch, das nicht automatisch installiert wird.
 - Nginx
 - Redis
 
-### Datenbank-Server
+### Database server
 
 Zammad speichert seinen Inhalt in einer Datenbank. Das unterstützte
 Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
@@ -375,7 +375,7 @@ einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. T
 nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 :::
 
-### Reverse Proxy
+### Reverse proxy
 
 Die folgenden Reverse-Proxys werden in ihren aktuell gepflegten Versionen
 unterstützt:

@@ -1,9 +1,9 @@
 ---
-title: Ticket Basics
+title: Ticket basics
 order: 2
 ---
 
-# Ticket Basics
+# Ticket basics
 
 New to ticket systems? Then read on about the basics. This helps you to understand the main concepts and to get started
 with Zammad. If you are already familiar with ticket systems, you can jump directly to the next pages about finding,
@@ -30,7 +30,7 @@ think that a ticket system is complicated. But the opposite is true:
 This means you can work with Zammad in a similar way as with your email client. Except that a ticket has additional
 attributes. Read on to learn more.
 
-## Ticket Attributes
+## Ticket attributes
 
 In addition to articles, tickets have some additional meta information which are called attributes. Use the
 **ticket sidebar** to view and change ticket attributes.

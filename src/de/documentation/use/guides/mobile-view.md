@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Mobilansicht verwenden'
+title: 'Use mobile view'
 ---
 
-# Mobilansicht verwenden
+# Use mobile view
 
 ## Einführung
 
@@ -88,7 +88,7 @@ wichtigsten Informationen zu richten:
 - Anrufprotokoll
 - Live-Chat
 
-## Ansichten wechseln
+## Switch the views
 
 Zammad prüft, ob es sich um ein Mobilgerät handelt und leitet automatisch
 auf die Mobilansicht um. Sie können allerdings weiterhin manuell zwischen

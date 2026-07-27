@@ -100,7 +100,7 @@ consigam ler o corpo (isso funciona de forma semelhante à exibição dos gatilh
 nos tickets).
 :::
 
-## Listar artigos por ticket
+## List articles by ticket
 
 Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
@@ -112,7 +112,7 @@ Solicitação `GET` enviada: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
 :::
 
-## Listar artigo específico
+## List specific article
 
 Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 
@@ -136,7 +136,7 @@ nota de telefone), use o atributo `origin_by_id`. A permissão `ticket.agent`
 é obrigatória para isso.
 :::
 
-### Artigo simples
+### Plain article
 
 :::: details
 
@@ -153,7 +153,7 @@ nota de telefone), use o atributo `origin_by_id`. A permissão `ticket.agent`
 :::
 ::::
 
-### Artigo com arquivos anexados
+### Article with attached files
 
 :::: details
 
@@ -170,7 +170,7 @@ nota de telefone), use o atributo `origin_by_id`. A permissão `ticket.agent`
 :::
 ::::
 
-### Artigo com imagens inline
+### Article with inline images
 
 Imagens inline podem ser usadas fornecendo data URIs na sua marcação HTML.
 
@@ -189,7 +189,7 @@ Imagens inline podem ser usadas fornecendo data URIs na sua marcação HTML.
 :::
 ::::
 
-## Receber anexos
+## Receive attachments
 
 Agora que você tem todos esses anexos chiques dentro dos seus tickets, você
 pode querer baixar alguns específicos.

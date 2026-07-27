@@ -1,13 +1,13 @@
 ---
 order: 3
-title: 'Trova ticket'
+title: 'Find tickets'
 ---
 
-# Trova ticket
+# Find tickets
 
 Ci sono diversi modi per trovare i ticket, a seconda del tuo caso d'uso.
 
-## Tramite panoramiche
+## Via overviews
 
 If you search for new tickets to work on, your first look should be in the
 overview section. You can either open it by clicking the `Overviews` button
@@ -23,7 +23,7 @@ ticket appare in quale panoramica.
 Per una descrizione dettagliata, vai alla [guida all'uso delle
 panoramiche](/it/documentation/use/guides/overviews).
 
-## Tramite ricerca
+## Via search
 
 However, if you search for a specific ticket which might or might not be
 visible in the overviews, you can use the search. You can find it in the top

@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Agentenbasierte Installation'
+title: 'Agentic installation'
 ---
 
-# Agentenbasierte Installation
+# Agentic installation
 
 ::: danger
 Beachten Sie, dass die Einrichtungsschritte für KI-Agenten keine Sicherheits-, Netzwerk- und Konfigurationsthemen abdecken (z.B. SSL-Zertifikate,
@@ -34,7 +34,7 @@ Anweisungen:
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
 ```
 
-## Installation via Paketmanager
+## Installation via package manager
 
 Diese Datei umfasst eine Installation von Zammad einschließlich
 Elasticsearch über den Paketmanager.

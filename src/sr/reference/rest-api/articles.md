@@ -98,7 +98,7 @@ being able to read the bodies (this works similar to Zammads trigger
 displaying in tickets).
 :::
 
-## List Articles by Ticket
+## List articles by ticket
 
 Required permission: `ticket.agent` **or** `ticket.customer`
 
@@ -110,7 +110,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## List Specific Article
+## List specific article
 
 Required permission: `ticket.agent` **or** `ticket.customer`
 
@@ -134,7 +134,7 @@ phone note), use the `origin_by_id` attribute. `ticket.agent`
 permission is mandatory for this.
 :::
 
-### Plain Article
+### Plain article
 
 :::: details
 
@@ -151,7 +151,7 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Attached Files
+### Article with attached files
 
 :::: details
 
@@ -168,7 +168,7 @@ permission is mandatory for this.
 :::
 ::::
 
-### Article with Inline Images
+### Article with inline images
 
 Inline images can be used by providing data URIs in your HTML markup.
 
@@ -187,7 +187,7 @@ Inline images can be used by providing data URIs in your HTML markup.
 :::
 ::::
 
-## Receive Attachments
+## Receive attachments
 
 Now that you have all those fancy attachments within your tickets, you may
 want to download specific ones.

@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Scenari Docker Compose'
+title: 'Docker Compose scenarios'
 ---
 
-# Scenari Docker Compose
+# Docker Compose scenarios
 
 ## Panoramica
 
@@ -31,7 +31,7 @@ I seguenti scenari sono supportati e spiegati più avanti:
 Puoi trovare i file nel [repository
 Zammad-Docker-Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
-## Utilizzo generale
+## General usage
 
 ::: tabs
 
@@ -55,12 +55,12 @@ docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml
 
 :::
 
-## Rendere lo stack disponibile tramite HTTPS
+## Making the stack available via HTTPS
 
 Se configuri Zammad per l'uso in produzione, deve essere protetto usando una
 connessione HTTPS.
 
-### Aggiungi un tunnel Cloudflare
+### Add Cloudflare tunnel
 
 If you want to publish Zammad in a very convenient way, you can use a
 [Cloudflare](https://www.cloudflare.com/){target=_blank} tunnel.
@@ -74,7 +74,7 @@ If you want to publish Zammad in a very convenient way, you can use a
 - Fornisci il tuo token tunnel Cloudflare allo stack Zammad usando la
   variabile d'ambiente
 
-### Aggiungi Nginx Proxy Manager
+### Add Nginx proxy manager
 
 Una configurazione molto comune per pubblicare servizi web è usare un
 reverse proxy.
@@ -88,7 +88,7 @@ reverse proxy.
 - Configura un nuovo host proxy nel tuo NPM e segui i passaggi per ottenere
   un certificato SSL
 
-### Aggiungi una rete Docker esterna a Nginx
+### Add external Docker network to Nginx
 
 Se hai già un reverse proxy che si occupa della terminazione SSL, questo
 scenario fa per te.
@@ -98,7 +98,7 @@ scenario fa per te.
 - Fornisci il nome della tua rete esterna usando la variabile d'ambiente
   `ZAMMAD_NGINX_
 
-## Usare servizi esterni
+## Using external services
 
 ### Disabilita il servizio Elasticsearch
 
@@ -115,7 +115,7 @@ Zammad?
   - `ELASTICSEARCH_USER`
   - `ELASTICSEARCH_PASS`
 
-## Rendere i servizi disponibili esternamente
+## Making services externally available
 
 Questi scenari servono a collegare applicazioni esterne ai servizi di
 Zammad. A seconda
@@ -132,7 +132,7 @@ Se vuoi usare TLS, devi connetterti a Elasticsearch tramite reverse proxy.
 
 :::
 
-### Aggiungi una rete Docker esterna a Elasticsearch
+### Add external Docker network to Elasticsearch
 
 Un caso d'uso comune per questo è usare uno strumento di
 reporting/visualizzazione come Grafana sulla stessa rete.
@@ -142,7 +142,7 @@ reporting/visualizzazione come Grafana sulla stessa rete.
 - Fornisci il nome della tua rete esterna usando la variabile d'ambiente
   `ZAMMAD_ELASTI
 
-### Aggiungi una porta host a Elasticsearch
+### Add host port to Elasticsearch
 
 Nel caso tu voglia esporre il servizio Elasticsearch dello stack Zammad
 nella rete.
@@ -152,9 +152,9 @@ nella rete.
 - La porta predefinita per Elasticsearch è `9200`. Cambiala con un'altra
   porta usando la variabile d'ambiente.
 
-## Scenari aggiuntivi
+## Additional scenarios
 
-### Disabilita il servizio di backup
+### Disable backup service
 
 Nel caso tu voglia gestire i backup in modo diverso, puoi disabilitare il
 servizio di backup integrato.
@@ -177,17 +177,17 @@ file di scenario `scenarios/ad`.
 Per usarlo in Zammad, aggiungi il nome del servizio e la porta
 (`http://ollama:11434`) al provider.
 
-### Limita le risorse
+### Limit resources
 
 Se vuoi limitare le risorse hardware che lo stack Zammad può usare, usa il
 file `s`.
 
-### Altri casi d'uso
+### Other use cases
 
 Il tuo scenario non è ancora coperto? Suggerisci pure il tuo caso
 d'uso. Prevediamo di aggiungerne altri.
 
-## Personalizza lo stack localmente
+## Customize the stack locally
 
 Sometimes it's necessary to apply local changes to the Zammad Docker stack,
 e.g. to include additional services. If you plan to do so, we recommend that

@@ -39,7 +39,7 @@ stores **very sensitive** information within the Elasticsearch
 Index.
 :::
 
-## Setting up Required Data Sources
+## Setting up required data sources
 
 **Before we start:** The data sources always follow the same scheme. We
 reduced below information to `name`, `time field name` and `index name`.
@@ -103,32 +103,32 @@ This will return an output like the following:
 :::
 ::::
 
-### ES - Chat Sessions
+### ES - chat sessions
 
 - Index name: `zammad_production_chat_session`
 - Time field name: `created_at`
 
-### ES - CTI Log
+### ES - CTI log
 
 - Index name: `zammad_production_cti_log`
 - Time field name: `start_at`
 
-### ES - Ticket Articles
+### ES - ticket articles
 
 - Index name: `zammad_production_ticket`
 - Time field name: `article.created_at`
 
-### ES - Tickets by closed_at
+### ES - tickets by closed_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `close_at`
 
-### ES - Tickets by created_at
+### ES - tickets by created_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `created_at`
 
-### ES - Tickets by first_response_at
+### ES - tickets by first_response_at
 
 - Index name: `zammad_production_ticket`
 - Time field name: `first_response_at`
@@ -136,13 +136,13 @@ This will return an output like the following:
 With above data sources you basically have everything you need to start
 building your own dashboards.
 
-## Quick Start with Dashboard Template
+## Quick start with dashboard template
 
 If you want to get inspired, you can use our sample dashboards as
 mentioned below. These dashboards can also be found on
 [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
-### Importing a Dashboard
+### Importing a dashboard
 
 In Grafana, select _➕ > Import_ (or any other place which offers you to import
 a dashboard) and either upload the json file you
@@ -153,17 +153,17 @@ During importing you can provide a dashboard name and folder. You'll also be
 asked to map the data sources to your environment. If you used our data source
 names above, you can simply search for the same name.
 
-### Ticket Statistics Dashboard <Badge type="tip" text="14222"/>
+### Ticket statistics dashboard <Badge type="tip" text="14222"/>
 
 ![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
 
-#### Dashboard Graphs
+#### Dashboard graphs
 
 - ticket opening and closing[^1]
 - created articles
 - ticket SLA (in time _and_ violation) per type[^1][^2]
 
-#### Ticket and Article Meta Information
+#### Ticket and article meta information
 
 - ticket group distribution
 - sender ratio (e.g. Customer / Agent)[^3]
@@ -179,21 +179,21 @@ names above, you can simply search for the same name.
   - ticket tags[^1]
 - last 10 escalated tickets
 
-#### Required Data Sources
+#### Required data sources
 
 - `ES - Ticket Articles`
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-Session Statistics Dashboard <Badge type="tip" text="14224"/>
+### Chat-session statistics dashboard <Badge type="tip" text="14224"/>
 
 ![Grafana Chat Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Dashboard Graphs
+#### Dashboard graphs
 
 Chat session creations.
 
-#### Chat Session Meta Information
+#### Chat session meta information
 
 - top 10 of:
   - chat tags
@@ -205,19 +205,19 @@ Chat session creations.
 - average chatting time
 - world map with chat origin countries
 
-#### Required Data Sources
+#### Required data sources
 
 - `ES - Chat Sessions`
 
-### CTI-Log Statistics Dashboard <Badge type="tip" text="14223"/>
+### CTI-log statistics dashboard <Badge type="tip" text="14223"/>
 
 ![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
 
-#### Dashboard Graphs
+#### Dashboard graphs
 
 Number of calls per direction (in / out).
 
-#### Chat Session Meta Information
+#### Chat session meta information
 
 - call ratio (in / out)
 - average waiting time
@@ -226,7 +226,7 @@ Number of calls per direction (in / out).
   - callers (in)
   - call answerers (in)
 
-#### Required Data Sources
+#### Required data sources
 
 - `ES - CTI Log`
 

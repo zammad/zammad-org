@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Nozioni di base sui ticket'
+title: 'Ticket basics'
 ---
 
-# Nozioni di base sui ticket
+# Ticket basics
 
 Sei nuovo ai sistemi di ticketing? Allora continua a leggere le nozioni di
 base. Questo ti aiuta a comprendere i concetti principali e a iniziare con
@@ -43,7 +43,7 @@ Ciò significa che puoi lavorare con Zammad in modo simile al tuo client
 email. Tranne che un ticket ha attributi aggiuntivi. Continua a leggere per
 saperne di più.
 
-## Attributi del ticket
+## Ticket attributes
 
 Oltre agli articoli, i ticket hanno alcune informazioni meta aggiuntive
 chiamate attributi. Usa la **barra laterale del ticket** per visualizzare e

@@ -5,7 +5,7 @@ title: Ознаке
 
 # Ознаке
 
-## Ticket Scope
+## Ticket scope
 
 ### List
 
@@ -66,9 +66,9 @@ Required permission: `ticket.agent` **or** `admin.tag`
 :::
 ::::
 
-## Administration Scope
+## Administration scope
 
-### Admin - List
+### Admin - list
 
 Required permission: `admin.tag`
 
@@ -80,7 +80,7 @@ Required permission: `admin.tag`
 
 :::
 
-### Admin - Create
+### Admin - create
 
 Required permission: `admin.tag`
 
@@ -101,7 +101,7 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Rename
+### Admin - rename
 
 Required permission: `admin.tag`
 
@@ -122,7 +122,7 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - Delete
+### Admin - delete
 
 Required permission: `admin.tag`
 

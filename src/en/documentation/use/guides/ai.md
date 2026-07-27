@@ -1,9 +1,9 @@
 ---
 order: 4
-title: AI Features
+title: AI features
 ---
 
-# AI Features
+# AI features
 
 ## Introduction
 
@@ -15,7 +15,7 @@ The AI features have to be configured and activated by your administrator. If yo
 More information about how to configure and activate it can be found in the admin section.
 :::
 
-## Ticket Summary
+## Ticket summary
 
 The ticket summary feature does what it says: it summarizes the ticket's content. This can be a huge time saver when
 dealing with large tickets and/or many hand-overs between agents.
@@ -33,7 +33,7 @@ Depending on the configuration of your Zammad instance, the summary includes the
 - Upcoming events (optional)
 - Customer sentiment (optional)
 
-## Writing Assistant Tools
+## Writing assistant tools
 
 The AI-powered writing assistant tools are designed to simplify and enhance your ticket response workflow while you
 create an article.
@@ -64,21 +64,21 @@ might even have additional custom tools in case your admin added them.
 - **Rewrite complex section and make it easy to understand**: Removes unnecessary parts and rewrites your text in a
   clear and understandable way.
 
-## AI Agents
+## AI agents
 
 AI agents can be configured to work on certain types of routine tasks. In general, this feature operates behind the
 scenes but if configured, you may notice it in some situations (see examples below). In case your admin created a macro
 with an AI agent action, you can even run it manually. Ask your admin for details and have a look at the
 [macro description](/en/documentation/use/advanced-features#macros) in the advanced features page.
 
-### Ticket History
+### Ticket history
 
 If an AI agent applied changes, you can see a ticket history entry telling you the name of the AI agent. If you notice
 ongoing issues with what the AI agent did, inform your Zammad admin. Example of a history entry of an AI agent:
 
 ![Screenshot shows AI agent ticket history entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Simultaneous Work Detection
+### Simultaneous work detection
 
 AI agents which are currently working on a ticket are displayed like other agents in the live user section in the
 bottom bar. This helps to avoid duplicate work as well as losing unsaved changes. If you see an AI agent avatar, wait
@@ -88,7 +88,7 @@ Avatar of AI agent:
 
 ![Screenshot shows avatar of an AI agent](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Overview Indicator
+### Overview indicator
 
 A running AI agent is indicated in the status column in overviews. The status circle changes to a blue/pink gradient circle:
 

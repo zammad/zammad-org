@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Comandos Rails'
+title: 'Rails commands'
 ---
 
-# Comandos Rails
+# Rails commands
 
 O Zammad usa Ruby on Rails, então você pode usar o [console
 Rails](http://guides.rubyonrails.org/command_line.html){target=_blank}.
@@ -14,9 +14,9 @@ comandos podem causar perda de dados ou tickets danificados! Se você não tiver
 **use um sistema de teste primeiro**!
 :::
 
-## Iniciando o console Rails do Zammad
+## Starting Zammad's rails console
 
-### Executar um único comando
+### Execute a single command
 
 ::: info
 Substitua `{COMMAND}` pelo comando que deseja executar.
@@ -51,7 +51,7 @@ rails r '{COMMAND}'
 
 :::
 
-### Executar o console Rails interativo
+### Run interactive rails console
 
 ::: tabs key:installmethod
 
@@ -76,7 +76,7 @@ rails c
 
 :::
 
-### Modo seguro do console Rails
+### Rails console safe mode
 
 Normalmente, iniciar o console Rails requer que certos serviços de terceiros
 estejam ativos e funcionando. Você pode receber erros e o console se
@@ -90,9 +90,9 @@ verificações são ignoradas.
 ZAMMAD_SAFE_MODE=1 zammad run rails c
 ```
 
-## Comandos de ticket
+## Ticket commands
 
-### Obter o email bruto (RAW)
+### Get the RAW email
 
 O seguinte comando ajuda a verificar arquivos EML recebidos que o Zammad
 buscou. Isso é útil se você excluir emails ao buscá-los e precisar verificar
@@ -132,7 +132,7 @@ Se você apenas usar `Ticket::Article.find(3)`, você pode ver mais
 informações (como quem enviou o email, quando o buscamos, ...).
 :::
 
-### Atualizar todos os tickets de um cliente específico
+### Update all tickets of a specific customer
 
 ::: warning
 Observe que essa ação pode ser cara em termos de recursos; se você
@@ -143,7 +143,7 @@ tem muitos tickets, isso pode deixar o Zammad lento.
 Ticket.where(customer_id: 4).update_all(customer_id: 1)
 ```
 
-### Obter tipos de estado de ticket
+### Get ticket state types
 
 Isso mostrará todos os tipos de estado necessários para criar novos estados
 de ticket:
@@ -158,9 +158,9 @@ O comando acima retornará tanto o ID quanto o nome do tipo - por exemplo:
 `[[1, "new"], [2, "open"], ...`.
 ```
 
-## Comandos de usuário
+## User commands
 
-### Encontrar usuário
+### Find user
 
 Para trabalhar com informações de usuário ou verificar informações
 específicas, você precisará encontrá-lo primeiro.
@@ -183,7 +183,7 @@ Procurando o usuário pelo login:
 User.find_by(login: 'john.doe')
 ```
 
-### Desbloquear uma conta de usuário bloqueada
+### Unlock a locked user account
 
 ::: tip
 Desbloquear uma conta de usuário bloqueada também é suportado pela interface web do Zammad!
@@ -217,7 +217,7 @@ para o padrão de 10 tentativas de login falhas):
 User.find(**USERID**).login_failed
 ```
 
-### Alterar/atualizar endereço de email do usuário
+### Change / update email address of user
 
 Se necessário, você pode simplesmente alterar o endereço de email do
 usuário.
@@ -241,7 +241,7 @@ u.save!
 
 Você precisa encontrar o ID do usuário primeiro para isso.
 
-### Alterar/atualizar nome de login do usuário
+### Change / update login name of user
 
 Altere o nome de usuário do usuário (por exemplo, se você quiser fazer login
 com um nome de usuário mais curto em vez de um endereço de email)
@@ -260,7 +260,7 @@ u.save!
 
 Você precisa encontrar o ID do usuário primeiro para isso.
 
-### Definir direitos de administrador para o usuário
+### Set admin rights for user
 
 Não tem mais acesso ao Zammad? Conceda a si mesmo ou a outro usuário
 direitos administrativos.
@@ -277,7 +277,7 @@ u.roles = Role.where(name: ['Agent', 'Admin'])
 u.save!
 ```
 
-### Definir senha para o usuário
+### Set password for user
 
 Você ou o usuário esqueceram a senha? Sem problemas! Basta redefini-la
 manualmente se necessário.
@@ -286,7 +286,7 @@ manualmente se necessário.
 User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
 ```
 
-### Remover senha do usuário
+### Remove password for user
 
 Se você adicionou um segundo método de autenticação (por exemplo, LDAP) após
 o lançamento, ainda pode haver uma senha no gerenciamento próprio de
@@ -298,17 +298,17 @@ autenticação externo. Basta remover a senha armazenada pelo Zammad.
 User.find_by(email: 'you@example.com').update!(password: nil)
 ```
 
-## Comandos de grupo
+## Group commands
 
-### Encontrar um grupo
+### Find a group
 
 ```ruby
 Group.find_by(name: 'Users').follow_up_possible
 ```
 
-## Comandos de chat
+## Chat commands
 
-### Remover registros de endereço IP
+### Remove IP address logs
 
 Use o seguinte comando para remover todos os registros de endereço IP de
 chats fechados que não foram atualizados nos últimos sete dias:
@@ -331,12 +331,12 @@ session.save!(touch: false)
 end
 ```
 
-## Configurações do Zammad
+## Zammad settings
 
 Nesta seção, você pode encontrar algumas configurações que também pode
 definir na interface do Zammad.
 
-### Configuração de desligamento automático
+### Auto shutdown setting
 
 Define se um desligamento automático do Zammad é realizado quando o banco de
 dados é alterado (por exemplo, após atributos personalizados serem criados
@@ -351,7 +351,7 @@ você terá que reiniciar os serviços do Zammad manualmente.
 Setting.set('auto_shutdown', 'true')
 ```
 
-### Configuração Ticket_hook
+### Ticket_hook setting
 
 Isso lhe dará o gancho de ticket que você encontra dentro do `[]` antes do
 número do ticket. Por padrão, isso será `Ticket#` - você não deve alterar
@@ -361,7 +361,7 @@ essa configuração em um sistema produtivo.
 Setting.get('ticket_hook')
 ```
 
-### Configuração FQDN
+### FQDN setting
 
 Obtenha a configuração atual de FQDN do Zammad e, se necessário, ajuste-a.
 
@@ -382,7 +382,7 @@ Definir um novo FQDN:
 Setting.set('fqdn', 'new.domain.tld')
 ```
 
-### Configuração HTTP(s)
+### HTTP(s) setting
 
 Essa configuração pertence indiretamente à sua configuração de FQDN e é
 relevante para URLs baseadas em variáveis (por exemplo, em notificações)
@@ -408,7 +408,7 @@ Alterar o tipo http para HTTPs:
 Setting.set('http_type', 'https')
 ```
 
-### Configuração de provedor de armazenamento
+### Storage provider setting
 
 A configuração de provedor de armazenamento é definida como `DB` em
 instalações padrão. No entanto, se você recebe muitos anexos ou tem uma
@@ -492,7 +492,7 @@ Ativar ou desativar verificação SSL:
 Setting.set('es_ssl_verify', 'false')
 ```
 
-### Ativar proxy
+### Enable proxy
 
 Definir um proxy para uso pelo Zammad:
 
@@ -520,13 +520,13 @@ Setting.set('es_asciifolding', false)
 Depois de alterar a configuração, certifique-se de [reconstruir o índice de
 pesquisa](/pt_BR/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
 
-## Configurações ocultas
+## Hidden settings
 
 Nesta seção, você pode encontrar algumas configurações que não encontrará na
 interface do Zammad. Essas configurações podem ser úteis, pois podem mudar o
 comportamento do Zammad.
 
-### Enviar todos os emails de saída para uma caixa de correio BCC
+### Send all outgoing emails to a BCC-mailbox
 
 Essa opção permite enviar todos os emails de saída (não notificações) para
 uma caixa de correio específica. Observe que essa não deve ser uma caixa de
@@ -544,7 +544,7 @@ seguinte:
 Setting.get('system_bcc')
 ```
 
-### Ativar contador em visões gerais agrupadas
+### Activate counter on grouped overviews
 
 Isso ativa um valor de número de ticket em cada cabeçalho para elementos
 agrupados.
@@ -567,7 +567,7 @@ Obter configuração atual (`nil` é false):
 Setting.get('ui_table_group_by_show_count')
 ```
 
-### Tipo de ticket padrão na criação
+### Default ticket type on creation
 
 O Zammad permite definir o tipo de artigo padrão na criação do ticket. Por
 padrão, isso será uma chamada telefônica recebida.
@@ -588,7 +588,7 @@ Para verificar qual configuração está definida atualmente, basta executar:
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Mostrar uma nota durante a criação do artigo
+### Show a note during article creation
 
 Se você precisar mostrar aos seus agentes uma nota com informações
 importantes durante a criação do artigo, pode criar uma nota estática para
@@ -601,7 +601,7 @@ todos os tipos de artigo, simplesmente omita esses tipos.
 ![Captura de tela mostra uma nota durante a criação de
 artigo](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
 
-#### Criação de ticket
+#### Ticket creation
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
@@ -611,7 +611,7 @@ Setting.set('ui_ticket_create_notes', {
    })
 ```
 
-#### Novo artigo em tickets existentes
+#### New article in existing tickets
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -624,7 +624,7 @@ Setting.set('ui_ticket_add_article_hint', {
    })
 ```
 
-#### Verificar configuração atual
+#### Check current configuration
 
 ```ruby
 Setting.get('ui_ticket_create_notes')
@@ -634,7 +634,7 @@ Setting.get('ui_ticket_create_notes')
 Setting.get('ui_ticket_add_article_hint')
 ```
 
-#### Opções de marcação
+#### Markup options
 
 Para aplicar formatação de texto, use a seguinte marcação:
 
@@ -646,7 +646,7 @@ Para aplicar formatação de texto, use a seguinte marcação:
 - `¶` (nova linha)
 - `[link text](/example.com)`
 
-### Mostrar endereço de email do cliente na seleção de cliente (criação de ticket)
+### Show email address of customer on customer selection (ticket creation)
 
 Por padrão, o Zammad não exibirá os endereços de email dos clientes. A opção
 abaixo permite alterar esse comportamento.
@@ -661,7 +661,7 @@ Obtenha o estado atual dessa configuração com:
 Setting.get('ui_user_organization_selector_with_email')
 ```
 
-### Alterar configurações de fonte para emails HTML de saída
+### Change font settings for outgoing HTML emails
 
 ::: info
 Alguns clientes (como o Outlook) podem recorrer a outras configurações, enquanto
@@ -681,7 +681,7 @@ Obtenha o estado atual dessa configuração com:
 Setting.get('html_email_css_font')
 ```
 
-### Destacar contagem de tickets abertos do cliente
+### Highlight customer's open ticket count
 
 Essa opção realça a contagem de tickets abertos do cliente selecionado. Ela
 destaca a contagem em cores diferentes se atingir um limite.
@@ -698,7 +698,7 @@ ajustar esses limites.
 | **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
 | **New Ticket dialog** | 0             | 1                | \>= 2        |
 
-### Ativar aba de anexos na barra lateral
+### Activate attachment tab in sidebar
 
 Essa opção ativa uma nova aba na barra lateral direita na visualização do
 ticket, que mostra todos os anexos do ticket atualmente visualizado.
@@ -707,7 +707,7 @@ ticket, que mostra todos os anexos do ticket atualmente visualizado.
 Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')
 ```
 
-### Período de tempo para mostrar o perfil do cliente em novas chamadas
+### Time period for showing customer profile on new calls
 
 O Zammad mostra o diálogo de perfil do cliente quando uma chamada desse
 cliente está chegando e há um ticket existente desse cliente nesse
@@ -720,7 +720,7 @@ Definir o período de tempo para 90 dias:
 Setting.set('cti_customer_last_activity', '90')
 ```
 
-### Definir "Notes" públicas como relevantes para SLA
+### Set public "notes" as SLA relevant
 
 Normalmente, notas não são relevantes para SLA. Use o seguinte comando para
 incluir notas visíveis publicamente ao rastrear a conformidade de SLA (notas
@@ -744,7 +744,7 @@ Ativar SLA para ignorar notas como comunicação:
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
 
-### Ativar ícone de prioridade
+### Activate priority icon
 
 Para ativar ícones adicionais que representam a prioridade, use o comando
 abaixo:
@@ -753,9 +753,9 @@ abaixo:
 Setting.set('ui_ticket_priority_icons', true)
 ```
 
-## Outros comandos úteis
+## Other useful commands
 
-### Remover recurso de IA
+### Remove AI feature
 
 O recurso de IA do Zammad é completamente opcional e requer uma configuração
 antes que qualquer solicitação de IA seja feita. No entanto, se você não
@@ -775,7 +775,7 @@ Permission.where("name LIKE 'admin.ai%'").update!(active: false)
 
 Para reativá-lo, defina o sinalizador `active` como `true`.
 
-### Buscar emails
+### Fetch emails
 
 O comando abaixo fará uma busca manual dos canais de email. Isso também
 mostrará erros que possam aparecer durante esse processo.
@@ -784,7 +784,7 @@ mostrará erros que possam aparecer durante esse processo.
 Channel.fetch
 ```
 
-### Reprocessar emails com falha
+### Reprocess failed emails
 
 Quando o Zammad busca um email que não consegue analisar (por exemplo,
 devido a um bug no analisador ou a uma mensagem malformada), ele armazenará
@@ -795,7 +795,7 @@ inválido em um dos campos de cabeçalho), pode ser necessário editar
 manualmente o email antes que o Zammad possa processá-lo. Para fazer isso,
 siga as etapas abaixo.
 
-#### Exportar todos os emails com falha para uma pasta local
+#### Export all failed emails to a local folder
 
 ```sh
 rake zammad:email_parser:failed_email:export_all`
@@ -806,13 +806,13 @@ vez que você realiza uma exportação de emails com falha (não processáveis),
 ela cria uma pasta contendo todos os emails com falha no momento da
 execução.
 
-#### Editar o email
+#### Edit the email
 
 O email foi exportado na etapa acima. Agora você pode dar uma olhada nele e
 tentar consertá-lo. Certifique-se de deixar o nome do arquivo inalterado, ou
 a importação falhará.
 
-#### Importar e reprocessar email modificado localmente
+#### Import and reprocess locally modified email
 
 Após editar o email, execute:
 
@@ -832,7 +832,7 @@ Certifique-se de executar esses comandos apenas a partir da pasta principal do Z
 da subpasta gerada.
 :::
 
-#### Excluir emails indesejados
+#### Delete unwanted emails
 
 Em caso de emails indesejados, como spam, você pode excluí-los do banco de
 dados após exportá-los com o seguinte comando:
@@ -845,7 +845,7 @@ Se você passar a pasta de exportação como argumento, todos os emails
 contidos serão removidos do banco de dados, seus arquivos excluídos e, por
 fim, a pasta vazia removida.
 
-### Mostrar e tentar novamente tarefas de privacidade de dados com falha
+### Show and retry failed data privacy jobs
 
 Em casos raros, as tarefas de privacidade de dados do Zammad podem
 falhar. Para mostrá-las, você pode usar o seguinte comando rake:
@@ -864,7 +864,7 @@ novamente a tarefa.
 rake zammad:data_privacy:failed:retry
 ```
 
-### Preencher um sistema de teste com dados de teste
+### Fill a test system with test data
 
 ::: danger
 Não execute isso em um ambiente produtivo! Isso pode deixar o Zammad lento
@@ -880,7 +880,7 @@ não fazem sentido lógico.
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
 ```
 
-## Excluindo registros
+## Deleting records
 
 ::: danger
 ☠️ Os comandos listados aqui causam **perda de dados irrecuperável**! Só
@@ -888,7 +888,7 @@ prossiga se souber o que está fazendo e tiver
 [um backup](/pt_BR/tutorials/backup-restore)!
 :::
 
-### Removendo tickets (e seus artigos)
+### Removing tickets (and their articles)
 
 Excluir um ticket (especificado pelo ID do banco de dados):
 
@@ -913,7 +913,7 @@ tickets_to_keep = [1, 2, 3]
 Ticket.where.not(id: tickets_to_keep).destroy_all
 ```
 
-### Removendo usuários
+### Removing users
 
 ::: warning
 Clientes **não podem** ser excluídos enquanto tiverem tickets restantes no
@@ -947,7 +947,7 @@ User.where(
    ).destroy_all
 ```
 
-### Removendo organizações
+### Removing organizations
 
 ::: info
 Remover uma organização **não** exclui os clientes associados.
@@ -979,7 +979,7 @@ organizations = Organization.where('note LIKE ?', '%foo%')
 puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
 ```
 
-#### Etapa 3: prosseguir com a exclusão
+#### Step 3: Proceed with deletion
 
 ```ruby
 organizations.each do |org|
@@ -999,7 +999,7 @@ end
    end
 ```
 
-### Removendo registros do sistema
+### Removing system records
 
 Remover todas as notificações online:
 
@@ -1027,7 +1027,7 @@ organizações (perigoso!):
 History.destroy_all
 ```
 
-### Redefinir instalação do Zammad
+### Reset Zammad installation
 
 ::: danger
 

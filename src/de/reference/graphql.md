@@ -27,7 +27,7 @@ Das Abrufen des Zammad GraphQL-Schemas (Introspection genannt) ermöglicht
 eine automatische Vervollständigung und clientseitige Validierung beim
 Schreiben von Requests.
 
-## Erste Schritte
+## Loslegen
 
 Wenn Sie die folgenden Schritte befolgen, können Sie erfolgreich eine
 einfache Anfrage senden und Daten von Zammad empfangen.
@@ -56,7 +56,7 @@ Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da
 Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben,
 erstellen Sie einfach ein neues Token.
 
-### Client vorbereiten
+### Prepare your client
 
 Öffnen Sie Ihren API Client und richten Sie ihn ein.
 
@@ -79,7 +79,7 @@ Schritte mit dem Client Bruno zeigt.
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Einen Request erstellen
+### Create a request
 
 Alle Requests und Responses sind im JSON-Format. Das bedeutet, dass alle
 Informationen in Klammern gekapselt sein und eine hierarchische Struktur
@@ -184,7 +184,7 @@ Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ## Anhang
 
-### Global IDs
+### Global ids
 
 ::: info
 

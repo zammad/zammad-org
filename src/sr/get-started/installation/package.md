@@ -3,11 +3,11 @@ order: 2
 title: Пакет
 ---
 
-# Инсталација пакета
+# Package installation
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Подржани оперативни системи
+## Supported operating systems
 
 За инсталацију пакета, подржане су следеће дистрибуције Linux платформе:
 
@@ -63,7 +63,7 @@ sudo dnf install curl epel-release
 
 ## Основе
 
-### Обезбедите исправан locale
+### Ensure correct locale
 
 ::: tabs key:distros
 
@@ -163,7 +163,7 @@ Alternatively, you can follow [our example
 setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
 separated to keep the install instructions as lean as possible.
 
-### Додајте Zammad репозиториј
+### Add Zammad repository
 
 ::: info
 Packager.io можда није доступан из окружења са искључиво IPv6 адресама, тако да
@@ -311,7 +311,7 @@ sudo dnf install zammad
 
 :::
 
-### Управљање Zammad сервисима
+### Manage services of Zammad
 
 Zammad uses three services. These services can be managed individually or
 all at once by using the parent **zammad**.
@@ -335,7 +335,7 @@ sudo systemctl start zammad
 To stop or restart a service or to check its status, adjust the command as
 mentioned above.
 
-### Следећи кораци
+### Next steps
 
 - [Connect Zammad with
   Elasticsearch](/en/tutorials/connect-config-elasticsearch)
@@ -355,7 +355,7 @@ mentioned above.
 - Nginx
 - Redis
 
-### Сервис базе података
+### Database server
 
 Zammad stores its content in a database. The supported database system is
 [PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
@@ -369,7 +369,7 @@ during the package installation.
 подржан и може довести до грешака приликом миграције базе података.
 :::
 
-### Прокси приступа
+### Reverse proxy
 
 The following reverse proxies are supported in their currently maintained
 versions:

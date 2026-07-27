@@ -5,7 +5,7 @@ title: Tag
 
 # Tag
 
-## Ambito ticket
+## Ticket scope
 
 ### Elenca
 
@@ -66,9 +66,9 @@ Richiesta `DELETE` inviata: `/api/v1/tags/remove`
 :::
 ::::
 
-## Ambito amministrazione
+## Administration scope
 
-### Admin - Elenco
+### Admin - list
 
 Permesso richiesto: `admin.tag`
 
@@ -80,7 +80,7 @@ Richiesta `GET` inviata: `/api/v1/tag_list`
 
 :::
 
-### Admin - Crea
+### Admin - create
 
 Permesso richiesto: `admin.tag`
 
@@ -101,7 +101,7 @@ Richiesta `POST` inviata: `/api/v1/tag_list`
 :::
 ::::
 
-### Admin - Rinomina
+### Admin - rename
 
 Permesso richiesto: `admin.tag`
 
@@ -122,7 +122,7 @@ Richiesta `PUT` inviata: `/api/v1/tag_list/{tag id}`
 :::
 ::::
 
-### Admin - Elimina
+### Admin - delete
 
 Permesso richiesto: `admin.tag`
 

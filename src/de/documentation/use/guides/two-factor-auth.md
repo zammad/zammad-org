@@ -1,9 +1,9 @@
 ---
 order: 9
-title: Zwei-Faktor-Authentifizierung
+title: 'Two-factor authentication'
 ---
 
-# Zwei-Faktor-Authentifizierung
+# Two-factor authentication
 
 Die Zwei-Faktor-Authentifizierung (2FA) erweitert die Sicherheit Ihres
 Zammad-Kontos, indem eine zusätzliche Prüfung neben Ihrem Passwort
@@ -37,7 +37,7 @@ Einrichtungsprozess geführt, der bestimmte Schritte umfasst. Fahren Sie mit
 der Verwendung einer [Authentifizierungs-App](#authentifizierungs-app) oder
 eines [Sicherheits-Schlüssels](#sicherheits-schlussel) fort.
 
-### Authentifizierungs-App
+### Authentication app
 
 Die Authentifizierungs-App ist eine Methode der
 Zwei-Faktor-Authentifizierung, bei der eine mobile App
@@ -76,7 +76,7 @@ entweder mit der Einrichtung einer anderen 2FA-Methode fort
 ([Sicherheits-Schlüssel](#sicherheits-schlussel)) oder lesen Sie, wie man
 2FA [bei der Anmeldung verwendet](#anmelden).
 
-### Sicherheits-Schlüssel
+### Security key
 
 Die Zwei-Faktor-Methode mit Sicherheits-Schlüssel nutzt das Web
 Authentication API im Browser, um Ihre Identität zu bestätigen. Sie können
@@ -157,7 +157,7 @@ Sie können einen einzelnen Wiederherstellungs-Code nur einmal verwenden! Falls 
 können Sie diese in Ihrem Profil neu erstellen.
 :::
 
-## Wiederherstellungs-Codes erzeugen
+## Generate recovery codes
 
 Wiederherstellungs-Codes sind einmalig verwendbare Sicherheitscodes, mit
 denen Sie sich anmelden können, wenn Sie den Zugriff auf Ihre anderen
@@ -181,7 +181,7 @@ werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun,
 indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche
 `Wiederherstellungs-Codes neu erzeugen` klicken.
 
-## Festlegen einer Standard-2FA-Methode
+## Set a default 2FA method
 
 Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen,
 verwenden Sie das Aktionsmenü ::a:: neben der Methode in den
@@ -197,7 +197,7 @@ Die Standard Zwei-Faktor-Methode bedeutet, dass dies Ihre bevorzugte Methode
 beim Anmelden ist. Sie können beim Anmelden immer auf eine andere Methode
 wechseln.
 
-## Bearbeiten einer 2FA-Methode
+## Edit a 2FA method
 
 ![Screenshot zeigt 2FA-Methoden in den Einstellungen des
 Benutzerprofils](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
@@ -212,7 +212,7 @@ Einrichtungs-Prozess geführt. Im Normalfall ersetzt eine bearbeitete Methode
 die bisherige Konfiguration, aber manche Methoden unterstützen erweiterte
 Funktionen (z.B. mehrere Sicherheits-Schlüssel).
 
-## Entfernen einer 2FA-Methode
+## Remove a 2FA method
 
 Um eine bereits eingerichtete Zwei-Faktor-Methode zu entfernen, verwenden
 Sie das Menü Aktionsmenü ::a:: neben der Methode und wählen Sie

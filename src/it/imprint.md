@@ -16,7 +16,7 @@ Telefono: +49 (0) 30 55 57 160-00 \ Fax: +49 (0) 30 55 57 160-99 \ Email:
 Amministratore delegato: Martin Edenhofer \ Registro commerciale
 Charlottenburg, N. HRB 163946 B
 
-## Codice sorgente
+## Source code
 
 Il proprietario del codice sorgente (incluso zammad.org) è:
 

@@ -27,7 +27,7 @@ track of tickets that have not yet been completed.
 Одабиром прегледа на другом нивоу навигације приказаће вам се табела са
 тикетима који задовољавају услове.
 
-## Употреба и функције
+## Usage and features
 
 Прегледе може дефинисати администратор на основу правила и услова. Ово значи
 да ако се тикет измени и више се не задовољава услове прегледа, тикет више
@@ -54,7 +54,7 @@ working on a ticket.
 If you miss an overview or want to have different settings, let your Zammad admin know!
 :::
 
-### Color Coded State and Priority
+### Color coded state and priority
 
 To visualize different ticket states and priorities, the entries in the
 table are color coded.
@@ -82,7 +82,7 @@ priorities](/screenshots/documentation/use/overviews/priorities.png)
 - 2 normal: blue
 - 3 high: red
 
-### Отворите тикет
+### Open a ticket
 
 Open a ticket by simply clicking on the row. This opens the ticket as a tab
 in your taskbar and shows you the ticket detail view. If this ticket is
@@ -93,7 +93,7 @@ If an overview contains more than one ticket and you open one of the
 tickets, you can find arrows in the ticket detail view header to switch to
 the next/previous ticket of this overview.
 
-### Масовне радње
+### Bulk actions
 
 Perform bulk actions by selecting multiple tickets and either use the bulk
 action flyout or drag them with the mouse to invoke the bulk action
@@ -101,7 +101,7 @@ overlay. You can find more information about that in the [Bulk
 Actions](../advanced-features#bulk-actions) section in the advanced features
 page.
 
-### Промена редоследа прегледа
+### Reorder overviews
 
 If the order of the overviews doesn't reflect your working process or you
 just like to have a different order, you can re-arrange them for your

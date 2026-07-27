@@ -3,7 +3,7 @@ order: 4
 title: Kubernetes
 ---
 
-# Installazione Kubernetes
+# Kubernetes installation
 
 Le istruzioni per l'installazione sono disponibili nella [documentazione del
 nostro chart

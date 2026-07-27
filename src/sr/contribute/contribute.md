@@ -18,7 +18,7 @@ order: 1
 Погледајте наш одељак како можете да допринесете. Све репозиторије можете
 пронаћи на [GitHub](https://github.com/zammad){target=_blank}-у.
 
-## Zammad изворни кoд
+## Zammad source code
 
 Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
 репозиторијуму](https://github.com/zammad/zammad){target=_blank}. Прочитајте
@@ -26,7 +26,7 @@ order: 1
 програмере](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
 за почетак.
 
-### Подржани огранци/верзије
+### Supported branches / versions
 
 GitHub репозиторијум Zammad-а има неколико огранака:
 
@@ -144,7 +144,7 @@ Weblate-у](/screenshots/contribute/weblate-ui.png)
     - **Other languages**: овде можете добити листу где и како је низ текста
       преведен на другим језицима (може бити корисно за сличне језике).
 
-### Ознаке у тексту
+### Markup in strings
 
 Испод можете пронаћи пар примера за специјалне низове текста са ознаком која
 индикује где се може пронаћи. Покушајте да задржите (прилагођене) ознаке и

@@ -98,7 +98,7 @@ inferior esquerdo e mude a chave para o estado desejado, ou use o atalho de
 teclado [[d]]. Se nenhum campo de entrada estiver ativado, ele alterna entre
 os diferentes modos.
 
-## Perfil do usuário
+## User profile
 
 ### Como alterar minha imagem de perfil/avatar?
 
@@ -125,7 +125,7 @@ agente substituto.
 Continue lendo no [guia de visões
 gerais](guides/overviews#reorder-overviews).
 
-## Trabalhar em tickets
+## Work on tickets
 
 ### Como atribuir alguém a um ticket?
 

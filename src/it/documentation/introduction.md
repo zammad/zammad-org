@@ -4,12 +4,12 @@ features:
     details: 'Trova tutto su come lavorare con Zammad quotidianamente, con suggerimenti, tutorial e tutto ciò di cui potresti aver bisogno.'
     icon: 🙋
     link: /it/documentation/use/start
-    title: 'Documentazione utente'
+    title: 'User documentation'
   - 
     details: 'Scopri come configurare Zammad e collegarlo a sistemi remoti.'
     icon: 🧑‍🔧
     link: /en/documentation/manage/start
-    title: 'Documentazione amministratore'
+    title: 'Administrator documentation'
   - 
     details: 'Scopri i termini e i concetti importanti usati in Zammad.'
     icon: 🗂️
@@ -19,7 +19,7 @@ order: 1
 title: Introduzione
 ---
 
-# Benvenuto nella documentazione di Zammad
+# Welcome to the Zammad documentation
 
 Questa documentazione è la tua guida completa per sfruttare al meglio il tuo
 software di ticketing e helpdesk. Qui troverai tutorial approfonditi,

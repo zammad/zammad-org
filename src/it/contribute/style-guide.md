@@ -23,7 +23,7 @@ features:
 order: 2
 ---
 
-# Guida allo stile e ai contenuti
+# Style and content guide
 
 Questa guida fornisce una panoramica dei contenuti da includere nella
 documentazione di Zammad, nonché le linee guida di formattazione e stile per
@@ -37,7 +37,7 @@ un'occhiata alla nostra [pagina dei contributi](contribute) o [apri una
 issue](https://github.com/zammad/zammad-org/issues){target=_blank} per
 iniziare.
 
-## Presupposti sul pubblico
+## Audience assumptions
 
 La documentazione presuppone che gli **utenti** abbiano una comprensione di
 base dell'uso dei browser web e familiarità con i concetti comuni del design
@@ -75,7 +75,7 @@ Dato che una documentazione non può coprire tutto, va considerata anche la
 rilevanza. Se mancano parti con un caso d'uso comune, è opportuno
 includerle.
 
-## Stile e regole
+## Style and rules
 
 Le sezioni seguenti trattano gli aspetti generali da considerare nella
 scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
@@ -96,9 +96,9 @@ scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
 
 - Usa frasi brevi e chiare e dai priorità alle informazioni rispetto alla
   complessità.
-- Titolo e intestazioni di pagina: la prima lettera di tutte le parole, ad
-  eccezione di quelle di minore importanza, deve essere maiuscola (vedi
-  [title case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+- Use sentence case for page titles and headings. Capitalize the first word
+  and the first letter of any proper noun (e.g. Zammad, Elasticsearch,
+  Docker, GitLab) and acronym (SLA, SSO, API, JSON, etc.).
 - Usa la separazione breadcrumb per percorsi e posizioni con `>` come
   separatore e formatta il percorso in corsivo, ad esempio _Impostazioni >
   Canali > Chat_.
@@ -177,7 +177,7 @@ Alcune regole importanti e personalizzate sono menzionate di seguito.
 | Menu azioni               | ::a::                               | `::a::`                         |
 | Pulsante copia appunti    | ::c::                               | `::c::`                         |
 
-#### Struttura delle intestazioni
+#### Heading structure
 
 Ogni file della documentazione deve includere esattamente un titolo al
 livello superiore (come `# Titolo`). I livelli inferiori devono contenere
@@ -293,26 +293,26 @@ Questo è il contenuto mostrato nello stato espanso.
 
 #### Elenchi di definizioni
 
-Primo termine <Badge type="info" text="tag1" />
-: Questa è la definizione del primo termine.
+First term <Badge type="info" text="tag1" />
+: This is the definition of the first term.
 
-Secondo termine <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: Questa è una definizione del secondo termine.
-: Questa è un'altra definizione del secondo termine.
+Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: This is one definition of the second term.
+: This is another definition of the second term.
 
 **Utilizzo:**
 
 ::: details
 
 ```md
-Primo termine <Badge type="info" text="tag1" />
-: Questa è la definizione del primo termine
-  con un'altra riga.
+First term <Badge type="info" text="tag1" />
+: This is the definition of the first term
+  with another line.
 ```
 
 :::
 
-#### Evidenziazione con riquadri
+#### Highlighting with boxes
 
 Per evidenziare opzioni o varianti diverse, è possibile usare riquadri
 cliccabili.
@@ -348,7 +348,7 @@ features:
 Per posizionarlo nell'area del contenuto, inserisci semplicemente il riferimento `<VPDocFeatures />` nel punto in cui deve essere
 renderizzato.
 
-#### Immagini specifiche per tema
+#### Theme specific images
 
 Per destinare risorse immagine specifiche a un singolo tema, puoi assegnare
 la classe CSS `.dark-only` o `.light-only` all'immagine corrispondente:

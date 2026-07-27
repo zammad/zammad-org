@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Arbeiten an Tickets'
+title: 'Work with tickets'
 ---
 
-# Arbeiten an Tickets
+# Work with tickets
 
 Sie haben den Weg zu einem existierenden Ticket gefunden, herzlichen
 Glückwunsch! Schauen wir uns nun an, was Sie alles tun können.
@@ -26,14 +26,14 @@ explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die
 Schaltfläche `Aktualisieren` auf der rechten Seite der Fußleiste, wenn Sie
 mit Ihren Änderungen zufrieden sind.
 
-## Ticket-Attribute ändern
+## Changing ticket attributes
 
 Wie Sie vielleicht wissen, gibt es zusätzliche Ticket-Attribute wie Gruppe,
 Priorität und Besitzer, die Sie einstellen können. Schauen Sie sich dazu die
 [Ticket-Grundlagen](/de/documentation/use/basics/ticket-basics) an, sofern
 Sie diese noch nicht gelesen haben.
 
-## Einen neuen Artikel erstellen
+## Create a new article
 
 Egal, ob Sie einen komplett neuen Artikel erstellen oder auf einen
 Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
@@ -76,7 +76,7 @@ haben und die nicht älter als 10 Minuten sind. Um die Funktion **Artikel
 löschen** für Kommunikations-Artikel (E-Mails, Anrufe) im ::a:: Menü zu
 sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
-### Leeren Artikel hinzufügen
+### Add an article from scratch
 
 Klicken Sie auf die Schaltfläche `Interne Notiz hinzufügen` unter den
 Artikeln des Tickets. Dadurch wird der Editor mit aktiviertem **Notiz**-Typ
@@ -89,7 +89,7 @@ einem Artikel. Lesen Sie den nächsten Abschnitt für weitere Informationen.
 Artikeln des
 Tickets](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Auf einen Artikel antworten
+### Respond to an article
 
 Um einen Artikel weiterzuleiten oder zu beantworten, verwenden Sie eine der
 Antwort-Schaltflächen unter dem Artikel oder im ::a:: Menü. Das Verhalten
@@ -130,7 +130,7 @@ Wenn das Ticket eine lange Artikelhistorie hat, lesen Sie in [Bearbeitung
 großer Tickets](#bearbeitung-großer-tickets) weiter, um mehr über die von
 Zammad bereitgestellten Komfortfunktionen zu erfahren.
 
-### Bearbeitung großer Tickets
+### Handling of large tickets
 
 Bei der Bearbeitung von Tickets mit umfangreicher Artikelhistorie – wie
 beispielsweise bei langen E-Mail-Verläufen, bei denen Sie auf frühere
@@ -162,7 +162,7 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
 der Ticket-Detailansicht angeheftet
 ist](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Ein Ticket umbenennen
+## Rename a ticket
 
 Um ein Ticket umzubenennen, klicken Sie einfach auf den Titel in der
 Kopfleiste und beginnen Sie zu tippen. Dieser Titel wird in der
@@ -170,7 +170,7 @@ E-Mail-Kommunikation als Betreff verwendet und erscheint an verschiedenen
 Stellen, z.B. in Übersichten. Bestätigen Sie mit [[enter]] oder klicken Sie
 auf die Schaltfläche auf der rechten Seite.
 
-## Ticket-Nummer kopieren
+## Copy ticket number
 
 Um die Ticketnummer einschließlich eines Links zum Ticket zu kopieren
 (z.B. um sie in eine Chat-App einzufügen), verwenden Sie das Symbol ::c::
@@ -190,7 +190,7 @@ Zwischenablage kopiert. Um auch den Titel des Tickets zu übernehmen, drücken
 Sie zweimal [[.]].  Beispiel: `Ticket#31004: Einarbeitung eines neuen
 Kollegen`.
 
-## Gleichzeitige Ticketbearbeitung
+## Simultaneous ticket processing
 
 Es kann vorkommen, dass zwei oder mehr Agenten ein Ticket gleichzeitig
 öffnen. Um Bearbeitungskonflikte zu vermeiden und zu verhindern, dass Kunden
@@ -216,7 +216,7 @@ darstellen (z.B. Ticketanzeige über die mobile Benutzeroberfläche oder
 Benutzer außer Haus). Fahren Sie einfach mit der Maus darüber, wenn Sie sich
 nicht sicher sind, was es bedeutet.
 
-## Ticket-Aktionen
+## Ticket actions
 
 Weitere Aktionen sind über das ::a:: Menü in der Seitenleiste des Tickets
 verfügbar.
@@ -229,7 +229,7 @@ Zusammenfassen
 : Übertragen Sie alle Nachrichten/Notizen in ein anderes Ticket. Nützlich, wenn Sie mehr als ein Ticket zu einem einzelnen Kundenproblem haben.
   Siehe [Tickets zusammenfassen](/de/documentation/use/advanced-features#tickets-zusammenfassen) für weitere Informationen.
 
-Kunden ändern: Weisen Sie das Ticket einem anderen Kunden zu.
+Change customer : Reassign the ticket to another customer.
 
 -----
 

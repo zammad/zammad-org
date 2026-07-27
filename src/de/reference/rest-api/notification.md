@@ -3,7 +3,7 @@ order: 10
 title: Benachrichtigung
 ---
 
-# Online-Benachrichtigung
+# Online notification
 
 ::: info
 Die Verfügbarkeit von Benachrichtigungen hängt stark von der Berechtigung
@@ -74,7 +74,7 @@ Erforderliche Erlaubnis: `any`
 
 :::
 
-## Alle als gelesen markieren
+## Mark all as read
 
 Erforderliche Erlaubnis: `any`
 

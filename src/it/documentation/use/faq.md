@@ -97,7 +97,7 @@ clic sul tuo avatar nell'angolo in basso a sinistra e cambia il pulsante
 allo stato desiderato o usa la scorciatoia da tastiera [[d]]. Se nessun
 campo di input è attivato, scorre tra le diverse modalità.
 
-## Profilo utente
+## User profile
 
 ### Come cambiare la mia immagine profilo/avatar?
 
@@ -125,7 +125,7 @@ sostituto.
 Continua a leggere nella [guida alle
 panoramiche](guides/overviews#riordina-panoramiche).
 
-## Lavora sui ticket
+## Work on tickets
 
 ### Come assegnare qualcuno a un ticket?
 

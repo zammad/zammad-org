@@ -16,7 +16,7 @@ Adapt it wherever needed in case your use-case differs.
 
 ## Инсталација
 
-### Add Repository Key
+### Add repository key
 
 ::: tabs key:distros
 
@@ -42,7 +42,7 @@ sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add Repository
+### Add repository
 
 ::: tabs key:distros
 
@@ -137,13 +137,13 @@ scenario needs additional configuration, have a look at [Elastic’s
 configuration
 reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
 
-## Start and Enable Elasticsearch
+## Start and enable Elasticsearch
 
 ```sh
 sudo systemctl enable elasticsearch.service --now
 ```
 
-## Следећи кораци
+## Next steps
 
 Go on with the [installation of
 Zammad](/en/get-started/installation/package#add-zammad-repository). After

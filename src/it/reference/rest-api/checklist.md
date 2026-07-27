@@ -91,7 +91,7 @@ Richiesta `DELETE` inviata: `/api/v1/checklists/{checklist id}`
 
 :::
 
-## Elementi checklist
+## Checklist items
 
 ### Mostra
 
@@ -159,7 +159,7 @@ Richiesta `DELETE` inviata: `/api/v1/checklist_items/{checklist item id}`
 
 :::
 
-## Modelli checklist
+## Checklist templates
 
 ### Elenca
 

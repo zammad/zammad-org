@@ -4,12 +4,12 @@ features:
     details: 'Сазнајте све о томе како да радите у Zammad-у на дневном нивоу, са саветима, упутствима и све остало што можете да замислите.'
     icon: 🙋
     link: /sr/documentation/use/start
-    title: 'Корисничка документација'
+    title: 'User documentation'
   - 
     details: 'Сазнајте како да подесите Zammad и повежете га са удаљеним системима.'
     icon: 🧑‍🔧
     link: /en/documentation/manage/start
-    title: 'Администраторска документација'
+    title: 'Administrator documentation'
   - 
     details: 'Сазнајте о важној терминологији и концептима који се користе у Zammad-у.'
     icon: 🗂️
@@ -19,7 +19,7 @@ order: 1
 title: Увод
 ---
 
-# Добродошли на Zammad документацију
+# Welcome to the Zammad documentation
 
 Ова документација служи као сврсисходан водич за извлачење максимума из
 вашег тикетинг система. Овде можете пронаћи детаљна упутства, корисничке

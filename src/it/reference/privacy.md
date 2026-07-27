@@ -1,18 +1,18 @@
 ---
 order: 99
-title: 'Conservazione dati e servizi esterni'
+title: 'Data retention and external services'
 ---
 
-# Conservazione dati e servizi esterni
+# Data retention and external services
 
 Per quanto tempo Zammad memorizza i dati utente? Come posso gestire il
 comportamento di conservazione dei dati utente?
 
-## Conservazione dati
+## Conservazione dei dati
 
 I seguenti dati vengono memorizzati localmente sul sistema di produzione:
 
-### Ticket e utenti
+### Tickets and users
 
 Per impostazione predefinita, Zammad non elimina mai automaticamente ticket
 o utenti.
@@ -59,12 +59,12 @@ essere visualizzate o eliminate manualmente.
 Le informazioni di sessione includono indirizzo IP (e possibilmente
 posizione geografica), browser, orario.
 
-### Attività sulla privacy dei dati
+### Data privacy tasks
 
 Ogni voce nell'elenco delle attività sulla privacy dei dati viene eliminata
 automaticamente dopo 12 mesi.
 
-## Servizi Esterni
+## External services
 
 Zammad utilizza servizi web di terze parti per determinate funzioni, il che significa
 che i dati utente possono.

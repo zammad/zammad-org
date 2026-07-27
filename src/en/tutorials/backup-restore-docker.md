@@ -1,9 +1,9 @@
 ---
-title: Backup & Restore (Docker)
+title: Backup & restore (Docker)
 order: 6
 ---
 
-# Backup & Restore (Docker)
+# Backup & restore (Docker)
 
 This section shows some basics about the backup and restore process for a Docker Compose based deployment of Zammad.
 

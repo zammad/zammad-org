@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Lavora con i ticket'
+title: 'Work with tickets'
 ---
 
-# Lavora con i ticket
+# Work with tickets
 
 Hai trovato la strada verso un ticket esistente, congratulazioni! Ora
 vediamo cosa puoi fare e come farlo.
@@ -23,14 +23,14 @@ esempio), è necessario un aggiornamento esplicito del ticket. Quindi
 assicurati di fare clic sul pulsante `Aggiorna` sul lato destro della barra
 inferiore quando sei soddisfatto delle tue modifiche.
 
-## Modifica degli attributi del ticket
+## Changing ticket attributes
 
 Come sai, ci sono attributi ticket aggiuntivi come gruppo, priorità e
 proprietario che puoi impostare. Se non hai ancora letto le [nozioni di base
 sui ticket](/it/documentation/use/basics/ticket-basics), consultale per
 saperne di più.
 
-## Crea un nuovo articolo
+## Create a new article
 
 Che tu crei un nuovo articolo da zero o risponda a un articolo del cliente,
 puoi scegliere tra diversi tipi di articolo:
@@ -69,7 +69,7 @@ eliminare solo gli articoli che hai creato tu stesso e che non hanno più di
 articoli di tipo comunicazione (email, chiamate) devono essere prima
 modificati in visibilità "interna".
 
-### Aggiungi un articolo da zero
+### Add an article from scratch
 
 Click on the `Add internal note` button below the ticket's articles. This
 opens the editor with activated **Note** type and internal visibility. You
@@ -80,7 +80,7 @@ under an article. Read the next section for more information.
 ![Screenshot shows the Add internal note button below the ticket's
 articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Rispondi a un articolo
+### Respond to an article
 
 Per inoltrare o rispondere a un articolo, usa uno dei pulsanti di risposta
 sotto un articolo o nel menu ::a::. Il comportamento è simile a quello di un
@@ -115,7 +115,7 @@ disabilitare il formato citazione per il tuo testo.
 If the ticket has a long article history, see [Handling of Large
 Tickets](#handling-of-large-tickets) for the conveniences Zammad provides.
 
-### Handling of Large Tickets
+### Handling of large tickets
 
 When working on tickets with long article histories - like long email
 threads where you need to refer back to earlier messages - Zammad provides
@@ -142,14 +142,14 @@ two conveniences:
 detail
 view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Rinomina un ticket
+## Rename a ticket
 
 Per rinominare un ticket, fai semplicemente clic sul titolo nella barra
 dell'intestazione e inizia a digitare. Questo titolo viene usato come
 oggetto nella comunicazione email e appare in diversi posti come le
 panoramiche. Conferma con [[enter]] o fai clic sul pulsante sul lato destro.
 
-## Copia numero ticket
+## Copy ticket number
 
 Per copiare il numero del ticket incluso un link al ticket (ad esempio per
 incollarlo in un'app di chat di terze parti), usa l'icona ::c:: accanto al
@@ -169,7 +169,7 @@ ticket viene copiato negli appunti. Per includere anche il titolo del
 ticket, premi [[.]] due volte. Esempio: `Ticket#31004: Onboarding nuovo
 collega`.
 
-## Elaborazione simultanea dei ticket
+## Simultaneous ticket processing
 
 Può accadere che due o più agenti aprano un ticket allo stesso tempo. Per
 prevenire conflitti di modifica e risposte contraddittorie ai clienti,
@@ -194,7 +194,7 @@ Ci sono ancora più icone che rappresentano stati aggiuntivi degli altri
 agenti (ad esempio visualizzazione ticket tramite UI mobile o fuori
 ufficio). Passa semplicemente il mouse se non sei sicuro di cosa significhi.
 
-## Azioni del ticket
+## Ticket actions
 
 Azioni aggiuntive sono disponibili nel menu ::a:: nella barra laterale del
 ticket.
@@ -207,7 +207,7 @@ Unisci
 : Migra tutti i messaggi/note a un altro ticket. Utile se hai più di un ticket su un singolo problema del cliente.
   Vedi [Unisci ticket](/it/documentation/use/advanced-features#unire-i-ticket) per i dettagli.
 
-Cambia cliente : Riassegna il ticket a un altro cliente.
+Change customer : Reassign the ticket to another customer.
 
 -----
 

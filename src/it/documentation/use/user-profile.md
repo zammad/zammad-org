@@ -1,16 +1,16 @@
 ---
 order: 7
-title: 'Profilo utente'
+title: 'User profile'
 ---
 
-# Profilo utente
+# User profile
 
 Regola le impostazioni del tuo account e quelle personali nel tuo profilo
 utente. Alcune opzioni potrebbero non essere disponibili, a seconda di come
 è configurato il sistema e dei tuoi permessi. Aprilo dal menu avatar nella
 barra laterale. Continua a leggere per ulteriori dettagli.
 
-## Menu avatar
+## Avatar menu
 
 Per aprire il menu avatar, fai clic sulla tua icona avatar nell'angolo in
 basso a sinistra nella barra laterale. Questa icona mostra le tue iniziali o
@@ -32,7 +32,7 @@ Il menu contiene le seguenti voci:
   regolare il tuo avatar, la password, le impostazioni di notifica e molto
   altro, vedi la sezione successiva.
 
-## Impostazioni profilo
+## Profile settings
 
 ![Screenshot che mostra le impostazioni del profilo
 utente](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
@@ -67,7 +67,7 @@ una.
 After capturing or uploading an image, you can crop it. Have a look at the
 preview at the top of the right flyout.
 
-### Fuori ufficio
+### Out of office
 
 Definisci periodi di assenza (ad esempio per le tue vacanze) e designa un
 sostituto per gestire i tuoi ticket mentre sei assente.
@@ -82,7 +82,7 @@ tuoi ticket. Ricevi anche notifiche mentre sei assente.
 Cambia la password del tuo account. Per aggiornarla, fornisci la vecchia
 password, la nuova password e conferma la nuova digitandola di nuovo.
 
-### Autenticazione a due fattori
+### Two-factor authentication
 
 Configura un'autenticazione a due fattori (2FA) per aumentare la sicurezza
 del tuo account. Il tuo amministratore deve aver attivato almeno un metodo
@@ -100,7 +100,7 @@ Zammad. Se necessario, puoi revocare l'accesso facendo clic sull'icona di
 eliminazione nella colonna "Azioni". Questo termina la sessione su questo
 dispositivo e richiede un nuovo accesso su questo dispositivo.
 
-### Accesso token
+### Token access
 
 Genera un token di accesso personale per un'applicazione di terze parti per
 accedere all'API di Zammad. Dopo aver fatto clic sul pulsante `Nuovo token

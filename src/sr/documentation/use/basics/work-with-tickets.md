@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Обрада тикета'
+title: 'Work with tickets'
 ---
 
-# Обрада тикета
+# Work with tickets
 
 Честитамо, пронашли сте пут до постојећег тикета! Хајде сада да видимо шта и
 како можете урадити са њим.
@@ -23,14 +23,14 @@ explicit update of the ticket is needed. So make sure to click the `Update`
 button on the right side of the footer bar when you are happy with your
 changes.
 
-## Измена атрибута тикета
+## Changing ticket attributes
 
 As you may know, there are additional ticket attributes such as group,
 priority and owner that you can set. If you haven't read
 [ticket-basics](/en/documentation/use/basics/ticket-basics) yet, check it
 out to learn more.
 
-## Create a New Article
+## Create a new article
 
 Без обзира да ли додајете нови чланак од нуле или одговарате на постојећи
 чланак клијента, можете изабрати између различитих врста чланака:
@@ -68,7 +68,7 @@ delete articles that you have created yourself and which are not older than
 articles of a communication type (emails, calls) must be changed to
 "internal" visibility first.
 
-### Додавање чланка од нуле
+### Add an article from scratch
 
 Click on the `Add internal note` button below the ticket's articles. This
 opens the editor with activated **Note** type and internal visibility. You
@@ -79,7 +79,7 @@ under an article. Read the next section for more information.
 ![Screenshot shows the Add internal note button below the ticket's
 articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Одговори на чланак
+### Respond to an article
 
 To forward or reply to an article, use one of the response buttons under an
 article or in the ::a:: menu. The behavior is similar to the behavior of an
@@ -115,7 +115,7 @@ for your text.
 If the ticket has a long article history, see [Handling of Large
 Tickets](#handling-of-large-tickets) for the conveniences Zammad provides.
 
-### Handling of Large Tickets
+### Handling of large tickets
 
 When working on tickets with long article histories - like long email
 threads where you need to refer back to earlier messages - Zammad provides
@@ -142,14 +142,14 @@ two conveniences:
 detail
 view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Промена наслова тикета
+## Rename a ticket
 
 To rename a ticket, simply click on the title in the header bar and start
 typing. This title is used as subject in email communication and shows up in
 several places like overviews. Confirm with [[enter]] or click the button on
 the right side.
 
-## Копирање броја тикета
+## Copy ticket number
 
 To copy the ticket number including a link to the ticket (e.g. to paste it
 in a third party chat app), use the ::c:: icon next to the ticket title. It
@@ -166,7 +166,7 @@ the ticket detail view and the ticket number is copied to your clipboard. To
 include the ticket title as well, press [[.]] twice.  Example:
 `Ticket#31004: Onboarding new colleague`.
 
-## Симултана обрада тикета
+## Simultaneous ticket processing
 
 It can happen that two or more agents open a ticket at the same time. To
 prevent edit conflicts and customers receiving contradictory answers, Zammad
@@ -190,7 +190,7 @@ There are even more icons which represent additional states of the other
 agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover
 with the mouse if you are unsure what it means.
 
-## Радње тикета
+## Ticket actions
 
 Additional actions are available in the ::a:: menu in the ticket sidebar.
 
@@ -202,7 +202,7 @@ Merge
 : Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.
   See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.
 
-Change Customer : Reassign the ticket to another customer.
+Change customer : Reassign the ticket to another customer.
 
 -----
 

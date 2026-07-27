@@ -1,4 +1,4 @@
 ---
 order: 1
-title: Inizia
+title: 'Get started'
 ---

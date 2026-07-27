@@ -70,7 +70,7 @@ PBX (por exemplo, uma rejeição) se você bloqueou um chamador específico. O
 Zammad nunca iniciará ações específicas com seu PBX. O Zammad é um
 componente passivo em todos os casos descritos.
 
-### Exemplos usados
+### Used examples
 
 **Exemplo:**
 As chamadas abaixo foram enviadas com a seguinte configuração. Isso é
@@ -87,7 +87,7 @@ importante para você entender as respostas que estamos mostrando aqui.
 
 - ID de chamador padrão para chamadas de saída `496990009111`
 
-## Evento de nova chamada
+## New call event
 
 ### Geral
 
@@ -200,7 +200,7 @@ Comando curl de exemplo:
 :::
 ::::
 
-### Respostas específicas por situação
+### Situation specific responses
 
 Dependendo da direção da chamada escolhida, o Zammad retornará um ID de
 chamada (opcionalmente) configurado, ou bloqueará (opcionalmente) um
@@ -211,7 +211,7 @@ retorno será vazio.
 Isso precisa ser suportado pelo seu PBX para funcionar.
 :::
 
-#### Rejeitar IDs de chamador bloqueados
+#### Reject blocked caller ids
 
 Se uma nova chamada recebida corresponder a um número a bloquear, o Zammad
 retornará o seguinte.
@@ -240,7 +240,7 @@ configurou nada, o Zammad retornará o seguinte.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-## Evento de atendimento de chamada
+## Call answer event
 
 ### Geral
 
@@ -357,7 +357,7 @@ Comando curl de exemplo:
 :::
 ::::
 
-## Encerramento de chamada
+## Call hangup
 
 ### Geral
 

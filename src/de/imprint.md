@@ -17,7 +17,7 @@ Geschäftsführer: Martin Edenhofer \ Handelsregister Charlottenburg, Nr. HRB
 163946 B \ Sitz: Berlin (Mitte) \ Umsatzsteuer-Identifikations-Nr.:
 DE298516802
 
-## Quellcode
+## Source code
 
 Eigentümerin des Quellcodes von Zammad (einschließlich zammad.org) ist:
 

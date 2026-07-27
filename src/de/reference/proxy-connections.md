@@ -1,9 +1,9 @@
 ---
 order: 10
-title: 'Proxy und Verbindungen'
+title: 'Proxy and connections'
 ---
 
-# Proxy und Verbindungen
+# Proxy and connections
 
 ## Proxy
 
@@ -67,7 +67,7 @@ export http_proxy=$HTTP_PROXY
 
 :::
 
-## Externe Verbindungen
+## External connections
 
 Während der Installation und des Betriebs von Zammad sind einige
 Verbindungen zu Online-Diensten erforderlich. Abhängig von Ihrer

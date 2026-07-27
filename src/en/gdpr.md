@@ -7,7 +7,7 @@ layout: home
 
 > General Data Protection Regulation
 
-## Zammad GmbH Privacy Policy
+## Zammad GmbH privacy policy
 
 This privacy policy describes how your personal information is collected, used
 and shared when you visit <https://www.zammad.org> (the "site").

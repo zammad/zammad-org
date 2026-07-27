@@ -1,15 +1,15 @@
 ---
 order: 4
-title: 'Напредне функције'
+title: 'Advanced features'
 ---
 
-# Напредне функције
+# Advanced features
 
 Ова страница садржи збирку различитих корисних алата који не изискују
 посебне странице. Само наставите да читате, претражите страницу или идите на
 жељени одељак помоћу садржаја са десне стране.
 
-## Понашање при освежавању тикета
+## Ticket update behavior
 
 ![Снимак екрана приказује мени понашања након
 освежавања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
@@ -40,7 +40,7 @@ title: 'Напредне функције'
 [[shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.
 :::
 
-## Текстуални исечци
+## Text modules
 
 ![Снимак екрана приказује функцију текстуалних
 исечака](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
@@ -67,7 +67,7 @@ title: 'Напредне функције'
 а затим притиском на [[enter]] на вашој тастатури. Zammad долази са неким
 подразумеваним текстуалним исечцима.
 
-## Убацивање чланка базе знања
+## Insert knowledge base article
 
 ![Снимак екрана приказује убацивање чланка базе
 знања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
@@ -84,7 +84,7 @@ title: 'Напредне функције'
 [[?]][[?]] у текст. Оба начина вам омогућавају да претражите жељени чланак
 базе знања куцањем неких знакова или речи.
 
-## Помињање корисника
+## Mention a user
 
 ![Снимак екрана приказује помињање
 корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
@@ -106,7 +106,7 @@ Zammad приказује листу свих корисника који одг
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
 на [[enter]] на вашој тастатури.
 
-## Претплатите се на тикет
+## Subscribe to a ticket
 
 ![Снимак екрана приказује функцију
 претплате](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
@@ -203,7 +203,7 @@ Zammad администратор га је искључио. Списак за�
   референциране тикета у вашем списку, само они који су затворени (са
   зеленим кругом) ће бити сматрани као обављени.
 
-## Шаблони тикета
+## Ticket templates
 
 **Зашто?**
 
@@ -217,7 +217,7 @@ Zammad администратор га је искључио. Списак за�
 уколико су доступни шаблони. Одаберите шаблон који желите и примените жељене
 измене.
 
-## Заједнички нацрти
+## Shared drafts
 
 **Зашто?**
 
@@ -241,7 +241,7 @@ QA процес, уместо додавања интерног чланка. У
 Примена нацрта преиначиће ваше неснимљене измене!
 :::
 
-## Надгледање ескалација тикета
+## Monitoring ticket escalations
 
 **Зашто?**
 
@@ -276,7 +276,7 @@ SLA функција захтева подешавање од стране ва�
 видите датуме ескалације, или тикет није покривен са SLA или функција није
 укључена.
 
-## Масовне радње
+## Bulk actions
 
 **Зашто?**
 
@@ -350,7 +350,7 @@ flyout. The available changes you can apply to tickets are:
 случају да сте одабрали све релевантне.  За укључивање још неког неодабраног
 тикета, започните превлачење изнад њега и биће укључен у масовну радњу.
 
-## Спајање тикета
+## Merge tickets
 
 ![Screenshot shows the ticket merge
 flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
@@ -381,7 +381,7 @@ the bottom.
 - Стање је промењено у „спојено”
 - Тикет је повезан са својим „надређеним” тикетом
 
-## Раздељивање тикета
+## Split tickets
 
 ![Снимак екрана приказује радњу чланка за раздељивање у падајућем
 менију](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
@@ -404,7 +404,7 @@ the bottom.
 Управо отворени тикет ће бити повезан са оригиналним као
 подређени. Оригинални тикет је повезан са раздељеним као надређени.
 
-## Повезивање тикета
+## Link tickets
 
 **Зашто?**
 
@@ -424,7 +424,7 @@ field.  Additionally, you can choose between different link types:
   је задатак. Ова врста везе се подразумевано користи приликом раздељивања
   или спајања тикета.
 
-## Откривање дупликата
+## Duplicate detection
 
 ![Снимак екрана приказује упозорење на дупликат приликом отварања
 тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
@@ -449,7 +449,7 @@ field.  Additionally, you can choose between different link types:
 на линк тикета да видите о чему се ради. У случају да није дупликат,
 једноставно игноришите упозорење и наставите са отварањем тикета.
 
-## Обрачун времена
+## Time accounting
 
 **Зашто?**
 
@@ -487,7 +487,7 @@ field.  Additionally, you can choose between different link types:
 ![Снимак екрана приказује приказ обрачуна
 времена](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## Панел са детаљима корисника
+## User detail panel
 
 **Зашто?**
 
@@ -507,7 +507,7 @@ field.  Additionally, you can choose between different link types:
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
 
-## Страница са детаљима корисника
+## User detail page
 
 ![Снимак екрана који приказује страницу са детаљима
 корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
@@ -531,7 +531,7 @@ view). This opens a new tab with the customer detail page. In case you also
 have admin permissions, you can even create a deletion job for a user from
 the ::a:: menu.
 
-## Organization Detail Page
+## Organization detail page
 
 ![Screenshot shows organization detail
 page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
@@ -554,7 +554,7 @@ page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organizatio
 детаљног приказа тикета поред аватар сличице корисника). Ово ће отворити
 нови прозор са страницом са детаљима организације.
 
-## Екстерни проблеми и средства
+## External issues and assets
 
 **Зашто?**
 
@@ -575,7 +575,7 @@ a select field (i-doit). Afterwards, you can see the linked item with
 additional metadata. By clicking on the linked item, you are redirected to
 it in the respective system.
 
-## Highlight Text
+## Highlight text
 
 **Зашто?**
 

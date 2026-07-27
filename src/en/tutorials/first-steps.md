@@ -1,9 +1,9 @@
 ---
-title: First Steps in Zammad
+title: First steps in Zammad
 order: 4
 ---
 
-# First Steps in Zammad
+# First steps in Zammad
 
 Congratulations, it seems you successfully installed Zammad. To start with your
 fresh installed Zammad, head over to the next section. Alternatively, you
@@ -12,12 +12,12 @@ have other options:
 - [Migrate from another supported ticketing system](/en/tutorials/migrate)
 - [Restore Zammad from an existing backup](/en/tutorials/backup-restore)
 
-## Getting Started Wizard
+## Getting started wizard
 
 If you visit Zammad's web page the first time, you'll be greeted by its Getting
 Started Wizard. It will guide you through the first most important things.
 
-### Step 1: Create Your First Administrator Account
+### Step 1: Create your first administrator account
 
 Fill in the required information in the dialog. Your email address and password
 are important. These are your credentials to log in.
@@ -28,20 +28,20 @@ Zammad applies the following password policy by default:
 - At least 2 UPPER and 2 lower characters
 - One or more digits
 
-### Step 2: Provide Company Information
+### Step 2: Provide company information
 
 You can upload a custom logo of your company here. The instance address is
 detected automatically and only requires adjustment in case it is detected
 wrong. If you skip it, you can adjust these things later too.
 
-### Step 3: Email Notification Channel
+### Step 3: Email notification channel
 
 By default, Zammad uses sendmail. This can be changed to SMTP here.
 
 Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP setups
 might fail - you can skip this step with choosing sendmail and adjust it later!
 
-### Step 4: Your First Email Channel <Badge type="info" text="optional" />
+### Step 4: Your first email channel <Badge type="info" text="optional" />
 
 If you want to start right away, you can connect your email account already.
 
@@ -54,7 +54,7 @@ for now.
 After finishing the wizard you are automatically logged in to the just
 created account.
 
-## Next Steps
+## Next steps
 
 The list below might help you to find the right way. However, you should
 adapt it to your needs. You can find additional information across this

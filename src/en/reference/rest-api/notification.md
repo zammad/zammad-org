@@ -3,7 +3,7 @@ title: Notification
 order: 10
 ---
 
-# Online Notification
+# Online notification
 
 ::: info
 The availability of notification highly depends on the users
@@ -74,7 +74,7 @@ Required permission: `any`
 
 :::
 
-## Mark All as Read
+## Mark all as read
 
 Required permission: `any`
 

@@ -22,9 +22,9 @@ versione stabile (5.1)`
 Questa pagina descrive come aggiornare solo Zammad. Se desideri aggiornare anche il sistema operativo host, consulta le istruzioni per [Aggiornamento host e migrazione repository](host-upgrade-repo-migration).
 :::
 
-## Aggiorna installazione tramite pacchetto
+## Update package installation
 
-### Controlla le dipendenze
+### Check dependencies
 
 Prima di procedere, verifica che il tuo ambiente di sistema corrisponda ai
 requisiti di Zammad (vedi [Prerequisiti](installation/prerequisites) e
@@ -161,7 +161,7 @@ sudo dnf upgrade
 
 :::
 
-### Passaggi aggiuntivi
+### Additional steps
 
 Potrebbe essere rilevante anche l'aggiornamento di Elasticsearch. Assicurati
 di avere installata una versione supportata di Elasticsearch (vedi
@@ -173,7 +173,7 @@ Se devi aggiornare Elasticsearch, consulta la [loro
 documentazione](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
 e segui le istruzioni.
 
-### Ricostruisci l'indice Elasticsearch <Badge type="tip" text="opzionale" />
+### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
 
 Necessario solo se le note di rilascio ti dicono di ricostruire l'indice
 Elasticsearch.
@@ -196,7 +196,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 sudo systemctl start zammad
 ```
 
-## Aggiorna installazione Docker
+## Update Docker installation
 
 ::: warning
 Docker Compose stack updates may require extra steps or introduce breaking
@@ -210,7 +210,7 @@ If you want to update Zammad to a specific version, use the `VERSION` environmen
 with further explanation) and specify the version number.
 :::
 
-### Aggiornare installazioni basate su Portainer
+### Updating Portainer based installations
 
 Nel tuo stack Zammad, fai clic su `Pull and redeploy`, attiva **Re-pull
 image and redeploy**.
@@ -218,7 +218,7 @@ image and redeploy**.
 ![Aggiornamento dello stack evidenziato in
 Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
-### Aggiornare installazioni basate su Docker Compose
+### Updating Docker Compose based installations
 
 ```sh
 cd zammad-docker-compose
@@ -236,7 +236,7 @@ docker compose pull
 docker compose up -d
 ```
 
-### Ricostruisci l'indice Elasticsearch <Badge type="tip" text="opzionale" />
+### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
 
 Necessario solo se le note di rilascio ti dicono di ricostruire l'indice
 Elasticsearch.

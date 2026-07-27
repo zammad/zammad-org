@@ -22,9 +22,9 @@ This page describes how to update Zammad only. In case you want to update your h
 at [Host Upgrade and Repository Migration](host-upgrade-repo-migration) instructions.
 :::
 
-## Update Package Installation
+## Update package installation
 
-### Check Dependencies
+### Check dependencies
 
 Before proceeding, double-check that your system environment matches Zammad's
 requirements (see [Prerequisites](installation/prerequisites) and
@@ -164,7 +164,7 @@ sudo dnf upgrade
 
 :::
 
-### Additional Steps
+### Additional steps
 
 Updating Elasticsearch may be relevant, too. Make sure to have a supported
 version of Elasticsearch installed
@@ -175,7 +175,7 @@ If you have to update Elasticsearch, please have a look at
 [their documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
 and follow the instructions.
 
-### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
+### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
 
 Only needed if the release note tells you to rebuild the Elasticsearch index.
 
@@ -197,7 +197,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 sudo systemctl start zammad
 ```
 
-## Update Docker Installation
+## Update Docker installation
 
 ::: warning
 Docker Compose stack updates may require extra steps or introduce breaking
@@ -211,14 +211,14 @@ If you want to update Zammad to a specific version, use the `VERSION` environmen
 with further explanation) and specify the version number.
 :::
 
-### Updating Portainer Based Installations
+### Updating Portainer based installations
 
 In your Zammad stack, click on `Pull and redeploy`, activate
 **Re-pull image and redeploy** and click on `Update`.
 
 ![Highlighted stack update in Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
-### Updating Docker Compose Based Installations
+### Updating Docker Compose based installations
 
 ```sh
 cd zammad-docker-compose
@@ -236,7 +236,7 @@ docker compose pull
 docker compose up -d
 ```
 
-### Rebuild Elasticsearch Index <Badge type="tip" text="optional" />
+### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
 
 Only needed if the release note tells you to rebuild the Elasticsearch index.
 

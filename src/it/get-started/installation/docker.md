@@ -3,7 +3,7 @@ order: 3
 title: Docker
 ---
 
-# Installazione Docker
+# Docker installation
 
 Zammad può essere distribuito usando Docker Compose. Puoi anche usare
 interfacce grafiche Docker come [Portainer](https://www.portainer.io/).
@@ -32,7 +32,7 @@ Docker. Consigliamo
 installazione, consultare la [documentazione di
 Portainer](https://docs.portainer.io/){target=_blank}.
 
-### Passo 1: Aggiungi stack
+### Step 1: Add stack
 
 Nell'interfaccia di Portainer (ad esempio `https://yourdomain.tld:9443`),
 scegli il tuo ambiente di destinazione, seleziona **Stacks**.
@@ -40,7 +40,7 @@ scegli il tuo ambiente di destinazione, seleziona **Stacks**.
 ![Screenshot nella sezione Stack e evidenziata "Aggiungi
 stack".](/screenshots/get-started/installation/portainer-stacks.png)
 
-### Passo 2: Build da repository
+### Step 2: Build from repository
 
 Passa al metodo di build **Repository** e fornisci le informazioni seguenti:
 
@@ -58,7 +58,7 @@ maggiori informazioni.
 ![Creazione dello stack con le informazioni fornite nella schermata
 Repository](/screenshots/get-started/installation/portainer-stack-creation.png)
 
-### Passo 3: Distribuisci lo stack
+### Step 3: Deploy the stack
 
 Infine, fai clic sul pulsante `Deploy the stack`. La prima volta, potrebbe
 volerci del tempo per scaricare le immagini Docker.
@@ -68,7 +68,7 @@ l'host e la porta Docker configurati, ad esempio `http://localhost:8080/`.
 
 ## Distribuzione con Docker Compose
 
-### Passo 1: Clona il repository GitHub
+### Step 1: Clone the GitHub repo
 
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
@@ -78,7 +78,7 @@ Assicurati di eseguire `git pull` frequentemente per scaricare gli
 aggiornamenti. In alternativa, puoi scaricare i file dalla [pagina delle
 release](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
 
-### Passo 2: Regola l'ambiente secondo necessità
+### Step 2: Adjust environment as needed
 
 Nel caso in cui l'ambiente predefinito non sia quello che stai cercando,
 puoi personalizzare lo stack utilizzando scenari predefiniti e regolando le
@@ -86,7 +86,7 @@ variabili d'ambiente. Vai alla [sezione di
 personalizzazione](#personalizzare-lo-stack-Zammad) qui sotto per trovare
 maggiori informazioni.
 
-### Passo 3: Avvia lo stack
+### Step 3: Start the stack
 
 ```sh
 cd zammad-docker-compose
@@ -103,7 +103,7 @@ predefinito. Per ulteriori informazioni, consultare la sezione
 Una volta che lo stack è pronto, è possibile accedere a Zammad tramite
 l'host e la porta Docker configurati, ad esempio `http://localhost:8080/`.
 
-## Esporre lo stack tramite HTTPS
+## Exposing the stack via HTTPS
 
 Per pubblicare uno stack Zammad su Internet, è necessario proteggerlo
 tramite il protocollo HTTPS. Per farlo senza modificare lo stack Zammad, è
@@ -117,7 +117,7 @@ possibile:
 Entrambi gli scenari sono descritti nella pagina separata [Scenari di Docker
 Compose](/it/reference/docker-compose-scenarios).
 
-## Personalizzare lo stack Zammad
+## Customizing the Zammad stack
 
 Lo stack Zammad può essere personalizzato caricando file di scenario
 aggiuntivi per casi d'uso comuni.
@@ -128,7 +128,7 @@ Compose](/it/reference/docker-compose-scenarios).
 Per regolare lo stack e le impostazioni, utilizzare le [variabili d'ambiente
 specifiche di Docker](/it/reference/environment-variables).
 
-## Come eseguire comandi nello stack
+## How to run commands in the stack
 
 Esegui comandi nel tuo stack Docker chiamando `rails` o `rake` tramite uno
 dei seguenti metodi.

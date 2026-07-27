@@ -1,9 +1,9 @@
 ---
-title: Connect and Configure Elasticsearch
+title: Connect and configure Elasticsearch
 order: 2
 ---
 
-# Connect and Configure Elasticsearch
+# Connect and configure Elasticsearch
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
@@ -19,7 +19,7 @@ Set the Elasticsearch server address; adapt it to your scenario.
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch User and Password
+### Set the Elasticsearch user and password
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
@@ -32,9 +32,9 @@ password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elas
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add Certificate to Zammad
+### Add certificate to Zammad
 
-#### Add it via Rails Console
+#### Add it via rails console
 
 In case you are installing a new Zammad and didn't run through the getting started wizard already, add the certificate
 via console:
@@ -56,7 +56,7 @@ sudo cat /etc/elasticsearch/certs/http_ca.crt
 To add it in Zammad, either upload the certificate file or paste the content in the dialog. Make sure to copy/paste the
 delimiters (e.g. `-----BEGIN CERTIFICATE-----`) too.
 
-### Build/Rebuild the Searchindex
+### Build/rebuild the searchindex
 
 Without specifying CPU cores to use:
 
@@ -70,13 +70,13 @@ With specifying CPU cores to use (example 8):
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-## Optional Settings
+## Optional settings
 
 We collected some useful settings you may want to apply. For further
 information please have a look at
 [Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
-### Index Namespacing
+### Index namespacing
 
 Useful when connecting multiple services or Zammad instances to a single
 Elasticsearch server (to prevent name collisions during indexing).
@@ -85,7 +85,7 @@ Elasticsearch server (to prevent name collisions during indexing).
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
 
-### File-Attachment Indexing Rules
+### File-attachment indexing rules
 
 Zammad supports searching in file attachments, which means Elasticsearch
 has to index those, too. Limiting such indexing can help preserve system
@@ -123,7 +123,7 @@ or can't find your particular issue described here, feel free to
 assistance.
 :::
 
-### Data Missing From the Web-UI / Search Data Missing or Incomplete
+### Data missing from the web-UI / search data missing or incomplete
 
 A commonly reported issue is data missing from the Web-UI. This could be
 tickets, articles, users or anything else
@@ -134,7 +134,7 @@ If you are experiencing this issue and installed Elasticsearch according
 to our [installation guide](/en/tutorials/install-elasticsearch), please follow
 these steps to make sure Elasticsearch is working correctly.
 
-#### Step 1: Verify Elasticsearch is Running
+#### Step 1: Verify Elasticsearch is running
 
 ```sh
 sudo systemctl status elasticsearch
@@ -163,7 +163,7 @@ Try completely purging and reinstalling Elasticsearch according to
 our [installation guide](/en/tutorials/install-elasticsearch).
 :::
 
-#### Step 2: Verify Zammad can Access Elasticsearch and Rebuild the Indexes
+#### Step 2: Verify Zammad can access Elasticsearch and rebuild the indexes
 
 Force Zammad to drop and rebuild the Elasticsearch indexes, optionally
 with a specified number of CPU cores to use for re-indexing (example `[8]`):

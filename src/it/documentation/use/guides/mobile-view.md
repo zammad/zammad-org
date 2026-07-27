@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Usa la visualizzazione mobile'
+title: 'Use mobile view'
 ---
 
-# Usa la visualizzazione mobile
+# Use mobile view
 
 ## Introduzione
 
@@ -90,7 +90,7 @@ migliorare la concentrazione sulle informazioni importanti:
 - Registro chiamate
 - Chat in tempo reale
 
-## Cambia visualizzazione
+## Switch the views
 
 Zammad implementa un rilevamento del dispositivo mobile, che risulta in un
 reindirizzamento automatico alla visualizzazione mobile. Anche con questo

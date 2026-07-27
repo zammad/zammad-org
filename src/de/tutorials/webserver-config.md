@@ -2,7 +2,7 @@
 order: 3
 ---
 
-# Webserver-Konfiguration
+# Webserver configuration
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
@@ -30,13 +30,13 @@ Variablen `NGINX_*` und `ZAMMAD_RAILSSERVER_*`, die Sie auf der Seite der
 [Umgebungsvariablen](/de/reference/environment-variables) finden können.
 :::
 
-## Beziehen Sie ein SSL-Zertifikat
+## Obtain an SSL certificate
 
 Zammad erfordert in HTTPS in einer produktiven Umgebung. Nutzen Sie eine der
 unten aufgeführten Optionen, um ein Zertifikat zu beziehen, bevor Sie mit
 der Konfiguration des Webservers fortfahren.
 
-### Kommerzielle Zertifizierungsstelle
+### Commercial certificate authority
 
 Erwerben Sie ein Jahreszertifikat bei einer beliebigen vertrauenswürdigen
 öffentlichen Zertifizierungsstelle (kurz CA, *Certificate Authority*). Zu
@@ -110,7 +110,7 @@ Weitere Anwendungsbeispiele finden Sie in der
 
 :::
 
-## Anpassen der Webserver-Konfiguration
+## Adjust the webserver configuration
 
 <!-- markdownlint-disable MD036 -->
 
@@ -298,7 +298,7 @@ nicht angezeigt wird, lesen Sie bitte den Abschnitt
 
 ## Fehlerbehebung
 
-### Standard Landing-Page anstelle von Zammad
+### Default landing page instead of Zammad
 
 Falls Sie statt Zammad die Standard-Startseite des Webservers sehen, wird
 Ihre `zammad.conf` Datei möglicherweise durch eine andere
@@ -306,7 +306,7 @@ Konfigurationsdatei überschrieben. Überprüfen Sie das vhust-Verzeichnis auf
 die Dateien `000-default.conf` oder `default.conf` und deaktivieren Sie
 diese.
 
-### DNS-Auflösung fehlgeschlagen
+### DNS not resolving
 
 Sollte die Subdomain nicht aufgelöst werden, überprüfen Sie bitte noch
 einmal die DNS-Einträge Ihrer Domain und warten Sie, bis diese übernommen
@@ -318,7 +318,7 @@ den richtigen Server verweist:
 host zammad.example.com
 ```
 
-### Fehler CSRF-Token
+### CSRF token errors
 
 Falls sich Benutzer aufgrund von CSRF-Token-Fehlern nicht anmelden können,
 gibt Ihre Webserver-Kette den ursprünglichen Verbindungstyp möglicherweise

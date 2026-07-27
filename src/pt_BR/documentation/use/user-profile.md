@@ -1,16 +1,16 @@
 ---
 order: 7
-title: 'Perfil do usuário'
+title: 'User profile'
 ---
 
-# Perfil do usuário
+# User profile
 
 Ajuste sua conta e configurações pessoais no seu perfil de usuário. Algumas
 das opções podem não estar disponíveis, dependendo de como seu sistema está
 configurado e de suas permissões. Abra-o pelo menu do avatar na barra
 lateral. Continue lendo para mais detalhes.
 
-## Menu do avatar
+## Avatar menu
 
 Para abrir o menu do avatar, clique no ícone do seu avatar no canto inferior
 esquerdo na barra lateral. Esse ícone mostra suas iniciais ou uma foto de
@@ -33,7 +33,7 @@ O menu contém as seguintes entradas:
   ajustar seu avatar, senha, configurações de notificação e muito mais; veja
   a próxima seção.
 
-## Configurações de perfil
+## Profile settings
 
 ![Captura de tela mostra as configurações de perfil do
 usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
@@ -67,7 +67,7 @@ enviar uma ou usar sua câmera, se tiver uma.
 Depois de capturar ou enviar uma imagem, você pode recortá-la. Dê uma olhada
 na pré-visualização no topo do painel flutuante à direita.
 
-### Fora do escritório
+### Out of office
 
 Defina períodos de ausência (por exemplo, para suas férias) e designe um
 substituto para lidar com seus tickets enquanto você estiver fora.
@@ -82,7 +82,7 @@ seus tickets. Você também recebe notificações enquanto estiver ausente.
 Altere a senha da sua conta. Para atualizá-la, informe sua senha antiga, a
 nova senha e confirme a nova digitando-a novamente.
 
-### Autenticação de dois fatores
+### Two-factor authentication
 
 Configure uma autenticação de dois fatores (2FA) para aumentar a segurança
 da sua conta. Seu administrador precisa ter ativado pelo menos um método de
@@ -101,7 +101,7 @@ do Zammad. Se necessário, você pode revogar o acesso clicando no ícone de
 exclusão na coluna "Actions". Isso encerra a sessão nesse dispositivo e
 exige um novo login nele.
 
-### Acesso por token
+### Token access
 
 Gere um token de acesso pessoal para que um aplicativo de terceiros acesse a
 API do Zammad. Depois de clicar no botão `New Personal Access Token`, você

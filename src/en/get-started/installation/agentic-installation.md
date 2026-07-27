@@ -1,9 +1,9 @@
 ---
-title: Agentic Installation
+title: Agentic installation
 order: 5
 ---
 
-# Agentic Installation
+# Agentic installation
 
 ::: danger
 Be aware that the setup steps for AI agents don't cover security, network and configuration topics (e.g. SSL
@@ -31,7 +31,7 @@ Instructions:
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
 ```
 
-## Installation via Package Manager
+## Installation via package manager
 
 This file covers an installation via package manager, including Elasticsearch.
 

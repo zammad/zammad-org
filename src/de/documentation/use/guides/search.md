@@ -18,7 +18,7 @@ Zammad-Instanz ist, können Sie auf unterschiedliche Weise suchen. Lesen Sie
 weiter, um mehr über die Grundlagen der Suche zu erfahren, gefolgt von der
 Erweiterten Suche und der Verwendung von Elasticsearch-Syntax.
 
-## Einfache Suche
+## Basic search
 
 The search is located in the top left corner of the primary
 navigation. Either select it via mouse or use the keyboard shortcut
@@ -38,7 +38,7 @@ können Sie Ihre Suche eingrenzen, indem Sie einen bestimmten Objekttyp
 (z.B. Organisation) auswählen, erweiterte Filter verwenden oder sogar die
 Elasticsearch-Syntax nutzen. Lesen Sie weiter für weitere Informationen.
 
-## Erweiterte Suche
+## Detailed search
 
 Manchmal liefert Ihnen ein einfacher Suchbegriff nicht die gewünschten
 Ergebnisse. Zammad bietet Ihnen auf der Seite Erweiterte Suche verschiedene
@@ -47,14 +47,14 @@ Möglichkeiten, die Suche einzugrenzen.
 ![Screenshot zeigt die Erweiterte
 Suche](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Sortierung der Ergebnisse
+### Sort the results
 
 Um die Ergebnisse nach den Werten einer Spalte zu sortieren, klicken Sie auf
 eine Spaltenüberschrift. Die Sortierung wird durch einen Pfeil
 angezeigt. Klicken Sie erneut auf die Spalte, um die Sortierung von
 aufsteigend zu absteigend und zurück zu ändern.
 
-### Suche auf Objekttyp beschränken
+### Limit search to object type
 
 Schränken Sie die Suche auf einen Objekttyp ein, indem Sie den Tab-Selektor
 **Suchobjekt** unterhalb des Suchfeldes verwenden (z.B. Benutzer oder
@@ -63,7 +63,7 @@ verbundenen Daten beschränkt. Wenn Sie z.B. **Ticket** wählen, gibt die
 Suche auch Tickets aus, bei denen der Besitzer oder Kunde mit dem
 Suchbegriff übereinstimmt.
 
-### Erweiterte Filter verwenden
+### Use advanced filters
 <!--Screenshot skipped for now. Will be added after more attributes are available-->
 Im Vergleich zum Suchfeld können Sie die Suchergebnisse auf der Grundlage bestimmter Attribute und deren Werten filtern.
 Klicken Sie dazu auf die Schaltfläche `Erweiterte Filter` auf der rechten Seite, die einen Bereich für zusätzliche
@@ -85,7 +85,7 @@ Wenn Sie immer noch nicht gefunden haben, was Sie suchen, können Sie von der
 Elasticsearch-gestützten Suche profitieren.  Im nächsten Abschnitt finden
 Sie einige Beispiele.
 
-## Elasticsearch-Syntax verwenden
+## Using Elasticsearch syntax
 
 Dieses Thema hat einen eigenen Abschnitt, da es sich um ein
 fortgeschrittenes Thema für erfahrene Benutzer handelt. Mit der
@@ -96,7 +96,7 @@ oder gehen Sie auf die Seite [Elasticsearch indizierte
 Attribute](/de/reference/es-indexed-attributes), wo Sie eine Liste mit
 weiteren Attributen finden können.
 
-### Wichtige Informationen
+### Important information
 
 - Vergewissern Sie sich, dass Sie das relevante Objekt in der Tab-Auswahl
   **Suchobjekt** auswählen. Zum Beispiel ist `customer.lastname` für Tickets
@@ -108,7 +108,7 @@ weiteren Attributen finden können.
 - Wenn Sie Werte mit einem Leerzeichen angeben möchten, umschließen Sie
   diese mit `"`, z.B. `priority.name: "2 normal"`.
 
-### Logische Operatoren und Bereiche
+### Logic operators and ranges
 
 Sie können Bedingungen kombinieren, indem Sie `AND` & `OR` als logische
 Operatoren verwenden. Verwenden Sie `TO`, um Bereiche für Werte mit einer
@@ -137,7 +137,7 @@ state.name:open AND article_count: [5 TO *]
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Unscharfe Suche
+### Fuzzy search
 
 Wenn Sie sich über die genaue Schreibweise eines Wertes nicht sicher sind,
 verwenden Sie die Tilde (`~`) als Suffix, um eine unscharfe (*fuzzy*) Suche
@@ -147,7 +147,7 @@ durchzuführen.
 owner.firstname:lawren~
 ```
 
-### Suche negieren
+### Negating search
 
 Wenn Sie bestimmte Werte ausschließen möchten, können Sie die Negation `!`
 verwenden. Um mehr als einen Bereich zu negieren, verwenden Sie Klammern für

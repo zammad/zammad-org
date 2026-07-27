@@ -14,7 +14,7 @@ ersten Blick sichtbar sind.
 ![Screenshot zeigt Zammads
 Editor](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
 
-## Spezialfunktionen
+## Special functions
 
 Der Editor von Zammad enthält einige intelligente Funktionen. Sie finden
 diese auf der linken Seite der Symbolleiste des Editors. Da sie bereits an
@@ -27,7 +27,7 @@ Inhalt zu vermeiden.
 - [Knowledge Base-Artikel
   einfügen](../advanced-features#knowledge-base-artikel-einfugen)
 
-## Einfügen komplexer Inhalte
+## Pasting complex content
 
 Beim Einfügen von Inhalten aus anderen Quellen, insbesondere von Dokumenten,
 die Tabellen, komplexe Formatierungen oder Bilder enthalten, ist zu
@@ -46,7 +46,7 @@ entweder mit oder ohne Leerzeilen als Absätze dargestellt. Wenn Sie eine
 zusätzliche Leerzeile einfügen, kann dies auf der Client-Seite als zwei
 Leerzeilen dargestellt werden.
 
-## Text zitieren
+## Cite text
 
 Möglicherweise möchten Sie einen Text Ihres Kunden zitieren, um Ihre Antwort
 genau darauf zu beziehen, und damit Ihre Kunden langen Konversationen nicht
@@ -58,7 +58,7 @@ zusätzlich eingefügt. Das bedeutet, dass Sie diesen Vorgang wiederholen
 können, um verschiedene Abschnitte zu zitieren, ohne dass Ihr geschriebener
 Text verloren geht.
 
-## Formatierung anwenden
+## Apply formatting
 
 Sie können den Text im Editor auf verschiedene Arten formatieren:
 
@@ -75,7 +75,7 @@ nächsten beiden Abschnitte). Aktivieren Sie die Formatierung entweder im
 Voraus oder markieren Sie den Text nach dem Schreiben und verwenden Sie die
 Formatierung, die Sie anwenden möchten.
 
-### Allgemeine Tastaturkürzel
+### General keyboard shortcuts
 
 Der Editor unterstützt auch Tastaturkürzel, um Ihren Arbeitsablauf zu
 optimieren. Diese Tastenkombinationen sind bei vielen
@@ -97,7 +97,7 @@ Formatierungsoptionen per Tastatur finden können. Unabhängig davon, ob Sie
 es gewohnt sind, Markdown zu schreiben oder nicht, könnten einige davon für
 Ihre tägliche Arbeit hilfreich sein.
 
-### Markdown-Verwendung
+### Markdown usage
 
 Für Benutzer, die mit der Markdown-Syntax vertraut sind, bietet der Editor
 grundlegende Markdown-Formatierungsoptionen. Wenn Sie die Markdown-Syntax

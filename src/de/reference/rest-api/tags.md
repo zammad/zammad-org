@@ -5,7 +5,7 @@ title: Tags
 
 # Tags
 
-## Ticket-Bezug
+## Ticket scope
 
 ### Auflisten
 
@@ -66,9 +66,9 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `admin.tag`
 :::
 ::::
 
-## Admin-Bezug
+## Administration scope
 
-### Verwaltung - Auflisten
+### Admin - list
 
 Erforderliche Berechtigung: `admin.tag`
 
@@ -80,7 +80,7 @@ Erforderliche Berechtigung: `admin.tag`
 
 :::
 
-### Verwaltung - Erstellen
+### Admin - create
 
 Erforderliche Berechtigung: `admin.tag`
 
@@ -101,7 +101,7 @@ Erforderliche Berechtigung: `admin.tag`
 :::
 ::::
 
-### Verwaltung - Umbenennen
+### Admin - rename
 
 Erforderliche Berechtigung: `admin.tag`
 
@@ -122,7 +122,7 @@ Erforderliche Berechtigung: `admin.tag`
 :::
 ::::
 
-### Verwaltung - Löschen
+### Admin - delete
 
 Erforderliche Berechtigung: `admin.tag`
 

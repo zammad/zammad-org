@@ -5,19 +5,19 @@ features:
     icon: 🧪
     link: https://zammad.com/en/getting-started
     target: _blank
-    title: 'Free Trial'
+    title: 'Free trial'
   - 
     details: 'Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
     target: _blank
-    title: 'Zammad Hosted Services'
+    title: 'Zammad hosted services'
   - 
     details: 'You can even self-host Zammad. Find installation instructions here.'
     icon: 🖥️
     link: /en/get-started/installation/prerequisites
-    title: 'Self Hosting'
+    title: 'Self hosting'
 order: 1
 ---
 
@@ -40,13 +40,13 @@ trial instance](https://zammad.com/en/getting-started){target=_blank}.  You
 can play around and then you can switch to an official supported instance,
 either keeping your data or start with an empty system.
 
-## Користите Zammad-ов хостинг сервис
+## Use Zammad's hosted service
 
 Да бисте користили Zammad у продукцији, идите на наш званичан сајт
 [zammad.com](https://zammad.com/en/pricing){target=_blank} где можете
 пронаћи ценовних нашег хостинг сервиса.
 
-## Инсталација у сопственој режији
+## Self hosted installation
 
 Zammad можете чак и сами да хостујете. Погледајте наше [упутство за
 инсталацију](/sr/get-started/installation/prerequisites) и који начин

@@ -1,9 +1,9 @@
 ---
 order: 3
-title: Secure Email
+title: Secure email
 ---
 
-# Secure Email
+# Secure email
 
 Zammad supports two systems for secure email communication:
 
@@ -27,7 +27,7 @@ errors.
 
 ![Screenshot showing outgoing email which just gets signed and not encrypted](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Signing & Encryption
+## Signing & encryption
 
 Signing
 : Signing is a proof that a message has not been manipulated on its way. It guarantees message **integrity** and
@@ -37,14 +37,14 @@ Encryption
 : Encryption scrambles a message so that it can only be unscrambled by the intended recipient. It guarantees message
   **privacy** and **data security**.
 
-## Incoming Email
+## Incoming email
 
 The lock and check icons at the top of a message indicate its encryption and signing status. Click on an incoming
 message article to expand its details. In the details, you can hover over the security status to see more information.
 
 ![Screenshot showing Encrypted and Signed status icons on an incoming email article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Status Icons for Incoming Emails
+### Status icons for incoming emails
 
 | Icon | Meaning |
 |---|---|
@@ -53,7 +53,7 @@ message article to expand its details. In the details, you can hover over the se
 | ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |
 | ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |
 
-## Outgoing Email
+## Outgoing email
 
 Use the `Encrypt` and `Sign` buttons to turn on encryption and signing for outgoing emails. They are available for
 new tickets and replies. Hover over the buttons to show details.
@@ -64,7 +64,7 @@ new tickets and replies. Hover over the buttons to show details.
 Outgoing emails can only be encrypted for a single recipient.
 :::
 
-### Status Icons for Outgoing Emails
+### Status icons for outgoing emails
 
 | Icon | Meaning |
 |---|---|
@@ -104,7 +104,7 @@ Ask your administrator to add the recipient's certificate to Zammad's certificat
 
 Ask your administrator to verify your organization's private key in Zammad's certificate store.
 
-### Multiple Security Types configured
+### Multiple security types configured
 
 You might see both `PGP` and `S/MIME` buttons. This happens when both systems
 are configured in your system and a customer is using both as well. In this

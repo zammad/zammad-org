@@ -1,15 +1,15 @@
 ---
-title: Redis Variables
+title: Redis variables
 order: 9
 ---
 
-# Redis Variables
+# Redis variables
 
 Zammad requires Redis to work. During package installation, it is installed automatically unless there is a Redis
 installation on the host already. In the Docker Compose stack, there is a Redis Service included. Both scenarios work
 out of the box and should not require adjustments unless your setup differs or you want to explicitly make adjustments.
 
-## Standard Setup
+## Standard setup
 
 For a Redis standard deployment, you can provide one variable: `REDIS_URL`. This variable can include IP/URL, a port,
 a username and password. Examples:
@@ -17,7 +17,7 @@ a username and password. Examples:
 - `redis://redis.example.com:1234`
 - `redis://user:password@redis.example.com`
 
-## Sentinel Setup
+## Sentinel setup
 
 The variables in the table don't have default values set. In case you want to connect Zammad to a Redis Sentinel
 cluster, only `REDIS_SENTINELS` variable is mandatory, the others are optional.

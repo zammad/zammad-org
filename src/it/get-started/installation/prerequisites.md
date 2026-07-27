@@ -7,7 +7,7 @@ title: Prerequisiti
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Hardware server
+## Server hardware
 
 I requisiti hardware variano a seconda dello scenario. Questo rende
 difficile fornire un'indicazione generale.
@@ -24,7 +24,7 @@ potrebbe essere:
 - 6 core CPU
 - 6 GB di RAM (+6 GB per Elasticsearch)
 
-## Software server
+## Server software
 
 A seconda del tipo di installazione, ci sono alcuni prerequisiti. Sono
 inclusi nelle pagine seguenti:
@@ -33,7 +33,7 @@ inclusi nelle pagine seguenti:
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Requisiti client
+## Client requirements
 
 ### Browser
 

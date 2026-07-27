@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Funzionalità AI'
+title: 'AI features'
 ---
 
-# Funzionalità AI
+# AI features
 
 ## Introduzione
 
@@ -16,7 +16,7 @@ Le funzionalità AI devono essere configurate e attivate dal tuo amministratore.
 Ulteriori informazioni su come configurarle e attivarle sono disponibili nella sezione amministratore.
 :::
 
-## Riepilogo del Ticket
+## Ticket summary
 
 La funzionalità di riepilogo ticket fa esattamente quello che dice:
 riepiloga il contenuto del ticket. Questo può far risparmiare molto tempo
@@ -39,7 +39,7 @@ include le seguenti sezioni:
 - Prossimi eventi (opzionale)
 - Sentiment del cliente (opzionale)
 
-## Strumenti dell'assistente di scrittura
+## Writing assistant tools
 
 Gli strumenti dell'assistente di scrittura basati sull'AI sono progettati
 per semplificare e migliorare il flusso di lavoro delle risposte ai ticket
@@ -79,7 +79,7 @@ cui il tuo amministratore li abbia aggiunti.
   parti non necessarie e riscrive il tuo testo in modo chiaro e
   comprensibile.
 
-## Agenti AI
+## AI agents
 
 Gli agenti AI possono essere configurati per lavorare su certi tipi di
 attività di routine. In generale, questa funzionalità opera in background,
@@ -100,7 +100,7 @@ Zammad. Esempio di una voce della cronologia di un agente AI:
 ![Screenshot che mostra la voce della cronologia ticket dell'agente
 AI](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Rilevamento del lavoro simultaneo
+### Simultaneous work detection
 
 Gli agenti AI che stanno attualmente lavorando su un ticket vengono
 visualizzati come altri agenti nella sezione utenti live nella barra
@@ -113,7 +113,7 @@ Avatar dell'agente AI:
 ![Screenshot che mostra l'avatar di un agente
 AI](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Indicatore panoramica
+### Overview indicator
 
 Un agente AI in esecuzione è indicato nella colonna dello stato nelle
 panoramiche. Il cerchio dello stato cambia in un cerchio con gradiente

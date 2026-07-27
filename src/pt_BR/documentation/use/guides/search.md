@@ -18,7 +18,7 @@ instância do Zammad, você pode pesquisar de diferentes formas. Continue
 lendo para conhecer os fundamentos de pesquisa, seguidos pela pesquisa
 detalhada e o uso da sintaxe do Elasticsearch.
 
-## Pesquisa básica
+## Basic search
 
 A pesquisa está localizada no canto superior esquerdo da navegação
 principal. Selecione-a com o mouse ou use o atalho de teclado [[s]]. Depois
@@ -38,7 +38,7 @@ restringir sua pesquisa selecionando um tipo de objeto específico (por
 exemplo, organização), usar filtros avançados ou até usar a sintaxe do
 Elasticsearch. Continue lendo para mais informações.
 
-## Pesquisa detalhada
+## Detailed search
 
 Às vezes, um termo de pesquisa simples pode não fornecer os resultados que
 você está procurando. O Zammad oferece diferentes opções para restringir a
@@ -47,14 +47,14 @@ pesquisa na página de pesquisa detalhada.
 ![Captura de tela mostra a pesquisa
 detalhada](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Ordenar os resultados
+### Sort the results
 
 Para ordenar os resultados com base nos valores da coluna, clique em um
 cabeçalho de coluna. A ordenação é indicada por uma seta. Clique na coluna
 novamente para alternar a ordenação de crescente para decrescente e
 vice-versa.
 
-### Limitar a pesquisa a um tipo de objeto
+### Limit search to object type
 
 Limite a pesquisa a um tipo de objeto usando o seletor de abas **Search
 entity** abaixo do campo de pesquisa (por exemplo, usuário ou ticket). Isso
@@ -63,7 +63,7 @@ relacionados. Por exemplo, ao selecionar **Ticket**, a pesquisa também
 retorna tickets onde o responsável ou cliente corresponde ao termo de
 pesquisa.
 
-### Usar filtros avançados
+### Use advanced filters
 <!--Screenshot skipped for now. Will be added after more attributes are available-->
 Em comparação com o campo de pesquisa, você pode filtrar os resultados da pesquisa com base em atributos específicos e seus valores.
 Para isso, clique no botão `Advanced filters` no lado direito, que abre uma área onde você pode especificar condições
@@ -85,7 +85,7 @@ Se você ainda não encontrou o que procura, pode se beneficiar do fato de a
 pesquisa ser alimentada pelo Elasticsearch. Você pode encontrar alguns
 exemplos na próxima seção.
 
-## Usando a sintaxe do Elasticsearch
+## Using Elasticsearch syntax
 
 Este tópico tem sua própria seção porque é um tópico avançado para usuários
 avançados. Usando a sintaxe do Elasticsearch, você pode filtrar exatamente
@@ -95,7 +95,7 @@ de como usá-lo, ou acesse a [página de atributos indexados pelo
 Elasticsearch](/pt_BR/reference/es-indexed-attributes), onde você encontra
 uma lista com atributos adicionais.
 
-### Informações importantes
+### Important information
 
 - Certifique-se de selecionar o objeto relevante no seletor **Search
   entity**. Por exemplo, `customer.lastname` está disponível para tickets,
@@ -108,7 +108,7 @@ uma lista com atributos adicionais.
 - Para fornecer valores contendo um espaço, envolva-os em `"`, por exemplo,
   `priority.name:"2 normal"`.
 
-### Operadores lógicos e intervalos
+### Logic operators and ranges
 
 Você pode combinar condições usando `AND` e `OR` como operadores
 lógicos. Use `TO` para especificar intervalos para valores com uma ordem
@@ -136,7 +136,7 @@ state.name:open AND article_count: [5 TO *]
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Pesquisa aproximada (fuzzy)
+### Fuzzy search
 
 Se você não tem certeza sobre a grafia exata de um valor, use o til (`~`)
 como sufixo para realizar uma pesquisa aproximada.
@@ -145,7 +145,7 @@ como sufixo para realizar uma pesquisa aproximada.
 owner.firstname:lawren~
 ```
 
-### Negando pesquisa
+### Negating search
 
 Se você quiser excluir valores especificados, pode usar a negação `!`. Para
 negar mais de um termo, use parênteses para todos eles.

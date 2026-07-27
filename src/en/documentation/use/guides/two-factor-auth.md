@@ -1,9 +1,9 @@
 ---
 order: 9
-title: Two-Factor Authentication
+title: Two-factor authentication
 ---
 
-# Two-Factor Authentication
+# Two-factor authentication
 
 Two-factor authentication (2FA) enhances the security of your Zammad account by adding an extra layer of verification
 beyond a password. It requires you to provide two different types of authentication factors, typically something you
@@ -28,7 +28,7 @@ In a modal dialog, you will be asked to confirm your current password.
 Depending on the chosen two-factor method, you will be guided through the setup process, which includes specific steps.
 Continue with using an [Authentication App](#authentication-app) or a [Security Key](#security-key).
 
-### Authentication App
+### Authentication app
 
 The authenticator app method is a type of two-factor authentication that uses a mobile application to generate one-time
 codes for account verification. After setting up the authenticator app on your device, you will link it to your Zammad
@@ -56,7 +56,7 @@ displayed next to it together with a timer.
 Back in Zammad, enter the provided code to the **Security Code** field and click on **Set Up**. Go on either by setting
 up another 2FA method ([security key](#security-key)) or check how to [log in with 2FA](#sign-in).
 
-### Security Key
+### Security key
 
 The security keys method is a type of a two-factor authentication that uses Web Authentication API in the browser for
 verifying your identity. You may register multiple hardware or software security keys with your Zammad account and then
@@ -116,7 +116,7 @@ You can use a single recovery code only once! In case you exhaust the list of yo
 you regenerate them for your account.
 :::
 
-## Generate Recovery Codes
+## Generate recovery codes
 
 Recovery codes are one-time use security codes that can be used to sign in if you lose access to your other two-factor
 authentication methods. They can only be used as a **backup method**.
@@ -133,7 +133,7 @@ You also have an option to regenerate your recovery codes at any time, which inv
 codes and provides you with a list of fresh codes. You can do this by clicking on `Regenerate recovery codes` button
 in your profile's 2FA settings.
 
-## Set a Default 2FA Method
+## Set a default 2FA method
 
 To set an already set up two-factor method as default, use the ::a:: actions menu next to it in your profile's 2FA
 settings and choose **Set as default**.
@@ -146,7 +146,7 @@ method name.
 A default two-factor authentication method is just your preferred method during the sign-in process. You will always
 have an option to try signing in using another method.
 
-## Edit a 2FA Method
+## Edit a 2FA method
 
 ![Screenshot shows the action menu for an already set up 2FA method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
 
@@ -157,7 +157,7 @@ Depending on the chosen two-factor method, you will be guided again through the 
 method will simply renew it and replace the older setup, but some methods do support advanced functions (e.g. adding
 multiple security keys).
 
-## Remove a 2FA Method
+## Remove a 2FA method
 
 To remove an already set up two-factor method, use the ::a:: actions menu next to it and choose **Remove**. In a modal
 dialog, you will be asked to confirm the removal with your current password.

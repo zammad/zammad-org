@@ -77,7 +77,7 @@ Required permission: `admin.object`
 :::
 ::::
 
-### Date Time
+### Date time
 
 :::: details
 
@@ -158,7 +158,7 @@ data. E.g.: email demands an email address to be provided.
 ::::
 :::::
 
-### Tree Select
+### Tree select
 
 :::: details
 
@@ -255,7 +255,7 @@ Required permission: `admin.object`
 
 :::
 
-## Execute Database Migrations
+## Execute database migrations
 
 Required permission: `admin.object`
 

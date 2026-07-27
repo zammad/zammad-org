@@ -1,9 +1,9 @@
 ---
-title: Proxy and Connections
+title: Proxy and connections
 order: 10
 ---
 
-# Proxy and Connections
+# Proxy and connections
 
 ## Proxy
 
@@ -64,7 +64,7 @@ export http_proxy=$HTTP_PROXY
 
 :::
 
-## External Connections
+## External connections
 
 During installation and operation of Zammad, some connections to online services are required. Depending on your
 installation method and Zammad configuration, a connection to the following services is made (maybe also helpful for

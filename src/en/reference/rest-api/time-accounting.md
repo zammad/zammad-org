@@ -1,9 +1,9 @@
 ---
-title: Time Accounting
+title: Time accounting
 order: 20
 ---
 
-# Time Accounting
+# Time accounting
 
 ## List
 

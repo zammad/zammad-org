@@ -75,18 +75,18 @@ Clearbit
   enriched with information such as company, number of employees,
   annual turnover, industry and much more.
 
-Conflict Warning
+Conflict warning
 : When two agents edit the same ticket at the same time, a lot can go wrong -
   from duplicate replies to overwritten messages. Zammad helps you to avoid
   this with its integrated conflict warning. So if you see another agent's
   avatar and a little pen at the bottom of your ticket, it means the other agent
   is currently editing it.
 
-Content Sidebar
+Content sidebar
 : Right sidebar in the ticket view which includes the sidebar tabs and the
   active sidebar (if opened).
 
-Core Workflows
+Core workflows
 : This feature allows you to configure dynamic fields and ticket masks based on
   attribute available in Zammad. For example you can disable or hide fields,
   make them visible based on other fields or attributes, make them mandatory and
@@ -98,7 +98,7 @@ CTI
   This includes, for example, a call log, an overview of which agent is
   currently on a call, a caller ID search, and even a Do-Not-Disturb-Mode.
 
-Custom Development (CD)
+Custom development (CD)
 : We are constantly working on improving Zammad, and we keep adding new
   features with every single release. However, sometimes our customers might
   require a very specific new feature, addition, or adjustment that is either
@@ -142,13 +142,13 @@ Escalation
   can configure it within Zammad's SLA (Service Level Agreement) feature. An
   escalated ticket is marked red in your taskbar and the overviews.
 
-Exchange Integration
+Exchange integration
 : The Exchange integration allows you to sync your contacts from your
   Exchange address book to Zammad. Every time a contact is updated
   in Exchange, it will be reflected in Zammad. This gives you direct
   access to all your contacts in your Zammad.
 
-External Authentication
+External authentication
 : External authentication is an easy, one-click option for your users to log
   into Zammad. It has various benefits: not only is it faster but it also
   means that your users will have to remember fewer passwords.
@@ -160,14 +160,14 @@ Feature
   you such as our integrations, productivity tools or additional channels.
   We keep adding new features with every release.
 
-Feature Request
+Feature request
 : You can let us know if you are missing a particular feature in Zammad.
   We collect all of your wishes in our community forum in the
   [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
   If a request comes in regularly and we think that it would be a
   great addition, we'll put it on our roadmap and start working on it.
 
-Feature Sponsoring
+Feature sponsoring
 : If an organization urgently requires one of the features on the list,
   they can fast-forward the development and put it on top of the list by
   sponsoring it, which means that they cover the costs for the development.
@@ -225,7 +225,7 @@ i-doit
   you can link to existing i-doit objects for easy reference.
   It also allows you to create Zammad tickets in i-doit.
 
-Issue-Tracking System
+Issue-tracking system
 : Issue trackers are usually systems that track processes on a technical level.
   Two of the best-known examples are GitHub and GitLab.
 
@@ -241,7 +241,7 @@ Kibana <Badge type="info" text="on-premise only" />
   Kibana can be integrated with Zammad, allowing for helpdesk data to be
   mapped in the reporting tool.
 
-Knowledge Base
+Knowledge base
 : Think of a very extensive set of FAQs - that's exactly what the
   Zammad knowledge base is. It collects all important information:
   definitions, processes, how-tos, organizational charts, etc.
@@ -265,12 +265,12 @@ Macro
   You can define your own macros and perform actions based on all available
   attributes in the ticket.
 
-Main Content
+Main content
 : The middle section of the Zammad layout. Depending on the view you have
   selected, it shows the dashboard, overviews, the ticket detail view, the
   create-ticket form or other screens.
 
-Main Content Footer
+Main content footer
 : The action row at the bottom of the Main Content area. It holds the primary
   actions of the currently active view, such as `Create`, `Apply Template` or
   `Discard Changes` on the create-ticket form.
@@ -280,7 +280,7 @@ Mentions
   ticket. Just type [[@]][[@]] and the name. The selected person will be notified
   and will be watching the ticket from now on.
 
-Migrator / Migration Wizard
+Migrator / migration wizard
 : If a company wants to switch from another helpdesk software to Zammad,
   they often have one concern: What about their existing data?
   That's why we have built our migration wizards that help with migrating all
@@ -291,7 +291,7 @@ Monit
   a strong community. You can integrate it with Zammad - this way,
   a ticket is created every time you receive an email in Monit.
 
-Navigation Tab : One element of the primary navigation like **Overviews** or
+Navigation tab : One element of the primary navigation like **Overviews** or
 **Knowledge Base**.
 
 Nagios
@@ -316,7 +316,7 @@ Owner
   In this case, it is recommended to leave a handover note in the ticket so
   that the new owner knows what to do.
 
-Parent/Child Relationship
+Parent/child relationship
 : If one ticket results in other subtasks (or additional correspondences),
   you can split it into several tickets. The main one will then be the parent
   ticket and the tickets with related subtopics are children.
@@ -333,7 +333,7 @@ Placetel
   Callers are identified directly by their caller ID - a key function that
   saves agents a lot of time when assigning callers.
 
-Primary Navigation
+Primary navigation
 : The primary navigation is the left sidebar in Zammad which contains the
   taskbar, the search, notifications, knowledge base and eventually more,
   depending on your system.
@@ -368,7 +368,7 @@ Role
 
   You can even add new roles to your Zammad.
 
-Secondary Navigation
+Secondary navigation
 : Refers to an additional menu next to the navigation (e.g. when opening profile
   settings).
 
@@ -376,7 +376,7 @@ Flyout
 : The panel that slides in from the right side of the screen for actions such
   as linking or merging tickets and bulk actions.
 
-Sidebar Tab
+Sidebar tab
 : In the content sidebar, there are different tabs like "Customer",
   "Organization" and "Ticket", depending on your system and ticket. These are
   called sidebar tabs.
@@ -422,7 +422,7 @@ Taskbar
 : The section of the primary navigation which contains the taskbar tabs for
   your opened tickets, users, organizations and the detailed search.
 
-Taskbar Tab
+Taskbar tab
 : A single tab in the taskbar. Clicking the tab brings the corresponding
   ticket, user, organization or search into the main content area.
 
@@ -437,7 +437,7 @@ Tags
   Tags can be queried in conditions in an automation and assigned
   automatically, for example depending on keywords in the ticket title.
 
-Text Module
+Text module
 : If you find that you send the same answers over and over again,
   you can save yourself a lot of work and create a text module.
   This way, you just need to type the [[:]][[:]] shortcut in an article and all
@@ -448,7 +448,7 @@ Text Module
   For example, here at Zammad, we have a text module with the shortcut
   `::ilff`, which turns into `I look forward to your feedback`.
 
-(Ticket) Template
+(Ticket) template
 : If you create many similar tickets, you can create a template for them. This
   is helpful for introductions to your product/service or for drawing up an
   offer.

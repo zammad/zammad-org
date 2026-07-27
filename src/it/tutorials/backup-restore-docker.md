@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Backup e ripristino (Docker)'
+title: 'Backup & restore (Docker)'
 ---
 
-# Backup e ripristino (Docker)
+# Backup & restore (Docker)
 
 Questa sezione mostra alcune nozioni di base sul processo di backup e
 ripristino per una distribuzione Docker Compose.

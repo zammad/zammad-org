@@ -3,11 +3,11 @@ order: 1
 title: Start
 features:
   - icon: 🙋
-    title: Zammad Beginner
+    title: Zammad beginner
     details: If you are new to Zammad and ticketing software in general, first read the basics here.
     link: /en/documentation/use/basics/zammad-ui
   - icon: 🧑‍✈️
-    title: Advanced User
+    title: Advanced user
     details: If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar.
     link: /en/documentation/use/advanced-features
   - icon: 🧑‍🔧

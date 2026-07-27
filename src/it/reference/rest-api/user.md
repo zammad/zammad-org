@@ -10,7 +10,7 @@ Tieni presente che gli esempi seguenti sono stati forniti con i permessi `admin`
 `ticket.agent`.
 :::
 
-## Io - Utente corrente
+## Me - current user
 
 Permesso richiesto: qualsiasi
 
@@ -121,7 +121,7 @@ Tieni presente che rimuovere utenti non può essere annullato. Zammad.
 Tecnicamente, puoi eliminare utenti tramite `/api/v1/users/{id}`. Tuttavia,
 raccomandiamo vivamente.
 
-### Tramite endpoint privacy dati
+### Via data privacy endpoint
 
 Permesso richiesto: `admin.data_privacy`
 
@@ -142,7 +142,7 @@ Richiesta `POST` inviata: `/api/v1/data_privacy_task`
 :::
 ::::
 
-### Tramite endpoint utente <Badge type="danger" text="non consigliato" />
+### Via user endpoint <Badge type="danger" text="not recommended" />
 
 Permesso richiesto: `admin.user`
 

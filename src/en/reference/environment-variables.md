@@ -1,9 +1,9 @@
 ---
-title: Environment Variables
+title: Environment variables
 order: 3
 ---
 
-# Environment Variables
+# Environment variables
 
 Find the most important environment variables below with default values (as <Badge type="tip" text="badge" />), if
 applicable. The variables for Docker and package based installations can be different in some cases. You can find
@@ -218,7 +218,7 @@ brackets (e.g. `[2001:db8::2]`).
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
 : Port of Zammad's WebSocket server.
 
-## Performance Tuning
+## Performance tuning
 
 Each of below settings comes with its own tradeoffs. There are no recommended values here; the optimal configuration
 depends on your system's resources and typical application load.
@@ -260,7 +260,7 @@ Below settings may consume all available database connections. Please consider t
 : Threads used by **one** delayed jobs worker process (if you have more than one worker process, it is multiplied by
   their amount). The maximum number of threads is `16`.
 
-## HTTP Client Settings
+## HTTP client settings
 
 Global HTTP timeout settings. These variables control the default timeout behavior for Zammad's internal HTTP client
 when connecting to external services (e.g. OAuth providers, webhooks, or integrations).
@@ -278,7 +278,7 @@ when connecting to external services (e.g. OAuth providers, webhooks, or integra
   response read. This is an additional hard ceiling on top of `ZAMMAD_HTTP_OPEN_TIMEOUT` and
   `ZAMMAD_HTTP_READ_TIMEOUT`.
 
-## How to Set Environment Variables
+## How to set environment variables
 
 It depends on how you installed Zammad (package, Docker). Either set it via `zammad config` command as you can see
 below, use your system's way of setting variables via command line (e.g. `export VARIABLE=value)`, place an `.env` file

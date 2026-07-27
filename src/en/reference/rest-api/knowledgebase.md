@@ -1,15 +1,15 @@
 ---
 order: 7
-title: Knowledge Base
+title: Knowledge base
 ---
 
-# Knowledge Base
+# Knowledge base
 
 Zammad has multiple knowledge base related endpoints. The most important - but not all - are covered in this
 documentation. You can find the general ones about the knowledge base itself below, followed by the sub-endpoints
 for [answers](#answers) and [categories](#categories).
 
-## Knowledge Base General
+## Knowledge base general
 
 ::: info
 The request and response examples include the knowledge base ID `1`. Your ID may be different, for example if you
@@ -40,7 +40,7 @@ Required permission: `knowledge_base.reader` or `knowledge_base.editor`
 
 :::
 
-### Change Settings
+### Change settings
 
 Required permission: `knowledge_base.editor`
 
@@ -61,7 +61,7 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-### Show Permissions
+### Show permissions
 
 Required permission: `knowledge_base.editor`
 
@@ -73,7 +73,7 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Change Permissions
+### Change permissions
 
 Required permission: `knowledge_base.editor`
 
@@ -96,7 +96,7 @@ Required permission: `knowledge_base.editor`
 
 ## Categories
 
-### Reorder Sub-Categories
+### Reorder sub-categories
 
 Required permission: `knowledge_base.editor`
 
@@ -117,7 +117,7 @@ Required permission: `knowledge_base.editor`
 :::
 ::::
 
-### Reorder Root Categories
+### Reorder root categories
 
 ::: info
 You have to provide the order of all top level categories, i.e.
@@ -209,7 +209,7 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Show Permissions
+### Show permissions
 
 Required permission: `knowledge_base.editor`
 
@@ -221,7 +221,7 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Change Permissions
+### Change permissions
 
 Required permission: `knowledge_base.editor`
 
@@ -244,7 +244,7 @@ Required permission: `knowledge_base.editor`
 
 ## Answers
 
-### Reorder Answers
+### Reorder answers
 
 Required permission: `knowledge_base.editor`
 
@@ -336,7 +336,7 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Manage Publication Status
+### Manage publication status
 
 Required permission: `knowledge_base.editor`
 
@@ -372,7 +372,7 @@ Responses are omitted here. You can expect to get a response like for showing an
 :::
 ::::
 
-### Manage Attachments
+### Manage attachments
 
 Required permission: `knowledge_base.editor`
 

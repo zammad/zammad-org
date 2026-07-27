@@ -36,7 +36,7 @@ fornire accesso a.
 
 Zammad supporta tre diversi metodi di autenticazione per la sua API.
 
-### Autenticazione HTTP di base (nome utente/password)
+### HTTP basic authentication (username/password)
 
 Il nome utente / password deve essere fornito come intestazione HTTP nella
 chiamata HTTP. Questa autenticazione.
@@ -50,7 +50,7 @@ Sconsigliamo vivamente di usare l'autenticazione di base. Usa i token
 di accesso ogni volta che possibile.
 :::
 
-### Autenticazione token HTTP (token di accesso)
+### HTTP token authentication (access token)
 
 Il token di accesso deve essere fornito come intestazione HTTP nella
 chiamata HTTP. Ogni utente può creare.
@@ -68,7 +68,7 @@ chiamate. Questo permette ad applicazioni di terze parti.
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoint e dati di esempio
+## Endpoints and example data
 
 Per semplicità non forniremo comandi specifici nelle pagine successive, ma
 diremo invece.
@@ -76,12 +76,12 @@ diremo invece.
 Il formato della risposta sarà una risposta JSON completa da un'istanza
 Zammad predefinita.
 
-## Tipo di contenuto
+## Content type
 
 Zammad restituisce payload JSON ogni volta che recuperi dati. Se intendi
 fornire dati,.
 
-## Payload di risposta (espandi)
+## Response payloads (expand)
 
 Zammad restituisce sempre informazioni inclusi suggerimenti a tutte le
 relazioni. Se hai bisogno di maggiori informazioni.
@@ -141,7 +141,7 @@ Per usare la paginazione avrai bisogno di due opzioni get: `per_page` e
 
 ## Ricerca tramite API
 
-### Ricerca endpoint
+### Endpoint search
 
 Alcuni endpoint supportano una query di ricerca. Questi sono:
 
@@ -161,7 +161,7 @@ esplicitamente trattati.
 - Modelli
 - Modulo di testo
 
-#### Esempio di ricerca
+#### Search example
 
 Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome`
 
@@ -169,7 +169,7 @@ Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome`
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Parametro Expand
+#### Expand parameter
 
 Se vuoi avere informazioni correlate aggiuntive, puoi usare il parametro
 `expand`. Usa.
@@ -180,7 +180,7 @@ Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome&expand=true`
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Parametro Full
+#### Full parameter
 
 Puoi anche estendere la risposta usando il parametro `full`. Tieni presente
 che questa risposta.
@@ -191,7 +191,7 @@ Richiesta `GET` inviata: `/api/v1/tickets/search?query=welcome&full=true`
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### Con parametro conteggio totale
+#### With total count parameter
 
 Usando questo parametro verrà anche emessa la quantità di risultati di
 ricerca. Può essere combinato.
@@ -203,7 +203,7 @@ Richiesta `GET` inviata:
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Solo parametro conteggio totale
+#### Only total count parameter
 
 Usando questo parametro `only_total_count` verrà emessa solo la quantità di
 risultati di ricerca.
@@ -215,7 +215,7 @@ Richiesta `GET` inviata:
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Ricerca globale
+### Global search
 
 Se hai bisogno di cercare non solo in un tipo di oggetto specifico, puoi
 farlo usando la ricerca globale.
@@ -226,7 +226,7 @@ Richiesta `GET` inviata: `/api/v1/search?query=welcome`
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Ricerca basata su condizioni
+### Condition based search
 
 Puoi anche usare condizioni come per trigger e scheduler per cercare tramite
 API. Se non.
@@ -256,7 +256,7 @@ Questo porta a un output come il seguente:
 Usa questo come payload nella tua richiesta `POST` in una ricerca
 endpoint. La risposta include.
 
-## Ordinamento risultati di ricerca
+## Sorting search results
 
 Zammad ti permette di ordinare i tuoi risultati di ricerca per campo se
 necessario.
@@ -278,7 +278,7 @@ Solitamente vorrai combinare entrambi i parametri nelle tue ricerche -
 ad esempio: `?query={search st
 :::
 
-## Azioni per conto di altri utenti
+## Actions on behalf of other users
 
 **Requisito:** l'utente usato per eseguire la query per conto richiede
 il permesso `admin.user`.

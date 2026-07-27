@@ -17,7 +17,7 @@ Diretor administrativo: Martin Edenhofer \ Registro Comercial de
 Charlottenburg, Nº HRB 163946 B \ Sede: Berlim (Mitte) \ Número de
 identificação fiscal: DE298516802
 
-## Código-fonte
+## Source code
 
 O proprietário do código-fonte (incluindo o zammad.org) é:
 

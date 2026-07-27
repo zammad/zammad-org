@@ -1,15 +1,15 @@
 ---
-title: User Profile
+title: User profile
 order: 7
 ---
 
-# User Profile
+# User profile
 
 Adjust your account and personal settings in your user profile. Some of the options may not be available,
 depending on how your system is configured and your permissions. Open it from the avatar menu in the sidebar. Read on
 for more details.
 
-## Avatar Menu
+## Avatar menu
 
 To open the avatar menu, click on your avatar icon in the bottom left corner in the sidebar. This icon either shows
 your initials or a profile picture.
@@ -26,7 +26,7 @@ The menu contains the following entries:
 - **Profile settings**: opens your profile settings where you can adjust your avatar, password, notification settings
   and much more, see next section.
 
-## Profile Settings
+## Profile settings
 
 ![Screenshot shows user profile settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
@@ -56,7 +56,7 @@ add an image, simply upload one or use your camera, if you have one.
 
 After capturing or uploading an image, you can crop it. Have a look at the preview at the top of the right flyout.
 
-### Out of Office
+### Out of office
 
 Define absence periods (e.g. for your vacation) and designate a substitute to handle your tickets while you are away.
 
@@ -69,7 +69,7 @@ notifications while you are absent, too.
 Change the password of your account. To update it, provide your old password, the new password and confirm the new one
 by typing it again.
 
-### Two-Factor Authentication
+### Two-factor authentication
 
 Set up a two-factor authentication (2FA) to increase the security of your account. Your admin must have activated at
 least one 2FA method. It may be even enforced to use a 2FA method by your admin.
@@ -83,7 +83,7 @@ Here you can find a list of all devices logged into your Zammad account. If nece
 clicking the delete icon in the "Actions" column. This ends the session on this device and requires a new login on
 this device.
 
-### Token Access
+### Token access
 
 Generate a personal access token for a third party application to access the Zammad API. After clicking the
 `New Personal Access Token` button, you can set a name, an expiration date and configure the permissions for this token.

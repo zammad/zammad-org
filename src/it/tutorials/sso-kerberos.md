@@ -1,14 +1,14 @@
 ---
 order: 13
-title: 'Single Sign-On con Kerberos'
+title: 'Single sign-on with Kerberos'
 ---
 
-# Single Sign-On per Kerberos <Badge type="warning" text="solo on-premise"/>
+# Single sign-on for Kerberos <Badge type="warning" text="on-premise only"/>
 
 Questa guida tratterà come configurare il single sign-on usando Microsoft
 Active Directory.
 
-## Panoramica concettuale
+## Conceptual overview
 
 Come ogni altra applicazione web, Zammad ha la propria logica per la
 registrazione degli utenti.
@@ -21,7 +21,7 @@ Se non hai questa infrastruttura IT ma vuoi comunque l'accesso con un
 clic, puoi usare metodi alternativi.
 :::
 
-## Come funziona?
+## How does it work?
 
 Una volta abilitato, il single sign-on attiva un endpoint su
 `https://your.zammad.host/auth/sso`.
@@ -62,7 +62,7 @@ Avrai bisogno di:
 Per risultati ottimali, configura l'integrazione LDAP per assicurarti
 che il tuo Active Directory e Zammad.
 
-## Passo 1: Configura Active Directory
+## Step 1: Configure active directory
 
 Nello schema di autenticazione Kerberos, il **server di autenticazione**
 (Active Directory) deve.
@@ -79,7 +79,7 @@ richiesti privilegi amministrativi.
 ![Screenshot impostazioni account di servizio Active
 Directory](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Reimposta password
+### 1b. Reset password
 
 Reimposta la password dell'account di servizio dopo aver abilitato l'opzione
 "Questo account supporta Kerberos AES 256.
@@ -122,7 +122,7 @@ Sull'ultima riga, prendi nota di:
 - la chiave segreta tra parentesi alla fine (**0x5ee827...**)
 - il numero di versione della chiave segreta preceduto da `vno` (**3**)
 
-## Passo 2: Rimuovi NGINX, configura Apache + Kerberos
+## Step 2: Remove NGINX, set up Apache + Kerberos
 
 Successivamente, l'host Zammad deve essere configurato per supportare
 Kerberos (e accettare credenziali di autenticazione.
@@ -134,7 +134,7 @@ modulo aggiuntivo per abilitare.
 Tutti i comandi in questa sezione devono essere eseguiti come root (o con `sudo`).
 :::
 
-### 2a. Disattiva NGINX
+### 2a. Turn off NGINX
 
 ::: warning
 Questo metterà la tua istanza Zammad **offline** finché Apache non è completamente
@@ -174,13 +174,13 @@ su
 
 :::
 
-### 2b. Pre-configura Apache
+### 2b. Pre-configure Apache
 
 Questa documentazione presuppone una configurazione Apache già
 funzionante. Prima di continuare, si consiglia di consultare la [guida alla
 configurazione del server web](/en/tutorials/webserver-config).
 
-### 2c. Installa ulteriori dipendenze Apache
+### 2c. Install further Apache dependencies
 
 ::: tabs
 
@@ -195,7 +195,7 @@ sudo apt install krb5-user libapach
 
 :::
 
-### 2d. Abilita i moduli Apache
+### 2d. Enable Apache modules
 
 SSO richiede moduli non abilitati per impostazione predefinita. Per
 impostazione predefinita puoi usare `a2enmod` per.
@@ -258,7 +258,7 @@ Sostituisci i seguenti segnaposto nella configurazione di esempio sotto:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Genera Keytab
+### 2f. Generate keytab
 
 Apache ha bisogno di un _keytab_ Kerberos (tabella chiavi) per gestire i
 suoi segreti condivisi con il dominio.
@@ -342,7 +342,7 @@ Sostituisci i seguenti segnaposto nel comando seguente:
 
 :::
 
-### 2g. Riavvia Apache per applicare le modifiche
+### 2g. Restart Apache to apply changes
 
 ```sh
 sudo systemctl restart apache2
@@ -358,7 +358,7 @@ Nelle versioni più vecchie di Zammad, visita `https://your.zammad.host/auth/sso
 per accedere.
 :::
 
-## Passo 4: Configura il sistema client (solo Windows)
+## Step 4: Configure client system (Windows only)
 
 Per l'esperienza SSO completa (ovvero per l'accesso con un clic senza
 password), gli utenti Zammad devono:
@@ -400,7 +400,7 @@ browser anziché in Windows.
 - Gli orologi di sistema dei tuoi server Active Directory e Zammad sono
   sincronizzati entro cinque.
 
-### Errori nei log Apache
+### Errors in Apache logs
 
 ::: tip
 **Prova a innalzare temporaneamente il livello di log di Apache.**
@@ -425,7 +425,7 @@ quando hai generato.
 
 Prova a generarlo di nuovo, solo per essere sicuro.
 
-#### Errore GSS non specificato. Il codice minore potrebbe fornire più informazioni (, Nessuna voce nella tabella chiavi trovata
+#### Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)
 
 Il **nome del servizio** che hai fornito a `setspn` corrisponde esattamente a quello
 che hai usato quando hai generato.
@@ -439,7 +439,7 @@ corrisponde esattamente al **nome del servizio.
 
 Questa impostazione fa distinzione tra maiuscole e minuscole.
 
-#### Avviso: il token ricevuto sembra essere NTLM, che non è supportato dal modulo Kerberos.
+#### Warning: Received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
 
 Il tuo host Zammad è accessibile tramite un FQDN? Questo errore potrebbe
 indicare che hai configurato il tuo.

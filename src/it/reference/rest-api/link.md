@@ -1,9 +1,9 @@
 ---
 order: 8
-title: 'Collegamento ticket'
+title: 'Linking tickets'
 ---
 
-# Collegamento ticket
+# Linking tickets
 
 ## Ottieni
 

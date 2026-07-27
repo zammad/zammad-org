@@ -1,9 +1,9 @@
 ---
-title: Work with Tickets
+title: Work with tickets
 order: 5
 ---
 
-# Work with Tickets
+# Work with tickets
 
 You found your way into an existing ticket, congratulations! Now let's have a look what you can do and how to do it.
 
@@ -17,12 +17,12 @@ editing an existing one. Simply switch back to the other tab.
 For the most changes (except tags or title renaming, for example), an explicit update of the ticket is needed. So make
 sure to click the `Update` button on the right side of the footer bar when you are happy with your changes.
 
-## Changing Ticket Attributes
+## Changing ticket attributes
 
 As you may know, there are additional ticket attributes such as group, priority and owner that you can set. If you
 haven't read [ticket-basics](/en/documentation/use/basics/ticket-basics) yet, check it out to learn more.
 
-## Create a New Article
+## Create a new article
 
 No matter if you create a new article from scratch or respond to a customer article, you can choose from different
 article types:
@@ -48,7 +48,7 @@ You might wonder now how to delete articles. The answer is you can only delete a
 and which are not older than 10 minutes. To see the **Delete article** function in the ::a:: menu, articles of a
 communication type (emails, calls) must be changed to "internal" visibility first.
 
-### Add an Article from Scratch
+### Add an article from scratch
 
 Click on the `Add internal note` button below the ticket's articles. This opens the editor with activated **Note**
 type and internal visibility. You can change the type or visibility if you like. To answer the customer directly or
@@ -57,7 +57,7 @@ information.
 
 ![Screenshot shows the Add internal note button below the ticket's articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Respond to an Article
+### Respond to an article
 
 To forward or reply to an article, use one of the response buttons under an article or in the ::a:: menu. The behavior
 is similar to the behavior of an email client.
@@ -83,7 +83,7 @@ text.
 If the ticket has a long article history, see [Handling of Large Tickets](#handling-of-large-tickets) for the
 conveniences Zammad provides.
 
-### Handling of Large Tickets
+### Handling of large tickets
 
 When working on tickets with long article histories - like long email threads where you need to refer back to earlier
 messages - Zammad provides two conveniences:
@@ -102,13 +102,13 @@ messages - Zammad provides two conveniences:
 
 ![Screenshot shows the article reply form pinned to the bottom of the ticket detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Rename a Ticket
+## Rename a ticket
 
 To rename a ticket, simply click on the title in the header bar and start typing. This title is used as subject in email
 communication and shows up in several places like overviews. Confirm with [[enter]] or click the button on the right
 side.
 
-## Copy Ticket Number
+## Copy ticket number
 
 To copy the ticket number including a link to the ticket (e.g. to paste it in a third party chat app), use the ::c::
 icon next to the ticket title. It copies the complete ticket number with the ticket identifier to your clipboard, e.g.
@@ -121,7 +121,7 @@ But wait, there is even a keyboard shortcut for that! Simply press [[.]] in the 
 is copied to your clipboard. To include the ticket title as well, press [[.]] twice.
 Example: `Ticket#31004: Onboarding new colleague`.
 
-## Simultaneous Ticket Processing
+## Simultaneous ticket processing
 
 It can happen that two or more agents open a ticket at the same time. To prevent edit conflicts and customers receiving
 contradictory answers, Zammad shows you who is viewing or editing the ticket currently. You can find this information
@@ -139,7 +139,7 @@ icon and if the avatar icon is faded, it means:
 There are even more icons which represent additional states of the other agents (e.g. viewing ticket by mobile UI
 or is out-of-office). Just hover with the mouse if you are unsure what it means.
 
-## Ticket Actions
+## Ticket actions
 
 Additional actions are available in the ::a:: menu in the ticket sidebar.
 
@@ -151,7 +151,7 @@ Merge
 : Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.
   See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.
 
-Change Customer
+Change customer
 : Reassign the ticket to another customer.
 
 -----

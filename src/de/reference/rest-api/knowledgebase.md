@@ -11,7 +11,7 @@ behandelt. Sie finden die allgemeinen Endpunkte zur Knowledge Base selbst
 weiter unten, gefolgt von den Unter-Endpunkten für [Antworten](#antworten)
 und [Kategorien](#kategorien).
 
-## Knowledge Base Allgemein
+## Knowledge base general
 
 ::: info
 Die Beispiele für Anfragen und Antworten enthalten die Knowledge Base ID `1`. Ihre ID kann anders lauten, zum Beispiel wenn Sie
@@ -43,7 +43,7 @@ Erforderliche Berechtigung: `knowledge_base.reader` oder
 
 :::
 
-### Einstellungen ändern
+### Change settings
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -64,7 +64,7 @@ Erforderliche Berechtigung: `knowledge_base.editor`
 :::
 ::::
 
-### Berechtigungen anzeigen
+### Show permissions
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -77,7 +77,7 @@ KB}/permissions`
 
 :::
 
-### Berechtigungen ändern
+### Change permissions
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -101,7 +101,7 @@ KB}/permissions`
 
 ## Kategorien
 
-### Unterkategorien neu ordnen
+### Reorder sub-categories
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -123,7 +123,7 @@ KB}/categories/{ID of category}/reorder_categories`
 :::
 ::::
 
-### Hauptkategorien neu anordnen
+### Reorder root categories
 
 ::: info
 Sie müssen die Reihenfolge aller Kategorien der obersten Ebene angeben, d.h.
@@ -221,7 +221,7 @@ KB}/categories/{ID of category}`
 
 :::
 
-### Berechtigungen anzeigen
+### Show permissions
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -234,7 +234,7 @@ KB}/categories/{ID of category}/permissions`
 
 :::
 
-### Berechtigungen ändern
+### Change permissions
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -258,7 +258,7 @@ KB}/categories/{ID of category}/permissions`
 
 ## Antworten
 
-### Antworten neu anordnen
+### Reorder answers
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -355,7 +355,7 @@ KB}/answers/{ID of answer}`
 
 :::
 
-### Veröffentlichungsstatus verwalten
+### Manage publication status
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 
@@ -391,7 +391,7 @@ Antworten werden hier weggelassen. Sie können eine Antwort erwarten mit einem g
 :::
 ::::
 
-### Anhänge verwalten
+### Manage attachments
 
 Erforderliche Berechtigung: `knowledge_base.editor`
 

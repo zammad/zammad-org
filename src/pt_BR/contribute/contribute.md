@@ -18,7 +18,7 @@ Você pode contribuir com:
 Dê uma olhada nas seções abaixo sobre como contribuir. Todos os repositórios
 podem ser encontrados no [Github](https://github.com/zammad){target=_blank}.
 
-## Código-fonte do Zammad
+## Zammad source code
 
 O código-fonte do Zammad pode ser encontrado no GitHub, no [repositório do
 Zammad](https://github.com/zammad/zammad){target=_blank}. Consulte o [manual
@@ -26,7 +26,7 @@ do
 desenvolvedor](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
 para começar.
 
-### Branches/versões suportadas
+### Supported branches / versions
 
 O repositório do Zammad no Github tem várias branches:
 
@@ -149,7 +149,7 @@ Weblate](/screenshots/contribute/weblate-ui.png)
       traduzida para outros idiomas (pode ser útil para idiomas
       semelhantes).
 
-### Marcação nas strings
+### Markup in strings
 
 Encontre abaixo alguns exemplos de strings de origem especiais, com um selo
 indicando onde essa string pode ser encontrada. Tente manter a marcação

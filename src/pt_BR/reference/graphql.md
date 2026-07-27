@@ -51,7 +51,7 @@ permissões adequadamente.
 Certifique-se de copiá-lo antes de fechar a caixa de diálogo, pois você não
 pode visualizá-lo novamente. Caso algo dê errado, basta criar um novo token.
 
-### Prepare seu cliente
+### Prepare your client
 
 Abra seu cliente de API e configure-o.
 
@@ -74,7 +74,7 @@ usando o Bruno como cliente.
 <video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
 :::
 
-### Criar uma solicitação
+### Create a request
 
 Todas as solicitações e respostas estão em formato JSON. Isso significa que
 todas as informações devem ser encapsuladas em chaves e ter uma estrutura
@@ -179,7 +179,7 @@ de defini-la ao usar os exemplos.
 
 ## Apêndice
 
-### IDs globais
+### Global ids
 
 ::: info
 

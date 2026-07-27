@@ -23,7 +23,7 @@ features:
 order: 2
 ---
 
-# Guia de estilo e conteúdo
+# Style and content guide
 
 Este guia fornece uma visão geral do conteúdo que deve ser incluído na
 documentação do Zammad, além de diretrizes de formatação e estilo para
@@ -38,7 +38,7 @@ contribuição](contribute) ou [perguntar em uma
 issue](https://github.com/zammad/zammad-org/issues){target=_blank} para
 começar.
 
-## Suposições sobre o público
+## Audience assumptions
 
 A documentação presume que os **usuários** têm um entendimento básico de
 como usar navegadores web e estão familiarizados com conceitos comuns de
@@ -78,7 +78,7 @@ estaria em um nível de detalhe quase de código), a relevância também deve
 ser considerada. Se partes com um caso de uso comum estiverem faltando,
 deve-se pretender incluí-las.
 
-## Estilo e regras
+## Style and rules
 
 As próximas seções cobrem coisas gerais a considerar ao escrever a
 documentação. Depois delas, você encontra uma seção com alguns
@@ -98,9 +98,9 @@ documentação. Depois delas, você encontra uma seção com alguns
 ### Estilo
 
 - Use frases curtas e claras e priorize a informação em vez da complexidade.
-- Título da página e cabeçalhos: coloque em maiúscula a primeira letra de
-  todas as palavras, exceto palavras menores (veja [title
-  case](https://en.wikipedia.org/wiki/Title_case){target=_blank}).
+- Use sentence case for page titles and headings. Capitalize the first word
+  and the first letter of any proper noun (e.g. Zammad, Elasticsearch,
+  Docker, GitLab) and acronym (SLA, SSO, API, JSON, etc.).
 - Use separação em trilha de navegação para caminhos e locais com `>` como
   separador e formate o caminho em itálico, por exemplo, _Settings >
   Channels > Chat_.
@@ -180,7 +180,7 @@ Algumas regras importantes e personalizadas são mencionadas abaixo.
 | Action menu               | ::a::                         | `::a::`                         |
 | Copy to clipboard button  | ::c::                         | `::c::`                         |
 
-#### Estrutura de cabeçalhos
+#### Heading structure
 
 Todo arquivo de documentação deve incluir exatamente um título de nível
 superior (como `# Title`). Níveis abaixo devem sempre conter pelo menos duas
@@ -297,26 +297,26 @@ Este é o conteúdo mostrado no estado expandido.
 
 #### Listas de definição
 
-Primeiro termo <Badge type="info" text="tag1" />
-: Esta é a definição do primeiro termo.
+First term <Badge type="info" text="tag1" />
+: This is the definition of the first term.
 
-Segundo termo <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: Esta é uma definição do segundo termo.
-: Esta é outra definição do segundo termo.
+Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: This is one definition of the second term.
+: This is another definition of the second term.
 
 **Uso:**
 
 ::: details
 
 ```md
-Primeiro termo <Badge type="info" text="tag1" />
-: Esta é a definição do primeiro termo
-  com outra linha.
+First term <Badge type="info" text="tag1" />
+: This is the definition of the first term
+  with another line.
 ```
 
 :::
 
-#### Destacando com caixas
+#### Highlighting with boxes
 
 Para destacar diferentes opções ou variantes, caixas clicáveis podem ser
 usadas.
@@ -352,7 +352,7 @@ features:
 Para colocá-lo na área de conteúdo, simplesmente insira a referência `<VPDocFeatures />` no ponto onde ela deve ser
 renderizada.
 
-#### Imagens específicas de tema
+#### Theme specific images
 
 Para direcionar recursos de imagem específicos a um único tema, você pode
 atribuir a classe CSS `.dark-only` ou `.light-only` à imagem correspondente:

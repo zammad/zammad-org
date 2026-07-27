@@ -2,18 +2,18 @@
 order: 1
 features:
   - icon: 🧪
-    title: Free Trial
+    title: Free trial
     details: If you are unsure if Zammad is the right tool, test it by using a free trial instance.
     link: https://zammad.com/en/getting-started
     target: _blank
   - icon:
       src: /assets/logo.svg
-    title: Zammad Hosted Services
+    title: Zammad hosted services
     details: Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!
     link: https://zammad.com
     target: _blank
   - icon: 🖥️
-    title: Self Hosting
+    title: Self hosting
     details: You can even self-host Zammad. Find installation instructions here.
     link: /en/get-started/installation/prerequisites
 ---
@@ -37,13 +37,13 @@ We are sure you like Zammad! The easiest way to test it is to use a
 You can play around and then you can switch to an official supported instance,
 either keeping your data or start with an empty system.
 
-## Use Zammad's Hosted Service
+## Use Zammad's hosted service
 
 To use Zammad in production, head over to our sister
 site [zammad.com](https://zammad.com/en/pricing){target=_blank} where you can
 find prices for Zammad's hosted services.
 
-## Self Hosted Installation
+## Self hosted installation
 
 You can even host Zammad on your own. Read our
 [installation instructions](/en/get-started/installation/prerequisites) and see

@@ -1,9 +1,9 @@
 ---
 order: 99
-title: 'Datenspeicherung und externe Dienste'
+title: 'Data retention and external services'
 ---
 
-# Datenspeicherung und externe Dienste
+# Data retention and external services
 
 Wie lange speichert Zammad Benutzerdaten? Wie kann ich die Speicherung von
 Benutzerdaten verwalten? Zu welchen Diensten verbindet sich Zammad?
@@ -12,7 +12,7 @@ Benutzerdaten verwalten? Zu welchen Diensten verbindet sich Zammad?
 
 Die folgenden Daten werden lokal auf dem Produktivsystem gespeichert:
 
-### Tickets und Benutzer
+### Tickets and users
 
 Standardmäßig löscht Zammad niemals automatisch Tickets oder Benutzer.
 
@@ -66,12 +66,12 @@ Zu den Sitzungsdaten gehören die IP-Adresse (und möglicherweise der
 Standort), der Browser, der Zeitpunkt der ursprünglichen Anmeldung und der
 Zeitpunkt des letzten Besuchs.
 
-### Datenschutzaufgaben
+### Data privacy tasks
 
 Jeder Eintrag in der Liste der Datenschutzaufgaben wird nach 12 Monaten
 automatisch gelöscht.
 
-## Externe Dienste
+## External services
 
 Zammad nutzt für bestimmte Funktionen Webdienste Dritter, was bedeutet
 dass Benutzerdaten gelegentlich an Dritte gesendet oder offengelegt werden können.

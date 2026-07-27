@@ -1,15 +1,15 @@
 ---
 order: 4
-title: 'Funzionalità avanzate'
+title: 'Advanced features'
 ---
 
-# Funzionalità avanzate
+# Advanced features
 
 Questa pagina raccoglie vari strumenti utili che non necessitano di pagine
 separate. Continua a leggere, cerca nella pagina o naviga alla sezione
 desiderata usando il sommario a destra.
 
-## Comportamento all'aggiornamento del ticket
+## Ticket update behavior
 
 ![Screenshot che mostra il comportamento dopo il menu di
 aggiornamento](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
@@ -39,7 +39,7 @@ Se la situazione varia da ticket a ticket, puoi lasciare **Rimani sulla scheda**
 [[shift]] [[c]] per cambiare lo stato del ticket a chiuso e chiudere la scheda del ticket.
 :::
 
-## Moduli di testo
+## Text modules
 
 ![Screenshot che mostra la funzione dei moduli di
 testo](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
@@ -62,7 +62,7 @@ semplicemente [[:]][[:]] nell'editor.
 Puoi selezionarne uno facendo clic su di esso o usando le frecce su e giù
 seguite da [[enter]] sulla tastiera.
 
-## Inserisci articolo dalla base di conoscenza
+## Insert knowledge base article
 
 ![Screenshot che mostra l'inserimento di un articolo dalla base di
 conoscenza](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
@@ -77,7 +77,7 @@ esiste un articolo nella base di conoscenza, questo ti fa risparmiare tempo.
 Usa il pulsante nella barra degli strumenti dell'editor o scrivi
 semplicemente [[?]][[?]] nell'editor.
 
-## Menziona un utente
+## Mention a user
 
 ![Screenshot che mostra la menzione di un
 utente](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
@@ -95,7 +95,7 @@ degli strumenti dell'editor o digita semplicemente [[@]][[@]].
 Zammad visualizza un elenco con tutte le corrispondenze possibili dove puoi
 sceglierne una.
 
-## Iscriviti a un ticket
+## Subscribe to a ticket
 
 ![Screenshot che mostra la funzione di
 iscrizione](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
@@ -187,7 +187,7 @@ Ci sono due funzionalità non direttamente visibili:
 - Zammad verifica automaticamente se tutti gli elementi della checklist sono
   completati.
 
-## Modelli di ticket
+## Ticket templates
 
 **Perché?**
 
@@ -198,7 +198,7 @@ Creare rapidamente un ticket con attributi predefiniti fa risparmiare tempo.
 Nella schermata di creazione ticket, trovi un pulsante `Applica modello ^`
 nella barra inferiore.
 
-## Bozze condivise
+## Shared drafts
 
 **Perché?**
 
@@ -218,7 +218,7 @@ disponibile`.
 L'applicazione di una bozza sovrascrive le modifiche non salvate!
 :::
 
-## Monitoraggio delle escalation dei ticket
+## Monitoring ticket escalations
 
 **Perché?**
 
@@ -251,7 +251,7 @@ I tempi di escalation vengono calcolati in base al tuo orario di lavoro. Ciò si
 La funzionalità SLA richiede una configurazione da parte del tuo
 amministratore.
 
-## Azioni bulk
+## Bulk actions
 
 **Perché?**
 
@@ -321,7 +321,7 @@ sono:
 
 Avvia l'azione drag and drop da uno dei ticket già selezionati.
 
-## Unire i ticket
+## Merge tickets
 
 ![Screenshot shows the ticket merge
 flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
@@ -350,7 +350,7 @@ modifiche:
 - Lo stato è cambiato in "unito"
 - Il ticket è collegato al suo ticket "genitore"
 
-## Dividere i ticket
+## Split tickets
 
 ![Screenshot che mostra il menu azioni per la divisione degli
 articoli](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
@@ -371,7 +371,7 @@ modificare tutto in base alle tue esigenze e poi fare clic su "Crea".
 
 Il ticket appena creato è collegato in quello originale come figlio.
 
-## Collegare i ticket
+## Link tickets
 
 **Perché?**
 
@@ -391,7 +391,7 @@ field.  Additionally, you can choose between different link types:
 - **Genitore/Figlio**: per ticket correlati dove uno è il problema
   principale e l'altro è un'attività secondaria.
 
-## Rilevamento duplicati
+## Duplicate detection
 
 ![Screenshot che mostra l'avviso di ticket duplicato durante la
 creazione](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
@@ -455,7 +455,7 @@ somma totale dei tempi registrati per tutti i tipi di attività.
 ![Screenshot che mostra la panoramica della contabilità del
 tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## Pannello dettagli utente
+## User detail panel
 
 **Perché?**
 
@@ -478,7 +478,7 @@ A proposito, la corona nello screenshot rappresenta lo stato VIP del
 cliente, che può essere impostato nella visualizzazione dettagli cliente e
 nelle impostazioni amministratore.
 
-## Pagina dei dettagli utente
+## User detail page
 
 ![Screenshot che mostra la pagina dei dettagli
 utente](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
@@ -502,7 +502,7 @@ della visualizzazione dettagli ticket). Si apre una nuova scheda con la
 pagina dei dettagli cliente. Se hai anche i permessi di amministratore, puoi
 persino creare un job di eliminazione per un utente dal menu ::a::.
 
-## Pagina dei dettagli organizzazione
+## Organization detail page
 
 ![Screenshot che mostra la pagina dei dettagli
 organizzazione](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
@@ -525,7 +525,7 @@ Fai semplicemente clic su un avatar organizzazione (ad esempio
 nell'intestazione della visualizzazione dettagli ticket accanto all'avatar
 utente). Si apre una nuova scheda con la pagina dei dettagli organizzazione.
 
-## Problemi e risorse esterne
+## External issues and assets
 
 **Perché?**
 
@@ -548,7 +548,7 @@ inserendo il suo URL o seleziona l'elemento da un campo di selezione
 aggiuntivi. Facendo clic sull'elemento collegato, vieni reindirizzato ad
 esso nel rispettivo sistema.
 
-## Evidenzia testo
+## Highlight text
 
 **Perché?**
 

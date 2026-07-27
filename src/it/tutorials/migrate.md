@@ -19,7 +19,7 @@ Dopodiché, potresti voler continuare con i [Primi
 Passi](/en/tutorials/first-steps) per configurare Zammad. Questo deve essere
 fatto dopo la migrazione.
 
-## Limitazioni generali
+## General limitations
 
 Ci sono alcune limitazioni generali che trovi di seguito. Potrebbero esserci
 anche limitazioni.
@@ -34,7 +34,7 @@ Limitazioni generali per tutte le migrazioni:
 - Zammad migra tutto o niente. Ciò significa che non puoi deselezionare
   informazioni specifiche.
 
-## Guide di migrazione specifiche
+## Specific migration guides
 
 ::: info
 
@@ -167,7 +167,7 @@ pp ImportJob.find_by(name: 'Impo
 :::
 ::::
 
-#### Dopo la migrazione
+#### After migration
 
 Esegui i seguenti comandi:
 
@@ -314,7 +314,7 @@ pp ImportJob.find_by(name: 'Impo
 :::
 ::::
 
-#### Dopo la migrazione
+#### After migration
 
 Esegui i seguenti comandi:
 
@@ -379,7 +379,7 @@ In alcuni casi riavviare il tuo server web può aiutare a risolvere errori inter
 server.
 :::
 
-### Regolazioni timeout
+### Timeout adjustments
 
 Se la tua importazione va in timeout o sai già che questo potrebbe essere un
 problema, puoi.
@@ -446,7 +446,7 @@ Import::OTRS.diff_worker
 
 :::
 
-#### Dopo la migrazione
+#### After migration
 
 Esegui i seguenti comandi:
 
@@ -582,7 +582,7 @@ pp ImportJob.find_by(name: 'Impo
 
 ::::
 
-#### Dopo la migrazione
+#### After migration
 
 Esegui i seguenti comandi:
 

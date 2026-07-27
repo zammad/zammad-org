@@ -15,7 +15,7 @@ In Zammad, you can search for basically all available information like:
 Depending on what you are searching for and the amount of data in your Zammad instance, you can search in different
 ways. Read on to learn about the search basics, followed by the detailed search and the usage of Elasticsearch syntax.
 
-## Basic Search
+## Basic search
 
 The search is located in the top left corner of the primary navigation. Either select it via mouse or use the
 keyboard shortcut [[s]]. After activation, you can see the tickets which got recently closed from your taskbar as well
@@ -29,25 +29,25 @@ If you press [[enter]] or click on `detailed search`, Zammad opens the detailed 
 navigation. There you can narrow down your search by selecting a specific object type (e.g. organization), use advanced
 filters or even use Elasticsearch syntax. Read on for more information.
 
-## Detailed Search
+## Detailed search
 
 Sometimes, a simple search term may not give you the results you are looking for. Zammad provides different options to
 narrow down the search in the detailed search page.
 
 ![Screenshot shows detailed search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Sort the Results
+### Sort the results
 
 To sort the results based on the column's values, click on a column header. The sorting is indicated by an
 arrow. Click on the column again to change the sorting from ascending to descending and back.
 
-### Limit Search to Object Type
+### Limit search to object type
 
 Limit the search to an object type by using the **Search entity** tab selector below the search field (e.g. user or
 ticket). This limits the search to the selected object type and its related data. For example, when you select
 **Ticket**, the search also returns tickets where the owner or customer matches the search term.
 
-### Use Advanced Filters
+### Use advanced filters
 <!--Screenshot skipped for now. Will be added after more attributes are available-->
 In comparison to the search field, you can filter the search results based on specific attributes and their values.
 To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
@@ -65,7 +65,7 @@ aware that the search results may be different for other users due to divergent 
 If you still haven't found what you are looking for, you can benefit from the search being powered by Elasticsearch.
 You can find some examples in the next section.
 
-## Using Elasticsearch Syntax
+## Using Elasticsearch syntax
 
 This topic has its own section because it is an advanced topic for power users. By using Elasticsearch syntax, you can
 exactly filter your data for specific attribute values. Basically, all indexed attributes are supported. Read on to find
@@ -73,7 +73,7 @@ examples how to use it or head over to the
 [indexed attributes by Elasticsearch page](/en/reference/es-indexed-attributes) where you can find a list with
 additional attributes.
 
-### Important Information
+### Important information
 
 - Make sure to select the relevant object in the **Search entity** switcher. For example `customer.lastname` is
   available for tickets, but not for users.
@@ -82,7 +82,7 @@ additional attributes.
   and your search term will be displayed.
 - To provide values containing a space, wrap them in `"`, e.g. `priority.name:"2 normal"`.
 
-### Logic Operators and Ranges
+### Logic operators and ranges
 
 You can combine conditions by using `AND` & `OR` as logical operators. Use `TO` to specify ranges for values with an
 order (e.g. integer or date). Include a limit of the specified range by using square brackets. Exclude it by using curly
@@ -107,7 +107,7 @@ state.name:open AND article_count: [5 TO *]
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Fuzzy Search
+### Fuzzy search
 
 If you are not sure about the exact spelling of a value, use the tilde (`~`) as suffix to perform a fuzzy search.
 
@@ -115,7 +115,7 @@ If you are not sure about the exact spelling of a value, use the tilde (`~`) as 
 owner.firstname:lawren~
 ```
 
-### Negating Search
+### Negating search
 
 If you want to exclude specified values, you can use negation `!`. To negate more than one term, use parentheses for all
 of them.

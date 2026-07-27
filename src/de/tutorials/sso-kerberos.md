@@ -1,14 +1,14 @@
 ---
 order: 13
-title: 'Single Sign-on mit Kerberos'
+title: 'Single sign-on with Kerberos'
 ---
 
-# Single Sign-On für Kerberos <Badge type="warning" text="on-premise only"/>
+# Single sign-on for Kerberos <Badge type="warning" text="on-premise only"/>
 
 In dieser Anleitung wird beschrieben, wie Sie Single Sign-On mit Microsoft
 Active Directory einrichten.
 
-## Konzeptionelle Übersicht
+## Conceptual overview
 
 Wie jede andere Webanwendung hat auch Zammad seine eigene Logik, um Benutzer
 anzumelden, ihre Passwörter zu speichern, sie zu authentifizieren und ihre
@@ -25,7 +25,7 @@ Wenn Sie nicht über diese IT-Infrastruktur verfügen, aber trotzdem eine Ein-Kl
 Anmeldung wünschen, können Sie Alternativen wie Github, Google, Facebook und andere nutzen.
 :::
 
-## Wie funktioniert das?
+## How does it work?
 
 Einmal aktiviert, stellt das Single Sign-On Feature einen Endpunkt unter
 `https://your.zammad.host/auth/sso` bereit. Wenn der Zammad-Server an diesem
@@ -61,7 +61,7 @@ sollten unbedingt wissen, was Sie tun. Andernfalls kann leicht eine Sicherheitsl
 entstehen.
 :::
 
-## Erste Schritte
+## Loslegen
 
 ::: tip
 **Zu beschäftigt, um es selbst zu machen?**
@@ -86,7 +86,7 @@ dass Ihre Active Directory- und Zammad-Benutzerkonten immer synchronisiert sind.
 finden Sie in der Verwaltungsoberfläche von Zammad unter
 _Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 
-## Schritt 1: Konfigurieren Sie Active Directory
+## Step 1: Configure active directory
 
 Im Kerberos-Authentifizierungsschema muss der **Authentifizierungsserver**
 (Active Directory) gemeinsame Geheimnisse mit dem **Service** (Zammad)
@@ -106,7 +106,7 @@ ausreichend.
 ![Screenshot Active Directory Service Account
 Einstellungen](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Passwort zurücksetzen
+### 1b. Reset password
 
 Passwort des Service Accounts zurücksetzen, nachdem die Option "This account
 supports Kerberos AES 256 bit encryption" aktiviert wurde.
@@ -162,7 +162,7 @@ Die letzte Zeile ist zu beachten:
 - die Versionsnummer des geheimen Schlüssels mit vorangestelltem `vno`
   (**3**)
 
-## Schritt 2: NGINX entfernen, Apache + Kerberos einrichten
+## Step 2: Remove NGINX, set up Apache + Kerberos
 
 Als nächstes muss der Zammad-Host so konfiguriert werden, dass er Kerberos
 unterstützt (und die vom Active Directory-Server bereitgestellten
@@ -177,7 +177,7 @@ Kerberos-Unterstützung durch ein Plug-in-Modul bietet.
 Alle Befehle in diesem Abschnitt müssen als root (oder mit `sudo`) ausgeführt werden.
 :::
 
-### 2a. NGINX ausschalten
+### 2a. Turn off NGINX
 
 ::: warning
 Dadurch ist Ihre Zammad-Instanz **offline**, bis Apache vollständig
@@ -223,13 +223,13 @@ sudo systemctl start nginx
 
 :::
 
-### 2b. Apache vorkonfigurieren
+### 2b. Pre-configure Apache
 
 Diese Dokumentation setzt eine bereits funktionierende Apache-Konfiguration
 voraus.  Sie sollten einen Blick in die [Webserver
 Konfiguration](/de/tutorials/webserver-config) werfen, bevor Sie fortfahren.
 
-### 2c. Weitere Apache-Abhängigkeiten installieren
+### 2c. Install further Apache dependencies
 
 ::: tabs
 
@@ -261,7 +261,7 @@ sudo zypper install krb5-client apache2-mod_auth_kerb
 
 :::
 
-### 2d. Apache-Module einschalten
+### 2d. Enable Apache modules
 
 SSO erfordert Module, die standardmäßig nicht aktiviert sind. Standardmäßig
 können Sie dafür `a2enmod` verwenden.
@@ -348,7 +348,7 @@ Beispielkonfiguration:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Keytab generieren
+### 2f. Generate keytab
 
 Apache benötigt eine Kerberos _keytab_ (Schlüsseltabelle), um seine
 gemeinsamen Geheimnisse mit dem Domain Controller zu verwalten.
@@ -498,7 +498,7 @@ The configuration for CentOS and OpenSUSE below contains two
 
 :::
 
-### 2g. Apache neu starten, um Änderungen zu übernehmen
+### 2g. Restart Apache to apply changes
 
 ```sh
 sudo systemctl restart apache2
@@ -514,7 +514,7 @@ _Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 um sich anzumelden.
 :::
 
-## Schritt 4: Client-System konfigurieren (nur Windows)
+## Step 4: Configure client system (Windows only)
 
 Für die vollständige SSO-Erfahrung (d.h. für die passwortlose Anmeldung mit
 einem Klick) müssen Benutzer von Zammad:
@@ -566,7 +566,7 @@ Browser und nicht in den Windows-Einstellungen festgelegt wird.
   von fünf Minuten zueinander synchronisiert? Kerberos ist ein
   zeitkritisches Protokoll!
 
-### Fehler in Apache-Protokollen
+### Errors in Apache logs
 
 ::: tip
 **Versuchen Sie, das Apache-Log-Level vorübergehend zu erhöhen.**
@@ -592,7 +592,7 @@ ausgegeben wurde, als Sie Ihre `sso-generate-keytab`-Schlüsseltabelle erzeugt h
 
 Versuchen Sie sicherheitshalber, sie erneut zu erzeugen.
 
-#### Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)
+#### Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)
 
 Stimmt der **service name**, den Sie bei `setspn` angegeben haben, genau mit dem überein,
 den Sie beim Generieren Ihrer Keytab `<sso-generate-keytab>` verwendet haben?
@@ -607,7 +607,7 @@ genau mit dem **service name** überein, den Sie in `setspn` angegeben haben?
 Bei dieser Einstellung wird zwischen Groß- und Kleinschreibung
 unterschieden.
 
-#### Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
+#### Warning: Received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
 
 Ist Ihr Zammad-Host unter einem FQDN erreichbar? Dieser Fehler kann darauf
 hinweisen, dass Sie Ihren Zammad-Host stattdessen als IP-Adresse

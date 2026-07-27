@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Migra Zammad a un nuovo host'
+title: 'Migrate Zammad to new host'
 ---
 
-# Migra Zammad a un nuovo host
+# Migrate Zammad to new host
 
 Questa è solo una descrizione dei passaggi di base per eseguire una
 migrazione verso un nuovo host. Il tuo ambiente potrebbe essere diverso,
@@ -22,27 +22,27 @@ Stai migrando da Zammad SaaS? Passa direttamente allo
 hai ricevuto un dump come allegato!
 :::
 
-## Passo 1: Annota le tue regolazioni ambientali
+## Step 1: Note down your environmental adjustments
 
 Se hai impostato variabili d'ambiente o simili, assicurati di farne il
 backup.
 
-## Passo 2: Installa Zammad sull'host di destinazione
+## Step 2: Install Zammad on the destination host
 
 Per il percorso di ripristino più semplice possibile, installa la stessa
 versione del tuo originale.
 
-## Passo 3: Attiva la modalità manutenzione
+## Step 3: Activate maintenance mode
 
 Questo termina tutte le sessioni di agenti e clienti. Attivala nell'interfaccia di amministrazione
 di Zammad sotto _.
 
-## Passo 4: Disabilita i tuoi canali di comunicazione
+## Step 4: Disable your communication channels
 
 Lo script di ripristino avvia Zammad automaticamente, questo può aiutare a
 evitare perdita di dati e incoerenze.
 
-## Passo 5: Ferma e disabilita Zammad
+## Step 5: Stop and disable Zammad
 
 Assicurati che nessun dato venga modificato _prima_ del backup.
 
@@ -65,14 +65,14 @@ backup dei tuoi dati. Questo verrà.
 Se vuoi prendere la via più semplice, considera di fare il dump solo dei
 tuoi dati.
 
-## Passo 7: Trasferisci i tuoi file di backup
+## Step 7: Transfer your backup files
 
 Salva i tuoi file di backup in una directory e fornisci il percorso al file
 `config`. Nella sezione [backup
 configuration](/en/tutorials/backup-restore#backup-configuration) puoi
 trovare come adattare il file di configurazione alle tue esigenze.
 
-## Passo 8: Ripristina il tuo backup
+## Step 8: Restore your backup
 
 Segui la [guida al
 ripristino](/it/tutorials/backup-restore#ripristina-backup) fino a e
@@ -80,12 +80,12 @@ incluso.
 
 Assicurati di fermare Zammad dopo che il ripristino è terminato.
 
-## Passo 9: Esegui le attività di manutenzione richieste dopo il ripristino
+## Step 9: Run required maintenance tasks after restoring
 
 Dopo un ripristino riuscito, continua di seguito a seconda che tu abbia solo
 fatto il backup dei tuoi.
 
-### Dump dati
+### Data dump
 
 #### Passo 9.1: Svuota la cache
 
@@ -93,7 +93,7 @@ fatto il backup dei tuoi.
 zammad run rails r "Rails.cache.clear"
 ```
 
-### Dump completo del filesystem
+### Full filesystem dump
 
 ::: info
 Questo passaggio è necessario solo se uno dei seguenti punti è soddisfatto:
@@ -101,7 +101,7 @@ Questo passaggio è necessario solo se uno dei seguenti punti è soddisfatto:
 - L'origine e la destinazione.
 :::
 
-#### Passo 9.1: Disinstalla e reinstalla Zammad senza risolvere le dipendenze
+#### Step 9.1: Uninstall and reinstall Zammad without resolving dependencies
 
 ::: tabs
 
@@ -122,13 +122,13 @@ sufficiente? Se esegui.
 
 :::
 
-#### Passo 9.2: Svuota la cache
+#### Step 9.2: Clear the cache
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-#### Passo 9.3: Assicurati che Zammad sia in esecuzione
+#### Step 9.3: Ensure Zammad is running
 
 ``` sh
 sudo systemctl status zammad
@@ -146,7 +146,7 @@ Migrato da Zammad SaaS o cambio di provider?
 Assicurati che le tue notifiche email.
 :::
 
-## Passo 10: Applica le impostazioni ambientali mancanti
+## Step 10: Apply missing environmental settings
 
 Se hai impostato delle variabili d’ambiente, riapplica ora le tue
 impostazioni. Le hai salvate nello [Step
@@ -158,7 +158,7 @@ per [connettere e configurare
 Elasticsearch](/en/tutorials/connect-config-elasticsearch) dopo
 l’installazione.
 
-## Passo 11: Riattiva i canali e disattiva la modalità manutenzione
+## Step 11: Re-enable channels and deactivate maintenance mode
 
 Riporta i canali precedentemente disattivati ad attivi se sei sicuro che
 tutto sia andato a buon fine.

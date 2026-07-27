@@ -18,16 +18,16 @@ title: 'Zammad кориснички интерфејс'
 ![Screenshot shows the ticket detail
 view](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
-## Главни елементи корисничког интерфејса
+## Main UI elements
 
 The screenshot above shows a ticket detail view in Zammad. Read on for a
 description of the different main elements of Zammad.
 
-Primary Navigation
+Primary navigation
 : This is the whole left sidebar which includes the search, notifications, overviews, the taskbar, your avatar, the
   ticket create button and maybe more, depending on your system (see next section).
 
-Ticket Detail View
+Ticket detail view
 : This is where you handle your customer requests. It appears in the main content in the middle of the screen when a
   ticket tab is selected in the navigation sidebar.
 
@@ -35,7 +35,7 @@ Sidebar
 : This is the right sidebar in the ticket detail view. It contains sidebar tabs like customers and checklists and
   displays the currently selected tab.
 
-## Primary Navigation
+## Primary navigation
 
 The primary navigation sidebar is your central place to access all main
 parts of Zammad. You might not see all of them because some depend on the
@@ -43,20 +43,20 @@ configuration of your Zammad. The navigation sidebar is always visible. That
 means if you don't know where you are, you can always go back to the
 dashboard, your overviews or an opened ticket, for example.
 
-Search and Notification Area
+Search and notification area
 : Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
   information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
   with a count about how many notifications you got.
 
-Navigation Tabs
+Navigation tabs
 : Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen
   depending on your system.
 
-Taskbar Tabs
+Taskbar tabs
 : You can find tabs for your opened tickets, users, organizations and the detailed search in the taskbar. So if you
   read about a user tab, this means an opened user tab in your sidebar.
 
-Bottom Bar
+Bottom bar
 : Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and
   a reporting button as well.
 
@@ -74,7 +74,7 @@ side of the sidebar.
 
 <!-- markdownlint-disable MD007 -->
 
-Ticket Tab
+Ticket tab
 : This tab shows the ticket information like owner, group, priority and state and lets you edit these values.
   Additionally, the following actions are available when you click on the ::a:: button in the top section:
 
@@ -85,10 +85,10 @@ Ticket Tab
     више пута у вези истог проблема.
   - Измени клијента: поставите другог клијента тикета.
 
-Customer Tab
+Customer tab
 : View customer details including a reference to the customer's other tickets. You can change the ticket customer here
   as well by clicking on the ::a:: button in the top section.
 
-Organization Tab
+Organization tab
 : This tab is only shown if the customer is member of an organization. It shows the organization's details including all
   members. By clicking on the ::a:: button in the top section, you can edit the organization.
